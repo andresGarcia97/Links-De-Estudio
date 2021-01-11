@@ -1,12 +1,12 @@
 <!-- Toolbar -->
-<div class="toolbar" role="banner">
+<div class="toolbar" role="banner" #navbar>
   <img
     width="40"
     alt="Angular Logo"
     src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="/>
   <span>Bienvenido</span>
     <div class="spacer"></div>
-    <a aria-label="Angular on twitter" target="_blank" rel="noopener" href="https://twitter.com/angarciate" title="Twitter">
+    <a aria-label="Angular on twitter" target="_blank" href="https://twitter.com/angarciate" title="Twitter">
       <svg id="twitter-logo" height="24" data-name="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
         <rect width="400" height="400" fill="none"/>
         <path d="M153.62,301.59c94.34,0,145.94-78.16,145.94-145.94,0-2.22,0-4.43-.15-6.63A104.36,104.36,0,0,0,325,122.47a102.38,102.38,0,0,1-29.46,8.07,51.47,51.47,0,0,0,22.55-28.37,102.79,102.79,0,0,1-32.57,12.45,51.34,51.34,0,0,0-87.41,46.78A145.62,145.62,0,0,1,92.4,107.81a51.33,51.33,0,0,0,15.88,68.47A50.91,50.91,0,0,1,85,169.86c0,.21,0,.43,0,.65a51.31,51.31,0,0,0,41.15,50.28,51.21,51.21,0,0,1-23.16.88,51.35,51.35,0,0,0,47.92,35.62,102.92,102.92,0,0,1-63.7,22A104.41,104.41,0,0,1,75,278.55a145.21,145.21,0,0,0,78.62,23" fill="#fff"/>
@@ -37,27 +37,27 @@
 
   <div class="card-container">
 
-    <div class="card card-small" (click)="linkReferencia('solid','https://profile.es/blog/principios-solid-desarrollo-software-calidad/')" tabindex="0">
+    <div class="card card-small" (click)="linkReferencia('solid','https://profile.es/blog/principios-solid-desarrollo-software-calidad/',terminal)" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
         <span>SOLID</span>
     </div>
 
-    <div class="card card-small" (click)="linkReferencia('kiss','https://manuelzapata.co/principio-kiss-keep-it-simple-stupid/')" tabindex="0">
+    <div class="card card-small" (click)="linkReferencia('kiss','https://manuelzapata.co/principio-kiss-keep-it-simple-stupid/',terminal)" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
       <span>KISS</span>
     </div>
 
-    <div class="card card-small" (click)="linkReferencia('yagni','https://www.genbeta.com/desarrollo/la-navaja-de-occam-kiss-y-yagni-la-simplicidad-en-el-codigo-no-deberia-ser-solo-postureo-developer')" tabindex="0">
+    <div class="card card-small" (click)="linkReferencia('yagni','https://www.genbeta.com/desarrollo/la-navaja-de-occam-kiss-y-yagni-la-simplicidad-en-el-codigo-no-deberia-ser-solo-postureo-developer',terminal)" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
       <span>YAGNI</span>
     </div>
 
-    <div class="card card-small" (click)="linkReferencia('occam','https://www.genbeta.com/desarrollo/la-navaja-de-occam-kiss-y-yagni-la-simplicidad-en-el-codigo-no-deberia-ser-solo-postureo-developer')" tabindex="0">
+    <div class="card card-small" (click)="linkReferencia('occam','https://www.genbeta.com/desarrollo/la-navaja-de-occam-kiss-y-yagni-la-simplicidad-en-el-codigo-no-deberia-ser-solo-postureo-developer',terminal)" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
       <span>Occam</span>
     </div>
 
-    <div class="card card-small" (click)="linkReferencia('dry','https://tantacom.com/principios-diseno-software-kiss-dry-solid/')" tabindex="0">
+    <div class="card card-small" (click)="linkReferencia('dry','https://tantacom.com/principios-diseno-software-kiss-dry-solid/',terminal)" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
       <span>DRY</span>
     </div>
@@ -68,27 +68,27 @@
 
   <div class="card-container">
 
-    <div class="card card-small" (click)="linkReferencia('imperativo','https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/paradigmas-de-programacion/')" tabindex="0">
+    <div class="card card-small" (click)="linkReferencia('imperativo','https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/paradigmas-de-programacion/',terminal)" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
       <span>Imperativo</span>
     </div>
 
-    <div class="card card-small" (click)="linkReferencia('declarativo','https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/paradigmas-de-programacion/')" tabindex="0">
+    <div class="card card-small" (click)="linkReferencia('declarativo','https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/paradigmas-de-programacion/',terminal)" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
       <span>Declarativo</span>
     </div>
 
-    <div class="card card-small" (click)="linkReferencia('poo','https://desarrolloweb.com/articulos/499.php')" tabindex="0">
+    <div class="card card-small" (click)="linkReferencia('poo','https://desarrolloweb.com/articulos/499.php',terminal)" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
       <span>POO</span>
     </div>
 
-    <div class="card card-small" (click)="linkReferencia('pooPilares','https://www.campusmvp.es/recursos/post/los-conceptos-fundamentales-sobre-programacion-orientada-objetos-explicados-de-manera-simple.aspx')" tabindex="0">
+    <div class="card card-small" (click)="linkReferencia('pooPilares','https://www.campusmvp.es/recursos/post/los-conceptos-fundamentales-sobre-programacion-orientada-objetos-explicados-de-manera-simple.aspx',terminal)" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
       <span>Pilares POO</span>
     </div>
 
-    <div class="card card-small" (click)="linkReferencia('pooStatic','https://desarrolloweb.com/articulos/metodos-atributos-static-poo.html')" tabindex="0">
+    <div class="card card-small" (click)="linkReferencia('pooStatic','https://desarrolloweb.com/articulos/metodos-atributos-static-poo.html',terminal)" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
       <span>Static POO</span>
     </div>
@@ -99,37 +99,37 @@
 
   <div class="card-container">
 
-    <div class="card card-small" (click)="linkReferencia('definicion','https://cgrw01.cgr.go.cr/rup/RUP.es/SmallProjects/core.base_rup/guidances/concepts/software_architecture_4269A354.html')" tabindex="0">
+    <div class="card card-small" (click)="linkReferencia('definicion','https://cgrw01.cgr.go.cr/rup/RUP.es/SmallProjects/core.base_rup/guidances/concepts/software_architecture_4269A354.html',terminal)" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
       <span>Definición</span>
     </div>
 
-    <div class="card card-small" (click)="linkReferencia('capas','https://geeks.ms/jkpelaez/2009/05/30/arquitectura-basada-en-capas/')" tabindex="0">
+    <div class="card card-small" (click)="linkReferencia('capas','https://geeks.ms/jkpelaez/2009/05/30/arquitectura-basada-en-capas/',terminal)" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
       <span>Capas</span>
     </div>
 
-    <div class="card card-small" (click)="linkReferencia('cliente','https://desarrolloweb.com/articulos/arquitectura-cliente-servidor.html')" tabindex="0">
+    <div class="card card-small" (click)="linkReferencia('cliente','https://desarrolloweb.com/articulos/arquitectura-cliente-servidor.html',terminal)" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
       <span>Cliente Servidor</span>
     </div>
 
-    <div class="card card-small" (click)="linkReferencia('intermediario','https://conasa.grupocibernos.com/blog/patrones-comunes-de-arquitecturas-de-software')" tabindex="0">
+    <div class="card card-small" (click)="linkReferencia('intermediario','https://conasa.grupocibernos.com/blog/patrones-comunes-de-arquitecturas-de-software',terminal)" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
       <span>Intermediario</span>
     </div>
 
-    <div class="card card-small" (click)="linkReferencia('servicios','https://aws.amazon.com/es/microservices/')" tabindex="0">
+    <div class="card card-small" (click)="linkReferencia('servicios','https://aws.amazon.com/es/microservices/',terminal)" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
       <span>Microservicios</span>
     </div>
 
-    <div class="card card-small" (click)="linkReferencia('hexagonal','https://medium.com/@edusalguero/arquitectura-hexagonal-59834bb44b7f')" tabindex="0">
+    <div class="card card-small" (click)="linkReferencia('hexagonal','https://medium.com/@edusalguero/arquitectura-hexagonal-59834bb44b7f',terminal)" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
       <span>Hexagonal</span>
     </div>
 
-    <div class="card card-small" (click)="linkReferencia('otrasArquitecturas','https://medium.com/@maniakhitoccori/los-10-patrones-comunes-de-arquitectura-de-software-d8b9047edf0b')" tabindex="0">
+    <div class="card card-small" (click)="linkReferencia('otrasArquitecturas','https://medium.com/@maniakhitoccori/los-10-patrones-comunes-de-arquitectura-de-software-d8b9047edf0b',terminal)" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
       <span>otras</span>
     </div>
@@ -140,52 +140,114 @@
 
   <div class="card-container">
 
-    <div class="card card-small" (click)="linkReferencia('definicionPatrones','http://www.ecured.cu/Patrones_de_dise%C3%B1o_y_arquitectura')" tabindex="0">
+    <div class="card card-small" (click)="linkReferencia('definicionPatrones','http://www.ecured.cu/Patrones_de_dise%C3%B1o_y_arquitectura',terminal)" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
       <span>Definición</span>
     </div>
 
-    <div class="card card-small" (click)="linkReferencia('gof','http://www.cleformacion.com/tic-tek/-/blogs/patrones-gof')" tabindex="0">
+    <div class="card card-small" (click)="linkReferencia('gof','http://www.cleformacion.com/tic-tek/-/blogs/patrones-gof',terminal)" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
       <span>GOF</span>
     </div>
 
-    <div class="card card-small" (click)="linkReferencia('','https://www.adictosaltrabajo.com/2003/12/22/grasp/')" tabindex="0">
+    <div class="card card-small" (click)="linkReferencia('desglosegof','https://refactoring.guru/es/design-patterns/catalog',terminal)" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      <span>Desglose GOF</span>
+    </div>
+
+    <div class="card card-small" (click)="linkReferencia('grasp','https://www.adictosaltrabajo.com/2003/12/22/grasp/',terminal)" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
       <span>GRASP</span>
     </div>
 
-    <div class="card card-small" (click)="linkReferencia('antipatrones','https://sg.com.mx/revista/11/anti-patrones-la-mejor-forma-hacer-un-pesimo-sistema-software')" tabindex="0">
+    <div class="card card-small" (click)="linkReferencia('antipatrones','https://sg.com.mx/revista/11/anti-patrones-la-mejor-forma-hacer-un-pesimo-sistema-software',terminal)" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
       <span>Anti Patrones</span>
     </div>
 
   </div>
 
+  <h2>Buenas Practicas</h2>
+
+  <div class="card-container">
+
+    <div class="card card-small" (click)="linkReferencia('practicas1','https://www.tithink.com/es/2018/06/13/12-buenas-practicas-para-el-desarrollo-software/',terminal)" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      <span>Parte #1</span>
+    </div>
+
+    <div class="card card-small" (click)="linkReferencia('practicas2','https://sg.com.mx/revista/mejores-pr%C3%A1cticas-para-el-desarrollo-software',terminal)" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      <span>Parte #2</span>
+    </div>
+
+    <div class="card card-small" (click)="linkReferencia('practicas3','https://velneo.es/15-buenas-practicas-proyectos-desarrollo-software/',terminal)" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      <span>Parte #3</span>
+    </div>
+
+    <div class="card card-small" (click)="linkReferencia('practicas4','http://www.noussintelligence.com/desarrollo-software-buenas-practicas-recomendaciones/',terminal)" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      <span>Parte #4</span>
+    </div>
+
+  </div>
+
+  <h2>Otros temas</h2>
+
+  <div class="card-container">
+
+    <div class="card card-small" (click)="linkReferencia('api','https://www.ticbeat.com/tecnologias/que-es-una-api-para-que-sirve/',terminal)" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      <span>Que es una API</span>
+    </div>
+
+    <div class="card card-small" (click)="linkReferencia('ddd','https://github.com/jatubio/5minutos_laravel/wiki/Resumen-sobre-DDD.-Domain-Driven-Design',terminal)" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      <span>DDD</span>
+    </div>
+
+    <div class="card card-small" (click)="linkReferencia('nube','https://azure.microsoft.com/es-es/overview/what-are-private-public-hybrid-clouds/',terminal)" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      <span>Tipos de nube</span>
+    </div>
+
+    <div class="card card-small" (click)="linkReferencia('rest','https://www.oscarblancarteblog.com/2017/03/06/soap-vs-rest-2/',terminal)" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      <span>SOAP & REST</span>
+    </div>
+
+    <div class="card card-small" (click)="linkReferencia('git','https://david-estevez.gitbooks.io/the-git-the-bad-and-the-ugly/content/es/control-de-versiones.html',terminal)" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      <span>Gestor de Versiones</span>
+    </div>
+
+  </div>
+
   <!-- Terminal -->
-  <div class="terminal" [ngSwitch]="selection">
+  <div class="terminal" [ngSwitch]="selection" #terminal>
       <pre *ngSwitchDefault>Selecciona una opcion para ver más</pre>
 
-      <pre *ngSwitchCase="'solid'">S - Responsabilidad unica</pre>
+      <pre *ngSwitchCase="'solid'">S - Responsabilidad única</pre>
       <pre *ngSwitchCase="'solid'">O - Abierto/Cerrado</pre>
       <pre *ngSwitchCase="'solid'">L - Sustitución de Liskov</pre>
       <pre *ngSwitchCase="'solid'">I - Segregación de interfaces</pre>
-      <pre *ngSwitchCase="'solid'">D - Inversion de dependencias</pre>
+      <pre *ngSwitchCase="'solid'">D - Inversión de dependencias</pre>
 
-      <pre *ngSwitchCase="'kiss'">- Codigo entendible</pre>
+      <pre *ngSwitchCase="'kiss'">- Código entendible</pre>
       <pre *ngSwitchCase="'kiss'">- Mantener muchos modulos y metodos pequeños en vez de uno grande</pre>
-      <pre *ngSwitchCase="'kiss'">- Codigo autocomentado, nombres claros para las variables</pre>
+      <pre *ngSwitchCase="'kiss'">- Código autocomentado, nombres claros para las variables</pre>
       <pre *ngSwitchCase="'kiss'">- Divide y venceras, dividir el problema en subproblemas</pre>
       <pre *ngSwitchCase="'kiss'">- No abusar de los comentarios, y mantenerlos actualizados</pre>
-      <pre *ngSwitchCase="'kiss'">- Implementa codigo reutilizable, evitar el copiar y pegar</pre>
+      <pre *ngSwitchCase="'kiss'">- Implementa código reutilizable, evitar el copiar y pegar</pre>
 
       <pre *ngSwitchCase="'yagni'">- No lo añadas hasta que no lo necesites</pre>
       <pre *ngSwitchCase="'yagni'">- Define prioridades, evita trabajo innecesario</pre>
 
       <pre *ngSwitchCase="'occam'">- Preferir siempre la solución más simple</pre>
 
-      <pre *ngSwitchCase="'dry'">- Evita repertir codigo lo más posible</pre>
-      <pre *ngSwitchCase="'dry'">- Incrementa la mantenilidad del codigo</pre>
+      <pre *ngSwitchCase="'dry'">- Evita repertir código lo más posible</pre>
+      <pre *ngSwitchCase="'dry'">- Incrementa la mantenibilidad del código</pre>
       <pre *ngSwitchCase="'dry'">- Facilita la refactorización</pre>
 
       <pre *ngSwitchCase="'poo'">- Alta integración Bajo acoplamiento</pre>
@@ -206,10 +268,10 @@
       <pre *ngSwitchCase="'imperativo'">- Secuencia ordenada de acciones a ejecutar, más cercano a lenguaje maquina</pre>
       <pre *ngSwitchCase="'imperativo'">- De este se desprenden:</pre>
       <pre *ngSwitchCase="'imperativo'">   Estructurado -> donde se incluyen sentencias de control y se contemplan las interrupciones</pre>
-      <pre *ngSwitchCase="'imperativo'">   Procedimental -> donde se empieza a crear funciones y metodos para no repetir codigo</pre>
-      <pre *ngSwitchCase="'imperativo'">   Modular -> Se agrupan segmentos más grandes de codigo independientes entre si, facilitando la depuración</pre>
+      <pre *ngSwitchCase="'imperativo'">   Procedimental -> donde se empieza a crear funciones y metodos para no repetir código</pre>
+      <pre *ngSwitchCase="'imperativo'">   Modular -> Se agrupan segmentos más grandes de código independientes entre si, facilitando la depuración</pre>
 
-      <pre *ngSwitchCase="'declarativo'">- Se describe el resultado de la operación y no el como, requiriendo más abstracción y menos codigo</pre>
+      <pre *ngSwitchCase="'declarativo'">- Se describe el resultado de la operación y no el como, requiriendo más abstracción y menos código</pre>
       <pre *ngSwitchCase="'declarativo'">- De este se desprenden:</pre>
       <pre *ngSwitchCase="'declarativo'">   Funcional -> la base son las funciones que se pueden concatenar para formar estructuras o usarse como argumentos</pre>
       <pre *ngSwitchCase="'declarativo'">   Logica -> la base es la matematica y su logica para predecir el resultado</pre>
@@ -243,18 +305,119 @@
       <pre *ngSwitchCase="'otrasArquitecturas'">- Tuberia -> Es un flujo donde los datos son transformados a medida que van desde su origen hasta su destino</pre>
 
       <pre *ngSwitchCase="'definicionPatrones'">- Son soluciones especificas a problemas comunes y los más conocidos son: </pre>
-      <pre *ngSwitchCase="'definicionPatrones'">  GOF -> que se dividen en 3, creacionales, estructurales y de comportamiento </pre>
-      <pre *ngSwitchCase="'definicionPatrones'">  GRASP -> Representan los principios básicos de la asignación de responsabilidades a objetos, en forma de patrones </pre>
+      <pre *ngSwitchCase="'definicionPatrones'">   GOF -> que se dividen en 3, creacionales, estructurales y de comportamiento </pre>
+      <pre *ngSwitchCase="'definicionPatrones'">   GRASP -> Representan los principios básicos de la asignación de responsabilidades a objetos, en forma de patrones </pre>
+
+      <pre *ngSwitchCase="'gof'">- Creacionales -> Se usan para la creación de objetos ya se ocultandalo o simplificandolo </pre>
+      <pre *ngSwitchCase="'gof'">- Estructurales -> Separan la interfaz de su implementación por medio de la abstracción </pre>
+      <pre *ngSwitchCase="'gof'">- Comportamiento -> Definen la comunicación entre objetos más que a los propios objetos </pre>
+
+      <pre *ngSwitchCase="'desglosegof'">- Creacionales </pre>
+      <pre *ngSwitchCase="'desglosegof'">  -Singleton -> Restringe la instancia de la clase a un solo Objeto </pre>
+      <pre *ngSwitchCase="'desglosegof'">  -MVC -> plantea la separación en 3 capas, cada una con una función especifica </pre>
+      <pre *ngSwitchCase="'desglosegof'">  -Abstract factory -> Permite crear familias de objetos relacionados sin especificarlas directamente</pre>
+      <pre *ngSwitchCase="'desglosegof'">  -Builder -> Permite crear objetos bajo demanda, y solo con las propiedades necesitadas</pre>
+      <pre *ngSwitchCase="'desglosegof'">- Estructurales </pre>
+      <pre *ngSwitchCase="'desglosegof'">  -Adapter -> Permite la comunicación entre objetos de tipos diferentes </pre>
+      <pre *ngSwitchCase="'desglosegof'">  -Decorator -> Añade funcionalidades extra añadiendo objetos ya las tienen </pre>
+      <pre *ngSwitchCase="'desglosegof'">  -Facade -> Permite acceder facilmente a muchas funciones, muy usado en librerias y frameworks</pre>
+      <pre *ngSwitchCase="'desglosegof'">  -Bridge -> Permite dividir clases muy relacionadas en otras más pequeñas e independientes</pre>
+      <pre *ngSwitchCase="'desglosegof'">- Comportamiento </pre>
+      <pre *ngSwitchCase="'desglosegof'">  -Iterator -> Permite recorrer los elementos de una colección</pre>
+      <pre *ngSwitchCase="'desglosegof'">  -Mediador -> La comunicación entre objetos se da solo mediante un elemento central</pre>
+      <pre *ngSwitchCase="'desglosegof'">  -Observer -> Permite generar subscripciones y que todos los oyentes se enteren de los cambios</pre>
+      <pre *ngSwitchCase="'desglosegof'">  -Estrategia -> Permite que una clase escoja la mejor implementación de acuerdo al caso</pre>
+
+      <pre *ngSwitchCase="'grasp'">- Intentan hacer que la Asignación de responsabilidades sea lo más optima posible</pre>
+      <pre *ngSwitchCase="'grasp'">- Alta cohesion mediante la refactorización, y bajo acoplamiento al no abusar de la herencia</pre>
+      <pre *ngSwitchCase="'grasp'">- Cada componente tiene una función especifica en la que es experto</pre>
+      <pre *ngSwitchCase="'grasp'">- Conocer las peculiaridades de cada lenguaje como ciclos de vida e integración con el SO</pre>
+      <pre *ngSwitchCase="'grasp'">- Darle prioridad al polimorfismo que a las sentencias de control al usarse en los objetos</pre>
+      <pre *ngSwitchCase="'grasp'">- Evitar el uso de variables globales, especialmente en el desarrollo web</pre>
+      <pre *ngSwitchCase="'grasp'">- La creación de factorias y clases intermedias ayudan a la mantenibilidad del código</pre>
+
+      <pre *ngSwitchCase="'antipatrones'">- Son malas soluciones a problemas comunes que a priori parecen buenas ideas</pre>
+      <pre *ngSwitchCase="'antipatrones'">- Pueden nacer del afan de implementar patrones innecesariamente o mezclarlos de manera indiferente</pre>
+      <pre *ngSwitchCase="'antipatrones'">  -Golden Hammer -> Pretende que todo se solucione de la misma manera o con el mismo lenguaje</pre>
+      <pre *ngSwitchCase="'antipatrones'">  -Lava Flow -> Es la codificación de manera continua, sin un orden alguno, y lleno de redundancias</pre>
+      <pre *ngSwitchCase="'antipatrones'">  -Spaghetti Code -> Aparece cuando se suelen mezclar muchos lenguajes, aumentando la complejidad de la solución</pre>
+      <pre *ngSwitchCase="'antipatrones'">  -God Class -> Sucede cuando todo se soluciona en un solo archivo metodo o clase</pre>
+      <pre *ngSwitchCase="'antipatrones'">  -Poltergeist -> Es la existencia de elementos injustificadamente</pre>
+      <pre *ngSwitchCase="'antipatrones'">- Tambien se pueden aplicar para temas de arquitectura</pre>
+      <pre *ngSwitchCase="'antipatrones'">  -Reinventar la rueda -> Es la implementación de soluciones que ya existen de antemano</pre>
+      <pre *ngSwitchCase="'antipatrones'">  -Casarse con el diablo -> Es la dependencia total de algun elemento sin contingencia alguna</pre>
+
+      <pre *ngSwitchCase="'practicas1'">- Definir el alcance: Establecer limites con el cliente acerca del trabajo a realizar</pre>
+      <pre *ngSwitchCase="'practicas1'">- Dividir el desarrollo en fases o entregables que sean factibles</pre>
+      <pre *ngSwitchCase="'practicas1'">- Elegir el mejor IDE de acuerdo a los conocimientos o las necesidades</pre>
+      <pre *ngSwitchCase="'practicas1'">- Definir el alcance: Establecer limites con el cliente acerca del trabajo a realizar</pre>
+      <pre *ngSwitchCase="'practicas1'">- Reutiliza código y comentalo cuando sea necesario</pre>
+      <pre *ngSwitchCase="'practicas1'">- Documenta lo que haz hecho, asi es más facil integrar personal y sera util para futuros desarrollos</pre>
+
+      <pre *ngSwitchCase="'practicas2'">- Presencia activa de los clientes en el desarollo</pre>
+      <pre *ngSwitchCase="'practicas2'">- Definir los requerimientos y sus prioridades con el cliente</pre>
+      <pre *ngSwitchCase="'practicas2'">- Adaptar el lenguaje de acuerdo a los tipos de clientes</pre>
+      <pre *ngSwitchCase="'practicas2'">- Nunca dejar funciones al azar, que las pruebas demuestren su funcionamiento</pre>
+
+      <pre *ngSwitchCase="'practicas3'">- Escoger un ciclo de vida adecuado segun cada desarrollo</pre>
+      <pre *ngSwitchCase="'practicas3'">- Estimar y presupuestas correctamente (más facil decirlo que hacerlo)</pre>
+      <pre *ngSwitchCase="'practicas3'">- Control de calidad y revisiones de código periodicas</pre>
+      <pre *ngSwitchCase="'practicas3'">- Planificar el matenimiento el soporte y posibles mejoras</pre>
+
+      <pre *ngSwitchCase="'practicas4'">- Usar tecnologias y frameworks consolidados</pre>
+      <pre *ngSwitchCase="'practicas4'">- Promover que el uso de la aplicación sea intuitivo y accesible</pre>
+      <pre *ngSwitchCase="'practicas4'">- Distribución de tareas, no hay equipos de un solo hombre</pre>
+
+      <pre *ngSwitchCase="'api'">- Conjunto de reglas y especificaciones por el cual se puede comunicar diferentes aplicaciones</pre>
+      <pre *ngSwitchCase="'api'">- Permiten compartir reutilizar funciones ya existentes y no reiventar la rueda</pre>
+
+      <pre *ngSwitchCase="'ddd'">- Diseño Orientado a Dominios</pre>
+      <pre *ngSwitchCase="'ddd'"> -El lenguaje debe ser obicuo (entedible por cualquiera)</pre>
+      <pre *ngSwitchCase="'ddd'"> -El desarrollo debe ser lo más abstracto posible para ser independiente de las implementaciones</pre>
+
+      <pre *ngSwitchCase="'nube'"> -Nube Publica -> Los recursos son del proveedor y estos es compartido con otros usuarios</pre>
+      <pre *ngSwitchCase="'nube'"> -Nube Privada -> Los recursos son propios y no deben ser compartidos con terceros</pre>
+      <pre *ngSwitchCase="'nube'"> -Nube Hibrida -> Los recursos son propios pero el espacio puede ser compartido con otros usuarios</pre>
+
+      <pre *ngSwitchCase="'rest'">             SOAP                         VS                  REST</pre>
+      <pre *ngSwitchCase="'rest'">     Solo permite datos en XML                           Variedad de formatos</pre>
+      <pre *ngSwitchCase="'rest'">  Puede incluir metadatos, más pesado            Generalmente se usa JSON, más liviano</pre>
+
+      <pre *ngSwitchCase="'git'">- El control de versiones ayuda a mantener una trazabilidad de todos los cambios en una aplicación</pre>
+      <pre *ngSwitchCase="'git'">- El más conocido es GIT pero tambien existen otros como Mercurial</pre>
+      <pre *ngSwitchCase="'git'">- GIT puede ser usado en repositorios locales o distribuidos en la nube, permitiendo la colaboración entre desarrolladores</pre>
+      <pre *ngSwitchCase="'git'">- Permite crear ramificaciones para trabajar de manera aislada sin afectar a todo el flujo en general</pre>
+      <pre *ngSwitchCase="'git'">- Tambien se pueden crear etiquetas para marcar commits y que sean más faciles de encontrar</pre>
 
   </div>
 
   <div class="card-container">
-    <a class="card card-small" target="_blank" [href]="referencia">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg>
-      <span>Fuente</span>
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
-    </a>
+    <div class="card-container" *ngIf="referencia !== '' ">
+      <a class="card card-small" target="_blank" [href]="referencia">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg>
+        <span>Fuente</span>
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+      </a>
+    </div>
+  
+    <div class="circle-link" (click)="scrollToElement(navbar)" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 19V6M5 12l7-7 7 7"/></svg>
+    </div>
   </div>
+  
+  <br>
+
+  <footer>
+   <!-- Plantilla original: &nbsp;
+    <a href="https://github.com/angular/angular" target="_blank"> Angular
+    </a>-->
+    <a href="https://github.com/andresGarcia97/Links-De-Estudio" target="_blank">
+      <div class="github-star-badge">
+          <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+         ¿ Te gusto ?, dale una estrella
+      </div>
+    </a>
+</footer>
 
   <svg id="clouds" alt="Gray Clouds Background" xmlns="http://www.w3.org/2000/svg" width="2611.084" height="485.677" viewBox="0 0 2611.084 485.677">
     <path id="Path_39" data-name="Path 39" d="M2379.709,863.793c10-93-77-171-168-149-52-114-225-105-264,15-75,3-140,59-152,133-30,2.83-66.725,9.829-93.5,26.25-26.771-16.421-63.5-23.42-93.5-26.25-12-74-77-130-152-133-39-120-212-129-264-15-54.084-13.075-106.753,9.173-138.488,48.9-31.734-39.726-84.4-61.974-138.487-48.9-52-114-225-105-264,15a162.027,162.027,0,0,0-103.147,43.044c-30.633-45.365-87.1-72.091-145.206-58.044-52-114-225-105-264,15-75,3-140,59-152,133-53,5-127,23-130,83-2,42,35,72,70,86,49,20,106,18,157,5a165.625,165.625,0,0,0,120,0c47,94,178,113,251,33,61.112,8.015,113.854-5.72,150.492-29.764a165.62,165.62,0,0,0,110.861-3.236c47,94,178,113,251,33,31.385,4.116,60.563,2.495,86.487-3.311,25.924,5.806,55.1,7.427,86.488,3.311,73,80,204,61,251-33a165.625,165.625,0,0,0,120,0c51,13,108,15,157-5a147.188,147.188,0,0,0,33.5-18.694,147.217,147.217,0,0,0,33.5,18.694c49,20,106,18,157,5a165.625,165.625,0,0,0,120,0c47,94,178,113,251,33C2446.709,1093.793,2554.709,922.793,2379.709,863.793Z" transform="translate(142.69 -634.312)" fill="#eee"/>
