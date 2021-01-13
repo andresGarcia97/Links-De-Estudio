@@ -64,18 +64,13 @@
 
   </div>
 
-  <h2>Paradigmas</h2>
+  <h2>Paradigmas y tipos de lenguajes</h2>
 
   <div class="card-container">
 
     <div class="card card-small" (click)="linkReferencia('imperativo','https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/paradigmas-de-programacion/',terminal)" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-      <span>Imperativo</span>
-    </div>
-
-    <div class="card card-small" (click)="linkReferencia('declarativo','https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/paradigmas-de-programacion/',terminal)" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-      <span>Declarativo</span>
+      <span>Estilos Programación</span>
     </div>
 
     <div class="card card-small" (click)="linkReferencia('poo','https://desarrolloweb.com/articulos/499.php',terminal)" tabindex="0">
@@ -90,7 +85,22 @@
 
     <div class="card card-small" (click)="linkReferencia('pooStatic','https://desarrolloweb.com/articulos/metodos-atributos-static-poo.html',terminal)" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-      <span>Static POO</span>
+      <span>Static en POO</span>
+    </div>
+
+    <div class="card card-small" (click)="linkReferencia('funcional','https://codigofacilito.com/articulos/programacion-funcional',terminal)" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      <span>Funcional</span>
+    </div>
+
+    <div class="card card-small" (click)="linkReferencia('scripting','https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/que-son-los-lenguajes-de-scripting/',terminal)" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      <span>Scripting</span>
+    </div>
+
+    <div class="card card-small" (click)="linkReferencia('reactiva','https://profile.es/blog/que-es-la-programacion-reactiva-una-introduccion/',terminal)" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      <span>Reactiva</span>
     </div>
 
   </div>
@@ -160,6 +170,11 @@
       <span>GRASP</span>
     </div>
 
+    <div class="card card-small" (click)="linkReferencia('dao','https://www.genbeta.com/desarrollo/patrones-de-diseno-active-record-vs-dao',terminal)" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      <span>DAO & Active Record</span>
+    </div>
+
     <div class="card card-small" (click)="linkReferencia('antipatrones','https://sg.com.mx/revista/11/anti-patrones-la-mejor-forma-hacer-un-pesimo-sistema-software',terminal)" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
       <span>Anti Patrones</span>
@@ -189,6 +204,17 @@
     <div class="card card-small" (click)="linkReferencia('practicas4','http://www.noussintelligence.com/desarrollo-software-buenas-practicas-recomendaciones/',terminal)" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
       <span>Parte #4</span>
+    </div>
+
+  </div>
+
+  <h2>Malas Practicas</h2>
+
+  <div class="card-container">
+
+    <div class="card card-small" (click)="linkReferencia('callbackhell','https://codearmy.co/que-es-el-callback-hell-y-como-evitarlo-4af418a6ed14',terminal)" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      <span>Callback Hell</span>
     </div>
 
   </div>
@@ -245,10 +271,18 @@
       <pre *ngSwitchCase="'yagni'">- Define prioridades, evita trabajo innecesario</pre>
 
       <pre *ngSwitchCase="'occam'">- Preferir siempre la solución más simple</pre>
-
+      
       <pre *ngSwitchCase="'dry'">- Evita repertir código lo más posible</pre>
       <pre *ngSwitchCase="'dry'">- Incrementa la mantenibilidad del código</pre>
       <pre *ngSwitchCase="'dry'">- Facilita la refactorización</pre>
+      
+      <pre *ngSwitchCase="'imperativo'">- Imperativo -> secuencia ordenada de acciones a ejecutar, más cercano a lenguaje maquina </pre>
+      <pre *ngSwitchCase="'imperativo'">  - Estructurado -> donde se incluyen sentencias de control y se contemplan las interrupciones</pre>
+      <pre *ngSwitchCase="'imperativo'">  - Procedimental -> donde se empieza a crear funciones y metodos para no repetir código</pre>
+      <pre *ngSwitchCase="'imperativo'">  - Modular -> Se agrupan segmentos más grandes de código independientes entre si, facilitando la depuración</pre>
+      <pre *ngSwitchCase="'imperativo'">- Declarativo -> Se describe el resultado de la operación y no el como, requiriendo más abstracción y menos código</pre>
+      <pre *ngSwitchCase="'imperativo'">  - Funcional -> la base son las funciones que se pueden concatenar para formar estructuras o usarse como argumentos</pre>
+      <pre *ngSwitchCase="'imperativo'">  - Logica -> la base es la matematica y su logica para predecir el resultado</pre>
 
       <pre *ngSwitchCase="'poo'">- Alta integración Bajo acoplamiento</pre>
       <pre *ngSwitchCase="'poo'">- Mejora la abstracción de los problemas al acercarlos a lo cotidiano</pre>
@@ -265,16 +299,24 @@
       <pre *ngSwitchCase="'pooStatic'">- Son accesibles de manera global, por lo que hay que tener cuidado con su uso</pre>
       <pre *ngSwitchCase="'pooStatic'">- No necesitan ser instanciados para ser usados</pre>
 
-      <pre *ngSwitchCase="'imperativo'">- Secuencia ordenada de acciones a ejecutar, más cercano a lenguaje maquina</pre>
-      <pre *ngSwitchCase="'imperativo'">- De este se desprenden:</pre>
-      <pre *ngSwitchCase="'imperativo'">   Estructurado -> donde se incluyen sentencias de control y se contemplan las interrupciones</pre>
-      <pre *ngSwitchCase="'imperativo'">   Procedimental -> donde se empieza a crear funciones y metodos para no repetir código</pre>
-      <pre *ngSwitchCase="'imperativo'">   Modular -> Se agrupan segmentos más grandes de código independientes entre si, facilitando la depuración</pre>
+      <pre *ngSwitchCase="'funcional'">- Las acciones son delegadas a funciones propias del lenguaje</pre>
+      <pre *ngSwitchCase="'funcional'">  - Funciones Puras -> dada una entrada siempre van a tener la misma salida</pre>
+      <pre *ngSwitchCase="'funcional'">  - Composición -> se pueden juntar y crear una secuencia y resultado diferente</pre> 
+      <pre *ngSwitchCase="'funcional'">  - Efectos secundarios -> Son los cambios visibles fuera de la función llamada</pre> 
+      <pre *ngSwitchCase="'funcional'">  - Se le da más relevancia al concepto de inmutabilidad y mutabilidad</pre>
+      <pre *ngSwitchCase="'funcional'">  - Los efectos secundarios se evitan en este tipo de programación</pre>
+      <pre *ngSwitchCase="'funcional'">  - Los efectos secundarios se evitan en este tipo de programación</pre>
 
-      <pre *ngSwitchCase="'declarativo'">- Se describe el resultado de la operación y no el como, requiriendo más abstracción y menos código</pre>
-      <pre *ngSwitchCase="'declarativo'">- De este se desprenden:</pre>
-      <pre *ngSwitchCase="'declarativo'">   Funcional -> la base son las funciones que se pueden concatenar para formar estructuras o usarse como argumentos</pre>
-      <pre *ngSwitchCase="'declarativo'">   Logica -> la base es la matematica y su logica para predecir el resultado</pre>
+      <pre *ngSwitchCase="'scripting'">- Son lenguajes que no son compilados y que se ejecutan directamente en el lado del cliente</pre>
+      <pre *ngSwitchCase="'scripting'">- El más famoso es Javascript, pero otros como Python y Ruby tambien lo son</pre>
+      <pre *ngSwitchCase="'scripting'">- Suelen ser menos eficientes al no ser compilados pero conllevan menos trabajo para el programador</pre>
+      <pre *ngSwitchCase="'scripting'">- Generalmente son debilmente tipados, lo que da más flexibilidad y posiblidad de errores</pre>
+
+      <pre *ngSwitchCase="'reactiva'">- Es un paradigma enfocado al trabajo con flujo de datos, generalmente debe ser: </pre>
+      <pre *ngSwitchCase="'reactiva'">  - Resilientes -> deben responder incluso cuando hay estados de error</pre>
+      <pre *ngSwitchCase="'reactiva'">  - Elasticos -> el aumento de la concurrencia no debe afectar las respuestas</pre>
+      <pre *ngSwitchCase="'reactiva'">  - Comunicación -> minimo acoplamiento al hacer que todo se comunique mediante mensajeria</pre>
+      <pre *ngSwitchCase="'reactiva'">  - Operadores -> tener soporte hacia estos que permiten transformar el flujo de datos</pre>
 
       <pre *ngSwitchCase="'definicion'">-  Representa la estructura del sistema, sus componentes, las propiedades visibles externamente y las relaciones entre ellas.</pre>
 
@@ -295,13 +337,14 @@
       <pre *ngSwitchCase="'servicios'">- Se pasa de un nucleo central y robusto a diferentes partes más pequeñas y ligeras</pre>
       <pre *ngSwitchCase="'servicios'">- Las partes se intercomunican entre si y funcionan de manera separada, aumentando la tolerancia a fallos</pre>
       <pre *ngSwitchCase="'servicios'">- Los servicios pueden ser independientes de las tecnologias, además de que se pueden subdividir tambien</pre>
+      <pre *ngSwitchCase="'servicios'">- Tambien se pueden escalar de manera individual significando una mejora en el uso de recursos</pre>
 
       <pre *ngSwitchCase="'hexagonal'">- Aisla el dominio de las tecnologias, la comunicación se da por medio de puertos (interfaces)</pre>
       <pre *ngSwitchCase="'hexagonal'">- Cualquier dispositivo puede consultarla y la información sera la misma</pre>
       <pre *ngSwitchCase="'hexagonal'">- Las capas son idenpendientes y más faciles de testear</pre>
 
       <pre *ngSwitchCase="'otrasArquitecturas'">- Bus de Eventos -> Una fuente emite eventos donde un bus los direcciona a los receptores indicados</pre>
-      <pre *ngSwitchCase="'otrasArquitecturas'">- MVC -> Consta de 3 capas, el modelo o logica, la vista y el controlador que interactua con el usuario</pre>
+      <pre *ngSwitchCase="'otrasArquitecturas'">- MVC -> Consta de 3 capas bien definidas, modelo, vista y controlador, cada una con una función espeficica</pre>
       <pre *ngSwitchCase="'otrasArquitecturas'">- Tuberia -> Es un flujo donde los datos son transformados a medida que van desde su origen hasta su destino</pre>
 
       <pre *ngSwitchCase="'definicionPatrones'">- Son soluciones especificas a problemas comunes y los más conocidos son: </pre>
@@ -336,6 +379,10 @@
       <pre *ngSwitchCase="'grasp'">- Evitar el uso de variables globales, especialmente en el desarrollo web</pre>
       <pre *ngSwitchCase="'grasp'">- La creación de factorias y clases intermedias ayudan a la mantenibilidad del código</pre>
 
+      <pre *ngSwitchCase="'dao'">- Son usados para el acceso a los datos (persistencia)</pre>
+      <pre *ngSwitchCase="'dao'">  - DAO -> obliga a una mayor implementación manual a cambio de flexibilidad</pre>
+      <pre *ngSwitchCase="'dao'">  - Active Record -> se gana una mayor independencia de la bd a costa de ceder el control</pre>
+      
       <pre *ngSwitchCase="'antipatrones'">- Son malas soluciones a problemas comunes que a priori parecen buenas ideas</pre>
       <pre *ngSwitchCase="'antipatrones'">- Pueden nacer del afan de implementar patrones innecesariamente o mezclarlos de manera indiferente</pre>
       <pre *ngSwitchCase="'antipatrones'">  -Golden Hammer -> Pretende que todo se solucione de la misma manera o con el mismo lenguaje</pre>
@@ -367,6 +414,11 @@
       <pre *ngSwitchCase="'practicas4'">- Promover que el uso de la aplicación sea intuitivo y accesible</pre>
       <pre *ngSwitchCase="'practicas4'">- Distribución de tareas, no hay equipos de un solo hombre</pre>
 
+      <pre *ngSwitchCase="'callbackhell'">- Generalmente es un problema al hacer codigo con caracteristicas asincronas (generalmente javascript)</pre>
+      <pre *ngSwitchCase="'callbackhell'">- El orden en que se copia el codigo no necesariamente es en el que va a ser ejecutado</pre>
+      <pre *ngSwitchCase="'callbackhell'">- Cambiar el orden de las llamadas puede evitar el anidamiento innecesario</pre>
+      <pre *ngSwitchCase="'callbackhell'">- Usar promesas ó el Async/Await que hara que el codigo se comporte de manera más sincronica</pre>
+
       <pre *ngSwitchCase="'api'">- Conjunto de reglas y especificaciones por el cual se puede comunicar diferentes aplicaciones</pre>
       <pre *ngSwitchCase="'api'">- Permiten compartir reutilizar funciones ya existentes y no reiventar la rueda</pre>
 
@@ -378,9 +430,9 @@
       <pre *ngSwitchCase="'nube'"> -Nube Privada -> Los recursos son propios y no deben ser compartidos con terceros</pre>
       <pre *ngSwitchCase="'nube'"> -Nube Hibrida -> Los recursos son propios pero el espacio puede ser compartido con otros usuarios</pre>
 
-      <pre *ngSwitchCase="'rest'">             SOAP                         VS                  REST</pre>
-      <pre *ngSwitchCase="'rest'">     Solo permite datos en XML                           Variedad de formatos</pre>
-      <pre *ngSwitchCase="'rest'">  Puede incluir metadatos, más pesado            Generalmente se usa JSON, más liviano</pre>
+      <pre *ngSwitchCase="'rest'">               SOAP                         VS                  REST</pre>
+      <pre *ngSwitchCase="'rest'">        Solo permite datos en XML                           Variedad de formatos</pre>
+      <pre *ngSwitchCase="'rest'">    Puede incluir metadatos, más pesado            Generalmente se usa JSON, más liviano</pre>
 
       <pre *ngSwitchCase="'git'">- El control de versiones ayuda a mantener una trazabilidad de todos los cambios en una aplicación</pre>
       <pre *ngSwitchCase="'git'">- El más conocido es GIT pero tambien existen otros como Mercurial</pre>

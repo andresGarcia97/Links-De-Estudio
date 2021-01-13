@@ -4,4 +4,4 @@ Este proyecto fue realizado con [Angular CLI](https://github.com/angular/angular
 
 # Pagina web
 
-Para acceder a la pagina puedes ir a la siguiente dirección [Pagina Web](https://contenidoderepaso.web.app/)
+Para acceder a la pagina puedes dar click aqui[contenidoderepaso.web.app](https://contenidoderepaso.web.app/)
