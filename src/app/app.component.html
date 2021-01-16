@@ -4,7 +4,7 @@
     width="40"
     alt="Angular Logo"
     src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="/>
-  <span>Actualizado: 14/01/2021</span>
+  <span>Actualizado: 15/01/2021</span>
     <div class="spacer"></div>
     <a aria-label="Angular on twitter" target="_blank" href="https://twitter.com/angarciate" title="Twitter">
       <svg id="twitter-logo" height="24" data-name="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
@@ -222,6 +222,16 @@
       <span>Callback Hell</span>
     </div>
 
+    <div class="card card-small" (click)="linkReferencia('cosas1','https://softgrade.mx/5-causas-afectan-la-calidad-software/',terminal)" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      <span>Cosas a evitar #1</span>
+    </div>
+
+    <div class="card card-small" (click)="linkReferencia('cosas2','https://blog.gft.com/es/2016/01/20/las-10-malas-practicas-mas-comunes-en-la-gestion-de-proyectos/',terminal)" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      <span>Cosas a evitar #2</span>
+    </div>
+
   </div>
 
   
@@ -239,19 +249,39 @@
       <span>SCRUM</span>
     </div>
 
-    <div class="card card-small" (click)="linkReferencia('proximamente','https://www.iebschool.com/blog/metodologia-kanban-agile-scrum/',terminal)" tabindex="0">
+    <div class="card card-small" (click)="linkReferencia('kanban','https://www.iebschool.com/blog/metodologia-kanban-agile-scrum/',terminal)" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
       <span>Kanban</span>
     </div>
 
-    <div class="card card-small" (click)="linkReferencia('proximamente','https://www.iebschool.com/blog/las-claves-para-realizar-un-elevator-pitch-lean-startup/',terminal)" tabindex="0">
+    <div class="card card-small" (click)="linkReferencia('elevator','https://www.iebschool.com/blog/las-claves-para-realizar-un-elevator-pitch-lean-startup/',terminal)" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
       <span>Elevator Pitch</span>
     </div>
 
-    <div class="card card-small" (click)="linkReferencia('proximamente','https://www.tutorialspoint.com/es/software_engineering/software_development_life_cycle.htm',terminal)" tabindex="0">
+    <div class="card card-small" (click)="linkReferencia('canvas','https://www.iebschool.com/blog/que-es-el-modelo-canvas-y-como-aplicarlo-a-tu-negocio-agile-scrum/',terminal)" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      <span>Canvas</span>
+    </div>
+
+    <div class="card card-small" (click)="linkReferencia('tradicionales','https://www.tutorialspoint.com/es/software_engineering/software_development_life_cycle.htm',terminal)" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
       <span>Tradicionales</span>
+    </div>
+
+    <div class="card card-small" (click)="linkReferencia('cascada','https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/el-modelo-en-cascada/',terminal)" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      <span>Cascada</span>
+    </div>
+
+    <div class="card card-small" (click)="linkReferencia('espiral','https://www.ionos.es/startupguide/productividad/modelo-en-espiral/',terminal)" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      <span>Espiral</span>
+    </div>
+
+    <div class="card card-small" (click)="linkReferencia('iterativo','https://proyectosagiles.org/desarrollo-iterativo-incremental/',terminal)" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      <span>Iterativo-Incremental</span>
     </div>
 
   </div>
@@ -288,6 +318,16 @@
     <div class="card card-small" (click)="linkReferencia('frameworks','https://neoattack.com/neowiki/framework/',terminal)" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
       <span>Frameworks</span>
+    </div>
+
+    <div class="card card-small" (click)="linkReferencia('proximamente','',terminal)" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      <span>UML</span>
+    </div>
+
+    <div class="card card-small" (click)="linkReferencia('proximamente','',terminal)" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      <span>ERD</span>
     </div>
 
   </div>
@@ -464,6 +504,21 @@
       <pre *ngSwitchCase="'callbackhell'">- Cambiar el orden de las llamadas puede evitar el anidamiento innecesario</pre>
       <pre *ngSwitchCase="'callbackhell'">- Usar promesas ó el Async/Await que hara que el codigo se comporte de manera más sincronica</pre>
 
+      <pre *ngSwitchCase="'cosas1'">- Desconocimiento del negocio, clases mal diseñadas o condiciones sin sentido</pre>
+      <pre *ngSwitchCase="'cosas1'">- Mala o nula formulación de requerimientos y requisitos </pre>
+      <pre *ngSwitchCase="'cosas1'">- Desconocimiento de las tecnologias que se usen, la experiencia de un desarrollador toma tiempo para conseguirse</pre>
+      <pre *ngSwitchCase="'cosas1'">- Malas estimaciones de los tiempos, obligando a mucho trabajo extra</pre>
+      <pre *ngSwitchCase="'cosas1'">- No aplicar patrones y/o arquitecturas</pre>
+
+      <pre *ngSwitchCase="'cosas2'">- Asignación erronea del personal en roles inadecuados o sin la experiencia necesaria</pre>
+      <pre *ngSwitchCase="'cosas2'">- Asumir información sin tener una confirmación previa</pre>
+      <pre *ngSwitchCase="'cosas2'">- Empezar a planear sin tener todas las variables a tener en cuenta</pre>
+      <pre *ngSwitchCase="'cosas2'">- No se debe abusar de la capacidad de multitarea del equipo</pre>
+      <pre *ngSwitchCase="'cosas2'">- La falta de comunicación en el equipo puede conllevar al desastre</pre>
+      <pre *ngSwitchCase="'cosas2'">- No poner limites es tan malo como ser inflexible, siempre hay un punto medio</pre>
+      <pre *ngSwitchCase="'cosas2'">- Entregar productos incompletos, lo ideal seria pedir más tiempo o recursos</pre>
+      <pre *ngSwitchCase="'cosas2'">- Asignación erronea del personal en roles inadecuados o sin la experiencia necesaria</pre>
+
       <pre *ngSwitchCase="'agiles'">- Las metodologias agiles buscan hacer que cualquier desarrollo sea de alta calidad, con tiempos y costos reducidos</pre>
       <pre *ngSwitchCase="'agiles'">- Estas permiten la rapida adaptación a cualquier caracteristica del proyecto</pre>
       <pre *ngSwitchCase="'agiles'">- La participación de los clientes es fundamental en todo el transcurso del desarrollo</pre>
@@ -487,6 +542,67 @@
       <pre *ngSwitchCase="'scrum'">  -Review -> se inspecciona el incremento realizado</pre>
       <pre *ngSwitchCase="'scrum'">  -Retrospective -> se da a conocer las dificultades del sprint y que cosas se pueden mejorar</pre>
 
+      <pre *ngSwitchCase="'kanban'">- Nacido de metodologias usadas por Toyota donde se identificaban las necesidades de manera precisa</pre>
+      <pre *ngSwitchCase="'kanban'">- Se basa en una metodologia de tarjetas visuales para mostrar el completado de las tareas</pre>
+      <pre *ngSwitchCase="'kanban'">- Facil de usar y de asumir por parte del equipo, al ser sumamente visual</pre>
+      <pre *ngSwitchCase="'kanban'">- Tiene otras principios que son diferentes de las metodologias agiles</pre>
+      <pre *ngSwitchCase="'kanban'">  - Calidad -> Todo debe hacerse bien a la primera, los errores son más costosos cuando se arregla algo</pre>
+      <pre *ngSwitchCase="'kanban'">  - Sin desperdicio -> no hacer más de lo necesario (Principio YAGNI)</pre>
+      <pre *ngSwitchCase="'kanban'">  - Mejora continua -> Siempre hay espacio para mejorar</pre>
+      <pre *ngSwitchCase="'kanban'">  - Flexible -> las prioridades pueden cambiar</pre>
+      <pre *ngSwitchCase="'kanban'">- Tiene varios pasos o aspectos a implementar</pre>
+      <pre *ngSwitchCase="'kanban'">  - Definir un flujo de trabajo accesible por todos, el tablero puede contener varios proyectos simultaneamente</pre>
+      <pre *ngSwitchCase="'kanban'">  - Se deben tener tantas columnas como estados hallan, y las tarjetas se iran desplazando entre estas</pre>
+      <pre *ngSwitchCase="'kanban'">  - Visualizar las fases del desarrollo, al igual que SCRUM se basa en un desarrollo incremental</pre>
+      <pre *ngSwitchCase="'kanban'">  - La prioridad son las actividades que se estan haciendo en vez de empezar nuevas</pre>
+      <pre *ngSwitchCase="'kanban'">  - Las fases deben estar terminadas para poder iniciar la siguiente, además de tener un maximo de tareas</pre>
+      <pre *ngSwitchCase="'kanban'">  - Los trabajadores nunca esta inactivos, ya que pueden solapar tareas de diferentes proyectos sin problemas</pre>
+      <pre *ngSwitchCase="'kanban'">- Esta metodologia tiene ciertos aspectos superiores que SCRUM, pero su implementación depende de las necesidades</pre>
+
+      <pre *ngSwitchCase="'elevator'">- Es una sintexis sobre ti y tu proyecto en menos de lo que sube un ascensor (1-5 minutos)</pre>
+      <pre *ngSwitchCase="'elevator'">- Debe ser claro, conciso y atrayente para atraer a potenciales inversores</pre>
+      <pre *ngSwitchCase="'elevator'"> - Debes tener una preparación previa, conocer todo lo necesario y siempre ser directo</pre>
+      <pre *ngSwitchCase="'elevator'"> - Mide los tiempos, repasa una y otra vez lo que vayas a decir, sin dejar de lado la naturalidad</pre>
+      <pre *ngSwitchCase="'elevator'"> - Tu presentación debe ser sorprendente, mostrar el problema y su solución innovadora</pre>
+
+      <pre *ngSwitchCase="'canvas'">- Sirve para crear y definir modelos de negocios, con la prioridad de crear valor para los clientes</pre>
+      <pre *ngSwitchCase="'canvas'">- Debes de llenar 9 bloques que tu empresa ha de cumplir</pre>
+      <pre *ngSwitchCase="'canvas'">  - Segmento de mercado -> ¿ quienes son tus clientes ?, son la base de todo tu negocio</pre>
+      <pre *ngSwitchCase="'canvas'">  - Propuesta de valor -> tu diferencia frente a la competencia como ventaja competitiva</pre>
+      <pre *ngSwitchCase="'canvas'">  - Canales -> como vas a distribuir tu producto</pre>
+      <pre *ngSwitchCase="'canvas'">  - Comunicación -> como te comunicaras con tus clientes</pre>
+      <pre *ngSwitchCase="'canvas'">  - Ingresos -> como ganaras dinero y de que fuentes</pre>
+      <pre *ngSwitchCase="'canvas'">  - Recursos -> cosas como derechos de autor, personal, fondos, patentes, etc..</pre>
+      <pre *ngSwitchCase="'canvas'">  - Actividades clave -> producción, soluciónes, plataformas y todo lo necesarios para tu propuesta</pre>
+      <pre *ngSwitchCase="'canvas'">  - Socios -> quienes te ayudaran a conseguir los recursos necesarios</pre>
+      <pre *ngSwitchCase="'canvas'">  - Costos -> definir cuanto gastar y como gastarlo</pre>
+
+      <pre *ngSwitchCase="'tradicionales'">- Recolección de solicitudes -> Estudiar el sistema actual</pre>
+      <pre *ngSwitchCase="'tradicionales'">- Estudio de viabilidad -> se investiga desdes diferentes perspectivas, economicas, tecnologias, practicidad</pre>
+      <pre *ngSwitchCase="'tradicionales'">- Analisis del sistema -> se intentan crear un plan a seguir</pre>
+      <pre *ngSwitchCase="'tradicionales'">- Diseño -> en base a todos los datos recogidos, analisis, entrevistas, etc..</pre>
+      <pre *ngSwitchCase="'tradicionales'">- Codificación -> se plasman todos los diseños en codigo funcional</pre>
+      <pre *ngSwitchCase="'tradicionales'">- Pruebas -> Toda función importante debe ser evaluada para garantizar su fiabilidad</pre>
+      <pre *ngSwitchCase="'tradicionales'">- Mantenimiento -> Despues de ser probado e implementado el software puede ser actualizado o corregido en el tiempo</pre>
+
+      <pre *ngSwitchCase="'cascada'">- Es un metodo secuencial donde cada etapa se desarrolla una sola vez</pre>
+      <pre *ngSwitchCase="'cascada'">- Las fases del desarrollo no estan bien definidas y se pueden solapar entre si</pre>
+      <pre *ngSwitchCase="'cascada'">- Errores en etapas previas pueden ser fatales si no se corrigen con premura</pre>
+      <pre *ngSwitchCase="'cascada'">- Bastante inflexible en cuestion de cambios sin previo aviso</pre>
+      <pre *ngSwitchCase="'cascada'">- Los usuarios solo son consultados en etapas finales e iniciales, poca comunicación en etapas intermedias</pre>
+
+      <pre *ngSwitchCase="'espiral'">- Es la evolución del modelo en cascada</pre>
+      <pre *ngSwitchCase="'espiral'">- Se basa en la repetición de las mismas tareas, haciendo controles con más periocidad</pre>
+      <pre *ngSwitchCase="'espiral'">- Se reduce el riesgo del fracaso al dividir el proceso en partes más pequeñas</pre>
+      <pre *ngSwitchCase="'espiral'">- Cada ciclo se planifica justo depues de terminar el objetivo del presente</pre>
+      <pre *ngSwitchCase="'espiral'">- Los errores pueden evolucionar con caca ciclo, no necesarimente resolverse</pre>
+
+      <pre *ngSwitchCase="'iterativo'">- Cada entrega es un proyecto más completo</pre>
+      <pre *ngSwitchCase="'iterativo'">- En cada oportunidad se pueden añadir nuevas funciones o actualizar las existentes</pre>
+      <pre *ngSwitchCase="'iterativo'">- Resiliencia frente a cambios inesperados, mayor comunicación con el cliente</pre>
+      <pre *ngSwitchCase="'iterativo'">- Permite desconocer detalles iniciales que se iran solucionando con las iteracciones</pre>
+      <pre *ngSwitchCase="'iterativo'">- Es funcional desde el primer ciclo, permite mejorar las estimaciones del proyecto</pre>
+
       <pre *ngSwitchCase="'api'">- Conjunto de reglas y especificaciones por el cual se puede comunicar diferentes aplicaciones</pre>
       <pre *ngSwitchCase="'api'">- Permiten compartir reutilizar funciones ya existentes y no reiventar la rueda</pre>
 
@@ -501,6 +617,7 @@
       <pre *ngSwitchCase="'rest'">               SOAP                         VS                  REST</pre>
       <pre *ngSwitchCase="'rest'">        Solo permite datos en XML                           Variedad de formatos</pre>
       <pre *ngSwitchCase="'rest'">    Puede incluir metadatos, más pesado            Generalmente se usa JSON, más liviano</pre>
+      <pre *ngSwitchCase="'rest'">    NO se puede guardar contenido en la cache      SI puede guardar contenido en la cache</pre>
 
       <pre *ngSwitchCase="'git'">- El control de versiones ayuda a mantener una trazabilidad de todos los cambios en una aplicación</pre>
       <pre *ngSwitchCase="'git'">- El más conocido es GIT pero tambien existen otros como Mercurial</pre>
