@@ -42,8 +42,8 @@
   <div class="card-container">
 
     <div class="card card-small" (click)="linkReferencia('solid','https://profile.es/blog/principios-solid-desarrollo-software-calidad/',terminal)" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-        <span>SOLID</span>
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      <span>SOLID</span>
     </div>
 
     <div class="card card-small" (click)="linkReferencia('kiss','https://manuelzapata.co/principio-kiss-keep-it-simple-stupid/',terminal)" tabindex="0">
@@ -64,6 +64,11 @@
     <div class="card card-small" (click)="linkReferencia('dry','https://tantacom.com/principios-diseno-software-kiss-dry-solid/',terminal)" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
       <span>DRY</span>
+    </div>
+
+    <div class="card card-small" (click)="linkReferencia('hollywood','https://www.genbeta.com/desarrollo/doce-principios-de-diseno-que-todo-desarrollador-deberia-conocer',terminal)" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      <span>Hollywood</span>
     </div>
 
   </div>
@@ -220,6 +225,11 @@
       <span>Parte #4</span>
     </div>
 
+    <div class="card card-small" (click)="linkReferencia('demeter','https://www.adictosaltrabajo.com/2015/07/24/ley-de-demeter/',terminal)" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      <span>Demeter</span>
+    </div>
+
   </div>
 
   <h2>Refactorización</h2>
@@ -351,6 +361,32 @@
 
   </div>
 
+  <h2>Frameworks</h2>
+
+  <div class="card-container">
+
+    <div class="card card-small" (click)="linkReferencia('frameworks','https://neoattack.com/neowiki/framework/',terminal)" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      <span> ¿ Que son ?</span>
+    </div>
+
+    <div class="card card-small" (click)="linkReferencia('ioc','https://medium.com/all-you-need-is-clean-code/inversi%C3%B3n-de-control-principio-de-hollywood-dont-call-us-we-ll-call-you-179e9c70e3d0',terminal)" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      <span> IoC</span>
+    </div>
+
+    <div class="card card-small" (click)="linkReferencia('iod','https://www.arquitecturajava.com/el-patron-de-inyeccion-de-dependencia/',terminal)" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      <span> IoD</span>
+    </div>
+
+    <div class="card card-small" (click)="linkReferencia('spring','',terminal)" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      <span> Spring </span>
+    </div>
+
+  </div>
+
   <h2>Otros temas</h2>
 
   <div class="card-container">
@@ -380,11 +416,6 @@
       <span>Gestor de Versiones</span>
     </div>
 
-    <div class="card card-small" (click)="linkReferencia('frameworks','https://neoattack.com/neowiki/framework/',terminal)" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-      <span>Frameworks</span>
-    </div>
-
     <div class="card card-small" (click)="linkReferencia('uml','https://www.aprenderaprogramar.com/index.php?option=com_content&view=article&id=688:ique-es-y-para-que-sirve-uml-versiones-de-uml-lenguaje-unificado-de-modelado-tipos-de-diagramas-uml&catid=46&Itemid=163',terminal)" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
       <span>UML</span>
@@ -402,109 +433,115 @@
 
   </div>
 
-  <!-- Terminal -->
   <div class="terminal" [ngSwitch]="selection" #terminal>
-      <pre *ngSwitchDefault>Selecciona una opcion para ver más</pre>
+      <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
 
-      <pre *ngSwitchCase="'solid'">S - Responsabilidad única</pre>
-      <pre *ngSwitchCase="'solid'">O - Abierto/Cerrado</pre>
-      <pre *ngSwitchCase="'solid'">L - Sustitución de Liskov</pre>
-      <pre *ngSwitchCase="'solid'">I - Segregación de interfaces</pre>
-      <pre *ngSwitchCase="'solid'">D - Inversión de dependencias</pre>
+      <pre *ngSwitchCase="'solid'"> S -> Responsabilidad única</pre>
+      <pre *ngSwitchCase="'solid'"> O -> Abierto/Cerrado</pre>
+      <pre *ngSwitchCase="'solid'"> L -> Sustitución de Liskov</pre>
+      <pre *ngSwitchCase="'solid'"> I -> Segregación de interfaces </pre>
+      <pre *ngSwitchCase="'solid'"> D -> Inversión de dependencias </pre>
 
       <pre *ngSwitchCase="'kiss'">- Código entendible</pre>
-      <pre *ngSwitchCase="'kiss'">- Mantener muchos modulos y metodos pequeños en vez de uno grande</pre>
+      <pre *ngSwitchCase="'kiss'">- Mantener muchos modulos y metodos pequeños en vez de uno grande </pre>
       <pre *ngSwitchCase="'kiss'">- Código autocomentado, nombres claros para las variables</pre>
       <pre *ngSwitchCase="'kiss'">- Divide y venceras, dividir el problema en subproblemas</pre>
       <pre *ngSwitchCase="'kiss'">- No abusar de los comentarios, y mantenerlos actualizados</pre>
       <pre *ngSwitchCase="'kiss'">- Implementa código reutilizable, evitar el copiar y pegar</pre>
 
       <pre *ngSwitchCase="'yagni'">- No lo añadas hasta que no lo necesites</pre>
-      <pre *ngSwitchCase="'yagni'">- Define prioridades, evita trabajo innecesario</pre>
+      <pre *ngSwitchCase="'yagni'">- Define prioridades, evita trabajo innecesario </pre>
 
       <pre *ngSwitchCase="'occam'">- Preferir siempre la solución más simple</pre>
+      <pre *ngSwitchCase="'occam'">- En igualdad de condiciones la solución más optima prevalecera</pre>
       
-      <pre *ngSwitchCase="'dry'">- Evita repertir código lo más posible</pre>
-      <pre *ngSwitchCase="'dry'">- Incrementa la mantenibilidad del código</pre>
+      <pre *ngSwitchCase="'dry'">- Evita repertir código lo más posible </pre>
+      <pre *ngSwitchCase="'dry'">- Incrementa la mantenibilidad del código </pre>
       <pre *ngSwitchCase="'dry'">- Facilita la refactorización</pre>
-      
+
+      <pre *ngSwitchCase="'hollywood'">- No nos llames nosotros te llamamos </pre>
+      <pre *ngSwitchCase="'hollywood'">- Se basa en la inversion de dependencias para crear la inversion de control </pre>
+      <pre *ngSwitchCase="'hollywood'">- Esto logra obtener las referencias y datos necesarios para funcionar mediante una entidad externa </pre>
+      <pre *ngSwitchCase="'hollywood'">- Generalmente las entidades externas son los frameworks que ejecutan el codigo del usuario </pre>
+      <pre *ngSwitchCase="'hollywood'">- Las instancias se crean y se eliminan de una manera más eficiente, mejorando el rendimiento </pre>
+
       <pre *ngSwitchCase="'imperativo'">- Imperativo -> secuencia ordenada de acciones a ejecutar, más cercano a lenguaje maquina </pre>
       <pre *ngSwitchCase="'imperativo'">  - Estructurado -> donde se incluyen sentencias de control y se contemplan las interrupciones</pre>
       <pre *ngSwitchCase="'imperativo'">  - Procedimental -> donde se empieza a crear funciones y metodos para no repetir código</pre>
       <pre *ngSwitchCase="'imperativo'">  - Modular -> Se agrupan segmentos más grandes de código independientes entre si, facilitando la depuración</pre>
-      <pre *ngSwitchCase="'imperativo'">- Declarativo -> Se describe el resultado de la operación y no el como, requiriendo más abstracción y menos código</pre>
-      <pre *ngSwitchCase="'imperativo'">  - Funcional -> la base son las funciones que se pueden concatenar para formar estructuras o usarse como argumentos</pre>
+      <pre *ngSwitchCase="'imperativo'">- Declarativo -> Se describe el resultado de la operación y no el como, requiriendo más abstracción y menos código </pre>
+      <pre *ngSwitchCase="'imperativo'">  - Funcional -> la base son las funciones que se pueden concatenar para formar estructuras o usarse como argumentos </pre>
       <pre *ngSwitchCase="'imperativo'">  - Logica -> la base es la matematica y su logica para predecir el resultado</pre>
 
       <pre *ngSwitchCase="'poo'">- Alta integración Bajo acoplamiento</pre>
       <pre *ngSwitchCase="'poo'">- Mejora la abstracción de los problemas al acercarlos a lo cotidiano</pre>
-      <pre *ngSwitchCase="'poo'">- Clases -> abstracciones de la realidad; Objetos -> instancias de una clase</pre>
+      <pre *ngSwitchCase="'poo'">- Clases -> abstracciones de la realidad; Objetos -> instancias de una clase </pre>
       <pre *ngSwitchCase="'poo'">- Propiedades -> atributos o caracteristicas de un objeto</pre>
       <pre *ngSwitchCase="'poo'">- Metodos -> comportamientos o acciones de un objeto</pre>
 
       <pre *ngSwitchCase="'pooPilares'">- Encasulapción: todas las propiedades del objeto son solo del objeto</pre>
       <pre *ngSwitchCase="'pooPilares'">- Abstracción: las acciones son publicas pero su complejidad esta oculta</pre>
-      <pre *ngSwitchCase="'pooPilares'">- Herencia: los hijos tienen acceso a los metodos y atributos del padre, además de las propias</pre>
+      <pre *ngSwitchCase="'pooPilares'">- Herencia: los hijos tienen acceso a los metodos y atributos del padre, además de las propias </pre>
       <pre *ngSwitchCase="'pooPilares'">- Polimorfismo: cada objeto se puede comportat diferente, aunque tenga una misma base</pre>
 
       <pre *ngSwitchCase="'pooStatic'">- Metodos o atributos que pertenecen a la clase y no a un objeto como tal</pre>
-      <pre *ngSwitchCase="'pooStatic'">- Son accesibles de manera global, por lo que hay que tener cuidado con su uso</pre>
+      <pre *ngSwitchCase="'pooStatic'">- Son accesibles de manera global, por lo que hay que tener cuidado con su uso </pre>
       <pre *ngSwitchCase="'pooStatic'">- No necesitan ser instanciados para ser usados</pre>
 
       <pre *ngSwitchCase="'sobrecarga'">- Algunos lenguajes permite sobrecargar los metodos y constructores</pre>
       <pre *ngSwitchCase="'sobrecarga'">- El nombre sera el mismo pero pueden recibir diferente numero de parametros o de tipos</pre>
-      <pre *ngSwitchCase="'sobrecarga'">- El compilador interno se da cuenta de esto independientemente del lenguaje y no marcara error</pre>
+      <pre *ngSwitchCase="'sobrecarga'">- El compilador interno se da cuenta de esto independientemente del lenguaje y no marcara error </pre>
 
       <pre *ngSwitchCase="'funcional'">- Las acciones son delegadas a funciones propias del lenguaje</pre>
       <pre *ngSwitchCase="'funcional'">  - Funciones Puras -> dada una entrada siempre van a tener la misma salida</pre>
-      <pre *ngSwitchCase="'funcional'">  - Composición -> se pueden juntar y crear una secuencia y resultado diferente</pre> 
-      <pre *ngSwitchCase="'funcional'">  - Efectos secundarios -> Son los cambios visibles fuera de la función llamada</pre> 
+      <pre *ngSwitchCase="'funcional'">  - Composición -> se pueden juntar y crear una secuencia y resultado diferente </pre> 
+      <pre *ngSwitchCase="'funcional'">  - Efectos secundarios -> Son los cambios visibles fuera de la función llamada </pre> 
       <pre *ngSwitchCase="'funcional'">  - Se le da más relevancia al concepto de inmutabilidad y mutabilidad</pre>
       <pre *ngSwitchCase="'funcional'">  - Los efectos secundarios se evitan en este tipo de programación</pre>
       <pre *ngSwitchCase="'funcional'">  - Los efectos secundarios se evitan en este tipo de programación</pre>
 
-      <pre *ngSwitchCase="'scripting'">- Son lenguajes que no son compilados y que se ejecutan directamente en el lado del cliente</pre>
+      <pre *ngSwitchCase="'scripting'">- Son lenguajes que no son compilados y que se ejecutan directamente en el lado del cliente </pre>
       <pre *ngSwitchCase="'scripting'">- El más famoso es Javascript, pero otros como Python y Ruby tambien lo son</pre>
-      <pre *ngSwitchCase="'scripting'">- Suelen ser menos eficientes al no ser compilados pero conllevan menos trabajo para el programador</pre>
+      <pre *ngSwitchCase="'scripting'">- Suelen ser menos eficientes al no ser compilados pero conllevan menos trabajo para el programador </pre>
       <pre *ngSwitchCase="'scripting'">- Generalmente son debilmente tipados, lo que da más flexibilidad y posiblidad de errores</pre>
 
       <pre *ngSwitchCase="'reactiva'">- Es un paradigma enfocado al trabajo con flujo de datos, generalmente debe ser: </pre>
       <pre *ngSwitchCase="'reactiva'">  - Resilientes -> deben responder incluso cuando hay estados de error</pre>
       <pre *ngSwitchCase="'reactiva'">  - Elasticos -> el aumento de la concurrencia no debe afectar las respuestas</pre>
-      <pre *ngSwitchCase="'reactiva'">  - Comunicación -> minimo acoplamiento al hacer que todo se comunique mediante mensajeria</pre>
-      <pre *ngSwitchCase="'reactiva'">  - Operadores -> tener soporte hacia estos que permiten transformar el flujo de datos</pre>
+      <pre *ngSwitchCase="'reactiva'">  - Comunicación -> minimo acoplamiento al hacer que todo se comunique mediante mensajeria </pre>
+      <pre *ngSwitchCase="'reactiva'">  - Operadores -> tener soporte hacia estos que permiten transformar el flujo de datos </pre>
 
       <pre *ngSwitchCase="'marcado'">- Son lenguajes relacionados con la presentación de contenido como HTML y XML</pre>
-      <pre *ngSwitchCase="'marcado'">- El primero se usa para estructurar contenido web y el segundo para estructurar datos</pre>
+      <pre *ngSwitchCase="'marcado'">- El primero se usa para estructurar contenido web y el segundo para estructurar datos </pre>
 
-      <pre *ngSwitchCase="'definicion'">-  Representa la estructura del sistema, sus componentes, las propiedades visibles externamente y las relaciones entre ellas.</pre>
+      <pre *ngSwitchCase="'definicion'">-  Representa la estructura del sistema, sus componentes, las propiedades visibles externamente y las relaciones entre ellas </pre>
 
       <pre *ngSwitchCase="'capas'">- Se basa en la distribución de roles y responsabilidades de forma jerarquica</pre>
       <pre *ngSwitchCase="'capas'">- Puede tener n-capas, generalmente son 3 -> MVC</pre>
-      <pre *ngSwitchCase="'capas'">- La abstracción la reutilizacion el desacople y la integración mejoran considerablemente</pre>
-      <pre *ngSwitchCase="'capas'">- El alto grado de abstracción alcanzado puede aislar ciertas capas y hacerlas independientes de las tecnologias</pre>
+      <pre *ngSwitchCase="'capas'">- La abstracción la reutilizacion el desacople y la integración mejoran considerablemente </pre>
+      <pre *ngSwitchCase="'capas'">- El alto grado de abstracción alcanzado puede aislar ciertas capas y hacerlas independientes de las tecnologias </pre>
       <pre *ngSwitchCase="'capas'">- Los cambios tienen bajo impacto y la matenibilidad es más facil</pre>
       
-      <pre *ngSwitchCase="'cliente'">- Existen 2 elementos principales, de las arquitecturas más usadas debido a su simplicidad</pre>
+      <pre *ngSwitchCase="'cliente'">- Existen 2 elementos principales, de las arquitecturas más usadas debido a su simplicidad </pre>
       <pre *ngSwitchCase="'cliente'">   Servidor -> quien responde las peticiones y almacena la información</pre>
       <pre *ngSwitchCase="'cliente'">   Red -> medio para la comunicación en doble sentido constantemente</pre>
       <pre *ngSwitchCase="'cliente'">   Cliente -> Dispositivos que hacen solicitudes, para guardar o consultar datos</pre>
 
       <pre *ngSwitchCase="'intermediario'">- Un componente central maneja diferentes sistemas distribuidos coordinando las respuestas</pre>
-      <pre *ngSwitchCase="'intermediario'">- Los clientes solicitan el intermediario y este a su vez solicita los servicios expuestos indicados</pre>
+      <pre *ngSwitchCase="'intermediario'">- Los clientes solicitan el intermediario y este a su vez solicita los servicios expuestos indicados </pre>
 
       <pre *ngSwitchCase="'servicios'">- Se pasa de un nucleo central y robusto a diferentes partes más pequeñas y ligeras</pre>
-      <pre *ngSwitchCase="'servicios'">- Las partes se intercomunican entre si y funcionan de manera separada, aumentando la tolerancia a fallos</pre>
-      <pre *ngSwitchCase="'servicios'">- Los servicios pueden ser independientes de las tecnologias, además de que se pueden subdividir tambien</pre>
+      <pre *ngSwitchCase="'servicios'">- Las partes se intercomunican entre si y funcionan de manera separada, aumentando la tolerancia a fallos </pre>
+      <pre *ngSwitchCase="'servicios'">- Los servicios pueden ser independientes de las tecnologias, además de que se pueden subdividir tambien </pre>
       <pre *ngSwitchCase="'servicios'">- Tambien se pueden escalar de manera individual significando una mejora en el uso de recursos</pre>
 
-      <pre *ngSwitchCase="'hexagonal'">- Aisla el dominio de las tecnologias, la comunicación se da por medio de puertos (interfaces)</pre>
+      <pre *ngSwitchCase="'hexagonal'">- Aisla el dominio de las tecnologias, la comunicación se da por medio de puertos (interfaces) </pre>
       <pre *ngSwitchCase="'hexagonal'">- Cualquier dispositivo puede consultarla y la información sera la misma</pre>
       <pre *ngSwitchCase="'hexagonal'">- Las capas son idenpendientes y más faciles de testear</pre>
 
       <pre *ngSwitchCase="'otrasArquitecturas'">- Bus de Eventos -> Una fuente emite eventos donde un bus los direcciona a los receptores indicados</pre>
-      <pre *ngSwitchCase="'otrasArquitecturas'">- MVC -> Consta de 3 capas bien definidas, modelo, vista y controlador, cada una con una función espeficica</pre>
-      <pre *ngSwitchCase="'otrasArquitecturas'">- Tuberia -> Es un flujo donde los datos son transformados a medida que van desde su origen hasta su destino</pre>
+      <pre *ngSwitchCase="'otrasArquitecturas'">- MVC -> Consta de 3 capas bien definidas, modelo, vista y controlador, cada una con una función espeficica </pre>
+      <pre *ngSwitchCase="'otrasArquitecturas'">- Tuberia -> Es un flujo donde los datos son transformados a medida que van desde su origen hasta su destino </pre>
 
       <pre *ngSwitchCase="'definicionPatrones'">- Son soluciones especificas a problemas comunes y los más conocidos son: </pre>
       <pre *ngSwitchCase="'definicionPatrones'">   GOF -> que se dividen en 3, creacionales, estructurales y de comportamiento </pre>
@@ -517,126 +554,130 @@
       <pre *ngSwitchCase="'desglosegof'">- Creacionales </pre>
       <pre *ngSwitchCase="'desglosegof'">  -Singleton -> Restringe la instancia de la clase a un solo Objeto </pre>
       <pre *ngSwitchCase="'desglosegof'">  -MVC -> plantea la separación en 3 capas, cada una con una función especifica </pre>
-      <pre *ngSwitchCase="'desglosegof'">  -Abstract factory -> Permite crear familias de objetos relacionados sin especificarlas directamente</pre>
+      <pre *ngSwitchCase="'desglosegof'">  -Abstract factory -> Permite crear familias de objetos relacionados sin especificarlas directamente </pre>
       <pre *ngSwitchCase="'desglosegof'">  -Builder -> Permite crear objetos bajo demanda, y solo con las propiedades necesitadas</pre>
       <pre *ngSwitchCase="'desglosegof'">- Estructurales </pre>
       <pre *ngSwitchCase="'desglosegof'">  -Adapter -> Permite la comunicación entre objetos de tipos diferentes </pre>
       <pre *ngSwitchCase="'desglosegof'">  -Decorator -> Añade funcionalidades extra añadiendo objetos ya las tienen </pre>
-      <pre *ngSwitchCase="'desglosegof'">  -Facade -> Permite acceder facilmente a muchas funciones, muy usado en librerias y frameworks</pre>
+      <pre *ngSwitchCase="'desglosegof'">  -Facade -> Permite acceder facilmente a muchas funciones, muy usado en librerias y frameworks </pre>
       <pre *ngSwitchCase="'desglosegof'">  -Bridge -> Permite dividir clases muy relacionadas en otras más pequeñas e independientes</pre>
       <pre *ngSwitchCase="'desglosegof'">- Comportamiento </pre>
       <pre *ngSwitchCase="'desglosegof'">  -Iterator -> Permite recorrer los elementos de una colección</pre>
       <pre *ngSwitchCase="'desglosegof'">  -Mediador -> La comunicación entre objetos se da solo mediante un elemento central</pre>
-      <pre *ngSwitchCase="'desglosegof'">  -Observer -> Permite generar subscripciones y que todos los oyentes se enteren de los cambios</pre>
+      <pre *ngSwitchCase="'desglosegof'">  -Observer -> Permite generar subscripciones y que todos los oyentes se enteren de los cambios </pre>
       <pre *ngSwitchCase="'desglosegof'">  -Estrategia -> Permite que una clase escoja la mejor implementación de acuerdo al caso</pre>
 
       <pre *ngSwitchCase="'grasp'">- Intentan hacer que la Asignación de responsabilidades sea lo más optima posible</pre>
-      <pre *ngSwitchCase="'grasp'">- Alta cohesion mediante la refactorización, y bajo acoplamiento al no abusar de la herencia</pre>
+      <pre *ngSwitchCase="'grasp'">- Alta cohesion mediante la refactorización, y bajo acoplamiento al no abusar de la herencia </pre>
       <pre *ngSwitchCase="'grasp'">- Cada componente tiene una función especifica en la que es experto</pre>
-      <pre *ngSwitchCase="'grasp'">- Conocer las peculiaridades de cada lenguaje como ciclos de vida e integración con el SO</pre>
-      <pre *ngSwitchCase="'grasp'">- Darle prioridad al polimorfismo que a las sentencias de control al usarse en los objetos</pre>
+      <pre *ngSwitchCase="'grasp'">- Conocer las peculiaridades de cada lenguaje como ciclos de vida e integración con el SO </pre>
+      <pre *ngSwitchCase="'grasp'">- Darle prioridad al polimorfismo que a las sentencias de control al usarse en los objetos </pre>
       <pre *ngSwitchCase="'grasp'">- Evitar el uso de variables globales, especialmente en el desarrollo web</pre>
       <pre *ngSwitchCase="'grasp'">- La creación de factorias y clases intermedias ayudan a la mantenibilidad del código</pre>
 
       <pre *ngSwitchCase="'dao'">- Son usados para el acceso a los datos (persistencia)</pre>
       <pre *ngSwitchCase="'dao'">  - DAO -> obliga a una mayor implementación manual a cambio de flexibilidad</pre>
-      <pre *ngSwitchCase="'dao'">  - Active Record -> se gana una mayor independencia de la bd a costa de ceder el control</pre>
+      <pre *ngSwitchCase="'dao'">  - Active Record -> se gana una mayor independencia de la bd a costa de ceder el control </pre>
       
       <pre *ngSwitchCase="'antipatrones'">- Son malas soluciones a problemas comunes que a priori parecen buenas ideas</pre>
-      <pre *ngSwitchCase="'antipatrones'">- Pueden nacer del afan de implementar patrones innecesariamente o mezclarlos de manera indiferente</pre>
+      <pre *ngSwitchCase="'antipatrones'">- Pueden nacer del afan de implementar patrones innecesariamente o mezclarlos de manera indiferente </pre>
       <pre *ngSwitchCase="'antipatrones'">  -Golden Hammer -> Pretende que todo se solucione de la misma manera o con el mismo lenguaje</pre>
       <pre *ngSwitchCase="'antipatrones'">  -Lava Flow -> Es la codificación de manera continua, sin un orden alguno, y lleno de redundancias</pre>
-      <pre *ngSwitchCase="'antipatrones'">  -Spaghetti Code -> Aparece cuando se suelen mezclar muchos lenguajes, aumentando la complejidad de la solución</pre>
+      <pre *ngSwitchCase="'antipatrones'">  -Spaghetti Code -> Aparece cuando se suelen mezclar muchos lenguajes, aumentando la complejidad de la solución </pre>
       <pre *ngSwitchCase="'antipatrones'">  -God Class -> Sucede cuando todo se soluciona en un solo archivo metodo o clase</pre>
       <pre *ngSwitchCase="'antipatrones'">  -Poltergeist -> Es la existencia de elementos injustificadamente</pre>
       <pre *ngSwitchCase="'antipatrones'">- Tambien se pueden aplicar para temas de arquitectura</pre>
       <pre *ngSwitchCase="'antipatrones'">  -Reinventar la rueda -> Es la implementación de soluciones que ya existen de antemano</pre>
-      <pre *ngSwitchCase="'antipatrones'">  -Casarse con el diablo -> Es la dependencia total de algun elemento sin contingencia alguna</pre>
+      <pre *ngSwitchCase="'antipatrones'">  -Casarse con el diablo -> Es la dependencia total de algun elemento sin contingencia alguna </pre>
 
-      <pre *ngSwitchCase="'practicas1'">- Definir el alcance, establecer limites con el cliente acerca del trabajo a realizar</pre>
+      <pre *ngSwitchCase="'practicas1'">- Definir el alcance, establecer limites con el cliente acerca del trabajo a realizar </pre>
       <pre *ngSwitchCase="'practicas1'">- Dividir el desarrollo en fases o entregables que sean factibles</pre>
       <pre *ngSwitchCase="'practicas1'">- Elegir el mejor IDE de acuerdo a los conocimientos o las necesidades</pre>
       <pre *ngSwitchCase="'practicas1'">- Reutiliza código y comentalo cuando sea necesario</pre>
-      <pre *ngSwitchCase="'practicas1'">- Documenta lo que haz hecho, asi es más facil integrar personal y sera util para futuros desarrollos</pre>
+      <pre *ngSwitchCase="'practicas1'">- Documenta lo que haz hecho, asi es más facil integrar personal y sera util para futuros desarrollos </pre>
 
       <pre *ngSwitchCase="'practicas2'">- Presencia activa de los clientes en el desarollo</pre>
       <pre *ngSwitchCase="'practicas2'">- Definir los requerimientos y sus prioridades con el cliente</pre>
       <pre *ngSwitchCase="'practicas2'">- Adaptar el lenguaje de acuerdo a los tipos de clientes</pre>
-      <pre *ngSwitchCase="'practicas2'">- Nunca dejar funciones al azar, que las pruebas demuestren su funcionamiento</pre>
+      <pre *ngSwitchCase="'practicas2'">- Nunca dejar funciones al azar, que las pruebas demuestren su funcionamiento </pre>
 
       <pre *ngSwitchCase="'practicas3'">- Escoger un ciclo de vida adecuado segun cada desarrollo</pre>
-      <pre *ngSwitchCase="'practicas3'">- Estimar y presupuestar correctamente (más facil decirlo que hacerlo)</pre>
+      <pre *ngSwitchCase="'practicas3'">- Estimar y presupuestar correctamente (más facil decirlo que hacerlo) </pre>
       <pre *ngSwitchCase="'practicas3'">- Control de calidad y revisiones de código periodicas</pre>
       <pre *ngSwitchCase="'practicas3'">- Planificar el matenimiento el soporte y posibles mejoras</pre>
 
       <pre *ngSwitchCase="'practicas4'">- Usar tecnologias y frameworks consolidados</pre>
-      <pre *ngSwitchCase="'practicas4'">- Promover que el uso de la aplicación sea intuitivo y accesible</pre>
+      <pre *ngSwitchCase="'practicas4'">- Promover que el uso de la aplicación sea intuitivo y accesible </pre>
       <pre *ngSwitchCase="'practicas4'">- Distribución de tareas, no hay equipos de un solo hombre</pre>
+
+      <pre *ngSwitchCase="'demeter'">- No aceptar caramelos de extraños</pre>
+      <pre *ngSwitchCase="'demeter'">- El encadenamiento de muchos metodos puede significar un alto acoplamiento</pre>
+      <pre *ngSwitchCase="'demeter'">- Entre más grande sea una pila de llamadas, sera más propensa a futuras refactorizaciones </pre>
 
       <pre *ngSwitchCase="'codigolimpio'">- Menos es Más, el poder de la simplicidad hecho codigo</pre>
       <pre *ngSwitchCase="'codigolimpio'">- Es más facil de entender para otros; Es más facil de mantener</pre>
-      <pre *ngSwitchCase="'codigolimpio'">- No hay problemas de codigo duplicado; Los tests son mas faciles de pasar</pre>
+      <pre *ngSwitchCase="'codigolimpio'">- No hay problemas de codigo duplicado; Los tests son mas faciles de pasar </pre>
 
-      <pre *ngSwitchCase="'deudatecnica'">- Todo desarrollador desea crear un buen codigo pero las omisiones o errores crecen sigilosamente</pre>
+      <pre *ngSwitchCase="'deudatecnica'">- Todo desarrollador desea crear un buen codigo pero las omisiones o errores crecen sigilosamente </pre>
       <pre *ngSwitchCase="'deudatecnica'">- La mala modularización del codigo puede hacer que los cambios tengan un gran impacto</pre>
       <pre *ngSwitchCase="'deudatecnica'">- Apurar el desarrollo puede crear soluciones rapidas pero incompletas</pre>
       <pre *ngSwitchCase="'deudatecnica'">- La falta de pruebas puede tener efectos colaterales inmesamente destructivos</pre>
       <pre *ngSwitchCase="'deudatecnica'">- La Documentación siempre sera necesaria, y omitirla entorpecera futuros cambios</pre>
-      <pre *ngSwitchCase="'deudatecnica'">- Sin comunicación o interacciones incompletas pueden generar pequeñas islas dentro de la empresa</pre>
+      <pre *ngSwitchCase="'deudatecnica'">- Sin comunicación o interacciones incompletas pueden generar pequeñas islas dentro de la empresa </pre>
       <pre *ngSwitchCase="'deudatecnica'">- Tambien existe el elemento humano cuando el desarrollador es inexperto o incompetente</pre>
 
       <pre *ngSwitchCase="'cuandorefactorizar'">- Cuando se inicia a duplicar codigo, eventualmente sera necesario refactorizarlo</pre>
       <pre *ngSwitchCase="'cuandorefactorizar'">- Cuando se empieza se arregla un error es una excelente oportunidad para hacerlo</pre>
       <pre *ngSwitchCase="'cuandorefactorizar'">- Cuando se hagan revisiones, siempre hay espacio para la mejora</pre>
-      <pre *ngSwitchCase="'cuandorefactorizar'">- Cuando se agregan nuevas funciones, tambien se pueden refactorizar las existentes</pre>
+      <pre *ngSwitchCase="'cuandorefactorizar'">- Cuando se agregan nuevas funciones, tambien se pueden refactorizar las existentes </pre>
 
-      <pre *ngSwitchCase="'comorefactorizar'">- El resultado debe ser mejor que lo anterior, de lo contrario sera tiempo perdido</pre>
-      <pre *ngSwitchCase="'comorefactorizar'">- No se deben crear nuevas funciones, eso es estrictamente en tiempo de desarrollo</pre>
+      <pre *ngSwitchCase="'comorefactorizar'">- El resultado debe ser mejor que lo anterior, de lo contrario sera tiempo perdido </pre>
+      <pre *ngSwitchCase="'comorefactorizar'">- No se deben crear nuevas funciones, eso es estrictamente en tiempo de desarrollo </pre>
       <pre *ngSwitchCase="'comorefactorizar'">- Los tests deben seguir pasando tal y como antes de empezar</pre>
 
       <pre *ngSwitchCase="'codesmells'">- Son cosas en el codigo que se pueden hacer de una mejor manera o que a la larga seran malas practicas</pre>
-      <pre *ngSwitchCase="'codesmells'">- Aunque no sean un problemas prioritarios haran crecer la deuda tecnica e inclusive podran crear fallos en el futuro</pre>
+      <pre *ngSwitchCase="'codesmells'">- Aunque no sean un problemas prioritarios haran crecer la deuda tecnica e inclusive podran crear fallos en el futuro </pre>
       <pre *ngSwitchCase="'codesmells'">- Que el codigo funcione no significa que sea tecnicamente correcto</pre>
 
-      <pre *ngSwitchCase="'callbackhell'">- Generalmente es un problema al hacer codigo con caracteristicas asincronas (generalmente javascript)</pre>
+      <pre *ngSwitchCase="'callbackhell'">- Generalmente es un problema al hacer codigo con caracteristicas asincronas (generalmente javascript) </pre>
       <pre *ngSwitchCase="'callbackhell'">- El orden en que se copia el codigo no necesariamente es en el que va a ser ejecutado</pre>
       <pre *ngSwitchCase="'callbackhell'">- Cambiar el orden de las llamadas puede evitar el anidamiento innecesario</pre>
-      <pre *ngSwitchCase="'callbackhell'">- Usar promesas ó el Async/Await que hara que el codigo se comporte de manera más sincronica</pre>
+      <pre *ngSwitchCase="'callbackhell'">- Usar promesas ó el Async/Await que hara que el codigo se comporte de manera más sincronica </pre>
 
       <pre *ngSwitchCase="'cosas1'">- Desconocimiento del negocio, clases mal diseñadas o condiciones sin sentido</pre>
       <pre *ngSwitchCase="'cosas1'">- Mala o nula formulación de requerimientos y requisitos </pre>
-      <pre *ngSwitchCase="'cosas1'">- Desconocimiento de las tecnologias que se usen, la experiencia de un desarrollador toma tiempo para conseguirse</pre>
+      <pre *ngSwitchCase="'cosas1'">- Desconocimiento de las tecnologias que se usen, la experiencia de un desarrollador toma tiempo para conseguirse </pre>
       <pre *ngSwitchCase="'cosas1'">- Malas estimaciones de los tiempos, obligando a mucho trabajo extra</pre>
       <pre *ngSwitchCase="'cosas1'">- No aplicar patrones y/o arquitecturas</pre>
 
-      <pre *ngSwitchCase="'cosas2'">- Asignación erronea del personal en roles inadecuados o sin la experiencia necesaria</pre>
+      <pre *ngSwitchCase="'cosas2'">- Asignación erronea del personal en roles inadecuados o sin la experiencia necesaria </pre>
       <pre *ngSwitchCase="'cosas2'">- Asumir información sin tener una confirmación previa</pre>
       <pre *ngSwitchCase="'cosas2'">- Empezar a planear sin tener todas las variables a tener en cuenta</pre>
       <pre *ngSwitchCase="'cosas2'">- No se debe abusar de la capacidad de multitarea del equipo</pre>
       <pre *ngSwitchCase="'cosas2'">- La falta de comunicación en el equipo puede conllevar al desastre</pre>
       <pre *ngSwitchCase="'cosas2'">- No poner limites es tan malo como ser inflexible, siempre hay un punto medio</pre>
       <pre *ngSwitchCase="'cosas2'">- Entregar productos incompletos, lo ideal seria pedir más tiempo o recursos</pre>
-      <pre *ngSwitchCase="'cosas2'">- Asignación erronea del personal en roles inadecuados o sin la experiencia necesaria</pre>
+      <pre *ngSwitchCase="'cosas2'">- Asignación erronea del personal en roles inadecuados o sin la experiencia necesaria </pre>
 
-      <pre *ngSwitchCase="'agiles'">- Las metodologias agiles buscan hacer que cualquier desarrollo sea de alta calidad, con tiempos y costos reducidos</pre>
+      <pre *ngSwitchCase="'agiles'">- Las metodologias agiles buscan hacer que cualquier desarrollo sea de alta calidad, con tiempos y costos reducidos </pre>
       <pre *ngSwitchCase="'agiles'">- Estas permiten la rapida adaptación a cualquier caracteristica del proyecto</pre>
       <pre *ngSwitchCase="'agiles'">- La participación de los clientes es fundamental en todo el transcurso del desarrollo</pre>
       <pre *ngSwitchCase="'agiles'">- El progreso se mide de una manera más relevante y metodica generando metricas más precisas</pre>
-      <pre *ngSwitchCase="'agiles'">- Estas formas de trabajar no son marcos irrompibles pueden ser modificadas y combinadas de acuerdo a las necesidades</pre>
+      <pre *ngSwitchCase="'agiles'">- Estas formas de trabajar no son marcos irrompibles pueden ser modificadas y combinadas de acuerdo a las necesidades </pre>
       <pre *ngSwitchCase="'agiles'">- Algunas de estas son: Extreme Programing, SCRUM, Kanban, Agile Inception, Desing Sprint</pre>
 
       <pre *ngSwitchCase="'scrum'">- Se basa en entregas pequeñas e incrementales que van sumando al producto final</pre>
       <pre *ngSwitchCase="'scrum'">- Roles:</pre>
       <pre *ngSwitchCase="'scrum'">  -Product Owner -> que es el encargado de defender los intereses del cliente</pre>
-      <pre *ngSwitchCase="'scrum'">  -Scrum Master -> es el encargado de que el equipo de trabajo no tenga incovenientes atascantes</pre>
+      <pre *ngSwitchCase="'scrum'">  -Scrum Master -> es el encargado de que el equipo de trabajo no tenga incovenientes atascantes </pre>
       <pre *ngSwitchCase="'scrum'">  -The Team -> son los encargados del desarrollo directamente y de hacer las entregas a tiempo</pre>
       <pre *ngSwitchCase="'scrum'">- Artefactos: </pre>
       <pre *ngSwitchCase="'scrum'">  -Product Backlog -> recoge el conjunto de tareas, requerimientos y funcionalidades del proyecto</pre>
-      <pre *ngSwitchCase="'scrum'">  -Sprint Backlog -> definición de las tareas a realizar y del tiempo aproximado que deberian conllevar durante algun sprint</pre>
+      <pre *ngSwitchCase="'scrum'">  -Sprint Backlog -> definición de las tareas a realizar y del tiempo aproximado que deberian conllevar durante algun sprint </pre>
       <pre *ngSwitchCase="'scrum'">  -Sprint Backlog -> definición de las tareas a realizar y del tiempo aproximado que deberian conllevar</pre>
       <pre *ngSwitchCase="'scrum'">  -Incremento -> resultado del sprint listo para añadir al proyecto</pre>
       <pre *ngSwitchCase="'scrum'">- Eventos: </pre>
-      <pre *ngSwitchCase="'scrum'">  -Planning Meeting -> planeación general donde el Product Owner prioriza las tareas a realizar para el sprint</pre>
+      <pre *ngSwitchCase="'scrum'">  -Planning Meeting -> planeación general donde el Product Owner prioriza las tareas a realizar para el sprint </pre>
       <pre *ngSwitchCase="'scrum'">  -Daily Scrum -> seguimiento diario del proyecto, analizando posibles problemas encontrados</pre>
       <pre *ngSwitchCase="'scrum'">  -Review -> se inspecciona el incremento realizado</pre>
       <pre *ngSwitchCase="'scrum'">  -Retrospective -> se da a conocer las dificultades del sprint y que cosas se pueden mejorar</pre>
@@ -645,26 +686,26 @@
       <pre *ngSwitchCase="'kanban'">- Se basa en una metodologia de tarjetas visuales para mostrar el completado de las tareas</pre>
       <pre *ngSwitchCase="'kanban'">- Facil de usar y de asumir por parte del equipo, al ser sumamente visual</pre>
       <pre *ngSwitchCase="'kanban'">- Tiene otras principios que son diferentes de las metodologias agiles</pre>
-      <pre *ngSwitchCase="'kanban'">  - Calidad -> Todo debe hacerse bien a la primera, los errores son más costosos cuando se arregla algo</pre>
+      <pre *ngSwitchCase="'kanban'">  - Calidad -> Todo debe hacerse bien a la primera, los errores son más costosos cuando se arregla algo </pre>
       <pre *ngSwitchCase="'kanban'">  - Sin desperdicio -> no hacer más de lo necesario (Principio YAGNI)</pre>
       <pre *ngSwitchCase="'kanban'">  - Mejora continua -> Siempre hay espacio para mejorar</pre>
       <pre *ngSwitchCase="'kanban'">  - Flexible -> las prioridades pueden cambiar</pre>
       <pre *ngSwitchCase="'kanban'">- Tiene varios pasos o aspectos a implementar</pre>
-      <pre *ngSwitchCase="'kanban'">  - Definir un flujo de trabajo accesible por todos, el tablero puede contener varios proyectos simultaneamente</pre>
+      <pre *ngSwitchCase="'kanban'">  - Definir un flujo de trabajo accesible por todos, el tablero puede contener varios proyectos simultaneamente </pre>
       <pre *ngSwitchCase="'kanban'">  - Se deben tener tantas columnas como estados hallan, y las tarjetas se iran desplazando entre estas</pre>
       <pre *ngSwitchCase="'kanban'">  - Visualizar las fases del desarrollo, al igual que SCRUM se basa en un desarrollo incremental</pre>
       <pre *ngSwitchCase="'kanban'">  - La prioridad son las actividades que se estan haciendo en vez de empezar nuevas</pre>
       <pre *ngSwitchCase="'kanban'">  - Las fases deben estar terminadas para poder iniciar la siguiente, además de tener un maximo de tareas</pre>
       <pre *ngSwitchCase="'kanban'">  - Los trabajadores nunca esta inactivos, ya que pueden solapar tareas de diferentes proyectos sin problemas</pre>
-      <pre *ngSwitchCase="'kanban'">- Esta metodologia tiene ciertos aspectos superiores que SCRUM, pero su implementación depende de las necesidades</pre>
+      <pre *ngSwitchCase="'kanban'">- Esta metodologia tiene ciertos aspectos superiores que SCRUM, pero su implementación depende de las necesidades </pre>
 
-      <pre *ngSwitchCase="'elevator'">- Es una sintexis sobre ti y tu proyecto en menos de lo que sube un ascensor (1-5 minutos)</pre>
+      <pre *ngSwitchCase="'elevator'">- Es una sintexis sobre ti y tu proyecto en menos de lo que sube un ascensor (1-5 minutos) </pre>
       <pre *ngSwitchCase="'elevator'">- Debe ser claro, conciso y atrayente para atraer a potenciales inversores</pre>
       <pre *ngSwitchCase="'elevator'"> - Debes tener una preparación previa, conocer todo lo necesario y siempre ser directo</pre>
-      <pre *ngSwitchCase="'elevator'"> - Mide los tiempos, repasa una y otra vez lo que vayas a decir, sin dejar de lado la naturalidad</pre>
+      <pre *ngSwitchCase="'elevator'"> - Mide los tiempos, repasa una y otra vez lo que vayas a decir, sin dejar de lado la naturalidad </pre>
       <pre *ngSwitchCase="'elevator'"> - Tu presentación debe ser sorprendente, mostrar el problema y su solución innovadora</pre>
 
-      <pre *ngSwitchCase="'canvas'">- Sirve para crear y definir modelos de negocios, con la prioridad de crear valor para los clientes</pre>
+      <pre *ngSwitchCase="'canvas'">- Sirve para crear y definir modelos de negocios, con la prioridad de crear valor para los clientes </pre>
       <pre *ngSwitchCase="'canvas'">- Debes de llenar 9 bloques que tu empresa ha de cumplir</pre>
       <pre *ngSwitchCase="'canvas'">  - Segmento de mercado -> ¿ quienes son tus clientes ?, son la base de todo tu negocio</pre>
       <pre *ngSwitchCase="'canvas'">  - Propuesta de valor -> tu diferencia frente a la competencia como ventaja competitiva</pre>
@@ -672,116 +713,129 @@
       <pre *ngSwitchCase="'canvas'">  - Comunicación -> como te comunicaras con tus clientes</pre>
       <pre *ngSwitchCase="'canvas'">  - Ingresos -> como ganaras dinero y de que fuentes</pre>
       <pre *ngSwitchCase="'canvas'">  - Recursos -> cosas como derechos de autor, personal, fondos, patentes, etc..</pre>
-      <pre *ngSwitchCase="'canvas'">  - Actividades clave -> producción, soluciónes, plataformas y todo lo necesarios para tu propuesta</pre>
+      <pre *ngSwitchCase="'canvas'">  - Actividades clave -> producción, soluciónes, plataformas y todo lo necesarios para tu propuesta </pre>
       <pre *ngSwitchCase="'canvas'">  - Socios -> quienes te ayudaran a conseguir los recursos necesarios</pre>
       <pre *ngSwitchCase="'canvas'">  - Costos -> definir cuanto gastar y como gastarlo</pre>
 
       <pre *ngSwitchCase="'tradicionales'">- Recolección de solicitudes -> Estudiar el sistema actual</pre>
-      <pre *ngSwitchCase="'tradicionales'">- Estudio de viabilidad -> se investiga desdes diferentes perspectivas, economicas, tecnologias, practicidad</pre>
+      <pre *ngSwitchCase="'tradicionales'">- Estudio de viabilidad -> se investiga desdes diferentes perspectivas, economicas, tecnologias, practicidad </pre>
       <pre *ngSwitchCase="'tradicionales'">- Analisis del sistema -> se intentan crear un plan a seguir</pre>
       <pre *ngSwitchCase="'tradicionales'">- Diseño -> en base a todos los datos recogidos, analisis, entrevistas, etc..</pre>
       <pre *ngSwitchCase="'tradicionales'">- Codificación -> se plasman todos los diseños en codigo funcional</pre>
       <pre *ngSwitchCase="'tradicionales'">- Pruebas -> Toda función importante debe ser evaluada para garantizar su fiabilidad</pre>
-      <pre *ngSwitchCase="'tradicionales'">- Mantenimiento -> Despues de ser probado e implementado el software puede ser actualizado o corregido en el tiempo</pre>
+      <pre *ngSwitchCase="'tradicionales'">- Mantenimiento -> Despues de ser probado e implementado el software puede ser actualizado o corregido en el tiempo </pre>
 
       <pre *ngSwitchCase="'cascada'">- Es un metodo secuencial donde cada etapa se desarrolla una sola vez</pre>
       <pre *ngSwitchCase="'cascada'">- Las fases del desarrollo no estan bien definidas y se pueden solapar entre si</pre>
       <pre *ngSwitchCase="'cascada'">- Errores en etapas previas pueden ser fatales si no se corrigen con premura</pre>
       <pre *ngSwitchCase="'cascada'">- Bastante inflexible en cuestion de cambios sin previo aviso</pre>
-      <pre *ngSwitchCase="'cascada'">- Los usuarios solo son consultados en etapas finales e iniciales, poca comunicación en etapas intermedias</pre>
+      <pre *ngSwitchCase="'cascada'">- Los usuarios solo son consultados en etapas finales e iniciales, poca comunicación en etapas intermedias </pre>
 
       <pre *ngSwitchCase="'espiral'">- Es la evolución del modelo en cascada</pre>
-      <pre *ngSwitchCase="'espiral'">- Se basa en la repetición de las mismas tareas, haciendo controles con más periocidad</pre>
-      <pre *ngSwitchCase="'espiral'">- Se reduce el riesgo del fracaso al dividir el proceso en partes más pequeñas</pre>
+      <pre *ngSwitchCase="'espiral'">- Se basa en la repetición de las mismas tareas, haciendo controles con más periocidad </pre>
+      <pre *ngSwitchCase="'espiral'">- Se reduce el riesgo del fracaso al dividir el proceso en partes más pequeñas </pre>
       <pre *ngSwitchCase="'espiral'">- Cada ciclo se planifica justo depues de terminar el objetivo del presente</pre>
       <pre *ngSwitchCase="'espiral'">- Los errores pueden evolucionar con caca ciclo, no necesarimente resolverse</pre>
 
       <pre *ngSwitchCase="'iterativo'">- Cada entrega es un proyecto más completo</pre>
-      <pre *ngSwitchCase="'iterativo'">- En cada oportunidad se pueden añadir nuevas funciones o actualizar las existentes</pre>
+      <pre *ngSwitchCase="'iterativo'">- En cada oportunidad se pueden añadir nuevas funciones o actualizar las existentes </pre>
       <pre *ngSwitchCase="'iterativo'">- Resiliencia frente a cambios inesperados, mayor comunicación con el cliente</pre>
-      <pre *ngSwitchCase="'iterativo'">- Permite desconocer detalles iniciales que se iran solucionando con las iteracciones</pre>
+      <pre *ngSwitchCase="'iterativo'">- Permite desconocer detalles iniciales que se iran solucionando con las iteracciones </pre>
       <pre *ngSwitchCase="'iterativo'">- Es funcional desde el primer ciclo, permite mejorar las estimaciones del proyecto</pre>
 
-      <pre *ngSwitchCase="'api'">- Conjunto de reglas y especificaciones por el cual se puede comunicar diferentes aplicaciones</pre>
+      <pre *ngSwitchCase="'api'">- Conjunto de reglas y especificaciones por el cual se puede comunicar diferentes aplicaciones </pre>
       <pre *ngSwitchCase="'api'">- Permiten compartir reutilizar funciones ya existentes y no reiventar la rueda</pre>
+      <pre *ngSwitchCase="'api'">- Suelen ser la entrada principal a los sistemas distribuidos </pre>
 
       <pre *ngSwitchCase="'ddd'">- Diseño Orientado a Dominios</pre>
       <pre *ngSwitchCase="'ddd'"> -El lenguaje debe ser obicuo (entedible por cualquiera)</pre>
-      <pre *ngSwitchCase="'ddd'"> -El desarrollo debe ser lo más abstracto posible para ser independiente de las implementaciones</pre>
+      <pre *ngSwitchCase="'ddd'"> -El desarrollo debe ser lo más abstracto posible para ser independiente de las implementaciones </pre>
 
       <pre *ngSwitchCase="'nube'"> -Nube Publica -> Los recursos son del proveedor y estos es compartido con otros usuarios</pre>
       <pre *ngSwitchCase="'nube'"> -Nube Privada -> Los recursos son propios y no deben ser compartidos con terceros</pre>
-      <pre *ngSwitchCase="'nube'"> -Nube Hibrida -> Los recursos son propios pero el espacio puede ser compartido con otros usuarios</pre>
+      <pre *ngSwitchCase="'nube'"> -Nube Hibrida -> Los recursos son propios pero el espacio puede ser compartido con otros usuarios </pre>
 
       <pre *ngSwitchCase="'rest'">               SOAP                         VS                  REST</pre>
       <pre *ngSwitchCase="'rest'">        Solo permite datos en XML                           Variedad de formatos</pre>
-      <pre *ngSwitchCase="'rest'">    Puede incluir metadatos, más pesado            Generalmente se usa JSON, más liviano</pre>
-      <pre *ngSwitchCase="'rest'">    NO se puede guardar contenido en la cache      SI puede guardar contenido en la cache</pre>
+      <pre *ngSwitchCase="'rest'">    Puede incluir metadatos, más pesado            Generalmente se usa JSON, más liviano </pre>
+      <pre *ngSwitchCase="'rest'">    NO se puede guardar contenido en la cache      SI puede guardar contenido en la cache </pre>
 
-      <pre *ngSwitchCase="'git'">- El control de versiones ayuda a mantener una trazabilidad de todos los cambios en una aplicación</pre>
+      <pre *ngSwitchCase="'git'">- El control de versiones ayuda a mantener una trazabilidad de todos los cambios en una aplicación </pre>
       <pre *ngSwitchCase="'git'">- El más conocido es GIT pero tambien existen otros como Mercurial</pre>
-      <pre *ngSwitchCase="'git'">- GIT puede ser usado en repositorios locales o distribuidos en la nube, permitiendo la colaboración entre desarrolladores</pre>
+      <pre *ngSwitchCase="'git'">- GIT puede ser usado en repositorios locales o distribuidos en la nube, permitiendo la colaboración entre desarrolladores </pre>
       <pre *ngSwitchCase="'git'">- Permite crear ramificaciones para trabajar de manera aislada sin afectar a todo el flujo en general</pre>
       <pre *ngSwitchCase="'git'">- Tambien se pueden crear etiquetas para marcar commits y que sean más faciles de encontrar</pre>
-
-      <pre *ngSwitchCase="'frameworks'">- Son marcos de trabajo con la finalidad de acelerar y aumentar la calidad del codigo desarrollado</pre>
-      <pre *ngSwitchCase="'frameworks'">- Evitan perder tiempo desarrollando funciones que el propio entorno ya tiene</pre>
-      <pre *ngSwitchCase="'frameworks'">- Aumentan la productividad y la reutilización de codigo</pre>
-      <pre *ngSwitchCase="'frameworks'">- Existen infinidad de frameworks tanto para back como front y desarrollo movil</pre>
 
       <pre *ngSwitchCase="'uml'">- Es un estandar para crear esquemas, digramas relativo al desarrollo de software </pre>
       <pre *ngSwitchCase="'uml'">- Sirven para diferentes escenarios: </pre>
       <pre *ngSwitchCase="'uml'">  - Casos de uso -> represetan a quien y que escenarios de uso puede tener el software</pre>
-      <pre *ngSwitchCase="'uml'">  - Diagramas de clase -> puede ser la representación de un concepto que interviene en un programa</pre>
+      <pre *ngSwitchCase="'uml'">  - Diagramas de clase -> puede ser la representación de un concepto que interviene en un programa </pre>
       <pre *ngSwitchCase="'uml'">  - Diagramas de secuencia -> representan el intercambio de mensajes entre ellos</pre>
-      <pre *ngSwitchCase="'uml'">  - Diagramas de estado -> suele representar la evolución del sistema de acuerdo a los eventos</pre>
+      <pre *ngSwitchCase="'uml'">  - Diagramas de estado -> suele representar la evolución del sistema de acuerdo a los eventos </pre>
       <pre *ngSwitchCase="'uml'">  - Existen más tipos cada uno con una funcionalidad en especifico</pre>      
 
-      <pre *ngSwitchCase="'erd'">- Demuestra como las entidades (generalmente de una BD) se relacionan entre si</pre>  
+      <pre *ngSwitchCase="'erd'">- Demuestra como las entidades (generalmente de una BD) se relacionan entre si </pre>  
       <pre *ngSwitchCase="'erd'">- Es una manera de desarrollar BD relacionales de acuerdo al modelo de negocio</pre>      
-      <pre *ngSwitchCase="'erd'">- Demuestra como las entidades (generalmente de una BD) se relacionan entre si</pre>      
+      <pre *ngSwitchCase="'erd'">- Demuestra como las entidades (generalmente de una BD) se relacionan entre si </pre>      
       <pre *ngSwitchCase="'erd'">- Tambien tienen una relación que denota la cardinalidad 1-1, 1-n, 1-0, m-n</pre>    
       
-      <pre *ngSwitchCase="'sql'">- Es lenguaje de consultas estandar para manipular la información en una base de datos</pre> 
+      <pre *ngSwitchCase="'sql'">- Es lenguaje de consultas estandar para manipular la información en una base de datos </pre> 
       <pre *ngSwitchCase="'sql'">- Cada motor de base de datos tiene sus particularidades pero todos usan SQL</pre>   
       <pre *ngSwitchCase="'sql'">- Las columnas son los datos a guardar y las filas son los registros almacenados</pre>    
-      <pre *ngSwitchCase="'sql'">- Las tablas estan compuestas de columnas y registros con información de un tipo en especifico</pre>      
+      <pre *ngSwitchCase="'sql'">- Las tablas estan compuestas de columnas y registros con información de un tipo en especifico </pre>      
       <pre *ngSwitchCase="'sql'">- Toda tabla deberia tener una clave primaria, para mejorar la indexación de contenido</pre>      
       <pre *ngSwitchCase="'sql'">- La información deberia estar normalizada para evitar valores duplicados</pre> 
       
-      <pre *ngSwitchCase="'normalizacion'">- La normalización en la base de datos hace que la información sea más facil de estructurar</pre>  
+      <pre *ngSwitchCase="'normalizacion'">- La normalización en la base de datos hace que la información sea más facil de estructurar </pre>  
       <pre *ngSwitchCase="'normalizacion'">- Evita gastar espacio en datos redundantes y elimina imposible inconsistencias</pre>    
       <pre *ngSwitchCase="'normalizacion'">  - Primera forma -> identificar datos agrupables en tablas individuales</pre>     
       <pre *ngSwitchCase="'normalizacion'">  - Primera forma -> asigne cada conjunto con una clave primaria</pre>      
-      <pre *ngSwitchCase="'normalizacion'">  - Segunda forma -> crear tablas independientes para valores que sean aplicables a otros registros</pre>      
+      <pre *ngSwitchCase="'normalizacion'">  - Segunda forma -> crear tablas independientes para valores que sean aplicables a otros registros </pre>      
       <pre *ngSwitchCase="'normalizacion'">  - Segunda forma -> asigne claves foraneas que se puedan relacionar con otras tablas</pre>    
       <pre *ngSwitchCase="'normalizacion'">  - tercera forma -> trasladar valores que sean independientes de las claves a tablas separadas</pre>   
-      <pre *ngSwitchCase="'normalizacion'">  - tercera forma -> no siempre es conveniente hacerlo, puede ser costoso en terminos de rendimiento</pre>      
+      <pre *ngSwitchCase="'normalizacion'">  - tercera forma -> no siempre es conveniente hacerlo, puede ser costoso en terminos de rendimiento </pre>      
       <pre *ngSwitchCase="'normalizacion'">  - cuarta forma -> rara vez se aplican pero hay casos donde es practico hacerlo</pre>  
       
       <pre *ngSwitchCase="'nosql'">- Nacieron de los problemas para escalar las BD relacionales</pre>  
       <pre *ngSwitchCase="'nosql'">- Existes proyectos propios de grandes empresas y de codigo libre accesibles para la comunidad</pre> 
-      <pre *ngSwitchCase="'nosql'">- La principal diferencia respecto a SQL es la falta de una estructura definida para almacenar los datos</pre>      
+      <pre *ngSwitchCase="'nosql'">- La principal diferencia respecto a SQL es la falta de una estructura definida para almacenar los datos </pre>      
       <pre *ngSwitchCase="'nosql'">- Esta falta de estructura hace posible que se pueda guardar cualquier tipo de dato</pre>  
       <pre *ngSwitchCase="'nosql'">- El rendimiento es mayor independientemente de la cantidad de datos</pre>      
       <pre *ngSwitchCase="'nosql'">- La fiabilidad de los datos no esta garantizada</pre>   
       <pre *ngSwitchCase="'nosql'">- No hay un estandar para las operaciones, cada motor tiene su sintaxis unica y diferente</pre>  
-      <pre *ngSwitchCase="'nosql'">- Existen diferentes formas de guardar la información además de las ventajas/desventajas de cada metodo</pre>    
+      <pre *ngSwitchCase="'nosql'">- Existen diferentes formas de guardar la información además de las ventajas/desventajas de cada metodo </pre>    
       
-      <pre *ngSwitchCase="'acid'">- Son 4 propiedades que garantizan la confiabilidad de las operaciones y consecuentemente en los datos de las BD</pre>      
-      <pre *ngSwitchCase="'acid'">  - Atomicidad -> todas las operaciones deben ser todo o nada, si una falla la información no debe sufrir cambios</pre>  
-      <pre *ngSwitchCase="'acid'">  - Consistencia -> toda operación iniciada debe ser valida para poderse efectuarse, constraints, cascades, etc..</pre>    
+      <pre *ngSwitchCase="'acid'">- Son 4 propiedades que garantizan la confiabilidad de las operaciones y consecuentemente en los datos de las BD </pre>      
+      <pre *ngSwitchCase="'acid'">  - Atomicidad -> todas las operaciones deben ser todo o nada, si una falla la información no debe sufrir cambios </pre>  
+      <pre *ngSwitchCase="'acid'">  - Consistencia -> toda operación iniciada debe ser valida para poderse efectuarse, constraints, cascades, etc.. </pre>    
       <pre *ngSwitchCase="'acid'">  - Aislamiento -> toda operación debe ser ejecutada indeferentemente de las demás, respetando el orden</pre>      
-      <pre *ngSwitchCase="'acid'">  - Persistencia -> toda transacción que se haya realizado debe ser perdurable en el tiempo, sin importar que suceda</pre>      
+      <pre *ngSwitchCase="'acid'">  - Persistencia -> toda transacción que se haya realizado debe ser perdurable en el tiempo, sin importar que suceda </pre>      
 
-      <pre *ngSwitchCase="'escalamiento'">- Capacidad de un software para crecer de acuerdo a la demanda</pre>  
+      <pre *ngSwitchCase="'escalamiento'">- Capacidad de un software para crecer de acuerdo a la demanda </pre>  
       <pre *ngSwitchCase="'escalamiento'"> -vertical -> la más facil de realizar pero la más costosa</pre>    
       <pre *ngSwitchCase="'escalamiento'"> -vertical -> esta depende directamente de la capacidad de la infraestructura</pre>  
-      <pre *ngSwitchCase="'escalamiento'"> -vertical -> las fallas en la infraestructura pueden conllevar a errores colapsantes</pre>   
+      <pre *ngSwitchCase="'escalamiento'"> -vertical -> las fallas en la infraestructura pueden conllevar a errores colapsantes </pre>   
       <pre *ngSwitchCase="'escalamiento'"> -horizontal -> esta es más dificil de realizar pero es practicamente ilimitada</pre>  
-      <pre *ngSwitchCase="'escalamiento'"> -horizontal -> se basa en tener varios nodos trabajando en paralelo de manera coordinada</pre>      
-      <pre *ngSwitchCase="'escalamiento'"> -horizontal -> soporta el balanceo de cargas y tiene una disponibilidad muy alta</pre> 
+      <pre *ngSwitchCase="'escalamiento'"> -horizontal -> se basa en tener varios nodos trabajando en paralelo de manera coordinada </pre>      
+      <pre *ngSwitchCase="'escalamiento'"> -horizontal -> soporta el balanceo de cargas y tiene una disponibilidad muy alta </pre> 
       <pre *ngSwitchCase="'escalamiento'"> -horizontal -> el mantenimiento se incrementa considerablemente</pre>      
+
+      <pre *ngSwitchCase="'frameworks'">- Son marcos de trabajo con la finalidad de acelerar y aumentar la calidad del codigo desarrollado </pre>
+      <pre *ngSwitchCase="'frameworks'">- Evitan perder tiempo desarrollando funciones que el propio entorno ya tiene</pre>
+      <pre *ngSwitchCase="'frameworks'">- Aumentan la productividad y la reutilización de codigo</pre>
+      <pre *ngSwitchCase="'frameworks'">- Existen infinidad de frameworks tanto para back como front, desarrollo movil, persistencia, etc... </pre>
+
+      <pre *ngSwitchCase="'ioc'">- La inversion de control es la implementación del principio de Hollywood en la que se basan muchos frameworks para funcionar </pre>
+      <pre *ngSwitchCase="'ioc'">- El framework es quien toma el control de la ejecución del codigo del usuario modificando el ciclo de vida como tal </pre>
+      <pre *ngSwitchCase="'ioc'">- Permite añadir nuevas funciones prefabicadas sin tener que modificar el codigo por medio de la inyección de dependencias </pre>
+
+      <pre *ngSwitchCase="'iod'">- La inyección de dependencias Permite modificar y extender nuestro codigo mucho más facil </pre>
+      <pre *ngSwitchCase="'iod'">- Solo es especificar que funcionalidades queremos añadir y estaran disponibles de manera transversal </pre>
+      <pre *ngSwitchCase="'iod'">- El codigo modificado se vuelve más reutilizable, compacto y manejable</pre>
+
+      <pre *ngSwitchCase="'spring'">- Es el framework de JAVA más usado actualmente </pre>
+      <pre *ngSwitchCase="'spring'">- Es el framework de JAVA más usado actualmente </pre>
+      <pre *ngSwitchCase="'spring'">- Es el framework de JAVA más usado actualmente </pre>
      
       <pre *ngSwitchCase="'proximamente'">- Proximamente</pre>
 
