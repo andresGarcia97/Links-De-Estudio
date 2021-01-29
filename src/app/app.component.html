@@ -359,6 +359,11 @@
       <span>Esquema ACID</span>
     </div>
 
+    <div class="card card-small" (click)="linkReferencia('orm','https://programarfacil.com/blog/que-es-un-orm/',terminal)" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      <span>ORM</span>
+    </div>
+
   </div>
 
   <h2>Frameworks</h2>
@@ -380,9 +385,14 @@
       <span> IoD</span>
     </div>
 
-    <div class="card card-small" (click)="linkReferencia('spring','',terminal)" tabindex="0">
+    <div class="card card-small" (click)="linkReferencia('spring','https://spring.io/',terminal)" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
       <span> Spring </span>
+    </div>
+
+    <div class="card card-small" (click)="linkReferencia('angular','https://platzi.com/desarrollo-angular/?utm_source=google&utm_medium=cpc&utm_campaign=9328433462&utm_adgroup=94733526952&utm_content=452203650165&&gclid=Cj0KCQiA3smABhCjARIsAKtrg6LJDf4V2JKL7esXLHrcbpL4NIx8o-pixGZe0YdtUIU5HflNhR74Md0aArb4EALw_wcB&gclsrc=aw.ds',terminal)" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      <span>Angular</span>
     </div>
 
   </div>
@@ -429,6 +439,11 @@
     <div class="card card-small" (click)="linkReferencia('escalamiento','https://www.oscarblancarteblog.com/2017/03/07/escalabilidad-horizontal-y-vertical/',terminal)" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
       <span>Escalamiento</span>
+    </div>
+
+    <div class="card card-small" (click)="linkReferencia('docker','https://www.xataka.com/otros/docker-a-kubernetes-entendiendo-que-contenedores-que-mayores-revoluciones-industria-desarrollo',terminal)" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      <span>Docker</span>
     </div>
 
   </div>
@@ -811,6 +826,12 @@
       <pre *ngSwitchCase="'acid'">  - Aislamiento -> toda operación debe ser ejecutada indeferentemente de las demás, respetando el orden</pre>      
       <pre *ngSwitchCase="'acid'">  - Persistencia -> toda transacción que se haya realizado debe ser perdurable en el tiempo, sin importar que suceda </pre>      
 
+      <pre *ngSwitchCase="'orm'">- El Mapeo Objeto-Relacional permite convertir los objetos convencionales en objetos persistentes </pre> 
+      <pre *ngSwitchCase="'orm'">- Permite generar esquemas para guardar la información independientes de cualquier Motor de Base de Datos </pre> 
+      <pre *ngSwitchCase="'orm'">- Todas las operaciones basicas del CRUD son facilmente implementables </pre> 
+      <pre *ngSwitchCase="'orm'">- Los cambios en las BD se hacen mucho más rapidos de hacer y de probar </pre> 
+      <pre *ngSwitchCase="'orm'">- El rendimientos para operaciones muy complicadas es ligeramente menor </pre> 
+
       <pre *ngSwitchCase="'escalamiento'">- Capacidad de un software para crecer de acuerdo a la demanda </pre>  
       <pre *ngSwitchCase="'escalamiento'"> -vertical -> la más facil de realizar pero la más costosa</pre>    
       <pre *ngSwitchCase="'escalamiento'"> -vertical -> esta depende directamente de la capacidad de la infraestructura</pre>  
@@ -818,7 +839,14 @@
       <pre *ngSwitchCase="'escalamiento'"> -horizontal -> esta es más dificil de realizar pero es practicamente ilimitada</pre>  
       <pre *ngSwitchCase="'escalamiento'"> -horizontal -> se basa en tener varios nodos trabajando en paralelo de manera coordinada </pre>      
       <pre *ngSwitchCase="'escalamiento'"> -horizontal -> soporta el balanceo de cargas y tiene una disponibilidad muy alta </pre> 
-      <pre *ngSwitchCase="'escalamiento'"> -horizontal -> el mantenimiento se incrementa considerablemente</pre>      
+      <pre *ngSwitchCase="'escalamiento'"> -horizontal -> el mantenimiento se incrementa considerablemente</pre>  
+      
+      <pre *ngSwitchCase="'docker'">- Esta basado en el Kernel de Linux y su proposito es segregar los procesos de manera que sean independientes </pre>      
+      <pre *ngSwitchCase="'docker'">- Reduce el consumo de recursos al solo tener lo necesario para ejecutar los procesos </pre>      
+      <pre *ngSwitchCase="'docker'">- Desde su aparición las maquinas virtuales han perdido relevancia </pre>   
+      <pre *ngSwitchCase="'docker'">- El uso de los contenedores y todos sus beneficios fue una gran revolución en el desarrollo del software </pre>      
+      <pre *ngSwitchCase="'docker'">- Los contenedores son entornos de ejecución completos haciendolos independientes del sistema anfitrión </pre>      
+      <pre *ngSwitchCase="'docker'">- Los servicios se pueden unir para generar aplicaciones de más complejidad y eficiencia </pre>      
 
       <pre *ngSwitchCase="'frameworks'">- Son marcos de trabajo con la finalidad de acelerar y aumentar la calidad del codigo desarrollado </pre>
       <pre *ngSwitchCase="'frameworks'">- Evitan perder tiempo desarrollando funciones que el propio entorno ya tiene</pre>
@@ -834,9 +862,18 @@
       <pre *ngSwitchCase="'iod'">- El codigo modificado se vuelve más reutilizable, compacto y manejable</pre>
 
       <pre *ngSwitchCase="'spring'">- Es el framework de JAVA más usado actualmente </pre>
-      <pre *ngSwitchCase="'spring'">- Es el framework de JAVA más usado actualmente </pre>
-      <pre *ngSwitchCase="'spring'">- Es el framework de JAVA más usado actualmente </pre>
-     
+      <pre *ngSwitchCase="'spring'">- Admite el uso de ORM para simplificar las consultas SQL </pre>
+      <pre *ngSwitchCase="'spring'">- Se adapta a diversos modelos de trabajo, para una gran cantidad de necesidades </pre>
+      <pre *ngSwitchCase="'spring'">- Permite la implementación de cientos de funciones prefabricadas y testeadas para acelerar el trabajo </pre>
+      <pre *ngSwitchCase="'spring'">- Al ser el framework predilecto de JAVA la documentación y la comunidad de desarrollo son enormes </pre>
+
+      <pre *ngSwitchCase="'angular'">- Es un framework para programación web que implementa un patron MVC </pre>
+      <pre *ngSwitchCase="'angular'">- Es multiplataforma y puede ser usado hasta para aplicaciones Android e IOS </pre>
+      <pre *ngSwitchCase="'angular'">- Simplifica la comunicación entre la renderización del contenido (HTML) y la interactividad de la pagina (JS) </pre>
+      <pre *ngSwitchCase="'angular'">- Facilita el desarrollo de paginas web SPA que son una una sola pagina que cambia de contenido dinamicamente</pre>
+      <pre *ngSwitchCase="'angular'">- Es mantenido por Google quienes se encargan de mejorarlo y respaldado por Microsoft al usar Typescript </pre>
+      <pre *ngSwitchCase="'angular'">- Permite usar y crear componentes reutilizables, además de otras utilidades que vienen preconstruidas </pre>
+
       <pre *ngSwitchCase="'proximamente'">- Proximamente</pre>
 
   </div>

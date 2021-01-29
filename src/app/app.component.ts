@@ -25,7 +25,7 @@ const porcentaje = scroll$.pipe(
 export class AppComponent {
 
   title = 'Links de Estudio';
-  fechaActualizacion = '19/01/2021';
+  fechaActualizacion = '28/01/2021';
   selection = '';
   referencia = '';
   porciento: any = porcentaje.subscribe((valor) => {
