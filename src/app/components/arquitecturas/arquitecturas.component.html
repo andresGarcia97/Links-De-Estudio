@@ -1,0 +1,115 @@
+<div class="content">
+
+  <h2>Arquitecturas</h2>
+
+  <div class="card-container">
+
+    <div class="card card-small"
+      (click)="linkReferencia('definicion','https://cgrw01.cgr.go.cr/rup/RUP.es/SmallProjects/core.base_rup/guidances/concepts/software_architecture_4269A354.html')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Definición</span>
+    </div>
+
+    <div class="card card-small"
+      (click)="linkReferencia('capas','https://geeks.ms/jkpelaez/2009/05/30/arquitectura-basada-en-capas/')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Capas</span>
+    </div>
+
+    <div class="card card-small"
+      (click)="linkReferencia('cliente','https://desarrolloweb.com/articulos/arquitectura-cliente-servidor.html')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Cliente Servidor</span>
+    </div>
+
+    <div class="card card-small"
+      (click)="linkReferencia('intermediario','https://conasa.grupocibernos.com/blog/patrones-comunes-de-arquitecturas-de-software')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Intermediario</span>
+    </div>
+
+    <div class="card card-small" (click)="linkReferencia('servicios','https://aws.amazon.com/es/microservices/')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Microservicios</span>
+    </div>
+
+    <div class="card card-small"
+      (click)="linkReferencia('hexagonal','https://medium.com/@edusalguero/arquitectura-hexagonal-59834bb44b7f')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Hexagonal</span>
+    </div>
+
+    <div class="card card-small"
+      (click)="linkReferencia('otrasArquitecturas','https://medium.com/@maniakhitoccori/los-10-patrones-comunes-de-arquitectura-de-software-d8b9047edf0b')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>otras</span>
+    </div>
+
+  </div>
+
+  <div class="terminal" [ngSwitch]="selection" #terminal>
+    <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
+
+    <pre
+      *ngSwitchCase="'definicion'">-  Representa la estructura del sistema, sus componentes, las propiedades visibles externamente y las relaciones entre ellas </pre>
+
+    <pre *ngSwitchCase="'capas'">- Se basa en la distribución de roles y responsabilidades de forma jerarquica</pre>
+    <pre *ngSwitchCase="'capas'">- Puede tener n-capas, generalmente son 3 -> MVC</pre>
+    <pre
+      *ngSwitchCase="'capas'">- La abstracción la reutilizacion el desacople y la integración mejoran considerablemente </pre>
+    <pre
+      *ngSwitchCase="'capas'">- El alto grado de abstracción alcanzado puede aislar ciertas capas y hacerlas independientes de las tecnologias </pre>
+    <pre *ngSwitchCase="'capas'">- Los cambios tienen bajo impacto y la matenibilidad es más facil</pre>
+
+    <pre
+      *ngSwitchCase="'cliente'">- Existen 2 elementos principales, de las arquitecturas más usadas debido a su simplicidad </pre>
+    <pre *ngSwitchCase="'cliente'">   Servidor -> quien responde las peticiones y almacena la información</pre>
+    <pre *ngSwitchCase="'cliente'">   Red -> medio para la comunicación en doble sentido constantemente</pre>
+    <pre
+      *ngSwitchCase="'cliente'">   Cliente -> Dispositivos que hacen solicitudes, para guardar o consultar datos</pre>
+
+    <pre
+      *ngSwitchCase="'intermediario'">- Un componente central maneja diferentes sistemas distribuidos coordinando las respuestas</pre>
+    <pre
+      *ngSwitchCase="'intermediario'">- Los clientes solicitan el intermediario y este a su vez solicita los servicios expuestos indicados </pre>
+
+    <pre
+      *ngSwitchCase="'servicios'">- Se pasa de un nucleo central y robusto a diferentes partes más pequeñas y ligeras</pre>
+    <pre
+      *ngSwitchCase="'servicios'">- Las partes se intercomunican entre si y funcionan de manera separada, aumentando la tolerancia a fallos </pre>
+    <pre
+      *ngSwitchCase="'servicios'">- Los servicios pueden ser independientes de las tecnologias, además de que se pueden subdividir tambien </pre>
+    <pre
+      *ngSwitchCase="'servicios'">- Tambien se pueden escalar de manera individual significando una mejora en el uso de recursos</pre>
+
+    <pre
+      *ngSwitchCase="'hexagonal'">- Aisla el dominio de las tecnologias, la comunicación se da por medio de puertos (interfaces) </pre>
+    <pre *ngSwitchCase="'hexagonal'">- Cualquier dispositivo puede consultarla y la información sera la misma</pre>
+    <pre *ngSwitchCase="'hexagonal'">- Las capas son idenpendientes y más faciles de testear</pre>
+
+    <pre
+      *ngSwitchCase="'otrasArquitecturas'">- Bus de Eventos -> Una fuente emite eventos donde un bus los direcciona a los receptores indicados</pre>
+    <pre
+      *ngSwitchCase="'otrasArquitecturas'">- MVC -> Consta de 3 capas bien definidas, modelo, vista y controlador, cada una con una función espeficica </pre>
+    <pre
+      *ngSwitchCase="'otrasArquitecturas'">- Tuberia -> Es un flujo donde los datos son transformados a medida que van desde su origen hasta su destino </pre>
+
+  </div>
+
+  <app-referencia [referencia]="referencia"></app-referencia>
+
+</div>

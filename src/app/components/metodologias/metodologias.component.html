@@ -1,0 +1,210 @@
+<div class="content">
+
+  <h2>Metodologias de desarrollo</h2>
+
+  <div class="card-container">
+
+    <div class="card card-small"
+      (click)="linkReferencia('agiles','https://www.iebschool.com/blog/que-son-metodologias-agiles-agile-scrum/')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Agiles</span>
+    </div>
+
+    <div class="card card-small"
+      (click)="linkReferencia('scrum','https://www.iebschool.com/blog/metodologia-scrum-agile-scrum/')" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>SCRUM</span>
+    </div>
+
+    <div class="card card-small"
+      (click)="linkReferencia('kanban','https://www.iebschool.com/blog/metodologia-kanban-agile-scrum/')" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Kanban</span>
+    </div>
+
+    <div class="card card-small"
+      (click)="linkReferencia('elevator','https://www.iebschool.com/blog/las-claves-para-realizar-un-elevator-pitch-lean-startup/')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Elevator Pitch</span>
+    </div>
+
+    <div class="card card-small"
+      (click)="linkReferencia('canvas','https://www.iebschool.com/blog/que-es-el-modelo-canvas-y-como-aplicarlo-a-tu-negocio-agile-scrum/')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Canvas</span>
+    </div>
+
+    <div class="card card-small"
+      (click)="linkReferencia('tradicionales','https://www.tutorialspoint.com/es/software_engineering/software_development_life_cycle.htm')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Tradicionales</span>
+    </div>
+
+    <div class="card card-small"
+      (click)="linkReferencia('cascada','https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/el-modelo-en-cascada/')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Cascada</span>
+    </div>
+
+    <div class="card card-small"
+      (click)="linkReferencia('espiral','https://www.ionos.es/startupguide/productividad/modelo-en-espiral/')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Espiral</span>
+    </div>
+
+    <div class="card card-small"
+      (click)="linkReferencia('iterativo','https://proyectosagiles.org/desarrollo-iterativo-incremental/')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Iterativo-Incremental</span>
+    </div>
+
+  </div>
+
+  <div class="terminal" [ngSwitch]="selection" #terminal>
+    <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
+
+    <pre
+      *ngSwitchCase="'agiles'">- Las metodologias agiles buscan hacer que cualquier desarrollo sea de alta calidad, con tiempos y costos reducidos </pre>
+    <pre *ngSwitchCase="'agiles'">- Estas permiten la rapida adaptación a cualquier caracteristica del proyecto</pre>
+    <pre
+      *ngSwitchCase="'agiles'">- La participación de los clientes es fundamental en todo el transcurso del desarrollo</pre>
+    <pre
+      *ngSwitchCase="'agiles'">- El progreso se mide de una manera más relevante y metodica generando metricas más precisas</pre>
+    <pre
+      *ngSwitchCase="'agiles'">- Estas formas de trabajar no son marcos irrompibles pueden ser modificadas y combinadas de acuerdo a las necesidades </pre>
+    <pre
+      *ngSwitchCase="'agiles'">- Algunas de estas son: Extreme Programing, SCRUM, Kanban, Agile Inception, Desing Sprint</pre>
+
+    <pre *ngSwitchCase="'scrum'">- Se basa en entregas pequeñas e incrementales que van sumando al producto final</pre>
+    <pre *ngSwitchCase="'scrum'">- Roles:</pre>
+    <pre *ngSwitchCase="'scrum'">  -Product Owner -> que es el encargado de defender los intereses del cliente</pre>
+    <pre
+      *ngSwitchCase="'scrum'">  -Scrum Master -> es el encargado de que el equipo de trabajo no tenga incovenientes atascantes </pre>
+    <pre
+      *ngSwitchCase="'scrum'">  -The Team -> son los encargados del desarrollo directamente y de hacer las entregas a tiempo</pre>
+    <pre *ngSwitchCase="'scrum'">- Artefactos: </pre>
+    <pre
+      *ngSwitchCase="'scrum'">  -Product Backlog -> recoge el conjunto de tareas, requerimientos y funcionalidades del proyecto</pre>
+    <pre
+      *ngSwitchCase="'scrum'">  -Sprint Backlog -> definición de las tareas a realizar y del tiempo aproximado que deberian conllevar durante algun sprint </pre>
+    <pre
+      *ngSwitchCase="'scrum'">  -Sprint Backlog -> definición de las tareas a realizar y del tiempo aproximado que deberian conllevar</pre>
+    <pre *ngSwitchCase="'scrum'">  -Incremento -> resultado del sprint listo para añadir al proyecto</pre>
+    <pre *ngSwitchCase="'scrum'">- Eventos: </pre>
+    <pre
+      *ngSwitchCase="'scrum'">  -Planning Meeting -> planeación general donde el Product Owner prioriza las tareas a realizar para el sprint </pre>
+    <pre
+      *ngSwitchCase="'scrum'">  -Daily Scrum -> seguimiento diario del proyecto, analizando posibles problemas encontrados</pre>
+    <pre *ngSwitchCase="'scrum'">  -Review -> se inspecciona el incremento realizado</pre>
+    <pre
+      *ngSwitchCase="'scrum'">  -Retrospective -> se da a conocer las dificultades del sprint y que cosas se pueden mejorar</pre>
+
+    <pre
+      *ngSwitchCase="'kanban'">- Nacido de metodologias usadas por Toyota donde se identificaban las necesidades de manera precisa</pre>
+    <pre
+      *ngSwitchCase="'kanban'">- Se basa en una metodologia de tarjetas visuales para mostrar el completado de las tareas</pre>
+    <pre *ngSwitchCase="'kanban'">- Facil de usar y de asumir por parte del equipo, al ser sumamente visual</pre>
+    <pre *ngSwitchCase="'kanban'">- Tiene otras principios que son diferentes de las metodologias agiles</pre>
+    <pre
+      *ngSwitchCase="'kanban'">  - Calidad -> Todo debe hacerse bien a la primera, los errores son más costosos cuando se arregla algo </pre>
+    <pre *ngSwitchCase="'kanban'">  - Sin desperdicio -> no hacer más de lo necesario (Principio YAGNI)</pre>
+    <pre *ngSwitchCase="'kanban'">  - Mejora continua -> Siempre hay espacio para mejorar</pre>
+    <pre *ngSwitchCase="'kanban'">  - Flexible -> las prioridades pueden cambiar</pre>
+    <pre *ngSwitchCase="'kanban'">- Tiene varios pasos o aspectos a implementar</pre>
+    <pre
+      *ngSwitchCase="'kanban'">  - Definir un flujo de trabajo accesible por todos, el tablero puede contener varios proyectos simultaneamente </pre>
+    <pre
+      *ngSwitchCase="'kanban'">  - Se deben tener tantas columnas como estados hallan, y las tarjetas se iran desplazando entre estas</pre>
+    <pre
+      *ngSwitchCase="'kanban'">  - Visualizar las fases del desarrollo, al igual que SCRUM se basa en un desarrollo incremental</pre>
+    <pre
+      *ngSwitchCase="'kanban'">  - La prioridad son las actividades que se estan haciendo en vez de empezar nuevas</pre>
+    <pre
+      *ngSwitchCase="'kanban'">  - Las fases deben estar terminadas para poder iniciar la siguiente, además de tener un maximo de tareas</pre>
+    <pre
+      *ngSwitchCase="'kanban'">  - Los trabajadores nunca esta inactivos, ya que pueden solapar tareas de diferentes proyectos sin problemas</pre>
+    <pre
+      *ngSwitchCase="'kanban'">- Esta metodologia tiene ciertos aspectos superiores que SCRUM, pero su implementación depende de las necesidades </pre>
+
+    <pre
+      *ngSwitchCase="'elevator'">- Es una sintexis sobre ti y tu proyecto en menos de lo que sube un ascensor (1-5 minutos) </pre>
+    <pre *ngSwitchCase="'elevator'">- Debe ser claro, conciso y atrayente para atraer a potenciales inversores</pre>
+    <pre
+      *ngSwitchCase="'elevator'"> - Debes tener una preparación previa, conocer todo lo necesario y siempre ser directo</pre>
+    <pre
+      *ngSwitchCase="'elevator'"> - Mide los tiempos, repasa una y otra vez lo que vayas a decir, sin dejar de lado la naturalidad </pre>
+    <pre
+      *ngSwitchCase="'elevator'"> - Tu presentación debe ser sorprendente, mostrar el problema y su solución innovadora</pre>
+
+    <pre
+      *ngSwitchCase="'canvas'">- Sirve para crear y definir modelos de negocios, con la prioridad de crear valor para los clientes </pre>
+    <pre *ngSwitchCase="'canvas'">- Debes de llenar 9 bloques que tu empresa ha de cumplir</pre>
+    <pre
+      *ngSwitchCase="'canvas'">  - Segmento de mercado -> ¿ quienes son tus clientes ?, son la base de todo tu negocio</pre>
+    <pre
+      *ngSwitchCase="'canvas'">  - Propuesta de valor -> tu diferencia frente a la competencia como ventaja competitiva</pre>
+    <pre *ngSwitchCase="'canvas'">  - Canales -> como vas a distribuir tu producto</pre>
+    <pre *ngSwitchCase="'canvas'">  - Comunicación -> como te comunicaras con tus clientes</pre>
+    <pre *ngSwitchCase="'canvas'">  - Ingresos -> como ganaras dinero y de que fuentes</pre>
+    <pre *ngSwitchCase="'canvas'">  - Recursos -> cosas como derechos de autor, personal, fondos, patentes, etc..</pre>
+    <pre
+      *ngSwitchCase="'canvas'">  - Actividades clave -> producción, soluciónes, plataformas y todo lo necesarios para tu propuesta </pre>
+    <pre *ngSwitchCase="'canvas'">  - Socios -> quienes te ayudaran a conseguir los recursos necesarios</pre>
+    <pre *ngSwitchCase="'canvas'">  - Costos -> definir cuanto gastar y como gastarlo</pre>
+
+    <pre *ngSwitchCase="'tradicionales'">- Recolección de solicitudes -> Estudiar el sistema actual</pre>
+    <pre
+      *ngSwitchCase="'tradicionales'">- Estudio de viabilidad -> se investiga desdes diferentes perspectivas, economicas, tecnologias, practicidad </pre>
+    <pre *ngSwitchCase="'tradicionales'">- Analisis del sistema -> se intentan crear un plan a seguir</pre>
+    <pre
+      *ngSwitchCase="'tradicionales'">- Diseño -> en base a todos los datos recogidos, analisis, entrevistas, etc..</pre>
+    <pre *ngSwitchCase="'tradicionales'">- Codificación -> se plasman todos los diseños en codigo funcional</pre>
+    <pre
+      *ngSwitchCase="'tradicionales'">- Pruebas -> Toda función importante debe ser evaluada para garantizar su fiabilidad</pre>
+    <pre
+      *ngSwitchCase="'tradicionales'">- Mantenimiento -> Despues de ser probado e implementado el software puede ser actualizado o corregido en el tiempo </pre>
+
+    <pre *ngSwitchCase="'cascada'">- Es un metodo secuencial donde cada etapa se desarrolla una sola vez</pre>
+    <pre *ngSwitchCase="'cascada'">- Las fases del desarrollo no estan bien definidas y se pueden solapar entre si</pre>
+    <pre *ngSwitchCase="'cascada'">- Errores en etapas previas pueden ser fatales si no se corrigen con premura</pre>
+    <pre *ngSwitchCase="'cascada'">- Bastante inflexible en cuestion de cambios sin previo aviso</pre>
+    <pre
+      *ngSwitchCase="'cascada'">- Los usuarios solo son consultados en etapas finales e iniciales, poca comunicación en etapas intermedias </pre>
+
+    <pre *ngSwitchCase="'espiral'">- Es la evolución del modelo en cascada</pre>
+    <pre
+      *ngSwitchCase="'espiral'">- Se basa en la repetición de las mismas tareas, haciendo controles con más periocidad </pre>
+    <pre *ngSwitchCase="'espiral'">- Se reduce el riesgo del fracaso al dividir el proceso en partes más pequeñas </pre>
+    <pre *ngSwitchCase="'espiral'">- Cada ciclo se planifica justo depues de terminar el objetivo del presente</pre>
+    <pre *ngSwitchCase="'espiral'">- Los errores pueden evolucionar con caca ciclo, no necesarimente resolverse</pre>
+
+    <pre *ngSwitchCase="'iterativo'">- Cada entrega es un proyecto más completo</pre>
+    <pre
+      *ngSwitchCase="'iterativo'">- En cada oportunidad se pueden añadir nuevas funciones o actualizar las existentes </pre>
+    <pre *ngSwitchCase="'iterativo'">- Resiliencia frente a cambios inesperados, mayor comunicación con el cliente</pre>
+    <pre
+      *ngSwitchCase="'iterativo'">- Permite desconocer detalles iniciales que se iran solucionando con las iteracciones </pre>
+    <pre
+      *ngSwitchCase="'iterativo'">- Es funcional desde el primer ciclo, permite mejorar las estimaciones del proyecto</pre>
+
+  </div>
+
+  <app-referencia [referencia]="referencia"></app-referencia>
+
+</div>

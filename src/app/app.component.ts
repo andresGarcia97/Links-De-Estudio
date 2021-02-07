@@ -24,7 +24,6 @@ const porcentaje = scroll$.pipe(
 })
 export class AppComponent {
 
-  title = 'Links de Estudio';
   fechaActualizacion = '28/01/2021';
   selection = '';
   referencia = '';
@@ -32,10 +31,10 @@ export class AppComponent {
     this.porciento = valor;
   });
 
-  public linkReferencia(seleccion: string = '', link: string = '', elemento: any): void {
+  public linkReferencia(seleccion: string = '', link: string = ''): void {
     this.selection = seleccion;
     this.referencia = link;
-    this.scrollToElement(elemento);
+    this.scrollToElement(null);
   }
 
   public scrollToElement($element: any): void {

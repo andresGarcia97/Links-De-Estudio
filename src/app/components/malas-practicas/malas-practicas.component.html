@@ -1,0 +1,57 @@
+<div class="content">
+
+  <h2>Malas Practicas</h2>
+
+  <div class="card-container">
+
+    <div class="card card-small" (click)="linkReferencia('callbackhell','https://codearmy.co/que-es-el-callback-hell-y-como-evitarlo-4af418a6ed14')" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      <span>Callback Hell</span>
+    </div>
+
+    <div class="card card-small" (click)="linkReferencia('cosas1','https://softgrade.mx/5-causas-afectan-la-calidad-software/')" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      <span>Cosas a evitar #1</span>
+    </div>
+
+    <div class="card card-small" (click)="linkReferencia('cosas2','https://blog.gft.com/es/2016/01/20/las-10-malas-practicas-mas-comunes-en-la-gestion-de-proyectos/')" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      <span>Cosas a evitar #2</span>
+    </div>
+
+    <div class="card card-small" (click)="linkReferencia('cosas3','https://blog.gft.com/es/2016/01/20/las-10-malas-practicas-mas-comunes-en-la-gestion-de-proyectos/')" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      <span>Cosas a evitar #3</span>
+    </div>
+
+  </div>
+
+    <div class="terminal" [ngSwitch]="selection" #terminal>
+      <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
+  
+      <pre *ngSwitchCase="'callbackhell'">- Generalmente es un problema al hacer codigo con caracteristicas asincronas (generalmente javascript) </pre>
+      <pre *ngSwitchCase="'callbackhell'">- El orden en que se copia el codigo no necesariamente es en el que va a ser ejecutado</pre>
+      <pre *ngSwitchCase="'callbackhell'">- Cambiar el orden de las llamadas puede evitar el anidamiento innecesario</pre>
+      <pre *ngSwitchCase="'callbackhell'">- Usar promesas ó el Async/Await que hara que el codigo se comporte de manera más sincronica </pre>
+
+      <pre *ngSwitchCase="'cosas1'">- Desconocimiento del negocio, clases mal diseñadas o condiciones sin sentido</pre>
+      <pre *ngSwitchCase="'cosas1'">- Mala o nula formulación de requerimientos y requisitos </pre>
+      <pre *ngSwitchCase="'cosas1'">- Desconocimiento de las tecnologias que se usen, la experiencia de un desarrollador toma tiempo para conseguirse </pre>
+      <pre *ngSwitchCase="'cosas1'">- Malas estimaciones de los tiempos, obligando a mucho trabajo extra</pre>
+      <pre *ngSwitchCase="'cosas1'">- No aplicar patrones y/o arquitecturas</pre>
+
+      <pre *ngSwitchCase="'cosas2'">- Asignación erronea del personal en roles inadecuados o sin la experiencia necesaria </pre>
+      <pre *ngSwitchCase="'cosas2'">- Asumir información sin tener una confirmación previa</pre>
+      <pre *ngSwitchCase="'cosas2'">- Empezar a planear sin tener todas las variables a tener en cuenta</pre>
+      <pre *ngSwitchCase="'cosas2'">- No se debe abusar de la capacidad de multitarea del equipo</pre>
+
+      <pre *ngSwitchCase="'cosas3'">- La falta de comunicación en el equipo puede conllevar al desastre</pre>
+      <pre *ngSwitchCase="'cosas3'">- No poner limites es tan malo como ser inflexible, siempre hay un punto medio</pre>
+      <pre *ngSwitchCase="'cosas3'">- Entregar productos incompletos, lo ideal seria pedir más tiempo o recursos</pre>
+      <pre *ngSwitchCase="'cosas3'">- Asignación erronea del personal en roles inadecuados o sin la experiencia necesaria </pre>
+      
+    </div>
+  
+    <app-referencia [referencia]="referencia"></app-referencia>
+  
+  </div>

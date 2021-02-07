@@ -1,0 +1,161 @@
+<div class="content">
+
+  <h2>Otros temas</h2>
+
+  <div class="card-container">
+
+    <div class="card card-small"
+      (click)="linkReferencia('api','https://www.ticbeat.com/tecnologias/que-es-una-api-para-que-sirve/')" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>API</span>
+    </div>
+
+    <div class="card card-small"
+      (click)="linkReferencia('ddd','https://github.com/jatubio/5minutos_laravel/wiki/Resumen-sobre-DDD.-Domain-Driven-Design')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>DDD</span>
+    </div>
+
+    <div class="card card-small"
+      (click)="linkReferencia('nube','https://azure.microsoft.com/es-es/overview/what-are-private-public-hybrid-clouds/')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Tipos de nube</span>
+    </div>
+
+    <div class="card card-small"
+      (click)="linkReferencia('rest','https://www.oscarblancarteblog.com/2017/03/06/soap-vs-rest-2/')" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>SOAP & REST</span>
+    </div>
+
+    <div class="card card-small"
+      (click)="linkReferencia('git','https://david-estevez.gitbooks.io/the-git-the-bad-and-the-ugly/content/es/control-de-versiones.html')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Gestor de Versiones</span>
+    </div>
+
+    <div class="card card-small"
+      (click)="linkReferencia('uml','https://www.aprenderaprogramar.com/index.php?option=com_content&view=article&id=688:ique-es-y-para-que-sirve-uml-versiones-de-uml-lenguaje-unificado-de-modelado-tipos-de-diagramas-uml&catid=46&Itemid=163')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>UML</span>
+    </div>
+
+    <div class="card card-small"
+      (click)="linkReferencia('erd','https://www.lucidchart.com/pages/es/que-es-un-diagrama-entidad-relacion')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>ERD</span>
+    </div>
+
+    <div class="card card-small"
+      (click)="linkReferencia('escalamiento','https://www.oscarblancarteblog.com/2017/03/07/escalabilidad-horizontal-y-vertical/')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Escalamiento</span>
+    </div>
+
+    <div class="card card-small"
+      (click)="linkReferencia('docker','https://www.xataka.com/otros/docker-a-kubernetes-entendiendo-que-contenedores-que-mayores-revoluciones-industria-desarrollo')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Docker</span>
+    </div>
+
+  </div>
+
+  <div class="terminal" [ngSwitch]="selection" #terminal>
+    <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
+
+    <pre
+      *ngSwitchCase="'api'">- Conjunto de reglas y especificaciones por el cual se puede comunicar diferentes aplicaciones </pre>
+    <pre *ngSwitchCase="'api'">- Permiten compartir reutilizar funciones ya existentes y no reiventar la rueda</pre>
+    <pre *ngSwitchCase="'api'">- Suelen ser la entrada principal a los sistemas distribuidos </pre>
+
+    <pre *ngSwitchCase="'ddd'">- Diseño Orientado a Dominios</pre>
+    <pre *ngSwitchCase="'ddd'"> -El lenguaje debe ser obicuo (entedible por cualquiera)</pre>
+    <pre
+      *ngSwitchCase="'ddd'"> -El desarrollo debe ser lo más abstracto posible para ser independiente de las implementaciones </pre>
+
+    <pre
+      *ngSwitchCase="'nube'"> -Nube Publica -> Los recursos son del proveedor y estos es compartido con otros usuarios</pre>
+    <pre *ngSwitchCase="'nube'"> -Nube Privada -> Los recursos son propios y no deben ser compartidos con terceros</pre>
+    <pre
+      *ngSwitchCase="'nube'"> -Nube Hibrida -> Los recursos son propios pero el espacio puede ser compartido con otros usuarios </pre>
+
+    <pre *ngSwitchCase="'rest'">               SOAP                         VS                  REST</pre>
+    <pre *ngSwitchCase="'rest'">        Solo permite datos en XML                           Variedad de formatos</pre>
+    <pre
+      *ngSwitchCase="'rest'">    Puede incluir metadatos, más pesado            Generalmente se usa JSON, más liviano </pre>
+    <pre
+      *ngSwitchCase="'rest'">    NO se puede guardar contenido en la cache      SI puede guardar contenido en la cache </pre>
+
+    <pre
+      *ngSwitchCase="'git'">- El control de versiones ayuda a mantener una trazabilidad de todos los cambios en una aplicación </pre>
+    <pre *ngSwitchCase="'git'">- El más conocido es GIT pero tambien existen otros como Mercurial</pre>
+    <pre
+      *ngSwitchCase="'git'">- GIT puede ser usado en repositorios locales o distribuidos en la nube, permitiendo la colaboración entre desarrolladores </pre>
+    <pre
+      *ngSwitchCase="'git'">- Permite crear ramificaciones para trabajar de manera aislada sin afectar a todo el flujo en general</pre>
+    <pre
+      *ngSwitchCase="'git'">- Tambien se pueden crear etiquetas para marcar commits y que sean más faciles de encontrar</pre>
+
+    <pre *ngSwitchCase="'uml'">- Es un estandar para crear esquemas, digramas relativo al desarrollo de software </pre>
+    <pre *ngSwitchCase="'uml'">- Sirven para diferentes escenarios: </pre>
+    <pre
+      *ngSwitchCase="'uml'">  - Casos de uso -> represetan a quien y que escenarios de uso puede tener el software</pre>
+    <pre
+      *ngSwitchCase="'uml'">  - Diagramas de clase -> puede ser la representación de un concepto que interviene en un programa </pre>
+    <pre *ngSwitchCase="'uml'">  - Diagramas de secuencia -> representan el intercambio de mensajes entre ellos</pre>
+    <pre
+      *ngSwitchCase="'uml'">  - Diagramas de estado -> suele representar la evolución del sistema de acuerdo a los eventos </pre>
+    <pre *ngSwitchCase="'uml'">  - Existen más tipos cada uno con una funcionalidad en especifico</pre>
+
+    <pre *ngSwitchCase="'erd'">- Demuestra como las entidades (generalmente de una BD) se relacionan entre si </pre>
+    <pre *ngSwitchCase="'erd'">- Es una manera de desarrollar BD relacionales de acuerdo al modelo de negocio</pre>
+    <pre *ngSwitchCase="'erd'">- Demuestra como las entidades (generalmente de una BD) se relacionan entre si </pre>
+    <pre *ngSwitchCase="'erd'">- Tambien tienen una relación que denota la cardinalidad 1-1, 1-n, 1-0, m-n</pre>
+
+    <pre *ngSwitchCase="'escalamiento'">- Capacidad de un software para crecer de acuerdo a la demanda </pre>
+    <pre *ngSwitchCase="'escalamiento'"> -vertical -> la más facil de realizar pero la más costosa</pre>
+    <pre
+      *ngSwitchCase="'escalamiento'"> -vertical -> esta depende directamente de la capacidad de la infraestructura</pre>
+    <pre
+      *ngSwitchCase="'escalamiento'"> -vertical -> las fallas en la infraestructura pueden conllevar a errores colapsantes </pre>
+    <pre
+      *ngSwitchCase="'escalamiento'"> -horizontal -> esta es más dificil de realizar pero es practicamente ilimitada</pre>
+    <pre
+      *ngSwitchCase="'escalamiento'"> -horizontal -> se basa en tener varios nodos trabajando en paralelo de manera coordinada </pre>
+    <pre
+      *ngSwitchCase="'escalamiento'"> -horizontal -> soporta el balanceo de cargas y tiene una disponibilidad muy alta </pre>
+    <pre *ngSwitchCase="'escalamiento'"> -horizontal -> el mantenimiento se incrementa considerablemente</pre>
+
+    <pre
+      *ngSwitchCase="'docker'">- Esta basado en el Kernel de Linux y su proposito es segregar los procesos de manera que sean independientes </pre>
+    <pre
+      *ngSwitchCase="'docker'">- Reduce el consumo de recursos al solo tener lo necesario para ejecutar los procesos </pre>
+    <pre *ngSwitchCase="'docker'">- Desde su aparición las maquinas virtuales han perdido relevancia </pre>
+    <pre
+      *ngSwitchCase="'docker'">- El uso de los contenedores y todos sus beneficios fue una gran revolución en el desarrollo del software </pre>
+    <pre
+      *ngSwitchCase="'docker'">- Los contenedores son entornos de ejecución completos haciendolos independientes del sistema anfitrión </pre>
+    <pre
+      *ngSwitchCase="'docker'">- Los servicios se pueden unir para generar aplicaciones de más complejidad y eficiencia </pre>
+
+  </div>
+
+  <app-referencia [referencia]="referencia"></app-referencia>
+
+</div>

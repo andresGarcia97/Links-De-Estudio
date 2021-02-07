@@ -1,0 +1,77 @@
+<div class="content">
+
+  <h2>Refactorización</h2>
+
+  <div class="card-container">
+
+    <div class="card card-small"
+      (click)="linkReferencia('codigolimpio','https://refactoring.guru/es/refactoring/what-is-refactoring')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Codigó limpio</span>
+    </div>
+
+    <div class="card card-small"
+      (click)="linkReferencia('deudatecnica','https://refactoring.guru/es/refactoring/technical-debt')" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Deuda tecnica</span>
+    </div>
+
+    <div class="card card-small"
+      (click)="linkReferencia('cuandorefactorizar','https://refactoring.guru/es/refactoring/when')" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span> ¿ Cuando ?</span>
+    </div>
+
+    <div class="card card-small"
+      (click)="linkReferencia('comorefactorizar','https://refactoring.guru/es/refactoring/how-to')" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>¿ Como ?</span>
+    </div>
+
+    <div class="card card-small"
+      (click)="linkReferencia('codesmells','https://openwebinars.net/blog/code-smells-y-deuda-tecnica/')" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Code Smells</span>
+    </div>
+
+  </div>
+
+  <div class="terminal" [ngSwitch]="selection" #terminal>
+    <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
+
+    <pre *ngSwitchCase="'codigolimpio'">- Menos es Más, el poder de la simplicidad hecho codigo</pre>
+    <pre *ngSwitchCase="'codigolimpio'">- Es más facil de entender para otros; Es más facil de mantener</pre>
+    <pre *ngSwitchCase="'codigolimpio'">- No hay problemas de codigo duplicado; Los tests son mas faciles de pasar </pre>
+
+    <pre *ngSwitchCase="'deudatecnica'">- Todo desarrollador desea crear un buen codigo pero las omisiones o errores crecen sigilosamente </pre>
+    <pre *ngSwitchCase="'deudatecnica'">- La mala modularización del codigo puede hacer que los cambios tengan un gran impacto</pre>
+    <pre *ngSwitchCase="'deudatecnica'">- Apurar el desarrollo puede crear soluciones rapidas pero incompletas</pre>
+    <pre *ngSwitchCase="'deudatecnica'">- La falta de pruebas puede tener efectos colaterales inmesamente destructivos</pre>
+    <pre *ngSwitchCase="'deudatecnica'">- La Documentación siempre sera necesaria, y omitirla entorpecera futuros cambios</pre>
+    <pre *ngSwitchCase="'deudatecnica'">- Sin comunicación o interacciones incompletas pueden generar pequeñas islas dentro de la empresa </pre>
+    <pre *ngSwitchCase="'deudatecnica'">- Tambien existe el elemento humano cuando el desarrollador es inexperto o incompetente</pre>
+
+    <pre *ngSwitchCase="'cuandorefactorizar'">- Cuando se inicia a duplicar codigo, eventualmente sera necesario refactorizarlo</pre>
+    <pre *ngSwitchCase="'cuandorefactorizar'">- Cuando se empieza se arregla un error es una excelente oportunidad para hacerlo</pre>
+    <pre *ngSwitchCase="'cuandorefactorizar'">- Cuando se hagan revisiones, siempre hay espacio para la mejora</pre>
+    <pre *ngSwitchCase="'cuandorefactorizar'">- Cuando se agregan nuevas funciones, tambien se pueden refactorizar las existentes </pre>
+
+    <pre *ngSwitchCase="'comorefactorizar'">- El resultado debe ser mejor que lo anterior, de lo contrario sera tiempo perdido </pre>
+    <pre *ngSwitchCase="'comorefactorizar'">- No se deben crear nuevas funciones, eso es estrictamente en tiempo de desarrollo </pre>
+    <pre *ngSwitchCase="'comorefactorizar'">- Los tests deben seguir pasando tal y como antes de empezar</pre>
+
+    <pre *ngSwitchCase="'codesmells'">- Son cosas en el codigo que se pueden hacer de una mejor manera o que a la larga seran malas practicas</pre>
+    <pre *ngSwitchCase="'codesmells'">- Aunque no sean un problemas prioritarios haran crecer la deuda tecnica e inclusive podran crear fallos en el futuro </pre>
+    <pre *ngSwitchCase="'codesmells'">- Que el codigo funcione no significa que sea tecnicamente correcto</pre>
+
+  </div>
+
+  <app-referencia [referencia]="referencia"></app-referencia>
+
+</div>

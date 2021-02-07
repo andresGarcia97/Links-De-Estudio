@@ -1,0 +1,79 @@
+<div class="content">
+
+  <h2>Buenas Practicas</h2>
+
+  <div class="card-container">
+
+    <div class="card card-small"
+      (click)="linkReferencia('practicas1','https://www.tithink.com/es/2018/06/13/12-buenas-practicas-para-el-desarrollo-software/')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Parte #1</span>
+    </div>
+
+    <div class="card card-small"
+      (click)="linkReferencia('practicas2','https://sg.com.mx/revista/mejores-pr%C3%A1cticas-para-el-desarrollo-software')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Parte #2</span>
+    </div>
+
+    <div class="card card-small"
+      (click)="linkReferencia('practicas3','https://velneo.es/15-buenas-practicas-proyectos-desarrollo-software/')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Parte #3</span>
+    </div>
+
+    <div class="card card-small"
+      (click)="linkReferencia('practicas4','http://www.noussintelligence.com/desarrollo-software-buenas-practicas-recomendaciones/')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Parte #4</span>
+    </div>
+
+    <div class="card card-small"
+      (click)="linkReferencia('demeter','https://www.adictosaltrabajo.com/2015/07/24/ley-de-demeter/')" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Demeter</span>
+    </div>
+
+  </div>
+
+  <div class="terminal" [ngSwitch]="selection" #terminal>
+    <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
+
+    <pre *ngSwitchCase="'practicas1'">- Definir el alcance, establecer limites con el cliente acerca del trabajo a realizar </pre>
+    <pre *ngSwitchCase="'practicas1'">- Dividir el desarrollo en fases o entregables que sean factibles</pre>
+    <pre *ngSwitchCase="'practicas1'">- Elegir el mejor IDE de acuerdo a los conocimientos o las necesidades</pre>
+    <pre *ngSwitchCase="'practicas1'">- Reutiliza código y comentalo cuando sea necesario</pre>
+    <pre *ngSwitchCase="'practicas1'">- Documenta lo que haz hecho, asi es más facil integrar personal y sera util para futuros desarrollos </pre>
+
+    <pre *ngSwitchCase="'practicas2'">- Presencia activa de los clientes en el desarollo</pre>
+    <pre *ngSwitchCase="'practicas2'">- Definir los requerimientos y sus prioridades con el cliente</pre>
+    <pre *ngSwitchCase="'practicas2'">- Adaptar el lenguaje de acuerdo a los tipos de clientes</pre>
+    <pre *ngSwitchCase="'practicas2'">- Nunca dejar funciones al azar, que las pruebas demuestren su funcionamiento </pre>
+
+    <pre *ngSwitchCase="'practicas3'">- Escoger un ciclo de vida adecuado segun cada desarrollo</pre>
+    <pre *ngSwitchCase="'practicas3'">- Estimar y presupuestar correctamente (más facil decirlo que hacerlo) </pre>
+    <pre *ngSwitchCase="'practicas3'">- Control de calidad y revisiones de código periodicas</pre>
+    <pre *ngSwitchCase="'practicas3'">- Planificar el matenimiento el soporte y posibles mejoras</pre>
+
+    <pre *ngSwitchCase="'practicas4'">- Usar tecnologias y frameworks consolidados</pre>
+    <pre *ngSwitchCase="'practicas4'">- Promover que el uso de la aplicación sea intuitivo y accesible </pre>
+    <pre *ngSwitchCase="'practicas4'">- Distribución de tareas, no hay equipos de un solo hombre</pre>
+
+    <pre *ngSwitchCase="'demeter'">- No aceptar caramelos de extraños</pre>
+    <pre *ngSwitchCase="'demeter'">- El encadenamiento de muchos metodos puede significar un alto acoplamiento</pre>
+    <pre *ngSwitchCase="'demeter'">- Entre más grande sea una pila de llamadas, sera más propensa a futuras refactorizaciones </pre>
+
+  </div>
+
+  <app-referencia [referencia]="referencia"></app-referencia>
+
+</div>

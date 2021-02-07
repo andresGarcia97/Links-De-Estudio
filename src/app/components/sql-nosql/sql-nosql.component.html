@@ -1,0 +1,113 @@
+<div class="content">
+
+  <h2>SQL y NO SQL</h2>
+
+  <div class="card-container">
+
+    <div class="card card-small" (click)="linkReferencia('sql','https://www.w3schools.com/sql/default.asp')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>SQL</span>
+    </div>
+
+    <div class="card card-small"
+      (click)="linkReferencia('normalizacion','https://docs.microsoft.com/en-us/office/troubleshoot/access/database-normalization-description')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Normalización</span>
+    </div>
+
+    <div class="card card-small"
+      (click)="linkReferencia('nosql','https://pandorafms.com/blog/es/bases-de-datos-nosql/')" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>NoSQL</span>
+    </div>
+
+    <div class="card card-small"
+      (click)="linkReferencia('acid','https://dosideas.com/noticias/base-de-datos/973-acid-en-las-bases-de-datos')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Esquema ACID</span>
+    </div>
+
+    <div class="card card-small" (click)="linkReferencia('orm','https://programarfacil.com/blog/que-es-un-orm/')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>ORM</span>
+    </div>
+
+  </div>
+
+  <div class="terminal" [ngSwitch]="selection" #terminal>
+    <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
+
+    <pre
+      *ngSwitchCase="'sql'">- Es lenguaje de consultas estandar para manipular la información en una base de datos </pre>
+    <pre *ngSwitchCase="'sql'">- Cada motor de base de datos tiene sus particularidades pero todos usan SQL</pre>
+    <pre *ngSwitchCase="'sql'">- Las columnas son los datos a guardar y las filas son los registros almacenados</pre>
+    <pre
+      *ngSwitchCase="'sql'">- Las tablas estan compuestas de columnas y registros con información de un tipo en especifico </pre>
+    <pre
+      *ngSwitchCase="'sql'">- Toda tabla deberia tener una clave primaria, para mejorar la indexación de contenido</pre>
+    <pre *ngSwitchCase="'sql'">- La información deberia estar normalizada para evitar valores duplicados</pre>
+
+    <pre
+      *ngSwitchCase="'normalizacion'">- La normalización en la base de datos hace que la información sea más facil de estructurar </pre>
+    <pre
+      *ngSwitchCase="'normalizacion'">- Evita gastar espacio en datos redundantes y elimina imposible inconsistencias</pre>
+    <pre *ngSwitchCase="'normalizacion'">  - Primera forma -> identificar datos agrupables en tablas individuales</pre>
+    <pre *ngSwitchCase="'normalizacion'">  - Primera forma -> asigne cada conjunto con una clave primaria</pre>
+    <pre
+      *ngSwitchCase="'normalizacion'">  - Segunda forma -> crear tablas independientes para valores que sean aplicables a otros registros </pre>
+    <pre
+      *ngSwitchCase="'normalizacion'">  - Segunda forma -> asigne claves foraneas que se puedan relacionar con otras tablas</pre>
+    <pre
+      *ngSwitchCase="'normalizacion'">  - tercera forma -> trasladar valores que sean independientes de las claves a tablas separadas</pre>
+    <pre
+      *ngSwitchCase="'normalizacion'">  - tercera forma -> no siempre es conveniente hacerlo, puede ser costoso en terminos de rendimiento </pre>
+    <pre
+      *ngSwitchCase="'normalizacion'">  - cuarta forma -> rara vez se aplican pero hay casos donde es practico hacerlo</pre>
+
+    <pre *ngSwitchCase="'nosql'">- Nacieron de los problemas para escalar las BD relacionales</pre>
+    <pre
+      *ngSwitchCase="'nosql'">- Existes proyectos propios de grandes empresas y de codigo libre accesibles para la comunidad</pre>
+    <pre
+      *ngSwitchCase="'nosql'">- La principal diferencia respecto a SQL es la falta de una estructura definida para almacenar los datos </pre>
+    <pre
+      *ngSwitchCase="'nosql'">- Esta falta de estructura hace posible que se pueda guardar cualquier tipo de dato</pre>
+    <pre *ngSwitchCase="'nosql'">- El rendimiento es mayor independientemente de la cantidad de datos</pre>
+    <pre *ngSwitchCase="'nosql'">- La fiabilidad de los datos no esta garantizada</pre>
+    <pre
+      *ngSwitchCase="'nosql'">- No hay un estandar para las operaciones, cada motor tiene su sintaxis unica y diferente</pre>
+    <pre
+      *ngSwitchCase="'nosql'">- Existen diferentes formas de guardar la información además de las ventajas/desventajas de cada metodo </pre>
+
+    <pre
+      *ngSwitchCase="'acid'">- Son 4 propiedades que garantizan la confiabilidad de las operaciones y consecuentemente en los datos de las BD </pre>
+    <pre
+      *ngSwitchCase="'acid'">  - Atomicidad -> todas las operaciones deben ser todo o nada, si una falla la información no debe sufrir cambios </pre>
+    <pre
+      *ngSwitchCase="'acid'">  - Consistencia -> toda operación iniciada debe ser valida para poderse efectuarse, constraints, cascades, etc.. </pre>
+    <pre
+      *ngSwitchCase="'acid'">  - Aislamiento -> toda operación debe ser ejecutada indeferentemente de las demás, respetando el orden</pre>
+    <pre
+      *ngSwitchCase="'acid'">  - Persistencia -> toda transacción que se haya realizado debe ser perdurable en el tiempo, sin importar que suceda </pre>
+
+    <pre
+      *ngSwitchCase="'orm'">- El Mapeo Objeto-Relacional permite convertir los objetos convencionales en objetos persistentes </pre>
+    <pre
+      *ngSwitchCase="'orm'">- Permite generar esquemas para guardar la información independientes de cualquier Motor de Base de Datos </pre>
+    <pre *ngSwitchCase="'orm'">- Todas las operaciones basicas del CRUD son facilmente implementables </pre>
+    <pre *ngSwitchCase="'orm'">- Los cambios en las BD se hacen mucho más rapidos de hacer y de probar </pre>
+    <pre *ngSwitchCase="'orm'">- El rendimientos para operaciones muy complicadas es ligeramente menor </pre>
+
+  </div>
+
+  <app-referencia [referencia]="referencia"></app-referencia>
+
+</div>

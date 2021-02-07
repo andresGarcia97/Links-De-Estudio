@@ -1,0 +1,155 @@
+<div class="content">
+
+  <h2>Paradigmas de programación y tipos de lenguajes</h2>
+
+  <div class="card-container">
+
+    <div class="card card-small"
+      (click)="linkReferencia('imperativo','https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/paradigmas-de-programacion/')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Estilos Programación</span>
+    </div>
+
+    <div class="card card-small" (click)="linkReferencia('poo','https://desarrolloweb.com/articulos/499.php')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>POO</span>
+    </div>
+
+    <div class="card card-small"
+      (click)="linkReferencia('pooPilares','https://www.campusmvp.es/recursos/post/los-conceptos-fundamentales-sobre-programacion-orientada-objetos-explicados-de-manera-simple.aspx')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Pilares POO</span>
+    </div>
+
+    <div class="card card-small"
+      (click)="linkReferencia('pooStatic','https://desarrolloweb.com/articulos/metodos-atributos-static-poo.html')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Static en POO</span>
+    </div>
+
+    <div class="card card-small"
+      (click)="linkReferencia('sobrecarga','https://www.netmentor.es/Entrada/sobrecarga-metodos')" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Sobrecargar Metodos</span>
+    </div>
+
+    <div class="card card-small"
+      (click)="linkReferencia('funcional','https://codigofacilito.com/articulos/programacion-funcional')" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Funcional</span>
+    </div>
+
+    <div class="card card-small"
+      (click)="linkReferencia('scripting','https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/que-son-los-lenguajes-de-scripting/')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Scripting</span>
+    </div>
+
+    <div class="card card-small"
+      (click)="linkReferencia('reactiva','https://profile.es/blog/que-es-la-programacion-reactiva-una-introduccion/')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Reactiva</span>
+    </div>
+
+    <div class="card card-small"
+      (click)="linkReferencia('marcado','https://blog.educacionit.com/2018/12/26/diferencia-entre-lenguajes-de-scripting-lenguajes-de-marcado-y-lenguajes-de-programacion/')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Lenguajes Marcado</span>
+    </div>
+
+  </div>
+
+  <div class="terminal" [ngSwitch]="selection" #terminal>
+    <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
+
+    <pre
+      *ngSwitchCase="'imperativo'">- Imperativo -> secuencia ordenada de acciones a ejecutar, más cercano a lenguaje maquina </pre>
+    <pre
+      *ngSwitchCase="'imperativo'">  - Estructurado -> donde se incluyen sentencias de control y se contemplan las interrupciones</pre>
+    <pre
+      *ngSwitchCase="'imperativo'">  - Procedimental -> donde se empieza a crear funciones y metodos para no repetir código</pre>
+    <pre
+      *ngSwitchCase="'imperativo'">  - Modular -> Se agrupan segmentos más grandes de código independientes entre si, facilitando la depuración</pre>
+    <pre
+      *ngSwitchCase="'imperativo'">- Declarativo -> Se describe el resultado de la operación y no el como, requiriendo más abstracción y menos código </pre>
+    <pre
+      *ngSwitchCase="'imperativo'">  - Funcional -> la base son las funciones que se pueden concatenar para formar estructuras o usarse como argumentos </pre>
+    <pre
+      *ngSwitchCase="'imperativo'">  - Logica -> la base es la matematica y su logica para predecir el resultado</pre>
+
+    <pre *ngSwitchCase="'poo'">- Alta integración Bajo acoplamiento</pre>
+    <pre *ngSwitchCase="'poo'">- Mejora la abstracción de los problemas al acercarlos a lo cotidiano</pre>
+    <pre *ngSwitchCase="'poo'">- Clases -> abstracciones de la realidad; Objetos -> instancias de una clase </pre>
+    <pre *ngSwitchCase="'poo'">- Propiedades -> atributos o caracteristicas de un objeto</pre>
+    <pre *ngSwitchCase="'poo'">- Metodos -> comportamientos o acciones de un objeto</pre>
+
+    <pre *ngSwitchCase="'pooPilares'">- Encasulapción: todas las propiedades del objeto son solo del objeto</pre>
+    <pre *ngSwitchCase="'pooPilares'">- Abstracción: las acciones son publicas pero su complejidad esta oculta</pre>
+    <pre
+      *ngSwitchCase="'pooPilares'">- Herencia: los hijos tienen acceso a los metodos y atributos del padre, además de las propias </pre>
+    <pre
+      *ngSwitchCase="'pooPilares'">- Polimorfismo: cada objeto se puede comportat diferente, aunque tenga una misma base</pre>
+
+    <pre *ngSwitchCase="'pooStatic'">- Metodos o atributos que pertenecen a la clase y no a un objeto como tal</pre>
+    <pre
+      *ngSwitchCase="'pooStatic'">- Son accesibles de manera global, por lo que hay que tener cuidado con su uso </pre>
+    <pre *ngSwitchCase="'pooStatic'">- No necesitan ser instanciados para ser usados</pre>
+
+    <pre *ngSwitchCase="'sobrecarga'">- Algunos lenguajes permite sobrecargar los metodos y constructores</pre>
+    <pre
+      *ngSwitchCase="'sobrecarga'">- El nombre sera el mismo pero pueden recibir diferente numero de parametros o de tipos</pre>
+    <pre
+      *ngSwitchCase="'sobrecarga'">- El compilador interno se da cuenta de esto independientemente del lenguaje y no marcara error </pre>
+
+    <pre *ngSwitchCase="'funcional'">- Las acciones son delegadas a funciones propias del lenguaje</pre>
+    <pre *ngSwitchCase="'funcional'">  - Funciones Puras -> dada una entrada siempre van a tener la misma salida</pre>
+    <pre
+      *ngSwitchCase="'funcional'">  - Composición -> se pueden juntar y crear una secuencia y resultado diferente </pre>
+    <pre
+      *ngSwitchCase="'funcional'">  - Efectos secundarios -> Son los cambios visibles fuera de la función llamada </pre>
+    <pre *ngSwitchCase="'funcional'">  - Se le da más relevancia al concepto de inmutabilidad y mutabilidad</pre>
+    <pre *ngSwitchCase="'funcional'">  - Los efectos secundarios se evitan en este tipo de programación</pre>
+    <pre *ngSwitchCase="'funcional'">  - Los efectos secundarios se evitan en este tipo de programación</pre>
+
+    <pre
+      *ngSwitchCase="'scripting'">- Son lenguajes que no son compilados y que se ejecutan directamente en el lado del cliente </pre>
+    <pre *ngSwitchCase="'scripting'">- El más famoso es Javascript, pero otros como Python y Ruby tambien lo son</pre>
+    <pre
+      *ngSwitchCase="'scripting'">- Suelen ser menos eficientes al no ser compilados pero conllevan menos trabajo para el programador </pre>
+    <pre
+      *ngSwitchCase="'scripting'">- Generalmente son debilmente tipados, lo que da más flexibilidad y posiblidad de errores</pre>
+
+    <pre
+      *ngSwitchCase="'reactiva'">- Es un paradigma enfocado al trabajo con flujo de datos, generalmente debe ser: </pre>
+    <pre *ngSwitchCase="'reactiva'">  - Resilientes -> deben responder incluso cuando hay estados de error</pre>
+    <pre *ngSwitchCase="'reactiva'">  - Elasticos -> el aumento de la concurrencia no debe afectar las respuestas</pre>
+    <pre
+      *ngSwitchCase="'reactiva'">  - Comunicación -> minimo acoplamiento al hacer que todo se comunique mediante mensajeria </pre>
+    <pre
+      *ngSwitchCase="'reactiva'">  - Operadores -> tener soporte hacia estos que permiten transformar el flujo de datos </pre>
+
+    <pre *ngSwitchCase="'marcado'">- Son lenguajes relacionados con la presentación de contenido como HTML y XML</pre>
+    <pre
+      *ngSwitchCase="'marcado'">- El primero se usa para estructurar contenido web y el segundo para estructurar datos </pre>
+
+  </div>
+
+  <app-referencia [referencia]="referencia"></app-referencia>
+
+</div>
