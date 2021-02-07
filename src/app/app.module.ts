@@ -14,6 +14,7 @@ import { MetodologiasComponent } from './components/metodologias/metodologias.co
 import { SqlNosqlComponent } from './components/sql-nosql/sql-nosql.component';
 import { FrameworksComponent } from './components/frameworks/frameworks.component';
 import { OtrosComponent } from './components/otros/otros.component';
+import { CompilacionComponent } from './components/compilacion/compilacion.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { OtrosComponent } from './components/otros/otros.component';
     MetodologiasComponent,
     SqlNosqlComponent,
     FrameworksComponent,
-    OtrosComponent
+    OtrosComponent,
+    CompilacionComponent
   ],
   imports: [
     BrowserModule,

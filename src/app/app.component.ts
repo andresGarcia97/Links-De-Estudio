@@ -3,6 +3,7 @@ import { fromEvent } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { ArquitecturasComponent } from './components/arquitecturas/arquitecturas.component';
 import { BuenasPracticasComponent } from './components/buenas-practicas/buenas-practicas.component';
+import { CompilacionComponent } from './components/compilacion/compilacion.component';
 import { FrameworksComponent } from './components/frameworks/frameworks.component';
 import { MalasPracticasComponent } from './components/malas-practicas/malas-practicas.component';
 import { MetodologiasComponent } from './components/metodologias/metodologias.component';
@@ -95,6 +96,10 @@ export class AppComponent {
 
   public createComponentSqlNoSql(): void {
     this.crearComponent(SqlNosqlComponent);
+  }
+
+  public createComponentCompilacion(): void {
+    this.crearComponent(CompilacionComponent);
   }
 
   public scrollToElement($element: any): void {
