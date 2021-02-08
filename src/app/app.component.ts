@@ -45,66 +45,18 @@ export class AppComponent {
     this.porciento = valor;
   });
 
+  public listaComponentes = [
+    ArquitecturasComponent, BuenasPracticasComponent, FrameworksComponent, MalasPracticasComponent,
+    MetodologiasComponent, OtrosComponent, ParadigmasComponent, PatronesComponent,
+    RefactorizacionComponent, SectionsComponent, SqlNosqlComponent, CompilacionComponent,
+    HistoriaUsuarioComponent];
+
   constructor(private componentFactoryResolver: ComponentFactoryResolver) { }
 
-  private crearComponent(component: any): void {
-    const componentes = this.componentFactoryResolver.resolveComponentFactory(
-      component
-    );
+  public crearComponent(component: any): void {
+    const componente = this.componentFactoryResolver.resolveComponentFactory(component);
     this.componentes.clear();
-    this.componentes.createComponent(componentes);
-  }
-
-  public createComponentArquitecturas(): void {
-    this.crearComponent(ArquitecturasComponent);
-  }
-
-  public createComponentBuenasPracticas(): void {
-    this.crearComponent(BuenasPracticasComponent);
-  }
-
-  public createComponentFrameworks(): void {
-    this.crearComponent(FrameworksComponent);
-  }
-
-  public createComponentMalasPracticas(): void {
-    this.crearComponent(MalasPracticasComponent);
-  }
-
-  public createComponentMetodologias(): void {
-    this.crearComponent(MetodologiasComponent);
-  }
-
-  public createComponentOtros(): void {
-    this.crearComponent(OtrosComponent);
-  }
-
-  public createComponentParadigmas(): void {
-    this.crearComponent(ParadigmasComponent);
-  }
-
-  public createComponentPatrones(): void {
-    this.crearComponent(PatronesComponent);
-  }
-
-  public createComponentRefactorizacion(): void {
-    this.crearComponent(RefactorizacionComponent);
-  }
-
-  public createComponentSections(): void {
-    this.crearComponent(SectionsComponent);
-  }
-
-  public createComponentSqlNoSql(): void {
-    this.crearComponent(SqlNosqlComponent);
-  }
-
-  public createComponentCompilacion(): void {
-    this.crearComponent(CompilacionComponent);
-  }
-
-  public createComponentHistoriasUsuario(): void {
-    this.crearComponent(HistoriaUsuarioComponent);
+    this.componentes.createComponent(componente);
   }
 
   public scrollToElement($element: any): void {
