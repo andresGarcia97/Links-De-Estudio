@@ -1,0 +1,89 @@
+<div class="content">
+
+    <h2>Historias de Usuario & metodologias agiles </h2>
+  
+    <div class="card-container">
+  
+      <div class="card card-small"
+        (click)="linkReferencia('historias','https://apiumhub.com/es/tech-blog-barcelona/como-escribir-buenas-historias-de-usuario/')" tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+        <span>¿ que son ?</span>
+      </div>
+  
+      <div class="card card-small"
+        (click)="linkReferencia('objetivos','https://apiumhub.com/es/tech-blog-barcelona/como-escribir-buenas-historias-de-usuario/')"
+        tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+        <span>¿ que buscan ?</span>
+      </div>
+  
+      <div class="card card-small"
+        (click)="linkReferencia('partes','https://apiumhub.com/es/tech-blog-barcelona/como-escribir-buenas-historias-de-usuario/')"
+        tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+        <span>Partes</span>
+      </div>
+          
+      <div class="card card-small"
+        (click)="linkReferencia('invest','https://apiumhub.com/es/tech-blog-barcelona/como-escribir-buenas-historias-de-usuario/')"
+        tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+        <span>INVEST</span>
+      </div>
+
+      <div class="card card-small"
+      (click)="linkReferencia('agil','https://agilemanifesto.org/iso/es/manifesto.html')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Manifiesto Agil</span>
+    </div>
+  
+    </div>
+  
+    <div class="terminal" [ngSwitch]="selection" #terminal>
+      <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
+  
+      <pre *ngSwitchCase="'historias'">- Es uno de los elementos usados en las metodolgias agiles </pre>
+      <pre *ngSwitchCase="'historias'">- Su nivel de exhaustividad es menor a cambio de proporcionar más valor al negocio </pre>
+      <pre *ngSwitchCase="'historias'">- Se concentran en especificar las funciones requeridas y el porque de estas </pre>
+  
+      <pre *ngSwitchCase="'objetivos'">- Deben esclarecer el porque, el actor de la acción, un motivo y como validarla </pre>
+      <pre *ngSwitchCase="'objetivos'">- Se basan en una negociación entre las partes, lo que las hace mutables a traves del tiempo </pre>
+      <pre *ngSwitchCase="'objetivos'">- El foco de toda función se basa en el usuario final, más que en los clientes o los desarrolladores </pre>
+      <pre *ngSwitchCase="'objetivos'">- Se conforman de varios aspectos, ademas de seguir el modelo INVEST </pre>
+  
+      <pre *ngSwitchCase="'partes'">- Titulo -> que debe ser una forma concisa y clara de lo que se busca </pre>
+      <pre *ngSwitchCase="'partes'">- Titulo -> tambien puede servir como identificador para cada HU </pre>
+      <pre *ngSwitchCase="'partes'">- Titulo -> <strong>COMO</strong> Rol <strong>QUIERO</strong> Objetivo <strong>PARA</strong> motivación </pre>
+      <pre *ngSwitchCase="'partes'">- Descripción -> puede contener una descripción más detallada de lo que se espera </pre>
+      <pre *ngSwitchCase="'partes'">- Descripción -> da el contexto donde se desarrollara la HU </pre>
+      <pre *ngSwitchCase="'partes'">- Descripción -> pueden incluir imagenes, diseños, prototipos, etc... </pre>
+      <pre *ngSwitchCase="'partes'">- Criterios de Aceptación -> son los elementos que se deben cumplir para dar a la HU como terminada </pre>
+      <pre *ngSwitchCase="'partes'">- Criterios de Aceptación -> no hay punto medio, esta o no esta completa </pre>
+      <pre *ngSwitchCase="'partes'">- Criterios de Aceptación -> evitar la ambiguedad lo más que se pueda </pre>
+      <pre *ngSwitchCase="'partes'">- Criterios de Aceptación -> deben ser verificables con relativa facilidad </pre>
+
+      <pre *ngSwitchCase="'invest'"> I -> independiente, las HU deben ser independientes entre si, aunque puden compartir criterios de acpetación </pre>
+      <pre *ngSwitchCase="'invest'"> N -> negociable, la negociación debe ser la base de toda HU, no son contratos </pre>
+      <pre *ngSwitchCase="'invest'"> V -> valiosa, toda HU debe aportar valor al negocio, de lo contrario son irrelevantes </pre>
+      <pre *ngSwitchCase="'invest'"> E -> estimable, toda HU debe ser medible en tiempo o esfuerzo, de manera objetiva (ideal) </pre>
+      <pre *ngSwitchCase="'invest'"> S -> pequeña, las HU deben poder realizarse en un solo sprint, por lo que puede ser subdividida de lo contrario </pre>
+      <pre *ngSwitchCase="'invest'"> T -> testeable, toda HU debe ser probada y validada, permitiendo que se considere finalizada </pre>
+
+      <pre *ngSwitchCase="'agil'">- Nace con el proposito de reformar el desarrollo de software para hacerlo más eficiente y eficaz </pre>
+      <pre *ngSwitchCase="'agil'">- Son 4 principios que toda metodologia agil lleva a cabo para mejorar el desarrollo </pre>
+      <pre *ngSwitchCase="'agil'">- 1 -> Individuos e interacciones sobre procesos y herramientas </pre>
+      <pre *ngSwitchCase="'agil'">- 2 -> Software funcionando sobre documentación extensiva </pre>
+      <pre *ngSwitchCase="'agil'">- 3 -> Colaboración con el cliente sobre negociación contractual </pre>
+      <pre *ngSwitchCase="'agil'">- 4 -> Respuesta ante el cambio sobre seguir un plan </pre>
+
+    </div>
+  
+    <app-referencia [referencia]="referencia"></app-referencia>
+  
+  </div>

@@ -14,6 +14,7 @@ import { RefactorizacionComponent } from './components/refactorizacion/refactori
 import { ReferenciaComponent } from './components/referencia/referencia.component';
 import { SectionsComponent } from './components/sections/sections.component';
 import { SqlNosqlComponent } from './components/sql-nosql/sql-nosql.component';
+import { HistoriaUsuarioComponent } from './components/historia-usuario/historia-usuario.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { SqlNosqlComponent } from './components/sql-nosql/sql-nosql.component';
     SqlNosqlComponent,
     FrameworksComponent,
     OtrosComponent,
-    CompilacionComponent
+    CompilacionComponent,
+    HistoriaUsuarioComponent
   ],
   imports: [
     BrowserModule

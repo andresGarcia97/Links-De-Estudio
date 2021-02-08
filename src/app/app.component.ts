@@ -5,6 +5,7 @@ import { ArquitecturasComponent } from './components/arquitecturas/arquitecturas
 import { BuenasPracticasComponent } from './components/buenas-practicas/buenas-practicas.component';
 import { CompilacionComponent } from './components/compilacion/compilacion.component';
 import { FrameworksComponent } from './components/frameworks/frameworks.component';
+import { HistoriaUsuarioComponent } from './components/historia-usuario/historia-usuario.component';
 import { MalasPracticasComponent } from './components/malas-practicas/malas-practicas.component';
 import { MetodologiasComponent } from './components/metodologias/metodologias.component';
 import { OtrosComponent } from './components/otros/otros.component';
@@ -38,7 +39,7 @@ export class AppComponent {
 
   @ViewChild('componentes', { read: ViewContainerRef }) componentes!: ViewContainerRef;
 
-  fechaActualizacion = '06/02/2021';
+  fechaActualizacion = '07/02/2021';
 
   porciento: any = porcentaje.subscribe((valor) => {
     this.porciento = valor;
@@ -100,6 +101,10 @@ export class AppComponent {
 
   public createComponentCompilacion(): void {
     this.crearComponent(CompilacionComponent);
+  }
+
+  public createComponentHistoriasUsuario(): void {
+    this.crearComponent(HistoriaUsuarioComponent);
   }
 
   public scrollToElement($element: any): void {
