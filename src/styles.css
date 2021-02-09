@@ -44,7 +44,7 @@ p {
 .content {
   display: flex;
   margin: 3em auto 2em;
-  padding: 0 1em;
+  padding: 0;
   max-width: 1140px;
   flex-direction: column;
   align-items: center;
@@ -142,8 +142,7 @@ a:hover {
 
 .terminal {
   position: relative;
-  width: 100%;
-  max-width: 992px;
+  width: 90%;
   border-radius: 6px;
   padding-top: 16px;
   margin-top: 8px;
@@ -230,20 +229,19 @@ svg#clouds {
 
 
 /* Responsive Styles */
-@media screen and (max-width: 767px) {
-
-  .card-container>*:not(.circle-link),
-  .terminal {
-    width: 100%;
-  }
-
-  .card:not(.highlight-card) {
-    height: 16px;
-    margin: 8px 0;
-  }
+@media screen and (max-width: 640px) {
 
   .card.highlight-card span {
     margin-left: 72px;
+  }
+
+  .card.card-small {
+    height: 16px;
+    width: 250px;
+  }
+
+  .terminal {
+    max-width: 300px;
   }
 
   svg#rocket-smoke {

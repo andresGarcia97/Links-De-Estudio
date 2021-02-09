@@ -49,7 +49,7 @@
     <span>Links de estudio, Todos en un lugar!</span>
   </div>
 
-  <div class="content">
+  <div class="content" role="main">
 
     <h1>Selecciona cualquier opción para conocer más</h1>
 
@@ -135,14 +135,18 @@
 
     </div>
 
+    <div class="card-container">
+      <ng-container #componentes></ng-container>
+    </div>
+
+    <div class="circle-link" (click)="scrollToElement(navbar)" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M12 19V6M5 12l7-7 7 7" /></svg>
+    </div>
+
   </div>
 
-  <ng-container #componentes></ng-container>
 
-  <div class="circle-link" (click)="scrollToElement(navbar)" tabindex="0">
-    <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-      <path d="M12 19V6M5 12l7-7 7 7" /></svg>
-  </div>
 
   <svg id="clouds" alt="Gray Clouds Background" xmlns="http://www.w3.org/2000/svg" width="2611.084" height="485.677"
     viewBox="0 0 2611.084 485.677">
