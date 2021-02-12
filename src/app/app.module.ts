@@ -15,6 +15,8 @@ import { ReferenciaComponent } from './components/referencia/referencia.componen
 import { SectionsComponent } from './components/sections/sections.component';
 import { SqlNosqlComponent } from './components/sql-nosql/sql-nosql.component';
 import { HistoriaUsuarioComponent } from './components/historia-usuario/historia-usuario.component';
+import { VersionamientoComponent } from './components/versionamiento/versionamiento.component';
+import { EstrategiasDesarrolloComponent } from './components/estrategias-desarrollo/estrategias-desarrollo.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { HistoriaUsuarioComponent } from './components/historia-usuario/historia
     FrameworksComponent,
     OtrosComponent,
     CompilacionComponent,
-    HistoriaUsuarioComponent
+    HistoriaUsuarioComponent,
+    VersionamientoComponent,
+    EstrategiasDesarrolloComponent
   ],
   imports: [
     BrowserModule
