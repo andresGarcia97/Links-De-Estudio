@@ -27,14 +27,6 @@
     </div>
 
     <div class="card card-small"
-      (click)="linkReferencia('uml','https://www.aprenderaprogramar.com/index.php?option=com_content&view=article&id=688:ique-es-y-para-que-sirve-uml-versiones-de-uml-lenguaje-unificado-de-modelado-tipos-de-diagramas-uml&catid=46&Itemid=163')"
-      tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>UML</span>
-    </div>
-
-    <div class="card card-small"
       (click)="linkReferencia('erd','https://www.lucidchart.com/pages/es/que-es-un-diagrama-entidad-relacion')"
       tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -83,14 +75,6 @@
     <pre *ngSwitchCase="'rest'">        Solo permite datos en XML                           Variedad de formatos</pre>
     <pre *ngSwitchCase="'rest'">    Puede incluir metadatos, más pesado            Generalmente se usa JSON, más liviano </pre>
     <pre *ngSwitchCase="'rest'">    NO se puede guardar contenido en la cache      SI puede guardar contenido en la cache </pre>
-
-    <pre *ngSwitchCase="'uml'">- Es un estandar para crear esquemas, digramas relativo al desarrollo de software </pre>
-    <pre *ngSwitchCase="'uml'">- Sirven para diferentes escenarios: </pre>
-    <pre *ngSwitchCase="'uml'">  - Casos de uso -> represetan a quien y que escenarios de uso puede tener el software</pre>
-    <pre *ngSwitchCase="'uml'">  - Diagramas de clase -> puede ser la representación de un concepto que interviene en un programa </pre>
-    <pre *ngSwitchCase="'uml'">  - Diagramas de secuencia -> representan el intercambio de mensajes entre ellos</pre>
-    <pre *ngSwitchCase="'uml'">  - Diagramas de estado -> suele representar la evolución del sistema de acuerdo a los eventos </pre>
-    <pre *ngSwitchCase="'uml'">  - Existen más tipos cada uno con una funcionalidad en especifico</pre>
 
     <pre *ngSwitchCase="'erd'">- Demuestra como las entidades (generalmente de una BD) se relacionan entre si </pre>
     <pre *ngSwitchCase="'erd'">- Es una manera de desarrollar BD relacionales de acuerdo al modelo de negocio</pre>

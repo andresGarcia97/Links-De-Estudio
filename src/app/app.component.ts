@@ -15,6 +15,7 @@ import { PatronesComponent } from './components/patrones/patrones.component';
 import { RefactorizacionComponent } from './components/refactorizacion/refactorizacion.component';
 import { SectionsComponent } from './components/sections/sections.component';
 import { SqlNosqlComponent } from './components/sql-nosql/sql-nosql.component';
+import { UmlComponent } from './components/uml/uml.component';
 import { VersionamientoComponent } from './components/versionamiento/versionamiento.component';
 
 const scroll$ = fromEvent(document, 'scroll');
@@ -41,7 +42,7 @@ export class AppComponent {
 
   @ViewChild('componentes', { read: ViewContainerRef }) componentes!: ViewContainerRef;
 
-  fechaActualizacion = '11/02/2021';
+  fechaActualizacion = '15/02/2021';
 
   porciento: any = porcentaje.subscribe((valor) => {
     this.porciento = valor;
@@ -51,7 +52,7 @@ export class AppComponent {
     ArquitecturasComponent, BuenasPracticasComponent, FrameworksComponent, MalasPracticasComponent,
     MetodologiasComponent, OtrosComponent, ParadigmasComponent, PatronesComponent,
     RefactorizacionComponent, SectionsComponent, SqlNosqlComponent, CompilacionComponent,
-    HistoriaUsuarioComponent, VersionamientoComponent, EstrategiasDesarrolloComponent];
+    HistoriaUsuarioComponent, VersionamientoComponent, EstrategiasDesarrolloComponent, UmlComponent];
 
   constructor(private componentFactoryResolver: ComponentFactoryResolver) { }
 

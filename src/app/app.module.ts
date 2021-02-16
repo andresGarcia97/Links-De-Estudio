@@ -17,6 +17,7 @@ import { SqlNosqlComponent } from './components/sql-nosql/sql-nosql.component';
 import { HistoriaUsuarioComponent } from './components/historia-usuario/historia-usuario.component';
 import { VersionamientoComponent } from './components/versionamiento/versionamiento.component';
 import { EstrategiasDesarrolloComponent } from './components/estrategias-desarrollo/estrategias-desarrollo.component';
+import { UmlComponent } from './components/uml/uml.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { EstrategiasDesarrolloComponent } from './components/estrategias-desarro
     CompilacionComponent,
     HistoriaUsuarioComponent,
     VersionamientoComponent,
-    EstrategiasDesarrolloComponent
+    EstrategiasDesarrolloComponent,
+    UmlComponent
   ],
   imports: [
     BrowserModule
