@@ -18,6 +18,7 @@ import { HistoriaUsuarioComponent } from './components/historia-usuario/historia
 import { VersionamientoComponent } from './components/versionamiento/versionamiento.component';
 import { EstrategiasDesarrolloComponent } from './components/estrategias-desarrollo/estrategias-desarrollo.component';
 import { UmlComponent } from './components/uml/uml.component';
+import { RequisitosComponent } from './components/requisitos/requisitos.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { UmlComponent } from './components/uml/uml.component';
     HistoriaUsuarioComponent,
     VersionamientoComponent,
     EstrategiasDesarrolloComponent,
-    UmlComponent
+    UmlComponent,
+    RequisitosComponent
   ],
   imports: [
     BrowserModule

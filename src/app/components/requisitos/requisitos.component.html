@@ -1,0 +1,102 @@
+<div class="content">
+
+    <h2>Requisitos Funcionales y NO Funcionales</h2>
+  
+    <div class="card-container">
+  
+      <div class="card card-small"
+        (click)="linkReferencia('funcionales','https://medium.com/@requeridosblog/requerimientos-funcionales-y-no-funcionales-ejemplos-y-tips-aa31cb59b22a')" tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+        <span>Funcionales</span>
+      </div>
+  
+      <div class="card card-small"
+        (click)="linkReferencia('NOfuncionales','https://medium.com/@requeridosblog/requerimientos-funcionales-y-no-funcionales-ejemplos-y-tips-aa31cb59b22a')"
+        tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+        <span>NO Funcionales</span>
+      </div>
+  
+      <div class="card card-small"
+        (click)="linkReferencia('negocio','https://requeridos.com/que-es-el-valor-de-negocio-y-como-medirlo/')" tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+        <span>EL Negocio</span>
+      </div>
+  
+      <div class="card card-small"
+        (click)="linkReferencia('ambiguedad','https://requeridos.com/requerimientos-menos-es-mas/')"
+        tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+        <span>Evitar la ambiguedad</span>
+      </div>
+  
+      <div class="card card-small"
+        (click)="linkReferencia('calidad','https://platzi.com/tutoriales/1248-pro-arquitectura/5498-atributos-de-calidad-de-un-producto-de-software/')"
+        tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+        <span>Atributos de calidad</span>
+      </div>
+    
+    </div>
+  
+    <div class="terminal" [ngSwitch]="selection" #terminal>
+      <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
+  
+      <pre *ngSwitchCase="'funcionales'">- Son la declaración de los servicios y funciones que tendra la aplicación </pre>
+      <pre *ngSwitchCase="'funcionales'">- Estos se basan en una serie de requerimientos del software previamente realizada </pre>
+      <pre *ngSwitchCase="'funcionales'">- Gran parte del exito del producto depende de que este proceso sea realizado efectivamente </pre>
+      <pre *ngSwitchCase="'funcionales'">- La ambiguedad es normal, pero debe ser reducida al minimo </pre>
+      <pre *ngSwitchCase="'funcionales'">- Las Historias de Usuario son una gran ayuda en este ambito, aun asi estas tambien pueden equivocarse </pre>
+      <pre *ngSwitchCase="'funcionales'">- Los requisitos deben ser coherentes, sin contradicciones entre si, más no significa que no puedan cambiar </pre>
+
+      <pre *ngSwitchCase="'NOfuncionales'">- No son caracteristicas que son expresadas directamente por el cliente </pre>
+      <pre *ngSwitchCase="'NOfuncionales'">- Son una declaración de como se debe comportar el sistema, de que propiedades son importantes </pre>
+      <pre *ngSwitchCase="'NOfuncionales'">- Tambien pueden contar con restricciones como, sistema operativo, dispositivos compatibles, paleta de colores, etc... </pre>
+      <pre *ngSwitchCase="'NOfuncionales'"> - Requisitos del producto -> especifican que debe cumplir el producto (rapido, bonito, confiable, etc...) </pre>
+      <pre *ngSwitchCase="'NOfuncionales'"> - Requisitos del producto -> estos criterios, y otras más son terriblemente ambiguos, por lo que deben ser previamente acordados </pre>
+      <pre *ngSwitchCase="'NOfuncionales'"> - Requisitos organizacionales -> se derivan de politicas y procedimientos de la empresa ya existentes </pre>
+      <pre *ngSwitchCase="'NOfuncionales'"> - Requisitos organizacionales -> como lenguajes a usar, documentación a entregar, etc... </pre>
+      <pre *ngSwitchCase="'NOfuncionales'"> - Requisitos externos -> son afectados directamente por factores externos al software </pre>
+      <pre *ngSwitchCase="'NOfuncionales'"> - Requisitos organizacionales -> tales como la interoperabilidad, leyes a seguir, etc... </pre>
+
+      <pre *ngSwitchCase="'negocio'">- Es el impacto real de una funcionalidad en el software, por lo que es subjetivo y depende de quien lo este visualizando </pre>
+      <pre *ngSwitchCase="'negocio'">- Generalmenete son responsabilidad del Product Owner y de los analistas, si se trabaja con metodologias agiles </pre>
+      <pre *ngSwitchCase="'negocio'">- Es necesario definir objetivos a cumplir, para tener una meta clara y visualizar un camino </pre>
+      <pre *ngSwitchCase="'negocio'">- Adoptar formas de medir el progreso y hacerlo de manera periodica </pre>
+      <pre *ngSwitchCase="'negocio'">- Cuestionarse a si mismos, conforme va avanzando el proyecto las cosas pueden cambiar y con estas nuestros objetivos </pre>
+      <pre *ngSwitchCase="'negocio'">- Es necesario definir objetivos a cumplir, para tener una meta clara y visualizar un camino </pre>
+
+      <pre *ngSwitchCase="'ambiguedad'">- Menos es Más, una frase bastante diciente pero que es más facil decirla que aplicarla </pre>
+      <pre *ngSwitchCase="'ambiguedad'">- La redacción debe ser clara y concisa, ya que muchas personas en diferentes ambitos leeran los requisitos y todos deben entenderlos </pre>
+      <pre *ngSwitchCase="'ambiguedad'">- Los detalles son importantes, pero estos no deben ser abrumadores ni irrelevantes </pre>
+      <pre *ngSwitchCase="'ambiguedad'">- Si una requisito es demasiado extenso este puede ser desglosado en otros más pequeños y concisos </pre>
+      <pre *ngSwitchCase="'ambiguedad'">- Igual que las Historias de Usuario pueden tener criterios de aceptación </pre>
+      <pre *ngSwitchCase="'ambiguedad'">- Se puede incluir lenguaje tecnico y escenarios especificos, si estos ayudan a definir un contexto </pre>
+
+      <pre *ngSwitchCase="'calidad'">- Es una propiedad medible del sistema que indica si el sistema satisface una caracteristica en especifico </pre>
+      <pre *ngSwitchCase="'calidad'">- Dependiendo de la complejidad, un sistema puede cumplir una o varias de las siguentes caracteristicas </pre>
+      <pre *ngSwitchCase="'calidad'">  - Compatibilidad -> capacidad de los sistemas para intercambiar información ó compartir software/hardware </pre>
+      <pre *ngSwitchCase="'calidad'">    - subcaracteristicas -> interoperabilidad, coexistencia </pre>
+      <pre *ngSwitchCase="'calidad'">  - Usabilidad -> capacidad del producto para ser entendido, que sea usado y que sea atractivo </pre>
+      <pre *ngSwitchCase="'calidad'">    - subcaracteristicas -> idoneidad, aprendizaje, manejo de errores, accesiblidad, estetica </pre>
+      <pre *ngSwitchCase="'calidad'">  - Confiabilidad -> capacidad para cumplir con las funciones especificadas en un ambiente predispuesto </pre>
+      <pre *ngSwitchCase="'calidad'">    - subcaracteristicas -> madurez, disponibilidad, tolerancia a fallos, recuperación </pre>
+      <pre *ngSwitchCase="'calidad'">  - Eficiencia -> desempeño del sistema y cuanto recursos consume </pre>
+      <pre *ngSwitchCase="'calidad'">    - subcaracteristicas -> comportamiento temporal, recursos usados, capacidad </pre>
+      <pre *ngSwitchCase="'calidad'">  - Seguridad -> protección de los datos, ya sea de intromisiones externas o internas </pre>
+      <pre *ngSwitchCase="'calidad'">    - subcaracteristicas -> confidencialidad, integridad, responsabilidad, autenticidad </pre>
+      <pre *ngSwitchCase="'calidad'">  - Portabilidad -> capacidad para ser trasladado de un ambiente a otro, ya sea hardware o software </pre>
+      <pre *ngSwitchCase="'calidad'">    - subcaracteristicas -> adaptabilidad, instalación, sustitución </pre>
+      <pre *ngSwitchCase="'calidad'">  - Mantenibilidad -> capacidad de que pueda cambiar a traves del tiempo </pre>
+      <pre *ngSwitchCase="'calidad'">    - subcaracteristicas -> modularidad, reusabilidad, analisable, modificable, testeable </pre>
+
+    </div>
+  
+    <app-referencia [referencia]="referencia"></app-referencia>
+  
+  </div>

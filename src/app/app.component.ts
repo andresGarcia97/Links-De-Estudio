@@ -13,6 +13,7 @@ import { OtrosComponent } from './components/otros/otros.component';
 import { ParadigmasComponent } from './components/paradigmas/paradigmas.component';
 import { PatronesComponent } from './components/patrones/patrones.component';
 import { RefactorizacionComponent } from './components/refactorizacion/refactorizacion.component';
+import { RequisitosComponent } from './components/requisitos/requisitos.component';
 import { SectionsComponent } from './components/sections/sections.component';
 import { SqlNosqlComponent } from './components/sql-nosql/sql-nosql.component';
 import { UmlComponent } from './components/uml/uml.component';
@@ -42,7 +43,7 @@ export class AppComponent {
 
   @ViewChild('componentes', { read: ViewContainerRef }) componentes!: ViewContainerRef;
 
-  fechaActualizacion = '15/02/2021';
+  fechaActualizacion = '20/02/2021';
 
   porciento: any = porcentaje.subscribe((valor) => {
     this.porciento = valor;
@@ -52,7 +53,8 @@ export class AppComponent {
     ArquitecturasComponent, BuenasPracticasComponent, FrameworksComponent, MalasPracticasComponent,
     MetodologiasComponent, OtrosComponent, ParadigmasComponent, PatronesComponent,
     RefactorizacionComponent, SectionsComponent, SqlNosqlComponent, CompilacionComponent,
-    HistoriaUsuarioComponent, VersionamientoComponent, EstrategiasDesarrolloComponent, UmlComponent];
+    HistoriaUsuarioComponent, VersionamientoComponent, EstrategiasDesarrolloComponent, UmlComponent,
+    RequisitosComponent];
 
   constructor(private componentFactoryResolver: ComponentFactoryResolver) { }
 
