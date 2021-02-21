@@ -19,6 +19,7 @@ import { VersionamientoComponent } from './components/versionamiento/versionamie
 import { EstrategiasDesarrolloComponent } from './components/estrategias-desarrollo/estrategias-desarrollo.component';
 import { UmlComponent } from './components/uml/uml.component';
 import { RequisitosComponent } from './components/requisitos/requisitos.component';
+import { PruebasComponent } from './components/pruebas/pruebas.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { RequisitosComponent } from './components/requisitos/requisitos.componen
     VersionamientoComponent,
     EstrategiasDesarrolloComponent,
     UmlComponent,
-    RequisitosComponent
+    RequisitosComponent,
+    PruebasComponent
   ],
   imports: [
     BrowserModule

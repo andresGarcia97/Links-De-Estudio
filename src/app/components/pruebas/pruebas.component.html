@@ -1,0 +1,154 @@
+<div class="content">
+
+    <h2>Introducción a las pruebas</h2>
+  
+    <div class="card-container">
+  
+      <div class="card card-small" (click)="linkReferencia('principios','https://todosqa.com/siete-principios-del-proceso-de-prueba/')" tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+        <span> Principios de testing </span>
+      </div>
+  
+      <div class="card card-small" (click)="linkReferencia('manifiesto','https://www.adictosaltrabajo.com/2019/12/18/testing-en-un-mundo-agile/')"
+        tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+        <span>Testing manifiesto</span>
+      </div>
+  
+      <div class="card card-small" (click)="linkReferencia('tipos','https://visual-engin.com/2017/10/26/importancia-pruebas-de-software-testing/')"
+        tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+        <span>Tipos</span>
+      </div>
+  
+      <div class="card card-small" (click)="linkReferencia('beneficios','https://platzi.com/blog/testing-ventajas-formas-de-realizar-pruebas/')"
+        tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+        <span>Beneficios</span>
+      </div>
+  
+      <div class="card card-small" (click)="linkReferencia('nombramiento','https://www.petrikainulainen.net/programming/testing/writing-clean-tests-naming-matters/')" tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+        <span>Nombramiento</span>
+      </div>
+  
+      <div class="card card-small" (click)="linkReferencia('first','https://www.paradigmadigital.com/dev/principio-first-aumentar-la-calidad-tests-unitarios/')"
+        tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+        <span>Principio FIRST</span>
+      </div>
+  
+      <div class="card card-small" (click)="linkReferencia('sutydoc','https://www.javiergarzas.com/2015/09/que-estoy-probando-y-cuales-son-mis-dependencias-en-testing.html')"
+        tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+        <span>SUT & DOC</span>
+      </div>
+  
+      <div class="card card-small" (click)="linkReferencia('dobles','https://www.codurance.com/publications/2019/04/08/introduction-to-test-doubles')"
+       tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+        <span>Dobles</span>
+      </div>
+
+      <div class="card card-small" (click)="linkReferencia('aaa','http://oscarmoreno.com/pruebas-unitarias/')"
+       tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+        <span>AAA</span>
+      </div>
+
+      <div class="card card-small" (click)="linkReferencia('gwt','https://softwareengineering.stackexchange.com/questions/308160/differences-between-given-when-then-gwt-and-arrange-act-assert-aaa')"
+       tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+        <span>GWT</span>
+      </div>
+  
+    </div>
+  
+    <div class="terminal" [ngSwitch]="selection" #terminal>
+  
+      <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
+    
+      <pre *ngSwitchCase="'principios'">- Las pruebas demuestran la presencia de defectos, por ende entre más pruebas halla mejor </pre>
+      <pre *ngSwitchCase="'principios'">- Es improductivo hacer pruebas exhaustivas, ademas de que es casi imposible de hacer </pre>
+      <pre *ngSwitchCase="'principios'">- Las pruebas tempranas ayudan a encontrar defectos con prontitud, y a su vez reducir tiempo y costos </pre>
+      <pre *ngSwitchCase="'principios'">- Agrupar defectos permite que las soluciones sean más especializadas, y las pruebas sean más efectivas </pre>
+      <pre *ngSwitchCase="'principios'">- La paradoja del pesticida, si nuestro software cambia, las pruebas tambien deben hacerlo, que sigan funcionando no siempre es buena señal </pre>
+      <pre *ngSwitchCase="'principios'">- Las pruebas dependen del contexto, entre más se parezca el entorno de pruebas al entorno de producción mejor </pre>
+      <pre *ngSwitchCase="'principios'">- Que no se presenten errores no significa que no se presentaran errores, solo que no se han dado las condiciones</pre>
+
+      <pre *ngSwitchCase="'manifiesto'">- El testing no es una fase más, siempre debe estar presente en todo el desarrollo</pre>
+      <pre *ngSwitchCase="'manifiesto'">- La calidad no depende solo de las pruebas, es un proceso constante durante todo el ciclo de vida </pre>
+      <pre *ngSwitchCase="'manifiesto'"> - Testing inicial <strong> SOBRE </strong> testing final </pre>
+      <pre *ngSwitchCase="'manifiesto'"> - Prevenir bugs <strong> SOBRE </strong> encontrar bugs </pre>
+      <pre *ngSwitchCase="'manifiesto'"> - Entender que se prueba <strong> SOBRE </strong> probar una funcionalidad </pre>
+      <pre *ngSwitchCase="'manifiesto'"> - Construir un mejor sistema <strong> SOBRE </strong> destruir el sistema </pre>
+      <pre *ngSwitchCase="'manifiesto'"> - Responsabilidad del equipo <strong> SOBRE </strong> la responsabilidad del tester </pre>
+  
+      <pre *ngSwitchCase="'tipos'">- Tipos de pruebas </pre>
+      <pre *ngSwitchCase="'tipos'"> - Funcionales -> prueban las funcionalidades del sistema y suelen ser de caja negra, al validar el QUE más que el COMO </pre>
+      <pre *ngSwitchCase="'tipos'"> - No Funcionales -> estas validan cosas como carga, estres, rendimiento, confiabilidad, etc... </pre>
+      <pre *ngSwitchCase="'tipos'"> - Estructurales -> indagan la estructura interna del programa y sus relaciones, aca se pueden incluir las pruebas unitarias y de integración </pre>
+      <pre *ngSwitchCase="'tipos'"> - Estructurales -> estan son de tipo caja blanca, ya que es necesario conocer todo el sistema y como funciona para que sean bien planificadas </pre>
+      <pre *ngSwitchCase="'tipos'"> - Regresión -> basicamente es volver a correr todas la pruebas despues de que se cambien componentes ó se corrija un problema </pre>
+      <pre *ngSwitchCase="'tipos'"> - Regresión -> dependiendo de la cantidad de pruebas que hayan y de su complejidad puede ser una operación bastante demorada </pre>
+
+      <pre *ngSwitchCase="'beneficios'"> - La calidad mejora al encontrar errores en etapas previas y durante el desarrollo, en vez de hacerlo en etapas finales </pre>
+      <pre *ngSwitchCase="'beneficios'"> - Los cambios son hechos de manera más agil al inducir una mayor comunicación con todo el equipo </pre>
+      <pre *ngSwitchCase="'beneficios'"> - Reducen el tiempo y los costos asociados a la mantenibilidad del software </pre>
+      <pre *ngSwitchCase="'beneficios'"> - Los tests pueden tener documentación la cual no debe ser muy extensa, y tambien pueden servir como documentación </pre>
+  
+      <pre *ngSwitchCase="'nombramiento'"> - Representa el intercambio de mensajes entre los diferentes componentes del sistema para lograr una funcionalidad </pre>
+      <pre *ngSwitchCase="'nombramiento'"> - El tiempo es importante ya que un mensaje debe terminar para que otro empieze (generalmente) </pre>
+      <pre *ngSwitchCase="'nombramiento'"> - Los objetos que interactuan puede ser simple clases, hasta modulos y sistemas completos </pre>
+  
+      <pre *ngSwitchCase="'first'"> - Fast -> los tests unitarios deben ser lo más rapido posible, ya que se suelen tener cientos de pruebas y ejecutarlas conlleva tiempo y recursos </pre>
+      <pre *ngSwitchCase="'first'"> - Independent -> cada test debe ser independiente de los demás, de lo contrario habra un acoplamiento no deseado </pre>
+      <pre *ngSwitchCase="'first'"> - Repeatable -> las pruebas deben funcionar en cualquier ambiente que se ejecuten, ya sea local o en un ambiente de integración </pre>
+      <pre *ngSwitchCase="'first'"> - Self-Validating -> las pruebas deben mostrar resultados concluyentes, estos no deben tener intervención humana para que sean validos </pre>
+      <pre *ngSwitchCase="'first'"> - Timely -> toda prueba debe ser oportuna y debe tener una razon de ser, si no se pueden justificar, estas habran sido una perdida de tiempo </pre>
+  
+      <pre *ngSwitchCase="'sutydoc'"> - System Under Test </pre>
+      <pre *ngSwitchCase="'sutydoc'">  - Es aquello que se esta probando ya sea una clase, un componente, una funcionalidad </pre>
+      <pre *ngSwitchCase="'sutydoc'"> - Depend On Component </pre>
+      <pre *ngSwitchCase="'sutydoc'">  - Es lo que necesita cada SUT para poder funcionar, y que la prueba pueda ser llevada a cabo </pre>
+      <pre *ngSwitchCase="'sutydoc'"> - Organización </pre>
+      <pre *ngSwitchCase="'sutydoc'">  - Generalmente se organizan mediante una tabla que contiene el tipo de prueba, los SUTs y los DOCs </pre>
+  
+      <pre *ngSwitchCase="'dobles'">- Son objetos que se comportan de manera igual que el elemento que copian, pero son más simples de manejar </pre>
+      <pre *ngSwitchCase="'dobles'">  - Dummy -> Es un objeto con valore concretos que solo sirve para que se cumplan ciertas precondiciones </pre>
+      <pre *ngSwitchCase="'dobles'">  - Fake -> son funcionales y se comportan igual que en producción, solo que de una manera más simple y limitada </pre>
+      <pre *ngSwitchCase="'dobles'">  - Stub -> Es un objeto que ya viene con una información predefinida, en vez de información real e impredecible </pre>
+      <pre *ngSwitchCase="'dobles'">  - Mock -> Son objetos que actuan de acuerdo a una llamada en especifico, de lo contrario no funcionaran debidamente </pre>
+      <pre *ngSwitchCase="'dobles'">  - Spies -> Este objeto se encarga de visualizar todos los procesos y llamados internos, verificando que sean los desados </pre>
+
+      <pre *ngSwitchCase="'aaa'">- Arrange -> en esta parte se organiza todo lo necesario y se deben establecer las condiciones del test </pre>
+      <pre *ngSwitchCase="'aaa'">- Act -> es la ejecución del fragmento a testear</pre>
+      <pre *ngSwitchCase="'aaa'">- Assert -> ultimo paso de la prueba y es la comprobación de lo resultados </pre>
+
+      <pre *ngSwitchCase="'gwt'">- Funciona de la misma manera que AAA, con algunas ventajas </pre>
+      <pre *ngSwitchCase="'gwt'">- Puede ser usado con frameworks de BDD, es más que solo una estructura</pre>
+      <pre *ngSwitchCase="'gwt'">- Es obicuo por lo que más personas pueden entenderlo sin necesidad de un conocimiento completo del sistema </pre>
+      <pre *ngSwitchCase="'gwt'">- Añade valor extra al negocio, al interconectar el codigo y las pruebas a un nivel mayor </pre>
+
+      <pre *ngSwitchCase="'nombramiento'">- El diablo esta en los detalles, saber nombrar los elementos que intervienen ayudara al analisis </pre>
+      <pre *ngSwitchCase="'nombramiento'"> - Clases -> deberian tener un indicador que las agrupe, como: (nombreClase)Test </pre>
+      <pre *ngSwitchCase="'nombramiento'"> - Metodos -> hay varias convenciones, pero generalmente deben incluir:  </pre>
+      <pre *ngSwitchCase="'nombramiento'">  - nombre del metodo, estado a probar, comportamiento esperado; tambien se pueden incluir las palabras de given, when, should, test  </pre>
+      <pre *ngSwitchCase="'nombramiento'"> - Variables -> deben describir el proposito de cada variable, no deben ser resumidas ni genericas, algunos ejemplos pueden ser: </pre>
+      <pre *ngSwitchCase="'nombramiento'">  - target, expected, actual, valid, invalid, Object(Mock)</pre>
+
+    </div>
+  
+    <app-referencia [referencia]="referencia"></app-referencia>
+  
+  </div>

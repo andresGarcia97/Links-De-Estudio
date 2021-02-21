@@ -1,62 +1,82 @@
 <div class="content">
 
-    <h2>Gestion de Dependencias y Manejo de versiones</h2>
-  
-    <div class="card-container">
-    
-      <div class="card card-small"
-        (click)="linkReferencia('git','https://david-estevez.gitbooks.io/the-git-the-bad-and-the-ugly/content/es/control-de-versiones.html')"
-        tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>Gestor de Versiones</span>
-      </div>
+  <h2>Gestion de Dependencias y Manejo de versiones</h2>
 
-     <div class="card card-small"
+  <div class="card-container">
+
+    <div class="card card-small"
+      (click)="linkReferencia('git','https://david-estevez.gitbooks.io/the-git-the-bad-and-the-ugly/content/es/control-de-versiones.html')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Gestor de Versiones</span>
+    </div>
+
+    <div class="card card-small"
       (click)="linkReferencia('dependencias','https://www.hongkiat.com/blog/manage-dependencies-tools-webdev/')"
       tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Dependencias Web</span>
-     </div>
-
-     <div class="card card-small"
-     (click)="linkReferencia('gradlevsmaven','https://www.chakray.com/es/gradle-vs-maven-definiciones-diferencias/')"
-     tabindex="0">
-     <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-       <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-     <span>Gradle VS Maven</span>
     </div>
-    
+
+    <div class="card card-small"
+      (click)="linkReferencia('gradlevsmaven','https://www.chakray.com/es/gradle-vs-maven-definiciones-diferencias/')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Gradle VS Maven</span>
     </div>
-  
-    <div class="terminal" [ngSwitch]="selection" #terminal>
-      <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
-    
-      <pre *ngSwitchCase="'git'">- El control de versiones ayuda a mantener una trazabilidad de todos los cambios en una aplicación </pre>
-      <pre *ngSwitchCase="'git'">- El más conocido es GIT pero tambien existen otros como Mercurial</pre>
-      <pre *ngSwitchCase="'git'">- GIT puede ser usado en repositorios locales o distribuidos en la nube, permitiendo la colaboración entre desarrolladores </pre>
-      <pre *ngSwitchCase="'git'">- Permite crear ramificaciones para trabajar de manera aislada sin afectar a todo el flujo en general</pre>
-      <pre *ngSwitchCase="'git'">- Tambien se pueden crear etiquetas para marcar commits y que sean más faciles de encontrar</pre>
 
-      <pre *ngSwitchCase="'dependencias'">- Los gestores de dependencias son ampliamente usados ya que evitan dolores de cabeza al manejar codigo de terceros o externos </pre>
-      <pre *ngSwitchCase="'dependencias'">- Son herramientas, plugins, librerias, frameworks, necesarios para desarrollar aplicaciones de gran envergadura </pre>
-      <pre *ngSwitchCase="'dependencias'"> - NPM   -> nacido sobre NodeJs se ha convertido en uno de los principales y más grandes repositorios de dependencias y modulos </pre>
-      <pre *ngSwitchCase="'dependencias'"> - Bower -> hecho con NPM tiene menos funcionalidades, pero su apuesta principal es la ligereza y la optimización </pre>
-      <pre *ngSwitchCase="'dependencias'"> - JAM   -> es un gestor de paquetes que funciona directamente en el navegador, por lo que mantener y actualizar es más sencillo </pre>
-      <pre *ngSwitchCase="'dependencias'"> - Composer -> Similar a NPM pero para las librerias de PHP, incluso algunos frameworks como laravel lo manejan por defecto </pre>
-
-      <pre *ngSwitchCase="'gradlevsmaven'">- Maven -> es una forma de manejar proyectos en entornos JAVA </pre>
-      <pre *ngSwitchCase="'gradlevsmaven'"> - La configuración se base en un archivo XML </pre>
-      <pre *ngSwitchCase="'gradlevsmaven'"> - Maneja los jars necesarios para la ejecución del programa, ya sea de manera fisica o descargalos de repositorios </pre>
-      <pre *ngSwitchCase="'gradlevsmaven'"> - Gestiona las dependencias y las declaraciones que necesiten los jars para funcionar</pre>
-      <pre *ngSwitchCase="'gradlevsmaven'">- Gradle -> esta basada en varios conceptos de Apache Maven por lo que tiene varias mejores frente a este </pre>
-      <pre *ngSwitchCase="'gradlevsmaven'"> - Se basa en un lenguaje DSL, siendo más mantenible en el tiempo </pre>
-      <pre *ngSwitchCase="'gradlevsmaven'"> - Tambien puede gestionar los ciclos de vida, igual que Maven </pre>
-      <pre *ngSwitchCase="'gradlevsmaven'"> - Su rendimiento es mayor en comparación </pre>
-
+    <div class="card card-small"
+      (click)="linkReferencia('versiones','https://ed.team/blog/como-se-deciden-las-versiones-del-software')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Versionamiento</span>
     </div>
-  
-    <app-referencia [referencia]="referencia"></app-referencia>
-  
+
   </div>
+
+  <div class="terminal" [ngSwitch]="selection" #terminal>
+
+    <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
+    
+    <pre *ngSwitchCase="'git'">- El control de versiones ayuda a mantener una trazabilidad de todos los cambios en una aplicación </pre>
+    <pre *ngSwitchCase="'git'">- El más conocido es GIT pero tambien existen otros como Mercurial</pre>
+    <pre *ngSwitchCase="'git'">- GIT puede ser usado en repositorios locales o distribuidos en la nube, permitiendo la colaboración entre desarrolladores </pre>
+    <pre *ngSwitchCase="'git'">- Permite crear ramificaciones para trabajar de manera aislada sin afectar a todo el flujo en general</pre>
+    <pre *ngSwitchCase="'git'">- Tambien se pueden crear etiquetas para marcar commits y que sean más faciles de encontrar</pre>
+
+    <pre *ngSwitchCase="'dependencias'">- Los gestores de dependencias son ampliamente usados ya que evitan dolores de cabeza al manejar codigo de terceros o externos </pre>
+    <pre *ngSwitchCase="'dependencias'">- Son herramientas, plugins, librerias, frameworks, necesarios para desarrollar aplicaciones de gran envergadura </pre>
+    <pre *ngSwitchCase="'dependencias'"> - NPM   -> nacido sobre NodeJs se ha convertido en uno de los principales y más grandes repositorios de dependencias y modulos </pre>
+    <pre *ngSwitchCase="'dependencias'"> - Bower -> hecho con NPM tiene menos funcionalidades, pero su apuesta principal es la ligereza y la optimización </pre>
+    <pre *ngSwitchCase="'dependencias'"> - JAM   -> es un gestor de paquetes que funciona directamente en el navegador, por lo que mantener y actualizar es más sencillo </pre>
+    <pre *ngSwitchCase="'dependencias'"> - Composer -> Similar a NPM pero para las librerias de PHP, incluso algunos frameworks como laravel lo manejan por defecto </pre>
+
+    <pre *ngSwitchCase="'gradlevsmaven'">- Maven -> es una forma de manejar proyectos en entornos JAVA </pre>
+    <pre *ngSwitchCase="'gradlevsmaven'"> - La configuración se base en un archivo XML </pre>
+    <pre *ngSwitchCase="'gradlevsmaven'"> - Maneja los jars necesarios para la ejecución del programa, ya sea de manera fisica o descargalos de repositorios </pre>
+    <pre *ngSwitchCase="'gradlevsmaven'"> - Gestiona las dependencias y las declaraciones que necesiten los jars para funcionar</pre>
+    <pre *ngSwitchCase="'gradlevsmaven'">- Gradle -> esta basada en varios conceptos de Apache Maven por lo que tiene varias mejores frente a este </pre>
+    <pre *ngSwitchCase="'gradlevsmaven'"> - Se basa en un lenguaje DSL, siendo más mantenible en el tiempo </pre>
+    <pre *ngSwitchCase="'gradlevsmaven'"> - Tambien puede gestionar los ciclos de vida, igual que Maven </pre>
+    <pre *ngSwitchCase="'gradlevsmaven'"> - Su rendimiento es mayor en comparación </pre>
+
+    <pre *ngSwitchCase="'versiones'">- Las versiones se pueden dar por numero o por estabilidad </pre>
+    <pre *ngSwitchCase="'versiones'">- No existe una regla que indique que siempre se deben manejar asi, pero es util conocer las convenciones </pre>
+    <pre *ngSwitchCase="'versiones'"> - Numeros ->  X.Y.Z</pre>
+    <pre *ngSwitchCase="'versiones'">  - El primero numero -> indica la version principal del software </pre>
+    <pre *ngSwitchCase="'versiones'">  - El segundo numero -> indica nuevas funcionalidades en la version mayor </pre>
+    <pre *ngSwitchCase="'versiones'">  - El tercero numero -> es la correción de fallas, parches de seguridad, cambios menores, etc... </pre>
+    <pre *ngSwitchCase="'versiones'"> - Estabilidad -> &alpha;, &beta;, RC</pre>
+    <pre *ngSwitchCase="'versiones'">  - Alpha -> version inestable que probablemente contenga errores y deba ser corregida </pre>
+    <pre *ngSwitchCase="'versiones'">  - Beta -> una version más estable que alpha y a la que se le deben hacer pruebas para verificarla </pre>
+    <pre *ngSwitchCase="'versiones'">  - Release Candidate -> son los ultimos toques previos para poder ser lanzada oficialmente </pre>
+
+  </div>
+
+  <app-referencia [referencia]="referencia"></app-referencia>
+
+</div>

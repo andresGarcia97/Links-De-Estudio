@@ -12,6 +12,7 @@ import { MetodologiasComponent } from './components/metodologias/metodologias.co
 import { OtrosComponent } from './components/otros/otros.component';
 import { ParadigmasComponent } from './components/paradigmas/paradigmas.component';
 import { PatronesComponent } from './components/patrones/patrones.component';
+import { PruebasComponent } from './components/pruebas/pruebas.component';
 import { RefactorizacionComponent } from './components/refactorizacion/refactorizacion.component';
 import { RequisitosComponent } from './components/requisitos/requisitos.component';
 import { SectionsComponent } from './components/sections/sections.component';
@@ -43,7 +44,7 @@ export class AppComponent {
 
   @ViewChild('componentes', { read: ViewContainerRef }) componentes!: ViewContainerRef;
 
-  fechaActualizacion = '20/02/2021';
+  fechaActualizacion = '21/02/2021';
 
   porciento: any = porcentaje.subscribe((valor) => {
     this.porciento = valor;
@@ -54,7 +55,7 @@ export class AppComponent {
     MetodologiasComponent, OtrosComponent, ParadigmasComponent, PatronesComponent,
     RefactorizacionComponent, SectionsComponent, SqlNosqlComponent, CompilacionComponent,
     HistoriaUsuarioComponent, VersionamientoComponent, EstrategiasDesarrolloComponent, UmlComponent,
-    RequisitosComponent];
+    RequisitosComponent, PruebasComponent];
 
   constructor(private componentFactoryResolver: ComponentFactoryResolver) { }
 
