@@ -20,6 +20,7 @@ import { EstrategiasDesarrolloComponent } from './components/estrategias-desarro
 import { UmlComponent } from './components/uml/uml.component';
 import { RequisitosComponent } from './components/requisitos/requisitos.component';
 import { PruebasComponent } from './components/pruebas/pruebas.component';
+import { GitComponent } from './components/git/git.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { PruebasComponent } from './components/pruebas/pruebas.component';
     EstrategiasDesarrolloComponent,
     UmlComponent,
     RequisitosComponent,
-    PruebasComponent
+    PruebasComponent,
+    GitComponent
   ],
   imports: [
     BrowserModule

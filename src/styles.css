@@ -28,6 +28,12 @@ p {
   font-weight: 600;
 }
 
+.toolbar span {
+  text-emphasis: none;
+  text-decoration: none;
+  text-emphasis-color: white;
+}
+
 .toolbar img {
   margin: 0 16px;
 }

@@ -6,6 +6,7 @@ import { BuenasPracticasComponent } from './components/buenas-practicas/buenas-p
 import { CompilacionComponent } from './components/compilacion/compilacion.component';
 import { EstrategiasDesarrolloComponent } from './components/estrategias-desarrollo/estrategias-desarrollo.component';
 import { FrameworksComponent } from './components/frameworks/frameworks.component';
+import { GitComponent } from './components/git/git.component';
 import { HistoriaUsuarioComponent } from './components/historia-usuario/historia-usuario.component';
 import { MalasPracticasComponent } from './components/malas-practicas/malas-practicas.component';
 import { MetodologiasComponent } from './components/metodologias/metodologias.component';
@@ -44,8 +45,6 @@ export class AppComponent {
 
   @ViewChild('componentes', { read: ViewContainerRef }) componentes!: ViewContainerRef;
 
-  fechaActualizacion = '21/02/2021';
-
   porciento: any = porcentaje.subscribe((valor) => {
     this.porciento = valor;
   });
@@ -55,7 +54,7 @@ export class AppComponent {
     MetodologiasComponent, OtrosComponent, ParadigmasComponent, PatronesComponent,
     RefactorizacionComponent, SectionsComponent, SqlNosqlComponent, CompilacionComponent,
     HistoriaUsuarioComponent, VersionamientoComponent, EstrategiasDesarrolloComponent, UmlComponent,
-    RequisitosComponent, PruebasComponent];
+    RequisitosComponent, PruebasComponent, GitComponent];
 
   constructor(private componentFactoryResolver: ComponentFactoryResolver) { }
 

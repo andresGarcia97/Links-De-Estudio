@@ -1,0 +1,126 @@
+<div class="content">
+
+  <h2>GIT & GitFlow</h2>
+
+  <div class="card-container">
+
+    <div class="card card-small"
+      (click)="linkReferencia('introduccion','https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Acerca-del-Control-de-Versiones')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Introducción</span>
+    </div>
+
+    <div class="card card-small"
+      (click)="linkReferencia('repositorios','https://git-scm.com/book/es/v2/Fundamentos-de-Git-Trabajar-con-Remotos')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Repositorios remotos</span>
+    </div>
+
+    <div class="card card-small"
+      (click)="linkReferencia('protocolos','https://git-scm.com/book/es/v2/Git-en-el-Servidor-Los-Protocolos')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Protocolos</span>
+    </div>
+
+    <div class="card card-small"
+      (click)="linkReferencia('versiones','https://git-scm.com/book/es/v2/Git-en-entornos-distribuidos-Manteniendo-un-proyecto')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Versiones y tags</span>
+    </div>
+
+    <div class="card card-small"
+      (click)="linkReferencia('forks','https://git-scm.com/book/es/v2/GitHub-Participando-en-Proyectos')" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Forks y Pull requests</span>
+    </div>
+
+    <div class="card card-small"
+      (click)="linkReferencia('stash','https://git-scm.com/book/es/v2/Herramientas-de-Git-Guardado-r%C3%A1pido-y-Limpieza')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Stash y limpieza</span>
+    </div>
+
+    <div class="card card-small"
+      (click)="linkReferencia('merge','https://git-scm.com/book/es/v2/Herramientas-de-Git-Fusi%C3%B3n-Avanzada')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Merge</span>
+    </div>
+
+    <div class="card card-small"
+      (click)="linkReferencia('migracion','https://git-scm.com/book/es/v2/Git-y-Otros-Sistemas-Migraci%C3%B3n-a-Git')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Entresijos</span>
+    </div>
+
+  </div>
+
+  <div class="terminal" [ngSwitch]="selection" #terminal>
+  
+    <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
+    
+    <pre *ngSwitchCase="'introduccion'">- Todo archivo puede tener un seguimiento, y todo archivo seguido tiene un identificador unico que cambia con cualquier cambio del archivo </pre>
+    <pre *ngSwitchCase="'introduccion'">- Existen 3 estados principales, cambios confirmados, archivos modificados y cambios en espera </pre>
+    <pre *ngSwitchCase="'introduccion'">- Se puede trabajar con repositorios localmente ó distribuidos en internet </pre>
+    <pre *ngSwitchCase="'introduccion'">- Los archivos tambien se pueden ignorar, configurando el .gitIgnore, especificando archivos y carpetas a ignorar </pre>
+    <pre *ngSwitchCase="'introduccion'">- Cualquier cambio puede ser deshecho, incluso despues de que haya sido confirmado </pre>
+
+    <pre *ngSwitchCase="'repositorios'">- Git trabaja principalmente de manera local, pero es necesario sincronizar los cambios hechos con el repositorio central </pre>
+    <pre *ngSwitchCase="'repositorios'">- Los cambios pueden subirse mediante el comando push o bajarse del repositorio mediante un pull o un fetch </pre>
+    <pre *ngSwitchCase="'repositorios'">- Para trabajar con remotos es necesario contar con un usuario y contraseña configurados para la trazabilidad de los cambios </pre>
+
+    <pre *ngSwitchCase="'ramas'">- Son versiones especificas de los cambios que se hayan realizado </pre>
+    <pre *ngSwitchCase="'ramas'">- La rama principal es Main (anteriormente master) es el origen de donde se desprenden todas las demás </pre>
+    <pre *ngSwitchCase="'ramas'">- El manejo de ramas en Git es bastante simplificado por lo que cambiar entre si, fusionar, ramificar, eliminar y rebasar se pueden hacer mediante simples comandos </pre>
+    <pre *ngSwitchCase="'ramas'">- Usar diferentes ramas, para diferentes cambios garantiza que por lo menos siempre habra un punto al que retroceder si algo llegara a dañarse </pre>
+    <pre *ngSwitchCase="'ramas'">- El uso de ramas tambien trae el problema de que puedan surgir conflictos, que son segmentos que cuentan con varias modificaciones por diferentes personas </pre>
+    <pre *ngSwitchCase="'ramas'">- Solucionar conflictos y organizar las ramas suele ser una tarea delicada, por lo que debe realizarse con plena conciencia de lo que se esta haciendo </pre>
+
+    <pre *ngSwitchCase="'protocolos'">- La comunicación entre el repositorio remoto y local se puede hacer mediante diferentes maneras </pre>
+    <pre *ngSwitchCase="'protocolos'"> - Local -> se usa el mismo metodo de carpetas y archivos que tenga el host por defecto </pre>
+    <pre *ngSwitchCase="'protocolos'"> - HTTP -> es una manera simple de mantener conectados el repo local y remoto con unas pocas configuraciones previas </pre>
+    <pre *ngSwitchCase="'protocolos'"> - SSH -> requiere de generar una clave encriptada que debe esta almacenada en ambos repositorios, más complejo pero seguro </pre>
+    <pre *ngSwitchCase="'protocolos'"> - Git -> no requiere ningun tipo de autenticación y es el más rapido de todos, haciendolo vulnerable a modificaciones de cualquier ente externo </pre>
+
+    <pre *ngSwitchCase="'versiones'">- Mediante el uso de etiquetas el versionamiento se puede simplificar aun más </pre>
+    <pre *ngSwitchCase="'versiones'">- las etiquetas se añaden a un commit en especifico dando a entender que esa ha de ser la nueva versión ó es algo importante </pre>
+    <pre *ngSwitchCase="'versiones'">- Tambien se puede crear un archivo comprimido con todo el codigo de la nueva versión listo para descargar y ejecutar </pre>
+
+    <pre *ngSwitchCase="'forks'">- Fork -> es una clonación de un proyecto desde un repositorio a otro en un momento y rama en especifico, con el usuario como nuevo dueño </pre>
+    <pre *ngSwitchCase="'forks'">- Pull request -> es la solicitud de una persona que haya modificaciones de manera externa al repositorio pero que quiera integrarlas al original </pre>
+    <pre *ngSwitchCase="'forks'">- Markdown -> son archivos utiles a la hora de añadir información extra del proyecto, de manera más interactiva que un simple archivo de texto </pre>
+
+    <pre *ngSwitchCase="'stash'">- Stash -> el stash nos permite intercambiar entre ramas, sin necesidad de hacer commits pero guardando los cambios hechos </pre>
+    <pre *ngSwitchCase="'stash'">- Pop -> permite retomar los cambios guardados y continuar en el punto que se dejo </pre>
+    <pre *ngSwitchCase="'stash'">- Reset -> borra todos lo cambios hechos y devuelve la rama al ultimo commit hecho </pre>
+
+    <pre *ngSwitchCase="'merge'">- Une los cambios de una rama a otra especifica, ocasionalmente surgen conflictos, que dependeran de la divergencia de los cambios realizados </pre>
+    <pre *ngSwitchCase="'merge'">- Las ramas se pueden desfusionar si se hay errores, ó abortar la fusión si esta se vuelve muy problematica mediante un revert o un abort segun el caso </pre>
+    <pre *ngSwitchCase="'merge'">- Rerere -> esta opción oculta permite dotar a memoria a Git para que esta resuelva conflictos de manera automatica </pre>
+
+    <pre *ngSwitchCase="'migracion'">- Permite personalizarse en ciertos aspectos como añadir colores a al usar sus comandos y manejar los espacios en blanco que suelen ser un problema comun </pre>
+    <pre *ngSwitchCase="'migracion'">- Git permite la migración desde diferentes sistemas de versionamiento anteriores ó que han caido en el deshuso como: </pre>
+    <pre *ngSwitchCase="'migracion'">- Mercurial, Subversion, Perforce, TFS, </pre>
+    <pre *ngSwitchCase="'migracion'">- Tambien es posible eliminar archivos totalmente del arbol de cambios, aun asi no es recomendable ya que el historial se podria ver afectado </pre>
+    <pre *ngSwitchCase="'migracion'">- Configurar variables de ambiente como cualquier otro programa </pre>
+    <pre *ngSwitchCase="'migracion'">- Algunos entornos de desarrollo como Eclipse, Visual estudio y Visual Estudio code, ya traen integrado git por defecto </pre>
+
+  </div>
+
+  <app-referencia [referencia]="referencia"></app-referencia>
+
+</div>
