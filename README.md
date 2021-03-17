@@ -10,5 +10,10 @@ Para acceder a la pagina puedes dar click aqui [contenidoderepaso.web.app](https
 
 ```
 Todo el contenido de la pagina esta referenciado a las fuentes originales. 
-Estos son pequeños abstracts de cada tema en particular, para aprender más puedes seguir consultando por tu cuenta.
+Estos son pequeños abstracts de cada tema en particular.
+Para aprender más puedes seguir consultando por tu cuenta.
 ```
+## Iconos
+
+Iconos sacados de [logo.wine](https://www.logo.wine/)
+
