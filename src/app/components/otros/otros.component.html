@@ -51,12 +51,28 @@
     </div>
 
     <div class="card card-small"
-    (click)="linkReferencia('scraping','https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/que-es-el-web-scraping/')"
-    tabindex="0">
-    <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-      <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-    <span>Web Scrapping</span>
-  </div>
+      (click)="linkReferencia('scraping','https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/que-es-el-web-scraping/')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Web Scrapping</span>
+    </div>
+
+    <div class="card card-small"
+      (click)="linkReferencia('cdci','https://www.aplyca.com/es/blog/integracion-entrega-continua-ci-cd')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>CD/CI</span>
+    </div>
+
+    <div class="card card-small"
+      (click)="linkReferencia('devops','https://www.paradigmadigital.com/techbiz/que-es-devops-y-sobre-todo-que-no-es-devops/#:~:text=Como%20conclusi%C3%B3n%2C%20qued%C3%A9monos%20con%20una,s%C3%B3lo%20en%20desarrollar%20y%20puedan')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>DevOps</span>
+    </div>
 
   </div>
 
@@ -104,6 +120,19 @@
     <pre *ngSwitchCase="'scraping'">- Esto puede conllevar a una ventaja sobre tu competencia al comparar su contenido con el tuyo </pre>
     <pre *ngSwitchCase="'scraping'">- Puede violar las leyes de derechos de autor, por lo que puede llegar a ser ilegal </pre>
     <pre *ngSwitchCase="'scraping'">- Tambien se puede bloquear por medio de software ó dificultarles la extracción de los datos (imagenes) </pre>
+
+    <pre *ngSwitchCase="'cdci'">- Integración continua Y Entrega continua nacen para entregar un mejor codigo, de una manera más rapida y con menos errores </pre>
+    <pre *ngSwitchCase="'cdci'">- Los errores se pueden encontrar de manera previa a estar en producción </pre>
+    <pre *ngSwitchCase="'cdci'">- Integración continua permite una mejora de la afluencia a la rama principal del codigo, evitando problemas con ramas aisladas </pre>
+    <pre *ngSwitchCase="'cdci'">- Entrega continua permite que los cambios aprobados sean implementados con el menor numero de complicaciones posibles </pre>
+    <pre *ngSwitchCase="'cdci'">- Para que todo esto sea posible todas las pruebas deben estar automatizadas </pre>
+    <pre *ngSwitchCase="'cdci'">- Las pruebas deben tener la mayor cobertura posible, o en su defecto un minimo </pre>
+    <pre *ngSwitchCase="'cdci'">- El uso de buenas pracaticas es fundamental, ya que esto evitara posibles errores </pre>
+
+    <pre *ngSwitchCase="'devops'">- Es una metodologia para crear software de una manera más eficiente, con mayor calidad y menos problemas en producción </pre>
+    <pre *ngSwitchCase="'devops'">- Este modelo no consiste en aumentar las responsabilidades del desarrollador, todo lo contrario </pre>
+    <pre *ngSwitchCase="'devops'">- Ya que la meta es que cada despliegue sea automatico, reduciendo el tiempo de corrección de errores, aumentando la productividad </pre>
+    <pre *ngSwitchCase="'devops'">- La automatización de las tareas y las pruebas permite que el codigo en desarrollo fluya rapidamente a producción </pre>
 
   </div>
 

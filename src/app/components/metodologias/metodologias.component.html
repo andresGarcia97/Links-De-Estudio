@@ -82,6 +82,14 @@
       <span>XP</span>
     </div>
 
+    <div class="card card-small"
+      (click)="linkReferencia('v','https://ingsoftware.weebly.com/ciclo-de-vida-en-v.html')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Modelo V</span>
+    </div>
+
   </div>
 
   <div class="terminal" [ngSwitch]="selection" #terminal>
@@ -162,8 +170,8 @@
     <pre *ngSwitchCase="'espiral'">- Es la evolución del modelo en cascada</pre>
     <pre *ngSwitchCase="'espiral'">- Se basa en la repetición de las mismas tareas, haciendo controles con más periocidad </pre>
     <pre *ngSwitchCase="'espiral'">- Se reduce el riesgo del fracaso al dividir el proceso en partes más pequeñas </pre>
-    <pre *ngSwitchCase="'espiral'">- Cada ciclo se planifica justo depues de terminar el objetivo del presente</pre>
-    <pre *ngSwitchCase="'espiral'">- Los errores pueden evolucionar con caca ciclo, no necesarimente resolverse</pre>
+    <pre *ngSwitchCase="'espiral'">- Cada ciclo se planifica justo depues de terminar el objetivo del presente </pre>
+    <pre *ngSwitchCase="'espiral'">- Los errores pueden evolucionar con cada ciclo, no necesarimente resolverse </pre>
 
     <pre *ngSwitchCase="'iterativo'">- Cada entrega es un proyecto más completo</pre>
     <pre *ngSwitchCase="'iterativo'">- En cada oportunidad se pueden añadir nuevas funciones o actualizar las existentes </pre>
@@ -178,6 +186,15 @@
     <pre *ngSwitchCase="'extrema'">- Debe ser planificada, pero flexible al cambio </pre>
     <pre *ngSwitchCase="'extrema'">- Los Sprints son cambiados por iteracciones, además de que tambien maneja roles </pre>
     <pre *ngSwitchCase="'extrema'">- Cliente, Equipo, Tester, Tracker, Coach, Big Boss </pre>
+
+    <pre *ngSwitchCase="'v'">- Desciende del modelo en cascada e igual que este consta de las siguentes fases: </pre>
+    <pre *ngSwitchCase="'v'">- Es un modelo facil de seguir y el emparejamiento entre las etapas logra una mejor localizazion de fallos </pre>
+    <pre *ngSwitchCase="'v'">- El producto final solo es obtenido al final de todas las fases por lo que es demorado y puede ser diferente de lo que se pidio </pre>
+    <pre *ngSwitchCase="'v'">   &darr; Definición de requerimientos       &lt;--       validan      &lt;--        Pruebas de aceptación   &uarr; </pre>
+    <pre *ngSwitchCase="'v'">   &darr;  Diseño funcional del sistema      &lt;--       validan      &lt;--      Pruebas de sistema        &uarr; </pre>
+    <pre *ngSwitchCase="'v'">   &darr;   Diseño tecnico del sistema       &lt;--       validan      &lt;--    pruebas de componentes      &uarr; </pre>
+    <pre *ngSwitchCase="'v'">   &darr;    Especificación de componentes   &lt;--       validan      &lt;--  Pruebas unitarias             &uarr; </pre>
+    <pre *ngSwitchCase="'v'">   &darr;                                           Codificación                                       &uarr; </pre>
 
   </div>
 
