@@ -21,6 +21,7 @@ import { UmlComponent } from './components/uml/uml.component';
 import { RequisitosComponent } from './components/requisitos/requisitos.component';
 import { PruebasComponent } from './components/pruebas/pruebas.component';
 import { GitComponent } from './components/git/git.component';
+import { WebComponent } from './components/web/web.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { GitComponent } from './components/git/git.component';
     UmlComponent,
     RequisitosComponent,
     PruebasComponent,
-    GitComponent
+    GitComponent,
+    WebComponent
   ],
   imports: [
     BrowserModule

@@ -27,14 +27,6 @@
     </div>
 
     <div class="card card-small"
-      (click)="linkReferencia('erd','https://www.lucidchart.com/pages/es/que-es-un-diagrama-entidad-relacion')"
-      tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>ERD</span>
-    </div>
-
-    <div class="card card-small"
       (click)="linkReferencia('escalamiento','https://www.oscarblancarteblog.com/2017/03/07/escalabilidad-horizontal-y-vertical/')"
       tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -48,6 +40,14 @@
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Docker</span>
+    </div>
+
+    <div class="card card-small"
+      (click)="linkReferencia('compose','https://dockertips.com/utilizando-docker-compose#:~:text=Docker%20Compose%20es%20una%20herramienta%20que%20permite%20simplificar%20el%20uso%20de%20Docker.&text=En%20vez%20de%20utilizar%20Docker,Engine%20a%20realizar%20tareas%2C%20programaticamente')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Docker Compose</span>
     </div>
 
     <div class="card card-small"
@@ -92,11 +92,6 @@
     <pre *ngSwitchCase="'rest'">    Puede incluir metadatos, más pesado            Generalmente se usa JSON, más liviano </pre>
     <pre *ngSwitchCase="'rest'">    NO se puede guardar contenido en la cache      SI puede guardar contenido en la cache </pre>
 
-    <pre *ngSwitchCase="'erd'">- Demuestra como las entidades (generalmente de una BD) se relacionan entre si </pre>
-    <pre *ngSwitchCase="'erd'">- Es una manera de desarrollar BD relacionales de acuerdo al modelo de negocio</pre>
-    <pre *ngSwitchCase="'erd'">- Demuestra como las entidades (generalmente de una BD) se relacionan entre si </pre>
-    <pre *ngSwitchCase="'erd'">- Tambien tienen una relación que denota la cardinalidad 1-1, 1-n, 1-0, m-n</pre>
-
     <pre *ngSwitchCase="'escalamiento'">- Capacidad de un software para crecer de acuerdo a la demanda </pre>
     <pre *ngSwitchCase="'escalamiento'"> -vertical -> la más facil de realizar pero la más costosa</pre>
     <pre *ngSwitchCase="'escalamiento'"> -vertical -> esta depende directamente de la capacidad de la infraestructura</pre>
@@ -112,6 +107,10 @@
     <pre *ngSwitchCase="'docker'">- El uso de los contenedores y todos sus beneficios fue una gran revolución en el desarrollo del software </pre>
     <pre *ngSwitchCase="'docker'">- Los contenedores son entornos de ejecución completos haciendolos independientes del sistema anfitrión </pre>
     <pre *ngSwitchCase="'docker'">- Los servicios se pueden unir para generar aplicaciones de más complejidad y eficiencia </pre>
+
+    <pre *ngSwitchCase="'compose'">- Docker Compose permite simplificar y administrar los contenedores por medio de archivos YAML </pre>
+    <pre *ngSwitchCase="'compose'">- Esto permite conectar y administrar a los contenedores y sus puertos, volumenes, configuraciones, etc.. </pre>
+    <pre *ngSwitchCase="'compose'">- Se puede usar con Dockerfiles previamente creados, o especificar todo directamente en el archivo </pre>
 
     <pre *ngSwitchCase="'scraping'">- Es una forma de buscar contenido de las paginas en internet </pre>
     <pre *ngSwitchCase="'scraping'">- Algunos buscadores como Google hacen esto para indexar contenido </pre>

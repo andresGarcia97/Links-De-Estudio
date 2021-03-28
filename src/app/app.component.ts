@@ -20,6 +20,7 @@ import { SectionsComponent } from './components/sections/sections.component';
 import { SqlNosqlComponent } from './components/sql-nosql/sql-nosql.component';
 import { UmlComponent } from './components/uml/uml.component';
 import { VersionamientoComponent } from './components/versionamiento/versionamiento.component';
+import { WebComponent } from './components/web/web.component';
 
 const scroll$ = fromEvent(document, 'scroll');
 
@@ -50,11 +51,16 @@ export class AppComponent {
   });
 
   public listaComponentes = [
+    // 0 - 3
     ArquitecturasComponent, BuenasPracticasComponent, FrameworksComponent, MalasPracticasComponent,
+    // 4 - 7
     MetodologiasComponent, OtrosComponent, ParadigmasComponent, PatronesComponent,
+    // 8 - 11
     RefactorizacionComponent, SectionsComponent, SqlNosqlComponent, CompilacionComponent,
+    // 12 - 15
     HistoriaUsuarioComponent, VersionamientoComponent, EstrategiasDesarrolloComponent, UmlComponent,
-    RequisitosComponent, PruebasComponent, GitComponent];
+    // 16 - 19
+    RequisitosComponent, PruebasComponent, GitComponent, WebComponent];
 
   constructor(private componentFactoryResolver: ComponentFactoryResolver) { }
 

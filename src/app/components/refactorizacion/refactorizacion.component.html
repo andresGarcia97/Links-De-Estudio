@@ -1,6 +1,6 @@
 <div class="content">
 
-  <h2>Refactorización</h2>
+  <h2>Refactorización & Deuda tecnica</h2>
 
   <div class="card-container">
 
@@ -18,6 +18,20 @@
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Deuda tecnica</span>
     </div>
+
+    <div class="card card-small"
+      (click)="linkReferencia('tipos','https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/deuda-tecnica-explicada/')" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Tipos de deuda</span>
+    </div>    
+
+    <div class="card card-small"
+      (click)="linkReferencia('comentarios','https://www.scrummanager.net/bok/index.php?title=Deuda_t%C3%A9cnica')" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Comentar la deuda</span>
+    </div> 
 
     <div class="card card-small"
       (click)="linkReferencia('cuandorefactorizar','https://refactoring.guru/es/refactoring/when')" tabindex="0">
@@ -56,6 +70,25 @@
     <pre *ngSwitchCase="'deudatecnica'">- La Documentación siempre sera necesaria, y omitirla entorpecera futuros cambios</pre>
     <pre *ngSwitchCase="'deudatecnica'">- Sin comunicación o interacciones incompletas pueden generar pequeñas islas dentro de la empresa </pre>
     <pre *ngSwitchCase="'deudatecnica'">- Tambien existe el elemento humano cuando el desarrollador es inexperto o incompetente</pre>
+
+    <pre *ngSwitchCase="'tipos'">- No realizar los cambios necesarios con premura hara que en el futuro sea más dificil y costoso refactorizar </pre>
+    <pre *ngSwitchCase="'tipos'"></pre>
+    <pre *ngSwitchCase="'tipos'">                            Deuda imprudente                       Deuda prudente          </pre>
+    <pre *ngSwitchCase="'tipos'"></pre>
+    <pre *ngSwitchCase="'tipos'">                       -Falta de tiempo/presupuesto          -Prioridad de funcionalidades </pre>
+    <pre *ngSwitchCase="'tipos'">Deuda deliberada       -Refactor descuidado                   con la promesa de mejora     </pre>
+    <pre *ngSwitchCase="'tipos'">                       -Insuficiencia de pruebas             -Minimo de pruebas a hacer    </pre>
+    <pre *ngSwitchCase="'tipos'"></pre>
+    <pre *ngSwitchCase="'tipos'">                       -Falta de conocimiento                -El refactor constante evita  </pre>
+    <pre *ngSwitchCase="'tipos'">Deuda involuntaria     -Sobreingenieria                       estos problemas, mientras se </pre>
+    <pre *ngSwitchCase="'tipos'">                       -Anti patrones de diseño               aprende de los errores       </pre>
+
+    <pre *ngSwitchCase="'comentarios'">- Comentar el codigo es sumamente util para determinar los segementos que necesitan correciones </pre>
+    <pre *ngSwitchCase="'comentarios'">- La mayoria de IDEs admiten comentarios con etiquetas como:  </pre>
+    <pre *ngSwitchCase="'comentarios'"> - TODO -> lugares que se pueden mejorar, ya sea legilibilidad, complejidad, etc.. </pre>
+    <pre *ngSwitchCase="'comentarios'"> - FIXME -> porción de codigo que falla en circuntancias especificas y debe ser revisada </pre>
+    <pre *ngSwitchCase="'comentarios'"> - NOTE -> funcionamiento interno ó posibles problemas no documentadas </pre>
+    <pre *ngSwitchCase="'comentarios'"> - KLUDGE -> codigo ineficiente, complejo ó insondable </pre>
 
     <pre *ngSwitchCase="'cuandorefactorizar'">- Cuando se inicia a duplicar codigo, eventualmente sera necesario refactorizarlo</pre>
     <pre *ngSwitchCase="'cuandorefactorizar'">- Cuando se empieza se arregla un error es una excelente oportunidad para hacerlo</pre>
