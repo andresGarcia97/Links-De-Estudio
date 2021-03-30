@@ -22,6 +22,7 @@ import { RequisitosComponent } from './components/requisitos/requisitos.componen
 import { PruebasComponent } from './components/pruebas/pruebas.component';
 import { GitComponent } from './components/git/git.component';
 import { WebComponent } from './components/web/web.component';
+import { ConocimientosEmpiricosComponent } from './components/conocimientos-empiricos/conocimientos-empiricos.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { WebComponent } from './components/web/web.component';
     RequisitosComponent,
     PruebasComponent,
     GitComponent,
-    WebComponent
+    WebComponent,
+    ConocimientosEmpiricosComponent
   ],
   imports: [
     BrowserModule

@@ -4,6 +4,7 @@ import { map } from 'rxjs/operators';
 import { ArquitecturasComponent } from './components/arquitecturas/arquitecturas.component';
 import { BuenasPracticasComponent } from './components/buenas-practicas/buenas-practicas.component';
 import { CompilacionComponent } from './components/compilacion/compilacion.component';
+import { ConocimientosEmpiricosComponent } from './components/conocimientos-empiricos/conocimientos-empiricos.component';
 import { EstrategiasDesarrolloComponent } from './components/estrategias-desarrollo/estrategias-desarrollo.component';
 import { FrameworksComponent } from './components/frameworks/frameworks.component';
 import { GitComponent } from './components/git/git.component';
@@ -60,7 +61,9 @@ export class AppComponent {
     // 12 - 15
     HistoriaUsuarioComponent, VersionamientoComponent, EstrategiasDesarrolloComponent, UmlComponent,
     // 16 - 19
-    RequisitosComponent, PruebasComponent, GitComponent, WebComponent];
+    RequisitosComponent, PruebasComponent, GitComponent, WebComponent,
+    // 20 - 23
+    ConocimientosEmpiricosComponent];
 
   constructor(private componentFactoryResolver: ComponentFactoryResolver) { }
 
