@@ -11,6 +11,36 @@
       <span>SQL</span>
     </div>
 
+    <div class="card card-small" (click)="linkReferencia('dbms','https://www.astera.com/es/type/blog/database-management-software/')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>DBMS</span>
+    </div>
+
+    <div class="card card-small" (click)="linkReferencia('crud','https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/crud-las-principales-operaciones-de-bases-de-datos/')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>CRUD</span>
+    </div>
+
+    <div class="card card-small"
+      (click)="linkReferencia('dl','https://platzi.com/blog/que-es-ddl-dml-dcl-y-tcl-integridad-referencial/')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>DDL, DML, DCL, TCL</span>
+    </div>
+
+    <div class="card card-small"
+      (click)="linkReferencia('integridad','https://platzi.com/blog/que-es-ddl-dml-dcl-y-tcl-integridad-referencial/')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Integridad Referencial </span>
+    </div>
+
     <div class="card card-small"
       (click)="linkReferencia('erd','https://www.lucidchart.com/pages/es/que-es-un-diagrama-entidad-relacion')"
       tabindex="0">
@@ -60,6 +90,62 @@
     <pre *ngSwitchCase="'sql'">- Las tablas estan compuestas de columnas y registros con información de un tipo en especifico </pre>
     <pre *ngSwitchCase="'sql'">- Toda tabla deberia tener una clave primaria, para mejorar la indexación de contenido</pre>
     <pre *ngSwitchCase="'sql'">- La información deberia estar normalizada para evitar valores duplicados</pre>
+
+    <pre *ngSwitchCase="'dbms'"> Software de Gestion de Bases de Datos </pre>
+    <pre *ngSwitchCase="'dbms'">- Se encargan de almacenar, administrar, manipular y resguardar los datos </pre>
+    <pre *ngSwitchCase="'dbms'"></pre>
+    <pre *ngSwitchCase="'dbms'">- Las BD guardan diferentes tipos de datos como: </pre>
+    <pre *ngSwitchCase="'dbms'"> - texto, numeros, binarios, temporales, documentos, imagenes, geograficos, etc... </pre>
+    <pre *ngSwitchCase="'dbms'"></pre>
+    <pre *ngSwitchCase="'dbms'">- Un buen DBMS deberia tener las siguientes caracteristicas: </pre>
+    <pre *ngSwitchCase="'dbms'"> - Reducción de la redundancia -> Los duplicados en las BD se reducen al tener un unico lugar donde almacenar los datos </pre>
+    <pre *ngSwitchCase="'dbms'"> - Mantenimiento -> tener todos los datos en solo lugar permite que se administren con más eficiencia </pre>
+    <pre *ngSwitchCase="'dbms'"> - Mantenimiento -> tener todos los datos en solo lugar permite que se administren con más eficiencia </pre>
+    <pre *ngSwitchCase="'dbms'"> - Seguridad -> define quien y con que privilegios puede acceder a la informacón </pre>
+    <pre *ngSwitchCase="'dbms'"> - Consistencia -> se maneja un estandar para todos los datos de todas las BD </pre>
+    <pre *ngSwitchCase="'dbms'"> - MultiUsuario -> el acceso concurrente de varios usuarios es un tema comun para las BD </pre>
+
+    <pre *ngSwitchCase="'crud'">- CRUD -> Create, Read, Update, Delete </pre>
+    <pre *ngSwitchCase="'crud'">- Son las 4 operaciones basicas a la hora de gestionar los datos de una BD </pre>
+    <pre *ngSwitchCase="'crud'">- No solo es aplicable para SQL, tambien tiene su equivalencia en HTTP </pre>
+    <pre *ngSwitchCase="'crud'">- La mayoria de frameworks tienen estos metodos ya implementados y listos para consumirse </pre>
+    <pre *ngSwitchCase="'crud'"></pre>
+    <pre *ngSwitchCase="'crud'">  Operación      SQL          HTTP, Restful     </pre>
+    <pre *ngSwitchCase="'crud'">  Create        INSERT        POST              </pre>
+    <pre *ngSwitchCase="'crud'">  Read          SELECT        GET, HEAD         </pre>
+    <pre *ngSwitchCase="'crud'">  Update        UPDATE        PUT, PATCH        </pre>
+    <pre *ngSwitchCase="'crud'">  Delete        DELETE        DELETE            </pre>
+
+    <pre *ngSwitchCase="'dl'">- DDL -> Lenguaje de Definición de Datos </pre>
+    <pre *ngSwitchCase="'dl'">- Permite Crear y Modificar la estructura de la BD </pre>
+    <pre *ngSwitchCase="'dl'"> - CREATE -> creación de campos, tablas e indices </pre>
+    <pre *ngSwitchCase="'dl'"> - ALTER -> modificacion de tablas ó sus campos </pre>
+    <pre *ngSwitchCase="'dl'"> - DROP -> eliminación de tablas e indices </pre>
+    <pre *ngSwitchCase="'dl'"> - TRUNCATE -> elimina los registros de una tabla </pre>
+    <pre *ngSwitchCase="'dl'"> - RENAME -> renombra objetos </pre>
+    <pre *ngSwitchCase="'dl'"></pre>
+    <pre *ngSwitchCase="'dl'">- DML -> Lenguaje de Manipulación de Datos </pre>
+    <pre *ngSwitchCase="'dl'">- Permite ejecutar las operaciones de un CRUD en los datos de la BD </pre>
+    <pre *ngSwitchCase="'dl'"> - SELECT -> consulta una tabla de la BD de manera general ó con filtros </pre>
+    <pre *ngSwitchCase="'dl'"> - INSERT -> inserción de datos en una tabla </pre>
+    <pre *ngSwitchCase="'dl'"> - UPDATE -> actualización de campos ó registros que cumplan los criterios especificados </pre>
+    <pre *ngSwitchCase="'dl'"> - DELETE -> elimina registros de una tabla </pre>
+    <pre *ngSwitchCase="'dl'"></pre>
+    <pre *ngSwitchCase="'dl'">- DCL -> Lenguaje de Control de Datos </pre>
+    <pre *ngSwitchCase="'dl'"> - Permite crear roles, permisos y conceder/denegar el acceso a los datos </pre>
+    <pre *ngSwitchCase="'dl'"> - GRANT -> otorga privilegios de acceso a los usuarios </pre>
+    <pre *ngSwitchCase="'dl'"> - REVOKE -> retira los privilegios previamente otorgados </pre>
+    <pre *ngSwitchCase="'dl'"></pre>
+    <pre *ngSwitchCase="'dl'">- TCL -> Lenguaje de Control de Transacciones </pre>
+    <pre *ngSwitchCase="'dl'"> - COMMIT -> guarda los cambios realizados </pre>
+    <pre *ngSwitchCase="'dl'"> - ROLLBACK -> deshace el ultimo cambio hecho </pre>
+
+    <pre *ngSwitchCase="'integridad'">- Integridad Referencial </pre>
+    <pre *ngSwitchCase="'integridad'"> - Son las reglas que garantizan que la información que la información sea inmutable hasta que se decida lo contrario </pre>
+    <pre *ngSwitchCase="'integridad'"> - Tambien protege los datos de posibles errores a la hora de modificarlos </pre>
+    <pre *ngSwitchCase="'integridad'"> - Esta es una de las principales diferencias entre las BD relacionales y NO relacionales </pre>
+    <pre *ngSwitchCase="'integridad'"> - Las BD relacionales cumplen esto mediante el esquema ACID </pre>
+    <pre *ngSwitchCase="'integridad'"> - Las DB NO relacionales no garantizan el 100% de la integridad de los datos, aunque la mayoria son muy fiables </pre>
 
     <pre *ngSwitchCase="'erd'">- Demuestra como las entidades (generalmente de una BD) se relacionan entre si </pre>
     <pre *ngSwitchCase="'erd'">- Es una manera de desarrollar BD relacionales de acuerdo al modelo de negocio</pre>

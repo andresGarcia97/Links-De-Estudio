@@ -68,7 +68,7 @@ svg.material-icons:not(:last-child) {
 }
 
 .card svg.material-icons path {
-  fill: #888;
+  fill: black
 }
 
 .card-container {
@@ -126,15 +126,20 @@ svg.material-icons:not(:last-child) {
   position: relative;
 }
 
+.card.highlight-card:hover {
+  cursor: pointer;
+  transform: translateY(4px);
+}
+
 .card.card.highlight-card span {
   margin-left: 60px;
 }
 
 svg#rocket {
-  width: 80px;
+  width: 70px;
   position: absolute;
   left: -10px;
-  top: -24px;
+  top: -26px;
 }
 
 a,
@@ -190,10 +195,20 @@ a:hover {
 
 footer {
   margin-top: 16px;
-  margin-bottom: 8px;
-  display: flex;
+  margin-bottom: 0px;
   align-items: center;
+  align-content: center;
   line-height: 20px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  font-weight: 600;
 }
 
 footer a {
@@ -235,8 +250,12 @@ svg#clouds {
   width: 1920px;
 }
 
+@media screen and (min-width: 641px) and (max-width: 920px) {
+  .terminal {
+    max-width: 620px;
+  }
+}
 
-/* Responsive Styles */
 @media screen and (max-width: 640px) {
 
   .card.highlight-card span {
@@ -252,16 +271,20 @@ svg#clouds {
     max-width: 310px;
   }
 
-  svg#rocket-smoke {
-    right: 120px;
-    transform: rotate(-5deg);
+  svg#rocket {
+    width: 60px;
+    position: absolute;
+    left: -14px;
+    top: -30px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  svg#rocket-smoke {
-    display: none;
-    visibility: hidden;
+  svg#rocket {
+    width: 45px;
+    position: absolute;
+    left: -16px;
+    top: -31px;
   }
 }
 
