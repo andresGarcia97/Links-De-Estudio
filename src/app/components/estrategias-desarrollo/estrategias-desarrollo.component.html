@@ -35,6 +35,14 @@
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>ATDD</span>
     </div>
+  
+    <div class="card card-small"
+      (click)="linkReferencia('analisis','https://www.ubjonline.mx/en-que-consisten-los-analisis-top-down-y-bottom-up/')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Top & Up</span>
+    </div>
     
   </div>
 
@@ -66,6 +74,14 @@
     <pre *ngSwitchCase="'atdd'">  - Primero se escriben las pruebas, despues se crean los casos de aceptación Y de ultimas se crea el codigo para que estos funcionen </pre>
     <pre *ngSwitchCase="'atdd'">  - Las pruebas se automatizan, por lo que a la larga el desarrollo se volvera más agil </pre>
     <pre *ngSwitchCase="'atdd'">  - Definir las Historias de Usuario y sus casos de aceptación es fundamental para evitar perder tiempo </pre>
+
+    <pre *ngSwitchCase="'analisis'">- Son enfoques para el analisis y toma de decisiones, originarios en la informatica de los años 70</pre>
+    <pre *ngSwitchCase="'analisis'"></pre>
+    <pre *ngSwitchCase="'analisis'">- Bottom-Up</pre>
+    <pre *ngSwitchCase="'analisis'"> - Nace de lo particular para concluir en lo general </pre>
+    <pre *ngSwitchCase="'analisis'"></pre>
+    <pre *ngSwitchCase="'analisis'">- Top-Down</pre>
+    <pre *ngSwitchCase="'analisis'"> - Nace de lo general hasta concluir en lo particular </pre>
 
   </div>
 

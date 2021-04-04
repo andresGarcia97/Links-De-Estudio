@@ -7,6 +7,7 @@ import { CompilacionComponent } from './components/compilacion/compilacion.compo
 import { ConocimientosEmpiricosComponent } from './components/conocimientos-empiricos/conocimientos-empiricos.component';
 import { EstrategiasDesarrolloComponent } from './components/estrategias-desarrollo/estrategias-desarrollo.component';
 import { FrameworksComponent } from './components/frameworks/frameworks.component';
+import { FuentesComponent } from './components/fuentes/fuentes.component';
 import { GitComponent } from './components/git/git.component';
 import { HistoriaUsuarioComponent } from './components/historia-usuario/historia-usuario.component';
 import { MalasPracticasComponent } from './components/malas-practicas/malas-practicas.component';
@@ -63,7 +64,7 @@ export class AppComponent {
     // 16 - 19
     RequisitosComponent, PruebasComponent, GitComponent, WebComponent,
     // 20 - 23
-    ConocimientosEmpiricosComponent];
+    ConocimientosEmpiricosComponent, FuentesComponent];
 
   constructor(private componentFactoryResolver: ComponentFactoryResolver) { }
 

@@ -18,6 +18,20 @@
         <span>Leyes de Lehman</span>
       </div>
 
+      <div class="card card-small" (click)="linkReferencia('conway','https://www.javiergarzas.com/2015/06/conway.html')"
+        tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+        <span>Ley de Conway</span>
+      </div>
+
+      <div class="card card-small" (click)="linkReferencia('murphy','https://www.caracteristicas.co/ley-de-murphy/')"
+        tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+        <span>Ley de Murphy</span>
+      </div>
+
     </div>
   
     <div class="terminal" [ngSwitch]="selection" #terminal>
@@ -50,6 +64,21 @@
       <pre *ngSwitchCase="'lehman'">- Ley de la conservación -> un crecimiento desmesurado hara que el conociemiento basico sea insuficiente para seguir creciendo </pre>
       <pre *ngSwitchCase="'lehman'">- Ley de crecimiento continuo -> las funcionalidades deben seguir mejorando para mantener a los clientes satisfechos </pre>
       <pre *ngSwitchCase="'lehman'">- Ley de retroalimentación -> la comunicación con el cliente y con las personas conocedoras es fundamental </pre>
+
+      <pre *ngSwitchCase="'conway'">- El impacto de la comunicación en tu empresa </pre>
+      <pre *ngSwitchCase="'conway'">- “Cualquier organización que diseñe un sistema producirá un diseño que copia la estructura de comunicación de dicha organización.”</pre>
+      <pre *ngSwitchCase="'conway'">- El software es una habilidad intelectual humana, por lo que la comunicación es fundamental para la integración </pre>
+      <pre *ngSwitchCase="'conway'">- La manera de trabajar de tu empresa se vera reflejada en tu software, es el significado principal de esta frase </pre>
+      <pre *ngSwitchCase="'conway'"> - Equipos pequeños, crearan soluciones pequeñas, altamente modulares </pre>
+      <pre *ngSwitchCase="'conway'"> - Personas egoistas, generan problemas de integración de componentes y falencias al compartir su conocmiento </pre>
+      <pre *ngSwitchCase="'conway'"> - Empresas sin organización, generaran codigo complejo, pero funcional de manera rapida, que se convertira en una bola de nieve </pre>
+      <pre *ngSwitchCase="'conway'"> - Empresas orgullosas, que comparten su codigo y sus buenas practicas </pre>
+      <pre *ngSwitchCase="'conway'"> - Estos y más ejemplos hay, como empresas y personas halla </pre>
+
+      <pre *ngSwitchCase="'murphy'">Si algo malo puede pasar, pasara</pre>
+      <pre *ngSwitchCase="'murphy'">Se inspira en el concepto fisico de la entropia, el cual dicta que todo sistema fluye del orden al desorden </pre>
+      <pre *ngSwitchCase="'murphy'">Puede ser util para ayudar a prevenir el desastre, si se usa para tomar precauciones </pre>
+      <pre *ngSwitchCase="'murphy'">No hay ninguna demostración matematica que la niegue ó la acepta, solo es un conocimiento empirico que nade de lo cotidiano </pre>
 
     </div>
   
