@@ -111,7 +111,7 @@
     <pre *ngSwitchCase="'introduccion'">- Cualquier cambio puede ser deshecho, incluso despues de que haya sido confirmado </pre>
 
     <pre *ngSwitchCase="'repositorios'">- Git trabaja principalmente de manera local, pero es necesario sincronizar los cambios hechos con el repositorio central </pre>
-    <pre *ngSwitchCase="'repositorios'">- Los cambios pueden subirse mediante el comando push o bajarse del repositorio mediante un pull o un fetch </pre>
+    <pre *ngSwitchCase="'repositorios'">- Los cambios pueden subirse mediante un push o bajarse del repositorio mediante un pull o un fetch </pre>
     <pre *ngSwitchCase="'repositorios'">- Para trabajar con remotos es necesario contar con un usuario y contraseña configurados para la trazabilidad de los cambios </pre>
 
     <pre *ngSwitchCase="'ramas'">- Son versiones especificas de los cambios que se hayan realizado </pre>
@@ -143,7 +143,8 @@
     <pre *ngSwitchCase="'merge'">- Las ramas se pueden desfusionar si se hay errores, ó abortar la fusión si esta se vuelve muy problematica mediante un revert o un abort segun el caso </pre>
     <pre *ngSwitchCase="'merge'">- Rerere -> esta opción oculta permite dotar a memoria a Git para que esta resuelva conflictos de manera automatica </pre>
 
-    <pre *ngSwitchCase="'migracion'">- Permite personalizarse en ciertos aspectos como añadir colores a al usar sus comandos y manejar los espacios en blanco que suelen ser un problema comun </pre>
+    <pre *ngSwitchCase="'migracion'">- Permite personalizarse en ciertos aspectos como añadir colores al usar sus comandos</pre>
+    <pre *ngSwitchCase="'migracion'">- Manejar los espacios en blanco que suelen ser un problema comun </pre>
     <pre *ngSwitchCase="'migracion'">- Git permite la migración desde diferentes sistemas de versionamiento anteriores ó que han caido en el deshuso como: </pre>
     <pre *ngSwitchCase="'migracion'">- Mercurial, Subversion, Perforce, TFS, </pre>
     <pre *ngSwitchCase="'migracion'">- Tambien es posible eliminar archivos totalmente del arbol de cambios, aun asi no es recomendable ya que el historial se podria ver afectado </pre>
@@ -171,6 +172,7 @@
     <pre *ngSwitchCase="'remotos'">  - Los 3 cuentan con interfaces graficas que permiten la rapida revisión y creación de ramas, pulls, merges, logs y forks </pre>
 
     <pre *ngSwitchCase="'practicas'">- Los commits son sumamente importantes en git, por lo que realizarlos de manera correcta puede aportar metadata al proyecto </pre>
+    <pre *ngSwitchCase="'practicas'"></pre>
     <pre *ngSwitchCase="'practicas'"> - Especificar el tipo del commit, que puede ser de los siguientes tipos: </pre>
     <pre *ngSwitchCase="'practicas'">  - feat -> nueva caracteristica </pre>
     <pre *ngSwitchCase="'practicas'">  - fix -> solución de problemas </pre>
@@ -179,6 +181,7 @@
     <pre *ngSwitchCase="'practicas'">  - refactor -> refactorización de codigo </pre>
     <pre *ngSwitchCase="'practicas'">  - test -> se añaden cambios en las pruebas, como refactor, nuevas pruebas </pre>
     <pre *ngSwitchCase="'practicas'">  - chore -> actualización del build, cambios en los paquetes, sin cambios en el codigo </pre>
+    <pre *ngSwitchCase="'practicas'"></pre>
     <pre *ngSwitchCase="'practicas'"> - Tener en cuenta las 3 partes del commit, subject, body, footer</pre>
     <pre *ngSwitchCase="'practicas'">  - subject -> no más de 50 caracteres y ser concisos, tambien se recomienda hacerlo en ingles </pre>
     <pre *ngSwitchCase="'practicas'">  - body -> no más de 72 caracteres, es una explicación más detallada del porque del commit </pre>

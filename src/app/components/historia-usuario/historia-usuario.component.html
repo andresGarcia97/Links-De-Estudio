@@ -35,14 +35,14 @@
         <span>INVEST</span>
       </div>
 
-      <div class="card card-small"
+    <div class="card card-small"
       (click)="linkReferencia('agil','https://agilemanifesto.org/iso/es/manifesto.html')"
       tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Manifiesto Agil</span>
     </div>
-  
+
     </div>
   
     <div class="terminal" [ngSwitch]="selection" #terminal>
@@ -60,9 +60,11 @@
       <pre *ngSwitchCase="'partes'">- Titulo -> que debe ser una forma concisa y clara de lo que se busca </pre>
       <pre *ngSwitchCase="'partes'">- Titulo -> tambien puede servir como identificador para cada HU </pre>
       <pre *ngSwitchCase="'partes'">- Titulo -> <strong>COMO</strong> Rol <strong>QUIERO</strong> Objetivo <strong>PARA</strong> motivación </pre>
+      <pre *ngSwitchCase="'partes'"></pre>
       <pre *ngSwitchCase="'partes'">- Descripción -> puede contener una descripción más detallada de lo que se espera </pre>
       <pre *ngSwitchCase="'partes'">- Descripción -> da el contexto donde se desarrollara la HU </pre>
       <pre *ngSwitchCase="'partes'">- Descripción -> pueden incluir imagenes, diseños, prototipos, etc... </pre>
+      <pre *ngSwitchCase="'partes'"></pre>
       <pre *ngSwitchCase="'partes'">- Criterios de Aceptación -> son los elementos que se deben cumplir para dar a la HU como terminada </pre>
       <pre *ngSwitchCase="'partes'">- Criterios de Aceptación -> no hay punto medio, esta o no esta completa </pre>
       <pre *ngSwitchCase="'partes'">- Criterios de Aceptación -> evitar la ambiguedad lo más que se pueda </pre>

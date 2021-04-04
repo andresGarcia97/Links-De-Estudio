@@ -16,7 +16,7 @@
       tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>Alto & Bajo nivel</span>
+      <span>Niveles</span>
     </div>
 
     <div class="card card-small"
@@ -46,8 +46,10 @@
 
     <pre *ngSwitchCase="'nivel'">- Bajo nivel  -> son lenguajes de alto rendimiento dependientes de la maquina donde se ejecute </pre>
     <pre *ngSwitchCase="'nivel'">- Bajo nivel  -> Es un lenguaje que esta más cercano al lenguaje maquina, por lo que son dificiles de manejar </pre>
+    <pre *ngSwitchCase="'nivel'"></pre>
     <pre *ngSwitchCase="'nivel'">- Medio nivel -> Pocos lenguajes caen en esta categoria, ya que pueden </pre>
     <pre *ngSwitchCase="'nivel'">- Medio nivel -> Acceder al sistema pero tambien puede funcionar como lenguaje de alto nivel </pre>
+    <pre *ngSwitchCase="'nivel'"></pre>
     <pre *ngSwitchCase="'nivel'">- Alto nivel  -> Son lenguajes más cercanos al entendimiento humano, además de ser más dinamicos </pre>
     <pre *ngSwitchCase="'nivel'">- Alto nivel  -> Son independientes de las maquinas donde se ejecuten, a traves de un traductor como intermediario </pre>
 
@@ -55,6 +57,7 @@
     <pre *ngSwitchCase="'interprete'">- Compilados -> esto hace que la optimización sea mayor, pero la compatibilidad no </pre>
     <pre *ngSwitchCase="'interprete'">- Compilados -> los archivos ejecutables se realizan previamente, por lo que la ejecución es inmediata </pre>
     <pre *ngSwitchCase="'interprete'">- Compilados -> al estar enlazados con el SO y el Host, estos se pueden afectar mutuamente </pre>
+    <pre *ngSwitchCase="'interprete'"></pre>
     <pre *ngSwitchCase="'interprete'">- Interpretados -> estos deben tambien deben ser traducidos, pero lo hacen a un intermediario </pre>
     <pre *ngSwitchCase="'interprete'">- Interpretados -> este intermediario se encarga de ejecutar el programa para que el sistema lo entienda </pre>
     <pre *ngSwitchCase="'interprete'">- Interpretados -> debido a esto son multiplataforma, y se hace a pedido, (just in Time) </pre>
@@ -63,6 +66,7 @@
     <pre *ngSwitchCase="'transpilacion'">- Estos tambien traducen codigo de un lenguaje a otro, pero de igual nivel </pre>
     <pre *ngSwitchCase="'transpilacion'">- Uno de los ejemplos más relevantes es paso de Typescript a Javascript </pre>
     <pre *ngSwitchCase="'transpilacion'">- Todo transpilador puede ser considerado un compilador, pero no al contrario </pre>
+    <pre *ngSwitchCase="'transpilacion'">- Generalmente toda la sintaxis del lenguaje destino es compatible con la de origen, pero no al contrario </pre>
 
   </div>
 

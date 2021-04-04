@@ -95,10 +95,13 @@
       <pre *ngSwitchCase="'manifiesto'"> - Responsabilidad del equipo <strong> SOBRE </strong> la responsabilidad del tester </pre>
   
       <pre *ngSwitchCase="'tipos'">- Tipos de pruebas </pre>
+      <pre *ngSwitchCase="'tipos'"></pre>
       <pre *ngSwitchCase="'tipos'"> - Funcionales -> prueban las funcionalidades del sistema y suelen ser de caja negra, al validar el QUE más que el COMO </pre>
       <pre *ngSwitchCase="'tipos'"> - No Funcionales -> estas validan cosas como carga, estres, rendimiento, confiabilidad, etc... </pre>
+      <pre *ngSwitchCase="'tipos'"></pre>
       <pre *ngSwitchCase="'tipos'"> - Estructurales -> indagan la estructura interna del programa y sus relaciones, aca se pueden incluir las pruebas unitarias y de integración </pre>
       <pre *ngSwitchCase="'tipos'"> - Estructurales -> estan son de tipo caja blanca, ya que es necesario conocer todo el sistema y como funciona para que sean bien planificadas </pre>
+      <pre *ngSwitchCase="'tipos'"></pre>
       <pre *ngSwitchCase="'tipos'"> - Regresión -> basicamente es volver a correr todas la pruebas despues de que se cambien componentes ó se corrija un problema </pre>
       <pre *ngSwitchCase="'tipos'"> - Regresión -> dependiendo de la cantidad de pruebas que hayan y de su complejidad puede ser una operación bastante demorada </pre>
 
@@ -118,11 +121,11 @@
       <pre *ngSwitchCase="'first'"> - Timely -> toda prueba debe ser oportuna y debe tener una razon de ser, si no se pueden justificar, estas habran sido una perdida de tiempo </pre>
   
       <pre *ngSwitchCase="'sutydoc'"> - System Under Test </pre>
-      <pre *ngSwitchCase="'sutydoc'">  - Es aquello que se esta probando ya sea una clase, un componente, una funcionalidad </pre>
+      <pre *ngSwitchCase="'sutydoc'">   - Es aquello que se esta probando ya sea una clase, un componente, una funcionalidad </pre>
       <pre *ngSwitchCase="'sutydoc'"> - Depend On Component </pre>
-      <pre *ngSwitchCase="'sutydoc'">  - Es lo que necesita cada SUT para poder funcionar, y que la prueba pueda ser llevada a cabo </pre>
+      <pre *ngSwitchCase="'sutydoc'">   - Es lo que necesita cada SUT para poder funcionar, y que la prueba pueda ser llevada a cabo </pre>
       <pre *ngSwitchCase="'sutydoc'"> - Organización </pre>
-      <pre *ngSwitchCase="'sutydoc'">  - Generalmente se organizan mediante una tabla que contiene el tipo de prueba, los SUTs y los DOCs </pre>
+      <pre *ngSwitchCase="'sutydoc'">   - Generalmente se organizan mediante una tabla que contiene el tipo de prueba, los SUTs y los DOCs </pre>
   
       <pre *ngSwitchCase="'dobles'">- Son objetos que se comportan de manera igual que el elemento que copian, pero son más simples de manejar </pre>
       <pre *ngSwitchCase="'dobles'">  - Dummy -> Es un objeto con valore concretos que solo sirve para que se cumplan ciertas precondiciones </pre>
@@ -143,9 +146,9 @@
       <pre *ngSwitchCase="'nombramiento'">- El diablo esta en los detalles, saber nombrar los elementos que intervienen ayudara al analisis </pre>
       <pre *ngSwitchCase="'nombramiento'"> - Clases -> deberian tener un indicador que las agrupe, como: (nombreClase)Test </pre>
       <pre *ngSwitchCase="'nombramiento'"> - Metodos -> hay varias convenciones, pero generalmente deben incluir:  </pre>
-      <pre *ngSwitchCase="'nombramiento'">  - nombre del metodo, estado a probar, comportamiento esperado; tambien se pueden incluir las palabras de given, when, should, test  </pre>
+      <pre *ngSwitchCase="'nombramiento'">   - nombre del metodo, estado a probar, comportamiento esperado; tambien se pueden incluir las palabras de given, when, should, test  </pre>
       <pre *ngSwitchCase="'nombramiento'"> - Variables -> deben describir el proposito de cada variable, no deben ser resumidas ni genericas, algunos ejemplos pueden ser: </pre>
-      <pre *ngSwitchCase="'nombramiento'">  - target, expected, actual, valid, invalid, Object(Mock)</pre>
+      <pre *ngSwitchCase="'nombramiento'">   - target, expected, actual, valid, invalid, Object(Mock)</pre>
 
     </div>
   

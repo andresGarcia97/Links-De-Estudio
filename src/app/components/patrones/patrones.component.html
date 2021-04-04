@@ -55,80 +55,56 @@
     <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
 
 
-    <pre
-      *ngSwitchCase="'definicionPatrones'">- Son soluciones especificas a problemas comunes y los más conocidos son: </pre>
-    <pre
-      *ngSwitchCase="'definicionPatrones'">   GOF -> que se dividen en 3, creacionales, estructurales y de comportamiento </pre>
-    <pre
-      *ngSwitchCase="'definicionPatrones'">   GRASP -> Representan los principios básicos de la asignación de responsabilidades a objetos, en forma de patrones </pre>
+    <pre *ngSwitchCase="'definicionPatrones'">- Son soluciones especificas a problemas comunes y los más conocidos son: </pre>
+    <pre *ngSwitchCase="'definicionPatrones'">   GOF -> que se dividen en 3, creacionales, estructurales y de comportamiento </pre>
+    <pre *ngSwitchCase="'definicionPatrones'">   GRASP -> Representan los principios básicos de la asignación de responsabilidades a objetos, en forma de patrones </pre>
 
-    <pre
-      *ngSwitchCase="'gof'">- Creacionales -> Se usan para la creación de objetos ya se ocultandalo o simplificandolo </pre>
-    <pre
-      *ngSwitchCase="'gof'">- Estructurales -> Separan la interfaz de su implementación por medio de la abstracción </pre>
-    <pre
-      *ngSwitchCase="'gof'">- Comportamiento -> Definen la comunicación entre objetos más que a los propios objetos </pre>
+    <pre *ngSwitchCase="'gof'">- Creacionales -> Se usan para la creación de objetos ya se ocultando o simplificando la creación de estos </pre>
+    <pre *ngSwitchCase="'gof'">- Estructurales -> Separan la interfaz de su implementación por medio de la abstracción </pre>
+    <pre *ngSwitchCase="'gof'">- Comportamiento -> Definen la comunicación entre objetos, y la independencia de esta de los objetos </pre>
 
     <pre *ngSwitchCase="'desglosegof'">- Creacionales </pre>
     <pre *ngSwitchCase="'desglosegof'">  -Singleton -> Restringe la instancia de la clase a un solo Objeto </pre>
-    <pre
-      *ngSwitchCase="'desglosegof'">  -MVC -> plantea la separación en 3 capas, cada una con una función especifica </pre>
-    <pre
-      *ngSwitchCase="'desglosegof'">  -Abstract factory -> Permite crear familias de objetos relacionados sin especificarlas directamente </pre>
-    <pre
-      *ngSwitchCase="'desglosegof'">  -Builder -> Permite crear objetos bajo demanda, y solo con las propiedades necesitadas</pre>
+    <pre *ngSwitchCase="'desglosegof'">  -MVC -> plantea la separación en 3 capas, cada una con una función especifica </pre>
+    <pre *ngSwitchCase="'desglosegof'">  -Abstract factory -> Permite crear familias de objetos relacionados sin especificarlas directamente </pre>
+    <pre *ngSwitchCase="'desglosegof'">  -Builder -> Permite crear objetos bajo demanda, y solo con las propiedades especificadas </pre>
+    <pre *ngSwitchCase="'desglosegof'"></pre>
     <pre *ngSwitchCase="'desglosegof'">- Estructurales </pre>
-    <pre *ngSwitchCase="'desglosegof'">  -Adapter -> Permite la comunicación entre objetos de tipos diferentes </pre>
-    <pre
-      *ngSwitchCase="'desglosegof'">  -Decorator -> Añade funcionalidades extra añadiendo objetos ya las tienen </pre>
-    <pre
-      *ngSwitchCase="'desglosegof'">  -Facade -> Permite acceder facilmente a muchas funciones, muy usado en librerias y frameworks </pre>
-    <pre
-      *ngSwitchCase="'desglosegof'">  -Bridge -> Permite dividir clases muy relacionadas en otras más pequeñas e independientes</pre>
+    <pre *ngSwitchCase="'desglosegof'">  -Adapter -> Permite la comunicación entre objetos de tipos diferentes, independientemente del tipo de cada objeto</pre>
+    <pre *ngSwitchCase="'desglosegof'">  -Decorator -> Añade funcionalidades extra añadiendo clases que ya las tienen, sin afectar al codigo existente </pre>
+    <pre *ngSwitchCase="'desglosegof'">  -Facade -> Permite acceder facilmente a muchas funciones, muy usado en librerias y frameworks </pre>
+    <pre *ngSwitchCase="'desglosegof'">  -Bridge -> Permite dividir clases muy relacionadas en otras más pequeñas e independientes </pre>
+    <pre *ngSwitchCase="'desglosegof'"></pre>
     <pre *ngSwitchCase="'desglosegof'">- Comportamiento </pre>
-    <pre *ngSwitchCase="'desglosegof'">  -Iterator -> Permite recorrer los elementos de una colección</pre>
-    <pre
-      *ngSwitchCase="'desglosegof'">  -Mediador -> La comunicación entre objetos se da solo mediante un elemento central</pre>
-    <pre
-      *ngSwitchCase="'desglosegof'">  -Observer -> Permite generar subscripciones y que todos los oyentes se enteren de los cambios </pre>
-    <pre
-      *ngSwitchCase="'desglosegof'">  -Estrategia -> Permite que una clase escoja la mejor implementación de acuerdo al caso</pre>
+    <pre *ngSwitchCase="'desglosegof'">  -Iterator -> Permite recorrer los elementos de una colección </pre>
+    <pre *ngSwitchCase="'desglosegof'">  -Mediador -> La comunicación entre objetos se da solo mediante un elemento central </pre>
+    <pre *ngSwitchCase="'desglosegof'">  -Observer -> Permite generar subscripciones y que todos los oyentes se enteren de los cambios </pre>
+    <pre *ngSwitchCase="'desglosegof'">  -Estrategia -> Permite que una clase escoja la mejor implementación de acuerdo al caso</pre>
 
     <pre *ngSwitchCase="'grasp'">- Intentan hacer que la Asignación de responsabilidades sea lo más optima posible</pre>
-    <pre
-      *ngSwitchCase="'grasp'">- Alta cohesion mediante la refactorización, y bajo acoplamiento al no abusar de la herencia </pre>
+    <pre *ngSwitchCase="'grasp'">- Alta cohesion mediante la refactorización, y bajo acoplamiento al no abusar de la herencia </pre>
     <pre *ngSwitchCase="'grasp'">- Cada componente tiene una función especifica en la que es experto</pre>
-    <pre
-      *ngSwitchCase="'grasp'">- Conocer las peculiaridades de cada lenguaje como ciclos de vida e integración con el SO </pre>
-    <pre
-      *ngSwitchCase="'grasp'">- Darle prioridad al polimorfismo que a las sentencias de control al usarse en los objetos </pre>
-    <pre *ngSwitchCase="'grasp'">- Evitar el uso de variables globales, especialmente en el desarrollo web</pre>
-    <pre
-      *ngSwitchCase="'grasp'">- La creación de factorias y clases intermedias ayudan a la mantenibilidad del código</pre>
+    <pre *ngSwitchCase="'grasp'">- Conocer las peculiaridades de cada lenguaje como ciclos de vida e integración con el SO </pre>
+    <pre *ngSwitchCase="'grasp'">- Darle prioridad al polimorfismo más que a las sentencias de control al usarse en los objetos </pre>
+    <pre *ngSwitchCase="'grasp'">- Evitar el uso de variables globales, especialmente en el desarrollo web </pre>
+    <pre *ngSwitchCase="'grasp'">- La creación de factorias y clases intermedias ayudan a la mantenibilidad del código</pre>
 
     <pre *ngSwitchCase="'dao'">- Son usados para el acceso a los datos (persistencia)</pre>
-    <pre *ngSwitchCase="'dao'">  - DAO -> obliga a una mayor implementación manual a cambio de flexibilidad</pre>
-    <pre
-      *ngSwitchCase="'dao'">  - Active Record -> se gana una mayor independencia de la bd a costa de ceder el control </pre>
+    <pre *ngSwitchCase="'dao'">  - DAO -> obliga a una mayor implementación manual a cambio de flexibilidad </pre>
+    <pre *ngSwitchCase="'dao'">  - Active Record -> se gana una mayor independencia de la bd a costa de ceder el control </pre>
 
-    <pre
-      *ngSwitchCase="'antipatrones'">- Son malas soluciones a problemas comunes que a priori parecen buenas ideas</pre>
-    <pre
-      *ngSwitchCase="'antipatrones'">- Pueden nacer del afan de implementar patrones innecesariamente o mezclarlos de manera indiferente </pre>
-    <pre
-      *ngSwitchCase="'antipatrones'">  -Golden Hammer -> Pretende que todo se solucione de la misma manera o con el mismo lenguaje</pre>
-    <pre
-      *ngSwitchCase="'antipatrones'">  -Lava Flow -> Es la codificación de manera continua, sin un orden alguno, y lleno de redundancias</pre>
-    <pre
-      *ngSwitchCase="'antipatrones'">  -Spaghetti Code -> Aparece cuando se suelen mezclar muchos lenguajes, aumentando la complejidad de la solución </pre>
-    <pre
-      *ngSwitchCase="'antipatrones'">  -God Class -> Sucede cuando todo se soluciona en un solo archivo metodo o clase</pre>
+    <pre *ngSwitchCase="'antipatrones'">- Son malas soluciones a problemas comunes que a priori parecen buena idea</pre>
+    <pre *ngSwitchCase="'antipatrones'">- Pueden nacer del afan de implementar patrones innecesariamente o mezclarlos de manera icorrecta </pre>
+    <pre *ngSwitchCase="'antipatrones'"></pre>
+    <pre *ngSwitchCase="'antipatrones'">  -Golden Hammer -> Pretende que todo se solucione de la misma manera o con el mismo lenguaje</pre>
+    <pre *ngSwitchCase="'antipatrones'">  -Lava Flow -> Es la codificación de manera continua, sin un orden alguno, y lleno de redundancias</pre>
+    <pre *ngSwitchCase="'antipatrones'">  -Spaghetti Code -> Aparece cuando se suelen mezclar muchos lenguajes, aumentando la complejidad de la solución </pre>
+    <pre *ngSwitchCase="'antipatrones'">  -God Class -> Sucede cuando todo se soluciona en un solo archivo metodo o clase</pre>
     <pre *ngSwitchCase="'antipatrones'">  -Poltergeist -> Es la existencia de elementos injustificadamente</pre>
+    <pre *ngSwitchCase="'antipatrones'"></pre>
     <pre *ngSwitchCase="'antipatrones'">- Tambien se pueden aplicar para temas de arquitectura</pre>
-    <pre
-      *ngSwitchCase="'antipatrones'">  -Reinventar la rueda -> Es la implementación de soluciones que ya existen de antemano</pre>
-    <pre
-      *ngSwitchCase="'antipatrones'">  -Casarse con el diablo -> Es la dependencia total de algun elemento sin contingencia alguna </pre>
+    <pre *ngSwitchCase="'antipatrones'">  -Reinventar la rueda -> Es la implementación de soluciones que ya existen de antemano</pre>
+    <pre *ngSwitchCase="'antipatrones'">  -Casarse con el diablo -> Es la dependencia total de algun elemento sin contingencia alguna </pre>
 
   </div>
 
