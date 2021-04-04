@@ -65,6 +65,14 @@
     </div>
 
     <div class="card card-small"
+      (click)="linkReferencia('tipos','https://www.acens.com/wp-content/images/2014/02/bbdd-nosql-wp-acens.pdf')" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Tipos NoSQL</span>
+    </div>
+
+
+    <div class="card card-small"
       (click)="linkReferencia('acid','https://dosideas.com/noticias/base-de-datos/973-acid-en-las-bases-de-datos')"
       tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -172,8 +180,13 @@
     <pre *ngSwitchCase="'nosql'">- Esta falta de estructura hace posible que se pueda guardar cualquier tipo de dato</pre>
     <pre *ngSwitchCase="'nosql'">- El rendimiento es mayor independientemente de la cantidad de datos</pre>
     <pre *ngSwitchCase="'nosql'">- La fiabilidad de los datos no esta garantizada</pre>
-    <pre *ngSwitchCase="'nosql'">- No hay un estandar para las operaciones, cada motor tiene su sintaxis unica y diferente</pre>
-    <pre *ngSwitchCase="'nosql'">- Existen diferentes formas de guardar la información además de las ventajas/desventajas de cada metodo </pre>
+    <pre *ngSwitchCase="'nosql'">- No hay un estandar para las operaciones, cada motor tiene su sintaxis diferente</pre>
+    <pre *ngSwitchCase="'nosql'">- Existen diferentes formas de guardar la información </pre>
+
+    <pre *ngSwitchCase="'tipos'">- Clave-Valor -> cada elemento tiene una llave unica, asociada a un valor </pre>
+    <pre *ngSwitchCase="'tipos'">- Documentos -> la información se guarda en documentos con IDs unicos, y en formatos simples como JSON o XML </pre>
+    <pre *ngSwitchCase="'tipos'">- Grafos -> se basan en nodos, relacionados mediante aristas, es necesario de la teoria de grafos para recorrerlas </pre>
+    <pre *ngSwitchCase="'tipos'">- Objetos -> los datos se manejan mediante Objetos, tal y como en la Programación Orientada a Objetos </pre>
 
     <pre *ngSwitchCase="'acid'">- Son 4 propiedades que garantizan la confiabilidad de las operaciones y consecuentemente en los datos de las BD </pre>
     <pre *ngSwitchCase="'acid'">  - Atomicidad -> todas las operaciones deben ser todo o nada, si una falla la información no debe sufrir cambios </pre>
