@@ -37,8 +37,9 @@
     </div>
 
   </div>
-
-  <div class="terminal" [ngSwitch]="selection" #terminal>
+  
+  <div class="terminal window"></div>
+  <div class="terminal" [ngSwitch]="selection">
 
     <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
     

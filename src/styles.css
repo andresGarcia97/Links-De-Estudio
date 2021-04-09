@@ -1,3 +1,8 @@
+/*
+paleta de colores
+https://coolors.co/dd0031-1976d2-eeeeee-000000-ffba08
+*/
+
 h1,
 h2,
 h3,
@@ -158,10 +163,27 @@ a:hover {
   width: 95%;
   border-radius: 6px;
   padding-top: 16px;
-  margin-top: 8px;
+  padding-bottom: 12px;
   overflow-y: hidden;
   overflow-x: visible;
   background-color: rgb(15, 15, 16);
+}
+
+.window::before {
+  content: "\2022 \2022 \2022";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background: rgb(58, 58, 58);
+  color: #FFBA08;
+  width: 100%;
+  font-size: 3rem;
+  line-height: 4px;
+  text-indent: 4px;
 }
 
 .terminal pre {
@@ -169,6 +191,18 @@ a:hover {
   color: white;
   padding: 0 1rem 1rem;
   margin: 0;
+}
+
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection,
+span::selection,
+pre::selection {
+  background: #FFBA08;
+  color: black;
 }
 
 .circle-link {

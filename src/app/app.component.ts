@@ -68,10 +68,11 @@ export class AppComponent {
 
   constructor(private componentFactoryResolver: ComponentFactoryResolver) { }
 
-  public crearComponent(component: any): void {
+  public crearComponent(component: any, $element: any): void {
     const componente = this.componentFactoryResolver.resolveComponentFactory(component);
     this.componentes.clear();
     this.componentes.createComponent(componente);
+    this.scrollToElement($element);
   }
 
   public scrollToElement($element: any): void {

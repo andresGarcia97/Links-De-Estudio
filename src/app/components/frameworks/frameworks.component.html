@@ -43,49 +43,35 @@
 
   </div>
 
+  <div class="terminal window" ></div>
   <div class="terminal" [ngSwitch]="selection" #terminal>
     <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
 
-    <pre
-      *ngSwitchCase="'frameworks'">- Son marcos de trabajo con la finalidad de acelerar y aumentar la calidad del codigo desarrollado </pre>
-    <pre
-      *ngSwitchCase="'frameworks'">- Evitan perder tiempo desarrollando funciones que el propio entorno ya tiene</pre>
+    <pre *ngSwitchCase="'frameworks'">- Son marcos de trabajo con la finalidad de acelerar y aumentar la calidad del codigo desarrollado </pre>
+    <pre *ngSwitchCase="'frameworks'">- Evitan perder tiempo desarrollando funciones que el propio entorno ya tiene</pre>
     <pre *ngSwitchCase="'frameworks'">- Aumentan la productividad y la reutilización de codigo</pre>
-    <pre
-      *ngSwitchCase="'frameworks'">- Existen infinidad de frameworks tanto para back como front, desarrollo movil, persistencia, etc... </pre>
+    <pre *ngSwitchCase="'frameworks'">- Existen infinidad de frameworks tanto para back como front, desarrollo movil, persistencia, etc... </pre>
 
-    <pre
-      *ngSwitchCase="'ioc'">- La inversion de control es la implementación del principio de Hollywood en la que se basan muchos frameworks para funcionar </pre>
-    <pre
-      *ngSwitchCase="'ioc'">- El framework es quien toma el control de la ejecución del codigo del usuario modificando el ciclo de vida como tal </pre>
-    <pre
-      *ngSwitchCase="'ioc'">- Permite añadir nuevas funciones prefabicadas sin tener que modificar el codigo por medio de la inyección de dependencias </pre>
+    <pre *ngSwitchCase="'ioc'">- La inversion de control es la implementación del principio de Hollywood en la que se basan muchos frameworks para funcionar </pre>
+    <pre *ngSwitchCase="'ioc'">- El framework es quien toma el control de la ejecución del codigo del usuario modificando el ciclo de vida como tal </pre>
+    <pre *ngSwitchCase="'ioc'">- Permite añadir nuevas funciones prefabicadas sin tener que modificar el codigo por medio de la inyección de dependencias </pre>
 
-    <pre
-      *ngSwitchCase="'iod'">- La inyección de dependencias Permite modificar y extender nuestro codigo mucho más facil </pre>
-    <pre
-      *ngSwitchCase="'iod'">- Solo es especificar que funcionalidades queremos añadir y estaran disponibles de manera transversal </pre>
+    <pre *ngSwitchCase="'iod'">- La inyección de dependencias Permite modificar y extender nuestro codigo mucho más facil </pre>
+    <pre *ngSwitchCase="'iod'">- Solo es especificar que funcionalidades queremos añadir y estaran disponibles de manera transversal </pre>
     <pre *ngSwitchCase="'iod'">- El codigo modificado se vuelve más reutilizable, compacto y manejable</pre>
 
     <pre *ngSwitchCase="'spring'">- Es el framework de JAVA más usado actualmente </pre>
     <pre *ngSwitchCase="'spring'">- Admite el uso de ORM para simplificar las consultas SQL </pre>
-    <pre
-      *ngSwitchCase="'spring'">- Se adapta a diversos modelos de trabajo, para una gran cantidad de necesidades </pre>
-    <pre
-      *ngSwitchCase="'spring'">- Permite la implementación de cientos de funciones prefabricadas y testeadas para acelerar el trabajo </pre>
-    <pre
-      *ngSwitchCase="'spring'">- Al ser el framework predilecto de JAVA la documentación y la comunidad de desarrollo son enormes </pre>
+    <pre *ngSwitchCase="'spring'">- Se adapta a diversos modelos de trabajo, para una gran cantidad de necesidades </pre>
+    <pre *ngSwitchCase="'spring'">- Permite la implementación de cientos de funciones prefabricadas y testeadas para acelerar el trabajo </pre>
+    <pre *ngSwitchCase="'spring'">- Al ser el framework predilecto de JAVA la documentación y la comunidad de desarrollo son enormes </pre>
 
     <pre *ngSwitchCase="'angular'">- Es un framework para programación web que implementa un patron MVC </pre>
     <pre *ngSwitchCase="'angular'">- Es multiplataforma y puede ser usado hasta para aplicaciones Android e IOS </pre>
-    <pre
-      *ngSwitchCase="'angular'">- Simplifica la comunicación entre la renderización del contenido (HTML) y la interactividad de la pagina (JS) </pre>
-    <pre
-      *ngSwitchCase="'angular'">- Facilita el desarrollo de paginas web SPA que son una una sola pagina que cambia de contenido dinamicamente</pre>
-    <pre
-      *ngSwitchCase="'angular'">- Es mantenido por Google quienes se encargan de mejorarlo y respaldado por Microsoft al usar Typescript </pre>
-    <pre
-      *ngSwitchCase="'angular'">- Permite usar y crear componentes reutilizables, además de otras utilidades que vienen preconstruidas </pre>
+    <pre *ngSwitchCase="'angular'">- Simplifica la comunicación entre la renderización del contenido (HTML) y la interactividad de la pagina (JS) </pre>
+    <pre *ngSwitchCase="'angular'">- Facilita el desarrollo de paginas web SPA que son una una sola pagina que cambia de contenido dinamicamente</pre>
+    <pre *ngSwitchCase="'angular'">- Es mantenido por Google quienes se encargan de mejorarlo y respaldado por Microsoft al usar Typescript </pre>
+    <pre *ngSwitchCase="'angular'">- Permite usar y crear componentes reutilizables, además de otras utilidades que vienen preconstruidas </pre>
 
   </div>
 
