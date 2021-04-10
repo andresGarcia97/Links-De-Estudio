@@ -41,9 +41,9 @@ const porcentaje = scroll$.pipe(
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  templateUrl: './app.component.html'
 })
+
 export class AppComponent {
 
   @ViewChild('componentes', { read: ViewContainerRef }) componentes!: ViewContainerRef;
@@ -81,4 +81,8 @@ export class AppComponent {
     }
   }
 
+  public cambiarModo(): void {
+    const cuerpoweb = document.body;
+    cuerpoweb.classList.toggle('oscuro');
+  }
 }

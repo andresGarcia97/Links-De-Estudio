@@ -3,12 +3,64 @@ paleta de colores
 https://coolors.co/dd0031-1976d2-eeeeee-000000-ffba08
 */
 
+/*https://blog.nubecolectiva.com/como-crear-el-efecto-modo-oscuro-claro-en-un-sitio-web-con-css-3-javascript/*/
 :root {
   --color-black: black;
+  --color-jet: #3a3a3a;
   --color-white: white;
   --color-navy-blue: #1976d2;
   --color-selective-yellow: #FFBA08;
+  --color-orange-yellow-crayola: #ffd770;
   --color-cultured: #eeeeee;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.oscuro {
+  background-color: var(--color-black);
+}
+
+.oscuro .terminal {
+  background-color: var(--color-white);
+}
+
+.oscuro .terminal.window::before {
+  background: var(--color-navy-blue);
+  color: var(--color-cultured);
+}
+
+.oscuro .terminal pre {
+  color: var(--color-black);
+}
+
+.oscuro .card {
+  background-color: var(--color-white);
+}
+
+.oscuro h1,
+.oscuro h2,
+.oscuro h3,
+.oscuro h4,
+.oscuro h5,
+.oscuro h6 {
+  color: var(--color-white);
+}
+
+.oscuro .toolbar {
+  background-color: var(--color-jet);
+  color: var(--color-selective-yellow);
+}
+
+.oscuro svg#clouds {
+  fill: var(--color-jet);
+}
+
+.oscuro .card-container .card:not(.highlight-card):hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 17px var(--color-cultured);
 }
 
 h1,
@@ -71,6 +123,24 @@ p {
   align-items: center;
 }
 
+/*https://ed.team/blog/las-variables-css-son-una-realidad-y-te-explico-como-usarlas*/
+.scroll::-webkit-scrollbar {
+  width: 7px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  background-color: var(--color-orange-yellow-crayola);
+  border-radius: 6px;
+}
+
+.scroll::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-selective-yellow);
+}
+
+.scroll::-webkit-scrollbar-track {
+  border-radius: 6px;
+}
+
 svg.material-icons {
   height: 24px;
   width: auto;
@@ -126,7 +196,7 @@ svg.material-icons:not(:last-child) {
 }
 
 .card-container .card:not(.highlight-card):hover .material-icons path {
-  fill: rgb(105, 103, 103);
+  fill: var(--color-selective-yellow);
 }
 
 .card.highlight-card {
@@ -170,7 +240,7 @@ a:hover {
   padding-bottom: 12px;
   overflow-y: hidden;
   overflow-x: visible;
-  background-color: rgb(15, 15, 16);
+  background-color: var(--color-black);
 }
 
 .window::before {
@@ -182,7 +252,7 @@ a:hover {
   height: 20px;
   padding-top: 8px;
   padding-bottom: 8px;
-  background: rgb(58, 58, 58);
+  background: var(--color-jet);
   color: var(--color-selective-yellow);
   width: 100%;
   font-size: 3rem;
@@ -286,6 +356,7 @@ svg#clouds {
   left: -230px;
   z-index: -10;
   width: 1920px;
+  fill: var(--color-cultured);
 }
 
 @media screen and (min-width: 641px) and (max-width: 920px) {
