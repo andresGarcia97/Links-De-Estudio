@@ -63,7 +63,7 @@ export class AppComponent {
     HistoriaUsuarioComponent, VersionamientoComponent, EstrategiasDesarrolloComponent, UmlComponent,
     // 16 - 19
     RequisitosComponent, PruebasComponent, GitComponent, WebComponent,
-    // 20 - 23
+    // 20 - 21
     ConocimientosEmpiricosComponent, FuentesComponent];
 
   constructor(private componentFactoryResolver: ComponentFactoryResolver) { }

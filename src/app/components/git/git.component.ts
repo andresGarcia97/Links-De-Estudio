@@ -1,19 +1,14 @@
 import { Component } from '@angular/core';
+import { LinkReferencia } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-git',
   templateUrl: './git.component.html'
 })
-export class GitComponent  {
+export class GitComponent extends LinkReferencia {
 
-  selection = '';
-  referencia = '';
-
-  constructor() { }
-
-  public linkReferencia(seleccion: string = '', link: string = ''): void {
-    this.selection = seleccion;
-    this.referencia = link;
+  constructor() {
+    super();
   }
 
 }

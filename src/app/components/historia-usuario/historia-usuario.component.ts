@@ -1,19 +1,14 @@
 import { Component } from '@angular/core';
+import { LinkReferencia } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-historia-usuario',
   templateUrl: './historia-usuario.component.html'
 })
-export class HistoriaUsuarioComponent {
+export class HistoriaUsuarioComponent extends LinkReferencia {
 
-  selection = '';
-  referencia = '';
-
-  constructor() { }
-
-  public linkReferencia(seleccion: string = '', link: string = ''): void {
-    this.selection = seleccion;
-    this.referencia = link;
+  constructor() {
+    super();
   }
 
 }

@@ -3,6 +3,14 @@ paleta de colores
 https://coolors.co/dd0031-1976d2-eeeeee-000000-ffba08
 */
 
+:root {
+  --color-black: black;
+  --color-white: white;
+  --color-navy-blue: #1976d2;
+  --color-selective-yellow: #FFBA08;
+  --color-cultured: #eeeeee;
+}
+
 h1,
 h2,
 h3,
@@ -30,15 +38,15 @@ p {
   height: 60px;
   display: flex;
   align-items: center;
-  background-color: black;
-  color: white;
+  background-color: var(--color-black);
+  color: var(--color-white);
   font-weight: 600;
 }
 
 .toolbar span {
   text-emphasis: none;
   text-decoration: none;
-  text-emphasis-color: white;
+  text-emphasis-color: var(--color-white);
 }
 
 .toolbar img {
@@ -73,7 +81,7 @@ svg.material-icons:not(:last-child) {
 }
 
 .card svg.material-icons path {
-  fill: black
+  fill: var(--color-black);
 }
 
 .card-container {
@@ -85,7 +93,7 @@ svg.material-icons:not(:last-child) {
 
 .card {
   border-radius: 6px;
-  border: 1px solid #eee;
+  border: 1px solid var(--color-cultured);
   background-color: #fafafa;
   height: 36px;
   width: 180px;
@@ -122,8 +130,8 @@ svg.material-icons:not(:last-child) {
 }
 
 .card.highlight-card {
-  background-color: #1976d2;
-  color: white;
+  background-color: var(--color-navy-blue);
+  color: var(--color-white);
   font-weight: 600;
   border: none;
   width: auto;
@@ -150,12 +158,8 @@ svg#rocket {
 a,
 a:visited,
 a:hover {
-  color: #1976d2;
+  color: var(--color-navy-blue);
   text-decoration: none;
-}
-
-a:hover {
-  color: #125699;
 }
 
 .terminal {
@@ -179,7 +183,7 @@ a:hover {
   padding-top: 8px;
   padding-bottom: 8px;
   background: rgb(58, 58, 58);
-  color: #FFBA08;
+  color: var(--color-selective-yellow);
   width: 100%;
   font-size: 3rem;
   line-height: 4px;
@@ -188,7 +192,7 @@ a:hover {
 
 .terminal pre {
   font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
-  color: white;
+  color: var(--color-white);
   padding: 0 1rem 1rem;
   margin: 0;
 }
@@ -201,8 +205,8 @@ h5::selection,
 h6::selection,
 span::selection,
 pre::selection {
-  background: #FFBA08;
-  color: black;
+  background: var(--color-selective-yellow);
+  color: var(--color-black);
 }
 
 .circle-link {
@@ -211,8 +215,8 @@ pre::selection {
   border-radius: 40px;
   margin: 8px;
   margin-top: 16px;
-  background-color: white;
-  border: 1px solid #eeeeee;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-cultured);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -234,8 +238,8 @@ footer {
   align-content: center;
   line-height: 20px;
   width: 100%;
-  background-color: black;
-  color: white;
+  background-color: var(--color-black);
+  color: var(--color-white);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -256,7 +260,7 @@ footer a {
   align-items: center;
   font-size: 12px;
   padding: 3px 10px;
-  border: 1px solid rgba(27, 31, 35, .2);
+  border: 1px solid var(--color-selective-yellow);
   border-radius: 3px;
   background-image: linear-gradient(-180deg, #fafbfc, #eff3f6 90%);
   margin-left: 4px;
@@ -266,7 +270,7 @@ footer a {
 
 .github-star-badge:hover {
   background-image: linear-gradient(-180deg, #f0f3f6, #e6ebf1 90%);
-  border-color: rgba(27, 31, 35, .35);
+  border-color: var(--color-black);
   background-position: -.5em;
 }
 
@@ -328,5 +332,5 @@ svg#clouds {
   left: 0;
   height: 5px;
   width: 10%;
-  background-color: #1976d2;
+  background-color: var(--color-navy-blue);
 }

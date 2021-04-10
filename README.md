@@ -17,3 +17,7 @@ Para aprender más puedes seguir consultando por tu cuenta.
 
 Iconos sacados de [logo.wine](https://www.logo.wine/)
 
+## otros iconos 
+
+formato svg de [Flatico.com](https://www.freepik.com)
+
