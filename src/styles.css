@@ -19,6 +19,8 @@ https://coolors.co/dd0031-1976d2-eeeeee-000000-ffba08
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* inicio del modo oscuro */
+
 .oscuro {
   background-color: var(--color-black);
 }
@@ -62,6 +64,12 @@ https://coolors.co/dd0031-1976d2-eeeeee-000000-ffba08
   transform: translateY(-3px);
   box-shadow: 0 4px 17px var(--color-cultured);
 }
+
+.oscuro .card-container .card:not(.highlight-card):hover .material-icons path {
+  fill: var(--color-navy-blue);
+}
+
+/* fin del modo oscuro */
 
 h1,
 h2,
@@ -325,14 +333,14 @@ footer a {
 }
 
 .github-star-badge {
-  color: #24292e;
+  color: var(--color-black);
   display: flex;
   align-items: center;
   font-size: 12px;
   padding: 3px 10px;
   border: 1px solid var(--color-selective-yellow);
   border-radius: 3px;
-  background-image: linear-gradient(-180deg, #fafbfc, #eff3f6 90%);
+  background-color: var(--color-cultured);
   margin-left: 4px;
   font-weight: 600;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
