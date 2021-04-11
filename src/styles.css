@@ -1,9 +1,9 @@
 /*
-paleta de colores
-https://coolors.co/dd0031-1976d2-eeeeee-000000-ffba08
+paleta de colores -> https://coolors.co/dd0031-1976d2-eeeeee-000000-ffba08
 */
 
 /*https://blog.nubecolectiva.com/como-crear-el-efecto-modo-oscuro-claro-en-un-sitio-web-con-css-3-javascript/*/
+
 :root {
   --color-black: black;
   --color-jet: #3a3a3a;
@@ -104,6 +104,18 @@ https://coolors.co/dd0031-1976d2-eeeeee-000000-ffba08
 
 .oscuro .toolbar #twitter-logo {
   fill: var(--color-navy-blue);
+}
+
+.oscuro .card.highlight-card:hover {
+  box-shadow: 0px 3px 6px var(--color-orange-yellow-crayola);
+}
+
+.oscuro .card.highlight-card.card-small span {
+  color: var(--color-white);
+}
+
+.oscuro .circle-link:hover {
+  box-shadow: 0px 3px 15px var(--color-white);
 }
 
 /* fin del modo oscuro */
@@ -258,9 +270,11 @@ svg.material-icons:not(:last-child) {
 .card.highlight-card:hover {
   cursor: pointer;
   transform: translateY(4px);
+  box-shadow: 0px 3px 7px var(--color-french-sky-blue);
 }
 
 .card.card.highlight-card span {
+  color: var(--color-black);
   margin-left: 60px;
 }
 
@@ -348,7 +362,7 @@ pre::selection {
 
 .circle-link:hover {
   transform: translateY(-0.25rem);
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 3px 15px var(--color-black);
 }
 
 footer {
