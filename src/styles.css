@@ -9,6 +9,7 @@ https://coolors.co/dd0031-1976d2-eeeeee-000000-ffba08
   --color-jet: #3a3a3a;
   --color-white: white;
   --color-navy-blue: #1976d2;
+  --color-french-sky-blue: #6dadee;
   --color-selective-yellow: #FFBA08;
   --color-orange-yellow-crayola: #ffd770;
   --color-cultured: #eeeeee;
@@ -69,6 +70,42 @@ https://coolors.co/dd0031-1976d2-eeeeee-000000-ffba08
   fill: var(--color-navy-blue);
 }
 
+.oscuro h1::selection,
+.oscuro h2::selection,
+.oscuro h3::selection,
+.oscuro h4::selection,
+.oscuro h5::selection,
+.oscuro h6::selection,
+.oscuro span::selection,
+.oscuro pre::selection {
+  background: var(--color-navy-blue);
+  color: var(--color-black);
+}
+
+.oscuro.scroll::-webkit-scrollbar-thumb {
+  background-color: var(--color-french-sky-blue);
+}
+
+.oscuro.scroll::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-navy-blue);
+}
+
+.oscuro .github-star-badge {
+  border: 1px solid var(--color-navy-blue);
+}
+
+.oscuro .progress-bar {
+  background-color: var(--color-navy-blue);
+}
+
+.oscuro .card.highlight-card {
+  background-color: var(--color-navy-blue);
+}
+
+.oscuro .toolbar #twitter-logo {
+  fill: var(--color-navy-blue);
+}
+
 /* fin del modo oscuro */
 
 h1,
@@ -116,6 +153,7 @@ p {
 .toolbar #twitter-logo {
   height: 40px;
   margin: 0 16px;
+  fill: var(--color-selective-yellow);
 }
 
 .toolbar #twitter-logo:hover {
@@ -131,9 +169,13 @@ p {
   align-items: center;
 }
 
-/*https://ed.team/blog/las-variables-css-son-una-realidad-y-te-explico-como-usarlas*/
+/*https://ed.team/blog/personaliza-el-scroll-de-tu-web-solo-con-css*/
 .scroll::-webkit-scrollbar {
   width: 7px;
+}
+
+.scroll::-webkit-scrollbar-track {
+  border-radius: 6px;
 }
 
 .scroll::-webkit-scrollbar-thumb {
@@ -143,10 +185,6 @@ p {
 
 .scroll::-webkit-scrollbar-thumb:hover {
   background-color: var(--color-selective-yellow);
-}
-
-.scroll::-webkit-scrollbar-track {
-  border-radius: 6px;
 }
 
 svg.material-icons {
@@ -208,7 +246,7 @@ svg.material-icons:not(:last-child) {
 }
 
 .card.highlight-card {
-  background-color: var(--color-navy-blue);
+  background-color: var(--color-selective-yellow);
   color: var(--color-white);
   font-weight: 600;
   border: none;
@@ -238,6 +276,10 @@ a:visited,
 a:hover {
   color: var(--color-navy-blue);
   text-decoration: none;
+}
+
+.card-container a {
+  color: var(--color-black);
 }
 
 .terminal {
@@ -347,7 +389,7 @@ footer a {
 }
 
 .github-star-badge:hover {
-  background-image: linear-gradient(-180deg, #f0f3f6, #e6ebf1 90%);
+  background-color: var(--color-white);
   border-color: var(--color-black);
   background-position: -.5em;
 }
@@ -365,6 +407,19 @@ svg#clouds {
   z-index: -10;
   width: 1920px;
   fill: var(--color-cultured);
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 10%;
+  background-color: var(--color-selective-yellow);
+}
+
+.fuente {
+  width: 180px;
 }
 
 @media screen and (min-width: 641px) and (max-width: 920px) {
@@ -394,22 +449,25 @@ svg#clouds {
     left: -14px;
     top: -30px;
   }
+
 }
 
 @media screen and (max-width: 575px) {
+
   svg#rocket {
     width: 45px;
     position: absolute;
     left: -16px;
     top: -31px;
   }
-}
 
-.progress-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 5px;
-  width: 10%;
-  background-color: var(--color-navy-blue);
+  .github-star-badge {
+    font-size: 11px;
+  }
+
+  .github-star-badge svg.material-icons {
+    width: 16px;
+    height: 16px;
+  }
+
 }

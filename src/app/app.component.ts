@@ -19,6 +19,7 @@ import { PruebasComponent } from './components/pruebas/pruebas.component';
 import { RefactorizacionComponent } from './components/refactorizacion/refactorizacion.component';
 import { RequisitosComponent } from './components/requisitos/requisitos.component';
 import { SectionsComponent } from './components/sections/sections.component';
+import { SeguridadComponent } from './components/seguridad/seguridad.component';
 import { SqlNosqlComponent } from './components/sql-nosql/sql-nosql.component';
 import { UmlComponent } from './components/uml/uml.component';
 import { VersionamientoComponent } from './components/versionamiento/versionamiento.component';
@@ -63,8 +64,8 @@ export class AppComponent {
     HistoriaUsuarioComponent, VersionamientoComponent, EstrategiasDesarrolloComponent, UmlComponent,
     // 16 - 19
     RequisitosComponent, PruebasComponent, GitComponent, WebComponent,
-    // 20 - 21
-    ConocimientosEmpiricosComponent, FuentesComponent];
+    // 20 - 22
+    ConocimientosEmpiricosComponent, FuentesComponent, SeguridadComponent];
 
   constructor(private componentFactoryResolver: ComponentFactoryResolver) { }
 

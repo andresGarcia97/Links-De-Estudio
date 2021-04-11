@@ -24,6 +24,7 @@ import { GitComponent } from './components/git/git.component';
 import { WebComponent } from './components/web/web.component';
 import { ConocimientosEmpiricosComponent } from './components/conocimientos-empiricos/conocimientos-empiricos.component';
 import { FuentesComponent } from './components/fuentes/fuentes.component';
+import { SeguridadComponent } from './components/seguridad/seguridad.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { FuentesComponent } from './components/fuentes/fuentes.component';
     GitComponent,
     WebComponent,
     ConocimientosEmpiricosComponent,
-    FuentesComponent
+    FuentesComponent,
+    SeguridadComponent
   ],
   imports: [
     BrowserModule

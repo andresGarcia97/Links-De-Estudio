@@ -1,0 +1,102 @@
+<div class="content" role="main">
+
+    <h2>Seguridad</h2>
+  
+    <div class="card-container">
+  
+      <div class="card card-small"
+        (click)="linkReferencia('firewall','https://idgrup.com/firewall-que-es-y-como-funciona/#:~:text=Un%20firewall%2C%20tambi%C3%A9n%20llamado%20cortafuegos,ordenadores%20de%20una%20misma%20red')"
+        tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+        <span>Firewall</span>
+      </div>
+    
+      <div class="card card-small"
+        (click)="linkReferencia('protocolos','https://www.websecurity.digicert.com/es/es/security-topics/what-is-ssl-tls-https')"
+        tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+        <span>SSL, TSL, HTTPS</span>
+      </div>
+  
+      <div class="card card-small"
+        (click)="linkReferencia('proxy','https://www.welivesecurity.com/la-es/2020/01/02/que-es-proxy-para-que-sirve/')" tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+        <span>Proxy</span>
+      </div>
+
+      <div class="card card-small"
+        (click)="linkReferencia('estatico','https://www.welivesecurity.com/la-es/2021/01/18/analisis-estatico-codigo-fuente-orientado-a-seguridad/')" tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+        <span>Analisis de codigo</span>
+      </div>
+    
+    </div>
+  
+    <div class="terminal window" ></div>
+    <div class="terminal" [ngSwitch]="selection" #terminal>
+      <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
+  
+      <pre *ngSwitchCase="'firewall'">- Tiene la función de denegar ó permitir el acceso a nuestra red privada</pre>
+      <pre *ngSwitchCase="'firewall'">- El trafico debe cumplir con una serie de reglas previamente definidas para su libre circulación </pre>
+      <pre *ngSwitchCase="'firewall'">- Se puede implementar por medio de Hardware, Software, ó ambos </pre>
+      <pre *ngSwitchCase="'firewall'">- Estas son algunas de sus funciones: </pre>
+      <pre *ngSwitchCase="'firewall'"></pre>
+      <pre *ngSwitchCase="'firewall'"> - Bloquear accesos no permitidos</pre>
+      <pre *ngSwitchCase="'firewall'"> - Evitar accesos no autorizados, estando dentro de la red privada </pre>
+      <pre *ngSwitchCase="'firewall'"> - Supervisar el trafico interno </pre>
+      <pre *ngSwitchCase="'firewall'"> - Posibilidad de bloquear aplicaciones peligrosas </pre>
+      <pre *ngSwitchCase="'firewall'"> - Advertir de posibles accesos malintencionados </pre>
+  
+      <pre *ngSwitchCase="'protocolos'">- SSL -> capa de sockects seguros </pre>
+      <pre *ngSwitchCase="'protocolos'"> - Es una tecnologia para mantener segura una conexión de internet </pre>
+      <pre *ngSwitchCase="'protocolos'"> - Esto protege toda la información privada que se envia entre 2 sistemas, (cliente-servidor)</pre>
+      <pre *ngSwitchCase="'protocolos'"></pre>
+      <pre *ngSwitchCase="'protocolos'">- TSL -> una versión más actual y segura de SSL </pre>
+      <pre *ngSwitchCase="'protocolos'"> - La principal difirencia es el algoritmo de cifrado </pre>
+      <pre *ngSwitchCase="'protocolos'"></pre>
+      <pre *ngSwitchCase="'protocolos'">- HTTPS -> Hyper Text Transfer Protocol Secure o protocolo seguro de transferencia de hipertexto </pre>
+      <pre *ngSwitchCase="'protocolos'"> - Basicamente indica si una conexion es segura, por medio de un certificado de TSL ó SSL </pre>
+  
+      <pre *ngSwitchCase="'proxy'">- Son un puente entre el origen y el destino de una petición </pre>
+      <pre *ngSwitchCase="'proxy'"> - Pueden servir para controlar el acceso, segun los usuarios que intenten acceder </pre>
+      <pre *ngSwitchCase="'proxy'"> - Filtrar el contenido segun las politicas de la empresa </pre>
+      <pre *ngSwitchCase="'proxy'"> - Almacenar en cache el contenido de las paginas que hayan sido accesadas previamente </pre>
+      <pre *ngSwitchCase="'proxy'"></pre>
+      <pre *ngSwitchCase="'proxy'">- Pueden ser inversos, conviertiendose en un puente entre el destino y el origen </pre>
+      <pre *ngSwitchCase="'proxy'"> - Los proxies inversos pueden ser usados como balanceadores de carga </pre>
+
+      <pre *ngSwitchCase="'estatico'">- El analisis de codigo estatico permite corregir vulnerabilidades, errores y bugs, </pre>
+      <pre *ngSwitchCase="'estatico'">  - que no se encuentran a simple vista, pero pueden conllevar a problemas en el futuro </pre>
+      <pre *ngSwitchCase="'estatico'"></pre>
+      <pre *ngSwitchCase="'estatico'"> - PROS</pre>
+      <pre *ngSwitchCase="'estatico'">  - Tambien ayuda a la reducción de la deuda tecnica y detectar code smells </pre>
+      <pre *ngSwitchCase="'estatico'">  - Fomenta el uso de buenas practicas y la mejora continua </pre>
+      <pre *ngSwitchCase="'estatico'"></pre>
+      <pre *ngSwitchCase="'estatico'"> - CONTRAS </pre>
+      <pre *ngSwitchCase="'estatico'">  - Se debe hacer con herramientas especializadas, y cosume tiempo de desarrollo </pre>
+      <pre *ngSwitchCase="'estatico'">  - No hay estandares concretos, cada lenguaje tiene especificaciones diferentes entre si </pre>
+      <pre *ngSwitchCase="'estatico'"></pre>
+      <pre *ngSwitchCase="'estatico'"> - Algunas tecnicas de analisis </pre>
+      <pre *ngSwitchCase="'estatico'">  - Analisis grep -> analiza el codigo con expresiones regulares para encontrar: </pre>
+      <pre *ngSwitchCase="'estatico'">    - Contraseñas expuestas, metodos mal nombrados, variables incompresibles, etc... </pre>
+      <pre *ngSwitchCase="'estatico'">  - Identación -> cerrar y abrir llaves correctamente, evitando problemas al ejecutar </pre>
+      <pre *ngSwitchCase="'estatico'">  - SataFlow -> se analiza desde un punto de partida hasta un punto final </pre>
+      <pre *ngSwitchCase="'estatico'">  - AliasAnalisis -> analiza los punteros, para los lenguajes que funcionan con estos </pre>
+      <pre *ngSwitchCase="'estatico'"></pre>
+      <pre *ngSwitchCase="'estatico'"> - Posibles defectos </pre>
+      <pre *ngSwitchCase="'estatico'">  - Bugs -> es cuando un programa difiere de lo que debe hacer, esto es más subjetivo que objetivo,  </pre>
+      <pre *ngSwitchCase="'estatico'">    - por lo que son errores que son más faciles de encontrar por humanos </pre>
+      <pre *ngSwitchCase="'estatico'">  - Violación -> son errores de codificación entre lo que se pueda considerar "ideal", </pre>
+      <pre *ngSwitchCase="'estatico'">    - en el marco del lenguaje y lo realizado por el programador </pre>
+      <pre *ngSwitchCase="'estatico'">  - Vulnerabilidad -> son comportamientos errores que a la larga pueden llevar a posibles problemas, </pre>
+      <pre *ngSwitchCase="'estatico'">    - de rendimiento ó de seguridad, más no son son considerados problemas graves </pre>
+  
+    </div>
+  
+    <app-referencia [referencia]="referencia"></app-referencia>
+  
+  </div>
