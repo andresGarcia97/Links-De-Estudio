@@ -319,7 +319,7 @@ a:hover {
   background: var(--color-jet);
   color: var(--color-selective-yellow);
   width: 100%;
-  font-size: 3rem;
+  font-size: 3em;
   line-height: 4px;
   text-indent: 4px;
 }
@@ -482,6 +482,10 @@ svg#clouds {
   .github-star-badge svg.material-icons {
     width: 16px;
     height: 16px;
+  }
+
+  .window::before {
+    align-items: center;
   }
 
 }
