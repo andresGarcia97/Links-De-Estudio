@@ -1,6 +1,6 @@
 <div class="content">
 
-    <h2>Introducción a las pruebas</h2>
+    <h2>Pruebas en el desarrollo de Software</h2>
   
     <div class="card-container">
   
@@ -71,6 +71,41 @@
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>GWT</span>
       </div>
+
+      <div class="card card-small" (click)="linkReferencia('piramide','https://medium.com/@wc.testing.qa/la-famosa-pir%C3%A1mide-de-cohn-y-la-dura-realidad-e1250dfbe5f3')"
+       tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+        <span>Piramides de tests</span>
+      </div>
+
+      <div class="card card-small" (click)="linkReferencia('triangulo','https://proyectosagiles.org/triangulo-hierro/')"
+       tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+        <span>Triangulo de Hierro</span>
+      </div>
+
+      <div class="card card-small" (click)="linkReferencia('logging','https://itnext.io/logger-or-debugger-which-one-to-choose-3f6a72200b15')"
+       tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+        <span>Logs VS Debug</span>
+      </div>
+
+      <div class="card card-small" (click)="linkReferencia('cobertura','https://argonur.com/2020/05/11/code-coverage-cobertura-de-codigo/')"
+       tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+        <span>Cobertura</span>
+      </div>
+
+      <div class="card card-small" (click)="linkReferencia('falsos','https://www.qalovers.com/2015/03/diferencia-entre-falso-positivo-y-falso_5.html#:~:text=La%20definici%C3%B3n%20de%20falso%20negativo,sistema%20que%20est%C3%A1%20realmente%20infectada.%22&text=Un%20falso%20negativo%20llevado%20a,cuando%20en%20realidad%20est%C3%A1%20fallando.')"
+       tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+        <span>Falsos + & -</span>
+      </div>
   
     </div>
   
@@ -97,7 +132,7 @@
   
       <pre *ngSwitchCase="'tipos'">- Tipos de pruebas </pre>
       <pre *ngSwitchCase="'tipos'"></pre>
-      <pre *ngSwitchCase="'tipos'"> - Funcionales -> prueban las funcionalidades del sistema y suelen ser de caja negra, al validar el QUE más que el COMO </pre>
+      <pre *ngSwitchCase="'tipos'"> - Funcionales    -> prueban las funcionalidades del sistema y suelen ser de caja negra, al validar el QUE más que el COMO </pre>
       <pre *ngSwitchCase="'tipos'"> - No Funcionales -> estas validan cosas como carga, estres, rendimiento, confiabilidad, etc... </pre>
       <pre *ngSwitchCase="'tipos'"></pre>
       <pre *ngSwitchCase="'tipos'"> - Estructurales -> indagan la estructura interna del programa y sus relaciones, aca se pueden incluir las pruebas unitarias y de integración </pre>
@@ -114,12 +149,20 @@
       <pre *ngSwitchCase="'nombramiento'"> - Representa el intercambio de mensajes entre los diferentes componentes del sistema para lograr una funcionalidad </pre>
       <pre *ngSwitchCase="'nombramiento'"> - El tiempo es importante ya que un mensaje debe terminar para que otro empieze (generalmente) </pre>
       <pre *ngSwitchCase="'nombramiento'"> - Los objetos que interactuan puede ser simple clases, hasta modulos y sistemas completos </pre>
+      <pre *ngSwitchCase="'nombramiento'"> - El diablo esta en los detalles, saber nombrar los elementos que intervienen ayudara al analisis </pre>
+      <pre *ngSwitchCase="'nombramiento'"></pre>
+      <pre *ngSwitchCase="'nombramiento'"> - Clases -> deberian tener un indicador que las agrupe, como: (nombreClase)Test </pre>
+      <pre *ngSwitchCase="'nombramiento'"> - Metodos -> hay varias convenciones, pero generalmente deben incluir:  </pre>
+      <pre *ngSwitchCase="'nombramiento'">   - nombre del metodo, estado a probar, comportamiento esperado; tambien se pueden incluir las palabras de given, when, should, test  </pre>
+      <pre *ngSwitchCase="'nombramiento'"></pre>
+      <pre *ngSwitchCase="'nombramiento'"> - Variables -> deben describir el proposito de cada variable, no deben ser resumidas ni genericas, algunos ejemplos pueden ser: </pre>
+      <pre *ngSwitchCase="'nombramiento'">   - target, expected, actual, valid, invalid, Object(Mock)</pre>
   
-      <pre *ngSwitchCase="'first'"> - Fast -> los tests unitarios deben ser lo más rapido posible, ya que se suelen tener cientos de pruebas y ejecutarlas conlleva tiempo y recursos </pre>
-      <pre *ngSwitchCase="'first'"> - Independent -> cada test debe ser independiente de los demás, de lo contrario habra un acoplamiento no deseado </pre>
-      <pre *ngSwitchCase="'first'"> - Repeatable -> las pruebas deben funcionar en cualquier ambiente que se ejecuten, ya sea local o en un ambiente de integración </pre>
+      <pre *ngSwitchCase="'first'"> - Fast            -> los tests unitarios deben ser lo más rapido posible, ya que se suelen tener cientos de pruebas y ejecutarlas conlleva tiempo y recursos </pre>
+      <pre *ngSwitchCase="'first'"> - Independent     -> cada test debe ser independiente de los demás, de lo contrario habra un acoplamiento no deseado </pre>
+      <pre *ngSwitchCase="'first'"> - Repeatable      -> las pruebas deben funcionar en cualquier ambiente que se ejecuten, ya sea local o en un ambiente de integración </pre>
       <pre *ngSwitchCase="'first'"> - Self-Validating -> las pruebas deben mostrar resultados concluyentes, estos no deben tener intervención humana para que sean validos </pre>
-      <pre *ngSwitchCase="'first'"> - Timely -> toda prueba debe ser oportuna y debe tener una razon de ser, si no se pueden justificar, estas habran sido una perdida de tiempo </pre>
+      <pre *ngSwitchCase="'first'"> - Timely          -> toda prueba debe ser oportuna y debe tener una razon de ser, si no se pueden justificar, estas habran sido una perdida de tiempo </pre>
   
       <pre *ngSwitchCase="'sutydoc'"> - System Under Test </pre>
       <pre *ngSwitchCase="'sutydoc'">   - Es aquello que se esta probando ya sea una clase, un componente, una funcionalidad </pre>
@@ -130,26 +173,61 @@
   
       <pre *ngSwitchCase="'dobles'">- Son objetos que se comportan de manera igual que el elemento que copian, pero son más simples de manejar </pre>
       <pre *ngSwitchCase="'dobles'">  - Dummy -> Es un objeto con valore concretos que solo sirve para que se cumplan ciertas precondiciones </pre>
-      <pre *ngSwitchCase="'dobles'">  - Fake -> son funcionales y se comportan igual que en producción, solo que de una manera más simple y limitada </pre>
-      <pre *ngSwitchCase="'dobles'">  - Stub -> Es un objeto que ya viene con una información predefinida, en vez de información real e impredecible </pre>
-      <pre *ngSwitchCase="'dobles'">  - Mock -> Son objetos que actuan de acuerdo a una llamada en especifico, de lo contrario no funcionaran debidamente </pre>
+      <pre *ngSwitchCase="'dobles'">  - Fake  -> son funcionales y se comportan igual que en producción, solo que de una manera más simple y limitada </pre>
+      <pre *ngSwitchCase="'dobles'">  - Stub  -> Es un objeto que ya viene con una información predefinida, en vez de información real e impredecible </pre>
+      <pre *ngSwitchCase="'dobles'">  - Mock  -> Son objetos que actuan de acuerdo a una llamada en especifico, de lo contrario no funcionaran debidamente </pre>
       <pre *ngSwitchCase="'dobles'">  - Spies -> Este objeto se encarga de visualizar todos los procesos y llamados internos, verificando que sean los desados </pre>
 
       <pre *ngSwitchCase="'aaa'">- Arrange -> en esta parte se organiza todo lo necesario y se deben establecer las condiciones del test </pre>
-      <pre *ngSwitchCase="'aaa'">- Act -> es la ejecución del fragmento a testear</pre>
-      <pre *ngSwitchCase="'aaa'">- Assert -> ultimo paso de la prueba y es la comprobación de lo resultados </pre>
+      <pre *ngSwitchCase="'aaa'">- Act     -> es la ejecución del fragmento a testear</pre>
+      <pre *ngSwitchCase="'aaa'">- Assert  -> ultimo paso de la prueba y es la comprobación de lo resultados </pre>
 
       <pre *ngSwitchCase="'gwt'">- Funciona de la misma manera que AAA, con algunas ventajas (Given, When, Then)</pre>
       <pre *ngSwitchCase="'gwt'">- Puede ser usado con frameworks de BDD, es más que solo una estructura</pre>
       <pre *ngSwitchCase="'gwt'">- Es obicuo por lo que más personas pueden entenderlo sin necesidad de un conocimiento completo del sistema </pre>
       <pre *ngSwitchCase="'gwt'">- Añade valor extra al negocio, al interconectar el codigo y las pruebas a un nivel mayor </pre>
 
-      <pre *ngSwitchCase="'nombramiento'">- El diablo esta en los detalles, saber nombrar los elementos que intervienen ayudara al analisis </pre>
-      <pre *ngSwitchCase="'nombramiento'"> - Clases -> deberian tener un indicador que las agrupe, como: (nombreClase)Test </pre>
-      <pre *ngSwitchCase="'nombramiento'"> - Metodos -> hay varias convenciones, pero generalmente deben incluir:  </pre>
-      <pre *ngSwitchCase="'nombramiento'">   - nombre del metodo, estado a probar, comportamiento esperado; tambien se pueden incluir las palabras de given, when, should, test  </pre>
-      <pre *ngSwitchCase="'nombramiento'"> - Variables -> deben describir el proposito de cada variable, no deben ser resumidas ni genericas, algunos ejemplos pueden ser: </pre>
-      <pre *ngSwitchCase="'nombramiento'">   - target, expected, actual, valid, invalid, Object(Mock)</pre>
+      <pre *ngSwitchCase="'piramide'">        Exploracion                                                </pre>
+      <pre *ngSwitchCase="'piramide'">         GUI  Tests        Piramide de tests:                      </pre>
+      <pre *ngSwitchCase="'piramide'">       API      Tests      La mayor parte de las pruebas deberian  </pre>
+      <pre *ngSwitchCase="'piramide'">     Integration  Tests    ser unitarias, y la menor parte         </pre>
+      <pre *ngSwitchCase="'piramide'">   Component       Tests   deberian ser la interfaz grafica        </pre>
+      <pre *ngSwitchCase="'piramide'"> Unit               Tests                                          </pre>
+      <pre *ngSwitchCase="'piramide'"></pre>
+      <pre *ngSwitchCase="'piramide'">        Exploracion                                                </pre>
+      <pre *ngSwitchCase="'piramide'"> GUI                Tests   Cono de helado:                        </pre>
+      <pre *ngSwitchCase="'piramide'">   API             Tests    Es un anti patron de pruebas           </pre>
+      <pre *ngSwitchCase="'piramide'">     Integration  Tests     Donde la mayoria de pruebas son        </pre>
+      <pre *ngSwitchCase="'piramide'">       Component Tests      de la interfaz graficas                </pre>
+      <pre *ngSwitchCase="'piramide'">         Unit   Tests       y no de la pruebas unitarias           </pre>
+
+      <pre *ngSwitchCase="'triangulo'">         Alcance              Alcance -> requisitos ó tareas a realizar </pre>
+      <pre *ngSwitchCase="'triangulo'">                          </pre>
+      <pre *ngSwitchCase="'triangulo'">                              Tiempo -> planificicación de la duración del proyecto </pre>
+      <pre *ngSwitchCase="'triangulo'">         Calidad         </pre>
+      <pre *ngSwitchCase="'triangulo'">                              Costos -> recursos a gastar el proyecto, dinero, equipo, personal, etc.. </pre>
+      <pre *ngSwitchCase="'triangulo'">Costo               Tiempo</pre>
+
+      <pre *ngSwitchCase="'logging'"> “Depurar es como ser el detective de una película policial en la que también eres el asesino. ”- Filipe Fortes </pre>
+      <pre *ngSwitchCase="'logging'"></pre>
+      <pre *ngSwitchCase="'logging'">- Depurar es recomendable cuando la pila de llamadas es demasiado extensa y compleja</pre>
+      <pre *ngSwitchCase="'logging'">- Registrar es util cuando la aplicación ó funcionalidad es pequeña y de baja complejidad </pre>
+      <pre *ngSwitchCase="'logging'">- Esta elección tambien depende de la comodiad de cada programador y de su eficiencia con cada herramienta </pre>
+
+      <pre *ngSwitchCase="'cobertura'">- La cobertura del codigo es fundamental para garantizar un alcance optimo de las pruebas </pre>
+      <pre *ngSwitchCase="'cobertura'">- No hay un numero magico para todos los proyectos, cada uno tendra una cobertura ideal</pre>
+      <pre *ngSwitchCase="'cobertura'">- El 100% de esta cobertura no es garantia de ausencia de errores, como el 50% no es garantia de la calidad de las pruebas </pre>
+      <pre *ngSwitchCase="'cobertura'">- Esto es importante ya que se puede usar para hacer despliegues e integración continua, como encontrar codigo muerto </pre>
+      <pre *ngSwitchCase="'cobertura'">- Existen varios tipos de cobertura, pero el más usado es la cobertura de las lineas de codigo </pre>
+
+      <pre *ngSwitchCase="'falsos'">- Falsos Positivos & Falsos Negativos </pre>
+      <pre *ngSwitchCase="'falsos'">- Son comunes en ambientes inestables, ó poco hermeticos </pre>
+      <pre *ngSwitchCase="'falsos'"></pre>
+      <pre *ngSwitchCase="'falsos'">- Falso Positivo -> ocurre cuando se detectan defectos, que no son culpa del componente inmediato </pre>
+      <pre *ngSwitchCase="'falsos'">  - Esto puede ser debido a fuentes externas de error, inestabilidad del ambiente, errores de los datos </pre>
+      <pre *ngSwitchCase="'falsos'"></pre>
+      <pre *ngSwitchCase="'falsos'">- Falso Negativo -> ocurre cuando no se detectan errores, aunque estos los tenga </pre>
+      <pre *ngSwitchCase="'falsos'">  - Suelen suceder por pruebas mal desarrolladas, más que por el propio entorno </pre>
 
     </div>
   
