@@ -32,6 +32,13 @@
         <span>Ley de Murphy</span>
       </div>
 
+      <div class="card card-small" (click)="linkReferencia('cristales','https://lamenteesmaravillosa.com/la-teoria-las-ventanas-rotas/')"
+        tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+        <span>Cristales rotos</span>
+      </div>
+
     </div>
     
     <div class="terminal window" ></div>
@@ -80,6 +87,10 @@
       <pre *ngSwitchCase="'murphy'">- Se inspira en el concepto fisico de la entropia, el cual dicta que todo sistema fluye del orden al desorden </pre>
       <pre *ngSwitchCase="'murphy'">- Puede ser util para ayudar a prevenir el desastre, si se usa para tomar precauciones </pre>
       <pre *ngSwitchCase="'murphy'">- No hay ninguna demostración matematica que la niegue ó la acepta, solo es un conocimiento nacido de lo cotidiano </pre>
+
+      <pre *ngSwitchCase="'cristales'">- Esta teoria predice que los desperfectosdel ambiente van a generar la sensación de que la ley no existe </pre>
+      <pre *ngSwitchCase="'cristales'">- Las pequeñas faltas pueden conllevar a transgresiones mayores </pre>
+      <pre *ngSwitchCase="'cristales'">- Establcer normas claras ayuda a evitar este fenomeno </pre>
 
     </div>
   

@@ -485,7 +485,7 @@ svg#clouds {
   }
 
   .window::before {
-    align-items: center;
+    margin-top: 1px;
   }
 
 }
