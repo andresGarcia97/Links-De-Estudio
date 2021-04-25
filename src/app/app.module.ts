@@ -25,6 +25,7 @@ import { WebComponent } from './components/web/web.component';
 import { ConocimientosEmpiricosComponent } from './components/conocimientos-empiricos/conocimientos-empiricos.component';
 import { FuentesComponent } from './components/fuentes/fuentes.component';
 import { SeguridadComponent } from './components/seguridad/seguridad.component';
+import { AnalisisComponent } from './components/analisis/analisis.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { SeguridadComponent } from './components/seguridad/seguridad.component';
     WebComponent,
     ConocimientosEmpiricosComponent,
     FuentesComponent,
-    SeguridadComponent
+    SeguridadComponent,
+    AnalisisComponent
   ],
   imports: [
     BrowserModule

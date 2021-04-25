@@ -1,6 +1,6 @@
 <div class="content">
 
-    <h2>Conocimiento Nacido de la Practica</h2>
+    <h2>Conocimientos Empirico y Psicologico</h2>
   
     <div class="card-container">
   
@@ -53,6 +53,20 @@
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Cristales rotos</span>
+      </div>
+
+      <div class="card card-small" (click)="linkReferencia('quo','https://psicologiaymente.com/social/sesgo-statu-quo#:~:text=El%20sesgo%20del%20statu%20quo%20es%20un%20sesgo%20de%20tipo,sobre%20un%20aspecto%20en%20concreto.')"
+        tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+        <span>Status Quo</span>
+      </div>
+
+      <div class="card card-small" (click)="linkReferencia('costo','https://psicologiaymente.com/psicologia/falacia-costo-hundido#:~:text=En%20resumen%2C%20la%20falacia%20del,cuyas%20expectativas%20son%20muy%20desalentadoras.')"
+        tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+        <span>Costo Hundido</span>
       </div>
 
       <div class="card card-small" (click)="linkReferencia('tipos','https://stevenbenner.com/2010/07/the-5-types-of-programmers/')"
@@ -141,6 +155,26 @@
       <pre *ngSwitchCase="'tipos'">   - Para este programador siempre habra n maneras de resolver algo, la mayoria de su tiempo lo ocupara pensando como </pre>
       <pre *ngSwitchCase="'tipos'">   - resolver el problema de la mejor manera, por lo que la manera que escoja para hacerlo nunca lo satisfacera al 100%, </pre>
       <pre *ngSwitchCase="'tipos'">   - pero entregara codigo a tiempo y con buena calidad </pre>
+
+      <pre *ngSwitchCase="'quo'">- Es la preferencia innata del ser humano a la estabilidad </pre>
+      <pre *ngSwitchCase="'quo'">- Nuestras emociones son un punto de inflexión a la hora de tomas decisiones que arriesguan esta estabilidad </pre>
+      <pre *ngSwitchCase="'quo'">- Este fenomeno esta ligado a otros más comunes y que se viven casi a diario </pre>
+      <pre *ngSwitchCase="'quo'"></pre>
+      <pre *ngSwitchCase="'quo'"> - Aversión a las perdidad -> es un efecto donde es más facil aferrarse a una cantidad u objeto en el que haya invertido tiempo y dinero, </pre>
+      <pre *ngSwitchCase="'quo'">   - que adquirir o construir uno nuevo que representara una ganancia, mayor a la actual </pre>
+      <pre *ngSwitchCase="'quo'"> - Efecto de dotación -> los bienes se perciben de manera más valiosa cuando son de nuestra propiedad, </pre>
+      <pre *ngSwitchCase="'quo'">   - Aunque este mismo bien sea el mismo que el de otra persona </pre>
+      <pre *ngSwitchCase="'quo'"></pre>
+      <pre *ngSwitchCase="'quo'">- Estos fenomenos se pueden dar en el mundo del software al no realizar refactors en el codigo solamente porque, </pre>
+      <pre *ngSwitchCase="'quo'">  - "funciona", aunque lo haga de manera complicada u poco optima </pre>
+
+      <pre *ngSwitchCase="'costo'">- La falacia del costo hundido es la tendencia a mantener proyectos fracasados ó obsoletos </pre>
+      <pre *ngSwitchCase="'costo'">- Esto se debe al tiempo y gastos invertidos en los proyectos, que no queremos soltar por la aversion a las perdidas </pre>
+      <pre *ngSwitchCase="'costo'"></pre>
+      <pre *ngSwitchCase="'costo'"> - En la industria del software es comun tener casos donde hay sistemas que constantemente deben ser parcheados, </pre>
+      <pre *ngSwitchCase="'costo'">   - costando tiempo y dinero, y donde la solucion más optima seria rehacer el sistema que continuar con este tipo de situaciones </pre>
+      <pre *ngSwitchCase="'costo'"> - Tambien estan los casos donde las personas se niegan a abandonar proyectos estables, pero que eventualmente seran obsoletos </pre>
+      <pre *ngSwitchCase="'costo'">   - ya que migrar esto implica un costo, que puede ser menor que mantener a un proyecto legacy; pero esto no se ve a corto plazo </pre>
 
     </div>
   

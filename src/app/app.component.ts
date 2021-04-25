@@ -1,6 +1,7 @@
 import { Component, ComponentFactoryResolver, ViewChild, ViewContainerRef } from '@angular/core';
 import { fromEvent } from 'rxjs';
 import { map } from 'rxjs/operators';
+import { AnalisisComponent } from './components/analisis/analisis.component';
 import { ArquitecturasComponent } from './components/arquitecturas/arquitecturas.component';
 import { BuenasPracticasComponent } from './components/buenas-practicas/buenas-practicas.component';
 import { CompilacionComponent } from './components/compilacion/compilacion.component';
@@ -64,8 +65,8 @@ export class AppComponent {
     HistoriaUsuarioComponent, VersionamientoComponent, EstrategiasDesarrolloComponent, UmlComponent,
     // 16 - 19
     RequisitosComponent, PruebasComponent, GitComponent, WebComponent,
-    // 20 - 22
-    ConocimientosEmpiricosComponent, FuentesComponent, SeguridadComponent];
+    // 20 - 23
+    ConocimientosEmpiricosComponent, FuentesComponent, SeguridadComponent, AnalisisComponent];
 
   constructor(private componentFactoryResolver: ComponentFactoryResolver) { }
 
