@@ -325,6 +325,8 @@ a:hover {
   font-size: 3em;
   line-height: 4px;
   text-indent: 4px;
+  align-items: center;
+  align-content: center;
 }
 
 .terminal pre {
@@ -484,7 +486,7 @@ svg#clouds {
     justify-content: left;
   }
 
-  .card-container .card-container .card.card-small {
+  .reference {
     justify-content: center;
   }
 
@@ -510,11 +512,6 @@ svg#clouds {
   .github-star-badge svg.material-icons {
     width: 16px;
     height: 16px;
-  }
-
-  .window::before {
-    top: -2px;
-    margin-top: 2px;
   }
 
 }
