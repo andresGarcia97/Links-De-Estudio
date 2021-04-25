@@ -28,6 +28,14 @@
     </div>
 
     <div class="card card-small"
+      (click)="linkReferencia('composicion','https://www.seas.es/blog/informatica/agregacion-vs-composicion-en-diagramas-de-clases-uml/')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Relaciones</span>
+    </div>
+
+    <div class="card card-small"
       (click)="linkReferencia('pooStatic','https://desarrolloweb.com/articulos/metodos-atributos-static-poo.html')"
       tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -87,17 +95,33 @@
     <pre *ngSwitchCase="'imperativo'">  - Funcional -> la base son las funciones que se pueden concatenar para formar estructuras o usarse como argumentos </pre>
     <pre *ngSwitchCase="'imperativo'">  - Logica -> la base es la matematica y su logica para predecir el resultado</pre>
 
-    <pre *ngSwitchCase="'poo'">- Alta integración Bajo acoplamiento</pre>
+    <pre *ngSwitchCase="'poo'">- Alta integridad, Bajo acoplamiento</pre>
     <pre *ngSwitchCase="'poo'">- Mejora la abstracción de los problemas al acercarlos a lo cotidiano </pre>
-    <pre *ngSwitchCase="'poo'">- Clases      -> abstracciones de la realidad </pre>
-    <pre *ngSwitchCase="'poo'">- Objetos     -> instancias de una clase </pre>
-    <pre *ngSwitchCase="'poo'">- Propiedades -> atributos o caracteristicas de un objeto</pre>
-    <pre *ngSwitchCase="'poo'">- Metodos     -> comportamientos o acciones de un objeto</pre>
+    <pre *ngSwitchCase="'poo'"> - Clases      -> abstracciones de la realidad, convertidas en plantillas </pre>
+    <pre *ngSwitchCase="'poo'"> - Objetos     -> instancia de una clase, con propiedades unicas </pre>
+    <pre *ngSwitchCase="'poo'"> - Propiedades -> atributos o caracteristicas de un objeto</pre>
+    <pre *ngSwitchCase="'poo'"> - Metodos     -> comportamientos o acciones de un objeto</pre>
 
     <pre *ngSwitchCase="'pooPilares'">- Encasulapción -> todas las propiedades del objeto son solo del objeto ó de la clase </pre>
-    <pre *ngSwitchCase="'pooPilares'">- Abstracción -> las acciones son publicas pero su complejidad esta oculta</pre>
-    <pre *ngSwitchCase="'pooPilares'">- Herencia -> los hijos tienen acceso a los metodos y atributos del padre, además de las propias </pre>
-    <pre *ngSwitchCase="'pooPilares'">- Polimorfismo -> cada objeto se puede comportar diferente, aunque tenga una misma base </pre>
+    <pre *ngSwitchCase="'pooPilares'">- Abstracción   -> las acciones son publicas pero su complejidad esta oculta; todos necesitan el que, más no interesa el como </pre>
+    <pre *ngSwitchCase="'pooPilares'">- Herencia      -> los hijos tienen acceso a los metodos y atributos del padre, además de las propias, pero el padre no conoce a sus hijos </pre>
+    <pre *ngSwitchCase="'pooPilares'">- Polimorfismo  -> cada objeto se puede comportar diferente, aunque tenga una misma base, solamente cambiando la instancia </pre>
+
+    <pre *ngSwitchCase="'composicion'">- La Agregación y la Composición, Son 2 tipos diferentes de relaciones entre clases </pre>
+    <pre *ngSwitchCase="'composicion'">- En los diagramas UML se suele representar por medio de un diamante con o sin relleno, ubicado en la clase contenedora </pre>
+    <pre *ngSwitchCase="'composicion'"></pre>
+    <pre *ngSwitchCase="'composicion'"> - Agregación -> Indica que una clase es parte de otra, y que los componentes pueden ser compartidos por otros </pre>
+    <pre *ngSwitchCase="'composicion'">  - La destrucción del compuesto no neceriamente indica la destrucción de los componentes </pre>
+    <pre *ngSwitchCase="'composicion'">  - Se suele representar mediante un diamante sin relleno en UML</pre>
+    <pre *ngSwitchCase="'composicion'">  - Cualquier Empresa Tiene 0..* Clientes, los clientes y la empresa pueden vivir independientemente el uno del otro </pre>
+    <pre *ngSwitchCase="'composicion'"></pre>
+    <pre *ngSwitchCase="'composicion'"> - Composición -> La clase contenida y el contenedor deben tener los mismmos ciclos de vida </pre>
+    <pre *ngSwitchCase="'composicion'">  - Los objetos contenidos son solamente del objeto contenedor, si este se destruye, todos sus componentes tambien </pre>
+    <pre *ngSwitchCase="'composicion'">  - Su representación en UML se da mediante un diamante con relleno </pre>
+    <pre *ngSwitchCase="'composicion'">  - Una Empresa tiene 1..* Empleados, si NO existe una empresa, NO pueden existir sus empleados </pre>
+    <pre *ngSwitchCase="'composicion'"></pre>
+    <pre *ngSwitchCase="'composicion'">- En cuestion de codigo ambas relaciones no se diferencian entre si (en la mayoria de lenguajes) </pre>
+    <pre *ngSwitchCase="'composicion'">- La principal diferencia es a nivel conceptual, donde esta si puede ayudar a entender mejor el problema y su modelado </pre>
 
     <pre *ngSwitchCase="'pooStatic'">- Metodos o atributos que pertenecen a la clase y no a un objeto como tal</pre>
     <pre *ngSwitchCase="'pooStatic'">- Son accesibles de manera global, por lo que hay que tener cuidado con su uso </pre>
