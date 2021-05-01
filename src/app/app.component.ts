@@ -6,6 +6,7 @@ import { ArquitecturasComponent } from './components/arquitecturas/arquitecturas
 import { BuenasPracticasComponent } from './components/buenas-practicas/buenas-practicas.component';
 import { CompilacionComponent } from './components/compilacion/compilacion.component';
 import { ConocimientosEmpiricosComponent } from './components/conocimientos-empiricos/conocimientos-empiricos.component';
+import { DockerComponent } from './components/dockerC/docker.component';
 import { EstrategiasDesarrolloComponent } from './components/estrategias-desarrollo/estrategias-desarrollo.component';
 import { FrameworksComponent } from './components/frameworks/frameworks.component';
 import { FuentesComponent } from './components/fuentes/fuentes.component';
@@ -66,7 +67,9 @@ export class AppComponent {
     // 16 - 19
     RequisitosComponent, PruebasComponent, GitComponent, WebComponent,
     // 20 - 23
-    ConocimientosEmpiricosComponent, FuentesComponent, SeguridadComponent, AnalisisComponent];
+    ConocimientosEmpiricosComponent, FuentesComponent, SeguridadComponent, AnalisisComponent,
+    // 24 - 28
+    DockerComponent];
 
   constructor(private componentFactoryResolver: ComponentFactoryResolver) { }
 

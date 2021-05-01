@@ -26,6 +26,7 @@ import { ConocimientosEmpiricosComponent } from './components/conocimientos-empi
 import { FuentesComponent } from './components/fuentes/fuentes.component';
 import { SeguridadComponent } from './components/seguridad/seguridad.component';
 import { AnalisisComponent } from './components/analisis/analisis.component';
+import { DockerComponent } from './components/dockerC/docker.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,8 @@ import { AnalisisComponent } from './components/analisis/analisis.component';
     ConocimientosEmpiricosComponent,
     FuentesComponent,
     SeguridadComponent,
-    AnalisisComponent
+    AnalisisComponent,
+    DockerComponent
   ],
   imports: [
     BrowserModule
