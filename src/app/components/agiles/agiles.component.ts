@@ -2,13 +2,14 @@ import { Component } from '@angular/core';
 import { LinkReferencia } from 'src/app/models/linkReferencia';
 
 @Component({
-  selector: 'app-pruebas',
-  templateUrl: './pruebas.component.html'
+  selector: 'app-agiles',
+  templateUrl: './agiles.component.html'
 })
-export class PruebasComponent extends LinkReferencia {
+export class AgilesComponent extends LinkReferencia {
 
   constructor() {
     super();
   }
+
 
 }

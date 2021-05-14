@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import { LinkReferencia } from 'src/app/models/linkReferencia';
 
 @Component({
-  selector: 'app-pruebas',
-  templateUrl: './pruebas.component.html'
+  selector: 'app-poo',
+  templateUrl: './poo.component.html'
 })
-export class PruebasComponent extends LinkReferencia {
+export class PooComponent extends LinkReferencia {
 
   constructor() {
     super();

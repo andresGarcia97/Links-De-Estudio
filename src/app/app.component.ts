@@ -1,6 +1,7 @@
 import { Component, ComponentFactoryResolver, ViewChild, ViewContainerRef } from '@angular/core';
 import { fromEvent } from 'rxjs';
 import { map } from 'rxjs/operators';
+import { AgilesComponent } from './components/agiles/agiles.component';
 import { AnalisisComponent } from './components/analisis/analisis.component';
 import { ArquitecturasComponent } from './components/arquitecturas/arquitecturas.component';
 import { BuenasPracticasComponent } from './components/buenas-practicas/buenas-practicas.component';
@@ -17,6 +18,7 @@ import { MetodologiasComponent } from './components/metodologias/metodologias.co
 import { OtrosComponent } from './components/otros/otros.component';
 import { ParadigmasComponent } from './components/paradigmas/paradigmas.component';
 import { PatronesComponent } from './components/patrones/patrones.component';
+import { PooComponent } from './components/poo/poo.component';
 import { PruebasComponent } from './components/pruebas/pruebas.component';
 import { RefactorizacionComponent } from './components/refactorizacion/refactorizacion.component';
 import { RequisitosComponent } from './components/requisitos/requisitos.component';
@@ -69,7 +71,7 @@ export class AppComponent {
     // 20 - 23
     ConocimientosEmpiricosComponent, FuentesComponent, SeguridadComponent, AnalisisComponent,
     // 24 - 28
-    DockerComponent];
+    DockerComponent, PooComponent, AgilesComponent];
 
   constructor(private componentFactoryResolver: ComponentFactoryResolver) { }
 

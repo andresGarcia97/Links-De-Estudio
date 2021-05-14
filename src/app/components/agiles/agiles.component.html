@@ -1,0 +1,31 @@
+<div class="content">
+
+    <h2>Conceptos transversales a Metodologias Agiles</h2>
+  
+    <div class="card-container">
+    
+      <div class="card card-small" (click)="linkReferencia('moscow','https://proagilist.es/blog/agilidad-y-gestion-agil/priorizar-requisitos-tecnica-priorizacion-moscow/')"
+        tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+        <span>MOSCOW</span>
+      </div>
+
+    </div>
+  
+    <div class="terminal window" ></div>
+    <div class="terminal" [ngSwitch]="selection" #terminal>
+      <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
+  
+      <pre *ngSwitchCase="'moscow'">- Es una tecnica para la priorización de requisitos y funciones para lograr un alcance especificado </pre>
+      <pre *ngSwitchCase="'moscow'"></pre>    
+      <pre *ngSwitchCase="'moscow'">- M (Must Have)   -> debe tener:    este requisito debe estar implementado si ó si, si no, el producto es un fracaso </pre>
+      <pre *ngSwitchCase="'moscow'">- S (Should have) -> deberia tener: requisito de alta prioridad que en la medida de lo posible deberia quedar en el producto final </pre>
+      <pre *ngSwitchCase="'moscow'">- C (Could have)  -> podria tener:  caracteristica deseable, pero que no es necesaria y solo sera implementada si hay posibilidades </pre>
+      <pre *ngSwitchCase="'moscow'">- W (Won´t have)  -> no tendra:     son requisitos que estan descartados por esta vez, pero seran incluidos a futuro </pre>
+
+    </div>
+  
+    <app-referencia [referencia]="referencia"></app-referencia>
+  
+  </div>

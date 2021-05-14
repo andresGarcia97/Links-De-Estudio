@@ -27,6 +27,8 @@ import { FuentesComponent } from './components/fuentes/fuentes.component';
 import { SeguridadComponent } from './components/seguridad/seguridad.component';
 import { AnalisisComponent } from './components/analisis/analisis.component';
 import { DockerComponent } from './components/dockerC/docker.component';
+import { PooComponent } from './components/poo/poo.component';
+import { AgilesComponent } from './components/agiles/agiles.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +58,9 @@ import { DockerComponent } from './components/dockerC/docker.component';
     FuentesComponent,
     SeguridadComponent,
     AnalisisComponent,
-    DockerComponent
+    DockerComponent,
+    PooComponent,
+    AgilesComponent
   ],
   imports: [
     BrowserModule
