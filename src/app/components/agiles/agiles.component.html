@@ -11,6 +11,13 @@
         <span>MOSCOW</span>
       </div>
 
+      <div class="card card-small" (click)="linkReferencia('scoring','https://comunidad.iebschool.com/metodologiasparaelcambio/2014/03/23/priorizando-historias-de-usuario/')"
+        tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+        <span>Theme Scoring</span>
+      </div>
+
     </div>
   
     <div class="terminal window" ></div>
@@ -24,6 +31,13 @@
       <pre *ngSwitchCase="'moscow'">- C (Could have)  -> podria tener:  caracteristica deseable, pero que no es necesaria y solo sera implementada si hay posibilidades </pre>
       <pre *ngSwitchCase="'moscow'">- W (Won´t have)  -> no tendra:     son requisitos que estan descartados por esta vez, pero seran incluidos a futuro </pre>
 
+      <pre *ngSwitchCase="'scoring'">- Permite determinar la prioridad de las funcionalidades, basandose en diferentes criterios, que a su vez </pre>    
+      <pre *ngSwitchCase="'scoring'"> - constan con diferentes pesos, cada caracteristica de la Historia de Usuario tendra un valor </pre>    
+      <pre *ngSwitchCase="'scoring'"></pre>  
+      <pre *ngSwitchCase="'scoring'">- Determinar el peso de las caracteristicas es más facil ya que se hace en base a una comparación, </pre>  
+      <pre *ngSwitchCase="'scoring'"> - Donde previamente se ha tomado una HU como punto base y las demás sr miden con esta base </pre>    
+  
+  
     </div>
   
     <app-referencia [referencia]="referencia"></app-referencia>

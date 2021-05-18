@@ -34,6 +34,13 @@
     </div>
 
     <div class="card card-small"
+      (click)="linkReferencia('desglosegrasp','https://juan-garcia-carmona.blogspot.com/search/label/patr%C3%B3n')" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Desglose Grasp</span>
+    </div>
+
+    <div class="card card-small"
       (click)="linkReferencia('dao','https://www.genbeta.com/desarrollo/patrones-de-diseno-active-record-vs-dao')"
       tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -71,7 +78,7 @@
     <pre *ngSwitchCase="'desglosegof'">  -Builder -> Permite crear objetos bajo demanda, y solo con las propiedades especificadas </pre>
     <pre *ngSwitchCase="'desglosegof'"></pre>
     <pre *ngSwitchCase="'desglosegof'">- Estructurales </pre>
-    <pre *ngSwitchCase="'desglosegof'">  -Adapter -> Permite la comunicación entre objetos de tipos diferentes, independientemente del tipo de cada objeto</pre>
+    <pre *ngSwitchCase="'desglosegof'">  -Adapter -> Permite la comunicación entre objetos de tipos diferentes, independientemente del tipo de cada objeto </pre>
     <pre *ngSwitchCase="'desglosegof'">  -Decorator -> Añade funcionalidades extra añadiendo clases que ya las tienen, sin afectar al codigo existente </pre>
     <pre *ngSwitchCase="'desglosegof'">  -Facade -> Permite acceder facilmente a muchas funciones, muy usado en librerias y frameworks </pre>
     <pre *ngSwitchCase="'desglosegof'">  -Bridge -> Permite dividir clases muy relacionadas en otras más pequeñas e independientes </pre>
@@ -89,6 +96,18 @@
     <pre *ngSwitchCase="'grasp'">- Darle prioridad al polimorfismo más que a las sentencias de control al usarse en los objetos </pre>
     <pre *ngSwitchCase="'grasp'">- Evitar el uso de variables globales, especialmente en el desarrollo web </pre>
     <pre *ngSwitchCase="'grasp'">- La creación de factorias y clases intermedias ayudan a la mantenibilidad del código</pre>
+
+    <pre *ngSwitchCase="'desglosegrasp'">- Indirección -> Mejorar el acoplamiento entre 2 clases, asignando a una clase como mediadora entre ellas </pre>
+    <pre *ngSwitchCase="'desglosegrasp'"> - ideal para clases con alta volutibilidad y uso de librerias de externas </pre>
+    <pre *ngSwitchCase="'desglosegrasp'"></pre>
+    <pre *ngSwitchCase="'desglosegrasp'">- Invención pura -> son clases que no representan un objeto del dominio, sino que se creo para reducir el acoplamiento, </pre>
+    <pre *ngSwitchCase="'desglosegrasp'"> - aumentar la cohesion y mejorar la reutilización </pre>
+    <pre *ngSwitchCase="'desglosegrasp'"></pre>
+    <pre *ngSwitchCase="'desglosegrasp'">- Creación -> determina quien es el responsable de crear nuevas instancias de acuerdo a ciertos criterios, </pre>
+    <pre *ngSwitchCase="'desglosegrasp'"> - mal usado puede degenerar en el smells code de cirugia a escopetazos </pre>
+    <pre *ngSwitchCase="'desglosegrasp'"></pre>
+    <pre *ngSwitchCase="'desglosegrasp'">- Experto en Información -> la responsabilidad de crear o usar un objeto solo recae en aquel que conoce todo lo necesario para crearlo, </pre>
+    <pre *ngSwitchCase="'desglosegrasp'"> - reduciendo el acoplamiento, y con mayor cohesión y encapsulamiento </pre>
 
     <pre *ngSwitchCase="'dao'">- Son usados para el acceso a los datos (persistencia)</pre>
     <pre *ngSwitchCase="'dao'">  - DAO -> obliga a una mayor implementación manual a cambio de flexibilidad </pre>
