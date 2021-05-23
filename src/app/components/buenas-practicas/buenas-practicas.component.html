@@ -43,6 +43,13 @@
       <span>Ley de Demeter</span>
     </div>
 
+    <div class="card card-small"
+      (click)="linkReferencia('complejidad','http://oscarmoreno.com/la-complejidad-ciclomatica/')" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Complejidad ciclomatica</span>
+    </div>
+
   </div>
 
   <div class="terminal window" ></div>
@@ -72,6 +79,22 @@
     <pre *ngSwitchCase="'demeter'">- No aceptar caramelos de extraños</pre>
     <pre *ngSwitchCase="'demeter'">- El encadenamiento de muchos metodos puede significar un alto acoplamiento</pre>
     <pre *ngSwitchCase="'demeter'">- Entre más grande sea una pila de llamadas, sera más propensa a futuras refactorizaciones </pre>
+
+    <pre *ngSwitchCase="'complejidad'">- Complejidad Ciclomatica </pre>
+    <pre *ngSwitchCase="'complejidad'">- Es una metrica del software que proporciona una medida cuantitativa de la complejidad logica del programa </pre>
+    <pre *ngSwitchCase="'complejidad'">- Son los diferentes caminos que puede seguir una aplicación desde la entrada hasta la salida, </pre>
+    <pre *ngSwitchCase="'complejidad'"> - teniendo en cuenta condiciones, parametros, funciones y atributos </pre>
+    <pre *ngSwitchCase="'complejidad'"></pre>
+    <pre *ngSwitchCase="'complejidad'">- Lo ideal es tener la menor complejidad ciclomatica posible ya que: </pre>
+    <pre *ngSwitchCase="'complejidad'"> - Facilita el mantenimiento del codigo </pre>
+    <pre *ngSwitchCase="'complejidad'"> - Simplifica la refactorización </pre>
+    <pre *ngSwitchCase="'complejidad'"> - El codigo es más facil de entender </pre>
+    <pre *ngSwitchCase="'complejidad'"> - La escabilidad del proyecto se puede facilitar </pre>
+    <pre *ngSwitchCase="'complejidad'"></pre>
+    <pre *ngSwitchCase="'complejidad'">- Para reducirla se pueden aplicar los siguientes concejos: </pre>
+    <pre *ngSwitchCase="'complejidad'"> - No abusar de la identación </pre>
+    <pre *ngSwitchCase="'complejidad'"> - Evitar las sentencias switch </pre>
+    <pre *ngSwitchCase="'complejidad'"> - Metodos pequeños para funcionalidades más desacopladas </pre>
 
   </div>
 
