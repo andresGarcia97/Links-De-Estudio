@@ -55,6 +55,20 @@
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Contratos</span>
       </div>
+
+      <div class="card card-small"
+        (click)="linkReferencia('descomposicion','http://miguedt.blogspot.com/2013/01/descomposicion-funcional.html#:~:text=La%20descomposici%C3%B3n%20funcional%20se%20refiere,en%20funci%C3%B3n%20de%20la%20composici%C3%B3n')" tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+        <span>Descomposición</span>
+      </div>
+
+      <div class="card card-small"
+        (click)="linkReferencia('enlaces','https://es.fondoperlaterra.org/comdifference-between-static-and-dynamic-binding-2')" tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+        <span>Enlaces</span>
+      </div>
       
     </div>
   
@@ -116,6 +130,18 @@
       <pre *ngSwitchCase="'contratos'">- Las Responsabilidades estan previamente definidas y estas no se deben romper </pre>
       <pre *ngSwitchCase="'contratos'">- Se manejan los conceptos de precondiciones y postcondiciones con mayor importancia </pre>
       <pre *ngSwitchCase="'contratos'">- Ademas de incluir el concepto de inmutabilidad, al entrar como al salir </pre>
+
+      <pre *ngSwitchCase="'descomposicion'">- La descomposición funcional Se refiere al proceso de resolución de las funciones de las partes consituyentes, </pre>
+      <pre *ngSwitchCase="'descomposicion'"> - de tal manera que la función original se pueda reconstruir </pre>
+      <pre *ngSwitchCase="'descomposicion'">- Este proceso se lleva a cabo con la idea de desmenuzar la realidad en sus partes constitutivas más elementales </pre>
+      <pre *ngSwitchCase="'descomposicion'"> - esto ayuda a la modularización del diseño, y a la definición de responsabilidades unicas </pre>
+      <pre *ngSwitchCase="'descomposicion'">- Se debe realizar de manera responsable y bien planeada, ya que su abuso puede resultar en un antipatron, </pre>
+      <pre *ngSwitchCase="'descomposicion'"> - donde el costo de integración entre elementos es demasiado elevado, no es partir porque si, es hacerlo donde se debe </pre>
+
+      <pre *ngSwitchCase="'enlaces'">- Enlace estatico & dinamico</pre>
+      <pre *ngSwitchCase="'enlaces'">- La asociación entre la definición de los metodos y variables, se suele dar de 2 maneras, durante tiempo de ejecución y de compilación </pre>
+      <pre *ngSwitchCase="'enlaces'">- Todo lo se pueda conocer en tiempo de compilación, y que es necesario para que el programa se pueda ejecutar se conoce como enlace estatico </pre>
+      <pre *ngSwitchCase="'enlaces'">- Las cosas de las cuales es necesario ejecutar el programa para conocer su valor y su comportamiento, se conoce como enlace dinamico </pre>
 
     </div>
   
