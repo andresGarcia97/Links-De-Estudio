@@ -18,6 +18,20 @@
         <span>Theme Scoring</span>
       </div>
 
+      <div class="card card-small" (click)="linkReferencia('muda','https://prevencontrol.com/prevenblog/las-7-mudas/#:~:text=Los%20MUDA%2C%20t%C3%A9rmino%20japon%C3%A9s%20que,Sistema%20de%20producci%C3%B3n%20de%20Toyota')"
+        tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+        <span>Desperdicio</span>
+      </div>
+
+      <div class="card card-small" (click)="linkReferencia('5s','https://www.gestiopolis.com/5s-seiri-seiton-seiso-seiketsu-y-shitsuke-base-de-la-mejora-continua/')"
+        tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+        <span>5s</span>
+      </div>
+
     </div>
   
     <div class="terminal window" ></div>
@@ -35,9 +49,44 @@
       <pre *ngSwitchCase="'scoring'"> - constan con diferentes pesos, cada caracteristica de la Historia de Usuario tendra un valor </pre>    
       <pre *ngSwitchCase="'scoring'"></pre>  
       <pre *ngSwitchCase="'scoring'">- Determinar el peso de las caracteristicas es más facil ya que se hace en base a una comparación, </pre>  
-      <pre *ngSwitchCase="'scoring'"> - Donde previamente se ha tomado una HU como punto base y las demás sr miden con esta base </pre>    
-  
-  
+      <pre *ngSwitchCase="'scoring'"> - Donde previamente se ha tomado una HU como punto base y las demás sr miden con esta base </pre>
+
+      <pre *ngSwitchCase="'muda'">- El desperdicio en las empresas viene del termino japones MUDA, que es todo lo inutil, superfluo, despilfarro, residuos, ocioso </pre> 
+      <pre *ngSwitchCase="'muda'"></pre>  
+      <pre *ngSwitchCase="'muda'">- Sobreproducción -> producir más de lo demandado, esperando que el mercado lo necesite es una mala praxis, </pre>  
+      <pre *ngSwitchCase="'muda'"> - que despilfarra recursos que pudieron ser usados en otras areas </pre>  
+      <pre *ngSwitchCase="'muda'">- Esperas -> son los famosos cuellos de botella, donde un proceso alenta a los demás, haciendoles perder tiempo </pre>  
+      <pre *ngSwitchCase="'muda'">- Transporte -> todo movimiento innecesario de elementos que no aporta valor debe ser minimizado </pre>  
+      <pre *ngSwitchCase="'muda'">- SobreProcesos -> son procesos que aunque pueden ser utiles, no van a volver ser usados, por eso su realización es un desperdicio </pre>  
+      <pre *ngSwitchCase="'muda'">- Exceso de inventario -> puede conllevar a perdidad monetarias a la empresa, debido a que se pueden volver obsoletos, o nunca usarse </pre>  
+      <pre *ngSwitchCase="'muda'">- Movimientos innecesarios -> todo movimiento que no aporte valor al producto es un despedicio, hasta caminar al trabajo puede serlo </pre>
+      <pre *ngSwitchCase="'muda'">- Defectos -> todo error consume tiempo para ser resuelto, independientemente de su tamaño, además de la insatisfacción del cliente </pre>  
+
+      <pre *ngSwitchCase="'5s'">- Seiri, Seiton, Seiso, Seiketsu, Shitsuke; la base de la mejora continua </pre>
+      <pre *ngSwitchCase="'5s'"></pre>  
+      <pre *ngSwitchCase="'5s'">- Seieri -> clasifica y organizar de manera apropiada </pre> 
+      <pre *ngSwitchCase="'5s'"> - es retirar del area o estación todo aquello que no es necesario </pre>   
+      <pre *ngSwitchCase="'5s'">- Seiton -> orden </pre>  
+      <pre *ngSwitchCase="'5s'"> - organizar los elementos necesarios de manera que sean de facil acceso </pre>  
+      <pre *ngSwitchCase="'5s'">- Seiso  -> limpieza</pre> 
+      <pre *ngSwitchCase="'5s'"> - ya con un orden establecido y areas limpias, es más facil detectar malas practicas </pre>   
+      <pre *ngSwitchCase="'5s'">- Seiketsu -> estandares</pre>  
+      <pre *ngSwitchCase="'5s'"> - este estado solo se obtiene cuando la limpieza y la organización se mantienen constantes </pre>  
+      <pre *ngSwitchCase="'5s'">- Shitsuke -> disciplina</pre>  
+      <pre *ngSwitchCase="'5s'"> - es la creación de habitos que eviten el rompimiento de los conceptos anteriores </pre>  
+      <pre *ngSwitchCase="'5s'"></pre>  
+      <pre *ngSwitchCase="'5s'">- ¿ Porque no la aplican algunas empresas ? </pre>  
+      <pre *ngSwitchCase="'5s'"></pre>  
+      <pre *ngSwitchCase="'5s'">- La maquinaria no puede parar -> los cronogramas no dan tiempo de mantenimiento de la maquinaria </pre>  
+      <pre *ngSwitchCase="'5s'">- La limpieza como perdida de tiempo -> algunos empleadores pagan para trabajar, no para limpiar su area de trabajo </pre>  
+      <pre *ngSwitchCase="'5s'">- Costumbre -> crear nuevos habitos y cambiar los viejos es un cambio fuerte y prolongado de paradigma </pre>  
+      <pre *ngSwitchCase="'5s'"></pre>  
+      <pre *ngSwitchCase="'5s'">- Beneficios </pre>  
+      <pre *ngSwitchCase="'5s'">- Mayor seguridad de los empleados </pre>  
+      <pre *ngSwitchCase="'5s'">- Reducción de las perdidas y mermas por defectos </pre>  
+      <pre *ngSwitchCase="'5s'">- Mayor calidad, y menos tiempo de respuesta </pre>  
+      <pre *ngSwitchCase="'5s'">- Genera una cultura organizacional </pre>  
+   
     </div>
   
     <app-referencia [referencia]="referencia"></app-referencia>

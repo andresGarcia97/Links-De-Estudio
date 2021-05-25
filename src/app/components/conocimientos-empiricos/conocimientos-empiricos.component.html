@@ -83,6 +83,13 @@
         <span>Sesgo Cognitivo</span>
       </div>
 
+      <div class="card card-small" (click)="linkReferencia('multitarea','https://www.sodexo.es/blog/multitarea-multitasking/')"
+        tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+        <span>Multitareas</span>
+      </div>
+
     </div>
     
     <div class="terminal window" ></div>
@@ -194,6 +201,18 @@
       <pre *ngSwitchCase="'sesgos'"> - Resistencia reactiva -> se enfoca en hacer lo contrario de lo que alguien te dice ó aconseja, de manera selectiva y racional </pre>
       <pre *ngSwitchCase="'sesgos'"> - Sesgo de impacto -> es la tendencia a sobrestimar un evento o lugar extraordinario, que pasara de lo excepcional a lo comun </pre>
 
+      <pre *ngSwitchCase="'multitarea'">Es la capacidad de manejar y realizar multiples tareas al mismo tiempo, este concepto es muy buscado actualmente, aunque tiene pros y contras </pre>
+      <pre *ngSwitchCase="'multitarea'"></pre>
+      <pre *ngSwitchCase="'multitarea'">- Ventajas</pre>
+      <pre *ngSwitchCase="'multitarea'"> - Si se logra hacerlo de manera eficiente, se pueden ahorrar recursos y aumentar la productividad </pre>
+      <pre *ngSwitchCase="'multitarea'"> - Mejor reacción a las tareas complejas y un mejor manejo de las responsabilidades </pre>
+      <pre *ngSwitchCase="'multitarea'"></pre>
+      <pre *ngSwitchCase="'multitarea'">- Contras </pre>
+      <pre *ngSwitchCase="'multitarea'"> - Menor eficacia, al tener un mayor ruido de las acciones por hacer </pre>
+      <pre *ngSwitchCase="'multitarea'"> - Decaimiento de la memoria y posibles problemas de estres, además de una peor salud fisica y mental </pre>
+      <pre *ngSwitchCase="'multitarea'"> - Mayor riesgo de errores al tener que estar atento a más cosas </pre>
+      <pre *ngSwitchCase="'multitarea'"> - Menor calidad del trabajo, además de posibilidades de sufrir de deficit de atención </pre>
+      
     </div>
   
     <app-referencia [referencia]="referencia"></app-referencia>

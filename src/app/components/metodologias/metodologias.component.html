@@ -98,6 +98,14 @@
       <span>RUP</span>
     </div>
 
+    <div class="card card-small"
+      (click)="linkReferencia('kaizen','https://www.movertis.com/blog/que-es-la-metodologia-kaizen/#:~:text=En%20japon%C3%A9s%2C%20las%20palabras%20Kai,se%20deja%20nunca%20de%20ejecutar')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Kaizen</span>
+    </div>
+
   </div>
 
   <div class="terminal window" ></div>
@@ -240,6 +248,13 @@
     <pre *ngSwitchCase="'rup'">    - Desarrollo del software como tal, e incluyen las pruebas del mismo </pre>
     <pre *ngSwitchCase="'rup'">  - Transición:</pre>
     <pre *ngSwitchCase="'rup'">    - Se lleva a cabo el plan de despliegue y seguimiento del software </pre>
+
+    <pre *ngSwitchCase="'kaizen'">- Terminos japoneses que significan respectivamente acción de cambio y mejora continua </pre>
+    <pre *ngSwitchCase="'kaizen'">- Consiste en eliminar las ineficiencias de tu sistema productivo, todos los dias se debe mejorar algo </pre>
+    <pre *ngSwitchCase="'kaizen'">1 -> planificar: debes ser consciente de tu situación, analizar los problemas y definir un plan de acción con lo que te gustaria mejorar </pre>
+    <pre *ngSwitchCase="'kaizen'">2 -> hacer: desarrollar el plan para cada uno de los aspectos que has identificado </pre>
+    <pre *ngSwitchCase="'kaizen'">3 -> comprobar: debes analizar que tu plan si este dando resultados, de lo contrario deberas volver a empezar </pre>
+    <pre *ngSwitchCase="'kaizen'">2 -> actuar: si has logrado cumplir los objetivos marcados, entonces es hora de estandarizar y continuar con las mejoras </pre>
 
   </div>
 
