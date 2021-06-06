@@ -24,6 +24,7 @@ import { RefactorizacionComponent } from './components/refactorizacion/refactori
 import { RequisitosComponent } from './components/requisitos/requisitos.component';
 import { SectionsComponent } from './components/sections/sections.component';
 import { SeguridadComponent } from './components/seguridad/seguridad.component';
+import { SmellsCodesComponent } from './components/smells-codes/smells-codes.component';
 import { SqlNosqlComponent } from './components/sql-nosql/sql-nosql.component';
 import { UmlComponent } from './components/uml/uml.component';
 import { VersionamientoComponent } from './components/versionamiento/versionamiento.component';
@@ -70,8 +71,8 @@ export class AppComponent {
     RequisitosComponent, PruebasComponent, GitComponent, WebComponent,
     // 20 - 23
     ConocimientosEmpiricosComponent, FuentesComponent, SeguridadComponent, AnalisisComponent,
-    // 24 - 28
-    DockerComponent, PooComponent, AgilesComponent];
+    // 24 - 27
+    DockerComponent, PooComponent, AgilesComponent, SmellsCodesComponent];
 
   constructor(private componentFactoryResolver: ComponentFactoryResolver) { }
 

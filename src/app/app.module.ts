@@ -29,6 +29,7 @@ import { AnalisisComponent } from './components/analisis/analisis.component';
 import { DockerComponent } from './components/dockerC/docker.component';
 import { PooComponent } from './components/poo/poo.component';
 import { AgilesComponent } from './components/agiles/agiles.component';
+import { SmellsCodesComponent } from './components/smells-codes/smells-codes.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +61,8 @@ import { AgilesComponent } from './components/agiles/agiles.component';
     AnalisisComponent,
     DockerComponent,
     PooComponent,
-    AgilesComponent
+    AgilesComponent,
+    SmellsCodesComponent
   ],
   imports: [
     BrowserModule

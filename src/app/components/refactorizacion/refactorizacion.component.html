@@ -47,13 +47,6 @@
       <span>¿ Como ?</span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('codesmells','https://openwebinars.net/blog/code-smells-y-deuda-tecnica/')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>Code Smells</span>
-    </div>
-
   </div>
 
   <div class="terminal window" ></div>
@@ -101,10 +94,6 @@
     <pre *ngSwitchCase="'comorefactorizar'">- El resultado debe ser mejor que lo anterior, de lo contrario sera tiempo perdido </pre>
     <pre *ngSwitchCase="'comorefactorizar'">- No se deben crear nuevas funciones, eso es estrictamente en tiempo de desarrollo </pre>
     <pre *ngSwitchCase="'comorefactorizar'">- Los tests deben seguir pasando tal y como antes de empezar</pre>
-
-    <pre *ngSwitchCase="'codesmells'">- Son cosas en el codigo que se pueden hacer de una mejor manera o que a la larga seran malas practicas</pre>
-    <pre *ngSwitchCase="'codesmells'">- Aunque no sean un problemas prioritarios haran crecer la deuda tecnica e inclusive podran crear fallos en el futuro </pre>
-    <pre *ngSwitchCase="'codesmells'">- Que el codigo funcione no significa que sea tecnicamente correcto</pre>
 
   </div>
 
