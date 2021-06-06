@@ -51,6 +51,20 @@
       <span>De Actividades</span>
     </div>
 
+    <div class="card card-small" (click)="linkReferencia('paquetes','https://diagramasuml.com/paquetes/')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>De Paquetes</span>
+    </div>
+  
+    <div class="card card-small" (click)="linkReferencia('estados','https://diagramasuml.com/estados/')"
+      tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>De Estados</span>
+    </div>
+
     <div class="card card-small" (click)="linkReferencia('vista','https://es.wikipedia.org/wiki/Modelo_de_Vistas_de_Arquitectura_4%2B1')"
      tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -97,6 +111,17 @@
     <pre *ngSwitchCase="'actividades'"> - Por lo general tienen un punto inicial y final </pre>
     <pre *ngSwitchCase="'actividades'"> - Modelan un flujo de trabajo sin dar mucho enfasis a la peculiaridad de cada subsistema </pre>
     <pre *ngSwitchCase="'actividades'"> - Estos diagrama se pueden encandenar entre si para crear secuencias más complejas </pre>
+
+    <pre *ngSwitchCase="'paquetes'">- Diagramas de Paquetes </pre>
+    <pre *ngSwitchCase="'paquetes'"> - Representa la estructura basica de los componentes del sistema </pre>
+    <pre *ngSwitchCase="'paquetes'"> - Paquete -> conjunto de elementos concretos que contienen una función especifica </pre>
+    <pre *ngSwitchCase="'paquetes'"> - Pueden representar la dependencia de paquetes entre si </pre>
+
+    <pre *ngSwitchCase="'estados'">- Diagramas de estados </pre>
+    <pre *ngSwitchCase="'estados'"> - Representa el fluir de una situación a otra del sistema </pre>
+    <pre *ngSwitchCase="'estados'"> - Pueden tener condiciones externas, o simplemente ser inherente al sistema </pre>
+    <pre *ngSwitchCase="'estados'"> - Se conforma por el estado inicial, los estados del sistema, los estados finales (uno ó varios) </pre>
+    <pre *ngSwitchCase="'estados'">  - y las transiciones de un estado a otro </pre>
 
     <pre *ngSwitchCase="'usos'">- Casos de uso </pre>
     <pre *ngSwitchCase="'usos'"> - Representan los requisitos funcionales de manera grafica </pre>

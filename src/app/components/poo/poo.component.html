@@ -64,6 +64,20 @@
       </div>
 
       <div class="card card-small"
+        (click)="linkReferencia('polimorfismo','https://devexperto.com/herencia-vs-composicion/')" tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+        <span>Polimorfismo</span>
+      </div>
+
+      <div class="card card-small"
+        (click)="linkReferencia('herVScomp','https://devexperto.com/herencia-vs-composicion/')" tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+        <span>Herencia/Composición</span>
+      </div>
+
+      <div class="card card-small"
         (click)="linkReferencia('enlaces','https://es.fondoperlaterra.org/comdifference-between-static-and-dynamic-binding-2')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
@@ -137,6 +151,21 @@
       <pre *ngSwitchCase="'descomposicion'"> - esto ayuda a la modularización del diseño, y a la definición de responsabilidades unicas </pre>
       <pre *ngSwitchCase="'descomposicion'">- Se debe realizar de manera responsable y bien planeada, ya que su abuso puede resultar en un antipatron, </pre>
       <pre *ngSwitchCase="'descomposicion'"> - donde el costo de integración entre elementos es demasiado elevado, no es partir porque si, es hacerlo donde se debe </pre>
+
+      <pre *ngSwitchCase="'polimorfismo'">- El polimorfismo es la capacidad de adoptar diferentes comportamientos dependiendo de si se es un hijo o un padre </pre>
+      <pre *ngSwitchCase="'polimorfismo'">- Es una relajación de los tipos en lenguajes tipados y uno de los efectos de la herencia como especialización </pre>
+
+      <pre *ngSwitchCase="'herVScomp'"></pre>
+      <pre *ngSwitchCase="'herVScomp'">        caso             diseño basado en herencia                            diseño basado en composición             </pre>
+      <pre *ngSwitchCase="'herVScomp'">Inicio del desarrollo       Más rapido                                           Más lento                     </pre>
+      <pre *ngSwitchCase="'herVScomp'">Diseño del software         Facil pero pobre                                     Más complejo                    </pre>
+      <pre *ngSwitchCase="'herVScomp'">Efectos no deseados         Propicia                                             Reducidos                     </pre>
+      <pre *ngSwitchCase="'herVScomp'">Adaptabilidad               Más niveles más complejidad                          Facil de cambiar (instancias)          </pre>
+      <pre *ngSwitchCase="'herVScomp'">Testing                     Entre más sobre escritura más dificil de cambiar     Piezas acotadas y fronteras claras      </pre>
+      <pre *ngSwitchCase="'herVScomp'">Extension                   Debe hacerse con cuidado de no extender "basura"     Facil incorporación de piezas nuevas     </pre>
+      <pre *ngSwitchCase="'herVScomp'">Polimorfismo                No es necesario ningun mecanismo extra               Se puede lograr mediante interfaces      </pre>
+      <pre *ngSwitchCase="'herVScomp'"></pre>
+      <pre *ngSwitchCase="'herVScomp'"></pre>
 
       <pre *ngSwitchCase="'enlaces'">- Enlace estatico & dinamico</pre>
       <pre *ngSwitchCase="'enlaces'">- La asociación entre la definición de los metodos y variables, se suele dar de 2 maneras, durante tiempo de ejecución y de compilación </pre>
