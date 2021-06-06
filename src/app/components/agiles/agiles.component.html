@@ -1,6 +1,6 @@
 <div class="content">
 
-    <h2>Conceptos transversales a Metodologias Agiles</h2>
+    <h2>Conceptos transversales en Metodologias Agiles</h2>
   
     <div class="card-container">
     
@@ -30,6 +30,20 @@
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>5s</span>
+      </div>
+
+      <div class="card card-small" (click)="linkReferencia('muda#1','https://samuelcasanova.com/2014/03/los-7-desperdicios-del-desarrollo-de-software-i/')"
+        tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+        <span>Muda #1</span>
+      </div>
+
+      <div class="card card-small" (click)="linkReferencia('muda#2','https://samuelcasanova.com/2014/03/los-7-desperdicios-del-desarrollo-de-software-y-ii/')"
+        tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+        <span>Muda #2</span>
       </div>
 
     </div>
@@ -86,7 +100,25 @@
       <pre *ngSwitchCase="'5s'">- Reducción de las perdidas y mermas por defectos </pre>  
       <pre *ngSwitchCase="'5s'">- Mayor calidad, y menos tiempo de respuesta </pre>  
       <pre *ngSwitchCase="'5s'">- Genera una cultura organizacional </pre>  
-   
+
+      <pre *ngSwitchCase="'muda#1'"> 1 -> Trabajo hecho a medias: desplegar sin probar y tener errores conocidos más no solucionados, </pre>   
+      <pre *ngSwitchCase="'muda#1'">  - daran problemas a futuro, de manera que aveces es mejor un nuevo desarrollo que corregir lo existente </pre>    
+      <pre *ngSwitchCase="'muda#1'"> 2 -> Funcionalidad extra: toda funcionalidad que no haya sido pedida significa, </pre>    
+      <pre *ngSwitchCase="'muda#1'">  - recursos gastados que no tendran redito alguno </pre>    
+      <pre *ngSwitchCase="'muda#1'"> 3 -> Reaprendizaje: nuestra memoria no es absoluta, por lo que inevitablemente olvidaremos cosas, </pre>    
+      <pre *ngSwitchCase="'muda#1'">  - y gastaremos tiempo volviendolas a aprender, tambien aplica para personas expertas </pre>    
+      <pre *ngSwitchCase="'muda#1'">  - que ya tienen el conocimiento, pero nos empeñamos por aprenderlo nosotros mismos, sumando tiempo al desperdicio </pre>    
+
+      <pre *ngSwitchCase="'muda#2'"> 4 -> Transferencia de conocimiento: todo proceso de comunicación es ineficiente ya que, </pre>    
+      <pre *ngSwitchCase="'muda#2'">  - durante el proceso se suelen perder datos u omitir detalles importantes, y asi entre más niveles </pre>    
+      <pre *ngSwitchCase="'muda#2'">  - haya que permear, de las mejores manera para evitar esto son la comunicación cara a cara </pre>    
+      <pre *ngSwitchCase="'muda#2'"> 5 -> Retrasos: algunas funcionalidades requieren que sean lineales, por lo que si la etapa previa se retrasa, </pre>    
+      <pre *ngSwitchCase="'muda#2'">  - las etapas subsiguientes tambien lo haran, por lo que estas situaciones deben ser evitadas lo más posible </pre>    
+      <pre *ngSwitchCase="'muda#2'"> 6 -> Cambios de contexto: cuando tenemos varias cosas por hacer de manera inmediata, tendemos a ser multitarea, </pre>    
+      <pre *ngSwitchCase="'muda#2'">  - esto no es más que un cambio de contexto que requiere tiempo y esfuerzo, y que entre más se hagan, más desperdicio habra </pre>    
+      <pre *ngSwitchCase="'muda#2'"> 7 -> Defectos: uno de los más peligrosos, ya que entre más tarde se encuentre un error, más costoso sera corregirlo </pre>    
+      <pre *ngSwitchCase="'muda#2'">  - estos errores se pueden disminuir por medio de las pruebas, e integración continua </pre>    
+
     </div>
   
     <app-referencia [referencia]="referencia"></app-referencia>

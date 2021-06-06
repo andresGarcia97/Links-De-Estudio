@@ -36,6 +36,14 @@
       </div>
 
       <div class="card card-small"
+        (click)="linkReferencia('smart','https://beagilemyfriend.com/historias-de-usuario-invest-smart/')"
+        tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+        <span>SMART</span>
+      </div>
+
+      <div class="card card-small"
         (click)="linkReferencia('3c','https://julibetancur.blog/tag/tres-c/')"
         tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -94,16 +102,22 @@
       <pre *ngSwitchCase="'invest'"> S -> pequeña, las HU deben poder realizarse en un solo sprint, por lo que puede ser subdividida de lo contrario </pre>
       <pre *ngSwitchCase="'invest'"> T -> testeable, toda HU debe ser probada y validada, permitiendo que se considere finalizada </pre>
 
+      <pre *ngSwitchCase="'smart'"> S -> specific, debe ser lo suficientemente especifica como para ser entendida </pre>
+      <pre *ngSwitchCase="'smart'"> M -> measurable, medible, ya que debe hacer lo que se pretende, segun el criterio del equipo </pre>
+      <pre *ngSwitchCase="'smart'"> A -> achievable, alcanzable, toda meta debe ser ambiciosa, más no demasido como para no alcanzarla </pre>
+      <pre *ngSwitchCase="'smart'"> R -> relevant, toda tarea debe ser relevante para que contribuya a la historia y al proyecto </pre>
+      <pre *ngSwitchCase="'smart'"> T -> time-boxed, cuenta con un tiempo limite para ser alcanzada, y asi saber los dias en que estara lista aproximadamente </pre>
+
       <pre *ngSwitchCase="'agil'">- Nace con el proposito de reformar el desarrollo de software para hacerlo más eficiente y eficaz </pre>
       <pre *ngSwitchCase="'agil'">- Son 4 principios que toda metodologia agil lleva a cabo para mejorar el desarrollo </pre>
-      <pre *ngSwitchCase="'agil'">- 1 -> Individuos e interacciones sobre procesos y herramientas </pre>
-      <pre *ngSwitchCase="'agil'">- 2 -> Software funcionando sobre documentación extensiva </pre>
-      <pre *ngSwitchCase="'agil'">- 3 -> Colaboración con el cliente sobre negociación contractual </pre>
-      <pre *ngSwitchCase="'agil'">- 4 -> Respuesta ante el cambio sobre seguir un plan </pre>
+      <pre *ngSwitchCase="'agil'"></pre>
+      <pre *ngSwitchCase="'agil'"> - Individuos e interacciones <strong>sobre</strong> procesos y herramientas </pre>
+      <pre *ngSwitchCase="'agil'"> - Software funcionando <strong>sobre</strong> documentación extensiva </pre>
+      <pre *ngSwitchCase="'agil'"> - Colaboración con el cliente <strong>sobre</strong> negociación contractual </pre>
+      <pre *ngSwitchCase="'agil'"> - Respuesta ante el cambio <strong>sobre</strong> seguir un plan </pre>
 
       <pre *ngSwitchCase="'3c'">- Las historias de Usuario nacen de la necesidad de un entedimiento comun de lo que se debe hacer, </pre>
       <pre *ngSwitchCase="'3c'">- independientemente de quien lo lea, o quien lo haga, de ahi nace el concepto de las 3C </pre>
-      <pre *ngSwitchCase="'3c'">- Card, Confirmation, Conversation</pre>
       <pre *ngSwitchCase="'3c'"></pre>
       <pre *ngSwitchCase="'3c'">- Tarjeta (card) -> es un breve parrafo que resume la necesidad, el porque, y para quien es util, </pre>
       <pre *ngSwitchCase="'3c'"> - Estas tarjetas tienen su propia estructura, la cual generalmente tiene 3 partes + los criterios de aceptación </pre>

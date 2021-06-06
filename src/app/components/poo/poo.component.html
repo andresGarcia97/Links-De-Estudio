@@ -64,6 +64,13 @@
       </div>
 
       <div class="card card-small"
+        (click)="linkReferencia('herencia','https://www.ecured.cu/Herencia_(Inform%C3%A1tica)')" tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+        <span>Herencia</span>
+      </div>
+
+      <div class="card card-small"
         (click)="linkReferencia('polimorfismo','https://devexperto.com/herencia-vs-composicion/')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
@@ -101,7 +108,16 @@
       <pre *ngSwitchCase="'pooPilares'">- Abstracción   -> las acciones son publicas pero su complejidad esta oculta; todos necesitan el que, más no interesa el como </pre>
       <pre *ngSwitchCase="'pooPilares'">- Herencia      -> los hijos tienen acceso a los metodos y atributos del padre, además de las propias, pero el padre no conoce a sus hijos </pre>
       <pre *ngSwitchCase="'pooPilares'">- Polimorfismo  -> cada objeto se puede comportar diferente, aunque tenga una misma base, solamente cambiando la instancia </pre>
-  
+
+      <pre *ngSwitchCase="'herencia'">- Propiedad de que una clase pueda ser creada a partir de otra ya existente </pre>
+      <pre *ngSwitchCase="'herencia'">- Todo comportamiento heredado puedo ser sobreescrito por cualquiera de los hijos, dando lugar al polimorfismo </pre>
+      <pre *ngSwitchCase="'herencia'">- Es usada para la reutilización de codigo, definir jerarquias, y obtener comportamientos especializados </pre>
+      <pre *ngSwitchCase="'herencia'">- Puede ser de diferentes tipos: </pre>
+      <pre *ngSwitchCase="'herencia'"> - Simple -> cada clase SOLO puede heredar de una clase padre </pre>
+      <pre *ngSwitchCase="'herencia'"> - Multiple -> las clases pueden heredar a partir de una o más clases, esto puede traer problemas si hay atributos o metodos con nombres iguales </pre>
+      <pre *ngSwitchCase="'herencia'"> - Implementación -> los metodos pueden ser sobreescritos, y usarse tal cual vengan del padre o modificarlos para cambiar el comportamiento </pre>
+      <pre *ngSwitchCase="'herencia'"> - Interfaz -> los metodos son heredados, pero su implementación no, esta es propia de cada hijo </pre>
+
       <pre *ngSwitchCase="'composicion'">- La Agregación y la Composición, Son 2 tipos diferentes de relaciones entre clases </pre>
       <pre *ngSwitchCase="'composicion'">- En los diagramas UML se suele representar por medio de un diamante con o sin relleno, ubicado en la clase contenedora </pre>
       <pre *ngSwitchCase="'composicion'"></pre>
