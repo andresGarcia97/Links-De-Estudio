@@ -58,6 +58,8 @@ export class AppComponent {
     this.porciento = valor;
   });
 
+  buttonCloseComponent = false;
+
   public listaComponentes = [
     // 0 - 3
     ArquitecturasComponent, BuenasPracticasComponent, FrameworksComponent, MalasPracticasComponent,
@@ -77,6 +79,7 @@ export class AppComponent {
   constructor(private componentFactoryResolver: ComponentFactoryResolver) { }
 
   public crearComponent(component: any, $element: any): void {
+    this.buttonCloseComponent = true;
     const componente = this.componentFactoryResolver.resolveComponentFactory(component);
     this.componentes.clear();
     this.componentes.createComponent(componente);
@@ -93,4 +96,11 @@ export class AppComponent {
     const cuerpoweb = document.body;
     cuerpoweb.classList.toggle('oscuro');
   }
+
+  public close($element: any): void {
+    this.buttonCloseComponent = false;
+    this.componentes.clear();
+    this.scrollToElement($element);
+  }
+
 }
