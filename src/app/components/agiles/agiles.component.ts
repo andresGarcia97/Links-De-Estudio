@@ -11,5 +11,4 @@ export class AgilesComponent extends LinkReferencia {
     super();
   }
 
-
 }

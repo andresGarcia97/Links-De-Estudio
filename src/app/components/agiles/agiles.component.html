@@ -4,43 +4,37 @@
   
     <div class="card-container">
     
-      <div class="card card-small" (click)="linkReferencia('moscow','https://proagilist.es/blog/agilidad-y-gestion-agil/priorizar-requisitos-tecnica-priorizacion-moscow/')"
-        tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('moscow')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>MOSCOW</span>
       </div>
 
-      <div class="card card-small" (click)="linkReferencia('scoring','https://comunidad.iebschool.com/metodologiasparaelcambio/2014/03/23/priorizando-historias-de-usuario/')"
-        tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('scoring')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Theme Scoring</span>
       </div>
 
-      <div class="card card-small" (click)="linkReferencia('muda','https://prevencontrol.com/prevenblog/las-7-mudas/#:~:text=Los%20MUDA%2C%20t%C3%A9rmino%20japon%C3%A9s%20que,Sistema%20de%20producci%C3%B3n%20de%20Toyota')"
-        tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('muda')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Desperdicio</span>
       </div>
 
-      <div class="card card-small" (click)="linkReferencia('5s','https://www.gestiopolis.com/5s-seiri-seiton-seiso-seiketsu-y-shitsuke-base-de-la-mejora-continua/')"
-        tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('5s')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>5s</span>
       </div>
 
-      <div class="card card-small" (click)="linkReferencia('muda#1','https://samuelcasanova.com/2014/03/los-7-desperdicios-del-desarrollo-de-software-i/')"
-        tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('muda#1')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Muda #1</span>
       </div>
 
-      <div class="card card-small" (click)="linkReferencia('muda#2','https://samuelcasanova.com/2014/03/los-7-desperdicios-del-desarrollo-de-software-y-ii/')"
-        tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('muda#2')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Muda #2</span>
@@ -48,8 +42,10 @@
 
     </div>
   
-    <div class="terminal window" ></div>
+    <div class="terminal window"></div>
+    <div class="terminal" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
     <div class="terminal" [ngSwitch]="selection" #terminal>
+
       <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
   
       <pre *ngSwitchCase="'moscow'">- Es una tecnica para la priorización de requisitos y funciones para lograr un alcance especificado </pre>
