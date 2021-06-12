@@ -91,10 +91,6 @@ paleta de colores -> https://coolors.co/dd0031-1976d2-eeeeee-000000-ffba08
   background-color: var(--color-navy-blue);
 }
 
-.oscuro .github-star-badge {
-  border: 1px solid var(--color-navy-blue);
-}
-
 .oscuro .progress-bar {
   background-color: var(--color-navy-blue);
 }
@@ -415,14 +411,12 @@ footer a {
   color: var(--color-black);
   display: flex;
   align-items: center;
-  font-size: 12px;
   padding: 3px 10px;
-  border: 1px solid var(--color-selective-yellow);
-  border-radius: 3px;
+  height: 25px;
+  border-radius: 15px;
   background-color: var(--color-cultured);
-  margin-left: 4px;
   font-weight: 600;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  margin: 0 16px;
 }
 
 .github-star-badge:hover {

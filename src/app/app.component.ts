@@ -59,6 +59,7 @@ export class AppComponent {
   });
 
   buttonCloseComponent = false;
+  buttonChangueMode = false;
 
   public listaComponentes = [
     // 0 - 3
@@ -93,6 +94,7 @@ export class AppComponent {
   }
 
   public cambiarModo(): void {
+    this.buttonChangueMode = !this.buttonChangueMode;
     const cuerpoweb = document.body;
     cuerpoweb.classList.toggle('oscuro');
   }
