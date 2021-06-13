@@ -4,40 +4,31 @@
   
     <div class="card-container">
   
-      <div class="card card-small" (click)="linkReferencia('spa','https://desarrolloweb.com/articulos/que-es-una-spa.html#:~:text=En%20pocas%20palabras%2C%20SPA%20son,html')"
-        tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('spa')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>SPA</span>
       </div>
   
-      <div class="card card-small"
-        (click)="linkReferencia('pwa','https://www.iebschool.com/blog/progressive-web-apps-analitica-usabilidad/')"
-        tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('pwa')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>PWA</span>
       </div>
 
-      <div class="card card-small"
-        (click)="linkReferencia('seo','https://www.40defiebre.com/guia-seo/que-es-seo-por-que-necesito')"
-        tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('seo')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>SEO</span>
       </div>
 
-      <div class="card card-small"
-        (click)="linkReferencia('espacio','https://www.dsigno.es/blog/diseno-grafico/espacios-negativos-en-diseno-grafico')"
-        tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('espacio')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Espacio Negativo</span>
       </div>
 
-      <div class="card card-small"
-        (click)="linkReferencia('diseno','https://seocom.agency/es/blog/diseno-grafico-web/')"
-        tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('diseno')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Diseño Grafico</span>
@@ -46,24 +37,22 @@
     </div>
     
     <div class="terminal window"></div>
+    <div class="terminal" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
     <div class="terminal" [ngSwitch]="selection" #terminal>
+
       <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
   
-      <pre *ngSwitchCase="'spa'">- Single Page Aplicatión </pre>
       <pre *ngSwitchCase="'spa'">- Es una aplicación web donde todo el contenido se muestra en una sola sin regargar el navegador </pre>
       <pre *ngSwitchCase="'spa'">- Los componentes son segmentos individuales de HTML que juntos dan la impresión de unidad </pre>
       <pre *ngSwitchCase="'spa'">- Este tipo de paginas tambien maneja las url para cambiar entre vistas </pre>
       <pre *ngSwitchCase="'spa'">- La transición entre las paginas es fluida y el rendimiento es mayor en general </pre>
       <pre *ngSwitchCase="'spa'">- Los frameworks actuales trabajan de esta manera </pre>
   
-      <pre *ngSwitchCase="'pwa'">- Progressive Web App</pre>
       <pre *ngSwitchCase="'pwa'">- Estas aplicaciones nacen de paginas web normales para parecerse a aplicaciones nativas de telefonos moviles </pre>
-      <pre *ngSwitchCase="'pwa'"> - Ventajas </pre>
       <pre *ngSwitchCase="'pwa'">  - NO se necesita descargar nada desde una tienda de aplicaciones, solo tener acceso a un navegador con internet </pre>
-      <pre *ngSwitchCase="'pwa'">  - Aunque necesita internet para actualizaciones de la información, tambien puede funcionar sin este </pre>
+      <pre *ngSwitchCase="'pwa'">  - Aunque necesitan internet para actualizaciones de la información, tambien puede funcionar sin este </pre>
       <pre *ngSwitchCase="'pwa'">  - Bastante acorde con el enfoque mobile-first, que le da prioridad al movil que al escritorio </pre>
 
-      <pre *ngSwitchCase="'seo'">- Search Engine Optimization </pre>
       <pre *ngSwitchCase="'seo'">- La indexación de contenido es una gran herramienta para buscar lo que se necesita </pre>
       <pre *ngSwitchCase="'seo'">- El contenido de calidad es una de las mejores formas de aumentar el trafico del sitio web </pre>
       <pre *ngSwitchCase="'seo'">- La accesibilidad al contenido y la experiencia del usuario tambien son importantes </pre>

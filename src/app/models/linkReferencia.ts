@@ -198,9 +198,40 @@ export class LinkReferencia {
         ['desglose', 'https://refactoring.guru/es/refactoring/smells'],
         ['casos', 'https://refactoring.guru/es/refactoring/smells'],
         ['payoff', 'https://refactoring.guru/es/refactoring/smells'],
-        ['', ''],
-        ['', ''],
-        ['', ''],
+        // sql & No sql
+        ['sql', 'https://www.w3schools.com/sql/default.asp'],
+        ['dbms', 'https://www.astera.com/es/type/blog/database-management-software/'],
+        ['crud', 'https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/crud-las-principales-operaciones-de-bases-de-datos/'],
+        ['dl', 'https://platzi.com/blog/que-es-ddl-dml-dcl-y-tcl-integridad-referencial/'],
+        ['integridad', 'https://platzi.com/blog/que-es-ddl-dml-dcl-y-tcl-integridad-referencial/'],
+        ['erd', 'https://www.lucidchart.com/pages/es/que-es-un-diagrama-entidad-relacion'],
+        ['normalizacion', 'https://docs.microsoft.com/en-us/office/troubleshoot/access/database-normalization-description'],
+        ['nosql', 'https://pandorafms.com/blog/es/bases-de-datos-nosql/'],
+        ['tipos', 'https://www.acens.com/wp-content/images/2014/02/bbdd-nosql-wp-acens.pdf'],
+        ['acid', 'https://dosideas.com/noticias/base-de-datos/973-acid-en-las-bases-de-datos'],
+        ['orm', 'https://programarfacil.com/blog/que-es-un-orm/'],
+        // uml
+        ['uml', 'https://diagramasuml.com/'],
+        ['clase', 'https://diagramasuml.com/diagrama-de-clases/'],
+        ['componentes', 'https://diagramasuml.com/componentes/'],
+        ['despliegue', 'https://diagramasuml.com/despliegue/'],
+        ['usos', 'https://diagramasuml.com/casos-de-uso/'],
+        ['secuencia', 'https://diagramasuml.com/secuencia/'],
+        ['actividades', 'https://diagramasuml.com/actividades/'],
+        ['paquetes', 'https://diagramasuml.com/paquetes/'],
+        ['estados', 'https://diagramasuml.com/estados/'],
+        ['vista', 'https://es.wikipedia.org/wiki/Modelo_de_Vistas_de_Arquitectura_4%2B1'],
+        // versionamiento
+        ['git', 'https://david-estevez.gitbooks.io/the-git-the-bad-and-the-ugly/content/es/control-de-versiones.html'],
+        ['dependencias', 'https://www.hongkiat.com/blog/manage-dependencies-tools-webdev/'],
+        ['gradlevsmaven', 'https://www.chakray.com/es/gradle-vs-maven-definiciones-diferencias/'],
+        ['versiones', 'https://ed.team/blog/como-se-deciden-las-versiones-del-software'],
+        // web
+        ['spa', 'https://desarrolloweb.com/articulos/que-es-una-spa.html#:~:text=En%20pocas%20palabras%2C%20SPA%20son,html'],
+        ['pwa', 'https://www.iebschool.com/blog/progressive-web-apps-analitica-usabilidad/'],
+        ['seo', 'https://www.40defiebre.com/guia-seo/que-es-seo-por-que-necesito'],
+        ['espacio', 'https://www.dsigno.es/blog/diseno-grafico/espacios-negativos-en-diseno-grafico'],
+        ['diseno', 'https://seocom.agency/es/blog/diseno-grafico-web/']
     ]);
 
     protected titulos: Map<string, string> = new Map([
@@ -398,6 +429,40 @@ export class LinkReferencia {
         ['desglose', 'Smell codes por tipo'],
         ['casos', 'Casos donde pueden ser ignorados'],
         ['payoff', 'Beneficios de estas correciones'],
+        // sql & No sql
+        ['sql', '¿ Que es SQL ? '],
+        ['dbms', 'Software de Gestion de Bases de Datos'],
+        ['crud', 'Create, Read, Update, Delete'],
+        ['dl', 'DDL, DML, DCL, TCL'],
+        ['integridad', 'Integridad Referencial'],
+        ['erd', 'Diagrama Entidad Relación'],
+        ['normalizacion', 'Normalización de una BD'],
+        ['nosql', 'Bases de Datos NO SQL'],
+        ['tipos', 'Tipos de BD No SQL'],
+        ['acid', 'Esquema ACID'],
+        ['orm', 'Mapeo Objetos-Relacional'],
+        // uml
+        ['uml', 'Lenguaje Unificado de Modelado'],
+        ['clase', 'Diagrama de clases'],
+        ['componentes', 'Diagrama de componentes'],
+        ['despliegue', 'Diagrama de despliegue'],
+        ['usos', 'Diagrama de casos de uso'],
+        ['secuencia', 'Diagrama de secuencia'],
+        ['actividades', 'Diagrama de actividades'],
+        ['paquetes', 'Diagrama de paquetes'],
+        ['estados', 'Diagrama de estados'],
+        ['vista', 'Modelo 4+1 vistas'],
+        // versionamiento
+        ['git', 'Gestores de versiones'],
+        ['dependencias', 'Gestores de dependencias'],
+        ['gradlevsmaven', 'Gradle vs Maven'],
+        ['versiones', 'Manejo de versiones'],
+        // web
+        ['spa', 'Single Page Aplication'],
+        ['pwa', 'Progressive Web App'],
+        ['seo', 'Search Engine Optimization'],
+        ['espacio', 'El uso del espacio para diseñar'],
+        ['diseno', 'Diseño grafico']
     ]);
 
     public getLinkAndTittleByKey(key: string = ''): void {

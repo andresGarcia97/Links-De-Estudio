@@ -4,41 +4,22 @@
 
   <div class="card-container">
 
-    <div class="card card-small" (click)="linkReferencia('sql','https://www.w3schools.com/sql/default.asp')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('sql')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24"
         height="24" viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve">
-        <g>
-          <g>
             <path d="M334,57.959c-5.522,0-10,4.507-10,10.03c0,5.523,4.478,10.001,10,10.001c5.522,0,10-4.477,10-10v-0.061
             C344,62.406,339.523,57.959,334,57.959z" />
-          </g>
-        </g>
-        <g>
-          <g>
             <path d="M295.542,41.572C270.477,37.333,237.612,35,203,35c-5.522,0-10,4.477-10,10s4.478,10,10,10
             c33.528,0,65.209,2.234,89.206,6.291c0.564,0.096,1.125,0.142,1.679,0.142c4.79,0,9.023-3.454,9.849-8.334
             C304.654,47.653,300.987,42.493,295.542,41.572z" />
-          </g>
-        </g>
-        <g>
-          <g>
             <path d="M446,383.999c-5.522,0-10,4.477-10,10c0,11.219-4.369,21.766-12.302,29.698c-16.375,16.376-43.021,16.376-59.396,0
             C356.369,415.765,352,405.218,352,393.999s4.368-21.766,12.302-29.699c8.545-8.545,20.372-13.001,32.442-12.212
             c5.485,0.35,10.27-3.819,10.627-9.33c0.358-5.511-3.818-10.27-9.33-10.628c-17.804-1.161-35.268,5.412-47.882,18.028
             c-11.71,11.71-18.159,27.28-18.159,43.841c0,16.561,6.449,32.13,18.159,43.841c12.087,12.087,27.964,18.13,43.841,18.13
             s31.754-6.043,43.841-18.13c11.71-11.71,18.159-27.28,18.159-43.841C456,388.476,451.523,383.999,446,383.999z" />
-          </g>
-        </g>
-        <g>
-          <g>
             <path d="M437.872,350.188l-0.159-0.159l-7.118,7.024l7.071-7.071c-3.906-3.905-10.236-3.905-14.143,0
             c-3.905,3.905-3.905,10.237,0,14.143c0.007,0.007,0.139,0.138,0.147,0.146c1.955,1.972,4.527,2.958,7.101,2.958
             c2.546,0,5.092-0.966,7.042-2.899C441.734,360.441,441.76,354.109,437.872,350.188z" />
-          </g>
-        </g>
-        <g>
-          <g>
             <path d="M504.417,367.818l-14.517-3.616l-7.021-16.94l7.702-12.814c2.366-3.936,1.748-8.976-1.499-12.223l-23.308-23.308
             c-3.248-3.247-8.288-3.866-12.224-1.499l-12.813,7.703l-16.94-7.021l-3.617-14.518c-1.109-4.456-5.111-7.583-9.703-7.583H406
             V67.99c0-20.58-22.01-38.07-63.65-50.582C304.989,6.182,255.5,0,203,0S101.013,6.182,63.651,17.408C22.01,29.919,0,47.41,0,67.99
@@ -70,62 +51,47 @@
             h17.326l2.946,11.826c0.766,3.076,2.946,5.607,5.875,6.821l26.256,10.881c2.929,1.214,6.263,0.965,8.98-0.668l10.438-6.275
             l12.256,12.256l-6.274,10.439c-1.635,2.718-1.882,6.05-0.668,8.98l10.881,26.255c1.214,2.929,3.745,5.108,6.821,5.875L492,385.336
             V402.662z" />
-          </g>
-        </g>
-        <g>
-        </g>
       </svg>
       <span>SQL</span>
     </div>
 
-    <div class="card card-small" (click)="linkReferencia('dbms','https://www.astera.com/es/type/blog/database-management-software/')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('dbms')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>DBMS</span>
     </div>
 
-    <div class="card card-small" (click)="linkReferencia('crud','https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/crud-las-principales-operaciones-de-bases-de-datos/')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('crud')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>CRUD</span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('dl','https://platzi.com/blog/que-es-ddl-dml-dcl-y-tcl-integridad-referencial/')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('dl')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>DDL, DML, DCL, TCL</span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('integridad','https://platzi.com/blog/que-es-ddl-dml-dcl-y-tcl-integridad-referencial/')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('integridad')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Integridad Referencial </span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('erd','https://www.lucidchart.com/pages/es/que-es-un-diagrama-entidad-relacion')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('erd')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>ERD</span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('normalizacion','https://docs.microsoft.com/en-us/office/troubleshoot/access/database-normalization-description')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('normalizacion')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Normalización</span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('nosql','https://pandorafms.com/blog/es/bases-de-datos-nosql/')" tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('nosql')" tabindex="0">
         <svg class="material-icons" height="34" viewBox="0 0 70 70" width="34" xmlns="http://www.w3.org/2000/svg">
           <path d="m27 12h10v2h-10z"/><path d="m27 16h10v2h-10z"/><path d="m57 54v-8c0-.444-.293-.835-.72-.96l-23.28-6.79v-12.25h7c.553 0 1-.448 1-1v-16c0-.265-.105-.52-.293-.707l-6-6c-.187-.188-.441-.293-.707-.293h-10c-.553 0-1 .448-1 1v22c0 .552.447 1 1 1h7v12.25l-23.28 6.79c-.427.125-.72.516-.72.96v8c0 .444.293.835.72.96l24 7c.092.027.185.04.28.04s.188-.013.28-.04l24-7c.427-.125.72-.516.72-.96zm-22-48.586 2.586 2.586h-2.586zm-10-1.414h8v5c0 .552.447 1 1 1h5v14h-14zm6 36.333v5.253l-2.293-2.293-1.414 1.414 4 4c.195.195.451.293.707.293s.512-.098.707-.293l4-4-1.414-1.414-2.293 2.293v-5.253l19.429 5.667-20.429 5.958-20.429-5.958zm-22 7 22 6.417v5.917l-22-6.417zm24 12.334v-5.917l22-6.417v5.917z"/>
           <path d="m27 8h4v2h-4z"/><path d="m3 26h7c0 2.757 2.243 5 5 5h3c1.654 0 3 1.346 3 3v1.586l-2.293-2.293-1.414 1.414 4 4c.195.195.451.293.707.293s.512-.098.707-.293l4-4-1.414-1.414-2.293 2.293v-1.586c0-2.757-2.243-5-5-5h-3c-1.654 0-3-1.346-3-3h7c.553 0 1-.448 1-1v-16c0-.265-.105-.52-.293-.707l-6-6c-.187-.188-.441-.293-.707-.293h-10c-.553 0-1 .448-1 1v22c0 .552.447 1 1 1zm11-20.586 2.586 2.586h-2.586zm-10-1.414h8v5c0 .552.447 1 1 1h5v14h-14z"/>
@@ -133,24 +99,20 @@
       <span>NoSQL</span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('tipos','https://www.acens.com/wp-content/images/2014/02/bbdd-nosql-wp-acens.pdf')" tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('tipos')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Tipos NoSQL</span>
     </div>
 
 
-    <div class="card card-small"
-      (click)="linkReferencia('acid','https://dosideas.com/noticias/base-de-datos/973-acid-en-las-bases-de-datos')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('acid')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Esquema ACID</span>
     </div>
 
-    <div class="card card-small" (click)="linkReferencia('orm','https://programarfacil.com/blog/que-es-un-orm/')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('orm')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>ORM</span>
@@ -159,7 +121,9 @@
   </div>
 
   <div class="terminal window" ></div>
+  <div class="terminal" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
   <div class="terminal" [ngSwitch]="selection" #terminal>
+    
     <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
 
     <pre *ngSwitchCase="'sql'">- Es lenguaje de consultas estandar para manipular la información en una base de datos </pre>
@@ -169,7 +133,6 @@
     <pre *ngSwitchCase="'sql'">- Toda tabla deberia tener una clave primaria, para mejorar la indexación de contenido</pre>
     <pre *ngSwitchCase="'sql'">- La información deberia estar normalizada para evitar valores duplicados</pre>
 
-    <pre *ngSwitchCase="'dbms'"> Software de Gestion de Bases de Datos </pre>
     <pre *ngSwitchCase="'dbms'">- Se encargan de almacenar, administrar, manipular y resguardar los datos </pre>
     <pre *ngSwitchCase="'dbms'"></pre>
     <pre *ngSwitchCase="'dbms'">- Las BD guardan diferentes tipos de datos como: </pre>
@@ -183,7 +146,6 @@
     <pre *ngSwitchCase="'dbms'"> - Consistencia -> se maneja un estandar para todos los datos de todas las BD </pre>
     <pre *ngSwitchCase="'dbms'"> - MultiUsuario -> el acceso concurrente de varios usuarios es un tema comun para las BD </pre>
 
-    <pre *ngSwitchCase="'crud'">- CRUD -> Create, Read, Update, Delete </pre>
     <pre *ngSwitchCase="'crud'">- Son las 4 operaciones basicas a la hora de gestionar los datos de una BD </pre>
     <pre *ngSwitchCase="'crud'">- No solo es aplicable para SQL, tambien tiene su equivalencia en HTTP </pre>
     <pre *ngSwitchCase="'crud'">- La mayoria de frameworks tienen estos metodos ya implementados y listos para consumirse </pre>
@@ -218,7 +180,6 @@
     <pre *ngSwitchCase="'dl'"> - COMMIT -> guarda los cambios realizados </pre>
     <pre *ngSwitchCase="'dl'"> - ROLLBACK -> deshace el ultimo cambio hecho </pre>
 
-    <pre *ngSwitchCase="'integridad'">- Integridad Referencial </pre>
     <pre *ngSwitchCase="'integridad'"> - Son las reglas que garantizan que la información que la información sea inmutable hasta que se decida lo contrario </pre>
     <pre *ngSwitchCase="'integridad'"> - Tambien protege los datos de posibles errores a la hora de modificarlos </pre>
     <pre *ngSwitchCase="'integridad'"> - Esta es una de las principales diferencias entre las BD relacionales y NO relacionales </pre>

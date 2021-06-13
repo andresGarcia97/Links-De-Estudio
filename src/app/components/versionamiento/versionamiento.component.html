@@ -4,33 +4,25 @@
 
   <div class="card-container">
 
-    <div class="card card-small"
-      (click)="linkReferencia('git','https://david-estevez.gitbooks.io/the-git-the-bad-and-the-ugly/content/es/control-de-versiones.html')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('git')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Gestor de Versiones</span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('dependencias','https://www.hongkiat.com/blog/manage-dependencies-tools-webdev/')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('dependencias')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Dependencias Web</span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('gradlevsmaven','https://www.chakray.com/es/gradle-vs-maven-definiciones-diferencias/')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('gradlevsmaven')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Gradle VS Maven</span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('versiones','https://ed.team/blog/como-se-deciden-las-versiones-del-software')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('versiones')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Versionamiento</span>
@@ -39,6 +31,7 @@
   </div>
   
   <div class="terminal window"></div>
+  <div class="terminal" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
   <div class="terminal" [ngSwitch]="selection">
 
     <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
@@ -61,17 +54,20 @@
     <pre *ngSwitchCase="'gradlevsmaven'"> - La configuración se base en un archivo XML </pre>
     <pre *ngSwitchCase="'gradlevsmaven'"> - Maneja los jars necesarios para la ejecución del programa, ya sea de manera fisica o descargalos de repositorios </pre>
     <pre *ngSwitchCase="'gradlevsmaven'"> - Gestiona las dependencias y las declaraciones que necesiten los jars para funcionar</pre>
+    <pre *ngSwitchCase="'gradlevsmaven'"></pre>
     <pre *ngSwitchCase="'gradlevsmaven'">- Gradle -> esta basada en varios conceptos de Apache Maven por lo que tiene varias mejores frente a este </pre>
     <pre *ngSwitchCase="'gradlevsmaven'"> - Se basa en un lenguaje DSL, siendo más mantenible en el tiempo </pre>
     <pre *ngSwitchCase="'gradlevsmaven'"> - Tambien puede gestionar los ciclos de vida, igual que Maven </pre>
-    <pre *ngSwitchCase="'gradlevsmaven'"> - Su rendimiento es mayor en comparación </pre>
+    <pre *ngSwitchCase="'gradlevsmaven'"> - Su rendimiento es mayor en comparación directa con Maven </pre>
 
     <pre *ngSwitchCase="'versiones'">- Las versiones se pueden dar por numero o por estabilidad </pre>
     <pre *ngSwitchCase="'versiones'">- No existe una regla que indique que siempre se deben manejar asi, pero es util conocer las convenciones </pre>
+    <pre *ngSwitchCase="'versiones'"></pre>
     <pre *ngSwitchCase="'versiones'"> - Numeros ->  X.Y.Z</pre>
     <pre *ngSwitchCase="'versiones'">  - El primero numero -> indica la version principal del software </pre>
     <pre *ngSwitchCase="'versiones'">  - El segundo numero -> indica nuevas funcionalidades en la version mayor </pre>
     <pre *ngSwitchCase="'versiones'">  - El tercero numero -> es la correción de fallas, parches de seguridad, cambios menores, etc... </pre>
+    <pre *ngSwitchCase="'versiones'"></pre>
     <pre *ngSwitchCase="'versiones'"> - Estabilidad -> &alpha;, &beta;, RC</pre>
     <pre *ngSwitchCase="'versiones'">  - Alpha -> version inestable que probablemente contenga errores y deba ser corregida </pre>
     <pre *ngSwitchCase="'versiones'">  - Beta -> una version más estable que alpha y a la que se le deben hacer pruebas para verificarla </pre>
