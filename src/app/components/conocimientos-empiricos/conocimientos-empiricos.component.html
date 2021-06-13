@@ -1,15 +1,12 @@
 <div class="content">
 
-    <h2>Conocimientos Empirico y Psicologico</h2>
+    <h2>Conocimientos Empiricos y Psicologicos</h2>
   
     <div class="card-container">
   
-      <div class="card card-small" (click)="linkReferencia('balas','https://gist.github.com/esparta/582e43af7b803e0aaf69')"
-        tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('balas')" tabindex="0">
         <svg class="material-icons" width="24" height="24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512"
           style="enable-background:new 0 0 512 512;" xml:space="preserve">
-          <g>
-            <g>
               <path d="M508.416,3.582c-3.736-3.735-9.418-4.647-14.135-2.27l-13.115,6.607C435.394,30.98,393.802,60.43,357.4,95.519
                   c-3.517-1.75-7.9-1.168-10.831,1.763l-53.12,53.12l-51.157,22.746c-1.052,0.469-2.011,1.126-2.827,1.942l-215.06,215.06
                   c-3.67,3.67-3.67,9.62,0,13.289l1.118,1.118l-8.364,8.363l-1.118-1.118c-3.67-3.67-9.62-3.67-13.289,0
@@ -21,70 +18,59 @@
                   M115.204,467.66l-70.865-70.865l201.771-201.771l70.865,70.865L115.204,467.66z M327.236,249.571l-64.807-64.808l33.936-15.089
                   l45.961,45.96L327.236,249.571z M353.419,200.15L311.85,158.58l41.165-41.165l41.569,41.569L353.419,200.15z M403.534,140.956
                   l-32.49-32.49c33.634-32.307,71.863-59.63,113.828-81.337C463.163,69.091,435.842,107.32,403.534,140.956z" />
-            </g>
-          </g>
         </svg>
         <span>Balas de Plata</span>
       </div>
 
-      <div class="card card-small" (click)="linkReferencia('lehman','https://medium.com/@cartontabla/las-leyes-de-lehman-b57c623c3404#:~:text=Las%20Leyes%20de%20Lehman%20son,digamos%20que%20podr%C3%ADan%20ser%20ampliadas)')"
-        tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('lehman')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Leyes de Lehman</span>
       </div>
 
-      <div class="card card-small" (click)="linkReferencia('conway','https://www.javiergarzas.com/2015/06/conway.html')"
-        tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('conway')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Ley de Conway</span>
       </div>
 
-      <div class="card card-small" (click)="linkReferencia('murphy','https://www.caracteristicas.co/ley-de-murphy/')"
-        tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('murphy')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Ley de Murphy</span>
       </div>
 
-      <div class="card card-small" (click)="linkReferencia('cristales','https://lamenteesmaravillosa.com/la-teoria-las-ventanas-rotas/')"
-        tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('cristales')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Cristales rotos</span>
       </div>
 
-      <div class="card card-small" (click)="linkReferencia('quo','https://psicologiaymente.com/social/sesgo-statu-quo#:~:text=El%20sesgo%20del%20statu%20quo%20es%20un%20sesgo%20de%20tipo,sobre%20un%20aspecto%20en%20concreto.')"
-        tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('quo')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Status Quo</span>
       </div>
 
-      <div class="card card-small" (click)="linkReferencia('costo','https://psicologiaymente.com/psicologia/falacia-costo-hundido#:~:text=En%20resumen%2C%20la%20falacia%20del,cuyas%20expectativas%20son%20muy%20desalentadoras.')"
-        tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('costo')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Costo Hundido</span>
       </div>
 
-      <div class="card card-small" (click)="linkReferencia('tipos','https://stevenbenner.com/2010/07/the-5-types-of-programmers/')"
-        tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('tipos')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Programadores</span>
       </div>
 
-      <div class="card card-small" (click)="linkReferencia('sesgos','https://www.brainvestigations.com/neurociencia/sesgo-cognitivo-negocios/')"
-        tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('sesgos')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Sesgo Cognitivo</span>
       </div>
 
-      <div class="card card-small" (click)="linkReferencia('multitarea','https://www.sodexo.es/blog/multitarea-multitasking/')"
-        tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('multitarea')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Multitareas</span>
@@ -93,6 +79,7 @@
     </div>
     
     <div class="terminal window" ></div>
+    <div class="terminal" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
     <div class="terminal" [ngSwitch]="selection" #terminal>
       <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
   

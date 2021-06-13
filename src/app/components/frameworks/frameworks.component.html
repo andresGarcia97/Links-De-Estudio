@@ -4,38 +4,32 @@
 
   <div class="card-container">
 
-    <div class="card card-small" (click)="linkReferencia('frameworks','https://neoattack.com/neowiki/framework/')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('frameworks')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span> ¿ Que son ?</span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('ioc','https://medium.com/all-you-need-is-clean-code/inversi%C3%B3n-de-control-principio-de-hollywood-dont-call-us-we-ll-call-you-179e9c70e3d0')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('ioc')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span> IoC</span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('iod','https://www.arquitecturajava.com/el-patron-de-inyeccion-de-dependencia/')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('iod')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span> IoD</span>
     </div>
 
-    <div class="card card-small" (click)="linkReferencia('spring','https://spring.io/')" tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('spring')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span> Spring </span>
     </div>
 
     <div class="card card-small"
-      (click)="linkReferencia('angular','https://platzi.com/desarrollo-angular/?utm_source=google&utm_medium=cpc&utm_campaign=9328433462&utm_adgroup=94733526952&utm_content=452203650165&&gclid=Cj0KCQiA3smABhCjARIsAKtrg6LJDf4V2JKL7esXLHrcbpL4NIx8o-pixGZe0YdtUIU5HflNhR74Md0aArb4EALw_wcB&gclsrc=aw.ds')"
-      tabindex="0">
+      (click)="getLinkAndTittleByKey('angular')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Angular</span>
@@ -44,6 +38,7 @@
   </div>
 
   <div class="terminal window" ></div>
+  <div class="terminal" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
   <div class="terminal" [ngSwitch]="selection" #terminal>
     <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
 

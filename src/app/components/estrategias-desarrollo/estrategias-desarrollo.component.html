@@ -4,58 +4,47 @@
 
   <div class="card-container">
 
-    <div class="card card-small"
-      (click)="linkReferencia('ddd','https://github.com/jatubio/5minutos_laravel/wiki/Resumen-sobre-DDD.-Domain-Driven-Design')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('ddd')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>DDD</span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('bdd','https://www.itdo.com/blog/que-es-bdd-behavior-driven-development/#:~:text=Given%2DWhen%2DThen%20como%20lenguaje%20com%C3%BAn%20con%20BDD,que%20se%20van%20a%20ejecutar')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('bdd')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>BDD</span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('tdd','https://www.paradigmadigital.com/dev/tdd-como-metodologia-de-diseno-de-software/')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('tdd')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>TDD</span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('atdd','https://www.javiergarzas.com/2015/07/que-es-eso-de-atdd.html')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('atdd')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>ATDD</span>
     </div>
   
-    <div class="card card-small"
-      (click)="linkReferencia('analisis','https://www.ubjonline.mx/en-que-consisten-los-analisis-top-down-y-bottom-up/')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('analisis')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>Top & Up</span>
+      <span>Enfoques</span>
     </div>
     
   </div>
 
   <div class="terminal window" ></div>
+  <div class="terminal" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
   <div class="terminal" [ngSwitch]="selection" #terminal>
     <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
 
-    <pre *ngSwitchCase="'ddd'">- Diseño Orientado a Dominios</pre>
     <pre *ngSwitchCase="'ddd'"> -El lenguaje debe ser obicuo (entedible por cualquiera)</pre>
     <pre *ngSwitchCase="'ddd'"> -El desarrollo debe ser lo más abstracto posible para ser independiente de las implementaciones </pre>
     <pre *ngSwitchCase="'ddd'"> -Las capas se vuelven parte diciente del codigo, indicando su utilidad con sus nombres </pre>
 
-    <pre *ngSwitchCase="'bdd'">- Desarollo dirido por comportamiento</pre>
     <pre *ngSwitchCase="'bdd'"> - Es una evolución de TDD, que es más que solo testing </pre>
     <pre *ngSwitchCase="'bdd'"> - Aca las pruebas se concentran en tener un lenguaje obicuo, por lo que todas las partes se pueden involucrar rapidamente </pre>
     <pre *ngSwitchCase="'bdd'"> - Para implementarse las Historias de Usuario son fundamentales </pre>
@@ -63,7 +52,6 @@
     <pre *ngSwitchCase="'bdd'"> - <strong>Dado</strong> escenario y precondiciones <strong>Cuando</strong> acciones a ejecutar <strong>Entonces</strong> Resultado a validar</pre>
     <pre *ngSwitchCase="'bdd'"> - Mejora la comunicación entre todas las partes, ya que todas se comunican más entre si </pre>
 
-    <pre *ngSwitchCase="'tdd'">- Desarrollo dirigido por tests </pre>
     <pre *ngSwitchCase="'tdd'"> - Primero se escriben las pruebas, y despues se crea el codigo para que estas funcionen </pre>
     <pre *ngSwitchCase="'tdd'"> - Puede incrementar la carga de trabajo, pero se obtiene un codigo más robusto y mantenible </pre>
     <pre *ngSwitchCase="'tdd'"> - Basicamente es un ciclo constante de creación de pruebas, refactorización y crecimiento </pre>
@@ -71,7 +59,6 @@
     <pre *ngSwitchCase="'tdd'"> - La productividad se puede ver mermada si no se conoce esta estrategia </pre>
     <pre *ngSwitchCase="'tdd'"> - El incluir Bases de Datos o Interfaces graficas suele complicar el desarrollo </pre>
 
-    <pre *ngSwitchCase="'atdd'">- Desarrollo guiado por pruebas de aceptación </pre>
     <pre *ngSwitchCase="'atdd'">  - Primero se escriben las pruebas, despues se crean los casos de aceptación Y de ultimas se crea el codigo para que estos funcionen </pre>
     <pre *ngSwitchCase="'atdd'">  - Las pruebas se automatizan, por lo que a la larga el desarrollo se volvera más agil </pre>
     <pre *ngSwitchCase="'atdd'">  - Definir las Historias de Usuario y sus casos de aceptación es fundamental para evitar perder tiempo </pre>
