@@ -4,47 +4,37 @@
 
   <div class="card-container">
 
-    <div class="card card-small"
-      (click)="linkReferencia('practicas1','https://www.tithink.com/es/2018/06/13/12-buenas-practicas-para-el-desarrollo-software/')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('practicas1')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Parte #1</span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('practicas2','https://sg.com.mx/revista/mejores-pr%C3%A1cticas-para-el-desarrollo-software')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('practicas2')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Parte #2</span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('practicas3','https://velneo.es/15-buenas-practicas-proyectos-desarrollo-software/')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('practicas3')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Parte #3</span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('practicas4','http://www.noussintelligence.com/desarrollo-software-buenas-practicas-recomendaciones/')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('practicas4')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Parte #4</span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('demeter','https://www.adictosaltrabajo.com/2015/07/24/ley-de-demeter/')" tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('demeter')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Ley de Demeter</span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('complejidad','http://oscarmoreno.com/la-complejidad-ciclomatica/')" tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('complejidad')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Complejidad</span>
@@ -53,6 +43,7 @@
   </div>
 
   <div class="terminal window" ></div>
+  <div class="terminal" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
   <div class="terminal" [ngSwitch]="selection" #terminal>
     <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
 
@@ -80,7 +71,6 @@
     <pre *ngSwitchCase="'demeter'">- El encadenamiento de muchos metodos puede significar un alto acoplamiento</pre>
     <pre *ngSwitchCase="'demeter'">- Entre más grande sea una pila de llamadas, sera más propensa a futuras refactorizaciones </pre>
 
-    <pre *ngSwitchCase="'complejidad'">- Complejidad Ciclomatica </pre>
     <pre *ngSwitchCase="'complejidad'">- Es una metrica del software que proporciona una medida cuantitativa de la complejidad logica del programa </pre>
     <pre *ngSwitchCase="'complejidad'">- Son los diferentes caminos que puede seguir una aplicación desde la entrada hasta la salida, </pre>
     <pre *ngSwitchCase="'complejidad'"> - teniendo en cuenta condiciones, parametros, funciones y atributos </pre>

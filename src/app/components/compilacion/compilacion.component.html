@@ -4,32 +4,25 @@
 
   <div class="card-container">
 
-    <div class="card card-small"
-      (click)="linkReferencia('compilacion','https://developer.mozilla.org/es/docs/Glossary/Compile')" tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('compilacion')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>¿ que es ?</span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('nivel','https://desarrolloweb.com/articulos/2358.php#:~:text=Existen%20dos%20tipos%20de%20lenguajes,y%20los%20de%20alto%20nivel.&text=Los%20lenguajes%20m%C3%A1s%20pr%C3%B3ximos%20a,denominan%20lenguajes%20de%20alto%20nivel.')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('nivel')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Niveles</span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('interprete','https://yosoy.dev/diferencia-entre-lenguajes-compilados-e-interpretados/')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('interprete')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Interpretes</span>
     </div>
         
-    <div class="card card-small"
-      (click)="linkReferencia('transpilacion','https://ingenieriadesoftware.es/diferencia-transpilacion-compilacion/#:~:text=Si%20traduce%20c%C3%B3digo%20entre%20lenguajes,a%20Bytecode%20ser%C3%ADa%20una%20compilaci%C3%B3n.')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('transpilacion')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Transpilación</span>
@@ -38,6 +31,7 @@
   </div>
 
   <div class="terminal window" ></div>
+  <div class="terminal" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
   <div class="terminal" [ngSwitch]="selection" #terminal>
     <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
 

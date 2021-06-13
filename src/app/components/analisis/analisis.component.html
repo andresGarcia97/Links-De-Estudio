@@ -4,49 +4,37 @@
   
     <div class="card-container">
     
-      <div class="card card-small"
-        (click)="linkReferencia('comportamiento','https://es.wikipedia.org/wiki/Modelo_de_comportamiento_(inform%C3%A1tica)')"
-        tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('comportamiento')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Comportamiento</span>
       </div>
 
-      <div class="card card-small"
-        (click)="linkReferencia('dominio','https://www.redalyc.org/jatsRepo/4768/476862530003/html/index.html#:~:text=El%20An%C3%A1lisis%20de%20Dominio%20es,la%20identificaci%C3%B3n%2C%20el%20an%C3%A1lisis%20y')"
-        tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('dominio')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Analisis de Dominio</span>
       </div>
 
-      <div class="card card-small"
-        (click)="linkReferencia('case','https://www.tutorialspoint.com/es/software_engineering/case_tools_overview.htm')"
-        tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('case')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Herramientas CASE</span>
       </div>
 
-      <div class="card card-small"
-        (click)="linkReferencia('divide','https://es.khanacademy.org/computing/computer-science/algorithms/merge-sort/a/divide-and-conquer-algorithms')"
-        tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('divide')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Divide y venceras</span>
       </div>
 
-      <div class="card card-small"
-        (click)="linkReferencia('diseño','https://www.bravent.net/la-importancia-de-un-buen-diseno-del-software/')"
-        tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('diseño')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Un buen diseño</span>
       </div>
 
-      <div class="card card-small"
-        (click)="linkReferencia('crc','https://medium.com/@marcosrrg9813/tarjetas-crc-clase-responsabilidad-colaborador-81924cec3af0')"
-        tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('crc')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Tarjetas CRC</span>
@@ -55,6 +43,7 @@
     </div>
     
     <div class="terminal window" ></div>
+    <div class="terminal" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
     <div class="terminal" [ngSwitch]="selection" #terminal>
       <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
   

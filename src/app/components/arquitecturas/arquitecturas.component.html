@@ -4,56 +4,43 @@
 
   <div class="card-container">
 
-    <div class="card card-small"
-      (click)="linkReferencia('definicion','https://cgrw01.cgr.go.cr/rup/RUP.es/SmallProjects/core.base_rup/guidances/concepts/software_architecture_4269A354.html')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('definicion')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Definición</span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('capas','https://geeks.ms/jkpelaez/2009/05/30/arquitectura-basada-en-capas/')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('capas')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Capas</span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('cliente','https://desarrolloweb.com/articulos/arquitectura-cliente-servidor.html')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('cliente')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Cliente Servidor</span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('intermediario','https://conasa.grupocibernos.com/blog/patrones-comunes-de-arquitecturas-de-software')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('intermediario')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Intermediario</span>
     </div>
 
-    <div class="card card-small" (click)="linkReferencia('servicios','https://aws.amazon.com/es/microservices/')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('servicios')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Microservicios</span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('hexagonal','https://medium.com/@edusalguero/arquitectura-hexagonal-59834bb44b7f')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('hexagonal')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Hexagonal</span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('otrasArquitecturas','https://medium.com/@maniakhitoccori/los-10-patrones-comunes-de-arquitectura-de-software-d8b9047edf0b')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('otrasArquitecturas')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>otras</span>
@@ -62,6 +49,7 @@
   </div>
   
   <div class="terminal window" ></div>
+  <div class="terminal" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
   <div class="terminal" [ngSwitch]="selection" #terminal>
     <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
 
