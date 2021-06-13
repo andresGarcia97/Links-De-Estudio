@@ -4,83 +4,73 @@
 
   <div class="card-container">
 
-    <div class="card card-small"
-      (click)="linkReferencia('introduccion','https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Acerca-del-Control-de-Versiones')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('introduccion')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Introducción</span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('repositorios','https://git-scm.com/book/es/v2/Fundamentos-de-Git-Trabajar-con-Remotos')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('repositorios')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>Repositorios remotos</span>
+      <span>Repositorios</span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('protocolos','https://git-scm.com/book/es/v2/Git-en-el-Servidor-Los-Protocolos')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('ramas')" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Ramas</span>
+    </div>
+
+    <div class="card card-small" (click)="getLinkAndTittleByKey('protocolos')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Protocolos</span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('versiones','https://git-scm.com/book/es/v2/Git-en-entornos-distribuidos-Manteniendo-un-proyecto')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('versiones')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Versiones y tags</span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('forks','https://git-scm.com/book/es/v2/GitHub-Participando-en-Proyectos')" tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('forks')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Forks y Pull requests</span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('stash','https://git-scm.com/book/es/v2/Herramientas-de-Git-Guardado-r%C3%A1pido-y-Limpieza')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('stash')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Stash y limpieza</span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('merge','https://git-scm.com/book/es/v2/Herramientas-de-Git-Fusi%C3%B3n-Avanzada')" tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('merge')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Merge</span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('atributos','https://git-scm.com/book/es/v2/Personalizaci%C3%B3n-de-Git-Git-Attributes')" tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('atributos')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Atributos</span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('migracion','https://git-scm.com/book/es/v2/Git-y-Otros-Sistemas-Migraci%C3%B3n-a-Git')" tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('migracion')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Entresijos</span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('flow','https://aprendegit.com/que-es-git-flow/')" tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('flow')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Git flow</span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('remotos','https://www.clubdetecnologia.net/blog/2017/github-vs-gitlab-vs-bitbucket-que-repositorio-elegir/')" tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('remotos')" tabindex="0">
       <svg xmlns="http://www.w3.org/2000/svg" height="32" width="70" viewBox="-81.8598 -48.3275 709.4516 289.965"><g fill-rule="evenodd" fill="none">
         <path fill="#8C929D" d="M316.656 64.955c-15.289 0-24.786 12.146-24.786 31.7s9.497 31.7 24.786 31.7c5.744 0 11.081-1.629 15.432-4.712l.211-.149v-21.968h-22v-7.8h31v32.735c-6.563 6.344-15.079 9.694-24.643 9.694-20.524 0-33.786-15.505-33.786-39.5 0-23.995 13.262-39.5 33.786-39.5 9.992 0 18.427 3.648 24.43 10.556l-5.996 4.982c-4.526-5.134-10.726-7.738-18.434-7.738zm173.093 69.95h-6.948l-2.334-6.448-.553.497c-.077.069-7.829 6.951-17.588 6.951-9.85 0-17-6.554-17-15.583 0-13.072 11.284-15.816 20.75-15.816 7.373 0 13.978 1.66 14.044 1.677l.623.159v-1.586c0-7.115-4.442-10.723-13.205-10.723-5.308 0-10.917 1.311-16.249 3.792l-3.603-6.212c4.706-3.062 11.852-6.58 19.852-6.58 13.908 0 22.211 7.556 22.211 20.211zm-19.195-23.473c-10.617 0-16.228 3.074-16.228 8.89 0 4.061 3.065 6.583 8 6.583 8.13 0 15.267-3.332 18.202-5.302l.221-.148v-9.18l-.416-.071c-.045-.008-4.59-.772-9.779-.772zm-30.23 15.673v7.8h-29.998v-74h9v66.2zm80.483 9.05c-5.845 0-12.253-.804-19.049-2.391V60.905h9v28.063l.773-.502c.05-.032 5.07-3.24 11.988-3.24 1.38 0 2.761.129 4.095.381 11.345 2.324 18.118 11.478 18.118 24.487 0 15.344-10.249 26.061-24.925 26.061zm1.001-42.122c-3.579 0-7.323 1.225-10.826 3.541l-.224.149v29.834l.427.063c3.38.495 6.616.747 9.622.747 9.376 0 15.925-7.515 15.925-18.273 0-10.207-5.44-16.061-14.924-16.061zm-123.49-8.128v7.8h-15v22.9c0 2.805 1.091 5.442 3.075 7.424a10.424 10.424 0 007.424 3.076h4.5v7.8h-4.5c-10.752 0-19.5-8.748-19.5-19.5v-54.5h9v25zm-45.01-20h9v9h-9zm0 20h9v49h-9z"/>
         <path fill="#E24329" d="M104.927 193.31l38.64-118.921h-77.28z"/><path fill="#FC6D26" d="M104.927 193.31L66.287 74.389H12.134z"/><path fill="#FCA326" d="M12.134 74.389L.392 110.528a8 8 0 002.906 8.944l101.63 73.838z"/><path fill="#E24329" d="M12.134 74.39h54.153L43.014 2.763c-1.197-3.686-6.41-3.685-7.608 0z"/><path fill="#FC6D26" d="M104.927 193.31l38.64-118.921h54.153z"/><path fill="#FCA326" d="M197.72 74.389l11.742 36.139a8 8 0 01-2.906 8.944L104.927 193.31z"/><path fill="#E24329" d="M197.72 74.39h-54.153L166.84 2.763c1.197-3.686 6.411-3.685 7.608 0z"/></g></svg>
@@ -93,8 +83,7 @@
           <path id="polygon94" fill="none" d="M40.9 25.12H21.23l3.47 18.39h13.05z"/><path id="path96" d="M2 6.26a2 2 0 00-2 2.32l8.49 51.54a2.72 2.72 0 002.66 2.27h40.73a2 2 0 002-1.68l8.49-52.12a2 2 0 00-2-2.32zm35.75 37.25h-13l-3.52-18.39H40.9z" fill="#2684ff"/><path id="path98" d="M59.67 25.12H40.9l-3.15 18.39h-13L9.4 61.73a2.71 2.71 0 001.75.66h40.74a2 2 0 002-1.68z" fill="url(#New_Gradient_Swatch_1)"/></g></g></svg>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('practicas','https://codigofacilito.com/articles/41')"
+    <div class="card card-small" (click)="getLinkAndTittleByKey('practicas')"
       tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
@@ -104,6 +93,7 @@
   </div>
   
   <div class="terminal window" ></div>
+  <div class="terminal" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
   <div class="terminal" [ngSwitch]="selection" #terminal>
   
     <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
@@ -131,8 +121,7 @@
     <pre *ngSwitchCase="'protocolos'"> - SSH -> requiere de generar una clave encriptada que debe esta almacenada en ambos repositorios, más complejo pero seguro </pre>
     <pre *ngSwitchCase="'protocolos'"> - Git -> no requiere ningun tipo de autenticación y es el más rapido de todos, haciendolo vulnerable a modificaciones de cualquier ente externo </pre>
 
-    <pre *ngSwitchCase="'versiones'">- Mediante el uso de etiquetas el versionamiento se puede simplificar aun más </pre>
-    <pre *ngSwitchCase="'versiones'">- las etiquetas se añaden a un commit en especifico dando a entender que esa ha de ser la nueva versión ó es algo importante </pre>
+    <pre *ngSwitchCase="'versiones'">- las etiquetas se añaden a un commit en especifico, dando a entender que esa ha de ser una nueva versión ó hay un cambio bastante importante </pre>
     <pre *ngSwitchCase="'versiones'">- Tambien se puede crear un archivo comprimido con todo el codigo de la nueva versión listo para descargar y ejecutar </pre>
 
     <pre *ngSwitchCase="'forks'">- Fork -> es una clonación de un proyecto desde un repositorio a otro en un momento y rama en especifico, con el usuario como nuevo dueño </pre>
@@ -147,14 +136,11 @@
     <pre *ngSwitchCase="'merge'">- Las ramas se pueden desfusionar si se hay errores, ó abortar la fusión si esta se vuelve muy problematica mediante un revert o un abort segun el caso </pre>
     <pre *ngSwitchCase="'merge'">- Rerere -> esta opción oculta permite dotar a memoria a Git para que esta resuelva conflictos de manera automatica </pre>
 
-    <pre *ngSwitchCase="'atributos'">- Es la personalización de ciertas acciones, en vez de tener el tipico comportamiento por defecto </pre>
-    <pre *ngSwitchCase="'atributos'"></pre>
     <pre *ngSwitchCase="'atributos'"> - Evitar la comparación de archivos binarios que git no pueda detectar por si mismo </pre>
     <pre *ngSwitchCase="'atributos'"> - configurar maneras diferentes de ver los cambios de los archivos dependiendo de las extensiones (imagenes, textos, etc... )</pre>
     <pre *ngSwitchCase="'atributos'"> - ignorar archivos a la hora de comprimir el proyecto </pre>
     <pre *ngSwitchCase="'atributos'"> - cambiar la forma de fusión de acuerdo a ciertos tipos de archivos </pre>
 
-    <pre *ngSwitchCase="'migracion'">- Permite personalizarse en ciertos aspectos como añadir colores al usar sus comandos</pre>
     <pre *ngSwitchCase="'migracion'">- Manejar los espacios en blanco que suelen ser un problema comun </pre>
     <pre *ngSwitchCase="'migracion'">- Git permite la migración desde diferentes sistemas de versionamiento anteriores ó que han caido en el deshuso como: </pre>
     <pre *ngSwitchCase="'migracion'">- Mercurial, Subversion, Perforce, TFS, </pre>
@@ -164,19 +150,20 @@
 
     <pre *ngSwitchCase="'flow'">- Es una forma de trabajar basada en el uso de las ramas y el sentido comun </pre>
     <pre *ngSwitchCase="'flow'">- Consta de 2 ramas principales y varias auxiliares </pre>
+    <pre *ngSwitchCase="'flow'"></pre>
     <pre *ngSwitchCase="'flow'"> - Master -> cualquier codigo que este en esta rama debe estar listo para producción </pre>
     <pre *ngSwitchCase="'flow'"> - Develop -> es donde se trabaja la proxima versión a trabajar </pre>
     <pre *ngSwitchCase="'flow'">  - Feature -> se originan de develop y son nuevas funcionalidades a integrar </pre>
     <pre *ngSwitchCase="'flow'">  - Release -> aca se corrigen bugs y se hacen los ultimos ajustes, antes de Master </pre>
     <pre *ngSwitchCase="'flow'">  - Hotfix -> son usadas para corregir problemas presentes en producción y que aparecen de improviso </pre>
+    <pre *ngSwitchCase="'flow'"></pre>
     <pre *ngSwitchCase="'flow'">- Todas las ramas Hotfix se unen con master y develop </pre>
     <pre *ngSwitchCase="'flow'">- Cualquier rama feature se une a develop </pre>
 
-    <pre *ngSwitchCase="'remotos'">- Actualmente Gitlab, Github Y Bitbucket son de los repositorios más conocidos </pre>
     <pre *ngSwitchCase="'remotos'"> - Github -> El repositorio más grande actualmente en el mundo, con más de 50 millones de proyectos de codigo abierto </pre>
     <pre *ngSwitchCase="'remotos'"> - Gitlab -> Muy similar a Github en cuanto a funcionalidades, además de contar con version gratuita y empresarial </pre>
     <pre *ngSwitchCase="'remotos'"> - Bitbucket -> Similar a los mencionado previamente con la ventaja de tener Trello integrado por defecto </pre>
-
+    <pre *ngSwitchCase="'remotos'"></pre>
     <pre *ngSwitchCase="'remotos'">  - Permiten mantener un seguimiento de errores en los proyectos </pre>
     <pre *ngSwitchCase="'remotos'">  - Admiten proyectos colaborativos, repositorios privados y posibilidades de CD/CI </pre>
     <pre *ngSwitchCase="'remotos'">  - Son muy configurables permitiendo generar y mantener claves SSH </pre>

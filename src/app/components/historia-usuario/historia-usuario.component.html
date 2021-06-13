@@ -1,67 +1,52 @@
 <div class="content">
 
-    <h2>Historias de Usuario & metodologias agiles </h2>
+    <h2>Historias de Usuario & Metodologias Agiles </h2>
   
     <div class="card-container">
   
-      <div class="card card-small"
-        (click)="linkReferencia('historias','https://apiumhub.com/es/tech-blog-barcelona/como-escribir-buenas-historias-de-usuario/')" tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('historias')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>¿ que son ?</span>
       </div>
   
-      <div class="card card-small"
-        (click)="linkReferencia('objetivos','https://apiumhub.com/es/tech-blog-barcelona/como-escribir-buenas-historias-de-usuario/')"
-        tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('objetivos')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>¿ que buscan ?</span>
       </div>
   
-      <div class="card card-small"
-        (click)="linkReferencia('partes','https://apiumhub.com/es/tech-blog-barcelona/como-escribir-buenas-historias-de-usuario/')"
-        tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('partes')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Partes</span>
       </div>
           
-      <div class="card card-small"
-        (click)="linkReferencia('invest','https://apiumhub.com/es/tech-blog-barcelona/como-escribir-buenas-historias-de-usuario/')"
-        tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('invest')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>INVEST</span>
       </div>
 
-      <div class="card card-small"
-        (click)="linkReferencia('smart','https://beagilemyfriend.com/historias-de-usuario-invest-smart/')"
-        tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('smart')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>SMART</span>
       </div>
 
-      <div class="card card-small"
-        (click)="linkReferencia('3c','https://julibetancur.blog/tag/tres-c/')"
-        tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('3c')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Las 3 C</span>
       </div>
 
-      <div class="card card-small"
-        (click)="linkReferencia('gherkin','https://blog.thiga.co/es/gherkin/')"
-        tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('gherkin')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Gherkin</span>
       </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('agil','https://agilemanifesto.org/iso/es/manifesto.html')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('agil')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Manifiesto Agil</span>
@@ -70,6 +55,7 @@
     </div>
   
     <div class="terminal window" ></div>
+    <div class="terminal" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
     <div class="terminal" [ngSwitch]="selection" #terminal>
       <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
   
@@ -117,7 +103,7 @@
       <pre *ngSwitchCase="'agil'"> - Respuesta ante el cambio <strong>sobre</strong> seguir un plan </pre>
 
       <pre *ngSwitchCase="'3c'">- Las historias de Usuario nacen de la necesidad de un entedimiento comun de lo que se debe hacer, </pre>
-      <pre *ngSwitchCase="'3c'">- independientemente de quien lo lea, o quien lo haga, de ahi nace el concepto de las 3C </pre>
+      <pre *ngSwitchCase="'3c'"> - independientemente de quien lo lea, o quien lo haga, de ahi nace el concepto de las 3C </pre>
       <pre *ngSwitchCase="'3c'"></pre>
       <pre *ngSwitchCase="'3c'">- Tarjeta (card) -> es un breve parrafo que resume la necesidad, el porque, y para quien es util, </pre>
       <pre *ngSwitchCase="'3c'"> - Estas tarjetas tienen su propia estructura, la cual generalmente tiene 3 partes + los criterios de aceptación </pre>
