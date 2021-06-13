@@ -174,9 +174,33 @@ export class LinkReferencia {
         ['comentarios', 'https://www.scrummanager.net/bok/index.php?title=Deuda_t%C3%A9cnica'],
         ['cuandorefactorizar', 'https://refactoring.guru/es/refactoring/when'],
         ['comorefactorizar', 'https://refactoring.guru/es/refactoring/how-to'],
+        // requisitos
+        ['funcionales', 'https://medium.com/@requeridosblog/requerimientos-funcionales-y-no-funcionales-ejemplos-y-tips-aa31cb59b22a'],
+        ['NOfuncionales', 'https://medium.com/@requeridosblog/requerimientos-funcionales-y-no-funcionales-ejemplos-y-tips-aa31cb59b22a'],
+        ['negocio', 'https://requeridos.com/que-es-el-valor-de-negocio-y-como-medirlo/'],
+        ['ambiguedad', 'https://requeridos.com/requerimientos-menos-es-mas/'],
+        ['calidad', 'https://platzi.com/tutoriales/1248-pro-arquitectura/5498-atributos-de-calidad-de-un-producto-de-software/'],
+        // principios
+        ['solid', 'https://profile.es/blog/principios-solid-desarrollo-software-calidad/'],
+        ['kiss', 'https://manuelzapata.co/principio-kiss-keep-it-simple-stupid/'],
+        ['yagni', 'https://www.genbeta.com/desarrollo/la-navaja-de-occam-kiss-y-yagni-la-simplicidad-en-el-codigo-no-deberia-ser-solo-postureo-developer'],
+        ['occam', 'https://www.genbeta.com/desarrollo/la-navaja-de-occam-kiss-y-yagni-la-simplicidad-en-el-codigo-no-deberia-ser-solo-postureo-developer'],
+        ['dry', 'https://tantacom.com/principios-diseno-software-kiss-dry-solid/'],
+        ['hollywood', 'https://www.genbeta.com/desarrollo/doce-principios-de-diseno-que-todo-desarrollador-deberia-conocer'],
+        // seguridad
+        ['firewall', 'https://idgrup.com/firewall-que-es-y-como-funciona/#:~:text=Un%20firewall%2C%20tambi%C3%A9n%20llamado%20cortafuegos,ordenadores%20de%20una%20misma%20red'],
+        ['protocolos', 'https://www.websecurity.digicert.com/es/es/security-topics/what-is-ssl-tls-https'],
+        ['proxy', 'https://www.welivesecurity.com/la-es/2020/01/02/que-es-proxy-para-que-sirve/'],
+        ['estatico', 'https://www.welivesecurity.com/la-es/2021/01/18/analisis-estatico-codigo-fuente-orientado-a-seguridad/'],
+        // smells codes
+        ['codesmells', 'https://openwebinars.net/blog/code-smells-y-deuda-tecnica/'],
+        ['tipos', 'https://refactoring.guru/es/refactoring/smells'],
+        ['desglose', 'https://refactoring.guru/es/refactoring/smells'],
+        ['casos', 'https://refactoring.guru/es/refactoring/smells'],
+        ['payoff', 'https://refactoring.guru/es/refactoring/smells'],
         ['', ''],
         ['', ''],
-
+        ['', ''],
     ]);
 
     protected titulos: Map<string, string> = new Map([
@@ -350,7 +374,30 @@ export class LinkReferencia {
         ['comentarios', 'Comentarios especiales'],
         ['cuandorefactorizar', '¿ Cuando refactorizar ?'],
         ['comorefactorizar', '¿ Como refactorizar ? '],
-        ['', ''],
+        // requisitos
+        ['funcionales', 'Requisitos funcionales'],
+        ['NOfuncionales', 'Requisitos No funcionales'],
+        ['negocio', 'El valor del negocio'],
+        ['ambiguedad', 'Evitar la ambiguedad'],
+        ['calidad', 'Atributos de calidad'],
+        // principios
+        ['solid', 'Principio SOLID'],
+        ['kiss', 'Mantenlo simple, estupido'],
+        ['yagni', 'No vas a necesitarlo'],
+        ['occam', 'La navaja de occam'],
+        ['dry', 'No te repitas a ti mismo'],
+        ['hollywood', 'No nos llames, nosotros te llamamos'],
+        // seguridad
+        ['firewall', 'Firewall'],
+        ['protocolos', 'SSL, TSL, HTTPS'],
+        ['proxy', 'Proxy'],
+        ['estatico', 'Analisis de codigo estatico'],
+        // smells codes
+        ['codesmells', 'Smell Codes'],
+        ['tipos', 'Tipos de Smell codes'],
+        ['desglose', 'Smell codes por tipo'],
+        ['casos', 'Casos donde pueden ser ignorados'],
+        ['payoff', 'Beneficios de estas correciones'],
     ]);
 
     public getLinkAndTittleByKey(key: string = ''): void {

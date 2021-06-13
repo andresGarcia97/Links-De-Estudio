@@ -1,35 +1,35 @@
 <div class="content">
 
-    <h2>Smells Codes (malos olores) </h2>
+    <h2>Smell Codes (malos olores) </h2>
   
     <div class="card-container">
   
       <div class="card card-small"
-        (click)="linkReferencia('codesmells','https://openwebinars.net/blog/code-smells-y-deuda-tecnica/')" tabindex="0">
+        (click)="getLinkAndTittleByKey('codesmells')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>Code Smells</span>
+        <span>Smell Codes</span>
       </div>
 
-      <div class="card card-small" (click)="linkReferencia('tipos','https://refactoring.guru/es/refactoring/smells')" tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('tipos')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Tipos</span>
       </div>
 
-      <div class="card card-small" (click)="linkReferencia('desglose','https://refactoring.guru/es/refactoring/smells')" tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('desglose')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Desglose</span>
       </div>
 
-      <div class="card card-small" (click)="linkReferencia('casos','https://refactoring.guru/es/refactoring/smells')" tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('casos')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Casos especiales</span>
       </div>
 
-      <div class="card card-small" (click)="linkReferencia('payoff','https://refactoring.guru/es/refactoring/smells')" tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('payoff')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Ganancias</span>
@@ -38,7 +38,9 @@
     </div>
   
     <div class="terminal window" ></div>
+    <div class="terminal" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
     <div class="terminal" [ngSwitch]="selection" #terminal>
+      
       <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
     
       <pre *ngSwitchCase="'codesmells'">- Son cosas en el codigo que se pueden hacer de una mejor manera o que a la larga seran malas practicas</pre>

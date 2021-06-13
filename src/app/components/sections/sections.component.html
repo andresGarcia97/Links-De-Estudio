@@ -4,47 +4,37 @@
 
   <div class="card-container">
 
-    <div class="card card-small"
-      (click)="linkReferencia('solid','https://profile.es/blog/principios-solid-desarrollo-software-calidad/')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('solid')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>SOLID</span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('kiss','https://manuelzapata.co/principio-kiss-keep-it-simple-stupid/')" tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('kiss')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>KISS</span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('yagni','https://www.genbeta.com/desarrollo/la-navaja-de-occam-kiss-y-yagni-la-simplicidad-en-el-codigo-no-deberia-ser-solo-postureo-developer')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('yagni')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>YAGNI</span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('occam','https://www.genbeta.com/desarrollo/la-navaja-de-occam-kiss-y-yagni-la-simplicidad-en-el-codigo-no-deberia-ser-solo-postureo-developer')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('occam')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Occam</span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('dry','https://tantacom.com/principios-diseno-software-kiss-dry-solid/')" tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('dry')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>DRY</span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('hollywood','https://www.genbeta.com/desarrollo/doce-principios-de-diseno-que-todo-desarrollador-deberia-conocer')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('hollywood')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Hollywood</span>
@@ -53,7 +43,9 @@
   </div>
 
   <div class="terminal window" ></div>
+  <div class="terminal" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
   <div class="terminal" [ngSwitch]="selection" #terminal>
+
     <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
 
     <pre *ngSwitchCase="'solid'"> S -> Responsabilidad única</pre>
@@ -79,7 +71,6 @@
     <pre *ngSwitchCase="'dry'">- Incrementa la mantenibilidad del código </pre>
     <pre *ngSwitchCase="'dry'">- Facilita la refactorización</pre>
 
-    <pre *ngSwitchCase="'hollywood'">- No nos llames nosotros te llamamos </pre>
     <pre *ngSwitchCase="'hollywood'">- Se basa en la inversion de dependencias para crear la inversion de control </pre>
     <pre *ngSwitchCase="'hollywood'">- Esto logra obtener las referencias y datos necesarios para funcionar mediante una entidad externa (frameworks)</pre>
     <pre *ngSwitchCase="'hollywood'">- Generalmente las entidades externas son los frameworks que ejecutan el codigo del usuario </pre>
