@@ -4,48 +4,40 @@
 
   <div class="card-container">
 
-    <div class="card card-small"
-      (click)="linkReferencia('imperativo','https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/paradigmas-de-programacion/')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('imperativo')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Estilos Programación</span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('funcional','https://codigofacilito.com/articulos/programacion-funcional')" tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('funcional')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Funcional</span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('scripting','https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/que-son-los-lenguajes-de-scripting/')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('scripting')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Scripting</span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('reactiva','https://profile.es/blog/que-es-la-programacion-reactiva-una-introduccion/')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('reactiva')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Reactiva</span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('marcado','https://blog.educacionit.com/2018/12/26/diferencia-entre-lenguajes-de-scripting-lenguajes-de-marcado-y-lenguajes-de-programacion/')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('marcado')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>Lenguajes Marcado</span>
+      <span>De Marcado</span>
     </div>
 
   </div>
 
   <div class="terminal window" ></div>
+  <div class="terminal" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
   <div class="terminal" [ngSwitch]="selection" #terminal>
     <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
 

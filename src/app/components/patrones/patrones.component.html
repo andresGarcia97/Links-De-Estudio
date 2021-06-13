@@ -4,53 +4,43 @@
 
   <div class="card-container">
 
-    <div class="card card-small"
-      (click)="linkReferencia('definicionPatrones','http://www.ecured.cu/Patrones_de_dise%C3%B1o_y_arquitectura')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('definicionPatrones')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Definición</span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('gof','http://www.cleformacion.com/tic-tek/-/blogs/patrones-gof')" tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('gof')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>GOF</span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('desglosegof','https://refactoring.guru/es/design-patterns/catalog')" tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('desglosegof')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Desglose GOF</span>
     </div>
 
-    <div class="card card-small" (click)="linkReferencia('grasp','https://www.adictosaltrabajo.com/2003/12/22/grasp/')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('grasp')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>GRASP</span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('desglosegrasp','https://juan-garcia-carmona.blogspot.com/search/label/patr%C3%B3n')" tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('desglosegrasp')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Desglose Grasp</span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('dao','https://www.genbeta.com/desarrollo/patrones-de-diseno-active-record-vs-dao')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('dao')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>DAO & Active Record</span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('antipatrones','https://sg.com.mx/revista/11/anti-patrones-la-mejor-forma-hacer-un-pesimo-sistema-software')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('antipatrones')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Anti Patrones</span>
@@ -59,9 +49,9 @@
   </div>
 
   <div class="terminal window" ></div>
+  <div class="terminal" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
   <div class="terminal" [ngSwitch]="selection" #terminal>
     <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
-
 
     <pre *ngSwitchCase="'definicionPatrones'">- Son soluciones especificas a problemas comunes y los más conocidos son: </pre>
     <pre *ngSwitchCase="'definicionPatrones'">   GOF -> que se dividen en 3, creacionales, estructurales y de comportamiento </pre>

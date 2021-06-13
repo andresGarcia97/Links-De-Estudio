@@ -4,44 +4,37 @@
 
   <div class="card-container">
 
-    <div class="card card-small"
-      (click)="linkReferencia('codigolimpio','https://refactoring.guru/es/refactoring/what-is-refactoring')"
-      tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('codigolimpio')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Codigó limpio</span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('deudatecnica','https://refactoring.guru/es/refactoring/technical-debt')" tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('deudatecnica')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Deuda tecnica</span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('tipos','https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/deuda-tecnica-explicada/')" tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('tipos')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Tipos de deuda</span>
     </div>    
 
-    <div class="card card-small"
-      (click)="linkReferencia('comentarios','https://www.scrummanager.net/bok/index.php?title=Deuda_t%C3%A9cnica')" tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('comentarios')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Comentar la deuda</span>
     </div> 
 
-    <div class="card card-small"
-      (click)="linkReferencia('cuandorefactorizar','https://refactoring.guru/es/refactoring/when')" tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('cuandorefactorizar')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span> ¿ Cuando ?</span>
     </div>
 
-    <div class="card card-small"
-      (click)="linkReferencia('comorefactorizar','https://refactoring.guru/es/refactoring/how-to')" tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('comorefactorizar')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>¿ Como ?</span>
@@ -50,6 +43,7 @@
   </div>
 
   <div class="terminal window" ></div>
+  <div class="terminal" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
   <div class="terminal" [ngSwitch]="selection" #terminal>
     <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
 

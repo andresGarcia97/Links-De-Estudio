@@ -4,26 +4,11 @@
   
     <div class="card-container">
   
-      <div class="card card-small" (click)="linkReferencia('principios','https://todosqa.com/siete-principios-del-proceso-de-prueba/')" tabindex="0">
-          <svg class="material-icons" width="24" height="24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-          viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-        <g>
-          <g>
+      <div class="card card-small" (click)="getLinkAndTittleByKey('principios')" tabindex="0">
+          <svg class="material-icons" width="24" height="24" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
             <path d="M296,232c-5.52,0-10,4.48-10,10s4.48,10,10,10c5.52,0,10-4.48,10-10S301.52,232,296,232z"/>
-          </g>
-        </g>
-        <g>
-          <g>
             <path d="M256,172c-5.52,0-10,4.48-10,10s4.48,10,10,10c5.52,0,10-4.48,10-10S261.52,172,256,172z"/>
-          </g>
-        </g>
-        <g>
-          <g>
             <path d="M136,432c-5.52,0-10,4.48-10,10c0,5.52,4.48,10,10,10s10-4.48,10-10C146,436.48,141.52,432,136,432z"/>
-          </g>
-        </g>
-        <g>
-          <g>
             <path d="M454.416,407.678L326,179.381V58.286c11.641-4.127,20-15.248,20-28.286c0-16.542-13.458-30-30-30H196
               c-16.542,0-30,13.458-30,30c0,13.038,8.359,24.159,20,28.286v121.095L57.584,407.678c-12.328,21.916-12.109,47.959,0.584,69.663
               C70.86,499.043,93.448,512,118.59,512h274.82c25.142,0,47.729-12.957,60.422-34.659
@@ -35,124 +20,100 @@
               l42.408-75.392c20.576,7.185,41.84,10.812,63.437,10.812c3.197,0,6.402-0.079,9.613-0.238
               c27.905-1.382,54.862-8.711,80.124-21.784c33.792-17.496,70.959-23.536,107.783-17.581l58.604,104.183
               C445.791,433.138,445.635,451.741,436.567,467.244z"/>
-          </g>
-        </g>
-        <g>
-          <g>
-            <path d="M216,232c-16.542,0-30,13.458-30,30s13.458,30,30,30s30-13.458,30-30S232.542,232,216,232z M216,272
-              c-5.514,0-10-4.486-10-10c0-5.514,4.486-10,10-10c5.514,0,10,4.486,10,10C226,267.514,221.514,272,216,272z"/>
-          </g>
-        </g>
-        <g>
-          <g>
-            <path d="M376,432H176c-5.522,0-10,4.478-10,10c0,5.522,4.478,10,10,10h200c5.522,0,10-4.478,10-10
-              C386,436.478,381.522,432,376,432z"/>
-          </g>
-        </g>
+            <path d="M216,232c-16.542,0-30,13.458-30,30s13.458,30,30,30s30-13.458,30-30S232.542,232,216,232z M216,272c-5.514,0-10-4.486-10-10c0-5.514,4.486-10,10-10c5.514,0,10,4.486,10,10C226,267.514,221.514,272,216,272z"/>
+            <path d="M376,432H176c-5.522,0-10,4.478-10,10c0,5.522,4.478,10,10,10h200c5.522,0,10-4.478,10-10C386,436.478,381.522,432,376,432z"/>
       </svg>
         <span> Principios de testing </span>
       </div>
   
-      <div class="card card-small" (click)="linkReferencia('manifiesto','https://www.adictosaltrabajo.com/2019/12/18/testing-en-un-mundo-agile/')"
-        tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('manifiesto')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Testing manifiesto</span>
       </div>
   
-      <div class="card card-small" (click)="linkReferencia('tipos','https://visual-engin.com/2017/10/26/importancia-pruebas-de-software-testing/')"
-        tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('tipos')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Tipos</span>
       </div>
   
-      <div class="card card-small" (click)="linkReferencia('beneficios','https://platzi.com/blog/testing-ventajas-formas-de-realizar-pruebas/')"
-        tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('beneficios')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Beneficios</span>
       </div>
   
-      <div class="card card-small" (click)="linkReferencia('nombramiento','https://www.petrikainulainen.net/programming/testing/writing-clean-tests-naming-matters/')" tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('nombramiento')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Nombramiento</span>
       </div>
   
-      <div class="card card-small" (click)="linkReferencia('first','https://www.paradigmadigital.com/dev/principio-first-aumentar-la-calidad-tests-unitarios/')"
-        tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('first')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Principio FIRST</span>
       </div>
   
-      <div class="card card-small" (click)="linkReferencia('sutydoc','https://www.javiergarzas.com/2015/09/que-estoy-probando-y-cuales-son-mis-dependencias-en-testing.html')"
-        tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('sutydoc')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>SUT & DOC</span>
       </div>
   
-      <div class="card card-small" (click)="linkReferencia('dobles','https://www.codurance.com/publications/2019/04/08/introduction-to-test-doubles')"
-       tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('dobles')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Dobles</span>
       </div>
 
-      <div class="card card-small" (click)="linkReferencia('aaa','http://oscarmoreno.com/pruebas-unitarias/')"
-       tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('aaa')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>AAA</span>
       </div>
 
-      <div class="card card-small" (click)="linkReferencia('gwt','https://softwareengineering.stackexchange.com/questions/308160/differences-between-given-when-then-gwt-and-arrange-act-assert-aaa')"
-       tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('gwt')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>GWT</span>
       </div>
 
-      <div class="card card-small" (click)="linkReferencia('piramide','https://medium.com/@wc.testing.qa/la-famosa-pir%C3%A1mide-de-cohn-y-la-dura-realidad-e1250dfbe5f3')"
-       tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('piramide')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Piramides de tests</span>
       </div>
 
-      <div class="card card-small" (click)="linkReferencia('triangulo','https://proyectosagiles.org/triangulo-hierro/')"
-       tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('triangulo')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Triangulo de Hierro</span>
       </div>
 
-      <div class="card card-small" (click)="linkReferencia('logging','https://itnext.io/logger-or-debugger-which-one-to-choose-3f6a72200b15')"
-       tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('logging')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Logs VS Debug</span>
       </div>
 
-      <div class="card card-small" (click)="linkReferencia('cobertura','https://argonur.com/2020/05/11/code-coverage-cobertura-de-codigo/')"
-       tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('cobertura')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Cobertura</span>
       </div>
 
-      <div class="card card-small" (click)="linkReferencia('falsos','https://www.qalovers.com/2015/03/diferencia-entre-falso-positivo-y-falso_5.html#:~:text=La%20definici%C3%B3n%20de%20falso%20negativo,sistema%20que%20est%C3%A1%20realmente%20infectada.%22&text=Un%20falso%20negativo%20llevado%20a,cuando%20en%20realidad%20est%C3%A1%20fallando.')"
-       tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('falsos')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>Falsos + & -</span>
+        <span>Falsos Resultados</span>
       </div>
   
     </div>
   
     <div class="terminal window" ></div>
+    <div class="terminal" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
     <div class="terminal" [ngSwitch]="selection" #terminal>
   
       <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
@@ -167,14 +128,13 @@
 
       <pre *ngSwitchCase="'manifiesto'">- El testing no es una fase más, siempre debe estar presente en todo el desarrollo</pre>
       <pre *ngSwitchCase="'manifiesto'">- La calidad no depende solo de las pruebas, es un proceso constante durante todo el ciclo de vida </pre>
+      <pre *ngSwitchCase="'manifiesto'"></pre>
       <pre *ngSwitchCase="'manifiesto'"> - Testing inicial <strong> SOBRE </strong> testing final </pre>
       <pre *ngSwitchCase="'manifiesto'"> - Prevenir bugs <strong> SOBRE </strong> encontrar bugs </pre>
       <pre *ngSwitchCase="'manifiesto'"> - Entender que se prueba <strong> SOBRE </strong> probar una funcionalidad </pre>
       <pre *ngSwitchCase="'manifiesto'"> - Construir un mejor sistema <strong> SOBRE </strong> destruir el sistema </pre>
       <pre *ngSwitchCase="'manifiesto'"> - Responsabilidad del equipo <strong> SOBRE </strong> la responsabilidad del tester </pre>
   
-      <pre *ngSwitchCase="'tipos'">- Tipos de pruebas </pre>
-      <pre *ngSwitchCase="'tipos'"></pre>
       <pre *ngSwitchCase="'tipos'"> - Funcionales    -> prueban las funcionalidades del sistema y suelen ser de caja negra, al validar el QUE más que el COMO </pre>
       <pre *ngSwitchCase="'tipos'"> - No Funcionales -> estas validan cosas como carga, estres, rendimiento, confiabilidad, etc... </pre>
       <pre *ngSwitchCase="'tipos'"></pre>
@@ -201,11 +161,11 @@
       <pre *ngSwitchCase="'nombramiento'"> - Variables -> deben describir el proposito de cada variable, no deben ser resumidas ni genericas, algunos ejemplos pueden ser: </pre>
       <pre *ngSwitchCase="'nombramiento'">   - target, expected, actual, valid, invalid, Object(Mock)</pre>
   
-      <pre *ngSwitchCase="'first'"> - Fast            -> los tests unitarios deben ser lo más rapido posible, ya que se suelen tener cientos de pruebas y ejecutarlas conlleva tiempo y recursos </pre>
-      <pre *ngSwitchCase="'first'"> - Independent     -> cada test debe ser independiente de los demás, de lo contrario habra un acoplamiento no deseado </pre>
-      <pre *ngSwitchCase="'first'"> - Repeatable      -> las pruebas deben funcionar en cualquier ambiente que se ejecuten, ya sea local o en un ambiente de integración </pre>
-      <pre *ngSwitchCase="'first'"> - Self-Validating -> las pruebas deben mostrar resultados concluyentes, estos no deben tener intervención humana para que sean validos </pre>
-      <pre *ngSwitchCase="'first'"> - Timely          -> toda prueba debe ser oportuna y debe tener una razon de ser, si no se pueden justificar, estas habran sido una perdida de tiempo </pre>
+      <pre *ngSwitchCase="'first'"> Fast            -> los tests unitarios deben ser lo más rapido posible, ya que se suelen tener cientos de pruebas y ejecutarlas conlleva tiempo y recursos </pre>
+      <pre *ngSwitchCase="'first'"> Independent     -> cada test debe ser independiente de los demás, de lo contrario habra un acoplamiento no deseado </pre>
+      <pre *ngSwitchCase="'first'"> Repeatable      -> las pruebas deben funcionar en cualquier ambiente que se ejecuten, ya sea local o en un ambiente de integración </pre>
+      <pre *ngSwitchCase="'first'"> Self-Validating -> las pruebas deben mostrar resultados concluyentes, estos no deben tener intervención humana para que sean validos </pre>
+      <pre *ngSwitchCase="'first'"> Timely          -> toda prueba debe ser oportuna y debe tener una razon de ser, si no se pueden justificar, estas habran sido una perdida de tiempo </pre>
   
       <pre *ngSwitchCase="'sutydoc'"> - System Under Test </pre>
       <pre *ngSwitchCase="'sutydoc'">   - Es aquello que se esta probando ya sea una clase, un componente, una funcionalidad </pre>

@@ -4,88 +4,74 @@
   
     <div class="card-container">
     
-      <div class="card card-small" (click)="linkReferencia('poo','https://desarrolloweb.com/articulos/499.php')"
-        tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('poo')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>POO</span>
       </div>
   
-      <div class="card card-small"
-        (click)="linkReferencia('pooPilares','https://www.campusmvp.es/recursos/post/los-conceptos-fundamentales-sobre-programacion-orientada-objetos-explicados-de-manera-simple.aspx')"
-        tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('pooPilares')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Pilares POO</span>
       </div>
   
-      <div class="card card-small"
-        (click)="linkReferencia('composicion','https://www.seas.es/blog/informatica/agregacion-vs-composicion-en-diagramas-de-clases-uml/')"
-        tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('composicion')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Relaciones</span>
       </div>
   
-      <div class="card card-small"
-        (click)="linkReferencia('pooStatic','https://desarrolloweb.com/articulos/metodos-atributos-static-poo.html')"
-        tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('pooStatic')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Static en POO</span>
       </div>
   
-      <div class="card card-small"
-        (click)="linkReferencia('sobrecarga','https://www.netmentor.es/Entrada/sobrecarga-metodos')" tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('sobrecarga')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Sobrecargar Metodos</span>
       </div>
 
       <div class="card card-small"
-        (click)="linkReferencia('acoplamiento','https://jummp.wordpress.com/2010/06/26/acoplamiento-aferente-acoplamiento-eferente-inestabilidad-y-abstraccion-i/')" tabindex="0">
+        (click)="getLinkAndTittleByKey('acoplamiento')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Acoplamiento</span>
       </div>
 
-      <div class="card card-small"
-        (click)="linkReferencia('contratos','https://dosideas.com/wiki/Dise%C3%B1o_Por_Contrato')" tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('contratos')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Contratos</span>
       </div>
 
-      <div class="card card-small"
-        (click)="linkReferencia('descomposicion','http://miguedt.blogspot.com/2013/01/descomposicion-funcional.html#:~:text=La%20descomposici%C3%B3n%20funcional%20se%20refiere,en%20funci%C3%B3n%20de%20la%20composici%C3%B3n')" tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('descomposicion')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Descomposición</span>
       </div>
 
-      <div class="card card-small"
-        (click)="linkReferencia('herencia','https://www.ecured.cu/Herencia_(Inform%C3%A1tica)')" tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('herencia')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Herencia</span>
       </div>
 
-      <div class="card card-small"
-        (click)="linkReferencia('polimorfismo','https://devexperto.com/herencia-vs-composicion/')" tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('polimorfismo')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Polimorfismo</span>
       </div>
 
-      <div class="card card-small"
-        (click)="linkReferencia('herVScomp','https://devexperto.com/herencia-vs-composicion/')" tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('herVScomp')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Herencia/Composición</span>
       </div>
 
-      <div class="card card-small"
-        (click)="linkReferencia('enlaces','https://es.fondoperlaterra.org/comdifference-between-static-and-dynamic-binding-2')" tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('enlaces')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Enlaces</span>
@@ -94,6 +80,7 @@
     </div>
   
     <div class="terminal window" ></div>
+    <div class="terminal" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
     <div class="terminal" [ngSwitch]="selection" #terminal>
       <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
     
@@ -118,7 +105,6 @@
       <pre *ngSwitchCase="'herencia'"> - Implementación -> los metodos pueden ser sobreescritos, y usarse tal cual vengan del padre o modificarlos para cambiar el comportamiento </pre>
       <pre *ngSwitchCase="'herencia'"> - Interfaz -> los metodos son heredados, pero su implementación no, esta es propia de cada hijo </pre>
 
-      <pre *ngSwitchCase="'composicion'">- La Agregación y la Composición, Son 2 tipos diferentes de relaciones entre clases </pre>
       <pre *ngSwitchCase="'composicion'">- En los diagramas UML se suele representar por medio de un diamante con o sin relleno, ubicado en la clase contenedora </pre>
       <pre *ngSwitchCase="'composicion'"></pre>
       <pre *ngSwitchCase="'composicion'"> - Agregación -> Indica que una clase es parte de otra, y que los componentes pueden ser compartidos por otros </pre>
@@ -142,8 +128,6 @@
       <pre *ngSwitchCase="'sobrecarga'">- El nombre sera el mismo pero pueden recibir diferente numero de parametros o de tipos</pre>
       <pre *ngSwitchCase="'sobrecarga'">- Deben tener diferencias entre si, de lo contrario el compilador interno se da cuenta de esto y sacara error </pre>  
 
-      <pre *ngSwitchCase="'acoplamiento'">- El acoplamiento se divide en 2 tipos</pre>
-      <pre *ngSwitchCase="'acoplamiento'"></pre>
       <pre *ngSwitchCase="'acoplamiento'">- Aferente -> hace referencia a una clase con un alto grado de responsabilidad y una jerarquia bastante alta</pre>
       <pre *ngSwitchCase="'acoplamiento'"> - Esto es indicativo de la herencia, por lo que es pertinente modificarla con cuidado debido a posibles efectos colaterales </pre>
       <pre *ngSwitchCase="'acoplamiento'"> - Este tipo de clases solo usa atributos y metodos principalmente de las clases padre ó propios y poco o nada de entidades externas </pre>
@@ -153,7 +137,6 @@
       <pre *ngSwitchCase="'acoplamiento'"></pre>
       <pre *ngSwitchCase="'acoplamiento'">Idealmente se debe evitar el acoplamiento Eferente y buscar el Aferente, ya que este conlleva una mejor estabilidad y mantenimiento </pre>
 
-      <pre *ngSwitchCase="'contratos'">Diseño por contratos</pre>
       <pre *ngSwitchCase="'contratos'">- Mejora la compresión de POO al mejorar la especificación de los elementos </pre>
       <pre *ngSwitchCase="'contratos'">- Tambien puede servir como documentación, al mismo tiempo que se programa </pre>
       <pre *ngSwitchCase="'contratos'">- Uso eficaz de la herencia y la reutilización </pre>
@@ -180,10 +163,7 @@
       <pre *ngSwitchCase="'herVScomp'">Testing                     Entre más sobre escritura más dificil de cambiar     Piezas acotadas y fronteras claras      </pre>
       <pre *ngSwitchCase="'herVScomp'">Extension                   Debe hacerse con cuidado de no extender "basura"     Facil incorporación de piezas nuevas     </pre>
       <pre *ngSwitchCase="'herVScomp'">Polimorfismo                No es necesario ningun mecanismo extra               Se puede lograr mediante interfaces      </pre>
-      <pre *ngSwitchCase="'herVScomp'"></pre>
-      <pre *ngSwitchCase="'herVScomp'"></pre>
 
-      <pre *ngSwitchCase="'enlaces'">- Enlace estatico & dinamico</pre>
       <pre *ngSwitchCase="'enlaces'">- La asociación entre la definición de los metodos y variables, se suele dar de 2 maneras, durante tiempo de ejecución y de compilación </pre>
       <pre *ngSwitchCase="'enlaces'">- Todo lo se pueda conocer en tiempo de compilación, y que es necesario para que el programa se pueda ejecutar se conoce como enlace estatico </pre>
       <pre *ngSwitchCase="'enlaces'">- Las cosas de las cuales es necesario ejecutar el programa para conocer su valor y su comportamiento, se conoce como enlace dinamico </pre>
