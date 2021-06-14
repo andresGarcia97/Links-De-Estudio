@@ -34,6 +34,7 @@ export class LinkReferencia {
         ['practicas4', 'http://www.noussintelligence.com/desarrollo-software-buenas-practicas-recomendaciones/'],
         ['demeter', 'https://www.adictosaltrabajo.com/2015/07/24/ley-de-demeter/'],
         ['complejidad', 'http://oscarmoreno.com/la-complejidad-ciclomatica/'],
+        ['logging', 'https://itnext.io/logger-or-debugger-which-one-to-choose-3f6a72200b15'],
         // compilación
         ['compilacion', 'https://developer.mozilla.org/es/docs/Glossary/Compile'],
         ['nivel', 'https://desarrolloweb.com/articulos/2358.php#:~:text=Existen%20dos%20tipos%20de%20lenguajes,y%20los%20de%20alto%20nivel.&text=Los%20lenguajes%20m%C3%A1s%20pr%C3%B3ximos%20a,denominan%20lenguajes%20de%20alto%20nivel.'],
@@ -164,7 +165,6 @@ export class LinkReferencia {
         ['gwt', 'https://softwareengineering.stackexchange.com/questions/308160/differences-between-given-when-then-gwt-and-arrange-act-assert-aaa'],
         ['piramide', 'https://medium.com/@wc.testing.qa/la-famosa-pir%C3%A1mide-de-cohn-y-la-dura-realidad-e1250dfbe5f3'],
         ['triangulo', 'https://proyectosagiles.org/triangulo-hierro/'],
-        ['logging', 'https://itnext.io/logger-or-debugger-which-one-to-choose-3f6a72200b15'],
         ['cobertura', 'https://argonur.com/2020/05/11/code-coverage-cobertura-de-codigo/'],
         ['falsos', 'https://www.qalovers.com/2015/03/diferencia-entre-falso-positivo-y-falso_5.html#:~:text=La%20definici%C3%B3n%20de%20falso%20negativo,sistema%20que%20est%C3%A1%20realmente%20infectada.%22&text=Un%20falso%20negativo%20llevado%20a,cuando%20en%20realidad%20est%C3%A1%20fallando.'],
         // refactorización
@@ -264,6 +264,7 @@ export class LinkReferencia {
         ['practicas4', 'Buenas practicas parte #4'],
         ['demeter', 'Ley de Demeter'],
         ['complejidad', 'Complejidad Ciclomatica'],
+        ['logging', 'Logging VS Debugging'],
         // compilación
         ['compilacion', '¿ Que es compilar ?'],
         ['nivel', 'Niveles de compilación'],
@@ -395,7 +396,6 @@ export class LinkReferencia {
         ['gwt', 'Given-When-Then'],
         ['piramide', 'Piramide de tests'],
         ['triangulo', 'Triangulo de Hierro'],
-        ['logging', 'Logging VS Debugging'],
         ['cobertura', 'Cobertura de pruebas'],
         ['falsos', 'Falsos positivos & Falsos negativos'],
         // refactorización
