@@ -51,6 +51,12 @@
         <span>Gherkin</span>
       </div>
 
+      <div class="card card-small" (click)="getLinkAndTittleByKey('descomposicionHU')" tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+        <span>Descomposición</span>
+      </div>
+
     <div class="card card-small" (click)="getLinkAndTittleByKey('agil')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
@@ -127,6 +133,17 @@
       <pre *ngSwitchCase="'gherkin'"> - Dado que 'contexto inicial' </pre>
       <pre *ngSwitchCase="'gherkin'"> - Cuando 'un acontecimiento o suceso' </pre>
       <pre *ngSwitchCase="'gherkin'"> - Entonces 'resultado determinado' </pre>
+
+      <pre *ngSwitchCase="'descomposicionHU'">-Toda HU debe ser subdividida en tareas especificas que aporten valor y que ayuden al cumplimento de la meta planteada </pre>
+      <pre *ngSwitchCase="'descomposicionHU'">-Una forma util puede ser tener una serie de tareas genericas que puedan ser modificadas segun cada proyecto como: </pre>
+      <pre *ngSwitchCase="'descomposicionHU'"></pre>
+      <pre *ngSwitchCase="'descomposicionHU'">- Especificar cuantas pruebas unitarias estan asignadas a la HU </pre>
+      <pre *ngSwitchCase="'descomposicionHU'">- Pruebas de aceptación bien definidas de la HU </pre>
+      <pre *ngSwitchCase="'descomposicionHU'">- Tener claro los requisitos no funcionales que se deben cumplir </pre>
+      <pre *ngSwitchCase="'descomposicionHU'">- La necesidad de revisiones y cuantas se han de hacer </pre>
+      <pre *ngSwitchCase="'descomposicionHU'">- Refactorizaciones de codigo y cuanto tiempo se gastara para esto </pre>
+      <pre *ngSwitchCase="'descomposicionHU'">- Correcion y/o verificación de errores, que puedan suceder despues de las pruebas </pre>
+      <pre *ngSwitchCase="'descomposicionHU'">- Documentación, ya sea crearla o modificarla </pre>
 
     </div>
   

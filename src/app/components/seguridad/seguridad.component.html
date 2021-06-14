@@ -1,12 +1,11 @@
 <div class="content" role="main">
 
-  <h2>Seguridad</h2>
+  <h2>Seguridad informatica y otras amenazas</h2>
 
   <div class="card-container">
 
     <div class="card card-small" (click)="getLinkAndTittleByKey('firewall')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-        viewBox="0 0 512.001 512.001">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512.001 512.001">
         <path d="M17.067,93.867H128c9.421-0.012,17.054-7.646,17.067-17.067V17.067C145.055,7.646,137.421,0.012,128,0H17.067
                   C7.646,0.012,0.013,7.646,0,17.067V76.8C0.013,86.221,7.646,93.854,17.067,93.867z M17.067,17.067H128l0.017,59.733H17.067
                   V17.067z" />
@@ -19,8 +18,7 @@
                   S252.18,34.133,247.467,34.133z" />
         <path d="M85.334,145.067H42.667c-4.713,0-8.533,3.821-8.533,8.533c0,4.713,3.82,8.533,8.533,8.533h42.667
                   c4.713,0,8.533-3.821,8.533-8.533C93.867,148.887,90.046,145.067,85.334,145.067z" />
-        <path
-          d="M494.934,110.933H281.6c-6.109,0.015-11.727,3.348-14.67,8.701c-7.021-0.391-14.063,0.093-20.964,1.441
+        <path d="M494.934,110.933H281.6c-6.109,0.015-11.727,3.348-14.67,8.701c-7.021-0.391-14.063,0.093-20.964,1.441
                   c-2.734-6.155-8.831-10.128-15.566-10.142H17.067C7.646,110.946,0.013,118.579,0,128v59.733
                   c0.012,9.421,7.646,17.054,17.067,17.067h164.302c-0.061,5.707,0.29,11.41,1.049,17.067H179.2
                   c-0.51,0.001-1.019,0.032-1.526,0.091c-12.6-1.07-25.273,0.884-36.966,5.699c-3.208-3.665-7.838-5.774-12.709-5.79H17.067
@@ -106,6 +104,12 @@
       <span>Analisis de codigo</span>
     </div>
 
+    <div class="card card-small" (click)="getLinkAndTittleByKey('ciberSeguridad')" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Ciberseguridad</span>
+    </div>
+
   </div>
 
   <div class="terminal window"></div>
@@ -117,8 +121,7 @@
     <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
 
     <pre *ngSwitchCase="'firewall'">- Tiene la función de denegar ó permitir el acceso a nuestra red privada</pre>
-    <pre
-      *ngSwitchCase="'firewall'">- El trafico debe cumplir con una serie de reglas previamente definidas para su libre circulación </pre>
+    <pre *ngSwitchCase="'firewall'">- El trafico debe cumplir con una serie de reglas previamente definidas para su libre circulación </pre>
     <pre *ngSwitchCase="'firewall'">- Se puede implementar por medio de Hardware, Software, ó ambos </pre>
     <pre *ngSwitchCase="'firewall'">- Estas son algunas de sus funciones: </pre>
     <pre *ngSwitchCase="'firewall'"></pre>
@@ -130,64 +133,95 @@
 
     <pre *ngSwitchCase="'protocolos'">- SSL -> capa de sockets seguros </pre>
     <pre *ngSwitchCase="'protocolos'"> - Es una tecnologia para mantener segura una conexión de internet </pre>
-    <pre
-      *ngSwitchCase="'protocolos'"> - Esto protege toda la información privada que se envia entre 2 sistemas, (cliente-servidor)</pre>
+    <pre *ngSwitchCase="'protocolos'"> - Esto protege toda la información privada que se envia entre 2 sistemas, (cliente-servidor)</pre>
     <pre *ngSwitchCase="'protocolos'"></pre>
     <pre *ngSwitchCase="'protocolos'">- TSL -> una versión más actual y segura de SSL </pre>
     <pre *ngSwitchCase="'protocolos'"> - La principal difirencia es el algoritmo de cifrado </pre>
     <pre *ngSwitchCase="'protocolos'"></pre>
-    <pre
-      *ngSwitchCase="'protocolos'">- HTTPS -> Hyper Text Transfer Protocol Secure o protocolo seguro de transferencia de hipertexto </pre>
-    <pre
-      *ngSwitchCase="'protocolos'"> - Basicamente indica si una conexion es segura, por medio de un certificado de TSL ó SSL </pre>
+    <pre *ngSwitchCase="'protocolos'">- HTTPS -> Hyper Text Transfer Protocol Secure o protocolo seguro de transferencia de hipertexto </pre>
+    <pre *ngSwitchCase="'protocolos'"> - Basicamente indica si una conexion es segura, por medio de un certificado de TSL ó SSL </pre>
 
     <pre *ngSwitchCase="'proxy'">- Son un puente entre el origen y el destino de una petición </pre>
-    <pre
-      *ngSwitchCase="'proxy'"> - Pueden servir para controlar el acceso, segun los usuarios que intenten acceder </pre>
+    <pre *ngSwitchCase="'proxy'"> - Pueden servir para controlar el acceso, segun los usuarios que intenten acceder </pre>
     <pre *ngSwitchCase="'proxy'"> - Filtrar el contenido segun las politicas de la empresa </pre>
-    <pre
-      *ngSwitchCase="'proxy'"> - Almacenar en cache el contenido de las paginas que hayan sido accesadas previamente </pre>
+    <pre *ngSwitchCase="'proxy'"> - Almacenar en cache el contenido de las paginas que hayan sido accesadas previamente </pre>
     <pre *ngSwitchCase="'proxy'"></pre>
     <pre *ngSwitchCase="'proxy'">- Pueden ser inversos, conviertiendose en un puente entre el destino y el origen </pre>
     <pre *ngSwitchCase="'proxy'"> - Los proxies inversos pueden ser usados como balanceadores de carga </pre>
 
-    <pre
-      *ngSwitchCase="'estatico'">- El analisis de codigo estatico permite corregir vulnerabilidades, errores y bugs, </pre>
-    <pre
-      *ngSwitchCase="'estatico'">  - que no se encuentran a simple vista, pero pueden conllevar a problemas en el futuro </pre>
+    <pre *ngSwitchCase="'estatico'">- El analisis de codigo estatico permite corregir vulnerabilidades, errores y bugs, </pre>
+    <pre *ngSwitchCase="'estatico'">  - que no se encuentran a simple vista, pero pueden conllevar a problemas en el futuro </pre>
     <pre *ngSwitchCase="'estatico'"></pre>
     <pre *ngSwitchCase="'estatico'"> - PROS</pre>
     <pre *ngSwitchCase="'estatico'">  - Tambien ayuda a la reducción de la deuda tecnica y detectar code smells </pre>
     <pre *ngSwitchCase="'estatico'">  - Fomenta el uso de buenas practicas y la mejora continua </pre>
     <pre *ngSwitchCase="'estatico'"></pre>
     <pre *ngSwitchCase="'estatico'"> - CONTRAS </pre>
-    <pre
-      *ngSwitchCase="'estatico'">  - Se debe hacer con herramientas especializadas, y consume tiempo de desarrollo </pre>
-    <pre
-      *ngSwitchCase="'estatico'">  - No hay estandares concretos, cada lenguaje tiene especificaciones diferentes entre si </pre>
+    <pre *ngSwitchCase="'estatico'">  - Se debe hacer con herramientas especializadas, y consume tiempo de desarrollo </pre>
+    <pre *ngSwitchCase="'estatico'">  - No hay estandares concretos, cada lenguaje tiene especificaciones diferentes entre si </pre>
     <pre *ngSwitchCase="'estatico'"></pre>
     <pre *ngSwitchCase="'estatico'"> - Algunas tecnicas de analisis </pre>
-    <pre
-      *ngSwitchCase="'estatico'">  - Analisis grep -> analiza el codigo con expresiones regulares para encontrar: </pre>
-    <pre
-      *ngSwitchCase="'estatico'">    - Contraseñas expuestas, metodos mal nombrados, variables incompresibles, etc... </pre>
-    <pre
-      *ngSwitchCase="'estatico'">  - Identación -> cerrar y abrir llaves correctamente, evitando problemas al ejecutar </pre>
+    <pre *ngSwitchCase="'estatico'">  - Analisis grep -> analiza el codigo con expresiones regulares para encontrar: </pre>
+    <pre *ngSwitchCase="'estatico'">    - Contraseñas expuestas, metodos mal nombrados, variables incompresibles, etc... </pre>
+    <pre *ngSwitchCase="'estatico'">  - Identación -> cerrar y abrir llaves correctamente, evitando problemas al ejecutar </pre>
     <pre *ngSwitchCase="'estatico'">  - SataFlow -> se analiza desde un punto de partida hasta un punto final </pre>
-    <pre
-      *ngSwitchCase="'estatico'">  - AliasAnalisis -> analiza los punteros, para los lenguajes que funcionan con estos </pre>
+    <pre *ngSwitchCase="'estatico'">  - AliasAnalisis -> analiza los punteros, para los lenguajes que funcionan con estos </pre>
     <pre *ngSwitchCase="'estatico'"></pre>
     <pre *ngSwitchCase="'estatico'"> - Posibles defectos </pre>
-    <pre
-      *ngSwitchCase="'estatico'">  - Bugs -> es cuando un programa difiere de lo que debe hacer, esto es más subjetivo que objetivo,  </pre>
+    <pre *ngSwitchCase="'estatico'">  - Bugs -> es cuando un programa difiere de lo que debe hacer, esto es más subjetivo que objetivo,  </pre>
     <pre *ngSwitchCase="'estatico'">    - por lo que son errores que son más faciles de encontrar por humanos </pre>
-    <pre
-      *ngSwitchCase="'estatico'">  - Violación -> son errores de codificación entre lo que se pueda considerar "ideal", </pre>
+    <pre *ngSwitchCase="'estatico'">  - Violación -> son errores de codificación entre lo que se pueda considerar "ideal", </pre>
     <pre *ngSwitchCase="'estatico'">    - en el marco del lenguaje y lo realizado por el programador </pre>
-    <pre
-      *ngSwitchCase="'estatico'">  - Vulnerabilidad -> son comportamientos errores que a la larga pueden llevar a posibles problemas, </pre>
-    <pre
-      *ngSwitchCase="'estatico'">    - de rendimiento ó de seguridad, más no son son considerados problemas graves </pre>
+    <pre *ngSwitchCase="'estatico'">  - Vulnerabilidad -> son comportamientos errores que a la larga pueden llevar a posibles problemas, </pre>
+    <pre *ngSwitchCase="'estatico'">    - de rendimiento ó de seguridad, más no son son considerados problemas graves </pre>
+
+    <pre *ngSwitchCase="'ciberSeguridad'">- Es la practica de defender toda la infraestructura fisica y logica necesaria para nuestra negocio </pre>
+    <pre *ngSwitchCase="'ciberSeguridad'">- Aplica desde diferentes ramas de negocios, hasta los dispositivos moviles </pre>
+    <pre *ngSwitchCase="'ciberSeguridad'"></pre>
+    <pre *ngSwitchCase="'ciberSeguridad'">- Categorias comunes</pre>
+    <pre *ngSwitchCase="'ciberSeguridad'"> - De red: Consiste en proteger una red informatica de ataques dirigidos o malware oportunista </pre>
+    <pre *ngSwitchCase="'ciberSeguridad'"> - De aplicaciones: Se enfoca en mantener el software libres de amenazas o vulnerabilidades </pre>
+    <pre *ngSwitchCase="'ciberSeguridad'"> - De la información: Protege la integridad y la privacidad de los datos </pre>
+    <pre *ngSwitchCase="'ciberSeguridad'"> - Operativa: Incluye los procesos y decisiones de que recursos son accesibles y a quienes </pre>
+    <pre *ngSwitchCase="'ciberSeguridad'"> - Recuperación ante desastres: Ya sea un evento natural o un incidente de ciberseguridad, </pre>
+    <pre *ngSwitchCase="'ciberSeguridad'">  - la empresa ha de tener planes de recuperación, para garantizar la continuidad del negocio </pre>
+    <pre *ngSwitchCase="'ciberSeguridad'"> - Usuarios: El eslabon más debil de la cadena casi siempre han de ser los usuarios, </pre>
+    <pre *ngSwitchCase="'ciberSeguridad'">  - estos son impredecibles y pueden ser atacados de diversas maneras </pre>
+    <pre *ngSwitchCase="'ciberSeguridad'"></pre>
+    <pre *ngSwitchCase="'ciberSeguridad'">- Tipos de ciberamenazas</pre>
+    <pre *ngSwitchCase="'ciberSeguridad'"> - Delito cibernetico: incluye agentes individuales o grupos que atacan sistemas para, </pre>
+    <pre *ngSwitchCase="'ciberSeguridad'">  - obtener beneficios financieros o causar interrupciones en sistemas criticos </pre>
+    <pre *ngSwitchCase="'ciberSeguridad'"> - Ciberataques: recopilan información para exponer y dañar organizaciones </pre>
+    <pre *ngSwitchCase="'ciberSeguridad'"> - Ciberterrorismo: debilitar o destruir sistemas electronicos para causar panico o terror </pre>
+    <pre *ngSwitchCase="'ciberSeguridad'"></pre>
+    <pre *ngSwitchCase="'ciberSeguridad'">- Metodos usados</pre>
+    <pre *ngSwitchCase="'ciberSeguridad'"> - Malware: software malicioso creado para interrumpir o dañar los equipos de los usuarios, </pre>
+    <pre *ngSwitchCase="'ciberSeguridad'">  - suelen ser propagados mediante archivos infectados, ya sean descargas o correos electronicos </pre>
+    <pre *ngSwitchCase="'ciberSeguridad'"> - Virus: programa capaz de reproducirse y extenderse por todo un sistema </pre>
+    <pre *ngSwitchCase="'ciberSeguridad'"> - Troyanos: es un malware que se disfraza de software legitimo para recopilar datos de los usuarios </pre>
+    <pre *ngSwitchCase="'ciberSeguridad'"> - Spyware: registra todas las operaciones de los usuarios para robar información personal y sensible </pre>
+    <pre *ngSwitchCase="'ciberSeguridad'"> - Ransomware: bloquea los archivos y datos del usuario hasta que no se pague un rescate </pre>
+    <pre *ngSwitchCase="'ciberSeguridad'"> - Adware: software publicitario que puede difundir malware </pre>
+    <pre *ngSwitchCase="'ciberSeguridad'"> - Botnets: redes de equipos infectadas y que son usadas por los cibercriminales sin autorizacion previa </pre>
+    <pre *ngSwitchCase="'ciberSeguridad'"></pre>
+    <pre *ngSwitchCase="'ciberSeguridad'">- Ataques</pre>
+    <pre *ngSwitchCase="'ciberSeguridad'"> - Inyección de SQL: se puede usar para robar datos o tomar el control de bases de datos, </pre>
+    <pre *ngSwitchCase="'ciberSeguridad'">  - por medio de comandos maliciosos especificos que la base de datos ejecutara </pre>
+    <pre *ngSwitchCase="'ciberSeguridad'"> - Phishing: Son correos electronicos que aparentan ser legitimos, </pre>
+    <pre *ngSwitchCase="'ciberSeguridad'">  - pero solo buscan robar información personal, entregada por el mismo usuario </pre>
+    <pre *ngSwitchCase="'ciberSeguridad'"> - Man-in-the-middle: es la interceptación de comunicaciones entre 2 dispositivos, </pre>
+    <pre *ngSwitchCase="'ciberSeguridad'">  - por ejemplo una red publica y un dispositivo conectado a esta </pre>
+    <pre *ngSwitchCase="'ciberSeguridad'"> - Ataque de denegación de servicio(DoS): </pre>
+    <pre *ngSwitchCase="'ciberSeguridad'">  - se impide que un sistema pueda satisfacer a sus usuarios al sobrecargar e inutilizar </pre>
+    <pre *ngSwitchCase="'ciberSeguridad'">  - los servidores mediante inmensas cantidades de trafico </pre>
+    <pre *ngSwitchCase="'ciberSeguridad'"></pre>
+    <pre *ngSwitchCase="'ciberSeguridad'">- Protecciones</pre>
+    <pre *ngSwitchCase="'ciberSeguridad'"> - Mantenga actualizado su sistema operativo </pre>
+    <pre *ngSwitchCase="'ciberSeguridad'"> - Use software antivirus de su preferencia </pre>
+    <pre *ngSwitchCase="'ciberSeguridad'"> - Utilizar contraseñas seguras y cambiarlas con periocidad </pre>
+    <pre *ngSwitchCase="'ciberSeguridad'"> - No abrir archivos adjuntos de fuentes desconocidas </pre>
+    <pre *ngSwitchCase="'ciberSeguridad'"> - No hacer clic en los vinculos de remitentes desconocidos </pre>
+    <pre *ngSwitchCase="'ciberSeguridad'"> - Evitar el uso de redes wifi publicas</pre>
 
   </div>
 

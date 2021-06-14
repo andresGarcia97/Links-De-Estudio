@@ -76,11 +76,18 @@
         <span>Multitareas</span>
       </div>
 
+      <div class="card card-small" (click)="getLinkAndTittleByKey('maxwellCurve')" tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+        <span>Curva de Maxwell</span>
+      </div>
+
     </div>
     
     <div class="terminal window" ></div>
     <div class="terminal" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
     <div class="terminal" [ngSwitch]="selection" #terminal>
+
       <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
   
       <pre *ngSwitchCase="'balas'">- El software puede tener dificultades inherentes al software y accidentales </pre>
@@ -199,6 +206,13 @@
       <pre *ngSwitchCase="'multitarea'"> - Decaimiento de la memoria y posibles problemas de estres, además de una peor salud fisica y mental </pre>
       <pre *ngSwitchCase="'multitarea'"> - Mayor riesgo de errores al tener que estar atento a más cosas </pre>
       <pre *ngSwitchCase="'multitarea'"> - Menor calidad del trabajo, además de posibilidades de sufrir de deficit de atención </pre>
+
+      <pre *ngSwitchCase="'maxwellCurve'">- Más horas de trabajo, implican menos productividad</pre>
+      <pre *ngSwitchCase="'maxwellCurve'">- Este estudio fue realizado principalmente para Scrum, hasta la demostración de que en ciertos casos es más optimo el modelo de cascada </pre>
+      <pre *ngSwitchCase="'maxwellCurve'">- Jornadas más cortas no necesariamente significan menos productividad, estas pueden ayudar a: </pre>
+      <pre *ngSwitchCase="'maxwellCurve'"> - atraer nuevos talentos</pre>
+      <pre *ngSwitchCase="'maxwellCurve'"> - mejorar el equilibrio entre vida personal y laboral, teniendo trabajadores más felices </pre>
+      <pre *ngSwitchCase="'maxwellCurve'"> - reduce los sentimientos de insatisfacción </pre>
       
     </div>
   

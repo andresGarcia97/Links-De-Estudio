@@ -12,6 +12,7 @@ export class LinkReferencia {
         ['5s', 'https://www.gestiopolis.com/5s-seiri-seiton-seiso-seiketsu-y-shitsuke-base-de-la-mejora-continua/'],
         ['muda#1', 'https://samuelcasanova.com/2014/03/los-7-desperdicios-del-desarrollo-de-software-i/'],
         ['muda#2', 'https://samuelcasanova.com/2014/03/los-7-desperdicios-del-desarrollo-de-software-y-ii/'],
+        ['planningPoker', 'https://samuelcasanova.com/2016/01/estimacion-agil-con-la-tecnica-planning-poker/'],
         // analisis
         ['comportamiento', 'https://es.wikipedia.org/wiki/Modelo_de_comportamiento_(inform%C3%A1tica)'],
         ['dominio', 'https://www.redalyc.org/jatsRepo/4768/476862530003/html/index.html#:~:text=El%20An%C3%A1lisis%20de%20Dominio%20es,la%20identificaci%C3%B3n%2C%20el%20an%C3%A1lisis%20y'],
@@ -51,6 +52,7 @@ export class LinkReferencia {
         ['tipos', 'https://stevenbenner.com/2010/07/the-5-types-of-programmers/'],
         ['sesgos', 'https://www.brainvestigations.com/neurociencia/sesgo-cognitivo-negocios/'],
         ['multitarea', 'https://www.sodexo.es/blog/multitarea-multitasking/'],
+        ['maxwellCurve', 'https://blog.axosoft.com/the-maxwell-curve-blunder-in-the-name-of-scrum/'],
         // docker
         ['docker', 'https://www.xataka.com/otros/docker-a-kubernetes-entendiendo-que-contenedores-que-mayores-revoluciones-industria-desarrollo'],
         ['images', 'https://clouding.io/hc/es/articles/360010283060-Trabajando-con-im%C3%A1genes-en-Docker'],
@@ -94,6 +96,7 @@ export class LinkReferencia {
         ['3c', 'https://julibetancur.blog/tag/tres-c/'],
         ['gherkin', 'https://blog.thiga.co/es/gherkin/'],
         ['agil', 'https://agilemanifesto.org/iso/es/manifesto.html'],
+        ['descomposicionHU', 'https://www.javiergarzas.com/2012/05/descomponer-historias-de-usuario-en-tareas-1.html'],
         // malas practicas
         ['callbackhell', 'https://codearmy.co/que-es-el-callback-hell-y-como-evitarlo-4af418a6ed14'],
         ['cosas1', 'https://softgrade.mx/5-causas-afectan-la-calidad-software/'],
@@ -192,6 +195,7 @@ export class LinkReferencia {
         ['protocolos', 'https://www.websecurity.digicert.com/es/es/security-topics/what-is-ssl-tls-https'],
         ['proxy', 'https://www.welivesecurity.com/la-es/2020/01/02/que-es-proxy-para-que-sirve/'],
         ['estatico', 'https://www.welivesecurity.com/la-es/2021/01/18/analisis-estatico-codigo-fuente-orientado-a-seguridad/'],
+        ['ciberSeguridad', 'https://latam.kaspersky.com/resource-center/definitions/what-is-cyber-security'],
         // smells codes
         ['codesmells', 'https://openwebinars.net/blog/code-smells-y-deuda-tecnica/'],
         ['tipos', 'https://refactoring.guru/es/refactoring/smells'],
@@ -234,7 +238,7 @@ export class LinkReferencia {
         ['diseno', 'https://seocom.agency/es/blog/diseno-grafico-web/']
     ]);
 
-    protected titulos: Map<string, string> = new Map([
+    protected tittles: Map<string, string> = new Map([
         // agiles
         ['moscow', 'MOSCOW'],
         ['scoring', 'Theme Scoring'],
@@ -242,6 +246,7 @@ export class LinkReferencia {
         ['5s', 'Seiri, Seiton, Seiso, Seiketsu, Shitsuke'],
         ['muda#1', 'Muda en el software, paralelismos 1-3'],
         ['muda#2', 'Muda en el software, paralelismos 4-7'],
+        ['planningPoker', 'Planning Poker y la estimación agil'],
         // analisis
         ['comportamiento', 'Comportamiento del sistema'],
         ['dominio', 'Analisis de Dominio'],
@@ -281,6 +286,7 @@ export class LinkReferencia {
         ['tipos', 'Tipos de programadores'],
         ['sesgos', 'Algunos Sesgos cognitivos'],
         ['multitarea', 'Pros y Contras del multitasking'],
+        ['maxwellCurve', 'La curva de Maxwell'],
         // docker
         ['docker', '¿ Que es Docker ?'],
         ['images', '¿ Que es una imagen ?'],
@@ -295,7 +301,6 @@ export class LinkReferencia {
         ['tdd', 'Desarrollo Dirigido por Tests'],
         ['atdd', 'Desarrollo guiado por pruebas de aceptación'],
         ['analisis', 'Bottom Up & Top Down'],
-        ['', ''],
         // frameworks
         ['frameworks', '¿ Que Son ?'],
         ['ioc', 'Inversion de Control'],
@@ -324,6 +329,7 @@ export class LinkReferencia {
         ['smart', 'Criterio SMART'],
         ['3c', 'Card-Conversación-Confirmación'],
         ['gherkin', 'Definición de los criterios de aceptación'],
+        ['descomposicionHU', 'Descomposición en tareas'],
         ['agil', 'Manifiesto Agil'],
         // malas practicas
         ['callbackhell', 'Cadena de llamados asincronos'],
@@ -423,6 +429,7 @@ export class LinkReferencia {
         ['protocolos', 'SSL, TSL, HTTPS'],
         ['proxy', 'Proxy'],
         ['estatico', 'Analisis de codigo estatico'],
+        ['ciberSeguridad', 'Ciberseguridad y otras amenazas'],
         // smells codes
         ['codesmells', 'Smell Codes'],
         ['tipos', 'Tipos de Smell codes'],
@@ -468,11 +475,24 @@ export class LinkReferencia {
     public getLinkAndTittleByKey(key: string = ''): void {
         this.selection = key;
         this.referencia = this.links.get(key)?.toString() || '';
-        this.titulo = this.titulos.get(key)?.toString() || '';
+        this.titulo = this.tittles.get(key)?.toString() || '';
+        // function ONLY for development
+        // this.verifySizesFromTittlesAndLiks();
     }
 
-    public linkReferencia(seleccion: string = '', link: string = ''): void {
-        this.selection = seleccion;
-        this.referencia = link;
+    private verifySizesFromTittlesAndLiks(): void {
+        if (this.links.size !== this.tittles.size) {
+            alert('contenido diferente en titulos y links, revisar consola');
+            for (const [key, value] of this.tittles) {
+                if (!this.links.has(key)) {
+                    console.log(key, value);
+                }
+            }
+            for (const [key, value] of this.links) {
+                if (!this.tittles.has(key)) {
+                    console.log(key, value);
+                }
+            }
+        }
     }
 }
