@@ -102,6 +102,12 @@ export class LinkReferencia {
         ['cosas1', 'https://softgrade.mx/5-causas-afectan-la-calidad-software/'],
         ['cosas2', 'https://blog.gft.com/es/2016/01/20/las-10-malas-practicas-mas-comunes-en-la-gestion-de-proyectos/'],
         ['cosas3', 'https://blog.gft.com/es/2016/01/20/las-10-malas-practicas-mas-comunes-en-la-gestion-de-proyectos/'],
+        // meta-caracteristicas
+        ['metaDatos', 'https://blog.powerdata.es/el-valor-de-la-gestion-de-datos/que-son-los-metadatos-y-cual-es-su-utilidad'],
+        ['metaClase', 'https://quesignificado.org/que-es-una-metaclase/'],
+        ['reflexion', 'https://es.linkfang.org/wiki/Reflexi%C3%B3n_(inform%C3%A1tica)'],
+        ['asserts', 'https://www.adictosaltrabajo.com/2016/01/07/haz-tu-codigo-mas-fiable-con-asserts/'],
+        ['excepciones', 'https://universidad-de-los-andes.gitbooks.io/fundamentos-de-programacion/content/Nivel4/5_ManejoDeLasExcepciones.html'],
         // metodologias
         ['agiles', 'https://www.iebschool.com/blog/que-son-metodologias-agiles-agile-scrum/'],
         ['scrum', 'https://www.iebschool.com/blog/metodologia-scrum-agile-scrum/'],
@@ -336,6 +342,12 @@ export class LinkReferencia {
         ['cosas1', 'Malas practicas parte #1'],
         ['cosas2', 'Malas practicas parte #2'],
         ['cosas3', 'Malas practicas parte #3'],
+        // meta-caracteristicas
+        ['metaDatos', ' ¿ Que son los metadatos ?'],
+        ['metaClase', '¿ Que es una meta clase ?'],
+        ['reflexion', 'Auto mutabilidad del codigo'],
+        ['asserts', 'Comprobaciones del codigo'],
+        ['excepciones', 'Lanzamiento y manejo de excepciones'],
         // metodologias
         ['agiles', '¿ Que son ?'],
         ['scrum', 'Scrum'],

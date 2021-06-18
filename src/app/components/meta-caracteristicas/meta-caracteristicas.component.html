@@ -1,0 +1,83 @@
+<div class="content">
+
+    <h2>Caracteristicas del codigo (metadatos)</h2>
+  
+    <div class="card-container">
+  
+      <div class="card card-small" (click)="getLinkAndTittleByKey('metaDatos')" tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+        <span>Meta data</span>
+      </div>
+
+      <div class="card card-small" (click)="getLinkAndTittleByKey('metaClase')" tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+        <span>Meta Clase</span>
+      </div>
+
+      <div class="card card-small" (click)="getLinkAndTittleByKey('reflexion')" tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+        <span>Reflexión</span>
+      </div>
+
+      <div class="card card-small" (click)="getLinkAndTittleByKey('asserts')" tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+        <span>Aserciones</span>
+      </div>
+
+      <div class="card card-small" (click)="getLinkAndTittleByKey('excepciones')" tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+        <span>Exepciones</span>
+      </div>
+  
+    </div>
+  
+    <div class="terminal window" ></div>
+    <div class="terminal" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
+      <div class="terminal" [ngSwitch]="selection" #terminal>
+
+        <pre *ngSwitchDefault> Selecciona una opcion para ver más </pre>
+    
+        <pre *ngSwitchCase="'metaDatos'">- Literalmente son datos de los datos </pre>
+        <pre *ngSwitchCase="'metaDatos'">- Estan estructurados para describir caracteristicas de los datos como cantidad y contenido </pre>
+        <pre *ngSwitchCase="'metaDatos'">- Actualmente se usan para gestionar y recolectar información de interes </pre>
+        <pre *ngSwitchCase="'metaDatos'">- Facilitan la estandarización y la gestion de los cambios </pre>
+        <pre *ngSwitchCase="'metaDatos'">- Pueden facilitar el desarrollo al tener un menor cambio de costo entre plataformas </pre>
+
+        <pre *ngSwitchCase="'metaClase'">- Normalmente se considera una clase de clases </pre>
+        <pre *ngSwitchCase="'metaClase'">- Es una caracteristica propia del sistema por lo que el usuario jamas la llegara a ver </pre>
+        <pre *ngSwitchCase="'metaClase'">- Esta caracteristica permite añadir y modificar comportamientos del programa, </pre>
+        <pre *ngSwitchCase="'metaClase'"> - Sin llegarlo a afectar directamente </pre>
+        <pre *ngSwitchCase="'metaClase'">- Este concepto es ampliamente usado para realizar testing, por medio de anotaciones, dobles y otros conceptos, </pre>
+        <pre *ngSwitchCase="'metaClase'"> - Un ejemplo de esto son Junit y Mockito, frameworks para realizar pruebas en java, que se basan en estas caracteristica </pre>
+
+        <pre *ngSwitchCase="'reflexion'">- Capacidad de un codigo para observar un programa para observarse y cambiar su estructura a alto nivel </pre>
+        <pre *ngSwitchCase="'reflexion'">- Puede ser dinamica o estatica, y es más comun en los lenguajes que usan maquinas virtuales para ejecutarse, como JAVA </pre>
+        <pre *ngSwitchCase="'reflexion'">- Cuando el codigo fuente se compila normalmente pierde su estructura al pasar a un lenguaje de un nivel más bajo, pero </pre>
+        <pre *ngSwitchCase="'reflexion'"> - si este sistema permite la reflexión esta estructura se preserva como metadatos </pre>
+        <pre *ngSwitchCase="'reflexion'">- La reflexión permite conseguir un codigo aun más flexible, a cambio de perder rendimiento </pre>
+        <pre *ngSwitchCase="'reflexion'"></pre>
+        <pre *ngSwitchCase="'reflexion'">- Esta caracteristica permite realizar acciones como: </pre>
+        <pre *ngSwitchCase="'reflexion'"> - Descubrir y modificar secciones de codigo en tiempo de ejecución </pre>
+        <pre *ngSwitchCase="'reflexion'"> - Evaluar una cadena como si fuera una sentencia de código fuente en tiempo de ejecución </pre>
+        <pre *ngSwitchCase="'reflexion'"> - Flexibilizar el tipado en lenguajes fuertemente tipados </pre>
+
+        <pre *ngSwitchCase="'asserts'">- Todo codigo contiene algun tipo de restriccion, si estas no se documentan bien pueden inducir a errores </pre>
+        <pre *ngSwitchCase="'asserts'">- La documentación extensiva tampoco es una buena idea ya que modificar codigo conlleva a modificar la documentación tambien </pre>
+        <pre *ngSwitchCase="'asserts'">- Las aserciones son predicados que se evaluan como ciertos o falsos en tiempo de ejecución </pre>
+        <pre *ngSwitchCase="'asserts'">- Estas comprobaciones favorecen el proceso de detectar errores y garantizar las condiciones de funcionamiento </pre>
+        <pre *ngSwitchCase="'asserts'">- Son una opción a considerar si se quiere evitar la programación defensiva </pre>
+
+        <pre *ngSwitchCase="'excepciones'">- Es la indicación de que se produjo un error en la ejecución del programa </pre>
+        <pre *ngSwitchCase="'excepciones'">- Estas pueden ser situaciones esperadad, inesperadas e incluso pueden se provocadas </pre>
+        <pre *ngSwitchCase="'excepciones'">- Las exepciones son objetos especializados con toda la información del error </pre>
+        <pre *ngSwitchCase="'excepciones'">- Estos objetos pueden ser atrapados por la instrucción try-catch y evitar que se detenga el programa, </pre>
+        <pre *ngSwitchCase="'excepciones'"> - o simplemente ser lanzados y terminar el programa de manera abrupta </pre>
+        <pre *ngSwitchCase="'excepciones'">- El manejo de excepciones es fundamental para conseguir programas robustos y confiables, por esto es ideal definir, </pre>
+        <pre *ngSwitchCase="'excepciones'"> - responsabilidades acerca de quienes pueden lanzar excepciones y quienes pueden atraparlas </pre>
+
+      </div>
+    
+      <app-referencia [referencia]="referencia"></app-referencia>
+    
+    </div>
+  

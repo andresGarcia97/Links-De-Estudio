@@ -29,6 +29,7 @@
   <div class="terminal window" ></div>
   <div class="terminal" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
     <div class="terminal" [ngSwitch]="selection" #terminal>
+      
       <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
   
       <pre *ngSwitchCase="'callbackhell'">- Generalmente es un problema al hacer codigo con caracteristicas asincronas (generalmente javascript) </pre>

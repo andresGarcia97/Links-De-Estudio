@@ -14,6 +14,7 @@ import { FuentesComponent } from './components/fuentes/fuentes.component';
 import { GitComponent } from './components/git/git.component';
 import { HistoriaUsuarioComponent } from './components/historia-usuario/historia-usuario.component';
 import { MalasPracticasComponent } from './components/malas-practicas/malas-practicas.component';
+import { MetaCaracteristicasComponent } from './components/meta-caracteristicas/meta-caracteristicas.component';
 import { MetodologiasComponent } from './components/metodologias/metodologias.component';
 import { OtrosComponent } from './components/otros/otros.component';
 import { ParadigmasComponent } from './components/paradigmas/paradigmas.component';
@@ -75,7 +76,9 @@ export class AppComponent {
     // 20 - 23
     ConocimientosEmpiricosComponent, FuentesComponent, SeguridadComponent, AnalisisComponent,
     // 24 - 27
-    DockerComponent, PooComponent, AgilesComponent, SmellsCodesComponent];
+    DockerComponent, PooComponent, AgilesComponent, SmellsCodesComponent, 
+    // 28 - 31
+    MetaCaracteristicasComponent ];
 
   constructor(private componentFactoryResolver: ComponentFactoryResolver) { }
 

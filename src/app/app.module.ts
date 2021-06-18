@@ -30,6 +30,7 @@ import { DockerComponent } from './components/dockerC/docker.component';
 import { PooComponent } from './components/poo/poo.component';
 import { AgilesComponent } from './components/agiles/agiles.component';
 import { SmellsCodesComponent } from './components/smells-codes/smells-codes.component';
+import { MetaCaracteristicasComponent } from './components/meta-caracteristicas/meta-caracteristicas.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +63,8 @@ import { SmellsCodesComponent } from './components/smells-codes/smells-codes.com
     DockerComponent,
     PooComponent,
     AgilesComponent,
-    SmellsCodesComponent
+    SmellsCodesComponent,
+    MetaCaracteristicasComponent
   ],
   imports: [
     BrowserModule
