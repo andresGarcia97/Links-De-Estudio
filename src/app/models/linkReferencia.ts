@@ -248,7 +248,7 @@ export class LinkReferencia {
         ['diseno', 'https://seocom.agency/es/blog/diseno-grafico-web/']
     ]);
 
-    protected tittles: Map<string, string> = new Map([
+    public tittles: Map<string, string> = new Map([
         // agiles
         ['moscow', 'MOSCOW'],
         ['scoring', 'Theme Scoring'],
