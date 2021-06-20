@@ -495,23 +495,6 @@ export class LinkReferencia {
         this.selection = key;
         this.referencia = this.links.get(key)?.toString() || '';
         this.titulo = this.tittles.get(key)?.toString() || '';
-        // function ONLY for development
-        // this.verifySizesFromTittlesAndLiks();
     }
 
-    private verifySizesFromTittlesAndLiks(): void {
-        if (this.links.size !== this.tittles.size) {
-            alert('contenido diferente en titulos y links, revisar consola');
-            for (const [key, value] of this.tittles) {
-                if (!this.links.has(key)) {
-                    console.log(key, value);
-                }
-            }
-            for (const [key, value] of this.links) {
-                if (!this.tittles.has(key)) {
-                    console.log(key, value);
-                }
-            }
-        }
-    }
 }

@@ -340,7 +340,7 @@ a:hover {
   background: var(--color-jet);
   color: var(--color-selective-yellow);
   width: 100%;
-  font-size: 3em;
+  font-size: 3rem;
   line-height: 4px;
   text-indent: 4px;
   align-items: center;
@@ -531,8 +531,9 @@ svg#clouds {
     top: -31px;
   }
 
-  .terminal::before{
+  .window::before {
     height: 12px;
+    font-size: 2.8rem;
   }
 
 }
