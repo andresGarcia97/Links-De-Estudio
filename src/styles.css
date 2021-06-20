@@ -14,7 +14,7 @@ paleta de colores -> https://coolors.co/dd0031-1976d2-eeeeee-000000-ffba08
   --color-orange-yellow-crayola: #ffd770;
   --color-cultured: #eeeeee;
   --color-crimson: #dd0031;
-  --color-hunter-green: #355834;
+  --color-fulvous: #E8871E;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 14px;
   box-sizing: border-box;
@@ -138,7 +138,7 @@ paleta de colores -> https://coolors.co/dd0031-1976d2-eeeeee-000000-ffba08
 }
 
 .oscuro svg circle {
-  fill: var(--color-hunter-green);
+  fill: var(--color-fulvous);
 }
 
 /* fin del modo oscuro */
