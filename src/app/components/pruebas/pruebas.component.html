@@ -5,7 +5,7 @@
     <div class="card-container">
   
       <div class="card card-small" (click)="getLinkAndTittleByKey('principios')" tabindex="0">
-          <svg class="material-icons" width="24" height="24" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
+        <svg class="material-icons" width="24" height="24" viewBox="0 0 512 512">
             <path d="M296,232c-5.52,0-10,4.48-10,10s4.48,10,10,10c5.52,0,10-4.48,10-10S301.52,232,296,232z"/>
             <path d="M256,172c-5.52,0-10,4.48-10,10s4.48,10,10,10c5.52,0,10-4.48,10-10S261.52,172,256,172z"/>
             <path d="M136,432c-5.52,0-10,4.48-10,10c0,5.52,4.48,10,10,10s10-4.48,10-10C146,436.48,141.52,432,136,432z"/>
@@ -22,7 +22,7 @@
               C445.791,433.138,445.635,451.741,436.567,467.244z"/>
             <path d="M216,232c-16.542,0-30,13.458-30,30s13.458,30,30,30s30-13.458,30-30S232.542,232,216,232z M216,272c-5.514,0-10-4.486-10-10c0-5.514,4.486-10,10-10c5.514,0,10,4.486,10,10C226,267.514,221.514,272,216,272z"/>
             <path d="M376,432H176c-5.522,0-10,4.478-10,10c0,5.522,4.478,10,10,10h200c5.522,0,10-4.478,10-10C386,436.478,381.522,432,376,432z"/>
-      </svg>
+        </svg>
         <span> Principios de testing </span>
       </div>
   
@@ -31,8 +31,14 @@
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Testing manifiesto</span>
       </div>
+
+      <div class="card card-small" (click)="getLinkAndTittleByKey('QAperson')" tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+        <span>QA</span>
+      </div>
   
-      <div class="card card-small" (click)="getLinkAndTittleByKey('tipos')" tabindex="0">
+      <div class="card card-small" (click)="getLinkAndTittleByKey('tiposPruebas')" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Tipos</span>
@@ -128,15 +134,22 @@
       <pre *ngSwitchCase="'manifiesto'"> - Entender que se prueba <strong> SOBRE </strong> probar una funcionalidad </pre>
       <pre *ngSwitchCase="'manifiesto'"> - Construir un mejor sistema <strong> SOBRE </strong> destruir el sistema </pre>
       <pre *ngSwitchCase="'manifiesto'"> - Responsabilidad del equipo <strong> SOBRE </strong> la responsabilidad del tester </pre>
+
+      <pre *ngSwitchCase="'QAperson'">- Quality Assurance (seguro de calidad) es un concepto donde todos los involucrados deben aportar, </pre>
+      <pre *ngSwitchCase="'QAperson'"> - aunque haya personas especificas para verificar su cumplimiento </pre>
+      <pre *ngSwitchCase="'QAperson'">- Todo proyecto deberia contar con un plan de pruebas que asegure la calidad del proyecto entregado </pre>
+      <pre *ngSwitchCase="'QAperson'">- La integración continua y los tests son herramientas con las que el proyecto deberia contar desde su inicio </pre>
+      <pre *ngSwitchCase="'QAperson'">- El encargado de estos aspectos debe ser el intermediario entre los clientes y sus espectativas y lo que ha sido elaborado </pre>
+      <pre *ngSwitchCase="'QAperson'">- Tambien es el encargado de crear ambientes de prueba que sean similares al ambiente de producción </pre>
   
-      <pre *ngSwitchCase="'tipos'"> - Funcionales    -> prueban las funcionalidades del sistema y suelen ser de caja negra, al validar el QUE más que el COMO </pre>
-      <pre *ngSwitchCase="'tipos'"> - No Funcionales -> estas validan cosas como carga, estres, rendimiento, confiabilidad, etc... </pre>
-      <pre *ngSwitchCase="'tipos'"></pre>
-      <pre *ngSwitchCase="'tipos'"> - Estructurales -> indagan la estructura interna del programa y sus relaciones, aca se pueden incluir las pruebas unitarias y de integración </pre>
-      <pre *ngSwitchCase="'tipos'"> - Estructurales -> estan son de tipo caja blanca, ya que es necesario conocer todo el sistema y como funciona para que sean bien planificadas </pre>
-      <pre *ngSwitchCase="'tipos'"></pre>
-      <pre *ngSwitchCase="'tipos'"> - Regresión -> basicamente es volver a correr todas la pruebas despues de que se cambien componentes ó se corrija un problema </pre>
-      <pre *ngSwitchCase="'tipos'"> - Regresión -> dependiendo de la cantidad de pruebas que hayan y de su complejidad puede ser una operación bastante demorada </pre>
+      <pre *ngSwitchCase="'tiposPruebas'"> - Funcionales    -> prueban las funcionalidades del sistema y suelen ser de caja negra, al validar el QUE más que el COMO </pre>
+      <pre *ngSwitchCase="'tiposPruebas'"> - No Funcionales -> estas validan cosas como carga, estres, rendimiento, confiabilidad, etc... </pre>
+      <pre *ngSwitchCase="'tiposPruebas'"></pre>
+      <pre *ngSwitchCase="'tiposPruebas'"> - Estructurales -> indagan la estructura interna del programa y sus relaciones, aca se pueden incluir las pruebas unitarias y de integración </pre>
+      <pre *ngSwitchCase="'tiposPruebas'"> - Estructurales -> estan son de tipo caja blanca, ya que es necesario conocer todo el sistema y como funciona para que sean bien planificadas </pre>
+      <pre *ngSwitchCase="'tiposPruebas'"></pre>
+      <pre *ngSwitchCase="'tiposPruebas'"> - Regresión -> basicamente es volver a correr todas la pruebas despues de que se cambien componentes ó se corrija un problema </pre>
+      <pre *ngSwitchCase="'tiposPruebas'"> - Regresión -> dependiendo de la cantidad de pruebas que hayan y de su complejidad puede ser una operación bastante demorada </pre>
 
       <pre *ngSwitchCase="'beneficios'"> - La calidad mejora al encontrar errores en etapas previas y durante el desarrollo, en vez de hacerlo en etapas finales </pre>
       <pre *ngSwitchCase="'beneficios'"> - Los cambios son hechos de manera más agil al inducir una mayor comunicación con todo el equipo </pre>

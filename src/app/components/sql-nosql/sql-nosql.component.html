@@ -6,7 +6,7 @@
 
     <div class="card card-small" (click)="getLinkAndTittleByKey('sql')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24"
-        height="24" viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve">
+        height="24" viewBox="0 0 512.001 512.001">
             <path d="M334,57.959c-5.522,0-10,4.507-10,10.03c0,5.523,4.478,10.001,10,10.001c5.522,0,10-4.477,10-10v-0.061
             C344,62.406,339.523,57.959,334,57.959z" />
             <path d="M295.542,41.572C270.477,37.333,237.612,35,203,35c-5.522,0-10,4.477-10,10s4.478,10,10,10
@@ -99,7 +99,7 @@
       <span>NoSQL</span>
     </div>
 
-    <div class="card card-small" (click)="getLinkAndTittleByKey('tipos')" tabindex="0">
+    <div class="card card-small" (click)="getLinkAndTittleByKey('tiposBD')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Tipos NoSQL</span>
@@ -214,10 +214,10 @@
     <pre *ngSwitchCase="'nosql'">- No hay un estandar para las operaciones, cada motor tiene su sintaxis diferente</pre>
     <pre *ngSwitchCase="'nosql'">- Existen diferentes formas de guardar la información </pre>
 
-    <pre *ngSwitchCase="'tipos'">- Clave-Valor -> cada elemento tiene una llave unica, asociada a un valor </pre>
-    <pre *ngSwitchCase="'tipos'">- Documentos -> la información se guarda en documentos con IDs unicos, y en formatos simples como JSON o XML </pre>
-    <pre *ngSwitchCase="'tipos'">- Grafos -> se basan en nodos, relacionados mediante aristas, es necesario de la teoria de grafos para recorrerlas </pre>
-    <pre *ngSwitchCase="'tipos'">- Objetos -> los datos se manejan mediante Objetos, tal y como en la Programación Orientada a Objetos </pre>
+    <pre *ngSwitchCase="'tiposBD'">- Clave-Valor -> cada elemento tiene una llave unica, asociada a un valor </pre>
+    <pre *ngSwitchCase="'tiposBD'">- Documentos -> la información se guarda en documentos con IDs unicos, y en formatos simples como JSON o XML </pre>
+    <pre *ngSwitchCase="'tiposBD'">- Grafos -> se basan en nodos, relacionados mediante aristas, es necesario de la teoria de grafos para recorrerlas </pre>
+    <pre *ngSwitchCase="'tiposBD'">- Objetos -> los datos se manejan mediante Objetos, tal y como en la Programación Orientada a Objetos </pre>
 
     <pre *ngSwitchCase="'acid'">- Son 4 propiedades que garantizan la confiabilidad de las operaciones y consecuentemente en los datos de las BD </pre>
     <pre *ngSwitchCase="'acid'">  - Atomicidad -> todas las operaciones deben ser todo o nada, si una falla la información no debe sufrir cambios </pre>

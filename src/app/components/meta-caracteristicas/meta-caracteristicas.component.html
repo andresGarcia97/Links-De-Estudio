@@ -28,6 +28,11 @@
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
         <span>Exepciones</span>
       </div>
+
+      <div class="card card-small" (click)="getLinkAndTittleByKey('scafolding')" tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+        <span>Scaffolding</span>
+      </div>
   
     </div>
   
@@ -74,6 +79,10 @@
         <pre *ngSwitchCase="'excepciones'"> - o simplemente ser lanzados y terminar el programa de manera abrupta </pre>
         <pre *ngSwitchCase="'excepciones'">- El manejo de excepciones es fundamental para conseguir programas robustos y confiables, por esto es ideal definir, </pre>
         <pre *ngSwitchCase="'excepciones'"> - responsabilidades acerca de quienes pueden lanzar excepciones y quienes pueden atraparlas </pre>
+
+        <pre *ngSwitchCase="'scafolding'">- Es la generación automatica de codigo funcional, archivos, carpetas, configuraciones, interfaces graficas, etc... </pre>
+        <pre *ngSwitchCase="'scafolding'">- Generalmente se basa en la creación de las operaciones CRUD, basandose en un modelo de datos previo </pre>
+        <pre *ngSwitchCase="'scafolding'">- Algunos frameworks pueden ayudar en este sentido, e incluso existen aplicaciones con este proposito </pre>
 
       </div>
     

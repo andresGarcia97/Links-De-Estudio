@@ -49,7 +49,7 @@ export class LinkReferencia {
         ['cristales', 'https://lamenteesmaravillosa.com/la-teoria-las-ventanas-rotas/'],
         ['quo', 'https://psicologiaymente.com/social/sesgo-statu-quo#:~:text=El%20sesgo%20del%20statu%20quo%20es%20un%20sesgo%20de%20tipo,sobre%20un%20aspecto%20en%20concreto.'],
         ['costo', 'https://psicologiaymente.com/psicologia/falacia-costo-hundido#:~:text=En%20resumen%2C%20la%20falacia%20del,cuyas%20expectativas%20son%20muy%20desalentadoras.'],
-        ['tipos', 'https://stevenbenner.com/2010/07/the-5-types-of-programmers/'],
+        ['tiposProgramadores', 'https://stevenbenner.com/2010/07/the-5-types-of-programmers/'],
         ['sesgos', 'https://www.brainvestigations.com/neurociencia/sesgo-cognitivo-negocios/'],
         ['multitarea', 'https://www.sodexo.es/blog/multitarea-multitasking/'],
         ['maxwellCurve', 'https://blog.axosoft.com/the-maxwell-curve-blunder-in-the-name-of-scrum/'],
@@ -108,6 +108,8 @@ export class LinkReferencia {
         ['reflexion', 'https://es.linkfang.org/wiki/Reflexi%C3%B3n_(inform%C3%A1tica)'],
         ['asserts', 'https://www.adictosaltrabajo.com/2016/01/07/haz-tu-codigo-mas-fiable-con-asserts/'],
         ['excepciones', 'https://universidad-de-los-andes.gitbooks.io/fundamentos-de-programacion/content/Nivel4/5_ManejoDeLasExcepciones.html'],
+        ['scafolding', 'https://medium.com/@srinathsrs104/scaffolding-54ac4e47e133'],
+
         // metodologias
         ['agiles', 'https://www.iebschool.com/blog/que-son-metodologias-agiles-agile-scrum/'],
         ['scrum', 'https://www.iebschool.com/blog/metodologia-scrum-agile-scrum/'],
@@ -164,7 +166,7 @@ export class LinkReferencia {
         // pruebas
         ['principios', 'https://todosqa.com/siete-principios-del-proceso-de-prueba/'],
         ['manifiesto', 'https://www.adictosaltrabajo.com/2019/12/18/testing-en-un-mundo-agile/'],
-        ['tipos', 'https://visual-engin.com/2017/10/26/importancia-pruebas-de-software-testing/'],
+        ['tiposPruebas', 'https://visual-engin.com/2017/10/26/importancia-pruebas-de-software-testing/'],
         ['beneficios', 'https://platzi.com/blog/testing-ventajas-formas-de-realizar-pruebas/'],
         ['nombramiento', 'https://www.petrikainulainen.net/programming/testing/writing-clean-tests-naming-matters/'],
         ['first', 'https://www.paradigmadigital.com/dev/principio-first-aumentar-la-calidad-tests-unitarios/'],
@@ -176,10 +178,11 @@ export class LinkReferencia {
         ['triangulo', 'https://proyectosagiles.org/triangulo-hierro/'],
         ['cobertura', 'https://argonur.com/2020/05/11/code-coverage-cobertura-de-codigo/'],
         ['falsos', 'https://www.qalovers.com/2015/03/diferencia-entre-falso-positivo-y-falso_5.html#:~:text=La%20definici%C3%B3n%20de%20falso%20negativo,sistema%20que%20est%C3%A1%20realmente%20infectada.%22&text=Un%20falso%20negativo%20llevado%20a,cuando%20en%20realidad%20est%C3%A1%20fallando.'],
+        ['QAperson', 'https://www.bbvaapimarket.com/es/mundo-api/que-es-qa-y-por-que-no-debe-faltar-en-tu-proyecto/'],
         // refactorización
         ['codigolimpio', 'https://refactoring.guru/es/refactoring/what-is-refactoring'],
         ['deudatecnica', 'https://refactoring.guru/es/refactoring/technical-debt'],
-        ['tipos', 'https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/deuda-tecnica-explicada/'],
+        ['tiposDeudaTecnica', 'https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/deuda-tecnica-explicada/'],
         ['comentarios', 'https://www.scrummanager.net/bok/index.php?title=Deuda_t%C3%A9cnica'],
         ['cuandorefactorizar', 'https://refactoring.guru/es/refactoring/when'],
         ['comorefactorizar', 'https://refactoring.guru/es/refactoring/how-to'],
@@ -202,9 +205,10 @@ export class LinkReferencia {
         ['proxy', 'https://www.welivesecurity.com/la-es/2020/01/02/que-es-proxy-para-que-sirve/'],
         ['estatico', 'https://www.welivesecurity.com/la-es/2021/01/18/analisis-estatico-codigo-fuente-orientado-a-seguridad/'],
         ['ciberSeguridad', 'https://latam.kaspersky.com/resource-center/definitions/what-is-cyber-security'],
+        ['cia', 'https://searchdatacenter.techtarget.com/es/opinion/Que-es-la-triada-de-la-CIA'],
         // smells codes
         ['codesmells', 'https://openwebinars.net/blog/code-smells-y-deuda-tecnica/'],
-        ['tipos', 'https://refactoring.guru/es/refactoring/smells'],
+        ['tiposSmellCodes', 'https://refactoring.guru/es/refactoring/smells'],
         ['desglose', 'https://refactoring.guru/es/refactoring/smells'],
         ['casos', 'https://refactoring.guru/es/refactoring/smells'],
         ['payoff', 'https://refactoring.guru/es/refactoring/smells'],
@@ -217,7 +221,7 @@ export class LinkReferencia {
         ['erd', 'https://www.lucidchart.com/pages/es/que-es-un-diagrama-entidad-relacion'],
         ['normalizacion', 'https://docs.microsoft.com/en-us/office/troubleshoot/access/database-normalization-description'],
         ['nosql', 'https://pandorafms.com/blog/es/bases-de-datos-nosql/'],
-        ['tipos', 'https://www.acens.com/wp-content/images/2014/02/bbdd-nosql-wp-acens.pdf'],
+        ['tiposBD', 'https://www.acens.com/wp-content/images/2014/02/bbdd-nosql-wp-acens.pdf'],
         ['acid', 'https://dosideas.com/noticias/base-de-datos/973-acid-en-las-bases-de-datos'],
         ['orm', 'https://programarfacil.com/blog/que-es-un-orm/'],
         // uml
@@ -289,7 +293,7 @@ export class LinkReferencia {
         ['cristales', 'Efecto de los cristales rotos'],
         ['quo', 'Status Quo'],
         ['costo', 'Falacia del costo hundido'],
-        ['tipos', 'Tipos de programadores'],
+        ['tiposProgramadores', 'Tipos de programadores'],
         ['sesgos', 'Algunos Sesgos cognitivos'],
         ['multitarea', 'Pros y Contras del multitasking'],
         ['maxwellCurve', 'La curva de Maxwell'],
@@ -307,6 +311,7 @@ export class LinkReferencia {
         ['tdd', 'Desarrollo Dirigido por Tests'],
         ['atdd', 'Desarrollo guiado por pruebas de aceptación'],
         ['analisis', 'Bottom Up & Top Down'],
+        ['QAperson', ' ¿ Que es QA ?'],
         // frameworks
         ['frameworks', '¿ Que Son ?'],
         ['ioc', 'Inversion de Control'],
@@ -348,6 +353,7 @@ export class LinkReferencia {
         ['reflexion', 'Auto mutabilidad del codigo'],
         ['asserts', 'Comprobaciones del codigo'],
         ['excepciones', 'Lanzamiento y manejo de excepciones'],
+        ['scafolding', 'Creación automatica de codigo'],
         // metodologias
         ['agiles', '¿ Que son ?'],
         ['scrum', 'Scrum'],
@@ -404,7 +410,7 @@ export class LinkReferencia {
         // pruebas
         ['principios', 'Principios de testing'],
         ['manifiesto', 'Manifiesto para testing '],
-        ['tipos', 'Tipos de pruebas'],
+        ['tiposPruebas', 'Tipos de pruebas'],
         ['beneficios', 'Beneficios de hacer testing continuamente'],
         ['nombramiento', 'Nombramiento de los componentes'],
         ['first', 'Principio FIRST'],
@@ -419,7 +425,7 @@ export class LinkReferencia {
         // refactorización
         ['codigolimpio', '¿ Que es codigo Limpio ?'],
         ['deudatecnica', 'Deuda tecnica'],
-        ['tipos', 'Tipos de deuda tecnica'],
+        ['tiposDeudaTecnica', 'Tipos de deuda tecnica'],
         ['comentarios', 'Comentarios especiales'],
         ['cuandorefactorizar', '¿ Cuando refactorizar ?'],
         ['comorefactorizar', '¿ Como refactorizar ? '],
@@ -442,9 +448,10 @@ export class LinkReferencia {
         ['proxy', 'Proxy'],
         ['estatico', 'Analisis de codigo estatico'],
         ['ciberSeguridad', 'Ciberseguridad y otras amenazas'],
+        ['cia', 'Confidencialidad-Integridad-Accesibilidad '],
         // smells codes
         ['codesmells', 'Smell Codes'],
-        ['tipos', 'Tipos de Smell codes'],
+        ['tiposSmellCodes', 'Tipos de Smell codes'],
         ['desglose', 'Smell codes por tipo'],
         ['casos', 'Casos donde pueden ser ignorados'],
         ['payoff', 'Beneficios de estas correciones'],
@@ -457,7 +464,7 @@ export class LinkReferencia {
         ['erd', 'Diagrama Entidad Relación'],
         ['normalizacion', 'Normalización de una BD'],
         ['nosql', 'Bases de Datos NO SQL'],
-        ['tipos', 'Tipos de BD No SQL'],
+        ['tiposBD', 'Tipos de BD No SQL'],
         ['acid', 'Esquema ACID'],
         ['orm', 'Mapeo Objetos-Relacional'],
         // uml

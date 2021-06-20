@@ -110,6 +110,12 @@
       <span>Ciberseguridad</span>
     </div>
 
+    <div class="card card-small" (click)="getLinkAndTittleByKey('cia')" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>CIA</span>
+    </div>
+
   </div>
 
   <div class="terminal window"></div>
@@ -222,6 +228,29 @@
     <pre *ngSwitchCase="'ciberSeguridad'"> - No abrir archivos adjuntos de fuentes desconocidas </pre>
     <pre *ngSwitchCase="'ciberSeguridad'"> - No hacer clic en los vinculos de remitentes desconocidos </pre>
     <pre *ngSwitchCase="'ciberSeguridad'"> - Evitar el uso de redes wifi publicas</pre>
+
+    <pre *ngSwitchCase="'cia'">- Esta triada es tan fundamental para la seguridad, a tal punto que cada filtración de datos que se produce, </pre>
+    <pre *ngSwitchCase="'cia'"> - significa la violación de alguno de estos principios </pre>
+    <pre *ngSwitchCase="'cia'">- Los profesionales y las organizaciones evaluan las amenazas y vulnerabilidades basandose en el impacto, </pre>
+    <pre *ngSwitchCase="'cia'"> - que pueda causar en alguna de estas caracteristicas, para implementar planes y soluciones que minimicen el riesgo </pre>
+    <pre *ngSwitchCase="'cia'"></pre>
+    <pre *ngSwitchCase="'cia'">- Confidencialidad -> esfuerzo que emplean las organizaciones para mantener sus datos privados, o en su defecto restringidos </pre>
+    <pre *ngSwitchCase="'cia'"> - una de las maneras para lograr esto es controlar el acceso a las personas </pre>
+    <pre *ngSwitchCase="'cia'"> - realizar capacitaciones para dar a entender la importancia de los datos </pre>
+    <pre *ngSwitchCase="'cia'"> - encriptación y/o autenticación para acceder a estos </pre>
+    <pre *ngSwitchCase="'cia'"></pre>
+    <pre *ngSwitchCase="'cia'">- Integridad -> hace referencia a la garantia de que los datos no hayan sido manipulados ni alterados </pre>
+    <pre *ngSwitchCase="'cia'"> - encriptación de los datos por medio de funciones hash </pre>
+    <pre *ngSwitchCase="'cia'"> - firmas digitales y certificados digitales de autoria </pre>
+    <pre *ngSwitchCase="'cia'"> - control de versiones y control de acceso </pre>
+    <pre *ngSwitchCase="'cia'"></pre>
+    <pre *ngSwitchCase="'cia'">- Accesibilidad -> los datos no tienen valor si no se pueden usar o consultar cuando sean necesarios </pre>
+    <pre *ngSwitchCase="'cia'"> - para garantizar el acceso a estos se puede tener servidores en redundancia </pre>
+    <pre *ngSwitchCase="'cia'"> - parches y actualizaciones regulares al software </pre>
+    <pre *ngSwitchCase="'cia'"></pre>
+    <pre *ngSwitchCase="'cia'">- No todas las organizaciones necesitan las mismas caracteristicas, pero si todas deben cumplir las 3 en cierto grado </pre>
+    <pre *ngSwitchCase="'cia'">- Darle prioridad a alguna sobre las otras no significa su descuido, </pre>
+    <pre *ngSwitchCase="'cia'"> - solo es una elección consciente sobre cual es las más importante para el negocio </pre>
 
   </div>
 
