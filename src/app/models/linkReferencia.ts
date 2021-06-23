@@ -192,6 +192,7 @@ export class LinkReferencia {
         ['negocio', 'https://requeridos.com/que-es-el-valor-de-negocio-y-como-medirlo/'],
         ['ambiguedad', 'https://requeridos.com/requerimientos-menos-es-mas/'],
         ['calidad', 'https://platzi.com/tutoriales/1248-pro-arquitectura/5498-atributos-de-calidad-de-un-producto-de-software/'],
+        ['tradeoff', 'https://medium.com/analysts-corner/those-other-requirements-quality-attributes-and-their-inescapable-tradeoffs-31dc0691974d'],
         // principios
         ['solid', 'https://profile.es/blog/principios-solid-desarrollo-software-calidad/'],
         ['kiss', 'https://manuelzapata.co/principio-kiss-keep-it-simple-stupid/'],
@@ -435,6 +436,7 @@ export class LinkReferencia {
         ['negocio', 'El valor del negocio'],
         ['ambiguedad', 'Evitar la ambiguedad'],
         ['calidad', 'Atributos de calidad'],
+        ['tradeoff', 'Sacrificios y ganancias'],
         // principios
         ['solid', 'Principio SOLID'],
         ['kiss', 'Mantenlo simple, estupido'],

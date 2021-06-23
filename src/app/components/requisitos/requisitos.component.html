@@ -36,6 +36,12 @@
         <span>Atributos de calidad</span>
       </div>
     
+      <div class="card card-small" (click)="getLinkAndTittleByKey('tradeoff')" tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+        <span>Trade-offs</span>
+      </div>
+    
     </div>
   
     <div class="terminal window" ></div>
@@ -93,6 +99,43 @@
       <pre *ngSwitchCase="'calidad'">    - subcaracteristicas -> adaptabilidad, instalación, sustitución </pre>
       <pre *ngSwitchCase="'calidad'">  - Mantenibilidad -> capacidad de que pueda cambiar a traves del tiempo </pre>
       <pre *ngSwitchCase="'calidad'">    - subcaracteristicas -> modularidad, reusabilidad, analisable, modificable, testeable </pre>
+
+      <pre *ngSwitchCase="'tradeoff'">- Que un software cumpla con lo que se necesitaba no significa que sea agradable o facil de usar</pre>
+      <pre *ngSwitchCase="'tradeoff'">- Un producto excelente no se limita a hacer lo que tiene que hacer, es aquel que da un poco más al usuario </pre>
+      <pre *ngSwitchCase="'tradeoff'">- Existe una gran cantidad de atributos que todo software de "calidad" puede cumplir, no todos son necesarios, </pre>
+      <pre *ngSwitchCase="'tradeoff'"> - pero si es importante saber cuales son los más necesitados </pre>
+      <pre *ngSwitchCase="'tradeoff'">-Esto tambien depende de cuales atributos son necesariamente criticos, y cuales son ideales, por lo que se requiere, </pre>
+      <pre *ngSwitchCase="'tradeoff'"> - un analisis previo para realizar un buen diseño y asi sopesar los pro y los contra </pre>
+      <pre *ngSwitchCase="'tradeoff'">- Tambien se ha de tener en cuenta que hay requsitos que siempre estaran se afectaran de manera negativa entre si, </pre>
+      <pre *ngSwitchCase="'tradeoff'"> - por lo que no se podran escoger ambos, si se quiren cumplir ambos de manera idonea </pre>
+      <pre *ngSwitchCase="'tradeoff'"></pre>
+      <pre *ngSwitchCase="'tradeoff'">-El siguiente recuadro nos enseña un pequeño resumen de los principales atributos de calidad de cualquier sistema </pre>
+      <pre *ngSwitchCase="'tradeoff'"> - Por cada fila existen 2 posibilidades: </pre>
+      <pre *ngSwitchCase="'tradeoff'">  (+) -> afecta positivamente el atributo de esa columna </pre>
+      <pre *ngSwitchCase="'tradeoff'">  (-) -> afecta negativamente el atributo de esa columna </pre>
+      <pre *ngSwitchCase="'tradeoff'"></pre>
+      <pre *ngSwitchCase="'tradeoff'">Disponibilidad-> +confiabilidad  +robustez</pre>
+      <pre *ngSwitchCase="'tradeoff'">Eficiencia    -> +disponible  -interoperable  -modificable    +rendimiento   -portable      -robustez     +escalable   -usabilidad   </pre>
+      <pre *ngSwitchCase="'tradeoff'">Instalabilidad-> +disponible  +fiabilidad                                                                                            </pre>
+      <pre *ngSwitchCase="'tradeoff'"></pre>
+      <pre *ngSwitchCase="'tradeoff'">Integridad    -> -instalable  -interoperable  -rendimiento    -reusabilidad  +seguridad     -usabilidad   -verificable               </pre>
+      <pre *ngSwitchCase="'tradeoff'">Interoperable -> +disponible  -instalable     -integridad     -rendimiento   +portable      +fiabilidad   +robustez    -seguridad    </pre>
+      <pre *ngSwitchCase="'tradeoff'">Modificable   -> +disponible  -instalable     -rendimiento    +fiabilidad    +reutilizable  +escalable    +verificable               </pre>
+      <pre *ngSwitchCase="'tradeoff'"></pre>
+      <pre *ngSwitchCase="'tradeoff'">Rendimiento   -> +eficiencia  -interoperable  -modificable    -portable      -robusto       -escalable    -usabilidad                </pre>
+      <pre *ngSwitchCase="'tradeoff'">Portabilidad  -> -eficiencia  +interoperable  -modificable    -rendimiento   +reusabilidad  -seguridad    -usabilidad  -verificable  </pre>
+      <pre *ngSwitchCase="'tradeoff'">Fiabilidad    -> +disponible  -eficiencia     +integridad     +modificable   -rendimiento   +robustez     +seguridad   +usable      +verificable       </pre>
+      <pre *ngSwitchCase="'tradeoff'"></pre>
+      <pre *ngSwitchCase="'tradeoff'">Reusabilidad  -> -eficiencia  -integridad     +interoperable  +modificable   -rendimiento   +portable     +verificable               </pre>
+      <pre *ngSwitchCase="'tradeoff'">Robustez      -> +disponible  -eficiencia     +instalable     +integridad    +interoperable -rendimiento  +fiabilidad  +seguridad   +escalable +usable </pre>
+      <pre *ngSwitchCase="'tradeoff'">Seguridad     -> +integridad  -rendimiento    +robustez       -usabilidad    -verificable                                            </pre>
+      <pre *ngSwitchCase="'tradeoff'"></pre>
+      <pre *ngSwitchCase="'tradeoff'">Escalabilidad -> +disponible  +eficiencia     +integridad     +rendimiento   +portable      +fiabilidad   +robustez                  </pre>
+      <pre *ngSwitchCase="'tradeoff'">Usabilidad    -> -eficiencia  +instalable     -rendimiento    -portable      +fiabilidad    +robustez     -verificable               </pre>
+      <pre *ngSwitchCase="'tradeoff'">verificable   -> +disponible  +instalable     +integridad     +modificable   +fiabilidad    +reusable     +robustez    +seguridad   +usabilidad        </pre>
+      <pre *ngSwitchCase="'tradeoff'"></pre>
+      <pre *ngSwitchCase="'tradeoff'">(nota) el atributo de seguridad se puede entender de 2 maneras, por lo que en este caso solo se considera que cumplen aquellos que,   </pre>
+      <pre *ngSwitchCase="'tradeoff'">  afecten negativamente o positivamente a ambos; la seguridad de los datos y el acceso a estos </pre>
 
     </div>
   
