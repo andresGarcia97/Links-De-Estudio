@@ -34,6 +34,12 @@
       <span>De Marcado</span>
     </div>
 
+    <div class="card card-small" (click)="getLinkAndTittleByKey('aspectos')" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Aspectos</span>
+    </div>
+
   </div>
 
   <div class="terminal window" ></div>
@@ -69,6 +75,17 @@
 
     <pre *ngSwitchCase="'marcado'">- Son lenguajes relacionados con la presentación de contenido como HTML y XML</pre>
     <pre *ngSwitchCase="'marcado'">- El primero se usa para estructurar contenido web y el segundo para estructurar datos </pre>
+
+    <pre *ngSwitchCase="'aspectos'">- Es un paradigma de programación que tiene como objetivo aumentar la modularidad del codigo </pre>
+    <pre *ngSwitchCase="'aspectos'">- Permite la separación de responsabilidades sin cambiar el comportamiento actual de la aplicación </pre>
+    <pre *ngSwitchCase="'aspectos'">- Esto permite añadir un comportamiento paralelo, sin afectar el comportamiento principal </pre>
+    <pre *ngSwitchCase="'aspectos'">- Un aspecto es aquel que puede ser transversal a multiples capas de la aplicación </pre>
+    <pre *ngSwitchCase="'aspectos'"></pre>
+    <pre *ngSwitchCase="'aspectos'">- Estos se pueden encadenar y unir mediante "Joinpoint", que son similares a las excepciones,  </pre>
+    <pre *ngSwitchCase="'aspectos'"> - estos se ejecutaran si las condiciones interceptadas se dan </pre>
+    <pre *ngSwitchCase="'aspectos'">- Si la interceptaciones cumplen las condiciones dadas, podran llamar a un "Pointcut" que sera el llamado a un </pre>
+    <pre *ngSwitchCase="'aspectos'"> - "Joinpoint" que a su vez ejecutara el "Advice" inidicado "</pre>
+    <pre *ngSwitchCase="'aspectos'">- Un "Advice" es una accion especifica asociada a un "Joinpoint" </pre>
 
   </div>
 

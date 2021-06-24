@@ -17,6 +17,7 @@ import { HistoriaUsuarioComponent } from './components/historia-usuario/historia
 import { MalasPracticasComponent } from './components/malas-practicas/malas-practicas.component';
 import { MetaCaracteristicasComponent } from './components/meta-caracteristicas/meta-caracteristicas.component';
 import { MetodologiasComponent } from './components/metodologias/metodologias.component';
+import { NubeComponent } from './components/nube/nube.component';
 import { OtrosComponent } from './components/otros/otros.component';
 import { ParadigmasComponent } from './components/paradigmas/paradigmas.component';
 import { PatronesComponent } from './components/patrones/patrones.component';
@@ -79,7 +80,7 @@ export class AppComponent {
     // 24 - 27
     DockerComponent, PooComponent, AgilesComponent, SmellsCodesComponent,
     // 28 - 31
-    MetaCaracteristicasComponent, GlosarioComponent];
+    MetaCaracteristicasComponent, GlosarioComponent, NubeComponent ];
 
   constructor(private componentFactoryResolver: ComponentFactoryResolver) { }
 

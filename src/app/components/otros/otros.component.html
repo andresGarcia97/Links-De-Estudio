@@ -4,66 +4,6 @@
 
   <div class="card-container">
 
-    <div class="card card-small" (click)="getLinkAndTittleByKey('api')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>API</span>
-    </div>
-
-    <div class="card card-small" (click)="getLinkAndTittleByKey('nube')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512.184 512.184">
-        <path d="M415.122,144.326C407.689,68.384,347.599,8.294,271.656,0.861C183.825-7.736,105.655,56.496,97.058,144.326
-			C42.403,147.983-0.047,193.407,0,248.184c0.05,57.438,46.652,103.96,104.09,103.91h8v-16h-8c-48.601-0.11-87.91-39.599-87.8-88.2
-			c0.11-48.601,39.599-87.91,88.2-87.8c4.261,0.006,7.778-3.329,8-7.584c3.806-73.572,62.6-132.366,136.172-136.172
-			C327.97,12.236,395.587,73.202,399.69,152.51c0.418,4.32,4.06,7.608,8.4,7.584c48.601,0,88,39.399,88,88s-39.399,88-88,88h-8v16h8
-			c54.778,0.047,100.201-42.402,103.858-97.058C515.782,197.726,472.432,148.16,415.122,144.326z" />
-        <path d="M264.09,449.103V328.094h-16v121.008c-13.802,3.552-24,16.081-24,30.992c0,17.673,14.327,32,32,32
-			c17.673,0,32-14.327,32-32C288.09,465.184,277.892,452.655,264.09,449.103z M256.09,496.094c-8.837,0-16-7.163-16-16
-			c0-8.837,7.163-16,16-16c8.837,0,16,7.163,16,16C272.09,488.931,264.926,496.094,256.09,496.094z" />
-        <path d="M144.09,224.094c-17.673,0-32,14.327-32,32c0,14.911,10.198,27.44,24,30.992v41.008h16v-41.008
-			c13.802-3.552,24-16.081,24-30.992C176.09,238.421,161.763,224.094,144.09,224.094z M144.09,272.094c-8.837,0-16-7.163-16-16
-			c0-8.837,7.163-16,16-16c8.837,0,16,7.163,16,16C160.09,264.931,152.926,272.094,144.09,272.094z" />
-        <path
-          d="M480.09,408.094c-14.911,0-27.44,10.198-30.992,24H384.09c-0.476,0.047-0.954,0.047-1.43,0
-			c-4.023-0.395-6.965-3.977-6.57-8v-56h-16v56c-0.013,0.455-0.013,0.909,0,1.364c0.377,12.878,11.122,23.013,24,22.636h65.008
-			c3.552,13.802,16.081,24,30.992,24c17.673,0,32-14.327,32-32C512.09,422.421,497.763,408.094,480.09,408.094z M480.09,456.094
-			c-8.837,0-16-7.163-16-16c0-8.837,7.163-16,16-16c8.837,0,16,7.163,16,16C496.09,448.931,488.926,456.094,480.09,456.094z" />
-        <path d="M152.09,424.094v-80h-16v79.904c0.052,0.487,0.055,0.978,0.009,1.465c-0.381,4.043-3.966,7.011-8.009,6.631H63.082
-			c-3.552-13.802-16.081-24-30.992-24c-17.673,0-32,14.327-32,32c0,17.673,14.327,32,32,32c14.911,0,27.44-10.198,30.992-24h65.008
-			c0.455,0.013,0.909,0.013,1.364,0C142.332,447.717,152.467,436.972,152.09,424.094z M32.09,456.094c-8.837,0-16-7.163-16-16
-			c0-8.837,7.163-16,16-16c8.837,0,16,7.163,16,16C48.09,448.931,40.926,456.094,32.09,456.094z" />
-        <path d="M368.09,224.094c-17.673,0-32,14.327-32,32c0,14.911,10.198,27.44,24,30.992v65.008h16v-65.008
-			c13.802-3.552,24-16.081,24-30.992C400.09,238.421,385.763,224.094,368.09,224.094z M368.09,272.094c-8.837,0-16-7.163-16-16
-			c0-8.837,7.163-16,16-16c8.837,0,16,7.163,16,16C384.09,264.931,376.927,272.094,368.09,272.094z" />
-        <path d="M205.746,282.438c-3.124-3.123-8.188-3.123-11.312,0l-24,24l11.312,11.312l10.344-10.344v92.688h16v-92.688l10.344,10.344
-			l11.312-11.312L205.746,282.438z" />
-        <path d="M330.434,394.438l-10.344,10.344v-92.688h-16v92.688l-10.344-10.344l-11.312,11.312l24,24
-			c1.5,1.5,3.534,2.344,5.656,2.344s4.156-0.844,5.656-2.344l24-24L330.434,394.438z" />
-        <path d="M256.09,176.094c-17.673,0-32,14.327-32,32c0,14.911,10.198,27.44,24,30.992v73.008h16v-73.008
-			c13.802-3.552,24-16.081,24-30.992C288.09,190.421,273.763,176.094,256.09,176.094z M256.09,224.094c-8.837,0-16-7.163-16-16
-			c0-8.837,7.163-16,16-16c8.837,0,16,7.163,16,16C272.09,216.931,264.927,224.094,256.09,224.094z" />
-      </svg>
-      <span>Tipos de nube</span>
-    </div>
-
-    <div class="card card-small" (click)="getLinkAndTittleByKey('rest')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>SOAP & REST</span>
-    </div>
-
-    <div class="card card-small" (click)="getLinkAndTittleByKey('restfull')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>Rest & RestFull</span>
-    </div>
-
-    <div class="card card-small" (click)="getLinkAndTittleByKey('caracteristicas')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>Estandares RestFull</span>
-    </div>
-
     <div class="card card-small" (click)="getLinkAndTittleByKey('escalamiento')" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
@@ -105,52 +45,8 @@
   <div class="terminal window" ></div>
   <div class="terminal" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
   <div class="terminal" [ngSwitch]="selection" #terminal>
+    
     <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
-
-    <pre *ngSwitchCase="'api'">- Conjunto de reglas y especificaciones por el cual se puede comunicar diferentes aplicaciones </pre>
-    <pre *ngSwitchCase="'api'">- Permiten compartir reutilizar funciones ya existentes y no reiventar la rueda</pre>
-    <pre *ngSwitchCase="'api'">- Suelen ser la entrada principal a los sistemas distribuidos </pre>
-
-    <pre *ngSwitchCase="'nube'"> -Nube Publica -> Los recursos son del proveedor y estos es compartido con otros usuarios</pre>
-    <pre *ngSwitchCase="'nube'"> -Nube Privada -> Los recursos son propios y no deben ser compartidos con terceros</pre>
-    <pre *ngSwitchCase="'nube'"> -Nube Hibrida -> Los recursos son propios pero el espacio puede ser compartido con otros usuarios </pre>
-
-    <pre *ngSwitchCase="'rest'">                 SOAP                            VS                  REST</pre>
-    <pre *ngSwitchCase="'rest'">          Solo permite datos en XML                             Variedad de formatos</pre>
-    <pre *ngSwitchCase="'rest'">      Puede incluir metadatos, más pesado              Generalmente se usa JSON, más liviano </pre>
-    <pre *ngSwitchCase="'rest'">      NO se puede guardar contenido en la cache       SI puede guardar contenido en la cache </pre>
-
-    <pre *ngSwitchCase="'restfull'">- Rest Es un estilo de arquitectura para sistemas distribuidos, que usa el protocolo HTTP </pre>
-    <pre *ngSwitchCase="'restfull'"></pre>
-    <pre *ngSwitchCase="'restfull'">- Caracteristicas</pre>
-    <pre *ngSwitchCase="'restfull'"> - Arquitectura cliente-servidor -> comunicación continua entre estos 2 agentes </pre>
-    <pre *ngSwitchCase="'restfull'"> - Stateless -> No se deberia almacenar los datos del cliente para mantener el estado de este </pre>
-    <pre *ngSwitchCase="'restfull'"> - Cacheable -> Algunas peticiones pueden ser cacheables para aumentar el rendimiento y la escabilidad </pre>
-    <pre *ngSwitchCase="'restfull'"> - Interfaz uniforme -> independencia del servidor, ya que siempre se garantizara la misma respuesta </pre>
-    <pre *ngSwitchCase="'restfull'"> - Mensajes -> todos los mensajes deben ser coherentes con la función que representan, halla un error ó no </pre>
-    <pre *ngSwitchCase="'restfull'"> - HATEOAS -> es incluir todo lo necesario en la respuesta para que el usuario pueda seguir haciendo peticiones </pre>
-    <pre *ngSwitchCase="'restfull'"></pre>
-    <pre *ngSwitchCase="'restfull'">- Web Restfull</pre>
-    <pre *ngSwitchCase="'restfull'"> - Uri del recurso -> cada metodo deberia contar con una url unica para identificar la función </pre>
-    <pre *ngSwitchCase="'restfull'"> - Representación de recurso -> se puede añadir a la cabecera de la petición, definiendo el formato que se procesara </pre>
-    <pre *ngSwitchCase="'restfull'"> - Operaciones -> Usar los metodos HTTP de manera idonea (GET, POST, PUT DELETE) </pre>
-    <pre *ngSwitchCase="'restfull'"> - Hipervinculos -> Se pueden incluir vinculos para más acciones con el objeto, dentro de la respuesta </pre>
-
-    <pre *ngSwitchCase="'caracteristicas'">- Buenas practicas para crear APIs 100% restfull</pre>
-    <pre *ngSwitchCase="'caracteristicas'"></pre>
-    <pre *ngSwitchCase="'caracteristicas'"> - Versionamiento -> las apis tambien cambian y esto no debe evitar que las versiones anteriores dejen de funcionar </pre>
-    <pre *ngSwitchCase="'caracteristicas'"></pre>
-    <pre *ngSwitchCase="'caracteristicas'"> - Autenticación -> esto garantiza un minimo de seguridad e integración en las operaciones a realizar </pre>
-    <pre *ngSwitchCase="'caracteristicas'">   - Para esto se puede usar OAuth2 o JWT</pre>
-    <pre *ngSwitchCase="'caracteristicas'"></pre>
-    <pre *ngSwitchCase="'caracteristicas'"> - Paginación -> mostrar todos los resultados es inviable en varios terminos, por lo tanto deberia haber</pre>
-    <pre *ngSwitchCase="'caracteristicas'">   - una forma de mostrar por partes la información </pre>
-    <pre *ngSwitchCase="'caracteristicas'"></pre>
-    <pre *ngSwitchCase="'caracteristicas'"> - Documentación -> cuando algo cambia la documentación tambien debe hacerlo de inmediato</pre>
-    <pre *ngSwitchCase="'caracteristicas'">   -  de lo contrario puede haber problemas de inconsistencias con los parametros </pre>
-    <pre *ngSwitchCase="'caracteristicas'"></pre>
-    <pre *ngSwitchCase="'caracteristicas'"> - Respuestas -> los codigos deben reflejar lo que haya sucedido, es una mala practica siempre devolver OK(200) </pre>
-    <pre *ngSwitchCase="'caracteristicas'">   - aunque hayan sucedido errores, esto da lugar a mensajes contradictorios </pre>
 
     <pre *ngSwitchCase="'escalamiento'">- Capacidad de un software para crecer de acuerdo a la demanda </pre>
     <pre *ngSwitchCase="'escalamiento'"></pre>

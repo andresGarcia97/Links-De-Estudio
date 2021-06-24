@@ -32,6 +32,7 @@ import { AgilesComponent } from './components/agiles/agiles.component';
 import { SmellsCodesComponent } from './components/smells-codes/smells-codes.component';
 import { MetaCaracteristicasComponent } from './components/meta-caracteristicas/meta-caracteristicas.component';
 import { GlosarioComponent } from './components/glosario/glosario.component';
+import { NubeComponent } from './components/nube/nube.component';
 
 @NgModule({
   declarations: [
@@ -66,7 +67,8 @@ import { GlosarioComponent } from './components/glosario/glosario.component';
     AgilesComponent,
     SmellsCodesComponent,
     MetaCaracteristicasComponent,
-    GlosarioComponent
+    GlosarioComponent,
+    NubeComponent
   ],
   imports: [
     BrowserModule
