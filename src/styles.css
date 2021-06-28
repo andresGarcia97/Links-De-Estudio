@@ -141,6 +141,14 @@ paleta de colores -> https://coolors.co/dd0031-1976d2-eeeeee-000000-ffba08
   fill: var(--color-fulvous);
 }
 
+.oscuro input {
+  border-color: var(--color-navy-blue);
+}
+
+.oscuro input:focus{
+  border-color: var(--color-fulvous);
+}
+
 /* fin del modo oscuro */
 
 h1,
@@ -256,6 +264,7 @@ svg.material-icons:not(:last-child) {
   align-items: center;
   transition: all 0.2s ease-in-out;
   line-height: 24px;
+  outline: none;
 }
 
 .card-container .card:not(:last-child) {
@@ -336,6 +345,19 @@ a:hover {
 
 .card-container a {
   color: var(--color-black);
+}
+
+input {
+  outline: none;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: var(--color-selective-yellow);
+  height: 28px;
+  padding-left: 3px;
+}
+
+input:focus{
+  border-color: var(--color-crimson);
 }
 
 .terminal {

@@ -7,6 +7,8 @@ import { LinkReferencia } from 'src/app/models/linkReferencia';
 })
 export class GlosarioComponent extends LinkReferencia {
 
+  search = '';
+
   onlyLinks = Array
     .from(this.links, ([name, value]) => ({ name, value }))
     .sort((a, b) => {

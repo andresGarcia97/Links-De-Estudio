@@ -2,10 +2,11 @@
 
   <h1>Glosario</h1>
   <h2>Actualmente puedes consultar {{onlyLinks.length}} temas </h2>
+  <input type="text" placeholder="Buscar.." [(ngModel)]="search" name="search" />
 
   <div class="card-container">
 
-    <a *ngFor="let linkAndTitle of onlyLinks" class="card card-small card-no-size" target="_blank"
+    <a *ngFor="let linkAndTitle of onlyLinks | filter : search" class="card card-small card-no-size" target="_blank"
       [href]="linkAndTitle.value">
       <span>{{this.tittles.get(linkAndTitle.name)?.toString()}}</span>
     </a>

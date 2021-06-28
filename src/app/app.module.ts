@@ -33,6 +33,8 @@ import { SmellsCodesComponent } from './components/smells-codes/smells-codes.com
 import { MetaCaracteristicasComponent } from './components/meta-caracteristicas/meta-caracteristicas.component';
 import { GlosarioComponent } from './components/glosario/glosario.component';
 import { NubeComponent } from './components/nube/nube.component';
+import { FormsModule } from '@angular/forms';
+import { FilterPipe } from './pipes/filter.pipe';
 
 @NgModule({
   declarations: [
@@ -68,10 +70,12 @@ import { NubeComponent } from './components/nube/nube.component';
     SmellsCodesComponent,
     MetaCaracteristicasComponent,
     GlosarioComponent,
-    NubeComponent
+    NubeComponent,
+    FilterPipe
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
