@@ -130,6 +130,7 @@ export class LinkReferencia {
         ['rest', 'https://www.oscarblancarteblog.com/2017/03/06/soap-vs-rest-2/'],
         ['restfull', 'http://adwe.es/general/colaboraciones/servicios-web-restful-con-http-parte-i-introduccion-y-bases-teoricas/'],
         ['caracteristicas', 'https://adwe.es/codigo/apis-codigo/servicios-web-restful-con-http-parte-ii-ejemplos/'],
+        ['madurezDeUnaApi', 'https://restfulapi.net/richardson-maturity-model/'],
         // otros
         ['escalamiento', 'https://www.oscarblancarteblog.com/2017/03/07/escalabilidad-horizontal-y-vertical/'],
         ['scraping', 'https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/que-es-el-web-scraping/'],
@@ -209,6 +210,8 @@ export class LinkReferencia {
         ['estatico', 'https://www.welivesecurity.com/la-es/2021/01/18/analisis-estatico-codigo-fuente-orientado-a-seguridad/'],
         ['ciberSeguridad', 'https://latam.kaspersky.com/resource-center/definitions/what-is-cyber-security'],
         ['cia', 'https://searchdatacenter.techtarget.com/es/opinion/Que-es-la-triada-de-la-CIA'],
+        ['noRepudio', 'https://www.unir.net/ingenieria/revista/no-repudio-seguridad-informatica/'],
+        ['matrizDeRiesgo', 'https://www.protek.com.py/novedades/objetivos-de-una-matriz-de-riesgos/'],
         // smells codes
         ['codesmells', 'https://openwebinars.net/blog/code-smells-y-deuda-tecnica/'],
         ['tiposSmellCodes', 'https://refactoring.guru/es/refactoring/smells'],
@@ -378,6 +381,7 @@ export class LinkReferencia {
         ['rest', 'SOAP vs REST'],
         ['restfull', 'Rest & Restfull'],
         ['caracteristicas', 'Caracteristicas de una api restfull'],
+        ['madurezDeUnaApi', 'Nivel de madurez de una API'],
         // otros
         ['escalamiento', 'Escalamiento de un sistema'],
         ['scraping', 'Web Scrapping'],
@@ -456,6 +460,8 @@ export class LinkReferencia {
         ['estatico', 'Analisis de codigo estatico'],
         ['ciberSeguridad', 'Ciberseguridad y otras amenazas'],
         ['cia', 'Confidencialidad-Integridad-Accesibilidad '],
+        ['noRepudio', 'No repudio'],
+        ['matrizDeRiesgo', 'Matriz de Riesgo'],
         // smells codes
         ['codesmells', 'Smell Codes'],
         ['tiposSmellCodes', 'Tipos de Smell codes'],

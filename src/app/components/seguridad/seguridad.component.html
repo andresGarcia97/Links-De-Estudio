@@ -116,6 +116,18 @@
       <span>CIA</span>
     </div>
 
+    <div class="card card-small" (click)="getLinkAndTittleByKey('noRepudio')" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>NO Repudio</span>
+    </div>
+
+    <div class="card card-small" (click)="getLinkAndTittleByKey('matrizDeRiesgo')" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Matriz de Riesgo</span>
+    </div>
+
   </div>
 
   <div class="terminal window"></div>
@@ -251,6 +263,48 @@
     <pre *ngSwitchCase="'cia'">- No todas las organizaciones necesitan las mismas caracteristicas, pero si todas deben cumplir las 3 en cierto grado </pre>
     <pre *ngSwitchCase="'cia'">- Darle prioridad a alguna sobre las otras no significa su descuido, </pre>
     <pre *ngSwitchCase="'cia'"> - solo es una elección consciente sobre cual es las más importante para el negocio </pre>
+
+    <pre *ngSwitchCase="'noRepudio'">- Es un principio fundamental en lo que concierne a la seguridad informatica </pre>
+    <pre *ngSwitchCase="'noRepudio'">- Garantiza que todo mensaje haya sido originado por el emisor y que este no haya sido suplantado </pre>
+    <pre *ngSwitchCase="'noRepudio'">- Igual que todo mensaje debe ser recibido por el receptor, y por nadie más </pre>
+    <pre *ngSwitchCase="'noRepudio'">- Es la capacidad para demostrar la paticipación de todas las partes involucradas </pre>
+    <pre *ngSwitchCase="'noRepudio'"></pre>
+    <pre *ngSwitchCase="'noRepudio'">- Para garantizar esto, se pueden seguir 2 mecanismos basicos para este fin: </pre>
+    <pre *ngSwitchCase="'noRepudio'"> - Identificación -> proceso o mecanimos para identificar a un usuario </pre>
+    <pre *ngSwitchCase="'noRepudio'"> - Autenticación -> permite verificar la identidad del usuario y su acceso al sistema </pre>
+    <pre *ngSwitchCase="'noRepudio'"></pre>
+    <pre *ngSwitchCase="'noRepudio'">- Tipos de repudio: </pre>
+    <pre *ngSwitchCase="'noRepudio'"> - En origen -> el remitente no puede negar haberlo enviado ya que hay evidencia por parte del destinatario de haberlo enviado </pre>
+    <pre *ngSwitchCase="'noRepudio'"> - En destino -> se avala que se recibio el mensaje y no se podra rebatir ya que el remitente tiene evidencia de haberlo recibido </pre>
+    <pre *ngSwitchCase="'noRepudio'"></pre>
+    <pre *ngSwitchCase="'noRepudio'">- Firmas electronicas </pre>
+    <pre *ngSwitchCase="'noRepudio'">- Es una manera de afirmar que cada persona es unica y que tiene una manera de identificarse, </pre>
+    <pre *ngSwitchCase="'noRepudio'"> - esta solo debe ser conocida por la persona y su organización, tanto la clave publica como la privada </pre>
+    <pre *ngSwitchCase="'noRepudio'"></pre>
+    <pre *ngSwitchCase="'noRepudio'">- Esto se puede dar de diversas maneras: </pre>
+    <pre *ngSwitchCase="'noRepudio'"> - Simple -> solo se rechaza o acepta el contenido del documento </pre>
+    <pre *ngSwitchCase="'noRepudio'"> - Avanzada OTP -> se recibe un codigo mediante un canal diferente al usado, con un codigo para ser verificado </pre>
+    <pre *ngSwitchCase="'noRepudio'"> - Biometria -> es necesario una firma fisica o una identificación tangible de que es quien se dice ser </pre>
+    <pre *ngSwitchCase="'noRepudio'"> - Certificado digital -> documento cifrado mediante un algoritmo hash que cuenta con una llave publica y una privada </pre>
+    <pre *ngSwitchCase="'noRepudio'">  - este hash puede ser cifrado y descifrado por ambas partes y debe ser igual para ambos, garantizando la integridad del mensaje </pre>
+    <pre *ngSwitchCase="'noRepudio'">  - previo a esta operación ambas partes deben haber compartido una clave publica y cada quien tener su clave privada </pre>
+
+    <pre *ngSwitchCase="'matrizDeRiesgo'">- Permite identificar de manera rapida y visual las probabilidades de accidentes, riesgos y peligros </pre>
+    <pre *ngSwitchCase="'matrizDeRiesgo'">- Esto ayuda al proceso de tomas de decisiones y saber si estan controlados, si no, saber cuales se deben priorizar </pre>
+    <pre *ngSwitchCase="'matrizDeRiesgo'"></pre>
+    <pre *ngSwitchCase="'matrizDeRiesgo'">- Probabilidad: </pre>
+    <pre *ngSwitchCase="'matrizDeRiesgo'"> - Alta -> [50% , 100%] posibilidades de que ocurra a menudo en circunstancias similares </pre>
+    <pre *ngSwitchCase="'matrizDeRiesgo'"> - Media -> [10% , 50%) no pasa con frecuencia </pre>
+    <pre *ngSwitchCase="'matrizDeRiesgo'"> - Baja -> [1% , 10%) podria suceder, dandose el caso </pre>
+    <pre *ngSwitchCase="'matrizDeRiesgo'">- Impacto: </pre>
+    <pre *ngSwitchCase="'matrizDeRiesgo'"> - Grave -> consecuencias negativas en una o varias areas, impidiendo su funcionamiento o generando fallos </pre>
+    <pre *ngSwitchCase="'matrizDeRiesgo'"> - Moderado -> podria crear problemas que tengan consecuenias negativas para ciertos procesos o personas </pre>
+    <pre *ngSwitchCase="'matrizDeRiesgo'"> - Leve -> si se llegara a dar su impacto seria bajo en la organización </pre>
+    <pre *ngSwitchCase="'matrizDeRiesgo'"></pre>
+    <pre *ngSwitchCase="'matrizDeRiesgo'">    P\I    Grave    Moderado  Leve </pre>
+    <pre *ngSwitchCase="'matrizDeRiesgo'">    Alta   Critico                 </pre>
+    <pre *ngSwitchCase="'matrizDeRiesgo'">    media           Moderado       </pre>
+    <pre *ngSwitchCase="'matrizDeRiesgo'">    Bajo                      Leve </pre>
 
   </div>
 

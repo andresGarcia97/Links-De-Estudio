@@ -69,6 +69,12 @@
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
         <span>Estandares RestFull</span>
       </div>
+
+      <div class="card card-small" (click)="getLinkAndTittleByKey('madurezDeUnaApi')" tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+        <span>Nivel de Madurez</span>
+      </div>
     
     </div>
   
@@ -135,6 +141,13 @@
       <pre *ngSwitchCase="'caracteristicas'"></pre>
       <pre *ngSwitchCase="'caracteristicas'"> - Respuestas -> los codigos deben reflejar lo que haya sucedido, es una mala practica siempre devolver OK(200) </pre>
       <pre *ngSwitchCase="'caracteristicas'">   - aunque hayan sucedido errores, esto da lugar a mensajes contradictorios </pre>
+
+      <pre *ngSwitchCase="'madurezDeUnaApi'">- Entre más niveles se implementen, más util y completa se puede considerar una API</pre>
+      <pre *ngSwitchCase="'madurezDeUnaApi'"></pre>
+      <pre *ngSwitchCase="'madurezDeUnaApi'"> - Nivel 0 -> se puede considerar simplemente como una conexión http con una sola URI y un solo metodo </pre>
+      <pre *ngSwitchCase="'madurezDeUnaApi'"> - Nivel 1 -> usa varias URIs y un solo metodo http por cada una, esto ayuda a la separación de recursos </pre>
+      <pre *ngSwitchCase="'madurezDeUnaApi'"> - Nivel 2 -> ademas de usar varias URIs, tambien se usan más metodos y tipos para cada URI, a su vez este expone más recursos </pre>
+      <pre *ngSwitchCase="'madurezDeUnaApi'"> - Nivel 3 -> este hace uso de todo lo anterior además de incluir HATEOAS, esto facilita su navegación al punto de ser más intuitivo </pre>
 
     </div>
   
