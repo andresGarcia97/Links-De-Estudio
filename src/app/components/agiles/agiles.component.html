@@ -4,47 +4,19 @@
   
     <div class="card-container">
     
-      <div class="card card-small" (click)="getLinkAndTittleByKey('moscow')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>MOSCOW</span>
-      </div>
+      <app-button [tittleButton]="'MOSCOW'" (click)="getLinkAndTittleByKey('moscow')"></app-button>
 
-      <div class="card card-small" (click)="getLinkAndTittleByKey('scoring')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>Theme Scoring</span>
-      </div>
+      <app-button [tittleButton]="'Theme Scoring'" (click)="getLinkAndTittleByKey('scoring')"></app-button>
 
-      <div class="card card-small" (click)="getLinkAndTittleByKey('muda')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>Desperdicio</span>
-      </div>
+      <app-button [tittleButton]="'Desperdicio'" (click)="getLinkAndTittleByKey('muda')"></app-button>
 
-      <div class="card card-small" (click)="getLinkAndTittleByKey('5s')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>5s</span>
-      </div>
+      <app-button [tittleButton]="'5s'" (click)="getLinkAndTittleByKey('5s')"></app-button>
 
-      <div class="card card-small" (click)="getLinkAndTittleByKey('muda#1')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>Muda #1</span>
-      </div>
+      <app-button [tittleButton]="'Muda #1'" (click)="getLinkAndTittleByKey('muda#1')"></app-button>
 
-      <div class="card card-small" (click)="getLinkAndTittleByKey('muda#2')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>Muda #2</span>
-      </div>
+      <app-button [tittleButton]="'Muda #2'" (click)="getLinkAndTittleByKey('muda#2')"></app-button>
 
-      <div class="card card-small" (click)="getLinkAndTittleByKey('planningPoker')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>Planning Poker</span>
-      </div>
+      <app-button [tittleButton]="'Planning Poker'" (click)="getLinkAndTittleByKey('planningPoker')"></app-button>
 
     </div>
   

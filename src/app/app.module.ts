@@ -11,7 +11,7 @@ import { OtrosComponent } from './components/otros/otros.component';
 import { ParadigmasComponent } from './components/paradigmas/paradigmas.component';
 import { PatronesComponent } from './components/patrones/patrones.component';
 import { RefactorizacionComponent } from './components/refactorizacion/refactorizacion.component';
-import { ReferenciaComponent } from './components/referencia/referencia.component';
+import { ReferenciaComponent } from './components/core/referencia/referencia.component';
 import { SectionsComponent } from './components/sections/sections.component';
 import { SqlNosqlComponent } from './components/sql-nosql/sql-nosql.component';
 import { HistoriaUsuarioComponent } from './components/historia-usuario/historia-usuario.component';
@@ -35,6 +35,7 @@ import { GlosarioComponent } from './components/glosario/glosario.component';
 import { NubeComponent } from './components/nube/nube.component';
 import { FormsModule } from '@angular/forms';
 import { FilterPipe } from './pipes/filter.pipe';
+import { ButtonComponent } from './components/core/button/button.component';
 
 @NgModule({
   declarations: [
@@ -71,7 +72,8 @@ import { FilterPipe } from './pipes/filter.pipe';
     MetaCaracteristicasComponent,
     GlosarioComponent,
     NubeComponent,
-    FilterPipe
+    FilterPipe,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,
