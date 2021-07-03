@@ -67,6 +67,7 @@ export class LinkReferencia {
         ['tdd', 'https://www.paradigmadigital.com/dev/tdd-como-metodologia-de-diseno-de-software/'],
         ['atdd', 'https://www.javiergarzas.com/2015/07/que-es-eso-de-atdd.html'],
         ['analisis', 'https://www.ubjonline.mx/en-que-consisten-los-analisis-top-down-y-bottom-up/'],
+        ['tld', 'https://medium.com/swlh/tdd-vs-tld-and-what-is-the-minimum-code-coverage-needed-f380181d3400'],
         // frameworks
         ['frameworks', 'https://neoattack.com/neowiki/framework/'],
         ['ioc', 'https://medium.com/all-you-need-is-clean-code/inversi%C3%B3n-de-control-principio-de-hollywood-dont-call-us-we-ll-call-you-179e9c70e3d0'],
@@ -317,7 +318,7 @@ export class LinkReferencia {
         ['tdd', 'Desarrollo Dirigido por Tests'],
         ['atdd', 'Desarrollo guiado por pruebas de aceptación'],
         ['analisis', 'Bottom Up & Top Down'],
-        ['QAperson', ' ¿ Que es QA ?'],
+        ['tld', 'Tests al final del desarrollo'],
         // frameworks
         ['frameworks', '¿ Que es un framework?'],
         ['ioc', 'Inversion de Control'],
@@ -432,6 +433,7 @@ export class LinkReferencia {
         ['triangulo', 'Triangulo de Hierro'],
         ['cobertura', 'Cobertura de pruebas'],
         ['falsos', 'Falsos positivos & Falsos negativos'],
+        ['QAperson', ' ¿ Que es QA ?'],
         // refactorización
         ['codigolimpio', '¿ Que es codigo Limpio ?'],
         ['deudatecnica', 'Deuda tecnica'],

@@ -4,63 +4,19 @@
   
     <div class="card-container">
     
-      <div class="card card-small" (click)="getLinkAndTittleByKey('docker')" tabindex="0">
-          <svg class="material-icons" width="30" height="25" viewBox="0 0 512 512">
-              <path d="M504,264h-29.68L276.4,139.384c23.973-11.317,34.233-39.924,22.916-63.897C292.628,61.318,279.444,51.305,264,48.664V24
-                h24c4.418,0,8-3.582,8-8s-3.582-8-8-8h-64c-4.418,0-8,3.582-8,8s3.582,8,8,8h24v32c0,4.418,3.582,8,8,8c17.673,0,32,14.327,32,32
-                s-14.327,32-32,32c-17.673,0-32-14.327-32-32c0-4.418-3.582-8-8-8s-8,3.582-8,8c0.025,18.585,10.777,35.485,27.6,43.384L37.68,264
-                H8c-4.418,0-8,3.582-8,8v224c0,4.418,3.582,8,8,8h496c4.418,0,8-3.582,8-8V272C512,267.582,508.418,264,504,264z M256,145.456
-                L444.272,264H67.728L256,145.456z M496,488H16V280h480V488z"/>
-              <path d="M256,288c-4.418,0-8,3.582-8,8v176c0,4.418,3.582,8,8,8s8-3.582,8-8V296C264,291.582,260.418,288,256,288z"/>
-              <path d="M216,288c-4.418,0-8,3.582-8,8v176c0,4.418,3.582,8,8,8s8-3.582,8-8V296C224,291.582,220.418,288,216,288z"/>
-              <path d="M176,288c-4.418,0-8,3.582-8,8v176c0,4.418,3.582,8,8,8s8-3.582,8-8V296C184,291.582,180.418,288,176,288z"/>
-              <path d="M136,288c-4.418,0-8,3.582-8,8v176c0,4.418,3.582,8,8,8s8-3.582,8-8V296C144,291.582,140.418,288,136,288z"/>
-              <path d="M96,288c-4.418,0-8,3.582-8,8v176c0,4.418,3.582,8,8,8s8-3.582,8-8V296C104,291.582,100.418,288,96,288z"/>
-              <path d="M56,288c-4.418,0-8,3.582-8,8v176c0,4.418,3.582,8,8,8s8-3.582,8-8V296C64,291.582,60.418,288,56,288z"/>
-              <path d="M296,288c-4.418,0-8,3.582-8,8v176c0,4.418,3.582,8,8,8s8-3.582,8-8V296C304,291.582,300.418,288,296,288z"/>
-              <path d="M336,288c-4.418,0-8,3.582-8,8v176c0,4.418,3.582,8,8,8s8-3.582,8-8V296C344,291.582,340.418,288,336,288z"/>
-              <path d="M376,288c-4.418,0-8,3.582-8,8v176c0,4.418,3.582,8,8,8s8-3.582,8-8V296C384,291.582,380.418,288,376,288z"/>
-              <path d="M416,288c-4.418,0-8,3.582-8,8v176c0,4.418,3.582,8,8,8s8-3.582,8-8V296C424,291.582,420.418,288,416,288z"/>
-              <path d="M456,288c-4.418,0-8,3.582-8,8v176c0,4.418,3.582,8,8,8s8-3.582,8-8V296C464,291.582,460.418,288,456,288z"/>
-          </svg>
-        <span>Docker</span>
-      </div>
+      <app-button [tittleButton]="'Docker'" (click)="getLinkAndTittleByKey('docker')"></app-button>
 
-      <div class="card card-small" (click)="getLinkAndTittleByKey('images')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>Imagenes</span>
-      </div>
+      <app-button [tittleButton]="'Imagenes'" (click)="getLinkAndTittleByKey('images')"></app-button>
 
-      <div class="card card-small" (click)="getLinkAndTittleByKey('containers')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>Contenedores</span>
-      </div>
+      <app-button [tittleButton]="'Contenedores'" (click)="getLinkAndTittleByKey('containers')"></app-button>
 
-      <div class="card card-small" (click)="getLinkAndTittleByKey('volumes')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>Volumenes</span>
-      </div>
+      <app-button [tittleButton]="'Volumenes'" (click)="getLinkAndTittleByKey('volumes')"></app-button>
 
-      <div class="card card-small" (click)="getLinkAndTittleByKey('network')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>Redes</span>
-      </div>
+      <app-button [tittleButton]="'Redes'" (click)="getLinkAndTittleByKey('network')"></app-button>
 
-      <div class="card card-small" (click)="getLinkAndTittleByKey('file')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>DockerFile</span>
-      </div>
-  
-      <div class="card card-small" (click)="getLinkAndTittleByKey('compose')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>Docker Compose</span>
-      </div>
+      <app-button [tittleButton]="'DockerFile'" (click)="getLinkAndTittleByKey('file')"></app-button>
+
+      <app-button [tittleButton]="'Docker Compose'" (click)="getLinkAndTittleByKey('compose')"></app-button>
     
     </div>
   

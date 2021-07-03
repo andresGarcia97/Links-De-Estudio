@@ -1,44 +1,27 @@
 <div class="content">
 
-  <h2>Estrategias de Desarrollo</h2>
+  <h2>Estrategias de Desarrollo e implementación de pruebas</h2>
 
   <div class="card-container">
 
-    <div class="card card-small" (click)="getLinkAndTittleByKey('ddd')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>DDD</span>
-    </div>
+    <app-button [tittleButton]="'DDD'" (click)="getLinkAndTittleByKey('ddd')"></app-button>
 
-    <div class="card card-small" (click)="getLinkAndTittleByKey('bdd')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>BDD</span>
-    </div>
+    <app-button [tittleButton]="'BDD'" (click)="getLinkAndTittleByKey('bdd')"></app-button>
 
-    <div class="card card-small" (click)="getLinkAndTittleByKey('tdd')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>TDD</span>
-    </div>
+    <app-button [tittleButton]="'TDD'" (click)="getLinkAndTittleByKey('tdd')"></app-button>
 
-    <div class="card card-small" (click)="getLinkAndTittleByKey('atdd')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>ATDD</span>
-    </div>
-  
-    <div class="card card-small" (click)="getLinkAndTittleByKey('analisis')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>Enfoques</span>
-    </div>
+    <app-button [tittleButton]="'ATDD'" (click)="getLinkAndTittleByKey('atdd')"></app-button>
+
+    <app-button [tittleButton]="'Enfoques'" (click)="getLinkAndTittleByKey('analisis')"></app-button>
+
+    <app-button [tittleButton]="'TLD vs TDD'" (click)="getLinkAndTittleByKey('tld')"></app-button>
     
   </div>
 
   <div class="terminal window" ></div>
   <div class="terminal" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
   <div class="terminal" [ngSwitch]="selection" #terminal>
+
     <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
 
     <pre *ngSwitchCase="'ddd'"> -El lenguaje debe ser obicuo (entedible por cualquiera)</pre>
@@ -70,6 +53,19 @@
     <pre *ngSwitchCase="'analisis'"></pre>
     <pre *ngSwitchCase="'analisis'">- Top-Down</pre>
     <pre *ngSwitchCase="'analisis'"> - Nace de lo general hasta concluir en lo particular </pre>
+
+    <pre *ngSwitchCase="'tld'">- Estas se dan una vez se ha terminado el codigo y las posibles refactorizaciones que este sufra </pre>
+    <pre *ngSwitchCase="'tld'"> -Este tipo de estrategia se puede usar de 2 maneras distintas: </pre>
+    <pre *ngSwitchCase="'tld'"></pre>
+    <pre *ngSwitchCase="'tld'"> - Funciones completas: las pruebas cubriran todas las funciones y sus posibles escenarios </pre>
+    <pre *ngSwitchCase="'tld'"> - Proto funciones: Las pruebas cubriran los escenarios minimos para que la función cumpla con sus requerimientos </pre>
+    <pre *ngSwitchCase="'tld'"></pre>
+    <pre *ngSwitchCase="'tld'">- TLD vs TDD</pre>
+    <pre *ngSwitchCase="'tld'"> - Este enfoque es ideal si el tiempo de desarrollo es escaso </pre>
+    <pre *ngSwitchCase="'tld'"> - Su curva de aprendizaje es menor en comparación con TDD </pre>
+    <pre *ngSwitchCase="'tld'"> - El mantenimiento se reducen al usar TDD, pero la productividad aumenta con TLD (gastos y mano de obra) </pre>
+    <pre *ngSwitchCase="'tld'"> - Hay un mayor numero de pruebas en TDD, sin embargo el codigo con TLD es más entendible </pre>
+    <pre *ngSwitchCase="'tld'"> - Los cambios suelen tener menos impactos negativos con TDD, a cambio de más complejidad inherente al codigo </pre>
 
   </div>
 

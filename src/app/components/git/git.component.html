@@ -4,71 +4,27 @@
 
   <div class="card-container">
 
-    <div class="card card-small" (click)="getLinkAndTittleByKey('introduccion')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>Introducción</span>
-    </div>
+    <app-button [tittleButton]="'Introducción'" (click)="getLinkAndTittleByKey('introduccion')"></app-button>
 
-    <div class="card card-small" (click)="getLinkAndTittleByKey('repositorios')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>Repositorios</span>
-    </div>
+    <app-button [tittleButton]="'Repositorios'" (click)="getLinkAndTittleByKey('repositorios')"></app-button>
 
-    <div class="card card-small" (click)="getLinkAndTittleByKey('ramas')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>Ramas</span>
-    </div>
+    <app-button [tittleButton]="'Ramas'" (click)="getLinkAndTittleByKey('ramas')"></app-button>
 
-    <div class="card card-small" (click)="getLinkAndTittleByKey('protocolos')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>Protocolos</span>
-    </div>
+    <app-button [tittleButton]="'Protocolos'" (click)="getLinkAndTittleByKey('protocolos')"></app-button>
 
-    <div class="card card-small" (click)="getLinkAndTittleByKey('versiones')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>Versiones y tags</span>
-    </div>
+    <app-button [tittleButton]="'Versiones y tags'" (click)="getLinkAndTittleByKey('versiones')"></app-button>
 
-    <div class="card card-small" (click)="getLinkAndTittleByKey('forks')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>Forks y Pull requests</span>
-    </div>
+    <app-button [tittleButton]="'Forks y Pull requests'" (click)="getLinkAndTittleByKey('forks')"></app-button>
 
-    <div class="card card-small" (click)="getLinkAndTittleByKey('stash')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>Stash y limpieza</span>
-    </div>
+    <app-button [tittleButton]="'Stash y limpieza'" (click)="getLinkAndTittleByKey('stash')"></app-button>
 
-    <div class="card card-small" (click)="getLinkAndTittleByKey('merge')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>Merge</span>
-    </div>
+    <app-button [tittleButton]="'Merge'" (click)="getLinkAndTittleByKey('merge')"></app-button>
 
-    <div class="card card-small" (click)="getLinkAndTittleByKey('atributos')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>Atributos</span>
-    </div>
+    <app-button [tittleButton]="'Atributos'" (click)="getLinkAndTittleByKey('atributos')"></app-button>
 
-    <div class="card card-small" (click)="getLinkAndTittleByKey('migracion')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>Entresijos</span>
-    </div>
+    <app-button [tittleButton]="'Entresijos'" (click)="getLinkAndTittleByKey('migracion')"></app-button>
 
-    <div class="card card-small" (click)="getLinkAndTittleByKey('flow')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>Git flow</span>
-    </div>
+    <app-button [tittleButton]="'Git flow'" (click)="getLinkAndTittleByKey('flow')"></app-button>
 
     <div class="card card-small" (click)="getLinkAndTittleByKey('remotos')" tabindex="0">
       <svg xmlns="http://www.w3.org/2000/svg" height="32" width="70" viewBox="-81.8598 -48.3275 709.4516 289.965"><g fill-rule="evenodd" fill="none">
@@ -83,12 +39,7 @@
           <path id="polygon94" fill="none" d="M40.9 25.12H21.23l3.47 18.39h13.05z"/><path id="path96" d="M2 6.26a2 2 0 00-2 2.32l8.49 51.54a2.72 2.72 0 002.66 2.27h40.73a2 2 0 002-1.68l8.49-52.12a2 2 0 00-2-2.32zm35.75 37.25h-13l-3.52-18.39H40.9z" fill="#2684ff"/><path id="path98" d="M59.67 25.12H40.9l-3.15 18.39h-13L9.4 61.73a2.71 2.71 0 001.75.66h40.74a2 2 0 002-1.68z" fill="url(#New_Gradient_Swatch_1)"/></g></g></svg>
     </div>
 
-    <div class="card card-small" (click)="getLinkAndTittleByKey('practicas')"
-      tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>Buenas Practicas</span>
-    </div>
+    <app-button [tittleButton]="'Buenas Practicas'" (click)="getLinkAndTittleByKey('practicas')"></app-button>
 
   </div>
   
