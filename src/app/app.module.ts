@@ -36,6 +36,7 @@ import { NubeComponent } from './components/nube/nube.component';
 import { FormsModule } from '@angular/forms';
 import { FilterPipe } from './pipes/filter.pipe';
 import { ButtonComponent } from './components/core/button/button.component';
+import { PersonasComponent } from './components/personas/personas.component';
 
 @NgModule({
   declarations: [
@@ -73,7 +74,8 @@ import { ButtonComponent } from './components/core/button/button.component';
     GlosarioComponent,
     NubeComponent,
     FilterPipe,
-    ButtonComponent
+    ButtonComponent,
+    PersonasComponent
   ],
   imports: [
     BrowserModule,

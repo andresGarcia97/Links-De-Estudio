@@ -4,44 +4,17 @@
   
     <div class="card-container">
   
-      <div class="card card-small" (click)="getLinkAndTittleByKey('metaDatos')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512">
-          <path d="m504 0h-496c-4.414062 0-8 3.574219-8 8v424c0 4.425781 3.585938 8 8 8h96v-16h-88v-344h480v344h-280v16h288c4.414062 0 8-3.574219 8-8v-424c0-4.425781-3.585938-8-8-8zm-488 64v-48h480v48zm0 0"/>
-          <path d="m416 32h48v16h-48zm0 0"/><path d="m48 32h16v16h-16zm0 0"/><path d="m80 32h16v16h-16zm0 0"/><path d="m112 32h16v16h-16zm0 0"/><path d="m122.34375 194.34375-24 24c-3.128906 3.128906-3.128906 8.183594 0 11.3125l24 24 11.3125-11.3125-18.34375-18.34375 18.34375-18.34375zm0 0"/>
-          <path d="m197.65625 253.65625 24-24c3.128906-3.128906 3.128906-8.183594 0-11.3125l-24-24-11.3125 11.3125 18.34375 18.34375-18.34375 18.34375zm0 0"/><path d="m144.410156 245.460938 16-48.003907 15.179688 5.058594-16 48.003906zm0 0"/>
-          <path d="m256 224c0-52.9375-43.0625-96-96-96s-96 43.0625-96 96 43.0625 96 96 96 96-43.0625 96-96zm-176 0c0-44.113281 35.886719-80 80-80s80 35.886719 80 80-35.886719 80-80 80-80-35.886719-80-80zm0 0"/>
-          <path d="m288 224c0-70.574219-57.425781-128-128-128s-128 57.425781-128 128c0 56.601562 36.96875 104.664062 88 121.511719v150.488281c0 8.824219 7.175781 16 16 16h48c8.824219 0 16-7.175781 16-16v-150.488281c51.03125-16.847657 88-64.910157 88-121.511719zm-240 0c0-61.761719 50.238281-112 112-112s112 50.238281 112 112-50.238281 112-112 112-112-50.238281-112-112zm136 176h-48v-16h48zm-48 96v-80h48v80zm48-128h-48v-18.335938c7.785156 1.488282 15.792969 2.335938 24 2.335938s16.214844-.847656 24-2.335938zm0 0"/>
-          <path d="m288 112h16v16h-16zm0 0"/><path d="m320 112h16v16h-16zm0 0"/><path d="m352 112h16v16h-16zm0 0"/><path d="m384 112h32v16h-32zm0 0"/><path d="m464 112h16v16h-16zm0 0"/><path d="m432 112h16v16h-16zm0 0"/><path d="m288 144h48v16h-48zm0 0"/><path d="m352 144h16v16h-16zm0 0"/>
-          <path d="m384 144h32v16h-32zm0 0"/><path d="m464 144h16v16h-16zm0 0"/><path d="m432 144h16v16h-16zm0 0"/><path d="m432 176h48v16h-48zm0 0"/><path d="m400 176h16v16h-16zm0 0"/><path d="m352 176h32v16h-32zm0 0"/><path d="m304 176h32v16h-32zm0 0"/><path d="m272 304h32v16h-32zm0 0"/>
-          <path d="m320 304h32v16h-32zm0 0"/><path d="m400 304h16v16h-16zm0 0"/><path d="m368 304h16v16h-16zm0 0"/><path d="m368 336h48v16h-48zm0 0"/><path d="m336 336h16v16h-16zm0 0"/><path d="m256 336h16v16h-16zm0 0"/><path d="m288 336h32v16h-32zm0 0"/>
-        </svg>
-        <span>Meta data</span>
-      </div>
+      <app-button [tittleButton]="'Meta data'" (click)="getLinkAndTittleByKey('metaDatos')"></app-button>
 
-      <div class="card card-small" (click)="getLinkAndTittleByKey('metaClase')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-        <span>Meta Clase</span>
-      </div>
+      <app-button [tittleButton]="'Meta Clase'" (click)="getLinkAndTittleByKey('metaClase')"></app-button>
 
-      <div class="card card-small" (click)="getLinkAndTittleByKey('reflexion')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-        <span>Reflexión</span>
-      </div>
+      <app-button [tittleButton]="'Reflexión'" (click)="getLinkAndTittleByKey('reflexion')"></app-button>
 
-      <div class="card card-small" (click)="getLinkAndTittleByKey('asserts')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-        <span>Aserciones</span>
-      </div>
+      <app-button [tittleButton]="'Aserciones'" (click)="getLinkAndTittleByKey('asserts')"></app-button>
 
-      <div class="card card-small" (click)="getLinkAndTittleByKey('excepciones')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-        <span>Exepciones</span>
-      </div>
+      <app-button [tittleButton]="'Exepciones'" (click)="getLinkAndTittleByKey('excepciones')"></app-button>
 
-      <div class="card card-small" (click)="getLinkAndTittleByKey('scafolding')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-        <span>Scaffolding</span>
-      </div>
+      <app-button [tittleButton]="'Scaffolding'" (click)="getLinkAndTittleByKey('scafolding')"></app-button>
   
     </div>
   
@@ -82,7 +55,7 @@
         <pre *ngSwitchCase="'asserts'">- Son una opción a considerar si se quiere evitar la programación defensiva </pre>
 
         <pre *ngSwitchCase="'excepciones'">- Es la indicación de que se produjo un error en la ejecución del programa </pre>
-        <pre *ngSwitchCase="'excepciones'">- Estas pueden ser situaciones esperadad, inesperadas e incluso pueden se provocadas </pre>
+        <pre *ngSwitchCase="'excepciones'">- Estas pueden ser situaciones esperadas, inesperadas e incluso pueden se provocadas </pre>
         <pre *ngSwitchCase="'excepciones'">- Las exepciones son objetos especializados con toda la información del error </pre>
         <pre *ngSwitchCase="'excepciones'">- Estos objetos pueden ser atrapados por la instrucción try-catch y evitar que se detenga el programa, </pre>
         <pre *ngSwitchCase="'excepciones'"> - o simplemente ser lanzados y terminar el programa de manera abrupta </pre>

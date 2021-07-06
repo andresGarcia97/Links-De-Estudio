@@ -154,6 +154,11 @@ export class LinkReferencia {
         ['desglosegrasp', 'https://juan-garcia-carmona.blogspot.com/search/label/patr%C3%B3n'],
         ['dao', 'https://www.genbeta.com/desarrollo/patrones-de-diseno-active-record-vs-dao'],
         ['antipatrones', 'https://sg.com.mx/revista/11/anti-patrones-la-mejor-forma-hacer-un-pesimo-sistema-software'],
+        // personas
+        ['personasYprocesos', 'https://www.heflo.com/es/blog/bpm/personas-procesos-tecnologia/'],
+        ['gestionDeServicios', 'https://www.ambit-bst.com/blog/itsm.-todo-lo-que-debes-saber-sobre-la-gesti%C3%B3n-de-servicios-it'],
+        ['gestionDeActivos', 'https://freshservice.com/latam/it-asset-management-software/'],
+        ['grasp', 'https://www.adictosaltrabajo.com/2003/12/22/grasp/'],
         // poo
         ['poo', 'https://desarrolloweb.com/articulos/499.php'],
         ['pooPilares', 'https://www.campusmvp.es/recursos/post/los-conceptos-fundamentales-sobre-programacion-orientada-objetos-explicados-de-manera-simple.aspx'],
@@ -405,6 +410,11 @@ export class LinkReferencia {
         ['desglosegrasp', 'Patrones GRASP'],
         ['dao', 'Data Acess Object'],
         ['antipatrones', 'Antipatrones más importantes'],
+        // personas
+        ['personasYprocesos', 'Personas-Procesos-Tecnologias'],
+        ['gestionDeServicios', 'Gestión de servicios tecnologicos'],
+        ['gestionDeActivos', 'Gestión de activos'],
+       // ['personasYprocesos', 'https://www.heflo.com/es/blog/bpm/personas-procesos-tecnologia/'],
         // poo
         ['poo', 'Programación Orientada a Objetos'],
         ['pooPilares', 'Pilares de POO'],

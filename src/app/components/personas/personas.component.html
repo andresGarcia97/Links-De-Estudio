@@ -1,0 +1,71 @@
+<div class="content">
+
+    <h2>Personas y servicios</h2>
+  
+    <div class="card-container">
+  
+      <app-button [tittleButton]="'Personas y procesos'" (click)="getLinkAndTittleByKey('personasYprocesos')"></app-button>
+  
+      <app-button [tittleButton]="'Gestión de servicios'" (click)="getLinkAndTittleByKey('gestionDeServicios')"></app-button>
+  
+      <app-button [tittleButton]="'Gestión de activos'" (click)="getLinkAndTittleByKey('gestionDeActivos')"></app-button>
+  
+      <app-button [tittleButton]="'Parte #3'" (click)="getLinkAndTittleByKey('cosas3')"></app-button>
+  
+    </div>
+  
+    <div class="terminal window" ></div>
+    <div class="terminal" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
+      <div class="terminal" [ngSwitch]="selection" #terminal>
+        
+        <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
+    
+        <pre *ngSwitchCase="'personasYprocesos'">- Las personas, los procesos y las tecnologias son el sostenimiento de toda empresa </pre>
+        <pre *ngSwitchCase="'personasYprocesos'">- El personal, siempre sera necesario para pensar, planear y ejecutar </pre>
+        <pre *ngSwitchCase="'personasYprocesos'">- La tecnologia, que ayuda a las personas a llevar estos procesos </pre>
+        <pre *ngSwitchCase="'personasYprocesos'">- Y finalmente los procesos, que ofrecen un valor agregado al cliente </pre>
+        <pre *ngSwitchCase="'personasYprocesos'">- Llegar a un equilibrio de estos elementos es un equilibrio dificl de lograr </pre>
+        <pre *ngSwitchCase="'personasYprocesos'">- Cualquier cambio de estas partes traera efectos secundarios sobre las demas </pre>
+        <pre *ngSwitchCase="'personasYprocesos'"></pre>
+        <pre *ngSwitchCase="'personasYprocesos'">- Algunos de los objetivos de tener este equilibrio son: </pre>
+        <pre *ngSwitchCase="'personasYprocesos'"> - Transformar los datos en conocimiento e información </pre>
+        <pre *ngSwitchCase="'personasYprocesos'"> - Permitir que el conocimiento se accesible para todos y generable por todos </pre>
+        <pre *ngSwitchCase="'personasYprocesos'"> - Mejora continua de los procesos y aumentar la productividad </pre>
+
+        <pre *ngSwitchCase="'gestionDeServicios'">- Es una metodologia que pone su foco en el cliente y como mejorar su atención </pre>
+        <pre *ngSwitchCase="'gestionDeServicios'">- Toda organización debe contar con personal competente en cuanto al uso de las tecnologias que se usen </pre>
+        <pre *ngSwitchCase="'gestionDeServicios'">- Los proveedores y los socios son partes importantes de toda empresa, no se pueden ignorar </pre>
+        <pre *ngSwitchCase="'gestionDeServicios'">- La creación de valor es importante para todo producto y servicio que se ofrezcan </pre>
+        <pre *ngSwitchCase="'gestionDeServicios'"></pre>
+        <pre *ngSwitchCase="'gestionDeServicios'">- Estos son 7 principios para una correcta gestión </pre>
+        <pre *ngSwitchCase="'gestionDeServicios'"> - Se debe crear el mayor valor para los clientes a la vez que se perjudican lo menos posible </pre>
+        <pre *ngSwitchCase="'gestionDeServicios'"> - Siempre sera mejor revisar los procesos existentes y mejorarlos que empezar desde cero </pre>
+        <pre *ngSwitchCase="'gestionDeServicios'"> - Es mejor avanzar seguro y constante con un enfoque concreto </pre>
+        <pre *ngSwitchCase="'gestionDeServicios'"> - El trabajo en equipo es importante, todos deben ser visibles y colaborarse entre si </pre>
+        <pre *ngSwitchCase="'gestionDeServicios'"> - Tener una consciencia holistica, ya que todas las areas se afectan entre si de alguna manera </pre>
+        <pre *ngSwitchCase="'gestionDeServicios'"> - REntre más simple sea un proceso mejor </pre>
+        <pre *ngSwitchCase="'gestionDeServicios'"> - La automatización y la optimización siempre deben ser aspectos a alcanzar </pre>
+  
+        <pre *ngSwitchCase="'gestionDeActivos'">- Los elementos fisicos y no fisicos de las empresas tambien deben ser considerados como partes del negocio </pre>
+        <pre *ngSwitchCase="'gestionDeActivos'">- Esto se puede aplicar a todo software que la empresa use o desarrolle y los elementos necesarios para su funcionamiento </pre>
+        <pre *ngSwitchCase="'gestionDeActivos'">- Tener un inventario actualizado garantiza que siempre se maneje lo necesario </pre>
+        <pre *ngSwitchCase="'gestionDeActivos'">- </pre>
+        <pre *ngSwitchCase="'gestionDeActivos'">- </pre>
+        <pre *ngSwitchCase="'gestionDeActivos'">- </pre>
+        <pre *ngSwitchCase="'gestionDeActivos'">- </pre>
+        <pre *ngSwitchCase="'gestionDeActivos'">- </pre>
+        <pre *ngSwitchCase="'gestionDeActivos'">- </pre>
+        <pre *ngSwitchCase="'gestionDeActivos'">- </pre>
+
+  
+        <pre *ngSwitchCase="'cosas3'">- La falta de comunicación en el equipo puede conllevar al desastre</pre>
+        <pre *ngSwitchCase="'cosas3'">- No poner limites es tan malo como ser inflexible, siempre hay un punto medio</pre>
+        <pre *ngSwitchCase="'cosas3'">- Entregar productos incompletos, lo ideal seria pedir más tiempo o recursos</pre>
+        <pre *ngSwitchCase="'cosas3'">- Asignación erronea del personal en roles inadecuados o sin la experiencia necesaria </pre>
+        
+      </div>
+    
+      <app-referencia [referencia]="referencia"></app-referencia>
+    
+    </div>
+  

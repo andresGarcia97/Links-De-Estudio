@@ -21,6 +21,7 @@ import { NubeComponent } from './components/nube/nube.component';
 import { OtrosComponent } from './components/otros/otros.component';
 import { ParadigmasComponent } from './components/paradigmas/paradigmas.component';
 import { PatronesComponent } from './components/patrones/patrones.component';
+import { PersonasComponent } from './components/personas/personas.component';
 import { PooComponent } from './components/poo/poo.component';
 import { PruebasComponent } from './components/pruebas/pruebas.component';
 import { RefactorizacionComponent } from './components/refactorizacion/refactorizacion.component';
@@ -80,7 +81,7 @@ export class AppComponent {
     // 24 - 27
     DockerComponent, PooComponent, AgilesComponent, SmellsCodesComponent,
     // 28 - 31
-    MetaCaracteristicasComponent, GlosarioComponent, NubeComponent ];
+    MetaCaracteristicasComponent, GlosarioComponent, NubeComponent, PersonasComponent ];
 
   constructor(private componentFactoryResolver: ComponentFactoryResolver) { }
 
