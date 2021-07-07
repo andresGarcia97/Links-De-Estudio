@@ -139,6 +139,7 @@ export class LinkReferencia {
         ['devops', 'https://www.paradigmadigital.com/techbiz/que-es-devops-y-sobre-todo-que-no-es-devops/#:~:text=Como%20conclusi%C3%B3n%2C%20qued%C3%A9monos%20con%20una,s%C3%B3lo%20en%20desarrollar%20y%20puedan'],
         ['scope', 'https://platzi.com/blog/como-funciona-el-scope-en-javascript/'],
         ['precedencia', 'https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Operator_Precedence'],
+        ['mvp', 'https://www.inboundcycle.com/blog-de-inbound-marketing/bid/189238/qu-es-el-mvp-o-producto-m-nimo-viable'],
         // paradigmas
         ['imperativo', 'https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/paradigmas-de-programacion/'],
         ['funcional', 'https://codigofacilito.com/articulos/programacion-funcional'],
@@ -158,7 +159,7 @@ export class LinkReferencia {
         ['personasYprocesos', 'https://www.heflo.com/es/blog/bpm/personas-procesos-tecnologia/'],
         ['gestionDeServicios', 'https://www.ambit-bst.com/blog/itsm.-todo-lo-que-debes-saber-sobre-la-gesti%C3%B3n-de-servicios-it'],
         ['gestionDeActivos', 'https://freshservice.com/latam/it-asset-management-software/'],
-        ['grasp', 'https://www.adictosaltrabajo.com/2003/12/22/grasp/'],
+        ['fidelizacion', 'https://elviajedelcliente.com/fidelizacion-de-clientes/'],
         // poo
         ['poo', 'https://desarrolloweb.com/articulos/499.php'],
         ['pooPilares', 'https://www.campusmvp.es/recursos/post/los-conceptos-fundamentales-sobre-programacion-orientada-objetos-explicados-de-manera-simple.aspx'],
@@ -395,6 +396,7 @@ export class LinkReferencia {
         ['devops', 'DevOps'],
         ['scope', 'Alcance'],
         ['precedencia', 'Precedencia y jerarquia de operaciones'],
+        ['mvp', 'Minimo Producto Viable'],
         // paradigmas
         ['imperativo', 'Paradigmas Imperativo & Declarativo'],
         ['funcional', 'Paradigma funcional'],
@@ -414,7 +416,7 @@ export class LinkReferencia {
         ['personasYprocesos', 'Personas-Procesos-Tecnologias'],
         ['gestionDeServicios', 'Gestión de servicios tecnologicos'],
         ['gestionDeActivos', 'Gestión de activos'],
-       // ['personasYprocesos', 'https://www.heflo.com/es/blog/bpm/personas-procesos-tecnologia/'],
+        ['fidelizacion', 'Fidelización de los clientes'],
         // poo
         ['poo', 'Programación Orientada a Objetos'],
         ['pooPilares', 'Pilares de POO'],

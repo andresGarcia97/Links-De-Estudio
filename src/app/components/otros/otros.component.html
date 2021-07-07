@@ -4,41 +4,19 @@
 
   <div class="card-container">
 
-    <div class="card card-small" (click)="getLinkAndTittleByKey('escalamiento')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>Escalamiento</span>
-    </div>
+    <app-button [tittleButton]="'Escalamiento'" (click)="getLinkAndTittleByKey('escalamiento')"></app-button>
 
-    <div class="card card-small" (click)="getLinkAndTittleByKey('scraping')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>Web Scrapping</span>
-    </div>
+    <app-button [tittleButton]="'Web Scrapping'" (click)="getLinkAndTittleByKey('scraping')"></app-button>
 
-    <div class="card card-small" (click)="getLinkAndTittleByKey('cdci')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>CD/CI</span>
-    </div>
+    <app-button [tittleButton]="'CD/CI'" (click)="getLinkAndTittleByKey('cdci')"></app-button>
 
-    <div class="card card-small" (click)="getLinkAndTittleByKey('devops')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>DevOps</span>
-    </div>
+    <app-button [tittleButton]="'DevOps'" (click)="getLinkAndTittleByKey('devops')"></app-button>
 
-    <div class="card card-small" (click)="getLinkAndTittleByKey('scope')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>Scope</span>
-    </div>
+    <app-button [tittleButton]="'Scope'" (click)="getLinkAndTittleByKey('scope')"></app-button>
 
-    <div class="card card-small" (click)="getLinkAndTittleByKey('precedencia')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>Precedencia</span>
-    </div>
+    <app-button [tittleButton]="'Precedencia'" (click)="getLinkAndTittleByKey('precedencia')"></app-button>
+
+    <app-button [tittleButton]="'MVP'" (click)="getLinkAndTittleByKey('mvp')"></app-button>
 
   </div>
 
@@ -94,6 +72,12 @@
     <pre *ngSwitchCase="'precedencia'"> - Operadores matematicos, se respeta la jeararquia matematica, a menos que se involucren parantesis </pre>
     <pre *ngSwitchCase="'precedencia'"> - Los parentesis afectan el orden de evaluación, al mismo tiempo que permiten asociar expresiones </pre>
     <pre *ngSwitchCase="'precedencia'"> - La precedencia puede cambiar de lenguaje a lenguaje, por lo que se recomienda saber las especificaciones de cada uno </pre>
+
+    <pre *ngSwitchCase="'mvp'">- Es el conjunto minimo de funcionalidades precisas para que un software pueda atraer clientes potenciales </pre>
+    <pre *ngSwitchCase="'mvp'">- Esto ayuda a crear productos apegados a la realidad </pre>
+    <pre *ngSwitchCase="'mvp'">- Da retroalimentación a tiempo y util para el negocio </pre>
+    <pre *ngSwitchCase="'mvp'">- Todo mvp es una apuesta orientada a conseguir un maximo de aprendizaje con la menor inversion posible </pre>
+    <pre *ngSwitchCase="'mvp'">- A veces puede ser reutilizable o desechable, eso depende de su exito inicial </pre>
 
   </div>
 
