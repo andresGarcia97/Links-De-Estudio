@@ -4,87 +4,36 @@
   
     <div class="card-container">
     
-      <div class="card card-small" (click)="getLinkAndTittleByKey('poo')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>POO</span>
-      </div>
-  
-      <div class="card card-small" (click)="getLinkAndTittleByKey('pooPilares')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 64 64">
-          <path d="M18,1H2C1.447,1,1,1.448,1,2v6c0,0.552,0.447,1,1,1h1v3c0,0.552,0.447,1,1,1h1v32H4c-0.553,0-1,0.448-1,1v11H2   c-0.553,0-1,0.448-1,1v4c0,0.552,0.447,1,1,1h16c0.553,0,1-0.448,1-1v-4c0-0.552-0.447-1-1-1h-1V46c0-0.552-0.447-1-1-1h-1V13h1   c0.553,0,1-0.448,1-1V9h1c0.553,0,1-0.448,1-1V2C19,1.448,18.553,1,18,1z M7,45V13h2v32H7z M17,61H3v-2h14V61z M11,57H9v-3   c0-0.551,0.448-1,1-1s1,0.449,1,1V57z M13,57v-3c0-1.654-1.346-3-3-3s-3,1.346-3,3v3H5V47h10v10H13z M11,45V13h2v32H11z M15,11h-1   H6H5V9h10V11z M17,7h-1H4H3V3h14V7z"/>
-          <path d="M40,1H24c-0.553,0-1,0.448-1,1v6c0,0.552,0.447,1,1,1h1v3c0,0.552,0.447,1,1,1h1v32h-1c-0.553,0-1,0.448-1,1v11h-1   c-0.553,0-1,0.448-1,1v4c0,0.552,0.447,1,1,1h16c0.553,0,1-0.448,1-1v-4c0-0.552-0.447-1-1-1h-1V46c0-0.552-0.447-1-1-1h-1V13h1   c0.553,0,1-0.448,1-1V9h1c0.553,0,1-0.448,1-1V2C41,1.448,40.553,1,40,1z M29,45V13h2v32H29z M39,61H25v-2h14V61z M33,57h-2v-3   c0-0.551,0.448-1,1-1s1,0.449,1,1V57z M35,57v-3c0-1.654-1.346-3-3-3s-3,1.346-3,3v3h-2V47h10v10H35z M33,45V13h2v32H33z M37,11h-1   h-8h-1V9h10V11z M39,7h-1H26h-1V3h14V7z"/>
-          <path d="M60,13c0.553,0,1-0.448,1-1V9h1c0.553,0,1-0.448,1-1V2c0-0.552-0.447-1-1-1H46c-0.553,0-1,0.448-1,1v6c0,0.552,0.447,1,1,1   h1v3c0,0.552,0.447,1,1,1h1v32h-1c-0.553,0-1,0.448-1,1v11h-1c-0.553,0-1,0.448-1,1v4c0,0.552,0.447,1,1,1h16c0.553,0,1-0.448,1-1   v-4c0-0.552-0.447-1-1-1h-1V46c0-0.552-0.447-1-1-1h-1V13H60z M59,11h-1h-8h-1V9h10V11z M47,7V3h14v4h-1H48H47z M51,13h2v32h-2V13z    M61,61H47v-2h14V61z M55,57h-2v-3c0-0.551,0.448-1,1-1s1,0.449,1,1V57z M57,57v-3c0-1.654-1.346-3-3-3s-3,1.346-3,3v3h-2V47h10v10   H57z M55,45V13h2v32H55z"/>
-        </svg>
-        <span>Pilares POO</span>
-      </div>
-  
-      <div class="card card-small" (click)="getLinkAndTittleByKey('composicion')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>Relaciones</span>
-      </div>
-  
-      <div class="card card-small" (click)="getLinkAndTittleByKey('pooStatic')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>Static en POO</span>
-      </div>
-  
-      <div class="card card-small" (click)="getLinkAndTittleByKey('sobrecarga')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>Sobrecargar Metodos</span>
-      </div>
+      <app-button [tittleButton]="'POO'" (click)="getLinkAndTittleByKey('poo')"></app-button>
 
-      <div class="card card-small"
-        (click)="getLinkAndTittleByKey('acoplamiento')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>Acoplamiento</span>
-      </div>
+      <app-button [tittleButton]="'Pilares POO'" (click)="getLinkAndTittleByKey('pooPilares')"></app-button>
 
-      <div class="card card-small" (click)="getLinkAndTittleByKey('contratos')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>Contratos</span>
-      </div>
+      <app-button [tittleButton]="'Relaciones'" (click)="getLinkAndTittleByKey('composicion')"></app-button>
 
-      <div class="card card-small" (click)="getLinkAndTittleByKey('descomposicion')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>Descomposición</span>
-      </div>
+      <app-button [tittleButton]="'Static en POO'" (click)="getLinkAndTittleByKey('pooStatic')"></app-button>
 
-      <div class="card card-small" (click)="getLinkAndTittleByKey('herencia')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>Herencia</span>
-      </div>
+      <app-button [tittleButton]="'Sobrecargar Metodos'" (click)="getLinkAndTittleByKey('sobrecarga')"></app-button>
 
-      <div class="card card-small" (click)="getLinkAndTittleByKey('polimorfismo')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>Polimorfismo</span>
-      </div>
+      <app-button [tittleButton]="'Acoplamiento'" (click)="getLinkAndTittleByKey('acoplamiento')"></app-button>
 
-      <div class="card card-small" (click)="getLinkAndTittleByKey('herVScomp')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>Herencia/Composición</span>
-      </div>
+      <app-button [tittleButton]="'Contratos'" (click)="getLinkAndTittleByKey('contratos')"></app-button>
 
-      <div class="card card-small" (click)="getLinkAndTittleByKey('enlaces')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>Enlaces</span>
-      </div>
+      <app-button [tittleButton]="'Descomposición'" (click)="getLinkAndTittleByKey('descomposicion')"></app-button>
+
+      <app-button [tittleButton]="'Herencia'" (click)="getLinkAndTittleByKey('herencia')"></app-button>
+
+      <app-button [tittleButton]="'Polimorfismo'" (click)="getLinkAndTittleByKey('polimorfismo')"></app-button>
+
+      <app-button [tittleButton]="'Herencia/Composición'" (click)="getLinkAndTittleByKey('herVScomp')"></app-button>
+
+      <app-button [tittleButton]="'Enlaces'" (click)="getLinkAndTittleByKey('enlaces')"></app-button>
       
     </div>
   
     <div class="terminal window" ></div>
     <div class="terminal" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
     <div class="terminal" [ngSwitch]="selection" #terminal>
+
       <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
     
       <pre *ngSwitchCase="'poo'">- Alta integridad, Bajo acoplamiento</pre>

@@ -4,111 +4,35 @@
   
     <div class="card-container">
   
-      <div class="card card-small" (click)="getLinkAndTittleByKey('principios')" tabindex="0">
-        <svg class="material-icons" width="24" height="24" viewBox="0 0 512 512">
-            <path d="M296,232c-5.52,0-10,4.48-10,10s4.48,10,10,10c5.52,0,10-4.48,10-10S301.52,232,296,232z"/>
-            <path d="M256,172c-5.52,0-10,4.48-10,10s4.48,10,10,10c5.52,0,10-4.48,10-10S261.52,172,256,172z"/>
-            <path d="M136,432c-5.52,0-10,4.48-10,10c0,5.52,4.48,10,10,10s10-4.48,10-10C146,436.48,141.52,432,136,432z"/>
-            <path d="M454.416,407.678L326,179.381V58.286c11.641-4.127,20-15.248,20-28.286c0-16.542-13.458-30-30-30H196
-              c-16.542,0-30,13.458-30,30c0,13.038,8.359,24.159,20,28.286v121.095L57.584,407.678c-12.328,21.916-12.109,47.959,0.584,69.663
-              C70.86,499.043,93.448,512,118.59,512h274.82c25.142,0,47.729-12.957,60.422-34.659
-              C466.525,455.637,466.744,429.594,454.416,407.678z M204.716,186.902c0.842-1.496,1.284-3.185,1.284-4.902V60h10
-              c5.522,0,10-4.478,10-10s-4.478-10-10-10h-20c-5.514,0-10-4.486-10-10s4.486-10,10-10h120c5.514,0,10,4.486,10,10s-4.486,10-10,10
-              h-20c-5.522,0-10,4.478-10,10s4.478,10,10,10h10v122c0,1.718,0.442,3.405,1.284,4.902l58.941,104.787
-              c-35.995-2.915-71.865,4.365-104.821,21.43c-42.366,21.924-89.529,25.784-134,11.227L204.716,186.902z M436.567,467.244
-              C427.502,482.745,411.368,492,393.41,492H118.59c-17.958,0-34.092-9.255-43.157-24.756c-9.067-15.503-9.224-34.106-0.417-49.762
-              l42.408-75.392c20.576,7.185,41.84,10.812,63.437,10.812c3.197,0,6.402-0.079,9.613-0.238
-              c27.905-1.382,54.862-8.711,80.124-21.784c33.792-17.496,70.959-23.536,107.783-17.581l58.604,104.183
-              C445.791,433.138,445.635,451.741,436.567,467.244z"/>
-            <path d="M216,232c-16.542,0-30,13.458-30,30s13.458,30,30,30s30-13.458,30-30S232.542,232,216,232z M216,272c-5.514,0-10-4.486-10-10c0-5.514,4.486-10,10-10c5.514,0,10,4.486,10,10C226,267.514,221.514,272,216,272z"/>
-            <path d="M376,432H176c-5.522,0-10,4.478-10,10c0,5.522,4.478,10,10,10h200c5.522,0,10-4.478,10-10C386,436.478,381.522,432,376,432z"/>
-        </svg>
-        <span> Principios de testing </span>
-      </div>
-  
-      <div class="card card-small" (click)="getLinkAndTittleByKey('manifiesto')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>Testing manifiesto</span>
-      </div>
+      <app-button [tittleButton]="'Principios de testing'" (click)="getLinkAndTittleByKey('principios')"></app-button>
 
-      <div class="card card-small" (click)="getLinkAndTittleByKey('QAperson')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>QA</span>
-      </div>
-  
-      <div class="card card-small" (click)="getLinkAndTittleByKey('tiposPruebas')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>Tipos</span>
-      </div>
-  
-      <div class="card card-small" (click)="getLinkAndTittleByKey('beneficios')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>Beneficios</span>
-      </div>
-  
-      <div class="card card-small" (click)="getLinkAndTittleByKey('nombramiento')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>Nombramiento</span>
-      </div>
-  
-      <div class="card card-small" (click)="getLinkAndTittleByKey('first')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>Principio FIRST</span>
-      </div>
-  
-      <div class="card card-small" (click)="getLinkAndTittleByKey('sutydoc')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>SUT & DOC</span>
-      </div>
-  
-      <div class="card card-small" (click)="getLinkAndTittleByKey('dobles')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>Dobles</span>
-      </div>
+      <app-button [tittleButton]="'Testing manifiesto'" (click)="getLinkAndTittleByKey('manifiesto')"></app-button>
 
-      <div class="card card-small" (click)="getLinkAndTittleByKey('aaa')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>AAA</span>
-      </div>
+      <app-button [tittleButton]="'QA'" (click)="getLinkAndTittleByKey('QAperson')"></app-button>
 
-      <div class="card card-small" (click)="getLinkAndTittleByKey('gwt')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>GWT</span>
-      </div>
+      <app-button [tittleButton]="'Tipos'" (click)="getLinkAndTittleByKey('tiposPruebas')"></app-button>
 
-      <div class="card card-small" (click)="getLinkAndTittleByKey('piramide')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>Piramides de tests</span>
-      </div>
+      <app-button [tittleButton]="'Beneficios'" (click)="getLinkAndTittleByKey('beneficios')"></app-button>
 
-      <div class="card card-small" (click)="getLinkAndTittleByKey('triangulo')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>Triangulo de Hierro</span>
-      </div>
+      <app-button [tittleButton]="'Nombramiento'" (click)="getLinkAndTittleByKey('nombramiento')"></app-button>
 
-      <div class="card card-small" (click)="getLinkAndTittleByKey('cobertura')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>Cobertura</span>
-      </div>
+      <app-button [tittleButton]="'Principio FIRST'" (click)="getLinkAndTittleByKey('first')"></app-button>
 
-      <div class="card card-small" (click)="getLinkAndTittleByKey('falsos')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>Falsos Resultados</span>
-      </div>
+      <app-button [tittleButton]="'SUT & DOC'" (click)="getLinkAndTittleByKey('sutydoc')"></app-button>
+
+      <app-button [tittleButton]="'Dobles'" (click)="getLinkAndTittleByKey('dobles')"></app-button>
+
+      <app-button [tittleButton]="'AAA'" (click)="getLinkAndTittleByKey('aaa')"></app-button>
+
+      <app-button [tittleButton]="'GWT'" (click)="getLinkAndTittleByKey('gwt')"></app-button>
+
+      <app-button [tittleButton]="'Piramides de tests'" (click)="getLinkAndTittleByKey('piramide')"></app-button>
+
+      <app-button [tittleButton]="'Triangulo de Hierro'" (click)="getLinkAndTittleByKey('triangulo')"></app-button>
+
+      <app-button [tittleButton]="'Cobertura'" (click)="getLinkAndTittleByKey('cobertura')"></app-button>
+
+      <app-button [tittleButton]="'Falsos Resultados'" (click)="getLinkAndTittleByKey('falsos')"></app-button>
   
     </div>
   

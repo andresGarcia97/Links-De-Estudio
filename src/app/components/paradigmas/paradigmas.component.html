@@ -4,47 +4,24 @@
 
   <div class="card-container">
 
-    <div class="card card-small" (click)="getLinkAndTittleByKey('imperativo')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>Estilos Programación</span>
-    </div>
+    <app-button [tittleButton]="'Estilos Programación'" (click)="getLinkAndTittleByKey('imperativo')"></app-button>
 
-    <div class="card card-small" (click)="getLinkAndTittleByKey('funcional')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>Funcional</span>
-    </div>
+    <app-button [tittleButton]="'Funcional'" (click)="getLinkAndTittleByKey('funcional')"></app-button>
 
-    <div class="card card-small" (click)="getLinkAndTittleByKey('scripting')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>Scripting</span>
-    </div>
+    <app-button [tittleButton]="'Scripting'" (click)="getLinkAndTittleByKey('scripting')"></app-button>
 
-    <div class="card card-small" (click)="getLinkAndTittleByKey('reactiva')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>Reactiva</span>
-    </div>
+    <app-button [tittleButton]="'Reactiva'" (click)="getLinkAndTittleByKey('reactiva')"></app-button>
 
-    <div class="card card-small" (click)="getLinkAndTittleByKey('marcado')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>De Marcado</span>
-    </div>
+    <app-button [tittleButton]="'De Marcado'" (click)="getLinkAndTittleByKey('marcado')"></app-button>
 
-    <div class="card card-small" (click)="getLinkAndTittleByKey('aspectos')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>Aspectos</span>
-    </div>
+    <app-button [tittleButton]="'Aspectos'" (click)="getLinkAndTittleByKey('aspectos')"></app-button>
 
   </div>
 
   <div class="terminal window" ></div>
   <div class="terminal" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
   <div class="terminal" [ngSwitch]="selection" #terminal>
+
     <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
 
     <pre *ngSwitchCase="'imperativo'">- Imperativo -> secuencia ordenada de acciones a ejecutar, más cercano a lenguaje maquina </pre>
