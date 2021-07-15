@@ -53,6 +53,7 @@ export class LinkReferencia {
         ['sesgos', 'https://www.brainvestigations.com/neurociencia/sesgo-cognitivo-negocios/'],
         ['multitarea', 'https://www.sodexo.es/blog/multitarea-multitasking/'],
         ['maxwellCurve', 'https://blog.axosoft.com/the-maxwell-curve-blunder-in-the-name-of-scrum/'],
+        ['pendulo', 'http://www.grupocrece.es/blog/Psicolog%C3%ADala-ley-del-pndulo-en-psicologa'],
         // docker
         ['docker', 'https://www.xataka.com/otros/docker-a-kubernetes-entendiendo-que-contenedores-que-mayores-revoluciones-industria-desarrollo'],
         ['images', 'https://clouding.io/hc/es/articles/360010283060-Trabajando-con-im%C3%A1genes-en-Docker'],
@@ -310,6 +311,7 @@ export class LinkReferencia {
         ['sesgos', 'Algunos Sesgos cognitivos'],
         ['multitarea', 'Pros y Contras del multitasking'],
         ['maxwellCurve', 'La curva de Maxwell'],
+        ['pendulo', 'Ley del pendulo'],
         // docker
         ['docker', '¿ Que es Docker ?'],
         ['images', '¿ Que es una imagen ?'],
