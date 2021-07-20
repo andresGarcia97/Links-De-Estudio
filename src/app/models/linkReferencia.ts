@@ -111,6 +111,7 @@ export class LinkReferencia {
         ['asserts', 'https://www.adictosaltrabajo.com/2016/01/07/haz-tu-codigo-mas-fiable-con-asserts/'],
         ['excepciones', 'https://universidad-de-los-andes.gitbooks.io/fundamentos-de-programacion/content/Nivel4/5_ManejoDeLasExcepciones.html'],
         ['scafolding', 'https://medium.com/@srinathsrs104/scaffolding-54ac4e47e133'],
+        ['cache', 'https://medium.com/bancolombia-tech/dise%C3%B1ando-una-estrategia-de-cach%C3%A9-39366876009b'],
         // metodologias
         ['agiles', 'https://www.iebschool.com/blog/que-son-metodologias-agiles-agile-scrum/'],
         ['scrum', 'https://www.iebschool.com/blog/metodologia-scrum-agile-scrum/'],
@@ -141,6 +142,8 @@ export class LinkReferencia {
         ['scope', 'https://platzi.com/blog/como-funciona-el-scope-en-javascript/'],
         ['precedencia', 'https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Operator_Precedence'],
         ['mvp', 'https://www.inboundcycle.com/blog-de-inbound-marketing/bid/189238/qu-es-el-mvp-o-producto-m-nimo-viable'],
+        ['artesanos', 'https://manifesto.softwarecraftsmanship.org/#/es'],
+        ['verticalAndHorizontal', 'https://xurxodev.com/vertical-scile/'],
         // paradigmas
         ['imperativo', 'https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/paradigmas-de-programacion/'],
         ['funcional', 'https://codigofacilito.com/articulos/programacion-funcional'],
@@ -220,6 +223,7 @@ export class LinkReferencia {
         ['cia', 'https://searchdatacenter.techtarget.com/es/opinion/Que-es-la-triada-de-la-CIA'],
         ['noRepudio', 'https://www.unir.net/ingenieria/revista/no-repudio-seguridad-informatica/'],
         ['matrizDeRiesgo', 'https://www.protek.com.py/novedades/objetivos-de-una-matriz-de-riesgos/'],
+        ['condicionDeCarrera', 'https://ciberseguridad.com/amenzas/vulnerabilidades/condicion-de-carrera/'],
         // smells codes
         ['codesmells', 'https://openwebinars.net/blog/code-smells-y-deuda-tecnica/'],
         ['tiposSmellCodes', 'https://refactoring.guru/es/refactoring/smells'],
@@ -238,6 +242,7 @@ export class LinkReferencia {
         ['tiposBD', 'https://www.acens.com/wp-content/images/2014/02/bbdd-nosql-wp-acens.pdf'],
         ['acid', 'https://dosideas.com/noticias/base-de-datos/973-acid-en-las-bases-de-datos'],
         ['orm', 'https://programarfacil.com/blog/que-es-un-orm/'],
+        ['consistenciaEventual', 'https://medium.com/@gabanox/consistencia-eventual-en-s3-6ba5b2ecd721'],
         // uml
         ['uml', 'https://diagramasuml.com/'],
         ['clase', 'https://diagramasuml.com/diagrama-de-clases/'],
@@ -369,6 +374,7 @@ export class LinkReferencia {
         ['asserts', 'Comprobaciones del codigo'],
         ['excepciones', 'Lanzamiento y manejo de excepciones'],
         ['scafolding', 'Creación automatica de codigo'],
+        ['cache', 'Cache y sus estrategias'],
         // metodologias
         ['agiles', '¿ Que son las metodologias agiles ?'],
         ['scrum', 'Scrum'],
@@ -399,6 +405,8 @@ export class LinkReferencia {
         ['scope', 'Alcance'],
         ['precedencia', 'Precedencia y jerarquia de operaciones'],
         ['mvp', 'Minimo Producto Viable'],
+        ['artesanos', 'Artesanos de software'],
+        ['verticalAndHorizontal', 'Organización de un proyecto'],
         // paradigmas
         ['imperativo', 'Paradigmas Imperativo & Declarativo'],
         ['funcional', 'Paradigma funcional'],
@@ -478,6 +486,7 @@ export class LinkReferencia {
         ['cia', 'Confidencialidad-Integridad-Accesibilidad '],
         ['noRepudio', 'No repudio'],
         ['matrizDeRiesgo', 'Matriz de Riesgo'],
+        ['condicionDeCarrera', 'Condición de Carrera'],
         // smells codes
         ['codesmells', 'Smell Codes'],
         ['tiposSmellCodes', 'Tipos de Smell codes'],
@@ -496,6 +505,7 @@ export class LinkReferencia {
         ['tiposBD', 'Tipos de BD No SQL'],
         ['acid', 'Esquema ACID'],
         ['orm', 'Mapeo Objetos-Relacional'],
+        ['consistenciaEventual', 'Consistencia Eventual'],
         // uml
         ['uml', 'Lenguaje Unificado de Modelado'],
         ['clase', 'Diagrama de clases'],

@@ -18,6 +18,10 @@
 
     <app-button [tittleButton]="'MVP'" (click)="getLinkAndTittleByKey('mvp')"></app-button>
 
+    <app-button [tittleButton]="'Artesanos'" (click)="getLinkAndTittleByKey('artesanos')"></app-button>
+
+    <app-button [tittleButton]="'Organización'" (click)="getLinkAndTittleByKey('verticalAndHorizontal')"></app-button>
+
   </div>
 
   <div class="terminal window" ></div>
@@ -78,6 +82,42 @@
     <pre *ngSwitchCase="'mvp'">- Da retroalimentación a tiempo y util para el negocio </pre>
     <pre *ngSwitchCase="'mvp'">- Todo mvp es una apuesta orientada a conseguir un maximo de aprendizaje con la menor inversion posible </pre>
     <pre *ngSwitchCase="'mvp'">- A veces puede ser reutilizable o desechable, eso depende de su exito inicial </pre>
+
+    <pre *ngSwitchCase="'artesanos'">- Se puede considerar el siguiente nivel del desarrollo profesional, no solo mejorando nosotros mismo, sino a los demás </pre>
+    <pre *ngSwitchCase="'artesanos'">- Los 4 principios que este expone son: </pre>
+    <pre *ngSwitchCase="'artesanos'"></pre>
+    <pre *ngSwitchCase="'artesanos'">- No sólo software que funciona, <strong>SINO</strong> también software bien diseñado</pre>
+    <pre *ngSwitchCase="'artesanos'">- No sólo responder al cambio, <strong>SINO</strong> también agregar valor constantemente</pre>
+    <pre *ngSwitchCase="'artesanos'">- No sólo individuos e interacciones, <strong>SINO</strong> también una comunidad de profesionales</pre>
+    <pre *ngSwitchCase="'artesanos'">- No sólo colaboración con el cliente, <strong>SINO</strong> también asociaciones productivas</pre>
+
+    <pre *ngSwitchCase="'verticalAndHorizontal'">- Una buena estructura es primordial para todo proyecto </pre>
+    <pre *ngSwitchCase="'verticalAndHorizontal'"></pre>
+    <pre *ngSwitchCase="'verticalAndHorizontal'">- Estructura horizontal -> estaba fuertemente ligado al modelo en cascada, donde se realizaban capas transversales </pre>
+    <pre *ngSwitchCase="'verticalAndHorizontal'">  - a todo el sistema, de manera que todo los componentes estaban separados entre si </pre>
+    <pre *ngSwitchCase="'verticalAndHorizontal'">- Esta estructura suele ser compleja de entender si no se entiende el negocio, además de que no todos </pre>
+    <pre *ngSwitchCase="'verticalAndHorizontal'">  - necesitan de las mismas partes para funcionar </pre>
+    <pre *ngSwitchCase="'verticalAndHorizontal'"></pre>
+    <pre *ngSwitchCase="'verticalAndHorizontal'">    Products       Orders                  Customers                    </pre>
+    <pre *ngSwitchCase="'verticalAndHorizontal'">-------&darr;-------------&darr;-----   Views      -----&darr;---------</pre>
+    <pre *ngSwitchCase="'verticalAndHorizontal'">-------&darr;-------------&darr;-----  Presenter   -----&darr;---------</pre>
+    <pre *ngSwitchCase="'verticalAndHorizontal'">-------&darr;-------------&darr;-----   Domain     -----&darr;---------</pre>
+    <pre *ngSwitchCase="'verticalAndHorizontal'">------ &darr;-------------&darr;-----  Services    -----&darr;---------</pre>
+    <pre *ngSwitchCase="'verticalAndHorizontal'">-------&darr;-------------&darr;-----  Entities    -----&darr;---------</pre>
+    <pre *ngSwitchCase="'verticalAndHorizontal'">-------&darr;-------------&darr;----- Repositories -----&darr;---------</pre>
+    <pre *ngSwitchCase="'verticalAndHorizontal'">-------&darr;-------------&darr;-----  DataSource  -----&darr;---------</pre>
+    <pre *ngSwitchCase="'verticalAndHorizontal'"></pre>
+    <pre *ngSwitchCase="'verticalAndHorizontal'">- Estructura vertical -> en esta organización prima el dominio, por lo que cada capa esta aislada entre si </pre>
+    <pre *ngSwitchCase="'verticalAndHorizontal'">  - toda la estructura de un componente es independiente entre si, y más facil de modificar </pre>
+    <pre *ngSwitchCase="'verticalAndHorizontal'"></pre>
+    <pre *ngSwitchCase="'verticalAndHorizontal'">    Products           Orders            Customers        </pre>
+    <pre *ngSwitchCase="'verticalAndHorizontal'">|    Views     |   |    Views     |   |    Views     |    </pre>
+    <pre *ngSwitchCase="'verticalAndHorizontal'">|   Presenter  |   |   Presenter  |   |   Presenter  |    </pre>
+    <pre *ngSwitchCase="'verticalAndHorizontal'">|    Domain    |   |    Domain    |   |    Domain    |    </pre>
+    <pre *ngSwitchCase="'verticalAndHorizontal'">|   Services   |   |   Services   |   |   Services   |    </pre>
+    <pre *ngSwitchCase="'verticalAndHorizontal'">|   Entities   |   |   Entities   |   |   Entities   |     </pre>
+    <pre *ngSwitchCase="'verticalAndHorizontal'">| Repositories |   | Repositories |   | Repositories |    </pre>
+    <pre *ngSwitchCase="'verticalAndHorizontal'">|  DataSource  |   |  DataSource  |   |  DataSource  |    </pre>
 
   </div>
 
