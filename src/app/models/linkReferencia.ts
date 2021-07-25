@@ -36,6 +36,10 @@ export class LinkReferencia {
         ['demeter', 'https://www.adictosaltrabajo.com/2015/07/24/ley-de-demeter/'],
         ['complejidad', 'http://oscarmoreno.com/la-complejidad-ciclomatica/'],
         ['logging', 'https://itnext.io/logger-or-debugger-which-one-to-choose-3f6a72200b15'],
+        // calidad
+        ['metricas', 'https://searchdatacenter.techtarget.com/es/consejo/23-metricas-de-desarrollo-de-software-que-monitorear-hoy'],
+        ['metricasEnCodigo', 'https://blog.desafiolatam.com/metricas-de-calidad-de-software/#:~:text=M%C3%A9tricas%20de%20calidad%20de%20software%20es%20un%20conjunto%20de%20medidas,comparar%20o%20planificar%20estas%20aplicaciones.&text=Tambi%C3%A9n%2C%20es%20necesario%20definir%20las,los%20resultados%20de%20estas%20m%C3%A9tricas'],
+        ['cleanCode', 'https://medium.com/@tijuhasz/in-one-of-the-most-groundbreaking-practical-books-on-software-development-clean-code-right-in-3ef3006c68f2'],
         // compilación
         ['compilacion', 'https://developer.mozilla.org/es/docs/Glossary/Compile'],
         ['nivel', 'https://desarrolloweb.com/articulos/2358.php#:~:text=Existen%20dos%20tipos%20de%20lenguajes,y%20los%20de%20alto%20nivel.&text=Los%20lenguajes%20m%C3%A1s%20pr%C3%B3ximos%20a,denominan%20lenguajes%20de%20alto%20nivel.'],
@@ -214,6 +218,7 @@ export class LinkReferencia {
         ['occam', 'https://www.genbeta.com/desarrollo/la-navaja-de-occam-kiss-y-yagni-la-simplicidad-en-el-codigo-no-deberia-ser-solo-postureo-developer'],
         ['dry', 'https://tantacom.com/principios-diseno-software-kiss-dry-solid/'],
         ['hollywood', 'https://www.genbeta.com/desarrollo/doce-principios-de-diseno-que-todo-desarrollador-deberia-conocer'],
+        ['tellDontAsk', 'https://www.disrupciontecnologica.com/tell-dont-ask/?reload=977836'],
         // seguridad
         ['firewall', 'https://idgrup.com/firewall-que-es-y-como-funciona/#:~:text=Un%20firewall%2C%20tambi%C3%A9n%20llamado%20cortafuegos,ordenadores%20de%20una%20misma%20red'],
         ['protocolos', 'https://www.websecurity.digicert.com/es/es/security-topics/what-is-ssl-tls-https'],
@@ -299,6 +304,10 @@ export class LinkReferencia {
         ['demeter', 'Ley de Demeter'],
         ['complejidad', 'Complejidad Ciclomatica'],
         ['logging', 'Logging VS Debugging'],
+        // calidad
+        ['metricas', 'Metricas del Software'],
+        ['metricasEnCodigo', 'Metricas del codigo'],
+        ['cleanCode', 'Clean Code & Code rot'],
         // compilación
         ['compilacion', '¿ Que es compilar ?'],
         ['nivel', 'Niveles de compilación'],
@@ -477,6 +486,7 @@ export class LinkReferencia {
         ['occam', 'La navaja de Occam'],
         ['dry', 'No te repitas a ti mismo'],
         ['hollywood', 'No nos llames, nosotros te llamamos'],
+        ['tellDontAsk', 'Dile, no le preguntes'],
         // seguridad
         ['firewall', 'Firewall'],
         ['protocolos', 'SSL, TSL, HTTPS'],

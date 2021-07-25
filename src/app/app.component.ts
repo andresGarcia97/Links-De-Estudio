@@ -5,6 +5,7 @@ import { AgilesComponent } from './components/agiles/agiles.component';
 import { AnalisisComponent } from './components/analisis/analisis.component';
 import { ArquitecturasComponent } from './components/arquitecturas/arquitecturas.component';
 import { BuenasPracticasComponent } from './components/buenas-practicas/buenas-practicas.component';
+import { CalidadComponent } from './components/calidad/calidad.component';
 import { CompilacionComponent } from './components/compilacion/compilacion.component';
 import { ConocimientosEmpiricosComponent } from './components/conocimientos-empiricos/conocimientos-empiricos.component';
 import { DockerComponent } from './components/dockerC/docker.component';
@@ -81,7 +82,9 @@ export class AppComponent {
     // 24 - 27
     DockerComponent, PooComponent, AgilesComponent, SmellsCodesComponent,
     // 28 - 31
-    MetaCaracteristicasComponent, GlosarioComponent, NubeComponent, PersonasComponent ];
+    MetaCaracteristicasComponent, GlosarioComponent, NubeComponent, PersonasComponent,
+    // 32 - 35
+    CalidadComponent ];
 
   constructor(private componentFactoryResolver: ComponentFactoryResolver) { }
 

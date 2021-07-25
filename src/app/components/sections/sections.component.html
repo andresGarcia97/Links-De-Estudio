@@ -4,41 +4,19 @@
 
   <div class="card-container">
 
-    <div class="card card-small" (click)="getLinkAndTittleByKey('solid')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>SOLID</span>
-    </div>
+    <app-button [tittleButton]="'SOLID'" (click)="getLinkAndTittleByKey('solid')"></app-button>
 
-    <div class="card card-small" (click)="getLinkAndTittleByKey('kiss')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>KISS</span>
-    </div>
+    <app-button [tittleButton]="'KISS'" (click)="getLinkAndTittleByKey('kiss')"></app-button>
 
-    <div class="card card-small" (click)="getLinkAndTittleByKey('yagni')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>YAGNI</span>
-    </div>
+    <app-button [tittleButton]="'YAGNI'" (click)="getLinkAndTittleByKey('yagni')"></app-button>
 
-    <div class="card card-small" (click)="getLinkAndTittleByKey('occam')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>Occam</span>
-    </div>
+    <app-button [tittleButton]="'Occam'" (click)="getLinkAndTittleByKey('occam')"></app-button>
 
-    <div class="card card-small" (click)="getLinkAndTittleByKey('dry')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>DRY</span>
-    </div>
+    <app-button [tittleButton]="'DRY'" (click)="getLinkAndTittleByKey('dry')"></app-button>
 
-    <div class="card card-small" (click)="getLinkAndTittleByKey('hollywood')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>Hollywood</span>
-    </div>
+    <app-button [tittleButton]="'Hollywood'" (click)="getLinkAndTittleByKey('hollywood')"></app-button>
+
+    <app-button [tittleButton]="'TDA'" (click)="getLinkAndTittleByKey('tellDontAsk')"></app-button>
 
   </div>
 
@@ -75,6 +53,10 @@
     <pre *ngSwitchCase="'hollywood'">- Esto logra obtener las referencias y datos necesarios para funcionar mediante una entidad externa (frameworks)</pre>
     <pre *ngSwitchCase="'hollywood'">- Generalmente las entidades externas son los frameworks que ejecutan el codigo del usuario </pre>
     <pre *ngSwitchCase="'hollywood'">- Las instancias se crean y se eliminan de una manera más eficiente, mejorando el rendimiento </pre>
+
+    <pre *ngSwitchCase="'tellDontAsk'">- La responsabilidad debe ser delegada al objeto correspondiente, en lugar de extraerla en un componente afuera </pre>
+    <pre *ngSwitchCase="'tellDontAsk'">- En lugar de pedir los datos a los objetos, debemos decirles que hacer y esperar el resultado de la operación </pre>
+    <pre *ngSwitchCase="'tellDontAsk'">- Esto es un refuerzo del concepto de encapsulación, propio de la orientación a objetos </pre>
 
   </div>
 

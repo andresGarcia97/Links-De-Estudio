@@ -207,9 +207,9 @@ p {
 
 .content {
   display: flex;
-  margin: 3em auto 2em;
+  margin: 2.8em auto 2em;
   padding: 0;
-  max-width: 1140px;
+  max-width: 1200px;
   flex-direction: column;
   align-items: center;
 }
@@ -284,7 +284,7 @@ svg.material-icons:not(:last-child) {
 
 .card-container .card:not(.highlight-card):hover {
   transform: translateY(-3px);
-  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 4px 17px var(--color-black, 0.35);
 }
 
 .card-container .card:not(.highlight-card):hover .material-icons path {
@@ -364,7 +364,7 @@ input:focus{
 
 .terminal {
   position: relative;
-  width: 95%;
+  width: 98%;
   border-radius: 6px;
   padding-top: 16px;
   padding-bottom: 12px;
@@ -445,29 +445,6 @@ pre::selection {
 
 .button-close svg:hover {
   fill: var(--color-crimson);
-}
-
-footer {
-  margin-top: 16px;
-  margin-bottom: 0px;
-  align-items: center;
-  align-content: center;
-  line-height: 20px;
-  width: 100%;
-  background-color: var(--color-black);
-  color: var(--color-white);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 60px;
-  display: flex;
-  font-weight: 600;
-}
-
-footer a {
-  display: flex;
-  align-items: center;
 }
 
 .github-star-badge {
