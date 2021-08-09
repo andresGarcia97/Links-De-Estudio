@@ -17,7 +17,11 @@
       <app-button [tittleButton]="'Scaffolding'" (click)="getLinkAndTittleByKey('scafolding')"></app-button>
 
       <app-button [tittleButton]="'Cache'" (click)="getLinkAndTittleByKey('cache')"></app-button>
-  
+
+      <app-button [tittleButton]="'Hilos'" (click)="getLinkAndTittleByKey('hilos')"></app-button>
+
+      <app-button [tittleButton]="'Argumentos'" (click)="getLinkAndTittleByKey('argumentos')"></app-button>
+
     </div>
   
     <div class="terminal window" ></div>
@@ -80,6 +84,20 @@
         <pre *ngSwitchCase="'cache'">  - al ser externa depende directamente de la latencia del medio en que este, y de su disponibilidad, además de su manejo </pre>
         <pre *ngSwitchCase="'cache'">- Distribuida -> esta particionada y administrada por diferentes nodos que se comunican entre si </pre>
         <pre *ngSwitchCase="'cache'">  - su manejo implica más complejidad </pre>
+
+        <pre *ngSwitchCase="'hilos'">- Un hilo es una secuencia de control dentro de un proceso que ejecuta sus procesos de forma independiente </pre>
+        <pre *ngSwitchCase="'hilos'">- Un proceso es una acción continua o serie de cambios, tareas que ocurren de manera definida </pre>
+        <pre *ngSwitchCase="'hilos'">- El ciclo de vida de un proceso es el siguiente: </pre>
+        <pre *ngSwitchCase="'hilos'"> Creacion -> Listo &larr;&rarr; Ejecución -> Terminado</pre>
+        <pre *ngSwitchCase="'hilos'">                        &darr;                        </pre>
+        <pre *ngSwitchCase="'hilos'">              &uarr;	     Bloqueado                   </pre>
+
+        <pre *ngSwitchCase="'argumentos'">- En java los argumentos siempre se pasan por valor, esto significa que siempre se pasa el valor de la variable, </pre>
+        <pre *ngSwitchCase="'argumentos'"> - y no la referencia en memoria de la variable, por lo que siempre es una copia del original </pre>
+        <pre *ngSwitchCase="'argumentos'">- Las copias se pueden hacer del valor para datos primitivos, o una copia con la dirección de memoria si es un objeto </pre>
+        <pre *ngSwitchCase="'argumentos'">- Esto no modifica la variable original, ya sea un tipo primitivo o un objeto </pre>
+        <pre *ngSwitchCase="'argumentos'">- Algunas clases son inmutables por lo que los objetos originales nunca son modificados, </pre>
+        <pre *ngSwitchCase="'argumentos'"> - solo se devuelve una nueva instancia con los cambios en vez de la original </pre>
 
       </div>
     

@@ -36,6 +36,7 @@ export class LinkReferencia {
         ['demeter', 'https://www.adictosaltrabajo.com/2015/07/24/ley-de-demeter/'],
         ['complejidad', 'http://oscarmoreno.com/la-complejidad-ciclomatica/'],
         ['logging', 'https://itnext.io/logger-or-debugger-which-one-to-choose-3f6a72200b15'],
+        ['complejidadCognitiva', 'https://enmilocalfunciona.io/complejidad-cognitiva/'],
         // calidad
         ['metricas', 'https://searchdatacenter.techtarget.com/es/consejo/23-metricas-de-desarrollo-de-software-que-monitorear-hoy'],
         ['metricasEnCodigo', 'https://blog.desafiolatam.com/metricas-de-calidad-de-software/#:~:text=M%C3%A9tricas%20de%20calidad%20de%20software%20es%20un%20conjunto%20de%20medidas,comparar%20o%20planificar%20estas%20aplicaciones.&text=Tambi%C3%A9n%2C%20es%20necesario%20definir%20las,los%20resultados%20de%20estas%20m%C3%A9tricas'],
@@ -116,6 +117,8 @@ export class LinkReferencia {
         ['excepciones', 'https://universidad-de-los-andes.gitbooks.io/fundamentos-de-programacion/content/Nivel4/5_ManejoDeLasExcepciones.html'],
         ['scafolding', 'https://medium.com/@srinathsrs104/scaffolding-54ac4e47e133'],
         ['cache', 'https://medium.com/bancolombia-tech/dise%C3%B1ando-una-estrategia-de-cach%C3%A9-39366876009b'],
+        ['hilos', 'https://facturapp.weebly.com/hilos.html'],
+        ['argumentos', 'https://picodotdev.github.io/blog-bitix/2021/01/en-java-los-argumentos-se-pasan-por-valor-o-por-referencia/'],
         // metodologias
         ['agiles', 'https://www.iebschool.com/blog/que-son-metodologias-agiles-agile-scrum/'],
         ['scrum', 'https://www.iebschool.com/blog/metodologia-scrum-agile-scrum/'],
@@ -148,6 +151,7 @@ export class LinkReferencia {
         ['mvp', 'https://www.inboundcycle.com/blog-de-inbound-marketing/bid/189238/qu-es-el-mvp-o-producto-m-nimo-viable'],
         ['artesanos', 'https://manifesto.softwarecraftsmanship.org/#/es'],
         ['verticalAndHorizontal', 'https://xurxodev.com/vertical-scile/'],
+        ['expresionesRegulares', 'https://jarroba.com/busqueda-de-patrones-expresiones-regulares/'],
         // paradigmas
         ['imperativo', 'https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/paradigmas-de-programacion/'],
         ['funcional', 'https://codigofacilito.com/articulos/programacion-funcional'],
@@ -304,6 +308,7 @@ export class LinkReferencia {
         ['demeter', 'Ley de Demeter'],
         ['complejidad', 'Complejidad Ciclomatica'],
         ['logging', 'Logging VS Debugging'],
+        ['complejidadCognitiva', 'Complejidad Cognitiva'],
         // calidad
         ['metricas', 'Metricas del Software'],
         ['metricasEnCodigo', 'Metricas del codigo'],
@@ -384,6 +389,8 @@ export class LinkReferencia {
         ['excepciones', 'Lanzamiento y manejo de excepciones'],
         ['scafolding', 'Creación automatica de codigo'],
         ['cache', 'Cache y sus estrategias'],
+        ['hilos', 'Hilos'],
+        ['argumentos', 'Argumentos por valor y referencia'],
         // metodologias
         ['agiles', '¿ Que son las metodologias agiles ?'],
         ['scrum', 'Scrum'],
@@ -416,6 +423,7 @@ export class LinkReferencia {
         ['mvp', 'Minimo Producto Viable'],
         ['artesanos', 'Artesanos de software'],
         ['verticalAndHorizontal', 'Organización de un proyecto'],
+        ['expresionesRegulares', 'Expresiones Regulares'],
         // paradigmas
         ['imperativo', 'Paradigmas Imperativo & Declarativo'],
         ['funcional', 'Paradigma funcional'],

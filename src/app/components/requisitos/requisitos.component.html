@@ -4,43 +4,17 @@
   
     <div class="card-container">
   
-      <div class="card card-small"
-        (click)="getLinkAndTittleByKey('funcionales')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>Funcionales</span>
-      </div>
-  
-      <div class="card card-small"
-        (click)="getLinkAndTittleByKey('NOfuncionales')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>NO Funcionales</span>
-      </div>
-  
-      <div class="card card-small" (click)="getLinkAndTittleByKey('negocio')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>EL Negocio</span>
-      </div>
-  
-      <div class="card card-small" (click)="getLinkAndTittleByKey('ambiguedad')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>Evitar la ambiguedad</span>
-      </div>
-  
-      <div class="card card-small" (click)="getLinkAndTittleByKey('calidad')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>Atributos de calidad</span>
-      </div>
-    
-      <div class="card card-small" (click)="getLinkAndTittleByKey('tradeoff')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>Trade-offs</span>
-      </div>
+      <app-button [tittleButton]="'Funcionales'" (click)="getLinkAndTittleByKey('funcionales')"></app-button>
+
+      <app-button [tittleButton]="'NO Funcionales'" (click)="getLinkAndTittleByKey('NOfuncionales')"></app-button>
+
+      <app-button [tittleButton]="'EL Negocio'" (click)="getLinkAndTittleByKey('negocio')"></app-button>
+
+      <app-button [tittleButton]="'Evitar la ambiguedad'" (click)="getLinkAndTittleByKey('ambiguedad')"></app-button>
+
+      <app-button [tittleButton]="'Atributos de calidad'" (click)="getLinkAndTittleByKey('calidad')"></app-button>
+
+      <app-button [tittleButton]="'Trade-offs'" (click)="getLinkAndTittleByKey('tradeoff')"></app-button>
     
     </div>
   

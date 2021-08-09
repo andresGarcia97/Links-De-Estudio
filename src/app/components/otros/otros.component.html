@@ -20,6 +20,8 @@
 
     <app-button [tittleButton]="'Organización'" (click)="getLinkAndTittleByKey('verticalAndHorizontal')"></app-button>
 
+    <app-button [tittleButton]="'Expresiones regulares'" (click)="getLinkAndTittleByKey('expresionesRegulares')"></app-button>
+
   </div>
 
   <div class="terminal window" ></div>
@@ -108,6 +110,14 @@
     <pre *ngSwitchCase="'verticalAndHorizontal'">|   Entities   |   |   Entities   |   |   Entities   |     </pre>
     <pre *ngSwitchCase="'verticalAndHorizontal'">| Repositories |   | Repositories |   | Repositories |    </pre>
     <pre *ngSwitchCase="'verticalAndHorizontal'">|  DataSource  |   |  DataSource  |   |  DataSource  |    </pre>
+
+    <pre *ngSwitchCase="'expresionesRegulares'">- Una expresion regular es una forma de buscar coincidencias o patrones de manera optimizada </pre>
+    <pre *ngSwitchCase="'expresionesRegulares'">- No solo permite encontrar coincidencia, tambien permite modificar lo que se haya encontrado </pre>
+    <pre *ngSwitchCase="'expresionesRegulares'">- Las expresiones regulares se basan en diagramas de estado, ya que todas las transiciones se deben cumplir, </pre>
+    <pre *ngSwitchCase="'expresionesRegulares'"> - para que el texto a evaluar cumpla con la condicion dada de la expresion </pre>
+    <pre *ngSwitchCase="'expresionesRegulares'">- Estas expresiones en si se escriben igual, y son independientes del lenguaje que se use </pre>
+    <pre *ngSwitchCase="'expresionesRegulares'">- Los compiladores de muchos lenguajes se basan en analizadores sintacticos, para analizar el codigo copiado, </pre>
+    <pre *ngSwitchCase="'expresionesRegulares'"> - estos a su vez se basan en expresiones regulares para saber si se cumplen con las condiciones del lenguaje </pre>
 
   </div>
 

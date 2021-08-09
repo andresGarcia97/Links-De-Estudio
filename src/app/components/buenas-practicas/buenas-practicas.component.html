@@ -14,9 +14,11 @@
 
     <app-button [tittleButton]="'Ley de Demeter'" (click)="getLinkAndTittleByKey('demeter')"></app-button>
 
-    <app-button [tittleButton]="'Complejidad'" (click)="getLinkAndTittleByKey('complejidad')"></app-button>
+    <app-button [tittleButton]="'Complejidad #1'" (click)="getLinkAndTittleByKey('complejidad')"></app-button>
 
     <app-button [tittleButton]="'Logs VS Debug'" (click)="getLinkAndTittleByKey('logging')"></app-button>
+
+    <app-button [tittleButton]="'Complejidad #2'" (click)="getLinkAndTittleByKey('complejidadCognitiva')"></app-button>
 
   </div>
 
@@ -69,6 +71,20 @@
     <pre *ngSwitchCase="'logging'">- Depurar es recomendable cuando la pila de llamadas es demasiado extensa y compleja</pre>
     <pre *ngSwitchCase="'logging'">- Registrar es util cuando la aplicación ó funcionalidad es pequeña y de baja complejidad </pre>
     <pre *ngSwitchCase="'logging'">- Esta elección tambien depende de la comodiad de cada programador y de su eficiencia con cada herramienta </pre>
+
+    <pre *ngSwitchCase="'complejidadCognitiva'">- Es una metrica de software complementaria a la complejidad ciclomatica </pre>
+    <pre *ngSwitchCase="'complejidadCognitiva'">- Esta metrica trata sobre que tan dificil es de entender un fragmento de codigo </pre>
+    <pre *ngSwitchCase="'complejidadCognitiva'">- Esta metrica aumenta de acuerdo a ciertas condiciones </pre>
+    <pre *ngSwitchCase="'complejidadCognitiva'"> - Anidamiento</pre>
+    <pre *ngSwitchCase="'complejidadCognitiva'"> - Condicionales</pre>
+    <pre *ngSwitchCase="'complejidadCognitiva'"> - try/catch y retrasmision de excepciones</pre>
+    <pre *ngSwitchCase="'complejidadCognitiva'"> - Estructuras switch-case </pre>
+    <pre *ngSwitchCase="'complejidadCognitiva'"> - sequencias largas de operadores logicos </pre>
+    <pre *ngSwitchCase="'complejidadCognitiva'"> - recursividad </pre>
+    <pre *ngSwitchCase="'complejidadCognitiva'"> - ciclos</pre>
+    <pre *ngSwitchCase="'complejidadCognitiva'"></pre>
+    <pre *ngSwitchCase="'complejidadCognitiva'">- Un codigo con una alta complejidad cognitiva es dificil de mantener, por lo que siempre se busca simplificarla, </pre>
+    <pre *ngSwitchCase="'complejidadCognitiva'"> - sin cambiar su comportamiento, para ser más facil de comprender y de modificar </pre>
 
   </div>
 
