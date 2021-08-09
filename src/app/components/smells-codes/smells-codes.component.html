@@ -3,37 +3,16 @@
     <h2>Smell Codes (malos olores) </h2>
   
     <div class="card-container">
-  
-      <div class="card card-small"
-        (click)="getLinkAndTittleByKey('codesmells')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>Smell Codes</span>
-      </div>
 
-      <div class="card card-small" (click)="getLinkAndTittleByKey('tiposSmellCodes')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>Tipos</span>
-      </div>
+      <app-button [tittleButton]="'Smell Codes'" (click)="getLinkAndTittleByKey('codesmells')"></app-button>
 
-      <div class="card card-small" (click)="getLinkAndTittleByKey('desglose')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>Desglose</span>
-      </div>
+      <app-button [tittleButton]="'Tipos'" (click)="getLinkAndTittleByKey('tiposSmellCodes')"></app-button>
 
-      <div class="card card-small" (click)="getLinkAndTittleByKey('casos')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>Casos especiales</span>
-      </div>
+      <app-button [tittleButton]="'Desglose'" (click)="getLinkAndTittleByKey('desglose')"></app-button>
 
-      <div class="card card-small" (click)="getLinkAndTittleByKey('payoff')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>Ganancias</span>
-      </div>
+      <app-button [tittleButton]="'Casos especiales'" (click)="getLinkAndTittleByKey('casos')"></app-button>
+
+      <app-button [tittleButton]="'Ganancias'" (click)="getLinkAndTittleByKey('payoff')"></app-button>
   
     </div>
   

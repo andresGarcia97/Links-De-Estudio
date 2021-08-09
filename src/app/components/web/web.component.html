@@ -4,35 +4,15 @@
   
     <div class="card-container">
   
-      <div class="card card-small" (click)="getLinkAndTittleByKey('spa')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>SPA</span>
-      </div>
-  
-      <div class="card card-small" (click)="getLinkAndTittleByKey('pwa')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>PWA</span>
-      </div>
+      <app-button [tittleButton]="'SPA'" (click)="getLinkAndTittleByKey('spa')"></app-button>
 
-      <div class="card card-small" (click)="getLinkAndTittleByKey('seo')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>SEO</span>
-      </div>
+      <app-button [tittleButton]="'PWA'" (click)="getLinkAndTittleByKey('pwa')"></app-button>
 
-      <div class="card card-small" (click)="getLinkAndTittleByKey('espacio')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>Espacio Negativo</span>
-      </div>
+      <app-button [tittleButton]="'SEO'" (click)="getLinkAndTittleByKey('seo')"></app-button>
 
-      <div class="card card-small" (click)="getLinkAndTittleByKey('diseno')" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-        <span>Diseño Grafico</span>
-      </div>
+      <app-button [tittleButton]="'Espacio Negativo'" (click)="getLinkAndTittleByKey('espacio')"></app-button>
+
+      <app-button [tittleButton]="'Diseño Grafico'" (click)="getLinkAndTittleByKey('diseno')"></app-button>
 
     </div>
     

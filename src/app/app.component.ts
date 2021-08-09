@@ -24,10 +24,10 @@ import { ParadigmasComponent } from './components/paradigmas/paradigmas.componen
 import { PatronesComponent } from './components/patrones/patrones.component';
 import { PersonasComponent } from './components/personas/personas.component';
 import { PooComponent } from './components/poo/poo.component';
+import { PrincipiosComponent } from './components/principios/principios.component';
 import { PruebasComponent } from './components/pruebas/pruebas.component';
 import { RefactorizacionComponent } from './components/refactorizacion/refactorizacion.component';
 import { RequisitosComponent } from './components/requisitos/requisitos.component';
-import { SectionsComponent } from './components/sections/sections.component';
 import { SeguridadComponent } from './components/seguridad/seguridad.component';
 import { SmellsCodesComponent } from './components/smells-codes/smells-codes.component';
 import { SqlNosqlComponent } from './components/sql-nosql/sql-nosql.component';
@@ -72,7 +72,7 @@ export class AppComponent {
     // 4 - 7
     MetodologiasComponent, OtrosComponent, ParadigmasComponent, PatronesComponent,
     // 8 - 11
-    RefactorizacionComponent, SectionsComponent, SqlNosqlComponent, CompilacionComponent,
+    RefactorizacionComponent, PrincipiosComponent, SqlNosqlComponent, CompilacionComponent,
     // 12 - 15
     HistoriaUsuarioComponent, VersionamientoComponent, EstrategiasDesarrolloComponent, UmlComponent,
     // 16 - 19

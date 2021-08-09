@@ -4,29 +4,13 @@
 
   <div class="card-container">
 
-    <div class="card card-small" (click)="getLinkAndTittleByKey('git')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>Gestor de Versiones</span>
-    </div>
+    <app-button [tittleButton]="'Gestor de Versiones'" (click)="getLinkAndTittleByKey('git')"></app-button>
 
-    <div class="card card-small" (click)="getLinkAndTittleByKey('dependencias')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>Dependencias Web</span>
-    </div>
+    <app-button [tittleButton]="'Dependencias Web'" (click)="getLinkAndTittleByKey('dependencias')"></app-button>
 
-    <div class="card card-small" (click)="getLinkAndTittleByKey('gradlevsmaven')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>Gradle VS Maven</span>
-    </div>
+    <app-button [tittleButton]="'Gradle VS Maven'" (click)="getLinkAndTittleByKey('gradlevsmaven')"></app-button>
 
-    <div class="card card-small" (click)="getLinkAndTittleByKey('versiones')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>Versionamiento</span>
-    </div>
+    <app-button [tittleButton]="'Versionamiento'" (click)="getLinkAndTittleByKey('versiones')"></app-button>
 
   </div>
   

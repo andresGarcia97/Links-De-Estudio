@@ -4,65 +4,25 @@
 
   <div class="card-container">
 
-    <div class="card card-small" (click)="getLinkAndTittleByKey('uml')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span> ¿ Que es ?</span>
-    </div>
+    <app-button [tittleButton]="'¿ Que es ?'" (click)="getLinkAndTittleByKey('uml')"></app-button>
 
-    <div class="card card-small" (click)="getLinkAndTittleByKey('clase')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>De Clases</span>
-    </div>
+    <app-button [tittleButton]="'De Clases'" (click)="getLinkAndTittleByKey('clase')"></app-button>
 
-    <div class="card card-small" (click)="getLinkAndTittleByKey('componentes')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>De Componentes</span>
-    </div>
+    <app-button [tittleButton]="'De Componentes'" (click)="getLinkAndTittleByKey('componentes')"></app-button>
 
-    <div class="card card-small" (click)="getLinkAndTittleByKey('despliegue')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>De Despliegue</span>
-    </div>
+    <app-button [tittleButton]="'De Despliegue'" (click)="getLinkAndTittleByKey('despliegue')"></app-button>
 
-    <div class="card card-small" (click)="getLinkAndTittleByKey('usos')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>Casos de Uso</span>
-    </div>
+    <app-button [tittleButton]="'Casos de Uso'" (click)="getLinkAndTittleByKey('usos')"></app-button>
 
-    <div class="card card-small" (click)="getLinkAndTittleByKey('secuencia')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>De Secuencia</span>
-    </div>
+    <app-button [tittleButton]="'De Secuencia'" (click)="getLinkAndTittleByKey('secuencia')"></app-button>
 
-    <div class="card card-small" (click)="getLinkAndTittleByKey('actividades')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>De Actividades</span>
-    </div>
+    <app-button [tittleButton]="'De Actividades'" (click)="getLinkAndTittleByKey('actividades')"></app-button>
 
-    <div class="card card-small" (click)="getLinkAndTittleByKey('paquetes')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>De Paquetes</span>
-    </div>
-  
-    <div class="card card-small" (click)="getLinkAndTittleByKey('estados')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>De Estados</span>
-    </div>
+    <app-button [tittleButton]="'De Paquetes'" (click)="getLinkAndTittleByKey('paquetes')"></app-button>
 
-    <div class="card card-small" (click)="getLinkAndTittleByKey('vista')" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-      <span>4+1 Vistas</span>
-    </div>
+    <app-button [tittleButton]="'De Estados'" (click)="getLinkAndTittleByKey('estados')"></app-button>
+
+    <app-button [tittleButton]="'4+1 Vistas'" (click)="getLinkAndTittleByKey('vista')"></app-button>
 
   </div>
 
