@@ -141,6 +141,7 @@ export class LinkReferencia {
         ['restfull', 'http://adwe.es/general/colaboraciones/servicios-web-restful-con-http-parte-i-introduccion-y-bases-teoricas/'],
         ['caracteristicas', 'https://adwe.es/codigo/apis-codigo/servicios-web-restful-con-http-parte-ii-ejemplos/'],
         ['madurezDeUnaApi', 'https://restfulapi.net/richardson-maturity-model/'],
+        ['factores12', 'https://12factor.net/es/'],
         // otros
         ['escalamiento', 'https://www.oscarblancarteblog.com/2017/03/07/escalabilidad-horizontal-y-vertical/'],
         ['scraping', 'https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/que-es-el-web-scraping/'],
@@ -223,6 +224,7 @@ export class LinkReferencia {
         ['dry', 'https://tantacom.com/principios-diseno-software-kiss-dry-solid/'],
         ['hollywood', 'https://www.genbeta.com/desarrollo/doce-principios-de-diseno-que-todo-desarrollador-deberia-conocer'],
         ['tellDontAsk', 'https://www.disrupciontecnologica.com/tell-dont-ask/?reload=977836'],
+        ['stupid', 'https://williamdurand.fr/2013/07/30/from-stupid-to-solid-code/#singleton'],
         // seguridad
         ['firewall', 'https://idgrup.com/firewall-que-es-y-como-funciona/#:~:text=Un%20firewall%2C%20tambi%C3%A9n%20llamado%20cortafuegos,ordenadores%20de%20una%20misma%20red'],
         ['protocolos', 'https://www.websecurity.digicert.com/es/es/security-topics/what-is-ssl-tls-https'],
@@ -413,6 +415,7 @@ export class LinkReferencia {
         ['restfull', 'Rest & Restfull'],
         ['caracteristicas', 'Caracteristicas de una api restfull'],
         ['madurezDeUnaApi', 'Nivel de madurez de una API'],
+        ['factores12', '12 factores para una aplicación SaaS'],
         // otros
         ['escalamiento', 'Escalamiento de un sistema'],
         ['scraping', 'Web Scrapping'],
@@ -495,6 +498,7 @@ export class LinkReferencia {
         ['dry', 'No te repitas a ti mismo'],
         ['hollywood', 'No nos llames, nosotros te llamamos'],
         ['tellDontAsk', 'Dile, no le preguntes'],
+        ['stupid', 'NO seas S.T.U.P.I.D'],
         // seguridad
         ['firewall', 'Firewall'],
         ['protocolos', 'SSL, TSL, HTTPS'],

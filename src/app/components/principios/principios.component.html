@@ -18,6 +18,8 @@
 
     <app-button [tittleButton]="'TDA'" (click)="getLinkAndTittleByKey('tellDontAsk')"></app-button>
 
+    <app-button [tittleButton]="'STUPID'" (click)="getLinkAndTittleByKey('stupid')"></app-button>
+
   </div>
 
   <div class="terminal window" ></div>
@@ -27,15 +29,15 @@
     <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
 
     <pre *ngSwitchCase="'solid'"> S -> Responsabilidad única</pre>
-    <pre *ngSwitchCase="'solid'">- Una cosa x solo deberia hacer y conocer cosas de su competencia, de resto se tendria un acoplamiento indeseado </pre>
+    <pre *ngSwitchCase="'solid'"> - Una cosa x solo deberia hacer y conocer cosas de su competencia, de resto se tendria un acoplamiento indeseado </pre>
     <pre *ngSwitchCase="'solid'"> O -> Abierto/Cerrado</pre>
-    <pre *ngSwitchCase="'solid'">- Siempre sera mejor añadir nuevos comportamientos o funciones que modificar los existentes </pre>
+    <pre *ngSwitchCase="'solid'"> - Siempre sera mejor añadir nuevos comportamientos o funciones que modificar los existentes </pre>
     <pre *ngSwitchCase="'solid'"> L -> Sustitución de Liskov</pre>
-    <pre *ngSwitchCase="'solid'">- Todo objeto hijo es remplazable por sus padres, sin alterar el funcionamiento del sistema </pre>
+    <pre *ngSwitchCase="'solid'"> - Todo objeto hijo es remplazable por sus padres, sin alterar el funcionamiento del sistema </pre>
     <pre *ngSwitchCase="'solid'"> I -> Segregación de interfaces </pre>
-    <pre *ngSwitchCase="'solid'">- Es mejor tener interfaces especializadas, que interfaces genericas con metodos que no se usaran </pre>
+    <pre *ngSwitchCase="'solid'"> - Es mejor tener interfaces especializadas, que interfaces genericas con metodos que no se usaran </pre>
     <pre *ngSwitchCase="'solid'"> D -> Inversión de dependencias </pre>
-    <pre *ngSwitchCase="'solid'">- las implementaciones pueden cambiar, pero las abstracciones no, por lo que el sistema se debe basar en estas </pre>
+    <pre *ngSwitchCase="'solid'"> - las implementaciones pueden cambiar, pero las abstracciones no, por lo que el sistema se debe basar en estas </pre>
 
     <pre *ngSwitchCase="'kiss'">- Código entendible</pre>
     <pre *ngSwitchCase="'kiss'">- Mantener muchos modulos y metodos pequeños en vez de uno grande </pre>
@@ -62,6 +64,19 @@
     <pre *ngSwitchCase="'tellDontAsk'">- La responsabilidad debe ser delegada al objeto correspondiente, en lugar de extraerla en un componente afuera </pre>
     <pre *ngSwitchCase="'tellDontAsk'">- En lugar de pedir los datos a los objetos, debemos decirles que hacer y esperar el resultado de la operación </pre>
     <pre *ngSwitchCase="'tellDontAsk'">- Esto es un refuerzo del concepto de encapsulación, propio de la orientación a objetos </pre>
+
+    <pre *ngSwitchCase="'stupid'"> S -> Patron singleton </pre>
+    <pre *ngSwitchCase="'stupid'"> - Es el unico patron que mal usado puede convertirse en un antipatron, no lo uses si no es necesario </pre>
+    <pre *ngSwitchCase="'stupid'"> T -> Acoplamiento indebido </pre>
+    <pre *ngSwitchCase="'stupid'"> - Sucede cuando un cambio afecta más partes de las debidas, esto indica una mala modularización </pre>
+    <pre *ngSwitchCase="'stupid'"> U -> inestabilidad</pre>
+    <pre *ngSwitchCase="'stupid'"> - El software no deberia ser dificil de testear, ni de modificar </pre>
+    <pre *ngSwitchCase="'stupid'"> P -> optimización prematura </pre>
+    <pre *ngSwitchCase="'stupid'"> - Un codigo eficiente, por lo general es ilegible, por lo que optimizarlo sin necesidad solo trae complejidad innecesaria </pre>
+    <pre *ngSwitchCase="'stupid'"> I -> nombres indescriptivos </pre>
+    <pre *ngSwitchCase="'stupid'"> - El ideal de todo codigo es que sea autocomentado, por lo que nombrar mal las cosas hace inalcanzable este ideal </pre>
+    <pre *ngSwitchCase="'stupid'"> D -> duplicación </pre>
+    <pre *ngSwitchCase="'stupid'"> - El codigo duplicado deberia evitarse siempre que se pueda, aplicando DRY & KISS, además de otras practicas </pre>
 
   </div>
 

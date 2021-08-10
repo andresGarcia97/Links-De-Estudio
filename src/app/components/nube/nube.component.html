@@ -17,6 +17,8 @@
       <app-button [tittleButton]="'Estandares RestFull'" (click)="getLinkAndTittleByKey('caracteristicas')"></app-button>
 
       <app-button [tittleButton]="'Nivel de Madurez'" (click)="getLinkAndTittleByKey('madurezDeUnaApi')"></app-button>
+
+      <app-button [tittleButton]="'12 - factores'" (click)="getLinkAndTittleByKey('factores12')"></app-button>
     
     </div>
   
@@ -90,6 +92,37 @@
       <pre *ngSwitchCase="'madurezDeUnaApi'"> - Nivel 1 -> usa varias URIs y un solo metodo http por cada una, esto ayuda a la separación de recursos </pre>
       <pre *ngSwitchCase="'madurezDeUnaApi'"> - Nivel 2 -> ademas de usar varias URIs, tambien se usan más metodos y tipos para cada URI, a su vez este expone más recursos </pre>
       <pre *ngSwitchCase="'madurezDeUnaApi'"> - Nivel 3 -> este hace uso de todo lo anterior además de incluir HATEOAS, esto facilita su navegación al punto de ser más intuitivo </pre>
+
+      <pre *ngSwitchCase="'factores12'">- Codigo base -> todo el codigo debe ser controlado mediante un sistema de versiones, </pre>
+      <pre *ngSwitchCase="'factores12'"> - y este no deber ser compartido entre proyectos, de ser el caso esta seria una libreria en comun </pre>
+      <pre *ngSwitchCase="'factores12'">- Dependencias -> todas las dependencias a usar siempre deben estar declaradas y aisladas del entorno de ejecución </pre>
+      <pre *ngSwitchCase="'factores12'"> - la aplicación no puede depender de que estas esten instaladas en el host, ya el modo de su gestión es de libre albedrio </pre>
+      <pre *ngSwitchCase="'factores12'"></pre>
+      <pre *ngSwitchCase="'factores12'">- Configuraciones -> si existen diferentes despliegues y entornos de ejecución, estos deben tener sus propias configuraciones </pre>
+      <pre *ngSwitchCase="'factores12'"> - esto se puede lograr mediantes variables de entorno y el manejo de distintos archivos de configuración </pre>
+      <pre *ngSwitchCase="'factores12'">- Backing services -> todo sistema que consuma la aplicación (bases de datos, mensajeria, colas, cache, etc.. ), </pre>
+      <pre *ngSwitchCase="'factores12'"> - deberia poder conectarse y cambiarse por medio de simples configuraciones, sin modificar el codigo base </pre>
+      <pre *ngSwitchCase="'factores12'"></pre>
+      <pre *ngSwitchCase="'factores12'">- Separacion de etapas -> cada etapa deberia ser manejada de manera diferente, ya que en esencia lo son </pre>
+      <pre *ngSwitchCase="'factores12'"> - Construccion -> convierte el codigo base en un ejecutable listo para funcionar </pre>
+      <pre *ngSwitchCase="'factores12'"> - Distribución -> se toma la construcción previa y se crea una o n instancias de acuerdo a una configuración </pre>
+      <pre *ngSwitchCase="'factores12'"> - Ejecución    -> es la aplicación ya funcional en el entorno previamente preparado </pre>
+      <pre *ngSwitchCase="'factores12'"></pre>
+      <pre *ngSwitchCase="'factores12'">- Procesos -> para que la aplicación se ejecute de manera adecuada, esta no deberia contemplar guardar estados </pre>
+      <pre *ngSwitchCase="'factores12'"> - esto significa que todos los procesos deben ser individuales e independientes entre si </pre>
+      <pre *ngSwitchCase="'factores12'">- Puertos -> Estas aplicaciones son autocontenidas y se comunican mediante puertos HTTP </pre>
+      <pre *ngSwitchCase="'factores12'"></pre>
+      <pre *ngSwitchCase="'factores12'">- Concurrencia -> toda aplicación deberia ser su propia encargada de autogestionarse su crecimiento, </pre>
+      <pre *ngSwitchCase="'factores12'"> - de acuerdo a la demanda y a la disponibilidad de recursos, ya sean hilos, procesos, uso de memoria, asincronia, etc.. </pre>
+      <pre *ngSwitchCase="'factores12'">- Desechabilidad -> todos los procesos de las aplicaciones deberian ser desechable, y tener un tiempo de arranque minimo, </pre>
+      <pre *ngSwitchCase="'factores12'"> - esto con el proposito de iniciar cuando sean requeridos, realizar su función, y devolver los recursos consumidos al finalizar </pre>
+      <pre *ngSwitchCase="'factores12'"></pre>
+      <pre *ngSwitchCase="'factores12'">- Igualdad de ambientes -> desarrollo y producción deben ser lo más parecidos posibles </pre>
+      <pre *ngSwitchCase="'factores12'"> - tener diferencias entre estos ambientes puede traer errores inesperados, al intercambiar entre tecnologias o herramientas </pre>
+      <pre *ngSwitchCase="'factores12'">- Historiales -> además de ser utiles a la hora de depurar, estos permiten tener mediciones y metricas de la aplicación </pre>
+      <pre *ngSwitchCase="'factores12'"> - se pueden observar en tiempo real, o guardarse en ficheros que seran consultados despues </pre>
+      <pre *ngSwitchCase="'factores12'">- Administración de procesos -> estas tareas deberian tener los mismos comandos y secuencias de realización, </pre>
+      <pre *ngSwitchCase="'factores12'"> - independientemente del ambiente o sus configuraciones</pre>
 
     </div>
   
