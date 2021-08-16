@@ -168,6 +168,8 @@ export class LinkReferencia {
         ['desglosegrasp', 'https://juan-garcia-carmona.blogspot.com/search/label/patr%C3%B3n'],
         ['dao', 'https://www.genbeta.com/desarrollo/patrones-de-diseno-active-record-vs-dao'],
         ['antipatrones', 'https://sg.com.mx/revista/11/anti-patrones-la-mejor-forma-hacer-un-pesimo-sistema-software'],
+        ['dobleDespacho', 'https://blog.nicopaez.com/2016/11/09/una-alternativa-al-double-dispatch/'],
+        ['patronSaga', 'https://unpocodejava.com/2020/01/02/que-es-el-patron-saga/'],
         // personas
         ['personasYprocesos', 'https://www.heflo.com/es/blog/bpm/personas-procesos-tecnologia/'],
         ['gestionDeServicios', 'https://www.ambit-bst.com/blog/itsm.-todo-lo-que-debes-saber-sobre-la-gesti%C3%B3n-de-servicios-it'],
@@ -209,6 +211,7 @@ export class LinkReferencia {
         ['comentarios', 'https://www.scrummanager.net/bok/index.php?title=Deuda_t%C3%A9cnica'],
         ['cuandorefactorizar', 'https://refactoring.guru/es/refactoring/when'],
         ['comorefactorizar', 'https://refactoring.guru/es/refactoring/how-to'],
+        ['tecnicasRefactoring', 'https://refactoring.guru/es/refactoring/techniques'],
         // requisitos
         ['funcionales', 'https://medium.com/@requeridosblog/requerimientos-funcionales-y-no-funcionales-ejemplos-y-tips-aa31cb59b22a'],
         ['NOfuncionales', 'https://medium.com/@requeridosblog/requerimientos-funcionales-y-no-funcionales-ejemplos-y-tips-aa31cb59b22a'],
@@ -442,6 +445,8 @@ export class LinkReferencia {
         ['desglosegrasp', 'Patrones GRASP'],
         ['dao', 'Data Acess Object'],
         ['antipatrones', 'Antipatrones más importantes'],
+        ['dobleDespacho', 'Patron doble despacho'],
+        ['patronSaga', 'Patron Saga'],
         // personas
         ['personasYprocesos', 'Personas-Procesos-Tecnologias'],
         ['gestionDeServicios', 'Gestión de servicios tecnologicos'],
@@ -483,6 +488,7 @@ export class LinkReferencia {
         ['comentarios', 'Comentarios especiales'],
         ['cuandorefactorizar', '¿ Cuando refactorizar ?'],
         ['comorefactorizar', '¿ Como refactorizar ? '],
+        ['tecnicasRefactoring', 'Tecnicas para refactorizar'],
         // requisitos
         ['funcionales', 'Requisitos funcionales'],
         ['NOfuncionales', 'Requisitos No funcionales'],

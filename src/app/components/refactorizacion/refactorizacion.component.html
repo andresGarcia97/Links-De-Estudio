@@ -16,6 +16,8 @@
 
     <app-button [tittleButton]="'¿ Como ?'" (click)="getLinkAndTittleByKey('comorefactorizar')"></app-button>
 
+    <app-button [tittleButton]="'Tecnicas'" (click)="getLinkAndTittleByKey('tecnicasRefactoring')"></app-button>
+
   </div>
 
   <div class="terminal window" ></div>
@@ -65,6 +67,41 @@
     <pre *ngSwitchCase="'comorefactorizar'">- El resultado debe ser mejor que lo anterior, de lo contrario sera tiempo perdido </pre>
     <pre *ngSwitchCase="'comorefactorizar'">- No se deben crear nuevas funciones, eso es estrictamente en tiempo de desarrollo </pre>
     <pre *ngSwitchCase="'comorefactorizar'">- Los tests deben seguir pasando tal y como antes de empezar</pre>
+
+    <pre *ngSwitchCase="'tecnicasRefactoring'">- Composicion de metodos -> Se base en descomponer metodos grandes en, </pre>
+    <pre *ngSwitchCase="'tecnicasRefactoring'"> - metodos más pequeños y manejables evitando metodos innecesariamente largos y complejos </pre>
+    <pre *ngSwitchCase="'tecnicasRefactoring'"> - PROS -> los metodos se hacen más entendibles y se eliminan variables de poca utilidad</pre>
+    <pre *ngSwitchCase="'tecnicasRefactoring'"> - CONTRAS -> la complejidad cognitiva puede ser mayor de la inicial, </pre>
+    <pre *ngSwitchCase="'tecnicasRefactoring'">   además de pequeñas afectaciones al rendimiento </pre>
+    <pre *ngSwitchCase="'tecnicasRefactoring'"></pre>
+    <pre *ngSwitchCase="'tecnicasRefactoring'">- Mover funciones entre clases -> Aunque un sistema se encuentre bien diseñado, </pre>
+    <pre *ngSwitchCase="'tecnicasRefactoring'"> - habra clases con más responsabilidades que otras, </pre>
+    <pre *ngSwitchCase="'tecnicasRefactoring'"> - con la posibilidad de que estas no les correspondan </pre>
+    <pre *ngSwitchCase="'tecnicasRefactoring'"> - PROS -> se hace un mejor reparto de las responsabilidades </pre>
+    <pre *ngSwitchCase="'tecnicasRefactoring'"> - CONTRAS -> si se abusan de estos se pueden convertir en code smells </pre>
+    <pre *ngSwitchCase="'tecnicasRefactoring'"></pre>   
+    <pre *ngSwitchCase="'tecnicasRefactoring'">- Organización de los datos -> Esto ayuda a pensar en clases y funciones, </pre>
+    <pre *ngSwitchCase="'tecnicasRefactoring'">  - en vez de operaciones con datos primitivos </pre>
+    <pre *ngSwitchCase="'tecnicasRefactoring'"> - Mejora la encapsulacion y el manejo de los datos </pre>
+    <pre *ngSwitchCase="'tecnicasRefactoring'"> - PROS -> permite aprovechar mejor los conceptos de POO </pre>
+    <pre *ngSwitchCase="'tecnicasRefactoring'"> - CONTRAS -> la complejidad del codigo puede crecer </pre>
+    <pre *ngSwitchCase="'tecnicasRefactoring'"></pre>
+    <pre *ngSwitchCase="'tecnicasRefactoring'">- Simplificación de condiciones -> las condiciones siempre tienden a crecer, </pre>
+    <pre *ngSwitchCase="'tecnicasRefactoring'">  - por lo que siempre se deben revisar y evitar bolas de nieve </pre>
+    <pre *ngSwitchCase="'tecnicasRefactoring'"> - Se reduce la complejidad cognitiva resultando en un codigo más entendible </pre>
+    <pre *ngSwitchCase="'tecnicasRefactoring'"> - PROS -> se reduce la complejidad y se aumenta la mantenibilidad </pre>
+    <pre *ngSwitchCase="'tecnicasRefactoring'"> - CONTRAS -> en ciertos casos se debe implementar más codigo </pre>
+    <pre *ngSwitchCase="'tecnicasRefactoring'"></pre>
+    <pre *ngSwitchCase="'tecnicasRefactoring'">- Simplificación de metodos -> los metodos deben ser dicientes en cuanto a lo que hacen </pre>
+    <pre *ngSwitchCase="'tecnicasRefactoring'"> - Mejora el manejo de las excepciones, en vez de que se usen como condiciones del flujo </pre>
+    <pre *ngSwitchCase="'tecnicasRefactoring'"> - PROS -> un metodo diciente es más facil de comprender </pre>
+    <pre *ngSwitchCase="'tecnicasRefactoring'"> - CONTRAS -> los metodos se pueden volver más largos o hacer más llamados </pre>
+    <pre *ngSwitchCase="'tecnicasRefactoring'"></pre>
+    <pre *ngSwitchCase="'tecnicasRefactoring'">- Lidiar con la generalización -> Abstraer las generalidades del codigo, </pre>
+    <pre *ngSwitchCase="'tecnicasRefactoring'">  - como creacion de interfaces, cambios de jerarquias, remover o modificar la herencia </pre>
+    <pre *ngSwitchCase="'tecnicasRefactoring'"> - Se mejora la defición de atributos y comportamientos al tratar con la herencia </pre>
+    <pre *ngSwitchCase="'tecnicasRefactoring'"> - PROS -> se mejora el diseño de las clases y se disminuye el acoplamiento </pre>
+    <pre *ngSwitchCase="'tecnicasRefactoring'"> - CONTRAS -> se debe realizar un analisis más profundo del porque y su solución </pre>
 
   </div>
 
