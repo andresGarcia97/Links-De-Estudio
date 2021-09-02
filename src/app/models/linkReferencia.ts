@@ -153,6 +153,7 @@ export class LinkReferencia {
         ['artesanos', 'https://manifesto.softwarecraftsmanship.org/#/es'],
         ['verticalAndHorizontal', 'https://xurxodev.com/vertical-scile/'],
         ['expresionesRegulares', 'https://jarroba.com/busqueda-de-patrones-expresiones-regulares/'],
+        ['turingComplete', 'https://www.eleconomista.es/economia/noticias/8817210/12/17/Ethereum-es-Turing-completo-y-eso-que-es.html'],
         // paradigmas
         ['imperativo', 'https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/paradigmas-de-programacion/'],
         ['funcional', 'https://codigofacilito.com/articulos/programacion-funcional'],
@@ -430,6 +431,7 @@ export class LinkReferencia {
         ['artesanos', 'Artesanos de software'],
         ['verticalAndHorizontal', 'Organización de un proyecto'],
         ['expresionesRegulares', 'Expresiones Regulares'],
+        ['turingComplete', 'Turing Complete'],
         // paradigmas
         ['imperativo', 'Paradigmas Imperativo & Declarativo'],
         ['funcional', 'Paradigma funcional'],

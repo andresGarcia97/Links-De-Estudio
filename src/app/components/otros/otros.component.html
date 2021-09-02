@@ -22,6 +22,8 @@
 
     <app-button [tittleButton]="'Expresiones regulares'" (click)="getLinkAndTittleByKey('expresionesRegulares')"></app-button>
 
+    <app-button [tittleButton]="'Turing Complete'" (click)="getLinkAndTittleByKey('turingComplete')"></app-button>
+
   </div>
 
   <div class="terminal window" ></div>
@@ -118,6 +120,11 @@
     <pre *ngSwitchCase="'expresionesRegulares'">- Estas expresiones en si se escriben igual, y son independientes del lenguaje que se use </pre>
     <pre *ngSwitchCase="'expresionesRegulares'">- Los compiladores de muchos lenguajes se basan en analizadores sintacticos, para analizar el codigo copiado, </pre>
     <pre *ngSwitchCase="'expresionesRegulares'"> - estos a su vez se basan en expresiones regulares para saber si se cumplen con las condiciones del lenguaje </pre>
+
+    <pre *ngSwitchCase="'turingComplete'">- Es un concepto usado para denotar aquellos lenguajes que teniendo recursos infinitos (teoricamente), </pre>
+    <pre *ngSwitchCase="'turingComplete'"> - son capaces de realizar cualquier tipo de calculo, independientemente de los recursos usados </pre>
+    <pre *ngSwitchCase="'turingComplete'">- Tambien son capaces de usar y reutilizar estructuras complejas </pre>
+    <pre *ngSwitchCase="'turingComplete'">- Que un lenguaje o herramienta sea turing complete no garantiza su eficiencia </pre>
 
   </div>
 
