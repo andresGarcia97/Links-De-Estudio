@@ -497,6 +497,7 @@ svg#clouds:hover {
   width: auto;
   display: flex;
   flex-wrap: wrap;
+  height: fit-content;
 }
 
 .flexbox-column {
@@ -613,7 +614,7 @@ svg#clouds:hover {
 
 @media screen and (min-width: 1200px) {
   .card-container .card.card-small.card-no-size {
-    flex: 1 0 30%;
+    flex: 1 0 20%;
   }
 }
 
