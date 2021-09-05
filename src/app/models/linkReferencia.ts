@@ -4,7 +4,7 @@ export class LinkReferencia {
     referencia = '';
     titulo = '';
 
-    protected links: Map<string, string> = new Map([
+    public links: Map<string, string> = new Map([
         // agiles
         ['moscow', 'https://proagilist.es/blog/agilidad-y-gestion-agil/priorizar-requisitos-tecnica-priorizacion-moscow/'],
         ['scoring', 'https://comunidad.iebschool.com/metodologiasparaelcambio/2014/03/23/priorizando-historias-de-usuario/'],

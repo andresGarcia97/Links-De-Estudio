@@ -12,4 +12,13 @@
 
   </div>
 
+  <div class="card-container">
+
+    <a *ngFor="let linkAndFuente of onlyFuentes | filter : search" class="card card-small card-no-size" target="_blank"
+      [href]="linkAndFuente.value">
+      <span>{{linkAndFuente.name}}</span>
+    </a>
+
+  </div>
+
 </div>

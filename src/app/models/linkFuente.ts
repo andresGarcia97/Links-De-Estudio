@@ -47,6 +47,5 @@ export class LinkFuente {
 export class Fuente {
     titulo = '';
     referencia = '';
-    constructor() { }
 }
 
