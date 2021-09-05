@@ -496,6 +496,22 @@ svg#clouds:hover {
 .card.card-small.card-no-size {
   width: auto;
   display: flex;
+  flex-wrap: wrap;
+}
+
+.flexbox-column {
+  display: flex;
+  flex-direction: row;
+}
+
+.flexbox-column > div {
+  width: 50%;
+}
+
+.content .card-container h2 {
+  width: 100%;
+  align-content: center;
+  align-items: center;
 }
 
 @media screen and (min-width: 641px) and (max-width: 920px) {
@@ -582,3 +598,22 @@ svg#clouds:hover {
   }
 
 }
+
+@media screen and (max-width: 900px) {
+
+  .flexbox-column {
+    flex-direction: column;
+  }
+
+  .flexbox-column > div {
+    width: 98%;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+  .card-container .card.card-small.card-no-size {
+    flex: 1 0 30%;
+  }
+}
+

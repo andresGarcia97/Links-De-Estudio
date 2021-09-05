@@ -443,7 +443,7 @@ export class LinkReferencia {
         ['definicionPatrones', '¿ Que son los patrones ? '],
         ['gof', 'Gang of Four (GoF)'],
         ['desglosegof', 'Definciones de cada tipo'],
-        ['grasp', 'Patrones de software de asignación de responsabilidades'],
+        ['grasp', 'Patrones de asignación de responsabilidades'],
         ['desglosegrasp', 'Patrones GRASP'],
         ['dao', 'Data Acess Object'],
         ['antipatrones', 'Antipatrones más importantes'],
