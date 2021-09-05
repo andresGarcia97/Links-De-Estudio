@@ -38,6 +38,7 @@ import { UmlComponent } from './components/uml/uml.component';
 import { VersionamientoComponent } from './components/versionamiento/versionamiento.component';
 import { WebComponent } from './components/web/web.component';
 import { FilterPipe } from './pipes/filter.pipe';
+import { FuenteComponent } from './components/core/fuente/fuente.component';
 
 @NgModule({
   declarations: [
@@ -77,7 +78,8 @@ import { FilterPipe } from './pipes/filter.pipe';
     FilterPipe,
     ButtonComponent,
     PersonasComponent,
-    CalidadComponent
+    CalidadComponent,
+    FuenteComponent
   ],
   imports: [
     BrowserModule,

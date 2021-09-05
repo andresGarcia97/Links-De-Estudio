@@ -4,113 +4,73 @@
 
   <div class="flexbox-column">
 
-      <div class="card-container">
+    <div class="card-container">
 
-        <h2>Front</h2>
-    
-        <a class="card card-small fuente" target="_blank" href="https://recursosrecursosrecursos.netlify.app/">
-          <span>Recursos de CSS</span>
-        </a>
-    
-        <a class="card card-small fuente" target="_blank" href="https://coolors.co/">
-          <span>Colores & paletas</span>
-        </a>
-    
-        <a class="card card-small fuente" target="_blank" href="https://developers.google.com/web/fundamentals/design-and-ux/responsive/patterns?hl=es">
-          <span>Diseño web adaptable</span>
-        </a>
-    
-        <a class="card card-small fuente" target="_blank" href="https://flexboxfroggy.com/#es">
-          <span>Juego de flex-box</span>
-        </a>
-    
-        <a class="card card-small fuente" target="_blank" href="https://www.freeformatter.com/html-entities.html">
-          <span>Html entities</span>
-        </a>
-    
-        <a class="card card-small fuente" target="_blank" href="https://manzdev.github.io/script-type/">
-          <span>Carga de scripts</span>
-        </a>
+      <h2>Front</h2>
 
-        <a class="card card-small fuente" target="_blank" href="https://www.smashingmagazine.com/2021/02/responsive-image-effects-css-gradients-aspect-ratio/">
-          <span>CSS gradients</span>
-        </a>
-    
-      </div>
-          
-      <div class="card-container">
+      <app-fuente [key]="'cssRecursos'"></app-fuente>
 
-        <h2>Back</h2>
-    
-        <a class="card card-small fuente" target="_blank" href="https://www.w3schools.com/sql/default.asp">
-          <span>SQL Tutorial </span>
-        </a>
-    
-        <a class="card card-small fuente" target="_blank" href="https://www.journaldev.com/1827/java-design-patterns-example-tutorial">
-          <span>Patrones de diseño en Java</span>
-        </a>
-    
-        <a class="card card-small fuente" target="_blank" href="https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes-es">
-          <span>Comandos Docker</span>
-        </a>
-    
-        <a class="card card-small fuente" target="_blank" href="https://www.adictosaltrabajo.com/2016/06/23/uso-basico-de-java-8-stream-y-lambdas/">
-          <span>Paradigma funcional Java</span>
-        </a>
-    
-      </div>
+      <app-fuente [key]="'coloresAndPaletas'"></app-fuente>
+
+      <app-fuente [key]="'disenoWebAdaptable'"></app-fuente>
+
+      <app-fuente [key]="'juegoFlexBox'"></app-fuente>
+
+      <app-fuente [key]="'htmlEntities'"></app-fuente>
+
+      <app-fuente [key]="'cargasDeScripts'"></app-fuente>
+
+      <app-fuente [key]="'cssGradients'"></app-fuente>
+
+    </div>
+
+    <div class="card-container">
+
+      <h2>Back</h2>
+
+      <app-fuente [key]="'sqlTutorial'"></app-fuente>
+
+      <app-fuente [key]="'patronesDisenoJava'"></app-fuente>
+
+      <app-fuente [key]="'comandosDocker'"></app-fuente>
+
+      <app-fuente [key]="'paradigmaFuncionaljava'"></app-fuente>
+
+    </div>
 
   </div>
 
   <div class="flexbox-column">
-    
-      <div class="card-container">
-    
-        <h2>Utilitarios </h2>
-    
-        <a class="card card-small fuente" target="_blank" href="https://www.hostinger.co/tutoriales/comandos-de-git">
-          <span>comandos git</span>
-        </a>
-    
-        <a class="card card-small fuente" target="_blank" href="http://danielkummer.github.io/git-flow-cheatsheet/index.es_ES.html">
-          <span>comandos git flow</span>
-        </a>
-    
-        <a class="card card-small fuente" target="_blank" href="https://amap.cantabria.es/amap/bin/view/AMAP/CodificacionJava">
-          <span>Codificación en Java</span>
-        </a>
-    
-        <a class="card card-small fuente" target="_blank" href="https://platzi.com/tutoriales/1248-pro-arquitectura/2545-resumen-grafico-de-los-atributos-de-calidad/">
-          <span>Atributos de calidad </span>
-        </a>
-    
-        <a class="card card-small fuente" target="_blank" href="https://regexr.com/">
-          <span>Expresiones regulares </span>
-        </a>
-    
-      </div>
 
-      <div class="card-container">
-    
-        <h2>Testing</h2>
-    
-        <a class="card card-small fuente" target="_blank" href="https://www.adictosaltrabajo.com/2016/11/24/primeros-pasos-con-junit-5/">
-          <span>Junit</span>
-        </a>
-    
-        <a class="card card-small fuente" target="_blank" href="https://www.baeldung.com/mockito-series">
-          <span>Mockito</span>
-        </a>
-    
-        <a class="card card-small fuente" target="_blank" href="https://www.guru99.com/jmeter-tutorials.html">
-          <span>Jmeter </span>
-        </a>
-    
-        <a class="card card-small fuente" target="_blank" href="https://www.digital55.com/desarrollo-tecnologia/herramientas-testing-introduccion-selenium/">
-          <span>Introducción a selenium</span>
-        </a>
-    
-      </div>
+    <div class="card-container">
+
+      <h2>Utiles</h2>
+
+      <app-fuente [key]="'comandosGit'"></app-fuente>
+
+      <app-fuente [key]="'comandosGitFlow'"></app-fuente>
+
+      <app-fuente [key]="'codificacionJava'"></app-fuente>
+
+      <app-fuente [key]="'atributosCalidad'"></app-fuente>
+
+      <app-fuente [key]="'expresionesRegulares'"></app-fuente>
+
+    </div>
+
+    <div class="card-container">
+
+      <h2>Testing</h2>
+
+      <app-fuente [key]="'junit'"></app-fuente>
+
+      <app-fuente [key]="'mockito'"></app-fuente>
+
+      <app-fuente [key]="'jmeter'"></app-fuente>
+
+      <app-fuente [key]="'selenium'"></app-fuente>
+
+    </div>
 
   </div>
 
@@ -118,14 +78,9 @@
 
     <h2>Curiosidades</h2>
 
-    <a class="card card-small fuente" target="_blank" 
-    href="https://api-first-world.com/?utm_source=&utm_campaign=&utm_con=&utm_medium=email&dcid=&mkt_tok=MDY3LVVNRC05OTEAAAF--bLIdG_tuBxUOm0ANexNXnkDOGfFcrIPlKgw4SMiaw2C6ZeMnB26wqsVjRU6EGY9ISqEiqBIzonrSIVnXckxUiE0UOwMsZ5fh8kKkl9k6cM">
-      <span>la Primera API</span>
-    </a>
+    <app-fuente [key]="'primeraApi'"></app-fuente>
 
-    <a class="card card-small fuente" target="_blank" href="https://svgporn.com/">
-      <span>SVG Porn</span>
-    </a>
+    <app-fuente [key]="'comandosDocker'"></app-fuente>
 
   </div>
 
