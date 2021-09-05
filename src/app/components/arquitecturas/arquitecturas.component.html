@@ -18,6 +18,8 @@
 
     <app-button [tittleButton]="'otras'" (click)="getLinkAndTittleByKey('otrasArquitecturas')"></app-button>
 
+    <app-button [tittleButton]="'Monolitos'" (click)="getLinkAndTittleByKey('monolitos')"></app-button>
+
   </div>
   
   <div class="terminal window" ></div>
@@ -57,6 +59,29 @@
     <pre *ngSwitchCase="'otrasArquitecturas'">- MVC -> Consta de 3 capas bien definidas, modelo, vista y controlador, cada una con una función especifica </pre>
     <pre *ngSwitchCase="'otrasArquitecturas'">- Tuberia -> Es un flujo donde los datos son transformados a medida que van desde su origen hasta su destino </pre>
 
+    <pre *ngSwitchCase="'monolitos'">                                  MONOLITO                        MICROSERVICIOS                         MICROLITOS         </pre>
+    <pre *ngSwitchCase="'monolitos'"></pre>
+    <pre *ngSwitchCase="'monolitos'"> Separación de            Acoplamiento alto y mayor        Entregadas por la plataforma          Acoplamiento alto y mayor  </pre>
+    <pre *ngSwitchCase="'monolitos'"> funciones tecnica        dependencia del framework        usada, reduce el acoplamiento         dependencia del framework  </pre>
+    <pre *ngSwitchCase="'monolitos'"></pre>
+    <pre *ngSwitchCase="'monolitos'"> Latencia                 Casi nula                        Puede ser alta                        casi nula                  </pre>
+    <pre *ngSwitchCase="'monolitos'"></pre>
+    <pre *ngSwitchCase="'monolitos'"> Consistencia             Transaccional                    Eventual, requiere más atención       Eventual                   </pre>
+    <pre *ngSwitchCase="'monolitos'"></pre>
+    <pre *ngSwitchCase="'monolitos'"> Evolución                Complicada por proceso           Sencilla por proceso                  Sencilla                   </pre>
+    <pre *ngSwitchCase="'monolitos'"></pre>
+    <pre *ngSwitchCase="'monolitos'"> Especialización          Alta variedad de                 Alta especialización,                 Alta especialización,      </pre>
+    <pre *ngSwitchCase="'monolitos'"> de los equipos           conocimientos                    conocimiento del negocio              conocimiento del negocio   </pre>
+    <pre *ngSwitchCase="'monolitos'"></pre>
+    <pre *ngSwitchCase="'monolitos'"> Automatización           Pocos despliegues                Muchos despliegues                    pocos despliegues          </pre>
+    <pre *ngSwitchCase="'monolitos'"></pre>
+    <pre *ngSwitchCase="'monolitos'"> Tamaño                   Grande                           Pequeño                               Pequeño                    </pre>
+    <pre *ngSwitchCase="'monolitos'"></pre>
+    <pre *ngSwitchCase="'monolitos'"> Observalidad             Relativamente facil              Más complicada                        Punto intermedio           </pre>
+    <pre *ngSwitchCase="'monolitos'"></pre>
+    <pre *ngSwitchCase="'monolitos'"> Monitarización           Complicado separar               Sencillez para identificar            Sencillez para identificar </pre>
+    <pre *ngSwitchCase="'monolitos'"> tecnica                  los problemas                    problemas de rendimiento              problemas de rendimiento   </pre>
+    
   </div>
 
   <app-referencia [referencia]="referencia"></app-referencia>

@@ -28,6 +28,7 @@ export class LinkReferencia {
         ['servicios', 'https://aws.amazon.com/es/microservices/'],
         ['hexagonal', 'https://medium.com/@edusalguero/arquitectura-hexagonal-59834bb44b7f'],
         ['otrasArquitecturas', 'https://medium.com/@maniakhitoccori/los-10-patrones-comunes-de-arquitectura-de-software-d8b9047edf0b'],
+        ['monolitos', 'https://www.paradigmadigital.com/techbiz/microservicios-vs-microlitos-vs-monolitos-ventajas-desventajas/'],
         // buenas practicas
         ['practicas1', 'https://www.tithink.com/es/2018/06/13/12-buenas-practicas-para-el-desarrollo-software/'],
         ['practicas2', 'https://sg.com.mx/revista/mejores-pr%C3%A1cticas-para-el-desarrollo-software'],
@@ -182,6 +183,7 @@ export class LinkReferencia {
         ['composicion', 'https://www.seas.es/blog/informatica/agregacion-vs-composicion-en-diagramas-de-clases-uml/'],
         ['pooStatic', 'https://desarrolloweb.com/articulos/metodos-atributos-static-poo.html'],
         ['sobrecarga', 'https://www.netmentor.es/Entrada/sobrecarga-metodos'],
+        // tslint:disable-next-line: max-line-length
         ['acoplamiento', 'https://jummp.wordpress.com/2010/06/26/acoplamiento-aferente-acoplamiento-eferente-inestabilidad-y-abstraccion-i/'],
         ['contratos', 'https://dosideas.com/wiki/Dise%C3%B1o_Por_Contrato'],
         ['descomposicion', 'http://miguedt.blogspot.com/2013/01/descomposicion-funcional.html#:~:text=La%20descomposici%C3%B3n%20funcional%20se%20refiere,en%20funci%C3%B3n%20de%20la%20composici%C3%B3n'],
@@ -306,6 +308,7 @@ export class LinkReferencia {
         ['servicios', 'MicroServicios'],
         ['hexagonal', 'Hexagonal'],
         ['otrasArquitecturas', 'Otras Arquitecturas'],
+        ['monolitos', 'Monolitos VS Microservicios'],
         // buenas practicas
         ['practicas1', 'Buenas practicas parte #1'],
         ['practicas2', 'Buenas practicas parte #2'],

@@ -498,6 +498,7 @@ svg#clouds:hover {
   display: flex;
   flex-wrap: wrap;
   height: fit-content;
+  padding: 10px;
 }
 
 .flexbox-column {
@@ -617,4 +618,3 @@ svg#clouds:hover {
     flex: 1 0 20%;
   }
 }
-
