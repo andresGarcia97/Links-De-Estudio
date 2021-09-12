@@ -32,11 +32,10 @@
 
   </div>
 
-  <div class="terminal window" ></div>
-  <div class="terminal" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
+  <div class="terminal window" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
   <div class="terminal" [ngSwitch]="selection" #terminal>
 
-    <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
+    <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
 
     <pre *ngSwitchCase="'agiles'">- Las metodologias agiles buscan hacer que cualquier desarrollo sea de alta calidad, con tiempos y costos reducidos </pre>
     <pre *ngSwitchCase="'agiles'">- Estas permiten la rapida adaptación a cualquier caracteristica del proyecto</pre>

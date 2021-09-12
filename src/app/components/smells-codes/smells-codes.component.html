@@ -16,11 +16,10 @@
   
     </div>
   
-    <div class="terminal window" ></div>
-    <div class="terminal" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
+    <div class="terminal window" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
     <div class="terminal" [ngSwitch]="selection" #terminal>
       
-      <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
+      <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
     
       <pre *ngSwitchCase="'codesmells'">- Son cosas en el codigo que se pueden hacer de una mejor manera, o que a la larga se convertiran en malas practicas </pre>
       <pre *ngSwitchCase="'codesmells'">- Aunque no son un problema prioritario, estos haran crecer la deuda tecnica e inclusive podran crear fallos en el futuro </pre>

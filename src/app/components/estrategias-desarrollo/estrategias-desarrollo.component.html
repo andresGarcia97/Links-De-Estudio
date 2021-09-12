@@ -18,11 +18,10 @@
     
   </div>
 
-  <div class="terminal window" ></div>
-  <div class="terminal" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
+  <div class="terminal window" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
   <div class="terminal" [ngSwitch]="selection" #terminal>
 
-    <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
+    <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
 
     <pre *ngSwitchCase="'ddd'"> -El lenguaje debe ser obicuo (entedible por cualquiera)</pre>
     <pre *ngSwitchCase="'ddd'"> -El desarrollo debe ser lo más abstracto posible para ser independiente de las implementaciones </pre>

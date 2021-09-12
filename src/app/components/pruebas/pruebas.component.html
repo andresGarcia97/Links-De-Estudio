@@ -36,11 +36,10 @@
   
     </div>
   
-    <div class="terminal window" ></div>
-    <div class="terminal" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
+    <div class="terminal window" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
     <div class="terminal" [ngSwitch]="selection" #terminal>
   
-      <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
+      <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
     
       <pre *ngSwitchCase="'principios'">- Las pruebas demuestran la presencia de defectos, por ende entre más pruebas halla mejor </pre>
       <pre *ngSwitchCase="'principios'">- Es improductivo hacer pruebas exhaustivas, ademas de que es casi imposible de hacer </pre>

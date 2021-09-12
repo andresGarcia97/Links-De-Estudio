@@ -24,11 +24,10 @@
 
   </div>
 
-  <div class="terminal window"></div>
-  <div class="terminal" *ngIf="titulo !== '' "><h2>{{titulo}}</h2> </div>
+  <div class="terminal window" *ngIf="titulo !== '' "><h2>{{titulo}}</h2> </div>
   <div class="terminal" [ngSwitch]="selection" #terminal>
 
-    <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
+    <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
 
     <pre *ngSwitchCase="'firewall'">- Tiene la función de denegar ó permitir el acceso a nuestra red privada</pre>
     <pre *ngSwitchCase="'firewall'">- El trafico debe cumplir con una serie de reglas previamente definidas para su libre circulación </pre>

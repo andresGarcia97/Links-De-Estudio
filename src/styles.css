@@ -376,20 +376,17 @@ input:focus{
 .window::before {
   content: "\2022 \2022 \2022";
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 20px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  top: -5%;
+  height: max-content;
   background: var(--color-jet);
   color: var(--color-selective-yellow);
-  width: 100%;
+  width: 10%;
   font-size: 3rem;
-  line-height: 4px;
-  text-indent: 4px;
+  text-indent: 8%;
   align-items: center;
+  display: flex;
   align-content: center;
+  justify-content: flex-start;
 }
 
 .terminal pre {
@@ -555,6 +552,10 @@ svg#clouds:hover {
     top: -31px;
   }
 
+  .window::before {
+    content:"";
+  }
+
 }
 
 @media screen and (max-width: 580px) {
@@ -592,11 +593,6 @@ svg#clouds:hover {
     position: absolute;
     right: -7px;
     top: -31px;
-  }
-
-  .window::before {
-    height: 12px;
-    font-size: 2.8rem;
   }
 
 }

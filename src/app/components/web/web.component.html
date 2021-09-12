@@ -16,11 +16,10 @@
 
     </div>
     
-    <div class="terminal window"></div>
-    <div class="terminal" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
+    <div class="terminal window" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
     <div class="terminal" [ngSwitch]="selection" #terminal>
 
-      <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
+      <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
   
       <pre *ngSwitchCase="'spa'">- Es una aplicación web donde todo el contenido se muestra en una sola sin regargar el navegador </pre>
       <pre *ngSwitchCase="'spa'">- Los componentes son segmentos individuales de HTML que juntos dan la impresión de unidad </pre>

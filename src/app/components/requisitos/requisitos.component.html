@@ -18,10 +18,10 @@
     
     </div>
   
-    <div class="terminal window" ></div>
-    <div class="terminal" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
+    <div class="terminal window" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
     <div class="terminal" [ngSwitch]="selection" #terminal>
-      <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
+
+      <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
   
       <pre *ngSwitchCase="'funcionales'">- Son la declaración de los servicios y funciones que tendra la aplicación </pre>
       <pre *ngSwitchCase="'funcionales'">- Estos se basan en una serie de requerimientos del software previamente realizada </pre>

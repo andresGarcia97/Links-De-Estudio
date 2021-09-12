@@ -14,10 +14,10 @@
 
   </div>
 
-  <div class="terminal window" ></div>
-  <div class="terminal" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
+  <div class="terminal window" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
   <div class="terminal" [ngSwitch]="selection" #terminal>
-    <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
+
+    <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
 
     <pre *ngSwitchCase="'compilacion'">- Es el proceso de pasar un lenguaje de programación a otro formato de manera equivalente </pre>
     <pre *ngSwitchCase="'compilacion'">- Generalmente es un proceso de lenguajes de alto nivel a bajo nivel </pre>

@@ -20,10 +20,10 @@
     
     </div>
   
-    <div class="terminal window" ></div>
-    <div class="terminal" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
+    <div class="terminal window" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
     <div class="terminal" [ngSwitch]="selection" #terminal>
-      <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
+
+      <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
 
       <pre *ngSwitchCase="'docker'">- Esta basado en el Kernel de Linux y su proposito es segregar los procesos de manera que sean independientes </pre>
       <pre *ngSwitchCase="'docker'">- Reduce el consumo de recursos al solo tener lo necesario para ejecutar los procesos </pre>

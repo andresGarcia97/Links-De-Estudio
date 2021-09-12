@@ -30,11 +30,10 @@
 
     </div>
     
-    <div class="terminal window" ></div>
-    <div class="terminal" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
+    <div class="terminal window" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
     <div class="terminal" [ngSwitch]="selection" #terminal>
 
-      <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
+      <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
   
       <pre *ngSwitchCase="'balas'">- El software puede tener dificultades inherentes al software y accidentales </pre>
       <pre *ngSwitchCase="'balas'">- Los errores son gajes del oficio, pero tienen diferentes grados de repercusión en el software </pre>

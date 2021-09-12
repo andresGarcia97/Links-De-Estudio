@@ -14,11 +14,10 @@
 
     </div>
   
-    <div class="terminal window" ></div>
-    <div class="terminal" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
+    <div class="terminal window" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
     <div class="terminal" [ngSwitch]="selection" #terminal>
         
-      <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
+      <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
 
       <pre *ngSwitchCase="'artesanos'">- Se puede considerar el siguiente nivel del desarrollo profesional, no solo mejorando nosotros mismo, sino a los demás </pre>
       <pre *ngSwitchCase="'artesanos'">- Los 4 principios que este expone son: </pre>

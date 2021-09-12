@@ -18,11 +18,10 @@
 
   </div>
 
-  <div class="terminal window" ></div>
-  <div class="terminal" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
+  <div class="terminal window" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
   <div class="terminal" [ngSwitch]="selection" #terminal>
 
-    <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
+    <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
 
     <pre *ngSwitchCase="'imperativo'">- Imperativo -> secuencia ordenada de acciones a ejecutar, más cercano a lenguaje maquina </pre>
     <pre *ngSwitchCase="'imperativo'">  - Estructurado -> donde se incluyen sentencias de control y se contemplan las interrupciones</pre>

@@ -16,11 +16,10 @@
 
   </div>
 
-  <div class="terminal window" ></div>
-  <div class="terminal" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
+  <div class="terminal window" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
   <div class="terminal" [ngSwitch]="selection" #terminal>
 
-    <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
+    <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
 
     <pre *ngSwitchCase="'frameworks'">- Son marcos de trabajo con la finalidad de acelerar y aumentar la calidad del codigo desarrollado </pre>
     <pre *ngSwitchCase="'frameworks'">- Evitan perder tiempo desarrollando funciones que el propio entorno ya tiene</pre>

@@ -20,11 +20,10 @@
 
   </div>
 
-  <div class="terminal window" ></div>
-  <div class="terminal" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
+  <div class="terminal window" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
   <div class="terminal" [ngSwitch]="selection" #terminal>
 
-    <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
+    <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
 
     <pre *ngSwitchCase="'codigolimpio'">- Menos es Más, el poder de la simplicidad hecho codigo</pre>
     <pre *ngSwitchCase="'codigolimpio'">- Es más facil de entender para otros, y a traves del tiempo </pre>

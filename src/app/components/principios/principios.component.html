@@ -22,11 +22,10 @@
 
   </div>
 
-  <div class="terminal window" ></div>
-  <div class="terminal" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
+  <div class="terminal window" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
   <div class="terminal" [ngSwitch]="selection" #terminal>
 
-    <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
+    <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
 
     <pre *ngSwitchCase="'solid'"> S -> Responsabilidad única</pre>
     <pre *ngSwitchCase="'solid'"> - Una cosa x solo deberia hacer y conocer cosas de su competencia, de resto se tendria un acoplamiento indeseado </pre>

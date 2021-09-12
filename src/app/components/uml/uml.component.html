@@ -26,11 +26,10 @@
 
   </div>
 
-  <div class="terminal window" ></div>
-  <div class="terminal" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
+  <div class="terminal window" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
   <div class="terminal" [ngSwitch]="selection" #terminal>
 
-    <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
+    <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
   
     <pre *ngSwitchCase="'uml'">- Desarrollado para ayudar a todos los involucrados en el desarrollo y modelado de un sistema </pre>
     <pre *ngSwitchCase="'uml'">- Pueden servir como planos para la codificación ó como documentación despues de la etapa de desarrollo </pre>

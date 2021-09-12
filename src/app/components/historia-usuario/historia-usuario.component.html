@@ -24,11 +24,10 @@
 
     </div>
   
-    <div class="terminal window" ></div>
-    <div class="terminal" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
+    <div class="terminal window" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
     <div class="terminal" [ngSwitch]="selection" #terminal>
 
-      <pre *ngSwitchDefault>Selecciona una opcion para ver más </pre>
+      <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
   
       <pre *ngSwitchCase="'historias'">- Es uno de los elementos usados en las metodolgias agiles </pre>
       <pre *ngSwitchCase="'historias'">- Su nivel de exhaustividad es menor a cambio de proporcionar más valor al negocio </pre>
