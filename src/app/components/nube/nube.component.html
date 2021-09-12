@@ -19,6 +19,8 @@
       <app-button [tittleButton]="'Nivel de Madurez'" (click)="getLinkAndTittleByKey('madurezDeUnaApi')"></app-button>
 
       <app-button [tittleButton]="'12 - factores'" (click)="getLinkAndTittleByKey('factores12')"></app-button>
+
+      <app-button [tittleButton]="'Migraciones'" (click)="getLinkAndTittleByKey('migracionesNube')"></app-button>
     
     </div>
   
@@ -128,6 +130,14 @@
       <pre *ngSwitchCase="'factores12'"></pre>
       <pre *ngSwitchCase="'factores12'">- Administración de procesos -> estas tareas deberian tener los mismos comandos y secuencias de realización, </pre>
       <pre *ngSwitchCase="'factores12'"> - independientemente del ambiente o sus configuraciones</pre>
+
+      <pre *ngSwitchCase="'migracionesNube'">- Toda migración hacia la nube, generalmente recoge 6 alternativas </pre>
+      <pre *ngSwitchCase="'migracionesNube'"> - Realojar -> consiste en mover la aplicacion tal y como existia originalmente, una medida apresurada que no siempre funciona </pre>
+      <pre *ngSwitchCase="'migracionesNube'"> - Replataformar -> consiste en modificar la estructura subyacente, sin modificar la arquitectura central de aplicación </pre>
+      <pre *ngSwitchCase="'migracionesNube'"> - Readquirir -> consta de una migración de una nube o servicio a otro, de acuerdo a las necesidades del negocio </pre>
+      <pre *ngSwitchCase="'migracionesNube'"> - Refactorizar/Rediseñar -> no solo es un movimiento de ambiente, tambien son mejoras de escalabilidad ó rendimiento </pre>
+      <pre *ngSwitchCase="'migracionesNube'"> - Retirar -> a veces hay recursos que estan obsoletos o ya no se necesitan, por lo que se eliminan ó se desactivan </pre>
+      <pre *ngSwitchCase="'migracionesNube'"> - Retener -> son ocasiones donde es necesario soportar tecnologias legacy que no son compatibles con la nube</pre>
 
     </div>
   

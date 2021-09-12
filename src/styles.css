@@ -376,7 +376,7 @@ input:focus{
 .window::before {
   content: "\2022 \2022 \2022";
   position: absolute;
-  top: -5%;
+  top: -4%;
   height: max-content;
   background: var(--color-jet);
   color: var(--color-selective-yellow);
@@ -386,7 +386,7 @@ input:focus{
   align-items: center;
   display: flex;
   align-content: center;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
 .terminal pre {
@@ -467,7 +467,7 @@ pre::selection {
 svg#clouds {
   position: fixed;
   bottom: -160px;
-  left: -230px;
+  left: -100px;
   z-index: -10;
   width: 1920px;
   fill: var(--color-cultured);

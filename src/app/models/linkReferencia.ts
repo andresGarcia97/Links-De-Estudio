@@ -143,6 +143,7 @@ export class LinkReferencia {
         ['caracteristicas', 'https://adwe.es/codigo/apis-codigo/servicios-web-restful-con-http-parte-ii-ejemplos/'],
         ['madurezDeUnaApi', 'https://restfulapi.net/richardson-maturity-model/'],
         ['factores12', 'https://12factor.net/es/'],
+        ['migracionesNube', 'https://www.paradigmadigital.com/techbiz/mitos-lift-shift-mentiras-migraciones-cloud/'],
         // otros
         ['escalamiento', 'https://www.oscarblancarteblog.com/2017/03/07/escalabilidad-horizontal-y-vertical/'],
         ['scraping', 'https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/que-es-el-web-scraping/'],
@@ -155,6 +156,7 @@ export class LinkReferencia {
         ['verticalAndHorizontal', 'https://xurxodev.com/vertical-scile/'],
         ['expresionesRegulares', 'https://jarroba.com/busqueda-de-patrones-expresiones-regulares/'],
         ['turingComplete', 'https://www.eleconomista.es/economia/noticias/8817210/12/17/Ethereum-es-Turing-completo-y-eso-que-es.html'],
+        ['cli', 'https://searchdatacenter.techtarget.com/es/definicion/Interfaz-de-linea-de-comandos-o-CLI'],
         // paradigmas
         ['imperativo', 'https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/paradigmas-de-programacion/'],
         ['funcional', 'https://codigofacilito.com/articulos/programacion-funcional'],
@@ -172,6 +174,7 @@ export class LinkReferencia {
         ['antipatrones', 'https://sg.com.mx/revista/11/anti-patrones-la-mejor-forma-hacer-un-pesimo-sistema-software'],
         ['dobleDespacho', 'https://blog.nicopaez.com/2016/11/09/una-alternativa-al-double-dispatch/'],
         ['patronSaga', 'https://unpocodejava.com/2020/01/02/que-es-el-patron-saga/'],
+        ['patroncqrs', 'https://www.escuelajavascript.com/explicando-todo-acerca-de-cqrs/'],
         // personas
         ['personasYprocesos', 'https://www.heflo.com/es/blog/bpm/personas-procesos-tecnologia/'],
         ['gestionDeServicios', 'https://www.ambit-bst.com/blog/itsm.-todo-lo-que-debes-saber-sobre-la-gesti%C3%B3n-de-servicios-it'],
@@ -423,6 +426,7 @@ export class LinkReferencia {
         ['caracteristicas', 'Caracteristicas de una api restfull'],
         ['madurezDeUnaApi', 'Nivel de madurez de una API'],
         ['factores12', '12 factores para una aplicación SaaS'],
+        ['migracionesNube', 'Migraciones hacia la nube y las 6R'],
         // otros
         ['escalamiento', 'Escalamiento de un sistema'],
         ['scraping', 'Web Scrapping'],
@@ -435,6 +439,7 @@ export class LinkReferencia {
         ['verticalAndHorizontal', 'Organización de un proyecto'],
         ['expresionesRegulares', 'Expresiones Regulares'],
         ['turingComplete', 'Turing Complete'],
+        ['cli', 'Interfaz de Linea de Comandos'],
         // paradigmas
         ['imperativo', 'Paradigmas Imperativo & Declarativo'],
         ['funcional', 'Paradigma funcional'],
@@ -452,6 +457,7 @@ export class LinkReferencia {
         ['antipatrones', 'Antipatrones más importantes'],
         ['dobleDespacho', 'Patron doble despacho'],
         ['patronSaga', 'Patron Saga'],
+        ['patroncqrs', 'Patron CQRS'],
         // personas
         ['personasYprocesos', 'Personas-Procesos-Tecnologias'],
         ['gestionDeServicios', 'Gestión de servicios tecnologicos'],
