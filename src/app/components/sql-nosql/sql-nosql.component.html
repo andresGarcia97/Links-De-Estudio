@@ -28,6 +28,8 @@
 
     <app-button [tittleButton]="'Consistencia'" (click)="getLinkAndTittleByKey('consistenciaEventual')"></app-button>
 
+    <app-button [tittleButton]="'Algebra Relacional'" (click)="getLinkAndTittleByKey('algebraRelacional')"></app-button>
+
   </div>
 
   <div class="terminal window" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
@@ -147,6 +149,30 @@
     <pre *ngSwitchCase="'consistenciaEventual'">  - si esto no se maneja de manera correcta, puede resultar en bloqueos fatales para la aplicación </pre>
     <pre *ngSwitchCase="'consistenciaEventual'">- La consistencia eventual permite garantizar la disponibilidad y escalabilidad de las aplicaciones, </pre>
     <pre *ngSwitchCase="'consistenciaEventual'">  - mediante cientos de nodos distribuidos y la promesa de retorno de toda operación </pre>
+
+    <pre *ngSwitchCase="'algebraRelacional'">- Este tipo de algebra toma un conjunto de datos y realiza operaciones sobre estos, para generar un nuevo conjunto </pre>
+    <pre *ngSwitchCase="'algebraRelacional'">- Tambien soporta el concepto de anidación al usar un resultado para una operación y generar otro resultado </pre>
+    <pre *ngSwitchCase="'algebraRelacional'"></pre>
+    <pre *ngSwitchCase="'algebraRelacional'">- UNION -> une 2 tablas iguales, sin registros repetidos </pre>
+    <pre *ngSwitchCase="'algebraRelacional'">- INTERSECCIÓN -> une 2 tablas iguales donde los registros sean iguales, evitando la repetición </pre>
+    <pre *ngSwitchCase="'algebraRelacional'">- DIFERENCIA -> opera en tablas y devuelve el contenido que se encuentre en la primera tabla pero no en la segunda </pre>
+    <pre *ngSwitchCase="'algebraRelacional'">- PRODUCTO -> toma 2 tablas y devuelve una tercera con el contenido de acuerdo a las posibles combinaciones, ya sean iguales o diferentes </pre>
+    <pre *ngSwitchCase="'algebraRelacional'">- SELECCION -> toma 2 ó más tablas, iguales o diferentes, y devuelve los campos donde se cumplan las condiciones dadas </pre>
+    <pre *ngSwitchCase="'algebraRelacional'">- PROYECCIÓN -> opera igual que la selección, pero aca se pueden especificar que columnas se quieren tener </pre>
+    <pre *ngSwitchCase="'algebraRelacional'">- REUNIÓN -> opera sobre 2 ó más tablas y devuelve todos los campos deseados, que esten relacionados mediante alguna condición </pre>
+    <pre *ngSwitchCase="'algebraRelacional'">- DIVISIÓN -> opera sobre 2 tablas donde el resultado no existe en la primera tabla, y todas las filas tengan esta relación </pre>
+    <pre *ngSwitchCase="'algebraRelacional'">- ASIGNACIÓN -> cambia los valores de las columnas donde se cumplan las condicones dadas </pre>
+    <pre *ngSwitchCase="'algebraRelacional'"></pre>
+    <pre *ngSwitchCase="'algebraRelacional'">- equivalencias en SQL (respectivamente)                           </pre>
+    <pre *ngSwitchCase="'algebraRelacional'">- SELECT * FROM A     UNION     SELECT * FROM B                     </pre>
+    <pre *ngSwitchCase="'algebraRelacional'">- SELECT * FROM A   INTERSECT   SELECT * FROM B                      </pre>
+    <pre *ngSwitchCase="'algebraRelacional'">- SELECT * FROM A    EXCEPT     SELECT * FROM B                       </pre>
+    <pre *ngSwitchCase="'algebraRelacional'">- SELECT * FROM A, B                                                   </pre>
+    <pre *ngSwitchCase="'algebraRelacional'">- SELECT * FROM A WHERE X&lt;50                                         </pre>
+    <pre *ngSwitchCase="'algebraRelacional'">- SELECT X, Z FROM A WHERE X&lt;50                                       </pre>
+    <pre *ngSwitchCase="'algebraRelacional'">- SELECT A.W, B.Y FROM A JOIN B ON (A.V=B.X AND Z>10)                     </pre>
+    <pre *ngSwitchCase="'algebraRelacional'">- no hay equivalencia directa, pero se puede lograr combinando operaciones </pre>
+    <pre *ngSwitchCase="'algebraRelacional'">- UPDATE A SET indice="100%" WHERE codigo>2000                            </pre>
 
   </div>
 

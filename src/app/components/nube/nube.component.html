@@ -21,6 +21,8 @@
       <app-button [tittleButton]="'12 - factores'" (click)="getLinkAndTittleByKey('factores12')"></app-button>
 
       <app-button [tittleButton]="'Migraciones'" (click)="getLinkAndTittleByKey('migracionesNube')"></app-button>
+
+      <app-button [tittleButton]="'Teorema CAP'" (click)="getLinkAndTittleByKey('capTeorema')"></app-button>
     
     </div>
   
@@ -138,6 +140,16 @@
       <pre *ngSwitchCase="'migracionesNube'"> - Refactorizar/Rediseñar -> no solo es un movimiento de ambiente, tambien son mejoras de escalabilidad ó rendimiento </pre>
       <pre *ngSwitchCase="'migracionesNube'"> - Retirar -> a veces hay recursos que estan obsoletos o ya no se necesitan, por lo que se eliminan ó se desactivan </pre>
       <pre *ngSwitchCase="'migracionesNube'"> - Retener -> son ocasiones donde es necesario soportar tecnologias legacy que no son compatibles con la nube</pre>
+
+      <pre *ngSwitchCase="'capTeorema'">- Este teorema sostiene que no es posible que un sistema distribuido cumpla o garantice más de 2/3 de las siguientes propiedades </pre>
+      <pre *ngSwitchCase="'capTeorema'"></pre>
+      <pre *ngSwitchCase="'capTeorema'">- Consistency  (Coherencia) -> todos los clientes ven los mismos datos de manera simultanea </pre>
+      <pre *ngSwitchCase="'capTeorema'">- Availability (disponibilidad) -> todos los clientes disponen de acceso de lectura y escritura en cualquier momento </pre>
+      <pre *ngSwitchCase="'capTeorema'">- Partitions (tolerancia a la particion) -> el sistema sigue funcionando como un todo, despues de que las partes fallan o dejan de comunicarse </pre>
+      <pre *ngSwitchCase="'capTeorema'"></pre>
+      <pre *ngSwitchCase="'capTeorema'">- Sistema CP -> coherencia y tolerancia a la particion (sistemas de DNS)</pre>
+      <pre *ngSwitchCase="'capTeorema'">- Sistena AP -> disponibilidad y tolerancia a la partición (BD relacionales) </pre>
+      <pre *ngSwitchCase="'capTeorema'">- Sistema CA -> coherencia y disponibilidad (aplicaciones financieras)</pre>
 
     </div>
   

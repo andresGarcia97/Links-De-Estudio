@@ -22,6 +22,8 @@
 
       <app-button [tittleButton]="'Argumentos'" (click)="getLinkAndTittleByKey('argumentos')"></app-button>
 
+      <app-button [tittleButton]="'Concurrencia'" (click)="getLinkAndTittleByKey('concurrenciaParalelismo')"></app-button>
+
     </div>
   
     <div class="terminal window" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
@@ -87,9 +89,9 @@
         <pre *ngSwitchCase="'hilos'">- Un hilo es una secuencia de control dentro de un proceso que ejecuta sus procesos de forma independiente </pre>
         <pre *ngSwitchCase="'hilos'">- Un proceso es una acción continua o serie de cambios, tareas que ocurren de manera definida </pre>
         <pre *ngSwitchCase="'hilos'">- El ciclo de vida de un proceso es el siguiente: </pre>
-        <pre *ngSwitchCase="'hilos'"> Creacion -> Listo &larr;&rarr; Ejecución -> Terminado</pre>
-        <pre *ngSwitchCase="'hilos'">                        &darr;                        </pre>
-        <pre *ngSwitchCase="'hilos'">              &uarr;	     Bloqueado                   </pre>
+        <pre *ngSwitchCase="'hilos'">  Creacion -> Listo &larr;&rarr; Ejecución -> Terminado</pre>
+        <pre *ngSwitchCase="'hilos'">                            &darr;                     </pre>
+        <pre *ngSwitchCase="'hilos'">                &uarr;	Bloqueado                       </pre>
 
         <pre *ngSwitchCase="'argumentos'">- En java los argumentos siempre se pasan por valor, esto significa que siempre se pasa el valor de la variable, </pre>
         <pre *ngSwitchCase="'argumentos'"> - y no la referencia en memoria de la variable, por lo que siempre es una copia del original </pre>
@@ -97,6 +99,17 @@
         <pre *ngSwitchCase="'argumentos'">- Esto no modifica la variable original, ya sea un tipo primitivo o un objeto </pre>
         <pre *ngSwitchCase="'argumentos'">- Algunas clases son inmutables por lo que los objetos originales nunca son modificados, </pre>
         <pre *ngSwitchCase="'argumentos'"> - solo se devuelve una nueva instancia con los cambios en vez de la original </pre>
+
+        <pre *ngSwitchCase="'concurrenciaParalelismo'">- Concunrrencia -> es la capacidad de realizar muchas tareas a la vez, con ó sin una secuencia especifica </pre>
+        <pre *ngSwitchCase="'concurrenciaParalelismo'">- Paralelismo -> es la capacidad de ejecutar 2 ó más acciones de manera simultanea </pre>
+        <pre *ngSwitchCase="'concurrenciaParalelismo'"></pre>
+        <pre *ngSwitchCase="'concurrenciaParalelismo'">- Para implementar concurrencia se recomienda usar Hilos, en cambio </pre>
+        <pre *ngSwitchCase="'concurrenciaParalelismo'">- Para implementar paralelismos se optara por usar Procesos </pre>
+        <pre *ngSwitchCase="'concurrenciaParalelismo'"></pre>
+        <pre *ngSwitchCase="'concurrenciaParalelismo'">- Aunque la programación concurrente tiene problemas en cuanto a la coherencia de los datos, </pre>
+        <pre *ngSwitchCase="'concurrenciaParalelismo'"> - es bastante util para resolver problemas de rendimiento </pre>
+        <pre *ngSwitchCase="'concurrenciaParalelismo'">- En cambio si el orden de las tareas es importante y tanto el inicio como el fin tambien, </pre>
+        <pre *ngSwitchCase="'concurrenciaParalelismo'"> - la programación paralela es mejor debido a su aislamiento inherente </pre>
 
       </div>
     

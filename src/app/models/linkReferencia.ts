@@ -120,6 +120,7 @@ export class LinkReferencia {
         ['cache', 'https://medium.com/bancolombia-tech/dise%C3%B1ando-una-estrategia-de-cach%C3%A9-39366876009b'],
         ['hilos', 'https://facturapp.weebly.com/hilos.html'],
         ['argumentos', 'https://picodotdev.github.io/blog-bitix/2021/01/en-java-los-argumentos-se-pasan-por-valor-o-por-referencia/'],
+        ['concurrenciaParalelismo', 'https://codigofacilito.com/articulos/programacion-concurrente'],
         // metodologias
         ['agiles', 'https://www.iebschool.com/blog/que-son-metodologias-agiles-agile-scrum/'],
         ['scrum', 'https://www.iebschool.com/blog/metodologia-scrum-agile-scrum/'],
@@ -144,6 +145,7 @@ export class LinkReferencia {
         ['madurezDeUnaApi', 'https://restfulapi.net/richardson-maturity-model/'],
         ['factores12', 'https://12factor.net/es/'],
         ['migracionesNube', 'https://www.paradigmadigital.com/techbiz/mitos-lift-shift-mentiras-migraciones-cloud/'],
+        ['capTeorema', 'https://www.ionos.es/digitalguide/servidores/know-how/que-es-el-cap-theorem/'],
         // otros
         ['escalamiento', 'https://www.oscarblancarteblog.com/2017/03/07/escalabilidad-horizontal-y-vertical/'],
         ['scraping', 'https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/que-es-el-web-scraping/'],
@@ -263,6 +265,7 @@ export class LinkReferencia {
         ['acid', 'https://dosideas.com/noticias/base-de-datos/973-acid-en-las-bases-de-datos'],
         ['orm', 'https://programarfacil.com/blog/que-es-un-orm/'],
         ['consistenciaEventual', 'https://medium.com/@gabanox/consistencia-eventual-en-s3-6ba5b2ecd721'],
+        ['algebraRelacional', 'https://sites.google.com/site/basededatosdistribuidastics/algebra-relacional'],
         // uml
         ['uml', 'https://diagramasuml.com/'],
         ['clase', 'https://diagramasuml.com/diagrama-de-clases/'],
@@ -402,7 +405,8 @@ export class LinkReferencia {
         ['scafolding', 'Creación automatica de codigo'],
         ['cache', 'Cache y sus estrategias'],
         ['hilos', 'Hilos'],
-        ['argumentos', 'Argumentos por valor y referencia'],
+        ['argumentos', 'Argumentos por valor y por referencia'],
+        ['concurrenciaParalelismo', 'Concurrencia & Paralelismo'],
         // metodologias
         ['agiles', '¿ Que son las metodologias agiles ?'],
         ['scrum', 'Scrum'],
@@ -427,6 +431,7 @@ export class LinkReferencia {
         ['madurezDeUnaApi', 'Nivel de madurez de una API'],
         ['factores12', '12 factores para una aplicación SaaS'],
         ['migracionesNube', 'Migraciones hacia la nube y las 6R'],
+        ['capTeorema', 'Coherencia, Disponibilidad y tolerancia a la partición'],
         // otros
         ['escalamiento', 'Escalamiento de un sistema'],
         ['scraping', 'Web Scrapping'],
@@ -545,6 +550,7 @@ export class LinkReferencia {
         ['acid', 'Esquema ACID'],
         ['orm', 'Mapeo Objetos-Relacional'],
         ['consistenciaEventual', 'Consistencia Eventual'],
+        ['algebraRelacional', 'Algebra Relacional'],
         // uml
         ['uml', 'Lenguaje Unificado de Modelado'],
         ['clase', 'Diagrama de clases'],
