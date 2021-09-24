@@ -6,7 +6,7 @@
   <div class="card-container">
 
     <a *ngFor="let linkAndTitle of onlyLinks | filter : search" class="card card-small card-no-size" target="_blank"
-      [href]="linkAndTitle.value">
+      rel="noreferrer" [href]="linkAndTitle.value">
       <span>{{this.tittles.get(linkAndTitle.name)?.toString()}}</span>
     </a>
 
@@ -15,7 +15,7 @@
   <div class="card-container">
 
     <a *ngFor="let linkAndFuente of onlyFuentes | filter : search" class="card card-small card-no-size" target="_blank"
-      [href]="linkAndFuente.value">
+      rel="noreferrer" [href]="linkAndFuente.value">
       <span>{{linkAndFuente.name}}</span>
     </a>
 
