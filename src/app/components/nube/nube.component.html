@@ -23,6 +23,8 @@
       <app-button [tittleButton]="'Migraciones'" (click)="getLinkAndTittleByKey('migracionesNube')"></app-button>
 
       <app-button [tittleButton]="'Teorema CAP'" (click)="getLinkAndTittleByKey('capTeorema')"></app-button>
+
+      <app-button [tittleButton]="'Servidor DNS'" (click)="getLinkAndTittleByKey('dns')"></app-button>
     
     </div>
   
@@ -150,6 +152,13 @@
       <pre *ngSwitchCase="'capTeorema'">- Sistema CP -> coherencia y tolerancia a la particion (sistemas de DNS)</pre>
       <pre *ngSwitchCase="'capTeorema'">- Sistena AP -> disponibilidad y tolerancia a la partición (BD relacionales) </pre>
       <pre *ngSwitchCase="'capTeorema'">- Sistema CA -> coherencia y disponibilidad (aplicaciones financieras)</pre>
+
+      <pre *ngSwitchCase="'dns'">- Es la manera como accedemos a una pagina web por medio de nombres(dominios) y no de direcciones IP </pre>
+      <pre *ngSwitchCase="'dns'">- Este proceso de traducción de direcciones es realizado por estos servidores que estan esparcidos por el mundo </pre>
+      <pre *ngSwitchCase="'dns'">- Al estar esparcidos por el mundo esto permite una administración descentralizada, pero sigue estando interconectada </pre>
+      <pre *ngSwitchCase="'dns'">- Aunque este metodo es normal hoy en dia, tambien se puede acceder a los sitios directamente por medio de una IP </pre>
+      <pre *ngSwitchCase="'dns'"> - y con esta obtener el dominio del sitio </pre>
+      <pre *ngSwitchCase="'dns'">- Si un servidor no encuentra la información solicitada, este la restransmite a otros en la red hasta dar con un resultado </pre>
 
     </div>
   

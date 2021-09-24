@@ -33,6 +33,8 @@
       <app-button [tittleButton]="'Cobertura'" (click)="getLinkAndTittleByKey('cobertura')"></app-button>
 
       <app-button [tittleButton]="'Falsos Resultados'" (click)="getLinkAndTittleByKey('falsos')"></app-button>
+
+      <app-button [tittleButton]="'Caja Negra & Blanca'" (click)="getLinkAndTittleByKey('cajaNegraBlanca')"></app-button>
   
     </div>
   
@@ -65,31 +67,31 @@
       <pre *ngSwitchCase="'QAperson'">- El encargado de estos aspectos debe ser el intermediario entre los clientes y sus espectativas y lo que ha sido elaborado </pre>
       <pre *ngSwitchCase="'QAperson'">- Tambien es el encargado de crear ambientes de prueba que sean similares al ambiente de producción </pre>
   
-      <pre *ngSwitchCase="'tiposPruebas'"> - Funcionales    -> prueban las funcionalidades del sistema y suelen ser de caja negra, al validar el QUE más que el COMO </pre>
-      <pre *ngSwitchCase="'tiposPruebas'"> - No Funcionales -> estas validan cosas como carga, estres, rendimiento, confiabilidad, etc... </pre>
+      <pre *ngSwitchCase="'tiposPruebas'">- Funcionales    -> prueban las funcionalidades del sistema y suelen ser de caja negra, al validar el QUE más que el COMO </pre>
+      <pre *ngSwitchCase="'tiposPruebas'">- No Funcionales -> estas validan cosas como carga, estres, rendimiento, confiabilidad, etc... </pre>
       <pre *ngSwitchCase="'tiposPruebas'"></pre>
-      <pre *ngSwitchCase="'tiposPruebas'"> - Estructurales -> indagan la estructura interna del programa y sus relaciones, aca se pueden incluir las pruebas unitarias y de integración </pre>
-      <pre *ngSwitchCase="'tiposPruebas'"> - Estructurales -> estan son de tipo caja blanca, ya que es necesario conocer todo el sistema y como funciona para que sean bien planificadas </pre>
+      <pre *ngSwitchCase="'tiposPruebas'">- Estructurales -> indagan la estructura interna del programa y sus relaciones, aca se pueden incluir las pruebas unitarias y de integración </pre>
+      <pre *ngSwitchCase="'tiposPruebas'">- Estructurales -> estan son de tipo caja blanca, ya que es necesario conocer todo el sistema y como funciona para que sean bien planificadas </pre>
       <pre *ngSwitchCase="'tiposPruebas'"></pre>
-      <pre *ngSwitchCase="'tiposPruebas'"> - Regresión -> basicamente es volver a correr todas la pruebas despues de que se cambien componentes ó se corrija un problema </pre>
-      <pre *ngSwitchCase="'tiposPruebas'"> - Regresión -> dependiendo de la cantidad de pruebas que hayan y de su complejidad puede ser una operación bastante demorada </pre>
+      <pre *ngSwitchCase="'tiposPruebas'">- Regresión -> basicamente es volver a correr todas la pruebas despues de que se cambien componentes ó se corrija un problema </pre>
+      <pre *ngSwitchCase="'tiposPruebas'">- Regresión -> dependiendo de la cantidad de pruebas que hayan y de su complejidad puede ser una operación bastante demorada </pre>
 
-      <pre *ngSwitchCase="'beneficios'"> - La calidad mejora al encontrar errores en etapas previas y durante el desarrollo, en vez de hacerlo en etapas finales </pre>
-      <pre *ngSwitchCase="'beneficios'"> - Los cambios son hechos de manera más agil al inducir una mayor comunicación con todo el equipo </pre>
-      <pre *ngSwitchCase="'beneficios'"> - Reducen el tiempo y los costos asociados a la mantenibilidad del software </pre>
-      <pre *ngSwitchCase="'beneficios'"> - Los tests pueden tener documentación la cual no debe ser muy extensa, y tambien pueden servir como documentación </pre>
+      <pre *ngSwitchCase="'beneficios'">- La calidad mejora al encontrar errores en etapas previas y durante el desarrollo, en vez de hacerlo en etapas finales </pre>
+      <pre *ngSwitchCase="'beneficios'">- Los cambios son hechos de manera más agil al inducir una mayor comunicación con todo el equipo </pre>
+      <pre *ngSwitchCase="'beneficios'">- Reducen el tiempo y los costos asociados a la mantenibilidad del software </pre>
+      <pre *ngSwitchCase="'beneficios'">- Los tests pueden tener documentación la cual no debe ser muy extensa, y tambien pueden servir como documentación </pre>
   
-      <pre *ngSwitchCase="'nombramiento'"> - Representa el intercambio de mensajes entre los diferentes componentes del sistema para lograr una funcionalidad </pre>
-      <pre *ngSwitchCase="'nombramiento'"> - El tiempo es importante ya que un mensaje debe terminar para que otro empieze (generalmente) </pre>
-      <pre *ngSwitchCase="'nombramiento'"> - Los objetos que interactuan puede ser simple clases, hasta modulos y sistemas completos </pre>
-      <pre *ngSwitchCase="'nombramiento'"> - El diablo esta en los detalles, saber nombrar los elementos que intervienen ayudara al analisis </pre>
+      <pre *ngSwitchCase="'nombramiento'">- Representa el intercambio de mensajes entre los diferentes componentes del sistema para lograr una funcionalidad </pre>
+      <pre *ngSwitchCase="'nombramiento'">- El tiempo es importante ya que un mensaje debe terminar para que otro empieze (generalmente) </pre>
+      <pre *ngSwitchCase="'nombramiento'">- Los objetos que interactuan puede ser simple clases, hasta modulos y sistemas completos </pre>
+      <pre *ngSwitchCase="'nombramiento'">- El diablo esta en los detalles, saber nombrar los elementos que intervienen ayudara al analisis </pre>
       <pre *ngSwitchCase="'nombramiento'"></pre>
-      <pre *ngSwitchCase="'nombramiento'"> - Clases -> deberian tener un indicador que las agrupe, como: (nombreClase)Test </pre>
-      <pre *ngSwitchCase="'nombramiento'"> - Metodos -> hay varias convenciones, pero generalmente deben incluir:  </pre>
-      <pre *ngSwitchCase="'nombramiento'">   - nombre del metodo, estado a probar, comportamiento esperado; tambien se pueden incluir las palabras de given, when, should, test  </pre>
+      <pre *ngSwitchCase="'nombramiento'">- Clases -> deberian tener un indicador que las agrupe, como: (nombreClase)Test </pre>
+      <pre *ngSwitchCase="'nombramiento'">- Metodos -> hay varias convenciones, pero generalmente deben incluir:  </pre>
+      <pre *ngSwitchCase="'nombramiento'">  - nombre del metodo, estado a probar, comportamiento esperado; tambien se pueden incluir las palabras de given, when, should, test  </pre>
       <pre *ngSwitchCase="'nombramiento'"></pre>
-      <pre *ngSwitchCase="'nombramiento'"> - Variables -> deben describir el proposito de cada variable, no deben ser resumidas ni genericas, algunos ejemplos pueden ser: </pre>
-      <pre *ngSwitchCase="'nombramiento'">   - target, expected, actual, valid, invalid, Object(Mock)</pre>
+      <pre *ngSwitchCase="'nombramiento'">- Variables -> deben describir el proposito de cada variable, no deben ser resumidas ni genericas, algunos ejemplos pueden ser: </pre>
+      <pre *ngSwitchCase="'nombramiento'">  - target, expected, actual, valid, invalid, Object(Mock)</pre>
   
       <pre *ngSwitchCase="'first'"> Fast            -> los tests unitarios deben ser lo más rapido posible, ya que se suelen tener cientos de pruebas y ejecutarlas conlleva tiempo y recursos </pre>
       <pre *ngSwitchCase="'first'"> Independent     -> cada test debe ser independiente de los demás, de lo contrario habra un acoplamiento no deseado </pre>
@@ -97,19 +99,19 @@
       <pre *ngSwitchCase="'first'"> Self-Validating -> las pruebas deben mostrar resultados concluyentes, estos no deben tener intervención humana para que sean validos </pre>
       <pre *ngSwitchCase="'first'"> Timely          -> toda prueba debe ser oportuna y debe tener una razon de ser, si no se pueden justificar, estas habran sido una perdida de tiempo </pre>
   
-      <pre *ngSwitchCase="'sutydoc'"> - System Under Test </pre>
-      <pre *ngSwitchCase="'sutydoc'">   - Es aquello que se esta probando ya sea una clase, un componente, una funcionalidad </pre>
-      <pre *ngSwitchCase="'sutydoc'"> - Depend On Component </pre>
-      <pre *ngSwitchCase="'sutydoc'">   - Es lo que necesita cada SUT para poder funcionar, y que la prueba pueda ser llevada a cabo </pre>
-      <pre *ngSwitchCase="'sutydoc'"> - Organización </pre>
-      <pre *ngSwitchCase="'sutydoc'">   - Generalmente se organizan mediante una tabla que contiene el tipo de prueba, los SUTs y los DOCs </pre>
+      <pre *ngSwitchCase="'sutydoc'">- System Under Test </pre>
+      <pre *ngSwitchCase="'sutydoc'">  - Es aquello que se esta probando ya sea una clase, un componente, una funcionalidad </pre>
+      <pre *ngSwitchCase="'sutydoc'">- Depend On Component </pre>
+      <pre *ngSwitchCase="'sutydoc'">  - Es lo que necesita cada SUT para poder funcionar, y que la prueba pueda ser llevada a cabo </pre>
+      <pre *ngSwitchCase="'sutydoc'">- Organización </pre>
+      <pre *ngSwitchCase="'sutydoc'">  - Generalmente se organizan mediante una tabla que contiene el tipo de prueba, los SUTs y los DOCs </pre>
   
       <pre *ngSwitchCase="'dobles'">- Son objetos que se comportan de manera igual que el elemento que copian, pero son más simples de manejar </pre>
-      <pre *ngSwitchCase="'dobles'">  - Dummy -> Es un objeto con valore concretos que solo sirve para que se cumplan ciertas precondiciones </pre>
-      <pre *ngSwitchCase="'dobles'">  - Fake  -> son funcionales y se comportan igual que en producción, solo que de una manera más simple y limitada </pre>
-      <pre *ngSwitchCase="'dobles'">  - Stub  -> Es un objeto que ya viene con una información predefinida, en vez de información real e impredecible </pre>
-      <pre *ngSwitchCase="'dobles'">  - Mock  -> Son objetos que actuan de acuerdo a una llamada en especifico, de lo contrario no funcionaran debidamente </pre>
-      <pre *ngSwitchCase="'dobles'">  - Spies -> Este objeto se encarga de visualizar todos los procesos y llamados internos, verificando que sean los desados </pre>
+      <pre *ngSwitchCase="'dobles'"> - Dummy -> Es un objeto con valore concretos que solo sirve para que se cumplan ciertas precondiciones </pre>
+      <pre *ngSwitchCase="'dobles'"> - Fake  -> son funcionales y se comportan igual que en producción, solo que de una manera más simple y limitada </pre>
+      <pre *ngSwitchCase="'dobles'"> - Stub  -> Es un objeto que ya viene con una información predefinida, en vez de información real e impredecible </pre>
+      <pre *ngSwitchCase="'dobles'"> - Mock  -> Son objetos que actuan de acuerdo a una llamada en especifico, de lo contrario no funcionaran debidamente </pre>
+      <pre *ngSwitchCase="'dobles'"> - Spies -> Este objeto se encarga de visualizar todos los procesos y llamados internos, verificando que sean los desados </pre>
 
       <pre *ngSwitchCase="'aaa'">- Arrange -> en esta parte se organiza todo lo necesario y se deben establecer las condiciones del test </pre>
       <pre *ngSwitchCase="'aaa'">- Act     -> es la ejecución del fragmento a testear</pre>
@@ -154,6 +156,17 @@
       <pre *ngSwitchCase="'falsos'"></pre>
       <pre *ngSwitchCase="'falsos'">- Falso Negativo -> ocurre cuando no se detectan errores, que estan presentes en lo que se esta probando </pre>
       <pre *ngSwitchCase="'falsos'">  - Suelen suceder por pruebas mal desarrolladas, más que por el propio entorno </pre>
+
+      <pre *ngSwitchCase="'cajaNegraBlanca'">- Caja blanca -> este tipo de testing se realiza sabiendo la estructura del codigo, funcionamiento, </pre>
+      <pre *ngSwitchCase="'cajaNegraBlanca'"> - estructura, arquitectura, etc.. con todo esto en mente se realizan las pruebas </pre>
+      <pre *ngSwitchCase="'cajaNegraBlanca'">- Caja negra -> en este metodo solo se conoce las entradas y las salidas del proceso, </pre>
+      <pre *ngSwitchCase="'cajaNegraBlanca'"> - teniendo su funcionamiento interno oculto </pre>
+      <pre *ngSwitchCase="'cajaNegraBlanca'"></pre>
+      <pre *ngSwitchCase="'cajaNegraBlanca'">- Por lo general los tests de caja blanca son realizados por los desarrolladores del proyecto, </pre>
+      <pre *ngSwitchCase="'cajaNegraBlanca'"> - y los de caja negra por las personas que conocen del negocio </pre>
+      <pre *ngSwitchCase="'cajaNegraBlanca'"></pre>
+      <pre *ngSwitchCase="'cajaNegraBlanca'">- Tambien se suelen mencionar los test de Caja gris, que se considerarian un punto medio, </pre>
+      <pre *ngSwitchCase="'cajaNegraBlanca'"> - donde la persona encargada conoce del negocio y de su implementación, más no con una gran profundidad </pre>
 
     </div>
   

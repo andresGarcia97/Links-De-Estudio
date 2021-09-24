@@ -146,6 +146,7 @@ export class LinkReferencia {
         ['factores12', 'https://12factor.net/es/'],
         ['migracionesNube', 'https://www.paradigmadigital.com/techbiz/mitos-lift-shift-mentiras-migraciones-cloud/'],
         ['capTeorema', 'https://www.ionos.es/digitalguide/servidores/know-how/que-es-el-cap-theorem/'],
+        ['dns', 'https://www.ionos.es/digitalguide/servidores/know-how/que-es-el-servidor-dns-y-como-funciona/'],
         // otros
         ['escalamiento', 'https://www.oscarblancarteblog.com/2017/03/07/escalabilidad-horizontal-y-vertical/'],
         ['scraping', 'https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/que-es-el-web-scraping/'],
@@ -212,6 +213,7 @@ export class LinkReferencia {
         ['cobertura', 'https://argonur.com/2020/05/11/code-coverage-cobertura-de-codigo/'],
         ['falsos', 'https://www.qalovers.com/2015/03/diferencia-entre-falso-positivo-y-falso_5.html#:~:text=La%20definici%C3%B3n%20de%20falso%20negativo,sistema%20que%20est%C3%A1%20realmente%20infectada.%22&text=Un%20falso%20negativo%20llevado%20a,cuando%20en%20realidad%20est%C3%A1%20fallando.'],
         ['QAperson', 'https://www.bbvaapimarket.com/es/mundo-api/que-es-qa-y-por-que-no-debe-faltar-en-tu-proyecto/'],
+        ['cajaNegraBlanca', 'https://www.testermoderno.com/caja-blanca-vs-caja-negra/'],
         // refactorización
         ['codigolimpio', 'https://refactoring.guru/es/refactoring/what-is-refactoring'],
         ['deudatecnica', 'https://refactoring.guru/es/refactoring/technical-debt'],
@@ -432,6 +434,7 @@ export class LinkReferencia {
         ['factores12', '12 factores para una aplicación SaaS'],
         ['migracionesNube', 'Migraciones hacia la nube y las 6R'],
         ['capTeorema', 'Coherencia, Disponibilidad y tolerancia a la partición'],
+        ['dns', 'Servidor DNS'],
         // otros
         ['escalamiento', 'Escalamiento de un sistema'],
         ['scraping', 'Web Scrapping'],
@@ -496,6 +499,7 @@ export class LinkReferencia {
         ['triangulo', 'Triangulo de Hierro'],
         ['cobertura', 'Cobertura de pruebas'],
         ['falsos', 'Falsos positivos & Falsos negativos'],
+        ['cajaNegraBlanca', 'Tests de Caja negra & Caja blanca'],
         ['QAperson', ' ¿ Que es QA ?'],
         // refactorización
         ['codigolimpio', '¿ Que es codigo Limpio ?'],
