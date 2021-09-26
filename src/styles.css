@@ -376,7 +376,7 @@ input:focus{
 .window::before {
   content: "\2022 \2022 \2022";
   position: absolute;
-  top: -4%;
+  top: 0;
   height: max-content;
   background: var(--color-jet);
   color: var(--color-selective-yellow);
