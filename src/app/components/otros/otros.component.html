@@ -26,6 +26,8 @@
 
     <app-button [tittleButton]="'CLI'" (click)="getLinkAndTittleByKey('cli')"></app-button>
 
+    <app-button [tittleButton]="'Ingenieria Inversa'" (click)="getLinkAndTittleByKey('ingenieriaInversa')"></app-button>
+
   </div>
 
   <div class="terminal window" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
@@ -133,6 +135,12 @@
     <pre *ngSwitchCase="'cli'">- Pueden funcionar con o sin argumentos, los argumentos son maneras de especificar detalles y/o configuraciones </pre>
     <pre *ngSwitchCase="'cli'">- Son rapidas y más eficientes ya que no necesitan interfaces graficas para funcionar </pre>
     <pre *ngSwitchCase="'cli'">- Tambien son más complejas de usar, ya que se basan en la memoria del usuario </pre>
+
+    <pre *ngSwitchCase="'ingenieriaInversa'">- Un concepto sencillo pero muy potente, basicamente consta de desmontar y volver a montar algo, </pre>
+    <pre *ngSwitchCase="'ingenieriaInversa'"> -  para ver como funciona </pre>
+    <pre *ngSwitchCase="'ingenieriaInversa'">- Esto se da con la intención de mejorar o duplicar ese algo mediante una simple observación </pre>
+    <pre *ngSwitchCase="'ingenieriaInversa'">- Su nacimiento se da durante la segunda guerra mundial, pero hoy en dia es aplicable hasta para el software </pre>
+    <pre *ngSwitchCase="'ingenieriaInversa'">- Uno de los primeros casos de esta practica fue el nacimiento del Tu-4 (sovietico) copia del B-29 (Estadounidense) </pre>
 
   </div>
 

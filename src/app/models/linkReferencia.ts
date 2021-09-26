@@ -160,6 +160,7 @@ export class LinkReferencia {
         ['expresionesRegulares', 'https://jarroba.com/busqueda-de-patrones-expresiones-regulares/'],
         ['turingComplete', 'https://www.eleconomista.es/economia/noticias/8817210/12/17/Ethereum-es-Turing-completo-y-eso-que-es.html'],
         ['cli', 'https://searchdatacenter.techtarget.com/es/definicion/Interfaz-de-linea-de-comandos-o-CLI'],
+        ['ingenieriaInversa', 'https://ingenierosasesores.com/actualidad/ingenieria-inversa-concepto-aplicaciones/'],
         // paradigmas
         ['imperativo', 'https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/paradigmas-de-programacion/'],
         ['funcional', 'https://codigofacilito.com/articulos/programacion-funcional'],
@@ -289,7 +290,8 @@ export class LinkReferencia {
         ['pwa', 'https://www.iebschool.com/blog/progressive-web-apps-analitica-usabilidad/'],
         ['seo', 'https://www.40defiebre.com/guia-seo/que-es-seo-por-que-necesito'],
         ['espacio', 'https://www.dsigno.es/blog/diseno-grafico/espacios-negativos-en-diseno-grafico'],
-        ['diseno', 'https://seocom.agency/es/blog/diseno-grafico-web/']
+        ['diseno', 'https://seocom.agency/es/blog/diseno-grafico-web/'],
+        ['interfacesUsuario', 'https://pensamientodigital.wordpress.com/diseno-de-interfases-de-usuario/']
     ]);
 
     public tittles: Map<string, string> = new Map([
@@ -448,6 +450,7 @@ export class LinkReferencia {
         ['expresionesRegulares', 'Expresiones Regulares'],
         ['turingComplete', 'Turing Complete'],
         ['cli', 'Interfaz de Linea de Comandos'],
+        ['ingenieriaInversa', 'Ingenieria Inversa'],
         // paradigmas
         ['imperativo', 'Paradigmas Imperativo & Declarativo'],
         ['funcional', 'Paradigma funcional'],
@@ -576,7 +579,8 @@ export class LinkReferencia {
         ['pwa', 'Progressive Web App'],
         ['seo', 'Search Engine Optimization'],
         ['espacio', 'El uso del espacio para diseñar'],
-        ['diseno', 'Diseño grafico']
+        ['diseno', 'Diseño grafico'],
+        ['interfacesUsuario', 'Diseño de interfaces de usuario']
     ]);
 
     public getLinkAndTittleByKey(key: string = ''): void {
