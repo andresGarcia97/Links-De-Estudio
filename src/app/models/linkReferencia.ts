@@ -214,7 +214,11 @@ export class LinkReferencia {
         ['cobertura', 'https://argonur.com/2020/05/11/code-coverage-cobertura-de-codigo/'],
         ['falsos', 'https://www.qalovers.com/2015/03/diferencia-entre-falso-positivo-y-falso_5.html#:~:text=La%20definici%C3%B3n%20de%20falso%20negativo,sistema%20que%20est%C3%A1%20realmente%20infectada.%22&text=Un%20falso%20negativo%20llevado%20a,cuando%20en%20realidad%20est%C3%A1%20fallando.'],
         ['QAperson', 'https://www.bbvaapimarket.com/es/mundo-api/que-es-qa-y-por-que-no-debe-faltar-en-tu-proyecto/'],
+        // pruebas-avanzadas
         ['cajaNegraBlanca', 'https://www.testermoderno.com/caja-blanca-vs-caja-negra/'],
+        ['valorLimite', 'https://educandocontic.com/valores-limite-pruebas/'],
+        ['clasesEquivalencia', 'https://educandocontic.com/particiones-de-equivalencia/'],
+        ['grafosCausaEfecto', 'https://platzi.com/tutoriales/1421-pruebas-software/9606-pruebas-con-grafos-causa-efecto/'],
         // refactorización
         ['codigolimpio', 'https://refactoring.guru/es/refactoring/what-is-refactoring'],
         ['deudatecnica', 'https://refactoring.guru/es/refactoring/technical-debt'],
@@ -502,8 +506,12 @@ export class LinkReferencia {
         ['triangulo', 'Triangulo de Hierro'],
         ['cobertura', 'Cobertura de pruebas'],
         ['falsos', 'Falsos positivos & Falsos negativos'],
-        ['cajaNegraBlanca', 'Tests de Caja negra & Caja blanca'],
         ['QAperson', ' ¿ Que es QA ?'],
+        // pruebas-avanzadas
+        ['cajaNegraBlanca', 'Tests de Caja negra & Caja blanca'],
+        ['valorLimite', 'Valores limite'],
+        ['clasesEquivalencia', 'Clases de equivalencia'],
+        ['grafosCausaEfecto', 'Grafos causa -> efecto'],
         // refactorización
         ['codigolimpio', '¿ Que es codigo Limpio ?'],
         ['deudatecnica', 'Deuda tecnica'],

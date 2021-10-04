@@ -25,6 +25,7 @@ import { PatronesComponent } from './components/patrones/patrones.component';
 import { PersonasComponent } from './components/personas/personas.component';
 import { PooComponent } from './components/poo/poo.component';
 import { PrincipiosComponent } from './components/principios/principios.component';
+import { PruebasAvanzadasComponent } from './components/pruebas-avanzadas/pruebas-avanzadas.component';
 import { PruebasComponent } from './components/pruebas/pruebas.component';
 import { RefactorizacionComponent } from './components/refactorizacion/refactorizacion.component';
 import { RequisitosComponent } from './components/requisitos/requisitos.component';
@@ -84,7 +85,7 @@ export class AppComponent {
     // 28 - 31
     MetaCaracteristicasComponent, GlosarioComponent, NubeComponent, PersonasComponent,
     // 32 - 35
-    CalidadComponent ];
+    CalidadComponent, PruebasAvanzadasComponent ];
 
   constructor(private componentFactoryResolver: ComponentFactoryResolver) { }
 

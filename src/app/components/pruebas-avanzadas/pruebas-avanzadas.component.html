@@ -1,0 +1,69 @@
+<div class="content">
+
+    <h2>Pruebas en el desarrollo de Software</h2>
+  
+    <div class="card-container">
+  
+      <app-button [tittleButton]="'Caja Negra & Blanca'" (click)="getLinkAndTittleByKey('cajaNegraBlanca')"></app-button>
+
+      <app-button [tittleButton]="'Valores Limites'" (click)="getLinkAndTittleByKey('valorLimite')"></app-button>
+
+      <app-button [tittleButton]="'Equivalencias'" (click)="getLinkAndTittleByKey('clasesEquivalencia')"></app-button>
+
+      <app-button [tittleButton]="'Causa -> Efecto'" (click)="getLinkAndTittleByKey('grafosCausaEfecto')"></app-button>
+  
+    </div>
+  
+    <div class="terminal window" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
+    <div class="terminal" [ngSwitch]="selection" #terminal>
+  
+      <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
+    
+      <pre *ngSwitchCase="'cajaNegraBlanca'">- Caja blanca -> este tipo de testing se realiza sabiendo la estructura del codigo, funcionamiento, </pre>
+      <pre *ngSwitchCase="'cajaNegraBlanca'"> - estructura, arquitectura, etc.. con todo esto en mente se realizan las pruebas </pre>
+      <pre *ngSwitchCase="'cajaNegraBlanca'">- Caja negra -> en este metodo solo se conoce las entradas y las salidas del proceso, </pre>
+      <pre *ngSwitchCase="'cajaNegraBlanca'"> - teniendo su funcionamiento interno oculto </pre>
+      <pre *ngSwitchCase="'cajaNegraBlanca'"></pre>
+      <pre *ngSwitchCase="'cajaNegraBlanca'">- Por lo general los tests de caja blanca son realizados por los desarrolladores del proyecto, </pre>
+      <pre *ngSwitchCase="'cajaNegraBlanca'"> - y los de caja negra por las personas que conocen del negocio </pre>
+      <pre *ngSwitchCase="'cajaNegraBlanca'"></pre>
+      <pre *ngSwitchCase="'cajaNegraBlanca'">- Tambien se suelen mencionar los test de Caja gris, que se considerarian un punto medio, </pre>
+      <pre *ngSwitchCase="'cajaNegraBlanca'"> - donde la persona encargada conoce del negocio y de su implementación, más no con una gran profundidad </pre>
+
+      <pre *ngSwitchCase="'valorLimite'">- Esta tecnica se basa en la heuristica de que los errores son más probables en los valores extremos de las entradas </pre>
+      <pre *ngSwitchCase="'valorLimite'">- Los valores escogidos son aquellos que se encuentran por encima o debajo de las clases de equivalencia </pre>
+      <pre *ngSwitchCase="'valorLimite'">- Dependiendo del tipo de dato de la entrada se suele escoger las pruebas para que cumplan los siguientes escenarios: </pre>
+      <pre *ngSwitchCase="'valorLimite'"> - (n-1) valor cercano al limite minimo </pre>
+      <pre *ngSwitchCase="'valorLimite'"> - (n)   valor encontrado en el rango normal de los datos </pre>
+      <pre *ngSwitchCase="'valorLimite'"> - (n+1) valor cercano al limite maximo </pre>
+      <pre *ngSwitchCase="'valorLimite'">- Los valores limite se pueden considerar una especie de frontera entre el comportamiento normal del sistema y </pre>
+      <pre *ngSwitchCase="'valorLimite'"> - un punto de error conocido o desconocido para el sistema </pre>
+      <pre *ngSwitchCase="'valorLimite'"></pre>
+      <pre *ngSwitchCase="'valorLimite'">- Si tomamos como ejemplo los dias de la semana se podrian dar los siguientes casos: </pre>
+      <pre *ngSwitchCase="'valorLimite'"></pre>
+      <pre *ngSwitchCase="'valorLimite'">                          Dias de la semana validos                            </pre>
+      <pre *ngSwitchCase="'valorLimite'">    Otro   Domingo  Lunes  Martes  Miercoles  Jueves  Viernes  Sabado    Otro  </pre>
+      <pre *ngSwitchCase="'valorLimite'">    Error  Limite                rango normal                  Limite    Error </pre>
+      <pre *ngSwitchCase="'valorLimite'">           inferior                                            Superior        </pre>
+
+      <pre *ngSwitchCase="'clasesEquivalencia'">- Esta tecnica considera que todas las entradas del programa se pueden clasificar en 2 tipos: </pre>
+      <pre *ngSwitchCase="'clasesEquivalencia'"> - Efectos negativos -> entradas que inducen al error ó casos no cobijados durante el desarrollo </pre>
+      <pre *ngSwitchCase="'clasesEquivalencia'"> - Efectos positivos -> entradas que no deberian provocar ningun error ó mal funcionamiento del sistema </pre>
+      <pre *ngSwitchCase="'clasesEquivalencia'"></pre>
+      <pre *ngSwitchCase="'clasesEquivalencia'">- Todos los elementos de una clase de equivalencia teoricamente se deben comportar igual, </pre>
+      <pre *ngSwitchCase="'clasesEquivalencia'"> - por lo que solo basta escoger uno del grupo y probar con este elemento </pre>
+      <pre *ngSwitchCase="'clasesEquivalencia'">- Las clases de equivalencia puende ser de distintos tipos: </pre>
+      <pre *ngSwitchCase="'clasesEquivalencia'"> - Rangos, valores especificos, conjuntos de valores, condiciones binarias, etc.. </pre>
+      <pre *ngSwitchCase="'clasesEquivalencia'"></pre>
+      <pre *ngSwitchCase="'clasesEquivalencia'">- De acuerdo a cada tipo se deberia sacar las clases de equivalencias validas e invalidas </pre>
+      <pre *ngSwitchCase="'clasesEquivalencia'">- Si se da el caso, tambien se deberian probar los valores limite del sistema </pre>
+
+      <pre *ngSwitchCase="'grafosCausaEfecto'">- Estos grafos representan una relación logica entre distinas causas y sus posibles efectos </pre>
+      <pre *ngSwitchCase="'grafosCausaEfecto'">- Donde una causa (entradas) pueden generar en diversos efectos (salidas) </pre>
+      <pre *ngSwitchCase="'grafosCausaEfecto'">- Estas entradas y salidas tambien se pueden combinar para elaborar complejas reglas de negocio </pre>
+
+    </div>
+  
+    <app-referencia [referencia]="referencia"></app-referencia>
+  
+  </div>
