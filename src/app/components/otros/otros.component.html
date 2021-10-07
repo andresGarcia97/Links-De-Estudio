@@ -28,6 +28,8 @@
 
     <app-button [tittleButton]="'Ingenieria Inversa'" (click)="getLinkAndTittleByKey('ingenieriaInversa')"></app-button>
 
+    <app-button [tittleButton]="'DSL'" (click)="getLinkAndTittleByKey('dsl')"></app-button>
+
   </div>
 
   <div class="terminal window" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
@@ -137,10 +139,19 @@
     <pre *ngSwitchCase="'cli'">- Tambien son más complejas de usar, ya que se basan en la memoria del usuario </pre>
 
     <pre *ngSwitchCase="'ingenieriaInversa'">- Un concepto sencillo pero muy potente, basicamente consta de desmontar y volver a montar algo, </pre>
-    <pre *ngSwitchCase="'ingenieriaInversa'"> -  para ver como funciona </pre>
+    <pre *ngSwitchCase="'ingenieriaInversa'"> - para ver como funciona </pre>
     <pre *ngSwitchCase="'ingenieriaInversa'">- Esto se da con la intención de mejorar o duplicar ese algo mediante una simple observación </pre>
     <pre *ngSwitchCase="'ingenieriaInversa'">- Su nacimiento se da durante la segunda guerra mundial, pero hoy en dia es aplicable hasta para el software </pre>
     <pre *ngSwitchCase="'ingenieriaInversa'">- Uno de los primeros casos de esta practica fue el nacimiento del Tu-4 (sovietico) copia del B-29 (Estadounidense) </pre>
+
+    <pre *ngSwitchCase="'dsl'">- Un DSL es un lenguaje de programación con un nivel superior de abstracción </pre>
+    <pre *ngSwitchCase="'dsl'">- Estos lenguajes son menos complejos que los lenguajes de alto nivel y proposito general, como Java, C, etc.. </pre>
+    <pre *ngSwitchCase="'dsl'">- Tambien son diseñados por expertos en el campo que se van a usar, para ser usados </pre>
+    <pre *ngSwitchCase="'dsl'"> - por las personas versadas en el tema, pero sin experiencia en la programación </pre>
+    <pre *ngSwitchCase="'dsl'">- Esto desemboca en un paradigma donde se especifica lo que se requiere, </pre>
+    <pre *ngSwitchCase="'dsl'"> - y se usa el mejor lenguaje para lograr el objetivo </pre>
+    <pre *ngSwitchCase="'dsl'">- Este concepto desemboca en la programación poliglota o programación orientada al lenguaje </pre>
+    <pre *ngSwitchCase="'dsl'">- Otro concepto importante es que los DSL pueden nacer y extenderse, con ó sin bases previas </pre>
 
   </div>
 

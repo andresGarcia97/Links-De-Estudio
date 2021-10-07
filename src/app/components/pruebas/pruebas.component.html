@@ -33,8 +33,6 @@
       <app-button [tittleButton]="'Cobertura'" (click)="getLinkAndTittleByKey('cobertura')"></app-button>
 
       <app-button [tittleButton]="'Falsos Resultados'" (click)="getLinkAndTittleByKey('falsos')"></app-button>
-
-      <app-button [tittleButton]="'Caja Negra & Blanca'" (click)="getLinkAndTittleByKey('cajaNegraBlanca')"></app-button>
   
     </div>
   
@@ -156,17 +154,6 @@
       <pre *ngSwitchCase="'falsos'"></pre>
       <pre *ngSwitchCase="'falsos'">- Falso Negativo -> ocurre cuando no se detectan errores, que estan presentes en lo que se esta probando </pre>
       <pre *ngSwitchCase="'falsos'">  - Suelen suceder por pruebas mal desarrolladas, más que por el propio entorno </pre>
-
-      <pre *ngSwitchCase="'cajaNegraBlanca'">- Caja blanca -> este tipo de testing se realiza sabiendo la estructura del codigo, funcionamiento, </pre>
-      <pre *ngSwitchCase="'cajaNegraBlanca'"> - estructura, arquitectura, etc.. con todo esto en mente se realizan las pruebas </pre>
-      <pre *ngSwitchCase="'cajaNegraBlanca'">- Caja negra -> en este metodo solo se conoce las entradas y las salidas del proceso, </pre>
-      <pre *ngSwitchCase="'cajaNegraBlanca'"> - teniendo su funcionamiento interno oculto </pre>
-      <pre *ngSwitchCase="'cajaNegraBlanca'"></pre>
-      <pre *ngSwitchCase="'cajaNegraBlanca'">- Por lo general los tests de caja blanca son realizados por los desarrolladores del proyecto, </pre>
-      <pre *ngSwitchCase="'cajaNegraBlanca'"> - y los de caja negra por las personas que conocen del negocio </pre>
-      <pre *ngSwitchCase="'cajaNegraBlanca'"></pre>
-      <pre *ngSwitchCase="'cajaNegraBlanca'">- Tambien se suelen mencionar los test de Caja gris, que se considerarian un punto medio, </pre>
-      <pre *ngSwitchCase="'cajaNegraBlanca'"> - donde la persona encargada conoce del negocio y de su implementación, más no con una gran profundidad </pre>
 
     </div>
   

@@ -161,6 +161,7 @@ export class LinkReferencia {
         ['turingComplete', 'https://www.eleconomista.es/economia/noticias/8817210/12/17/Ethereum-es-Turing-completo-y-eso-que-es.html'],
         ['cli', 'https://searchdatacenter.techtarget.com/es/definicion/Interfaz-de-linea-de-comandos-o-CLI'],
         ['ingenieriaInversa', 'https://ingenierosasesores.com/actualidad/ingenieria-inversa-concepto-aplicaciones/'],
+        ['dsl', 'https://www.jetbrains.com/es-es/mps/concepts/domain-specific-languages/'],
         // paradigmas
         ['imperativo', 'https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/paradigmas-de-programacion/'],
         ['funcional', 'https://codigofacilito.com/articulos/programacion-funcional'],
@@ -455,6 +456,7 @@ export class LinkReferencia {
         ['turingComplete', 'Turing Complete'],
         ['cli', 'Interfaz de Linea de Comandos'],
         ['ingenieriaInversa', 'Ingenieria Inversa'],
+        ['dsl', 'Lenguaje de Dominio Especifico'],
         // paradigmas
         ['imperativo', 'Paradigmas Imperativo & Declarativo'],
         ['funcional', 'Paradigma funcional'],
