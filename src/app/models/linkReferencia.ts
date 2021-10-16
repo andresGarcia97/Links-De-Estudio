@@ -220,6 +220,7 @@ export class LinkReferencia {
         ['valorLimite', 'https://educandocontic.com/valores-limite-pruebas/'],
         ['clasesEquivalencia', 'https://educandocontic.com/particiones-de-equivalencia/'],
         ['grafosCausaEfecto', 'https://platzi.com/tutoriales/1421-pruebas-software/9606-pruebas-con-grafos-causa-efecto/'],
+        ['tiposDePruebas', 'https://www.softwaretestinghelp.com/types-of-software-testing/'],
         // refactorización
         ['codigolimpio', 'https://refactoring.guru/es/refactoring/what-is-refactoring'],
         ['deudatecnica', 'https://refactoring.guru/es/refactoring/technical-debt'],
@@ -296,7 +297,8 @@ export class LinkReferencia {
         ['seo', 'https://www.40defiebre.com/guia-seo/que-es-seo-por-que-necesito'],
         ['espacio', 'https://www.dsigno.es/blog/diseno-grafico/espacios-negativos-en-diseno-grafico'],
         ['diseno', 'https://seocom.agency/es/blog/diseno-grafico-web/'],
-        ['interfacesUsuario', 'https://pensamientodigital.wordpress.com/diseno-de-interfases-de-usuario/']
+        ['interfacesUsuario', 'https://pensamientodigital.wordpress.com/diseno-de-interfases-de-usuario/'],
+        ['logos', 'https://franciscotorreblanca.es/logotipo-imagotipo-isotipo-e-isologo/']
     ]);
 
     public tittles: Map<string, string> = new Map([
@@ -514,6 +516,7 @@ export class LinkReferencia {
         ['valorLimite', 'Valores limite'],
         ['clasesEquivalencia', 'Clases de equivalencia'],
         ['grafosCausaEfecto', 'Grafos causa -> efecto'],
+        ['tiposDePruebas', 'Diferentes tipos de pruebas'],
         // refactorización
         ['codigolimpio', '¿ Que es codigo Limpio ?'],
         ['deudatecnica', 'Deuda tecnica'],
@@ -590,7 +593,8 @@ export class LinkReferencia {
         ['seo', 'Search Engine Optimization'],
         ['espacio', 'El uso del espacio para diseñar'],
         ['diseno', 'Diseño grafico'],
-        ['interfacesUsuario', 'Diseño de interfaces de usuario']
+        ['interfacesUsuario', 'Diseño de interfaces de usuario'],
+        ['logos', 'Logotipo, Imagotipo, Isotipo, Isologo']
     ]);
 
     public getLinkAndTittleByKey(key: string = ''): void {

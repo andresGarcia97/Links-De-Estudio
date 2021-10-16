@@ -16,6 +16,8 @@
       
       <app-button [tittleButton]="'UI'" (click)="getLinkAndTittleByKey('interfacesUsuario')"></app-button>
 
+      <app-button [tittleButton]="'Logos'" (click)="getLinkAndTittleByKey('logos')"></app-button>
+
     </div>
     
     <div class="terminal window" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
@@ -76,6 +78,11 @@
       <pre *ngSwitchCase="'interfacesUsuario'"> - Reconocimiento, manejo y recuperración de errores </pre>
       <pre *ngSwitchCase="'interfacesUsuario'"> - Flexibilidad, control y libertad para el usuario </pre>
       <pre *ngSwitchCase="'interfacesUsuario'"> - Reconocimiento de acciones y ayudas </pre>
+
+      <pre *ngSwitchCase="'logos'">- Isotipo -> parte reconocible de una marca sin presencia de texto </pre>
+      <pre *ngSwitchCase="'logos'">- Isologo -> el texto y el icono son parte de un mismo conjunto, no funcionan por separado </pre>
+      <pre *ngSwitchCase="'logos'">- Logotipo -> texto que representa la marca y es la parte reconocible de esta </pre>
+      <pre *ngSwitchCase="'logos'">- Imagotipo -> combinación de imagen y texto, que tambien pueden separarse y ser efectiva </pre>
 
     </div>
   

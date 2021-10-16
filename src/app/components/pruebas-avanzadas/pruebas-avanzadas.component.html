@@ -11,6 +11,8 @@
       <app-button [tittleButton]="'Equivalencias'" (click)="getLinkAndTittleByKey('clasesEquivalencia')"></app-button>
 
       <app-button [tittleButton]="'Causa -> Efecto'" (click)="getLinkAndTittleByKey('grafosCausaEfecto')"></app-button>
+
+      <app-button [tittleButton]="'Tipos de pruebas'" (click)="getLinkAndTittleByKey('tiposDePruebas')"></app-button>
   
     </div>
   
@@ -61,6 +63,30 @@
       <pre *ngSwitchCase="'grafosCausaEfecto'">- Estos grafos representan una relación logica entre distinas causas y sus posibles efectos </pre>
       <pre *ngSwitchCase="'grafosCausaEfecto'">- Donde una causa (entradas) pueden generar en diversos efectos (salidas) </pre>
       <pre *ngSwitchCase="'grafosCausaEfecto'">- Estas entradas y salidas tambien se pueden combinar para elaborar complejas reglas de negocio </pre>
+
+      <pre *ngSwitchCase="'tiposDePruebas'">- Alfa -> estan enfocadas a identificar posibles problemas antes de un release (lanzamiento) </pre>
+      <pre *ngSwitchCase="'tiposDePruebas'">- Aceptación -> realizadas por el cliente con el proposito de aceptar, o no el producto </pre>
+      <pre *ngSwitchCase="'tiposDePruebas'">- Ad-hoc -> no tienen ninguna base o referencia por lo que su impredecibilidad puede romper las cosas </pre>
+      <pre *ngSwitchCase="'tiposDePruebas'"></pre>
+      <pre *ngSwitchCase="'tiposDePruebas'">- Beta -> se realizan en un ambiente real, desde la perspectiva de un usuario para satisfacer a los clientes </pre>
+      <pre *ngSwitchCase="'tiposDePruebas'">- Compatibilidad(software) -> se prueba que el software actual soporte las versiones previas </pre>
+      <pre *ngSwitchCase="'tiposDePruebas'">- Compatibilidad(Hardware) -> se prueban diferentes entornos de hardware para saber donde y como puede correr </pre>
+      <pre *ngSwitchCase="'tiposDePruebas'"></pre>
+      <pre *ngSwitchCase="'tiposDePruebas'">- Componentes -> aca se prueban la union de las diferentes partes de la aplicación y su funcionamiento en conjunto </pre>
+      <pre *ngSwitchCase="'tiposDePruebas'">- Extremo a extremo -> se prueba todo el sistema como un todo, su funcionamiento general y no particular </pre>
+      <pre *ngSwitchCase="'tiposDePruebas'">- GUI -> aca se prueba la interfaz grafica del usuario y que esta se adapte al publico enfocado, además de que funcione </pre>
+      <pre *ngSwitchCase="'tiposDePruebas'"></pre>
+      <pre *ngSwitchCase="'tiposDePruebas'">- Camino feliz -> aca solo se crean casos que se conocen y que no deberian fallar </pre>
+      <pre *ngSwitchCase="'tiposDePruebas'">- Integración -> se juntan partes especificas y se prueban como un grupo en especifico </pre>
+      <pre *ngSwitchCase="'tiposDePruebas'">- Carga -> tienen el objetivo de averiguar cuanta carga de trabajo puede manejar un sistema sin degradaciones importantes </pre>
+      <pre *ngSwitchCase="'tiposDePruebas'"></pre>
+      <pre *ngSwitchCase="'tiposDePruebas'">- Recuperación -> valida la capacidad del sistema para recuperarse de posibles fallos </pre>
+      <pre *ngSwitchCase="'tiposDePruebas'">- Regresión -> cualquier cambio de una funcionalidad no debe afectar lo que ya estaba funcionando </pre>
+      <pre *ngSwitchCase="'tiposDePruebas'">- Estres -> la intención es saber en que punto un sistema deja de funcionar y porque </pre>
+      <pre *ngSwitchCase="'tiposDePruebas'"></pre>
+      <pre *ngSwitchCase="'tiposDePruebas'">- Internalización -> que tambien se adapta un sistema para su uso en diferentes contextos geograficos </pre>
+      <pre *ngSwitchCase="'tiposDePruebas'">- Unitarias -> son pruebas de funciones especificas del sistema que se pueden tomar como una parte individual de la generalidad </pre>
+      <pre *ngSwitchCase="'tiposDePruebas'">- Humo -> se concentran en verificar que con cada cambio que se haga el sistema siga funcionando bien de manera general </pre>
 
     </div>
   
