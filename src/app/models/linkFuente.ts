@@ -11,6 +11,7 @@ export class LinkFuente {
         ['htmlEntities', { titulo: 'Html Entities', referencia: 'https://www.freeformatter.com/html-entities.html' }],
         ['cargasDeScripts', { titulo: 'Carga de scripts', referencia: 'https://manzdev.github.io/script-type/' }],
         ['cssGradients', { titulo: 'CSS gradients', referencia: 'https://www.smashingmagazine.com/2021/02/responsive-image-effects-css-gradients-aspect-ratio/' }],
+        ['keyEvents', { titulo: 'Eventos del teclado', referencia: 'https://keycode.info/' }],
         // backend
         ['sqlTutorial', { titulo: 'SQL Tutorial', referencia: 'https://www.w3schools.com/sql/default.asp' }],
         ['patronesDisenoJava', { titulo: 'Patrones de diseño en Java', referencia: 'https://www.journaldev.com/1827/java-design-patterns-example-tutorial' }],

@@ -24,6 +24,8 @@
 
     <app-button [tittleButton]="'Patron CQRS'" (click)="getLinkAndTittleByKey('patroncqrs')"></app-button>
 
+    <app-button [tittleButton]="'Patron undo-redo'" (click)="getLinkAndTittleByKey('patronUndoRedo')"></app-button>
+
   </div>
 
   <div class="terminal window" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
@@ -118,6 +120,17 @@
     <pre *ngSwitchCase="'patroncqrs'">- Esto permite facilitar leer y escribir operaciones, agregando tanto seguridad como complejidad </pre>
     <pre *ngSwitchCase="'patroncqrs'">- Los datos no solo se manejan de maneras diferentes, tambien pueden ser almacenados de distintas formas </pre>
     <pre *ngSwitchCase="'patroncqrs'">- Especialmente util cuando las operaciones de lectura y de creacion/modificación difieren sustancialmente </pre>
+
+    <pre *ngSwitchCase="'patronUndoRedo'">- Es un patron de comportamiento bastente usado en la actualidad </pre>
+    <pre *ngSwitchCase="'patronUndoRedo'">- Este patron dicta que cualquier cambio que se realize puede ser devuelto a un estado previo </pre>
+    <pre *ngSwitchCase="'patronUndoRedo'"> - Ademas de que se debe ser capaz de volver a un estado futuro desde uno pasado </pre>
+    <pre *ngSwitchCase="'patronUndoRedo'">- Manejar estados y tener memmoria de estos puede implicar mayor complejidad para las aplicaciones </pre>
+    <pre *ngSwitchCase="'patronUndoRedo'">- Los estados no deben ser modificables y sus cambios no deben tener efectos colaterales </pre>
+    <pre *ngSwitchCase="'patronUndoRedo'"></pre>
+    <pre *ngSwitchCase="'patronUndoRedo'">- Este patron puede tener 2 enfoques: </pre>
+    <pre *ngSwitchCase="'patronUndoRedo'">- Todo o nada -> no hay puntos intermedios de que guardar y que no, toda acción realizada deber ser recordada </pre>
+    <pre *ngSwitchCase="'patronUndoRedo'">- Calculados -> los estados anteriores y proximos, se pueden calcular en base al actual </pre>
+    <pre *ngSwitchCase="'patronUndoRedo'">- Ambos enfoques pueden presentar problemas de complejidad y rendimiento respectivamente </pre>
 
   </div>
 

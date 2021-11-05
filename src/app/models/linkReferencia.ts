@@ -121,6 +121,7 @@ export class LinkReferencia {
         ['hilos', 'https://facturapp.weebly.com/hilos.html'],
         ['argumentos', 'https://picodotdev.github.io/blog-bitix/2021/01/en-java-los-argumentos-se-pasan-por-valor-o-por-referencia/'],
         ['concurrenciaParalelismo', 'https://codigofacilito.com/articulos/programacion-concurrente'],
+        ['ortogonalidad', 'https://qastack.mx/programming/1527393/what-is-orthogonality'],
         // metodologias
         ['agiles', 'https://www.iebschool.com/blog/que-son-metodologias-agiles-agile-scrum/'],
         ['scrum', 'https://www.iebschool.com/blog/metodologia-scrum-agile-scrum/'],
@@ -180,6 +181,7 @@ export class LinkReferencia {
         ['dobleDespacho', 'https://blog.nicopaez.com/2016/11/09/una-alternativa-al-double-dispatch/'],
         ['patronSaga', 'https://unpocodejava.com/2020/01/02/que-es-el-patron-saga/'],
         ['patroncqrs', 'https://www.escuelajavascript.com/explicando-todo-acerca-de-cqrs/'],
+        ['patronUndoRedo', 'https://medium.com/dottech/implementando-undo-redo-con-ngrx-o-redux-f8ef5de535ef'],
         // personas
         ['personasYprocesos', 'https://www.heflo.com/es/blog/bpm/personas-procesos-tecnologia/'],
         ['gestionDeServicios', 'https://www.ambit-bst.com/blog/itsm.-todo-lo-que-debes-saber-sobre-la-gesti%C3%B3n-de-servicios-it'],
@@ -418,6 +420,7 @@ export class LinkReferencia {
         ['hilos', 'Hilos'],
         ['argumentos', 'Argumentos por valor y por referencia'],
         ['concurrenciaParalelismo', 'Concurrencia & Paralelismo'],
+        ['ortogonalidad', 'Ortogonalidad'],
         // metodologias
         ['agiles', '¿ Que son las metodologias agiles ?'],
         ['scrum', 'Scrum'],
@@ -477,6 +480,7 @@ export class LinkReferencia {
         ['dobleDespacho', 'Patron doble despacho'],
         ['patronSaga', 'Patron Saga'],
         ['patroncqrs', 'Patron CQRS'],
+        ['patronUndoRedo', 'Patron Undo-Redo'],
         // personas
         ['personasYprocesos', 'Personas-Procesos-Tecnologias'],
         ['gestionDeServicios', 'Gestión de servicios tecnologicos'],

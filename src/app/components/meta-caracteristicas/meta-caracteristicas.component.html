@@ -24,6 +24,8 @@
 
       <app-button [tittleButton]="'Concurrencia'" (click)="getLinkAndTittleByKey('concurrenciaParalelismo')"></app-button>
 
+      <app-button [tittleButton]="'Ortogonalidad'" (click)="getLinkAndTittleByKey('ortogonalidad')"></app-button>
+
     </div>
   
     <div class="terminal window" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
@@ -110,6 +112,9 @@
         <pre *ngSwitchCase="'concurrenciaParalelismo'"> - es bastante util para resolver problemas de rendimiento </pre>
         <pre *ngSwitchCase="'concurrenciaParalelismo'">- En cambio si el orden de las tareas es importante y tanto el inicio como el fin tambien, </pre>
         <pre *ngSwitchCase="'concurrenciaParalelismo'"> - la programación paralela es mejor debido a su aislamiento inherente </pre>
+
+        <pre *ngSwitchCase="'ortogonalidad'">- Basicamente significa que cuando hacemos una accion esta no debe modificar lo que no le respecta </pre>
+        <pre *ngSwitchCase="'ortogonalidad'">- Tambien se puede interpretar de manera que cuando se ejecute una instrucción solo se ejecute esta y nada más </pre>
 
       </div>
     
