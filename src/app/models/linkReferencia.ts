@@ -148,6 +148,7 @@ export class LinkReferencia {
         ['migracionesNube', 'https://www.paradigmadigital.com/techbiz/mitos-lift-shift-mentiras-migraciones-cloud/'],
         ['capTeorema', 'https://www.ionos.es/digitalguide/servidores/know-how/que-es-el-cap-theorem/'],
         ['dns', 'https://www.ionos.es/digitalguide/servidores/know-how/que-es-el-servidor-dns-y-como-funciona/'],
+        ['linting', 'https://www.freecodecamp.org/espanol/news/que-es-linting-y-eslint/'],
         // otros
         ['escalamiento', 'https://www.oscarblancarteblog.com/2017/03/07/escalabilidad-horizontal-y-vertical/'],
         ['scraping', 'https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/que-es-el-web-scraping/'],
@@ -292,7 +293,8 @@ export class LinkReferencia {
         ['git', 'https://david-estevez.gitbooks.io/the-git-the-bad-and-the-ugly/content/es/control-de-versiones.html'],
         ['dependencias', 'https://www.hongkiat.com/blog/manage-dependencies-tools-webdev/'],
         ['gradlevsmaven', 'https://www.chakray.com/es/gradle-vs-maven-definiciones-diferencias/'],
-        ['versiones', 'https://ed.team/blog/como-se-deciden-las-versiones-del-software'],
+        ['versionamiento', 'https://ed.team/blog/como-se-deciden-las-versiones-del-software'],
+        ['licencias', 'https://www.bbvaapimarket.com/es/mundo-api/las-5-licencias-de-software-libre-mas-importantes-que-todo-desarrollador-debe-conocer/'],
         // web
         ['spa', 'https://desarrolloweb.com/articulos/que-es-una-spa.html#:~:text=En%20pocas%20palabras%2C%20SPA%20son,html'],
         ['pwa', 'https://www.iebschool.com/blog/progressive-web-apps-analitica-usabilidad/'],
@@ -447,6 +449,7 @@ export class LinkReferencia {
         ['migracionesNube', 'Migraciones hacia la nube y las 6R'],
         ['capTeorema', 'Coherencia, Disponibilidad y tolerancia a la partición'],
         ['dns', 'Servidor DNS'],
+        ['linting', 'Linting'],
         // otros
         ['escalamiento', 'Escalamiento de un sistema'],
         ['scraping', 'Web Scrapping'],
@@ -590,7 +593,8 @@ export class LinkReferencia {
         ['git', 'Gestores de versiones'],
         ['dependencias', 'Gestores de dependencias'],
         ['gradlevsmaven', 'Gradle vs Maven'],
-        ['versiones', 'Manejo de versiones'],
+        ['versionamiento', 'Manejo de versiones'],
+        ['licencias', 'Tipos de licencias'],
         // web
         ['spa', 'Single Page Aplication'],
         ['pwa', 'Progressive Web App'],

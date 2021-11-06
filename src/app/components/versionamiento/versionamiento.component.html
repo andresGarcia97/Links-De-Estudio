@@ -10,7 +10,9 @@
 
     <app-button [tittleButton]="'Gradle VS Maven'" (click)="getLinkAndTittleByKey('gradlevsmaven')"></app-button>
 
-    <app-button [tittleButton]="'Versionamiento'" (click)="getLinkAndTittleByKey('versiones')"></app-button>
+    <app-button [tittleButton]="'Versionamiento'" (click)="getLinkAndTittleByKey('versionamiento')"></app-button>
+
+    <app-button [tittleButton]="'Licencias'" (click)="getLinkAndTittleByKey('licencias')"></app-button>
 
   </div>
   
@@ -43,18 +45,34 @@
     <pre *ngSwitchCase="'gradlevsmaven'"> - Tambien puede gestionar los ciclos de vida, igual que Maven </pre>
     <pre *ngSwitchCase="'gradlevsmaven'"> - Su rendimiento es mayor en comparación directa con Maven </pre>
 
-    <pre *ngSwitchCase="'versiones'">- Las versiones se pueden dar por numero o por estabilidad </pre>
-    <pre *ngSwitchCase="'versiones'">- No existe una regla que indique que siempre se deben manejar asi, pero es util conocer las convenciones </pre>
-    <pre *ngSwitchCase="'versiones'"></pre>
-    <pre *ngSwitchCase="'versiones'"> - Numeros ->  X.Y.Z</pre>
-    <pre *ngSwitchCase="'versiones'">  - El primero numero -> indica la version principal del software </pre>
-    <pre *ngSwitchCase="'versiones'">  - El segundo numero -> indica nuevas funcionalidades en la version mayor </pre>
-    <pre *ngSwitchCase="'versiones'">  - El tercero numero -> es la correción de fallas, parches de seguridad, cambios menores, etc... </pre>
-    <pre *ngSwitchCase="'versiones'"></pre>
-    <pre *ngSwitchCase="'versiones'"> - Estabilidad -> &alpha;, &beta;, RC</pre>
-    <pre *ngSwitchCase="'versiones'">  - Alpha -> version inestable que probablemente contenga errores y deba ser corregida </pre>
-    <pre *ngSwitchCase="'versiones'">  - Beta -> una version más estable que alpha y a la que se le deben hacer pruebas para verificarla </pre>
-    <pre *ngSwitchCase="'versiones'">  - Release Candidate -> son los ultimos toques previos para poder ser lanzada oficialmente </pre>
+    <pre *ngSwitchCase="'versionamiento'">- Las versiones se pueden dar por numero o por estabilidad </pre>
+    <pre *ngSwitchCase="'versionamiento'">- No existe una regla que indique que siempre se deben manejar asi, pero es util conocer las convenciones </pre>
+    <pre *ngSwitchCase="'versionamiento'"></pre>
+    <pre *ngSwitchCase="'versionamiento'"> - Numeros ->  X.Y.Z</pre>
+    <pre *ngSwitchCase="'versionamiento'">  - El primero numero -> indica la version principal del software </pre>
+    <pre *ngSwitchCase="'versionamiento'">  - El segundo numero -> indica nuevas funcionalidades en la version mayor </pre>
+    <pre *ngSwitchCase="'versionamiento'">  - El tercero numero -> es la correción de fallas, parches de seguridad, cambios menores, etc... </pre>
+    <pre *ngSwitchCase="'versionamiento'"></pre>
+    <pre *ngSwitchCase="'versionamiento'"> - Estabilidad -> &alpha;, &beta;, RC</pre>
+    <pre *ngSwitchCase="'versionamiento'">  - Alpha -> version inestable que probablemente contenga errores y deba ser corregida </pre>
+    <pre *ngSwitchCase="'versionamiento'">  - Beta -> una version más estable que alpha y a la que se le deben hacer pruebas para verificarla </pre>
+    <pre *ngSwitchCase="'versionamiento'">  - Release Candidate -> son los ultimos toques previos para poder ser lanzada oficialmente </pre>
+
+    <pre *ngSwitchCase="'licencias'">- Software libre &ne; Software gratuito </pre>
+    <pre *ngSwitchCase="'licencias'"> - Software libre -> puede ser usado como quiera el usuario, sin ninguna restricción </pre>
+    <pre *ngSwitchCase="'licencias'"> - Software gratuito -> aunque este no requiera de un pago, el usuario esta limitado en su actuar </pre>
+    <pre *ngSwitchCase="'licencias'"></pre>
+    <pre *ngSwitchCase="'licencias'">- Licencias GPL -> el desarrollador conserva los derechos de autor, pero permite su libre distribucion, modificacion y uso, </pre>
+    <pre *ngSwitchCase="'licencias'"> - siempre y cuando la nueva version se cobije bajo el mismo tipo de licencia </pre>
+    <pre *ngSwitchCase="'licencias'">- Licencia BSD -> es una licencia permisiva donde se puede vender sin dar acceso al codigo fuente </pre>
+    <pre *ngSwitchCase="'licencias'">- Licencia Apache -> esta licencia permite la modificación y distribución del original en cualquier modalidad, </pre>
+    <pre *ngSwitchCase="'licencias'"> - siempre y cuando se especifique el codigo fuente de terceros usado, presente en la distribución </pre>
+    <pre *ngSwitchCase="'licencias'"></pre>
+    <pre *ngSwitchCase="'licencias'">- Licencias Creative Commons: </pre>
+    <pre *ngSwitchCase="'licencias'"> - Atribucion -> se debe dar credito al autor para poder ser usada, expuesta, distribuida, etc... </pre>
+    <pre *ngSwitchCase="'licencias'"> - No comercial -> su uso esta prohibido para fines comerciales </pre>
+    <pre *ngSwitchCase="'licencias'"> - No derivadas -> la obra no puede ser modificada </pre>
+    <pre *ngSwitchCase="'licencias'"> - Compartir igual -> las derivaciones solo se permiten manteniendo la licencia original y con permiso del autor </pre>
 
   </div>
 
