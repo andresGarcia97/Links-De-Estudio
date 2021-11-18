@@ -26,6 +26,8 @@
 
       <app-button [tittleButton]="'Ortogonalidad'" (click)="getLinkAndTittleByKey('ortogonalidad')"></app-button>
 
+      <app-button [tittleButton]="'Azucar Sintactico'" (click)="getLinkAndTittleByKey('azucarSintactico')"></app-button>
+
     </div>
   
     <div class="terminal window" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
@@ -115,6 +117,12 @@
 
         <pre *ngSwitchCase="'ortogonalidad'">- Basicamente significa que cuando hacemos una accion esta no debe modificar lo que no le respecta </pre>
         <pre *ngSwitchCase="'ortogonalidad'">- Tambien se puede interpretar de manera que cuando se ejecute una instrucción solo se ejecute esta y nada más </pre>
+
+        <pre *ngSwitchCase="'azucarSintactico'">- Termino acuñado para hacer referencia a las adiciones sintacticas de un lenguaje de programación </pre>
+        <pre *ngSwitchCase="'azucarSintactico'">- Estas adiciones se dan con el proposito de hacer que las construcciones sean más faciles de leer y expresar </pre>
+        <pre *ngSwitchCase="'azucarSintactico'">- Esto no cambia el sentido semantico de las expresiones, pero si lo hace más entendible para el ser humano </pre>
+        <pre *ngSwitchCase="'azucarSintactico'">- Son aquellas expresiones que pueden ser borradas sin afectar el funcionamiento del programa, o su rendimiento </pre>
+        <pre *ngSwitchCase="'azucarSintactico'">- Parte del trabajo de los compiladores es desglosar estas expresiones a sus reducciones más basicas </pre>
 
       </div>
     

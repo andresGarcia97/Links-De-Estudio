@@ -12,6 +12,7 @@ export class LinkFuente {
         ['cargasDeScripts', { titulo: 'Carga de scripts', referencia: 'https://manzdev.github.io/script-type/' }],
         ['cssGradients', { titulo: 'CSS gradients', referencia: 'https://www.smashingmagazine.com/2021/02/responsive-image-effects-css-gradients-aspect-ratio/' }],
         ['keyEvents', { titulo: 'Eventos del teclado', referencia: 'https://keycode.info/' }],
+        ['htmlElements', { titulo: 'Etiquetas HTML', referencia: 'https://lenguajehtml.com/html/introduccion/tabla-periodica-html5/' }],
         // backend
         ['sqlTutorial', { titulo: 'SQL Tutorial', referencia: 'https://www.w3schools.com/sql/default.asp' }],
         ['patronesDisenoJava', { titulo: 'Patrones de diseño en Java', referencia: 'https://www.journaldev.com/1827/java-design-patterns-example-tutorial' }],
@@ -25,6 +26,7 @@ export class LinkFuente {
         ['codificacionJava', { titulo: 'Codificación en Java', referencia: 'https://amap.cantabria.es/amap/bin/view/AMAP/CodificacionJava' }],
         ['atributosCalidad', { titulo: 'Atributos de calidad', referencia: 'https://platzi.com/tutoriales/1248-pro-arquitectura/2545-resumen-grafico-de-los-atributos-de-calidad/' }],
         ['expresionesRegulares', { titulo: 'Expresiones regulares', referencia: 'https://regexr.com/' }],
+        ['jsonFormat', { titulo: 'JSON Format', referencia: 'https://jsonformatter.curiousconcept.com/#' }],
         // testing
         ['junit', { titulo: 'Junit', referencia: 'https://www.adictosaltrabajo.com/2016/11/24/primeros-pasos-con-junit-5/' }],
         ['mockito', { titulo: 'Mockito', referencia: 'https://www.baeldung.com/mockito-series' }],

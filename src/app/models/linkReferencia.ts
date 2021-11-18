@@ -122,6 +122,7 @@ export class LinkReferencia {
         ['argumentos', 'https://picodotdev.github.io/blog-bitix/2021/01/en-java-los-argumentos-se-pasan-por-valor-o-por-referencia/'],
         ['concurrenciaParalelismo', 'https://codigofacilito.com/articulos/programacion-concurrente'],
         ['ortogonalidad', 'https://qastack.mx/programming/1527393/what-is-orthogonality'],
+        ['azucarSintactico', 'https://es.wikipedia.org/wiki/Az%C3%BAcar_sint%C3%A1ctico'],
         // metodologias
         ['agiles', 'https://www.iebschool.com/blog/que-son-metodologias-agiles-agile-scrum/'],
         ['scrum', 'https://www.iebschool.com/blog/metodologia-scrum-agile-scrum/'],
@@ -423,6 +424,7 @@ export class LinkReferencia {
         ['argumentos', 'Argumentos por valor y por referencia'],
         ['concurrenciaParalelismo', 'Concurrencia & Paralelismo'],
         ['ortogonalidad', 'Ortogonalidad'],
+        ['azucarSintactico', 'Azucar Sintactico'],
         // metodologias
         ['agiles', '¿ Que son las metodologias agiles ?'],
         ['scrum', 'Scrum'],
