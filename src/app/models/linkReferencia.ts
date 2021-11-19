@@ -38,6 +38,7 @@ export class LinkReferencia {
         ['complejidad', 'http://oscarmoreno.com/la-complejidad-ciclomatica/'],
         ['logging', 'https://itnext.io/logger-or-debugger-which-one-to-choose-3f6a72200b15'],
         ['complejidadCognitiva', 'https://enmilocalfunciona.io/complejidad-cognitiva/'],
+        ['complejidadAlgoritmica', 'https://medium.com/@joseguillermo_/qu%C3%A9-es-la-complejidad-algor%C3%ADtmica-y-con-qu%C3%A9-se-come-2638e7fd9e8c'],
         // calidad
         ['metricas', 'https://searchdatacenter.techtarget.com/es/consejo/23-metricas-de-desarrollo-de-software-que-monitorear-hoy'],
         ['metricasEnCodigo', 'https://blog.desafiolatam.com/metricas-de-calidad-de-software/#:~:text=M%C3%A9tricas%20de%20calidad%20de%20software%20es%20un%20conjunto%20de%20medidas,comparar%20o%20planificar%20estas%20aplicaciones.&text=Tambi%C3%A9n%2C%20es%20necesario%20definir%20las,los%20resultados%20de%20estas%20m%C3%A9tricas'],
@@ -340,6 +341,7 @@ export class LinkReferencia {
         ['complejidad', 'Complejidad Ciclomatica'],
         ['logging', 'Logging VS Debugging'],
         ['complejidadCognitiva', 'Complejidad Cognitiva'],
+        ['complejidadAlgoritmica', 'Complejidad Algoritmica'],
         // calidad
         ['metricas', 'Metricas del Software'],
         ['metricasEnCodigo', 'Metricas del codigo'],

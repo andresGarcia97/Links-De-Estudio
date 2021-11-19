@@ -12,13 +12,15 @@
 
     <app-button [tittleButton]="'Parte #4'" (click)="getLinkAndTittleByKey('practicas4')"></app-button>
 
-    <app-button [tittleButton]="'Ley de Demeter'" (click)="getLinkAndTittleByKey('demeter')"></app-button>
-
     <app-button [tittleButton]="'Complejidad #1'" (click)="getLinkAndTittleByKey('complejidad')"></app-button>
 
     <app-button [tittleButton]="'Logs VS Debug'" (click)="getLinkAndTittleByKey('logging')"></app-button>
 
     <app-button [tittleButton]="'Complejidad #2'" (click)="getLinkAndTittleByKey('complejidadCognitiva')"></app-button>
+
+    <app-button [tittleButton]="'Ley de Demeter'" (click)="getLinkAndTittleByKey('demeter')"></app-button>
+
+    <app-button [tittleButton]="'Complejidad #3'" (click)="getLinkAndTittleByKey('complejidadAlgoritmica')"></app-button>
 
   </div>
 
@@ -85,6 +87,26 @@
     <pre *ngSwitchCase="'complejidadCognitiva'"></pre>
     <pre *ngSwitchCase="'complejidadCognitiva'">- Un codigo con una alta complejidad cognitiva es dificil de mantener, por lo que siempre se busca simplificarla, </pre>
     <pre *ngSwitchCase="'complejidadCognitiva'"> - sin cambiar su comportamiento, para ser más facil de comprender y de modificar </pre>
+
+    <pre *ngSwitchCase="'complejidadAlgoritmica'">- Un algoritmo es una manera de hallar un dato desconocido, o una secuencia de pasos para obtener un resultado </pre>
+    <pre *ngSwitchCase="'complejidadAlgoritmica'">- Los problemas pueden ser resueltos de diversas maneras, sin embargo no todas son optimas o viables </pre>
+    <pre *ngSwitchCase="'complejidadAlgoritmica'">- Esto nos permite medir un algoritmo mediante los recursos y el tiempo necesario para su ejecución </pre>
+    <pre *ngSwitchCase="'complejidadAlgoritmica'">- Tambien se suelen describir mediante el tamaño del conjunto de datos </pre>
+    <pre *ngSwitchCase="'complejidadAlgoritmica'"> - y el crecimiento de las instrucciones para poder cumplir el objetivo </pre>
+    <pre *ngSwitchCase="'complejidadAlgoritmica'">- Para medir la complejidad cada instrucción suele tener un peso determinado, </pre>
+    <pre *ngSwitchCase="'complejidadAlgoritmica'"> - despues de sumarlas y tener el mayor termino, este es el indicativo de la complejidad </pre>
+    <pre *ngSwitchCase="'complejidadAlgoritmica'"></pre>
+    <pre *ngSwitchCase="'complejidadAlgoritmica'">- Grados de complejidad comunes: </pre>
+    <pre *ngSwitchCase="'complejidadAlgoritmica'">- O(1)       -> constante         - O(n<sup>2</sup>) -> cuadratico  </pre>
+    <pre *ngSwitchCase="'complejidadAlgoritmica'">- O(log n)   -> logaritmico       - O(n<sup>3</sup>) -> cubico      </pre>
+    <pre *ngSwitchCase="'complejidadAlgoritmica'">- O(n)       -> lineal            - O(n<sup>a</sup>) -> polinomico  </pre>
+    <pre *ngSwitchCase="'complejidadAlgoritmica'">- O(n log n) -> cuasi-lineal      - O(2<sup>n</sup>) -> exponencial </pre>
+    <pre *ngSwitchCase="'complejidadAlgoritmica'">- O(n!)      -> factorial                                           </pre>
+    <pre *ngSwitchCase="'complejidadAlgoritmica'"></pre>
+    <pre *ngSwitchCase="'complejidadAlgoritmica'">- Sabiendo analizar estas caracteristicas, se puede suponer el costo de los algoritmos, e intentar optimizarlos </pre>
+    <pre *ngSwitchCase="'complejidadAlgoritmica'">- Si la optimización no es prioridad algunos de estos conceptos pierden relevancia, sin embargo</pre>
+    <pre *ngSwitchCase="'complejidadAlgoritmica'"> - conocerlos permite generar mejores soluciones, al tener más perspectivas a la hora de resolver un problema </pre>
+
 
   </div>
 
