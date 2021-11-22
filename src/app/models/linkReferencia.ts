@@ -304,7 +304,8 @@ export class LinkReferencia {
         ['espacio', 'https://www.dsigno.es/blog/diseno-grafico/espacios-negativos-en-diseno-grafico'],
         ['diseno', 'https://seocom.agency/es/blog/diseno-grafico-web/'],
         ['interfacesUsuario', 'https://pensamientodigital.wordpress.com/diseno-de-interfases-de-usuario/'],
-        ['logos', 'https://franciscotorreblanca.es/logotipo-imagotipo-isotipo-e-isologo/']
+        ['logos', 'https://franciscotorreblanca.es/logotipo-imagotipo-isotipo-e-isologo/'],
+        ['experienciasUsuario', 'https://blog.acantu.com/que-es-ux-y-ui/']
     ]);
 
     public tittles: Map<string, string> = new Map([
@@ -606,7 +607,8 @@ export class LinkReferencia {
         ['espacio', 'El uso del espacio para diseñar'],
         ['diseno', 'Diseño grafico'],
         ['interfacesUsuario', 'Diseño de interfaces de usuario'],
-        ['logos', 'Logotipo, Imagotipo, Isotipo, Isologo']
+        ['logos', 'Logotipo, Imagotipo, Isotipo, Isologo'],
+        ['experienciasUsuario', 'Experiencia de usuario']
     ]);
 
     public getLinkAndTittleByKey(key: string = ''): void {

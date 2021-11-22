@@ -35,6 +35,8 @@ export class LinkFuente {
         // curiosidades
         ['primeraApi', { titulo: 'la Primera API', referencia: 'https://api-first-world.com/?utm_source=&utm_campaign=&utm_con=&utm_medium=email&dcid=&mkt_tok=MDY3LVVNRC05OTEAAAF--bLIdG_tuBxUOm0ANexNXnkDOGfFcrIPlKgw4SMiaw2C6ZeMnB26wqsVjRU6EGY9ISqEiqBIzonrSIVnXckxUiE0UOwMsZ5fh8kKkl9k6cM' }],
         ['svgPorn', { titulo: 'SVG Porn', referencia: 'https://svgporn.com/' }],
+        ['benchmarksFront', { titulo: 'Benchmarks in front', referencia: 'https://github.com/krausest/js-framework-benchmark' }],
+        ['roadMapsDevelop', { titulo: 'Mapas de ruta', referencia: 'https://roadmap.sh/roadmaps' }],
         // seguridad
         ['noreferrer', { titulo: 'noreferrer in links', referencia: 'https://web.dev/external-anchors-use-rel-noopener/?utm_source=lighthouse&utm_medium=devtools' }],
         ['owasp', { titulo: 'OWASP', referencia: 'https://owasp.org/' }]
