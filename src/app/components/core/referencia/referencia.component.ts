@@ -7,5 +7,6 @@ import { Component, Input } from '@angular/core';
 export class ReferenciaComponent {
 
   @Input() referencia = '';
+  @Input() titulo = '';
 
 }
