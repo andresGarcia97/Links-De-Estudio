@@ -21,9 +21,10 @@
       <app-button [tittleButton]="'Logos'" (click)="getLinkAndTittleByKey('logos')"></app-button>
 
     </div>
+
+    <app-referencia class="flexbox terminal" [referencia]="referencia" [titulo]="titulo"></app-referencia>
     
-    <div class="terminal window" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
-    <div class="terminal" [ngSwitch]="selection" #terminal>
+    <div class="terminal" [ngSwitch]="selection"  #terminal>
 
       <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
   
@@ -107,7 +108,5 @@
       <pre *ngSwitchCase="'logos'">- Imagotipo -> combinación de imagen y texto, que tambien pueden separarse y ser efectiva </pre>
 
     </div>
-  
-    <app-referencia [referencia]="referencia"></app-referencia>
-  
+    
   </div>

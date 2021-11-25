@@ -20,7 +20,8 @@
 
   </div>
 
-  <div class="terminal window" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
+  <app-referencia class="flexbox terminal" [referencia]="referencia" [titulo]="titulo"></app-referencia>
+
   <div class="terminal" [ngSwitch]="selection" #terminal>
 
     <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
@@ -103,7 +104,5 @@
     <pre *ngSwitchCase="'tecnicasRefactoring'"> - CONTRAS -> se debe realizar un analisis más profundo del porque y su solución </pre>
 
   </div>
-
-  <app-referencia [referencia]="referencia"></app-referencia>
 
 </div>

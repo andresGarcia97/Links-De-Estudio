@@ -16,7 +16,8 @@
   
     </div>
   
-    <div class="terminal window" *ngIf="titulo !== '' "><h2>{{titulo}}</h2></div>
+    <app-referencia class="flexbox terminal" [referencia]="referencia" [titulo]="titulo"></app-referencia>
+
     <div class="terminal" [ngSwitch]="selection" #terminal>
   
       <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
@@ -89,7 +90,5 @@
       <pre *ngSwitchCase="'tiposDePruebas'">- Humo -> se concentran en verificar que con cada cambio que se haga el sistema siga funcionando bien de manera general </pre>
 
     </div>
-  
-    <app-referencia [referencia]="referencia"></app-referencia>
-  
+    
   </div>
