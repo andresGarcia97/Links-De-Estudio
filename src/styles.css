@@ -4,6 +4,7 @@
 
 :root {
   --color-black: black;
+  --color-raisin-black:#1d1e2c;
   --color-jet: #3a3a3a;
   --color-white: white;
   --color-navy-blue: #1976d2;
@@ -23,11 +24,15 @@
 /* inicio del modo oscuro */
 
 .oscuro {
-  background-color: var(--color-black);
+  background-color: var(--color-raisin-black);
 }
 
 .oscuro .terminal {
   background-color: var(--color-white);
+}
+
+.oscuro .terminal .window {
+  background-color: var(--color-jet);
 }
 
 .oscuro .terminal.window::before {
@@ -370,6 +375,10 @@ input:focus {
   padding-bottom: 12px;
   overflow-y: hidden;
   overflow-x: visible;
+  background-color: var(--color-raisin-black);
+}
+
+.terminal .window {
   background-color: var(--color-black);
 }
 
@@ -530,6 +539,12 @@ svg#clouds:hover {
   width: 100%;
   align-content: center;
   align-items: center;
+}
+
+div a.circle-link {
+  margin: 2px;
+  margin-top: 4px;
+  margin-right: 4px;
 }
 
 @media screen and (min-width: 641px) and (max-width: 920px) {
