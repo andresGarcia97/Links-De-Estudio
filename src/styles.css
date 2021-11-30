@@ -61,11 +61,6 @@
   color: var(--color-white);
 }
 
-.oscuro .toolbar {
-  background-color: var(--color-jet);
-  color: var(--color-selective-yellow);
-}
-
 .oscuro svg#clouds {
   fill: var(--color-jet);
 }
