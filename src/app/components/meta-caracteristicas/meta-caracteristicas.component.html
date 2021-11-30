@@ -28,6 +28,8 @@
 
       <app-button [tittleButton]="'Azucar Sintactico'" (click)="getLinkAndTittleByKey('azucarSintactico')"></app-button>
 
+      <app-button [tittleButton]="'Coerción'" (click)="getLinkAndTittleByKey('coercion')"></app-button>
+
     </div>
   
     <app-referencia class="flexbox terminal" [referencia]="referencia" [titulo]="titulo"></app-referencia>
@@ -124,6 +126,13 @@
         <pre *ngSwitchCase="'azucarSintactico'">- Esto no cambia el sentido semantico de las expresiones, pero si lo hace más entendible para el ser humano </pre>
         <pre *ngSwitchCase="'azucarSintactico'">- Son aquellas expresiones que pueden ser borradas sin afectar el funcionamiento del programa, o su rendimiento </pre>
         <pre *ngSwitchCase="'azucarSintactico'">- Parte del trabajo de los compiladores es desglosar estas expresiones a sus reducciones más basicas </pre>
+
+        <pre *ngSwitchCase="'coercion'">- Es la conversion automatica o implicita de un tipo de dato a otro </pre>
+        <pre *ngSwitchCase="'coercion'"> - Ejemplo: de string a number </pre>
+        <pre *ngSwitchCase="'coercion'">- La coerción es implicita, mientras que la conversion puede ser implicita o explicita </pre>
+        <pre *ngSwitchCase="'coercion'">- Esto puede dar a errores o conversiones erroneas si no se especifica que es lo que se necesita </pre>
+        <pre *ngSwitchCase="'coercion'"> - Ejemplo -> '5' + 9 = 59          </pre>
+        <pre *ngSwitchCase="'coercion'"> - Ejemplo -> Number('5') + 9 = 14 </pre>
 
       </div>
         

@@ -14,13 +14,15 @@
 
     <app-button [tittleButton]="'Complejidad #1'" (click)="getLinkAndTittleByKey('complejidad')"></app-button>
 
-    <app-button [tittleButton]="'Logs VS Debug'" (click)="getLinkAndTittleByKey('logging')"></app-button>
-
     <app-button [tittleButton]="'Complejidad #2'" (click)="getLinkAndTittleByKey('complejidadCognitiva')"></app-button>
+    
+    <app-button [tittleButton]="'Complejidad #3'" (click)="getLinkAndTittleByKey('complejidadAlgoritmica')"></app-button>
+    
+    <app-button [tittleButton]="'Logs VS Debug'" (click)="getLinkAndTittleByKey('logging')"></app-button>
 
     <app-button [tittleButton]="'Ley de Demeter'" (click)="getLinkAndTittleByKey('demeter')"></app-button>
 
-    <app-button [tittleButton]="'Complejidad #3'" (click)="getLinkAndTittleByKey('complejidadAlgoritmica')"></app-button>
+    <app-button [tittleButton]="'Nombramiento'" (click)="getLinkAndTittleByKey('estandaresNombramiento')"></app-button>
 
   </div>
 
@@ -108,6 +110,18 @@
     <pre *ngSwitchCase="'complejidadAlgoritmica'">- Si la optimización no es prioridad algunos de estos conceptos pierden relevancia, sin embargo</pre>
     <pre *ngSwitchCase="'complejidadAlgoritmica'"> - conocerlos permite generar mejores soluciones, al tener más perspectivas a la hora de resolver un problema </pre>
 
+    <pre *ngSwitchCase="'estandaresNombramiento'">- Cada lenguaje de programación tiene sus convenciones para nombrar metodos, clases, variables, constantes, etc... </pre>
+    <pre *ngSwitchCase="'estandaresNombramiento'">- Se recomienda seguir estas convenciones para aumentar la legibilidad de nuestro codigo y facilitar el mantenimiento </pre>
+    <pre *ngSwitchCase="'estandaresNombramiento'"></pre>
+    <pre *ngSwitchCase="'estandaresNombramiento'">- camelCase -> se usan mayusculas para diferenciar una palabra de otra </pre>
+    <pre *ngSwitchCase="'estandaresNombramiento'"> - UpperCamelCase  -> la primera letra de las palabras es mayuscula: MiPaginaDeConceptos </pre>
+    <pre *ngSwitchCase="'estandaresNombramiento'"> - lowerCammelCase -> igual al anterior pero la primera letra es minuscula: miPaginaDeConceptos </pre>
+    <pre *ngSwitchCase="'estandaresNombramiento'">- snake_case -> las palabras estan separadas por guion bajo: mi_pagina_de_conceptos </pre>
+    <pre *ngSwitchCase="'estandaresNombramiento'"> - SCREAMING_SNAKE_CASE -> igual que snake case pero en mayusculas: MI_PAGINA_DE_CONCEPTOS </pre>
+    <pre *ngSwitchCase="'estandaresNombramiento'">- kebab-case -> como snake case pero con guion medio: mi-pagina-de-conceptos </pre>
+    <pre *ngSwitchCase="'estandaresNombramiento'"> - Train-Case -> variedad de kebab case pero mayuscula inicial: Mi-Pagina-De-Conceptos </pre>
+    <pre *ngSwitchCase="'estandaresNombramiento'">- leetspeak ó 1337 -> consiste en remplazar caracteres por otros similares o su reflexion: M1P4G1N4D3C0NC3P70$ </pre>
+    <pre *ngSwitchCase="'estandaresNombramiento'">- Notacion hungara -> se usa para crear nombres de variables que indiquen su tipo: nContador ó bActivo </pre>
 
   </div>
 

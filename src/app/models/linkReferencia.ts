@@ -39,6 +39,7 @@ export class LinkReferencia {
         ['logging', 'https://itnext.io/logger-or-debugger-which-one-to-choose-3f6a72200b15'],
         ['complejidadCognitiva', 'https://enmilocalfunciona.io/complejidad-cognitiva/'],
         ['complejidadAlgoritmica', 'https://medium.com/@joseguillermo_/qu%C3%A9-es-la-complejidad-algor%C3%ADtmica-y-con-qu%C3%A9-se-come-2638e7fd9e8c'],
+        ['estandaresNombramiento', 'https://adrianalonso.es/cajon-desatre/convencion-de-nombres-desde-el-camelcase-hasta-el-kebab-case/'],
         // calidad
         ['metricas', 'https://searchdatacenter.techtarget.com/es/consejo/23-metricas-de-desarrollo-de-software-que-monitorear-hoy'],
         ['metricasEnCodigo', 'https://blog.desafiolatam.com/metricas-de-calidad-de-software/#:~:text=M%C3%A9tricas%20de%20calidad%20de%20software%20es%20un%20conjunto%20de%20medidas,comparar%20o%20planificar%20estas%20aplicaciones.&text=Tambi%C3%A9n%2C%20es%20necesario%20definir%20las,los%20resultados%20de%20estas%20m%C3%A9tricas'],
@@ -124,6 +125,7 @@ export class LinkReferencia {
         ['concurrenciaParalelismo', 'https://codigofacilito.com/articulos/programacion-concurrente'],
         ['ortogonalidad', 'https://qastack.mx/programming/1527393/what-is-orthogonality'],
         ['azucarSintactico', 'https://es.wikipedia.org/wiki/Az%C3%BAcar_sint%C3%A1ctico'],
+        ['coercion', 'https://developer.mozilla.org/es/docs/Glossary/Type_coercion'],
         // metodologias
         ['agiles', 'https://www.iebschool.com/blog/que-son-metodologias-agiles-agile-scrum/'],
         ['scrum', 'https://www.iebschool.com/blog/metodologia-scrum-agile-scrum/'],
@@ -343,6 +345,7 @@ export class LinkReferencia {
         ['logging', 'Logging VS Debugging'],
         ['complejidadCognitiva', 'Complejidad Cognitiva'],
         ['complejidadAlgoritmica', 'Complejidad Algoritmica'],
+        ['estandaresNombramiento', 'Estandares de nombramiento'],
         // calidad
         ['metricas', 'Metricas del Software'],
         ['metricasEnCodigo', 'Metricas del codigo'],
@@ -428,6 +431,7 @@ export class LinkReferencia {
         ['concurrenciaParalelismo', 'Concurrencia & Paralelismo'],
         ['ortogonalidad', 'Ortogonalidad'],
         ['azucarSintactico', 'Azucar Sintactico'],
+        ['coercion', 'Coerción'],
         // metodologias
         ['agiles', '¿ Que son las metodologias agiles ?'],
         ['scrum', 'Scrum'],
