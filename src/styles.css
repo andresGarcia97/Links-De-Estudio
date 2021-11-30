@@ -31,10 +31,6 @@
   background-color: var(--color-white);
 }
 
-.oscuro .terminal .window {
-  background-color: var(--color-jet);
-}
-
 .oscuro .terminal.window::before {
   background: var(--color-navy-blue);
   color: var(--color-cultured);
