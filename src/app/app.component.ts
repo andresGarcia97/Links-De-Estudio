@@ -14,6 +14,7 @@ import { FrameworksComponent } from './components/frameworks/frameworks.componen
 import { FuentesComponent } from './components/fuentes/fuentes.component';
 import { GitComponent } from './components/git/git.component';
 import { GlosarioComponent } from './components/glosario/glosario.component';
+import { HardwareComponent } from './components/hardware/hardware.component';
 import { HistoriaUsuarioComponent } from './components/historia-usuario/historia-usuario.component';
 import { MalasPracticasComponent } from './components/malas-practicas/malas-practicas.component';
 import { MetaCaracteristicasComponent } from './components/meta-caracteristicas/meta-caracteristicas.component';
@@ -85,7 +86,7 @@ export class AppComponent {
     // 28 - 31
     MetaCaracteristicasComponent, GlosarioComponent, NubeComponent, PersonasComponent,
     // 32 - 35
-    CalidadComponent, PruebasAvanzadasComponent ];
+    CalidadComponent, PruebasAvanzadasComponent, HardwareComponent];
 
   constructor(private componentFactoryResolver: ComponentFactoryResolver) { }
 

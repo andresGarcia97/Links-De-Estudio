@@ -307,7 +307,9 @@ export class LinkReferencia {
         ['diseno', 'https://seocom.agency/es/blog/diseno-grafico-web/'],
         ['interfacesUsuario', 'https://pensamientodigital.wordpress.com/diseno-de-interfases-de-usuario/'],
         ['logos', 'https://franciscotorreblanca.es/logotipo-imagotipo-isotipo-e-isologo/'],
-        ['experienciasUsuario', 'https://blog.acantu.com/que-es-ux-y-ui/']
+        ['experienciasUsuario', 'https://blog.acantu.com/que-es-ux-y-ui/'],
+        // hardware
+        ['virtualizacion','https://www.redhat.com/es/topics/virtualization/what-is-a-virtual-machine']
     ]);
 
     public tittles: Map<string, string> = new Map([
@@ -612,7 +614,9 @@ export class LinkReferencia {
         ['diseno', 'Diseño grafico'],
         ['interfacesUsuario', 'Diseño de interfaces de usuario'],
         ['logos', 'Logotipo, Imagotipo, Isotipo, Isologo'],
-        ['experienciasUsuario', 'Experiencia de usuario']
+        ['experienciasUsuario', 'Experiencia de usuario'],
+        // hardware
+        ['virtualizacion','Virtualización']
     ]);
 
     public getLinkAndTittleByKey(key: string = ''): void {

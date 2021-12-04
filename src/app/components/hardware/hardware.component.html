@@ -1,0 +1,52 @@
+<div class="content">
+
+    <h2>Hardware</h2>
+  
+    <div class="card-container">
+        
+        <app-button [tittleButton]="'Escalamiento'" (click)="getLinkAndTittleByKey('escalamiento')"></app-button>
+
+        <app-button [tittleButton]="'CLI'" (click)="getLinkAndTittleByKey('cli')"></app-button>
+
+        <app-button [tittleButton]="'virtualizacion'" (click)="getLinkAndTittleByKey('virtualizacion')"></app-button>
+
+    </div>
+
+    <app-referencia class="flexbox terminal" [referencia]="referencia" [titulo]="titulo"></app-referencia>
+    
+    <div class="terminal" [ngSwitch]="selection"  #terminal>
+
+      <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
+
+      <pre *ngSwitchCase="'escalamiento'">- Capacidad de un software para crecer de acuerdo a la demanda </pre>
+      <pre *ngSwitchCase="'escalamiento'"></pre>
+      <pre *ngSwitchCase="'escalamiento'"> -vertical -> la más facil de realizar pero la más costosa</pre>
+      <pre *ngSwitchCase="'escalamiento'"> -vertical -> esta depende directamente de la capacidad de la infraestructura</pre>
+      <pre *ngSwitchCase="'escalamiento'"> -vertical -> las fallas en la infraestructura pueden conllevar a errores colapsantes </pre>
+      <pre *ngSwitchCase="'escalamiento'"></pre>
+      <pre *ngSwitchCase="'escalamiento'"> -horizontal -> esta es más dificil de realizar pero es practicamente ilimitada</pre>
+      <pre *ngSwitchCase="'escalamiento'"> -horizontal -> se basa en tener varios nodos trabajando en paralelo de manera coordinada </pre>
+      <pre *ngSwitchCase="'escalamiento'"> -horizontal -> soporta el balanceo de cargas y tiene una disponibilidad muy alta </pre>
+      <pre *ngSwitchCase="'escalamiento'"> -horizontal -> el mantenimiento se incrementa considerablemente</pre>
+
+      <pre *ngSwitchCase="'cli'">- Es una interfaz de usuario basada en texto </pre>
+      <pre *ngSwitchCase="'cli'">- Antes de la invención del mouse, la unica interacción posible con el Sistema Operativo era mediantes comandos </pre>
+      <pre *ngSwitchCase="'cli'">- Los comandos no son universales, algunos son reconocibles solo por aplicaciones ó Sistemas Operativos especificos </pre>
+      <pre *ngSwitchCase="'cli'">- Pueden funcionar con o sin argumentos, los argumentos son maneras de especificar detalles y/o configuraciones </pre>
+      <pre *ngSwitchCase="'cli'">- Son rapidas y más eficientes ya que no necesitan interfaces graficas para funcionar </pre>
+      <pre *ngSwitchCase="'cli'">- Tambien son más complejas de usar, ya que se basan en la memoria del usuario </pre>
+
+      <pre *ngSwitchCase="'virtualizacion'">- Es un entorno virtual que funciona con su propia CPU, memoria, red, y almacenamiento, pero </pre>
+      <pre *ngSwitchCase="'virtualizacion'"> - que se crea dentro de un sistema de hardware fisico </pre>
+      <pre *ngSwitchCase="'virtualizacion'">- Esto se da mediante un software llamado hipervisor encargado de separar y gestionar los recursos </pre>
+      <pre *ngSwitchCase="'virtualizacion'"> - de la maquina real para que la VM pueda utilizarlos de manera adecuada </pre>
+      <pre *ngSwitchCase="'virtualizacion'">- Las VM estan aisladas del host, y este a su vez puede contener las VM que soporte </pre>
+      <pre *ngSwitchCase="'virtualizacion'">- Una VM permite que se ejecuten diferentes Sistemas Operativos dentro de la misma maquina </pre>
+      <pre *ngSwitchCase="'virtualizacion'"></pre>
+      <pre *ngSwitchCase="'virtualizacion'">- Ventajas </pre>
+      <pre *ngSwitchCase="'virtualizacion'"> - Una ventaja es que permiten aprovechar mejor los recursos de una maquina que no se esten usando </pre>
+      <pre *ngSwitchCase="'virtualizacion'"> - Dado su aislamiento se puede ejecutar software que no es de confianza sin peligro de que dañe al host </pre>
+  
+    </div>
+    
+  </div>

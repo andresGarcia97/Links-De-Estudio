@@ -40,6 +40,7 @@ import { WebComponent } from './components/web/web.component';
 import { FilterPipe } from './pipes/filter.pipe';
 import { FuenteComponent } from './components/core/fuente/fuente.component';
 import { PruebasAvanzadasComponent } from './components/pruebas-avanzadas/pruebas-avanzadas.component';
+import { HardwareComponent } from './components/hardware/hardware.component';
 
 @NgModule({
   declarations: [
@@ -81,7 +82,8 @@ import { PruebasAvanzadasComponent } from './components/pruebas-avanzadas/prueba
     PersonasComponent,
     CalidadComponent,
     FuenteComponent,
-    PruebasAvanzadasComponent
+    PruebasAvanzadasComponent,
+    HardwareComponent
   ],
   imports: [
     BrowserModule,
