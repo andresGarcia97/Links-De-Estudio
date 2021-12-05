@@ -13,6 +13,7 @@ export class LinkFuente {
         ['cssGradients', { titulo: 'CSS gradients', referencia: 'https://www.smashingmagazine.com/2021/02/responsive-image-effects-css-gradients-aspect-ratio/' }],
         ['keyEvents', { titulo: 'Eventos del teclado', referencia: 'https://keycode.info/' }],
         ['htmlElements', { titulo: 'Etiquetas HTML', referencia: 'https://lenguajehtml.com/html/introduccion/tabla-periodica-html5/' }],
+        ['glassmorphism', {titulo: 'Glassmorphism', referencia: 'https://hype4.academy/tools/glassmorphism-generator'}],
         // backend
         ['sqlTutorial', { titulo: 'SQL Tutorial', referencia: 'https://www.w3schools.com/sql/default.asp' }],
         ['patronesDisenoJava', { titulo: 'Patrones de diseño en Java', referencia: 'https://www.journaldev.com/1827/java-design-patterns-example-tutorial' }],
