@@ -309,7 +309,9 @@ export class LinkReferencia {
         ['logos', 'https://franciscotorreblanca.es/logotipo-imagotipo-isotipo-e-isologo/'],
         ['experienciasUsuario', 'https://blog.acantu.com/que-es-ux-y-ui/'],
         // hardware
-        ['virtualizacion','https://www.redhat.com/es/topics/virtualization/what-is-a-virtual-machine']
+        ['virtualizacion', 'https://www.redhat.com/es/topics/virtualization/what-is-a-virtual-machine'],
+        ['nubeVSvirtualizacion', 'Nube Vs https://www.redhat.com/es/topics/cloud-computing/cloud-vs-virtualization'],
+        ['rendering', 'https://www.freecodecamp.org/news/what-exactly-is-client-side-rendering-and-hows-it-different-from-server-side-rendering-bd5c786b340d/']
     ]);
 
     public tittles: Map<string, string> = new Map([
@@ -616,7 +618,9 @@ export class LinkReferencia {
         ['logos', 'Logotipo, Imagotipo, Isotipo, Isologo'],
         ['experienciasUsuario', 'Experiencia de usuario'],
         // hardware
-        ['virtualizacion','Virtualización']
+        ['virtualizacion', 'Virtualización'],
+        ['nubeVSvirtualizacion', 'Nube Vs Virtualizacion'],
+        ['rendering', 'Server-side vs client-side rendering']
     ]);
 
     public getLinkAndTittleByKey(key: string = ''): void {

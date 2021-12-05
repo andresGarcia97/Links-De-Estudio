@@ -10,6 +10,10 @@
 
         <app-button [tittleButton]="'virtualizacion'" (click)="getLinkAndTittleByKey('virtualizacion')"></app-button>
 
+        <app-button [tittleButton]="'Nube Vs VM'" (click)="getLinkAndTittleByKey('nubeVSvirtualizacion')"></app-button>
+
+        <app-button [tittleButton]="'Rendering'" (click)="getLinkAndTittleByKey('rendering')"></app-button>
+
     </div>
 
     <app-referencia class="flexbox terminal" [referencia]="referencia" [titulo]="titulo"></app-referencia>
@@ -47,6 +51,42 @@
       <pre *ngSwitchCase="'virtualizacion'"> - Una ventaja es que permiten aprovechar mejor los recursos de una maquina que no se esten usando </pre>
       <pre *ngSwitchCase="'virtualizacion'"> - Dado su aislamiento se puede ejecutar software que no es de confianza sin peligro de que dañe al host </pre>
   
+      <pre *ngSwitchCase="'nubeVSvirtualizacion'">- Ambos conceptos hacen referencia a la creación de entornos utiles a partir de recursos abstractos, </pre>
+      <pre *ngSwitchCase="'nubeVSvirtualizacion'"> - bajos diferentes conceptos </pre>
+      <pre *ngSwitchCase="'nubeVSvirtualizacion'">- La virtualización nos permite esto teniendo recursos especificos y de manera fisica </pre>
+      <pre *ngSwitchCase="'nubeVSvirtualizacion'">- La nube es un entorno de TI que agrupa, extrae y comparte recursos ajustables en una red </pre>
+      <pre *ngSwitchCase="'nubeVSvirtualizacion'"></pre>
+      <pre *ngSwitchCase="'nubeVSvirtualizacion'">                           Virtualización                    Nube                     </pre>
+      <pre *ngSwitchCase="'nubeVSvirtualizacion'">- Definición                 Tecnologia                   Metodologia                 </pre>
+      <pre *ngSwitchCase="'nubeVSvirtualizacion'"></pre>
+      <pre *ngSwitchCase="'nubeVSvirtualizacion'">- Proposito               Multiples entornos,           Agrupar recursos              </pre>
+      <pre *ngSwitchCase="'nubeVSvirtualizacion'">                        un solo sistema fisico        Con alta disponibilidad         </pre>
+      <pre *ngSwitchCase="'nubeVSvirtualizacion'"></pre>
+      <pre *ngSwitchCase="'nubeVSvirtualizacion'">- Uso                Entregar recursos especificos  Entregar variedad de recursos     </pre>
+      <pre *ngSwitchCase="'nubeVSvirtualizacion'">                         a usuarios especificos        con multiples fines            </pre>
+      <pre *ngSwitchCase="'nubeVSvirtualizacion'"></pre>
+      <pre *ngSwitchCase="'nubeVSvirtualizacion'">- Configuración          Basado en imagenes            Basado en plantillas           </pre>
+      <pre *ngSwitchCase="'nubeVSvirtualizacion'"></pre>
+      <pre *ngSwitchCase="'nubeVSvirtualizacion'">- Duracion                  largo plazo                  Mediano plazo                </pre>
+      <pre *ngSwitchCase="'nubeVSvirtualizacion'"></pre>
+      <pre *ngSwitchCase="'nubeVSvirtualizacion'">- Escalabilidad               vertical                    horizontal                  </pre>
+
+      <pre *ngSwitchCase="'rendering'">- Server-side -> esta funciona convirtiendo archivos estaticos HTML en información utilizable por el navegador </pre>
+      <pre *ngSwitchCase="'rendering'"> - Este proceso no cuenta con un modo de cache, por lo que cada vez que se necesite, este sera pedido al servidor </pre>
+      <pre *ngSwitchCase="'rendering'"> - Su velocidad no solo depende del servidor, si no de la optimización del sitio web, personas conectadas, etc.. </pre>
+      <pre *ngSwitchCase="'rendering'"> - Generalmente cada vez que hay un cambio se vuelve a pedir todo el contenido y no solo lo que se modifico </pre>
+      <pre *ngSwitchCase="'rendering'"> - El lado positivo de este metodo es el SEO ya que es mucho más eficiente y facil para los motores de busqueda </pre>
+      <pre *ngSwitchCase="'rendering'"> - Este enfoque es ideal para contenido estatico, que no se requiera para una interactividad continua con el usuario </pre>
+      <pre *ngSwitchCase="'rendering'"></pre>
+      <pre *ngSwitchCase="'rendering'">- Client-side -> esta forma funciona mediante Javascript que obtendra el documento basico de HTML, </pre>
+      <pre *ngSwitchCase="'rendering'"> - y que despues ejecutara el resto del sitio usando al navegador </pre>
+      <pre *ngSwitchCase="'rendering'">- Este enfoque es más reciente y es utilizado por las librerias y frameworks de Javascript como Vue y Angular </pre>
+      <pre *ngSwitchCase="'rendering'">- Mediante esto el servidor solo se encarga de responder con los datos, el resto se hace en el navegador </pre>
+      <pre *ngSwitchCase="'rendering'">- Las paginas se cargan más rapido ya que solo se modifica lo que se necesite y no todo el archivo </pre>
+      <pre *ngSwitchCase="'rendering'">- Debido a que se necesitan todos los archivos para una carga correcta de la pagina, </pre>
+      <pre *ngSwitchCase="'rendering'"> - la conexión a internet puede afectar la carga inicial </pre>
+      <pre *ngSwitchCase="'rendering'">- Generalmente se requiere de varias a muchas dependencias de terceros, incluyendo los problemas que esto puede tener </pre>
+
     </div>
     
   </div>
