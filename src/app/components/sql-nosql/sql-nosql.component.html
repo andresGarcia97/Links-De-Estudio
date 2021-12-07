@@ -30,6 +30,8 @@
 
     <app-button [tittleButton]="'Algebra Relacional'" (click)="getLinkAndTittleByKey('algebraRelacional')"></app-button>
 
+    <app-button [tittleButton]="'N + 1 Selects'" (click)="getLinkAndTittleByKey('n+1selects')"></app-button>
+
   </div>
 
   <app-referencia class="flexbox terminal" [referencia]="referencia" [titulo]="titulo"></app-referencia>
@@ -174,6 +176,14 @@
     <pre *ngSwitchCase="'algebraRelacional'">- SELECT A.W, B.Y FROM A JOIN B ON (A.V=B.X AND Z>10)                     </pre>
     <pre *ngSwitchCase="'algebraRelacional'">- no hay equivalencia directa, pero se puede lograr combinando operaciones </pre>
     <pre *ngSwitchCase="'algebraRelacional'">- UPDATE A SET indice="100%" WHERE codigo>2000                            </pre>
+
+    <pre *ngSwitchCase="'n+1selects'">- Es un problema cuando se manejan ORM</pre>
+    <pre *ngSwitchCase="'n+1selects'">- Dado una colección de objetos, que a su vez pueden tener otras colecciones objetos como atributos </pre>
+    <pre *ngSwitchCase="'n+1selects'">- Entonces para obtener un objeto inicial, hay que tener todos los objetos asociados a este, aunque no se necesiten </pre>
+    <pre *ngSwitchCase="'n+1selects'">- Actualmente la mayoria de ORM usan o proveen estrategias para evitar este comportamiento </pre>
+    <pre *ngSwitchCase="'n+1selects'">- Generalmente esto no es un problema de rendimiento, pero si ha de convertirse en uno,  </pre>
+    <pre *ngSwitchCase="'n+1selects'"> - hay maneras de solventarlo como cambiar la forma de consultar las entidades o usar objetos en memoria </pre>
+
 
   </div>
 

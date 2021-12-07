@@ -282,6 +282,7 @@ export class LinkReferencia {
         ['orm', 'https://programarfacil.com/blog/que-es-un-orm/'],
         ['consistenciaEventual', 'https://medium.com/@gabanox/consistencia-eventual-en-s3-6ba5b2ecd721'],
         ['algebraRelacional', 'https://sites.google.com/site/basededatosdistribuidastics/algebra-relacional'],
+        ['n+1selects', 'https://stackoverflow.com/questions/97197/what-is-the-n1-selects-problem-in-orm-object-relational-mapping'],
         // uml
         ['uml', 'https://diagramasuml.com/'],
         ['clase', 'https://diagramasuml.com/diagrama-de-clases/'],
@@ -591,6 +592,7 @@ export class LinkReferencia {
         ['orm', 'Mapeo Objetos-Relacional'],
         ['consistenciaEventual', 'Consistencia Eventual'],
         ['algebraRelacional', 'Algebra Relacional'],
+        ['n+1selects', 'N + 1 Selects'],
         // uml
         ['uml', 'Lenguaje Unificado de Modelado'],
         ['clase', 'Diagrama de clases'],
