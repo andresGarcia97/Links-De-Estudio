@@ -153,6 +153,7 @@ export class LinkReferencia {
         ['capTeorema', 'https://www.ionos.es/digitalguide/servidores/know-how/que-es-el-cap-theorem/'],
         ['dns', 'https://www.ionos.es/digitalguide/servidores/know-how/que-es-el-servidor-dns-y-como-funciona/'],
         ['linting', 'https://www.freecodecamp.org/espanol/news/que-es-linting-y-eslint/'],
+        ['httpCodes', 'https://developer.mozilla.org/es/docs/Web/HTTP/Status'],
         // otros
         ['escalamiento', 'https://www.oscarblancarteblog.com/2017/03/07/escalabilidad-horizontal-y-vertical/'],
         ['scraping', 'https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/que-es-el-web-scraping/'],
@@ -464,6 +465,7 @@ export class LinkReferencia {
         ['capTeorema', 'Coherencia, Disponibilidad y tolerancia a la partición'],
         ['dns', 'Servidor DNS'],
         ['linting', 'Linting'],
+        ['httpCodes', 'Codigos Http'],
         // otros
         ['escalamiento', 'Escalamiento de un sistema'],
         ['scraping', 'Web Scrapping'],

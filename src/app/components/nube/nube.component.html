@@ -14,6 +14,8 @@
 
       <app-button [tittleButton]="'Rest & RestFull'" (click)="getLinkAndTittleByKey('restfull')"></app-button>
 
+      <app-button [tittleButton]="'Codigos HTTP'" (click)="getLinkAndTittleByKey('httpCodes')"></app-button>
+
       <app-button [tittleButton]="'Estandares RestFull'" (click)="getLinkAndTittleByKey('caracteristicas')"></app-button>
 
       <app-button [tittleButton]="'Nivel de Madurez'" (click)="getLinkAndTittleByKey('madurezDeUnaApi')"></app-button>
@@ -77,6 +79,34 @@
       <pre *ngSwitchCase="'restfull'"> - Representación de recurso -> se puede añadir a la cabecera de la petición, definiendo el formato que se procesara </pre>
       <pre *ngSwitchCase="'restfull'"> - Operaciones -> Usar los metodos HTTP de manera idonea (GET, POST, PUT DELETE) </pre>
       <pre *ngSwitchCase="'restfull'"> - Hipervinculos -> Se pueden incluir vinculos para más acciones con el objeto, dentro de la respuesta </pre>
+
+      <pre *ngSwitchCase="'httpCodes'">- Respuestas informativas -> 1xx </pre>
+      <pre *ngSwitchCase="'httpCodes'"> - Son poco usadas y se enfocan más a aspectos de la red y la comunicación </pre>
+      <pre *ngSwitchCase="'httpCodes'"></pre>
+      <pre *ngSwitchCase="'httpCodes'">- Respuestas satisfactorias -> 2xx </pre>
+      <pre *ngSwitchCase="'httpCodes'"> - Se usan para denotar el exito de una operación </pre>
+      <pre *ngSwitchCase="'httpCodes'"> - 200 OK -> respuesta estandar para peticiones correctas </pre>
+      <pre *ngSwitchCase="'httpCodes'"> - 201 Created -> solicitud aceptada y se ha creado un nuevo recurso </pre>
+      <pre *ngSwitchCase="'httpCodes'"></pre>
+      <pre *ngSwitchCase="'httpCodes'">- Redirecciones -> 3xx </pre>
+      <pre *ngSwitchCase="'httpCodes'"> - Son cuando es necesario tomar acciones extras para efectuar la acción </pre>
+      <pre *ngSwitchCase="'httpCodes'"> - 300 Multiple Choices -> multiples opciones con varias respuestas </pre>
+      <pre *ngSwitchCase="'httpCodes'"> - 301 Moved Permanently -> la URI solicitada ha sido movida a otra URI </pre>
+      <pre *ngSwitchCase="'httpCodes'"> - 304 Not Modified -> para propositos de cache, indicando que no ha sido modificado </pre>
+      <pre *ngSwitchCase="'httpCodes'"></pre>
+      <pre *ngSwitchCase="'httpCodes'">- Errores del cliente -> 4xx </pre>
+      <pre *ngSwitchCase="'httpCodes'"> - La solicitud es incorrecta ya sea por sintaxis o información errada </pre>
+      <pre *ngSwitchCase="'httpCodes'"> - 400 Bad request -> la solicitud no puede ser interpretada por una sintaxis invalida </pre>
+      <pre *ngSwitchCase="'httpCodes'"> - 401 Unauthorized -> la autenticacion del usuario es posible pero incorrecta </pre>
+      <pre *ngSwitchCase="'httpCodes'"> - 403 Forbidden -> no se cuenta con los permisos necesarios para el contenido </pre>
+      <pre *ngSwitchCase="'httpCodes'"> - 404 Not Found -> el contenido solicitado no pudo ser encontrado </pre>
+      <pre *ngSwitchCase="'httpCodes'"></pre>
+      <pre *ngSwitchCase="'httpCodes'">- Errores del servidor -> 5xx </pre>
+      <pre *ngSwitchCase="'httpCodes'"> - La solicitud es valida pero no pudo ser ejecutada debido a errores del servidor </pre>
+      <pre *ngSwitchCase="'httpCodes'"> - 500 Internal Server Error -> el servidor ha tenido un error que no sabe manejar </pre>
+      <pre *ngSwitchCase="'httpCodes'"> - 501 Not Implemented -> el metodo solicitado no es soportado por el servidor </pre>
+      <pre *ngSwitchCase="'httpCodes'"> - 502 Bad Gateway -> al obtener una puerta de enlace se obtiene una respuesta invalida </pre>
+      <pre *ngSwitchCase="'httpCodes'"> - 503 Service unavailable -> servicio no disponible </pre>
   
       <pre *ngSwitchCase="'caracteristicas'">- Buenas practicas para crear APIs 100% restfull</pre>
       <pre *ngSwitchCase="'caracteristicas'"></pre>
