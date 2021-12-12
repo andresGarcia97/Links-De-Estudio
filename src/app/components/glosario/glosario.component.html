@@ -5,9 +5,10 @@
 
   <div class="card-container">
 
-    <a *ngFor="let componente of onlyComponents | filter : search" class="card card-small card-no-size" target="_blank"
+    <a *ngFor="let componente of onlyComponents | filter : search" class="card card-small card-no-size tooltip" target="_blank"
       rel="noreferrer" [href]="componente.referencia">
-      {{componente.titulo}} &#32; - &#32; {{componente.componente}}
+      {{componente.titulo}}
+      <span class="tooltiptext">Seccion: {{componente.componente}}</span>
     </a>
 
   </div>
@@ -15,8 +16,8 @@
   <div class="card-container">
 
     <a *ngFor="let linkAndFuente of onlyFuentes | filter : search" class="card card-small card-no-size" target="_blank"
-      rel="noreferrer" [href]="linkAndFuente.value">
-      <span>{{linkAndFuente.name}}</span>
+      rel="noreferrer" [href]="linkAndFuente.referencia">
+      <span>{{linkAndFuente.titulo}}</span>
     </a>
 
   </div>
