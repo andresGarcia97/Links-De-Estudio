@@ -12,17 +12,17 @@ export class GlosarioComponent {
 
   referencia = new LinkReferencia();
 
-  links = this.referencia.links;
-
-  tittles = this.referencia.tittles;
-
-  onlyLinks = Array.from(this.links, ([name, value]) => ({ name, value }));
+  componentes = this.referencia.components;
 
   fuentes = new LinkFuente().fuentes;
 
   previewFuentes = Array.from(this.fuentes, ([name, value]) => ({ name, value }));
 
   onlyFuentes = this.convertArrayObjectToArrayStrings(this.previewFuentes);
+
+  previewComponents = Array.from(this.componentes, ([name, value]) => ({ name, value }));
+
+  onlyComponents = this.convertArrayObjectToArrayString(this.previewComponents);
 
   protected convertArrayObjectToArrayStrings(namesAndValues: Array<any>): Array<object> {
     const onlyFuentes = new Array();
@@ -31,6 +31,15 @@ export class GlosarioComponent {
       onlyFuentes.push(newElement);
     });
     return onlyFuentes;
+  }
+
+  protected convertArrayObjectToArrayString(namesAndValues: Array<any>): Array<object> {
+    const onlyComponents = new Array();
+    namesAndValues.forEach((element) => {
+      const newElement = { titulo: element.value.titulo, referencia: element.value.referencia, componente: element.value.component };
+      onlyComponents.push(newElement);
+    });
+    return onlyComponents;
   }
 
 }
