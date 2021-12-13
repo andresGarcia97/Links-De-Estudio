@@ -334,6 +334,7 @@ export class LinkReferencia {
         ['interfacesUsuario', new Referencia('https://pensamientodigital.wordpress.com/diseno-de-interfases-de-usuario/', 'Diseño de interfaces de usuario', 'web')],
         ['logos', new Referencia('https://franciscotorreblanca.es/logotipo-imagotipo-isotipo-e-isologo/', 'Logotipo, Imagotipo, Isotipo, Isologo', 'web')],
         ['experienciasUsuario', new Referencia('https://blog.acantu.com/que-es-ux-y-ui/', 'Experiencia de usuario', 'web')],
+        ['gestalt', new Referencia('https://imborrable.com/blog/teoria-de-la-gestalt/', 'Teoria de Gestalt', 'web')],
     ]);
 
     public getLinkAndTittleByKey(key: string = ''): void {
