@@ -30,6 +30,8 @@
 
       <app-button [tittleButton]="'Coerción'" (click)="getLinkAndTittleByKey('coercion')"></app-button>
 
+      <app-button [tittleButton]="'BoilerPlate'" (click)="getLinkAndTittleByKey('boilerPlate')"></app-button>
+
     </div>
   
     <app-referencia class="flexbox terminal" [referencia]="referencia" [titulo]="titulo"></app-referencia>
@@ -133,6 +135,13 @@
         <pre *ngSwitchCase="'coercion'">- Esto puede dar a errores o conversiones erroneas si no se especifica que es lo que se necesita </pre>
         <pre *ngSwitchCase="'coercion'"> - Ejemplo -> '5' + 9 = 59          </pre>
         <pre *ngSwitchCase="'coercion'"> - Ejemplo -> Number('5') + 9 = 14 </pre>
+
+        <pre *ngSwitchCase="'boilerPlate'">- Este hace referencia a codigo repetitivo que no siempre es util, pero si requerido, aun aveces cuando no vaya a ser usado </pre>
+        <pre *ngSwitchCase="'boilerPlate'">- Esto tambien aplica para fragmentos de codigo propios, ya que se reutiliza codigo, con solo copiar y pegar </pre>
+        <pre *ngSwitchCase="'boilerPlate'">- El boiler plate es diferente del scafolding, ya que este primero es más de copiar y pegar, </pre>
+        <pre *ngSwitchCase="'boilerPlate'"> - en cambio el segundo esta relacionado con mantener estandares y formas de uso </pre>
+        <pre *ngSwitchCase="'boilerPlate'">- Un ejemplo de esto es el uso de getters y setters en POO para modificar los objetos, </pre>
+        <pre *ngSwitchCase="'boilerPlate'"> - aunque estos cambian de acuerdo al objeto, su función y su forma son casi siempre identicas </pre>
 
       </div>
         

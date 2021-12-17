@@ -32,6 +32,8 @@
 
     <app-button [tittleButton]="'N + 1 Selects'" (click)="getLinkAndTittleByKey('n+1selects')"></app-button>
 
+    <app-button [tittleButton]="'Indices'" (click)="getLinkAndTittleByKey('indices')"></app-button>
+
   </div>
 
   <app-referencia class="flexbox terminal" [referencia]="referencia" [titulo]="titulo"></app-referencia>
@@ -184,6 +186,12 @@
     <pre *ngSwitchCase="'n+1selects'">- Generalmente esto no es un problema de rendimiento, pero si ha de convertirse en uno,  </pre>
     <pre *ngSwitchCase="'n+1selects'"> - hay maneras de solventarlo como cambiar la forma de consultar las entidades o usar objetos en memoria </pre>
 
+    <pre *ngSwitchCase="'indices'">- Es una manera de optimizar las consultas y mejorar la eficiencia de una BD </pre>
+    <pre *ngSwitchCase="'indices'">- Esto se logra mediante estructuras binarias asociadas a cada registro de la BD </pre>
+    <pre *ngSwitchCase="'indices'">- La indexación puede presentar un problema para la inserción, modificación y borrado de los datos, ya que esto  </pre>
+    <pre *ngSwitchCase="'indices'"> - significa la actualización de los indices asociados </pre>
+    <pre *ngSwitchCase="'indices'">- Tener demasiados indices tambien es contraproducente ya que pueden retrasar el procesamiento de los datos </pre>
+    <pre *ngSwitchCase="'indices'">- Cada motor puede manejar de diferentes maneras los indices, y esto a su vez afectar el rendimiento de cada tipo </pre>
 
   </div>
 
