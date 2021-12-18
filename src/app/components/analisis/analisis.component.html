@@ -16,6 +16,8 @@
 
       <app-button [tittleButton]="'Tarjetas CRC'" (click)="getLinkAndTittleByKey('crc')"></app-button>
 
+      <app-button [tittleButton]="'Avestruz'" (click)="getLinkAndTittleByKey('avestruz')"></app-button>
+
     </div>
     
     <app-referencia class="flexbox terminal" [referencia]="referencia" [titulo]="titulo"></app-referencia>
@@ -78,6 +80,11 @@
       <pre *ngSwitchCase="'crc'"> - Clase -> Nombre de la clase en si, el cual debe ser diciente y que ayude a entender el porque de su creación </pre>
       <pre *ngSwitchCase="'crc'"> - Responsabilidad -> cual es la función ó funciones de la clase, entre más especifica mejor </pre>
       <pre *ngSwitchCase="'crc'"> - Colaborador -> son otras clases ó entidades que son necesarias para el correcto funcionamiento de la clase </pre>
+
+      <pre *ngSwitchCase="'avestruz'">- Es una estrategia donde se ignora un problema, en vez de buscar una solución para este </pre>
+      <pre *ngSwitchCase="'avestruz'">- Esto es debido a la premisa de suponer de que son problemas increiblemente raros </pre>
+      <pre *ngSwitchCase="'avestruz'">- Al ser problemas raros, es más costoso y complejo evitar que sucedan a controlarlos cuando suceden </pre>
+      <pre *ngSwitchCase="'avestruz'">- Además de que se agregaria complejidad extra por un esceneario poco probable </pre>
 
     </div>
     
