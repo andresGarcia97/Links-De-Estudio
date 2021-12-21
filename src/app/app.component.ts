@@ -18,6 +18,7 @@ import { HardwareComponent } from './components/hardware/hardware.component';
 import { HistoriaUsuarioComponent } from './components/historia-usuario/historia-usuario.component';
 import { MalasPracticasComponent } from './components/malas-practicas/malas-practicas.component';
 import { MetaCaracteristicasComponent } from './components/meta-caracteristicas/meta-caracteristicas.component';
+import { MetaEstructuraComponent } from './components/meta-estructura/meta-estructura.component';
 import { MetodologiasComponent } from './components/metodologias/metodologias.component';
 import { NubeComponent } from './components/nube/nube.component';
 import { OtrosComponent } from './components/otros/otros.component';
@@ -86,7 +87,7 @@ export class AppComponent {
     // 28 - 31
     MetaCaracteristicasComponent, GlosarioComponent, NubeComponent, PersonasComponent,
     // 32 - 35
-    CalidadComponent, PruebasAvanzadasComponent, HardwareComponent];
+    CalidadComponent, PruebasAvanzadasComponent, HardwareComponent, MetaEstructuraComponent];
 
   constructor(private componentFactoryResolver: ComponentFactoryResolver) { }
 

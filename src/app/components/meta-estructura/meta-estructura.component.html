@@ -1,0 +1,95 @@
+<div class="content">
+
+    <h2>Meta estructuras</h2>
+  
+    <div class="card-container">
+        
+      <app-button [tittleButton]="'Scope'" (click)="getLinkAndTittleByKey('scope')"></app-button>
+  
+      <app-button [tittleButton]="'Precedencia'" (click)="getLinkAndTittleByKey('precedencia')"></app-button>
+    
+      <app-button [tittleButton]="'Organización'" (click)="getLinkAndTittleByKey('verticalAndHorizontal')"></app-button>
+  
+      <app-button [tittleButton]="'Expresiones regulares'" (click)="getLinkAndTittleByKey('expresionesRegulares')"></app-button>
+
+      <app-button [tittleButton]="'Estructuras de datos'" (click)="getLinkAndTittleByKey('estructurasDatos')"></app-button>
+        
+    </div>
+  
+    <app-referencia class="flexbox terminal" [referencia]="referencia" [titulo]="titulo"></app-referencia>
+  
+    <div class="terminal" [ngSwitch]="selection" #terminal>
+      
+      <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
+  
+      <pre *ngSwitchCase="'scope'">- Se puede definir como el alcance que tendran las variables en tu codigo </pre>
+      <pre *ngSwitchCase="'scope'"></pre>
+      <pre *ngSwitchCase="'scope'">- Scope Local -> tus variables seran accesibles solamente en el ambito declarado como lo puede ser:  </pre>
+      <pre *ngSwitchCase="'scope'"> - dentro de una función, dentro de una clase, dentro de una sentencia de control </pre>
+      <pre *ngSwitchCase="'scope'"></pre>
+      <pre *ngSwitchCase="'scope'">- Scope Global -> se pueden acceder desde cualquier parte de tu codigo, más aun asi no se recomiendan</pre>
+      <pre *ngSwitchCase="'scope'"> - En el caso de Javascript se recomienda usar <strong>let</strong> y <strong>const</strong> para la declaración de variables, ya que el <strong>var</strong> puede traer bugs consigo</pre>
+  
+      <pre *ngSwitchCase="'precedencia'">- los operadores en las expresiones tienen una jeararquia predeterminada que determina el orden de evaluación </pre>
+      <pre *ngSwitchCase="'precedencia'"> - Operadores con igual prioridad se evaluan de izquierda a derecha </pre>
+      <pre *ngSwitchCase="'precedencia'"> - Operadores logicos y de operación bit a bit de izquierda a derecha </pre>
+      <pre *ngSwitchCase="'precedencia'"> - Operadores matematicos, se respeta la jeararquia matematica, a menos que se involucren parantesis </pre>
+      <pre *ngSwitchCase="'precedencia'"> - Los parentesis afectan el orden de evaluación, al mismo tiempo que permiten asociar expresiones </pre>
+      <pre *ngSwitchCase="'precedencia'"> - La precedencia puede cambiar de lenguaje a lenguaje, por lo que se recomienda saber las especificaciones de cada uno </pre>
+  
+      <pre *ngSwitchCase="'verticalAndHorizontal'">- Una buena estructura es primordial para todo proyecto </pre>
+      <pre *ngSwitchCase="'verticalAndHorizontal'"></pre>
+      <pre *ngSwitchCase="'verticalAndHorizontal'">- Estructura horizontal -> estaba fuertemente ligado al modelo en cascada, donde se realizaban capas transversales </pre>
+      <pre *ngSwitchCase="'verticalAndHorizontal'">  - a todo el sistema, de manera que todo los componentes estaban separados entre si </pre>
+      <pre *ngSwitchCase="'verticalAndHorizontal'">- Esta estructura suele ser compleja de entender si no se entiende el negocio, además de que no todos </pre>
+      <pre *ngSwitchCase="'verticalAndHorizontal'">  - necesitan de las mismas partes para funcionar </pre>
+      <pre *ngSwitchCase="'verticalAndHorizontal'"></pre>
+      <pre *ngSwitchCase="'verticalAndHorizontal'">    Products       Orders                  Customers                   </pre>
+      <pre *ngSwitchCase="'verticalAndHorizontal'">-------&darr;-------------&darr;-----   Views      -----&darr;---------</pre>
+      <pre *ngSwitchCase="'verticalAndHorizontal'">-------&darr;-------------&darr;-----  Presenter   -----&darr;---------</pre>
+      <pre *ngSwitchCase="'verticalAndHorizontal'">-------&darr;-------------&darr;-----   Domain     -----&darr;---------</pre>
+      <pre *ngSwitchCase="'verticalAndHorizontal'">------ &darr;-------------&darr;-----  Services    -----&darr;---------</pre>
+      <pre *ngSwitchCase="'verticalAndHorizontal'">-------&darr;-------------&darr;-----  Entities    -----&darr;---------</pre>
+      <pre *ngSwitchCase="'verticalAndHorizontal'">-------&darr;-------------&darr;----- Repositories -----&darr;---------</pre>
+      <pre *ngSwitchCase="'verticalAndHorizontal'">-------&darr;-------------&darr;-----  DataSource  -----&darr;---------</pre>
+      <pre *ngSwitchCase="'verticalAndHorizontal'"></pre>
+      <pre *ngSwitchCase="'verticalAndHorizontal'">- Estructura vertical -> en esta organización prima el dominio, por lo que cada capa esta aislada entre si </pre>
+      <pre *ngSwitchCase="'verticalAndHorizontal'">  - toda la estructura de un componente es independiente entre si, y más facil de modificar </pre>
+      <pre *ngSwitchCase="'verticalAndHorizontal'"></pre>
+      <pre *ngSwitchCase="'verticalAndHorizontal'">    Products           Orders            Customers        </pre>
+      <pre *ngSwitchCase="'verticalAndHorizontal'">|    Views     |   |    Views     |   |    Views     |    </pre>
+      <pre *ngSwitchCase="'verticalAndHorizontal'">|   Presenter  |   |   Presenter  |   |   Presenter  |    </pre>
+      <pre *ngSwitchCase="'verticalAndHorizontal'">|    Domain    |   |    Domain    |   |    Domain    |    </pre>
+      <pre *ngSwitchCase="'verticalAndHorizontal'">|   Services   |   |   Services   |   |   Services   |    </pre>
+      <pre *ngSwitchCase="'verticalAndHorizontal'">|   Entities   |   |   Entities   |   |   Entities   |    </pre>
+      <pre *ngSwitchCase="'verticalAndHorizontal'">| Repositories |   | Repositories |   | Repositories |    </pre>
+      <pre *ngSwitchCase="'verticalAndHorizontal'">|  DataSource  |   |  DataSource  |   |  DataSource  |    </pre>
+  
+      <pre *ngSwitchCase="'expresionesRegulares'">- Una expresion regular es una forma de buscar coincidencias o patrones de manera optimizada </pre>
+      <pre *ngSwitchCase="'expresionesRegulares'">- No solo permite encontrar coincidencia, tambien permite modificar lo que se haya encontrado </pre>
+      <pre *ngSwitchCase="'expresionesRegulares'">- Las expresiones regulares se basan en diagramas de estado, ya que todas las transiciones se deben cumplir, </pre>
+      <pre *ngSwitchCase="'expresionesRegulares'"> - para que el texto a evaluar cumpla con la condicion dada de la expresion </pre>
+      <pre *ngSwitchCase="'expresionesRegulares'">- Estas expresiones en si se escriben igual, y son independientes del lenguaje que se use </pre>
+      <pre *ngSwitchCase="'expresionesRegulares'">- Los compiladores de muchos lenguajes se basan en analizadores sintacticos, para analizar el codigo copiado, </pre>
+      <pre *ngSwitchCase="'expresionesRegulares'"> - estos a su vez se basan en expresiones regulares para saber si se cumplen con las condiciones del lenguaje </pre>
+
+      <pre *ngSwitchCase="'estructurasDatos'">- Es un concepto general que comparten muchos lenguajes de programación </pre>
+      <pre *ngSwitchCase="'estructurasDatos'">- Que a su vez cambia segun el lenguaje, dependiendo de cada implementación </pre>
+      <pre *ngSwitchCase="'estructurasDatos'">- Una estructura es una colección de valores organizados, sobre los cuales se pueden administrar y hacer operaciones con ellos </pre>
+      <pre *ngSwitchCase="'estructurasDatos'">- Tambien existe una manera estandarizada o implementada por el mismo lenguaje para acceder a los datos </pre>
+      <pre *ngSwitchCase="'estructurasDatos'"></pre>
+      <pre *ngSwitchCase="'estructurasDatos'">- Tipos de estructuras </pre>
+      <pre *ngSwitchCase="'estructurasDatos'"> - Contiguamente asignadas -> compuestas por bloques de memorias unicos e incluyen a: </pre>
+      <pre *ngSwitchCase="'estructurasDatos'">  - arrays, matrices, heaps, hash tables</pre>
+      <pre *ngSwitchCase="'estructurasDatos'"></pre>
+      <pre *ngSwitchCase="'estructurasDatos'"> - Estructuas enlazadas -> son distintos fragmentos de memoria unidos por punteros e incluyen: </pre>
+      <pre *ngSwitchCase="'estructurasDatos'">  - listas, arboles y grafos </pre>
+      <pre *ngSwitchCase="'estructurasDatos'"></pre>
+      <pre *ngSwitchCase="'estructurasDatos'"> - Contenedores -> permiten almacenar y recuperar datos en un orden determinado sin importar el contenido y contienen: </pre>
+      <pre *ngSwitchCase="'estructurasDatos'">  - pilas y colas </pre>
+      <pre *ngSwitchCase="'estructurasDatos'"></pre>
+      <pre *ngSwitchCase="'estructurasDatos'">- Existen más tipos de estructuras, pero estans son de las más comunes y usadas generalmente </pre>
+  
+    </div>
+  
+  </div>

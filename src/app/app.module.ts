@@ -41,6 +41,7 @@ import { FilterPipe } from './pipes/filter.pipe';
 import { FuenteComponent } from './components/core/fuente/fuente.component';
 import { PruebasAvanzadasComponent } from './components/pruebas-avanzadas/pruebas-avanzadas.component';
 import { HardwareComponent } from './components/hardware/hardware.component';
+import { MetaEstructuraComponent } from './components/meta-estructura/meta-estructura.component';
 
 @NgModule({
   declarations: [
@@ -83,7 +84,8 @@ import { HardwareComponent } from './components/hardware/hardware.component';
     CalidadComponent,
     FuenteComponent,
     PruebasAvanzadasComponent,
-    HardwareComponent
+    HardwareComponent,
+    MetaEstructuraComponent
   ],
   imports: [
     BrowserModule,

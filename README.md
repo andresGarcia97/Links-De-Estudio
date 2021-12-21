@@ -15,9 +15,8 @@ Para aprender más puedes seguir consultando por tu cuenta.
 ```
 ## Iconos
 
-Iconos sacados de [logo.wine](https://www.logo.wine/)
+[logo.wine](https://www.logo.wine/)
+[flaticon.com](https://www.flaticon.com/)
+[https://freeicons.io](https://freeicons.io/)
 
-## otros iconos 
-
-formato svg de [flaticon.com](https://www.flaticon.com/)
 
