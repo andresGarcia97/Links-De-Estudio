@@ -22,6 +22,10 @@
 
     <app-button [tittleButton]="'Carrera'" (click)="getLinkAndTittleByKey('condicionDeCarrera')"></app-button>
 
+    <app-button [tittleButton]="'Honeypot'" (click)="getLinkAndTittleByKey('honeypot')"></app-button>
+
+    <app-button [tittleButton]="'Zero Day Exploit'" (click)="getLinkAndTittleByKey('zeroDayExploit')"></app-button>
+
   </div>
 
   <app-referencia class="flexbox terminal" [referencia]="referencia" [titulo]="titulo"></app-referencia>
@@ -208,6 +212,43 @@
     <pre *ngSwitchCase="'condicionDeCarrera'"></pre>
     <pre *ngSwitchCase="'condicionDeCarrera'">- Estos errores se pueden solventar al manejar los hilos y subprocesos de manera correcta, </pre>
     <pre *ngSwitchCase="'condicionDeCarrera'">  - más no se pueden eliminar totalmente, debido a la naturaleza multihilos y procesos de la informatica </pre>
+
+    <pre *ngSwitchCase="'honeypot'">- Son una forma de defensa para vectores de ataque, phishing, exploits y malware, funcionando como un sebo para los atacantes, </pre>
+    <pre *ngSwitchCase="'honeypot'"> - resguardando la información valiosa, al desviar el trafico de los atacantes hacia esfuerzos inutiles </pre>
+    <pre *ngSwitchCase="'honeypot'">- No son una medida infalible ya que si el atacante se da cuenta lo evitara, </pre>
+    <pre *ngSwitchCase="'honeypot'"> - por lo que se deben tener más medidas de seguridad internas, externas y perimetrales </pre>
+    <pre *ngSwitchCase="'honeypot'">- Tambien es necesario tener en cuenta que pueden ser un arma de doble filo al servir como distracción para un ataque, </pre>
+    <pre *ngSwitchCase="'honeypot'"> - o como punto de acceso hacia nuestro sistema; aun asi siguen siendo una gran opción para reforzar nuestra seguridad </pre>
+
+    <pre *ngSwitchCase="'zeroDayExploit'">- Son vulnerabilidades de software recien descubiertas sin medidas para solucionarlas </pre>
+    <pre *ngSwitchCase="'zeroDayExploit'">- Estos ataques suceden antes o recien sean descubiertas las vulnerabilidades por lo que se han tenido "cero dias" para arreglarlo </pre>
+    <pre *ngSwitchCase="'zeroDayExploit'">- Debido a que no se tienen registros de estos problemas, es comun que los ataques tengan exito hasta que el sistema sea parchado </pre>
+    <pre *ngSwitchCase="'zeroDayExploit'"></pre>
+    <pre *ngSwitchCase="'zeroDayExploit'">- Esta tactica es usada generalmente por: </pre>
+    <pre *ngSwitchCase="'zeroDayExploit'"> - Hacktivistas -> quienes visibilizan los ataques para llamar la atención por una causa </pre>
+    <pre *ngSwitchCase="'zeroDayExploit'"> - Cibercriminales -> hackers cuyo objetivo es tener ganancias o destruir sistemas </pre>
+    <pre *ngSwitchCase="'zeroDayExploit'"> - Espionaje corporativo -> hackers de empresas atacando a la competencia </pre>
+    <pre *ngSwitchCase="'zeroDayExploit'"> - Guerra informatica -> paises o entidades politicas que atacan la infraestructura cibernetica de otro pais </pre>
+    <pre *ngSwitchCase="'zeroDayExploit'"></pre>
+    <pre *ngSwitchCase="'zeroDayExploit'">- Blancos comunes: </pre>
+    <pre *ngSwitchCase="'zeroDayExploit'"> - Sistemas operativos</pre>
+    <pre *ngSwitchCase="'zeroDayExploit'"> - Navegadores web</pre>
+    <pre *ngSwitchCase="'zeroDayExploit'"> - Aplicaciones de oficina</pre>
+    <pre *ngSwitchCase="'zeroDayExploit'"> - Codigo abierto </pre>
+    <pre *ngSwitchCase="'zeroDayExploit'"> - Hardware, firmware e Internet de las cosas (IoT)</pre>
+    <pre *ngSwitchCase="'zeroDayExploit'"></pre>
+    <pre *ngSwitchCase="'zeroDayExploit'">- Identificar ataques del dia 0: </pre>
+    <pre *ngSwitchCase="'zeroDayExploit'"> - Debido a su mutabilidad y a su desconocimiento no hay medidas infalibles para detectarlos</pre>
+    <pre *ngSwitchCase="'zeroDayExploit'"> - Se recomienda usar bases de datos de malware existentes ya que estas se actualizan con relativa rapidez </pre>
+    <pre *ngSwitchCase="'zeroDayExploit'"> - Puede ser util examinar la interacción de los archivos entrantes con el sistema en vez de su codigo, </pre>
+    <pre *ngSwitchCase="'zeroDayExploit'">  - y asi detectar si su comportamiento es malicioso </pre>
+    <pre *ngSwitchCase="'zeroDayExploit'"> - Aprendizaje automatico basandose en datos y situaciones previas del sistema </pre>
+    <pre *ngSwitchCase="'zeroDayExploit'"></pre>
+    <pre *ngSwitchCase="'zeroDayExploit'">- Formas de protección: </pre>
+    <pre *ngSwitchCase="'zeroDayExploit'"> - Actualizaciones constantes del software y de los sistemas operativos </pre>
+    <pre *ngSwitchCase="'zeroDayExploit'"> - Evitar usar aplicaciones de terceros que no sean necesarias </pre>
+    <pre *ngSwitchCase="'zeroDayExploit'"> - Educación basica para los usuarios y asi evitar errores comunes </pre>
+    <pre *ngSwitchCase="'zeroDayExploit'"> - Usar software antivirus </pre>
 
   </div>
 
