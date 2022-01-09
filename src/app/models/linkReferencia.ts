@@ -1,8 +1,14 @@
+// tslint:disable:max-line-length
+import { Content } from './content';
+
 export class LinkReferencia {
 
     selection = '';
     referencia = '';
     titulo = '';
+
+    content = new Content();
+    items = this.content.temas;
 
     public components: Map<string, Referencia> = new Map([
         // agiles
@@ -36,7 +42,6 @@ export class LinkReferencia {
         ['practicas3', new Referencia('https://velneo.es/15-buenas-practicas-proyectos-desarrollo-software/', 'Buenas practicas parte #3', 'buenas-practicas')],
         ['practicas4', new Referencia('http://www.noussintelligence.com/desarrollo-software-buenas-practicas-recomendaciones/', 'Buenas practicas parte #4', 'buenas-practicas')],
         ['demeter', new Referencia('https://www.adictosaltrabajo.com/2015/07/24/ley-de-demeter/', 'Ley de Demeter', 'buenas-practicas')],
-        // tslint:disable-next-line: max-line-length
         ['complejidad', new Referencia('http://oscarmoreno.com/la-complejidad-ciclomatica/', 'Complejidad Ciclomatica', 'buenas-practicas')],
         ['logging', new Referencia('https://itnext.io/logger-or-debugger-which-one-to-choose-3f6a72200b15', 'Logging VS Debugging', 'buenas-practicas')],
         ['complejidadCognitiva', new Referencia('https://enmilocalfunciona.io/complejidad-cognitiva/', 'Complejidad Cognitiva', 'buenas-practicas')],
@@ -62,7 +67,6 @@ export class LinkReferencia {
         ['tiposProgramadores', new Referencia('https://stevenbenner.com/2010/07/the-5-types-of-programmers/', 'Tipos de programadores', 'empirico')],
         ['sesgos', new Referencia('https://www.brainvestigations.com/neurociencia/sesgo-cognitivo-negocios/', 'Algunos Sesgos cognitivos', 'empirico')],
         ['prejuicios', new Referencia('https://www.boream.com/insights/sesgos-cognitivos-y-prejuicios-en-los-procesos-de-diseno-de-interfaz-como-combatirlos', 'Prejuicios', 'empirico')],
-        // tslint:disable-next-line: max-line-length
         ['multitarea', new Referencia('https://www.sodexo.es/blog/multitarea-multitasking/', 'Pros y Contras del multitasking', 'empirico')],
         ['maxwellCurve', new Referencia('https://blog.axosoft.com/the-maxwell-curve-blunder-in-the-name-of-scrum/', 'La curva de Maxwell', 'empirico')],
         ['pendulo', new Referencia('http://www.grupocrece.es/blog/Psicolog%C3%ADala-ley-del-pndulo-en-psicologa', 'Ley del pendulo', 'empirico')],
@@ -93,7 +97,6 @@ export class LinkReferencia {
         ['ramas', new Referencia('https://git-scm.com/book/es/v2/Ramificaciones-en-Git-Procedimientos-B%C3%A1sicos-para-Ramificar-y-Fusionar', 'Manejo de ramas', 'git')],
         ['protocolos', new Referencia('https://git-scm.com/book/es/v2/Git-en-el-Servidor-Los-Protocolos', 'Comunicación entre repositorios', 'git')],
         ['versiones', new Referencia('https://git-scm.com/book/es/v2/Git-en-entornos-distribuidos-Manteniendo-un-proyecto', 'Versiones mediante etiquetas', 'git')],
-        // tslint:disable-next-line: max-line-length
         ['forks', new Referencia('https://git-scm.com/book/es/v2/GitHub-Participando-en-Proyectos', 'Solicitudes a otros proyectos', 'git')],
         ['stash', new Referencia('https://git-scm.com/book/es/v2/Herramientas-de-Git-Guardado-r%C3%A1pido-y-Limpieza', 'Estados de trabajo', 'git')],
         ['merge', new Referencia('https://git-scm.com/book/es/v2/Herramientas-de-Git-Fusi%C3%B3n-Avanzada', 'Union de ramas', 'git')],
@@ -118,9 +121,7 @@ export class LinkReferencia {
         ['cosas2', new Referencia('https://blog.gft.com/es/2016/01/20/las-10-malas-practicas-mas-comunes-en-la-gestion-de-proyectos/', 'Malas practicas parte #2', 'malas-practicas')],
         ['cosas3', new Referencia('https://blog.gft.com/es/2016/01/20/las-10-malas-practicas-mas-comunes-en-la-gestion-de-proyectos/', 'Malas practicas parte #3', 'malas-practicas')],
         // meta-caracteristicas
-        // tslint:disable-next-line: max-line-length
         ['metaDatos', new Referencia('https://blog.powerdata.es/el-valor-de-la-gestion-de-datos/que-son-los-metadatos-y-cual-es-su-utilidad', ' ¿ Que son los metadatos ?', 'caracteristicas')],
-        // tslint:disable-next-line: max-line-length
         ['metaClase', new Referencia('https://quesignificado.org/que-es-una-metaclase/', '¿ Que es una meta clase ?', 'caracteristicas')],
         ['reflexion', new Referencia('https://es.linkfang.org/wiki/Reflexi%C3%B3n_(inform%C3%A1tica)', 'Auto mutabilidad del codigo', 'caracteristicas')],
         ['asserts', new Referencia('https://www.adictosaltrabajo.com/2016/01/07/haz-tu-codigo-mas-fiable-con-asserts/', 'Comprobaciones del codigo', 'caracteristicas')],
@@ -130,7 +131,6 @@ export class LinkReferencia {
         ['hilos', new Referencia('https://facturapp.weebly.com/hilos.html', 'Hilos', 'caracteristicas')],
         ['argumentos', new Referencia('https://picodotdev.github.io/blog-bitix/2021/01/en-java-los-argumentos-se-pasan-por-valor-o-por-referencia/', 'Argumentos por valor y por referencia', 'caracteristicas')],
         ['concurrenciaParalelismo', new Referencia('https://codigofacilito.com/articulos/programacion-concurrente', 'Concurrencia & Paralelismo', 'caracteristicas')],
-        // tslint:disable-next-line: max-line-length
         ['ortogonalidad', new Referencia('https://qastack.mx/programming/1527393/what-is-orthogonality', 'Ortogonalidad', 'caracteristicas')],
         ['azucarSintactico', new Referencia('https://es.wikipedia.org/wiki/Az%C3%BAcar_sint%C3%A1ctico', 'Azucar Sintactico', 'caracteristicas')],
         ['coercion', new Referencia('https://developer.mozilla.org/es/docs/Glossary/Type_coercion', 'Coerción', 'caracteristicas')],
@@ -151,13 +151,11 @@ export class LinkReferencia {
         ['cascada', new Referencia('https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/el-modelo-en-cascada/', 'Cascada', 'metodologias')],
         ['espiral', new Referencia('https://www.ionos.es/startupguide/productividad/modelo-en-espiral/', 'Espiral', 'metodologias')],
         ['iterativo', new Referencia('https://proyectosagiles.org/desarrollo-iterativo-incremental/', 'Iterativo-incremental', 'metodologias')],
-        // tslint:disable-next-line: max-line-length
         ['extrema', new Referencia('https://www.diegocalvo.es/metodologia-xp-programacion-extrema-metodologia-agil/', 'Programación Extrema', 'metodologias')],
         ['v', new Referencia('https://ingsoftware.weebly.com/ciclo-de-vida-en-v.html', 'Modelo en V', 'metodologias')],
         ['rup', new Referencia('https://metodoss.com/metodologia-rup/', 'Proceso Racional Unificado', 'metodologias')],
         ['kaizen', new Referencia('https://www.movertis.com/blog/que-es-la-metodologia-kaizen/#:~:text=En%20japon%C3%A9s%2C%20las%20palabras%20Kai,se%20deja%20nunca%20de%20ejecutar', 'Kaizen', 'metodologias')],
         // nube
-        // tslint:disable-next-line: max-line-length
         ['nube', new Referencia('https://azure.microsoft.com/es-es/overview/what-are-private-public-hybrid-clouds/', 'Tipos de nube', 'nube')],
         ['iaas-paas-saas', new Referencia('https://www.ambit-bst.com/blog/definici%C3%B3n-de-iaas-paas-y-saas-en-qu%C3%A9-se-diferencian', 'IaaS, PaaS, SaaS', 'nube')],
         ['api', new Referencia('https://www.ticbeat.com/tecnologias/que-es-una-api-para-que-sirve/', 'API', 'nube')],
@@ -194,12 +192,9 @@ export class LinkReferencia {
         ['gof', new Referencia('http://www.cleformacion.com/tic-tek/-/blogs/patrones-gof', 'Gang of Four (GoF)', 'patrones')],
         ['desglosegof', new Referencia('https://refactoring.guru/es/design-patterns/catalog', 'Definciones de cada tipo', 'patrones')],
         ['grasp', new Referencia('https://www.adictosaltrabajo.com/2003/12/22/grasp/', 'Patrones de asignación de responsabilidades', 'patrones')],
-        // tslint:disable-next-line: max-line-length
         ['desglosegrasp', new Referencia('https://juan-garcia-carmona.blogspot.com/search/label/patr%C3%B3n', 'Patrones GRASP', 'patrones')],
-        // tslint:disable-next-line: max-line-length
         ['dao', new Referencia('https://www.genbeta.com/desarrollo/patrones-de-diseno-active-record-vs-dao', 'Data Acess Object', 'patrones')],
         ['antipatrones', new Referencia('https://sg.com.mx/revista/11/anti-patrones-la-mejor-forma-hacer-un-pesimo-sistema-software', 'Antipatrones más importantes', 'patrones')],
-        // tslint:disable-next-line: max-line-length
         ['dobleDespacho', new Referencia('https://blog.nicopaez.com/2016/11/09/una-alternativa-al-double-dispatch/', 'Patron doble despacho', 'patrones')],
         ['patronSaga', new Referencia('https://unpocodejava.com/2020/01/02/que-es-el-patron-saga/', 'Patron Saga', 'patrones')],
         ['patroncqrs', new Referencia('https://www.escuelajavascript.com/explicando-todo-acerca-de-cqrs/', 'Patron CQRS', 'patrones')],
@@ -207,7 +202,6 @@ export class LinkReferencia {
         // personas
         ['personasYprocesos', new Referencia('https://www.heflo.com/es/blog/bpm/personas-procesos-tecnologia/', 'Personas-Procesos-Tecnologias', 'personas')],
         ['gestionDeServicios', new Referencia('https://www.ambit-bst.com/blog/itsm.-todo-lo-que-debes-saber-sobre-la-gesti%C3%B3n-de-servicios-it', 'Gestión de servicios tecnologicos', 'personas')],
-        // tslint:disable-next-line: max-line-length
         ['gestionDeActivos', new Referencia('https://freshservice.com/latam/it-asset-management-software/', 'Gestión de activos', 'personas')],
         ['fidelizacion', new Referencia('https://elviajedelcliente.com/fidelizacion-de-clientes/', 'Fidelización de los clientes', 'personas')],
         // poo
@@ -216,7 +210,6 @@ export class LinkReferencia {
         ['composicion', new Referencia('https://www.seas.es/blog/informatica/agregacion-vs-composicion-en-diagramas-de-clases-uml/', 'Agregación & Composición', 'poo')],
         ['pooStatic', new Referencia('https://desarrolloweb.com/articulos/metodos-atributos-static-poo.html', 'palabra reservada static', 'poo')],
         ['sobrecarga', new Referencia('https://www.netmentor.es/Entrada/sobrecarga-metodos', 'Sobre carga de metodos', 'poo')],
-        // tslint:disable-next-line: max-line-length
         ['acoplamiento', new Referencia('https://jummp.wordpress.com/2010/06/26/acoplamiento-aferente-acoplamiento-eferente-inestabilidad-y-abstraccion-i/', 'Tipos de acoplamiento', 'poo')],
         ['contratos', new Referencia('https://dosideas.com/wiki/Dise%C3%B1o_Por_Contrato', 'Diseño por contratos', 'poo')],
         ['descomposicion', new Referencia('http://miguedt.blogspot.com/2013/01/descomposicion-funcional.html#:~:text=La%20descomposici%C3%B3n%20funcional%20se%20refiere,en%20funci%C3%B3n%20de%20la%20composici%C3%B3n', 'Descomposición', 'poo')],
@@ -225,52 +218,47 @@ export class LinkReferencia {
         ['herVScomp', new Referencia('https://devexperto.com/herencia-vs-composicion/', 'Herencia vs Composición', 'poo')],
         ['enlaces', new Referencia('https://es.fondoperlaterra.org/comdifference-between-static-and-dynamic-binding-2', 'Enlace estatico & dinamico', 'poo')],
         // pruebas
-        ['principios', new Referencia('https://todosqa.com/siete-principios-del-proceso-de-prueba/', 'Principios de testing', 'pruebas')],
-        ['manifiesto', new Referencia('https://www.adictosaltrabajo.com/2019/12/18/testing-en-un-mundo-agile/', 'Manifiesto para testing', 'pruebas')],
-        ['tiposPruebas', new Referencia('https://visual-engin.com/2017/10/26/importancia-pruebas-de-software-testing/', 'Tipos de pruebas', 'pruebas')],
-        ['beneficios', new Referencia('https://platzi.com/blog/testing-ventajas-formas-de-realizar-pruebas/', 'Beneficios de hacer testing continuamente', 'pruebas')],
-        ['nombramiento', new Referencia('https://www.petrikainulainen.net/programming/testing/writing-clean-tests-naming-matters/', 'Nombramiento de los componentes', 'pruebas')],
-        ['first', new Referencia('https://www.paradigmadigital.com/dev/principio-first-aumentar-la-calidad-tests-unitarios/', 'Principio FIRST', 'pruebas')],
-        ['sutydoc', new Referencia('https://www.javiergarzas.com/2015/09/que-estoy-probando-y-cuales-son-mis-dependencias-en-testing.html', 'SUT & DOC', 'pruebas')],
-        ['dobles', new Referencia('https://www.codurance.com/publications/2019/04/08/introduction-to-test-doubles', 'Dobles', 'pruebas')],
-        ['aaa', new Referencia('http://oscarmoreno.com/pruebas-unitarias/', 'Arrange-Act-Assert', 'pruebas')],
-        ['gwt', new Referencia('https://softwareengineering.stackexchange.com/questions/308160/differences-between-given-when-then-gwt-and-arrange-act-assert-aaa', 'Given-When-Then', 'pruebas')],
-        ['piramide', new Referencia('https://medium.com/@wc.testing.qa/la-famosa-pir%C3%A1mide-de-cohn-y-la-dura-realidad-e1250dfbe5f3', 'Piramide de tests', 'pruebas')],
-        ['triangulo', new Referencia('https://proyectosagiles.org/triangulo-hierro/', 'Triangulo de Hierro', 'pruebas')],
-        // tslint:disable-next-line: max-line-length
-        ['cobertura', new Referencia('https://argonur.com/2020/05/11/code-coverage-cobertura-de-codigo/', 'Cobertura de pruebas', 'pruebas')],
-        ['falsos', new Referencia('https://www.qalovers.com/2015/03/diferencia-entre-falso-positivo-y-falso_5.html#:~:text=La%20definici%C3%B3n%20de%20falso%20negativo,sistema%20que%20est%C3%A1%20realmente%20infectada.%22&text=Un%20falso%20negativo%20llevado%20a,cuando%20en%20realidad%20est%C3%A1%20fallando.', 'Falsos positivos & Falsos negativos', 'pruebas')],
-        ['QAperson', new Referencia('https://www.bbvaapimarket.com/es/mundo-api/que-es-qa-y-por-que-no-debe-faltar-en-tu-proyecto/', ' ¿ Que es QA ?', 'pruebas')],
+        ['principios', new Referencia('https://todosqa.com/siete-principios-del-proceso-de-prueba/', 'Principios de testing', 'testing')],
+        ['manifiesto', new Referencia('https://www.adictosaltrabajo.com/2019/12/18/testing-en-un-mundo-agile/', 'Manifiesto para testing', 'testing')],
+        ['tiposPruebas', new Referencia('https://visual-engin.com/2017/10/26/importancia-pruebas-de-software-testing/', 'Tipos de pruebas', 'testing')],
+        ['beneficios', new Referencia('https://platzi.com/blog/testing-ventajas-formas-de-realizar-pruebas/', 'Beneficios de hacer testing continuamente', 'testing')],
+        ['nombramiento', new Referencia('https://www.petrikainulainen.net/programming/testing/writing-clean-tests-naming-matters/', 'Nombramiento de los componentes', 'testing')],
+        ['first', new Referencia('https://www.paradigmadigital.com/dev/principio-first-aumentar-la-calidad-tests-unitarios/', 'Principio FIRST', 'testing')],
+        ['sutydoc', new Referencia('https://www.javiergarzas.com/2015/09/que-estoy-probando-y-cuales-son-mis-dependencias-en-testing.html', 'SUT & DOC', 'testing')],
+        ['dobles', new Referencia('https://www.codurance.com/publications/2019/04/08/introduction-to-test-doubles', 'Dobles', 'testing')],
+        ['aaa', new Referencia('http://oscarmoreno.com/pruebas-unitarias/', 'Arrange-Act-Assert', 'testing')],
+        ['gwt', new Referencia('https://softwareengineering.stackexchange.com/questions/308160/differences-between-given-when-then-gwt-and-arrange-act-assert-aaa', 'Given-When-Then', 'testing')],
+        ['piramide', new Referencia('https://medium.com/@wc.testing.qa/la-famosa-pir%C3%A1mide-de-cohn-y-la-dura-realidad-e1250dfbe5f3', 'Piramide de tests', 'testing')],
+        ['triangulo', new Referencia('https://proyectosagiles.org/triangulo-hierro/', 'Triangulo de Hierro', 'testing')],
+        ['cobertura', new Referencia('https://argonur.com/2020/05/11/code-coverage-cobertura-de-codigo/', 'Cobertura de pruebas', 'testing')],
+        ['falsos', new Referencia('https://www.qalovers.com/2015/03/diferencia-entre-falso-positivo-y-falso_5.html#:~:text=La%20definici%C3%B3n%20de%20falso%20negativo,sistema%20que%20est%C3%A1%20realmente%20infectada.%22&text=Un%20falso%20negativo%20llevado%20a,cuando%20en%20realidad%20est%C3%A1%20fallando.', 'Falsos positivos & Falsos negativos', 'testing')],
+        ['QAperson', new Referencia('https://www.bbvaapimarket.com/es/mundo-api/que-es-qa-y-por-que-no-debe-faltar-en-tu-proyecto/', ' ¿ Que es QA ?', 'testing')],
         // pruebas-avanzadas
-        ['cajaNegraBlanca', new Referencia('https://www.testermoderno.com/caja-blanca-vs-caja-negra/', 'Tests de Caja negra & Caja blanca', 'pruebas-avanzadas')],
-        ['valorLimite', new Referencia('https://educandocontic.com/valores-limite-pruebas/', 'Valores limite', 'pruebas-avanzadas')],
-        ['clasesEquivalencia', new Referencia('https://educandocontic.com/particiones-de-equivalencia/', 'Clases de equivalencia', 'pruebas-avanzadas')],
-        ['grafosCausaEfecto', new Referencia('https://platzi.com/tutoriales/1421-pruebas-software/9606-pruebas-con-grafos-causa-efecto/', 'Grafos causa -> efecto', 'pruebas-avanzadas')],
-        ['tiposDePruebas', new Referencia('https://www.softwaretestinghelp.com/types-of-software-testing/', 'Diferentes tipos de pruebas', 'pruebas-avanzadas')],
+        ['cajaNegraBlanca', new Referencia('https://www.testermoderno.com/caja-blanca-vs-caja-negra/', 'Tests de Caja negra & Caja blanca', 'testing-avanzado')],
+        ['valorLimite', new Referencia('https://educandocontic.com/valores-limite-pruebas/', 'Valores limite', 'testing-avanzado')],
+        ['clasesEquivalencia', new Referencia('https://educandocontic.com/particiones-de-equivalencia/', 'Clases de equivalencia', 'testing-avanzado')],
+        ['grafosCausaEfecto', new Referencia('https://platzi.com/tutoriales/1421-pruebas-software/9606-pruebas-con-grafos-causa-efecto/', 'Grafos causa -> efecto', 'testing-avanzado')],
+        ['tiposDePruebas', new Referencia('https://www.softwaretestinghelp.com/types-of-software-testing/', 'Diferentes tipos de pruebas', 'testing-avanzado')],
         // refactorización
         ['codigolimpio', new Referencia('https://refactoring.guru/es/refactoring/what-is-refactoring', '¿ Que es codigo Limpio ?', 'refactorizacion')],
         ['deudatecnica', new Referencia('https://refactoring.guru/es/refactoring/technical-debt', 'Deuda tecnica', 'refactorizacion')],
         ['tiposDeudaTecnica', new Referencia('https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/deuda-tecnica-explicada/', 'Tipos de deuda tecnica', 'refactorizacion')],
         ['comentarios', new Referencia('https://www.scrummanager.net/bok/index.php?title=Deuda_t%C3%A9cnica', 'Comentarios especiales', 'refactorizacion')],
-        // tslint:disable-next-line: max-line-length
         ['cuandorefactorizar', new Referencia('https://refactoring.guru/es/refactoring/when', '¿ Cuando refactorizar ?', 'refactorizacion')],
         ['comorefactorizar', new Referencia('https://refactoring.guru/es/refactoring/how-to', '¿ Como refactorizar ? ', 'refactorizacion')],
         ['tecnicasRefactoring', new Referencia('https://refactoring.guru/es/refactoring/techniques', 'Tecnicas para refactorizar', 'refactorizacion')],
         // requisitos
         ['funcionales', new Referencia('https://medium.com/@requeridosblog/requerimientos-funcionales-y-no-funcionales-ejemplos-y-tips-aa31cb59b22a', 'Requisitos funcionales', 'requisitos')],
         ['NOfuncionales', new Referencia('https://medium.com/@requeridosblog/requerimientos-funcionales-y-no-funcionales-ejemplos-y-tips-aa31cb59b22a', 'Requisitos No funcionales', 'requisitos')],
-        // tslint:disable-next-line: max-line-length
         ['negocio', new Referencia('https://requeridos.com/que-es-el-valor-de-negocio-y-como-medirlo/', 'El valor del negocio', 'requisitos')],
         ['ambiguedad', new Referencia('https://requeridos.com/requerimientos-menos-es-mas/', 'Evitar la ambiguedad', 'requisitos')],
         ['calidad', new Referencia('https://platzi.com/tutoriales/1248-pro-arquitectura/5498-atributos-de-calidad-de-un-producto-de-software/', 'Atributos de calidad', 'requisitos')],
         ['tradeoff', new Referencia('https://medium.com/analysts-corner/those-other-requirements-quality-attributes-and-their-inescapable-tradeoffs-31dc0691974d', 'Sacrificios y ganancias', 'requisitos')],
         // principios
         ['solid', new Referencia('https://profile.es/blog/principios-solid-desarrollo-software-calidad/', 'Principio SOLID', 'principios')],
-        // tslint:disable-next-line: max-line-length
         ['kiss', new Referencia('https://manuelzapata.co/principio-kiss-keep-it-simple-stupid/', 'Mantenlo simple, estupido', 'principios')],
         ['yagni', new Referencia('https://www.genbeta.com/desarrollo/la-navaja-de-occam-kiss-y-yagni-la-simplicidad-en-el-codigo-no-deberia-ser-solo-postureo-developer', 'No vas a necesitarlo', 'principios')],
         ['occam', new Referencia('https://www.genbeta.com/desarrollo/la-navaja-de-occam-kiss-y-yagni-la-simplicidad-en-el-codigo-no-deberia-ser-solo-postureo-developer', 'La navaja de Occam', 'principios')],
-        // tslint:disable-next-line: max-line-length
         ['dry', new Referencia('https://tantacom.com/principios-diseno-software-kiss-dry-solid/', 'No te repitas a ti mismo', 'principios')],
         ['hollywood', new Referencia('https://www.genbeta.com/desarrollo/doce-principios-de-diseno-que-todo-desarrollador-deberia-conocer', 'No nos llames, nosotros te llamamos', 'principios')],
         ['tellDontAsk', new Referencia('https://www.disrupciontecnologica.com/tell-dont-ask/?reload=977836', 'Dile, no le preguntes', 'principios')],
@@ -279,16 +267,13 @@ export class LinkReferencia {
         ['firewall', new Referencia('https://idgrup.com/firewall-que-es-y-como-funciona/#:~:text=Un%20firewall%2C%20tambi%C3%A9n%20llamado%20cortafuegos,ordenadores%20de%20una%20misma%20red', 'Firewall', 'seguridad')],
         ['protocolos', new Referencia('https://www.websecurity.digicert.com/es/es/security-topics/what-is-ssl-tls-https', 'SSL, TSL, HTTPS', 'seguridad')],
         ['proxy', new Referencia('https://www.welivesecurity.com/la-es/2020/01/02/que-es-proxy-para-que-sirve/', 'Proxy', 'seguridad')],
-        // tslint:disable-next-line: max-line-length
         ['estatico', new Referencia('https://www.welivesecurity.com/la-es/2021/01/18/analisis-estatico-codigo-fuente-orientado-a-seguridad/', 'Analisis de codigo estatico', 'seguridad')],
         ['ciberSeguridad', new Referencia('https://latam.kaspersky.com/resource-center/definitions/what-is-cyber-security', 'Ciberseguridad y otras amenazas', 'seguridad')],
         ['cia', new Referencia('https://searchdatacenter.techtarget.com/es/opinion/Que-es-la-triada-de-la-CIA', 'Confidencialidad-Integridad-Accesibilidad ', 'seguridad')],
-        // tslint:disable-next-line: max-line-length
         ['noRepudio', new Referencia('https://www.unir.net/ingenieria/revista/no-repudio-seguridad-informatica/', 'No repudio', 'seguridad')],
         ['matrizDeRiesgo', new Referencia('https://www.protek.com.py/novedades/objetivos-de-una-matriz-de-riesgos/', 'Matriz de Riesgo', 'seguridad')],
         ['condicionDeCarrera', new Referencia('https://ciberseguridad.com/amenzas/vulnerabilidades/condicion-de-carrera/', 'Condición de Carrera', 'seguridad')],
         ['honeypot', new Referencia('https://latam.kaspersky.com/resource-center/threats/what-is-a-honeypot', 'Honetypot', 'seguridad')],
-        // tslint:disable-next-line: max-line-length
         ['zeroDayExploit', new Referencia('https://latam.kaspersky.com/resource-center/definitions/zero-day-exploit', 'Zero Day Exploit', 'seguridad')],
         // smells codes
         ['codesmells', new Referencia('https://openwebinars.net/blog/code-smells-y-deuda-tecnica/', 'Smell Codes', 'smells codes')],
@@ -298,7 +283,6 @@ export class LinkReferencia {
         ['payoff', new Referencia('https://refactoring.guru/es/refactoring/smells', 'Beneficios de corregir code smells', 'smells codes')],
         // sql & No sql
         ['sql', new Referencia('https://www.w3schools.com/sql/default.asp', '¿ Que es SQL ? ', 'sql & No Sql')],
-        // tslint:disable-next-line: max-line-length
         ['dbms', new Referencia('https://www.astera.com/es/type/blog/database-management-software/', 'Software de Gestion de Bases de Datos', 'sql & No Sql')],
         ['crud', new Referencia('https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/crud-las-principales-operaciones-de-bases-de-datos/', 'Create, Read, Update, Delete', 'sql & No Sql')],
         ['dl', new Referencia('https://platzi.com/blog/que-es-ddl-dml-dcl-y-tcl-integridad-referencial/', 'DDL, DML, DCL, TCL', 'sql & No Sql')],
@@ -307,7 +291,6 @@ export class LinkReferencia {
         ['normalizacion', new Referencia('https://docs.microsoft.com/en-us/office/troubleshoot/access/database-normalization-description', 'Normalización de una BD', 'sql & No Sql')],
         ['nosql', new Referencia('https://pandorafms.com/blog/es/bases-de-datos-nosql/', 'Bases de Datos NO SQL', 'sql & No Sql')],
         ['tiposBD', new Referencia('https://www.acens.com/wp-content/images/2014/02/bbdd-nosql-wp-acens.pdf', 'Tipos de BD No SQL', 'sql & No Sql')],
-        // tslint:disable-next-line: max-line-length
         ['acid', new Referencia('https://dosideas.com/noticias/base-de-datos/973-acid-en-las-bases-de-datos', 'Esquema ACID', 'sql & No Sql')],
         ['orm', new Referencia('https://programarfacil.com/blog/que-es-un-orm/', 'Mapeo Objetos-Relacional', 'sql & No Sql')],
         ['consistenciaEventual', new Referencia('https://medium.com/@gabanox/consistencia-eventual-en-s3-6ba5b2ecd721', 'Consistencia Eventual', 'sql & No Sql')],

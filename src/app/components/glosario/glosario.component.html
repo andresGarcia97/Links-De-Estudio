@@ -5,12 +5,15 @@
 
   <div class="card-container">
 
-    <a *ngFor="let componente of onlyComponents | filter : search" class="card card-small card-no-size tooltip" target="_blank"
-      rel="noreferrer" [href]="componente.referencia">
-      {{componente.titulo}}
-      <span class="tooltiptext">Seccion: {{componente.componente}}</span>
-    </a>
+    <div *ngFor="let componente of onlyComponents | filter : search" class="card card-small card-no-size tooltip"
+      (click)="crearVistaItem(componente.key)"> {{componente.titulo}}
+      <span class=" tooltiptext">Seccion: {{componente.componente}}</span>
+    </div>
 
+  </div>
+
+  <div class="card-container" *ngIf="showItem">
+    <app-mini-terminal [referencia]="referencia" [titulo]="titulo" [item]="item"></app-mini-terminal>
   </div>
 
   <div class="card-container">

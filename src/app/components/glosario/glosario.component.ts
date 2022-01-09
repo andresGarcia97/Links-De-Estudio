@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Content, Item } from 'src/app/models/content';
 import { LinkFuente } from 'src/app/models/linkFuente';
 import { LinkReferencia } from 'src/app/models/linkReferencia';
 
@@ -10,19 +11,23 @@ export class GlosarioComponent {
 
   search = '';
 
-  referencia = new LinkReferencia();
-
-  componentes = this.referencia.components;
-
   fuentes = new LinkFuente().fuentes;
-
   previewFuentes = Array.from(this.fuentes, ([name, value]) => ({ name, value }));
-
   onlyFuentes = this.convertArrayObjectToArrayStrings(this.previewFuentes);
 
+  linkReferencia = new LinkReferencia();
+  componentes = this.linkReferencia.components;
   previewComponents = Array.from(this.componentes, ([name, value]) => ({ name, value }));
-
   onlyComponents = this.convertArrayObjectToArrayString(this.previewComponents);
+
+  referencia = '';
+  titulo = '';
+
+  content = new Content();
+  temas = this.content.temas;
+  item = new Item('', []);
+
+  showItem = false;
 
   protected convertArrayObjectToArrayStrings(namesAndValues: Array<any>): Array<object> {
     const onlyFuentes = new Array();
@@ -36,10 +41,30 @@ export class GlosarioComponent {
   protected convertArrayObjectToArrayString(namesAndValues: Array<any>): Array<object> {
     const onlyComponents = new Array();
     namesAndValues.forEach((element) => {
-      const newElement = { titulo: element.value.titulo, referencia: element.value.referencia, componente: element.value.component };
+      const newElement = {
+        titulo: element.value.titulo,
+        referencia: element.value.referencia,
+        componente: element.value.component,
+        key: element.name
+      };
       onlyComponents.push(newElement);
     });
     return onlyComponents;
+  }
+
+  public crearVistaItem(key: string): void {
+    const items = this.content.temas.filter((item) => {
+      return item.key.includes(key);
+    });
+    if (items.length === 0) {
+      this.showItem = false;
+    }
+    else {
+      this.referencia = this.componentes.get(key)?.referencia || '';
+      this.titulo = this.componentes.get(key)?.titulo || '';
+      this.item = new Item(items[0].key, items[0].content);
+      this.showItem = true;
+    }
   }
 
 }

@@ -8,6 +8,4 @@ export class ButtonComponent {
 
   @Input() tittleButton = '';
 
-  constructor() { }
-
 }

@@ -42,6 +42,7 @@ import { FuenteComponent } from './components/core/fuente/fuente.component';
 import { PruebasAvanzadasComponent } from './components/pruebas-avanzadas/pruebas-avanzadas.component';
 import { HardwareComponent } from './components/hardware/hardware.component';
 import { MetaEstructuraComponent } from './components/meta-estructura/meta-estructura.component';
+import { MiniTerminalComponent } from './components/core/mini-terminal/mini-terminal.component';
 
 @NgModule({
   declarations: [
@@ -85,7 +86,8 @@ import { MetaEstructuraComponent } from './components/meta-estructura/meta-estru
     FuenteComponent,
     PruebasAvanzadasComponent,
     HardwareComponent,
-    MetaEstructuraComponent
+    MetaEstructuraComponent,
+    MiniTerminalComponent
   ],
   imports: [
     BrowserModule,
