@@ -74,4 +74,8 @@ export class GlosarioComponent {
     }
   }
 
+  public searchChanged(): void {
+    this.showItem = false;
+  }
+
 }

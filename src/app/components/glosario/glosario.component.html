@@ -1,7 +1,7 @@
 <div class="content" role="main">
 
   <h1>Glosario</h1>
-  <input type="text" placeholder="Buscar.." [(ngModel)]="search" name="search" />
+  <input type="text" placeholder="Buscar.." [(ngModel)]="search" name="search" (ngModelChange)="searchChanged()" />
 
   <div class="card-container">
 
