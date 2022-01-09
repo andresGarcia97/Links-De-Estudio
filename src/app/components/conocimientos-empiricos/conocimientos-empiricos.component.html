@@ -1,187 +1,49 @@
 <div class="content">
 
-    <h2>Conocimientos Empiricos y Psicologicos</h2>
-  
-    <div class="card-container">
-  
-      <app-button [tittleButton]="'Balas de Plata'" (click)="getLinkAndTittleByKey('balas')"></app-button>
+  <h2>Conocimientos Empiricos y Psicologicos</h2>
 
-      <app-button [tittleButton]="'Leyes de Lehman'" (click)="getLinkAndTittleByKey('lehman')"></app-button>
+  <div class="card-container">
 
-      <app-button [tittleButton]="'Ley de Conway'" (click)="getLinkAndTittleByKey('conway')"></app-button>
+    <app-button [tittleButton]="'Balas de Plata'" (click)="getLinkAndTittleByKey('balas')"></app-button>
 
-      <app-button [tittleButton]="'Ley de Murphy'" (click)="getLinkAndTittleByKey('murphy')"></app-button>
+    <app-button [tittleButton]="'Leyes de Lehman'" (click)="getLinkAndTittleByKey('lehman')"></app-button>
 
-      <app-button [tittleButton]="'Cristales rotos'" (click)="getLinkAndTittleByKey('cristales')"></app-button>
+    <app-button [tittleButton]="'Ley de Conway'" (click)="getLinkAndTittleByKey('conway')"></app-button>
 
-      <app-button [tittleButton]="'Status Quo'" (click)="getLinkAndTittleByKey('quo')"></app-button>
+    <app-button [tittleButton]="'Ley de Murphy'" (click)="getLinkAndTittleByKey('murphy')"></app-button>
 
-      <app-button [tittleButton]="'Costo Hundido'" (click)="getLinkAndTittleByKey('costo')"></app-button>
+    <app-button [tittleButton]="'Cristales rotos'" (click)="getLinkAndTittleByKey('cristales')"></app-button>
 
-      <app-button [tittleButton]="'Programadores'" (click)="getLinkAndTittleByKey('tiposProgramadores')"></app-button>
+    <app-button [tittleButton]="'Status Quo'" (click)="getLinkAndTittleByKey('quo')"></app-button>
 
-      <app-button [tittleButton]="'Sesgo Cognitivo'" (click)="getLinkAndTittleByKey('sesgos')"></app-button>
+    <app-button [tittleButton]="'Costo Hundido'" (click)="getLinkAndTittleByKey('costo')"></app-button>
 
-      <app-button [tittleButton]="'Multitareas'" (click)="getLinkAndTittleByKey('multitarea')"></app-button>
+    <app-button [tittleButton]="'Programadores'" (click)="getLinkAndTittleByKey('tiposProgramadores')"></app-button>
 
-      <app-button [tittleButton]="'Curva de Maxwell'" (click)="getLinkAndTittleByKey('maxwellCurve')"></app-button>
+    <app-button [tittleButton]="'Sesgo Cognitivo'" (click)="getLinkAndTittleByKey('sesgos')"></app-button>
 
-      <app-button [tittleButton]="'Ley del pendulo'" (click)="getLinkAndTittleByKey('pendulo')"></app-button>
+    <app-button [tittleButton]="'Multitareas'" (click)="getLinkAndTittleByKey('multitarea')"></app-button>
 
-      <app-button [tittleButton]="'Prejuicios'" (click)="getLinkAndTittleByKey('prejuicios')"></app-button>
+    <app-button [tittleButton]="'Curva de Maxwell'" (click)="getLinkAndTittleByKey('maxwellCurve')"></app-button>
 
-    </div>
-    
-    <app-referencia class="flexbox terminal" [referencia]="referencia" [titulo]="titulo"></app-referencia>
+    <app-button [tittleButton]="'Ley del pendulo'" (click)="getLinkAndTittleByKey('pendulo')"></app-button>
 
-    <div class="terminal" [ngSwitch]="selection" #terminal>
+    <app-button [tittleButton]="'Prejuicios'" (click)="getLinkAndTittleByKey('prejuicios')"></app-button>
 
-      <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
-  
-      <pre *ngSwitchCase="'balas'">- El software puede tener dificultades inherentes al software y accidentales </pre>
-      <pre *ngSwitchCase="'balas'">- Los errores son gajes del oficio, pero tienen diferentes grados de repercusión en el software </pre>
-      <pre *ngSwitchCase="'balas'">- Jamas sera lo mismo un error semantico a uno de diseño, el primero podria pasar por trivial, pero el segundo NO </pre>
-      <pre *ngSwitchCase="'balas'"></pre>
-      <pre *ngSwitchCase="'balas'">- Complejidad -> la complejidad es directamente proporcional al tamaño </pre>
-      <pre *ngSwitchCase="'balas'">- Complejidad -> esta es una propiedad intrinseca del software, que no se puede desligar de su diseño o construcción </pre>
-      <pre *ngSwitchCase="'balas'">- Complejidad -> de esta complejidad nacen las dificultades para crecer sin afectar al resto del sistema </pre>
-      <pre *ngSwitchCase="'balas'">- Complejidad -> sin contar con los problemas tecnicos ó las dificultades de aprendizaje </pre>
-      <pre *ngSwitchCase="'balas'"></pre>
-      <pre *ngSwitchCase="'balas'">- Conformidad -> tener que ajustarse a otros diseños, necesariamente implica algo más que una refactorización </pre>
-      <pre *ngSwitchCase="'balas'">- Conformidad -> no hay una sola manera para trabajar, por lo que hay acostumbrarse a las diferentes formas de cada persona </pre>
-      <pre *ngSwitchCase="'balas'"></pre>
-      <pre *ngSwitchCase="'balas'">- Variabilidad -> El software esta sometido a la necesiadad de cambio constante, pero esto no necesariamente significa un "cambio" </pre>
-      <pre *ngSwitchCase="'balas'">- Variabilidad -> Se podria sacar un nuevo modelo ó una nueva versión, más no obligatoriamente cambiar lo que ya funciona </pre>
-      <pre *ngSwitchCase="'balas'"></pre>
-      <pre *ngSwitchCase="'balas'">- Invisibilidad -> El software es un recurso intangible, solo entendible por la capacidad de abstracción y de visualización de los humanos </pre>
-      <pre *ngSwitchCase="'balas'"></pre>
-      <pre *ngSwitchCase="'balas'">                           Para revisar los demás temas, aca &darr;&darr;&darr;&darr;&darr;&darr;&darr;&darr;&darr;&darr; se encuentra la referencia </pre>
-
-      <pre *ngSwitchCase="'lehman'">- El contenido es eterno, pero no la materia que lo contiene </pre>
-      <pre *ngSwitchCase="'lehman'">- Ley del cambio continuo -> En la realidad las cosas deben seguir cambiando constantemente, de lo contrario eventualmente seran obsoletas </pre>
-      <pre *ngSwitchCase="'lehman'">- Ley de complejida creciente -> Mientras algo siga creciendo, su complejidad tambien lo hara, a no ser que se tomen medidas para reducirla </pre>
-      <pre *ngSwitchCase="'lehman'">- Ley de evolución -> mientras algo crezca, tambien lo haran sus errores, casi siempre de manera promedio </pre>
-      <pre *ngSwitchCase="'lehman'">- Ley de estabilidad organizacional -> la velocidad de desarrollo sera casi siempre la misma, por más recursos que se inyecten </pre>
-      <pre *ngSwitchCase="'lehman'">- Ley de la conservación -> un crecimiento desmesurado hara que el conociemiento basico sea insuficiente para seguir creciendo </pre>
-      <pre *ngSwitchCase="'lehman'">- Ley de crecimiento continuo -> las funcionalidades deben seguir mejorando para mantener a los clientes satisfechos </pre>
-      <pre *ngSwitchCase="'lehman'">- Ley de retroalimentación -> la comunicación con el cliente y con las personas conocedoras es fundamental </pre>
-
-      <pre *ngSwitchCase="'conway'">- El impacto de la comunicación en tu empresa </pre>
-      <pre *ngSwitchCase="'conway'">- “Cualquier organización que diseñe un sistema producirá un diseño que copia la estructura de comunicación de dicha organización.”</pre>
-      <pre *ngSwitchCase="'conway'">- El software es una habilidad intelectual humana, por lo que la comunicación es fundamental para la integración </pre>
-      <pre *ngSwitchCase="'conway'">- La manera de trabajar de tu empresa se vera reflejada en tu software, es el significado principal de esta frase </pre>
-      <pre *ngSwitchCase="'conway'"> - Equipos pequeños, crearan soluciones pequeñas, altamente modulares </pre>
-      <pre *ngSwitchCase="'conway'"> - Personas egoistas, generan problemas de integración de componentes y falencias al compartir su conocmiento </pre>
-      <pre *ngSwitchCase="'conway'"> - Empresas sin organización, generaran codigo complejo, pero funcional de manera rapida, que se convertira en una bola de nieve </pre>
-      <pre *ngSwitchCase="'conway'"> - Empresas orgullosas, que comparten su codigo y sus buenas practicas </pre>
-      <pre *ngSwitchCase="'conway'"> - Estos y más ejemplos hay, como empresas y personas halla </pre>
-
-      <pre *ngSwitchCase="'murphy'">- Si algo malo puede pasar, pasara</pre>
-      <pre *ngSwitchCase="'murphy'">- Se inspira en el concepto fisico de la entropia, el cual dicta que todo sistema fluye del orden al desorden </pre>
-      <pre *ngSwitchCase="'murphy'">- Puede ser util para ayudar a prevenir el desastre, si se usa para tomar precauciones </pre>
-      <pre *ngSwitchCase="'murphy'">- No hay ninguna demostración matematica que la niegue ó la acepta, solo es un conocimiento nacido de lo cotidiano </pre>
-
-      <pre *ngSwitchCase="'cristales'">- Esta teoria predice que los desperfectos del ambiente van a generar la sensación de que la ley no existe </pre>
-      <pre *ngSwitchCase="'cristales'">- Corregir los errores, aun por más por pequeños que sean evitara que el software se degenere </pre>
-      <pre *ngSwitchCase="'cristales'">- Las pequeñas faltas pueden conllevar a transgresiones mayores </pre>
-      <pre *ngSwitchCase="'cristales'">- Establcer normas claras ayuda a evitar este fenomeno </pre>
-
-      <pre *ngSwitchCase="'tiposProgramadores'">- Estos son los 5 principales tipos de programadores que existen </pre>
-      <pre *ngSwitchCase="'tiposProgramadores'"></pre>
-      <pre *ngSwitchCase="'tiposProgramadores'"> - The duct tape: </pre>
-      <pre *ngSwitchCase="'tiposProgramadores'">   - Este programador arreglara el error sin importale como, </pre>
-      <pre *ngSwitchCase="'tiposProgramadores'">   - la prioridad para el siempre sera arreglar el error, sin importar la complejidad de la solución </pre>
-      <pre *ngSwitchCase="'tiposProgramadores'"></pre>
-      <pre *ngSwitchCase="'tiposProgramadores'"> - The perfectionist programmer </pre>
-      <pre *ngSwitchCase="'tiposProgramadores'">   - Para este programador cada segmento de codigo es una obra de arte, </pre>
-      <pre *ngSwitchCase="'tiposProgramadores'">   - no le importan las fechas limites ó los presupuestos, solo que el codigo generado sea hermoso eficiente, </pre>
-      <pre *ngSwitchCase="'tiposProgramadores'">   - e inmutable, a menos que sea el mismo quien lo cambie </pre>
-      <pre *ngSwitchCase="'tiposProgramadores'"></pre>
-      <pre *ngSwitchCase="'tiposProgramadores'"> - The anti-programming programmer </pre>
-      <pre *ngSwitchCase="'tiposProgramadores'">   - Es aquel que siempre evitara reinventar la rueda, ya sea usando librerias de terceros</pre>
-      <pre *ngSwitchCase="'tiposProgramadores'">   - ó usando codigo ya hecho por alguien más, pero siempre obtendra la solución más simple, </pre>
-      <pre *ngSwitchCase="'tiposProgramadores'">   - aunque esta no sea eficiente o retrocompatible, pero si sera facil de entender</pre>
-      <pre *ngSwitchCase="'tiposProgramadores'"></pre>
-      <pre *ngSwitchCase="'tiposProgramadores'"> - The half-assed programmer </pre>
-      <pre *ngSwitchCase="'tiposProgramadores'">   - Este programador es el más odiado por los demás tiposProgramadores, ya que solo le importa cumplir con su tarea, </pre>
-      <pre *ngSwitchCase="'tiposProgramadores'">   - la calidad ó la eficiencia son solo utopias con el, y lo más seguro es que generara problemas a largo plazo, </pre>
-      <pre *ngSwitchCase="'tiposProgramadores'">   - siempre sera eficaz a cuanto a los tiempos de entrega, aunque esto dañe otras partes del sistema </pre>
-      <pre *ngSwitchCase="'tiposProgramadores'"></pre>
-      <pre *ngSwitchCase="'tiposProgramadores'"> - The theoretical programmer </pre>
-      <pre *ngSwitchCase="'tiposProgramadores'">   - Para este programador siempre habra n maneras de resolver algo, la mayoria de su tiempo lo ocupara pensando como </pre>
-      <pre *ngSwitchCase="'tiposProgramadores'">   - resolver el problema de la mejor manera, por lo que la manera que escoja para hacerlo nunca lo satisfacera al 100%, </pre>
-      <pre *ngSwitchCase="'tiposProgramadores'">   - pero entregara codigo a tiempo y con buena calidad </pre>
-
-      <pre *ngSwitchCase="'quo'">- Es la preferencia innata del ser humano a la estabilidad </pre>
-      <pre *ngSwitchCase="'quo'">- Nuestras emociones son un punto de inflexión a la hora de tomas decisiones que arriesguan esta estabilidad </pre>
-      <pre *ngSwitchCase="'quo'">- Este fenomeno esta ligado a otros más comunes y que se viven casi a diario </pre>
-      <pre *ngSwitchCase="'quo'"></pre>
-      <pre *ngSwitchCase="'quo'"> - Aversión a las perdidad -> es un efecto donde es más facil aferrarse a una cantidad u objeto en el que haya invertido tiempo y dinero, </pre>
-      <pre *ngSwitchCase="'quo'">   - que adquirir o construir uno nuevo que representara una ganancia, mayor a la actual </pre>
-      <pre *ngSwitchCase="'quo'"> - Efecto de dotación -> los bienes se perciben de manera más valiosa cuando son de nuestra propiedad, </pre>
-      <pre *ngSwitchCase="'quo'">   - Aunque este mismo bien sea el mismo que el de otra persona </pre>
-      <pre *ngSwitchCase="'quo'"></pre>
-      <pre *ngSwitchCase="'quo'">- Estos fenomenos se pueden dar en el mundo del software al no realizar refactors en el codigo solamente porque, </pre>
-      <pre *ngSwitchCase="'quo'">  - "funciona", aunque lo haga de manera complicada u poco optima </pre>
-
-      <pre *ngSwitchCase="'costo'">- La falacia del costo hundido es la tendencia a mantener proyectos fracasados ó obsoletos </pre>
-      <pre *ngSwitchCase="'costo'">- Esto se debe al tiempo y gastos invertidos en los proyectos, que no queremos soltar por la aversion a las perdidas </pre>
-      <pre *ngSwitchCase="'costo'"></pre>
-      <pre *ngSwitchCase="'costo'"> - En la industria del software es comun tener casos donde hay sistemas que constantemente deben ser parcheados, </pre>
-      <pre *ngSwitchCase="'costo'">   - costando tiempo y dinero, y donde la solucion más optima seria rehacer el sistema que continuar con este tipo de situaciones </pre>
-      <pre *ngSwitchCase="'costo'"> - Tambien estan los casos donde las personas se niegan a abandonar proyectos estables, pero que eventualmente seran obsoletos </pre>
-      <pre *ngSwitchCase="'costo'">   - ya que migrar esto implica un costo, que puede ser menor que mantener a un proyecto legacy; pero esto no se ve a corto plazo </pre>
-
-      <pre *ngSwitchCase="'sesgos'">- Son impulsos inherentes a cada ser humano que se basan en sus emociones, conocimientos, experiencias, creencias, etc.. </pre>
-      <pre *ngSwitchCase="'sesgos'">- Es la interpretación erronea de la información disponible, y como esto afecta nuestra emisión de juicios </pre>
-      <pre *ngSwitchCase="'sesgos'"></pre>
-      <pre *ngSwitchCase="'sesgos'"> - Sesgo de confirmación -> es la busqueda de sucesos ó interpretaciones para confirmar algo que creemos de manera arraigada </pre>
-      <pre *ngSwitchCase="'sesgos'"> - Disponibilidad heuristica -> es un atajo mental que otorga más valor o credibilidad a la primera información que recordemos </pre>
-      <pre *ngSwitchCase="'sesgos'"> - Sesgo de anclaje -> es basarse en la primera información y solo esta fuente para tomar una decisión, sin evaluar otras posibilidades </pre>
-      <pre *ngSwitchCase="'sesgos'"> - Sesgo de observación selectiva -> es cuando diriges toda tu atención solamente a lo que te interesa, sin presta atención a los demás datos </pre>
-      <pre *ngSwitchCase="'sesgos'"> - Sesgo negativo -> te enfocas en los sucesos negativos en vez de tomar una posición más neutra </pre>
-      <pre *ngSwitchCase="'sesgos'"> - Resistencia reactiva -> se enfoca en hacer lo contrario de lo que alguien te dice ó aconseja, de manera selectiva y racional </pre>
-      <pre *ngSwitchCase="'sesgos'"> - Sesgo de impacto -> es la tendencia a sobrestimar un evento o lugar extraordinario, que pasara de lo excepcional a lo comun </pre>
-
-      <pre *ngSwitchCase="'multitarea'">Es la capacidad de manejar y realizar multiples tareas al mismo tiempo, este concepto es muy buscado actualmente, aunque tiene pros y contras </pre>
-      <pre *ngSwitchCase="'multitarea'"></pre>
-      <pre *ngSwitchCase="'multitarea'">- Ventajas</pre>
-      <pre *ngSwitchCase="'multitarea'"> - Si se logra hacerlo de manera eficiente, se pueden ahorrar recursos y aumentar la productividad </pre>
-      <pre *ngSwitchCase="'multitarea'"> - Mejor reacción a las tareas complejas y un mejor manejo de las responsabilidades </pre>
-      <pre *ngSwitchCase="'multitarea'"></pre>
-      <pre *ngSwitchCase="'multitarea'">- Contras </pre>
-      <pre *ngSwitchCase="'multitarea'"> - Menor eficacia, al tener un mayor ruido de las acciones por hacer </pre>
-      <pre *ngSwitchCase="'multitarea'"> - Decaimiento de la memoria y posibles problemas de estres, además de una peor salud fisica y mental </pre>
-      <pre *ngSwitchCase="'multitarea'"> - Mayor riesgo de errores al tener que estar atento a más cosas </pre>
-      <pre *ngSwitchCase="'multitarea'"> - Menor calidad del trabajo, además de posibilidades de sufrir de deficit de atención </pre>
-
-      <pre *ngSwitchCase="'maxwellCurve'">- Más horas de trabajo, implican menos productividad</pre>
-      <pre *ngSwitchCase="'maxwellCurve'">- Este estudio fue realizado principalmente para Scrum, hasta la demostración de que en ciertos casos es más optimo el modelo de cascada </pre>
-      <pre *ngSwitchCase="'maxwellCurve'">- Jornadas más cortas no necesariamente significan menos productividad, estas pueden ayudar a: </pre>
-      <pre *ngSwitchCase="'maxwellCurve'"> - atraer nuevos talentos</pre>
-      <pre *ngSwitchCase="'maxwellCurve'"> - mejorar el equilibrio entre vida personal y laboral, teniendo trabajadores más felices </pre>
-      <pre *ngSwitchCase="'maxwellCurve'"> - reduce los sentimientos de insatisfacción </pre>
-
-      <pre *ngSwitchCase="'pendulo'">- Permite explicar comportamiento humanos cuando son llevados al extremo </pre>
-      <pre *ngSwitchCase="'pendulo'">- Se puede producir por diferentes razones: </pre>
-      <pre *ngSwitchCase="'pendulo'"> - Idealización del opuesto -> cuando estamos constreñidos en algo, tendemos a idealizar el contrario </pre>
-      <pre *ngSwitchCase="'pendulo'"> - Necesidad de reafirmación -> buscando un gran impacto, generalmente elegimos los polos opuestos al ser vistosos </pre>
-      <pre *ngSwitchCase="'pendulo'"> - Comodidad del extremo -> son comodos ya que no tienen contenciones ni filtros, lo opuesto de una posicion intermedia </pre>
-      <pre *ngSwitchCase="'pendulo'"></pre>
-      <pre *ngSwitchCase="'pendulo'">- Los extremos no necesariamente son malos, ya que permiten tener nuevas experiencias, y conocer nuevos puntos de vista </pre>
-      <pre *ngSwitchCase="'pendulo'">- Esto se debe hacer de manera racional, y bajo nuestra propia elección, para que podamos reflexionar en vez de seguir ciegamente </pre>
-
-      <pre *ngSwitchCase="'prejuicios'">- El primer paso es aceptar que todos tenemos segos cognitivos, estemos concientes o no de ellos </pre>
-      <pre *ngSwitchCase="'prejuicios'">- Para combatirlos se pueden usar diferentes estrategias como: </pre>
-      <pre *ngSwitchCase="'prejuicios'"></pre>
-      <pre *ngSwitchCase="'prejuicios'"> - Evitar el "punto ciego" -> todos estamos sesgados, el primer paso para evitarlo es aceptarlo </pre>
-      <pre *ngSwitchCase="'prejuicios'"> - Para evitar la "subjetividad" -> es ideal tener un equipo diverso y participativo </pre>
-      <pre *ngSwitchCase="'prejuicios'"> - No usar el "muro tecnico" -> para eludir o evitar cuestionamientos incomodos </pre>
-      <pre *ngSwitchCase="'prejuicios'"> - Planificar e investigar para salir de nuestra zona de comfort, nos ayuda a encontrar más soluciones </pre>
-      <pre *ngSwitchCase="'prejuicios'"> - Realiza pruebas, no siempre todo funciona o funciona como deberia </pre>
-      <pre *ngSwitchCase="'prejuicios'"> - Mantener afinidad con una persona no significa que debemos de dejar de prestar atención a los demás </pre>
-      <pre *ngSwitchCase="'prejuicios'"> - No aceptar la innovación puede ser tan malo como siempre estar al filo de la vanguardia </pre>
-      
-    </div>
-    
   </div>
+
+  <app-referencia class="flexbox terminal" [referencia]="referencia" [titulo]="titulo"></app-referencia>
+
+  <div class="terminal" [ngSwitch]="selection" #terminal>
+
+    <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
+
+    <span *ngFor="let item of items">
+      <span *ngSwitchCase="item.key">
+        <pre *ngFor="let content of item.content">{{content}}</pre>
+      </span>
+    </span>
+
+  </div>
+
+</div>

@@ -1,149 +1,47 @@
 <div class="content">
 
-    <h2>Caracteristicas del codigo (metadatos)</h2>
-  
-    <div class="card-container">
-  
-      <app-button [tittleButton]="'Meta data'" (click)="getLinkAndTittleByKey('metaDatos')"></app-button>
+  <h2>Caracteristicas del codigo (metadatos)</h2>
 
-      <app-button [tittleButton]="'Meta Clase'" (click)="getLinkAndTittleByKey('metaClase')"></app-button>
+  <div class="card-container">
 
-      <app-button [tittleButton]="'Reflexión'" (click)="getLinkAndTittleByKey('reflexion')"></app-button>
+    <app-button [tittleButton]="'Meta data'" (click)="getLinkAndTittleByKey('metaDatos')"></app-button>
 
-      <app-button [tittleButton]="'Aserciones'" (click)="getLinkAndTittleByKey('asserts')"></app-button>
+    <app-button [tittleButton]="'Meta Clase'" (click)="getLinkAndTittleByKey('metaClase')"></app-button>
 
-      <app-button [tittleButton]="'Exepciones'" (click)="getLinkAndTittleByKey('excepciones')"></app-button>
+    <app-button [tittleButton]="'Reflexión'" (click)="getLinkAndTittleByKey('reflexion')"></app-button>
 
-      <app-button [tittleButton]="'Scaffolding'" (click)="getLinkAndTittleByKey('scafolding')"></app-button>
+    <app-button [tittleButton]="'Aserciones'" (click)="getLinkAndTittleByKey('asserts')"></app-button>
 
-      <app-button [tittleButton]="'Cache'" (click)="getLinkAndTittleByKey('cache')"></app-button>
+    <app-button [tittleButton]="'Exepciones'" (click)="getLinkAndTittleByKey('excepciones')"></app-button>
 
-      <app-button [tittleButton]="'Hilos'" (click)="getLinkAndTittleByKey('hilos')"></app-button>
+    <app-button [tittleButton]="'Scaffolding'" (click)="getLinkAndTittleByKey('scafolding')"></app-button>
 
-      <app-button [tittleButton]="'Argumentos'" (click)="getLinkAndTittleByKey('argumentos')"></app-button>
+    <app-button [tittleButton]="'Cache'" (click)="getLinkAndTittleByKey('cache')"></app-button>
 
-      <app-button [tittleButton]="'Concurrencia'" (click)="getLinkAndTittleByKey('concurrenciaParalelismo')"></app-button>
+    <app-button [tittleButton]="'Hilos'" (click)="getLinkAndTittleByKey('hilos')"></app-button>
 
-      <app-button [tittleButton]="'Ortogonalidad'" (click)="getLinkAndTittleByKey('ortogonalidad')"></app-button>
+    <app-button [tittleButton]="'Argumentos'" (click)="getLinkAndTittleByKey('argumentos')"></app-button>
 
-      <app-button [tittleButton]="'Azucar Sintactico'" (click)="getLinkAndTittleByKey('azucarSintactico')"></app-button>
+    <app-button [tittleButton]="'Concurrencia'" (click)="getLinkAndTittleByKey('concurrenciaParalelismo')"></app-button>
 
-      <app-button [tittleButton]="'Coerción'" (click)="getLinkAndTittleByKey('coercion')"></app-button>
+    <app-button [tittleButton]="'Ortogonalidad'" (click)="getLinkAndTittleByKey('ortogonalidad')"></app-button>
 
-      <app-button [tittleButton]="'BoilerPlate'" (click)="getLinkAndTittleByKey('boilerPlate')"></app-button>
+    <app-button [tittleButton]="'BoilerPlate'" (click)="getLinkAndTittleByKey('boilerPlate')"></app-button>
 
-    </div>
-  
-    <app-referencia class="flexbox terminal" [referencia]="referencia" [titulo]="titulo"></app-referencia>
+  </div>
 
-    <div class="terminal" [ngSwitch]="selection" #terminal>
+  <app-referencia class="flexbox terminal" [referencia]="referencia" [titulo]="titulo"></app-referencia>
 
-        <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
-    
-        <pre *ngSwitchCase="'metaDatos'">- Literalmente son datos de los datos </pre>
-        <pre *ngSwitchCase="'metaDatos'">- Estan estructurados para describir caracteristicas de los datos como cantidad y contenido </pre>
-        <pre *ngSwitchCase="'metaDatos'">- Actualmente se usan para gestionar y recolectar información de interes </pre>
-        <pre *ngSwitchCase="'metaDatos'">- Facilitan la estandarización y la gestion de los cambios </pre>
-        <pre *ngSwitchCase="'metaDatos'">- Pueden facilitar el desarrollo al tener un menor cambio de costo entre plataformas </pre>
+  <div class="terminal" [ngSwitch]="selection" #terminal>
 
-        <pre *ngSwitchCase="'metaClase'">- Normalmente se considera una clase de clases </pre>
-        <pre *ngSwitchCase="'metaClase'">- Es una caracteristica propia del sistema por lo que el usuario jamas la llegara a ver </pre>
-        <pre *ngSwitchCase="'metaClase'">- Esta caracteristica permite añadir y modificar comportamientos del programa, </pre>
-        <pre *ngSwitchCase="'metaClase'"> - Sin llegarlo a afectar directamente </pre>
-        <pre *ngSwitchCase="'metaClase'">- Este concepto es ampliamente usado para realizar testing, por medio de anotaciones, dobles y otros conceptos, </pre>
-        <pre *ngSwitchCase="'metaClase'"> - Un ejemplo de esto son Junit y Mockito, frameworks para realizar pruebas en java, que se basan en estas caracteristica </pre>
+    <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
 
-        <pre *ngSwitchCase="'reflexion'">- Capacidad de un codigo para observar un programa para observarse y cambiar su estructura a alto nivel </pre>
-        <pre *ngSwitchCase="'reflexion'">- Puede ser dinamica o estatica, y es más comun en los lenguajes que usan maquinas virtuales para ejecutarse, como JAVA </pre>
-        <pre *ngSwitchCase="'reflexion'">- Cuando el codigo fuente se compila normalmente pierde su estructura al pasar a un lenguaje de un nivel más bajo, pero </pre>
-        <pre *ngSwitchCase="'reflexion'"> - si este sistema permite la reflexión esta estructura se preserva como metadatos </pre>
-        <pre *ngSwitchCase="'reflexion'">- La reflexión permite conseguir un codigo aun más flexible, a cambio de perder rendimiento </pre>
-        <pre *ngSwitchCase="'reflexion'"></pre>
-        <pre *ngSwitchCase="'reflexion'">- Esta caracteristica permite realizar acciones como: </pre>
-        <pre *ngSwitchCase="'reflexion'"> - Descubrir y modificar secciones de codigo en tiempo de ejecución </pre>
-        <pre *ngSwitchCase="'reflexion'"> - Evaluar una cadena como si fuera una sentencia de código fuente en tiempo de ejecución </pre>
-        <pre *ngSwitchCase="'reflexion'"> - Flexibilizar el tipado en lenguajes fuertemente tipados </pre>
+    <span *ngFor="let item of items">
+      <span *ngSwitchCase="item.key">
+        <pre *ngFor="let content of item.content" [innerHtml]="content">{{content}}</pre>
+      </span>
+    </span>
 
-        <pre *ngSwitchCase="'asserts'">- Todo codigo contiene algun tipo de restriccion, si estas no se documentan bien pueden inducir a errores </pre>
-        <pre *ngSwitchCase="'asserts'">- La documentación extensiva tampoco es una buena idea ya que modificar codigo conlleva a modificar la documentación tambien </pre>
-        <pre *ngSwitchCase="'asserts'">- Las aserciones son predicados que se evaluan como ciertos o falsos en tiempo de ejecución </pre>
-        <pre *ngSwitchCase="'asserts'">- Estas comprobaciones favorecen el proceso de detectar errores y garantizar las condiciones de funcionamiento </pre>
-        <pre *ngSwitchCase="'asserts'">- Son una opción a considerar si se quiere evitar la programación defensiva </pre>
+  </div>
 
-        <pre *ngSwitchCase="'excepciones'">- Es la indicación de que se produjo un error en la ejecución del programa </pre>
-        <pre *ngSwitchCase="'excepciones'">- Estas pueden ser situaciones esperadas, inesperadas e incluso pueden se provocadas </pre>
-        <pre *ngSwitchCase="'excepciones'">- Las exepciones son objetos especializados con toda la información del error </pre>
-        <pre *ngSwitchCase="'excepciones'">- Estos objetos pueden ser atrapados por la instrucción try-catch y evitar que se detenga el programa, </pre>
-        <pre *ngSwitchCase="'excepciones'"> - o simplemente ser lanzados y terminar el programa de manera abrupta </pre>
-        <pre *ngSwitchCase="'excepciones'">- El manejo de excepciones es fundamental para conseguir programas robustos y confiables, por esto es ideal definir, </pre>
-        <pre *ngSwitchCase="'excepciones'"> - responsabilidades acerca de quienes pueden lanzar excepciones y quienes pueden atraparlas </pre>
-
-        <pre *ngSwitchCase="'scafolding'">- Es la generación automatica de codigo funcional, archivos, carpetas, configuraciones, interfaces graficas, etc... </pre>
-        <pre *ngSwitchCase="'scafolding'">- Generalmente se basa en la creación de las operaciones CRUD, basandose en un modelo de datos previo </pre>
-        <pre *ngSwitchCase="'scafolding'">- Algunos frameworks pueden ayudar en este sentido, e incluso existen aplicaciones con este proposito </pre>
-
-        <pre *ngSwitchCase="'cache'">- La cache existe para diminuir la latencia e incrementar el rendimiento en operaciones costosas </pre>
-        <pre *ngSwitchCase="'cache'">- Esta es recomendable usarla en los casos donde el rendimiento no es el esperado, </pre>
-        <pre *ngSwitchCase="'cache'">  - o si son recursos poco mutables y muy solicitados </pre>
-        <pre *ngSwitchCase="'cache'">- Esto significa que el sistema soporte operaciones de datos con consistencia eventual </pre>
-        <pre *ngSwitchCase="'cache'"></pre>
-        <pre *ngSwitchCase="'cache'">- Tipos de cache: </pre>
-        <pre *ngSwitchCase="'cache'">- Local -> almacenamiento en memoria, ideal cuando la información es poca, predecible y poco mutable </pre>
-        <pre *ngSwitchCase="'cache'">  - esto puede conllevar a inconsistencias de los datos si hay diferentes instancias y problemas de rendimiento en la ejecución </pre>
-        <pre *ngSwitchCase="'cache'">- Centralizado -> se almacena de manera externa y este siempre esta en concordancia con las demás </pre>
-        <pre *ngSwitchCase="'cache'">  - al ser externa depende directamente de la latencia del medio en que este, y de su disponibilidad, además de su manejo </pre>
-        <pre *ngSwitchCase="'cache'">- Distribuida -> esta particionada y administrada por diferentes nodos que se comunican entre si </pre>
-        <pre *ngSwitchCase="'cache'">  - su manejo implica más complejidad </pre>
-
-        <pre *ngSwitchCase="'hilos'">- Un hilo es una secuencia de control dentro de un proceso que ejecuta sus procesos de forma independiente </pre>
-        <pre *ngSwitchCase="'hilos'">- Un proceso es una acción continua o serie de cambios, tareas que ocurren de manera definida </pre>
-        <pre *ngSwitchCase="'hilos'">- El ciclo de vida de un proceso es el siguiente: </pre>
-        <pre *ngSwitchCase="'hilos'">  Creacion -> Listo &larr;&rarr; Ejecución -> Terminado</pre>
-        <pre *ngSwitchCase="'hilos'">                            &darr;                     </pre>
-        <pre *ngSwitchCase="'hilos'">                &uarr;	Bloqueado                       </pre>
-
-        <pre *ngSwitchCase="'argumentos'">- En java los argumentos siempre se pasan por valor, esto significa que siempre se pasa el valor de la variable, </pre>
-        <pre *ngSwitchCase="'argumentos'"> - y no la referencia en memoria de la variable, por lo que siempre es una copia del original </pre>
-        <pre *ngSwitchCase="'argumentos'">- Las copias se pueden hacer del valor para datos primitivos, o una copia con la dirección de memoria si es un objeto </pre>
-        <pre *ngSwitchCase="'argumentos'">- Esto no modifica la variable original, ya sea un tipo primitivo o un objeto </pre>
-        <pre *ngSwitchCase="'argumentos'">- Algunas clases son inmutables por lo que los objetos originales nunca son modificados, </pre>
-        <pre *ngSwitchCase="'argumentos'"> - solo se devuelve una nueva instancia con los cambios en vez de la original </pre>
-
-        <pre *ngSwitchCase="'concurrenciaParalelismo'">- Concunrrencia -> es la capacidad de realizar muchas tareas a la vez, con ó sin una secuencia especifica </pre>
-        <pre *ngSwitchCase="'concurrenciaParalelismo'">- Paralelismo -> es la capacidad de ejecutar 2 ó más acciones de manera simultanea </pre>
-        <pre *ngSwitchCase="'concurrenciaParalelismo'"></pre>
-        <pre *ngSwitchCase="'concurrenciaParalelismo'">- Para implementar concurrencia se recomienda usar Hilos, en cambio </pre>
-        <pre *ngSwitchCase="'concurrenciaParalelismo'">- Para implementar paralelismos se optara por usar Procesos </pre>
-        <pre *ngSwitchCase="'concurrenciaParalelismo'"></pre>
-        <pre *ngSwitchCase="'concurrenciaParalelismo'">- Aunque la programación concurrente tiene problemas en cuanto a la coherencia de los datos, </pre>
-        <pre *ngSwitchCase="'concurrenciaParalelismo'"> - es bastante util para resolver problemas de rendimiento </pre>
-        <pre *ngSwitchCase="'concurrenciaParalelismo'">- En cambio si el orden de las tareas es importante y tanto el inicio como el fin tambien, </pre>
-        <pre *ngSwitchCase="'concurrenciaParalelismo'"> - la programación paralela es mejor debido a su aislamiento inherente </pre>
-
-        <pre *ngSwitchCase="'ortogonalidad'">- Basicamente significa que cuando hacemos una accion esta no debe modificar lo que no le respecta </pre>
-        <pre *ngSwitchCase="'ortogonalidad'">- Tambien se puede interpretar de manera que cuando se ejecute una instrucción solo se ejecute esta y nada más </pre>
-
-        <pre *ngSwitchCase="'azucarSintactico'">- Termino acuñado para hacer referencia a las adiciones sintacticas de un lenguaje de programación </pre>
-        <pre *ngSwitchCase="'azucarSintactico'">- Estas adiciones se dan con el proposito de hacer que las construcciones sean más faciles de leer y expresar </pre>
-        <pre *ngSwitchCase="'azucarSintactico'">- Esto no cambia el sentido semantico de las expresiones, pero si lo hace más entendible para el ser humano </pre>
-        <pre *ngSwitchCase="'azucarSintactico'">- Son aquellas expresiones que pueden ser borradas sin afectar el funcionamiento del programa, o su rendimiento </pre>
-        <pre *ngSwitchCase="'azucarSintactico'">- Parte del trabajo de los compiladores es desglosar estas expresiones a sus reducciones más basicas </pre>
-
-        <pre *ngSwitchCase="'coercion'">- Es la conversion automatica o implicita de un tipo de dato a otro </pre>
-        <pre *ngSwitchCase="'coercion'"> - Ejemplo: de string a number </pre>
-        <pre *ngSwitchCase="'coercion'">- La coerción es implicita, mientras que la conversion puede ser implicita o explicita </pre>
-        <pre *ngSwitchCase="'coercion'">- Esto puede dar a errores o conversiones erroneas si no se especifica que es lo que se necesita </pre>
-        <pre *ngSwitchCase="'coercion'"> - Ejemplo -> '5' + 9 = 59          </pre>
-        <pre *ngSwitchCase="'coercion'"> - Ejemplo -> Number('5') + 9 = 14 </pre>
-
-        <pre *ngSwitchCase="'boilerPlate'">- Este hace referencia a codigo repetitivo que no siempre es util, pero si requerido, aun aveces cuando no vaya a ser usado </pre>
-        <pre *ngSwitchCase="'boilerPlate'">- Esto tambien aplica para fragmentos de codigo propios, ya que se reutiliza codigo, con solo copiar y pegar </pre>
-        <pre *ngSwitchCase="'boilerPlate'">- El boiler plate es diferente del scafolding, ya que este primero es más de copiar y pegar, </pre>
-        <pre *ngSwitchCase="'boilerPlate'"> - en cambio el segundo esta relacionado con mantener estandares y formas de uso </pre>
-        <pre *ngSwitchCase="'boilerPlate'">- Un ejemplo de esto es el uso de getters y setters en POO para modificar los objetos, </pre>
-        <pre *ngSwitchCase="'boilerPlate'"> - aunque estos cambian de acuerdo al objeto, su función y su forma son casi siempre identicas </pre>
-
-      </div>
-        
-    </div>
-  
+</div>

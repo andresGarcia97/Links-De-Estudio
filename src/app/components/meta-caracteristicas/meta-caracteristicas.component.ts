@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { META_CARACTERISTICAS } from 'src/app/models/content';
 import { LinkReferencia } from 'src/app/models/linkReferencia';
 
 @Component({
@@ -7,9 +8,6 @@ import { LinkReferencia } from 'src/app/models/linkReferencia';
 })
 export class MetaCaracteristicasComponent extends LinkReferencia {
 
-  constructor() {
-    super();
-  }
-
+  items = META_CARACTERISTICAS;
 
 }

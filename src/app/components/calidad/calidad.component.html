@@ -1,97 +1,31 @@
 <div class="content">
 
-    <h2>Calidad del software</h2>
-  
-    <div class="card-container">
-  
-      <app-button [tittleButton]="'Artesanos'" (click)="getLinkAndTittleByKey('artesanos')"></app-button>
+  <h2>Calidad del software</h2>
 
-      <app-button [tittleButton]="'Metricas #1'" (click)="getLinkAndTittleByKey('metricas')"></app-button>
+  <div class="card-container">
 
-      <app-button [tittleButton]="'Metricas #2'" (click)="getLinkAndTittleByKey('metricasEnCodigo')"></app-button>
+    <app-button [tittleButton]="'Artesanos'" (click)="getLinkAndTittleByKey('artesanos')"></app-button>
 
-      <app-button [tittleButton]="'Clean Code'" (click)="getLinkAndTittleByKey('cleanCode')"></app-button>
+    <app-button [tittleButton]="'Metricas #1'" (click)="getLinkAndTittleByKey('metricas')"></app-button>
 
-    </div>
-  
-    <app-referencia class="flexbox terminal" [referencia]="referencia" [titulo]="titulo"></app-referencia>
+    <app-button [tittleButton]="'Metricas #2'" (click)="getLinkAndTittleByKey('metricasEnCodigo')"></app-button>
 
-    <div class="terminal" [ngSwitch]="selection" #terminal>
-        
-      <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
+    <app-button [tittleButton]="'Clean Code'" (click)="getLinkAndTittleByKey('cleanCode')"></app-button>
 
-      <pre *ngSwitchCase="'artesanos'">- Se puede considerar el siguiente nivel del desarrollo profesional, no solo mejorando nosotros mismo, sino a los demás </pre>
-      <pre *ngSwitchCase="'artesanos'">- Los 4 principios que este expone son: </pre>
-      <pre *ngSwitchCase="'artesanos'"></pre>
-      <pre *ngSwitchCase="'artesanos'">- No sólo software que funciona, <strong>SINO</strong> también software bien diseñado</pre>
-      <pre *ngSwitchCase="'artesanos'">- No sólo responder al cambio, <strong>SINO</strong> también agregar valor constantemente</pre>
-      <pre *ngSwitchCase="'artesanos'">- No sólo individuos e interacciones, <strong>SINO</strong> también una comunidad de profesionales</pre>
-      <pre *ngSwitchCase="'artesanos'">- No sólo colaboración con el cliente, <strong>SINO</strong> también asociaciones productivas</pre>
-
-      <pre *ngSwitchCase="'metricas'">- Además de revelar el desempeño del equipo de desarrollo, puede ser indicativo de la efectividad del equipo </pre>
-      <pre *ngSwitchCase="'metricas'">- Metricas de productividad </pre>
-      <pre *ngSwitchCase="'metricas'"> - Tiempo de entrega -> tiempo que se tarda de inicio a fin para entregar un proyecto </pre>
-      <pre *ngSwitchCase="'metricas'"> - Cantidad de codigo -> lineas de codigo de la aplicación, esto puede ser un indicativo de la productividad, </pre>
-      <pre *ngSwitchCase="'metricas'">   - más no de la calidad </pre>
-      <pre *ngSwitchCase="'metricas'"> - Trabajo en curso -> trabajo empezado y que se compara con lo anteriormente hecho para tener una idea del progreso </pre>
-      <pre *ngSwitchCase="'metricas'"> - Velocidad agil -> basandose en los sprints previos y cuantos puntos se han hecho, se puede estimar el proximo sprint </pre>
-      <pre *ngSwitchCase="'metricas'"> - Tasa de exito -> calcula el porcentaje de exito del sprint, esto no significa necesariamente completar los puntos, </pre>
-      <pre *ngSwitchCase="'metricas'">   - pero si las tareas del sprint </pre>
-      <pre *ngSwitchCase="'metricas'"> - Numero de versiones -> los equipos agiles dan prioridad a las nuevas versiones con nuevas caracteristicas que den valor </pre>
-      <pre *ngSwitchCase="'metricas'"></pre>
-      <pre *ngSwitchCase="'metricas'">- Metricas de rendimiento </pre>
-      <pre *ngSwitchCase="'metricas'"> - Rendimiento -> cantidad de unidades que procesa un sistema en un periodo de tiempo </pre>
-      <pre *ngSwitchCase="'metricas'"> - Tiempo de respuesta -> tiempo que se tarda en responder a una consulta </pre>
-      <pre *ngSwitchCase="'metricas'"> - Fiabilidad y disponibilidad -> capacidad del software para cumplir con sus especificaciones </pre>
-      <pre *ngSwitchCase="'metricas'"></pre>
-      <pre *ngSwitchCase="'metricas'">- Metricas de defectos </pre>
-      <pre *ngSwitchCase="'metricas'"> - Cobertura de codigo -> proporcion del codigo que cubren las pruebas en relación a toda su extension </pre>
-      <pre *ngSwitchCase="'metricas'"> - Deteccion de defectos ->  es un porcentaje calculado entre los defectos encontrados antes y despues del lanzamiento </pre>
-      <pre *ngSwitchCase="'metricas'"> - Deuda tecnica -> es el costo de ignorar problemas que a la larga se podran convertir en errores </pre>
-      <pre *ngSwitchCase="'metricas'"> - Vulnerabilidades de seguridad -> entre menos brechas y defectos se encuentren, más seguro sera la aplicación </pre>
-      <pre *ngSwitchCase="'metricas'"> - Incidentes de seguridad -> recuento de las veces en que una aplicación fue vulnerada y la gravedad del ataque </pre>
-      <pre *ngSwitchCase="'metricas'"></pre>
-      <pre *ngSwitchCase="'metricas'">- Metricas de usabilidad </pre>
-      <pre *ngSwitchCase="'metricas'"> - UX -> suelen ser cualitativas e incluyen las respuestas objetivas y subjetivas del usuario </pre>
-      <pre *ngSwitchCase="'metricas'"> - Usabilidad -> mide que tan bien el software permite alcanzar sus objetivos </pre>
-      <pre *ngSwitchCase="'metricas'"> - Net Promoter Score -> es la voluntad de un cliente para recomendar la aplicación a otros </pre>
-
-      <pre *ngSwitchCase="'metricasEnCodigo'">- Aplicar estas metricas suele ser un tema complejo, ya que estas dependen de las necesidades especificas de la aplicación </pre>
-      <pre *ngSwitchCase="'metricasEnCodigo'">- Pero esto trae grandes beneficios para las aplicaciones al permitir conocer el estado actual y las acciones para mejorar nuestro codigo </pre>
-      <pre *ngSwitchCase="'metricasEnCodigo'"></pre>
-      <pre *ngSwitchCase="'metricasEnCodigo'"> - Acoplamiento -> todo modulo debe ser lo suficientemente independiente para ser modificado y afectar en lo minimo posible a los demás </pre>
-      <pre *ngSwitchCase="'metricasEnCodigo'">  - demasiado acoplamiento significa que esto conllevara a efectos en cascada no deseados al realizar modificaciones en el codigo </pre>
-      <pre *ngSwitchCase="'metricasEnCodigo'"></pre>
-      <pre *ngSwitchCase="'metricasEnCodigo'"> - Cohesion -> es el grado de relación entre las partes, y va muy de la mano con el principio de responsabilidad unica </pre>
-      <pre *ngSwitchCase="'metricasEnCodigo'">  - un codigo poco integrado se vuelve complejo, dificil de mantener y poco reutilizable </pre>
-      <pre *ngSwitchCase="'metricasEnCodigo'"></pre>
-      <pre *ngSwitchCase="'metricasEnCodigo'"> - Complejidad -> un algoritmo debe ser eficaz y facil de entender, de esta se diferencia 2 tipos de complejidad </pre>
-      <pre *ngSwitchCase="'metricasEnCodigo'">  - Complejidad Cognitiva -> que es la dificultad para entender intuitivamente el codigo </pre>
-      <pre *ngSwitchCase="'metricasEnCodigo'">  - Complejidad Ciclomatica -> que es la dificultad para probar determinado segmento de codigo </pre>
-      <pre *ngSwitchCase="'metricasEnCodigo'"></pre>
-      <pre *ngSwitchCase="'metricasEnCodigo'"> - Code Churn -> frecuencia con que altera el codigo a traves del tiempo, a mayor numero de modificaciones, más posibilidad de error </pre>
-      <pre *ngSwitchCase="'metricasEnCodigo'"></pre>
-      <pre *ngSwitchCase="'metricasEnCodigo'"> - Cobertura -> porcentaje de codigo cubierto por las pruebas, a mayor cobertura, menor es la posibilidad de defectos </pre>
-      <pre *ngSwitchCase="'metricasEnCodigo'"></pre>
-      <pre *ngSwitchCase="'metricasEnCodigo'"> - Codigo muerto -> es codigo que nunca es ejecutado, no siempre es facil de encontrar y no hay metodos infalibles para esto </pre>
-      <pre *ngSwitchCase="'metricasEnCodigo'"></pre>
-      <pre *ngSwitchCase="'metricasEnCodigo'"> - Duplicación -> este codigo es producto del desconocimiento general del proyecto, replicando codigo que ya existe </pre>
-
-      <pre *ngSwitchCase="'cleanCode'">- La calidad de codigo es un estandar que siempre se debe perseguir, hasta el codigo más limpio puede verse afectado por las malas practicas </pre>
-      <pre *ngSwitchCase="'cleanCode'">- El proceso de degradación en todo proyecto es inevitable, más no incontrolable </pre>
-      <pre *ngSwitchCase="'cleanCode'">- Los parches pueden ser reparaciones o adiciones rapidas y funcionales, sin embargo puedan estar en contravia directa de la calidad del codigo </pre>
-      <pre *ngSwitchCase="'cleanCode'"></pre>
-      <pre *ngSwitchCase="'cleanCode'">- Para soluciones limpias y bien estructuradas se deberian seguir los siguientes pasos: </pre>
-      <pre *ngSwitchCase="'cleanCode'">  - Analisis de caracateristicas -> toda nueva funcionalidad debe ser analizada e implementada de manera que, </pre>
-      <pre *ngSwitchCase="'cleanCode'">    - el mayor numero de inquietudes este resuelto antes de iniciar la solución </pre>
-      <pre *ngSwitchCase="'cleanCode'">  - Analisis del codigo base -> sabiendo la solución se debe analizar el codigo base para causar el menor impacto posible, </pre>
-      <pre *ngSwitchCase="'cleanCode'">    - para tener claro que se puede modificar, reutilizar y que se debe crear nuevo </pre>
-      <pre *ngSwitchCase="'cleanCode'">  - Desarrollo y refactorización -> no solo es desarrollar nuevos componentes y modificar los existentes, </pre>
-      <pre *ngSwitchCase="'cleanCode'">    - tambien puede haber lugar para refactorizaciones, evitando la degradación del codigo </pre>
-      <pre *ngSwitchCase="'cleanCode'"></pre>
-      <pre *ngSwitchCase="'cleanCode'">- Si estos pasos se realizan de manera adecuada y se mantiene la calidad del codigo en la mente, </pre>
-      <pre *ngSwitchCase="'cleanCode'"> - la degeneración de nuestro codigo se podra manejar en terminos aceptables </pre>
-
-    </div>
-    
   </div>
+
+  <app-referencia class="flexbox terminal" [referencia]="referencia" [titulo]="titulo"></app-referencia>
+
+  <div class="terminal" [ngSwitch]="selection" #terminal>
+
+    <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
+
+    <span *ngFor="let item of items">
+      <span *ngSwitchCase="item.key">
+        <pre *ngFor="let content of item.content" [innerHTML]="content">{{content}}</pre>
+      </span>
+    </span>
+
+  </div>
+
+</div>

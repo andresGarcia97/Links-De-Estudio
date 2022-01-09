@@ -11,6 +11,10 @@
     <app-button [tittleButton]="'Interpretes'" (click)="getLinkAndTittleByKey('interprete')"></app-button>
 
     <app-button [tittleButton]="'Transpilación'" (click)="getLinkAndTittleByKey('transpilacion')"></app-button>
+    
+    <app-button [tittleButton]="'Azucar Sintactico'" (click)="getLinkAndTittleByKey('azucarSintactico')"></app-button>
+
+    <app-button [tittleButton]="'Coerción'" (click)="getLinkAndTittleByKey('coercion')"></app-button>
 
   </div>
 
@@ -20,33 +24,11 @@
 
     <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
 
-    <pre *ngSwitchCase="'compilacion'">- Es el proceso de pasar un lenguaje de programación a otro formato de manera equivalente </pre>
-    <pre *ngSwitchCase="'compilacion'">- Generalmente es un proceso de lenguajes de alto nivel a bajo nivel </pre>
-    <pre *ngSwitchCase="'compilacion'">- Durante el proceso el codigo se puede optimizar o añadir más procesos </pre>
-
-    <pre *ngSwitchCase="'nivel'">- Bajo nivel  -> son lenguajes de alto rendimiento dependientes de la maquina donde se ejecute </pre>
-    <pre *ngSwitchCase="'nivel'">- Bajo nivel  -> Es un lenguaje que esta más cercano al lenguaje maquina, por lo que son dificiles de manejar </pre>
-    <pre *ngSwitchCase="'nivel'"></pre>
-    <pre *ngSwitchCase="'nivel'">- Medio nivel -> Pocos lenguajes caen en esta categoria, ya que pueden </pre>
-    <pre *ngSwitchCase="'nivel'">- Medio nivel -> Acceder al sistema pero tambien puede funcionar como lenguaje de alto nivel </pre>
-    <pre *ngSwitchCase="'nivel'"></pre>
-    <pre *ngSwitchCase="'nivel'">- Alto nivel  -> Son lenguajes más cercanos al entendimiento humano, además de ser más dinamicos </pre>
-    <pre *ngSwitchCase="'nivel'">- Alto nivel  -> Son independientes de las maquinas donde se ejecuten, a traves de un traductor como intermediario </pre>
-
-    <pre *ngSwitchCase="'interprete'">- Compilados -> son traducidos y ejecutados en la maquina que esten </pre>
-    <pre *ngSwitchCase="'interprete'">- Compilados -> esto hace que la optimización sea mayor, pero la compatibilidad no </pre>
-    <pre *ngSwitchCase="'interprete'">- Compilados -> los archivos ejecutables se realizan previamente, por lo que la ejecución es inmediata </pre>
-    <pre *ngSwitchCase="'interprete'">- Compilados -> al estar enlazados con el SO y el Host, estos se pueden afectar mutuamente </pre>
-    <pre *ngSwitchCase="'interprete'"></pre>
-    <pre *ngSwitchCase="'interprete'">- Interpretados -> estos deben tambien deben ser traducidos, pero lo hacen a un intermediario </pre>
-    <pre *ngSwitchCase="'interprete'">- Interpretados -> este intermediario se encarga de ejecutar el programa para que el sistema lo entienda </pre>
-    <pre *ngSwitchCase="'interprete'">- Interpretados -> debido a esto son multiplataforma, y se hace a pedido, (just in Time) </pre>
-    <pre *ngSwitchCase="'interprete'">- Interpretados -> la ejecución de estos programas estan aisladas del SO, por lo que requieren más recursos </pre>
-
-    <pre *ngSwitchCase="'transpilacion'">- Estos tambien traducen codigo de un lenguaje a otro, pero de igual nivel </pre>
-    <pre *ngSwitchCase="'transpilacion'">- Uno de los ejemplos más relevantes es paso de Typescript a Javascript </pre>
-    <pre *ngSwitchCase="'transpilacion'">- Todo transpilador puede ser considerado un compilador, pero no al contrario </pre>
-    <pre *ngSwitchCase="'transpilacion'">- Generalmente toda la sintaxis del lenguaje destino es compatible con la de origen, pero no al contrario </pre>
+    <span *ngFor="let item of items">
+      <span *ngSwitchCase="item.key">
+        <pre *ngFor="let content of item.content">{{content}}</pre>
+      </span>
+    </span>
 
   </div>
 
