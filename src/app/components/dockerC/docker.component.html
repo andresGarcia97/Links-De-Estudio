@@ -1,110 +1,37 @@
 <div class="content">
 
-    <h2>Docker</h2>
-  
-    <div class="card-container">
-    
-      <app-button [tittleButton]="'Docker'" (click)="getLinkAndTittleByKey('docker')"></app-button>
+  <h2>Docker</h2>
 
-      <app-button [tittleButton]="'Imagenes'" (click)="getLinkAndTittleByKey('images')"></app-button>
+  <div class="card-container">
 
-      <app-button [tittleButton]="'Contenedores'" (click)="getLinkAndTittleByKey('containers')"></app-button>
+    <app-button [tittleButton]="'Docker'" (click)="getLinkAndTittleByKey('docker')"></app-button>
 
-      <app-button [tittleButton]="'Volumenes'" (click)="getLinkAndTittleByKey('volumes')"></app-button>
+    <app-button [tittleButton]="'Imagenes'" (click)="getLinkAndTittleByKey('images')"></app-button>
 
-      <app-button [tittleButton]="'Redes'" (click)="getLinkAndTittleByKey('network')"></app-button>
+    <app-button [tittleButton]="'Contenedores'" (click)="getLinkAndTittleByKey('containers')"></app-button>
 
-      <app-button [tittleButton]="'DockerFile'" (click)="getLinkAndTittleByKey('file')"></app-button>
+    <app-button [tittleButton]="'Volumenes'" (click)="getLinkAndTittleByKey('volumes')"></app-button>
 
-      <app-button [tittleButton]="'Docker Compose'" (click)="getLinkAndTittleByKey('compose')"></app-button>
-    
-    </div>
-  
-    <app-referencia class="flexbox terminal" [referencia]="referencia" [titulo]="titulo"></app-referencia>
+    <app-button [tittleButton]="'Redes'" (click)="getLinkAndTittleByKey('network')"></app-button>
 
-    <div class="terminal" [ngSwitch]="selection" #terminal>
+    <app-button [tittleButton]="'DockerFile'" (click)="getLinkAndTittleByKey('file')"></app-button>
 
-      <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
+    <app-button [tittleButton]="'Docker Compose'" (click)="getLinkAndTittleByKey('compose')"></app-button>
 
-      <pre *ngSwitchCase="'docker'">- Esta basado en el Kernel de Linux y su proposito es segregar los procesos de manera que sean independientes </pre>
-      <pre *ngSwitchCase="'docker'">- Reduce el consumo de recursos al solo tener lo necesario para ejecutar los procesos </pre>
-      <pre *ngSwitchCase="'docker'">- Desde su aparición las maquinas virtuales han perdido relevancia </pre>
-      <pre *ngSwitchCase="'docker'">- El uso de los contenedores y todos sus beneficios fue una gran revolución en el desarrollo del software </pre>
-      <pre *ngSwitchCase="'docker'">- Los contenedores son entornos de ejecución completos haciendolos independientes del sistema anfitrión </pre>
-      <pre *ngSwitchCase="'docker'">- Los servicios se pueden unir para generar aplicaciones de más complejidad y eficiencia </pre>
-
-      <pre *ngSwitchCase="'images'">- Son los elementos necesarios para crear instancias de lo que se necesite </pre>
-      <pre *ngSwitchCase="'images'">- Estas imagenes pueden ser oficiales ó personalizadas para nuestros requerimientos </pre>
-      <pre *ngSwitchCase="'images'">- Existen repositorios en la nube donde se pueden descargar o guardar estas imagenes, uno de los principales es DockerHub </pre>
-      <pre *ngSwitchCase="'images'">- Toda imagen tiene un tag asociado, para poder diferenciar las versiones entre si, por defecto este tag es latest </pre>
-      <pre *ngSwitchCase="'images'">- Para descargar imagenes el comando es -> docker pull imagen:tag  (si no especifica el tag, se descargara la imagen con latest)</pre>
-      <pre *ngSwitchCase="'images'">- las imagenes se pueden personalizar de varias maneras: </pre>
-      <pre *ngSwitchCase="'images'">  - Creando un contenedor a partir de una imagen base e instalar todo lo necesario manualmente, </pre>
-      <pre *ngSwitchCase="'images'">  - y despues se hace un commit de el contenedor -> docker commit [id_container] [nombre_imagen] </pre>
-      <pre *ngSwitchCase="'images'"></pre>
-      <pre *ngSwitchCase="'images'">  - Mediante un archivo DockerFile -> primero se crea un archivo llamado DockerFile sin ninguna extensión </pre>
-      <pre *ngSwitchCase="'images'">  - cada comando de este archivo indica una capa, las cuales se van apilando entre si para construir algo más complejo </pre>
-
-      <pre *ngSwitchCase="'containers'">- Son las instancias de las imagenes descargadas o creadas previamente </pre>
-      <pre *ngSwitchCase="'containers'">- docker ps -> contenedores ejecutandose </pre>
-      <pre *ngSwitchCase="'containers'">- docker ps -a -> todos los contenedores existentes, indifirentemente de su estado </pre>
-      <pre *ngSwitchCase="'containers'">- docker exec -> para ejecutar comandos dentro del contenedor, sin entrar en el </pre>
-      <pre *ngSwitchCase="'containers'">- docker start [nombre_contenedor]-> inicia el contenedor </pre>
-      <pre *ngSwitchCase="'containers'">- docker stop [nombre_contenedor]-> detiene el contenedor </pre>
-      <pre *ngSwitchCase="'containers'">- docker restart [nombre_contenedor]-> reinicia el contenedor </pre>
-      <pre *ngSwitchCase="'containers'">- docker rm [nombre_contenedor]-> elimina el contenedor </pre>
-      <pre *ngSwitchCase="'containers'">- para estos comandos tambien se puede usar las id de los contenedores </pre>
-
-      <pre *ngSwitchCase="'file'">- FROM -> indica el SO base de la imagen </pre>
-      <pre *ngSwitchCase="'file'">- COPY -> añade archivos del directorio actual a la imagen </pre>
-      <pre *ngSwitchCase="'file'">- RUN -> ejecuta comandos dentro del contenedor necesarios para crear la imagen </pre>
-      <pre *ngSwitchCase="'file'">- CMD -> ejecuta comandos directamente en la consola </pre>
-      <pre *ngSwitchCase="'file'">- LABEL -> son etiquetas del proyecto para dar a conocer información, como licencias </pre>
-      <pre *ngSwitchCase="'file'">- EXPOSE -> indica que puertos estaran abiertos en la imagen para que la aplicación pueda comunicarse </pre>
-      <pre *ngSwitchCase="'file'">- ENV -> define las variables de entorno, sirve para ayudar en la configuración de la imagen </pre>
-      <pre *ngSwitchCase="'file'">- ADD -> funciona igual que COPY pero se diferencia a la manera de extraer los archivos de sus ubicaciones </pre>
-      <pre *ngSwitchCase="'file'">- ENTRYPOINT -> establece el comando principal de la imagen, suele ser el comando iniciador de la aplicación </pre>
-      <pre *ngSwitchCase="'file'">- VOLUME -> es para indicar el directorio que siempre se mantendra aunque se eliminen los contenedores </pre>
-      <pre *ngSwitchCase="'file'">  util para guardar archivos necesarios que necesita la aplicación y que pueden cambiar en cualquier momento </pre>
-      <pre *ngSwitchCase="'file'">- USER -> este cambia el usuario del contenedor a uno diferente, el usuario por defecto suele ser root </pre>
-      <pre *ngSwitchCase="'file'">- WORKDIR -> indica el directorio donde trabajara la aplicación, y se recomienda el uso de rutas absolutas para este </pre>
-      <pre *ngSwitchCase="'file'">- ONBUILD -> son comandos que se ejecutaran una vez terminada la construcción de la imagen principal </pre>
-
-      <pre *ngSwitchCase="'volumes'">- un volumen es un directorio o fichero que estara asociado a los contenedores, </pre>
-      <pre *ngSwitchCase="'volumes'">- estos son independientes de los contenedores y no son afectados por la efimeridad de estos </pre>
-      <pre *ngSwitchCase="'volumes'"></pre>
-      <pre *ngSwitchCase="'volumes'">- se crean añadiendo la opción -v al crear un contenedor </pre>
-      <pre *ngSwitchCase="'volumes'"> - docker run -it --name contenedor -v /path imagen:tag bash</pre>
-      <pre *ngSwitchCase="'volumes'"></pre>
-      <pre *ngSwitchCase="'volumes'">- se pueden crear mediante volumenes o como simples directorios, por ejemplo: </pre>
-      <pre *ngSwitchCase="'volumes'"> - docker run -it --name contenedor -v vol:/path imagen:tag bash</pre>
-      <pre *ngSwitchCase="'volumes'"></pre>
-      <pre *ngSwitchCase="'volumes'">- todo contenedor crea un volumen con un nombre aleatorio por defecto, estos se pueden consultar mediante 2 formas</pre>
-      <pre *ngSwitchCase="'volumes'"> - docker inspect [nombre_contenedor] -> mostrando todas las caracteristicas del contenedor en cuestion </pre>
-      <pre *ngSwitchCase="'volumes'"> - docker volume ls -> mostrando todos los contenedores existentes, pero sin sus asociaciones </pre>
-
-      <pre *ngSwitchCase="'network'">- Cada contenedor de docker tiene una IP asociada, en base a la ip del Host</pre>
-      <pre *ngSwitchCase="'network'">- Existen 5 tipos de redes </pre>
-      <pre *ngSwitchCase="'network'"></pre>
-      <pre *ngSwitchCase="'network'">- Bridge -> red por defecto de los contenedores cuando no se les especifica una </pre>
-      <pre *ngSwitchCase="'network'">- Host -> el contenedor usara la misma IP del host en el que este </pre>
-      <pre *ngSwitchCase="'network'">- None -> se le indica al contenedor que no tiene una red asignada </pre>
-      <pre *ngSwitchCase="'network'">- Overlay -> crea multiples redes superpuestas permitiendo la comunicación de servicios en enjambre </pre>
-      <pre *ngSwitchCase="'network'">- Macvlan -> permiten asignar una dirección MAC a un contenedor, apareciendo como un dispositivo fisico en la red </pre>
-      <pre *ngSwitchCase="'network'"></pre>
-      <pre *ngSwitchCase="'network'">- docker network create --driver bridge [nombre_red] -> crea una nueva red, de tipo bridge </pre>
-      <pre *ngSwitchCase="'network'"> - cada red creada creara una nueva subred </pre>
-      <pre *ngSwitchCase="'network'"></pre>
-      <pre *ngSwitchCase="'network'">- a los contenedores se les puede especificar una red cuando estos se crean  </pre>
-      <pre *ngSwitchCase="'network'"> - docker run -d -P --name [nombre_contenedor] --network [nombre_red] </pre>
-      <pre *ngSwitchCase="'network'"></pre>
-      <pre *ngSwitchCase="'network'">- la red tambien se puede cambiar despues de que un contenedor es creado </pre>
-      <pre *ngSwitchCase="'network'"> - docker network connect --link [nombre_contenedor]:[alias]  [nombre_red] [nombre_contenedor]</pre>
-
-      <pre *ngSwitchCase="'compose'">- Docker Compose permite simplificar y administrar los contenedores por medio de archivos YAML </pre>
-      <pre *ngSwitchCase="'compose'">- Esto permite conectar y administrar a los contenedores y sus puertos, volumenes, configuraciones, etc.. </pre>
-      <pre *ngSwitchCase="'compose'">- Se puede usar con Dockerfiles previamente creados, o especificar todo directamente en el archivo </pre>
-  
-    </div>
-    
   </div>
+
+  <app-referencia class="flexbox terminal" [referencia]="referencia" [titulo]="titulo"></app-referencia>
+
+  <div class="terminal" [ngSwitch]="selection" #terminal>
+
+    <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
+
+    <span *ngFor="let item of items">
+      <span *ngSwitchCase="item.key">
+        <pre *ngFor="let content of item.content">{{content}}</pre>
+      </span>
+    </span>
+
+  </div>
+
+</div>

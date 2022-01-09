@@ -24,48 +24,11 @@
 
     <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
 
-    <pre *ngSwitchCase="'ddd'"> -El lenguaje debe ser obicuo (entedible por cualquiera)</pre>
-    <pre *ngSwitchCase="'ddd'"> -El desarrollo debe ser lo más abstracto posible para ser independiente de las implementaciones </pre>
-    <pre *ngSwitchCase="'ddd'"> -Las capas se vuelven parte diciente del codigo, indicando su utilidad con sus nombres </pre>
-
-    <pre *ngSwitchCase="'bdd'"> - Es una evolución de TDD, que es más que solo testing </pre>
-    <pre *ngSwitchCase="'bdd'"> - Aca las pruebas se concentran en tener un lenguaje obicuo, por lo que todas las partes se pueden involucrar rapidamente </pre>
-    <pre *ngSwitchCase="'bdd'"> - Para implementarse las Historias de Usuario son fundamentales </pre>
-    <pre *ngSwitchCase="'bdd'"> - Comprender el esquema Given-When-Then </pre>
-    <pre *ngSwitchCase="'bdd'"> - <strong>Dado</strong> escenario y precondiciones <strong>Cuando</strong> acciones a ejecutar <strong>Entonces</strong> Resultado a validar</pre>
-    <pre *ngSwitchCase="'bdd'"> - Mejora la comunicación entre todas las partes, ya que todas se comunican más entre si </pre>
-
-    <pre *ngSwitchCase="'tdd'"> - Primero se escriben las pruebas, y despues se crea el codigo para que estas funcionen </pre>
-    <pre *ngSwitchCase="'tdd'"> - Puede incrementar la carga de trabajo, pero se obtiene un codigo más robusto y mantenible </pre>
-    <pre *ngSwitchCase="'tdd'"> - Basicamente es un ciclo constante de creación de pruebas, refactorización y crecimiento </pre>
-    <pre *ngSwitchCase="'tdd'"> - El <strong>Que</strong>, es más importante que el <strong>Como</strong> </pre>
-    <pre *ngSwitchCase="'tdd'"> - La productividad se puede ver mermada si no se conoce esta estrategia </pre>
-    <pre *ngSwitchCase="'tdd'"> - El incluir Bases de Datos o Interfaces graficas suele complicar el desarrollo </pre>
-
-    <pre *ngSwitchCase="'atdd'">  - Primero se escriben las pruebas, despues se crean los casos de aceptación Y de ultimas se crea el codigo para que estos funcionen </pre>
-    <pre *ngSwitchCase="'atdd'">  - Las pruebas se automatizan, por lo que a la larga el desarrollo se volvera más agil </pre>
-    <pre *ngSwitchCase="'atdd'">  - Definir las Historias de Usuario y sus casos de aceptación es fundamental para evitar perder tiempo </pre>
-
-    <pre *ngSwitchCase="'analisis'">- Son enfoques para el analisis y toma de decisiones, originarios en la informatica de los años 70</pre>
-    <pre *ngSwitchCase="'analisis'"></pre>
-    <pre *ngSwitchCase="'analisis'">- Bottom-Up</pre>
-    <pre *ngSwitchCase="'analisis'"> - Nace de lo particular para concluir en lo general </pre>
-    <pre *ngSwitchCase="'analisis'"></pre>
-    <pre *ngSwitchCase="'analisis'">- Top-Down</pre>
-    <pre *ngSwitchCase="'analisis'"> - Nace de lo general hasta concluir en lo particular </pre>
-
-    <pre *ngSwitchCase="'tld'">- Estas se dan una vez se ha terminado el codigo y las posibles refactorizaciones que este sufra </pre>
-    <pre *ngSwitchCase="'tld'"> -Este tipo de estrategia se puede usar de 2 maneras distintas: </pre>
-    <pre *ngSwitchCase="'tld'"></pre>
-    <pre *ngSwitchCase="'tld'"> - Funciones completas: las pruebas cubriran todas las funciones y sus posibles escenarios </pre>
-    <pre *ngSwitchCase="'tld'"> - Proto funciones: Las pruebas cubriran los escenarios minimos para que la función cumpla con sus requerimientos </pre>
-    <pre *ngSwitchCase="'tld'"></pre>
-    <pre *ngSwitchCase="'tld'">- TLD vs TDD</pre>
-    <pre *ngSwitchCase="'tld'"> - Este enfoque es ideal si el tiempo de desarrollo es escaso </pre>
-    <pre *ngSwitchCase="'tld'"> - Su curva de aprendizaje es menor en comparación con TDD </pre>
-    <pre *ngSwitchCase="'tld'"> - El mantenimiento se reducen al usar TDD, pero la productividad aumenta con TLD (gastos y mano de obra) </pre>
-    <pre *ngSwitchCase="'tld'"> - Hay un mayor numero de pruebas en TDD, sin embargo el codigo con TLD es más entendible </pre>
-    <pre *ngSwitchCase="'tld'"> - Los cambios suelen tener menos impactos negativos con TDD, a cambio de más complejidad inherente al codigo </pre>
+    <span *ngFor="let item of items">
+      <span *ngSwitchCase="item.key">
+        <pre *ngFor="let content of item.content" [innerHTML]="content" >{{content}}</pre>
+      </span>
+    </span>
 
   </div>
 
