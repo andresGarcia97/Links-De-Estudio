@@ -15,9 +15,9 @@
     <app-button [tittleButton]="'Complejidad #1'" (click)="getLinkAndTittleByKey('complejidad')"></app-button>
 
     <app-button [tittleButton]="'Complejidad #2'" (click)="getLinkAndTittleByKey('complejidadCognitiva')"></app-button>
-    
+
     <app-button [tittleButton]="'Complejidad #3'" (click)="getLinkAndTittleByKey('complejidadAlgoritmica')"></app-button>
-    
+
     <app-button [tittleButton]="'Logs VS Debug'" (click)="getLinkAndTittleByKey('logging')"></app-button>
 
     <app-button [tittleButton]="'Ley de Demeter'" (click)="getLinkAndTittleByKey('demeter')"></app-button>
@@ -32,96 +32,11 @@
 
     <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
 
-    <pre *ngSwitchCase="'practicas1'">- Definir el alcance, establecer limites con el cliente acerca del trabajo a realizar </pre>
-    <pre *ngSwitchCase="'practicas1'">- Dividir el desarrollo en fases o entregables que sean factibles</pre>
-    <pre *ngSwitchCase="'practicas1'">- Elegir el mejor IDE de acuerdo a los conocimientos o las necesidades</pre>
-    <pre *ngSwitchCase="'practicas1'">- Reutiliza código y comentalo cuando sea necesario</pre>
-    <pre *ngSwitchCase="'practicas1'">- Documenta lo que haz hecho, asi es más facil integrar personal y sera util para futuros desarrollos </pre>
-
-    <pre *ngSwitchCase="'practicas2'">- Presencia activa de los clientes en el desarollo</pre>
-    <pre *ngSwitchCase="'practicas2'">- Definir los requerimientos y sus prioridades con el cliente</pre>
-    <pre *ngSwitchCase="'practicas2'">- Adaptar el lenguaje de acuerdo a los tipos de clientes</pre>
-    <pre *ngSwitchCase="'practicas2'">- Nunca dejar funciones al azar, que las pruebas demuestren su funcionamiento </pre>
-
-    <pre *ngSwitchCase="'practicas3'">- Escoger un ciclo de vida adecuado segun cada desarrollo</pre>
-    <pre *ngSwitchCase="'practicas3'">- Estimar y presupuestar correctamente (más facil decirlo que hacerlo) </pre>
-    <pre *ngSwitchCase="'practicas3'">- Control de calidad y revisiones de código periodicas</pre>
-    <pre *ngSwitchCase="'practicas3'">- Planificar el matenimiento el soporte y posibles mejoras</pre>
-
-    <pre *ngSwitchCase="'practicas4'">- Usar tecnologias y frameworks consolidados</pre>
-    <pre *ngSwitchCase="'practicas4'">- Promover que el uso de la aplicación sea intuitivo y accesible </pre>
-    <pre *ngSwitchCase="'practicas4'">- Distribución de tareas, no hay equipos de un solo hombre</pre>
-
-    <pre *ngSwitchCase="'demeter'">- No aceptar caramelos de extraños</pre>
-    <pre *ngSwitchCase="'demeter'">- El encadenamiento de muchos metodos puede significar un alto acoplamiento</pre>
-    <pre *ngSwitchCase="'demeter'">- Entre más grande sea una pila de llamadas, sera más propensa a futuras refactorizaciones </pre>
-
-    <pre *ngSwitchCase="'complejidad'">- Es una metrica del software que proporciona una medida cuantitativa de la complejidad logica del programa </pre>
-    <pre *ngSwitchCase="'complejidad'">- Son los diferentes caminos que puede seguir una aplicación desde la entrada hasta la salida, </pre>
-    <pre *ngSwitchCase="'complejidad'"> - teniendo en cuenta condiciones, parametros, funciones y atributos </pre>
-    <pre *ngSwitchCase="'complejidad'"></pre>
-    <pre *ngSwitchCase="'complejidad'">- Lo ideal es tener la menor complejidad ciclomatica posible ya que: </pre>
-    <pre *ngSwitchCase="'complejidad'"> - Facilita el mantenimiento del codigo </pre>
-    <pre *ngSwitchCase="'complejidad'"> - Simplifica la refactorización </pre>
-    <pre *ngSwitchCase="'complejidad'"> - El codigo es más facil de entender </pre>
-    <pre *ngSwitchCase="'complejidad'"> - La escabilidad del proyecto se puede facilitar </pre>
-    <pre *ngSwitchCase="'complejidad'"></pre>
-    <pre *ngSwitchCase="'complejidad'">- Para reducirla se pueden aplicar los siguientes concejos: </pre>
-    <pre *ngSwitchCase="'complejidad'"> - No abusar de la identación </pre>
-    <pre *ngSwitchCase="'complejidad'"> - Evitar las sentencias switch </pre>
-    <pre *ngSwitchCase="'complejidad'"> - Metodos pequeños para funcionalidades más desacopladas </pre>
-
-    <pre *ngSwitchCase="'logging'"> “Depurar es como ser el detective de una película policial en la que también eres el asesino. ”- Filipe Fortes </pre>
-    <pre *ngSwitchCase="'logging'"></pre>
-    <pre *ngSwitchCase="'logging'">- Depurar es recomendable cuando la pila de llamadas es demasiado extensa y compleja</pre>
-    <pre *ngSwitchCase="'logging'">- Registrar es util cuando la aplicación ó funcionalidad es pequeña y de baja complejidad </pre>
-    <pre *ngSwitchCase="'logging'">- Esta elección tambien depende de la comodiad de cada programador y de su eficiencia con cada herramienta </pre>
-
-    <pre *ngSwitchCase="'complejidadCognitiva'">- Es una metrica de software complementaria a la complejidad ciclomatica </pre>
-    <pre *ngSwitchCase="'complejidadCognitiva'">- Esta metrica trata sobre que tan dificil es de entender un fragmento de codigo </pre>
-    <pre *ngSwitchCase="'complejidadCognitiva'">- Esta metrica aumenta de acuerdo a ciertas condiciones </pre>
-    <pre *ngSwitchCase="'complejidadCognitiva'"> - Anidamiento</pre>
-    <pre *ngSwitchCase="'complejidadCognitiva'"> - Condicionales</pre>
-    <pre *ngSwitchCase="'complejidadCognitiva'"> - try/catch y retrasmision de excepciones</pre>
-    <pre *ngSwitchCase="'complejidadCognitiva'"> - Estructuras switch-case </pre>
-    <pre *ngSwitchCase="'complejidadCognitiva'"> - sequencias largas de operadores logicos </pre>
-    <pre *ngSwitchCase="'complejidadCognitiva'"> - recursividad </pre>
-    <pre *ngSwitchCase="'complejidadCognitiva'"> - ciclos</pre>
-    <pre *ngSwitchCase="'complejidadCognitiva'"></pre>
-    <pre *ngSwitchCase="'complejidadCognitiva'">- Un codigo con una alta complejidad cognitiva es dificil de mantener, por lo que siempre se busca simplificarla, </pre>
-    <pre *ngSwitchCase="'complejidadCognitiva'"> - sin cambiar su comportamiento, para ser más facil de comprender y de modificar </pre>
-
-    <pre *ngSwitchCase="'complejidadAlgoritmica'">- Un algoritmo es una manera de hallar un dato desconocido, o una secuencia de pasos para obtener un resultado </pre>
-    <pre *ngSwitchCase="'complejidadAlgoritmica'">- Los problemas pueden ser resueltos de diversas maneras, sin embargo no todas son optimas o viables </pre>
-    <pre *ngSwitchCase="'complejidadAlgoritmica'">- Esto nos permite medir un algoritmo mediante los recursos y el tiempo necesario para su ejecución </pre>
-    <pre *ngSwitchCase="'complejidadAlgoritmica'">- Tambien se suelen describir mediante el tamaño del conjunto de datos </pre>
-    <pre *ngSwitchCase="'complejidadAlgoritmica'"> - y el crecimiento de las instrucciones para poder cumplir el objetivo </pre>
-    <pre *ngSwitchCase="'complejidadAlgoritmica'">- Para medir la complejidad cada instrucción suele tener un peso determinado, </pre>
-    <pre *ngSwitchCase="'complejidadAlgoritmica'"> - despues de sumarlas y tener el mayor termino, este es el indicativo de la complejidad </pre>
-    <pre *ngSwitchCase="'complejidadAlgoritmica'"></pre>
-    <pre *ngSwitchCase="'complejidadAlgoritmica'">- Grados de complejidad comunes: </pre>
-    <pre *ngSwitchCase="'complejidadAlgoritmica'">- O(1)       -> constante         - O(n<sup>2</sup>) -> cuadratico  </pre>
-    <pre *ngSwitchCase="'complejidadAlgoritmica'">- O(log n)   -> logaritmico       - O(n<sup>3</sup>) -> cubico      </pre>
-    <pre *ngSwitchCase="'complejidadAlgoritmica'">- O(n)       -> lineal            - O(n<sup>a</sup>) -> polinomico  </pre>
-    <pre *ngSwitchCase="'complejidadAlgoritmica'">- O(n log n) -> cuasi-lineal      - O(2<sup>n</sup>) -> exponencial </pre>
-    <pre *ngSwitchCase="'complejidadAlgoritmica'">- O(n!)      -> factorial                                           </pre>
-    <pre *ngSwitchCase="'complejidadAlgoritmica'"></pre>
-    <pre *ngSwitchCase="'complejidadAlgoritmica'">- Sabiendo analizar estas caracteristicas, se puede suponer el costo de los algoritmos, e intentar optimizarlos </pre>
-    <pre *ngSwitchCase="'complejidadAlgoritmica'">- Si la optimización no es prioridad algunos de estos conceptos pierden relevancia, sin embargo</pre>
-    <pre *ngSwitchCase="'complejidadAlgoritmica'"> - conocerlos permite generar mejores soluciones, al tener más perspectivas a la hora de resolver un problema </pre>
-
-    <pre *ngSwitchCase="'estandaresNombramiento'">- Cada lenguaje de programación tiene sus convenciones para nombrar metodos, clases, variables, constantes, etc... </pre>
-    <pre *ngSwitchCase="'estandaresNombramiento'">- Se recomienda seguir estas convenciones para aumentar la legibilidad de nuestro codigo y facilitar el mantenimiento </pre>
-    <pre *ngSwitchCase="'estandaresNombramiento'"></pre>
-    <pre *ngSwitchCase="'estandaresNombramiento'">- camelCase -> se usan mayusculas para diferenciar una palabra de otra </pre>
-    <pre *ngSwitchCase="'estandaresNombramiento'"> - UpperCamelCase  -> la primera letra de las palabras es mayuscula: MiPaginaDeConceptos </pre>
-    <pre *ngSwitchCase="'estandaresNombramiento'"> - lowerCammelCase -> igual al anterior pero la primera letra es minuscula: miPaginaDeConceptos </pre>
-    <pre *ngSwitchCase="'estandaresNombramiento'">- snake_case -> las palabras estan separadas por guion bajo: mi_pagina_de_conceptos </pre>
-    <pre *ngSwitchCase="'estandaresNombramiento'"> - SCREAMING_SNAKE_CASE -> igual que snake case pero en mayusculas: MI_PAGINA_DE_CONCEPTOS </pre>
-    <pre *ngSwitchCase="'estandaresNombramiento'">- kebab-case -> como snake case pero con guion medio: mi-pagina-de-conceptos </pre>
-    <pre *ngSwitchCase="'estandaresNombramiento'"> - Train-Case -> variedad de kebab case pero mayuscula inicial: Mi-Pagina-De-Conceptos </pre>
-    <pre *ngSwitchCase="'estandaresNombramiento'">- leetspeak ó 1337 -> consiste en remplazar caracteres por otros similares o su reflexion: M1P4G1N4D3C0NC3P70$ </pre>
-    <pre *ngSwitchCase="'estandaresNombramiento'">- Notacion hungara -> se usa para crear nombres de variables que indiquen su tipo: nContador ó bActivo </pre>
+    <span *ngFor="let item of items">
+      <span *ngSwitchCase="item.key">
+        <pre *ngFor="let content of item.content" [innerHTML]="content">{{content}}</pre>
+      </span>
+    </span>
 
   </div>
 

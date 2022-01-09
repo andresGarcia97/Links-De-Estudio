@@ -1,122 +1,37 @@
 <div class="content">
 
-    <h2>Conceptos transversales en Metodologias Agiles</h2>
-  
-    <div class="card-container">
-    
-      <app-button [tittleButton]="'MOSCOW'" (click)="getLinkAndTittleByKey('moscow')"></app-button>
+  <h2>Conceptos transversales en Metodologias Agiles</h2>
 
-      <app-button [tittleButton]="'Theme Scoring'" (click)="getLinkAndTittleByKey('scoring')"></app-button>
+  <div class="card-container">
 
-      <app-button [tittleButton]="'Desperdicio'" (click)="getLinkAndTittleByKey('muda')"></app-button>
+    <app-button [tittleButton]="'MOSCOW'" (click)="getLinkAndTittleByKey('moscow')"></app-button>
 
-      <app-button [tittleButton]="'5s'" (click)="getLinkAndTittleByKey('5s')"></app-button>
+    <app-button [tittleButton]="'Theme Scoring'" (click)="getLinkAndTittleByKey('scoring')"></app-button>
 
-      <app-button [tittleButton]="'Muda #1'" (click)="getLinkAndTittleByKey('muda#1')"></app-button>
+    <app-button [tittleButton]="'Desperdicio'" (click)="getLinkAndTittleByKey('muda')"></app-button>
 
-      <app-button [tittleButton]="'Muda #2'" (click)="getLinkAndTittleByKey('muda#2')"></app-button>
+    <app-button [tittleButton]="'5s'" (click)="getLinkAndTittleByKey('5s')"></app-button>
 
-      <app-button [tittleButton]="'Planning Poker'" (click)="getLinkAndTittleByKey('planningPoker')"></app-button>
+    <app-button [tittleButton]="'Muda #1'" (click)="getLinkAndTittleByKey('muda#1')"></app-button>
 
-    </div>
-  
-    <app-referencia class="flexbox terminal" [referencia]="referencia" [titulo]="titulo"></app-referencia>
+    <app-button [tittleButton]="'Muda #2'" (click)="getLinkAndTittleByKey('muda#2')"></app-button>
 
-    <div class="terminal" [ngSwitch]="selection" #terminal>
+    <app-button [tittleButton]="'Planning Poker'" (click)="getLinkAndTittleByKey('planningPoker')"></app-button>
 
-      <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
-  
-      <pre *ngSwitchCase="'moscow'">- Es una tecnica para la priorización de requisitos y funciones para lograr un alcance especificado </pre>
-      <pre *ngSwitchCase="'moscow'"></pre>    
-      <pre *ngSwitchCase="'moscow'">- M (Must Have)   -> debe tener:    este requisito debe estar implementado si ó si, si no, el producto es un fracaso </pre>
-      <pre *ngSwitchCase="'moscow'">- S (Should have) -> deberia tener: requisito de alta prioridad que en la medida de lo posible deberia quedar en el producto final </pre>
-      <pre *ngSwitchCase="'moscow'">- C (Could have)  -> podria tener:  caracteristica deseable, pero que no es necesaria y solo sera implementada si hay posibilidades </pre>
-      <pre *ngSwitchCase="'moscow'">- W (Won´t have)  -> no tendra:     son requisitos que estan descartados por esta vez, pero seran incluidos a futuro </pre>
-
-      <pre *ngSwitchCase="'scoring'">- Permite determinar la prioridad de las funcionalidades, basandose en diferentes criterios, que a su vez </pre>    
-      <pre *ngSwitchCase="'scoring'"> - constan con diferentes pesos, cada caracteristica de la Historia de Usuario tendra un valor </pre>    
-      <pre *ngSwitchCase="'scoring'"></pre>  
-      <pre *ngSwitchCase="'scoring'">- Determinar el peso de las caracteristicas es más facil ya que se hace en base a una comparación, </pre>  
-      <pre *ngSwitchCase="'scoring'"> - Donde previamente se ha tomado una HU como punto base y las demás sr miden con esta base </pre>
-
-      <pre *ngSwitchCase="'muda'">- El desperdicio en las empresas viene del termino japones MUDA, que es todo lo inutil, superfluo, despilfarro, residuos, ocioso </pre> 
-      <pre *ngSwitchCase="'muda'"></pre>  
-      <pre *ngSwitchCase="'muda'">- Sobreproducción -> producir más de lo demandado, esperando que el mercado lo necesite es una mala praxis, </pre>  
-      <pre *ngSwitchCase="'muda'"> - que despilfarra recursos que pudieron ser usados en otras areas </pre>  
-      <pre *ngSwitchCase="'muda'">- Esperas -> son los famosos cuellos de botella, donde un proceso alenta a los demás, haciendoles perder tiempo </pre>  
-      <pre *ngSwitchCase="'muda'">- Transporte -> todo movimiento innecesario de elementos que no aporta valor debe ser minimizado </pre>  
-      <pre *ngSwitchCase="'muda'">- SobreProcesos -> son procesos que aunque pueden ser utiles, no van a volver ser usados, por eso su realización es un desperdicio </pre>  
-      <pre *ngSwitchCase="'muda'">- Exceso de inventario -> puede conllevar a perdidad monetarias a la empresa, debido a que se pueden volver obsoletos, o nunca usarse </pre>  
-      <pre *ngSwitchCase="'muda'">- Movimientos innecesarios -> todo movimiento que no aporte valor al producto es un despedicio, hasta caminar al trabajo puede serlo </pre>
-      <pre *ngSwitchCase="'muda'">- Defectos -> todo error consume tiempo para ser resuelto, independientemente de su tamaño, además de la insatisfacción del cliente </pre>  
-
-      <pre *ngSwitchCase="'5s'">- Seiri, Seiton, Seiso, Seiketsu, Shitsuke; la base de la mejora continua </pre>
-      <pre *ngSwitchCase="'5s'"></pre>  
-      <pre *ngSwitchCase="'5s'">- Seieri -> clasifica y organizar de manera apropiada </pre> 
-      <pre *ngSwitchCase="'5s'"> - es retirar del area o estación todo aquello que no es necesario </pre>   
-      <pre *ngSwitchCase="'5s'">- Seiton -> orden </pre>  
-      <pre *ngSwitchCase="'5s'"> - organizar los elementos necesarios de manera que sean de facil acceso </pre>  
-      <pre *ngSwitchCase="'5s'">- Seiso  -> limpieza</pre> 
-      <pre *ngSwitchCase="'5s'"> - ya con un orden establecido y areas limpias, es más facil detectar malas practicas </pre>   
-      <pre *ngSwitchCase="'5s'">- Seiketsu -> estandares</pre>  
-      <pre *ngSwitchCase="'5s'"> - este estado solo se obtiene cuando la limpieza y la organización se mantienen constantes </pre>  
-      <pre *ngSwitchCase="'5s'">- Shitsuke -> disciplina</pre>  
-      <pre *ngSwitchCase="'5s'"> - es la creación de habitos que eviten el rompimiento de los conceptos anteriores </pre>  
-      <pre *ngSwitchCase="'5s'"></pre>  
-      <pre *ngSwitchCase="'5s'">- ¿ Porque no la aplican algunas empresas ? </pre>  
-      <pre *ngSwitchCase="'5s'"></pre>  
-      <pre *ngSwitchCase="'5s'">- La maquinaria no puede parar -> los cronogramas no dan tiempo de mantenimiento de la maquinaria </pre>  
-      <pre *ngSwitchCase="'5s'">- La limpieza como perdida de tiempo -> algunos empleadores pagan para trabajar, no para limpiar su area de trabajo </pre>  
-      <pre *ngSwitchCase="'5s'">- Costumbre -> crear nuevos habitos y cambiar los viejos es un cambio fuerte y prolongado de paradigma </pre>  
-      <pre *ngSwitchCase="'5s'"></pre>  
-      <pre *ngSwitchCase="'5s'">- Beneficios </pre>  
-      <pre *ngSwitchCase="'5s'">- Mayor seguridad de los empleados </pre>  
-      <pre *ngSwitchCase="'5s'">- Reducción de las perdidas y mermas por defectos </pre>  
-      <pre *ngSwitchCase="'5s'">- Mayor calidad, y menos tiempo de respuesta </pre>  
-      <pre *ngSwitchCase="'5s'">- Genera una cultura organizacional </pre>  
-
-      <pre *ngSwitchCase="'muda#1'"> 1 -> Trabajo hecho a medias: desplegar sin probar y tener errores conocidos más no solucionados, </pre>   
-      <pre *ngSwitchCase="'muda#1'">  - daran problemas a futuro, de manera que aveces es mejor un nuevo desarrollo que corregir lo existente </pre>    
-      <pre *ngSwitchCase="'muda#1'"> 2 -> Funcionalidad extra: toda funcionalidad que no haya sido pedida significa, </pre>    
-      <pre *ngSwitchCase="'muda#1'">  - recursos gastados que no tendran redito alguno </pre>    
-      <pre *ngSwitchCase="'muda#1'"> 3 -> Reaprendizaje: nuestra memoria no es absoluta, por lo que inevitablemente olvidaremos cosas, </pre>    
-      <pre *ngSwitchCase="'muda#1'">  - y gastaremos tiempo volviendolas a aprender, tambien aplica para personas expertas </pre>    
-      <pre *ngSwitchCase="'muda#1'">  - que ya tienen el conocimiento, pero nos empeñamos por aprenderlo nosotros mismos, sumando tiempo al desperdicio </pre>    
-
-      <pre *ngSwitchCase="'muda#2'"> 4 -> Transferencia de conocimiento: todo proceso de comunicación es ineficiente ya que, </pre>    
-      <pre *ngSwitchCase="'muda#2'">  - durante el proceso se suelen perder datos u omitir detalles importantes, y asi entre más niveles </pre>    
-      <pre *ngSwitchCase="'muda#2'">  - haya que permear, de las mejores manera para evitar esto son la comunicación cara a cara </pre>    
-      <pre *ngSwitchCase="'muda#2'"> 5 -> Retrasos: algunas funcionalidades requieren que sean lineales, por lo que si la etapa previa se retrasa, </pre>    
-      <pre *ngSwitchCase="'muda#2'">  - las etapas subsiguientes tambien lo haran, por lo que estas situaciones deben ser evitadas lo más posible </pre>    
-      <pre *ngSwitchCase="'muda#2'"> 6 -> Cambios de contexto: cuando tenemos varias cosas por hacer de manera inmediata, tendemos a ser multitarea, </pre>    
-      <pre *ngSwitchCase="'muda#2'">  - esto no es más que un cambio de contexto que requiere tiempo y esfuerzo, y que entre más se hagan, más desperdicio habra </pre>    
-      <pre *ngSwitchCase="'muda#2'"> 7 -> Defectos: uno de los más peligrosos, ya que entre más tarde se encuentre un error, más costoso sera corregirlo </pre>    
-      <pre *ngSwitchCase="'muda#2'">  - estos errores se pueden disminuir por medio de las pruebas, e integración continua </pre> 
-      
-      <pre *ngSwitchCase="'planningPoker'">- Las estimaciones son de mucha ayuda, para definir tiempo, costos y esfuerzos </pre>  
-      <pre *ngSwitchCase="'planningPoker'"> - independientemente de certeza, ya que generalmente casi nunca se cumplen </pre>  
-      <pre *ngSwitchCase="'planningPoker'">- Ayuda a visualizar desde diferentes puntos de vista, esto es bastante util para analizar un problema </pre>  
-      <pre *ngSwitchCase="'planningPoker'">-Los riesgos pueden ser detectados de manera previa, además de prever posibles obstaculos </pre>  
-      <pre *ngSwitchCase="'planningPoker'">-Todo el equipo involucrado deberia estar presente en este evento, ya que todos pueden aportar desde sus areas </pre>  
-      <pre *ngSwitchCase="'planningPoker'"></pre>  
-      <pre *ngSwitchCase="'planningPoker'">- Material necesario</pre>  
-      <pre *ngSwitchCase="'planningPoker'">- Cada participante debe tener su propia baraja </pre>  
-      <pre *ngSwitchCase="'planningPoker'">- La baraja en si es una secuencia de Fibonacci modificada, junto a ciertas cartas especiales: </pre>  
-      <pre *ngSwitchCase="'planningPoker'"> - infinito   -> es una HU que es demasiado grande para ser estimada, por lo que debera ser dividida y reorganizada </pre>  
-      <pre *ngSwitchCase="'planningPoker'"> - cero       -> significa que la HU ya fue realizada </pre>
-      <pre *ngSwitchCase="'planningPoker'"> - coffee cup -> puede significar una actividad de esfuerzo minimo o simplemente la necesidad de realizar una pausa </pre>  
-      <pre *ngSwitchCase="'planningPoker'"></pre>  
-      <pre *ngSwitchCase="'planningPoker'">- Trabajo previo</pre>  
-      <pre *ngSwitchCase="'planningPoker'"> - es necesario indicar que indica cada numero antes de realizar el ejercicio, (horas, dias, esfuerzo, etc...)</pre>  
-      <pre *ngSwitchCase="'planningPoker'"> - indicar que incluye y que no la HU, documentación, tests unitarios, tests de integración </pre>  
-      <pre *ngSwitchCase="'planningPoker'"></pre>  
-      <pre *ngSwitchCase="'planningPoker'">- Dinamica</pre>  
-      <pre *ngSwitchCase="'planningPoker'"> - se especifica todo lo que se va a estimar y se hacen las preguntas y respuestas pertinentes </pre>  
-      <pre *ngSwitchCase="'planningPoker'"> - se leen la historia de usuario y se vota por medio de la baraja </pre>  
-      <pre *ngSwitchCase="'planningPoker'"> - si no hay consenso se abre una breve discusión y se vuelve a votar, </pre>  
-      <pre *ngSwitchCase="'planningPoker'">  - si no vuelve a haber concenso se podra realizar un promedio o escoger un extremo </pre>  
-      <pre *ngSwitchCase="'planningPoker'"> - se repite el proceso hasta completar todas las HU </pre>  
-
-    </div>
-    
   </div>
+
+  <app-referencia class="flexbox terminal" [referencia]="referencia" [titulo]="titulo"></app-referencia>
+
+  <div class="terminal" [ngSwitch]="selection" #terminal>
+
+    <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
+
+    <span *ngFor="let item of items">
+      <span *ngSwitchCase="item.key">
+        <pre *ngFor="let content of item.content">{{content}}</pre>
+      </span>
+    </span>
+
+  </div>
+
+</div>

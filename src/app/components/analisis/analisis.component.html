@@ -1,91 +1,37 @@
 <div class="content">
 
-    <h2>Analisis de un sistema</h2>
-  
-    <div class="card-container">
-    
-      <app-button [tittleButton]="'Comportamiento'" (click)="getLinkAndTittleByKey('comportamiento')"></app-button>
+  <h2>Analisis de un sistema</h2>
 
-      <app-button [tittleButton]="'Analisis de Dominio'" (click)="getLinkAndTittleByKey('dominio')"></app-button>
+  <div class="card-container">
 
-      <app-button [tittleButton]="'Herramientas CASE'" (click)="getLinkAndTittleByKey('case')"></app-button>
+    <app-button [tittleButton]="'Comportamiento'" (click)="getLinkAndTittleByKey('comportamiento')"></app-button>
 
-      <app-button [tittleButton]="'Divide y venceras'" (click)="getLinkAndTittleByKey('divide')"></app-button>
+    <app-button [tittleButton]="'Analisis de Dominio'" (click)="getLinkAndTittleByKey('dominio')"></app-button>
 
-      <app-button [tittleButton]="'Un buen diseño'" (click)="getLinkAndTittleByKey('diseño')"></app-button>
+    <app-button [tittleButton]="'Herramientas CASE'" (click)="getLinkAndTittleByKey('case')"></app-button>
 
-      <app-button [tittleButton]="'Tarjetas CRC'" (click)="getLinkAndTittleByKey('crc')"></app-button>
+    <app-button [tittleButton]="'Divide y venceras'" (click)="getLinkAndTittleByKey('divide')"></app-button>
 
-      <app-button [tittleButton]="'Avestruz'" (click)="getLinkAndTittleByKey('avestruz')"></app-button>
+    <app-button [tittleButton]="'Un buen diseño'" (click)="getLinkAndTittleByKey('diseño')"></app-button>
 
-    </div>
-    
-    <app-referencia class="flexbox terminal" [referencia]="referencia" [titulo]="titulo"></app-referencia>
+    <app-button [tittleButton]="'Tarjetas CRC'" (click)="getLinkAndTittleByKey('crc')"></app-button>
 
-    <div class="terminal" [ngSwitch]="selection" #terminal>
+    <app-button [tittleButton]="'Avestruz'" (click)="getLinkAndTittleByKey('avestruz')"></app-button>
 
-      <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
-  
-      <pre *ngSwitchCase="'comportamiento'">- Estos modelos se usan para describir a profundidad el comportamiento de un sistema </pre>
-      <pre *ngSwitchCase="'comportamiento'"></pre>
-      <pre *ngSwitchCase="'comportamiento'">  - Flujos de datos -> modelan el procesamiento de los datos del sistema </pre>
-      <pre *ngSwitchCase="'comportamiento'">   - No solo sirven para saber las entradas y salidad del sistema, tambien para validaciones con los usuarios </pre>
-      <pre *ngSwitchCase="'comportamiento'">   - Y que estos validen los datos y los procesos a nivel interno </pre>
-      <pre *ngSwitchCase="'comportamiento'"></pre>
-      <pre *ngSwitchCase="'comportamiento'">  - Maquinas de estado -> modelan la reacción del evento en cuanto a los estimulos externos/internos </pre>
-      <pre *ngSwitchCase="'comportamiento'">   - Estos indican los posibles estados de un sistema, y que puede suceder cuando paso un estimulo en especifico </pre>
-      <pre *ngSwitchCase="'comportamiento'">   - Se usan para sistemas en tiempo real mas que todo, ya que estos son sumamente dependientes de su ambiente </pre>
-      <pre *ngSwitchCase="'comportamiento'">   - Para sistemas grandes se recomienda usar diferentes niveles de estados de mayor a menor complejidad </pre>
-
-      <pre *ngSwitchCase="'dominio'">- Estudio de los dominios de conocimientos de las sociedades </pre>
-      <pre *ngSwitchCase="'dominio'">- De esta manera el enfoque socio-cognitivo no es el unico usado para la toma de información </pre>
-      <pre *ngSwitchCase="'dominio'">- Tambien se ha de tener en cuenta el contexto presente y lo que motiva sus acciones </pre>
-      <pre *ngSwitchCase="'dominio'">- Esto tambien da un conocimiento más profundo del entorno, y una mayor calidad de la información recolectada </pre>
-  
-      <pre *ngSwitchCase="'case'">- Ingeniería asistida por computador, que es el desarrollo y mantenimiento de proyectos de software por medio de herramientas de software </pre>
-      <pre *ngSwitchCase="'case'"></pre>
-      <pre *ngSwitchCase="'case'">- Documentación -> crea documentos de cualquiera de las etapas del proyecto y para diferentes tipos de personas; como DrExplain</pre>
-      <pre *ngSwitchCase="'case'">- Configuración -> son utiles para el control de versiones y la evolución del software; como Git</pre>
-      <pre *ngSwitchCase="'case'">- Diseño -> ayudan a la creación de la estructura del programa y de su desglose para detallarlos y refinarlos; como Star UML </pre>
-      <pre *ngSwitchCase="'case'">- Analisis -> ayuda a cumplir con los requisitos al analizar los diagramas por posibles falencias, omisiones ó redundancias; como casecomplete </pre>
-      <pre *ngSwitchCase="'case'">- Implementación -> en esta categoria se encuentran los IDEs como Eclipe y herramientas para hacer prototipos; como Mockup Builder</pre>
-      <pre *ngSwitchCase="'case'">- Pruebas -> son herramientas para realizar pruebas de software como y aumentar la calidad; como Jmeter</pre>
-      <pre *ngSwitchCase="'case'">- Mantenimiento -> sirven para documentar errores y seguimiento de defectos; como HP Quality Center </pre>
-  
-      <pre *ngSwitchCase="'divide'">- Generalmente es una tecnica aplicada a algoritmos, pero puede usarse en ambientes de mayor embergadura </pre>
-      <pre *ngSwitchCase="'divide'">- Suelen se problemas capaces de descomponerse en subproblemas y ser resueltos de manera recursiva </pre>
-      <pre *ngSwitchCase="'divide'"></pre>
-      <pre *ngSwitchCase="'divide'"> - Divide -> dividir el problema en subproblemas más pequeños </pre>
-      <pre *ngSwitchCase="'divide'"> - Vence -> resolver los problemas de manera individual y de manera acotada </pre>
-      <pre *ngSwitchCase="'divide'"> - Combina -> las soluciones de los subproblemas en la solución del problema original </pre>
-      
-      <pre *ngSwitchCase="'diseño'">- Un buen analisis desemboca en un buen Diseño (generalmente) </pre>
-      <pre *ngSwitchCase="'diseño'">- Esta etapa es fundamental para llegar a una solución optima que cumpla los requisitos funcionales y no funcionales, </pre>
-      <pre *ngSwitchCase="'diseño'"> - basandose en la creatividad y experiencia de los profesionales a cargo </pre>
-      <pre *ngSwitchCase="'diseño'"></pre>
-      <pre *ngSwitchCase="'diseño'"> - Entendimiento de los requisitos -> sean funcionales o NO funcionales estos deben ser claros y sin ambiguedades </pre>
-      <pre *ngSwitchCase="'diseño'"> - Usar patrones de diseño -> No reinventes la rueda, sabiendo que hay soluciones a tus mismos problemas, documentadas y confiables </pre>
-      <pre *ngSwitchCase="'diseño'"> - Calidad -> esta debe ser un objetivo a alcanzar en tu proyecto, no una fase más </pre>
-      <pre *ngSwitchCase="'diseño'"> - Modularidad -> al ser modular esto facilitara la reutilización y que las futuras modificaciones afectan el menos codigo posible </pre>
-      <pre *ngSwitchCase="'diseño'"> - A la medida -> el diseño puede crecer y cambiar de acuerdo a las especificaciones de cliente, no necesariamente debe nacer completo </pre>
-      <pre *ngSwitchCase="'diseño'"> - Documentación -> la documentación debe existir en cualquier proyecto, para ayudar a la compresión del sistema, sea a nivel general ó especifico </pre>
-
-      <pre *ngSwitchCase="'crc'">- Ayuda a los equipos a entender los procesos de una manera más facil y concisa </pre>
-      <pre *ngSwitchCase="'crc'">- Al tener todos las posibles parte del sistema a la disposición se reduce la redundancia y se asignan mejor las responsabilidades </pre>
-      <pre *ngSwitchCase="'crc'">- Es ideal hacer esto mediante una lluvia de ideas, donde todos participen </pre>
-      <pre *ngSwitchCase="'crc'">- Cuando hay demasiadas tarjetas, estas empiezan a añadir complejidad al entendimiento del modelado, </pre>
-      <pre *ngSwitchCase="'crc'">  - para esto se desarrollaron los casos de uso, y explorar diferentes flujos y especializaciones </pre>
-      <pre *ngSwitchCase="'crc'"></pre>
-      <pre *ngSwitchCase="'crc'"> - Constan de 3 partes: </pre>
-      <pre *ngSwitchCase="'crc'"> - Clase -> Nombre de la clase en si, el cual debe ser diciente y que ayude a entender el porque de su creación </pre>
-      <pre *ngSwitchCase="'crc'"> - Responsabilidad -> cual es la función ó funciones de la clase, entre más especifica mejor </pre>
-      <pre *ngSwitchCase="'crc'"> - Colaborador -> son otras clases ó entidades que son necesarias para el correcto funcionamiento de la clase </pre>
-
-      <pre *ngSwitchCase="'avestruz'">- Es una estrategia donde se ignora un problema, en vez de buscar una solución para este </pre>
-      <pre *ngSwitchCase="'avestruz'">- Esto es debido a la premisa de suponer de que son problemas increiblemente raros </pre>
-      <pre *ngSwitchCase="'avestruz'">- Al ser problemas raros, es más costoso y complejo evitar que sucedan a controlarlos cuando suceden </pre>
-      <pre *ngSwitchCase="'avestruz'">- Además de que se agregaria complejidad extra por un esceneario poco probable </pre>
-
-    </div>
-    
   </div>
+
+  <app-referencia class="flexbox terminal" [referencia]="referencia" [titulo]="titulo"></app-referencia>
+
+  <div class="terminal" [ngSwitch]="selection" #terminal>
+
+    <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
+
+    <span *ngFor="let item of items">
+      <span *ngSwitchCase="item.key">
+        <pre *ngFor="let content of item.content">{{content}}</pre>
+      </span>
+    </span>
+
+  </div>
+
+</div>

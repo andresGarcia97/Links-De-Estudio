@@ -2,7 +2,24 @@
 
 export class Content {
 
-    public temas: Item[] = [
+    public temas: Item[] = [...PRUEBAS, ...AGILES, ...ANALISIS, ...ARQUITECTURAS, ...BUENAS_PRACTICAS];
+
+}
+
+export class Item {
+
+    key = '';
+    content: string[] = [];
+
+    constructor(key: string, content: string[]) {
+        this.key = key;
+        this.content = content;
+    }
+
+}
+
+export const PRUEBAS =
+    [
         new Item('principios',
             ['- Las pruebas demuestran la presencia de defectos, por ende entre más pruebas halla mejor ',
                 '- Es improductivo hacer pruebas exhaustivas, ademas de que es casi imposible de hacer ',
@@ -132,36 +149,416 @@ export class Content {
                 '                                                                                   ',
                 '   Costo         Tiempo                                                            ',
             ]),
-        new Item('cobertura', [
-            '- La cobertura del codigo es fundamental para garantizar un alcance optimo de las pruebas ',
-            '- No hay un numero magico para todos los proyectos, cada uno tendra una cobertura ideal',
-            '- El 100% de esta cobertura no es garantia de ausencia de errores, como el 50% no es garantia de la calidad de las pruebas ',
-            '- Esto es importante ya que se puede usar para hacer despliegues e integración continua, y encontrar codigo muerto ',
-            '- Existen varios tipos de cobertura, pero el más usado es la cobertura de las lineas de codigo ',
-        ]),
-        new Item('falsos', [
-            '- Falsos Positivos & Falsos Negativos ',
-            '- Son comunes en ambientes inestables, ó poco hermeticos ',
-            '',
-            '- Falso Positivo -> ocurre cuando se detectan defectos, que no son culpa del componente inmediato ',
-            '  - Esto puede ser debido a fuentes externas de error, inestabilidad del ambiente, errores de los datos ',
-            '',
-            '- Falso Negativo -> ocurre cuando no se detectan errores, que estan presentes en lo que se esta probando ',
-            '  - Suelen suceder por pruebas mal desarrolladas, más que por el propio entorno ',
-        ])
-
+        new Item('cobertura',
+            [
+                '- La cobertura del codigo es fundamental para garantizar un alcance optimo de las pruebas ',
+                '- No hay un numero magico para todos los proyectos, cada uno tendra una cobertura ideal',
+                '- El 100% de esta cobertura no es garantia de ausencia de errores, como el 50% no es garantia de la calidad de las pruebas ',
+                '- Esto es importante ya que se puede usar para hacer despliegues e integración continua, y encontrar codigo muerto ',
+                '- Existen varios tipos de cobertura, pero el más usado es la cobertura de las lineas de codigo ',
+            ]),
+        new Item('falsos',
+            [
+                '- Falsos Positivos & Falsos Negativos ',
+                '- Son comunes en ambientes inestables, ó poco hermeticos ',
+                '',
+                '- Falso Positivo -> ocurre cuando se detectan defectos, que no son culpa del componente inmediato ',
+                '  - Esto puede ser debido a fuentes externas de error, inestabilidad del ambiente, errores de los datos ',
+                '',
+                '- Falso Negativo -> ocurre cuando no se detectan errores, que estan presentes en lo que se esta probando ',
+                '  - Suelen suceder por pruebas mal desarrolladas, más que por el propio entorno ',
+            ])
     ];
 
-}
+export const AGILES =
+    [
+        new Item('moscow',
+            [
+                '- Es una tecnica para la priorización de requisitos y funciones para lograr un alcance especificado ',
+                '',
+                '- M (Must Have)   -> debe tener:    este requisito debe estar implementado si ó si, si no, el producto es un fracaso ',
+                '- S (Should have) -> deberia tener: requisito de alta prioridad que en la medida de lo posible deberia quedar en el producto final ',
+                '- C (Could have)  -> podria tener:  caracteristica deseable, pero que no es necesaria y solo sera implementada si hay posibilidades ',
+                '- W (Won´t have)  -> no tendra:     son requisitos que estan descartados por esta vez, pero seran incluidos a futuro ',
+            ]),
+        new Item('scoring',
+            [
+                '- Permite determinar la prioridad de las funcionalidades, basandose en diferentes criterios, que a su vez ',
+                ' - constan con diferentes pesos, cada caracteristica de la Historia de Usuario tendra un valor ',
+                '',
+                '- Determinar el peso de las caracteristicas es más facil ya que se hace en base a una comparación, ',
+                ' - Donde previamente se ha tomado una HU como punto base y las demás sr miden con esta base ',
+            ]),
+        new Item('muda',
+            [
+                '- El desperdicio en las empresas viene del termino japones MUDA, que es todo lo inutil, superfluo, despilfarro, residuos, ocioso ',
+                '',
+                '- Sobreproducción -> producir más de lo demandado, esperando que el mercado lo necesite es una mala praxis, ',
+                ' - que despilfarra recursos que pudieron ser usados en otras areas ',
+                '- Esperas -> son los famosos cuellos de botella, donde un proceso alenta a los demás, haciendoles perder tiempo ',
+                '- Transporte -> todo movimiento innecesario de elementos que no aporta valor debe ser minimizado ',
+                '- SobreProcesos -> son procesos que aunque pueden ser utiles, no van a volver ser usados, por eso su realización es un desperdicio ',
+                '- Exceso de inventario -> puede conllevar a perdidad monetarias a la empresa, debido a que se pueden volver obsoletos, o nunca usarse ',
+                '- Movimientos innecesarios -> todo movimiento que no aporte valor al producto es un despedicio, hasta caminar al trabajo puede serlo ',
+                '- Defectos -> todo error consume tiempo para ser resuelto, independientemente de su tamaño, además de la insatisfacción del cliente ',
+            ]),
+        new Item('5s',
+            [
+                '- Seiri, Seiton, Seiso, Seiketsu, Shitsu ke; la base de la mejora continua ',
+                '',
+                '- Seieri -> clasifica y organizar de manera apropiada ',
+                ' - es retirar del area o estación todo aquello que no es necesario ',
+                '- Seiton -> orden ',
+                ' - organizar los elementos necesarios de manera que sean de facil acceso ',
+                '- Seiso  -> limpieza',
+                ' - ya con un orden establecido y areas limpias, es más facil detectar malas practicas ',
+                '- Seiketsu -> estandares',
+                ' - este estado solo se obtiene cuando la limpieza y la organización se mantienen constantes ',
+                '- Shitsuke -> disciplina',
+                ' - es la creación de habitos que eviten el rompimiento de los conceptos anteriores ',
+                '',
+                '- ¿ Porque no la aplican algunas empresas ? ',
+                '',
+                '- La maquinaria no puede parar -> los cronogramas no dan tiempo de mantenimiento de la maquinaria ',
+                '- La limpieza como perdida de tiempo -> algunos empleadores pagan para trabajar, no para limpiar su area de trabajo ',
+                '- Costumbre -> crear nuevos habitos y cambiar los viejos es un cambio fuerte y prolongado de paradigma ',
+                '',
+                '- Beneficios ',
+                '- Mayor seguridad de los empleados ',
+                '- Reducción de las perdidas y mermas por defectos ',
+                '- Mayor calidad, y menos tiempo de respuesta ',
+                '- Genera una cultura organizacional ',
+            ]),
+        new Item('muda#1',
+            [
+                ' 1 -> Trabajo hecho a medias: desplegar sin probar y tener errores conocidos más no solucionados, ',
+                '  - daran problemas a futuro, de manera que aveces es mejor un nuevo desarrollo que corregir lo existente ',
+                ' 2 -> Funcionalidad extra: toda funcionalidad que no haya sido pedida significa, ',
+                '  - recursos gastados que no tendran redito alguno ',
+                ' 3 -> Reaprendizaje: nuestra memoria no es absoluta, por lo que inevitablemente olvidaremos cosas, ',
+                '  - y gastaremos tiempo volviendolas a aprender, tambien aplica para personas expertas ',
+                '  - que ya tienen el conocimiento, pero nos empeñamos por aprenderlo nosotros mismos, sumando tiempo al desperdicio ',
+            ]),
+        new Item('muda#2',
+            [
+                ' 4 -> Transferencia de conocimiento: todo proceso de comunicación es ineficiente ya que, ',
+                '  - durante el proceso se suelen perder datos u omitir detalles importantes, y asi entre más niveles ',
+                '  - haya que permear, de las mejores manera para evitar esto son la comunicación cara a cara ',
+                ' 5 -> Retrasos: algunas funcionalidades requieren que sean lineales, por lo que si la etapa previa se retrasa, ',
+                '  - las etapas subsiguientes tambien lo haran, por lo que estas situaciones deben ser evitadas lo más posible ',
+                ' 6 -> Cambios de contexto: cuando tenemos varias cosas por hacer de manera inmediata, tendemos a ser multitarea, ',
+                '  - esto no es más que un cambio de contexto que requiere tiempo y esfuerzo, y que entre más se hagan, más desperdicio habra ',
+                ' 7 -> Defectos: uno de los más peligrosos, ya que entre más tarde se encuentre un error, más costoso sera corregirlo ',
+                '  - estos errores se pueden disminuir por medio de las pruebas, e integración continua ',
+            ]),
+        new Item('planningPoker',
+            [
+                '- Las estimaciones son de mucha ayuda, para definir tiempo, costos y esfuerzos ',
+                ' - independientemente de certeza, ya que generalmente casi nunca se cumplen ',
+                '- Ayuda a visualizar desde diferentes puntos de vista, esto es bastante util para analizar un problema ',
+                '-Los riesgos pueden ser detectados de manera previa, además de prever posibles obstaculos ',
+                '-Todo el equipo involucrado deberia estar presente en este evento, ya que todos pueden aportar desde sus areas ',
+                '',
+                '- Material necesario',
+                '- Cada participante debe tener su propia baraja ',
+                '- La baraja en si es una secuencia de Fibonacci modificada, junto a ciertas cartas especiales: ',
+                ' - infinito   -> es una HU que es demasiado grande para ser estimada, por lo que debera ser dividida y reorganizada ',
+                ' - cero       -> significa que la HU ya fue realizada ',
+                ' - coffee cup -> puede significar una actividad de esfuerzo minimo o simplemente la necesidad de realizar una pausa ',
+                '',
+                '- Trabajo previo',
+                ' - es necesario indicar que indica cada numero antes de realizar el ejercicio, (horas, dias, esfuerzo, etc...)',
+                ' - indicar que incluye y que no la HU, documentación, tests unitarios, tests de integración ',
+                '',
+                '- Dinamica',
+                ' - se especifica todo lo que se va a estimar y se hacen las preguntas y respuestas pertinentes ',
+                ' - se leen la historia de usuario y se vota por medio de la baraja ',
+                ' - si no hay consenso se abre una breve discusión y se vuelve a votar, ',
+                '  - si no vuelve a haber concenso se podra realizar un promedio o escoger un extremo ',
+                ' - se repite el proceso hasta completar todas las HU ',
+            ])
+    ];
 
-export class Item {
+export const ANALISIS =
+    [
+        new Item('comportamiento',
+            [
+                '- Estos modelos se usan para describir a profundidad el comportamiento de un sistema ',
+                '',
+                '  - Flujos de datos -> modelan el procesamiento de los datos del sistema ',
+                '   - No solo sirven para saber las entradas y salidad del sistema, tambien para validaciones con los usuarios ',
+                '   - Y que estos validen los datos y los procesos a nivel interno ',
+                '',
+                '  - Maquinas de estado -> modelan la reacción del evento en cuanto a los estimulos externos/internos ',
+                '   - Estos indican los posibles estados de un sistema, y que puede suceder cuando paso un estimulo en especifico ',
+                '   - Se usan para sistemas en tiempo real mas que todo, ya que estos son sumamente dependientes de su ambiente ',
+                '   - Para sistemas grandes se recomienda usar diferentes niveles de estados de mayor a menor complejidad ',
+            ]),
+        new Item('dominio',
+            [
+                '- Estudio de los dominios de conocimientos de las sociedades ',
+                '- De esta manera el enfoque socio-cognitivo no es el unico usado para la toma de información ',
+                '- Tambien se ha de tener en cuenta el contexto presente y lo que motiva sus acciones ',
+                '- Esto tambien da un conocimiento más profundo del entorno, y una mayor calidad de la información recolectada ',
+            ]),
+        new Item('case',
+            [
+                '- Ingeniería asistida por computador, que es el desarrollo y mantenimiento de proyectos de software por medio de herramientas de software ',
+                '',
+                '- Documentación -> crea documentos de cualquiera de las etapas del proyecto y para diferentes tipos de personas; como DrExplain',
+                '- Configuración -> son utiles para el control de versiones y la evolución del software; como Git',
+                '- Diseño -> ayudan a la creación de la estructura del programa y de su desglose para detallarlos y refinarlos; como Star UML ',
+                '- Analisis -> ayuda a cumplir con los requisitos al analizar los diagramas por posibles falencias, omisiones ó redundancias; como casecomplete ',
+                '- Implementación -> en esta categoria se encuentran los IDEs como Eclipe y herramientas para hacer prototipos; como Mockup Builder',
+                '- Pruebas -> son herramientas para realizar pruebas de software como y aumentar la calidad; como Jmeter',
+                '- Mantenimiento -> sirven para documentar errores y seguimiento de defectos; como HP Quality Center ',
+            ]),
+        new Item('divide',
+            [
+                '- Generalmente es una tecnica aplicada a algoritmos, pero puede usarse en ambientes de mayor embergadura ',
+                '- Suelen se problemas capaces de descomponerse en subproblemas y ser resueltos de manera recursiva ',
+                '',
+                ' - Divide -> dividir el problema en subproblemas más pequeños ',
+                ' - Vence -> resolver los problemas de manera individual y de manera acotada ',
+                ' - Combina -> las soluciones de los subproblemas en la solución del problema original ',
+            ]),
+        new Item('diseño',
+            [
+                '- Un buen analisis desemboca en un buen Diseño (generalmente) ',
+                '- Esta etapa es fundamental para llegar a una solución optima que cumpla los requisitos funcionales y no funcionales, ',
+                ' - basandose en la creatividad y experiencia de los profesionales a cargo ',
+                '',
+                ' - Entendimiento de los requisitos -> sean funcionales o NO funcionales estos deben ser claros y sin ambiguedades ',
+                ' - Usar patrones de diseño -> No reinventes la rueda, sabiendo que hay soluciones a tus mismos problemas, documentadas y confiables ',
+                ' - Calidad -> esta debe ser un objetivo a alcanzar en tu proyecto, no una fase más ',
+                ' - Modularidad -> al ser modular esto facilitara la reutilización y que las futuras modificaciones afectan el menos codigo posible ',
+                ' - A la medida -> el diseño puede crecer y cambiar de acuerdo a las especificaciones de cliente, no necesariamente debe nacer completo ',
+                ' - Documentación -> la documentación debe existir en cualquier proyecto, para ayudar a la compresión del sistema, sea a nivel general ó especifico ',
+            ]),
+        new Item('crc',
+            [
+                '- Ayuda a los equipos a entender los procesos de una manera más facil y concisa ',
+                '- Al tener todos las posibles parte del sistema a la disposición se reduce la redundancia y se asignan mejor las responsabilidades ',
+                '- Es ideal hacer esto mediante una lluvia de ideas, donde todos participen ',
+                '- Cuando hay demasiadas tarjetas, estas empiezan a añadir complejidad al entendimiento del modelado, ',
+                '  - para esto se desarrollaron los casos de uso, y explorar diferentes flujos y especializaciones ',
+                '',
+                ' - Constan de 3 partes: ',
+                ' - Clase -> Nombre de la clase en si, el cual debe ser diciente y que ayude a entender el porque de su creación ',
+                ' - Responsabilidad -> cual es la función ó funciones de la clase, entre más especifica mejor ',
+                ' - Colaborador -> son otras clases ó entidades que son necesarias para el correcto funcionamiento de la clase ',
+            ]),
+        new Item('avestruz',
+            [
+                '- Es una estrategia donde se ignora un problema, en vez de buscar una solución para este ',
+                '- Esto es debido a la premisa de suponer de que son problemas increiblemente raros ',
+                '- Al ser problemas raros, es más costoso y complejo evitar que sucedan a controlarlos cuando suceden ',
+                '- Además de que se agregaria complejidad extra por un esceneario poco probable ',
+            ]),
+    ];
 
-    key = '';
-    content: string[] = [];
+export const ARQUITECTURAS =
+    [
+        new Item('definicion',
+            [
+                ' -  Representa la estructura del sistema ',
+                ' -  Las responsabilidades de cada uno de sus partes ',
+                ' -  La organización y jerarquización de sus componentes ',
+                ' -  Las propiedades visibles externamente y las relaciones entre ellas ',
+            ]),
+        new Item('capas',
+            [
+                ' - Se basa en la distribución de roles y responsabilidades de forma jerarquica ',
+                ' - Puede tener n - capas, generalmente son 3 -> MVC ',
+                ' - La abstracción la reutilizacion, el desacople y la integración mejoran considerablemente ',
+                ' - El alto grado de abstracción alcanzado puede aislar ciertas capas y hacerlas independientes de las tecnologias ',
+                ' - Los cambios tienen bajo impacto y la matenibilidad es más facil ',
+            ]),
+        new Item('cliente',
+            [
+                ' - Existen 2 elementos principales, de las arquitecturas más usadas debido a su simplicidad ',
+                ' Servidor -> quien responde las peticiones y almacena la información ',
+                ' Red -> medio para la comunicación en doble sentido constantemente ',
+                ' Cliente -> Dispositivos que hacen solicitudes, para guardar o consultar datos ',
 
-    constructor(key: string, content: string[]) {
-        this.key = key;
-        this.content = content;
-    }
+            ]),
+        new Item('intermediario',
+            [
+                ' - Un componente central maneja diferentes sistemas distribuidos coordinando las respuestas ',
+                ' - Los clientes solicitan el intermediario y este a su vez solicita los servicios expuestos indicados ',
 
-}
+            ]),
+        new Item('servicios',
+            [
+                ' - Se pasa de un nucleo central y robusto a diferentes partes más pequeñas y ligeras ',
+                ' - Las partes se intercomunican entre si y funcionan de manera separada, aumentando la tolerancia a fallos ',
+                ' - Los servicios pueden ser independientes de las tecnologias, además de que se pueden subdividir tambien ',
+                ' - Tambien se pueden escalar de manera individual significando una mejora en el uso de recursos ',
+
+            ]),
+        new Item('hexagonal',
+            [
+                ' - Aisla el dominio de las tecnologias, la comunicación se da por medio de puertos(interfaces) ',
+                ' - Cualquier dispositivo puede consultarla y la información sera la misma ',
+                ' - Las capas son idependientes y más faciles de testear ',
+
+            ]),
+        new Item('otrasArquitecturas',
+            [
+                ' - Bus de Eventos -> Una fuente emite eventos donde un bus los direcciona a los receptores indicados ',
+                ' - MVC -> Consta de 3 capas bien definidas, modelo, vista y controlador, cada una con una función especifica ',
+                ' - Tuberia -> Es un flujo donde los datos son transformados a medida que van desde su origen hasta su destino ',
+
+            ]),
+        new Item('monolitos',
+            [
+                ' MONOLITO                        MICROSERVICIOS                         MICROLITOS ',
+                ' ',
+                ' Separación de            Acoplamiento alto y mayor        Entregadas por la plataforma          Acoplamiento alto y mayor ',
+                ' funciones tecnica        dependencia del framework        usada, reduce el acoplamiento         dependencia del framework ',
+                ' ',
+                ' Latencia                 Casi nula                        Puede ser alta                        casi nula ',
+                ' ',
+                ' Consistencia             Transaccional                    Eventual, requiere más atención       Eventual ',
+                ' ',
+                ' Evolución                Complicada por proceso           Sencilla por proceso                  Sencilla ',
+                ' ',
+                ' Especialización          Alta variedad de                 Alta especialización, Alta especialización, ',
+                ' de los equipos           conocimientos                    conocimiento del negocio              conocimiento del negocio ',
+                ' ',
+                ' Automatización           Pocos despliegues                Muchos despliegues                    pocos despliegues ',
+                ' ',
+                ' Tamaño                   Grande                           Pequeño                               Pequeño ',
+                ' ',
+                ' Observalidad             Relativamente facil              Más complicada                        Punto intermedio ',
+                ' ',
+                ' Monitarización           Complicado separar               Sencillez para identificar            Sencillez para identificar ',
+                ' tecnica                  los problemas                    problemas de rendimiento              problemas de rendimiento ',
+
+            ]),
+    ];
+
+export const BUENAS_PRACTICAS =
+    [
+        new Item('practicas1',
+            [
+                '- Definir el alcance, establecer limites con el cliente acerca del trabajo a realizar ',
+                '- Dividir el desarrollo en fases o entregables que sean factibles',
+                '- Elegir el mejor IDE de acuerdo a los conocimientos o las necesidades',
+                '- Reutiliza código y comentalo cuando sea necesario',
+                '- Documenta lo que haz hecho, asi es más facil integrar personal y sera util para futuros desarrollos ',
+            ]),
+        new Item('practicas2',
+            [
+                '- Presencia activa de los clientes en el desarollo',
+                '- Definir los requerimientos y sus prioridades con el cliente',
+                '- Adaptar el lenguaje de acuerdo a los tipos de clientes',
+                '- Nunca dejar funciones al azar, que las pruebas demuestren su funcionamiento ',
+            ]),
+        new Item('practicas3',
+            [
+                '- Escoger un ciclo de vida adecuado segun cada desarrollo',
+                '- Estimar y presupuestar correctamente (más facil decirlo que hacerlo) ',
+                '- Control de calidad y revisiones de código periodicas',
+                '- Planificar el matenimiento el soporte y posibles mejoras',
+            ]),
+        new Item('practicas4',
+            [
+                '- Usar tecnologias y frameworks consolidados',
+                '- Promover que el uso de la aplicación sea intuitivo y accesible ',
+                '- Distribución de tareas, no hay equipos de un solo hombre',
+            ]),
+        new Item('demeter',
+            [
+                '- No aceptar caramelos de extraños',
+                '- El encadenamiento de muchos metodos puede significar un alto acoplamiento',
+                '- Entre más grande sea una pila de llamadas, sera más propensa a futuras refactorizaciones ',
+            ]),
+        new Item('complejidad',
+            [
+                '- Es una metrica del software que proporciona una medida cuantitativa de la complejidad logica del programa ',
+                '- Son los diferentes caminos que puede seguir una aplicación desde la entrada hasta la salida, ',
+                ' - teniendo en cuenta condiciones, parametros, funciones y atributos ',
+                '',
+                '- Lo ideal es tener la menor complejidad ciclomatica posible ya que: ',
+                ' - Facilita el mantenimiento del codigo ',
+                ' - Simplifica la refactorización ',
+                ' - El codigo es más facil de entender ',
+                ' - La escabilidad del proyecto se puede facilitar ',
+                '',
+                '- Para reducirla se pueden aplicar los siguientes concejos: ',
+                ' - No abusar de la identación ',
+                ' - Evitar las sentencias switch ',
+                ' - Metodos pequeños para funcionalidades más desacopladas ',
+            ]),
+        new Item('logging',
+            [
+                ' “Depurar es como ser el detective de una película policial en la que también eres el asesino. ”- Filipe Fortes ',
+                '',
+                '- Depurar es recomendable cuando la pila de llamadas es demasiado extensa y compleja',
+                '- Registrar es util cuando la aplicación ó funcionalidad es pequeña y de baja complejidad ',
+                '- Esta elección tambien depende de la comodiad de cada programador y de su eficiencia con cada herramienta ',
+            ]),
+        new Item('complejidadCognitiva',
+            [
+                '- Es una metrica de software complementaria a la complejidad ciclomatica ',
+                '- Esta metrica trata sobre que tan dificil es de entender un fragmento de codigo ',
+                '- Esta metrica aumenta de acuerdo a ciertas condiciones ',
+                ' - Anidamiento',
+                ' - Condicionales',
+                ' - try/catch y retrasmision de excepciones',
+                ' - Estructuras switch-case ',
+                ' - sequencias largas de operadores logicos ',
+                ' - recursividad ',
+                ' - ciclos',
+                '',
+                '- Un codigo con una alta complejidad cognitiva es dificil de mantener, por lo que siempre se busca simplificarla, ',
+                ' - sin cambiar su comportamiento, para ser más facil de comprender y de modificar ',
+            ]),
+        new Item('complejidadAlgoritmica',
+            [
+                '- Un algoritmo es una manera de hallar un dato desconocido, o una secuencia de pasos para obtener un resultado ',
+                '- Los problemas pueden ser resueltos de diversas maneras, sin embargo no todas son optimas o viables ',
+                '- Esto nos permite medir un algoritmo mediante los recursos y el tiempo necesario para su ejecución ',
+                '- Tambien se suelen describir mediante el tamaño del conjunto de datos ',
+                ' - y el crecimiento de las instrucciones para poder cumplir el objetivo ',
+                '- Para medir la complejidad cada instrucción suele tener un peso determinado, ',
+                ' - despues de sumarlas y tener el mayor termino, este es el indicativo de la complejidad ',
+                '',
+                '- Grados de complejidad comunes: ',
+                '- O(1)       -> constante         - O(n<sup>2</sup>) -> cuadratico  ',
+                '- O(log n)   -> logaritmico       - O(n<sup>3</sup>) -> cubico      ',
+                '- O(n)       -> lineal            - O(n<sup>a</sup>) -> polinomico  ',
+                '- O(n log n) -> cuasi-lineal      - O(2<sup>n</sup>) -> exponencial ',
+                '- O(n!)      -> factorial                                           ',
+                '',
+                '- Sabiendo analizar estas caracteristicas, se puede suponer el costo de los algoritmos, e intentar optimizarlos ',
+                '- Si la optimización no es prioridad algunos de estos conceptos pierden relevancia, sin embargo',
+                ' - conocerlos permite generar mejores soluciones, al tener más perspectivas a la hora de resolver un problema ',
+            ]),
+        new Item('estandaresNombramiento',
+            [
+                '- Cada lenguaje de programación tiene sus convenciones para nombrar metodos, clases, variables, constantes, etc... ',
+                '- Se recomienda seguir estas convenciones para aumentar la legibilidad de nuestro codigo y facilitar el mantenimiento ',
+                '',
+                '- camelCase -> se usan mayusculas para diferenciar una palabra de otra ',
+                ' - UpperCamelCase  -> la primera letra de las palabras es mayuscula: MiPaginaDeConceptos ',
+                ' - lowerCammelCase -> igual al anterior pero la primera letra es minuscula: miPaginaDeConceptos ',
+                '- Generalmente usada para nombres de variables en diversos lenguajes ',
+                '',
+                '- snake_case -> las palabras estan separadas por guion bajo: mi_pagina_de_conceptos ',
+                ' - SCREAMING_SNAKE_CASE -> igual que snake case pero en mayusculas: MI_PAGINA_DE_CONCEPTOS ',
+                '- Utilizado para nombre de constantes y de variables en lenguajes más antiguos ',
+                '',
+                '- kebab-case -> como snake case pero con guion medio: mi-pagina-de-conceptos ',
+                ' - Train-Case -> variedad de kebab case pero mayuscula inicial: Mi-Pagina-De-Conceptos ',
+                '- Se encuentra generalmente en nombres de paquetes o de urls ',
+                '',
+                '- leetspeak ó 1337 -> consiste en remplazar caracteres por otros similares o su reflexion: M1P4G1N4D3C0NC3P70$ ',
+                '- Usada ampliamente en internet, además de diversas comunidades en este ',
+                '',
+                '- Notacion hungara -> se usa para crear nombres de variables que indiquen su tipo: nContador ó bActivo ',
+                '- Tambien usada en la programación, más que todo en lenguajes no tipados '
+            ]),
+    ];
+

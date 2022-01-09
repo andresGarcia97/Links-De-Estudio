@@ -21,68 +21,19 @@
     <app-button [tittleButton]="'Monolitos'" (click)="getLinkAndTittleByKey('monolitos')"></app-button>
 
   </div>
-  
+
   <app-referencia class="flexbox terminal" [referencia]="referencia" [titulo]="titulo"></app-referencia>
 
   <div class="terminal" [ngSwitch]="selection" #terminal>
 
     <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
 
-    <pre *ngSwitchCase="'definicion'">-  Representa la estructura del sistema </pre>
-    <pre *ngSwitchCase="'definicion'">-  Las responsabilidades de cada uno de sus partes </pre>
-    <pre *ngSwitchCase="'definicion'">-  La organización y jerarquización de sus componentes </pre>
-    <pre *ngSwitchCase="'definicion'">-  Las propiedades visibles externamente y las relaciones entre ellas </pre>
+    <span *ngFor="let item of items">
+      <span *ngSwitchCase="item.key">
+        <pre *ngFor="let content of item.content">{{content}}</pre>
+      </span>
+    </span>
 
-    <pre *ngSwitchCase="'capas'">- Se basa en la distribución de roles y responsabilidades de forma jerarquica</pre>
-    <pre *ngSwitchCase="'capas'">- Puede tener n-capas, generalmente son 3 -> MVC</pre>
-    <pre *ngSwitchCase="'capas'">- La abstracción la reutilizacion, el desacople y la integración mejoran considerablemente </pre>
-    <pre *ngSwitchCase="'capas'">- El alto grado de abstracción alcanzado puede aislar ciertas capas y hacerlas independientes de las tecnologias </pre>
-    <pre *ngSwitchCase="'capas'">- Los cambios tienen bajo impacto y la matenibilidad es más facil</pre>
-
-    <pre *ngSwitchCase="'cliente'">- Existen 2 elementos principales, de las arquitecturas más usadas debido a su simplicidad </pre>
-    <pre *ngSwitchCase="'cliente'">   Servidor -> quien responde las peticiones y almacena la información</pre>
-    <pre *ngSwitchCase="'cliente'">   Red -> medio para la comunicación en doble sentido constantemente</pre>
-    <pre *ngSwitchCase="'cliente'">   Cliente -> Dispositivos que hacen solicitudes, para guardar o consultar datos</pre>
-
-    <pre *ngSwitchCase="'intermediario'">- Un componente central maneja diferentes sistemas distribuidos coordinando las respuestas</pre>
-    <pre *ngSwitchCase="'intermediario'">- Los clientes solicitan el intermediario y este a su vez solicita los servicios expuestos indicados </pre>
-
-    <pre *ngSwitchCase="'servicios'">- Se pasa de un nucleo central y robusto a diferentes partes más pequeñas y ligeras</pre>
-    <pre *ngSwitchCase="'servicios'">- Las partes se intercomunican entre si y funcionan de manera separada, aumentando la tolerancia a fallos </pre>
-    <pre *ngSwitchCase="'servicios'">- Los servicios pueden ser independientes de las tecnologias, además de que se pueden subdividir tambien </pre>
-    <pre *ngSwitchCase="'servicios'">- Tambien se pueden escalar de manera individual significando una mejora en el uso de recursos</pre>
-
-    <pre *ngSwitchCase="'hexagonal'">- Aisla el dominio de las tecnologias, la comunicación se da por medio de puertos (interfaces) </pre>
-    <pre *ngSwitchCase="'hexagonal'">- Cualquier dispositivo puede consultarla y la información sera la misma</pre>
-    <pre *ngSwitchCase="'hexagonal'">- Las capas son idependientes y más faciles de testear</pre>
-
-    <pre *ngSwitchCase="'otrasArquitecturas'">- Bus de Eventos -> Una fuente emite eventos donde un bus los direcciona a los receptores indicados</pre>
-    <pre *ngSwitchCase="'otrasArquitecturas'">- MVC -> Consta de 3 capas bien definidas, modelo, vista y controlador, cada una con una función especifica </pre>
-    <pre *ngSwitchCase="'otrasArquitecturas'">- Tuberia -> Es un flujo donde los datos son transformados a medida que van desde su origen hasta su destino </pre>
-
-    <pre *ngSwitchCase="'monolitos'">                                  MONOLITO                        MICROSERVICIOS                         MICROLITOS         </pre>
-    <pre *ngSwitchCase="'monolitos'"></pre>
-    <pre *ngSwitchCase="'monolitos'"> Separación de            Acoplamiento alto y mayor        Entregadas por la plataforma          Acoplamiento alto y mayor  </pre>
-    <pre *ngSwitchCase="'monolitos'"> funciones tecnica        dependencia del framework        usada, reduce el acoplamiento         dependencia del framework  </pre>
-    <pre *ngSwitchCase="'monolitos'"></pre>
-    <pre *ngSwitchCase="'monolitos'"> Latencia                 Casi nula                        Puede ser alta                        casi nula                  </pre>
-    <pre *ngSwitchCase="'monolitos'"></pre>
-    <pre *ngSwitchCase="'monolitos'"> Consistencia             Transaccional                    Eventual, requiere más atención       Eventual                   </pre>
-    <pre *ngSwitchCase="'monolitos'"></pre>
-    <pre *ngSwitchCase="'monolitos'"> Evolución                Complicada por proceso           Sencilla por proceso                  Sencilla                   </pre>
-    <pre *ngSwitchCase="'monolitos'"></pre>
-    <pre *ngSwitchCase="'monolitos'"> Especialización          Alta variedad de                 Alta especialización,                 Alta especialización,      </pre>
-    <pre *ngSwitchCase="'monolitos'"> de los equipos           conocimientos                    conocimiento del negocio              conocimiento del negocio   </pre>
-    <pre *ngSwitchCase="'monolitos'"></pre>
-    <pre *ngSwitchCase="'monolitos'"> Automatización           Pocos despliegues                Muchos despliegues                    pocos despliegues          </pre>
-    <pre *ngSwitchCase="'monolitos'"></pre>
-    <pre *ngSwitchCase="'monolitos'"> Tamaño                   Grande                           Pequeño                               Pequeño                    </pre>
-    <pre *ngSwitchCase="'monolitos'"></pre>
-    <pre *ngSwitchCase="'monolitos'"> Observalidad             Relativamente facil              Más complicada                        Punto intermedio           </pre>
-    <pre *ngSwitchCase="'monolitos'"></pre>
-    <pre *ngSwitchCase="'monolitos'"> Monitarización           Complicado separar               Sencillez para identificar            Sencillez para identificar </pre>
-    <pre *ngSwitchCase="'monolitos'"> tecnica                  los problemas                    problemas de rendimiento              problemas de rendimiento   </pre>
-    
   </div>
 
 </div>

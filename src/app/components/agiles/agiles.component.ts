@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AGILES } from 'src/app/models/content';
 import { LinkReferencia } from 'src/app/models/linkReferencia';
 
 @Component({
@@ -7,8 +8,6 @@ import { LinkReferencia } from 'src/app/models/linkReferencia';
 })
 export class AgilesComponent extends LinkReferencia {
 
-  constructor() {
-    super();
-  }
+  keys = AGILES;
 
 }

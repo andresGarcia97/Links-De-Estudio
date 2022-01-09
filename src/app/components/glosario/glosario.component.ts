@@ -52,7 +52,13 @@ export class GlosarioComponent {
     return onlyComponents;
   }
 
-  public crearVistaItem(key: string): void {
+  public scrollToView($element: any): void {
+    if (typeof $element !== 'undefined') {
+      $element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+  public crearVistaItem(key: string, $view: any): void {
     const items = this.content.temas.filter((item) => {
       return item.key.includes(key);
     });
@@ -64,6 +70,7 @@ export class GlosarioComponent {
       this.titulo = this.componentes.get(key)?.titulo || '';
       this.item = new Item(items[0].key, items[0].content);
       this.showItem = true;
+      this.scrollToView($view);
     }
   }
 
