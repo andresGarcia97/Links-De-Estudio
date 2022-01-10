@@ -52,13 +52,14 @@ export class LinkReferencia {
         ['metricasEnCodigo', new Referencia('https://blog.desafiolatam.com/metricas-de-calidad-de-software/#:~:text=M%C3%A9tricas%20de%20calidad%20de%20software%20es%20un%20conjunto%20de%20medidas,comparar%20o%20planificar%20estas%20aplicaciones.&text=Tambi%C3%A9n%2C%20es%20necesario%20definir%20las,los%20resultados%20de%20estas%20m%C3%A9tricas', 'Metricas del codigo', 'calidad')],
         ['cleanCode', new Referencia('https://medium.com/@tijuhasz/in-one-of-the-most-groundbreaking-practical-books-on-software-development-clean-code-right-in-3ef3006c68f2', 'Clean Code & Code rot', 'calidad')],
         ['artesanos', new Referencia('https://manifesto.softwarecraftsmanship.org/#/es', 'Artesanos de software', 'calidad')],
-        // compilación
+        // compilacion
         ['compilacion', new Referencia('https://developer.mozilla.org/es/docs/Glossary/Compile', '¿ Que es compilar ?', 'compilacion')],
         ['nivel', new Referencia('https://desarrolloweb.com/articulos/2358.php#:~:text=Existen%20dos%20tipos%20de%20lenguajes,y%20los%20de%20alto%20nivel.&text=Los%20lenguajes%20m%C3%A1s%20pr%C3%B3ximos%20a,denominan%20lenguajes%20de%20alto%20nivel.', 'Niveles de compilación', 'compilacion')],
         ['interprete', new Referencia('https://yosoy.dev/diferencia-entre-lenguajes-compilados-e-interpretados/', 'Tipos de lenguajes', 'compilacion')],
         ['transpilacion', new Referencia('https://ingenieriadesoftware.es/diferencia-transpilacion-compilacion/#:~:text=Si%20traduce%20c%C3%B3digo%20entre%20lenguajes,a%20Bytecode%20ser%C3%ADa%20una%20compilaci%C3%B3n.', '¿ Que es la transpilación ?', 'compilacion')],
         ['azucarSintactico', new Referencia('https://es.wikipedia.org/wiki/Az%C3%BAcar_sint%C3%A1ctico', 'Azucar Sintactico', 'compilacion')],
         ['coercion', new Referencia('https://developer.mozilla.org/es/docs/Glossary/Type_coercion', 'Coerción', 'compilacion')],
+        ['ofuscacion', new Referencia('https://www.azulweb.net/ofuscacion-de-codigo-antipatron-o-buena-practica/', 'Ofuscación', 'compilacion')],
         // empirico
         ['balas', new Referencia('https://gist.github.com/esparta/582e43af7b803e0aaf69', 'Balas de Plata', 'empirico')],
         ['lehman', new Referencia('https://medium.com/@cartontabla/las-leyes-de-lehman-b57c623c3404#:~:text=Las%20Leyes%20de%20Lehman%20son,digamos%20que%20podr%C3%ADan%20ser%20ampliadas)', 'Leyes de Lehman', 'empirico')],
@@ -187,6 +188,7 @@ export class LinkReferencia {
         ['reactiva', new Referencia('https://profile.es/blog/que-es-la-programacion-reactiva-una-introduccion/', 'Programación reactiva', 'paradigmas')],
         ['marcado', new Referencia('https://blog.educacionit.com/2018/12/26/diferencia-entre-lenguajes-de-scripting-lenguajes-de-marcado-y-lenguajes-de-programacion/', 'Lenguajes de marcado', 'paradigmas')],
         ['aspectos', new Referencia('https://www.baeldung.com/spring-aop', 'Orientación a aspectos', 'paradigmas')],
+        ['logica', new Referencia('https://ferestrepoca.github.io/paradigmas-de-programacion/proglogica/logica_teoria/aplicaciones.html', 'Programación Logica', 'paradigmas')],
         // patrones
         ['definicionPatrones', new Referencia('http://www.ecured.cu/Patrones_de_dise%C3%B1o_y_arquitectura', '¿ Que son los patrones ?', 'patrones')],
         ['gof', new Referencia('http://www.cleformacion.com/tic-tek/-/blogs/patrones-gof', 'Gang of Four (GoF)', 'patrones')],

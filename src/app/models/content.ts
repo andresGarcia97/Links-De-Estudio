@@ -5,7 +5,7 @@ export class Content {
     public temas: Item[] = [...PRUEBAS, ...AGILES, ...ANALISIS, ...ARQUITECTURAS, ...BUENAS_PRACTICAS,
     ...CALIDAD, ...COMPILACION, ...META_CARACTERISTICAS, ...CONOCIMIENTOS_EMPIRICOS, ...DOCKER,
     ...ESTATEGIAS_DESARROLLO, ...FRAMEWORKS, ...GIT, ...HARDWARE, ...HISTORIAS_USUARIO,
-    ...MALAS_PRACTICAS, ...META_ESTRUCTURAS, ...METODOLOGIAS
+    ...MALAS_PRACTICAS, ...META_ESTRUCTURAS, ...METODOLOGIAS, ...PARADIGMAS
     ];
 
 }
@@ -697,6 +697,30 @@ export const COMPILACION =
                 '- Esto puede dar a errores o conversiones erroneas si no se especifica que es lo que se necesita ',
                 ' - Ejemplo -> "5" + 9 = 59         ',
                 ' - Ejemplo -> Number("5") + 9 = 14 ',
+            ]),
+        new Item('ofuscacion',
+            [
+                '- Es comun el dicho que suele recordar que progames como si tu codigo fuera a ser mantenido por un psicopata que sabe donde vives ',
+                '- Esto es para evitar que te termine odiando quien quiera que sea que tenga que mantener el codigo, ',
+                ' - pero generalmente esto nos pasa con nuestro codigo, al cual nosotros mismos mantenemos ',
+                '- Pero en ocasiones es interesante ocultar el funcionamiento de nuestro codigo cuando es inevitablemente visible, ',
+                ' - como lo es en el caso de Javascript, para para evitar modificaciones, desentrañar su funcionamiento, o su plagio ',
+                '- Esto en si, es opuesto a un codigo mantenible y entendible',
+                '',
+                '- Existen diferentes maneras "manuales" de hacer esto (malas practicas): ',
+                ' - Nombre de variables sin sentido ',
+                ' - Duplicar codigo ',
+                ' - Añadir/eliminar comentarios innecesarios/necesarios ',
+                ' - Agregar pasos innecesarios y codigo muerto ',
+                '',
+                '- La ofuscación es particularmente problematica cuando existen sistemas legacy sin buena documentación y con malas practicas ',
+                '- Tambien puede ser usada con propositos malintencionados al introducir codigo malicioso dificil de revisar y por ende de encontrar ',
+                '',
+                '- Esto se puede dar de manera involuntaria pero necesaria en procesos como: ',
+                ' - La transpilación de un lenguaje a otro, Typescript a Javascript',
+                ' - La minificación de archivos para reducir su peso ',
+                ' - La compilación de lenguajes de alto nivel (compilados) a codigo binario ',
+                ' - Optimizaciones realizadas por los propios compiladores ',
             ])
     ];
 
@@ -1765,5 +1789,77 @@ export const METODOLOGIAS =
                 '2 -> hacer: desarrollar el plan para cada uno de los aspectos que has identificado ',
                 '3 -> comprobar: debes analizar que tu plan si este dando resultados, de lo contrario deberas volver a empezar ',
                 '2 -> actuar: si has logrado cumplir los objetivos marcados, entonces es hora de estandarizar y continuar con las mejoras ',
+            ])
+    ];
+
+export const PARADIGMAS =
+    [
+        new Item('imperativo',
+            [
+                '- Imperativo -> secuencia ordenada de acciones a ejecutar, más cercano a lenguaje maquina ',
+                '  - Estructurado -> donde se incluyen sentencias de control y se contemplan las interrupciones',
+                '  - Procedimental -> donde se empieza a crear funciones y metodos para no repetir código',
+                '  - Modular -> Se agrupan segmentos más grandes de código independientes entre si, facilitando la depuración',
+                '- Declarativo -> Se describe el resultado de la operación y no el como, requiriendo más abstracción y menos código ',
+                '  - Funcional -> la base son las funciones que se pueden concatenar para formar estructuras o usarse como argumentos ',
+                '  - Logica -> la base es la matematica y su logica para predecir el resultado',
+            ]),
+        new Item('funcional',
+            [
+                '- Las acciones son delegadas a funciones propias del lenguaje',
+                '  - Funciones Puras -> dada una entrada siempre van a tener la misma salida',
+                '  - Composición -> se pueden juntar y crear una secuencia y resultado diferente ',
+                '  - Efectos secundarios -> Son los cambios visibles fuera de la función llamada ',
+                '  - Se le da más relevancia al concepto de inmutabilidad y mutabilidad',
+                '  - Los efectos secundarios se evitan en este tipo de programación',
+            ]),
+        new Item('scripting',
+            [
+                '- Son lenguajes que no son compilados y que se ejecutan directamente en el lado del cliente ',
+                '- El más famoso es Javascript, pero otros como Python y Ruby tambien lo son',
+                '- Suelen ser menos eficientes al no ser compilados pero conllevan menos trabajo para el programador ',
+                '- Generalmente son debilmente tipados, lo que da más flexibilidad y posiblidad de errores',
+            ]),
+        new Item('reactiva',
+            [
+                '- Es un paradigma enfocado al trabajo con flujo de datos, generalmente debe ser: ',
+                '  - Resilientes -> deben responder incluso cuando hay estados de error',
+                '  - Elasticos -> el aumento de la concurrencia no debe afectar las respuestas',
+                '  - Comunicación -> minimo acoplamiento al hacer que todo se comunique mediante mensajeria ',
+                '  - Operadores -> tener soporte hacia estos que permiten transformar el flujo de datos ',
+            ]),
+        new Item('marcado',
+            [
+                '- Son lenguajes relacionados con la presentación de contenido como HTML y XML',
+                '- El primero se usa para estructurar contenido web y el segundo para estructurar datos ',
+            ]),
+        new Item('aspectos',
+            [
+                '- Es un paradigma de programación que tiene como objetivo aumentar la modularidad del codigo ',
+                '- Permite la separación de responsabilidades sin cambiar el comportamiento actual de la aplicación ',
+                '- Esto permite añadir un comportamiento paralelo, sin afectar el comportamiento principal ',
+                '- Un aspecto es aquel que puede ser transversal a multiples capas de la aplicación ',
+                '',
+                '- Estos se pueden encadenar y unir mediante "Joinpoint", que son similares a las excepciones,  ',
+                ' - estos se ejecutaran si las condiciones interceptadas se dan ',
+                '- Si la interceptaciones cumplen las condiciones dadas, podran llamar a un "Pointcut" que sera el llamado a un ',
+                ' - "Joinpoint" que a su vez ejecutara el "Advice" inidicado "',
+                '- Un "Advice" es una accion especifica asociada a un "Joinpoint" ',
+            ]),
+        new Item('logica',
+            [
+                '- Al ser parte del paradigma declarativo, esta programación se concentra en el resultado, más que en el proceso ',
+                '- Esto se base mediante el uso extensivo de la logica matematica: ',
+                ' - De orden cero -> Logica proposicional ',
+                ' - De primer orden -> Logica predictiva ',
+                ' - De segundo orden -> donde se agregan variables y relaciones ',
+                ' - Cada orden se base en el anterior para crear nuevos conceptos y formas de evaluación ',
+                '',
+                '- Algunos sistemas en los que se puede aplicar: ',
+                ' - Inteligencia artificial ',
+                ' - Sistemas expertos (toma de decisiones)',
+                ' - Reconocimiento y procesamiento de lenguaje natural ',
+                ' - Motores de bases de datos relacionales ',
+                ' - Simulación '
             ])
     ];

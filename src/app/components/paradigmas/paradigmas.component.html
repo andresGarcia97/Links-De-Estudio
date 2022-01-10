@@ -16,6 +16,8 @@
 
     <app-button [tittleButton]="'Aspectos'" (click)="getLinkAndTittleByKey('aspectos')"></app-button>
 
+    <app-button [tittleButton]="'Logica'" (click)="getLinkAndTittleByKey('logica')"></app-button>
+
   </div>
 
   <app-referencia class="flexbox terminal" [referencia]="referencia" [titulo]="titulo"></app-referencia>
@@ -24,45 +26,11 @@
 
     <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
 
-    <pre *ngSwitchCase="'imperativo'">- Imperativo -> secuencia ordenada de acciones a ejecutar, más cercano a lenguaje maquina </pre>
-    <pre *ngSwitchCase="'imperativo'">  - Estructurado -> donde se incluyen sentencias de control y se contemplan las interrupciones</pre>
-    <pre *ngSwitchCase="'imperativo'">  - Procedimental -> donde se empieza a crear funciones y metodos para no repetir código</pre>
-    <pre *ngSwitchCase="'imperativo'">  - Modular -> Se agrupan segmentos más grandes de código independientes entre si, facilitando la depuración</pre>
-    <pre *ngSwitchCase="'imperativo'">- Declarativo -> Se describe el resultado de la operación y no el como, requiriendo más abstracción y menos código </pre>
-    <pre *ngSwitchCase="'imperativo'">  - Funcional -> la base son las funciones que se pueden concatenar para formar estructuras o usarse como argumentos </pre>
-    <pre *ngSwitchCase="'imperativo'">  - Logica -> la base es la matematica y su logica para predecir el resultado</pre>
-
-    <pre *ngSwitchCase="'funcional'">- Las acciones son delegadas a funciones propias del lenguaje</pre>
-    <pre *ngSwitchCase="'funcional'">  - Funciones Puras -> dada una entrada siempre van a tener la misma salida</pre>
-    <pre *ngSwitchCase="'funcional'">  - Composición -> se pueden juntar y crear una secuencia y resultado diferente </pre>
-    <pre *ngSwitchCase="'funcional'">  - Efectos secundarios -> Son los cambios visibles fuera de la función llamada </pre>
-    <pre *ngSwitchCase="'funcional'">  - Se le da más relevancia al concepto de inmutabilidad y mutabilidad</pre>
-    <pre *ngSwitchCase="'funcional'">  - Los efectos secundarios se evitan en este tipo de programación</pre>
-
-    <pre *ngSwitchCase="'scripting'">- Son lenguajes que no son compilados y que se ejecutan directamente en el lado del cliente </pre>
-    <pre *ngSwitchCase="'scripting'">- El más famoso es Javascript, pero otros como Python y Ruby tambien lo son</pre>
-    <pre *ngSwitchCase="'scripting'">- Suelen ser menos eficientes al no ser compilados pero conllevan menos trabajo para el programador </pre>
-    <pre *ngSwitchCase="'scripting'">- Generalmente son debilmente tipados, lo que da más flexibilidad y posiblidad de errores</pre>
-
-    <pre *ngSwitchCase="'reactiva'">- Es un paradigma enfocado al trabajo con flujo de datos, generalmente debe ser: </pre>
-    <pre *ngSwitchCase="'reactiva'">  - Resilientes -> deben responder incluso cuando hay estados de error</pre>
-    <pre *ngSwitchCase="'reactiva'">  - Elasticos -> el aumento de la concurrencia no debe afectar las respuestas</pre>
-    <pre *ngSwitchCase="'reactiva'">  - Comunicación -> minimo acoplamiento al hacer que todo se comunique mediante mensajeria </pre>
-    <pre *ngSwitchCase="'reactiva'">  - Operadores -> tener soporte hacia estos que permiten transformar el flujo de datos </pre>
-
-    <pre *ngSwitchCase="'marcado'">- Son lenguajes relacionados con la presentación de contenido como HTML y XML</pre>
-    <pre *ngSwitchCase="'marcado'">- El primero se usa para estructurar contenido web y el segundo para estructurar datos </pre>
-
-    <pre *ngSwitchCase="'aspectos'">- Es un paradigma de programación que tiene como objetivo aumentar la modularidad del codigo </pre>
-    <pre *ngSwitchCase="'aspectos'">- Permite la separación de responsabilidades sin cambiar el comportamiento actual de la aplicación </pre>
-    <pre *ngSwitchCase="'aspectos'">- Esto permite añadir un comportamiento paralelo, sin afectar el comportamiento principal </pre>
-    <pre *ngSwitchCase="'aspectos'">- Un aspecto es aquel que puede ser transversal a multiples capas de la aplicación </pre>
-    <pre *ngSwitchCase="'aspectos'"></pre>
-    <pre *ngSwitchCase="'aspectos'">- Estos se pueden encadenar y unir mediante "Joinpoint", que son similares a las excepciones,  </pre>
-    <pre *ngSwitchCase="'aspectos'"> - estos se ejecutaran si las condiciones interceptadas se dan </pre>
-    <pre *ngSwitchCase="'aspectos'">- Si la interceptaciones cumplen las condiciones dadas, podran llamar a un "Pointcut" que sera el llamado a un </pre>
-    <pre *ngSwitchCase="'aspectos'"> - "Joinpoint" que a su vez ejecutara el "Advice" inidicado "</pre>
-    <pre *ngSwitchCase="'aspectos'">- Un "Advice" es una accion especifica asociada a un "Joinpoint" </pre>
+    <span *ngFor="let item of items">
+      <span *ngSwitchCase="item.key">
+        <pre *ngFor="let content of item.content">{{content}}</pre>
+      </span>
+    </span>
 
   </div>
 
