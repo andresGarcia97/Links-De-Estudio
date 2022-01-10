@@ -17,30 +17,15 @@
   <app-referencia class="flexbox terminal" [referencia]="referencia" [titulo]="titulo"></app-referencia>
 
   <div class="terminal" [ngSwitch]="selection" #terminal>
-      
-      <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
-  
-      <pre *ngSwitchCase="'callbackhell'">- Generalmente es un problema al hacer codigo con caracteristicas asincronas (generalmente javascript) </pre>
-      <pre *ngSwitchCase="'callbackhell'">- El orden en que se copia el codigo no necesariamente es en el que va a ser ejecutado</pre>
-      <pre *ngSwitchCase="'callbackhell'">- Cambiar el orden de las llamadas puede evitar el anidamiento innecesario</pre>
-      <pre *ngSwitchCase="'callbackhell'">- Usar promesas ó el Async/Await que hara que el codigo se comporte de manera más sincronica </pre>
 
-      <pre *ngSwitchCase="'cosas1'">- Desconocimiento del negocio, clases mal diseñadas o condiciones sin sentido</pre>
-      <pre *ngSwitchCase="'cosas1'">- Mala o nula formulación de requerimientos y requisitos </pre>
-      <pre *ngSwitchCase="'cosas1'">- Desconocimiento de las tecnologias que se usen, la experiencia de un desarrollador toma tiempo para conseguirse </pre>
-      <pre *ngSwitchCase="'cosas1'">- Malas estimaciones de los tiempos, obligando a mucho trabajo extra</pre>
-      <pre *ngSwitchCase="'cosas1'">- No aplicar patrones y/o arquitecturas</pre>
+    <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
 
-      <pre *ngSwitchCase="'cosas2'">- Asignación erronea del personal en roles inadecuados o sin la experiencia necesaria </pre>
-      <pre *ngSwitchCase="'cosas2'">- Asumir información sin tener una confirmación previa</pre>
-      <pre *ngSwitchCase="'cosas2'">- Empezar a planear sin tener todas las variables a tener en cuenta</pre>
-      <pre *ngSwitchCase="'cosas2'">- No se debe abusar de la capacidad de multitarea del equipo</pre>
+    <span *ngFor="let item of items">
+      <span *ngSwitchCase="item.key">
+        <pre *ngFor="let content of item.content">{{content}}</pre>
+      </span>
+    </span>
 
-      <pre *ngSwitchCase="'cosas3'">- La falta de comunicación en el equipo puede conllevar al desastre</pre>
-      <pre *ngSwitchCase="'cosas3'">- No poner limites es tan malo como ser inflexible, siempre hay un punto medio</pre>
-      <pre *ngSwitchCase="'cosas3'">- Entregar productos incompletos, lo ideal seria pedir más tiempo o recursos</pre>
-      <pre *ngSwitchCase="'cosas3'">- Asignación erronea del personal en roles inadecuados o sin la experiencia necesaria </pre>
-      
-    </div>
-    
   </div>
+
+</div>

@@ -1,110 +1,41 @@
 <div class="content">
 
-    <h2>Historias de Usuario & Metodologias Agiles </h2>
-  
-    <div class="card-container">
-  
-      <app-button [tittleButton]="'¿ que son ?'" (click)="getLinkAndTittleByKey('historias')"></app-button>
+  <h2>Historias de Usuario & Metodologias Agiles </h2>
 
-      <app-button [tittleButton]="'¿ que buscan ?'" (click)="getLinkAndTittleByKey('objetivos')"></app-button>
+  <div class="card-container">
 
-      <app-button [tittleButton]="'Partes'" (click)="getLinkAndTittleByKey('partes')"></app-button>
+    <app-button [tittleButton]="'¿ que son ?'" (click)="getLinkAndTittleByKey('historias')"></app-button>
 
-      <app-button [tittleButton]="'INVEST'" (click)="getLinkAndTittleByKey('invest')"></app-button>
+    <app-button [tittleButton]="'¿ que buscan ?'" (click)="getLinkAndTittleByKey('objetivos')"></app-button>
 
-      <app-button [tittleButton]="'SMART'" (click)="getLinkAndTittleByKey('smart')"></app-button>
+    <app-button [tittleButton]="'Partes'" (click)="getLinkAndTittleByKey('partes')"></app-button>
 
-      <app-button [tittleButton]="'Las 3 C'" (click)="getLinkAndTittleByKey('3c')"></app-button>
+    <app-button [tittleButton]="'INVEST'" (click)="getLinkAndTittleByKey('invest')"></app-button>
 
-      <app-button [tittleButton]="'Gherkin'" (click)="getLinkAndTittleByKey('gherkin')"></app-button>
+    <app-button [tittleButton]="'SMART'" (click)="getLinkAndTittleByKey('smart')"></app-button>
 
-      <app-button [tittleButton]="'Descomposición'" (click)="getLinkAndTittleByKey('descomposicionHU')"></app-button>
+    <app-button [tittleButton]="'Las 3 C'" (click)="getLinkAndTittleByKey('3c')"></app-button>
 
-     <app-button [tittleButton]="'Manifiesto Agil'" (click)="getLinkAndTittleByKey('agil')"></app-button>
+    <app-button [tittleButton]="'Gherkin'" (click)="getLinkAndTittleByKey('gherkin')"></app-button>
 
-    </div>
-  
-    <app-referencia class="flexbox terminal" [referencia]="referencia" [titulo]="titulo"></app-referencia>
+    <app-button [tittleButton]="'Descomposición'" (click)="getLinkAndTittleByKey('descomposicionHU')"></app-button>
 
-    <div class="terminal" [ngSwitch]="selection" #terminal>
+    <app-button [tittleButton]="'Manifiesto Agil'" (click)="getLinkAndTittleByKey('agil')"></app-button>
 
-      <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
-  
-      <pre *ngSwitchCase="'historias'">- Es uno de los elementos usados en las metodolgias agiles </pre>
-      <pre *ngSwitchCase="'historias'">- Su nivel de exhaustividad es menor a cambio de proporcionar más valor al negocio </pre>
-      <pre *ngSwitchCase="'historias'">- Se concentran en especificar las funciones requeridas y el porque de estas </pre>
-  
-      <pre *ngSwitchCase="'objetivos'">- Deben esclarecer el porque, el actor de la acción, un motivo y como validarla </pre>
-      <pre *ngSwitchCase="'objetivos'">- Se basan en una negociación entre las partes, lo que las hace mutables a traves del tiempo </pre>
-      <pre *ngSwitchCase="'objetivos'">- El foco de toda función se basa en el usuario final, más que en los clientes o los desarrolladores </pre>
-      <pre *ngSwitchCase="'objetivos'">- Se conforman de varios aspectos, ademas de seguir el modelo INVEST </pre>
-  
-      <pre *ngSwitchCase="'partes'">- Titulo -> que debe ser una forma concisa y clara de lo que se busca </pre>
-      <pre *ngSwitchCase="'partes'">- Titulo -> tambien puede servir como identificador para cada HU </pre>
-      <pre *ngSwitchCase="'partes'">- Titulo -> <strong>COMO</strong> Rol <strong>QUIERO</strong> Objetivo <strong>PARA</strong> motivación </pre>
-      <pre *ngSwitchCase="'partes'"></pre>
-      <pre *ngSwitchCase="'partes'">- Descripción -> puede contener una descripción más detallada de lo que se espera </pre>
-      <pre *ngSwitchCase="'partes'">- Descripción -> da el contexto donde se desarrollara la HU </pre>
-      <pre *ngSwitchCase="'partes'">- Descripción -> pueden incluir imagenes, diseños, prototipos, etc... </pre>
-      <pre *ngSwitchCase="'partes'"></pre>
-      <pre *ngSwitchCase="'partes'">- Criterios de Aceptación -> son los elementos que se deben cumplir para dar a la HU como terminada </pre>
-      <pre *ngSwitchCase="'partes'">- Criterios de Aceptación -> no hay punto medio, esta o no esta completa </pre>
-      <pre *ngSwitchCase="'partes'">- Criterios de Aceptación -> evitar la ambiguedad lo más que se pueda </pre>
-      <pre *ngSwitchCase="'partes'">- Criterios de Aceptación -> deben ser verificables con relativa facilidad </pre>
-
-      <pre *ngSwitchCase="'invest'"> I -> independiente, las HU deben ser independientes entre si, aunque puden compartir criterios de acpetación </pre>
-      <pre *ngSwitchCase="'invest'"> N -> negociable, la negociación debe ser la base de toda HU, no son contratos </pre>
-      <pre *ngSwitchCase="'invest'"> V -> valiosa, toda HU debe aportar valor al negocio, de lo contrario son irrelevantes </pre>
-      <pre *ngSwitchCase="'invest'"> E -> estimable, toda HU debe ser medible en tiempo o esfuerzo, de manera objetiva (ideal) </pre>
-      <pre *ngSwitchCase="'invest'"> S -> pequeña, las HU deben poder realizarse en un solo sprint, por lo que puede ser subdividida de lo contrario </pre>
-      <pre *ngSwitchCase="'invest'"> T -> testeable, toda HU debe ser probada y validada, permitiendo que se considere finalizada </pre>
-
-      <pre *ngSwitchCase="'smart'"> S -> specific, debe ser lo suficientemente especifica como para ser entendida </pre>
-      <pre *ngSwitchCase="'smart'"> M -> measurable, medible, ya que debe hacer lo que se pretende, segun el criterio del equipo </pre>
-      <pre *ngSwitchCase="'smart'"> A -> achievable, alcanzable, toda meta debe ser ambiciosa, más no demasido como para no alcanzarla </pre>
-      <pre *ngSwitchCase="'smart'"> R -> relevant, toda tarea debe ser relevante para que contribuya a la historia y al proyecto </pre>
-      <pre *ngSwitchCase="'smart'"> T -> time-boxed, cuenta con un tiempo limite para ser alcanzada, y asi saber los dias en que estara lista aproximadamente </pre>
-
-      <pre *ngSwitchCase="'agil'">- Nace con el proposito de reformar el desarrollo de software para hacerlo más eficiente y eficaz </pre>
-      <pre *ngSwitchCase="'agil'">- Son 4 principios que toda metodologia agil lleva a cabo para mejorar el desarrollo </pre>
-      <pre *ngSwitchCase="'agil'"></pre>
-      <pre *ngSwitchCase="'agil'"> - Individuos e interacciones <strong>sobre</strong> procesos y herramientas </pre>
-      <pre *ngSwitchCase="'agil'"> - Software funcionando <strong>sobre</strong> documentación extensiva </pre>
-      <pre *ngSwitchCase="'agil'"> - Colaboración con el cliente <strong>sobre</strong> negociación contractual </pre>
-      <pre *ngSwitchCase="'agil'"> - Respuesta ante el cambio <strong>sobre</strong> seguir un plan </pre>
-
-      <pre *ngSwitchCase="'3c'">- Las historias de Usuario nacen de la necesidad de un entedimiento comun de lo que se debe hacer, </pre>
-      <pre *ngSwitchCase="'3c'"> - independientemente de quien lo lea, o quien lo haga, de ahi nace el concepto de las 3C </pre>
-      <pre *ngSwitchCase="'3c'"></pre>
-      <pre *ngSwitchCase="'3c'">- Tarjeta (card) -> es un breve parrafo que resume la necesidad, el porque, y para quien es util, </pre>
-      <pre *ngSwitchCase="'3c'"> - Estas tarjetas tienen su propia estructura, la cual generalmente tiene 3 partes + los criterios de aceptación </pre>
-      <pre *ngSwitchCase="'3c'">- Conversación (conversation) -> es la comunicación cara a cara de todos lo involucrados necesarios, </pre>
-      <pre *ngSwitchCase="'3c'"> - para crear las tarjetas, Developers, Product Owner, Scrum Master, etc... y por medio de un conceso redactar la HU </pre>
-      <pre *ngSwitchCase="'3c'">- Confirmación (confirmation) -> Suelen ser los escenarios, precondiciones y postcondiciones para que la HU se de como terminada, </pre>
-      <pre *ngSwitchCase="'3c'"> - tambien se les conoce como los criterios de aceptación y no tienen punto medio,  </pre>
-      <pre *ngSwitchCase="'3c'"> - o se aceptan y se concluye la HU, o no se cumplen y es necesario seguir trabajando en la HU </pre>
-
-      <pre *ngSwitchCase="'gherkin'">- El proposito del Gherkin es describir las HU y las pruebas de aceptación, en un lenguaje que todos los involucrados puedan entender </pre>
-      <pre *ngSwitchCase="'gherkin'">- Suele estar de la mano con el uso de BDD y TDD, donde todo el equipo es importante, </pre>
-      <pre *ngSwitchCase="'gherkin'"> - testers, developers, scrum master, product owner, ó cualquier otro involucrado </pre>
-      <pre *ngSwitchCase="'gherkin'"></pre>
-      <pre *ngSwitchCase="'gherkin'">- Ya con las HU realizadas y con todos correctamente empapados se suelen crear los escenearios de uso </pre>
-      <pre *ngSwitchCase="'gherkin'">- La estructura general de cada prueba de aceptacion suele ser: </pre>
-      <pre *ngSwitchCase="'gherkin'"> - Dado que 'contexto inicial' </pre>
-      <pre *ngSwitchCase="'gherkin'"> - Cuando 'un acontecimiento o suceso' </pre>
-      <pre *ngSwitchCase="'gherkin'"> - Entonces 'resultado determinado' </pre>
-
-      <pre *ngSwitchCase="'descomposicionHU'">-Toda HU debe ser subdividida en tareas especificas que aporten valor y que ayuden al cumplimento de la meta planteada </pre>
-      <pre *ngSwitchCase="'descomposicionHU'">-Una forma util puede ser tener una serie de tareas genericas que puedan ser modificadas segun cada proyecto como: </pre>
-      <pre *ngSwitchCase="'descomposicionHU'"></pre>
-      <pre *ngSwitchCase="'descomposicionHU'">- Especificar cuantas pruebas unitarias estan asignadas a la HU </pre>
-      <pre *ngSwitchCase="'descomposicionHU'">- Pruebas de aceptación bien definidas de la HU </pre>
-      <pre *ngSwitchCase="'descomposicionHU'">- Tener claro los requisitos no funcionales que se deben cumplir </pre>
-      <pre *ngSwitchCase="'descomposicionHU'">- La necesidad de revisiones y cuantas se han de hacer </pre>
-      <pre *ngSwitchCase="'descomposicionHU'">- Refactorizaciones de codigo y cuanto tiempo se gastara para esto </pre>
-      <pre *ngSwitchCase="'descomposicionHU'">- Correcion y/o verificación de errores, que puedan suceder despues de las pruebas </pre>
-      <pre *ngSwitchCase="'descomposicionHU'">- Documentación, ya sea crearla o modificarla </pre>
-
-    </div>
-    
   </div>
+
+  <app-referencia class="flexbox terminal" [referencia]="referencia" [titulo]="titulo"></app-referencia>
+
+  <div class="terminal" [ngSwitch]="selection" #terminal>
+
+    <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
+
+    <span *ngFor="let item of items">
+      <span *ngSwitchCase="item.key">
+        <pre *ngFor="let content of item.content" [innerHtml]="content">{{content}}</pre>
+      </span>
+    </span>
+
+  </div>
+
+</div>
