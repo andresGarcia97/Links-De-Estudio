@@ -153,6 +153,12 @@
   border: 1px solid rgba(var(--color-black), 0.18);
 }
 
+.oscuro .tooltiptext.gradient {
+  background: linear-gradient(334deg, var(--color-french-sky-blue), var(--color-navy-blue), var(--color-raisin-black));
+  background-size: 180% 180%;
+  animation: gradient-animation 4s ease infinite;
+}
+
 /* fin del modo oscuro */
 
 h1,
@@ -568,20 +574,41 @@ div a.circle-link {
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 140px;
+  width: 160px;
   background-color: var(--color-black);
   color: var(--color-cultured);
   text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
+  border-radius: 8px;
+  padding: 8px 0;
   bottom: 100%;
   left: 50%;
   margin-left: -60px;
 
-  /* Position the tooltip */
   position: absolute;
   z-index: 1;
 }
+
+/*https://codepen.io/carmenansio/pen/MWExRMQ*/
+.tooltiptext.gradient {
+  background: linear-gradient(334deg, var(--color-selective-yellow), var(--color-fulvous), var(--color-crimson));
+  background-size: 180% 180%;
+  animation: gradient-animation 4s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
