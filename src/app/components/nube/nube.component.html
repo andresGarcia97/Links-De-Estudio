@@ -1,207 +1,49 @@
 <div class="content">
 
-    <h2>La Nube & APIs</h2>
-  
-    <div class="card-container">
-    
-      <app-button [tittleButton]="'Tipos de nube'" (click)="getLinkAndTittleByKey('nube')"></app-button>
+  <h2>La Nube & APIs</h2>
 
-      <app-button [tittleButton]="'IaaS, PaaS, SaaS'" (click)="getLinkAndTittleByKey('iaas-paas-saas')"></app-button>
+  <div class="card-container">
 
-      <app-button [tittleButton]="'API'" (click)="getLinkAndTittleByKey('api')"></app-button>
+    <app-button [tittleButton]="'Tipos de nube'" (click)="getLinkAndTittleByKey('nube')"></app-button>
 
-      <app-button [tittleButton]="'SOAP & REST'" (click)="getLinkAndTittleByKey('rest')"></app-button>
+    <app-button [tittleButton]="'IaaS, PaaS, SaaS'" (click)="getLinkAndTittleByKey('iaas-paas-saas')"></app-button>
 
-      <app-button [tittleButton]="'Rest & RestFull'" (click)="getLinkAndTittleByKey('restfull')"></app-button>
+    <app-button [tittleButton]="'API'" (click)="getLinkAndTittleByKey('api')"></app-button>
 
-      <app-button [tittleButton]="'Codigos HTTP'" (click)="getLinkAndTittleByKey('httpCodes')"></app-button>
+    <app-button [tittleButton]="'SOAP & REST'" (click)="getLinkAndTittleByKey('rest')"></app-button>
 
-      <app-button [tittleButton]="'Estandares RestFull'" (click)="getLinkAndTittleByKey('caracteristicas')"></app-button>
+    <app-button [tittleButton]="'Rest & RestFull'" (click)="getLinkAndTittleByKey('restfull')"></app-button>
 
-      <app-button [tittleButton]="'Nivel de Madurez'" (click)="getLinkAndTittleByKey('madurezDeUnaApi')"></app-button>
+    <app-button [tittleButton]="'Codigos HTTP'" (click)="getLinkAndTittleByKey('httpCodes')"></app-button>
 
-      <app-button [tittleButton]="'12 - factores'" (click)="getLinkAndTittleByKey('factores12')"></app-button>
+    <app-button [tittleButton]="'Estandares RestFull'" (click)="getLinkAndTittleByKey('caracteristicas')"></app-button>
 
-      <app-button [tittleButton]="'Migraciones'" (click)="getLinkAndTittleByKey('migracionesNube')"></app-button>
+    <app-button [tittleButton]="'Nivel de Madurez'" (click)="getLinkAndTittleByKey('madurezDeUnaApi')"></app-button>
 
-      <app-button [tittleButton]="'Teorema CAP'" (click)="getLinkAndTittleByKey('capTeorema')"></app-button>
+    <app-button [tittleButton]="'12 - factores'" (click)="getLinkAndTittleByKey('factores12')"></app-button>
 
-      <app-button [tittleButton]="'Servidor DNS'" (click)="getLinkAndTittleByKey('dns')"></app-button>
+    <app-button [tittleButton]="'Migraciones'" (click)="getLinkAndTittleByKey('migracionesNube')"></app-button>
 
-      <app-button [tittleButton]="'Linting'" (click)="getLinkAndTittleByKey('linting')"></app-button>
-    
-    </div>
-  
-    <app-referencia class="flexbox terminal" [referencia]="referencia" [titulo]="titulo"></app-referencia>
+    <app-button [tittleButton]="'Teorema CAP'" (click)="getLinkAndTittleByKey('capTeorema')"></app-button>
 
-    <div class="terminal" [ngSwitch]="selection" #terminal>
+    <app-button [tittleButton]="'Servidor DNS'" (click)="getLinkAndTittleByKey('dns')"></app-button>
 
-      <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
+    <app-button [tittleButton]="'Linting'" (click)="getLinkAndTittleByKey('linting')"></app-button>
 
-      <pre *ngSwitchCase="'nube'"> -Nube Publica -> Los recursos son del proveedor y estos es compartido con otros usuarios</pre>
-      <pre *ngSwitchCase="'nube'"> -Nube Privada -> Los recursos son propios y no deben ser compartidos con terceros</pre>
-      <pre *ngSwitchCase="'nube'"> -Nube Hibrida -> Los recursos son propios pero el espacio puede ser compartido con otros usuarios </pre>
-
-      <pre *ngSwitchCase="'iaas-paas-saas'">- Estos 3 modelos de servicios actualmente ayudan a las empresas a ahorrar costos, </pre>
-      <pre *ngSwitchCase="'iaas-paas-saas'"> - tanto en software como en hardware, además de multiples ventajas </pre>
-      <pre *ngSwitchCase="'iaas-paas-saas'"></pre>
-      <pre *ngSwitchCase="'iaas-paas-saas'">- IaaS -> infraestructura como servicio, aca todo la infraestructura necesaria se contrata con un tercero, </pre>
-      <pre *ngSwitchCase="'iaas-paas-saas'"> - a cambio de una cuota o un alquiler, esto es muy conveniente ya que se compra lo que se necesita; </pre>
-      <pre *ngSwitchCase="'iaas-paas-saas'">  - algunos de los más conocidos son Amazon Web Services Y Microsoft Azure </pre>
-      <pre *ngSwitchCase="'iaas-paas-saas'">- PasS -> plataforma como servicio, en este caso solo se provee la infraestructura, </pre>
-      <pre *ngSwitchCase="'iaas-paas-saas'"> - y el cliente solo se preocupa de su aplicación, delegando la administración a un tercero </pre>
-      <pre *ngSwitchCase="'iaas-paas-saas'">  - algunos de los más conocidos son Google App Engine Y Bungee Connect </pre>
-      <pre *ngSwitchCase="'iaas-paas-saas'">- SaaS -> software como infraestructura, aca se aloja el software y la infraestructura </pre>
-      <pre *ngSwitchCase="'iaas-paas-saas'"> - y el usuario solo se preocupa por usarlo de acuerdo a sus necesidades </pre>
-      <pre *ngSwitchCase="'iaas-paas-saas'">  - algunos de los más conocidos son Microsoft Office 365 y WordPress </pre>
-
-      <pre *ngSwitchCase="'api'">- Conjunto de reglas y especificaciones por el cual se puede comunicar diferentes aplicaciones </pre>
-      <pre *ngSwitchCase="'api'">- Permiten compartir reutilizar funciones ya existentes y no reiventar la rueda</pre>
-      <pre *ngSwitchCase="'api'">- Suelen ser la entrada principal a los sistemas distribuidos </pre>
-  
-      <pre *ngSwitchCase="'rest'">                 SOAP                            VS                  REST</pre>
-      <pre *ngSwitchCase="'rest'">          Solo permite datos en XML                             Variedad de formatos</pre>
-      <pre *ngSwitchCase="'rest'">      Puede incluir metadatos, más pesado              Generalmente se usa JSON, más liviano </pre>
-      <pre *ngSwitchCase="'rest'">      NO se puede guardar contenido en la cache       SI puede guardar contenido en la cache </pre>
-  
-      <pre *ngSwitchCase="'restfull'">- Rest Es un estilo de arquitectura para sistemas distribuidos, que usa el protocolo HTTP </pre>
-      <pre *ngSwitchCase="'restfull'"></pre>
-      <pre *ngSwitchCase="'restfull'">- Caracteristicas</pre>
-      <pre *ngSwitchCase="'restfull'"> - Arquitectura cliente-servidor -> comunicación continua entre estos 2 agentes </pre>
-      <pre *ngSwitchCase="'restfull'"> - Stateless -> No se deberia almacenar los datos del cliente para mantener el estado de este </pre>
-      <pre *ngSwitchCase="'restfull'"> - Cacheable -> Algunas peticiones pueden ser cacheables para aumentar el rendimiento y la escabilidad </pre>
-      <pre *ngSwitchCase="'restfull'"> - Interfaz uniforme -> independencia del servidor, ya que siempre se garantizara la misma respuesta </pre>
-      <pre *ngSwitchCase="'restfull'"> - Mensajes -> todos los mensajes deben ser coherentes con la función que representan, halla un error ó no </pre>
-      <pre *ngSwitchCase="'restfull'"> - HATEOAS -> es incluir todo lo necesario en la respuesta para que el usuario pueda seguir haciendo peticiones </pre>
-      <pre *ngSwitchCase="'restfull'"></pre>
-      <pre *ngSwitchCase="'restfull'">- Web Restfull</pre>
-      <pre *ngSwitchCase="'restfull'"> - Uri del recurso -> cada metodo deberia contar con una url unica para identificar la función </pre>
-      <pre *ngSwitchCase="'restfull'"> - Representación de recurso -> se puede añadir a la cabecera de la petición, definiendo el formato que se procesara </pre>
-      <pre *ngSwitchCase="'restfull'"> - Operaciones -> Usar los metodos HTTP de manera idonea (GET, POST, PUT DELETE) </pre>
-      <pre *ngSwitchCase="'restfull'"> - Hipervinculos -> Se pueden incluir vinculos para más acciones con el objeto, dentro de la respuesta </pre>
-
-      <pre *ngSwitchCase="'httpCodes'">- Respuestas informativas -> 1xx </pre>
-      <pre *ngSwitchCase="'httpCodes'"> - Son poco usadas y se enfocan más a aspectos de la red y la comunicación </pre>
-      <pre *ngSwitchCase="'httpCodes'"></pre>
-      <pre *ngSwitchCase="'httpCodes'">- Respuestas satisfactorias -> 2xx </pre>
-      <pre *ngSwitchCase="'httpCodes'"> - Se usan para denotar el exito de una operación </pre>
-      <pre *ngSwitchCase="'httpCodes'"> - 200 OK -> respuesta estandar para peticiones correctas </pre>
-      <pre *ngSwitchCase="'httpCodes'"> - 201 Created -> solicitud aceptada y se ha creado un nuevo recurso </pre>
-      <pre *ngSwitchCase="'httpCodes'"></pre>
-      <pre *ngSwitchCase="'httpCodes'">- Redirecciones -> 3xx </pre>
-      <pre *ngSwitchCase="'httpCodes'"> - Son cuando es necesario tomar acciones extras para efectuar la acción </pre>
-      <pre *ngSwitchCase="'httpCodes'"> - 300 Multiple Choices -> multiples opciones con varias respuestas </pre>
-      <pre *ngSwitchCase="'httpCodes'"> - 301 Moved Permanently -> la URI solicitada ha sido movida a otra URI </pre>
-      <pre *ngSwitchCase="'httpCodes'"> - 304 Not Modified -> para propositos de cache, indicando que no ha sido modificado </pre>
-      <pre *ngSwitchCase="'httpCodes'"></pre>
-      <pre *ngSwitchCase="'httpCodes'">- Errores del cliente -> 4xx </pre>
-      <pre *ngSwitchCase="'httpCodes'"> - La solicitud es incorrecta ya sea por sintaxis o información errada </pre>
-      <pre *ngSwitchCase="'httpCodes'"> - 400 Bad request -> la solicitud no puede ser interpretada por una sintaxis invalida </pre>
-      <pre *ngSwitchCase="'httpCodes'"> - 401 Unauthorized -> la autenticacion del usuario es posible pero incorrecta </pre>
-      <pre *ngSwitchCase="'httpCodes'"> - 403 Forbidden -> no se cuenta con los permisos necesarios para el contenido </pre>
-      <pre *ngSwitchCase="'httpCodes'"> - 404 Not Found -> el contenido solicitado no pudo ser encontrado </pre>
-      <pre *ngSwitchCase="'httpCodes'"></pre>
-      <pre *ngSwitchCase="'httpCodes'">- Errores del servidor -> 5xx </pre>
-      <pre *ngSwitchCase="'httpCodes'"> - La solicitud es valida pero no pudo ser ejecutada debido a errores del servidor </pre>
-      <pre *ngSwitchCase="'httpCodes'"> - 500 Internal Server Error -> el servidor ha tenido un error que no sabe manejar </pre>
-      <pre *ngSwitchCase="'httpCodes'"> - 501 Not Implemented -> el metodo solicitado no es soportado por el servidor </pre>
-      <pre *ngSwitchCase="'httpCodes'"> - 502 Bad Gateway -> al obtener una puerta de enlace se obtiene una respuesta invalida </pre>
-      <pre *ngSwitchCase="'httpCodes'"> - 503 Service unavailable -> servicio no disponible </pre>
-  
-      <pre *ngSwitchCase="'caracteristicas'">- Buenas practicas para crear APIs 100% restfull</pre>
-      <pre *ngSwitchCase="'caracteristicas'"></pre>
-      <pre *ngSwitchCase="'caracteristicas'"> - Versionamiento -> las apis tambien cambian y esto no debe evitar que las versiones anteriores dejen de funcionar </pre>
-      <pre *ngSwitchCase="'caracteristicas'"></pre>
-      <pre *ngSwitchCase="'caracteristicas'"> - Autenticación -> esto garantiza un minimo de seguridad e integración en las operaciones a realizar </pre>
-      <pre *ngSwitchCase="'caracteristicas'">   - Para esto se puede usar OAuth2 o JWT</pre>
-      <pre *ngSwitchCase="'caracteristicas'"></pre>
-      <pre *ngSwitchCase="'caracteristicas'"> - Paginación -> mostrar todos los resultados es inviable en varios terminos, por lo tanto deberia haber</pre>
-      <pre *ngSwitchCase="'caracteristicas'">   - una forma de mostrar por partes la información </pre>
-      <pre *ngSwitchCase="'caracteristicas'"></pre>
-      <pre *ngSwitchCase="'caracteristicas'"> - Documentación -> cuando algo cambia la documentación tambien debe hacerlo de inmediato</pre>
-      <pre *ngSwitchCase="'caracteristicas'">   -  de lo contrario puede haber problemas de inconsistencias con los parametros </pre>
-      <pre *ngSwitchCase="'caracteristicas'"></pre>
-      <pre *ngSwitchCase="'caracteristicas'"> - Respuestas -> los codigos deben reflejar lo que haya sucedido, es una mala practica siempre devolver OK(200) </pre>
-      <pre *ngSwitchCase="'caracteristicas'">   - aunque hayan sucedido errores, esto da lugar a mensajes contradictorios </pre>
-
-      <pre *ngSwitchCase="'madurezDeUnaApi'">- Entre más niveles se implementen, más util y completa se puede considerar una API</pre>
-      <pre *ngSwitchCase="'madurezDeUnaApi'"></pre>
-      <pre *ngSwitchCase="'madurezDeUnaApi'"> - Nivel 0 -> se puede considerar simplemente como una conexión http con una sola URI y un solo metodo </pre>
-      <pre *ngSwitchCase="'madurezDeUnaApi'"> - Nivel 1 -> usa varias URIs y un solo metodo http por cada una, esto ayuda a la separación de recursos </pre>
-      <pre *ngSwitchCase="'madurezDeUnaApi'"> - Nivel 2 -> ademas de usar varias URIs, tambien se usan más metodos y tipos para cada URI, a su vez este expone más recursos </pre>
-      <pre *ngSwitchCase="'madurezDeUnaApi'"> - Nivel 3 -> este hace uso de todo lo anterior además de incluir HATEOAS, esto facilita su navegación al punto de ser más intuitivo </pre>
-
-      <pre *ngSwitchCase="'factores12'">- Codigo base -> todo el codigo debe ser controlado mediante un sistema de versiones, </pre>
-      <pre *ngSwitchCase="'factores12'"> - y este no deber ser compartido entre proyectos, de ser el caso esta seria una libreria en comun </pre>
-      <pre *ngSwitchCase="'factores12'"></pre>
-      <pre *ngSwitchCase="'factores12'">- Dependencias -> todas las dependencias a usar siempre deben estar declaradas y aisladas del entorno de ejecución </pre>
-      <pre *ngSwitchCase="'factores12'"> - la aplicación no puede depender de que estas esten instaladas en el host, ya el modo de su gestión es de libre albedrio </pre>
-      <pre *ngSwitchCase="'factores12'"></pre>
-      <pre *ngSwitchCase="'factores12'">- Configuraciones -> si existen diferentes despliegues y entornos de ejecución, estos deben tener sus propias configuraciones </pre>
-      <pre *ngSwitchCase="'factores12'"> - esto se puede lograr mediantes variables de entorno y el manejo de distintos archivos de configuración </pre>
-      <pre *ngSwitchCase="'factores12'"></pre>
-      <pre *ngSwitchCase="'factores12'">- Backing services -> todo sistema que consuma la aplicación (bases de datos, mensajeria, colas, cache, etc.. ), </pre>
-      <pre *ngSwitchCase="'factores12'"> - deberia poder conectarse y cambiarse por medio de simples configuraciones, sin modificar el codigo base </pre>
-      <pre *ngSwitchCase="'factores12'"></pre>
-      <pre *ngSwitchCase="'factores12'">- Separacion de etapas -> cada etapa deberia ser manejada de manera diferente, ya que en esencia lo son </pre>
-      <pre *ngSwitchCase="'factores12'"> - Construccion -> convierte el codigo base en un ejecutable listo para funcionar </pre>
-      <pre *ngSwitchCase="'factores12'"> - Distribución -> se toma la construcción previa y se crea una o n instancias de acuerdo a una configuración </pre>
-      <pre *ngSwitchCase="'factores12'"> - Ejecución    -> es la aplicación ya funcional en el entorno previamente preparado </pre>
-      <pre *ngSwitchCase="'factores12'"></pre>
-      <pre *ngSwitchCase="'factores12'">- Procesos -> para que la aplicación se ejecute de manera adecuada, esta no deberia contemplar guardar estados </pre>
-      <pre *ngSwitchCase="'factores12'"> - esto significa que todos los procesos deben ser individuales e independientes entre si </pre>
-      <pre *ngSwitchCase="'factores12'"></pre>
-      <pre *ngSwitchCase="'factores12'">- Puertos -> Estas aplicaciones son autocontenidas y se comunican mediante puertos HTTP </pre>
-      <pre *ngSwitchCase="'factores12'"></pre>
-      <pre *ngSwitchCase="'factores12'">- Concurrencia -> toda aplicación deberia ser su propia encargada de autogestionarse su crecimiento, </pre>
-      <pre *ngSwitchCase="'factores12'"> - de acuerdo a la demanda y a la disponibilidad de recursos, ya sean hilos, procesos, uso de memoria, asincronia, etc.. </pre>
-      <pre *ngSwitchCase="'factores12'"></pre>
-      <pre *ngSwitchCase="'factores12'">- Desechabilidad -> todos los procesos de las aplicaciones deberian ser desechable, y tener un tiempo de arranque minimo, </pre>
-      <pre *ngSwitchCase="'factores12'"> - esto con el proposito de iniciar cuando sean requeridos, realizar su función, y devolver los recursos consumidos al finalizar </pre>
-      <pre *ngSwitchCase="'factores12'"></pre>
-      <pre *ngSwitchCase="'factores12'">- Igualdad de ambientes -> desarrollo y producción deben ser lo más parecidos posibles </pre>
-      <pre *ngSwitchCase="'factores12'"> - tener diferencias entre estos ambientes puede traer errores inesperados, al intercambiar entre tecnologias o herramientas </pre>
-      <pre *ngSwitchCase="'factores12'"></pre>
-      <pre *ngSwitchCase="'factores12'">- Historiales -> además de ser utiles a la hora de depurar, estos permiten tener mediciones y metricas de la aplicación </pre>
-      <pre *ngSwitchCase="'factores12'"> - se pueden observar en tiempo real, o guardarse en ficheros que seran consultados despues </pre>
-      <pre *ngSwitchCase="'factores12'"></pre>
-      <pre *ngSwitchCase="'factores12'">- Administración de procesos -> estas tareas deberian tener los mismos comandos y secuencias de realización, </pre>
-      <pre *ngSwitchCase="'factores12'"> - independientemente del ambiente o sus configuraciones</pre>
-
-      <pre *ngSwitchCase="'migracionesNube'">- Toda migración hacia la nube, generalmente recoge 6 alternativas </pre>
-      <pre *ngSwitchCase="'migracionesNube'"> - Realojar -> consiste en mover la aplicacion tal y como existia originalmente, una medida apresurada que no siempre funciona </pre>
-      <pre *ngSwitchCase="'migracionesNube'"> - Replataformar -> consiste en modificar la estructura subyacente, sin modificar la arquitectura central de aplicación </pre>
-      <pre *ngSwitchCase="'migracionesNube'"> - Readquirir -> consta de una migración de una nube o servicio a otro, de acuerdo a las necesidades del negocio </pre>
-      <pre *ngSwitchCase="'migracionesNube'"> - Refactorizar/Rediseñar -> no solo es un movimiento de ambiente, tambien son mejoras de escalabilidad ó rendimiento </pre>
-      <pre *ngSwitchCase="'migracionesNube'"> - Retirar -> a veces hay recursos que estan obsoletos o ya no se necesitan, por lo que se eliminan ó se desactivan </pre>
-      <pre *ngSwitchCase="'migracionesNube'"> - Retener -> son ocasiones donde es necesario soportar tecnologias legacy que no son compatibles con la nube</pre>
-
-      <pre *ngSwitchCase="'capTeorema'">- Este teorema sostiene que no es posible que un sistema distribuido cumpla o garantice más de 2/3 de las siguientes propiedades </pre>
-      <pre *ngSwitchCase="'capTeorema'"></pre>
-      <pre *ngSwitchCase="'capTeorema'">- Consistency  (Coherencia) -> todos los clientes ven los mismos datos de manera simultanea </pre>
-      <pre *ngSwitchCase="'capTeorema'">- Availability (disponibilidad) -> todos los clientes disponen de acceso de lectura y escritura en cualquier momento </pre>
-      <pre *ngSwitchCase="'capTeorema'">- Partitions (tolerancia a la particion) -> el sistema sigue funcionando como un todo, despues de que las partes fallan o dejan de comunicarse </pre>
-      <pre *ngSwitchCase="'capTeorema'"></pre>
-      <pre *ngSwitchCase="'capTeorema'">- Sistema CP -> coherencia y tolerancia a la particion (sistemas de DNS)</pre>
-      <pre *ngSwitchCase="'capTeorema'">- Sistena AP -> disponibilidad y tolerancia a la partición (BD relacionales) </pre>
-      <pre *ngSwitchCase="'capTeorema'">- Sistema CA -> coherencia y disponibilidad (aplicaciones financieras)</pre>
-
-      <pre *ngSwitchCase="'dns'">- Es la manera como accedemos a una pagina web por medio de nombres(dominios) y no de direcciones IP </pre>
-      <pre *ngSwitchCase="'dns'">- Este proceso de traducción de direcciones es realizado por estos servidores que estan esparcidos por el mundo </pre>
-      <pre *ngSwitchCase="'dns'">- Al estar esparcidos por el mundo esto permite una administración descentralizada, pero sigue estando interconectada </pre>
-      <pre *ngSwitchCase="'dns'">- Aunque este metodo es normal hoy en dia, tambien se puede acceder a los sitios directamente por medio de una IP </pre>
-      <pre *ngSwitchCase="'dns'"> - y con esta obtener el dominio del sitio </pre>
-      <pre *ngSwitchCase="'dns'">- Si un servidor no encuentra la información solicitada, este la restransmite a otros en la red hasta dar con un resultado </pre>
-
-      <pre *ngSwitchCase="'linting'">- Son una ayuda para encontrar errores y falencias en nuestro codigo mientras desarrollamos </pre>
-      <pre *ngSwitchCase="'linting'">- Estos errores pueden ser: </pre>
-      <pre *ngSwitchCase="'linting'"> - Errores de sintaxis            - Codigo innecesariamente complejo </pre>
-      <pre *ngSwitchCase="'linting'"> - Uso de malas practicas         - Estilos de codificación inconsistentes </pre>
-      <pre *ngSwitchCase="'linting'"></pre>
-      <pre *ngSwitchCase="'linting'">- Estas herramientas no solo nos muestran los posibles errores, tambien pueden dar sugerencias de posibles soluciones </pre>
-      <pre *ngSwitchCase="'linting'">- Tambien permiten la configuración de nuevas reglas para cuando se trabaja en equipo y mantener la consistencia </pre>
-
-    </div>
-    
   </div>
-  
+
+  <app-referencia class="flexbox terminal" [referencia]="referencia" [titulo]="titulo"></app-referencia>
+
+  <div class="terminal" [ngSwitch]="selection" #terminal>
+
+    <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
+
+    <span *ngFor="let item of items">
+      <span *ngSwitchCase="item.key">
+        <pre *ngFor="let content of item.content">{{content}}</pre>
+      </span>
+    </span>
+
+  </div>
+
+</div>
