@@ -1,124 +1,47 @@
 <div class="content">
 
-    <h2>Programación Orientada a Objetos & Diseño Orientado a Objetos</h2>
-  
-    <div class="card-container">
-    
-      <app-button [tittleButton]="'POO'" (click)="getLinkAndTittleByKey('poo')"></app-button>
+  <h2>Programación Orientada a Objetos & Diseño Orientado a Objetos</h2>
 
-      <app-button [tittleButton]="'Pilares POO'" (click)="getLinkAndTittleByKey('pooPilares')"></app-button>
+  <div class="card-container">
 
-      <app-button [tittleButton]="'Relaciones'" (click)="getLinkAndTittleByKey('composicion')"></app-button>
+    <app-button [tittleButton]="'POO'" (click)="getLinkAndTittleByKey('poo')"></app-button>
 
-      <app-button [tittleButton]="'Static en POO'" (click)="getLinkAndTittleByKey('pooStatic')"></app-button>
+    <app-button [tittleButton]="'Pilares POO'" (click)="getLinkAndTittleByKey('pooPilares')"></app-button>
 
-      <app-button [tittleButton]="'Sobrecargar Metodos'" (click)="getLinkAndTittleByKey('sobrecarga')"></app-button>
+    <app-button [tittleButton]="'Relaciones'" (click)="getLinkAndTittleByKey('composicion')"></app-button>
 
-      <app-button [tittleButton]="'Acoplamiento'" (click)="getLinkAndTittleByKey('acoplamiento')"></app-button>
+    <app-button [tittleButton]="'Static en POO'" (click)="getLinkAndTittleByKey('pooStatic')"></app-button>
 
-      <app-button [tittleButton]="'Contratos'" (click)="getLinkAndTittleByKey('contratos')"></app-button>
+    <app-button [tittleButton]="'Sobrecargar Metodos'" (click)="getLinkAndTittleByKey('sobrecarga')"></app-button>
 
-      <app-button [tittleButton]="'Descomposición'" (click)="getLinkAndTittleByKey('descomposicion')"></app-button>
+    <app-button [tittleButton]="'Acoplamiento'" (click)="getLinkAndTittleByKey('acoplamiento')"></app-button>
 
-      <app-button [tittleButton]="'Herencia'" (click)="getLinkAndTittleByKey('herencia')"></app-button>
+    <app-button [tittleButton]="'Contratos'" (click)="getLinkAndTittleByKey('contratos')"></app-button>
 
-      <app-button [tittleButton]="'Polimorfismo'" (click)="getLinkAndTittleByKey('polimorfismo')"></app-button>
+    <app-button [tittleButton]="'Descomposición'" (click)="getLinkAndTittleByKey('descomposicion')"></app-button>
 
-      <app-button [tittleButton]="'Herencia/Composición'" (click)="getLinkAndTittleByKey('herVScomp')"></app-button>
+    <app-button [tittleButton]="'Herencia'" (click)="getLinkAndTittleByKey('herencia')"></app-button>
 
-      <app-button [tittleButton]="'Enlaces'" (click)="getLinkAndTittleByKey('enlaces')"></app-button>
-      
-    </div>
-  
-    <app-referencia class="flexbox terminal" [referencia]="referencia" [titulo]="titulo"></app-referencia>
+    <app-button [tittleButton]="'Polimorfismo'" (click)="getLinkAndTittleByKey('polimorfismo')"></app-button>
 
-    <div class="terminal" [ngSwitch]="selection" #terminal>
+    <app-button [tittleButton]="'Herencia/Composición'" (click)="getLinkAndTittleByKey('herVScomp')"></app-button>
 
-      <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
-    
-      <pre *ngSwitchCase="'poo'">- Alta integridad, Bajo acoplamiento</pre>
-      <pre *ngSwitchCase="'poo'">- Mejora la abstracción de los problemas al acercarlos a lo cotidiano </pre>
-      <pre *ngSwitchCase="'poo'"> - Clases      -> abstracciones de la realidad, convertidas en plantillas </pre>
-      <pre *ngSwitchCase="'poo'"> - Objetos     -> instancia de una clase, con propiedades unicas </pre>
-      <pre *ngSwitchCase="'poo'"> - Propiedades -> atributos o caracteristicas de un objeto</pre>
-      <pre *ngSwitchCase="'poo'"> - Metodos     -> comportamientos o acciones de un objeto</pre>
-  
-      <pre *ngSwitchCase="'pooPilares'">- Encasulapción -> todas las propiedades del objeto son solo del objeto ó de la clase </pre>
-      <pre *ngSwitchCase="'pooPilares'">- Abstracción   -> las acciones son publicas pero su complejidad esta oculta; todos necesitan el que, más no interesa el como </pre>
-      <pre *ngSwitchCase="'pooPilares'">- Herencia      -> los hijos tienen acceso a los metodos y atributos del padre, además de las propias, pero el padre no conoce a sus hijos </pre>
-      <pre *ngSwitchCase="'pooPilares'">- Polimorfismo  -> cada objeto se puede comportar diferente, aunque tenga una misma base, solamente cambiando la instancia </pre>
+    <app-button [tittleButton]="'Enlaces'" (click)="getLinkAndTittleByKey('enlaces')"></app-button>
 
-      <pre *ngSwitchCase="'herencia'">- Propiedad de que una clase pueda ser creada a partir de otra ya existente </pre>
-      <pre *ngSwitchCase="'herencia'">- Todo comportamiento heredado puedo ser sobrescrito por cualquiera de los hijos, dando lugar al polimorfismo </pre>
-      <pre *ngSwitchCase="'herencia'">- Es usada para la reutilización de codigo, definir jerarquias, y obtener comportamientos especializados </pre>
-      <pre *ngSwitchCase="'herencia'">- Puede ser de diferentes tipos: </pre>
-      <pre *ngSwitchCase="'herencia'"> - Simple -> cada hijo SOLO puede heredar de una clase padre </pre>
-      <pre *ngSwitchCase="'herencia'"> - Multiple -> las clases pueden heredar a partir de una o más clases, esto puede traer problemas si hay atributos o metodos con nombres iguales </pre>
-      <pre *ngSwitchCase="'herencia'"> - Implementación -> los metodos pueden ser sobreescritos, y usarse tal cual vengan del padre o modificarlos para cambiar el comportamiento </pre>
-      <pre *ngSwitchCase="'herencia'"> - Interfaz -> los metodos son heredados, pero su implementación no, esta es propia de cada hijo </pre>
-
-      <pre *ngSwitchCase="'composicion'">- En los diagramas UML se suele representar por medio de un diamante con o sin relleno, ubicado en la clase contenedora </pre>
-      <pre *ngSwitchCase="'composicion'"></pre>
-      <pre *ngSwitchCase="'composicion'"> - Agregación -> Indica que una clase es parte de otra, y que los componentes pueden ser compartidos por otros </pre>
-      <pre *ngSwitchCase="'composicion'">  - La destrucción del compuesto no necesariamente indica la destrucción de todos los formantes </pre>
-      <pre *ngSwitchCase="'composicion'">  - Se suele representar mediante un diamante sin relleno en UML</pre>
-      <pre *ngSwitchCase="'composicion'">  - Cualquier Empresa Tiene 0..* Clientes, los clientes y la empresa pueden vivir independientemente el uno del otro </pre>
-      <pre *ngSwitchCase="'composicion'"></pre>
-      <pre *ngSwitchCase="'composicion'"> - Composición -> La clase contenida y el contenedor deben tener los mismmos ciclos de vida </pre>
-      <pre *ngSwitchCase="'composicion'">  - Los objetos contenidos son solamente del objeto contenedor, si este se destruye, todos sus componentes tambien </pre>
-      <pre *ngSwitchCase="'composicion'">  - Su representación en UML se da mediante un diamante con relleno </pre>
-      <pre *ngSwitchCase="'composicion'">  - Una Empresa tiene 1..* Empleados, si NO existe una empresa, NO pueden existir sus empleados </pre>
-      <pre *ngSwitchCase="'composicion'"></pre>
-      <pre *ngSwitchCase="'composicion'">- En cuestion de codigo ambas relaciones no se diferencian entre si (en la mayoria de lenguajes) </pre>
-      <pre *ngSwitchCase="'composicion'">- La principal diferencia es a nivel conceptual, donde esta si puede ayudar a entender mejor el problema y su modelado </pre>
-  
-      <pre *ngSwitchCase="'pooStatic'">- Metodos o atributos que pertenecen a la clase y no a un objeto como tal</pre>
-      <pre *ngSwitchCase="'pooStatic'">- Son accesibles de manera global, por lo que hay que tener cuidado con su uso </pre>
-      <pre *ngSwitchCase="'pooStatic'">- No necesitan ser instanciados para ser usados</pre>
-  
-      <pre *ngSwitchCase="'sobrecarga'">- Algunos lenguajes permite sobrecargar los metodos y constructores</pre>
-      <pre *ngSwitchCase="'sobrecarga'">- El nombre sera el mismo pero pueden recibir diferente numero de parametros o de tipos</pre>
-      <pre *ngSwitchCase="'sobrecarga'">- Deben tener diferencias entre si, de lo contrario el compilador interno se da cuenta de esto y sacara error </pre>  
-
-      <pre *ngSwitchCase="'acoplamiento'">- Aferente -> hace referencia a una clase con un alto grado de responsabilidad y una jerarquia bastante alta</pre>
-      <pre *ngSwitchCase="'acoplamiento'"> - Esto es indicativo de la herencia, por lo que es pertinente modificarla con cuidado debido a posibles efectos colaterales </pre>
-      <pre *ngSwitchCase="'acoplamiento'"> - Este tipo de clases solo usa atributos y metodos principalmente de las clases padre ó propios y poco o nada de entidades externas </pre>
-      <pre *ngSwitchCase="'acoplamiento'"></pre>
-      <pre *ngSwitchCase="'acoplamiento'">- Eferente -> es un paquete o clase con un alto grado de dependencia, esto condiciona el comportamiento de la clase </pre>
-      <pre *ngSwitchCase="'acoplamiento'"> - siendo casi totalmente dependiente de las entidades externas, por lo que es más suceptible a efecto colaterales por cambios en estas </pre>
-      <pre *ngSwitchCase="'acoplamiento'"></pre>
-      <pre *ngSwitchCase="'acoplamiento'">- Idealmente se debe evitar el acoplamiento Eferente y buscar el Aferente, ya que este conlleva una mejor estabilidad y mantenimiento </pre>
-
-      <pre *ngSwitchCase="'contratos'">- Mejora la compresión de POO al mejorar la especificación de los elementos </pre>
-      <pre *ngSwitchCase="'contratos'">- Tambien puede servir como documentación, al mismo tiempo que se programa </pre>
-      <pre *ngSwitchCase="'contratos'">- Uso eficaz de la herencia y la reutilización </pre>
-      <pre *ngSwitchCase="'contratos'">- Las Responsabilidades estan previamente definidas y estas no se deben romper </pre>
-      <pre *ngSwitchCase="'contratos'">- Se manejan los conceptos de precondiciones y postcondiciones con mayor importancia </pre>
-      <pre *ngSwitchCase="'contratos'">- Ademas de incluir el concepto de inmutabilidad, al entrar como al salir </pre>
-
-      <pre *ngSwitchCase="'descomposicion'">- La descomposición funcional Se refiere al proceso de resolución de las funciones de las partes consituyentes, </pre>
-      <pre *ngSwitchCase="'descomposicion'"> - de tal manera que la función original se pueda reconstruir </pre>
-      <pre *ngSwitchCase="'descomposicion'">- Este proceso se lleva a cabo con la idea de desmenuzar la realidad en sus partes constitutivas más elementales </pre>
-      <pre *ngSwitchCase="'descomposicion'"> - esto ayuda a la modularización del diseño, y a la definición de responsabilidades unicas </pre>
-      <pre *ngSwitchCase="'descomposicion'">- Se debe realizar de manera responsable y bien planeada, ya que su abuso puede resultar en un antipatron, </pre>
-      <pre *ngSwitchCase="'descomposicion'"> - donde el costo de integración entre elementos es demasiado elevado, no es partir porque si, es hacerlo donde se debe </pre>
-
-      <pre *ngSwitchCase="'polimorfismo'">- El polimorfismo es la capacidad de adoptar diferentes comportamientos dependiendo de si se es un hijo o un padre </pre>
-      <pre *ngSwitchCase="'polimorfismo'">- Es una relajación de los tipos en lenguajes tipados y uno de los efectos de la herencia como especialización </pre>
-
-      <pre *ngSwitchCase="'herVScomp'">        Caso             Diseño basado en herencia                            Diseño basado en composición               </pre>
-      <pre *ngSwitchCase="'herVScomp'">- Inicio del desarrollo       Más rapido                                           Más lento                             </pre>
-      <pre *ngSwitchCase="'herVScomp'">- Diseño del software         Facil pero pobre                                     Más complejo                          </pre>
-      <pre *ngSwitchCase="'herVScomp'">- Efectos no deseados         Propicia                                             Reducidos                             </pre>
-      <pre *ngSwitchCase="'herVScomp'">- Adaptabilidad               Más niveles más complejidad                          Facil de cambiar (instancias)         </pre>
-      <pre *ngSwitchCase="'herVScomp'">- Testing                     Entre más sobre escritura más dificil de cambiar     Piezas acotadas y fronteras claras    </pre>
-      <pre *ngSwitchCase="'herVScomp'">- Extension                   Debe hacerse con cuidado de no extender "basura"     Facil incorporación de piezas nuevas  </pre>
-      <pre *ngSwitchCase="'herVScomp'">- Polimorfismo                No es necesario ningun mecanismo extra               Se puede lograr mediante interfaces   </pre>
-
-      <pre *ngSwitchCase="'enlaces'">- La asociación entre la definición de los metodos y variables, se suele dar de 2 maneras, durante tiempo de ejecución y de compilación </pre>
-      <pre *ngSwitchCase="'enlaces'">- Todo lo se pueda conocer en tiempo de compilación, y que es necesario para que el programa se pueda ejecutar se conoce como enlace estatico </pre>
-      <pre *ngSwitchCase="'enlaces'">- Las cosas de las cuales es necesario ejecutar el programa para conocer su valor y su comportamiento, se conoce como enlace dinamico </pre>
-
-    </div>
-    
   </div>
+
+  <app-referencia class="flexbox terminal" [referencia]="referencia" [titulo]="titulo"></app-referencia>
+
+  <div class="terminal" [ngSwitch]="selection" #terminal>
+
+    <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
+
+    <span *ngFor="let item of items">
+      <span *ngSwitchCase="item.key">
+        <pre *ngFor="let content of item.content">{{content}}</pre>
+      </span>
+    </span>
+
+  </div>
+
+</div>

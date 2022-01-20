@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { POO } from 'src/app/models/content';
 import { LinkReferencia } from 'src/app/models/linkReferencia';
 
 @Component({
@@ -7,8 +8,6 @@ import { LinkReferencia } from 'src/app/models/linkReferencia';
 })
 export class PooComponent extends LinkReferencia {
 
-  constructor() {
-    super();
-  }
+  items = POO;
 
 }
