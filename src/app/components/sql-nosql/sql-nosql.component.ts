@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BASES_DE_DATOS } from 'src/app/models/content';
 import { LinkReferencia } from 'src/app/models/linkReferencia';
 
 @Component({
@@ -7,8 +8,6 @@ import { LinkReferencia } from 'src/app/models/linkReferencia';
 })
 export class SqlNosqlComponent extends LinkReferencia {
 
-  constructor() {
-    super();
-  }
+  items = BASES_DE_DATOS;
 
 }
