@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PRUEBAS_AVANZADAS } from 'src/app/models/content';
 import { LinkReferencia } from 'src/app/models/linkReferencia';
 
 @Component({
@@ -7,8 +8,6 @@ import { LinkReferencia } from 'src/app/models/linkReferencia';
 })
 export class PruebasAvanzadasComponent extends LinkReferencia {
 
-  constructor() {
-    super();
-  }
+  items = PRUEBAS_AVANZADAS;
 
 }
