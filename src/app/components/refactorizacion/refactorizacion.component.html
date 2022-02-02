@@ -7,7 +7,7 @@
     <app-button [tittleButton]="'Codigó limpio'" (click)="getLinkAndTittleByKey('codigolimpio')"></app-button>
 
     <app-button [tittleButton]="'Deuda tecnica'" (click)="getLinkAndTittleByKey('deudatecnica')"></app-button>
-    
+
     <app-button [tittleButton]="'Tipos de deuda'" (click)="getLinkAndTittleByKey('tiposDeudaTecnica')"></app-button>
 
     <app-button [tittleButton]="'Comentar la deuda'" (click)="getLinkAndTittleByKey('comentarios')"></app-button>
@@ -26,82 +26,11 @@
 
     <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
 
-    <pre *ngSwitchCase="'codigolimpio'">- Menos es Más, el poder de la simplicidad hecho codigo</pre>
-    <pre *ngSwitchCase="'codigolimpio'">- Es más facil de entender para otros, y a traves del tiempo </pre>
-    <pre *ngSwitchCase="'codigolimpio'">- Es más facil de mantener a lo largo del tiempo </pre>
-    <pre *ngSwitchCase="'codigolimpio'">- El codigo duplicado se reduce considerablamente </pre>
-    <pre *ngSwitchCase="'codigolimpio'">- Los tests son satisfactorios de manera regular </pre>
-
-    <pre *ngSwitchCase="'deudatecnica'">- Todo desarrollador desea crear un buen codigo pero las omisiones o errores crecen sigilosamente </pre>
-    <pre *ngSwitchCase="'deudatecnica'">- La mala modularización del codigo puede hacer que los cambios tengan un gran impacto</pre>
-    <pre *ngSwitchCase="'deudatecnica'">- Apurar el desarrollo puede crear soluciones rapidas pero incompletas</pre>
-    <pre *ngSwitchCase="'deudatecnica'">- La falta de pruebas puede tener efectos colaterales inmesamente destructivos</pre>
-    <pre *ngSwitchCase="'deudatecnica'">- La Documentación siempre sera necesaria, y omitirla entorpecera futuros cambios</pre>
-    <pre *ngSwitchCase="'deudatecnica'">- Sin comunicación o interacciones incompletas pueden generar pequeñas islas dentro de la empresa </pre>
-    <pre *ngSwitchCase="'deudatecnica'">- Tambien existe el elemento humano cuando el desarrollador es inexperto o incompetente</pre>
-
-    <pre *ngSwitchCase="'tiposDeudaTecnica'">- No realizar los cambios necesarios con premura hara que en el futuro sea más dificil y costoso refactorizar </pre>
-    <pre *ngSwitchCase="'tiposDeudaTecnica'"></pre>
-    <pre *ngSwitchCase="'tiposDeudaTecnica'">                            Deuda imprudente                       Deuda prudente          </pre>
-    <pre *ngSwitchCase="'tiposDeudaTecnica'"></pre>
-    <pre *ngSwitchCase="'tiposDeudaTecnica'">                       -Falta de tiempo/presupuesto          -Prioridad de funcionalidades </pre>
-    <pre *ngSwitchCase="'tiposDeudaTecnica'">Deuda deliberada       -Refactor descuidado                   con la promesa de mejora     </pre>
-    <pre *ngSwitchCase="'tiposDeudaTecnica'">                       -Insuficiencia de pruebas             -Minimo de pruebas a hacer    </pre>
-    <pre *ngSwitchCase="'tiposDeudaTecnica'"></pre>
-    <pre *ngSwitchCase="'tiposDeudaTecnica'">                       -Falta de conocimiento                -El refactor constante evita  </pre>
-    <pre *ngSwitchCase="'tiposDeudaTecnica'">Deuda involuntaria     -Sobreingenieria                       estos problemas, mientras se </pre>
-    <pre *ngSwitchCase="'tiposDeudaTecnica'">                       -Anti patrones de diseño               aprende de los errores       </pre>
-
-    <pre *ngSwitchCase="'comentarios'">- Comentar el codigo es sumamente util para determinar los segementos que necesitan correciones </pre>
-    <pre *ngSwitchCase="'comentarios'">- La mayoria de IDEs admiten comentarios con etiquetas como:  </pre>
-    <pre *ngSwitchCase="'comentarios'"> - TODO -> lugares que se pueden mejorar, ya sea legilibilidad, complejidad, etc.. </pre>
-    <pre *ngSwitchCase="'comentarios'"> - FIXME -> porción de codigo que falla en circuntancias especificas y debe ser revisada </pre>
-    <pre *ngSwitchCase="'comentarios'"> - NOTE -> funcionamiento interno ó posibles problemas no documentadas </pre>
-    <pre *ngSwitchCase="'comentarios'"> - KLUDGE -> codigo ineficiente, complejo ó insondable </pre>
-
-    <pre *ngSwitchCase="'cuandorefactorizar'">- Cuando se inicia a duplicar codigo, eventualmente sera necesario refactorizarlo</pre>
-    <pre *ngSwitchCase="'cuandorefactorizar'">- Cuando se empieza se arregla un error es una excelente oportunidad para hacerlo</pre>
-    <pre *ngSwitchCase="'cuandorefactorizar'">- Cuando se hagan revisiones, siempre hay espacio para la mejora</pre>
-    <pre *ngSwitchCase="'cuandorefactorizar'">- Cuando se agregan nuevas funciones, tambien se pueden refactorizar las existentes </pre>
-
-    <pre *ngSwitchCase="'comorefactorizar'">- El resultado debe ser mejor que lo anterior, de lo contrario sera tiempo perdido </pre>
-    <pre *ngSwitchCase="'comorefactorizar'">- No se deben crear nuevas funciones, eso es estrictamente en tiempo de desarrollo </pre>
-    <pre *ngSwitchCase="'comorefactorizar'">- Los tests deben seguir pasando tal y como antes de empezar</pre>
-
-    <pre *ngSwitchCase="'tecnicasRefactoring'">- Composicion de metodos -> Se base en descomponer metodos grandes en, </pre>
-    <pre *ngSwitchCase="'tecnicasRefactoring'"> - metodos más pequeños y manejables evitando metodos innecesariamente largos y complejos </pre>
-    <pre *ngSwitchCase="'tecnicasRefactoring'"> - PROS -> los metodos se hacen más entendibles y se eliminan variables de poca utilidad</pre>
-    <pre *ngSwitchCase="'tecnicasRefactoring'"> - CONTRAS -> la complejidad cognitiva puede ser mayor de la inicial, </pre>
-    <pre *ngSwitchCase="'tecnicasRefactoring'">   además de pequeñas afectaciones al rendimiento </pre>
-    <pre *ngSwitchCase="'tecnicasRefactoring'"></pre>
-    <pre *ngSwitchCase="'tecnicasRefactoring'">- Mover funciones entre clases -> Aunque un sistema se encuentre bien diseñado, </pre>
-    <pre *ngSwitchCase="'tecnicasRefactoring'"> - habra clases con más responsabilidades que otras, </pre>
-    <pre *ngSwitchCase="'tecnicasRefactoring'"> - con la posibilidad de que estas no les correspondan </pre>
-    <pre *ngSwitchCase="'tecnicasRefactoring'"> - PROS -> se hace un mejor reparto de las responsabilidades </pre>
-    <pre *ngSwitchCase="'tecnicasRefactoring'"> - CONTRAS -> si se abusan de estos se pueden convertir en code smells </pre>
-    <pre *ngSwitchCase="'tecnicasRefactoring'"></pre>   
-    <pre *ngSwitchCase="'tecnicasRefactoring'">- Organización de los datos -> Esto ayuda a pensar en clases y funciones, </pre>
-    <pre *ngSwitchCase="'tecnicasRefactoring'">  - en vez de operaciones con datos primitivos </pre>
-    <pre *ngSwitchCase="'tecnicasRefactoring'"> - Mejora la encapsulacion y el manejo de los datos </pre>
-    <pre *ngSwitchCase="'tecnicasRefactoring'"> - PROS -> permite aprovechar mejor los conceptos de POO </pre>
-    <pre *ngSwitchCase="'tecnicasRefactoring'"> - CONTRAS -> la complejidad del codigo puede crecer </pre>
-    <pre *ngSwitchCase="'tecnicasRefactoring'"></pre>
-    <pre *ngSwitchCase="'tecnicasRefactoring'">- Simplificación de condiciones -> las condiciones siempre tienden a crecer, </pre>
-    <pre *ngSwitchCase="'tecnicasRefactoring'">  - por lo que siempre se deben revisar y evitar bolas de nieve </pre>
-    <pre *ngSwitchCase="'tecnicasRefactoring'"> - Se reduce la complejidad cognitiva resultando en un codigo más entendible </pre>
-    <pre *ngSwitchCase="'tecnicasRefactoring'"> - PROS -> se reduce la complejidad y se aumenta la mantenibilidad </pre>
-    <pre *ngSwitchCase="'tecnicasRefactoring'"> - CONTRAS -> en ciertos casos se debe implementar más codigo </pre>
-    <pre *ngSwitchCase="'tecnicasRefactoring'"></pre>
-    <pre *ngSwitchCase="'tecnicasRefactoring'">- Simplificación de metodos -> los metodos deben ser dicientes en cuanto a lo que hacen </pre>
-    <pre *ngSwitchCase="'tecnicasRefactoring'"> - Mejora el manejo de las excepciones, en vez de que se usen como condiciones del flujo </pre>
-    <pre *ngSwitchCase="'tecnicasRefactoring'"> - PROS -> un metodo diciente es más facil de comprender </pre>
-    <pre *ngSwitchCase="'tecnicasRefactoring'"> - CONTRAS -> los metodos se pueden volver más largos o hacer más llamados </pre>
-    <pre *ngSwitchCase="'tecnicasRefactoring'"></pre>
-    <pre *ngSwitchCase="'tecnicasRefactoring'">- Lidiar con la generalización -> Abstraer las generalidades del codigo, </pre>
-    <pre *ngSwitchCase="'tecnicasRefactoring'">  - como creacion de interfaces, cambios de jerarquias, remover o modificar la herencia </pre>
-    <pre *ngSwitchCase="'tecnicasRefactoring'"> - Se mejora la defición de atributos y comportamientos al tratar con la herencia </pre>
-    <pre *ngSwitchCase="'tecnicasRefactoring'"> - PROS -> se mejora el diseño de las clases y se disminuye el acoplamiento </pre>
-    <pre *ngSwitchCase="'tecnicasRefactoring'"> - CONTRAS -> se debe realizar un analisis más profundo del porque y su solución </pre>
+    <span *ngFor="let item of items">
+      <span *ngSwitchCase="item.key">
+        <pre *ngFor="let content of item.content">{{content}}</pre>
+      </span>
+    </span>
 
   </div>
 
