@@ -31,65 +31,12 @@
   <div class="terminal" [ngSwitch]="selection" #terminal>
 
     <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
-  
-    <pre *ngSwitchCase="'uml'">- Desarrollado para ayudar a todos los involucrados en el desarrollo y modelado de un sistema </pre>
-    <pre *ngSwitchCase="'uml'">- Pueden servir como planos para la codificación ó como documentación despues de la etapa de desarrollo </pre>
-    <pre *ngSwitchCase="'uml'">- El nivel de detalle que puede llegar a ser superficial ó increiblemente complejo </pre>
-    <pre *ngSwitchCase="'uml'">- Es un lenguaje independiente de la plataforma de desarrollo, por lo cual depende de la capacidad de abstracción </pre>
 
-    <pre *ngSwitchCase="'clase'"> - Esta orientado al modelo y se basa especialmente en la programación orientada a objetos </pre>
-    <pre *ngSwitchCase="'clase'"> - Representan las interacciones y las clases que conforman el sistema </pre>
-    <pre *ngSwitchCase="'clase'"> - Se pueden diagramar los modificadores de acceso, la multiplicidad, los atributos, relaciones, etc.. </pre>
-
-    <pre *ngSwitchCase="'componentes'"> - Pueden representar la agrupación de modulos que componen cualquier función de la aplicación </pre>
-    <pre *ngSwitchCase="'componentes'"> - Se centra en la relación entre las partes a alto nivel, más que en los detalles de la implementación </pre>
-    <pre *ngSwitchCase="'componentes'"> - Tambien se puede mezclar con el diagrama de paquetes </pre>
-    <pre *ngSwitchCase="'componentes'"> - Las interfaces muestran como componentes separados se comunican entre si, por medio de un protocolo en comun </pre>
-    <pre *ngSwitchCase="'componentes'"> - Cuando un componente necesita de otro, se considera que hay una relación de dependencia </pre>
-
-    <pre *ngSwitchCase="'despliegue'"> - Permite identificar los nodos que usara el sistema una vez sea funcional, externos e internos </pre>
-    <pre *ngSwitchCase="'despliegue'"> - Expone de manera clara la arquitectura fisica de la red, dando una idea global del sistema </pre>
-    <pre *ngSwitchCase="'despliegue'"> - Las interfaces cobran especial relevancia en este, ya que indican como se comunican los componentes </pre>
-
-    <pre *ngSwitchCase="'secuencia'"> - Representa el intercambio de mensajes entre los diferentes componentes del sistema para lograr una funcionalidad </pre>
-    <pre *ngSwitchCase="'secuencia'"> - El tiempo es importante ya que un mensaje debe terminar para que otro empieze (generalmente) </pre>
-    <pre *ngSwitchCase="'secuencia'"> - Los objetos que interactuan puede ser simple clases, hasta modulos y sistemas completos </pre>
-
-    <pre *ngSwitchCase="'actividades'"> - Representa el flujo de control que se puede llegar a dar, con enfasis en la secuencia y las condiciones del flujo </pre>
-    <pre *ngSwitchCase="'actividades'"> - Por lo general tienen un punto inicial y final </pre>
-    <pre *ngSwitchCase="'actividades'"> - Modelan un flujo de trabajo sin dar mucho enfasis a la peculiaridad de cada subsistema </pre>
-    <pre *ngSwitchCase="'actividades'"> - Estos diagrama se pueden encandenar entre si para crear secuencias más complejas </pre>
-
-    <pre *ngSwitchCase="'paquetes'"> - Representa la estructura basica de los componentes del sistema </pre>
-    <pre *ngSwitchCase="'paquetes'"> - Paquete -> conjunto de elementos concretos que contienen una función especifica </pre>
-    <pre *ngSwitchCase="'paquetes'"> - Pueden representar la dependencia de paquetes entre si </pre>
-
-    <pre *ngSwitchCase="'estados'"> - Representa el fluir de una situación a otra del sistema </pre>
-    <pre *ngSwitchCase="'estados'"> - Pueden tener condiciones externas, o simplemente ser inherente al sistema </pre>
-    <pre *ngSwitchCase="'estados'"> - Se conforma por el estado inicial, los estados del sistema, los estados finales (uno ó varios) </pre>
-    <pre *ngSwitchCase="'estados'">  - y las transiciones de un estado a otro </pre>
-
-    <pre *ngSwitchCase="'usos'"> - Representan los requisitos funcionales de manera grafica </pre>
-    <pre *ngSwitchCase="'usos'"> - Especifica que actores y como pueden involucrarse con el sistema </pre>
-    <pre *ngSwitchCase="'usos'"> - Pueden ser un punto de partida para desarrollar los sistemas, aunque demasiada complejidad es contraproducente </pre>
-    <pre *ngSwitchCase="'usos'"> - La comunicación entre el cliente y el desarrollador puede ser más eficiente, más no es garantia de esto </pre>
-
-    <pre *ngSwitchCase="'vista'">- Modelo diseñado para describir la arquitecturas de de los sistemas basados en distintas vistas concurrentes </pre>
-    <pre *ngSwitchCase="'vista'"></pre>
-    <pre *ngSwitchCase="'vista'">  - Vista Logica -> describe la estructura y la funcionalidad del sistema  </pre>
-    <pre *ngSwitchCase="'vista'">  - Vista Logica -> se pueden usar diagramas de clase, comunicacion, secuencia  </pre>
-    <pre *ngSwitchCase="'vista'"></pre>
-    <pre *ngSwitchCase="'vista'">  - Vista Desarrollo -> esta enfocada a la administración del software y sus componentes, generalmente desde la perspectiva del desarrollador </pre>
-    <pre *ngSwitchCase="'vista'">  - Vista Desarrollo -> se pueden usar diagramas de componentes, paquetes </pre>
-    <pre *ngSwitchCase="'vista'"></pre>
-    <pre *ngSwitchCase="'vista'">  - Vista Proceso -> trata los aspectos dinamicos del sistema, como se comunican los componentes entre si y su comportamiento ya en ejecución </pre>
-    <pre *ngSwitchCase="'vista'">  - Vista Proceso -> se puede usar el diagrama de actividad </pre>
-    <pre *ngSwitchCase="'vista'"></pre>
-    <pre *ngSwitchCase="'vista'">  - Vista Fisica -> trata los aspectos que son tangibles del sistema, como la infraestructura, las redes, y como estan desplegadas en la realidad </pre>
-    <pre *ngSwitchCase="'vista'">  - Vista Fisica -> se puede usar el diagrama de despliegue </pre>
-    <pre *ngSwitchCase="'vista'"></pre>
-    <pre *ngSwitchCase="'vista'">  - Escenarios -> estos describen la secuencia de interacciones entre objetos y procesos </pre>
-    <pre *ngSwitchCase="'vista'">  - Escenarios -> generalmente son los casos de uso, aun se usan pero han perdido relevancia frente al agilismo y las HU </pre>
+    <span *ngFor="let item of items">
+      <span *ngSwitchCase="item.key">
+        <pre *ngFor="let content of item.content">{{content}}</pre>
+      </span>
+    </span>
 
   </div>
 

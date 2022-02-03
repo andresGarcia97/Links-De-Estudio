@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SMELLS_CODES } from 'src/app/models/content';
 import { LinkReferencia } from 'src/app/models/linkReferencia';
 
 @Component({
@@ -7,8 +8,6 @@ import { LinkReferencia } from 'src/app/models/linkReferencia';
 })
 export class SmellsCodesComponent extends LinkReferencia {
 
-  constructor() {
-    super();
-  }
+  items = SMELLS_CODES;
 
 }

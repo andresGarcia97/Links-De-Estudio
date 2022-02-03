@@ -1,97 +1,33 @@
 <div class="content">
 
-    <h2>Smell Codes (malos olores) </h2>
-  
-    <div class="card-container">
+  <h2>Smell Codes (malos olores) </h2>
 
-      <app-button [tittleButton]="'Smell Codes'" (click)="getLinkAndTittleByKey('codesmells')"></app-button>
+  <div class="card-container">
 
-      <app-button [tittleButton]="'Tipos'" (click)="getLinkAndTittleByKey('tiposSmellCodes')"></app-button>
+    <app-button [tittleButton]="'Smell Codes'" (click)="getLinkAndTittleByKey('codesmells')"></app-button>
 
-      <app-button [tittleButton]="'Desglose'" (click)="getLinkAndTittleByKey('desglose')"></app-button>
+    <app-button [tittleButton]="'Tipos'" (click)="getLinkAndTittleByKey('tiposSmellCodes')"></app-button>
 
-      <app-button [tittleButton]="'Casos especiales'" (click)="getLinkAndTittleByKey('casos')"></app-button>
+    <app-button [tittleButton]="'Desglose'" (click)="getLinkAndTittleByKey('desglose')"></app-button>
 
-      <app-button [tittleButton]="'Ganancias'" (click)="getLinkAndTittleByKey('payoff')"></app-button>
-  
-    </div>
-  
-    <app-referencia class="flexbox terminal" [referencia]="referencia" [titulo]="titulo"></app-referencia>
+    <app-button [tittleButton]="'Casos especiales'" (click)="getLinkAndTittleByKey('casos')"></app-button>
 
-    <div class="terminal" [ngSwitch]="selection" #terminal>
-      
-      <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
-    
-      <pre *ngSwitchCase="'codesmells'">- Son cosas en el codigo que se pueden hacer de una mejor manera, o que a la larga se convertiran en malas practicas </pre>
-      <pre *ngSwitchCase="'codesmells'">- Aunque no son un problema prioritario, estos haran crecer la deuda tecnica e inclusive podran crear fallos en el futuro </pre>
-      <pre *ngSwitchCase="'codesmells'">- Que el codigo funcione no significa que sea tecnicamente correcto </pre>
-      <pre *ngSwitchCase="'codesmells'">- No todos los smells codes son malos, hay casos donde se pueden ignorar debido al efecto cobra </pre>
+    <app-button [tittleButton]="'Ganancias'" (click)="getLinkAndTittleByKey('payoff')"></app-button>
 
-      <pre *ngSwitchCase="'tiposSmellCodes'">- Bloaters -> metodos y clases que han incrementado su tamaño a proporciones gigantezcas </pre>
-      <pre *ngSwitchCase="'tiposSmellCodes'"> - estos se suelen dar por descuidos y más cuando nadie se ocupa de esto hasta que son un problema </pre>
-      <pre *ngSwitchCase="'tiposSmellCodes'"></pre>
-      <pre *ngSwitchCase="'tiposSmellCodes'">- Object-Orientation Abusers -> este se da cuando los principios de POO son mal aplicados ó se cumplen a medias </pre>
-      <pre *ngSwitchCase="'tiposSmellCodes'"></pre>
-      <pre *ngSwitchCase="'tiposSmellCodes'">- Changue Preventers -> sucede cuando se realiza un cambio y este requiere más modificaciones de las pensadas </pre>
-      <pre *ngSwitchCase="'tiposSmellCodes'"> - resultando más complejo y costoso de lo necesario </pre>
-      <pre *ngSwitchCase="'tiposSmellCodes'"></pre>
-      <pre *ngSwitchCase="'tiposSmellCodes'">- Dispensables -> se puede considerar cualquier cosa que no sea necesaria, y que pueda ser cambiada o removida </pre>
-      <pre *ngSwitchCase="'tiposSmellCodes'"> - haciendo un codigo más limpio y facil de entender </pre>
-      <pre *ngSwitchCase="'tiposSmellCodes'"></pre>
-      <pre *ngSwitchCase="'tiposSmellCodes'">- Couplers -> surgen de un acoplamiento excesivo entre los componentes, o en su defecto por una delegación excesiva </pre>
-
-      <pre *ngSwitchCase="'desglose'">- Bloaters </pre>
-      <pre *ngSwitchCase="'desglose'"> - Long Method -> es aquel metodo que contiene demasiadas lineas, tantas que es dificil seguir el proceso que realiza </pre>
-      <pre *ngSwitchCase="'desglose'"> - Large Class -> aquella clase que contiene demasiados metodos, atributos ó lineas de codigo </pre>
-      <pre *ngSwitchCase="'desglose'"> - Primitive Obsession -> se da cuando todos los datos se quieren manejar con tipos primitivos, en vez de clases especializadas </pre>
-      <pre *ngSwitchCase="'desglose'"> - Long Parameter List -> sucede cuando un metodo recibe demasiados parametros, generalmente empieza con más de 4 </pre>
-      <pre *ngSwitchCase="'desglose'"> - Data Clumps -> pasa cuando diferentes parte del codigo tienen grupos identicos de variables, que se pueden agrupar en una sola clase </pre>
-      <pre *ngSwitchCase="'desglose'"></pre>
-      <pre *ngSwitchCase="'desglose'">- Object-Orientation Abusers </pre>
-      <pre *ngSwitchCase="'desglose'"> - Switch Statements -> sucede cuando se tiene un switch o una secuencia de if demasiado grandes, en vez de usar polimorfismo </pre>
-      <pre *ngSwitchCase="'desglose'"> - Temporary Field -> son valores que son usados en circunstancias especificas, y de resto son instancias vacias </pre>
-      <pre *ngSwitchCase="'desglose'"> - Refused Bequest -> sucede cuando la herencia se aplica mal y las clases hijas heredan metodos o atributos que no van a usar </pre>
-      <pre *ngSwitchCase="'desglose'"> - Alternative classes -> clases con funciones identicas, pero metodos diferentes </pre>
-      <pre *ngSwitchCase="'desglose'"></pre>
-      <pre *ngSwitchCase="'desglose'">- Changue preventers </pre>
-      <pre *ngSwitchCase="'desglose'"> - Divergent Change -> sucede cuando una clase requiere demasiados cambios, sean grandes o pequeños </pre>
-      <pre *ngSwitchCase="'desglose'"> - Shotgun Surgery -> surge cuando una modificacón requiere hacer muchos cambios individuales, en diferentes lugares </pre>
-      <pre *ngSwitchCase="'desglose'"> - Parallel Inheritance Hierarchies -> siempre que se necesite una subclase cuando se cree una clase, y se aplique para otras clases </pre>
-      <pre *ngSwitchCase="'desglose'"></pre>
-      <pre *ngSwitchCase="'desglose'">- Dispensables </pre>
-      <pre *ngSwitchCase="'desglose'"> - Comments -> los comentarios surgen de metodos y clases mal nombrados o con complejidad arbitraria </pre>
-      <pre *ngSwitchCase="'desglose'"> - Duplicate Code -> fragmentos de codigo que son casi identicos y no estan centralizados </pre>
-      <pre *ngSwitchCase="'desglose'"> - Lazy Class -> es el costo de mantener clases que no tienen utilidad, solo porque pueden o tuvieron utilidad </pre>
-      <pre *ngSwitchCase="'desglose'"> - Data Class -> clases que solo contienen metodos para acceder a las propiedades, sin algun otro comportamiento util </pre>
-      <pre *ngSwitchCase="'desglose'"> - Dead Code -> cualquier cosa que no se usa más, generalmente se vuelven obsoletos </pre>
-      <pre *ngSwitchCase="'desglose'"> - Speculative Generality -> es codigo realizado para soportar futuras funcionalidades, que no tiene uso actual alguno </pre>
-      <pre *ngSwitchCase="'desglose'"></pre>
-      <pre *ngSwitchCase="'desglose'">- Couplers </pre>
-      <pre *ngSwitchCase="'desglose'"> - Feature Envy -> metodos y clases que usan los atributos y propiedades de otros, más que los propios </pre>
-      <pre *ngSwitchCase="'desglose'"> - Intimidad inapropiada -> clases que usan atributos y metodos que no son propios como si lo fueran </pre>
-      <pre *ngSwitchCase="'desglose'"> - Message Chains -> sucede cuando el codigo tiene una gran pila de llamados </pre>
-      <pre *ngSwitchCase="'desglose'"> - Middle Man -> la delegación de responsabilidades es importante, más no debe ser la unica responsabilidad de una clase </pre>
-
-      <pre *ngSwitchCase="'casos'">- Algunos Smells codes se pueden ignorar, debido a que su solución conlleva a problemas peores, o simplemente es demasiado esfuerzo </pre>
-      <pre *ngSwitchCase="'casos'"> - Si el rendimiento es esencial para la aplicación, algunas soluciones pueden aumentar el tiempo de ejecución y empeorarlo </pre>
-      <pre *ngSwitchCase="'casos'"> - Si la solución conlleva a un acoplamiento indeseado entre varias clases </pre>
-      <pre *ngSwitchCase="'casos'"> - Cuando el smells code tiene un alcanze muy pequeño y su cambio puede afectar el comportamiento general del sistema </pre>
-      <pre *ngSwitchCase="'casos'"> - Hace parte de la implementación de un patron </pre>
-      <pre *ngSwitchCase="'casos'"> - Puede incluir mayor complejidad de la que habia anteriormente </pre>
-      <pre *ngSwitchCase="'casos'"> - Cuando hay motivos validos e importantes para mantenerlos </pre>
-      <pre *ngSwitchCase="'casos'"> - Si el desarrollo va a ser corto plazo y se delinio una linea a seguir </pre>
-      <pre *ngSwitchCase="'casos'"> - El uso de ciertos frameworks puede traer condiciones de uso </pre>
-      <pre *ngSwitchCase="'casos'"> - Cuando la solución de un smell code crea otro </pre>
-
-      <pre *ngSwitchCase="'payoff'">- Generalmente la solución de estos problemas siempre tiene consecuencias positivas sobre la calidad del software </pre>
-      <pre *ngSwitchCase="'payoff'"> - Simplifica clases y mejora la asignación de responsabilidades </pre>
-      <pre *ngSwitchCase="'payoff'"> - El codigo suele ser más flexible y facil de modificar </pre>
-      <pre *ngSwitchCase="'payoff'"> - La duplicación de codigo se reduce, mejorando la mantenibilidad </pre>
-      <pre *ngSwitchCase="'payoff'"> - La legibilidad aumenta, haciendo que futuros cambios sean más rapidos </pre>
-      <pre *ngSwitchCase="'payoff'"> - Mejora la organización y la abstracción </pre>
-      <pre *ngSwitchCase="'payoff'"> - Reduce el tamaño del codigo </pre>
-
-    </div>
-    
   </div>
-  
+
+  <app-referencia class="flexbox terminal" [referencia]="referencia" [titulo]="titulo"></app-referencia>
+
+  <div class="terminal" [ngSwitch]="selection" #terminal>
+
+    <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
+
+    <span *ngFor="let item of items">
+      <span *ngSwitchCase="item.key">
+        <pre *ngFor="let content of item.content">{{content}}</pre>
+      </span>
+    </span>
+
+  </div>
+
+</div>
