@@ -20,7 +20,6 @@ jobs:
     - name: Firebase Deploy
       run: |
         sudo npm install -g firebase-tools
-        sudo npm audit fix
         firebase deploy --token ${{ secrets.FIREBASE_TOKEN }}
 
 #https://dev.to/gautemeekolsen/getting-started-with-github-actions-ci-cd-firebase-deploy-5g87
