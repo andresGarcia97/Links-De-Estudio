@@ -260,6 +260,10 @@ svg.material-icons:not(:last-child) {
   margin-top: 16px;
 }
 
+.card-container.less-margin {
+  margin-top: 8px;
+}
+
 .card {
   border-radius: 6px;
   border: 1px solid var(--color-cultured);
@@ -442,6 +446,10 @@ pre::selection {
   box-shadow: var(--color-black);
   transition: 0.3s ease-out;
   flex-wrap: wrap;
+}
+
+.circle-link.less-margin {
+  margin: 4px;
 }
 
 .circle-link:hover {
