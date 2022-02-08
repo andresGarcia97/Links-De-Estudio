@@ -11,6 +11,8 @@
       <app-button [tittleButton]="'Gestión de activos'" (click)="getLinkAndTittleByKey('gestionDeActivos')"></app-button>
   
       <app-button [tittleButton]="'Fidelizacion'" (click)="getLinkAndTittleByKey('fidelizacion')"></app-button>
+
+      <app-button [tittleButton]="'Modelo DIKW'" (click)="getLinkAndTittleByKey('modeloDIKW')"></app-button>
   
     </div>
   
@@ -22,7 +24,7 @@
 
         <span *ngFor="let item of items">
           <span *ngSwitchCase="item.key">
-            <pre *ngFor="let content of item.content">{{content}}</pre>
+            <pre *ngFor="let content of item.content" [innerHtml]="content">{{content}}</pre>
           </span>
         </span>
     

@@ -206,6 +206,7 @@ export class LinkReferencia {
         ['gestionDeServicios', new Referencia('https://www.ambit-bst.com/blog/itsm.-todo-lo-que-debes-saber-sobre-la-gesti%C3%B3n-de-servicios-it', 'Gestión de servicios tecnologicos', 'personas')],
         ['gestionDeActivos', new Referencia('https://freshservice.com/latam/it-asset-management-software/', 'Gestión de activos', 'personas')],
         ['fidelizacion', new Referencia('https://elviajedelcliente.com/fidelizacion-de-clientes/', 'Fidelización de los clientes', 'personas')],
+        ['modeloDIKW', new Referencia('https://programmerclick.com/article/46021807934/', 'Datos-Información-Conocimiento-Sabiduría', 'personas')],
         // poo
         ['poo', new Referencia('https://desarrolloweb.com/articulos/499.php', 'Programación Orientada a Objetos', 'poo')],
         ['pooPilares', new Referencia('https://www.campusmvp.es/recursos/post/los-conceptos-fundamentales-sobre-programacion-orientada-objetos-explicados-de-manera-simple.aspx', 'Pilares de POO', 'poo')],

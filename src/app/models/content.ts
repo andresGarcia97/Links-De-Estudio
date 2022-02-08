@@ -2330,6 +2330,27 @@ export const PERSONAS =
                 ' - Rehenes -> no estan satisfechos con tu producto, pero tampoco estan dispuestos a migrar ni asummir más costos ',
                 ' - Indiferentes -> son neutrales frente a la marca, y aunque esten satisfechos solo haran compras ocasionales ',
                 ' - Terroristas -> además de estar insatisfechos, estos hablaran mal de la marca en sus circulos de influencia ',
+            ]),
+        new Item('modeloDIKW',
+            [
+                '- Es un sistema jerarquico donde cada capa le da soporte a las caracteristicas de la siguiente ',
+                ' ',
+                ' &uarr;',
+                ' contexto ',
+                ' &uarr;                                     Sabiduria        &#35;     Union de todas las partes '  ,
+                ' &uarr;                      Conocimiento                   &#35;&#35;&#35;    Se forman las partes de un todo ',
+                '           Información                                &#35;&#35;&#35;&#35;&#35;   Conexión de las partes',
+                ' &uarr;  Datos                                            &#35;&#35;&#35;&#35;&#35;&#35;&#35;  Reunion de todas las partes ',
+                '   &rarr;      &rarr;    &rarr;  comprension    &rarr;',
+                '  Busqueda  Absorción     Practica     Reflexion',
+                ' ',
+                '- Datos -> son la materia prima para formar las siguientes capas, indeferentemente de la fuente ',
+                '- Información -> es una construcción más avanzada a partir de acopio de simples datos, ',
+                ' - gracias a nuestra capacidad de raciocinio y de reconocimiento de patrones ',
+                '- Conocimiento -> ya con la información a nuestra disposición podemos actuar en base a esta, ',
+                ' - tomar decisiones especificas, o responder interrogantes de manera practica ',
+                '- Sabiduria -> generalmente se refiere a la capacidad de pensar y analizar las situaciones, ',
+                ' - que se nos presenten, además de la capacidad para abstracción a otros contextos ',
             ])
     ];
 
