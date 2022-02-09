@@ -143,6 +143,7 @@ export class LinkReferencia {
         ['verticalAndHorizontal', new Referencia('https://xurxodev.com/vertical-scile/', 'Organización de un proyecto', 'estructura')],
         ['expresionesRegulares', new Referencia('https://jarroba.com/busqueda-de-patrones-expresiones-regulares/', 'Expresiones Regulares', 'estructura')],
         ['estructurasDatos', new Referencia('https://medium.com/techwomenc/estructuras-de-datos-a29062de5483', 'Estructuras de datos', 'estructura')],
+        ['homoiconicidad', new Referencia('https://es.wikipedia.org/wiki/Homoiconicidad', 'Homoiconicidad', 'estructura')],
         // metodologias
         ['agiles', new Referencia('https://www.iebschool.com/blog/que-son-metodologias-agiles-agile-scrum/', '¿ Que son las metodologias agiles ?', 'metodologias')],
         ['scrum', new Referencia('https://www.iebschool.com/blog/metodologia-scrum-agile-scrum/', 'Scrum', 'metodologias')],

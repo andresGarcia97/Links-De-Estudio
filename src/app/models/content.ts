@@ -841,7 +841,7 @@ export const META_CARACTERISTICAS =
                 ' - en cambio el segundo esta relacionado con mantener estandares y formas de uso ',
                 '- Un ejemplo de esto es el uso de getters y setters en POO para modificar los objetos, ',
                 ' - aunque estos cambian de acuerdo al objeto, su función y su forma son casi siempre identicas ',
-            ]),
+            ])
     ];
 
 export const CONOCIMIENTOS_EMPIRICOS =
@@ -1619,6 +1619,17 @@ export const META_ESTRUCTURAS =
                 '  - pilas y colas ',
                 '',
                 '- Existen más tipos de estructuras, pero estas son de las más comunes y usadas generalmente ',
+            ]),
+        new Item('homoiconicidad',
+            [
+                '- Es una propiedad que comparten algunos lenguajes de programación en los cuales el propio lenguaje, ',
+                ' - se puede manipular y comportarse como un dato más ',
+                '- La representación primaria de esto tambien es una estructura de datos en un tipo primitivo del lenguaje ',
+                '- Algunas ventajas de este comportamiento "extraño" son: ',
+                ' - Extender el lenguaje con nuevos conceptos es más sencillo ',
+                ' - Los datos pueden ser pasados entre capas, como lo son la capa base y meta del programa ',
+                ' - Permite realizar operaciones de manipulacion de codigo en tiempo de compilación en vez de ejecución ',
+                ' - Se puede modificar el arbol de sintaxis del lenguaje ',
             ])
     ];
 
