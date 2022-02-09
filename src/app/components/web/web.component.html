@@ -1,142 +1,41 @@
 <div class="content">
 
-    <h2>Desarrollo web & Diseño grafico</h2>
-  
-    <div class="card-container">
-  
-      <app-button [tittleButton]="'SPA'" (click)="getLinkAndTittleByKey('spa')"></app-button>
+  <h2>Desarrollo web & Diseño grafico</h2>
 
-      <app-button [tittleButton]="'PWA'" (click)="getLinkAndTittleByKey('pwa')"></app-button>
+  <div class="card-container">
 
-      <app-button [tittleButton]="'SEO'" (click)="getLinkAndTittleByKey('seo')"></app-button>
+    <app-button [tittleButton]="'SPA'" (click)="getLinkAndTittleByKey('spa')"></app-button>
 
-      <app-button [tittleButton]="'Espacio Negativo'" (click)="getLinkAndTittleByKey('espacio')"></app-button>
+    <app-button [tittleButton]="'PWA'" (click)="getLinkAndTittleByKey('pwa')"></app-button>
 
-      <app-button [tittleButton]="'Diseño Grafico'" (click)="getLinkAndTittleByKey('diseno')"></app-button>
+    <app-button [tittleButton]="'SEO'" (click)="getLinkAndTittleByKey('seo')"></app-button>
 
-      <app-button [tittleButton]="'UX'" (click)="getLinkAndTittleByKey('experienciasUsuario')"></app-button>
-      
-      <app-button [tittleButton]="'UI'" (click)="getLinkAndTittleByKey('interfacesUsuario')"></app-button>
+    <app-button [tittleButton]="'Espacio Negativo'" (click)="getLinkAndTittleByKey('espacio')"></app-button>
 
-      <app-button [tittleButton]="'Logos'" (click)="getLinkAndTittleByKey('logos')"></app-button>
+    <app-button [tittleButton]="'Diseño Grafico'" (click)="getLinkAndTittleByKey('diseno')"></app-button>
 
-      <app-button [tittleButton]="'Teoria de Gestalt'" (click)="getLinkAndTittleByKey('gestalt')"></app-button>
+    <app-button [tittleButton]="'UX'" (click)="getLinkAndTittleByKey('experienciasUsuario')"></app-button>
 
-    </div>
+    <app-button [tittleButton]="'UI'" (click)="getLinkAndTittleByKey('interfacesUsuario')"></app-button>
 
-    <app-referencia class="flexbox terminal" [referencia]="referencia" [titulo]="titulo"></app-referencia>
-    
-    <div class="terminal" [ngSwitch]="selection"  #terminal>
+    <app-button [tittleButton]="'Logos'" (click)="getLinkAndTittleByKey('logos')"></app-button>
 
-      <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
-  
-      <pre *ngSwitchCase="'spa'">- Es una aplicación web donde todo el contenido se muestra en una sola sin regargar el navegador </pre>
-      <pre *ngSwitchCase="'spa'">- Los componentes son segmentos individuales de HTML que juntos dan la impresión de unidad </pre>
-      <pre *ngSwitchCase="'spa'">- Este tipo de paginas tambien maneja las url para cambiar entre vistas </pre>
-      <pre *ngSwitchCase="'spa'">- La transición entre las paginas es fluida y el rendimiento es mayor en general </pre>
-      <pre *ngSwitchCase="'spa'">- Los frameworks actuales trabajan de esta manera </pre>
-  
-      <pre *ngSwitchCase="'pwa'">- Estas aplicaciones nacen de paginas web normales para parecerse a aplicaciones nativas de telefonos moviles </pre>
-      <pre *ngSwitchCase="'pwa'">  - NO se necesita descargar nada desde una tienda de aplicaciones, solo tener acceso a un navegador con internet </pre>
-      <pre *ngSwitchCase="'pwa'">  - Aunque necesitan internet para actualizaciones de la información, tambien puede funcionar sin este </pre>
-      <pre *ngSwitchCase="'pwa'">  - Bastante acorde con el enfoque mobile-first, que le da prioridad al movil que al escritorio </pre>
+    <app-button [tittleButton]="'Teoria de Gestalt'" (click)="getLinkAndTittleByKey('gestalt')"></app-button>
 
-      <pre *ngSwitchCase="'seo'">- La indexación de contenido es una gran herramienta para buscar lo que se necesita </pre>
-      <pre *ngSwitchCase="'seo'">- El contenido de calidad es una de las mejores formas de aumentar el trafico del sitio web </pre>
-      <pre *ngSwitchCase="'seo'">- La accesibilidad al contenido y la experiencia del usuario tambien son importantes </pre>
-      <pre *ngSwitchCase="'seo'">- Saber como funcionan los motores de busqueda, permite optimizar el sitio para que sea más "visible" para estos </pre>
-
-      <pre *ngSwitchCase="'espacio'">- Es el espacio que se encuentra alrededor del objeto en cuestión, bastante util para crear diseños simples pero atractivos </pre>
-      <pre *ngSwitchCase="'espacio'">- El uso del espacio positivo y negativo puede dar pie a ilustraciones con mensajes directos pero sutiles </pre>
-      <pre *ngSwitchCase="'espacio'">- Un gran artista sabe manejar estos conceptos, e imprimirles su toque unico, como en el articulo fuente se denota </pre>
-
-      <pre *ngSwitchCase="'diseno'">- El diseño grafico es importante en la programación debido a que este sera la cara visible de tu producto </pre>
-      <pre *ngSwitchCase="'diseno'">- Es importante contestar respuestas previamente como: ¿ cual es tu objetivo ? & ¿ cual es tu producto ? </pre>
-      <pre *ngSwitchCase="'diseno'">- NO descuides el color, tener una paleta de colores es tener una identidad </pre>
-      <pre *ngSwitchCase="'diseno'">- Además de la identidad es importante saberlos combinar y tener un buen contraste y legibilidad entre si </pre>
-      <pre *ngSwitchCase="'diseno'">- El uso de las imagenes y las fuentes tipograficas son más importantes de lo que parecen </pre>
-
-      <pre *ngSwitchCase="'interfacesUsuario'">Principios para el diseño de una UI</pre>
-      <pre *ngSwitchCase="'interfacesUsuario'"> - Familiaridad con el usuario -> utilizar conceptos y la experiencia del usuario para que le sea más "facil" de usar </pre>
-      <pre *ngSwitchCase="'interfacesUsuario'"> - Consistencia -> las operaciones del mismo tipo deberian hacerse del mismo modo siempre </pre>
-      <pre *ngSwitchCase="'interfacesUsuario'"> - Minima sorpresa -> el comportamiento del sistema no debe provocar sorpresa en el usuario </pre>
-      <pre *ngSwitchCase="'interfacesUsuario'"> - Recuperabilidad -> los usuarios deben tener mecanismos para recuperase en caso de error </pre>
-      <pre *ngSwitchCase="'interfacesUsuario'">  -  para este apartado se pueden usar confirmaciones o recursos para deshacer opciones </pre>
-      <pre *ngSwitchCase="'interfacesUsuario'"> - Guia al usuario -> cuando un error ocurra, la interfaz debe ayudar al usuario a entenderlo </pre>
-      <pre *ngSwitchCase="'interfacesUsuario'"></pre>
-      <pre *ngSwitchCase="'interfacesUsuario'">Prototipos de una UI</pre>
-      <pre *ngSwitchCase="'interfacesUsuario'"> - Estaticos -> No permiten la alteración de sus componentes, pero si dan un bosquejo inicial </pre>
-      <pre *ngSwitchCase="'interfacesUsuario'"> - Dinamicos -> Estos diseños involucran un poco más de detalle tecnico, como especificaciones de rendimiento </pre>
-      <pre *ngSwitchCase="'interfacesUsuario'"> - Robustos -> Ya presentan caracteristicas dinamicas, como validación de errores y edición de datos </pre>
-      <pre *ngSwitchCase="'interfacesUsuario'"></pre>
-      <pre *ngSwitchCase="'interfacesUsuario'">Interacción del usuario en la UI</pre>
-      <pre *ngSwitchCase="'interfacesUsuario'"> - Manipulación directa -> interacción directa con los objetos de la pantalla </pre>
-      <pre *ngSwitchCase="'interfacesUsuario'"> - Selección de menus -> se limitan las opciones, a cambio de ser más lenta y menos propensa a errores </pre>
-      <pre *ngSwitchCase="'interfacesUsuario'"> - Formularios -> introducción de datos, por parte del usuario </pre>
-      <pre *ngSwitchCase="'interfacesUsuario'"> - Comandos -> los usuarios emiten comandos y sus parametros asociados para realizar acciones más complejas </pre>
-      <pre *ngSwitchCase="'interfacesUsuario'"> - Lenguaje -> usar un lenguaje natural que el usuario comprenda, lo hara accesible a más tipos de usuarios </pre>
-      <pre *ngSwitchCase="'interfacesUsuario'"></pre>
-      <pre *ngSwitchCase="'interfacesUsuario'">Pautas de evaluación de una UI</pre>
-      <pre *ngSwitchCase="'interfacesUsuario'"> - Semejanza con el mundo real </pre>
-      <pre *ngSwitchCase="'interfacesUsuario'"> - Consistencia y estandarización </pre>
-      <pre *ngSwitchCase="'interfacesUsuario'"> - Estetica y diseño minimalista </pre>
-      <pre *ngSwitchCase="'interfacesUsuario'"> - Reconocimiento, manejo y recuperración de errores </pre>
-      <pre *ngSwitchCase="'interfacesUsuario'"> - Flexibilidad, control y libertad para el usuario </pre>
-      <pre *ngSwitchCase="'interfacesUsuario'"> - Reconocimiento de acciones y ayudas </pre>
-
-      <pre *ngSwitchCase="'experienciasUsuario'">- Es la percepción del usuario al interactuar con un producto </pre>
-      <pre *ngSwitchCase="'experienciasUsuario'">- Una buena UX se logra cuando el producto a la hora de usar el producto sea util y usable por el cliente </pre>
-      <pre *ngSwitchCase="'experienciasUsuario'">- La UX no es lo mismo que la usabilidad, ya que esta la contiene además de otras caracteristicas </pre>
-      <pre *ngSwitchCase="'experienciasUsuario'">- Este objetivo no se logra agregando funcionalidades, si no, estando en el lugar de un cliente </pre>
-      <pre *ngSwitchCase="'experienciasUsuario'"></pre>
-      <pre *ngSwitchCase="'experienciasUsuario'">- Para esto es necesario tener en cuenta: </pre>
-      <pre *ngSwitchCase="'experienciasUsuario'"> - Necesidades del cliente </pre>
-      <pre *ngSwitchCase="'experienciasUsuario'"> - Objetivos del negocio </pre>
-      <pre *ngSwitchCase="'experienciasUsuario'"> - Limitaciones tecnicas </pre>
-      <pre *ngSwitchCase="'experienciasUsuario'"></pre>
-      <pre *ngSwitchCase="'experienciasUsuario'">- Tambien es necesario realizar investigaciones tales como: </pre>
-      <pre *ngSwitchCase="'experienciasUsuario'"> - Investigacion de los grupos de mercado y entrevistas con stakeholders </pre>
-      <pre *ngSwitchCase="'experienciasUsuario'"> - Pruebas de usabilidad y analisis de datos </pre>
-      <pre *ngSwitchCase="'experienciasUsuario'"> - Manejo y estructuración de la información presente </pre>
-      <pre *ngSwitchCase="'experienciasUsuario'"></pre>
-      <pre *ngSwitchCase="'experienciasUsuario'">- Además se deben tener habilidades blandas como: </pre>
-      <pre *ngSwitchCase="'experienciasUsuario'"> - Estudios en Psicologia, Sociologia o Antropologia </pre>
-      <pre *ngSwitchCase="'experienciasUsuario'"> - Conocimientos en Comunicación , Marketing, y experiencia en ventas </pre>
-      <pre *ngSwitchCase="'experienciasUsuario'"> - Diseño industrial o grafico, y conocimientos en tecnologias </pre>
-
-      <pre *ngSwitchCase="'logos'">- Isotipo -> parte reconocible de una marca sin presencia de texto </pre>
-      <pre *ngSwitchCase="'logos'">- Isologo -> el texto y el icono son parte de un mismo conjunto, no funcionan por separado </pre>
-      <pre *ngSwitchCase="'logos'">- Logotipo -> texto que representa la marca y es la parte reconocible de esta </pre>
-      <pre *ngSwitchCase="'logos'">- Imagotipo -> combinación de imagen y texto, que tambien pueden separarse y ser efectiva </pre>
-
-      <pre *ngSwitchCase="'gestalt'">- Es una manera de encontrar sentido en como nuestras mentes perciben las cosas </pre>
-      <pre *ngSwitchCase="'gestalt'"> - como un todo y no solo como los elementos que lo forman </pre>
-      <pre *ngSwitchCase="'gestalt'">- <em>El todo es mayor que la suma de sus partes </em></pre>
-      <pre *ngSwitchCase="'gestalt'"></pre>
-      <pre *ngSwitchCase="'gestalt'">- Aparición -> surge cuando se percibe un objeto a partir de información previa que conozcamos </pre>
-      <pre *ngSwitchCase="'gestalt'">- Cosificación -> los objetos se pueden reconocer incluso cuando hace falta parte de ellos, </pre>
-      <pre *ngSwitchCase="'gestalt'"> - Nuestro cerebro hace coincidir lo que se ve con patrones familiares en nuestra memoria </pre>
-      <pre *ngSwitchCase="'gestalt'">- Multiestabilidad -> Se basa en que los objetos ambiguos pueden ser interpretados de diferentes maneras, </pre>
-      <pre *ngSwitchCase="'gestalt'"> - y que dado esto se puedan ver varias formas, sin tener certeza de la verdadera </pre>
-      <pre *ngSwitchCase="'gestalt'">- Invariabilidad -> los objetos simples pueden ser reconocidos independientemente de, </pre>
-      <pre *ngSwitchCase="'gestalt'"> - su escala, rotación, traslación o perspectiva </pre>
-      <pre *ngSwitchCase="'gestalt'"></pre>
-      <pre *ngSwitchCase="'gestalt'">- Leyes de Gestalt aplicadas al diseño grafico </pre>
-      <pre *ngSwitchCase="'gestalt'"></pre>
-      <pre *ngSwitchCase="'gestalt'">- Principio de semejanza -> si elementos que esten proximos entre si, y son similares </pre>
-      <pre *ngSwitchCase="'gestalt'"> - tenderemos a verlos como parte de un grupo, ya sea por color, tamaño o textura </pre>
-      <pre *ngSwitchCase="'gestalt'">- Principio de continuidad -> el ojo puede crear visualmente la continuidad de una linea, ya que el ojo </pre>
-      <pre *ngSwitchCase="'gestalt'"> - va a seguir el camino visual más suave, menos forzado y coherente </pre>
-      <pre *ngSwitchCase="'gestalt'">- Principio de cierre -> cuando una figura no esta cerrada o delimitada por lineas, nuestra mente </pre>
-      <pre *ngSwitchCase="'gestalt'"> - tiende a transmitir una sensación de cierre, rellenando las formas </pre>
-      <pre *ngSwitchCase="'gestalt'">- Principio de proximidad -> teoriza como tendemos a agrupar los elementos visuales proximos entre si </pre>
-      <pre *ngSwitchCase="'gestalt'"> - estos deben compartir alguna caracteristica en comun como forma, color, textura, tamaño </pre>
-      <pre *ngSwitchCase="'gestalt'">- Figura y fondo -> Usando el espacio negativo y la tendencia de ver un objeto separado de lo que lo rodea </pre>
-      <pre *ngSwitchCase="'gestalt'">- Principio de Simetria y Orden -> si los elementos cuentan con cierta simetria y orden </pre>
-      <pre *ngSwitchCase="'gestalt'"> - son percibidos como parte del mismo grupo </pre>
-      <pre *ngSwitchCase="'gestalt'">- Dirección comun -> los elementos que parecen contruir un patron o flujo continuo y en la misma dirección </pre>
-      <pre *ngSwitchCase="'gestalt'"> - son a su vez percibidos como parte de un grupo mayor </pre>
-
-    </div>
-    
   </div>
+
+  <app-referencia class="flexbox terminal" [referencia]="referencia" [titulo]="titulo"></app-referencia>
+
+  <div class="terminal" [ngSwitch]="selection" #terminal>
+
+    <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
+
+    <span *ngFor="let item of items">
+      <span *ngSwitchCase="item.key">
+        <pre *ngFor="let content of item.content">{{content}}</pre>
+      </span>
+    </span>
+
+  </div>
+
+</div>
