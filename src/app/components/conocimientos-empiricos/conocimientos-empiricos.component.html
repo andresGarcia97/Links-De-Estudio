@@ -30,6 +30,8 @@
 
     <app-button [tittleButton]="'Prejuicios'" (click)="getLinkAndTittleByKey('prejuicios')"></app-button>
 
+    <app-button [tittleButton]="'Dunning-Kruger'" (click)="getLinkAndTittleByKey('dunningKruger')"></app-button>
+
   </div>
 
   <app-referencia class="flexbox terminal" [referencia]="referencia" [titulo]="titulo"></app-referencia>
@@ -40,7 +42,7 @@
 
     <span *ngFor="let item of items">
       <span *ngSwitchCase="item.key">
-        <pre *ngFor="let content of item.content">{{content}}</pre>
+        <pre *ngFor="let content of item.content" [innerHtml]="content">{{content}}</pre>
       </span>
     </span>
 

@@ -1015,6 +1015,18 @@ export const CONOCIMIENTOS_EMPIRICOS =
                 ' - Realiza pruebas, no siempre todo funciona o funciona como deberia ',
                 ' - Mantener afinidad con una persona no significa que debemos de dejar de prestar atención a los demás ',
                 ' - No aceptar la innovación puede ser tan malo como siempre estar al filo de la vanguardia ',
+            ]),
+        new Item('dunningKruger',
+            [
+                '- Es la tendencia natural de personas menos habilidosas a sobreestimar sus conocimientos y habilidades ',
+                '- Tambien se da de la manera contraria, en la cual personas calificadas tienden a subestimar sus capacidades ',
+                '- Una clara representación de este sesgo cognitivo se da con la siguente frase de: <strong>Charles Darwin</strong> ',
+                ' - <i>"La ignorancia genera confianza más frecuentemente que el conocimiento"</i>',
+                '',
+                '- Ejemplos: ',
+                ' - Cantantes que se creen muy talentosos sin tener tecnica vocal ',
+                ' - Pacientes que se automedican ya que creen saber más que sus doctores ',
+                ' - Personas que se entrenan y aumentan sus niveles de competencias, dandose cuenta de sus falencias ',
             ])
     ];
 

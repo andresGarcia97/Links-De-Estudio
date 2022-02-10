@@ -32,6 +32,7 @@ export class LinkFuente {
         ['expresionesRegulares', { titulo: 'Expresiones regulares', referencia: 'https://regexr.com/' }],
         ['jsonFormat', { titulo: 'JSON Format', referencia: 'https://jsonformatter.curiousconcept.com/#' }],
         ['changeLog', { titulo: 'Change Log', referencia: 'https://keepachangelog.com/es-ES/1.0.0/' }],
+        ['rapidapi', { titulo: 'Aprendizaje sobre APIs', referencia: 'https://rapidapi.com/learn' }],
         // testing
         ['junit', { titulo: 'Junit', referencia: 'https://www.adictosaltrabajo.com/2016/11/24/primeros-pasos-con-junit-5/' }],
         ['mockito', { titulo: 'Mockito', referencia: 'https://www.baeldung.com/mockito-series' }],
@@ -42,6 +43,9 @@ export class LinkFuente {
         ['svgPorn', { titulo: 'SVG Porn', referencia: 'https://svgporn.com/' }],
         ['benchmarksFront', { titulo: 'Benchmarks in front', referencia: 'https://github.com/krausest/js-framework-benchmark' }],
         ['roadMapsDevelop', { titulo: 'Mapas de ruta', referencia: 'https://roadmap.sh/roadmaps' }],
+        ['unicodes', { titulo: 'Tablas de Unicodes', referencia: 'https://unicode-table.com/es/' }],
+        ['svgRepo', { titulo: 'SVG Repo', referencia: 'https://www.svgrepo.com/' }],
+        ['carbon', { titulo: 'Carbon screenshots', referencia: 'https://github.com/carbon-app/carbon' }],
         // seguridad
         ['noreferrer', { titulo: 'noreferrer in links', referencia: 'https://web.dev/external-anchors-use-rel-noopener/?utm_source=lighthouse&utm_medium=devtools' }],
         ['owasp', { titulo: 'OWASP', referencia: 'https://owasp.org/' }]

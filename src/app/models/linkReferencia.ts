@@ -74,6 +74,7 @@ export class LinkReferencia {
         ['multitarea', new Referencia('https://www.sodexo.es/blog/multitarea-multitasking/', 'Pros y Contras del multitasking', 'empirico')],
         ['maxwellCurve', new Referencia('https://blog.axosoft.com/the-maxwell-curve-blunder-in-the-name-of-scrum/', 'La curva de Maxwell', 'empirico')],
         ['pendulo', new Referencia('http://www.grupocrece.es/blog/Psicolog%C3%ADala-ley-del-pndulo-en-psicologa', 'Ley del pendulo', 'empirico')],
+        ['dunningKruger', new Referencia('https://www.awenpsicologia.com/efecto-dunning-kruger/', 'Efecto Dunning-Kruger', 'empirico')],
         // docker
         ['docker', new Referencia('https://www.xataka.com/otros/docker-a-kubernetes-entendiendo-que-contenedores-que-mayores-revoluciones-industria-desarrollo', '¿ Que es Docker ?', 'docker')],
         ['images', new Referencia('https://clouding.io/hc/es/articles/360010283060-Trabajando-con-im%C3%A1genes-en-Docker', '¿ Que es una imagen ?', 'docker')],
