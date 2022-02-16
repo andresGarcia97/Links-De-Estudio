@@ -32,7 +32,11 @@ export class GlosarioComponent {
   protected convertArrayObjectToArrayStrings(namesAndValues: Array<any>): Array<object> {
     const onlyFuentes = new Array();
     namesAndValues.forEach((element) => {
-      const newElement = { titulo: element.value.titulo, referencia: element.value.referencia };
+      const newElement = {
+        titulo: element.value.titulo,
+        referencia: element.value.referencia,
+        componente: 'contenido practico'
+      };
       onlyFuentes.push(newElement);
     });
     return onlyFuentes;

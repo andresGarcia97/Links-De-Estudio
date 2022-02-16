@@ -9,10 +9,6 @@ export class FuenteComponent extends LinkFuente implements OnInit {
 
   @Input() key = '';
 
-  constructor() {
-    super();
-  }
-
   ngOnInit(): void {
     this.fuente = this.getLinkAndFuenteByKey(this.key);
   }

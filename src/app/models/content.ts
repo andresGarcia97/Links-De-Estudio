@@ -841,6 +841,19 @@ export const META_CARACTERISTICAS =
                 ' - en cambio el segundo esta relacionado con mantener estandares y formas de uso ',
                 '- Un ejemplo de esto es el uso de getters y setters en POO para modificar los objetos, ',
                 ' - aunque estos cambian de acuerdo al objeto, su función y su forma son casi siempre identicas ',
+            ]),
+        new Item('recursividad',
+            [
+                '- Es una tecnica de programación para ejecutar codigo un cierto numero de veces ',
+                '- Esto es posible a la caracteristica de cualquier lenguaje de permitir que los metodos se llamen a si mismas ',
+                '- La recursividad tiene que tener un condición de salida, de lo contrario se convertira, ',
+                ' - en una pila de llamados infinita a si mismo ',
+                '- Es una alternativa y en ocasiones más eficiente de realizar tareas que requieren ser repetitivas ',
+                '',
+                '- A continuación un ejemplo con la función factorial ',
+                '   public int factorial(int n) { ',
+                '       return (n == 0) ? 1 : n * factorial(n - 1);',
+                '   }',
             ])
     ];
 

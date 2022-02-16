@@ -138,6 +138,7 @@ export class LinkReferencia {
         ['concurrenciaParalelismo', new Referencia('https://codigofacilito.com/articulos/programacion-concurrente', 'Concurrencia & Paralelismo', 'caracteristicas')],
         ['ortogonalidad', new Referencia('https://qastack.mx/programming/1527393/what-is-orthogonality', 'Ortogonalidad', 'caracteristicas')],
         ['boilerPlate', new Referencia('https://www.freecodecamp.org/news/whats-boilerplate-and-why-do-we-use-it-let-s-check-out-the-coding-style-guide-ac2b6c814ee7/', 'Boiler Plate (codigo repetitivo)', 'caracteristicas')],
+        ['recursividad', new Referencia('https://geekytheory.com/que-es-la-recursividad/', 'Recursividad', 'caracteristicas')],
         // meta-estructura
         ['scope', new Referencia('https://platzi.com/blog/como-funciona-el-scope-en-javascript/', 'Alcance', 'estructura')],
         ['precedencia', new Referencia('https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Operator_Precedence', 'Precedencia y jerarquia de operaciones', 'estructura')],
