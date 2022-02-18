@@ -2282,6 +2282,21 @@ export const PATRONES =
                 '- Todo o nada -> no hay puntos intermedios de que guardar y que no, toda acción realizada deber ser recordada ',
                 '- Calculados -> los estados anteriores y proximos, se pueden calcular en base al actual ',
                 '- Ambos enfoques pueden presentar problemas de complejidad y rendimiento respectivamente ',
+            ]),
+        new Item('tiposDePatrones',
+            [
+                '- Existen diferentes clasificaciones para los patrones de acuerdo a su nivel de abstracción ',
+                '- Hay 3 niveles de abstracción de acuerdo a la clasificación más popular de Frank Buschmann: ',
+                '',
+                '- Patrones Arquitectonicos -> Se centran en la estructura del sistema, definición de subsistemas, ',
+                ' - manejo de responsabilidades, lineas guia para organizar las relaciones ',
+                '',
+                ' - Patrones de Diseño -> esquemas para refinar subsistemas, componentes o las relaciones de estos, ',
+                ' - estos describen una estructura recurrente y comun que resuelve un problema de diseño, ',
+                ' - en un contexto especifico, algunos de estos pueden ser los patrones GRASP o lo GOF ',
+                '',
+                ' - Patrones de codificación(idioms) -> ayudan a implementar aspectos particulares del diseño, ',
+                '  - en un lenguaje especifico'
             ])
     ];
 
