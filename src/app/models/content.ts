@@ -412,7 +412,7 @@ export const ARQUITECTURAS =
             ]),
         new Item('monolitos',
             [
-                ' MONOLITO                        MICROSERVICIOS                         MICROLITOS ',
+                '  Caracteristica                 MONOLITO                        MICROSERVICIOS                         MICROLITOS         ',
                 ' ',
                 ' Separación de            Acoplamiento alto y mayor        Entregadas por la plataforma          Acoplamiento alto y mayor ',
                 ' funciones tecnica        dependencia del framework        usada, reduce el acoplamiento         dependencia del framework ',
@@ -423,7 +423,7 @@ export const ARQUITECTURAS =
                 ' ',
                 ' Evolución                Complicada por proceso           Sencilla por proceso                  Sencilla ',
                 ' ',
-                ' Especialización          Alta variedad de                 Alta especialización, Alta especialización, ',
+                ' Especialización          Alta variedad de                 Alta especialización,                 Alta especialización,    ',
                 ' de los equipos           conocimientos                    conocimiento del negocio              conocimiento del negocio ',
                 ' ',
                 ' Automatización           Pocos despliegues                Muchos despliegues                    pocos despliegues ',
