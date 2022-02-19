@@ -381,10 +381,11 @@ export const ARQUITECTURAS =
             ]),
         new Item('cliente',
             [
-                ' - Existen 2 elementos principales, de las arquitecturas más usadas debido a su simplicidad ',
-                ' Servidor -> quien responde las peticiones y almacena la información ',
-                ' Red -> medio para la comunicación en doble sentido constantemente ',
-                ' Cliente -> Dispositivos que hacen solicitudes, para guardar o consultar datos ',
+                ' - Existen 3 elementos principales y es una de las arquitecturas más usadas debido a su simplicidad ',
+                '',
+                ' Servidor -> encargado de responder las peticiones, gestionar la concurrencia y la persistencia de los datos ',
+                ' Red -> medio para la comunicación entre ambas partes ',
+                ' Cliente -> Dispositivos que hacen solicitudes, para crear/manipular/eliminar información ',
             ]),
         new Item('intermediario',
             [
@@ -400,9 +401,12 @@ export const ARQUITECTURAS =
             ]),
         new Item('hexagonal',
             [
-                ' - Aisla el dominio de las tecnologias, la comunicación se da por medio de puertos(interfaces) ',
-                ' - Cualquier dispositivo puede consultarla y la información sera la misma ',
-                ' - Las capas son idependientes y más faciles de testear ',
+                ' - Aisla el dominio de las tecnologias, permitiendo que los cambios entre tecnologias sean superfluos o minimos ',
+                ' - La comunicación entre componentes internos/llamados externos se da por medio de puertos(interfaces) ',
+                ' - Cualquier dispositivo/usuario/sistema podra consultar de forma homogonea la información y esta sera consistente ',
+                ' - Las capas que se hayan definido son idependientes entre si, sin estar totalmente aisladas ',
+                ' - Hay una definición clara de responsabilidades, permitiendo hacer testing más facilmente ',
+                ' - El termino hexagonal solo se da para resaltar la naturaleza similar de los puertos, no la cantidad de estos ',
             ]),
         new Item('otrasArquitecturas',
             [
