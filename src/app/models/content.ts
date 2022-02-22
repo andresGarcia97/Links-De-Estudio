@@ -861,6 +861,20 @@ export const META_CARACTERISTICAS =
                 '   public int factorial(int n) { ',
                 '       return (n == 0) ? 1 : n * factorial(n - 1);',
                 '   }',
+            ]),
+        new Item('backtracing',
+            [
+                '- Es una estrategia para encontrar soluciones que satisfagan restricciones ',
+                '- De una manera basica esto se asemeja a un recorrido en profundidad dentro de un grafo que no contega ciclos ',
+                '- Durante todo el recorrido se va construyendo la solución del problema, todo esto para que al final si se tiene exito, ',
+                ' - todas estas soluciones parciales se junten y conformar una solución completa ',
+                '- Si el recorrido no tiene exito y tampoco se puede completar, se eliminaran todos los elementos construidos previamente ',
+                '- Este proceso suelen implementarse mediante algoritmos recursivos para evitar busquedas profundas, ',
+                ' - y asi evitar desperdicio de recursos infructuosamente ',
+                '- Tambien se pueden hacer optimizaciones donde se evalua el peso de las ramas o se acotan los caminos posibles ',
+                ' - mediante subrutinas para podar el arbol y mejorar su eficiencia ',
+                '- Esta estrategia es usada en los analisis sintacticos de los compiladores y en la inteligencia artificial, ',
+                ' - dando lugar a nuevos algoritmos de busqueda como el A*',
             ])
     ];
 
