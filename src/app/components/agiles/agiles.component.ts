@@ -8,6 +8,6 @@ import { LinkReferencia } from 'src/app/models/linkReferencia';
 })
 export class AgilesComponent extends LinkReferencia {
 
-  keys = AGILES;
+  items = AGILES;
 
 }
