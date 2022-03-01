@@ -43,6 +43,8 @@ import { PruebasAvanzadasComponent } from './components/pruebas-avanzadas/prueba
 import { HardwareComponent } from './components/hardware/hardware.component';
 import { MetaEstructuraComponent } from './components/meta-estructura/meta-estructura.component';
 import { MiniTerminalComponent } from './components/core/mini-terminal/mini-terminal.component';
+import { ButtonNextComponent } from './components/core/button-next/button-next.component';
+import { ButtonBeforeComponent } from './components/core/button-before/button-before.component';
 
 @NgModule({
   declarations: [
@@ -87,7 +89,9 @@ import { MiniTerminalComponent } from './components/core/mini-terminal/mini-term
     PruebasAvanzadasComponent,
     HardwareComponent,
     MetaEstructuraComponent,
-    MiniTerminalComponent
+    MiniTerminalComponent,
+    ButtonNextComponent,
+    ButtonBeforeComponent
   ],
   imports: [
     BrowserModule,
