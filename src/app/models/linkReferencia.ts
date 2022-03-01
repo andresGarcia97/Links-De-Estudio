@@ -10,6 +10,9 @@ export class LinkReferencia {
     content = new Content();
     items = this.content.temas;
 
+    itemSelected = 0;
+    lengthItems = 0;
+
     public components: Map<string, Referencia> = new Map([
         // agiles
         ['moscow', new Referencia('https://proagilist.es/blog/agilidad-y-gestion-agil/priorizar-requisitos-tecnica-priorizacion-moscow/', 'MOSCOW', 'agiles')],
@@ -346,6 +349,42 @@ export class LinkReferencia {
         this.selection = key;
         this.referencia = this.components.get(key)?.referencia || '';
         this.titulo = this.components.get(key)?.titulo || '';
+        this.itemSelected = this.getIndexItemSelected(this.selection);
+    }
+
+    public getItemByIndex(index: number): void {
+        const key = this.items[index].key;
+        this.getLinkAndTittleByKey(key);
+    }
+
+    public getIndexItemSelected(key: string): number {
+        const item = this.items.filter(x => x.key === key)[0];
+        return this.items.indexOf(item);
+    }
+
+    public getNextElement(): void {
+        const key = this.selection;
+
+        if (key !== '' && this.itemSelected <= this.lengthItems) {
+            this.itemSelected = this.getIndexItemSelected(key) + 1;
+            this.getItemByIndex(this.itemSelected);
+            return;
+        }
+
+        if (key === '' || this.itemSelected === 0) {
+            this.selection = this.items[0].key;
+            this.getItemByIndex(this.itemSelected);
+        }
+    }
+
+    public getBeforeElement(): void {
+        const key = this.selection;
+
+        if (key !== '' && this.itemSelected > 0) {
+            this.itemSelected = this.getIndexItemSelected(key) - 1;
+            this.getItemByIndex(this.itemSelected);
+        }
+
     }
 
 }
