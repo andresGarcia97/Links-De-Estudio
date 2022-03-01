@@ -10,4 +10,6 @@ export class PruebasComponent extends LinkReferencia {
 
   items = PRUEBAS;
 
+  lengthItems = this.items.length - 1;
+
 }

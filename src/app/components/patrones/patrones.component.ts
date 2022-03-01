@@ -10,4 +10,6 @@ export class PatronesComponent extends LinkReferencia {
 
   items = PATRONES;
 
+  lengthItems = this.items.length - 1;
+
 }

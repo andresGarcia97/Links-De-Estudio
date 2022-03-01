@@ -10,4 +10,6 @@ export class FrameworksComponent extends LinkReferencia {
 
   items = FRAMEWORKS;
 
+  lengthItems = this.items.length - 1;
+
 }

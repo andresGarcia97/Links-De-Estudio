@@ -10,4 +10,6 @@ export class DockerComponent extends LinkReferencia {
 
   items = DOCKER;
 
+  lengthItems = this.items.length - 1;
+
 }

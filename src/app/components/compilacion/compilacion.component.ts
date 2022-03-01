@@ -10,4 +10,6 @@ export class CompilacionComponent extends LinkReferencia {
 
   items = COMPILACION;
 
+  lengthItems = this.items.length - 1;
+
 }

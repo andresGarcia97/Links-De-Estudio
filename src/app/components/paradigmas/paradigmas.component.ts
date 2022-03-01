@@ -10,4 +10,6 @@ export class ParadigmasComponent extends LinkReferencia {
 
   items = PARADIGMAS;
 
+  lengthItems = this.items.length - 1;
+
 }

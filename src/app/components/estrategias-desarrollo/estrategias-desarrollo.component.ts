@@ -10,4 +10,6 @@ export class EstrategiasDesarrolloComponent extends LinkReferencia {
 
   items = ESTATEGIAS_DESARROLLO;
 
+  lengthItems = this.items.length - 1;
+
 }

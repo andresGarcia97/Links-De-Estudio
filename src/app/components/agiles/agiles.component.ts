@@ -10,4 +10,6 @@ export class AgilesComponent extends LinkReferencia {
 
   items = AGILES;
 
+  lengthItems = this.items.length - 1;
+
 }

@@ -1,53 +1,61 @@
 <div class="content">
 
-    <h2>Pruebas en el desarrollo de Software</h2>
-  
-    <div class="card-container">
-  
-      <app-button [tittleButton]="'Principios de testing'" (click)="getLinkAndTittleByKey('principios')"></app-button>
+  <h2>Pruebas en el desarrollo de Software</h2>
 
-      <app-button [tittleButton]="'Testing manifiesto'" (click)="getLinkAndTittleByKey('manifiesto')"></app-button>
+  <div class="card-container">
 
-      <app-button [tittleButton]="'QA'" (click)="getLinkAndTittleByKey('QAperson')"></app-button>
+    <app-button [tittleButton]="'Principios de testing'" (click)="getLinkAndTittleByKey('principios')"></app-button>
 
-      <app-button [tittleButton]="'Tipos'" (click)="getLinkAndTittleByKey('tiposPruebas')"></app-button>
+    <app-button [tittleButton]="'Testing manifiesto'" (click)="getLinkAndTittleByKey('manifiesto')"></app-button>
 
-      <app-button [tittleButton]="'Beneficios'" (click)="getLinkAndTittleByKey('beneficios')"></app-button>
+    <app-button [tittleButton]="'QA'" (click)="getLinkAndTittleByKey('QAperson')"></app-button>
 
-      <app-button [tittleButton]="'Nombramiento'" (click)="getLinkAndTittleByKey('nombramiento')"></app-button>
+    <app-button [tittleButton]="'Tipos'" (click)="getLinkAndTittleByKey('tiposPruebas')"></app-button>
 
-      <app-button [tittleButton]="'Principio FIRST'" (click)="getLinkAndTittleByKey('first')"></app-button>
+    <app-button [tittleButton]="'Beneficios'" (click)="getLinkAndTittleByKey('beneficios')"></app-button>
 
-      <app-button [tittleButton]="'SUT & DOC'" (click)="getLinkAndTittleByKey('sutydoc')"></app-button>
+    <app-button [tittleButton]="'Nombramiento'" (click)="getLinkAndTittleByKey('nombramiento')"></app-button>
 
-      <app-button [tittleButton]="'Dobles'" (click)="getLinkAndTittleByKey('dobles')"></app-button>
+    <app-button [tittleButton]="'Principio FIRST'" (click)="getLinkAndTittleByKey('first')"></app-button>
 
-      <app-button [tittleButton]="'AAA'" (click)="getLinkAndTittleByKey('aaa')"></app-button>
+    <app-button [tittleButton]="'SUT & DOC'" (click)="getLinkAndTittleByKey('sutydoc')"></app-button>
 
-      <app-button [tittleButton]="'GWT'" (click)="getLinkAndTittleByKey('gwt')"></app-button>
+    <app-button [tittleButton]="'Dobles'" (click)="getLinkAndTittleByKey('dobles')"></app-button>
 
-      <app-button [tittleButton]="'Piramides de tests'" (click)="getLinkAndTittleByKey('piramide')"></app-button>
+    <app-button [tittleButton]="'AAA'" (click)="getLinkAndTittleByKey('aaa')"></app-button>
 
-      <app-button [tittleButton]="'Triangulo de Hierro'" (click)="getLinkAndTittleByKey('triangulo')"></app-button>
+    <app-button [tittleButton]="'GWT'" (click)="getLinkAndTittleByKey('gwt')"></app-button>
 
-      <app-button [tittleButton]="'Cobertura'" (click)="getLinkAndTittleByKey('cobertura')"></app-button>
+    <app-button [tittleButton]="'Piramides de tests'" (click)="getLinkAndTittleByKey('piramide')"></app-button>
 
-      <app-button [tittleButton]="'Falsos Resultados'" (click)="getLinkAndTittleByKey('falsos')"></app-button>
-  
-    </div>
-  
-    <app-referencia class="flexbox terminal" [referencia]="referencia" [titulo]="titulo"></app-referencia>
+    <app-button [tittleButton]="'Triangulo de Hierro'" (click)="getLinkAndTittleByKey('triangulo')"></app-button>
 
-    <div class="terminal" [ngSwitch]="selection" #terminal>
-  
-      <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
-    
-      <span *ngFor="let item of items">
-        <span *ngSwitchCase="item.key">
-          <pre *ngFor="let content of item.content" [innerHTML]="content" >{{content}}</pre>
-        </span>
-      </span>
-      
-    </div>
-    
+    <app-button [tittleButton]="'Cobertura'" (click)="getLinkAndTittleByKey('cobertura')"></app-button>
+
+    <app-button [tittleButton]="'Falsos Resultados'" (click)="getLinkAndTittleByKey('falsos')"></app-button>
+
   </div>
+
+  <app-referencia class="flexbox terminal" [referencia]="referencia" [titulo]="titulo"></app-referencia>
+
+  <div class="terminal" [ngSwitch]="selection" #terminal>
+
+    <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
+
+    <span *ngFor="let item of items">
+      <span *ngSwitchCase="item.key">
+        <pre *ngFor="let content of item.content" [innerHTML]="content">{{content}}</pre>
+      </span>
+    </span>
+
+    <div class="card-container less-margin">
+
+      <app-button-next *ngIf="!(itemSelected === lengthItems)" (click)="getNextElement()"></app-button-next>
+
+      <app-button-before *ngIf="!(itemSelected === 0)" (click)="getBeforeElement()"></app-button-before>
+
+    </div>
+
+  </div>
+
+</div>

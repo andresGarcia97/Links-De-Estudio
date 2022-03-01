@@ -10,4 +10,6 @@ export class GitComponent extends LinkReferencia {
 
   items = GIT;
 
+  lengthItems = this.items.length - 1;
+
 }

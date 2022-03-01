@@ -10,4 +10,6 @@ export class MetaCaracteristicasComponent extends LinkReferencia {
 
   items = META_CARACTERISTICAS;
 
+  lengthItems = this.items.length - 1;
+
 }

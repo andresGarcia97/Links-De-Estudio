@@ -10,4 +10,6 @@ export class HistoriaUsuarioComponent extends LinkReferencia {
 
   items = HISTORIAS_USUARIO;
 
+  lengthItems = this.items.length - 1;
+
 }

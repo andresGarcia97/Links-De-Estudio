@@ -10,4 +10,6 @@ export class SmellsCodesComponent extends LinkReferencia {
 
   items = SMELLS_CODES;
 
+  lengthItems = this.items.length - 1;
+
 }

@@ -10,4 +10,6 @@ export class PooComponent extends LinkReferencia {
 
   items = POO;
 
+  lengthItems = this.items.length - 1;
+
 }

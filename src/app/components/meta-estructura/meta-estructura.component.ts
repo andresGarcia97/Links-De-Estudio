@@ -10,4 +10,6 @@ export class MetaEstructuraComponent extends LinkReferencia {
 
   items = META_ESTRUCTURAS;
 
+  lengthItems = this.items.length - 1;
+
 }

@@ -11,7 +11,7 @@
     <app-button [tittleButton]="'Interpretes'" (click)="getLinkAndTittleByKey('interprete')"></app-button>
 
     <app-button [tittleButton]="'Transpilación'" (click)="getLinkAndTittleByKey('transpilacion')"></app-button>
-    
+
     <app-button [tittleButton]="'Azucar Sintactico'" (click)="getLinkAndTittleByKey('azucarSintactico')"></app-button>
 
     <app-button [tittleButton]="'Coerción'" (click)="getLinkAndTittleByKey('coercion')"></app-button>
@@ -31,6 +31,14 @@
         <pre *ngFor="let content of item.content">{{content}}</pre>
       </span>
     </span>
+
+    <div class="card-container less-margin">
+
+      <app-button-next *ngIf="!(itemSelected === lengthItems)" (click)="getNextElement()"></app-button-next>
+
+      <app-button-before *ngIf="!(itemSelected === 0)" (click)="getBeforeElement()"></app-button-before>
+
+    </div>
 
   </div>
 

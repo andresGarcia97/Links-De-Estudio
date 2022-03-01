@@ -10,4 +10,6 @@ export class NubeComponent extends LinkReferencia {
 
   items = NUBE;
 
+  lengthItems = this.items.length - 1;
+
 }

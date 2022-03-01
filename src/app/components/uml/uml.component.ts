@@ -10,4 +10,6 @@ export class UmlComponent extends LinkReferencia {
 
   items = UML;
 
+  lengthItems = this.items.length - 1;
+
 }

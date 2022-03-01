@@ -10,4 +10,6 @@ export class RefactorizacionComponent extends LinkReferencia {
 
   items = REFACTORIZACION;
 
+  lengthItems = this.items.length - 1;
+
 }

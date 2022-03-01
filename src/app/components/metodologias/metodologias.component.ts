@@ -10,4 +10,6 @@ export class MetodologiasComponent extends LinkReferencia {
 
   items = METODOLOGIAS;
 
+  lengthItems = this.items.length - 1;
+
 }

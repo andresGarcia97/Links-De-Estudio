@@ -10,4 +10,6 @@ export class MalasPracticasComponent extends LinkReferencia {
 
   items = MALAS_PRACTICAS;
 
+  lengthItems = this.items.length - 1;
+
 }

@@ -10,4 +10,6 @@ export class WebComponent extends LinkReferencia {
 
   items = WEB;
 
+  lengthItems = this.items.length - 1;
+
 }

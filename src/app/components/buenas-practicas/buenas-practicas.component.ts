@@ -10,4 +10,6 @@ export class BuenasPracticasComponent extends LinkReferencia {
 
   items = BUENAS_PRACTICAS;
 
+  lengthItems = this.items.length - 1;
+
 }

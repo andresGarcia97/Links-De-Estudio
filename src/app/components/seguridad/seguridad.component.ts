@@ -10,4 +10,6 @@ export class SeguridadComponent extends LinkReferencia {
 
   items = SEGURIDAD;
 
+  lengthItems = this.items.length - 1;
+
 }

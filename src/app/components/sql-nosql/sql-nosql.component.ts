@@ -10,4 +10,6 @@ export class SqlNosqlComponent extends LinkReferencia {
 
   items = BASES_DE_DATOS;
 
+  lengthItems = this.items.length - 1;
+
 }

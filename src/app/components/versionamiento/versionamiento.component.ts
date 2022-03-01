@@ -10,4 +10,6 @@ export class VersionamientoComponent extends LinkReferencia {
 
   items = VERSIONAMIENTO;
 
+  lengthItems = this.items.length - 1;
+
 }

@@ -10,4 +10,6 @@ export class ConocimientosEmpiricosComponent extends LinkReferencia {
 
   items = CONOCIMIENTOS_EMPIRICOS;
 
+  lengthItems = this.items.length - 1;
+
 }

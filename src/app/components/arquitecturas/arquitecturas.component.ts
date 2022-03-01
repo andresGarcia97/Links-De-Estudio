@@ -10,4 +10,6 @@ export class ArquitecturasComponent extends LinkReferencia {
 
   items = ARQUITECTURAS;
 
+  lengthItems = this.items.length - 1;
+
 }

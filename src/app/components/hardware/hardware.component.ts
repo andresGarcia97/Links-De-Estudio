@@ -10,4 +10,6 @@ export class HardwareComponent extends LinkReferencia {
 
   items = HARDWARE;
 
+  lengthItems = this.items.length - 1;
+
 }
