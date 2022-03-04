@@ -2877,13 +2877,13 @@ export const PRINCIPIOS =
                 ' - Es el unico patron que mal usado puede convertirse en un antipatron, no lo uses si no es necesario ',
                 ' T -> Acoplamiento indebido ',
                 ' - Sucede cuando un cambio afecta más partes de las debidas, esto indica una mala modularización ',
-                ' U -> inestabilidad',
+                ' U -> Inestabilidad',
                 ' - El software no deberia ser dificil de testear, ni de modificar ',
-                ' P -> optimización prematura ',
+                ' P -> Optimización prematura ',
                 ' - Un codigo eficiente, por lo general es ilegible, por lo que optimizarlo sin necesidad solo trae complejidad innecesaria ',
-                ' I -> nombres indescriptivos ',
+                ' I -> Nombres indescriptivos ',
                 ' - El ideal de todo codigo es que sea autocomentado, por lo que nombrar mal las cosas hace inalcanzable este ideal ',
-                ' D -> duplicación ',
+                ' D -> Duplicación ',
                 ' - El codigo duplicado deberia evitarse siempre que se pueda, aplicando DRY & KISS, además de otras practicas ',
             ])
     ];
@@ -3571,7 +3571,7 @@ export const UML =
             ]),
         new Item('vista',
             [
-                '- Modelo diseñado para describir la arquitecturas de de los sistemas basados en distintas vistas concurrentes ',
+                '- Modelo diseñado para describir la arquitecturas de los sistemas basados en distintas vistas concurrentes ',
                 '',
                 '  - Vista Logica -> describe la estructura y la funcionalidad del sistema  ',
                 '  - Vista Logica -> se pueden usar diagramas de clase, comunicacion, secuencia  ',
