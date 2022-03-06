@@ -6,6 +6,8 @@
 
     <app-button [tittleButton]="'Definición'" (click)="getLinkAndTittleByKey('definicion')"></app-button>
 
+    <app-button [tittleButton]="'Principios'" (click)="getLinkAndTittleByKey('principiosArquitecturas')"></app-button>
+
     <app-button [tittleButton]="'Capas'" (click)="getLinkAndTittleByKey('capas')"></app-button>
 
     <app-button [tittleButton]="'Cliente Servidor'" (click)="getLinkAndTittleByKey('cliente')"></app-button>
@@ -16,7 +18,7 @@
 
     <app-button [tittleButton]="'Hexagonal'" (click)="getLinkAndTittleByKey('hexagonal')"></app-button>
 
-    <app-button [tittleButton]="'otras'" (click)="getLinkAndTittleByKey('otrasArquitecturas')"></app-button>
+    <app-button [tittleButton]="'Otras'" (click)="getLinkAndTittleByKey('otrasArquitecturas')"></app-button>
 
     <app-button [tittleButton]="'Monolitos'" (click)="getLinkAndTittleByKey('monolitos')"></app-button>
 
@@ -36,9 +38,9 @@
 
     <div class="card-container less-margin">
 
-      <app-button-next *ngIf="!(itemSelected === lengthItems)" (click)="getNextElement()"></app-button-next>
-
       <app-button-before *ngIf="!(itemSelected === 0)" (click)="getBeforeElement()"></app-button-before>
+
+      <app-button-next *ngIf="!(itemSelected === lengthItems)" (click)="getNextElement()"></app-button-next>
 
     </div>
 
