@@ -422,6 +422,16 @@ export const ARQUITECTURAS =
                 ' - Esto nos ayuda a pensar nuestra aplicación como una serie de elementos intercambiables, con minimas afectaciones en los demás ',
                 ' - Hacer esto es laborioso y tiene un nivel de complejidad y esfuerzo alto, por lo que en ciertos casos solo se hace de manera parcial ',
             ]),
+        new Item('arquitecturasLimpias',
+            [
+                'Frameworks & Drivers     Interface Adapters    Aplication Rules    Enterprise rules ',
+                ' Servicios                                                                          ',
+                ' Bases de datos           Controladores                                             ',
+                ' Web                -->   Puertas de enlace --> Casos de uso   -->  Entidades       ',
+                ' Interfaz de usuario      Presentación                                              ',
+                ' Interfaces externas                                                                ',
+                'De + externo --> a + interno                                                        ',
+            ]),
         new Item('capas',
             [
                 ' - Se basa en la distribución de roles y responsabilidades de forma jerarquica en cada capa ',
