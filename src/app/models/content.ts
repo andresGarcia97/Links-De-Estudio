@@ -3647,6 +3647,20 @@ export const UML =
                 '',
                 '  - Escenarios -> estos describen la secuencia de interacciones entre objetos y procesos ',
                 '  - Escenarios -> generalmente son los casos de uso, aun se usan pero han perdido relevancia frente al agilismo y las HU ',
+                '',
+                '|     Vistas|   Escenarios    Diseño    Procesos    Implementación    Despliegue        ',
+                '|  Diagramas|                                                                           ',
+                '',
+                '      Clases                    X          X                                            ',
+                '     Objetos                    X          X                                     estruc ',
+                ' Componentes                                              X                      turales',
+                '  Despliegue                                                              X             ',
+                '',
+                'Casos de Uso        X                                                                   ',
+                '   Secuencia                    X                                         X      Compor ',
+                'Colaboración                    X                                         X      tamen  ',
+                '     Estados        X           X          X                              X      tales  ',
+                '   Actividad        X           X          X                              X             ',
             ])
     ];
 
