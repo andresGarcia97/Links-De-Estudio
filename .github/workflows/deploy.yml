@@ -16,7 +16,6 @@ jobs:
     - name: Build
       run: |
         npm install
-        npm install -g @angular/cli
         ng build --configuration production
     - name: Firebase Deploy
       run: |
