@@ -1,4 +1,4 @@
-import { Component, ComponentFactoryResolver, ViewChild, ViewContainerRef } from '@angular/core';
+import { Component, ViewChild, ViewContainerRef } from '@angular/core';
 import { fromEvent } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { AgilesComponent } from './components/agiles/agiles.component';
@@ -89,13 +89,10 @@ export class AppComponent {
     // 32 - 35
     CalidadComponent, PruebasAvanzadasComponent, HardwareComponent, MetaEstructuraComponent];
 
-  constructor(private componentFactoryResolver: ComponentFactoryResolver) { }
-
   public crearComponent(component: any, $element: any): void {
     this.buttonCloseComponent = true;
-    const componente = this.componentFactoryResolver.resolveComponentFactory(component);
     this.componentes.clear();
-    this.componentes.createComponent(componente);
+    this.componentes.createComponent(component);
     this.scrollToElement($element);
   }
 
