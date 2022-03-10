@@ -18,6 +18,8 @@
 
     <app-button [tittleButton]="'Ofuscación'" (click)="getLinkAndTittleByKey('ofuscacion')"></app-button>
 
+    <app-button [tittleButton]="'Grafos'" (click)="getLinkAndTittleByKey('grafos')"></app-button>
+
   </div>
 
   <app-referencia class="flexbox terminal" [referencia]="referencia" [titulo]="titulo"></app-referencia>
@@ -34,9 +36,9 @@
 
     <div class="card-container less-margin">
 
-      <app-button-next *ngIf="!(itemSelected === lengthItems)" (click)="getNextElement()"></app-button-next>
-
       <app-button-before *ngIf="!(itemSelected === 0)" (click)="getBeforeElement()"></app-button-before>
+
+      <app-button-next *ngIf="!(itemSelected === lengthItems)" (click)="getNextElement()"></app-button-next>
 
     </div>
 

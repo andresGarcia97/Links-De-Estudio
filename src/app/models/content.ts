@@ -790,6 +790,17 @@ export const COMPILACION =
                 ' - La minificación de archivos para reducir su peso ',
                 ' - La compilación de lenguajes de alto nivel (compilados) a codigo binario ',
                 ' - Optimizaciones realizadas por los propios compiladores ',
+            ]),
+        new Item('grafos',
+            [
+                '- Son una composición interesante de un conjunto de objetos denominados nodos (vertices) ',
+                '- Estos estan conectados con otros por medio de aristas (arcos) ',
+                '- Algunos de sus usos son las bases de datos, donde la información esta interelacionada entre multiples nodos ',
+                '- Para estudiarlos nacio la teoria de grafos, con la finalidad de representar estas abstracciónes graficamente ',
+                '- El analisis de los nodos y sus aristas nos permite entender a profundidad las relaciones de los datos ',
+                '- Existen diferentes tipos de grafos, dependiendo de los caminos que estos tengan ',
+                '- Un camino, es el recorrido que se da al pasar por cierta cantidad de nodos, para llegar de A a B ',
+                '- Tambien son utiles para la optimización y/o simplificación de redes de cualquier tipo ',
             ])
     ];
 
