@@ -1,4 +1,3 @@
-// tslint:disable:max-line-length
 
 export class Content {
 
@@ -1771,6 +1770,28 @@ export const META_ESTRUCTURAS =
                 '',
                 '- Si los sistemas se llegan a complicar o extender demasiado, se pueden realizar simplificaciones ',
                 ' - mediante algebra de Boole',
+            ]),
+        new Item('sistemasComplejos',
+            [
+                '- Caracteristicas',
+                '- Comportamiento impredecible -> Son sensibles a las condiciones iniciales ',
+                '- Conectividad -> los subsistemas se afectan mutuamente, aun sin conexión directa ',
+                '- Auto organización -> tendencia constante de generar patrones de comportamiento ',
+                '- Jerarquia -> cualquier cambio de una jerarquia, afectara a esta ',
+                '- Historico-dependientes -> el tiempo es un factor muy importante a tener en cuenta ',
+                '- Irreductubilidad -> la estructura o no se puede, o es muy dificil de reducir a estados más simples',
+                '- Dialogicos -> los opuestos no se excluyen, se complementan ',
+                '- Recursivos -> las causas y los resultados se alternan en el tiempo ',
+                '- Hologrametricos -> hay identidad estructural entre las partes y su todo ',
+                '',
+                '- Principios',
+                '- Equifinidad -> los estados finales son alcanzables sin importar las condiciones iniciales ',
+                '- Heterogeneidad auto organizacional -> la complejidad aumenta en medida que se interactua con la entropia del entorno ',
+                '- Complejidad organizada -> los sistemas abiertos conjugan complejidad y orden ',
+                '- Abundancia organizacional -> las estructuras complejas, son encontradas con facilidad ',
+                '- Teleologico -> finalidades especificas dependen de sistemas especificos ',
+                '- Retroalimentación -> se pueden tener feedbacks positivos y negativos ',
+                '- Complejidad jerarquica -> a mayor complejidad, mayor jerarquización ',
             ])
     ];
 
