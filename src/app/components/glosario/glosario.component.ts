@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Content, Item } from 'src/app/models/content';
 import { LinkFuente } from 'src/app/models/linkFuente';
 import { LinkReferencia } from 'src/app/models/linkReferencia';
@@ -7,7 +7,11 @@ import { LinkReferencia } from 'src/app/models/linkReferencia';
   selector: 'app-glosario',
   templateUrl: './glosario.component.html'
 })
-export class GlosarioComponent {
+export class GlosarioComponent implements OnInit {
+
+  ngOnInit(): void {
+    console.info("%c Actualmente son: " + this.temas.length + " Temas ", "color:#000; font-size: 16px;background:#FFBA08; font-weight: bold;");
+  }
 
   search = '';
 
