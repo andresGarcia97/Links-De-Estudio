@@ -12,13 +12,15 @@
 
     <app-button [tittleButton]="'Parte #4'" (click)="getLinkAndTittleByKey('practicas4')"></app-button>
 
-    <app-button [tittleButton]="'Complejidad #1'" (click)="getLinkAndTittleByKey('complejidad')"></app-button>
+    <app-button [tittleButton]="'Complejidad'" (click)="getLinkAndTittleByKey('complejidad')"></app-button>
 
-    <app-button [tittleButton]="'Complejidad #2'" (click)="getLinkAndTittleByKey('complejidadCognitiva')"></app-button>
+    <app-button [tittleButton]="'Cognitiva'" (click)="getLinkAndTittleByKey('complejidadCognitiva')"></app-button>
 
-    <app-button [tittleButton]="'Complejidad #3'" (click)="getLinkAndTittleByKey('complejidadAlgoritmica')"></app-button>
+    <app-button [tittleButton]="'Algoritmica'" (click)="getLinkAndTittleByKey('complejidadAlgoritmica')"></app-button>
 
     <app-button [tittleButton]="'Logs VS Debug'" (click)="getLinkAndTittleByKey('logging')"></app-button>
+
+    <app-button [tittleButton]="'Debugging'" (click)="getLinkAndTittleByKey('debugging')"></app-button>
 
     <app-button [tittleButton]="'Ley de Demeter'" (click)="getLinkAndTittleByKey('demeter')"></app-button>
 
@@ -40,9 +42,9 @@
 
     <div class="card-container less-margin">
 
-      <app-button-next *ngIf="!(itemSelected === lengthItems)" (click)="getNextElement()"></app-button-next>
-
       <app-button-before *ngIf="!(itemSelected === 0)" (click)="getBeforeElement()"></app-button-before>
+      
+      <app-button-next *ngIf="!(itemSelected === lengthItems)" (click)="getNextElement()"></app-button-next>
 
     </div>
 
