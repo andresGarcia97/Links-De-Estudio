@@ -359,6 +359,33 @@ export const ANALISIS =
                 '- Al ser problemas raros, es más costoso y complejo evitar que sucedan a controlarlos cuando suceden ',
                 '- Además de que se agregaria complejidad extra por un esceneario poco probable ',
             ]),
+        new Item('modeloDominio',
+            [
+                '- Dominio -> es el problema que quieres resolver, reglas de negocio, procesos, subtareas, etc...',
+                '- Modelo -> es la abstracción de la realidad para darle solución al problema en cuestión ',
+                '- Modelo de Dominio -> organización y estructura de todo el conocimiento aceca del  problema, ',
+                ' - sus partes, actores, relaciones, alcance, etc...',
+            ]),
+        new Item('sistemasInformacion',
+            [
+                '- Se refiere al conjunto ordenado de mecanismos con el fin de administrar datos e información ',
+                '',
+                '- Recursos que interactuan:',
+                ' - Recursos humanos -> personas de diversas indoles con diferentes destrezas ',
+                ' - Datos -> cualquier tipo de información masiva que deba procesarse ',
+                ' - Actividades -> pasos a seguir, procedimientos especificos, etc...',
+                ' - Recursos informaticos -> tecnologias usadas con diversos propositos ',
+                '',
+                '- Tipos de sistemas:                                            - Elementos:',
+                ' - Procesamiento de transacciones   - Información gerencial      - financieros        - tecnologicos',
+                ' - Información ejecutiva            - Soporte de decisiones      - humanos            - materiales',
+                '                                                                 - administrativos',
+                '- Ejemplos:',
+                ' - control de calidad ',
+                ' - bases de datos',
+                ' - hojas de calculo',
+            ]),
+
     ];
 
 export const ARQUITECTURAS =
