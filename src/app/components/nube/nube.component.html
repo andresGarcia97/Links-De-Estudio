@@ -10,6 +10,8 @@
 
     <app-button [tittleButton]="'API'" (click)="getLinkAndTittleByKey('api')"></app-button>
 
+    <app-button [tittleButton]="'Tipos de APIs'" (click)="getLinkAndTittleByKey('tiposApi')"></app-button>
+
     <app-button [tittleButton]="'SOAP & REST'" (click)="getLinkAndTittleByKey('rest')"></app-button>
 
     <app-button [tittleButton]="'Rest & RestFull'" (click)="getLinkAndTittleByKey('restfull')"></app-button>
@@ -46,9 +48,9 @@
 
     <div class="card-container less-margin">
 
-      <app-button-next *ngIf="!(itemSelected === lengthItems)" (click)="getNextElement()"></app-button-next>
-
       <app-button-before *ngIf="!(itemSelected === 0)" (click)="getBeforeElement()"></app-button-before>
+      
+      <app-button-next *ngIf="!(itemSelected === lengthItems)" (click)="getNextElement()"></app-button-next>
 
     </div>
 
