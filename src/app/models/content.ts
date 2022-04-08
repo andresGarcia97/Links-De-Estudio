@@ -810,6 +810,17 @@ export const CALIDAD =
                 '- Si estos pasos se realizan de manera adecuada y se mantiene la calidad del codigo en la mente, ',
                 ' - la degeneración de nuestro codigo se podra manejar en terminos aceptables ',
             ]),
+        new Item('costOfQuality',
+            [
+                '- En un nivel operacional las tecnicas de gestión de calidad deben identificar desperdicios, resolver problemas y optimizar procesos ',
+                '- Generalmente enfocado a la prevención, pero tambien enfocado a la solución reactiva ',
+                '',
+                '- Costos libres de errores -> no tienen relación con la planificación, control, correción y mejora de la calidad, ',
+                ' - considenrando que todo salga bien ',
+                '- Costos de la calidad -> relacionados a los problemas encontrados, estos pueden desaparecer si el proceso fuera libre de errores ',
+                '- Costos de conformidad -> asociados a prevención y evaluación de la conformidad con los requisitos ',
+                '- Costos de NO conformidad -> han de ver con las fallas ya sean internas y/o externas no detectadas y que terminan afectando al cliente ',
+            ]),
     ];
 
 export const COMPILACION =
@@ -2410,7 +2421,24 @@ export const OTROS =
                 ' - y se usa el lenguaje más adecuado para lograr el objetivo ',
                 '- Este concepto desemboca en la programación poliglota o programación orientada al lenguaje ',
                 '- Otro concepto importante es que los DSL pueden nacer y extenderse, con ó sin bases previas ',
-            ])
+            ]),
+        new Item('reglasInferencia',
+            [
+                '- Las leyes de inferencia nos permiten demostrar la validez de los argumentos mediante la correcta aplicación de las reglas ',
+                '- Teniendo una premisa ya definida, podemos sacar una conclusión, para probar o negar alguna proposición deseada ',
+                '',
+                '        Nombre              Premisas    Conclusion          Nombre            Premisas    Conclusion',
+                ' Modus Ponendo Ponens        p -> q         q             Silogismo            p -> q               ',
+                '                                                          Hipotetico           q -> r      p -> r   ',
+                ' Modus Tollendo Ponens       p || q                                                                 ',
+                '                             ¬p             q             Morgan             ¬(p && q)    ¬p || ¬q  ',
+                '                                                                             ¬(p || q)    ¬P && ¬q  ',
+                ' Modus Tollendo Tollens      p -> ¬q       ¬p                                                       ',
+                '                                                          Doble negación       ¬(¬p)       p        ',
+                ' Dilema                      p || q                                                                 ',
+                ' Constructivo                p -> r                       Conjunción            p                   ',
+                '                             q -> s      r || s                                 q          p && q   ',
+            ]),
     ];
 
 export const PATRONES =
