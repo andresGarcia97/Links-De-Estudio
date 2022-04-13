@@ -918,6 +918,18 @@ export const COMPILACION =
                 '- Existen diferentes tipos de grafos, dependiendo de los caminos que estos tengan ',
                 '- Un camino, es el recorrido que se da al pasar por cierta cantidad de nodos, para llegar de A a B ',
                 '- Tambien son utiles para la optimización y/o simplificación de redes de cualquier tipo ',
+            ]),
+        new Item('compilacionAnticipada',
+            [
+                '- Es el acto de compilar un lenguaje de alto nivel a bajo nivel (generalmente), más no necesariamente a nivel de maquina ',
+                '- Comunmente asociado al paso intermedio como al bytecode de Java ó CIL de .NET, ',
+                ' - cuando se usa en este contexto especifico suele ser el contrario de la compilación Just in Time (JIT)',
+                '- Una de las principales diferencias entre AOT y JIT es que esta reduce la necesidad de un intermediario para ',
+                ' - convertir el codigo a lenguaje maquina, haciendo el paso intermedio antes de la ejecución y no durante ',
+                '- Este tipo de compilación no es posible para todos los lenguajes, especialmente los tipados dinamicamente ',
+                '- Un aspecto en contra de AOT es la carencia de realizar optimizaciones especificas para el entorno donde se va a ejecutar, ',
+                ' - ya que al contrario de JIT, esta no conoce toda la información necesaria, y tampoco puede especular para lograr esto ',
+                '- Un aspecto positivo de AOT es que al ya estar listos, se reducen los tiempos en el ambiente de ejecución ',
             ])
     ];
 
@@ -3216,6 +3228,34 @@ export const PRUEBAS_AVANZADAS =
                 ' - Su proposito sigue siendo el mismo pero la manera de alcanzarlo es diferente ',
                 ' - Verificar el comportamiento y las interacciones de los objetos más que sus estados ',
                 ' - Asi se puede ahorrar todo el trabajo de la creación de los objetos y solo usar dobles ',
+            ]),
+        new Item('casosDePruebas',
+            [
+                '- Entre más complejo sea un software, mayor sera la posibilidad de sufrir defectos ',
+                '- Un caso de prueba es un conjunto de condiciones y variables, bajo un mismo ambiente que determinara si, ',
+                ' - alguna caracteristica esta completa o parcial, y si lo cumple de manera satisfactoria ',
+                '',
+                '- Para lograr esto, deberia crearse al menos un caso de prueba por cada requisito definido: ',
+                ' - Los ciclos de pruebas deben ser fluidos y eficientes ',
+                ' - Los casos deben estar escritos de manera clara y comprensible ',
+                ' - La ejecución debe ser facil o estar guiada de no poder serlo ',
+                ' - Tener las entradas y salidas debidamente especificadas ',
+                ' - Definir los comportamientos esperados y como invocarlos ',
+                '',
+                '- Tambien pueden tener estados despues de su finalización: ',
+                ' - Exito -> todos los pasos y el comportamiento ha sido el esperado ',
+                ' - Fallido -> si alguno de los pasos es erroneo ',
+                ' - Bloqueado -> si este no se puede realizar debido a una secuencia especifica no posible, o fallos previos ',
+                ' - N/A -> ya no aplica debido a cambios en la funcionalidad o los requisitos asociados ',
+                '',
+                '- Pasos a tener en cuenta: ',
+                ' - Identificar los requirimientos a probar y enumerar los casos de cada requisito ',
+                ' - Realizar una matriz de trazabilidad para vincular los requerimientos y sus casos de prueba',
+                ' - Escribir una descripción general del caso, que permita a personas con o sin conocimientos previos entender la prueba ',
+                ' - Conocer los prerrequisitos a tener en cuenta para la prueba ',
+                ' - Definir la prioridad de cada caso (alta, media, baja) ',
+                ' - Secuencia de pasos y su descripción para realizar la prueba ',
+                ' - Descripción de los resultados, sea exitosa o no lo sea ',
             ])
     ];
 

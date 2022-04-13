@@ -34,6 +34,7 @@ export class LinkFuente {
         ['changeLog', { titulo: 'Change Log', referencia: 'https://keepachangelog.com/es-ES/1.0.0/' }],
         ['rapidapi', { titulo: 'Aprendizaje sobre APIs', referencia: 'https://rapidapi.com/learn' }],
         ['javascriptStandars', { titulo: 'Estandars para Javascript', referencia: 'https://github.com/airbnb/javascript#table-of-contents' }],
+        ['algoritms', { titulo: 'Algoritmos', referencia: 'https://github.com/TheAlgorithms' }],
         // testing
         ['junit', { titulo: 'Junit', referencia: 'https://www.adictosaltrabajo.com/2016/11/24/primeros-pasos-con-junit-5/' }],
         ['mockito', { titulo: 'Mockito', referencia: 'https://www.baeldung.com/mockito-series' }],
@@ -47,9 +48,11 @@ export class LinkFuente {
         ['unicodes', { titulo: 'Tablas de Unicodes', referencia: 'https://unicode-table.com/es/' }],
         ['svgRepo', { titulo: 'SVG Repo', referencia: 'https://www.svgrepo.com/' }],
         ['carbon', { titulo: 'Carbon screenshots', referencia: 'https://github.com/carbon-app/carbon' }],
+        ['overApi', { titulo: 'Over Api', referencia: 'https://overapi.com/' }],
         // seguridad
         ['noreferrer', { titulo: 'noreferrer in links', referencia: 'https://web.dev/external-anchors-use-rel-noopener/?utm_source=lighthouse&utm_medium=devtools' }],
-        ['owasp', { titulo: 'OWASP', referencia: 'https://owasp.org/' }]
+        ['owasp', { titulo: 'OWASP', referencia: 'https://owasp.org/' }],
+        ['web3.0', { titulo: 'Web 3.0 & e Internet', referencia: 'https://www.freecodecamp.org/espanol/news/que-es-web-3/' }]
 
     ]);
 

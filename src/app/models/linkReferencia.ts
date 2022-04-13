@@ -74,6 +74,7 @@ export class LinkReferencia {
         ['ofuscacion', new Referencia('https://www.azulweb.net/ofuscacion-de-codigo-antipatron-o-buena-practica/', 'Ofuscación', 'compilacion')],
         ['treeShaking', new Referencia('https://developer.mozilla.org/en-US/docs/Glossary/Tree_shaking', 'TreeShaking', 'compilacion')],
         ['grafos', new Referencia('https://www.grapheverywhere.com/grafos-que-son-tipos-orden-y-herramientas-de-visualizacion/', 'Grafos', 'compilacion')],
+        ['compilacionAnticipada', new Referencia('https://hmong.es/wiki/Ahead-of-time_compilation', 'Compilación AOT', 'compilacion')],
         // empirico
         ['balas', new Referencia('https://gist.github.com/esparta/582e43af7b803e0aaf69', 'Balas de Plata', 'empirico')],
         ['lehman', new Referencia('https://medium.com/@cartontabla/las-leyes-de-lehman-b57c623c3404#:~:text=Las%20Leyes%20de%20Lehman%20son,digamos%20que%20podr%C3%ADan%20ser%20ampliadas)', 'Leyes de Lehman', 'empirico')],
@@ -268,6 +269,7 @@ export class LinkReferencia {
         ['grafosCausaEfecto', new Referencia('https://platzi.com/tutoriales/1421-pruebas-software/9606-pruebas-con-grafos-causa-efecto/', 'Grafos causa -> efecto', 'testing-avanzado')],
         ['tiposDePruebas', new Referencia('https://www.softwaretestinghelp.com/types-of-software-testing/', 'Diferentes tipos de pruebas', 'testing-avanzado')],
         ['outsideInside', new Referencia('https://www.adictosaltrabajo.com/2016/01/29/tdd-outside-in-vs-inside-out/', 'TDD: Outside-In VS Inside-out', 'testing-avanzado')],
+        ['casosDePruebas', new Referencia('https://medium.com/grupo-carricay/qu%C3%A9-son-los-casos-de-pruebas-4893799b5b84', 'Casos de prueba', 'testing-avanzado')],
         // refactorización
         ['codigolimpio', new Referencia('https://refactoring.guru/es/refactoring/what-is-refactoring', '¿ Que es codigo Limpio ?', 'refactorizacion')],
         ['deudatecnica', new Referencia('https://refactoring.guru/es/refactoring/technical-debt', 'Deuda tecnica', 'refactorizacion')],
