@@ -16,6 +16,8 @@
 
     <app-button [tittleButton]="'Gestion de expectativas'" (click)="getLinkAndTittleByKey('gestionDeExpectativas')"></app-button>
 
+    <app-button [tittleButton]="'Error en capa 8'" (click)="getLinkAndTittleByKey('capa8')"></app-button>
+
   </div>
 
   <app-referencia class="flexbox terminal" [referencia]="referencia" [titulo]="titulo"></app-referencia>
@@ -32,9 +34,9 @@
 
     <div class="card-container less-margin">
 
-      <app-button-next *ngIf="!(itemSelected === lengthItems)" (click)="getNextElement()"></app-button-next>
-
       <app-button-before *ngIf="!(itemSelected === 0)" (click)="getBeforeElement()"></app-button-before>
+      
+      <app-button-next *ngIf="!(itemSelected === lengthItems)" (click)="getNextElement()"></app-button-next>
 
     </div>
 

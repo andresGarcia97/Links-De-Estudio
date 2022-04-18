@@ -1653,6 +1653,22 @@ export const HARDWARE =
                 '- Debido a que se necesitan todos los archivos para una carga correcta de la pagina, ',
                 ' - la conexión a internet puede afectar la carga inicial ',
                 '- Generalmente se requiere de varias a muchas dependencias de terceros, incluyendo los problemas que esto puede tener ',
+            ]),
+        new Item('modelOSI',
+            [
+                '- Es un modelo conceptual que permite la comunicación entre diversos sistemas usando un protocolo estandar ',
+                '- Este consta de 7 capas abstractas apiladas verticalmente ',
+                '',
+                ' 7 Capa de aplicación -> interacción hombre-maquina donde las aplicaciones pueden acceder a servicios de red ',
+                ' 6 Capa de presentación -> Garantiza que los datos tengan un formato utilizable, además se encriptan los datos si es necesario ',
+                ' 5 Capa de sesión -> Mantiene las conexiones y es el responsable de controlar puertos y sesiones ',
+                ' 4 Capa de transporte -> Transmite los datos mediante protocolos de transmision, incluidos TCP y UDP ',
+                ' 3 Capa de red -> Decide la ruta fisica que seguiran los datos, ya sea en la misma o en otra red ',
+                ' 2 Capa de enlace de datos -> Define el formato de los datos en la red, además de controlar errores de flujo ',
+                ' 1 Capa fisica -> Transmite el flujo de bits sin procesar a traves del medio fisico, y que estos sepan diferenciar el 1 y el 0 ',
+                '',
+                '- Esta organización de capas permite una mejor depuración de errores, ',
+                ' - a la vez que cada capa tiene una responsabilidades bien definidad a la hora de recibir o enviar información ',
             ])
     ];
 
@@ -2720,6 +2736,13 @@ export const PERSONAS =
                 ' - Realización de contratos -> la negociación es importante pero para segurar que todo funcione ',
                 '  - es importante generar acuerdos y dejarlos por escrito, asi demostrar alguna equivocación, ',
                 '  - y quien es el responsable o que este obligado a resolver el problema',
+            ]),
+        new Item('capa8',
+            [
+                '- Es un error relacionado directamente con el usuario final, ya sea por desconocimiento o por un mal diseño de la UX/UI',
+                '- Esta capa no existe como tal, es una expresión para aludir la culpa al usuario ',
+                '- El nombre viene del modelo OSI que consta de 7 capas, donde la septima capa es la aplicación, la misma que usa el usuario final ',
+                '- Estos errores son de las principales fuente de error en las organizaciones y excelente puerta de entrada para los hackers ',
             ])
     ];
 
