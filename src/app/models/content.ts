@@ -1075,6 +1075,16 @@ export const META_CARACTERISTICAS =
                 ' - mediante subrutinas para podar el arbol y mejorar su eficiencia ',
                 '- Esta estrategia es usada en los analisis sintacticos de los compiladores y en la inteligencia artificial, ',
                 ' - dando lugar a nuevos algoritmos de busqueda como el A*',
+            ]),
+        new Item('rawTypes',
+            [
+                '- Hacen referencia al uso de tipos genericos, sin especificar el tipo a usar',
+                '- Esto se debe a que versiones previas de Java no se tenia soporte para uso de Genericos, pero este debia seguir siendo retrocompatible ',
+                '- Actualmente es posible usarlos, pero deben ser evitados ya que: ',
+                ' - pueden sacar errores en tiempo de ejecución, que no esta presentes o pasan desapercibidos en tiempo de compilación ',
+                ' - Su uso atenta en contra del codigo autocomentado además de la legibilidad y la mantenibilidad ',
+                ' - Se necesitan casteos para su uso, consumiendo recursos extras para su uso ',
+                '- Por Ejemplo: List es un raw type, mientras que List<String> es un tipo parametrizado '
             ])
     ];
 
