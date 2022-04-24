@@ -1948,6 +1948,20 @@ export const META_ESTRUCTURAS =
                 '- Teleologico -> finalidades especificas dependen de sistemas especificos ',
                 '- Retroalimentación -> se pueden tener feedbacks positivos y negativos ',
                 '- Complejidad jerarquica -> a mayor complejidad, mayor jerarquización ',
+            ]),
+        new Item('funcionesLambda',
+            [
+                '- Son una subrutina definida no enlazada a un identificador, tambien llamadas funciones anonimas o literales ',
+                '- Suelen ser usadas como argumentos o contruir respuestas en funciones de orden superior ',
+                '- Son comunes en los lenguajes funcionales y/o multiparadigma ',
+                '- Pueden ser expresiones simples o tener varias instrucciones ',
+                '',
+                '- Sintaxis: ',
+                ' - Lambda de expression -> (parametros) => expression ',
+                ' - Lambda de instruccion -> (parametros) => { sequencia de expresiones } ',
+                '',
+                '- Otra ventaja de las lambdas es que estas son capaces de inferir los tipos de los parametros de entrada ',
+                '- Su sintaxis suele ser más concisa y combinada con otras caracteristicas como los Stream permiten el paradigma funcional en Java ',
             ])
     ];
 
@@ -3289,6 +3303,13 @@ export const PRUEBAS_AVANZADAS =
                 ' - Definir la prioridad de cada caso (alta, media, baja) ',
                 ' - Secuencia de pasos y su descripción para realizar la prueba ',
                 ' - Descripción de los resultados, sea exitosa o no lo sea ',
+            ]),
+        new Item('casosDeUso',
+            [
+                '- Descripción del conjunto de interacciones del sistema con uno o varios actores para alcanzar un objetivo ',
+                '- Este debe incluir las multiples rutas posibles (escenarios) que el usuario puede tomar ',
+                '- Aca se ha de tener en cuenta factores como que proceso se va a realizar, que actor lo va ejecutar y como lo hara ',
+                '- Estos detallan las funcionalidades del sistema',
             ])
     ];
 

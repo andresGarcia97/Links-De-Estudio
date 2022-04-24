@@ -35,6 +35,7 @@ export class LinkFuente {
         ['rapidapi', { titulo: 'Aprendizaje sobre APIs', referencia: 'https://rapidapi.com/learn' }],
         ['javascriptStandars', { titulo: 'Estandars para Javascript', referencia: 'https://github.com/airbnb/javascript#table-of-contents' }],
         ['algoritms', { titulo: 'Algoritmos', referencia: 'https://github.com/TheAlgorithms' }],
+        ['devDocs', { titulo: 'Dev Docs', referencia: 'https://devdocs.io/' }],
         // testing
         ['junit', { titulo: 'Junit', referencia: 'https://www.adictosaltrabajo.com/2016/11/24/primeros-pasos-con-junit-5/' }],
         ['mockito', { titulo: 'Mockito', referencia: 'https://www.baeldung.com/mockito-series' }],

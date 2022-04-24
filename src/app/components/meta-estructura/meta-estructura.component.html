@@ -20,6 +20,8 @@
 
     <app-button [tittleButton]="'Sistemas Complejos'" (click)="getLinkAndTittleByKey('sistemasComplejos')"></app-button>
 
+    <app-button [tittleButton]="'Funciones lambda'" (click)="getLinkAndTittleByKey('funcionesLambda')"></app-button>
+
   </div>
 
   <app-referencia class="flexbox terminal" [referencia]="referencia" [titulo]="titulo"></app-referencia>
@@ -36,9 +38,9 @@
 
     <div class="card-container less-margin">
       
-      <app-button-before *ngIf="!(itemSelected === 0)" (click)="getBeforeElement()"></app-button-before>
-
       <app-button-next *ngIf="!(itemSelected === lengthItems)" (click)="getNextElement()"></app-button-next>
+      
+      <app-button-before *ngIf="!(itemSelected === 0)" (click)="getBeforeElement()"></app-button-before>
 
     </div>
 

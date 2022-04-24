@@ -165,6 +165,7 @@ export class LinkReferencia {
         ['homoiconicidad', new Referencia('https://es.wikipedia.org/wiki/Homoiconicidad', 'Homoiconicidad', 'estructura')],
         ['maquinaEstados', new Referencia('http://fisicotronica.com/maquina-de-estados-nos-referimos/', 'Maquinas de estados', 'estructura')],
         ['sistemasComplejos', new Referencia('https://www.researchgate.net/figure/Figura-2-Caracteristicas-basicas-de-los-sistemas-complejos-Comportamiento-impredecible_fig1_262437348', 'Complejidad inherente al sistema', 'estructura')],
+        ['funcionesLambda', new Referencia('https://www.tokioschool.com/noticias/expresiones-lambda-uso-programacion-aplicaciones/', 'Funciones Lambda', 'estructura')],
         // metodologias
         ['agiles', new Referencia('https://www.iebschool.com/blog/que-son-metodologias-agiles-agile-scrum/', '¿ Que son las metodologias agiles ?', 'metodologias')],
         ['scrum', new Referencia('https://www.iebschool.com/blog/metodologia-scrum-agile-scrum/', 'Scrum', 'metodologias')],
@@ -270,6 +271,7 @@ export class LinkReferencia {
         ['tiposDePruebas', new Referencia('https://www.softwaretestinghelp.com/types-of-software-testing/', 'Diferentes tipos de pruebas', 'testing-avanzado')],
         ['outsideInside', new Referencia('https://www.adictosaltrabajo.com/2016/01/29/tdd-outside-in-vs-inside-out/', 'TDD: Outside-In VS Inside-out', 'testing-avanzado')],
         ['casosDePruebas', new Referencia('https://medium.com/grupo-carricay/qu%C3%A9-son-los-casos-de-pruebas-4893799b5b84', 'Casos de prueba', 'testing-avanzado')],
+        ['casosDeUso', new Referencia('https://blogs.encamina.com/piensa-en-software-desarrolla-en-colores/qa-caso-de-uso-vs-caso-de-prueba/', 'Casos de uso', 'testing-avanzado')],
         // refactorización
         ['codigolimpio', new Referencia('https://refactoring.guru/es/refactoring/what-is-refactoring', '¿ Que es codigo Limpio ?', 'refactorizacion')],
         ['deudatecnica', new Referencia('https://refactoring.guru/es/refactoring/technical-debt', 'Deuda tecnica', 'refactorizacion')],
