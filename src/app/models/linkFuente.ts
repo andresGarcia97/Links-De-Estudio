@@ -15,6 +15,7 @@ export class LinkFuente {
         ['keyEvents', { titulo: 'Eventos del teclado', referencia: 'https://keycode.info/' }],
         ['htmlElements', { titulo: 'Etiquetas HTML', referencia: 'https://lenguajehtml.com/html/introduccion/tabla-periodica-html5/' }],
         ['glassmorphism', { titulo: 'Glassmorphism', referencia: 'https://hype4.academy/tools/glassmorphism-generator' }],
+        ['canIuse', { titulo: 'Can I Use ?', referencia: 'https://caniuse.com/' }],
         // backend
         ['sqlTutorial', { titulo: 'SQL Tutorial', referencia: 'https://www.w3schools.com/sql/default.asp' }],
         ['patronesDisenoJava', { titulo: 'Patrones de diseño en Java', referencia: 'https://www.journaldev.com/1827/java-design-patterns-example-tutorial' }],
@@ -25,6 +26,7 @@ export class LinkFuente {
         ['precendenciaJava', { titulo: 'Operadores Java', referencia: 'https://es.stackoverflow.com/questions/57225/cu%C3%A1l-es-la-precedencia-de-operadores-en-java/57226' }],
         ['codificacionJava', { titulo: 'Codificación en Java', referencia: 'https://amap.cantabria.es/amap/bin/view/AMAP/CodificacionJava' }],
         ['eventLoop', { titulo: 'Event Loop', referencia: 'https://geekflare.com/es/javascript-event-loops/' }],
+        ['convivenciaArquitecturas', { titulo: 'Multiples arquitecturas', referencia: 'https://herbertograca.com/2017/11/16/explicit-architecture-01-ddd-hexagonal-onion-clean-cqrs-how-i-put-it-all-together/' }],
         // utiles
         ['comandosGit', { titulo: 'Comandos GIT', referencia: 'https://www.hostinger.co/tutoriales/comandos-de-git' }],
         ['comandosGitFlow', { titulo: 'Comandos Git Flow', referencia: 'http://danielkummer.github.io/git-flow-cheatsheet/index.es_ES.html' }],
@@ -38,6 +40,7 @@ export class LinkFuente {
         ['devDocs', { titulo: 'Dev Docs', referencia: 'https://devdocs.io/' }],
         // testing
         ['junit', { titulo: 'Junit', referencia: 'https://www.adictosaltrabajo.com/2016/11/24/primeros-pasos-con-junit-5/' }],
+        ['junitV5', { titulo: 'Junit5', referencia: 'https://junit.org/junit5/' }],
         ['mockito', { titulo: 'Mockito', referencia: 'https://www.baeldung.com/mockito-series' }],
         ['jmeter', { titulo: 'Jmeter', referencia: 'https://www.guru99.com/jmeter-tutorials.html' }],
         ['selenium', { titulo: 'Introducción a selenium', referencia: 'https://www.digital55.com/desarrollo-tecnologia/herramientas-testing-introduccion-selenium/' }],
@@ -53,8 +56,8 @@ export class LinkFuente {
         // seguridad
         ['noreferrer', { titulo: 'noreferrer in links', referencia: 'https://web.dev/external-anchors-use-rel-noopener/?utm_source=lighthouse&utm_medium=devtools' }],
         ['owasp', { titulo: 'OWASP', referencia: 'https://owasp.org/' }],
-        ['web3.0', { titulo: 'Web 3.0 & e Internet', referencia: 'https://www.freecodecamp.org/espanol/news/que-es-web-3/' }]
-
+        ['web3.0', { titulo: 'Web 3.0 & e Internet', referencia: 'https://www.freecodecamp.org/espanol/news/que-es-web-3/' }],
+        ['permisosUbuntu', { titulo: 'Permisos en Ubuntu', referencia: 'https://www.freecodecamp.org/news/linux-chmod-chown-change-file-permissions/' }],
     ]);
 
     public getLinkAndFuenteByKey(key: string = ''): Fuente {
