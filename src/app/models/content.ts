@@ -1679,6 +1679,21 @@ export const HARDWARE =
                 '',
                 '- Esta organización de capas permite una mejor depuración de errores, ',
                 ' - a la vez que cada capa tiene una responsabilidades bien definidad a la hora de recibir o enviar información ',
+            ]),
+        new Item('monitoreo',
+            [
+                '- Es un software que nos permite monitorizar y descubrir problemas a nivel de aplicación que pueden ser optimizados ',
+                '- Para esto, es necesario recoger y cuantificar valores como: ',
+                ' - Errores de la apliación, especificando cuales y cuantas veces sucedieron ',
+                ' - Tiempo de respuesta de la aplicación ',
+                ' - Identificación de trazas lentas ',
+                ' - Tiempo de ejecución de querys en la base de datos ',
+                ' - Tiempo de respuesta de llamados externos ',
+                '',
+                '- Mediante esto es posible encontrar errores como: ',
+                ' - Consultas a bases de datos que pueden ser optimizadas ',
+                ' - Problemas con el Garbage Collector o la JVM ',
+                ' - Manejo erroneo de problemas ',
             ])
     ];
 
