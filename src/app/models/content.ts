@@ -1271,6 +1271,21 @@ export const CONOCIMIENTOS_EMPIRICOS =
                 ' - Cantantes que se creen muy talentosos sin tener tecnica vocal ',
                 ' - Pacientes que se automedican ya que creen saber más que sus doctores ',
                 ' - Personas que se entrenan y aumentan sus niveles de competencias, dandose cuenta de sus falencias ',
+            ]),
+        new Item('reforzamientoSkinner',
+            [
+                '- Mediante la manipulación experimental y la observación conductual se esbozo una de las primeras terorias en este ambito ',
+                '- Para modificar la conducta humanan o animal se puede utilizar los llamados reforzamientos, ya sean positivos o negativos',
+                '- Esto con el fin de eliminar, potenciar o inhibir conductas especificas ',
+                '- Los estimulos desencadenan respuestas especificas en las personas, por lo que mediante alguno refuerzo, ',
+                ' - se puede ejercer una influencia en dicha reacción o conducta para potenciarse o inhibirse ',
+                '',
+                '- Algunos de estos tipos de refuersos pueden ser: ',
+                ' - Primarios o intrinsecos -> conductas que generan satisfacción inmediata, comer por ejemplo ',
+                ' - Secundarios -> son aprendizajes externos y pueden ser materiales como el dinero o sociales como el recnocimiento ',
+                ' - Eliminacion de consecuencias -> son considerados negativos y van de la mano con eliminar actividades desagradables para las personas ',
+                '',
+                '- Los refuerzos pueden ser continuos o intermitentes dependiendo de la forma mas efectiva para el caso dado ',
             ])
     ];
 
