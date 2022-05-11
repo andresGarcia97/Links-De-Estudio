@@ -3809,6 +3809,25 @@ export const SEGURIDAD =
                 ' - Caja Gris -> Se tiene información limitada como tecnologias, dominios, cuentas legitimas y otros datos que pueden ser utiles ',
                 ' - Caja Blanca -> No se oculta ningun tipo de información, todos los detalles son previamente conocidos ',
             ]),
+        new Item('owaspTop',
+            [
+                '- Open Web Security Application Security ',
+                ' - Es una colección de recursos en los que incluye una guia de desarrollo para evitar problemas de seguridad ',
+                ' - Regularmente sacan un top 10 con los problemas más comunes y peligrosos a nivel general de las aplicaciones ',
+                '',
+                ' 1 Broken access control -> fallo o intrusion de los permisos de acción de los usuarios, exponiendo o perdiendo información sensible ',
+                ' 2 Cryptografic failures -> fallos en la ocultación de la información debido a falencias en la encriptación ',
+                ' 3 Injection -> la información no es filtrada ni valida previamente por lo que se pueden inyectar scripts de SQL y NoSQL maliciosos ',
+                ' 4 Insecure Design -> fallas en los diseños iniciales que no contemplan validaciones de seguridad ',
+                ' 5 Security Misconfiguration -> privilegios y configuraciones laxas o innecesarias ',
+                ' 6 Vulnerable and Outdated Components -> desconocimiento de las versiones manejadas en los diferentes componentes de la aplicación ',
+                ' 7 Identification and Authentication Failures -> contraseñas debiles o conocidad por los atacantes son usadas en la aplicación ',
+                ' 8 Software and Data Integrity Failures -> uso de fuentes desconocidas o librerias de terceros de poca confianza ',
+                ' 9 Security Logging and Monitoring Failures -> el registro y monitoreo de la seguridad puede ser insuficiente por lo que habrian lugares sin supervisión ',
+                ' 10 Server-Side Request Forgery -> esto ocurre cuando se obtiene un recurso de una url sin validar la confiabilidad de esta ',
+                '',
+                '- Estos son los incidentes de seguridad para el top del 2021',
+            ]),
     ];
 
 export const SMELLS_CODES =

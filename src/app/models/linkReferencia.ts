@@ -455,6 +455,7 @@ export const SEGURIDAD = new Map<string, Referencia>([
     ['honeypot', new Referencia('https://latam.kaspersky.com/resource-center/threats/what-is-a-honeypot', 'Honetypot', 'seguridad')],
     ['zeroDayExploit', new Referencia('https://latam.kaspersky.com/resource-center/definitions/zero-day-exploit', 'Zero Day Exploit', 'seguridad')],
     ['pentest', new Referencia('https://www.hiberus.com/crecemos-contigo/pentesting-owasp-fases-metodologia/', 'Testing de intrusión', 'seguridad')],
+    ['owaspTop', new Referencia('https://owasp.org/Top10/', 'OWASP Top 10', 'seguridad')],
 ]);
 
 export const SMELL_CODES = new Map<string, Referencia>([
