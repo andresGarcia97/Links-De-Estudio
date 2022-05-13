@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { DockerComponent } from './docker.component';
+import { ContenedoresComponent } from './contenedores.component';
 
 describe('DockerComponent', () => {
-  let component: DockerComponent;
-  let fixture: ComponentFixture<DockerComponent>;
+  let component: ContenedoresComponent;
+  let fixture: ComponentFixture<ContenedoresComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DockerComponent ]
+      declarations: [ ContenedoresComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DockerComponent);
+    fixture = TestBed.createComponent(ContenedoresComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

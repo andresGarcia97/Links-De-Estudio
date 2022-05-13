@@ -8,7 +8,7 @@ import { BuenasPracticasComponent } from './components/buenas-practicas/buenas-p
 import { CalidadComponent } from './components/calidad/calidad.component';
 import { CompilacionComponent } from './components/compilacion/compilacion.component';
 import { ConocimientosEmpiricosComponent } from './components/conocimientos-empiricos/conocimientos-empiricos.component';
-import { DockerComponent } from './components/dockerC/docker.component';
+import { ContenedoresComponent } from './components/contenedores/contenedores.component';
 import { EstrategiasDesarrolloComponent } from './components/estrategias-desarrollo/estrategias-desarrollo.component';
 import { FrameworksComponent } from './components/frameworks/frameworks.component';
 import { FuentesComponent } from './components/fuentes/fuentes.component';
@@ -83,7 +83,7 @@ export class AppComponent {
     // 20 - 23
     ConocimientosEmpiricosComponent, FuentesComponent, SeguridadComponent, AnalisisComponent,
     // 24 - 27
-    DockerComponent, PooComponent, AgilesComponent, SmellsCodesComponent,
+    ContenedoresComponent, PooComponent, AgilesComponent, SmellsCodesComponent,
     // 28 - 31
     MetaCaracteristicasComponent, GlosarioComponent, NubeComponent, PersonasComponent,
     // 32 - 35

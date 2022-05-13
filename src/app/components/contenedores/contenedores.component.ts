@@ -4,9 +4,9 @@ import { LinkReferencia } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-docker',
-  templateUrl: './docker.component.html'
+  templateUrl: './contenedores.component.html'
 })
-export class DockerComponent extends LinkReferencia {
+export class ContenedoresComponent extends LinkReferencia {
 
   items = DOCKER;
 

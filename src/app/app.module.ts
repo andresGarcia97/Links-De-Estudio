@@ -11,7 +11,7 @@ import { CompilacionComponent } from './components/compilacion/compilacion.compo
 import { ConocimientosEmpiricosComponent } from './components/conocimientos-empiricos/conocimientos-empiricos.component';
 import { ButtonComponent } from './components/core/button/button.component';
 import { ReferenciaComponent } from './components/core/referencia/referencia.component';
-import { DockerComponent } from './components/dockerC/docker.component';
+import { ContenedoresComponent } from './components/contenedores/contenedores.component';
 import { EstrategiasDesarrolloComponent } from './components/estrategias-desarrollo/estrategias-desarrollo.component';
 import { FrameworksComponent } from './components/frameworks/frameworks.component';
 import { FuentesComponent } from './components/fuentes/fuentes.component';
@@ -74,7 +74,7 @@ import { ButtonBeforeComponent } from './components/core/button-before/button-be
     FuentesComponent,
     SeguridadComponent,
     AnalisisComponent,
-    DockerComponent,
+    ContenedoresComponent,
     PooComponent,
     AgilesComponent,
     SmellsCodesComponent,

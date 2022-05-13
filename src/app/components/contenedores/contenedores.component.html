@@ -1,6 +1,6 @@
 <div class="content">
 
-  <h2>Docker</h2>
+  <h2>Contenedores</h2>
 
   <div class="card-container">
 
@@ -34,9 +34,9 @@
 
     <div class="card-container less-margin">
 
-      <app-button-next *ngIf="!(itemSelected === lengthItems)" (click)="getNextElement()"></app-button-next>
-
       <app-button-before *ngIf="!(itemSelected === 0)" (click)="getBeforeElement()"></app-button-before>
+      
+      <app-button-next *ngIf="!(itemSelected === lengthItems)" (click)="getNextElement()"></app-button-next>
 
     </div>
 
