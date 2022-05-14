@@ -1291,6 +1291,17 @@ export const CONOCIMIENTOS_EMPIRICOS =
 
 export const DOCKER =
     [
+        new Item('lxc',
+            [
+                '- Los contenedores de aplicaciones en linux buscaban mejorar la asignación de recursos a los procesos por medio de una interfaz de espacio de usuario ',
+                '- Esto con el objetivo de mejorar mejorar el rendimiento de las maquinas virtuales y el uso de recursos de estas ',
+                '- El uso de maquinas virtuales y el software de supervisor obligaban a tener un uso de recursos fijo que en ocasiones era desperdiciado ',
+                '- En estos contenedores no hay emulación de hardware por lo que solo ejecutaba con lo que necesitaba obteniendolo directamente del host ',
+                '- Pero los ambientes no estaban completamente aislados, por lo que compartir el mismo host podia conllevar problemas si habian aplicaciones similares ',
+                '- Tambien se ha de tener en cuenta que este ambiente solo estaba disponible en un SO Linux como base, por lo que es poco portable ',
+                '- Aunque Docker inicialmente implementaba lxc, este se modifico totalmente volviendose muy popular y hoy en dia es considerado un estandar en la industria del software ',
+                '- Ya sea lxc, Docker o kubernetes, los contenedores solucionaron muchos problemas de compatibilidad facilitando el desarrollo en este y otros ambitos ',
+            ]),
         new Item('docker',
             [
                 '- Esta basado en el Kernel de Linux y su proposito es segregar los procesos de manera que sean independientes ',
@@ -1383,6 +1394,24 @@ export const DOCKER =
                 '- Docker Compose permite simplificar y administrar los contenedores por medio de archivos YAML ',
                 '- Esto permite conectar y administrar a los contenedores y sus puertos, volumenes, configuraciones, etc.. ',
                 '- Se puede usar con Dockerfiles previamente creados, o especificar todo directamente en el archivo ',
+            ]),
+        new Item('kubernetes',
+            [
+                '- Es una plataforma de codigo abierto para administrar cargas de trabajo y servicios por medio de contenedore ',
+                '- Es un proyecto liberado por Google en 2014 que ha crecido con la comunidad y sus buenas practicas ',
+                '- Este orquesta la infraestructura redes y almacenamiento, sin intervención de los usuarios ',
+                '- Esto ofrece la simplicidad de un PaaS y la flexibilidad de un IaaS ',
+                '',
+                '- Kubernetes no despliegua ni compila tu aplicación, eso se hacer por medio CI/CD ',
+                '- No provee servicios de capa de aplicación como midleware, bases de datos, cache, mensajes ni monitoreo automatico ',
+                '',
+                '- Al usar contenedores se pueden tener las siguientes mejoras: ',
+                ' - Mayor agilidad y velocidad de despliegue de aplicaciones ',
+                ' - Consistencia en los entornos de desarrollo, producción y pruebas sin importar las caracteristicas de la maquina fisica ',
+                ' - Posibilidad de Microservicios y sus ventajas',
+                ' - Aislamiento de recursos y una mejor administración de estos ',
+                '',
+                '- El nombre de kubernetes proviene del griego y significa timonel, de ahi su logo '
             ])
     ];
 

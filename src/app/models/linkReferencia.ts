@@ -14,7 +14,7 @@ export class LinkReferencia {
     lengthItems = 0;
 
     public components: Map<string, Referencia> = new Map([
-        ...AGILES,                   ...DOCKER,
+        ...AGILES,                   ...CONTAINERS,
         ...ANALISIS,                 ...ARQUITECTURAS,
         ...BUENAS_PRACTICAS,         ...CALIDAD,
         ...COMPILACION,              ...CONOCIMIENTO_EMPIRICO,
@@ -179,14 +179,16 @@ export const CONOCIMIENTO_EMPIRICO = new Map<string, Referencia>([
     ['reforzamientoSkinner', new Referencia('https://psicologiaymente.com/psicologia/teoria-reforzamiento-skinner', 'Reforzamiento de conductas', 'empirico')],
 ]);
 
-export const DOCKER = new Map<string, Referencia>([
-    ['docker', new Referencia('https://www.xataka.com/otros/docker-a-kubernetes-entendiendo-que-contenedores-que-mayores-revoluciones-industria-desarrollo', '¿ Que es Docker ?', 'docker')],
-    ['images', new Referencia('https://clouding.io/hc/es/articles/360010283060-Trabajando-con-im%C3%A1genes-en-Docker', '¿ Que es una imagen ?', 'docker')],
-    ['containers', new Referencia('https://aulasoftwarelibre.github.io/taller-de-docker/containers/', '¿ Que es un contenedor ?', 'docker')],
-    ['volumes', new Referencia('https://www.josedomingo.org/pledin/2016/05/gestion-del-almacenamiento-en-docker/#:~:text=Un%20volumen%20es%20un%20directorio,podemos%20montar%20un%20mismo%20volumen.', '¿ Que es un volumen ?', 'docker')],
-    ['network', new Referencia('https://dockertips.com/algo_sobre_redes', 'Manejo de redes en Docker', 'docker')],
-    ['file', new Referencia('https://docs.docker.com/develop/develop-images/dockerfile_best-practices/', 'Comandos que acepta Docker', 'docker')],
-    ['compose', new Referencia('https://dockertips.com/utilizando-docker-compose#:~:text=Docker%20Compose%20es%20una%20herramienta%20que%20permite%20simplificar%20el%20uso%20de%20Docker.&text=En%20vez%20de%20utilizar%20Docker,Engine%20a%20realizar%20tareas%2C%20programaticamente', 'Manejo del docker-compose', 'docker')],
+export const CONTAINERS = new Map<string, Referencia>([
+    ['lxc', new Referencia('https://www.section.io/engineering-education/lxc-vs-docker-what-is-the-difference-and-why-docker-is-better/', 'Linux Containers', 'contenedoreres')],
+    ['docker', new Referencia('https://www.xataka.com/otros/docker-a-kubernetes-entendiendo-que-contenedores-que-mayores-revoluciones-industria-desarrollo', '¿ Que es Docker ?', 'contenedoreres')],
+    ['images', new Referencia('https://clouding.io/hc/es/articles/360010283060-Trabajando-con-im%C3%A1genes-en-Docker', '¿ Que es una imagen ?', 'Contenedores')],
+    ['containers', new Referencia('https://aulasoftwarelibre.github.io/taller-de-docker/containers/', '¿ Que es un contenedor ?', 'Contenedores')],
+    ['volumes', new Referencia('https://www.josedomingo.org/pledin/2016/05/gestion-del-almacenamiento-en-docker/#:~:text=Un%20volumen%20es%20un%20directorio,podemos%20montar%20un%20mismo%20volumen.', '¿ Que es un volumen ?', 'Contenedores')],
+    ['network', new Referencia('https://dockertips.com/algo_sobre_redes', 'Manejo de redes en Docker', 'Contenedores')],
+    ['file', new Referencia('https://docs.docker.com/develop/develop-images/dockerfile_best-practices/', 'Comandos que acepta Docker', 'Contenedores')],
+    ['compose', new Referencia('https://dockertips.com/utilizando-docker-compose#:~:text=Docker%20Compose%20es%20una%20herramienta%20que%20permite%20simplificar%20el%20uso%20de%20Docker.&text=En%20vez%20de%20utilizar%20Docker,Engine%20a%20realizar%20tareas%2C%20programaticamente', 'Manejo del docker-compose', 'Contenedores')],
+    ['kubernetes', new Referencia('https://kubernetes.io/es/docs/concepts/overview/what-is-kubernetes/', 'Kubernetes', 'Contenedores')],
 ]);
 
 export const ESTRATEGIAS_DESARROLLO = new Map<string, Referencia>([

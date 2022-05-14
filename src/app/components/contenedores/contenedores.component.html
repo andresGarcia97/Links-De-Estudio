@@ -4,6 +4,8 @@
 
   <div class="card-container">
 
+    <app-button [tittleButton]="'Linux Containers'" (click)="getLinkAndTittleByKey('lxc')"></app-button>
+
     <app-button [tittleButton]="'Docker'" (click)="getLinkAndTittleByKey('docker')"></app-button>
 
     <app-button [tittleButton]="'Imagenes'" (click)="getLinkAndTittleByKey('images')"></app-button>
@@ -17,6 +19,8 @@
     <app-button [tittleButton]="'DockerFile'" (click)="getLinkAndTittleByKey('file')"></app-button>
 
     <app-button [tittleButton]="'Docker Compose'" (click)="getLinkAndTittleByKey('compose')"></app-button>
+
+    <app-button [tittleButton]="'Kubernetes'" (click)="getLinkAndTittleByKey('kubernetes')"></app-button>
 
   </div>
 
