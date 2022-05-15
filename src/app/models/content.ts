@@ -3857,6 +3857,24 @@ export const SEGURIDAD =
                 '',
                 '- Estos son los incidentes de seguridad para el top del 2021',
             ]),
+        new Item('stride',
+            [
+                '- Modelado de amenazas, es una estrategia para identificar y eliminar posibles vulnerabilidades antes de escribir codigo ',
+                '- Desarrollado en la decade del 90 por ingenieros de Microsoft, teniendo en cuenta 6 categorias: ',
+                '',
+                ' S -> Suplantacion de indentidad: ocurre cuando un hacker se hace pasar por otra persona, asumiendo la información de esta nueva identidad ',
+                '  - Esto con el fin de cometer fraude y/o robar datos personales ',
+                ' T -> Manipulación de datos: esto sucede cuando los datos son modificados sin autorización ',
+                '  - Por estas y otras razones es importante tener monitorear y revisar la integridad de los datos ',
+                ' R -> Repudio: cuando un actor desconocido realiza una operación ilegal o maliciosa en el sistema ',
+                '  - Y este no cuenta con la capacidad de rastrear la actividad maliciosa ',
+                ' I -> Divulgación de la información: Estas fugas de información sucede cuando los sitios revelan información confidencial involuntariamente ',
+                '  - Esto puede afectar el flujo normal de los datos, el acceso al codigo fuente, o mensajes de error con especificaciones internas ',
+                ' D -> Denegación de servicios: Estos impiden el correcto acceso a las aplicaciones para dejarlas fuera de servicio ',
+                '  - Estos ataques son principalmente de fuerza bruta ya que se requiere una gran capacidad para lograr su objetivo ',
+                ' E -> Elevación de privilegios: Usuarios con o sin autorización pueden acceder a posibilidades que previamente no tenian ',
+                '  - Estos accesos se dan debido a modificaciones ilegales en los permisos de los usuarios o accesos ilegales a la aplicación ',
+            ])
     ];
 
 export const SMELLS_CODES =
