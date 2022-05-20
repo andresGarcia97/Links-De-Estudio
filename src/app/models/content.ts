@@ -1,12 +1,24 @@
 
 export class Content {
 
-    public temas: Item[] = [...PRUEBAS, ...AGILES, ...ANALISIS, ...ARQUITECTURAS, ...BUENAS_PRACTICAS,
-    ...CALIDAD, ...COMPILACION, ...META_CARACTERISTICAS, ...CONOCIMIENTOS_EMPIRICOS, ...DOCKER,
-    ...ESTATEGIAS_DESARROLLO, ...FRAMEWORKS, ...GIT, ...HARDWARE, ...HISTORIAS_USUARIO, ...WEB,
-    ...MALAS_PRACTICAS, ...META_ESTRUCTURAS, ...METODOLOGIAS, ...PARADIGMAS, ...NUBE, ...OTROS,
-    ...PATRONES, ...PERSONAS, ...POO, ...BASES_DE_DATOS, ...PRINCIPIOS, ...PRUEBAS_AVANZADAS,
-    ...REFACTORIZACION, ...REQUISITOS, ...SEGURIDAD, ...SMELLS_CODES, ...UML, ...VERSIONAMIENTO
+    public temas: Item[] = [
+        ...PRUEBAS, ...AGILES,
+        ...ANALISIS, ...ARQUITECTURAS,
+        ...BUENAS_PRACTICAS, ...CALIDAD,
+        ...COMPILACION, ...META_CARACTERISTICAS,
+        ...CONOCIMIENTOS_EMPIRICOS, ...DOCKER,
+        ...ESTATEGIAS_DESARROLLO, ...FRAMEWORKS,
+        ...GIT, ...HARDWARE,
+        ...HISTORIAS_USUARIO, ...WEB,
+        ...MALAS_PRACTICAS, ...META_ESTRUCTURAS,
+        ...METODOLOGIAS, ...PARADIGMAS,
+        ...NUBE, ...OTROS,
+        ...PATRONES, ...PERSONAS,
+        ...POO, ...BASES_DE_DATOS,
+        ...PRINCIPIOS, ...PRUEBAS_AVANZADAS,
+        ...REFACTORIZACION, ...REQUISITOS,
+        ...SEGURIDAD, ...SMELLS_CODES,
+        ...UML, ...VERSIONAMIENTO
     ];
 
 }
@@ -2826,6 +2838,13 @@ export const PERSONAS =
                 '- Esta capa no existe como tal, es una expresión para aludir la culpa al usuario ',
                 '- El nombre viene del modelo OSI que consta de 7 capas, donde la septima capa es la aplicación, la misma que usa el usuario final ',
                 '- Estos errores son de las principales fuente de error en las organizaciones y excelente puerta de entrada para los hackers ',
+            ]),
+        new Item('noNewsGoodNews',
+            [
+                '- Si no hay noticias son buenas noticias ',
+                '- Tan simple como ejecutar un comando y este no devuelve un mensaje de error, si no que se ejecuto con exito ',
+                '- Los codigos de error se establecieron para poner de acuerdo a desarrolladores y usuarios ',
+                '- Usar los codigos de error para dar información es una manera util de entender los problemas ',
             ])
     ];
 
