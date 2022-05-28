@@ -45,6 +45,7 @@ import { MetaEstructuraComponent } from './components/meta-estructura/meta-estru
 import { MiniTerminalComponent } from './components/core/mini-terminal/mini-terminal.component';
 import { ButtonNextComponent } from './components/core/button-next/button-next.component';
 import { ButtonBeforeComponent } from './components/core/button-before/button-before.component';
+import { LeyesComponent } from './components/leyes/leyes.component';
 
 @NgModule({
   declarations: [
@@ -91,7 +92,8 @@ import { ButtonBeforeComponent } from './components/core/button-before/button-be
     MetaEstructuraComponent,
     MiniTerminalComponent,
     ButtonNextComponent,
-    ButtonBeforeComponent
+    ButtonBeforeComponent,
+    LeyesComponent
   ],
   imports: [
     BrowserModule,

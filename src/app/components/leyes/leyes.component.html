@@ -1,0 +1,41 @@
+<div class="content">
+
+    <h2>Conocimientos Empiricos</h2>
+  
+    <div class="card-container">
+  
+      <app-button [tittleButton]="'Balas de Plata'" (click)="getLinkAndTittleByKey('balas')"></app-button>
+  
+      <app-button [tittleButton]="'Leyes de Lehman'" (click)="getLinkAndTittleByKey('lehman')"></app-button>
+  
+      <app-button [tittleButton]="'Ley de Conway'" (click)="getLinkAndTittleByKey('conway')"></app-button>
+  
+      <app-button [tittleButton]="'Ley de Murphy'" (click)="getLinkAndTittleByKey('murphy')"></app-button>
+  
+      <app-button [tittleButton]="'Ley del pendulo'" (click)="getLinkAndTittleByKey('pendulo')"></app-button>
+    
+    </div>
+  
+    <app-referencia class="flexbox terminal" [referencia]="referencia" [titulo]="titulo"></app-referencia>
+  
+    <div class="terminal" [ngSwitch]="selection" #terminal>
+  
+      <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
+  
+      <span *ngFor="let item of items">
+        <span *ngSwitchCase="item.key">
+          <pre *ngFor="let content of item.content" [innerHtml]="content">{{content}}</pre>
+        </span>
+      </span>
+  
+      <div class="card-container less-margin">
+  
+        <app-button-before *ngIf="!(itemSelected === 0)" (click)="getBeforeElement()"></app-button-before>
+        
+        <app-button-next *ngIf="!(itemSelected === lengthItems)" (click)="getNextElement()"></app-button-next>
+        
+      </div>
+  
+    </div>
+  
+  </div>

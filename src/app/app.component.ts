@@ -16,6 +16,7 @@ import { GitComponent } from './components/git/git.component';
 import { GlosarioComponent } from './components/glosario/glosario.component';
 import { HardwareComponent } from './components/hardware/hardware.component';
 import { HistoriaUsuarioComponent } from './components/historia-usuario/historia-usuario.component';
+import { LeyesComponent } from './components/leyes/leyes.component';
 import { MalasPracticasComponent } from './components/malas-practicas/malas-practicas.component';
 import { MetaCaracteristicasComponent } from './components/meta-caracteristicas/meta-caracteristicas.component';
 import { MetaEstructuraComponent } from './components/meta-estructura/meta-estructura.component';
@@ -87,7 +88,9 @@ export class AppComponent {
     // 28 - 31
     MetaCaracteristicasComponent, GlosarioComponent, NubeComponent, PersonasComponent,
     // 32 - 35
-    CalidadComponent, PruebasAvanzadasComponent, HardwareComponent, MetaEstructuraComponent];
+    CalidadComponent, PruebasAvanzadasComponent, HardwareComponent, MetaEstructuraComponent,
+    // 36 - 39
+    LeyesComponent];
 
   public crearComponent(component: any, $element: any): void {
     this.buttonCloseComponent = true;

@@ -30,7 +30,8 @@ export class LinkReferencia {
         ...PRINCIPIOS,               ...SEGURIDAD,
         ...SMELL_CODES,              ...PERSISTENCY,
         ...UML,                      ...VERSIONAMIENTO,
-        ...HARDWARE,                 ...WEB
+        ...HARDWARE,                 ...WEB,
+        ...LEYES
     ]);
 
     public getLinkAndTittleByKey(key: string = ''): void {
@@ -162,10 +163,6 @@ export const COMPILACION = new Map<string, Referencia>([
 ]);
 
 export const CONOCIMIENTO_EMPIRICO = new Map<string, Referencia>([
-    ['balas', new Referencia('https://gist.github.com/esparta/582e43af7b803e0aaf69', 'Balas de Plata', 'empirico')],
-    ['lehman', new Referencia('https://medium.com/@cartontabla/las-leyes-de-lehman-b57c623c3404#:~:text=Las%20Leyes%20de%20Lehman%20son,digamos%20que%20podr%C3%ADan%20ser%20ampliadas)', 'Leyes de Lehman', 'empirico')],
-    ['conway', new Referencia('https://www.javiergarzas.com/2015/06/conway.html', 'Ley de Conway', 'empirico')],
-    ['murphy', new Referencia('https://www.caracteristicas.co/ley-de-murphy/', 'Ley de Murphy', 'empirico')],
     ['cristales', new Referencia('https://lamenteesmaravillosa.com/la-teoria-las-ventanas-rotas/', 'Efecto de los cristales rotos', 'empirico')],
     ['quo', new Referencia('https://psicologiaymente.com/social/sesgo-statu-quo#:~:text=El%20sesgo%20del%20statu%20quo%20es%20un%20sesgo%20de%20tipo,sobre%20un%20aspecto%20en%20concreto.', 'Status Quo', 'empirico')],
     ['costo', new Referencia('https://psicologiaymente.com/psicologia/falacia-costo-hundido#:~:text=En%20resumen%2C%20la%20falacia%20del,cuyas%20expectativas%20son%20muy%20desalentadoras.', 'Falacia del costo hundido', 'empirico')],
@@ -174,9 +171,16 @@ export const CONOCIMIENTO_EMPIRICO = new Map<string, Referencia>([
     ['prejuicios', new Referencia('https://www.boream.com/insights/sesgos-cognitivos-y-prejuicios-en-los-procesos-de-diseno-de-interfaz-como-combatirlos', 'Prejuicios', 'empirico')],
     ['multitarea', new Referencia('https://www.sodexo.es/blog/multitarea-multitasking/', 'Pros y Contras del multitasking', 'empirico')],
     ['maxwellCurve', new Referencia('https://blog.axosoft.com/the-maxwell-curve-blunder-in-the-name-of-scrum/', 'La curva de Maxwell', 'empirico')],
-    ['pendulo', new Referencia('http://www.grupocrece.es/blog/Psicolog%C3%ADala-ley-del-pndulo-en-psicologa', 'Ley del pendulo', 'empirico')],
     ['dunningKruger', new Referencia('https://www.awenpsicologia.com/efecto-dunning-kruger/', 'Efecto Dunning-Kruger', 'empirico')],
     ['reforzamientoSkinner', new Referencia('https://psicologiaymente.com/psicologia/teoria-reforzamiento-skinner', 'Reforzamiento de conductas', 'empirico')],
+]);
+
+export const LEYES = new Map<string, Referencia>([
+    ['balas', new Referencia('https://gist.github.com/esparta/582e43af7b803e0aaf69', 'Balas de Plata', 'leyes')],
+    ['lehman', new Referencia('https://medium.com/@cartontabla/las-leyes-de-lehman-b57c623c3404#:~:text=Las%20Leyes%20de%20Lehman%20son,digamos%20que%20podr%C3%ADan%20ser%20ampliadas)', 'Leyes de Lehman', 'leyes')],
+    ['conway', new Referencia('https://www.javiergarzas.com/2015/06/conway.html', 'Ley de Conway', 'leyes')],
+    ['murphy', new Referencia('https://www.caracteristicas.co/ley-de-murphy/', 'Ley de Murphy', 'leyes')],
+    ['pendulo', new Referencia('http://www.grupocrece.es/blog/Psicolog%C3%ADala-ley-del-pndulo-en-psicologa', 'Ley del pendulo', 'leyes')],
 ]);
 
 export const CONTAINERS = new Map<string, Referencia>([
