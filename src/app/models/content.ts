@@ -1303,6 +1303,14 @@ export const LEYES =
                 '',
                 '- Los extremos no necesariamente son malos, ya que permiten tener nuevas experiencias, y conocer nuevos puntos de vista ',
                 '- Esto se debe hacer de manera racional, y bajo nuestra propia elección, para que podamos reflexionar en vez de seguir ciegamente ',
+            ]),
+        new Item('hyrum',
+            [
+                '- Cualquier cosa que ofrezcas será usada por alguien',
+                '- El mantenimiento de las aplicaciones siempre va a ser una constante, por lo que reducir características sin uso o inútiles es una opción de reducirlo ',
+                '- El problema surge cuando algún cliente la estaba usando con otro fin, o simplemente le era útil para su nicho específico de mercado ',
+                '- Hacer esto puede conllevar problemas con los clientes ya que estos cambios abruptos hacen sentir al cliente que no están siendo considerados ',
+                '- También hay que tener en cuenta que estos cambios a veces son fundamentales y se deben hacer incomoden o no a tus usuarios ',
             ])
     ];
 

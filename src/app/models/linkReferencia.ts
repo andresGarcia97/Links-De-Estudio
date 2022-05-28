@@ -181,6 +181,7 @@ export const LEYES = new Map<string, Referencia>([
     ['conway', new Referencia('https://www.javiergarzas.com/2015/06/conway.html', 'Ley de Conway', 'leyes')],
     ['murphy', new Referencia('https://www.caracteristicas.co/ley-de-murphy/', 'Ley de Murphy', 'leyes')],
     ['pendulo', new Referencia('http://www.grupocrece.es/blog/Psicolog%C3%ADala-ley-del-pndulo-en-psicologa', 'Ley del pendulo', 'leyes')],
+    ['hyrum', new Referencia('https://thebootstrappedfounder.com/hyrums-law/', 'Ley de Hyrum', 'leyes')],
 ]);
 
 export const CONTAINERS = new Map<string, Referencia>([
