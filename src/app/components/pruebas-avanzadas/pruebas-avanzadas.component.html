@@ -4,21 +4,9 @@
 
   <div class="card-container">
 
-    <app-button [tittleButton]="'Caja Negra & Blanca'" (click)="getLinkAndTittleByKey('cajaNegraBlanca')"></app-button>
-
-    <app-button [tittleButton]="'Valores Limites'" (click)="getLinkAndTittleByKey('valorLimite')"></app-button>
-
-    <app-button [tittleButton]="'Equivalencias'" (click)="getLinkAndTittleByKey('clasesEquivalencia')"></app-button>
-
-    <app-button [tittleButton]="'Causa -> Efecto'" (click)="getLinkAndTittleByKey('grafosCausaEfecto')"></app-button>
-
-    <app-button [tittleButton]="'Tipos de pruebas'" (click)="getLinkAndTittleByKey('tiposDePruebas')"></app-button>
-
-    <app-button [tittleButton]="'Outside & Inside'" (click)="getLinkAndTittleByKey('outsideInside')"></app-button>
-
-    <app-button [tittleButton]="'Casos de prueba'" (click)="getLinkAndTittleByKey('casosDePruebas')"></app-button>
-
-    <app-button [tittleButton]="'Casos de uso'" (click)="getLinkAndTittleByKey('casosDeUso')"></app-button>
+    <span *ngFor="let tittle of tittles | keyvalue: asIsOrder">
+      <app-button [tittleButton]=tittle.value (click)="getLinkAndTittleByKey(tittle.key)"></app-button>
+    </span>
 
   </div>
 

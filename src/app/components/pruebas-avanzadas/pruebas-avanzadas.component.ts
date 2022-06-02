@@ -12,4 +12,16 @@ export class PruebasAvanzadasComponent extends LinkReferencia {
 
   lengthItems = this.items.length - 1;
 
+  tittles = new Map<string, string>([
+    ['cajaNegraBlanca', 'Caja Negra & Blanca'],
+    ['valorLimite', 'Valores Limites'],
+    ['clasesEquivalencia', 'Equivalencias'],
+    ['grafosCausaEfecto', 'Causa -> Efecto'],
+    ['tiposDePruebas', 'Tipos de pruebas'],
+    ['outsideInside', 'Outside & Inside'],
+    ['casosDePruebas', 'Casos de prueba'],
+    ['casosDeUso', 'Casos de uso'],
+    ['codeSmellsTests1','Code smells en testing #1']
+  ]);
+
 }
