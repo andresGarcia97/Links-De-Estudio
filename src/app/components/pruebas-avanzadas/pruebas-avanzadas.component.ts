@@ -21,7 +21,8 @@ export class PruebasAvanzadasComponent extends LinkReferencia {
     ['outsideInside', 'Outside & Inside'],
     ['casosDePruebas', 'Casos de prueba'],
     ['casosDeUso', 'Casos de uso'],
-    ['codeSmellsTests1','Code smells en testing #1']
+    ['codeSmellsTests1','Code smells en testing #1'],
+    ['codeSmellsTests2','Code smells en testing #2']
   ]);
 
 }
