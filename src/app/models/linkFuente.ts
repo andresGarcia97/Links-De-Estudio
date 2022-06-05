@@ -16,6 +16,7 @@ export class LinkFuente {
         ['htmlElements', { titulo: 'Etiquetas HTML', referencia: 'https://lenguajehtml.com/html/introduccion/tabla-periodica-html5/' }],
         ['glassmorphism', { titulo: 'Glassmorphism', referencia: 'https://hype4.academy/tools/glassmorphism-generator' }],
         ['canIuse', { titulo: 'Can I Use ?', referencia: 'https://caniuse.com/' }],
+        ['javascriptDataStructures', { titulo: 'Estructuras en Javascript', referencia: 'https://www.freecodecamp.org/news/data-structures-in-javascript-with-examples/' }],
         // backend
         ['sqlTutorial', { titulo: 'SQL Tutorial', referencia: 'https://www.w3schools.com/sql/default.asp' }],
         ['patronesDisenoJava', { titulo: 'Patrones de diseño en Java', referencia: 'https://www.journaldev.com/1827/java-design-patterns-example-tutorial' }],
@@ -53,6 +54,7 @@ export class LinkFuente {
         ['svgRepo', { titulo: 'SVG Repo', referencia: 'https://www.svgrepo.com/' }],
         ['carbon', { titulo: 'Carbon screenshots', referencia: 'https://github.com/carbon-app/carbon' }],
         ['overApi', { titulo: 'Over Api', referencia: 'https://overapi.com/' }],
+        ['javascriptFrameworks', { titulo: 'Javascript frameworks', referencia: 'https://www.pzuraq.com/blog/four-eras-of-javascript-frameworks' }],
         // seguridad
         ['noreferrer', { titulo: 'noreferrer in links', referencia: 'https://web.dev/external-anchors-use-rel-noopener/?utm_source=lighthouse&utm_medium=devtools' }],
         ['owasp', { titulo: 'OWASP', referencia: 'https://owasp.org/' }],
