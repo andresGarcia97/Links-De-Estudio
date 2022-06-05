@@ -9,17 +9,19 @@ import { BuenasPracticasComponent } from './components/buenas-practicas/buenas-p
 import { CalidadComponent } from './components/calidad/calidad.component';
 import { CompilacionComponent } from './components/compilacion/compilacion.component';
 import { ConocimientosEmpiricosComponent } from './components/conocimientos-empiricos/conocimientos-empiricos.component';
-import { ButtonComponent } from './components/core/button/button.component';
-import { ReferenciaComponent } from './components/core/referencia/referencia.component';
 import { ContenedoresComponent } from './components/contenedores/contenedores.component';
+import { CoreModule } from './components/core/core.module';
 import { EstrategiasDesarrolloComponent } from './components/estrategias-desarrollo/estrategias-desarrollo.component';
 import { FrameworksComponent } from './components/frameworks/frameworks.component';
 import { FuentesComponent } from './components/fuentes/fuentes.component';
 import { GitComponent } from './components/git/git.component';
 import { GlosarioComponent } from './components/glosario/glosario.component';
+import { HardwareComponent } from './components/hardware/hardware.component';
 import { HistoriaUsuarioComponent } from './components/historia-usuario/historia-usuario.component';
+import { LeyesComponent } from './components/leyes/leyes.component';
 import { MalasPracticasComponent } from './components/malas-practicas/malas-practicas.component';
 import { MetaCaracteristicasComponent } from './components/meta-caracteristicas/meta-caracteristicas.component';
+import { MetaEstructuraComponent } from './components/meta-estructura/meta-estructura.component';
 import { MetodologiasComponent } from './components/metodologias/metodologias.component';
 import { NubeComponent } from './components/nube/nube.component';
 import { OtrosComponent } from './components/otros/otros.component';
@@ -28,6 +30,7 @@ import { PatronesComponent } from './components/patrones/patrones.component';
 import { PersonasComponent } from './components/personas/personas.component';
 import { PooComponent } from './components/poo/poo.component';
 import { PrincipiosComponent } from './components/principios/principios.component';
+import { PruebasAvanzadasComponent } from './components/pruebas-avanzadas/pruebas-avanzadas.component';
 import { PruebasComponent } from './components/pruebas/pruebas.component';
 import { RefactorizacionComponent } from './components/refactorizacion/refactorizacion.component';
 import { RequisitosComponent } from './components/requisitos/requisitos.component';
@@ -38,20 +41,11 @@ import { UmlComponent } from './components/uml/uml.component';
 import { VersionamientoComponent } from './components/versionamiento/versionamiento.component';
 import { WebComponent } from './components/web/web.component';
 import { FilterPipe } from './pipes/filter.pipe';
-import { FuenteComponent } from './components/core/fuente/fuente.component';
-import { PruebasAvanzadasComponent } from './components/pruebas-avanzadas/pruebas-avanzadas.component';
-import { HardwareComponent } from './components/hardware/hardware.component';
-import { MetaEstructuraComponent } from './components/meta-estructura/meta-estructura.component';
-import { MiniTerminalComponent } from './components/core/mini-terminal/mini-terminal.component';
-import { ButtonNextComponent } from './components/core/button-next/button-next.component';
-import { ButtonBeforeComponent } from './components/core/button-before/button-before.component';
-import { LeyesComponent } from './components/leyes/leyes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PrincipiosComponent,
-    ReferenciaComponent,
     ParadigmasComponent,
     ArquitecturasComponent,
     PatronesComponent,
@@ -83,21 +77,17 @@ import { LeyesComponent } from './components/leyes/leyes.component';
     GlosarioComponent,
     NubeComponent,
     FilterPipe,
-    ButtonComponent,
     PersonasComponent,
     CalidadComponent,
-    FuenteComponent,
     PruebasAvanzadasComponent,
     HardwareComponent,
     MetaEstructuraComponent,
-    MiniTerminalComponent,
-    ButtonNextComponent,
-    ButtonBeforeComponent,
     LeyesComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
