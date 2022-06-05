@@ -1311,6 +1311,14 @@ export const LEYES =
                 '- El problema surge cuando algún cliente la estaba usando con otro fin, o simplemente le era útil para su nicho específico de mercado ',
                 '- Hacer esto puede conllevar problemas con los clientes ya que estos cambios abruptos hacen sentir al cliente que no están siendo considerados ',
                 '- También hay que tener en cuenta que estos cambios a veces son fundamentales y se deben hacer incomoden o no a tus usuarios ',
+            ]),
+        new Item('leblanc',
+            [
+                '- Esta ley nace debido a la tendencia natural de las personas de procastinar ',
+                '- Haciendo referencia a esas cosas que se dice que se van a arreglar despues, pero... , nunca se terminan arreglando ',
+                '- Despues == Nunca ',
+                '- Estos pendientes se pueden acumular poco a poco y convertirse en una bola de nieve, ',
+                ' - por lo que ideal es hacerlos en el acto, o como tareas a resolver en el corto plazo ',
             ])
     ];
 

@@ -4,17 +4,9 @@
   
     <div class="card-container">
   
-      <app-button [tittleButton]="'Balas de Plata'" (click)="getLinkAndTittleByKey('balas')"></app-button>
-  
-      <app-button [tittleButton]="'Leyes de Lehman'" (click)="getLinkAndTittleByKey('lehman')"></app-button>
-  
-      <app-button [tittleButton]="'Ley de Conway'" (click)="getLinkAndTittleByKey('conway')"></app-button>
-  
-      <app-button [tittleButton]="'Ley de Murphy'" (click)="getLinkAndTittleByKey('murphy')"></app-button>
-  
-      <app-button [tittleButton]="'Ley del pendulo'" (click)="getLinkAndTittleByKey('pendulo')"></app-button>
-
-      <app-button [tittleButton]="'Ley de Hyrum'" (click)="getLinkAndTittleByKey('hyrum')"></app-button>
+      <span *ngFor="let tittle of tittles | keyvalue: asIsOrder">
+        <app-button [tittleButton]=tittle.value (click)="getLinkAndTittleByKey(tittle.key)"></app-button>
+      </span>
     
     </div>
   

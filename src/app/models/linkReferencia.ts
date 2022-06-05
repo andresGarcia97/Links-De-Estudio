@@ -13,6 +13,8 @@ export class LinkReferencia {
     itemSelected = 0;
     lengthItems = 0;
 
+    tittles = new Map<string, string>([]);
+
     public components: Map<string, Referencia> = new Map([
         ...AGILES,                   ...CONTAINERS,
         ...ANALISIS,                 ...ARQUITECTURAS,
@@ -186,6 +188,7 @@ export const LEYES = new Map<string, Referencia>([
     ['murphy', new Referencia('https://www.caracteristicas.co/ley-de-murphy/', 'Ley de Murphy', 'leyes')],
     ['pendulo', new Referencia('http://www.grupocrece.es/blog/Psicolog%C3%ADala-ley-del-pndulo-en-psicologa', 'Ley del pendulo', 'leyes')],
     ['hyrum', new Referencia('https://thebootstrappedfounder.com/hyrums-law/', 'Ley de Hyrum', 'leyes')],
+    ['leblanc', new Referencia('https://www.quora.com/What-resources-could-I-read-about-Leblancs-law', 'Ley de Leblanc', 'leyes')],
 ]);
 
 export const CONTAINERS = new Map<string, Referencia>([
