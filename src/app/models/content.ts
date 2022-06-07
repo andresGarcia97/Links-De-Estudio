@@ -3481,6 +3481,31 @@ export const PRUEBAS_AVANZADAS =
                 ' - Asi lo escribi -> probando la implementación conocida, en vez del resultado ',
                 ' - Contorsionista -> debido a que las pruebas fueron escritas despues del codigo, este debe esforzarse para funcionar ',
                 ' - Caja de espadas -> entre mas tests se agreguen con los diversos puntos testeables, menos se evitaran las vias no descubiertas del codigo de produccion ',
+            ]),
+        new Item('mutation',
+            [
+                '- Es una tecnica de pruebas para encontrar fallas en las variaciones de un software y determinar la efectividad de las pruebas ',
+                '- Una mutación es una prueba con una ligera modificación del codigo base, si estas llegan a pasar se dice que el mutante sobrevivio por lo que el codigo esta erroneo ',
+                '- Entre menos mutaciones sobrevivan, mejor sera la calidad del codigo probado ',
+                '- Tambien se ha de tener en cuenta que pueden existir mutantes equivalentes, que hacen lo mismo que el codigo original, solo que con otra sintaxis ',
+                '',
+                '- Las mutaciones se pueden dar por varios casos: ',
+                ' - Cambiar valores usados en el codigo original, como empezar un ciclo en 1 y no en 0, etc... ',
+                ' - Eliminar, intercambiar o duplicar bloques de codigo declarados ',
+                ' - Decisiones al comparar valores, ya sea intercambiando un == por un != por ejemplo',
+                '',
+                '- Ventajas: ',
+                ' - permiten cubrir gran parte de la logica a probar ',
+                ' - detecta errores de facil alusión ',
+                ' - verifica la efectividad de nuestro conjunto de pruebas y si es necesario aumentarlas o corregirlas ',
+                '',
+                '- Desventajas: ',
+                ' - consumen una gran cantidad de recursos ',
+                ' - es necesario contrarrestar mutantes que no tienen sentidos o no son validos en el contexto de la prueba ',
+                '',
+                '- Supuestos en lo que se basan estas pruebas: ',
+                ' - Supuesto del programador competente: Si un programador es capaz de escribir y probar segementos pequeños, tambien lo hara con más grandes ',
+                ' - Supuesto del efecto del acoplamiento: Si se combinan 2 formas para formar un programa y ambas son buenas, entonces lo combinación tambien lo sera '
             ])
     ];
 

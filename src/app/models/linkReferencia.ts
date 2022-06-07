@@ -409,7 +409,8 @@ export const TESTING_ADVANCED = new Map<string, Referencia>([
     ['casosDePruebas', new Referencia('https://medium.com/grupo-carricay/qu%C3%A9-son-los-casos-de-pruebas-4893799b5b84', 'Casos de prueba', 'testing-avanzado')],
     ['casosDeUso', new Referencia('https://blogs.encamina.com/piensa-en-software-desarrolla-en-colores/qa-caso-de-uso-vs-caso-de-prueba/', 'Casos de uso', 'testing-avanzado')],
     ['codeSmellsTests1', new Referencia('https://codingcraftsman.wordpress.com/2018/09/27/test-smells/', 'Smells codes en testing #1', 'testing-avanzado')],
-    ['codeSmellsTests2', new Referencia('https://codingcraftsman.wordpress.com/2018/09/27/test-smells/', 'Smells codes en testing #2', 'testing-avanzado')]
+    ['codeSmellsTests2', new Referencia('https://codingcraftsman.wordpress.com/2018/09/27/test-smells/', 'Smells codes en testing #2', 'testing-avanzado')],
+    ['mutation', new Referencia('https://spa.myservername.com/what-is-mutation-testing#:~:text=La%20prueba%20de%20mutaci%C3%B3n%20es,prueba%20para%20aislar%20las%20desviaciones', 'Tests de mutación', 'testing-avanzado')]
 ]);
 
 export const REFACTORING = new Map<string, Referencia>([
