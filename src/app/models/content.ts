@@ -204,7 +204,7 @@ export const AGILES =
                 ' - constan con diferentes pesos, cada caracteristica de la Historia de Usuario tendra un valor ',
                 '',
                 '- Determinar el peso de las caracteristicas es más facil ya que se hace en base a una comparación, ',
-                ' - Donde previamente se ha tomado una HU como punto base y las demás sr miden con esta base ',
+                ' - Donde previamente se ha tomado una HU como punto base y las demás se miden con esta base ',
             ]),
         new Item('muda',
             [
