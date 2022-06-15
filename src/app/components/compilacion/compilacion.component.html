@@ -4,25 +4,9 @@
 
   <div class="card-container">
 
-    <app-button [tittleButton]="'¿ que es ?'" (click)="getLinkAndTittleByKey('compilacion')"></app-button>
-
-    <app-button [tittleButton]="'Niveles'" (click)="getLinkAndTittleByKey('nivel')"></app-button>
-
-    <app-button [tittleButton]="'Interpretes'" (click)="getLinkAndTittleByKey('interprete')"></app-button>
-
-    <app-button [tittleButton]="'Transpilación'" (click)="getLinkAndTittleByKey('transpilacion')"></app-button>
-
-    <app-button [tittleButton]="'Azucar Sintactico'" (click)="getLinkAndTittleByKey('azucarSintactico')"></app-button>
-
-    <app-button [tittleButton]="'Coerción'" (click)="getLinkAndTittleByKey('coercion')"></app-button>
-
-    <app-button [tittleButton]="'Ofuscación'" (click)="getLinkAndTittleByKey('ofuscacion')"></app-button>
-
-    <app-button [tittleButton]="'Tree Shaking'" (click)="getLinkAndTittleByKey('treeShaking')"></app-button>
-
-    <app-button [tittleButton]="'Grafos'" (click)="getLinkAndTittleByKey('grafos')"></app-button>
-
-    <app-button [tittleButton]="'Compilación anticipada'" (click)="getLinkAndTittleByKey('compilacionAnticipada')"></app-button>
+    <span *ngFor="let tittle of tittles | keyvalue: asIsOrder">
+      <app-button [tittleButton]=tittle.value (click)="getLinkAndTittleByKey(tittle.key)"></app-button>
+    </span>
 
   </div>
 

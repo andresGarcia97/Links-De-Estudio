@@ -166,6 +166,7 @@ export const COMPILACION = new Map<string, Referencia>([
     ['treeShaking', new Referencia('https://developer.mozilla.org/en-US/docs/Glossary/Tree_shaking', 'TreeShaking', 'compilacion')],
     ['grafos', new Referencia('https://www.grapheverywhere.com/grafos-que-son-tipos-orden-y-herramientas-de-visualizacion/', 'Grafos', 'compilacion')],
     ['compilacionAnticipada', new Referencia('https://hmong.es/wiki/Ahead-of-time_compilation', 'Compilación AOT', 'compilacion')],
+    ['duckTyping', new Referencia('https://towardsdatascience.com/duck-typing-python-7aeac97e11f8', 'Duck Typing', 'compilacion')],
 ]);
 
 export const CONOCIMIENTO_EMPIRICO = new Map<string, Referencia>([

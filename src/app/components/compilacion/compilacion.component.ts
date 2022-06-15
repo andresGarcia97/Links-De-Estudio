@@ -12,4 +12,18 @@ export class CompilacionComponent extends LinkReferencia {
 
   lengthItems = this.items.length - 1;
 
+  tittles = new Map<string, string>([
+    ['compilacion', '¿ que es ?'],
+    ['nivel', 'Niveles'],
+    ['interprete', 'Interpretes'],
+    ['transpilacion', 'Transpilación'],
+    ['azucarSintactico', 'Azucar Sintactico'],
+    ['coercion', 'Coerción'],
+    ['ofuscacion', 'Ofuscación'],
+    ['treeShaking', 'Tree Shaking'],
+    ['grafos','Grafos'],
+    ['compilacionAnticipada','Compilación anticipada'],
+    ['duckTyping','Duck Typing']
+  ]);
+
 }

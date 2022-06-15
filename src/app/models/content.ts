@@ -943,6 +943,16 @@ export const COMPILACION =
                 '- Un aspecto en contra de AOT es la carencia de realizar optimizaciones especificas para el entorno donde se va a ejecutar, ',
                 ' - ya que al contrario de JIT, esta no conoce toda la información necesaria, y tampoco puede especular para lograr esto ',
                 '- Un aspecto positivo de AOT es que al ya estar listos, se reducen los tiempos en el ambiente de ejecución ',
+            ]),
+        new Item('duckTyping',
+            [
+                '- Es un termino comumente asociado con los lenguajes de programación tipados dinamicamente y el concepto de polimorfismo ',
+                '- Al codigo en si mismo no le importa que tipo es el objeto, si no lo que puede hacer ',
+                '- "Si camina como pato y grazna como pato, entonces debe ser un pato " ',
+                '- Parte de esto es posible ya que estos lenguajes usan la sobrecarga automatica de operadores de modo que se adaptan al tipo de dato procesado ',
+                '- El polimorfismo permite que el comportarmiento sea el esperado, sin tener que aferrarse a algun tipo en concreto ',
+                '- Esto aunque flexible, puede traer problemas en tiempo de ejecución si se quiere usar comportamientos especificos de un tipo en otro que no los soporte ',
+                '- Tambien se pueden comprobar los tipos de los objetos antes de, pero esto generalmente denota un problema de diseño más que de la codificación en si ',
             ])
     ];
 
@@ -985,6 +995,7 @@ export const META_CARACTERISTICAS =
                 '- Las aserciones son predicados que se evaluan como ciertos o falsos en tiempo de ejecución ',
                 '- Estas comprobaciones favorecen el proceso de detectar errores y garantizar las condiciones de funcionamiento ',
                 '- Son una opción a considerar si se quiere evitar la programación defensiva ',
+                '- Existen diferentes librerias para su implementanción pero se desaconseja el uso de los "asserts" propios de Java en entornos productivos '
             ]),
         new Item('excepciones',
             [
