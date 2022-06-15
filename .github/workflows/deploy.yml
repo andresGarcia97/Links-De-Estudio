@@ -17,10 +17,11 @@ jobs:
       run: |
         npm install
         npm install -g @angular/cli
-        ng build --configuration production
+        ng build --configuration production --buildOptimizer=true
     - name: Firebase Deploy
       run: |
         sudo npm install -g firebase-tools
         firebase deploy --token ${{ secrets.FIREBASE_TOKEN }}
 
 #https://dev.to/gautemeekolsen/getting-started-with-github-actions-ci-cd-firebase-deploy-5g87
+#https://javascript.plainenglish.io/how-to-optimize-your-angular-application-for-production-e80537f1c9e
