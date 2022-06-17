@@ -12,4 +12,14 @@ export class AgilesComponent extends LinkReferencia {
 
   lengthItems = this.items.length - 1;
 
+  tittles = new Map<string, string>([
+    ['moscow', 'MOSCOW'],
+    ['scoring', 'Theme Scoring'],
+    ['muda', 'Desperdicio'],
+    ['5s', '5s'],
+    ['muda#1', 'Muda #1'],
+    ['muda#2', 'Muda #2'],
+    ['planningPoker', 'Planning Poker']
+  ]);
+
 }
