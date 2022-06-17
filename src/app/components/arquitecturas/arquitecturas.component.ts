@@ -12,4 +12,21 @@ export class ArquitecturasComponent extends LinkReferencia {
 
   lengthItems = this.items.length - 1;
 
+  tittles = new Map<string, string>([
+    ['definicion', 'Definición'],
+    ['inicioArquitectura', 'Introducción'],
+    ['principiosArquitecturas', 'Principios'],
+    ['arquitecturasLimpias', 'Limpias'],
+    ['capas', 'Capas'],
+    ['cliente', 'Cliente Servidor'],
+    ['intermediario', 'Intermediario'],
+    ['servicios', 'Microservicios'],
+    ['hexagonal', 'Hexagonal'],
+    ['noHexagonal', 'Ni Nueva, Ni hexagonal'],
+    ['mvc', 'MVC'],
+    ['mvp-mvc', 'MVP'],
+    ['otrasArquitecturas', 'Otras'],
+    ['monolitos', 'Monolitos'],
+  ]);
+
 }

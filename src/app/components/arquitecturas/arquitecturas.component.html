@@ -4,31 +4,9 @@
 
   <div class="card-container">
 
-    <app-button [tittleButton]="'Definición'" (click)="getLinkAndTittleByKey('definicion')"></app-button>
-
-    <app-button [tittleButton]="'Principios'" (click)="getLinkAndTittleByKey('principiosArquitecturas')"></app-button>
-
-    <app-button [tittleButton]="'Limpias'" (click)="getLinkAndTittleByKey('arquitecturasLimpias')"></app-button>
-
-    <app-button [tittleButton]="'Capas'" (click)="getLinkAndTittleByKey('capas')"></app-button>
-
-    <app-button [tittleButton]="'Cliente Servidor'" (click)="getLinkAndTittleByKey('cliente')"></app-button>
-
-    <app-button [tittleButton]="'Intermediario'" (click)="getLinkAndTittleByKey('intermediario')"></app-button>
-
-    <app-button [tittleButton]="'Microservicios'" (click)="getLinkAndTittleByKey('servicios')"></app-button>
-
-    <app-button [tittleButton]="'Hexagonal'" (click)="getLinkAndTittleByKey('hexagonal')"></app-button>
-    
-    <app-button [tittleButton]="'Ni Nueva, Ni hexagonal'" (click)="getLinkAndTittleByKey('noHexagonal')"></app-button>
-
-    <app-button [tittleButton]="'MVC'" (click)="getLinkAndTittleByKey('mvc')"></app-button>
-
-    <app-button [tittleButton]="'MVP'" (click)="getLinkAndTittleByKey('mvp-mvc')"></app-button>
-
-    <app-button [tittleButton]="'Otras'" (click)="getLinkAndTittleByKey('otrasArquitecturas')"></app-button>
-
-    <app-button [tittleButton]="'Monolitos'" (click)="getLinkAndTittleByKey('monolitos')"></app-button>
+    <span *ngFor="let tittle of tittles | keyvalue: asIsOrder">
+      <app-button [tittleButton]=tittle.value (click)="getLinkAndTittleByKey(tittle.key)"></app-button>
+    </span>
 
   </div>
 

@@ -19,7 +19,8 @@ export class LeyesComponent extends LinkReferencia {
     ['murphy', 'Ley de Murphy'],
     ['pendulo', 'Ley del pendulo'],
     ['hyrum', 'Ley de Hyrum'],
-    ['leblanc', 'Ley de Leblanc´s']
+    ['leblanc', 'Ley de Leblanc´s'],
+    ['leyesInternet', 'Leyes En Internet']
   ]);
 
 }
