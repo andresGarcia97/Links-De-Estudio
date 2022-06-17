@@ -1,4 +1,4 @@
-import { Component, ViewChild, ViewContainerRef } from '@angular/core';
+import { Component, OnInit, ViewChild, ViewContainerRef } from '@angular/core';
 import { fromEvent } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { AgilesComponent } from './components/agiles/agiles.component';
@@ -59,7 +59,14 @@ const porcentaje = scroll$.pipe(
   templateUrl: './app.component.html'
 })
 
-export class AppComponent {
+export class AppComponent implements OnInit {
+
+  ngOnInit(): void {
+    const now = new Date();
+    if(now.getHours() >= 19 || now.getHours() <= 5) {
+      this.changueMode();
+    }
+  }
 
   @ViewChild('componentes', { read: ViewContainerRef }) componentes!: ViewContainerRef;
 
@@ -105,7 +112,7 @@ export class AppComponent {
     }
   }
 
-  public cambiarModo(): void {
+  public changueMode(): void {
     this.buttonChangueMode = !this.buttonChangueMode;
     const cuerpoweb = document.body;
     cuerpoweb.classList.toggle('oscuro');
