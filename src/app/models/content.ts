@@ -3007,8 +3007,9 @@ export const POO =
             ]),
         new Item('polimorfismo',
             [
-                '- El polimorfismo es la capacidad de adoptar diferentes comportamientos dependiendo de si se es un hijo o un padre ',
-                '- Es una relajación de los tipos en lenguajes tipados y uno de los efectos de la herencia como especialización ',
+                '- El polimorfismo es la capacidad de adoptar diferentes comportamientos ante un mismo estimulo, dependiendo de si se es un tipo o un super tipo ',
+                '- Es una relajación del sistema de tipos en lenguajes tipados, además de que es un consecuencia directa de la herencia ',
+                '- Este se puede lograr de diversas maneras, como uso de interfaces, sobrecarga de metodos, herencia y uso de genericos '
             ]),
         new Item('herVScomp',
             [

@@ -4,19 +4,9 @@
 
   <div class="card-container">
 
-    <app-button [tittleButton]="'Escalamiento'" (click)="getLinkAndTittleByKey('escalamiento')"></app-button>
-
-    <app-button [tittleButton]="'CLI'" (click)="getLinkAndTittleByKey('cli')"></app-button>
-
-    <app-button [tittleButton]="'virtualizacion'" (click)="getLinkAndTittleByKey('virtualizacion')"></app-button>
-
-    <app-button [tittleButton]="'Nube Vs VM'" (click)="getLinkAndTittleByKey('nubeVSvirtualizacion')"></app-button>
-
-    <app-button [tittleButton]="'Rendering'" (click)="getLinkAndTittleByKey('rendering')"></app-button>
-
-    <app-button [tittleButton]="'Modelo OSI'" (click)="getLinkAndTittleByKey('modelOSI')"></app-button>
-
-    <app-button [tittleButton]="'Monitoreo'" (click)="getLinkAndTittleByKey('monitoreo')"></app-button>
+    <span *ngFor="let tittle of tittles | keyvalue: asIsOrder">
+      <app-button [tittleButton]=tittle.value (click)="getLinkAndTittleByKey(tittle.key)"></app-button>
+    </span>
 
   </div>
 

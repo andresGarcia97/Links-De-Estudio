@@ -379,7 +379,7 @@ export const POO = new Map<string, Referencia>([
     ['descomposicion', new Referencia('http://miguedt.blogspot.com/2013/01/descomposicion-funcional.html#:~:text=La%20descomposici%C3%B3n%20funcional%20se%20refiere,en%20funci%C3%B3n%20de%20la%20composici%C3%B3n', 'Descomposición', 'POO')],
     ['herencia', new Referencia('https://www.ecured.cu/Herencia_(Inform%C3%A1tica)', 'Herencia', 'POO')],
     ['polimorfismo', new Referencia('https://devexperto.com/herencia-vs-composicion/', 'Polimorfismo', 'POO')],
-    ['herVScomp', new Referencia('https://devexperto.com/herencia-vs-composicion/', 'Herencia vs Composición', 'POO')],
+    ['herVScomp', new Referencia('https://devexperto.com/herencia-vs-composicion/', 'Herencia VS Composición', 'POO')],
     ['enlaces', new Referencia('https://es.fondoperlaterra.org/comdifference-between-static-and-dynamic-binding-2', 'Enlace estatico & dinamico', 'POO')],
     ['acoplamientoComponentes', new Referencia('https://mg-laboratory.tistory.com/189', 'Acoplamiento de componentes', 'POO')],
 ]);
@@ -506,7 +506,7 @@ export const UML = new Map<string, Referencia>([
 export const VERSIONAMIENTO = new Map<string, Referencia>([
     ['git', new Referencia('https://david-estevez.gitbooks.io/the-git-the-bad-and-the-ugly/content/es/control-de-versiones.html', 'Gestores de versiones', 'versionamiento')],
     ['dependencias', new Referencia('https://www.hongkiat.com/blog/manage-dependencies-tools-webdev/', 'Gestores de dependencias', 'versionamiento')],
-    ['gradlevsmaven', new Referencia('https://www.chakray.com/es/gradle-vs-maven-definiciones-diferencias/', 'Gradle vs Maven', 'versionamiento')],
+    ['gradlevsmaven', new Referencia('https://www.chakray.com/es/gradle-vs-maven-definiciones-diferencias/', 'Gradle VS Maven', 'versionamiento')],
     ['versionamiento', new Referencia('https://ed.team/blog/como-se-deciden-las-versiones-del-software', 'Manejo de versiones', 'versionamiento')],
     ['licencias', new Referencia('https://www.bbvaapimarket.com/es/mundo-api/las-5-licencias-de-software-libre-mas-importantes-que-todo-desarrollador-debe-conocer/', 'Tipos de licencias', 'versionamiento')],
 ]);
@@ -515,8 +515,8 @@ export const HARDWARE = new Map<string, Referencia>([
     ['virtualizacion', new Referencia('https://www.redhat.com/es/topics/virtualization/what-is-a-virtual-machine', 'Virtualización', 'Hardware')],
     ['cli', new Referencia('https://searchdatacenter.techtarget.com/es/definicion/Interfaz-de-linea-de-comandos-o-CLI', 'Interfaz de Linea de Comandos', 'Hardware')],
     ['escalamiento', new Referencia('https://www.oscarblancarteblog.com/2017/03/07/escalabilidad-horizontal-y-vertical/', 'Escalamiento de un sistema', 'Hardware')],
-    ['nubeVSvirtualizacion', new Referencia('https://www.redhat.com/es/topics/cloud-computing/cloud-vs-virtualization', 'Nube Vs Virtualizacion', 'Hardware')],
-    ['rendering', new Referencia('https://www.freecodecamp.org/news/what-exactly-is-client-side-rendering-and-hows-it-different-from-server-side-rendering-bd5c786b340d/', 'Server-side vs client-side rendering', 'Hardware')],
+    ['nubeVSvirtualizacion', new Referencia('https://www.redhat.com/es/topics/cloud-computing/cloud-vs-virtualization', 'Nube VS Virtualizacion', 'Hardware')],
+    ['rendering', new Referencia('https://www.freecodecamp.org/news/what-exactly-is-client-side-rendering-and-hows-it-different-from-server-side-rendering-bd5c786b340d/', 'Server-side VS client-side rendering', 'Hardware')],
     ['modelOSI', new Referencia('https://www.cloudflare.com/es-es/learning/ddos/glossary/open-systems-interconnection-model-osi/', 'Modelo OSI', 'Hardware')],
     ['monitoreo', new Referencia('https://www.hiberus.com/crecemos-contigo/uso-de-los-apm-monitoreo-del-rendimiento-de-aplicaciones/#:~:text=Un%20APM%20(Application%20Performance%20Management,problemas%20a%20nivel%20de%20aplicaci%C3%B3n', 'Aplication Performance Management (apm)', 'Hardware')],
 ]);

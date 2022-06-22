@@ -12,4 +12,14 @@ export class HardwareComponent extends LinkReferencia {
 
   lengthItems = this.items.length - 1;
 
+  tittles = new Map<string, string>([
+    ['escalamiento', 'Escalamiento'],
+    ['cli', 'CLI'],
+    ['virtualizacion', 'virtualizacion'],
+    ['nubeVSvirtualizacion', 'Nube VS VM'],
+    ['rendering', 'Rendering'],
+    ['modelOSI', 'Modelo OSI'],
+    ['monitoreo', 'Monitoreo'],
+  ]);
+
 }
