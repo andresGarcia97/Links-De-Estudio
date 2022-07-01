@@ -4061,6 +4061,25 @@ export const SEGURIDAD =
                 '  - Estos ataques son principalmente de fuerza bruta ya que se requiere una gran capacidad para lograr su objetivo ',
                 ' E -> Elevación de privilegios: Usuarios con o sin autorización pueden acceder a posibilidades que previamente no tenian ',
                 '  - Estos accesos se dan debido a modificaciones ilegales en los permisos de los usuarios o accesos ilegales a la aplicación ',
+            ]),
+        new Item('ciam',
+            [
+                '- La experiencia de los clientes es algo fundamental hoy en dia, ya no es diferenciador, es un requisito basico ',
+                '- No solo eso, tiempos de crisis como la pandemia reciente han demostrado que las empresas que mejor conocen a sus clientes, estan mejor posicionadas ',
+                '- Parte de esto es la Gestion de Acceso e Identidad de Cliente (CIAM)',
+                '- Esto busca el equilibrio optimo entre comodidad, privacidad y seguridad para los clientes ',
+                '- Además de esto tambien se tiene en vista el uso, recopilación y almacenamiento de estos datos ',
+                '',
+                '- Centralizar estos datos permite tomar decisiones estrategicas con mayor precisión y efectividad ',
+                '- Hacer esto, se puede volver abrumador por lo que que se puede relegar a un tercero experto en este ambito (IDaaS) Identity as a Service ',
+                '',
+                '- Beneficios:',
+                ' - Escalabilidad -> manejar miles o millones de usuarios, ya sea trafico normal o de temporada, es un aspecto fundamental ',
+                ' - Experiencia del cliente -> diferentes formas de iniciar sesión y datos que se autorecopilan son buena formas de mejorarla ',
+                ' - Seguridad -> nada se gana una mejor experiencia de usuario si los datos son vulnerables, por esto es importante, ',
+                '  - el resguardo correcto de las credenciales y el correcto manejo de la autenticacion como de las sesiones ',
+                ' - Privacidad -> la centralización de los datos es necesaria para cumplir con las leyes e informes de privacidad de datos, ',
+                '  - estas leyes han puesto en foco la importancia del manejo de los datos, la recopilacion y su control ',
             ])
     ];
 

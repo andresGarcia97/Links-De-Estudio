@@ -461,6 +461,7 @@ export const SEGURIDAD = new Map<string, Referencia>([
     ['pentest', new Referencia('https://www.hiberus.com/crecemos-contigo/pentesting-owasp-fases-metodologia/', 'Testing de intrusión', 'seguridad')],
     ['owaspTop', new Referencia('https://owasp.org/Top10/', 'OWASP Top 10', 'seguridad')],
     ['stride', new Referencia('https://www.softwaresecured.com/stride-threat-modeling/', 'STRIDE', 'seguridad')],
+    ['ciam', new Referencia('https://auth0.com/blog/why-do-you-need-ciam/', 'CIAM', 'seguridad')],
 ]);
 
 export const SMELL_CODES = new Map<string, Referencia>([

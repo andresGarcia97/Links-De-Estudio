@@ -12,4 +12,22 @@ export class SeguridadComponent extends LinkReferencia {
 
   lengthItems = this.items.length - 1;
 
+  tittles = new Map<string, string>([
+    ['firewall', 'Firewall'],
+    ['protocolos', 'SSL, TSL, HTTPS'],
+    ['proxy', 'Proxy'],
+    ['estatico', 'Analisis de codigo'],
+    ['ciberSeguridad', 'Ciberseguridad'],
+    ['cia', 'CIA'],
+    ['noRepudio', 'NO Repudio'],
+    ['matrizDeRiesgo', 'Matriz de Riesgo'],
+    ['condicionDeCarrera', 'Carrera'],
+    ['honeypot', 'Honeypot'],
+    ['zeroDayExploit', 'Zero Day Exploit'],
+    ['pentest', 'Test de Intrusión'],
+    ['owaspTop', 'OWASP Top 10'],
+    ['stride', 'STRIDE'],
+    ['ciam','CIAM']
+  ]);
+
 }
