@@ -302,6 +302,7 @@ export const METODOLOGIAS = new Map<string, Referencia>([
     ['v', new Referencia('https://ingsoftware.weebly.com/ciclo-de-vida-en-v.html', 'Modelo en V', 'metodologias')],
     ['rup', new Referencia('https://metodoss.com/metodologia-rup/', 'Proceso Racional Unificado', 'metodologias')],
     ['kaizen', new Referencia('https://www.movertis.com/blog/que-es-la-metodologia-kaizen/#:~:text=En%20japon%C3%A9s%2C%20las%20palabras%20Kai,se%20deja%20nunca%20de%20ejecutar', 'Kaizen', 'metodologias')],
+    ['scrumban', new Referencia('https://kanbantool.com/es/scrumban-scrum-y-kanb', 'Scrumban', 'metodologias')]
 ]);
 
 export const NUBE_AND_APIS = new Map<string, Referencia>([

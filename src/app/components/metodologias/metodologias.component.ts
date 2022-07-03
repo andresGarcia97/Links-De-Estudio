@@ -12,4 +12,21 @@ export class MetodologiasComponent extends LinkReferencia {
 
   lengthItems = this.items.length - 1;
 
+  tittles = new Map<string, string>([
+    ['agiles', 'Agiles'],
+    ['scrum', 'SCRUM'],
+    ['kanban', 'Kanban'],
+    ['elevator', 'Elevator Pitch'],
+    ['canvas', 'Canvas'],
+    ['tradicionales', 'Tradicionales'],
+    ['cascada', 'Cascada'],
+    ['espiral', 'Espiral'],
+    ['iterativo', 'Iterativo-Incremental'],
+    ['extrema', 'XP'],
+    ['v', 'Modelo V'],
+    ['rup', 'RUP'],
+    ['kaizen', 'Kaizen'],
+    ['scrumban', 'Scrumban']
+  ]);
+
 }

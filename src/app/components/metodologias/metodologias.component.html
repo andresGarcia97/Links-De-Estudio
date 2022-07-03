@@ -4,31 +4,9 @@
 
   <div class="card-container">
 
-    <app-button [tittleButton]="'Agiles'" (click)="getLinkAndTittleByKey('agiles')"></app-button>
-
-    <app-button [tittleButton]="'SCRUM'" (click)="getLinkAndTittleByKey('scrum')"></app-button>
-
-    <app-button [tittleButton]="'Kanban'" (click)="getLinkAndTittleByKey('kanban')"></app-button>
-
-    <app-button [tittleButton]="'Elevator Pitch'" (click)="getLinkAndTittleByKey('elevator')"></app-button>
-
-    <app-button [tittleButton]="'Canvas'" (click)="getLinkAndTittleByKey('canvas')"></app-button>
-
-    <app-button [tittleButton]="'Tradicionales'" (click)="getLinkAndTittleByKey('tradicionales')"></app-button>
-
-    <app-button [tittleButton]="'Cascada'" (click)="getLinkAndTittleByKey('cascada')"></app-button>
-
-    <app-button [tittleButton]="'Espiral'" (click)="getLinkAndTittleByKey('espiral')"></app-button>
-
-    <app-button [tittleButton]="'Iterativo-Incremental'" (click)="getLinkAndTittleByKey('iterativo')"></app-button>
-
-    <app-button [tittleButton]="'XP'" (click)="getLinkAndTittleByKey('extrema')"></app-button>
-
-    <app-button [tittleButton]="'Modelo V'" (click)="getLinkAndTittleByKey('v')"></app-button>
-
-    <app-button [tittleButton]="'RUP'" (click)="getLinkAndTittleByKey('rup')"></app-button>
-
-    <app-button [tittleButton]="'Kaizen'" (click)="getLinkAndTittleByKey('kaizen')"></app-button>
+    <span *ngFor="let tittle of tittles | keyvalue: asIsOrder">
+      <app-button [tittleButton]=tittle.value (click)="getLinkAndTittleByKey(tittle.key)"></app-button>
+    </span>
 
   </div>
 

@@ -2275,6 +2275,26 @@ export const METODOLOGIAS =
                 '2 -> hacer: desarrollar el plan para cada uno de los aspectos que has identificado ',
                 '3 -> comprobar: debes analizar que tu plan si este dando resultados, de lo contrario deberas volver a empezar ',
                 '2 -> actuar: si has logrado cumplir los objetivos marcados, entonces es hora de estandarizar y continuar con las mejoras ',
+            ]),
+        new Item('scrumban',
+            [
+                '- Esta metodologia combina las mejores caracteristicas de ambos permitiendo: ',
+                ' - Tener la naturaleza preceptiva de scrum ',
+                ' - El enfoque de calidad y de evitar el desperdicio de Kanban ',
+                ' - Migrar o mantener metodologias agiles de desarrollo ',
+                ' - Mejora continua de procesos ',
+                ' - El mantenimiento y el desarrollo van juntos, y son complementarios ',
+                '',
+                '- Para ser implementado es importante tener en cuenta: ',
+                ' - Seguir usando los tableros y labores vigentes ',
+                ' - No dejar de perseguir la mejora continua ',
+                ' - Respetar las labores y responsabilidades actuales, mientras se intentan mejorar ',
+                '',
+                '- Cuando usarlo: ',
+                ' - Mantenimiento de proyectos dirigidos por eventos ',
+                ' - Gestion de proyectos problematicos ',
+                ' - Desarrollo de nuevos productos, posteriores al sprint ',
+                ' - Mejora continua de la gestión '
             ])
     ];
 

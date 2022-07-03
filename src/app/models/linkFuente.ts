@@ -28,6 +28,7 @@ export class LinkFuente {
         ['codificacionJava', { titulo: 'Codificación en Java', referencia: 'https://amap.cantabria.es/amap/bin/view/AMAP/CodificacionJava' }],
         ['eventLoop', { titulo: 'Event Loop', referencia: 'https://geekflare.com/es/javascript-event-loops/' }],
         ['convivenciaArquitecturas', { titulo: 'Multiples arquitecturas', referencia: 'https://herbertograca.com/2017/11/16/explicit-architecture-01-ddd-hexagonal-onion-clean-cqrs-how-i-put-it-all-together/' }],
+        ['designPatternsJavascript', { titulo: 'Patrones en Javascript', referencia: 'https://www.freecodecamp.org/news/javascript-design-patterns-explained/' }],
         // utiles
         ['comandosGit', { titulo: 'Comandos GIT', referencia: 'https://www.hostinger.co/tutoriales/comandos-de-git' }],
         ['comandosGitFlow', { titulo: 'Comandos Git Flow', referencia: 'http://danielkummer.github.io/git-flow-cheatsheet/index.es_ES.html' }],
@@ -39,6 +40,8 @@ export class LinkFuente {
         ['javascriptStandars', { titulo: 'Estandars para Javascript', referencia: 'https://github.com/airbnb/javascript#table-of-contents' }],
         ['algoritms', { titulo: 'Algoritmos', referencia: 'https://github.com/TheAlgorithms' }],
         ['devDocs', { titulo: 'Dev Docs', referencia: 'https://devdocs.io/' }],
+        ['designApis', { titulo: 'Diseñar un API', referencia: 'https://www.freecodecamp.org/news/design-an-api-application-program-interface/' }],
+        ['overApi', { titulo: 'Over Api', referencia: 'https://overapi.com/' }],
         // testing
         ['junit', { titulo: 'Junit', referencia: 'https://www.adictosaltrabajo.com/2016/11/24/primeros-pasos-con-junit-5/' }],
         ['junitV5', { titulo: 'Junit5', referencia: 'https://junit.org/junit5/' }],
@@ -53,7 +56,7 @@ export class LinkFuente {
         ['unicodes', { titulo: 'Tablas de Unicodes', referencia: 'https://unicode-table.com/es/' }],
         ['svgRepo', { titulo: 'SVG Repo', referencia: 'https://www.svgrepo.com/' }],
         ['carbon', { titulo: 'Carbon screenshots', referencia: 'https://github.com/carbon-app/carbon' }],
-        ['overApi', { titulo: 'Over Api', referencia: 'https://overapi.com/' }],
+        ['iconsRepo', { titulo: 'Repositorio Iconos', referencia: 'https://icones.js.org/' }],
         ['javascriptFrameworks', { titulo: 'Javascript frameworks', referencia: 'https://www.pzuraq.com/blog/four-eras-of-javascript-frameworks' }],
         ['roadMapDevelop', { titulo: 'Aprender programación', referencia: 'https://www.freecodecamp.org/news/how-to-learn-programming/' }],
         // seguridad
@@ -61,6 +64,7 @@ export class LinkFuente {
         ['owasp', { titulo: 'OWASP', referencia: 'https://owasp.org/' }],
         ['web3.0', { titulo: 'Web 3.0 & e Internet', referencia: 'https://www.freecodecamp.org/espanol/news/que-es-web-3/' }],
         ['permisosUbuntu', { titulo: 'Permisos en Ubuntu', referencia: 'https://www.freecodecamp.org/news/linux-chmod-chown-change-file-permissions/' }],
+        ['auth0', { titulo: 'Auth 0, blog & noticias', referencia: 'https://auth0.com/blog/' }],
     ]);
 
     public getLinkAndFuenteByKey(key: string = ''): Fuente {
