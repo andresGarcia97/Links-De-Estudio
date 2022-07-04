@@ -4,31 +4,9 @@
 
   <div class="card-container">
 
-    <app-button [tittleButton]="'POO'" (click)="getLinkAndTittleByKey('poo')"></app-button>
-
-    <app-button [tittleButton]="'Pilares POO'" (click)="getLinkAndTittleByKey('pooPilares')"></app-button>
-
-    <app-button [tittleButton]="'Relaciones'" (click)="getLinkAndTittleByKey('composicion')"></app-button>
-
-    <app-button [tittleButton]="'Static en POO'" (click)="getLinkAndTittleByKey('pooStatic')"></app-button>
-
-    <app-button [tittleButton]="'Sobrecargar Metodos'" (click)="getLinkAndTittleByKey('sobrecarga')"></app-button>
-
-    <app-button [tittleButton]="'Acoplamiento'" (click)="getLinkAndTittleByKey('acoplamiento')"></app-button>
-
-    <app-button [tittleButton]="'Contratos'" (click)="getLinkAndTittleByKey('contratos')"></app-button>
-
-    <app-button [tittleButton]="'Descomposición'" (click)="getLinkAndTittleByKey('descomposicion')"></app-button>
-
-    <app-button [tittleButton]="'Herencia'" (click)="getLinkAndTittleByKey('herencia')"></app-button>
-
-    <app-button [tittleButton]="'Polimorfismo'" (click)="getLinkAndTittleByKey('polimorfismo')"></app-button>
-
-    <app-button [tittleButton]="'Herencia/Composición'" (click)="getLinkAndTittleByKey('herVScomp')"></app-button>
-
-    <app-button [tittleButton]="'Enlaces'" (click)="getLinkAndTittleByKey('enlaces')"></app-button>
-
-    <app-button [tittleButton]="'SDP, ADP, SAP'" (click)="getLinkAndTittleByKey('acoplamientoComponentes')"></app-button>
+    <span *ngFor="let tittle of tittles | keyvalue: asIsOrder">
+      <app-button [tittleButton]=tittle.value (click)="getLinkAndTittleByKey(tittle.key)"></app-button>
+    </span>
 
   </div>
 

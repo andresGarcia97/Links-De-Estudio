@@ -383,6 +383,7 @@ export const POO = new Map<string, Referencia>([
     ['herVScomp', new Referencia('https://devexperto.com/herencia-vs-composicion/', 'Herencia VS Composición', 'POO')],
     ['enlaces', new Referencia('https://es.fondoperlaterra.org/comdifference-between-static-and-dynamic-binding-2', 'Enlace estatico & dinamico', 'POO')],
     ['acoplamientoComponentes', new Referencia('https://mg-laboratory.tistory.com/189', 'Acoplamiento de componentes', 'POO')],
+    ['beginingPoo', new Referencia('https://medium.com/javascript-scene/the-forgotten-history-of-oop-88d71b9b2d9f', 'Nacimiento de Poo', 'POO')],
 ]);
 
 export const TESTING = new Map<string, Referencia>([
