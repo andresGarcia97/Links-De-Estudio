@@ -8,29 +8,9 @@
 
       <h2>Front</h2>
 
-      <app-fuente [key]="'cssRecursos'"></app-fuente>
-
-      <app-fuente [key]="'coloresAndPaletas'"></app-fuente>
-
-      <app-fuente [key]="'disenoWebAdaptable'"></app-fuente>
-
-      <app-fuente [key]="'juegoFlexBox'"></app-fuente>
-
-      <app-fuente [key]="'htmlEntities'"></app-fuente>
-
-      <app-fuente [key]="'cargasDeScripts'"></app-fuente>
-
-      <app-fuente [key]="'cssGradients'"></app-fuente>
-
-      <app-fuente [key]="'keyEvents'"></app-fuente>
-
-      <app-fuente [key]="'htmlElements'"></app-fuente>
-
-      <app-fuente [key]="'glassmorphism'"></app-fuente>
-
-      <app-fuente [key]="'canIuse'"></app-fuente>
-
-      <app-fuente [key]="'javascriptDataStructures'"></app-fuente>
+      <span *ngFor="let keyFront of front">
+        <app-fuente [key]="keyFront"></app-fuente>
+      </span>
 
     </div>
 
@@ -38,27 +18,9 @@
 
       <h2>Back</h2>
 
-      <app-fuente [key]="'sqlTutorial'"></app-fuente>
-
-      <app-fuente [key]="'patronesDisenoJava'"></app-fuente>
-
-      <app-fuente [key]="'comandosDocker'"></app-fuente>
-
-      <app-fuente [key]="'paradigmaFuncionaljava'"></app-fuente>
-
-      <app-fuente [key]="'apisJava'"></app-fuente>
-
-      <app-fuente [key]="'apisNavegador'"></app-fuente>
-
-      <app-fuente [key]="'precendenciaJava'"></app-fuente>
-
-      <app-fuente [key]="'codificacionJava'"></app-fuente>
-
-      <app-fuente [key]="'eventLoop'"></app-fuente>
-
-      <app-fuente [key]="'convivenciaArquitecturas'"></app-fuente>
-
-      <app-fuente [key]="'designPatternsJavascript'"></app-fuente>
+      <span *ngFor="let keyBack of back">
+        <app-fuente [key]="keyBack"></app-fuente>
+      </span>
 
     </div>
 
@@ -70,29 +32,9 @@
 
       <h2>Utiles</h2>
 
-      <app-fuente [key]="'comandosGit'"></app-fuente>
-
-      <app-fuente [key]="'comandosGitFlow'"></app-fuente>
-
-      <app-fuente [key]="'changeLog'"></app-fuente>
-
-      <app-fuente [key]="'atributosCalidad'"></app-fuente>
-
-      <app-fuente [key]="'expresionesRegulares'"></app-fuente>
-
-      <app-fuente [key]="'jsonFormat'"></app-fuente>
-
-      <app-fuente [key]="'rapidapi'"></app-fuente>
-
-      <app-fuente [key]="'designApis'"></app-fuente>
-
-      <app-fuente [key]="'overApi'"></app-fuente>
-
-      <app-fuente [key]="'javascriptStandars'"></app-fuente>
-
-      <app-fuente [key]="'algoritms'"></app-fuente>
-
-      <app-fuente [key]="'devDocs'"></app-fuente>
+      <span *ngFor="let keyUtils of utils">
+        <app-fuente [key]="keyUtils"></app-fuente>
+      </span>
 
     </div>
 
@@ -100,15 +42,9 @@
 
       <h2>Testing</h2>
 
-      <app-fuente [key]="'junit'"></app-fuente>
-
-      <app-fuente [key]="'junitV5'"></app-fuente>
-
-      <app-fuente [key]="'mockito'"></app-fuente>
-
-      <app-fuente [key]="'jmeter'"></app-fuente>
-
-      <app-fuente [key]="'selenium'"></app-fuente>
+      <span *ngFor="let keyTest of testing">
+        <app-fuente [key]="keyTest"></app-fuente>
+      </span>
 
     </div>
 
@@ -120,25 +56,9 @@
 
       <h2>Curiosidades</h2>
 
-      <app-fuente [key]="'primeraApi'"></app-fuente>
-
-      <app-fuente [key]="'svgPorn'"></app-fuente>
-
-      <app-fuente [key]="'benchmarksFront'"></app-fuente>
-
-      <app-fuente [key]="'roadMapsDevelop'"></app-fuente>
-
-      <app-fuente [key]="'unicodes'"></app-fuente>
-
-      <app-fuente [key]="'svgRepo'"></app-fuente>
-
-      <app-fuente [key]="'carbon'"></app-fuente>
-
-      <app-fuente [key]="'iconsRepo'"></app-fuente>
-
-      <app-fuente [key]="'javascriptFrameworks'"></app-fuente>
-
-      <app-fuente [key]="'roadMapDevelop'"></app-fuente>
+      <span *ngFor="let keyCuriosity of curiosities">
+        <app-fuente [key]="keyCuriosity"></app-fuente>
+      </span>
 
     </div>
 
@@ -146,15 +66,9 @@
 
       <h2>Seguridad</h2>
 
-      <app-fuente [key]="'noreferrer'"></app-fuente>
-
-      <app-fuente [key]="'owasp'"></app-fuente>
-
-      <app-fuente [key]="'web3.0'"></app-fuente>
-
-      <app-fuente [key]="'permisosUbuntu'"></app-fuente>
-
-      <app-fuente [key]="'auth0'"></app-fuente>
+      <span *ngFor="let keySecurity of security">
+        <app-fuente [key]="keySecurity"></app-fuente>
+      </span>
 
     </div>
 

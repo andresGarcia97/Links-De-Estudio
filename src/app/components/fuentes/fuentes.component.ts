@@ -6,4 +6,77 @@ import { Component } from '@angular/core';
 })
 export class FuentesComponent {
 
+  front = [
+    'cssRecursos',
+    'coloresAndPaletas',
+    'disenoWebAdaptable',
+    'juegoFlexBox',
+    'htmlEntities',
+    'cargasDeScripts',
+    'cssGradients',
+    'keyEvents',
+    'htmlElements',
+    'glassmorphism',
+    'canIuse',
+    'javascriptDataStructures'
+  ];
+
+  back = [
+    'sqlTutorial',
+    'patronesDisenoJava',
+    'comandosDocker',
+    'paradigmaFuncionaljava',
+    'apisJava',
+    'apisNavegador',
+    'precendenciaJava',
+    'codificacionJava',
+    'eventLoop',
+    'convivenciaArquitecturas',
+    'designPatternsJavascript'
+  ];
+
+  utils = [
+    'comandosGit',
+    'comandosGitFlow',
+    'changeLog',
+    'atributosCalidad',
+    'expresionesRegulares',
+    'jsonFormat',
+    'rapidapi',
+    'designApis',
+    'overApi',
+    'javascriptStandars',
+    'algoritms',
+    'devDocs'
+  ];
+
+  testing = [
+    'junit',
+    'junitV5',
+    'mockito',
+    'jmeter',
+    'selenium'
+  ];
+
+  curiosities = [
+    'primeraApi',
+    'svgPorn',
+    'benchmarksFront',
+    'roadMapsDevelop',
+    'unicodes',
+    'svgRepo',
+    'carbon',
+    'iconsRepo',
+    'javascriptFrameworks',
+    'roadMapDevelop'
+  ];
+
+  security = [
+    'noreferrer',
+    'owasp',
+    'web3.0',
+    'permisosUbuntu',
+    'auth0'
+  ];
+
 }
