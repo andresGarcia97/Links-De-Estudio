@@ -4,37 +4,9 @@
 
   <div class="card-container">
 
-    <app-button [tittleButton]="'SQL'" (click)="getLinkAndTittleByKey('sql')"></app-button>
-
-    <app-button [tittleButton]="'DBMS'" (click)="getLinkAndTittleByKey('dbms')"></app-button>
-
-    <app-button [tittleButton]="'CRUD'" (click)="getLinkAndTittleByKey('crud')"></app-button>
-
-    <app-button [tittleButton]="'DDL, DML, DCL, TCL'" (click)="getLinkAndTittleByKey('dl')"></app-button>
-
-    <app-button [tittleButton]="'Integridad'" (click)="getLinkAndTittleByKey('integridad')"></app-button>
-
-    <app-button [tittleButton]="'ERD'" (click)="getLinkAndTittleByKey('erd')"></app-button>
-
-    <app-button [tittleButton]="'Normalización'" (click)="getLinkAndTittleByKey('normalizacion')"></app-button>
-
-    <app-button [tittleButton]="'NoSQL'" (click)="getLinkAndTittleByKey('nosql')"></app-button>
-
-    <app-button [tittleButton]="'Tipos NoSQL'" (click)="getLinkAndTittleByKey('tiposBD')"></app-button>
-
-    <app-button [tittleButton]="'Esquema ACID'" (click)="getLinkAndTittleByKey('acid')"></app-button>
-
-    <app-button [tittleButton]="'ORM'" (click)="getLinkAndTittleByKey('orm')"></app-button>
-
-    <app-button [tittleButton]="'Consistencia'" (click)="getLinkAndTittleByKey('consistenciaEventual')"></app-button>
-
-    <app-button [tittleButton]="'Algebra Relacional'" (click)="getLinkAndTittleByKey('algebraRelacional')"></app-button>
-
-    <app-button [tittleButton]="'N + 1 Selects'" (click)="getLinkAndTittleByKey('n+1selects')"></app-button>
-
-    <app-button [tittleButton]="'Indices'" (click)="getLinkAndTittleByKey('indices')"></app-button>
-
-    <app-button [tittleButton]="'Boyce-Codd'" (click)="getLinkAndTittleByKey('boyceCodd')"></app-button>
+    <span *ngFor="let tittle of tittles | keyvalue: asIsOrder">
+      <app-button [tittleButton]=tittle.value (click)="getLinkAndTittleByKey(tittle.key)"></app-button>
+    </span>
 
   </div>
 
