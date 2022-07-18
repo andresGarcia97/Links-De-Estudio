@@ -12,4 +12,18 @@ export class ConocimientosEmpiricosComponent extends LinkReferencia {
 
   lengthItems = this.items.length - 1;
 
+  tittles = new Map<string, string>([
+    ['cristales', 'Cristales rotos'],
+    ['quo', 'Status Quo'],
+    ['costo', 'Costo Hundido'],
+    ['tiposProgramadores', 'Programadores'],
+    ['sesgos', 'Sesgo Cognitivo'],
+    ['prejuicios', 'Prejuicios'],
+    ['multitarea', 'Multitareas'],
+    ['maxwellCurve', 'Curva de Maxwell'],
+    ['dunningKruger', 'Dunning-Kruger'],
+    ['reforzamientoSkinner', 'Reforzamiento'],
+    ['pastaTheory', 'Codigo como pasta']
+  ]);
+
 }

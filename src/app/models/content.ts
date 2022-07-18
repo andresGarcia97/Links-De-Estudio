@@ -1268,6 +1268,21 @@ export const CONOCIMIENTOS_EMPIRICOS =
                 ' - Eliminacion de consecuencias -> son considerados negativos y van de la mano con eliminar actividades desagradables para las personas ',
                 '',
                 '- Los refuerzos pueden ser continuos o intermitentes dependiendo de la forma mas efectiva para el caso dado ',
+            ]),
+        new Item('pastaTheory',
+            [
+                '- Escribir codigo reutilizable y mantenible es lo ideal, pero siempre es más facil decirlo que hacerlo ',
+                '- Un desarrollo exitoso no solo requiere que el codigo funcione, si no que sea mantenible ',
+                '- Para que esto sea posible, se deben evitar antipatrones y tener ciertas estrategias y hasta metodologias propias ',
+                '',
+                '-<strong> Codigo espagueti </strong>-> Data de los 70 para hacer referencia a un codigo descuidado y altamente acoplado ',
+                '-<strong> Codigo lasaña </strong>-> No solo se tiene problemas al ser desprolijos, tambien cuando hay un sobrediseño, que aporta complejidad innecesaria ',
+                '-<strong> Codigo raviolis </strong>-> Demasiadas piezas pequeñas e individuales, haciendo crecer la pila de llamados sin control ',
+                '-<strong> Codigo pizza </strong>-> Es una arquitectura plana, donde hay divisiones a nivel codigo, pero no se tienen una estructura logica definida ',
+                '-<strong> Codigo stromboli </strong>-> Es un codigo demasiado acoplado, en el que un cambio, por más inocuo que parezca, puede desembocar un caos en otro sitio ',
+                '',
+                '- Cualquiera sea la metafora, hay que tener en cuenta que incluso las mejores practicas no son eternas, estas pueden cambiar ',
+                ' - por lo que nuestro codigo tambien debe cambiar con ellas, y nunca dejar de lado la mantenibilidad como una meta constante '
             ])
     ];
 
