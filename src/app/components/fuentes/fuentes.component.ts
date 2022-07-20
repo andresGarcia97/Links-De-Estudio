@@ -32,7 +32,8 @@ export class FuentesComponent {
     'codificacionJava',
     'eventLoop',
     'convivenciaArquitecturas',
-    'designPatternsJavascript'
+    'designPatternsJavascript',
+    'easySql'
   ];
 
   utils = [

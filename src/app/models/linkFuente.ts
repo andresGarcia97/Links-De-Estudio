@@ -29,6 +29,7 @@ export class LinkFuente {
         ['eventLoop', { titulo: 'Event Loop', referencia: 'https://geekflare.com/es/javascript-event-loops/' }],
         ['convivenciaArquitecturas', { titulo: 'Multiples arquitecturas', referencia: 'https://herbertograca.com/2017/11/16/explicit-architecture-01-ddd-hexagonal-onion-clean-cqrs-how-i-put-it-all-together/' }],
         ['designPatternsJavascript', { titulo: 'Patrones en Javascript', referencia: 'https://www.freecodecamp.org/news/javascript-design-patterns-explained/' }],
+        ['easySql', { titulo: 'Easy SQL', referencia: 'https://www.sql-easy.com/' }],
         // utiles
         ['comandosGit', { titulo: 'Comandos GIT', referencia: 'https://www.hostinger.co/tutoriales/comandos-de-git' }],
         ['comandosGitFlow', { titulo: 'Comandos Git Flow', referencia: 'http://danielkummer.github.io/git-flow-cheatsheet/index.es_ES.html' }],

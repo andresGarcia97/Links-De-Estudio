@@ -192,6 +192,8 @@ p {
   background-color: var(--color-black);
   color: var(--color-white);
   font-weight: 600;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
 }
 
 .toolbar span {
