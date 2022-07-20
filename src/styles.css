@@ -144,6 +144,10 @@
   border: 1px solid rgba(var(--color-black), 0.18);
 }
 
+.oscuro .glass-efect:hover {
+  box-shadow: 2px 2px 4px 2px var(--color-navy-blue);
+}
+
 .oscuro .tooltiptext.gradient {
   background: linear-gradient(334deg, var(--color-french-sky-blue), var(--color-navy-blue), var(--color-raisin-black));
   background-size: 180% 180%;
@@ -534,6 +538,7 @@ div a.circle-link {
 }
 
 .glass-efect {
+  padding-top: 20px;
   background: rgba(var(--color-white), 0.1);
   box-shadow: 2px 2px 4px 2px var(--color-orange-yellow-crayola);
   backdrop-filter: blur(2px);
@@ -543,11 +548,7 @@ div a.circle-link {
 }
 
 .glass-efect:hover {
-  box-shadow: 0px 0px 0px 0px var(--color-cultured);
-}
-
-.p-t-2 {
-  padding-top: 20px;
+  box-shadow: 2px 2px 4px 2px var(--color-crimson);
 }
 
 .tooltip {
