@@ -12,4 +12,14 @@ export class EstrategiasDesarrolloComponent extends LinkReferencia {
 
   lengthItems = this.items.length - 1;
 
+  tittles = new Map<string, string>([
+    ['ddd', 'DDD'],
+    ['bdd', 'BDD'],
+    ['tdd', 'TDD'],
+    ['atdd', 'ATDD'],
+    ['analisis', 'Enfoques'],
+    ['tld', 'TLD vs TDD'],
+    ['bduf', 'BDUF']
+  ]);
+
 }

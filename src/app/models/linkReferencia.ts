@@ -115,6 +115,7 @@ export const ANALISIS = new Map<string, Referencia>([
     ['avestruz', new Referencia('https://geeks.ms/gvelez/2009/09/28/el-algoritmo-del-avestruz-en-sharepoint/', 'Algoritmo del Avestruz', 'analisis')],
     ['modeloDominio', new Referencia('https://es.stackoverflow.com/questions/102490/que-es-el-modelo-de-dominio-en-dise%C3%B1o-de-software', 'Modelo de Dominio', 'analisis')],
     ['sistemasInformacion', new Referencia('https://concepto.de/sistema-de-informacion/', 'Sistemas de Información', 'analisis')],
+    ['dataAnalisis', new Referencia('https://tienda.digital/4-tipos-de-analisis-de-datos-para-mejorar-la-toma-de-decisiones/', 'Analisis de datos', 'analisis')],
 ]);
 
 export const ARQUITECTURAS = new Map<string, Referencia>([
@@ -214,6 +215,7 @@ export const ESTRATEGIAS_DESARROLLO = new Map<string, Referencia>([
     ['atdd', new Referencia('https://www.javiergarzas.com/2015/07/que-es-eso-de-atdd.html', 'Desarrollo guiado por pruebas de aceptación', 'estrategias-desarrollo')],
     ['analisis', new Referencia('https://www.ubjonline.mx/en-que-consisten-los-analisis-top-down-y-bottom-up/', 'Bottom Up & Top Down', 'estrategias-desarrollo')],
     ['tld', new Referencia('https://medium.com/swlh/tdd-vs-tld-and-what-is-the-minimum-code-coverage-needed-f380181d3400', 'Tests al final del desarrollo', 'estrategias-desarrollo')],
+    ['bduf', new Referencia('https://www.freecodecamp.org/news/the-pros-and-cons-of-big-design-up-front-and-what-i-do-instead-375f00542dec/', 'Big Design Up Front', 'estrategias-desarrollo')],
 ]);
 
 export const FRAMEWORKS = new Map<string, Referencia>([

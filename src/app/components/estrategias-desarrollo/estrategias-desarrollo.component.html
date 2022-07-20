@@ -4,17 +4,9 @@
 
   <div class="card-container">
 
-    <app-button [tittleButton]="'DDD'" (click)="getLinkAndTittleByKey('ddd')"></app-button>
-
-    <app-button [tittleButton]="'BDD'" (click)="getLinkAndTittleByKey('bdd')"></app-button>
-
-    <app-button [tittleButton]="'TDD'" (click)="getLinkAndTittleByKey('tdd')"></app-button>
-
-    <app-button [tittleButton]="'ATDD'" (click)="getLinkAndTittleByKey('atdd')"></app-button>
-
-    <app-button [tittleButton]="'Enfoques'" (click)="getLinkAndTittleByKey('analisis')"></app-button>
-
-    <app-button [tittleButton]="'TLD vs TDD'" (click)="getLinkAndTittleByKey('tld')"></app-button>
+    <span *ngFor="let tittle of tittles | keyvalue: asIsOrder">
+      <app-button [tittleButton]=tittle.value (click)="getLinkAndTittleByKey(tittle.key)"></app-button>
+    </span>
 
   </div>
 

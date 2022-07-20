@@ -12,4 +12,17 @@ export class AnalisisComponent extends LinkReferencia {
 
   lengthItems = this.items.length - 1;
 
+  tittles = new Map<string, string>([
+    ['comportamiento', 'Comportamiento'],
+    ['dominio', 'Analisis de Dominio'],
+    ['case', 'Herramientas CASE'],
+    ['divide', 'Divide y venceras'],
+    ['diseño', 'Un buen diseño'],
+    ['crc', 'Tarjetas CRC'],
+    ['avestruz', 'Avestruz'],
+    ['modeloDominio', 'Modelo de dominio'],
+    ['sistemasInformacion', 'Información'],
+    ['dataAnalisis', 'Analisis de datos'],
+  ]);
+
 }
