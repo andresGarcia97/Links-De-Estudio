@@ -2730,6 +2730,33 @@ export const OTROS =
                 ' Constructivo                p -> r                       Conjunción            p                   ',
                 '                             q -> s      r || s                                 q          p && q   ',
             ]),
+        new Item('dataStoring',
+            [
+                '- Almacenar los datos es fundamental para las empresas, para cualquier disposicion que estas tengan ',
+                '',
+                '<strong>- Data Warehouse -></strong> Es un respositorio unificado para almacenar grandes cantidades de información, desde diversas fuentes ',
+                ' - estos almacenes tambien transforman y limpian los datos antes de almacenarlos con una estructura fija, ',
+                ' - para que estos sirvan como fuente de información veraz para futuros analisis ',
+                '<strong>- Data Lake -></strong> Respositorio centralizado altamente flexible, encargado de almacenar grandres cantidades de datos, ',
+                ' - pero estos no son procesados ni estructurados, por esto cada analisis debe tener sus respectivas transformaciones de datos, ',
+                ' - esta forma es más barata, pero lenta y la confiabilidad de los datos puede disminuir ',
+                '<strong>- Data Lakehouse -></strong> Combina las mejores caracteristicas de ambos al permitir almacenar datos estructurados y no estructurados, ',
+                ' - al mismo tiempo que permite capacidades de analisis de datos e inteligencia empresarial, estos respositorios nacieron como Data Lake, ',
+                ' - que fueron modificados para cumplir el esquema ACID, estos todavian estan crecimiento, por lo que es una tecnologia en maduración ',
+                '',
+                '                       Data Warehouse                  Data Lake                  Data Lakehouse         ',
+                '',
+                ' Tipos de datos   Datos                          Datos no estructurados       Datos con, sin y semi      ',
+                ' almacenados      estructurados                  y semi estructurados         estructurados              ',
+                '',
+                ' Objetivo         Analisis de datos e            Aprendizaje automatico       Analisis de datos y        ',
+                '                  inteligencia empresarial       e inteligencia artificial    aprendizaje automatico     ',
+                '',
+                ' Costo            Costoso y requiere tiempo      Rentable rapido y flexible   Rentable rapido y flexible ',
+                '',
+                ' Cumplimiento     Los datos son compatibles      No lo cumple, actualizar     Lo cumple ya que la data   ',
+                '   de ACID        para garantizar la seguridad   y eliminar es complejo       es concurrente             ',
+            ])
     ];
 
 export const PATRONES =

@@ -4,21 +4,9 @@
 
   <div class="card-container">
 
-    <app-button [tittleButton]="'Web Scrapping'" (click)="getLinkAndTittleByKey('scraping')"></app-button>
-
-    <app-button [tittleButton]="'CD/CI'" (click)="getLinkAndTittleByKey('cdci')"></app-button>
-
-    <app-button [tittleButton]="'DevOps'" (click)="getLinkAndTittleByKey('devops')"></app-button>
-
-    <app-button [tittleButton]="'MVP'" (click)="getLinkAndTittleByKey('mvp')"></app-button>
-
-    <app-button [tittleButton]="'Turing Complete'" (click)="getLinkAndTittleByKey('turingComplete')"></app-button>
-
-    <app-button [tittleButton]="'Ingenieria Inversa'" (click)="getLinkAndTittleByKey('ingenieriaInversa')"></app-button>
-
-    <app-button [tittleButton]="'DSL'" (click)="getLinkAndTittleByKey('dsl')"></app-button>
-
-    <app-button [tittleButton]="'Reglas de Inferencia'" (click)="getLinkAndTittleByKey('reglasInferencia')"></app-button>
+    <span *ngFor="let tittle of tittles | keyvalue: asIsOrder">
+      <app-button [tittleButton]=tittle.value (click)="getLinkAndTittleByKey(tittle.key)"></app-button>
+    </span>
 
   </div>
 
@@ -30,7 +18,7 @@
 
     <span *ngFor="let item of items">
       <span *ngSwitchCase="item.key">
-        <pre *ngFor="let content of item.content">{{content}}</pre>
+        <pre *ngFor="let content of item.content" [innerHTML]="content">{{content}}</pre>
       </span>
     </span>
 
