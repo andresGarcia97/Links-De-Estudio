@@ -293,6 +293,21 @@ export const AGILES =
                 ' - si no hay consenso se abre una breve discusión y se vuelve a votar, ',
                 '  - si no vuelve a haber concenso se podra realizar un promedio o escoger un extremo ',
                 ' - se repite el proceso hasta completar todas las HU ',
+            ]),
+        new Item('principlesAgile',
+            [
+                ' 1 - La maxima prioridad es satisfacer al cliente mediante la entrega temprana y continua de software de valor ',
+                ' 2 - Los requisitos cambiantes son bienvenidos, estos se aprovechan para la ventaja competitiva del cliente ',
+                ' 3 - Entrege software funcional, con frecuencia y a en la menor escala posible ',
+                ' 4 - El negocio y los desarrolladores deben trabajar juntos, constatemente durante el proyecto ',
+                ' 5 - Construir proyectos en torno a personas motivadas, y confie en ellas para hacer el trabajo ',
+                ' 6 - El metodo más eficiente para transmitir información, siempre sera una conversación cara a cara ',
+                ' 7 - Software que funciona es la medida principal del progreso ',
+                ' 8 - Los procesos agiles promueven el desarrollo sostenible, todas las partes involucradas deberian ser constantes ',
+                ' 9 - Atención continua a la excelencia tecnica, un buen diseño y la mejora continua ',
+                '10 - La simplicidad es el arte de maximizar el trabajo no realizado es esencial ',
+                '11 - Las mejores arquitecturas, requisitos y diseños surgen de equipos colaborativos y autoorganizados ',
+                '12 - Regularmente, el equipo reflexiona en como volverse más efectivo, luego sintoniza y ajusta su comportamiento ',
             ])
     ];
 

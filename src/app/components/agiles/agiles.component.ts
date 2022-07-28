@@ -19,7 +19,8 @@ export class AgilesComponent extends LinkReferencia {
     ['5s', '5s'],
     ['muda#1', 'Muda #1'],
     ['muda#2', 'Muda #2'],
-    ['planningPoker', 'Planning Poker']
+    ['planningPoker', 'Planning Poker'],
+    ['principlesAgile', 'Principios']
   ]);
 
 }
