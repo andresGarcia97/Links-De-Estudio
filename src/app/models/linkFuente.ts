@@ -31,18 +31,11 @@ export class LinkFuente {
         ['designPatternsJavascript', { titulo: 'Patrones en Javascript', referencia: 'https://www.freecodecamp.org/news/javascript-design-patterns-explained/' }],
         ['easySql', { titulo: 'Easy SQL', referencia: 'https://www.sql-easy.com/' }],
         // utiles
-        ['comandosGit', { titulo: 'Comandos GIT', referencia: 'https://www.hostinger.co/tutoriales/comandos-de-git' }],
-        ['comandosGitFlow', { titulo: 'Comandos Git Flow', referencia: 'http://danielkummer.github.io/git-flow-cheatsheet/index.es_ES.html' }],
         ['atributosCalidad', { titulo: 'Atributos de calidad', referencia: 'https://platzi.com/tutoriales/1248-pro-arquitectura/2545-resumen-grafico-de-los-atributos-de-calidad/' }],
         ['expresionesRegulares', { titulo: 'Expresiones regulares', referencia: 'https://regexr.com/' }],
-        ['jsonFormat', { titulo: 'JSON Format', referencia: 'https://jsonformatter.curiousconcept.com/#' }],
-        ['changeLog', { titulo: 'Change Log', referencia: 'https://keepachangelog.com/es-ES/1.0.0/' }],
-        ['rapidapi', { titulo: 'Aprendizaje sobre APIs', referencia: 'https://rapidapi.com/learn' }],
         ['javascriptStandars', { titulo: 'Estandars para Javascript', referencia: 'https://github.com/airbnb/javascript#table-of-contents' }],
         ['algoritms', { titulo: 'Algoritmos', referencia: 'https://github.com/TheAlgorithms' }],
         ['devDocs', { titulo: 'Dev Docs', referencia: 'https://devdocs.io/' }],
-        ['designApis', { titulo: 'Diseñar un API', referencia: 'https://www.freecodecamp.org/news/design-an-api-application-program-interface/' }],
-        ['overApi', { titulo: 'Over Api', referencia: 'https://overapi.com/' }],
         // testing
         ['junit', { titulo: 'Junit', referencia: 'https://www.adictosaltrabajo.com/2016/11/24/primeros-pasos-con-junit-5/' }],
         ['junitV5', { titulo: 'Junit5', referencia: 'https://junit.org/junit5/' }],
@@ -50,7 +43,6 @@ export class LinkFuente {
         ['jmeter', { titulo: 'Jmeter', referencia: 'https://www.guru99.com/jmeter-tutorials.html' }],
         ['selenium', { titulo: 'Introducción a selenium', referencia: 'https://www.digital55.com/desarrollo-tecnologia/herramientas-testing-introduccion-selenium/' }],
         // curiosidades
-        ['primeraApi', { titulo: 'la Primera API', referencia: 'https://api-first-world.com/?utm_source=&utm_campaign=&utm_con=&utm_medium=email&dcid=&mkt_tok=MDY3LVVNRC05OTEAAAF--bLIdG_tuBxUOm0ANexNXnkDOGfFcrIPlKgw4SMiaw2C6ZeMnB26wqsVjRU6EGY9ISqEiqBIzonrSIVnXckxUiE0UOwMsZ5fh8kKkl9k6cM' }],
         ['svgPorn', { titulo: 'SVG Porn', referencia: 'https://svgporn.com/' }],
         ['benchmarksFront', { titulo: 'Benchmarks in front', referencia: 'https://github.com/krausest/js-framework-benchmark' }],
         ['roadMapsDevelop', { titulo: 'Mapas de ruta', referencia: 'https://roadmap.sh/roadmaps' }],
@@ -66,6 +58,18 @@ export class LinkFuente {
         ['web3.0', { titulo: 'Web 3.0 & e Internet', referencia: 'https://www.freecodecamp.org/espanol/news/que-es-web-3/' }],
         ['permisosUbuntu', { titulo: 'Permisos en Ubuntu', referencia: 'https://www.freecodecamp.org/news/linux-chmod-chown-change-file-permissions/' }],
         ['auth0', { titulo: 'Auth 0, blog & noticias', referencia: 'https://auth0.com/blog/' }],
+        // git
+        ['comandosGit', { titulo: 'Comandos GIT', referencia: 'https://www.hostinger.co/tutoriales/comandos-de-git' }],
+        ['comandosGitFlow', { titulo: 'Comandos Git Flow', referencia: 'http://danielkummer.github.io/git-flow-cheatsheet/index.es_ES.html' }],
+        ['changeLog', { titulo: 'Change Log', referencia: 'https://keepachangelog.com/es-ES/1.0.0/' }],
+        ['commitConventions', { titulo: 'Estructura de un commit', referencia: 'https://www.conventionalcommits.org/es/v1.0.0/' }],
+        // APIs rest
+        ['primeraApi', { titulo: 'la Primera API', referencia: 'https://api-first-world.com/?utm_source=&utm_campaign=&utm_con=&utm_medium=email&dcid=&mkt_tok=MDY3LVVNRC05OTEAAAF--bLIdG_tuBxUOm0ANexNXnkDOGfFcrIPlKgw4SMiaw2C6ZeMnB26wqsVjRU6EGY9ISqEiqBIzonrSIVnXckxUiE0UOwMsZ5fh8kKkl9k6cM' }],
+        ['jsonFormat', { titulo: 'JSON Format', referencia: 'https://jsonformatter.curiousconcept.com/#' }],
+        ['rapidapi', { titulo: 'Aprendizaje sobre APIs', referencia: 'https://rapidapi.com/learn' }],
+        ['designApis', { titulo: 'Diseñar un API', referencia: 'https://www.freecodecamp.org/news/design-an-api-application-program-interface/' }],
+        ['overApi', { titulo: 'Over Api', referencia: 'https://overapi.com/' }],
+        ['jsonVisio', { titulo: 'JSON estructure', referencia: 'https://jsonvisio.com/' }],
     ]);
 
     public getLinkAndFuenteByKey(key: string = ''): Fuente {

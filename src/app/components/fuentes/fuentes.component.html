@@ -74,4 +74,28 @@
 
   </div>
 
+  <div class="flexbox-column">
+
+    <div class="card-container">
+
+      <h2>Git y versionamiento</h2>
+
+      <span *ngFor="let keyGit of git">
+        <app-fuente [key]="keyGit"></app-fuente>
+      </span>
+
+    </div>
+
+    <div class="card-container">
+
+      <h2>APIs REST</h2>
+
+      <span *ngFor="let keyApi of apis">
+        <app-fuente [key]="keyApi"></app-fuente>
+      </span>
+
+    </div>
+
+  </div>
+
 </div>

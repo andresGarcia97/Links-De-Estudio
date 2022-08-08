@@ -37,18 +37,11 @@ export class FuentesComponent {
   ];
 
   utils = [
-    'comandosGit',
-    'comandosGitFlow',
-    'changeLog',
     'atributosCalidad',
     'expresionesRegulares',
-    'jsonFormat',
-    'rapidapi',
-    'designApis',
-    'overApi',
     'javascriptStandars',
     'algoritms',
-    'devDocs'
+    'devDocs',
   ];
 
   testing = [
@@ -60,7 +53,6 @@ export class FuentesComponent {
   ];
 
   curiosities = [
-    'primeraApi',
     'svgPorn',
     'benchmarksFront',
     'roadMapsDevelop',
@@ -78,6 +70,22 @@ export class FuentesComponent {
     'web3.0',
     'permisosUbuntu',
     'auth0'
+  ];
+
+  git = [
+    'comandosGit',
+    'comandosGitFlow',
+    'changeLog',
+    'commitConventions'
+  ];
+
+  apis = [
+    'primeraApi',
+    'jsonFormat',
+    'rapidapi',
+    'designApis',
+    'overApi',
+    'jsonVisio'
   ];
 
 }
