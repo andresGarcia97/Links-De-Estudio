@@ -1157,6 +1157,19 @@ export const META_CARACTERISTICAS =
                 ' - Su uso atenta en contra del codigo autocomentado además de la legibilidad y la mantenibilidad ',
                 ' - Se necesitan casteos para su uso, consumiendo recursos extras para su uso ',
                 '- Por Ejemplo: List es un raw type, mientras que List<String> es un tipo parametrizado '
+            ]),
+        new Item('memoryAndGarbage',
+            [
+                '- Una fuga de memoria es el deterioro gradual del rendimiento del sistema en el transcurso del tiempo, ',
+                ' - como resultado del uso y de la fragmentacion de la memoria RAM del dispositivo',
+                '- Esto se puede dar, debido a aplicaciones mal programadas o comportamientos inusuales del sistema',
+                '',
+                '- <strong>Recolección de basura</strong>',
+                ' - Liberar estos bloques de memoria para evitar bloqueos, es una preocupación de los SO o los lenguajes propiamente ',
+                ' - Esta limpieza constante de la memoria parece provenir del lenguaje Lisp y adaptado por algunos SO, ',
+                '  - con el fin de detectar problemas antes de que los programas fallen ',
+                ' - Algunos lenguajes como Java tambien lo proporcionan, siendo una gran ventaja para el programador, ',
+                '  - ya que el desarrollador no debe preocuparse de un proceso que ocurre de manera silenciosa y constante ',
             ])
     ];
 

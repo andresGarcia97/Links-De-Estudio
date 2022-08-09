@@ -4,35 +4,9 @@
 
   <div class="card-container">
 
-    <app-button [tittleButton]="'Meta data'" (click)="getLinkAndTittleByKey('metaDatos')"></app-button>
-
-    <app-button [tittleButton]="'Meta Clase'" (click)="getLinkAndTittleByKey('metaClase')"></app-button>
-
-    <app-button [tittleButton]="'Reflexión'" (click)="getLinkAndTittleByKey('reflexion')"></app-button>
-
-    <app-button [tittleButton]="'Aserciones'" (click)="getLinkAndTittleByKey('asserts')"></app-button>
-
-    <app-button [tittleButton]="'Exepciones'" (click)="getLinkAndTittleByKey('excepciones')"></app-button>
-
-    <app-button [tittleButton]="'Scaffolding'" (click)="getLinkAndTittleByKey('scafolding')"></app-button>
-
-    <app-button [tittleButton]="'Cache'" (click)="getLinkAndTittleByKey('cache')"></app-button>
-
-    <app-button [tittleButton]="'Hilos'" (click)="getLinkAndTittleByKey('hilos')"></app-button>
-
-    <app-button [tittleButton]="'Argumentos'" (click)="getLinkAndTittleByKey('argumentos')"></app-button>
-
-    <app-button [tittleButton]="'Concurrencia'" (click)="getLinkAndTittleByKey('concurrenciaParalelismo')"></app-button>
-
-    <app-button [tittleButton]="'Ortogonalidad'" (click)="getLinkAndTittleByKey('ortogonalidad')"></app-button>
-
-    <app-button [tittleButton]="'BoilerPlate'" (click)="getLinkAndTittleByKey('boilerPlate')"></app-button>
-
-    <app-button [tittleButton]="'Recursividad'" (click)="getLinkAndTittleByKey('recursividad')"></app-button>
-
-    <app-button [tittleButton]="'Back tracing'" (click)="getLinkAndTittleByKey('backtracing')"></app-button>
-
-    <app-button [tittleButton]="'Tipos crudos'" (click)="getLinkAndTittleByKey('rawTypes')"></app-button>
+    <span *ngFor="let tittle of tittles | keyvalue: asIsOrder">
+      <app-button [tittleButton]=tittle.value (click)="getLinkAndTittleByKey(tittle.key)"></app-button>
+    </span>
 
   </div>
 

@@ -12,4 +12,23 @@ export class MetaCaracteristicasComponent extends LinkReferencia {
 
   lengthItems = this.items.length - 1;
 
+  tittles = new Map<string, string>([
+    ['metaDatos', 'Meta data'],
+    ['metaClase', 'Meta Clase'],
+    ['reflexion', 'Reflexión'],
+    ['asserts', 'Aserciones'],
+    ['excepciones', 'Exepciones'],
+    ['scafolding', 'Scaffolding'],
+    ['cache', 'Cache'],
+    ['hilos', 'Hilos'],
+    ['argumentos', 'Argumentos'],
+    ['concurrenciaParalelismo', 'Concurrencia'],
+    ['ortogonalidad', 'Ortogonalidad'],
+    ['boilerPlate', 'BoilerPlate'],
+    ['recursividad', 'Recursividad'],
+    ['backtracing', 'Back tracing'],
+    ['rawTypes', 'Tipos crudos'],
+    ['memoryAndGarbage', 'Fugas de memoria'],
+  ]);
+
 }

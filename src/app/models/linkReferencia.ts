@@ -278,6 +278,7 @@ export const META_CARATERISTICAS = new Map<string, Referencia>([
     ['recursividad', new Referencia('https://geekytheory.com/que-es-la-recursividad/', 'Recursividad', 'caracteristicas')],
     ['backtracing', new Referencia('https://www.ecured.cu/Vuelta_atr%C3%A1s_(backtracking)', 'Back Tracing', 'caracteristicas')],
     ['rawTypes', new Referencia('https://stackoverflow.com/questions/2770321/what-is-a-raw-type-and-why-shouldnt-we-use-it#:~:text=Raw%20types%20refer%20to%20using,with%20older%20versions%20of%20Java.', 'Tipos Crudos', 'caracteristicas')],
+    ['memoryAndGarbage', new Referencia('https://www.computerworld.com/article/2596992/memory-leaks-and-garbage-collection.amp.html', 'Fugas de memoria y recoleccion de basura', 'caracteristicas')],
 ]);
 
 export const META_ESTRUCTURAS = new Map<string, Referencia>([
