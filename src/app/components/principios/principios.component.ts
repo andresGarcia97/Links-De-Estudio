@@ -12,4 +12,16 @@ export class PrincipiosComponent extends LinkReferencia {
 
   lengthItems = this.items.length - 1;
 
+  tittles = new Map<string, string>([
+    ['solid', 'SOLID'],
+    ['kiss', 'KISS'],
+    ['yagni', 'YAGNI'],
+    ['occam', 'Occam'],
+    ['dry', 'DRY'],
+    ['hollywood', 'Hollywood'],
+    ['tellDontAsk', 'TDA'],
+    ['stupid', 'STUPID'],
+    ['twice-one', '2-1'],
+  ]);
+
 }

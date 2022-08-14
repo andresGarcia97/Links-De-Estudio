@@ -3541,7 +3541,15 @@ export const PRINCIPIOS =
                 ' - El ideal de todo codigo es que sea autocomentado, por lo que nombrar mal las cosas hace inalcanzable este ideal ',
                 ' D -> Duplicación ',
                 ' - El codigo duplicado deberia evitarse siempre que se pueda, aplicando DRY & KISS, además de otras practicas ',
-            ])
+            ]),
+        new Item('twice-one',
+            [
+                '- Un dicho proveniente desde la carpinteria y aplicado a distintas y variadas profesiones ',
+                '- Este dicho encarna la mentalidad de una planificacion minuciosa puede evitar errores, en especial si son costosos',
+                ' - especialmente cuando se pueden realizar acciones faciles de hacer, pero dificiles de deshacer ',
+                '- Debido a que el software es intangible y puede ser reversible, se puede convertir en una <i>"puerta de 2 vias"</i> segun Jeff Bezzos',
+                '- Aun asi esto evitara malgastar tiempo y recursos, al solo cortar y deshacer, solo porque es posible conllevando menos efectos adversos ',
+            ]),
     ];
 
 export const PRUEBAS_AVANZADAS =
