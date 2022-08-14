@@ -1788,17 +1788,6 @@ export const GIT =
                 '- Todas las ramas Hotfix se unen con master y develop ',
                 '- Cualquier rama feature se une a develop ',
             ]),
-        new Item('remotos',
-            [
-                ' - Github -> El repositorio más grande actualmente en el mundo, con más de 50 millones de proyectos de codigo abierto ',
-                ' - Gitlab -> Muy similar a Github en cuanto a funcionalidades, además de contar con version gratuita y empresarial ',
-                ' - Bitbucket -> Similar a los mencionado previamente con la ventaja de tener Trello integrado por defecto ',
-                '',
-                '  - Permiten mantener un seguimiento de errores en los proyectos ',
-                '  - Admiten proyectos colaborativos, repositorios privados y posibilidades de CD/CI ',
-                '  - Son muy configurables permitiendo generar y mantener claves SSH ',
-                '  - Los 3 cuentan con interfaces graficas que permiten la rapida revisión y creación de ramas, pulls, merges, logs y forks ',
-            ]),
         new Item('practicas',
             [
                 '- Los commits son sumamente importantes en git, por lo que realizarlos de manera correcta puede aportar metadata al proyecto ',

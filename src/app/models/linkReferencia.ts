@@ -239,7 +239,6 @@ export const GIT = new Map<string, Referencia>([
     ['atributos', new Referencia('https://git-scm.com/book/es/v2/Personalizaci%C3%B3n-de-Git-Git-Attributes', 'Personalización y cambio de acciones por defecto', 'git')],
     ['migracion', new Referencia('https://git-scm.com/book/es/v2/Git-y-Otros-Sistemas-Migraci%C3%B3n-a-Git', 'Migración de otros sistemas y otras acciones', 'git')],
     ['flow', new Referencia('https://aprendegit.com/que-es-git-flow/', 'Flujo de trabajo con Git', 'git')],
-    ['remotos', new Referencia('https://www.clubdetecnologia.net/blog/2017/github-vs-gitlab-vs-bitbucket-que-repositorio-elegir/', 'Repositorios Remotos', 'git')],
     ['practicas', new Referencia('https://codigofacilito.com/articles/41', 'Buenas practicas para realizar commits', 'git')],
 ]);
 
