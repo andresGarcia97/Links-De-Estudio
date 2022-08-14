@@ -3217,7 +3217,7 @@ export const POO =
                 '- La orientación a objetos modernas no refleja los conceptos que la iniciaron, más bien seria una Programación orientada a mensajes (MOP)',
                 '',
                 '- POO significa (segun Alan Kay): ',
-                ' - Programación con componentes "objetos',
+                ' - Programación con componentes "objetos"',
                 ' - El estado del componentes debe estar encapsulado y solo puede ser manipulado por si mismo ',
                 ' - El paso de mensajes para la comunicacion entre objetos y que estos sean ',
                 ' - Los componentes se pueden agregar/cambiar/reemplazar en tiempo de ejecución ',

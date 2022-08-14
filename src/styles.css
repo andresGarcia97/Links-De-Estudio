@@ -712,10 +712,12 @@ div a.circle-link {
 
 /* https://codepen.io/somosprogramac1/pen/GRMqbgz */
 
-.content > h2 {
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typing 3.5s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;
+@media screen and (min-width: 920px) {
+  .content > h2 {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3.5s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;
+  }
 }
 
 @keyframes typing {
