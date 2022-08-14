@@ -12,4 +12,11 @@ export class FrameworksComponent extends LinkReferencia {
 
   lengthItems = this.items.length - 1;
 
+  tittles = new Map<string, string>([
+    ['frameworks', '¿ Que son ?'],
+    ['ioc', 'IoC'],
+    ['iod', 'IoD'],
+    ['scafolding', 'Scaffolding'],
+  ]);
+
 }

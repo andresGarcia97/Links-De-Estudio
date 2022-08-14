@@ -1055,12 +1055,6 @@ export const META_CARACTERISTICAS =
                 '- El manejo de excepciones es fundamental para conseguir programas robustos y confiables, por esto es ideal definir, ',
                 ' - responsabilidades acerca de quienes pueden lanzar excepciones y quienes pueden atraparlas ',
             ]),
-        new Item('scafolding',
-            [
-                '- Es la generación automatica de codigo funcional, archivos, carpetas, configuraciones, interfaces graficas, etc... ',
-                '- Generalmente se basa en la creación de las operaciones CRUD, basandose en un modelo de datos previo ',
-                '- Algunos frameworks pueden ayudar en este sentido, e incluso existen aplicaciones con este proposito ',
-            ]),
         new Item('cache',
             [
                 '- La cache existe para diminuir la latencia e incrementar el rendimiento en operaciones costosas ',
@@ -1683,22 +1677,11 @@ export const FRAMEWORKS =
                 ' - Solo es especificar que funcionalidades queremos añadir y estaran disponibles de manera transversal ',
                 ' - El codigo modificado se vuelve más reutilizable, compacto y manejable '
             ]),
-        new Item('spring',
+        new Item('scafolding',
             [
-                ' - Es el framework de JAVA más usado actualmente ',
-                ' - Admite el uso de ORM para simplificar las consultas SQL ',
-                ' - Se adapta a diversos modelos de trabajo, para una gran cantidad de necesidades ',
-                ' - Permite la implementación de cientos de funciones prefabricadas y testeadas para acelerar el trabajo ',
-                ' - Al ser el framework predilecto de JAVA la documentación y la comunidad de desarrollo son enormes '
-            ]),
-        new Item('angular',
-            [
-                ' - Es un framework para programación web que implementa un patron MVC ',
-                ' - Es multiplataforma y puede ser usado hasta para aplicaciones Android e IOS ',
-                ' - Simplifica la comunicación entre la renderización del contenido(HTML) y la interactividad de la pagina(JS) ',
-                ' - Facilita el desarrollo de paginas web SPA que son una una sola pagina que cambia de contenido dinamicamente',
-                ' - Es mantenido por Google quienes se encargan de mejorarlo y respaldado por Microsoft al usar Typescript ',
-                ' - Permite usar y crear componentes reutilizables, además de otras utilidades que vienen preconstruidas ',
+                '- Es la generación automatica de codigo funcional, archivos, carpetas, configuraciones, interfaces graficas, etc... ',
+                '- Generalmente se basa en la creación de las operaciones CRUD, basandose en un modelo de datos previo ',
+                '- Algunos frameworks pueden ayudar en este sentido, e incluso existen aplicaciones con este proposito ',
             ]),
     ];
 

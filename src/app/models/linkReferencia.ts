@@ -223,8 +223,7 @@ export const FRAMEWORKS = new Map<string, Referencia>([
     ['frameworks', new Referencia('https://neoattack.com/neowiki/framework/', '¿ Que es un framework?', 'frameworks')],
     ['ioc', new Referencia('https://medium.com/all-you-need-is-clean-code/inversi%C3%B3n-de-control-principio-de-hollywood-dont-call-us-we-ll-call-you-179e9c70e3d0', 'Inversion de Control', 'frameworks')],
     ['iod', new Referencia('https://www.arquitecturajava.com/el-patron-de-inyeccion-de-dependencia/', 'Inyección de dependencias', 'frameworks')],
-    ['spring', new Referencia('https://spring.io/', 'Spring Framework', 'frameworks')],
-    ['angular', new Referencia('https://platzi.com/desarrollo-angular/?utm_source=google&utm_medium=cpc&utm_campaign=9328433462&utm_adgroup=94733526952&utm_content=452203650165&&gclid=Cj0KCQiA3smABhCjARIsAKtrg6LJDf4V2JKL7esXLHrcbpL4NIx8o-pixGZe0YdtUIU5HflNhR74Md0aArb4EALw_wcB&gclsrc=aw.ds', 'Angular Framework', 'frameworks')],
+    ['scafolding', new Referencia('https://medium.com/@srinathsrs104/scaffolding-54ac4e47e133', 'Creación automatica de codigo', 'frameworks')],
 ]);
 
 export const GIT = new Map<string, Referencia>([
@@ -267,7 +266,6 @@ export const META_CARATERISTICAS = new Map<string, Referencia>([
     ['reflexion', new Referencia('https://es.linkfang.org/wiki/Reflexi%C3%B3n_(inform%C3%A1tica)', 'Auto mutabilidad del codigo', 'caracteristicas')],
     ['asserts', new Referencia('https://www.adictosaltrabajo.com/2016/01/07/haz-tu-codigo-mas-fiable-con-asserts/', 'Comprobaciones del codigo', 'caracteristicas')],
     ['excepciones', new Referencia('https://universidad-de-los-andes.gitbooks.io/fundamentos-de-programacion/content/Nivel4/5_ManejoDeLasExcepciones.html', 'Lanzamiento y manejo de excepciones', 'caracteristicas')],
-    ['scafolding', new Referencia('https://medium.com/@srinathsrs104/scaffolding-54ac4e47e133', 'Creación automatica de codigo', 'caracteristicas')],
     ['cache', new Referencia('https://medium.com/bancolombia-tech/dise%C3%B1ando-una-estrategia-de-cach%C3%A9-39366876009b', 'Cache y sus estrategias', 'caracteristicas')],
     ['hilos', new Referencia('https://facturapp.weebly.com/hilos.html', 'Hilos', 'caracteristicas')],
     ['argumentos', new Referencia('https://picodotdev.github.io/blog-bitix/2021/01/en-java-los-argumentos-se-pasan-por-valor-o-por-referencia/', 'Argumentos por valor y por referencia', 'caracteristicas')],

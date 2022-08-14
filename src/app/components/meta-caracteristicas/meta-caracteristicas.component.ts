@@ -18,7 +18,6 @@ export class MetaCaracteristicasComponent extends LinkReferencia {
     ['reflexion', 'Reflexión'],
     ['asserts', 'Aserciones'],
     ['excepciones', 'Exepciones'],
-    ['scafolding', 'Scaffolding'],
     ['cache', 'Cache'],
     ['hilos', 'Hilos'],
     ['argumentos', 'Argumentos'],
