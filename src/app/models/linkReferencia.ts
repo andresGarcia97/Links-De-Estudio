@@ -104,6 +104,7 @@ export const AGILES = new Map<string, Referencia>([
     ['muda#2', new Referencia('https://samuelcasanova.com/2014/03/los-7-desperdicios-del-desarrollo-de-software-y-ii/', 'Muda en el software, parte #2', 'agiles')],
     ['planningPoker', new Referencia('https://samuelcasanova.com/2016/01/estimacion-agil-con-la-tecnica-planning-poker/', 'Planning Poker y la estimación agil', 'agiles')],
     ['principlesAgile', new Referencia('https://www.agilealliance.org/agile101/12-principles-behind-the-agile-manifesto/', 'Principios del agilismo', 'agiles')],
+    ['spike', new Referencia('https://samuelcasanova.com/2021/09/spike-que-es/', 'Spike', 'agiles')],
 ]);
 
 export const ANALISIS = new Map<string, Referencia>([

@@ -193,10 +193,10 @@ export const AGILES =
             [
                 '- Es una tecnica para la priorización de requisitos y funciones para lograr un alcance especificado ',
                 '',
-                '- M (Must Have)   -> debe tener:    este requisito debe estar implementado si ó si, si no, el producto es un fracaso ',
-                '- S (Should have) -> deberia tener: requisito de alta prioridad que en la medida de lo posible deberia quedar en el producto final ',
-                '- C (Could have)  -> podria tener:  caracteristica deseable, pero que no es necesaria y solo sera implementada si hay posibilidades ',
-                '- W (Won´t have)  -> no tendra:     son requisitos que estan descartados por esta vez, pero seran incluidos a futuro ',
+                '- <strong>M</strong>ust Have   -> Debe tener:    Este requisito debe estar implementado si ó si, si no, el producto es un fracaso ',
+                '- <strong>S</strong>hould have -> Deberia tener: Requisito de alta prioridad que en la medida de lo posible deberia quedar en el producto final ',
+                '- <strong>C</strong>ould have  -> Podria tener:  Caracteristica deseable, pero que no es necesaria y solo sera implementada si hay posibilidades ',
+                '- <strong>W</strong>on´t have  -> No tendra:     Son requisitos que estan descartados por esta vez, pero seran incluidos a futuro ',
             ]),
         new Item('scoring',
             [
@@ -308,6 +308,17 @@ export const AGILES =
                 '10 - La simplicidad es el arte de maximizar el trabajo no realizado es esencial ',
                 '11 - Las mejores arquitecturas, requisitos y diseños surgen de equipos colaborativos y autoorganizados ',
                 '12 - Regularmente, el equipo reflexiona en como volverse más efectivo, luego sintoniza y ajusta su comportamiento ',
+            ]),
+        new Item('spike',
+            [
+                '- Es un termino que viene desde Xtreme Programing y que esta rodeado por la incertidumbre ',
+                '- Este es un elemento del backlog del producto, que tiene bastante incertidumbre tecnica o funcional, ',
+                ' - y por lo tanto no se puede planificar o estimar ',
+                '',
+                '- <strong>Spike tecnico -></strong> son ocasiones donde no se conoce la tecnologia a usar o hace falta profundizar en ella, ',
+                ' - buscar información o aprender de la documentación, con el fin de tomar deciones tecnicas ',
+                '- <strong>Spike funcional -></strong> Hace falta conocer más sobre los requisitos y/o alcance, como que se va a incluir, ',
+                ' - documentar escenarios, entrevistar a un experto del negocio, revision de codigo ',
             ])
     ];
 

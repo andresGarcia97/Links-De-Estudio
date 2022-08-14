@@ -16,11 +16,12 @@ export class AgilesComponent extends LinkReferencia {
     ['moscow', 'MOSCOW'],
     ['scoring', 'Theme Scoring'],
     ['muda', 'Desperdicio'],
-    ['5s', '5s'],
+    ['5s', '5-S'],
     ['muda#1', 'Muda #1'],
     ['muda#2', 'Muda #2'],
     ['planningPoker', 'Planning Poker'],
-    ['principlesAgile', 'Principios']
+    ['principlesAgile', 'Principios'],
+    ['spike', 'Spike'],
   ]);
 
 }
