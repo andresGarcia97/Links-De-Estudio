@@ -256,9 +256,8 @@ export const USER_HISTORIES = new Map<string, Referencia>([
 
 export const MALAS_PRACTICAS = new Map<string, Referencia>([
     ['callbackhell', new Referencia('https://codearmy.co/que-es-el-callback-hell-y-como-evitarlo-4af418a6ed14', 'Cadena de llamados asincronos', 'malas-practicas')],
-    ['cosas1', new Referencia('https://softgrade.mx/5-causas-afectan-la-calidad-software/', 'Malas practicas parte #1', 'malas-practicas')],
-    ['cosas2', new Referencia('https://blog.gft.com/es/2016/01/20/las-10-malas-practicas-mas-comunes-en-la-gestion-de-proyectos/', 'Malas practicas parte #2', 'malas-practicas')],
-    ['cosas3', new Referencia('https://blog.gft.com/es/2016/01/20/las-10-malas-practicas-mas-comunes-en-la-gestion-de-proyectos/', 'Malas practicas parte #3', 'malas-practicas')],
+    ['contraCalidad', new Referencia('https://softgrade.mx/5-causas-afectan-la-calidad-software/', 'En contra de la calidad', 'malas-practicas')],
+    ['contraGestion', new Referencia('https://blog.gft.com/es/2016/01/20/las-10-malas-practicas-mas-comunes-en-la-gestion-de-proyectos/', 'En contra de la gestión', 'malas-practicas')],
 ]);
 
 export const META_CARATERISTICAS = new Map<string, Referencia>([

@@ -2018,7 +2018,7 @@ export const MALAS_PRACTICAS =
                 '- Cambiar el orden de las llamadas puede evitar el anidamiento innecesario',
                 '- Usar promesas ó el Async/Await que hara que el codigo se comporte de manera más sincronica ',
             ]),
-        new Item('cosas1',
+        new Item('contraCalidad',
             [
                 '- Desconocimiento del negocio, clases mal diseñadas o condiciones sin sentido',
                 '- Mala o nula formulación de requerimientos y requisitos ',
@@ -2026,15 +2026,12 @@ export const MALAS_PRACTICAS =
                 '- Malas estimaciones de los tiempos, obligando a mucho trabajo extra',
                 '- No aplicar patrones y/o arquitecturas',
             ]),
-        new Item('cosas2',
+        new Item('contraGestion',
             [
                 '- Asignación erronea del personal en roles inadecuados o sin la experiencia necesaria ',
                 '- Asumir información sin tener una confirmación previa',
                 '- Empezar a planear sin tener todas las variables a tener en cuenta',
                 '- No se debe abusar de la capacidad de multitarea del equipo',
-            ]),
-        new Item('cosas3',
-            [
                 '- La falta de comunicación en el equipo puede conllevar al desastre',
                 '- No poner limites es tan malo como ser inflexible, siempre hay un punto medio',
                 '- Entregar productos incompletos, lo ideal seria pedir más tiempo o recursos',

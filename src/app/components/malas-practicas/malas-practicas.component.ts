@@ -12,4 +12,10 @@ export class MalasPracticasComponent extends LinkReferencia {
 
   lengthItems = this.items.length - 1;
 
+  tittles = new Map<string, string>([
+    ['callbackhell', 'Callback Hell'],
+    ['contraCalidad', 'Contra la calidad'],
+    ['contraGestion', 'Contra la gestion'],
+  ]);
+
 }
