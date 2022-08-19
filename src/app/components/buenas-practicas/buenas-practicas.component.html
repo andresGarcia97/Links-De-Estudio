@@ -4,27 +4,9 @@
 
   <div class="card-container">
 
-    <app-button [tittleButton]="'Parte #1'" (click)="getLinkAndTittleByKey('practicas1')"></app-button>
-
-    <app-button [tittleButton]="'Parte #2'" (click)="getLinkAndTittleByKey('practicas2')"></app-button>
-
-    <app-button [tittleButton]="'Parte #3'" (click)="getLinkAndTittleByKey('practicas3')"></app-button>
-
-    <app-button [tittleButton]="'Parte #4'" (click)="getLinkAndTittleByKey('practicas4')"></app-button>
-
-    <app-button [tittleButton]="'Complejidad'" (click)="getLinkAndTittleByKey('complejidad')"></app-button>
-
-    <app-button [tittleButton]="'Cognitiva'" (click)="getLinkAndTittleByKey('complejidadCognitiva')"></app-button>
-
-    <app-button [tittleButton]="'Algoritmica'" (click)="getLinkAndTittleByKey('complejidadAlgoritmica')"></app-button>
-
-    <app-button [tittleButton]="'Logs VS Debug'" (click)="getLinkAndTittleByKey('logging')"></app-button>
-
-    <app-button [tittleButton]="'Debugging'" (click)="getLinkAndTittleByKey('debugging')"></app-button>
-
-    <app-button [tittleButton]="'Ley de Demeter'" (click)="getLinkAndTittleByKey('demeter')"></app-button>
-
-    <app-button [tittleButton]="'Nombramiento'" (click)="getLinkAndTittleByKey('estandaresNombramiento')"></app-button>
+    <span *ngFor="let tittle of tittles | keyvalue: asIsOrder">
+      <app-button [tittleButton]=tittle.value (click)="getLinkAndTittleByKey(tittle.key)"></app-button>
+    </span>
 
   </div>
 

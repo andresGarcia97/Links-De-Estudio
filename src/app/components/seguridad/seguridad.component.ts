@@ -16,7 +16,6 @@ export class SeguridadComponent extends LinkReferencia {
     ['firewall', 'Firewall'],
     ['protocolos', 'SSL, TSL, HTTPS'],
     ['proxy', 'Proxy'],
-    ['estatico', 'Analisis de codigo'],
     ['ciberSeguridad', 'Ciberseguridad'],
     ['cia', 'CIA'],
     ['noRepudio', 'NO Repudio'],

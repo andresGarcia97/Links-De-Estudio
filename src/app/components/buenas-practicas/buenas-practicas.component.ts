@@ -12,4 +12,19 @@ export class BuenasPracticasComponent extends LinkReferencia {
 
   lengthItems = this.items.length - 1;
 
+  tittles = new Map<string, string>([
+    ['practicas1', 'Parte #1'],
+    ['practicas2', 'Parte #2'],
+    ['practicas3', 'Parte #3'],
+    ['practicas4', 'Parte #4'],
+    ['complejidad', 'Complejidad'],
+    ['complejidadCognitiva', 'Cognitiva'],
+    ['complejidadAlgoritmica', 'Algoritmica'],
+    ['logging', 'Logs VS Debug'],
+    ['debugging', 'Debugging'],
+    ['demeter', 'Ley de Demeter'],
+    ['estandaresNombramiento', 'Nombramiento'],
+    ['estatico', 'Analisis de codigo'],
+  ]);
+
 }
