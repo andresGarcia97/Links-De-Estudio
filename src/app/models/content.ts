@@ -4297,6 +4297,21 @@ export const SEGURIDAD =
                 '  - el resguardo correcto de las credenciales y el correcto manejo de la autenticacion como de las sesiones ',
                 ' - Privacidad -> la centralización de los datos es necesaria para cumplir con las leyes e informes de privacidad de datos, ',
                 '  - estas leyes han puesto en foco la importancia del manejo de los datos, la recopilacion y su control ',
+            ]),
+        new Item('lateralChanel',
+            [
+                '- Es un exploit de seguridad con el fin de recopilar información o influir en la ejecución del programa, apuntando o midiendo el hardware ',
+                '- Historicamente dificiles de hacer, si no fuera por la actualidad donde la sensibilidad y la cantidad de estos ha aumentado constantemente ',
+                '- Estos son dificiles de defender y aun más de detectar, y son efectivos contra sistemas aislados la nube y hasta maquinas virtuales ',
+                '',
+                '- Tipos conocidos: ',
+                ' <strong>- Electromagnetismo -></strong> Se mide la radiación u ondas de radio emitidas por el dispositivo, para reconstruir las señales internas ',
+                ' <strong>- Acustico -></strong> Los sonidos emitidos por el dispositivo pueden reconstruir información como las pulsaciones de las teclas del usuario ',
+                ' <strong>- Energia -></strong> Al medir la cantidad de enercia consumida y el tiempo de utilización, se puede inferir la actividad de este ',
+                ' <strong>- Optico -></strong> Algo como tan simple como ver una grabación o mirar encima del hombro de alguien, pueden caer dentro de esta categoria ',
+                ' <strong>- Cache -></strong> El almacenamiento cache, usado para mejorar el rendimiento, puede ser usado para obtener información bloqueada ',
+                ' <strong>- Hardware -></strong> Atacar partes especificas de los dispositivos de maneras peculiares para generar fallos o robar datos como, ',
+                '  - un ataque de martilleo de filas para dañar sectores de la RAM o un arranque en frio leyendo datos de chips enfriados bruscamente ',
             ])
     ];
 

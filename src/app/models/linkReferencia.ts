@@ -468,6 +468,7 @@ export const SEGURIDAD = new Map<string, Referencia>([
     ['owaspTop', new Referencia('https://owasp.org/Top10/', 'OWASP Top 10', 'seguridad')],
     ['stride', new Referencia('https://www.softwaresecured.com/stride-threat-modeling/', 'STRIDE', 'seguridad')],
     ['ciam', new Referencia('https://auth0.com/blog/why-do-you-need-ciam/', 'CIAM', 'seguridad')],
+    ['lateralChanel', new Referencia('https://auth0.com/blog/why-do-you-need-ciam/', 'Ataques de canal lateral', 'seguridad')],
 ]);
 
 export const SMELL_CODES = new Map<string, Referencia>([

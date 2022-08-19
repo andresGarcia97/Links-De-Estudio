@@ -26,7 +26,8 @@ export class SeguridadComponent extends LinkReferencia {
     ['pentest', 'Test de Intrusión'],
     ['owaspTop', 'OWASP Top 10'],
     ['stride', 'STRIDE'],
-    ['ciam','CIAM']
+    ['ciam','CIAM'],
+    ['lateralChanel', 'Ataques de canal lateral']
   ]);
 
 }
