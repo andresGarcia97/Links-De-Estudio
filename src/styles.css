@@ -569,7 +569,6 @@ div a.circle-link {
   bottom: 100%;
   left: 50%;
   margin-left: -60px;
-
   position: absolute;
   z-index: 1;
 }

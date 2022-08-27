@@ -1,4 +1,4 @@
-<div class="content" role="main" #glosario>
+<div class="content" #glosario>
 
   <h1>Glosario</h1>
   <input type="text" placeholder="Buscar.." [(ngModel)]="search" name="search" (ngModelChange)="searchChanged()" />
@@ -12,9 +12,11 @@
 
   </div>
 
-  <div #view>
-    <div class="card-container" *ngIf="showItem">
-      <app-mini-terminal [referencia]="referencia" [titulo]="titulo" [item]="item"></app-mini-terminal>
+  <div class="card-container" #view>
+
+    <app-referencia *ngIf="showItem" class="flexbox terminal" [referencia]="referencia" [titulo]="titulo"></app-referencia>
+    <div *ngIf="showItem" class="terminal">
+      <pre *ngFor="let content of item.content" [innerHTML]="content">{{content}}</pre>
     </div>
 
     <div class="card-container less-margin" *ngIf="showItem">
