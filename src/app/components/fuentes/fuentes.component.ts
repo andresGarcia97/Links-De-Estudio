@@ -13,12 +13,13 @@ export class FuentesComponent {
     'juegoFlexBox',
     'htmlEntities',
     'cargasDeScripts',
-    'cssGradients',
     'keyEvents',
     'htmlElements',
     'glassmorphism',
     'canIuse',
-    'javascriptDataStructures'
+    'javascriptDataStructures',
+    'canInclude',
+    'cssLayout'
   ];
 
   back = [
@@ -69,7 +70,8 @@ export class FuentesComponent {
     'owasp',
     'web3.0',
     'permisosUbuntu',
-    'auth0'
+    'auth0',
+    'https'
   ];
 
   git = [

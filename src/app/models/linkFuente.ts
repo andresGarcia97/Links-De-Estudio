@@ -11,12 +11,13 @@ export class LinkFuente {
         ['juegoFlexBox', { titulo: 'Juego de flex-box', referencia: 'https://flexboxfroggy.com/#es' }],
         ['htmlEntities', { titulo: 'Html Entities', referencia: 'https://www.freeformatter.com/html-entities.html' }],
         ['cargasDeScripts', { titulo: 'Carga de scripts', referencia: 'https://manzdev.github.io/script-type/' }],
-        ['cssGradients', { titulo: 'CSS gradients', referencia: 'https://www.smashingmagazine.com/2021/02/responsive-image-effects-css-gradients-aspect-ratio/' }],
         ['keyEvents', { titulo: 'Eventos del teclado', referencia: 'https://keycode.info/' }],
         ['htmlElements', { titulo: 'Etiquetas HTML', referencia: 'https://lenguajehtml.com/html/introduccion/tabla-periodica-html5/' }],
         ['glassmorphism', { titulo: 'Glassmorphism', referencia: 'https://hype4.academy/tools/glassmorphism-generator' }],
         ['canIuse', { titulo: 'Can I Use ?', referencia: 'https://caniuse.com/' }],
         ['javascriptDataStructures', { titulo: 'Estructuras en Javascript', referencia: 'https://www.freecodecamp.org/news/data-structures-in-javascript-with-examples/' }],
+        ['canInclude', { titulo: 'Can Include ?', referencia: 'https://caninclude.glitch.me/' }],
+        ['cssLayout', { titulo: 'CSS layouts', referencia: 'https://csslayout.io/' }],
         // backend
         ['sqlTutorial', { titulo: 'SQL Tutorial', referencia: 'https://www.w3schools.com/sql/default.asp' }],
         ['patronesDisenoJava', { titulo: 'Patrones de diseño en Java', referencia: 'https://www.journaldev.com/1827/java-design-patterns-example-tutorial' }],
@@ -58,6 +59,7 @@ export class LinkFuente {
         ['web3.0', { titulo: 'Web 3.0 & e Internet', referencia: 'https://www.freecodecamp.org/espanol/news/que-es-web-3/' }],
         ['permisosUbuntu', { titulo: 'Permisos en Ubuntu', referencia: 'https://www.freecodecamp.org/news/linux-chmod-chown-change-file-permissions/' }],
         ['auth0', { titulo: 'Auth 0, blog & noticias', referencia: 'https://auth0.com/blog/' }],
+        ['https', { titulo: 'HTTPS, en un comic', referencia: 'https://howhttps.works/why-do-we-need-https/' }],
         // git
         ['comandosGit', { titulo: 'Comandos GIT', referencia: 'https://www.hostinger.co/tutoriales/comandos-de-git' }],
         ['comandosGitFlow', { titulo: 'Comandos Git Flow', referencia: 'http://danielkummer.github.io/git-flow-cheatsheet/index.es_ES.html' }],
