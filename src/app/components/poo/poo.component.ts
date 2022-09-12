@@ -26,7 +26,8 @@ export class PooComponent extends LinkReferencia {
     ['herVScomp', 'Herencia/Composición'],
     ['enlaces', 'Enlaces'],
     ['acoplamientoComponentes', 'SDP, ADP, SAP'],
-    ['beginingPoo', 'Inicios de POO']
+    ['beginingPoo', 'Inicios de POO'],
+    ['inmutability', 'Inmutabilidad']
   ]);
 
 }
