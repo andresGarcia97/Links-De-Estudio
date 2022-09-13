@@ -1937,6 +1937,25 @@ export const HARDWARE =
                 ' - Consultas a bases de datos que pueden ser optimizadas ',
                 ' - Problemas con el Garbage Collector o la JVM ',
                 ' - Manejo erroneo de problemas ',
+            ]),
+        new Item('vmVsContainers',
+            [
+                '                    <strong>Virtualización</strong>                                        <strong>Contenedores</strong>',
+                '                                                                                                             ',
+                '         - Reduce los costos asociados al hardware         - Requieren menos recursos y son más livianos     ',
+                '          - al utilizar recursos desperdiciados                                                              ',
+                '<strong>Pros</strong>                                                       - Son más portatiles e interoperables             ',
+                '         - Menos espacio en equipos fisicos                                                                  ',
+                '                                                           - Más eficientes y escalables                     ',
+                '         - Aislamiento de las aplicaciones                                                                   ',
+                '                                                           - Son más congruentes y simplifican el CD/CI      ',
+                '                                                                                                             ',
+                '         - Se encuentran limitados por los                 - No siempre tienen mejor rendimiento             ',
+                '         - recursos del host                                                                                 ',
+                '<strong>Contras</strong>                                                    - No esta 100% estandarizado, entre provedores    ',
+                '         - Arranque lento, dependiente del host                                                              ',
+                '                                                           - Las aplicaciones graficas no funcionan bien     ',
+                '         - Pueden ser infectadas por el host                                                                 ',
             ])
     ];
 
@@ -3587,6 +3606,15 @@ export const PRINCIPIOS =
                 '- Debido a que el software es intangible y puede ser reversible, se puede convertir en una <i>"puerta de 2 vias"</i> segun Jeff Bezzos',
                 '- Aun asi esto evitara malgastar tiempo y recursos, al solo cortar y deshacer, solo porque es posible conllevando menos efectos adversos ',
             ]),
+        new Item('divide-conquer',
+            [
+                '- Un adagio popular dedicado a la resolución de problemas, donde al dividir un problema en partes más pequeñas, ',
+                ' - se pueden encontrar soluciones a problemas más acotados y menos complejos, permitiendo que la suma de todos los esfuerzos ',
+                ' - a la larga solucione el problema del cual se derivaron ',
+                '',
+                '- Esto se puede ver como una muñeca Rusa, donde cada muñeca esta formada por más partes que se van haciendo más pequeñas ',
+                ' - pero juntas son capaces de conformar un todo, mayor a la suma de sus partes ',
+            ])
     ];
 
 export const PRUEBAS_AVANZADAS =

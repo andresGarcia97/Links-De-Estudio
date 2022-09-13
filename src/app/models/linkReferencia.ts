@@ -452,6 +452,7 @@ export const PRINCIPIOS = new Map<string, Referencia>([
     ['tellDontAsk', new Referencia('https://www.disrupciontecnologica.com/tell-dont-ask/?reload=977836', 'Dile, no le preguntes', 'principios')],
     ['stupid', new Referencia('https://williamdurand.fr/2013/07/30/from-stupid-to-solid-code/#singleton', 'NO seas S.T.U.P.I.D', 'principios')],
     ['twice-one', new Referencia('https://betterprogramming.pub/measure-twice-cut-once-isnt-very-agile-3af456d932b9', 'Mide 2 veces, Corta 1 vez', 'principios')],
+    ['divide-conquer', new Referencia('https://betterprogramming.pub/10-design-principles-in-software-engineering-f88647cf5a07', 'Divide y Conquistaras', 'principios')],
 ]);
 
 export const SEGURIDAD = new Map<string, Referencia>([
@@ -529,6 +530,7 @@ export const HARDWARE = new Map<string, Referencia>([
     ['rendering', new Referencia('https://www.freecodecamp.org/news/what-exactly-is-client-side-rendering-and-hows-it-different-from-server-side-rendering-bd5c786b340d/', 'Server-side VS client-side rendering', 'Hardware')],
     ['modelOSI', new Referencia('https://www.cloudflare.com/es-es/learning/ddos/glossary/open-systems-interconnection-model-osi/', 'Modelo OSI', 'Hardware')],
     ['monitoreo', new Referencia('https://www.hiberus.com/crecemos-contigo/uso-de-los-apm-monitoreo-del-rendimiento-de-aplicaciones/#:~:text=Un%20APM%20(Application%20Performance%20Management,problemas%20a%20nivel%20de%20aplicaci%C3%B3n', 'Aplication Performance Management (apm)', 'Hardware')],
+    ['vmVsContainers', new Referencia('https://cloudnativeislamabad.hashnode.dev/virtualization-vs-containerization', 'Maquinas Virtuales VS Contenedores', 'Hardware')],
 ]);
 
 export const WEB = new Map<string, Referencia>([

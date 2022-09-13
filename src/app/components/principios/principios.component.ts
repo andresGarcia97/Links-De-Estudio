@@ -22,6 +22,7 @@ export class PrincipiosComponent extends LinkReferencia {
     ['tellDontAsk', 'TDA'],
     ['stupid', 'STUPID'],
     ['twice-one', '2-1'],
+    ['divide-conquer', 'Dividir y Conquistar']
   ]);
 
 }
