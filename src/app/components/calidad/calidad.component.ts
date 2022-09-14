@@ -12,4 +12,12 @@ export class CalidadComponent extends LinkReferencia {
 
   lengthItems = this.items.length - 1;
 
+  tittles = new Map<string, string>([
+    ['artesanos', 'Artesanos'],
+    ['metricas', 'Metricas #1'],
+    ['metricasEnCodigo', 'Metricas #2'],
+    ['cleanCode', 'Clean Code'],
+    ['costOfQuality', 'Costo de la calidad'],
+  ]);
+
 }

@@ -4,23 +4,9 @@
 
   <div class="card-container">
 
-    <app-button [tittleButton]="'Linux Containers'" (click)="getLinkAndTittleByKey('lxc')"></app-button>
-
-    <app-button [tittleButton]="'Docker'" (click)="getLinkAndTittleByKey('docker')"></app-button>
-
-    <app-button [tittleButton]="'Imagenes'" (click)="getLinkAndTittleByKey('images')"></app-button>
-
-    <app-button [tittleButton]="'Contenedores'" (click)="getLinkAndTittleByKey('containers')"></app-button>
-
-    <app-button [tittleButton]="'Volumenes'" (click)="getLinkAndTittleByKey('volumes')"></app-button>
-
-    <app-button [tittleButton]="'Redes'" (click)="getLinkAndTittleByKey('network')"></app-button>
-
-    <app-button [tittleButton]="'DockerFile'" (click)="getLinkAndTittleByKey('file')"></app-button>
-
-    <app-button [tittleButton]="'Docker Compose'" (click)="getLinkAndTittleByKey('compose')"></app-button>
-
-    <app-button [tittleButton]="'Kubernetes'" (click)="getLinkAndTittleByKey('kubernetes')"></app-button>
+    <span *ngFor="let tittle of tittles | keyvalue: asIsOrder">
+      <app-button [tittleButton]=tittle.value (click)="getLinkAndTittleByKey(tittle.key)"></app-button>
+    </span>
 
   </div>
 

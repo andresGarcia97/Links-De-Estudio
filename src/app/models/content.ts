@@ -2053,6 +2053,17 @@ export const HISTORIAS_USUARIO =
                 '- Refactorizaciones de codigo y cuanto tiempo se gastara para esto ',
                 '- Correcion y/o verificación de errores, que puedan suceder despues de las pruebas ',
                 '- Documentación, ya sea crearla o modificarla ',
+            ]),
+        new Item('storyPoints',
+            [
+                '- Es un concepto original de XP, que poco a poco fue adaptado por aquellos que usan SCRUM y metodologias agiles',
+                '- Originalmente se hacian en base al "tiempo" que se llevaria implementar la historia, siendo relativo ',
+                '- Esto se referia a tiempo realmente productivo y no solo al transcurrir del tiempo, entre otros factores',
+                '- Tambien es erroneo creer que los puntos son equivalentes entre equipos y por lo tanto son comparables ',
+                '- Centrarse en las estimaciones y que estas sean correctas, tambien es otro error, ',
+                ' - ya que nos enfoca en mejorar las estimaciones y no en realizar acciones que den valor al producto ',
+                '- Intentar cumplir con las estimaciones genera una presión que puede apresurar los resultados y afectar la calidad ',
+                '- La división de tareas realmente pequeñas, tambien ayuda a completarlas eficazmente, definiendo lo realmente importante ',
             ])
     ];
 

@@ -12,4 +12,16 @@ export class ContenedoresComponent extends LinkReferencia {
 
   lengthItems = this.items.length - 1;
 
+  tittles = new Map<string, string>([
+    ['lxc', 'Linux Containers'],
+    ['docker', 'Docker'],
+    ['images', 'Imagenes'],
+    ['containers', 'Contenedores'],
+    ['volumes', 'Volumenes'],
+    ['network', 'Redes'],
+    ['file', 'DockerFile'],
+    ['compose', 'Docker Compose'],
+    ['kubernetes', 'Kubernetes'],
+  ]);
+
 }

@@ -252,7 +252,8 @@ export const USER_HISTORIES = new Map<string, Referencia>([
     ['3c', new Referencia('https://julibetancur.blog/tag/tres-c/', 'Card-Conversación-Confirmación', 'historias-usuario')],
     ['gherkin', new Referencia('https://blog.thiga.co/es/gherkin/', 'Definición de los criterios de aceptación', 'historias-usuario')],
     ['agil', new Referencia('https://agilemanifesto.org/iso/es/manifesto.html', 'Manifiesto Agil', 'historias-usuario')],
-    ['descomposicionHU', new Referencia('https://www.javiergarzas.com/2012/05/descomponer-historias-de-usuario-en-tareas-1.html', ' Descomposición en tareas', 'historias-usuario')],
+    ['descomposicionHU', new Referencia('https://www.javiergarzas.com/2012/05/descomponer-historias-de-usuario-en-tareas-1.html', 'Descomposición en tareas', 'historias-usuario')],
+    ['storyPoints', new Referencia('https://ronjeffries.com/articles/019-01ff/story-points/Index.html', 'Puntos de Historia', 'historias-usuario')],
 ]);
 
 export const MALAS_PRACTICAS = new Map<string, Referencia>([
