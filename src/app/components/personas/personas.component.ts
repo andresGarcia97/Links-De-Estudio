@@ -12,4 +12,16 @@ export class PersonasComponent extends LinkReferencia {
 
   lengthItems = this.items.length - 1;
 
+  tittles = new Map<string, string>([
+    ['personasYprocesos', 'Personas y procesos'],
+    ['gestionDeServicios', 'Gestión de servicios'],
+    ['gestionDeActivos', 'Gestión de activos'],
+    ['fidelizacion', 'Fidelizacion'],
+    ['modeloDIKW', 'Modelo DIKW'],
+    ['gestionDeExpectativas', 'Gestion de expectativas'],
+    ['capa8', 'Error en capa 8'],
+    ['noNewsGoodNews', 'No News Good News'],
+    ['tiposHackers', 'Tipos de Hackers']
+  ]);
+
 }

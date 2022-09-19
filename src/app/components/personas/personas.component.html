@@ -4,22 +4,10 @@
 
   <div class="card-container">
 
-    <app-button [tittleButton]="'Personas y procesos'" (click)="getLinkAndTittleByKey('personasYprocesos')"></app-button>
-
-    <app-button [tittleButton]="'Gestión de servicios'" (click)="getLinkAndTittleByKey('gestionDeServicios')"></app-button>
-
-    <app-button [tittleButton]="'Gestión de activos'" (click)="getLinkAndTittleByKey('gestionDeActivos')"></app-button>
-
-    <app-button [tittleButton]="'Fidelizacion'" (click)="getLinkAndTittleByKey('fidelizacion')"></app-button>
-
-    <app-button [tittleButton]="'Modelo DIKW'" (click)="getLinkAndTittleByKey('modeloDIKW')"></app-button>
-
-    <app-button [tittleButton]="'Gestion de expectativas'" (click)="getLinkAndTittleByKey('gestionDeExpectativas')"></app-button>
-
-    <app-button [tittleButton]="'Error en capa 8'" (click)="getLinkAndTittleByKey('capa8')"></app-button>
-
-    <app-button [tittleButton]="'No News Good News'" (click)="getLinkAndTittleByKey('noNewsGoodNews')"></app-button>
-
+    <span *ngFor="let tittle of tittles | keyvalue: asIsOrder">
+      <app-button [tittleButton]=tittle.value (click)="getLinkAndTittleByKey(tittle.key)"></app-button>
+    </span>
+    
   </div>
 
   <app-referencia class="flexbox terminal" [referencia]="referencia" [titulo]="titulo"></app-referencia>
