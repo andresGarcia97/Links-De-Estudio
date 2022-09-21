@@ -34,7 +34,8 @@ export class FuentesComponent {
     'eventLoop',
     'convivenciaArquitecturas',
     'designPatternsJavascript',
-    'easySql'
+    'easySql',
+    'orderAndSearch'
   ];
 
   utils = [

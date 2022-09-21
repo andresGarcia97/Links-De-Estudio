@@ -31,6 +31,7 @@ export class LinkFuente {
         ['convivenciaArquitecturas', { titulo: 'Multiples arquitecturas', referencia: 'https://herbertograca.com/2017/11/16/explicit-architecture-01-ddd-hexagonal-onion-clean-cqrs-how-i-put-it-all-together/' }],
         ['designPatternsJavascript', { titulo: 'Patrones en Javascript', referencia: 'https://www.freecodecamp.org/news/javascript-design-patterns-explained/' }],
         ['easySql', { titulo: 'Easy SQL', referencia: 'https://www.sql-easy.com/' }],
+        ['orderAndSearch', { titulo: 'Busqueda & Ordenacion', referencia: 'https://www.javaguides.net/p/data-structures-and-algorithms-in-java.html' }],
         // utiles
         ['atributosCalidad', { titulo: 'Atributos de calidad', referencia: 'https://platzi.com/tutoriales/1248-pro-arquitectura/2545-resumen-grafico-de-los-atributos-de-calidad/' }],
         ['expresionesRegulares', { titulo: 'Expresiones regulares', referencia: 'https://regexr.com/' }],
