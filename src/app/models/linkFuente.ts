@@ -18,6 +18,7 @@ export class LinkFuente {
         ['javascriptDataStructures', { titulo: 'Estructuras en Javascript', referencia: 'https://www.freecodecamp.org/news/data-structures-in-javascript-with-examples/' }],
         ['canInclude', { titulo: 'Can Include ?', referencia: 'https://caninclude.glitch.me/' }],
         ['cssLayout', { titulo: 'CSS layouts', referencia: 'https://csslayout.io/' }],
+        ['htmlHellHeaven', { titulo: 'HTML Hell & Heaven', referencia: 'https://www.htmhell.dev/' }],
         // backend
         ['sqlTutorial', { titulo: 'SQL Tutorial', referencia: 'https://www.w3schools.com/sql/default.asp' }],
         ['patronesDisenoJava', { titulo: 'Patrones de diseño en Java', referencia: 'https://www.journaldev.com/1827/java-design-patterns-example-tutorial' }],
@@ -38,6 +39,7 @@ export class LinkFuente {
         ['javascriptStandars', { titulo: 'Estandars para Javascript', referencia: 'https://github.com/airbnb/javascript#table-of-contents' }],
         ['algoritms', { titulo: 'Algoritmos', referencia: 'https://github.com/TheAlgorithms' }],
         ['devDocs', { titulo: 'Dev Docs', referencia: 'https://devdocs.io/' }],
+        ['cliArt', { titulo: 'Comand Line Art', referencia: 'https://github.com/jlevy/the-art-of-command-line/blob/master/README-es.md' }],
         // testing
         ['junit', { titulo: 'Junit', referencia: 'https://www.adictosaltrabajo.com/2016/11/24/primeros-pasos-con-junit-5/' }],
         ['junitV5', { titulo: 'Junit5', referencia: 'https://junit.org/junit5/' }],

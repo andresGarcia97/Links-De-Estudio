@@ -19,7 +19,8 @@ export class FuentesComponent {
     'canIuse',
     'javascriptDataStructures',
     'canInclude',
-    'cssLayout'
+    'cssLayout',
+    'htmlHellHeaven',
   ];
 
   back = [
@@ -44,6 +45,7 @@ export class FuentesComponent {
     'javascriptStandars',
     'algoritms',
     'devDocs',
+    'cliArt'
   ];
 
   testing = [
