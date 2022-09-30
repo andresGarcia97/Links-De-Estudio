@@ -172,6 +172,7 @@ export const COMPILACION = new Map<string, Referencia>([
     ['grafos', new Referencia('https://www.grapheverywhere.com/grafos-que-son-tipos-orden-y-herramientas-de-visualizacion/', 'Grafos', 'compilacion')],
     ['compilacionAnticipada', new Referencia('https://hmong.es/wiki/Ahead-of-time_compilation', 'Compilación AOT', 'compilacion')],
     ['duckTyping', new Referencia('https://towardsdatascience.com/duck-typing-python-7aeac97e11f8', 'Duck Typing', 'compilacion')],
+    ['sdkVsApi', new Referencia('https://geekflare.com/es/sdk-and-api-comparison/', 'SDK vs API', 'compilacion')],
 ]);
 
 export const CONOCIMIENTO_EMPIRICO = new Map<string, Referencia>([

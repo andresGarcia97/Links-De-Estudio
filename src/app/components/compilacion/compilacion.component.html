@@ -1,6 +1,6 @@
 <div class="content">
 
-  <h2>Compilación de codigo</h2>
+  <h2>Compilación de codigo & Desarrollo</h2>
 
   <div class="card-container">
 
@@ -18,7 +18,7 @@
 
     <span *ngFor="let item of items">
       <span *ngSwitchCase="item.key">
-        <pre *ngFor="let content of item.content">{{content}}</pre>
+        <pre *ngFor="let content of item.content" [innerHTML]="content">{{content}}</pre>
       </span>
     </span>
 

@@ -23,7 +23,8 @@ export class CompilacionComponent extends LinkReferencia {
     ['treeShaking', 'Tree Shaking'],
     ['grafos','Grafos'],
     ['compilacionAnticipada','Compilación anticipada'],
-    ['duckTyping','Duck Typing']
+    ['duckTyping','Duck Typing'],
+    ['sdkVsApi','SDK vs API'],
   ]);
 
 }
