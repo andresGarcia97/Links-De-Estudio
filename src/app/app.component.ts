@@ -76,6 +76,10 @@ export class AppComponent implements OnInit {
 
   buttonCloseComponent = false;
   buttonChangueMode = false;
+  domain = "https://contenidoderepaso.web.app/";
+  shareLinkedin = `https://www.linkedin.com/sharing/share-offsite/?url=${this.domain}`;
+  shareTwitter = `https://twitter.com/intent/tweet?text=Una gran fuente de repaso para Programadores&url=${this.domain}`;
+  shareFacebook = `https://www.facebook.com/sharer/sharer.php?u=${this.domain}`;
 
   public listaComponentes = [
     // 0 - 3
