@@ -604,8 +604,8 @@ div a.circle-link {
 
 /*https://codepen.io/veronicadev/pen/yEzmjw*/
 .share-icon {
-  width: 32px;
-  height: 32px;
+  width: 30px;
+  height: 30px;
   fill: var(--color-cultured);
   display: inline-block;
   vertical-align: top;
@@ -618,8 +618,7 @@ div a.circle-link {
 
 .share-button {
   cursor: pointer;
-  height: 42px;
-  -moz-transform: translateY(-50%) translateX(-50%);
+  height: 40px;
   -webkit-perspective: 200px;
   -moz-perspective: 200px;
   perspective: 200px;
@@ -627,7 +626,7 @@ div a.circle-link {
 
 .share-button-back {
   background-color: var(--color-crimson);
-  padding: 5px;
+  padding: 4px;
   border-radius: 20px;
   overflow: hidden;
 }
@@ -655,7 +654,7 @@ div a.circle-link {
 }
 
 .share-button-text {
-  line-height: 42px;
+  line-height: 40px;
   font-size: 16px;
   text-align: center;
   color: var(--color-black);
