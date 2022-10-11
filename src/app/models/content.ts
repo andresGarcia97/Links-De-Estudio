@@ -4138,7 +4138,21 @@ export const REQUISITOS =
                 '',
                 '(nota) el atributo de seguridad se puede entender de 2 maneras, por lo que en este caso solo se considera que cumplen aquellos que,   ',
                 '  afecten negativamente o positivamente a ambos; la seguridad de los datos y el acceso a estos ',
-            ])
+            ]),
+        new Item('objetivos',
+            [
+                '- Un proyecto consta de ambos, y esta más relacionados de lo que parecen, ya que: ',
+                '',
+                '- <strong> Los requisitos son objetivos concretos </strong>',
+                ' - Al ser pocos en comparacion con la lista de requisitos, ya que son objetivos desglosados y detallados para el proyecto ',
+                '',
+                '- <strong> Los objetivos son requisitos abstraidos </strong>',
+                ' - Estos son el resumen de los requisitos, y provienen de un nivel superior de abstracción y de un panorama más amplio ',
+                '',
+                '- <strong> Los objetivos son el QUE y los requisitos el COMO </strong>',
+                ' - Mediante la ingenieria de requisitos se asienta alguna de las diferentes acciones concretas, ',
+                ' - que puede tener algun objetivo, aunque muchas de estas decisiones, se tomen de manera insidiosa y poco consciente ',
+            ]),
     ];
 
 export const SEGURIDAD =

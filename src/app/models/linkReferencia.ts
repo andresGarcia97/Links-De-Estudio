@@ -443,6 +443,7 @@ export const REQUISITOS = new Map<string, Referencia>([
     ['ambiguedad', new Referencia('https://requeridos.com/requerimientos-menos-es-mas/', 'Evitar la ambiguedad', 'requisitos')],
     ['calidad', new Referencia('https://platzi.com/tutoriales/1248-pro-arquitectura/5498-atributos-de-calidad-de-un-producto-de-software/', 'Atributos de calidad', 'requisitos')],
     ['tradeoff', new Referencia('https://medium.com/analysts-corner/those-other-requirements-quality-attributes-and-their-inescapable-tradeoffs-31dc0691974d', 'Sacrificios y ganancias', 'requisitos')],
+    ['objetivos', new Referencia('https://www.pqforce.com/es/blog/objetivos-frente-a-requisitos-cual-es-la-diferencia/', 'Objetivos & Requisitos', 'requisitos')],
 ]);
 
 export const PRINCIPIOS = new Map<string, Referencia>([

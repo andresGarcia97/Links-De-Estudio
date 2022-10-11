@@ -4,17 +4,9 @@
 
   <div class="card-container">
 
-    <app-button [tittleButton]="'Funcionales'" (click)="getLinkAndTittleByKey('funcionales')"></app-button>
-
-    <app-button [tittleButton]="'NO Funcionales'" (click)="getLinkAndTittleByKey('NOfuncionales')"></app-button>
-
-    <app-button [tittleButton]="'EL Negocio'" (click)="getLinkAndTittleByKey('negocio')"></app-button>
-
-    <app-button [tittleButton]="'Evitar la ambiguedad'" (click)="getLinkAndTittleByKey('ambiguedad')"></app-button>
-
-    <app-button [tittleButton]="'Atributos de calidad'" (click)="getLinkAndTittleByKey('calidad')"></app-button>
-
-    <app-button [tittleButton]="'Trade-offs'" (click)="getLinkAndTittleByKey('tradeoff')"></app-button>
+    <span *ngFor="let tittle of tittles | keyvalue: asIsOrder">
+      <app-button [tittleButton]=tittle.value (click)="getLinkAndTittleByKey(tittle.key)"></app-button>
+    </span>
 
   </div>
 
@@ -26,7 +18,7 @@
 
     <span *ngFor="let item of items">
       <span *ngSwitchCase="item.key">
-        <pre *ngFor="let content of item.content">{{content}}</pre>
+        <pre *ngFor="let content of item.content" [innerHTML]="content">{{content}}</pre>
       </span>
     </span>
 
