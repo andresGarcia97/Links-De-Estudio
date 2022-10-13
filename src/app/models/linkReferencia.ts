@@ -392,6 +392,7 @@ export const POO = new Map<string, Referencia>([
     ['acoplamientoComponentes', new Referencia('https://mg-laboratory.tistory.com/189', 'Acoplamiento de componentes', 'POO')],
     ['beginingPoo', new Referencia('https://medium.com/javascript-scene/the-forgotten-history-of-oop-88d71b9b2d9f', 'Nacimiento de Poo', 'POO')],
     ['inmutability', new Referencia('https://www.campusmvp.es/recursos/post/programacion-funcional-inmutabilidad-y-funciones-puras.aspx', 'Inmutabilidad', 'POO')],
+    ['typesPolimorfismo', new Referencia('https://medium.com/lenguajes-y-dialectos-en-programaci%C3%B3n/polimorfismo-y-paradigmas-tipos-y-ejemplos-ca6a56093a66#:~:text=El%20polimorfismo%20puede%20categorizarse%20en,mantener%20e%20implementar%20el%20polimorfismo', 'Tipos de Polimorfismo', 'POO')],
 ]);
 
 export const TESTING = new Map<string, Referencia>([

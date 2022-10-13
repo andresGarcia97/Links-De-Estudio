@@ -27,7 +27,8 @@ export class PooComponent extends LinkReferencia {
     ['enlaces', 'Enlaces'],
     ['acoplamientoComponentes', 'SDP, ADP, SAP'],
     ['beginingPoo', 'Inicios de POO'],
-    ['inmutability', 'Inmutabilidad']
+    ['inmutability', 'Inmutabilidad'],
+    ['typesPolimorfismo', 'Tipos de Polimorfismo'],
   ]);
 
 }
