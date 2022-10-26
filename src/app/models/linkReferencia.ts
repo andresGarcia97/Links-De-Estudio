@@ -1,5 +1,6 @@
 
-import { Content } from './content';
+import { ContentMain } from './contentMain';
+import { Referencia } from './models';
 
 export class LinkReferencia {
 
@@ -7,7 +8,7 @@ export class LinkReferencia {
     referencia = '';
     titulo = '';
 
-    content = new Content();
+    content = new ContentMain();
     items = this.content.temas;
 
     itemSelected = 0;
@@ -81,18 +82,6 @@ export class LinkReferencia {
     public asIsOrder(_a: any, _b: any) {
         return 1;
      }
-}
-
-export class Referencia {
-    referencia = '';
-    titulo = '';
-    component = '';
-
-    constructor(referencia: string, titulo: string, component: string) {
-        this.referencia = referencia;
-        this.titulo = titulo;
-        this.component = component;
-    }
 }
 
 export const AGILES = new Map<string, Referencia>([

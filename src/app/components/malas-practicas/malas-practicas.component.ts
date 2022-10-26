@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MALAS_PRACTICAS } from 'src/app/models/content';
+import { MALAS_PRACTICAS } from 'src/app/models/content/content2';
 import { LinkReferencia } from 'src/app/models/linkReferencia';
 
 @Component({

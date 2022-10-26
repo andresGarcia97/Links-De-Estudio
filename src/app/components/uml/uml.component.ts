@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { UML } from 'src/app/models/content';
+import { UML } from 'src/app/models/content/content3';
 import { LinkReferencia } from 'src/app/models/linkReferencia';
 
 @Component({

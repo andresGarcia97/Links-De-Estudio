@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Content, Item } from 'src/app/models/content';
+import { ContentMain } from 'src/app/models/contentMain';
 import { LinkFuente } from 'src/app/models/linkFuente';
 import { LinkReferencia } from 'src/app/models/linkReferencia';
+import { Item } from 'src/app/models/models';
 
 @Component({
   selector: 'app-glosario',
@@ -27,7 +28,7 @@ export class GlosarioComponent implements OnInit {
   referencia = '';
   titulo = '';
 
-  content = new Content();
+  content = new ContentMain();
   temas = this.content.temas;
   item = new Item('', []);
 

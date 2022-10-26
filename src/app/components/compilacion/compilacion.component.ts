@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { COMPILACION } from 'src/app/models/content';
+import { COMPILACION } from 'src/app/models/content/content2';
 import { LinkReferencia } from 'src/app/models/linkReferencia';
 
 @Component({
@@ -21,10 +21,10 @@ export class CompilacionComponent extends LinkReferencia {
     ['coercion', 'Coerción'],
     ['ofuscacion', 'Ofuscación'],
     ['treeShaking', 'Tree Shaking'],
-    ['grafos','Grafos'],
-    ['compilacionAnticipada','Compilación anticipada'],
-    ['duckTyping','Duck Typing'],
-    ['sdkVsApi','SDK vs API'],
+    ['grafos', 'Grafos'],
+    ['compilacionAnticipada', 'Compilación anticipada'],
+    ['duckTyping', 'Duck Typing'],
+    ['sdkVsApi', 'SDK vs API'],
   ]);
 
 }

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AGILES } from 'src/app/models/content';
+import { AGILES } from 'src/app/models/content/content1';
 import { LinkReferencia } from 'src/app/models/linkReferencia';
 
 @Component({

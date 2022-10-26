@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PARADIGMAS } from 'src/app/models/content';
+import { PARADIGMAS } from 'src/app/models/content/content1';
 import { LinkReferencia } from 'src/app/models/linkReferencia';
 
 @Component({

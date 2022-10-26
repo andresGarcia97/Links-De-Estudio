@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SEGURIDAD } from 'src/app/models/content';
+import { SEGURIDAD } from 'src/app/models/content/content3';
 import { LinkReferencia } from 'src/app/models/linkReferencia';
 
 @Component({
@@ -26,7 +26,7 @@ export class SeguridadComponent extends LinkReferencia {
     ['pentest', 'Test de Intrusión'],
     ['owaspTop', 'OWASP Top 10'],
     ['stride', 'STRIDE'],
-    ['ciam','CIAM'],
+    ['ciam', 'CIAM'],
     ['lateralChanel', 'Ataques de canal lateral']
   ]);
 

@@ -1,3 +1,4 @@
+import { Fuente } from "./models";
 
 export class LinkFuente {
 
@@ -85,9 +86,3 @@ export class LinkFuente {
     }
 
 }
-
-export class Fuente {
-    titulo = '';
-    referencia = '';
-}
-

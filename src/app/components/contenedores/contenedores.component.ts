@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { DOCKER } from 'src/app/models/content';
+import { CONTENEDORES } from 'src/app/models/content/content1';
 import { LinkReferencia } from 'src/app/models/linkReferencia';
 
 @Component({
@@ -8,7 +8,7 @@ import { LinkReferencia } from 'src/app/models/linkReferencia';
 })
 export class ContenedoresComponent extends LinkReferencia {
 
-  items = DOCKER;
+  items = CONTENEDORES;
 
   lengthItems = this.items.length - 1;
 

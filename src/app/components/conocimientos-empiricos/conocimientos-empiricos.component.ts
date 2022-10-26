@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CONOCIMIENTOS_EMPIRICOS } from 'src/app/models/content';
+import { CONOCIMIENTOS_EMPIRICOS } from 'src/app/models/content/content2';
 import { LinkReferencia } from 'src/app/models/linkReferencia';
 
 @Component({

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ESTATEGIAS_DESARROLLO } from 'src/app/models/content';
+import { ESTATEGIAS_DESARROLLO } from 'src/app/models/content/content2';
 import { LinkReferencia } from 'src/app/models/linkReferencia';
 
 @Component({

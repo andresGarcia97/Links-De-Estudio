@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SMELLS_CODES } from 'src/app/models/content';
+import { SMELLS_CODES } from 'src/app/models/content/content3';
 import { LinkReferencia } from 'src/app/models/linkReferencia';
 
 @Component({

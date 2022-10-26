@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PRUEBAS_AVANZADAS } from 'src/app/models/content';
+import { PRUEBAS_AVANZADAS } from 'src/app/models/content/content2';
 import { LinkReferencia } from 'src/app/models/linkReferencia';
 
 @Component({
@@ -21,9 +21,9 @@ export class PruebasAvanzadasComponent extends LinkReferencia {
     ['outsideInside', 'Outside & Inside'],
     ['casosDePruebas', 'Casos de prueba'],
     ['casosDeUso', 'Casos de uso'],
-    ['codeSmellsTests1','Code smells en testing #1'],
-    ['codeSmellsTests2','Code smells en testing #2'],
-    ['mutation','Pruebas de mutación']
+    ['codeSmellsTests1', 'Code smells en testing #1'],
+    ['codeSmellsTests2', 'Code smells en testing #2'],
+    ['mutation', 'Pruebas de mutación']
   ]);
 
 }
