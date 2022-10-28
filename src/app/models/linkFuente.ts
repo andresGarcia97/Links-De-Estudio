@@ -41,12 +41,13 @@ export class LinkFuente {
         ['algoritms', { titulo: 'Algoritmos', referencia: 'https://github.com/TheAlgorithms' }],
         ['devDocs', { titulo: 'Dev Docs', referencia: 'https://devdocs.io/' }],
         ['cliArt', { titulo: 'Comand Line Art', referencia: 'https://github.com/jlevy/the-art-of-command-line/blob/master/README-es.md' }],
-        // testing
+        // testing y calidad
         ['junit', { titulo: 'Junit', referencia: 'https://www.adictosaltrabajo.com/2016/11/24/primeros-pasos-con-junit-5/' }],
         ['junitV5', { titulo: 'Junit5', referencia: 'https://junit.org/junit5/' }],
         ['mockito', { titulo: 'Mockito', referencia: 'https://www.baeldung.com/mockito-series' }],
         ['jmeter', { titulo: 'Jmeter', referencia: 'https://www.guru99.com/jmeter-tutorials.html' }],
         ['selenium', { titulo: 'Introducción a selenium', referencia: 'https://www.digital55.com/desarrollo-tecnologia/herramientas-testing-introduccion-selenium/' }],
+        ['sonarRules', { titulo: 'Sonar Rules', referencia: 'https://rules.sonarsource.com/' }],
         // curiosidades
         ['svgPorn', { titulo: 'SVG Porn', referencia: 'https://svgporn.com/' }],
         ['benchmarksFront', { titulo: 'Benchmarks in front', referencia: 'https://github.com/krausest/js-framework-benchmark' }],

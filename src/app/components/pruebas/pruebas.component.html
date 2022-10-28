@@ -4,35 +4,9 @@
 
   <div class="card-container">
 
-    <app-button [tittleButton]="'Principios de testing'" (click)="getLinkAndTittleByKey('principios')"></app-button>
-
-    <app-button [tittleButton]="'Testing manifiesto'" (click)="getLinkAndTittleByKey('manifiesto')"></app-button>
-
-    <app-button [tittleButton]="'QA'" (click)="getLinkAndTittleByKey('QAperson')"></app-button>
-
-    <app-button [tittleButton]="'Tipos'" (click)="getLinkAndTittleByKey('tiposPruebas')"></app-button>
-
-    <app-button [tittleButton]="'Beneficios'" (click)="getLinkAndTittleByKey('beneficios')"></app-button>
-
-    <app-button [tittleButton]="'Nombramiento'" (click)="getLinkAndTittleByKey('nombramiento')"></app-button>
-
-    <app-button [tittleButton]="'Principio FIRST'" (click)="getLinkAndTittleByKey('first')"></app-button>
-
-    <app-button [tittleButton]="'SUT & DOC'" (click)="getLinkAndTittleByKey('sutydoc')"></app-button>
-
-    <app-button [tittleButton]="'Dobles'" (click)="getLinkAndTittleByKey('dobles')"></app-button>
-
-    <app-button [tittleButton]="'AAA'" (click)="getLinkAndTittleByKey('aaa')"></app-button>
-
-    <app-button [tittleButton]="'GWT'" (click)="getLinkAndTittleByKey('gwt')"></app-button>
-
-    <app-button [tittleButton]="'Piramides de tests'" (click)="getLinkAndTittleByKey('piramide')"></app-button>
-
-    <app-button [tittleButton]="'Triangulo de Hierro'" (click)="getLinkAndTittleByKey('triangulo')"></app-button>
-
-    <app-button [tittleButton]="'Cobertura'" (click)="getLinkAndTittleByKey('cobertura')"></app-button>
-
-    <app-button [tittleButton]="'Falsos Resultados'" (click)="getLinkAndTittleByKey('falsos')"></app-button>
+    <span *ngFor="let tittle of tittles | keyvalue: asIsOrder">
+      <app-button [tittleButton]=tittle.value (click)="getLinkAndTittleByKey(tittle.key)"></app-button>
+    </span>
 
   </div>
 

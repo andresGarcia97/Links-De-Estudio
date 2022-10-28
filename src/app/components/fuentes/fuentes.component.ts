@@ -53,7 +53,8 @@ export class FuentesComponent {
     'junitV5',
     'mockito',
     'jmeter',
-    'selenium'
+    'selenium',
+    'sonarRules'
   ];
 
   curiosities = [

@@ -18,6 +18,7 @@ export class CalidadComponent extends LinkReferencia {
     ['metricasEnCodigo', 'Metricas #2'],
     ['cleanCode', 'Clean Code'],
     ['costOfQuality', 'Costo de la calidad'],
+    ['qualityGates', 'Politicas de calidad'],
   ]);
 
 }

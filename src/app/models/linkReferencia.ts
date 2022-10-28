@@ -147,6 +147,7 @@ export const CALIDAD = new Map<string, Referencia>([
     ['cleanCode', new Referencia('https://medium.com/@tijuhasz/in-one-of-the-most-groundbreaking-practical-books-on-software-development-clean-code-right-in-3ef3006c68f2', 'Clean Code & Code rot', 'calidad')],
     ['artesanos', new Referencia('https://manifesto.softwarecraftsmanship.org/#/es', 'Artesanos de software', 'calidad')],
     ['costOfQuality', new Referencia('https://blog.softexpert.com/es/cuales-son-los-costos-de-la-calidad/#:~:text=Costos%20de%20la%20conformidad%3A%20son,de%20la%20conformidad%20con%20requerimientos', 'Costo de la calidad', 'calidad')],
+    ['qualityGates', new Referencia('https://docs.sonarqube.org/latest/user-guide/quality-gates/', 'Politicas de calidad', 'calidad')],
 ]);
 
 export const COMPILACION = new Map<string, Referencia>([

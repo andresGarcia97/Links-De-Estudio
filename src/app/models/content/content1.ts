@@ -452,6 +452,22 @@ export const CALIDAD =
                 '- Costos de conformidad -> asociados a prevención y evaluación de la conformidad con los requisitos ',
                 '- Costos de NO conformidad -> han de ver con las fallas ya sean internas y/o externas no detectadas y que terminan afectando al cliente ',
             ]),
+        new Item('qualityGates',
+            [
+                '- Son politicas de calidad de las organizaciones, para cumplir con el objetivo de realizar un nuevo despliegue ',
+                '- Suelen ser politicas para garantizar la calidad, fiabilidad, y reducción de errores, facilitando aspectos como el CD/CI',
+                '- Estos requisitos pueden variar y ser más flexibles o más estrictos de acuerdo a las necesidades de cada proyecto ',
+                '',
+                '- Algunas politicas de calidad comunes: ',
+                ' - Cobertura -> Este porcentaje indica cuanto del codigo de producción esta cobijado mediantes tests unitarios o de integración ',
+                ' - Duplicación -> Las lineas duplicadas no solo violan el principio de DRY, si no que dificultan directamente la mantenibilidad ',
+                ' - Fiabilidad -> Directamente relacionada con la cantidad de bugs encontrados y que tan graves son ',
+                ' - Vulnerabilidades -> Riesgos de seguridad potenciales y especificos para cada lenguaje ',
+                ' - Deuda tecnica -> Pequeños errores, omisiones, falta de tests, codigo mal estructurado, soluciones desprolijas, que poco a poco van sumando ',
+                '',
+                '- Valores generales (SonarQube) ',
+                '  Cobertura<strong> >=80%</strong>   Duplicación<strong> <=3%</strong>   Fiabilidad <strong>A</strong>   Vulnerabilidades <strong>A</strong>    Deuda tecnica<strong> <=5%</strong> '
+            ])
     ];
 
 export const META_CARACTERISTICAS =
