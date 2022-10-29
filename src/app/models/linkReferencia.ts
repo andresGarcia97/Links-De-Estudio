@@ -163,6 +163,7 @@ export const COMPILACION = new Map<string, Referencia>([
     ['compilacionAnticipada', new Referencia('https://hmong.es/wiki/Ahead-of-time_compilation', 'Compilación AOT', 'compilacion')],
     ['duckTyping', new Referencia('https://towardsdatascience.com/duck-typing-python-7aeac97e11f8', 'Duck Typing', 'compilacion')],
     ['sdkVsApi', new Referencia('https://geekflare.com/es/sdk-and-api-comparison/', 'SDK vs API', 'compilacion')],
+    ['casting', new Referencia('https://www.w3schools.com/java/java_type_casting.asp', 'Casting', 'compilacion')],
 ]);
 
 export const CONOCIMIENTO_EMPIRICO = new Map<string, Referencia>([

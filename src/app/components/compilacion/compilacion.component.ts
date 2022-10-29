@@ -25,6 +25,7 @@ export class CompilacionComponent extends LinkReferencia {
     ['compilacionAnticipada', 'Compilación anticipada'],
     ['duckTyping', 'Duck Typing'],
     ['sdkVsApi', 'SDK vs API'],
+    ['casting', 'Casteo de Datos'],
   ]);
 
 }
