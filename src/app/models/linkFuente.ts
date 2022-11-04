@@ -34,6 +34,7 @@ export class LinkFuente {
         ['designPatternsJavascript', { titulo: 'Patrones en Javascript', referencia: 'https://www.freecodecamp.org/news/javascript-design-patterns-explained/' }],
         ['easySql', { titulo: 'Easy SQL', referencia: 'https://www.sql-easy.com/' }],
         ['orderAndSearch', { titulo: 'Busqueda & Ordenacion', referencia: 'https://www.javaguides.net/p/data-structures-and-algorithms-in-java.html' }],
+        ['LinuxCommands', { titulo: 'Comandos de Linux', referencia: 'https://xmind.app/m/WwtB/' }],
         // utiles
         ['atributosCalidad', { titulo: 'Atributos de calidad', referencia: 'https://platzi.com/tutoriales/1248-pro-arquitectura/2545-resumen-grafico-de-los-atributos-de-calidad/' }],
         ['expresionesRegulares', { titulo: 'Expresiones regulares', referencia: 'https://regexr.com/' }],
@@ -41,6 +42,7 @@ export class LinkFuente {
         ['algoritms', { titulo: 'Algoritmos', referencia: 'https://github.com/TheAlgorithms' }],
         ['devDocs', { titulo: 'Dev Docs', referencia: 'https://devdocs.io/' }],
         ['cliArt', { titulo: 'Comand Line Art', referencia: 'https://github.com/jlevy/the-art-of-command-line/blob/master/README-es.md' }],
+        ['bundlephobia', { titulo: 'Bundle Phobia', referencia: 'https://bundlephobia.com/' }],
         // testing y calidad
         ['junit', { titulo: 'Junit', referencia: 'https://www.adictosaltrabajo.com/2016/11/24/primeros-pasos-con-junit-5/' }],
         ['junitV5', { titulo: 'Junit5', referencia: 'https://junit.org/junit5/' }],
@@ -70,6 +72,9 @@ export class LinkFuente {
         ['comandosGitFlow', { titulo: 'Comandos Git Flow', referencia: 'http://danielkummer.github.io/git-flow-cheatsheet/index.es_ES.html' }],
         ['changeLog', { titulo: 'Change Log', referencia: 'https://keepachangelog.com/es-ES/1.0.0/' }],
         ['commitConventions', { titulo: 'Estructura de un commit', referencia: 'https://www.conventionalcommits.org/es/v1.0.0/' }],
+        ['shitGit', { titulo: 'Reparalo con Git', referencia: 'https://ohshitgit.com/' }],
+        ['aGoodReadme', { titulo: 'Haciendo un buen Readme', referencia: 'https://dev.to/merlos/how-to-write-a-good-readme-bog' }],
+        ['madeGitIgnore', { titulo: 'GitIgnore rapido y facil', referencia: 'https://www.toptal.com/developers/gitignore/' }],
         // APIs rest
         ['primeraApi', { titulo: 'la Primera API', referencia: 'https://api-first-world.com/?utm_source=&utm_campaign=&utm_con=&utm_medium=email&dcid=&mkt_tok=MDY3LVVNRC05OTEAAAF--bLIdG_tuBxUOm0ANexNXnkDOGfFcrIPlKgw4SMiaw2C6ZeMnB26wqsVjRU6EGY9ISqEiqBIzonrSIVnXckxUiE0UOwMsZ5fh8kKkl9k6cM' }],
         ['jsonFormat', { titulo: 'JSON Format', referencia: 'https://jsonformatter.curiousconcept.com/#' }],
@@ -77,6 +82,7 @@ export class LinkFuente {
         ['designApis', { titulo: 'Diseñar un API', referencia: 'https://www.freecodecamp.org/news/design-an-api-application-program-interface/' }],
         ['overApi', { titulo: 'Over Api', referencia: 'https://overapi.com/' }],
         ['jsonVisio', { titulo: 'JSON estructure', referencia: 'https://jsonvisio.com/' }],
+        ['ApiEvangelist', { titulo: 'API Evangelist', referencia: 'https://apievangelist.com/info/101/' }],
     ]);
 
     public getLinkAndFuenteByKey(key: string = ''): Fuente {

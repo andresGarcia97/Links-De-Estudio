@@ -36,7 +36,8 @@ export class FuentesComponent {
     'convivenciaArquitecturas',
     'designPatternsJavascript',
     'easySql',
-    'orderAndSearch'
+    'orderAndSearch',
+    'LinuxCommands'
   ];
 
   utils = [
@@ -45,7 +46,8 @@ export class FuentesComponent {
     'javascriptStandars',
     'algoritms',
     'devDocs',
-    'cliArt'
+    'cliArt',
+    'bundlephobia'
   ];
 
   testing = [
@@ -82,7 +84,10 @@ export class FuentesComponent {
     'comandosGit',
     'comandosGitFlow',
     'changeLog',
-    'commitConventions'
+    'commitConventions',
+    'shitGit',
+    'aGoodReadme',
+    'madeGitIgnore'
   ];
 
   apis = [
@@ -91,7 +96,8 @@ export class FuentesComponent {
     'rapidapi',
     'designApis',
     'overApi',
-    'jsonVisio'
+    'jsonVisio',
+    'ApiEvangelist'
   ];
 
 }
