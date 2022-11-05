@@ -4,33 +4,9 @@
 
   <div class="card-container">
 
-    <app-button [tittleButton]="'Tipos de nube'" (click)="getLinkAndTittleByKey('nube')"></app-button>
-
-    <app-button [tittleButton]="'IaaS, PaaS, SaaS'" (click)="getLinkAndTittleByKey('iaas-paas-saas')"></app-button>
-
-    <app-button [tittleButton]="'API'" (click)="getLinkAndTittleByKey('api')"></app-button>
-
-    <app-button [tittleButton]="'Tipos de APIs'" (click)="getLinkAndTittleByKey('tiposApi')"></app-button>
-
-    <app-button [tittleButton]="'SOAP & REST'" (click)="getLinkAndTittleByKey('rest')"></app-button>
-
-    <app-button [tittleButton]="'Rest & RestFull'" (click)="getLinkAndTittleByKey('restfull')"></app-button>
-
-    <app-button [tittleButton]="'Codigos HTTP'" (click)="getLinkAndTittleByKey('httpCodes')"></app-button>
-
-    <app-button [tittleButton]="'Estandares RestFull'" (click)="getLinkAndTittleByKey('caracteristicas')"></app-button>
-
-    <app-button [tittleButton]="'Nivel de Madurez'" (click)="getLinkAndTittleByKey('madurezDeUnaApi')"></app-button>
-
-    <app-button [tittleButton]="'12 - factores'" (click)="getLinkAndTittleByKey('factores12')"></app-button>
-
-    <app-button [tittleButton]="'Migraciones'" (click)="getLinkAndTittleByKey('migracionesNube')"></app-button>
-
-    <app-button [tittleButton]="'Teorema CAP'" (click)="getLinkAndTittleByKey('capTeorema')"></app-button>
-
-    <app-button [tittleButton]="'Servidor DNS'" (click)="getLinkAndTittleByKey('dns')"></app-button>
-
-    <app-button [tittleButton]="'Linting'" (click)="getLinkAndTittleByKey('linting')"></app-button>
+    <span *ngFor="let tittle of tittles | keyvalue: asIsOrder">
+      <app-button [tittleButton]=tittle.value (click)="getLinkAndTittleByKey(tittle.key)"></app-button>
+    </span>
 
   </div>
 
@@ -42,7 +18,7 @@
 
     <span *ngFor="let item of items">
       <span *ngSwitchCase="item.key">
-        <pre *ngFor="let content of item.content">{{content}}</pre>
+        <pre *ngFor="let content of item.content" [innerHtml]="content">{{content}}</pre>
       </span>
     </span>
 

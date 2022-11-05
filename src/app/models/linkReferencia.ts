@@ -316,6 +316,7 @@ export const NUBE_AND_APIS = new Map<string, Referencia>([
     ['dns', new Referencia('https://www.ionos.es/digitalguide/servidores/know-how/que-es-el-servidor-dns-y-como-funciona/', 'Servidor DNS', 'Nube & APIs')],
     ['linting', new Referencia('https://www.freecodecamp.org/espanol/news/que-es-linting-y-eslint/', 'Linting', 'Nube & APIs')],
     ['httpCodes', new Referencia('https://developer.mozilla.org/es/docs/Web/HTTP/Status', 'Codigos Http', 'Nube & APIs')],
+    ['HATEOAS', new Referencia('https://www.adictosaltrabajo.com/2013/12/02/spring-hateoas/', 'HATEOAS', 'Nube & APIs')],
 ]);
 
 export const OTROS = new Map<string, Referencia>([

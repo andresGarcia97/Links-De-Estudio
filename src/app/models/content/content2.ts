@@ -1648,6 +1648,14 @@ export const NUBE =
                 '- Estas herramientas no solo nos muestran los posibles errores, tambien pueden dar sugerencias de posibles soluciones ',
                 '- Tambien permiten la configuración de nuevas reglas para cuando se trabaja en equipo y mantener la consistencia ',
             ]),
+        new Item('HATEOAS',
+            [
+                '- Los servicios REST son + simples, por eso son una gran opción sobre SOAP, pero tambien se puede abusar de esto ',
+                '- <strong>Hypermedia As The Engine Of Application State</strong> (hipermedia como motor del estado de la aplicación)',
+                '- Esto significa basicamente de que se pueda navegar y descubir sus recursos solo con las respuestas, sin depender exclusivamente de la documentación ',
+                '- Para que esto se cumpla, parte de la respuesta deben ser hipervinculos a sus recursos asociados ',
+                '- Esto con el fin de mantener compatibilidad con versiones más antiguas, y evitar problemas a sus consumidores ',
+            ]),
     ];
 
 export const PATRONES =
