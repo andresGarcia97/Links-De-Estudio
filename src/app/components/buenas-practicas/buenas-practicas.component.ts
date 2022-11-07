@@ -25,6 +25,8 @@ export class BuenasPracticasComponent extends LinkReferencia {
     ['demeter', 'Ley de Demeter'],
     ['estandaresNombramiento', 'Nombramiento'],
     ['estatico', 'Analisis de codigo'],
+    ['guardClauses', 'Guard Clauses'],
+    ['semanticConstructors', 'Constructores Semanticos'],
   ]);
 
 }

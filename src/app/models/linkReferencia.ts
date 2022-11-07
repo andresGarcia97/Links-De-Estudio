@@ -139,6 +139,8 @@ export const BUENAS_PRACTICAS = new Map<string, Referencia>([
     ['complejidadAlgoritmica', new Referencia('https://medium.com/@joseguillermo_/qu%C3%A9-es-la-complejidad-algor%C3%ADtmica-y-con-qu%C3%A9-se-come-2638e7fd9e8c', 'Complejidad Algoritmica', 'buenas-practicas')],
     ['estandaresNombramiento', new Referencia('https://adrianalonso.es/cajon-desatre/convencion-de-nombres-desde-el-camelcase-hasta-el-kebab-case/', 'Estandares de nombramiento', 'buenas-practicas')],
     ['estatico', new Referencia('https://www.welivesecurity.com/la-es/2021/01/18/analisis-estatico-codigo-fuente-orientado-a-seguridad/', 'Analisis de codigo estatico', 'buenas-practicas')],
+    ['guardClauses', new Referencia('https://artansoft.com/2017/01/guard-clauses-definicion-beneficios/', 'Guard clauses', 'buenas-practicas')],
+    ['semanticConstructors', new Referencia('https://medium.com/all-you-need-is-clean-code/constructores-sem%C3%A1nticos-ae7ac70b23aa', 'Constructores Semanticos', 'buenas-practicas')],
 ]);
 
 export const CALIDAD = new Map<string, Referencia>([

@@ -472,6 +472,22 @@ export const BUENAS_PRACTICAS =
                 '  - Vulnerabilidad -> son comportamientos errores que a la larga pueden llevar a posibles problemas, ',
                 '    - de rendimiento ó de seguridad, más no son son considerados problemas graves ',
             ]),
+        new Item('guardClauses',
+            [
+                '- La identación puede ser una aliada a la hora de leer el codigo, pero demasiada puede convertirse en un obstaculo ',
+                '- Esto no solo complica el entendimiento, si no que puede indicar un alto grado de anidación y complejidad ',
+                '- Esta practica lo que nos recomienda es comprobar sistematicamente cada una de las condiciones que se deben cumplir, ',
+                ' - para continuar con el proceso, y si alguna es invalida, se retorna un valor o una excepción dado el caso ',
+                '- Esto facilita seguir la pila de llamados y mejora el entendimiento al reducir el anidamiento y la identación ',
+            ]),
+        new Item('semanticConstructors',
+            [
+                '- Tambien conocidos como <em>named constructors</em> es un refactor para eliminar la complejidad de los constructores ',
+                '- Evita que tengan responsabilidades extra, al requerir que conozcan los detalles de la implementación ',
+                '- Encapsula la creación de objetos de modo que haya menos posibilidades de construir objetos invalidos y pueda ser bajo demanda',
+                '- Evita tener constructores telescopicos, que basicamente son n combinaciones de constructores de acuerdo a las propiedades ',
+                '- Son una manera de implementar sobrecarga de metodos(constructores) en lenguajes que no lo permiten ',
+            ]),
     ];
 
 export const COMPILACION =
@@ -764,7 +780,7 @@ export const CONOCIMIENTOS_EMPIRICOS =
                 '- Es la tendencia natural de personas menos habilidosas a sobreestimar sus conocimientos y habilidades ',
                 '- Tambien se da de la manera contraria, en la cual personas calificadas tienden a subestimar sus capacidades ',
                 '- Una clara representación de este sesgo cognitivo se da con la siguente frase de: <strong>Charles Darwin</strong> ',
-                ' - <i>"La ignorancia genera confianza más frecuentemente que el conocimiento"</i>',
+                ' - <em>"La ignorancia genera confianza más frecuentemente que el conocimiento"</em>',
                 '',
                 '- Ejemplos: ',
                 ' - Cantantes que se creen muy talentosos sin tener tecnica vocal ',
@@ -1034,8 +1050,8 @@ export const GIT =
                 '- La rama principal es Main (anteriormente master) es el origen de donde se desprenden todas las demás ',
                 '- Su manejo es bastante simplificado por lo que cambiar entre si, fusionar, ramificar, eliminar y rebasar se pueden hacer mediante simples comandos ',
                 '- Usar diferentes ramas, para diferentes cambios garantiza que por lo menos siempre habra un punto al que retroceder si algo llegara a dañarse ',
-                '- El uso de ramas tambien trae el problema de que puedan surgir conflictos, que son segmentos que cuentan con varias modificaciones por diferentes personas ',
-                '- Solucionar conflictos y organizar las ramas suele ser una tarea delicada, por lo que debe realizarse con plena conciencia de lo que se esta haciendo ',
+                '- Estas tambien traen el problema de que puedan surgir conflictos, que son segmentos o archivos con varias modificaciones por diferentes personas ',
+                '- Solucionar conflictos y organizar las ramas suele ser delicado, por lo que debe realizarse con plena conciencia de lo que se esta haciendo ',
             ]),
         new Item('protocolos',
             [
@@ -1065,7 +1081,7 @@ export const GIT =
         new Item('merge',
             [
                 '- Une los cambios de una rama a otra especifica, ocasionalmente surgen conflictos, que dependeran de la divergencia de los cambios realizados ',
-                '- Las ramas se pueden desfusionar si se hay errores, ó abortar la fusión si esta se vuelve muy problematica mediante un revert o un abort segun el caso ',
+                '- Las ramas se pueden desfusionar si hay errores, ó abortarse si se vuelve muy problematica, mediante un revert o un abort segun el caso ',
                 '- Rerere -> esta opción oculta permite dotar a memoria a Git para que esta resuelva conflictos de manera automatica ',
             ]),
         new Item('atributos',
