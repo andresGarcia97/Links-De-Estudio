@@ -14,7 +14,9 @@
 
   <div class="card-container">
 
-    <div *ngFor="let componente of onlyComponents | filter : search" class="card card-small card-no-size tooltip"
+    <div [ngClass]="{'glosarySelected' : componente.titulo === titulo }" 
+      *ngFor="let componente of onlyComponents | filter : search" 
+      class="card card-small card-no-size tooltip"
       (click)="crearVistaItem(componente.key, view)"> {{componente.titulo}}
       <span class="tooltiptext gradient">Seccion: {{componente.componente}}</span>
     </div>

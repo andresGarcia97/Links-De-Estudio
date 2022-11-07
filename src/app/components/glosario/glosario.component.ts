@@ -85,6 +85,7 @@ export class GlosarioComponent implements OnInit {
 
   public searchChanged(): void {
     this.showItem = false;
+    this.titulo = '';
   }
 
 }
