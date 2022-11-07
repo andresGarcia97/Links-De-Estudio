@@ -27,7 +27,8 @@ export class SeguridadComponent extends LinkReferencia {
     ['owaspTop', 'OWASP Top 10'],
     ['stride', 'STRIDE'],
     ['ciam', 'CIAM'],
-    ['lateralChanel', 'Ataques de canal lateral']
+    ['lateralChanel', 'Ataques de canal lateral'],
+    ['csp', 'Content Security Police'],
   ]);
 
 }

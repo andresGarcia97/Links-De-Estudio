@@ -950,9 +950,9 @@ export const SEGURIDAD =
                 ' 4 Insecure Design -> fallas en los diseños iniciales que no contemplan validaciones de seguridad ',
                 ' 5 Security Misconfiguration -> privilegios y configuraciones laxas o innecesarias ',
                 ' 6 Vulnerable and Outdated Components -> desconocimiento de las versiones manejadas en los diferentes componentes de la aplicación ',
-                ' 7 Identification and Authentication Failures -> contraseñas debiles o conocidad por los atacantes son usadas en la aplicación ',
+                ' 7 Identification and Authentication Failures -> contraseñas debiles o conocidas por los atacantes son usadas en la aplicación ',
                 ' 8 Software and Data Integrity Failures -> uso de fuentes desconocidas o librerias de terceros de poca confianza ',
-                ' 9 Security Logging and Monitoring Failures -> el registro y monitoreo de la seguridad puede ser insuficiente por lo que habrian lugares sin supervisión ',
+                ' 9 Security Logging and Monitoring Failures -> el registro y monitoreo de la seguridad puede ser insuficiente teniendo lugares sin supervisión ',
                 ' 10 Server-Side Request Forgery -> esto ocurre cuando se obtiene un recurso de una url sin validar la confiabilidad de esta ',
                 '',
                 '- Estos son los incidentes de seguridad para el top del 2021',
@@ -1008,7 +1008,20 @@ export const SEGURIDAD =
                 ' <strong>- Cache -></strong> El almacenamiento cache, usado para mejorar el rendimiento, puede ser usado para obtener información bloqueada ',
                 ' <strong>- Hardware -></strong> Atacar partes especificas de los dispositivos de maneras peculiares para generar fallos o robar datos como, ',
                 '  - un ataque de martilleo de filas para dañar sectores de la RAM o un arranque en frio leyendo datos de chips enfriados bruscamente ',
-            ])
+            ]),
+        new Item('csp',
+            [
+                '- Es una política de seguridad para decirle al navegador exactamente qué recursos se pueden cargar en una aplicación web ',
+                '- Esta politica nace incentivada por los navegadores para evitar el Cross-Site Scripting <strong>(XSS)</strong> entre otras brechas ',
+                '- Estos se agregan como headers de las peticiones y controla el acceso y la ejecución de recursos como: ',
+                '',
+                ' - Hojas de estilos      - Audio ',
+                ' - Imagenes              - Video ',
+                ' - Contenido embedido    - Fuentes',
+                '',
+                '- Ademas de esto tambien se pueden tener control sobre cosas como los iframe, formularios, entre otros ',
+                ' - Para más detalles y especificaciones, revisa el enlace original y sus fuentes ',
+            ]),
     ];
 
 export const UML =
