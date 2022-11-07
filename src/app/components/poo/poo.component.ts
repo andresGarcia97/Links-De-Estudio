@@ -29,6 +29,7 @@ export class PooComponent extends LinkReferencia {
     ['beginingPoo', 'Inicios de POO'],
     ['inmutability', 'Inmutabilidad'],
     ['typesPolimorfismo', 'Tipos de Polimorfismo'],
+    ['factoryMethods', 'Factory Methods'],
   ]);
 
 }

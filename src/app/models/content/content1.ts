@@ -1196,6 +1196,21 @@ export const META_ESTRUCTURAS =
                 '',
                 '- Otra ventaja de las lambdas es que estas son capaces de inferir los tipos de los parametros de entrada ',
                 '- Su sintaxis suele ser más concisa y combinada con otras caracteristicas como los Stream permiten el paradigma funcional en Java ',
+            ]),
+        new Item('valueObjects',
+            [
+                '- Es apliamente usado en <strong>DDD</strong> (Domain Driven Design)',
+                '- Estos son una modelación de un concepto en nuestro sistema, como pueden ser fechas, precios, monedas, cantidades, etc.. ',
+                '',
+                '<strong>Caracteristicas</strong>',
+                ' - Estan concebidos para medir o describir un concepto en nuestro dominio, no son simplemente valores, sino que cumplen alguna función ',
+                ' - Son inmutables y su construcción no debe ser demasiado compleja ',
+                ' - Siempre son validos, y si no lo son deben de lanzar una excepción, se pueden usar constructores semanticos para facilitar su creación ',
+                ' - No poseen identidad, por lo que su comparación se basa solamente en sus valores ',
+                '',
+                '<strong>Testing</strong>',
+                ' - Testear un VO esta relacionado directamente a la complejidad de los valores que represente ',
+                ' - Generalmente solo se validan sus valores y que sus operaciones no incumplan la inmutabilidad (side-effects)',
             ])
     ];
 

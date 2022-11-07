@@ -12,4 +12,17 @@ export class MetaEstructuraComponent extends LinkReferencia {
 
   lengthItems = this.items.length - 1;
 
+  tittles = new Map<string, string>([
+    ['scope', 'Scope'],
+    ['precedencia', 'Precedencia'],
+    ['verticalAndHorizontal', 'Organización'],
+    ['expresionesRegulares', 'Expresiones regulares'],
+    ['estructurasDatos', 'Estructuras de datos'],
+    ['homoiconicidad', 'Homoiconicidad'],
+    ['maquinaEstados', 'Maquina de estados'],
+    ['sistemasComplejos', 'Sistemas Complejos'],
+    ['funcionesLambda', 'Funciones lambda'],
+    ['valueObjects', 'Value Objects'],
+  ]);
+
 }

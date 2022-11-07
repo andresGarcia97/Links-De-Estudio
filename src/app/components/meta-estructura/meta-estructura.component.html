@@ -4,23 +4,9 @@
 
   <div class="card-container">
 
-    <app-button [tittleButton]="'Scope'" (click)="getLinkAndTittleByKey('scope')"></app-button>
-
-    <app-button [tittleButton]="'Precedencia'" (click)="getLinkAndTittleByKey('precedencia')"></app-button>
-
-    <app-button [tittleButton]="'Organización'" (click)="getLinkAndTittleByKey('verticalAndHorizontal')"></app-button>
-
-    <app-button [tittleButton]="'Expresiones regulares'" (click)="getLinkAndTittleByKey('expresionesRegulares')"></app-button>
-
-    <app-button [tittleButton]="'Estructuras de datos'" (click)="getLinkAndTittleByKey('estructurasDatos')"></app-button>
-
-    <app-button [tittleButton]="'Homoiconicidad'" (click)="getLinkAndTittleByKey('homoiconicidad')"></app-button>
-
-    <app-button [tittleButton]="'Maquina de estados'" (click)="getLinkAndTittleByKey('maquinaEstados')"></app-button>
-
-    <app-button [tittleButton]="'Sistemas Complejos'" (click)="getLinkAndTittleByKey('sistemasComplejos')"></app-button>
-
-    <app-button [tittleButton]="'Funciones lambda'" (click)="getLinkAndTittleByKey('funcionesLambda')"></app-button>
+    <span *ngFor="let tittle of tittles | keyvalue: asIsOrder">
+      <app-button [tittleButton]=tittle.value (click)="getLinkAndTittleByKey(tittle.key)"></app-button>
+    </span>
 
   </div>
 

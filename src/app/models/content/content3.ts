@@ -501,6 +501,19 @@ export const POO =
                 ' - No se usa un enfoque de subtipos, ya que que no suele haber una relación entre registros',
                 ' - Un ejemplo donde se evidencia podria ser un Narrowing casting donde se pasa de Auto a Vehiculo, sin perdidad de información ',
                 ' - No todos los lenguajes lo soportan, por lo que es poco conocido ',
+            ]),
+        new Item('factoryMethods',
+            [
+                '- Los metodos de fabrica funcionan como un constructor, entregando instancias completamente inicializadas ',
+                '',
+                '-<strong>Ventajas:</strong> ',
+                ' - No tienen nombres significativos, por lo que un factory method puede ser más explicito en lo que hace ',
+                ' - Pueden devolver el mismo tipo, un subtipo e incluso primitivos si se da el caso, por lo que son más flexibles ',
+                ' - Encapsulan toda la logica requerida para la construcción de los objetos, aliviniando la carga del constructor ',
+                ' - Pueden controlar las instancias, por ejemplo el patron Singleton ó un constructor semantico ',
+                ' - La inmutabilidad puede ser una caracteristica inherente a su uso ',
+                '',
+                '- Estos tambien pueden ser personalizados o venir previamente incluidos en el SDK como la clase <strong>Collections</strong>',
             ])
     ];
 

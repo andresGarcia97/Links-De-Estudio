@@ -282,6 +282,7 @@ export const META_ESTRUCTURAS = new Map<string, Referencia>([
     ['maquinaEstados', new Referencia('http://fisicotronica.com/maquina-de-estados-nos-referimos/', 'Maquinas de estados', 'estructura')],
     ['sistemasComplejos', new Referencia('https://www.researchgate.net/figure/Figura-2-Caracteristicas-basicas-de-los-sistemas-complejos-Comportamiento-impredecible_fig1_262437348', 'Complejidad inherente al sistema', 'estructura')],
     ['funcionesLambda', new Referencia('https://www.tokioschool.com/noticias/expresiones-lambda-uso-programacion-aplicaciones/', 'Funciones Lambda', 'estructura')],
+    ['valueObjects', new Referencia('https://medium.com/all-you-need-is-clean-code/value-objects-d4c24115fa69', 'Value Objects', 'estructura')],
 ]);
 
 export const METODOLOGIAS = new Map<string, Referencia>([
@@ -385,6 +386,7 @@ export const POO = new Map<string, Referencia>([
     ['beginingPoo', new Referencia('https://medium.com/javascript-scene/the-forgotten-history-of-oop-88d71b9b2d9f', 'Nacimiento de Poo', 'POO')],
     ['inmutability', new Referencia('https://www.campusmvp.es/recursos/post/programacion-funcional-inmutabilidad-y-funciones-puras.aspx', 'Inmutabilidad', 'POO')],
     ['typesPolimorfismo', new Referencia('https://medium.com/lenguajes-y-dialectos-en-programaci%C3%B3n/polimorfismo-y-paradigmas-tipos-y-ejemplos-ca6a56093a66#:~:text=El%20polimorfismo%20puede%20categorizarse%20en,mantener%20e%20implementar%20el%20polimorfismo', 'Tipos de Polimorfismo', 'POO')],
+    ['factoryMethods', new Referencia('https://www.baeldung.com/java-constructors-vs-static-factory-methods', 'Factory Methods', 'POO')],
 ]);
 
 export const TESTING = new Map<string, Referencia>([
