@@ -467,6 +467,18 @@ export const CALIDAD =
                 '',
                 '- Valores generales (SonarQube) ',
                 '  Cobertura<strong> >=80%</strong>   Duplicación<strong> <=3%</strong>   Fiabilidad <strong>A</strong>   Vulnerabilidades <strong>A</strong>    Deuda tecnica<strong> <=5%</strong> '
+            ]),
+        new Item('qualityMetrics',
+            [
+                '- Casi todas esta metricas varian en cuanto al lenguaje en el que se apliquen, haciendo que sean congruentes entre si, más no iguales ',
+                '<strong>- Complejidad ciclomatica -></strong> Esta se calcula en base a los caminos que se puedan dar debido al uso y el orden de las estructuras de control ',
+                '<strong>- Complejidad ciclomatica -></strong> Relacionado a la dificultad para entender el flujo de control del codigo, usando un modelo matematico especifico ',
+                '<strong>- Duplicación -></strong> Lineas de codigo duplicado, ignorando la sangria y el formato, tambien aplica para archivos, metodos y clases',
+                '<strong>- Mantenibilidad -></strong> Metrica relacionada directamente con la cantidad y la dificultad de los code smells presentes ',
+                '<strong>- Fiabilidad -></strong> Cantidad de errores y/o bugs presentes, la calificación dependera de que tantos hallan y que tan criticos sean ',
+                '<strong>- Seguridad -></strong> Vulnerabilidades encontradas, y/o problemas del lenguaje ',
+                '<strong>- Tamaño -></strong> Clases muy grandes pueden conllevar a smell codes y problemas de mantenibilidad, incluyendo los comentarios ',
+                '<strong>- Pruebas y cobertura -></strong> Además de evaluar la cantidad y el exito de las pruebas unitarias, se evaluara cuantos caminos estan cubiertos ',
             ])
     ];
 

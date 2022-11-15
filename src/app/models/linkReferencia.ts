@@ -150,6 +150,7 @@ export const CALIDAD = new Map<string, Referencia>([
     ['artesanos', new Referencia('https://manifesto.softwarecraftsmanship.org/#/es', 'Artesanos de software', 'calidad')],
     ['costOfQuality', new Referencia('https://blog.softexpert.com/es/cuales-son-los-costos-de-la-calidad/#:~:text=Costos%20de%20la%20conformidad%3A%20son,de%20la%20conformidad%20con%20requerimientos', 'Costo de la calidad', 'calidad')],
     ['qualityGates', new Referencia('https://docs.sonarqube.org/latest/user-guide/quality-gates/', 'Politicas de calidad', 'calidad')],
+    ['qualityMetrics', new Referencia('https://docs.sonarqube.org/latest/user-guide/metric-definitions/', 'Definición de Metricas', 'calidad')],
 ]);
 
 export const COMPILACION = new Map<string, Referencia>([
