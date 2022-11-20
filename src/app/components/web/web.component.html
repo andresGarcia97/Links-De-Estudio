@@ -4,23 +4,9 @@
 
   <div class="card-container">
 
-    <app-button [tittleButton]="'SPA'" (click)="getLinkAndTittleByKey('spa')"></app-button>
-
-    <app-button [tittleButton]="'PWA'" (click)="getLinkAndTittleByKey('pwa')"></app-button>
-
-    <app-button [tittleButton]="'SEO'" (click)="getLinkAndTittleByKey('seo')"></app-button>
-
-    <app-button [tittleButton]="'Espacio Negativo'" (click)="getLinkAndTittleByKey('espacio')"></app-button>
-
-    <app-button [tittleButton]="'Diseño Grafico'" (click)="getLinkAndTittleByKey('diseno')"></app-button>
-
-    <app-button [tittleButton]="'UX'" (click)="getLinkAndTittleByKey('experienciasUsuario')"></app-button>
-
-    <app-button [tittleButton]="'UI'" (click)="getLinkAndTittleByKey('interfacesUsuario')"></app-button>
-
-    <app-button [tittleButton]="'Logos'" (click)="getLinkAndTittleByKey('logos')"></app-button>
-
-    <app-button [tittleButton]="'Teoria de Gestalt'" (click)="getLinkAndTittleByKey('gestalt')"></app-button>
+    <span *ngFor="let tittle of tittles | keyvalue: asIsOrder">
+      <app-button [tittleButton]=tittle.value (click)="getLinkAndTittleByKey(tittle.key)"></app-button>
+    </span>
 
   </div>
 
@@ -32,7 +18,7 @@
 
     <span *ngFor="let item of items">
       <span *ngSwitchCase="item.key">
-        <pre *ngFor="let content of item.content">{{content}}</pre>
+        <pre *ngFor="let content of item.content" [innerHtml]="content">{{content}}</pre>
       </span>
     </span>
 
