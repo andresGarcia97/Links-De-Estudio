@@ -88,11 +88,11 @@ export const PRUEBAS =
             ]),
         new Item('first',
             [
-                ' Fast            -> los tests unitarios deben ser lo más rapido posible, ya que se suelen tener cientos de pruebas y ejecutarlas conlleva tiempo y recursos ',
-                ' Independent     -> cada test debe ser independiente de los demás, de lo contrario habra un acoplamiento no deseado ',
-                ' Repeatable      -> las pruebas deben funcionar en cualquier ambiente que se ejecuten, ya sea local o en un ambiente de integración ',
-                ' Self-Validating -> las pruebas deben mostrar resultados concluyentes, estos no deben tener intervención humana para que sean validos ',
-                ' Timely          -> toda prueba debe ser oportuna y debe tener una razon de ser, si no se pueden justificar, estas habran sido una perdida de tiempo ',
+                ' Fast            -> Deben ser rapidos, ya que se suelen tener cientos de pruebas y ejecutarlas conlleva tiempo y recursos ',
+                ' Independent     -> Cada test debe ser independiente de los demás, de lo contrario habra un acoplamiento no deseado ',
+                ' Repeatable      -> Las pruebas deben funcionar en cualquier ambiente que se ejecuten, ya sea local o en un ambiente de integración ',
+                ' Self-Validating -> Las pruebas deben mostrar resultados concluyentes, estos no deben tener intervención humana para que sean validos ',
+                ' Timely          -> Toda prueba debe ser oportuna y debe tener una razon de ser, si no se pueden justificar, estas habran sido una perdida de tiempo ',
             ]),
         new Item('sutydoc',
             [

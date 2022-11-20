@@ -14,7 +14,8 @@ export class ArquitecturasComponent extends LinkReferencia {
 
   tittles = new Map<string, string>([
     ['definicion', 'Definición'],
-    ['inicioArquitectura', 'Introducción'],
+    ['inicioArquitectura', 'Etapas & Roles'],
+    ['conceptosArquitectura', 'Conceptos'],
     ['principiosArquitecturas', 'Principios'],
     ['arquitecturasLimpias', 'Limpias'],
     ['capas', 'Capas'],

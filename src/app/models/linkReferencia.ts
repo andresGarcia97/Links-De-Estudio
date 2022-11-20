@@ -111,7 +111,8 @@ export const ANALISIS = new Map<string, Referencia>([
 
 export const ARQUITECTURAS = new Map<string, Referencia>([
     ['definicion', new Referencia('https://cgrw01.cgr.go.cr/rup/RUP.es/SmallProjects/core.base_rup/guidances/concepts/software_architecture_4269A354.html', '¿ Que es una arquitectura ?', 'arquitecturas')],
-    ['inicioArquitectura', new Referencia('https://sg.com.mx/revista/27/arquitectura-software', 'Introducción a la arquitectura', 'arquitecturas')],
+    ['inicioArquitectura', new Referencia('https://sg.com.mx/revista/27/arquitectura-software', 'Etapas & Roles', 'arquitecturas')],
+    ['conceptosArquitectura', new Referencia('https://www.freecodecamp.org/news/an-introduction-to-software-architecture-patterns/', 'Conceptos', 'arquitecturas')],
     ['principiosArquitecturas', new Referencia('https://www.genbeta.com/desarrollo/principios-de-una-arquitectura-limpia-mantenible-y-testeable', 'Principios de las arquitecturas', 'arquitecturas')],
     ['arquitecturasLimpias', new Referencia('https://www.genbeta.com/desarrollo/principios-de-una-arquitectura-limpia-mantenible-y-testeable', 'Arquitecturas Limpias', 'arquitecturas')],
     ['capas', new Referencia('https://geeks.ms/jkpelaez/2009/05/30/arquitectura-basada-en-capas/', 'Capas', 'arquitecturas')],
