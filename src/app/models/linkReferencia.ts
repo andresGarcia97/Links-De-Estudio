@@ -535,6 +535,7 @@ export const HARDWARE = new Map<string, Referencia>([
     ['modelOSI', new Referencia('https://www.cloudflare.com/es-es/learning/ddos/glossary/open-systems-interconnection-model-osi/', 'Modelo OSI', 'Hardware')],
     ['monitoreo', new Referencia('https://www.hiberus.com/crecemos-contigo/uso-de-los-apm-monitoreo-del-rendimiento-de-aplicaciones/#:~:text=Un%20APM%20(Application%20Performance%20Management,problemas%20a%20nivel%20de%20aplicaci%C3%B3n', 'Aplication Performance Management (apm)', 'Hardware')],
     ['vmVsContainers', new Referencia('https://cloudnativeislamabad.hashnode.dev/virtualization-vs-containerization', 'Maquinas Virtuales VS Contenedores', 'Hardware')],
+    ['falseSharing', new Referencia('https://www.easytechjunkie.com/what-is-false-sharing.htm', 'False Sharing', 'Hardware')],
 ]);
 
 export const WEB = new Map<string, Referencia>([
