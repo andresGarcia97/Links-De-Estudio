@@ -21,6 +21,7 @@ export class HardwareComponent extends LinkReferencia {
     ['modelOSI', 'Modelo OSI'],
     ['monitoreo', 'Monitoreo'],
     ['vmVsContainers', 'VM VS Contenedores'],
+    ['falseSharing', 'False Sharing'],
   ]);
 
 }

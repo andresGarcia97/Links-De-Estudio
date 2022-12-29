@@ -961,7 +961,25 @@ export const HARDWARE =
                 '         - Arranque lento, dependiente del host                                                              ',
                 '                                                           - Las aplicaciones graficas no funcionan bien     ',
                 '         - Pueden ser infectadas por el host                                                                 ',
-            ])
+            ]),
+        new Item('falseSharing',
+            [
+                '- Suele suceder cuando varias aplicaciones intentan acceder a la misma region de memoria logica y ',   
+                ' - cada programa/subprograma a su vez ha almacenado un copia de este valor, en su propio cache',
+                '- Cada vez que este sufre alguna modificación, esto hace que las demás partes sean invalidas y deban consultar el valor actual ',
+                '- El problema del "falso compartir", radica cuando los datos afectados por un programa, no son usados por los otros; ',
+                ' - si no que estan situados en la misma linea del cache',
+                '- Obligando a realizar consultas innecesarias en memoria, que afectan el rendimiento',
+                '- Este es un problema dificil de detectar, debido a que es inherente a la arquitectura de los componentes fisicos ',
+                '- Esto tambien suele suceder cuando se paralelizan procesos, invalidando bloques comunes constatemente, aunque no este compartidos ',
+                '',
+                '- Suelen haber contramedidas, desde alto nivel hasta bajo nivel',
+                ' - Colocar espacios en blancos, antes o depues de los datos, a manera de que queden en lineas de cache separadas ',
+                ' - Modificar la velocidad de lectura/escritura del cache para reducir la periocidad ',
+                ' - Cambiar la administración del cache del componente fisico ',
+                ' - Alterar como el SO administra el uso compartido',
+            ]
+        )
     ];
 
 export const WEB =
