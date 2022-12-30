@@ -107,6 +107,7 @@ export const ANALISIS = new Map<string, Referencia>([
     ['modeloDominio', new Referencia('https://es.stackoverflow.com/questions/102490/que-es-el-modelo-de-dominio-en-dise%C3%B1o-de-software', 'Modelo de Dominio', 'analisis')],
     ['sistemasInformacion', new Referencia('https://concepto.de/sistema-de-informacion/', 'Sistemas de Información', 'analisis')],
     ['dataAnalisis', new Referencia('https://tienda.digital/4-tipos-de-analisis-de-datos-para-mejorar-la-toma-de-decisiones/', 'Analisis de datos', 'analisis')],
+    ['timeComplexityBigO', new Referencia('https://www.freecodecamp.org/news/big-o-cheat-sheet-time-complexity-chart/', 'Big O Notación', 'analisis')],
 ]);
 
 export const ARQUITECTURAS = new Map<string, Referencia>([

@@ -286,8 +286,28 @@ export const ANALISIS =
                 ' - y agrupar datos, esta analitica debe ser revisada y refinada constantemente para tener información confiable ',
                 '-<strong> Analitica prescriptiva</strong> -> aca no solo se predicen posibles problemas, se toman acciones para aprovechar las tendencias, ',
                 ' - y sortear inconvenientes, además de los datos e información anteriores, es importante tener en cuenta los factores externos ',
-            ])
-
+            ]),
+        new Item('timeComplexityBigO',
+            [
+                '- Un algoritmo es una secuencia logica de pasos, para resolver un problema especifico ',
+                '- Debido a esto, suelen haber diferentes formas de hacerlo para un mismo problema, diferiendo en la forma pero no el resultado ',
+                '- Tambien debe exisitir una manera de medir, su consumo de recursos, eficiencia y tiempo ',
+                '- Aca es donde se introduce la notación <strong>Big O</strong>, que funciona para realizar estimaciones segun los datos introducidos ',
+                '- Esta mide la eficiencia del algoritmo en función de la complejidad en el tiempo-espacio, representandose de manera algebraica ',
+                '- Al estar directamente ligada al tamaño de la entrada, se suele hablar de tiempo, y sus implicaciones en los recursos del sistema ',
+                '',
+                '  - Constante: O(1)         -> Mejor     - Cuadrático: O(n^2)  -> Horrible',
+                '  - Logarítmico: O(log n)   -> Bueno     - Exponencial: O(2^n) -> Horrible',
+                '  - Lineal: O(n)            -> Justo     - Factorial: O(n!)    -> Peor    ',
+                '  - Logarítmico: O(n log n) -> Malo                                       ',
+                '',
+                '- Estas mediciones estan relacionados con el numero de instrucciones y sentencias de control del algoritmo ',
+                ' - <strong>Constante:  </strong> Solo se tiene una instrucción, por lo que no importa el tamaño de los datos ',
+                ' - <strong>Lineal:     </strong> Suelen darse cuando existen ciclos, a mayor tammaño, mayor tiempo ',
+                ' - <strong>Logarítmico:</strong> Tambien depende del tamaño de la entrada, pero en este con cada iteración el tamaño crece o decrece ',
+                ' - <strong>Cuadratico: </strong> Un buen ejemplo son 2 ciclos anidados, donde cada ciclo se ejecutara n veces ',
+                ' - <strong>Exponencial:</strong> Cada iteración hace crecer el conjunto de datos, como puede ser la secuencia Fibonacci recursiva ',
+            ]),
     ];
 
 export const BUENAS_PRACTICAS =
@@ -808,11 +828,11 @@ export const CONOCIMIENTOS_EMPIRICOS =
                 '- Un desarrollo exitoso no solo requiere que el codigo funcione, si no que sea mantenible ',
                 '- Para que esto sea posible, se deben evitar antipatrones y tener ciertas estrategias y hasta metodologias propias ',
                 '',
-                '-<strong> Codigo espagueti </strong>-> Data de los 70 para hacer referencia a un codigo descuidado y altamente acoplado ',
-                '-<strong> Codigo lasaña </strong>-> No solo se tiene problemas al ser desprolijos, tambien cuando hay un sobrediseño, que aporta complejidad innecesaria ',
-                '-<strong> Codigo raviolis </strong>-> Demasiadas piezas pequeñas e individuales, haciendo crecer la pila de llamados sin control ',
-                '-<strong> Codigo pizza </strong>-> Es una arquitectura plana, donde hay divisiones a nivel codigo, pero no se tienen una estructura logica definida ',
-                '-<strong> Codigo stromboli </strong>-> Es un codigo demasiado acoplado, en el que un cambio, por más inocuo que parezca, puede desembocar un caos en otro sitio ',
+                '-<strong> Codigo espagueti:</strong> Data de los 70 para hacer referencia a un codigo descuidado y altamente acoplado ',
+                '-<strong> Codigo lasaña:</strong>    No solo se tiene problemas al ser desprolijos, tambien cuando hay un sobrediseño, que aporta complejidad innecesaria ',
+                '-<strong> Codigo raviolis:</strong>  Demasiadas piezas pequeñas e individuales, haciendo crecer la pila de llamados sin control ',
+                '-<strong> Codigo pizza:</strong>     Es una arquitectura plana, donde hay divisiones a nivel codigo, pero no se tienen una estructura logica definida ',
+                '-<strong> Codigo stromboli:</strong> Es un codigo demasiado acoplado, donde cualquier cambio, por inocuo que sea, puede desembocar un caos en otro sitio ',
                 '',
                 '- Cualquiera sea la metafora, hay que tener en cuenta que incluso las mejores practicas no son eternas, estas pueden cambiar ',
                 ' - por lo que nuestro codigo tambien debe cambiar con ellas, y nunca dejar de lado la mantenibilidad como una meta constante '

@@ -23,6 +23,7 @@ export class AnalisisComponent extends LinkReferencia {
     ['modeloDominio', 'Modelo de dominio'],
     ['sistemasInformacion', 'Información'],
     ['dataAnalisis', 'Analisis de datos'],
+    ['timeComplexityBigO', 'Big O Notación'],
   ]);
 
 }
