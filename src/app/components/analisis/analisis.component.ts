@@ -24,6 +24,7 @@ export class AnalisisComponent extends LinkReferencia {
     ['sistemasInformacion', 'Información'],
     ['dataAnalisis', 'Analisis de datos'],
     ['timeComplexityBigO', 'Big O Notación'],
+    ['kpis', 'KPI'],
   ]);
 
 }
