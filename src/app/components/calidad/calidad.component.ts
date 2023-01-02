@@ -20,6 +20,7 @@ export class CalidadComponent extends LinkReferencia {
     ['costOfQuality', 'Costo de la calidad'],
     ['qualityGates', 'Politicas de calidad'],
     ['qualityMetrics', 'Metricas de calidad'],
+    ['codeReviews', 'Revisiones'],
   ]);
 
 }
