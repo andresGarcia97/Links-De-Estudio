@@ -26,7 +26,6 @@ export class NubeComponent extends LinkReferencia {
     ['migracionesNube', 'Migraciones'],
     ['capTeorema', 'Teorema CAP'],
     ['dns', 'Servidor DNS'],
-    ['linting', 'Linting'],
     ['HATEOAS', 'HATEOAS'],
   ]);
 

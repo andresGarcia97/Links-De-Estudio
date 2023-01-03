@@ -553,6 +553,16 @@ export const CALIDAD =
                 ' - de manera que esto no se convierta en una carga impositiva, si no que sea un espacio colaborativo y de aprendizaje ',
                 ' - y que el proceso se pueda convertir en punto de referencia para detectar y corregir errores antes de que su costo aumente ',
             ]),
+        new Item('linting',
+            [
+                '- Son una ayuda para encontrar errores y falencias en nuestro codigo durante la etapa de desarrollo',
+                '- Estos errores pueden ser: ',
+                ' - Errores de sintaxis            - Codigo innecesariamente complejo ',
+                ' - Uso de malas practicas         - Estilos de codificación inconsistentes ',
+                '',
+                '- Estas herramientas no solo nos muestran los posibles errores, tambien pueden dar sugerencias de posibles soluciones ',
+                '- Tambien permiten la configuración de nuevas reglas para cuando se trabaja en equipo y mantener la consistencia ',
+            ]),
     ];
 
 export const META_CARACTERISTICAS =

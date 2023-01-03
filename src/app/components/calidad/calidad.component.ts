@@ -21,6 +21,7 @@ export class CalidadComponent extends LinkReferencia {
     ['qualityGates', 'Politicas de calidad'],
     ['qualityMetrics', 'Metricas de calidad'],
     ['codeReviews', 'Revisiones'],
+    ['linting', 'Linting'],
   ]);
 
 }

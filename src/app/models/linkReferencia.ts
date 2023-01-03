@@ -155,6 +155,7 @@ export const CALIDAD = new Map<string, Referencia>([
     ['qualityGates', new Referencia('https://docs.sonarqube.org/latest/user-guide/quality-gates/', 'Politicas de calidad', 'calidad')],
     ['qualityMetrics', new Referencia('https://docs.sonarqube.org/latest/user-guide/metric-definitions/', 'Definición de Metricas', 'calidad')],
     ['codeReviews', new Referencia('https://www.atlassian.com/blog/add-ons/code-review-best-practices', 'Revisiones de codigo', 'calidad')],
+    ['linting', new Referencia('https://www.freecodecamp.org/espanol/news/que-es-linting-y-eslint/', 'Linting', 'calidad')],
 ]);
 
 export const COMPILACION = new Map<string, Referencia>([
@@ -322,7 +323,6 @@ export const NUBE_AND_APIS = new Map<string, Referencia>([
     ['migracionesNube', new Referencia('https://www.paradigmadigital.com/techbiz/mitos-lift-shift-mentiras-migraciones-cloud/', 'Migraciones hacia la nube y las 6R', 'Nube & APIs')],
     ['capTeorema', new Referencia('https://www.ionos.es/digitalguide/servidores/know-how/que-es-el-cap-theorem/', 'Coherencia, Disponibilidad y tolerancia a la partición', 'Nube & APIs')],
     ['dns', new Referencia('https://www.ionos.es/digitalguide/servidores/know-how/que-es-el-servidor-dns-y-como-funciona/', 'Servidor DNS', 'Nube & APIs')],
-    ['linting', new Referencia('https://www.freecodecamp.org/espanol/news/que-es-linting-y-eslint/', 'Linting', 'Nube & APIs')],
     ['httpCodes', new Referencia('https://developer.mozilla.org/es/docs/Web/HTTP/Status', 'Codigos Http', 'Nube & APIs')],
     ['HATEOAS', new Referencia('https://www.adictosaltrabajo.com/2013/12/02/spring-hateoas/', 'HATEOAS', 'Nube & APIs')],
 ]);
