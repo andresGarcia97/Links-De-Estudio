@@ -27,6 +27,7 @@ export class NubeComponent extends LinkReferencia {
     ['capTeorema', 'Teorema CAP'],
     ['dns', 'Servidor DNS'],
     ['HATEOAS', 'HATEOAS'],
+    ['apiStandars', 'Standares API'],
   ]);
 
 }
