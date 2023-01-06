@@ -20,13 +20,13 @@ export class ArquitecturasComponent extends LinkReferencia {
     ['arquitecturasLimpias', 'Limpias'],
     ['capas', 'Capas'],
     ['cliente', 'Cliente Servidor'],
-    ['intermediario', 'Intermediario'],
+    ['microServiciosFundamentals', 'Bases, Microservicios'],
     ['servicios', 'Microservicios'],
     ['hexagonal', 'Hexagonal'],
     ['noHexagonal', 'Ni Nueva, Ni hexagonal'],
     ['mvc', 'MVC'],
-    ['mvp-mvc', 'MVP'],
-    ['otrasArquitecturas', 'Otras'],
+    ['mvpMvc', 'MVP'],
+    ['otrasArquitecturas', 'Otras (patrones)'],
     ['monolitos', 'Monolitos'],
   ]);
 

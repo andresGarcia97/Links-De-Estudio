@@ -67,9 +67,9 @@ export class GlosarioComponent implements OnInit {
     }
   }
 
-  public crearVistaItem(key: string, $view: any): void {
+  public createViewItem(key: string, $view: any): void {
     const items = this.content.temas.filter((item) => {
-      return item.key.includes(key);
+      return item.key === key;
     });
     if (items.length === 0) {
       this.showItem = false;
