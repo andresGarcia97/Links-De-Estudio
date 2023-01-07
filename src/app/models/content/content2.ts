@@ -1853,8 +1853,7 @@ export const PATRONES =
         new Item('dobleDespacho',
             [
                 '- Es un patron de diseño que resuelve 2 problemas: ',
-                ' - cuando el comportamiento depende del objeto que se reciba ',
-                ' - y tambien dependa de los parametros recibidos ',
+                ' - Cuando el comportamiento depende del objeto y los parametros recibidos ',
                 '- Esto se puede hacer mediante varias maneras, herencia, polimorfismo, reflexion, etc... ',
             ]),
         new Item('patronSaga',
@@ -1874,6 +1873,7 @@ export const PATRONES =
             [
                 '- El acronimo significa: Segregación de Responsabilidad de Consultas de Comandos ',
                 '- Las operaciones de lectura y escritura utilizan diferentes modelos de datos ',
+                '- Las consultas no pueden modificar los datos y los comandos pueden ser procesados de manera asincrona ',
                 '- Esto permite facilitar leer y escribir operaciones, agregando tanto seguridad como complejidad ',
                 '- Los datos no solo se manejan de maneras diferentes, tambien pueden ser almacenados de distintas formas ',
                 '- Especialmente util cuando las operaciones de lectura y de creacion/modificación difieren sustancialmente ',

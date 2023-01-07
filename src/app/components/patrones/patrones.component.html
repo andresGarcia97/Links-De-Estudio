@@ -4,29 +4,9 @@
 
   <div class="card-container">
 
-    <app-button [tittleButton]="'Definición'" (click)="getLinkAndTittleByKey('definicionPatrones')"></app-button>
-
-    <app-button [tittleButton]="'Tipos de Patrones'" (click)="getLinkAndTittleByKey('tiposDePatrones')"></app-button>
-
-    <app-button [tittleButton]="'GOF'" (click)="getLinkAndTittleByKey('gof')"></app-button>
-
-    <app-button [tittleButton]="'Desglose GOF'" (click)="getLinkAndTittleByKey('desglosegof')"></app-button>
-
-    <app-button [tittleButton]="'GRASP'" (click)="getLinkAndTittleByKey('grasp')"></app-button>
-
-    <app-button [tittleButton]="'Desglose Grasp'" (click)="getLinkAndTittleByKey('desglosegrasp')"></app-button>
-
-    <app-button [tittleButton]="'DAO & Active Record'" (click)="getLinkAndTittleByKey('dao')"></app-button>
-
-    <app-button [tittleButton]="'Anti Patrones'" (click)="getLinkAndTittleByKey('antipatrones')"></app-button>
-
-    <app-button [tittleButton]="'Doble despacho'" (click)="getLinkAndTittleByKey('dobleDespacho')"></app-button>
-
-    <app-button [tittleButton]="'Patron saga'" (click)="getLinkAndTittleByKey('patronSaga')"></app-button>
-
-    <app-button [tittleButton]="'Patron CQRS'" (click)="getLinkAndTittleByKey('patroncqrs')"></app-button>
-
-    <app-button [tittleButton]="'Patron undo-redo'" (click)="getLinkAndTittleByKey('patronUndoRedo')"></app-button>
+    <span *ngFor="let tittle of tittles | keyvalue: asIsOrder">
+      <app-button [tittleButton]=tittle.value (click)="getLinkAndTittleByKey(tittle.key)"></app-button>
+    </span>
 
   </div>
 
