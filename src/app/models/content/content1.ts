@@ -35,9 +35,8 @@ export const AGILES =
             [
                 '- Permite determinar la prioridad de las funcionalidades, basandose en diferentes criterios, que a su vez ',
                 ' - constan con diferentes pesos, cada caracteristica de la Historia de Usuario tendra un valor ',
-                '',
                 '- Determinar el peso de las caracteristicas es más facil ya que se hace en base a una comparación, ',
-                ' - Donde previamente se ha tomado una HU como punto base y las demás se miden con esta base ',
+                ' - donde previamente se ha tomado una HU como punto base y las demás se miden con esta base ',
             ]),
         new Item('muda',
             [
@@ -74,10 +73,10 @@ export const AGILES =
                 '- Costumbre -> crear nuevos habitos y cambiar los viejos es un cambio fuerte y prolongado de paradigma ',
                 '',
                 '- Beneficios ',
-                '- Mayor seguridad de los empleados ',
-                '- Reducción de las perdidas y mermas por defectos ',
-                '- Mayor calidad, y menos tiempo de respuesta ',
-                '- Genera una cultura organizacional ',
+                ' - Mayor seguridad de los empleados ',
+                ' - Reducción de las perdidas y mermas por defectos ',
+                ' - Mayor calidad, y menos tiempo de respuesta ',
+                ' - Genera una cultura organizacional ',
             ]),
         new Item('muda#1',
             [
@@ -152,7 +151,30 @@ export const AGILES =
                 ' - buscar información o aprender de la documentación, con el fin de tomar deciones tecnicas ',
                 '- <strong>Spike funcional -></strong> Hace falta conocer más sobre los requisitos y/o alcance, como que se va a incluir, ',
                 ' - documentar escenarios, entrevistar a un experto del negocio, revision de codigo ',
-            ])
+            ]),
+        new Item('deming',
+            [
+                '- Es un sistema que busca la optimización constante de las actividades empresariales, constando de 4 etapas ciclicas ',
+                '- Tambien es conocido como ciclo PDCA por sus etapas <em>Plan, Do, Check, Act </em>',
+                '',
+                '<strong> Planificar </strong> 1 etapa, Donde se identifican los problemas, se crean objetivos para solucionarlos y se asignan deberes',
+                '<strong> Hacer      </strong> 2 etapa, Se empiezan a trabajar en los cambios, de manera supervisada, para lograr lo planteado ',
+                '<strong> Verificar  </strong> 3 etapa, Despues de un periodo de tiempo previamente definido se evaluan los resultados, ',
+                ' - en base a los KPI seleccionados para cada objetivo, determinando la eficiencia y eficacia ',
+                '<strong> Actuar     </strong> 4 etapa, Se toman decisiones en base a los aprendizajes obtenidos, ',
+                ' - ya sea tomando acciones correctivas si hubo fallas, ó documentando e integrando nuevos cambios si los resultados fueron optimos ',
+                '',
+                '- Generalmente este ciclo es usado para mejorar la logistica de las empresas, pero tambien es aplicable a otras areas ',
+                '',
+                '<strong>- Ventajas </strong>',
+                ' - Mejorar continua: Mejorando las areas debiles y manteniendo fuertes las ya existentes ',
+                ' - Incremento de la productividad: Al reducir tiempos muertos, y procesos tardios ',
+                ' - Ilimitado: Al ser un ciclico, puede ser aplicado cuantas veces sea necesario, e incluir otras areas tambien ',
+                '',
+                '<strong>- Desventajas </strong>',
+                ' - Lentitud: La ejecución de las etapas debe ser metodica, y no es aplicable para situaciones a corto plazo, como emergencias ',
+                ' - Suceptible a imprevistos: Su efectividad depende de que el ambiente sea favorable y sin contratiempos ',
+            ]),
     ];
 
 export const ARQUITECTURAS =

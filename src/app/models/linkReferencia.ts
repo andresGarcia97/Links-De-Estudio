@@ -94,6 +94,7 @@ export const AGILES = new Map<string, Referencia>([
     ['planningPoker', new Referencia('https://samuelcasanova.com/2016/01/estimacion-agil-con-la-tecnica-planning-poker/', 'Planning Poker y la estimación agil', 'agiles')],
     ['principlesAgile', new Referencia('https://www.agilealliance.org/agile101/12-principles-behind-the-agile-manifesto/', 'Principios del agilismo', 'agiles')],
     ['spike', new Referencia('https://samuelcasanova.com/2021/09/spike-que-es/', 'Spike', 'agiles')],
+    ['deming', new Referencia('https://www.beetrack.com/es/blog/ciclo-de-deming-etapas-ejemplos', 'Ciclo de Deming', 'agiles')],
 ]);
 
 export const ANALISIS = new Map<string, Referencia>([

@@ -22,6 +22,7 @@ export class AgilesComponent extends LinkReferencia {
     ['planningPoker', 'Planning Poker'],
     ['principlesAgile', 'Principios'],
     ['spike', 'Spike'],
+    ['deming', 'Ciclo de Deming'],
   ]);
 
 }
