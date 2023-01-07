@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewChild, ViewContainerRef } from '@angular/core';
+import { Meta } from '@angular/platform-browser';
 import { fromEvent } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { AgilesComponent } from './components/agiles/agiles.component';
@@ -54,18 +55,29 @@ const porcentaje = scroll$.pipe(
   map(event => calcularPorcentaje(event))
 );
 
+const colorSelectiveYellow = '#FFBA08';
+const colorNavyBlue = '#1976d2';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html'
 })
 
 export class AppComponent implements OnInit {
-
+  
+  buttonChangueMode = false;
+  buttonCloseComponent = false;
+  
+  // https://usefulangle.com/post/243/change-browser-address-bar-theme-color-with-html-meta-tag
+  constructor(private meta: Meta) {}
+  
   ngOnInit(): void {
     const now = new Date();
     if(now.getHours() >= 19 || now.getHours() <= 5) {
       this.changueMode();
+      return;
     }
+    this.setColorAdressBar();
   }
 
   @ViewChild('componentes', { read: ViewContainerRef }) componentes!: ViewContainerRef;
@@ -74,8 +86,6 @@ export class AppComponent implements OnInit {
     this.porciento = valor;
   });
 
-  buttonCloseComponent = false;
-  buttonChangueMode = false;
   domain = "https://contenidoderepaso.web.app/";
   shareLinkedin = `https://www.linkedin.com/sharing/share-offsite/?url=${this.domain}`;
   shareTwitter = `https://twitter.com/intent/tweet?text=Una gran fuente de repaso para Programadores&url=${this.domain}`;
@@ -118,14 +128,25 @@ export class AppComponent implements OnInit {
 
   public changueMode(): void {
     this.buttonChangueMode = !this.buttonChangueMode;
-    const cuerpoweb = document.body;
-    cuerpoweb.classList.toggle('oscuro');
+    const body = document.body;
+    body.classList.toggle('oscuro');
+    this.updateColorAdressBar();
   }
 
   public close($element: any): void {
     this.buttonCloseComponent = false;
     this.componentes.clear();
     this.scrollToElement($element);
+  }
+
+  public setColorAdressBar(): void {
+    const setColorAddressBar = this.buttonChangueMode ? colorSelectiveYellow : colorNavyBlue;
+    this.meta.addTag({ name: 'theme-color', content: setColorAddressBar });
+  }
+
+  public updateColorAdressBar(): void {
+    const updateColorAddressBar = this.buttonChangueMode ? colorSelectiveYellow : colorNavyBlue;
+    this.meta.updateTag({ name: 'theme-color', content: updateColorAddressBar });
   }
 
 }

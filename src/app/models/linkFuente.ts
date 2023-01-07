@@ -43,6 +43,7 @@ export class LinkFuente {
         ['devDocs', { titulo: 'Dev Docs', referencia: 'https://devdocs.io/' }],
         ['cliArt', { titulo: 'Comand Line Art', referencia: 'https://github.com/jlevy/the-art-of-command-line/blob/master/README-es.md' }],
         ['bundlephobia', { titulo: 'Bundle Phobia', referencia: 'https://bundlephobia.com/' }],
+        ['wizardZines', { titulo: 'Trucos & Comics', referencia: 'https://wizardzines.com/' }],
         // testing y calidad
         ['junit', { titulo: 'Junit', referencia: 'https://www.adictosaltrabajo.com/2016/11/24/primeros-pasos-con-junit-5/' }],
         ['junitV5', { titulo: 'Junit5', referencia: 'https://junit.org/junit5/' }],
@@ -60,6 +61,7 @@ export class LinkFuente {
         ['iconsRepo', { titulo: 'Repositorio Iconos', referencia: 'https://icones.js.org/' }],
         ['javascriptFrameworks', { titulo: 'Javascript frameworks', referencia: 'https://www.pzuraq.com/blog/four-eras-of-javascript-frameworks' }],
         ['roadMapDevelop', { titulo: 'Aprender programación', referencia: 'https://www.freecodecamp.org/news/how-to-learn-programming/' }],
+        ['howDnsWork', { titulo: 'como funciona un DNS', referencia: 'https://howdns.works/es/' }],
         // seguridad
         ['noreferrer', { titulo: 'noreferrer in links', referencia: 'https://web.dev/external-anchors-use-rel-noopener/?utm_source=lighthouse&utm_medium=devtools' }],
         ['owasp', { titulo: 'OWASP', referencia: 'https://owasp.org/' }],
@@ -83,6 +85,7 @@ export class LinkFuente {
         ['overApi', { titulo: 'Over Api', referencia: 'https://overapi.com/' }],
         ['jsonVisio', { titulo: 'JSON estructure', referencia: 'https://jsonvisio.com/' }],
         ['ApiEvangelist', { titulo: 'API Evangelist', referencia: 'https://apievangelist.com/info/101/' }],
+        ['RapidAPIComics', { titulo: 'Rapid API Comics', referencia: 'https://rapidapi.com/comics' }],
     ]);
 
     public getLinkAndFuenteByKey(key: string = ''): Fuente {

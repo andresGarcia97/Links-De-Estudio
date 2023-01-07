@@ -47,7 +47,8 @@ export class FuentesComponent {
     'algoritms',
     'devDocs',
     'cliArt',
-    'bundlephobia'
+    'bundlephobia',
+    'wizardZines'
   ];
 
   testing = [
@@ -68,7 +69,8 @@ export class FuentesComponent {
     'carbon',
     'iconsRepo',
     'javascriptFrameworks',
-    'roadMapDevelop'
+    'roadMapDevelop',
+    'howDnsWork'
   ];
 
   security = [
@@ -97,7 +99,8 @@ export class FuentesComponent {
     'designApis',
     'overApi',
     'jsonVisio',
-    'ApiEvangelist'
+    'ApiEvangelist',
+    'RapidAPIComics'
   ];
 
 }
