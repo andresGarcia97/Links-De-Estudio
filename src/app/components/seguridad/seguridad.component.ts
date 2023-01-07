@@ -29,6 +29,7 @@ export class SeguridadComponent extends LinkReferencia {
     ['ciam', 'CIAM'],
     ['lateralChanel', 'Ataques de canal lateral'],
     ['csp', 'Content Security Police'],
+    ['csrf', 'CSRF'],
   ]);
 
 }

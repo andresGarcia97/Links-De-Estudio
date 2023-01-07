@@ -140,12 +140,12 @@ export class AppComponent implements OnInit {
   }
 
   public setColorAdressBar(): void {
-    const setColorAddressBar = this.buttonChangueMode ? colorSelectiveYellow : colorNavyBlue;
+    const setColorAddressBar = this.buttonChangueMode ? colorNavyBlue : colorSelectiveYellow;
     this.meta.addTag({ name: 'theme-color', content: setColorAddressBar });
   }
 
   public updateColorAdressBar(): void {
-    const updateColorAddressBar = this.buttonChangueMode ? colorSelectiveYellow : colorNavyBlue;
+    const updateColorAddressBar = this.buttonChangueMode ? colorNavyBlue : colorSelectiveYellow;
     this.meta.updateTag({ name: 'theme-color', content: updateColorAddressBar });
   }
 

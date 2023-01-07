@@ -480,6 +480,7 @@ export const SEGURIDAD = new Map<string, Referencia>([
     ['ciam', new Referencia('https://auth0.com/blog/why-do-you-need-ciam/', 'CIAM', 'seguridad')],
     ['lateralChanel', new Referencia('https://auth0.com/blog/why-do-you-need-ciam/', 'Ataques de canal lateral', 'seguridad')],
     ['csp', new Referencia('https://auth0.com/blog/why-do-you-need-ciam/', 'Content Security Police', 'seguridad')],
+    ['csrf', new Referencia('https://www.welivesecurity.com/la-es/2015/04/21/vulnerabilidad-cross-site-request-forgery-csrf/', 'Cross Site Request Forgery', 'seguridad')],
 ]);
 
 export const SMELL_CODES = new Map<string, Referencia>([

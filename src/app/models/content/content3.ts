@@ -1022,6 +1022,27 @@ export const SEGURIDAD =
                 '- Ademas de esto tambien se pueden tener control sobre cosas como los iframe, formularios, entre otros ',
                 ' - Para más detalles y especificaciones, revisa el enlace original y sus fuentes ',
             ]),
+        new Item('csrf',
+            [
+                '- Este ataque fuerza al navegador del usuario que se este validando en cualquier sitio, como el correo o una red social, ',
+                ' - enviar una petición a una aplicación web vulnerable, realizando la actividad maliciosa en nombre de la victima logueada ',
+                '- Al contrario de los Cross Site Scripting (ordenes en sitios cruzados) <strong>XSS</strong> que, ',
+                ' - explotan la confianza del usuario con algun sitio; el <strong>CSRF</strong> explota la confianza que el sitio web tiene con el usuario ',
+                '- Prestandose para actividades ilicitas como el acceso de cuentas privadas ó acusaciones de acceso a contenido lascivo e ilegal ',
+                '',
+                '<strong> ¿ Como funciona ? </strong>',
+                ' - 1 Se debe vulnerar algun servidor e ingresar algun codigo HTML especifico; este sera llamado <em>A</em> ',
+                ' - 2 La victima establece una conexión legitima con la aplicación web alojada en otro servidor, designado <em>B</em> ',
+                ' - 3 La victima accede a la aplicación de <em>A</em>, donde se aloja el codigo del atacante ',
+                ' - 4 El nagedor de la victima realiza una petición contra la aplicacion presente en <em>B</em> sin que este se entere ',
+                '',
+                '<strong>- Protección </strong> ',
+                ' - Configurar el navegador para que no recuerde usuarios o contraseñas, usar el modo incognito es viable en estos casos ',
+                ' - Cerrar las sesiones, cuando no se vayan a usar más y no usar la opción de mantener/recordar la sesion ',
+                ' - Manejar diferentes navegadores, para diferentes acciones ',
+                ' - Utilizar complementos para bloquear la ejecución de scripts, para que los formularios que sean enviados por el metodo POST, ',
+                '  - deban ser autorizados previamente por el usuario y no se envien automaticamente',
+            ]),
     ];
 
 export const UML =
