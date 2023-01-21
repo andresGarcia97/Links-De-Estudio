@@ -1471,6 +1471,25 @@ export const PARADIGMAS =
                 ' - Reconocimiento y procesamiento de lenguaje natural ',
                 ' - Motores de bases de datos relacionales ',
                 ' - Simulación '
+            ]),
+        new Item('estructurada',
+            [
+                '- Es un conjunto de tecnicas para desarrollar algoritmos faciles de escribir, leer, modificar y verficar ',
+                '<strong> - Diseño descendente:</strong> Se diseñan por etapas, partiendo de lo general a lo particular, y es completado por el diseño modular ',
+                '<strong> - Recursos abstractos:</strong> En cada descomposición de una acción compleja, se supone que todas las partes ya estan resueltas ',
+                '<strong> - Estructuras basicas:</strong> Los algoritmos solo deben ser escritos usando 3 tipos de estructuras: <em>Secuencial</em>, <em>Selectiva</em>, <em>Repetetiva</em>',
+                '',
+                '<strong>- Teorema de Böhm y Jacopini</strong>',
+                ' - Para que un programa se defina como propio si se cumplen las siguientes caracteristicas: ',
+                '  - Tiene un solo punto de entrada y uno de salida ',
+                '  - Todo el camino del algoritmo es accesible, existiendo al menos un camino que va desde el inicio, hasta el final del algoritmo ',
+                '  - No posee lazos o ciclos infinitos ',
+                '',
+                '<strong>- Control de flujo de un programa</strong>',
+                '<strong> - Secuencial:</strong> Es aquella en la cual una acción se ejecuta detras de otra y coincide con las acciones fisicas ',
+                '<strong> - Selectiva:</strong> Se pueden ejecutar una acción o otra, dependiendo de una determinada condición ',
+                '<strong> - Repetitiva:</strong> Las acciones que estan dentro del bucle, se realizan, siempre que la condicion sea cierta, verificando antes o despues la afirmación ',
+                '<strong> - Anidamiento:</strong> Las estructuras Selectivas y repetitivas, pueden ser anidadas una dentro de la otra ',
             ])
     ];
 

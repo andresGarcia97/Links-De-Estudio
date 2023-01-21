@@ -349,6 +349,7 @@ export const PARADIGMAS = new Map<string, Referencia>([
     ['marcado', new Referencia('https://blog.educacionit.com/2018/12/26/diferencia-entre-lenguajes-de-scripting-lenguajes-de-marcado-y-lenguajes-de-programacion/', 'Lenguajes de marcado', 'paradigmas')],
     ['aspectos', new Referencia('https://www.baeldung.com/spring-aop', 'Orientación a aspectos', 'paradigmas')],
     ['logica', new Referencia('https://ferestrepoca.github.io/paradigmas-de-programacion/proglogica/logica_teoria/aplicaciones.html', 'Programación Logica', 'paradigmas')],
+    ['estructurada', new Referencia('https://bookdown.org/cjtorresj/ple/prog-estruct.html', 'Programación Estructurada', 'paradigmas')],
 ]);
 
 export const PATRONES = new Map<string, Referencia>([

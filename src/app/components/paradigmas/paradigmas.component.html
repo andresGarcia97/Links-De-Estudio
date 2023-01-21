@@ -1,22 +1,13 @@
+<div class="content"></div>
 <div class="content">
 
   <h2>Paradigmas de programación y tipos de lenguajes</h2>
 
   <div class="card-container">
 
-    <app-button [tittleButton]="'Estilos Programación'" (click)="getLinkAndTittleByKey('imperativo')"></app-button>
-
-    <app-button [tittleButton]="'Funcional'" (click)="getLinkAndTittleByKey('funcional')"></app-button>
-
-    <app-button [tittleButton]="'Scripting'" (click)="getLinkAndTittleByKey('scripting')"></app-button>
-
-    <app-button [tittleButton]="'Reactiva'" (click)="getLinkAndTittleByKey('reactiva')"></app-button>
-
-    <app-button [tittleButton]="'De Marcado'" (click)="getLinkAndTittleByKey('marcado')"></app-button>
-
-    <app-button [tittleButton]="'Aspectos'" (click)="getLinkAndTittleByKey('aspectos')"></app-button>
-
-    <app-button [tittleButton]="'Logica'" (click)="getLinkAndTittleByKey('logica')"></app-button>
+    <span *ngFor="let tittle of tittles | keyvalue: asIsOrder">
+      <app-button [tittleButton]=tittle.value (click)="getLinkAndTittleByKey(tittle.key)"></app-button>
+    </span>
 
   </div>
 
@@ -28,7 +19,7 @@
 
     <span *ngFor="let item of items">
       <span *ngSwitchCase="item.key">
-        <pre *ngFor="let content of item.content">{{content}}</pre>
+        <pre *ngFor="let content of item.content" [innerHtml]="content">{{content}}</pre>
       </span>
     </span>
 

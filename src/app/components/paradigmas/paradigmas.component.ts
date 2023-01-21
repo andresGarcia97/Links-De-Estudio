@@ -12,4 +12,15 @@ export class ParadigmasComponent extends LinkReferencia {
 
   lengthItems = this.items.length - 1;
 
+  tittles = new Map<string, string>([
+    ['imperativo', 'Estilos Programación'],
+    ['funcional', 'Funcional'],
+    ['scripting', 'Scripting'],
+    ['reactiva', 'Reactiva'],
+    ['marcado', 'De Marcado'],
+    ['aspectos', 'Aspectos'],
+    ['logica', 'Logica'],
+    ['estructurada', 'Estructurada'],
+  ]);
+
 }
