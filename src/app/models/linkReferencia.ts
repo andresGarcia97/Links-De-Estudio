@@ -530,6 +530,7 @@ export const VERSIONAMIENTO = new Map<string, Referencia>([
     ['gradlevsmaven', new Referencia('https://www.chakray.com/es/gradle-vs-maven-definiciones-diferencias/', 'Gradle VS Maven', 'versionamiento')],
     ['versionamiento', new Referencia('https://ed.team/blog/como-se-deciden-las-versiones-del-software', 'Manejo de versiones', 'versionamiento')],
     ['licencias', new Referencia('https://www.bbvaapimarket.com/es/mundo-api/las-5-licencias-de-software-libre-mas-importantes-que-todo-desarrollador-debe-conocer/', 'Tipos de licencias', 'versionamiento')],
+    ['documentation', new Referencia('https://shopify.engineering/good-documentation-productivity', 'Documentación & Productividad', 'versionamiento')],
 ]);
 
 export const HARDWARE = new Map<string, Referencia>([

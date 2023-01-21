@@ -12,4 +12,14 @@ export class VersionamientoComponent extends LinkReferencia {
 
   lengthItems = this.items.length - 1;
 
+  tittles = new Map<string, string>([
+    ['git', 'Gestor de Versiones'],
+    ['dependencias', 'Dependencias Web'],
+    ['gradlevsmaven', 'Gradle VS Maven'],
+    ['versionamiento', 'Versionamiento'],
+    ['licencias', 'Licencias'],
+    ['documentation', 'Documentacion'],
+
+  ]);
+
 }

@@ -1,18 +1,13 @@
+<div class="content"></div>
 <div class="content">
 
   <h2>Gestion de Dependencias y Manejo de versiones</h2>
 
   <div class="card-container">
 
-    <app-button [tittleButton]="'Gestor de Versiones'" (click)="getLinkAndTittleByKey('git')"></app-button>
-
-    <app-button [tittleButton]="'Dependencias Web'" (click)="getLinkAndTittleByKey('dependencias')"></app-button>
-
-    <app-button [tittleButton]="'Gradle VS Maven'" (click)="getLinkAndTittleByKey('gradlevsmaven')"></app-button>
-
-    <app-button [tittleButton]="'Versionamiento'" (click)="getLinkAndTittleByKey('versionamiento')"></app-button>
-
-    <app-button [tittleButton]="'Licencias'" (click)="getLinkAndTittleByKey('licencias')"></app-button>
+    <span *ngFor="let tittle of tittles | keyvalue: asIsOrder">
+      <app-button [tittleButton]=tittle.value (click)="getLinkAndTittleByKey(tittle.key)"></app-button>
+    </span>
 
   </div>
 
@@ -24,7 +19,7 @@
 
     <span *ngFor="let item of items">
       <span *ngSwitchCase="item.key">
-        <pre *ngFor="let content of item.content">{{content}}</pre>
+        <pre *ngFor="let content of item.content" [innerHtml]="content">{{content}}</pre>
       </span>
     </span>
 

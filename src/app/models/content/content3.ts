@@ -280,6 +280,28 @@ export const VERSIONAMIENTO =
                 ' - No comercial -> su uso esta prohibido para fines comerciales ',
                 ' - No derivadas -> la obra no puede ser modificada ',
                 ' - Compartir igual -> las derivaciones solo se permiten manteniendo la licencia original y con permiso del autor ',
+            ]),
+        new Item('documentation',
+            [
+                '- Manejar o tener documentación siempre ha sido de los pasos más olvidados en todos los proyectos de tecnologia',
+                '- Generalmente si esta existe, no sera una prioridad, ya que el conocimiento del proyecto se mantiene de boca en boca',
+                '- Si esta existe debe ser de facil acceso y que este centralizada si es posible, ',
+                ' - tambien debe estar enfocada segun el tipo de persona objetivo, no solo es util para el personal tecnico ',
+                '- El uso de manejadores de versiones como Github o Gitlab tambien son utiles para seguir la pista de en que se esta trabajando ',
+                '',
+                '<strong>- Beneficios:</strong> ',
+                ' - Aumentar la productividad, siempre y cuando este organizada y actualizada ',
+                ' - Agilizar la comunicación entre equipos, en especial cuando son grandes y no siempre se puede hablar con la persona indicada ',
+                ' - La incorporación de nuevos miembros es más efectiva, reduciendo la orientación necesaria por parte del equipo ',
+                ' - Las palabras escritas pueden traducirse de una manera más rapida, si hay miembros del equipo que hablen otros idiomas ',
+                ' - Permite una comunicacíon asincronica, en especial si hay personas con trabajos en diferentes zonas horarias ',
+                ' - Escribir sabiendo el contexto, ayuda a mejorar la retentiva de los integrantes del equipo, y la lectura de los diferentes objetivos ',
+                '',
+                '<strong>- Elementos a considerar:</strong>',
+                ' - Esta debe formar parte de las estrategias de CD/CI que se tengan del proyecto, ya que tambien puede ser versionada sin problemas ',
+                ' - Su alojamiento debe ser en un lugar comun para todo el equipo, de facil acceso y que no sea dificil encontrar el contenido ',
+                ' - Que sea en su mayoria texto, no significa que no sea agradable a la vista, su contenido debe presentarse de manera atractiva ',
+                ' - No tiene porque ser una tarea individual, tambien se puede hacer con todo el equipo o en pair programing ',
             ])
     ];
 
