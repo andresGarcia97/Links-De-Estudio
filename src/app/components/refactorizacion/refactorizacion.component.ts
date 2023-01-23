@@ -12,4 +12,15 @@ export class RefactorizacionComponent extends LinkReferencia {
 
   lengthItems = this.items.length - 1;
 
+  tittles = new Map<string, string>([
+    ['codigolimpio', 'Codigó limpio'],
+    ['deudatecnica', 'Deuda tecnica'],
+    ['tiposDeudaTecnica', 'Tipos de deuda'],
+    ['comentarios', 'Comentar la deuda'],
+    ['cuandorefactorizar', '¿ Cuando ?'],
+    ['comorefactorizar', '¿ Como ?'],
+    ['tecnicasRefactoring', 'Tecnicas'],
+    ['cuandoNoRefactorizar', 'Cuando No'],
+  ]);
+
 }

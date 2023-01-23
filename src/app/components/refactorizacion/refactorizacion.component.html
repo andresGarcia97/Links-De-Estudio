@@ -1,22 +1,13 @@
+<div class="content"></div>
 <div class="content">
 
   <h2>Refactorización & Deuda tecnica</h2>
 
   <div class="card-container">
 
-    <app-button [tittleButton]="'Codigó limpio'" (click)="getLinkAndTittleByKey('codigolimpio')"></app-button>
-
-    <app-button [tittleButton]="'Deuda tecnica'" (click)="getLinkAndTittleByKey('deudatecnica')"></app-button>
-
-    <app-button [tittleButton]="'Tipos de deuda'" (click)="getLinkAndTittleByKey('tiposDeudaTecnica')"></app-button>
-
-    <app-button [tittleButton]="'Comentar la deuda'" (click)="getLinkAndTittleByKey('comentarios')"></app-button>
-
-    <app-button [tittleButton]="'¿ Cuando ?'" (click)="getLinkAndTittleByKey('cuandorefactorizar')"></app-button>
-
-    <app-button [tittleButton]="'¿ Como ?'" (click)="getLinkAndTittleByKey('comorefactorizar')"></app-button>
-
-    <app-button [tittleButton]="'Tecnicas'" (click)="getLinkAndTittleByKey('tecnicasRefactoring')"></app-button>
+    <span *ngFor="let tittle of tittles | keyvalue: asIsOrder">
+      <app-button [tittleButton]=tittle.value (click)="getLinkAndTittleByKey(tittle.key)"></app-button>
+    </span>
 
   </div>
 
@@ -28,7 +19,7 @@
 
     <span *ngFor="let item of items">
       <span *ngSwitchCase="item.key">
-        <pre *ngFor="let content of item.content">{{content}}</pre>
+        <pre *ngFor="let content of item.content" [innerHtml]="content">{{content}}</pre>
       </span>
     </span>
 

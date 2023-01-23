@@ -439,6 +439,7 @@ export const REFACTORING = new Map<string, Referencia>([
     ['cuandorefactorizar', new Referencia('https://refactoring.guru/es/refactoring/when', '¿ Cuando refactorizar ?', 'refactorizacion')],
     ['comorefactorizar', new Referencia('https://refactoring.guru/es/refactoring/how-to', '¿ Como refactorizar ? ', 'refactorizacion')],
     ['tecnicasRefactoring', new Referencia('https://refactoring.guru/es/refactoring/techniques', 'Tecnicas para refactorizar', 'refactorizacion')],
+    ['cuandoNoRefactorizar', new Referencia('https://www.digite.com/es/agile/refactorizacion-en-agil/#:~:text=%C2%BFQu%C3%A9%20es%20la%20refactorizaci%C3%B3n%3F,el%20comportamiento%20observable%2C%20del%20c%C3%B3digo.', 'Cuando No Refactorizar', 'refactorizacion')],
 ]);
 
 export const REQUISITOS = new Map<string, Referencia>([
