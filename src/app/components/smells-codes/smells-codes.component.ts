@@ -12,4 +12,13 @@ export class SmellsCodesComponent extends LinkReferencia {
 
   lengthItems = this.items.length - 1;
 
+  tittles = new Map<string, string>([
+    ['codesmells', 'Smell Codes'],
+    ['tiposSmellCodes', 'Tipos'],
+    ['desglose', 'Desglose'],
+    ['casos', 'Casos especiales'],
+    ['payoff', 'Ganancias'],
+    ['designsmells', 'A nivel de diseño'],
+  ]);
+
 }

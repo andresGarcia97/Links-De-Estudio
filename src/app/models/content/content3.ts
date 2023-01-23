@@ -213,6 +213,23 @@ export const SMELLS_CODES =
                 ' - La legibilidad aumenta, haciendo que futuros cambios sean más rapidos ',
                 ' - Mejora la organización y la abstracción ',
                 ' - Reduce el tamaño del codigo ',
+            ]),
+        new Item('designsmells',
+            [
+                '- Estos tambien se aplican a nivel de diseño y no solo de algo especifico del codigo ',
+                '- También se conoce como Design Smells, como en <em>Agile Software Development, Principles, Patterns, and Practices</em> de Robert C. Martin de 2002. ',
+                ' - En este libro se destacan las siguientes características como consecuencias del “Olor de Diseño”',
+                '',
+                '<strong>- Rigidez:</strong> Un cambio desemboca en otros cambios necesarios ',
+                '<strong>- Fragilidad:</strong> Cualquier cambio puede afectar otras partes del sistema directa/indirectamnte involucradas ',
+                '<strong>- Inmovilidad:</strong> Los componentes del sistemas no son facilmente rehusables en otros lugares ',
+                '<strong>- Viscosidad:</strong> El sistema esta plagado de malas practicas y facilita que proliferen ',
+                '<strong>- Complejida innecesaria:</strong> Infraestructura innecesaria para funcionalidades simples ',
+                '<strong>- Repeticion innecesaria:</strong> Diferentes diseños, contienen logica que puede ser abstraida y centralizada ',
+                '<strong>- Opacidad:</strong> La funcionalidad del sistema no esta bien definida y su alcance es difuso ',
+                '',
+                '- Estos se pueden identificar mediante observaciones subjetivas por parte de los programadores ',
+                '- Dificilmente encontrados por pruebas o resultados cuantitativos',
             ])
     ];
 
@@ -713,21 +730,21 @@ export const REFACTORIZACION =
                 ' - CONTRAS -> Se debe realizar un analisis más profundo del porque y su solución ',
             ]),
         new Item('cuandoNoRefactorizar',
-        [
-            '- Un refactor nunca deberia cambiar el comportamiento observable del codigo ',
-            '- Si no se tiene las suficiente certeza de que se pueda comprobar el funcionamiento despues de los cambios realizados ',
-            ' - a nivel general y particular, no solo de las partes afectadas ',
-            '- Si se esta en medio de un cambio funcional; y menos aun, si este no funciona ',
-            '- Hay que cumplir un plazo de manera urgente, pero tampoco se puede descuidar ya que se crearia una bola de nieve eventualmente ',
-            '',
-            '<strong>- Algunos pasos a tener en cuenta:</strong>',
-            ' - Asegurese que hay un punto de restauración, al cual se pueda retroceder si no han funcionado o se deshacen los cambios ',
-            ' - Identificar que se planea refactorizar y que tecnica puede ser usada ',
-            ' - Si se tienen multiples refactors más pequeños, asegurese que el codigo siga funcionado despues terminar uno y antes de empezar con otro ',
-            ' - Ejecute periodicamente los test que hayan y de ser posible agregue nuevos casos que esten directamente involucrados ',
-            ' - Si se tiene una aplicación con una deuda tecnica masiva y con pocas maneras de comprobar los cambios, aplique la tecnica llamada <em>Golder Master</em>, ',
-            '  - donde se tiene un gran conjunto de datos para comprobar que los resultados sean equanimes, antes y despues de los cambios ',
-        ])
+            [
+                '- Un refactor nunca deberia cambiar el comportamiento observable del codigo ',
+                '- Si no se tiene las suficiente certeza de que se pueda comprobar el funcionamiento despues de los cambios realizados ',
+                ' - a nivel general y particular, no solo de las partes afectadas ',
+                '- Si se esta en medio de un cambio funcional; y menos aun, si este no funciona ',
+                '- Hay que cumplir un plazo de manera urgente, pero tampoco se puede descuidar ya que se crearia una bola de nieve eventualmente ',
+                '',
+                '<strong>- Algunos pasos a tener en cuenta:</strong>',
+                ' - Asegurese que hay un punto de restauración, al cual se pueda retroceder si no han funcionado o se deshacen los cambios ',
+                ' - Identificar que se planea refactorizar y que tecnica puede ser usada ',
+                ' - Si se tienen multiples refactors más pequeños, asegurese que el codigo siga funcionado despues terminar uno y antes de empezar con otro ',
+                ' - Ejecute periodicamente los test que hayan y de ser posible agregue nuevos casos que esten directamente involucrados ',
+                ' - Si se tiene una aplicación con una deuda tecnica masiva y con pocas maneras de comprobar los cambios, aplique la tecnica llamada <em>Golder Master</em>, ',
+                '  - donde se tiene un gran conjunto de datos para comprobar que los resultados sean equanimes, antes y despues de los cambios ',
+            ])
     ];
 
 export const SEGURIDAD =

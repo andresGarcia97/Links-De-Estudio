@@ -1,18 +1,13 @@
+<div class="content"></div>
 <div class="content">
 
   <h2>Smell Codes (malos olores) </h2>
 
   <div class="card-container">
 
-    <app-button [tittleButton]="'Smell Codes'" (click)="getLinkAndTittleByKey('codesmells')"></app-button>
-
-    <app-button [tittleButton]="'Tipos'" (click)="getLinkAndTittleByKey('tiposSmellCodes')"></app-button>
-
-    <app-button [tittleButton]="'Desglose'" (click)="getLinkAndTittleByKey('desglose')"></app-button>
-
-    <app-button [tittleButton]="'Casos especiales'" (click)="getLinkAndTittleByKey('casos')"></app-button>
-
-    <app-button [tittleButton]="'Ganancias'" (click)="getLinkAndTittleByKey('payoff')"></app-button>
+    <span *ngFor="let tittle of tittles | keyvalue: asIsOrder">
+      <app-button [tittleButton]=tittle.value (click)="getLinkAndTittleByKey(tittle.key)"></app-button>
+    </span>
 
   </div>
 
@@ -24,7 +19,7 @@
 
     <span *ngFor="let item of items">
       <span *ngSwitchCase="item.key">
-        <pre *ngFor="let content of item.content">{{content}}</pre>
+        <pre *ngFor="let content of item.content" [innerHtml]="content">{{content}}</pre>
       </span>
     </span>
 

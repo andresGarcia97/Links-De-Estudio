@@ -491,6 +491,7 @@ export const SMELL_CODES = new Map<string, Referencia>([
     ['desglose', new Referencia('https://refactoring.guru/es/refactoring/smells', 'Smell codes por tipo', 'smells codes')],
     ['casos', new Referencia('https://refactoring.guru/es/refactoring/smells', 'Casos donde pueden ser ignorados', 'smells codes')],
     ['payoff', new Referencia('https://refactoring.guru/es/refactoring/smells', 'Beneficios de corregir code smells', 'smells codes')],
+    ['designsmells', new Referencia('https://www.alpharithms.com/code-smell-492316/', 'Code smells en diseño', 'smells codes')],
 ]);
 
 export const PERSISTENCY = new Map<string, Referencia>([
