@@ -525,6 +525,7 @@ export const UML = new Map<string, Referencia>([
     ['paquetes', new Referencia('https://diagramasuml.com/paquetes/', 'Diagrama de paquetes', 'uml')],
     ['estados', new Referencia('https://diagramasuml.com/estados/', 'Diagrama de estados', 'uml')],
     ['vista', new Referencia('https://es.wikipedia.org/wiki/Modelo_de_Vistas_de_Arquitectura_4%2B1', 'Modelo 4+1 vistas', 'uml')],
+    ['tiposUml', new Referencia('https://www.microsoft.com/es-co/microsoft-365/business-insights-ideas/resources/guide-to-uml-diagramming-and-database-modeling#:~:text=El%20Lenguaje%20Unificado%20de%20Modelado,de%20un%20sistema%20o%20proceso.', 'Tipos de Diagramas', 'uml')],
 ]);
 
 export const VERSIONAMIENTO = new Map<string, Referencia>([

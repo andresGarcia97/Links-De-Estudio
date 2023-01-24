@@ -1,28 +1,13 @@
+<div class="content"></div>
 <div class="content">
 
   <h2>Lenguaje Unificado de Modelado</h2>
 
   <div class="card-container">
 
-    <app-button [tittleButton]="'¿ Que es ?'" (click)="getLinkAndTittleByKey('uml')"></app-button>
-
-    <app-button [tittleButton]="'De Clases'" (click)="getLinkAndTittleByKey('clase')"></app-button>
-
-    <app-button [tittleButton]="'De Componentes'" (click)="getLinkAndTittleByKey('componentes')"></app-button>
-
-    <app-button [tittleButton]="'De Despliegue'" (click)="getLinkAndTittleByKey('despliegue')"></app-button>
-
-    <app-button [tittleButton]="'Casos de Uso'" (click)="getLinkAndTittleByKey('usos')"></app-button>
-
-    <app-button [tittleButton]="'De Secuencia'" (click)="getLinkAndTittleByKey('secuencia')"></app-button>
-
-    <app-button [tittleButton]="'De Actividades'" (click)="getLinkAndTittleByKey('actividades')"></app-button>
-
-    <app-button [tittleButton]="'De Paquetes'" (click)="getLinkAndTittleByKey('paquetes')"></app-button>
-
-    <app-button [tittleButton]="'De Estados'" (click)="getLinkAndTittleByKey('estados')"></app-button>
-
-    <app-button [tittleButton]="'4+1 Vistas'" (click)="getLinkAndTittleByKey('vista')"></app-button>
+    <span *ngFor="let tittle of tittles | keyvalue: asIsOrder">
+      <app-button [tittleButton]=tittle.value (click)="getLinkAndTittleByKey(tittle.key)"></app-button>
+    </span>
 
   </div>
 
@@ -34,7 +19,7 @@
 
     <span *ngFor="let item of items">
       <span *ngSwitchCase="item.key">
-        <pre *ngFor="let content of item.content">{{content}}</pre>
+        <pre *ngFor="let content of item.content" [innerHtml]="content">{{content}}</pre>
       </span>
     </span>
 
