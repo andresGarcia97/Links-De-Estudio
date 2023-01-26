@@ -5,6 +5,7 @@ import { ButtonNextComponent } from './button-next/button-next.component';
 import { ButtonComponent } from './button/button.component';
 import { FuenteComponent } from './fuente/fuente.component';
 import { ReferenciaComponent } from './referencia/referencia.component';
+import { SectionComponent } from './section/section.component';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { ReferenciaComponent } from './referencia/referencia.component';
     ButtonBeforeComponent,
     ButtonNextComponent,
     FuenteComponent,
-    ReferenciaComponent
+    ReferenciaComponent,
+    SectionComponent
   ],
   imports: [
     CommonModule
@@ -22,7 +24,8 @@ import { ReferenciaComponent } from './referencia/referencia.component';
     ButtonBeforeComponent,
     ButtonNextComponent,
     FuenteComponent,
-    ReferenciaComponent
+    ReferenciaComponent,
+    SectionComponent
   ]
 })
 
