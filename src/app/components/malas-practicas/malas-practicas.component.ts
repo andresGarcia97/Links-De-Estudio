@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
 import { MALAS_PRACTICAS } from 'src/app/models/content/content2';
-import { LinkReferencia } from 'src/app/models/linkReferencia';
+import { MALAS_PRACTICAS_REF } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-malas-practicas',
   templateUrl: './malas-practicas.component.html'
 })
-export class MalasPracticasComponent extends LinkReferencia {
+export class MalasPracticasComponent {
 
   items = MALAS_PRACTICAS;
 
-  lengthItems = this.items.length - 1;
+  components = new Map([ ...MALAS_PRACTICAS_REF ]);
 
   tittles = new Map<string, string>([
     ['callbackhell', 'Callback Hell'],

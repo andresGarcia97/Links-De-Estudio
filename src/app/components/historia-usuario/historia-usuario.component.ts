@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
 import { HISTORIAS_USUARIO } from 'src/app/models/content/content2';
-import { LinkReferencia } from 'src/app/models/linkReferencia';
+import { USER_HISTORIES } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-historia-usuario',
   templateUrl: './historia-usuario.component.html'
 })
-export class HistoriaUsuarioComponent extends LinkReferencia {
+export class HistoriaUsuarioComponent {
 
   items = HISTORIAS_USUARIO;
 
-  lengthItems = this.items.length - 1;
+  components = new Map([ ...USER_HISTORIES ]);
 
   tittles = new Map<string, string>([
     ['historias', '¿ que son ?'],

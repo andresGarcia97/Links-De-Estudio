@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
 import { GIT } from 'src/app/models/content/content2';
-import { LinkReferencia } from 'src/app/models/linkReferencia';
+import { GIT_REF } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-git',
   templateUrl: './git.component.html'
 })
-export class GitComponent extends LinkReferencia {
+export class GitComponent {
 
   items = GIT;
 
-  lengthItems = this.items.length - 1;
+  components = new Map([ ...GIT_REF ]);
 
   tittles = new Map<string, string>([
     ['introduccion', 'Introducción'],

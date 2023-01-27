@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
 import { ESTATEGIAS_DESARROLLO } from 'src/app/models/content/content2';
-import { LinkReferencia } from 'src/app/models/linkReferencia';
+import { ESTRATEGIAS_DESARROLLO_REF } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-estrategias-desarrollo',
   templateUrl: './estrategias-desarrollo.component.html'
 })
-export class EstrategiasDesarrolloComponent extends LinkReferencia {
+export class EstrategiasDesarrolloComponent {
 
   items = ESTATEGIAS_DESARROLLO;
 
-  lengthItems = this.items.length - 1;
+  components = new Map([ ...ESTRATEGIAS_DESARROLLO_REF ]);
 
   tittles = new Map<string, string>([
     ['ddd', 'DDD'],

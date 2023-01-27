@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
 import { META_CARACTERISTICAS } from 'src/app/models/content/content1';
-import { LinkReferencia } from 'src/app/models/linkReferencia';
+import { META_CARATERISTICAS_REF } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-meta-caracteristicas',
   templateUrl: './meta-caracteristicas.component.html'
 })
-export class MetaCaracteristicasComponent extends LinkReferencia {
+export class MetaCaracteristicasComponent {
 
   items = META_CARACTERISTICAS;
 
-  lengthItems = this.items.length - 1;
+  components = new Map([ ...META_CARATERISTICAS_REF ]);
 
   tittles = new Map<string, string>([
     ['metaDatos', 'Meta data'],

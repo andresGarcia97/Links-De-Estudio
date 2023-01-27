@@ -20,10 +20,10 @@ export class LinkReferencia {
         ...AGILES_REF,               ...CONTAINERS,
         ...ANALISIS_REF,             ...ARQUITECTURAS_REF,
         ...BUENAS_PRACTICAS_REF,     ...CALIDAD_REF,
-        ...COMPILACION_REF,          ...CONOCIMIENTO_EMPIRICO,
-        ...ESTRATEGIAS_DESARROLLO,   ...FRAMEWORKS,     
-        ...GIT,                      ...USER_HISTORIES,
-        ...MALAS_PRACTICAS,          ...META_CARATERISTICAS,
+        ...COMPILACION_REF,           ...CONOCIMIENTO_EMPIRICO,
+        ...ESTRATEGIAS_DESARROLLO_REF,...FRAMEWORKS_REF,     
+        ...GIT_REF,                   ...USER_HISTORIES,
+        ...MALAS_PRACTICAS_REF,       ...META_CARATERISTICAS_REF,
         ...META_ESTRUCTURAS,         ...METODOLOGIAS,
         ...NUBE_AND_APIS,            ...OTROS,
         ...PARADIGMAS,               ...PATRONES,
@@ -33,8 +33,8 @@ export class LinkReferencia {
         ...PRINCIPIOS,               ...SEGURIDAD,
         ...SMELL_CODES,              ...PERSISTENCY,
         ...UML,                      ...VERSIONAMIENTO,
-        ...HARDWARE,                 ...WEB,
-        ...LEYES
+        ...HARDWARE_REF,             ...WEB,
+        ...LEYES_REF
     ]);
 
     public getLinkAndTittleByKey(key: string = ''): void {
@@ -189,7 +189,7 @@ export const CONOCIMIENTO_EMPIRICO = new Map<string, Referencia>([
     ['pastaTheory', new Referencia('https://www.techtarget.com/searchsoftwarequality/tip/Fix-spaghetti-code-and-other-pasta-theory-antipatterns#:~:text=The%20pasta%20theory%20of%20programming,ravioli%20code%20and%20pizza%20code', 'Teoria de la pasta', 'empirico')]
 ]);
 
-export const LEYES = new Map<string, Referencia>([
+export const LEYES_REF = new Map<string, Referencia>([
     ['balas', new Referencia('https://gist.github.com/esparta/582e43af7b803e0aaf69', 'Balas de Plata', 'leyes')],
     ['lehman', new Referencia('https://medium.com/@cartontabla/las-leyes-de-lehman-b57c623c3404#:~:text=Las%20Leyes%20de%20Lehman%20son,digamos%20que%20podr%C3%ADan%20ser%20ampliadas)', 'Leyes de Lehman', 'leyes')],
     ['conway', new Referencia('https://www.javiergarzas.com/2015/06/conway.html', 'Ley de Conway', 'leyes')],
@@ -212,7 +212,7 @@ export const CONTAINERS = new Map<string, Referencia>([
     ['kubernetes', new Referencia('https://kubernetes.io/es/docs/concepts/overview/what-is-kubernetes/', 'Kubernetes', 'Contenedores')],
 ]);
 
-export const ESTRATEGIAS_DESARROLLO = new Map<string, Referencia>([
+export const ESTRATEGIAS_DESARROLLO_REF = new Map<string, Referencia>([
     ['ddd', new Referencia('https://github.com/jatubio/5minutos_laravel/wiki/Resumen-sobre-DDD.-Domain-Driven-Design', 'Diseño Orientado a Dominios', 'estrategias-desarrollo')],
     ['bdd', new Referencia('https://www.itdo.com/blog/que-es-bdd-behavior-driven-development/#:~:text=Given%2DWhen%2DThen%20como%20lenguaje%20com%C3%BAn%20con%20BDD,que%20se%20van%20a%20ejecutar', 'Desarrollo Dirigido por Comportamiento', 'estrategias-desarrollo')],
     ['tdd', new Referencia('https://www.paradigmadigital.com/dev/tdd-como-metodologia-de-diseno-de-software/', 'Desarrollo Dirigido por Tests', 'estrategias-desarrollo')],
@@ -222,14 +222,14 @@ export const ESTRATEGIAS_DESARROLLO = new Map<string, Referencia>([
     ['bduf', new Referencia('https://www.freecodecamp.org/news/the-pros-and-cons-of-big-design-up-front-and-what-i-do-instead-375f00542dec/', 'Big Design Up Front', 'estrategias-desarrollo')],
 ]);
 
-export const FRAMEWORKS = new Map<string, Referencia>([
+export const FRAMEWORKS_REF = new Map<string, Referencia>([
     ['frameworks', new Referencia('https://neoattack.com/neowiki/framework/', '¿ Que es un framework?', 'frameworks')],
     ['ioc', new Referencia('https://medium.com/all-you-need-is-clean-code/inversi%C3%B3n-de-control-principio-de-hollywood-dont-call-us-we-ll-call-you-179e9c70e3d0', 'Inversion de Control', 'frameworks')],
     ['iod', new Referencia('https://www.arquitecturajava.com/el-patron-de-inyeccion-de-dependencia/', 'Inyección de dependencias', 'frameworks')],
     ['scafolding', new Referencia('https://medium.com/@srinathsrs104/scaffolding-54ac4e47e133', 'Creación automatica de codigo', 'frameworks')],
 ]);
 
-export const GIT = new Map<string, Referencia>([
+export const GIT_REF = new Map<string, Referencia>([
     ['introduccion', new Referencia('https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Acerca-del-Control-de-Versiones', 'Introducción a Git', 'git')],
     ['repositorios', new Referencia('https://git-scm.com/book/es/v2/Fundamentos-de-Git-Trabajar-con-Remotos', 'Repositorios Remotos y Locales', 'git')],
     ['ramas', new Referencia('https://git-scm.com/book/es/v2/Ramificaciones-en-Git-Procedimientos-B%C3%A1sicos-para-Ramificar-y-Fusionar', 'Manejo de ramas', 'git')],
@@ -257,13 +257,13 @@ export const USER_HISTORIES = new Map<string, Referencia>([
     ['storyPoints', new Referencia('https://ronjeffries.com/articles/019-01ff/story-points/Index.html', 'Puntos de Historia', 'historias-usuario')],
 ]);
 
-export const MALAS_PRACTICAS = new Map<string, Referencia>([
+export const MALAS_PRACTICAS_REF = new Map<string, Referencia>([
     ['callbackhell', new Referencia('https://codearmy.co/que-es-el-callback-hell-y-como-evitarlo-4af418a6ed14', 'Cadena de llamados asincronos', 'malas-practicas')],
     ['contraCalidad', new Referencia('https://softgrade.mx/5-causas-afectan-la-calidad-software/', 'En contra de la calidad', 'malas-practicas')],
     ['contraGestion', new Referencia('https://blog.gft.com/es/2016/01/20/las-10-malas-practicas-mas-comunes-en-la-gestion-de-proyectos/', 'En contra de la gestión', 'malas-practicas')],
 ]);
 
-export const META_CARATERISTICAS = new Map<string, Referencia>([
+export const META_CARATERISTICAS_REF = new Map<string, Referencia>([
     ['metaDatos', new Referencia('https://blog.powerdata.es/el-valor-de-la-gestion-de-datos/que-son-los-metadatos-y-cual-es-su-utilidad', ' ¿ Que son los metadatos ?', 'caracteristicas')],
     ['metaClase', new Referencia('https://quesignificado.org/que-es-una-metaclase/', '¿ Que es una meta clase ?', 'caracteristicas')],
     ['reflexion', new Referencia('https://es.linkfang.org/wiki/Reflexi%C3%B3n_(inform%C3%A1tica)', 'Auto mutabilidad del codigo', 'caracteristicas')],
@@ -537,7 +537,7 @@ export const VERSIONAMIENTO = new Map<string, Referencia>([
     ['documentation', new Referencia('https://shopify.engineering/good-documentation-productivity', 'Documentación & Productividad', 'versionamiento')],
 ]);
 
-export const HARDWARE = new Map<string, Referencia>([
+export const HARDWARE_REF = new Map<string, Referencia>([
     ['virtualizacion', new Referencia('https://www.redhat.com/es/topics/virtualization/what-is-a-virtual-machine', 'Virtualización', 'Hardware')],
     ['cli', new Referencia('https://searchdatacenter.techtarget.com/es/definicion/Interfaz-de-linea-de-comandos-o-CLI', 'Interfaz de Linea de Comandos', 'Hardware')],
     ['escalamiento', new Referencia('https://www.oscarblancarteblog.com/2017/03/07/escalabilidad-horizontal-y-vertical/', 'Escalamiento de un sistema', 'Hardware')],
