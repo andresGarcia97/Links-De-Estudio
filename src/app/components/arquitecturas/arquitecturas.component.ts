@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
 import { ARQUITECTURAS } from 'src/app/models/content/content1';
-import { LinkReferencia } from 'src/app/models/linkReferencia';
+import { ARQUITECTURAS_REF } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-arquitecturas',
   templateUrl: './arquitecturas.component.html'
 })
-export class ArquitecturasComponent extends LinkReferencia {
+export class ArquitecturasComponent {
 
   items = ARQUITECTURAS;
 
-  lengthItems = this.items.length - 1;
+  components = new Map([ ...ARQUITECTURAS_REF ]);
 
   tittles = new Map<string, string>([
     ['definicion', 'Definición'],

@@ -3,34 +3,10 @@
 
   <h2>Buenas Practicas</h2>
 
-  <div class="card-container">
-
-    <span *ngFor="let tittle of tittles | keyvalue: asIsOrder">
-      <app-button [tittleButton]=tittle.value (click)="getLinkAndTittleByKey(tittle.key)"></app-button>
-    </span>
-
-  </div>
-
-  <app-referencia class="flexbox terminal" [referencia]="referencia" [titulo]="titulo"></app-referencia>
-
-  <div class="terminal" [ngSwitch]="selection" #terminal>
-
-    <h2 *ngSwitchDefault>Selecciona una opcion para ver más </h2>
-
-    <span *ngFor="let item of items">
-      <span *ngSwitchCase="item.key">
-        <pre *ngFor="let content of item.content" [innerHTML]="content">{{content}}</pre>
-      </span>
-    </span>
-
-    <div class="card-container less-margin">
-
-      <app-button-before *ngIf="!(itemSelected === 0)" (click)="getBeforeElement()"></app-button-before>
-      
-      <app-button-next *ngIf="!(itemSelected === lengthItems)" (click)="getNextElement()"></app-button-next>
-
-    </div>
-
-  </div>
+  <app-section 
+    [items]="items"  
+    [tittles]="tittles" 
+    [components]="components">
+  </app-section>
 
 </div>

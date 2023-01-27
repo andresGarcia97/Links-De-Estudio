@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
 import { CONOCIMIENTOS_EMPIRICOS } from 'src/app/models/content/content2';
-import { LinkReferencia } from 'src/app/models/linkReferencia';
+import { CONOCIMIENTO_EMPIRICO } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-conocimientos-empiricos',
   templateUrl: './conocimientos-empiricos.component.html'
 })
-export class ConocimientosEmpiricosComponent extends LinkReferencia {
+export class ConocimientosEmpiricosComponent {
 
   items = CONOCIMIENTOS_EMPIRICOS;
 
-  lengthItems = this.items.length - 1;
+  components = new Map([ ...CONOCIMIENTO_EMPIRICO ]);
 
   tittles = new Map<string, string>([
     ['cristales', 'Cristales rotos'],

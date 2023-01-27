@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
 import { CONTENEDORES } from 'src/app/models/content/content1';
-import { LinkReferencia } from 'src/app/models/linkReferencia';
+import { CONTAINERS } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-docker',
   templateUrl: './contenedores.component.html'
 })
-export class ContenedoresComponent extends LinkReferencia {
+export class ContenedoresComponent {
 
   items = CONTENEDORES;
 
-  lengthItems = this.items.length - 1;
+  components = new Map([ ...CONTAINERS ]);
 
   tittles = new Map<string, string>([
     ['lxc', 'Linux Containers'],

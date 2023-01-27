@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
 import { BUENAS_PRACTICAS } from 'src/app/models/content/content2';
-import { LinkReferencia } from 'src/app/models/linkReferencia';
+import { BUENAS_PRACTICAS_REF } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-buenas-practicas',
   templateUrl: './buenas-practicas.component.html'
 })
-export class BuenasPracticasComponent extends LinkReferencia {
+export class BuenasPracticasComponent {
 
   items = BUENAS_PRACTICAS;
 
-  lengthItems = this.items.length - 1;
+  components = new Map([ ...BUENAS_PRACTICAS_REF ]);
 
   tittles = new Map<string, string>([
     ['practicas1', 'Parte #1'],

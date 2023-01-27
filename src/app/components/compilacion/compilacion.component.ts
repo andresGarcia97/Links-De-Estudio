@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
 import { COMPILACION } from 'src/app/models/content/content2';
-import { LinkReferencia } from 'src/app/models/linkReferencia';
+import { COMPILACION_REF } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-compilacion',
   templateUrl: './compilacion.component.html'
 })
-export class CompilacionComponent extends LinkReferencia {
+export class CompilacionComponent {
 
   items = COMPILACION;
 
-  lengthItems = this.items.length - 1;
+  components = new Map([ ...COMPILACION_REF ]);
 
   tittles = new Map<string, string>([
     ['compilacion', '¿ que es ?'],

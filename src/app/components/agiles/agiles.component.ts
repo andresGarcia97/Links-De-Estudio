@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
 import { AGILES } from 'src/app/models/content/content1';
-import { LinkReferencia } from 'src/app/models/linkReferencia';
+import { AGILES_REF } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-agiles',
   templateUrl: './agiles.component.html'
 })
-export class AgilesComponent extends LinkReferencia {
+export class AgilesComponent {
 
   items = AGILES;
 
-  lengthItems = this.items.length - 1;
+  components = new Map([ ...AGILES_REF ]);
 
   tittles = new Map<string, string>([
     ['moscow', 'MOSCOW'],

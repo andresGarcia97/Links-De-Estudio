@@ -17,10 +17,10 @@ export class LinkReferencia {
     tittles = new Map<string, string>([]);
 
     public components: Map<string, Referencia> = new Map([
-        ...AGILES,                   ...CONTAINERS,
-        ...ANALISIS,                 ...ARQUITECTURAS,
-        ...BUENAS_PRACTICAS,         ...CALIDAD,
-        ...COMPILACION,              ...CONOCIMIENTO_EMPIRICO,
+        ...AGILES_REF,               ...CONTAINERS,
+        ...ANALISIS_REF,             ...ARQUITECTURAS_REF,
+        ...BUENAS_PRACTICAS_REF,     ...CALIDAD_REF,
+        ...COMPILACION_REF,          ...CONOCIMIENTO_EMPIRICO,
         ...ESTRATEGIAS_DESARROLLO,   ...FRAMEWORKS,     
         ...GIT,                      ...USER_HISTORIES,
         ...MALAS_PRACTICAS,          ...META_CARATERISTICAS,
@@ -84,7 +84,7 @@ export class LinkReferencia {
      }
 }
 
-export const AGILES = new Map<string, Referencia>([
+export const AGILES_REF = new Map<string, Referencia>([
     ['moscow', new Referencia('https://proagilist.es/blog/agilidad-y-gestion-agil/priorizar-requisitos-tecnica-priorizacion-moscow/', 'MOSCOW', 'agiles')],
     ['scoring', new Referencia('https://comunidad.iebschool.com/metodologiasparaelcambio/2014/03/23/priorizando-historias-de-usuario/', 'Theme Scoring', 'agiles')],
     ['muda', new Referencia('https://prevencontrol.com/prevenblog/las-7-mudas/#:~:text=Los%20MUDA%2C%20t%C3%A9rmino%20japon%C3%A9s%20que,Sistema%20de%20producci%C3%B3n%20de%20Toyota', 'Desperdicio', 'agiles')],
@@ -97,7 +97,7 @@ export const AGILES = new Map<string, Referencia>([
     ['deming', new Referencia('https://www.beetrack.com/es/blog/ciclo-de-deming-etapas-ejemplos', 'Ciclo de Deming', 'agiles')],
 ]);
 
-export const ANALISIS = new Map<string, Referencia>([
+export const ANALISIS_REF = new Map<string, Referencia>([
     ['comportamiento', new Referencia('https://es.wikipedia.org/wiki/Modelo_de_comportamiento_(inform%C3%A1tica)', 'Comportamiento del sistema', 'analisis')],
     ['dominio', new Referencia('https://www.redalyc.org/jatsRepo/4768/476862530003/html/index.html#:~:text=El%20An%C3%A1lisis%20de%20Dominio%20es,la%20identificaci%C3%B3n%2C%20el%20an%C3%A1lisis%20y', 'Analisis de Dominio', 'analisis')],
     ['case', new Referencia('https://www.tutorialspoint.com/es/software_engineering/case_tools_overview.htm', 'Herramientas Case', 'analisis')],
@@ -112,7 +112,7 @@ export const ANALISIS = new Map<string, Referencia>([
     ['kpis', new Referencia('https://www.ibm.com/garage/method/practices/learn/kpis-measure-guide-progress/', 'KPIs', 'analisis')],
 ]);
 
-export const ARQUITECTURAS = new Map<string, Referencia>([
+export const ARQUITECTURAS_REF = new Map<string, Referencia>([
     ['definicion', new Referencia('https://cgrw01.cgr.go.cr/rup/RUP.es/SmallProjects/core.base_rup/guidances/concepts/software_architecture_4269A354.html', '¿ Que es una arquitectura ?', 'arquitecturas')],
     ['inicioArquitectura', new Referencia('https://sg.com.mx/revista/27/arquitectura-software', 'Etapas & Roles', 'arquitecturas')],
     ['conceptosArquitectura', new Referencia('https://www.freecodecamp.org/news/an-introduction-to-software-architecture-patterns/', 'Conceptos', 'arquitecturas')],
@@ -130,7 +130,7 @@ export const ARQUITECTURAS = new Map<string, Referencia>([
     ['monolitos', new Referencia('https://www.paradigmadigital.com/techbiz/microservicios-vs-microlitos-vs-monolitos-ventajas-desventajas/', 'Monolitos VS Microservicios', 'arquitecturas')],
 ]);
 
-export const BUENAS_PRACTICAS = new Map<string, Referencia>([
+export const BUENAS_PRACTICAS_REF = new Map<string, Referencia>([
     ['practicas1', new Referencia('https://www.tithink.com/es/2018/06/13/12-buenas-practicas-para-el-desarrollo-software/', 'Buenas practicas parte #1', 'buenas-practicas')],
     ['practicas2', new Referencia('https://sg.com.mx/revista/mejores-pr%C3%A1cticas-para-el-desarrollo-software', 'Buenas practicas parte #2', 'buenas-practicas')],
     ['practicas3', new Referencia('https://velneo.es/15-buenas-practicas-proyectos-desarrollo-software/', 'Buenas practicas parte #3', 'buenas-practicas')],
@@ -147,7 +147,7 @@ export const BUENAS_PRACTICAS = new Map<string, Referencia>([
     ['semanticConstructors', new Referencia('https://medium.com/all-you-need-is-clean-code/constructores-sem%C3%A1nticos-ae7ac70b23aa', 'Constructores Semanticos', 'buenas-practicas')],
 ]);
 
-export const CALIDAD = new Map<string, Referencia>([
+export const CALIDAD_REF = new Map<string, Referencia>([
     ['metricas', new Referencia('https://searchdatacenter.techtarget.com/es/consejo/23-metricas-de-desarrollo-de-software-que-monitorear-hoy', 'Metricas del Software', 'calidad')],
     ['metricasEnCodigo', new Referencia('https://blog.desafiolatam.com/metricas-de-calidad-de-software/#:~:text=M%C3%A9tricas%20de%20calidad%20de%20software%20es%20un%20conjunto%20de%20medidas,comparar%20o%20planificar%20estas%20aplicaciones.&text=Tambi%C3%A9n%2C%20es%20necesario%20definir%20las,los%20resultados%20de%20estas%20m%C3%A9tricas', 'Metricas del codigo', 'calidad')],
     ['cleanCode', new Referencia('https://medium.com/@tijuhasz/in-one-of-the-most-groundbreaking-practical-books-on-software-development-clean-code-right-in-3ef3006c68f2', 'Clean Code & Code rot', 'calidad')],
@@ -159,7 +159,7 @@ export const CALIDAD = new Map<string, Referencia>([
     ['linting', new Referencia('https://www.freecodecamp.org/espanol/news/que-es-linting-y-eslint/', 'Linting', 'calidad')],
 ]);
 
-export const COMPILACION = new Map<string, Referencia>([
+export const COMPILACION_REF = new Map<string, Referencia>([
     ['compilacion', new Referencia('https://developer.mozilla.org/es/docs/Glossary/Compile', '¿ Que es compilar ?', 'compilacion')],
     ['nivel', new Referencia('https://desarrolloweb.com/articulos/2358.php#:~:text=Existen%20dos%20tipos%20de%20lenguajes,y%20los%20de%20alto%20nivel.&text=Los%20lenguajes%20m%C3%A1s%20pr%C3%B3ximos%20a,denominan%20lenguajes%20de%20alto%20nivel.', 'Niveles de compilación', 'compilacion')],
     ['interprete', new Referencia('https://yosoy.dev/diferencia-entre-lenguajes-compilados-e-interpretados/', 'Tipos de lenguajes', 'compilacion')],
