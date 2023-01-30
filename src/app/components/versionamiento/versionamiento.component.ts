@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
 import { VERSIONAMIENTO } from 'src/app/models/content/content3';
-import { LinkReferencia } from 'src/app/models/linkReferencia';
+import { VERSIONAMIENTO_REF } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-versionamiento',
   templateUrl: './versionamiento.component.html'
 })
-export class VersionamientoComponent extends LinkReferencia {
+export class VersionamientoComponent {
 
   items = VERSIONAMIENTO;
 
-  lengthItems = this.items.length - 1;
+  components = new Map([ ...VERSIONAMIENTO_REF ]);
 
   tittles = new Map<string, string>([
     ['git', 'Gestor de Versiones'],

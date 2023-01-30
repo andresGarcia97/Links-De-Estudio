@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
 import { PRUEBAS_AVANZADAS } from 'src/app/models/content/content2';
-import { LinkReferencia } from 'src/app/models/linkReferencia';
+import { TESTING_ADVANCED } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-pruebas-avanzadas',
   templateUrl: './pruebas-avanzadas.component.html'
 })
-export class PruebasAvanzadasComponent extends LinkReferencia {
+export class PruebasAvanzadasComponent {
 
   items = PRUEBAS_AVANZADAS;
 
-  lengthItems = this.items.length - 1;
+  components = new Map([ ...TESTING_ADVANCED ]);
 
   tittles = new Map<string, string>([
     ['cajaNegraBlanca', 'Caja Negra & Blanca'],

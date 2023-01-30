@@ -1,87 +1,22 @@
-
-import { ContentMain } from './contentMain';
 import { Referencia } from './models';
 
 export class LinkReferencia {
 
-    selection = '';
-    referencia = '';
-    titulo = '';
-
-    content = new ContentMain();
-    items = this.content.temas;
-
-    itemSelected = 0;
-    lengthItems = 0;
-
-    tittles = new Map<string, string>([]);
-
     public components: Map<string, Referencia> = new Map([
-        ...AGILES_REF,               ...CONTAINERS,
-        ...ANALISIS_REF,             ...ARQUITECTURAS_REF,
-        ...BUENAS_PRACTICAS_REF,     ...CALIDAD_REF,
-        ...COMPILACION_REF,           ...CONOCIMIENTO_EMPIRICO,
-        ...ESTRATEGIAS_DESARROLLO_REF,...FRAMEWORKS_REF,     
-        ...GIT_REF,                   ...USER_HISTORIES,
-        ...MALAS_PRACTICAS_REF,       ...META_CARATERISTICAS_REF,
-        ...META_ESTRUCTURAS,         ...METODOLOGIAS,
-        ...NUBE_AND_APIS,            ...OTROS,
-        ...PARADIGMAS,               ...PATRONES,
-        ...PEOPLE,                   ...POO,
-        ...TESTING,                  ...TESTING_ADVANCED,
-        ...REFACTORING,              ...REQUISITOS,
-        ...PRINCIPIOS,               ...SEGURIDAD,
-        ...SMELL_CODES,              ...PERSISTENCY,
-        ...UML,                      ...VERSIONAMIENTO,
-        ...HARDWARE_REF,             ...WEB,
-        ...LEYES_REF
+        ...AGILES_REF,             ...CONTAINERS,              ...ANALISIS_REF,       
+        ...ARQUITECTURAS_REF,      ...BUENAS_PRACTICAS_REF,    ...CALIDAD_REF,
+        ...COMPILACION_REF,        ...CONOCIMIENTO_EMPIRICO,   ...ESTRATEGIAS_DESARROLLO_REF,
+        ...FRAMEWORKS_REF,         ...GIT_REF,                 ...USER_HISTORIES,
+        ...MALAS_PRACTICAS_REF,    ...META_CARATERISTICAS_REF, ...META_ESTRUCTURAS_REF,
+        ...METODOLOGIAS_REF,       ...NUBE_AND_APIS,           ...OTROS_REF,
+        ...PARADIGMAS_REF,         ...PATRONES_REF,            ...PEOPLE,  
+        ...POO_REF,                ...TESTING,                 ...TESTING_ADVANCED,
+        ...REFACTORING,            ...REQUISITOS_REF,          ...PRINCIPIOS_REF,
+        ...SEGURIDAD_REF,          ...SMELL_CODES_REF,         ...PERSISTENCY,
+        ...UML_REF,                ...VERSIONAMIENTO_REF,      ...HARDWARE_REF,
+        ...WEB_REF,                ...LEYES_REF
     ]);
 
-    public getLinkAndTittleByKey(key: string = ''): void {
-        this.selection = key;
-        this.referencia = this.components.get(key)?.referencia || '';
-        this.titulo = this.components.get(key)?.titulo || '';
-        this.itemSelected = this.getIndexItemSelected(this.selection);
-    }
-
-    public getItemByIndex(index: number): void {
-        const key = this.items[index].key;
-        this.getLinkAndTittleByKey(key);
-    }
-
-    public getIndexItemSelected(key: string): number {
-        const item = this.items.filter(x => x.key === key)[0];
-        return this.items.indexOf(item);
-    }
-
-    public getNextElement(): void {
-        const key = this.selection;
-
-        if (key !== '' && this.itemSelected <= this.lengthItems) {
-            this.itemSelected = this.getIndexItemSelected(key) + 1;
-            this.getItemByIndex(this.itemSelected);
-            return;
-        }
-
-        if (key === '' || this.itemSelected === 0) {
-            this.selection = this.items[0].key;
-            this.getItemByIndex(this.itemSelected);
-        }
-    }
-
-    public getBeforeElement(): void {
-        const key = this.selection;
-
-        if (key !== '' && this.itemSelected > 0) {
-            this.itemSelected = this.getIndexItemSelected(key) - 1;
-            this.getItemByIndex(this.itemSelected);
-        }
-
-    }
-    
-    public asIsOrder(_a: any, _b: any) {
-        return 1;
-     }
 }
 
 export const AGILES_REF = new Map<string, Referencia>([
@@ -281,7 +216,7 @@ export const META_CARATERISTICAS_REF = new Map<string, Referencia>([
     ['memoryAndGarbage', new Referencia('https://www.computerworld.com/article/2596992/memory-leaks-and-garbage-collection.amp.html', 'Fugas de memoria y recoleccion de basura', 'caracteristicas')],
 ]);
 
-export const META_ESTRUCTURAS = new Map<string, Referencia>([
+export const META_ESTRUCTURAS_REF = new Map<string, Referencia>([
     ['scope', new Referencia('https://platzi.com/blog/como-funciona-el-scope-en-javascript/', 'Alcance', 'estructura')],
     ['precedencia', new Referencia('https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Operator_Precedence', 'Precedencia y jerarquia de operaciones', 'estructura')],
     ['verticalAndHorizontal', new Referencia('https://xurxodev.com/vertical-scile/', 'Organización de un proyecto', 'estructura')],
@@ -294,7 +229,7 @@ export const META_ESTRUCTURAS = new Map<string, Referencia>([
     ['valueObjects', new Referencia('https://medium.com/all-you-need-is-clean-code/value-objects-d4c24115fa69', 'Value Objects', 'estructura')],
 ]);
 
-export const METODOLOGIAS = new Map<string, Referencia>([
+export const METODOLOGIAS_REF = new Map<string, Referencia>([
     ['agiles', new Referencia('https://www.iebschool.com/blog/que-son-metodologias-agiles-agile-scrum/', '¿ Que son las metodologias agiles ?', 'metodologias')],
     ['scrum', new Referencia('https://www.iebschool.com/blog/metodologia-scrum-agile-scrum/', 'Scrum', 'metodologias')],
     ['kanban', new Referencia('https://www.iebschool.com/blog/metodologia-kanban-agile-scrum/', 'Kanban', 'metodologias')],
@@ -329,7 +264,7 @@ export const NUBE_AND_APIS = new Map<string, Referencia>([
     ['apiStandars', new Referencia('https://medium.com/@trgoodwill/writing-api-design-standards-84cb7cbb3fd7', 'Standares API', 'Nube & APIs')],
 ]);
 
-export const OTROS = new Map<string, Referencia>([
+export const OTROS_REF = new Map<string, Referencia>([
     ['scraping', new Referencia('https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/que-es-el-web-scraping/', 'Web Scrapping', 'otros')],
     ['cdci', new Referencia('https://www.aplyca.com/es/blog/integracion-entrega-continua-ci-cd', 'Integración continua y Entrega Continua', 'otros')],
     ['devops', new Referencia('https://www.paradigmadigital.com/techbiz/que-es-devops-y-sobre-todo-que-no-es-devops/#:~:text=Como%20conclusi%C3%B3n%2C%20qued%C3%A9monos%20con%20una,s%C3%B3lo%20en%20desarrollar%20y%20puedan', 'DevOps', 'otros')],
@@ -341,7 +276,7 @@ export const OTROS = new Map<string, Referencia>([
     ['dataStoring', new Referencia('https://www.striim.com/blog/data-warehouse-vs-data-lake-vs-data-lakehouse-an-overview/', 'Analisis y almacenamiento de datos', 'otros')],
 ]);
 
-export const PARADIGMAS = new Map<string, Referencia>([
+export const PARADIGMAS_REF = new Map<string, Referencia>([
     ['imperativo', new Referencia('https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/paradigmas-de-programacion', 'Paradigmas Imperativo & Declarativo', 'paradigmas')],
     ['funcional', new Referencia('https://codigofacilito.com/articulos/programacion-funcional', 'Paradigma funcional', 'paradigmas')],
     ['scripting', new Referencia('https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/que-son-los-lenguajes-de-scripting/', 'Lenguajes de scripting', 'paradigmas')],
@@ -352,7 +287,7 @@ export const PARADIGMAS = new Map<string, Referencia>([
     ['estructurada', new Referencia('https://bookdown.org/cjtorresj/ple/prog-estruct.html', 'Programación Estructurada', 'paradigmas')],
 ]);
 
-export const PATRONES = new Map<string, Referencia>([
+export const PATRONES_REF = new Map<string, Referencia>([
     ['definicionPatrones', new Referencia('http://www.ecured.cu/Patrones_de_dise%C3%B1o_y_arquitectura', '¿ Que son los patrones ?', 'patrones')],
     ['gof', new Referencia('http://www.cleformacion.com/tic-tek/-/blogs/patrones-gof', 'Gang of Four (GoF)', 'patrones')],
     ['desglosegof', new Referencia('https://refactoring.guru/es/design-patterns/catalog', 'Definciones de cada tipo', 'patrones')],
@@ -379,7 +314,7 @@ export const PEOPLE = new Map<string, Referencia>([
     ['tiposHackers', new Referencia('https://www.freecodecamp.org/news/white-hat-black-hat-red-hat-hackers/', 'Tipos de Hackers (sombreros)', 'personas')],
 ]);
 
-export const POO = new Map<string, Referencia>([
+export const POO_REF = new Map<string, Referencia>([
     ['poo', new Referencia('https://desarrolloweb.com/articulos/499.php', 'Programación Orientada a Objetos', 'POO')],
     ['pooPilares', new Referencia('https://www.campusmvp.es/recursos/post/los-conceptos-fundamentales-sobre-programacion-orientada-objetos-explicados-de-manera-simple.aspx', 'Pilares de POO', 'POO')],
     ['composicion', new Referencia('https://www.seas.es/blog/informatica/agregacion-vs-composicion-en-diagramas-de-clases-uml/', 'Agregación & Composición', 'POO')],
@@ -442,7 +377,7 @@ export const REFACTORING = new Map<string, Referencia>([
     ['cuandoNoRefactorizar', new Referencia('https://www.digite.com/es/agile/refactorizacion-en-agil/#:~:text=%C2%BFQu%C3%A9%20es%20la%20refactorizaci%C3%B3n%3F,el%20comportamiento%20observable%2C%20del%20c%C3%B3digo.', 'Cuando No Refactorizar', 'refactorizacion')],
 ]);
 
-export const REQUISITOS = new Map<string, Referencia>([
+export const REQUISITOS_REF = new Map<string, Referencia>([
     ['funcionales', new Referencia('https://medium.com/@requeridosblog/requerimientos-funcionales-y-no-funcionales-ejemplos-y-tips-aa31cb59b22a', 'Requisitos funcionales', 'requisitos')],
     ['NOfuncionales', new Referencia('https://medium.com/@requeridosblog/requerimientos-funcionales-y-no-funcionales-ejemplos-y-tips-aa31cb59b22a', 'Requisitos No funcionales', 'requisitos')],
     ['negocio', new Referencia('https://requeridos.com/que-es-el-valor-de-negocio-y-como-medirlo/', 'El valor del negocio', 'requisitos')],
@@ -452,7 +387,7 @@ export const REQUISITOS = new Map<string, Referencia>([
     ['objetivos', new Referencia('https://www.pqforce.com/es/blog/objetivos-frente-a-requisitos-cual-es-la-diferencia/', 'Objetivos & Requisitos', 'requisitos')],
 ]);
 
-export const PRINCIPIOS = new Map<string, Referencia>([
+export const PRINCIPIOS_REF = new Map<string, Referencia>([
     ['solid', new Referencia('https://profile.es/blog/principios-solid-desarrollo-software-calidad/', 'Principio SOLID', 'principios')],
     ['kiss', new Referencia('https://manuelzapata.co/principio-kiss-keep-it-simple-stupid/', 'Mantenlo simple, estupido', 'principios')],
     ['yagni', new Referencia('https://www.genbeta.com/desarrollo/la-navaja-de-occam-kiss-y-yagni-la-simplicidad-en-el-codigo-no-deberia-ser-solo-postureo-developer', 'No vas a necesitarlo', 'principios')],
@@ -465,7 +400,7 @@ export const PRINCIPIOS = new Map<string, Referencia>([
     ['divide-conquer', new Referencia('https://betterprogramming.pub/10-design-principles-in-software-engineering-f88647cf5a07', 'Divide y Conquistaras', 'principios')],
 ]);
 
-export const SEGURIDAD = new Map<string, Referencia>([
+export const SEGURIDAD_REF = new Map<string, Referencia>([
     ['firewall', new Referencia('https://idgrup.com/firewall-que-es-y-como-funciona/#:~:text=Un%20firewall%2C%20tambi%C3%A9n%20llamado%20cortafuegos,ordenadores%20de%20una%20misma%20red', 'Firewall', 'seguridad')],
     ['protocolos', new Referencia('https://www.websecurity.digicert.com/es/es/security-topics/what-is-ssl-tls-https', 'SSL, TSL, HTTPS', 'seguridad')],
     ['proxy', new Referencia('https://www.welivesecurity.com/la-es/2020/01/02/que-es-proxy-para-que-sirve/', 'Proxy', 'seguridad')],
@@ -485,7 +420,7 @@ export const SEGURIDAD = new Map<string, Referencia>([
     ['csrf', new Referencia('https://www.welivesecurity.com/la-es/2015/04/21/vulnerabilidad-cross-site-request-forgery-csrf/', 'Cross Site Request Forgery', 'seguridad')],
 ]);
 
-export const SMELL_CODES = new Map<string, Referencia>([
+export const SMELL_CODES_REF = new Map<string, Referencia>([
     ['codesmells', new Referencia('https://openwebinars.net/blog/code-smells-y-deuda-tecnica/', 'Smell Codes', 'smells codes')],
     ['tiposSmellCodes', new Referencia('https://refactoring.guru/es/refactoring/smells', 'Tipos de Smell codes', 'smells codes')],
     ['desglose', new Referencia('https://refactoring.guru/es/refactoring/smells', 'Smell codes por tipo', 'smells codes')],
@@ -514,7 +449,7 @@ export const PERSISTENCY = new Map<string, Referencia>([
     ['sqlVsNosql', new Referencia('https://medium.com/@eugeniomendoza/c%C3%B3mo-saber-si-necesitas-una-base-de-datos-nosql-b6cfd5bb7d9b', 'SQL ó NoSql', 'Bases de datos')],
 ]);
 
-export const UML = new Map<string, Referencia>([
+export const UML_REF = new Map<string, Referencia>([
     ['uml', new Referencia('https://diagramasuml.com/', 'Lenguaje Unificado de Modelado', 'uml')],
     ['clase', new Referencia('https://diagramasuml.com/diagrama-de-clases/', 'Diagrama de clases', 'uml')],
     ['componentes', new Referencia('https://diagramasuml.com/componentes/', 'Diagrama de componentes', 'uml')],
@@ -528,7 +463,7 @@ export const UML = new Map<string, Referencia>([
     ['tiposUml', new Referencia('https://www.microsoft.com/es-co/microsoft-365/business-insights-ideas/resources/guide-to-uml-diagramming-and-database-modeling#:~:text=El%20Lenguaje%20Unificado%20de%20Modelado,de%20un%20sistema%20o%20proceso.', 'Tipos de Diagramas', 'uml')],
 ]);
 
-export const VERSIONAMIENTO = new Map<string, Referencia>([
+export const VERSIONAMIENTO_REF = new Map<string, Referencia>([
     ['git', new Referencia('https://david-estevez.gitbooks.io/the-git-the-bad-and-the-ugly/content/es/control-de-versiones.html', 'Gestores de versiones', 'versionamiento')],
     ['dependencias', new Referencia('https://www.hongkiat.com/blog/manage-dependencies-tools-webdev/', 'Gestores de dependencias', 'versionamiento')],
     ['gradlevsmaven', new Referencia('https://www.chakray.com/es/gradle-vs-maven-definiciones-diferencias/', 'Gradle VS Maven', 'versionamiento')],
@@ -549,7 +484,7 @@ export const HARDWARE_REF = new Map<string, Referencia>([
     ['falseSharing', new Referencia('https://www.easytechjunkie.com/what-is-false-sharing.htm', 'False Sharing', 'Hardware')],
 ]);
 
-export const WEB = new Map<string, Referencia>([
+export const WEB_REF = new Map<string, Referencia>([
     ['spa', new Referencia('https://desarrolloweb.com/articulos/que-es-una-spa.html#:~:text=En%20pocas%20palabras%2C%20SPA%20son,html', 'Single Page Aplication', 'web')],
     ['pwa', new Referencia('https://www.iebschool.com/blog/progressive-web-apps-analitica-usabilidad/', 'Progressive Web App', 'web')],
     ['seo', new Referencia('https://www.40defiebre.com/guia-seo/que-es-seo-por-que-necesito', 'Search Engine Optimization', 'web')],

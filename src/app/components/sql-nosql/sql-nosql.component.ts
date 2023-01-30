@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
 import { BASES_DE_DATOS } from 'src/app/models/content/content1';
-import { LinkReferencia } from 'src/app/models/linkReferencia';
+import { PERSISTENCY } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-sql-nosql',
   templateUrl: './sql-nosql.component.html'
 })
-export class SqlNosqlComponent extends LinkReferencia {
+export class SqlNosqlComponent {
 
   items = BASES_DE_DATOS;
 
-  lengthItems = this.items.length - 1;
+  components = new Map([ ...PERSISTENCY ]);
 
   tittles = new Map<string, string>([
     ['sql', 'SQL'],

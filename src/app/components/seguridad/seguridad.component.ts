@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
 import { SEGURIDAD } from 'src/app/models/content/content3';
-import { LinkReferencia } from 'src/app/models/linkReferencia';
+import { SEGURIDAD_REF } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-seguridad',
   templateUrl: './seguridad.component.html'
 })
-export class SeguridadComponent extends LinkReferencia {
+export class SeguridadComponent {
 
   items = SEGURIDAD;
 
-  lengthItems = this.items.length - 1;
+  components = new Map([ ...SEGURIDAD_REF ]);
 
   tittles = new Map<string, string>([
     ['firewall', 'Firewall'],

@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
 import { PRUEBAS } from 'src/app/models/content/content2';
-import { LinkReferencia } from 'src/app/models/linkReferencia';
+import { TESTING } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-pruebas',
   templateUrl: './pruebas.component.html'
 })
-export class PruebasComponent extends LinkReferencia {
+export class PruebasComponent {
 
   items = PRUEBAS;
 
-  lengthItems = this.items.length - 1;
+  components = new Map([ ...TESTING ]);
 
   tittles = new Map<string, string>([
     ['principios', 'Principios de testing'],

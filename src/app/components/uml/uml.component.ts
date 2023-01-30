@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
 import { UML } from 'src/app/models/content/content3';
-import { LinkReferencia } from 'src/app/models/linkReferencia';
+import { UML_REF } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-uml',
   templateUrl: './uml.component.html'
 })
-export class UmlComponent extends LinkReferencia {
+export class UmlComponent {
 
   items = UML;
 
-  lengthItems = this.items.length - 1;
+  components = new Map([ ...UML_REF ]);
 
   tittles = new Map<string, string>([
     ['uml', '¿ Que es ?'],
