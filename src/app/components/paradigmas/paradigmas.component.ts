@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
 import { PARADIGMAS } from 'src/app/models/content/content1';
-import { LinkReferencia } from 'src/app/models/linkReferencia';
+import { PARADIGMAS_REF } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-paradigmas',
   templateUrl: './paradigmas.component.html'
 })
-export class ParadigmasComponent extends LinkReferencia {
+export class ParadigmasComponent {
 
   items = PARADIGMAS;
 
-  lengthItems = this.items.length - 1;
+  components = new Map([ ...PARADIGMAS_REF ]);
 
   tittles = new Map<string, string>([
     ['imperativo', 'Estilos Programación'],

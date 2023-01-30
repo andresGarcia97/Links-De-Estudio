@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
 import { META_ESTRUCTURAS } from 'src/app/models/content/content1';
-import { LinkReferencia } from 'src/app/models/linkReferencia';
+import { META_ESTRUCTURAS_REF } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-meta-estructura',
   templateUrl: './meta-estructura.component.html'
 })
-export class MetaEstructuraComponent extends LinkReferencia {
+export class MetaEstructuraComponent {
 
   items = META_ESTRUCTURAS;
 
-  lengthItems = this.items.length - 1;
+  components = new Map([ ...META_ESTRUCTURAS_REF ]);
 
   tittles = new Map<string, string>([
     ['scope', 'Scope'],

@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
 import { METODOLOGIAS } from 'src/app/models/content/content2';
-import { LinkReferencia } from 'src/app/models/linkReferencia';
+import { METODOLOGIAS_REF } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-metodologias',
   templateUrl: './metodologias.component.html'
 })
-export class MetodologiasComponent extends LinkReferencia {
+export class MetodologiasComponent {
 
   items = METODOLOGIAS;
 
-  lengthItems = this.items.length - 1;
+  components = new Map([ ...METODOLOGIAS_REF ]);
 
   tittles = new Map<string, string>([
     ['agiles', 'Agiles'],

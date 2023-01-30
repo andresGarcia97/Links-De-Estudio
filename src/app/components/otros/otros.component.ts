@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
 import { OTROS } from 'src/app/models/content/content1';
-import { LinkReferencia } from 'src/app/models/linkReferencia';
+import { OTROS_REF } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-otros',
   templateUrl: './otros.component.html'
 })
-export class OtrosComponent extends LinkReferencia {
+export class OtrosComponent {
 
   items = OTROS;
 
-  lengthItems = this.items.length - 1;
+  components = new Map([ ...OTROS_REF ]);
 
   tittles = new Map<string, string>([
     ['scraping', 'Web Scrapping'],

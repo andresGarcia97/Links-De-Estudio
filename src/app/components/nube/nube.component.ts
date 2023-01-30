@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
 import { NUBE } from 'src/app/models/content/content2';
-import { LinkReferencia } from 'src/app/models/linkReferencia';
+import { NUBE_AND_APIS } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-nube',
   templateUrl: './nube.component.html'
 })
-export class NubeComponent extends LinkReferencia {
+export class NubeComponent {
 
   items = NUBE;
 
-  lengthItems = this.items.length - 1;
+  components = new Map([ ...NUBE_AND_APIS ]);
 
   tittles = new Map<string, string>([
     ['nube', 'Tipos de nube'],

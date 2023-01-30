@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
 import { PATRONES } from 'src/app/models/content/content2';
-import { LinkReferencia } from 'src/app/models/linkReferencia';
+import { PATRONES_REF } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-patrones',
   templateUrl: './patrones.component.html'
 })
-export class PatronesComponent extends LinkReferencia {
+export class PatronesComponent {
 
   items = PATRONES;
 
-  lengthItems = this.items.length - 1;
+  components = new Map([ ...PATRONES_REF ]);
 
   tittles = new Map<string, string>([
     ['definicionPatrones', 'Definición'],

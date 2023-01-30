@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
 import { POO } from 'src/app/models/content/content3';
-import { LinkReferencia } from 'src/app/models/linkReferencia';
+import { POO_REF } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-poo',
   templateUrl: './poo.component.html'
 })
-export class PooComponent extends LinkReferencia {
+export class PooComponent {
 
   items = POO;
 
-  lengthItems = this.items.length - 1;
+  components = new Map([ ...POO_REF ]);
 
   tittles = new Map<string, string>([
     ['poo', 'POO'],

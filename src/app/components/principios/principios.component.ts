@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
 import { PRINCIPIOS } from 'src/app/models/content/content3';
-import { LinkReferencia } from 'src/app/models/linkReferencia';
+import { PRINCIPIOS_REF } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-principios',
   templateUrl: './principios.component.html'
 })
-export class PrincipiosComponent extends LinkReferencia {
+export class PrincipiosComponent {
 
   items = PRINCIPIOS;
 
-  lengthItems = this.items.length - 1;
+  components = new Map([ ...PRINCIPIOS_REF ]);
 
   tittles = new Map<string, string>([
     ['solid', 'SOLID'],
