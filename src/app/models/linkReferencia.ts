@@ -14,7 +14,7 @@ export class LinkReferencia {
         ...REFACTORING,            ...REQUISITOS_REF,          ...PRINCIPIOS_REF,
         ...SEGURIDAD_REF,          ...SMELL_CODES_REF,         ...PERSISTENCY,
         ...UML_REF,                ...VERSIONAMIENTO_REF,      ...HARDWARE_REF,
-        ...WEB_REF,                ...LEYES_REF
+        ...WEB_REF,                ...LEYES_REF,               ...NEURO_MARKETING_REF
     ]);
 
 }
@@ -495,4 +495,8 @@ export const WEB_REF = new Map<string, Referencia>([
     ['experienciasUsuario', new Referencia('https://blog.acantu.com/que-es-ux-y-ui/', 'Experiencia de usuario', 'web')],
     ['gestalt', new Referencia('https://imborrable.com/blog/teoria-de-la-gestalt/', 'Teoria de Gestalt', 'web')],
     ['ssr-csr-ssg-isr', new Referencia('https://medium.com/@prashantramnyc/server-side-rendering-ssr-vs-client-side-rendering-csr-vs-pre-rendering-using-static-site-89f2d05182ef', 'SSR vs CSR vs SSG', 'web')],
+]);
+
+export const NEURO_MARKETING_REF = new Map<string, Referencia>([
+    ['pestel', new Referencia('https://www.simla.com/blog/analisis-pestel', 'Analisis PESTEL', 'neuro-marketing')],
 ]);

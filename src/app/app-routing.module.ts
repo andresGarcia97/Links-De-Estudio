@@ -38,9 +38,11 @@ import { UmlComponent } from './components/uml/uml.component';
 import { VersionamientoComponent } from './components/versionamiento/versionamiento.component';
 import { WebComponent } from './components/web/web.component';
 import { FuentesComponent } from './components/fuentes/fuentes.component';
+import { NeuroMarketingComponent } from './components/neuro-marketing/neuro-marketing.component';
 
 const routes: Routes = [
 
+  { path: 'neuro-marketing', component: NeuroMarketingComponent },
   { path: 'hardware', component: HardwareComponent },
   { path: 'leyes', component: LeyesComponent },
   { path: 'meta-estructuras', component: MetaEstructuraComponent },

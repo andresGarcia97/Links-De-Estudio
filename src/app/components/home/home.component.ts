@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent {
 
-  constructor(public router: Router) { }
+  constructor(private router: Router) { }
 
   public routeTo(component: string): void {
     this.router.navigateByUrl(`/${component}`)

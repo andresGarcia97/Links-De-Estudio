@@ -43,6 +43,7 @@ import { VersionamientoComponent } from './components/versionamiento/versionamie
 import { WebComponent } from './components/web/web.component';
 import { FilterPipe } from './pipes/filter.pipe';
 import { HomeComponent } from './components/home/home.component';
+import { NeuroMarketingComponent } from './components/neuro-marketing/neuro-marketing.component';
 
 @NgModule({
   declarations: [
@@ -85,7 +86,8 @@ import { HomeComponent } from './components/home/home.component';
     HardwareComponent,
     MetaEstructuraComponent,
     LeyesComponent,
-    HomeComponent
+    HomeComponent,
+    NeuroMarketingComponent
   ],
   imports: [
     BrowserModule,
