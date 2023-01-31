@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ContentMain } from 'src/app/models/contentMain';
+import { Router } from '@angular/router';
+import { Content1 } from 'src/app/models/content/content1';
+import { Content2 } from 'src/app/models/content/content2';
+import { Content3 } from 'src/app/models/content/content3';
 import { LinkFuente } from 'src/app/models/linkFuente';
 import { LinkReferencia } from 'src/app/models/linkReferencia';
 import { Item } from 'src/app/models/models';
@@ -10,9 +13,18 @@ import { Item } from 'src/app/models/models';
 })
 export class GlosarioComponent implements OnInit {
 
+  temas1 = new Content1();
+  temas2 = new Content2();
+  temas3 = new Content3();
+
+  temas: Item[] = [];
+
   ngOnInit(): void {
+    this.temas = Array.from(this.temas1.temas).concat(this.temas2.temas).concat(this.temas3.temas);
     console.info("%c Actualmente son: " + this.temas.length + " Temas ", "color:#000; font-size: 16px;background:#FFBA08; font-weight: bold;");
   }
+
+  constructor(private router: Router){}
 
   search = '';
 
@@ -28,8 +40,6 @@ export class GlosarioComponent implements OnInit {
   referencia = '';
   titulo = '';
 
-  content = new ContentMain();
-  temas = this.content.temas;
   item = new Item('', []);
 
   showItem = false;
@@ -68,7 +78,7 @@ export class GlosarioComponent implements OnInit {
   }
 
   public createViewItem(key: string, $view: any): void {
-    const items = this.content.temas.filter((item) => {
+    const items = this.temas.filter((item) => {
       return item.key === key;
     });
     if (items.length === 0) {
@@ -86,6 +96,11 @@ export class GlosarioComponent implements OnInit {
   public searchChanged(): void {
     this.showItem = false;
     this.titulo = '';
+  }
+
+  public goToSection(component: string) {
+    const urlSection = this.linkReferencia.routesAndSections.get(component);
+    this.router.navigateByUrl(`/${urlSection}`);
   }
 
 }
