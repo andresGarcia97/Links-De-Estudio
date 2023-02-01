@@ -17,7 +17,6 @@ jobs:
       run: |
         npm install --save --legacy-peer-deps
         npm install -g @angular/cli
-        npm audit fix --legacy-peer-deps
         ng build --configuration production --buildOptimizer=true
     - name: Firebase Deploy
       run: |
