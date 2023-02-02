@@ -8,7 +8,7 @@ import { LinkReferencia } from 'src/app/models/linkReferencia';
 import { Item } from 'src/app/models/models';
 import Swal from 'sweetalert2';
 
-const colorcrimson = '#dd0031';
+const colorCrimson = '#dd0031';
 const colorNavyBlue = '#1976d2';
 const colorFulvous = '#E8871E';
 const colorCultured = '#eeeeee';
@@ -112,12 +112,11 @@ export class GlosarioComponent implements OnInit {
     
     Swal.fire({
       title: "<h5 style='color:black'>¿ Abandonar la pagina actual ?</h5>",
-      icon: 'question',
       showCancelButton: true,
       confirmButtonColor: colorConfirmButton,
-      cancelButtonColor: colorcrimson,
-      confirmButtonText: 'Si, quiero ir',
-      cancelButtonText: 'No, volver al tema',
+      cancelButtonColor: colorCrimson,
+      confirmButtonText: '¿ Ir a la Sección ?',
+      cancelButtonText: 'Volver al tema',
       background: colorCultured
     }).then((result) => {
       if (result.isConfirmed) {

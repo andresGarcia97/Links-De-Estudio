@@ -11,6 +11,7 @@ export class Content3 {
         ...REFACTORIZACION,
         ...SEGURIDAD,
         ...UML,
+        ...NEURO_MARKETING
     ];
 
 }
