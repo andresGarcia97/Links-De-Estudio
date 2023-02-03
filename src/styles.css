@@ -170,6 +170,11 @@
   border-color: var(--color-navy-blue);
 } 
 
+.oscuro .card.card-small.itemSelected  {
+  color: var(--color-navy-blue);
+  border-color: var(--color-french-sky-blue);
+}
+
 /* fin del modo oscuro */
 
 h1,
@@ -709,6 +714,11 @@ div a.circle-link {
   background-color: var(--color-raisin-black);
   border-color: var(--color-fulvous);
 } 
+
+.card.card-small.itemSelected {
+  color: var(--color-fulvous);
+  border-color: var(--color-orange-yellow-crayola);
+}
 
 @media screen and (min-width: 641px) and (max-width: 920px) {
   .terminal {
