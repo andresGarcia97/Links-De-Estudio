@@ -1279,5 +1279,19 @@ export const NEURO_MARKETING =
                 '- A menudo un producto puede rrecorrer las 4 etapas y de diversas formas, <strong>Ejemplo:</strong>',
                 '- Cuando se lanza al mercado se convierte en una <em>Interrogante</em> que se convierte en una <em>Estrella</em> al crecer,',
                 ' - pero cuando se consolida se convertira en <em>Vaca</em> hasta que se estanque y en el declive se convierta en <em>Perro</em> ',
+            ]),
+        new Item('b2b-b2c',
+            [
+                '<strong> B2B:</strong> Business to Business & <strong>B2C:</strong> Business to Customer</strong>',
+                '- 2 Tecnicas de marketing bastante diferentes, con un publico diferente y estrategias diferentes ',
+                '- B2B: Comercialización de productos y servicios con una empresa o profesional como cliente,',
+                ' - con un enfoque donde bien se sabe el publico al que se dirige, y las relaciones son importantes ',
+                '- B2C: Comercialización de productos y servicios con una persona particular como cliente, ',
+                ' - donde todo se dirige directamente al consumidor y de forma masiva, la primera impresión es muy importante ',
+                '',
+                '<strong> Diferencias:</strong> ',
+                ' - B2C esta enfocado hacia las masas en cambio B2B se enfoca de manera selecta ',
+                ' - Los mensajes en B2C suelen ser directos, claros y sencillos, en B2B describen el valor agregado que pueden aportar ',
+                ' - La logica sigue siendo la misma, vender, lo que cambia es a quien le queremos vender y como se debe hacer ',
             ])
     ];
