@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { APIS, BACK, CURIOSITIES, FRONT, GIT, SECURITY, TESTING, UTILS } from 'src/app/models/linkFuente';
 
 @Component({
   selector: 'app-fuentes',
@@ -6,102 +7,20 @@ import { Component } from '@angular/core';
 })
 export class FuentesComponent {
 
-  front = [
-    'cssRecursos',
-    'coloresAndPaletas',
-    'disenoWebAdaptable',
-    'juegoFlexBox',
-    'htmlEntities',
-    'cargasDeScripts',
-    'keyEvents',
-    'htmlElements',
-    'glassmorphism',
-    'canIuse',
-    'javascriptDataStructures',
-    'canInclude',
-    'cssLayout',
-    'htmlHellHeaven',
-  ];
+  front = [...FRONT.keys()];
 
-  back = [
-    'sqlTutorial',
-    'patronesDisenoJava',
-    'comandosDocker',
-    'paradigmaFuncionaljava',
-    'apisJava',
-    'apisNavegador',
-    'precendenciaJava',
-    'codificacionJava',
-    'eventLoop',
-    'convivenciaArquitecturas',
-    'designPatternsJavascript',
-    'easySql',
-    'orderAndSearch',
-    'LinuxCommands'
-  ];
+  back = [...BACK.keys()];
 
-  utils = [
-    'atributosCalidad',
-    'expresionesRegulares',
-    'javascriptStandars',
-    'algoritms',
-    'devDocs',
-    'cliArt',
-    'bundlephobia',
-    'wizardZines'
-  ];
+  utils = [...UTILS.keys()];
 
-  testing = [
-    'junit',
-    'junitV5',
-    'mockito',
-    'jmeter',
-    'selenium',
-    'sonarRules',
-    'yellowLab'
-  ];
+  testing = [...TESTING.keys()];
 
-  curiosities = [
-    'svgPorn',
-    'benchmarksFront',
-    'roadMapsDevelop',
-    'unicodes',
-    'svgRepo',
-    'carbon',
-    'iconsRepo',
-    'javascriptFrameworks',
-    'roadMapDevelop',
-    'howDnsWork'
-  ];
+  curiosities = [...CURIOSITIES.keys()];
 
-  security = [
-    'noreferrer',
-    'owasp',
-    'web3.0',
-    'permisosUbuntu',
-    'auth0',
-    'https'
-  ];
+  security = [...SECURITY.keys()];
 
-  git = [
-    'comandosGit',
-    'comandosGitFlow',
-    'changeLog',
-    'commitConventions',
-    'shitGit',
-    'aGoodReadme',
-    'madeGitIgnore'
-  ];
+  git = [...GIT.keys()];
 
-  apis = [
-    'primeraApi',
-    'jsonFormat',
-    'rapidapi',
-    'designApis',
-    'overApi',
-    'jsonVisio',
-    'ApiEvangelist',
-    'RapidAPIComics'
-  ];
+  apis = [...APIS.keys()];
 
 }
