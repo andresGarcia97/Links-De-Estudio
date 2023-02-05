@@ -162,6 +162,7 @@ export const LEYES_REF = new Map<string, Referencia>([
     ['hyrum', new Referencia('https://thebootstrappedfounder.com/hyrums-law/', 'Ley de Hyrum', LEYES_KEY)],
     ['leblanc', new Referencia('https://www.quora.com/What-resources-could-I-read-about-Leblancs-law', 'Ley de Leblanc', LEYES_KEY)],
     ['leyesInternet', new Referencia('https://www.bbc.com/mundo/noticias-46102313.amp', 'Conductas en internet', LEYES_KEY)],
+    ['pareto', new Referencia('https://www.becas-santander.com/es/blog/ley-de-pareto.html', 'Ley de Pareto', LEYES_KEY)],
 ]);
 
 const CONTENEDORES_KEY = 'contenedoreres';
@@ -556,4 +557,5 @@ export const WEB_REF = new Map<string, Referencia>([
 const NEURO_MARKETING_KEY = 'neuro-marketing';
 export const NEURO_MARKETING_REF = new Map<string, Referencia>([
     ['pestel', new Referencia('https://www.simla.com/blog/analisis-pestel', 'Analisis PESTEL', NEURO_MARKETING_KEY)],
+    ['matrizBcg', new Referencia('https://emprendepyme.net/tipos-de-productos-segun-la-matriz-bcg-y-ejemplos-reales.html', 'Matriz BCG', NEURO_MARKETING_KEY)],
 ]);

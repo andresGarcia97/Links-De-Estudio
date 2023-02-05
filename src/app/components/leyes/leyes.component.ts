@@ -20,7 +20,8 @@ export class LeyesComponent {
     ['pendulo', 'Ley del pendulo'],
     ['hyrum', 'Ley de Hyrum'],
     ['leblanc', 'Ley de Leblanc´s'],
-    ['leyesInternet', 'Leyes En Internet']
+    ['leyesInternet', 'Leyes En Internet'],
+    ['pareto', 'Ley de Pareto'],
   ]);
 
 }

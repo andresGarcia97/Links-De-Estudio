@@ -14,6 +14,7 @@ export class NeuroMarketingComponent {
 
   tittles = new Map<string, string>([
     ['pestel', 'Analisis PESTEL'],
+    ['matrizBcg', 'Matriz BCG'],
   ]);
 
 }
