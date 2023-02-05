@@ -26,7 +26,7 @@ export class LinkReferencia {
         [FRAMEWORKS_KEY, 'frameworks'],                       [GIT_KEY, 'git'],
         [USER_HISTORIES_KEY, 'historias-de-usuario'],         [MALAS_PRACTICAS_KEY, 'malas-practicas'],
         [CARACTERISTICAS_KEY, 'metacaracteristicas'],         [ESTRUCTURAS_KEY, 'meta-estructuras'],
-        [METODOLOGIAS_KEY, 'metodologias'],                   [NUBE_APIS_KEY, 'Nube & APIs'],
+        [METODOLOGIAS_KEY, 'metodologias'],                   [NUBE_APIS_KEY, 'nube'],
         [OTROS_KEY, 'otros'],                                 [PATRONES_KEY, 'patrones'],
         [PARADIGMAS_KEY, 'paradigmas'],                       [PERSONAS_KEY, 'personas'],
         [POO_KEY, 'poo'],                                     [TESTING_KEY, 'testing'],

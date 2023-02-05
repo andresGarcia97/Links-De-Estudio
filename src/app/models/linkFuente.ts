@@ -51,6 +51,7 @@ export class LinkFuente {
         ['jmeter', { titulo: 'Jmeter', referencia: 'https://www.guru99.com/jmeter-tutorials.html' }],
         ['selenium', { titulo: 'Introducción a selenium', referencia: 'https://www.digital55.com/desarrollo-tecnologia/herramientas-testing-introduccion-selenium/' }],
         ['sonarRules', { titulo: 'Sonar Rules', referencia: 'https://rules.sonarsource.com/' }],
+        ['yellowLab', { titulo: 'Yellow Lab', referencia: 'https://yellowlab.tools/' }],
         // curiosidades
         ['svgPorn', { titulo: 'SVG Porn', referencia: 'https://svgporn.com/' }],
         ['benchmarksFront', { titulo: 'Benchmarks in front', referencia: 'https://github.com/krausest/js-framework-benchmark' }],

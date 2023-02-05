@@ -57,7 +57,8 @@ export class FuentesComponent {
     'mockito',
     'jmeter',
     'selenium',
-    'sonarRules'
+    'sonarRules',
+    'yellowLab'
   ];
 
   curiosities = [
