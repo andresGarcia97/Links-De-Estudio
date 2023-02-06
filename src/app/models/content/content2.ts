@@ -1784,6 +1784,17 @@ export const NUBE =
                 ' - Todo lo anteriormente recopilado es una guia, por lo cual debe ser adaptado de acuerdo a cada nuevo contexto ',
                 ' - Y no se excluye de que este abierto a posibles cambios y mejoras por venir, despues de nuevas iteraciones',
                 ' - Además de que cada tema y subtema a su vez tiene fuentes de profundización, presentes en el articulo original ',
+            ]),
+        new Item('apiGateway',
+            [
+                '- Aunque sean terminos similares, un Api gateway y Balanceador de carga son soluciones diferetes, para muchos problemas similares ',
+                '<strong>- Api Gateway:</strong> Son una capa de filtración para las ya conocidas APIs, permitiendo que los clientes puedan realizar llamados y obtener el recurso ',
+                '<strong>- Balanceador de carga:</strong> Es un sistema para equilibrar todo el trafico de nuestra aplicación, permitiendo que no se sobrecarguen los servidores ',
+                '',
+                '- Una de las principales diferencias radica en que el Api Gateway puede realizar tratamientos a la petición entrante, ',
+                ' - como autenticación, validaciones, formateo, priorización, además de ofuscamiento y funcionar como posible limitador ',
+                '- Por otro lado su contraparte, solo le interesa distribuir el trafico de la red, de manera que ningun nodo o servidor, ',
+                ' - llegue a saturarse mientras que otros no esten realizando ninguna acción, y en algunos casos hasta puede funcionar como firewall ',
             ])
     ];
 

@@ -28,6 +28,7 @@ export class NubeComponent {
     ['dns', 'Servidor DNS'],
     ['HATEOAS', 'HATEOAS'],
     ['apiStandars', 'Standares API'],
+    ['apiGateway', 'Api Gateway'],
   ]);
 
 }

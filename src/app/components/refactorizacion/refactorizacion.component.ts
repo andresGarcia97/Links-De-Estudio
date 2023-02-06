@@ -21,6 +21,7 @@ export class RefactorizacionComponent {
     ['comorefactorizar', '¿ Como ?'],
     ['tecnicasRefactoring', 'Tecnicas'],
     ['cuandoNoRefactorizar', 'Cuando No'],
+    ['refactorLegacyCode', 'Refactor en Legacy code'],
   ]);
 
 }

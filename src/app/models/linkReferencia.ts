@@ -303,6 +303,7 @@ export const NUBE_AND_APIS = new Map<string, Referencia>([
     ['httpCodes', new Referencia('https://developer.mozilla.org/es/docs/Web/HTTP/Status', 'Codigos Http', NUBE_APIS_KEY)],
     ['HATEOAS', new Referencia('https://www.adictosaltrabajo.com/2013/12/02/spring-hateoas/', 'HATEOAS', NUBE_APIS_KEY)],
     ['apiStandars', new Referencia('https://medium.com/@trgoodwill/writing-api-design-standards-84cb7cbb3fd7', 'Standares API', NUBE_APIS_KEY)],
+    ['apiGateway', new Referencia('https://nordicapis.com/whats-the-difference-between-an-api-gateway-and-a-load-balancer/', 'API Gateway', NUBE_APIS_KEY)],
 ]);
 
 const OTROS_KEY = 'otros';
@@ -424,6 +425,7 @@ export const REFACTORING = new Map<string, Referencia>([
     ['comorefactorizar', new Referencia('https://refactoring.guru/es/refactoring/how-to', '¿ Como refactorizar ? ', REFACTORIZACION_KEY)],
     ['tecnicasRefactoring', new Referencia('https://refactoring.guru/es/refactoring/techniques', 'Tecnicas para refactorizar', REFACTORIZACION_KEY)],
     ['cuandoNoRefactorizar', new Referencia('https://www.digite.com/es/agile/refactorizacion-en-agil/#:~:text=%C2%BFQu%C3%A9%20es%20la%20refactorizaci%C3%B3n%3F,el%20comportamiento%20observable%2C%20del%20c%C3%B3digo.', 'Cuando No Refactorizar', REFACTORIZACION_KEY)],
+    ['refactorLegacyCode', new Referencia('https://jesuslc.com/2020/11/21/tecnicas-para-mantener-al-legacy-code-bajo-control/', 'Refactorizar el Legacy Code', REFACTORIZACION_KEY)],
 ]);
 
 const REQUISITOS_KEY = 'requisitos';
