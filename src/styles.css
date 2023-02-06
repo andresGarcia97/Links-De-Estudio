@@ -217,13 +217,10 @@ p {
   text-emphasis-color: var(--color-white);
 }
 
-.toolbar img {
-  margin: 0 16px;
-}
-
 .toolbar #logo {
   height: 40px;
   margin: 0 16px;
+  padding: 0 0 0 0;
   fill: var(--color-selective-yellow);
 }
 
@@ -800,6 +797,14 @@ div a.circle-link {
 
   .spacer {
     display: none;
+  }
+
+  .toolbar #logo {
+    margin: 0 8px;
+  }
+
+  .github-star-badge {
+    margin: 0 14px;
   }
 
 }
