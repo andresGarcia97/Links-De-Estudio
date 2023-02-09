@@ -16,6 +16,8 @@ export class NeuroMarketingComponent {
     ['pestel', 'Analisis PESTEL'],
     ['matrizBcg', 'Matriz BCG'],
     ['b2b-b2c', 'B2B & B2C'],
+    ['eric', 'Matriz ERIC'],
+    ['gamificacionMarketing', 'Gamificacion & Marketing'],
   ]);
 
 }
