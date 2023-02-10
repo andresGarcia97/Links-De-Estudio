@@ -857,6 +857,25 @@ export const CONOCIMIENTOS_EMPIRICOS =
                 '',
                 '- Cualquiera sea la metafora, hay que tener en cuenta que incluso las mejores practicas no son eternas, estas pueden cambiar ',
                 ' - por lo que nuestro codigo tambien debe cambiar con ellas, y nunca dejar de lado la mantenibilidad como una meta constante '
+            ]),
+        new Item('thingsThatAreNotTaught',
+            [
+                '- Aunque son puntos subjetivos provenientes de Autor, estos ejemplifican gran parte de las vivencias que se pueden tener en la ingenieria de software ',
+                '',
+                '- Rara vez se escriben codigos pequeños o desde cero, ya que hay pocos problemas que puedan ser solucionados de manera facil y rapida ',
+                '- No siempre se tiene un lienzo en blanco, en el cual se pueda crear todo una solución, casi siempre habra que mantener o modificar algo que ya existe ',
+                '- Es más importante saber el porque de la codificación, que el como, ya que se sabe que caracteristicas debe tener la solución a grandes rasgos ',
+                '- La documentación es una gran pieza que no tiene el enfasis suficiente, no solo es escribir codigo funcional, tambies es hacerlos de manera clara ',
+                '- Más importante que la solución, es el valor que esta agrega al negocio, no se gana nada con un buen codigo que no resuelve ningun problema ',
+                '- Buenas practicas, Diseño, Principios, y demas cosas se realizan para tener productos escalables y que fallen lo menos posible ',
+                '- El codigo no es estatico, significa que debera ser mantenido por otros y mantendremos al de otros antes, entre más se facilite esto mejor para todos ',
+                '- Trabajar con personas tambien puede significar que puede haber incompetencia, sortearla o afrontarla se vuelve necesario con el tiempo ',
+                '- <em>La unica constante es el cambio</em> "Heraclito" todo puede cambiar, ya sea porque no haya requerimientos correctos o se deba ahondar para obtenerlos ',
+                '- Todo tiene errores, Asi es más facil de entender que por más usado o testeado que algo sea, jamas estara libre de errores ',
+                '- No es un trabajo perfecto, Tendras que hacer cosas que no te agraden, los plazos pueden ser sofocantes, las tecnologias se vuelven obsoletas, etc...',
+                '- Se pediran presupuestos, aun cuando no se puedan dar, y aun con las diversas tecnicas que hay, solo la experiencia lo acerca más a la realidad ',
+                '- No todo es codificar, tambien hay tiempo malgastado en reuniones, pero no todas las reuniones son inutiles, ',
+                ' - la información debe compartirse con los demas involucrados para que las cosas sigan funcionando de manera eficiente ',
             ])
     ];
 

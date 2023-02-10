@@ -149,7 +149,8 @@ export const CONOCIMIENTO_EMPIRICO = new Map<string, Referencia>([
     ['maxwellCurve', new Referencia('https://blog.axosoft.com/the-maxwell-curve-blunder-in-the-name-of-scrum/', 'La curva de Maxwell', CONOCIMIENTO_EMPIRICO_KEY)],
     ['dunningKruger', new Referencia('https://www.awenpsicologia.com/efecto-dunning-kruger/', 'Efecto Dunning-Kruger', CONOCIMIENTO_EMPIRICO_KEY)],
     ['reforzamientoSkinner', new Referencia('https://psicologiaymente.com/psicologia/teoria-reforzamiento-skinner', 'Reforzamiento de conductas', CONOCIMIENTO_EMPIRICO_KEY)],
-    ['pastaTheory', new Referencia('https://www.techtarget.com/searchsoftwarequality/tip/Fix-spaghetti-code-and-other-pasta-theory-antipatterns#:~:text=The%20pasta%20theory%20of%20programming,ravioli%20code%20and%20pizza%20code', 'Teoria de la pasta', CONOCIMIENTO_EMPIRICO_KEY)]
+    ['pastaTheory', new Referencia('https://www.techtarget.com/searchsoftwarequality/tip/Fix-spaghetti-code-and-other-pasta-theory-antipatterns#:~:text=The%20pasta%20theory%20of%20programming,ravioli%20code%20and%20pizza%20code', 'Teoria de la pasta', CONOCIMIENTO_EMPIRICO_KEY)],
+    ['thingsThatAreNotTaught', new Referencia('https://vadimkravcenko.com/shorts/things-they-didnt-teach-you/', 'Cosas que no se enseñan', CONOCIMIENTO_EMPIRICO_KEY)],
 ]);
 
 const LEYES_KEY = 'leyes';

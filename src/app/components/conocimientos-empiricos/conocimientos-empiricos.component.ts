@@ -23,7 +23,8 @@ export class ConocimientosEmpiricosComponent {
     ['maxwellCurve', 'Curva de Maxwell'],
     ['dunningKruger', 'Dunning-Kruger'],
     ['reforzamientoSkinner', 'Reforzamiento'],
-    ['pastaTheory', 'Codigo como pasta']
+    ['pastaTheory', 'Codigo como pasta'],
+    ['thingsThatAreNotTaught', 'Cosas que no se enseñan']
   ]);
 
 }
