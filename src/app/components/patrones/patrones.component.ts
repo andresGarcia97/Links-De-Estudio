@@ -25,6 +25,7 @@ export class PatronesComponent {
     ['patronSaga', 'Patron saga'],
     ['patroncqrs', 'Patron CQRS'],
     ['patronUndoRedo', 'Patron undo-redo'],
+    ['stranglerFig', 'StranglerFig App'],
   ]);
 
 }

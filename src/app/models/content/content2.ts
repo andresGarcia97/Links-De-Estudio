@@ -1820,14 +1820,14 @@ export const PATRONES =
         new Item('definicionPatrones',
             [
                 '- Son soluciones especificas a problemas comunes y los más conocidos son: ',
-                '   GOF -> que se dividen en 3, creacionales, estructurales y de comportamiento ',
-                '   GRASP -> Representan los principios básicos de la asignación de responsabilidades a objetos, en forma de patrones ',
+                '<strong>GOF:</strong> Que se dividen en 3, creacionales, estructurales y de comportamiento ',
+                '<strong>GRASP:</strong> Representan los principios básicos de la asignación de responsabilidades a objetos, en forma de patrones ',
             ]),
         new Item('gof',
             [
-                '- Creacionales -> Se usan para la creación de objetos ya se ocultando o simplificando la creación de estos ',
-                '- Estructurales -> Separan la interfaz de su implementación por medio de la abstracción ',
-                '- Comportamiento -> Definen la comunicación entre objetos, y la independencia de esta de los objetos ',
+                '<strong>- Creacionales:</strong> Se usan para la creación de objetos ya se ocultando o simplificando la creación de estos ',
+                '<strong>- Estructurales:</strong> Separan la interfaz de su implementación por medio de la abstracción ',
+                '<strong>- Comportamiento:</strong> Definen la comunicación entre objetos, y la independencia de esta de los objetos ',
             ]),
         new Item('desglosegof',
             [
@@ -1952,6 +1952,16 @@ export const PATRONES =
                 '',
                 ' - Patrones de codificación(idioms) -> ayudan a implementar aspectos particulares del diseño, ',
                 '  - en un lenguaje especifico'
+            ]),
+        new Item('stranglerFig',
+            [
+                '- Una higuera estranguladora, es una planta peculiar, debido a que su semilla crece desde las ramas de un arbol, hasta que echan raices en el suelo ',
+                '- Durante años van creciendo poco a poco sofocando y matando a su huesped ',
+                '- Una gran metafora a la hora de hablar de migrar y reemplazar sistemas anticuados con otros más actuales ',
+                '- Esto sonaria como simplemente realizar una aplicación que haga exactamente lo mismo, lo cual para nada es simple ',
+                '- Además de que esto involucra nuevas funciones, correciones o incluso mantener los errores ya conocidos ',
+                '- Tambien se ha de tener en cuenta que esto es proceso arduo y constante, con miras de que futuros estrangulamientos se simplifiquen ',
+                '- Mantener ciclos cortos y hacer lanzamientos frecuentes, permite que esta aplicación no solo tome menos, si no que entregue valor más pronto ',
             ])
     ];
 

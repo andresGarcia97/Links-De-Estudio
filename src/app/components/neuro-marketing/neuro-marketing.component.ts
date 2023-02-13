@@ -18,6 +18,7 @@ export class NeuroMarketingComponent {
     ['b2b-b2c', 'B2B & B2C'],
     ['eric', 'Matriz ERIC'],
     ['gamificacionMarketing', 'Gamificacion & Marketing'],
+    ['maslow-barret', 'Maslow & Barret'],
   ]);
 
 }
