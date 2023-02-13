@@ -572,7 +572,7 @@ div a.circle-link {
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 160px;
+  width: 170px;
   background-color: var(--color-black);
   color: var(--color-cultured);
   text-align: center;
@@ -580,7 +580,7 @@ div a.circle-link {
   padding: 8px 0;
   bottom: 100%;
   left: 50%;
-  margin-left: -60px;
+  margin-left: -80px;
   position: absolute;
   z-index: 1;
 }
