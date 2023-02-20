@@ -1367,5 +1367,22 @@ export const NEURO_MARKETING =
                 '<strong> Nivel 5: Cohesion Interna</strong> Despues de haber desarrollado una identidad individual, se buscan valores que envuelvan al grupo de manera colectiva ',
                 '<strong> Nivel 6: Contribución</strong> Aca se focalizan los aportes individuales, de manera que sean utiles para el colectivo y dejen una "huella", un legado ',
                 '<strong> Nivel 7: Servicio</strong> Complementa el Nivel 5 de Maslow como los anteriores, aca se conecta con un proposito mayor, el porque de nuestra existencia ',
+            ]),
+        new Item('cerebroTriurno',
+            [
+                '- El cerebro Triurno responde a una clasificación basada en la evolución del ser humano como especie ',
+                '- Para un enfoque practico y con una mirada educativa, se pueden detallar 3 grandes funcionalidades del cerebro ',
+                '',
+                '<strong>- Cerebro Reptiliano:</strong> Localizado en la parte inferior y trasera del craneo, la más antigua y primitiva ',
+                ' - encargada de las funciones basicas de supervivencia, es pura impulsividad e instinto de conservación, un area con muy pocos cambios ',
+                '<strong>- Sistema Limbico:</strong> Parte exclusiva de los mamiferos, ubicado en la parte central y contiene el hipocampo ',
+                ' - centrado en la memoria y la orientación, además de la amigdala, encargada de controlar las emociones y de repetir/no repetir patrones de conducta ',
+                '<strong>- Neocortex:</strong> Es la base fundamental para el raciocinio, con funciones cognitivas superiores como, ',
+                ' - el pensamiento abstracto, el lenguaje, la planificación, reconocimiento de patrones, etc... ',
+                '',
+                '- Sabiendo esto, es posible mejorar los metodos de educación y aprendizaje enfocandose en diferentes grupos de edad, ',
+                ' - ya que entre más avanzado el Neocortex, algo que se da cerca de los 20 años, hay cosas que no se podran realizar ',
+                '- Para otras areas como el Marketing y los negocios, no solo se debe apelar al intelecto, tambien al lado emocional ',
+                ' - de manera que la atención se centre en los aspectos que queremos estimular para vender nuestros productos, ',
             ])
     ];

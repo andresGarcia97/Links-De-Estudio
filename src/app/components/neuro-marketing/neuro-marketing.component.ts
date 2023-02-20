@@ -19,6 +19,7 @@ export class NeuroMarketingComponent {
     ['eric', 'Matriz ERIC'],
     ['gamificacionMarketing', 'Gamificacion & Marketing'],
     ['maslow-barret', 'Maslow & Barret'],
+    ['cerebroTriurno', 'Cerebro Triurno'],
   ]);
 
 }

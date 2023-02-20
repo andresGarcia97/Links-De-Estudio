@@ -68,6 +68,7 @@ export const ANALISIS_REF = new Map<string, Referencia>([
     ['dataAnalisis', new Referencia('https://tienda.digital/4-tipos-de-analisis-de-datos-para-mejorar-la-toma-de-decisiones/', 'Analisis de datos', ANALISIS_KEY)],
     ['timeComplexityBigO', new Referencia('https://www.freecodecamp.org/news/big-o-cheat-sheet-time-complexity-chart/', 'Big O Notación', ANALISIS_KEY)],
     ['kpis', new Referencia('https://www.ibm.com/garage/method/practices/learn/kpis-measure-guide-progress/', 'KPIs', ANALISIS_KEY)],
+    ['manifiestoReactivo', new Referencia('https://www.reactivemanifesto.org/es', 'Manifiesto Reactivo', ANALISIS_KEY)],
 ]);
 
 const ARQUITECTURAS_KEY = 'arquitecturas';
@@ -567,4 +568,5 @@ export const NEURO_MARKETING_REF = new Map<string, Referencia>([
     ['eric', new Referencia('http://www.azentoconsulting.com/2020/07/21/como-crear-un-nuevo-modelo-de-negocio-o-reformular-nuestro-modelo-de-negocio-ya-existente-la-matriz-eric/', 'Matriz ERIC', NEURO_MARKETING_KEY)],
     ['gamificacionMarketing', new Referencia('https://www.yeeply.com/blog/gamificacion-marketing-estrategias-ejemplos/', 'Gamificacion & Marketing', NEURO_MARKETING_KEY)],
     ['maslow-barret', new Referencia('https://www.danielcolombo.com/los-7-niveles-de-consciencia-personal-y-empresarial-por-daniel-colombo/', 'Maslow & Barret', NEURO_MARKETING_KEY)],
+    ['cerebroTriurno', new Referencia('https://www.educaciontrespuntocero.com/recursos/neuroeducacion-cerebro-triuno/', 'Cerebro Triurno', NEURO_MARKETING_KEY)],
 ]);

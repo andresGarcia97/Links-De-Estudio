@@ -25,6 +25,7 @@ export class AnalisisComponent {
     ['dataAnalisis', 'Analisis de datos'],
     ['timeComplexityBigO', 'Big O Notación'],
     ['kpis', 'KPI'],
+    ['manifiestoReactivo', 'Manifiesto Reactivo'],
   ]);
 
 }
