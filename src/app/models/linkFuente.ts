@@ -42,7 +42,9 @@ export const BACK = new Map([
     ['designPatternsJavascript', { titulo: 'Patrones en Javascript', referencia: 'https://www.freecodecamp.org/news/javascript-design-patterns-explained/' }],
     ['easySql', { titulo: 'Easy SQL', referencia: 'https://www.sql-easy.com/' }],
     ['orderAndSearch', { titulo: 'Busqueda & Ordenacion', referencia: 'https://www.javaguides.net/p/data-structures-and-algorithms-in-java.html' }],
-    ['LinuxCommands', { titulo: 'Comandos de Linux', referencia: 'https://xmind.app/m/WwtB/' }]
+    ['LinuxCommands', { titulo: 'Comandos de Linux', referencia: 'https://xmind.app/m/WwtB/' }],
+    ['sqlAdvanced', { titulo: 'Preguntas SQL Avanzado', referencia: 'https://www.kdnuggets.com/2023/01/top-10-advanced-data-science-sql-interview-questions-must-know-answer.html?utm_source=rss&utm_medium=rss&utm_campaign=top-10-advanced-data-science-sql-interview-questions-you-must-know-how-to-answer' }],
+    ['sqlPractices', { titulo: 'Buenas practicas SQL', referencia: 'https://www.metabase.com/learn/sql-questions/sql-best-practices' }]
 ]);
 
 export const UTILS = new Map([
