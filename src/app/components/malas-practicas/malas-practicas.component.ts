@@ -16,6 +16,7 @@ export class MalasPracticasComponent {
     ['callbackhell', 'Callback Hell'],
     ['contraCalidad', 'Contra la calidad'],
     ['contraGestion', 'Contra la gestion'],
+    ['contraAgilidad', 'Contra la Agilidad'],
   ]);
 
 }

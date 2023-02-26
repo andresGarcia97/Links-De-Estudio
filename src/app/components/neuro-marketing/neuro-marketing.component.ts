@@ -20,6 +20,7 @@ export class NeuroMarketingComponent {
     ['gamificacionMarketing', 'Gamificacion & Marketing'],
     ['maslow-barret', 'Maslow & Barret'],
     ['cerebroTriurno', 'Cerebro Triurno'],
+    ['elementValues', 'Elementos de Valor'],
   ]);
 
 }

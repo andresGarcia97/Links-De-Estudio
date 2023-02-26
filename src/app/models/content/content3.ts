@@ -1384,5 +1384,28 @@ export const NEURO_MARKETING =
                 ' - ya que entre más avanzado el Neocortex, algo que se da cerca de los 20 años, hay cosas que no se podran realizar ',
                 '- Para otras areas como el Marketing y los negocios, no solo se debe apelar al intelecto, tambien al lado emocional ',
                 ' - de manera que la atención se centre en los aspectos que queremos estimular para vender nuestros productos, ',
+            ]),
+        new Item('elementValues',
+            [
+                '- Elementos de Valor, es un desglose de la matriz de Maslow, donde cada escalafon se puede dividir en más necesidades, con diferentes perpectivas ',
+                '',
+                '<strong>Impacto Social</strong>        Autotranscendencia ',
+                '',
+                '<strong>Cambio de vida</strong>     Proporciona Esperanza, Motivación',
+                '                   Autorrealización, Reliquias familiares',
+                '                   Afiliación y pertenencia',
+                '',
+                '<strong>Emocional</strong>       Reductores de ansiedad, Proporciona acceso ',
+                '                Proporciona recompensas, Atractivo ',
+                '                Nostalgia, Diseño y estetica, Valor insignia',
+                '                Bienestar, Valor terapeutico',
+                '                Diversion & entretenimiento',
+                '',
+                '<strong>Funcional</strong>    Ahorra tiempo, Reduce el esfuerzo ',
+                '             Simplifica, Informativo, Variedad, Reduce costos',
+                '             Hace dinero, Reduce el riesgo, Organiza, Integra',
+                '             Atractivo sensorial, Calidad, Evita molestias, Conecta',
+                '',
+                'Para una descripción más detallada y ejemplos de la vida real, puedes ir a la fuente original de <em>Bain & Company</em>'
             ])
     ];
