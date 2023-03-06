@@ -15,6 +15,7 @@ export class MetodologiasComponent {
   tittles = new Map<string, string>([
     ['agiles', 'Agiles'],
     ['scrum', 'SCRUM'],
+    ['scrumPrinciples', 'Principios Scrum'],
     ['kanban', 'Kanban'],
     ['elevator', 'Elevator Pitch'],
     ['canvas', 'Canvas'],

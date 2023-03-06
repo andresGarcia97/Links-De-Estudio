@@ -275,6 +275,7 @@ const METODOLOGIAS_KEY = 'metodologias';
 export const METODOLOGIAS_REF = new Map<string, Referencia>([
     ['agiles', new Referencia('https://www.iebschool.com/blog/que-son-metodologias-agiles-agile-scrum/', '¿ Que son las metodologias agiles ?', METODOLOGIAS_KEY)],
     ['scrum', new Referencia('https://www.iebschool.com/blog/metodologia-scrum-agile-scrum/', 'Scrum', METODOLOGIAS_KEY)],
+    ['scrumPrinciples', new Referencia('https://rootstack.com/es/blog/los-pilares-del-scrum-claves-para-la-gestion-de-procesos#:~:text=juntos%E2%80%9D%2C%20agregaron.-,Estos%20son%20los%20tres%20pilares%20del%20Scrum,%3A%20transparencia%2C%20inspecci%C3%B3n%20y%20adaptaci%C3%B3n', 'Principios Scrum', METODOLOGIAS_KEY)],
     ['kanban', new Referencia('https://www.iebschool.com/blog/metodologia-kanban-agile-scrum/', 'Kanban', METODOLOGIAS_KEY)],
     ['elevator', new Referencia('https://www.iebschool.com/blog/las-claves-para-realizar-un-elevator-pitch-lean-startup/', 'Elevator Pitch', METODOLOGIAS_KEY)],
     ['canvas', new Referencia('https://www.iebschool.com/blog/que-es-el-modelo-canvas-y-como-aplicarlo-a-tu-negocio-agile-scrum/', 'Canvas', METODOLOGIAS_KEY)],
