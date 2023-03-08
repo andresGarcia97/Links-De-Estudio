@@ -21,6 +21,7 @@ export class NeuroMarketingComponent {
     ['maslow-barret', 'Maslow & Barret'],
     ['cerebroTriurno', 'Cerebro Triurno'],
     ['elementValues', 'Elementos de Valor'],
+    ['multi&omniCanal', 'Multi & Omni Canalidad'],
   ]);
 
 }

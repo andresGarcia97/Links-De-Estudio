@@ -1409,5 +1409,16 @@ export const NEURO_MARKETING =
                 '             Atractivo sensorial, Calidad, Evita molestias, Conecta',
                 '',
                 'Para una descripción más detallada y ejemplos de la vida real, puedes ir a la fuente original de <em>Bain & Company</em>'
+            ]),
+        new Item('multi&omniCanal',
+            [
+                '- En una solución hacia los clientes multicanal, el cliente se enfrenta a una experiencia de compra fragmentada, ',
+                ' - con diversas fuentes de interrupciones o cortes, cuando se pasa de un canal a otro ',
+                '',
+                '- Por otra parte la onmicanalidad representa una experiencia diferente, donde hay naturalidad para pasar de un canal a otro, ',
+                ' - sin importar el momento o el lugar ',
+                '',
+                '- La omnicanalidad representa un desafio extra a nivel de tecnologias además del compromiso de todos los empleados ',
+                ' - independientemente del nivel en que se encuentren ',
             ])
     ];

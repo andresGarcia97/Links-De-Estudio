@@ -1230,6 +1230,22 @@ export const WEB =
                 ' - Estos ejecutan el codigo SPA en el momento de la compilación, y generan previamente el HTML en el servidor ',
                 ' - Algunos frameworks como NextJs, Gatsby, NuxtJs, VuePress usan estas estrategias, ',
                 ' - sin de dejar de ofrecer las caracteristicas de React y Vue en los cuales estan basados ',
+            ]),
+        new Item('esqueumorfismo',
+            [
+                '- Es un termino proveniente del griego <em>skeuos</em>, que significa vasija ó herramienta; y <em>morfo</em>, que significa forma ',
+                '- La aplicación más reciente y generalizada esta ligada al primer Iphone, ya que cada icono intentaban evocar a su contraparte fisica ',
+                '- Todo esto buscaba ser amigable con el usuario, además de jugar con el color y las sombras para acercarse aun más ',
+                '',
+                '<strong>- Flat Design:</strong> Con el paso del tiempo, los usuarios nos acostumbramos a usar y hasta diseñar interfaces, ',
+                ' por lo que la necesidad de tener un icono el cual fuera una copia exacta fue perdiendo relevancia en el tiempo ',
+                '- Esto con el fin de tener más relevencia en otras areas como el rendimiento y la funcionalidad ',
+                '- Este tipo de diseño apuesta por iconos más abstractos y simples, de manera que llegan a carecer de colores, sombras y bordes ',
+                '',
+                '<strong>- Diseño neomorfico:</strong> Como el arte mismo, el diseño avanza, y esta evolución no significa que las corrientes mueran ',
+                '- Este diseño se puede considerar una fusión de los 2 estilos anteriores ',
+                '- Se mantienen los iconos realistas sin caer en un exceso de detalles que sobrecarguen la experiencia ',
+                '- A su vez se usan colores mezclas y degradados bastante expresivos, que van más alla de la cotidianidad ',
             ])
     ];
 

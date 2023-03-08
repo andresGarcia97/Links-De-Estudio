@@ -23,6 +23,7 @@ export class WebComponent {
     ['logos', 'Logos'],
     ['gestalt', 'Teoria de Gestalt'],
     ['ssr-csr-ssg-isr', 'SSR vs CSR vs SSG'],
+    ['esqueumorfismo', 'Esqueumorfismo'],
   ]);
 
 }
