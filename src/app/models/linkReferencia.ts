@@ -106,6 +106,7 @@ export const BUENAS_PRACTICAS_REF = new Map<string, Referencia>([
     ['estatico', new Referencia('https://www.welivesecurity.com/la-es/2021/01/18/analisis-estatico-codigo-fuente-orientado-a-seguridad/', 'Analisis de codigo estatico', BUENAS_PRACTICAS_KEY)],
     ['guardClauses', new Referencia('https://artansoft.com/2017/01/guard-clauses-definicion-beneficios/', 'Guard clauses', BUENAS_PRACTICAS_KEY)],
     ['semanticConstructors', new Referencia('https://medium.com/all-you-need-is-clean-code/constructores-sem%C3%A1nticos-ae7ac70b23aa', 'Constructores Semanticos', BUENAS_PRACTICAS_KEY)],
+    ['exceptionGoodPractices', new Referencia('https://javachallengers.com/mistakes-java-developers-make-when-using-exceptions/', 'Manejo de Excepciones', BUENAS_PRACTICAS_KEY)],
 ]);
 
 const CALIDAD_KEY = 'calidad';

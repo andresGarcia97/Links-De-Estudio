@@ -27,6 +27,7 @@ export class BuenasPracticasComponent {
     ['estatico', 'Analisis de codigo'],
     ['guardClauses', 'Guard Clauses'],
     ['semanticConstructors', 'Constructores Semanticos'],
+    ['exceptionGoodPractices', 'Manejo de Excepciones'],
   ]);
 
 }
