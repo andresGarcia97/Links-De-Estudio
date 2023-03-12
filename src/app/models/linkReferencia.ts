@@ -475,8 +475,8 @@ export const SEGURIDAD_REF = new Map<string, Referencia>([
     ['owaspTop', new Referencia('https://owasp.org/Top10/', 'OWASP Top 10', SEGURIDAD_KEY)],
     ['stride', new Referencia('https://www.softwaresecured.com/stride-threat-modeling/', 'STRIDE', SEGURIDAD_KEY)],
     ['ciam', new Referencia('https://auth0.com/blog/why-do-you-need-ciam/', 'CIAM', SEGURIDAD_KEY)],
-    ['lateralChanel', new Referencia('https://auth0.com/blog/why-do-you-need-ciam/', 'Ataques de canal lateral', SEGURIDAD_KEY)],
-    ['csp', new Referencia('https://auth0.com/blog/why-do-you-need-ciam/', 'Content Security Police', SEGURIDAD_KEY)],
+    ['lateralChanel', new Referencia('https://ciberseguridad.com/amenzas/ataque-canal-lateral/', 'Ataques de canal lateral', SEGURIDAD_KEY)],
+    ['csp', new Referencia('https://auth0.com/blog/from-zero-to-hero-with-csp/', 'Content Security Police', SEGURIDAD_KEY)],
     ['csrf', new Referencia('https://www.welivesecurity.com/la-es/2015/04/21/vulnerabilidad-cross-site-request-forgery-csrf/', 'Cross Site Request Forgery', SEGURIDAD_KEY)],
 ]);
 
