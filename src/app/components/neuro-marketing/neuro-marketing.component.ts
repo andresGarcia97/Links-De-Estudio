@@ -22,6 +22,7 @@ export class NeuroMarketingComponent {
     ['cerebroTriurno', 'Cerebro Triurno'],
     ['elementValues', 'Elementos de Valor'],
     ['multi&omniCanal', 'Multi & Omni Canalidad'],
+    ['buyerPersona', 'Buyer Persona'],
   ]);
 
 }
