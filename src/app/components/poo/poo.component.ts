@@ -30,6 +30,7 @@ export class PooComponent {
     ['inmutability', 'Inmutabilidad'],
     ['typesPolimorfismo', 'Tipos de Polimorfismo'],
     ['factoryMethods', 'Factory Methods'],
+    ['interfacesOverInheritance', 'Interfaces VS Herencia'],
   ]);
 
 }

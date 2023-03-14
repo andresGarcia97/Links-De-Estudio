@@ -556,6 +556,25 @@ export const POO =
                 ' - La inmutabilidad puede ser una caracteristica inherente a su uso ',
                 '',
                 '- Estos tambien pueden ser personalizados o venir previamente incluidos en el SDK como la clase <strong>Collections</strong>',
+            ]),
+        new Item('interfacesOverInheritance',
+            [
+                '- La Herencia puede ser malvada, mal manejada principalmente por eso se recomienda un diseño en base a interfaces y abstracciones, ',
+                ' -  en vez de depender de clase concretas que ya cuenten con un codigo base ',
+                '- Alguna vez James Gosling uno de los inventores de Java, dijo antes una sesion de preguntas y respuestas, que no crearia las clases de Java ',
+                '- Esto haciendo referencia que el verdadero problema no son las clases si no la herencia de implementación <em>extends</em>, ',
+                ' - en vez de la herencia de interfaz <em>implements</em> ',
+                '',
+                '- Uno de los problemas es que el uso explicitos de nombres de las clases concretas, encierra implementaciones especificas, ',
+                ' - esto dificulta cambios posteriores ',
+                '- Actualmente con el uso de metodologias agiles, los sistemas se empiezan a desarrollar sin la necesidad de que todo el sistema se especifique ',
+                '- Para que eso sea posible, la flexibilidad debe ser inherente al sistema, para que cada cambio sea más rapido y facil de realizar ',
+                '',
+                '- Esto tambien reduce la confianza indeseable de una parte del programa en otra, o en otras palabras el <em>Acoplamiento</em> ',
+                '- Todo diseño debe intentar reducirlo lo minimo posible sin eliminarlo, ya que significaria que no habria interacción alguna entre el sistema ',
+                '- En la herencia toda clase que herede conoce las acciones de su padre, por lo que si se llegara a cambiar la base, esto afectaria a sus hijos ',
+                ' - de maneras deseadas e indeseadas por igual, si no se tiene cuidado ',
+                '- Si una clase llega a tener la necesidad de anular metodos del padre, debido a un malfuncionamiento, se deberia reconsiderar su uso ',
             ])
     ];
 
