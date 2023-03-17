@@ -5,7 +5,7 @@ import { Item, Referencia } from 'src/app/models/models';
 
 const keypressed$ = fromEvent(document, "keydown")
 
-const porcentaje = keypressed$.pipe(
+const key = keypressed$.pipe(
   map(event => event)
 );
 
@@ -15,17 +15,17 @@ const porcentaje = keypressed$.pipe(
 })
 export class SectionComponent implements OnInit {
 
-  listenArrows: any = porcentaje.subscribe((valor) => {
-    const event = valor as KeyboardEvent;
+  listenArrows: any = key.subscribe((value) => {
+    const event = value as KeyboardEvent;
     const key = event.key;
 
-    if("ArrowRight" === key){
+    if ("ArrowRight" === key) {
       this.getNextElement();
     }
 
-    else if("ArrowLeft" === key){
+    else if ("ArrowLeft" === key) {
       this.getBeforeElement();
-    }   
+    }
   });
 
   @Input() components: Map<string, Referencia> = new Map<string, Referencia>([]);
