@@ -1,9 +1,12 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { fromEvent } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { Item, Referencia } from 'src/app/models/models';
 
-const keypressed$ = fromEvent(document, "keydown")
+const FIREFOX_BROWSER = "firefox";
+
+const keypressed$ = fromEvent(document, "keydown");
 
 const key = keypressed$.pipe(
   map(event => event)
@@ -15,17 +18,26 @@ const key = keypressed$.pipe(
 })
 export class SectionComponent implements OnInit {
 
+  constructor(private router: Router) { }
+
   listenArrows: any = key.subscribe((value) => {
     const event = value as KeyboardEvent;
     const key = event.key;
 
     if ("ArrowRight" === key) {
       this.getNextElement();
+      return;
     }
 
-    else if ("ArrowLeft" === key) {
+    if ("ArrowLeft" === key) {
       this.getBeforeElement();
+      return;
     }
+
+    if ("Escape" === key) {
+      this.router.navigateByUrl("");
+    }
+
   });
 
   @Input() components: Map<string, Referencia> = new Map<string, Referencia>([]);
@@ -37,9 +49,15 @@ export class SectionComponent implements OnInit {
   titulo = '';
   lengthItems = 0;
   itemSelected = 0;
+  iterationBackwards = false;
 
   ngOnInit(): void {
     this.lengthItems = this.items.length - 1;
+
+    const browser = this.detectBrowserName();
+    if (FIREFOX_BROWSER === browser) {
+      this.iterationBackwards = true;
+    }
   }
 
   public getItemByIndex(index: number): void {
@@ -76,6 +94,10 @@ export class SectionComponent implements OnInit {
     return 1;
   }
 
+  public orderReverse(_a: any, _b: any) {
+    return -1;
+  }
+
   public getLinkAndTittleByKey(key: string = ''): void {
     this.selection = key;
     this.referencia = this.components.get(key)?.referencia || '';
@@ -86,6 +108,19 @@ export class SectionComponent implements OnInit {
   public getIndexItemSelected(key: string): number {
     const item = this.items.filter(x => x.key === key)[0];
     return this.items.indexOf(item);
+  }
+
+  // https://morioh.com/p/109202ede724
+  public detectBrowserName() {
+    const agent = window.navigator.userAgent.toLowerCase()
+    switch (true) {
+      case agent.indexOf('chrome') > -1 && !!(<any>window).chrome:
+        return 'chrome';
+      case agent.indexOf('firefox') > -1:
+        return FIREFOX_BROWSER;
+      default:
+        return 'other';
+    }
   }
 
 }

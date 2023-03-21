@@ -32,7 +32,7 @@ export class AppComponent implements OnInit {
   buttonChangueMode = false;
   
   // https://usefulangle.com/post/243/change-browser-address-bar-theme-color-with-html-meta-tag
-  constructor(private meta: Meta, public router: Router) {}
+  constructor(private meta: Meta, private router: Router) {}
   
   ngOnInit(): void {
     const now = new Date();
