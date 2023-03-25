@@ -166,6 +166,7 @@ export const LEYES_REF = new Map<string, Referencia>([
     ['leblanc', new Referencia('https://www.quora.com/What-resources-could-I-read-about-Leblancs-law', 'Ley de Leblanc', LEYES_KEY)],
     ['leyesInternet', new Referencia('https://www.bbc.com/mundo/noticias-46102313.amp', 'Conductas en internet', LEYES_KEY)],
     ['pareto', new Referencia('https://www.becas-santander.com/es/blog/ley-de-pareto.html', 'Ley de Pareto', LEYES_KEY)],
+    ['brooksLaw', new Referencia('https://www.genbeta.com/desarrollo/ley-brooks-desarrollo-software-clasico-profesion-que-habria-hecho-imposible-linux/amp', 'Ley de Brooks', LEYES_KEY)],
 ]);
 
 const CONTENEDORES_KEY = 'contenedoreres';

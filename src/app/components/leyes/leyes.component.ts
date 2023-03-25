@@ -22,6 +22,7 @@ export class LeyesComponent {
     ['leblanc', 'Ley de Leblanc´s'],
     ['leyesInternet', 'Leyes En Internet'],
     ['pareto', 'Ley de Pareto'],
+    ['brooksLaw', 'Ley de Brooks'],
   ]);
 
 }
