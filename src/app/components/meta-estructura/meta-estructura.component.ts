@@ -24,6 +24,7 @@ export class MetaEstructuraComponent {
     ['sistemasComplejos', 'Sistemas Complejos'],
     ['funcionesLambda', 'Funciones lambda'],
     ['valueObjects', 'Value Objects'],
+    ['dynamicProgramming', 'Programacion Dinamica'],
   ]);
 
 }
