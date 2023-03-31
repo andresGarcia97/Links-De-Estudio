@@ -29,6 +29,7 @@ export class NubeComponent {
     ['HATEOAS', 'HATEOAS'],
     ['apiStandars', 'Standares API'],
     ['apiGateway', 'Api Gateway'],
+    ['falaciesDistributedSystems', 'Sistemas Distribuidos']
   ]);
 
 }

@@ -311,6 +311,7 @@ export const NUBE_AND_APIS = new Map<string, Referencia>([
     ['HATEOAS', new Referencia('https://www.adictosaltrabajo.com/2013/12/02/spring-hateoas/', 'HATEOAS', NUBE_APIS_KEY)],
     ['apiStandars', new Referencia('https://medium.com/@trgoodwill/writing-api-design-standards-84cb7cbb3fd7', 'Standares API', NUBE_APIS_KEY)],
     ['apiGateway', new Referencia('https://nordicapis.com/whats-the-difference-between-an-api-gateway-and-a-load-balancer/', 'API Gateway', NUBE_APIS_KEY)],
+    ['falaciesDistributedSystems', new Referencia('https://architecturenotes.co/fallacies-of-distributed-systems/', 'Sistemas Distribuidos', NUBE_APIS_KEY)],
 ]);
 
 const OTROS_KEY = 'otros';
