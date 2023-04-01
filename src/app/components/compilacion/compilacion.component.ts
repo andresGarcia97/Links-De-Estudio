@@ -26,6 +26,7 @@ export class CompilacionComponent {
     ['duckTyping', 'Duck Typing'],
     ['sdkVsApi', 'SDK vs API'],
     ['casting', 'Casteo de Datos'],
+    ['verbosity', 'Verbosidad'],
   ]);
 
 }
