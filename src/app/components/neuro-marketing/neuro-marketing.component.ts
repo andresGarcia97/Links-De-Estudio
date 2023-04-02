@@ -23,6 +23,7 @@ export class NeuroMarketingComponent {
     ['elementValues', 'Elementos de Valor'],
     ['multi&omniCanal', 'Multi & Omni Canalidad'],
     ['buyerPersona', 'Buyer Persona'],
+    ['neuroMarketing', 'Neuro Marketing'],
   ]);
 
 }

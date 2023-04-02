@@ -581,4 +581,5 @@ export const NEURO_MARKETING_REF = new Map<string, Referencia>([
     ['elementValues', new Referencia('https://media.bain.com/elements-of-value/#', 'Elementos de Valor', NEURO_MARKETING_KEY)],
     ['multi&omniCanal', new Referencia('https://www.chakray.com/es/omnicanal-vs-multicanal-cual-es-la-diferencia/#:~:text=En%20una%20soluci%C3%B3n%20multicanal%2C%20el,marca%20de%20una%20manera%20interrumpida', 'Multi & Omni Canalidad', NEURO_MARKETING_KEY)],
     ['buyerPersona', new Referencia('https://es.semrush.com/blog/como-crear-un-buyer-persona/?kw=&cmp=LM_SRCH_DSA_Blog_ES&label=dsa_pagefeed&Network=g&Device=c&utm_content=641222119375&kwid=dsa-1928812725813&cmpid=19249322807&agpid=145221538700&BU=Core&extid=64565394235&adpos=&gclid=Cj0KCQiAlKmeBhCkARIsAHy7WVvUenuKUoH2ntk2Zr4z9trooaHAHZNblouOpPsYpQ864mIN1GSotFUaAjuiEALw_wcB', 'Buyer Persona', NEURO_MARKETING_KEY)],
+    ['neuroMarketing', new Referencia('https://rockcontent.com/es/blog/neuromarketing/', 'Neuro Marketing', NEURO_MARKETING_KEY)],
 ]);
