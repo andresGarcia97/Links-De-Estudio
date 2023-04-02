@@ -1,2 +1,4 @@
+# start of file
 User-agent: *
 Disallow:
+sitemap: https://contenidoderepaso.web.app/sitemap.xml
