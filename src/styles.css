@@ -130,12 +130,20 @@
   fill: var(--color-fulvous);
 }
 
-.oscuro input {
+.oscuro .search {
   border-color: var(--color-navy-blue);
 }
 
-.oscuro input:focus {
+.oscuro .search:focus {
   border-color: var(--color-fulvous);
+}
+
+.oscuro .close-glosary svg:hover {
+  fill: var(--color-crimson);
+}
+
+.oscuro .close-glosary {
+  background-color: var(--color-jet);
 }
 
 .oscuro .glass-efect {
@@ -375,17 +383,48 @@ a:hover {
   color: var(--color-black);
 }
 
-input {
+/* https://github.com/atherosai/ui/blob/main/pages/input-search.tsx */
+.search {
   outline: none;
-  border-radius: 5px;
+  border-radius: 20px;
   border-style: solid;
+  padding: 10px;
+  width: 15px;
+  height: 15px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 25 25' %3E%3Cpath d='M16.036 18.455l2.404-2.405 5.586 5.587-2.404 2.404zM8.5 2C12.1 2 15 4.9 15 8.5S12.1 15 8.5 15 2 12.1 2 8.5 4.9 2 8.5 2zm0-2C3.8 0 0 3.8 0 8.5S3.8 17 8.5 17 17 13.2 17 8.5 13.2 0 8.5 0zM15 16a1 1 0 1 1 2 0 1 1 0 1 1-2 0'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-color: var(--color-cultured);
   border-color: var(--color-selective-yellow);
-  height: 28px;
-  padding-left: 3px;
+  background-size: 22px;
+  background-position: 45% 50%;
+  overflow: hidden;
+  transition-duration: 500ms;
+  cursor: pointer;
 }
 
-input:focus {
+.search:focus {
+  width: 200px;
+  cursor: pointer;
+  padding-left: 40px;
+  outline: none;
+  background-position: 10px 50%;
   border-color: var(--color-crimson);
+}
+
+.close-glosary {
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  margin: 0 0 0 8px;
+  background-color: var(--color-cultured);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.close-glosary svg:hover {
+  fill: var(--color-crimson);
 }
 
 .terminal {
@@ -805,6 +844,10 @@ div a.circle-link {
 
   .github-star-badge {
     margin: 0 14px;
+  }
+
+  .search:focus {
+    width: 160px;
   }
 
 }

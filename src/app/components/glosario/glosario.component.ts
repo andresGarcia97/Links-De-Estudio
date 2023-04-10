@@ -30,7 +30,7 @@ export class GlosarioComponent implements OnInit {
     console.info("%c Actualmente son: " + this.temas.length + " Temas ", "color:#000; font-size: 16px;background:#FFBA08; font-weight: bold;");
   }
 
-  constructor(private router: Router){}
+  constructor(private router: Router) { }
 
   search = '';
 
@@ -104,12 +104,16 @@ export class GlosarioComponent implements OnInit {
     this.titulo = '';
   }
 
-  public goToSection(component: string, $view: any) {
-
+  private getColorButton(): string {
     const body = document.body;
     const isDarkModeActive = body.classList.contains('oscuro');
-    const colorConfirmButton = isDarkModeActive ? colorNavyBlue : colorFulvous;
-    
+    return isDarkModeActive ? colorNavyBlue : colorFulvous;
+  }
+
+  public goToSection(component: string, $view: any) {
+
+    const colorConfirmButton = this.getColorButton();
+
     Swal.fire({
       title: "<h5 style='color:black'>¿ Abandonar la pagina actual ?</h5>",
       showCancelButton: true,
@@ -123,13 +127,42 @@ export class GlosarioComponent implements OnInit {
         const urlSection = this.linkReferencia.routesAndSections.get(component);
         this.router.navigateByUrl(`/${urlSection}`);
       }
-      else{
+      else {
         setTimeout(() => {
-          this.scrollToView($view);          
+          this.scrollToView($view);
         }, 650);
       }
     })
 
+  }
+
+  public cleanSearch(): void {
+
+    const colorConfirmButton = this.getColorButton();
+    const message = this.titulo === ''
+      ? `<h5 style='color:black'>Ultima busqueda: <em>${this.search}</em></h5>`
+      : `<h5 style='color:black'>Ultimo tema: <em>${this.titulo}</em></h5>`;
+
+    let timerInterval: any;
+    Swal.fire({
+      confirmButtonColor: colorConfirmButton,
+      title: message,
+      timer: 2000,
+      timerProgressBar: true,
+      background: colorCultured,
+      willClose: () => {
+        clearInterval(timerInterval)
+      }
+    }).then((result) => {
+      /* Read more about handling dismissals below */
+      if (result.dismiss === Swal.DismissReason.timer) {
+        console.log('I was closed by the timer')
+      }
+    })
+
+    this.showItem = false;
+    this.titulo = '';
+    this.search = '';
   }
 
 }
