@@ -96,6 +96,7 @@ export class GlosarioComponent implements OnInit {
       this.item = new Item(items[0].key, items[0].content);
       this.showItem = true;
       this.scrollToView($view);
+      this.search = '';
     }
   }
 
@@ -115,11 +116,13 @@ export class GlosarioComponent implements OnInit {
     const colorConfirmButton = this.getColorButton();
 
     Swal.fire({
-      title: "<h5 style='color:black'>¿ Abandonar la pagina actual ?</h5>",
+      title: `<h5 style='color:black'>¿ Deseas ir a la sección de: <em>${component.toUpperCase()}</em> ?</h5>`,
       showCancelButton: true,
       confirmButtonColor: colorConfirmButton,
       cancelButtonColor: colorCrimson,
-      confirmButtonText: '¿ Ir a la Sección ?',
+      confirmButtonText: 'Ir',
+      icon: 'question',
+      iconColor: colorConfirmButton,
       cancelButtonText: 'Volver al tema',
       background: colorCultured
     }).then((result) => {
@@ -140,8 +143,8 @@ export class GlosarioComponent implements OnInit {
 
     const colorConfirmButton = this.getColorButton();
     const message = this.titulo === ''
-      ? `<h5 style='color:black'>Ultima busqueda: <em>${this.search}</em></h5>`
-      : `<h5 style='color:black'>Ultimo tema: <em>${this.titulo}</em></h5>`;
+      ? `<h5 style='color:black'>Ultima busqueda: <em>${this.search.toUpperCase()}</em></h5>`
+      : `<h5 style='color:black'>Ultimo tema: <em>${this.titulo.toUpperCase()}</em></h5>`;
 
     let timerInterval: any;
     Swal.fire({
@@ -149,6 +152,9 @@ export class GlosarioComponent implements OnInit {
       title: message,
       timer: 2000,
       timerProgressBar: true,
+      icon: 'info',
+      showConfirmButton: false,
+      iconColor: colorConfirmButton,
       background: colorCultured,
       willClose: () => {
         clearInterval(timerInterval)

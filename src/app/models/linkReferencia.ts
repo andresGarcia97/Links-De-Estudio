@@ -170,7 +170,7 @@ export const LEYES_REF = new Map<string, Referencia>([
     ['brooksLaw', new Referencia('https://www.genbeta.com/desarrollo/ley-brooks-desarrollo-software-clasico-profesion-que-habria-hecho-imposible-linux/amp', 'Ley de Brooks', LEYES_KEY)],
 ]);
 
-const CONTENEDORES_KEY = 'contenedoreres';
+const CONTENEDORES_KEY = 'contenedores';
 export const CONTAINERS = new Map<string, Referencia>([
     ['lxc', new Referencia('https://www.section.io/engineering-education/lxc-vs-docker-what-is-the-difference-and-why-docker-is-better/', 'Linux Containers', CONTENEDORES_KEY)],
     ['docker', new Referencia('https://www.xataka.com/otros/docker-a-kubernetes-entendiendo-que-contenedores-que-mayores-revoluciones-industria-desarrollo', '¿ Que es Docker ?', CONTENEDORES_KEY)],
