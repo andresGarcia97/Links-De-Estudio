@@ -96,7 +96,6 @@ export class GlosarioComponent implements OnInit {
       this.item = new Item(items[0].key, items[0].content);
       this.showItem = true;
       this.scrollToView($view);
-      this.search = '';
     }
   }
 
@@ -140,32 +139,6 @@ export class GlosarioComponent implements OnInit {
   }
 
   public cleanSearch(): void {
-
-    const colorConfirmButton = this.getColorButton();
-    const message = this.titulo === ''
-      ? `<h5 style='color:black'>Ultima busqueda: <em>${this.search.toUpperCase()}</em></h5>`
-      : `<h5 style='color:black'>Ultimo tema: <em>${this.titulo.toUpperCase()}</em></h5>`;
-
-    let timerInterval: any;
-    Swal.fire({
-      confirmButtonColor: colorConfirmButton,
-      title: message,
-      timer: 2000,
-      timerProgressBar: true,
-      icon: 'info',
-      showConfirmButton: false,
-      iconColor: colorConfirmButton,
-      background: colorCultured,
-      willClose: () => {
-        clearInterval(timerInterval)
-      }
-    }).then((result) => {
-      /* Read more about handling dismissals below */
-      if (result.dismiss === Swal.DismissReason.timer) {
-        console.log('I was closed by the timer')
-      }
-    })
-
     this.showItem = false;
     this.titulo = '';
     this.search = '';
