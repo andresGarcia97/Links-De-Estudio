@@ -17,6 +17,7 @@ export class MalasPracticasComponent {
     ['contraCalidad', 'Contra la calidad'],
     ['contraGestion', 'Contra la gestion'],
     ['contraAgilidad', 'Contra la Agilidad'],
+    ['malasPracticasSCRUM', 'Contra SCRUM'],
   ]);
 
 }

@@ -3,18 +3,18 @@ import { Referencia } from './models';
 export class LinkReferencia {
 
     public components: Map<string, Referencia> = new Map([
-        ...AGILES_REF,             ...CONTAINERS,              ...ANALISIS_REF,       
-        ...ARQUITECTURAS_REF,      ...BUENAS_PRACTICAS_REF,    ...CALIDAD_REF,
-        ...COMPILACION_REF,        ...CONOCIMIENTO_EMPIRICO,   ...ESTRATEGIAS_DESARROLLO_REF,
-        ...FRAMEWORKS_REF,         ...GIT_REF,                 ...USER_HISTORIES,
-        ...MALAS_PRACTICAS_REF,    ...META_CARATERISTICAS_REF, ...META_ESTRUCTURAS_REF,
-        ...METODOLOGIAS_REF,       ...NUBE_AND_APIS,           ...OTROS_REF,
-        ...PARADIGMAS_REF,         ...PATRONES_REF,            ...PEOPLE,  
-        ...POO_REF,                ...TESTING,                 ...TESTING_ADVANCED,
-        ...REFACTORING,            ...REQUISITOS_REF,          ...PRINCIPIOS_REF,
-        ...SEGURIDAD_REF,          ...SMELL_CODES_REF,         ...PERSISTENCY,
-        ...UML_REF,                ...VERSIONAMIENTO_REF,      ...HARDWARE_REF,
-        ...WEB_REF,                ...LEYES_REF,               ...NEURO_MARKETING_REF
+        ...AGILES_REF,           ...CONTAINERS,               ...ANALISIS_REF,       
+        ...ARQUITECTURAS_REF,    ...BUENAS_PRACTICAS_REF,     ...CALIDAD_REF,
+        ...COMPILACION_REF,      ...CONOCIMIENTO_EMPIRICO,    ...ESTRATEGIAS_DESARROLLO_REF,
+        ...FRAMEWORKS_REF,       ...GIT_REF,                  ...USER_HISTORIES,
+        ...MALAS_PRACTICAS_REF,  ...META_CARATERISTICAS_REF,  ...META_ESTRUCTURAS_REF,
+        ...METODOLOGIAS_REF,     ...NUBE_AND_APIS,            ...OTROS_REF,
+        ...PARADIGMAS_REF,       ...PATRONES_REF,             ...PEOPLE,  
+        ...POO_REF,              ...TESTING,                  ...TESTING_ADVANCED,
+        ...REFACTORING,          ...REQUISITOS_REF,           ...PRINCIPIOS_REF,
+        ...SEGURIDAD_REF,        ...SMELL_CODES_REF,          ...PERSISTENCY,
+        ...UML_REF,              ...VERSIONAMIENTO_REF,       ...HARDWARE_REF,
+        ...WEB_REF,              ...LEYES_REF,                ...NEURO_MARKETING_REF
     ]);
 
     public routesAndSections: Map<string, string> = new Map([
@@ -49,6 +49,7 @@ export const AGILES_REF = new Map<string, Referencia>([
     ['muda#1', new Referencia('https://samuelcasanova.com/2014/03/los-7-desperdicios-del-desarrollo-de-software-i/', 'Muda en el software, parte #1', AGILES_KEY)],
     ['muda#2', new Referencia('https://samuelcasanova.com/2014/03/los-7-desperdicios-del-desarrollo-de-software-y-ii/', 'Muda en el software, parte #2', AGILES_KEY)],
     ['planningPoker', new Referencia('https://samuelcasanova.com/2016/01/estimacion-agil-con-la-tecnica-planning-poker/', 'Planning Poker y la estimación agil', AGILES_KEY)],
+    ['manifestAgil', new Referencia('https://agilemanifesto.org/iso/es/manifesto.html', 'Manifiesto Agil', AGILES_KEY)],
     ['principlesAgile', new Referencia('https://www.agilealliance.org/agile101/12-principles-behind-the-agile-manifesto/', 'Principios del agilismo', AGILES_KEY)],
     ['spike', new Referencia('https://samuelcasanova.com/2021/09/spike-que-es/', 'Spike', AGILES_KEY)],
     ['deming', new Referencia('https://www.beetrack.com/es/blog/ciclo-de-deming-etapas-ejemplos', 'Ciclo de Deming', AGILES_KEY)],
@@ -227,7 +228,6 @@ export const USER_HISTORIES = new Map<string, Referencia>([
     ['smart', new Referencia('https://beagilemyfriend.com/historias-de-usuario-invest-smart/', 'Criterio SMART', USER_HISTORIES_KEY)],
     ['3c', new Referencia('https://julibetancur.blog/tag/tres-c/', 'Card-Conversación-Confirmación', USER_HISTORIES_KEY)],
     ['gherkin', new Referencia('https://blog.thiga.co/es/gherkin/', 'Definición de los criterios de aceptación', USER_HISTORIES_KEY)],
-    ['agil', new Referencia('https://agilemanifesto.org/iso/es/manifesto.html', 'Manifiesto Agil', USER_HISTORIES_KEY)],
     ['descomposicionHU', new Referencia('https://www.javiergarzas.com/2012/05/descomponer-historias-de-usuario-en-tareas-1.html', 'Descomposición en tareas', USER_HISTORIES_KEY)],
     ['storyPoints', new Referencia('https://ronjeffries.com/articles/019-01ff/story-points/Index.html', 'Puntos de Historia', USER_HISTORIES_KEY)],
 ]);
@@ -238,6 +238,7 @@ export const MALAS_PRACTICAS_REF = new Map<string, Referencia>([
     ['contraCalidad', new Referencia('https://softgrade.mx/5-causas-afectan-la-calidad-software/', 'En contra de la calidad', MALAS_PRACTICAS_KEY)],
     ['contraGestion', new Referencia('https://blog.gft.com/es/2016/01/20/las-10-malas-practicas-mas-comunes-en-la-gestion-de-proyectos/', 'En contra de la gestión', MALAS_PRACTICAS_KEY)],
     ['contraAgilidad', new Referencia('https://giovannycifuentes.com/los-6-antipatrones-en-la-adopcion-de-agilidad-que-los-lideres-deberian-conocer/', 'En contra de las agiles', MALAS_PRACTICAS_KEY)],
+    ['malasPracticasSCRUM', new Referencia('https://blog.palo-it.com/es/antipatrones-comunes-en-scrum#:~:text=Los%20antipatrones%20ocurren%20cuando%20creemos,y%20parecen%20parte%20del%20sistema', 'Malas practicas en SCRUM', MALAS_PRACTICAS_KEY)],
 ]);
 
 const CARACTERISTICAS_KEY = 'metacaracteristicas';

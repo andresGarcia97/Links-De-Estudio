@@ -126,6 +126,16 @@ export const AGILES =
                 '  - si no vuelve a haber concenso se podra realizar un promedio o escoger un extremo ',
                 ' - se repite el proceso hasta completar todas las HU ',
             ]),
+        new Item('manifestAgil',
+            [
+                '- Nace con el proposito de reformar el desarrollo de software para hacerlo más eficiente y eficaz ',
+                '- Son 4 principios que toda metodologia agil lleva a cabo para mejorar el desarrollo ',
+                '',
+                ' - Individuos e interacciones <strong>sobre</strong> procesos y herramientas ',
+                ' - Software funcionando <strong>sobre</strong> documentación extensiva ',
+                ' - Colaboración con el cliente <strong>sobre</strong> negociación contractual ',
+                ' - Respuesta ante el cambio <strong>sobre</strong> seguir un plan ',
+            ]),
         new Item('principlesAgile',
             [
                 ' 1 - La maxima prioridad es satisfacer al cliente mediante la entrega temprana y continua de software de valor ',

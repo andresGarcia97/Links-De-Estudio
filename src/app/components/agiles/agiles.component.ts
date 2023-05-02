@@ -20,6 +20,7 @@ export class AgilesComponent {
     ['muda#1', 'Muda #1'],
     ['muda#2', 'Muda #2'],
     ['planningPoker', 'Planning Poker'],
+    ['manifestAgil', 'Manifiesto Agil'],
     ['principlesAgile', 'Principios'],
     ['spike', 'Spike'],
     ['deming', 'Ciclo de Deming'],

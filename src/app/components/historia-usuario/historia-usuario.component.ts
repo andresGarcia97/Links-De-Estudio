@@ -21,7 +21,6 @@ export class HistoriaUsuarioComponent {
     ['3c', 'Las 3 C'],
     ['gherkin', 'Gherkin'],
     ['descomposicionHU', 'Descomposición'],
-    ['agil', 'Manifiesto Agil'],
     ['storyPoints', 'Puntos'],
   ]);
 
