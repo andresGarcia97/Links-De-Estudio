@@ -230,6 +230,7 @@ export const USER_HISTORIES = new Map<string, Referencia>([
     ['gherkin', new Referencia('https://blog.thiga.co/es/gherkin/', 'Definición de los criterios de aceptación', USER_HISTORIES_KEY)],
     ['descomposicionHU', new Referencia('https://www.javiergarzas.com/2012/05/descomponer-historias-de-usuario-en-tareas-1.html', 'Descomposición en tareas', USER_HISTORIES_KEY)],
     ['storyPoints', new Referencia('https://ronjeffries.com/articles/019-01ff/story-points/Index.html', 'Puntos de Historia', USER_HISTORIES_KEY)],
+    ['casosVsRequisitosVsHu', new Referencia('http://www.angellozano.com/requisitos-del-sistema-vs-casos-uso-vs-historias-usuario/', 'HU Vs Casos de uso', USER_HISTORIES_KEY)],
 ]);
 
 const MALAS_PRACTICAS_KEY = 'malas-practicas';

@@ -22,6 +22,7 @@ export class HistoriaUsuarioComponent {
     ['gherkin', 'Gherkin'],
     ['descomposicionHU', 'Descomposición'],
     ['storyPoints', 'Puntos'],
+    ['casosVsRequisitosVsHu', 'Hu Vs Casos de Uso']
   ]);
 
 }
