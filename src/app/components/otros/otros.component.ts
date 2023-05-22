@@ -21,7 +21,8 @@ export class OtrosComponent {
     ['ingenieriaInversa', 'Ingenieria Inversa'],
     ['dsl', 'DSL'],
     ['reglasInferencia', 'Reglas de Inferencia'],
-    ['dataStoring', 'Almacenamiento de datos']
+    ['dataStoring', 'Almacenamiento de datos'],
+    ['iascode', 'Infraestructura & Codigo']
   ]);
 
 }

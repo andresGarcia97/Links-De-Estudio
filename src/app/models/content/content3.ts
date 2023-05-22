@@ -1490,5 +1490,19 @@ export const NEURO_MARKETING =
                 '<strong> - Repite ideas y conceptos estrategicamente</strong> "La repetición es la madre de la retención", Esto hace los mensajes más poderosos y persuasivos ',
                 '<strong> - El diseño:</strong> Todo diseño que involucre a tu empresa, debe ser impecable y tener una razon de ser, acorde a tu negocio ',
                 '<strong> - Ofrece pocas opciones de elección:</strong> No solo es saber que hacer, tambien es que evitar, por eso se dice que <em>"menos es más"</em>',
+            ]),
+        new Item('semanticaPragmatica',
+            [
+                '<strong>- Semiosis:</strong> Se puede entender como el proceso o influencia, que suponga una colaboración entre 3 partes, como puede ser, ',
+                ' - un signo, su objeto y el interprete, ampliando el concepto a algo mas que simples sujetos humanos, de ahi que se puedan distinguir 3 dimensiones: ',
+                '',
+                '<strong>- Dimensión Sintactica:</strong> <em>Es el estudio de las relaciones de los signos entre si</em>, Asi el orden de los signos incide, en el proceso de interpretación ',
+                ' - por lo que al elaborar cualquier mensaje, permite inferir que solo su orden lograria o afectaria la interpretación ',
+                '',
+                '<strong>- Dimensión Semantica:</strong> <em>Es el estudio de los signos y sus posibles denotaciones</em>, Asi se diferencia de la sintaxis ya que aca se determina, ',
+                ' - en que condiciones un signo es aplicable a algun objeto o situación, referenciando al significado de los signos ordenados de manera especifica ',
+                '',
+                '<strong>- Dimesión Pragmatica:</strong> <em>Es la relación de los signos con sus interpretes</em>, Esto supone una complejidad extra y que es relativa, ',
+                ' - para cada emisor y su respectivo interprete, ya que no necesariamente todo mensaje tenga el mismo significado, para ambas partes ',
             ])
     ];

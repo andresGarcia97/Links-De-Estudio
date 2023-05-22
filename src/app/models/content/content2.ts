@@ -1686,8 +1686,7 @@ export const NUBE =
             ]),
         new Item('iaas-paas-saas',
             [
-                '- Estos 3 modelos de servicios actualmente ayudan a las empresas a ahorrar costos, ',
-                ' - tanto en software como en hardware, además de multiples ventajas ',
+                '- Estos 3 modelos de servicios actualmente ayudan a las empresas a ahorrar costos, en software y hardware, además de multiples ventajas ',
                 '',
                 '<strong>- IaaS:</strong> Infraestructura como servicio, aca todo la infraestructura necesaria se contrata con un tercero, a cambio de una cuota o un alquiler, ',
                 ' - esto es muy conveniente ya que se compra lo que se necesita; algunos de los más conocidos son Amazon Web Services Y Microsoft Azure ',

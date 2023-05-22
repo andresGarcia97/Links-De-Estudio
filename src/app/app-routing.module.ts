@@ -73,7 +73,7 @@ const routes: Routes = [
   { path: 'refactorizacion', component: RefactorizacionComponent },
   { path: 'patrones', component: PatronesComponent },
   { path: 'paradigmas', component: ParadigmasComponent },
-  { path: 'otros-temas', component: OtrosComponent },
+  { path: 'otros', component: OtrosComponent },
   { path: 'metodologias', component: MetodologiasComponent },
   { path: 'malas-practicas', component: MalasPracticasComponent },
   { path: 'frameworks', component: FrameworksComponent },

@@ -328,6 +328,7 @@ export const OTROS_REF = new Map<string, Referencia>([
     ['dsl', new Referencia('https://www.jetbrains.com/es-es/mps/concepts/domain-specific-languages/', 'Lenguaje de Dominio Especifico', OTROS_KEY)],
     ['reglasInferencia', new Referencia('https://repository.unad.edu.co/reproductor-ova/10596_31590/index.html', 'Reglas de inferencia', OTROS_KEY)],
     ['dataStoring', new Referencia('https://www.striim.com/blog/data-warehouse-vs-data-lake-vs-data-lakehouse-an-overview/', 'Analisis y almacenamiento de datos', OTROS_KEY)],
+    ['iascode', new Referencia('https://www.redhat.com/es/topics/automation/what-is-infrastructure-as-code-iac', 'Infraestructura como Codigo', OTROS_KEY)],
 ]);
 
 const PARADIGMAS_KEY = 'paradigmas';
@@ -584,4 +585,5 @@ export const NEURO_MARKETING_REF = new Map<string, Referencia>([
     ['multi&omniCanal', new Referencia('https://www.chakray.com/es/omnicanal-vs-multicanal-cual-es-la-diferencia/#:~:text=En%20una%20soluci%C3%B3n%20multicanal%2C%20el,marca%20de%20una%20manera%20interrumpida', 'Multi & Omni Canalidad', NEURO_MARKETING_KEY)],
     ['buyerPersona', new Referencia('https://es.semrush.com/blog/como-crear-un-buyer-persona/?kw=&cmp=LM_SRCH_DSA_Blog_ES&label=dsa_pagefeed&Network=g&Device=c&utm_content=641222119375&kwid=dsa-1928812725813&cmpid=19249322807&agpid=145221538700&BU=Core&extid=64565394235&adpos=&gclid=Cj0KCQiAlKmeBhCkARIsAHy7WVvUenuKUoH2ntk2Zr4z9trooaHAHZNblouOpPsYpQ864mIN1GSotFUaAjuiEALw_wcB', 'Buyer Persona', NEURO_MARKETING_KEY)],
     ['neuroMarketing', new Referencia('https://rockcontent.com/es/blog/neuromarketing/', 'Neuro Marketing', NEURO_MARKETING_KEY)],
+    ['semanticaPragmatica', new Referencia('https://creatividadpersuasiva.cl/semiosis-sintaxis-semantica-y-pragmatica/#coming', 'Semantica & Pragmatica', NEURO_MARKETING_KEY)],
 ]);
