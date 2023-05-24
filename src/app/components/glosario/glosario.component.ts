@@ -6,12 +6,6 @@ import { Content3 } from 'src/app/models/content/content3';
 import { LinkFuente } from 'src/app/models/linkFuente';
 import { LinkReferencia } from 'src/app/models/linkReferencia';
 import { Item } from 'src/app/models/models';
-import Swal from 'sweetalert2';
-
-const colorCrimson = '#dd0031';
-const colorNavyBlue = '#1976d2';
-const colorFulvous = '#E8871E';
-const colorCultured = '#eeeeee';
 
 @Component({
   selector: 'app-glosario',
@@ -104,38 +98,9 @@ export class GlosarioComponent implements OnInit {
     this.titulo = '';
   }
 
-  private getColorButton(): string {
-    const body = document.body;
-    const isDarkModeActive = body.classList.contains('oscuro');
-    return isDarkModeActive ? colorNavyBlue : colorFulvous;
-  }
-
   public goToSection(component: string, $view: any) {
-
-    const colorConfirmButton = this.getColorButton();
-
-    Swal.fire({
-      title: `<h5 style='color:black'>¿ Deseas ir a la sección de: <em>${component.toUpperCase()}</em> ?</h5>`,
-      showCancelButton: true,
-      confirmButtonColor: colorConfirmButton,
-      cancelButtonColor: colorCrimson,
-      confirmButtonText: 'Ir',
-      icon: 'question',
-      iconColor: colorConfirmButton,
-      cancelButtonText: 'Volver al tema',
-      background: colorCultured
-    }).then((result) => {
-      if (result.isConfirmed) {
-        const urlSection = this.linkReferencia.routesAndSections.get(component);
-        this.router.navigateByUrl(`/${urlSection}`);
-      }
-      else {
-        setTimeout(() => {
-          this.scrollToView($view);
-        }, 650);
-      }
-    })
-
+    const urlSection = this.linkReferencia.routesAndSections.get(component);
+    this.router.navigateByUrl(`/${urlSection}`);
   }
 
   public cleanSearch(): void {
