@@ -1504,5 +1504,22 @@ export const NEURO_MARKETING =
                 '',
                 '<strong>- Dimesión Pragmatica:</strong> <em>Es la relación de los signos con sus interpretes</em>, Esto supone una complejidad extra y que es relativa, ',
                 ' - para cada emisor y su respectivo interprete, ya que no necesariamente todo mensaje tenga el mismo significado, para ambas partes ',
+            ]),
+        new Item('pnl',
+            [
+                '- Son una series de estrategias que se centra en identificar y usar modelos de pensamiento que influyan sobre una persona, para resolver problemas ',
+                '<strong>- Principios:</strong>',
+                '',
+                '<strong> - El mapa interior es unico:</strong> El mundo que rodea a cada persona, es unico, y se contruye a traves de la propia experiencia ',
+                '<strong> - Entre mas caminos, mejor:</strong> Entre mas completo sea el mapa, mas grande seran las posibilidades, de resolver los problemas ',
+                '<strong> - Cada comportamiento tiene una intención positiva:</strong> Todo comportamiento intrinsecamente se hace por una buena razon, por lo que, ',
+                '  - malas practicas se deben redirigir hacia un patron de conducta mas adaptativo y adecuado para la persona ',
+                '<strong> - La estructura de la experiencia:</strong> Toda experiencia tiene ciertos elementos que pueden cambiar su significado y su efecto ',
+                '<strong> - Todo problema tiene solución:</strong> Aunque suene utopico, esto dependera de la situación y del mapa de la persona ',
+                '<strong> - Todo el mundo tiene la fuerza necesaria:</strong> Cada persona posee la fuerza necesaria para conseguir lo que se propone ',
+                '<strong> - Mente y cuerpo son 2 caras de la misma moneda:</strong> Las emociones afectan el cuerpo y las enfermedades fisicas afectan a la mente ',
+                '<strong> - La comunicación pueder sesgarse:</strong> Por eso es necesario establecer pautas claras entre ambas partes ',
+                '<strong> - Todo fracaso es una oportunidad:</strong> Estos deben verse como medidas que permiten la auto superación ',
+                '<strong> - Si algo no funciona, probar de otra manera:</strong> Si algo no funciona pero siempre intentas lo mismo, no esperes resultados diferentes ',
             ])
     ];

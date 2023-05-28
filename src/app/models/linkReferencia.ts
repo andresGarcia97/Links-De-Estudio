@@ -586,4 +586,5 @@ export const NEURO_MARKETING_REF = new Map<string, Referencia>([
     ['buyerPersona', new Referencia('https://es.semrush.com/blog/como-crear-un-buyer-persona/?kw=&cmp=LM_SRCH_DSA_Blog_ES&label=dsa_pagefeed&Network=g&Device=c&utm_content=641222119375&kwid=dsa-1928812725813&cmpid=19249322807&agpid=145221538700&BU=Core&extid=64565394235&adpos=&gclid=Cj0KCQiAlKmeBhCkARIsAHy7WVvUenuKUoH2ntk2Zr4z9trooaHAHZNblouOpPsYpQ864mIN1GSotFUaAjuiEALw_wcB', 'Buyer Persona', NEURO_MARKETING_KEY)],
     ['neuroMarketing', new Referencia('https://rockcontent.com/es/blog/neuromarketing/', 'Neuro Marketing', NEURO_MARKETING_KEY)],
     ['semanticaPragmatica', new Referencia('https://creatividadpersuasiva.cl/semiosis-sintaxis-semantica-y-pragmatica/#coming', 'Semantica & Pragmatica', NEURO_MARKETING_KEY)],
+    ['pnl', new Referencia('https://psicologiaymente.com/coach/principios-pnl-programacion-neurolinguistica', 'Programación Neurolinguistica', NEURO_MARKETING_KEY)],
 ]);

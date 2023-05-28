@@ -4,7 +4,7 @@
   <div class="card-container">
     <input class="search" type="text" [(ngModel)]="search" name="search" (ngModelChange)="searchChanged()" />
   
-    <div class="close-glosary" tabindex="0" (click)="cleanSearch()">
+    <div class="close-glosary" tabindex="0" (click)="cleanSearch()" *ngIf="search !== ''">
       <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 512 512"> 
         <path d="M343.586,315.302L284.284,256l59.302-59.302c7.81-7.81,7.811-20.473,0.001-28.284c-7.812-7.811-20.475-7.81-28.284,0
         L256,227.716l-59.303-59.302c-7.809-7.811-20.474-7.811-28.284,0c-7.81,7.811-7.81,20.474,0.001,28.284L227.716,256

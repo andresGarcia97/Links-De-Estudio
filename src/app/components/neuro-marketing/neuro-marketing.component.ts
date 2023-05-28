@@ -24,7 +24,8 @@ export class NeuroMarketingComponent {
     ['multi&omniCanal', 'Multi & Omni Canalidad'],
     ['buyerPersona', 'Buyer Persona'],
     ['neuroMarketing', 'Neuro Marketing'],
-    ['semanticaPragmatica', 'Semantica & Pragmatica']
+    ['semanticaPragmatica', 'Semantica & Pragmatica'],
+    ['pnl', 'Neurolinguistica']
   ]);
 
 }
