@@ -275,6 +275,7 @@ export const META_ESTRUCTURAS_REF = new Map<string, Referencia>([
     ['funcionesLambda', new Referencia('https://www.tokioschool.com/noticias/expresiones-lambda-uso-programacion-aplicaciones/', 'Funciones Lambda', ESTRUCTURAS_KEY)],
     ['valueObjects', new Referencia('https://medium.com/all-you-need-is-clean-code/value-objects-d4c24115fa69', 'Value Objects', ESTRUCTURAS_KEY)],
     ['dynamicProgramming', new Referencia('https://www.spiceworks.com/tech/devops/articles/what-is-dynamic-programming/#:~:text=Dynamic%20programming%20is%20a%20computer,range%20of%20the%20algorithmic%20query', 'Programacion Dinamica', ESTRUCTURAS_KEY)],
+    ['serializationDeserialization', new Referencia('https://www.baeldung.com/cs/serialization-deserialization', 'Serialización y Deserialización', ESTRUCTURAS_KEY)],
 ]);
 
 const METODOLOGIAS_KEY = 'metodologias';

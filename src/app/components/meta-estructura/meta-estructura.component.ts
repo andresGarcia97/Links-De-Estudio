@@ -25,6 +25,7 @@ export class MetaEstructuraComponent {
     ['funcionesLambda', 'Funciones lambda'],
     ['valueObjects', 'Value Objects'],
     ['dynamicProgramming', 'Programacion Dinamica'],
+    ['serializationDeserialization', 'Serializar & Deserializar']
   ]);
 
 }
