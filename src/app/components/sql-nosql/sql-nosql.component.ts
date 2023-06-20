@@ -29,8 +29,8 @@ export class SqlNosqlComponent {
     ['n+1selects', 'N + 1 Selects'],
     ['indices', 'Indices'],
     ['boyceCodd', 'Boyce-Codd'],
-    ['sqlVsNosql', 'SQL ó NoSql']
-
+    ['sqlVsNosql', 'SQL ó NoSql'],
+    ['joins', 'Tipos de Joins'],
   ]);
 
 }
