@@ -21,7 +21,8 @@ export class PersonasComponent {
     ['gestionDeExpectativas', 'Gestion de expectativas'],
     ['capa8', 'Error en capa 8'],
     ['noNewsGoodNews', 'No News Good News'],
-    ['tiposHackers', 'Tipos de Hackers']
+    ['tiposHackers', 'Tipos de Hackers'],
+    ['sindromesLaborales', 'Sindromes Laborales']
   ]);
 
 }
