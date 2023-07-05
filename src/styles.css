@@ -105,6 +105,10 @@
   color: var(--color-white);
 }
 
+.oscuro .card.card.highlight-card span.noMargin {
+  color: var(--color-white);
+}
+
 .oscuro .circle-link {
   background-color: var(--color-jet);
 }
@@ -347,6 +351,11 @@ svg.material-icons:not(:last-child) {
 .card.card.highlight-card span {
   color: var(--color-black);
   margin-left: 60px;
+}
+
+.card.card.highlight-card span.noMargin {
+  color: var(--color-black);
+  margin: 5px;
 }
 
 #rocket2Span {

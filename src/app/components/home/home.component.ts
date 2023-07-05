@@ -13,4 +13,8 @@ export class HomeComponent {
     this.router.navigateByUrl(`/${component}`)
   }
 
+  public routeWithData(component: string, newItem: string): void {
+    this.router.navigateByUrl(`/${component}`, { state: { newItem } })
+  }
+
 }

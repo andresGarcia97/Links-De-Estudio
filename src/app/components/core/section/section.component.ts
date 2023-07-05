@@ -43,9 +43,9 @@ export class SectionComponent implements OnInit {
   @Input() components: Map<string, Referencia> = new Map<string, Referencia>([]);
   @Input() tittles = new Map<string, string>([]);
   @Input() items = new Array<Item>();
+  @Input() selection = '';
 
   referencia = '';
-  selection = '';
   titulo = '';
   lengthItems = 0;
   itemSelected = 0;
@@ -53,6 +53,10 @@ export class SectionComponent implements OnInit {
 
   ngOnInit(): void {
     this.lengthItems = this.items.length - 1;
+
+    if(this.selection !== ''){
+      this.getLinkAndTittleByKey(this.selection);
+    }
 
     const browser = this.detectBrowserName();
     if (FIREFOX_BROWSER === browser) {
@@ -100,8 +104,8 @@ export class SectionComponent implements OnInit {
 
   public getLinkAndTittleByKey(key: string = ''): void {
     this.selection = key;
-    this.referencia = this.components.get(key)?.referencia || '';
-    this.titulo = this.components.get(key)?.titulo || '';
+    this.referencia = this.components.get(key)?.referencia ?? '';
+    this.titulo = this.components.get(key)?.titulo ?? '';
     this.itemSelected = this.getIndexItemSelected(this.selection);
   }
 
