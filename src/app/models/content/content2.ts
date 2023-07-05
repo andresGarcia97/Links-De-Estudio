@@ -1031,6 +1031,19 @@ export const LEYES =
                 ' - generando <strong>productividad negativa</strong>, al tener que corregir los errores ó realizar de nuevo lo que se trataba de hacer ',
                 '- Sin embargo esta ley tiene algunas excepciones, como lo es Linux y el software libre, ',
                 ' - en el cual miles de programadores estan dispuestos a revisar y corregir, aca se tienen una alta convicción para superar el desconocimiento ',
+            ]),
+        new Item('mooreAndWirth',
+            [
+                '- El software y el hardware van de la mano, no solo existen PC lentos, tambien existen software lentos ',
+                '',
+                '- El Software tiene la tendencia de ocupar todo el espacio disponible',
+                '- El Software se ralentiza a mayor velocidad de lo que se acelera el hardware ',
+                '',
+                '- Esta afirmaciones, además de otras, encapsulan la complejidad y el costo de desarrollar software, se conocen como la <strong>La ley de Wirth </strong>',
+                '- Acotada a Niklaus Wirth, padre de lenjuajes como Pascal o Modula, y que publico en 1995 un articulo con estas y otras observaciones ',
+                '',
+                '- <strong>Ley de Moore:</strong> Observo en 1965 que el numero de transistores en un circuito integrado, se dobla aproximadamente cada 24 meses ',
+                '- No solo es lograr un Hardware más potente, tampoco se debe descuidar el Software, solamente porque sera compensado por mejores componentes '
             ])
     ];
 

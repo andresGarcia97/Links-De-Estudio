@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { LEYES } from 'src/app/models/content/content2';
 import { LEYES_REF } from 'src/app/models/linkReferencia';
 
@@ -6,11 +6,13 @@ import { LEYES_REF } from 'src/app/models/linkReferencia';
   selector: 'app-leyes',
   templateUrl: './leyes.component.html'
 })
-export class LeyesComponent {
+export class LeyesComponent implements OnInit {
 
   items = LEYES;
 
-  components = new Map([ ...LEYES_REF ]);
+  components = new Map([...LEYES_REF]);
+
+  itemStart = '';
 
   tittles = new Map<string, string>([
     ['balas', 'Balas de Plata'],
@@ -23,6 +25,11 @@ export class LeyesComponent {
     ['leyesInternet', 'Leyes En Internet'],
     ['pareto', 'Ley de Pareto'],
     ['brooksLaw', 'Ley de Brooks'],
+    ['mooreAndWirth', 'Moore & Wirth'],
   ]);
+
+  ngOnInit(): void {
+    this.itemStart = history?.state?.newItem;
+  }
 
 }
