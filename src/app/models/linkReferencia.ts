@@ -40,7 +40,7 @@ export class LinkReferencia {
 
 }
 
-const AGILES_KEY = 'agiles';
+export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
     ['moscow', new Referencia('https://proagilist.es/blog/agilidad-y-gestion-agil/priorizar-requisitos-tecnica-priorizacion-moscow/', 'MOSCOW', AGILES_KEY)],
     ['scoring', new Referencia('https://comunidad.iebschool.com/metodologiasparaelcambio/2014/03/23/priorizando-historias-de-usuario/', 'Theme Scoring', AGILES_KEY)],
@@ -55,7 +55,7 @@ export const AGILES_REF = new Map<string, Referencia>([
     ['deming', new Referencia('https://www.beetrack.com/es/blog/ciclo-de-deming-etapas-ejemplos', 'Ciclo de Deming', AGILES_KEY)],
 ]);
 
-const ANALISIS_KEY = 'analisis';
+export const ANALISIS_KEY = 'Analisis';
 export const ANALISIS_REF = new Map<string, Referencia>([
     ['comportamiento', new Referencia('https://es.wikipedia.org/wiki/Modelo_de_comportamiento_(inform%C3%A1tica)', 'Comportamiento del sistema', ANALISIS_KEY)],
     ['dominio', new Referencia('https://www.redalyc.org/jatsRepo/4768/476862530003/html/index.html#:~:text=El%20An%C3%A1lisis%20de%20Dominio%20es,la%20identificaci%C3%B3n%2C%20el%20an%C3%A1lisis%20y', 'Analisis de Dominio', ANALISIS_KEY)],
@@ -72,7 +72,7 @@ export const ANALISIS_REF = new Map<string, Referencia>([
     ['manifiestoReactivo', new Referencia('https://www.reactivemanifesto.org/es', 'Manifiesto Reactivo', ANALISIS_KEY)],
 ]);
 
-const ARQUITECTURAS_KEY = 'arquitecturas';
+export const ARQUITECTURAS_KEY = 'Arquitecturas';
 export const ARQUITECTURAS_REF = new Map<string, Referencia>([
     ['definicion', new Referencia('https://cgrw01.cgr.go.cr/rup/RUP.es/SmallProjects/core.base_rup/guidances/concepts/software_architecture_4269A354.html', '¿ Que es una arquitectura ?', ARQUITECTURAS_KEY)],
     ['inicioArquitectura', new Referencia('https://sg.com.mx/revista/27/arquitectura-software', 'Etapas & Roles', ARQUITECTURAS_KEY)],
@@ -91,7 +91,7 @@ export const ARQUITECTURAS_REF = new Map<string, Referencia>([
     ['monolitos', new Referencia('https://www.paradigmadigital.com/techbiz/microservicios-vs-microlitos-vs-monolitos-ventajas-desventajas/', 'Monolitos VS Microservicios', ARQUITECTURAS_KEY)],
 ]);
 
-const BUENAS_PRACTICAS_KEY = 'buenas-practicas';
+export const BUENAS_PRACTICAS_KEY = 'Buenas-Practicas';
 export const BUENAS_PRACTICAS_REF = new Map<string, Referencia>([
     ['practicas1', new Referencia('https://www.tithink.com/es/2018/06/13/12-buenas-practicas-para-el-desarrollo-software/', 'Buenas practicas parte #1', BUENAS_PRACTICAS_KEY)],
     ['practicas2', new Referencia('https://sg.com.mx/revista/mejores-pr%C3%A1cticas-para-el-desarrollo-software', 'Buenas practicas parte #2', BUENAS_PRACTICAS_KEY)],
@@ -110,7 +110,7 @@ export const BUENAS_PRACTICAS_REF = new Map<string, Referencia>([
     ['exceptionGoodPractices', new Referencia('https://javachallengers.com/mistakes-java-developers-make-when-using-exceptions/', 'Manejo de Excepciones', BUENAS_PRACTICAS_KEY)],
 ]);
 
-const CALIDAD_KEY = 'calidad';
+export const CALIDAD_KEY = 'Calidad';
 export const CALIDAD_REF = new Map<string, Referencia>([
     ['metricas', new Referencia('https://searchdatacenter.techtarget.com/es/consejo/23-metricas-de-desarrollo-de-software-que-monitorear-hoy', 'Metricas del Software', CALIDAD_KEY)],
     ['metricasEnCodigo', new Referencia('https://blog.desafiolatam.com/metricas-de-calidad-de-software/#:~:text=M%C3%A9tricas%20de%20calidad%20de%20software%20es%20un%20conjunto%20de%20medidas,comparar%20o%20planificar%20estas%20aplicaciones.&text=Tambi%C3%A9n%2C%20es%20necesario%20definir%20las,los%20resultados%20de%20estas%20m%C3%A9tricas', 'Metricas del codigo', CALIDAD_KEY)],
@@ -123,7 +123,7 @@ export const CALIDAD_REF = new Map<string, Referencia>([
     ['linting', new Referencia('https://www.freecodecamp.org/espanol/news/que-es-linting-y-eslint/', 'Linting', CALIDAD_KEY)],
 ]);
 
-const COMPILACION_KEY = 'compilacion';
+export const COMPILACION_KEY = 'Compilacion';
 export const COMPILACION_REF = new Map<string, Referencia>([
     ['compilacion', new Referencia('https://developer.mozilla.org/es/docs/Glossary/Compile', '¿ Que es compilar ?', COMPILACION_KEY)],
     ['nivel', new Referencia('https://desarrolloweb.com/articulos/2358.php#:~:text=Existen%20dos%20tipos%20de%20lenguajes,y%20los%20de%20alto%20nivel.&text=Los%20lenguajes%20m%C3%A1s%20pr%C3%B3ximos%20a,denominan%20lenguajes%20de%20alto%20nivel.', 'Niveles de compilación', COMPILACION_KEY)],
@@ -141,7 +141,7 @@ export const COMPILACION_REF = new Map<string, Referencia>([
     ['verbosity', new Referencia('https://softwareengineering.stackexchange.com/questions/141175/why-is-verbosity-bad-for-a-programming-language', 'Verbosidad', COMPILACION_KEY)],
 ]);
 
-const CONOCIMIENTO_EMPIRICO_KEY = 'empirico';
+export const CONOCIMIENTO_EMPIRICO_KEY = 'Empirico';
 export const CONOCIMIENTO_EMPIRICO = new Map<string, Referencia>([
     ['cristales', new Referencia('https://lamenteesmaravillosa.com/la-teoria-las-ventanas-rotas/', 'Efecto de los cristales rotos', CONOCIMIENTO_EMPIRICO_KEY)],
     ['quo', new Referencia('https://psicologiaymente.com/social/sesgo-statu-quo#:~:text=El%20sesgo%20del%20statu%20quo%20es%20un%20sesgo%20de%20tipo,sobre%20un%20aspecto%20en%20concreto.', 'Status Quo', CONOCIMIENTO_EMPIRICO_KEY)],
@@ -157,7 +157,7 @@ export const CONOCIMIENTO_EMPIRICO = new Map<string, Referencia>([
     ['thingsThatAreNotTaught', new Referencia('https://vadimkravcenko.com/shorts/things-they-didnt-teach-you/', 'Cosas que no se enseñan', CONOCIMIENTO_EMPIRICO_KEY)],
 ]);
 
-const LEYES_KEY = 'leyes';
+export const LEYES_KEY = 'Leyes';
 export const LEYES_REF = new Map<string, Referencia>([
     ['balas', new Referencia('https://gist.github.com/esparta/582e43af7b803e0aaf69', 'Balas de Plata', LEYES_KEY)],
     ['lehman', new Referencia('https://medium.com/@cartontabla/las-leyes-de-lehman-b57c623c3404#:~:text=Las%20Leyes%20de%20Lehman%20son,digamos%20que%20podr%C3%ADan%20ser%20ampliadas)', 'Leyes de Lehman', LEYES_KEY)],
@@ -169,9 +169,10 @@ export const LEYES_REF = new Map<string, Referencia>([
     ['leyesInternet', new Referencia('https://www.bbc.com/mundo/noticias-46102313.amp', 'Conductas en internet', LEYES_KEY)],
     ['pareto', new Referencia('https://www.becas-santander.com/es/blog/ley-de-pareto.html', 'Ley de Pareto', LEYES_KEY)],
     ['brooksLaw', new Referencia('https://www.genbeta.com/desarrollo/ley-brooks-desarrollo-software-clasico-profesion-que-habria-hecho-imposible-linux/amp', 'Ley de Brooks', LEYES_KEY)],
+    ['mooreAndWirth', new Referencia('https://blogs.uoc.edu/informatica/la-ley-de-wirth-la-ley-de-moore-inversa-del-software/', 'Ley de Moore & Ley de Wirth', LEYES_KEY)],
 ]);
 
-const CONTENEDORES_KEY = 'contenedores';
+export const CONTENEDORES_KEY = 'Contenedores';
 export const CONTAINERS = new Map<string, Referencia>([
     ['lxc', new Referencia('https://www.section.io/engineering-education/lxc-vs-docker-what-is-the-difference-and-why-docker-is-better/', 'Linux Containers', CONTENEDORES_KEY)],
     ['docker', new Referencia('https://www.xataka.com/otros/docker-a-kubernetes-entendiendo-que-contenedores-que-mayores-revoluciones-industria-desarrollo', '¿ Que es Docker ?', CONTENEDORES_KEY)],
@@ -184,7 +185,7 @@ export const CONTAINERS = new Map<string, Referencia>([
     ['kubernetes', new Referencia('https://kubernetes.io/es/docs/concepts/overview/what-is-kubernetes/', 'Kubernetes', CONTENEDORES_KEY)],
 ]);
 
-const ESTRATEGIAS_DESARROLLO_KEY = 'estrategias-desarrollo';
+export const ESTRATEGIAS_DESARROLLO_KEY = 'Estrategias-Desarrollo';
 export const ESTRATEGIAS_DESARROLLO_REF = new Map<string, Referencia>([
     ['ddd', new Referencia('https://github.com/jatubio/5minutos_laravel/wiki/Resumen-sobre-DDD.-Domain-Driven-Design', 'Diseño Orientado a Dominios', ESTRATEGIAS_DESARROLLO_KEY)],
     ['bdd', new Referencia('https://www.itdo.com/blog/que-es-bdd-behavior-driven-development/#:~:text=Given%2DWhen%2DThen%20como%20lenguaje%20com%C3%BAn%20con%20BDD,que%20se%20van%20a%20ejecutar', 'Desarrollo Dirigido por Comportamiento', ESTRATEGIAS_DESARROLLO_KEY)],
@@ -195,7 +196,7 @@ export const ESTRATEGIAS_DESARROLLO_REF = new Map<string, Referencia>([
     ['bduf', new Referencia('https://www.freecodecamp.org/news/the-pros-and-cons-of-big-design-up-front-and-what-i-do-instead-375f00542dec/', 'Big Design Up Front', ESTRATEGIAS_DESARROLLO_KEY)],
 ]);
 
-const FRAMEWORKS_KEY = 'frameworks';
+export const FRAMEWORKS_KEY = 'Frameworks';
 export const FRAMEWORKS_REF = new Map<string, Referencia>([
     ['frameworks', new Referencia('https://neoattack.com/neowiki/framework/', '¿ Que es un framework?', FRAMEWORKS_KEY)],
     ['ioc', new Referencia('https://medium.com/all-you-need-is-clean-code/inversi%C3%B3n-de-control-principio-de-hollywood-dont-call-us-we-ll-call-you-179e9c70e3d0', 'Inversion de Control', FRAMEWORKS_KEY)],
@@ -203,7 +204,7 @@ export const FRAMEWORKS_REF = new Map<string, Referencia>([
     ['scafolding', new Referencia('https://medium.com/@srinathsrs104/scaffolding-54ac4e47e133', 'Creación automatica de codigo', FRAMEWORKS_KEY)],
 ]);
 
-const GIT_KEY = 'git';
+export const GIT_KEY = 'Git';
 export const GIT_REF = new Map<string, Referencia>([
     ['introduccion', new Referencia('https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Acerca-del-Control-de-Versiones', 'Introducción a Git', GIT_KEY)],
     ['repositorios', new Referencia('https://git-scm.com/book/es/v2/Fundamentos-de-Git-Trabajar-con-Remotos', 'Repositorios Remotos y Locales', GIT_KEY)],
@@ -219,7 +220,7 @@ export const GIT_REF = new Map<string, Referencia>([
     ['practicas', new Referencia('https://codigofacilito.com/articles/41', 'Buenas practicas para realizar commits', GIT_KEY)],
 ]);
 
-const USER_HISTORIES_KEY = 'historias-usuario';
+export const USER_HISTORIES_KEY = 'Historias-Usuario';
 export const USER_HISTORIES = new Map<string, Referencia>([
     ['historias', new Referencia('https://apiumhub.com/es/tech-blog-barcelona/como-escribir-buenas-historias-de-usuario/', '¿ Que son las HU ?', USER_HISTORIES_KEY)],
     ['objetivos', new Referencia('https://apiumhub.com/es/tech-blog-barcelona/como-escribir-buenas-historias-de-usuario/', '¿ Que busca una HU ?', USER_HISTORIES_KEY)],
@@ -233,7 +234,7 @@ export const USER_HISTORIES = new Map<string, Referencia>([
     ['casosVsRequisitosVsHu', new Referencia('http://www.angellozano.com/requisitos-del-sistema-vs-casos-uso-vs-historias-usuario/', 'HU Vs Casos de uso', USER_HISTORIES_KEY)],
 ]);
 
-const MALAS_PRACTICAS_KEY = 'malas-practicas';
+export const MALAS_PRACTICAS_KEY = 'Malas-Practicas';
 export const MALAS_PRACTICAS_REF = new Map<string, Referencia>([
     ['callbackhell', new Referencia('https://codearmy.co/que-es-el-callback-hell-y-como-evitarlo-4af418a6ed14', 'Cadena de llamados asincronos', MALAS_PRACTICAS_KEY)],
     ['contraCalidad', new Referencia('https://softgrade.mx/5-causas-afectan-la-calidad-software/', 'En contra de la calidad', MALAS_PRACTICAS_KEY)],
@@ -242,7 +243,7 @@ export const MALAS_PRACTICAS_REF = new Map<string, Referencia>([
     ['malasPracticasSCRUM', new Referencia('https://blog.palo-it.com/es/antipatrones-comunes-en-scrum#:~:text=Los%20antipatrones%20ocurren%20cuando%20creemos,y%20parecen%20parte%20del%20sistema', 'Malas practicas en SCRUM', MALAS_PRACTICAS_KEY)],
 ]);
 
-const CARACTERISTICAS_KEY = 'metacaracteristicas';
+export const CARACTERISTICAS_KEY = 'Meta-Caracteristicas';
 export const META_CARATERISTICAS_REF = new Map<string, Referencia>([
     ['metaDatos', new Referencia('https://blog.powerdata.es/el-valor-de-la-gestion-de-datos/que-son-los-metadatos-y-cual-es-su-utilidad', ' ¿ Que son los metadatos ?', CARACTERISTICAS_KEY)],
     ['metaClase', new Referencia('https://quesignificado.org/que-es-una-metaclase/', '¿ Que es una meta clase ?', CARACTERISTICAS_KEY)],
@@ -261,7 +262,7 @@ export const META_CARATERISTICAS_REF = new Map<string, Referencia>([
     ['memoryAndGarbage', new Referencia('https://www.computerworld.com/article/2596992/memory-leaks-and-garbage-collection.amp.html', 'Fugas de memoria y recoleccion de basura', CARACTERISTICAS_KEY)],
 ]);
 
-const ESTRUCTURAS_KEY = 'meta-estructuras';
+export const ESTRUCTURAS_KEY = 'Meta-Estructuras';
 export const META_ESTRUCTURAS_REF = new Map<string, Referencia>([
     ['scope', new Referencia('https://platzi.com/blog/como-funciona-el-scope-en-javascript/', 'Alcance', ESTRUCTURAS_KEY)],
     ['precedencia', new Referencia('https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Operator_Precedence', 'Precedencia y jerarquia de operaciones', ESTRUCTURAS_KEY)],
@@ -278,7 +279,7 @@ export const META_ESTRUCTURAS_REF = new Map<string, Referencia>([
     ['serializationDeserialization', new Referencia('https://www.baeldung.com/cs/serialization-deserialization', 'Serialización y Deserialización', ESTRUCTURAS_KEY)],
 ]);
 
-const METODOLOGIAS_KEY = 'metodologias';
+export const METODOLOGIAS_KEY = 'Metodologias';
 export const METODOLOGIAS_REF = new Map<string, Referencia>([
     ['agiles', new Referencia('https://www.iebschool.com/blog/que-son-metodologias-agiles-agile-scrum/', '¿ Que son las metodologias agiles ?', METODOLOGIAS_KEY)],
     ['scrum', new Referencia('https://www.iebschool.com/blog/metodologia-scrum-agile-scrum/', 'Scrum', METODOLOGIAS_KEY)],
@@ -297,7 +298,7 @@ export const METODOLOGIAS_REF = new Map<string, Referencia>([
     ['scrumban', new Referencia('https://kanbantool.com/es/scrumban-scrum-y-kanb', 'Scrumban', METODOLOGIAS_KEY)]
 ]);
 
-const NUBE_APIS_KEY = 'Nube & APIs';
+export const NUBE_APIS_KEY = 'Nube & APIs';
 export const NUBE_AND_APIS = new Map<string, Referencia>([
     ['nube', new Referencia('https://azure.microsoft.com/es-es/overview/what-are-private-public-hybrid-clouds/', 'Tipos de nube', NUBE_APIS_KEY)],
     ['iaas-paas-saas', new Referencia('https://www.ambit-bst.com/blog/definici%C3%B3n-de-iaas-paas-y-saas-en-qu%C3%A9-se-diferencian', 'IaaS, PaaS, SaaS', NUBE_APIS_KEY)],
@@ -318,7 +319,7 @@ export const NUBE_AND_APIS = new Map<string, Referencia>([
     ['falaciesDistributedSystems', new Referencia('https://architecturenotes.co/fallacies-of-distributed-systems/', 'Sistemas Distribuidos', NUBE_APIS_KEY)],
 ]);
 
-const OTROS_KEY = 'otros';
+export const OTROS_KEY = 'Otros';
 export const OTROS_REF = new Map<string, Referencia>([
     ['scraping', new Referencia('https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/que-es-el-web-scraping/', 'Web Scrapping', OTROS_KEY)],
     ['cdci', new Referencia('https://www.aplyca.com/es/blog/integracion-entrega-continua-ci-cd', 'Integración continua y Entrega Continua', OTROS_KEY)],
@@ -332,7 +333,7 @@ export const OTROS_REF = new Map<string, Referencia>([
     ['iascode', new Referencia('https://www.redhat.com/es/topics/automation/what-is-infrastructure-as-code-iac', 'Infraestructura como Codigo', OTROS_KEY)],
 ]);
 
-const PARADIGMAS_KEY = 'paradigmas';
+export const PARADIGMAS_KEY = 'Paradigmas';
 export const PARADIGMAS_REF = new Map<string, Referencia>([
     ['imperativo', new Referencia('https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/paradigmas-de-programacion', 'Paradigmas Imperativo & Declarativo', PARADIGMAS_KEY)],
     ['funcional', new Referencia('https://codigofacilito.com/articulos/programacion-funcional', 'Paradigma funcional', PARADIGMAS_KEY)],
@@ -344,7 +345,7 @@ export const PARADIGMAS_REF = new Map<string, Referencia>([
     ['estructurada', new Referencia('https://bookdown.org/cjtorresj/ple/prog-estruct.html', 'Programación Estructurada', PARADIGMAS_KEY)],
 ]);
 
-const PATRONES_KEY = 'patrones';
+export const PATRONES_KEY = 'Patrones';
 export const PATRONES_REF = new Map<string, Referencia>([
     ['definicionPatrones', new Referencia('http://www.ecured.cu/Patrones_de_dise%C3%B1o_y_arquitectura', '¿ Que son los patrones ?', PATRONES_KEY)],
     ['gof', new Referencia('http://www.cleformacion.com/tic-tek/-/blogs/patrones-gof', 'Gang of Four (GoF)', PATRONES_KEY)],
@@ -361,7 +362,7 @@ export const PATRONES_REF = new Map<string, Referencia>([
     ['stranglerFig', new Referencia('https://martinfowler.com/bliki/StranglerFigApplication.html', 'StranglerFig App', PATRONES_KEY)],
 ]);
 
-const PERSONAS_KEY = 'personas';
+export const PERSONAS_KEY = 'Personas';
 export const PEOPLE = new Map<string, Referencia>([
     ['personasYprocesos', new Referencia('https://www.heflo.com/es/blog/bpm/personas-procesos-tecnologia/', 'Personas-Procesos-Tecnologias', PERSONAS_KEY)],
     ['gestionDeServicios', new Referencia('https://www.ambit-bst.com/blog/itsm.-todo-lo-que-debes-saber-sobre-la-gesti%C3%B3n-de-servicios-it', 'Gestión de servicios tecnologicos', PERSONAS_KEY)],
@@ -375,7 +376,7 @@ export const PEOPLE = new Map<string, Referencia>([
     ['sindromesLaborales', new Referencia('https://www.sage.com/es-es/blog/burnout-procusto-y-otros-14-sindromes-tipicos-del-mundo-empresarial/#gate-263a5c00-99e4-4e71-8421-469deda8e674', 'Sindromes laborales', PERSONAS_KEY)],
 ]);
 
-const POO_KEY = 'poo';
+export const POO_KEY = 'POO';
 export const POO_REF = new Map<string, Referencia>([
     ['poo', new Referencia('https://desarrolloweb.com/articulos/499.php', 'Programación Orientada a Objetos', POO_KEY)],
     ['pooPilares', new Referencia('https://www.campusmvp.es/recursos/post/los-conceptos-fundamentales-sobre-programacion-orientada-objetos-explicados-de-manera-simple.aspx', 'Pilares de POO', POO_KEY)],
@@ -397,7 +398,7 @@ export const POO_REF = new Map<string, Referencia>([
     ['interfacesOverInheritance', new Referencia('https://www.infoworld.com/article/2073649/why-extends-is-evil.html', 'Interfaces VS Herencia', POO_KEY)],
 ]);
 
-const TESTING_KEY = 'testing';
+export const TESTING_KEY = 'Testing';
 export const TESTING = new Map<string, Referencia>([
     ['principios', new Referencia('https://todosqa.com/siete-principios-del-proceso-de-prueba/', 'Principios de testing', TESTING_KEY)],
     ['manifiesto', new Referencia('https://www.adictosaltrabajo.com/2019/12/18/testing-en-un-mundo-agile/', 'Manifiesto para testing', TESTING_KEY)],
@@ -416,7 +417,7 @@ export const TESTING = new Map<string, Referencia>([
     ['QAperson', new Referencia('https://www.bbvaapimarket.com/es/mundo-api/que-es-qa-y-por-que-no-debe-faltar-en-tu-proyecto/', ' ¿ Que es QA ?', TESTING_KEY)],
 ]);
 
-const TESTING_ADVANCED_KEY = 'testing-avanzado';
+export const TESTING_ADVANCED_KEY = 'Testing-Avanzado';
 export const TESTING_ADVANCED = new Map<string, Referencia>([
     ['cajaNegraBlanca', new Referencia('https://www.testermoderno.com/caja-blanca-vs-caja-negra/', 'Tests de Caja negra & Caja blanca', TESTING_ADVANCED_KEY)],
     ['valorLimite', new Referencia('https://educandocontic.com/valores-limite-pruebas/', 'Valores limite', TESTING_ADVANCED_KEY)],
@@ -431,7 +432,7 @@ export const TESTING_ADVANCED = new Map<string, Referencia>([
     ['mutation', new Referencia('https://spa.myservername.com/what-is-mutation-testing#:~:text=La%20prueba%20de%20mutaci%C3%B3n%20es,prueba%20para%20aislar%20las%20desviaciones', 'Tests de mutación', TESTING_ADVANCED_KEY)]
 ]);
 
-const REFACTORIZACION_KEY = 'refactorizacion';
+export const REFACTORIZACION_KEY = 'Refactorizacion';
 export const REFACTORING = new Map<string, Referencia>([
     ['codigolimpio', new Referencia('https://refactoring.guru/es/refactoring/what-is-refactoring', '¿ Que es codigo Limpio ?', REFACTORIZACION_KEY)],
     ['deudatecnica', new Referencia('https://refactoring.guru/es/refactoring/technical-debt', 'Deuda tecnica', REFACTORIZACION_KEY)],
@@ -444,7 +445,7 @@ export const REFACTORING = new Map<string, Referencia>([
     ['refactorLegacyCode', new Referencia('https://jesuslc.com/2020/11/21/tecnicas-para-mantener-al-legacy-code-bajo-control/', 'Refactorizar el Legacy Code', REFACTORIZACION_KEY)],
 ]);
 
-const REQUISITOS_KEY = 'requisitos';
+export const REQUISITOS_KEY = 'Requisitos';
 export const REQUISITOS_REF = new Map<string, Referencia>([
     ['funcionales', new Referencia('https://medium.com/@requeridosblog/requerimientos-funcionales-y-no-funcionales-ejemplos-y-tips-aa31cb59b22a', 'Requisitos funcionales', REQUISITOS_KEY)],
     ['NOfuncionales', new Referencia('https://medium.com/@requeridosblog/requerimientos-funcionales-y-no-funcionales-ejemplos-y-tips-aa31cb59b22a', 'Requisitos No funcionales', REQUISITOS_KEY)],
@@ -455,7 +456,7 @@ export const REQUISITOS_REF = new Map<string, Referencia>([
     ['objetivos', new Referencia('https://www.pqforce.com/es/blog/objetivos-frente-a-requisitos-cual-es-la-diferencia/', 'Objetivos & Requisitos', REQUISITOS_KEY)],
 ]);
 
-const PRINCIPIOS_KEY = 'principios';
+export const PRINCIPIOS_KEY = 'Principios';
 export const PRINCIPIOS_REF = new Map<string, Referencia>([
     ['solid', new Referencia('https://profile.es/blog/principios-solid-desarrollo-software-calidad/', 'Principio SOLID', PRINCIPIOS_KEY)],
     ['kiss', new Referencia('https://manuelzapata.co/principio-kiss-keep-it-simple-stupid/', 'Mantenlo simple, estupido', PRINCIPIOS_KEY)],
@@ -469,7 +470,7 @@ export const PRINCIPIOS_REF = new Map<string, Referencia>([
     ['divide-conquer', new Referencia('https://betterprogramming.pub/10-design-principles-in-software-engineering-f88647cf5a07', 'Divide y Conquistaras', PRINCIPIOS_KEY)],
 ]);
 
-const SEGURIDAD_KEY = 'seguridad';
+export const SEGURIDAD_KEY = 'Seguridad';
 export const SEGURIDAD_REF = new Map<string, Referencia>([
     ['firewall', new Referencia('https://idgrup.com/firewall-que-es-y-como-funciona/#:~:text=Un%20firewall%2C%20tambi%C3%A9n%20llamado%20cortafuegos,ordenadores%20de%20una%20misma%20red', 'Firewall', SEGURIDAD_KEY)],
     ['protocolos', new Referencia('https://www.websecurity.digicert.com/es/es/security-topics/what-is-ssl-tls-https', 'SSL, TSL, HTTPS', SEGURIDAD_KEY)],
@@ -490,7 +491,7 @@ export const SEGURIDAD_REF = new Map<string, Referencia>([
     ['csrf', new Referencia('https://www.welivesecurity.com/la-es/2015/04/21/vulnerabilidad-cross-site-request-forgery-csrf/', 'Cross Site Request Forgery', SEGURIDAD_KEY)],
 ]);
 
-const SMELL_CODES_KEY = 'smell-codes';
+export const SMELL_CODES_KEY = 'Smell-Codes';
 export const SMELL_CODES_REF = new Map<string, Referencia>([
     ['codesmells', new Referencia('https://openwebinars.net/blog/code-smells-y-deuda-tecnica/', 'Smell Codes', SMELL_CODES_KEY)],
     ['tiposSmellCodes', new Referencia('https://refactoring.guru/es/refactoring/smells', 'Tipos de Smell codes', SMELL_CODES_KEY)],
@@ -500,7 +501,7 @@ export const SMELL_CODES_REF = new Map<string, Referencia>([
     ['designsmells', new Referencia('https://www.alpharithms.com/code-smell-492316/', 'Code smells en diseño', SMELL_CODES_KEY)],
 ]);
 
-const DATA_BASES_KEY = 'Bases de Datos'
+export const DATA_BASES_KEY = 'Bases de Datos'
 export const PERSISTENCY = new Map<string, Referencia>([
     ['sql', new Referencia('https://www.w3schools.com/sql/default.asp', '¿ Que es SQL ? ', DATA_BASES_KEY)],
     ['dbms', new Referencia('https://www.astera.com/es/type/blog/database-management-software/', 'Software de Gestion de Bases de Datos', DATA_BASES_KEY)],
@@ -522,7 +523,7 @@ export const PERSISTENCY = new Map<string, Referencia>([
     ['joins', new Referencia('https://ingenieriadesoftware.es/tipos-sql-join-guia-referencia/', 'Tipos de Joins', DATA_BASES_KEY)],
 ]);
 
-const UML_KEY = 'uml';
+export const UML_KEY = 'UML';
 export const UML_REF = new Map<string, Referencia>([
     ['uml', new Referencia('https://diagramasuml.com/', 'Lenguaje Unificado de Modelado', UML_KEY)],
     ['clase', new Referencia('https://diagramasuml.com/diagrama-de-clases/', 'Diagrama de clases', UML_KEY)],
@@ -537,7 +538,7 @@ export const UML_REF = new Map<string, Referencia>([
     ['tiposUml', new Referencia('https://www.microsoft.com/es-co/microsoft-365/business-insights-ideas/resources/guide-to-uml-diagramming-and-database-modeling#:~:text=El%20Lenguaje%20Unificado%20de%20Modelado,de%20un%20sistema%20o%20proceso.', 'Tipos de Diagramas', UML_KEY)],
 ]);
 
-const VERSIONAMIENTO_KEY = 'versionamiento';
+export const VERSIONAMIENTO_KEY = 'Versionamiento';
 export const VERSIONAMIENTO_REF = new Map<string, Referencia>([
     ['git', new Referencia('https://david-estevez.gitbooks.io/the-git-the-bad-and-the-ugly/content/es/control-de-versiones.html', 'Gestores de versiones', VERSIONAMIENTO_KEY)],
     ['dependencias', new Referencia('https://www.hongkiat.com/blog/manage-dependencies-tools-webdev/', 'Gestores de dependencias', VERSIONAMIENTO_KEY)],
@@ -547,7 +548,7 @@ export const VERSIONAMIENTO_REF = new Map<string, Referencia>([
     ['documentation', new Referencia('https://shopify.engineering/good-documentation-productivity', 'Documentación & Productividad', VERSIONAMIENTO_KEY)],
 ]);
 
-const HARDWARE_KEY = 'Hardware';
+export const HARDWARE_KEY = 'Hardware';
 export const HARDWARE_REF = new Map<string, Referencia>([
     ['virtualizacion', new Referencia('https://www.redhat.com/es/topics/virtualization/what-is-a-virtual-machine', 'Virtualización', HARDWARE_KEY)],
     ['cli', new Referencia('https://searchdatacenter.techtarget.com/es/definicion/Interfaz-de-linea-de-comandos-o-CLI', 'Interfaz de Linea de Comandos', HARDWARE_KEY)],
@@ -560,7 +561,7 @@ export const HARDWARE_REF = new Map<string, Referencia>([
     ['falseSharing', new Referencia('https://www.easytechjunkie.com/what-is-false-sharing.htm', 'False Sharing', HARDWARE_KEY)],
 ]);
 
-const WEB_KEY = 'web';
+export const WEB_KEY = 'Web';
 export const WEB_REF = new Map<string, Referencia>([
     ['spa', new Referencia('https://desarrolloweb.com/articulos/que-es-una-spa.html#:~:text=En%20pocas%20palabras%2C%20SPA%20son,html', 'Single Page Aplication', WEB_KEY)],
     ['pwa', new Referencia('https://www.iebschool.com/blog/progressive-web-apps-analitica-usabilidad/', 'Progressive Web App', WEB_KEY)],
@@ -575,7 +576,7 @@ export const WEB_REF = new Map<string, Referencia>([
     ['esqueumorfismo', new Referencia('https://aderal.es/estrategias-de-marketing-y-transformacion-digital/nuevas-tendencias-en-diseno-grafico-digital-el-regreso-del-esqueumorfismo/', 'Esqueumorfismo', WEB_KEY)],
 ]);
 
-const NEURO_MARKETING_KEY = 'neuro-marketing';
+export const NEURO_MARKETING_KEY = 'Neuro-Marketing';
 export const NEURO_MARKETING_REF = new Map<string, Referencia>([
     ['pestel', new Referencia('https://www.simla.com/blog/analisis-pestel', 'Analisis PESTEL', NEURO_MARKETING_KEY)],
     ['matrizBcg', new Referencia('https://emprendepyme.net/tipos-de-productos-segun-la-matriz-bcg-y-ejemplos-reales.html', 'Matriz BCG', NEURO_MARKETING_KEY)],
