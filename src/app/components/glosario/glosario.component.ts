@@ -85,8 +85,8 @@ export class GlosarioComponent implements OnInit {
       this.showItem = false;
     }
     else {
-      this.referencia = this.componentes.get(key)?.referencia || '';
-      this.titulo = this.componentes.get(key)?.titulo || '';
+      this.referencia = this.componentes.get(key)?.referencia ?? '';
+      this.titulo = this.componentes.get(key)?.titulo ?? '';
       this.item = new Item(items[0].key, items[0].content);
       this.showItem = true;
       this.scrollToView($view);
@@ -98,9 +98,9 @@ export class GlosarioComponent implements OnInit {
     this.titulo = '';
   }
 
-  public goToSection(component: string, $view: any) {
+  public goToSection(component: string, item: string) {
     const urlSection = this.linkReferencia.routesAndSections.get(component);
-    this.router.navigateByUrl(`/${urlSection}`);
+    this.router.navigateByUrl(`/${urlSection}`, { state: { newItem: item } })
   }
 
   public cleanSearch(): void {

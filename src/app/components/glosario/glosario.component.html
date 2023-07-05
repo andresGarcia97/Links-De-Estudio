@@ -30,7 +30,7 @@
       *ngFor="let componente of onlyComponents | filter : search" 
       class="card card-small card-no-size tooltip"
       (click)="createViewItem(componente.key, view)"> {{componente.titulo}}
-      <span (click)="goToSection(componente.componente, view)" class="tooltiptext gradient">Seccion: {{componente.componente}}</span>
+      <span (click)="goToSection(componente.componente, componente.key)" class="tooltiptext gradient">Seccion: {{componente.componente}}</span>
     </div>
 
   </div>
