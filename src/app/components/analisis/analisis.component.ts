@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ANALISIS } from 'src/app/models/content/content2';
 import { ANALISIS_REF } from 'src/app/models/linkReferencia';
 
@@ -6,11 +6,13 @@ import { ANALISIS_REF } from 'src/app/models/linkReferencia';
   selector: 'app-analisis',
   templateUrl: './analisis.component.html'
 })
-export class AnalisisComponent {
+export class AnalisisComponent implements OnInit {
 
   items = ANALISIS;
 
-  components = new Map([ ...ANALISIS_REF ]);
+  components = new Map([...ANALISIS_REF]);
+
+  itemStart = '';
 
   tittles = new Map<string, string>([
     ['comportamiento', 'Comportamiento'],
@@ -27,5 +29,9 @@ export class AnalisisComponent {
     ['kpis', 'KPI'],
     ['manifiestoReactivo', 'Manifiesto Reactivo'],
   ]);
+
+  ngOnInit(): void {
+    this.itemStart = history?.state?.newItem;
+  }
 
 }

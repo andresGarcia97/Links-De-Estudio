@@ -183,6 +183,7 @@ export const CONTAINERS = new Map<string, Referencia>([
     ['file', new Referencia('https://docs.docker.com/develop/develop-images/dockerfile_best-practices/', 'Comandos que acepta Docker', CONTENEDORES_KEY)],
     ['compose', new Referencia('https://dockertips.com/utilizando-docker-compose#:~:text=Docker%20Compose%20es%20una%20herramienta%20que%20permite%20simplificar%20el%20uso%20de%20Docker.&text=En%20vez%20de%20utilizar%20Docker,Engine%20a%20realizar%20tareas%2C%20programaticamente', 'Manejo del docker-compose', CONTENEDORES_KEY)],
     ['kubernetes', new Referencia('https://kubernetes.io/es/docs/concepts/overview/what-is-kubernetes/', 'Kubernetes', CONTENEDORES_KEY)],
+    ['containerOrchestation', new Referencia('https://geekflare.com/container-orchestration-software/', 'Orquestación', CONTENEDORES_KEY)],
 ]);
 
 export const ESTRATEGIAS_DESARROLLO_KEY = 'Estrategias-Desarrollo';

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CONTENEDORES } from 'src/app/models/content/content1';
 import { CONTAINERS } from 'src/app/models/linkReferencia';
 
@@ -6,11 +6,13 @@ import { CONTAINERS } from 'src/app/models/linkReferencia';
   selector: 'app-docker',
   templateUrl: './contenedores.component.html'
 })
-export class ContenedoresComponent {
+export class ContenedoresComponent implements OnInit {
 
   items = CONTENEDORES;
 
-  components = new Map([ ...CONTAINERS ]);
+  components = new Map([...CONTAINERS]);
+
+  itemStart = '';
 
   tittles = new Map<string, string>([
     ['lxc', 'Linux Containers'],
@@ -22,6 +24,11 @@ export class ContenedoresComponent {
     ['file', 'DockerFile'],
     ['compose', 'Docker Compose'],
     ['kubernetes', 'Kubernetes'],
+    ['containerOrchestation', 'Orquestación'],
   ]);
+
+  ngOnInit(): void {
+    this.itemStart = history?.state?.newItem;
+  }
 
 }
