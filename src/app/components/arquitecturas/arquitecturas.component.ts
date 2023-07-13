@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ARQUITECTURAS } from 'src/app/models/content/content1';
 import { ARQUITECTURAS_REF } from 'src/app/models/linkReferencia';
 
@@ -6,11 +6,13 @@ import { ARQUITECTURAS_REF } from 'src/app/models/linkReferencia';
   selector: 'app-arquitecturas',
   templateUrl: './arquitecturas.component.html'
 })
-export class ArquitecturasComponent {
+export class ArquitecturasComponent implements OnInit {
 
   items = ARQUITECTURAS;
 
   components = new Map([ ...ARQUITECTURAS_REF ]);
+
+  itemStart = '';
 
   tittles = new Map<string, string>([
     ['definicion', 'Definición'],
@@ -29,5 +31,9 @@ export class ArquitecturasComponent {
     ['otrasArquitecturas', 'Otras (patrones)'],
     ['monolitos', 'Monolitos'],
   ]);
+
+  ngOnInit(): void {
+    this.itemStart = history?.state?.newItem;
+  }
 
 }

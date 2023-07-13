@@ -332,6 +332,7 @@ export const OTROS_REF = new Map<string, Referencia>([
     ['reglasInferencia', new Referencia('https://repository.unad.edu.co/reproductor-ova/10596_31590/index.html', 'Reglas de inferencia', OTROS_KEY)],
     ['dataStoring', new Referencia('https://www.striim.com/blog/data-warehouse-vs-data-lake-vs-data-lakehouse-an-overview/', 'Analisis y almacenamiento de datos', OTROS_KEY)],
     ['iascode', new Referencia('https://www.redhat.com/es/topics/automation/what-is-infrastructure-as-code-iac', 'Infraestructura como Codigo', OTROS_KEY)],
+    ['stateless-stateful', new Referencia('https://refactorizando.com/stateful-vs-stateless-arquitectura/', 'Stateful VS Stateless', OTROS_KEY)],
 ]);
 
 export const PARADIGMAS_KEY = 'Paradigmas';
