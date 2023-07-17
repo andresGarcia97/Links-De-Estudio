@@ -914,6 +914,25 @@ export const CONTENEDORES =
                 '<strong> - AWS EKS:</strong> Es un servicio tambien autoadministrado, pero por Amazon, y que usa el potencial de la computación sin servidor (serverless) ',
                 '',
                 '- Para ver otras opciones o conseguir los enlaces oficiales de cada tecnologia, puedes seguir leyendo el articulo original ',
+            ]),
+        new Item('openContainer',
+            [
+                '- Es una proyecto de gobernanza abierta y liviana, formada bajo el auspicio de la Fundación Linux ',
+                '- Fue creada en el 2015 por Docker, CoreOs y otros lideres en la industria de contenedores ',
+                '- Con el proposito expreso de crear estandares abiertos de la industria en torno a los formatos y especificaciones de ',
+                '',
+                '- Especificación de tiempo de ejecución <strong>(runtime-spec)</strong>',
+                '- Especificación de las imagenes <strong>(image-spec)</strong>',
+                '- Especificación de distribución <strong>(distribution-spec)</strong>',
+                '',
+                '- La especificación de tiempo de ejecución describe como ejecutar un "paquete de sistema de archivos" presente en el disco, ',
+                ' - otra implementación descargaria la imagen, se desempaqueta para ser ejecutado, sin argumentos o procesos adicionales para cada paso ',
+                '',
+                '- Para que las UX el formato de la OCI contiene suficientes especificaciones para usar comandos, variables de entorno, argumentos, etc ',
+                '- Para las imagenes construidas, se encuentra generamente un manifiesto de la imagen, las capas, y la configuración ',
+                '- Para el ambiente de ejecución, Docker dono su formato de contenedores y su ejecución, para que sirviera como base ',
+                '',
+                '- Para encontrar los links originales a cada especificación, ademas de otros datos y la comunidad del proyecto, puede revisar la fuente ',
             ])
     ];
 

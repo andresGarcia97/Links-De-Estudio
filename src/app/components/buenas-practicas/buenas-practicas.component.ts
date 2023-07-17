@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { BUENAS_PRACTICAS } from 'src/app/models/content/content2';
 import { BUENAS_PRACTICAS_REF } from 'src/app/models/linkReferencia';
 
@@ -6,11 +6,13 @@ import { BUENAS_PRACTICAS_REF } from 'src/app/models/linkReferencia';
   selector: 'app-buenas-practicas',
   templateUrl: './buenas-practicas.component.html'
 })
-export class BuenasPracticasComponent {
+export class BuenasPracticasComponent implements OnInit {
 
   items = BUENAS_PRACTICAS;
 
   components = new Map([ ...BUENAS_PRACTICAS_REF ]);
+
+  itemStart = '';
 
   tittles = new Map<string, string>([
     ['practicas1', 'Parte #1'],
@@ -29,5 +31,9 @@ export class BuenasPracticasComponent {
     ['semanticConstructors', 'Constructores Semanticos'],
     ['exceptionGoodPractices', 'Manejo de Excepciones'],
   ]);
+
+  ngOnInit(): void {
+    this.itemStart = history?.state?.newItem;
+  }
 
 }

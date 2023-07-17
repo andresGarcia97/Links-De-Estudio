@@ -25,6 +25,7 @@ export class ContenedoresComponent implements OnInit {
     ['compose', 'Docker Compose'],
     ['kubernetes', 'Kubernetes'],
     ['containerOrchestation', 'Orquestación'],
+    ['openContainer', 'Open Container Initiative']
   ]);
 
   ngOnInit(): void {
