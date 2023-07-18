@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { BASES_DE_DATOS } from 'src/app/models/content/content1';
 import { PERSISTENCY } from 'src/app/models/linkReferencia';
 
@@ -6,11 +6,13 @@ import { PERSISTENCY } from 'src/app/models/linkReferencia';
   selector: 'app-sql-nosql',
   templateUrl: './sql-nosql.component.html'
 })
-export class SqlNosqlComponent {
+export class SqlNosqlComponent implements OnInit {
 
   items = BASES_DE_DATOS;
 
   components = new Map([ ...PERSISTENCY ]);
+
+  itemStart = '';
 
   tittles = new Map<string, string>([
     ['sql', 'SQL'],
@@ -31,6 +33,11 @@ export class SqlNosqlComponent {
     ['boyceCodd', 'Boyce-Codd'],
     ['sqlVsNosql', 'SQL ó NoSql'],
     ['joins', 'Tipos de Joins'],
+    ['locking', 'Bloqueos'],
   ]);
+
+  ngOnInit(): void {
+    this.itemStart = history?.state?.newItem;
+  }
 
 }

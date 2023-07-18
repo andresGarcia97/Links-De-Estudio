@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CALIDAD } from 'src/app/models/content/content1';
 import { CALIDAD_REF } from 'src/app/models/linkReferencia';
 
@@ -6,11 +6,13 @@ import { CALIDAD_REF } from 'src/app/models/linkReferencia';
   selector: 'app-calidad',
   templateUrl: './calidad.component.html'
 })
-export class CalidadComponent {
+export class CalidadComponent implements OnInit {
 
   items = CALIDAD;
 
   components = new Map([ ...CALIDAD_REF ]);
+
+  itemStart = '';
 
   tittles = new Map<string, string>([
     ['artesanos', 'Artesanos'],
@@ -23,5 +25,9 @@ export class CalidadComponent {
     ['codeReviews', 'Revisiones'],
     ['linting', 'Linting'],
   ]);
+
+  ngOnInit(): void {
+    this.itemStart = history?.state?.newItem;
+  }
 
 }
