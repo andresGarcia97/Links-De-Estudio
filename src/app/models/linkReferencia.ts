@@ -220,6 +220,7 @@ export const GIT_REF = new Map<string, Referencia>([
     ['migracion', new Referencia('https://git-scm.com/book/es/v2/Git-y-Otros-Sistemas-Migraci%C3%B3n-a-Git', 'Migración de otros sistemas y otras acciones', GIT_KEY)],
     ['flow', new Referencia('https://aprendegit.com/que-es-git-flow/', 'Flujo de trabajo con Git', GIT_KEY)],
     ['practicas', new Referencia('https://codigofacilito.com/articles/41', 'Buenas practicas para realizar commits', GIT_KEY)],
+    ['branching-strategies', new Referencia('https://codigofacilito.com/articles/41', 'Estrategias de Ramificación', GIT_KEY)],
 ]);
 
 export const USER_HISTORIES_KEY = 'Historias-Usuario';

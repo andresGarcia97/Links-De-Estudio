@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { COMPILACION } from 'src/app/models/content/content2';
 import { COMPILACION_REF } from 'src/app/models/linkReferencia';
 
@@ -6,11 +6,13 @@ import { COMPILACION_REF } from 'src/app/models/linkReferencia';
   selector: 'app-compilacion',
   templateUrl: './compilacion.component.html'
 })
-export class CompilacionComponent {
+export class CompilacionComponent implements OnInit {
 
   items = COMPILACION;
 
   components = new Map([ ...COMPILACION_REF ]);
+
+  itemStart = '';
 
   tittles = new Map<string, string>([
     ['compilacion', '¿ que es ?'],
@@ -28,5 +30,9 @@ export class CompilacionComponent {
     ['casting', 'Casteo de Datos'],
     ['verbosity', 'Verbosidad'],
   ]);
+
+  ngOnInit(): void {
+    this.itemStart = history?.state?.newItem;
+  }
 
 }
