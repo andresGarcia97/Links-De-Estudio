@@ -16,19 +16,20 @@ export class GlosarioComponent implements OnInit {
   temas1 = new Content1();
   temas2 = new Content2();
   temas3 = new Content3();
+  fuentes = new LinkFuente().fuentes;
 
   temas: Item[] = [];
 
   ngOnInit(): void {
     this.temas = Array.from(this.temas1.temas).concat(this.temas2.temas).concat(this.temas3.temas);
     console.info("%c Actualmente son: " + this.temas.length + " Temas ", "color:#000; font-size: 16px;background:#FFBA08; font-weight: bold;");
+    console.info("%c Tambien hay: " + this.fuentes.size + " Temas practicos ", "color:white; font-size: 16px;background:#1976d2; font-weight: bold;");
   }
 
   constructor(private router: Router) { }
 
   search = '';
 
-  fuentes = new LinkFuente().fuentes;
   previewFuentes = Array.from(this.fuentes, ([name, value]) => ({ name, value }));
   onlyFuentes = this.convertArrayObjectToArrayStrings(this.previewFuentes);
 

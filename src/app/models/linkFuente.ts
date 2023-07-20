@@ -34,7 +34,6 @@ export const BACK = new Map([
     ['comandosDocker', { titulo: 'Comandos Docker', referencia: 'https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes-es' }],
     ['paradigmaFuncionaljava', { titulo: 'Paradigma funcional Java', referencia: 'https://www.adictosaltrabajo.com/2016/06/23/uso-basico-de-java-8-stream-y-lambdas/' }],
     ['apisJava', { titulo: 'APIs comunes de Java', referencia: 'https://www.simplilearn.com/tutorials/java-tutorial/java-api?source=sl_frs_nav_playlist_video_clicked#the_most_commonly_used_java_apis' }],
-    ['apisNavegador', { titulo: 'APIs del navegador', referencia: 'https://developer.mozilla.org/es/docs/Learn/JavaScript/Client-side_web_APIs/Introduction#apis_de_navegador_m%C3%A1s_comunes' }],
     ['precendenciaJava', { titulo: 'Operadores Java', referencia: 'https://es.stackoverflow.com/questions/57225/cu%C3%A1l-es-la-precedencia-de-operadores-en-java/57226' }],
     ['codificacionJava', { titulo: 'Codificación en Java', referencia: 'https://amap.cantabria.es/amap/bin/view/AMAP/CodificacionJava' }],
     ['eventLoop', { titulo: 'Event Loop', referencia: 'https://geekflare.com/es/javascript-event-loops/' }],
@@ -44,7 +43,9 @@ export const BACK = new Map([
     ['orderAndSearch', { titulo: 'Busqueda & Ordenacion', referencia: 'https://www.javaguides.net/p/data-structures-and-algorithms-in-java.html' }],
     ['LinuxCommands', { titulo: 'Comandos de Linux', referencia: 'https://xmind.app/m/WwtB/' }],
     ['sqlAdvanced', { titulo: 'Preguntas SQL Avanzado', referencia: 'https://www.kdnuggets.com/2023/01/top-10-advanced-data-science-sql-interview-questions-must-know-answer.html?utm_source=rss&utm_medium=rss&utm_campaign=top-10-advanced-data-science-sql-interview-questions-you-must-know-how-to-answer' }],
-    ['sqlPractices', { titulo: 'Buenas practicas SQL', referencia: 'https://www.metabase.com/learn/sql-questions/sql-best-practices' }]
+    ['sqlPractices', { titulo: 'Buenas practicas SQL', referencia: 'https://www.metabase.com/learn/sql-questions/sql-best-practices' }],
+    ['sqlRoadMap', { titulo: 'Mapa de Ruta SQL', referencia: 'https://roadmap.sh/sql' }],
+    ['javaTags', { titulo: 'Inside Java Tags', referencia: 'https://inside.java/tags' }],
 ]);
 
 export const UTILS = new Map([
@@ -55,7 +56,9 @@ export const UTILS = new Map([
     ['devDocs', { titulo: 'Dev Docs', referencia: 'https://devdocs.io/' }],
     ['cliArt', { titulo: 'Comand Line Art', referencia: 'https://github.com/jlevy/the-art-of-command-line/blob/master/README-es.md' }],
     ['bundlephobia', { titulo: 'Bundle Phobia', referencia: 'https://bundlephobia.com/' }],
-    ['wizardZines', { titulo: 'Trucos & Comics', referencia: 'https://wizardzines.com/' }]
+    ['wizardZines', { titulo: 'Trucos & Comics', referencia: 'https://wizardzines.com/' }],
+    ['apisNavegador', { titulo: 'APIs del navegador', referencia: 'https://developer.mozilla.org/es/docs/Learn/JavaScript/Client-side_web_APIs/Introduction#apis_de_navegador_m%C3%A1s_comunes' }],
+    ['eventDrivenArquitectures', { titulo: 'Event Driven Visuals', referencia: 'https://serverlessland.com/event-driven-architecture/visuals/' }]
 ]);
 
 export const TESTING = new Map([
