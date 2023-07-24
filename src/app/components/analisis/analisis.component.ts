@@ -28,6 +28,7 @@ export class AnalisisComponent implements OnInit {
     ['timeComplexityBigO', 'Big O Notación'],
     ['kpis', 'KPI'],
     ['manifiestoReactivo', 'Manifiesto Reactivo'],
+    ['declineDesign', 'Declive del Diseño'],
   ]);
 
   ngOnInit(): void {

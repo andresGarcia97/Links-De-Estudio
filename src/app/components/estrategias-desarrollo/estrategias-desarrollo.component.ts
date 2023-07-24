@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ESTATEGIAS_DESARROLLO } from 'src/app/models/content/content2';
 import { ESTRATEGIAS_DESARROLLO_REF } from 'src/app/models/linkReferencia';
 
@@ -6,11 +6,13 @@ import { ESTRATEGIAS_DESARROLLO_REF } from 'src/app/models/linkReferencia';
   selector: 'app-estrategias-desarrollo',
   templateUrl: './estrategias-desarrollo.component.html'
 })
-export class EstrategiasDesarrolloComponent {
+export class EstrategiasDesarrolloComponent implements OnInit {
 
   items = ESTATEGIAS_DESARROLLO;
 
   components = new Map([ ...ESTRATEGIAS_DESARROLLO_REF ]);
+
+  itemStart = '';
 
   tittles = new Map<string, string>([
     ['ddd', 'DDD'],
@@ -21,5 +23,9 @@ export class EstrategiasDesarrolloComponent {
     ['tld', 'TLD vs TDD'],
     ['bduf', 'BDUF']
   ]);
+
+  ngOnInit(): void {
+    this.itemStart = history?.state?.newItem;
+  }
 
 }
