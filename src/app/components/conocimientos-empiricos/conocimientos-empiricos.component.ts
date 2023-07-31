@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CONOCIMIENTOS_EMPIRICOS } from 'src/app/models/content/content2';
 import { CONOCIMIENTO_EMPIRICO } from 'src/app/models/linkReferencia';
 
@@ -6,11 +6,13 @@ import { CONOCIMIENTO_EMPIRICO } from 'src/app/models/linkReferencia';
   selector: 'app-conocimientos-empiricos',
   templateUrl: './conocimientos-empiricos.component.html'
 })
-export class ConocimientosEmpiricosComponent {
+export class ConocimientosEmpiricosComponent implements OnInit {
 
   items = CONOCIMIENTOS_EMPIRICOS;
 
   components = new Map([ ...CONOCIMIENTO_EMPIRICO ]);
+
+  itemStart = '';
 
   tittles = new Map<string, string>([
     ['cristales', 'Cristales rotos'],
@@ -26,5 +28,9 @@ export class ConocimientosEmpiricosComponent {
     ['pastaTheory', 'Codigo como pasta'],
     ['thingsThatAreNotTaught', 'Cosas que no se enseñan']
   ]);
+
+  ngOnInit(): void {
+    this.itemStart = history?.state?.newItem;
+  }
 
 }
