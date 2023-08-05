@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FRAMEWORKS } from 'src/app/models/content/content1';
 import { FRAMEWORKS_REF } from 'src/app/models/linkReferencia';
 
@@ -6,11 +6,13 @@ import { FRAMEWORKS_REF } from 'src/app/models/linkReferencia';
   selector: 'app-frameworks',
   templateUrl: './frameworks.component.html'
 })
-export class FrameworksComponent {
+export class FrameworksComponent implements OnInit {
 
   items = FRAMEWORKS;
 
   components = new Map([ ...FRAMEWORKS_REF ]);
+
+  itemStart = '';
 
   tittles = new Map<string, string>([
     ['frameworks', '¿ Que son ?'],
@@ -19,4 +21,8 @@ export class FrameworksComponent {
     ['scafolding', 'Scaffolding'],
   ]);
 
+  ngOnInit(): void {
+    this.itemStart = history?.state?.newItem;
+  }
+  
 }

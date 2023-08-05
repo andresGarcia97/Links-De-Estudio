@@ -1842,6 +1842,26 @@ export const PERSONAS =
                 '',
                 '<strong>Sindrome de No Inventado aqui:</strong> Un rechazo frontal y categorico, a toda solución que sean ajenas, aunque sean más simples o eficientes, ',
                 ' - prefiriendo gastar recursos innecesariamente, que abrirse a nuevas oportunidades y conocimientos, que podrian mejorar las cosas ',
+            ]),
+        new Item('icebergIgnorance',
+            [
+                '- En 1989 Sidney Yoshida desarrollo la teoria de "Iceberg de la ignorancia", que refleja algunos datos ',
+                ' - contundentes sobre el funcionamiento de las organizaciones',
+                '',
+                '- El <strong>4%</strong> de los problemas son conocidos por la Alta Dirección ',
+                '- El <strong>9%</strong> de los problemas son conocidos por los mandos medios ',
+                '- El <strong>74%</strong> de los problemas son conocidos por los supervisores ',
+                '- El <strong>100%</strong> de los problemas son conocidos por los operarios de linea ',
+                '',
+                '- En otras palabras, entre mayor sea el rango, mayor sera el desconocimiento de los problemas, afectando multiples aspectos como: ',
+                ' - toma de decisiones de manera inadecuadas, ineficaz asignación de recursos, fugas de talento, ineficiencia, entre otras ',
+                '- Debido a factores, como falta de comunicación, liderazgo inadecuado, miedos a las consecuencias de los errores, fugas de información ',
+                '',
+                '<strong>Como conectar las altas jerarquias, con la primera linea</strong>',
+                '- Escuchar con atención y preguntar con curiosidad                     - Fomentar el sentido de pertenencia ',
+                '- Mostrar humildad y nunca dudar en solicitar ayuda                    - Entender porque y como se puede mejorar como equipo',
+                '- Crear espacios de integración y colaboración                         - Delegar de manera real y a conciencia ',
+                '- Que toda la jerarquia participe, a la hora de buscar soluciones      - Desterrar el miedo a las represalias',
             ])
     ];
 

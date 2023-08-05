@@ -29,6 +29,7 @@ export class PatronesComponent implements OnInit {
     ['patronUndoRedo', 'Patron undo-redo'],
     ['stranglerFig', 'StranglerFig App'],
     ['antipatronesPM', 'Anti Patrones, PM'],
+    ['patternsMicroservices', 'Patrones & Microservicios'],
   ]);
 
   ngOnInit(): void {

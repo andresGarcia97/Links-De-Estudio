@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { PERSONAS } from 'src/app/models/content/content1';
 import { PEOPLE } from 'src/app/models/linkReferencia';
 
@@ -6,11 +6,13 @@ import { PEOPLE } from 'src/app/models/linkReferencia';
   selector: 'app-personas',
   templateUrl: './personas.component.html'
 })
-export class PersonasComponent {
+export class PersonasComponent implements OnInit {
 
   items = PERSONAS;
 
   components = new Map([ ...PEOPLE ]);
+
+  itemStart = '';
 
   tittles = new Map<string, string>([
     ['personasYprocesos', 'Personas y procesos'],
@@ -22,7 +24,12 @@ export class PersonasComponent {
     ['capa8', 'Error en capa 8'],
     ['noNewsGoodNews', 'No News Good News'],
     ['tiposHackers', 'Tipos de Hackers'],
-    ['sindromesLaborales', 'Sindromes Laborales']
+    ['sindromesLaborales', 'Sindromes Laborales'],
+    ['icebergIgnorance', 'Iceberg de la Ignorancia']
   ]);
+
+  ngOnInit(): void {
+    this.itemStart = history?.state?.newItem;
+  }
 
 }
