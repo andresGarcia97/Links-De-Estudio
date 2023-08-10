@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NUBE } from 'src/app/models/content/content2';
 import { NUBE_AND_APIS } from 'src/app/models/linkReferencia';
 
@@ -6,11 +6,13 @@ import { NUBE_AND_APIS } from 'src/app/models/linkReferencia';
   selector: 'app-nube',
   templateUrl: './nube.component.html'
 })
-export class NubeComponent {
+export class NubeComponent implements OnInit {
 
   items = NUBE;
 
   components = new Map([ ...NUBE_AND_APIS ]);
+
+  itemStart = '';
 
   tittles = new Map<string, string>([
     ['nube', 'Tipos de nube'],
@@ -31,5 +33,9 @@ export class NubeComponent {
     ['apiGateway', 'Api Gateway'],
     ['falaciesDistributedSystems', 'Sistemas Distribuidos']
   ]);
+
+  ngOnInit(): void {
+    this.itemStart = history?.state?.newItem;
+  }
 
 }

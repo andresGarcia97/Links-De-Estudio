@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { HARDWARE } from 'src/app/models/content/content1';
 import { HARDWARE_REF } from 'src/app/models/linkReferencia';
 
@@ -6,11 +6,13 @@ import { HARDWARE_REF } from 'src/app/models/linkReferencia';
   selector: 'app-hardware',
   templateUrl: './hardware.component.html'
 })
-export class HardwareComponent {
+export class HardwareComponent implements OnInit {
 
   items = HARDWARE;
 
   components = new Map([ ...HARDWARE_REF ]);
+
+  itemStart = '';
 
   tittles = new Map<string, string>([
     ['escalamiento', 'Escalamiento'],
@@ -23,5 +25,9 @@ export class HardwareComponent {
     ['vmVsContainers', 'VM VS Contenedores'],
     ['falseSharing', 'False Sharing'],
   ]);
+
+  ngOnInit(): void {
+    this.itemStart = history?.state?.newItem;
+  }
 
 }
