@@ -30,6 +30,8 @@ export class ArquitecturasComponent implements OnInit {
     ['mvpMvc', 'MVP'],
     ['otrasArquitecturas', 'Otras (patrones)'],
     ['monolitos', 'Monolitos'],
+    ['stylesArchitecture1', 'Estilos & Patrones #1'],
+    ['stylesArchitecture2', 'Estilos & Patrones #2'],
   ]);
 
   ngOnInit(): void {
