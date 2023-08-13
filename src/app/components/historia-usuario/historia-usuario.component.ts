@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { HISTORIAS_USUARIO } from 'src/app/models/content/content2';
 import { USER_HISTORIES } from 'src/app/models/linkReferencia';
 
@@ -6,11 +6,13 @@ import { USER_HISTORIES } from 'src/app/models/linkReferencia';
   selector: 'app-historia-usuario',
   templateUrl: './historia-usuario.component.html'
 })
-export class HistoriaUsuarioComponent {
+export class HistoriaUsuarioComponent implements OnInit {
 
   items = HISTORIAS_USUARIO;
 
   components = new Map([ ...USER_HISTORIES ]);
+
+  itemStart = '';
 
   tittles = new Map<string, string>([
     ['historias', '¿ que son ?'],
@@ -24,5 +26,9 @@ export class HistoriaUsuarioComponent {
     ['storyPoints', 'Puntos'],
     ['casosVsRequisitosVsHu', 'Hu Vs Casos de Uso']
   ]);
+
+  ngOnInit(): void {
+    this.itemStart = history?.state?.newItem;
+  }
 
 }

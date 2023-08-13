@@ -22,18 +22,9 @@ export class SqlNosqlComponent implements OnInit {
     ['integridad', 'Integridad'],
     ['erd', 'ERD'],
     ['normalizacion', 'Normalización'],
-    ['nosql', 'NoSQL'],
-    ['tiposBD', 'Tipos NoSQL'],
     ['acid', 'Esquema ACID'],
-    ['orm', 'ORM'],
-    ['consistenciaEventual', 'Consistencia'],
-    ['algebraRelacional', 'Algebra Relacional'],
-    ['n+1selects', 'N + 1 Selects'],
     ['indices', 'Indices'],
-    ['boyceCodd', 'Boyce-Codd'],
-    ['sqlVsNosql', 'SQL ó NoSql'],
     ['joins', 'Tipos de Joins'],
-    ['locking', 'Bloqueos'],
   ]);
 
   ngOnInit(): void {

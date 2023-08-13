@@ -14,7 +14,8 @@ export class LinkReferencia {
         ...REFACTORING,          ...REQUISITOS_REF,           ...PRINCIPIOS_REF,
         ...SEGURIDAD_REF,        ...SMELL_CODES_REF,          ...PERSISTENCY,
         ...UML_REF,              ...VERSIONAMIENTO_REF,       ...HARDWARE_REF,
-        ...WEB_REF,              ...LEYES_REF,                ...NEURO_MARKETING_REF
+        ...WEB_REF,              ...LEYES_REF,                ...NEURO_MARKETING_REF,
+        ...PERSISTENCY_ADVANCED
     ]);
 
     public routesAndSections: Map<string, string> = new Map([
@@ -36,6 +37,7 @@ export class LinkReferencia {
         [DATA_BASES_KEY, 'bases-de-datos'],                   [UML_KEY, 'uml'],
         [VERSIONAMIENTO_KEY, 'versionamiento'],               [HARDWARE_KEY, 'hardware'],
         [WEB_KEY, 'web'],                                     [NEURO_MARKETING_KEY, 'neuro-marketing'],
+        [DATA_BASES_ADVANCED_KEY, 'bd-avanzado']
     ]);
 
 }
@@ -520,18 +522,23 @@ export const PERSISTENCY = new Map<string, Referencia>([
     ['integridad', new Referencia('https://platzi.com/blog/que-es-ddl-dml-dcl-y-tcl-integridad-referencial/', 'Integridad Referencial', DATA_BASES_KEY)],
     ['erd', new Referencia('https://www.lucidchart.com/pages/es/que-es-un-diagrama-entidad-relacion', 'Diagrama Entidad-Relación', DATA_BASES_KEY)],
     ['normalizacion', new Referencia('https://docs.microsoft.com/en-us/office/troubleshoot/access/database-normalization-description', 'Normalización de una BD', DATA_BASES_KEY)],
-    ['nosql', new Referencia('https://pandorafms.com/blog/es/bases-de-datos-nosql/', 'Bases de Datos NO SQL', DATA_BASES_KEY)],
-    ['tiposBD', new Referencia('https://www.acens.com/wp-content/images/2014/02/bbdd-nosql-wp-acens.pdf', 'Tipos de BD No SQL', DATA_BASES_KEY)],
     ['acid', new Referencia('https://dosideas.com/noticias/base-de-datos/973-acid-en-las-bases-de-datos', 'Esquema ACID', DATA_BASES_KEY)],
-    ['orm', new Referencia('https://programarfacil.com/blog/que-es-un-orm/', 'Mapeo Objetos-Relacional', DATA_BASES_KEY)],
-    ['consistenciaEventual', new Referencia('https://medium.com/@gabanox/consistencia-eventual-en-s3-6ba5b2ecd721', 'Consistencia Eventual', DATA_BASES_KEY)],
-    ['algebraRelacional', new Referencia('https://sites.google.com/site/basededatosdistribuidastics/algebra-relacional', 'Algebra Relacional', DATA_BASES_KEY)],
-    ['n+1selects', new Referencia('https://stackoverflow.com/questions/97197/what-is-the-n1-selects-problem-in-orm-object-relational-mapping', 'N + 1 Selects', DATA_BASES_KEY)],
     ['indices', new Referencia('https://www.ibm.com/docs/es/mam/7.6.0.8?topic=databases-database-indexing', 'Indices', DATA_BASES_KEY)],
-    ['boyceCodd', new Referencia('https://normalizacionunit4.blogspot.com/2019/05/46-forma-normal-boyce-codd.html', 'Boyce-Codd', DATA_BASES_KEY)],
-    ['sqlVsNosql', new Referencia('https://medium.com/@eugeniomendoza/c%C3%B3mo-saber-si-necesitas-una-base-de-datos-nosql-b6cfd5bb7d9b', 'SQL ó NoSql', DATA_BASES_KEY)],
     ['joins', new Referencia('https://ingenieriadesoftware.es/tipos-sql-join-guia-referencia/', 'Tipos de Joins', DATA_BASES_KEY)],
-    ['locking', new Referencia('https://vladmihalcea.com/optimistic-vs-pessimistic-locking/', 'Bloqueo Optimista & Pesimista', DATA_BASES_KEY)],
+]);
+
+export const DATA_BASES_ADVANCED_KEY = 'BD Avanzado'
+export const PERSISTENCY_ADVANCED = new Map<string, Referencia>([
+    ['nosql', new Referencia('https://pandorafms.com/blog/es/bases-de-datos-nosql/', 'Bases de Datos NO SQL', DATA_BASES_ADVANCED_KEY)],
+    ['tiposBD', new Referencia('https://www.acens.com/wp-content/images/2014/02/bbdd-nosql-wp-acens.pdf', 'Tipos de BD No SQL', DATA_BASES_ADVANCED_KEY)],
+    ['orm', new Referencia('https://programarfacil.com/blog/que-es-un-orm/', 'Mapeo Objetos-Relacional', DATA_BASES_ADVANCED_KEY)],
+    ['consistenciaEventual', new Referencia('https://medium.com/@gabanox/consistencia-eventual-en-s3-6ba5b2ecd721', 'Consistencia Eventual', DATA_BASES_ADVANCED_KEY)],
+    ['algebraRelacional', new Referencia('https://sites.google.com/site/basededatosdistribuidastics/algebra-relacional', 'Algebra Relacional', DATA_BASES_ADVANCED_KEY)],
+    ['n+1selects', new Referencia('https://stackoverflow.com/questions/97197/what-is-the-n1-selects-problem-in-orm-object-relational-mapping', 'N + 1 Selects', DATA_BASES_ADVANCED_KEY)],
+    ['boyceCodd', new Referencia('https://normalizacionunit4.blogspot.com/2019/05/46-forma-normal-boyce-codd.html', 'Boyce-Codd', DATA_BASES_ADVANCED_KEY)],
+    ['sqlVsNosql', new Referencia('https://medium.com/@eugeniomendoza/c%C3%B3mo-saber-si-necesitas-una-base-de-datos-nosql-b6cfd5bb7d9b', 'SQL ó NoSql', DATA_BASES_ADVANCED_KEY)],
+    ['locking', new Referencia('https://vladmihalcea.com/optimistic-vs-pessimistic-locking/', 'Bloqueo Optimista & Pesimista', DATA_BASES_ADVANCED_KEY)],
+    ['sqlOrderExecution', new Referencia('https://matam-kirankumar.medium.com/sql-query-order-of-execution-37001da1462', 'Orden de Ejecución', DATA_BASES_ADVANCED_KEY)],
 ]);
 
 export const UML_KEY = 'UML';

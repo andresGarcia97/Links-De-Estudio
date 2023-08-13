@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {
   AGILES_KEY, ANALISIS_KEY, ARQUITECTURAS_KEY, BUENAS_PRACTICAS_KEY, CALIDAD_KEY, CARACTERISTICAS_KEY, COMPILACION_KEY,
-  CONOCIMIENTO_EMPIRICO_KEY, CONTENEDORES_KEY, DATA_BASES_KEY, ESTRATEGIAS_DESARROLLO_KEY, ESTRUCTURAS_KEY, FRAMEWORKS_KEY,
+  CONOCIMIENTO_EMPIRICO_KEY, CONTENEDORES_KEY, DATA_BASES_ADVANCED_KEY, DATA_BASES_KEY, ESTRATEGIAS_DESARROLLO_KEY, ESTRUCTURAS_KEY, FRAMEWORKS_KEY,
   GIT_KEY, HARDWARE_KEY, LEYES_KEY, MALAS_PRACTICAS_KEY, METODOLOGIAS_KEY, NEURO_MARKETING_KEY, NUBE_APIS_KEY, OTROS_KEY,
   PARADIGMAS_KEY, PATRONES_KEY, PERSONAS_KEY, POO_KEY, PRINCIPIOS_KEY, REFACTORIZACION_KEY, REQUISITOS_KEY, SEGURIDAD_KEY,
   SMELL_CODES_KEY, TESTING_ADVANCED_KEY, TESTING_KEY, UML_KEY, USER_HISTORIES_KEY, VERSIONAMIENTO_KEY, WEB_KEY
@@ -46,6 +46,7 @@ import { SqlNosqlComponent } from './components/sql-nosql/sql-nosql.component';
 import { UmlComponent } from './components/uml/uml.component';
 import { VersionamientoComponent } from './components/versionamiento/versionamiento.component';
 import { WebComponent } from './components/web/web.component';
+import { SqlNosqlAdvancedComponent } from './components/sql-nosql-advanced/sql-nosql-advanced.component';
 
 const routes: Routes = [
 
@@ -76,6 +77,7 @@ const routes: Routes = [
   { path: 'historias-de-usuario', component: HistoriaUsuarioComponent, title: USER_HISTORIES_KEY },
   { path: 'compilacion', component: CompilacionComponent, title: COMPILACION_KEY },
   { path: 'bases-de-datos', component: SqlNosqlComponent, title: DATA_BASES_KEY },
+  { path: 'bd-avanzado', component: SqlNosqlAdvancedComponent, title: DATA_BASES_ADVANCED_KEY },
   { path: 'principios', component: PrincipiosComponent, title: PRINCIPIOS_KEY },
   { path: 'refactorizacion', component: RefactorizacionComponent, title: REFACTORIZACION_KEY },
   { path: 'patrones', component: PatronesComponent, title: PATRONES_KEY },

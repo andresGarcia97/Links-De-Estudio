@@ -44,6 +44,7 @@ import { WebComponent } from './components/web/web.component';
 import { FilterPipe } from './pipes/filter.pipe';
 import { HomeComponent } from './components/home/home.component';
 import { NeuroMarketingComponent } from './components/neuro-marketing/neuro-marketing.component';
+import { SqlNosqlAdvancedComponent } from './components/sql-nosql-advanced/sql-nosql-advanced.component';
 
 @NgModule({
   declarations: [
@@ -87,7 +88,8 @@ import { NeuroMarketingComponent } from './components/neuro-marketing/neuro-mark
     MetaEstructuraComponent,
     LeyesComponent,
     HomeComponent,
-    NeuroMarketingComponent
+    NeuroMarketingComponent,
+    SqlNosqlAdvancedComponent
   ],
   imports: [
     BrowserModule,
