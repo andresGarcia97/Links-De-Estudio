@@ -539,6 +539,7 @@ export const PERSISTENCY_ADVANCED = new Map<string, Referencia>([
     ['sqlVsNosql', new Referencia('https://medium.com/@eugeniomendoza/c%C3%B3mo-saber-si-necesitas-una-base-de-datos-nosql-b6cfd5bb7d9b', 'SQL ó NoSql', DATA_BASES_ADVANCED_KEY)],
     ['locking', new Referencia('https://vladmihalcea.com/optimistic-vs-pessimistic-locking/', 'Bloqueo Optimista & Pesimista', DATA_BASES_ADVANCED_KEY)],
     ['sqlOrderExecution', new Referencia('https://matam-kirankumar.medium.com/sql-query-order-of-execution-37001da1462', 'Orden de Ejecución', DATA_BASES_ADVANCED_KEY)],
+    ['sargeable', new Referencia('https://dev.to/kanani_nirav/secret-to-optimizing-sql-queries-understand-the-sql-execution-order-28m1', 'Consultas SARGEABLE', DATA_BASES_ADVANCED_KEY)],
 ]);
 
 export const UML_KEY = 'UML';

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MALAS_PRACTICAS } from 'src/app/models/content/content2';
 import { MALAS_PRACTICAS_REF } from 'src/app/models/linkReferencia';
 
@@ -6,11 +6,13 @@ import { MALAS_PRACTICAS_REF } from 'src/app/models/linkReferencia';
   selector: 'app-malas-practicas',
   templateUrl: './malas-practicas.component.html'
 })
-export class MalasPracticasComponent {
+export class MalasPracticasComponent implements OnInit {
 
   items = MALAS_PRACTICAS;
 
   components = new Map([ ...MALAS_PRACTICAS_REF ]);
+
+  itemStart = '';
 
   tittles = new Map<string, string>([
     ['callbackhell', 'Callback Hell'],
@@ -19,5 +21,9 @@ export class MalasPracticasComponent {
     ['contraAgilidad', 'Contra la Agilidad'],
     ['malasPracticasSCRUM', 'Contra SCRUM'],
   ]);
+
+  ngOnInit(): void {
+    this.itemStart = history?.state?.newItem;
+  }
 
 }

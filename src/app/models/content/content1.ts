@@ -2267,11 +2267,11 @@ export const BASES_DE_DATOS =
                 '- La instrucción del Join es usada, para enlazar 2 tablas relacionadas, generalmente mediante un campo en comun(foreing key)',
                 '- Una manera de entenderlos es usando la teoria de conjuntos ',
                 '',
-                '<strong> - Inner Join:</strong> El join por defecto, solo devuelve las fechas donde haya una coincidencia, entre ambas tablas',
+                '<strong> - Inner Join:</strong>       El join por defecto, solo devuelve los registros donde haya una coincidencia, entre ambas tablas',
                 '  - donde el valor del campo <strong>A</strong> se une con la coincidencia respectiva de la tabla <strong>B</strong>',
-                '<strong> - Left outer Join:</strong> Son todas las filas para las que haya coincidencia más el contenido de la tabla <strong>A</strong> que no coincida ',
+                '<strong> - Left outer Join:</strong>  Son todas las filas para las que haya coincidencia más el contenido de la tabla <strong>A</strong> que no coincida ',
                 '<strong> - Right outer Join:</strong> El mismo resultado, pero con el contenido de la tabla <strong>B</strong> aunque suene redundante, puede ayudar a la compresion de la consulta ',
-                '<strong> - Full outer join:</strong> Es la suma de los 2 anteriores, donde se quieren las filas de <strong>A</strong> y <strong>B</strong>, haya coincidencias o no',
+                '<strong> - Full outer join:</strong>  Es la suma de los 2 anteriores, donde se quieren las filas de <strong>A</strong> y <strong>B</strong>, haya coincidencias o no',
                 '',
                 '- Tambien hay otros tipos de Joins, que son combinaciones de estos anteriores para reducir la información entre las tablas ',
             ])
@@ -2452,5 +2452,20 @@ export const BASE_DE_DATOS_AVANZADO =
                 '      ORDER BY                            ORDER BY                   Ordena los datos entregados ',
                 '',
                 '      LIMIT                               LIMIT                      Se limita la cantidad de registros entregados',
+            ]),
+        new Item('sargeable',
+            [
+                '- <strong>SARGABLE</strong> significa "<strong>S</strong>earched <strong>ARGU</strong>ment <strong>ABLE</strong>", referiendose a consultas que pueden hacer uso de los indices, siguiendo algunas indicaciones',
+                '',
+                '- Utiliza funciones y argumentos que puedan aprovechar los indices, como igualdad(=), desigualdad(<>, !=), Rango(BETWEEN), Pertenencia(IN)',
+                '- No utiliza funciones que evitan los indices o requieren de un full scan, como Negación(NOT), comodines(LIKE), Operaciones aritmeticas(+, -, *, /)',
+                '',
+                '<strong>- Tambien hay pautas como:</strong> ',
+                ' - Usar los tipos correctos de los datos, para evitar conversiones implicitas que puedan afectar el uso de los indices',
+                ' - Evitar usar Operaciones de ordenamiento y agrupamiento, solo se debe de usar cuando son requeridas ',
+                ' - Usar columnas derivadas o valores precalculadas, en vez de usar operaciones sobre las columnas, y menos en las que estan indexadas ',
+                ' - Siempre intente usar el WHERE, como una manera de reducir los datos, para todos los pasos subsiguientes ',
+                ' - Intente usar LIMIT, para mejorar el rendimiento y la cantidad de datos a procesar ',
+                ' - Escoja los JOINS indicados, no siempre sera necesario, tener toda la información de todas las tablas'
             ])
     ];

@@ -25,6 +25,7 @@ export class SqlNosqlAdvancedComponent implements OnInit {
     ['sqlVsNosql', 'SQL ó NoSql'],
     ['locking', 'Bloqueos'],
     ['sqlOrderExecution', 'Orden de Ejecución'],
+    ['sargeable', 'SARGEABLE'],
   ]);
 
   ngOnInit(): void {
