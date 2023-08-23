@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {
-  AGILES_KEY, ANALISIS_KEY, ARQUITECTURAS_KEY, BUENAS_PRACTICAS_KEY, CALIDAD_KEY, CARACTERISTICAS_KEY, COMPILACION_KEY,
+  AGILES_KEY, ANALISIS_KEY, ARQUITECTURAS_KEY, BUENAS_PRACTICAS_KEY, CALIDAD_KEY, CARACTERISTICAS_KEY, CD_CI_KEY, COMPILACION_KEY,
   CONOCIMIENTO_EMPIRICO_KEY, CONTENEDORES_KEY, DATA_BASES_ADVANCED_KEY, DATA_BASES_KEY, ESTRATEGIAS_DESARROLLO_KEY, ESTRUCTURAS_KEY, FRAMEWORKS_KEY,
   GIT_KEY, HARDWARE_KEY, LEYES_KEY, MALAS_PRACTICAS_KEY, METODOLOGIAS_KEY, NEURO_MARKETING_KEY, NUBE_APIS_KEY, OTROS_KEY,
   PARADIGMAS_KEY, PATRONES_KEY, PERSONAS_KEY, POO_KEY, PRINCIPIOS_KEY, REFACTORIZACION_KEY, REQUISITOS_KEY, SEGURIDAD_KEY,
@@ -12,6 +12,7 @@ import { AnalisisComponent } from './components/analisis/analisis.component';
 import { ArquitecturasComponent } from './components/arquitecturas/arquitecturas.component';
 import { BuenasPracticasComponent } from './components/buenas-practicas/buenas-practicas.component';
 import { CalidadComponent } from './components/calidad/calidad.component';
+import { CDCIComponent } from './components/cd-ci/cd-ci.component';
 import { CompilacionComponent } from './components/compilacion/compilacion.component';
 import { ConocimientosEmpiricosComponent } from './components/conocimientos-empiricos/conocimientos-empiricos.component';
 import { ContenedoresComponent } from './components/contenedores/contenedores.component';
@@ -42,14 +43,15 @@ import { RefactorizacionComponent } from './components/refactorizacion/refactori
 import { RequisitosComponent } from './components/requisitos/requisitos.component';
 import { SeguridadComponent } from './components/seguridad/seguridad.component';
 import { SmellsCodesComponent } from './components/smells-codes/smells-codes.component';
+import { SqlNosqlAdvancedComponent } from './components/sql-nosql-advanced/sql-nosql-advanced.component';
 import { SqlNosqlComponent } from './components/sql-nosql/sql-nosql.component';
 import { UmlComponent } from './components/uml/uml.component';
 import { VersionamientoComponent } from './components/versionamiento/versionamiento.component';
 import { WebComponent } from './components/web/web.component';
-import { SqlNosqlAdvancedComponent } from './components/sql-nosql-advanced/sql-nosql-advanced.component';
 
 const routes: Routes = [
 
+  { path: 'cd-ci-infraestructura', component: CDCIComponent, title: CD_CI_KEY },
   { path: 'neuro-marketing', component: NeuroMarketingComponent, title: NEURO_MARKETING_KEY },
   { path: 'hardware', component: HardwareComponent, title: HARDWARE_KEY },
   { path: 'leyes', component: LeyesComponent, title: LEYES_KEY },

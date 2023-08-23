@@ -16,16 +16,11 @@ export class OtrosComponent implements OnInit {
 
   tittles = new Map<string, string>([
     ['scraping', 'Web Scrapping'],
-    ['cdci', 'CD/CI'],
-    ['devops', 'DevOps'],
     ['mvp', 'MVP'],
     ['turingComplete', 'Turing Complete'],
     ['ingenieriaInversa', 'Ingenieria Inversa'],
     ['dsl', 'DSL'],
     ['reglasInferencia', 'Reglas de Inferencia'],
-    ['dataStoring', 'Almacenamiento de datos'],
-    ['iascode', 'Infraestructura & Codigo'],
-    ['stateless-stateful', 'Stateless VS Stateful']
   ]);
 
   ngOnInit(): void {

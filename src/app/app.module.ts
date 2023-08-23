@@ -45,6 +45,7 @@ import { FilterPipe } from './pipes/filter.pipe';
 import { HomeComponent } from './components/home/home.component';
 import { NeuroMarketingComponent } from './components/neuro-marketing/neuro-marketing.component';
 import { SqlNosqlAdvancedComponent } from './components/sql-nosql-advanced/sql-nosql-advanced.component';
+import { CDCIComponent } from './components/cd-ci/cd-ci.component';
 
 @NgModule({
   declarations: [
@@ -89,7 +90,8 @@ import { SqlNosqlAdvancedComponent } from './components/sql-nosql-advanced/sql-n
     LeyesComponent,
     HomeComponent,
     NeuroMarketingComponent,
-    SqlNosqlAdvancedComponent
+    SqlNosqlAdvancedComponent,
+    CDCIComponent
   ],
   imports: [
     BrowserModule,

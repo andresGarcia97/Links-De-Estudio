@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { META_ESTRUCTURAS } from 'src/app/models/content/content1';
 import { META_ESTRUCTURAS_REF } from 'src/app/models/linkReferencia';
 
@@ -6,11 +6,13 @@ import { META_ESTRUCTURAS_REF } from 'src/app/models/linkReferencia';
   selector: 'app-meta-estructura',
   templateUrl: './meta-estructura.component.html'
 })
-export class MetaEstructuraComponent {
+export class MetaEstructuraComponent implements OnInit {
 
   items = META_ESTRUCTURAS;
 
   components = new Map([ ...META_ESTRUCTURAS_REF ]);
+
+  itemStart = '';
 
   tittles = new Map<string, string>([
     ['scope', 'Scope'],
@@ -27,5 +29,9 @@ export class MetaEstructuraComponent {
     ['dynamicProgramming', 'Programacion Dinamica'],
     ['serializationDeserialization', 'Serializar & Deserializar']
   ]);
+
+  ngOnInit(): void {
+    this.itemStart = history?.state?.newItem;
+  }
 
 }
