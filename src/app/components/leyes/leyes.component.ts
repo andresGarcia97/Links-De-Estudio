@@ -26,6 +26,7 @@ export class LeyesComponent implements OnInit {
     ['pareto', 'Ley de Pareto'],
     ['brooksLaw', 'Ley de Brooks'],
     ['mooreAndWirth', 'Moore & Wirth'],
+    ['amdahl', 'Ley de Amdahls']
   ]);
 
   ngOnInit(): void {

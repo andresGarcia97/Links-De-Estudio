@@ -1082,6 +1082,24 @@ export const LEYES =
                 '',
                 '- <strong>Ley de Moore:</strong> Observo en 1965 que el numero de transistores en un circuito integrado, se dobla aproximadamente cada 24 meses ',
                 '- No solo es lograr un Hardware más potente, tampoco se debe descuidar el Software, solamente porque sera compensado por mejores componentes '
+            ]),
+        new Item('amdahl',
+            [
+                '- Es una observación intuitiva, con una formula asociada, en que la mejora de rendimiento, que se puede obtener mediante procesamiento en paralelo ',
+                ' - esta limitada por las partes de un sistema, que es inherentemente secuencial, donde la formula enseña la mejora maxima que se puede esperar ',
+                '<strong> Smax = 1 / ((1-p) + p/s)</strong> Donde: ',
+                '<strong> Smax:</strong> Es la maxima mejora teorica, en el tiempo de ejecución de toda la tarea, Por ejemplo, si es 2, significa que puede ser el doble de rapida',
+                '<strong> p:</strong>    Es la proporción de tiempo total de ejecución invertido por la parte de la tarea, que se beneficia del procesamiento paralelo ',
+                '<strong> 1-p:</strong>  Es la parte del tiempo total de ejecución que dedica la parte de la tarea que debe ejecutarse secuencialmente ',
+                '<strong> s:</strong>    Es la mejora de rendimiento o aceleración de la parte de la tarea que se beneficia del procesamiento paralelo ',
+                '',
+                '- Para poner un ejemplo practico, si un programa con todas sus instrucciones en conjunto tarda 10 horas en ejecutarse en serie, ',
+                ' - y una porcion no se puede paralelizar, lo mejor que se puede esperar es acercarse al limite de mejora de 10 veces, no importa ',
+                ' - cuanto paralelices las nueve horas que pueden ser paralelas, nunca se podra eliminar la hora que debe ser ejecutada en secuencia ',
+                '',
+                '<strong>Ley de Gustafson</strong>',
+                '- Esta ley se puede considerar un complemento, ya que agrega predicciones a la mejora, entre más nucleos se vayan agregando ',
+                '- Esto debido a que la ley de Amdahl supone que el problema del tamaño es fijo, pero en la practica los recursos pueden crecer ',
             ])
     ];
 

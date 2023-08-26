@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { METODOLOGIAS } from 'src/app/models/content/content2';
 import { METODOLOGIAS_REF } from 'src/app/models/linkReferencia';
 
@@ -6,9 +6,11 @@ import { METODOLOGIAS_REF } from 'src/app/models/linkReferencia';
   selector: 'app-metodologias',
   templateUrl: './metodologias.component.html'
 })
-export class MetodologiasComponent {
+export class MetodologiasComponent implements OnInit {
 
   items = METODOLOGIAS;
+
+  itemStart = '';
 
   components = new Map([ ...METODOLOGIAS_REF ]);
 
@@ -29,5 +31,9 @@ export class MetodologiasComponent {
     ['kaizen', 'Kaizen'],
     ['scrumban', 'Scrumban']
   ]);
+
+  ngOnInit(): void {
+    this.itemStart = history?.state?.newItem;
+  }
 
 }

@@ -175,6 +175,7 @@ export const LEYES_REF = new Map<string, Referencia>([
     ['pareto', new Referencia('https://www.becas-santander.com/es/blog/ley-de-pareto.html', 'Ley de Pareto', LEYES_KEY)],
     ['brooksLaw', new Referencia('https://www.genbeta.com/desarrollo/ley-brooks-desarrollo-software-clasico-profesion-que-habria-hecho-imposible-linux/amp', 'Ley de Brooks', LEYES_KEY)],
     ['mooreAndWirth', new Referencia('https://blogs.uoc.edu/informatica/la-ley-de-wirth-la-ley-de-moore-inversa-del-software/', 'Ley de Moore & Ley de Wirth', LEYES_KEY)],
+    ['amdahl', new Referencia('https://www.techtarget.com/whatis/definition/Amdahls-law', 'Ley de Moore & Ley de Wirth', LEYES_KEY)],
 ]);
 
 export const CONTENEDORES_KEY = 'Contenedores';
