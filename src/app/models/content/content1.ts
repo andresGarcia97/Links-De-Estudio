@@ -736,6 +736,33 @@ export const CALIDAD =
                 '- Estas herramientas no solo nos muestran los posibles errores, tambien pueden dar sugerencias de posibles soluciones ',
                 '- Tambien permiten la configuración de nuevas reglas para cuando se trabaja en equipo y mantener la consistencia ',
             ]),
+        new Item('analystQA',
+            [
+                '- Es una forma de asegurar la calidad de los productos y los servicios que se utilizan a diario, un analista en esta area, ',
+                ' - es el encargado de garantizar la calidad final del producto, servicio, hardware, etc.. entre muchas más cosas',
+                '',
+                'Las funciones pueden variar de la complejidad y del tamaño del producto, pero generalmente son: ',
+                '<strong>- Planificar y Ejecutar Pruebas:</strong> Con el fin de detectar fallos, comportamiento inesperados, mediante diversas tecnicas como: ',
+                ' pruebas manuales, pruebas automatizadas, pruebas unitarias, de sistema, de aceptación, entre otras formas',
+                '<strong>- Documentar errores y validar correciones:</strong> Cualquier error que se detecte, debe ser documentado de forma clara y detallada, ',
+                ' para que pueda ser replicado, analizado y consecuentemente corregido, ya sea mediante capturas de pantalla, o otras evidencias ',
+                '<strong>- Colaboración:</strong> Estos profesionales, trabajan de forma estrecha con diferentes equipos, como desarrollo, marketing, diseño, ',
+                ' para asegurarse que el proyecto cumpla con todos los requisitos ',
+                '</strong>- Automatización de pruebas:</strong> Tambien pueden escribir y ejecutar scripts que ejecuten prueba de manera repetible y consistente ',
+                '',
+                '<strong>Competencias de un analista:</strong>',
+                '- Conocimientos en informatica y programación                              ',
+                '- Habilidades blandas y comunicación entre equipos                         ',
+                '- Dominar metodologias agiles y sus herramientas, (Jira, Kanba, SCRUM, etc)',
+                '- Manejo de herramientas de testing, (Selenium, Junit, Mocca, etc)         ',
+                '- Habilidades de analisis y resolución de problemas',
+                '',
+                '<strong>Porque es importante:</strong>',
+                '- Garantiza a mantener y elevar los requisitos y expectativas de los usuarios ',
+                '- Reduce el riesgo de errores, y la incidencia de problemas ',
+                '- Ayuda a mejorar la calidad, el rendimiento, la seguridad y la usabilidad de los productos ',
+                '- Ayuda a mejorar la reputación de la empresa, al tener una area comprometida con la calidad y el servicio ',
+            ])
     ];
 
 export const META_CARACTERISTICAS =

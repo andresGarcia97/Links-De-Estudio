@@ -24,6 +24,7 @@ export class CalidadComponent implements OnInit {
     ['qualityMetrics', 'Metricas de calidad'],
     ['codeReviews', 'Revisiones'],
     ['linting', 'Linting'],
+    ['analystQA', 'Analista de QA']
   ]);
 
   ngOnInit(): void {

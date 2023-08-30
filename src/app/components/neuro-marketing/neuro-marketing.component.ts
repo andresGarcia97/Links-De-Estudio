@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NEURO_MARKETING } from 'src/app/models/content/content3';
 import { NEURO_MARKETING_REF } from 'src/app/models/linkReferencia';
 
@@ -6,9 +6,11 @@ import { NEURO_MARKETING_REF } from 'src/app/models/linkReferencia';
   selector: 'app-neuro-marketing',
   templateUrl: './neuro-marketing.component.html'
 })
-export class NeuroMarketingComponent {
+export class NeuroMarketingComponent  implements OnInit {
 
   items = NEURO_MARKETING;
+
+  itemStart = '';
 
   components = new Map([ ...NEURO_MARKETING_REF ]);
 
@@ -27,5 +29,9 @@ export class NeuroMarketingComponent {
     ['semanticaPragmatica', 'Semantica & Pragmatica'],
     ['pnl', 'Neurolinguistica']
   ]);
+
+  ngOnInit(): void {
+    this.itemStart = history?.state?.newItem;
+  }
 
 }

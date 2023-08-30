@@ -126,6 +126,7 @@ export const CALIDAD_REF = new Map<string, Referencia>([
     ['qualityMetrics', new Referencia('https://docs.sonarqube.org/latest/user-guide/metric-definitions/', 'Definición de Metricas', CALIDAD_KEY)],
     ['codeReviews', new Referencia('https://www.atlassian.com/blog/add-ons/code-review-best-practices', 'Revisiones de codigo', CALIDAD_KEY)],
     ['linting', new Referencia('https://www.freecodecamp.org/espanol/news/que-es-linting-y-eslint/', 'Linting', CALIDAD_KEY)],
+    ['analystQA', new Referencia('https://www.linkedin.com/pulse/qu%2525C3%2525A9-es-y-hace-un-analista-qa-edteam%3FtrackingId=LYLDNutUgXaUqwAAuYOm6A%253D%253D/?trackingId=LYLDNutUgXaUqwAAuYOm6A%3D%3D', 'Analista de QA', CALIDAD_KEY)],
 ]);
 
 export const COMPILACION_KEY = 'Compilacion';

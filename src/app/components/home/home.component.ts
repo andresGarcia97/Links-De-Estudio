@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { CALIDAD_KEY, LinkReferencia } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-home',
@@ -9,12 +10,16 @@ export class HomeComponent {
 
   constructor(private router: Router) { }
 
+  private route = new LinkReferencia().routesAndSections.get(CALIDAD_KEY);
+  private item = 'analystQA';
+
   public routeTo(component: string): void {
     this.router.navigateByUrl(`/${component}`)
   }
 
-  public routeWithData(component: string, newItem: string): void {
-    this.router.navigateByUrl(`/${component}`, { state: { newItem } })
+  public routeToLastItem(): void {
+    const newItem = this.item;
+    this.router.navigateByUrl(`/${this.route}`, { state: { newItem } })
   }
 
 }
