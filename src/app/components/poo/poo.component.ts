@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { POO } from 'src/app/models/content/content3';
 import { POO_REF } from 'src/app/models/linkReferencia';
 
@@ -6,11 +6,13 @@ import { POO_REF } from 'src/app/models/linkReferencia';
   selector: 'app-poo',
   templateUrl: './poo.component.html'
 })
-export class PooComponent {
+export class PooComponent  implements OnInit {
 
   items = POO;
 
   components = new Map([ ...POO_REF ]);
+
+  itemStart = '';
 
   tittles = new Map<string, string>([
     ['poo', 'POO'],
@@ -32,5 +34,9 @@ export class PooComponent {
     ['factoryMethods', 'Factory Methods'],
     ['interfacesOverInheritance', 'Interfaces VS Herencia'],
   ]);
+
+  ngOnInit(): void {
+    this.itemStart = history?.state?.newItem;
+  }
 
 }
