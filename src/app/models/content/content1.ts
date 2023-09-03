@@ -2031,6 +2031,15 @@ export const PERSONAS =
                 '- Mostrar humildad y nunca dudar en solicitar ayuda                    - Entender porque y como se puede mejorar como equipo',
                 '- Crear espacios de integración y colaboración                         - Delegar de manera real y a conciencia ',
                 '- Que toda la jerarquia participe, a la hora de buscar soluciones      - Desterrar el miedo a las represalias',
+            ]),
+        new Item('ubicuo',
+            [
+                '- El lenguaje Ubicuo, es un termino usado por <em>Eric Evans</em> usa en el <em>Domain Driven Design</em> para la practica de tener un lenguaje comun ',
+                ' - entre desarrolladores y usuarios, además de otras personas que tambien esten involucradas ',
+                '- Esto hace parte de una estandarización profesional, que se refiere a la adopción de las mejores practicas y patrones de la industria ',
+                '- Y asi poder hablar un mismo idioma, para que la comunicación sea efectiva y eficiente, mediante estandares compartidos ',
+                '- De esta manera tener conversaciones entre congeneres y transmitir ideas, es algo que beneficia a todos los involucrados y no se pierde tiempo ',
+                ' - al tener que explicar conceptos y metodologias que se usan en la ingenieria y que son transversales ',
             ])
     ];
 

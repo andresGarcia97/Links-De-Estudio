@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { PRINCIPIOS } from 'src/app/models/content/content3';
 import { PRINCIPIOS_REF } from 'src/app/models/linkReferencia';
 
@@ -6,9 +6,11 @@ import { PRINCIPIOS_REF } from 'src/app/models/linkReferencia';
   selector: 'app-principios',
   templateUrl: './principios.component.html'
 })
-export class PrincipiosComponent {
+export class PrincipiosComponent implements OnInit {
 
   items = PRINCIPIOS;
+
+  itemStart = '';
 
   components = new Map([ ...PRINCIPIOS_REF ]);
 
@@ -24,5 +26,9 @@ export class PrincipiosComponent {
     ['twice-one', '2-1'],
     ['divide-conquer', 'Dividir y Conquistar']
   ]);
+
+  ngOnInit(): void {
+    this.itemStart = history?.state?.newItem;
+  }
 
 }

@@ -6,7 +6,7 @@ import { POO_REF } from 'src/app/models/linkReferencia';
   selector: 'app-poo',
   templateUrl: './poo.component.html'
 })
-export class PooComponent  implements OnInit {
+export class PooComponent implements OnInit {
 
   items = POO;
 

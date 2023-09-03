@@ -25,7 +25,8 @@ export class PersonasComponent implements OnInit {
     ['noNewsGoodNews', 'No News Good News'],
     ['tiposHackers', 'Tipos de Hackers'],
     ['sindromesLaborales', 'Sindromes Laborales'],
-    ['icebergIgnorance', 'Iceberg de la Ignorancia']
+    ['icebergIgnorance', 'Iceberg de la Ignorancia'],
+    ['ubicuo', 'Lenguaje Ubicuo']
   ]);
 
   ngOnInit(): void {
