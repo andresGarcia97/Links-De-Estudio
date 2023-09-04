@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { UML } from 'src/app/models/content/content3';
 import { UML_REF } from 'src/app/models/linkReferencia';
 
@@ -6,9 +6,11 @@ import { UML_REF } from 'src/app/models/linkReferencia';
   selector: 'app-uml',
   templateUrl: './uml.component.html'
 })
-export class UmlComponent {
+export class UmlComponent implements OnInit {
 
   items = UML;
+
+  itemStart = '';
 
   components = new Map([ ...UML_REF ]);
 
@@ -26,5 +28,9 @@ export class UmlComponent {
     ['tiposUml', 'Tipos de Diagramas'],
 
   ]);
+
+  ngOnInit(): void {
+    this.itemStart = history?.state?.newItem;
+  }
 
 }

@@ -31,4 +31,5 @@ export class SqlNosqlAdvancedComponent implements OnInit {
   ngOnInit(): void {
     this.itemStart = history?.state?.newItem;
   }
+  
 }

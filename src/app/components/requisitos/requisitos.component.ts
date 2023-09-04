@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { REQUISITOS } from 'src/app/models/content/content3';
 import { REQUISITOS_REF } from 'src/app/models/linkReferencia';
 
@@ -6,9 +6,11 @@ import { REQUISITOS_REF } from 'src/app/models/linkReferencia';
   selector: 'app-requisitos',
   templateUrl: './requisitos.component.html'
 })
-export class RequisitosComponent {
+export class RequisitosComponent implements OnInit {
 
   items = REQUISITOS;
+
+  itemStart = '';
 
   components = new Map([ ...REQUISITOS_REF ]);
 
@@ -21,5 +23,9 @@ export class RequisitosComponent {
     ['tradeoff', 'Trade-offs'],
     ['objetivos', 'Objetivos & Requisitos'],
   ]);
+
+  ngOnInit(): void {
+    this.itemStart = history?.state?.newItem;
+  }
 
 }

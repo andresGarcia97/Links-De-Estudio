@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { REFACTORIZACION } from 'src/app/models/content/content3';
 import { REFACTORING } from 'src/app/models/linkReferencia';
 
@@ -6,9 +6,11 @@ import { REFACTORING } from 'src/app/models/linkReferencia';
   selector: 'app-refactorizacion',
   templateUrl: './refactorizacion.component.html'
 })
-export class RefactorizacionComponent {
+export class RefactorizacionComponent implements OnInit {
 
   items = REFACTORIZACION;
+
+  itemStart = '';
 
   components = new Map([ ...REFACTORING ]);
 
@@ -23,5 +25,9 @@ export class RefactorizacionComponent {
     ['cuandoNoRefactorizar', 'Cuando No'],
     ['refactorLegacyCode', 'Refactor en Legacy code'],
   ]);
+
+  ngOnInit(): void {
+    this.itemStart = history?.state?.newItem;
+  }
 
 }

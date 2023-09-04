@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { PRUEBAS } from 'src/app/models/content/content2';
 import { TESTING } from 'src/app/models/linkReferencia';
 
@@ -6,9 +6,11 @@ import { TESTING } from 'src/app/models/linkReferencia';
   selector: 'app-pruebas',
   templateUrl: './pruebas.component.html'
 })
-export class PruebasComponent {
+export class PruebasComponent implements OnInit {
 
   items = PRUEBAS;
+
+  itemStart = '';
 
   components = new Map([ ...TESTING ]);
 
@@ -29,5 +31,9 @@ export class PruebasComponent {
     ['cobertura', 'Cobertura'],
     ['falsos', 'Falsos Resultados'],
   ]);
+
+  ngOnInit(): void {
+    this.itemStart = history?.state?.newItem;
+  }
 
 }

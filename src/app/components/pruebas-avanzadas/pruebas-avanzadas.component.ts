@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { PRUEBAS_AVANZADAS } from 'src/app/models/content/content2';
 import { TESTING_ADVANCED } from 'src/app/models/linkReferencia';
 
@@ -6,9 +6,11 @@ import { TESTING_ADVANCED } from 'src/app/models/linkReferencia';
   selector: 'app-pruebas-avanzadas',
   templateUrl: './pruebas-avanzadas.component.html'
 })
-export class PruebasAvanzadasComponent {
+export class PruebasAvanzadasComponent implements OnInit {
 
   items = PRUEBAS_AVANZADAS;
+
+  itemStart = '';
 
   components = new Map([ ...TESTING_ADVANCED ]);
 
@@ -25,5 +27,9 @@ export class PruebasAvanzadasComponent {
     ['codeSmellsTests2', 'Code smells en testing #2'],
     ['mutation', 'Pruebas de mutación']
   ]);
+
+  ngOnInit(): void {
+    this.itemStart = history?.state?.newItem;
+  }
 
 }

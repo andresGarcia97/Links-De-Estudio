@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { SEGURIDAD } from 'src/app/models/content/content3';
 import { SEGURIDAD_REF } from 'src/app/models/linkReferencia';
 
@@ -6,9 +6,11 @@ import { SEGURIDAD_REF } from 'src/app/models/linkReferencia';
   selector: 'app-seguridad',
   templateUrl: './seguridad.component.html'
 })
-export class SeguridadComponent {
+export class SeguridadComponent implements OnInit {
 
   items = SEGURIDAD;
+
+  itemStart = '';
 
   components = new Map([ ...SEGURIDAD_REF ]);
 
@@ -31,5 +33,9 @@ export class SeguridadComponent {
     ['csp', 'Content Security Police'],
     ['csrf', 'CSRF'],
   ]);
+
+  ngOnInit(): void {
+    this.itemStart = history?.state?.newItem;
+  }
 
 }
