@@ -28,6 +28,7 @@ export class GitComponent implements OnInit {
     ['flow', 'Git flow'],
     ['practicas', 'Buenas Practicas'],
     ['branching-strategies', 'Ramificación'],
+    ['monoRepo', 'Mono Repo'],
   ]);
 
   ngOnInit(): void {

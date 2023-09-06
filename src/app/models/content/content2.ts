@@ -1384,7 +1384,37 @@ export const GIT =
                 ' Productos con calidad       Grande                  Moderado                          Gitflow',
                 '  y ciclos largos de ',
                 '  mantenimiento ',
-            ])
+            ]),
+        new Item('monoRepo',
+        [
+            '- Un monorepo es un repositorio unico que contiene multiples proyectos distintos, con relaciones y fronteras bien definidas ',
+            '- Este se diferencia de un monolito, o de multiples componentes bajo un mismo repositorio ya que ',
+            '',
+            '- Con multiples repositorios, se tienen problemas como: ',
+            '<strong>- Compartir codigo entre repositorios:</strong> Requiere configurar las herramientas, y el entorno, además de tareas extras ',
+            '<strong>- Duplicación de codigo:</strong> Donde para evitar crear librerias compartidas y su mantenimiento, cada equipo crea sus propias implementaciones ',
+            '<strong>- Cambios entre las librerias y los consumidores:</stron> Que suelen ser costoso, al tener que manejar la compatibilidad a travez de multiples proyectos ',
+            '<strong>- Herramientas inconsistentes:</strong> Cada proyecto usa las herramientas que mejor le convengan, comandos, pruebas, compilación, ambientes, etc.. ',
+            '',
+            '- Con un solo repositorio, se tienen beneficios como: ',
+            '<strong>- Menos problemas al crear nuevos proyectos:</strong> Ya que se pueden usar las herramientas preexistentes, con el mismo versionado ',
+            '<strong>- Compromisos atomicos entre proyectos:</strong> Asi no hay problemas de compatibilidad, ya que se pueden cambiar todos a la vez ',
+            '<strong>- Movilidad entre equipos:</strong> Es una forma coherente de crear y probar aplicaciones, entre equipos, ya que estan familiarizados con proyectos previos ',
+            '',
+            '- Pero esto solo es posible, con la ayuda de las debidas herramientas, con las que llevar el control adecuado, que permitan: ',
+            '<strong>- Computación local:</strong> Al realizar un cambio local, este debe estar disponible para todos los demás, sin importar el proyecto al que pertenezca ',
+            '<strong>- Orquestación de tareas:</strong> Cualquier herramienta, debe estar en capacidad de ejecutar multiples tareas y sin importar el orden y el proyecto ',
+            '<strong>- Soporte para tareas distribuidas:</strong> Asi no sera necesario construir reiteradamente los mismos artefactos, o ejecutar las mismas tareas ',
+            '<strong>- Detectar afectaciones en proyectos/paquetes:</strong> Asi solo se probara, compilara o ejecutara, las posibles partes afectadas ',
+            '<strong>- Comprensible:</strong> Que entender el proyecto no requiera de trabajo adicional o herramientas complejas ',
+            '<strong>- Visualizar las dependencias:</strong> Entre los proyectos, de manera grafica, además de que sea manipulable ',
+            '<strong>- Compartir codigo:</strong> El intercambio de piezas entre proyectos, no debe ser una odisea ',
+            '<strong>- Herramientas consistentes:</strong> El que esten hechos los proyectos, no debe ser un impedimento para que puedan ser analizados ',
+            '<strong>- Generación de codigo:</strong> Debe permitir o estar en la capacidad de generar codigo fuente, o realizar acciones de scaffolding ',
+            '<strong>- Restricciones entre proyectos:</strong> No todo se puede compartir, o se debe realizar de manera limitada, por lo que esto debe ser configurable ',
+            '',
+            '- Para ver una comparación entre diferentes herramientas y más articulos relacionados al tema, puedes revisar la publicación original ',
+        ])
     ];
 
 export const HISTORIAS_USUARIO =
