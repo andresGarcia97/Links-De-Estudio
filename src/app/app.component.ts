@@ -52,22 +52,11 @@ export class AppComponent implements OnInit {
   shareTwitter = `https://twitter.com/intent/tweet?text=Una gran fuente de repaso para Programadores&url=${this.domain}`;
   shareFacebook = `https://www.facebook.com/sharer/sharer.php?u=${this.domain}`;
 
-  public scrollToElement($element: any): void {
-    if (typeof $element !== 'undefined') {
-      $element.scrollIntoView({ behavior: 'smooth' });
-    }
-  }
-
   public changueMode(): void {
     this.buttonChangueMode = !this.buttonChangueMode;
     const body = document.body;
     body.classList.toggle('oscuro');
     this.updateColorAdressBar();
-  }
-
-  public close($element: any): void {
-    this.router.navigateByUrl("")
-    this.scrollToElement($element);
   }
 
   public setColorAdressBar(): void {

@@ -126,10 +126,6 @@
   fill: var(--color-navy-blue);
 }
 
-.oscuro .button-close svg:hover {
-  fill: var(--color-crimson);
-}
-
 .oscuro svg circle {
   fill: var(--color-fulvous);
 }
@@ -505,10 +501,6 @@ pre::selection {
 
 .circle-link svg:hover {
   fill: var(--color-selective-yellow);
-}
-
-.button-close svg:hover {
-  fill: var(--color-crimson);
 }
 
 .github-star-badge {

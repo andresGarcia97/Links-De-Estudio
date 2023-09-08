@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { GIT_KEY, LinkReferencia } from 'src/app/models/linkReferencia';
+import { CALIDAD_KEY, LinkReferencia } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-home',
@@ -10,8 +10,8 @@ export class HomeComponent {
 
   constructor(private router: Router) { }
 
-  private route = new LinkReferencia().routesAndSections.get(GIT_KEY);
-  private item = 'monoRepo';
+  private route = new LinkReferencia().routesAndSections.get(CALIDAD_KEY);
+  private item = 'codeReviewPyramid';
 
   public routeTo(component: string): void {
     this.router.navigateByUrl(`/${component}`)
