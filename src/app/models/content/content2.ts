@@ -459,7 +459,7 @@ export const BUENAS_PRACTICAS =
                 '',
                 '<strong> - Buscar ayuda:</strong> Cuando los problemas son demasiado grandes o complicados, preguntarle a alguien con más experiencia es de los más normal, ',
                 '  - generalmente las personas de la comunidad estan dispuestas a ayudar a sus congeneres, ',
-                '- Una vez resuelto el bug, verifique que la solución si haya funcionado y que esta no ha introducido nuevos problemas, ',
+                '<strong> - Verificación:</strong> Una vez resuelto el bug, verifique que la solución si haya funcionado y que esta no ha introducido nuevos problemas, ',
                 ' - si tiene oportunidad de realizar pruebas automatizadas y/o unitarias aun mejor ',
                 '',
                 '- Como evitarlos: ',
