@@ -31,7 +31,8 @@ export class NubeComponent implements OnInit {
     ['HATEOAS', 'HATEOAS'],
     ['apiStandars', 'Standares API'],
     ['apiGateway', 'Api Gateway'],
-    ['falaciesDistributedSystems', 'Sistemas Distribuidos']
+    ['falaciesDistributedSystems', 'Sistemas Distribuidos'],
+    ['arquitecturalApiStyles', 'Estilos de Arquitectura API']
   ]);
 
   ngOnInit(): void {

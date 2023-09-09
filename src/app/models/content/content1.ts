@@ -1000,10 +1000,10 @@ export const CONTENEDORES =
                 '- Las imagenes tambien pueden ser privadas, por lo que se requirira de una autenticación para que se puedan usar ',
                 '',
                 '- Estas se pueden crear y personalizar de varias maneras: ',
-                '  - Creando un contenedor a partir de una imagen base y manipularlo manualmente, para crear una imagen a la medida',
-                '  - Mediante un archivo DockerFile: Donde se crea una secuencia de comandos, que a su vez, indica una capa, ',
-                '    las cuales se van apilando y modificando entre si para construir algo más complejo ',
-                '  - Tambien existen herramientas automatizadas, configurables y que cumplen los estandares y especificaciones de la OCI'
+                ' - Creando un contenedor a partir de una imagen base y manipularlo manualmente, para crear una imagen a la medida',
+                ' - Mediante un archivo DockerFile: Donde se crea una secuencia de comandos, que a su vez, indica una capa, ',
+                '  - las cuales se van apilando y modificando entre si para construir algo más complejo ',
+                ' - Tambien existen herramientas automatizadas, configurables y que cumplen los estandares y especificaciones de la OCI'
             ]),
         new Item('containers',
             [
