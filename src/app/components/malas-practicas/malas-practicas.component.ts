@@ -20,6 +20,7 @@ export class MalasPracticasComponent implements OnInit {
     ['contraGestion', 'Contra la gestion'],
     ['contraAgilidad', 'Contra la Agilidad'],
     ['malasPracticasSCRUM', 'Contra SCRUM'],
+    ['deathByMicroservices', 'Muerte por microservicios'],
   ]);
 
   ngOnInit(): void {

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { LinkReferencia, NUBE_APIS_KEY } from 'src/app/models/linkReferencia';
+import { LinkReferencia, MALAS_PRACTICAS_KEY } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-home',
@@ -10,8 +10,8 @@ export class HomeComponent {
 
   constructor(private router: Router) { }
 
-  private route = new LinkReferencia().routesAndSections.get(NUBE_APIS_KEY);
-  private item = 'arquitecturalApiStyles';
+  private route = new LinkReferencia().routesAndSections.get(MALAS_PRACTICAS_KEY);
+  private item = 'deathByMicroservices';
 
   public routeTo(component: string): void {
     this.router.navigateByUrl(`/${component}`)

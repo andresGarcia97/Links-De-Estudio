@@ -253,6 +253,7 @@ export const MALAS_PRACTICAS_REF = new Map<string, Referencia>([
     ['contraGestion', new Referencia('https://blog.gft.com/es/2016/01/20/las-10-malas-practicas-mas-comunes-en-la-gestion-de-proyectos/', 'En contra de la gestión', MALAS_PRACTICAS_KEY)],
     ['contraAgilidad', new Referencia('https://giovannycifuentes.com/los-6-antipatrones-en-la-adopcion-de-agilidad-que-los-lideres-deberian-conocer/', 'En contra de las agiles', MALAS_PRACTICAS_KEY)],
     ['malasPracticasSCRUM', new Referencia('https://blog.palo-it.com/es/antipatrones-comunes-en-scrum#:~:text=Los%20antipatrones%20ocurren%20cuando%20creemos,y%20parecen%20parte%20del%20sistema', 'Malas practicas en SCRUM', MALAS_PRACTICAS_KEY)],
+    ['deathByMicroservices', new Referencia('https://renegadeotter.com/2023/09/10/death-by-a-thousand-microservices.html', 'Muerte por microservicios', MALAS_PRACTICAS_KEY)],
 ]);
 
 export const CARACTERISTICAS_KEY = 'Meta-Caracteristicas';
