@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { LinkReferencia, MALAS_PRACTICAS_KEY } from 'src/app/models/linkReferencia';
+import { GIT_KEY, LinkReferencia } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-home',
@@ -10,8 +10,8 @@ export class HomeComponent {
 
   constructor(private router: Router) { }
 
-  private route = new LinkReferencia().routesAndSections.get(MALAS_PRACTICAS_KEY);
-  private item = 'deathByMicroservices';
+  private route = new LinkReferencia().routesAndSections.get(GIT_KEY);
+  private item = 'pullRequestsToxic';
 
   public routeTo(component: string): void {
     this.router.navigateByUrl(`/${component}`)

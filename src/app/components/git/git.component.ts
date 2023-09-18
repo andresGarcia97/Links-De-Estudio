@@ -29,6 +29,7 @@ export class GitComponent implements OnInit {
     ['practicas', 'Buenas Practicas'],
     ['branching-strategies', 'Ramificación'],
     ['monoRepo', 'Mono Repo'],
+    ['pullRequestsToxic', 'Pull Requests Toxicos'],
   ]);
 
   ngOnInit(): void {
