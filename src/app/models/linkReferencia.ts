@@ -307,7 +307,7 @@ export const METODOLOGIAS_REF = new Map<string, Referencia>([
     ['iterativo', new Referencia('https://proyectosagiles.org/desarrollo-iterativo-incremental/', 'Iterativo-incremental', METODOLOGIAS_KEY)],
     ['extrema', new Referencia('https://www.diegocalvo.es/metodologia-xp-programacion-extrema-metodologia-agil/', 'Programación Extrema', METODOLOGIAS_KEY)],
     ['v', new Referencia('https://ingsoftware.weebly.com/ciclo-de-vida-en-v.html', 'Modelo en V', METODOLOGIAS_KEY)],
-    ['rup', new Referencia('https://metodoss.com/metodologia-rup/', 'Proceso Racional Unificado', METODOLOGIAS_KEY)],
+    ['rup', new Referencia('https://rupmetodologia.blogspot.com/?view=sidebar', 'Proceso Racional Unificado', METODOLOGIAS_KEY)],
     ['kaizen', new Referencia('https://www.movertis.com/blog/que-es-la-metodologia-kaizen/#:~:text=En%20japon%C3%A9s%2C%20las%20palabras%20Kai,se%20deja%20nunca%20de%20ejecutar', 'Kaizen', METODOLOGIAS_KEY)],
     ['scrumban', new Referencia('https://kanbantool.com/es/scrumban-scrum-y-kanb', 'Scrumban', METODOLOGIAS_KEY)]
 ]);

@@ -46,6 +46,7 @@ export const BACK = new Map([
     ['sqlPractices', { titulo: 'Buenas practicas SQL', referencia: 'https://www.metabase.com/learn/sql-questions/sql-best-practices' }],
     ['sqlRoadMap', { titulo: 'Mapa de Ruta SQL', referencia: 'https://roadmap.sh/sql' }],
     ['javaTags', { titulo: 'Inside Java Tags', referencia: 'https://inside.java/tags' }],
+    ['arquitecturesStyles', { titulo: 'Estilos arquitectonicos', referencia: 'https://blog.bytebytego.com/p/ep68-top-architectural-styles#%C2%A7top-architectural-styles' }],
 ]);
 
 export const UTILS = new Map([
