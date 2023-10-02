@@ -1466,6 +1466,17 @@ export const WEB =
                 '- Este diseño se puede considerar una fusión de los 2 estilos anteriores ',
                 '- Se mantienen los iconos realistas sin caer en un exceso de detalles que sobrecarguen la experiencia ',
                 '- A su vez se usan colores mezclas y degradados bastante expresivos, que van más alla de la cotidianidad ',
+            ]),
+        new Item('menorSorpresa',
+            [
+                '- Es una guia de diseño para las interfaces de usuario, donde cada componente debe comportarse  ',
+                ' - de la manera que la mayoria de los usuarios se comporte o ya esten acostumbrados ',
+                '- Los comportamientos deberian poder anticiparse, basandose en experiencias previas, con sistemas similares ',
+                '- Esto garantiza que la aplicación sea intuitiva y facil de usar, en cierto modo ',
+                '',
+                '- Esto tambien aplica para el diseño de las APIs, si esta se comporta diferente y sorprende al usuario, se deberia pensar en rediseñarla ',
+                '- El patron de Segregación de consultas y queries(CQRS), va de la mano con este principio, ',
+                ' - separando los metodos que cambian un objeto(comando), de los que hacen preguntas(consultas)',
             ])
     ];
 

@@ -26,6 +26,7 @@ export class WebComponent implements OnInit {
     ['gestalt', 'Teoria de Gestalt'],
     ['ssr-csr-ssg-isr', 'SSR vs CSR vs SSG'],
     ['esqueumorfismo', 'Esqueumorfismo'],
+    ['menorSorpresa', 'Menor Sorpresa']
   ]);
 
   ngOnInit(): void {
