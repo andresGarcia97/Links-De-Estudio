@@ -25,6 +25,7 @@ export class SqlNosqlComponent implements OnInit {
     ['acid', 'Esquema ACID'],
     ['indices', 'Indices'],
     ['joins', 'Tipos de Joins'],
+    ['constraints', 'Constraints'],
   ]);
 
   ngOnInit(): void {
