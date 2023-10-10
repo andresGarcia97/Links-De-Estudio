@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { DATA_BASES_KEY, LinkReferencia } from 'src/app/models/linkReferencia';
+import { DATA_BASES_ADVANCED_KEY, LinkReferencia } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-home',
@@ -10,8 +10,8 @@ export class HomeComponent {
 
   constructor(private router: Router) { }
 
-  private route = new LinkReferencia().routesAndSections.get(DATA_BASES_KEY);
-  private item = 'constraints';
+  private route = new LinkReferencia().routesAndSections.get(DATA_BASES_ADVANCED_KEY);
+  private item = 'MVCC';
 
   public routeTo(component: string): void {
     this.router.navigateByUrl(`/${component}`)
