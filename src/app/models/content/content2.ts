@@ -2222,6 +2222,25 @@ export const NUBE =
                 ' - Los requerimientos relacionados al rendimiento e interoperabilidad entre sistemas ',
                 ' - Que tanta seguridad se requiere ',
                 ' - Proyecciones de escalabilidad ',
+            ]),
+        new Item('uri',
+            [
+                '- Es una secuencia de caracteres que identifica un recurso logico(abstracto) o fisico, que no necesariamente esta conectado a internet',
+                '- Esto permite que los protocolos de internet faciliten sus interacciones, esta sintaxis generica se define como: ',
+                '<strong> [//[user:password@]host[:port]][/]path[?query][#fragment] </strong>',
+                '',
+                '<strong> - Esquema:</strong> El primer elemento es el nombre del esquema, no es sensitivo a mayusculas/minusculas y se separa del resto por <i>:</i>',
+                '<strong> - Autoridad:</strong> Se compone de varios partes, un nombre registrado o de una dirección IP, ',
+                '  - una seccion de autenticacion opcional y un puerto que tambien es opcional ',
+                '<strong> - Consulta:</strong> Cadena de datos no jerarquicos, que suele ser una secuencia de pares atributo-valor, separados por un delimitador, como <i>&</i>',
+                '<strong> - Fragmento:</strong> Contiene un identificador que proporciona dirección a un recurso secundario y se separa por <i>#</i> ',
+                '',
+                '<strong>Tipos de URI</strong>',
+                '',
+                '<strong> - URL:</strong> Localizador Uniforme de Recursos, es usado para identificar y localizar paginas web, sin embargo ',
+                '  - esto no garantiza el acceso a este, tiene que ser unica, por eso contiene valores como: protocolo, dominio, subdominio',
+                '<strong> - URI:</strong> Nombre de Recurso Uniforme, es similar a la URL, pero esta es independiente de la ubicación, y es persistente ',
+                '  - lo que significa que siempre identifica el mismo recurso, incluso cuando deja de estar disponible o deja de existir ',
             ])
     ];
 

@@ -30,6 +30,7 @@ export class MetaCaracteristicasComponent implements OnInit {
     ['backtracing', 'Back tracing'],
     ['rawTypes', 'Tipos crudos'],
     ['memoryAndGarbage', 'Fugas de memoria'],
+    ['footprint', 'Huellas de memoria'],
   ]);
 
   ngOnInit(): void {

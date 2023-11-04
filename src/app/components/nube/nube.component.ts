@@ -32,7 +32,8 @@ export class NubeComponent implements OnInit {
     ['apiStandars', 'Standares API'],
     ['apiGateway', 'Api Gateway'],
     ['falaciesDistributedSystems', 'Sistemas Distribuidos'],
-    ['arquitecturalApiStyles', 'Estilos de Arquitectura API']
+    ['arquitecturalApiStyles', 'Estilos de Arquitectura API'],
+    ['uri', 'URI']
   ]);
 
   ngOnInit(): void {

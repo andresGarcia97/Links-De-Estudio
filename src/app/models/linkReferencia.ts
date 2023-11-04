@@ -274,6 +274,7 @@ export const META_CARATERISTICAS_REF = new Map<string, Referencia>([
     ['backtracing', new Referencia('https://www.ecured.cu/Vuelta_atr%C3%A1s_(backtracking)', 'Back Tracing', CARACTERISTICAS_KEY)],
     ['rawTypes', new Referencia('https://stackoverflow.com/questions/2770321/what-is-a-raw-type-and-why-shouldnt-we-use-it#:~:text=Raw%20types%20refer%20to%20using,with%20older%20versions%20of%20Java.', 'Tipos Crudos', CARACTERISTICAS_KEY)],
     ['memoryAndGarbage', new Referencia('https://www.computerworld.com/article/2596992/memory-leaks-and-garbage-collection.amp.html', 'Fugas de memoria y recoleccion de basura', CARACTERISTICAS_KEY)],
+    ['footprint', new Referencia('https://www.pcmag.com/encyclopedia/term/memory-footprint', 'Huella en memoria', CARACTERISTICAS_KEY)],
 ]);
 
 export const ESTRUCTURAS_KEY = 'Meta-Estructuras';
@@ -332,6 +333,7 @@ export const NUBE_AND_APIS = new Map<string, Referencia>([
     ['apiGateway', new Referencia('https://nordicapis.com/whats-the-difference-between-an-api-gateway-and-a-load-balancer/', 'API Gateway', NUBE_APIS_KEY)],
     ['falaciesDistributedSystems', new Referencia('https://architecturenotes.co/fallacies-of-distributed-systems/', 'Sistemas Distribuidos', NUBE_APIS_KEY)],
     ['arquitecturalApiStyles', new Referencia('https://www.linkedin.com/feed/update/urn:li:activity:7095365669969350656/', 'Estilos de Arquitectura API', NUBE_APIS_KEY)],
+    ['uri', new Referencia('https://www.techtarget.com/whatis/definition/URI-Uniform-Resource-Identifier', 'Uniform Resource Identifier', NUBE_APIS_KEY)],
 ]);
 
 export const OTROS_KEY = 'Otros';

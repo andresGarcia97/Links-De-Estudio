@@ -966,6 +966,16 @@ export const META_CARACTERISTICAS =
                 '  - con el fin de detectar problemas antes de que los programas fallen ',
                 ' - Algunos lenguajes como Java tambien lo proporcionan, siendo una gran ventaja para el programador, ',
                 '  - ya que el desarrollador no debe preocuparse de un proceso que ocurre de manera silenciosa y constante ',
+            ]),
+        new Item('footprint',
+            [
+                '- Es la cantidad de Memoria RAM que utiliza el software cuando se ejecuta, las instrucciones del programa, los datos ',
+                '- Tambien puede reservar para instrucciones adicionales, o acciones que se soliciten ',
+                '',
+                '<strong>- Sistemas embedidos:</strong>',
+                ' - Con la proliferación de dispositivos portatiles y de productos cada vez más electronicos con necesidades para procesar datos ',
+                ' - Se requieren programas con poca memoria que se ajusten a cantidades del orden de kilobytes o megabytes, ',
+                '  - en comparación con los servidores que disponen de gigabytes, esto suele ser un desafio con nuevas posibilidades y problemas ',
             ])
     ];
 
@@ -2199,9 +2209,10 @@ export const BASES_DE_DATOS =
             [
                 '<strong>- DDL</strong> Lenguaje de Definición de Datos, Permite Crear y Modificar la estructura de la BD ',
                 '<strong> - CREATE:</strong>   Creación de campos, tablas e indices ',
-                '<strong> - ALTER:</strong>    Modificacion de tablas ó sus campos ',
+                '<strong> - ALTER:</strong>    Modificacion de los campos de las tablas ó redefinirlos ',
                 '<strong> - DROP:</strong>     Eliminación de tablas e indices ',
-                '<strong> - TRUNCATE:</strong> Elimina los registros de una tabla ',
+                '<strong> - TRUNCATE:</strong> Elimina todos los registros de una tabla ',
+                '<strong> - COMMENT:</strong>  Utilizado para agregar comentarios al diccionario de datos ',
                 '<strong> - RENAME:</strong>   Renombra objetos ',
                 '',
                 '<strong>- DML</strong> Lenguaje de Manipulación de Datos, Permite ejecutar las operaciones de un CRUD en los datos de la BD ',
