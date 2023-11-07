@@ -162,6 +162,12 @@
   animation: gradient-animation 4s ease infinite;
 }
 
+.oscuro .gradient {
+  background: linear-gradient(334deg, var(--color-french-sky-blue), var(--color-navy-blue), var(--color-raisin-black));
+  background-size: 180% 180%;
+  animation: gradient-animation 4s alternate infinite;
+}
+
 @keyframes animate-clouds-oscuro {
   100% {
     fill: var(--color-jet);
@@ -630,6 +636,12 @@ div a.circle-link {
   background: linear-gradient(334deg, var(--color-selective-yellow), var(--color-fulvous), var(--color-crimson));
   background-size: 180% 180%;
   animation: gradient-animation 4s ease infinite;
+}
+
+.gradient {
+  background: linear-gradient(334deg, var(--color-selective-yellow), var(--color-fulvous), var(--color-crimson));
+  background-size: 180% 180%;
+  animation: gradient-animation 4s alternate infinite;
 }
 
 .tooltip:hover .tooltiptext {
