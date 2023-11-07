@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { LinkReferencia, NUBE_APIS_KEY } from 'src/app/models/linkReferencia';
+import { LinkReferencia, PERSONAS_KEY } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-home',
@@ -10,8 +10,8 @@ export class HomeComponent {
 
   constructor(private router: Router) { }
 
-  private route = new LinkReferencia().routesAndSections.get(NUBE_APIS_KEY);
-  private item = 'uri';
+  private route = new LinkReferencia().routesAndSections.get(PERSONAS_KEY);
+  private item = 'hippoEfect';
 
   public routeTo(component: string): void {
     this.router.navigateByUrl(`/${component}`)

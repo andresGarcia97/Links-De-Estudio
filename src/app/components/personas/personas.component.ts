@@ -26,7 +26,8 @@ export class PersonasComponent implements OnInit {
     ['tiposHackers', 'Tipos de Hackers'],
     ['sindromesLaborales', 'Sindromes Laborales'],
     ['icebergIgnorance', 'Iceberg de la Ignorancia'],
-    ['ubicuo', 'Lenguaje Ubicuo']
+    ['ubicuo', 'Lenguaje Ubicuo'],
+    ['hippoEfect', 'Efecto H.I.P.P.O']
   ]);
 
   ngOnInit(): void {

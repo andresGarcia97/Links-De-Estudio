@@ -2102,6 +2102,17 @@ export const PERSONAS =
                 '- Y asi poder hablar un mismo idioma, para que la comunicación sea efectiva y eficiente, mediante estandares compartidos ',
                 '- De esta manera tener conversaciones entre congeneres y transmitir ideas, es algo que beneficia a todos los involucrados y no se pierde tiempo ',
                 ' - al tener que explicar conceptos y metodologias que se usan en la ingenieria y que son transversales ',
+            ]),
+        new Item('hippoEfect',
+            [
+                '- <strong>La Opinion de la Persona Mejor Pagada</strong>, suele tener demasiado impacto cuando no se cuentan con datos para tomar decisiones ',
+                '- Y es peor cuando se tienen los datos, pero estos no se toman en cuenta cuando prevalece la persona HIPPO en la habitación ',
+                '- Esto ata a la organización a lo que esta persona quiere que se haga, y no lo que los datos indican que se debe hacer o ',
+                ' - tenerlos en cuenta a la hora de visualizar el panorama ',
+                '- Esto sucede cuando se debe tomar una decisión dificil, pero no hay datos o analisis suficientes, entonces el grupo a menudo cedera ',
+                ' - ante este juicio, ya que suelen tener la mayor experiencia y poder en la sala, tanto que las voces disidentes no tienen lugar ',
+                '- Esto es peligroso debido a que los humanos tienen una tendencia al sesgo de autoridad, ilustrado por el <em>Experimento de Milgram</em> de 1963',
+                '- Resulta que las personas tienden a crear en aquello que dice o hace, aquellos que consideramos como expertos y no oponerse a sus ordenes ',
             ])
     ];
 
