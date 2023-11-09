@@ -29,6 +29,7 @@ export class CompilacionComponent implements OnInit {
     ['sdkVsApi', 'SDK vs API'],
     ['casting', 'Casteo de Datos'],
     ['verbosity', 'Verbosidad'],
+    ['tipoLenguajeProposito', 'Proposito'],
   ]);
 
   ngOnInit(): void {

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { LinkReferencia, PERSONAS_KEY } from 'src/app/models/linkReferencia';
+import { LinkReferencia, COMPILACION_KEY } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-home',
@@ -10,8 +10,8 @@ export class HomeComponent {
 
   constructor(private router: Router) { }
 
-  private route = new LinkReferencia().routesAndSections.get(PERSONAS_KEY);
-  private item = 'hippoEfect';
+  private route = new LinkReferencia().routesAndSections.get(COMPILACION_KEY);
+  private item = 'tipoLenguajeProposito';
 
   public routeTo(component: string): void {
     this.router.navigateByUrl(`/${component}`)
