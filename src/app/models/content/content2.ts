@@ -370,6 +370,24 @@ export const ANALISIS =
                 '- La arquitectura hostil, como bancos contra personas sin hogar, o la segregación de comunidades ',
                 '- El diseño falla cuando los diseñadores estan cegados por sus propios prejuicios, politicas o interese corporativos ',
                 '- El mundo del diseño, deberia ser mas diverso y tener más en cuenta posibles efectos no intencionados e intencionados con las comunidades marginadas ',
+            ]),
+        new Item('opinionated-no',
+            [
+                '- En era recientes y desde la existencia de Software como Servicio<strong>(SaaS)</strong> el desarrollo de software se enfrenta a 2 decisiones importantes ',
+                ' - crear algo generico que permita al usuario decidir que utilizar y como, o desarrollar algo que guie al usuario hacia una determinada manera ',
+                '- Antes de la nube las soluciones de software se negociaban y creaban como demandaba del usuario, para lo que necesitara el usuario ',
+                '- Con la llegada de la nube y del SaaS posteriormente, se reflexiono si la la mejor idea erar crear flujos de trabajo especializados y eficientes o ',
+                ' - crear soluciones más generales y por consiguiente flexibles; en si mismo, vender servicios generios o especializados ',
+                '',
+                '<strong>Sin opiniones:</strong>',
+                '- El usuario tiene toda la capacidad de tomar sus decisiones, proporcionando diferentes maneras de realizar una misma tarea ',
+                '- Aca se decidira la mejor opción dado el problema y su contexto, por eso es importante tener una gran flexibilidad ',
+                '- Un ejemplo serian las hojas de calculo, que permiten crear diversas formas de almacenar y manipular los datos, si se hace de manera correcta ',
+                '',
+                '<strong>Con opiniones:</strong>',
+                '- Se puede apreciar como la forma correcta de realizar los procesos, por lo que el camino y sus elementos se muestran como se deben usar ',
+                '- Aun asi, no solo ofrecen una unica manera, tambien existen otras formas, que por lo general suelen ser más dificiles y conllevar a problemas ',
+                '- Un ejemplo seria un framework de programación, que facilita el trabajo, siempre y cuando se opere bajo sus reglas ',
             ])
     ];
 

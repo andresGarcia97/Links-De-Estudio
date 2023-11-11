@@ -29,6 +29,7 @@ export class AnalisisComponent implements OnInit {
     ['kpis', 'KPI'],
     ['manifiestoReactivo', 'Manifiesto Reactivo'],
     ['declineDesign', 'Declive del Diseño'],
+    ['opinionated-no', 'Diseño con/sin opiniones']
   ]);
 
   ngOnInit(): void {
