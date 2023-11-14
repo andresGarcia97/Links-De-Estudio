@@ -336,6 +336,7 @@ export const NUBE_AND_APIS = new Map<string, Referencia>([
     ['falaciesDistributedSystems', new Referencia('https://architecturenotes.co/fallacies-of-distributed-systems/', 'Sistemas Distribuidos', NUBE_APIS_KEY)],
     ['arquitecturalApiStyles', new Referencia('https://www.linkedin.com/feed/update/urn:li:activity:7095365669969350656/', 'Estilos de Arquitectura API', NUBE_APIS_KEY)],
     ['uri', new Referencia('https://www.techtarget.com/whatis/definition/URI-Uniform-Resource-Identifier', 'Uniform Resource Identifier', NUBE_APIS_KEY)],
+    ['apiTesting', new Referencia('https://blog.bytebytego.com/p/ep83-explaining-9-types-of-api-testing#%C2%A7explaining-types-of-api-testing', 'API Testing', NUBE_APIS_KEY)],
 ]);
 
 export const OTROS_KEY = 'Otros';

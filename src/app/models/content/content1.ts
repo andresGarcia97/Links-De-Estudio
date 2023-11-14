@@ -2165,8 +2165,7 @@ export const OTROS =
             [
                 '- Un DSL es un lenguaje de programación con un nivel superior de abstracción ',
                 '- Estos lenguajes son menos complejos que los lenguajes de alto nivel y proposito general, como Java, C, etc.. ',
-                '- Tambien son diseñados por expertos en el campo que se van a usar, para ser usados ',
-                ' - por personas versadas en el tema, pero sin experiencia en la programación ',
+                '- Son diseñados por expertos al campo dirigido, para ser usados, por personas versadas en el tema, pero sin experiencia en programación ',
                 '- Esto desemboca en un paradigma donde se especifica lo que se requiere, y se usa el lenguaje más adecuado para lograr el objetivo ',
                 '- Este concepto desemboca en la programación poliglota o programación orientada al lenguaje ',
                 '- Otro concepto importante es que los DSL pueden nacer y extenderse, con ó sin bases previas ',

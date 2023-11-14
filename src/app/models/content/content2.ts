@@ -2268,6 +2268,18 @@ export const NUBE =
                 '  - esto no garantiza el acceso a este, tiene que ser unica, por eso contiene valores como: protocolo, dominio, subdominio',
                 '<strong> - URI:</strong> Nombre de Recurso Uniforme, es similar a la URL, pero esta es independiente de la ubicación, y es persistente ',
                 '  - lo que significa que siempre identifica el mismo recurso, incluso cuando deja de estar disponible o deja de existir ',
+            ]),
+        new Item('apiTesting',
+            [
+                '<strong>- Pruebas de humo:</strong> Validación simple de que el API funcione y nada se rompa',
+                '<strong>- Pruebas funcionales:</strong> Crea un plan de pruebas basado en los requisitos funcionales, y compara los resultados con los esperados ',
+                '<strong>- Pruebas de integración:</strong> Prueba la comunicación entre varias APIs y los servicios de extremo a extremo ',
+                '<strong>- Pruebas de regresión:</strong> Garantiza que la correción de errores o nuevas funcionalidades, no alteren el comportamiento del API ',
+                '<strong>- Pruebas de carga:</strong> Mide el redndimiento de la aplicación, simulando diferentes cargas de trabajo, y calcular su capacidad ',
+                '<strong>- Pruebas de estres:</strong> Se crean cargas elevadas de manera deliberada y se prueba si el API funciona con normalidad ',
+                '<strong>- Pruebas de seguridad:</strong> Se prueban posibles fallos de seguridad y posibles amenazas externas ',
+                '<strong>- Pruebas de UI:</strong> Es la interacción entre la interfaz de usuario y el API, para asegurarse que los datos se muestren correctamente ',
+                '<strong>- Pruebas fuzz:</strong> Se ingresan datos no validos o inesperados, para intentar bloquear el API, y/o encontrar vulnerabilidades ',
             ])
     ];
 

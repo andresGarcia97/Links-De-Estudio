@@ -33,7 +33,8 @@ export class NubeComponent implements OnInit {
     ['apiGateway', 'Api Gateway'],
     ['falaciesDistributedSystems', 'Sistemas Distribuidos'],
     ['arquitecturalApiStyles', 'Estilos de Arquitectura API'],
-    ['uri', 'URI']
+    ['uri', 'URI'],
+    ['apiTesting', 'Testing in APIs']
   ]);
 
   ngOnInit(): void {
