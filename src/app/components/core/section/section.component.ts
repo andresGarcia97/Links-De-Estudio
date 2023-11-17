@@ -34,6 +34,11 @@ export class SectionComponent implements OnInit {
       return;
     }
 
+    if ("ArrowDown" === key || "ArrowUp" === key) {
+      this.showHideRelatedSections();
+      return;
+    }
+
     if ("Escape" === key) {
       this.router.navigateByUrl("");
     }
@@ -44,12 +49,14 @@ export class SectionComponent implements OnInit {
   @Input() tittles = new Map<string, string>([]);
   @Input() items = new Array<Item>();
   @Input() selection = '';
+  @Input() relatedSections = new Map<string, string>([]);
 
   referencia = '';
   titulo = '';
   lengthItems = 0;
   itemSelected = 0;
   iterationBackwards = false;
+  showRelatedSections = false;
 
   ngOnInit(): void {
     this.lengthItems = this.items.length - 1;
@@ -65,7 +72,7 @@ export class SectionComponent implements OnInit {
   }
 
   public getItemByIndex(index: number): void {
-    const key = this.items[index].key;
+    const key = this.items[index]?.key;
     this.getLinkAndTittleByKey(key);
   }
 
@@ -125,6 +132,14 @@ export class SectionComponent implements OnInit {
       default:
         return 'other';
     }
+  }
+
+  public routeToRelatedSection(pathComponent: string): void {
+    this.router.navigateByUrl(`/${pathComponent}`)
+  }
+
+  public showHideRelatedSections(): void {
+    this.showRelatedSections = !this.showRelatedSections;
   }
 
 }

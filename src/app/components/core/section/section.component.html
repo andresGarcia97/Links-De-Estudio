@@ -47,6 +47,17 @@
                 </svg>
             </div>
 
+            <div *ngIf="relatedSections.size !== 0" class="circle-link" (click)="showHideRelatedSections()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 448 512">
+                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path *ngIf="!iterationBackwards" d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 
+                    25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"/>
+                    <path *ngIf="iterationBackwards" d="M246.6 470.6c-12.5 12.5-32.8 12.5-45.3 0l-160-160c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L224 402.7 361.4 265.4c12.5-12.5 
+                    32.8-12.5 45.3 0s12.5 32.8 0 45.3l-160 160zm160-352l-160 160c-12.5 12.5-32.8 12.5-45.3 0l-160-160c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L224 210.7 361.4 
+                    73.4c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3z"/>
+                </svg>
+            </div>
+
             <div class="circle-link" *ngIf="!(itemSelected === lengthItems)" (click)="getNextElement()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 490 490">
                   <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
@@ -61,5 +72,24 @@
         </div>
 
     </div>
+
+    <div *ngIf="showRelatedSections" class="card-container less-margin">
+        
+        <h2>Temas Relacionados</h2>
+    
+        <div class="card-container glass-efect">
+
+            <span *ngFor="let tittle of relatedSections | keyvalue">
+                
+                <div class="card card-small" (click)="routeToRelatedSection(tittle.value)" tabindex="0">
+                    <span>{{tittle.key}}</span>
+                </div>
+
+            </span>
+    
+        </div>
+
+    </div>
+
 
 </div>
