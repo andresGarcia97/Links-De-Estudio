@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { LinkReferencia, CD_CI_KEY } from 'src/app/models/linkReferencia';
+import { LinkReferencia, DATA_BASES_KEY } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-home',
@@ -10,8 +10,8 @@ export class HomeComponent {
 
   constructor(private router: Router) { }
 
-  private route = new LinkReferencia().routesAndSections.get(CD_CI_KEY);
-  private item = 'industrialDevops';
+  private route = new LinkReferencia().routesAndSections.get(DATA_BASES_KEY);
+  private item = 'dbDesign';
 
   public routeTo(component: string): void {
     this.router.navigateByUrl(`/${component}`)

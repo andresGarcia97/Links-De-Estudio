@@ -536,6 +536,7 @@ export const PERSISTENCY = new Map<string, Referencia>([
     ['indices', new Referencia('https://www.ibm.com/docs/es/mam/7.6.0.8?topic=databases-database-indexing', 'Indices', DATA_BASES_KEY)],
     ['joins', new Referencia('https://ingenieriadesoftware.es/tipos-sql-join-guia-referencia/', 'Tipos de Joins', DATA_BASES_KEY)],
     ['constraints', new Referencia('https://www.w3schools.com/sql/sql_constraints.asp', 'Constraints', DATA_BASES_KEY)],
+    ['dbDesign', new Referencia('https://dzone.com/articles/what-is-good-database-design', 'Diseño de una BD', DATA_BASES_KEY)],
 ]);
 
 export const DATA_BASES_ADVANCED_KEY = 'BD Avanzado'
