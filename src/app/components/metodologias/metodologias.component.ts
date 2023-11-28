@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { METODOLOGIAS } from 'src/app/models/content/content2';
-import { METODOLOGIAS_REF } from 'src/app/models/linkReferencia';
+import { AGILES_KEY, ESTRATEGIAS_DESARROLLO_KEY, LinkReferencia, METODOLOGIAS_REF } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-metodologias',
@@ -11,6 +11,8 @@ export class MetodologiasComponent implements OnInit {
   items = METODOLOGIAS;
 
   itemStart = '';
+
+  relatedSections = new Map<string, string>([]);
 
   components = new Map([ ...METODOLOGIAS_REF ]);
 
@@ -29,11 +31,15 @@ export class MetodologiasComponent implements OnInit {
     ['v', 'Modelo V'],
     ['rup', 'RUP'],
     ['kaizen', 'Kaizen'],
-    ['scrumban', 'Scrumban']
+    ['scrumban', 'Scrumban'],
+    ['lean', 'Lean management']
   ]);
 
   ngOnInit(): void {
     this.itemStart = history?.state?.newItem;
+    const routes = new LinkReferencia().routesAndSections;
+    this.relatedSections.set(ESTRATEGIAS_DESARROLLO_KEY , routes.get(ESTRATEGIAS_DESARROLLO_KEY)!);
+    this.relatedSections.set(AGILES_KEY                 , routes.get(AGILES_KEY)!);
   }
 
 }

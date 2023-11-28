@@ -1935,6 +1935,36 @@ export const METODOLOGIAS =
                 ' - Gestion de proyectos problematicos ',
                 ' - Desarrollo de nuevos productos, posteriores al sprint ',
                 ' - Mejora continua de la gestión '
+            ]),
+        new Item('lean',
+            [
+                '- La idea principal es maximizar el valor de cara al cliente, y minimizar el desperdicio ',
+                '- Los procesos claves deben estar enfocados hacia el aumento de valor de manera continua, mientras se optimizan el flujo ',
+                ' - de los productos y servicios de manera horizontal, desde departamentos, tecnologias, y personas, hasta llegar a los clientes ',
+                '',
+                '<strong>Ideas base</strong>',
+                '- Entregar valor, entendido desde la perspectiva del cliente ',
+                '- Eliminar residuos, donde esto abarca todo aquello que no aporte al producto final ',
+                '- Avanzar hacia la excelencia, mediante la mejora continua ',
+                '',
+                '<strong>Origen</strong>',
+                '- Este proceso data desde los años 1940, derivado del sistema de producción de Toyota, y como su fabricación que se ajustaba continuamente, ',
+                ' - lograron mejorar significativas en productividad, eficiencia, costos, y cantidad de ciclos ',
+                '',
+                '<strong>Principios</strong>',
+                '<strong> - Identifique el valor:</strong> Esto radica en el problema que se esta intentado solucionar, y que el cliente no esta dispuesto a pagar ',
+                '  - cualquier actividad o proceso que no aporte valor, por lo se puede remover, para enfocarse en el valor que se desea entregar ',
+                '<strong> - Asignar flujos de valor:</strong> Se identifican todas las acciones y personas involucradas, en la entrega del producto final ',
+                '  - asi se puede identificar que no aportan valor para el cliente, y por consiguiente puedan ser eliminadas ',
+                '<strong> - Creación de flujos:</strong> Una vez idenficado lo valioso, hay que velar por el mantenimiento del flujo de trabajo de cada equipo ',
+                '  - evitando cuellos de botella e interrupciones que retrasan o desvian el avance ',
+                '<strong> - Sistema de trabajo:</strong> Asi se asegura un flujo de trabajo estable, donde las tareas solo se inician si existe una demanda y/o necesidad real ',
+                '<strong> - Mejora continua:</strong> Habiendo cumplido los pasos anteriores, se debe vigilar que se sigan cumpliendo, y en caso de problemas ',
+                '  - el sistema no podra mantenerse ni aislado ni estatico, aca es fundamental la participación de las personas para una mejora continua ',
+                '',
+                '- De la misma manera que otras metodologias, no hay una receta, ni una practica estandarizada, por lo que se debe tomar como una filosofia, ',
+                ' - de la gestión que busca mejora los procesos y productos a largo plazo, de manera sistematica y gradual, que se visualiza ',
+                ' - segun la interpretación del lider, que es además el encargado de ejecutarla '
             ])
     ];
 
