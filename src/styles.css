@@ -189,6 +189,11 @@
   border-color: var(--color-french-sky-blue);
 }
 
+.oscuro div.terminal.window h2 {
+  --c1: var(--color-navy-blue);
+  --c2: var(--color-french-sky-blue);
+}
+
 /* fin del modo oscuro */
 
 h1,
@@ -767,6 +772,60 @@ div a.circle-link {
 .card.card-small.itemSelected {
   color: var(--color-fulvous);
   border-color: var(--color-orange-yellow-crayola);
+}
+
+/* https://codepen.io/t_afif/pen/WNdPPEO */
+div.terminal.window h2 {
+  --c1: var(--color-fulvous);
+  --c2: var(--color-orange-yellow-crayola);
+
+  --_p: 93% 83.5% at;
+  --_g1: radial-gradient(var(--_p) bottom, var(--c1) 79.5%, #0000 80%) no-repeat;
+  --_g2: radial-gradient(var(--_p) top, #0000 79.5%, var(--c1) 80%) no-repeat;
+  --_g3: radial-gradient(var(--_p) bottom, var(--c2) 79.5%, #0000 80%) no-repeat;
+  --_g4: radial-gradient(var(--_p) top, #0000 79.5%, var(--c2) 80%) no-repeat;
+  background: var(--_g1), var(--_g2), var(--_g1), var(--_g2), var(--_g3),var(--_g4), var(--_g3), var(--_g4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: #0000;
+  -webkit-text-stroke: 0.1rem var(--c1);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  animation: s 2s infinite alternate, m 3s infinite linear;
+
+  font-family: system-ui, sans-serif;
+  font-size: 4rem;
+  text-align: center;
+}
+
+@keyframes m {
+  0% {
+    background-position: -200% 100%, -100% 100%, 0% 100%, 100% 100%, 0% 100%,
+      100% 100%, 200% 100%, 300% 100%;
+  }
+  100% {
+    background-position: 0% 100%, 100% 100%, 200% 100%, 300% 100%, -200% 100%,
+      -100% 100%, 0% 100%, 100% 100%;
+  }
+}
+
+@keyframes s {
+  0% {
+    background-size: 50.5% 60%, 50.5% 60%, 50.5% 60%, 50.5% 60%, 50.5% 90%,
+      50.5% 90%, 50.5% 90%, 50.5% 90%;
+  }
+  33% {
+    background-size: 50.5% 70%, 50.5% 70%, 50.5% 70%, 50.5% 70%, 50.5% 75%,
+      50.5% 75%, 50.5% 75%, 50.5% 75%;
+  }
+  66% {
+    background-size: 50.5% 55%, 50.5% 55%, 50.5% 55%, 50.5% 55%, 50.5% 80%,
+      50.5% 80%, 50.5% 80%, 50.5% 80%;
+  }
+  100% {
+    background-size: 50.5% 90%, 50.5% 90%, 50.5% 90%, 50.5% 90%, 50.5% 95%,
+      50.5% 95%, 50.5% 95%, 50.5% 95%;
+  }
 }
 
 @media screen and (min-width: 641px) and (max-width: 920px) {
