@@ -277,6 +277,7 @@ export const META_CARATERISTICAS_REF = new Map<string, Referencia>([
     ['rawTypes', new Referencia('https://stackoverflow.com/questions/2770321/what-is-a-raw-type-and-why-shouldnt-we-use-it#:~:text=Raw%20types%20refer%20to%20using,with%20older%20versions%20of%20Java.', 'Tipos Crudos', CARACTERISTICAS_KEY)],
     ['memoryAndGarbage', new Referencia('https://www.computerworld.com/article/2596992/memory-leaks-and-garbage-collection.amp.html', 'Fugas de memoria y recoleccion de basura', CARACTERISTICAS_KEY)],
     ['footprint', new Referencia('https://www.pcmag.com/encyclopedia/term/memory-footprint', 'Huella en memoria', CARACTERISTICAS_KEY)],
+    ['featureFlag', new Referencia('https://www.optimizely.com/optimization-glossary/feature-flags/', 'Feature Flags', CARACTERISTICAS_KEY)],
 ]);
 
 export const ESTRUCTURAS_KEY = 'Meta-Estructuras';
