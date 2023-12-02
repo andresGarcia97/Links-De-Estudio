@@ -1145,22 +1145,23 @@ export const FRAMEWORKS =
     [
         new Item('frameworks',
             [
-                ' - Son marcos de trabajo con la finalidad de acelerar y aumentar la calidad del codigo desarrollado ',
-                ' - Evitan perder tiempo desarrollando funciones que el propio entorno ya tiene ',
-                ' - Aumentan la productividad y la reutilización de codigo ',
-                ' - Existen infinidad de frameworks tanto para back como front, desarrollo movil, persistencia, etc... '
+                '- Son marcos de trabajo con la finalidad de acelerar y aumentar la calidad del codigo desarrollado ',
+                '- Evitan perder tiempo desarrollando funciones que el propio entorno ya tiene ',
+                '- Aumentan la productividad y la reutilización de codigo ',
+                '- Existen infinidad de frameworks tanto para back como front, desarrollo movil, persistencia y analisis de datos, etc... '
             ]),
         new Item('ioc',
             [
-                ' - La inversion de control es la implementación del principio de Hollywood en la que se basan muchos frameworks para funcionar ',
-                ' - El framework es quien toma el control de la ejecución del codigo del usuario modificando el ciclo de vida como tal ',
-                ' - Permite añadir nuevas funciones prefabicadas sin tener que modificar el codigo por medio de la inyección de dependencias ',
+                '- La inversion de control es la implementación del principio de Hollywood en la que se basan muchos frameworks para funcionar ',
+                '- El framework es quien toma el control de la ejecución del codigo del usuario modificando el ciclo de vida como tal ',
+                '- Permite añadir nuevas funciones prefabicadas sin tener que modificar el codigo por medio de la inyección de dependencias ',
             ]),
         new Item('iod',
             [
-                ' - La inyección de dependencias Permite modificar y extender nuestro codigo mucho más facil ',
-                ' - Solo es especificar que funcionalidades queremos añadir y estaran disponibles de manera transversal ',
-                ' - El codigo modificado se vuelve más reutilizable, compacto y manejable '
+                '- La inyección de dependencias Permite modificar y extender nuestro codigo mucho más facil ',
+                '- Solo es especificar que funcionalidades queremos añadir y estaran disponibles de manera transversal ',
+                '- El codigo modificado se vuelve más reutilizable, compacto y manejable ',
+                '- Asi se tiene un codigo compuesto, menos acoplado y mejor abstraido, donde lo más importante es que hace, en vez de como lo hace '
             ]),
         new Item('scafolding',
             [
@@ -1168,6 +1169,37 @@ export const FRAMEWORKS =
                 '- Generalmente se basa en la creación de las operaciones CRUD, basandose en un modelo de datos previo ',
                 '- Algunos frameworks pueden ayudar en este sentido, e incluso existen aplicaciones con este proposito ',
             ]),
+        new Item('iodSpring',
+            [
+                '- La inyección de depencias es un patron de diseño que promueve un bajo acoplamiento y una gran modularidad ',
+                '- El framework de Spring ha adoptado este principio y permite 3 formas diferentes de implementarlo ',
+                '- Esto permite delegar la administración de los objetos necesarios al framework y asi preocuparse en el porque, en vez del como ',
+                '',
+                '<strong>Inyección por constructor:</strong> Proporciona todas las dependencias de un objeto al momento de su inicialización ',
+                ' - la cual se realiza mediante el propio constructor de la clase',
+                '<strong>Inyección por campo:</strong> Establece directamente las dependencias en los campos de una clase, siempre que se anote con <em>@Autowired</em> ',
+                ' - esto se hace por medio de reflexión, iterando sobre los campos e inyectando las dependencias despues de crear la instancia ',
+                ' - esto se puede evitar y hacer que las inyecciones de este tipo, sean perezosas, ',
+                ' - validandose e inyectandose, solamente justo antes de usarse, si el campo tambien se anota con <em>@Lazy</em>',
+                '<strong>Inyección por setter:</strong> Se proporciona la dependencia, a traves de un metodo setter, esto es adecuado para escenarios ',
+                ' - donde la mutabilidad de las dependencias es posible ',
+                '',
+                '- Los primeros 2 tipos son similares, pero con diferencias sutiles que hacen que se prefiera la de constructor sobre la de campo ',
+                '',
+                '<strong>Inmutabilidad:</strong> La instancia puede ser marcada como <em>final</em> por lo que se evitaran errores, ',
+                ' - si se intentara modificar el valor inyectado por error ',
+                '<strong>Dependencias Explicitas:</strong> Esto hace que todas las depencias necesarias para el funcionamiento sean claras y visibles ',
+                ' - desde el principio, ayudando a entender mejor la relacion entre las clases y sus dependencias ',
+                '<strong>Testing unitario:</strong> Se facilitan los tests ya que se pueden pasar los objetos simulados(mocks) como argumentos al crear la prueba ',
+                ' - sin tener que usar reflexión o otros metodos, para configurar el ambiente ',
+                '<strong>Fail Fast:</strong> Si hay algun fallo en alguna dependencia, o en las subdependencias, la aplicación fallara justo al iniciar ',
+                ' - por lo que cualquier fallo o dependencia requerida, sera detectado como un fallo temprano, y no cuando se este en ejecución ',
+                '<strong>Seguridad en tiempo de compilación:</strong> De esta manera es posible asegurarse de proporcionar todas la instancias necesarias ',
+                ' - antes de que se ejecute la aplicación, reduciendo errores en tiempo de ejecución ',
+                '',
+                '- Aunque los otros tipos tienen casos donde son más convenientes, e incluso la unica opción, la Inyeción por Constructor ',
+                ' - se considera la mejor opción, creando aplicaciones más testeables, robustas y mantenibles ',
+            ])
     ];
 
 export const HARDWARE =

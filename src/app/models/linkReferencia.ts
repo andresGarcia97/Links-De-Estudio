@@ -211,9 +211,10 @@ export const ESTRATEGIAS_DESARROLLO_REF = new Map<string, Referencia>([
 export const FRAMEWORKS_KEY = 'Frameworks';
 export const FRAMEWORKS_REF = new Map<string, Referencia>([
     ['frameworks', new Referencia('https://neoattack.com/neowiki/framework/', '¿ Que es un framework?', FRAMEWORKS_KEY)],
-    ['ioc', new Referencia('https://medium.com/all-you-need-is-clean-code/inversi%C3%B3n-de-control-principio-de-hollywood-dont-call-us-we-ll-call-you-179e9c70e3d0', 'Inversion de Control', FRAMEWORKS_KEY)],
+    ['ioc', new Referencia('https://medium.com/all-you-need-is-clean-code/inversi%C3%B3n-de-control-principio-de-hollywood-dont-call-us-we-ll-call-you-179e9c70e3d0', 'Inversión de Control', FRAMEWORKS_KEY)],
     ['iod', new Referencia('https://www.arquitecturajava.com/el-patron-de-inyeccion-de-dependencia/', 'Inyección de dependencias', FRAMEWORKS_KEY)],
     ['scafolding', new Referencia('https://medium.com/@srinathsrs104/scaffolding-54ac4e47e133', 'Creación automatica de codigo', FRAMEWORKS_KEY)],
+    ['iodSpring', new Referencia('https://medium.com/@priyaroul99/what-is-constructor-injection-and-why-should-you-use-it-in-spring-bdb3e1857c58', 'Inyección de Dependencias en Spring', FRAMEWORKS_KEY)],
 ]);
 
 export const GIT_KEY = 'Git';
