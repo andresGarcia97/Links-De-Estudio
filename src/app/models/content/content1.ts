@@ -2617,5 +2617,16 @@ export const BASE_DE_DATOS_AVANZADO =
                 '- Pero esto tampoco es una solución final, si este proceso no se realiza periodicamente o se realiza de manera errada, ',
                 ' - la BD puede fallar por falta de espacio, o bloquear de manera fatal el acceso y la manipulación de los datos ',
                 ' - obligando a que se interrumpa la operación y a un mantenimiento forsozo del DBMS ',
+            ]),
+        new Item('acidVSbase',
+            [
+                '- El auge de las NoSql necesitaba un nuevo esquema que no fuera ACID, sin dejar de ser flexible y fluido al manipular los datos ',
+                '',
+                '<strong>BA Basicamente disponible:</strong> Garantizan la disponibilidad de los datos, sin imponer una coherencia inmediata, ni importar si es un cluster/nodos ',
+                '<strong>S Estado suave:</strong> No se garantiza la coherencia de los datos, esto pasa a ser responsabilidad del desarrollador ',
+                '<strong>E Consistencia eventual:</strong> Alcanzar la coherencia es posible, pero esto no sera de manera inmediata y los datos no siempre seran fiables ',
+                '',
+                '- Las redes sociales suelen ser un mar de información, donde no existe una estructura fija, por lo que contienen un enorme volumen de datos, ',
+                ' - sin estructura o parcialmente estructurados, por lo que una BD NoSQL es idonea para este tipo de ambientes ',
             ])
     ];

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { LinkReferencia, FRAMEWORKS_KEY } from 'src/app/models/linkReferencia';
+import { LinkReferencia, DATA_BASES_ADVANCED_KEY } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-home',
@@ -10,8 +10,8 @@ export class HomeComponent {
 
   constructor(private router: Router) { }
 
-  private route = new LinkReferencia().routesAndSections.get(FRAMEWORKS_KEY);
-  private item = 'iodSpring';
+  private route = new LinkReferencia().routesAndSections.get(DATA_BASES_ADVANCED_KEY);
+  private item = 'acidVSbase';
 
   public routeTo(component: string): void {
     this.router.navigateByUrl(`/${component}`)

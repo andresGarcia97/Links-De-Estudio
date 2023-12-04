@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BASE_DE_DATOS_AVANZADO } from 'src/app/models/content/content1';
-import { PERSISTENCY_ADVANCED } from 'src/app/models/linkReferencia';
+import { DATA_BASES_KEY, LinkReferencia, PERSISTENCY_ADVANCED } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-sql-nosql-advanced',
@@ -14,6 +14,8 @@ export class SqlNosqlAdvancedComponent implements OnInit {
 
   itemStart = '';
 
+  relatedSections = new Map<string, string>([]);
+
   tittles = new Map<string, string>([
     ['nosql', 'NoSQL'],
     ['tiposBD', 'Tipos NoSQL'],
@@ -26,11 +28,14 @@ export class SqlNosqlAdvancedComponent implements OnInit {
     ['locking', 'Bloqueos'],
     ['sqlOrderExecution', 'Orden de Ejecución'],
     ['sargeable', 'SARGEABLE'],
-    ['MVCC','Control de Concurrencia']
+    ['MVCC','Control de Concurrencia'],
+    ['acidVSbase', 'BASE']
   ]);
 
   ngOnInit(): void {
     this.itemStart = history?.state?.newItem;
+    const routes = new LinkReferencia().routesAndSections;
+    this.relatedSections.set(DATA_BASES_KEY, routes.get(DATA_BASES_KEY)!);
   }
   
 }
