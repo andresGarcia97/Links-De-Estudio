@@ -180,6 +180,27 @@ export const AGILES =
                 ' - Lentitud: La ejecución de las etapas debe ser metodica, y no es aplicable para situaciones a corto plazo, como emergencias ',
                 ' - Suceptible a imprevistos: Su efectividad depende de que el ambiente sea favorable y sin contratiempos ',
             ]),
+        new Item('estimationLaws',
+            [
+                '- La estimación agil es de algun modo un arte que puede ser engañoso, al mismo tiempo que es fundamental en el exito del proyecto/producto/servicio ',
+                '',
+                '<strong>Ley de Parkinson:</strong> El trabajo se extiende hasta agotar el tiempo posible, debido a la tendencia humana de prolongar una tarea, ',
+                ' - para ajustarse al tiempo estimado, por lo que se deben establecer plazos realistas y evitar retrasos innecesarios en lo posible ',
+                '',
+                '<strong>Ley de Deuda Tecnica:</strong> El costo a largo plazo, debido a acortar demasiado los plazos estimados, y haciendo un trabajo deficiente ',
+                ' - puede ser eficiente al inicio, pero a largo plazo puede generar retrasos y problemas, e incluso acarrear una bola de nieve insostenible ',
+                '',
+                '<strong>Ley del Error:</strong> Toda estimación esta atada al error, es algo inherente que siempre se debe tener en cuenta en el proceso ',
+                '',
+                '<strong>Ley de Precisión de la estimación:</strong> A medida que avanzamos en un proyecto, las estimaciones se vuelven más precisas, mientras que ',
+                ' - la incertidumbre se va reduciendo y la gestión de riesgos se vuelve cada vez más madura; el <em>Cono de incertidumbre</em> ilustra este concepto ',
+                '',
+                '<strong>Ley de Probabilidad 0 a la hora de subestimar:</strong> Por más que se inyecten recursos/personal las tareas siempre tendran un umbral ',
+                ' - minimo que no se puede superar, por más que se recorten la estimación ',
+                '',
+                '<strong>Ley de Brooks:</strong> Agregar más personas, no es garantia de recortar tiempo, contrario a lo que se espera, agregar personal ',
+                ' - a un proyecto atrasado, no garantiza una finalización más rapida, lo atrasara aun más ',
+            ])
     ];
 
 export const ARQUITECTURAS =

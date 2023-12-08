@@ -17,12 +17,14 @@ export class Fuente {
 
 export class Referencia {
     referencia = '';
-    titulo = '';
+    tittle = '';
     component = '';
+    tittleShort = '';
 
-    constructor(referencia: string, titulo: string, component: string) {
+    constructor(referencia: string, tittle: string, component: string, tittleShort: string = '') {
         this.referencia = referencia;
-        this.titulo = titulo;
+        this.tittle = tittle;
         this.component = component;
+        this.tittleShort = tittleShort;
     }
 }

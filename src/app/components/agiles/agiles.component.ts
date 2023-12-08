@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AGILES } from 'src/app/models/content/content1';
-import { AGILES_REF } from 'src/app/models/linkReferencia';
+import { AGILES_REF, LinkReferencia, METODOLOGIAS_KEY, USER_HISTORIES_KEY } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-agiles',
@@ -10,26 +10,19 @@ export class AgilesComponent implements OnInit {
 
   items = AGILES;
 
-  components = new Map([ ...AGILES_REF ]);
+  components = AGILES_REF;
 
   itemStart = '';
 
-  tittles = new Map<string, string>([
-    ['moscow', 'MOSCOW'],
-    ['scoring', 'Theme Scoring'],
-    ['muda', 'Desperdicio'],
-    ['5s', '5-S'],
-    ['muda#1', 'Muda #1'],
-    ['muda#2', 'Muda #2'],
-    ['planningPoker', 'Planning Poker'],
-    ['manifestAgil', 'Manifiesto Agil'],
-    ['principlesAgile', 'Principios'],
-    ['spike', 'Spike'],
-    ['deming', 'Ciclo de Deming'],
-  ]);
+  relatedSections = new Map<string, string>([]);
+
+  tittles = new Map([ ...AGILES_REF ].map(([key, { tittleShort }]) => [key, tittleShort]));
 
   ngOnInit(): void {
     this.itemStart = history?.state?.newItem;
+    const routes = new LinkReferencia().routesAndSections;
+    this.relatedSections.set(METODOLOGIAS_KEY,   routes.get(METODOLOGIAS_KEY)!);
+    this.relatedSections.set(USER_HISTORIES_KEY, routes.get(USER_HISTORIES_KEY)!);
   }
 
 }
