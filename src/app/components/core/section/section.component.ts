@@ -112,7 +112,7 @@ export class SectionComponent implements OnInit {
   public getLinkAndTittleByKey(key: string = ''): void {
     this.selection = key;
     this.referencia = this.components.get(key)?.referencia ?? '';
-    this.titulo = this.components.get(key)?.titulo ?? '';
+    this.titulo = this.components.get(key)?.tittle ?? '';
     this.itemSelected = this.getIndexItemSelected(this.selection);
   }
 

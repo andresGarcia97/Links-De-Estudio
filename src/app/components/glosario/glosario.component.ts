@@ -62,7 +62,7 @@ export class GlosarioComponent implements OnInit {
     const onlyComponents = new Array();
     namesAndValues.forEach((element) => {
       const newElement = {
-        titulo: element.value.titulo,
+        titulo: element.value.tittle,
         referencia: element.value.referencia,
         componente: element.value.component,
         key: element.name
@@ -87,7 +87,7 @@ export class GlosarioComponent implements OnInit {
     }
     else {
       this.referencia = this.componentes.get(key)?.referencia ?? '';
-      this.titulo = this.componentes.get(key)?.titulo ?? '';
+      this.titulo = this.componentes.get(key)?.tittle ?? '';
       this.item = new Item(items[0].key, items[0].content);
       this.showItem = true;
       this.scrollToView($view);

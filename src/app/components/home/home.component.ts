@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { LinkReferencia, DATA_BASES_ADVANCED_KEY } from 'src/app/models/linkReferencia';
+import { LinkReferencia, AGILES_KEY } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-home',
@@ -10,8 +10,8 @@ export class HomeComponent {
 
   constructor(private router: Router) { }
 
-  private route = new LinkReferencia().routesAndSections.get(DATA_BASES_ADVANCED_KEY);
-  private item = 'acidVSbase';
+  private route = new LinkReferencia().routesAndSections.get(AGILES_KEY);
+  private item = 'estimationLaws';
 
   public routeTo(component: string): void {
     this.router.navigateByUrl(`/${component}`)
