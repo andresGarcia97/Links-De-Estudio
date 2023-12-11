@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { LinkReferencia, AGILES_KEY } from 'src/app/models/linkReferencia';
+import { LinkReferencia, ANALISIS_KEY } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-home',
@@ -10,8 +10,8 @@ export class HomeComponent {
 
   constructor(private router: Router) { }
 
-  private route = new LinkReferencia().routesAndSections.get(AGILES_KEY);
-  private item = 'estimationLaws';
+  private route = new LinkReferencia().routesAndSections.get(ANALISIS_KEY);
+  private item = 'codingEasyPart';
 
   public routeTo(component: string): void {
     this.router.navigateByUrl(`/${component}`)

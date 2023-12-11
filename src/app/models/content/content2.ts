@@ -388,6 +388,25 @@ export const ANALISIS =
                 '- Se puede apreciar como la forma correcta de realizar los procesos, por lo que el camino y sus elementos se muestran como se deben usar ',
                 '- Aun asi, no solo ofrecen una unica manera, tambien existen otras formas, que por lo general suelen ser más dificiles y conllevar a problemas ',
                 '- Un ejemplo seria un framework de programación, que facilita el trabajo, siempre y cuando se opere bajo sus reglas ',
+            ]),
+        new Item('codingEasyPart',
+            [
+                '- Los tutoriales hacen parecer que todo proyecto es facil, que de principio a fin no encontraras problemas, algo que dista enormemente de la realidad ',
+                '',
+                '- Jamas se trata de solo codificar, hay que analizar lo que existe, y como esto puede verse afectado, si se descarta totalmente, si es modificado, ',
+                ' - como pueden verse afectados partes de terceros, e incluso los mismos clientes que usan/requieren del proyecto',
+                '',
+                '- Hacer un plan es fundamental, dependiendo de lo que se requiera, un nuevo desarrollo, una migracion, una nueva funcionalidad, ',
+                ' - un refactor, una actualización, además de que realizar estimaciones y presentar plazos de entrega, etc... ',
+                '',
+                '- Comunicarse con otros equipos y/o personas, es comun necesitar realizar acciones que afectan a otras areas o que son compentencia de otras areas ',
+                ' - donde solo es necesario brindarles apoyo, en cualquiera de los casos, la comunicación empresarial e interpersonal es fundamental ',
+                '',
+                '- Hay que dañar para arreglar, por más control o separación que se tenga, siempre habra algo que dejara de funcionar o cambiara su comportamiento, ',
+                ' - por lo que tener un contro total es improbable y una estimación poco realista, un ejemplo practico de la <em>Ley de Hyrum</em>',
+                '',
+                '- Los requisitos no son claros, y si son claros estan incompletos, nunca faltara el requisito que es intrinseco y por lo tanto nunca se menciona, o ',
+                ' - el requisito que solo existe a nivel de codigo, pero que es fundamental y nadie documento, entre otros casos, que suceden despues de iniciar ',
             ])
     ];
 

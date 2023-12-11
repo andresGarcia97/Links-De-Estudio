@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ANALISIS } from 'src/app/models/content/content2';
-import { ANALISIS_REF } from 'src/app/models/linkReferencia';
+import { ANALISIS_REF, LinkReferencia, PERSONAS_KEY, LEYES_KEY } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-analisis',
@@ -10,30 +10,19 @@ export class AnalisisComponent implements OnInit {
 
   items = ANALISIS;
 
-  components = new Map([...ANALISIS_REF]);
+  components = ANALISIS_REF;
 
   itemStart = '';
 
-  tittles = new Map<string, string>([
-    ['comportamiento', 'Comportamiento'],
-    ['dominio', 'Analisis de Dominio'],
-    ['case', 'Herramientas CASE'],
-    ['divide', 'Divide y venceras'],
-    ['diseño', 'Un buen diseño'],
-    ['crc', 'Tarjetas CRC'],
-    ['avestruz', 'Avestruz'],
-    ['modeloDominio', 'Modelo de dominio'],
-    ['sistemasInformacion', 'Información'],
-    ['dataAnalisis', 'Analisis de datos'],
-    ['timeComplexityBigO', 'Big O Notación'],
-    ['kpis', 'KPI'],
-    ['manifiestoReactivo', 'Manifiesto Reactivo'],
-    ['declineDesign', 'Declive del Diseño'],
-    ['opinionated-no', 'Diseño con/sin opiniones']
-  ]);
+  relatedSections = new Map<string, string>([]);
+
+  tittles = new Map([ ...ANALISIS_REF ].map(([key, { tittleShort }]) => [key, tittleShort]));
 
   ngOnInit(): void {
     this.itemStart = history?.state?.newItem;
+    const routes = new LinkReferencia().routesAndSections;
+    this.relatedSections.set(PERSONAS_KEY, routes.get(PERSONAS_KEY)!);
+    this.relatedSections.set(LEYES_KEY,    routes.get(LEYES_KEY)!);
   }
 
 }
