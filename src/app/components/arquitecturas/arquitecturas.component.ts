@@ -10,31 +10,13 @@ export class ArquitecturasComponent implements OnInit {
 
   items = ARQUITECTURAS;
 
-  components = new Map([ ...ARQUITECTURAS_REF ]);
+  components = ARQUITECTURAS_REF;
 
   itemStart = '';
 
   relatedSections = new Map<string, string>([]);
 
-  tittles = new Map<string, string>([
-    ['definicion', 'Definición'],
-    ['inicioArquitectura', 'Etapas & Roles'],
-    ['conceptosArquitectura', 'Conceptos'],
-    ['principiosArquitecturas', 'Principios'],
-    ['arquitecturasLimpias', 'Limpias'],
-    ['capas', 'Capas'],
-    ['cliente', 'Cliente Servidor'],
-    ['microServiciosFundamentals', 'Bases, Microservicios'],
-    ['servicios', 'Microservicios'],
-    ['hexagonal', 'Hexagonal'],
-    ['noHexagonal', 'Ni Nueva, Ni hexagonal'],
-    ['mvc', 'MVC'],
-    ['mvpMvc', 'MVP'],
-    ['otrasArquitecturas', 'Otras (patrones)'],
-    ['monolitos', 'Monolitos'],
-    ['stylesArchitecture1', 'Estilos & Patrones #1'],
-    ['stylesArchitecture2', 'Estilos & Patrones #2'],
-  ]);
+  tittles = new Map([ ...ARQUITECTURAS_REF ].map(([key, { tittleShort }]) => [key, tittleShort]));
 
   ngOnInit(): void {
     this.itemStart = history?.state?.newItem;

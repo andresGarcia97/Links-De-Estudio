@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { LinkReferencia, ANALISIS_KEY } from 'src/app/models/linkReferencia';
+import { LinkReferencia, BUENAS_PRACTICAS_KEY } from 'src/app/models/linkReferencia';
+
+const route = new LinkReferencia().routesAndSections.get(BUENAS_PRACTICAS_KEY);
 
 @Component({
   selector: 'app-home',
@@ -10,16 +12,13 @@ export class HomeComponent {
 
   constructor(private router: Router) { }
 
-  private route = new LinkReferencia().routesAndSections.get(ANALISIS_KEY);
-  private item = 'codingEasyPart';
-
   public routeTo(component: string): void {
     this.router.navigateByUrl(`/${component}`)
   }
 
   public routeToLastItem(): void {
-    const newItem = this.item;
-    this.router.navigateByUrl(`/${this.route}`, { state: { newItem } })
+    const newItem = 'goodHabits';
+    this.router.navigateByUrl(`/${route}`, { state: { newItem } })
   }
 
 }

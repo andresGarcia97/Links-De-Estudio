@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BUENAS_PRACTICAS } from 'src/app/models/content/content2';
-import { BUENAS_PRACTICAS_REF } from 'src/app/models/linkReferencia';
+import { ANALISIS_KEY, BUENAS_PRACTICAS_REF, CALIDAD_KEY, LinkReferencia, MALAS_PRACTICAS_KEY } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-buenas-practicas',
@@ -10,30 +10,20 @@ export class BuenasPracticasComponent implements OnInit {
 
   items = BUENAS_PRACTICAS;
 
-  components = new Map([ ...BUENAS_PRACTICAS_REF ]);
+  components = BUENAS_PRACTICAS_REF;
 
   itemStart = '';
 
-  tittles = new Map<string, string>([
-    ['practicas1', 'Parte #1'],
-    ['practicas2', 'Parte #2'],
-    ['practicas3', 'Parte #3'],
-    ['practicas4', 'Parte #4'],
-    ['complejidad', 'Complejidad'],
-    ['complejidadCognitiva', 'Cognitiva'],
-    ['complejidadAlgoritmica', 'Algoritmica'],
-    ['logging', 'Logs VS Debug'],
-    ['debugging', 'Debugging'],
-    ['demeter', 'Ley de Demeter'],
-    ['estandaresNombramiento', 'Nombramiento'],
-    ['estatico', 'Analisis de codigo'],
-    ['guardClauses', 'Guard Clauses'],
-    ['semanticConstructors', 'Constructores Semanticos'],
-    ['exceptionGoodPractices', 'Manejo de Excepciones'],
-  ]);
+  relatedSections = new Map<string, string>([]);
+
+  tittles = new Map([ ...BUENAS_PRACTICAS_REF ].map(([key, { tittleShort }]) => [key, tittleShort]));
 
   ngOnInit(): void {
     this.itemStart = history?.state?.newItem;
+    const routes = new LinkReferencia().routesAndSections;
+    this.relatedSections.set(CALIDAD_KEY,         routes.get(CALIDAD_KEY)!);
+    this.relatedSections.set(ANALISIS_KEY,        routes.get(ANALISIS_KEY)!);
+    this.relatedSections.set(MALAS_PRACTICAS_KEY, routes.get(MALAS_PRACTICAS_KEY)!);
   }
 
 }
