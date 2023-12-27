@@ -47,6 +47,7 @@ export const BACK = new Map([
     ['sqlRoadMap', { titulo: 'Mapa de Ruta SQL', referencia: 'https://roadmap.sh/sql' }],
     ['javaTags', { titulo: 'Inside Java Tags', referencia: 'https://inside.java/tags' }],
     ['arquitecturesStyles', { titulo: 'Estilos arquitectonicos', referencia: 'https://blog.bytebytego.com/p/ep68-top-architectural-styles#%C2%A7top-architectural-styles' }],
+    ['dockerSecurity', { titulo: 'Seguridad en Docker', referencia: 'https://spacelift.io/blog/docker-security#2-regularly-rebuild-your-images' }],
 ]);
 
 export const UTILS = new Map([
