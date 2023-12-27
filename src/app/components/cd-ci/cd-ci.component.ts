@@ -10,21 +10,13 @@ export class CDCIComponent implements OnInit {
 
   items = CD_CI_INFRAESTRUCTURE;
 
-  components = new Map([ ...CD_CI_REF ]);
+  components = CD_CI_REF;
 
   itemStart = '';
 
   relatedSections = new Map<string, string>([]);
 
-  tittles = new Map<string, string>([
-    ['cdci', 'CD/CI'],
-    ['devops', 'DevOps'],
-    ['dataStoring', 'Almacenamiento de datos'],
-    ['iascode', 'Infraestructura & Codigo'],
-    ['stateless-stateful', 'Stateless VS Stateful'],
-    ['deploymentPatterns', 'Patrones de Despliegue'],
-    ['industrialDevops', 'Industrial DevOps'],
-  ]);
+  tittles = new Map([ ...CD_CI_REF ].map(([key, { tittleShort }]) => [key, tittleShort]));
 
   ngOnInit(): void {
     this.itemStart = history?.state?.newItem;

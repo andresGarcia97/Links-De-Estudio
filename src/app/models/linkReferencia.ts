@@ -637,11 +637,12 @@ export const NEURO_MARKETING_REF = new Map<string, Referencia>([
 
 export const CD_CI_KEY = 'CD/CI-Infraestructura';
 export const CD_CI_REF = new Map<string, Referencia>([
-    ['cdci', new Referencia('https://www.aplyca.com/es/blog/integracion-entrega-continua-ci-cd', 'Integración continua y Entrega Continua', CD_CI_KEY)],
-    ['devops', new Referencia('https://www.paradigmadigital.com/techbiz/que-es-devops-y-sobre-todo-que-no-es-devops/#:~:text=Como%20conclusi%C3%B3n%2C%20qued%C3%A9monos%20con%20una,s%C3%B3lo%20en%20desarrollar%20y%20puedan', 'DevOps', CD_CI_KEY)],
-    ['dataStoring', new Referencia('https://www.striim.com/blog/data-warehouse-vs-data-lake-vs-data-lakehouse-an-overview/', 'Analisis y almacenamiento de datos', CD_CI_KEY)],
-    ['iascode', new Referencia('https://www.redhat.com/es/topics/automation/what-is-infrastructure-as-code-iac', 'Infraestructura como Codigo', CD_CI_KEY)],
-    ['stateless-stateful', new Referencia('https://refactorizando.com/stateful-vs-stateless-arquitectura/', 'Stateful VS Stateless', CD_CI_KEY)],
-    ['deploymentPatterns', new Referencia('https://newsletter.techworld-with-milan.com/p/what-are-deployment-patterns', 'Patrones de Despliegue', CD_CI_KEY)],
-    ['industrialDevops', new Referencia('https://itrevolution.com/articles/what-is-industrial-devops/', 'Industrial DevOps', CD_CI_KEY)],
+    ['cdci', new Referencia('https://www.aplyca.com/es/blog/integracion-entrega-continua-ci-cd', 'Integración continua y Entrega Continua', CD_CI_KEY, 'CD/CI')],
+    ['devops', new Referencia('https://www.paradigmadigital.com/techbiz/que-es-devops-y-sobre-todo-que-no-es-devops/#:~:text=Como%20conclusi%C3%B3n%2C%20qued%C3%A9monos%20con%20una,s%C3%B3lo%20en%20desarrollar%20y%20puedan', 'DevOps', CD_CI_KEY, 'DevOps')],
+    ['dataStoring', new Referencia('https://www.striim.com/blog/data-warehouse-vs-data-lake-vs-data-lakehouse-an-overview/', 'Analisis y almacenamiento de datos', CD_CI_KEY, 'Almacenamiento de datos')],
+    ['iascode', new Referencia('https://www.redhat.com/es/topics/automation/what-is-infrastructure-as-code-iac', 'Infraestructura como Codigo', CD_CI_KEY, 'Infraestructura & Codigo')],
+    ['stateless-stateful', new Referencia('https://refactorizando.com/stateful-vs-stateless-arquitectura/', 'Stateful VS Stateless', CD_CI_KEY, 'Stateless VS Stateful')],
+    ['deploymentPatterns', new Referencia('https://newsletter.techworld-with-milan.com/p/what-are-deployment-patterns', 'Patrones de Despliegue', CD_CI_KEY, 'Patrones de Despliegue')],
+    ['industrialDevops', new Referencia('https://itrevolution.com/articles/what-is-industrial-devops/', 'Industrial DevOps', CD_CI_KEY, 'Industrial DevOps')],
+    ['pipelines', new Referencia('https://semaphoreci.com/blog/cicd-pipeline', 'Pipelines', CD_CI_KEY, '¿ Que es un Pipeline ?')],
 ]);

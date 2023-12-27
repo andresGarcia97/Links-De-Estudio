@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { LinkReferencia, CALIDAD_KEY } from 'src/app/models/linkReferencia';
+import { LinkReferencia, CD_CI_KEY } from 'src/app/models/linkReferencia';
 
-const route = new LinkReferencia().routesAndSections.get(CALIDAD_KEY);
+const route = new LinkReferencia().routesAndSections.get(CD_CI_KEY);
 
 @Component({
   selector: 'app-home',
@@ -17,7 +17,7 @@ export class HomeComponent {
   }
 
   public routeToLastItem(): void {
-    const newItem = 'doraAndSpaceMetrics';
+    const newItem = 'pipelines';
     this.router.navigateByUrl(`/${route}`, { state: { newItem } })
   }
 
