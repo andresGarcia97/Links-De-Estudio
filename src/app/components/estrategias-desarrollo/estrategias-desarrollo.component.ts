@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ESTATEGIAS_DESARROLLO } from 'src/app/models/content/content2';
-import { ESTRATEGIAS_DESARROLLO_REF } from 'src/app/models/linkReferencia';
+import { AGILES_KEY, CD_CI_KEY, ESTRATEGIAS_DESARROLLO_REF, LinkReferencia, METODOLOGIAS_KEY, REQUISITOS_KEY, TESTING_KEY } 
+from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-estrategias-desarrollo',
@@ -10,22 +11,22 @@ export class EstrategiasDesarrolloComponent implements OnInit {
 
   items = ESTATEGIAS_DESARROLLO;
 
-  components = new Map([ ...ESTRATEGIAS_DESARROLLO_REF ]);
+  components = ESTRATEGIAS_DESARROLLO_REF;
 
   itemStart = '';
 
-  tittles = new Map<string, string>([
-    ['ddd', 'DDD'],
-    ['bdd', 'BDD'],
-    ['tdd', 'TDD'],
-    ['atdd', 'ATDD'],
-    ['analisis', 'Enfoques'],
-    ['tld', 'TLD vs TDD'],
-    ['bduf', 'BDUF']
-  ]);
+  relatedSections = new Map<string, string>([]);
+
+  tittles = new Map([ ...ESTRATEGIAS_DESARROLLO_REF ].map(([key, { tittleShort }]) => [key, tittleShort]));
 
   ngOnInit(): void {
     this.itemStart = history?.state?.newItem;
+    const routes = new LinkReferencia().routesAndSections;
+    this.relatedSections.set(CD_CI_KEY,        routes.get(CD_CI_KEY)!);
+    this.relatedSections.set(AGILES_KEY,       routes.get(AGILES_KEY)!);
+    this.relatedSections.set(TESTING_KEY,      routes.get(TESTING_KEY)!);
+    this.relatedSections.set(METODOLOGIAS_KEY, routes.get(METODOLOGIAS_KEY)!);
+    this.relatedSections.set(REQUISITOS_KEY,   routes.get(REQUISITOS_KEY)!);
   }
 
 }
