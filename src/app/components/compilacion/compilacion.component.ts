@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { COMPILACION } from 'src/app/models/content/content2';
-import { COMPILACION_REF } from 'src/app/models/linkReferencia';
+import { CARACTERISTICAS_KEY, COMPILACION_REF, HARDWARE_KEY, LinkReferencia } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-compilacion',
@@ -10,30 +10,19 @@ export class CompilacionComponent implements OnInit {
 
   items = COMPILACION;
 
-  components = new Map([ ...COMPILACION_REF ]);
+  components = COMPILACION_REF;
 
   itemStart = '';
 
-  tittles = new Map<string, string>([
-    ['compilacion', '¿ que es ?'],
-    ['nivel', 'Niveles'],
-    ['interprete', 'Interpretes'],
-    ['transpilacion', 'Transpilación'],
-    ['azucarSintactico', 'Azucar Sintactico'],
-    ['coercion', 'Coerción'],
-    ['ofuscacion', 'Ofuscación'],
-    ['treeShaking', 'Tree Shaking'],
-    ['grafos', 'Grafos'],
-    ['compilacionAnticipada', 'Compilación anticipada'],
-    ['duckTyping', 'Duck Typing'],
-    ['sdkVsApi', 'SDK vs API'],
-    ['casting', 'Casteo de Datos'],
-    ['verbosity', 'Verbosidad'],
-    ['tipoLenguajeProposito', 'Proposito'],
-  ]);
+  relatedSections = new Map<string, string>([]);
+
+  tittles = new Map([ ...COMPILACION_REF ].map(([key, { tittleShort }]) => [key, tittleShort]));
 
   ngOnInit(): void {
     this.itemStart = history?.state?.newItem;
+    const routes = new LinkReferencia().routesAndSections;
+    this.relatedSections.set(HARDWARE_KEY ,       routes.get(HARDWARE_KEY)!);
+    this.relatedSections.set(CARACTERISTICAS_KEY, routes.get(CARACTERISTICAS_KEY)!);
   }
 
 }
