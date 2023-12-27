@@ -82,7 +82,8 @@ export const CURIOSITIES = new Map([
     ['iconsRepo', { titulo: 'Repositorio Iconos', referencia: 'https://icones.js.org/' }],
     ['javascriptFrameworks', { titulo: 'Javascript frameworks', referencia: 'https://www.pzuraq.com/blog/four-eras-of-javascript-frameworks' }],
     ['roadMapDevelop', { titulo: 'Aprender programación', referencia: 'https://www.freecodecamp.org/news/how-to-learn-programming/' }],
-    ['howDnsWork', { titulo: 'como funciona un DNS', referencia: 'https://howdns.works/es/' }]
+    ['howDnsWork', { titulo: 'como funciona un DNS', referencia: 'https://howdns.works/es/' }],
+    ['IAexplained', { titulo: 'Terminos comunes en IA', referencia: 'https://www.linkedin.com/pulse/qu%25C3%25A9-es-la-ia-gu%25C3%25ADa-definitiva-para-programadores-y-edteam/?trackingId=iMcaNpgFShCr0%2BTEfhlBvw%3D%3D' }]
 ]);
 
 export const SECURITY = new Map([
