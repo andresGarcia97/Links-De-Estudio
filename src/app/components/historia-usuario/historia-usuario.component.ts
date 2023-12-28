@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HISTORIAS_USUARIO } from 'src/app/models/content/content2';
-import { USER_HISTORIES } from 'src/app/models/linkReferencia';
+import { AGILES_KEY, LinkReferencia, PERSONAS_KEY, REQUISITOS_KEY, USER_HISTORIES } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-historia-usuario',
@@ -14,21 +14,16 @@ export class HistoriaUsuarioComponent implements OnInit {
 
   itemStart = '';
 
-  tittles = new Map<string, string>([
-    ['historias', '¿ que son ?'],
-    ['objetivos', '¿ que buscan ?'],
-    ['partes', 'Partes'],
-    ['invest', 'INVEST'],
-    ['smart', 'SMART'],
-    ['3c', 'Las 3 C'],
-    ['gherkin', 'Gherkin'],
-    ['descomposicionHU', 'Descomposición'],
-    ['storyPoints', 'Puntos'],
-    ['casosVsRequisitosVsHu', 'Hu Vs Casos de Uso']
-  ]);
+  relatedSections = new Map<string, string>([]);
+
+  tittles = new Map([ ...USER_HISTORIES ].map(([key, { tittleShort }]) => [key, tittleShort]));
 
   ngOnInit(): void {
     this.itemStart = history?.state?.newItem;
+    const routes = new LinkReferencia().routesAndSections;
+    this.relatedSections.set(AGILES_KEY,     routes.get(AGILES_KEY)!);
+    this.relatedSections.set(REQUISITOS_KEY, routes.get(REQUISITOS_KEY)!);
+    this.relatedSections.set(PERSONAS_KEY,   routes.get(PERSONAS_KEY)!);
   }
 
 }

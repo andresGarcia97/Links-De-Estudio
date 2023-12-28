@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { LEYES } from 'src/app/models/content/content2';
-import { LEYES_REF } from 'src/app/models/linkReferencia';
+import { CONOCIMIENTO_EMPIRICO_KEY, LEYES_REF, LinkReferencia, PERSONAS_KEY } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-leyes',
@@ -10,27 +10,19 @@ export class LeyesComponent implements OnInit {
 
   items = LEYES;
 
-  components = new Map([...LEYES_REF]);
+  components = LEYES_REF;
 
   itemStart = '';
 
-  tittles = new Map<string, string>([
-    ['balas', 'Balas de Plata'],
-    ['lehman', 'Leyes de Lehman'],
-    ['conway', 'Ley de Conway'],
-    ['murphy', 'Ley de Murphy'],
-    ['pendulo', 'Ley del pendulo'],
-    ['hyrum', 'Ley de Hyrum'],
-    ['leblanc', 'Ley de Leblanc´s'],
-    ['leyesInternet', 'Leyes En Internet'],
-    ['pareto', 'Ley de Pareto'],
-    ['brooksLaw', 'Ley de Brooks'],
-    ['mooreAndWirth', 'Moore & Wirth'],
-    ['amdahl', 'Ley de Amdahls']
-  ]);
+  relatedSections = new Map<string, string>([]);
+
+  tittles = new Map([ ...LEYES_REF ].map(([key, { tittleShort }]) => [key, tittleShort]));
 
   ngOnInit(): void {
     this.itemStart = history?.state?.newItem;
+    const routes = new LinkReferencia().routesAndSections;
+    this.relatedSections.set(PERSONAS_KEY,               routes.get(PERSONAS_KEY)!);
+    this.relatedSections.set(CONOCIMIENTO_EMPIRICO_KEY,  routes.get(CONOCIMIENTO_EMPIRICO_KEY)!);
   }
 
 }
