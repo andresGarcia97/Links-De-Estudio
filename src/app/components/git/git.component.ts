@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GIT } from 'src/app/models/content/content2';
-import { GIT_REF } from 'src/app/models/linkReferencia';
+import { GIT_REF, LinkReferencia, VERSIONAMIENTO_KEY } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-git',
@@ -10,30 +10,18 @@ export class GitComponent implements OnInit {
 
   items = GIT;
 
-  components = new Map([ ...GIT_REF ]);
+  components = GIT_REF;
 
   itemStart = '';
 
-  tittles = new Map<string, string>([
-    ['introduccion', 'Introducción'],
-    ['repositorios', 'Repositorios'],
-    ['ramas', 'Ramas'],
-    ['protocolos', 'Protocolos'],
-    ['versiones', 'Versiones y tags'],
-    ['forks', 'Forks y Pull requests'],
-    ['stash', 'Stash y limpieza'],
-    ['merge', 'Merge'],
-    ['atributos', 'Atributos'],
-    ['migracion', 'Entresijos'],
-    ['flow', 'Git flow'],
-    ['practicas', 'Buenas Practicas'],
-    ['branching-strategies', 'Ramificación'],
-    ['monoRepo', 'Mono Repo'],
-    ['pullRequestsToxic', 'Pull Requests Toxicos'],
-  ]);
+  relatedSections = new Map<string, string>([]);
+
+  tittles = new Map([ ...GIT_REF ].map(([key, { tittleShort }]) => [key, tittleShort]));
 
   ngOnInit(): void {
     this.itemStart = history?.state?.newItem;
+    const routes = new LinkReferencia().routesAndSections;
+    this.relatedSections.set(VERSIONAMIENTO_KEY,  routes.get(VERSIONAMIENTO_KEY)!);
   }
 
 }

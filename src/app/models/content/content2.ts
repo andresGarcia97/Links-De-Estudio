@@ -1486,7 +1486,7 @@ export const GIT =
                 '- Con multiples repositorios, se tienen problemas como: ',
                 '<strong>- Compartir codigo entre repositorios:</strong> Requiere configurar las herramientas, y el entorno, además de tareas extras ',
                 '<strong>- Duplicación de codigo:</strong> Donde para evitar crear librerias compartidas y su mantenimiento, cada equipo crea sus propias implementaciones ',
-                '<strong>- Cambios entre las librerias y los consumidores:</stron> Que suelen ser costoso, al tener que manejar la compatibilidad a travez de multiples proyectos ',
+                '<strong>- Cambios entre las librerias y los consumidores:</strong> Que suelen ser costoso, al tener que manejar la compatibilidad a travez de multiples proyectos ',
                 '<strong>- Herramientas inconsistentes:</strong> Cada proyecto usa las herramientas que mejor le convengan, comandos, pruebas, compilación, ambientes, etc.. ',
                 '',
                 '- Con un solo repositorio, se tienen beneficios como: ',

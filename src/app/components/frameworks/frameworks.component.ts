@@ -10,24 +10,18 @@ export class FrameworksComponent implements OnInit {
 
   items = FRAMEWORKS;
 
-  components = new Map([ ...FRAMEWORKS_REF ]);
+  components = FRAMEWORKS_REF;
 
   itemStart = '';
 
   relatedSections = new Map<string, string>([]);
 
-  tittles = new Map<string, string>([
-    ['frameworks', '¿ Que son ?'],
-    ['ioc', 'Inversión de control'],
-    ['iod', 'Inyección de dependencias'],
-    ['scafolding', 'Scaffolding'],
-    ['iodSpring', 'IoD Spring'],
-  ]);
+  tittles = new Map([ ...FRAMEWORKS_REF ].map(([key, { tittleShort }]) => [key, tittleShort]));
 
   ngOnInit(): void {
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
-    this.relatedSections.set(CALIDAD_KEY , routes.get(CALIDAD_KEY)!);
+    this.relatedSections.set(CALIDAD_KEY,  routes.get(CALIDAD_KEY)!);
     this.relatedSections.set(ANALISIS_KEY, routes.get(ANALISIS_KEY)!);
   }
   

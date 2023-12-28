@@ -214,30 +214,30 @@ export const ESTRATEGIAS_DESARROLLO_REF = new Map<string, Referencia>([
 
 export const FRAMEWORKS_KEY = 'Frameworks';
 export const FRAMEWORKS_REF = new Map<string, Referencia>([
-    ['frameworks', new Referencia('https://neoattack.com/neowiki/framework/', '¿ Que es un framework?', FRAMEWORKS_KEY)],
-    ['ioc', new Referencia('https://medium.com/all-you-need-is-clean-code/inversi%C3%B3n-de-control-principio-de-hollywood-dont-call-us-we-ll-call-you-179e9c70e3d0', 'Inversión de Control', FRAMEWORKS_KEY)],
-    ['iod', new Referencia('https://www.arquitecturajava.com/el-patron-de-inyeccion-de-dependencia/', 'Inyección de dependencias', FRAMEWORKS_KEY)],
-    ['scafolding', new Referencia('https://medium.com/@srinathsrs104/scaffolding-54ac4e47e133', 'Creación automatica de codigo', FRAMEWORKS_KEY)],
-    ['iodSpring', new Referencia('https://medium.com/@priyaroul99/what-is-constructor-injection-and-why-should-you-use-it-in-spring-bdb3e1857c58', 'Inyección de Dependencias en Spring', FRAMEWORKS_KEY)],
+    ['frameworks', new Referencia('https://neoattack.com/neowiki/framework/', '¿ Que es un framework?', FRAMEWORKS_KEY, '¿ Que son ?')],
+    ['ioc', new Referencia('https://medium.com/all-you-need-is-clean-code/inversi%C3%B3n-de-control-principio-de-hollywood-dont-call-us-we-ll-call-you-179e9c70e3d0', 'Inversión de Control', FRAMEWORKS_KEY, 'Inversión de control')],
+    ['iod', new Referencia('https://www.arquitecturajava.com/el-patron-de-inyeccion-de-dependencia/', 'Inyección de dependencias', FRAMEWORKS_KEY, 'Inyección de dependencias')],
+    ['scafolding', new Referencia('https://medium.com/@srinathsrs104/scaffolding-54ac4e47e133', 'Creación automatica de codigo', FRAMEWORKS_KEY, 'Scaffolding')],
+    ['iodSpring', new Referencia('https://medium.com/@priyaroul99/what-is-constructor-injection-and-why-should-you-use-it-in-spring-bdb3e1857c58', 'Inyección de Dependencias en Spring', FRAMEWORKS_KEY, 'IoD Spring')],
 ]);
 
 export const GIT_KEY = 'Git';
 export const GIT_REF = new Map<string, Referencia>([
-    ['introduccion', new Referencia('https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Acerca-del-Control-de-Versiones', 'Introducción a Git', GIT_KEY)],
-    ['repositorios', new Referencia('https://git-scm.com/book/es/v2/Fundamentos-de-Git-Trabajar-con-Remotos', 'Repositorios Remotos y Locales', GIT_KEY)],
-    ['ramas', new Referencia('https://git-scm.com/book/es/v2/Ramificaciones-en-Git-Procedimientos-B%C3%A1sicos-para-Ramificar-y-Fusionar', 'Manejo de ramas', GIT_KEY)],
-    ['protocolos', new Referencia('https://git-scm.com/book/es/v2/Git-en-el-Servidor-Los-Protocolos', 'Comunicación entre repositorios', GIT_KEY)],
-    ['versiones', new Referencia('https://git-scm.com/book/es/v2/Git-en-entornos-distribuidos-Manteniendo-un-proyecto', 'Versiones mediante etiquetas', GIT_KEY)],
-    ['forks', new Referencia('https://git-scm.com/book/es/v2/GitHub-Participando-en-Proyectos', 'Solicitudes a otros proyectos', GIT_KEY)],
-    ['stash', new Referencia('https://git-scm.com/book/es/v2/Herramientas-de-Git-Guardado-r%C3%A1pido-y-Limpieza', 'Estados de trabajo', GIT_KEY)],
-    ['merge', new Referencia('https://git-scm.com/book/es/v2/Herramientas-de-Git-Fusi%C3%B3n-Avanzada', 'Union de ramas', GIT_KEY)],
-    ['atributos', new Referencia('https://git-scm.com/book/es/v2/Personalizaci%C3%B3n-de-Git-Git-Attributes', 'Personalización y cambio de acciones por defecto', GIT_KEY)],
-    ['migracion', new Referencia('https://git-scm.com/book/es/v2/Git-y-Otros-Sistemas-Migraci%C3%B3n-a-Git', 'Migración de otros sistemas y otras acciones', GIT_KEY)],
-    ['flow', new Referencia('https://aprendegit.com/que-es-git-flow/', 'Flujo de trabajo con Git', GIT_KEY)],
-    ['practicas', new Referencia('https://codigofacilito.com/articles/41', 'Buenas practicas para realizar commits', GIT_KEY)],
-    ['branching-strategies', new Referencia('https://codigofacilito.com/articles/41', 'Estrategias de Ramificación', GIT_KEY)],
-    ['monoRepo', new Referencia('https://monorepo.tools/#understanding-monorepos', 'Mono Repo', GIT_KEY)],
-    ['pullRequestsToxic', new Referencia('https://devinterrupted.substack.com/p/the-11-types-of-toxic-pull-requests', 'Pull Requests Toxicos', GIT_KEY)],
+    ['introduccion', new Referencia('https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Acerca-del-Control-de-Versiones', 'Introducción a Git', GIT_KEY, 'Introducción')],
+    ['repositorios', new Referencia('https://git-scm.com/book/es/v2/Fundamentos-de-Git-Trabajar-con-Remotos', 'Repositorios Remotos y Locales', GIT_KEY, 'Repositorios')],
+    ['ramas', new Referencia('https://git-scm.com/book/es/v2/Ramificaciones-en-Git-Procedimientos-B%C3%A1sicos-para-Ramificar-y-Fusionar', 'Manejo de ramas', GIT_KEY, 'Ramas')],
+    ['protocolos', new Referencia('https://git-scm.com/book/es/v2/Git-en-el-Servidor-Los-Protocolos', 'Comunicación entre repositorios', GIT_KEY, 'Protocolos')],
+    ['versiones', new Referencia('https://git-scm.com/book/es/v2/Git-en-entornos-distribuidos-Manteniendo-un-proyecto', 'Versiones mediante etiquetas', GIT_KEY, 'Versiones y tags')],
+    ['forks', new Referencia('https://git-scm.com/book/es/v2/GitHub-Participando-en-Proyectos', 'Solicitudes a otros proyectos', GIT_KEY, 'Forks y Pull requests')],
+    ['stash', new Referencia('https://git-scm.com/book/es/v2/Herramientas-de-Git-Guardado-r%C3%A1pido-y-Limpieza', 'Estados de trabajo', GIT_KEY, 'Stash y limpieza')],
+    ['merge', new Referencia('https://git-scm.com/book/es/v2/Herramientas-de-Git-Fusi%C3%B3n-Avanzada', 'Union de ramas', GIT_KEY, 'Merge')],
+    ['atributos', new Referencia('https://git-scm.com/book/es/v2/Personalizaci%C3%B3n-de-Git-Git-Attributes', 'Personalización y acciones por defecto', GIT_KEY, 'Atributos')],
+    ['migracion', new Referencia('https://git-scm.com/book/es/v2/Git-y-Otros-Sistemas-Migraci%C3%B3n-a-Git', 'Migración entre sistemas y otras acciones', GIT_KEY, 'Entresijos')],
+    ['flow', new Referencia('https://aprendegit.com/que-es-git-flow/', 'Flujo de trabajo con Git', GIT_KEY, 'Git flow')],
+    ['practicas', new Referencia('https://codigofacilito.com/articles/41', 'Buenas practicas para realizar commits', GIT_KEY, 'Buenas Practicas')],
+    ['branching-strategies', new Referencia('https://codigofacilito.com/articles/41', 'Estrategias de Ramificación', GIT_KEY, 'Ramificación')],
+    ['monoRepo', new Referencia('https://monorepo.tools/#understanding-monorepos', 'Mono Repo', GIT_KEY, 'Mono Repo')],
+    ['pullRequestsToxic', new Referencia('https://devinterrupted.substack.com/p/the-11-types-of-toxic-pull-requests', 'Pull Requests Toxicos', GIT_KEY, 'Pull Requests Toxicos')],
 ]);
 
 export const USER_HISTORIES_KEY = 'Historias-Usuario';
@@ -591,15 +591,15 @@ export const VERSIONAMIENTO_REF = new Map<string, Referencia>([
 
 export const HARDWARE_KEY = 'Hardware';
 export const HARDWARE_REF = new Map<string, Referencia>([
-    ['virtualizacion', new Referencia('https://www.redhat.com/es/topics/virtualization/what-is-a-virtual-machine', 'Virtualización', HARDWARE_KEY)],
-    ['cli', new Referencia('https://searchdatacenter.techtarget.com/es/definicion/Interfaz-de-linea-de-comandos-o-CLI', 'Interfaz de Linea de Comandos', HARDWARE_KEY)],
-    ['escalamiento', new Referencia('https://www.oscarblancarteblog.com/2017/03/07/escalabilidad-horizontal-y-vertical/', 'Escalamiento de un sistema', HARDWARE_KEY)],
-    ['nubeVSvirtualizacion', new Referencia('https://www.redhat.com/es/topics/cloud-computing/cloud-vs-virtualization', 'Nube VS Virtualizacion', HARDWARE_KEY)],
-    ['rendering', new Referencia('https://www.freecodecamp.org/news/what-exactly-is-client-side-rendering-and-hows-it-different-from-server-side-rendering-bd5c786b340d/', 'Server-side VS client-side rendering', HARDWARE_KEY)],
-    ['modelOSI', new Referencia('https://www.cloudflare.com/es-es/learning/ddos/glossary/open-systems-interconnection-model-osi/', 'Modelo OSI', HARDWARE_KEY)],
-    ['monitoreo', new Referencia('https://www.hiberus.com/crecemos-contigo/uso-de-los-apm-monitoreo-del-rendimiento-de-aplicaciones/#:~:text=Un%20APM%20(Application%20Performance%20Management,problemas%20a%20nivel%20de%20aplicaci%C3%B3n', 'Aplication Performance Management (apm)', HARDWARE_KEY)],
-    ['vmVsContainers', new Referencia('https://cloudnativeislamabad.hashnode.dev/virtualization-vs-containerization', 'Maquinas Virtuales VS Contenedores', HARDWARE_KEY)],
-    ['falseSharing', new Referencia('https://www.easytechjunkie.com/what-is-false-sharing.htm', 'False Sharing', HARDWARE_KEY)],
+    ['virtualizacion', new Referencia('https://www.redhat.com/es/topics/virtualization/what-is-a-virtual-machine', 'Virtualización', HARDWARE_KEY, 'Virtualizacion')],
+    ['cli', new Referencia('https://searchdatacenter.techtarget.com/es/definicion/Interfaz-de-linea-de-comandos-o-CLI', 'Interfaz de Linea de Comandos', HARDWARE_KEY, 'CLI')],
+    ['escalamiento', new Referencia('https://www.oscarblancarteblog.com/2017/03/07/escalabilidad-horizontal-y-vertical/', 'Escalamiento de un sistema', HARDWARE_KEY, 'Escalamiento')],
+    ['nubeVSvirtualizacion', new Referencia('https://www.redhat.com/es/topics/cloud-computing/cloud-vs-virtualization', 'Nube VS Virtualizacion', HARDWARE_KEY, 'Nube VS VM')],
+    ['rendering', new Referencia('https://www.freecodecamp.org/news/what-exactly-is-client-side-rendering-and-hows-it-different-from-server-side-rendering-bd5c786b340d/', 'Server-side VS client-side rendering', HARDWARE_KEY, 'Rendering')],
+    ['modelOSI', new Referencia('https://www.cloudflare.com/es-es/learning/ddos/glossary/open-systems-interconnection-model-osi/', 'Modelo OSI', HARDWARE_KEY, 'Modelo OSI')],
+    ['monitoreo', new Referencia('https://www.hiberus.com/crecemos-contigo/uso-de-los-apm-monitoreo-del-rendimiento-de-aplicaciones/#:~:text=Un%20APM%20(Application%20Performance%20Management,problemas%20a%20nivel%20de%20aplicaci%C3%B3n', 'Aplication Performance Management (apm)', HARDWARE_KEY, 'Monitoreo')],
+    ['vmVsContainers', new Referencia('https://cloudnativeislamabad.hashnode.dev/virtualization-vs-containerization', 'Maquinas Virtuales VS Contenedores', HARDWARE_KEY, 'VM VS Contenedores')],
+    ['falseSharing', new Referencia('https://www.easytechjunkie.com/what-is-false-sharing.htm', 'False Sharing', HARDWARE_KEY, 'False Sharing')],
 ]);
 
 export const WEB_KEY = 'Web';

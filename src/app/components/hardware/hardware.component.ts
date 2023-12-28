@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HARDWARE } from 'src/app/models/content/content1';
-import { HARDWARE_REF } from 'src/app/models/linkReferencia';
+import { CD_CI_KEY, HARDWARE_REF, LinkReferencia } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-hardware',
@@ -10,24 +10,18 @@ export class HardwareComponent implements OnInit {
 
   items = HARDWARE;
 
-  components = new Map([ ...HARDWARE_REF ]);
+  components = HARDWARE_REF;
 
   itemStart = '';
 
-  tittles = new Map<string, string>([
-    ['escalamiento', 'Escalamiento'],
-    ['cli', 'CLI'],
-    ['virtualizacion', 'virtualizacion'],
-    ['nubeVSvirtualizacion', 'Nube VS VM'],
-    ['rendering', 'Rendering'],
-    ['modelOSI', 'Modelo OSI'],
-    ['monitoreo', 'Monitoreo'],
-    ['vmVsContainers', 'VM VS Contenedores'],
-    ['falseSharing', 'False Sharing'],
-  ]);
+  relatedSections = new Map<string, string>([]);
+
+  tittles = new Map([ ...HARDWARE_REF ].map(([key, { tittleShort }]) => [key, tittleShort]));
 
   ngOnInit(): void {
     this.itemStart = history?.state?.newItem;
+    const routes = new LinkReferencia().routesAndSections;
+    this.relatedSections.set(CD_CI_KEY,  routes.get(CD_CI_KEY)!);
   }
 
 }
