@@ -1022,6 +1022,26 @@ export const META_CARACTERISTICAS =
                 ' - solo basta con editar el archivo de configuracion, de esta manera es posible <em>apagar</em> funcionalidades sin tener que pasar por procesos de revisión ',
                 '<strong>- CD/CI:</strong> Las entregas continuas se encuentran beneficiadas, ya que permite la unión de los cambios, e incluso de funcionalidades incompletas, ',
                 ' - que no afectaran el codigo de producción, y que cuenta con mecanismos para ser <em>activadas/desactivadas</em> cuando se requieran ',
+            ]),
+        new Item('generics',
+            [
+                '- Es una caracteristica del lenguaje que permite la abstraccion de tipos, presente en Java y otros lenguajes orientados a objetos como C# ',
+                '- Esto permite crear soluciones más sofisticadas que ayudan a mejorar la mantenibilidad del codigo y mantener la seguridad de los tipos ',
+                '- Los genericos es una forma de indicar al compilador que tipo de objeto se almacenara en una coleccion o manipulara mediante una clase y/o metodo ',
+                '- Esto permite detectar errores y realizar comprobaciones en tiempo de compilación, mucho más seguro que en tiempo de ejecución ',
+                '',
+                '- Tambien permiten flexibilidad al poder usar comodines lo que evita perder restricciones y reducir errores del tipo <em>ClassCastException</em> ',
+                '<strong> - Comodin ilimitado:</strong>         <em> ? </em>             Permiten cualquier tipo',
+                '<strong> - Comodin de limite superior:</strong><em> ? extends Type</em> Restringen el tipo desconocido a un subtipo particular ',
+                '<strong> - Comodin de limite inferior:</strong><em> ? super Type  </em> Restringen el tipo desconocido a un supertipo particular ',
+                '',
+                '- Esta caracteristica fue introducida sin cambiar la JVM, por lo que garantiza retrocompatibilidad con versiones más antiguas de Java ',
+                '- Para esto fue necesario realizar un borrado de tipos, ya que la JVM no soporta esta caracteristica siendo solamente en tiempo de compilación ',
+                '- Debido a esto no existe una sobrecarga ni se ve afectado el rendimiento en tiempo de ejecución ',
+                '- Al contrario esto puede traer beneficios en el uso de la memoria al evitar crear objetos intermedios y eliminar casteos innecesarios ',
+                '- Para el trabajo con operaciones criticas en rendimiento se recomienda usar los tipos primitivos si es posible y asi no ',
+                ' - realizar el <em>autoboxing</em> y <em>unboxing</em> entre primitivos y sus correspondientes tipos de envoltorio(Wrapper)',
+                '- Tambien evite usar <em>Raw Types</em>(tipos crudos) ya que no cuentan con la seguridad que proporcionan los genericos ',
             ])
     ];
 

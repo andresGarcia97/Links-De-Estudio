@@ -10,31 +10,13 @@ export class MetaCaracteristicasComponent implements OnInit {
 
   items = META_CARACTERISTICAS;
 
-  components = new Map([ ...META_CARATERISTICAS_REF ]);
+  components = META_CARATERISTICAS_REF;
 
   itemStart = '';
 
   relatedSections = new Map<string, string>([]);
 
-  tittles = new Map<string, string>([
-    ['metaDatos', 'Meta data'],
-    ['metaClase', 'Meta Clase'],
-    ['reflexion', 'Reflexión'],
-    ['asserts', 'Aserciones'],
-    ['excepciones', 'Exepciones'],
-    ['cache', 'Cache'],
-    ['hilos', 'Hilos'],
-    ['argumentos', 'Argumentos'],
-    ['concurrenciaParalelismo', 'Concurrencia'],
-    ['ortogonalidad', 'Ortogonalidad'],
-    ['boilerPlate', 'BoilerPlate'],
-    ['recursividad', 'Recursividad'],
-    ['backtracing', 'Back tracing'],
-    ['rawTypes', 'Tipos crudos'],
-    ['memoryAndGarbage', 'Fugas de memoria'],
-    ['footprint', 'Huellas de memoria'],
-    ['featureFlag', 'Feature Flags']
-  ]);
+  tittles = new Map([ ...META_CARATERISTICAS_REF ].map(([key, { tittleShort }]) => [key, tittleShort]));
 
   ngOnInit(): void {
     this.itemStart = history?.state?.newItem;
