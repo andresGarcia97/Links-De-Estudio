@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NEURO_MARKETING } from 'src/app/models/content/content3';
-import { NEURO_MARKETING_REF } from 'src/app/models/linkReferencia';
+import { CONOCIMIENTO_EMPIRICO_KEY, LinkReferencia, NEURO_MARKETING_REF, PERSONAS_KEY } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-neuro-marketing',
@@ -9,29 +9,20 @@ import { NEURO_MARKETING_REF } from 'src/app/models/linkReferencia';
 export class NeuroMarketingComponent  implements OnInit {
 
   items = NEURO_MARKETING;
-
+  
+  components = NEURO_MARKETING_REF;
+  
   itemStart = '';
 
-  components = new Map([ ...NEURO_MARKETING_REF ]);
+  relatedSections = new Map<string, string>([]);
 
-  tittles = new Map<string, string>([
-    ['pestel', 'Analisis PESTEL'],
-    ['matrizBcg', 'Matriz BCG'],
-    ['b2b-b2c', 'B2B & B2C'],
-    ['eric', 'Matriz ERIC'],
-    ['gamificacionMarketing', 'Gamificacion & Marketing'],
-    ['maslow-barret', 'Maslow & Barret'],
-    ['cerebroTriurno', 'Cerebro Triurno'],
-    ['elementValues', 'Elementos de Valor'],
-    ['multi&omniCanal', 'Multi & Omni Canalidad'],
-    ['buyerPersona', 'Buyer Persona'],
-    ['neuroMarketing', 'Neuro Marketing'],
-    ['semanticaPragmatica', 'Semantica & Pragmatica'],
-    ['pnl', 'Neurolinguistica']
-  ]);
+  tittles = new Map([ ...NEURO_MARKETING_REF ].map(([key, { tittleShort }]) => [key, tittleShort]));
 
   ngOnInit(): void {
     this.itemStart = history?.state?.newItem;
+    const routes = new LinkReferencia().routesAndSections;
+    this.relatedSections.set(PERSONAS_KEY,               routes.get(PERSONAS_KEY)!);
+    this.relatedSections.set(CONOCIMIENTO_EMPIRICO_KEY,  routes.get(CONOCIMIENTO_EMPIRICO_KEY)!);
   }
 
 }
