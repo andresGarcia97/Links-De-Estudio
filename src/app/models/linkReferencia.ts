@@ -8,14 +8,14 @@ export class LinkReferencia {
         ...COMPILACION_REF,      ...CONOCIMIENTO_EMPIRICO,    ...ESTRATEGIAS_DESARROLLO_REF,
         ...FRAMEWORKS_REF,       ...GIT_REF,                  ...USER_HISTORIES,
         ...MALAS_PRACTICAS_REF,  ...META_CARATERISTICAS_REF,  ...META_ESTRUCTURAS_REF,
-        ...METODOLOGIAS_REF,     ...NUBE_AND_APIS,            ...OTROS_REF,
+        ...METODOLOGIAS_REF,     ...NUBE_REF,                 ...OTROS_REF,
         ...PARADIGMAS_REF,       ...PATRONES_REF,             ...PEOPLE,  
         ...POO_REF,              ...TESTING,                  ...TESTING_ADVANCED,
         ...REFACTORING,          ...REQUISITOS_REF,           ...PRINCIPIOS_REF,
         ...SEGURIDAD_REF,        ...SMELL_CODES_REF,          ...PERSISTENCY,
         ...UML_REF,              ...VERSIONAMIENTO_REF,       ...HARDWARE_REF,
         ...WEB_REF,              ...LEYES_REF,                ...NEURO_MARKETING_REF,
-        ...PERSISTENCY_ADVANCED, ...CD_CI_REF  
+        ...PERSISTENCY_ADVANCED, ...CD_CI_REF,                ...APIS_REF  
     ]);
 
     public routesAndSections: Map<string, string> = new Map([
@@ -27,7 +27,7 @@ export class LinkReferencia {
         [FRAMEWORKS_KEY, 'frameworks'],                       [GIT_KEY, 'git'],
         [USER_HISTORIES_KEY, 'historias-de-usuario'],         [MALAS_PRACTICAS_KEY, 'malas-practicas'],
         [CARACTERISTICAS_KEY, 'metacaracteristicas'],         [ESTRUCTURAS_KEY, 'meta-estructuras'],
-        [METODOLOGIAS_KEY, 'metodologias'],                   [NUBE_APIS_KEY, 'nube'],
+        [METODOLOGIAS_KEY, 'metodologias'],                   [NUBE_KEY, 'nube'],
         [OTROS_KEY, 'otros'],                                 [PATRONES_KEY, 'patrones'],
         [PARADIGMAS_KEY, 'paradigmas'],                       [PERSONAS_KEY, 'personas'],
         [POO_KEY, 'poo'],                                     [TESTING_KEY, 'testing'],
@@ -37,7 +37,8 @@ export class LinkReferencia {
         [DATA_BASES_KEY, 'bases-de-datos'],                   [UML_KEY, 'uml'],
         [VERSIONAMIENTO_KEY, 'versionamiento'],               [HARDWARE_KEY, 'hardware'],
         [WEB_KEY, 'web'],                                     [NEURO_MARKETING_KEY, 'neuro-marketing'],
-        [DATA_BASES_ADVANCED_KEY, 'bd-avanzado'],             [CD_CI_KEY, 'cd-ci-infraestructura']
+        [DATA_BASES_ADVANCED_KEY, 'bd-avanzado'],             [CD_CI_KEY, 'cd-ci-infraestructura'],
+        [APIS_KEY, 'apis']
     ]);
 
 }
@@ -323,28 +324,33 @@ export const METODOLOGIAS_REF = new Map<string, Referencia>([
     ['lean', new Referencia('https://www.obsbusiness.school/blog/lean-management-metodologia-origenes-y-principios', 'Lean', METODOLOGIAS_KEY, 'Lean management')]
 ]);
 
-export const NUBE_APIS_KEY = 'Nube & APIs';
-export const NUBE_AND_APIS = new Map<string, Referencia>([
-    ['nube', new Referencia('https://azure.microsoft.com/es-es/overview/what-are-private-public-hybrid-clouds/', 'Tipos de nube', NUBE_APIS_KEY, 'Tipos de nube')],
-    ['iaas-paas-saas', new Referencia('https://www.ambit-bst.com/blog/definici%C3%B3n-de-iaas-paas-y-saas-en-qu%C3%A9-se-diferencian', 'IaaS, PaaS, SaaS', NUBE_APIS_KEY, 'IaaS, PaaS, SaaS')],
-    ['api', new Referencia('https://www.ticbeat.com/tecnologias/que-es-una-api-para-que-sirve/', 'API', NUBE_APIS_KEY, 'API')],
-    ['tiposApi', new Referencia('https://www.computerweekly.com/es/definicion/Interfaz-de-programacion-de-aplicaciones-API', 'Tipos de APIs', NUBE_APIS_KEY, 'Tipos de APIs')],
-    ['rest', new Referencia('https://www.oscarblancarteblog.com/2017/03/06/soap-vs-rest-2/', 'SOAP vs REST', NUBE_APIS_KEY, 'SOAP & REST')],
-    ['restfull', new Referencia('http://adwe.es/general/colaboraciones/servicios-web-restful-con-http-parte-i-introduccion-y-bases-teoricas/', 'Rest & Restfull', NUBE_APIS_KEY, 'Rest & RestFull')],
-    ['caracteristicas', new Referencia('https://adwe.es/codigo/apis-codigo/servicios-web-restful-con-http-parte-ii-ejemplos/', 'Caracteristicas de una api restfull', NUBE_APIS_KEY, 'Estandares RestFull')],
-    ['madurezDeUnaApi', new Referencia('https://restfulapi.net/richardson-maturity-model/', 'Nivel de madurez de una API', NUBE_APIS_KEY, 'Nivel de Madurez')],
-    ['factores12', new Referencia('https://12factor.net/es/', '12 factores para una aplicación SaaS', NUBE_APIS_KEY, '12 - factores')],
-    ['migracionesNube', new Referencia('https://www.paradigmadigital.com/techbiz/mitos-lift-shift-mentiras-migraciones-cloud/', 'Migraciones hacia la nube y las 6R', NUBE_APIS_KEY, 'Migraciones')],
-    ['capTeorema', new Referencia('https://www.ionos.es/digitalguide/servidores/know-how/que-es-el-cap-theorem/', 'Coherencia, Disponibilidad y Tolerancia', NUBE_APIS_KEY, 'Teorema CAP')],
-    ['dns', new Referencia('https://www.ionos.es/digitalguide/servidores/know-how/que-es-el-servidor-dns-y-como-funciona/', 'Servidor DNS', NUBE_APIS_KEY, 'Servidor DNS')],
-    ['httpCodes', new Referencia('https://developer.mozilla.org/es/docs/Web/HTTP/Status', 'Codigos Http', NUBE_APIS_KEY, 'Codigos HTTP')],
-    ['HATEOAS', new Referencia('https://www.adictosaltrabajo.com/2013/12/02/spring-hateoas/', 'HATEOAS', NUBE_APIS_KEY, 'HATEOAS')],
-    ['apiStandars', new Referencia('https://medium.com/@trgoodwill/writing-api-design-standards-84cb7cbb3fd7', 'Standares API', NUBE_APIS_KEY, 'Standares API')],
-    ['apiGateway', new Referencia('https://nordicapis.com/whats-the-difference-between-an-api-gateway-and-a-load-balancer/', 'API Gateway', NUBE_APIS_KEY, 'Api Gateway')],
-    ['falaciesDistributedSystems', new Referencia('https://architecturenotes.co/fallacies-of-distributed-systems/', 'Sistemas Distribuidos', NUBE_APIS_KEY, 'Sistemas Distribuidos')],
-    ['arquitecturalApiStyles', new Referencia('https://www.linkedin.com/feed/update/urn:li:activity:7095365669969350656/', 'Estilos de Arquitectura API', NUBE_APIS_KEY, 'Estilos de Arquitectura API')],
-    ['uri', new Referencia('https://www.techtarget.com/whatis/definition/URI-Uniform-Resource-Identifier', 'Uniform Resource Identifier', NUBE_APIS_KEY, 'URI')],
-    ['apiTesting', new Referencia('https://blog.bytebytego.com/p/ep83-explaining-9-types-of-api-testing#%C2%A7explaining-types-of-api-testing', 'API Testing', NUBE_APIS_KEY, 'Testing in APIs')],
+export const NUBE_KEY = 'Nube';
+export const NUBE_REF = new Map<string, Referencia>([
+    ['nube', new Referencia('https://azure.microsoft.com/es-es/overview/what-are-private-public-hybrid-clouds/', 'Tipos de nube', NUBE_KEY, 'Tipos de nube')],
+    ['iaas-paas-saas', new Referencia('https://www.ambit-bst.com/blog/definici%C3%B3n-de-iaas-paas-y-saas-en-qu%C3%A9-se-diferencian', 'IaaS, PaaS, SaaS', NUBE_KEY, 'IaaS, PaaS, SaaS')],
+    ['factores12', new Referencia('https://12factor.net/es/', '12 factores para una aplicación SaaS', NUBE_KEY, '12 - factores')],
+    ['migracionesNube', new Referencia('https://www.paradigmadigital.com/techbiz/mitos-lift-shift-mentiras-migraciones-cloud/', 'Migraciones hacia la nube y las 6R', NUBE_KEY, 'Migraciones')],
+    ['capTeorema', new Referencia('https://www.ionos.es/digitalguide/servidores/know-how/que-es-el-cap-theorem/', 'Coherencia, Disponibilidad y Tolerancia', NUBE_KEY, 'Teorema CAP')],
+    ['dns', new Referencia('https://www.ionos.es/digitalguide/servidores/know-how/que-es-el-servidor-dns-y-como-funciona/', 'Servidor DNS', NUBE_KEY, 'Servidor DNS')],
+    ['falaciesDistributedSystems', new Referencia('https://architecturenotes.co/fallacies-of-distributed-systems/', 'Sistemas Distribuidos', NUBE_KEY, 'Sistemas Distribuidos')],
+    ['loadBalancing', new Referencia('https://aws.amazon.com/es/what-is/load-balancing/', 'Balancear la Carga', NUBE_KEY, 'Balanceador de carga')],
+]);
+
+export const APIS_KEY = 'APIs';
+export const APIS_REF = new Map<string, Referencia>([
+    ['api', new Referencia('https://www.ticbeat.com/tecnologias/que-es-una-api-para-que-sirve/', 'API', APIS_KEY, 'API')],
+    ['tiposApi', new Referencia('https://www.computerweekly.com/es/definicion/Interfaz-de-programacion-de-aplicaciones-API', 'Tipos de APIs', APIS_KEY, 'Tipos de APIs')],
+    ['rest', new Referencia('https://www.oscarblancarteblog.com/2017/03/06/soap-vs-rest-2/', 'SOAP vs REST', APIS_KEY, 'SOAP & REST')],
+    ['restfull', new Referencia('http://adwe.es/general/colaboraciones/servicios-web-restful-con-http-parte-i-introduccion-y-bases-teoricas/', 'Rest & Restfull', APIS_KEY, 'Rest & RestFull')],
+    ['caracteristicas', new Referencia('https://adwe.es/codigo/apis-codigo/servicios-web-restful-con-http-parte-ii-ejemplos/', 'Caracteristicas de una api restfull', APIS_KEY, 'Estandares RestFull')],
+    ['madurezDeUnaApi', new Referencia('https://restfulapi.net/richardson-maturity-model/', 'Nivel de madurez de una API', APIS_KEY, 'Nivel de Madurez')],
+    ['httpCodes', new Referencia('https://developer.mozilla.org/es/docs/Web/HTTP/Status', 'Codigos Http', APIS_KEY, 'Codigos HTTP')],
+    ['HATEOAS', new Referencia('https://www.adictosaltrabajo.com/2013/12/02/spring-hateoas/', 'HATEOAS', APIS_KEY, 'HATEOAS')],
+    ['apiStandars', new Referencia('https://medium.com/@trgoodwill/writing-api-design-standards-84cb7cbb3fd7', 'Standares API', APIS_KEY, 'Standares API')],
+    ['apiGateway', new Referencia('https://nordicapis.com/whats-the-difference-between-an-api-gateway-and-a-load-balancer/', 'API Gateway', APIS_KEY, 'Api Gateway')],
+    ['arquitecturalApiStyles', new Referencia('https://www.linkedin.com/feed/update/urn:li:activity:7095365669969350656/', 'Estilos de Arquitectura API', APIS_KEY, 'Estilos de Arquitectura API')],
+    ['uri', new Referencia('https://www.techtarget.com/whatis/definition/URI-Uniform-Resource-Identifier', 'Uniform Resource Identifier', APIS_KEY, 'URI')],
+    ['apiTesting', new Referencia('https://blog.bytebytego.com/p/ep83-explaining-9-types-of-api-testing#%C2%A7explaining-types-of-api-testing', 'API Testing', APIS_KEY, 'Testing in APIs')],
 ]);
 
 export const OTROS_KEY = 'Otros';

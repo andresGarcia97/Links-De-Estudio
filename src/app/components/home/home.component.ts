@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { LinkReferencia, CARACTERISTICAS_KEY } from 'src/app/models/linkReferencia';
+import { LinkReferencia, NUBE_KEY } from 'src/app/models/linkReferencia';
 
-const route = new LinkReferencia().routesAndSections.get(CARACTERISTICAS_KEY);
+const route = new LinkReferencia().routesAndSections.get(NUBE_KEY);
 
 @Component({
   selector: 'app-home',
@@ -17,7 +17,7 @@ export class HomeComponent {
   }
 
   public routeToLastItem(): void {
-    const newItem = 'generics';
+    const newItem = 'loadBalancing';
     this.router.navigateByUrl(`/${route}`, { state: { newItem } })
   }
 

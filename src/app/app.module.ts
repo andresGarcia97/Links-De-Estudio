@@ -46,6 +46,7 @@ import { HomeComponent } from './components/home/home.component';
 import { NeuroMarketingComponent } from './components/neuro-marketing/neuro-marketing.component';
 import { SqlNosqlAdvancedComponent } from './components/sql-nosql-advanced/sql-nosql-advanced.component';
 import { CDCIComponent } from './components/cd-ci/cd-ci.component';
+import { ApisTermsComponent } from './components/apis-terms/apis-terms.component';
 
 @NgModule({
   declarations: [
@@ -91,7 +92,8 @@ import { CDCIComponent } from './components/cd-ci/cd-ci.component';
     HomeComponent,
     NeuroMarketingComponent,
     SqlNosqlAdvancedComponent,
-    CDCIComponent
+    CDCIComponent,
+    ApisTermsComponent
   ],
   imports: [
     BrowserModule,

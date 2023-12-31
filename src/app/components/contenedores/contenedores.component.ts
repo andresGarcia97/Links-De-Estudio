@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CONTENEDORES } from 'src/app/models/content/content1';
-import { CD_CI_KEY, CONTAINERS, HARDWARE_KEY, LinkReferencia, NUBE_APIS_KEY } from 'src/app/models/linkReferencia';
+import { CD_CI_KEY, CONTAINERS, HARDWARE_KEY, LinkReferencia, NUBE_KEY } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-docker',
@@ -21,9 +21,9 @@ export class ContenedoresComponent implements OnInit {
   ngOnInit(): void {
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
-    this.relatedSections.set(CD_CI_KEY,     routes.get(CD_CI_KEY)!);
     this.relatedSections.set(HARDWARE_KEY,  routes.get(HARDWARE_KEY)!);
-    this.relatedSections.set(NUBE_APIS_KEY, routes.get(NUBE_APIS_KEY)!);
+    this.relatedSections.set(CD_CI_KEY,     routes.get(CD_CI_KEY)!);
+    this.relatedSections.set(NUBE_KEY,      routes.get(NUBE_KEY)!);
   }
 
 }
