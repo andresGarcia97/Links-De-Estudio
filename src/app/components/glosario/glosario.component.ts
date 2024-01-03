@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { Content1 } from 'src/app/models/content/content1';
 import { Content2 } from 'src/app/models/content/content2';
@@ -12,6 +12,8 @@ import { Item } from 'src/app/models/models';
   templateUrl: './glosario.component.html'
 })
 export class GlosarioComponent implements OnInit {
+
+  @ViewChild("inputSearch") inputSearch!: ElementRef;
 
   temas1 = new Content1();
   temas2 = new Content2();
@@ -92,6 +94,9 @@ export class GlosarioComponent implements OnInit {
       this.showItem = true;
       this.scrollToView($view);
     }
+    if (this.search != '') {
+      this.inputSearch.nativeElement.focus();
+    }
   }
 
   public searchChanged(): void {
@@ -108,6 +113,7 @@ export class GlosarioComponent implements OnInit {
     this.showItem = false;
     this.titulo = '';
     this.search = '';
+    this.inputSearch.nativeElement.focus();
   }
 
 }

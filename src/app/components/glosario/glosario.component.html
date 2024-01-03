@@ -2,7 +2,7 @@
 <div class="content" #glosario>
 
   <div class="card-container">
-    <input class="search" type="text" [(ngModel)]="search" name="search" (ngModelChange)="searchChanged()" />
+    <input #inputSearch class="search" type="text" [(ngModel)]="search" name="search" (ngModelChange)="searchChanged()" />
   
     <div class="close-glosary" tabindex="0" (click)="cleanSearch()" *ngIf="search !== ''">
       <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 512 512"> 
