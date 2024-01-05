@@ -355,44 +355,44 @@ export const APIS_REF = new Map<string, Referencia>([
 
 export const OTROS_KEY = 'Otros';
 export const OTROS_REF = new Map<string, Referencia>([
-    ['scraping', new Referencia('https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/que-es-el-web-scraping/', 'Web Scrapping', OTROS_KEY)],
-    ['mvp', new Referencia('https://www.inboundcycle.com/blog-de-inbound-marketing/bid/189238/qu-es-el-mvp-o-producto-m-nimo-viable', 'Minimo Producto Viable', OTROS_KEY)],
-    ['turingComplete', new Referencia('https://www.eleconomista.es/economia/noticias/8817210/12/17/Ethereum-es-Turing-completo-y-eso-que-es.html', 'Turing Complete', OTROS_KEY)],
-    ['ingenieriaInversa', new Referencia('https://ingenierosasesores.com/actualidad/ingenieria-inversa-concepto-aplicaciones/', 'Ingenieria Inversa', OTROS_KEY)],
-    ['dsl', new Referencia('https://www.jetbrains.com/es-es/mps/concepts/domain-specific-languages/', 'Lenguaje de Dominio Especifico', OTROS_KEY)],
-    ['reglasInferencia', new Referencia('https://repository.unad.edu.co/reproductor-ova/10596_31590/index.html', 'Reglas de inferencia', OTROS_KEY)],
+    ['scraping', new Referencia('https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/que-es-el-web-scraping/', 'Web Scrapping', OTROS_KEY, 'Web Scrapping')],
+    ['mvp', new Referencia('https://www.inboundcycle.com/blog-de-inbound-marketing/bid/189238/qu-es-el-mvp-o-producto-m-nimo-viable', 'Minimo Producto Viable', OTROS_KEY, 'MVP')],
+    ['turingComplete', new Referencia('https://www.eleconomista.es/economia/noticias/8817210/12/17/Ethereum-es-Turing-completo-y-eso-que-es.html', 'Turing Complete', OTROS_KEY, 'Turing Complete')],
+    ['ingenieriaInversa', new Referencia('https://ingenierosasesores.com/actualidad/ingenieria-inversa-concepto-aplicaciones/', 'Ingenieria Inversa', OTROS_KEY, 'Ingenieria Inversa')],
+    ['dsl', new Referencia('https://www.jetbrains.com/es-es/mps/concepts/domain-specific-languages/', 'Lenguaje de Dominio Especifico', OTROS_KEY, 'DSL')],
+    ['reglasInferencia', new Referencia('https://repository.unad.edu.co/reproductor-ova/10596_31590/index.html', 'Reglas de inferencia', OTROS_KEY, 'Reglas de Inferencia')],
 ]);
 
 export const PARADIGMAS_KEY = 'Paradigmas';
 export const PARADIGMAS_REF = new Map<string, Referencia>([
-    ['imperativo', new Referencia('https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/paradigmas-de-programacion', 'Paradigmas Imperativo & Declarativo', PARADIGMAS_KEY)],
-    ['funcional', new Referencia('https://codigofacilito.com/articulos/programacion-funcional', 'Paradigma funcional', PARADIGMAS_KEY)],
-    ['scripting', new Referencia('https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/que-son-los-lenguajes-de-scripting/', 'Lenguajes de scripting', PARADIGMAS_KEY)],
-    ['reactiva', new Referencia('https://profile.es/blog/que-es-la-programacion-reactiva-una-introduccion/', 'Programación reactiva', PARADIGMAS_KEY)],
+    ['imperativo', new Referencia('https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/paradigmas-de-programacion', 'Paradigmas Imperativo & Declarativo', PARADIGMAS_KEY, 'Estilos Programación')],
+    ['funcional', new Referencia('https://codigofacilito.com/articulos/programacion-funcional', 'Paradigma funcional', PARADIGMAS_KEY, 'Funcional')],
+    ['scripting', new Referencia('https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/que-son-los-lenguajes-de-scripting/', 'Lenguajes de scripting', PARADIGMAS_KEY, 'Scripting')],
+    ['reactiva', new Referencia('https://profile.es/blog/que-es-la-programacion-reactiva-una-introduccion/', 'Programación reactiva', PARADIGMAS_KEY, 'Reactiva')],
     //['marcado', new Referencia('https://blog.educacionit.com/2018/12/26/diferencia-entre-lenguajes-de-scripting-lenguajes-de-marcado-y-lenguajes-de-programacion/', 'Lenguajes de marcado', PARADIGMAS_KEY)],
-    ['marcado', new Referencia('https://www.ticarte.com/contenido/que-son-los-lenguajes-de-marcas', 'Lenguajes de marcado', PARADIGMAS_KEY)],
-    ['aspectos', new Referencia('https://www.baeldung.com/spring-aop', 'Orientación a aspectos', PARADIGMAS_KEY)],
-    ['logica', new Referencia('https://ferestrepoca.github.io/paradigmas-de-programacion/proglogica/logica_teoria/aplicaciones.html', 'Programación Logica', PARADIGMAS_KEY)],
-    ['estructurada', new Referencia('https://informatica.uv.es/iiguia/AED/oldwww/2004_05/AED.Tema.04.pdf', 'Programación Estructurada', PARADIGMAS_KEY)],
+    ['marcado', new Referencia('https://www.ticarte.com/contenido/que-son-los-lenguajes-de-marcas', 'Lenguajes de marcado', PARADIGMAS_KEY, 'De Marcado')],
+    ['aspectos', new Referencia('https://www.baeldung.com/spring-aop', 'Orientación a aspectos', PARADIGMAS_KEY, 'Aspectos')],
+    ['logica', new Referencia('https://ferestrepoca.github.io/paradigmas-de-programacion/proglogica/logica_teoria/aplicaciones.html', 'Programación Logica', PARADIGMAS_KEY, 'Logica')],
+    ['estructurada', new Referencia('https://informatica.uv.es/iiguia/AED/oldwww/2004_05/AED.Tema.04.pdf', 'Programación Estructurada', PARADIGMAS_KEY, 'Estructurada')],
 ]);
 
 export const PATRONES_KEY = 'Patrones';
 export const PATRONES_REF = new Map<string, Referencia>([
-    ['definicionPatrones', new Referencia('http://www.ecured.cu/Patrones_de_dise%C3%B1o_y_arquitectura', '¿ Que son los patrones ?', PATRONES_KEY)],
-    ['gof', new Referencia('http://www.cleformacion.com/tic-tek/-/blogs/patrones-gof', 'Gang of Four (GoF)', PATRONES_KEY)],
-    ['desglosegof', new Referencia('https://refactoring.guru/es/design-patterns/catalog', 'Definciones de cada tipo', PATRONES_KEY)],
-    ['grasp', new Referencia('https://www.adictosaltrabajo.com/2003/12/22/grasp/', 'Patrones de asignación de responsabilidades', PATRONES_KEY)],
-    ['desglosegrasp', new Referencia('https://juan-garcia-carmona.blogspot.com/search/label/patr%C3%B3n', 'Patrones GRASP', PATRONES_KEY)],
-    ['dao', new Referencia('https://www.genbeta.com/desarrollo/patrones-de-diseno-active-record-vs-dao', 'Data Acess Object', PATRONES_KEY)],
-    ['antipatronesDev', new Referencia('https://sg.com.mx/revista/11/anti-patrones-la-mejor-forma-hacer-un-pesimo-sistema-software', 'Antipatrones, Desarrollo', PATRONES_KEY)],
-    ['dobleDespacho', new Referencia('https://blog.nicopaez.com/2016/11/09/una-alternativa-al-double-dispatch/', 'Patron doble despacho', PATRONES_KEY)],
-    ['patronSaga', new Referencia('https://unpocodejava.com/2020/01/02/que-es-el-patron-saga/', 'Patron Saga', PATRONES_KEY)],
-    ['patroncqrs', new Referencia('https://learn.microsoft.com/es-mx/azure/architecture/patterns/cqrs', 'Patron CQRS', PATRONES_KEY)],
-    ['patronUndoRedo', new Referencia('https://medium.com/dottech/implementando-undo-redo-con-ngrx-o-redux-f8ef5de535ef', 'Patron Undo-Redo', PATRONES_KEY)],
-    ['tiposDePatrones', new Referencia('https://www.javiergarzas.com/2014/08/tipos-patrones-software.html', 'Tipos de patrones', PATRONES_KEY)],
-    ['stranglerFig', new Referencia('https://martinfowler.com/bliki/StranglerFigApplication.html', 'StranglerFig App', PATRONES_KEY)],
-    ['antipatronesPM', new Referencia('https://sourcemaking.com/antipatterns', 'Antipatrones, Product Management', PATRONES_KEY)],
-    ['patternsMicroservices', new Referencia('https://blog.openreplay.com/7-microservice-design-patterns-to-use/', 'Patrones & Microservicios', PATRONES_KEY)],
+    ['definicionPatrones', new Referencia('http://www.ecured.cu/Patrones_de_dise%C3%B1o_y_arquitectura', '¿ Que son los patrones ?', PATRONES_KEY, 'Definición')],
+    ['gof', new Referencia('http://www.cleformacion.com/tic-tek/-/blogs/patrones-gof', 'Gang of Four (GoF)', PATRONES_KEY, 'GOF')],
+    ['desglosegof', new Referencia('https://refactoring.guru/es/design-patterns/catalog', 'Definciones de los GoF', PATRONES_KEY, 'Desglose GOF')],
+    ['grasp', new Referencia('https://www.adictosaltrabajo.com/2003/12/22/grasp/', 'Asignación de responsabilidades', PATRONES_KEY, 'GRASP')],
+    ['desglosegrasp', new Referencia('https://juan-garcia-carmona.blogspot.com/search/label/patr%C3%B3n', 'Patrones GRASP', PATRONES_KEY, 'Desglose Grasp')],
+    ['dao', new Referencia('https://www.genbeta.com/desarrollo/patrones-de-diseno-active-record-vs-dao', 'Data Acess Object', PATRONES_KEY, 'DAO & Active Record')],
+    ['antipatronesDev', new Referencia('https://sg.com.mx/revista/11/anti-patrones-la-mejor-forma-hacer-un-pesimo-sistema-software', 'Antipatrones, Desarrollo', PATRONES_KEY, 'Anti Patrones, Desarrollo')],
+    ['dobleDespacho', new Referencia('https://blog.nicopaez.com/2016/11/09/una-alternativa-al-double-dispatch/', 'Patron doble despacho', PATRONES_KEY, 'Doble despacho')],
+    ['patronSaga', new Referencia('https://unpocodejava.com/2020/01/02/que-es-el-patron-saga/', 'Patron Saga', PATRONES_KEY, 'Patron saga')],
+    ['patroncqrs', new Referencia('https://learn.microsoft.com/es-mx/azure/architecture/patterns/cqrs', 'Patron CQRS', PATRONES_KEY, 'Patron CQRS')],
+    ['patronUndoRedo', new Referencia('https://medium.com/dottech/implementando-undo-redo-con-ngrx-o-redux-f8ef5de535ef', 'Patron Undo-Redo', PATRONES_KEY, 'Patron undo-redo')],
+    ['tiposDePatrones', new Referencia('https://www.javiergarzas.com/2014/08/tipos-patrones-software.html', 'Tipos de patrones', PATRONES_KEY, 'Tipos de Patrones')],
+    ['stranglerFig', new Referencia('https://martinfowler.com/bliki/StranglerFigApplication.html', 'StranglerFig App', PATRONES_KEY, 'StranglerFig App')],
+    ['antipatronesPM', new Referencia('https://sourcemaking.com/antipatterns', 'Antipatrones, Product Management', PATRONES_KEY, 'Anti Patrones, PM')],
+    ['patternsMicroservices', new Referencia('https://blog.openreplay.com/7-microservice-design-patterns-to-use/', 'Patrones & Microservicios', PATRONES_KEY, 'Patrones & Microservicios')],
 ]);
 
 export const PERSONAS_KEY = 'Personas';

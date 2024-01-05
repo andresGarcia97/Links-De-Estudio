@@ -10,18 +10,11 @@ export class OtrosComponent implements OnInit {
 
   items = OTROS;
 
-  components = new Map([ ...OTROS_REF ]);
+  components = OTROS_REF;
 
   itemStart = '';
 
-  tittles = new Map<string, string>([
-    ['scraping', 'Web Scrapping'],
-    ['mvp', 'MVP'],
-    ['turingComplete', 'Turing Complete'],
-    ['ingenieriaInversa', 'Ingenieria Inversa'],
-    ['dsl', 'DSL'],
-    ['reglasInferencia', 'Reglas de Inferencia'],
-  ]);
+  tittles = new Map([ ...OTROS_REF ].map(([key, { tittleShort }]) => [key, tittleShort]));
 
   ngOnInit(): void {
     this.itemStart = history?.state?.newItem;
