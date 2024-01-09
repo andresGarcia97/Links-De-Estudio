@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PRUEBAS_AVANZADAS } from 'src/app/models/content/content2';
-import { TESTING_ADVANCED } from 'src/app/models/linkReferencia';
+import { AGILES_KEY, ARQUITECTURAS_KEY, LinkReferencia, REQUISITOS_KEY, TESTING_ADVANCED, TESTING_KEY } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-pruebas-avanzadas',
@@ -10,26 +10,21 @@ export class PruebasAvanzadasComponent implements OnInit {
 
   items = PRUEBAS_AVANZADAS;
 
+  components = TESTING_ADVANCED;
+  
   itemStart = '';
 
-  components = new Map([ ...TESTING_ADVANCED ]);
+  relatedSections = new Map<string, string>([]);
 
-  tittles = new Map<string, string>([
-    ['cajaNegraBlanca', 'Caja Negra & Blanca'],
-    ['valorLimite', 'Valores Limites'],
-    ['clasesEquivalencia', 'Equivalencias'],
-    ['grafosCausaEfecto', 'Causa -> Efecto'],
-    ['tiposDePruebas', 'Tipos de pruebas'],
-    ['outsideInside', 'Outside & Inside'],
-    ['casosDePruebas', 'Casos de prueba'],
-    ['casosDeUso', 'Casos de uso'],
-    ['codeSmellsTests1', 'Code smells en testing #1'],
-    ['codeSmellsTests2', 'Code smells en testing #2'],
-    ['mutation', 'Pruebas de mutación']
-  ]);
+  tittles = new Map([ ...TESTING_ADVANCED ].map(([key, { tittleShort }]) => [key, tittleShort]));
 
   ngOnInit(): void {
     this.itemStart = history?.state?.newItem;
+    const routes = new LinkReferencia().routesAndSections;
+    this.relatedSections.set(ARQUITECTURAS_KEY, routes.get(ARQUITECTURAS_KEY)!);
+    this.relatedSections.set(REQUISITOS_KEY,    routes.get(REQUISITOS_KEY)!);
+    this.relatedSections.set(TESTING_KEY,       routes.get(TESTING_KEY)!);
+    this.relatedSections.set(AGILES_KEY,        routes.get(AGILES_KEY)!);
   }
 
 }

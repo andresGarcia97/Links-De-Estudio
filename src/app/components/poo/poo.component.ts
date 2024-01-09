@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { POO } from 'src/app/models/content/content3';
-import { POO_REF } from 'src/app/models/linkReferencia';
+import { ESTRATEGIAS_DESARROLLO_KEY, LinkReferencia, PARADIGMAS_KEY, PATRONES_KEY, POO_REF, UML_KEY } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-poo',
@@ -10,33 +10,21 @@ export class PooComponent implements OnInit {
 
   items = POO;
 
-  components = new Map([ ...POO_REF ]);
+  components = POO_REF;
 
   itemStart = '';
 
-  tittles = new Map<string, string>([
-    ['poo', 'POO'],
-    ['pooPilares', 'Pilares POO'],
-    ['composicion', 'Relaciones'],
-    ['pooStatic', 'Static en POO'],
-    ['sobrecarga', 'Sobrecargar Metodos'],
-    ['acoplamiento', 'Acoplamiento'],
-    ['contratos', 'Contratos'],
-    ['descomposicion', 'Descomposición'],
-    ['herencia', 'Herencia'],
-    ['polimorfismo', 'Polimorfismo'],
-    ['herVScomp', 'Herencia/Composición'],
-    ['enlaces', 'Enlaces'],
-    ['acoplamientoComponentes', 'SDP, ADP, SAP'],
-    ['beginingPoo', 'Inicios de POO'],
-    ['inmutability', 'Inmutabilidad'],
-    ['typesPolimorfismo', 'Tipos de Polimorfismo'],
-    ['factoryMethods', 'Factory Methods'],
-    ['interfacesOverInheritance', 'Interfaces VS Herencia'],
-  ]);
+  relatedSections = new Map<string, string>([]);
+
+  tittles = new Map([ ...POO_REF ].map(([key, { tittleShort }]) => [key, tittleShort]));
 
   ngOnInit(): void {
     this.itemStart = history?.state?.newItem;
+    const routes = new LinkReferencia().routesAndSections;
+    this.relatedSections.set(ESTRATEGIAS_DESARROLLO_KEY, routes.get(ESTRATEGIAS_DESARROLLO_KEY)!);
+    this.relatedSections.set(PARADIGMAS_KEY,             routes.get(PARADIGMAS_KEY)!);
+    this.relatedSections.set(PATRONES_KEY,               routes.get(PATRONES_KEY)!);
+    this.relatedSections.set(UML_KEY,                    routes.get(UML_KEY)!);
   }
 
 }

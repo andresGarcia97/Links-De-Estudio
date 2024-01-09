@@ -9,25 +9,14 @@ import { ARQUITECTURAS_KEY, LinkReferencia, PARADIGMAS_KEY, PRINCIPIOS_REF } fro
 export class PrincipiosComponent implements OnInit {
 
   items = PRINCIPIOS;
+  
+  components = PRINCIPIOS_REF;
 
   itemStart = '';
 
-  components = new Map([ ...PRINCIPIOS_REF ]);
-
   relatedSections = new Map<string, string>([]);
 
-  tittles = new Map<string, string>([
-    ['solid', 'SOLID'],
-    ['kiss', 'KISS'],
-    ['yagni', 'YAGNI'],
-    ['occam', 'Occam'],
-    ['dry', 'DRY'],
-    ['hollywood', 'Hollywood'],
-    ['tellDontAsk', 'TDA'],
-    ['stupid', 'STUPID'],
-    ['twice-one', '2-1'],
-    ['divide-conquer', 'Dividir y Conquistar']
-  ]);
+  tittles = new Map([ ...PRINCIPIOS_REF ].map(([key, { tittleShort }]) => [key, tittleShort]));
 
   ngOnInit(): void {
     this.itemStart = history?.state?.newItem;
