@@ -11,7 +11,7 @@ export class LinkReferencia {
         ...METODOLOGIAS_REF,     ...NUBE_REF,                 ...OTROS_REF,
         ...PARADIGMAS_REF,       ...PATRONES_REF,             ...PEOPLE_REF,  
         ...POO_REF,              ...TESTING_REF,              ...TESTING_ADVANCED,
-        ...REFACTORING,          ...REQUISITOS_REF,           ...PRINCIPIOS_REF,
+        ...REFACTORING_REF,      ...REQUISITOS_REF,           ...PRINCIPIOS_REF,
         ...SEGURIDAD_REF,        ...SMELL_CODES_REF,          ...PERSISTENCY,
         ...UML_REF,              ...VERSIONAMIENTO_REF,       ...HARDWARE_REF,
         ...WEB_REF,              ...LEYES_REF,                ...NEURO_MARKETING_REF,
@@ -469,27 +469,27 @@ export const TESTING_ADVANCED = new Map<string, Referencia>([
 ]);
 
 export const REFACTORIZACION_KEY = 'Refactorizacion';
-export const REFACTORING = new Map<string, Referencia>([
-    ['codigolimpio', new Referencia('https://refactoring.guru/es/refactoring/what-is-refactoring', '¿ Que es codigo Limpio ?', REFACTORIZACION_KEY)],
-    ['deudatecnica', new Referencia('https://refactoring.guru/es/refactoring/technical-debt', 'Deuda tecnica', REFACTORIZACION_KEY)],
-    ['tiposDeudaTecnica', new Referencia('https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/deuda-tecnica-explicada/', 'Tipos de deuda tecnica', REFACTORIZACION_KEY)],
-    ['comentarios', new Referencia('https://www.scrummanager.net/bok/index.php?title=Deuda_t%C3%A9cnica', 'Comentarios especiales', REFACTORIZACION_KEY)],
-    ['cuandorefactorizar', new Referencia('https://refactoring.guru/es/refactoring/when', '¿ Cuando refactorizar ?', REFACTORIZACION_KEY)],
-    ['comorefactorizar', new Referencia('https://refactoring.guru/es/refactoring/how-to', '¿ Como refactorizar ? ', REFACTORIZACION_KEY)],
-    ['tecnicasRefactoring', new Referencia('https://refactoring.guru/es/refactoring/techniques', 'Tecnicas para refactorizar', REFACTORIZACION_KEY)],
-    ['cuandoNoRefactorizar', new Referencia('https://www.digite.com/es/agile/refactorizacion-en-agil/#:~:text=%C2%BFQu%C3%A9%20es%20la%20refactorizaci%C3%B3n%3F,el%20comportamiento%20observable%2C%20del%20c%C3%B3digo.', 'Cuando No Refactorizar', REFACTORIZACION_KEY)],
-    ['refactorLegacyCode', new Referencia('https://jesuslc.com/2020/11/21/tecnicas-para-mantener-al-legacy-code-bajo-control/', 'Refactorizar el Legacy Code', REFACTORIZACION_KEY)],
+export const REFACTORING_REF = new Map<string, Referencia>([
+    ['codigolimpio', new Referencia('https://refactoring.guru/es/refactoring/what-is-refactoring', '¿ Que es codigo Limpio ?', REFACTORIZACION_KEY, 'Codigó limpio')],
+    ['deudatecnica', new Referencia('https://refactoring.guru/es/refactoring/technical-debt', 'Deuda tecnica', REFACTORIZACION_KEY, 'Deuda tecnica')],
+    ['tiposDeudaTecnica', new Referencia('https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/deuda-tecnica-explicada/', 'Tipos de deuda tecnica', REFACTORIZACION_KEY, 'Tipos de deuda')],
+    ['comentarios', new Referencia('https://www.scrummanager.net/bok/index.php?title=Deuda_t%C3%A9cnica', 'Comentarios especiales', REFACTORIZACION_KEY, 'Comentar la deuda')],
+    ['cuandorefactorizar', new Referencia('https://refactoring.guru/es/refactoring/when', '¿ Cuando refactorizar ?', REFACTORIZACION_KEY, '¿ Cuando ?')],
+    ['comorefactorizar', new Referencia('https://refactoring.guru/es/refactoring/how-to', '¿ Como refactorizar ? ', REFACTORIZACION_KEY, '¿ Como ?')],
+    ['tecnicasRefactoring', new Referencia('https://refactoring.guru/es/refactoring/techniques', 'Tecnicas para refactorizar', REFACTORIZACION_KEY, 'Tecnicas')],
+    ['cuandoNoRefactorizar', new Referencia('https://www.digite.com/es/agile/refactorizacion-en-agil/#:~:text=%C2%BFQu%C3%A9%20es%20la%20refactorizaci%C3%B3n%3F,el%20comportamiento%20observable%2C%20del%20c%C3%B3digo.', 'Cuando No Refactorizar', REFACTORIZACION_KEY, 'Cuando No')],
+    ['refactorLegacyCode', new Referencia('https://jesuslc.com/2020/11/21/tecnicas-para-mantener-al-legacy-code-bajo-control/', 'Refactorizar el Legacy Code', REFACTORIZACION_KEY, 'Refactor en Legacy code')],
 ]);
 
 export const REQUISITOS_KEY = 'Requisitos';
 export const REQUISITOS_REF = new Map<string, Referencia>([
-    ['funcionales', new Referencia('https://medium.com/@requeridosblog/requerimientos-funcionales-y-no-funcionales-ejemplos-y-tips-aa31cb59b22a', 'Requisitos funcionales', REQUISITOS_KEY)],
-    ['NOfuncionales', new Referencia('https://medium.com/@requeridosblog/requerimientos-funcionales-y-no-funcionales-ejemplos-y-tips-aa31cb59b22a', 'Requisitos No funcionales', REQUISITOS_KEY)],
-    ['negocio', new Referencia('https://requeridos.com/que-es-el-valor-de-negocio-y-como-medirlo/', 'El valor del negocio', REQUISITOS_KEY)],
-    ['ambiguedad', new Referencia('https://requeridos.com/requerimientos-menos-es-mas/', 'Evitar la ambiguedad', REQUISITOS_KEY)],
-    ['calidad', new Referencia('https://platzi.com/tutoriales/1248-pro-arquitectura/5498-atributos-de-calidad-de-un-producto-de-software/', 'Atributos de calidad', REQUISITOS_KEY)],
-    ['tradeoff', new Referencia('https://medium.com/analysts-corner/those-other-requirements-quality-attributes-and-their-inescapable-tradeoffs-31dc0691974d', 'Sacrificios y ganancias', REQUISITOS_KEY)],
-    ['objetivos', new Referencia('https://www.pqforce.com/es/blog/objetivos-frente-a-requisitos-cual-es-la-diferencia/', 'Objetivos & Requisitos', REQUISITOS_KEY)],
+    ['funcionales', new Referencia('https://medium.com/@requeridosblog/requerimientos-funcionales-y-no-funcionales-ejemplos-y-tips-aa31cb59b22a', 'Requisitos funcionales', REQUISITOS_KEY, 'Funcionales')],
+    ['NOfuncionales', new Referencia('https://medium.com/@requeridosblog/requerimientos-funcionales-y-no-funcionales-ejemplos-y-tips-aa31cb59b22a', 'Requisitos No funcionales', REQUISITOS_KEY, 'NO Funcionales')],
+    ['negocio', new Referencia('https://requeridos.com/que-es-el-valor-de-negocio-y-como-medirlo/', 'El valor del negocio', REQUISITOS_KEY, 'EL Negocio')],
+    ['ambiguedad', new Referencia('https://requeridos.com/requerimientos-menos-es-mas/', 'Evitar la ambiguedad', REQUISITOS_KEY, 'Evitar la ambiguedad')],
+    ['calidad', new Referencia('https://platzi.com/tutoriales/1248-pro-arquitectura/5498-atributos-de-calidad-de-un-producto-de-software/', 'Atributos de calidad', REQUISITOS_KEY, 'Atributos de calidad')],
+    ['tradeoff', new Referencia('https://medium.com/analysts-corner/those-other-requirements-quality-attributes-and-their-inescapable-tradeoffs-31dc0691974d', 'Sacrificios y ganancias', REQUISITOS_KEY, 'Trade-offs')],
+    ['objetivos', new Referencia('https://www.pqforce.com/es/blog/objetivos-frente-a-requisitos-cual-es-la-diferencia/', 'Objetivos & Requisitos', REQUISITOS_KEY, 'Objetivos & Requisitos')],
 ]);
 
 export const PRINCIPIOS_KEY = 'Principios';
@@ -508,23 +508,23 @@ export const PRINCIPIOS_REF = new Map<string, Referencia>([
 
 export const SEGURIDAD_KEY = 'Seguridad';
 export const SEGURIDAD_REF = new Map<string, Referencia>([
-    ['firewall', new Referencia('https://idgrup.com/firewall-que-es-y-como-funciona/#:~:text=Un%20firewall%2C%20tambi%C3%A9n%20llamado%20cortafuegos,ordenadores%20de%20una%20misma%20red', 'Firewall', SEGURIDAD_KEY)],
-    ['protocolos', new Referencia('https://www.websecurity.digicert.com/es/es/security-topics/what-is-ssl-tls-https', 'SSL, TSL, HTTPS', SEGURIDAD_KEY)],
-    ['proxy', new Referencia('https://www.welivesecurity.com/la-es/2020/01/02/que-es-proxy-para-que-sirve/', 'Proxy', SEGURIDAD_KEY)],
-    ['ciberSeguridad', new Referencia('https://latam.kaspersky.com/resource-center/definitions/what-is-cyber-security', 'Ciberseguridad y otras amenazas', SEGURIDAD_KEY)],
-    ['cia', new Referencia('https://searchdatacenter.techtarget.com/es/opinion/Que-es-la-triada-de-la-CIA', 'Confidencialidad-Integridad-Accesibilidad ', SEGURIDAD_KEY)],
-    ['noRepudio', new Referencia('https://www.unir.net/ingenieria/revista/no-repudio-seguridad-informatica/', 'No repudio', SEGURIDAD_KEY)],
-    ['matrizDeRiesgo', new Referencia('https://www.protek.com.py/novedades/objetivos-de-una-matriz-de-riesgos/', 'Matriz de Riesgo', SEGURIDAD_KEY)],
-    ['condicionDeCarrera', new Referencia('https://ciberseguridad.com/amenzas/vulnerabilidades/condicion-de-carrera/', 'Condición de Carrera', SEGURIDAD_KEY)],
-    ['honeypot', new Referencia('https://latam.kaspersky.com/resource-center/threats/what-is-a-honeypot', 'Honetypot', SEGURIDAD_KEY)],
-    ['zeroDayExploit', new Referencia('https://latam.kaspersky.com/resource-center/definitions/zero-day-exploit', 'Zero Day Exploit', SEGURIDAD_KEY)],
-    ['pentest', new Referencia('https://www.hiberus.com/crecemos-contigo/pentesting-owasp-fases-metodologia/', 'Testing de intrusión', SEGURIDAD_KEY)],
-    ['owaspTop', new Referencia('https://owasp.org/Top10/', 'OWASP Top 10', SEGURIDAD_KEY)],
-    ['stride', new Referencia('https://www.softwaresecured.com/stride-threat-modeling/', 'STRIDE', SEGURIDAD_KEY)],
-    ['ciam', new Referencia('https://auth0.com/blog/why-do-you-need-ciam/', 'CIAM', SEGURIDAD_KEY)],
-    ['lateralChanel', new Referencia('https://ciberseguridad.com/amenzas/ataque-canal-lateral/', 'Ataques de canal lateral', SEGURIDAD_KEY)],
-    ['csp', new Referencia('https://auth0.com/blog/from-zero-to-hero-with-csp/', 'Content Security Police', SEGURIDAD_KEY)],
-    ['csrf', new Referencia('https://www.welivesecurity.com/la-es/2015/04/21/vulnerabilidad-cross-site-request-forgery-csrf/', 'Cross Site Request Forgery', SEGURIDAD_KEY)],
+    ['firewall', new Referencia('https://idgrup.com/firewall-que-es-y-como-funciona/#:~:text=Un%20firewall%2C%20tambi%C3%A9n%20llamado%20cortafuegos,ordenadores%20de%20una%20misma%20red', 'Firewall', SEGURIDAD_KEY, 'Firewall')],
+    ['protocolos', new Referencia('https://www.websecurity.digicert.com/es/es/security-topics/what-is-ssl-tls-https', 'SSL, TSL, HTTPS', SEGURIDAD_KEY, 'SSL, TSL, HTTPS')],
+    ['proxy', new Referencia('https://www.welivesecurity.com/la-es/2020/01/02/que-es-proxy-para-que-sirve/', 'Proxy', SEGURIDAD_KEY, 'Proxy')],
+    ['ciberSeguridad', new Referencia('https://latam.kaspersky.com/resource-center/definitions/what-is-cyber-security', 'Ciberseguridad y otras amenazas', SEGURIDAD_KEY, 'Ciberseguridad')],
+    ['cia', new Referencia('https://searchdatacenter.techtarget.com/es/opinion/Que-es-la-triada-de-la-CIA', 'Confidencialidad-Integridad-Accesibilidad ', SEGURIDAD_KEY, 'CIA')],
+    ['noRepudio', new Referencia('https://www.unir.net/ingenieria/revista/no-repudio-seguridad-informatica/', 'No repudio', SEGURIDAD_KEY, 'NO Repudio')],
+    ['matrizDeRiesgo', new Referencia('https://www.protek.com.py/novedades/objetivos-de-una-matriz-de-riesgos/', 'Matriz de Riesgo', SEGURIDAD_KEY, 'Matriz de Riesgo')],
+    ['condicionDeCarrera', new Referencia('https://ciberseguridad.com/amenzas/vulnerabilidades/condicion-de-carrera/', 'Condición de Carrera', SEGURIDAD_KEY, 'Carrera')],
+    ['honeypot', new Referencia('https://latam.kaspersky.com/resource-center/threats/what-is-a-honeypot', 'Honetypot', SEGURIDAD_KEY, 'Honeypot')],
+    ['zeroDayExploit', new Referencia('https://latam.kaspersky.com/resource-center/definitions/zero-day-exploit', 'Zero Day Exploit', SEGURIDAD_KEY, 'Zero Day Exploit')],
+    ['pentest', new Referencia('https://www.hiberus.com/crecemos-contigo/pentesting-owasp-fases-metodologia/', 'Testing de intrusión', SEGURIDAD_KEY, 'Test de Intrusión')],
+    ['owaspTop', new Referencia('https://owasp.org/Top10/', 'OWASP Top 10', SEGURIDAD_KEY, 'OWASP Top 10')],
+    ['stride', new Referencia('https://www.softwaresecured.com/stride-threat-modeling/', 'STRIDE', SEGURIDAD_KEY, 'STRIDE')],
+    ['ciam', new Referencia('https://auth0.com/blog/why-do-you-need-ciam/', 'CIAM', SEGURIDAD_KEY, 'CIAM')],
+    ['lateralChanel', new Referencia('https://ciberseguridad.com/amenzas/ataque-canal-lateral/', 'Ataques de canal lateral', SEGURIDAD_KEY, 'Ataques de canal lateral')],
+    ['csp', new Referencia('https://auth0.com/blog/from-zero-to-hero-with-csp/', 'Content Security Police', SEGURIDAD_KEY, 'Content Security Police')],
+    ['csrf', new Referencia('https://www.welivesecurity.com/la-es/2015/04/21/vulnerabilidad-cross-site-request-forgery-csrf/', 'Cross Site Request Forgery', SEGURIDAD_KEY, 'CSRF')],
 ]);
 
 export const SMELL_CODES_KEY = 'Smell-Codes';
