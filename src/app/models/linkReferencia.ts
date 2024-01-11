@@ -12,10 +12,10 @@ export class LinkReferencia {
         ...PARADIGMAS_REF,       ...PATRONES_REF,             ...PEOPLE_REF,  
         ...POO_REF,              ...TESTING_REF,              ...TESTING_ADVANCED,
         ...REFACTORING_REF,      ...REQUISITOS_REF,           ...PRINCIPIOS_REF,
-        ...SEGURIDAD_REF,        ...SMELL_CODES_REF,          ...PERSISTENCY,
+        ...SEGURIDAD_REF,        ...SMELL_CODES_REF,          ...PERSISTENCY_REF,
         ...UML_REF,              ...VERSIONAMIENTO_REF,       ...HARDWARE_REF,
         ...WEB_REF,              ...LEYES_REF,                ...NEURO_MARKETING_REF,
-        ...PERSISTENCY_ADVANCED, ...CD_CI_REF,                ...APIS_REF  
+        ...CD_CI_REF,            ...APIS_REF,                 ...PERSISTENCY_ADVANCED_REF  
     ]);
 
     public routesAndSections: Map<string, string> = new Map([
@@ -529,45 +529,45 @@ export const SEGURIDAD_REF = new Map<string, Referencia>([
 
 export const SMELL_CODES_KEY = 'Smell-Codes';
 export const SMELL_CODES_REF = new Map<string, Referencia>([
-    ['codesmells', new Referencia('https://openwebinars.net/blog/code-smells-y-deuda-tecnica/', 'Smell Codes', SMELL_CODES_KEY)],
-    ['tiposSmellCodes', new Referencia('https://refactoring.guru/es/refactoring/smells', 'Tipos de Smell codes', SMELL_CODES_KEY)],
-    ['desglose', new Referencia('https://refactoring.guru/es/refactoring/smells', 'Smell codes por tipo', SMELL_CODES_KEY)],
-    ['casos', new Referencia('https://refactoring.guru/es/refactoring/smells', 'Casos donde pueden ser ignorados', SMELL_CODES_KEY)],
-    ['payoff', new Referencia('https://refactoring.guru/es/refactoring/smells', 'Beneficios de corregir code smells', SMELL_CODES_KEY)],
-    ['designsmells', new Referencia('https://www.alpharithms.com/code-smell-492316/', 'Code smells en diseño', SMELL_CODES_KEY)],
+    ['codesmells', new Referencia('https://openwebinars.net/blog/code-smells-y-deuda-tecnica/', 'Smell Codes', SMELL_CODES_KEY, 'Smell Codes')],
+    ['tiposSmellCodes', new Referencia('https://refactoring.guru/es/refactoring/smells', 'Tipos de Smell codes', SMELL_CODES_KEY, 'Tipos')],
+    ['desglose', new Referencia('https://refactoring.guru/es/refactoring/smells', 'Smell codes por tipo', SMELL_CODES_KEY, 'Desglose')],
+    ['casos', new Referencia('https://refactoring.guru/es/refactoring/smells', 'Casos donde pueden ser ignorados', SMELL_CODES_KEY, 'Casos especiales')],
+    ['payoff', new Referencia('https://refactoring.guru/es/refactoring/smells', 'Beneficios de corregir code smells', SMELL_CODES_KEY, 'Ganancias')],
+    ['designsmells', new Referencia('https://www.alpharithms.com/code-smell-492316/', 'Code smells en diseño', SMELL_CODES_KEY, 'A nivel de diseño')],
 ]);
 
 export const DATA_BASES_KEY = 'Bases de Datos'
-export const PERSISTENCY = new Map<string, Referencia>([
-    ['sql', new Referencia('https://www.w3schools.com/sql/default.asp', '¿ Que es SQL ? ', DATA_BASES_KEY)],
-    ['dbms', new Referencia('https://www.astera.com/es/type/blog/database-management-software/', 'Software de Gestion de Bases de Datos', DATA_BASES_KEY)],
-    ['crud', new Referencia('https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/crud-las-principales-operaciones-de-bases-de-datos/', 'Create, Read, Update, Delete', DATA_BASES_KEY)],
-    ['dl', new Referencia('https://platzi.com/blog/que-es-ddl-dml-dcl-y-tcl-integridad-referencial/', 'DDL, DML, DCL, TCL', DATA_BASES_KEY)],
-    ['integridad', new Referencia('https://platzi.com/blog/que-es-ddl-dml-dcl-y-tcl-integridad-referencial/', 'Integridad Referencial', DATA_BASES_KEY)],
-    ['erd', new Referencia('https://www.lucidchart.com/pages/es/que-es-un-diagrama-entidad-relacion', 'Diagrama Entidad-Relación', DATA_BASES_KEY)],
-    ['normalizacion', new Referencia('https://docs.microsoft.com/en-us/office/troubleshoot/access/database-normalization-description', 'Normalización de una BD', DATA_BASES_KEY)],
-    ['acid', new Referencia('https://dosideas.com/noticias/base-de-datos/973-acid-en-las-bases-de-datos', 'Esquema ACID', DATA_BASES_KEY)],
-    ['indices', new Referencia('https://www.ibm.com/docs/es/mam/7.6.0.8?topic=databases-database-indexing', 'Indices', DATA_BASES_KEY)],
-    ['joins', new Referencia('https://ingenieriadesoftware.es/tipos-sql-join-guia-referencia/', 'Tipos de Joins', DATA_BASES_KEY)],
-    ['constraints', new Referencia('https://www.w3schools.com/sql/sql_constraints.asp', 'Constraints', DATA_BASES_KEY)],
-    ['dbDesign', new Referencia('https://dzone.com/articles/what-is-good-database-design', 'Diseño de una BD', DATA_BASES_KEY)],
+export const PERSISTENCY_REF = new Map<string, Referencia>([
+    ['sql', new Referencia('https://www.w3schools.com/sql/default.asp', '¿ Que es SQL ? ', DATA_BASES_KEY, 'SQL')],
+    ['dbms', new Referencia('https://www.astera.com/es/type/blog/database-management-software/', 'Software de Gestion de Bases de Datos', DATA_BASES_KEY, 'DBMS')],
+    ['crud', new Referencia('https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/crud-las-principales-operaciones-de-bases-de-datos/', 'Create, Read, Update, Delete', DATA_BASES_KEY, 'CRUD')],
+    ['dl', new Referencia('https://platzi.com/blog/que-es-ddl-dml-dcl-y-tcl-integridad-referencial/', 'DDL, DML, DCL, TCL', DATA_BASES_KEY, 'DDL, DML, DCL, TCL')],
+    ['integridad', new Referencia('https://platzi.com/blog/que-es-ddl-dml-dcl-y-tcl-integridad-referencial/', 'Integridad Referencial', DATA_BASES_KEY, 'Integridad')],
+    ['erd', new Referencia('https://www.lucidchart.com/pages/es/que-es-un-diagrama-entidad-relacion', 'Diagrama Entidad-Relación', DATA_BASES_KEY, 'ERD')],
+    ['normalizacion', new Referencia('https://docs.microsoft.com/en-us/office/troubleshoot/access/database-normalization-description', 'Normalización de una BD', DATA_BASES_KEY, 'Normalización')],
+    ['acid', new Referencia('https://dosideas.com/noticias/base-de-datos/973-acid-en-las-bases-de-datos', 'Esquema ACID', DATA_BASES_KEY, 'ACID')],
+    ['indices', new Referencia('https://www.ibm.com/docs/es/mam/7.6.0.8?topic=databases-database-indexing', 'Indices', DATA_BASES_KEY, 'Indices')],
+    ['joins', new Referencia('https://ingenieriadesoftware.es/tipos-sql-join-guia-referencia/', 'Tipos de Joins', DATA_BASES_KEY, 'Tipos de Joins')],
+    ['constraints', new Referencia('https://www.w3schools.com/sql/sql_constraints.asp', 'Constraints', DATA_BASES_KEY, 'Constraints')],
+    ['dbDesign', new Referencia('https://dzone.com/articles/what-is-good-database-design', 'Diseño de una BD', DATA_BASES_KEY, 'Diseño')],
 ]);
 
 export const DATA_BASES_ADVANCED_KEY = 'BD Avanzado'
-export const PERSISTENCY_ADVANCED = new Map<string, Referencia>([
-    ['nosql', new Referencia('https://pandorafms.com/blog/es/bases-de-datos-nosql/', 'Bases de Datos NO SQL', DATA_BASES_ADVANCED_KEY)],
-    ['tiposBD', new Referencia('https://www.acens.com/wp-content/images/2014/02/bbdd-nosql-wp-acens.pdf', 'Tipos de BD No SQL', DATA_BASES_ADVANCED_KEY)],
-    ['orm', new Referencia('https://programarfacil.com/blog/que-es-un-orm/', 'Mapeo Objetos-Relacional', DATA_BASES_ADVANCED_KEY)],
-    ['consistenciaEventual', new Referencia('https://medium.com/@gabanox/consistencia-eventual-en-s3-6ba5b2ecd721', 'Consistencia Eventual', DATA_BASES_ADVANCED_KEY)],
-    ['algebraRelacional', new Referencia('https://sites.google.com/site/basededatosdistribuidastics/algebra-relacional', 'Algebra Relacional', DATA_BASES_ADVANCED_KEY)],
-    ['n+1selects', new Referencia('https://stackoverflow.com/questions/97197/what-is-the-n1-selects-problem-in-orm-object-relational-mapping', 'N + 1 Selects', DATA_BASES_ADVANCED_KEY)],
-    ['boyceCodd', new Referencia('https://normalizacionunit4.blogspot.com/2019/05/46-forma-normal-boyce-codd.html', 'Boyce-Codd', DATA_BASES_ADVANCED_KEY)],
-    ['sqlVsNosql', new Referencia('https://medium.com/@eugeniomendoza/c%C3%B3mo-saber-si-necesitas-una-base-de-datos-nosql-b6cfd5bb7d9b', 'SQL ó NoSql', DATA_BASES_ADVANCED_KEY)],
-    ['locking', new Referencia('https://vladmihalcea.com/optimistic-vs-pessimistic-locking/', 'Bloqueo Optimista & Pesimista', DATA_BASES_ADVANCED_KEY)],
-    ['sqlOrderExecution', new Referencia('https://matam-kirankumar.medium.com/sql-query-order-of-execution-37001da1462', 'Orden de Ejecución', DATA_BASES_ADVANCED_KEY)],
-    ['sargeable', new Referencia('https://dev.to/kanani_nirav/secret-to-optimizing-sql-queries-understand-the-sql-execution-order-28m1', 'Consultas SARGEABLE', DATA_BASES_ADVANCED_KEY)],
-    ['MVCC', new Referencia('https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/What-is-MVCC-How-does-Multiversion-Concurrencty-Control-work', 'Control de Concurrencia Multiversion', DATA_BASES_ADVANCED_KEY)],
-    ['acidVSbase', new Referencia('https://phoenixnap.com/kb/acid-vs-base', 'BASE', DATA_BASES_ADVANCED_KEY)],
+export const PERSISTENCY_ADVANCED_REF = new Map<string, Referencia>([
+    ['nosql', new Referencia('https://pandorafms.com/blog/es/bases-de-datos-nosql/', 'Bases de Datos NO SQL', DATA_BASES_ADVANCED_KEY, 'NoSQL')],
+    ['tiposBD', new Referencia('https://www.acens.com/wp-content/images/2014/02/bbdd-nosql-wp-acens.pdf', 'Tipos de BD No SQL', DATA_BASES_ADVANCED_KEY, 'Tipos NoSQL')],
+    ['orm', new Referencia('https://programarfacil.com/blog/que-es-un-orm/', 'Mapeo Objetos-Relacional', DATA_BASES_ADVANCED_KEY, 'ORM')],
+    ['consistenciaEventual', new Referencia('https://medium.com/@gabanox/consistencia-eventual-en-s3-6ba5b2ecd721', 'Consistencia Eventual', DATA_BASES_ADVANCED_KEY, 'Consistencia')],
+    ['algebraRelacional', new Referencia('https://sites.google.com/site/basededatosdistribuidastics/algebra-relacional', 'Algebra Relacional', DATA_BASES_ADVANCED_KEY, 'Algebra Relacional')],
+    ['n+1selects', new Referencia('https://stackoverflow.com/questions/97197/what-is-the-n1-selects-problem-in-orm-object-relational-mapping', 'N + 1 Problem', DATA_BASES_ADVANCED_KEY, 'N + 1 Selects')],
+    ['boyceCodd', new Referencia('https://normalizacionunit4.blogspot.com/2019/05/46-forma-normal-boyce-codd.html', 'Boyce-Codd', DATA_BASES_ADVANCED_KEY, 'Boyce-Codd')],
+    ['sqlVsNosql', new Referencia('https://medium.com/@eugeniomendoza/c%C3%B3mo-saber-si-necesitas-una-base-de-datos-nosql-b6cfd5bb7d9b', 'SQL ó NoSql', DATA_BASES_ADVANCED_KEY, 'SQL ó NoSql')],
+    ['locking', new Referencia('https://vladmihalcea.com/optimistic-vs-pessimistic-locking/', 'Bloqueo Optimista & Pesimista', DATA_BASES_ADVANCED_KEY, 'Bloqueos')],
+    ['sqlOrderExecution', new Referencia('https://matam-kirankumar.medium.com/sql-query-order-of-execution-37001da1462', 'Orden de Ejecución', DATA_BASES_ADVANCED_KEY, 'Orden de Ejecución')],
+    ['sargeable', new Referencia('https://dev.to/kanani_nirav/secret-to-optimizing-sql-queries-understand-the-sql-execution-order-28m1', 'Consultas SARGEABLE', DATA_BASES_ADVANCED_KEY, 'SARGEABLE')],
+    ['MVCC', new Referencia('https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/What-is-MVCC-How-does-Multiversion-Concurrencty-Control-work', 'Control de Concurrencia Multiversion', DATA_BASES_ADVANCED_KEY, 'Control de Concurrencia')],
+    ['acidVSbase', new Referencia('https://phoenixnap.com/kb/acid-vs-base', 'BASE', DATA_BASES_ADVANCED_KEY, 'BASE')],
 ]);
 
 export const UML_KEY = 'UML';
