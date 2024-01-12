@@ -21,7 +21,7 @@ export class Referencia {
     component = '';
     tittleShort = '';
 
-    constructor(referencia: string, tittle: string, component: string, tittleShort: string = '') {
+    constructor(referencia: string, tittle: string, component: string, tittleShort: string) {
         this.referencia = referencia;
         this.tittle = tittle;
         this.component = component;

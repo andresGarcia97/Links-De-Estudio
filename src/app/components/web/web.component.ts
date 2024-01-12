@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { WEB } from 'src/app/models/content/content1';
-import { WEB_REF } from 'src/app/models/linkReferencia';
+import { CD_CI_KEY, FRAMEWORKS_KEY, LinkReferencia, NUBE_KEY, SEGURIDAD_KEY, WEB_REF } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-web',
@@ -10,27 +10,21 @@ export class WebComponent implements OnInit {
 
   items = WEB;
 
-  components = new Map([ ...WEB_REF ]);
+  components = WEB_REF;
 
   itemStart = '';
 
-  tittles = new Map<string, string>([
-    ['spa', 'SPA'],
-    ['pwa', 'PWA'],
-    ['seo', 'SEO'],
-    ['espacio', 'Espacio Negativo'],
-    ['diseno', 'Diseño Grafico'],
-    ['experienciasUsuario', 'UX'],
-    ['interfacesUsuario', 'UI'],
-    ['logos', 'Logos'],
-    ['gestalt', 'Teoria de Gestalt'],
-    ['ssr-csr-ssg-isr', 'SSR vs CSR vs SSG'],
-    ['esqueumorfismo', 'Esqueumorfismo'],
-    ['menorSorpresa', 'Menor Sorpresa']
-  ]);
+  relatedSections = new Map<string, string>([]);
+
+  tittles = new Map([ ...WEB_REF ].map(([key, { tittleShort }]) => [key, tittleShort]));
 
   ngOnInit(): void {
     this.itemStart = history?.state?.newItem;
+    const routes = new LinkReferencia().routesAndSections;
+    this.relatedSections.set(FRAMEWORKS_KEY, routes.get(FRAMEWORKS_KEY)!);
+    this.relatedSections.set(SEGURIDAD_KEY,  routes.get(SEGURIDAD_KEY)!);
+    this.relatedSections.set(CD_CI_KEY,      routes.get(CD_CI_KEY)!);
+    this.relatedSections.set(NUBE_KEY,       routes.get(NUBE_KEY)!);
   }
 
 }

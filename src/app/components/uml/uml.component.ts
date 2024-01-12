@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UML } from 'src/app/models/content/content3';
-import { UML_REF } from 'src/app/models/linkReferencia';
+import { ANALISIS_KEY, GIT_KEY, LinkReferencia, UML_REF, VERSIONAMIENTO_KEY } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-uml',
@@ -10,27 +10,20 @@ export class UmlComponent implements OnInit {
 
   items = UML;
 
+  components = UML_REF;
+  
   itemStart = '';
 
-  components = new Map([ ...UML_REF ]);
+  relatedSections = new Map<string, string>([]);
 
-  tittles = new Map<string, string>([
-    ['uml', '¿ Que es ?'],
-    ['clase', 'De Clases'],
-    ['componentes', 'De Componentes'],
-    ['despliegue', 'De Despliegue'],
-    ['usos', 'Casos de Uso'],
-    ['secuencia', 'De Secuencia'],
-    ['actividades', 'De Actividades'],
-    ['paquetes', 'De Paquetes'],
-    ['estados', 'De Estados'],
-    ['vista', '4+1 Vistas'],
-    ['tiposUml', 'Tipos de Diagramas'],
-
-  ]);
+  tittles = new Map([ ...UML_REF ].map(([key, { tittleShort }]) => [key, tittleShort]));
 
   ngOnInit(): void {
     this.itemStart = history?.state?.newItem;
+    const routes = new LinkReferencia().routesAndSections;
+    this.relatedSections.set(VERSIONAMIENTO_KEY, routes.get(VERSIONAMIENTO_KEY)!);
+    this.relatedSections.set(ANALISIS_KEY,       routes.get(ANALISIS_KEY)!);
+    this.relatedSections.set(GIT_KEY,            routes.get(GIT_KEY)!);
   }
 
 }

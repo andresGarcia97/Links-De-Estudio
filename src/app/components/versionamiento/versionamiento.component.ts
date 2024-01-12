@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { VERSIONAMIENTO } from 'src/app/models/content/content3';
-import { VERSIONAMIENTO_REF } from 'src/app/models/linkReferencia';
+import { ANALISIS_KEY, GIT_KEY, LinkReferencia, UML_KEY, VERSIONAMIENTO_REF } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-versionamiento',
@@ -10,22 +10,20 @@ export class VersionamientoComponent  implements OnInit {
 
   items = VERSIONAMIENTO;
 
-  components = new Map([ ...VERSIONAMIENTO_REF ]);
+  components = VERSIONAMIENTO_REF;
 
   itemStart = '';
 
-  tittles = new Map<string, string>([
-    ['git', 'Gestor de Versiones'],
-    ['dependencias', 'Dependencias Web'],
-    ['gradlevsmaven', 'Gradle VS Maven'],
-    ['versionamiento', 'Versionamiento'],
-    ['licencias', 'Licencias'],
-    ['documentation', 'Documentacion'],
-    ['licencesAndData', 'Licencias & Datos'],
-  ]);
+  relatedSections = new Map<string, string>([]);
+
+  tittles = new Map([ ...VERSIONAMIENTO_REF ].map(([key, { tittleShort }]) => [key, tittleShort]));
 
   ngOnInit(): void {
     this.itemStart = history?.state?.newItem;
+    const routes = new LinkReferencia().routesAndSections;
+    this.relatedSections.set(ANALISIS_KEY,  routes.get(ANALISIS_KEY)!);
+    this.relatedSections.set(UML_KEY,       routes.get(UML_KEY)!);
+    this.relatedSections.set(GIT_KEY,       routes.get(GIT_KEY)!);
   }
 
 }
