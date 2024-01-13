@@ -2253,7 +2253,7 @@ export const OTROS =
                 '- Un concepto sencillo pero muy potente, basicamente consta de desmontar y volver a montar algo, para ver como funciona ',
                 '- Esto se da con la intención de mejorar o duplicar ese algo mediante una simple observación ',
                 '- Su nacimiento se da durante la segunda guerra mundial, pero hoy en dia es aplicable hasta para el software ',
-                '- Uno de los primeros casos de esta practica fue el nacimiento del Tu-4 (sovietico) copia del B-29 (Estadounidense) ',
+                '- Uno de los primeros casos de esta practica fue el nacimiento del Tu-4 <em>sovietico</em> copia del B-29 <em>Estadounidense</em> ',
             ]),
         new Item('dsl',
             [

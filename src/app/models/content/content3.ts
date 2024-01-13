@@ -679,6 +679,21 @@ export const PRINCIPIOS =
                 '',
                 '- Esto se puede ver como una muñeca Rusa, donde cada muñeca esta formada por más partes que se van haciendo más pequeñas ',
                 ' - pero juntas son capaces de conformar un todo, mayor a la suma de sus partes ',
+            ]),
+        new Item('soc',
+            [
+                '- Un concepto simple que dice que no todo se debe solucionar junto, en el mismo archivo, en la misma funcion, etc... ',
+                '- Sino que se debe dividir en fragmentos, de modo que cada parte pueda completar una parte distinta, especifica y más acotada ',
+                '- En palabras de <strong>Edsger W. Dijkstra</strong> <em>La separación de conceptos, aunque no sea perfectamente posible, </em>',
+                '  <em>es la única técnica disponible, que yo sepa, para ordenar eficazmente los propios pensamientos</em>',
+                '- Esto aplica desde funciones, clases, pasando por modulos, y hasta proyectos ',
+            ]),
+        new Item('poc',
+            [
+                '- Es una prueba inicial, donde se toman acciones para determinar si una idea es lo suficientemente valiosa, factible, e incluso posible ',
+                '- Tambien prueba la viabilidad de un producto para resolver alguna necesidad empresarial',
+                '- Esto se diferencia de un MVP ya que esto es un pequeño documento o demostración de la etapa inicial, del cual se puede empezar a construir ',
+                '- Despues de que se hayan aceptado por un cliente y/o usuario final, y asi poder empezar una toma de requisitos y factores claves de la aplicación ',
             ])
     ];
 

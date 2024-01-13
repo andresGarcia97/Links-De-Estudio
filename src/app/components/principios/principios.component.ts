@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PRINCIPIOS } from 'src/app/models/content/content3';
-import { ARQUITECTURAS_KEY, LinkReferencia, PARADIGMAS_KEY, PRINCIPIOS_REF } from 'src/app/models/linkReferencia';
+import { ARQUITECTURAS_KEY, LinkReferencia, PARADIGMAS_KEY, PATRONES_KEY, PRINCIPIOS_REF } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-principios',
@@ -22,7 +22,8 @@ export class PrincipiosComponent implements OnInit {
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
     this.relatedSections.set(ARQUITECTURAS_KEY, routes.get(ARQUITECTURAS_KEY)!);
-    this.relatedSections.set(PARADIGMAS_KEY   , routes.get(PARADIGMAS_KEY)!);
+    this.relatedSections.set(PARADIGMAS_KEY,    routes.get(PARADIGMAS_KEY)!);
+    this.relatedSections.set(PATRONES_KEY,      routes.get(PATRONES_KEY)!);
   }
 
 }
