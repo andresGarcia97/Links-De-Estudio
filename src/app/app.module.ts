@@ -3,14 +3,6 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AgilesComponent } from './components/agiles/agiles.component';
-import { AnalisisComponent } from './components/analisis/analisis.component';
-import { ArquitecturasComponent } from './components/arquitecturas/arquitecturas.component';
-import { BuenasPracticasComponent } from './components/buenas-practicas/buenas-practicas.component';
-import { CalidadComponent } from './components/calidad/calidad.component';
-import { CompilacionComponent } from './components/compilacion/compilacion.component';
-import { ConocimientosEmpiricosComponent } from './components/conocimientos-empiricos/conocimientos-empiricos.component';
-import { ContenedoresComponent } from './components/contenedores/contenedores.component';
 import { CoreModule } from './components/core/core.module';
 import { EstrategiasDesarrolloComponent } from './components/estrategias-desarrollo/estrategias-desarrollo.component';
 import { FrameworksComponent } from './components/frameworks/frameworks.component';
@@ -45,24 +37,19 @@ import { FilterPipe } from './pipes/filter.pipe';
 import { HomeComponent } from './components/home/home.component';
 import { NeuroMarketingComponent } from './components/neuro-marketing/neuro-marketing.component';
 import { SqlNosqlAdvancedComponent } from './components/sql-nosql-advanced/sql-nosql-advanced.component';
-import { CDCIComponent } from './components/cd-ci/cd-ci.component';
-import { ApisTermsComponent } from './components/apis-terms/apis-terms.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PrincipiosComponent,
     ParadigmasComponent,
-    ArquitecturasComponent,
     PatronesComponent,
-    BuenasPracticasComponent,
     MalasPracticasComponent,
     RefactorizacionComponent,
     MetodologiasComponent,
     SqlNosqlComponent,
     FrameworksComponent,
     OtrosComponent,
-    CompilacionComponent,
     HistoriaUsuarioComponent,
     VersionamientoComponent,
     EstrategiasDesarrolloComponent,
@@ -71,20 +58,15 @@ import { ApisTermsComponent } from './components/apis-terms/apis-terms.component
     PruebasComponent,
     GitComponent,
     WebComponent,
-    ConocimientosEmpiricosComponent,
     FuentesComponent,
     SeguridadComponent,
-    AnalisisComponent,
-    ContenedoresComponent,
     PooComponent,
-    AgilesComponent,
     SmellsCodesComponent,
     MetaCaracteristicasComponent,
     GlosarioComponent,
     NubeComponent,
     FilterPipe,
     PersonasComponent,
-    CalidadComponent,
     PruebasAvanzadasComponent,
     HardwareComponent,
     MetaEstructuraComponent,
@@ -92,8 +74,6 @@ import { ApisTermsComponent } from './components/apis-terms/apis-terms.component
     HomeComponent,
     NeuroMarketingComponent,
     SqlNosqlAdvancedComponent,
-    CDCIComponent,
-    ApisTermsComponent
   ],
   imports: [
     BrowserModule,
