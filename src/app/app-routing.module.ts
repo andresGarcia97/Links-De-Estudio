@@ -7,9 +7,6 @@ import {
   PARADIGMAS_KEY, PATRONES_KEY, PERSONAS_KEY, POO_KEY, PRINCIPIOS_KEY, REFACTORIZACION_KEY, REQUISITOS_KEY, SEGURIDAD_KEY,
   SMELL_CODES_KEY, TESTING_ADVANCED_KEY, TESTING_KEY, UML_KEY, USER_HISTORIES_KEY, VERSIONAMIENTO_KEY, WEB_KEY
 } from 'src/app/models/linkReferencia';
-import { EstrategiasDesarrolloComponent } from './components/estrategias-desarrollo/estrategias-desarrollo.component';
-import { FrameworksComponent } from './components/frameworks/frameworks.component';
-import { FuentesComponent } from './components/fuentes/fuentes.component';
 import { GitComponent } from './components/git/git.component';
 import { GlosarioComponent } from './components/glosario/glosario.component';
 import { HardwareComponent } from './components/hardware/hardware.component';
@@ -53,7 +50,7 @@ const routes: Routes = [
   { path: 'personas', component: PersonasComponent, title: PERSONAS_KEY },
   { path: 'nube', component: NubeComponent, title: NUBE_KEY },
   { path: 'glosario', component: GlosarioComponent, title: 'Glosario' },
-  { path: 'fuentes', component: FuentesComponent, title: 'Fuentes' },
+  { path: 'fuentes', loadChildren: () => import('./components/fuentes/fuentes.module').then(m => m.FuentesModule), title: 'Fuentes' },
   { path: 'metacaracteristicas', component: MetaCaracteristicasComponent, title: CARACTERISTICAS_KEY },
   { path: 'smells-codes', component: SmellsCodesComponent, title: SMELL_CODES_KEY },
   { path: 'poo', component: PooComponent, title: POO_KEY },
@@ -66,7 +63,7 @@ const routes: Routes = [
   { path: 'testing', component: PruebasComponent, title: TESTING_KEY },
   { path: 'requisitos', component: RequisitosComponent, title: REQUISITOS_KEY },
   { path: 'uml', component: UmlComponent, title: UML_KEY },
-  { path: 'estrategias-de-desarrollo', component: EstrategiasDesarrolloComponent, title: ESTRATEGIAS_DESARROLLO_KEY },
+  { path: 'estrategias-de-desarrollo',  loadChildren: () => import('./components/estrategias-desarrollo/estrategias-desarrollo.module').then(m => m.EstrategiasDesarrolloModule), title: ESTRATEGIAS_DESARROLLO_KEY },
   { path: 'versionamiento', component: VersionamientoComponent, title: VERSIONAMIENTO_KEY },
   { path: 'historias-de-usuario', component: HistoriaUsuarioComponent, title: USER_HISTORIES_KEY },
   { path: 'compilacion', loadChildren: () => import('./components/compilacion/compilacion.module').then(m => m.CompilacionModule), title: COMPILACION_KEY },
@@ -79,7 +76,7 @@ const routes: Routes = [
   { path: 'otros', component: OtrosComponent, title: OTROS_KEY },
   { path: 'metodologias', component: MetodologiasComponent, title: METODOLOGIAS_KEY },
   { path: 'malas-practicas', component: MalasPracticasComponent, title: MALAS_PRACTICAS_KEY },
-  { path: 'frameworks', component: FrameworksComponent, title: FRAMEWORKS_KEY },
+  { path: 'frameworks', loadChildren: () => import('./components/frameworks/frameworks.module').then(m => m.FrameworksModule), title: FRAMEWORKS_KEY },
   { path: 'buenas-practicas', loadChildren: () => import('./components/buenas-practicas/buenas-practicas.module').then(m => m.BuenasPracticasModule), title: BUENAS_PRACTICAS_KEY },
   { path: 'arquitecturas', loadChildren: () => import('./components/arquitecturas/arquitecturas.module').then(m => m.ArquitecturasModule), title: ARQUITECTURAS_KEY },
   { path: 'agiles', loadChildren: () => import('./components/agiles/agiles.module').then(m => m.AgilesModule), title: AGILES_KEY  },

@@ -4,9 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './components/core/core.module';
-import { EstrategiasDesarrolloComponent } from './components/estrategias-desarrollo/estrategias-desarrollo.component';
-import { FrameworksComponent } from './components/frameworks/frameworks.component';
-import { FuentesComponent } from './components/fuentes/fuentes.component';
 import { GitComponent } from './components/git/git.component';
 import { GlosarioComponent } from './components/glosario/glosario.component';
 import { HardwareComponent } from './components/hardware/hardware.component';
@@ -48,17 +45,14 @@ import { SqlNosqlAdvancedComponent } from './components/sql-nosql-advanced/sql-n
     RefactorizacionComponent,
     MetodologiasComponent,
     SqlNosqlComponent,
-    FrameworksComponent,
     OtrosComponent,
     HistoriaUsuarioComponent,
     VersionamientoComponent,
-    EstrategiasDesarrolloComponent,
     UmlComponent,
     RequisitosComponent,
     PruebasComponent,
     GitComponent,
     WebComponent,
-    FuentesComponent,
     SeguridadComponent,
     PooComponent,
     SmellsCodesComponent,
