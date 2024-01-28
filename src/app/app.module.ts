@@ -4,15 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './components/core/core.module';
-import { GitComponent } from './components/git/git.component';
 import { GlosarioComponent } from './components/glosario/glosario.component';
-import { HardwareComponent } from './components/hardware/hardware.component';
-import { HistoriaUsuarioComponent } from './components/historia-usuario/historia-usuario.component';
-import { LeyesComponent } from './components/leyes/leyes.component';
-import { MalasPracticasComponent } from './components/malas-practicas/malas-practicas.component';
-import { MetaCaracteristicasComponent } from './components/meta-caracteristicas/meta-caracteristicas.component';
-import { MetaEstructuraComponent } from './components/meta-estructura/meta-estructura.component';
-import { MetodologiasComponent } from './components/metodologias/metodologias.component';
 import { NubeComponent } from './components/nube/nube.component';
 import { OtrosComponent } from './components/otros/otros.component';
 import { ParadigmasComponent } from './components/paradigmas/paradigmas.component';
@@ -41,30 +33,22 @@ import { SqlNosqlAdvancedComponent } from './components/sql-nosql-advanced/sql-n
     PrincipiosComponent,
     ParadigmasComponent,
     PatronesComponent,
-    MalasPracticasComponent,
     RefactorizacionComponent,
-    MetodologiasComponent,
     SqlNosqlComponent,
     OtrosComponent,
-    HistoriaUsuarioComponent,
     VersionamientoComponent,
     UmlComponent,
     RequisitosComponent,
     PruebasComponent,
-    GitComponent,
     WebComponent,
     SeguridadComponent,
     PooComponent,
     SmellsCodesComponent,
-    MetaCaracteristicasComponent,
     GlosarioComponent,
     NubeComponent,
     FilterPipe,
     PersonasComponent,
     PruebasAvanzadasComponent,
-    HardwareComponent,
-    MetaEstructuraComponent,
-    LeyesComponent,
     HomeComponent,
     NeuroMarketingComponent,
     SqlNosqlAdvancedComponent,
