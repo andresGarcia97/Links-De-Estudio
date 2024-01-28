@@ -5,13 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './components/core/core.module';
 import { GlosarioComponent } from './components/glosario/glosario.component';
-import { NubeComponent } from './components/nube/nube.component';
-import { OtrosComponent } from './components/otros/otros.component';
-import { ParadigmasComponent } from './components/paradigmas/paradigmas.component';
-import { PatronesComponent } from './components/patrones/patrones.component';
-import { PersonasComponent } from './components/personas/personas.component';
-import { PooComponent } from './components/poo/poo.component';
-import { PrincipiosComponent } from './components/principios/principios.component';
 import { PruebasAvanzadasComponent } from './components/pruebas-avanzadas/pruebas-avanzadas.component';
 import { PruebasComponent } from './components/pruebas/pruebas.component';
 import { RefactorizacionComponent } from './components/refactorizacion/refactorizacion.component';
@@ -24,33 +17,24 @@ import { VersionamientoComponent } from './components/versionamiento/versionamie
 import { WebComponent } from './components/web/web.component';
 import { FilterPipe } from './pipes/filter.pipe';
 import { HomeComponent } from './components/home/home.component';
-import { NeuroMarketingComponent } from './components/neuro-marketing/neuro-marketing.component';
 import { SqlNosqlAdvancedComponent } from './components/sql-nosql-advanced/sql-nosql-advanced.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PrincipiosComponent,
-    ParadigmasComponent,
-    PatronesComponent,
     RefactorizacionComponent,
     SqlNosqlComponent,
-    OtrosComponent,
     VersionamientoComponent,
     UmlComponent,
     RequisitosComponent,
     PruebasComponent,
     WebComponent,
     SeguridadComponent,
-    PooComponent,
     SmellsCodesComponent,
     GlosarioComponent,
-    NubeComponent,
     FilterPipe,
-    PersonasComponent,
     PruebasAvanzadasComponent,
     HomeComponent,
-    NeuroMarketingComponent,
     SqlNosqlAdvancedComponent,
   ],
   imports: [

@@ -9,14 +9,6 @@ import {
 } from 'src/app/models/linkReferencia';
 import { GlosarioComponent } from './components/glosario/glosario.component';
 import { HomeComponent } from './components/home/home.component';
-import { NeuroMarketingComponent } from './components/neuro-marketing/neuro-marketing.component';
-import { NubeComponent } from './components/nube/nube.component';
-import { OtrosComponent } from './components/otros/otros.component';
-import { ParadigmasComponent } from './components/paradigmas/paradigmas.component';
-import { PatronesComponent } from './components/patrones/patrones.component';
-import { PersonasComponent } from './components/personas/personas.component';
-import { PooComponent } from './components/poo/poo.component';
-import { PrincipiosComponent } from './components/principios/principios.component';
 import { PruebasAvanzadasComponent } from './components/pruebas-avanzadas/pruebas-avanzadas.component';
 import { PruebasComponent } from './components/pruebas/pruebas.component';
 import { RefactorizacionComponent } from './components/refactorizacion/refactorizacion.component';
@@ -28,24 +20,25 @@ import { SqlNosqlComponent } from './components/sql-nosql/sql-nosql.component';
 import { UmlComponent } from './components/uml/uml.component';
 import { VersionamientoComponent } from './components/versionamiento/versionamiento.component';
 import { WebComponent } from './components/web/web.component';
+import { PrincipiosModule } from './components/principios/principios.module';
 
 const routes: Routes = [
 
   { path: 'apis-terms', loadChildren: () => import('./components/apis-terms/apis-terms.module').then(m => m.ApisTermsModule), title: APIS_KEY  },
   { path: 'cd-ci-infraestructura', loadChildren: () => import('./components/cd-ci/cd-ci.module').then(m => m.CdCiModule), title: CD_CI_KEY },
-  { path: 'neuro-marketing', component: NeuroMarketingComponent, title: NEURO_MARKETING_KEY },
+  { path: 'neuro-marketing', loadChildren: () => import('./components/neuro-marketing/neuro-marketing.module').then(m => m.NeuroMarketingModule), title: NEURO_MARKETING_KEY },
   { path: 'hardware', loadChildren: () => import('./components/hardware/hardware.module').then(m => m.HardwareModule), title: HARDWARE_KEY },
   { path: 'leyes', loadChildren: () => import('./components/leyes/leyes.module').then(m => m.LeyesModule), title: LEYES_KEY },
   { path: 'meta-estructuras', loadChildren: () => import('./components/meta-estructura/meta-estructura.module').then(m => m.MetaEstructuraModule), title: ESTRUCTURAS_KEY },
   { path: 'testing-avanzado', component: PruebasAvanzadasComponent, title: TESTING_ADVANCED_KEY },
   { path: 'calidad', loadChildren: () => import('./components/calidad/calidad.module').then(m => m.CalidadModule), title: CALIDAD_KEY },
-  { path: 'personas', component: PersonasComponent, title: PERSONAS_KEY },
-  { path: 'nube', component: NubeComponent, title: NUBE_KEY },
+  { path: 'personas', loadChildren: () => import('./components/personas/personas.module').then(m => m.PersonasModule), title: PERSONAS_KEY },
+  { path: 'nube', loadChildren: () => import('./components/nube/nube.module').then(m => m.NubeModule), title: NUBE_KEY },
   { path: 'glosario', component: GlosarioComponent, title: 'Glosario' },
   { path: 'fuentes', loadChildren: () => import('./components/fuentes/fuentes.module').then(m => m.FuentesModule), title: 'Fuentes' },
   { path: 'metacaracteristicas', loadChildren: () => import('./components/meta-caracteristicas/meta-caracteristicas.module').then(m => m.MetaCaracteristicasModule), title: CARACTERISTICAS_KEY },
   { path: 'smells-codes', component: SmellsCodesComponent, title: SMELL_CODES_KEY },
-  { path: 'poo', component: PooComponent, title: POO_KEY },
+  { path: 'poo', loadChildren: () => import('./components/poo/poo.module').then(m => m.POOModule), title: POO_KEY },
   { path: 'contenedores', loadChildren: () => import('./components/contenedores/contenedores.module').then(m => m.ContenedoresModule), title: CONTENEDORES_KEY },
   { path: 'analisis', loadChildren: () => import('./components/analisis/analisis.module').then(m => m.AnalisisModule), title: ANALISIS_KEY },
   { path: 'seguridad', component: SeguridadComponent, title: SEGURIDAD_KEY },
@@ -61,11 +54,11 @@ const routes: Routes = [
   { path: 'compilacion', loadChildren: () => import('./components/compilacion/compilacion.module').then(m => m.CompilacionModule), title: COMPILACION_KEY },
   { path: 'bases-de-datos', component: SqlNosqlComponent, title: DATA_BASES_KEY },
   { path: 'bd-avanzado', component: SqlNosqlAdvancedComponent, title: DATA_BASES_ADVANCED_KEY },
-  { path: 'principios', component: PrincipiosComponent, title: PRINCIPIOS_KEY },
+  { path: 'principios', loadChildren: () => import('./components/principios/principios.module').then(m => m.PrincipiosModule), title: PRINCIPIOS_KEY },
   { path: 'refactorizacion', component: RefactorizacionComponent, title: REFACTORIZACION_KEY },
-  { path: 'patrones', component: PatronesComponent, title: PATRONES_KEY },
-  { path: 'paradigmas', component: ParadigmasComponent, title: PARADIGMAS_KEY },
-  { path: 'otros', component: OtrosComponent, title: OTROS_KEY },
+  { path: 'patrones', loadChildren: () => import('./components/patrones/patrones.module').then(m => m.PatronesModule), title: PATRONES_KEY },
+  { path: 'paradigmas', loadChildren: () => import('./components/paradigmas/paradigmas.module').then(m => m.ParadigmasModule), title: PARADIGMAS_KEY },
+  { path: 'otros', loadChildren: () => import('./components/otros/otros.module').then(m => m.OtrosModule), title: OTROS_KEY },
   { path: 'metodologias', loadChildren: () => import('./components/metodologias/metodologias.module').then(m => m.MetodologiasModule), title: METODOLOGIAS_KEY },
   { path: 'malas-practicas', loadChildren: () => import('./components/malas-practicas/malas-practicas.module').then(m => m.MalasPracticasModule), title: MALAS_PRACTICAS_KEY },
   { path: 'frameworks', loadChildren: () => import('./components/frameworks/frameworks.module').then(m => m.FrameworksModule), title: FRAMEWORKS_KEY },
