@@ -88,7 +88,7 @@ export const ARQUITECTURAS_REF = new Map<string, Referencia>([
     ['arquitecturasLimpias', new Referencia('https://www.genbeta.com/desarrollo/principios-de-una-arquitectura-limpia-mantenible-y-testeable', 'Arquitecturas Limpias', ARQUITECTURAS_KEY, 'Limpias')],
     ['capas', new Referencia('https://geeks.ms/jkpelaez/2009/05/30/arquitectura-basada-en-capas/', 'Arquitectura a Capas', ARQUITECTURAS_KEY, 'Capas')],
     ['cliente', new Referencia('https://desarrolloweb.com/articulos/arquitectura-cliente-servidor.html', 'Arquitectura Cliente-Servidor', ARQUITECTURAS_KEY, 'Cliente Servidor')],
-    ['microServiciosFundamentals', new Referencia('https://medium.com/@kumuthini.program/micro-services-fundamentals-dc0fc369d75e', 'Bases de Micro Servicios', ARQUITECTURAS_KEY, 'Bases, Microservicios')],
+    ['microServiciosFundamentals', new Referencia('https://medium.com/@kumuthini.program/micro-services-fundamentals-dc0fc369d75e', 'Bases de Micro Servicios', ARQUITECTURAS_KEY, 'Bases de Microservicios')],
     ['servicios', new Referencia('https://aws.amazon.com/es/microservices/', 'MicroServicios', ARQUITECTURAS_KEY, 'Microservicios')],
     ['hexagonal', new Referencia('https://medium.com/@edusalguero/arquitectura-hexagonal-59834bb44b7f', 'Hexagonal', ARQUITECTURAS_KEY, 'Hexagonal')],
     ['noHexagonal', new Referencia('https://javiervelezreyes.com/ni-nueva-ni-arquitectura-ni-hexagonal/', 'Ni Nueva, Ni Hexagonal', ARQUITECTURAS_KEY, 'Ni Nueva, Ni hexagonal')],
@@ -98,6 +98,7 @@ export const ARQUITECTURAS_REF = new Map<string, Referencia>([
     ['monolitos', new Referencia('https://www.paradigmadigital.com/techbiz/microservicios-vs-microlitos-vs-monolitos-ventajas-desventajas/', 'Monolitos VS Microservicios', ARQUITECTURAS_KEY, 'Monolitos')],
     ['stylesArchitecture1', new Referencia('https://hdnmetatech.com/news/our-press/detail/introduction-to-architecture-styles-and-patterns-as-a-blueprint-for-designing-a-system', 'Estilos #1', ARQUITECTURAS_KEY, 'Estilos & Patrones #1')],
     ['stylesArchitecture2', new Referencia('https://hdnmetatech.com/news/our-press/detail/introduction-to-architecture-styles-and-patterns-as-a-blueprint-for-designing-a-system', 'Estilos #2', ARQUITECTURAS_KEY, 'Estilos & Patrones #2')],
+    ['monolitosModulares', new Referencia('https://levelup.gitconnected.com/architecture-style-modulith-vs-microservices-90c7c75713db', 'Monolitos Modulares', ARQUITECTURAS_KEY, 'Monolitos Modulares')],
 ]);
 
 export const BUENAS_PRACTICAS_KEY = 'Buenas-Practicas';
