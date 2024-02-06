@@ -643,6 +643,7 @@ export const NEURO_MARKETING_REF = new Map<string, Referencia>([
     ['neuroMarketing', new Referencia('https://rockcontent.com/es/blog/neuromarketing/', 'Neuro Marketing', NEURO_MARKETING_KEY, 'Neuro Marketing')],
     ['semanticaPragmatica', new Referencia('https://creatividadpersuasiva.cl/semiosis-sintaxis-semantica-y-pragmatica/#coming', 'Semantica & Pragmatica', NEURO_MARKETING_KEY, 'Semantica & Pragmatica')],
     ['pnl', new Referencia('https://psicologiaymente.com/coach/principios-pnl-programacion-neurolinguistica', 'Programación Neurolinguistica', NEURO_MARKETING_KEY, 'Neurolinguistica')],
+    ['jobsToBeDone', new Referencia('https://rockcontent.com/es/blog/jobs-to-be-done/', 'Trabajos por acabar', NEURO_MARKETING_KEY, 'Trabajos por acabar')],
 ]);
 
 export const CD_CI_KEY = 'CD/CI-Infraestructura';

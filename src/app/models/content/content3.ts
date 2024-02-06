@@ -1553,6 +1553,17 @@ export const NEURO_MARKETING =
                 '<strong> - La comunicación pueder sesgarse:</strong> Por eso es necesario establecer pautas claras entre ambas partes ',
                 '<strong> - Todo fracaso es una oportunidad:</strong> Estos deben verse como medidas que permiten la auto superación ',
                 '<strong> - Si algo no funciona, probar de otra manera:</strong> Si algo no funciona pero siempre intentas lo mismo, no esperes resultados diferentes ',
+            ]),
+        new Item('jobsToBeDone',
+            [
+                '- Es una metodologia desarrollada para conocer mejor a tu grupo de consumidores',
+                '- Las personas no suelen comprar ropar para vestirse, al menos no exclusivamente por esta razon, pueden buscar autoestima, estatus, comodidad, etc.. ',
+                '- Entender estas motivaciones es una tarea importante del marketing, para contextualizar las acciones y definir comportamientos del mercado ',
+                '- El punto de partida es identificar que es lo que el consumidor quiere resolver en su vida, y a partir de ahi como puedes ayudarlo a resolverlo ',
+                '- Con este cambio de perspectiva se busca que el marketing sea más eficiente y que la innovación sea más previsible y rentable ',
+                '- Aca es importante enfocar lo que el cliente quiere resolver y no lo que el cliente quiere comprar',
+                '- Muchas de las razones suelen tener una dimensión funcional, social o emocional, y tener un mercado el cual puede ser mejor explotado ',
+                '- Para esto la <em>segmetación</em>, <em>Buyer persona</em> y <em>Big data</em> suelen ser herramientas utiles',
             ])
     ];
 
