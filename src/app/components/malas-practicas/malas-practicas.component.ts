@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MALAS_PRACTICAS } from 'src/app/models/content/content2';
-import { AGILES_KEY, BUENAS_PRACTICAS_KEY, CONOCIMIENTO_EMPIRICO_KEY, LinkReferencia, MALAS_PRACTICAS_REF, METODOLOGIAS_KEY } 
+import { AGILES_KEY, ARQUITECTURAS_KEY, BUENAS_PRACTICAS_KEY, CONOCIMIENTO_EMPIRICO_KEY, LinkReferencia, MALAS_PRACTICAS_REF, METODOLOGIAS_KEY } 
 from 'src/app/models/linkReferencia';
 
 @Component({
@@ -24,6 +24,7 @@ export class MalasPracticasComponent implements OnInit {
     const routes = new LinkReferencia().routesAndSections;
     this.relatedSections.set(CONOCIMIENTO_EMPIRICO_KEY, routes.get(CONOCIMIENTO_EMPIRICO_KEY)!);
     this.relatedSections.set(BUENAS_PRACTICAS_KEY,      routes.get(BUENAS_PRACTICAS_KEY)!);
+    this.relatedSections.set(ARQUITECTURAS_KEY,         routes.get(ARQUITECTURAS_KEY)!);
     this.relatedSections.set(METODOLOGIAS_KEY,          routes.get(METODOLOGIAS_KEY)!);
     this.relatedSections.set(AGILES_KEY,                routes.get(AGILES_KEY)!);
   }

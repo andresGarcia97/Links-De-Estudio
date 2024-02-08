@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { NEURO_MARKETING_KEY, LinkReferencia } from 'src/app/models/linkReferencia';
+import { MALAS_PRACTICAS_KEY, LinkReferencia } from 'src/app/models/linkReferencia';
 
-const route = new LinkReferencia().routesAndSections.get(NEURO_MARKETING_KEY);
+const route = new LinkReferencia().routesAndSections.get(MALAS_PRACTICAS_KEY);
 
 @Component({
   selector: 'app-home',
@@ -17,7 +17,7 @@ export class HomeComponent {
   }
 
   public routeToLastItem(): void {
-    const newItem = 'jobsToBeDone';
+    const newItem = 'atipatronesArquitecturas';
     this.router.navigateByUrl(`/${route}`, { state: { newItem } })
   }
 
