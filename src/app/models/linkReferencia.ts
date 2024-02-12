@@ -363,6 +363,7 @@ export const OTROS_REF = new Map<string, Referencia>([
     ['ingenieriaInversa', new Referencia('https://ingenierosasesores.com/actualidad/ingenieria-inversa-concepto-aplicaciones/', 'Ingenieria Inversa', OTROS_KEY, 'Ingenieria Inversa')],
     ['dsl', new Referencia('https://www.jetbrains.com/es-es/mps/concepts/domain-specific-languages/', 'Lenguaje de Dominio Especifico', OTROS_KEY, 'DSL')],
     ['reglasInferencia', new Referencia('https://repository.unad.edu.co/reproductor-ova/10596_31590/index.html', 'Reglas de inferencia', OTROS_KEY, 'Reglas de Inferencia')],
+    ['etl&elt', new Referencia('https://aws.amazon.com/es/compare/the-difference-between-etl-and-elt/#:~:text=El%20enfoque%20de%20ETL%20utiliza,y%20los%20requisitos%20de%20an%C3%A1lisis', 'ETL & ELT', OTROS_KEY, 'ETL & ELT')],
 ]);
 
 export const PARADIGMAS_KEY = 'Paradigmas';

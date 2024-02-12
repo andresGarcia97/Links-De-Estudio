@@ -60,7 +60,8 @@ export const UTILS = new Map([
     ['bundlephobia', { titulo: 'Bundle Phobia', referencia: 'https://bundlephobia.com/' }],
     ['wizardZines', { titulo: 'Trucos & Comics', referencia: 'https://wizardzines.com/' }],
     ['apisNavegador', { titulo: 'APIs del navegador', referencia: 'https://developer.mozilla.org/es/docs/Learn/JavaScript/Client-side_web_APIs/Introduction#apis_de_navegador_m%C3%A1s_comunes' }],
-    ['eventDrivenArquitectures', { titulo: 'Event Driven Visuals', referencia: 'https://serverlessland.com/event-driven-architecture/visuals/' }]
+    ['eventDrivenArquitectures', { titulo: 'Event Driven Visuals', referencia: 'https://serverlessland.com/event-driven-architecture/visuals/' }],
+    ['softwareArquitectureTools', { titulo: 'Diagramas', referencia: 'https://medium.com/@techworldwithmilan/software-architecture-as-code-tools-331a11222da0' }]
 ]);
 
 export const TESTING = new Map([

@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { MALAS_PRACTICAS_KEY, LinkReferencia } from 'src/app/models/linkReferencia';
+import { OTROS_KEY, LinkReferencia } from 'src/app/models/linkReferencia';
 
-const route = new LinkReferencia().routesAndSections.get(MALAS_PRACTICAS_KEY);
+const route = new LinkReferencia().routesAndSections.get(OTROS_KEY);
 
 @Component({
   selector: 'app-home',
@@ -17,7 +17,7 @@ export class HomeComponent {
   }
 
   public routeToLastItem(): void {
-    const newItem = 'atipatronesArquitecturas';
+    const newItem = 'etl&elt';
     this.router.navigateByUrl(`/${route}`, { state: { newItem } })
   }
 
