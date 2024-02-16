@@ -33,7 +33,7 @@ export class LinkReferencia {
         [POO_KEY, 'poo'],                                     [TESTING_KEY, 'testing'],
         [TESTING_ADVANCED_KEY, 'testing-avanzado'],           [REFACTORIZACION_KEY, 'refactorizacion'],
         [REQUISITOS_KEY, 'requisitos'],                       [PRINCIPIOS_KEY, 'principios'],
-        [SEGURIDAD_KEY, 'seguridad'],                         [SMELL_CODES_KEY, 'smells-codes'],
+        [SECURITY_KEY, 'seguridad'],                          [SMELL_CODES_KEY, 'smells-codes'],
         [DATA_BASES_KEY, 'bases-de-datos'],                   [UML_KEY, 'uml'],
         [VERSIONAMIENTO_KEY, 'versionamiento'],               [HARDWARE_KEY, 'hardware'],
         [WEB_KEY, 'web'],                                     [NEURO_MARKETING_KEY, 'neuro-marketing'],
@@ -511,25 +511,26 @@ export const PRINCIPIOS_REF = new Map<string, Referencia>([
     ['poc', new Referencia('https://geeksprogramming.com/key-principles-in-software-and-acronyms/', 'Prueba de Concepto', PRINCIPIOS_KEY, 'POC')],
 ]);
 
-export const SEGURIDAD_KEY = 'Seguridad';
+export const SECURITY_KEY = 'Seguridad';
 export const SEGURIDAD_REF = new Map<string, Referencia>([
-    ['firewall', new Referencia('https://idgrup.com/firewall-que-es-y-como-funciona/#:~:text=Un%20firewall%2C%20tambi%C3%A9n%20llamado%20cortafuegos,ordenadores%20de%20una%20misma%20red', 'Firewall', SEGURIDAD_KEY, 'Firewall')],
-    ['protocolos', new Referencia('https://www.websecurity.digicert.com/es/es/security-topics/what-is-ssl-tls-https', 'SSL, TSL, HTTPS', SEGURIDAD_KEY, 'SSL, TSL, HTTPS')],
-    ['proxy', new Referencia('https://www.welivesecurity.com/la-es/2020/01/02/que-es-proxy-para-que-sirve/', 'Proxy', SEGURIDAD_KEY, 'Proxy')],
-    ['ciberSeguridad', new Referencia('https://latam.kaspersky.com/resource-center/definitions/what-is-cyber-security', 'Ciberseguridad y otras amenazas', SEGURIDAD_KEY, 'Ciberseguridad')],
-    ['cia', new Referencia('https://searchdatacenter.techtarget.com/es/opinion/Que-es-la-triada-de-la-CIA', 'Confidencialidad-Integridad-Accesibilidad ', SEGURIDAD_KEY, 'CIA')],
-    ['noRepudio', new Referencia('https://www.unir.net/ingenieria/revista/no-repudio-seguridad-informatica/', 'No repudio', SEGURIDAD_KEY, 'NO Repudio')],
-    ['matrizDeRiesgo', new Referencia('https://www.protek.com.py/novedades/objetivos-de-una-matriz-de-riesgos/', 'Matriz de Riesgo', SEGURIDAD_KEY, 'Matriz de Riesgo')],
-    ['condicionDeCarrera', new Referencia('https://ciberseguridad.com/amenzas/vulnerabilidades/condicion-de-carrera/', 'Condición de Carrera', SEGURIDAD_KEY, 'Carrera')],
-    ['honeypot', new Referencia('https://latam.kaspersky.com/resource-center/threats/what-is-a-honeypot', 'Honetypot', SEGURIDAD_KEY, 'Honeypot')],
-    ['zeroDayExploit', new Referencia('https://latam.kaspersky.com/resource-center/definitions/zero-day-exploit', 'Zero Day Exploit', SEGURIDAD_KEY, 'Zero Day Exploit')],
-    ['pentest', new Referencia('https://www.hiberus.com/crecemos-contigo/pentesting-owasp-fases-metodologia/', 'Testing de intrusión', SEGURIDAD_KEY, 'Test de Intrusión')],
-    ['owaspTop', new Referencia('https://owasp.org/Top10/', 'OWASP Top 10', SEGURIDAD_KEY, 'OWASP Top 10')],
-    ['stride', new Referencia('https://www.softwaresecured.com/stride-threat-modeling/', 'STRIDE', SEGURIDAD_KEY, 'STRIDE')],
-    ['ciam', new Referencia('https://auth0.com/blog/why-do-you-need-ciam/', 'CIAM', SEGURIDAD_KEY, 'CIAM')],
-    ['lateralChanel', new Referencia('https://ciberseguridad.com/amenzas/ataque-canal-lateral/', 'Ataques de canal lateral', SEGURIDAD_KEY, 'Ataques de canal lateral')],
-    ['csp', new Referencia('https://auth0.com/blog/from-zero-to-hero-with-csp/', 'Content Security Police', SEGURIDAD_KEY, 'Content Security Police')],
-    ['csrf', new Referencia('https://www.welivesecurity.com/la-es/2015/04/21/vulnerabilidad-cross-site-request-forgery-csrf/', 'Cross Site Request Forgery', SEGURIDAD_KEY, 'CSRF')],
+    ['firewall', new Referencia('https://idgrup.com/firewall-que-es-y-como-funciona/#:~:text=Un%20firewall%2C%20tambi%C3%A9n%20llamado%20cortafuegos,ordenadores%20de%20una%20misma%20red', 'Firewall', SECURITY_KEY, 'Firewall')],
+    ['protocolos', new Referencia('https://www.websecurity.digicert.com/es/es/security-topics/what-is-ssl-tls-https', 'SSL, TSL, HTTPS', SECURITY_KEY, 'SSL, TSL, HTTPS')],
+    ['proxy', new Referencia('https://www.welivesecurity.com/la-es/2020/01/02/que-es-proxy-para-que-sirve/', 'Proxy', SECURITY_KEY, 'Proxy')],
+    ['ciberSeguridad', new Referencia('https://latam.kaspersky.com/resource-center/definitions/what-is-cyber-security', 'Ciberseguridad y otras amenazas', SECURITY_KEY, 'Ciberseguridad')],
+    ['cia', new Referencia('https://searchdatacenter.techtarget.com/es/opinion/Que-es-la-triada-de-la-CIA', 'Confidencialidad-Integridad-Accesibilidad ', SECURITY_KEY, 'CIA')],
+    ['noRepudio', new Referencia('https://www.unir.net/ingenieria/revista/no-repudio-seguridad-informatica/', 'No repudio', SECURITY_KEY, 'NO Repudio')],
+    ['matrizDeRiesgo', new Referencia('https://www.protek.com.py/novedades/objetivos-de-una-matriz-de-riesgos/', 'Matriz de Riesgo', SECURITY_KEY, 'Matriz de Riesgo')],
+    ['condicionDeCarrera', new Referencia('https://ciberseguridad.com/amenzas/vulnerabilidades/condicion-de-carrera/', 'Condición de Carrera', SECURITY_KEY, 'Carrera')],
+    ['honeypot', new Referencia('https://latam.kaspersky.com/resource-center/threats/what-is-a-honeypot', 'Honetypot', SECURITY_KEY, 'Honeypot')],
+    ['zeroDayExploit', new Referencia('https://latam.kaspersky.com/resource-center/definitions/zero-day-exploit', 'Zero Day Exploit', SECURITY_KEY, 'Zero Day Exploit')],
+    ['pentest', new Referencia('https://www.hiberus.com/crecemos-contigo/pentesting-owasp-fases-metodologia/', 'Testing de intrusión', SECURITY_KEY, 'Test de Intrusión')],
+    ['owaspTop', new Referencia('https://owasp.org/Top10/', 'OWASP Top 10', SECURITY_KEY, 'OWASP Top 10')],
+    ['stride', new Referencia('https://www.softwaresecured.com/stride-threat-modeling/', 'STRIDE', SECURITY_KEY, 'STRIDE')],
+    ['ciam', new Referencia('https://auth0.com/blog/why-do-you-need-ciam/', 'CIAM', SECURITY_KEY, 'CIAM')],
+    ['lateralChanel', new Referencia('https://ciberseguridad.com/amenzas/ataque-canal-lateral/', 'Ataques de canal lateral', SECURITY_KEY, 'Ataques de canal lateral')],
+    ['csp', new Referencia('https://auth0.com/blog/from-zero-to-hero-with-csp/', 'Content Security Police', SECURITY_KEY, 'Content Security Police')],
+    ['csrf', new Referencia('https://www.welivesecurity.com/la-es/2015/04/21/vulnerabilidad-cross-site-request-forgery-csrf/', 'Cross Site Request Forgery', SECURITY_KEY, 'CSRF')],
+    ['restApiAuth', new Referencia('https://blog.bytebytego.com/p/ep91-rest-api-authentication-methods', 'Autenticación en APIs REST', SECURITY_KEY, 'REST API Authentication')],
 ]);
 
 export const SMELL_CODES_KEY = 'Smell-Codes';

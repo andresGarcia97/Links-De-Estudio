@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { WEB } from 'src/app/models/content/content1';
-import { CD_CI_KEY, FRAMEWORKS_KEY, LinkReferencia, NUBE_KEY, SEGURIDAD_KEY, WEB_REF } from 'src/app/models/linkReferencia';
+import { CD_CI_KEY, FRAMEWORKS_KEY, LinkReferencia, NUBE_KEY, SECURITY_KEY, WEB_REF } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-web',
@@ -22,7 +22,7 @@ export class WebComponent implements OnInit {
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
     this.relatedSections.set(FRAMEWORKS_KEY, routes.get(FRAMEWORKS_KEY)!);
-    this.relatedSections.set(SEGURIDAD_KEY,  routes.get(SEGURIDAD_KEY)!);
+    this.relatedSections.set(SECURITY_KEY,   routes.get(SECURITY_KEY)!);
     this.relatedSections.set(CD_CI_KEY,      routes.get(CD_CI_KEY)!);
     this.relatedSections.set(NUBE_KEY,       routes.get(NUBE_KEY)!);
   }

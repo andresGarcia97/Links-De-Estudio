@@ -4,7 +4,7 @@ import {
   AGILES_KEY, ANALISIS_KEY, APIS_KEY, ARQUITECTURAS_KEY, BUENAS_PRACTICAS_KEY, CALIDAD_KEY, CARACTERISTICAS_KEY, CD_CI_KEY, COMPILACION_KEY,
   CONOCIMIENTO_EMPIRICO_KEY, CONTENEDORES_KEY, DATA_BASES_ADVANCED_KEY, DATA_BASES_KEY, ESTRATEGIAS_DESARROLLO_KEY, ESTRUCTURAS_KEY, FRAMEWORKS_KEY,
   GIT_KEY, HARDWARE_KEY, LEYES_KEY, MALAS_PRACTICAS_KEY, METODOLOGIAS_KEY, NEURO_MARKETING_KEY, NUBE_KEY, OTROS_KEY,
-  PARADIGMAS_KEY, PATRONES_KEY, PERSONAS_KEY, POO_KEY, PRINCIPIOS_KEY, REFACTORIZACION_KEY, REQUISITOS_KEY, SEGURIDAD_KEY,
+  PARADIGMAS_KEY, PATRONES_KEY, PERSONAS_KEY, POO_KEY, PRINCIPIOS_KEY, REFACTORIZACION_KEY, REQUISITOS_KEY, SECURITY_KEY,
   SMELL_CODES_KEY, TESTING_ADVANCED_KEY, TESTING_KEY, UML_KEY, USER_HISTORIES_KEY, VERSIONAMIENTO_KEY, WEB_KEY
 } from 'src/app/models/linkReferencia';
 import { GlosarioComponent } from './components/glosario/glosario.component';
@@ -29,7 +29,7 @@ const routes: Routes = [
   { path: 'poo', loadChildren: () => import('./components/poo/poo.module').then(m => m.POOModule), title: POO_KEY },
   { path: 'contenedores', loadChildren: () => import('./components/contenedores/contenedores.module').then(m => m.ContenedoresModule), title: CONTENEDORES_KEY },
   { path: 'analisis', loadChildren: () => import('./components/analisis/analisis.module').then(m => m.AnalisisModule), title: ANALISIS_KEY },
-  { path: 'seguridad', loadChildren: () => import('./components/seguridad/seguridad.module').then(m => m.SeguridadModule), title: SEGURIDAD_KEY },
+  { path: 'seguridad', loadChildren: () => import('./components/seguridad/seguridad.module').then(m => m.SeguridadModule), title: SECURITY_KEY },
   { path: 'conocimiento-empirico', loadChildren: () => import('./components/conocimientos-empiricos/conocimientos-empiricos.module').then(m => m.ConocimientosEmpiricosModule), title: CONOCIMIENTO_EMPIRICO_KEY },
   { path: 'web', loadChildren: () => import('./components/web/web.module').then(m => m.WebModule), title: WEB_KEY },
   { path: 'git', loadChildren: () => import('./components/git/git.module').then(m => m.GitModule), title: GIT_KEY },

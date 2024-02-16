@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SEGURIDAD } from 'src/app/models/content/content3';
-import { LinkReferencia, NUBE_KEY, REQUISITOS_KEY, SEGURIDAD_REF, WEB_KEY } from 'src/app/models/linkReferencia';
+import { APIS_KEY, LinkReferencia, NUBE_KEY, REQUISITOS_KEY, SEGURIDAD_REF, WEB_KEY } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-seguridad',
@@ -23,6 +23,7 @@ export class SeguridadComponent implements OnInit {
     const routes = new LinkReferencia().routesAndSections;
     this.relatedSections.set(REQUISITOS_KEY, routes.get(REQUISITOS_KEY)!);
     this.relatedSections.set(NUBE_KEY,       routes.get(NUBE_KEY)!);
+    this.relatedSections.set(APIS_KEY,       routes.get(APIS_KEY)!);
     this.relatedSections.set(WEB_KEY,        routes.get(WEB_KEY)!);
   }
 

@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { OTROS_KEY, LinkReferencia } from 'src/app/models/linkReferencia';
+import { SECURITY_KEY, LinkReferencia } from 'src/app/models/linkReferencia';
 
-const route = new LinkReferencia().routesAndSections.get(OTROS_KEY);
+const route = new LinkReferencia().routesAndSections.get(SECURITY_KEY);
 
 @Component({
   selector: 'app-home',
@@ -17,7 +17,7 @@ export class HomeComponent {
   }
 
   public routeToLastItem(): void {
-    const newItem = 'etl&elt';
+    const newItem = 'restApiAuth';
     this.router.navigateByUrl(`/${route}`, { state: { newItem } })
   }
 

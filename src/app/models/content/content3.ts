@@ -1163,6 +1163,22 @@ export const SEGURIDAD =
                 ' - Utilizar complementos para bloquear la ejecución de scripts, para que los formularios que sean enviados por el metodo POST, ',
                 '  - deban ser autorizados previamente por el usuario y no se envien automaticamente',
             ]),
+        new Item('restApiAuth',
+            [
+                '<strong>Autenticación Basica:</strong> Implica enviar un usuario y contraseña en cada solicitud, y no necesariamente han de estar cifrados ',
+                ' - Es ideal en aplicaciones simples donde la seguridad y el cifrado de los datos no es importante, o se tenga una conexión segura ',
+                '',
+                '<strong> Autenticación con Token:</strong> Utiliza tokens generados con <em>JWT</em> que se intercambian entre el cliente y el servidor',
+                ' - Ofrece una mejora en la seguridad al evitar enviar constatemente las credenciales en cada petición, Ideal para sistemas más seguros y escalables ',
+                '',
+                '<strong> Autenticación OAuth:</strong> Permite el acceso a terceros a los recursos del usuario, sin revelar credencial alguna, mediante tokens de acceso ',
+                ' - Ideal cuando se requiere el acceso controlado a los recursos y los usuarios se pueden obtener/manejar mediante servicios de terceros ',
+                '',
+                '<strong> Api Key Autenticación:</strong> Asigna claves unicas a usuarios y/o aplicaciones, un metodo simple y que carece de caracteristicas anteriores ',
+                ' - Ideal para un control de acceso sencillo, en entornos poco sensibles o manejar permisos por usuarios más laxos ',
+                '',
+                '- Existen otros metodos, pero estos de los más populares y usados que hay '
+            ])
     ];
 
 export const UML =
