@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { SECURITY_KEY, LinkReferencia } from 'src/app/models/linkReferencia';
+import { APIS_KEY, LinkReferencia } from 'src/app/models/linkReferencia';
 
-const route = new LinkReferencia().routesAndSections.get(SECURITY_KEY);
+const route = new LinkReferencia().routesAndSections.get(APIS_KEY);
 
 @Component({
   selector: 'app-home',
@@ -17,7 +17,7 @@ export class HomeComponent {
   }
 
   public routeToLastItem(): void {
-    const newItem = 'restApiAuth';
+    const newItem = 'apiIdempotencia';
     this.router.navigateByUrl(`/${route}`, { state: { newItem } })
   }
 

@@ -353,6 +353,7 @@ export const APIS_REF = new Map<string, Referencia>([
     ['arquitecturalApiStyles', new Referencia('https://www.linkedin.com/feed/update/urn:li:activity:7095365669969350656/', 'Estilos de Arquitectura API', APIS_KEY, 'Estilos de Arquitectura API')],
     ['uri', new Referencia('https://www.techtarget.com/whatis/definition/URI-Uniform-Resource-Identifier', 'Uniform Resource Identifier', APIS_KEY, 'URI')],
     ['apiTesting', new Referencia('https://blog.bytebytego.com/p/ep83-explaining-9-types-of-api-testing#%C2%A7explaining-types-of-api-testing', 'API Testing', APIS_KEY, 'Testing in APIs')],
+    ['apiIdempotencia', new Referencia('https://blog.bitsrc.io/design-an-idempotent-api-in-2024-d4a3cf8d8bf2', 'APIs Idempotentes', APIS_KEY, 'Idempotencia')],
 ]);
 
 export const OTROS_KEY = 'Otros';

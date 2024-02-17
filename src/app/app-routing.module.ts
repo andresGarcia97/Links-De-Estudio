@@ -12,7 +12,7 @@ import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
 
-  { path: 'apis-terms', loadChildren: () => import('./components/apis-terms/apis-terms.module').then(m => m.ApisTermsModule), title: APIS_KEY  },
+  { path: 'apis', loadChildren: () => import('./components/apis-terms/apis-terms.module').then(m => m.ApisTermsModule), title: APIS_KEY  },
   { path: 'cd-ci-infraestructura', loadChildren: () => import('./components/cd-ci/cd-ci.module').then(m => m.CdCiModule), title: CD_CI_KEY },
   { path: 'neuro-marketing', loadChildren: () => import('./components/neuro-marketing/neuro-marketing.module').then(m => m.NeuroMarketingModule), title: NEURO_MARKETING_KEY },
   { path: 'hardware', loadChildren: () => import('./components/hardware/hardware.module').then(m => m.HardwareModule), title: HARDWARE_KEY },
