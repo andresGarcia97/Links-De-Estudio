@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { META_ESTRUCTURAS } from 'src/app/models/content/content1';
-import { CARACTERISTICAS_KEY, LinkReferencia, META_ESTRUCTURAS_REF, PATRONES_KEY } from 'src/app/models/linkReferencia';
+import { CARACTERISTICAS_KEY, COMPILACION_KEY, LinkReferencia, META_ESTRUCTURAS_REF, PATRONES_KEY } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-meta-estructura',
@@ -22,6 +22,7 @@ export class MetaEstructuraComponent implements OnInit {
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
     this.relatedSections.set(CARACTERISTICAS_KEY, routes.get(CARACTERISTICAS_KEY)!);
+    this.relatedSections.set(COMPILACION_KEY,     routes.get(COMPILACION_KEY)!);
     this.relatedSections.set(PATRONES_KEY,        routes.get(PATRONES_KEY)!);
   }
 
