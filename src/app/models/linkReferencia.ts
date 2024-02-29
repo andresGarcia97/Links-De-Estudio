@@ -155,6 +155,8 @@ export const COMPILACION_REF = new Map<string, Referencia>([
     ['verbosity', new Referencia('https://softwareengineering.stackexchange.com/questions/141175/why-is-verbosity-bad-for-a-programming-language', 'Verbosidad', COMPILACION_KEY, 'Verbosidad')],
     ['tipoLenguajeProposito', new Referencia('https://ed.team/blog/como-se-clasifican-los-lenguajes-de-programacion', 'Tipos de lenguajes por proposito', COMPILACION_KEY, 'Proposito')],
     ['automatas', new Referencia('https://medium.com/@maniakhitoccori/qu%C3%A9-es-un-aut%C3%B3mata-fbf309138755', 'Automatas', COMPILACION_KEY, 'Automatas')],
+    ['estructuraCompilador', new Referencia('https://vicente-aguilera-perez.medium.com/estructura-general-de-un-compilador-df97892f91c3', 'Estructura de un compilador I', COMPILACION_KEY, 'Estructura general I')],
+    ['elementosCompilador', new Referencia('https://vicente-aguilera-perez.medium.com/estructura-general-de-un-compilador-df97892f91c3', 'Estructura de un compilador II', COMPILACION_KEY, 'Estructura general II')],
 ]);
 
 export const CONOCIMIENTO_EMPIRICO_KEY = 'Empirico';

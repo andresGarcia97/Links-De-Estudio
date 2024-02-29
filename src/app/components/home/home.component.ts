@@ -17,7 +17,7 @@ export class HomeComponent {
   }
 
   public routeToLastItem(): void {
-    const newItem = 'automatas';
+    const newItem = 'elementosCompilador';
     this.router.navigateByUrl(`/${route}`, { state: { newItem } })
   }
 
