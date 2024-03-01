@@ -381,6 +381,7 @@ export const PARADIGMAS_REF = new Map<string, Referencia>([
     ['aspectos', new Referencia('https://www.baeldung.com/spring-aop', 'Orientación a aspectos', PARADIGMAS_KEY, 'Aspectos')],
     ['logica', new Referencia('https://ferestrepoca.github.io/paradigmas-de-programacion/proglogica/logica_teoria/aplicaciones.html', 'Programación Logica', PARADIGMAS_KEY, 'Logica')],
     ['estructurada', new Referencia('https://informatica.uv.es/iiguia/AED/oldwww/2004_05/AED.Tema.04.pdf', 'Programación Estructurada', PARADIGMAS_KEY, 'Estructurada')],
+    ['paradigmaDatos', new Referencia('https://blog.klipse.tech/dop/2022/06/22/principles-of-dop.html', 'Programación Orientada a Datos', PARADIGMAS_KEY, 'Datos')],
 ]);
 
 export const PATRONES_KEY = 'Patrones';

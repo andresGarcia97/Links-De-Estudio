@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { COMPILACION_KEY, LinkReferencia } from 'src/app/models/linkReferencia';
+import { PARADIGMAS_KEY, LinkReferencia } from 'src/app/models/linkReferencia';
 
-const route = new LinkReferencia().routesAndSections.get(COMPILACION_KEY);
+const route = new LinkReferencia().routesAndSections.get(PARADIGMAS_KEY);
 
 @Component({
   selector: 'app-home',
@@ -17,7 +17,7 @@ export class HomeComponent {
   }
 
   public routeToLastItem(): void {
-    const newItem = 'elementosCompilador';
+    const newItem = 'paradigmaDatos';
     this.router.navigateByUrl(`/${route}`, { state: { newItem } })
   }
 
