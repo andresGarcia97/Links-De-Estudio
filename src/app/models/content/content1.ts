@@ -200,6 +200,15 @@ export const AGILES =
                 '',
                 '<strong>Ley de Brooks:</strong> Agregar más personas, no es garantia de recortar tiempo, contrario a lo que se espera, agregar personal ',
                 ' - a un proyecto atrasado, no garantiza una finalización más rapida, lo atrasara aun más ',
+            ]),
+        new Item('requisitosAgiles',
+            [
+                '- La Prescripción, una de las diversas formas de llamar la intención de adivinar o acotar el futuro',
+                '- Existen 3 leyes que nos recuerdan los problemas de intentar adivinar el futuro, y documentarlo sin siquiera haber empezado ',
+                '',
+                '<strong>Ley de Ziv:</strong> Los requisitos nunca se entienden completamente ',
+                '<strong>Ley de Humphrey:</strong> Los usuarios no saben realmente el software que quieren, hasta que lo ven funcionando ',
+                '<strong>Lema de Wegner:</strong> Un sistema interactivo, nunca podra ser ni especificado ni testeado por completo',
             ])
     ];
 
