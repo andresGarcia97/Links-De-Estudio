@@ -16,7 +16,8 @@ export class Content2 {
         ...METODOLOGIAS,
         ...NUBE,
         ...PATRONES,
-        ...LEYES
+        ...LEYES,
+        ...APIS
     ];
 
 }
@@ -24,7 +25,8 @@ export class Content2 {
 export const PRUEBAS =
     [
         new Item('principios',
-            ['- Las pruebas demuestran la presencia de defectos, por ende entre más pruebas halla mejor ',
+            [
+                '- Las pruebas demuestran la presencia de defectos, por ende entre más pruebas halla mejor ',
                 '- Es improductivo hacer pruebas exhaustivas, ademas de que es casi imposible de hacer ',
                 '- Las pruebas tempranas ayudan a encontrar defectos con prontitud, y a su vez reducir tiempo y costos ',
                 '- Agrupar defectos permite que las soluciones sean más especializadas, y las pruebas sean más efectivas ',
@@ -2593,6 +2595,40 @@ export const APIS =
                 ' - requiere alternativas como el uso de tokens idempotentes y su debida implemetación ',
                 ' <strong>Autenticación y Autorización:</strong> Toda solicitud debe ser debidamene autorizada y contar ',
                 ' - con una autenticación previa, sin depender de los datos de sesion y al mismo tiempo ser eficiente ',
+            ]),
+        new Item('restVsMessaging',
+            [
+                '- Los microservicios han llegado para quedarse, ampliamente adoptados debidos a las ventajas que ofrecen',
+                '- Aun asi, para un correcto funcionamiento, deben poder comunicarse entre si, convirtiendo esta forma en un aspecto critico ',
+                '-<em> Martin Fowler</em> defiende lo que el llama <strong>smart endpoints and dumb pipes</strong> para la comunicacion entre microservicios ',
+                '- En el pasado los <em>Enterprise Service Buses</em> dominaban junto a <strong>SOA</strong> donde era comun integrar la logica de integración ',
+                ' - y la transformación de los datos en la infraestructura, convirtiendola en una arquitectura de tipo <strong>smart pipes</strong> y <strong>dumb endpoints</strong>',
+                '',
+                '<strong>REST</strong> como se conoce hoy en dia, fue definida por <em>Roy Fielding</em> en su tesis doctoral',
+                ' - <strong>Architectural Styles and the Design of Network-based Software Architectures</strong>, además de ser parte del proceso de definición de <strong>HTTP</strong> que ',
+                ' - desde entonces es vital para la industria y es una base fundamental del desarrollo moderno de aplicaciones, debido a sus multiples fortalezas: ',
+                '',
+                '<strong>- Solicitud/Respuesta Sincrona:</strong> Este comportamiento es la base del protocolo de red sobre el que esta REST, por lo que practicamente es heredado ',
+                '<strong>- Publico y estandarizado:</strong> Gracias al trabajo del <em>IETF</em> REST y su capa de transporte es interoperable entre todos los lenguajes de programación ',
+                ' - además de contar con multiples herramientas para documentación y el manejo de la seguridad ',
+                '',
+                '- Aun asi, hay escenarios donde no es ideal, o no es posible tener este tipo de comunicación sincrona, por lo que no todo se puede solucionar con Rest',
+                '',
+                '<strong>- Acoplamiento Indeseado:</strong> Con un servicio Rest se asume que un dato es solicitado solamente por el sitio que lo necesita, que sucede cuando otro ',
+                ' - servicio o componente se conecta y necesita los datos, desafiando el proposito de un unico objetivo, y convirtiendose en un orquestador no deseado ',
+                '<strong>- Bloqueos:</strong> Al ser sincrono, cada petición debe esperar la respuesta, mediante un bloqueo, que evita la liberación y reutilización de estos recursos ',
+                '',
+                '<strong>Mensajeria y manejo de eventos</strong> Muchas deficiencias asociadas al sincronismo de Rest, se pueden solucionar al implementar microservicios controlados ',
+                ' - por eventos, esto los hace inheremente asincronicos, asi solamente actuan cuando necesitan publicar o subscribirse a lo que les importa o necesitan ',
+                '',
+                '<strong>- Acoplamiento flexible:</strong> Al usar un patron de publicación/subscripción los servicios no se conocen entre si, por lo que cualquier servicio ',
+                ' - solo debe publicar o subscribirse a lo que le interesa y/o necesita',
+                '<strong>- Sin bloqueos:</strong> Ya no es necesario esperar hasta que se complete la solicitud, ahora se pueden realizar multiples tareas, sin bloquear los recuros, ',
+                ' - dejando espacio para que se puedan hacer más tareas, de la manera más eficiente posible ',
+                '<strong>- Escalable:</strong> A medida que la demanda crece, es fundamental crecer para aumentar la capacidad, por lo que al tener servicios más pequeños, ',
+                ' - estos pueden crece/decrecer, de una manera fiable, rapida y de manera individual, especialmente cuando se detectan cuellos de botella ',
+                '<strong>- Resiliencia y Errores:</strong> Al tener plataformas que garantizan la entrega de mensajes, se reduce la logica al no tener que lidiar con mensajes perdidos ',
+                ' - y la consistencia de los datos, eventualmente se recuperara, al procesar todos los mensajes acumulados, durante el tiempo que habian errores ',
             ])
     ];
 
