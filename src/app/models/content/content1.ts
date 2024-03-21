@@ -868,6 +868,23 @@ export const CALIDAD =
                 '- Combinando ambas metricas se suele lograr una visión global, holistica y equilibrada del rendimiento del desarrollo de software ',
                 '- Mientras que <em>DORA</em> capta aspectos tecnicos, <em>SPACE</em> se centra en factores humanos y sociales ',
                 '- Logrando obtener una mejor comprensión de los puntos fuertes y debiles de tu equipo, alineandose mejor con los objetivos y retos a enfrentar ',
+            ]),
+        new Item('goodCodingPrinciples',
+            [
+                '1 - Seguir las <strong>convenciones</strong> de la comunidad y las <strong>especificaciones</strong> del lenguaje, ayudando con la consistencia y la legibilidad ',
+                '2 - <strong>Documentación y Comentarios</strong> Un buen codigo esta documentado, para explicar las decisiones de negocio, y el porque se tomaron, ',
+                '   - en cuanto a los comentarios, no se deben abusar de ellos, y solo se deberian usar donde sean realmente necesarios, ',
+                '   - además de que ambos, se deben mantener actualizados a la par de los cambios del software ',
+                '3 - <strong>Robustez</strong> Un buen codigo debe ser capaz de manejar una gran variedad de situaciones inesperadas sin fallar, ',
+                ' - o producir resultados impredecibles, existen enfoques como el manejo de excepciones o la programación defensiva ',
+                '4 - Siga el principio de <strong>SOLID</strong> que junto con otros principios, son increiblemente utiles para crear un software escalable y mantenible ',
+                '5 - <strong>Testing</strong> No solo se deben realizar pruebas unitarias, un buen codigo debe ser facil de probar, ya sea de manera unitaria o de otros tipos ',
+                '6 - <strong>Abstracciones</strong> Para esto se requiere de extraer la logica central y ocultar la complejidad, de manera que se logre un equilibrio, ',
+                '   - entre flexibilidad, sin estar sobrediseñado, ni cerrarse a las posibilidades de de crecimiento a largo plazo ',
+                '7 - Use <strong>Patrones de Diseño</strong> Pero no abuse de ellos, cada patron tiene un escenario donde es aplicable, asi no se agrega complejidad innecesaria ',
+                '8 - <strong>Reducir las dependencias globales</strong> Para evitar una gestión de estados innecesarias, y reducir efectos segundarios ',
+                '9 - <strong>Refactorización</strong> La mantenibilidad se logra reduciendo la deuda tecnica reduciendo y solucionando problemas lo antes posible ',
+                '10 - <strong>Seguridad</strong> Un buen codigo evita la mayor cantidad de vulnerabilidades posibles, en especial las comunes y de facil solución '
             ])
     ];
 

@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { NUBE_KEY, LinkReferencia } from 'src/app/models/linkReferencia';
+import { CALIDAD_KEY, LinkReferencia } from 'src/app/models/linkReferencia';
 
-const route = new LinkReferencia().routesAndSections.get(NUBE_KEY);
+const route = new LinkReferencia().routesAndSections.get(CALIDAD_KEY);
 
 @Component({
   selector: 'app-home',
@@ -17,7 +17,7 @@ export class HomeComponent {
   }
 
   public routeToLastItem(): void {
-    const newItem = 'caas-daas-faas';
+    const newItem = 'goodCodingPrinciples';
     this.router.navigateByUrl(`/${route}`, { state: { newItem } })
   }
 

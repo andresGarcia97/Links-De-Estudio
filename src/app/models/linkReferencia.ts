@@ -136,6 +136,7 @@ export const CALIDAD_REF = new Map<string, Referencia>([
     ['analystQA', new Referencia('https://www.linkedin.com/pulse/qu%2525C3%2525A9-es-y-hace-un-analista-qa-edteam%3FtrackingId=LYLDNutUgXaUqwAAuYOm6A%253D%253D/?trackingId=LYLDNutUgXaUqwAAuYOm6A%3D%3D', 'Analista de QA', CALIDAD_KEY, 'Analista de QA')],
     ['codeReviewPyramid', new Referencia('https://www.morling.dev/blog/the-code-review-pyramid/', 'Piramide del CodeReview', CALIDAD_KEY, 'Piramide del Code Review')],
     ['doraAndSpaceMetrics', new Referencia('https://echometerapp.com/es/dora-and-space-metrics/', 'Metricas DORA & SPACE', CALIDAD_KEY, 'DORA & SPACE')],
+    ['goodCodingPrinciples', new Referencia('https://blog.bytebytego.com/p/ep97-10-good-coding-principles-to#%C2%A7good-coding-principles-to-improve-code-quality', 'Principios para una buena codificación', CALIDAD_KEY, 'Good Coding Principles')],
 ]);
 
 export const COMPILACION_KEY = 'Compilacion';
