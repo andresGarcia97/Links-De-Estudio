@@ -12,7 +12,7 @@ export class LinkReferencia {
         ...PARADIGMAS_REF,       ...PATRONES_REF,             ...PEOPLE_REF,  
         ...POO_REF,              ...TESTING_REF,              ...TESTING_ADVANCED,
         ...REFACTORING_REF,      ...REQUISITOS_REF,           ...PRINCIPIOS_REF,
-        ...SEGURIDAD_REF,        ...SMELL_CODES_REF,          ...PERSISTENCY_REF,
+        ...SECURITY_REF,         ...SMELL_CODES_REF,          ...PERSISTENCY_REF,
         ...UML_REF,              ...VERSIONAMIENTO_REF,       ...HARDWARE_REF,
         ...WEB_REF,              ...LEYES_REF,                ...NEURO_MARKETING_REF,
         ...CD_CI_REF,            ...APIS_REF,                 ...PERSISTENCY_ADVANCED_REF  
@@ -522,7 +522,7 @@ export const PRINCIPIOS_REF = new Map<string, Referencia>([
 ]);
 
 export const SECURITY_KEY = 'Seguridad';
-export const SEGURIDAD_REF = new Map<string, Referencia>([
+export const SECURITY_REF = new Map<string, Referencia>([
     ['firewall', new Referencia('https://idgrup.com/firewall-que-es-y-como-funciona/#:~:text=Un%20firewall%2C%20tambi%C3%A9n%20llamado%20cortafuegos,ordenadores%20de%20una%20misma%20red', 'Firewall', SECURITY_KEY, 'Firewall')],
     ['protocolos', new Referencia('https://www.websecurity.digicert.com/es/es/security-topics/what-is-ssl-tls-https', 'SSL, TSL, HTTPS', SECURITY_KEY, 'SSL, TSL, HTTPS')],
     ['proxy', new Referencia('https://www.welivesecurity.com/la-es/2020/01/02/que-es-proxy-para-que-sirve/', 'Proxy', SECURITY_KEY, 'Proxy')],
@@ -541,6 +541,7 @@ export const SEGURIDAD_REF = new Map<string, Referencia>([
     ['csp', new Referencia('https://auth0.com/blog/from-zero-to-hero-with-csp/', 'Content Security Police', SECURITY_KEY, 'Content Security Police')],
     ['csrf', new Referencia('https://www.welivesecurity.com/la-es/2015/04/21/vulnerabilidad-cross-site-request-forgery-csrf/', 'Cross Site Request Forgery', SECURITY_KEY, 'CSRF')],
     ['restApiAuth', new Referencia('https://blog.bytebytego.com/p/ep91-rest-api-authentication-methods', 'Autenticación en APIs REST', SECURITY_KEY, 'REST API Authentication')],
+    ['attacksOnModelOSI', new Referencia('https://blog.bytebytego.com/p/ep97-10-good-coding-principles-to#%C2%A7top-network-security-cheatsheet', 'Ataques contra el Modelo OSI', SECURITY_KEY, 'Modelo OSI')]
 ]);
 
 export const SMELL_CODES_KEY = 'Smell-Codes';

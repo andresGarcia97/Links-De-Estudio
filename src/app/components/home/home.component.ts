@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { CALIDAD_KEY, LinkReferencia } from 'src/app/models/linkReferencia';
+import { SECURITY_KEY, LinkReferencia } from 'src/app/models/linkReferencia';
 
-const route = new LinkReferencia().routesAndSections.get(CALIDAD_KEY);
+const route = new LinkReferencia().routesAndSections.get(SECURITY_KEY);
 
 @Component({
   selector: 'app-home',
@@ -17,7 +17,7 @@ export class HomeComponent {
   }
 
   public routeToLastItem(): void {
-    const newItem = 'goodCodingPrinciples';
+    const newItem = 'attacksOnModelOSI';
     this.router.navigateByUrl(`/${route}`, { state: { newItem } })
   }
 

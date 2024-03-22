@@ -1193,6 +1193,18 @@ export const SEGURIDAD =
                 ' - Ideal para un control de acceso sencillo, en entornos poco sensibles o manejar permisos por usuarios más laxos ',
                 '',
                 '- Existen otros metodos, pero estos de los más populares y usados que hay '
+            ]),
+        new Item('attacksOnModelOSI',
+            [
+                '- Acontinuación se mostraran algunos de los posibles ataques en cada una de las 7 capas del modelo OSI',
+                '',
+                '1 <strong>Capa Fisica            </strong> - Escucha                        - Manipulación        - Interferencia electromagnetica              ',
+                '2 <strong>Capa de Enlace de Datos</strong> - Suplantacion de Macs           - Salto de Vlan       - Suplantacion de ARP                         ',
+                '3 <strong>Capa de Red            </strong> - Suplantación de IP             - Ataques DDOS        - Manipulacion de tablas de rutas             ',
+                '4 <strong>Capa de Transporte     </strong> - Hombre en el medio             - Inundación SYN/ACK                                                ',
+                '5 <strong>Capa de Session        </strong> - Secuestro de Sessión           - Fuerza bruta        - Fijación de la Sessión                      ',
+                '6 <strong>Capa de Presentación   </strong> - Inyeccion de codigo malicioso  - Ataques de formato  - Vulnerabilidades codificación/decodificación',
+                '7 <strong>Capa de Aplicación     </strong> - Inyección de malware           - Ataques DDOS        - Pushing                                     ',
             ])
     ];
 
