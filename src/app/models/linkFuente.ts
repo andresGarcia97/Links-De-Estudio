@@ -30,7 +30,7 @@ export const FRONT = new Map([
 
 export const BACK = new Map([
     ['sqlTutorial', { titulo: 'SQL Tutorial', referencia: 'https://www.w3schools.com/sql/default.asp' }],
-    ['patronesDisenoJava', { titulo: 'Patrones de diseño en Java', referencia: 'https://www.journaldev.com/1827/java-design-patterns-example-tutorial' }],
+    ['patronesDisenoJava', { titulo: 'Patrones en Java', referencia: 'https://www.journaldev.com/1827/java-design-patterns-example-tutorial' }],
     ['comandosDocker', { titulo: 'Comandos Docker', referencia: 'https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes-es' }],
     ['paradigmaFuncionaljava', { titulo: 'Paradigma funcional Java', referencia: 'https://www.adictosaltrabajo.com/2016/06/23/uso-basico-de-java-8-stream-y-lambdas/' }],
     ['apisJava', { titulo: 'APIs comunes de Java', referencia: 'https://www.simplilearn.com/tutorials/java-tutorial/java-api?source=sl_frs_nav_playlist_video_clicked#the_most_commonly_used_java_apis' }],
@@ -61,7 +61,8 @@ export const UTILS = new Map([
     ['wizardZines', { titulo: 'Trucos & Comics', referencia: 'https://wizardzines.com/' }],
     ['apisNavegador', { titulo: 'APIs del navegador', referencia: 'https://developer.mozilla.org/es/docs/Learn/JavaScript/Client-side_web_APIs/Introduction#apis_de_navegador_m%C3%A1s_comunes' }],
     ['eventDrivenArquitectures', { titulo: 'Event Driven Visuals', referencia: 'https://serverlessland.com/event-driven-architecture/visuals/' }],
-    ['softwareArquitectureTools', { titulo: 'Diagramas', referencia: 'https://medium.com/@techworldwithmilan/software-architecture-as-code-tools-331a11222da0' }]
+    ['softwareArquitectureTools', { titulo: 'Diagramas', referencia: 'https://medium.com/@techworldwithmilan/software-architecture-as-code-tools-331a11222da0' }],
+    ['cpuLand', { titulo: 'CPU', referencia: 'https://cpu.land/' }]
 ]);
 
 export const TESTING = new Map([
@@ -85,7 +86,8 @@ export const CURIOSITIES = new Map([
     ['javascriptFrameworks', { titulo: 'Javascript frameworks', referencia: 'https://www.pzuraq.com/blog/four-eras-of-javascript-frameworks' }],
     ['roadMapDevelop', { titulo: 'Aprender programación', referencia: 'https://www.freecodecamp.org/news/how-to-learn-programming/' }],
     ['howDnsWork', { titulo: 'como funciona un DNS', referencia: 'https://howdns.works/es/' }],
-    ['IAexplained', { titulo: 'Terminos comunes en IA', referencia: 'https://www.linkedin.com/pulse/qu%25C3%25A9-es-la-ia-gu%25C3%25ADa-definitiva-para-programadores-y-edteam/?trackingId=iMcaNpgFShCr0%2BTEfhlBvw%3D%3D' }]
+    ['IAexplained', { titulo: 'Terminos comunes en IA', referencia: 'https://www.linkedin.com/pulse/qu%25C3%25A9-es-la-ia-gu%25C3%25ADa-definitiva-para-programadores-y-edteam/?trackingId=iMcaNpgFShCr0%2BTEfhlBvw%3D%3D' }],
+    ['exercism', { titulo: 'Ejercicios', referencia: 'https://exercism.org/' }]
 ]);
 
 export const SECURITY = new Map([

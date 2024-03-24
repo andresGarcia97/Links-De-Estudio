@@ -53,7 +53,7 @@ const routes: Routes = [
   { path: 'buenas-practicas', loadChildren: () => import('./components/buenas-practicas/buenas-practicas.module').then(m => m.BuenasPracticasModule), title: BUENAS_PRACTICAS_KEY },
   { path: 'arquitecturas', loadChildren: () => import('./components/arquitecturas/arquitecturas.module').then(m => m.ArquitecturasModule), title: ARQUITECTURAS_KEY },
   { path: 'agiles', loadChildren: () => import('./components/agiles/agiles.module').then(m => m.AgilesModule), title: AGILES_KEY  },
-  { path: '', component: HomeComponent, pathMatch: 'full', title: 'Inicio' },
+  { path: '', component: HomeComponent, pathMatch: 'full', title: 'Contenido De Repaso' },
   // { path: '**', component: PageNotFoundComponent }
 ];
 
