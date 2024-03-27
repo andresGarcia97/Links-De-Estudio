@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { SECURITY_KEY, LinkReferencia } from 'src/app/models/linkReferencia';
+import { CARACTERISTICAS_KEY, LinkReferencia } from 'src/app/models/linkReferencia';
 
-const route = new LinkReferencia().routesAndSections.get(SECURITY_KEY);
+const route = new LinkReferencia().routesAndSections.get(CARACTERISTICAS_KEY);
 
 @Component({
   selector: 'app-home',
@@ -17,7 +17,7 @@ export class HomeComponent {
   }
 
   public routeToLastItem(): void {
-    const newItem = 'attacksOnModelOSI';
+    const newItem = 'memorySafety';
     this.router.navigateByUrl(`/${route}`, { state: { newItem } })
   }
 

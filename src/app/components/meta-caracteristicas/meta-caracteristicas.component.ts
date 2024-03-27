@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { META_CARACTERISTICAS } from 'src/app/models/content/content1';
-import { ESTRUCTURAS_KEY, LinkReferencia, META_CARATERISTICAS_REF } from 'src/app/models/linkReferencia';
+import { CALIDAD_KEY, ESTRUCTURAS_KEY, HARDWARE_KEY, LinkReferencia, META_CARATERISTICAS_REF } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-meta-caracteristicas',
@@ -22,6 +22,8 @@ export class MetaCaracteristicasComponent implements OnInit {
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
     this.relatedSections.set(ESTRUCTURAS_KEY, routes.get(ESTRUCTURAS_KEY)!);
+    this.relatedSections.set(HARDWARE_KEY,    routes.get(HARDWARE_KEY)!);
+    this.relatedSections.set(CALIDAD_KEY,     routes.get(CALIDAD_KEY)!);
   }
 
 }

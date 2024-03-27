@@ -292,6 +292,7 @@ export const META_CARATERISTICAS_REF = new Map<string, Referencia>([
     ['footprint', new Referencia('https://www.pcmag.com/encyclopedia/term/memory-footprint', 'Huella en memoria', CARACTERISTICAS_KEY, 'Huellas de memoria')],
     ['featureFlag', new Referencia('https://www.optimizely.com/optimization-glossary/feature-flags/', 'Feature Flags', CARACTERISTICAS_KEY, 'Feature Flags')],
     ['generics', new Referencia('https://medium.com/@AlexanderObregon/java-generics-type-safety-and-performance-a0864ca72a5a', 'Genericos', CARACTERISTICAS_KEY, 'Genericos')],
+    ['memorySafety', new Referencia('https://stackoverflow.blog/2024/03/04/in-rust-we-trust-white-house-office-urges-memory-safety', 'Seguridad en la memoria', CARACTERISTICAS_KEY, 'Seguridad en la memoria')],
 ]);
 
 export const ESTRUCTURAS_KEY = 'Meta-Estructuras';
@@ -574,7 +575,7 @@ export const DATA_BASES_ADVANCED_KEY = 'BD Avanzado'
 export const PERSISTENCY_ADVANCED_REF = new Map<string, Referencia>([
     ['nosql', new Referencia('https://pandorafms.com/blog/es/bases-de-datos-nosql/', 'Bases de Datos NO SQL', DATA_BASES_ADVANCED_KEY, 'NoSQL')],
     ['tiposBD', new Referencia('https://www.acens.com/wp-content/images/2014/02/bbdd-nosql-wp-acens.pdf', 'Tipos de BD No SQL', DATA_BASES_ADVANCED_KEY, 'Tipos NoSQL')],
-    ['orm', new Referencia('https://programarfacil.com/blog/que-es-un-orm/', 'Mapeo Objetos-Relacional', DATA_BASES_ADVANCED_KEY, 'ORM')],
+    ['orm', new Referencia('https://programarfacil.com/blog/que-es-un-orm/', 'Mapeo Objeto-Relacional (ORM)', DATA_BASES_ADVANCED_KEY, 'ORM')],
     ['consistenciaEventual', new Referencia('https://medium.com/@gabanox/consistencia-eventual-en-s3-6ba5b2ecd721', 'Consistencia Eventual', DATA_BASES_ADVANCED_KEY, 'Consistencia')],
     ['algebraRelacional', new Referencia('https://sites.google.com/site/basededatosdistribuidastics/algebra-relacional', 'Algebra Relacional', DATA_BASES_ADVANCED_KEY, 'Algebra Relacional')],
     ['n+1selects', new Referencia('https://stackoverflow.com/questions/97197/what-is-the-n1-selects-problem-in-orm-object-relational-mapping', 'N + 1 Problem', DATA_BASES_ADVANCED_KEY, 'N + 1 Selects')],
