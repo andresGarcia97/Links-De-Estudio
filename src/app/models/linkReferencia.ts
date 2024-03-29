@@ -104,12 +104,13 @@ export const ARQUITECTURAS_REF = new Map<string, Referencia>([
 
 export const BUENAS_PRACTICAS_KEY = 'Buenas-Practicas';
 export const BUENAS_PRACTICAS_REF = new Map<string, Referencia>([
-    ['practicas1', new Referencia('https://www.tithink.com/es/2018/06/13/12-buenas-practicas-para-el-desarrollo-software/', 'Buenas practicas parte #1', BUENAS_PRACTICAS_KEY, 'Parte #1')],
-    ['practicas2', new Referencia('https://sg.com.mx/revista/mejores-pr%C3%A1cticas-para-el-desarrollo-software', 'Buenas practicas parte #2', BUENAS_PRACTICAS_KEY, 'Parte #2')],
-    ['practicas3', new Referencia('https://velneo.es/15-buenas-practicas-proyectos-desarrollo-software/', 'Buenas practicas parte #3', BUENAS_PRACTICAS_KEY, 'Parte #3')],
-    ['practicas4', new Referencia('http://www.noussintelligence.com/desarrollo-software-buenas-practicas-recomendaciones/', 'Buenas practicas parte #4', BUENAS_PRACTICAS_KEY, 'Parte #4')],
+    ['practicas1', new Referencia('https://www.tithink.com/es/2018/06/13/12-buenas-practicas-para-el-desarrollo-software/', 'Buenas practicas parte #1', BUENAS_PRACTICAS_KEY, 'Buenas Practicas #1')],
+    ['practicas2', new Referencia('https://sg.com.mx/revista/mejores-pr%C3%A1cticas-para-el-desarrollo-software', 'Buenas practicas parte #2', BUENAS_PRACTICAS_KEY, 'Buenas Practicas #2')],
+    ['practicas3', new Referencia('https://velneo.es/15-buenas-practicas-proyectos-desarrollo-software/', 'Buenas practicas parte #3', BUENAS_PRACTICAS_KEY, 'Buenas Practicas #3')],
+    //['practicas4', new Referencia('http://www.noussintelligence.com/desarrollo-software-buenas-practicas-recomendaciones/', 'Buenas practicas parte #4', BUENAS_PRACTICAS_KEY, 'Parte #4')],
     ['demeter', new Referencia('https://www.adictosaltrabajo.com/2015/07/24/ley-de-demeter/', 'Ley de Demeter', BUENAS_PRACTICAS_KEY, 'Ley de Demeter')],
-    ['complejidad', new Referencia('http://oscarmoreno.com/la-complejidad-ciclomatica/', 'Complejidad Ciclomatica', BUENAS_PRACTICAS_KEY, 'Complejidad')],
+    //['complejidad', new Referencia('http://oscarmoreno.com/la-complejidad-ciclomatica/', 'Complejidad Ciclomatica', BUENAS_PRACTICAS_KEY, 'Complejidad')],
+    ['complejidad', new Referencia('https://mpijierro.medium.com/complejidad-ciclom%C3%A1tica-y-como-reducirla-7374c215f666', 'Complejidad Ciclomatica', BUENAS_PRACTICAS_KEY, 'Complejidad')],
     ['logging', new Referencia('https://itnext.io/logger-or-debugger-which-one-to-choose-3f6a72200b15', 'Logging VS Debugging', BUENAS_PRACTICAS_KEY, 'Logs VS Debug')],
     ['debugging', new Referencia('https://www.freecodecamp.org/news/what-is-debugging-how-to-debug-code/', 'Como Depurar', BUENAS_PRACTICAS_KEY, 'Debugging')],
     ['complejidadCognitiva', new Referencia('https://enmilocalfunciona.io/complejidad-cognitiva/', 'Complejidad Cognitiva', BUENAS_PRACTICAS_KEY, 'Cognitiva')],
@@ -118,7 +119,7 @@ export const BUENAS_PRACTICAS_REF = new Map<string, Referencia>([
     ['estatico', new Referencia('https://www.welivesecurity.com/la-es/2021/01/18/analisis-estatico-codigo-fuente-orientado-a-seguridad/', 'Analisis de codigo estatico', BUENAS_PRACTICAS_KEY, 'Analisis de codigo')],
     ['guardClauses', new Referencia('https://artansoft.com/2017/01/guard-clauses-definicion-beneficios/', 'Guard clauses', BUENAS_PRACTICAS_KEY, 'Guard Clauses')],
     ['semanticConstructors', new Referencia('https://medium.com/all-you-need-is-clean-code/constructores-sem%C3%A1nticos-ae7ac70b23aa', 'Constructores Semanticos', BUENAS_PRACTICAS_KEY, 'Constructores Semanticos')],
-    ['exceptionGoodPractices', new Referencia('https://javachallengers.com/mistakes-java-developers-make-when-using-exceptions/', 'Manejo de Excepciones', BUENAS_PRACTICAS_KEY, 'Manejo de Excepciones')],
+    ['exceptionGoodPractices', new Referencia('https://javachallengers.com/mistakes-when-using-exceptions/', 'Manejo de Excepciones', BUENAS_PRACTICAS_KEY, 'Manejo de Excepciones')],
     ['goodHabits', new Referencia('https://vadimkravcenko.com/shorts/habits-of-great-software-engineers/', 'Buenos habitos de un desarrollador', BUENAS_PRACTICAS_KEY, 'Buenos habitos')]
 ]);
 
