@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { OTROS } from 'src/app/models/content/content1';
-import { CARACTERISTICAS_KEY, LinkReferencia, OTROS_REF } from 'src/app/models/linkReferencia';
+import { META_CARACTERISTICAS_KEY, LinkReferencia, OTROS_REF } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-otros',
@@ -21,7 +21,7 @@ export class OtrosComponent implements OnInit {
   ngOnInit(): void {
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
-    this.relatedSections.set(CARACTERISTICAS_KEY, routes.get(CARACTERISTICAS_KEY)!);
+    this.relatedSections.set(META_CARACTERISTICAS_KEY, routes.get(META_CARACTERISTICAS_KEY)!);
   }
 
 }

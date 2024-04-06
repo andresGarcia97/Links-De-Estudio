@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { COMPILACION } from 'src/app/models/content/content2';
-import { CARACTERISTICAS_KEY, COMPILACION_REF, ESTRUCTURAS_KEY, HARDWARE_KEY, LinkReferencia } from 'src/app/models/linkReferencia';
+import { META_CARACTERISTICAS_KEY, COMPILACION_REF, META_ESTRUCTURAS_KEY, HARDWARE_KEY, LinkReferencia }
+from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-compilacion',
@@ -21,9 +22,9 @@ export class CompilacionComponent implements OnInit {
   ngOnInit(): void {
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
-    this.relatedSections.set(CARACTERISTICAS_KEY, routes.get(CARACTERISTICAS_KEY)!);
-    this.relatedSections.set(ESTRUCTURAS_KEY,     routes.get(ESTRUCTURAS_KEY)!);
-    this.relatedSections.set(HARDWARE_KEY,        routes.get(HARDWARE_KEY)!);
+    this.relatedSections.set(META_CARACTERISTICAS_KEY, routes.get(META_CARACTERISTICAS_KEY)!);
+    this.relatedSections.set(META_ESTRUCTURAS_KEY,     routes.get(META_ESTRUCTURAS_KEY)!);
+    this.relatedSections.set(HARDWARE_KEY,             routes.get(HARDWARE_KEY)!);
   }
 
 }
