@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { META_CARACTERISTICAS_KEY, LinkReferencia } from 'src/app/models/linkReferencia';
+import { CONOCIMIENTO_EMPIRICO_KEY, LinkReferencia } from 'src/app/models/linkReferencia';
 
-const route = new LinkReferencia().routesAndSections.get(META_CARACTERISTICAS_KEY);
+const route = new LinkReferencia().routesAndSections.get(CONOCIMIENTO_EMPIRICO_KEY);
 
 @Component({
   selector: 'app-home',
@@ -17,7 +17,7 @@ export class HomeComponent {
   }
 
   public routeToLastItem(): void {
-    const newItem = 'enumeraciones';
+    const newItem = 'boysScouts';
     this.router.navigateByUrl(`/${route}`, { state: { newItem } })
   }
 

@@ -650,18 +650,20 @@ export const PRINCIPIOS =
             [
                 '- No lo añadas hasta que no lo necesites',
                 '- Define prioridades, evita trabajo innecesario y que no aporta valor ',
+                '- Esto tambien evita futuros retrasos y suposiciones erroneas, al tomar desiciones en base a los hechos '
             ]),
         new Item('occam',
             [
                 '- Preferir siempre la solución más simple, asi se evita agregar complejidad arbitraria ',
                 '- En igualdad de condiciones la solución más optima prevalecera',
+                '- Simplificar las cosas, no implica que se deba ignorar la complejidad, solo que se debe reducir lo más posible '
             ]),
         new Item('dry',
             [
-                '- Evita repertir código siempre que sea posible y que no se genere acoplamiento',
-                '- Incrementa la mantenibilidad del código, modularizando y haciendo partes pequeñas ',
-                '- Facilita la refactorización, y la creación de partes pequeñas e independientes ',
-                '- Implementa código reutilizable, evitanod copiar y pegar en la medidad de lo posible ',
+                '- Evita repetir código siempre que sea posible y que no se genere acoplamiento',
+                '- Incrementa la mantenibilidad del código, modularizando y haciendo partes pequeñas y manejables ',
+                '- Facilita la refactorización, y la creación de partes atomicas e independientes, que se puedan juntar ',
+                '- Implementa código reutilizable, de manera que sea util y mantenible dentro del sistema ',
             ]),
         new Item('hollywood',
             [
@@ -680,10 +682,10 @@ export const PRINCIPIOS =
             [
                 '<em>S</em> <strong>Patron singleton:</strong>       Es el unico patron que mal usado puede convertirse en un antipatron, no lo uses si no es necesario ',
                 '<em>T</em> <strong>Acoplamiento indebido:</strong>  Sucede cuando un cambio afecta más partes de las debidas, esto indica una mala modularización ',
-                '<em>U</em> <strong>Inestabilidad:</strong>          El software NO deberia ser dificil de testear, ni de modificar ',
+                '<em>U</em> <strong>Inestabilidad:</strong>          El software <strong>NO</strong> deberia ser dificil de testear, y menos de modificar ',
                 '<em>P</em> <strong>Optimización prematura:</strong> Un codigo eficiente, por lo general es ilegible, por lo que optimizarlo sin necesidad solo trae complejidad innecesaria ',
                 '<em>I</em> <strong>Nombres indescriptivos:</strong> Todo codigo idealmente deberia ser autocomentado, por lo que nombrar mal las cosas hace inalcanzable esta meta ',
-                '<em>D</em> <strong>Duplicación:</strong>            El codigo duplicado deberia evitarse siempre que se pueda, aplicando DRY & KISS, además de otras practicas ',
+                '<em>D</em> <strong>Duplicación:</strong>            El codigo duplicado deberia evitarse siempre que se pueda, aplicando <em>DRY</em> & <em>KISS</em>, además de otras practicas ',
             ]),
         new Item('twice-one',
             [
@@ -708,13 +710,13 @@ export const PRINCIPIOS =
                 '- Sino que se debe dividir en fragmentos, de modo que cada parte pueda completar una parte distinta, especifica y más acotada ',
                 '- En palabras de <strong>Edsger W. Dijkstra</strong> <em>La separación de conceptos, aunque no sea perfectamente posible, </em>',
                 '  <em>es la única técnica disponible, que yo sepa, para ordenar eficazmente los propios pensamientos</em>',
-                '- Esto aplica desde funciones, clases, pasando por modulos, y hasta proyectos ',
+                '- Esto aplica desde funciones, clases, pasando por modulos, hasta llegar a proyectos ',
             ]),
         new Item('poc',
             [
                 '- Es una prueba inicial, donde se toman acciones para determinar si una idea es lo suficientemente valiosa, factible, e incluso posible ',
                 '- Tambien prueba la viabilidad de un producto para resolver alguna necesidad empresarial',
-                '- Esto se diferencia de un MVP ya que esto es un pequeño documento o demostración de la etapa inicial, del cual se puede empezar a construir ',
+                '- Esto se diferencia de un <em>MVP</em> ya que esto es un pequeño documento o demostración de la etapa inicial, del cual se puede empezar a construir ',
                 '- Despues de que se hayan aceptado por un cliente y/o usuario final, y asi poder empezar una toma de requisitos y factores claves de la aplicación ',
             ])
     ];
