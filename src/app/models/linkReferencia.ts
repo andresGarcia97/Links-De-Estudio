@@ -432,6 +432,7 @@ export const PEOPLE_REF = new Map<string, Referencia>([
     ['ubicuo', new Referencia('https://hackernoon.com/ubiquitous-language-a-key-to-success-in-professional-environments?source=rss', 'Lenguaje Ubicuo', PERSONAS_KEY, 'Lenguaje Ubicuo')],
     ['hippoEfect', new Referencia('https://www.forbes.com/sites/bernardmarr/2017/10/26/data-driven-decision-making-beware-of-the-hippo-effect/?sh=4106860c80f9', 'Efecto HIPPO', PERSONAS_KEY, 'Efecto H.I.P.P.O')],
     ['burnout', new Referencia('https://chubernetes.com/navigating-tech-industry-burnout-03c015337ba0', 'Sindrome de Burnout', PERSONAS_KEY, 'Burnout')],
+    ['ona', new Referencia('https://www.linkedin.com/posts/jgarzas_an%C3%A1lisis-de-redes-organizacionales-ona-activity-7185677261528842240-EQvR/', 'Analisis de Redes Organizacionales', PERSONAS_KEY, 'ONA')],
 ]);
 
 export const POO_KEY = 'POO';

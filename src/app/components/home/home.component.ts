@@ -17,7 +17,7 @@ export class HomeComponent {
   }
 
   public routeToLastItem(): void {
-    const newItem = 'burnout';
+    const newItem = 'ona';
     this.router.navigateByUrl(`/${route}`, { state: { newItem } })
   }
 
