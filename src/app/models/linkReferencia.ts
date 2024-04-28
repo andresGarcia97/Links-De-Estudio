@@ -611,6 +611,7 @@ export const UML_REF = new Map<string, Referencia>([
     ['estados', new Referencia('https://diagramasuml.com/estados/', 'Diagrama de estados', UML_KEY, 'De Estados')],
     ['vista', new Referencia('https://es.wikipedia.org/wiki/Modelo_de_Vistas_de_Arquitectura_4%2B1', 'Modelo 4+1 vistas', UML_KEY, '4+1 Vistas')],
     ['tiposUml', new Referencia('https://www.microsoft.com/es-co/microsoft-365/business-insights-ideas/resources/guide-to-uml-diagramming-and-database-modeling#:~:text=El%20Lenguaje%20Unificado%20de%20Modelado,de%20un%20sistema%20o%20proceso.', 'Tipos de Diagramas', UML_KEY, 'Tipos de Diagramas')],
+    ['c4Model', new Referencia('https://towardsdev.com/how-to-visualize-your-system-architecture-using-the-c4-model-247bd718e914', 'Modelo C4', UML_KEY, 'C4')],
 ]);
 
 export const VERSIONAMIENTO_KEY = 'Versionamiento';

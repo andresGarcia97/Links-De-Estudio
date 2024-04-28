@@ -24,10 +24,8 @@
 
     <app-referencia class="flexbox terminal" [referencia]="referencia" [titulo]="titulo"></app-referencia>
 
-    <div class="terminal" [ngSwitch]="selection" #terminal>
-
-        <h2 *ngSwitchDefault>Selecciona una opcion para ver más</h2>
-
+    <div class="terminal" [ngSwitch]="selection" *ngIf="selection !== '' " #terminal>
+        
         <span *ngFor="let item of items">
             <span *ngSwitchCase="item.key">
                 <pre *ngFor="let content of item.content" [innerHTML]="content">{{content}}</pre>
@@ -79,7 +77,7 @@
 
     </div>
 
-    <div *ngIf="showRelatedSections && relatedSections.size > 0" class="card-container less-margin">
+    <div *ngIf="showRelatedSections && relatedSections.size > 0 && selection !== '' " class="card-container less-margin">
         
         <h2>Temas Relacionados</h2>
     
@@ -96,6 +94,5 @@
         </div>
 
     </div>
-
 
 </div>
