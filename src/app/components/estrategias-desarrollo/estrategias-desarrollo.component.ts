@@ -22,11 +22,11 @@ export class EstrategiasDesarrolloComponent implements OnInit {
   ngOnInit(): void {
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
-    this.relatedSections.set(CD_CI_KEY,        routes.get(CD_CI_KEY)!);
-    this.relatedSections.set(AGILES_KEY,       routes.get(AGILES_KEY)!);
-    this.relatedSections.set(TESTING_KEY,      routes.get(TESTING_KEY)!);
     this.relatedSections.set(METODOLOGIAS_KEY, routes.get(METODOLOGIAS_KEY)!);
     this.relatedSections.set(REQUISITOS_KEY,   routes.get(REQUISITOS_KEY)!);
+    this.relatedSections.set(TESTING_KEY,      routes.get(TESTING_KEY)!);
+    this.relatedSections.set(AGILES_KEY,       routes.get(AGILES_KEY)!);
+    this.relatedSections.set(CD_CI_KEY,        routes.get(CD_CI_KEY)!);
   }
 
 }

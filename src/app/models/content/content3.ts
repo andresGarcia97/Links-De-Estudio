@@ -1349,8 +1349,7 @@ export const UML =
                 ' - estos diagramas solo deben incluir si aportan valor, de lo contrario se deben omitir',
                 '',
                 '- Estos diagramas se pueden generar mediante fragmentos de codigo DSL, por lo que tambien se les puede hacer seguimiento en nuestro codigo base'
-            ]
-        )
+            ])
     ];
 
 export const NEURO_MARKETING =

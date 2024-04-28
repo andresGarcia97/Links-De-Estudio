@@ -1457,6 +1457,24 @@ export const ESTATEGIAS_DESARROLLO =
                 '- Aun asi BDUF y Agile son 2 extremos de un solo espectro, donde es importante saber adaptar las estrategias a nuestra necesidades ',
                 ' - para evitarnos vernos truncados al seguirlas a raja tabla, con caracteristicas que nos son completamente inutiles ',
                 '- Tanto BDUF como Agile pueden implementar aspectos positivos del otro si dejar de ser lo que son ',
+            ]),
+        new Item('screamingDesign',
+            [
+                '- DDD trata basicamente de delimitar lineas, y crear contextos acotados, donde cada componente tenga su propia responsabilidad, ',
+                ' - y se pueda seguir comunicando con otros, para descubrir estos limites, el <strong>Tio Bob</strong> ha dicho <em>Trazar líneas entre las cosas que importan y las que no</em>',
+                '',
+                '- El objetivo de esta arquitectura debe ser discutir el dominio detras del sistema, en lugar de los detalles especificos o sus implementaciones ',
+                '- Si al mirar la estructura de carpetas, se pueden identificar funcionalidades y no las tecnologias que se usan',
+                '- Las arquitecturas de software deben respaldar inherentemente los casos de uso, y expresar claramente sus propositos, ',
+                ' - de manera similar como los planos de un edificio o de una casa, expresan claramente los propositos de cada espacio ',
+                '',
+                '<strong>Puntos claves</strong>',
+                '- Las arquitecturas deben girar en torno a los casos de uso, y respaldar al sistema',
+                '- Los marcos de trabajo, no deben ser el foco principal de una arquitectura, estos deben ser herramientas utilizadas dentro de la arquitectura ',
+                '- Los marcos se deben adaptar de acuerdo a los casos de uso, no se debe permitir que las herramientas den forma a los componentes a su alrededor ',
+                '- Una buena arquitectura, da lugar para que decisiones tecnicas se puedan posponer y cedan el foco a los casos de uso',
+                '- Tambien permite flexibilidad en cuanto al cambio de tecnologias, herramientas, y marcos de trabajo ',
+                '- Permiten que se puedan realizar pruebas, sin necesidad de depender de marcos, BD o otras complejidades, o en su defecto depender lo menos posible ',
             ])
     ];
 
