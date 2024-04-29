@@ -257,8 +257,8 @@ export const GIT_REF = new Map<string, Referencia>([
 
 export const USER_HISTORIES_KEY = 'Historias-Usuario';
 export const USER_HISTORIES = new Map<string, Referencia>([
-    ['historias', new Referencia('https://apiumhub.com/es/tech-blog-barcelona/como-escribir-buenas-historias-de-usuario/', '¿ Que son las HU ?', USER_HISTORIES_KEY, '¿ que son ?')],
-    ['objetivos', new Referencia('https://apiumhub.com/es/tech-blog-barcelona/como-escribir-buenas-historias-de-usuario/', '¿ Que busca una HU ?', USER_HISTORIES_KEY, '¿ que buscan ?')],
+    ['historias', new Referencia('https://apiumhub.com/es/tech-blog-barcelona/como-escribir-buenas-historias-de-usuario/', '¿ Que son las HU ?', USER_HISTORIES_KEY, '¿ Que son ?')],
+    ['objetivos', new Referencia('https://apiumhub.com/es/tech-blog-barcelona/como-escribir-buenas-historias-de-usuario/', '¿ Que busca una HU ?', USER_HISTORIES_KEY, '¿ Que buscan ?')],
     ['partes', new Referencia('https://apiumhub.com/es/tech-blog-barcelona/como-escribir-buenas-historias-de-usuario/', 'Partes de una HU', USER_HISTORIES_KEY, 'Partes')],
     ['invest', new Referencia('https://apiumhub.com/es/tech-blog-barcelona/como-escribir-buenas-historias-de-usuario/', 'Criterio INVEST', USER_HISTORIES_KEY, 'INVEST')],
     ['smart', new Referencia('https://beagilemyfriend.com/historias-de-usuario-invest-smart/', 'Criterio SMART', USER_HISTORIES_KEY, 'SMART')],
@@ -267,6 +267,7 @@ export const USER_HISTORIES = new Map<string, Referencia>([
     ['descomposicionHU', new Referencia('https://www.javiergarzas.com/2012/05/descomponer-historias-de-usuario-en-tareas-1.html', 'Descomposición en tareas', USER_HISTORIES_KEY, 'Descomposición')],
     ['storyPoints', new Referencia('https://ronjeffries.com/articles/019-01ff/story-points/Index.html', 'Puntos de Historia', USER_HISTORIES_KEY, 'Puntos')],
     ['casosVsRequisitosVsHu', new Referencia('http://www.angellozano.com/requisitos-del-sistema-vs-casos-uso-vs-historias-usuario/', 'HU Vs Casos de uso', USER_HISTORIES_KEY, 'Hu Vs Casos de Uso')],
+    ['historiesFormats', new Referencia('https://www.linkedin.com/posts/jgarzas_agilidad-bdd-hdd-activity-7178798486358802434-ZK5i/', 'HU Formatos alternativos', USER_HISTORIES_KEY, 'Formatos alternativos')],
 ]);
 
 export const MALAS_PRACTICAS_KEY = 'Malas-Practicas';

@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { ESTRATEGIAS_DESARROLLO_KEY, LinkReferencia } from 'src/app/models/linkReferencia';
+import { USER_HISTORIES_KEY, LinkReferencia } from 'src/app/models/linkReferencia';
 
-const route = new LinkReferencia().routesAndSections.get(ESTRATEGIAS_DESARROLLO_KEY);
+const route = new LinkReferencia().routesAndSections.get(USER_HISTORIES_KEY);
 
 @Component({
   selector: 'app-home',
@@ -17,7 +17,7 @@ export class HomeComponent {
   }
 
   public routeToLastItem(): void {
-    const newItem = 'screamingDesign';
+    const newItem = 'historiesFormats';
     this.router.navigateByUrl(`/${route}`, { state: { newItem } })
   }
 
