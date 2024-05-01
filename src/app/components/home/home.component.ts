@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { USER_HISTORIES_KEY, LinkReferencia } from 'src/app/models/linkReferencia';
+import { CALIDAD_KEY, LinkReferencia } from 'src/app/models/linkReferencia';
 
-const route = new LinkReferencia().routesAndSections.get(USER_HISTORIES_KEY);
+const route = new LinkReferencia().routesAndSections.get(CALIDAD_KEY);
 
 @Component({
   selector: 'app-home',
@@ -17,7 +17,7 @@ export class HomeComponent {
   }
 
   public routeToLastItem(): void {
-    const newItem = 'historiesFormats';
+    const newItem = 'codeRot';
     this.router.navigateByUrl(`/${route}`, { state: { newItem } })
   }
 
