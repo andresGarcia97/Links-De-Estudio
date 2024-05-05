@@ -626,6 +626,14 @@ export const POO =
                 '- En la herencia toda clase que herede conoce las acciones de su padre, por lo que si se llegara a cambiar la base, esto afectaria a sus hijos ',
                 ' - de maneras deseadas e indeseadas por igual, si no se tiene cuidado ',
                 '- Si una clase llega a tener la necesidad de anular metodos del padre; debido a un malfuncionamiento, se deberia reconsiderar su uso ',
+            ]),
+        new Item('enumeraciones',
+            [
+                '- Una enumeración es una clase <em>especial</em>, que limita la creación de objetos al conjunto especificado explícitamente dentro la clase',
+                '- Las enumeraciones existen en multiples lenguajes, especialmente si son fuertemente tipados',
+                '- Si la enumeración tiene atributos, todos los constructores que se vayan a usar, deben ser privados',
+                '- Estas son clases finales implícitas, evitando convertirse en cualquier tipo de subclase/superclase',
+                '- Pueden implementar contratos (interfaces), obligando a que cada valor de la enumeración, implemente y defina el debido comportamiento',
             ])
     ];
 
