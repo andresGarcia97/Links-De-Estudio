@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { META_CARACTERISTICAS_KEY, LinkReferencia } from 'src/app/models/linkReferencia';
+import { ARQUITECTURAS_KEY, LinkReferencia } from 'src/app/models/linkReferencia';
 
-const route = new LinkReferencia().routesAndSections.get(META_CARACTERISTICAS_KEY);
+const route = new LinkReferencia().routesAndSections.get(ARQUITECTURAS_KEY);
 
 @Component({
   selector: 'app-home',
@@ -17,7 +17,7 @@ export class HomeComponent {
   }
 
   public routeToLastItem(): void {
-    const newItem = 'profiling';
+    const newItem = 'descomposicionModular';
     this.router.navigateByUrl(`/${route}`, { state: { newItem } })
   }
 
