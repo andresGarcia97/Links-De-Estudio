@@ -280,11 +280,13 @@ export const MALAS_PRACTICAS_KEY = 'Malas-Practicas';
 export const MALAS_PRACTICAS_REF = new Map<string, Referencia>([
     ['callbackhell', new Referencia('https://codearmy.co/que-es-el-callback-hell-y-como-evitarlo-4af418a6ed14', 'Cadena de llamados asincronos', MALAS_PRACTICAS_KEY, 'Callback Hell')],
     ['contraCalidad', new Referencia('https://softgrade.mx/5-causas-afectan-la-calidad-software/', 'En contra de la calidad', MALAS_PRACTICAS_KEY, 'Contra la calidad')],
-    ['contraGestion', new Referencia('https://blog.gft.com/es/2016/01/20/las-10-malas-practicas-mas-comunes-en-la-gestion-de-proyectos/', 'En contra de la gestión', MALAS_PRACTICAS_KEY, 'Contra la gestion')],
+    //['contraGestion', new Referencia('https://blog.gft.com/es/2016/01/20/las-10-malas-practicas-mas-comunes-en-la-gestion-de-proyectos/', 'En contra de la gestión', MALAS_PRACTICAS_KEY, 'Contra la gestion')],
+    ['contraGestion', new Referencia('https://www.smartprecisesolutions.com/2018/01/malas-practicas-en-la-gestion-de-proyectos/', 'En contra de la gestión', MALAS_PRACTICAS_KEY, 'Contra la gestion')],
     ['contraAgilidad', new Referencia('https://giovannycifuentes.com/los-6-antipatrones-en-la-adopcion-de-agilidad-que-los-lideres-deberian-conocer/', 'En contra de las agiles', MALAS_PRACTICAS_KEY, 'Contra la Agilidad')],
     ['malasPracticasSCRUM', new Referencia('https://blog.palo-it.com/es/antipatrones-comunes-en-scrum#:~:text=Los%20antipatrones%20ocurren%20cuando%20creemos,y%20parecen%20parte%20del%20sistema', 'Malas practicas en SCRUM', MALAS_PRACTICAS_KEY, 'Contra SCRUM')],
     ['deathByMicroservices', new Referencia('https://renegadeotter.com/2023/09/10/death-by-a-thousand-microservices.html', 'Muerte por microservicios', MALAS_PRACTICAS_KEY, 'Muerte por microservicios')],
     ['atipatronesArquitecturas', new Referencia('https://lab.scub.net/architecture-anti-patterns-the-dark-side-of-the-architect-d9265b52d997', 'Anti patrones en Arquitecturas', MALAS_PRACTICAS_KEY, 'Contra Arquitecturas')],
+    ['anemicDomain', new Referencia('https://martinfowler.com/bliki/AnemicDomainModel.html', 'Dominio Anemico', MALAS_PRACTICAS_KEY, 'Dominio Anemico')],
 ]);
 
 export const META_CARACTERISTICAS_KEY = 'Meta-Caracteristicas';
