@@ -20,11 +20,15 @@ export class Referencia {
     tittle = '';
     component = '';
     tittleShort = '';
+    dateRead = '';
+    dateUpdate = '';
 
-    constructor(referencia: string, tittle: string, component: string, tittleShort: string) {
+    constructor(referencia: string, tittle: string, component: string, tittleShort: string, dateRead = '', dateUpdate = '') {
         this.referencia = referencia;
         this.tittle = tittle;
         this.component = component;
         this.tittleShort = tittleShort;
+        this.dateRead = dateRead;
+        this.dateUpdate = dateUpdate;
     }
 }

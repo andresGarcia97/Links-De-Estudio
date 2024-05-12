@@ -4,7 +4,7 @@
 
         <span *ngFor="let tittle of tittles | keyvalue: asIsOrder">
             <div class="card card-small" [ngClass]="{'itemSelected' : tittle.key === this.selection }"
-                (click)="getLinkAndTittleByKey(tittle.key)">
+                (click)="setDataByKey(tittle.key)">
                 <span>{{tittle.value}}</span>
             </div>
         </span>
@@ -15,7 +15,7 @@
 
         <span *ngFor="let tittle of tittles | keyvalue: orderReverse">
             <div class="card card-small" [ngClass]="{'itemSelected' : tittle.key === this.selection }"
-                (click)="getLinkAndTittleByKey(tittle.key)">
+                (click)="setDataByKey(tittle.key)">
                 <span>{{tittle.value}}</span>
             </div>
         </span>
@@ -62,6 +62,17 @@
                 </svg>
             </div>
 
+            <div *ngIf="dateRead !== '' || dateUpdate !== ''" class="circle-link" (click)="showHideExtraData()">
+                <svg *ngIf="!showExtraData" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 448 512">
+                    <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/>
+                </svg>
+                <svg *ngIf="showExtraData" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 448 512">
+                    <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/>
+                </svg>
+            </div>
+
             <div class="circle-link" *ngIf="!(itemSelected === lengthItems)" (click)="getNextElement()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 490 490">
                   <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
@@ -75,6 +86,10 @@
 
         </div>
 
+    </div>
+
+    <div *ngIf="showExtraData" class="card-container less-margin">
+        <app-extra-info class="flexbox terminal" [dateRead]="dateRead" [dateUpdate]="dateUpdate"></app-extra-info>
     </div>
 
     <div *ngIf="showRelatedSections && relatedSections.size > 0 && selection !== '' " class="card-container less-margin">

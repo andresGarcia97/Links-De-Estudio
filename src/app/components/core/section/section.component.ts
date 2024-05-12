@@ -41,6 +41,12 @@ export class SectionComponent implements OnInit {
 
     if ("Escape" === key) {
       this.router.navigateByUrl("");
+      return;
+    }
+
+    if ("+" === key || "-" === key) {
+      this.showHideExtraData();
+      return;
     }
 
   });
@@ -53,16 +59,19 @@ export class SectionComponent implements OnInit {
 
   referencia = '';
   titulo = '';
+  dateRead = '';
+  dateUpdate = '';
   lengthItems = 0;
   itemSelected = 0;
   iterationBackwards = false;
   showRelatedSections = false;
+  showExtraData = false;
 
   ngOnInit(): void {
     this.lengthItems = this.items.length - 1;
 
     if(this.selection !== ''){
-      this.getLinkAndTittleByKey(this.selection);
+      this.setDataByKey(this.selection);
     }
 
     const browser = this.detectBrowserName();
@@ -73,7 +82,7 @@ export class SectionComponent implements OnInit {
 
   public getItemByIndex(index: number): void {
     const key = this.items[index]?.key;
-    this.getLinkAndTittleByKey(key);
+    this.setDataByKey(key);
   }
 
   public getNextElement(): void {
@@ -109,10 +118,12 @@ export class SectionComponent implements OnInit {
     return -1;
   }
 
-  public getLinkAndTittleByKey(key: string = ''): void {
+  public setDataByKey(key: string = ''): void {
     this.selection = key;
     this.referencia = this.components.get(key)?.referencia ?? '';
     this.titulo = this.components.get(key)?.tittle ?? '';
+    this.dateRead = this.components.get(key)?.dateRead ?? '';
+    this.dateUpdate = this.components.get(key)?.dateUpdate ?? '';
     this.itemSelected = this.getIndexItemSelected(this.selection);
   }
 
@@ -140,6 +151,10 @@ export class SectionComponent implements OnInit {
 
   public showHideRelatedSections(): void {
     this.showRelatedSections = !this.showRelatedSections;
+  }
+
+  public showHideExtraData(): void {
+    this.showExtraData = !this.showExtraData;
   }
 
 }
