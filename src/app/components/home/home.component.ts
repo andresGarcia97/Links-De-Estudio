@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { NUBE_KEY, LinkReferencia } from 'src/app/models/linkReferencia';
+import { REFACTORIZACION_KEY, LinkReferencia } from 'src/app/models/linkReferencia';
 
-const route = new LinkReferencia().routesAndSections.get(NUBE_KEY);
+const route = new LinkReferencia().routesAndSections.get(REFACTORIZACION_KEY);
 
 @Component({
   selector: 'app-home',
@@ -17,7 +17,7 @@ export class HomeComponent {
   }
 
   public routeToLastItem(): void {
-    const newItem = 'latencia';
+    const newItem = 'manejarDeudaTecnica';
     this.router.navigateByUrl(`/${route}`, { state: { newItem } })
   }
 
