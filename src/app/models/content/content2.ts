@@ -1177,6 +1177,25 @@ export const CONOCIMIENTOS_EMPIRICOS =
                 '- Si encuentras algun desorden, limpialo, mejoras intencionalmente el entorno, para el siguiente grupo de personas ',
                 '- Esta misma regla aplica para nuestros desarrollos, asi se frenaria o se reduciaria al menos el implacable deterioro de los sistemas ',
                 '- Asi no solo estas cuidando de tu propio codigo, tambien de otros equipos, ayudandose entre todos, con grandes beneficios a largo plazo ',
+            ]),
+        new Item('zeigarnik',
+            [
+                '- En general la sensación de no haber terminado algo que se empezo nos deja con una sensación desagradable, este es el efecto <em>Zeigarnik</em>',
+                '',
+                '- A principios del siglo XX la investigadora sovietica <em>Bluma Zeigarnik</em> junto al psicologo <em>Kurt Lewin</em> observaron un comportamiento curioso, ',
+                ' - en los meseros, que recordaban mejor los pedidos de las mesas que aun estaban sin servir o sin pagar, que de las que ya estaban completadas',
+                '',
+                '- La memoria de los meseros parecia dar mayor prioridad a evocar información sobre pedidos inconclusos, ',
+                ' - sin importar si habian sucedido antes o despues de otros, que ya habian sido pagados o entregados, estos se perdian con mayor facilidad',
+                '',
+                '- Esto desemboco en un estudio, donde un grupo de voluntarios debia resolver diferentes tipos de problemas, ',
+                ' - el experimento se centro en el efecto que tenia la interrupción de las tareas y no en su rendimiento o su finalización',
+                '',
+                '- Despues se comprobo que estas personas recordaban mejor los datos acerca de las pruebas, que habian sido interrumpidas y no de las finalizadas',
+                '',
+                '- Además de este y otros estudios, tambien tuvieron influencia en la <strong>Teoria de Gestalt</strong>',
+                '',
+                '- Esto es importante ya que afecta a cualquier estudio relacionado con la memoria, además de que se extiende a cualquier proceso de aprendizaje ',
             ])
     ];
 
