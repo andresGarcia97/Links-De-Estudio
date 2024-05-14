@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { CONOCIMIENTO_EMPIRICO_KEY, LinkReferencia } from 'src/app/models/linkReferencia';
+import { LEYES_KEY, LinkReferencia } from 'src/app/models/linkReferencia';
 
-const route = new LinkReferencia().routesAndSections.get(CONOCIMIENTO_EMPIRICO_KEY);
+const route = new LinkReferencia().routesAndSections.get(LEYES_KEY);
 
 @Component({
   selector: 'app-home',
@@ -17,7 +17,7 @@ export class HomeComponent {
   }
 
   public routeToLastItem(): void {
-    const newItem = 'zeigarnik';
+    const newItem = 'gall';
     this.router.navigateByUrl(`/${route}`, { state: { newItem } })
   }
 
