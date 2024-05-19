@@ -45,29 +45,12 @@
                 </svg>
             </div>
 
-            <div *ngIf="relatedSections.size > 0" class="circle-link" (click)="showHideRelatedSections()">
-                <svg *ngIf="!showRelatedSections" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 448 512">
-                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                    <path *ngIf="!iterationBackwards" d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 
-                    25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"/>
-                    <path *ngIf="iterationBackwards" d="M246.6 470.6c-12.5 12.5-32.8 12.5-45.3 0l-160-160c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L224 402.7 361.4 265.4c12.5-12.5 
-                    32.8-12.5 45.3 0s12.5 32.8 0 45.3l-160 160zm160-352l-160 160c-12.5 12.5-32.8 12.5-45.3 0l-160-160c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L224 210.7 361.4 
-                    73.4c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3z"/>
-                </svg>
-                <svg *ngIf="showRelatedSections" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 512 512">
-                    <path d="M343.586,315.302L284.284,256l59.302-59.302c7.81-7.81,7.811-20.473,0.001-28.284c-7.812-7.811-20.475-7.81-28.284,0
-                          L256,227.716l-59.303-59.302c-7.809-7.811-20.474-7.811-28.284,0c-7.81,7.811-7.81,20.474,0.001,28.284L227.716,256
-                          l-59.302,59.302c-7.811,7.811-7.812,20.474-0.001,28.284c7.813,7.812,20.476,7.809,28.284,0L256,284.284l59.303,59.302
-                          c7.808,7.81,20.473,7.811,28.284,0C351.398,335.775,351.397,323.112,343.586,315.302z" />
-                </svg>
-            </div>
-
-            <div *ngIf="dateRead !== '' || dateUpdate !== ''" class="circle-link" (click)="showHideExtraData()">
-                <svg *ngIf="!showExtraData" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 448 512">
+            <div *ngIf="relatedSections.size > 0 || dateRead !== '' || dateUpdate !== '' || relatedItems.length > 0" class="circle-link" (click)="showHideRelatedSections()">
+                <svg *ngIf="!showRelatedSections" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 448 512">
                     <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                     <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/>
                 </svg>
-                <svg *ngIf="showExtraData" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 448 512">
+                <svg *ngIf="showRelatedSections" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 448 512">
                     <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                     <path d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/>
                 </svg>
@@ -88,8 +71,13 @@
 
     </div>
 
-    <div *ngIf="showExtraData" class="card-container less-margin">
-        <app-extra-info class="flexbox terminal" [dateRead]="dateRead" [dateUpdate]="dateUpdate"></app-extra-info>
+    <div *ngIf="showRelatedSections && (dateRead !== '' || dateUpdate !== '' || relatedItems.length > 0)" class="card-container less-margin">
+        <app-extra-info 
+            [dateRead]="dateRead" 
+            [dateUpdate]="dateUpdate"
+            [relatedItems]="relatedItems" 
+            [selection]="selection">
+        </app-extra-info>
     </div>
 
     <div *ngIf="showRelatedSections && relatedSections.size > 0 && selection !== '' " class="card-container less-margin">

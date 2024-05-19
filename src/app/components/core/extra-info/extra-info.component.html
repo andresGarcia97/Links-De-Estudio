@@ -1,8 +1,25 @@
-<div class="flexbox terminal max-space">
-    <div class="window" *ngIf="dateRead !== '' ">
-        <h2>Fecha de Lectura: {{dateRead}}</h2>
+<div class="card-container">
+    <div class="terminal">
+        <h2 *ngIf="dateRead !== '' ">Fecha de Lectura: {{dateRead}}</h2>
+        <h2 *ngIf="dateUpdate !== '' ">Fecha de Actualización: {{dateUpdate}}</h2>
     </div>
-    <div class="window" *ngIf="dateUpdate !== '' ">
-        <h2>Fecha de Actualización: {{dateUpdate}}</h2>
+
+    <div *ngIf="components.size > 0 && selection !== '' " class="card-container less-margin">
+
+        <h2>Temas complementarios</h2>
+
+        <div class="card-container glass-efect">
+
+            <span *ngFor="let reference of components | keyvalue">
+
+                <div class="card card-small" (click)="routeToSelectedItem(reference.value.component, reference.key)">
+                    <span>{{reference.value.tittleShort}}</span>
+                </div>
+
+            </span>
+
+        </div>
+
     </div>
+
 </div>

@@ -34,19 +34,13 @@ export class SectionComponent implements OnInit {
       return;
     }
 
-    if ("ArrowDown" === key || "ArrowUp" === key) {
+    if ("ArrowDown" === key || "ArrowUp" === key || "+" === key || "-" === key) {
       this.showHideRelatedSections();
       return;
     }
 
     if ("Escape" === key) {
       this.router.navigateByUrl("");
-      return;
-    }
-
-    if ("+" === key || "-" === key) {
-      this.showHideExtraData();
-      return;
     }
 
   });
@@ -65,7 +59,7 @@ export class SectionComponent implements OnInit {
   itemSelected = 0;
   iterationBackwards = false;
   showRelatedSections = false;
-  showExtraData = false;
+  relatedItems: string[] = [];
 
   ngOnInit(): void {
     this.lengthItems = this.items.length - 1;
@@ -125,6 +119,7 @@ export class SectionComponent implements OnInit {
     this.dateRead = this.components.get(key)?.dateRead ?? '';
     this.dateUpdate = this.components.get(key)?.dateUpdate ?? '';
     this.itemSelected = this.getIndexItemSelected(this.selection);
+    this.relatedItems = this.components.get(key)?.relatedItems ?? [];
   }
 
   public getIndexItemSelected(key: string): number {
@@ -151,10 +146,6 @@ export class SectionComponent implements OnInit {
 
   public showHideRelatedSections(): void {
     this.showRelatedSections = !this.showRelatedSections;
-  }
-
-  public showHideExtraData(): void {
-    this.showExtraData = !this.showExtraData;
   }
 
 }
