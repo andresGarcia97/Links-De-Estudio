@@ -43,6 +43,10 @@ export class LinkReferencia {
 
 }
 
+export const META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL = 'verticalAndHorizontal';
+export const FRAMEWORKS_CODE_STRUCTURE = 'codeStructucture';
+export const POO_POO = 'poo';
+
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
     //['moscow', new Referencia('https://proagilist.es/blog/agilidad-y-gestion-agil/priorizar-requisitos-tecnica-priorizacion-moscow/', 'MOSCOW', AGILES_KEY, 'MOSCOW')],
@@ -241,7 +245,8 @@ export const FRAMEWORKS_REF = new Map<string, Referencia>([
     ['ioc', new Referencia('https://medium.com/all-you-need-is-clean-code/inversi%C3%B3n-de-control-principio-de-hollywood-dont-call-us-we-ll-call-you-179e9c70e3d0', 'Inversión de Control', FRAMEWORKS_KEY, 'Inversión de control')],
     ['iod', new Referencia('https://www.arquitecturajava.com/el-patron-de-inyeccion-de-dependencia/', 'Inyección de dependencias', FRAMEWORKS_KEY, 'Inyección de dependencias')],
     ['scafolding', new Referencia('https://medium.com/@srinathsrs104/scaffolding-54ac4e47e133', 'Creación automatica de codigo', FRAMEWORKS_KEY, 'Scaffolding')],
-    ['iodSpring', new Referencia('https://medium.com/@priyaroul99/what-is-constructor-injection-and-why-should-you-use-it-in-spring-bdb3e1857c58', 'Inyección de Dependencias en Spring', FRAMEWORKS_KEY, 'IoD Spring')],
+    ['iodSpring', new Referencia('https://medium.com/@priyaroul99/what-is-constructor-injection-and-why-should-you-use-it-in-spring-bdb3e1857c58', 'Inyección de Dependencias en Spring', FRAMEWORKS_KEY, 'IoD Spring', '2023/12/02')],
+    [FRAMEWORKS_CODE_STRUCTURE, new Referencia('https://medium.com/@akintopbas96/spring-boot-code-structure-package-by-layer-vs-package-by-feature-5331a0c911fe', 'Paquetes por estructura Vs funcionalidad', FRAMEWORKS_KEY, 'Estructura del codigo', '2024/05/18').addRelatedItem(META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL).addRelatedItem(POO_POO)],
 ]);
 
 export const GIT_KEY = 'Git';
@@ -320,7 +325,7 @@ export const META_ESTRUCTURAS_KEY = 'Meta-Estructuras';
 export const META_ESTRUCTURAS_REF = new Map<string, Referencia>([
     ['scope', new Referencia('https://platzi.com/blog/como-funciona-el-scope-en-javascript/', 'Alcance', META_ESTRUCTURAS_KEY, 'Scope')],
     ['precedencia', new Referencia('https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Operator_Precedence', 'Precedencia y jerarquia de operaciones', META_ESTRUCTURAS_KEY, 'Precedencia')],
-    ['verticalAndHorizontal', new Referencia('https://xurxodev.com/vertical-scile/', 'Organización de un proyecto', META_ESTRUCTURAS_KEY, 'Organización')],
+    [META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL, new Referencia('https://xurxodev.com/vertical-scile/', 'Organización de un proyecto', META_ESTRUCTURAS_KEY, 'Organización')],
     ['expresionesRegulares', new Referencia('https://jarroba.com/busqueda-de-patrones-expresiones-regulares/', 'Expresiones Regulares', META_ESTRUCTURAS_KEY, 'Expresiones regulares')],
     ['estructurasDatos', new Referencia('https://medium.com/techwomenc/estructuras-de-datos-a29062de5483', 'Estructuras de datos I', META_ESTRUCTURAS_KEY, 'Estructuras de datos I')],
     ['estructurasDatos2', new Referencia('https://ai.plainenglish.io/data-structures-how-computers-store-and-organize-data-the-backbone-5f0576b3150c', 'Estructuras de datos II', META_ESTRUCTURAS_KEY, 'Estructuras de datos II')],
@@ -451,7 +456,7 @@ export const PEOPLE_REF = new Map<string, Referencia>([
 
 export const POO_KEY = 'POO';
 export const POO_REF = new Map<string, Referencia>([
-    ['poo', new Referencia('https://desarrolloweb.com/articulos/499.php', 'Programación Orientada a Objetos', POO_KEY, 'POO')],
+    [POO_POO, new Referencia('https://desarrolloweb.com/articulos/499.php', 'Programación Orientada a Objetos', POO_KEY, 'POO')],
     ['pooPilares', new Referencia('https://www.campusmvp.es/recursos/post/los-conceptos-fundamentales-sobre-programacion-orientada-objetos-explicados-de-manera-simple.aspx', 'Pilares de POO', POO_KEY, 'Pilares POO')],
     ['composicion', new Referencia('https://www.seas.es/blog/informatica/agregacion-vs-composicion-en-diagramas-de-clases-uml/', 'Agregación & Composición', POO_KEY, 'Relaciones')],
     ['pooStatic', new Referencia('https://desarrolloweb.com/articulos/metodos-atributos-static-poo.html', 'palabra reservada static', POO_KEY, 'Static en POO')],
@@ -467,9 +472,9 @@ export const POO_REF = new Map<string, Referencia>([
     ['beginingPoo', new Referencia('https://medium.com/javascript-scene/the-forgotten-history-of-oop-88d71b9b2d9f', 'Nacimiento de Poo', POO_KEY, 'Inicios de POO')],
     ['inmutability', new Referencia('https://www.campusmvp.es/recursos/post/programacion-funcional-inmutabilidad-y-funciones-puras.aspx', 'Inmutabilidad', POO_KEY, 'Inmutabilidad')],
     ['typesPolimorfismo', new Referencia('https://medium.com/lenguajes-y-dialectos-en-programaci%C3%B3n/polimorfismo-y-paradigmas-tipos-y-ejemplos-ca6a56093a66#:~:text=El%20polimorfismo%20puede%20categorizarse%20en,mantener%20e%20implementar%20el%20polimorfismo', 'Tipos de Polimorfismo', POO_KEY, 'Tipos de Polimorfismo')],
-    ['factoryMethods', new Referencia('https://www.baeldung.com/java-constructors-vs-static-factory-methods', 'Factory Methods', POO_KEY, 'Factory Methods')],
-    ['interfacesOverInheritance', new Referencia('https://www.infoworld.com/article/2073649/why-extends-is-evil.html', 'Interfaces VS Herencia', POO_KEY, 'Interfaces VS Herencia')],
-    ['enumeraciones', new Referencia('https://jarroba.com/enum-enumerados-en-java-con-ejemplos/', 'Enumeraciones', POO_KEY, 'Enumeraciones')],
+    ['factoryMethods', new Referencia('https://www.baeldung.com/java-constructors-vs-static-factory-methods', 'Factory Methods', POO_KEY, 'Factory Methods', '2022/11/07')],
+    ['interfacesOverInheritance', new Referencia('https://www.infoworld.com/article/2073649/why-extends-is-evil.html', 'Interfaces VS Herencia', POO_KEY, 'Interfaces VS Herencia', '2023/03/13')],
+    ['enumeraciones', new Referencia('https://jarroba.com/enum-enumerados-en-java-con-ejemplos/', 'Enumeraciones', POO_KEY, 'Enumeraciones', '', '2024/05/05')],
 ]);
 
 export const TESTING_KEY = 'Testing';

@@ -1,3 +1,4 @@
+import { POO_POO } from "../linkReferencia";
 import { Item } from "../models";
 
 export class Content3 {
@@ -369,7 +370,7 @@ export const VERSIONAMIENTO =
 
 export const POO =
     [
-        new Item('poo',
+        new Item(POO_POO,
             [
                 '- Paradigma de programación, que nos permite crear aplicaciones complejas, manteniendo una base de codigo entendible y manejable ',
                 '- Por eso uno de sus principios es <em>Alta integridad, Bajo acoplamiento</em>',

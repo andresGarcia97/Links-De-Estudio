@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { LEYES_KEY, LinkReferencia } from 'src/app/models/linkReferencia';
+import { FRAMEWORKS_CODE_STRUCTURE, LinkReferencia } from 'src/app/models/linkReferencia';
 
-const route = new LinkReferencia().routesAndSections.get(LEYES_KEY);
+const references = new LinkReferencia()
 
 @Component({
   selector: 'app-home',
@@ -17,8 +17,9 @@ export class HomeComponent {
   }
 
   public routeToLastItem(): void {
-    const newItem = 'gall';
-    this.router.navigateByUrl(`/${route}`, { state: { newItem } })
+    const newItem = FRAMEWORKS_CODE_STRUCTURE;
+    const section = references.components.get(newItem)?.component!;
+    this.router.navigateByUrl(`/${references.routesAndSections.get(section)}`, { state: { newItem } })
   }
 
 }
