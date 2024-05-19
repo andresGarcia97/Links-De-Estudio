@@ -46,6 +46,8 @@ export class LinkReferencia {
 export const META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL = 'verticalAndHorizontal';
 export const FRAMEWORKS_CODE_STRUCTURE = 'codeStructucture';
 export const POO_POO = 'poo';
+export const ARQUITECTURAS_CAPAS = 'capas';
+export const ESTRATEGIAS_DESARROLLO_SCREAMING_DESIGN = 'screamingDesign';
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -95,7 +97,7 @@ export const ARQUITECTURAS_REF = new Map<string, Referencia>([
     ['conceptosArquitectura', new Referencia('https://www.freecodecamp.org/news/an-introduction-to-software-architecture-patterns/', 'Conceptos Arquitecturas', ARQUITECTURAS_KEY, 'Conceptos')],
     ['principiosArquitecturas', new Referencia('https://www.genbeta.com/desarrollo/principios-de-una-arquitectura-limpia-mantenible-y-testeable', 'Principios de las arquitecturas', ARQUITECTURAS_KEY, 'Principios')],
     ['arquitecturasLimpias', new Referencia('https://medium.com/@diego.coder/introducci%C3%B3n-a-las-clean-architectures-723fe9fe17fa', 'Arquitecturas Limpias', ARQUITECTURAS_KEY, 'Limpias')],
-    ['capas', new Referencia('https://geeks.ms/jkpelaez/2009/05/30/arquitectura-basada-en-capas/', 'Arquitectura a Capas', ARQUITECTURAS_KEY, 'Capas')],
+    [ARQUITECTURAS_CAPAS, new Referencia('https://geeks.ms/jkpelaez/2009/05/30/arquitectura-basada-en-capas/', 'Arquitectura a Capas', ARQUITECTURAS_KEY, 'Capas')],
     ['cliente', new Referencia('https://desarrolloweb.com/articulos/arquitectura-cliente-servidor.html', 'Arquitectura Cliente-Servidor', ARQUITECTURAS_KEY, 'Cliente Servidor')],
     ['microServiciosFundamentals', new Referencia('https://medium.com/@kumuthini.program/micro-services-fundamentals-dc0fc369d75e', 'Bases de Micro Servicios', ARQUITECTURAS_KEY, 'Bases de Microservicios')],
     ['servicios', new Referencia('https://aws.amazon.com/es/microservices/', 'MicroServicios', ARQUITECTURAS_KEY, 'Microservicios')],
@@ -236,7 +238,7 @@ export const ESTRATEGIAS_DESARROLLO_REF = new Map<string, Referencia>([
     ['analisis', new Referencia('https://www.ubjonline.mx/en-que-consisten-los-analisis-top-down-y-bottom-up/', 'Bottom Up & Top Down', ESTRATEGIAS_DESARROLLO_KEY, 'Enfoques')],
     ['tld', new Referencia('https://medium.com/swlh/tdd-vs-tld-and-what-is-the-minimum-code-coverage-needed-f380181d3400', 'Tests al final del desarrollo', ESTRATEGIAS_DESARROLLO_KEY, 'TLD vs TDD')],
     ['bduf', new Referencia('https://www.freecodecamp.org/news/the-pros-and-cons-of-big-design-up-front-and-what-i-do-instead-375f00542dec/', 'Big Design Up Front', ESTRATEGIAS_DESARROLLO_KEY, 'BDUF')],
-    ['screamingDesign', new Referencia('https://medium.com/@mubashirhussain29/the-screaming-architecture-story-08750691291f', 'Diseño a gritos', ESTRATEGIAS_DESARROLLO_KEY, 'Gritos')],
+    [ESTRATEGIAS_DESARROLLO_SCREAMING_DESIGN, new Referencia('https://medium.com/@mubashirhussain29/the-screaming-architecture-story-08750691291f', 'Diseño a gritos', ESTRATEGIAS_DESARROLLO_KEY, 'Gritos')],
 ]);
 
 export const FRAMEWORKS_KEY = 'Frameworks';
@@ -246,7 +248,7 @@ export const FRAMEWORKS_REF = new Map<string, Referencia>([
     ['iod', new Referencia('https://www.arquitecturajava.com/el-patron-de-inyeccion-de-dependencia/', 'Inyección de dependencias', FRAMEWORKS_KEY, 'Inyección de dependencias')],
     ['scafolding', new Referencia('https://medium.com/@srinathsrs104/scaffolding-54ac4e47e133', 'Creación automatica de codigo', FRAMEWORKS_KEY, 'Scaffolding')],
     ['iodSpring', new Referencia('https://medium.com/@priyaroul99/what-is-constructor-injection-and-why-should-you-use-it-in-spring-bdb3e1857c58', 'Inyección de Dependencias en Spring', FRAMEWORKS_KEY, 'IoD Spring', '2023/12/02')],
-    [FRAMEWORKS_CODE_STRUCTURE, new Referencia('https://medium.com/@akintopbas96/spring-boot-code-structure-package-by-layer-vs-package-by-feature-5331a0c911fe', 'Paquetes por estructura Vs funcionalidad', FRAMEWORKS_KEY, 'Estructura del codigo', '2024/05/18').addRelatedItem(META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL).addRelatedItem(POO_POO)],
+    [FRAMEWORKS_CODE_STRUCTURE, new Referencia('https://medium.com/@akintopbas96/spring-boot-code-structure-package-by-layer-vs-package-by-feature-5331a0c911fe', 'Paquetes por capas Vs funcionalidad', FRAMEWORKS_KEY, 'Estructura del codigo', '2024/05/18').addRelatedItem(META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL).addRelatedItem(POO_POO).addRelatedItem(ARQUITECTURAS_CAPAS).addRelatedItem(ESTRATEGIAS_DESARROLLO_SCREAMING_DESIGN)],
 ]);
 
 export const GIT_KEY = 'Git';

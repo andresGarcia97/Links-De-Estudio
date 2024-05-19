@@ -1,4 +1,4 @@
-import { FRAMEWORKS_CODE_STRUCTURE } from "../linkReferencia";
+import { ARQUITECTURAS_CAPAS, FRAMEWORKS_CODE_STRUCTURE } from "../linkReferencia";
 import { Item } from "../models";
 
 export class Content1 {
@@ -359,7 +359,7 @@ export const ARQUITECTURAS =
                 '- Escalabilidad y mantenibilidad, de manera que la degradación del codigo y futuros cambios sean sostenibles con el tiempo',
                 '- Cultura entre los equipos, ya que se requiere de un compromiso y una comprensión compartida por los desarrolladores ',
             ]),
-        new Item('capas',
+        new Item(ARQUITECTURAS_CAPAS,
             [
                 '- Se basa en la distribución de roles y responsabilidades de forma jerarquica en cada capa ',
                 '- Puede tener N capas, generalmente son 3, de la cual se desprende MVC ',

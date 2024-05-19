@@ -1,3 +1,4 @@
+import { ESTRATEGIAS_DESARROLLO_SCREAMING_DESIGN } from "../linkReferencia";
 import { Item } from "../models";
 
 export class Content2 {
@@ -1494,7 +1495,7 @@ export const ESTATEGIAS_DESARROLLO =
                 ' - para evitarnos vernos truncados al seguirlas a raja tabla, con caracteristicas que nos son completamente inutiles ',
                 '- Tanto BDUF como Agile pueden implementar aspectos positivos del otro si dejar de ser lo que son ',
             ]),
-        new Item('screamingDesign',
+        new Item(ESTRATEGIAS_DESARROLLO_SCREAMING_DESIGN,
             [
                 '- DDD trata basicamente de delimitar lineas, y crear contextos acotados, donde cada componente tenga su propia responsabilidad, ',
                 ' - y se pueda seguir comunicando con otros, para descubrir estos limites, el <strong>Tio Bob</strong> ha dicho <em>Trazar líneas entre las cosas que importan y las que no</em>',
