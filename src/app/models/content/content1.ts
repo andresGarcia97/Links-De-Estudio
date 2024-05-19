@@ -1,4 +1,4 @@
-import { ARQUITECTURAS_CAPAS, FRAMEWORKS_CODE_STRUCTURE } from "../linkReferencia";
+import { ARQUITECTURAS_CAPAS, FRAMEWORKS_CODE_STRUCTURE, META_CARACTERISTICAS_BACKWARD_AND_BREAKING_CHANGES } from "../linkReferencia";
 import { Item } from "../models";
 
 export class Content1 {
@@ -1267,6 +1267,16 @@ export const META_CARACTERISTICAS =
                 '',
                 '- Las operaciones <strong>Asyncronicas</strong> no se recomiendan, cuando se necesitan encadenar tareas que tienen un orden especifico de ejecución ',
                 ' - o necesitan estar sincronizadas y ser fiables, como el acceso y la modificación de datos',
+            ]),
+        new Item(META_CARACTERISTICAS_BACKWARD_AND_BREAKING_CHANGES,
+            [
+                '- La retro compatibilidad(<em>backward-compatible</em>) y los cambios importantes(<em>breaking changes</em>) son 2 conceptos que van ligados ',
+                '- Un Breaking Change, es cualquier cambio que modifique la forma de consumir o usar cualquier servicio, afectando a otros sistemas o personas ',
+                ' - que hagan uso de versiones previas, haciendo que fallen o presente problemas, si el cambio, no afecta el comportamiento observable ',
+                ' - entonces se considera un cambio retrocompatible',
+                '- Un aspecto ideal de la programación en general, es solamente hacer estos tipos de cambios cuando ',
+                ' - aportan beneficios importantes y tienen una razon importante de ser, como para romper la compatibilidad con versiones anteriores',
+                '- Es importante plantearlos, documentarlos y realizarlos de manera adecuada, ya que pueden tener afectaciones desconocidas <em>Ley de Hyrum</em>'
             ])
     ];
 

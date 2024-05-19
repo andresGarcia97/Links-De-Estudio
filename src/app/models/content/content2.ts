@@ -1,4 +1,4 @@
-import { ESTRATEGIAS_DESARROLLO_SCREAMING_DESIGN } from "../linkReferencia";
+import { ESTRATEGIAS_DESARROLLO_SCREAMING_DESIGN, LEYES_HYRUM } from "../linkReferencia";
 import { Item } from "../models";
 
 export class Content2 {
@@ -1255,7 +1255,7 @@ export const LEYES =
             ]),
         new Item('pendulo',
             [
-                '- Permite explicar comportamiento humanos cuando son llevados al extremo; Se puede producir por diferentes razones: ',
+                '- Permite explicar comportamientos humanos cuando son llevados al extremo; Se puede producir por diferentes razones: ',
                 ' <strong>- Idealización del opuesto:</strong> Cuando estamos constreñidos en algo, tendemos a idealizar el contrario ',
                 ' <strong>- Necesidad de reafirmación:</strong> Buscando un gran impacto, generalmente elegimos los polos opuestos al ser vistosos ',
                 ' <strong>- Comodidad del extremo:</strong> Son comodos ya que no tienen contenciones ni filtros, lo opuesto de una posicion intermedia ',
@@ -1263,7 +1263,7 @@ export const LEYES =
                 '- Los extremos no necesariamente son malos, ya que permiten tener nuevas experiencias, y conocer nuevos puntos de vista ',
                 '- Esto se debe hacer de manera racional, y bajo nuestra propia elección, para que podamos reflexionar en vez de seguir ciegamente ',
             ]),
-        new Item('hyrum',
+        new Item(LEYES_HYRUM,
             [
                 '- Cualquier cosa que ofrezcas será usada por alguien',
                 '- El mantenimiento de las aplicaciones siempre va a ser una constante, por lo que reducir características inútiles es una opción de reducirlo ',
