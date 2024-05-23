@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { META_CARACTERISTICAS_BACKWARD_AND_BREAKING_CHANGES, LinkReferencia } from 'src/app/models/linkReferencia';
+import { MALAS_PRACTICAS_TRAIN_WECKS, LinkReferencia } from 'src/app/models/linkReferencia';
 
 const references = new LinkReferencia()
 
@@ -17,7 +17,7 @@ export class HomeComponent {
   }
 
   public routeToLastItem(): void {
-    const newItem = META_CARACTERISTICAS_BACKWARD_AND_BREAKING_CHANGES;
+    const newItem = MALAS_PRACTICAS_TRAIN_WECKS;
     const section = references.components.get(newItem)?.component!;
     this.router.navigateByUrl(`/${references.routesAndSections.get(section)}`, { state: { newItem } })
   }

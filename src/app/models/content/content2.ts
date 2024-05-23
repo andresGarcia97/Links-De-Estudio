@@ -1,4 +1,5 @@
-import { ESTRATEGIAS_DESARROLLO_SCREAMING_DESIGN, LEYES_HYRUM } from "../linkReferencia";
+import { ESTRATEGIAS_DESARROLLO_SCREAMING_DESIGN, LEYES_HYRUM, MALAS_PRACTICAS_ANTI_PATRONES_ARQUITECTURAS,
+    MALAS_PRACTICAS_TRAIN_WECKS } from "../linkReferencia";
 import { Item } from "../models";
 
 export class Content2 {
@@ -1996,7 +1997,7 @@ export const MALAS_PRACTICAS =
                 ' - de los componentes, hace que probarlos sea un autentico calvario, por lo que para solventar este problema, se dice que un microservicio debe ser ',
                 ' - <em>observable</em>, una manera más elegante de depurar, pero no le quita el hecho de que es una forma reactiva para encontrar errores, en vez de proactiva ',
             ]),
-        new Item('atipatronesArquitecturas',
+        new Item(MALAS_PRACTICAS_ANTI_PATRONES_ARQUITECTURAS,
             [
                 '- Por mejor pensada que este alguna arquitectura, siempre tendra algun defecto o problema conocido, no hay ninguna que sea perfecta ',
                 '- Esto tambien depende del manejo, correctamente solo seran problemas de poco peso, ó de lo contrario seran problemas sistemicos ',
@@ -2038,6 +2039,16 @@ export const MALAS_PRACTICAS =
                 '- En cambio La logica y la manipulación de los objetos, suele estar en los servicios, o capas superiores al dominio',
                 '- El principal problema de este enfoque es que encurre en los costos de <em>DDD</em> sin aprovechar sus beneficios',
                 '- Este antipatron suele ser comun, ya que hay tecnologias y frameworks que fomentan este enfoque',
+            ]),
+        new Item(MALAS_PRACTICAS_TRAIN_WECKS,
+            [
+                '- En la vida real un choque de trenes son acontecimientos nefastos, donde suelen resultar gente herida',
+                '- Sin embargo no es raro que suceda en el desarrollo de software, cuando un metodo llama a otro y a otro, creando una cadena demasiado larga',
+                '- <strong>Ejemplo:</strong><em> university().getFaculty().getDean().getName() </em>',
+                '- Cosas como estas existen debido a problemas de fondo como una mala modularización ó una división ineficaz de responsabilidades ',
+                '- Esto atenta contra los principios de POO ya que existe un acoplamiento indebido ó una envidia de caracteristicas, dependiendo del caso ',
+                '- Tambien esta en contra de la <em>Ley de demeter</em> que consiste en no hablar con extraños, ni inmiscuirnos en sus responsabilidades',
+                '- No es una excepción, pero tampoco esta mal visto, que este mismo encadenamiento de metodos se de, en flujos y/o operaciones con datos'
             ])
     ];
 

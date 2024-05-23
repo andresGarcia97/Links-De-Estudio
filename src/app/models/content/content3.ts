@@ -1,4 +1,4 @@
-import { POO_POO } from "../linkReferencia";
+import { POO_POO, POO_POO_PILARES } from "../linkReferencia";
 import { Item } from "../models";
 
 export class Content3 {
@@ -382,7 +382,7 @@ export const POO =
                 '<strong>Propiedades:</strong> Atributos o caracteristicas de un objeto, estos pueden pertener a un solo objeto ó ser comun a todos los objetos ',
                 '<strong>Metodos:</strong> Comportamientos o acciones de un objeto, que este puede realizar al ser invocadas ',
             ]),
-        new Item('pooPilares',
+        new Item(POO_POO_PILARES,
             [
                 '<strong>Encasulapción:</strong> Todas las propiedades del objeto solo le competen al objeto ó su clase ',
                 '<strong>Abstracción:  </strong> Las acciones son publicas pero su complejidad esta oculta; todos necesitan el que, más no interesa el como ',
