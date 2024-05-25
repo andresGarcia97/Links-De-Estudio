@@ -1,4 +1,4 @@
-import { AGILES_OUTPUT_AND_OUTCOME, ARQUITECTURAS_CAPAS, FRAMEWORKS_CODE_STRUCTURE, META_CARACTERISTICAS_BACKWARD_AND_BREAKING_CHANGES } from "../linkReferencia";
+import { AGILES_OUTPUT_AND_OUTCOME, ARQUITECTURAS_CAPAS, CONTENEDORES_SECURE_ORCHESTRATION, FRAMEWORKS_CODE_STRUCTURE, META_CARACTERISTICAS_BACKWARD_AND_BREAKING_CHANGES } from "../linkReferencia";
 import { Item } from "../models";
 
 export class Content1 {
@@ -1471,6 +1471,17 @@ export const CONTENEDORES =
                 '- Para el ambiente de ejecución, Docker dono su formato de contenedores y su ejecución, para que sirviera como base ',
                 '',
                 '- Para encontrar los links originales a cada especificación, ademas de otros datos y la comunidad del proyecto, puede revisar la fuente ',
+            ]),
+        new Item(CONTENEDORES_SECURE_ORCHESTRATION,
+            [
+                '- Teniendo en cuenta que un contenedor, es un paquete ejecutable, que contiene todo lo necesario para el tiempo de ejecución ',
+                '- Esta ejecución es entandar, solucionando muchos problemas de compatibilidad que antes existian, además de estar segregada y aislada',
+                '- Durante mucho tiempo el mayor exponente de los contenedores ha sido <em>Docker</em>, pero tambien estan surgiendo alternativas como <em>Podman</em>',
+                '- Este con unfoque de tipo <em>Rootless</em> donde no se necesita tener acceso a la raiz para funcionar, al contrario que Docker que es <em>Rootful</em>',
+                '- Acceder a la raiz y tener un daemon(servicio) permite que Docker pueda leer archivos, instalar programas, y muchas más acciones,',
+                ' - que facilitan la administración y la usabilidad, pero al mismo tiempo son atractivas para piratas informaticos',
+                '- Pero al no tener acceso a la raiz, Podman depende de otras herramientas, para tener acceso y analizar los contenedores, no administrarlos ',
+                '- Como muchas herramientas, ambas tienen pros y contras, y como siempre es importante saber en que contexto y que necesidades se necesitan suplir ',
             ])
     ];
 

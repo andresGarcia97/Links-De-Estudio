@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { AGILES_OUTPUT_AND_OUTCOME, LinkReferencia } from 'src/app/models/linkReferencia';
+import { CONTENEDORES_SECURE_ORCHESTRATION, LinkReferencia } from 'src/app/models/linkReferencia';
 
 const references = new LinkReferencia()
 
@@ -17,7 +17,7 @@ export class HomeComponent {
   }
 
   public routeToLastItem(): void {
-    const newItem = AGILES_OUTPUT_AND_OUTCOME;
+    const newItem = CONTENEDORES_SECURE_ORCHESTRATION;
     const section = references.components.get(newItem)?.component!;
     this.router.navigateByUrl(`/${references.routesAndSections.get(section)}`, { state: { newItem } })
   }
