@@ -1,4 +1,4 @@
-import { ARQUITECTURAS_CAPAS, FRAMEWORKS_CODE_STRUCTURE, META_CARACTERISTICAS_BACKWARD_AND_BREAKING_CHANGES } from "../linkReferencia";
+import { AGILES_OUTPUT_AND_OUTCOME, ARQUITECTURAS_CAPAS, FRAMEWORKS_CODE_STRUCTURE, META_CARACTERISTICAS_BACKWARD_AND_BREAKING_CHANGES } from "../linkReferencia";
 import { Item } from "../models";
 
 export class Content1 {
@@ -33,7 +33,7 @@ export const AGILES =
                 '<strong><em>C</em>ould have</strong> (Podria tener):   Caracteristica deseable, pero que no es necesaria y solo sera implementada si hay posibilidades ',
                 '<strong><em>W</em>on´t have</strong> (No tendra):      Son requisitos que estan descartados por esta vez, pero seran incluidos a futuro ',
                 '',
-                '<strong>Pros:</strong> Tecnica simple de usar, al basarse en principios simples y basarse en la experiencia humana',
+                '<strong>Pros:</strong> Tecnica simple de usar, al basarse en principios simples, además de la experiencia humana',
                 '<strong>Contras:</strong> Si no hay liderazgo o experiencia previa, la subjetividad sera poco efectiva ',
             ]),
         new Item('scoring',
@@ -214,6 +214,39 @@ export const AGILES =
                 '<strong>Ley de Ziv:</strong> Los requisitos nunca se entienden completamente ',
                 '<strong>Ley de Humphrey:</strong> Los usuarios no saben realmente el software que quieren, hasta que lo ven funcionando ',
                 '<strong>Lema de Wegner:</strong> Un sistema interactivo, nunca podra ser ni especificado ni testeado por completo',
+            ]),
+        new Item(AGILES_OUTPUT_AND_OUTCOME,
+            [
+                '- En la actualizadad, todavia es dificil determinar la relación de lo que realizan los equipos y el valor de negocio generado a la compañia ',
+                '- Los gerentes piensan en maximizar el valor generado (<em>Impacto</em>), lo cual se puede traducir en en mayores ingresos, mejor imagen, o nuevos mercados ',
+                '- Por otro lado los equipos agiles, estan preocupados del <em>Output</em> que consiste en indicadores asociados a realizar entregables, como: ',
+                ' - puntos de historia, velocidad, nuevos features, cantidad de usuarios por sprint, sin embargo ambos indicadores no tienen relación entre si ',
+                '- Sin una relación directa, es dificil medir causas y efectos, sin contar el retraso, ya que las acciones no tienen una afectación inmediata ',
+                '- Una solución a este problema es el concepto de <em>Outcome</em> el cual une ambos conceptos, se define como: ',
+                ' - <em>Un cambio en el comportamiento humano que conduce a un resultado positivo, en el negocio(impacto)</em> como clientes o colaboradores ',
+                '- Para encontrar estos Outcomes, no es una tarea sencilla, se requiere practica y dedicación con foco en el cliente, y existen tecnicas como: ',
+                '',
+                '<strong>Las 3 preguntas:</strong>',
+                '- La primera pregunta, es determinar los comportamientos de los clientes(Outcomes) que son beneficiosos para el Impacto',
+                '- Luego se debe descubrir como generar más de esos comportamientos y mediante cuales entregables(Outputs) se pueden aumentar ',
+                '- Finalmente se debe retroalimentar sobre los resultados de estas acciones para comprobar los beneficios, mediantes ciclos cortos',
+                '',
+                '             <strong> Output                                           Outcome                                Impacto        </strong> ',
+                ' Mejorar la cobertura de las pruebas unitarias      Disminuir reclamos de los clientes      Mejorar la impresión con los clientes      ',
+                ' Reducción de la deuda tecnica                      Reducción y solución de errores         Aumentar la calidad del software           ',
+                ' Realización de pruebas de regresión                                                                                                   ',
+                '',
+                ' Construir un pozo de agua, en el pueblo            Disminución de tiempos de traslado      Mejor calidad de vida para el pueblo       ',
+                '',
+                '',
+                '<strong>Tecnica PRO:</strong> Problema-Remedio-Outcome',
+                '- Se basa en la subjetividad y en la experiencia de los clientes para encontrar problemas',
+                '- Y luego consultan con personas calificadas para encontrar posibles o viabilidad de las propuestas ',
+                '- Sin embargo, no se tiene en cuenta la profundidad de los resultados(Outcomes)',
+                '',
+                '<strong>Outcome Mapping:</strong>',
+                '- Esta tecnica permite encontrar los Outcomes deseados mediante reuniones presenciales y una exposición de ideas, con los objetivos deseados',
+                '- Asi se definen los impactos estrategicos más deseados y como aumentarlos',
             ])
     ];
 
