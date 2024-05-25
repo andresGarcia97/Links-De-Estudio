@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ESTATEGIAS_DESARROLLO } from 'src/app/models/content/content2';
+import { ESTATEGIAS_DESARROLLO } from 'src/app/models/content/content4';
 import { AGILES_KEY, CD_CI_KEY, ESTRATEGIAS_DESARROLLO_REF, LinkReferencia, METODOLOGIAS_KEY, REQUISITOS_KEY, TESTING_KEY } 
 from 'src/app/models/linkReferencia';
 

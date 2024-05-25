@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CONTENEDORES } from 'src/app/models/content/content1';
+import { CONTENEDORES } from 'src/app/models/content/content4';
 import { CD_CI_KEY, CONTAINERS, HARDWARE_KEY, LinkReferencia, NUBE_KEY, SECURITY_KEY } from 'src/app/models/linkReferencia';
 
 @Component({

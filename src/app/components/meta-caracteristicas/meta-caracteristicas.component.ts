@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { META_CARACTERISTICAS } from 'src/app/models/content/content1';
+import { META_CARACTERISTICAS } from 'src/app/models/content/content4';
 import { CALIDAD_KEY, META_ESTRUCTURAS_KEY, HARDWARE_KEY, LinkReferencia, META_CARATERISTICAS_REF, POO_KEY }
 from 'src/app/models/linkReferencia';
 
