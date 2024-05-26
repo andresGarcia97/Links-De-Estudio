@@ -1,7 +1,7 @@
 import {
     AGILES_OUTPUT_AND_OUTCOME, ARQUITECTURAS_CAPAS, CONTENEDORES_SECURE_ORCHESTRATION, ESTRATEGIAS_DESARROLLO_SCREAMING_DESIGN,
     FRAMEWORKS_CODE_STRUCTURE, LEYES_HYRUM, MALAS_PRACTICAS_ANTI_PATRONES_ARQUITECTURAS, MALAS_PRACTICAS_TRAIN_WECKS,
-    META_CARACTERISTICAS_BACKWARD_AND_BREAKING_CHANGES, POO_POO, POO_POO_PILARES
+    META_CARACTERISTICAS_BACKWARD_AND_BREAKING_CHANGES, POO_INMUTABILITY, POO_POO, POO_POO_PILARES
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -1447,7 +1447,7 @@ export const POO =
                 ' - Los componentes se pueden agregar/cambiar/reemplazar en tiempo de ejecución ',
                 ' - La mayoria de los comportamientos se pueden especificar de manera generica usando estructuras de datos algebraicas, sin herencia '
             ]),
-        new Item('inmutability',
+        new Item(POO_INMUTABILITY,
             [
                 '- Es la propiedad de un objeto de no cambiar su estado, una vez haya sido declarado ',
                 '- Esto permite que sean seguros en lenguajes que soportan el uso de hilos (thread-safe) ',

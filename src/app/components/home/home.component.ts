@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { CONTENEDORES_SECURE_ORCHESTRATION, LinkReferencia } from 'src/app/models/linkReferencia';
+import { PATRONES_PERSISTENCE_PATTERNS, LinkReferencia } from 'src/app/models/linkReferencia';
 
 const references = new LinkReferencia()
 
@@ -17,7 +17,7 @@ export class HomeComponent {
   }
 
   public routeToLastItem(): void {
-    const newItem = CONTENEDORES_SECURE_ORCHESTRATION;
+    const newItem = PATRONES_PERSISTENCE_PATTERNS;
     const section = references.components.get(newItem)?.component!;
     this.router.navigateByUrl(`/${references.routesAndSections.get(section)}`, { state: { newItem } })
   }

@@ -1,3 +1,4 @@
+import { PARADIGMAS_PARADIGMA_DATOS } from "../linkReferencia";
 import { Item } from "../models";
 
 export class Content1 {
@@ -1119,7 +1120,7 @@ export const PARADIGMAS =
                 '<strong>- Repetitiva:</strong> Las acciones que estan dentro del bucle, se realizan, siempre que la condicion sea cierta, verificando antes o despues la afirmación ',
                 '<strong>- Anidamiento:</strong> Las estructuras Selectivas y repetitivas, pueden ser anidadas una dentro de la otra ',
             ]),
-        new Item('paradigmaDatos',
+        new Item(PARADIGMAS_PARADIGMA_DATOS,
             [
                 '- Es un paradigma de programación destinado a simplificar el diseño, y la implementación de sistemas, donde la información esta en el centro ',
                 '- En lugar de diseñar sistemas de información que combinan codigo y datos, <strong>DOP</strong> fomenta la separación entre codigos y datos ',

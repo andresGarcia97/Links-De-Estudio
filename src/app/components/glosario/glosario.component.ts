@@ -4,6 +4,7 @@ import { Content1 } from 'src/app/models/content/content1';
 import { Content2 } from 'src/app/models/content/content2';
 import { Content3 } from 'src/app/models/content/content3';
 import { Content4 } from 'src/app/models/content/content4';
+import { Content5 } from 'src/app/models/content/content5';
 import { LinkFuente } from 'src/app/models/linkFuente';
 import { LinkReferencia } from 'src/app/models/linkReferencia';
 import { Item } from 'src/app/models/models';
@@ -16,16 +17,11 @@ export class GlosarioComponent implements OnInit {
 
   @ViewChild("inputSearch") inputSearch!: ElementRef;
 
-  temas1 = new Content1();
-  temas2 = new Content2();
-  temas3 = new Content3();
-  temas4 = new Content4();
   fuentes = new LinkFuente().fuentes;
 
-  temas: Item[] = [];
+  temas = Array.from(new Content1().temas).concat(new Content2().temas).concat(new Content3().temas).concat(new Content4().temas).concat(new Content5().temas);
 
   ngOnInit(): void {
-    this.temas = Array.from(this.temas1.temas).concat(this.temas2.temas).concat(this.temas3.temas).concat(this.temas4.temas);
     console.info("%c Actualmente son: " + this.temas.length + " Temas ", "color:#000; font-size: 16px;background:#FFBA08; font-weight: bold;");
     console.info("%c Tambien hay: " + this.fuentes.size + " Temas practicos ", "color:white; font-size: 16px;background:#1976d2; font-weight: bold;");
   }
