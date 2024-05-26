@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { CONOCIMIENTOS_EMPIRICOS } from 'src/app/models/content/content2';
-import { ANALISIS_KEY, CONOCIMIENTO_EMPIRICO, LEYES_KEY, LinkReferencia, PERSONAS_KEY, WEB_KEY } from 'src/app/models/linkReferencia';
+import { CONOCIMIENTOS_EMPIRICOS } from 'src/app/models/content/content5';
+import { ANALISIS_KEY, CONOCIMIENTO_EMPIRICO, LEYES_KEY, LinkReferencia, PERSONAS_KEY, PRINCIPIOS_KEY, WEB_KEY } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-conocimientos-empiricos',
@@ -21,10 +21,11 @@ export class ConocimientosEmpiricosComponent implements OnInit {
   ngOnInit(): void {
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
-    this.relatedSections.set(ANALISIS_KEY, routes.get(ANALISIS_KEY)!);
-    this.relatedSections.set(PERSONAS_KEY, routes.get(PERSONAS_KEY)!);
-    this.relatedSections.set(LEYES_KEY,    routes.get(LEYES_KEY)!);
-    this.relatedSections.set(WEB_KEY,      routes.get(WEB_KEY)!);
+    this.relatedSections.set(PRINCIPIOS_KEY, routes.get(PRINCIPIOS_KEY)!);
+    this.relatedSections.set(ANALISIS_KEY,   routes.get(ANALISIS_KEY)!);
+    this.relatedSections.set(PERSONAS_KEY,   routes.get(PERSONAS_KEY)!);
+    this.relatedSections.set(LEYES_KEY,      routes.get(LEYES_KEY)!);
+    this.relatedSections.set(WEB_KEY,        routes.get(WEB_KEY)!);
   }
 
 }

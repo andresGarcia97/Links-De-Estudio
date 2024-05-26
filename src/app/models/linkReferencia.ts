@@ -60,6 +60,7 @@ export const CONTENEDORES_SECURE_ORCHESTRATION = 'secureOrchestration';
 export const PATRONES_PERSISTENCE_PATTERNS = 'persistencePatterns';
 export const NUBE_CAP_TEOREMA = 'capTeorema';
 export const PARADIGMAS_PARADIGMA_DATOS = 'paradigmaDatos';
+export const CONOCIMIENTOS_EMPIRICOS_PAIR_PROGRAMMING = 'pairPrograming';
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -197,14 +198,15 @@ export const CONOCIMIENTO_EMPIRICO = new Map<string, Referencia>([
     ['prejuicios', new Referencia('https://www.boream.com/insights/sesgos-cognitivos-y-prejuicios-en-los-procesos-de-diseno-de-interfaz-como-combatirlos', 'Prejuicios', CONOCIMIENTO_EMPIRICO_KEY, 'Prejuicios')],
     ['multitarea', new Referencia('https://www.sodexo.es/blog/multitarea-multitasking/', 'Pros y Contras del multitasking', CONOCIMIENTO_EMPIRICO_KEY, 'Multitareas')],
     //['maxwellCurve', new Referencia('https://blog.axosoft.com/the-maxwell-curve-blunder-in-the-name-of-scrum/', 'La curva de Maxwell', CONOCIMIENTO_EMPIRICO_KEY, 'Curva de Maxwell')],
-    ['maxwellCurve', new Referencia(' https://www.scrumnetwork.com/blog/scrum-no-te-apresures-no-te-detengas', 'La curva de Maxwell', CONOCIMIENTO_EMPIRICO_KEY, 'Curva de Maxwell', "", "2024/04/16")],
+    ['maxwellCurve', new Referencia(' https://www.scrumnetwork.com/blog/scrum-no-te-apresures-no-te-detengas', 'La curva de Maxwell', CONOCIMIENTO_EMPIRICO_KEY, 'Curva de Maxwell', '', '2024/04/16')],
     ['dunningKruger', new Referencia('https://www.awenpsicologia.com/efecto-dunning-kruger/', 'Efecto Dunning-Kruger', CONOCIMIENTO_EMPIRICO_KEY, 'Dunning-Kruger')],
     ['reforzamientoSkinner', new Referencia('https://psicologiaymente.com/psicologia/teoria-reforzamiento-skinner', 'Reforzamiento de conductas', CONOCIMIENTO_EMPIRICO_KEY, 'Reforzamiento')],
     ['pastaTheory', new Referencia('https://www.techtarget.com/searchsoftwarequality/tip/Fix-spaghetti-code-and-other-pasta-theory-antipatterns#:~:text=The%20pasta%20theory%20of%20programming,ravioli%20code%20and%20pizza%20code', 'Teoria de la pasta', CONOCIMIENTO_EMPIRICO_KEY, 'Codigo como pasta')],
-    ['thingsThatAreNotTaught', new Referencia('https://vadimkravcenko.com/shorts/things-they-didnt-teach-you/', 'Cosas que no se enseñan', CONOCIMIENTO_EMPIRICO_KEY, 'Cosas que no se enseñan', "2023/02/09")],
-    ['boilingFrog', new Referencia('https://www.linkedin.com/pulse/boiling-frog-syndrome-suyash-jaju/', 'Sindrome de la Rana Hervida', CONOCIMIENTO_EMPIRICO_KEY, 'Rana Hervida', "2024/04/16")],
-    ['boysScouts', new Referencia('https://www.linkedin.com/pulse/la-regla-de-los-boys-scouts-hugo-raher/', 'Regla de los Boys Scouts', CONOCIMIENTO_EMPIRICO_KEY, 'Boys Scouts', "2024/04/16")],
-    ['zeigarnik', new Referencia('https://psicologiaymente.com/psicologia/efecto-zeigarnik', 'Efecto Zeigarnik', CONOCIMIENTO_EMPIRICO_KEY, 'Efecto Zeigarnik', "2024/05/13")],
+    ['thingsThatAreNotTaught', new Referencia('https://vadimkravcenko.com/shorts/things-they-didnt-teach-you/', 'Cosas que no se enseñan', CONOCIMIENTO_EMPIRICO_KEY, 'Cosas que no se enseñan', '2023/02/09')],
+    ['boilingFrog', new Referencia('https://www.linkedin.com/pulse/boiling-frog-syndrome-suyash-jaju/', 'Sindrome de la Rana Hervida', CONOCIMIENTO_EMPIRICO_KEY, 'Rana Hervida', '2024/04/16')],
+    ['boysScouts', new Referencia('https://www.linkedin.com/pulse/la-regla-de-los-boys-scouts-hugo-raher/', 'Regla de los Boys Scouts', CONOCIMIENTO_EMPIRICO_KEY, 'Boys Scouts', '2024/04/16')],
+    ['zeigarnik', new Referencia('https://psicologiaymente.com/psicologia/efecto-zeigarnik', 'Efecto Zeigarnik', CONOCIMIENTO_EMPIRICO_KEY, 'Efecto Zeigarnik', '2024/05/13')],
+    [CONOCIMIENTOS_EMPIRICOS_PAIR_PROGRAMMING, new Referencia('https://stackoverflow.blog/2024/04/03/developers-with-ai-assistants-need-to-follow-the-pair-programming-model', 'Pair Programing con IA', CONOCIMIENTO_EMPIRICO_KEY, 'Pair Programing', '2024/05/26')],
 ]);
 
 export const LEYES_KEY = 'Leyes';
