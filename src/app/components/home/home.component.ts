@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { CONOCIMIENTOS_EMPIRICOS_PAIR_PROGRAMMING, LinkReferencia } from 'src/app/models/linkReferencia';
+import { NUBE_OBSERVABILIDAD, LinkReferencia } from 'src/app/models/linkReferencia';
 
 const references = new LinkReferencia()
 
@@ -17,7 +17,7 @@ export class HomeComponent {
   }
 
   public routeToLastItem(): void {
-    const newItem = CONOCIMIENTOS_EMPIRICOS_PAIR_PROGRAMMING;
+    const newItem = NUBE_OBSERVABILIDAD;
     const section = references.components.get(newItem)?.component!;
     this.router.navigateByUrl(`/${references.routesAndSections.get(section)}`, { state: { newItem } })
   }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NUBE } from 'src/app/models/content/content2';
+import { NUBE } from 'src/app/models/content/content5';
 import { APIS_KEY, CD_CI_KEY, CONTENEDORES_KEY, LinkReferencia, NUBE_REF, SECURITY_KEY, WEB_KEY } from 'src/app/models/linkReferencia';
 
 @Component({
