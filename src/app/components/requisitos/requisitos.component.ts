@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { REQUISITOS } from 'src/app/models/content/content3';
-import { AGILES_KEY, ANALISIS_KEY, LinkReferencia, PERSONAS_KEY, REQUISITOS_REF, USER_HISTORIES_KEY } from 'src/app/models/linkReferencia';
+import { AGILES_KEY, ANALISIS_KEY, LinkReferencia, PEOPLE_KEY, REQUISITOS_REF, USER_HISTORIES_KEY } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-requisitos',
@@ -23,7 +23,7 @@ export class RequisitosComponent implements OnInit {
     const routes = new LinkReferencia().routesAndSections;
     this.relatedSections.set(USER_HISTORIES_KEY, routes.get(USER_HISTORIES_KEY)!);
     this.relatedSections.set(ANALISIS_KEY,       routes.get(ANALISIS_KEY)!);
-    this.relatedSections.set(PERSONAS_KEY,       routes.get(PERSONAS_KEY)!);
+    this.relatedSections.set(PEOPLE_KEY,         routes.get(PEOPLE_KEY)!);
     this.relatedSections.set(AGILES_KEY,         routes.get(AGILES_KEY)!);
   }
 

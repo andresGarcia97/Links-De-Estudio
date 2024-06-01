@@ -1,6 +1,6 @@
 import {
     AGILES_OUTPUT_AND_OUTCOME, ARQUITECTURAS_CAPAS, CONTENEDORES_SECURE_ORCHESTRATION, ESTRATEGIAS_DESARROLLO_SCREAMING_DESIGN,
-    FRAMEWORKS_CODE_STRUCTURE, LEYES_HYRUM, MALAS_PRACTICAS_ANTI_PATRONES_ARQUITECTURAS, MALAS_PRACTICAS_TRAIN_WECKS,
+    FRAMEWORKS_CODE_STRUCTURE, LEYES_HYRUM, LEYES_LEHMAN, MALAS_PRACTICAS_ANTI_PATRONES_ARQUITECTURAS, MALAS_PRACTICAS_TRAIN_WECKS,
     META_CARACTERISTICAS_BACKWARD_AND_BREAKING_CHANGES, POO_INMUTABILITY, POO_POO, POO_POO_PILARES
 } from "../linkReferencia";
 import { Item } from "../models";
@@ -1563,7 +1563,7 @@ export const LEYES =
                 '',
                 '- Para revisar los demás temas puedes ir a la fuente original ',
             ]),
-        new Item('lehman',
+        new Item(LEYES_LEHMAN,
             [
                 '<strong>- El contenido es eterno, pero no la materia que lo contiene</strong>',
                 '<strong>- Ley del cambio continuo:</strong> En la realidad las cosas deben seguir cambiando constantemente, de lo contrario eventualmente seran obsoletas ',

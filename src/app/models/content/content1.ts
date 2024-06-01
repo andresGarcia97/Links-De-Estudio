@@ -1,4 +1,4 @@
-import { PARADIGMAS_PARADIGMA_DATOS } from "../linkReferencia";
+import { PARADIGMAS_PARADIGMA_DATOS, PEOPLE_PROCESS_BLOAT } from "../linkReferencia";
 import { Item } from "../models";
 
 export class Content1 {
@@ -9,7 +9,7 @@ export class Content1 {
         ...WEB,
         ...META_ESTRUCTURAS,
         ...PARADIGMAS,
-        ...PERSONAS,
+        ...PEOPLE,
         ...OTROS,
         ...BASES_DE_DATOS,
         ...BASE_DE_DATOS_AVANZADO
@@ -1147,7 +1147,7 @@ export const PARADIGMAS =
             ])
     ];
 
-export const PERSONAS =
+export const PEOPLE =
     [
         new Item('personasYprocesos',
             [
@@ -1477,6 +1477,36 @@ export const PERSONAS =
                 '',
                 '- En muchas organizaciones, un analisis ONA, ayuda a las personas encargadas a diseñar y cambiar, la organización de las empresas, ',
                 ' - de manera más rapidas y adaptable, enfocandose en las areas por mejorar '
+            ]),
+        new Item(PEOPLE_PROCESS_BLOAT,
+            [
+                '- En las etapas iniciales de un proyecto, el desarrollo es agil, la toma rapida de decisiones y el entusiasmo por ofrecer valor',
+                '- Sin embargo en la medida que los proyectos ganan complejidad, muchos caen en antipatrones que disminuyen o matan la productividad',
+                '- Uno de estos es poco conocido pero insidioso, este monstruo burocratico que obstaculiza la innovación y mata silenciosamente la productividad ',
+                '- Esto inicia con el objetivo de optimizar las operaciones, mantener los estandares calidad y minimizar los riesgos ',
+                '',
+                '<strong>Cultura organizacional:</strong> Un proceso cauteloso puede instuir multiples capas de burocracia, suponiendo que más procesos equivalen a menos riesgos ',
+                '<strong>Falta de confianza:</strong> Una dirección sin confianza en el equipo de desarrollo, puede imponer niveles de aprobación y documentación engorrosos',
+                '<strong>Complejidad y escala:</strong> Crecer es sinonimo de complejidad, con más partes interesadas que a su vez tienen sus propios procesos <em>Leyes de Lehman</em>',
+                '<strong>Equipaje heredado:</strong> A veces los procesos redundantes persisten simplemente, "Porque siempre ha sido asi"',
+                '',
+                '<strong>Consecuencias:</strong>',
+                '<strong>- Productividad reducida</strong> Se dedica más tiempo al trabajo administrativo, que al desarrollo real',
+                '<strong>- Sin innovación:</strong> La burocracia, apaga la creatividad y limita los esfuerzos experimentales o por mejorar ',
+                '<strong>- Comercializacion retrasada:</strong> Más procesos y etapas, conducen a ciclos más largos, afectando la capacidad de respuesta hacia el mercado ',
+                '<strong>- Disminución de la moral:</strong> La perdida de agilidad, y la monotonia de los procesos por cumplir, debilita la moral del equipo',
+                '',
+                '<strong>Ejemplos durante el desarrollo:</strong>',
+                '- Revisiones excesivas de codigo, aun para cambios simples y monotonos',
+                '- Emisión de tickets complicadas, llegando a extremos donde es más costoso registrar el problema que solucionarlo ',
+                '- Informes obligatorios, tomando valioso tiempo para recopilar todas las tareas, y no en realizarlas ',
+                '- Reuniones excesivas, la comunicación entre las partes involucradas es primordial, estos espacios deben ser efectivos y utiles ',
+                '',
+                '<strong>¿ Como combatirla ?',
+                '- Auditorias periodicas, para evaluar la relevancia y eficacia de las acciones y procesos, asegurando que estas no contribuyan más al problema ',
+                '- Principios <em>Lean</em> y <em>Agile</em>, Adopte y transforme metodologias que ayuden a dar valor, con la menor cantidad de gastos posibles ',
+                '- Fomente la confianza y la autonomia en la medidad de lo posible',
+                '- Mantenga los procesos en lo minimo viable, solo aquellos procesos que sean absolutamente necesarios para mantener la calidad ',
             ])
     ];
 

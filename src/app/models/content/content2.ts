@@ -1,3 +1,4 @@
+import { METODOLOGIAS_AGILES, METODOLOGIAS_LEAN } from "../linkReferencia";
 import { Item } from "../models";
 
 export class Content2 {
@@ -1354,7 +1355,7 @@ export const HISTORIAS_USUARIO =
 
 export const METODOLOGIAS =
     [
-        new Item('agiles',
+        new Item(METODOLOGIAS_AGILES,
             [
                 '- Las metodologias agiles buscan hacer que cualquier desarrollo sea de alta calidad, con tiempos y costos reducidos ',
                 '- Estas permiten la rapida adaptación a cualquier caracteristica del proyecto',
@@ -1576,7 +1577,7 @@ export const METODOLOGIAS =
                 ' - Desarrollo de nuevos productos, posteriores al sprint ',
                 ' - Mejora continua de la gestión '
             ]),
-        new Item('lean',
+        new Item(METODOLOGIAS_LEAN,
             [
                 '- La idea principal es maximizar el valor de cara al cliente, y minimizar el desperdicio ',
                 '- Los procesos claves deben estar enfocados hacia el aumento de valor de manera continua, mientras se optimizan el flujo ',

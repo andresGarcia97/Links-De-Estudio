@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { LEYES } from 'src/app/models/content/content4';
-import { AGILES_KEY, CONOCIMIENTO_EMPIRICO_KEY, HARDWARE_KEY, LEYES_REF, LinkReferencia, PERSONAS_KEY } from 'src/app/models/linkReferencia';
+import { AGILES_KEY, CONOCIMIENTO_EMPIRICO_KEY, HARDWARE_KEY, LEYES_REF, LinkReferencia, PEOPLE_KEY } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-leyes',
@@ -22,8 +22,8 @@ export class LeyesComponent implements OnInit {
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
     this.relatedSections.set(CONOCIMIENTO_EMPIRICO_KEY, routes.get(CONOCIMIENTO_EMPIRICO_KEY)!);
-    this.relatedSections.set(PERSONAS_KEY,              routes.get(PERSONAS_KEY)!);
     this.relatedSections.set(HARDWARE_KEY,              routes.get(HARDWARE_KEY)!);
+    this.relatedSections.set(PEOPLE_KEY,                routes.get(PEOPLE_KEY)!);
     this.relatedSections.set(AGILES_KEY,                routes.get(AGILES_KEY)!);
   }
 

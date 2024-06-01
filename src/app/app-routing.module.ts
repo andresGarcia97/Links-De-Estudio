@@ -4,7 +4,7 @@ import {
   AGILES_KEY, ANALISIS_KEY, APIS_KEY, ARQUITECTURAS_KEY, BUENAS_PRACTICAS_KEY, CALIDAD_KEY, META_CARACTERISTICAS_KEY, CD_CI_KEY, COMPILACION_KEY,
   CONOCIMIENTO_EMPIRICO_KEY, CONTENEDORES_KEY, DATA_BASES_ADVANCED_KEY, DATA_BASES_KEY, ESTRATEGIAS_DESARROLLO_KEY, META_ESTRUCTURAS_KEY, FRAMEWORKS_KEY,
   GIT_KEY, HARDWARE_KEY, LEYES_KEY, MALAS_PRACTICAS_KEY, METODOLOGIAS_KEY, NEURO_MARKETING_KEY, NUBE_KEY, OTROS_KEY,
-  PARADIGMAS_KEY, PATRONES_KEY, PERSONAS_KEY, POO_KEY, PRINCIPIOS_KEY, REFACTORIZACION_KEY, REQUISITOS_KEY, SECURITY_KEY,
+  PARADIGMAS_KEY, PATRONES_KEY, PEOPLE_KEY, POO_KEY, PRINCIPIOS_KEY, REFACTORIZACION_KEY, REQUISITOS_KEY, SECURITY_KEY,
   SMELL_CODES_KEY, TESTING_ADVANCED_KEY, TESTING_KEY, UML_KEY, USER_HISTORIES_KEY, VERSIONAMIENTO_KEY, WEB_KEY
 } from 'src/app/models/linkReferencia';
 import { GlosarioComponent } from './components/glosario/glosario.component';
@@ -20,7 +20,7 @@ const routes: Routes = [
   { path: 'meta-estructuras', loadChildren: () => import('./components/meta-estructura/meta-estructura.module').then(m => m.MetaEstructuraModule), title: META_ESTRUCTURAS_KEY },
   { path: 'testing-avanzado', loadChildren: () => import('./components/pruebas-avanzadas/pruebas-avanzadas.module').then(m => m.PruebasAvanzadasModule), title: TESTING_ADVANCED_KEY },
   { path: 'calidad', loadChildren: () => import('./components/calidad/calidad.module').then(m => m.CalidadModule), title: CALIDAD_KEY },
-  { path: 'personas', loadChildren: () => import('./components/personas/personas.module').then(m => m.PersonasModule), title: PERSONAS_KEY },
+  { path: 'personas', loadChildren: () => import('./components/personas/personas.module').then(m => m.PersonasModule), title: PEOPLE_KEY },
   { path: 'nube', loadChildren: () => import('./components/nube/nube.module').then(m => m.NubeModule), title: NUBE_KEY },
   { path: 'glosario', component: GlosarioComponent, title: 'Glosario' },
   { path: 'fuentes', loadChildren: () => import('./components/fuentes/fuentes.module').then(m => m.FuentesModule), title: 'Fuentes' },

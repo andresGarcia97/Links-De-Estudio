@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ANALISIS } from 'src/app/models/content/content2';
-import { ANALISIS_REF, LinkReferencia, PERSONAS_KEY, LEYES_KEY } from 'src/app/models/linkReferencia';
+import { ANALISIS_REF, LinkReferencia, PEOPLE_KEY, LEYES_KEY } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-analisis',
@@ -21,8 +21,8 @@ export class AnalisisComponent implements OnInit {
   ngOnInit(): void {
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
-    this.relatedSections.set(PERSONAS_KEY, routes.get(PERSONAS_KEY)!);
-    this.relatedSections.set(LEYES_KEY,    routes.get(LEYES_KEY)!);
+    this.relatedSections.set(PEOPLE_KEY, routes.get(PEOPLE_KEY)!);
+    this.relatedSections.set(LEYES_KEY,  routes.get(LEYES_KEY)!);
   }
 
 }

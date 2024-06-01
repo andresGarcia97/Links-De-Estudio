@@ -29,7 +29,7 @@ export class LinkReferencia {
         [META_CARACTERISTICAS_KEY, 'metacaracteristicas'],    [META_ESTRUCTURAS_KEY, 'meta-estructuras'],
         [METODOLOGIAS_KEY, 'metodologias'],                   [NUBE_KEY, 'nube'],
         [OTROS_KEY, 'otros'],                                 [PATRONES_KEY, 'patrones'],
-        [PARADIGMAS_KEY, 'paradigmas'],                       [PERSONAS_KEY, 'personas'],
+        [PARADIGMAS_KEY, 'paradigmas'],                       [PEOPLE_KEY, 'personas'],
         [POO_KEY, 'poo'],                                     [TESTING_KEY, 'testing'],
         [TESTING_ADVANCED_KEY, 'testing-avanzado'],           [REFACTORIZACION_KEY, 'refactorizacion'],
         [REQUISITOS_KEY, 'requisitos'],                       [PRINCIPIOS_KEY, 'principios'],
@@ -52,6 +52,7 @@ export const ARQUITECTURAS_CAPAS = 'capas';
 export const ESTRATEGIAS_DESARROLLO_SCREAMING_DESIGN = 'screamingDesign';
 export const META_CARACTERISTICAS_BACKWARD_AND_BREAKING_CHANGES = 'backwardAndBreakingChanges';
 export const LEYES_HYRUM = 'hyrum';
+export const LEYES_LEHMAN = 'lehman';
 export const MALAS_PRACTICAS_ANTI_PATRONES_ARQUITECTURAS = 'antipatronesArquitecturas';
 export const MALAS_PRACTICAS_TRAIN_WECKS = 'trainWrecks';
 export const BUENAS_PRACTICAS_DEMETER = 'demeter';
@@ -62,6 +63,9 @@ export const NUBE_CAP_TEOREMA = 'capTeorema';
 export const NUBE_OBSERVABILIDAD = 'observabilidad';
 export const PARADIGMAS_PARADIGMA_DATOS = 'paradigmaDatos';
 export const CONOCIMIENTOS_EMPIRICOS_PAIR_PROGRAMMING = 'pairPrograming';
+export const PEOPLE_PROCESS_BLOAT = 'processBloat';
+export const METODOLOGIAS_AGILES = 'agiles';
+export const METODOLOGIAS_LEAN = 'lean';
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -213,7 +217,7 @@ export const CONOCIMIENTO_EMPIRICO = new Map<string, Referencia>([
 export const LEYES_KEY = 'Leyes';
 export const LEYES_REF = new Map<string, Referencia>([
     ['balas', new Referencia('https://gist.github.com/esparta/582e43af7b803e0aaf69', 'Balas de Plata', LEYES_KEY, 'Balas de Plata')],
-    ['lehman', new Referencia('https://medium.com/@cartontabla/las-leyes-de-lehman-b57c623c3404#:~:text=Las%20Leyes%20de%20Lehman%20son,digamos%20que%20podr%C3%ADan%20ser%20ampliadas)', 'Leyes de Lehman', LEYES_KEY, 'Leyes de Lehman')],
+    [LEYES_LEHMAN, new Referencia('https://medium.com/@cartontabla/las-leyes-de-lehman-b57c623c3404#:~:text=Las%20Leyes%20de%20Lehman%20son,digamos%20que%20podr%C3%ADan%20ser%20ampliadas)', 'Leyes de Lehman', LEYES_KEY, 'Leyes de Lehman')],
     ['conway', new Referencia('https://www.javiergarzas.com/2015/06/conway.html', 'Ley de Conway', LEYES_KEY, 'Ley de Conway')],
     ['murphy', new Referencia('https://www.caracteristicas.co/ley-de-murphy/', 'Ley de Murphy', LEYES_KEY, 'Ley de Murphy')],
     ['pendulo', new Referencia('http://www.grupocrece.es/blog/Psicolog%C3%ADala-ley-del-pndulo-en-psicologa', 'Ley del pendulo', LEYES_KEY, 'Ley del pendulo')],
@@ -361,7 +365,7 @@ export const META_ESTRUCTURAS_REF = new Map<string, Referencia>([
 
 export const METODOLOGIAS_KEY = 'Metodologias';
 export const METODOLOGIAS_REF = new Map<string, Referencia>([
-    ['agiles', new Referencia('https://www.iebschool.com/blog/que-son-metodologias-agiles-agile-scrum/', '¿ Que son las metodologias agiles ?', METODOLOGIAS_KEY, 'Agiles')],
+    [METODOLOGIAS_AGILES, new Referencia('https://www.iebschool.com/blog/que-son-metodologias-agiles-agile-scrum/', '¿ Que son las metodologias agiles ?', METODOLOGIAS_KEY, 'Agiles')],
     ['scrum', new Referencia('https://www.iebschool.com/blog/metodologia-scrum-agile-scrum/', 'Scrum', METODOLOGIAS_KEY, 'SCRUM')],
     ['scrumPrinciples', new Referencia('https://rootstack.com/es/blog/los-pilares-del-scrum-claves-para-la-gestion-de-procesos#:~:text=juntos%E2%80%9D%2C%20agregaron.-,Estos%20son%20los%20tres%20pilares%20del%20Scrum,%3A%20transparencia%2C%20inspecci%C3%B3n%20y%20adaptaci%C3%B3n', 'Principios Scrum', METODOLOGIAS_KEY, 'Principios Scrum')],
     ['kanban', new Referencia('https://www.iebschool.com/blog/metodologia-kanban-agile-scrum/', 'Kanban', METODOLOGIAS_KEY, 'Kanban')],
@@ -376,7 +380,7 @@ export const METODOLOGIAS_REF = new Map<string, Referencia>([
     ['rup', new Referencia('https://rupmetodologia.blogspot.com/?view=sidebar', 'Proceso Racional Unificado', METODOLOGIAS_KEY, 'RUP')],
     ['kaizen', new Referencia('https://www.movertis.com/blog/que-es-la-metodologia-kaizen/#:~:text=En%20japon%C3%A9s%2C%20las%20palabras%20Kai,se%20deja%20nunca%20de%20ejecutar', 'Kaizen', METODOLOGIAS_KEY, 'Kaizen')],
     ['scrumban', new Referencia('https://kanbantool.com/es/scrumban-scrum-y-kanb', 'Scrumban', METODOLOGIAS_KEY, 'Scrumban')],
-    ['lean', new Referencia('https://www.obsbusiness.school/blog/lean-management-metodologia-origenes-y-principios', 'Lean', METODOLOGIAS_KEY, 'Lean management')]
+    [METODOLOGIAS_LEAN, new Referencia('https://www.obsbusiness.school/blog/lean-management-metodologia-origenes-y-principios', 'Lean management', METODOLOGIAS_KEY, 'Lean')]
 ]);
 
 export const NUBE_KEY = 'Nube';
@@ -460,23 +464,24 @@ export const PATRONES_REF = new Map<string, Referencia>([
     ['patternsMicroservices', new Referencia('https://blog.openreplay.com/7-microservice-design-patterns-to-use/', 'Patrones & Microservicios', PATRONES_KEY, 'Patrones & Microservicios')],
 ]);
 
-export const PERSONAS_KEY = 'Personas';
+export const PEOPLE_KEY = 'Personas';
 export const PEOPLE_REF = new Map<string, Referencia>([
-    ['personasYprocesos', new Referencia('https://www.heflo.com/es/blog/bpm/personas-procesos-tecnologia/', 'Personas-Procesos-Tecnologias', PERSONAS_KEY, 'Personas y procesos')],
-    ['gestionDeServicios', new Referencia('https://www.ambit-bst.com/blog/itsm.-todo-lo-que-debes-saber-sobre-la-gesti%C3%B3n-de-servicios-it', 'Gestión de servicios tecnologicos', PERSONAS_KEY, 'Gestión de servicios')],
-    ['gestionDeActivos', new Referencia('https://freshservice.com/latam/it-asset-management-software/', 'Gestión de activos', PERSONAS_KEY, 'Gestión de activos')],
-    ['fidelizacion', new Referencia('https://elviajedelcliente.com/fidelizacion-de-clientes/', 'Fidelización de los clientes', PERSONAS_KEY, 'Fidelizacion')],
-    ['modeloDIKW', new Referencia('https://programmerclick.com/article/46021807934/', 'Datos-Info-Conocimiento-Sabiduría', PERSONAS_KEY, 'Modelo DIKW')],
-    ['gestionDeExpectativas', new Referencia('https://brainsandbeards.com/blog/expectation-management', 'Gestion de expectativas', PERSONAS_KEY, 'Gestion de expectativas')],
-    ['capa8', new Referencia('https://www.merca20.com/que-es-un-error-de-capa-8-y-como-evitas-que-arruine-tu-marketing/', 'Capa 8', PERSONAS_KEY, 'Error en capa 8')],
-    ['noNewsGoodNews', new Referencia('https://blog.carreralinux.com.ar/2020/05/si-no-hay-noticias-son-buenas-noticias-no-news-good-news/', 'Sin noticias, Son buenas noticias', PERSONAS_KEY, 'No News Good News')],
-    ['tiposHackers', new Referencia('https://www.freecodecamp.org/news/white-hat-black-hat-red-hat-hackers/', 'Tipos de Hackers (sombreros)', PERSONAS_KEY, 'Tipos de Hackers')],
-    ['sindromesLaborales', new Referencia('https://www.sage.com/es-es/blog/burnout-procusto-y-otros-14-sindromes-tipicos-del-mundo-empresarial/#gate-263a5c00-99e4-4e71-8421-469deda8e674', 'Sindromes laborales', PERSONAS_KEY, 'Sindromes Laborales')],
-    ['icebergIgnorance', new Referencia('https://prevencontrol.com/prevenblog/y-tu-cuanto-sabes-acerca-de-lo-que-ocurre-en-tu-organizacion/', 'Iceberg de la Ignorancia', PERSONAS_KEY, 'Iceberg de la Ignorancia')],
-    ['ubicuo', new Referencia('https://hackernoon.com/ubiquitous-language-a-key-to-success-in-professional-environments?source=rss', 'Lenguaje Ubicuo', PERSONAS_KEY, 'Lenguaje Ubicuo')],
-    ['hippoEfect', new Referencia('https://www.forbes.com/sites/bernardmarr/2017/10/26/data-driven-decision-making-beware-of-the-hippo-effect/?sh=4106860c80f9', 'Efecto HIPPO', PERSONAS_KEY, 'Efecto H.I.P.P.O')],
-    ['burnout', new Referencia('https://chubernetes.com/navigating-tech-industry-burnout-03c015337ba0', 'Sindrome de Burnout', PERSONAS_KEY, 'Burnout')],
-    ['ona', new Referencia('https://www.linkedin.com/posts/jgarzas_an%C3%A1lisis-de-redes-organizacionales-ona-activity-7185677261528842240-EQvR/', 'Analisis de Redes Organizacionales', PERSONAS_KEY, 'ONA')],
+    ['personasYprocesos', new Referencia('https://www.heflo.com/es/blog/bpm/personas-procesos-tecnologia/', 'Personas-Procesos-Tecnologias', PEOPLE_KEY, 'Personas y procesos')],
+    ['gestionDeServicios', new Referencia('https://www.ambit-bst.com/blog/itsm.-todo-lo-que-debes-saber-sobre-la-gesti%C3%B3n-de-servicios-it', 'Gestión de servicios tecnologicos', PEOPLE_KEY, 'Gestión de servicios')],
+    ['gestionDeActivos', new Referencia('https://freshservice.com/latam/it-asset-management-software/', 'Gestión de activos', PEOPLE_KEY, 'Gestión de activos')],
+    ['fidelizacion', new Referencia('https://elviajedelcliente.com/fidelizacion-de-clientes/', 'Fidelización de los clientes', PEOPLE_KEY, 'Fidelizacion')],
+    ['modeloDIKW', new Referencia('https://programmerclick.com/article/46021807934/', 'Datos-Info-Conocimiento-Sabiduría', PEOPLE_KEY, 'Modelo DIKW')],
+    ['gestionDeExpectativas', new Referencia('https://brainsandbeards.com/blog/expectation-management', 'Gestion de expectativas', PEOPLE_KEY, 'Gestion de expectativas')],
+    ['capa8', new Referencia('https://www.merca20.com/que-es-un-error-de-capa-8-y-como-evitas-que-arruine-tu-marketing/', 'Capa 8', PEOPLE_KEY, 'Error en capa 8')],
+    ['noNewsGoodNews', new Referencia('https://blog.carreralinux.com.ar/2020/05/si-no-hay-noticias-son-buenas-noticias-no-news-good-news/', 'Sin noticias, Son buenas noticias', PEOPLE_KEY, 'No News Good News')],
+    ['tiposHackers', new Referencia('https://www.freecodecamp.org/news/white-hat-black-hat-red-hat-hackers/', 'Tipos de Hackers (sombreros)', PEOPLE_KEY, 'Tipos de Hackers')],
+    ['sindromesLaborales', new Referencia('https://www.sage.com/es-es/blog/burnout-procusto-y-otros-14-sindromes-tipicos-del-mundo-empresarial/#gate-263a5c00-99e4-4e71-8421-469deda8e674', 'Sindromes laborales', PEOPLE_KEY, 'Sindromes Laborales', '2023/06/26')],
+    ['icebergIgnorance', new Referencia('https://prevencontrol.com/prevenblog/y-tu-cuanto-sabes-acerca-de-lo-que-ocurre-en-tu-organizacion/', 'Iceberg de la Ignorancia', PEOPLE_KEY, 'Iceberg de la Ignorancia', '2023/08/04')],
+    ['ubicuo', new Referencia('https://hackernoon.com/ubiquitous-language-a-key-to-success-in-professional-environments?source=rss', 'Lenguaje Ubicuo', PEOPLE_KEY, 'Lenguaje Ubicuo', '2023/09/03')],
+    ['hippoEfect', new Referencia('https://www.forbes.com/sites/bernardmarr/2017/10/26/data-driven-decision-making-beware-of-the-hippo-effect/?sh=4106860c80f9', 'Efecto HIPPO', PEOPLE_KEY, 'Efecto H.I.P.P.O', '2023/11/06')],
+    ['burnout', new Referencia('https://chubernetes.com/navigating-tech-industry-burnout-03c015337ba0', 'Sindrome de Burnout', PEOPLE_KEY, 'Burnout', '2024/04/21')],
+    ['ona', new Referencia('https://www.linkedin.com/posts/jgarzas_an%C3%A1lisis-de-redes-organizacionales-ona-activity-7185677261528842240-EQvR/', 'Analisis de Redes Organizacionales', PEOPLE_KEY, 'ONA', '2024/04/22')],
+    [PEOPLE_PROCESS_BLOAT, new Referencia('https://ardalis.com/process-bloat-silent-killer-developer-productivity/', 'Hinchazon de procesos', PEOPLE_KEY, 'Process Bloat', '2024/06/01').addRelatedItem(LEYES_LEHMAN).addRelatedItem(METODOLOGIAS_LEAN).addRelatedItem(METODOLOGIAS_AGILES)],
 ]);
 
 export const POO_KEY = 'POO';

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NEURO_MARKETING } from 'src/app/models/content/content3';
-import { CONOCIMIENTO_EMPIRICO_KEY, LinkReferencia, NEURO_MARKETING_REF, PERSONAS_KEY } from 'src/app/models/linkReferencia';
+import { CONOCIMIENTO_EMPIRICO_KEY, LinkReferencia, NEURO_MARKETING_REF, PEOPLE_KEY } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-neuro-marketing',
@@ -21,8 +21,8 @@ export class NeuroMarketingComponent  implements OnInit {
   ngOnInit(): void {
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
-    this.relatedSections.set(PERSONAS_KEY,               routes.get(PERSONAS_KEY)!);
-    this.relatedSections.set(CONOCIMIENTO_EMPIRICO_KEY,  routes.get(CONOCIMIENTO_EMPIRICO_KEY)!);
+    this.relatedSections.set(CONOCIMIENTO_EMPIRICO_KEY, routes.get(CONOCIMIENTO_EMPIRICO_KEY)!);
+    this.relatedSections.set(PEOPLE_KEY,                routes.get(PEOPLE_KEY)!);
   }
 
 }
