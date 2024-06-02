@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { PEOPLE_PROCESS_BLOAT, LinkReferencia } from 'src/app/models/linkReferencia';
+import { APIS_API_GOVERNANCE, LinkReferencia } from 'src/app/models/linkReferencia';
 
 const references = new LinkReferencia()
 
@@ -17,7 +17,7 @@ export class HomeComponent {
   }
 
   public routeToLastItem(): void {
-    const newItem = PEOPLE_PROCESS_BLOAT;
+    const newItem = APIS_API_GOVERNANCE;
     const section = references.components.get(newItem)?.component!;
     this.router.navigateByUrl(`/${references.routesAndSections.get(section)}`, { state: { newItem } })
   }

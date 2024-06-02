@@ -66,6 +66,7 @@ export const CONOCIMIENTOS_EMPIRICOS_PAIR_PROGRAMMING = 'pairPrograming';
 export const PEOPLE_PROCESS_BLOAT = 'processBloat';
 export const METODOLOGIAS_AGILES = 'agiles';
 export const METODOLOGIAS_LEAN = 'lean';
+export const APIS_API_GOVERNANCE = 'apiGovernance';
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -400,21 +401,23 @@ export const NUBE_REF = new Map<string, Referencia>([
 
 export const APIS_KEY = 'APIs';
 export const APIS_REF = new Map<string, Referencia>([
-    ['api', new Referencia('https://www.ticbeat.com/tecnologias/que-es-una-api-para-que-sirve/', 'API', APIS_KEY, 'API')],
+    //['api', new Referencia('https://www.ticbeat.com/tecnologias/que-es-una-api-para-que-sirve/', 'API', APIS_KEY, 'API')],
+    ['api', new Referencia('https://aws.amazon.com/es/what-is/api/', '¿ Que es una API ?', APIS_KEY, 'API', '', '2024/06/01')],
     ['tiposApi', new Referencia('https://www.computerweekly.com/es/definicion/Interfaz-de-programacion-de-aplicaciones-API', 'Tipos de APIs', APIS_KEY, 'Tipos de APIs')],
     ['rest', new Referencia('https://www.oscarblancarteblog.com/2017/03/06/soap-vs-rest-2/', 'SOAP vs REST', APIS_KEY, 'SOAP & REST')],
     ['restfull', new Referencia('http://adwe.es/general/colaboraciones/servicios-web-restful-con-http-parte-i-introduccion-y-bases-teoricas/', 'Rest & Restfull', APIS_KEY, 'Rest & RestFull')],
     ['caracteristicas', new Referencia('https://adwe.es/codigo/apis-codigo/servicios-web-restful-con-http-parte-ii-ejemplos/', 'Caracteristicas de una api restfull', APIS_KEY, 'Estandares RestFull')],
     ['madurezDeUnaApi', new Referencia('https://restfulapi.net/richardson-maturity-model/', 'Nivel de madurez de una API', APIS_KEY, 'Nivel de Madurez')],
     ['httpCodes', new Referencia('https://developer.mozilla.org/es/docs/Web/HTTP/Status', 'Codigos Http', APIS_KEY, 'Codigos HTTP')],
-    ['HATEOAS', new Referencia('https://www.adictosaltrabajo.com/2013/12/02/spring-hateoas/', 'HATEOAS', APIS_KEY, 'HATEOAS')],
-    ['apiStandars', new Referencia('https://medium.com/@trgoodwill/writing-api-design-standards-84cb7cbb3fd7', 'Standares API', APIS_KEY, 'Standares API')],
-    ['apiGateway', new Referencia('https://nordicapis.com/whats-the-difference-between-an-api-gateway-and-a-load-balancer/', 'API Gateway', APIS_KEY, 'Api Gateway')],
-    ['arquitecturalApiStyles', new Referencia('https://www.linkedin.com/feed/update/urn:li:activity:7095365669969350656/', 'Estilos de Arquitectura API', APIS_KEY, 'Estilos de Arquitectura API')],
-    ['uri', new Referencia('https://www.techtarget.com/whatis/definition/URI-Uniform-Resource-Identifier', 'Uniform Resource Identifier', APIS_KEY, 'URI')],
-    ['apiTesting', new Referencia('https://blog.bytebytego.com/p/ep83-explaining-9-types-of-api-testing#%C2%A7explaining-types-of-api-testing', 'API Testing', APIS_KEY, 'Testing in APIs')],
-    ['apiIdempotencia', new Referencia('https://blog.bitsrc.io/design-an-idempotent-api-in-2024-d4a3cf8d8bf2', 'APIs Idempotentes', APIS_KEY, 'Idempotencia')],
-    ['restVsMessaging', new Referencia('https://solace.com/blog/experience-awesomeness-event-driven-microservices/', 'REST VS Messaging & Microservicios', APIS_KEY, 'REST VS Messaging')],
+    ['HATEOAS', new Referencia('https://www.adictosaltrabajo.com/2013/12/02/spring-hateoas/', 'HATEOAS', APIS_KEY, 'HATEOAS', '2022/11/04')],
+    ['apiStandars', new Referencia('https://medium.com/@trgoodwill/writing-api-design-standards-84cb7cbb3fd7', 'Standares API', APIS_KEY, 'Standares API', '2023/01/03')],
+    ['apiGateway', new Referencia('https://nordicapis.com/whats-the-difference-between-an-api-gateway-and-a-load-balancer/', 'API Gateway', APIS_KEY, 'Api Gateway', '2023/02/05')],
+    ['arquitecturalApiStyles', new Referencia('https://www.linkedin.com/feed/update/urn:li:activity:7095365669969350656/', 'Estilos de Arquitectura API', APIS_KEY, 'Estilos de Arquitectura API', '2023/09/08')],
+    ['uri', new Referencia('https://www.techtarget.com/whatis/definition/URI-Uniform-Resource-Identifier', 'Uniform Resource Identifier', APIS_KEY, 'URI', '2023/11/03')],
+    ['apiTesting', new Referencia('https://blog.bytebytego.com/p/ep83-explaining-9-types-of-api-testing#%C2%A7explaining-types-of-api-testing', 'API Testing', APIS_KEY, 'Testing in APIs', '2023/11/13')],
+    ['apiIdempotencia', new Referencia('https://blog.bitsrc.io/design-an-idempotent-api-in-2024-d4a3cf8d8bf2', 'APIs Idempotentes', APIS_KEY, 'Idempotencia', '2024/02/17')],
+    ['restVsMessaging', new Referencia('https://solace.com/blog/experience-awesomeness-event-driven-microservices/', 'REST VS Messaging & Microservicios', APIS_KEY, 'REST VS Messaging', '2024/03/15')],
+    [APIS_API_GOVERNANCE, new Referencia('https://swagger.io/resources/articles/best-practices-in-api-governance/', 'Gobernanza', APIS_KEY, 'Gobernanza', '2024/06/01')],
 ]);
 
 export const OTROS_KEY = 'Otros';

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { APIS } from 'src/app/models/content/content2';
+import { APIS } from 'src/app/models/content/content5';
 import { APIS_REF, LinkReferencia, CONTENEDORES_KEY, SECURITY_KEY, CD_CI_KEY, WEB_KEY, NUBE_KEY } from 'src/app/models/linkReferencia';
 
 @Component({
