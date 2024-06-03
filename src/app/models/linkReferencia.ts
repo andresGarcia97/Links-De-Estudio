@@ -59,6 +59,7 @@ export const BUENAS_PRACTICAS_DEMETER = 'demeter';
 export const AGILES_OUTPUT_AND_OUTCOME = 'outputAndOutcome';
 export const CONTENEDORES_SECURE_ORCHESTRATION = 'secureOrchestration';
 export const PATRONES_PERSISTENCE_PATTERNS = 'persistencePatterns';
+export const PATRONES_CLOUD_DESIGN_PATTERNS = 'patternsCloud';
 export const NUBE_CAP_TEOREMA = 'capTeorema';
 export const NUBE_OBSERVABILIDAD = 'observabilidad';
 export const PARADIGMAS_PARADIGMA_DATOS = 'paradigmaDatos';
@@ -465,6 +466,7 @@ export const PATRONES_REF = new Map<string, Referencia>([
     ['stranglerFig', new Referencia('https://martinfowler.com/bliki/StranglerFigApplication.html', 'StranglerFig App', PATRONES_KEY, 'StranglerFig App')],
     ['antipatronesPM', new Referencia('https://sourcemaking.com/antipatterns', 'Antipatrones, Product Management', PATRONES_KEY, 'Anti Patrones, PM')],
     ['patternsMicroservices', new Referencia('https://blog.openreplay.com/7-microservice-design-patterns-to-use/', 'Patrones & Microservicios', PATRONES_KEY, 'Patrones & Microservicios')],
+    [PATRONES_CLOUD_DESIGN_PATTERNS, new Referencia('https://learn.microsoft.com/es-mx/azure/architecture/patterns/', 'Patrones Para la Nube', PATRONES_KEY, 'Patrones Nube', '2024/06/02')],
 ]);
 
 export const PEOPLE_KEY = 'Personas';

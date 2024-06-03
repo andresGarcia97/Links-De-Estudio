@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PATRONES } from 'src/app/models/content/content5';
-import { ANALISIS_KEY, FRAMEWORKS_KEY, LinkReferencia, PARADIGMAS_KEY, PATRONES_KEY, PATRONES_REF, PRINCIPIOS_KEY } from 'src/app/models/linkReferencia';
+import { ANALISIS_KEY, FRAMEWORKS_KEY, LinkReferencia, NUBE_KEY, PARADIGMAS_KEY, PATRONES_KEY, PATRONES_REF, PRINCIPIOS_KEY } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-patrones',
@@ -25,6 +25,7 @@ export class PatronesComponent implements OnInit {
     this.relatedSections.set(FRAMEWORKS_KEY, routes.get(FRAMEWORKS_KEY)!);
     this.relatedSections.set(PARADIGMAS_KEY, routes.get(PATRONES_KEY)!);
     this.relatedSections.set(ANALISIS_KEY,   routes.get(ANALISIS_KEY)!);
+    this.relatedSections.set(NUBE_KEY,       routes.get(NUBE_KEY)!);
   }
 
 }

@@ -1,4 +1,5 @@
 import { APIS_API_GOVERNANCE, CONOCIMIENTOS_EMPIRICOS_PAIR_PROGRAMMING, NUBE_CAP_TEOREMA, NUBE_OBSERVABILIDAD,
+    PATRONES_CLOUD_DESIGN_PATTERNS,
     PATRONES_PERSISTENCE_PATTERNS } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -281,6 +282,39 @@ export const PATRONES =
                 '<strong> - Abierto:</strong> La solicitud falla y se devuelve una excepción, cerrando el acceso por un tiempo determinado ',
                 '<strong> - Cerrado:</strong> Enruta las solicitudes y cuenta la cantidad de fallas, hasta que no pasen de un umbral ',
                 '<strong> - Half-Open:</strong> Solo se permite un pequeño numero de operaciones, cambiando entre estados de acuerdo a si fallan o son exitosas ',
+            ]),
+        new Item(PATRONES_CLOUD_DESIGN_PATTERNS,
+            [
+                '- La administración de datos es un elemento clave de las aplicaciones en la nube, e influye en la mayoria de atributos de calidad ',
+                ' - los datos tienen una naturaleza distribuida de manera intrinseca, que representa desafios como la coherencia y la sincronización',
+                '- Un buen diseño incluye el mantenimiento y la reutilización para permitir que componentes y subsistemas, se puedan utilizar en otras aplicaciones ',
+                '- La naturaleza distribuida de las aplicaciones requiere una infraestructura de mensajeria, que permita conectar los componentes y servicios',
+                '',
+                '<strong>Anti-Corruption Layer:</strong> Implementa una capa de fachada o de adatador entre una aplicación moderna y un sistema heredado',
+                '',
+                '<strong>Backedns for Frontends:</strong> Servicios independientes de back-end que determinadas aplicaciones ó front-end puedan usar ',
+                '',
+                '<strong>Cache-Aside:</strong> Carga datos a petición en una memoria caches desde algun almacen de datos',
+                '',
+                '<strong>Circuit Breaker:</strong> Controla errores que pueden tardar una cantidad variable de tiempo, durante la conexión o uso de servicios remotos',
+                '',
+                '<strong>Competing Consumers:</strong> Permite que varios consumidores simultaneos, procesen los mensajes recibidos en un mismo canal ',
+                '',
+                '<strong>Event Sourcing:</strong> Usa un almacen de solo anexar para registrar la serie completa de eventos, que describen las acciones realizadas sobre el dominio ',
+                '',
+                '<strong>Federated Identity:</strong> La autenticación se delega a un proveedor de identidad externo ',
+                '',
+                '<strong>Index Table:</strong> Crea indices en los campos de los almacenes de datos que suelen hacer referencia las consultas ',
+                '',
+                '<strong>Materialized View:</strong> Genera vistas previamente construidas con sus datos, cuando los datos no tienen el formato idoneo para las consultas requeridas ',
+                '',
+                '<strong>Priority Queue:</strong> Clasifica por orden de prioridad las solicitudes a ser procesadas, a mayor prioridad, más rapido se procesan ',
+                '',
+                '<strong>Pipes And Filters:</strong> Desglosa una tarea compleja, en una serie de elementos independientes reutilizables',
+                '',
+                '<strong>Publicador y Subscriptor:</strong> Permite que una aplicación anuncie eventos asincronos, entre 1-n cosumidores interesados',
+                '',
+                '<strong>Retry:</strong> Permite tratar errores temporales previamente anticipados, como en un servicio o recurso de red, siendo trasparentes con los errores ',
             ])
     ];
 
