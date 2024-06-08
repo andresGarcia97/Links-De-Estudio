@@ -37,7 +37,7 @@ export class LinkReferencia {
         [DATA_BASES_KEY, 'bases-de-datos'],                   [UML_KEY, 'uml'],
         [VERSIONAMIENTO_KEY, 'versionamiento'],               [HARDWARE_KEY, 'hardware'],
         [WEB_KEY, 'web'],                                     [NEURO_MARKETING_KEY, 'neuro-marketing'],
-        [DATA_BASES_ADVANCED_KEY, 'bd-avanzado'],             [CD_CI_KEY, 'cd-ci-infraestructura'],
+        [PERSISTENCY_ADVANCED_KEY, 'bd-avanzado'],            [CD_CI_KEY, 'cd-ci-infraestructura'],
         [APIS_KEY, 'apis']
     ]);
 
@@ -68,6 +68,7 @@ export const PEOPLE_PROCESS_BLOAT = 'processBloat';
 export const METODOLOGIAS_AGILES = 'agiles';
 export const METODOLOGIAS_LEAN = 'lean';
 export const APIS_API_GOVERNANCE = 'apiGovernance';
+export const PERSISTENCY_SCALING_DB = 'scalingDataBases';
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -637,21 +638,23 @@ export const PERSISTENCY_REF = new Map<string, Referencia>([
     ['dbDesign', new Referencia('https://dzone.com/articles/what-is-good-database-design', 'Diseño de una BD', DATA_BASES_KEY, 'Diseño')],
 ]);
 
-export const DATA_BASES_ADVANCED_KEY = 'BD Avanzado'
+export const PERSISTENCY_ADVANCED_KEY = 'BD Avanzado'
 export const PERSISTENCY_ADVANCED_REF = new Map<string, Referencia>([
-    ['nosql', new Referencia('https://pandorafms.com/blog/es/bases-de-datos-nosql/', 'Bases de Datos NO SQL', DATA_BASES_ADVANCED_KEY, 'NoSQL')],
-    ['tiposBD', new Referencia('https://www.acens.com/wp-content/images/2014/02/bbdd-nosql-wp-acens.pdf', 'Tipos de BD No SQL', DATA_BASES_ADVANCED_KEY, 'Tipos NoSQL')],
-    ['orm', new Referencia('https://programarfacil.com/blog/que-es-un-orm/', 'Mapeo Objeto-Relacional (ORM)', DATA_BASES_ADVANCED_KEY, 'ORM')],
-    ['consistenciaEventual', new Referencia('https://medium.com/@gabanox/consistencia-eventual-en-s3-6ba5b2ecd721', 'Consistencia Eventual', DATA_BASES_ADVANCED_KEY, 'Consistencia')],
-    ['algebraRelacional', new Referencia('https://sites.google.com/site/basededatosdistribuidastics/algebra-relacional', 'Algebra Relacional', DATA_BASES_ADVANCED_KEY, 'Algebra Relacional')],
-    ['n+1selects', new Referencia('https://stackoverflow.com/questions/97197/what-is-the-n1-selects-problem-in-orm-object-relational-mapping', 'N + 1 Problem', DATA_BASES_ADVANCED_KEY, 'N + 1 Selects')],
-    ['boyceCodd', new Referencia('https://normalizacionunit4.blogspot.com/2019/05/46-forma-normal-boyce-codd.html', 'Boyce-Codd', DATA_BASES_ADVANCED_KEY, 'Boyce-Codd')],
-    ['sqlVsNosql', new Referencia('https://medium.com/@eugeniomendoza/c%C3%B3mo-saber-si-necesitas-una-base-de-datos-nosql-b6cfd5bb7d9b', 'SQL ó NoSql', DATA_BASES_ADVANCED_KEY, 'SQL ó NoSql')],
-    ['locking', new Referencia('https://vladmihalcea.com/optimistic-vs-pessimistic-locking/', 'Bloqueo Optimista & Pesimista', DATA_BASES_ADVANCED_KEY, 'Bloqueos')],
-    ['sqlOrderExecution', new Referencia('https://matam-kirankumar.medium.com/sql-query-order-of-execution-37001da1462', 'Orden de Ejecución', DATA_BASES_ADVANCED_KEY, 'Orden de Ejecución')],
-    ['sargeable', new Referencia('https://dev.to/kanani_nirav/secret-to-optimizing-sql-queries-understand-the-sql-execution-order-28m1', 'Consultas SARGEABLE', DATA_BASES_ADVANCED_KEY, 'SARGEABLE')],
-    ['MVCC', new Referencia('https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/What-is-MVCC-How-does-Multiversion-Concurrencty-Control-work', 'Control de Concurrencia Multiversion', DATA_BASES_ADVANCED_KEY, 'Control de Concurrencia')],
-    ['acidVSbase', new Referencia('https://phoenixnap.com/kb/acid-vs-base', 'BASE', DATA_BASES_ADVANCED_KEY, 'BASE')],
+    ['nosql', new Referencia('https://pandorafms.com/blog/es/bases-de-datos-nosql/', 'Bases de Datos NO SQL', PERSISTENCY_ADVANCED_KEY, 'NoSQL')],
+    ['tiposBD', new Referencia('https://www.acens.com/wp-content/images/2014/02/bbdd-nosql-wp-acens.pdf', 'Tipos de BD No SQL', PERSISTENCY_ADVANCED_KEY, 'Tipos NoSQL')],
+    ['orm', new Referencia('https://programarfacil.com/blog/que-es-un-orm/', 'Mapeo Objeto-Relacional (ORM)', PERSISTENCY_ADVANCED_KEY, 'ORM')],
+    ['consistenciaEventual', new Referencia('https://medium.com/@gabanox/consistencia-eventual-en-s3-6ba5b2ecd721', 'Consistencia Eventual', PERSISTENCY_ADVANCED_KEY, 'Consistencia')],
+    //['algebraRelacional', new Referencia('https://sites.google.com/site/basededatosdistribuidastics/algebra-relacional', 'Algebra Relacional', PERSISTENCY_ADVANCED_KEY, 'Algebra Relacional')],
+    ['algebraRelacional', new Referencia('https://sites.google.com/site/basededatosdistribuidastics/algebra-relacional', 'Algebra Relacional', PERSISTENCY_ADVANCED_KEY, 'Algebra Relacional', '', '2024/06/07')],
+    ['n+1selects', new Referencia('https://stackoverflow.com/questions/97197/what-is-the-n1-selects-problem-in-orm-object-relational-mapping', 'N + 1 Problem', PERSISTENCY_ADVANCED_KEY, 'N + 1 Selects')],
+    ['boyceCodd', new Referencia('https://normalizacionunit4.blogspot.com/2019/05/46-forma-normal-boyce-codd.html', 'Boyce-Codd', PERSISTENCY_ADVANCED_KEY, 'Boyce-Codd')],
+    ['sqlVsNosql', new Referencia('https://medium.com/@eugeniomendoza/c%C3%B3mo-saber-si-necesitas-una-base-de-datos-nosql-b6cfd5bb7d9b', 'SQL ó NoSql', PERSISTENCY_ADVANCED_KEY, 'SQL ó NoSql', '', '2024/06/06')],
+    ['locking', new Referencia('https://vladmihalcea.com/optimistic-vs-pessimistic-locking/', 'Bloqueo Optimista & Pesimista', PERSISTENCY_ADVANCED_KEY, 'Bloqueos', '2024/06/17')],
+    ['sqlOrderExecution', new Referencia('https://matam-kirankumar.medium.com/sql-query-order-of-execution-37001da1462', 'Orden de Ejecución', PERSISTENCY_ADVANCED_KEY, 'Orden de Ejecución', '2023/08/13')],
+    ['sargeable', new Referencia('https://dev.to/kanani_nirav/secret-to-optimizing-sql-queries-understand-the-sql-execution-order-28m1', 'Consultas SARGEABLE', PERSISTENCY_ADVANCED_KEY, 'SARGEABLE', '2023/08/14')],
+    ['MVCC', new Referencia('https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/What-is-MVCC-How-does-Multiversion-Concurrencty-Control-work', 'Control de Concurrencia Multiversion', PERSISTENCY_ADVANCED_KEY, 'Control de Concurrencia', '2023/10/09')],
+    ['acidVSbase', new Referencia('https://phoenixnap.com/kb/acid-vs-base', 'BASE', PERSISTENCY_ADVANCED_KEY, 'BASE', '2023/12/04')],
+    [PERSISTENCY_SCALING_DB, new Referencia('https://blog.bytebytego.com/p/ep114-7-must-know-strategies-to-scale', 'Estrategias para escalar una BD', PERSISTENCY_ADVANCED_KEY, 'Escalamiento', '2024/06/07')],
 ]);
 
 export const UML_KEY = 'UML';

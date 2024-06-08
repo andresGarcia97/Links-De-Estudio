@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {
   AGILES_KEY, ANALISIS_KEY, APIS_KEY, ARQUITECTURAS_KEY, BUENAS_PRACTICAS_KEY, CALIDAD_KEY, META_CARACTERISTICAS_KEY, CD_CI_KEY, COMPILACION_KEY,
-  CONOCIMIENTO_EMPIRICO_KEY, CONTENEDORES_KEY, DATA_BASES_ADVANCED_KEY, DATA_BASES_KEY, ESTRATEGIAS_DESARROLLO_KEY, META_ESTRUCTURAS_KEY, FRAMEWORKS_KEY,
+  CONOCIMIENTO_EMPIRICO_KEY, CONTENEDORES_KEY, PERSISTENCY_ADVANCED_KEY, DATA_BASES_KEY, ESTRATEGIAS_DESARROLLO_KEY, META_ESTRUCTURAS_KEY, FRAMEWORKS_KEY,
   GIT_KEY, HARDWARE_KEY, LEYES_KEY, MALAS_PRACTICAS_KEY, METODOLOGIAS_KEY, NEURO_MARKETING_KEY, NUBE_KEY, OTROS_KEY,
   PARADIGMAS_KEY, PATRONES_KEY, PEOPLE_KEY, POO_KEY, PRINCIPIOS_KEY, REFACTORIZACION_KEY, REQUISITOS_KEY, SECURITY_KEY,
   SMELL_CODES_KEY, TESTING_ADVANCED_KEY, TESTING_KEY, UML_KEY, USER_HISTORIES_KEY, VERSIONAMIENTO_KEY, WEB_KEY
@@ -41,7 +41,7 @@ const routes: Routes = [
   { path: 'historias-de-usuario', loadChildren: () => import('./components/historia-usuario/historias-usuario.module').then(m => m.HistoriasUsuarioModule), title: USER_HISTORIES_KEY },
   { path: 'compilacion', loadChildren: () => import('./components/compilacion/compilacion.module').then(m => m.CompilacionModule), title: COMPILACION_KEY },
   { path: 'bases-de-datos', loadChildren: () => import('./components/sql-nosql/sql-nosql.module').then(m => m.SqlNoSqlModule), title: DATA_BASES_KEY },
-  { path: 'bd-avanzado', loadChildren: () => import('./components/sql-nosql-advanced/sql-nosql-advanced.module').then(m => m.SqlNoSqlAdvancedModule), title: DATA_BASES_ADVANCED_KEY },
+  { path: 'bd-avanzado', loadChildren: () => import('./components/sql-nosql-advanced/sql-nosql-advanced.module').then(m => m.SqlNoSqlAdvancedModule), title: PERSISTENCY_ADVANCED_KEY },
   { path: 'principios', loadChildren: () => import('./components/principios/principios.module').then(m => m.PrincipiosModule), title: PRINCIPIOS_KEY },
   { path: 'refactorizacion', loadChildren: () => import('./components/refactorizacion/refactorizacion.module').then(m => m.RefactorizacionModule), title: REFACTORIZACION_KEY },
   { path: 'patrones', loadChildren: () => import('./components/patrones/patrones.module').then(m => m.PatronesModule), title: PATRONES_KEY },

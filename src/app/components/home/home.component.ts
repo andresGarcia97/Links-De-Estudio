@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { PATRONES_CLOUD_DESIGN_PATTERNS, LinkReferencia } from 'src/app/models/linkReferencia';
+import { PERSISTENCY_SCALING_DB, LinkReferencia } from 'src/app/models/linkReferencia';
 
 const references = new LinkReferencia()
 
@@ -17,7 +17,7 @@ export class HomeComponent {
   }
 
   public routeToLastItem(): void {
-    const newItem = PATRONES_CLOUD_DESIGN_PATTERNS;
+    const newItem = PERSISTENCY_SCALING_DB;
     const section = references.components.get(newItem)?.component!;
     this.router.navigateByUrl(`/${references.routesAndSections.get(section)}`, { state: { newItem } })
   }
