@@ -31,7 +31,7 @@ export class LinkReferencia {
         [OTROS_KEY, 'otros'],                                 [PATRONES_KEY, 'patrones'],
         [PARADIGMAS_KEY, 'paradigmas'],                       [PEOPLE_KEY, 'personas'],
         [POO_KEY, 'poo'],                                     [TESTING_KEY, 'testing'],
-        [TESTING_ADVANCED_KEY, 'testing-avanzado'],           [REFACTORIZACION_KEY, 'refactorizacion'],
+        [TESTING_ADVANCED_KEY, 'testing-avanzado'],           [REFACTORING_KEY, 'refactorizacion'],
         [REQUISITOS_KEY, 'requisitos'],                       [PRINCIPIOS_KEY, 'principios'],
         [SECURITY_KEY, 'seguridad'],                          [SMELL_CODES_KEY, 'smells-codes'],
         [DATA_BASES_KEY, 'bases-de-datos'],                   [UML_KEY, 'uml'],
@@ -44,7 +44,9 @@ export class LinkReferencia {
 }
 
 export const META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL = 'verticalAndHorizontal';
+export const META_ESTRUCTURAS_MAQUINA_ESTADOS = 'maquinaEstados';
 export const FRAMEWORKS_CODE_STRUCTURE = 'codeStructucture';
+export const FRAMEWORKS_IOD = 'iod';
 export const POO_POO = 'poo';
 export const POO_POO_PILARES = 'pooPilares';
 export const POO_INMUTABILITY = 'inmutability';
@@ -69,6 +71,7 @@ export const METODOLOGIAS_AGILES = 'agiles';
 export const METODOLOGIAS_LEAN = 'lean';
 export const APIS_API_GOVERNANCE = 'apiGovernance';
 export const PERSISTENCY_SCALING_DB = 'scalingDataBases';
+export const REFACTORING_MANAGE_DEPENDENCIES = 'manageDependencies';
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -262,14 +265,14 @@ export const ESTRATEGIAS_DESARROLLO_REF = new Map<string, Referencia>([
     ['analisis', new Referencia('https://www.ubjonline.mx/en-que-consisten-los-analisis-top-down-y-bottom-up/', 'Bottom Up & Top Down', ESTRATEGIAS_DESARROLLO_KEY, 'Enfoques')],
     ['tld', new Referencia('https://medium.com/swlh/tdd-vs-tld-and-what-is-the-minimum-code-coverage-needed-f380181d3400', 'Tests al final del desarrollo', ESTRATEGIAS_DESARROLLO_KEY, 'TLD vs TDD')],
     ['bduf', new Referencia('https://www.freecodecamp.org/news/the-pros-and-cons-of-big-design-up-front-and-what-i-do-instead-375f00542dec/', 'Big Design Up Front', ESTRATEGIAS_DESARROLLO_KEY, 'BDUF')],
-    [ESTRATEGIAS_DESARROLLO_SCREAMING_DESIGN, new Referencia('https://medium.com/@mubashirhussain29/the-screaming-architecture-story-08750691291f', 'Diseño a gritos', ESTRATEGIAS_DESARROLLO_KEY, 'Gritos')],
+    [ESTRATEGIAS_DESARROLLO_SCREAMING_DESIGN, new Referencia('https://medium.com/@mubashirhussain29/the-screaming-architecture-story-08750691291f', 'Diseño a gritos', ESTRATEGIAS_DESARROLLO_KEY, 'Gritos').addRelatedItem(META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL)],
 ]);
 
 export const FRAMEWORKS_KEY = 'Frameworks';
 export const FRAMEWORKS_REF = new Map<string, Referencia>([
     ['frameworks', new Referencia('https://neoattack.com/neowiki/framework/', '¿ Que es un framework?', FRAMEWORKS_KEY, '¿ Que son ?')],
     ['ioc', new Referencia('https://medium.com/all-you-need-is-clean-code/inversi%C3%B3n-de-control-principio-de-hollywood-dont-call-us-we-ll-call-you-179e9c70e3d0', 'Inversión de Control', FRAMEWORKS_KEY, 'Inversión de control')],
-    ['iod', new Referencia('https://www.arquitecturajava.com/el-patron-de-inyeccion-de-dependencia/', 'Inyección de dependencias', FRAMEWORKS_KEY, 'Inyección de dependencias')],
+    [FRAMEWORKS_IOD, new Referencia('https://www.arquitecturajava.com/el-patron-de-inyeccion-de-dependencia/', 'Inyección de dependencias', FRAMEWORKS_KEY, 'Inyección de dependencias', '', '2024/06/09')],
     ['scafolding', new Referencia('https://medium.com/@srinathsrs104/scaffolding-54ac4e47e133', 'Creación automatica de codigo', FRAMEWORKS_KEY, 'Scaffolding')],
     ['iodSpring', new Referencia('https://medium.com/@priyaroul99/what-is-constructor-injection-and-why-should-you-use-it-in-spring-bdb3e1857c58', 'Inyección de Dependencias en Spring', FRAMEWORKS_KEY, 'IoD Spring', '2023/12/02')],
     [FRAMEWORKS_CODE_STRUCTURE, new Referencia('https://medium.com/@akintopbas96/spring-boot-code-structure-package-by-layer-vs-package-by-feature-5331a0c911fe', 'Paquetes por capas Vs funcionalidad', FRAMEWORKS_KEY, 'Estructura del codigo', '2024/05/18').addRelatedItem(META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL).addRelatedItem(POO_POO).addRelatedItem(ARQUITECTURAS_CAPAS).addRelatedItem(ESTRATEGIAS_DESARROLLO_SCREAMING_DESIGN)],
@@ -358,7 +361,7 @@ export const META_ESTRUCTURAS_REF = new Map<string, Referencia>([
     ['estructurasDatos', new Referencia('https://medium.com/techwomenc/estructuras-de-datos-a29062de5483', 'Estructuras de datos I', META_ESTRUCTURAS_KEY, 'Estructuras de datos I')],
     ['estructurasDatos2', new Referencia('https://ai.plainenglish.io/data-structures-how-computers-store-and-organize-data-the-backbone-5f0576b3150c', 'Estructuras de datos II', META_ESTRUCTURAS_KEY, 'Estructuras de datos II')],
     ['homoiconicidad', new Referencia('https://es.wikipedia.org/wiki/Homoiconicidad', 'Homoiconicidad', META_ESTRUCTURAS_KEY, 'Homoiconicidad')],
-    ['maquinaEstados', new Referencia('http://fisicotronica.com/maquina-de-estados-nos-referimos/', 'Maquinas de estados', META_ESTRUCTURAS_KEY, 'Maquina de estados')],
+    [META_ESTRUCTURAS_MAQUINA_ESTADOS, new Referencia('http://fisicotronica.com/maquina-de-estados-nos-referimos/', 'Maquinas de estados', META_ESTRUCTURAS_KEY, 'Maquina de estados')],
     ['sistemasComplejos', new Referencia('https://www.researchgate.net/figure/Figura-2-Caracteristicas-basicas-de-los-sistemas-complejos-Comportamiento-impredecible_fig1_262437348', 'Complejidad inherente al sistema', META_ESTRUCTURAS_KEY, 'Sistemas Complejos')],
     ['funcionesLambda', new Referencia('https://www.tokioschool.com/noticias/expresiones-lambda-uso-programacion-aplicaciones/', 'Funciones Lambda', META_ESTRUCTURAS_KEY, 'Funciones lambda')],
     ['valueObjects', new Referencia('https://medium.com/all-you-need-is-clean-code/value-objects-d4c24115fa69', 'Value Objects', META_ESTRUCTURAS_KEY, 'Value Objects')],
@@ -547,18 +550,19 @@ export const TESTING_ADVANCED = new Map<string, Referencia>([
     ['mutation', new Referencia('https://spa.myservername.com/what-is-mutation-testing#:~:text=La%20prueba%20de%20mutaci%C3%B3n%20es,prueba%20para%20aislar%20las%20desviaciones', 'Tests de mutación', TESTING_ADVANCED_KEY, 'Pruebas de mutación')]
 ]);
 
-export const REFACTORIZACION_KEY = 'Refactorizacion';
+export const REFACTORING_KEY = 'Refactorizacion';
 export const REFACTORING_REF = new Map<string, Referencia>([
-    ['codigolimpio', new Referencia('https://refactoring.guru/es/refactoring/what-is-refactoring', '¿ Que es codigo Limpio ?', REFACTORIZACION_KEY, 'Codigó limpio')],
-    ['deudatecnica', new Referencia('https://refactoring.guru/es/refactoring/technical-debt', 'Deuda tecnica', REFACTORIZACION_KEY, 'Deuda tecnica')],
-    ['tiposDeudaTecnica', new Referencia('https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/deuda-tecnica-explicada/', 'Tipos de deuda tecnica', REFACTORIZACION_KEY, 'Tipos de deuda')],
-    ['comentarios', new Referencia('https://www.scrummanager.net/bok/index.php?title=Deuda_t%C3%A9cnica', 'Comentarios especiales', REFACTORIZACION_KEY, 'Comentar la deuda')],
-    ['cuandorefactorizar', new Referencia('https://refactoring.guru/es/refactoring/when', '¿ Cuando refactorizar ?', REFACTORIZACION_KEY, '¿ Cuando ?')],
-    ['comorefactorizar', new Referencia('https://refactoring.guru/es/refactoring/how-to', '¿ Como refactorizar ? ', REFACTORIZACION_KEY, '¿ Como ?')],
-    ['tecnicasRefactoring', new Referencia('https://refactoring.guru/es/refactoring/techniques', 'Tecnicas para refactorizar', REFACTORIZACION_KEY, 'Tecnicas')],
-    ['cuandoNoRefactorizar', new Referencia('https://www.digite.com/es/agile/refactorizacion-en-agil/#:~:text=%C2%BFQu%C3%A9%20es%20la%20refactorizaci%C3%B3n%3F,el%20comportamiento%20observable%2C%20del%20c%C3%B3digo.', 'Cuando No Refactorizar', REFACTORIZACION_KEY, 'Cuando No', "2023/01/22")],
-    ['refactorLegacyCode', new Referencia('https://jesuslc.com/2020/11/21/tecnicas-para-mantener-al-legacy-code-bajo-control/', 'Refactorizar el Legacy Code', REFACTORIZACION_KEY, 'Refactor en Legacy code', "2023/02/05")],
-    ['manejarDeudaTecnica', new Referencia('https://newsletter.techworld-with-milan.com/p/how-to-deal-with-technical-debt', 'Manejo de la deuda tecnica', REFACTORIZACION_KEY, '¿ Como manejarla ?', "2024/05/12")],
+    ['codigolimpio', new Referencia('https://refactoring.guru/es/refactoring/what-is-refactoring', '¿ Que es codigo Limpio ?', REFACTORING_KEY, 'Codigó limpio')],
+    ['deudatecnica', new Referencia('https://refactoring.guru/es/refactoring/technical-debt', 'Deuda tecnica', REFACTORING_KEY, 'Deuda tecnica')],
+    ['tiposDeudaTecnica', new Referencia('https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/deuda-tecnica-explicada/', 'Tipos de deuda tecnica', REFACTORING_KEY, 'Tipos de deuda')],
+    ['comentarios', new Referencia('https://www.scrummanager.net/bok/index.php?title=Deuda_t%C3%A9cnica', 'Comentarios especiales', REFACTORING_KEY, 'Comentar la deuda')],
+    ['cuandorefactorizar', new Referencia('https://refactoring.guru/es/refactoring/when', '¿ Cuando refactorizar ?', REFACTORING_KEY, '¿ Cuando ?')],
+    ['comorefactorizar', new Referencia('https://refactoring.guru/es/refactoring/how-to', '¿ Como refactorizar ? ', REFACTORING_KEY, '¿ Como ?')],
+    ['tecnicasRefactoring', new Referencia('https://refactoring.guru/es/refactoring/techniques', 'Tecnicas para refactorizar', REFACTORING_KEY, 'Tecnicas')],
+    ['cuandoNoRefactorizar', new Referencia('https://www.digite.com/es/agile/refactorizacion-en-agil/#:~:text=%C2%BFQu%C3%A9%20es%20la%20refactorizaci%C3%B3n%3F,el%20comportamiento%20observable%2C%20del%20c%C3%B3digo.', 'Cuando No Refactorizar', REFACTORING_KEY, 'Cuando No', "2023/01/22")],
+    ['refactorLegacyCode', new Referencia('https://jesuslc.com/2020/11/21/tecnicas-para-mantener-al-legacy-code-bajo-control/', 'Refactorizar el Legacy Code', REFACTORING_KEY, 'Refactor en Legacy code', "2023/02/05")],
+    ['manejarDeudaTecnica', new Referencia('https://newsletter.techworld-with-milan.com/p/how-to-deal-with-technical-debt', 'Manejo de la deuda tecnica', REFACTORING_KEY, '¿ Como manejarla ?', "2024/05/12")],
+    [REFACTORING_MANAGE_DEPENDENCIES, new Referencia('https://levelup.gitconnected.com/world-of-dependencies-4639100d16ef', 'Manejo de las dependencias', REFACTORING_KEY, 'Dependencias', "2024/06/09").addRelatedItem(META_ESTRUCTURAS_MAQUINA_ESTADOS).addRelatedItem(ARQUITECTURAS_CAPAS).addRelatedItem(FRAMEWORKS_IOD)],
 ]);
 
 export const REQUISITOS_KEY = 'Requisitos';

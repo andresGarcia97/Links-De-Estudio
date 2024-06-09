@@ -1,6 +1,6 @@
 import {
     AGILES_OUTPUT_AND_OUTCOME, ARQUITECTURAS_CAPAS, CONTENEDORES_SECURE_ORCHESTRATION, ESTRATEGIAS_DESARROLLO_SCREAMING_DESIGN,
-    FRAMEWORKS_CODE_STRUCTURE, LEYES_HYRUM, LEYES_LEHMAN, MALAS_PRACTICAS_ANTI_PATRONES_ARQUITECTURAS, MALAS_PRACTICAS_TRAIN_WECKS,
+    FRAMEWORKS_CODE_STRUCTURE, FRAMEWORKS_IOD, LEYES_HYRUM, LEYES_LEHMAN, MALAS_PRACTICAS_ANTI_PATRONES_ARQUITECTURAS, MALAS_PRACTICAS_TRAIN_WECKS,
     META_CARACTERISTICAS_BACKWARD_AND_BREAKING_CHANGES, POO_INMUTABILITY, POO_POO, POO_POO_PILARES
 } from "../linkReferencia";
 import { Item } from "../models";
@@ -1178,12 +1178,13 @@ export const FRAMEWORKS =
                 '- El framework es quien toma el control de la ejecución del codigo del usuario modificando el ciclo de vida como tal ',
                 '- Permite añadir nuevas funciones prefabicadas sin tener que modificar el codigo por medio de la inyección de dependencias ',
             ]),
-        new Item('iod',
+        new Item(FRAMEWORKS_IOD,
             [
                 '- La inyección de dependencias Permite modificar y extender nuestro codigo mucho más facil ',
                 '- Solo es especificar que funcionalidades queremos añadir y estaran disponibles de manera transversal ',
-                '- El codigo modificado se vuelve más reutilizable, compacto y manejable ',
-                '- Asi se tiene un codigo compuesto, menos acoplado y mejor abstraido, donde lo más importante es que hace, en vez de como lo hace '
+                '- El codigo modificado se vuelve más reutilizable, compacto y manejable, además de que tiene un mejor reparto de responsabilidades ',
+                '- Asi se tiene un codigo compuesto, menos acoplado y mejor abstraido, donde lo más importante es que hace, en vez de como lo hace ',
+                '- Tambien ayuda al manejo implicito de las dependencias y una mejor visión de como se relacionan las diferentes partes del sistema'
             ]),
         new Item('scafolding',
             [

@@ -1,4 +1,5 @@
-import { PARADIGMAS_PARADIGMA_DATOS, PEOPLE_PROCESS_BLOAT, PERSISTENCY_SCALING_DB } from "../linkReferencia";
+import { META_ESTRUCTURAS_MAQUINA_ESTADOS, META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL, PARADIGMAS_PARADIGMA_DATOS, PEOPLE_PROCESS_BLOAT,
+    PERSISTENCY_SCALING_DB } from "../linkReferencia";
 import { Item } from "../models";
 
 export class Content1 {
@@ -783,7 +784,7 @@ export const META_ESTRUCTURAS =
                 ' - Los parentesis afectan el orden de evaluación, al mismo tiempo que permiten asociar expresiones ',
                 ' - La precedencia puede cambiar de lenguaje a lenguaje, por lo que se recomienda saber las especificaciones de cada uno ',
             ]),
-        new Item('verticalAndHorizontal',
+        new Item(META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL,
             [
                 '- Una buena estructura es primordial para todo proyecto, sin embargo no siempre debe reflejar la arquitectura del proyecto',
                 '',
@@ -876,7 +877,7 @@ export const META_ESTRUCTURAS =
                 '- Permite realizar operaciones de manipulacion de codigo en tiempo de compilación en vez de ejecución ',
                 '- Se puede modificar el arbol de sintaxis del lenguaje ',
             ]),
-        new Item('maquinaEstados',
+        new Item(META_ESTRUCTURAS_MAQUINA_ESTADOS,
             [
                 '- Es una modelización conceptual en forma de diagrama de un problema ',
                 '- En esta situación siempre se encuentra un inicio, el cual es la espera de un estimulo ',

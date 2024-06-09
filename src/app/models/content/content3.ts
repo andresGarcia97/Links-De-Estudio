@@ -1,3 +1,4 @@
+import { REFACTORING_MANAGE_DEPENDENCIES } from "../linkReferencia";
 import { Item } from "../models";
 
 export class Content3 {
@@ -620,6 +621,38 @@ export const REFACTORIZACION =
                 '<strong>- Refactorización:</strong> Si la deuda es facilmente solucionable, hagalo, no se deberia pedir permiso para tareas simples como esta',
                 '<strong>- Aprendizaje:</strong> Un buen desarrollador que tenga un gran abanico de conceptos, patrones y arquitecturas es menos propenso a equivocarse ',
                 '<strong>- Entrega continua:</strong> Asi se tienen ciclos cortos y una retroalimentación más efectiva ',
+            ]),
+        new Item(REFACTORING_MANAGE_DEPENDENCIES,
+            [
+                '- Durante la decada de los 90s y antes de empezar el año 2000 existio un problema informatico gigante, el famoso <strong>Y2K</strong>, debido a la generalización ',
+                ' - de que los años en las fechas, se guardaran en 2 digitos, por lo que una fecha de 1997 se representaba como 97, el caos provenia del año 2000 ',
+                ' - donde se temia que la fecha se pudiera malinterpretar como 1900, retrocediendo 100 años, causando problemas y confusiones generalizados',
+                '',
+                '- El problema se resolvio, pero fue un costo enorme para miles de empresas, ya que hubieron de modificar millones de lineas que estaban duplicadas ',
+                ' - y dispersas ó que hacian uso de sentencias como el <em>go to</em> que complicaban los cambios, sin contar las repercusiones que esto trajo',
+                '',
+                '- Para resolver un problema, es importante definirlo y acotarlo, para eso es importante definir que es una dependencia, que se puede definir como: ',
+                ' - un fragmento de codigo determinado que no puede ser entendido o modificado, de forma aislada, debe hacerse junto a la parte involucrada',
+                '',
+                '- Las <strong>Dependencias obvias</strong> son aquellas son aquellas que generan cambios obligatorios dentro del codigo, como agregar/eliminar un parametro, ',
+                ' - esto obligara a modificar todos los llamados/invocaciones que se tengan de la función',
+                '',
+                '- Tambien existen <strong>Dependencias secuenciales</strong>, donde la parte a modificar parece independiente, pero no lo es, es parte de una secuencia de ejecución, ',
+                ' - donde el orden correcto de la ejecución o serie de tareas, es esencial para el correcto funcionamiento, para eliminar esta dependencia',
+                ' - se puede refactorizar para que se comporte como una <em>maquina de estados</em>, con todos los estados y pasos debidamente definidos ',
+                '',
+                '- Las <strong>Dependencias ocultas</strong> son más dificiles de visualizar, sus cambios no afectan a todos los lugares que deberian, como el logo de una pagina, ',
+                ' - este siempre debe ser visible en todas las paginas; pero este cambio con el tiempo y en consecuencia todas las paginas tambien, ',
+                ' - obligando a buscar y modificar cada archivo que contega el antiguo logo, la mejor solución para evitar problemas como este es, ',
+                ' - hacer la dependencia explicita haciendo que todas las paginas busquen la imagen a usar, para que futuros cambios queden centralizados ',
+                '',
+                '- Las variables o datos globales, se pueden considerar <strong>Dependencias globales</strong> esto es problematico por diferentes razones,',
+                ' - modificar la variable afectaria multiples lugares, y crecer alrededor de este unico punto, hara que la logica y el mantenimiento se compliquen, ',
+                ' - por eso se insta a tomar un enfoque de tipo inmutable y uso de variables locales, mediante el uso de abstracciones y refactors',
+                '',
+                '- Conforme se va aumentando la gerarquia y la importancia de los componentes, se hablan de conceptos como <strong>Inyección de dependencias</strong> y ',
+                ' - patrones arquitectonicos como <strong>Capas</strong> que surgen debido a la necesidad de reducir o controlar este acoplamiento',
+                ' - y tener un mejor entendimiento de la estructura, los componentes y las relaciones que conforman sistema',
             ])
     ];
 

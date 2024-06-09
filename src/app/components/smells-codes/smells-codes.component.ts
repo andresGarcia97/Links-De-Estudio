@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SMELLS_CODES } from 'src/app/models/content/content3';
-import { ANALISIS_KEY, ARQUITECTURAS_KEY, BUENAS_PRACTICAS_KEY, LinkReferencia, MALAS_PRACTICAS_KEY, REFACTORIZACION_KEY, SMELL_CODES_REF } from 'src/app/models/linkReferencia';
+import { ANALISIS_KEY, ARQUITECTURAS_KEY, BUENAS_PRACTICAS_KEY, LinkReferencia, MALAS_PRACTICAS_KEY, REFACTORING_KEY, SMELL_CODES_REF } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-smells-codes',
@@ -22,9 +22,9 @@ export class SmellsCodesComponent implements OnInit {
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
     this.relatedSections.set(BUENAS_PRACTICAS_KEY, routes.get(BUENAS_PRACTICAS_KEY)!);
-    this.relatedSections.set(REFACTORIZACION_KEY,  routes.get(REFACTORIZACION_KEY)!);
     this.relatedSections.set(MALAS_PRACTICAS_KEY,  routes.get(MALAS_PRACTICAS_KEY)!);
     this.relatedSections.set(ARQUITECTURAS_KEY,    routes.get(ARQUITECTURAS_KEY)!);
+    this.relatedSections.set(REFACTORING_KEY,      routes.get(REFACTORING_KEY)!);
     this.relatedSections.set(ANALISIS_KEY,         routes.get(ANALISIS_KEY)!);
   }
 
