@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BASE_DE_DATOS_AVANZADO } from 'src/app/models/content/content1';
-import { DATA_BASES_KEY, LinkReferencia, PERSISTENCY_ADVANCED_REF, WEB_KEY } from 'src/app/models/linkReferencia';
+import { PERSISTENCY_KEY, LinkReferencia, PERSISTENCY_ADVANCED_REF, WEB_KEY } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-sql-nosql-advanced',
@@ -21,7 +21,7 @@ export class SqlNosqlAdvancedComponent implements OnInit {
   ngOnInit(): void {
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
-    this.relatedSections.set(DATA_BASES_KEY, routes.get(DATA_BASES_KEY)!);
+    this.relatedSections.set(PERSISTENCY_KEY, routes.get(PERSISTENCY_KEY)!);
     this.relatedSections.set(WEB_KEY,        routes.get(WEB_KEY)!);
   }
   

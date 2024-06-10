@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { REFACTORING_MANAGE_DEPENDENCIES, LinkReferencia } from 'src/app/models/linkReferencia';
+import { PERSISTENCY_OPTIMIZE_SLOW_QUERIES, LinkReferencia } from 'src/app/models/linkReferencia';
 
 const references = new LinkReferencia()
 
@@ -17,7 +17,7 @@ export class HomeComponent {
   }
 
   public routeToLastItem(): void {
-    const newItem = REFACTORING_MANAGE_DEPENDENCIES;
+    const newItem = PERSISTENCY_OPTIMIZE_SLOW_QUERIES;
     const section = references.components.get(newItem)?.component!;
     this.router.navigateByUrl(`/${references.routesAndSections.get(section)}`, { state: { newItem } })
   }

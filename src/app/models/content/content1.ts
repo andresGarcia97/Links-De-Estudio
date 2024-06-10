@@ -1,5 +1,5 @@
 import { META_ESTRUCTURAS_MAQUINA_ESTADOS, META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL, PARADIGMAS_PARADIGMA_DATOS, PEOPLE_PROCESS_BLOAT,
-    PERSISTENCY_SCALING_DB } from "../linkReferencia";
+    PERSISTENCY_ADVANCED_ORM, PERSISTENCY_ADVANCED_SCALING_DB, PERSISTENCY_OPTIMIZE_SLOW_QUERIES} from "../linkReferencia";
 import { Item } from "../models";
 
 export class Content1 {
@@ -1775,6 +1775,30 @@ export const BASES_DE_DATOS =
                 ' - en duplicaciones o inconsistencias, por lo que armonizar y juntar los datos de manera efectiva, requiere una planificación integral ',
                 '<strong>- Rendimiento:</strong> Una preocupación constante, que siempre se debe tener en cuenta con cada cambio, por esto es ideal que ',
                 ' - se usen buenas practicas, usar particiones, se eviten procesos intensivos etc.. con el fin de evitar o mitigar posibles cuellos de botella',
+            ]),
+        new Item(PERSISTENCY_OPTIMIZE_SLOW_QUERIES,
+            [
+                '- Identificar y optimizar consultas lentas en cualquier gestor de Bases de Datos relacional es fundamental para un optimo rendimiento',
+                '- Si es un desarrollador que usa poco los <em>ORM</em> como Hibernate la optimización no es un concepto ajeno ',
+                '',
+                '<strong>¿ Porque son dificiles de encontrar ?</strong>',
+                '- Un gran volumen de consultas puede ocultarlas entre el ruido',
+                '- Falta de herramientas de monitoreo, como <em>Digma, Grafana, Prometheus</em>',
+                '- Consultas hechas con <em>ORM</em>, estas aceleran el desarrollo y disminuyen la necesidad de SQL nativo, a cambio de ocultar su funcionamiento',
+                '',
+                '<strong>¿ Porque se pueden dar ?</strong>',
+                '- Falta de indices, en especial si hay consultas con uso de <em>WHERE, JOIN, GROUP BY, ORDER BY</em> que usan estas columnas ',
+                '- La complejidad, como el uso de <em>JOIN, Subqueries</em> y <em>Agregaciones</em>',
+                '- Abstracciones con fugas por parte de los <em>ORM</em>, ya que pueden traer consigo el problema de <strong>N + 1</strong> consultas ',
+                '- Realizar consultas con <strong>*</strong> entre mayor sea la cantidad de campos mayor sera el tiempo para retornar un resultado del query ',
+                '',
+                '<strong>¿ Como se pueden optimizar ?</strong>',
+                '- cada <em>RBDMS</em> cuenta con caracteristicas y optimizaciones unicas, por lo que es util conocerlas para implementarlas ',
+                '- Utilizar consultas parametrizadas, evitando el esfuerzo de recompilar y optimizar los planes de consulta',
+                '- Configure la DB para obtener las mejores prestaciones de acuerdo con cada caso, red, disco, memoria',
+                '- Remueva indices no deseados, ya que estos alentan los <em>INSERT</em> y <em>UPDATE</em>',
+                '- Verifique la tabla sobre la cual se estan haciendo los queries, es posible que se pueda normalizar o dividirse, reduciendo la cantidad de filas ',
+                '- Use procedimientos almacenados si son consultas demasiado frecuentes y con poca complejidad, sin abusar de estos ',
             ])
     ];
 
@@ -1797,7 +1821,7 @@ export const BASE_DE_DATOS_AVANZADO =
                 '<strong>- Grafos:</strong>      Se basan en nodos, relacionados mediante aristas, es necesario de la teoria de grafos para recorrerlas ',
                 '<strong>- Objetos:</strong>     Los datos se manejan mediante Objetos, tal y como en la Programación Orientada a Objetos ',
             ]),
-        new Item('orm',
+        new Item(PERSISTENCY_ADVANCED_ORM,
             [
                 '- El Mapeo Objeto-Relacional permite convertir los objetos convencionales en objetos persistentes ',
                 '- Permite generar esquemas para guardar la información independientes de cualquier Motor de Base de Datos ',
@@ -2015,7 +2039,7 @@ export const BASE_DE_DATOS_AVANZADO =
                 '- Las redes sociales suelen ser un mar de información, donde no existe una estructura fija, por lo que contienen un enorme volumen de datos, ',
                 ' - sin estructura o parcialmente estructurados, por lo que una BD NoSQL es idonea para este tipo de ambientes ',
             ]),
-        new Item(PERSISTENCY_SCALING_DB,
+        new Item(PERSISTENCY_ADVANCED_SCALING_DB,
             [
                 '- Las BD esta hechas para procesar y almacenar inmensas cantidades de datos, aun asi eso no significa que no deba o no puedan crecer aun más',
                 '',
