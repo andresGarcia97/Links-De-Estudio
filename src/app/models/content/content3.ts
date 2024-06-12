@@ -1,4 +1,4 @@
-import { REFACTORING_MANAGE_DEPENDENCIES } from "../linkReferencia";
+import { REFACTORING_MANAGE_DEPENDENCIES, SECURITY_PROTOCOLOS_SEGURITY } from "../linkReferencia";
 import { Item } from "../models";
 
 export class Content3 {
@@ -669,17 +669,17 @@ export const SEGURIDAD =
                 ' - Evitar accesos no autorizados, dentro de la red   - Advertir de posibles accesos malintencionados ',
                 ' - Posibilidad de bloquear aplicaciones peligrosas                                                   ',
             ]),
-        new Item('protocolos',
+        new Item(SECURITY_PROTOCOLOS_SEGURITY,
             [
-                '<strong>- SSL</strong> capa de sockets seguros ',
-                ' - Es una tecnologia para mantener segura una conexión de internet ',
-                ' - Esto protege toda la información privada que se envia entre 2 sistemas, (cliente-servidor)',
+                '<strong>SSL</strong> capa de sockets seguros ',
+                '- Es una tecnologia para mantener segura una conexión de internet ',
+                '- Esto protege toda la información privada que se envia entre 2 sistemas, (cliente-servidor)',
                 '',
-                '<strong>- TSL</strong> una versión más actual y segura de SSL ',
-                ' - La principal difirencia es el algoritmo de cifrado ',
+                '<strong>TSL</strong> una versión más actual y segura de SSL ',
+                '- La principal difirencia es el algoritmo de cifrado ',
                 '',
-                '<strong>- HTTPS</strong> Hyper Text Transfer Protocol Secure o protocolo seguro de transferencia de hipertexto ',
-                ' - Basicamente indica si una conexion es segura, por medio de un certificado de TSL ó SSL ',
+                '<strong>HTTPS</strong> Hyper Text Transfer Protocol Secure o protocolo seguro de transferencia de hipertexto ',
+                '- Basicamente indica si una conexion es segura, por medio de un certificado de TSL ó SSL ',
             ]),
         new Item('proxy',
             [

@@ -75,6 +75,8 @@ export const PERSISTENCY_ADVANCED_ORM = 'orm'
 export const PERSISTENCY_ADVANCED_N_1_SELECTS = 'n+1selects';
 export const REFACTORING_MANAGE_DEPENDENCIES = 'manageDependencies';
 export const PERSISTENCY_OPTIMIZE_SLOW_QUERIES = 'optimizeSlowQueries';
+export const HARDWARE_PROTOCOLS = 'protocolsHardware';
+export const SECURITY_PROTOCOLOS_SEGURITY = 'protocolosSecurity';
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -599,7 +601,7 @@ export const PRINCIPIOS_REF = new Map<string, Referencia>([
 export const SECURITY_KEY = 'Seguridad';
 export const SECURITY_REF = new Map<string, Referencia>([
     ['firewall', new Referencia('https://idgrup.com/firewall-que-es-y-como-funciona/#:~:text=Un%20firewall%2C%20tambi%C3%A9n%20llamado%20cortafuegos,ordenadores%20de%20una%20misma%20red', 'Firewall', SECURITY_KEY, 'Firewall')],
-    ['protocolos', new Referencia('https://www.websecurity.digicert.com/es/es/security-topics/what-is-ssl-tls-https', 'SSL, TSL, HTTPS', SECURITY_KEY, 'SSL, TSL, HTTPS')],
+    [SECURITY_PROTOCOLOS_SEGURITY, new Referencia('https://www.websecurity.digicert.com/es/es/security-topics/what-is-ssl-tls-https', 'SSL, TSL, HTTPS', SECURITY_KEY, 'SSL, TSL, HTTPS')],
     ['proxy', new Referencia('https://www.welivesecurity.com/la-es/2020/01/02/que-es-proxy-para-que-sirve/', 'Proxy', SECURITY_KEY, 'Proxy')],
     ['ciberSeguridad', new Referencia('https://latam.kaspersky.com/resource-center/definitions/what-is-cyber-security', 'Ciberseguridad y otras amenazas', SECURITY_KEY, 'Ciberseguridad')],
     ['cia', new Referencia('https://searchdatacenter.techtarget.com/es/opinion/Que-es-la-triada-de-la-CIA', 'Confidencialidad-Integridad-Accesibilidad ', SECURITY_KEY, 'CIA')],
@@ -695,14 +697,16 @@ export const VERSIONAMIENTO_REF = new Map<string, Referencia>([
 export const HARDWARE_KEY = 'Hardware';
 export const HARDWARE_REF = new Map<string, Referencia>([
     ['virtualizacion', new Referencia('https://www.redhat.com/es/topics/virtualization/what-is-a-virtual-machine', 'Virtualización', HARDWARE_KEY, 'Virtualizacion')],
-    ['cli', new Referencia('https://searchdatacenter.techtarget.com/es/definicion/Interfaz-de-linea-de-comandos-o-CLI', 'Interfaz de Linea de Comandos', HARDWARE_KEY, 'CLI')],
+    //['cli', new Referencia('https://searchdatacenter.techtarget.com/es/definicion/Interfaz-de-linea-de-comandos-o-CLI', 'Interfaz de Linea de Comandos', HARDWARE_KEY, 'CLI')],
+    ['cli', new Referencia('https://www.computerweekly.com/es/definicion/Interfaz-de-linea-de-comandos-o-CLI', 'Interfaz de Linea de Comandos', HARDWARE_KEY, 'CLI', '', '2024/06/11')],
     ['escalamiento', new Referencia('https://www.oscarblancarteblog.com/2017/03/07/escalabilidad-horizontal-y-vertical/', 'Escalamiento de un sistema', HARDWARE_KEY, 'Escalamiento')],
     ['nubeVSvirtualizacion', new Referencia('https://www.redhat.com/es/topics/cloud-computing/cloud-vs-virtualization', 'Nube VS Virtualizacion', HARDWARE_KEY, 'Nube VS VM')],
     ['rendering', new Referencia('https://www.freecodecamp.org/news/what-exactly-is-client-side-rendering-and-hows-it-different-from-server-side-rendering-bd5c786b340d/', 'Server-side VS client-side rendering', HARDWARE_KEY, 'Rendering')],
     ['modelOSI', new Referencia('https://www.cloudflare.com/es-es/learning/ddos/glossary/open-systems-interconnection-model-osi/', 'Modelo OSI', HARDWARE_KEY, 'Modelo OSI')],
     ['monitoreo', new Referencia('https://www.hiberus.com/crecemos-contigo/uso-de-los-apm-monitoreo-del-rendimiento-de-aplicaciones/#:~:text=Un%20APM%20(Application%20Performance%20Management,problemas%20a%20nivel%20de%20aplicaci%C3%B3n', 'Aplication Performance Management (apm)', HARDWARE_KEY, 'Monitoreo')],
     ['vmVsContainers', new Referencia('https://cloudnativeislamabad.hashnode.dev/virtualization-vs-containerization', 'Maquinas Virtuales VS Contenedores', HARDWARE_KEY, 'VM VS Contenedores')],
-    ['falseSharing', new Referencia('https://www.easytechjunkie.com/what-is-false-sharing.htm', 'False Sharing', HARDWARE_KEY, 'False Sharing')],
+    ['falseSharing', new Referencia('https://www.easytechjunkie.com/what-is-false-sharing.htm', 'False Sharing', HARDWARE_KEY, 'False Sharing', '2022/12/29')],
+    [HARDWARE_PROTOCOLS, new Referencia('https://www.solarwinds.com/resources/it-glossary/network-protocols', 'Network Protocols', HARDWARE_KEY, 'Network Protocols', '2024/06/11')],
 ]);
 
 export const WEB_KEY = 'Web';

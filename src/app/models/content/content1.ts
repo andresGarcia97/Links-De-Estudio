@@ -1,5 +1,7 @@
-import { META_ESTRUCTURAS_MAQUINA_ESTADOS, META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL, PARADIGMAS_PARADIGMA_DATOS, PEOPLE_PROCESS_BLOAT,
-    PERSISTENCY_ADVANCED_ORM, PERSISTENCY_ADVANCED_SCALING_DB, PERSISTENCY_OPTIMIZE_SLOW_QUERIES} from "../linkReferencia";
+import {
+    HARDWARE_PROTOCOLS, META_ESTRUCTURAS_MAQUINA_ESTADOS, META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL, PARADIGMAS_PARADIGMA_DATOS, PEOPLE_PROCESS_BLOAT,
+    PERSISTENCY_ADVANCED_ORM, PERSISTENCY_ADVANCED_SCALING_DB, PERSISTENCY_OPTIMIZE_SLOW_QUERIES
+} from "../linkReferencia";
 import { Item } from "../models";
 
 export class Content1 {
@@ -341,18 +343,17 @@ export const CALIDAD =
 
 export const HARDWARE =
     [
-        new Item('escalamiento',
+        new Item('virtualizacion',
             [
-                '- Capacidad de un software para crecer de acuerdo a la demanda ',
+                '- Es un entorno virtual que funciona con su propia CPU, memoria, red, y almacenamiento, que se crea dentro de un sistema de hardware fisico ',
+                '- Esto se da mediante un software llamado <em>hipervisor</em> encargado de separar y gestionar los recursos reales para que la VM pueda gestionarlos ',
+                '- Las VM estan aisladas del host, y este a su vez puede contener las VM que soporte ',
+                '- Una VM permite que se ejecuten diferentes Sistemas Operativos dentro de la misma maquina ',
                 '',
-                '<strong> Vertical:</strong> La más facil de realizar pero la más costosa',
-                '<strong> vertical:</strong> Esta depende directamente de la capacidad de la infraestructura',
-                '<strong> vertical:</strong> Las fallas en la infraestructura pueden conllevar a errores colapsantes ',
-                '',
-                '<strong> Horizontal:</strong> Esta es más dificil de realizar pero es practicamente ilimitada',
-                '<strong> Horizontal:</strong> Se basa en tener varios nodos trabajando en paralelo de manera coordinada ',
-                '<strong> Horizontal:</strong> Soporta el balanceo de cargas y tiene una disponibilidad muy alta ',
-                '<strong> Horizontal:</strong> El mantenimiento se incrementa considerablemente',
+                '<strong>Ventajas:</strong>',
+                '- Permiten aprovechar mejor los recursos de una maquina desaprovechada, al permitir compatirlos entre diferentes SO de manera simultanea',
+                '- Dado su aislamiento se puede ejecutar software que no es de confianza sin peligro de que dañe al host ',
+                '- Ofrecen más formas de recuperación ante desastres, ante desastres permiten permiten la tolerancia a fallos y la redundancia '
             ]),
         new Item('cli',
             [
@@ -363,17 +364,20 @@ export const HARDWARE =
                 '- Son rapidas y más eficientes ya que no necesitan interfaces graficas para funcionar ',
                 '- Tambien son más complejas de usar, ya que se basan en la memoria del usuario ',
             ]),
-        new Item('virtualizacion',
+        new Item('escalamiento',
             [
-                '- Es un entorno virtual que funciona con su propia CPU, memoria, red, y almacenamiento, que se crea dentro de un sistema de hardware fisico ',
-                '- Esto se da mediante un software llamado hipervisor encargado de separar y gestionar los recursos ',
-                ' - de la maquina real para que la VM pueda utilizarlos de manera adecuada ',
-                '- Las VM estan aisladas del host, y este a su vez puede contener las VM que soporte ',
-                '- Una VM permite que se ejecuten diferentes Sistemas Operativos dentro de la misma maquina ',
+                '- Capacidad de un software para crecer de acuerdo a la demanda ',
                 '',
-                '- Ventajas ',
-                ' - Una ventaja es que permiten aprovechar mejor los recursos de una maquina que no se esten usando ',
-                ' - Dado su aislamiento se puede ejecutar software que no es de confianza sin peligro de que dañe al host ',
+                '<strong>Vertical:</strong>',
+                '- La más facil de realizar pero la más costosa, ya que solo implica comprar un hardware más potente',
+                '- Esta depende directamente de la capacidad de la infraestructura, sin contar en que llegara un momento donde llegue a su limite',
+                '- Las fallas en la infraestructura pueden conllevar a errores colapsantes ',
+                '',
+                '<strong>Horizontal:</strong>',
+                '- Esta es más dificil de realizar pero es practicamente ilimitada',
+                '- Se basa en tener varios nodos trabajando en paralelo de manera coordinada ',
+                '- Soporta el balanceo de cargas y tiene una disponibilidad muy alta, además de que se puede combinar con un escalamiento vertical',
+                '- El mantenimiento se incrementa considerablemente, además de que se requieren cambios en el software para poder trabajar como un conjunto'
             ]),
         new Item('nubeVSvirtualizacion',
             [
@@ -398,15 +402,14 @@ export const HARDWARE =
             ]),
         new Item('rendering',
             [
-                '<strong>- Server-side:</strong> Esta funciona convirtiendo archivos estaticos HTML en información utilizable por el navegador ',
-                ' - Este proceso no cuenta con un modo de cache, por lo que cada vez que se necesite, este sera pedido al servidor ',
-                ' - Su velocidad no solo depende del servidor, si no de la optimización del sitio web, personas conectadas, etc.. ',
-                ' - Generalmente cada vez que hay un cambio se vuelve a pedir todo el contenido y no solo lo que se modifico ',
-                ' - El lado positivo de este metodo es el SEO ya que es mucho más eficiente y facil para los motores de busqueda ',
-                ' - Este enfoque es ideal para contenido estatico, que no se requiera para una interactividad continua con el usuario ',
+                '<strong>Server-side:</strong> Esta funciona convirtiendo archivos estaticos HTML en información utilizable por el navegador ',
+                '- Este proceso no cuenta con un modo de cache, por lo que cada vez que se necesite, este sera pedido al servidor ',
+                '- Su velocidad no solo depende del servidor, si no de la optimización del sitio web, personas conectadas, etc.. ',
+                '- Generalmente cada vez que hay un cambio se vuelve a pedir todo el contenido y no solo lo que se modifico ',
+                '- El lado positivo de este metodo es el SEO ya que es mucho más eficiente y facil para los motores de busqueda ',
+                '- Este enfoque es ideal para contenido estatico, que no se requiera para una interactividad continua con el usuario ',
                 '',
-                '<strong>- Client-side:</strong> Esta forma funciona mediante Javascript que obtendra el documento basico de HTML, ',
-                ' - y que despues ejecutara el resto del sitio usando al navegador ',
+                '<strong>Client-side:</strong> Esta funciona mediante Javascript que obtendra el documento basico de HTML, y despues ejecutara el resto del sitio usando al navegador ',
                 '- Este enfoque es más reciente y es utilizado por las librerias y frameworks de Javascript como Vue y Angular ',
                 '- Mediante esto el servidor solo se encarga de responder con los datos, el resto se hace en el navegador ',
                 '- Las paginas se cargan más rapido ya que solo se modifica lo que se necesite y no todo el archivo ',
@@ -474,8 +477,29 @@ export const HARDWARE =
                 ' - Modificar la velocidad de lectura/escritura del cache para reducir la periocidad ',
                 ' - Cambiar la administración del cache del componente fisico ',
                 ' - Alterar como el SO administra el uso compartido',
-            ]
-        )
+            ]),
+        new Item(HARDWARE_PROTOCOLS,
+            [
+                '- Son un conjunto de reglas que describen como los dispositivos conectados se comunican a traves de una red, para intercambiar información ',
+                '- Sirven como un lenguaje en comun, para una comunicación facil y segura sin importar las diferencias de hardware o procesos internos ',
+                '',
+                '<strong>Protocolos de comunicación de red:</strong> Determinan las reglas y formatos para transferir datos a traves de redes',
+                '<strong>- Protocolo de transferencia de hipertexto <em>(HTTP)</em></strong>: Protocolo de internet que permite la comunicación entre un servidor y un navegador ',
+                '<strong>- Protocolo de control de transmisión <em>(TCP)</em></strong>: Protocolo confiable orientado a la conexión que ayuda en la transmisión ',
+                ' - secuencial de paquetes de datos para garantizar que los datos lleguen al destino a tiempo sin duplicaciones ',
+                '<strong>- Protocolo de Internet <em>(IP)</em></strong>: Facilita el enrutamiento de los paquetes de datos a traves de las redes, funciona junto con <em>TCP</em>',
+                '<strong>- Protocolo de datagramas de usuario <em>(UDP)</em></strong>: Es un protocolo sin conexión que no garantiza una conexión entre la aplicación y el servidor ',
+                ' - antes de transmitir un mensaje, es eficaz para casos de uso como transmisiones o <em>broadcasts</em> ó <em>multicast</em> ',
+                '<strong>- Protocolo de transferencia de archivos <em>(FTP)</em></strong>: Permite compartir archivos entre servidores estableciendo 2 conexiones <em>TCP</em>, ',
+                ' - una para datos y otra para control, para garantizar la recuperación en casos de perdida de datos ',
+                '',
+                '<strong>Protocolos de seguridad de red:</strong> Garantizan una transmisión segura de datos a traves de conexiones de red',
+                '<strong>- Protocolo seguro de transferencia de archivos <em>(SFTP)</em></strong>: Transfiere archivos de forma segura a traves de la red mediante, ',
+                ' - el uso de cifrado de clave publica, y la auntenticación entre el cliente y servidor ',
+                '<strong>- Protocolo seguro de transferencia de hipertexto <em>(HTTPS)</em></strong>: Supera la limitación de <em>HTTP</em> garantizando la seguridad, ',
+                ' - de los datos en transito, mediante un canal seguro cifrado ',
+                '<strong>- Secure Socket Layer <em>(SSL)</em></strong>: Ayuda a proteger las conexiones de internet, mediante cifrado, tambien existe una versión más reciente y segura <em>TLS</em>',
+            ])
     ];
 
 export const WEB =
