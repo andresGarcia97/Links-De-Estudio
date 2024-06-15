@@ -1,7 +1,8 @@
 import {
     AGILES_OUTPUT_AND_OUTCOME, ARQUITECTURAS_CAPAS, CONTENEDORES_SECURE_ORCHESTRATION, ESTRATEGIAS_DESARROLLO_SCREAMING_DESIGN,
-    FRAMEWORKS_CODE_STRUCTURE, FRAMEWORKS_IOD, LEYES_HYRUM, LEYES_LEHMAN, MALAS_PRACTICAS_ANTI_PATRONES_ARQUITECTURAS, MALAS_PRACTICAS_TRAIN_WECKS,
-    META_CARACTERISTICAS_BACKWARD_AND_BREAKING_CHANGES, POO_INMUTABILITY, POO_POO, POO_POO_PILARES
+    FRAMEWORKS_CODE_STRUCTURE, FRAMEWORKS_IOD, LEYES_HYRUM, LEYES_LEHMAN, MALAS_PRACTICAS_ANTI_PATRONES_ARQUITECTURAS,
+    MALAS_PRACTICAS_TRAIN_WECKS, META_CARACTERISTICAS_BACKWARD_AND_BREAKING_CHANGES, META_CARACTERISTICAS_META_DATOS,
+    POO_INMUTABILITY, POO_POO, POO_POO_PILARES
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -696,13 +697,15 @@ export const ARQUITECTURAS =
 
 export const META_CARACTERISTICAS =
     [
-        new Item('metaDatos',
+        new Item(META_CARACTERISTICAS_META_DATOS,
             [
-                '- Literalmente son datos de los datos ',
-                '- Estan estructurados para describir caracteristicas de los datos como cantidad y contenido ',
-                '- Actualmente se usan para gestionar y recolectar información de interes ',
-                '- Facilitan la estandarización y la gestion de los cambios ',
+                '- Literalmente son datos de los datos',
+                '- Su significado proviene del griego <em>μετα</em>, <strong>"después de"</strong> y del plural del latín <em>datum</em>, <strong>"datos"</strong>, literalmente significa "más allá de los datos"',
+                '- Estan altamente estructurados para describir caracteristicas de los datos como cantidad, contenido, atributos, circunstancias, etc..',
+                '- Actualmente se usan para gestionar y recolectar información de interes, desde pequeñas cantidades, hasta BigData ',
+                '- Facilitan la estandarización y la gestion de los cambios, además de ayudar con las busquedas y la generación de informes/reportes ',
                 '- Pueden facilitar el desarrollo al tener un menor cambio de costo entre plataformas ',
+                '- Con una adecuada gobernananza de los datos, pueden dislumbrar patrones, y generar información util para multiples areas'
             ]),
         new Item('metaClase',
             [

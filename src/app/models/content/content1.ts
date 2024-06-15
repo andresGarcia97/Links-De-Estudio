@@ -1,6 +1,7 @@
 import {
-    HARDWARE_PROTOCOLS, META_ESTRUCTURAS_MAQUINA_ESTADOS, META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL, PARADIGMAS_PARADIGMA_DATOS, PEOPLE_PROCESS_BLOAT,
-    PERSISTENCY_ADVANCED_ORM, PERSISTENCY_ADVANCED_SCALING_DB, PERSISTENCY_OPTIMIZE_SLOW_QUERIES
+    HARDWARE_PROTOCOLS, META_ESTRUCTURAS_MAQUINA_ESTADOS, META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL, PARADIGMAS_PARADIGMA_DATOS,
+    PEOPLE_PROCESS_BLOAT, PERSISTENCY_ADVANCED_ORM, PERSISTENCY_ADVANCED_SCALING_DB, PERSISTENCY_ADVANCED_WAL, PERSISTENCY_DBMS,
+    PERSISTENCY_OPTIMIZE_SLOW_QUERIES
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -1643,7 +1644,7 @@ export const BASES_DE_DATOS =
                 '- Toda tabla deberia tener una clave primaria, para mejorar la indexación de contenido',
                 '- La información deberia estar normalizada para evitar valores duplicados',
             ]),
-        new Item('dbms',
+        new Item(PERSISTENCY_DBMS,
             [
                 '- Se encargan de almacenar, administrar, manipular y resguardar los datos ',
                 '- Las BD guardan diferentes tipos de datos como: texto, numeros, binarios, temporales, documentos, imagenes, geograficos, etc... ',
@@ -2074,5 +2075,40 @@ export const BASE_DE_DATOS_AVANZADO =
                 '<strong>- Cache:</strong> Almacenar información recurrente de manera que sea más rapida para su acceso ',
                 '<strong>- Replicación:</strong> Crear replicas de la BD principal, para separar las lecturas de la escritura ',
                 '<strong>- Fragmentación:</strong> Dividir las tablas de la BD en partes más pequeñas y distribuirlas en multiples servidores ',
+            ]),
+        new Item(PERSISTENCY_ADVANCED_WAL,
+            [
+                '- <em>Write Ahead Logs</em>, es una tecnica utilizada en los sistemas de almacenamiento para garantizar la durabilidad y coherencia de las transacciones ',
+                '- La idea basica es registrar los cambios en un registro antes de que se apliquen al almacenamiento real',
+                '- Este contiene un registro secuencial de todos los cambios realizados en el almacenamiento',
+                '- Las transacciones no se consideran completadas, hasta que los cambios correspondientes se registren de forma segura en el <em>WAL</em>',
+                '- Aunque parezca contradictorio, esto puede mejorar el rendimiento en algunos escenarios, al escribir en los archivos de manera secuencial, y no aleatoria ',
+                '',
+                '<strong>Secuencia de pasos</strong>',
+                '<strong>1. Antes de realizar cualquier cambio persistente:</strong> Agrege la información necesaria a los registros para reproducir los cambios, ',
+                ' - en caso de cualquier error, como: la operación realizada, datos afectados, y cualquier otro metadato necesario para la recuperación ',
+                '<strong>2. Una vez modificados los logs:</strong> Se pueden aplicar directamente en la BD y modificar las copias en memoria ',
+                '<strong>3. Confirmar la transacción:</strong> Para que los cambios sean permanentes, este registro de confirmación tambien funciona como marcador, ',
+                ' - para que el sistema sepa de todos los cambios que tienen transacciones comprometidas ',
+                '<strong>4. Puntos de control:</strong> Periodicamente el sistema de la BD realiza puntos de control, aca se vacian los datos modificados de la memoria, ',
+                ' - y escribe un nuevo punto de control en la <em>WAL</em> indicando el punto donde se han aplicado todos los cambios sobre los registros de la BD',
+                '<strong>5. Recuperación:</strong> Si es necesaria en caso de alguna falla, se usaran los <em>WAL</em> para restaurar la BD a un estado previo consistente, ',
+                ' - al haber reproducido todos desde la ultima transacción confirmada, se pueden aplicar los cambios sin confirmar ó que se encuentran pendientes ',
+                '',
+                '<strong>¿ Donde se usan ?</strong>',
+                '- Comunmente utilizado en sistemas de gestión de bases de datos relacionales <em>RBDMS</em> como <strong>PostgreSQL, SQLite, Oracle, MariaDB, etc..</strong>',
+                '- <strong>Kafka:</strong> Usa un proceso similar al <em>WAL</em> para mayor durabilidad y tolerancia a fallos, antes de ser procesados por los consumidores y evitar perdidas ',
+                '- <strong>Hadoop:</strong> Utilizado para garantizar la integridad y coherencia entre nodos distribuidos, actua antes que se apliquen en el registro de los metadatos ',
+                '',
+                '<strong>Componentes</strong>',
+                '<strong>- Logs de entrada:</strong> El nucleo de <em>WAL</em> son los registros de todos los sucesos, que incluyen datos y metadatos',
+                '<strong>- Bufer de Logs:</strong> Cualquier cambio se escribe primero en el bufer en memoria, lo cual suele ser rapido ya que son escrituras secuenciales ',
+                '<strong>- Numero de Secuencia de Logs(LSN):</strong> Cada entrada esta asociada a un numero de secuencia especifico, estos se utilizan para ordenar las entradas ',
+                ' - y garantizar que los cambios se apliquen en el orden correcto durante la recuperación ',
+                '<strong>- Archivos WAL:</strong> Las entradas de los logs en el buffer se vacian de manera periodica en el disco y se escriben en uno o varios archivos duraderos ',
+                '<strong>- Puntos de control:</strong> El vaciado de los logs, tambien implica actualizar los metadatos, para indicar el <em>LSN</em> de control más reciente, ',
+                ' - esto con el fin de reducir el tiempo de recuperación al limitar la cantidad de datos de registro que deben reproducirse ',
+                '<strong>- Administrador de recuperación:</strong> En caso de fallas o apagados, este administrador es responsable de restaurar la BD a un estado consistente ',
+                '<strong>- Archivado o mantenimiento:</strong> Dependiendo de la configuración, los archivos pueden guardarse o eliminarse, cuando no sean relevantes para la recuperación ',
             ])
     ];
