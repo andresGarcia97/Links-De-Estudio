@@ -1,4 +1,4 @@
-import { REFACTORING_MANAGE_DEPENDENCIES, SECURITY_PROTOCOLOS_SEGURITY } from "../linkReferencia";
+import { REFACTORING_LEGACY_CODE, REFACTORING_MANAGE_DEPENDENCIES, SECURITY_PROTOCOLOS_SEGURITY } from "../linkReferencia";
 import { Item } from "../models";
 
 export class Content3 {
@@ -559,7 +559,7 @@ export const REFACTORIZACION =
                 '- Si se tiene una aplicación con una deuda tecnica masiva y con pocas maneras de comprobar los cambios, aplique la tecnica llamada <em>Golder Master</em>, ',
                 ' - donde se tiene un gran conjunto de datos para comprobar que los resultados sean equanimes, antes y despues de los cambios ',
             ]),
-        new Item('refactorLegacyCode',
+        new Item(REFACTORING_LEGACY_CODE,
             [
                 '- Como desarrolladores de software no solo debemos crear codigo, debemos mantener el que ya existe, solucionar problemas o agregar funcionalidades ',
                 '<strong>- Hotspot analisis:</strong> El codigo antiguo puede estar llenos de deuda tecnica, pero esto no significa que se deba atacar las peores partes, ',

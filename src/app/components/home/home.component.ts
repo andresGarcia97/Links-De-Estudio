@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { PERSISTENCY_ADVANCED_WAL, LinkReferencia } from 'src/app/models/linkReferencia';
+import { META_ESTRUCTURAS_DEPRECATION, LinkReferencia } from 'src/app/models/linkReferencia';
 
 const references = new LinkReferencia()
 
@@ -17,7 +17,7 @@ export class HomeComponent {
   }
 
   public routeToLastItem(): void {
-    const newItem = PERSISTENCY_ADVANCED_WAL;
+    const newItem = META_ESTRUCTURAS_DEPRECATION;
     const section = references.components.get(newItem)?.component!;
     this.router.navigateByUrl(`/${references.routesAndSections.get(section)}`, { state: { newItem } })
   }
