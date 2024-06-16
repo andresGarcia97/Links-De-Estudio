@@ -18,25 +18,19 @@ export class GlosarioComponent implements OnInit {
   @ViewChild("inputSearch") inputSearch!: ElementRef;
 
   fuentes = new LinkFuente().fuentes;
+  linkReferencia = new LinkReferencia();
 
   temas = Array.from(new Content1().temas).concat(new Content2().temas).concat(new Content3().temas).concat(new Content4().temas).concat(new Content5().temas);
-
-  ngOnInit(): void {
-    console.info("%c Actualmente son: " + this.temas.length + " Temas ", "color:#000; font-size: 16px;background:#FFBA08; font-weight: bold;");
-    console.info("%c Tambien hay: " + this.fuentes.size + " Temas practicos ", "color:white; font-size: 16px;background:#1976d2; font-weight: bold;");
-  }
-
-  constructor(private router: Router) { }
 
   search = '';
 
   previewFuentes = Array.from(this.fuentes, ([name, value]) => ({ name, value }));
-  onlyFuentes = this.convertArrayObjectToArrayStrings(this.previewFuentes);
+  onlyFuentes = this.converPreviewFuentesToArray(this.previewFuentes);
 
-  linkReferencia = new LinkReferencia();
   componentes = this.linkReferencia.components;
   previewComponents = Array.from(this.componentes, ([name, value]) => ({ name, value }));
-  onlyComponents = this.convertArrayObjectToArrayString(this.previewComponents);
+  onlyComponents = this.convertComponentsToArray(this.previewComponents);
+  componentsWithDate = this.convertComponentsWithDatesToArray(this.previewComponents);
 
   referencia = '';
   titulo = '';
@@ -45,7 +39,29 @@ export class GlosarioComponent implements OnInit {
 
   showItem = false;
 
-  protected convertArrayObjectToArrayStrings(namesAndValues: Array<any>): Array<object> {
+  ngOnInit(): void {
+    console.info("%c Actualmente son: " + this.temas.length + " Temas ", "color:#000; font-size: 16px;background:#FFBA08; font-weight: bold;");
+    console.info("%c Tambien hay: " + this.fuentes.size + " Temas practicos ", "color:white; font-size: 16px;background:#1976d2; font-weight: bold;");
+
+    const temas2024 = this.componentsWithDate.filter((x: any) => x.dateRead.includes('2024') || x.dateUpdate.includes('2024')).length;
+    const temas2023 = this.componentsWithDate.filter((x: any) => x.dateRead.includes('2023') || x.dateUpdate.includes('2023')).length;
+    const temas2022 = this.componentsWithDate.filter((x: any) => x.dateRead.includes('2022') || x.dateUpdate.includes('2022')).length;
+    const temas2021 = this.componentsWithDate.filter((x: any) => x.dateRead.includes('2021') || x.dateUpdate.includes('2021')).length;
+    const temasWithOutRevision = this.componentsWithDate.filter((x: any) => x.dateRead == '' && x.dateUpdate == '').length;
+
+    const resumeActivity = `
+    Temas leidos/actualizados 2024: ${temas2024}\n
+    Temas leidos/actualizados 2023: ${temas2023}\n
+    Temas leidos/actualizados 2022: ${temas2022}\n
+    Temas leidos/actualizados 2021: ${temas2021}\n
+    Temas leidos/actualizados sin fecha: ${temasWithOutRevision}`;
+
+    console.log(resumeActivity);
+  }
+
+  constructor(private router: Router) { }
+
+  private converPreviewFuentesToArray(namesAndValues: Array<any>): Array<object> {
     const onlyFuentes = new Array();
     namesAndValues.forEach((element) => {
       const newElement = {
@@ -58,7 +74,7 @@ export class GlosarioComponent implements OnInit {
     return onlyFuentes;
   }
 
-  protected convertArrayObjectToArrayString(namesAndValues: Array<any>): Array<object> {
+  private convertComponentsToArray(namesAndValues: Array<any>): Array<object> {
     const onlyComponents = new Array();
     namesAndValues.forEach((element) => {
       const newElement = {
@@ -66,6 +82,22 @@ export class GlosarioComponent implements OnInit {
         referencia: element.value.referencia,
         componente: element.value.component,
         key: element.name
+      };
+      onlyComponents.push(newElement);
+    });
+    return onlyComponents;
+  }
+
+  private convertComponentsWithDatesToArray(values: Array<any>): Array<object> {
+    const onlyComponents = new Array();
+    values.forEach((element) => {
+      const newElement = {
+        //titulo: element.value.tittle,
+        //referencia: element.value.referencia,
+        //componente: element.value.component,
+        //key: element.name,
+        dateRead: element.value.dateRead,
+        dateUpdate: element.value.dateUpdate
       };
       onlyComponents.push(newElement);
     });
