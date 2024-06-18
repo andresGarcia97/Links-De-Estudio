@@ -51,10 +51,14 @@ export const FRAMEWORKS_IOD = 'iod';
 export const POO_POO = 'poo';
 export const POO_POO_PILARES = 'pooPilares';
 export const POO_INMUTABILITY = 'inmutability';
+export const ARQUITECTURAS_DEFINICION = 'definicion';
 export const ARQUITECTURAS_CAPAS = 'capas';
+export const ARQUITECTURAS_MVP_MVC = 'mvpMvc';
+export const ARQUITECTURAS_EVENT_DRIVEN = 'eventDriven';
 export const ESTRATEGIAS_DESARROLLO_SCREAMING_DESIGN = 'screamingDesign';
 export const META_CARACTERISTICAS_BACKWARD_AND_BREAKING_CHANGES = 'backwardAndBreakingChanges';
 export const META_CARACTERISTICAS_META_DATOS = 'metaDatos';
+export const META_CARACTERISTICAS_BOILER_PLATE = 'boilerPlate';
 export const LEYES_HYRUM = 'hyrum';
 export const LEYES_LEHMAN = 'lehman';
 export const MALAS_PRACTICAS_ANTI_PATRONES_ARQUITECTURAS = 'antipatronesArquitecturas';
@@ -128,7 +132,8 @@ export const ANALISIS_REF = new Map<string, Referencia>([
 
 export const ARQUITECTURAS_KEY = 'Arquitecturas';
 export const ARQUITECTURAS_REF = new Map<string, Referencia>([
-    ['definicion', new Referencia('https://cgrw01.cgr.go.cr/rup/RUP.es/SmallProjects/core.base_rup/guidances/concepts/software_architecture_4269A354.html', '¿ Que es una arquitectura ?', ARQUITECTURAS_KEY, 'Definición')],
+    //['definicion', new Referencia('https://cgrw01.cgr.go.cr/rup/RUP.es/SmallProjects/core.base_rup/guidances/concepts/software_architecture_4269A354.html', '¿ Que es una arquitectura ?', ARQUITECTURAS_KEY, 'Definición')],
+    [ARQUITECTURAS_DEFINICION, new Referencia('https://www.gluo.mx/blog/arquitectura-de-software-que-es-y-que-tipos-hay', '¿ Que es una arquitectura ?', ARQUITECTURAS_KEY, 'Definición', '', '2024/06/17')],
     ['inicioArquitectura', new Referencia('https://sg.com.mx/revista/27/arquitectura-software', 'Etapas & Roles', ARQUITECTURAS_KEY, 'Etapas & Roles')],
     ['conceptosArquitectura', new Referencia('https://www.freecodecamp.org/news/an-introduction-to-software-architecture-patterns/', 'Conceptos Arquitecturas', ARQUITECTURAS_KEY, 'Conceptos')],
     ['principiosArquitecturas', new Referencia('https://www.genbeta.com/desarrollo/principios-de-una-arquitectura-limpia-mantenible-y-testeable', 'Principios de las arquitecturas', ARQUITECTURAS_KEY, 'Principios')],
@@ -140,13 +145,15 @@ export const ARQUITECTURAS_REF = new Map<string, Referencia>([
     ['hexagonal', new Referencia('https://medium.com/@edusalguero/arquitectura-hexagonal-59834bb44b7f', 'Hexagonal', ARQUITECTURAS_KEY, 'Hexagonal')],
     ['noHexagonal', new Referencia('https://javiervelezreyes.com/ni-nueva-ni-arquitectura-ni-hexagonal/', 'Ni Nueva, Ni Hexagonal', ARQUITECTURAS_KEY, 'Ni Nueva, Ni hexagonal')],
     ['mvc', new Referencia('https://developer.mozilla.org/es/docs/Glossary/MVC', 'Modelo-Vista-Controlador', ARQUITECTURAS_KEY, 'MVC')],
-    ['mvpMvc', new Referencia('https://www.develapps.com/es/noticias/modelo-vista-presentador-mvp-en-android', 'Modelo-Vista-Presentador', ARQUITECTURAS_KEY, 'MVP')],
+    //['mvpMvc', new Referencia('https://www.develapps.com/es/noticias/modelo-vista-presentador-mvp-en-android', 'Modelo-Vista-Presentador', ARQUITECTURAS_KEY, 'MVP')],
+    [ARQUITECTURAS_MVP_MVC, new Referencia('https://keepcoding.io/blog/que-es-mvc-mvp-y-mvvm-en-android/', 'Modelo-Vista-Presentador', ARQUITECTURAS_KEY, 'MVP', '', '2024/06/17').addRelatedItem(META_CARACTERISTICAS_BOILER_PLATE)],
     ['otrasArquitecturas', new Referencia('https://medium.com/@maniakhitoccori/los-10-patrones-comunes-de-arquitectura-de-software-d8b9047edf0b', 'Otras Arquitecturas', ARQUITECTURAS_KEY, 'Otras (patrones)')],
     ['monolitos', new Referencia('https://www.paradigmadigital.com/techbiz/microservicios-vs-microlitos-vs-monolitos-ventajas-desventajas/', 'Monolitos VS Microservicios', ARQUITECTURAS_KEY, 'Monolitos')],
     ['stylesArchitecture1', new Referencia('https://hdnmetatech.com/news/our-press/detail/introduction-to-architecture-styles-and-patterns-as-a-blueprint-for-designing-a-system', 'Estilos #1', ARQUITECTURAS_KEY, 'Estilos & Patrones #1')],
     ['stylesArchitecture2', new Referencia('https://hdnmetatech.com/news/our-press/detail/introduction-to-architecture-styles-and-patterns-as-a-blueprint-for-designing-a-system', 'Estilos #2', ARQUITECTURAS_KEY, 'Estilos & Patrones #2')],
     ['monolitosModulares', new Referencia('https://levelup.gitconnected.com/architecture-style-modulith-vs-microservices-90c7c75713db', 'Monolitos Modulares', ARQUITECTURAS_KEY, 'Monolitos Modulares')],
-    ['descomposicionModular', new Referencia('https://ittgweb.wordpress.com/2016/05/29/descomposicion-modular/', 'Descomposición Modular', ARQUITECTURAS_KEY, 'Descomposición')],
+    ['descomposicionModular', new Referencia('https://ittgweb.wordpress.com/2016/05/29/descomposicion-modular/', 'Descomposición Modular', ARQUITECTURAS_KEY, 'Descomposición', '2024/05/25')],
+    [ARQUITECTURAS_EVENT_DRIVEN, new Referencia('https://medium.com/@alxkm/java-event-driven-architecture-dc456d324ba5', 'Basada en Eventos', ARQUITECTURAS_KEY, 'Basada en Eventos', '2024/06/17').addRelatedItem(NUBE_OBSERVABILIDAD)],
 ]);
 
 export const BUENAS_PRACTICAS_KEY = 'Buenas-Practicas';
@@ -349,7 +356,7 @@ export const META_CARATERISTICAS_REF = new Map<string, Referencia>([
     ['argumentos', new Referencia('https://picodotdev.github.io/blog-bitix/2021/01/en-java-los-argumentos-se-pasan-por-valor-o-por-referencia/', 'Argumentos por valor y por referencia', META_CARACTERISTICAS_KEY, 'Argumentos')],
     ['concurrenciaParalelismo', new Referencia('https://codigofacilito.com/articulos/programacion-concurrente', 'Concurrencia & Paralelismo', META_CARACTERISTICAS_KEY, 'Concurrencia')],
     ['ortogonalidad', new Referencia('https://qastack.mx/programming/1527393/what-is-orthogonality', 'Ortogonalidad', META_CARACTERISTICAS_KEY, 'Ortogonalidad')],
-    ['boilerPlate', new Referencia('https://www.freecodecamp.org/news/whats-boilerplate-and-why-do-we-use-it-let-s-check-out-the-coding-style-guide-ac2b6c814ee7/', 'Boiler Plate (codigo repetitivo)', META_CARACTERISTICAS_KEY, 'BoilerPlate')],
+    [META_CARACTERISTICAS_BOILER_PLATE, new Referencia('https://www.freecodecamp.org/news/whats-boilerplate-and-why-do-we-use-it-let-s-check-out-the-coding-style-guide-ac2b6c814ee7/', 'Boiler Plate (codigo repetitivo)', META_CARACTERISTICAS_KEY, 'BoilerPlate')],
     ['recursividad', new Referencia('https://geekytheory.com/que-es-la-recursividad/', 'Recursividad', META_CARACTERISTICAS_KEY, 'Recursividad')],
     ['backtracing', new Referencia('https://www.ecured.cu/Vuelta_atr%C3%A1s_(backtracking)', 'Back Tracing', META_CARACTERISTICAS_KEY, 'Back tracing')],
     ['rawTypes', new Referencia('https://stackoverflow.com/questions/2770321/what-is-a-raw-type-and-why-shouldnt-we-use-it#:~:text=Raw%20types%20refer%20to%20using,with%20older%20versions%20of%20Java.', 'Tipos Crudos', META_CARACTERISTICAS_KEY, 'Tipos crudos')],

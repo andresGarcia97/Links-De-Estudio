@@ -1,7 +1,8 @@
 import {
-    AGILES_OUTPUT_AND_OUTCOME, ARQUITECTURAS_CAPAS, CONTENEDORES_SECURE_ORCHESTRATION, ESTRATEGIAS_DESARROLLO_SCREAMING_DESIGN,
-    FRAMEWORKS_CODE_STRUCTURE, FRAMEWORKS_IOD, LEYES_HYRUM, LEYES_LEHMAN, MALAS_PRACTICAS_ANTI_PATRONES_ARQUITECTURAS,
-    MALAS_PRACTICAS_TRAIN_WECKS, META_CARACTERISTICAS_BACKWARD_AND_BREAKING_CHANGES, META_CARACTERISTICAS_META_DATOS,
+    AGILES_OUTPUT_AND_OUTCOME, ARQUITECTURAS_CAPAS, ARQUITECTURAS_DEFINICION, ARQUITECTURAS_EVENT_DRIVEN, ARQUITECTURAS_MVP_MVC,
+    CONTENEDORES_SECURE_ORCHESTRATION, ESTRATEGIAS_DESARROLLO_SCREAMING_DESIGN, FRAMEWORKS_CODE_STRUCTURE, FRAMEWORKS_IOD,
+    LEYES_HYRUM, LEYES_LEHMAN, MALAS_PRACTICAS_ANTI_PATRONES_ARQUITECTURAS, MALAS_PRACTICAS_TRAIN_WECKS,
+    META_CARACTERISTICAS_BACKWARD_AND_BREAKING_CHANGES, META_CARACTERISTICAS_BOILER_PLATE, META_CARACTERISTICAS_META_DATOS,
     POO_INMUTABILITY, POO_POO, POO_POO_PILARES
 } from "../linkReferencia";
 import { Item } from "../models";
@@ -252,12 +253,13 @@ export const AGILES =
 
 export const ARQUITECTURAS =
     [
-        new Item('definicion',
+        new Item(ARQUITECTURAS_DEFINICION,
             [
                 '- Representa la estructura que conforma al sistema completo ',
                 '- Define y limita cada una de Las responsabilidades de cada una de las partes ',
                 '- La organización y jerarquización de sus componentes ',
                 '- Las propiedades visibles externamente y las relaciones a nivel interno ',
+                '- Como se comunicaran y entre que componentes, definiendo flujos de datos y que protocolos usar ',
                 '- Son independientes de las tecnologias, aunque su implementación pueda cambiar ligeramente entre una y otra ',
             ]),
         new Item('inicioArquitectura',
@@ -483,9 +485,10 @@ export const ARQUITECTURAS =
                 '- Anteriormente esta arquitectura solo se consideraba en el lado del servidor, pero frameworks como Angular han demostrado lo contrario',
                 '- Esta adaptación para la web, se ha dado con ciertas diferencias ya que todos los conceptos no son totalmente aplicables '
             ]),
-        new Item('mvpMvc',
+        new Item(ARQUITECTURAS_MVP_MVC,
             [
-                '- Este patron es una derivación de <em>MVC</em> y es ampliamentes usado para construir aplicaciones en Android, con ciertas diferencias: ',
+                '- Este patron es una derivación de <em>MVC</em> y es ampliamentes usado para construir aplicaciones en Android',
+                '- Funciona para casi todos los tipos de aplicación, y es tanto de adaptar como de replicar, aunque puede conllevar mucho codigo repetitivo(boilerplate)',
                 '',
                 '- La principal diferencia entre MVP & MVC es que aca el presentador además de comunicar la vista y el modelo, ',
                 ' - contiene toda la logica de la presentación y en algunos casos logica simple relacionada al negocio ',
@@ -692,6 +695,30 @@ export const ARQUITECTURAS =
                 ' - <strong>Previsión:</strong> Como que aspectos del sistema, pueden o van a cambiar a futuro, de manera que afecte al menor numero de elementos posibles ',
                 ' - <strong>Accesibilidad:</strong> Para analizar aspectos como documentos, diseños, arquitectura, tecnologias, etc.. antes de emprender cualquier cambio ',
                 ' - <strong>Consistencia:</strong> cualquier cambio que se haga, debe intentar mantener la misma estructura y caracteristicas que ya tiene el sistema ',
+            ]),
+        new Item(ARQUITECTURAS_EVENT_DRIVEN,
+            [
+                '- <em>Event Driven Arquitecture</em> es un patron de diseño en el que los componentes se comunican mediante la producción y el consumo de eventos ',
+                '- Los componentes tienen un bajo acoplamiento y son flexibles en su forma de interacturar, esta comunicación se da de manera asincrona',
+                '',
+                '<strong>- Eventos:</strong> Define los eventos/mensajes que se intercambiaran entre servicios ',
+                '<strong>- Productor de eventos:</strong> Los servicios generan eventos cuando se producen determinadas acciones ',
+                '<strong>- Consumidor de eventos:</strong> Los servicios tambien se suscriben a los eventos que les interesan y poder reaccionar ',
+                '<strong>- Bus/Queue(Broker):</strong> Intermediario de mensajes o un sistema de colas para facilitar la comunicación entre servicios ',
+                '<strong>- Integración:</strong> Cada servicio se integra con el agente de mensajes elegido, publicando/suscribiendose como sea necesario ',
+                '',
+                '<strong>Pros</strong>',
+                '<strong>- Acoplamiento debil:</strong> Al tener una comunicación indirecta con los eventos, permitiendo evolucionar con minimas afectaciones entre si ',
+                '<strong>- Escalabilidad:</strong> Permite crecer de manera horizontal entre diferentes nodos, agregando consumidores para manejar mayores cargas ',
+                '<strong>- Flexibilidad:</strong> Se pueden agregar nuevas funciones, solamente introduciendo nuevos eventos y controladores sin modificar los existentes ',
+                '<strong>- Comunicación asincrona:</strong> Esto mejora la capacidad de respuesta y la resiliencia, al punto de poder funcionar si no hay consumidores temporalmente ',
+                '',
+                '<strong>Contras</strong>',
+                '<strong>- Complejidad:</strong> Extra al tener que gestionar el enrutamiento de los mensajes, el manejo de fallos y garantizar la consistencia de los datos ',
+                '<strong>- Orden/Secuencia:</strong> Debe existir alguna una manera de garantizar este orden, especialmente en los sistemas distribuidos',
+                '<strong>- Debugging/Logging:</strong> Rastrear y monitorear puede resultar dificil, especialmente entre más productores y consumidores existan ',
+                '<strong>- Coherencia Eventual:</strong> Que las actualizaciones del sistema se propaguen y logren una coherencia solida, puede requerir coordinación extra',
+                '<strong>- Gastos:</strong> El manejo de eventos y la infraestructura necesaria para estos, pueden consumir más recursos y tener mayor latencia ',
             ])
     ];
 
@@ -791,7 +818,7 @@ export const META_CARACTERISTICAS =
                 '- Basicamente significa que cuando hacemos una accion esta no debe modificar lo que no le respecta ',
                 '- Tambien se puede interpretar de manera que cuando se ejecute una instrucción solo se ejecute esta y nada más ',
             ]),
-        new Item('boilerPlate',
+        new Item(META_CARACTERISTICAS_BOILER_PLATE,
             [
                 '- Este hace referencia a codigo repetitivo que no siempre es util, pero si requerido, aun aveces cuando no vaya a ser usado ',
                 '- Esto tambien aplica para fragmentos de codigo propios, ya que se reutiliza codigo, con solo copiar y pegar ',
