@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { ARQUITECTURAS_EVENT_DRIVEN, LinkReferencia } from 'src/app/models/linkReferencia';
+import { ANALISIS_DATA_THEORY_OF_INFORMATION, LinkReferencia } from 'src/app/models/linkReferencia';
 
 const references = new LinkReferencia()
 
@@ -17,7 +17,7 @@ export class HomeComponent {
   }
 
   public routeToLastItem(): void {
-    const newItem = ARQUITECTURAS_EVENT_DRIVEN;
+    const newItem = ANALISIS_DATA_THEORY_OF_INFORMATION;
     const section = references.components.get(newItem)?.component!;
     this.router.navigateByUrl(`/${references.routesAndSections.get(section)}`, { state: { newItem } })
   }

@@ -1,6 +1,8 @@
 import {
-    HARDWARE_PROTOCOLS, PARADIGMAS_PARADIGMA_DATOS, PEOPLE_PROCESS_BLOAT, PERSISTENCY_ADVANCED_ORM, PERSISTENCY_ADVANCED_SCALING_DB,
-    PERSISTENCY_ADVANCED_WAL, PERSISTENCY_DBMS, PERSISTENCY_OPTIMIZE_SLOW_QUERIES
+    ANALISIS_DATA_DATA_ANALISIS_TYPES, ANALISIS_DATA_DATA_ELT_ELT, ANALISIS_DATA_DATA_STORING, ANALISIS_DATA_SYSTEMS_INFORMATION,
+    ANALISIS_DATA_THEORY_OF_INFORMATION, HARDWARE_PROTOCOLS, PARADIGMAS_PARADIGMA_DATOS, PEOPLE_PROCESS_BLOAT,
+    PERSISTENCY_ADVANCED_ORM, PERSISTENCY_ADVANCED_SCALING_DB, PERSISTENCY_ADVANCED_WAL, PERSISTENCY_DBMS,
+    PERSISTENCY_OPTIMIZE_SLOW_QUERIES
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -12,7 +14,7 @@ export class Content1 {
         ...WEB,
         ...PARADIGMAS,
         ...PEOPLE,
-        ...OTROS,
+        ...ANALISIS_DATA,
         ...BASES_DE_DATOS,
         ...BASE_DE_DATOS_AVANZADO
     ];
@@ -1300,7 +1302,7 @@ export const PEOPLE =
             ])
     ];
 
-export const OTROS =
+export const ANALISIS_DATA =
     [
         new Item('scraping',
             [
@@ -1360,7 +1362,71 @@ export const OTROS =
                 ' Constructivo                p -> r                       Conjunción            p                   ',
                 '                             q -> s      r || s                                 q          p && q   ',
             ]),
-        new Item('etl&elt',
+        new Item(ANALISIS_DATA_DATA_ANALISIS_TYPES,
+            [
+                '- Este un proceso esencial ya que ayuda a encontrar tendencias y responder preguntas de negocio',
+                '- Esto ayuda a las organizaciones a reducir la incertidumbre a la hora de tomar decisiones e incrementar las posibilidades de exito ',
+                '- Para resultados especificos, es vital conseguir todas las partes necesarias, entre más complejo sea el analisis, mayor sera el valor que este aporta ',
+                '',
+                '<strong>Descriptiva:</strong> Responde a la pregunta puntual de que sucedio, indicando si algo esta bien o mal, sin tener el porque ',
+                '',
+                '<strong>Diagnostica:</strong> Se combinan los datos historicos y la <em>Analitica Descriptiva</em>, para responder el porque profundizando en las causas, ',
+                ' - para identificar patrones, y obtener información detallada del problema o situación en particular ',
+                '',
+                '<strong>Predictiva:</strong> Dice lo que es más probable que suceda, utilizando los anteriores analisis para detectar tendencias y agrupar datos, ',
+                ' - usando desde modelos estadisticos, mineria de datos, algoritmos, hasta Inteligencia Artificial, en este punto se puede hablar de <em>Big Data</em>',
+                ' - esta analitica debe ser revisada y refinada constantemente para tener información confiable ',
+                '',
+                '<strong>Prescriptiva:</strong> No solo se predicen posibles problemas, ayuda a tomar acciones para aprovechar las tendencias, ',
+                ' - mientras que se sortean inconvenientes y se adaptan automaticamente al tener en cuenta multiples factores externos ',
+            ]),
+        new Item(ANALISIS_DATA_SYSTEMS_INFORMATION,
+            [
+                '- Se refiere al conjunto ordenado de mecanismos, personas, herramientas con el fin de administrar datos e información ',
+                '- Estos recursos interactuan y se interconectan de las formas más convenientes posibles con un proposito determinado ',
+                '- Generalmente recolectan y clasifican datos para poder ser agrupados ó diferenciados de manera más eficientes, que antes de ser procesados ',
+                '',
+                '<strong>Recursos que interactuan:</strong>',
+                '<strong> - Recursos humanos:</strong>      Personas de diversas indoles con diferentes destrezas ',
+                '<strong> - Datos:</strong>                 Cualquier tipo de información masiva que deba procesarse ',
+                '<strong> - Actividades:</strong>           Pasos a seguir, procedimientos especificos, etc...',
+                '<strong> - Recursos informaticos:</strong> Tecnologias usadas con diversos propositos ',
+                '',
+                '<strong>Tipos:                                Elementos:           Actividades:             Ejemplos:      </strong> ',
+                '- Procesamiento de transacciones      - Financieros        - Recopilación           - Control de calidad ',
+                '- Información ejecutiva               - Humanos            - Almacenamiento         - Bases de datos     ',
+                '- Información gerencial               - Tecnologicos       - Procesamiento          - Hojas de calculo   ',
+                '- Soporte de decisiones               - Fisicos            - Distribución                                ',
+                '- Planificación & Automatización      - Herramientas       - Retroalimentación                            '
+            ]),
+        new Item(ANALISIS_DATA_DATA_STORING,
+            [
+                '- Almacenar los datos es fundamental para las empresas, para cualquier disposicion que estas tengan ',
+                '',
+                '<strong>Data Warehouse:</strong> Es un respositorio unificado para almacenar grandes cantidades de información, desde diversas fuentes ',
+                ' - estos almacenes tambien transforman y limpian los datos antes de almacenarlos con una estructura fija, ',
+                ' - para que estos sirvan como fuente de información veraz para futuros analisis ',
+                '<strong>Data Lake:</strong> Respositorio centralizado altamente flexible, encargado de almacenar grandres cantidades de datos, ',
+                ' - pero estos no son procesados ni estructurados, por esto cada analisis debe tener sus respectivas transformaciones de datos, ',
+                ' - esta forma es más barata, pero lenta y la confiabilidad de los datos puede disminuir ',
+                '<strong>Data Lakehouse:</strong> Combina las mejores caracteristicas de ambos al permitir almacenar datos estructurados y no estructurados, ',
+                ' - al mismo tiempo que permite capacidades de analisis de datos e inteligencia empresarial, estos respositorios nacieron como Data Lake, ',
+                ' - que fueron modificados para cumplir el esquema ACID, estos todavian estan crecimiento, por lo que es una tecnologia en maduración ',
+                '',
+                '                  <strong>    Data Warehouse                     Data Lake                    Data Lakehouse</strong>',
+                '',
+                ' Tipos de datos    Datos                            Datos no estructurados         Datos con, sin y semi      ',
+                '   almacenados     estructurados                    y semi estructurados           estructurados              ',
+                '',
+                '    Objetivo       Analisis de datos e              Aprendizaje automatico         Analisis de datos y        ',
+                '                   inteligencia empresarial         e inteligencia artificial      aprendizaje automatico     ',
+                '',
+                '     Costo         Costoso y requiere tiempo        Rentable rapido y flexible     Rentable rapido y flexible ',
+                '',
+                '  Cumplimiento     Los datos son compatibles        No lo cumple, actualizar       Lo cumple ya que la data   ',
+                '    de ACID        para garantizar la seguridad     y eliminar es complejo         es concurrente             ',
+            ]),
+        new Item(ANALISIS_DATA_DATA_ELT_ELT,
             [
                 '- <strong>ETL</strong> & <strong>ELT</strong> Son 2 enfoques de procesamiento de datos para el analisis de cientos, miles de datos, desde multiples origenes',
                 '- Ambos son secuencias de procesos que separan los datos para su posterior analisis, capturan, procesan y cargan datos para su analisis en 3 pasos ',
@@ -1394,6 +1460,43 @@ export const OTROS =
                 '     Costos         pueden ser costosas en función de lo que se utilice        Más rentable, segun la infraestructura utilizada ',
                 '',
                 '    Seguridad       Posiblemente se deban crear aplicaciones personalizadas    Se pueden usar las caracteristicas integradas de la BD destino ',
+            ]),
+        new Item(ANALISIS_DATA_THEORY_OF_INFORMATION,
+            [
+                '- Tambien conocida como la teoria matematica de la comunicación, es un planteamiento que estudia el procesamiento y medición de los datos, ',
+                ' - en la transmisión de la información, establece un flujo del <strong>mensaje</strong> entre un <strong>emisor</strong> y un <strong>receptor</strong> a travez de un <strong>canal</strong> determinado',
+                '- Fue propuesta en 1949 por el matematico e ingeniero <em>Claude Shannon</em> y el biologo <em>Warren Weaver</em> además de contar ',
+                ' - con investigaciones previas de casi 30 años de <em>Andrei Markovi</em> y <em>Ralph Hartley</em> ',
+                '- El aporte de <em>Alan Turing</em> quien llevo el esquema de una maquina capaz de procesar datos e información a traves de la emisión de simbolos, ',
+                ' - fue el ultimo precedente para la culminación de la teoria',
+                '',
+                '<strong>Elementos:</strong>',
+                '',
+                '<strong>- Fuente (Emisor):</strong> Elemento capaz de transmitir un mensaje, existen varios tipos: ',
+                '<strong> - Aleatorias:</strong> Cuando el mensaje no se puede predecir',
+                '<strong> - Estructuradas:</strong> Contienen cierto nivel de redundancia y orden ',
+                '<strong> - No estructuradas:</strong> Todos los mensajes son aleatorios y sin relaciones, existen perdidas de partes del mensaje ',
+                '<strong>- Mensaje:</strong> Conjunto de datos que son transportados mediante un canal ',
+                '<strong>- Codigo:</strong> Conjunto de elementos que siguen una serie de normas para su combinación e interpretación ',
+                '<strong>- Canal:</strong> Medio por el que se transmite el mensaje, hasta que llegue a algun receptor ',
+                '<strong>- Información:</strong> Es lo que busca transmitir con el mensaje, y segun la teoria debe ser proporcional al numero de <em>bits</em> necesarios para reconocer el mensaje ',
+                '<strong>- Destinatario(Repector):</strong> Recibe el mensaje y deberia estar en la capacidad de asimilar/entender el mensaje ',
+                '<strong>- Ruido:</strong> Problemas ó sucesos que impiden que el mensaje llegue con normalidad, y este no sea entendido ó quede incompleto ',
+                '',
+                '<strong>Planteamientos generales:</strong>',
+                '- Sirve para estudiar todo el proceso informativo, desde que la fuente lo coincibe, hasta el entedimiento en su destino',
+                '- Determinar la forma más sencilla y eficaz de transmitir un mensajes, sin que haya alteraciones en el proceso ',
+                '- Reconocer elementos de distorsión ó impedimentos para que el mensaje sea transmitido de manera optima ',
+                '- Tanto el emisor como el receptor deben ser capaces de <em>codificar/decodificar</em> los mensajes',
+                '- Considerar que un mensaje puede tener multiples sentidos, de manera que el destinatario lo dota de significado llegando a ser subjetivo ',
+                '- Los mensajes son más grandes ó con más información, entre más alternativas y opciones probables existan ',
+                '',
+                '<strong>Aplicaciones:</strong> ',
+                '- Ciencias de la computación, como la criptografia, esteganografía, comprensión de datos y manejo de redes ',
+                '- Ingenieria electrica, como en la teoria de la comunicación y la teoria de la codificación ',
+                '- Estadistica ',
+                '- Biologia, en el estudio de las secuencias de ADN y el genoma de las especies',
+                '- Pagos, transacciones y procesos de autentificación ó verificación',
             ])
     ];
 

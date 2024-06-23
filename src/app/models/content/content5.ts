@@ -1,7 +1,7 @@
 import {
     APIS_API_GOVERNANCE, CONOCIMIENTOS_EMPIRICOS_PAIR_PROGRAMMING, META_ESTRUCTURAS_DEPRECATION, META_ESTRUCTURAS_MAQUINA_ESTADOS,
-    META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL, NUBE_CAP_TEOREMA, NUBE_OBSERVABILIDAD, PATRONES_CLOUD_DESIGN_PATTERNS,
-    PATRONES_PERSISTENCE_PATTERNS
+    META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION, META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL, NUBE_CAP_TEOREMA, NUBE_OBSERVABILIDAD,
+    PATRONES_CLOUD_DESIGN_PATTERNS, PATRONES_PERSISTENCE_PATTERNS
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -1297,7 +1297,7 @@ export const META_ESTRUCTURAS =
                 ' <strong>- Floyd-Warshall:</strong> Encuentra la ruta más corta entre todos los vertices en un grafo con pesos, ya sean dirigidos o no dirigidos ',
                 ' <strong>- Bellman Ford:</strong> Encuentra la ruta más corta entre desde un vertice fuente a un vertice destino ',
             ]),
-        new Item('serializationDeserialization',
+        new Item(META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION,
             [
                 '- Son 2 conceptos importantes en la programación en general, que permiten que los objetos puedan ser almacenados, transmitidos y reconstruidos ',
                 ' - ya sea para su persistencia, ser transmitidos a traves de una red o ser almacenados en un cache en memoria ',
