@@ -94,6 +94,7 @@ export const ANALISIS_DATA_SYSTEMS_INFORMATION = 'sistemsInformation';
 export const ANALISIS_DATA_DATA_STORING = 'dataStoring';
 export const ANALISIS_DATA_DATA_ELT_ELT = 'etl&elt';
 export const ANALISIS_DATA_THEORY_OF_INFORMATION = 'theoryOfInformation';
+export const GIT_REBASE_MERGE_SQUASH = 'rebaseMergeSquash';
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -315,9 +316,10 @@ export const GIT_REF = new Map<string, Referencia>([
     ['migracion', new Referencia('https://git-scm.com/book/es/v2/Git-y-Otros-Sistemas-Migraci%C3%B3n-a-Git', 'Migración entre sistemas y otras acciones', GIT_KEY, 'Entresijos')],
     ['flow', new Referencia('https://aprendegit.com/que-es-git-flow/', 'Flujo de trabajo con Git', GIT_KEY, 'Git flow')],
     ['practicas', new Referencia('https://codigofacilito.com/articles/41', 'Buenas practicas para realizar commits', GIT_KEY, 'Buenas Practicas')],
-    ['branching-strategies', new Referencia('https://codigofacilito.com/articles/41', 'Estrategias de Ramificación', GIT_KEY, 'Ramificación')],
-    ['monoRepo', new Referencia('https://monorepo.tools/#understanding-monorepos', 'Mono Repo', GIT_KEY, 'Mono Repo')],
-    ['pullRequestsToxic', new Referencia('https://devinterrupted.substack.com/p/the-11-types-of-toxic-pull-requests', 'Pull Requests Toxicos', GIT_KEY, 'Pull Requests Toxicos')],
+    ['branching-strategies', new Referencia('https://www.virtusway.com/es/workflows-strategies-for-working-with-git.html', 'Estrategias de Ramificación', GIT_KEY, 'Ramificación', '2023/07/18', '2024/06/26')],
+    ['monoRepo', new Referencia('https://monorepo.tools/#understanding-monorepos', 'Mono Repo', GIT_KEY, 'Mono Repo', '2023/09/05')],
+    ['pullRequestsToxic', new Referencia('https://devinterrupted.substack.com/p/the-11-types-of-toxic-pull-requests', 'Pull Requests Toxicos', GIT_KEY, 'Pull Requests Toxicos', '2023/09/17')],
+    [GIT_REBASE_MERGE_SQUASH, new Referencia('https://medium.com/@shikha.ritu17/git-rebase-vs-merge-vs-squash-choosing-the-right-strategy-for-version-control-a9c9bb97040e', 'Rebase Vs Merge Vs Squash', GIT_KEY, 'Rebase/Merge/Squash', '2024/06/26')],
 ]);
 
 export const USER_HISTORIES_KEY = 'Historias-Usuario';

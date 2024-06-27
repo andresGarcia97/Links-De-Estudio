@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { ANALISIS_DATA_THEORY_OF_INFORMATION, LinkReferencia } from 'src/app/models/linkReferencia';
+import { GIT_REBASE_MERGE_SQUASH, LinkReferencia } from 'src/app/models/linkReferencia';
 
 const references = new LinkReferencia()
 
@@ -17,7 +17,7 @@ export class HomeComponent {
   }
 
   public routeToLastItem(): void {
-    const newItem = ANALISIS_DATA_THEORY_OF_INFORMATION;
+    const newItem = GIT_REBASE_MERGE_SQUASH;
     const section = references.components.get(newItem)?.component!;
     this.router.navigateByUrl(`/${references.routesAndSections.get(section)}`, { state: { newItem } })
   }
