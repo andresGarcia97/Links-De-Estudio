@@ -59,6 +59,7 @@ export const ARQUITECTURAS_EVENT_DRIVEN = 'eventDriven';
 export const ESTRATEGIAS_DESARROLLO_SCREAMING_DESIGN = 'screamingDesign';
 export const META_CARACTERISTICAS_BACKWARD_AND_BREAKING_CHANGES = 'backwardAndBreakingChanges';
 export const META_CARACTERISTICAS_META_DATOS = 'metaDatos';
+export const META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM = 'concurrencyAndParallelism';
 export const META_CARACTERISTICAS_BOILER_PLATE = 'boilerPlate';
 export const LEYES_HYRUM = 'hyrum';
 export const LEYES_LEHMAN = 'lehman';
@@ -358,7 +359,8 @@ export const META_CARATERISTICAS_REF = new Map<string, Referencia>([
     ['cache', new Referencia('https://medium.com/bancolombia-tech/dise%C3%B1ando-una-estrategia-de-cach%C3%A9-39366876009b', 'Cache y sus estrategias', META_CARACTERISTICAS_KEY, 'Cache')],
     ['hilos', new Referencia('https://facturapp.weebly.com/hilos.html', 'Hilos', META_CARACTERISTICAS_KEY, 'Hilos')],
     ['argumentos', new Referencia('https://picodotdev.github.io/blog-bitix/2021/01/en-java-los-argumentos-se-pasan-por-valor-o-por-referencia/', 'Argumentos por valor y por referencia', META_CARACTERISTICAS_KEY, 'Argumentos')],
-    ['concurrenciaParalelismo', new Referencia('https://codigofacilito.com/articulos/programacion-concurrente', 'Concurrencia & Paralelismo', META_CARACTERISTICAS_KEY, 'Concurrencia')],
+    //['concurrenciaParalelismo', new Referencia('https://codigofacilito.com/articulos/programacion-concurrente', 'Concurrencia & Paralelismo', META_CARACTERISTICAS_KEY, 'Concurrencia')],
+    [META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM, new Referencia('https://www.linkedin.com/feed/update/urn:li:activity:7209404927750615040/', 'Concurrencia & Paralelismo', META_CARACTERISTICAS_KEY, 'Concurrencia/Paralelismo', '', '2024/06/26')],
     ['ortogonalidad', new Referencia('https://qastack.mx/programming/1527393/what-is-orthogonality', 'Ortogonalidad', META_CARACTERISTICAS_KEY, 'Ortogonalidad')],
     [META_CARACTERISTICAS_BOILER_PLATE, new Referencia('https://www.freecodecamp.org/news/whats-boilerplate-and-why-do-we-use-it-let-s-check-out-the-coding-style-guide-ac2b6c814ee7/', 'Boiler Plate (codigo repetitivo)', META_CARACTERISTICAS_KEY, 'BoilerPlate')],
     ['recursividad', new Referencia('https://geekytheory.com/que-es-la-recursividad/', 'Recursividad', META_CARACTERISTICAS_KEY, 'Recursividad')],

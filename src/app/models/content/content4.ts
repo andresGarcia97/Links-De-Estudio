@@ -2,8 +2,8 @@ import {
     AGILES_OUTPUT_AND_OUTCOME, ARQUITECTURAS_CAPAS, ARQUITECTURAS_DEFINICION, ARQUITECTURAS_EVENT_DRIVEN, ARQUITECTURAS_MVP_MVC,
     CONTENEDORES_SECURE_ORCHESTRATION, ESTRATEGIAS_DESARROLLO_SCREAMING_DESIGN, FRAMEWORKS_CODE_STRUCTURE, FRAMEWORKS_IOD,
     LEYES_HYRUM, LEYES_LEHMAN, MALAS_PRACTICAS_ANTI_PATRONES_ARQUITECTURAS, MALAS_PRACTICAS_TRAIN_WECKS,
-    META_CARACTERISTICAS_BACKWARD_AND_BREAKING_CHANGES, META_CARACTERISTICAS_BOILER_PLATE, META_CARACTERISTICAS_META_DATOS,
-    POO_INMUTABILITY, POO_POO, POO_POO_PILARES
+    META_CARACTERISTICAS_BACKWARD_AND_BREAKING_CHANGES, META_CARACTERISTICAS_BOILER_PLATE,
+    META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM, META_CARACTERISTICAS_META_DATOS, POO_INMUTABILITY, POO_POO, POO_POO_PILARES
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -803,15 +803,20 @@ export const META_CARACTERISTICAS =
                 '- Esto no modifica la variable original, ya sea un tipo primitivo o un objeto ',
                 '- Algunas clases son inmutables por lo que los objetos no pueden ser modificados, se devuelve una nueva instancia con los cambios y no la original ',
             ]),
-        new Item('concurrenciaParalelismo',
+        new Item(META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM,
             [
-                '<strong>- Concunrrencia:</strong> Es la capacidad de realizar muchas tareas a la vez, con ó sin una secuencia especifica ',
-                '<strong>- Paralelismo:</strong> Es la capacidad de ejecutar 2 ó más acciones de manera simultanea ',
+                '<strong>Concurrencia:</strong> Es la capacidad de realizar muchas tareas a la vez ',
+                '<strong>Paralelismo:</strong>  Es la capacidad de ejecutar multiples acciones de manera simultanea ',
                 '',
                 '- Para implementar concurrencia se recomienda usar <em>Hilos</em>, en cambio para implementar paralelismo se optara por usar <em>Procesos</em> ',
                 '',
-                '- Aunque la programación concurrente tiene problemas en cuanto a la coherencia de los datos, es util para resolver problemas de rendimiento ',
-                '- En cambio si el orden de las tareas es importante, el inicio y su fin, la programación paralela es mejor debido a su aislamiento inherente ',
+                '- La <strong>concurrencia</strong> consiste en lidiar con varias cosas a la vez, implica una estructura para manejar multiples tareas simultaneamente ',
+                ' - y se puede dar de manera que las tareas se inicien, ejecuten y completen en periodos de tiempo superpuestos, ',
+                ' - pero no necesariamente al mismo instante ó que esten relacionados de manera secuencial, pero dando la impresion de ser simultaneo ',
+                '',
+                '- El <strong>paralelismo</strong> por otro lado es la ejecución simultanea de multiples tareas al mismo tiempo, ',
+                ' - utilizando multiples procesos ó nucleos, necesarios para tener capacidad de realizar multiples operaciones al mismo tiempo, ',
+                ' - esto es crucial para tareas vinculadas a la CPU donde la velocidad y el rendimiento son cuellos de botella '
             ]),
         new Item('ortogonalidad',
             [
