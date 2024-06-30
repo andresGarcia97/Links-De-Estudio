@@ -79,7 +79,7 @@ export class GlosarioComponent implements OnInit {
     namesAndValues.forEach((element) => {
       const newElement = {
         titulo: element.value.tittle,
-        referencia: element.value.referencia,
+        tittleShort: element.value.tittleShort,
         componente: element.value.component,
         key: element.name
       };

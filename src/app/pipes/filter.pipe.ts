@@ -14,7 +14,7 @@ export class FilterPipe implements PipeTransform {
 
     return arreglo.filter(item => {
       return item?.titulo?.toLowerCase().includes(texto) ||
-        item?.referencia?.toLowerCase().includes(texto) ||
+        item?.tittleShort?.toLowerCase().includes(texto) ||
         item?.componente?.toLowerCase().includes(texto);
     });
   }
