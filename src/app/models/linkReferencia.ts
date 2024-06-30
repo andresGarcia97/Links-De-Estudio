@@ -47,6 +47,7 @@ export const META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL = 'verticalAndHorizontal';
 export const META_ESTRUCTURAS_MAQUINA_ESTADOS = 'maquinaEstados';
 export const META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION = 'serializationDeserialization';
 export const META_ESTRUCTURAS_DEPRECATION = 'deprecation';
+export const FRAMEWORKS_FRAMEWORKS = 'frameworks';
 export const FRAMEWORKS_CODE_STRUCTURE = 'codeStructucture';
 export const FRAMEWORKS_IOD = 'iod';
 export const POO_POO = 'poo';
@@ -62,6 +63,7 @@ export const META_CARACTERISTICAS_BACKWARD_AND_BREAKING_CHANGES = 'backwardAndBr
 export const META_CARACTERISTICAS_META_DATOS = 'metaDatos';
 export const META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM = 'concurrencyAndParallelism';
 export const META_CARACTERISTICAS_BOILER_PLATE = 'boilerPlate';
+export const META_CARACTERISTICAS_ANOTTATIONS = 'anottations';
 export const LEYES_HYRUM = 'hyrum';
 export const LEYES_LEHMAN = 'lehman';
 export const MALAS_PRACTICAS_ANTI_PATRONES_ARQUITECTURAS = 'antipatronesArquitecturas';
@@ -298,7 +300,7 @@ export const ESTRATEGIAS_DESARROLLO_REF = new Map<string, Referencia>([
 
 export const FRAMEWORKS_KEY = 'Frameworks';
 export const FRAMEWORKS_REF = new Map<string, Referencia>([
-    ['frameworks', new Referencia('https://neoattack.com/neowiki/framework/', '¿ Que es un framework?', FRAMEWORKS_KEY, '¿ Que son ?')],
+    [FRAMEWORKS_FRAMEWORKS, new Referencia('https://neoattack.com/neowiki/framework/', '¿ Que es un framework ?', FRAMEWORKS_KEY, '¿ Que es un framework ?')],
     ['ioc', new Referencia('https://medium.com/all-you-need-is-clean-code/inversi%C3%B3n-de-control-principio-de-hollywood-dont-call-us-we-ll-call-you-179e9c70e3d0', 'Inversión de Control', FRAMEWORKS_KEY, 'Inversión de control')],
     [FRAMEWORKS_IOD, new Referencia('https://www.arquitecturajava.com/el-patron-de-inyeccion-de-dependencia/', 'Inyección de dependencias', FRAMEWORKS_KEY, 'Inyección de dependencias', '', '2024/06/09')],
     ['scafolding', new Referencia('https://medium.com/@srinathsrs104/scaffolding-54ac4e47e133', 'Creación automatica de codigo', FRAMEWORKS_KEY, 'Scaffolding')],
@@ -380,6 +382,7 @@ export const META_CARATERISTICAS_REF = new Map<string, Referencia>([
     ['profiling', new Referencia('https://digma.ai/9-best-java-profilers-to-use-in-2024/', 'Profiling', META_CARACTERISTICAS_KEY, 'Profiling', "2024/05/05")],
     ['blockingAndNoBlocking', new Referencia('https://www.geeksforgeeks.org/blocking-and-nonblocking-io-in-operating-system/', 'Operaciones Bloqueantes', META_CARACTERISTICAS_KEY, 'Bloqueos/Sin Bloqueos', '2024/05/12')],
     [META_CARACTERISTICAS_BACKWARD_AND_BREAKING_CHANGES, new Referencia('https://github.com/kedro-org/kedro/wiki/Backwards-compatibility-and-breaking-changes', 'Retro compatibilidad y Breaking changes', META_CARACTERISTICAS_KEY, 'Cambios y compatibilidad', '2024/05/19').addRelatedItem(LEYES_HYRUM)],
+    [META_CARACTERISTICAS_ANOTTATIONS, new Referencia('https://vaheaslanyan7.medium.com/the-java-interview-prep-handbook-50-questions-solved-code-examples-62fed44e3e6a', 'Anotaciones', META_CARACTERISTICAS_KEY, 'Anotaciones', '2024/06/30').addRelatedItem(FRAMEWORKS_FRAMEWORKS).addRelatedItem(META_ESTRUCTURAS_DEPRECATION)],
 ]);
 
 export const META_ESTRUCTURAS_KEY = 'Meta-Estructuras';

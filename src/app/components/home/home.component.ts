@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { ESTRATEGIAS_DESARROLLO_SLDC, LinkReferencia } from 'src/app/models/linkReferencia';
+import { META_CARACTERISTICAS_ANOTTATIONS, LinkReferencia } from 'src/app/models/linkReferencia';
 
 const references = new LinkReferencia()
 
@@ -17,7 +17,7 @@ export class HomeComponent {
   }
 
   public routeToLastItem(): void {
-    const newItem = ESTRATEGIAS_DESARROLLO_SLDC;
+    const newItem = META_CARACTERISTICAS_ANOTTATIONS;
     const section = references.components.get(newItem)?.component!;
     this.router.navigateByUrl(`/${references.routesAndSections.get(section)}`, { state: { newItem } })
   }

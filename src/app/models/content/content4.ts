@@ -3,7 +3,8 @@ import {
     CONTENEDORES_SECURE_ORCHESTRATION, ESTRATEGIAS_DESARROLLO_SLDC, ESTRATEGIAS_DESARROLLO_SCREAMING_DESIGN,
     FRAMEWORKS_CODE_STRUCTURE, FRAMEWORKS_IOD, LEYES_HYRUM, LEYES_LEHMAN, MALAS_PRACTICAS_ANTI_PATRONES_ARQUITECTURAS,
     MALAS_PRACTICAS_TRAIN_WECKS, META_CARACTERISTICAS_BACKWARD_AND_BREAKING_CHANGES, META_CARACTERISTICAS_BOILER_PLATE,
-    META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM, META_CARACTERISTICAS_META_DATOS, POO_INMUTABILITY, POO_POO, POO_POO_PILARES
+    META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM, META_CARACTERISTICAS_META_DATOS, POO_INMUTABILITY, POO_POO, POO_POO_PILARES,
+    FRAMEWORKS_FRAMEWORKS, META_CARACTERISTICAS_ANOTTATIONS
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -1023,6 +1024,18 @@ export const META_CARACTERISTICAS =
                 '- Un aspecto ideal de la programación en general, es solamente hacer estos tipos de cambios cuando ',
                 ' - aportan beneficios importantes y tienen una razon importante de ser, como para romper la compatibilidad con versiones anteriores',
                 '- Es importante plantearlos, documentarlos y realizarlos de manera adecuada, ya que pueden tener afectaciones desconocidas <em>Ley de Hyrum</em>'
+            ]),
+        new Item(META_CARACTERISTICAS_ANOTTATIONS,
+            [
+                '- Son metadatos que se pueden agregar al codigo para proporcionar información al compilador o al entorno de ejecución ',
+                '- No afecta directamente la funcionalidad del programa, si no que transmiten instrucciones a las herramientas o al marco de trabajo(framework)',
+                '- Tambien pueden contener parametros, para otorgar información extra y además pueden convivir varias en un mismo elemento ',
+                '- Las anotaciones tienen un <em>Scope(alcance)</em> y especifica en que pueden ser utilizadas, clases, metodos, atributos ',
+                '',
+                '<strong>Anotaciones comunes:</strong>',
+                '<strong>- @Deprecated:</strong> Para aquellos metodos y clases que ya no se deben usar, pero tampoco pueden ser removidos ',
+                '<strong>- @Override:</strong> Información util para el compilador de que debe sobreescribir el metodo de la clase padre, ya sea por herencia ó contrato ',
+                '<strong>- @SuppressWarnings:</strong> Elimina las advertencias que el compilador pueda mostrar, ya sea por desinteres o improbabilidad ',
             ])
     ];
 
@@ -1200,7 +1213,7 @@ export const CONTENEDORES =
 
 export const FRAMEWORKS =
     [
-        new Item('frameworks',
+        new Item(FRAMEWORKS_FRAMEWORKS,
             [
                 '- Son marcos de trabajo con la finalidad de acelerar y aumentar la calidad del codigo desarrollado ',
                 '- Evitan perder tiempo desarrollando funciones que el propio entorno ya tiene ',
