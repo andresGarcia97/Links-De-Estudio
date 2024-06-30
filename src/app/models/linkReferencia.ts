@@ -95,6 +95,7 @@ export const ANALISIS_DATA_DATA_STORING = 'dataStoring';
 export const ANALISIS_DATA_DATA_ELT_ELT = 'etl&elt';
 export const ANALISIS_DATA_THEORY_OF_INFORMATION = 'theoryOfInformation';
 export const GIT_REBASE_MERGE_SQUASH = 'rebaseMergeSquash';
+export const COMPILACION_STREAMS = 'streams';
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -204,7 +205,7 @@ export const CALIDAD_REF = new Map<string, Referencia>([
 export const COMPILACION_KEY = 'Compilacion';
 export const COMPILACION_REF = new Map<string, Referencia>([
     ['compilacion', new Referencia('https://developer.mozilla.org/es/docs/Glossary/Compile', '¿ Que es compilar ?', COMPILACION_KEY, '¿ que es ?')],
-    ['nivel', new Referencia('https://desarrolloweb.com/articulos/2358.php#:~:text=Existen%20dos%20tipos%20de%20lenguajes,y%20los%20de%20alto%20nivel.&text=Los%20lenguajes%20m%C3%A1s%20pr%C3%B3ximos%20a,denominan%20lenguajes%20de%20alto%20nivel.', 'Niveles de compilación', COMPILACION_KEY, 'Niveles')],
+    ['nivel', new Referencia('https://desarrolloweb.com/articulos/2358.php', 'Niveles de compilación', COMPILACION_KEY, 'Niveles')],
     ['interprete', new Referencia('https://yosoy.dev/diferencia-entre-lenguajes-compilados-e-interpretados/', 'Tipos de lenguajes por ejecución', COMPILACION_KEY, 'Ejecución')],
     ['transpilacion', new Referencia('https://ingenieriadesoftware.es/diferencia-transpilacion-compilacion/#:~:text=Si%20traduce%20c%C3%B3digo%20entre%20lenguajes,a%20Bytecode%20ser%C3%ADa%20una%20compilaci%C3%B3n.', '¿ Que es la transpilación ?', COMPILACION_KEY, 'Transpilación')],
     ['azucarSintactico', new Referencia('https://es.wikipedia.org/wiki/Az%C3%BAcar_sint%C3%A1ctico', 'Azucar Sintactico', COMPILACION_KEY, 'Azucar Sintactico')],
@@ -216,11 +217,12 @@ export const COMPILACION_REF = new Map<string, Referencia>([
     ['duckTyping', new Referencia('https://towardsdatascience.com/duck-typing-python-7aeac97e11f8', 'Duck Typing', COMPILACION_KEY, 'Duck Typing')],
     ['sdkVsApi', new Referencia('https://geekflare.com/es/sdk-and-api-comparison/', 'SDK vs API', COMPILACION_KEY, 'SDK vs API')],
     ['casting', new Referencia('https://www.w3schools.com/java/java_type_casting.asp', 'Casting', COMPILACION_KEY, 'Casteo de Datos')],
-    ['verbosity', new Referencia('https://softwareengineering.stackexchange.com/questions/141175/why-is-verbosity-bad-for-a-programming-language', 'Verbosidad', COMPILACION_KEY, 'Verbosidad')],
-    ['tipoLenguajeProposito', new Referencia('https://ed.team/blog/como-se-clasifican-los-lenguajes-de-programacion', 'Tipos de lenguajes por proposito', COMPILACION_KEY, 'Proposito')],
-    ['automatas', new Referencia('https://medium.com/@maniakhitoccori/qu%C3%A9-es-un-aut%C3%B3mata-fbf309138755', 'Automatas', COMPILACION_KEY, 'Automatas')],
-    ['estructuraCompilador', new Referencia('https://vicente-aguilera-perez.medium.com/estructura-general-de-un-compilador-df97892f91c3', 'Estructura de un compilador I', COMPILACION_KEY, 'Estructura general I')],
-    ['elementosCompilador', new Referencia('https://vicente-aguilera-perez.medium.com/estructura-general-de-un-compilador-df97892f91c3', 'Estructura de un compilador II', COMPILACION_KEY, 'Estructura general II')],
+    ['verbosity', new Referencia('https://softwareengineering.stackexchange.com/questions/141175/why-is-verbosity-bad-for-a-programming-language', 'Verbosidad', COMPILACION_KEY, 'Verbosidad', '2023/03/31')],
+    ['tipoLenguajeProposito', new Referencia('https://ed.team/blog/como-se-clasifican-los-lenguajes-de-programacion', 'Tipos de lenguajes por proposito', COMPILACION_KEY, 'Proposito', '2023/11/09')],
+    ['automatas', new Referencia('https://medium.com/@maniakhitoccori/qu%C3%A9-es-un-aut%C3%B3mata-fbf309138755', 'Automatas', COMPILACION_KEY, 'Automatas', '2024/02/19')],
+    ['estructuraCompilador', new Referencia('https://vicente-aguilera-perez.medium.com/estructura-general-de-un-compilador-df97892f91c3', 'Estructura de un compilador I', COMPILACION_KEY, 'Estructura general I', '2024/02/28')],
+    ['elementosCompilador', new Referencia('https://vicente-aguilera-perez.medium.com/estructura-general-de-un-compilador-df97892f91c3', 'Estructura de un compilador II', COMPILACION_KEY, 'Estructura general II', '2024/02/28')],
+    [COMPILACION_STREAMS, new Referencia('https://medium.com/javarevisited/best-practices-for-using-java-stream-f0f7585f13ba', 'Streams', COMPILACION_KEY, 'Streams', '2024/06/29').addRelatedItem(POO_INMUTABILITY)],
 ]);
 
 export const CONOCIMIENTO_EMPIRICO_KEY = 'Empirico';

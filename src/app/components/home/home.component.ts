@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { GIT_REBASE_MERGE_SQUASH, LinkReferencia } from 'src/app/models/linkReferencia';
+import { COMPILACION_STREAMS, LinkReferencia } from 'src/app/models/linkReferencia';
 
 const references = new LinkReferencia()
 
@@ -17,7 +17,7 @@ export class HomeComponent {
   }
 
   public routeToLastItem(): void {
-    const newItem = GIT_REBASE_MERGE_SQUASH;
+    const newItem = COMPILACION_STREAMS;
     const section = references.components.get(newItem)?.component!;
     this.router.navigateByUrl(`/${references.routesAndSections.get(section)}`, { state: { newItem } })
   }
