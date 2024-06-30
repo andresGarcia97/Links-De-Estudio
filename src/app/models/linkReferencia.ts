@@ -57,6 +57,7 @@ export const ARQUITECTURAS_CAPAS = 'capas';
 export const ARQUITECTURAS_MVP_MVC = 'mvpMvc';
 export const ARQUITECTURAS_EVENT_DRIVEN = 'eventDriven';
 export const ESTRATEGIAS_DESARROLLO_SCREAMING_DESIGN = 'screamingDesign';
+export const ESTRATEGIAS_DESARROLLO_SLDC = 'SLDC';
 export const META_CARACTERISTICAS_BACKWARD_AND_BREAKING_CHANGES = 'backwardAndBreakingChanges';
 export const META_CARACTERISTICAS_META_DATOS = 'metaDatos';
 export const META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM = 'concurrencyAndParallelism';
@@ -291,7 +292,8 @@ export const ESTRATEGIAS_DESARROLLO_REF = new Map<string, Referencia>([
     ['analisis', new Referencia('https://www.ubjonline.mx/en-que-consisten-los-analisis-top-down-y-bottom-up/', 'Bottom Up & Top Down', ESTRATEGIAS_DESARROLLO_KEY, 'Enfoques')],
     ['tld', new Referencia('https://medium.com/swlh/tdd-vs-tld-and-what-is-the-minimum-code-coverage-needed-f380181d3400', 'Tests al final del desarrollo', ESTRATEGIAS_DESARROLLO_KEY, 'TLD vs TDD')],
     ['bduf', new Referencia('https://www.freecodecamp.org/news/the-pros-and-cons-of-big-design-up-front-and-what-i-do-instead-375f00542dec/', 'Big Design Up Front', ESTRATEGIAS_DESARROLLO_KEY, 'BDUF')],
-    [ESTRATEGIAS_DESARROLLO_SCREAMING_DESIGN, new Referencia('https://medium.com/@mubashirhussain29/the-screaming-architecture-story-08750691291f', 'Diseño a gritos', ESTRATEGIAS_DESARROLLO_KEY, 'Gritos').addRelatedItem(META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL)],
+    [ESTRATEGIAS_DESARROLLO_SCREAMING_DESIGN, new Referencia('https://medium.com/@mubashirhussain29/the-screaming-architecture-story-08750691291f', 'Diseño a gritos', ESTRATEGIAS_DESARROLLO_KEY, 'Gritos', '2024/05/25').addRelatedItem(META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL)],
+    [ESTRATEGIAS_DESARROLLO_SLDC, new Referencia('https://www.netguru.com/blog/stages-of-software-development', 'Ciclo de Vida del Desarrollo de Software', ESTRATEGIAS_DESARROLLO_KEY, 'SLDC', '2024/06/29')],
 ]);
 
 export const FRAMEWORKS_KEY = 'Frameworks';

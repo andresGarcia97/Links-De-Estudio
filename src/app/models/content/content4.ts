@@ -1,8 +1,8 @@
 import {
     AGILES_OUTPUT_AND_OUTCOME, ARQUITECTURAS_CAPAS, ARQUITECTURAS_DEFINICION, ARQUITECTURAS_EVENT_DRIVEN, ARQUITECTURAS_MVP_MVC,
-    CONTENEDORES_SECURE_ORCHESTRATION, ESTRATEGIAS_DESARROLLO_SCREAMING_DESIGN, FRAMEWORKS_CODE_STRUCTURE, FRAMEWORKS_IOD,
-    LEYES_HYRUM, LEYES_LEHMAN, MALAS_PRACTICAS_ANTI_PATRONES_ARQUITECTURAS, MALAS_PRACTICAS_TRAIN_WECKS,
-    META_CARACTERISTICAS_BACKWARD_AND_BREAKING_CHANGES, META_CARACTERISTICAS_BOILER_PLATE,
+    CONTENEDORES_SECURE_ORCHESTRATION, ESTRATEGIAS_DESARROLLO_SLDC, ESTRATEGIAS_DESARROLLO_SCREAMING_DESIGN,
+    FRAMEWORKS_CODE_STRUCTURE, FRAMEWORKS_IOD, LEYES_HYRUM, LEYES_LEHMAN, MALAS_PRACTICAS_ANTI_PATRONES_ARQUITECTURAS,
+    MALAS_PRACTICAS_TRAIN_WECKS, META_CARACTERISTICAS_BACKWARD_AND_BREAKING_CHANGES, META_CARACTERISTICAS_BOILER_PLATE,
     META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM, META_CARACTERISTICAS_META_DATOS, POO_INMUTABILITY, POO_POO, POO_POO_PILARES
 } from "../linkReferencia";
 import { Item } from "../models";
@@ -1888,6 +1888,37 @@ export const ESTATEGIAS_DESARROLLO =
                 '- Una buena arquitectura, da lugar para que decisiones tecnicas se puedan posponer y cedan el foco a los casos de uso',
                 '- Tambien permite flexibilidad en cuanto al cambio de tecnologias, herramientas, y marcos de trabajo ',
                 '- Permiten que se puedan realizar pruebas, sin necesidad de depender de marcos, BD o otras complejidades, o en su defecto depender lo menos posible ',
+            ]),
+        new Item(ESTRATEGIAS_DESARROLLO_SLDC,
+            [
+                '- El ciclo de vida del desarrollo de software difiere de acuerdo a la necesidades de cada empresa, sin embargo existen etapas en comun ',
+                '',
+                '<strong>Analisis de requerimientos:</strong> Proceso de recopilación de las necesidades, especificaciones y expectativas ',
+                '',
+                '<strong>Diseño:</strong> Se analizan una gran cantidad de aspectos, ocupandose de la forma en que funcionara y se hara el software, aspectos como: ',
+                '  - Arquitectura                     - Seguridad',
+                '  - Stack de tecnologias             - Plataforma de despliegue ',
+                '  - Interfaz de usuario              - Prototipos ',
+                '- Ninguna decisión es inamovible, pero entre más tarde se cambie, mayor sera el costo para el proyecto',
+                '',
+                '<strong>Desarrollo:</strong> Una vez se tenga concenso sobre la mayoria de temas, se puede empezar con la codificación, que tomara la gran parte de tiempo y recursos ',
+                '- No importa que modelo de gestión se use, pueden ser metodologias agiles o tradicionales, el resultado sera siempre un codigo funcional ',
+                '',
+                '<strong>Pruebas:</strong> Las areas encargadas de control de calidad realizaran las pruebas pertinentes para detectar errores, fallas o incumplimientos ',
+                '  - Testing Unitario                 - Testing de Integración',
+                '  - Testing de Seguridad             - Pruebas de carga & Estres',
+                '  - Calidad de codigo y Pruebas de Aceptación ',
+                '- Si en esta o en etapas previas no se encuentran defectos, sera mucho más costoso y complicado corregirlos más adelante',
+                '',
+                '<strong>Implementación:</strong> Tambien conocida como despliegue, y deberia estar altamente automatizada, además de contar con la capacidad de reversión ',
+                '',
+                '<strong>Documentación:</strong> La documentación proporciona un esquema del sistema y ayuda a los interesados a comprender mejor el proyecto ',
+                '  - Requisitos                       - Arquitectura',
+                '  - Codigo fuente                    - Plan de pruebas',
+                '',
+                '<strong>Mantenimiento:</strong> Con el proyecto estable y debidamente documentado, esta fase considera el exito a largo plazo ',
+                '',
+                'Un <em>SLDC</em> bien definido ayuda a gestionar los recursos y tener canales de comunicación fluidos, siempre deberia estar claro para todos los involucrados '
             ])
     ];
 
