@@ -90,6 +90,7 @@ export const REFACTORING_LEGACY_CODE = 'refactorLegacyCode';
 export const PERSISTENCY_OPTIMIZE_SLOW_QUERIES = 'optimizeSlowQueries';
 export const PERSISTENCY_DBMS = 'dbms'
 export const HARDWARE_PROTOCOLS = 'protocolsHardware';
+export const HARDWARE_OPERATIVE_SYSTEM = 'operativeSystem';
 export const SECURITY_PROTOCOLOS_SEGURITY = 'protocolosSecurity';
 export const SECURITY_LEAST_PRIVILEGE = 'leastPrivilege';
 export const ANALISIS_DATA_DATA_ANALISIS_TYPES = 'dataAnalisisTypes';
@@ -741,10 +742,11 @@ export const HARDWARE_REF = new Map<string, Referencia>([
     ['nubeVSvirtualizacion', new Referencia('https://www.redhat.com/es/topics/cloud-computing/cloud-vs-virtualization', 'Nube VS Virtualizacion', HARDWARE_KEY, 'Nube VS VM')],
     ['rendering', new Referencia('https://www.freecodecamp.org/news/what-exactly-is-client-side-rendering-and-hows-it-different-from-server-side-rendering-bd5c786b340d/', 'Server-side VS client-side rendering', HARDWARE_KEY, 'Rendering')],
     ['modelOSI', new Referencia('https://www.cloudflare.com/es-es/learning/ddos/glossary/open-systems-interconnection-model-osi/', 'Modelo OSI', HARDWARE_KEY, 'Modelo OSI')],
-    ['monitoreo', new Referencia('https://www.hiberus.com/crecemos-contigo/uso-de-los-apm-monitoreo-del-rendimiento-de-aplicaciones/#:~:text=Un%20APM%20(Application%20Performance%20Management,problemas%20a%20nivel%20de%20aplicaci%C3%B3n', 'Aplication Performance Management (apm)', HARDWARE_KEY, 'Monitoreo')],
+    ['monitoreo', new Referencia('https://www.hiberus.com/crecemos-contigo/uso-de-los-apm-monitoreo-del-rendimiento-de-aplicaciones/', 'Aplication Performance Management (apm)', HARDWARE_KEY, 'Monitoreo')],
     ['vmVsContainers', new Referencia('https://cloudnativeislamabad.hashnode.dev/virtualization-vs-containerization', 'Maquinas Virtuales VS Contenedores', HARDWARE_KEY, 'VM VS Contenedores')],
     ['falseSharing', new Referencia('https://www.easytechjunkie.com/what-is-false-sharing.htm', 'False Sharing', HARDWARE_KEY, 'False Sharing', '2022/12/29')],
     [HARDWARE_PROTOCOLS, new Referencia('https://www.solarwinds.com/resources/it-glossary/network-protocols', 'Network Protocols', HARDWARE_KEY, 'Network Protocols', '2024/06/11')],
+    [HARDWARE_OPERATIVE_SYSTEM, new Referencia('https://medium.com/@oyebisijemil_41110/why-understanding-operating-systems-is-important-for-every-back-end-distributed-systems-engineers-fc8412af4c6c', 'Sistema Operativo', HARDWARE_KEY, 'Sistema Operativo', '2024/06/30')],
 ]);
 
 export const WEB_KEY = 'Web';

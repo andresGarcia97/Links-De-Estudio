@@ -1,6 +1,6 @@
 import {
     ANALISIS_DATA_DATA_ANALISIS_TYPES, ANALISIS_DATA_DATA_ELT_ELT, ANALISIS_DATA_DATA_STORING, ANALISIS_DATA_SYSTEMS_INFORMATION,
-    ANALISIS_DATA_THEORY_OF_INFORMATION, HARDWARE_PROTOCOLS, PARADIGMAS_PARADIGMA_DATOS, PEOPLE_PROCESS_BLOAT,
+    ANALISIS_DATA_THEORY_OF_INFORMATION, HARDWARE_OPERATIVE_SYSTEM, HARDWARE_PROTOCOLS, PARADIGMAS_PARADIGMA_DATOS, PEOPLE_PROCESS_BLOAT,
     PERSISTENCY_ADVANCED_ORM, PERSISTENCY_ADVANCED_SCALING_DB, PERSISTENCY_ADVANCED_WAL, PERSISTENCY_DBMS,
     PERSISTENCY_OPTIMIZE_SLOW_QUERIES
 } from "../linkReferencia";
@@ -500,6 +500,28 @@ export const HARDWARE =
                 '<strong>- Protocolo seguro de transferencia de hipertexto <em>(HTTPS)</em></strong>: Supera la limitación de <em>HTTP</em> garantizando la seguridad, ',
                 ' - de los datos en transito, mediante un canal seguro cifrado ',
                 '<strong>- Secure Socket Layer <em>(SSL)</em></strong>: Ayuda a proteger las conexiones de internet, mediante cifrado, tambien existe una versión más reciente y segura <em>TLS</em>',
+            ]),
+        new Item(HARDWARE_OPERATIVE_SYSTEM, 
+            [
+                '- Los <strong>Sistemas Operativos</strong> son la base de la informatica, es un conocimiento esencial para cualquier desarrollador de sistemas backend y/o distribuidos',
+                '',
+                '<strong>Gestion eficiente de recursos:</strong> El SO asigna y administra recursos del Hardware como CPU, Memoria, Dispositivos de I/O',
+                '',
+                '<strong>Concurrencia y MultiHilos:</strong> Los sistemas suelen gestionar varias solicitudes al mismo tiempo, y los sistemas distribuidos por naturaleza, ',
+                ' - implican la gestión de tareas en multiples maquinas, además de manejar de forma eficiente multiples hilos, nucleos, procesos y subprocesos ',
+                '',
+                '<strong>Redes:</strong> En especial para los sistemas distribuidos, el SO suministra los componentes basicos para que se pueden comunicar, como sockets y protocolos',
+                '',
+                '<strong>Seguridad:</strong> Ofrece recursos y mecanismo para proteger a los recursos como la autenticación de usuarios, permisos de archivos, aislamiento de procesos, etc..',
+                '',
+                '<strong>Sistemas de Archivos:</strong> El almacenamiento y la consulta, son fundamentales para saber como funcionan las operaciones con el disco y el almacenamiento en cache ',
+                '',
+                '<strong>Optimizaciones:</strong> Para optimizar un sistema, es necesario saber como interactuara y que necesita este del SO',
+                '',
+                '<strong>Adaptabilidad(multiplataforma):</strong> Cada SO tiene APIs y comportamientos diferentes, por lo que se deben tener mecanismos para adaptarse ',
+                '',
+                '<strong>Solución de problemas y depuración:</strong> Un conocimiento profundo del SO ayudara a diagnosticar y solucionar problemas relacionados con fallas del sistema, ',
+                ' - como fugas de memoria, cuellos de botella, entre otros problemas ',
             ])
     ];
 
