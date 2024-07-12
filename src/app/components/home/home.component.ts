@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { HARDWARE_OPERATIVE_SYSTEM, LinkReferencia } from 'src/app/models/linkReferencia';
+import { TESTING_DATA_CREATION, LinkReferencia } from 'src/app/models/linkReferencia';
 
 const references = new LinkReferencia()
 
@@ -17,7 +17,7 @@ export class HomeComponent {
   }
 
   public routeToLastItem(): void {
-    const newItem = HARDWARE_OPERATIVE_SYSTEM;
+    const newItem = TESTING_DATA_CREATION;
     const section = references.components.get(newItem)?.component!;
     this.router.navigateByUrl(`/${references.routesAndSections.get(section)}`, { state: { newItem } })
   }
