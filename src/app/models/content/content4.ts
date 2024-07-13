@@ -4,7 +4,7 @@ import {
     FRAMEWORKS_CODE_STRUCTURE, FRAMEWORKS_IOD, LEYES_HYRUM, LEYES_LEHMAN, MALAS_PRACTICAS_ANTI_PATRONES_ARQUITECTURAS,
     MALAS_PRACTICAS_TRAIN_WECKS, META_CARACTERISTICAS_BACKWARD_AND_BREAKING_CHANGES, META_CARACTERISTICAS_BOILER_PLATE,
     META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM, META_CARACTERISTICAS_META_DATOS, POO_INMUTABILITY, POO_POO, POO_POO_PILARES,
-    FRAMEWORKS_FRAMEWORKS, META_CARACTERISTICAS_ANOTTATIONS
+    FRAMEWORKS_FRAMEWORKS, META_CARACTERISTICAS_ANOTTATIONS, META_CARACTERISTICAS_REFLEXION
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -743,18 +743,29 @@ export const META_CARACTERISTICAS =
                 '- Este concepto es ampliamente usado para realizar testing, por medio de anotaciones, dobles y otros conceptos, ',
                 '- Un ejemplo de esto son <em>Junit</em> y <em>Mockito</em>, frameworks para realizar pruebas en java, que se basan en estas caracteristica ',
             ]),
-        new Item('reflexion',
+        new Item(META_CARACTERISTICAS_REFLEXION,
             [
-                '- Capacidad de un codigo para observar un programa para observarse y cambiar su estructura a alto nivel ',
+                '- Capacidad de un codigo de observarse asi mismo y cambiar su estructura a alto nivel o su comportamiento en tiempo de ejecución ',
                 '- Puede ser dinamica o estatica, y es más comun en los lenguajes que usan maquinas virtuales para ejecutarse, como JAVA ',
-                '- Cuando el codigo fuente se compila normalmente pierde su estructura al pasar a un lenguaje de un nivel más bajo, pero ',
-                ' - si este sistema permite la reflexión esta estructura se preserva como metadatos ',
-                '- La reflexión permite conseguir un codigo aun más flexible, a cambio de perder rendimiento ',
+                '- Cuando el codigo fuente se compila normalmente pierde su estructura al pasar a un lenguaje de un nivel más bajo ',
+                '- Para que este comportamiento se de, esta estructura se debe preservar como metadatos, los cuales puedan manipularse ',
                 '',
-                '- Esta caracteristica permite realizar acciones como: ',
+                '<strong>Permite realizar acciones como:</strong>',
                 ' - Descubrir y modificar secciones de codigo en tiempo de ejecución ',
                 ' - Evaluar una cadena como si fuera una sentencia de código fuente en tiempo de ejecución ',
                 ' - Flexibilizar el tipado en lenguajes fuertemente tipados ',
+                ' - Invocar metodos y constructores de objetos de manera dinamica, modificar y/o obtener información de las clases ',
+                '',
+                '<strong>Aplicaciones:</strong>',
+                ' - Multiples <em>ORM</em> como Hibernate usan anotaciones para asignar comportamientos dinamicamente a los objetos',
+                ' - Inyección de dependencias, usada por Spring y otros frameworks para inyectar codigo en tiempo de ejecución ',
+                ' - Testing, Marcos de pruebas como Junit y Mockito, que permiten el descubrimiento, suplantación y verificación de objetos ',
+                ' - Serialización/Deserialización, donde bibliotecas como Jackson y Gson convierten objetos a Json o Xml y viceversa ',
+                '',
+                '<strong>Contras:</strong>',
+                ' - Perdidas de rendimiento debido a la flexibilidad requerida para afectar el codigo de manera dinamica',
+                ' - Preocupaciones de seguridad, ya que omite mecanismos de control que se dan de manera normal ',
+                ' - Problemas en tiempo de ejecución, ya que puede afectar o corromper los metadatos necesarios para que el programa funcione ',
             ]),
         new Item('asserts',
             [
