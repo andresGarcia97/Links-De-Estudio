@@ -4,7 +4,7 @@ import {
     FRAMEWORKS_CODE_STRUCTURE, FRAMEWORKS_IOD, LEYES_HYRUM, LEYES_LEHMAN, MALAS_PRACTICAS_ANTI_PATRONES_ARQUITECTURAS,
     MALAS_PRACTICAS_TRAIN_WECKS, META_CARACTERISTICAS_BACKWARD_AND_BREAKING_CHANGES, META_CARACTERISTICAS_BOILER_PLATE,
     META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM, META_CARACTERISTICAS_META_DATOS, POO_INMUTABILITY, POO_POO, POO_POO_PILARES,
-    FRAMEWORKS_FRAMEWORKS, META_CARACTERISTICAS_ANOTTATIONS, META_CARACTERISTICAS_REFLEXION
+    FRAMEWORKS_FRAMEWORKS, META_CARACTERISTICAS_ANOTTATIONS, META_CARACTERISTICAS_REFLEXION, ESTRATEGIAS_DESARROLLO_TDD
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -1807,7 +1807,7 @@ export const ESTATEGIAS_DESARROLLO =
                 '- <strong>Dado</strong> escenario y precondiciones <strong>Cuando</strong> acciones a ejecutar <strong>Entonces</strong> Resultado a validar',
                 '- Mejora la comunicación entre todas las partes, ya que todas se comunican más entre si ',
             ]),
-        new Item('tdd',
+        new Item(ESTRATEGIAS_DESARROLLO_TDD,
             [
                 '- Primero se escriben las pruebas, y despues se crea el codigo para que estas funcionen ',
                 '- Puede incrementar la carga de trabajo, pero se obtiene un codigo más robusto y mantenible ',

@@ -57,6 +57,7 @@ export const ARQUITECTURAS_DEFINICION = 'definicion';
 export const ARQUITECTURAS_CAPAS = 'capas';
 export const ARQUITECTURAS_MVP_MVC = 'mvpMvc';
 export const ARQUITECTURAS_EVENT_DRIVEN = 'eventDriven';
+export const ESTRATEGIAS_DESARROLLO_TDD = 'tdd';
 export const ESTRATEGIAS_DESARROLLO_SCREAMING_DESIGN = 'screamingDesign';
 export const ESTRATEGIAS_DESARROLLO_SLDC = 'SLDC';
 export const META_CARACTERISTICAS_BACKWARD_AND_BREAKING_CHANGES = 'backwardAndBreakingChanges';
@@ -101,7 +102,9 @@ export const ANALISIS_DATA_DATA_ELT_ELT = 'etl&elt';
 export const ANALISIS_DATA_THEORY_OF_INFORMATION = 'theoryOfInformation';
 export const GIT_REBASE_MERGE_SQUASH = 'rebaseMergeSquash';
 export const COMPILACION_STREAMS = 'streams';
+export const TESTING_DATA_SUT_DOC = 'sut&Doc';
 export const TESTING_DATA_CREATION = 'creationDataTesting';
+export const TESTING_ADVANCED_ANTI_PATTERNS = 'tdd-antipatterns';
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -292,7 +295,7 @@ export const ESTRATEGIAS_DESARROLLO_KEY = 'Estrategias-Desarrollo';
 export const ESTRATEGIAS_DESARROLLO_REF = new Map<string, Referencia>([
     ['ddd', new Referencia('https://github.com/jatubio/5minutos_laravel/wiki/Resumen-sobre-DDD.-Domain-Driven-Design', 'Diseño Orientado a Dominios', ESTRATEGIAS_DESARROLLO_KEY, 'DDD')],
     ['bdd', new Referencia('https://www.itdo.com/blog/que-es-bdd-behavior-driven-development/#:~:text=Given%2DWhen%2DThen%20como%20lenguaje%20com%C3%BAn%20con%20BDD,que%20se%20van%20a%20ejecutar', 'Desarrollo Dirigido por Comportamiento', ESTRATEGIAS_DESARROLLO_KEY, 'BDD')],
-    ['tdd', new Referencia('https://www.paradigmadigital.com/dev/tdd-como-metodologia-de-diseno-de-software/', 'Desarrollo Dirigido por Tests', ESTRATEGIAS_DESARROLLO_KEY, 'TDD')],
+    [ESTRATEGIAS_DESARROLLO_TDD, new Referencia('https://www.paradigmadigital.com/dev/tdd-como-metodologia-de-diseno-de-software/', 'Desarrollo Dirigido por Tests', ESTRATEGIAS_DESARROLLO_KEY, 'TDD')],
     ['atdd', new Referencia('https://www.javiergarzas.com/2015/07/que-es-eso-de-atdd.html', 'Desarrollo por pruebas de aceptación', ESTRATEGIAS_DESARROLLO_KEY, 'ATDD')],
     ['analisis', new Referencia('https://www.ubjonline.mx/en-que-consisten-los-analisis-top-down-y-bottom-up/', 'Bottom Up & Top Down', ESTRATEGIAS_DESARROLLO_KEY, 'Enfoques')],
     ['tld', new Referencia('https://medium.com/swlh/tdd-vs-tld-and-what-is-the-minimum-code-coverage-needed-f380181d3400', 'Tests al final del desarrollo', ESTRATEGIAS_DESARROLLO_KEY, 'TLD vs TDD')],
@@ -568,7 +571,7 @@ export const TESTING_REF = new Map<string, Referencia>([
     ['beneficios', new Referencia('https://platzi.com/blog/testing-ventajas-formas-de-realizar-pruebas/', 'Beneficios del testing', TESTING_KEY, 'Beneficios')],
     ['nombramiento', new Referencia('https://www.petrikainulainen.net/programming/testing/writing-clean-tests-naming-matters/', 'Nombramiento de los componentes', TESTING_KEY, 'Nombramiento')],
     ['first', new Referencia('https://www.paradigmadigital.com/dev/principio-first-aumentar-la-calidad-tests-unitarios/', 'Principio FIRST', TESTING_KEY, 'Principio FIRST')],
-    ['sutydoc', new Referencia('https://www.javiergarzas.com/2015/09/que-estoy-probando-y-cuales-son-mis-dependencias-en-testing.html', 'SUT & DOC', TESTING_KEY, 'SUT & DOC')],
+    [TESTING_DATA_SUT_DOC, new Referencia('https://www.javiergarzas.com/2015/09/que-estoy-probando-y-cuales-son-mis-dependencias-en-testing.html', 'SUT & DOC', TESTING_KEY, 'SUT & DOC', '', '2024/07/14')],
     ['dobles', new Referencia('https://www.codurance.com/publications/2019/04/08/introduction-to-test-doubles', 'Dobles', TESTING_KEY, 'Dobles')],
     //['aaa', new Referencia('http://oscarmoreno.com/pruebas-unitarias/', 'Arrange-Act-Assert', TESTING_KEY, 'AAA')],
     ['aaa', new Referencia('https://medium.com/@rojasjimenezjosea/aaa-unit-testing-688e3e61902a', 'Arrange-Act-Assert', TESTING_KEY, 'AAA', '', '2024/07/11')],
@@ -585,16 +588,19 @@ export const TESTING_REF = new Map<string, Referencia>([
 export const TESTING_ADVANCED_KEY = 'Testing-Avanzado';
 export const TESTING_ADVANCED = new Map<string, Referencia>([
     ['cajaNegraBlanca', new Referencia('https://www.testermoderno.com/caja-blanca-vs-caja-negra/', 'Tests de Caja negra & Caja blanca', TESTING_ADVANCED_KEY, 'Caja Negra & Blanca')],
-    ['valorLimite', new Referencia('https://educandocontic.com/valores-limite-pruebas/', 'Valores limite', TESTING_ADVANCED_KEY, 'Valores Limites')],
-    ['clasesEquivalencia', new Referencia('https://educandocontic.com/particiones-de-equivalencia/', 'Clases de equivalencia', TESTING_ADVANCED_KEY, 'Equivalencias')],
-    ['grafosCausaEfecto', new Referencia('https://platzi.com/tutoriales/1421-pruebas-software/9606-pruebas-con-grafos-causa-efecto/', 'Grafos causa -> efecto', TESTING_ADVANCED_KEY, 'Causa -> Efecto')],
+    //['valorLimite', new Referencia('https://educandocontic.com/valores-limite-pruebas/', 'Valores limite', TESTING_ADVANCED_KEY, 'Valores Limites')],
+    ['valorLimite', new Referencia('https://www.linkedin.com/pulse/an%C3%A1lisis-de-valores-l%C3%ADmite-asegurando-la-calidad-en-los-oscar-trejo-taeff/', 'Valores limite', TESTING_ADVANCED_KEY, 'Valores Limites', '', '2024/07/14')],
+    //['clasesEquivalencia', new Referencia('https://educandocontic.com/particiones-de-equivalencia/', 'Clases de equivalencia', TESTING_ADVANCED_KEY, 'Equivalencias')],
+    ['clasesEquivalencia', new Referencia('https://www.diariodeqa.com/post/tecnicas-de-prueba-de-caja-negra', 'Clases de equivalencia', TESTING_ADVANCED_KEY, 'Equivalencias', '', '2024/07/14')],
+    ['grafosCausaEfecto', new Referencia('https://platzi.com/tutoriales/1421-pruebas-software/9606-pruebas-con-grafos-causa-efecto/', 'Grafos Causa -> Efecto', TESTING_ADVANCED_KEY, 'Causa -> Efecto')],
     ['tiposDePruebas', new Referencia('https://www.softwaretestinghelp.com/types-of-software-testing/', 'Clasificación de las pruebas', TESTING_ADVANCED_KEY, 'Tipos de pruebas')],
-    ['outsideInside', new Referencia('https://www.adictosaltrabajo.com/2016/01/29/tdd-outside-in-vs-inside-out/', 'TDD: Outside-In VS Inside-out', TESTING_ADVANCED_KEY, 'Outside & Inside')],
+    ['outsideInside', new Referencia('https://www.adictosaltrabajo.com/2016/01/29/tdd-outside-in-vs-inside-out/', 'TDD: Outside-In VS Inside-out', TESTING_ADVANCED_KEY, 'Outside & Inside', '', '2024/07/14').addRelatedItem(ESTRATEGIAS_DESARROLLO_TDD)],
     ['casosDePruebas', new Referencia('https://medium.com/grupo-carricay/qu%C3%A9-son-los-casos-de-pruebas-4893799b5b84', 'Casos de prueba', TESTING_ADVANCED_KEY, 'Casos de prueba')],
     ['casosDeUso', new Referencia('https://blogs.encamina.com/piensa-en-software-desarrolla-en-colores/qa-caso-de-uso-vs-caso-de-prueba/', 'Casos de uso', TESTING_ADVANCED_KEY, 'Casos de uso')],
     ['codeSmellsTests1', new Referencia('https://codingcraftsman.wordpress.com/2018/09/27/test-smells/', 'Smells codes en testing #1', TESTING_ADVANCED_KEY, 'Code smells en testing #1')],
     ['codeSmellsTests2', new Referencia('https://codingcraftsman.wordpress.com/2018/09/27/test-smells/', 'Smells codes en testing #2', TESTING_ADVANCED_KEY, 'Code smells en testing #2')],
-    ['mutation', new Referencia('https://spa.myservername.com/what-is-mutation-testing#:~:text=La%20prueba%20de%20mutaci%C3%B3n%20es,prueba%20para%20aislar%20las%20desviaciones', 'Tests de mutación', TESTING_ADVANCED_KEY, 'Pruebas de mutación')]
+    ['mutation', new Referencia('https://spa.myservername.com/what-is-mutation-testing', 'Tests de mutación', TESTING_ADVANCED_KEY, 'Pruebas de mutación')],
+    [TESTING_ADVANCED_ANTI_PATTERNS, new Referencia('https://agileinaflash.blogspot.com/2009/06/tdd-antipatterns.html', 'TDD Antipatrones', TESTING_ADVANCED_KEY, 'TDD Antipatrones', '2024/07/14').addRelatedItem(ESTRATEGIAS_DESARROLLO_TDD).addRelatedItem(TESTING_DATA_SUT_DOC)]
 ]);
 
 export const REFACTORING_KEY = 'Refactorizacion';
