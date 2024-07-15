@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { TESTING_ADVANCED_ANTI_PATTERNS, LinkReferencia } from 'src/app/models/linkReferencia';
+import { LEYES_KIDLIN, LinkReferencia } from 'src/app/models/linkReferencia';
 
 const references = new LinkReferencia()
 
@@ -17,7 +17,7 @@ export class HomeComponent {
   }
 
   public routeToLastItem(): void {
-    const newItem = TESTING_ADVANCED_ANTI_PATTERNS;
+    const newItem = LEYES_KIDLIN;
     const section = references.components.get(newItem)?.component!;
     this.router.navigateByUrl(`/${references.routesAndSections.get(section)}`, { state: { newItem } })
   }
