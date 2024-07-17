@@ -92,6 +92,7 @@ export const PERSISTENCY_ADVANCED_WAL = 'writeAheadLogs';
 export const REFACTORING_MANAGE_DEPENDENCIES = 'manageDependencies';
 export const REFACTORING_LEGACY_CODE = 'refactorLegacyCode';
 export const PERSISTENCY_OPTIMIZE_SLOW_QUERIES = 'optimizeSlowQueries';
+export const PERSISTENCY_SCHEMAS = 'schemaPhysicVSschemaLogical';
 export const PERSISTENCY_DBMS = 'dbms'
 export const HARDWARE_PROTOCOLS = 'protocolsHardware';
 export const HARDWARE_OPERATIVE_SYSTEM = 'operativeSystem';
@@ -700,6 +701,7 @@ export const PERSISTENCY_REF = new Map<string, Referencia>([
     ['constraints', new Referencia('https://www.w3schools.com/sql/sql_constraints.asp', 'Constraints', PERSISTENCY_KEY, 'Constraints', '2023/10/03')],
     ['dbDesign', new Referencia('https://dzone.com/articles/what-is-good-database-design', 'Diseño de una BD', PERSISTENCY_KEY, 'Diseño', '2023/11/23')],
     [PERSISTENCY_OPTIMIZE_SLOW_QUERIES, new Referencia('https://digma.ai/how-to-optimize-slow-sql-queries/', 'Optimización de consultas', PERSISTENCY_KEY, 'Optimización', '2024/06/09').addRelatedItem(PERSISTENCY_ADVANCED_ORM).addRelatedItem(PERSISTENCY_ADVANCED_N_1_SELECTS)],
+    [PERSISTENCY_SCHEMAS, new Referencia('https://buttondown.email/jaffray/archive/in-codd-we-trust-or-not', 'Esquema Fisico Vs Esquema Logico', PERSISTENCY_KEY, 'Esquemas (Schema)', '2024/07/16')],
 ]);
 
 export const PERSISTENCY_ADVANCED_KEY = 'BD Avanzado'

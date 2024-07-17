@@ -1802,7 +1802,7 @@ export const LEYES =
                 '- Si se comprende el problema de fondo, entonces podras idear una solución más adecuada ',
                 '',
                 '- Para aplicar esta ley se suele dividir el problema en partes más pequeñas y manejables',
-                '- Tambien se suelen implementar etapas, que son bastante similares a las <em>Ciclo de Deming</em>',
+                '- Tambien se suelen implementar etapas, que son bastante similares a las del <em>Ciclo de Deming</em>',
             ])
     ];
 

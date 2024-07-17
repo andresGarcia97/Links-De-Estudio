@@ -2,7 +2,7 @@ import {
     ANALISIS_DATA_DATA_ANALISIS_TYPES, ANALISIS_DATA_DATA_ELT_ELT, ANALISIS_DATA_DATA_STORING, ANALISIS_DATA_SYSTEMS_INFORMATION,
     ANALISIS_DATA_THEORY_OF_INFORMATION, HARDWARE_OPERATIVE_SYSTEM, HARDWARE_PROTOCOLS, PARADIGMAS_PARADIGMA_DATOS, PEOPLE_PROCESS_BLOAT,
     PERSISTENCY_ADVANCED_ORM, PERSISTENCY_ADVANCED_SCALING_DB, PERSISTENCY_ADVANCED_WAL, PERSISTENCY_DBMS,
-    PERSISTENCY_OPTIMIZE_SLOW_QUERIES
+    PERSISTENCY_OPTIMIZE_SLOW_QUERIES, PERSISTENCY_SCHEMAS
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -1713,6 +1713,24 @@ export const BASES_DE_DATOS =
                 '- Remueva indices no deseados, ya que estos alentan los <em>INSERT</em> y <em>UPDATE</em>',
                 '- Verifique la tabla sobre la cual se estan haciendo los queries, es posible que se pueda normalizar o dividirse, reduciendo la cantidad de filas ',
                 '- Use procedimientos almacenados si son consultas demasiado frecuentes y con poca complejidad, sin abusar de estos ',
+            ]),
+        new Item(PERSISTENCY_SCHEMAS,
+            [
+                '- El Modelo Relacional, fue un avance trascendental para el almacenamiento de datos y una base fundamental para el software moderno ',
+                '- <strong>Edgar Frank Codd</strong> ó <em>Ted</em> Codd conocido por ser el padre de las bases de datos relacionales, afirmo de manera contundente: ',
+                '<em>Los futuros usuarios de grandes bancos de datos deben estar protegidos de tener que saber cómo se organizan los datos en la máquina (la representación interna)</em>',
+                '',
+                '- Una afirmación simple pero que conlleva grandes implicaciones, una de ellas se reduce a que el esquema logico y el esquema fisico de una BD, ',
+                ' - son 2 cuestiones distintas que deben separarse, para que puedan manejarse o ajustarse de manera independiente ',
+                '- El modelo relacional lo cumple, ya que sus abstracciones son lo suficientemente de alto nivel como para lograrlo y evitar cuestiones fisicas ',
+                '- De esta caracteristica, surge la necesidad de un planificador de consultas sofisticado, que pueda disociar <strong>que</strong> esta recuperando, de <strong>como</strong> se recupera',
+                '',
+                '- Generalmente es una forma optima de trabajar, ya que el desarrollador se enfocara en el significado y la logica de las consultas ',
+                '- Pero en sistemas donde el rendimiento es critico, o la congruencia es decisiva, se deben aprovechar las particularidades fisicas del Motor de la BD, ',
+                ' - y ahi es donde estos planificadores pueden interferir, debido a que SQL es un lenguaje declarativo, que aveces parece más <em>magia</em> que logica ',
+                '- No existe ninguna BD que sea deficiente en su forma de trabajar, por lo que estos casos deben ser analizados y realizados meticulosamente',
+                '- La optimización de consultas, debido a su naturaleza ambivalente es un proceso caotico y riesgoso, que debe tener en cuenta beneficios y riesgos ',
+                ' - por igual, cualquier cambio o actualización de este planeador puede romper consultas cuidadosamente diseñadas ',
             ])
     ];
 
