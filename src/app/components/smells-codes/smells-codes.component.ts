@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { SMELLS_CODES } from 'src/app/models/content/content3';
-import { ANALISIS_KEY, ARQUITECTURAS_KEY, BUENAS_PRACTICAS_KEY, LinkReferencia, MALAS_PRACTICAS_KEY, REFACTORING_KEY, SMELL_CODES_REF } from 'src/app/models/linkReferencia';
+import { ANALISIS_KEY, ARQUITECTURAS_KEY, BUENAS_PRACTICAS_KEY, LinkReferencia, MALAS_PRACTICAS_KEY, REFACTORING_KEY, SMELL_CODES_REF }
+from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-smells-codes',

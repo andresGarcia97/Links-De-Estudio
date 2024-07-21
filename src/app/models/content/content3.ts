@@ -1,5 +1,5 @@
 import {
-    REFACTORING_LEGACY_CODE, REFACTORING_MANAGE_DEPENDENCIES, SECURITY_LEAST_PRIVILEGE, SECURITY_PROTOCOLOS_SEGURITY
+    REFACTORING_LEGACY_CODE, REFACTORING_MANAGE_DEPENDENCIES, SECURITY_AUTHENTICATION_WAYS, SECURITY_LEAST_PRIVILEGE, SECURITY_PROTOCOLOS_SEGURITY
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -1039,6 +1039,49 @@ export const SEGURIDAD =
                 '- Auditar todos los entornos para localizar cuentas privilegiadas, claves SSH, entornos DevOps, Nube y puntos finales para administrar ',
                 '- Separar las cuentas administrativas de las cuentas normales',
                 '- Cambiar las contraseñas de manera regular, y en especial si han sido vulneradas con anterioridad',
+            ]),
+        new Item(SECURITY_AUTHENTICATION_WAYS,
+            [
+                '<strong>Autentificación Basica</strong>',
+                '- El usuario ingresa su usuario y contraseña',
+                '- Si son correctos y validos, el cliente puede almacenar estos valores para seguir reenviandolos ',
+                '- El cliente incluye un Header de <em>Authorization</em> en todas las peticiones, para que puedan ser procesadas ',
+                '- Con cada petición el servidor debe validar las credenciales recibidas ó de lo contrario, se respondera un 401 <em>Unathorized</em>',
+                '',
+                '<strong>Autenticación Digest:</strong> Supera algunas de la deficiencias de la autenticación Basica',
+                '- El usuario ingresa su usuario y contraseña',
+                '- Si la validación es exitosa, ahora el cliente crea un hash en base al usuario/contraseña, para una transimision más segura ',
+                '- El cliente incluye un Header de <em>Authorization</em> donde se envia el usuario y el hash generado ',
+                '- Con cada petición el servidor debe validar las credenciales, junto al hash recibidos, en caso contrario se respondera un 401 <em>Unathorized</em>',
+                '',
+                '<strong>Cookies:</strong> El enfoque más tradicional',
+                '- El usuario ingresa su usuario y contraseña',
+                '- Si es valida, el servidor emite una cookie cifrada, que puede contener información adicional del cliente',
+                '- El navegador almacena esta cookie, la cual sera necesaria enviar como encabezado en cada petición subsecuente ',
+                '- El servidor recibe la petición del cliente y valida la firma criptografica, además de otros datos como la expiración ',
+                '',
+                '<strong>Session:</strong> Permiten evitar obstaculos de las Cookies, como el funcionamiento en entornos distribuidos ',
+                '- El usuario ingresa su usuario y contraseña',
+                '- Si es valida, el servidor emite la cookie cifrada, que además contiene un Identificador de sesión, previamente almacenado ',
+                '- El navegador almacena esta cookie, la cual sera necesaria enviar como encabezado en cada petición subsecuente ',
+                '- El servidor recibe la solicitud, y además de validar la firma de la cookie, tambien recupera la sessión correspondiente ',
+                '',
+                '<strong>Token:</strong> Es la misma que la de la sesión, solo que sin cookies y en vez del ID de la sesión, se tiene una cadena aleatoria, menos predecible ',
+                '- El usuario ingresa su usuario y contraseña',
+                '- Si es valida, se crea la sesión y se emite una cadena aleatoria directamente relacionada, al cual se le llama Token',
+                '- El navegador almacena este Token, la cual sera necesaria enviar como encabezado en cada petición subsecuente ',
+                '- El servidor recibe la solicitud, y recupera la sessión correspondiente al token recibido, para conceder el acceso ',
+                '',
+                '<strong>JWT:</strong> Json Web Token es un token criptograficamente seguro y autonomo ',
+                '- El usuario ingresa su usuario y contraseña',
+                '- Si la información es valida, se emite un Token JWT, el cual no es necesario que sea almacenado ',
+                '- El navegador almacena este token, la cual sera necesaria enviar como encabezado en cada petición subsecuente, más la palabra inicial <em>Bearer</em>',
+                '- El servidor recibe la petición del cliente y valida la firma del token, además de otros datos en la carga util que pueda tener ',
+                '',
+                '<strong>API Key:</strong> Generalmente no es usada para la autenticación de usuarios, se usa para comunicaciones Machine-To-Machine(M2M) o Integraciones entres APIs',
+                '- Se generan las claves de antemano ',
+                '- El cliente incluye envia como encabezado <em>Authorization</em> en cada petición subsecuente, más la palabra inicial <em>ApiKey</em>',
+                '- Cuando el servidor recibe la solicitud, valida el ApiKey si es legitima y esta asociada a una aplicación valida ',
             ])
     ];
 

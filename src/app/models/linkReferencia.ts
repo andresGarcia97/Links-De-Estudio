@@ -98,6 +98,7 @@ export const HARDWARE_PROTOCOLS = 'protocolsHardware';
 export const HARDWARE_OPERATIVE_SYSTEM = 'operativeSystem';
 export const SECURITY_PROTOCOLOS_SEGURITY = 'protocolosSecurity';
 export const SECURITY_LEAST_PRIVILEGE = 'leastPrivilege';
+export const SECURITY_AUTHENTICATION_WAYS = 'authenticationWays';
 export const ANALISIS_DATA_DATA_ANALISIS_TYPES = 'dataAnalisisTypes';
 export const ANALISIS_DATA_SYSTEMS_INFORMATION = 'sistemsInformation';
 export const ANALISIS_DATA_DATA_STORING = 'dataStoring';
@@ -673,7 +674,8 @@ export const SECURITY_REF = new Map<string, Referencia>([
     ['csrf', new Referencia('https://www.welivesecurity.com/la-es/2015/04/21/vulnerabilidad-cross-site-request-forgery-csrf/', 'Cross Site Request Forgery', SECURITY_KEY, 'CSRF', '2023/01/06')],
     ['restApiAuth', new Referencia('https://blog.bytebytego.com/p/ep91-rest-api-authentication-methods', 'Autenticación en APIs REST', SECURITY_KEY, 'REST API Authentication', '2024/02/15')],
     ['attacksOnModelOSI', new Referencia('https://blog.bytebytego.com/p/ep97-10-good-coding-principles-to#%C2%A7top-network-security-cheatsheet', 'Ataques contra el Modelo OSI', SECURITY_KEY, 'Modelo OSI', '2024/03/21')],
-    [SECURITY_LEAST_PRIVILEGE, new Referencia('https://www.cyberark.com/what-is/least-privilege/', 'Menor privilegio', SECURITY_KEY, 'Menor Privilegio', '2024/06/16')]
+    [SECURITY_LEAST_PRIVILEGE, new Referencia('https://www.cyberark.com/what-is/least-privilege/', 'Menor privilegio', SECURITY_KEY, 'Menor Privilegio', '2024/06/16')],
+    [SECURITY_AUTHENTICATION_WAYS, new Referencia('https://medium.com/@iamprovidence/authentication-history-basic-digest-cookie-session-token-jwt-api-key-55d6c21be90b', 'Formas de Authenticación', SECURITY_KEY, 'Authenticación', '2024/07/21')]
 ]);
 
 export const SMELL_CODES_KEY = 'Smell-Codes';
@@ -683,7 +685,7 @@ export const SMELL_CODES_REF = new Map<string, Referencia>([
     ['desglose', new Referencia('https://refactoring.guru/es/refactoring/smells', 'Smell codes por tipo', SMELL_CODES_KEY, 'Desglose', '2021/06/06')],
     ['casos', new Referencia('https://refactoring.guru/es/refactoring/smells', 'Casos donde pueden ser ignorados', SMELL_CODES_KEY, 'Casos especiales', '2021/06/06')],
     ['payoff', new Referencia('https://refactoring.guru/es/refactoring/smells', 'Beneficios de corregir code smells', SMELL_CODES_KEY, 'Ganancias', '2021/06/06')],
-    ['designsmells', new Referencia('https://www.alpharithms.com/code-smell-492316/', 'Code smells en diseño', SMELL_CODES_KEY, 'A nivel de diseño')],
+    ['designsmells', new Referencia('https://www.alpharithms.com/code-smell-492316/', 'Code smells en diseño', SMELL_CODES_KEY, 'A nivel de diseño', '2023/01/22')],
 ]);
 
 export const PERSISTENCY_KEY = 'Bases de Datos'

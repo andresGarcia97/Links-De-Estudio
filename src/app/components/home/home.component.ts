@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { PERSISTENCY_SCHEMAS, LinkReferencia } from 'src/app/models/linkReferencia';
+import { SECURITY_AUTHENTICATION_WAYS, LinkReferencia } from 'src/app/models/linkReferencia';
 
 const references = new LinkReferencia()
 
@@ -17,7 +17,7 @@ export class HomeComponent {
   }
 
   public routeToLastItem(): void {
-    const newItem = PERSISTENCY_SCHEMAS;
+    const newItem = SECURITY_AUTHENTICATION_WAYS;
     const section = references.components.get(newItem)?.component!;
     this.router.navigateByUrl(`/${references.routesAndSections.get(section)}`, { state: { newItem } })
   }
