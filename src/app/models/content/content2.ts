@@ -1,5 +1,6 @@
-import { COMPILACION_STREAMS, GIT_REBASE_MERGE_SQUASH, METODOLOGIAS_AGILES, METODOLOGIAS_LEAN, TESTING_ADVANCED_ANTI_PATTERNS,
-    TESTING_DATA_CREATION, TESTING_DATA_SUT_DOC
+import {
+    COMPILACION_DECOMPILE, COMPILACION_STREAMS, GIT_REBASE_MERGE_SQUASH, METODOLOGIAS_AGILES, METODOLOGIAS_LEAN,
+    TESTING_ADVANCED_ANTI_PATTERNS, TESTING_DATA_CREATION, TESTING_DATA_SUT_DOC
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -1010,6 +1011,19 @@ export const COMPILACION =
                 '- Priorice operaciones de filtrado, antes que las de transformacion, al funcionar de manera perezosa se reducira el procesamiento de datos ',
                 '',
                 '- Para visualizar más operaciones y ejemplos, puedes consultar el articulo original y/o la documentación de Oracle',
+            ]),
+        new Item(COMPILACION_DECOMPILE,
+            [
+                '- Descompilar es el proceso de convertir el codigo de un programa ejecutable, a algun tipo de lenguaje de programación ',
+                '- Es el proceso inverso de la compilación, donde el resultado es una serie de bits o digitos binarios listos para ser ejecutados ',
+                '- Rara vez puede reconstruirse el codigo fuente original de manera exacta, por lo que tambien suele tener un componente subjetivo ',
+                '- Las variables y funciones con nombres significativos suelen perderse en el proceso, por lo el codigo descompilado suele estar <strong>ofuscado</strong> ',
+                '',
+                '<strong>Razones para descompilar:</strong>',
+                '- Recuperar el codigo fuente para modificarlo y/o comprender su funcionamiento',
+                '- Depurar el programa y corregir errores ',
+                '- Modificaciones en el codigo fuente, por motivos de interoperabilidad con otros sistemas',
+                '- Tambien existen motivos poco eticos y/o legales como romper la protección de derechos de autor ',
             ])
     ];
 

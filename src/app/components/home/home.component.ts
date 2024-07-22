@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { SECURITY_AUTHENTICATION_WAYS, LinkReferencia } from 'src/app/models/linkReferencia';
+import { COMPILACION_DECOMPILE, LinkReferencia } from 'src/app/models/linkReferencia';
 
 const references = new LinkReferencia()
 
@@ -17,7 +17,7 @@ export class HomeComponent {
   }
 
   public routeToLastItem(): void {
-    const newItem = SECURITY_AUTHENTICATION_WAYS;
+    const newItem = COMPILACION_DECOMPILE;
     const section = references.components.get(newItem)?.component!;
     this.router.navigateByUrl(`/${references.routesAndSections.get(section)}`, { state: { newItem } })
   }

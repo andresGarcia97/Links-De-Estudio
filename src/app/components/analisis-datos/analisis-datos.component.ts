@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ANALISIS_DATA } from 'src/app/models/content/content1';
-import { META_CARACTERISTICAS_KEY, LinkReferencia, ANALISIS_DATA_REF, ANALISIS_KEY, CD_CI_KEY, CONOCIMIENTO_EMPIRICO_KEY } from 'src/app/models/linkReferencia';
+import { META_CARACTERISTICAS_KEY, LinkReferencia, ANALISIS_DATA_REF, ANALISIS_KEY, CD_CI_KEY, CONOCIMIENTO_EMPIRICO_KEY }
+from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-analisis-datos',

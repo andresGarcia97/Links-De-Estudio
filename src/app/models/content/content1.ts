@@ -1,8 +1,8 @@
 import {
-    ANALISIS_DATA_DATA_ANALISIS_TYPES, ANALISIS_DATA_DATA_ELT_ELT, ANALISIS_DATA_DATA_STORING, ANALISIS_DATA_SYSTEMS_INFORMATION,
-    ANALISIS_DATA_THEORY_OF_INFORMATION, HARDWARE_OPERATIVE_SYSTEM, HARDWARE_PROTOCOLS, PARADIGMAS_PARADIGMA_DATOS, PEOPLE_PROCESS_BLOAT,
-    PERSISTENCY_ADVANCED_ORM, PERSISTENCY_ADVANCED_SCALING_DB, PERSISTENCY_ADVANCED_WAL, PERSISTENCY_DBMS,
-    PERSISTENCY_OPTIMIZE_SLOW_QUERIES, PERSISTENCY_SCHEMAS
+    ANALISIS_DATA_DATA_ANALISIS_TYPES, ANALISIS_DATA_DATA_ELT_ELT, ANALISIS_DATA_REVERSE_ENGINEERING, ANALISIS_DATA_DATA_STORING,
+    ANALISIS_DATA_SYSTEMS_INFORMATION, ANALISIS_DATA_THEORY_OF_INFORMATION, HARDWARE_OPERATIVE_SYSTEM, HARDWARE_PROTOCOLS,
+    PARADIGMAS_PARADIGMA_DATOS, PEOPLE_PROCESS_BLOAT, PERSISTENCY_ADVANCED_ORM, PERSISTENCY_ADVANCED_SCALING_DB,
+    PERSISTENCY_ADVANCED_WAL, PERSISTENCY_DBMS, PERSISTENCY_OPTIMIZE_SLOW_QUERIES, PERSISTENCY_SCHEMAS
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -501,7 +501,7 @@ export const HARDWARE =
                 ' - de los datos en transito, mediante un canal seguro cifrado ',
                 '<strong>- Secure Socket Layer <em>(SSL)</em></strong>: Ayuda a proteger las conexiones de internet, mediante cifrado, tambien existe una versión más reciente y segura <em>TLS</em>',
             ]),
-        new Item(HARDWARE_OPERATIVE_SYSTEM, 
+        new Item(HARDWARE_OPERATIVE_SYSTEM,
             [
                 '- Los <strong>Sistemas Operativos</strong> son la base de la informatica, es un conocimiento esencial para cualquier desarrollador de sistemas backend y/o distribuidos',
                 '',
@@ -1351,7 +1351,7 @@ export const ANALISIS_DATA =
                 '- Tambien son capaces de usar y reutilizar estructuras complejas ',
                 '- Que un lenguaje o herramienta sea turing complete no garantiza su eficiencia ',
             ]),
-        new Item('ingenieriaInversa',
+        new Item(ANALISIS_DATA_REVERSE_ENGINEERING,
             [
                 '- Un concepto sencillo pero muy potente, basicamente consta de desmontar y volver a montar algo, para ver como funciona ',
                 '- Esto se da con la intención de mejorar o duplicar ese algo mediante una simple observación ',
