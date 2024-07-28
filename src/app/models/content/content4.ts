@@ -5,7 +5,7 @@ import {
     MALAS_PRACTICAS_TRAIN_WECKS, META_CARACTERISTICAS_BACKWARD_AND_BREAKING_CHANGES, META_CARACTERISTICAS_BOILER_PLATE,
     META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM, META_CARACTERISTICAS_META_DATOS, POO_INMUTABILITY, POO_POO, POO_POO_PILARES,
     FRAMEWORKS_FRAMEWORKS, META_CARACTERISTICAS_ANOTTATIONS, META_CARACTERISTICAS_REFLEXION, ESTRATEGIAS_DESARROLLO_TDD,
-    LEYES_KIDLIN, AGILES_DEMING
+    LEYES_KIDLIN, AGILES_DEMING, ESTRATEGIAS_DESARROLLO_DDD, META_CARACTERISTICAS_BACKTRACKING
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -856,15 +856,14 @@ export const META_CARACTERISTICAS =
                 '       return (n == 0) ? 1 : n * factorial(n - 1);',
                 '   }',
             ]),
-        new Item('backtracing',
+        new Item(META_CARACTERISTICAS_BACKTRACKING,
             [
                 '- Es una estrategia para encontrar soluciones que satisfagan restricciones ',
                 '- De una manera basica esto se asemeja a un recorrido en profundidad dentro de un grafo que no contega ciclos ',
                 '- Durante todo el recorrido se va construyendo la solución del problema, todo esto para que al final si se tiene exito, ',
                 ' - todas estas soluciones parciales se junten y conformar una solución completa ',
                 '- Si el recorrido no tiene exito y tampoco se puede completar, se eliminaran todos los elementos construidos previamente ',
-                '- Este proceso suelen implementarse mediante algoritmos recursivos para evitar busquedas profundas, ',
-                ' - y asi evitar desperdicio de recursos infructuosamente ',
+                '- Este proceso suelen implementarse mediante algoritmos recursivos para evitar busquedas profundas, evitando desperdicio de recursos ',
                 '- Tambien se pueden hacer optimizaciones donde se evalua el peso de las ramas o se acotan los caminos posibles ',
                 ' - mediante subrutinas para podar el arbol y mejorar su eficiencia ',
                 '- Esta estrategia es usada en los analisis sintacticos de los compiladores y en la inteligencia artificial, ',
@@ -1808,7 +1807,7 @@ export const LEYES =
 
 export const ESTATEGIAS_DESARROLLO =
     [
-        new Item('ddd',
+        new Item(ESTRATEGIAS_DESARROLLO_DDD,
             [
                 '- El lenguaje debe ser obicuo, que sea entendible por desarrolladores, como por los usuarios ',
                 '- Se proponen <strong>4 capas</strong> principales para la arquitectura: ',
