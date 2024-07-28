@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { ANALISIS_ALGORITHMS, LinkReferencia } from 'src/app/models/linkReferencia';
+import { ANALISIS_DATA_CHANGE_DATA_CAPTURE, LinkReferencia } from 'src/app/models/linkReferencia';
 
 const references = new LinkReferencia()
 
@@ -17,7 +17,7 @@ export class HomeComponent {
   }
 
   public routeToLastItem(): void {
-    const newItem = ANALISIS_ALGORITHMS;
+    const newItem = ANALISIS_DATA_CHANGE_DATA_CAPTURE;
     const section = references.components.get(newItem)?.component!;
     this.router.navigateByUrl(`/${references.routesAndSections.get(section)}`, { state: { newItem } })
   }

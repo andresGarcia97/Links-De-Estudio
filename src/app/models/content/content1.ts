@@ -1,8 +1,8 @@
 import {
-    ANALISIS_DATA_DATA_ANALISIS_TYPES, ANALISIS_DATA_DATA_ELT_ELT, ANALISIS_DATA_REVERSE_ENGINEERING, ANALISIS_DATA_DATA_STORING,
+    ANALISIS_DATA_DATA_ANALISIS_TYPES, ANALISIS_DATA_ELT_ELT, ANALISIS_DATA_REVERSE_ENGINEERING, ANALISIS_DATA_DATA_STORING,
     ANALISIS_DATA_SYSTEMS_INFORMATION, ANALISIS_DATA_THEORY_OF_INFORMATION, HARDWARE_OPERATIVE_SYSTEM, HARDWARE_PROTOCOLS,
     PARADIGMAS_PARADIGMA_DATOS, PEOPLE_PROCESS_BLOAT, PERSISTENCY_ADVANCED_ORM, PERSISTENCY_ADVANCED_SCALING_DB,
-    PERSISTENCY_ADVANCED_WAL, PERSISTENCY_DBMS, PERSISTENCY_OPTIMIZE_SLOW_QUERIES, PERSISTENCY_SCHEMAS
+    PERSISTENCY_ADVANCED_WAL, PERSISTENCY_DBMS, PERSISTENCY_OPTIMIZE_SLOW_QUERIES, PERSISTENCY_SCHEMAS, ANALISIS_DATA_CHANGE_DATA_CAPTURE
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -1448,7 +1448,7 @@ export const ANALISIS_DATA =
                 '  Cumplimiento     Los datos son compatibles        No lo cumple, actualizar       Lo cumple ya que la data   ',
                 '    de ACID        para garantizar la seguridad     y eliminar es complejo         es concurrente             ',
             ]),
-        new Item(ANALISIS_DATA_DATA_ELT_ELT,
+        new Item(ANALISIS_DATA_ELT_ELT,
             [
                 '- <strong>ETL</strong> & <strong>ELT</strong> Son 2 enfoques de procesamiento de datos para el analisis de cientos, miles de datos, desde multiples origenes',
                 '- Ambos son secuencias de procesos que separan los datos para su posterior analisis, capturan, procesan y cargan datos para su analisis en 3 pasos ',
@@ -1519,6 +1519,52 @@ export const ANALISIS_DATA =
                 '- Estadistica ',
                 '- Biologia, en el estudio de las secuencias de ADN y el genoma de las especies',
                 '- Pagos, transacciones y procesos de autentificación ó verificación',
+            ]),
+        new Item(ANALISIS_DATA_CHANGE_DATA_CAPTURE,
+            [
+                '- La captura de datos modificados es el proceso de seguimiento de todos los cambios en la fuente de datos, como Bases de Datos y almacenes de datos ',
+                '- Esto permite mantener a las organizaciones mantener las diversas fuentes de datos sincronizadas con información consistente, a traves de multiples sistemas ',
+                '- Especialmente util para las migraciones entre sistemas y trabajar con aplicaciones heredadas ',
+                '- Inicialmente era una alternativa para trabajar con sistemas <em>ETL</em> pero se ha convertido en una forma de migración de las aplicaciones hacia la nube ',
+                '',
+                '<strong>Benficios</strong>',
+                '- Sin necesidad de cargas masivas, permite cargas incrementales ó la transmisión en tiempo real de los cambios en los datos ',
+                '- Se basa en registros individuales y sus transacciones, por lo que no hay procesamiento en lotes, reduciendo el impacto en el sistema de origen ',
+                '- No se requiere tener momentos de inactividad y la sincronización entre sistemas es casi en tiempo real, algo fundamental para la toma de decisiones ',
+                '',
+                '<strong>¿ Como funcionan ?</strong>',
+                '- Cuando se modifica los datos mediante INSERT, UPDATE, DELETE en la BD de origen, es necesario propagar este cambio a multiples sistemas posteriores ',
+                '- Tradicionalmente se hacian procesos mediante lotes, por lo que la sincronización no era inmediata y consumia recursos de la BD de origen ',
+                '',
+                '<strong>- Push:</strong> En este enfoque la BD de origen hace el trabajo pesado, capturando los cambios y enviandolos a los destinos ',
+                ' - sin embargo si los sistemas de destino no estan disponibles, se pueden llegar a perder cambios, para solventar este problema, se usan colas de mensajeria ',
+                '<strong>- Pull:</strong> Aca la BD de origen solo debe registrar los cambios, y el sistema de destino de manera continua revisa estos cambios ',
+                ' - y que se envien a traves de mensajeria, este enfoque no contempla actualizaciones inmediatas, pero si le quita presión al origen de los datos ',
+                '',
+                '<strong>Metodos para la captura de datos</strong>',
+                '<strong>Timestamp-based:</strong> Se basan en obtener las marcas de tiempo, de los cambios más recientes desde la ultima ejecución',
+                '<strong>Ventajas</strong>                                           <strong>Contras</strong>',
+                '- Facil de usar e implementar                      - Solo funciona con eliminaciones suaves y no con DELETE',
+                '- Seguimiento a traves del tiempo                  - Sobrecarga el origen al tener que analizar los cambios de las fechas ',
+                '',
+                '<strong>Trigger-based:</strong> Cada INSERT, UPDATE, DELETE requiere su propio <em>trigger</em> y los datos se almacenan en una tabla separada(tabla de sombra) ',
+                '<strong>Ventajas</strong>                                           <strong>Contras</strong>',
+                '- Puede detectar todo tipo de cambio               - Afecta el rendimiento en el origen al realizar multiples lecturas y escrituras ',
+                '- La captura se da en tiempo real                  - Requiere cambios en el esquema original ',
+                '- Los triggers pueden personalizarse               - Demasiados triggers pueden ser complejos de administrar/mantener ',
+                '',
+                '<strong>Log-based:</strong> Las BD transaccionales registran todos los cambios y sus correspondientes fechas mediante archivos(WAL)',
+                '<strong>Ventajas</strong>                                           <strong>Contras</strong>',
+                '- No agrega sobrecarga a la BD de origen           - Al ser un proceso interno, cada BD tiene estandares y formas diferentes para estos archivos ',
+                '- No modifica el esquema original                  - Los sistemas de destino deben saber interpretar los cambios y reversiones que se hayan dado ',
+                '',
+                '<strong>Casos de uso</strong>',
+                '<strong>- Replicación continua de datos:</strong> Para copiar datos de un origen a un destino por lotes, era necesario tener tiempo de inactividad hasta terminar el copiado ',
+                ' - Algo inaceptable hoy en dia, ya que los consumidores exigen experiencias continuas y cada interrupción es costosa para las empresas por diversos motivos ',
+                '<strong>- Microservicios:</strong> A medida que se desmontan monolitos para adoptar microservicios, es necesario transmitir datos a nuevos destinos ',
+                ' - Debido a que estas transiciónes suelen llevar tiempo, es necesario mantener sincronizados los origenes y sus destinos ',
+                '<strong>- Adopción de la Nube:</strong> Las organizaciones se mudan a la nube para reducir costos y mejorar la agilidad y la elasticidad ',
+                ' - Con CDC estas migraciones se garantizan consistentes, y asi las empresas pueden dedicarse en crear nuevas experiencias digitales ',
             ])
     ];
 

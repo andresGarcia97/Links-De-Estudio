@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ANALISIS_DATA } from 'src/app/models/content/content1';
-import { META_CARACTERISTICAS_KEY, LinkReferencia, ANALISIS_DATA_REF, ANALISIS_KEY, CD_CI_KEY, CONOCIMIENTO_EMPIRICO_KEY }
-from 'src/app/models/linkReferencia';
+import { 
+  META_CARACTERISTICAS_KEY, LinkReferencia, ANALISIS_DATA_REF, ANALISIS_KEY, CD_CI_KEY, CONOCIMIENTO_EMPIRICO_KEY, PERSISTENCY_KEY 
+} from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-analisis-datos',
@@ -24,6 +25,7 @@ export class AnalisisDatosComponent implements OnInit {
     const routes = new LinkReferencia().routesAndSections;
     this.relatedSections.set(CONOCIMIENTO_EMPIRICO_KEY, routes.get(CONOCIMIENTO_EMPIRICO_KEY)!);
     this.relatedSections.set(META_CARACTERISTICAS_KEY,  routes.get(META_CARACTERISTICAS_KEY)!);
+    this.relatedSections.set(PERSISTENCY_KEY,           routes.get(PERSISTENCY_KEY)!);
     this.relatedSections.set(ANALISIS_KEY,              routes.get(ANALISIS_KEY)!);
     this.relatedSections.set(CD_CI_KEY,                 routes.get(CD_CI_KEY)!);
   }

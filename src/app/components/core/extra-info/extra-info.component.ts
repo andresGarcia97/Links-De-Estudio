@@ -22,6 +22,8 @@ export class ExtraInfoComponent implements OnChanges {
 
   ngOnChanges(): void {
 
+    this.components.clear();
+
     if (this.selection !== '' && this.relatedItems.length > 0) {
       this.relatedItems.forEach(relatedItem => this.components.set(relatedItem, references.components.get(relatedItem)!));
       return;
