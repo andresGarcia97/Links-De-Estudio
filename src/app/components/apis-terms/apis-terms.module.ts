@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
-import { ApisTermsComponent } from './apis-terms.component';
-import { CoreModule } from '../core/core.module';
 import { RouterModule, Routes } from '@angular/router';
+import { CoreModule } from '../core/core.module';
+import { ApisTermsComponent } from './apis-terms.component';
 
 const routes: Routes = [
   {

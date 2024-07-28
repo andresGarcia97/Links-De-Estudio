@@ -1,8 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { FuentesComponent } from './fuentes.component';
+import { RouterModule, Routes } from '@angular/router';
 import { FuenteComponent } from './fuente/fuente.component';
-import { Routes, RouterModule } from '@angular/router';
+import { FuentesComponent } from './fuentes.component';
 
 const routes: Routes = [
   {
