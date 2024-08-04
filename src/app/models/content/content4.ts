@@ -5,7 +5,7 @@ import {
     MALAS_PRACTICAS_TRAIN_WECKS, META_CARACTERISTICAS_BACKWARD_AND_BREAKING_CHANGES, META_CARACTERISTICAS_BOILER_PLATE,
     META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM, META_CARACTERISTICAS_META_DATOS, POO_INMUTABILITY, POO_POO, POO_POO_PILARES,
     FRAMEWORKS_FRAMEWORKS, META_CARACTERISTICAS_ANOTTATIONS, META_CARACTERISTICAS_REFLEXION, ESTRATEGIAS_DESARROLLO_TDD,
-    LEYES_KIDLIN, AGILES_DEMING, ESTRATEGIAS_DESARROLLO_DDD, META_CARACTERISTICAS_BACKTRACKING
+    LEYES_KIDLIN, AGILES_DEMING, ESTRATEGIAS_DESARROLLO_DDD, META_CARACTERISTICAS_BACKTRACKING, CONTENEDORES_ARQUITECTURE
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -1104,22 +1104,6 @@ export const CONTENEDORES =
                 '- <strong>docker inspect <em>nombre_contenedor</em></strong>  Muestra la informacion completa del contenedor      ',
                 '- para estos comandos tambien se puede usar los ID de los contenedores ',
             ]),
-        new Item('file',
-            [
-                '<strong>- FROM</strong> Indica el SO base de la imagen ',
-                '<strong>- COPY</strong> Añade archivos del directorio actual a la imagen ',
-                '<strong>- RUN</strong> Ejecuta comandos dentro del contenedor necesarios para crear la imagen ',
-                '<strong>- CMD</strong> Ejecuta comandos directamente en la consola ',
-                '<strong>- LABEL</strong> Son etiquetas del proyecto para dar a conocer información, como licencias ',
-                '<strong>- EXPOSE</strong> Indica que puertos estaran abiertos en la imagen para que la aplicación pueda comunicarse con el host',
-                '<strong>- ENV</strong> Define las variables de entorno, sirve para ayudar en la configuración de la imagen ',
-                '<strong>- ADD</strong> Funciona igual que COPY pero se diferencia a la manera de extraer los archivos de sus ubicaciones ',
-                '<strong>- ENTRYPOINT</strong> Establece el comando principal de la imagen, suele ser el comando iniciador de la aplicación ',
-                '<strong>- VOLUME</strong> Enlaza directorios y/o archivos entre el host y el contenedor, de manera que se puedan persistir y modificar archivos ',
-                '<strong>- USER</strong> Este cambia el usuario del contenedor a uno diferente, el usuario por defecto suele ser root ',
-                '<strong>- WORKDIR</strong> Indica el directorio donde trabajara la aplicación, y se recomienda el uso de rutas absolutas para este ',
-                '<strong>- ONBUILD</strong> Son comandos que se ejecutaran una vez terminada la construcción de la imagen principal ',
-            ]),
         new Item('volumes',
             [
                 '- Un volumen es un directorio o fichero que esta asociado a un contenedor/contenedores, son independientes y no se afectan cuando se destruyen ',
@@ -1148,6 +1132,22 @@ export const CONTENEDORES =
                 '<strong> docker run -d -P --name <em>nombre_contenedor</em> --network <em>nombre_red</em></strong> Especifica una red cuando estos se crean ',
                 '',
                 '<strong> docker network connect --link <em>nombre_contenedor</em>:<em>alias</em> <em>nombre_red</em> <em>nombre_contenedor</em></strong> Tambien se puede cambiar despues de la creación ',
+            ]),
+        new Item('file',
+            [
+                '<strong>- FROM</strong> Indica el SO base de la imagen ',
+                '<strong>- COPY</strong> Añade archivos del directorio actual a la imagen ',
+                '<strong>- RUN</strong> Ejecuta comandos dentro del contenedor necesarios para crear la imagen ',
+                '<strong>- CMD</strong> Ejecuta comandos directamente en la consola ',
+                '<strong>- LABEL</strong> Son etiquetas del proyecto para dar a conocer información, como licencias ',
+                '<strong>- EXPOSE</strong> Indica que puertos estaran abiertos en la imagen para que la aplicación pueda comunicarse con el host',
+                '<strong>- ENV</strong> Define las variables de entorno, sirve para ayudar en la configuración de la imagen ',
+                '<strong>- ADD</strong> Funciona igual que COPY pero se diferencia a la manera de extraer los archivos de sus ubicaciones ',
+                '<strong>- ENTRYPOINT</strong> Establece el comando principal de la imagen, suele ser el comando iniciador de la aplicación ',
+                '<strong>- VOLUME</strong> Enlaza directorios y/o archivos entre el host y el contenedor, de manera que se puedan persistir y modificar archivos ',
+                '<strong>- USER</strong> Este cambia el usuario del contenedor a uno diferente, el usuario por defecto suele ser root ',
+                '<strong>- WORKDIR</strong> Indica el directorio donde trabajara la aplicación, y se recomienda el uso de rutas absolutas para este ',
+                '<strong>- ONBUILD</strong> Son comandos que se ejecutaran una vez terminada la construcción de la imagen principal ',
             ]),
         new Item('compose',
             [
@@ -1219,6 +1219,28 @@ export const CONTENEDORES =
                 ' - que facilitan la administración y la usabilidad, pero al mismo tiempo son atractivas para piratas informaticos',
                 '- Pero al no tener acceso a la raiz, Podman depende de otras herramientas, para tener acceso y analizar los contenedores, no administrarlos ',
                 '- Como muchas herramientas, ambas tienen pros y contras, y como siempre es importante saber en que contexto y que necesidades se necesitan suplir ',
+            ]),
+        new Item(CONTENEDORES_ARQUITECTURE,
+            [
+                '- Los contenedores son unidades estandar que empaqueta todo el codigo y sus dependencias, de manera rapida y confiable, sin importar el entorno ',
+                '- Estos son unidades portatiles y casi todos se basan en Linux, aunque Microsoft ha invertido para que tambien sean compatibles y eficientes en Windows ',
+                '',
+                '<strong>Docker Client</strong> &rarr; Cuando el comando <em>docker container run</em> que esta expuesta por el Docker daemon',
+                '     &uarr;&darr;',
+                '<strong>Docker Daemon</strong> &rarr; Recibe instrucciones mediante un API gRPC que inicia el contenedor con especificaciones <em>OCI</em>',
+                '     &uarr;&darr;',
+                '<strong> containerd</strong>   &rarr; Recibe las instrucciones de alto nivel para crear el contenedor, instrucciones(runc)',
+                '     &uarr;&darr;',
+                '<strong>  shim/runc</strong>    &rarr; <em>runc</em> Construye e inicia el contenedor a bajo nivel, <em>shim</em> se convierte en el proceso principal del contenedor ',
+                '<strong>  container</strong>      ',
+                '',
+                '- Docker en Linux utiliza varios namespaces del Kernel, cada contenedor tiene su propia colección de namespaces aislados ',
+                ' - Identificación del proceso(pid)      - Comunicación entre procesos(ipc)',
+                ' - Red(net)                             - User(user)',
+                ' - Sistema de archivos/montaje(mnt)     - UTS(uts)',
+                '',
+                '- Si los namespaces aportan al aislamiento, tambien existe el Control de Grupos(cgroups) que limitan los recursos compartidos disponibles ',
+                '- Ningun contenedor puede consumir recursos sin control alguno, recursos como CPU, RAM, Network, I/O, evitando posibles ataques DoS'
             ])
     ];
 
