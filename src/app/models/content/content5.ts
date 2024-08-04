@@ -1,7 +1,8 @@
 import {
-    APIS_API_GOVERNANCE, CONOCIMIENTOS_EMPIRICOS_PAIR_PROGRAMMING, META_ESTRUCTURAS_DEPRECATION, META_ESTRUCTURAS_MAQUINA_ESTADOS,
-    META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION, META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL, NUBE_CAP_TEOREMA, NUBE_OBSERVABILIDAD,
-    PATRONES_CLOUD_DESIGN_PATTERNS, PATRONES_PERSISTENCE_PATTERNS
+    APIS_API_GOVERNANCE, CONOCIMIENTOS_EMPIRICOS_PAIR_PROGRAMMING, META_ESTRUCTURAS_DEPRECATION, META_ESTRUCTURAS_ESTRUCTURAS_DATOS,
+    META_ESTRUCTURAS_ESTRUCTURAS_DATOS_2, META_ESTRUCTURAS_MAQUINA_ESTADOS, META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION,
+    META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL, NUBE_CAP_TEOREMA, NUBE_OBSERVABILIDAD, PATRONES_CLOUD_DESIGN_PATTERNS,
+    PATRONES_PERSISTENCE_PATTERNS
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -1156,7 +1157,7 @@ export const META_ESTRUCTURAS =
                 '- Los compiladores de muchos lenguajes se basan en analizadores sintacticos, para analizar el codigo copiado, ',
                 ' - estos a su vez se basan en expresiones regulares para saber si se cumplen con las condiciones del lenguaje ',
             ]),
-        new Item('estructurasDatos',
+        new Item(META_ESTRUCTURAS_ESTRUCTURAS_DATOS,
             [
                 '- Es un concepto general que comparten muchos lenguajes de programación ',
                 '- Que a su vez pueden cambiar y/o tener variaciones segun el lenguaje, dependiendo de cada implementación ',
@@ -1169,30 +1170,30 @@ export const META_ESTRUCTURAS =
                 '',
                 '- Existen más tipos de estructuras, pero estas son de las más comunes y usadas generalmente ',
             ]),
-        new Item('estructurasDatos2',
+        new Item(META_ESTRUCTURAS_ESTRUCTURAS_DATOS_2,
             [
-                '<strong>Arrays:</strong> Colección de elementos de una o varias dimensiones con un tamaño fijo y de un tipo especifico ',
-                '<strong>- Aplicaciones:</strong>  - Resultados de busquedas             - Sistemas GPS                  - Calendarios',
+                '<strong>Arrays:</strong> Colección de elementos de una o varias dimensiones con un tamaño fijo y de un tipo especifico <strong>Aplicaciones:</strong> ',
+                '  - Resultados de busquedas             - Sistemas GPS                  - Calendarios',
                 '',
-                '<strong>Colas:</strong> Siguen la estructura <em>FIFO</em>; primero en entrar, primero en salir ',
-                '<strong>- Aplicaciones:</strong>  - Atención de usuarios                - Mensajeria                    - Impresiones ',
+                '<strong>Colas:</strong> Siguen la estructura <em>FIFO</em>; primero en entrar, primero en salir <strong>Aplicaciones:</strong> ',
+                '  - Atención de usuarios                - Mensajeria                    - Impresiones ',
                 '',
                 '<strong>Listas enlazadas:</strong> Son elementos separados formados de manera lineal, pero cada elemento contiene algun enlace del siguiente elemento, ',
-                ' - tambien pueden enlazarse con el elemento anterior si son del tipo doblemente enlazadas ',
-                '<strong>- Aplicaciones:</strong>  - Reordenación                        - Eliminación                   - Inserción ',
+                '- Tambien pueden enlazarse con el elemento anterior si son del tipo doblemente enlazadas <strong>Aplicaciones:</strong>',
+                '  - Reordenación                        - Eliminación                   - Inserción ',
                 '',
-                '<strong>Pilas:</strong> Sigue la estructura <em>LIFO</em>; ultimo en entrar, primero en salir, aca solo se puede ingresar o eliminar elemento, no permite busquedas ',
-                '<strong>- Aplicaciones:</strong>  - Acciones tipo Undo/Redo             - Evaluación de expresiones     - Backtracing ',
+                '<strong>Pilas:</strong> Sigue la estructura <em>LIFO</em>; ultimo en entrar, primero en salir, solo se puede ingresar/eliminar elementos, no permite busquedas <strong>Aplicaciones:</strong>',
+                '  - Acciones tipo Undo/Redo             - Evaluación de expresiones     - Backtracing ',
                 '',
-                '<strong>Arboles:</strong> Estructura de datos jerararquica, que consta de nodos conectados, y no hay relaciones ciclicas, ',
-                ' - por lo que cada nodo solo tiene un camino de acceso, facilitando las busquedas y las modificaciones ',
-                '<strong>- Aplicaciones:</strong>  - Sistemas de archivos                - Inteligencia Artificial       - Enrutamiento de redes',
-                '                 - Indexación de bases de datos        - Compiladores                  - Compresión de datos  ',
+                '<strong>Arboles:</strong> Estructura de datos jerararquica, que consta de nodos conectados, no tienen relaciones ciclicas ',
+                '- Cada nodo solo tiene un camino de acceso, facilitando las busquedas y las modificaciones <strong>Aplicaciones:</strong>',
+                '  - Sistemas de archivos                - Inteligencia Artificial       - Enrutamiento de redes',
+                '  - Indexación de bases de datos        - Compiladores                  - Compresión de datos  ',
                 '',
-                '<strong>Grafos:</strong> Consta de Vertices(nodos) conectados mediante aristas que pueden ser caminos con una sola dirección o bidireccioneales, ',
-                ' - convirtiendose en Grafos Dirigidos o No dirigidos respectivamente ',
-                '<strong>- Aplicaciones:</strong> - Modelado de relaciones              - Analisis de redes              - Redes sociales',
-                '                - Sistemas de recomendación           - BD No relacionales '
+                '<strong>Grafos:</strong> Consta de Vertices(nodos) conectados mediante aristas que pueden ser caminos con una sola dirección o bidireccioneales ',
+                '- La dirección los convierte en Grafos Dirigidos o No dirigidos respectivamente <strong>Aplicaciones:</strong>',
+                ' - Modelado de relaciones              - Analisis de redes              - Redes sociales',
+                ' - Sistemas de recomendación           - BD No relacionales '
             ]),
         new Item('homoiconicidad',
             [
