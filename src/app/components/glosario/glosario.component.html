@@ -38,7 +38,7 @@
   <div class="card-container">
 
     <a *ngFor="let linkAndFuente of onlyFuentes | filter : search" class="card card-small card-no-size tooltip"
-      target="_blank" rel="noreferrer" [href]="linkAndFuente.referencia">
+      target="_blank" rel="noopener noreferrer" [href]="linkAndFuente.referencia">
       <span>{{linkAndFuente.titulo}}</span>
       <span class="tooltiptext gradient">{{linkAndFuente.componente}}</span>
     </a>
