@@ -1,9 +1,9 @@
 import {
-    ANALISIS_DATA_DATA_ANALISIS_TYPES, ANALISIS_DATA_ELT_ELT, ANALISIS_DATA_REVERSE_ENGINEERING, ANALISIS_DATA_DATA_STORING,
+    ANALISIS_DATA_DATA_ANALISIS_TYPES, ANALISIS_DATA_ETL_ELT, ANALISIS_DATA_REVERSE_ENGINEERING, ANALISIS_DATA_DATA_STORING,
     ANALISIS_DATA_SYSTEMS_INFORMATION, ANALISIS_DATA_THEORY_OF_INFORMATION, HARDWARE_OPERATIVE_SYSTEM, HARDWARE_PROTOCOLS,
     PARADIGMAS_PARADIGMA_DATOS, PEOPLE_PROCESS_BLOAT, PERSISTENCY_ADVANCED_ORM, PERSISTENCY_ADVANCED_SCALING_DB,
     PERSISTENCY_ADVANCED_WAL, PERSISTENCY_DBMS, PERSISTENCY_OPTIMIZE_SLOW_QUERIES, PERSISTENCY_SCHEMAS, ANALISIS_DATA_CHANGE_DATA_CAPTURE,
-    PERSISTENCY_HARD_SOFT_DELETE
+    PERSISTENCY_HARD_SOFT_DELETE, ANALISIS_DATA_GOLDEN_RECORD
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -1449,7 +1449,7 @@ export const ANALISIS_DATA =
                 '  Cumplimiento     Los datos son compatibles        No lo cumple, actualizar       Lo cumple ya que la data   ',
                 '    de ACID        para garantizar la seguridad     y eliminar es complejo         es concurrente             ',
             ]),
-        new Item(ANALISIS_DATA_ELT_ELT,
+        new Item(ANALISIS_DATA_ETL_ELT,
             [
                 '- <strong>ETL</strong> & <strong>ELT</strong> Son 2 enfoques de procesamiento de datos para el analisis de cientos, miles de datos, desde multiples origenes',
                 '- Ambos son secuencias de procesos que separan los datos para su posterior analisis, capturan, procesan y cargan datos para su analisis en 3 pasos ',
@@ -1566,6 +1566,19 @@ export const ANALISIS_DATA =
                 ' - Debido a que estas transiciónes suelen llevar tiempo, es necesario mantener sincronizados los origenes y sus destinos ',
                 '<strong>- Adopción de la Nube:</strong> Las organizaciones se mudan a la nube para reducir costos y mejorar la agilidad y la elasticidad ',
                 ' - Con CDC estas migraciones se garantizan consistentes, y asi las empresas pueden dedicarse en crear nuevas experiencias digitales ',
+            ]),
+        new Item(ANALISIS_DATA_GOLDEN_RECORD,
+            [
+                '- Los usuarios interactuan constantemente con multiples plataformas, estos datos deben ser almacenados y ocasionalmente son duplicados ',
+                '- El resultado son diferentes versiones de un mismo registro, y las diferentes areas tendrian datos incompletos que desencadenan acciones inconexas ',
+                '- Un <em>Golden Record</em> es la consolidación en un solo lugar de todos estos datos, y que esta se considere como la <em>unica fuente de verdad</em>',
+                '- Existen diferentes formas de lograrlo, una de estas es la inserción de una capa adicional que se encargue de gestionar los datos de manera comun ',
+                '',
+                '<strong>Beneficios</strong>',
+                '- Aumentar las ventas al tener una visión unificada del cliente y sus necesidades ',
+                '- La retención de los clientes tambien mejora, al sentir que sus necesidades estan cubiertas y que son visibilizados ',
+                '- El cumplimiento de las regulaciones puede cambiar, y estos se facilitan entre menos lugares sea necesario modificar ',
+                '- La toma de decisiones siempre necesita de información y entre más procesada se encuentre mayor confianza tendra ',
             ])
     ];
 

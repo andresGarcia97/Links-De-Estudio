@@ -109,9 +109,10 @@ export const ANALISIS_DATA_REVERSE_ENGINEERING = 'ingenieriaInversa';
 export const ANALISIS_DATA_DATA_ANALISIS_TYPES = 'dataAnalisisTypes';
 export const ANALISIS_DATA_SYSTEMS_INFORMATION = 'sistemsInformation';
 export const ANALISIS_DATA_DATA_STORING = 'dataStoring';
-export const ANALISIS_DATA_ELT_ELT = 'etl&elt';
+export const ANALISIS_DATA_ETL_ELT = 'etl&elt';
 export const ANALISIS_DATA_THEORY_OF_INFORMATION = 'theoryOfInformation';
 export const ANALISIS_DATA_CHANGE_DATA_CAPTURE = "changeDataCapture";
+export const ANALISIS_DATA_GOLDEN_RECORD = "goldenRecord";
 export const GIT_REBASE_MERGE_SQUASH = 'rebaseMergeSquash';
 export const COMPILACION_GRAFOS = 'grafos';
 export const COMPILACION_STREAMS = 'streams';
@@ -500,9 +501,10 @@ export const ANALISIS_DATA_REF = new Map<string, Referencia>([
     [ANALISIS_DATA_DATA_ANALISIS_TYPES, new Referencia('https://cidei.net/4-tipos-de-analitica-de-datos-que-mejoran-tu-toma-de-decisiones/', 'Tipos de analitica', ANALISIS_DATA_KEY, 'Analitica de datos', '2022/09/26', '2024/06/23')],
     [ANALISIS_DATA_SYSTEMS_INFORMATION, new Referencia('https://concepto.de/sistema-de-informacion/', 'Sistemas de Información', ANALISIS_DATA_KEY, 'Información', '', '2024/06/23')],
     [ANALISIS_DATA_DATA_STORING, new Referencia('https://www.striim.com/blog/data-warehouse-vs-data-lake-vs-data-lakehouse-an-overview/', 'Analisis y almacenamiento de datos', ANALISIS_DATA_KEY, 'Almacenamiento de datos', '2023/08/22')],
-    [ANALISIS_DATA_ELT_ELT, new Referencia('https://aws.amazon.com/es/compare/the-difference-between-etl-and-elt', 'ETL & ELT', ANALISIS_DATA_KEY, 'ETL & ELT', '2024/02/11')],
+    [ANALISIS_DATA_ETL_ELT, new Referencia('https://aws.amazon.com/es/compare/the-difference-between-etl-and-elt', 'ETL & ELT', ANALISIS_DATA_KEY, 'ETL & ELT', '2024/02/11')],
     [ANALISIS_DATA_THEORY_OF_INFORMATION, new Referencia('https://www.ferrovial.com/es/stem/teoria-de-la-informacion/', 'Teoria de la información', ANALISIS_DATA_KEY, 'Teoria de la información', '2024/06/23').addRelatedItem(META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION)],
     [ANALISIS_DATA_CHANGE_DATA_CAPTURE, new Referencia('https://www.confluent.io/learn/change-data-capture/', 'Change Data Capture', ANALISIS_DATA_KEY, 'CDC', '2024/07/28').addRelatedItem(PERSISTENCY_ADVANCED_WAL)],
+    [ANALISIS_DATA_GOLDEN_RECORD, new Referencia('https://www.stibosystems.com/blog/benefits-of-creating-golden-customer-records', 'Golden Record', ANALISIS_DATA_KEY, 'Golden Record', '2024/08/10')],
 ]);
 
 export const PARADIGMAS_KEY = 'Paradigmas';
