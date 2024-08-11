@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { VERSIONAMIENTO_DEPENDENCIES_ORDER, LinkReferencia } from 'src/app/models/linkReferencia';
+import { PERSISTENCY_HARD_SOFT_DELETE, LinkReferencia } from 'src/app/models/linkReferencia';
 
 const references = new LinkReferencia()
 
@@ -17,7 +17,7 @@ export class HomeComponent {
   }
 
   public routeToLastItem(): void {
-    const newItem = VERSIONAMIENTO_DEPENDENCIES_ORDER;
+    const newItem = PERSISTENCY_HARD_SOFT_DELETE;
     const section = references.components.get(newItem)?.component!;
     this.router.navigateByUrl(`/${references.routesAndSections.get(section)}`, { state: { newItem } })
   }

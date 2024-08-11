@@ -2,7 +2,8 @@ import {
     ANALISIS_DATA_DATA_ANALISIS_TYPES, ANALISIS_DATA_ELT_ELT, ANALISIS_DATA_REVERSE_ENGINEERING, ANALISIS_DATA_DATA_STORING,
     ANALISIS_DATA_SYSTEMS_INFORMATION, ANALISIS_DATA_THEORY_OF_INFORMATION, HARDWARE_OPERATIVE_SYSTEM, HARDWARE_PROTOCOLS,
     PARADIGMAS_PARADIGMA_DATOS, PEOPLE_PROCESS_BLOAT, PERSISTENCY_ADVANCED_ORM, PERSISTENCY_ADVANCED_SCALING_DB,
-    PERSISTENCY_ADVANCED_WAL, PERSISTENCY_DBMS, PERSISTENCY_OPTIMIZE_SLOW_QUERIES, PERSISTENCY_SCHEMAS, ANALISIS_DATA_CHANGE_DATA_CAPTURE
+    PERSISTENCY_ADVANCED_WAL, PERSISTENCY_DBMS, PERSISTENCY_OPTIMIZE_SLOW_QUERIES, PERSISTENCY_SCHEMAS, ANALISIS_DATA_CHANGE_DATA_CAPTURE,
+    PERSISTENCY_HARD_SOFT_DELETE
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -1777,6 +1778,25 @@ export const BASES_DE_DATOS =
                 '- No existe ninguna BD que sea deficiente en su forma de trabajar, por lo que estos casos deben ser analizados y realizados meticulosamente',
                 '- La optimización de consultas, debido a su naturaleza ambivalente es un proceso caotico y riesgoso, que debe tener en cuenta beneficios y riesgos ',
                 ' - por igual, cualquier cambio o actualización de este planeador puede romper consultas cuidadosamente diseñadas ',
+            ]),
+        new Item(PERSISTENCY_HARD_SOFT_DELETE,
+            [
+                '- Los datos son uno de los temas más importantes en el desarrollo en general y su gestión es fundamental para tener aplicaciones solidas ',
+                '',
+                '<strong>Soft delete:</strong> En lugar de eliminar permanentemente un registro, se le marca de manera especial con una bandera(flag)',
+                '- Permitiendo que los datos sigan estando disponibles y sean recuperables, solo se inactivan y se omiten de manera logica ',
+                '- Esta bandera suele ser un valor booleano, pero tambien puede ser la fecha de borrado o un estado',
+                '<strong>Ventajas:</strong>                                            <strong>Desventajas:</strong>',
+                '- Integridad de datos                                - Mayor consumo de almacenamiento             ',
+                '- Información historica                              - Necesidad de filtros                        ',
+                '- Permite auditoria                                  - Puede llegar a afectar el rendimiento       ',
+                '- Protección contra eliminación accidental ',
+                '',
+                '<strong>Hard delete:</strong> El enfoque tradicional, los datos se eliminan de forma permanente y no hay forma de recuperarlos, sin un backup',
+                '<strong>Ventajas:</strong>                                            <strong>Desventajas:</strong>',
+                '- Borrado de datos confidenciales                    - Perdidas de información                     ',
+                '- Cumplimiento de normas de privacidad                                                             ',
+                '- Diseños más simples                                                                              ',
             ])
     ];
 

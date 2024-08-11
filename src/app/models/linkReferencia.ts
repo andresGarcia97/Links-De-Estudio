@@ -98,6 +98,7 @@ export const REFACTORING_MANAGE_DEPENDENCIES = 'manageDependencies';
 export const REFACTORING_LEGACY_CODE = 'refactorLegacyCode';
 export const PERSISTENCY_OPTIMIZE_SLOW_QUERIES = 'optimizeSlowQueries';
 export const PERSISTENCY_SCHEMAS = 'schemaPhysicVSschemaLogical';
+export const PERSISTENCY_HARD_SOFT_DELETE = 'hardAndSoftDelete';
 export const PERSISTENCY_DBMS = 'dbms'
 export const HARDWARE_PROTOCOLS = 'protocolsHardware';
 export const HARDWARE_OPERATIVE_SYSTEM = 'operativeSystem';
@@ -707,7 +708,7 @@ export const SMELL_CODES_REF = new Map<string, Referencia>([
 
 export const PERSISTENCY_KEY = 'Bases de Datos'
 export const PERSISTENCY_REF = new Map<string, Referencia>([
-    ['sql', new Referencia('https://www.w3schools.com/sql/default.asp', '¿ Que es SQL ? ', PERSISTENCY_KEY, 'SQL')],
+    ['sql', new Referencia('https://www.w3schools.com/sql/default.asp', '¿ Que es SQL ?', PERSISTENCY_KEY, 'SQL')],
     [PERSISTENCY_DBMS, new Referencia('https://www.astera.com/es/type/blog/database-management-software/', 'Software de Gestion de Bases de Datos', PERSISTENCY_KEY, 'DBMS')],
     ['crud', new Referencia('https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/crud-las-principales-operaciones-de-bases-de-datos/', 'Create, Read, Update, Delete', PERSISTENCY_KEY, 'CRUD')],
     ['dl', new Referencia('https://platzi.com/blog/que-es-ddl-dml-dcl-y-tcl-integridad-referencial/', 'DDL, DML, DCL, TCL', PERSISTENCY_KEY, 'DDL, DML, DCL, TCL')],
@@ -721,6 +722,7 @@ export const PERSISTENCY_REF = new Map<string, Referencia>([
     ['dbDesign', new Referencia('https://dzone.com/articles/what-is-good-database-design', 'Diseño de una BD', PERSISTENCY_KEY, 'Diseño', '2023/11/23')],
     [PERSISTENCY_OPTIMIZE_SLOW_QUERIES, new Referencia('https://digma.ai/how-to-optimize-slow-sql-queries/', 'Optimización de consultas', PERSISTENCY_KEY, 'Optimización', '2024/06/09').addRelatedItem(PERSISTENCY_ADVANCED_ORM).addRelatedItem(PERSISTENCY_ADVANCED_N_1_SELECTS)],
     [PERSISTENCY_SCHEMAS, new Referencia('https://buttondown.email/jaffray/archive/in-codd-we-trust-or-not', 'Esquema Fisico Vs Esquema Logico', PERSISTENCY_KEY, 'Esquemas (Schema)', '2024/07/16')],
+    [PERSISTENCY_HARD_SOFT_DELETE, new Referencia('https://surajsinghbisht054.medium.com/understanding-soft-delete-and-hard-delete-in-software-development-best-practices-and-importance-539a935d71b5', 'Borrado Fisico Vs Logico', PERSISTENCY_KEY, 'Hard/Soft Delete', '2024/08/10')],
 ]);
 
 export const PERSISTENCY_ADVANCED_KEY = 'BD Avanzado'

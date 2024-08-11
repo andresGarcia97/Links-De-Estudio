@@ -1231,7 +1231,7 @@ export const CONTENEDORES =
                 '     &uarr;&darr;',
                 '<strong> containerd</strong>   &rarr; Recibe las instrucciones de alto nivel para crear el contenedor, instrucciones(runc)',
                 '     &uarr;&darr;',
-                '<strong>  shim/runc</strong>    &rarr; <em>runc</em> Construye e inicia el contenedor a bajo nivel, <em>shim</em> se convierte en el proceso principal del contenedor ',
+                '<strong>  shim/runc</strong>   &rarr; <em>runc</em> Construye e inicia el contenedor a bajo nivel, <em>shim</em> se convierte en el proceso principal del contenedor ',
                 '<strong>  container</strong>      ',
                 '',
                 '- Docker en Linux utiliza varios namespaces del Kernel, cada contenedor tiene su propia colección de namespaces aislados ',
