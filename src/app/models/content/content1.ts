@@ -3,7 +3,7 @@ import {
     ANALISIS_DATA_SYSTEMS_INFORMATION, ANALISIS_DATA_THEORY_OF_INFORMATION, HARDWARE_OPERATIVE_SYSTEM, HARDWARE_PROTOCOLS,
     PARADIGMAS_PARADIGMA_DATOS, PEOPLE_PROCESS_BLOAT, PERSISTENCY_ADVANCED_ORM, PERSISTENCY_ADVANCED_SCALING_DB,
     PERSISTENCY_ADVANCED_WAL, PERSISTENCY_DBMS, PERSISTENCY_OPTIMIZE_SLOW_QUERIES, PERSISTENCY_SCHEMAS, ANALISIS_DATA_CHANGE_DATA_CAPTURE,
-    PERSISTENCY_HARD_SOFT_DELETE, ANALISIS_DATA_GOLDEN_RECORD
+    PERSISTENCY_HARD_SOFT_DELETE, ANALISIS_DATA_GOLDEN_RECORD, CALIDAD_IF_ELSE
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -340,6 +340,24 @@ export const CALIDAD =
                 '<strong>Colapso:</strong> Un Jardin descuidado, sera invadido por las malas hierbas, y no importa la calidad, las buenas practicas, el trabajo extra, etc.. ',
                 ' - si no se define una propiedad real, el codigo se pudrira, y dejara de crecer, para ahora mantenerlo funcionando y solucionando errores, ',
                 ' - hasta que sea insostenible y sea necesaria una nueva versión, a la cual le puede pasar lo mismo, si no se aprendieron las lecciones correspondientes',
+            ]),
+        new Item(CALIDAD_IF_ELSE,
+            [
+                '- La <em>complejidad cognitiva</em> suele ser una de las principales razones para <em>refactorizar</em> el codigo, eso incluye las instrucciones de control ',
+                '- Las instrucciones de control <strong>If</strong> y <strong>Else</strong> pueden generar un codigo complejo y dificil de mantener si se usan de manera excesiva ',
+                '',
+                '<strong>Strattegy Pattern:</strong> El patron de estrategia define una familia de algoritmos que puedan ser encapsulables e intercambiables ',
+                '- Este patron es util cuando existen multiples formas de realizar una tarea determinada y pueden ser abstraidas de manera generica ',
+                '',
+                '<strong>Enums:</strong> Las enumeraciones pueden ser usadas como un conjunto de constantes predefinidas, con sus respectivos comportamientos asociados ',
+                '',
+                '<strong>Polimorfismo:</strong> El polimorfismo permite que un objeto se trate como instancias de diferentes tipos',
+                '',
+                '<strong>Expresiones lambda e interfaces funcionales:</strong> Cuando se trata de metodos pequeños y logica simple ',
+                '',
+                '<strong>Command Pattern:</strong> Encapsula peticiones como objetos parametrizados ',
+                '',
+                '<strong>Guard Clauses:</strong> Se cambian las condiciones de manera que se puedan tener retornos anticipados reduciendo las estructuras anidadas ',
             ])
     ];
 

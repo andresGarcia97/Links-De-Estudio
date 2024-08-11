@@ -1,6 +1,6 @@
 import {
-    REFACTORING_LEGACY_CODE, REFACTORING_MANAGE_DEPENDENCIES, SECURITY_AUTHENTICATION_WAYS, SECURITY_LEAST_PRIVILEGE,
-    SECURITY_PROTOCOLOS_SEGURITY, VERSIONAMIENTO_DEPENDENCIES_ORDER
+    REFACTORING_CLEAN_CODE, REFACTORING_LEGACY_CODE, REFACTORING_MANAGE_DEPENDENCIES, SECURITY_AUTHENTICATION_WAYS,
+    SECURITY_LEAST_PRIVILEGE, SECURITY_PROTOCOLOS_SEGURITY, VERSIONAMIENTO_DEPENDENCIES_ORDER
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -479,7 +479,7 @@ export const PRINCIPIOS =
 
 export const REFACTORIZACION =
     [
-        new Item('codigolimpio',
+        new Item(REFACTORING_CLEAN_CODE,
             [
                 '- Menos es Más, por algo existe el principio de <em>KISS</em>',
                 '- Es más facil de entender para otros, permitiendo que su modificacion y su extensión no se vuelvan un dolor de cabeza ',

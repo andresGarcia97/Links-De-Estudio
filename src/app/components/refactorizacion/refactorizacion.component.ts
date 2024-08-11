@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { REFACTORIZACION } from 'src/app/models/content/content3';
-import { BUENAS_PRACTICAS_KEY, CALIDAD_KEY, LinkReferencia, PATRONES_KEY, REFACTORING_REF, SMELL_CODES_KEY, TESTING_KEY } from 'src/app/models/linkReferencia';
+import { BUENAS_PRACTICAS_KEY, CALIDAD_KEY, LinkReferencia, PATRONES_KEY, REFACTORING_REF, SMELL_CODES_KEY, TESTING_KEY }
+from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-refactorizacion',
