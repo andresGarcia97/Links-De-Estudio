@@ -5,7 +5,8 @@ import {
     MALAS_PRACTICAS_TRAIN_WECKS, META_CARACTERISTICAS_BACKWARD_AND_BREAKING_CHANGES, META_CARACTERISTICAS_BOILER_PLATE,
     META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM, META_CARACTERISTICAS_META_DATOS, POO_INMUTABILITY, POO_POO, POO_POO_PILARES,
     FRAMEWORKS_FRAMEWORKS, META_CARACTERISTICAS_ANOTTATIONS, META_CARACTERISTICAS_REFLEXION, ESTRATEGIAS_DESARROLLO_TDD,
-    LEYES_KIDLIN, AGILES_DEMING, ESTRATEGIAS_DESARROLLO_DDD, META_CARACTERISTICAS_BACKTRACKING, CONTENEDORES_ARQUITECTURE
+    LEYES_KIDLIN, AGILES_DEMING, ESTRATEGIAS_DESARROLLO_DDD, META_CARACTERISTICAS_BACKTRACKING, CONTENEDORES_ARQUITECTURE,
+    ARQUITECTURAS_MICRO_SERVICES
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -441,12 +442,14 @@ export const ARQUITECTURAS =
                 '<strong>Eje Y</strong> Descomposición funcional: La aplicación se divide en subsistemas más pequeños, que sean independientes entre si ',
                 ' - Asi se puede escalar solamente las partes que tengan una alta demanda, sin aumentar todo innecesariamente ',
             ]),
-        new Item('servicios',
+        new Item(ARQUITECTURAS_MICRO_SERVICES,
             [
-                '- Se pasa de un nucleo central y robusto a diferentes partes más pequeñas y ligeras ',
+                '- Se pasa del concepto de un nucleo central y robusto a tener diferentes partes más pequeñas, ligeras y debidamente acotadas ',
+                '- Esto permite que sean autonomos y su desarrollo no afecte generalmente el codigo de otros servicios ó funcionalidades ',
+                '- Cada micro servicio esta diseñado de manera que pueda ser especializado, resolviendo problemas particulares con requisitos especificos ',
                 '- Las partes se intercomunican entre si y funcionan de manera separada, aumentando la tolerancia a fallos ',
-                '- Los servicios pueden ser independientes de las tecnologias, además de que tambien se pueden subdividir ',
-                '- Tambien se pueden escalar de manera individual optimizando el uso de recursos ',
+                '- Los servicios pueden ser independientes de las tecnologias, además de que tambien se pueden subdividir en caso de tener gran complejidad ',
+                '- Tambien se pueden escalar/desescalar de manera individual optimizando el uso de recursos ',
             ]),
         new Item('hexagonal',
             [

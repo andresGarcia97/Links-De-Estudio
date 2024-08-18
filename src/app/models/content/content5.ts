@@ -1,7 +1,7 @@
 import {
     APIS_API_GOVERNANCE, CONOCIMIENTOS_EMPIRICOS_PAIR_PROGRAMMING, META_ESTRUCTURAS_DEPRECATION, META_ESTRUCTURAS_ESTRUCTURAS_DATOS,
     META_ESTRUCTURAS_ESTRUCTURAS_DATOS_2, META_ESTRUCTURAS_MAQUINA_ESTADOS, META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION,
-    META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL, NUBE_CAP_TEOREMA, NUBE_OBSERVABILIDAD, PATRONES_CLOUD_DESIGN_PATTERNS,
+    META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL, NUBE_CAP_TEOREMA, NUBE_MICROSERVICES_BEST_PRACTICES, NUBE_OBSERVABILIDAD, PATRONES_CLOUD_DESIGN_PATTERNS,
     PATRONES_PERSISTENCE_PATTERNS
 } from "../linkReferencia";
 import { Item } from "../models";
@@ -764,6 +764,35 @@ export const NUBE =
                 '<strong>Tracing:</strong> Esta definición esta estrechamente relacionada con la definición de <em>request</em> que es considerada una transacción en nuestro sistema,',
                 ' - que tiene un principio y fin (<em>lifecycle</em>), en los sistemas modernos es posible realizar este seguimiento ',
                 ' - a todo lo largo de su proceso, inclusive si pasa a travez de diferentes sistemas, cada salto entre sistema es un <em>span</em>',
+            ]),
+        new Item(NUBE_MICROSERVICES_BEST_PRACTICES,
+            [
+                '- Los microservicios deben ser eficientes escalables y resilientes, para esto se deben tener lineamientos y seguir buenas practicas ',
+                '',
+                '<strong>Responsabilidad unica:</strong> Se deben enfocar en una sola función, la simplicidad mejora la mantenibilidad y la flexibilidad ',
+                '',
+                '<strong>Contenendores:</strong> Los contenedores como Docker, sirven para empaquetar e implementar aplicaciones de forma rapida, coherente y agil ',
+                '',
+                '<strong>Orquestación:</strong> Los contenedores se debe orquestar y relacionar, para que puedan ser escalables y facilmente administrables ',
+                '',
+                '<strong>Resiliencia y Tolerancia a fallos:</strong> Las fallas deben contenerse y manejarse de manera elegante, para evitar fallos criticos ',
+                '- Implemente elementos como reintentos, circuit breakers, contingencias, con el fin de de garantizar la confiabiabilidad ',
+                '',
+                '<strong>Escalabilidad:</strong> Estos deben de crecer de manera independiente y segun las necesidades, ya sea de manera programada o reactiva ',
+                '',
+                '<strong>CI/CD:</strong> Elementos como testing, despliegues, analisis de calidad, builds pueden ser realizados por canales de Integración continua y Despliegue continuo ',
+                '',
+                '<strong>Observabilidad:</strong> Monitorear los micro servicios de manera que el logging y el tracing sean robustas y utiles para entender el comportamiento del sistema ',
+                '',
+                '<strong>Seguridad:</strong> Mecanismos como Autenticación, Autorización, cifrado, para proteger los datos y cumplir con las normas ',
+                '',
+                '<strong>API Gateway:</strong> Gestión y enrutamiento de las solicitudes, además de otras funcionalidades como balanceo de carga y mecanismo de seguridad ',
+                '',
+                '<strong>Stateless:</strong> Evite el manejo de estados en la medida de lo posible, permitiendo que cualquier instancia pueda manejar cualquier petición ',
+                '',
+                '<strong>BD per service:</strong> Cada microservicio debe se independiente, implicando que tenga su propia BD, evitando puntos de falla unicos ',
+                '',
+                '<strong>Event-Driven Architecture:</strong> Un enfoque basado en el manejo de eventos, permitiendo un menor acoplamiento y un manejo asyncronico de los eeventos ',
             ])
     ];
 

@@ -1,5 +1,5 @@
 import {
-    REFACTORING_CLEAN_CODE, REFACTORING_LEGACY_CODE, REFACTORING_MANAGE_DEPENDENCIES, SECURITY_AUTHENTICATION_WAYS,
+    PRINCIPIOS_KISS, REFACTORING_CLEAN_CODE, REFACTORING_LEGACY_CODE, REFACTORING_MANAGE_DEPENDENCIES, SECURITY_AUTHENTICATION_WAYS,
     SECURITY_LEAST_PRIVILEGE, SECURITY_PROTOCOLOS_SEGURITY, VERSIONAMIENTO_DEPENDENCIES_ORDER
 } from "../linkReferencia";
 import { Item } from "../models";
@@ -395,7 +395,7 @@ export const PRINCIPIOS =
                 '<em>I</em> <strong>Segregación de interfaces:</strong> Es mejor tener interfaces especializadas, que interfaces genericas con metodos que generan ruido ',
                 '<em>D</em> <strong>Inversión de dependencias:</strong> Las implementaciones pueden cambiar, pero las abstracciones no, por lo que el sistema se debe basar en estas ',
             ]),
-        new Item('kiss',
+        new Item(PRINCIPIOS_KISS,
             [
                 '- Código entendible, esto en la mayoria de los casos hara que modificar y mantener el codigo sea más simple ',
                 '- Mantener modulos, metodos y clases pequeñas en vez de entidades grandes ',

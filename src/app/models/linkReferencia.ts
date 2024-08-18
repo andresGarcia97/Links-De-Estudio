@@ -57,6 +57,7 @@ export const POO_POO_PILARES = 'pooPilares';
 export const POO_INMUTABILITY = 'inmutability';
 export const ARQUITECTURAS_DEFINICION = 'definicion';
 export const ARQUITECTURAS_CAPAS = 'capas';
+export const ARQUITECTURAS_MICRO_SERVICES = 'microServices';
 export const ARQUITECTURAS_MVP_MVC = 'mvpMvc';
 export const ARQUITECTURAS_EVENT_DRIVEN = 'eventDriven';
 export const ESTRATEGIAS_DESARROLLO_DDD = 'ddd';
@@ -85,6 +86,7 @@ export const PATRONES_PERSISTENCE_PATTERNS = 'persistencePatterns';
 export const PATRONES_CLOUD_DESIGN_PATTERNS = 'patternsCloud';
 export const NUBE_CAP_TEOREMA = 'capTeorema';
 export const NUBE_OBSERVABILIDAD = 'observabilidad';
+export const NUBE_MICROSERVICES_BEST_PRACTICES = 'microservicesBestPractices';
 export const PARADIGMAS_PARADIGMA_DATOS = 'paradigmaDatos';
 export const CONOCIMIENTOS_EMPIRICOS_PAIR_PROGRAMMING = 'pairPrograming';
 export const PEOPLE_PROCESS_BLOAT = 'processBloat';
@@ -126,6 +128,7 @@ export const ANALISIS_KPI = 'KPI';
 export const ANALISIS_ALGORITHMS = 'algorithms';
 export const VERSIONAMIENTO_DEPENDENCIES_ORDER = 'dependenciesOrder';
 export const CALIDAD_IF_ELSE = 'eliminatingIfElse';
+export const PRINCIPIOS_KISS = 'kiss';
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -180,7 +183,7 @@ export const ARQUITECTURAS_REF = new Map<string, Referencia>([
     [ARQUITECTURAS_CAPAS, new Referencia('https://geeks.ms/jkpelaez/2009/05/30/arquitectura-basada-en-capas/', 'Arquitectura a Capas', ARQUITECTURAS_KEY, 'Capas')],
     ['cliente', new Referencia('https://desarrolloweb.com/articulos/arquitectura-cliente-servidor.html', 'Arquitectura Cliente-Servidor', ARQUITECTURAS_KEY, 'Cliente Servidor')],
     ['microServiciosFundamentals', new Referencia('https://medium.com/@kumuthini.program/micro-services-fundamentals-dc0fc369d75e', 'Bases de Micro Servicios', ARQUITECTURAS_KEY, 'Bases de Microservicios')],
-    ['servicios', new Referencia('https://aws.amazon.com/es/microservices/', 'MicroServicios', ARQUITECTURAS_KEY, 'Microservicios')],
+    [ARQUITECTURAS_MICRO_SERVICES, new Referencia('https://aws.amazon.com/es/microservices/', 'Micro servicios', ARQUITECTURAS_KEY, 'Micro servicios', '', '2024/08/17')],
     ['hexagonal', new Referencia('https://medium.com/@edusalguero/arquitectura-hexagonal-59834bb44b7f', 'Hexagonal', ARQUITECTURAS_KEY, 'Hexagonal')],
     ['noHexagonal', new Referencia('https://javiervelezreyes.com/ni-nueva-ni-arquitectura-ni-hexagonal/', 'Ni Nueva, Ni Hexagonal', ARQUITECTURAS_KEY, 'Ni Nueva, Ni hexagonal')],
     ['mvc', new Referencia('https://developer.mozilla.org/es/docs/Glossary/MVC', 'Modelo-Vista-Controlador', ARQUITECTURAS_KEY, 'MVC')],
@@ -470,6 +473,7 @@ export const NUBE_REF = new Map<string, Referencia>([
     ['loadBalancing', new Referencia('https://aws.amazon.com/es/what-is/load-balancing/', 'Balancear la Carga', NUBE_KEY, 'Balanceador de carga')],
     ['latencia', new Referencia('https://blog.bytebytego.com/p/ep110-top-5-strategies-to-reduce#top-strategies-to-reduce-latency', 'Reducir la latencia', NUBE_KEY, 'Latencia', '2024/05/12')],
     [NUBE_OBSERVABILIDAD, new Referencia('https://medium.com/@rcougil/software-observabilidad-logs-m%C3%A9tricas-y-trazabilidad-d5bcca56608d', 'Observabilidad', NUBE_KEY, 'Observabilidad', '2024/05/26')],
+    [NUBE_MICROSERVICES_BEST_PRACTICES, new Referencia('https://www.linkedin.com/posts/nelsonamigoscode_systemdesign-coding-interviewtips-activity-7206618794188750848-lNtj/', 'Micro servicios, buenas practicas', NUBE_KEY, 'Micro servicios Practicas', '', '2024/08/17').addRelatedItem(PRINCIPIOS_KISS).addRelatedItem(ARQUITECTURAS_MICRO_SERVICES).addRelatedItem(ARQUITECTURAS_EVENT_DRIVEN)],
 ]);
 
 export const APIS_KEY = 'APIs';
@@ -662,7 +666,7 @@ export const REQUISITOS_REF = new Map<string, Referencia>([
 export const PRINCIPIOS_KEY = 'Principios';
 export const PRINCIPIOS_REF = new Map<string, Referencia>([
     ['solid', new Referencia('https://profile.es/blog/principios-solid-desarrollo-software-calidad/', 'Principio SOLID', PRINCIPIOS_KEY, 'SOLID')],
-    ['kiss', new Referencia('https://manuelzapata.co/principio-kiss-keep-it-simple-stupid/', 'Mantenlo simple, estupido', PRINCIPIOS_KEY, 'KISS')],
+    [PRINCIPIOS_KISS, new Referencia('https://manuelzapata.co/principio-kiss-keep-it-simple-stupid/', 'Mantenlo simple, estupido', PRINCIPIOS_KEY, 'KISS')],
     ['yagni', new Referencia('https://www.genbeta.com/desarrollo/la-navaja-de-occam-kiss-y-yagni-la-simplicidad-en-el-codigo-no-deberia-ser-solo-postureo-developer', 'No vas a necesitarlo', PRINCIPIOS_KEY, 'YAGNI')],
     ['occam', new Referencia('https://www.genbeta.com/desarrollo/la-navaja-de-occam-kiss-y-yagni-la-simplicidad-en-el-codigo-no-deberia-ser-solo-postureo-developer', 'La navaja de Occam', PRINCIPIOS_KEY, 'Occam')],
     ['dry', new Referencia('https://tantacom.com/principios-diseno-software-kiss-dry-solid/', 'No te repitas a ti mismo', PRINCIPIOS_KEY, 'DRY')],
