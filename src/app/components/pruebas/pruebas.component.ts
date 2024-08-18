@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PRUEBAS } from 'src/app/models/content/content2';
-import { AGILES_KEY, ARQUITECTURAS_KEY, LinkReferencia, REQUISITOS_KEY, TESTING_ADVANCED_KEY, TESTING_REF } from 'src/app/models/linkReferencia';
+import { AGILES_KEY, ARQUITECTURAS_KEY, LinkReferencia, REQUISITOS_KEY, TESTING_ADVANCED_KEY, TESTING_REF }
+from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-pruebas',

@@ -1,6 +1,7 @@
 import {
-    ANALISIS_ALGORITHMS, ANALISIS_KPI, COMPILACION_DECOMPILE, COMPILACION_GRAFOS, COMPILACION_STREAMS, GIT_REBASE_MERGE_SQUASH,
-    METODOLOGIAS_AGILES, METODOLOGIAS_LEAN, TESTING_ADVANCED_ANTI_PATTERNS, TESTING_DATA_CREATION, TESTING_DATA_SUT_DOC
+    ANALISIS_ALGORITHMS, ANALISIS_KPI, COMPILACION_DECOMPILE, COMPILACION_GRAFOS, COMPILACION_INSTRUMENTS, COMPILACION_STREAMS,
+    GIT_REBASE_MERGE_SQUASH, METODOLOGIAS_AGILES, METODOLOGIAS_LEAN, TESTING_ADVANCED_ANTI_PATTERNS, TESTING_DATA_CREATION,
+    TESTING_DATA_SUT_DOC, TESTING_MOCKS
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -101,16 +102,16 @@ export const PRUEBAS =
                 '',
                 '<strong>- Organización:</strong> Generalmente se organizan mediante una tabla que contiene el tipo de prueba, los SUTs y los DOCs ',
             ]),
-        new Item('dobles',
+        new Item(TESTING_MOCKS,
             [
                 '- Son objetos que se comportan de manera igual que el elemento que copian, pero son más simples de manejar ',
                 '- Tambien incluyen mecanismos para verificar los comportamientos que se estan simulando',
                 '',
-                '<strong>- Dummy:</strong> Es un objeto con valore concretos que solo sirve para que se cumplan ciertas precondiciones ',
-                '<strong>- Fake:</strong>  Son funcionales y se comportan igual que en producción, solo que de una manera más simple y limitada ',
-                '<strong>- Stub:</strong>  Es un objeto que ya viene con una información predefinida, en vez de información real e impredecible ',
-                '<strong>- Mock:</strong>  Son objetos que actuan de acuerdo a una llamada en especifico, de lo contrario no funcionaran debidamente ',
-                '<strong>- Spies:</strong> Este objeto se encarga de visualizar todos los procesos y llamados internos, verificando que sean los desados ',
+                '<strong>Dummy:</strong> Es un objeto con valores concretos que solo sirve para que se cumplan ciertas precondiciones, sin un comportamiendo adyacente alguno ',
+                '<strong>Fake:</strong>  Son funcionales y se comportan igual que en producción, solo que de una manera más simple y limitada ',
+                '<strong>Stub:</strong>  Es un objeto que ya viene con una información predefinida, en vez de información real e impredecible ',
+                '<strong>Mock:</strong>  Son objetos que actuan de acuerdo a una llamada en especifico, de lo contrario no funcionaran debidamente para las pruebas ',
+                '<strong>Spies:</strong> Este objeto se encarga de visualizar sin interferir todos los procesos y llamados internos, para verificar que sean los deseados ',
             ]),
         new Item('aaa',
             [
@@ -1073,6 +1074,22 @@ export const COMPILACION =
                 '- Depurar el programa y corregir errores ',
                 '- Modificaciones en el codigo fuente, por motivos de interoperabilidad con otros sistemas',
                 '- Tambien existen motivos poco eticos y/o legales como romper la protección de derechos de autor ',
+            ]),
+        new Item(COMPILACION_INSTRUMENTS,
+            [
+                '- Las bibliotecas y los frameworks son capaces de modificar el codigo en tiempo de ejecución, como forma de implementar sus funciones avanzadas ',
+                '- Spring Boot y Mockito son 2 de estos instrumentos que lo hacen para desarrollo y testing respectivamente ',
+                '- Para que estas puedan lograr su cometido, deben modificar las clases a nivel del bytecode antes de su ejecución ',
+                '- Tambien existen manera de visualizar estos cambios y ver como han modificado las clases antes y despues, usando meta-agentes ',
+                '',
+                '- <strong>Spring</strong> instrumentaliza estas clases mediante la generación de proxies de manera dinamica, generalmente para agregar comportamientos arbitrarios ',
+                ' - a un objeto existente, el JDK solo permite esto con Interfaces, mediante el uso de <em>java.lang.reflect.Proxy</em> ',
+                '- Para superar esta limitación Spring usa un <em>fork</em> de <strong>CGLIB</strong> una biblioteca que emula el comportamiento de <em>Proxy</em>',
+                ' - y que puede ser usada con clases, es un fork debido a que esta libreria ha sido <strong>deprecada</strong> en favor de otras opciones ',
+                '',
+                '- <strong>Mockito</strong> como framework de simulación para el testing, primero verifica si se estan usando mocks para retornar el comportamiento simulado, ',
+                ' - de lo contrario se retornara el comportamiento normal del objeto ',
+                '- Mientras que Proxy y CGLIB genero nuevas clases que extienden de las originales, mockito verifica si la clase esta mockeada y asi determina cual usar ',
             ])
     ];
 

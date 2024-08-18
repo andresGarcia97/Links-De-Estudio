@@ -1,8 +1,8 @@
 import {
     APIS_API_GOVERNANCE, CONOCIMIENTOS_EMPIRICOS_PAIR_PROGRAMMING, META_ESTRUCTURAS_DEPRECATION, META_ESTRUCTURAS_ESTRUCTURAS_DATOS,
     META_ESTRUCTURAS_ESTRUCTURAS_DATOS_2, META_ESTRUCTURAS_MAQUINA_ESTADOS, META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION,
-    META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL, NUBE_CAP_TEOREMA, NUBE_MICROSERVICES_BEST_PRACTICES, NUBE_OBSERVABILIDAD, PATRONES_CLOUD_DESIGN_PATTERNS,
-    PATRONES_PERSISTENCE_PATTERNS
+    META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL, NUBE_CAP_TEOREMA, NUBE_MICROSERVICES_BEST_PRACTICES, NUBE_OBSERVABILIDAD,
+    PATRONES_CLOUD_DESIGN_PATTERNS, PATRONES_PERSISTENCE_PATTERNS
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -792,7 +792,7 @@ export const NUBE =
                 '',
                 '<strong>BD per service:</strong> Cada microservicio debe se independiente, implicando que tenga su propia BD, evitando puntos de falla unicos ',
                 '',
-                '<strong>Event-Driven Architecture:</strong> Un enfoque basado en el manejo de eventos, permitiendo un menor acoplamiento y un manejo asyncronico de los eeventos ',
+                '<strong>Event-Driven Architecture:</strong> Un enfoque basado en el manejo de eventos, permitiendo un menor acoplamiento y un manejo asyncronico de los eventos ',
             ])
     ];
 

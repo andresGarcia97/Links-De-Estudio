@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { NUBE_MICROSERVICES_BEST_PRACTICES, LinkReferencia } from 'src/app/models/linkReferencia';
+import { COMPILACION_INSTRUMENTS, LinkReferencia } from 'src/app/models/linkReferencia';
 
 const references = new LinkReferencia()
 
@@ -17,7 +17,7 @@ export class HomeComponent {
   }
 
   public routeToLastItem(): void {
-    const newItem = NUBE_MICROSERVICES_BEST_PRACTICES;
+    const newItem = COMPILACION_INSTRUMENTS;
     const section = references.components.get(newItem)?.component!;
     this.router.navigateByUrl(`/${references.routesAndSections.get(section)}`, { state: { newItem } })
   }

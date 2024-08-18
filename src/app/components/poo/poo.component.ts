@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { POO } from 'src/app/models/content/content4';
-import { ESTRATEGIAS_DESARROLLO_KEY, LinkReferencia, PARADIGMAS_KEY, PATRONES_KEY, POO_REF, UML_KEY } from 'src/app/models/linkReferencia';
+import { ESTRATEGIAS_DESARROLLO_KEY, LinkReferencia, PARADIGMAS_KEY, PATRONES_KEY, POO_REF, UML_KEY }
+from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-poo',
