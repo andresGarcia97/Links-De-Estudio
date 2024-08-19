@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { COMPILACION_INSTRUMENTS, LinkReferencia } from 'src/app/models/linkReferencia';
+import { AGILES_PRIORITIZATION, LinkReferencia } from 'src/app/models/linkReferencia';
 
 const references = new LinkReferencia()
 
@@ -17,7 +17,7 @@ export class HomeComponent {
   }
 
   public routeToLastItem(): void {
-    const newItem = COMPILACION_INSTRUMENTS;
+    const newItem = AGILES_PRIORITIZATION;
     const section = references.components.get(newItem)?.component!;
     this.router.navigateByUrl(`/${references.routesAndSections.get(section)}`, { state: { newItem } })
   }
