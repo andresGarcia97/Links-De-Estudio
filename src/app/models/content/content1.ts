@@ -3,7 +3,7 @@ import {
     ANALISIS_DATA_SYSTEMS_INFORMATION, ANALISIS_DATA_THEORY_OF_INFORMATION, HARDWARE_OPERATIVE_SYSTEM, HARDWARE_PROTOCOLS,
     PARADIGMAS_PARADIGMA_DATOS, PEOPLE_PROCESS_BLOAT, PERSISTENCY_ADVANCED_ORM, PERSISTENCY_ADVANCED_SCALING_DB,
     PERSISTENCY_ADVANCED_WAL, PERSISTENCY_DBMS, PERSISTENCY_OPTIMIZE_SLOW_QUERIES, PERSISTENCY_SCHEMAS, ANALISIS_DATA_CHANGE_DATA_CAPTURE,
-    PERSISTENCY_HARD_SOFT_DELETE, ANALISIS_DATA_GOLDEN_RECORD, CALIDAD_IF_ELSE
+    PERSISTENCY_HARD_SOFT_DELETE, ANALISIS_DATA_GOLDEN_RECORD, CALIDAD_IF_ELSE, HARDWARE_UTF8
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -541,6 +541,26 @@ export const HARDWARE =
                 '',
                 '<strong>Solución de problemas y depuración:</strong> Un conocimiento profundo del SO ayudara a diagnosticar y solucionar problemas relacionados con fallas del sistema, ',
                 ' - como fugas de memoria, cuellos de botella, entre otros problemas ',
+            ]),
+        new Item(HARDWARE_UTF8,
+            [
+                '- En los años 60 con el nacimiento de ARPANET, era necesario tener un estandar para transmitir la información, en ese entonces se utilizo <em>ASCII</em>',
+                '- <strong>ASCII</strong> es una manera de codificar información en un sistema binario de 7 bits, de manera que cada letra o caracter escrito se convertia en 7 bits ',
+                '- Pero este estandar solo aplicaba para el mundo angloparlante y el uso incipiente del internet prolifero diferentes sistemas de codificación' ,
+                ' - dificultando el envio y la recepción de información, y por consiguiente la comunicacion internacional, como resultado se creo <em>Unicode</em>',
+                '- <Strong>Unicode</strong> Tiene una lista de más de 100.000 caracteres que cubre practicamente todo lo que se puede escribir, sin importar el idioma, ',
+                ' - el problema de tantos caracteres es que se necesitan 32 digitos binarios, de los cuales muchos seran 0 redundantes y un desperdicio ',
+                '- Muchas computadoras toma 8 ceros como el final del mensaje, por lo que podrian cortarse por error, además de que deber ser retrocompatible ',
+                '',
+                '- Aqui interviene <strong>UTF-8</strong> <em>Formato de Transformación Unicode</em> un sistema de codificación para Unicode totalmente reversible ',
+                '- Puede traducir cualquier caracter Unicode a una unica cadena binaria coincidente y tambien traducir la cadena binaria nuevamente a un caracter Unicode ',
+                '- En cuanto al problema de los 32 bits se usa un sistema de codificación de longitud variable, por lo que nunca se enviaran 8 ceros seguidos ',
+                ' - Los caracteres del <em>0-127</em>         utilizan <strong>1 byte</strong>  (110xxxxx)',
+                ' - Los caracteres del <em>128-2047</em>      utilizan <strong>2 bytes</strong> (110xxxxx 10xxxxxx)',
+                ' - Los caracteres del <em>2048-65535</em>    utilizan <strong>3 bytes</strong> (1110xxxx 10xxxxxx 10xxxxxx)',
+                ' - Los caracteres del <em>65536-1114111</em> utilizan <strong>4 bytes</strong> (11110xxx 10xxxxxx 10xxxxxx 10xxxxxx)',
+                '',
+                '- Es el metodo de codificación más comun para internet, predeterminado para <em>HTML5</em>, y formatos para la transferencia de datos como <em>JSON</em> y <em>XML</em> ',
             ])
     ];
 

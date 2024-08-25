@@ -70,7 +70,7 @@ export const META_CARACTERISTICAS_REFLEXION = 'reflexion';
 export const META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM = 'concurrencyAndParallelism';
 export const META_CARACTERISTICAS_BOILER_PLATE = 'boilerPlate';
 export const META_CARACTERISTICAS_BACKTRACKING ='backtracking';
-export const META_CARACTERISTICAS_ANOTTATIONS = 'anottations';
+export const META_CARACTERISTICAS_ANOTATIONS = 'anottations';
 export const LEYES_HYRUM = 'hyrum';
 export const LEYES_LEHMAN = 'lehman';
 export const LEYES_KIDLIN = 'kidlin';
@@ -109,6 +109,7 @@ export const PERSISTENCY_HARD_SOFT_DELETE = 'hardAndSoftDelete';
 export const PERSISTENCY_DBMS = 'dbms'
 export const HARDWARE_PROTOCOLS = 'protocolsHardware';
 export const HARDWARE_OPERATIVE_SYSTEM = 'operativeSystem';
+export const HARDWARE_UTF8 = 'UTF-8';
 export const SECURITY_PROTOCOLOS_SEGURITY = 'protocolosSecurity';
 export const SECURITY_LEAST_PRIVILEGE = 'leastPrivilege';
 export const SECURITY_AUTHENTICATION_WAYS = 'authenticationWays';
@@ -427,7 +428,7 @@ export const META_CARATERISTICAS_REF = new Map<string, Referencia>([
     ['profiling', new Referencia('https://digma.ai/9-best-java-profilers-to-use-in-2024/', 'Profiling', META_CARACTERISTICAS_KEY, 'Profiling', "2024/05/05")],
     ['blockingAndNoBlocking', new Referencia('https://www.geeksforgeeks.org/blocking-and-nonblocking-io-in-operating-system/', 'Operaciones Bloqueantes', META_CARACTERISTICAS_KEY, 'Bloqueos/Sin Bloqueos', '2024/05/12')],
     [META_CARACTERISTICAS_BACKWARD_AND_BREAKING_CHANGES, new Referencia('https://github.com/kedro-org/kedro/wiki/Backwards-compatibility-and-breaking-changes', 'Retro compatibilidad y Breaking changes', META_CARACTERISTICAS_KEY, 'Cambios y compatibilidad', '2024/05/19').addRelatedItem(LEYES_HYRUM)],
-    [META_CARACTERISTICAS_ANOTTATIONS, new Referencia('https://vaheaslanyan7.medium.com/the-java-interview-prep-handbook-50-questions-solved-code-examples-62fed44e3e6a', 'Anotaciones', META_CARACTERISTICAS_KEY, 'Anotaciones', '2024/06/30').addRelatedItem(FRAMEWORKS_FRAMEWORKS).addRelatedItem(META_ESTRUCTURAS_DEPRECATION)],
+    [META_CARACTERISTICAS_ANOTATIONS, new Referencia('https://vaheaslanyan7.medium.com/the-java-interview-prep-handbook-50-questions-solved-code-examples-62fed44e3e6a', 'Anotaciones', META_CARACTERISTICAS_KEY, 'Anotaciones', '2024/06/30').addRelatedItem(FRAMEWORKS_FRAMEWORKS).addRelatedItem(META_ESTRUCTURAS_DEPRECATION)],
 ]);
 
 export const META_ESTRUCTURAS_KEY = 'Meta-Estructuras';
@@ -805,11 +806,12 @@ export const HARDWARE_REF = new Map<string, Referencia>([
     ['falseSharing', new Referencia('https://www.easytechjunkie.com/what-is-false-sharing.htm', 'False Sharing', HARDWARE_KEY, 'False Sharing', '2022/12/29')],
     [HARDWARE_PROTOCOLS, new Referencia('https://www.solarwinds.com/resources/it-glossary/network-protocols', 'Network Protocols', HARDWARE_KEY, 'Network Protocols', '2024/06/11')],
     [HARDWARE_OPERATIVE_SYSTEM, new Referencia('https://medium.com/@oyebisijemil_41110/why-understanding-operating-systems-is-important-for-every-back-end-distributed-systems-engineers-fc8412af4c6c', 'Sistema Operativo', HARDWARE_KEY, 'Sistema Operativo', '2024/06/30')],
+    [HARDWARE_UTF8, new Referencia('https://medium.com/@dmosyan/utf-8-and-the-problem-that-it-solves-a294aed2aa20', 'UTF-8', HARDWARE_KEY, 'UTF-8', '2024/08/24').addRelatedItem(META_CARACTERISTICAS_BACKWARD_AND_BREAKING_CHANGES).addRelatedItem(META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION)],
 ]);
 
 export const WEB_KEY = 'Web';
 export const WEB_REF = new Map<string, Referencia>([
-    ['spa', new Referencia('https://desarrolloweb.com/articulos/que-es-una-spa.html#:~:text=En%20pocas%20palabras%2C%20SPA%20son,html', 'Single Page Aplication', WEB_KEY, 'SPA')],
+    ['spa', new Referencia('https://desarrolloweb.com/articulos/que-es-una-spa.html', 'Single Page Aplication', WEB_KEY, 'SPA')],
     ['pwa', new Referencia('https://www.iebschool.com/blog/progressive-web-apps-analitica-usabilidad/', 'Progressive Web App', WEB_KEY, 'PWA')],
     ['seo', new Referencia('https://www.40defiebre.com/guia-seo/que-es-seo-por-que-necesito', 'Search Engine Optimization', WEB_KEY, 'SEO')],
     ['espacio', new Referencia('https://www.dsigno.es/blog/diseno-grafico/espacios-negativos-en-diseno-grafico', 'El uso del espacio para diseñar', WEB_KEY, 'Espacio Negativo')],

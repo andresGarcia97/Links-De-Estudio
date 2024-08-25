@@ -4,7 +4,7 @@ import {
     FRAMEWORKS_CODE_STRUCTURE, FRAMEWORKS_IOD, LEYES_HYRUM, LEYES_LEHMAN, MALAS_PRACTICAS_ANTI_PATRONES_ARQUITECTURAS,
     MALAS_PRACTICAS_TRAIN_WECKS, META_CARACTERISTICAS_BACKWARD_AND_BREAKING_CHANGES, META_CARACTERISTICAS_BOILER_PLATE,
     META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM, META_CARACTERISTICAS_META_DATOS, POO_INMUTABILITY, POO_POO, POO_POO_PILARES,
-    FRAMEWORKS_FRAMEWORKS, META_CARACTERISTICAS_ANOTTATIONS, META_CARACTERISTICAS_REFLEXION, ESTRATEGIAS_DESARROLLO_TDD,
+    FRAMEWORKS_FRAMEWORKS, META_CARACTERISTICAS_ANOTATIONS, META_CARACTERISTICAS_REFLEXION, ESTRATEGIAS_DESARROLLO_TDD,
     LEYES_KIDLIN, AGILES_DEMING, ESTRATEGIAS_DESARROLLO_DDD, META_CARACTERISTICAS_BACKTRACKING, CONTENEDORES_ARQUITECTURE,
     ARQUITECTURAS_MICRO_SERVICES, AGILES_PRIORITIZATION, AGILES_PLANNING_POKER, AGILES_5S
 } from "../linkReferencia";
@@ -1065,7 +1065,7 @@ export const META_CARACTERISTICAS =
                 ' - aportan beneficios importantes y tienen una razon importante de ser, como para romper la compatibilidad con versiones anteriores',
                 '- Es importante plantearlos, documentarlos y realizarlos de manera adecuada, ya que pueden tener afectaciones desconocidas <em>Ley de Hyrum</em>'
             ]),
-        new Item(META_CARACTERISTICAS_ANOTTATIONS,
+        new Item(META_CARACTERISTICAS_ANOTATIONS,
             [
                 '- Son metadatos que se pueden agregar al codigo para proporcionar información al compilador o al entorno de ejecución ',
                 '- No afecta directamente la funcionalidad del programa, si no que transmiten instrucciones a las herramientas o al marco de trabajo(framework)',
