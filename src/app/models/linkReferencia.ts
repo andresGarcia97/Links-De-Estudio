@@ -135,6 +135,7 @@ export const ANALISIS_ALGORITHMS = 'algorithms';
 export const VERSIONAMIENTO_DEPENDENCIES_ORDER = 'dependenciesOrder';
 export const CALIDAD_IF_ELSE = 'eliminatingIfElse';
 export const PRINCIPIOS_KISS = 'kiss';
+export const CD_CI_CELL_BASED_ARQUITECTURE = "cellBasedArquitecture";
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -830,29 +831,30 @@ export const WEB_REF = new Map<string, Referencia>([
 
 export const NEURO_MARKETING_KEY = 'Neuro-Marketing';
 export const NEURO_MARKETING_REF = new Map<string, Referencia>([
-    ['pestel', new Referencia('https://www.simla.com/blog/analisis-pestel', 'Analisis PESTEL', NEURO_MARKETING_KEY, 'Analisis PESTEL')],
-    ['matrizBcg', new Referencia('https://emprendepyme.net/tipos-de-productos-segun-la-matriz-bcg-y-ejemplos-reales.html', 'Matriz BCG', NEURO_MARKETING_KEY, 'Matriz BCG')],
-    ['b2b-b2c', new Referencia('https://www.uup.es/blog/b2b-y-b2c-que-son-y-que-diferencias-hay-entre-ambos/', 'B2B & B2C', NEURO_MARKETING_KEY, 'B2B & B2C')],
-    ['eric', new Referencia('http://www.azentoconsulting.com/2020/07/21/como-crear-un-nuevo-modelo-de-negocio-o-reformular-nuestro-modelo-de-negocio-ya-existente-la-matriz-eric/', 'Matriz ERIC', NEURO_MARKETING_KEY, 'Matriz ERIC')],
-    ['gamificacionMarketing', new Referencia('https://www.yeeply.com/blog/gamificacion-marketing-estrategias-ejemplos/', 'Gamificacion & Marketing', NEURO_MARKETING_KEY, 'Gamificacion & Marketing')],
-    ['maslow-barret', new Referencia('https://www.danielcolombo.com/los-7-niveles-de-consciencia-personal-y-empresarial-por-daniel-colombo/', 'Maslow & Barret', NEURO_MARKETING_KEY, 'Maslow & Barret')],
-    ['cerebroTriurno', new Referencia('https://www.educaciontrespuntocero.com/recursos/neuroeducacion-cerebro-triuno/', 'Cerebro Triurno', NEURO_MARKETING_KEY, 'Cerebro Triurno')],
-    ['elementValues', new Referencia('https://media.bain.com/elements-of-value/#', 'Elementos de Valor', NEURO_MARKETING_KEY, 'Elementos de Valor')],
-    ['multi&omniCanal', new Referencia('https://www.chakray.com/es/omnicanal-vs-multicanal-cual-es-la-diferencia/#:~:text=En%20una%20soluci%C3%B3n%20multicanal%2C%20el,marca%20de%20una%20manera%20interrumpida', 'Multi & Omni Canalidad', NEURO_MARKETING_KEY, 'Multi & Omni Canalidad')],
-    ['buyerPersona', new Referencia('https://es.semrush.com/blog/como-crear-un-buyer-persona/?kw=&cmp=LM_SRCH_DSA_Blog_ES&label=dsa_pagefeed&Network=g&Device=c&utm_content=641222119375&kwid=dsa-1928812725813&cmpid=19249322807&agpid=145221538700&BU=Core&extid=64565394235&adpos=&gclid=Cj0KCQiAlKmeBhCkARIsAHy7WVvUenuKUoH2ntk2Zr4z9trooaHAHZNblouOpPsYpQ864mIN1GSotFUaAjuiEALw_wcB', 'Buyer Persona', NEURO_MARKETING_KEY, 'Buyer Persona')],
-    ['neuroMarketing', new Referencia('https://rockcontent.com/es/blog/neuromarketing/', 'Neuro Marketing', NEURO_MARKETING_KEY, 'Neuro Marketing')],
-    ['semanticaPragmatica', new Referencia('https://creatividadpersuasiva.cl/semiosis-sintaxis-semantica-y-pragmatica/#coming', 'Semantica & Pragmatica', NEURO_MARKETING_KEY, 'Semantica & Pragmatica')],
-    ['pnl', new Referencia('https://psicologiaymente.com/coach/principios-pnl-programacion-neurolinguistica', 'Programación Neurolinguistica', NEURO_MARKETING_KEY, 'Neurolinguistica')],
-    ['jobsToBeDone', new Referencia('https://rockcontent.com/es/blog/jobs-to-be-done/', 'Trabajos por acabar', NEURO_MARKETING_KEY, 'Trabajos por acabar')],
+    ['pestel', new Referencia('https://www.simla.com/blog/analisis-pestel', 'Analisis PESTEL', NEURO_MARKETING_KEY, 'Analisis PESTEL', '2023/01/29')],
+    ['matrizBcg', new Referencia('https://emprendepyme.net/tipos-de-productos-segun-la-matriz-bcg-y-ejemplos-reales.html', 'Matriz BCG', NEURO_MARKETING_KEY, 'Matriz BCG', '2023/01/29')],
+    ['b2b-b2c', new Referencia('https://www.uup.es/blog/b2b-y-b2c-que-son-y-que-diferencias-hay-entre-ambos/', 'B2B & B2C', NEURO_MARKETING_KEY, 'B2B & B2C', '2023/02/04')],
+    ['eric', new Referencia('http://www.azentoconsulting.com/2020/07/21/como-crear-un-nuevo-modelo-de-negocio-o-reformular-nuestro-modelo-de-negocio-ya-existente-la-matriz-eric/', 'Matriz ERIC', NEURO_MARKETING_KEY, 'Matriz ERIC', '2023/01/29')],
+    ['gamificacionMarketing', new Referencia('https://www.yeeply.com/blog/gamificacion-marketing-estrategias-ejemplos/', 'Gamificacion & Marketing', NEURO_MARKETING_KEY, 'Gamificacion & Marketing', '2023/02/08')],
+    ['maslow-barret', new Referencia('https://www.danielcolombo.com/los-7-niveles-de-consciencia-personal-y-empresarial-por-daniel-colombo/', 'Maslow & Barret', NEURO_MARKETING_KEY, 'Maslow & Barret', '2023/02/12')],
+    ['cerebroTriurno', new Referencia('https://www.educaciontrespuntocero.com/recursos/neuroeducacion-cerebro-triuno/', 'Cerebro Triurno', NEURO_MARKETING_KEY, 'Cerebro Triurno', '2023/02/19')],
+    ['elementValues', new Referencia('https://media.bain.com/elements-of-value/#', 'Elementos de Valor', NEURO_MARKETING_KEY, 'Elementos de Valor', '2023/02/25')],
+    ['multi&omniCanal', new Referencia('https://www.chakray.com/es/omnicanal-vs-multicanal-cual-es-la-diferencia/', 'Multi & Omni Canalidad', NEURO_MARKETING_KEY, 'Multi & Omni Canalidad', '2023/03/07')],
+    ['buyerPersona', new Referencia('https://es.semrush.com/blog/como-crear-un-buyer-persona/', 'Buyer Persona', NEURO_MARKETING_KEY, 'Buyer Persona', '2023/03/11')],
+    ['neuroMarketing', new Referencia('https://rockcontent.com/es/blog/neuromarketing/', 'Neuro Marketing', NEURO_MARKETING_KEY, 'Neuro Marketing', '2023/04/02')],
+    ['semanticaPragmatica', new Referencia('https://creatividadpersuasiva.cl/semiosis-sintaxis-semantica-y-pragmatica/#coming', 'Semantica & Pragmatica', NEURO_MARKETING_KEY, 'Semantica & Pragmatica', '2023/05/22')],
+    ['pnl', new Referencia('https://psicologiaymente.com/coach/principios-pnl-programacion-neurolinguistica', 'Programación Neurolinguistica', NEURO_MARKETING_KEY, 'Neurolinguistica', '2023/05/28')],
+    ['jobsToBeDone', new Referencia('https://rockcontent.com/es/blog/jobs-to-be-done/', 'Trabajos por acabar', NEURO_MARKETING_KEY, 'Trabajos por acabar', '2024/05/02')],
 ]);
 
 export const CD_CI_KEY = 'CD/CI-Infraestructura';
 export const CD_CI_REF = new Map<string, Referencia>([
-    ['cdci', new Referencia('https://www.aplyca.com/es/blog/integracion-entrega-continua-ci-cd', 'Integración continua y Entrega Continua', CD_CI_KEY, 'CD/CI')],
-    ['devops', new Referencia('https://www.paradigmadigital.com/techbiz/que-es-devops-y-sobre-todo-que-no-es-devops/#:~:text=Como%20conclusi%C3%B3n%2C%20qued%C3%A9monos%20con%20una,s%C3%B3lo%20en%20desarrollar%20y%20puedan', 'DevOps', CD_CI_KEY, 'DevOps')],
+    ['cdci', new Referencia('https://www.aplyca.com/es/blog/integracion-entrega-continua-ci-cd', 'Integración continua y Entrega Continua', CD_CI_KEY, 'CD/CI', '', '2024/08/25')],
+    ['devops', new Referencia('https://www.paradigmadigital.com/techbiz/que-es-devops-y-sobre-todo-que-no-es-devops/', 'DevOps', CD_CI_KEY, 'DevOps')],
     ['iascode', new Referencia('https://www.redhat.com/es/topics/automation/what-is-infrastructure-as-code-iac', 'Infraestructura como Codigo', CD_CI_KEY, 'Infraestructura & Codigo')],
     ['stateless-stateful', new Referencia('https://refactorizando.com/stateful-vs-stateless-arquitectura/', 'Stateful VS Stateless', CD_CI_KEY, 'Stateless VS Stateful')],
     ['deploymentPatterns', new Referencia('https://newsletter.techworld-with-milan.com/p/what-are-deployment-patterns', 'Patrones de Despliegue', CD_CI_KEY, 'Patrones de Despliegue')],
     ['industrialDevops', new Referencia('https://itrevolution.com/articles/what-is-industrial-devops/', 'Industrial DevOps', CD_CI_KEY, 'Industrial DevOps', '2023/11/21')],
     ['pipelines', new Referencia('https://semaphoreci.com/blog/cicd-pipeline', 'Pipelines', CD_CI_KEY, '¿ Que es un Pipeline ?', '2023/12/26')],
+    [CD_CI_CELL_BASED_ARQUITECTURE, new Referencia('https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of-impact-with-cell-based-architecture/what-is-a-cell-based-architecture.html', 'Cell Based Arquitecture', CD_CI_KEY, 'Cell Based Arquitecture', '2024/08/25')],
 ]);

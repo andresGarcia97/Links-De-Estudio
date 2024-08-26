@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PEOPLE } from 'src/app/models/content/content1';
-import { CONOCIMIENTO_EMPIRICO_KEY, ESTRATEGIAS_DESARROLLO_KEY, LEYES_KEY, LinkReferencia, METODOLOGIAS_KEY, PEOPLE_REF, USER_HISTORIES_KEY } from 'src/app/models/linkReferencia';
+import { CONOCIMIENTO_EMPIRICO_KEY, ESTRATEGIAS_DESARROLLO_KEY, LEYES_KEY, LinkReferencia, METODOLOGIAS_KEY, PEOPLE_REF, USER_HISTORIES_KEY }
+from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-personas',
