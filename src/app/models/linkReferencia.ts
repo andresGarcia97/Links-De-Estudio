@@ -121,6 +121,7 @@ export const ANALISIS_DATA_ETL_ELT = 'etl&elt';
 export const ANALISIS_DATA_THEORY_OF_INFORMATION = 'theoryOfInformation';
 export const ANALISIS_DATA_CHANGE_DATA_CAPTURE = "changeDataCapture";
 export const ANALISIS_DATA_GOLDEN_RECORD = "goldenRecord";
+export const ANALISIS_DATA_BATCH_VS_STREAM = "batchVsStreamProcessing";
 export const GIT_REBASE_MERGE_SQUASH = 'rebaseMergeSquash';
 export const COMPILACION_GRAFOS = 'grafos';
 export const COMPILACION_STREAMS = 'streams';
@@ -523,6 +524,7 @@ export const ANALISIS_DATA_REF = new Map<string, Referencia>([
     [ANALISIS_DATA_THEORY_OF_INFORMATION, new Referencia('https://www.ferrovial.com/es/stem/teoria-de-la-informacion/', 'Teoria de la información', ANALISIS_DATA_KEY, 'Teoria de la información', '2024/06/23').addRelatedItem(META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION)],
     [ANALISIS_DATA_CHANGE_DATA_CAPTURE, new Referencia('https://www.confluent.io/learn/change-data-capture/', 'Change Data Capture', ANALISIS_DATA_KEY, 'CDC', '2024/07/28').addRelatedItem(PERSISTENCY_ADVANCED_WAL)],
     [ANALISIS_DATA_GOLDEN_RECORD, new Referencia('https://www.stibosystems.com/blog/benefits-of-creating-golden-customer-records', 'Golden Record', ANALISIS_DATA_KEY, 'Golden Record', '2024/08/10')],
+    [ANALISIS_DATA_BATCH_VS_STREAM, new Referencia('https://estuary.dev/batch-processing-vs-stream-processing/', 'Batch Vs Stream Processing', ANALISIS_DATA_KEY, 'Batch Vs Stream', '2024/08/31')],
 ]);
 
 export const PARADIGMAS_KEY = 'Paradigmas';

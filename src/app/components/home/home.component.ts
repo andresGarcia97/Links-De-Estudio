@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { CD_CI_CELL_BASED_ARQUITECTURE, LinkReferencia } from 'src/app/models/linkReferencia';
+import { ANALISIS_DATA_BATCH_VS_STREAM, LinkReferencia } from 'src/app/models/linkReferencia';
 
 const references = new LinkReferencia()
 
@@ -17,7 +17,7 @@ export class HomeComponent {
   }
 
   public routeToLastItem(): void {
-    const newItem = CD_CI_CELL_BASED_ARQUITECTURE;
+    const newItem = ANALISIS_DATA_BATCH_VS_STREAM;
     const section = references.components.get(newItem)?.component!;
     this.router.navigateByUrl(`/${references.routesAndSections.get(section)}`, { state: { newItem } })
   }
