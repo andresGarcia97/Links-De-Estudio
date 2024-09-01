@@ -1,7 +1,7 @@
 import {
-    ANALISIS_ALGORITHMS, ANALISIS_KPI, COMPILACION_DECOMPILE, COMPILACION_GRAFOS, COMPILACION_INSTRUMENTS, COMPILACION_STREAMS,
-    GIT_REBASE_MERGE_SQUASH, METODOLOGIAS_AGILES, METODOLOGIAS_LEAN, TESTING_ADVANCED_ANTI_PATTERNS, TESTING_DATA_CREATION,
-    TESTING_DATA_SUT_DOC, TESTING_MOCKS
+    ANALISIS_ALGORITHMS, ANALISIS_KPI, ANALISIS_QUEUES_SYSTEM_DESIGN, COMPILACION_DECOMPILE, COMPILACION_GRAFOS,
+    COMPILACION_INSTRUMENTS, COMPILACION_STREAMS, GIT_REBASE_MERGE_SQUASH, METODOLOGIAS_AGILES, METODOLOGIAS_LEAN,
+    TESTING_ADVANCED_ANTI_PATTERNS, TESTING_DATA_CREATION, TESTING_DATA_SUT_DOC, TESTING_MOCKS
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -451,6 +451,29 @@ export const ANALISIS =
                 '',
                 '<strong>- Backtracking:</strong> Ayudan a explorar multiples opciones hasta encontrar la mejor solución, probando diferentes caminos, si estos non funcionan ',
                 ' - se devuelven hasta un punto de guardado previo e intentan con otra opción, y asi sucesivamente hasta que se encuentre la solución ó se agoten los recursos ',
+            ]),
+        new Item(ANALISIS_QUEUES_SYSTEM_DESIGN,
+            [
+                '<strong>Arquitectura Basica:</strong> Una cola de mensajes es un componente duradero y que soporta una comunicación asyncronica ',
+                '- El funcionamiento basico es simple, un servicio de entrada(productor ó publicador) generan mensajes en la cola ',
+                ' - y un servicio de salida(consumidor ó suscriptor) se conecta, procesa y borra los mensajes de manera pertinente ',
+                '- En un diseño más real, suelen haber <strong>n-m</strong> productores y consumidores conectados a una o varias colas ',
+                '',
+                '<strong>Beneficios:</strong>',
+                '- Los eventos ó mensajes recibidos, pueden ser procesados de manera asyncronica ',
+                '- El productor o el consumidor pueden fallar temporalmente, sin generar errores importantes en el procesamiento de los mensajes ',
+                '- La escalabilidad es relativamente facil, basta con agregar/reducir publicadores ó suscriptores de acuerdo a la oferta y la demanda ',
+                '',
+                '<strong>Tipos de colas:</strong>',
+                '<strong>- FIFO(First In, First Out):</strong> Los mensajes se procesan en el orden de llegada, esto es relevante en sistemas donde el orden es importante ',
+                '<strong>- Con Prioridad:</strong> Los mensajes pueden contener prioridades, para ser procesados antes que otros ',
+                '<strong>- Push:</strong> La cola envian los mensajes directamente a los consumidores ',
+                '<strong>- Pull:</strong> La cola espera a que los mensajes sean consumidos ',
+                '',
+                '<strong>Ejemplos:</strong>',
+                '<strong>- RabbitMQ:</strong> Una cola versatil para muchos casos de uso general; Consumidores inteligentes, cola estupida ',
+                '<strong>- Kafka:</strong> Diseñado para un alto rendimiento y transmisión de datos en tiempo real; Consumidores estupidos, cola inteligente ',
+                '<strong>- Amazon SQS:</strong> Servicio administrado y ofrecido por AWS, confiable y con diversos tipos de colas',
             ])
     ];
 

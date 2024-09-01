@@ -95,6 +95,7 @@ export const CONOCIMIENTOS_EMPIRICOS_PAIR_PROGRAMMING = 'pairPrograming';
 export const PEOPLE_PROCESS_BLOAT = 'processBloat';
 export const METODOLOGIAS_AGILES = 'agiles';
 export const METODOLOGIAS_LEAN = 'lean';
+export const APIS_REST_VS_MESSAGING = 'restVsMessaging';
 export const APIS_API_GOVERNANCE = 'apiGovernance';
 export const PERSISTENCY_ADVANCED_SCALING_DB = 'scalingDataBases';
 export const PERSISTENCY_ADVANCED_ORM = 'orm'
@@ -133,6 +134,7 @@ export const TESTING_DATA_CREATION = 'creationDataTesting';
 export const TESTING_ADVANCED_ANTI_PATTERNS = 'tdd-antipatterns';
 export const ANALISIS_KPI = 'KPI';
 export const ANALISIS_ALGORITHMS = 'algorithms';
+export const ANALISIS_QUEUES_SYSTEM_DESIGN = 'queueSystemDesign';
 export const VERSIONAMIENTO_DEPENDENCIES_ORDER = 'dependenciesOrder';
 export const CALIDAD_IF_ELSE = 'eliminatingIfElse';
 export const PRINCIPIOS_KISS = 'kiss';
@@ -180,6 +182,7 @@ export const ANALISIS_REF = new Map<string, Referencia>([
     ['opinionated-no', new Referencia('https://www.baeldung.com/cs/opinionated-software-design', 'Diseño con & sin opiniones', ANALISIS_KEY, 'Diseño con/sin opiniones', '2023/11/11')],
     ['codingEasyPart', new Referencia('https://swizec.com/blog/coding-is-the-easy-part/', 'Codificar es la parte facil', ANALISIS_KEY, 'Codificar es facil', '2023/12/11')],
     [ANALISIS_ALGORITHMS, new Referencia('https://medium.com/@zgokceaynaci/a-journey-through-the-world-of-algorithms-554bfffcee97', 'Algoritmos', ANALISIS_KEY, 'Algoritmos', '2024/07/27').addRelatedItem(COMPILACION_GRAFOS).addRelatedItem(META_CARACTERISTICAS_BACKTRACKING)],
+    [ANALISIS_QUEUES_SYSTEM_DESIGN, new Referencia('https://levelup.gitconnected.com/message-queues-in-system-design-0440a1221023', 'Message Queues in System Design', ANALISIS_KEY, 'Message Queues', '2024/09/01').addRelatedItem(META_ESTRUCTURAS_ESTRUCTURAS_DATOS_2).addRelatedItem(APIS_REST_VS_MESSAGING)],
 ]);
 
 export const ARQUITECTURAS_KEY = 'Arquitecturas';
@@ -504,7 +507,7 @@ export const APIS_REF = new Map<string, Referencia>([
     ['uri', new Referencia('https://www.techtarget.com/whatis/definition/URI-Uniform-Resource-Identifier', 'Uniform Resource Identifier', APIS_KEY, 'URI', '2023/11/03')],
     ['apiTesting', new Referencia('https://blog.bytebytego.com/p/ep83-explaining-9-types-of-api-testing#%C2%A7explaining-types-of-api-testing', 'API Testing', APIS_KEY, 'Testing in APIs', '2023/11/13')],
     ['apiIdempotencia', new Referencia('https://blog.bitsrc.io/design-an-idempotent-api-in-2024-d4a3cf8d8bf2', 'APIs Idempotentes', APIS_KEY, 'Idempotencia', '2024/02/17')],
-    ['restVsMessaging', new Referencia('https://solace.com/blog/experience-awesomeness-event-driven-microservices/', 'REST VS Messaging & Microservicios', APIS_KEY, 'REST VS Messaging', '2024/03/15')],
+    [APIS_REST_VS_MESSAGING, new Referencia('https://solace.com/blog/experience-awesomeness-event-driven-microservices/', 'REST VS Messaging & Microservicios', APIS_KEY, 'REST VS Messaging', '2024/03/15')],
     [APIS_API_GOVERNANCE, new Referencia('https://swagger.io/resources/articles/best-practices-in-api-governance/', 'Gobernanza', APIS_KEY, 'Gobernanza', '2024/06/01')],
 ]);
 

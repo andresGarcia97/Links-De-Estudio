@@ -1,8 +1,8 @@
 import {
-    APIS_API_GOVERNANCE, CONOCIMIENTOS_EMPIRICOS_PAIR_PROGRAMMING, META_ESTRUCTURAS_DEPRECATION, META_ESTRUCTURAS_ESTRUCTURAS_DATOS,
-    META_ESTRUCTURAS_ESTRUCTURAS_DATOS_2, META_ESTRUCTURAS_MAQUINA_ESTADOS, META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION,
-    META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL, NUBE_CAP_TEOREMA, NUBE_MICROSERVICES_BEST_PRACTICES, NUBE_OBSERVABILIDAD,
-    PATRONES_CLOUD_DESIGN_PATTERNS, PATRONES_PERSISTENCE_PATTERNS
+    APIS_API_GOVERNANCE, APIS_REST_VS_MESSAGING, CONOCIMIENTOS_EMPIRICOS_PAIR_PROGRAMMING, META_ESTRUCTURAS_DEPRECATION,
+    META_ESTRUCTURAS_ESTRUCTURAS_DATOS, META_ESTRUCTURAS_ESTRUCTURAS_DATOS_2, META_ESTRUCTURAS_MAQUINA_ESTADOS,
+    META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION, META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL, NUBE_CAP_TEOREMA,
+    NUBE_MICROSERVICES_BEST_PRACTICES, NUBE_OBSERVABILIDAD, PATRONES_CLOUD_DESIGN_PATTERNS, PATRONES_PERSISTENCE_PATTERNS
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -1077,7 +1077,7 @@ export const APIS =
                 '<strong>- Autenticación y Autorización:</strong> Toda solicitud debe ser debidamene autorizada y contar ',
                 ' - con una autenticación previa, sin depender de los datos de sesion y al mismo tiempo ser eficiente ',
             ]),
-        new Item('restVsMessaging',
+        new Item(APIS_REST_VS_MESSAGING,
             [
                 '- Los microservicios han llegado para quedarse, ampliamente adoptados debidos a las ventajas que ofrecen',
                 '- Aun asi, para un correcto funcionamiento, deben poder comunicarse entre si, convirtiendo esta forma en un aspecto critico ',
