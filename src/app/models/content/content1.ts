@@ -3,7 +3,8 @@ import {
     ANALISIS_DATA_SYSTEMS_INFORMATION, ANALISIS_DATA_THEORY_OF_INFORMATION, HARDWARE_OPERATIVE_SYSTEM, HARDWARE_PROTOCOLS,
     PARADIGMAS_PARADIGMA_DATOS, PEOPLE_PROCESS_BLOAT, PERSISTENCY_ADVANCED_ORM, PERSISTENCY_ADVANCED_SCALING_DB,
     PERSISTENCY_ADVANCED_WAL, PERSISTENCY_DBMS, PERSISTENCY_OPTIMIZE_SLOW_QUERIES, PERSISTENCY_SCHEMAS, ANALISIS_DATA_CHANGE_DATA_CAPTURE,
-    PERSISTENCY_HARD_SOFT_DELETE, ANALISIS_DATA_GOLDEN_RECORD, CALIDAD_IF_ELSE, HARDWARE_UTF8, ANALISIS_DATA_BATCH_VS_STREAM
+    PERSISTENCY_HARD_SOFT_DELETE, ANALISIS_DATA_GOLDEN_RECORD, CALIDAD_IF_ELSE, HARDWARE_UTF8, ANALISIS_DATA_BATCH_VS_STREAM,
+    WEB_SEO
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -581,12 +582,13 @@ export const WEB =
                 '- Aunque necesitan internet para actualizaciones de la información, tambien puede funcionar sin este ',
                 '- Bastante acorde con el enfoque mobile-first, que le da prioridad al movil que al escritorio ',
             ]),
-        new Item('seo',
+        new Item(WEB_SEO,
             [
+                '- Los motores de busqueda rastrean el contenido en la web de manera continua para presentar mejores resultados y tener mejores busquedas ',
                 '- La indexación de contenido es una gran herramienta para buscar lo que se necesita ',
                 '- El contenido de calidad es una de las mejores formas de aumentar el trafico del sitio web ',
                 '- La accesibilidad al contenido y la experiencia del usuario tambien son importantes ',
-                '- Saber como funcionan los motores de busqueda, permite optimizar el sitio para que sea más "visible" para estos ',
+                '- Saber como funcionan los motores de busqueda, permite optimizar el sitio para que sea más <strong>visible</strong> para estos ',
             ]),
         new Item('espacio',
             [

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { WEB } from 'src/app/models/content/content1';
-import { BUENAS_PRACTICAS_KEY, CD_CI_KEY, FRAMEWORKS_KEY, LinkReferencia, NUBE_KEY, SECURITY_KEY, WEB_REF } from 'src/app/models/linkReferencia';
+import { BUENAS_PRACTICAS_KEY, CD_CI_KEY, FRAMEWORKS_KEY, LinkReferencia, NUBE_KEY, SECURITY_KEY, WEB_REF }
+from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-web',

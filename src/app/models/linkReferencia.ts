@@ -103,6 +103,7 @@ export const PERSISTENCY_ADVANCED_N_1_SELECTS = 'n+1selects';
 export const PERSISTENCY_ADVANCED_WAL = 'writeAheadLogs';
 export const REFACTORING_CLEAN_CODE = 'cleanCodeRefactoring';
 export const REFACTORING_MANAGE_DEPENDENCIES = 'manageDependencies';
+export const REFACTORING_GOOD_AND_BAD_PRACTICES = 'goodAndBadPracticesRefactoring';
 export const REFACTORING_LEGACY_CODE = 'refactorLegacyCode';
 export const PERSISTENCY_OPTIMIZE_SLOW_QUERIES = 'optimizeSlowQueries';
 export const PERSISTENCY_SCHEMAS = 'schemaPhysicVSschemaLogical';
@@ -139,6 +140,7 @@ export const VERSIONAMIENTO_DEPENDENCIES_ORDER = 'dependenciesOrder';
 export const CALIDAD_IF_ELSE = 'eliminatingIfElse';
 export const PRINCIPIOS_KISS = 'kiss';
 export const CD_CI_CELL_BASED_ARQUITECTURE = "cellBasedArquitecture";
+export const WEB_SEO = "seo";
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -660,10 +662,11 @@ export const REFACTORING_REF = new Map<string, Referencia>([
     ['cuandorefactorizar', new Referencia('https://refactoring.guru/es/refactoring/when', '¿ Cuando refactorizar ?', REFACTORING_KEY, '¿ Cuando ?')],
     ['comorefactorizar', new Referencia('https://refactoring.guru/es/refactoring/how-to', '¿ Como refactorizar ? ', REFACTORING_KEY, '¿ Como ?')],
     ['tecnicasRefactoring', new Referencia('https://refactoring.guru/es/refactoring/techniques', 'Tecnicas para refactorizar', REFACTORING_KEY, 'Tecnicas')],
-    ['cuandoNoRefactorizar', new Referencia('https://www.digite.com/es/agile/refactorizacion-en-agil/#:~:text=%C2%BFQu%C3%A9%20es%20la%20refactorizaci%C3%B3n%3F,el%20comportamiento%20observable%2C%20del%20c%C3%B3digo.', 'Cuando No Refactorizar', REFACTORING_KEY, 'Cuando No', '2023/01/22')],
+    ['cuandoNoRefactorizar', new Referencia('https://www.digite.com/es/agile/refactorizacion-en-agil/', 'Cuando No Refactorizar', REFACTORING_KEY, 'Cuando No', '2023/01/22')],
     [REFACTORING_LEGACY_CODE, new Referencia('https://jesuslc.com/2020/11/21/tecnicas-para-mantener-al-legacy-code-bajo-control/', 'Refactorizar el Legacy Code', REFACTORING_KEY, 'Refactor en Legacy code', '2023/02/05')],
     ['manejarDeudaTecnica', new Referencia('https://newsletter.techworld-with-milan.com/p/how-to-deal-with-technical-debt', 'Manejo de la deuda tecnica', REFACTORING_KEY, '¿ Como manejarla ?', '2024/05/12')],
     [REFACTORING_MANAGE_DEPENDENCIES, new Referencia('https://levelup.gitconnected.com/world-of-dependencies-4639100d16ef', 'Manejo de las dependencias', REFACTORING_KEY, 'Dependencias', '2024/06/09').addRelatedItem(META_ESTRUCTURAS_MAQUINA_ESTADOS).addRelatedItem(ARQUITECTURAS_CAPAS).addRelatedItem(FRAMEWORKS_IOD)],
+    [REFACTORING_GOOD_AND_BAD_PRACTICES, new Referencia('https://www.builder.io/blog/good-vs-bad-refactoring', 'Buenas & Malas practicas', REFACTORING_KEY, 'Buenas & Malas practicas', '2024/09/08').addRelatedItem(WEB_SEO).addRelatedItem(PRINCIPIOS_KISS)],
 ]);
 
 export const REQUISITOS_KEY = 'Requisitos';
@@ -819,7 +822,7 @@ export const WEB_KEY = 'Web';
 export const WEB_REF = new Map<string, Referencia>([
     ['spa', new Referencia('https://desarrolloweb.com/articulos/que-es-una-spa.html', 'Single Page Aplication', WEB_KEY, 'SPA')],
     ['pwa', new Referencia('https://www.iebschool.com/blog/progressive-web-apps-analitica-usabilidad/', 'Progressive Web App', WEB_KEY, 'PWA')],
-    ['seo', new Referencia('https://www.40defiebre.com/guia-seo/que-es-seo-por-que-necesito', 'Search Engine Optimization', WEB_KEY, 'SEO')],
+    [WEB_SEO, new Referencia('https://www.40defiebre.com/guia-seo/que-es-seo-por-que-necesito', 'Search Engine Optimization', WEB_KEY, 'SEO')],
     ['espacio', new Referencia('https://www.dsigno.es/blog/diseno-grafico/espacios-negativos-en-diseno-grafico', 'El uso del espacio para diseñar', WEB_KEY, 'Espacio Negativo')],
     ['diseno', new Referencia('https://seocom.agency/es/blog/diseno-grafico-web/', 'Diseño grafico', WEB_KEY, 'Diseño Grafico')],
     ['interfacesUsuario', new Referencia('https://pensamientodigital.wordpress.com/diseno-de-interfases-de-usuario/', 'Interfaces de usuario', WEB_KEY, 'UI')],
