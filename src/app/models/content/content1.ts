@@ -4,7 +4,7 @@ import {
     PARADIGMAS_PARADIGMA_DATOS, PEOPLE_PROCESS_BLOAT, PERSISTENCY_ADVANCED_ORM, PERSISTENCY_ADVANCED_SCALING_DB,
     PERSISTENCY_ADVANCED_WAL, PERSISTENCY_DBMS, PERSISTENCY_OPTIMIZE_SLOW_QUERIES, PERSISTENCY_SCHEMAS, ANALISIS_DATA_CHANGE_DATA_CAPTURE,
     PERSISTENCY_HARD_SOFT_DELETE, ANALISIS_DATA_GOLDEN_RECORD, CALIDAD_IF_ELSE, HARDWARE_UTF8, ANALISIS_DATA_BATCH_VS_STREAM,
-    WEB_SEO
+    WEB_SEO, PERSISTENCY_DB_TYPES
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -547,7 +547,7 @@ export const HARDWARE =
             [
                 '- En los años 60 con el nacimiento de ARPANET, era necesario tener un estandar para transmitir la información, en ese entonces se utilizo <em>ASCII</em>',
                 '- <strong>ASCII</strong> es una manera de codificar información en un sistema binario de 7 bits, de manera que cada letra o caracter escrito se convertia en 7 bits ',
-                '- Pero este estandar solo aplicaba para el mundo angloparlante y el uso incipiente del internet prolifero diferentes sistemas de codificación' ,
+                '- Pero este estandar solo aplicaba para el mundo angloparlante y el uso incipiente del internet prolifero diferentes sistemas de codificación',
                 ' - dificultando el envio y la recepción de información, y por consiguiente la comunicacion internacional, como resultado se creo <em>Unicode</em>',
                 '- <Strong>Unicode</strong> Tiene una lista de más de 100.000 caracteres que cubre practicamente todo lo que se puede escribir, sin importar el idioma, ',
                 ' - el problema de tantos caracteres es que se necesitan 32 digitos binarios, de los cuales muchos seran 0 redundantes y un desperdicio ',
@@ -1899,6 +1899,46 @@ export const BASES_DE_DATOS =
                 '- Borrado de datos confidenciales                    - Perdidas de información                     ',
                 '- Cumplimiento de normas de privacidad                                                             ',
                 '- Diseños más simples                                                                              ',
+            ]),
+        new Item(PERSISTENCY_DB_TYPES,
+            [
+                '- las bases de datos son un componente critico para cualquier sistema, por eso necesario escoger la mejor opción',
+                '',
+                '<strong>Blockchain:</strong>                                                        <strong>Vectores:</strong>',
+                '- Garantizan la integridad y la seguridad de los datos             - Optimizadas por almacenamiento de vectores',
+                '- Soporta aplicaciones descentralizadas                            - Soporta Modelos de IA ',
+                '<em>- Casos de uso:</em> Registros transaccionales                          <em>- Casos de uso:</em> Reconocimiento de imagenes ',
+                '<em>- Ejemplos:</em> BigchainDB, Chainbase                                  <em>- Ejemplos:</em> Milvus, Singlestore, Astra',
+                '',
+                '<strong>SQL:</strong>                                                               <strong>Grafos:</strong>',
+                '- Información estructurada                                         - Almacenamiento en Nodos y vertices',
+                '- Cumple el esquema ACID, apropiado para transacciones             - Optimizadas para consultas complejas ',
+                '<em>- Casos de uso:</em> Consultas complejas y sistemas financieros         <em>- Casos de uso:</em> Redes sociales ',
+                '<em>- Ejemplos:</em> MySQL, PostgresSQL, Oracle                             <em>- Ejemplos:</em> Neo4j, Microsoft Azure Cosmos DB ',
+                '',
+                '<strong>Columnar:</strong>                                                          <strong>Time-Series:</strong>',
+                '- Optimizadas por lecturas/escrituras                              - Optimizadas para datos temporales',
+                '- Eficientes para sistemas analiticos y sistemas OLAP              - Eficiencia a traves del tiempo',
+                '<em>- Casos de uso:</em> Data warehouse, Inteligencia para negocios         <em>- Casos de uso:</em> IoT, Monitoreo',
+                '<em>- Ejemplos:</em> Amazon Redshift, Apache Cassandra                      <em>- Ejemplos:</em> InfluxDB, TimescaleDB',
+                '',
+                '<strong>NoSQL:</strong>                                                             <strong>Key-Value:</strong>',
+                '- Combina la fiabilidad de SQL con una gran escalabilidad          - Modelado simple de datos, pares de llave-valor',
+                '- No cumplen ACID, pero si BASE                                    - Acceso rapido, mediante busquedas en las llaves ',
+                '<em>- Casos de uso:</em> Aplicaciones OLTP de alto rendimiento              <em>- Casos de uso:</em> Cache, Sesiones',
+                '<em>- Ejemplos:</em> Google Spanner, CockroachDB                            <em>- Ejemplos:</em> Redis, Amazon DynamoDB',
+                '',
+                '<strong>En memoria:</strong>                                                        <strong>Documentos:</strong>',
+                '- Almacenamiento en memoria con baja latencia                      - Información semi-estructurada',
+                '- Procesamiento inmediato                                          - Sin esquemas, modelo flexible ',
+                '<em>- Casos de uso:</em> Analiticas en tiempo real, Cache                   <em>- Casos de uso:</em> Manejo de contenido',
+                '<em>- Ejemplos:</em> SAP HANA, MemSQL                                       <em>- Ejemplos:</em> MongoDB, Couchbase',
+                '',
+                '<strong>Espaciales:</strong>                                                        <strong>Orientadas a Objetos:</strong>',
+                '- Optimizadas para datos espaciales                                - Se almacenan los datos como objetos',
+                '- Soporte de localizaciones y GIS                                  - Se alinean con <strong>POO</strong>',
+                '<em>- Casos de uso:</em> Mapas y Sistemas de Navegación                     <em>- Casos de uso:</em> Tipos de datos complejos ',
+                '<em>- Ejemplos:</em> PostGIS, Oracle Spatial                                <em>- Ejemplos:</em> db4o, ObjectDB',
             ])
     ];
 
