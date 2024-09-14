@@ -98,6 +98,7 @@ export const METODOLOGIAS_AGILES = 'agiles';
 export const METODOLOGIAS_LEAN = 'lean';
 export const APIS_REST_VS_MESSAGING = 'restVsMessaging';
 export const APIS_API_GOVERNANCE = 'apiGovernance';
+export const APIS_API_FIRST = 'apiFirst';
 export const PERSISTENCY_ADVANCED_SCALING_DB = 'scalingDataBases';
 export const PERSISTENCY_ADVANCED_ORM = 'orm'
 export const PERSISTENCY_ADVANCED_N_1_SELECTS = 'n+1selects';
@@ -138,6 +139,7 @@ export const TESTING_ADVANCED_ANTI_PATTERNS = 'tdd-antipatterns';
 export const ANALISIS_KPI = 'KPI';
 export const ANALISIS_ALGORITHMS = 'algorithms';
 export const ANALISIS_QUEUES_SYSTEM_DESIGN = 'queueSystemDesign';
+export const VERSIONAMIENTO_LICENSES_AND_DATA = 'licencesAndData';
 export const VERSIONAMIENTO_DEPENDENCIES_ORDER = 'dependenciesOrder';
 export const CALIDAD_IF_ELSE = 'eliminatingIfElse';
 export const PRINCIPIOS_KISS = 'kiss';
@@ -498,9 +500,8 @@ export const NUBE_REF = new Map<string, Referencia>([
 export const APIS_KEY = 'APIs';
 export const APIS_REF = new Map<string, Referencia>([
     //['api', new Referencia('https://www.ticbeat.com/tecnologias/que-es-una-api-para-que-sirve/', 'API', APIS_KEY, 'API')],
-    ['api', new Referencia('https://aws.amazon.com/es/what-is/api/', '¿ Que es una API ?', APIS_KEY, 'API', '', '2024/06/01')],
-    ['tiposApi', new Referencia('https://www.computerweekly.com/es/definicion/Interfaz-de-programacion-de-aplicaciones-API', 'Tipos de APIs', APIS_KEY, 'Tipos de APIs')],
-    ['rest', new Referencia('https://www.oscarblancarteblog.com/2017/03/06/soap-vs-rest-2/', 'SOAP vs REST', APIS_KEY, 'SOAP & REST')],
+    ['api', new Referencia('https://aws.amazon.com/es/what-is/api/', '¿ Que es una API ?', APIS_KEY, '¿ Que es una API ?', '', '2024/06/01')],
+    ['tiposApi', new Referencia('https://www.computerweekly.com/es/definicion/Interfaz-de-programacion-de-aplicaciones-API', 'Tipos de API', APIS_KEY, 'Tipos de API')],
     ['restfull', new Referencia('http://adwe.es/general/colaboraciones/servicios-web-restful-con-http-parte-i-introduccion-y-bases-teoricas/', 'Rest & Restfull', APIS_KEY, 'Rest & RestFull')],
     ['caracteristicas', new Referencia('https://adwe.es/codigo/apis-codigo/servicios-web-restful-con-http-parte-ii-ejemplos/', 'Caracteristicas de una api restfull', APIS_KEY, 'Estandares RestFull')],
     ['madurezDeUnaApi', new Referencia('https://restfulapi.net/richardson-maturity-model/', 'Nivel de madurez de una API', APIS_KEY, 'Nivel de Madurez')],
@@ -514,6 +515,7 @@ export const APIS_REF = new Map<string, Referencia>([
     ['apiIdempotencia', new Referencia('https://blog.bitsrc.io/design-an-idempotent-api-in-2024-d4a3cf8d8bf2', 'APIs Idempotentes', APIS_KEY, 'Idempotencia', '2024/02/17')],
     [APIS_REST_VS_MESSAGING, new Referencia('https://solace.com/blog/experience-awesomeness-event-driven-microservices/', 'REST VS Messaging & Microservicios', APIS_KEY, 'REST VS Messaging', '2024/03/15')],
     [APIS_API_GOVERNANCE, new Referencia('https://swagger.io/resources/articles/best-practices-in-api-governance/', 'Gobernanza', APIS_KEY, 'Gobernanza', '2024/06/01')],
+    [APIS_API_FIRST, new Referencia('https://www.postman.com/api-first/', 'API-First', APIS_KEY, 'API-First', '2024/09/13').addRelatedItem(VERSIONAMIENTO_LICENSES_AND_DATA)],
 ]);
 
 export const ANALISIS_DATA_KEY = 'Analisis-datos';
@@ -801,7 +803,7 @@ export const VERSIONAMIENTO_REF = new Map<string, Referencia>([
     ['versionamiento', new Referencia('https://ed.team/blog/como-se-deciden-las-versiones-del-software', 'Manejo de versiones', VERSIONAMIENTO_KEY, 'Versionamiento')],
     ['licencias', new Referencia('https://www.bbvaapimarket.com/es/mundo-api/las-5-licencias-de-software-libre-mas-importantes-que-todo-desarrollador-debe-conocer/', 'Tipos de licencias', VERSIONAMIENTO_KEY, 'Licencias')],
     ['documentation', new Referencia('https://shopify.engineering/good-documentation-productivity', 'Documentación & Productividad', VERSIONAMIENTO_KEY, 'Documentacion')],
-    ['licencesAndData', new Referencia('https://medium.com/@torgo/whats-the-deal-with-open-source-open-data-and-open-standards-licenses-d769d8e30dc0', 'Licencias y Datos abiertos', VERSIONAMIENTO_KEY, 'Licencias & Datos', '2023/08/17')],
+    [VERSIONAMIENTO_LICENSES_AND_DATA, new Referencia('https://medium.com/@torgo/whats-the-deal-with-open-source-open-data-and-open-standards-licenses-d769d8e30dc0', 'Licencias y Datos abiertos', VERSIONAMIENTO_KEY, 'Licencias & Datos', '2023/08/17')],
     [VERSIONAMIENTO_DEPENDENCIES_ORDER, new Referencia('https://www.baeldung.com/maven-dependencies-order', 'Orden de Dependencias', VERSIONAMIENTO_KEY, 'Orden', '2024/08/04').addRelatedItem(META_ESTRUCTURAS_ESTRUCTURAS_DATOS_2)],
 ]);
 
