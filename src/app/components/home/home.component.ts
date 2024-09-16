@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { APIS_API_FIRST, LinkReferencia } from 'src/app/models/linkReferencia';
+import { ANALISIS_DATA_OLAP_OLTP, LinkReferencia } from 'src/app/models/linkReferencia';
 
 const references = new LinkReferencia()
 
@@ -17,7 +17,7 @@ export class HomeComponent {
   }
 
   public routeToLastItem(): void {
-    const newItem = APIS_API_FIRST;
+    const newItem = ANALISIS_DATA_OLAP_OLTP;
     const section = references.components.get(newItem)?.component!;
     this.router.navigateByUrl(`/${references.routesAndSections.get(section)}`, { state: { newItem } })
   }

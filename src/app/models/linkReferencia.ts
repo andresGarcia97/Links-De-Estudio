@@ -112,6 +112,7 @@ export const PERSISTENCY_SCHEMAS = 'schemaPhysicVSschemaLogical';
 export const PERSISTENCY_HARD_SOFT_DELETE = 'hardAndSoftDelete';
 export const PERSISTENCY_DB_TYPES = 'dataBasesTypes';
 export const PERSISTENCY_DBMS = 'dbms'
+export const PERSISTENCY_DL = 'dl'
 export const HARDWARE_PROTOCOLS = 'protocolsHardware';
 export const HARDWARE_OPERATIVE_SYSTEM = 'operativeSystem';
 export const HARDWARE_UTF8 = 'UTF-8';
@@ -127,6 +128,7 @@ export const ANALISIS_DATA_THEORY_OF_INFORMATION = 'theoryOfInformation';
 export const ANALISIS_DATA_CHANGE_DATA_CAPTURE = "changeDataCapture";
 export const ANALISIS_DATA_GOLDEN_RECORD = "goldenRecord";
 export const ANALISIS_DATA_BATCH_VS_STREAM = "batchVsStreamProcessing";
+export const ANALISIS_DATA_OLAP_OLTP = "OLAPVsOLTP";
 export const GIT_REBASE_MERGE_SQUASH = 'rebaseMergeSquash';
 export const COMPILACION_GRAFOS = 'grafos';
 export const COMPILACION_STREAMS = 'streams';
@@ -525,7 +527,6 @@ export const ANALISIS_DATA_REF = new Map<string, Referencia>([
     ['turingComplete', new Referencia('https://www.eleconomista.es/economia/noticias/8817210/12/17/Ethereum-es-Turing-completo-y-eso-que-es.html', 'Turing Complete', ANALISIS_DATA_KEY, 'Turing Complete')],
     [ANALISIS_DATA_REVERSE_ENGINEERING, new Referencia('https://ingenierosasesores.com/actualidad/ingenieria-inversa-concepto-aplicaciones/', 'Ingenieria Inversa', ANALISIS_DATA_KEY, 'Ingenieria Inversa')],
     ['dsl', new Referencia('https://www.jetbrains.com/es-es/mps/concepts/domain-specific-languages/', 'Lenguaje de Dominio Especifico', ANALISIS_DATA_KEY, 'DSL')],
-    ['reglasInferencia', new Referencia('https://repository.unad.edu.co/reproductor-ova/10596_31590/index.html', 'Reglas de inferencia', ANALISIS_DATA_KEY, 'Reglas de Inferencia')],
     //['dataAnalisis', new Referencia('https://tienda.digital/4-tipos-de-analisis-de-datos-para-mejorar-la-toma-de-decisiones/', 'Analisis de datos', ANALISIS_KEY, 'Analisis de datos')],
     [ANALISIS_DATA_DATA_ANALISIS_TYPES, new Referencia('https://cidei.net/4-tipos-de-analitica-de-datos-que-mejoran-tu-toma-de-decisiones/', 'Tipos de analitica', ANALISIS_DATA_KEY, 'Analitica de datos', '2022/09/26', '2024/06/23')],
     [ANALISIS_DATA_SYSTEMS_INFORMATION, new Referencia('https://concepto.de/sistema-de-informacion/', 'Sistemas de Información', ANALISIS_DATA_KEY, 'Información', '', '2024/06/23')],
@@ -535,6 +536,7 @@ export const ANALISIS_DATA_REF = new Map<string, Referencia>([
     [ANALISIS_DATA_CHANGE_DATA_CAPTURE, new Referencia('https://www.confluent.io/learn/change-data-capture/', 'Change Data Capture', ANALISIS_DATA_KEY, 'CDC', '2024/07/28').addRelatedItem(PERSISTENCY_ADVANCED_WAL)],
     [ANALISIS_DATA_GOLDEN_RECORD, new Referencia('https://www.stibosystems.com/blog/benefits-of-creating-golden-customer-records', 'Golden Record', ANALISIS_DATA_KEY, 'Golden Record', '2024/08/10')],
     [ANALISIS_DATA_BATCH_VS_STREAM, new Referencia('https://estuary.dev/batch-processing-vs-stream-processing/', 'Batch Vs Stream Processing', ANALISIS_DATA_KEY, 'Batch Vs Stream', '2024/08/31')],
+    [ANALISIS_DATA_OLAP_OLTP, new Referencia('https://aws.amazon.com/es/compare/the-difference-between-olap-and-oltp/', 'OLAP & OLTP', ANALISIS_DATA_KEY, 'OLAP & OLTP', '2024/09/15')],
 ]);
 
 export const PARADIGMAS_KEY = 'Paradigmas';
@@ -744,7 +746,7 @@ export const PERSISTENCY_REF = new Map<string, Referencia>([
     ['sql', new Referencia('https://www.w3schools.com/sql/default.asp', '¿ Que es SQL ?', PERSISTENCY_KEY, 'SQL')],
     [PERSISTENCY_DBMS, new Referencia('https://www.astera.com/es/type/blog/database-management-software/', 'Software de Gestion de Bases de Datos', PERSISTENCY_KEY, 'DBMS')],
     ['crud', new Referencia('https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/crud-las-principales-operaciones-de-bases-de-datos/', 'Create, Read, Update, Delete', PERSISTENCY_KEY, 'CRUD')],
-    ['dl', new Referencia('https://platzi.com/blog/que-es-ddl-dml-dcl-y-tcl-integridad-referencial/', 'DDL, DML, DCL, TCL', PERSISTENCY_KEY, 'DDL, DML, DCL, TCL')],
+    [PERSISTENCY_DL, new Referencia('https://www.linkedin.com/posts/brijpandeyji_a-solid-grasp-of-sql-is-crucial-for-anyone-activity-7240803134258782208-ElvO/', 'DQL, DDL, DML, DCL, TCL', PERSISTENCY_KEY, 'DQL, DDL, DML, DCL, TCL', '', '2024/09/15')],
     ['integridad', new Referencia('https://platzi.com/blog/que-es-ddl-dml-dcl-y-tcl-integridad-referencial/', 'Integridad Referencial', PERSISTENCY_KEY, 'Integridad')],
     ['erd', new Referencia('https://www.lucidchart.com/pages/es/que-es-un-diagrama-entidad-relacion', 'Diagrama Entidad-Relación', PERSISTENCY_KEY, 'ERD')],
     ['normalizacion', new Referencia('https://docs.microsoft.com/en-us/office/troubleshoot/access/database-normalization-description', 'Normalización de una BD', PERSISTENCY_KEY, 'Normalización')],
