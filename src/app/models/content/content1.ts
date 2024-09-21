@@ -4,7 +4,7 @@ import {
     PARADIGMAS_PARADIGMA_DATOS, PEOPLE_PROCESS_BLOAT, PERSISTENCY_ADVANCED_ORM, PERSISTENCY_ADVANCED_SCALING_DB,
     PERSISTENCY_ADVANCED_WAL, PERSISTENCY_DBMS, PERSISTENCY_OPTIMIZE_SLOW_QUERIES, PERSISTENCY_SCHEMAS, ANALISIS_DATA_CHANGE_DATA_CAPTURE,
     PERSISTENCY_HARD_SOFT_DELETE, ANALISIS_DATA_GOLDEN_RECORD, CALIDAD_IF_ELSE, HARDWARE_UTF8, ANALISIS_DATA_BATCH_VS_STREAM,
-    WEB_SEO, PERSISTENCY_DB_TYPES, PERSISTENCY_DL, ANALISIS_DATA_OLAP_OLTP
+    WEB_SEO, PERSISTENCY_DB_TYPES, PERSISTENCY_DL, ANALISIS_DATA_OLAP_OLTP, PERSISTENCY_ERD
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -1748,7 +1748,7 @@ export const BASES_DE_DATOS =
                 '- Las BD relacionales cumplen esto mediante el esquema ACID ',
                 '- Las DB NO relacionales no garantizan el 100% de la integridad de los datos, aunque la mayoria son muy fiables ',
             ]),
-        new Item('erd',
+        new Item(PERSISTENCY_ERD,
             [
                 '- Demuestra como las entidades (generalmente de una BD) se relacionan entre si ',
                 '- Es una manera de desarrollar BD relacionales de acuerdo al modelo de negocio',

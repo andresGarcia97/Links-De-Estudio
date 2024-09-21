@@ -1,5 +1,5 @@
 import {
-    ANALISIS_ALGORITHMS, ANALISIS_KPI, ANALISIS_QUEUES_SYSTEM_DESIGN, COMPILACION_DECOMPILE, COMPILACION_GRAFOS,
+    ANALISIS_ALGORITHMS, ANALISIS_HIGH_LEVEL_VS_LOW_LEVEL, ANALISIS_KPI, ANALISIS_QUEUES_SYSTEM_DESIGN, COMPILACION_DECOMPILE, COMPILACION_GRAFOS,
     COMPILACION_INSTRUMENTS, COMPILACION_STREAMS, GIT_REBASE_MERGE_SQUASH, METODOLOGIAS_AGILES, METODOLOGIAS_LEAN,
     TESTING_ADVANCED_ANTI_PATTERNS, TESTING_DATA_CREATION, TESTING_DATA_SUT_DOC, TESTING_MOCKS
 } from "../linkReferencia";
@@ -288,7 +288,7 @@ export const ANALISIS =
                 '',
                 '- Estas mediciones estan relacionados con el numero de instrucciones y sentencias de control del algoritmo ',
                 ' - <strong>Constante:  </strong> Solo se tiene una instrucción, por lo que no importa el tamaño de los datos ',
-                ' - <strong>Lineal:     </strong> Suelen darse cuando existen ciclos, a mayor tammaño, mayor tiempo ',
+                ' - <strong>Lineal:     </strong> Suelen darse cuando existen ciclos, a mayor tamaño, mayor tiempo ',
                 ' - <strong>Logarítmico:</strong> Tambien depende del tamaño de la entrada, pero en este con cada iteración el tamaño crece o decrece ',
                 ' - <strong>Cuadratico: </strong> Un buen ejemplo son 2 ciclos anidados, donde cada ciclo se ejecutara n veces ',
                 ' - <strong>Exponencial:</strong> Cada iteración hace crecer el conjunto de datos, como puede ser la secuencia Fibonacci recursiva ',
@@ -474,6 +474,31 @@ export const ANALISIS =
                 '<strong>- RabbitMQ:</strong> Una cola versatil para muchos casos de uso general; Consumidores inteligentes, cola estupida ',
                 '<strong>- Kafka:</strong> Diseñado para un alto rendimiento y transmisión de datos en tiempo real; Consumidores estupidos, cola inteligente ',
                 '<strong>- Amazon SQS:</strong> Servicio administrado y ofrecido por AWS, confiable y con diversos tipos de colas',
+            ]),
+        new Item(ANALISIS_HIGH_LEVEL_VS_LOW_LEVEL,
+            [
+                '- Un Diseño de Alto Nivel <strong>HLD</strong> es como la vista area de un software, donde se puede ver un bosquejo general como: ',
+                ' - Componentes o modulos principales, Arquitectura de la aplicación a grandes rasgos ',
+                ' - Interacciones entre los componentes',
+                ' - Se puede visualizar como un plano que proviene de la fase inicial del proyecto ',
+                ' - Funciones generales, sin ahondar en detalles',
+                '',
+                '- Un Diseño de Bajo Nivel <strong>LLD</strong> son los detalles más especificos directamente relacionados con la implementación, como, patrones, clases, algoritmos, etc... ',
+                ' - Es la traducción de la solución, teniendo en cuenta la necesidad, los aspectos y las limitaciones tecnicas encontradas ',
+                ' - Implica logica real y detalles importantes para ser usados en la implementación ',
+                ' - Es la guia para seguir durante la codificación, con el objetivo de que las funcionalidades sean precisas y eficientes ',
+                '',
+                ' ----------------------------------------------------------------------------------------------------------------                            ',
+                ' &brvbar;  <strong>Aspecto</strong>   &brvbar;  <strong>Diseño de Bajo Nivel</strong>                     &brvbar;  <strong>Diseño de Alto Nivel</strong>                               &brvbar;',
+                ' ----------------------------------------------------------------------------------------------------------------                            ',
+                ' &brvbar; Enfoque    &brvbar; Detalles especificos de la implementacion &brvbar; Arquitectura y Diseño general                       &brvbar;',
+                ' &brvbar; Cobertura  &brvbar; Componentes / Modulos                     &brvbar; Componentes Principales                             &brvbar;',
+                ' &brvbar; Artefactos &brvbar; Diagramas de clase, Esquemas de BD(ERD)   &brvbar; Diagramas de arquitectura, Diagramas de componentes &brvbar;',
+                ' &brvbar;            &brvbar;  Modelos, Algoritmos                      &brvbar;  FLujo de datos, definiciones e interfaces          &brvbar;',
+                ' &brvbar; Entradas   &brvbar; Diseño de Alto Nivel                      &brvbar; Requisitos, Limitaciones, Objetivos de negocio      &brvbar;',
+                ' &brvbar; Salidas    &brvbar; Codigo base                               &brvbar; Plan de diseño, plan de pruebas                     &brvbar;',
+                ' &brvbar; Etapas     &brvbar; Durante la codificación                   &brvbar; Al principio del ciclo de vida del software         &brvbar;',
+                ' &brvbar; Ejemplos   &brvbar; Normalización de BD, Domain Driven Design &brvbar; Estilos arquitectonicos, stack de tecnologias       &brvbar;',
             ])
     ];
 

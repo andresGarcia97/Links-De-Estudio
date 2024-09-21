@@ -113,6 +113,7 @@ export const PERSISTENCY_HARD_SOFT_DELETE = 'hardAndSoftDelete';
 export const PERSISTENCY_DB_TYPES = 'dataBasesTypes';
 export const PERSISTENCY_DBMS = 'dbms'
 export const PERSISTENCY_DL = 'dl'
+export const PERSISTENCY_ERD = 'erd'
 export const HARDWARE_PROTOCOLS = 'protocolsHardware';
 export const HARDWARE_OPERATIVE_SYSTEM = 'operativeSystem';
 export const HARDWARE_UTF8 = 'UTF-8';
@@ -141,6 +142,7 @@ export const TESTING_ADVANCED_ANTI_PATTERNS = 'tdd-antipatterns';
 export const ANALISIS_KPI = 'KPI';
 export const ANALISIS_ALGORITHMS = 'algorithms';
 export const ANALISIS_QUEUES_SYSTEM_DESIGN = 'queueSystemDesign';
+export const ANALISIS_HIGH_LEVEL_VS_LOW_LEVEL = 'highLevelVsLowLevel';
 export const VERSIONAMIENTO_LICENSES_AND_DATA = 'licencesAndData';
 export const VERSIONAMIENTO_DEPENDENCIES_ORDER = 'dependenciesOrder';
 export const CALIDAD_IF_ELSE = 'eliminatingIfElse';
@@ -191,6 +193,7 @@ export const ANALISIS_REF = new Map<string, Referencia>([
     ['codingEasyPart', new Referencia('https://swizec.com/blog/coding-is-the-easy-part/', 'Codificar es la parte facil', ANALISIS_KEY, 'Codificar es facil', '2023/12/11')],
     [ANALISIS_ALGORITHMS, new Referencia('https://medium.com/@zgokceaynaci/a-journey-through-the-world-of-algorithms-554bfffcee97', 'Algoritmos', ANALISIS_KEY, 'Algoritmos', '2024/07/27').addRelatedItem(COMPILACION_GRAFOS).addRelatedItem(META_CARACTERISTICAS_BACKTRACKING)],
     [ANALISIS_QUEUES_SYSTEM_DESIGN, new Referencia('https://levelup.gitconnected.com/message-queues-in-system-design-0440a1221023', 'Message Queues in System Design', ANALISIS_KEY, 'Message Queues', '2024/09/01').addRelatedItem(META_ESTRUCTURAS_ESTRUCTURAS_DATOS_2).addRelatedItem(APIS_REST_VS_MESSAGING)],
+    [ANALISIS_HIGH_LEVEL_VS_LOW_LEVEL, new Referencia('https://www.baeldung.com/cs/hld-lld', 'High Level Vs Low Level', ANALISIS_KEY, 'High Level Vs Low Level', '2024/09/20').addRelatedItem(ESTRATEGIAS_DESARROLLO_SLDC).addRelatedItem(ESTRATEGIAS_DESARROLLO_DDD).addRelatedItem(PERSISTENCY_ERD)],
 ]);
 
 export const ARQUITECTURAS_KEY = 'Arquitecturas';
@@ -748,7 +751,7 @@ export const PERSISTENCY_REF = new Map<string, Referencia>([
     ['crud', new Referencia('https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/crud-las-principales-operaciones-de-bases-de-datos/', 'Create, Read, Update, Delete', PERSISTENCY_KEY, 'CRUD')],
     [PERSISTENCY_DL, new Referencia('https://www.linkedin.com/posts/brijpandeyji_a-solid-grasp-of-sql-is-crucial-for-anyone-activity-7240803134258782208-ElvO/', 'DQL, DDL, DML, DCL, TCL', PERSISTENCY_KEY, 'DQL, DDL, DML, DCL, TCL', '', '2024/09/15')],
     ['integridad', new Referencia('https://platzi.com/blog/que-es-ddl-dml-dcl-y-tcl-integridad-referencial/', 'Integridad Referencial', PERSISTENCY_KEY, 'Integridad')],
-    ['erd', new Referencia('https://www.lucidchart.com/pages/es/que-es-un-diagrama-entidad-relacion', 'Diagrama Entidad-Relación', PERSISTENCY_KEY, 'ERD')],
+    [PERSISTENCY_ERD, new Referencia('https://www.lucidchart.com/pages/es/que-es-un-diagrama-entidad-relacion', 'Diagrama Entidad-Relación', PERSISTENCY_KEY, 'ERD')],
     ['normalizacion', new Referencia('https://docs.microsoft.com/en-us/office/troubleshoot/access/database-normalization-description', 'Normalización de una BD', PERSISTENCY_KEY, 'Normalización')],
     ['acid', new Referencia('https://dosideas.com/noticias/base-de-datos/973-acid-en-las-bases-de-datos', 'Esquema ACID', PERSISTENCY_KEY, 'ACID')],
     ['indices', new Referencia('https://www.ibm.com/docs/es/mam/7.6.0.8?topic=databases-database-indexing', 'Indices', PERSISTENCY_KEY, 'Indices')],
