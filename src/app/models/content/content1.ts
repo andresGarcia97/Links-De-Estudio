@@ -4,7 +4,7 @@ import {
     PARADIGMAS_PARADIGMA_DATOS, PEOPLE_PROCESS_BLOAT, PERSISTENCY_ADVANCED_ORM, PERSISTENCY_ADVANCED_SCALING_DB,
     PERSISTENCY_ADVANCED_WAL, PERSISTENCY_DBMS, PERSISTENCY_OPTIMIZE_SLOW_QUERIES, PERSISTENCY_SCHEMAS, ANALISIS_DATA_CHANGE_DATA_CAPTURE,
     PERSISTENCY_HARD_SOFT_DELETE, ANALISIS_DATA_GOLDEN_RECORD, CALIDAD_IF_ELSE, HARDWARE_UTF8, ANALISIS_DATA_BATCH_VS_STREAM,
-    WEB_SEO, PERSISTENCY_DB_TYPES, PERSISTENCY_DL, ANALISIS_DATA_OLAP_OLTP, PERSISTENCY_ERD
+    WEB_SEO, PERSISTENCY_DB_TYPES, PERSISTENCY_DL, ANALISIS_DATA_OLAP_OLTP, PERSISTENCY_ERD, WEB_GOLDEN_SIGNALS, HARDWARE_MONITOREO
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -453,7 +453,7 @@ export const HARDWARE =
                 '- Esta organización de capas permite una mejor depuración de errores, ',
                 ' - a la vez que cada capa tiene una responsabilidades bien definidad a la hora de recibir o enviar información ',
             ]),
-        new Item('monitoreo',
+        new Item(HARDWARE_MONITOREO,
             [
                 '- Es un software que nos permite monitorizar y descubrir problemas a nivel de aplicación que pueden ser optimizados ',
                 '- Para esto, es necesario recoger y cuantificar valores como: ',
@@ -682,7 +682,7 @@ export const WEB =
                 ' - y que dado esto se puedan ver varias formas, sin tener certeza de la verdadera ',
                 '<strong>Invariabilidad:</strong> Los objetos simples pueden ser reconocidos independientemente de, su escala, rotación, traslación o perspectiva ',
                 '',
-                '- Leyes de Gestalt aplicadas al diseño grafico ',
+                '<strong>Leyes aplicadas al diseño grafico</strong>',
                 '',
                 '<strong>Principio de semejanza:</strong> Si elementos que esten proximos entre si, y son similares ',
                 ' - tenderemos a verlos como parte de un grupo, ya sea por color, tamaño o textura ',
@@ -694,7 +694,7 @@ export const WEB =
                 ' - estos deben compartir alguna caracteristica en comun como forma, color, textura, tamaño ',
                 '<strong>Figura y fondo:</strong> Usando el espacio negativo y la tendencia de ver un objeto separado de lo que lo rodea ',
                 '<strong>Principio de Simetria y Orden:</strong> Si los elementos cuentan con cierta simetria y orden, son percibidos como parte del mismo grupo ',
-                '<strong>Dirección comun:</strong> Los elementos que parecen contruir un patron o flujo continuo y en la misma dirección ',
+                '<strong>Dirección comun:</strong> Los elementos que parecen construir un patron o flujo continuo y que estan en la misma dirección ',
                 ' - son a su vez percibidos como parte de un grupo mayor ',
             ]),
         new Item('ssr-csr-ssg-isr',
@@ -848,6 +848,35 @@ export const WEB =
                 '<strong>Aprendizaje Continuo</strong>',
                 '- Igual que muchas areas de la tecnologia, el desarrollo web constantemente cambia y evoluciona, ya sea por tendencias o por avances tecnologicos ',
                 '- Mantenerse informado y seguir aprendiendo, permite ofrecer soluciones de vanguardia y mantener un perfil profesional competitivo ',
+            ]),
+        new Item(WEB_GOLDEN_SIGNALS,
+            [
+                '- <em>El silencio es oro</em> ó <em>No news, good news</em> Significan de manera general que el silencio es indicativo de normalidad, ningun ruido es bueno ',
+                '- Lamentablamente la mayoria de los sistemas de software no son silenciosos, pueden generar cientos de metricas y rastros difentes ',
+                '- La <em>Site Reliability Engineering</em>(Ingenieria de Confiabilidad de Sitios) <strong>SRE</strong> es una disciplina de TI enfocada en la gestión y optimización del rendimiento ',
+                '- La combinación de estas señales brindan una comprensión integral del estado general y el rendimientos de sistemas complejos ',
+                '',
+                '<strong>Latencia:</strong> Mide el intervalo entre el envio de una solicitud y su respuesta, una latencia alta generalmente es indicativa de errores o codigo ineficiente ',
+                '',
+                '<strong>Trafico:</strong> Es la cantidad de solicitudes que maneja la aplicación, las tasas bajas y altas de trafico no son indicativos directos de problemas',
+                ' - pero si la latencia aumenta casi proporcionalmente al trafico, generalmente es indicativo de problemas cuando se manejan grandes volumenes de datos ',
+                '',
+                '<strong>Errores:</strong> Miden la cantidad de solicitudes que fallaron, por razones como peticiones corruptas, o errores en el procesamiento ',
+                '',
+                '<strong>Saturación:</strong> Es el consumo de recursos de la aplicación, tanto en codiciones normales como en altas cargas de trabajo ',
+                ' - La falta de recursos puede estar asociada o ser la causa directa de una Alta latencia o una gran Cantidad de errores ',
+                '',
+                '<strong>Importancia:</strong>',
+                '- El impacto de estos datos no solo ayudan a dar sentido a los datos complejos que provienen de la observabilidad, ',
+                ' - tambien unifican multiples señales en 4 categorias basicas que brindan información significativa del estado de la aplicación ',
+                '- Un analisis conjunto de estos datos permite la correlación para ayudar a encontrar la causa raiz de los problemas y mejorar la confiabilidad ',
+                '- Optimización de recursos, al determinar las necesidades y reasignar los recursos de acuerdo a la oferta y la demanda ',
+                '- Mejora la experiencia de usuario ya que (latencia, trafico, errores) son señales percibidas directamente por el usuario final ',
+                '',
+                '<strong>Consideraciones:</strong>',
+                '- Existen metodos más simples y faciles de implementar como <strong>RED</strong>(tasa, errores, duración) y <strong>USE</strong>(utilización, saturación, errores)',
+                '- Estas señales son categorias de información en lugar de tipos especificos de datos, y no son obtenibles en primera instancia ',
+                '- La recopilación de datos se debe hacer de manera que tambien se incluyan alertas sobre alguna de las señales y el uso de <em>APM</em>',
             ])
     ];
 

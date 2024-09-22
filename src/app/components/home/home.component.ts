@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { ANALISIS_HIGH_LEVEL_VS_LOW_LEVEL, LinkReferencia } from 'src/app/models/linkReferencia';
+import { WEB_GOLDEN_SIGNALS, LinkReferencia } from 'src/app/models/linkReferencia';
 
 const references = new LinkReferencia()
 
@@ -17,7 +17,7 @@ export class HomeComponent {
   }
 
   public routeToLastItem(): void {
-    const newItem = ANALISIS_HIGH_LEVEL_VS_LOW_LEVEL;
+    const newItem = WEB_GOLDEN_SIGNALS;
     const section = references.components.get(newItem)?.component!;
     this.router.navigateByUrl(`/${references.routesAndSections.get(section)}`, { state: { newItem } })
   }

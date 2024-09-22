@@ -93,6 +93,7 @@ export const NUBE_MICROSERVICES_BEST_PRACTICES = 'microservicesBestPractices';
 export const PARADIGMAS_PARADIGMA_DATOS = 'paradigmaDatos';
 export const CONOCIMIENTOS_EMPIRICOS_PAIR_PROGRAMMING = 'pairPrograming';
 export const CONOCIMIENTOS_EMPIRICOS_STAGES_COMPETENCE_MODEL = 'stagesCompetenceModel';
+export const PEOPLE_NO_NEWS_GOOD_NEWS = 'noNewsGoodNews';
 export const PEOPLE_PROCESS_BLOAT = 'processBloat';
 export const METODOLOGIAS_AGILES = 'agiles';
 export const METODOLOGIAS_LEAN = 'lean';
@@ -114,6 +115,7 @@ export const PERSISTENCY_DB_TYPES = 'dataBasesTypes';
 export const PERSISTENCY_DBMS = 'dbms'
 export const PERSISTENCY_DL = 'dl'
 export const PERSISTENCY_ERD = 'erd'
+export const HARDWARE_MONITOREO = 'monitoreo(apm)';
 export const HARDWARE_PROTOCOLS = 'protocolsHardware';
 export const HARDWARE_OPERATIVE_SYSTEM = 'operativeSystem';
 export const HARDWARE_UTF8 = 'UTF-8';
@@ -149,6 +151,7 @@ export const CALIDAD_IF_ELSE = 'eliminatingIfElse';
 export const PRINCIPIOS_KISS = 'kiss';
 export const CD_CI_CELL_BASED_ARQUITECTURE = "cellBasedArquitecture";
 export const WEB_SEO = "seo";
+export const WEB_GOLDEN_SIGNALS = "goldenSignals";
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -588,7 +591,7 @@ export const PEOPLE_REF = new Map<string, Referencia>([
     ['modeloDIKW', new Referencia('https://programmerclick.com/article/46021807934/', 'Datos-Info-Conocimiento-Sabiduría', PEOPLE_KEY, 'Modelo DIKW')],
     ['gestionDeExpectativas', new Referencia('https://brainsandbeards.com/blog/expectation-management', 'Gestion de expectativas', PEOPLE_KEY, 'Gestion de expectativas')],
     ['capa8', new Referencia('https://www.merca20.com/que-es-un-error-de-capa-8-y-como-evitas-que-arruine-tu-marketing/', 'Capa 8', PEOPLE_KEY, 'Error en capa 8')],
-    ['noNewsGoodNews', new Referencia('https://blog.carreralinux.com.ar/2020/05/si-no-hay-noticias-son-buenas-noticias-no-news-good-news/', 'Sin noticias, Son buenas noticias', PEOPLE_KEY, 'No News Good News')],
+    [PEOPLE_NO_NEWS_GOOD_NEWS, new Referencia('https://blog.carreralinux.com.ar/2020/05/si-no-hay-noticias-son-buenas-noticias-no-news-good-news/', 'Sin noticias, Son buenas noticias', PEOPLE_KEY, 'No News Good News')],
     ['tiposHackers', new Referencia('https://www.freecodecamp.org/news/white-hat-black-hat-red-hat-hackers/', 'Tipos de Hackers (sombreros)', PEOPLE_KEY, 'Tipos de Hackers')],
     ['sindromesLaborales', new Referencia('https://www.sage.com/es-es/blog/burnout-procusto-y-otros-14-sindromes-tipicos-del-mundo-empresarial/#gate-263a5c00-99e4-4e71-8421-469deda8e674', 'Sindromes laborales', PEOPLE_KEY, 'Sindromes Laborales', '2023/06/26')],
     ['icebergIgnorance', new Referencia('https://prevencontrol.com/prevenblog/y-tu-cuanto-sabes-acerca-de-lo-que-ocurre-en-tu-organizacion/', 'Iceberg de la Ignorancia', PEOPLE_KEY, 'Iceberg de la Ignorancia', '2023/08/04')],
@@ -821,7 +824,7 @@ export const HARDWARE_REF = new Map<string, Referencia>([
     ['nubeVSvirtualizacion', new Referencia('https://www.redhat.com/es/topics/cloud-computing/cloud-vs-virtualization', 'Nube VS Virtualizacion', HARDWARE_KEY, 'Nube VS VM')],
     ['rendering', new Referencia('https://www.freecodecamp.org/news/what-exactly-is-client-side-rendering-and-hows-it-different-from-server-side-rendering-bd5c786b340d/', 'Server-side VS client-side rendering', HARDWARE_KEY, 'Rendering')],
     ['modelOSI', new Referencia('https://www.cloudflare.com/es-es/learning/ddos/glossary/open-systems-interconnection-model-osi/', 'Modelo OSI', HARDWARE_KEY, 'Modelo OSI')],
-    ['monitoreo', new Referencia('https://www.hiberus.com/crecemos-contigo/uso-de-los-apm-monitoreo-del-rendimiento-de-aplicaciones/', 'Aplication Performance Management (apm)', HARDWARE_KEY, 'Monitoreo')],
+    [HARDWARE_MONITOREO, new Referencia('https://www.hiberus.com/crecemos-contigo/uso-de-los-apm-monitoreo-del-rendimiento-de-aplicaciones/', 'Aplication Performance Management (apm)', HARDWARE_KEY, 'Monitoreo')],
     ['vmVsContainers', new Referencia('https://cloudnativeislamabad.hashnode.dev/virtualization-vs-containerization', 'Maquinas Virtuales VS Contenedores', HARDWARE_KEY, 'VM VS Contenedores')],
     ['falseSharing', new Referencia('https://www.easytechjunkie.com/what-is-false-sharing.htm', 'False Sharing', HARDWARE_KEY, 'False Sharing', '2022/12/29')],
     [HARDWARE_PROTOCOLS, new Referencia('https://www.solarwinds.com/resources/it-glossary/network-protocols', 'Network Protocols', HARDWARE_KEY, 'Network Protocols', '2024/06/11')],
@@ -837,15 +840,16 @@ export const WEB_REF = new Map<string, Referencia>([
     ['espacio', new Referencia('https://www.dsigno.es/blog/diseno-grafico/espacios-negativos-en-diseno-grafico', 'El uso del espacio para diseñar', WEB_KEY, 'Espacio Negativo')],
     ['diseno', new Referencia('https://seocom.agency/es/blog/diseno-grafico-web/', 'Diseño grafico', WEB_KEY, 'Diseño Grafico')],
     ['interfacesUsuario', new Referencia('https://pensamientodigital.wordpress.com/diseno-de-interfases-de-usuario/', 'Interfaces de usuario', WEB_KEY, 'UI')],
+    ['experienciaUsuario', new Referencia('https://www.coursera.org/articles/ui-vs-ux-design', 'Experiencia de usuario', WEB_KEY, 'UX')],
     ['logos', new Referencia('https://franciscotorreblanca.es/logotipo-imagotipo-isotipo-e-isologo/', 'Logotipo, Imagotipo, Isotipo, Isologo', WEB_KEY, 'Logos')],
     //['experienciasUsuario', new Referencia('https://blog.acantu.com/que-es-ux-y-ui/', 'Experiencia de usuario', WEB_KEY, 'UX')],
-    ['experienciaUsuario', new Referencia('https://www.coursera.org/articles/ui-vs-ux-design', 'Experiencia de usuario', WEB_KEY, 'UX')],
     ['gestalt', new Referencia('https://imborrable.com/blog/teoria-de-la-gestalt/', 'Teoria de Gestalt', WEB_KEY, 'Teoria de Gestalt')],
     ['ssr-csr-ssg-isr', new Referencia('https://medium.com/@prashantramnyc/server-side-rendering-ssr-vs-client-side-rendering-csr-vs-pre-rendering-using-static-site-89f2d05182ef', 'SSR vs CSR vs SSG', WEB_KEY, 'SSR vs CSR vs SSG')],
     ['esqueumorfismo', new Referencia('https://aderal.es/estrategias-de-marketing-y-transformacion-digital/nuevas-tendencias-en-diseno-grafico-digital-el-regreso-del-esqueumorfismo/', 'Esqueumorfismo', WEB_KEY, 'Esqueumorfismo')],
     ['menorSorpresa', new Referencia('https://www.linkedin.com/pulse/principle-least-surprise-incus-data-pty-ltd/', 'Menor Sorpresa', WEB_KEY, 'Menor Sorpresa')],
-    ['microFrontened', new Referencia('https://newsletter.systemdesign.one/p/micro-frontends', 'Micro Frontends', WEB_KEY, 'Micro Frontends')],
-    ['buenasPracticasFront', new Referencia('https://dev.to/emmanuelhills/best-practices-for-frontend-web-development-a-comprehensive-guide-27h0', 'Buenas practicas Desarrollo web', WEB_KEY, 'Buenas practicas')],
+    ['microFrontened', new Referencia('https://newsletter.systemdesign.one/p/micro-frontends', 'Micro Frontends', WEB_KEY, 'Micro Frontends', '2024/03/07')],
+    ['buenasPracticasFront', new Referencia('https://dev.to/emmanuelhills/best-practices-for-frontend-web-development-a-comprehensive-guide-27h0', 'Buenas practicas Desarrollo web', WEB_KEY, 'Buenas practicas', '2024/03/31')],
+    [WEB_GOLDEN_SIGNALS, new Referencia('https://www.groundcover.com/blog/4-golden-signals', 'Golden Signals', WEB_KEY, 'Golden Signals', '2024/09/22').addRelatedItem(HARDWARE_MONITOREO).addRelatedItem(PEOPLE_NO_NEWS_GOOD_NEWS)],
 ]);
 
 export const NEURO_MARKETING_KEY = 'Neuro-Marketing';
