@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PATRONES } from 'src/app/models/content/content5';
-import { ANALISIS_KEY, FRAMEWORKS_KEY, LinkReferencia, NUBE_KEY, PARADIGMAS_KEY, PATRONES_KEY, PATRONES_REF, PRINCIPIOS_KEY } from 'src/app/models/linkReferencia';
+import { ANALISIS_KEY, FRAMEWORKS_KEY, LinkReferencia, NUBE_KEY, PARADIGMAS_KEY, PATRONES_KEY, PATRONES_REF, PRINCIPIOS_KEY }
+from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-patrones',

@@ -6,7 +6,7 @@ import {
     META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM, META_CARACTERISTICAS_META_DATOS, POO_INMUTABILITY, POO_POO, POO_POO_PILARES,
     FRAMEWORKS_FRAMEWORKS, META_CARACTERISTICAS_ANOTATIONS, META_CARACTERISTICAS_REFLEXION, ESTRATEGIAS_DESARROLLO_TDD,
     LEYES_KIDLIN, AGILES_DEMING, ESTRATEGIAS_DESARROLLO_DDD, META_CARACTERISTICAS_BACKTRACKING, CONTENEDORES_ARQUITECTURE,
-    ARQUITECTURAS_MICRO_SERVICES, AGILES_PRIORITIZATION, AGILES_PLANNING_POKER, AGILES_5S
+    ARQUITECTURAS_MICRO_SERVICES, AGILES_PRIORITIZATION, AGILES_PLANNING_POKER, AGILES_5S, LEYES_CONWAY
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -1697,13 +1697,14 @@ export const LEYES =
                 '',
                 '<strong>Ley del cambio continuo:</strong> En la realidad las cosas deben seguir cambiando constantemente, de lo contrario eventualmente seran obsoletas ',
                 '<strong>Ley de complejida creciente:</strong> Mientras algo siga creciendo, su complejidad tambien lo hara, a no ser que se tomen medidas para reducirla ',
-                '<strong>Ley de evolución:</strong> Mientras algo crezca, tambien lo haran sus errores, casi siempre de manera promedio ',
+                '<strong>Ley de evolución:</strong> Mientras algo crezca, tambien lo haran sus errores, casi siempre de manera promedio, estos se autoregulan ',
                 '<strong>Ley de estabilidad organizacional:</strong> La velocidad de desarrollo sera casi siempre la misma, por más recursos que se inyecten ',
-                '<strong>Ley de la conservación:</strong> Un crecimiento desmesurado hara que el conociemiento basico sea insuficiente para seguir creciendo ',
+                '<strong>Ley de la conservación de la familiaridad:</strong> Un crecimiento desmesurado hara que el conocimiento basico sea insuficiente para seguir creciendo ',
                 '<strong>Ley de crecimiento continuo:</strong> Las funcionalidades deben seguir mejorando para mantener a los clientes satisfechos ',
+                '<strong>Ley de decremento de la calidad:</strong> La calidad de los sistemas comenzara a disminuir a menos que dichos sistemas se adapten a los cambios ',
                 '<strong>Ley de retroalimentación:</strong> La comunicación con el cliente y con las personas conocedoras es fundamental ',
             ]),
-        new Item('conway',
+        new Item(LEYES_CONWAY,
             [
                 '- El impacto de la comunicación en tu empresa ',
                 '- <em>Cualquier organización que diseñe un sistema producirá un diseño que copia la estructura de comunicación de dicha organización.</em>',

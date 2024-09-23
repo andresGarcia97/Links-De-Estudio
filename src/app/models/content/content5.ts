@@ -3,7 +3,8 @@ import {
     CONOCIMIENTOS_EMPIRICOS_STAGES_COMPETENCE_MODEL, META_ESTRUCTURAS_DEPRECATION,
     META_ESTRUCTURAS_ESTRUCTURAS_DATOS, META_ESTRUCTURAS_ESTRUCTURAS_DATOS_2, META_ESTRUCTURAS_MAQUINA_ESTADOS,
     META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION, META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL, NUBE_CAP_TEOREMA,
-    NUBE_MICROSERVICES_BEST_PRACTICES, NUBE_OBSERVABILIDAD, PATRONES_CLOUD_DESIGN_PATTERNS, PATRONES_PERSISTENCE_PATTERNS
+    NUBE_MICROSERVICES_BEST_PRACTICES, NUBE_OBSERVABILIDAD, PATRONES_CLOUD_DESIGN_PATTERNS, PATRONES_PERSISTENCE_PATTERNS,
+    PATRONES_STRANGLER_FIG
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -200,15 +201,23 @@ export const PATRONES =
                 '',
                 '<strong>- Patrones de codificación(idioms):</strong> Ayudan a implementar aspectos particulares del diseño, en un lenguaje especifico'
             ]),
-        new Item('stranglerFig',
+        new Item(PATRONES_STRANGLER_FIG,
             [
                 '- Una higuera estranguladora, es una planta peculiar, debido a que su semilla crece desde las ramas de un arbol, hasta que echan raices en el suelo ',
-                '- Durante años van creciendo poco a poco sofocando y matando a su huesped ',
+                '- Durante años van creciendo poco a poco sofocando y matando a su huesped, hasta quedar una sombra del arbol original ',
                 '- Una gran metafora a la hora de hablar de migrar y reemplazar sistemas anticuados con otros más actuales ',
                 '- Esto sonaria como simplemente realizar una aplicación que haga exactamente lo mismo, lo cual para nada es simple ',
                 '- Además de que esto involucra nuevas funciones, correciones o incluso mantener los errores ya conocidos ',
                 '- Tambien se ha de tener en cuenta que esto es proceso arduo y constante, con miras de que futuros estrangulamientos se simplifiquen ',
                 '- Mantener ciclos cortos y hacer lanzamientos frecuentes, permite que esta aplicación no solo tome menos, si no que entregue valor más pronto ',
+                '- Para evitar que los mismos errores se repitan, es necesario que se produzcan cambios organizacionales más amplios para evitar un caos similar ',
+                '- Si no realizan cambios y no se aprende de la experiencia del pasado, el nuevo sistema terminara en un caos similar, como dice la <em>Ley de Conway</em> ',
+                '',
+                '<em>Ian Cartwright, Rob Horn</em> y <em>James Lewis</em> Definierón 4 actividades a alto nivel necesarias para este enfoque incremental ',
+                '- Comprender los resultados que se desean lograr',
+                '- Decidir como dividir el problema en partes más pequeñas',
+                '- Entregar piezas con exito',
+                '- Cambiar la organización para permitir que esto se haga de manera continua ',
             ]),
         new Item('antipatronesPM',
             [

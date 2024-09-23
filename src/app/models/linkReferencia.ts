@@ -73,6 +73,7 @@ export const META_CARACTERISTICAS_BACKTRACKING ='backtracking';
 export const META_CARACTERISTICAS_ANOTATIONS = 'anottations';
 export const LEYES_HYRUM = 'hyrum';
 export const LEYES_LEHMAN = 'lehman';
+export const LEYES_CONWAY = 'conway';
 export const LEYES_KIDLIN = 'kidlin';
 export const MALAS_PRACTICAS_ANTI_PATRONES_ARQUITECTURAS = 'antipatronesArquitecturas';
 export const MALAS_PRACTICAS_TRAIN_WECKS = 'trainWrecks';
@@ -86,6 +87,7 @@ export const AGILES_PRIORITIZATION = 'prioritization';
 export const CONTENEDORES_SECURE_ORCHESTRATION = 'secureOrchestration';
 export const CONTENEDORES_ARQUITECTURE = 'arquitectureDocker';
 export const PATRONES_PERSISTENCE_PATTERNS = 'persistencePatterns';
+export const PATRONES_STRANGLER_FIG = 'stranglerFig';
 export const PATRONES_CLOUD_DESIGN_PATTERNS = 'patternsCloud';
 export const NUBE_CAP_TEOREMA = 'capTeorema';
 export const NUBE_OBSERVABILIDAD = 'observabilidad';
@@ -315,8 +317,8 @@ export const CONOCIMIENTO_EMPIRICO = new Map<string, Referencia>([
 export const LEYES_KEY = 'Leyes';
 export const LEYES_REF = new Map<string, Referencia>([
     ['balas', new Referencia('https://gist.github.com/esparta/582e43af7b803e0aaf69', 'Balas de Plata', LEYES_KEY, 'Balas de Plata', '', '2024/07/14')],
-    [LEYES_LEHMAN, new Referencia('https://medium.com/@cartontabla/las-leyes-de-lehman-b57c623c3404', 'Leyes de Lehman', LEYES_KEY, 'Leyes de Lehman')],
-    ['conway', new Referencia('https://www.javiergarzas.com/2015/06/conway.html', 'Ley de Conway', LEYES_KEY, 'Ley de Conway')],
+    [LEYES_LEHMAN, new Referencia('https://medium.com/@cartontabla/las-leyes-de-lehman-b57c623c3404', 'Leyes de Lehman', LEYES_KEY, 'Leyes de Lehman', '', '2024/09/22')],
+    [LEYES_CONWAY, new Referencia('https://www.javiergarzas.com/2015/06/conway.html', 'Ley de Conway', LEYES_KEY, 'Ley de Conway')],
     ['murphy', new Referencia('https://www.caracteristicas.co/ley-de-murphy/', 'Ley de Murphy', LEYES_KEY, 'Ley de Murphy')],
     ['pendulo', new Referencia('http://www.grupocrece.es/blog/Psicolog%C3%ADala-ley-del-pndulo-en-psicologa', 'Ley del pendulo', LEYES_KEY, 'Ley del pendulo')],
     [LEYES_HYRUM, new Referencia('https://thebootstrappedfounder.com/hyrums-law/', 'Ley de Hyrum', LEYES_KEY, 'Ley de Hyrum')],
@@ -576,7 +578,7 @@ export const PATRONES_REF = new Map<string, Referencia>([
     ['patroncqrs', new Referencia('https://learn.microsoft.com/es-mx/azure/architecture/patterns/cqrs', 'Patron CQRS', PATRONES_KEY, 'Patron CQRS')],
     ['patronUndoRedo', new Referencia('https://medium.com/dottech/implementando-undo-redo-con-ngrx-o-redux-f8ef5de535ef', 'Patron Undo-Redo', PATRONES_KEY, 'Patron undo-redo')],
     ['tiposDePatrones', new Referencia('https://www.javiergarzas.com/2014/08/tipos-patrones-software.html', 'Tipos de patrones', PATRONES_KEY, 'Tipos de Patrones')],
-    ['stranglerFig', new Referencia('https://martinfowler.com/bliki/StranglerFigApplication.html', 'StranglerFig App', PATRONES_KEY, 'StranglerFig App')],
+    [PATRONES_STRANGLER_FIG, new Referencia('https://martinfowler.com/bliki/StranglerFigApplication.html', 'StranglerFig App', PATRONES_KEY, 'StranglerFig App', '', '2024/09/22').addRelatedItem(LEYES_CONWAY)],
     ['antipatronesPM', new Referencia('https://sourcemaking.com/antipatterns', 'Antipatrones, Product Management', PATRONES_KEY, 'Anti Patrones, PM')],
     ['patternsMicroservices', new Referencia('https://blog.openreplay.com/7-microservice-design-patterns-to-use/', 'Patrones & Microservicios', PATRONES_KEY, 'Patrones & Microservicios')],
     [PATRONES_CLOUD_DESIGN_PATTERNS, new Referencia('https://learn.microsoft.com/es-mx/azure/architecture/patterns/', 'Patrones Para la Nube', PATRONES_KEY, 'Patrones Nube', '2024/06/02')],
