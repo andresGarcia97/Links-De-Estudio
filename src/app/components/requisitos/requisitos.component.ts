@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { REQUISITOS } from 'src/app/models/content/content3';
-import { AGILES_KEY, ANALISIS_KEY, LinkReferencia, PEOPLE_KEY, REQUISITOS_REF, USER_HISTORIES_KEY } from 'src/app/models/linkReferencia';
+import { AGILES_KEY, ANALISIS_KEY, LinkReferencia, PEOPLE_KEY, REQUISITOS_REF, USER_HISTORIES_KEY }
+from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-requisitos',
