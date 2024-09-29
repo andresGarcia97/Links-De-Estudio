@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HISTORIAS_USUARIO } from 'src/app/models/content/content2';
-import { AGILES_KEY, CONOCIMIENTO_EMPIRICO_KEY, LinkReferencia, PEOPLE_KEY, REQUISITOS_KEY, USER_HISTORIES } from 'src/app/models/linkReferencia';
+import { AGILES_KEY, CONOCIMIENTO_EMPIRICO_KEY, LinkReferencia, PEOPLE_KEY, REQUISITOS_KEY, USER_HISTORIES }
+from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-historia-usuario',
