@@ -147,6 +147,7 @@ export const ANALISIS_KPI = 'KPI';
 export const ANALISIS_ALGORITHMS = 'algorithms';
 export const ANALISIS_QUEUES_SYSTEM_DESIGN = 'queueSystemDesign';
 export const ANALISIS_HIGH_LEVEL_VS_LOW_LEVEL = 'highLevelVsLowLevel';
+export const ANALISIS_SYSTEM_DESIGN_CONCEPTS = 'systemDesignConcepts';
 export const VERSIONAMIENTO_LICENSES_AND_DATA = 'licencesAndData';
 export const VERSIONAMIENTO_DEPENDENCIES_ORDER = 'dependenciesOrder';
 export const CALIDAD_IF_ELSE = 'eliminatingIfElse';
@@ -205,6 +206,7 @@ export const ANALISIS_REF = new Map<string, Referencia>([
     [ANALISIS_ALGORITHMS, new Referencia('https://medium.com/@zgokceaynaci/a-journey-through-the-world-of-algorithms-554bfffcee97', 'Algoritmos', ANALISIS_KEY, 'Algoritmos', '2024/07/27').addRelatedItem(COMPILACION_GRAFOS).addRelatedItem(META_CARACTERISTICAS_BACKTRACKING)],
     [ANALISIS_QUEUES_SYSTEM_DESIGN, new Referencia('https://levelup.gitconnected.com/message-queues-in-system-design-0440a1221023', 'Message Queues in System Design', ANALISIS_KEY, 'Message Queues', '2024/09/01').addRelatedItem(META_ESTRUCTURAS_ESTRUCTURAS_DATOS_2).addRelatedItem(APIS_REST_VS_MESSAGING)],
     [ANALISIS_HIGH_LEVEL_VS_LOW_LEVEL, new Referencia('https://www.baeldung.com/cs/hld-lld', 'High Level Vs Low Level', ANALISIS_KEY, 'High Level Vs Low Level', '2024/09/20').addRelatedItem(ESTRATEGIAS_DESARROLLO_SLDC).addRelatedItem(ESTRATEGIAS_DESARROLLO_DDD).addRelatedItem(PERSISTENCY_ERD)],
+    [ANALISIS_SYSTEM_DESIGN_CONCEPTS, new Referencia('https://www.linkedin.com/posts/brijpandeyji_top-12-system-design-concepts-every-developer-activity-7238729739065069568-h1t6/', 'Design System Concepts', ANALISIS_KEY, 'Design System Concepts', '2024/09/29')],
 ]);
 
 export const ARQUITECTURAS_KEY = 'Arquitecturas';

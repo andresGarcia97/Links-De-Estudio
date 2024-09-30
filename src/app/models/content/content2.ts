@@ -1,8 +1,8 @@
 import {
-    ANALISIS_ALGORITHMS, ANALISIS_HIGH_LEVEL_VS_LOW_LEVEL, ANALISIS_KPI, ANALISIS_QUEUES_SYSTEM_DESIGN, COMPILACION_DECOMPILE, COMPILACION_GRAFOS,
-    COMPILACION_INSTRUMENTS, COMPILACION_STREAMS, GIT_REBASE_MERGE_SQUASH, METODOLOGIAS_AGILES, METODOLOGIAS_LEAN,
-    TESTING_ADVANCED_ANTI_PATTERNS, TESTING_DATA_CREATION, TESTING_DATA_SUT_DOC, TESTING_MOCKS, USER_HISTORIES_ESTIMATIONS,
-    USER_HISTORIES_FORMATS, USER_HISTORIES_SMART
+    ANALISIS_ALGORITHMS, ANALISIS_HIGH_LEVEL_VS_LOW_LEVEL, ANALISIS_KPI, ANALISIS_QUEUES_SYSTEM_DESIGN, ANALISIS_SYSTEM_DESIGN_CONCEPTS,
+    COMPILACION_DECOMPILE, COMPILACION_GRAFOS, COMPILACION_INSTRUMENTS, COMPILACION_STREAMS, GIT_REBASE_MERGE_SQUASH, METODOLOGIAS_AGILES,
+    METODOLOGIAS_LEAN, TESTING_ADVANCED_ANTI_PATTERNS, TESTING_DATA_CREATION, TESTING_DATA_SUT_DOC, TESTING_MOCKS,
+    USER_HISTORIES_ESTIMATIONS, USER_HISTORIES_FORMATS, USER_HISTORIES_SMART
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -500,6 +500,50 @@ export const ANALISIS =
                 ' &brvbar; Salidas    &brvbar; Codigo base                               &brvbar; Plan de diseño, plan de pruebas                     &brvbar;',
                 ' &brvbar; Etapas     &brvbar; Durante la codificación                   &brvbar; Al principio del ciclo de vida del software         &brvbar;',
                 ' &brvbar; Ejemplos   &brvbar; Normalización de BD, Domain Driven Design &brvbar; Estilos arquitectonicos, stack de tecnologias       &brvbar;',
+            ]),
+        new Item(ANALISIS_SYSTEM_DESIGN_CONCEPTS,
+            [
+                '- La complejidad de los sistemas ha crecido, cada vez se elaboran sistemas más elaborados, complejos, funcionales e interconectados ',
+                '',
+                '<strong>Colas de mensajes distribuidas:</strong> Habilita la comunicacion asincrona entre componentes ',
+                '- Mejora la la resiliencia y la escalabilidad de los sistemas ',
+                '',
+                '<strong>DNS y trafico en Internet:</strong> Traduce direcciones IP de manera que sean amigables para las personas',
+                '- Critico para el enrutamiento y el trafico de red',
+                '',
+                '<strong>Load Balancer:</strong> Distribuye el trafico entrante a traves de los servidores disponibles ',
+                '- Asegura una alta disponibilidad y confianza',
+                '',
+                '<strong>Cache:</strong> Almacena información en memoria que es accesada con mucha frecuencia ',
+                '- Reduce la carga de las bases de datos y mejora los tiempos de respuesta ',
+                '- Puede ser implementado de manera distribuida o de manera local',
+                '',
+                '<strong>Observabilidad:</strong> Proporciona información del comportamiento y del rendimiento del sistema ',
+                '- Incluye, logging, monitoreo y tracing(seguimiento)',
+                '- Esencial para solución de problemas y optimización ',
+                '',
+                '<strong>Publish-Subscribe model:</strong> Permite una arquitectura orientada a eventos ',
+                '- Desacoplamiento entre sistemas ',
+                '- Facilita el flujo de datos en tiempo real ',
+                '',
+                '<strong>Bases de Datos:</strong> Almacenan y permiten consultar datos, con o sin estructura ',
+                '- Ofrecen diversas soluciones para multiples necesidades ',
+                '- Permiten manejar datos de forma ordenada y consistente ',
+                '',
+                '<strong>Almacenamiento de información sin estructura(BLOB):</strong> Manejo de grandes datos binarios, como imagenes y videos ',
+                '- Optmizada para almancenar y buscar en grandes volumenes de estos datos ',
+                '',
+                '<strong>Unique ID Generator:</strong> Creación de IDs globales unicos para sistemas distribuidos ',
+                '- Esencial en sistemas donde la consistencia e integridad de los datos es critica ',
+                '',
+                '<strong>Task Scheduler:</strong> Maneja y ejecuta tareas entre multiples nodos ó sistemas distribuidos ',
+                '- Asegura la confiabilidad y la escalabilidad para sistemas en segundo plano ',
+                '',
+                '<strong>Escalado:</strong> Tecnicas para manejar altas cargas de trabajo ',
+                '- Incluye el escalado vertical(hardware) o horizontal(software) ',
+                '- Esencial para mantener el rendimiento aun con altos volumenes de carga ',
+                '',
+                '<strong>Rate-Limiting:</strong> Controla la tasa de peticiones para resguardar los servicios ',
             ])
     ];
 
