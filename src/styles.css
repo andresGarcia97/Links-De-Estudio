@@ -194,6 +194,12 @@
   --c2: var(--color-french-sky-blue);
 }
 
+.oscuro #snackbar {
+  color: var(--color-cultured);
+  background-color: var(--color-french-sky-blue);
+  box-shadow: 0 4px 10px var(--color-navy-blue);
+}
+
 /* fin del modo oscuro */
 
 h1,
@@ -989,4 +995,49 @@ div a.circle-link {
   50% {
     border-color: transparent;
   }
+}
+
+/* https://stackoverflow.com/questions/71608124/show-a-message-if-a-text-is-copied-successfullyalternative-to-alert */
+#snackbar {
+  visibility: hidden;
+  color: var(--color-cultured);
+  background-color: var(--color-fulvous);
+  min-width: 180px;
+  margin-left: -125px;
+  border-radius: 6px;
+  padding: 12px;
+  text-align: center;
+  left: 50%;
+  bottom: 24px;
+  z-index: 1;
+  position: fixed;
+  box-shadow: 0 4px 10px var(--color-selective-yellow);
+}
+
+/* This will be activated when the snackbar's class is 'show' which will be added through JS */
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations for fading in and out */
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
 }

@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { fromEvent } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { Item, Referencia } from 'src/app/models/models';
@@ -18,7 +18,7 @@ const key = keypressed$.pipe(
 })
 export class SectionComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private activeRoute: ActivatedRoute) { }
 
   listenArrows: any = key.subscribe((value) => {
     const event = value as KeyboardEvent;
@@ -64,7 +64,9 @@ export class SectionComponent implements OnInit {
   ngOnInit(): void {
     this.lengthItems = this.items.length - 1;
 
-    if(this.selection !== ''){
+    this.setSelectedItemByParamKey();
+
+    if (this.selection !== '') {
       this.setDataByKey(this.selection);
     }
 
@@ -146,6 +148,35 @@ export class SectionComponent implements OnInit {
 
   public showHideRelatedSections(): void {
     this.showRelatedSections = !this.showRelatedSections;
+  }
+
+  public setSelectedItemByParamKey() {
+    this.activeRoute.queryParams.subscribe(params => {
+
+      const key = params['key'];
+
+      if (key && key !== null && key !== '') {
+
+        const onlyKeySelected = this.items.map(item => item.key).filter(k => k === key);
+
+        if (onlyKeySelected.length === 1) {
+          this.selection = onlyKeySelected[0];
+        }
+
+      }
+    });
+
+  }
+
+  public copyUrlToShareAndShowSnackBar(selection: string) {
+    const snackbar = document.getElementById("snackbar");
+    snackbar!.className = "show";
+
+    const baseUrl = window.location.origin + this.router.url.split('?')[0];
+    const urlShare = `${baseUrl}?key=${selection}`
+    navigator.clipboard.writeText(urlShare);
+
+    setTimeout(() => { snackbar!.className = snackbar!.className.replace("show", ""); }, 3000);
   }
 
 }
