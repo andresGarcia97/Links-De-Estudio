@@ -4,7 +4,8 @@ import {
     PARADIGMAS_PARADIGMA_DATOS, PEOPLE_PROCESS_BLOAT, PERSISTENCY_ADVANCED_ORM, PERSISTENCY_ADVANCED_SCALING_DB,
     PERSISTENCY_ADVANCED_WAL, PERSISTENCY_DBMS, PERSISTENCY_OPTIMIZE_SLOW_QUERIES, PERSISTENCY_SCHEMAS, ANALISIS_DATA_CHANGE_DATA_CAPTURE,
     PERSISTENCY_HARD_SOFT_DELETE, ANALISIS_DATA_GOLDEN_RECORD, CALIDAD_IF_ELSE, HARDWARE_UTF8, ANALISIS_DATA_BATCH_VS_STREAM,
-    WEB_SEO, PERSISTENCY_DB_TYPES, PERSISTENCY_DL, ANALISIS_DATA_OLAP_OLTP, PERSISTENCY_ERD, WEB_GOLDEN_SIGNALS, HARDWARE_MONITOREO
+    WEB_SEO, PERSISTENCY_DB_TYPES, PERSISTENCY_DL, ANALISIS_DATA_OLAP_OLTP, PERSISTENCY_ERD, WEB_GOLDEN_SIGNALS, HARDWARE_MONITOREO,
+    PERSISTENCY_KEY_TYPES
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -1978,6 +1979,27 @@ export const BASES_DE_DATOS =
                 '- Soporte de localizaciones y GIS                                  - Se alinean con <strong>POO</strong>',
                 '<em>- Casos de uso:</em> Mapas y Sistemas de Navegación                     <em>- Casos de uso:</em> Tipos de datos complejos ',
                 '<em>- Ejemplos:</em> PostGIS, Oracle Spatial                                <em>- Ejemplos:</em> db4o, ObjectDB',
+            ]),
+        new Item(PERSISTENCY_KEY_TYPES,
+            [
+                '- Para determinar la unicidad de un registro existe el concepto de key que es sumamente importante a la hora de guardar y gestionar la información ',
+                '',
+                '<strong>key:</strong> Es un atributo que identifica de manera unica cualquier entidad en el conjunto de filas existentes ',
+                '<strong>Composite Key:</strong> <em>Key</em> que se compone de 2 o más atributos',
+                '<strong>Natural Key:</strong> Es una <em>Key</em> formada por atributos del mundo real, como puede ser la identificación de una persona ',
+                '<strong>Surrogate Key:</strong> Una llave que garantiza la unicidad, pero no tienen ningun significado para la logica de negocio ',
+                '<strong>Candidate Key:</strong> Una entidad puede ser identificada de varias formas, por lo que cada posibilidad es un candidato para ser la clave principal ',
+                '<strong>Primary Key:</strong> La clave preferida de acuerdo al tipo de entidad y su significado para el negocio',
+                '<strong>Alternate Key:</strong> La clave segundaria tambien es unica en cada registro, util para otros escenarios ',
+                '<strong>Foreign Key:</strong> Un o más atributos dentro de una entidad que representan una clave/referencia hacia otra entidad ',
+                '',
+                '<strong>Claves sustitutivas:</strong>',
+                '<strong>- Valores automaticos:</strong> creadospor la misma BD, aunque esto cambia de acuerdo a cada motor, por lo que pueden ser secuencias o valores autoicrementales ',
+                '<strong>- MAX() + 1:</strong> Es una estrategia comun donde siempre se aumenta el identificador en base al ultimo registro, conllevando a problemas de rendimiento ',
+                '<strong>- UUID ó GUID:</strong> Son valores de 128 bits que se crean a partir de un hash de identificadores unicos, como puede ser la fecha y hora del host',
+                '<strong>- Valores altos y bajos:</strong> Tiene 2 partes logicas, las cuales aumentan y reinician de manera separada; 17010000, 17010001... 17019999 -> 17020000, 17020001',
+                '<strong>- Claves inteligentes:</strong> Contienen 2 o más partes que brindan significado, como el codigo postal, nombres, identificacion, ',
+                ' - esto No se recomienda debido a que estas claves cambian con el tiempo y son complejas de mantener',
             ])
     ];
 

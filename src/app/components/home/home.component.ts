@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { ANALISIS_SYSTEM_DESIGN_CONCEPTS, LinkReferencia } from 'src/app/models/linkReferencia';
+import { LAST_ITEM, LinkReferencia } from 'src/app/models/linkReferencia';
 
 const references = new LinkReferencia()
 
@@ -17,7 +17,7 @@ export class HomeComponent {
   }
 
   public routeToLastItem(): void {
-    const newItem = ANALISIS_SYSTEM_DESIGN_CONCEPTS;
+    const newItem = LAST_ITEM;
     const section = references.components.get(newItem)?.component!;
     this.router.navigateByUrl(`/${references.routesAndSections.get(section)}`, { state: { newItem } })
   }

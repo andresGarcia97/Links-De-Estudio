@@ -114,6 +114,7 @@ export const PERSISTENCY_OPTIMIZE_SLOW_QUERIES = 'optimizeSlowQueries';
 export const PERSISTENCY_SCHEMAS = 'schemaPhysicVSschemaLogical';
 export const PERSISTENCY_HARD_SOFT_DELETE = 'hardAndSoftDelete';
 export const PERSISTENCY_DB_TYPES = 'dataBasesTypes';
+export const PERSISTENCY_KEY_TYPES = 'keysTypes';
 export const PERSISTENCY_DBMS = 'dbms'
 export const PERSISTENCY_DL = 'dl'
 export const PERSISTENCY_ERD = 'erd'
@@ -161,6 +162,8 @@ export const REQUISITOS_REQUIREMENTS_ENGINEERING = "requirementsEngineering";
 export const USER_HISTORIES_SMART = 'smart';
 export const USER_HISTORIES_FORMATS = 'historiesFormats';
 export const USER_HISTORIES_ESTIMATIONS = 'historiasEstimacionAgil';
+
+export const LAST_ITEM = PERSISTENCY_KEY_TYPES;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -780,6 +783,7 @@ export const PERSISTENCY_REF = new Map<string, Referencia>([
     [PERSISTENCY_SCHEMAS, new Referencia('https://buttondown.email/jaffray/archive/in-codd-we-trust-or-not', 'Esquema Fisico Vs Esquema Logico', PERSISTENCY_KEY, 'Esquemas (Schema)', '2024/07/16')],
     [PERSISTENCY_HARD_SOFT_DELETE, new Referencia('https://surajsinghbisht054.medium.com/understanding-soft-delete-and-hard-delete-in-software-development-best-practices-and-importance-539a935d71b5', 'Borrado Fisico Vs Logico', PERSISTENCY_KEY, 'Hard/Soft Delete', '2024/08/10')],
     [PERSISTENCY_DB_TYPES, new Referencia('https://www.linkedin.com/posts/brijpandeyji_as-data-architectures-evolve-choosing-the-activity-7234400741543587841-sp_I/', 'Tipos de Bases de Datos', PERSISTENCY_KEY, 'Tipos de BD', '2024/09/12').addRelatedItem(POO_POO)],
+    [PERSISTENCY_KEY_TYPES, new Referencia('https://agiledata.org/essays/keys.html', 'Tipos de Keys', PERSISTENCY_KEY, 'Tipos de Keys', '2024/10/06')],
 ]);
 
 export const PERSISTENCY_ADVANCED_KEY = 'BD Avanzado'
