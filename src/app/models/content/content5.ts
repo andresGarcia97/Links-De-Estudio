@@ -3,8 +3,8 @@ import {
     CONOCIMIENTOS_EMPIRICOS_STAGES_COMPETENCE_MODEL, META_ESTRUCTURAS_DEPRECATION,
     META_ESTRUCTURAS_ESTRUCTURAS_DATOS, META_ESTRUCTURAS_ESTRUCTURAS_DATOS_2, META_ESTRUCTURAS_MAQUINA_ESTADOS,
     META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION, META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL, NUBE_CAP_TEOREMA,
-    NUBE_MICROSERVICES_BEST_PRACTICES, NUBE_OBSERVABILIDAD, PATRONES_CLOUD_DESIGN_PATTERNS, PATRONES_PERSISTENCE_PATTERNS,
-    PATRONES_STRANGLER_FIG
+    NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, NUBE_MICROSERVICES_BEST_PRACTICES, NUBE_OBSERVABILIDAD, PATRONES_CLOUD_DESIGN_PATTERNS,
+    PATRONES_PERSISTENCE_PATTERNS, PATRONES_STRANGLER_FIG
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -679,7 +679,7 @@ export const NUBE =
                 '- Aunque este metodo es normal hoy en dia, tambien se puede acceder a los sitios directamente por medio de una IP obteniendo el dominio del sitio ',
                 '- Si un servidor no encuentra la información solicitada, este la restransmite a otros en la red hasta dar con un resultado ',
             ]),
-        new Item('falaciesDistributedSystems',
+        new Item(NUBE_FALACIES_DYSTRIBUTED_SYSTEMS,
             [
                 '- Que un sistema sea Distribuido no solo tiene beneficios, tambien enfrenta nuevos problemas, que son iherentes a los microservicios y a su separación ',
                 '- Suelen haber falacias a nivel generalizado, que no siempre se contemplan a la hora de solucionar problemas, pero que siempre estan presentes ',
@@ -687,25 +687,27 @@ export const NUBE =
                 '<strong>La red es confiable:</strong> Para construir un programa confiable, se debe aceptar el hecho de que toda comunicación puede fallar, ',
                 ' - y se debe tener una politica para recuperarse, como realizar reintentos o el patron <em>store and forward</em> para poder recuperarse ',
                 '',
-                '<strong>Sin Latencia:</strong> Directamente relacionada a las distancias fisicas, siempre esta presente en toda comunicación, nunca es <strong>0</strong>',
+                '<strong>Sin Latencia:</strong> Directamente relacionada a las distancias fisicas, siempre esta presente en toda comunicación y nunca es <strong>0</strong>',
                 '',
                 '<strong>Ancho de banda infinito:</strong> Cada viaje es costoso, no solo por la latencia, sino lo que se ha de enviar o recibir, ',
                 ' - el tamaño de esta comunicación puede crecer hasta el punto que sature la red y provoque caidas en el sistema ',
                 '',
-                '<strong>La red es Segura:</strong> Asumir esto, o confiar en las personas, puede ser un error critico, por lo que un buen analisis, ',
+                '<strong>La red es Segura:</strong> Asumir esto como confiar en las personas, puede ser un error critico, por lo que un buen analisis, ',
                 ' - correción de errores y un diseño pensado para ser seguro no deberian faltar ',
                 '',
                 '<strong>La topologia no cambia:</strong> La estructura de la red, no siempre sera la misma, ¿ nuestro sistema esta preparado, ',
-                ' - si un sistema critico dejara de funcionar ?, tecnologias como Docker y Kubernetes casi nos hacen olvidar que esto no es 100% de sentado ',
+                ' - si un sistema critico dejara de funcionar ?, tecnologias como Docker y Kubernetes casi nos hacen olvidar que esto no es fiable al 100%',
                 '',
                 '<strong>Administración:</strong> No todo se puede controlar todo el tiempo, eventualmente el sistema crecera y evolucionara, ',
-                ' - por lo que la dependencia con otros sistemas seran inevitables, por lo que el monitoreo y la obserbavilidad deben estar al orden del dia ',
+                ' - por lo que la dependencia con otros sistemas seran inevitables, por lo que el monitoreo y la observabilidad deben estar al orden del dia ',
                 '',
                 '<strong>El costo del Transporte:</strong> Enviar datos entre sistemas es un costo omnipresente, pero esto no significa que no se pueda ',
                 ' - optimizar o migrar a protocolos de comunicación más ligeros ',
                 '',
                 '<strong>La red es Homogenea:</strong> La interoperabilidad es algo fundamental en la actualidad, pero no todo es tan ordenado y funcional, ',
                 ' - y como no todos los sistemas son iguales, se deben crear soluciones genericas que puedan ser adaptadas para nuevos sistemas ',
+                '',
+                '- No existe ninguna formula magica para solucionar estos problemas, lo maximo a lo que se llegara seran soluciones que solventen las consecuencias ',
             ]),
         new Item('loadBalancing',
             [

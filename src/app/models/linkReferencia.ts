@@ -90,6 +90,7 @@ export const PATRONES_PERSISTENCE_PATTERNS = 'persistencePatterns';
 export const PATRONES_STRANGLER_FIG = 'stranglerFig';
 export const PATRONES_CLOUD_DESIGN_PATTERNS = 'patternsCloud';
 export const NUBE_CAP_TEOREMA = 'capTeorema';
+export const NUBE_FALACIES_DYSTRIBUTED_SYSTEMS = 'falaciesDistributedSystems';
 export const NUBE_OBSERVABILIDAD = 'observabilidad';
 export const NUBE_MICROSERVICES_BEST_PRACTICES = 'microservicesBestPractices';
 export const PARADIGMAS_PARADIGMA_DATOS = 'paradigmaDatos';
@@ -106,6 +107,7 @@ export const PERSISTENCY_ADVANCED_SCALING_DB = 'scalingDataBases';
 export const PERSISTENCY_ADVANCED_ORM = 'orm'
 export const PERSISTENCY_ADVANCED_N_1_SELECTS = 'n+1selects';
 export const PERSISTENCY_ADVANCED_WAL = 'writeAheadLogs';
+export const PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS = 'unknownProblems';
 export const REFACTORING_CLEAN_CODE = 'cleanCodeRefactoring';
 export const REFACTORING_MANAGE_DEPENDENCIES = 'manageDependencies';
 export const REFACTORING_GOOD_AND_BAD_PRACTICES = 'goodAndBadPracticesRefactoring';
@@ -163,7 +165,7 @@ export const USER_HISTORIES_SMART = 'smart';
 export const USER_HISTORIES_FORMATS = 'historiesFormats';
 export const USER_HISTORIES_ESTIMATIONS = 'historiasEstimacionAgil';
 
-export const LAST_ITEM = PERSISTENCY_KEY_TYPES;
+export const LAST_ITEM = PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -328,7 +330,7 @@ export const CONOCIMIENTO_EMPIRICO = new Map<string, Referencia>([
 export const LEYES_KEY = 'Leyes';
 export const LEYES_REF = new Map<string, Referencia>([
     ['balas', new Referencia('https://gist.github.com/esparta/582e43af7b803e0aaf69', 'Balas de Plata', LEYES_KEY, 'Balas de Plata', '', '2024/07/14')],
-    [LEYES_LEHMAN, new Referencia('https://medium.com/@cartontabla/las-leyes-de-lehman-b57c623c3404', 'Leyes de Lehman', LEYES_KEY, 'Leyes de Lehman', '', '2024/09/22')],
+    [LEYES_LEHMAN, new Referencia('https://medium.com/@cartontabla/las-leyes-de-lehman-b57c623c3404', 'Leyes de Lehman - Evolución del software', LEYES_KEY, 'Leyes de Lehman', '', '2024/09/22')],
     [LEYES_CONWAY, new Referencia('https://www.javiergarzas.com/2015/06/conway.html', 'Ley de Conway', LEYES_KEY, 'Ley de Conway')],
     ['murphy', new Referencia('https://www.caracteristicas.co/ley-de-murphy/', 'Ley de Murphy', LEYES_KEY, 'Ley de Murphy')],
     ['pendulo', new Referencia('http://www.grupocrece.es/blog/Psicolog%C3%ADala-ley-del-pndulo-en-psicologa', 'Ley del pendulo', LEYES_KEY, 'Ley del pendulo')],
@@ -513,7 +515,8 @@ export const NUBE_REF = new Map<string, Referencia>([
     ['migracionesNube', new Referencia('https://www.paradigmadigital.com/techbiz/mitos-lift-shift-mentiras-migraciones-cloud/', 'Migraciones hacia la nube y las 6R', NUBE_KEY, 'Migraciones')],
     [NUBE_CAP_TEOREMA, new Referencia('https://www.ionos.es/digitalguide/servidores/know-how/que-es-el-cap-theorem/', 'Coherencia, Disponibilidad y Tolerancia', NUBE_KEY, 'Teorema CAP')],
     ['dns', new Referencia('https://www.ionos.es/digitalguide/servidores/know-how/que-es-el-servidor-dns-y-como-funciona/', 'Servidor DNS', NUBE_KEY, 'Servidor DNS')],
-    ['falaciesDistributedSystems', new Referencia('https://architecturenotes.co/fallacies-of-distributed-systems/', 'Sistemas Distribuidos', NUBE_KEY, 'Sistemas Distribuidos')],
+    //['falaciesDistributedSystems', new Referencia('https://architecturenotes.co/fallacies-of-distributed-systems/', 'Sistemas Distribuidos', NUBE_KEY, 'Sistemas Distribuidos')],
+    [NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, new Referencia('https://www.genbeta.com/desarrollo/las-8-falacias-de-la-computacion-distribuida', 'Falacias Sistemas Distribuidos', NUBE_KEY, 'Sistemas Distribuidos', '', '2024/10/06')],
     ['loadBalancing', new Referencia('https://aws.amazon.com/es/what-is/load-balancing/', 'Balancear la Carga', NUBE_KEY, 'Balanceador de carga')],
     ['latencia', new Referencia('https://blog.bytebytego.com/p/ep110-top-5-strategies-to-reduce#top-strategies-to-reduce-latency', 'Reducir la latencia', NUBE_KEY, 'Latencia', '2024/05/12')],
     [NUBE_OBSERVABILIDAD, new Referencia('https://medium.com/@rcougil/software-observabilidad-logs-m%C3%A9tricas-y-trazabilidad-d5bcca56608d', 'Observabilidad', NUBE_KEY, 'Observabilidad', '2024/05/26')],
@@ -804,6 +807,7 @@ export const PERSISTENCY_ADVANCED_REF = new Map<string, Referencia>([
     ['acidVSbase', new Referencia('https://phoenixnap.com/kb/acid-vs-base', 'BASE', PERSISTENCY_ADVANCED_KEY, 'BASE', '2023/12/04')],
     [PERSISTENCY_ADVANCED_SCALING_DB, new Referencia('https://blog.bytebytego.com/p/ep114-7-must-know-strategies-to-scale', 'Estrategias para escalar una BD', PERSISTENCY_ADVANCED_KEY, 'Escalamiento', '2024/06/07')],
     [PERSISTENCY_ADVANCED_WAL, new Referencia('https://medium.com/@vinciabhinav7/write-ahead-logs-but-why-494c3efd722d', 'Registros de escritura anticipada (WAL)', PERSISTENCY_ADVANCED_KEY, 'WAL', '2024/06/15').addRelatedItem(META_CARACTERISTICAS_META_DATOS).addRelatedItem(PERSISTENCY_DBMS)],
+    [PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS, new Referencia('https://rakyll.medium.com/things-i-wished-more-developers-knew-about-databases-2d0178464f78', 'Problemas desconocidos', PERSISTENCY_ADVANCED_KEY, 'Problemas deconocidos', '2024/10/06').addRelatedItem(NUBE_FALACIES_DYSTRIBUTED_SYSTEMS)],
 ]);
 
 export const UML_KEY = 'UML';
