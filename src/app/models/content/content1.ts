@@ -5,7 +5,7 @@ import {
     PERSISTENCY_ADVANCED_WAL, PERSISTENCY_DBMS, PERSISTENCY_OPTIMIZE_SLOW_QUERIES, PERSISTENCY_SCHEMAS, ANALISIS_DATA_CHANGE_DATA_CAPTURE,
     PERSISTENCY_HARD_SOFT_DELETE, ANALISIS_DATA_GOLDEN_RECORD, CALIDAD_IF_ELSE, HARDWARE_UTF8, ANALISIS_DATA_BATCH_VS_STREAM,
     WEB_SEO, PERSISTENCY_DB_TYPES, PERSISTENCY_DL, ANALISIS_DATA_OLAP_OLTP, PERSISTENCY_ERD, WEB_GOLDEN_SIGNALS, HARDWARE_MONITOREO,
-    PERSISTENCY_KEY_TYPES, PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS
+    PERSISTENCY_KEY_TYPES, PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS, PERSISTENCY_ADVANCED_PARTITIONING
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -2327,5 +2327,25 @@ export const BASE_DE_DATOS_AVANZADO =
                 ' - La BD anterior solo deberia quedar para lecturas, y los datos faltantes se migran hasta reducir el uso a <strong>0</strong> ',
                 '',
                 '- El crecimiento significativo de los datos genera imprevisibilidad, incluso si se tiene conocimiento del funcionamiento interno ',
+            ]),
+        new Item(PERSISTENCY_ADVANCED_PARTITIONING,
+            [
+                '- Es una tecnica donde grandes volumenes de datos se subdividen en conjuntos más pequeños y manejables ',
+                '- Generalmente se hacen particiones horizontales(filas), pero tambien se pueden hacer de manera vertical(columnas)',
+                '- Esto se hace con el fin de mejorar el rendimiento y la administración de los datos, para lo cual existen diversos tipos: ',
+                '',
+                '<strong>Rangos:</strong> Permite dividir los datos de acuerdo a rangos de valores, como fechas o caracteres',
+                '<strong>Listas:</strong> Se crean regiones o sets de datos que contienen algun dato por el cual puedan ser agrupados ',
+                '<strong>Hash:</strong> Se usa una función hash para distribuir los datos de manera uniforme ',
+                '<strong>Composite:</strong> Se combinan las formas anteriores de acuerdo a las necesidades ',
+                '',
+                '<strong>Inserciones:</strong>',
+                '- Cada inserción debe validar mediante la llave a que partición pertenece, garantizando la integridad de los datos ',
+                '- Las particiones se pueden crear y destruir de manera dinamica, por lo que el metodo de particionamiento tambien puede cambiarse ',
+                '',
+                '<strong>Consultas:</strong>',
+                '- Se validan que particiones cumplen con las condiciones o de lo contrario se <em>podan</em> descartando datos sin necesidad de analizarlos',
+                '- Las consulta se puede paralelizar para que se consulten varias particiones al mismo tiempo',
+                '- Se reduce el acceso a los datos al solamente consultar las particiones relevantes ',
             ])
     ];
