@@ -6,7 +6,8 @@ import {
     META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM, META_CARACTERISTICAS_META_DATOS, POO_INMUTABILITY, POO_POO, POO_POO_PILARES,
     FRAMEWORKS_FRAMEWORKS, META_CARACTERISTICAS_ANOTATIONS, META_CARACTERISTICAS_REFLEXION, ESTRATEGIAS_DESARROLLO_TDD,
     LEYES_KIDLIN, AGILES_DEMING, ESTRATEGIAS_DESARROLLO_DDD, META_CARACTERISTICAS_BACKTRACKING, CONTENEDORES_ARQUITECTURE,
-    ARQUITECTURAS_MICRO_SERVICES, AGILES_PRIORITIZATION, AGILES_PLANNING_POKER, AGILES_5S, LEYES_CONWAY
+    ARQUITECTURAS_MICRO_SERVICES, AGILES_PRIORITIZATION, AGILES_PLANNING_POKER, AGILES_5S, LEYES_CONWAY,
+    MALAS_PRACTICAS_DEFAULT_MICROSERVICES
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -2118,8 +2119,8 @@ export const MALAS_PRACTICAS =
             ]),
         new Item('deathByMicroservices',
             [
-                '- La complejidad excesiva no es sinoninimo de buenos sistemas, y tener un sistema complejo, adaptado para crecer, pero que simplemente nunca crecera ',
-                ' - es un desperdicio de tiempo y dinero, solo por estar al lado de las grandes tecnologicas y seguir sus practicas ',
+                '- La complejidad excesiva no es sinonimo de buenos sistemas, y tener un sistema complejo, adaptado para crecer, pero que simplemente nunca crecera ',
+                ' - es un desperdicio de tiempo y dinero, solo por estar al lado de las grandes compañias tecnologicas y sus practicas ',
                 '',
                 '- Los sistemas distribuidos eran uno de los ultimos recursos a usar, ya que son complejos y resuelven problemas igual de complejos ',
                 '- Los monolitos no son malos, mantienen una base solida y evitan una constelación de microservicios más paquidermica que un monolito bien mantenido ',
@@ -2131,9 +2132,9 @@ export const MALAS_PRACTICAS =
                 '- La teoria dicta que equipos pequeños, pueden manejar microservicios pequeños, sin grandes problemas de versiones o compatibilidad ',
                 '- Un monolito no sera una panacea, pero no agrega más problemas de los que ya existen, cosa que los microservicios pueden hacer con solo existir ',
                 '',
-                '- Un gran perdidad y que poco se menciona con el uso de microservicios, es que se deja de aplicar <strong>DRY</strong>, ya que es preferible copiar y pegar, ',
+                '- Un gran perdida y que poco se menciona con el uso de microservicios, es que se deja de aplicar <strong>DRY</strong>, ya que es preferible copiar y pegar, ',
                 ' - lo que se necesite, y en caso de que sea aplique y se extraiga en una libreria en comun, esta introduce nuevos aspectos a tener en cuenta, ',
-                ' - como el manejo de las versiones, hasta el manejo de los repositorios de codigo, hasta problemas de contexto y de alcance ',
+                ' - como el manejo de las versiones, manejo de los repositorios de codigo, hasta problemas de contexto y de alcance ',
                 '',
                 '- Tampoco se pueden ignorar las pruebas de integración, las unitarias puede que sigan funcionando con normalidad, pero la división y distribución ',
                 ' - de los componentes, hace que probarlos sea un autentico calvario, por lo que para solventar este problema, se dice que un microservicio debe ser ',
@@ -2191,5 +2192,26 @@ export const MALAS_PRACTICAS =
                 '- Esto atenta contra los principios de POO ya que existe un acoplamiento indebido ó una envidia de caracteristicas, dependiendo del caso ',
                 '- Tambien esta en contra de la <em>Ley de demeter</em> que consiste en no hablar con extraños, ni inmiscuirnos en sus responsabilidades',
                 '- No es una excepción, pero tampoco esta mal visto, que este mismo encadenamiento de metodos se de, en flujos y/o operaciones con datos'
-            ])
+            ]),
+        new Item(MALAS_PRACTICAS_DEFAULT_MICROSERVICES,
+            [
+                '- Los monolitos no son malos, ni contienen codigo mal hecho, esto siempre sera responsabilidad de los desarrolladores a cargo ',
+                '- Un punto que siempre va a estar en contra de los microservicios, es la capacidad para testearse de manera conjunta ',
+                '- El alcance de una prueba es determinado por cuanto se puede testear en una sola prueba, entre menor sea el alcance, ',
+                ' - más se alejara de la experiencia final del usuario ',
+                '',
+                '- En un monolito el scope(alcanze) es facil debido a que todo esta contenido dentro de una aplicación que hace todo ',
+                '- En cambio en los microservicios, la complejidad del testing es directamente proporcional a sus relaciones y su funcionamiento en conjunto ',
+                '- Para hacer estas pruebas es necesario en ciertos escenarios usar <em>dummies</em> o <em>mocks</em> que son equivalentes, más no iguales, al comportamiento real ',
+                '',
+                '- En cambio en un monolito este mismo conjunto de pruebas puede hacerse relativamente con menos esfuerzo y recursos ',
+                '- Otro motivo en contra, es la infraestructura y la comunicación entre microservicios, que no deben ser ignoradas ',
+                ' - ya que hacen parte fundamental del diseño de la aplicación, además de las complejidades inherentes que conllevan ',
+                '',
+                '- Un monolito no es mala idea, tampoco los microservicios, la gran diferencia es que no se deberian implementar en las primeras versiones ',
+                '- Si se llega hacer la complejidad extra y las divisiones entre dominios, desviaran el foco real de la aplicación de prestar un servicio de calidad ',
+                '- Realizar un monolito, permite que las necesidades y los requerimientos puedan madurar y evolucionar de manera natural ',
+                '- Esto no evita que se pueda hacer un modelado que facilite una futura migración a microservicios, cuando sea necesaria ',
+            ]
+        )
     ];
