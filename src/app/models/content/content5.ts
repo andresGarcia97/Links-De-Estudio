@@ -4,7 +4,7 @@ import {
     META_ESTRUCTURAS_ESTRUCTURAS_DATOS, META_ESTRUCTURAS_ESTRUCTURAS_DATOS_2, META_ESTRUCTURAS_MAQUINA_ESTADOS,
     META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION, META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL, NUBE_CAP_TEOREMA,
     NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, NUBE_MICROSERVICES_BEST_PRACTICES, NUBE_OBSERVABILIDAD, PATRONES_CLOUD_DESIGN_PATTERNS,
-    PATRONES_PERSISTENCE_PATTERNS, PATRONES_STRANGLER_FIG
+    PATRONES_CQRS, PATRONES_PERSISTENCE_PATTERNS, PATRONES_STRANGLER_FIG
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -166,14 +166,15 @@ export const PATRONES =
                 ' - todas las llamadas de los procesos y de realizar el rollback completo si alguna de las operaciones falla ',
                 '- Más facil de mantener a cambio de convertirse en un posible cuello de botella ',
             ]),
-        new Item('patroncqrs',
+        new Item(PATRONES_CQRS,
             [
-                '- <strong>S</strong>egregación de <strong>R</strong>esponsabilidad de <strong>C</strong>onsultas de Comandos(<strong>Q</strong>ueries) ',
+                '- <strong>S</strong>egregación de <strong>R</strong>esponsabilidades de <strong>C</strong>omandos y <strong>Q</strong>ueries(Consultas)',
                 '- Las operaciones de lectura y escritura utilizan diferentes modelos de datos ',
                 '- Las consultas no pueden modificar los datos y los comandos pueden ser procesados de manera asincrona ',
                 '- Esto permite facilitar leer y escribir operaciones, agregando tanto seguridad como complejidad ',
                 '- Los datos no solo se manejan de maneras diferentes, tambien pueden ser almacenados de distintas formas ',
                 '- Especialmente util cuando las operaciones de lectura y de creacion/modificación difieren sustancialmente ',
+                '- Es un patron usado en las Arquitecturas basadas en eventos, sistemas que manejan consistencia eventual y colas de mensajeria '
             ]),
         new Item('patronUndoRedo',
             [

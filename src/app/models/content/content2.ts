@@ -1,8 +1,9 @@
 import {
     ANALISIS_ALGORITHMS, ANALISIS_HIGH_LEVEL_VS_LOW_LEVEL, ANALISIS_KPI, ANALISIS_QUEUES_SYSTEM_DESIGN, ANALISIS_SYSTEM_DESIGN_CONCEPTS,
-    COMPILACION_DECOMPILE, COMPILACION_GRAFOS, COMPILACION_INSTRUMENTS, COMPILACION_STREAMS, GIT_REBASE_MERGE_SQUASH, METODOLOGIAS_AGILES,
-    METODOLOGIAS_LEAN, METODOLOGIAS_MODEL_BING_BANG, METODOLOGIAS_MODEL_V, METODOLOGIAS_SCRUMBAN, TESTING_ADVANCED_ANTI_PATTERNS,
-    TESTING_DATA_CREATION, TESTING_DATA_SUT_DOC, TESTING_MOCKS, USER_HISTORIES_ESTIMATIONS, USER_HISTORIES_FORMATS, USER_HISTORIES_SMART
+    BUENAS_PRACTICAS_FUNCTIONS, COMPILACION_DECOMPILE, COMPILACION_GRAFOS, COMPILACION_INSTRUMENTS, COMPILACION_STREAMS,
+    GIT_REBASE_MERGE_SQUASH, METODOLOGIAS_AGILES, METODOLOGIAS_LEAN, METODOLOGIAS_MODEL_BING_BANG, METODOLOGIAS_MODEL_V,
+    METODOLOGIAS_SCRUMBAN, TESTING_ADVANCED_ANTI_PATTERNS, TESTING_DATA_CREATION, TESTING_DATA_SUT_DOC, TESTING_MOCKS,
+    USER_HISTORIES_ESTIMATIONS, USER_HISTORIES_FORMATS, USER_HISTORIES_SMART
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -811,6 +812,26 @@ export const BUENAS_PRACTICAS =
                 '<strong>Pensar a largo plazo:</strong> Cada vez que se hace algo, se debe hacer para que sea funcional en el corto plazo e ideal a largo plazo, ',
                 ' - engendrar soluciones faciles y descuidadas puede ser un exito en el corto plazo, pero sera una bola de nieve más adelante ',
                 ' - por lo que se trata de mantener un equilibrio, y realizar las cosas bien sin perder el horizonte',
+            ]),
+        new Item(BUENAS_PRACTICAS_FUNCTIONS,
+            [
+                '- <strong>Clean Code</strong> de <em>Robert C Martin</em> se enfoca en como escribir codigo limpio y con buenas practicas, ',
+                ' - por eso existe todo un apartado dedicado a las funciones, a continuación es un compendio de los puntos principales ',
+                '',
+                '<strong>- Funciones pequeñas:</strong> Asi son faciles de entender y de mantener, cumpliendo casi siempre el principio de Single Responsability <strong>(SOLID)</strong> ',
+                '<strong>- Solo una cosa:</strong> Realizar una sola accion permite que las funciones cumplan el principio <strong>KISS</strong> y reduzcan su complejidad ',
+                '<strong>- Nombres descriptivos:</strong> Debe reflejar el proposito de la función, pero si es demasido extenso, probablemente la función tiene demasiada responsabilidad ',
+                '<strong>- Argumentos:</strong> Se deben minimizar la cantidad en lo posible',
+                ' 0 - Ideal           (niladic) ',
+                ' 1 - Aceptable       (monadic) ',
+                ' 2 - Aceptable       (dyadic)  ',
+                ' 3 - Evitarlas       (triadic) ',
+                '+4 - No recomendable (polyadic)',
+                '',
+                '<strong>- Comand-Query Separatión:</strong> Como en <strong>CQRS</strong>, una función deberia consultar información ó cambiar estados, realizar ambas cosas pueden llevar a confusiones',
+                '<strong>- Preferir Excepciones, sobre codigos de error:</strong> Comprobar codigos de error suele ocultar las causas de los errores, ',
+                ' - además de que no ayudan a una clara separación entre la logica de negocio y el manejo de errores, además de ser una solución proveida por el lenguaje ',
+                '<strong>- Principio DRY:</strong> No te repitas, la duplicación suele ser malvada, genera inconsistencias y aumenta el riesgo de errores ',
             ])
     ];
 

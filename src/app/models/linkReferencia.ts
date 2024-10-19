@@ -80,6 +80,7 @@ export const MALAS_PRACTICAS_TRAIN_WECKS = 'trainWrecks';
 export const MALAS_PRACTICAS_DEFAULT_MICROSERVICES = 'microservicesAsDefault';
 export const BUENAS_PRACTICAS_DEMETER = 'demeter';
 export const BUENAS_PRACTICAS_COMPLEJIDAD_COGNITIVA = 'complejidadCognitiva';
+export const BUENAS_PRACTICAS_FUNCTIONS = 'functions';
 export const AGILES_5S = '5S';
 export const AGILES_PLANNING_POKER = 'planningPoker';
 export const AGILES_DEMING = 'deming';
@@ -88,6 +89,7 @@ export const AGILES_PRIORITIZATION = 'prioritization';
 export const CONTENEDORES_SECURE_ORCHESTRATION = 'secureOrchestration';
 export const CONTENEDORES_ARQUITECTURE = 'arquitectureDocker';
 export const PATRONES_PERSISTENCE_PATTERNS = 'persistencePatterns';
+export const PATRONES_CQRS = 'patronCQRS';
 export const PATRONES_STRANGLER_FIG = 'stranglerFig';
 export const PATRONES_CLOUD_DESIGN_PATTERNS = 'patternsCloud';
 export const NUBE_CAP_TEOREMA = 'capTeorema';
@@ -159,7 +161,9 @@ export const ANALISIS_SYSTEM_DESIGN_CONCEPTS = 'systemDesignConcepts';
 export const VERSIONAMIENTO_LICENSES_AND_DATA = 'licencesAndData';
 export const VERSIONAMIENTO_DEPENDENCIES_ORDER = 'dependenciesOrder';
 export const CALIDAD_IF_ELSE = 'eliminatingIfElse';
-export const PRINCIPIOS_KISS = 'kiss';
+export const PRINCIPIOS_SOLID = 'SOLID';
+export const PRINCIPIOS_KISS = 'KISS';
+export const PRINCIPIOS_DRY = 'DRY';
 export const CD_CI_CELL_BASED_ARQUITECTURE = "cellBasedArquitecture";
 export const WEB_SEO = "seo";
 export const WEB_GOLDEN_SIGNALS = "goldenSignals";
@@ -170,7 +174,7 @@ export const USER_HISTORIES_SMART = 'smart';
 export const USER_HISTORIES_FORMATS = 'historiesFormats';
 export const USER_HISTORIES_ESTIMATIONS = 'historiasEstimacionAgil';
 
-export const LAST_ITEM = MALAS_PRACTICAS_DEFAULT_MICROSERVICES;
+export const LAST_ITEM = BUENAS_PRACTICAS_FUNCTIONS;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -263,7 +267,8 @@ export const BUENAS_PRACTICAS_REF = new Map<string, Referencia>([
     ['guardClauses', new Referencia('https://artansoft.com/2017/01/guard-clauses-definicion-beneficios/', 'Guard clauses', BUENAS_PRACTICAS_KEY, 'Guard Clauses')],
     ['semanticConstructors', new Referencia('https://medium.com/all-you-need-is-clean-code/constructores-sem%C3%A1nticos-ae7ac70b23aa', 'Constructores Semanticos', BUENAS_PRACTICAS_KEY, 'Constructores Semanticos')],
     ['exceptionGoodPractices', new Referencia('https://javachallengers.com/mistakes-when-using-exceptions/', 'Manejo de Excepciones', BUENAS_PRACTICAS_KEY, 'Manejo de Excepciones')],
-    ['goodHabits', new Referencia('https://vadimkravcenko.com/shorts/habits-of-great-software-engineers/', 'Buenos habitos de un desarrollador', BUENAS_PRACTICAS_KEY, 'Buenos habitos')]
+    ['goodHabits', new Referencia('https://vadimkravcenko.com/shorts/habits-of-great-software-engineers/', 'Buenos habitos de un desarrollador', BUENAS_PRACTICAS_KEY, 'Buenos habitos')],
+    [BUENAS_PRACTICAS_FUNCTIONS, new Referencia('https://medium.com/@akineralkan/clean-code-notes-chapter-3-functions-de4a30191300', 'Buenas practicas, Funciones', BUENAS_PRACTICAS_KEY, 'Funciones', '2024/10/18').addRelatedItem(PATRONES_CQRS)]
 ]);
 
 export const CALIDAD_KEY = 'Calidad';
@@ -600,7 +605,7 @@ export const PATRONES_REF = new Map<string, Referencia>([
     ['antipatronesDev', new Referencia('https://sg.com.mx/revista/11/anti-patrones-la-mejor-forma-hacer-un-pesimo-sistema-software', 'Antipatrones, Desarrollo', PATRONES_KEY, 'Anti Patrones, Desarrollo')],
     ['dobleDespacho', new Referencia('https://blog.nicopaez.com/2016/11/09/una-alternativa-al-double-dispatch/', 'Patron doble despacho', PATRONES_KEY, 'Doble despacho')],
     ['patronSaga', new Referencia('https://unpocodejava.com/2020/01/02/que-es-el-patron-saga/', 'Patron Saga', PATRONES_KEY, 'Patron saga')],
-    ['patroncqrs', new Referencia('https://learn.microsoft.com/es-mx/azure/architecture/patterns/cqrs', 'Patron CQRS', PATRONES_KEY, 'Patron CQRS')],
+    [PATRONES_CQRS, new Referencia('https://learn.microsoft.com/es-mx/azure/architecture/patterns/cqrs', 'Patron CQRS', PATRONES_KEY, 'Patron CQRS', '', '2024/10/18')],
     ['patronUndoRedo', new Referencia('https://medium.com/dottech/implementando-undo-redo-con-ngrx-o-redux-f8ef5de535ef', 'Patron Undo-Redo', PATRONES_KEY, 'Patron undo-redo')],
     ['tiposDePatrones', new Referencia('https://www.javiergarzas.com/2014/08/tipos-patrones-software.html', 'Tipos de patrones', PATRONES_KEY, 'Tipos de Patrones')],
     [PATRONES_STRANGLER_FIG, new Referencia('https://martinfowler.com/bliki/StranglerFigApplication.html', 'StranglerFig App', PATRONES_KEY, 'StranglerFig App', '', '2024/09/22').addRelatedItem(LEYES_CONWAY)],
@@ -726,11 +731,11 @@ export const REQUISITOS_REF = new Map<string, Referencia>([
 
 export const PRINCIPIOS_KEY = 'Principios';
 export const PRINCIPIOS_REF = new Map<string, Referencia>([
-    ['solid', new Referencia('https://profile.es/blog/principios-solid-desarrollo-software-calidad/', 'Principio SOLID', PRINCIPIOS_KEY, 'SOLID')],
+    [PRINCIPIOS_SOLID, new Referencia('https://profile.es/blog/principios-solid-desarrollo-software-calidad/', 'Principios SOLID', PRINCIPIOS_KEY, 'SOLID')],
     [PRINCIPIOS_KISS, new Referencia('https://manuelzapata.co/principio-kiss-keep-it-simple-stupid/', 'Mantenlo simple, estupido', PRINCIPIOS_KEY, 'KISS')],
     ['yagni', new Referencia('https://www.genbeta.com/desarrollo/la-navaja-de-occam-kiss-y-yagni-la-simplicidad-en-el-codigo-no-deberia-ser-solo-postureo-developer', 'No vas a necesitarlo', PRINCIPIOS_KEY, 'YAGNI')],
     ['occam', new Referencia('https://www.genbeta.com/desarrollo/la-navaja-de-occam-kiss-y-yagni-la-simplicidad-en-el-codigo-no-deberia-ser-solo-postureo-developer', 'La navaja de Occam', PRINCIPIOS_KEY, 'Occam')],
-    ['dry', new Referencia('https://tantacom.com/principios-diseno-software-kiss-dry-solid/', 'No te repitas a ti mismo', PRINCIPIOS_KEY, 'DRY')],
+    [PRINCIPIOS_DRY, new Referencia('https://medium.com/@psdevraye/mastering-the-dry-principle-in-java-a-guide-to-cleaner-code-afd889bfca42', 'No te repitas', PRINCIPIOS_KEY, 'DRY', '', '2024/10/18')],
     ['hollywood', new Referencia('https://www.genbeta.com/desarrollo/doce-principios-de-diseno-que-todo-desarrollador-deberia-conocer', 'No nos llames, nosotros te llamamos', PRINCIPIOS_KEY, 'Hollywood')],
     ['tellDontAsk', new Referencia('https://www.disrupciontecnologica.com/tell-dont-ask/?reload=977836', 'Dile, no le preguntes', PRINCIPIOS_KEY, 'TDA')],
     ['stupid', new Referencia('https://williamdurand.fr/2013/07/30/from-stupid-to-solid-code/#singleton', 'NO seas S.T.U.P.I.D', PRINCIPIOS_KEY, 'STUPID')],

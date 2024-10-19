@@ -1,7 +1,8 @@
 import {
-    CD_CI_CELL_BASED_ARQUITECTURE, PRINCIPIOS_KISS, REFACTORING_CLEAN_CODE, REFACTORING_GOOD_AND_BAD_PRACTICES, REFACTORING_LEGACY_CODE,
-    REFACTORING_MANAGE_DEPENDENCIES, REQUISITOS_AMBIGUITY, REQUISITOS_BUSINESS_VALUE, REQUISITOS_REQUIREMENTS_ENGINEERING,
-    SECURITY_AUTHENTICATION_WAYS, SECURITY_LEAST_PRIVILEGE, SECURITY_PROTOCOLOS_SEGURITY, VERSIONAMIENTO_DEPENDENCIES_ORDER
+    CD_CI_CELL_BASED_ARQUITECTURE, PRINCIPIOS_DRY, PRINCIPIOS_KISS, PRINCIPIOS_SOLID, REFACTORING_CLEAN_CODE,
+    REFACTORING_GOOD_AND_BAD_PRACTICES, REFACTORING_LEGACY_CODE, REFACTORING_MANAGE_DEPENDENCIES, REQUISITOS_AMBIGUITY,
+    REQUISITOS_BUSINESS_VALUE, REQUISITOS_REQUIREMENTS_ENGINEERING, SECURITY_AUTHENTICATION_WAYS, SECURITY_LEAST_PRIVILEGE,
+    SECURITY_PROTOCOLOS_SEGURITY, VERSIONAMIENTO_DEPENDENCIES_ORDER
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -418,7 +419,7 @@ export const VERSIONAMIENTO =
 
 export const PRINCIPIOS =
     [
-        new Item('solid',
+        new Item(PRINCIPIOS_SOLID,
             [
                 '<em>S</em> <strong>Responsabilidad única:</strong>     Una cosa <strong>X</strong> solo deberia hacer y conocer cosas de su competencia, si no se tendria un acoplamiento indeseado ',
                 '<em>O</em> <strong>Abierto/Cerrado:</strong>           Casi siempre sera mejor añadir nuevos comportamientos o funciones que modificar los existentes ',
@@ -445,12 +446,14 @@ export const PRINCIPIOS =
                 '- En igualdad de condiciones la solución más optima prevalecera',
                 '- Simplificar las cosas, no implica que se deba ignorar la complejidad, solo que se debe reducir lo más posible '
             ]),
-        new Item('dry',
+        new Item(PRINCIPIOS_DRY,
             [
-                '- Evita repetir código siempre que sea posible y que no se genere acoplamiento',
+                '- Evita repetir código siempre que sea posible en aras de reducir el acoplamiento y mejorar la cohesión ',
                 '- Incrementa la mantenibilidad del código, modularizando y haciendo partes pequeñas y manejables ',
-                '- Facilita la refactorización, y la creación de partes atomicas e independientes, que se puedan juntar ',
+                '- Facilita la refactorización, y la creación de partes atomicas, que se puedan juntar para realizar acciones más complejas ',
                 '- Implementa código reutilizable, de manera que sea util y mantenible dentro del sistema ',
+                '- Más importante que el NO duplicar codigo es el NO duplicar conceptos que tengan el mismo significado ',
+                '- No siempre es aplicable, puede existir la duplicación en vez de mantener una mala abstracción/generalización '
             ]),
         new Item('hollywood',
             [
