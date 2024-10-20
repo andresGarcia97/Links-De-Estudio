@@ -71,6 +71,7 @@ export const META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM = 'concurrencyAndP
 export const META_CARACTERISTICAS_BOILER_PLATE = 'boilerPlate';
 export const META_CARACTERISTICAS_BACKTRACKING ='backtracking';
 export const META_CARACTERISTICAS_ANOTATIONS = 'anottations';
+export const META_CARACTERISTICAS_CACHE_AND_TYPES = 'cacheReadWriteStrategy';
 export const LEYES_HYRUM = 'hyrum';
 export const LEYES_LEHMAN = 'lehman';
 export const LEYES_CONWAY = 'conway';
@@ -174,7 +175,7 @@ export const USER_HISTORIES_SMART = 'smart';
 export const USER_HISTORIES_FORMATS = 'historiesFormats';
 export const USER_HISTORIES_ESTIMATIONS = 'historiasEstimacionAgil';
 
-export const LAST_ITEM = BUENAS_PRACTICAS_FUNCTIONS;
+export const LAST_ITEM = META_CARACTERISTICAS_CACHE_AND_TYPES;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -477,6 +478,7 @@ export const META_CARATERISTICAS_REF = new Map<string, Referencia>([
     ['blockingAndNoBlocking', new Referencia('https://www.geeksforgeeks.org/blocking-and-nonblocking-io-in-operating-system/', 'Operaciones Bloqueantes', META_CARACTERISTICAS_KEY, 'Bloqueos/Sin Bloqueos', '2024/05/12')],
     [META_CARACTERISTICAS_BACKWARD_AND_BREAKING_CHANGES, new Referencia('https://github.com/kedro-org/kedro/wiki/Backwards-compatibility-and-breaking-changes', 'Retro compatibilidad y Breaking changes', META_CARACTERISTICAS_KEY, 'Cambios y compatibilidad', '2024/05/19').addRelatedItem(LEYES_HYRUM)],
     [META_CARACTERISTICAS_ANOTATIONS, new Referencia('https://vaheaslanyan7.medium.com/the-java-interview-prep-handbook-50-questions-solved-code-examples-62fed44e3e6a', 'Anotaciones', META_CARACTERISTICAS_KEY, 'Anotaciones', '2024/06/30').addRelatedItem(FRAMEWORKS_FRAMEWORKS).addRelatedItem(META_ESTRUCTURAS_DEPRECATION)],
+    [META_CARACTERISTICAS_CACHE_AND_TYPES, new Referencia('https://medium.com/@junfeng0828/d884ccac7c87', 'Estrategias del Cache', META_CARACTERISTICAS_KEY, 'Estrategias del Cache', '2024/10/19')],
 ]);
 
 export const META_ESTRUCTURAS_KEY = 'Meta-Estructuras';

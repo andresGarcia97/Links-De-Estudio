@@ -7,7 +7,7 @@ import {
     FRAMEWORKS_FRAMEWORKS, META_CARACTERISTICAS_ANOTATIONS, META_CARACTERISTICAS_REFLEXION, ESTRATEGIAS_DESARROLLO_TDD,
     LEYES_KIDLIN, AGILES_DEMING, ESTRATEGIAS_DESARROLLO_DDD, META_CARACTERISTICAS_BACKTRACKING, CONTENEDORES_ARQUITECTURE,
     ARQUITECTURAS_MICRO_SERVICES, AGILES_PRIORITIZATION, AGILES_PLANNING_POKER, AGILES_5S, LEYES_CONWAY,
-    MALAS_PRACTICAS_DEFAULT_MICROSERVICES
+    MALAS_PRACTICAS_DEFAULT_MICROSERVICES, META_CARACTERISTICAS_CACHE_AND_TYPES
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -822,6 +822,7 @@ export const META_CARACTERISTICAS =
                 '- La cache existe para diminuir la latencia e incrementar el rendimiento en operaciones costosas ',
                 '- Esta es recomendable usarla en los casos donde el rendimiento no es el esperado, o si son recursos poco mutables y muy solicitados ',
                 '- Esto significa que el sistema soporte operaciones de datos con consistencia eventual ',
+                '- Los datos en cache deberian estar acompañados de una politica de limpieza o tiempo de vida, no deberian existir sin ninguna caducidad ',
                 '',
                 '<strong>Tipos de cache:</strong>',
                 '<strong>- Local:</strong> Almacenamiento en memoria, ideal cuando la información es poca, predecible y poco mutable ',
@@ -1077,6 +1078,37 @@ export const META_CARACTERISTICAS =
                 '<strong>- @Deprecated:</strong> Para aquellos metodos y clases que ya no se deben usar, pero tampoco pueden ser removidos ',
                 '<strong>- @Override:</strong> Información util para el compilador de que debe sobreescribir el metodo de la clase padre, ya sea por herencia ó contrato ',
                 '<strong>- @SuppressWarnings:</strong> Elimina las advertencias que el compilador pueda mostrar, ya sea por desinteres o improbabilidad ',
+            ]),
+        new Item(META_CARACTERISTICAS_CACHE_AND_TYPES,
+            [
+                '- Las estrategias usadas para la escritura/lectura varian segun las necesidades de cada negocio, ya que resuelven problemas en distintos escenarios ',
+                '',
+                '<strong>Cache Aside Pattern:</strong> Es uno de los patrones más usados, la aplicación debe conocer todos los procesos que actuan sobre los datos ',
+                '<strong> Escritura:</strong> 1. Actualizar Base de Datos  <strong>Lectura:</strong> 1. Leer datos del cache y devolverlos si estan',
+                '            2. Eliminar cache                     2. Si no existen, actualizar el cache directamente con la información de la BD y regresarlos ',
+                '- ¿ Porque no se actualizan los valores ? En escenarios con mucha concurrencia esto puede generar inconsistencias en los datos tanto en cache como en la BD ',
+                '- Este patron es ideal en escenarios donde se dan muchas lecturas y pocas escrituras y la consistencia de los datos no es critica ',
+                '',
+                '<strong>Read Through Pattern:</strong> Es similar al patron de Cache Aside, pero con una capa de control de acceso adicional ',
+                ' 1. La solicitud accede a la capa de control',
+                ' 2. El control de acceso lee los datos desde la cache y los devuelve ',
+                ' 3. Si no se encuentran datos, se cargan desde la BD, se escribe en la memoria cache y se devuelven ',
+                '- Este escenario es aplicable cuando existen muchas lecturas y la consistencia de los datos requerida es relativamente baja ',
+                '- Tambien puede ayudar a reducir el problema de la primera lectura, con posibles precargas de la información ',
+                '',
+                '<strong>Write Through Pattern:</strong> Similar al Patron de <em>Read Through</em> y a diferencia de <em>Cache Aside</em> cada escritura actualiza el cache ',
+                ' 1. La solicitud accede a la capa de control',
+                ' 2. La capa de control actualiza la cache de manera atomica',
+                ' 3. Se actualia la BD de manera sincrona ',
+                '- ¿ Porque se actualizan los valores antes que en la BD ? El orden de los eventos no cobra tanta relevancia, pero si se requiere tene una gran concurrencia, ',
+                '- Se pueden usar bloqueos distribuidos para lidiar con posibles inconsistencias o si la concurrencia es elevada, especialmente durante la escritura ',
+                '',
+                '<strong>Write Behind Pattern:</strong> La escritura de los datos se hace de manera asincrona, solamente actualizando el cache cuando exista un cambio en los registros ',
+                ' 1. La aplicación solicita acceso a la capa de control ',
+                ' 2. Esta capa actualiza el cache ',
+                ' 3. Se actualiza la BD de manera asincrona y en forma de lotes(batch)',
+                '- Es el escenario donde existe la mayor posibilidad de tener problemas en la coherencia de los datos, a cambio de reducir la presión sobre la BD ',
+                '- Es util en sistemas donde se tengan una cantidad incesante de escrituras que requieran ser procesadas de manera eficiente ',
             ])
     ];
 
