@@ -1,9 +1,9 @@
 import {
-    ANALISIS_ALGORITHMS, ANALISIS_HIGH_LEVEL_VS_LOW_LEVEL, ANALISIS_KPI, ANALISIS_QUEUES_SYSTEM_DESIGN, ANALISIS_SYSTEM_DESIGN_CONCEPTS,
-    BUENAS_PRACTICAS_FUNCTIONS, COMPILACION_DECOMPILE, COMPILACION_GRAFOS, COMPILACION_INSTRUMENTS, COMPILACION_STREAMS,
-    GIT_REBASE_MERGE_SQUASH, METODOLOGIAS_AGILES, METODOLOGIAS_LEAN, METODOLOGIAS_MODEL_BING_BANG, METODOLOGIAS_MODEL_V,
-    METODOLOGIAS_SCRUMBAN, TESTING_ADVANCED_ANTI_PATTERNS, TESTING_DATA_CREATION, TESTING_DATA_SUT_DOC, TESTING_MOCKS,
-    USER_HISTORIES_ESTIMATIONS, USER_HISTORIES_FORMATS, USER_HISTORIES_SMART
+    ANALISIS_ALGORITHMS, ANALISIS_HIGH_LEVEL_VS_LOW_LEVEL, ANALISIS_KPI, ANALISIS_MICROSERVICES, ANALISIS_QUEUES_SYSTEM_DESIGN,
+    ANALISIS_SYSTEM_DESIGN_CONCEPTS, BUENAS_PRACTICAS_FUNCTIONS, COMPILACION_DECOMPILE, COMPILACION_GRAFOS, COMPILACION_INSTRUMENTS,
+    COMPILACION_STREAMS, GIT_REBASE_MERGE_SQUASH, METODOLOGIAS_AGILES, METODOLOGIAS_LEAN, METODOLOGIAS_MODEL_BING_BANG,
+    METODOLOGIAS_MODEL_V, METODOLOGIAS_SCRUMBAN, TESTING_ADVANCED_ANTI_PATTERNS, TESTING_DATA_CREATION, TESTING_DATA_SUT_DOC,
+    TESTING_MOCKS, USER_HISTORIES_ESTIMATIONS, USER_HISTORIES_FORMATS, USER_HISTORIES_SMART
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -545,6 +545,31 @@ export const ANALISIS =
                 '- Esencial para mantener el rendimiento aun con altos volumenes de carga ',
                 '',
                 '<strong>Rate-Limiting:</strong> Controla la tasa de peticiones para resguardar los servicios ',
+            ]),
+        new Item(ANALISIS_MICROSERVICES,
+            [
+                '- Los microservicios al ser componentes de software que priorizan la modularidad y la escalabilidad es importante que cumplan ciertas caracteristicas: ',
+                '',
+                '<strong>Principio de responsabilidad unica:</strong> Centrarse en una sola función, es un principio que aplica a multiples niveles en el desarrollo ',
+                '- Gestionar multiples responsabilidades puede generar dificultades en el mantenimiento, su comprensión, y sus acciones ',
+                '- La especialización trae grandes beneficios, desde una mejor comprensión, pasando por mejores tests, hasta un escalado más eficiente ',
+                '',
+                '<strong>Alta integración, Bajo acoplamiento:</strong> Es un principio de <em>POO</em>, pero tambien pude aplicarse para evitar Alto Acoplamiento, Baja Cohesión  ',
+                '- Un acoplamiento estrecho genera fragilidad, un cambio en un microservicio interrumpe los servicios conectados ',
+                '- La baja cohesión da lugar a responsabilidades poco claras y fronteras difusas ',
+                '',
+                '<strong>Escalabilidad y Resiliencia:</strong> Cualquier sistema debe ser capaz de gestionar picos de trafico y recuperarse de fallos ',
+                '- Un sistema diseñado en miras de ser escalable y resiliente desde el principio, adaptandose a cualquier trafico y reduciendo tiempos de interrupciones ',
+                '',
+                '<strong>Autonomia y Evolución:</strong> Los ciclos de cambios, no se deberian ver ralentizados entre microservicios ',
+                '- Que un microservicio implique cambios en otros ralentiza el desarrollo y complica el mantenimiento del sistema ',
+                '- Un acoplamiento estrecho inhibe la evolución y capacidades de escalamiento creando cuellos de botella ',
+                '',
+                '<strong>Diseño evolutivo y mejora continua:</strong> Los sistemas deben adaptarse y evolucionar en pro de cubrir nuevas necesidades y expectativas ',
+                '- Los sistemas se van refinando y adaptando constatemente, de lo contrario se volverian obsoletos e insostenible ',
+                '',
+                '- Diseñar microservicios, es una maratón, no un sprint, estos principios son pautas que deben ser adaptados segun cada necesidad ',
+                '- Aplicar estos principios ayuda a crear sistemas robustos, escalables y mantenibles, siempre con el objetivo de brindar valor, y no solo crear codigo ',
             ])
     ];
 

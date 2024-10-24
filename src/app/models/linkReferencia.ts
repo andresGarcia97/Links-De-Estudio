@@ -141,10 +141,10 @@ export const ANALISIS_DATA_SYSTEMS_INFORMATION = 'sistemsInformation';
 export const ANALISIS_DATA_DATA_STORING = 'dataStoring';
 export const ANALISIS_DATA_ETL_ELT = 'etl&elt';
 export const ANALISIS_DATA_THEORY_OF_INFORMATION = 'theoryOfInformation';
-export const ANALISIS_DATA_CHANGE_DATA_CAPTURE = "changeDataCapture";
-export const ANALISIS_DATA_GOLDEN_RECORD = "goldenRecord";
-export const ANALISIS_DATA_BATCH_VS_STREAM = "batchVsStreamProcessing";
-export const ANALISIS_DATA_OLAP_OLTP = "OLAPVsOLTP";
+export const ANALISIS_DATA_CHANGE_DATA_CAPTURE = 'changeDataCapture';
+export const ANALISIS_DATA_GOLDEN_RECORD = 'goldenRecord';
+export const ANALISIS_DATA_BATCH_VS_STREAM = 'batchVsStreamProcessing';
+export const ANALISIS_DATA_OLAP_OLTP = 'OLAPVsOLTP';
 export const GIT_REBASE_MERGE_SQUASH = 'rebaseMergeSquash';
 export const COMPILACION_GRAFOS = 'grafos';
 export const COMPILACION_STREAMS = 'streams';
@@ -159,23 +159,24 @@ export const ANALISIS_ALGORITHMS = 'algorithms';
 export const ANALISIS_QUEUES_SYSTEM_DESIGN = 'queueSystemDesign';
 export const ANALISIS_HIGH_LEVEL_VS_LOW_LEVEL = 'highLevelVsLowLevel';
 export const ANALISIS_SYSTEM_DESIGN_CONCEPTS = 'systemDesignConcepts';
+export const ANALISIS_MICROSERVICES = 'designMicroservices';
 export const VERSIONAMIENTO_LICENSES_AND_DATA = 'licencesAndData';
 export const VERSIONAMIENTO_DEPENDENCIES_ORDER = 'dependenciesOrder';
 export const CALIDAD_IF_ELSE = 'eliminatingIfElse';
 export const PRINCIPIOS_SOLID = 'SOLID';
 export const PRINCIPIOS_KISS = 'KISS';
 export const PRINCIPIOS_DRY = 'DRY';
-export const CD_CI_CELL_BASED_ARQUITECTURE = "cellBasedArquitecture";
-export const WEB_SEO = "seo";
-export const WEB_GOLDEN_SIGNALS = "goldenSignals";
-export const REQUISITOS_BUSINESS_VALUE = "valorNegocio";
-export const REQUISITOS_AMBIGUITY = "ambiguedad";
-export const REQUISITOS_REQUIREMENTS_ENGINEERING = "requirementsEngineering";
+export const CD_CI_CELL_BASED_ARQUITECTURE = 'cellBasedArquitecture';
+export const WEB_SEO = 'seo';
+export const WEB_GOLDEN_SIGNALS = 'goldenSignals';
+export const REQUISITOS_BUSINESS_VALUE = 'valorNegocio';
+export const REQUISITOS_AMBIGUITY = 'ambiguedad';
+export const REQUISITOS_REQUIREMENTS_ENGINEERING = 'requirementsEngineering';
 export const USER_HISTORIES_SMART = 'smart';
 export const USER_HISTORIES_FORMATS = 'historiesFormats';
 export const USER_HISTORIES_ESTIMATIONS = 'historiasEstimacionAgil';
 
-export const LAST_ITEM = META_CARACTERISTICAS_CACHE_AND_TYPES;
+export const LAST_ITEM = ANALISIS_MICROSERVICES;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -222,6 +223,7 @@ export const ANALISIS_REF = new Map<string, Referencia>([
     [ANALISIS_QUEUES_SYSTEM_DESIGN, new Referencia('https://levelup.gitconnected.com/message-queues-in-system-design-0440a1221023', 'Message Queues in System Design', ANALISIS_KEY, 'Message Queues', '2024/09/01').addRelatedItem(META_ESTRUCTURAS_ESTRUCTURAS_DATOS_2).addRelatedItem(APIS_REST_VS_MESSAGING)],
     [ANALISIS_HIGH_LEVEL_VS_LOW_LEVEL, new Referencia('https://www.baeldung.com/cs/hld-lld', 'High Level Vs Low Level', ANALISIS_KEY, 'High Level Vs Low Level', '2024/09/20').addRelatedItem(ESTRATEGIAS_DESARROLLO_SLDC).addRelatedItem(ESTRATEGIAS_DESARROLLO_DDD).addRelatedItem(PERSISTENCY_ERD)],
     [ANALISIS_SYSTEM_DESIGN_CONCEPTS, new Referencia('https://www.linkedin.com/posts/brijpandeyji_top-12-system-design-concepts-every-developer-activity-7238729739065069568-h1t6/', 'Design System Concepts', ANALISIS_KEY, 'Design System Concepts', '2024/09/29')],
+    [ANALISIS_MICROSERVICES, new Referencia('https://foojay.io/today/microservices-design-principles-for-well-crafted-architecture/', 'Diseño de Microservicios', ANALISIS_KEY, 'Diseño de Microservicios', '2024/10/22').addRelatedItem(PRINCIPIOS_SOLID).addRelatedItem(POO_POO)],
 ]);
 
 export const ARQUITECTURAS_KEY = 'Arquitecturas';
@@ -459,7 +461,7 @@ export const META_CARATERISTICAS_REF = new Map<string, Referencia>([
     [META_CARACTERISTICAS_REFLEXION, new Referencia('https://levelup.gitconnected.com/reflecting-on-java-unveiling-the-magic-of-reflection-7140a465ff6b', 'Auto mutabilidad del codigo', META_CARACTERISTICAS_KEY, 'Reflexión','', '2024/07/12')],
     ['asserts', new Referencia('https://www.adictosaltrabajo.com/2016/01/07/haz-tu-codigo-mas-fiable-con-asserts/', 'Comprobaciones del codigo', META_CARACTERISTICAS_KEY, 'Aserciones')],
     ['excepciones', new Referencia('https://universidad-de-los-andes.gitbooks.io/fundamentos-de-programacion/content/Nivel4/5_ManejoDeLasExcepciones.html', 'Lanzamiento y manejo de excepciones', META_CARACTERISTICAS_KEY, 'Exepciones')],
-    ['cache', new Referencia('https://medium.com/bancolombia-tech/dise%C3%B1ando-una-estrategia-de-cach%C3%A9-39366876009b', 'Cache y sus estrategias', META_CARACTERISTICAS_KEY, 'Cache')],
+    ['cache', new Referencia('https://medium.com/bancolombia-tech/dise%C3%B1ando-una-estrategia-de-cach%C3%A9-39366876009b', 'Tipos de Cache', META_CARACTERISTICAS_KEY, 'Tipos de Cache')],
     ['hilos', new Referencia('https://facturapp.weebly.com/hilos.html', 'Hilos', META_CARACTERISTICAS_KEY, 'Hilos')],
     ['argumentos', new Referencia('https://picodotdev.github.io/blog-bitix/2021/01/en-java-los-argumentos-se-pasan-por-valor-o-por-referencia/', 'Argumentos por valor y por referencia', META_CARACTERISTICAS_KEY, 'Argumentos')],
     //['concurrenciaParalelismo', new Referencia('https://codigofacilito.com/articulos/programacion-concurrente', 'Concurrencia & Paralelismo', META_CARACTERISTICAS_KEY, 'Concurrencia')],
@@ -474,7 +476,7 @@ export const META_CARATERISTICAS_REF = new Map<string, Referencia>([
     ['featureFlag', new Referencia('https://www.optimizely.com/optimization-glossary/feature-flags/', 'Feature Flags', META_CARACTERISTICAS_KEY, 'Feature Flags', '2023/11/30')],
     ['generics', new Referencia('https://medium.com/@AlexanderObregon/java-generics-type-safety-and-performance-a0864ca72a5a', 'Genericos', META_CARACTERISTICAS_KEY, 'Genericos', '2023/12/28')],
     ['memorySafety', new Referencia('https://stackoverflow.blog/2024/03/04/in-rust-we-trust-white-house-office-urges-memory-safety', 'Seguridad en la memoria', META_CARACTERISTICAS_KEY, 'Seguridad en la memoria', '2024/03/26')],
-    ['profiling', new Referencia('https://digma.ai/9-best-java-profilers-to-use-in-2024/', 'Profiling', META_CARACTERISTICAS_KEY, 'Profiling', "2024/05/05")],
+    ['profiling', new Referencia('https://digma.ai/9-best-java-profilers-to-use-in-2024/', 'Profiling', META_CARACTERISTICAS_KEY, 'Profiling', '2024/05/05')],
     ['blockingAndNoBlocking', new Referencia('https://www.geeksforgeeks.org/blocking-and-nonblocking-io-in-operating-system/', 'Operaciones Bloqueantes', META_CARACTERISTICAS_KEY, 'Bloqueos/Sin Bloqueos', '2024/05/12')],
     [META_CARACTERISTICAS_BACKWARD_AND_BREAKING_CHANGES, new Referencia('https://github.com/kedro-org/kedro/wiki/Backwards-compatibility-and-breaking-changes', 'Retro compatibilidad y Breaking changes', META_CARACTERISTICAS_KEY, 'Cambios y compatibilidad', '2024/05/19').addRelatedItem(LEYES_HYRUM)],
     [META_CARACTERISTICAS_ANOTATIONS, new Referencia('https://vaheaslanyan7.medium.com/the-java-interview-prep-handbook-50-questions-solved-code-examples-62fed44e3e6a', 'Anotaciones', META_CARACTERISTICAS_KEY, 'Anotaciones', '2024/06/30').addRelatedItem(FRAMEWORKS_FRAMEWORKS).addRelatedItem(META_ESTRUCTURAS_DEPRECATION)],
