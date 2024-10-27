@@ -64,6 +64,7 @@ export const ESTRATEGIAS_DESARROLLO_DDD = 'ddd';
 export const ESTRATEGIAS_DESARROLLO_TDD = 'tdd';
 export const ESTRATEGIAS_DESARROLLO_SCREAMING_DESIGN = 'screamingDesign';
 export const ESTRATEGIAS_DESARROLLO_SLDC = 'SLDC';
+export const ESTRATEGIAS_DESARROLLO_BFF = 'bff';
 export const META_CARACTERISTICAS_BACKWARD_AND_BREAKING_CHANGES = 'backwardAndBreakingChanges';
 export const META_CARACTERISTICAS_META_DATOS = 'metaDatos';
 export const META_CARACTERISTICAS_REFLEXION = 'reflexion';
@@ -107,6 +108,7 @@ export const METODOLOGIAS_MODEL_BING_BANG = 'metodologiaBingBang';
 export const METODOLOGIAS_MODEL_V = 'metodologiaModelV';
 export const METODOLOGIAS_SCRUMBAN = 'metodologiaScrumban';
 export const METODOLOGIAS_LEAN = 'lean';
+export const APIS_GATEWAY = 'apiGateway';
 export const APIS_REST_VS_MESSAGING = 'restVsMessaging';
 export const APIS_API_GOVERNANCE = 'apiGovernance';
 export const APIS_API_FIRST = 'apiFirst';
@@ -178,7 +180,7 @@ export const USER_HISTORIES_SMART = 'smart';
 export const USER_HISTORIES_FORMATS = 'historiesFormats';
 export const USER_HISTORIES_ESTIMATIONS = 'historiasEstimacionAgil';
 
-export const LAST_ITEM = PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL;
+export const LAST_ITEM = ESTRATEGIAS_DESARROLLO_BFF;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -391,6 +393,7 @@ export const ESTRATEGIAS_DESARROLLO_REF = new Map<string, Referencia>([
     ['bduf', new Referencia('https://www.freecodecamp.org/news/the-pros-and-cons-of-big-design-up-front-and-what-i-do-instead-375f00542dec/', 'Big Design Up Front', ESTRATEGIAS_DESARROLLO_KEY, 'BDUF')],
     [ESTRATEGIAS_DESARROLLO_SCREAMING_DESIGN, new Referencia('https://medium.com/@mubashirhussain29/the-screaming-architecture-story-08750691291f', 'Diseño a gritos', ESTRATEGIAS_DESARROLLO_KEY, 'Gritos', '2024/05/25').addRelatedItem(META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL)],
     [ESTRATEGIAS_DESARROLLO_SLDC, new Referencia('https://www.netguru.com/blog/stages-of-software-development', 'Ciclo de Vida del Desarrollo de Software', ESTRATEGIAS_DESARROLLO_KEY, 'SLDC', '2024/06/29')],
+    [ESTRATEGIAS_DESARROLLO_BFF, new Referencia('https://levelup.gitconnected.com/backend-for-frontend-bff-architecture-64fa9f316a5a', 'Backend For Frontened', ESTRATEGIAS_DESARROLLO_KEY, 'BFF', '2024/10/27').addRelatedItem(APIS_GATEWAY)],
 ]);
 
 export const FRAMEWORKS_KEY = 'Frameworks';
@@ -554,7 +557,7 @@ export const APIS_REF = new Map<string, Referencia>([
     ['httpCodes', new Referencia('https://developer.mozilla.org/es/docs/Web/HTTP/Status', 'Codigos Http', APIS_KEY, 'Codigos HTTP')],
     ['HATEOAS', new Referencia('https://www.adictosaltrabajo.com/2013/12/02/spring-hateoas/', 'HATEOAS', APIS_KEY, 'HATEOAS', '2022/11/04')],
     ['apiStandars', new Referencia('https://medium.com/@trgoodwill/writing-api-design-standards-84cb7cbb3fd7', 'Standares API', APIS_KEY, 'Standares API', '2023/01/03')],
-    ['apiGateway', new Referencia('https://nordicapis.com/whats-the-difference-between-an-api-gateway-and-a-load-balancer/', 'API Gateway', APIS_KEY, 'Api Gateway', '2023/02/05')],
+    [APIS_GATEWAY, new Referencia('https://nordicapis.com/whats-the-difference-between-an-api-gateway-and-a-load-balancer/', 'API Gateway', APIS_KEY, 'Api Gateway', '2023/02/05')],
     ['arquitecturalApiStyles', new Referencia('https://www.linkedin.com/feed/update/urn:li:activity:7095365669969350656/', 'Estilos de Arquitectura API', APIS_KEY, 'Estilos de Arquitectura API', '2023/09/08')],
     ['uri', new Referencia('https://www.techtarget.com/whatis/definition/URI-Uniform-Resource-Identifier', 'Uniform Resource Identifier', APIS_KEY, 'URI', '2023/11/03')],
     ['apiTesting', new Referencia('https://blog.bytebytego.com/p/ep83-explaining-9-types-of-api-testing#%C2%A7explaining-types-of-api-testing', 'API Testing', APIS_KEY, 'Testing in APIs', '2023/11/13')],

@@ -7,7 +7,7 @@ import {
     FRAMEWORKS_FRAMEWORKS, META_CARACTERISTICAS_ANOTATIONS, META_CARACTERISTICAS_REFLEXION, ESTRATEGIAS_DESARROLLO_TDD,
     LEYES_KIDLIN, AGILES_DEMING, ESTRATEGIAS_DESARROLLO_DDD, META_CARACTERISTICAS_BACKTRACKING, CONTENEDORES_ARQUITECTURE,
     ARQUITECTURAS_MICRO_SERVICES, AGILES_PRIORITIZATION, AGILES_PLANNING_POKER, AGILES_5S, LEYES_CONWAY,
-    MALAS_PRACTICAS_DEFAULT_MICROSERVICES, META_CARACTERISTICAS_CACHE_AND_TYPES
+    MALAS_PRACTICAS_DEFAULT_MICROSERVICES, META_CARACTERISTICAS_CACHE_AND_TYPES, ESTRATEGIAS_DESARROLLO_BFF
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -2056,6 +2056,37 @@ export const ESTATEGIAS_DESARROLLO =
                 '<strong>Mantenimiento:</strong> Con el proyecto estable y debidamente documentado, esta fase considera el exito a largo plazo ',
                 '',
                 'Un <em>SLDC</em> bien definido ayuda a gestionar los recursos y tener canales de comunicación fluidos, siempre deberia estar claro para todos los involucrados '
+            ]),
+        new Item(ESTRATEGIAS_DESARROLLO_BFF,
+            [
+                '- A medida que las aplicaciones se vuelven cada vez más distribuidas han surgido patrones para satifacer a la multitud de dispositivos conectados ',
+                '- Esta arquitectura proporciona una capa de backend dedicada para cada interfaz de frontened, en lugar de depender de un API monolitica o un <em>API Gateway</em> ',
+                '- Cada backend es independiente y se encarga de: ',
+                ' - Consolidar u orquestar las llamadas a los multiples servicios involucrados ',
+                ' - Prepara los datos en un formato util para cada cliente ',
+                ' - Maneja la logica especificada por cada frontened ',
+                '',
+                '<strong>Beneficios</strong>',
+                '- Experiencias personalizadas, cada interfaz sin importar que tipo sea, obtiene los datos que necesita sin desorden adicional ',
+                '- Complejidad reducida, al tener un solo componente encargado de todas las peticiones de obtención de datos ',
+                '- Rendimiento mejorado, al reducir los llamados a API innecesarios, además de posibilitar guardar datos en cache ',
+                '- Seguridad, al controlar las interacciones con los servicios, pueden exponer mecanismos de seguridad y limites de peticiones ',
+                '',
+                '<strong>¿ Cuando usarse ?</strong>',
+                '- Aplicaciones multiplataforma, asi cada dispositivo tiene tiene una experiencia personalizada ',
+                '- Orquestación por microservicios, Se consultan todos los microservicios necesarios y se unen los datos de forma coherente ',
+                '- Optimización de APIs, al usar microservicios o API heredadas se ayuda a ocultar las complejidades de la arquitectura subyacente ',
+                '',
+                '<strong>Desafios</strong>',
+                '- Mayores cantidades de recursos deben ser destinadas a su mantenimiento ',
+                '- Problemas de coherencia, si las transformaciones o el diseño es incorrecto, los datos entre clientes van a variar ',
+                '- Cuellos de botella, si estas capas no estan optimizadas para manejar numerosas solicitudes o realizan calculos pesados ',
+                '',
+                '<strong>Buenas practicas</strong>',
+                '- Limitar la logica empresarial presente, solamente se deberia de encargar la orquestación y union de los datos ',
+                '- Usar almacenamiento en cache, especialmente en consultas que requieren de poca latencia y sufren pocos cambios ',
+                '- Manejo de errores, centralize el manejo de errores para evitar problemas que afecten al cliente ',
+                '- Seguridad, la autenticación y autorización como el uso de limites ayudan a proteger los servicios frente a posibles ataques ',
             ])
     ];
 
@@ -2244,6 +2275,5 @@ export const MALAS_PRACTICAS =
                 '- Si se llega hacer la complejidad extra y las divisiones entre dominios, desviaran el foco real de la aplicación de prestar un servicio de calidad ',
                 '- Realizar un monolito, permite que las necesidades y los requerimientos puedan madurar y evolucionar de manera natural ',
                 '- Esto no evita que se pueda hacer un modelado que facilite una futura migración a microservicios, cuando sea necesaria ',
-            ]
-        )
+            ])
     ];

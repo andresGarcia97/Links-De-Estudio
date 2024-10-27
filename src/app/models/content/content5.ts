@@ -1,5 +1,5 @@
 import {
-    APIS_API_FIRST, APIS_API_GOVERNANCE, APIS_REST_VS_MESSAGING, CONOCIMIENTOS_EMPIRICOS_PAIR_PROGRAMMING,
+    APIS_API_FIRST, APIS_API_GOVERNANCE, APIS_GATEWAY, APIS_REST_VS_MESSAGING, CONOCIMIENTOS_EMPIRICOS_PAIR_PROGRAMMING,
     CONOCIMIENTOS_EMPIRICOS_STAGES_COMPETENCE_MODEL, META_ESTRUCTURAS_DEPRECATION,
     META_ESTRUCTURAS_ESTRUCTURAS_DATOS, META_ESTRUCTURAS_ESTRUCTURAS_DATOS_2, META_ESTRUCTURAS_MAQUINA_ESTADOS,
     META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION, META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL, NUBE_CAP_TEOREMA,
@@ -981,7 +981,7 @@ export const APIS =
                 ' - Y no se excluye de que este abierto a posibles cambios y mejoras por venir, despues de nuevas iteraciones',
                 ' - Además de que cada tema y subtema a su vez tiene fuentes de profundización, presentes en el articulo original ',
             ]),
-        new Item('apiGateway',
+        new Item(APIS_GATEWAY,
             [
                 '- Aunque sean terminos similares, un Api gateway y un Balanceador de carga son soluciones diferetes, para muchos problemas similares ',
                 '<strong>- Api Gateway:</strong> Son una capa de filtración para las ya conocidas APIs, permitiendo que los clientes puedan realizar llamados y obtener el recurso ',
