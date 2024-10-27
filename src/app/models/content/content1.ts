@@ -5,7 +5,8 @@ import {
     PERSISTENCY_ADVANCED_WAL, PERSISTENCY_DBMS, PERSISTENCY_OPTIMIZE_SLOW_QUERIES, PERSISTENCY_SCHEMAS, ANALISIS_DATA_CHANGE_DATA_CAPTURE,
     PERSISTENCY_HARD_SOFT_DELETE, ANALISIS_DATA_GOLDEN_RECORD, CALIDAD_IF_ELSE, HARDWARE_UTF8, ANALISIS_DATA_BATCH_VS_STREAM,
     WEB_SEO, PERSISTENCY_DB_TYPES, PERSISTENCY_DL, ANALISIS_DATA_OLAP_OLTP, PERSISTENCY_ERD, WEB_GOLDEN_SIGNALS, HARDWARE_MONITOREO,
-    PERSISTENCY_KEY_TYPES, PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS, PERSISTENCY_ADVANCED_PARTITIONING
+    PERSISTENCY_KEY_TYPES, PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS, PERSISTENCY_ADVANCED_PARTITIONING, PERSISTENCY_CONSISTENCY,
+    PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -2030,7 +2031,7 @@ export const BASE_DE_DATOS_AVANZADO =
                 '- Los cambios en las BD se hacen mucho más rapidos de hacer y de probar ',
                 '- El rendimientos para operaciones muy complicadas es ligeramente menor ',
             ]),
-        new Item('consistenciaEventual',
+        new Item(PERSISTENCY_CONSISTENCY,
             [
                 '- Garantiza la calidad de los servicios, con una gran disponibilidad y escalabilidad, esto aplica solamente para BD relacionales ',
                 '- Cuando la concurrencia es demasiado alta, las peticiones pueden resultar en peticiones bloqueantes ',
@@ -2347,5 +2348,27 @@ export const BASE_DE_DATOS_AVANZADO =
                 '- Se validan que particiones cumplen con las condiciones o de lo contrario se <em>podan</em> descartando datos sin necesidad de analizarlos',
                 '- Las consulta se puede paralelizar para que se consulten varias particiones al mismo tiempo',
                 '- Se reduce el acceso a los datos al solamente consultar las particiones relevantes ',
+            ]),
+        new Item(PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL,
+            [
+                '- Es una condición de los sistemas donde todas las partes del sistema alcanzan el mismo estado en algun momento, por lo que habra ',
+                ' - momentos donde temporalmente la información sera inconsistente debido a fallos o retrasos ',
+                '- Este comportamiento es inherente a los sistemas distribuidos y siempre va a estar presente, por lo que se debe controlar mediante diversas practicas ',
+                '',
+                '<strong>Basado en eventos:</strong> Los servicios emiten eventos cuando cambia algo en su estado y otros servicios lo escuchan ',
+                '- Ya sea para actualizar sus datos o realizar acciones, los servicios no se comunican directamente, por lo que estan debilmente acoplados ',
+                '- Este sistema debe ser muy resiliente debido a que los eventos pueden ser desechados o inutilizables ',
+                '',
+                '<strong>Sincronización en segundo plano:</strong> Algun trabajo en segundo plano se ejecuta periodicamente entre las diferentes BD conectadas ',
+                '- Esta sincronización suele ser más lenta y solo se da durante intervalos, en los que habra momentos durante inevitablemente los datos difieran ',
+                '- Las actualizaciones no se dan en tiempo real, por lo que se deben tener tiempos minimos que tolerar ',
+                '',
+                '<strong>Patron Saga:</strong> Divide una transacción distribuida en una serie de transacciones locales, manejadas por diferentes servicios ',
+                '- Cada vez que se termina una transacción, se inicia la siguiente y en caso de que halla algun error se activa una transacción compensatoria ',
+                '- Todo esto sucede hasta que se confirme que toda la cadena de operaciones fue completada o revertida exitosamente ',
+                '- Este patron es importante para operaciones comerciales complejas o que tienen multiples pasos los cuales deben mantener un estado coherente ',
+                '',
+                '<strong>CQRS:</strong> Separa el sistema en 2 modelos para manejar independientemente operaciones de escritura(comandos) y de lectura(consultas) ',
+                '- Cada modelo esta optimizado y contempla mecanismos de sincronización de los datos de manera asincrona ',
             ])
     ];

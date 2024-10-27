@@ -112,10 +112,12 @@ export const APIS_API_GOVERNANCE = 'apiGovernance';
 export const APIS_API_FIRST = 'apiFirst';
 export const PERSISTENCY_ADVANCED_SCALING_DB = 'scalingDataBases';
 export const PERSISTENCY_ADVANCED_ORM = 'orm'
+export const PERSISTENCY_CONSISTENCY = 'consistency'
 export const PERSISTENCY_ADVANCED_N_1_SELECTS = 'n+1selects';
 export const PERSISTENCY_ADVANCED_WAL = 'writeAheadLogs';
 export const PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS = 'unknownProblems';
 export const PERSISTENCY_ADVANCED_PARTITIONING = 'partitioning';
+export const PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL = 'consistencyEventual';
 export const REFACTORING_CLEAN_CODE = 'cleanCodeRefactoring';
 export const REFACTORING_MANAGE_DEPENDENCIES = 'manageDependencies';
 export const REFACTORING_GOOD_AND_BAD_PRACTICES = 'goodAndBadPracticesRefactoring';
@@ -176,7 +178,7 @@ export const USER_HISTORIES_SMART = 'smart';
 export const USER_HISTORIES_FORMATS = 'historiesFormats';
 export const USER_HISTORIES_ESTIMATIONS = 'historiasEstimacionAgil';
 
-export const LAST_ITEM = ANALISIS_MICROSERVICES;
+export const LAST_ITEM = PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -812,7 +814,7 @@ export const PERSISTENCY_ADVANCED_REF = new Map<string, Referencia>([
     ['nosql', new Referencia('https://pandorafms.com/blog/es/bases-de-datos-nosql/', 'Bases de Datos NO SQL', PERSISTENCY_ADVANCED_KEY, 'NoSQL')],
     ['tiposBD', new Referencia('https://www.acens.com/wp-content/images/2014/02/bbdd-nosql-wp-acens.pdf', 'Tipos de BD No SQL', PERSISTENCY_ADVANCED_KEY, 'Tipos NoSQL')],
     [PERSISTENCY_ADVANCED_ORM, new Referencia('https://programarfacil.com/blog/que-es-un-orm/', 'Mapeo Objeto-Relacional (ORM)', PERSISTENCY_ADVANCED_KEY, 'ORM')],
-    ['consistenciaEventual', new Referencia('https://medium.com/@gabanox/consistencia-eventual-en-s3-6ba5b2ecd721', 'Consistencia Eventual', PERSISTENCY_ADVANCED_KEY, 'Consistencia')],
+    [PERSISTENCY_CONSISTENCY, new Referencia('https://medium.com/@gabanox/consistencia-eventual-en-s3-6ba5b2ecd721', 'Consistencia', PERSISTENCY_ADVANCED_KEY, 'Consistencia')],
     //['algebraRelacional', new Referencia('https://sites.google.com/site/basededatosdistribuidastics/algebra-relacional', 'Algebra Relacional', PERSISTENCY_ADVANCED_KEY, 'Algebra Relacional')],
     ['algebraRelacional', new Referencia('https://lienzos.uv.mx/Uploads/resources/LenguajeAlgebraRelacional_18e0.pdf', 'Algebra Relacional', PERSISTENCY_ADVANCED_KEY, 'Algebra Relacional', '', '2024/06/07')],
     [PERSISTENCY_ADVANCED_N_1_SELECTS, new Referencia('https://stackoverflow.com/questions/97197/what-is-the-n1-selects-problem-in-orm-object-relational-mapping', 'N + 1 Problem', PERSISTENCY_ADVANCED_KEY, 'N + 1 Selects')],
@@ -827,6 +829,7 @@ export const PERSISTENCY_ADVANCED_REF = new Map<string, Referencia>([
     [PERSISTENCY_ADVANCED_WAL, new Referencia('https://medium.com/@vinciabhinav7/write-ahead-logs-but-why-494c3efd722d', 'Registros de escritura anticipada (WAL)', PERSISTENCY_ADVANCED_KEY, 'WAL', '2024/06/15').addRelatedItem(META_CARACTERISTICAS_META_DATOS).addRelatedItem(PERSISTENCY_DBMS)],
     [PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS, new Referencia('https://rakyll.medium.com/things-i-wished-more-developers-knew-about-databases-2d0178464f78', 'Problemas desconocidos', PERSISTENCY_ADVANCED_KEY, 'Problemas deconocidos', '2024/10/06').addRelatedItem(NUBE_FALACIES_DYSTRIBUTED_SYSTEMS)],
     [PERSISTENCY_ADVANCED_PARTITIONING, new Referencia('https://medium.com/@imnazimuddinasif/a-practical-overview-of-database-partitioning-59e8e318142b', 'Particiones', PERSISTENCY_ADVANCED_KEY, 'Particiones', '2024/10/07')],
+    [PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL, new Referencia('https://newsletter.systemdesigncodex.com/p/eventual-consistency-is-tricky', 'Consistencia Eventual', PERSISTENCY_ADVANCED_KEY, 'Consistencia Eventual', '2024/10/27')],
 ]);
 
 export const UML_KEY = 'UML';
