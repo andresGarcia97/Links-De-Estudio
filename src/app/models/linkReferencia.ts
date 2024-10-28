@@ -54,7 +54,9 @@ export const FRAMEWORKS_CODE_STRUCTURE = 'codeStructucture';
 export const FRAMEWORKS_IOD = 'iod';
 export const POO_POO = 'poo';
 export const POO_POO_PILARES = 'pooPilares';
+export const POO_ENLACES = 'enlaces';
 export const POO_INMUTABILITY = 'inmutability';
+export const POO_COUPLING_AND_COHESION = 'couplinAndCohesion';
 export const ARQUITECTURAS_DEFINICION = 'definicion';
 export const ARQUITECTURAS_CAPAS = 'capas';
 export const ARQUITECTURAS_MICRO_SERVICES = 'microServices';
@@ -180,7 +182,7 @@ export const USER_HISTORIES_SMART = 'smart';
 export const USER_HISTORIES_FORMATS = 'historiesFormats';
 export const USER_HISTORIES_ESTIMATIONS = 'historiasEstimacionAgil';
 
-export const LAST_ITEM = ESTRATEGIAS_DESARROLLO_BFF;
+export const LAST_ITEM = POO_COUPLING_AND_COHESION;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -656,7 +658,8 @@ export const POO_REF = new Map<string, Referencia>([
     ['herencia', new Referencia('https://www.ecured.cu/Herencia_(Inform%C3%A1tica)', 'Herencia', POO_KEY, 'Herencia')],
     ['polimorfismo', new Referencia('https://ifgeekthen.nttdata.com/es/polimorfismo-en-java-programaci%C3%B3n-orientada-objetos', 'Polimorfismo', POO_KEY, 'Polimorfismo')],
     ['herVScomp', new Referencia('https://devexperto.com/herencia-vs-composicion/', 'Herencia VS Composición', POO_KEY, 'Herencia/Composición')],
-    ['enlaces', new Referencia('https://es.fondoperlaterra.org/comdifference-between-static-and-dynamic-binding-2', 'Enlace estatico & dinamico', POO_KEY, 'Enlaces')],
+    //['enlaces', new Referencia('https://es.fondoperlaterra.org/comdifference-between-static-and-dynamic-binding-2', 'Enlace estatico & dinamico', POO_KEY, 'Enlaces')],
+    [POO_ENLACES, new Referencia('https://www.geeksforgeeks.org/static-vs-dynamic-binding-in-java/', 'Enlace estatico & dinamico', POO_KEY, 'Enlaces', '', '2024/10/27')],
     ['acoplamientoComponentes', new Referencia('https://mg-laboratory.tistory.com/189', 'Acoplamiento de componentes', POO_KEY, 'SDP, ADP, SAP')],
     ['beginingPoo', new Referencia('https://medium.com/javascript-scene/the-forgotten-history-of-oop-88d71b9b2d9f', 'Nacimiento de Poo', POO_KEY, 'Inicios de POO')],
     [POO_INMUTABILITY, new Referencia('https://www.campusmvp.es/recursos/post/programacion-funcional-inmutabilidad-y-funciones-puras.aspx', 'Inmutabilidad', POO_KEY, 'Inmutabilidad')],
@@ -664,6 +667,7 @@ export const POO_REF = new Map<string, Referencia>([
     ['factoryMethods', new Referencia('https://www.baeldung.com/java-constructors-vs-static-factory-methods', 'Factory Methods', POO_KEY, 'Factory Methods', '2022/11/07')],
     ['interfacesOverInheritance', new Referencia('https://www.infoworld.com/article/2073649/why-extends-is-evil.html', 'Interfaces VS Herencia', POO_KEY, 'Interfaces VS Herencia', '2023/03/13')],
     ['enumeraciones', new Referencia('https://jarroba.com/enum-enumerados-en-java-con-ejemplos/', 'Enumeraciones', POO_KEY, 'Enumeraciones', '', '2024/05/05')],
+    [POO_COUPLING_AND_COHESION, new Referencia('https://ducmanhphan.github.io/2019-03-23-Coupling-and-Cohension-in-OOP/', 'Acoplamiento & Cohesion', POO_KEY, 'Acoplamiento & Cohesion', '', '2024/10/27')],
 ]);
 
 export const TESTING_KEY = 'Testing';

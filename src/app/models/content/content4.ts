@@ -7,7 +7,8 @@ import {
     FRAMEWORKS_FRAMEWORKS, META_CARACTERISTICAS_ANOTATIONS, META_CARACTERISTICAS_REFLEXION, ESTRATEGIAS_DESARROLLO_TDD,
     LEYES_KIDLIN, AGILES_DEMING, ESTRATEGIAS_DESARROLLO_DDD, META_CARACTERISTICAS_BACKTRACKING, CONTENEDORES_ARQUITECTURE,
     ARQUITECTURAS_MICRO_SERVICES, AGILES_PRIORITIZATION, AGILES_PLANNING_POKER, AGILES_5S, LEYES_CONWAY,
-    MALAS_PRACTICAS_DEFAULT_MICROSERVICES, META_CARACTERISTICAS_CACHE_AND_TYPES, ESTRATEGIAS_DESARROLLO_BFF
+    MALAS_PRACTICAS_DEFAULT_MICROSERVICES, META_CARACTERISTICAS_CACHE_AND_TYPES, ESTRATEGIAS_DESARROLLO_BFF, POO_COUPLING_AND_COHESION,
+    POO_ENLACES
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -1529,11 +1530,12 @@ export const POO =
                 ' Polimorfismo                 No es necesario ningun mecanismo extra               Se puede lograr mediante interfaces     ',
                 ' Crecimiento                  Dificil, al heredar "basura" junto a lo nuevo        Se incorporan o extienden nuevas piezas '
             ]),
-        new Item('enlaces',
+        new Item(POO_ENLACES,
             [
                 '- La asociación entre la definición de los metodos y variables, se suele dar de 2 maneras, durante tiempo de ejecución y de compilación ',
                 '- Todo lo se pueda conocer en tiempo de compilación, y que es necesario para que el programa se pueda ejecutar se conoce como enlace estatico ',
                 '- Lo demás que es necesario ejecutar el programa para conocer su valor y su comportamiento, se conoce como enlace dinamico ',
+                '- Los miembros privados, finales y estaticos usan el enlace estatico, mientras que los metodos anulados y en general son por enlace dinamico '
             ]),
         new Item('acoplamientoComponentes',
             [
@@ -1649,7 +1651,7 @@ export const POO =
                 '<strong>Ventajas:</strong> ',
                 '- Tienen nombres significativos, por lo que un factory method puede ser más explicito en lo que hace ',
                 '- Pueden devolver el mismo tipo, un subtipo e incluso primitivos si se da el caso, por lo que son más flexibles ',
-                '- Encapsulan toda la logica requerida para la construcción de los objetos, aliviniando la carga del constructor ',
+                '- Encapsulan toda la logica requerida para la construcción de los objetos, alivianando la carga del constructor ',
                 '- Pueden controlar las instancias, por ejemplo el patron Singleton ó un constructor semantico ',
                 '- La inmutabilidad puede ser una caracteristica inherente a su uso ',
                 '',
@@ -1681,6 +1683,32 @@ export const POO =
                 '- Si la enumeración tiene atributos, todos los constructores que se vayan a usar, deben ser privados',
                 '- Estas son clases finales implícitas, evitando convertirse en cualquier tipo de subclase/superclase',
                 '- Pueden implementar contratos (interfaces), obligando a que cada valor de la enumeración, implemente y defina el debido comportamiento',
+            ]),
+        new Item(POO_COUPLING_AND_COHESION,
+            [
+                '<strong>Cohesion:</strong> Se centra en como diseñar cada modulo o clase y entre mejor sean las relaciones mejor sea el Diseño Orientado a Objetos ',
+                '- La cohesión aumenta si las funciones y atributos de una clase tienen caracteristicas en comun, además de que cumplen el Principio de Responsabilidad Unica ',
+                '- Una baja cohesión esta directamente asociada a problemas como poca mantenibilidad, codigo poco claro y dificil de testear ',
+                '',
+                '<strong>Tipos:</strong> (Peor -> Mejor)',
+                '<strong>- Coindencial:</strong> Las partes de un modulo se agrupan arbitrariamente, sin necesidad de alguna relación ',
+                '<strong>- Logica:</strong> Se agrupan al estar categorizadas para hacer logicamente lo mismo, aun con diferentes naturalezas ',
+                '<strong>- Temporal:</strong> Las partes de un modulo se agrupan segun el momento en que se realizan',
+                '<strong>- Comunicacional:</strong> Las partes de un modulo se agrupan porque operan sobre los mismos datos ',
+                '<strong>- Secuencial:</strong> Las partes de un modulo se agrupan porque la salida de una parte es la entrada de otra parte ',
+                '<strong>- Funcional:</strong> Las partes se agrupan porque todas contribuyen a una unica tarea bien definida, no siempre es alcanzable ',
+                '',
+                '<strong>Acoplamiento:</strong> Es la fuerza de las relaciones entre los modulos y que tan relacionados estan ',
+                '- Para esto se suelen usar interfaces o contratos, que generalmente son mas estables que sus implementaciones ',
+                '- Si se tiene un alto acoplamiento, se suelen tener grandes problemas en cuanto a mantenibilidad, facilidad para realizar cambios y correciones ',
+                '',
+                '<strong>Tipos:</strong> (Alto -> Bajo)',
+                '<strong>- Content:</strong> Se utiliza el codigo de otro modulo, violando el ocultamiento de la información ',
+                '<strong>- Common:</strong> Se da cuando varios modulos tienen acceso a los mismos datos globales, un cambio erroneo puede propagar errores sin control ',
+                '<strong>- External:</strong> Sucede cuando 2 partes comparten un formato de datos o protocolo de comunicación, generalmente con sistemas externos ',
+                '<strong>- Control:</strong> Un modulo controla a otro, impartiendo acciones e información sobre que hacer ',
+                '<strong>- Stamp:</strong> Comparten una estructura de datos, la cual usan en su integridad o parcialmente ',
+                '<strong>- Data:</strong> Lo unico que comparten son datos a traves de diversas formas, como parametros ',
             ])
     ];
 
