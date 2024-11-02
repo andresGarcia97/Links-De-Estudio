@@ -103,6 +103,7 @@ export const NUBE_MICROSERVICES_BEST_PRACTICES = 'microservicesBestPractices';
 export const PARADIGMAS_PARADIGMA_DATOS = 'paradigmaDatos';
 export const CONOCIMIENTOS_EMPIRICOS_PAIR_PROGRAMMING = 'pairPrograming';
 export const CONOCIMIENTOS_EMPIRICOS_STAGES_COMPETENCE_MODEL = 'stagesCompetenceModel';
+export const CONOCIMIENTOS_EMPIRICOS_EXPIERENCE_LESSONS = 'expierenceLessons';
 export const PEOPLE_NO_NEWS_GOOD_NEWS = 'noNewsGoodNews';
 export const PEOPLE_PROCESS_BLOAT = 'processBloat';
 export const METODOLOGIAS_AGILES = 'agiles';
@@ -182,7 +183,7 @@ export const USER_HISTORIES_SMART = 'smart';
 export const USER_HISTORIES_FORMATS = 'historiesFormats';
 export const USER_HISTORIES_ESTIMATIONS = 'historiasEstimacionAgil';
 
-export const LAST_ITEM = POO_COUPLING_AND_COHESION;
+export const LAST_ITEM = CONOCIMIENTOS_EMPIRICOS_EXPIERENCE_LESSONS;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -344,6 +345,7 @@ export const CONOCIMIENTO_EMPIRICO = new Map<string, Referencia>([
     ['zeigarnik', new Referencia('https://psicologiaymente.com/psicologia/efecto-zeigarnik', 'Efecto Zeigarnik', CONOCIMIENTO_EMPIRICO_KEY, 'Efecto Zeigarnik', '2024/05/13')],
     [CONOCIMIENTOS_EMPIRICOS_PAIR_PROGRAMMING, new Referencia('https://stackoverflow.blog/2024/04/03/developers-with-ai-assistants-need-to-follow-the-pair-programming-model', 'Pair Programing con IA', CONOCIMIENTO_EMPIRICO_KEY, 'Pair Programing', '2024/05/26')],
     [CONOCIMIENTOS_EMPIRICOS_STAGES_COMPETENCE_MODEL, new Referencia('https://www.innovationtraining.org/the-four-stages-of-competence-model/', 'Etapas del modelo de competencia', CONOCIMIENTO_EMPIRICO_KEY, 'Modelo de competencia', '2024/09/09')],
+    [CONOCIMIENTOS_EMPIRICOS_EXPIERENCE_LESSONS, new Referencia('https://dev.jimgrey.net/2024/07/03/lessons-learned-in-35-years-of-making-software/', 'Experiencia', CONOCIMIENTO_EMPIRICO_KEY, 'Experiencia', '2024/10/31')],
 ]);
 
 export const LEYES_KEY = 'Leyes';

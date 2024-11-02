@@ -1,6 +1,6 @@
 import {
     APIS_API_FIRST, APIS_API_GOVERNANCE, APIS_GATEWAY, APIS_REST_VS_MESSAGING, CONOCIMIENTOS_EMPIRICOS_PAIR_PROGRAMMING,
-    CONOCIMIENTOS_EMPIRICOS_STAGES_COMPETENCE_MODEL, META_ESTRUCTURAS_DEPRECATION,
+    CONOCIMIENTOS_EMPIRICOS_STAGES_COMPETENCE_MODEL, CONOCIMIENTOS_EMPIRICOS_EXPIERENCE_LESSONS, META_ESTRUCTURAS_DEPRECATION,
     META_ESTRUCTURAS_ESTRUCTURAS_DATOS, META_ESTRUCTURAS_ESTRUCTURAS_DATOS_2, META_ESTRUCTURAS_MAQUINA_ESTADOS,
     META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION, META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL, NUBE_CAP_TEOREMA,
     NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, NUBE_MICROSERVICES_BEST_PRACTICES, NUBE_OBSERVABILIDAD, PATRONES_CLOUD_DESIGN_PATTERNS,
@@ -575,6 +575,19 @@ export const CONOCIMIENTOS_EMPIRICOS =
                 '',
                 '<strong>Competencia inconsciente:</strong> <em>4ta Etapa</em>, Las personas han desarrollado un nivel de competencia tan alto que logran hacer tareas sin pensarlo ',
                 '- Han internalizado el conocimiento y la habilidad hasta el punto de que se ha convertido en algo natural, su intuición suele ser correcta ',
+            ]),
+        new Item(CONOCIMIENTOS_EMPIRICOS_EXPIERENCE_LESSONS,
+            [
+                '- Las soluciones inteligentes no siempre son buena opción, lo ideal siempre sera hacer las cosas los más simple posibles ',
+                '- Dar valor, retener algo hasta que este totalmente perfeccionado, esta frenando la creación de valor para la empresa ',
+                '- Las relaciones son importantes si se quiere progresar, no te limites a hacer solamente tu trabajo, se servicial con todos los integrantes de tu empresa ',
+                '- Nunca seas invisible visualiza tus capacidades frente a la dirección y que no solamente tus compañeros lo sepan ',
+                '- Construye una red de contactos que se expanda más alla de tu empresa actual, nunca se sabe cuando estas conexiones pueden ser utiles ',
+                '- Este dispuesto a realizar tareas que desconozca o que requieran de esfuerzo adicional, esto siempre sera bien visto por los jefes ',
+                '- Persigue la aventura e interesate por nuevas tecnologias, no te enfoques solamente en crecer salarialmente ',
+                '- Desafia las tendencias naturales, no siempre se tiene que ser competitivo, pero hay momentos donde es necesario serlo ',
+                '- Un buen trabajo regularmente conlleva tiempo, más del deseado, ser perfeccionista generalmente solo trae un mayor uso de recursos ',
+                '- EL software que se esta creando, algun dia sera descontinuado o dejara de funcionar, por eso cree incrementos pequeños y entregables ',
             ])
     ];
 
