@@ -8,7 +8,7 @@ import {
     LEYES_KIDLIN, AGILES_DEMING, ESTRATEGIAS_DESARROLLO_DDD, META_CARACTERISTICAS_BACKTRACKING, CONTENEDORES_ARQUITECTURE,
     ARQUITECTURAS_MICRO_SERVICES, AGILES_PRIORITIZATION, AGILES_PLANNING_POKER, AGILES_5S, LEYES_CONWAY,
     MALAS_PRACTICAS_DEFAULT_MICROSERVICES, META_CARACTERISTICAS_CACHE_AND_TYPES, ESTRATEGIAS_DESARROLLO_BFF, POO_COUPLING_AND_COHESION,
-    POO_ENLACES
+    POO_ENLACES, AGILES_MANIFEST_AGIL
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -129,7 +129,7 @@ export const AGILES =
                 ' - Si no hay consenso se abre una breve discusión y se vuelve a votar, si vuelve a suceder se podra realizar un promedio o escoger un extremo ',
                 ' - Se repite el proceso hasta completar todas las HU ',
             ]),
-        new Item('manifestAgil',
+        new Item(AGILES_MANIFEST_AGIL,
             [
                 '- Nace con el proposito de reformar el desarrollo de software para hacerlo más eficiente y eficaz ',
                 '- Son 4 principios que toda metodologia agil lleva a cabo para mejorar el desarrollo ',

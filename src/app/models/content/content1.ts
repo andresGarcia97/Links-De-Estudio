@@ -6,7 +6,7 @@ import {
     PERSISTENCY_HARD_SOFT_DELETE, ANALISIS_DATA_GOLDEN_RECORD, CALIDAD_IF_ELSE, HARDWARE_UTF8, ANALISIS_DATA_BATCH_VS_STREAM,
     WEB_SEO, PERSISTENCY_DB_TYPES, PERSISTENCY_DL, ANALISIS_DATA_OLAP_OLTP, PERSISTENCY_ERD, WEB_GOLDEN_SIGNALS, HARDWARE_MONITOREO,
     PERSISTENCY_KEY_TYPES, PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS, PERSISTENCY_ADVANCED_PARTITIONING, PERSISTENCY_CONSISTENCY,
-    PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL
+    PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL, HARDWARE_CLEAN_CODE_PERFORMANCE, CALIDAD_CLEAN_CODE
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -87,7 +87,7 @@ export const CALIDAD =
                 '',
                 '<strong>Duplicación:</strong> Se da por del desconocimiento general del proyecto, replicando codigo que ya existe ',
             ]),
-        new Item('cleanCode',
+        new Item(CALIDAD_CLEAN_CODE,
             [
                 '- La calidad de codigo es un estandar que siempre se debe perseguir, hasta el codigo más limpio puede verse afectado por malas practicas ',
                 '- El proceso de degradación en todo proyecto es inevitable, más no incontrolable ',
@@ -564,6 +564,31 @@ export const HARDWARE =
                 ' - Los caracteres del <em>65536-1114111</em> utilizan <strong>4 bytes</strong> (11110xxx 10xxxxxx 10xxxxxx 10xxxxxx)',
                 '',
                 '- Es el metodo de codificación más comun para internet, predeterminado para <em>HTML5</em>, y formatos para la transferencia de datos como <em>JSON</em> y <em>XML</em> ',
+            ]),
+        new Item(HARDWARE_CLEAN_CODE_PERFORMANCE,
+            [
+                '- <em>Robert C Martin</em> Es el autor de "Clean Code", coautor del manifiesto Agil y creador de los principios <strong>SOLID</strong> ',
+                '- <em>Casey Muratori</em> Es un programador especializado en investigacion y desarrollo de motores de juegos, usado en franquicias como Age Of Empires y Gears Of War ',
+                '- Existe un video y una repositorio donde se exponen con más detalle y mediante criterios tecnicos como ciertas practicas y recomendaciones ',
+                ' - directamente recomendadas del Clean Code afectan negativamente el rendimiento de los sistemas ',
+                '- Una de las principales razones es la complejidad inherente, la cual evita que los compiladores puedan optimizar al maximo el codigo generado ',
+                '',
+                '- Las principales practicas que afectan el codigo en tiempo de ejecución, son tambien algunas de las que afectan las estructuras del codigo ',
+                ' - Preferir el Polimorfismo a estructuras de control como <em>if/else</em> y <em>Switch</em>',
+                ' - El código no debería conocer los detalles internos de los objetos con los que está trabajando',
+                ' - Las funciones deben ser pequeñas ',
+                ' - Las funciones deberían hacer una cosa ',
+                ' - <strong>DRY</strong> <em>Don´t Repeat Yourself</em>',
+                '',
+                '- Esto se explica mediante un ejemplo practico y sencillo: ',
+                '- Existe una clase <em>Shape</em> inicial de la cual heredan las clases de <em>Circle</em>, <em>Triangle</em>, <em>Rectangle</em> y <em>Square</em> ',
+                '- Existe un metodo comun, la cual se encarga de encontrar el area total de cada forma ',
+                '- La primera forma usa el polimorfismo, mientras que la segunda forma se desvia de las buenas practicas además de usar switch para hacerlo ',
+                '- La segunda función no solo es más eficiente, se ejecuta 15 veces más rapido que la versión original ',
+                '',
+                '- Esto no es un ataque directo hacia las buenas practicas ni al codigo limpio, No se deben ignorar si se quiere conseguir un codigo mantenible y organizado ',
+                '- Pero si es una consideración de que cada acción que realizamos al programar, tiene un impacto directo en el rendimiento ya sea positiva o negativa ',
+                '- Un gran punto en la discusión subsecuente es que depende del ambiente y de lo que se priorice, ciclos de desarrollo o ciclos de la computadora ? ',
             ])
     ];
 

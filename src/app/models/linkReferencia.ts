@@ -87,6 +87,7 @@ export const BUENAS_PRACTICAS_COMPLEJIDAD_COGNITIVA = 'complejidadCognitiva';
 export const BUENAS_PRACTICAS_FUNCTIONS = 'functions';
 export const AGILES_5S = '5S';
 export const AGILES_PLANNING_POKER = 'planningPoker';
+export const AGILES_MANIFEST_AGIL = 'manifestAgil';
 export const AGILES_DEMING = 'deming';
 export const AGILES_OUTPUT_AND_OUTCOME = 'outputAndOutcome';
 export const AGILES_PRIORITIZATION = 'prioritization';
@@ -139,6 +140,7 @@ export const HARDWARE_MONITOREO = 'monitoreo(apm)';
 export const HARDWARE_PROTOCOLS = 'protocolsHardware';
 export const HARDWARE_OPERATIVE_SYSTEM = 'operativeSystem';
 export const HARDWARE_UTF8 = 'UTF-8';
+export const HARDWARE_CLEAN_CODE_PERFORMANCE = 'cleanCodeWorstPerformance';
 export const SECURITY_PROTOCOLOS_SEGURITY = 'protocolosSecurity';
 export const SECURITY_LEAST_PRIVILEGE = 'leastPrivilege';
 export const SECURITY_AUTHENTICATION_WAYS = 'authenticationWays';
@@ -169,6 +171,7 @@ export const ANALISIS_SYSTEM_DESIGN_CONCEPTS = 'systemDesignConcepts';
 export const ANALISIS_MICROSERVICES = 'designMicroservices';
 export const VERSIONAMIENTO_LICENSES_AND_DATA = 'licencesAndData';
 export const VERSIONAMIENTO_DEPENDENCIES_ORDER = 'dependenciesOrder';
+export const CALIDAD_CLEAN_CODE = 'cleanCode';
 export const CALIDAD_IF_ELSE = 'eliminatingIfElse';
 export const PRINCIPIOS_SOLID = 'SOLID';
 export const PRINCIPIOS_KISS = 'KISS';
@@ -183,7 +186,7 @@ export const USER_HISTORIES_SMART = 'smart';
 export const USER_HISTORIES_FORMATS = 'historiesFormats';
 export const USER_HISTORIES_ESTIMATIONS = 'historiasEstimacionAgil';
 
-export const LAST_ITEM = CONOCIMIENTOS_EMPIRICOS_EXPIERENCE_LESSONS;
+export const LAST_ITEM = HARDWARE_CLEAN_CODE_PERFORMANCE;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -197,7 +200,7 @@ export const AGILES_REF = new Map<string, Referencia>([
     ['mudaSoftware', new Referencia('https://medium.com/@techworldwithmilan/7-wastes-of-software-development-8febe264c5a8', 'Desperdicio en el software', AGILES_KEY, 'Muda Software', '', '2024/05/01')],
     //['planningPoker', new Referencia('https://samuelcasanova.com/2016/01/estimacion-agil-con-la-tecnica-planning-poker/', 'Planning Poker y la estimación agil', AGILES_KEY, 'Planning Poker')],
     [AGILES_PLANNING_POKER, new Referencia('https://www.estratecno.com/blog/planning-poker-como-utilizar-la-tecnica-de-estimacion-agil.html', 'Planning Poker y la estimación agil', AGILES_KEY, 'Planning Poker', '', '2024/08/19')],
-    ['manifestAgil', new Referencia('https://agilemanifesto.org/iso/es/manifesto.html', 'Manifiesto Agil', AGILES_KEY, 'Manifiesto Agil')],
+    [AGILES_MANIFEST_AGIL, new Referencia('https://agilemanifesto.org/iso/es/manifesto.html', 'Manifiesto Agil', AGILES_KEY, 'Manifiesto Agil')],
     ['principlesAgile', new Referencia('https://www.agilealliance.org/agile101/12-principles-behind-the-agile-manifesto/', 'Principios del agilismo', AGILES_KEY, 'Principios')],
     //['spike', new Referencia('https://samuelcasanova.com/2021/09/spike-que-es/', 'Spike', AGILES_KEY, 'Spike')],
     ['spike', new Referencia('https://www.scrumio.com/blog/que-es-un-spike/', 'Spike', AGILES_KEY, 'Spike', '', '2024/05/01')],
@@ -285,7 +288,7 @@ export const CALIDAD_KEY = 'Calidad';
 export const CALIDAD_REF = new Map<string, Referencia>([
     ['metricas', new Referencia('https://www.computerweekly.com/es/consejo/23-metricas-de-desarrollo-de-software-que-monitorear-hoy', 'Metricas del Software', CALIDAD_KEY, 'Metricas #1')],
     ['metricasEnCodigo', new Referencia('https://blog.desafiolatam.com/metricas-de-calidad-de-software', 'Metricas del codigo', CALIDAD_KEY, 'Metricas #2')],
-    ['cleanCode', new Referencia('https://medium.com/@tijuhasz/in-one-of-the-most-groundbreaking-practical-books-on-software-development-clean-code-right-in-3ef3006c68f2', 'Clean Code & Code rot', CALIDAD_KEY, 'Clean Code')],
+    [CALIDAD_CLEAN_CODE, new Referencia('https://medium.com/@tijuhasz/in-one-of-the-most-groundbreaking-practical-books-on-software-development-clean-code-right-in-3ef3006c68f2', 'Clean Code & Code rot', CALIDAD_KEY, 'Clean Code')],
     ['artesanos', new Referencia('https://manifesto.softwarecraftsmanship.org/#/es', 'Artesanos de software', CALIDAD_KEY, 'Artesanos')],
     ['costOfQuality', new Referencia('https://blog.softexpert.com/es/cuales-son-los-costos-de-la-calidad', 'Costo de la calidad', CALIDAD_KEY, 'Costo de la calidad')],
     ['qualityGates', new Referencia('https://docs.sonarqube.org/latest/user-guide/quality-gates/', 'Politicas de calidad', CALIDAD_KEY, 'Politicas de calidad')],
@@ -884,6 +887,7 @@ export const HARDWARE_REF = new Map<string, Referencia>([
     [HARDWARE_PROTOCOLS, new Referencia('https://www.solarwinds.com/resources/it-glossary/network-protocols', 'Network Protocols', HARDWARE_KEY, 'Network Protocols', '2024/06/11')],
     [HARDWARE_OPERATIVE_SYSTEM, new Referencia('https://medium.com/@oyebisijemil_41110/why-understanding-operating-systems-is-important-for-every-back-end-distributed-systems-engineers-fc8412af4c6c', 'Sistema Operativo', HARDWARE_KEY, 'Sistema Operativo', '2024/06/30')],
     [HARDWARE_UTF8, new Referencia('https://medium.com/@dmosyan/utf-8-and-the-problem-that-it-solves-a294aed2aa20', 'UTF-8', HARDWARE_KEY, 'UTF-8', '2024/08/24').addRelatedItem(META_CARACTERISTICAS_BACKWARD_AND_BREAKING_CHANGES).addRelatedItem(META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION)],
+    [HARDWARE_CLEAN_CODE_PERFORMANCE, new Referencia('https://pvs-studio.com/en/blog/posts/1157/', 'Clean Code, peor Performance ?', HARDWARE_KEY, 'Clean Code & Performance', '2024/11/03').addRelatedItem(PRINCIPIOS_SOLID).addRelatedItem(CALIDAD_CLEAN_CODE).addRelatedItem(AGILES_MANIFEST_AGIL)],
 ]);
 
 export const WEB_KEY = 'Web';
