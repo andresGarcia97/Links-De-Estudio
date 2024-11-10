@@ -79,6 +79,9 @@ export const LEYES_HYRUM = 'hyrum';
 export const LEYES_LEHMAN = 'lehman';
 export const LEYES_CONWAY = 'conway';
 export const LEYES_KIDLIN = 'kidlin';
+export const LEYES_GOODHARTS = 'Goodharts';
+export const LEYES_LINUS = 'linus';
+export const LEYES_HOFSTADTER = 'Hofstadter';
 export const MALAS_PRACTICAS_ANTI_PATRONES_ARQUITECTURAS = 'antipatronesArquitecturas';
 export const MALAS_PRACTICAS_TRAIN_WECKS = 'trainWrecks';
 export const MALAS_PRACTICAS_DEFAULT_MICROSERVICES = 'microservicesAsDefault';
@@ -105,6 +108,7 @@ export const PARADIGMAS_PARADIGMA_DATOS = 'paradigmaDatos';
 export const CONOCIMIENTOS_EMPIRICOS_PAIR_PROGRAMMING = 'pairPrograming';
 export const CONOCIMIENTOS_EMPIRICOS_STAGES_COMPETENCE_MODEL = 'stagesCompetenceModel';
 export const CONOCIMIENTOS_EMPIRICOS_EXPIERENCE_LESSONS = 'expierenceLessons';
+export const PEOPLE_GESTION_EXPECTATIVAS = 'gestionDeExpectativas';
 export const PEOPLE_NO_NEWS_GOOD_NEWS = 'noNewsGoodNews';
 export const PEOPLE_PROCESS_BLOAT = 'processBloat';
 export const METODOLOGIAS_AGILES = 'agiles';
@@ -186,7 +190,7 @@ export const USER_HISTORIES_SMART = 'smart';
 export const USER_HISTORIES_FORMATS = 'historiesFormats';
 export const USER_HISTORIES_ESTIMATIONS = 'historiasEstimacionAgil';
 
-export const LAST_ITEM = HARDWARE_CLEAN_CODE_PERFORMANCE;
+export const LAST_ITEM = LEYES_HOFSTADTER;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -367,6 +371,9 @@ export const LEYES_REF = new Map<string, Referencia>([
     ['amdahl', new Referencia('https://www.techtarget.com/whatis/definition/Amdahls-law', 'Ley de Amdahls', LEYES_KEY, 'Ley de Amdahls', '2023/08/25')],
     ['gall', new Referencia('https://deviq.com/laws/galls-law', 'Ley de Gall', LEYES_KEY, 'Ley de Gall', '2024/05/13')],
     [LEYES_KIDLIN, new Referencia('https://www.linkedin.com/pulse/5-leyes-famosas-aplicadas-en-la-pmo-lourdes-medina-pfmp-pmp-pmo-cp-zv4ke/', 'Ley de Kidlin', LEYES_KEY, 'Ley de Kidlin', '2024/07/14').addRelatedItem(AGILES_DEMING)],
+    [LEYES_GOODHARTS, new Referencia('https://levelup.gitconnected.com/9-laws-that-every-software-developer-should-know-a5518bfef022', 'Ley de Goodhart’s', LEYES_KEY, 'Ley de Goodhart’s', '2024/11/08')],
+    [LEYES_LINUS, new Referencia('https://levelup.gitconnected.com/9-laws-that-every-software-developer-should-know-a5518bfef022', 'Ley de Linus', LEYES_KEY, 'Ley de Linus', '2024/11/09')],
+    [LEYES_HOFSTADTER, new Referencia('https://levelup.gitconnected.com/9-laws-that-every-software-developer-should-know-a5518bfef022', 'Ley de Hofstadter', LEYES_KEY, 'Ley de Hofstadter', '2024/11/10').addRelatedItem(PEOPLE_GESTION_EXPECTATIVAS)],
 ]);
 
 export const CONTENEDORES_KEY = 'Contenedores';
@@ -637,7 +644,7 @@ export const PEOPLE_REF = new Map<string, Referencia>([
     ['gestionDeActivos', new Referencia('https://freshservice.com/latam/it-asset-management-software/', 'Gestión de activos', PEOPLE_KEY, 'Gestión de activos')],
     ['fidelizacion', new Referencia('https://elviajedelcliente.com/fidelizacion-de-clientes/', 'Fidelización de los clientes', PEOPLE_KEY, 'Fidelizacion')],
     ['modeloDIKW', new Referencia('https://programmerclick.com/article/46021807934/', 'Datos-Info-Conocimiento-Sabiduría', PEOPLE_KEY, 'Modelo DIKW')],
-    ['gestionDeExpectativas', new Referencia('https://brainsandbeards.com/blog/expectation-management', 'Gestion de expectativas', PEOPLE_KEY, 'Gestion de expectativas')],
+    [PEOPLE_GESTION_EXPECTATIVAS, new Referencia('https://brainsandbeards.com/blog/expectation-management', 'Gestion de expectativas', PEOPLE_KEY, 'Gestion de expectativas')],
     ['capa8', new Referencia('https://www.merca20.com/que-es-un-error-de-capa-8-y-como-evitas-que-arruine-tu-marketing/', 'Capa 8', PEOPLE_KEY, 'Error en capa 8')],
     [PEOPLE_NO_NEWS_GOOD_NEWS, new Referencia('https://blog.carreralinux.com.ar/2020/05/si-no-hay-noticias-son-buenas-noticias-no-news-good-news/', 'Sin noticias, Son buenas noticias', PEOPLE_KEY, 'No News Good News')],
     ['tiposHackers', new Referencia('https://www.freecodecamp.org/news/white-hat-black-hat-red-hat-hackers/', 'Tipos de Hackers (sombreros)', PEOPLE_KEY, 'Tipos de Hackers')],

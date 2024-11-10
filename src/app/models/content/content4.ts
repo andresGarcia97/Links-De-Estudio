@@ -1,14 +1,14 @@
 import {
-    AGILES_OUTPUT_AND_OUTCOME, ARQUITECTURAS_CAPAS, ARQUITECTURAS_DEFINICION, ARQUITECTURAS_EVENT_DRIVEN, ARQUITECTURAS_MVP_MVC,
-    CONTENEDORES_SECURE_ORCHESTRATION, ESTRATEGIAS_DESARROLLO_SLDC, ESTRATEGIAS_DESARROLLO_SCREAMING_DESIGN,
+    AGILES_OUTPUT_AND_OUTCOME, ARQUITECTURAS_CAPAS, ARQUITECTURAS_DEFINICION, AGILES_MANIFEST_AGIL, ARQUITECTURAS_EVENT_DRIVEN,
+    ARQUITECTURAS_MVP_MVC, CONTENEDORES_SECURE_ORCHESTRATION, ESTRATEGIAS_DESARROLLO_SLDC, ESTRATEGIAS_DESARROLLO_SCREAMING_DESIGN,
     FRAMEWORKS_CODE_STRUCTURE, FRAMEWORKS_IOD, LEYES_HYRUM, LEYES_LEHMAN, MALAS_PRACTICAS_ANTI_PATRONES_ARQUITECTURAS,
     MALAS_PRACTICAS_TRAIN_WECKS, META_CARACTERISTICAS_BACKWARD_AND_BREAKING_CHANGES, META_CARACTERISTICAS_BOILER_PLATE,
     META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM, META_CARACTERISTICAS_META_DATOS, POO_INMUTABILITY, POO_POO, POO_POO_PILARES,
     FRAMEWORKS_FRAMEWORKS, META_CARACTERISTICAS_ANOTATIONS, META_CARACTERISTICAS_REFLEXION, ESTRATEGIAS_DESARROLLO_TDD,
     LEYES_KIDLIN, AGILES_DEMING, ESTRATEGIAS_DESARROLLO_DDD, META_CARACTERISTICAS_BACKTRACKING, CONTENEDORES_ARQUITECTURE,
-    ARQUITECTURAS_MICRO_SERVICES, AGILES_PRIORITIZATION, AGILES_PLANNING_POKER, AGILES_5S, LEYES_CONWAY,
-    MALAS_PRACTICAS_DEFAULT_MICROSERVICES, META_CARACTERISTICAS_CACHE_AND_TYPES, ESTRATEGIAS_DESARROLLO_BFF, POO_COUPLING_AND_COHESION,
-    POO_ENLACES, AGILES_MANIFEST_AGIL
+    ARQUITECTURAS_MICRO_SERVICES, AGILES_PRIORITIZATION, AGILES_PLANNING_POKER, AGILES_5S, LEYES_CONWAY, LEYES_GOODHARTS, LEYES_LINUS,
+    LEYES_HOFSTADTER, MALAS_PRACTICAS_DEFAULT_MICROSERVICES, META_CARACTERISTICAS_CACHE_AND_TYPES, ESTRATEGIAS_DESARROLLO_BFF,
+    POO_COUPLING_AND_COHESION, POO_ENLACES
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -1915,6 +1915,32 @@ export const LEYES =
                 '',
                 '- Para aplicar esta ley se suele dividir el problema en partes más pequeñas y manejables',
                 '- Tambien se suelen implementar etapas, que son bastante similares a las del <em>Ciclo de Deming</em>',
+            ]),
+        new Item(LEYES_GOODHARTS,
+            [
+                '<em>Cuando una medidad se convierte en un objetivo, deja de ser una buena medida</em>, Charles Goodhart',
+                '- Cuando cualquier metrica se convierte en un objetivo o meta, las personas empezaran a cambiar su comportamiento para cumplir con esa metrica ',
+                '- Esto a expensas del significado de la metrica y generalmente en detrimento de lo que intentaba representar ',
+                '- Esto no significa que no se deban mediciones, sin mediciones no se puede saber que mejorar ',
+                '',
+                ' - Numero de lineas de codigo (Medir la productividad)',
+                ' - Puntos de Historia completados (Velocidad del equipo)',
+                ' - Cobertura de Codigo (Calidad de las pruebas)',
+                '',
+                '- Esto se evita teniendo estas metricas como guias hacia un objetivo y que se instauren de manera estatica ',
+                '- Las metricas no siempre entregaran el mejor valor por solo ser cuantitativas, hay casos donde aporta más un enfoque cualitativo ',
+            ]),
+        new Item(LEYES_LINUS,
+            [
+                '<em>Si existen los suficientes ojos, todos los errores son osbservables</em>, Eric Raymond',
+                '- Esta es una de las esencias del software libre, donde la participación activa de la comunidad ayuda a identificar y corregir errores ',
+                '- De manera más eficaz que en los sitemas cerrados, al tener una mayor cantidad de manos identificando y solucionando errores ',
+            ]),
+        new Item(LEYES_HOFSTADTER,
+            [
+                '<em>Siempre lleva más tiempo del esperado, incluso cuando se tiene en cuenta la Ley de Hofstadter</em>, Douglas Hofstadter',
+                '- Es un gran recordatorio de que somos consistentemente imprecisos al estimar el tiempo requerido para realizar tareas de Desarrollo ',
+                '- Esto es especialmente util ya que los tiempos siguen siendo imprecisos, aun cuando se tiene en cuenta esta imprecisión ',
             ])
     ];
 
