@@ -61,7 +61,6 @@ export const UTILS = new Map([
     ['wizardZines', { titulo: 'Trucos & Comics', referencia: 'https://wizardzines.com/' }],
     ['apisNavegador', { titulo: 'APIs del navegador', referencia: 'https://developer.mozilla.org/es/docs/Learn/JavaScript/Client-side_web_APIs/Introduction#apis_de_navegador_m%C3%A1s_comunes' }],
     ['eventDrivenArquitectures', { titulo: 'Event Driven Visuals', referencia: 'https://serverlessland.com/event-driven-architecture/visuals/' }],
-    ['softwareArquitectureTools', { titulo: 'Diagramas', referencia: 'https://medium.com/@techworldwithmilan/software-architecture-as-code-tools-331a11222da0' }],
     ['cpuLand', { titulo: 'CPU', referencia: 'https://cpu.land/' }]
 ]);
 
@@ -72,7 +71,8 @@ export const TESTING = new Map([
     ['jmeter', { titulo: 'Jmeter', referencia: 'https://www.guru99.com/jmeter-tutorials.html' }],
     ['selenium', { titulo: 'Introducción a selenium', referencia: 'https://www.digital55.com/desarrollo-tecnologia/herramientas-testing-introduccion-selenium/' }],
     ['sonarRules', { titulo: 'Sonar Rules', referencia: 'https://rules.sonarsource.com/' }],
-    ['yellowLab', { titulo: 'Yellow Lab', referencia: 'https://yellowlab.tools/' }]
+    ['yellowLab', { titulo: 'Yellow Lab', referencia: 'https://yellowlab.tools/' }],
+    ['cleanCodeCheckList', { titulo: 'Clean Code ✅', referencia: 'https://github.com/dev-aritra/clean-code-developer-checklist/tree/master' }]
 ]);
 
 export const CURIOSITIES = new Map([
