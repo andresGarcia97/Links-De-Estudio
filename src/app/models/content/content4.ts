@@ -2,13 +2,13 @@ import {
     AGILES_OUTPUT_AND_OUTCOME, ARQUITECTURAS_CAPAS, ARQUITECTURAS_DEFINICION, AGILES_MANIFEST_AGIL, ARQUITECTURAS_EVENT_DRIVEN,
     ARQUITECTURAS_MVP_MVC, CONTENEDORES_SECURE_ORCHESTRATION, ESTRATEGIAS_DESARROLLO_SLDC, ESTRATEGIAS_DESARROLLO_SCREAMING_DESIGN,
     FRAMEWORKS_CODE_STRUCTURE, FRAMEWORKS_IOD, LEYES_HYRUM, LEYES_LEHMAN, MALAS_PRACTICAS_ANTI_PATRONES_ARQUITECTURAS,
-    MALAS_PRACTICAS_TRAIN_WECKS, META_CARACTERISTICAS_BACKWARD_AND_BREAKING_CHANGES, META_CARACTERISTICAS_BOILER_PLATE,
-    META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM, META_CARACTERISTICAS_META_DATOS, POO_INMUTABILITY, POO_POO, POO_POO_PILARES,
-    FRAMEWORKS_FRAMEWORKS, META_CARACTERISTICAS_ANOTATIONS, META_CARACTERISTICAS_REFLEXION, ESTRATEGIAS_DESARROLLO_TDD,
-    LEYES_KIDLIN, AGILES_DEMING, ESTRATEGIAS_DESARROLLO_DDD, META_CARACTERISTICAS_BACKTRACKING, CONTENEDORES_ARQUITECTURE,
-    ARQUITECTURAS_MICRO_SERVICES, AGILES_PRIORITIZATION, AGILES_PLANNING_POKER, AGILES_5S, LEYES_CONWAY, LEYES_GOODHARTS, LEYES_LINUS,
-    LEYES_HOFSTADTER, MALAS_PRACTICAS_DEFAULT_MICROSERVICES, META_CARACTERISTICAS_CACHE_AND_TYPES, ESTRATEGIAS_DESARROLLO_BFF,
-    POO_COUPLING_AND_COHESION, POO_ENLACES
+    MALAS_PRACTICAS_TRAIN_WECKS, META_CARACTERISTICAS_BOILER_PLATE, META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM,
+    META_CARACTERISTICAS_META_DATOS, POO_INMUTABILITY, POO_POO, POO_POO_PILARES, FRAMEWORKS_FRAMEWORKS, META_CARACTERISTICAS_ANOTATIONS,
+    META_CARACTERISTICAS_REFLEXION, ESTRATEGIAS_DESARROLLO_TDD, LEYES_KIDLIN, AGILES_DEMING, ESTRATEGIAS_DESARROLLO_DDD,
+    META_CARACTERISTICAS_BACKTRACKING, CONTENEDORES_ARQUITECTURE, ARQUITECTURAS_MICRO_SERVICES, AGILES_PRIORITIZATION,
+    AGILES_PLANNING_POKER, AGILES_5S, LEYES_CONWAY, LEYES_GOODHARTS, LEYES_LINUS, LEYES_HOFSTADTER,
+    MALAS_PRACTICAS_DEFAULT_MICROSERVICES, META_CARACTERISTICAS_CACHE_AND_TYPES, ESTRATEGIAS_DESARROLLO_BFF,
+    POO_COUPLING_AND_COHESION, POO_ENLACES, META_CARACTERISTICAS_TYPE_ERASURE
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -1058,16 +1058,6 @@ export const META_CARACTERISTICAS =
                 '- Las operaciones <strong>Asyncronicas</strong> no se recomiendan, cuando se necesitan encadenar tareas que tienen un orden especifico de ejecución ',
                 ' - o necesitan estar sincronizadas y ser fiables, como el acceso y la modificación de datos',
             ]),
-        new Item(META_CARACTERISTICAS_BACKWARD_AND_BREAKING_CHANGES,
-            [
-                '- La retro compatibilidad(<em>backward-compatible</em>) y los cambios importantes(<em>breaking changes</em>) son 2 conceptos que van ligados ',
-                '- Un Breaking Change, es cualquier cambio que modifique la forma de consumir o usar cualquier servicio, afectando a otros sistemas o personas ',
-                ' - que hagan uso de versiones previas, haciendo que fallen o presente problemas, si el cambio, no afecta el comportamiento observable ',
-                ' - entonces se considera un cambio retrocompatible',
-                '- Un aspecto ideal de la programación en general, es solamente hacer estos tipos de cambios cuando ',
-                ' - aportan beneficios importantes y tienen una razon importante de ser, como para romper la compatibilidad con versiones anteriores',
-                '- Es importante plantearlos, documentarlos y realizarlos de manera adecuada, ya que pueden tener afectaciones desconocidas <em>Ley de Hyrum</em>'
-            ]),
         new Item(META_CARACTERISTICAS_ANOTATIONS,
             [
                 '- Son metadatos que se pueden agregar al codigo para proporcionar información al compilador o al entorno de ejecución ',
@@ -1110,6 +1100,15 @@ export const META_CARACTERISTICAS =
                 ' 3. Se actualiza la BD de manera asincrona y en forma de lotes(batch)',
                 '- Es el escenario donde existe la mayor posibilidad de tener problemas en la coherencia de los datos, a cambio de reducir la presión sobre la BD ',
                 '- Es util en sistemas donde se tengan una cantidad incesante de escrituras que requieran ser procesadas de manera eficiente ',
+            ]),
+        new Item(META_CARACTERISTICAS_TYPE_ERASURE,
+            [
+                '- Es un mecanismo importante de Java además de otros lenguajes que admitan Genericos ',
+                '- Esto con el fin de aplicar restricciones en tiempo de compilación, y descartar la información en tiempo de ejecución ',
+                '- Esto se puede dar en diferentes niveles, principalmente a nivel de Clase y de Metodo ',
+                '- El cambio suele suceder, reemplazando el tipo seleccionado por <em>Object</em>, o la información del tipo más cercano ',
+                '- En casos más extremos, donde puede haber ambiguedad, el compilador puede crear algunos metodos intermedios o puente, ',
+                ' - con el fin de crear objetos polimorficos y seguros a nivel de tipos para evitar errores de ejecución ',
             ])
     ];
 

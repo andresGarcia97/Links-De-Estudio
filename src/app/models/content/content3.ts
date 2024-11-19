@@ -2,7 +2,7 @@ import {
     CD_CI_CELL_BASED_ARQUITECTURE, PRINCIPIOS_DRY, PRINCIPIOS_KISS, PRINCIPIOS_SOLID, REFACTORING_CLEAN_CODE,
     REFACTORING_GOOD_AND_BAD_PRACTICES, REFACTORING_LEGACY_CODE, REFACTORING_MANAGE_DEPENDENCIES, REQUISITOS_AMBIGUITY,
     REQUISITOS_BUSINESS_VALUE, REQUISITOS_REQUIREMENTS_ENGINEERING, SECURITY_AUTHENTICATION_WAYS, SECURITY_LEAST_PRIVILEGE,
-    SECURITY_PROTOCOLOS_SEGURITY, VERSIONAMIENTO_DEPENDENCIES_ORDER
+    SECURITY_PROTOCOLOS_SEGURITY, VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES, VERSIONAMIENTO_DEPENDENCIES_ORDER
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -414,7 +414,17 @@ export const VERSIONAMIENTO =
                 '- Desafortunadamente esto tambien se puede dar en tiempo de ejecución o directamente en los Plugins de Maven ',
                 '- En resumen cuando se encuentran multiples versiones de una misma dependencia, Maven resuelve la dependencia utilizando la profundidad en el <em>arbol</em> ',
                 '- Esto selecciona la definición más cercana la raiz del arbol, pero si se encuentran a la misma profundidad, se tomara la primera declaración ',
-            ])
+            ]),
+        new Item(VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES,
+            [
+                '- La retro compatibilidad(<em>backward-compatible</em>) y los cambios importantes(<em>breaking changes</em>) son 2 conceptos que van ligados ',
+                '- Un Breaking Change, es cualquier cambio que modifique la forma de consumir o usar cualquier servicio, afectando a otros sistemas o personas ',
+                ' - que hagan uso de versiones previas, haciendo que fallen o presente problemas, si el cambio, no afecta el comportamiento observable ',
+                ' - entonces se considera un cambio retrocompatible',
+                '- Un aspecto ideal de la programación en general, es solamente hacer estos tipos de cambios cuando ',
+                ' - aportan beneficios importantes y tienen una razon importante de ser, como para romper la compatibilidad con versiones anteriores',
+                '- Es importante plantearlos, documentarlos y realizarlos de manera adecuada, ya que pueden tener afectaciones desconocidas <em>Ley de Hyrum</em>'
+            ]),
     ];
 
 export const PRINCIPIOS =

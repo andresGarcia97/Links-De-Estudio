@@ -72,7 +72,8 @@ export const TESTING = new Map([
     ['selenium', { titulo: 'Introducción a selenium', referencia: 'https://www.digital55.com/desarrollo-tecnologia/herramientas-testing-introduccion-selenium/' }],
     ['sonarRules', { titulo: 'Sonar Rules', referencia: 'https://rules.sonarsource.com/' }],
     ['yellowLab', { titulo: 'Yellow Lab', referencia: 'https://yellowlab.tools/' }],
-    ['cleanCodeCheckList', { titulo: 'Clean Code ✅', referencia: 'https://github.com/dev-aritra/clean-code-developer-checklist/tree/master' }]
+    ['cleanCodeCheckList', { titulo: 'Clean Code ✅', referencia: 'https://github.com/dev-aritra/clean-code-developer-checklist/tree/master' }],
+    ['designTerms', { titulo: 'Design Terms', referencia: 'https://medium.com/@TharunKumarReddyPolu/top-50-system-design-terminologies-you-must-know-3c78f5fb99c1' }],
 ]);
 
 export const CURIOSITIES = new Map([
