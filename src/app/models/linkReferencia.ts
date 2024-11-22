@@ -111,6 +111,7 @@ export const CONOCIMIENTOS_EMPIRICOS_EXPIERENCE_LESSONS = 'expierenceLessons';
 export const PEOPLE_GESTION_EXPECTATIVAS = 'gestionDeExpectativas';
 export const PEOPLE_NO_NEWS_GOOD_NEWS = 'noNewsGoodNews';
 export const PEOPLE_PROCESS_BLOAT = 'processBloat';
+export const PEOPLE_TRIANGLES_SUCCESS = 'TrianglesOfSuccess';
 export const METODOLOGIAS_AGILES = 'agiles';
 export const METODOLOGIAS_MODEL_BING_BANG = 'metodologiaBingBang';
 export const METODOLOGIAS_MODEL_V = 'metodologiaModelV';
@@ -191,7 +192,7 @@ export const USER_HISTORIES_SMART = 'smart';
 export const USER_HISTORIES_FORMATS = 'historiesFormats';
 export const USER_HISTORIES_ESTIMATIONS = 'historiasEstimacionAgil';
 
-export const LAST_ITEM = META_CARACTERISTICAS_TYPE_ERASURE;
+export const LAST_ITEM = PEOPLE_TRIANGLES_SUCCESS;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -656,6 +657,7 @@ export const PEOPLE_REF = new Map<string, Referencia>([
     ['burnout', new Referencia('https://chubernetes.com/navigating-tech-industry-burnout-03c015337ba0', 'Sindrome de Burnout', PEOPLE_KEY, 'Burnout', '2024/04/21')],
     ['ona', new Referencia('https://www.linkedin.com/posts/jgarzas_an%C3%A1lisis-de-redes-organizacionales-ona-activity-7185677261528842240-EQvR/', 'Analisis de Redes Organizacionales', PEOPLE_KEY, 'ONA', '2024/04/22')],
     [PEOPLE_PROCESS_BLOAT, new Referencia('https://ardalis.com/process-bloat-silent-killer-developer-productivity/', 'Hinchazon de procesos', PEOPLE_KEY, 'Process Bloat', '2024/06/01').addRelatedItem(LEYES_LEHMAN).addRelatedItem(METODOLOGIAS_LEAN).addRelatedItem(METODOLOGIAS_AGILES)],
+    [PEOPLE_TRIANGLES_SUCCESS, new Referencia('https://www.entrepreneur.com/growing-a-business/the-triangles-of-success-are-more-than-a-good-laugh/279979', 'Triangulos del exito', PEOPLE_KEY, 'Triangulos del exito', '2024/11/21')],
 ]);
 
 export const POO_KEY = 'POO';
