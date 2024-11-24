@@ -4,7 +4,7 @@ import {
     META_ESTRUCTURAS_ESTRUCTURAS_DATOS, META_ESTRUCTURAS_ESTRUCTURAS_DATOS_2, META_ESTRUCTURAS_MAQUINA_ESTADOS,
     META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION, META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL, NUBE_CAP_TEOREMA,
     NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, NUBE_MICROSERVICES_BEST_PRACTICES, NUBE_OBSERVABILIDAD, PATRONES_CLOUD_DESIGN_PATTERNS,
-    PATRONES_CQRS, PATRONES_PERSISTENCE_PATTERNS, PATRONES_STRANGLER_FIG
+    PATRONES_CQRS, PATRONES_PERSISTENCE_PATTERNS, PATRONES_STRANGLER_FIG, PATRONES_DESGLOSE_GOF
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -41,7 +41,7 @@ export const PATRONES =
                 '<strong>Estructurales:</strong> Separan la interfaz de su implementación por medio de la abstracción ',
                 '<strong>Comportamiento:</strong> Definen la comunicación entre objetos, y la independencia de esta de los objetos ',
             ]),
-        new Item('desglosegof',
+        new Item(PATRONES_DESGLOSE_GOF,
             [
                 'Creacionales ',
                 '<strong>- Singleton:</strong> Restringe la instancia de la clase a un solo Objeto ',

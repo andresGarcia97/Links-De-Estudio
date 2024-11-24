@@ -1,9 +1,10 @@
 import {
     ANALISIS_ALGORITHMS, ANALISIS_HIGH_LEVEL_VS_LOW_LEVEL, ANALISIS_KPI, ANALISIS_MICROSERVICES, ANALISIS_QUEUES_SYSTEM_DESIGN,
-    ANALISIS_SYSTEM_DESIGN_CONCEPTS, BUENAS_PRACTICAS_FUNCTIONS, COMPILACION_DECOMPILE, COMPILACION_GRAFOS, COMPILACION_INSTRUMENTS,
-    COMPILACION_STREAMS, GIT_REBASE_MERGE_SQUASH, METODOLOGIAS_AGILES, METODOLOGIAS_LEAN, METODOLOGIAS_MODEL_BING_BANG,
-    METODOLOGIAS_MODEL_V, METODOLOGIAS_SCRUMBAN, TESTING_ADVANCED_ANTI_PATTERNS, TESTING_DATA_CREATION, TESTING_DATA_SUT_DOC,
-    TESTING_MOCKS, USER_HISTORIES_ESTIMATIONS, USER_HISTORIES_FORMATS, USER_HISTORIES_SMART
+    ANALISIS_SYSTEM_DESIGN_CONCEPTS, BUENAS_PRACTICAS_FUNCTIONS, COMPILACION_AOT, COMPILACION_DECOMPILE, COMPILACION_DUCK_TYPING,
+    COMPILACION_GRAFOS, COMPILACION_INSTRUMENTS, COMPILACION_OBJECT_CREATION, COMPILACION_STREAMS, GIT_REBASE_MERGE_SQUASH,
+    METODOLOGIAS_AGILES, METODOLOGIAS_LEAN, METODOLOGIAS_MODEL_BING_BANG, METODOLOGIAS_MODEL_V, METODOLOGIAS_SCRUMBAN,
+    TESTING_ADVANCED_ANTI_PATTERNS, TESTING_DATA_CREATION, TESTING_DATA_SUT_DOC, TESTING_MOCKS, USER_HISTORIES_ESTIMATIONS,
+    USER_HISTORIES_FORMATS, USER_HISTORIES_SMART
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -963,7 +964,7 @@ export const COMPILACION =
                 '- Un camino, es el recorrido que se da al pasar por cierta cantidad de nodos, para llegar de A a B ',
                 '- Tambien son utiles para la optimización y/o simplificación de redes de cualquier tipo ',
             ]),
-        new Item('compilacionAnticipada',
+        new Item(COMPILACION_AOT,
             [
                 '- La compilacion anticipada, es el acto de compilar un lenguaje de alto nivel a bajo nivel (generalmente), más no necesariamente a nivel de maquina ',
                 '- Comunmente asociado al paso intermedio como al bytecode de Java ó CIL de .NET, ',
@@ -976,12 +977,12 @@ export const COMPILACION =
                 '- Un aspecto en contra de AOT es la carencia de realizar optimizaciones especificas para el entorno donde se va a ejecutar, ',
                 ' - ya que al contrario de JIT, esta no conoce toda la información necesaria, y tampoco puede especular para lograr esto ',
                 '',
-                '- Un aspecto positivo de AOT es que al ya estar listos, se reducen los tiempos en el ambiente de ejecución ',
+                '- Un aspecto positivo de AOT es que al ya estar listos, se reducen los tiempos necesarios para el arranque y su ejecución ',
             ]),
-        new Item('duckTyping',
+        new Item(COMPILACION_DUCK_TYPING,
             [
                 '- Es un termino comunmente asociado con los lenguajes de programación tipados dinamicamente y el concepto de polimorfismo ',
-                '- Al codigo no le importa el tipo del objeto, si no lo que puede hacer <em>"Si camina como pato y grazna como pato, entonces debe ser un pato "</em> ',
+                '- Al codigo no le importa el tipo del objeto, si no lo que puede hacer <em>"Si camina como pato y grazna como pato, entonces debe ser un pato"</em> ',
                 '- Parte de esto es posible ya que estos lenguajes usan la sobrecarga automatica de operadores de modo que se adaptan al tipo de dato procesado ',
                 '- El polimorfismo permite que el comportarmiento sea el esperado, sin tener que aferrarse a algun tipo en concreto ',
                 '- Aunque es flexible, puede traer problemas en tiempo de ejecución si se quiere usar comportamientos especificos de un tipo en otro que no los soporte ',
@@ -1230,7 +1231,33 @@ export const COMPILACION =
                 '- <strong>Mockito</strong> como framework de simulación para el testing, primero verifica si se estan usando mocks para retornar el comportamiento simulado, ',
                 ' - de lo contrario se retornara el comportamiento normal del objeto ',
                 '- Mientras que Proxy y CGLIB genero nuevas clases que extienden de las originales, mockito verifica si la clase esta mockeada y asi determina cual usar ',
-            ])
+            ]),
+        new Item(COMPILACION_OBJECT_CREATION,
+            [
+                '- En las aplicaciones el manejo de recursos es fundamental para crear aplicaciones con un gran rendimiento ',
+                '- Cada Objeto que se crea, requiere de un espacio en memoria y de procesamiento, la cual crece entre mayor sea su complejidad ',
+                '',
+                'En Java la creación de un objeto, comprende de varias fases: ',
+                '<strong>- Instanciación:</strong> Utilizando la palabra clave <em>new</em> Java asigna memoria para un objeto en el <strong>Heap</strong> ',
+                '<strong>- Uso & Referencia:</strong> Los metodos son ejecutados y las propiedades son accesadas y modificadas ',
+                '<strong>- Garbage Collector:</strong> La <em>JVM</em> automaticamente reclama memoria de los objetos que no son referenciados ',
+                '<strong>- Destrución</strong> La <em>JVM</em> borra de manera completa el objeto, liberando recursos para nuevos datos ',
+                '',
+                '<strong>Stack Memory:</strong> Almacena llamadas a metodos, variables locales y objetos de corta duración, mediante una estructura <strong>LIFO</strong> ',
+                '- Esta memoria es suceptible a <em>StackOverflowError</em> si sobrecarga con recursividad o muchas variables ',
+                '',
+                '<strong>Heap Memory:</strong> Utiliza una asignación dinamica de memoria para almacenar objetos y propiedades con un scope mayor ',
+                '- Un uso excesivo de esta memoria puede resultar en un error de tipo <em>OutOfMemoryError</em> por falta de memoria libre ',
+                '',
+                '<strong>Reducir la creación de objetos:</strong>',
+                '- Evite crear objetos dentro de bucles, si no es necesario, en su lugar inicialize objetos reutilizables ',
+                '- Cree objetos de manera condicional, solamente en el momento previo a su uso, considerandose objetos perezosos (Lazy Initializatión) ',
+                '- Use el patron <em>Builder</em> si requiere de la construcción de objetos complejos de forma incremental ',
+                '- Un Pool de objetos, es una tecnica eficiente de creación de objetos y de su respectiva reutilización, ',
+                ' - en lugar de crear y desperdiciar objetos costosos muy usados, como lo puede ser una conexión a Base de Datos ',
+                '- Serializar y Deserializar implica conversiones hacia y desde formatos binarios, por ejemplo el almacenaje de objetos en cache, de manera externa ',
+            ]
+        )
     ];
 
 export const GIT =
