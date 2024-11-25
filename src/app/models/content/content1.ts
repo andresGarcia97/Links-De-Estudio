@@ -6,7 +6,8 @@ import {
     PERSISTENCY_HARD_SOFT_DELETE, ANALISIS_DATA_GOLDEN_RECORD, CALIDAD_IF_ELSE, HARDWARE_UTF8, ANALISIS_DATA_BATCH_VS_STREAM,
     WEB_SEO, PERSISTENCY_DB_TYPES, PERSISTENCY_DL, ANALISIS_DATA_OLAP_OLTP, PERSISTENCY_ERD, WEB_GOLDEN_SIGNALS, HARDWARE_MONITOREO,
     PERSISTENCY_KEY_TYPES, PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS, PERSISTENCY_ADVANCED_PARTITIONING, PERSISTENCY_CONSISTENCY,
-    PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL, PEOPLE_TRIANGLES_SUCCESS, HARDWARE_CLEAN_CODE_PERFORMANCE, CALIDAD_CLEAN_CODE
+    PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL, PEOPLE_TRIANGLES_SUCCESS, HARDWARE_CLEAN_CODE_PERFORMANCE, CALIDAD_CLEAN_CODE,
+    ANALISIS_DATA_DSL, ANALISIS_DATA_DEDUPLICATION
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -1472,7 +1473,7 @@ export const ANALISIS_DATA =
                 '- Su nacimiento se da durante la segunda guerra mundial, pero hoy en dia es aplicable hasta para el software ',
                 '- Uno de los primeros casos de esta practica fue el nacimiento del Tu-4 <em>sovietico</em> copia del B-29 <em>Estadounidense</em> ',
             ]),
-        new Item('dsl',
+        new Item(ANALISIS_DATA_DSL,
             [
                 '- Un DSL es un lenguaje de programación con un nivel superior de abstracción ',
                 '- Estos lenguajes son menos complejos que los lenguajes de alto nivel y proposito general, como Java, C, etc.. ',
@@ -1745,6 +1746,13 @@ export const ANALISIS_DATA =
                 '&brvbar; Volumen de datos      &brvbar; Grandes requerimientos, Tera y Peta bytes     &brvbar; Requerimientos más modestos, Gigas Y Mega bytes &brvbar;',
                 '&brvbar; Tiempo de respuesta   &brvbar; Tiempos más largos, segundos y minutos        &brvbar; Tiempos más cortos, milisegundos y segundos     &brvbar;',
                 '&brvbar; Aplicaciones          &brvbar; Analizar tendencias, predecir comportamientos &brvbar; Procesar pagos y pedidos                        &brvbar;',
+            ]),
+        new Item(ANALISIS_DATA_DEDUPLICATION,
+            [
+                '- Es un proceso que elimina copias excesivas de datos, reduciendo significativamente los requisitos de capacidad de almacenamiento ',
+                '- Este puede ser un proceso previo al guardado de los datos, ó como un proceso en segundo plano despues de su guardado ',
+                '- El proceso se hace a nivel de KB, mediante la validación de firmas hash para evitar crear bloques iguales ',
+                '- Si se encuentran bloques iguales, se eliminan y solamente dejar un bloque del mismo tipo, sin que esto implique la perdida de datos ',
             ])
     ];
 

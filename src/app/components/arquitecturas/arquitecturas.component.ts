@@ -23,10 +23,10 @@ export class ArquitecturasComponent implements OnInit {
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
     this.relatedSections.set(METODOLOGIAS_KEY, routes.get(METODOLOGIAS_KEY)!);
-    this.relatedSections.set(PATRONES_KEY    , routes.get(PATRONES_KEY)!);
-    this.relatedSections.set(ANALISIS_KEY    , routes.get(ANALISIS_KEY)!);
-    this.relatedSections.set(NUBE_KEY        , routes.get(NUBE_KEY)!);
-    this.relatedSections.set(UML_KEY         , routes.get(UML_KEY)!);
+    this.relatedSections.set(PATRONES_KEY,     routes.get(PATRONES_KEY)!);
+    this.relatedSections.set(ANALISIS_KEY,     routes.get(ANALISIS_KEY)!);
+    this.relatedSections.set(NUBE_KEY,         routes.get(NUBE_KEY)!);
+    this.relatedSections.set(UML_KEY,          routes.get(UML_KEY)!);
   }
 
 }

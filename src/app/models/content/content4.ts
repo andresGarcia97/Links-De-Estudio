@@ -8,7 +8,8 @@ import {
     META_CARACTERISTICAS_BACKTRACKING, CONTENEDORES_ARQUITECTURE, ARQUITECTURAS_MICRO_SERVICES, AGILES_PRIORITIZATION,
     AGILES_PLANNING_POKER, AGILES_5S, LEYES_CONWAY, LEYES_GOODHARTS, LEYES_LINUS, LEYES_HOFSTADTER,
     MALAS_PRACTICAS_DEFAULT_MICROSERVICES, META_CARACTERISTICAS_CACHE_AND_TYPES, ESTRATEGIAS_DESARROLLO_BFF,
-    POO_COUPLING_AND_COHESION, POO_ENLACES, META_CARACTERISTICAS_TYPE_ERASURE
+    POO_COUPLING_AND_COHESION, POO_ENLACES, META_CARACTERISTICAS_TYPE_ERASURE,
+    ARQUITECTURAS_HEXAGONAL
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -479,14 +480,19 @@ export const ARQUITECTURAS =
                 '- Los servicios pueden ser independientes de las tecnologias, además de que tambien se pueden subdividir en caso de tener gran complejidad ',
                 '- Tambien se pueden escalar/desescalar de manera individual optimizando el uso de recursos ',
             ]),
-        new Item('hexagonal',
+        new Item(ARQUITECTURAS_HEXAGONAL,
             [
                 '- Aisla el dominio de las tecnologias, permitiendo que los cambios entre tecnologias sean superfluos o minimos ',
-                '- La comunicación entre componentes internos/llamados externos se da por medio de puertos(interfaces) ',
-                '- Cualquier dispositivo/usuario/sistema podra consultar de forma homogonea la información y esta sera consistente ',
+                '- La comunicación entre componentes internos ó llamados externos se da por medio de puertos(interfaces) ',
+                '<strong>- Puerto:</strong> Definición de la interfaz publica',
+                '<strong>- Adapter:</strong> Especialización de un puerto, para un contexto especifico',
+                '',
+                '- Cualquier dispositivo/usuario/sistema podra consultar de forma homogenea la información y esta sera consistente ',
                 '- Las capas que se hayan definido son idependientes entre si, sin estar totalmente aisladas ',
                 '- Hay una definición clara de responsabilidades, permitiendo hacer testing más facilmente ',
                 '- El termino hexagonal solo se da para resaltar la naturaleza similar de los puertos, no la cantidad de estos ',
+                '- Una de las mayores motivaciones para esta arquitectura, es evitar el acoplamiento incorrecto con la infraestructura o la interfaz de usuario ',
+                '- Tambien puede ser usada en conjunto con <strong>DDD</strong> ya que ambos se centran en que el negocio sea el nucleo '
             ]),
         new Item('noHexagonal',
             [

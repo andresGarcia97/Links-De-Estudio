@@ -60,6 +60,7 @@ export const POO_COUPLING_AND_COHESION = 'couplinAndCohesion';
 export const ARQUITECTURAS_DEFINICION = 'definicion';
 export const ARQUITECTURAS_CAPAS = 'capas';
 export const ARQUITECTURAS_MICRO_SERVICES = 'microServices';
+export const ARQUITECTURAS_HEXAGONAL = 'hexagonal';
 export const ARQUITECTURAS_MVP_MVC = 'mvpMvc';
 export const ARQUITECTURAS_EVENT_DRIVEN = 'eventDriven';
 export const ESTRATEGIAS_DESARROLLO_DDD = 'ddd';
@@ -151,6 +152,7 @@ export const SECURITY_PROTOCOLOS_SEGURITY = 'protocolosSecurity';
 export const SECURITY_LEAST_PRIVILEGE = 'leastPrivilege';
 export const SECURITY_AUTHENTICATION_WAYS = 'authenticationWays';
 export const ANALISIS_DATA_REVERSE_ENGINEERING = 'ingenieriaInversa';
+export const ANALISIS_DATA_DSL = 'domainSpecificLanguage-dsl';
 export const ANALISIS_DATA_DATA_ANALISIS_TYPES = 'dataAnalisisTypes';
 export const ANALISIS_DATA_SYSTEMS_INFORMATION = 'sistemsInformation';
 export const ANALISIS_DATA_DATA_STORING = 'dataStoring';
@@ -160,6 +162,7 @@ export const ANALISIS_DATA_CHANGE_DATA_CAPTURE = 'changeDataCapture';
 export const ANALISIS_DATA_GOLDEN_RECORD = 'goldenRecord';
 export const ANALISIS_DATA_BATCH_VS_STREAM = 'batchVsStreamProcessing';
 export const ANALISIS_DATA_OLAP_OLTP = 'OLAPVsOLTP';
+export const ANALISIS_DATA_DEDUPLICATION = 'deduplication';
 export const GIT_REBASE_MERGE_SQUASH = 'rebaseMergeSquash';
 export const COMPILACION_GRAFOS = 'grafos';
 export const COMPILACION_AOT = 'compilacionAnticipadaAOT';
@@ -196,7 +199,7 @@ export const USER_HISTORIES_SMART = 'smart';
 export const USER_HISTORIES_FORMATS = 'historiesFormats';
 export const USER_HISTORIES_ESTIMATIONS = 'historiasEstimacionAgil';
 
-export const LAST_ITEM = COMPILACION_OBJECT_CREATION;
+export const LAST_ITEM = ANALISIS_DATA_DEDUPLICATION;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -258,7 +261,7 @@ export const ARQUITECTURAS_REF = new Map<string, Referencia>([
     ['cliente', new Referencia('https://desarrolloweb.com/articulos/arquitectura-cliente-servidor.html', 'Arquitectura Cliente-Servidor', ARQUITECTURAS_KEY, 'Cliente Servidor')],
     ['microServiciosFundamentals', new Referencia('https://medium.com/@kumuthini.program/micro-services-fundamentals-dc0fc369d75e', 'Bases de Micro Servicios', ARQUITECTURAS_KEY, 'Bases de Microservicios')],
     [ARQUITECTURAS_MICRO_SERVICES, new Referencia('https://aws.amazon.com/es/microservices/', 'Micro servicios', ARQUITECTURAS_KEY, 'Micro servicios', '', '2024/08/17')],
-    ['hexagonal', new Referencia('https://medium.com/@edusalguero/arquitectura-hexagonal-59834bb44b7f', 'Hexagonal', ARQUITECTURAS_KEY, 'Hexagonal')],
+    [ARQUITECTURAS_HEXAGONAL, new Referencia('https://medium.com/@edusalguero/arquitectura-hexagonal-59834bb44b7f', 'Hexagonal', ARQUITECTURAS_KEY, 'Hexagonal', '', '2024/11/24').addRelatedItem(ESTRATEGIAS_DESARROLLO_DDD)],
     ['noHexagonal', new Referencia('https://javiervelezreyes.com/ni-nueva-ni-arquitectura-ni-hexagonal/', 'Ni Nueva, Ni Hexagonal', ARQUITECTURAS_KEY, 'Ni Nueva, Ni hexagonal')],
     ['mvc', new Referencia('https://developer.mozilla.org/es/docs/Glossary/MVC', 'Modelo-Vista-Controlador', ARQUITECTURAS_KEY, 'MVC')],
     //['mvpMvc', new Referencia('https://www.develapps.com/es/noticias/modelo-vista-presentador-mvp-en-android', 'Modelo-Vista-Presentador', ARQUITECTURAS_KEY, 'MVP')],
@@ -596,7 +599,7 @@ export const ANALISIS_DATA_REF = new Map<string, Referencia>([
     ['mvp', new Referencia('https://www.inboundcycle.com/blog-de-inbound-marketing/bid/189238/qu-es-el-mvp-o-producto-m-nimo-viable', 'Minimo Producto Viable', ANALISIS_DATA_KEY, 'MVP')],
     ['turingComplete', new Referencia('https://www.eleconomista.es/economia/noticias/8817210/12/17/Ethereum-es-Turing-completo-y-eso-que-es.html', 'Turing Complete', ANALISIS_DATA_KEY, 'Turing Complete')],
     [ANALISIS_DATA_REVERSE_ENGINEERING, new Referencia('https://ingenierosasesores.com/actualidad/ingenieria-inversa-concepto-aplicaciones/', 'Ingenieria Inversa', ANALISIS_DATA_KEY, 'Ingenieria Inversa')],
-    ['dsl', new Referencia('https://www.jetbrains.com/es-es/mps/concepts/domain-specific-languages/', 'Lenguaje de Dominio Especifico', ANALISIS_DATA_KEY, 'DSL')],
+    [ANALISIS_DATA_DSL, new Referencia('https://www.jetbrains.com/es-es/mps/concepts/domain-specific-languages/', 'Lenguaje de Dominio Especifico', ANALISIS_DATA_KEY, 'DSL')],
     //['dataAnalisis', new Referencia('https://tienda.digital/4-tipos-de-analisis-de-datos-para-mejorar-la-toma-de-decisiones/', 'Analisis de datos', ANALISIS_KEY, 'Analisis de datos')],
     [ANALISIS_DATA_DATA_ANALISIS_TYPES, new Referencia('https://cidei.net/4-tipos-de-analitica-de-datos-que-mejoran-tu-toma-de-decisiones/', 'Tipos de analitica', ANALISIS_DATA_KEY, 'Analitica de datos', '2022/09/26', '2024/06/23')],
     [ANALISIS_DATA_SYSTEMS_INFORMATION, new Referencia('https://concepto.de/sistema-de-informacion/', 'Sistemas de Información', ANALISIS_DATA_KEY, 'Información', '', '2024/06/23')],
@@ -607,6 +610,7 @@ export const ANALISIS_DATA_REF = new Map<string, Referencia>([
     [ANALISIS_DATA_GOLDEN_RECORD, new Referencia('https://www.stibosystems.com/blog/benefits-of-creating-golden-customer-records', 'Golden Record', ANALISIS_DATA_KEY, 'Golden Record', '2024/08/10')],
     [ANALISIS_DATA_BATCH_VS_STREAM, new Referencia('https://estuary.dev/batch-processing-vs-stream-processing/', 'Batch Vs Stream Processing', ANALISIS_DATA_KEY, 'Batch Vs Stream', '2024/08/31')],
     [ANALISIS_DATA_OLAP_OLTP, new Referencia('https://aws.amazon.com/es/compare/the-difference-between-olap-and-oltp/', 'OLAP & OLTP', ANALISIS_DATA_KEY, 'OLAP & OLTP', '2024/09/15')],
+    [ANALISIS_DATA_DEDUPLICATION, new Referencia('https://www.netapp.com/es/data-management/what-is-data-deduplication/', 'Deduplicación', ANALISIS_DATA_KEY, 'Deduplicación', '2024/11/24')],
 ]);
 
 export const PARADIGMAS_KEY = 'Paradigmas';
