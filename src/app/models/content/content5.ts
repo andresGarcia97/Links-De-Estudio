@@ -2,10 +2,9 @@ import {
     APIS_API_FIRST, APIS_API_GOVERNANCE, APIS_GATEWAY, APIS_REST_VS_MESSAGING, CONOCIMIENTOS_EMPIRICOS_PAIR_PROGRAMMING,
     CONOCIMIENTOS_EMPIRICOS_STAGES_COMPETENCE_MODEL, CONOCIMIENTOS_EMPIRICOS_EXPIERENCE_LESSONS, META_ESTRUCTURAS_DEPRECATION,
     META_ESTRUCTURAS_ESTRUCTURAS_DATOS, META_ESTRUCTURAS_ESTRUCTURAS_DATOS_2, META_ESTRUCTURAS_MAQUINA_ESTADOS,
-    META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION, META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL, NUBE_CAP_TEOREMA,
-    NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, NUBE_MICROSERVICES_BEST_PRACTICES, NUBE_OBSERVABILIDAD, PATRONES_CLOUD_DESIGN_PATTERNS,
-    PATRONES_CQRS, PATRONES_PERSISTENCE_PATTERNS, PATRONES_STRANGLER_FIG, PATRONES_DESGLOSE_GOF,
-    NUBE_TWO_PHASE_COMMIT
+    META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION, META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL, NUBE_CAP_TEOREMA, NUBE_TWO_PHASE_COMMIT,
+    NUBE_DISPONIBILITY, NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, NUBE_MICROSERVICES_BEST_PRACTICES, NUBE_OBSERVABILIDAD,
+    PATRONES_CLOUD_DESIGN_PATTERNS, PATRONES_CQRS, PATRONES_PERSISTENCE_PATTERNS, PATRONES_STRANGLER_FIG, PATRONES_DESGLOSE_GOF
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -604,10 +603,12 @@ export const NUBE =
             [
                 '- Estos 3 modelos de servicios actualmente ayudan a las empresas a ahorrar costos, en software y hardware, además de multiples ventajas ',
                 '',
-                '<strong>IaaS - Infraestructura como servicio :</strong> Aca todo la infraestructura necesaria se contrata con un tercero, a cambio de una cuota o un alquiler, ',
+                '<strong>IaaS - Infraestructura como servicio:</strong> Aca todo la infraestructura necesaria se contrata con un tercero, a cambio de una cuota o un alquiler, ',
                 ' - esto es muy conveniente ya que se compra lo que se necesita; algunos de los más conocidos son Amazon Web Services Y Microsoft Azure ',
+                '',
                 '<strong>PasS - Plataforma como servicio:</strong> En este caso solo se provee la infraestructura, y el cliente solo se preocupa de su aplicación, ',
                 ' - delegando la administración a un tercero, algunos de los más conocidos son Google App Engine Y Bungee Connect ',
+                '',
                 '<strong>SaaS - Software como Servicio:</strong> se aloja el software y la infraestructura, el usuario solo se preocupa por usarlo y sus necesidades ',
                 ' - algunos de los más conocidos son Microsoft Office 365 y WordPress ',
             ]),
@@ -849,6 +850,28 @@ export const NUBE =
                 '- Hasta que el coordinador se recupere, o la transacción sea abortada, se deben prohibir las operaciones sobre los datos involucrados ',
                 '- En caso de fallo extremo y que el coordinador no pueda tomar una decisión, los nodos no estan en potestad para hacerlo tampoco, ',
                 ' - lo que hace estrictamente necesario que se tome una decisión manualmente en cada nodo participante ',
+            ]),
+        new Item(NUBE_DISPONIBILITY,
+            [
+                '- La disponibilidad es la medida para determinar que un recurso es accesible para los usuarios, durante un periodo de tiempo determinado ',
+                '- Las migraciones a la nube, ha obligado que los proveedores de servicios ofrezcan disponibilidades cada vez más altas ',
+                '- Una alta disponibilidad no es sinonimo de completa disponibilidad, ningun servicio puede ofrecer el 100% ya que se deben tener en cuenta factores como: ',
+                ' - Mantenimiento                                     - Desastres naturales',
+                ' - Actualizaciones                                   - Casos fortuitos',
+                '',
+                '- Esto se deja explicito en los acuerdos a nivel de servicios <strong>SLA</strong> con una disponibilidad de 99.999% que es lo más parecido ',
+                '- Este nivel de disponibilidad no es fortuito, requiere de inversiones y mantenimientos significativos, además de acciones como: ',
+                ' - Una arquitectura madura que permita CD/CI         - Planes de recuperación y copias de seguridad ',
+                ' - Automatización de tareas                          - Sistemas distribuidos y manejo de redundancias',
+                ' - Supervisión y solución de problemas constante     - Actualizaciones y mantenimientos periodicos ',
+                '',
+                '---------------------------------------------------------',
+                '&brvbar;            <strong>Nivel</strong>              &brvbar;    <strong>%</strong>     &brvbar;   <strong>Tiempo</strong>   &brvbar;',
+                '---------------------------------------------------------',
+                '&brvbar; Servidor convencional         &brvbar; 99%      &brvbar; 87 H 40 m  &brvbar;',
+                '&brvbar; Servidor publico cloud        &brvbar; 99.9%    &brvbar;  8 H 46 m  &brvbar;',
+                '&brvbar; Grupo de alta disponibilidad  &brvbar; 99.99%   &brvbar;  0 H 56 m  &brvbar;',
+                '&brvbar; Disponibilidad continua       &brvbar; 99.999%  &brvbar;  5 m 16 s  &brvbar;',
             ])
     ];
 

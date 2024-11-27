@@ -107,6 +107,7 @@ export const NUBE_FALACIES_DYSTRIBUTED_SYSTEMS = 'falaciesDistributedSystems';
 export const NUBE_OBSERVABILIDAD = 'observabilidad';
 export const NUBE_MICROSERVICES_BEST_PRACTICES = 'microservicesBestPractices';
 export const NUBE_TWO_PHASE_COMMIT = 'twoPhaseCommit';
+export const NUBE_DISPONIBILITY = 'disponibilidad';
 export const PARADIGMAS_PARADIGMA_DATOS = 'paradigmaDatos';
 export const CONOCIMIENTOS_EMPIRICOS_PAIR_PROGRAMMING = 'pairPrograming';
 export const CONOCIMIENTOS_EMPIRICOS_STAGES_COMPETENCE_MODEL = 'stagesCompetenceModel';
@@ -190,6 +191,7 @@ export const CALIDAD_IF_ELSE = 'eliminatingIfElse';
 export const PRINCIPIOS_SOLID = 'SOLID';
 export const PRINCIPIOS_KISS = 'KISS';
 export const PRINCIPIOS_DRY = 'DRY';
+export const CD_CI_CD_CI = 'cd-ci';
 export const CD_CI_CELL_BASED_ARQUITECTURE = 'cellBasedArquitecture';
 export const WEB_SEO = 'seo';
 export const WEB_GOLDEN_SIGNALS = 'goldenSignals';
@@ -200,7 +202,7 @@ export const USER_HISTORIES_SMART = 'smart';
 export const USER_HISTORIES_FORMATS = 'historiesFormats';
 export const USER_HISTORIES_ESTIMATIONS = 'historiasEstimacionAgil';
 
-export const LAST_ITEM = NUBE_TWO_PHASE_COMMIT;
+export const LAST_ITEM = NUBE_DISPONIBILITY;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -572,6 +574,7 @@ export const NUBE_REF = new Map<string, Referencia>([
     [NUBE_OBSERVABILIDAD, new Referencia('https://medium.com/@rcougil/software-observabilidad-logs-m%C3%A9tricas-y-trazabilidad-d5bcca56608d', 'Observabilidad', NUBE_KEY, 'Observabilidad', '2024/05/26')],
     [NUBE_MICROSERVICES_BEST_PRACTICES, new Referencia('https://www.linkedin.com/posts/nelsonamigoscode_systemdesign-coding-interviewtips-activity-7206618794188750848-lNtj/', 'Micro servicios, buenas practicas', NUBE_KEY, 'Micro servicios Practicas', '', '2024/08/17').addRelatedItem(PRINCIPIOS_KISS).addRelatedItem(ARQUITECTURAS_MICRO_SERVICES).addRelatedItem(ARQUITECTURAS_EVENT_DRIVEN)],
     [NUBE_TWO_PHASE_COMMIT, new Referencia('https://hongilkwon.medium.com/when-to-use-two-phase-commit-in-distributed-transaction-f1296b8c23fd', 'Two Phase Commit', NUBE_KEY, 'Two Phase Commit', '2024/11/26')],
+    [NUBE_DISPONIBILITY, new Referencia('https://www.computerweekly.com/es/consejo/Disponibilidad-de-cinco-nueves-Que-significa-realmente', 'Disponibilidad de 5 9s', NUBE_KEY, 'Disponibilidad de 5 9s', '2024/11/26').addRelatedItem(CD_CI_CD_CI)],
 ]);
 
 export const APIS_KEY = 'APIs';
@@ -954,7 +957,7 @@ export const NEURO_MARKETING_REF = new Map<string, Referencia>([
 
 export const CD_CI_KEY = 'CD/CI-Infraestructura';
 export const CD_CI_REF = new Map<string, Referencia>([
-    ['cdci', new Referencia('https://www.aplyca.com/es/blog/integracion-entrega-continua-ci-cd', 'Integración continua y Entrega Continua', CD_CI_KEY, 'CD/CI', '', '2024/08/25')],
+    [CD_CI_CD_CI, new Referencia('https://www.aplyca.com/es/blog/integracion-entrega-continua-ci-cd', 'Integración Continua y Entrega Continua', CD_CI_KEY, 'CD/CI', '', '2024/08/25')],
     ['devops', new Referencia('https://www.paradigmadigital.com/techbiz/que-es-devops-y-sobre-todo-que-no-es-devops/', 'DevOps', CD_CI_KEY, 'DevOps')],
     ['iascode', new Referencia('https://www.redhat.com/es/topics/automation/what-is-infrastructure-as-code-iac', 'Infraestructura como Codigo', CD_CI_KEY, 'Infraestructura & Codigo')],
     ['stateless-stateful', new Referencia('https://refactorizando.com/stateful-vs-stateless-arquitectura/', 'Stateful VS Stateless', CD_CI_KEY, 'Stateless VS Stateful')],
