@@ -106,6 +106,7 @@ export const NUBE_CAP_TEOREMA = 'capTeorema';
 export const NUBE_FALACIES_DYSTRIBUTED_SYSTEMS = 'falaciesDistributedSystems';
 export const NUBE_OBSERVABILIDAD = 'observabilidad';
 export const NUBE_MICROSERVICES_BEST_PRACTICES = 'microservicesBestPractices';
+export const NUBE_TWO_PHASE_COMMIT = 'twoPhaseCommit';
 export const PARADIGMAS_PARADIGMA_DATOS = 'paradigmaDatos';
 export const CONOCIMIENTOS_EMPIRICOS_PAIR_PROGRAMMING = 'pairPrograming';
 export const CONOCIMIENTOS_EMPIRICOS_STAGES_COMPETENCE_MODEL = 'stagesCompetenceModel';
@@ -199,7 +200,7 @@ export const USER_HISTORIES_SMART = 'smart';
 export const USER_HISTORIES_FORMATS = 'historiesFormats';
 export const USER_HISTORIES_ESTIMATIONS = 'historiasEstimacionAgil';
 
-export const LAST_ITEM = ANALISIS_DATA_DEDUPLICATION;
+export const LAST_ITEM = NUBE_TWO_PHASE_COMMIT;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -570,6 +571,7 @@ export const NUBE_REF = new Map<string, Referencia>([
     ['latencia', new Referencia('https://blog.bytebytego.com/p/ep110-top-5-strategies-to-reduce#top-strategies-to-reduce-latency', 'Reducir la latencia', NUBE_KEY, 'Latencia', '2024/05/12')],
     [NUBE_OBSERVABILIDAD, new Referencia('https://medium.com/@rcougil/software-observabilidad-logs-m%C3%A9tricas-y-trazabilidad-d5bcca56608d', 'Observabilidad', NUBE_KEY, 'Observabilidad', '2024/05/26')],
     [NUBE_MICROSERVICES_BEST_PRACTICES, new Referencia('https://www.linkedin.com/posts/nelsonamigoscode_systemdesign-coding-interviewtips-activity-7206618794188750848-lNtj/', 'Micro servicios, buenas practicas', NUBE_KEY, 'Micro servicios Practicas', '', '2024/08/17').addRelatedItem(PRINCIPIOS_KISS).addRelatedItem(ARQUITECTURAS_MICRO_SERVICES).addRelatedItem(ARQUITECTURAS_EVENT_DRIVEN)],
+    [NUBE_TWO_PHASE_COMMIT, new Referencia('https://hongilkwon.medium.com/when-to-use-two-phase-commit-in-distributed-transaction-f1296b8c23fd', 'Two Phase Commit', NUBE_KEY, 'Two Phase Commit', '2024/11/26')],
 ]);
 
 export const APIS_KEY = 'APIs';

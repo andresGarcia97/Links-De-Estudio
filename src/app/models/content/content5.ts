@@ -4,7 +4,8 @@ import {
     META_ESTRUCTURAS_ESTRUCTURAS_DATOS, META_ESTRUCTURAS_ESTRUCTURAS_DATOS_2, META_ESTRUCTURAS_MAQUINA_ESTADOS,
     META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION, META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL, NUBE_CAP_TEOREMA,
     NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, NUBE_MICROSERVICES_BEST_PRACTICES, NUBE_OBSERVABILIDAD, PATRONES_CLOUD_DESIGN_PATTERNS,
-    PATRONES_CQRS, PATRONES_PERSISTENCE_PATTERNS, PATRONES_STRANGLER_FIG, PATRONES_DESGLOSE_GOF
+    PATRONES_CQRS, PATRONES_PERSISTENCE_PATTERNS, PATRONES_STRANGLER_FIG, PATRONES_DESGLOSE_GOF,
+    NUBE_TWO_PHASE_COMMIT
 } from "../linkReferencia";
 import { Item } from "../models";
 
@@ -830,6 +831,24 @@ export const NUBE =
                 '<strong>BD per service:</strong> Cada microservicio debe se independiente, implicando que tenga su propia BD, evitando puntos de falla unicos ',
                 '',
                 '<strong>Event-Driven Architecture:</strong> Un enfoque basado en el manejo de eventos, permitiendo un menor acoplamiento y un manejo asyncronico de los eventos ',
+            ]),
+        new Item(NUBE_TWO_PHASE_COMMIT,
+            [
+                '- En la computación distribuida, uno de los problemas más importantes es lograr un concenso entre multiples nodos, lo cual no es facil de lograr ',
+                '- La confirmación de 2 fases, tambien conocida como <strong>2PC</strong> es un algoritmo para lograr la confirmación atomica de las transacciones ',
+                '- Sin importar la cantidad de nodos que participen, ya que todos deben confirmar o negar al unisono, esto se logra mediante 2 fases',
+                '',
+                '<strong>- Fase de preparación:</strong> Preguntar a los nodos involucrados, si pueden confirmar la transacción propuesta ',
+                '<strong>- Fase de confirmación:</strong> Ordenar a todos los nodos que confirmen o cancelen la transacción propuesta ',
+                '',
+                '- Si durante la preparación el nodo acepta la transacción propuesta debe confirmar la transacción si el nodo coordinador envia la solicitud ',
+                '- Independientemente ante cualquier escenario de falla para respetar esta promesa, los datos se deben persistir para que puedan ser recuperados ',
+                '- Un caso de uso comun es cuando se tiene el requisito estricto de tener una vista consistente de los datos en todo momento ',
+                '',
+                '- Un cuello de botella suele ser que debido a la necesidad de bloqueos, si un coordinador muere, todos los nodos deben esperar la decisión final ',
+                '- Hasta que el coordinador se recupere, o la transacción sea abortada, se deben prohibir las operaciones sobre los datos involucrados ',
+                '- En caso de fallo extremo y que el coordinador no pueda tomar una decisión, los nodos no estan en potestad para hacerlo tampoco, ',
+                ' - lo que hace estrictamente necesario que se tome una decisión manualmente en cada nodo participante ',
             ])
     ];
 
