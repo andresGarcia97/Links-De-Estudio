@@ -1,3 +1,4 @@
+import * as Keys from './keys'
 import { Referencia } from './models';
 
 export class LinkReferencia {
@@ -68,14 +69,6 @@ export const ESTRATEGIAS_DESARROLLO_TDD = 'tdd';
 export const ESTRATEGIAS_DESARROLLO_SCREAMING_DESIGN = 'screamingDesign';
 export const ESTRATEGIAS_DESARROLLO_SLDC = 'SLDC';
 export const ESTRATEGIAS_DESARROLLO_BFF = 'bff';
-export const META_CARACTERISTICAS_META_DATOS = 'metaDatos';
-export const META_CARACTERISTICAS_REFLEXION = 'reflexion';
-export const META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM = 'concurrencyAndParallelism';
-export const META_CARACTERISTICAS_BOILER_PLATE = 'boilerPlate';
-export const META_CARACTERISTICAS_BACKTRACKING ='backtracking';
-export const META_CARACTERISTICAS_ANOTATIONS = 'anottations';
-export const META_CARACTERISTICAS_CACHE_AND_TYPES = 'cacheReadWriteStrategy';
-export const META_CARACTERISTICAS_TYPE_ERASURE = 'typeErasure';
 export const LEYES_HYRUM = 'hyrum';
 export const LEYES_LEHMAN = 'lehman';
 export const LEYES_CONWAY = 'conway';
@@ -89,12 +82,6 @@ export const MALAS_PRACTICAS_DEFAULT_MICROSERVICES = 'microservicesAsDefault';
 export const BUENAS_PRACTICAS_DEMETER = 'demeter';
 export const BUENAS_PRACTICAS_COMPLEJIDAD_COGNITIVA = 'complejidadCognitiva';
 export const BUENAS_PRACTICAS_FUNCTIONS = 'functions';
-export const AGILES_5S = '5S';
-export const AGILES_PLANNING_POKER = 'planningPoker';
-export const AGILES_MANIFEST_AGIL = 'manifestAgil';
-export const AGILES_DEMING = 'deming';
-export const AGILES_OUTPUT_AND_OUTCOME = 'outputAndOutcome';
-export const AGILES_PRIORITIZATION = 'prioritization';
 export const CONTENEDORES_SECURE_ORCHESTRATION = 'secureOrchestration';
 export const CONTENEDORES_ARQUITECTURE = 'arquitectureDocker';
 export const PATRONES_DESGLOSE_GOF = 'patternsDesgloseGoF';
@@ -210,22 +197,22 @@ export const AGILES_REF = new Map<string, Referencia>([
     ['moscow', new Referencia('https://www.itdo.com/blog/moscow-que-es-y-como-priorizar-en-el-desarrollo-de-tu-aplicacion/', 'MOSCOW', AGILES_KEY, 'MOSCOW', '', '2024/05/01')],
     ['scoring', new Referencia('https://comunidad.iebschool.com/metodologiasparaelcambio/2014/03/23/priorizando-historias-de-usuario/', 'Theme Scoring', AGILES_KEY, 'Theme Scoring')],
     ['muda', new Referencia('https://prevencontrol.com/prevenblog/las-7-mudas', 'Desperdicio', AGILES_KEY, 'Desperdicio')],
-    [AGILES_5S, new Referencia('https://www.gestiopolis.com/5s-seiri-seiton-seiso-seiketsu-y-shitsuke-base-de-la-mejora-continua/', 'Seiri, Seiton, Seiso, Seiketsu, Shitsuke', AGILES_KEY, '5S - Kaizen')],
+    [Keys.AGILES_5S, new Referencia('https://www.gestiopolis.com/5s-seiri-seiton-seiso-seiketsu-y-shitsuke-base-de-la-mejora-continua/', 'Seiri, Seiton, Seiso, Seiketsu, Shitsuke', AGILES_KEY, '5S - Kaizen')],
     //['muda#1', new Referencia('https://samuelcasanova.com/2014/03/los-7-desperdicios-del-desarrollo-de-software-i/', 'Muda en el software, parte #1', AGILES_KEY, 'Muda #1')],
     //['muda#2', new Referencia('https://samuelcasanova.com/2014/03/los-7-desperdicios-del-desarrollo-de-software-y-ii/', 'Muda en el software, parte #2', AGILES_KEY, 'Muda #2')],
     ['mudaSoftware', new Referencia('https://medium.com/@techworldwithmilan/7-wastes-of-software-development-8febe264c5a8', 'Desperdicio en el software', AGILES_KEY, 'Muda Software', '', '2024/05/01')],
     //['planningPoker', new Referencia('https://samuelcasanova.com/2016/01/estimacion-agil-con-la-tecnica-planning-poker/', 'Planning Poker y la estimación agil', AGILES_KEY, 'Planning Poker')],
-    [AGILES_PLANNING_POKER, new Referencia('https://www.estratecno.com/blog/planning-poker-como-utilizar-la-tecnica-de-estimacion-agil.html', 'Planning Poker y la estimación agil', AGILES_KEY, 'Planning Poker', '', '2024/08/19')],
-    [AGILES_MANIFEST_AGIL, new Referencia('https://agilemanifesto.org/iso/es/manifesto.html', 'Manifiesto Agil', AGILES_KEY, 'Manifiesto Agil')],
+    [Keys.AGILES_PLANNING_POKER, new Referencia('https://www.estratecno.com/blog/planning-poker-como-utilizar-la-tecnica-de-estimacion-agil.html', 'Planning Poker y la estimación agil', AGILES_KEY, 'Planning Poker', '', '2024/08/19')],
+    [Keys.AGILES_MANIFEST_AGIL, new Referencia('https://agilemanifesto.org/iso/es/manifesto.html', 'Manifiesto Agil', AGILES_KEY, 'Manifiesto Agil')],
     ['principlesAgile', new Referencia('https://www.agilealliance.org/agile101/12-principles-behind-the-agile-manifesto/', 'Principios del agilismo', AGILES_KEY, 'Principios')],
     //['spike', new Referencia('https://samuelcasanova.com/2021/09/spike-que-es/', 'Spike', AGILES_KEY, 'Spike')],
     ['spike', new Referencia('https://www.scrumio.com/blog/que-es-un-spike/', 'Spike', AGILES_KEY, 'Spike', '', '2024/05/01')],
     //['deming', new Referencia('https://www.beetrack.com/es/blog/ciclo-de-deming-etapas-ejemplos', 'Ciclo de Deming', AGILES_KEY, 'Ciclo de Deming')],
-    [AGILES_DEMING, new Referencia('https://www.eurofins-environment.es/es/el-ciclo-deming-que-consiste-y-como-ayuda-gestion-procesos/', 'Ciclo de Deming', AGILES_KEY, 'Ciclo de Deming', '2023/01/06', '2024/05/01')],
+    [Keys.AGILES_DEMING, new Referencia('https://www.eurofins-environment.es/es/el-ciclo-deming-que-consiste-y-como-ayuda-gestion-procesos/', 'Ciclo de Deming', AGILES_KEY, 'Ciclo de Deming', '2023/01/06', '2024/05/01')],
     ['estimationLaws', new Referencia('https://www.javiergarzas.com/2023/07/descifrando-las-leyes-de-la-estimacion-agil.html', 'Leyes de estimación agil', AGILES_KEY, 'Estimaciones', '2023/12/08')],
     ['requisitosAgiles', new Referencia('https://www.javiergarzas.com/2019/12/los-requisitos-nunca-se-entienden-y-el-usuario-sabe-lo-que-quiere-cuando-lo-ve-funcionando.html', 'Entender los Requisitos', AGILES_KEY, 'Requisitos', '2024/03/10')],
-    [AGILES_OUTPUT_AND_OUTCOME, new Referencia('https://www.linkedin.com/pulse/impact-vs-output-outcome-t%C3%A9cnicas-para-outcomes-guzm%C3%A1n-/', 'Output & Outcome', AGILES_KEY, 'Impacto y entrega de valor', '2024/05/25')],
-    [AGILES_PRIORITIZATION, new Referencia('https://www.javiergarzas.com/2023/10/las-3-matrices-de-priorizacion-agil.html', 'Priorización', AGILES_KEY, 'Priorización', '2024/08/19')],
+    [Keys.AGILES_OUTPUT_AND_OUTCOME, new Referencia('https://www.linkedin.com/pulse/impact-vs-output-outcome-t%C3%A9cnicas-para-outcomes-guzm%C3%A1n-/', 'Output & Outcome', AGILES_KEY, 'Impacto y entrega de valor', '2024/05/25')],
+    [Keys.AGILES_PRIORITIZATION, new Referencia('https://www.javiergarzas.com/2023/10/las-3-matrices-de-priorizacion-agil.html', 'Priorización', AGILES_KEY, 'Priorización', '2024/08/19')],
 ]);
 
 export const ANALISIS_KEY = 'Analisis';
@@ -245,7 +232,7 @@ export const ANALISIS_REF = new Map<string, Referencia>([
     ['declineDesign', new Referencia('https://uxdesign.cc/the-decline-in-design-thinking-8fd0145fb4d2', 'Declive del diseño', ANALISIS_KEY, 'Declive del Diseño', '2023/07/23')],
     ['opinionated-no', new Referencia('https://www.baeldung.com/cs/opinionated-software-design', 'Diseño con & sin opiniones', ANALISIS_KEY, 'Diseño con/sin opiniones', '2023/11/11')],
     ['codingEasyPart', new Referencia('https://swizec.com/blog/coding-is-the-easy-part/', 'Codificar es la parte facil', ANALISIS_KEY, 'Codificar es facil', '2023/12/11')],
-    [ANALISIS_ALGORITHMS, new Referencia('https://medium.com/@zgokceaynaci/a-journey-through-the-world-of-algorithms-554bfffcee97', 'Algoritmos', ANALISIS_KEY, 'Algoritmos', '2024/07/27').addRelatedItem(COMPILACION_GRAFOS).addRelatedItem(META_CARACTERISTICAS_BACKTRACKING)],
+    [ANALISIS_ALGORITHMS, new Referencia('https://medium.com/@zgokceaynaci/a-journey-through-the-world-of-algorithms-554bfffcee97', 'Algoritmos', ANALISIS_KEY, 'Algoritmos', '2024/07/27').addRelatedItem(COMPILACION_GRAFOS).addRelatedItem(Keys.META_CARACTERISTICAS_BACKTRACKING)],
     [ANALISIS_QUEUES_SYSTEM_DESIGN, new Referencia('https://levelup.gitconnected.com/message-queues-in-system-design-0440a1221023', 'Message Queues in System Design', ANALISIS_KEY, 'Message Queues', '2024/09/01').addRelatedItem(META_ESTRUCTURAS_ESTRUCTURAS_DATOS_2).addRelatedItem(APIS_REST_VS_MESSAGING)],
     [ANALISIS_HIGH_LEVEL_VS_LOW_LEVEL, new Referencia('https://www.baeldung.com/cs/hld-lld', 'High Level Vs Low Level', ANALISIS_KEY, 'High Level Vs Low Level', '2024/09/20').addRelatedItem(ESTRATEGIAS_DESARROLLO_SLDC).addRelatedItem(ESTRATEGIAS_DESARROLLO_DDD).addRelatedItem(PERSISTENCY_ERD)],
     [ANALISIS_SYSTEM_DESIGN_CONCEPTS, new Referencia('https://www.linkedin.com/posts/brijpandeyji_top-12-system-design-concepts-every-developer-activity-7238729739065069568-h1t6/', 'Design System Concepts', ANALISIS_KEY, 'Design System Concepts', '2024/09/29')],
@@ -268,7 +255,7 @@ export const ARQUITECTURAS_REF = new Map<string, Referencia>([
     ['noHexagonal', new Referencia('https://javiervelezreyes.com/ni-nueva-ni-arquitectura-ni-hexagonal/', 'Ni Nueva, Ni Hexagonal', ARQUITECTURAS_KEY, 'Ni Nueva, Ni hexagonal')],
     ['mvc', new Referencia('https://developer.mozilla.org/es/docs/Glossary/MVC', 'Modelo-Vista-Controlador', ARQUITECTURAS_KEY, 'MVC')],
     //['mvpMvc', new Referencia('https://www.develapps.com/es/noticias/modelo-vista-presentador-mvp-en-android', 'Modelo-Vista-Presentador', ARQUITECTURAS_KEY, 'MVP')],
-    [ARQUITECTURAS_MVP_MVC, new Referencia('https://keepcoding.io/blog/que-es-mvc-mvp-y-mvvm-en-android/', 'Modelo-Vista-Presentador', ARQUITECTURAS_KEY, 'MVP', '', '2024/06/17').addRelatedItem(META_CARACTERISTICAS_BOILER_PLATE)],
+    [ARQUITECTURAS_MVP_MVC, new Referencia('https://keepcoding.io/blog/que-es-mvc-mvp-y-mvvm-en-android/', 'Modelo-Vista-Presentador', ARQUITECTURAS_KEY, 'MVP', '', '2024/06/17').addRelatedItem(Keys.META_CARACTERISTICAS_BOILER_PLATE)],
     ['otrasArquitecturas', new Referencia('https://medium.com/@maniakhitoccori/los-10-patrones-comunes-de-arquitectura-de-software-d8b9047edf0b', 'Otras Arquitecturas', ARQUITECTURAS_KEY, 'Otras (patrones)')],
     ['monolitos', new Referencia('https://www.paradigmadigital.com/techbiz/microservicios-vs-microlitos-vs-monolitos-ventajas-desventajas/', 'Monolitos VS Microservicios', ARQUITECTURAS_KEY, 'Monolitos')],
     ['stylesArchitecture1', new Referencia('https://hdnmetatech.com/news/our-press/detail/introduction-to-architecture-styles-and-patterns-as-a-blueprint-for-designing-a-system', 'Estilos #1', ARQUITECTURAS_KEY, 'Estilos & Patrones #1')],
@@ -385,7 +372,7 @@ export const LEYES_REF = new Map<string, Referencia>([
     ['mooreAndWirth', new Referencia('https://blogs.uoc.edu/informatica/la-ley-de-wirth-la-ley-de-moore-inversa-del-software/', 'Ley de Moore & Ley de Wirth', LEYES_KEY, 'Moore & Wirth', '2023/07/04')],
     ['amdahl', new Referencia('https://www.techtarget.com/whatis/definition/Amdahls-law', 'Ley de Amdahls', LEYES_KEY, 'Ley de Amdahls', '2023/08/25')],
     ['gall', new Referencia('https://deviq.com/laws/galls-law', 'Ley de Gall', LEYES_KEY, 'Ley de Gall', '2024/05/13')],
-    [LEYES_KIDLIN, new Referencia('https://www.linkedin.com/pulse/5-leyes-famosas-aplicadas-en-la-pmo-lourdes-medina-pfmp-pmp-pmo-cp-zv4ke/', 'Ley de Kidlin', LEYES_KEY, 'Ley de Kidlin', '2024/07/14').addRelatedItem(AGILES_DEMING)],
+    [LEYES_KIDLIN, new Referencia('https://www.linkedin.com/pulse/5-leyes-famosas-aplicadas-en-la-pmo-lourdes-medina-pfmp-pmp-pmo-cp-zv4ke/', 'Ley de Kidlin', LEYES_KEY, 'Ley de Kidlin', '2024/07/14').addRelatedItem(Keys.AGILES_DEMING)],
     [LEYES_GOODHARTS, new Referencia('https://levelup.gitconnected.com/9-laws-that-every-software-developer-should-know-a5518bfef022', 'Ley de Goodhart’s', LEYES_KEY, 'Ley de Goodhart’s', '2024/11/08')],
     [LEYES_LINUS, new Referencia('https://levelup.gitconnected.com/9-laws-that-every-software-developer-should-know-a5518bfef022', 'Ley de Linus', LEYES_KEY, 'Ley de Linus', '2024/11/09')],
     [LEYES_HOFSTADTER, new Referencia('https://levelup.gitconnected.com/9-laws-that-every-software-developer-should-know-a5518bfef022', 'Ley de Hofstadter', LEYES_KEY, 'Ley de Hofstadter', '2024/11/10').addRelatedItem(PEOPLE_GESTION_EXPECTATIVAS)],
@@ -489,32 +476,33 @@ export const MALAS_PRACTICAS_REF = new Map<string, Referencia>([
 
 export const META_CARACTERISTICAS_KEY = 'Meta-Caracteristicas';
 export const META_CARATERISTICAS_REF = new Map<string, Referencia>([
-    [META_CARACTERISTICAS_META_DATOS, new Referencia('https://blog.powerdata.es/el-valor-de-la-gestion-de-datos/que-son-los-metadatos-y-cual-es-su-utilidad', '¿ Que son los metadatos ?', META_CARACTERISTICAS_KEY, 'Meta data', '', '2024/06/15')],
+    [Keys.META_CARACTERISTICAS_META_DATOS, new Referencia('https://blog.powerdata.es/el-valor-de-la-gestion-de-datos/que-son-los-metadatos-y-cual-es-su-utilidad', '¿ Que son los metadatos ?', META_CARACTERISTICAS_KEY, 'Meta data', '', '2024/06/15')],
     ['metaClase', new Referencia('https://quesignificado.org/que-es-una-metaclase/', '¿ Que es una meta clase ?', META_CARACTERISTICAS_KEY, 'Meta Clase')],
     //['reflexion', new Referencia('https://es.linkfang.org/wiki/Reflexi%C3%B3n_(inform%C3%A1tica)', 'Auto mutabilidad del codigo', META_CARACTERISTICAS_KEY, 'Reflexión')],
-    [META_CARACTERISTICAS_REFLEXION, new Referencia('https://levelup.gitconnected.com/reflecting-on-java-unveiling-the-magic-of-reflection-7140a465ff6b', 'Auto mutabilidad del codigo', META_CARACTERISTICAS_KEY, 'Reflexión','', '2024/07/12')],
+    [Keys.META_CARACTERISTICAS_REFLEXION, new Referencia('https://levelup.gitconnected.com/reflecting-on-java-unveiling-the-magic-of-reflection-7140a465ff6b', 'Auto mutabilidad del codigo', META_CARACTERISTICAS_KEY, 'Reflexión','', '2024/07/12')],
     ['asserts', new Referencia('https://www.adictosaltrabajo.com/2016/01/07/haz-tu-codigo-mas-fiable-con-asserts/', 'Comprobaciones del codigo', META_CARACTERISTICAS_KEY, 'Aserciones')],
     ['excepciones', new Referencia('https://universidad-de-los-andes.gitbooks.io/fundamentos-de-programacion/content/Nivel4/5_ManejoDeLasExcepciones.html', 'Lanzamiento y manejo de excepciones', META_CARACTERISTICAS_KEY, 'Exepciones')],
     ['cache', new Referencia('https://medium.com/bancolombia-tech/dise%C3%B1ando-una-estrategia-de-cach%C3%A9-39366876009b', 'Tipos de Cache', META_CARACTERISTICAS_KEY, 'Tipos de Cache')],
     ['hilos', new Referencia('https://facturapp.weebly.com/hilos.html', 'Hilos', META_CARACTERISTICAS_KEY, 'Hilos')],
     ['argumentos', new Referencia('https://picodotdev.github.io/blog-bitix/2021/01/en-java-los-argumentos-se-pasan-por-valor-o-por-referencia/', 'Argumentos por valor y por referencia', META_CARACTERISTICAS_KEY, 'Argumentos')],
     //['concurrenciaParalelismo', new Referencia('https://codigofacilito.com/articulos/programacion-concurrente', 'Concurrencia & Paralelismo', META_CARACTERISTICAS_KEY, 'Concurrencia')],
-    [META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM, new Referencia('https://www.linkedin.com/feed/update/urn:li:activity:7209404927750615040/', 'Concurrencia & Paralelismo', META_CARACTERISTICAS_KEY, 'Concurrencia/Paralelismo', '', '2024/06/26')],
+    [Keys.META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM, new Referencia('https://www.linkedin.com/feed/update/urn:li:activity:7209404927750615040/', 'Concurrencia & Paralelismo', META_CARACTERISTICAS_KEY, 'Concurrencia/Paralelismo', '', '2024/06/26')],
     ['ortogonalidad', new Referencia('https://qastack.mx/programming/1527393/what-is-orthogonality', 'Ortogonalidad', META_CARACTERISTICAS_KEY, 'Ortogonalidad')],
-    [META_CARACTERISTICAS_BOILER_PLATE, new Referencia('https://www.freecodecamp.org/news/whats-boilerplate-and-why-do-we-use-it-let-s-check-out-the-coding-style-guide-ac2b6c814ee7/', 'Boiler Plate (codigo repetitivo)', META_CARACTERISTICAS_KEY, 'BoilerPlate')],
+    [Keys.META_CARACTERISTICAS_BOILER_PLATE, new Referencia('https://www.freecodecamp.org/news/whats-boilerplate-and-why-do-we-use-it-let-s-check-out-the-coding-style-guide-ac2b6c814ee7/', 'Boiler Plate (codigo repetitivo)', META_CARACTERISTICAS_KEY, 'BoilerPlate')],
     ['recursividad', new Referencia('https://geekytheory.com/que-es-la-recursividad/', 'Recursividad', META_CARACTERISTICAS_KEY, 'Recursividad')],
-    [META_CARACTERISTICAS_BACKTRACKING, new Referencia('https://www.ecured.cu/Vuelta_atr%C3%A1s_(backtracking)', 'Back Tracking', META_CARACTERISTICAS_KEY, 'Back tracking')],
+    [Keys.META_CARACTERISTICAS_BACKTRACKING, new Referencia('https://www.ecured.cu/Vuelta_atr%C3%A1s_(backtracking)', 'Back Tracking', META_CARACTERISTICAS_KEY, 'Back tracking')],
     ['rawTypes', new Referencia('https://stackoverflow.com/questions/2770321/what-is-a-raw-type-and-why-shouldnt-we-use-it#:~:text=Raw%20types%20refer%20to%20using,with%20older%20versions%20of%20Java.', 'Tipos Crudos', META_CARACTERISTICAS_KEY, 'Tipos crudos')],
     ['memoryAndGarbage', new Referencia('https://www.computerworld.com/article/2596992/memory-leaks-and-garbage-collection.amp.html', 'Fugas de memoria y recoleccion de basura', META_CARACTERISTICAS_KEY, 'Fugas de memoria')],
     ['footprint', new Referencia('https://www.pcmag.com/encyclopedia/term/memory-footprint', 'Huella en memoria', META_CARACTERISTICAS_KEY, 'Huellas de memoria', '2023/11/03')],
     ['featureFlag', new Referencia('https://www.optimizely.com/optimization-glossary/feature-flags/', 'Feature Flags', META_CARACTERISTICAS_KEY, 'Feature Flags', '2023/11/30')],
-    ['generics', new Referencia('https://medium.com/@AlexanderObregon/java-generics-type-safety-and-performance-a0864ca72a5a', 'Genericos', META_CARACTERISTICAS_KEY, 'Genericos', '2023/12/28')],
+    //['generics', new Referencia('https://medium.com/@AlexanderObregon/java-generics-type-safety-and-performance-a0864ca72a5a', 'Genericos', META_CARACTERISTICAS_KEY, 'Genericos', '2023/12/28')],
+    [Keys.META_CARACTERISTICAS_GENERICS, new Referencia('https://medium.com/@aqilzeka99/mastering-generics-in-java-interview-questions-571232c02af9', 'Genericos', META_CARACTERISTICAS_KEY, 'Genericos', '2023/12/28', '2024/12/01')],
     ['memorySafety', new Referencia('https://stackoverflow.blog/2024/03/04/in-rust-we-trust-white-house-office-urges-memory-safety', 'Seguridad en la memoria', META_CARACTERISTICAS_KEY, 'Seguridad en la memoria', '2024/03/26')],
     ['profiling', new Referencia('https://digma.ai/9-best-java-profilers-to-use-in-2024/', 'Profiling', META_CARACTERISTICAS_KEY, 'Profiling', '2024/05/05')],
     ['blockingAndNoBlocking', new Referencia('https://www.geeksforgeeks.org/blocking-and-nonblocking-io-in-operating-system/', 'Operaciones Bloqueantes', META_CARACTERISTICAS_KEY, 'Bloqueos/Sin Bloqueos', '2024/05/12')],
-    [META_CARACTERISTICAS_ANOTATIONS, new Referencia('https://vaheaslanyan7.medium.com/the-java-interview-prep-handbook-50-questions-solved-code-examples-62fed44e3e6a', 'Anotaciones', META_CARACTERISTICAS_KEY, 'Anotaciones', '2024/06/30').addRelatedItem(FRAMEWORKS_FRAMEWORKS).addRelatedItem(META_ESTRUCTURAS_DEPRECATION)],
-    [META_CARACTERISTICAS_CACHE_AND_TYPES, new Referencia('https://medium.com/@junfeng0828/d884ccac7c87', 'Estrategias del Cache', META_CARACTERISTICAS_KEY, 'Estrategias del Cache', '2024/10/19')],
-    [META_CARACTERISTICAS_TYPE_ERASURE, new Referencia('https://www.baeldung.com/java-type-erasure', 'Borrado de Tipos', META_CARACTERISTICAS_KEY, 'Borrado de Tipos', '2024/11/15').addRelatedItem(VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES)],
+    [Keys.META_CARACTERISTICAS_ANOTATIONS, new Referencia('https://vaheaslanyan7.medium.com/the-java-interview-prep-handbook-50-questions-solved-code-examples-62fed44e3e6a', 'Anotaciones', META_CARACTERISTICAS_KEY, 'Anotaciones', '2024/06/30').addRelatedItem(FRAMEWORKS_FRAMEWORKS).addRelatedItem(META_ESTRUCTURAS_DEPRECATION)],
+    [Keys.META_CARACTERISTICAS_CACHE_AND_TYPES, new Referencia('https://medium.com/@junfeng0828/d884ccac7c87', 'Estrategias del Cache', META_CARACTERISTICAS_KEY, 'Estrategias del Cache', '2024/10/19')],
+    [Keys.META_CARACTERISTICAS_TYPE_ERASURE, new Referencia('https://www.baeldung.com/java-type-erasure', 'Borrado de Tipos', META_CARACTERISTICAS_KEY, 'Borrado de Tipos', '2024/11/15').addRelatedItem(VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES)],
 ]);
 
 export const META_ESTRUCTURAS_KEY = 'Meta-Estructuras';
@@ -864,7 +852,7 @@ export const PERSISTENCY_ADVANCED_REF = new Map<string, Referencia>([
     ['MVCC', new Referencia('https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/What-is-MVCC-How-does-Multiversion-Concurrencty-Control-work', 'Control de Concurrencia Multiversion', PERSISTENCY_ADVANCED_KEY, 'Control de Concurrencia', '2023/10/09')],
     ['acidVSbase', new Referencia('https://phoenixnap.com/kb/acid-vs-base', 'BASE', PERSISTENCY_ADVANCED_KEY, 'BASE', '2023/12/04')],
     [PERSISTENCY_ADVANCED_SCALING_DB, new Referencia('https://blog.bytebytego.com/p/ep114-7-must-know-strategies-to-scale', 'Estrategias para escalar una BD', PERSISTENCY_ADVANCED_KEY, 'Escalamiento', '2024/06/07')],
-    [PERSISTENCY_ADVANCED_WAL, new Referencia('https://medium.com/@vinciabhinav7/write-ahead-logs-but-why-494c3efd722d', 'Registros de escritura anticipada (WAL)', PERSISTENCY_ADVANCED_KEY, 'WAL', '2024/06/15').addRelatedItem(META_CARACTERISTICAS_META_DATOS).addRelatedItem(PERSISTENCY_DBMS)],
+    [PERSISTENCY_ADVANCED_WAL, new Referencia('https://medium.com/@vinciabhinav7/write-ahead-logs-but-why-494c3efd722d', 'Registros de escritura anticipada (WAL)', PERSISTENCY_ADVANCED_KEY, 'WAL', '2024/06/15').addRelatedItem(Keys.META_CARACTERISTICAS_META_DATOS).addRelatedItem(PERSISTENCY_DBMS)],
     [PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS, new Referencia('https://rakyll.medium.com/things-i-wished-more-developers-knew-about-databases-2d0178464f78', 'Problemas desconocidos', PERSISTENCY_ADVANCED_KEY, 'Problemas deconocidos', '2024/10/06').addRelatedItem(NUBE_FALACIES_DYSTRIBUTED_SYSTEMS)],
     [PERSISTENCY_ADVANCED_PARTITIONING, new Referencia('https://medium.com/@imnazimuddinasif/a-practical-overview-of-database-partitioning-59e8e318142b', 'Particiones', PERSISTENCY_ADVANCED_KEY, 'Particiones', '2024/10/07')],
     [PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL, new Referencia('https://newsletter.systemdesigncodex.com/p/eventual-consistency-is-tricky', 'Consistencia Eventual', PERSISTENCY_ADVANCED_KEY, 'Consistencia Eventual', '2024/10/27')],
@@ -914,7 +902,7 @@ export const HARDWARE_REF = new Map<string, Referencia>([
     [HARDWARE_PROTOCOLS, new Referencia('https://www.solarwinds.com/resources/it-glossary/network-protocols', 'Network Protocols', HARDWARE_KEY, 'Network Protocols', '2024/06/11')],
     [HARDWARE_OPERATIVE_SYSTEM, new Referencia('https://medium.com/@oyebisijemil_41110/why-understanding-operating-systems-is-important-for-every-back-end-distributed-systems-engineers-fc8412af4c6c', 'Sistema Operativo', HARDWARE_KEY, 'Sistema Operativo', '2024/06/30')],
     [HARDWARE_UTF8, new Referencia('https://medium.com/@dmosyan/utf-8-and-the-problem-that-it-solves-a294aed2aa20', 'UTF-8', HARDWARE_KEY, 'UTF-8', '2024/08/24').addRelatedItem(VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES).addRelatedItem(META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION)],
-    [HARDWARE_CLEAN_CODE_PERFORMANCE, new Referencia('https://pvs-studio.com/en/blog/posts/1157/', 'Clean Code, peor Performance ?', HARDWARE_KEY, 'Clean Code & Performance', '2024/11/03').addRelatedItem(PRINCIPIOS_SOLID).addRelatedItem(CALIDAD_CLEAN_CODE).addRelatedItem(AGILES_MANIFEST_AGIL)],
+    [HARDWARE_CLEAN_CODE_PERFORMANCE, new Referencia('https://pvs-studio.com/en/blog/posts/1157/', 'Clean Code, peor Performance ?', HARDWARE_KEY, 'Clean Code & Performance', '2024/11/03').addRelatedItem(PRINCIPIOS_SOLID).addRelatedItem(CALIDAD_CLEAN_CODE).addRelatedItem(Keys.AGILES_MANIFEST_AGIL)],
 ]);
 
 export const WEB_KEY = 'Web';

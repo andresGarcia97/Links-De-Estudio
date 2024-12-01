@@ -1,16 +1,4 @@
-import {
-    AGILES_OUTPUT_AND_OUTCOME, ARQUITECTURAS_CAPAS, ARQUITECTURAS_DEFINICION, AGILES_MANIFEST_AGIL, ARQUITECTURAS_EVENT_DRIVEN,
-    ARQUITECTURAS_MVP_MVC, CONTENEDORES_SECURE_ORCHESTRATION, ESTRATEGIAS_DESARROLLO_SLDC, ESTRATEGIAS_DESARROLLO_SCREAMING_DESIGN,
-    FRAMEWORKS_CODE_STRUCTURE, FRAMEWORKS_IOD, LEYES_HYRUM, LEYES_LEHMAN, MALAS_PRACTICAS_ANTI_PATRONES_ARQUITECTURAS,
-    MALAS_PRACTICAS_TRAIN_WECKS, META_CARACTERISTICAS_BOILER_PLATE, META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM,
-    META_CARACTERISTICAS_META_DATOS, POO_INMUTABILITY, POO_POO, POO_POO_PILARES, FRAMEWORKS_FRAMEWORKS, META_CARACTERISTICAS_ANOTATIONS,
-    META_CARACTERISTICAS_REFLEXION, ESTRATEGIAS_DESARROLLO_TDD, LEYES_KIDLIN, AGILES_DEMING, ESTRATEGIAS_DESARROLLO_DDD,
-    META_CARACTERISTICAS_BACKTRACKING, CONTENEDORES_ARQUITECTURE, ARQUITECTURAS_MICRO_SERVICES, AGILES_PRIORITIZATION,
-    AGILES_PLANNING_POKER, AGILES_5S, LEYES_CONWAY, LEYES_GOODHARTS, LEYES_LINUS, LEYES_HOFSTADTER,
-    MALAS_PRACTICAS_DEFAULT_MICROSERVICES, META_CARACTERISTICAS_CACHE_AND_TYPES, ESTRATEGIAS_DESARROLLO_BFF,
-    POO_COUPLING_AND_COHESION, POO_ENLACES, META_CARACTERISTICAS_TYPE_ERASURE,
-    ARQUITECTURAS_HEXAGONAL
-} from "../linkReferencia";
+import * as Keys from '../keys'
 import { Item } from "../models";
 
 export class Content4 {
@@ -62,7 +50,7 @@ export const AGILES =
                 '<strong>- Movimientos innecesarios:</strong> Todo movimiento que no aporte valor al producto es un despedicio, hasta caminar al trabajo puede serlo ',
                 '<strong>- Defectos:</strong> Todo error consume tiempo para ser resuelto, independientemente de su tamaño, además de la insatisfacción del cliente ',
             ]),
-        new Item(AGILES_5S,
+        new Item(Keys.AGILES_5S,
             [
                 'La metodologia <strong>Kaizen</strong> es una concepción oriental hacia la calidad total, la base de la mejora continua ',
                 '',
@@ -107,7 +95,7 @@ export const AGILES =
                 '<strong>Defectos:</strong> Uno de los más peligrosos, ya que entre más tarde se encuentre un error, más costoso sera corregirlo ',
                 ' - estos errores se pueden disminuir por medio de las pruebas, e integración continua ',
             ]),
-        new Item(AGILES_PLANNING_POKER,
+        new Item(Keys.AGILES_PLANNING_POKER,
             [
                 '- Las estimaciones son de mucha ayuda, para definir tiempo, costos y esfuerzos, en base a la información disponible ',
                 '- Independientemente de la certeza, con que se hayan realizado, generalmente casi nunca se cumplen ',
@@ -130,7 +118,7 @@ export const AGILES =
                 ' - Si no hay consenso se abre una breve discusión y se vuelve a votar, si vuelve a suceder se podra realizar un promedio o escoger un extremo ',
                 ' - Se repite el proceso hasta completar todas las HU ',
             ]),
-        new Item(AGILES_MANIFEST_AGIL,
+        new Item(Keys.AGILES_MANIFEST_AGIL,
             [
                 '- Nace con el proposito de reformar el desarrollo de software para hacerlo más eficiente y eficaz ',
                 '- Son 4 principios que toda metodologia agil lleva a cabo para mejorar el desarrollo ',
@@ -166,7 +154,7 @@ export const AGILES =
                 '<strong>Spike funcional:</strong> Hace falta conocer más sobre los requisitos y/o alcance, como que se va a incluir, ',
                 ' - documentar escenarios, entrevistar a un experto del negocio, revision de codigo ',
             ]),
-        new Item(AGILES_DEMING,
+        new Item(Keys.AGILES_DEMING,
             [
                 '- Es un sistema que busca la optimización constante de las actividades empresariales, constando de 4 etapas ciclicas ',
                 '- Tambien es conocido como ciclo PDCA por sus etapas <em>Plan, Do, Check, Act </em>',
@@ -219,7 +207,7 @@ export const AGILES =
                 '<strong>Ley de Humphrey:</strong> Los usuarios no saben realmente el software que quieren, hasta que lo ven funcionando ',
                 '<strong>Lema de Wegner:</strong> Un sistema interactivo, nunca podra ser ni especificado ni testeado por completo',
             ]),
-        new Item(AGILES_OUTPUT_AND_OUTCOME,
+        new Item(Keys.AGILES_OUTPUT_AND_OUTCOME,
             [
                 '- En la actualizadad, todavia es dificil determinar la relación de lo que realizan los equipos y el valor de negocio generado a la compañia ',
                 '- Los gerentes piensan en maximizar el valor generado (<em>Impacto</em>), lo cual se puede traducir en en mayores ingresos, mejor imagen, o nuevos mercados ',
@@ -252,7 +240,7 @@ export const AGILES =
                 '- Esta tecnica permite encontrar los Outcomes deseados mediante reuniones presenciales y una exposición de ideas, con los objetivos deseados',
                 '- Asi se definen los impactos estrategicos más deseados y como aumentarlos',
             ]),
-        new Item(AGILES_PRIORITIZATION,
+        new Item(Keys.AGILES_PRIORITIZATION,
             [
                 '- Priorizar los elementos del negocio, es un pilar fundamental en el desarrollo agil, para asegurar la entrega constante de valor ',
                 '- Una adecuada priorización garantiza que los elementos de mayor impacto y valor para el cliente se aborden de manera relevante ',
@@ -285,7 +273,7 @@ export const AGILES =
 
 export const ARQUITECTURAS =
     [
-        new Item(ARQUITECTURAS_DEFINICION,
+        new Item(Keys.ARQUITECTURAS_DEFINICION,
             [
                 '- Representa la estructura que conforma al sistema completo ',
                 '- Define y limita cada una de Las responsabilidades de cada una de las partes ',
@@ -426,7 +414,7 @@ export const ARQUITECTURAS =
                 '- Escalabilidad y mantenibilidad, de manera que la degradación del codigo y futuros cambios sean sostenibles con el tiempo',
                 '- Cultura entre los equipos, ya que se requiere de un compromiso y una comprensión compartida por los desarrolladores ',
             ]),
-        new Item(ARQUITECTURAS_CAPAS,
+        new Item(Keys.ARQUITECTURAS_CAPAS,
             [
                 '- Se basa en la distribución de roles y responsabilidades de forma jerarquica en cada capa ',
                 '- Puede tener N capas, generalmente son 3, de la cual se desprende MVC ',
@@ -471,7 +459,7 @@ export const ARQUITECTURAS =
                 '<strong>Eje Y</strong> Descomposición funcional: La aplicación se divide en subsistemas más pequeños, que sean independientes entre si ',
                 ' - Asi se puede escalar solamente las partes que tengan una alta demanda, sin aumentar todo innecesariamente ',
             ]),
-        new Item(ARQUITECTURAS_MICRO_SERVICES,
+        new Item(Keys.ARQUITECTURAS_MICRO_SERVICES,
             [
                 '- Se pasa del concepto de un nucleo central y robusto a tener diferentes partes más pequeñas, ligeras y debidamente acotadas ',
                 '- Esto permite que sean autonomos y su desarrollo no afecte generalmente el codigo de otros servicios ó funcionalidades ',
@@ -480,7 +468,7 @@ export const ARQUITECTURAS =
                 '- Los servicios pueden ser independientes de las tecnologias, además de que tambien se pueden subdividir en caso de tener gran complejidad ',
                 '- Tambien se pueden escalar/desescalar de manera individual optimizando el uso de recursos ',
             ]),
-        new Item(ARQUITECTURAS_HEXAGONAL,
+        new Item(Keys.ARQUITECTURAS_HEXAGONAL,
             [
                 '- Aisla el dominio de las tecnologias, permitiendo que los cambios entre tecnologias sean superfluos o minimos ',
                 '- La comunicación entre componentes internos ó llamados externos se da por medio de puertos(interfaces) ',
@@ -524,7 +512,7 @@ export const ARQUITECTURAS =
                 '- Anteriormente esta arquitectura solo se consideraba en el lado del servidor, pero frameworks como Angular han demostrado lo contrario',
                 '- Esta adaptación para la web, se ha dado con ciertas diferencias ya que todos los conceptos no son totalmente aplicables '
             ]),
-        new Item(ARQUITECTURAS_MVP_MVC,
+        new Item(Keys.ARQUITECTURAS_MVP_MVC,
             [
                 '- Este patron es una derivación de <em>MVC</em> y es ampliamentes usado para construir aplicaciones en Android',
                 '- Funciona para casi todos los tipos de aplicación, y es tanto de adaptar como de replicar, aunque puede conllevar mucho codigo repetitivo(boilerplate)',
@@ -735,7 +723,7 @@ export const ARQUITECTURAS =
                 ' - <strong>Accesibilidad:</strong> Para analizar aspectos como documentos, diseños, arquitectura, tecnologias, etc.. antes de emprender cualquier cambio ',
                 ' - <strong>Consistencia:</strong> cualquier cambio que se haga, debe intentar mantener la misma estructura y caracteristicas que ya tiene el sistema ',
             ]),
-        new Item(ARQUITECTURAS_EVENT_DRIVEN,
+        new Item(Keys.ARQUITECTURAS_EVENT_DRIVEN,
             [
                 '- <em>Event Driven Arquitecture</em> es un patron de diseño en el que los componentes se comunican mediante la producción y el consumo de eventos ',
                 '- Los componentes tienen un bajo acoplamiento y son flexibles en su forma de interacturar, esta comunicación se da de manera asincrona',
@@ -763,7 +751,7 @@ export const ARQUITECTURAS =
 
 export const META_CARACTERISTICAS =
     [
-        new Item(META_CARACTERISTICAS_META_DATOS,
+        new Item(Keys.META_CARACTERISTICAS_META_DATOS,
             [
                 '- Literalmente son datos de los datos',
                 '- Su significado proviene del griego <em>μετα</em>, <strong>"después de"</strong> y del plural del latín <em>datum</em>, <strong>"datos"</strong>, literalmente significa "más allá de los datos"',
@@ -781,7 +769,7 @@ export const META_CARACTERISTICAS =
                 '- Este concepto es ampliamente usado para realizar testing, por medio de anotaciones, dobles y otros conceptos, ',
                 '- Un ejemplo de esto son <em>Junit</em> y <em>Mockito</em>, frameworks para realizar pruebas en java, que se basan en estas caracteristica ',
             ]),
-        new Item(META_CARACTERISTICAS_REFLEXION,
+        new Item(Keys.META_CARACTERISTICAS_REFLEXION,
             [
                 '- Capacidad de un codigo de observarse asi mismo y cambiar su estructura a alto nivel o su comportamiento en tiempo de ejecución ',
                 '- Puede ser dinamica o estatica, y es más comun en los lenguajes que usan maquinas virtuales para ejecutarse, como JAVA ',
@@ -854,7 +842,7 @@ export const META_CARACTERISTICAS =
                 '- Esto no modifica la variable original, ya sea un tipo primitivo o un objeto ',
                 '- Algunas clases son inmutables por lo que los objetos no pueden ser modificados, se devuelve una nueva instancia con los cambios y no la original ',
             ]),
-        new Item(META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM,
+        new Item(Keys.META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM,
             [
                 '<strong>Concurrencia:</strong> Es la capacidad de realizar muchas tareas a la vez ',
                 '<strong>Paralelismo:</strong>  Es la capacidad de ejecutar multiples acciones de manera simultanea ',
@@ -874,7 +862,7 @@ export const META_CARACTERISTICAS =
                 '- Basicamente significa que cuando hacemos una accion esta no debe modificar lo que no le respecta ',
                 '- Tambien se puede interpretar de manera que cuando se ejecute una instrucción solo se ejecute esta y nada más ',
             ]),
-        new Item(META_CARACTERISTICAS_BOILER_PLATE,
+        new Item(Keys.META_CARACTERISTICAS_BOILER_PLATE,
             [
                 '- Este hace referencia a codigo repetitivo que no siempre es util, pero si requerido, aun aveces cuando no vaya a ser usado ',
                 '- Esto tambien aplica para fragmentos de codigo propios, ya que se reutiliza codigo, con solo copiar y pegar ',
@@ -894,7 +882,7 @@ export const META_CARACTERISTICAS =
                 '       return (n == 0) ? 1 : n * factorial(n - 1);',
                 '   }',
             ]),
-        new Item(META_CARACTERISTICAS_BACKTRACKING,
+        new Item(Keys.META_CARACTERISTICAS_BACKTRACKING,
             [
                 '- Es una estrategia para encontrar soluciones que satisfagan restricciones ',
                 '- De una manera basica esto se asemeja a un recorrido en profundidad dentro de un grafo que no contega ciclos ',
@@ -960,19 +948,27 @@ export const META_CARACTERISTICAS =
                 '<strong>- CD/CI:</strong> Las entregas continuas se encuentran beneficiadas, ya que permite la unión de los cambios, e incluso de funcionalidades incompletas, ',
                 ' - que no afectaran el codigo de producción, y que cuenta con mecanismos para ser <em>activadas/desactivadas</em> cuando se requieran ',
             ]),
-        new Item('generics',
+        new Item(Keys.META_CARACTERISTICAS_GENERICS,
             [
                 '- Es una caracteristica del lenguaje que permite la abstraccion de tipos, presente en Java y otros lenguajes orientados a objetos como C# ',
                 '- Esto permite crear soluciones más sofisticadas que ayudan a mejorar la mantenibilidad del codigo y mantener la seguridad de los tipos ',
                 '- Los genericos es una forma de indicar al compilador que tipo de objeto se almacenara en una coleccion o manipulara mediante una clase y/o metodo ',
                 '- Esto permite detectar errores y realizar comprobaciones en tiempo de compilación, mucho más seguro que en tiempo de ejecución ',
+                '- Esta parametrización permite crear clases, interfaces y metodos que pueden operar con multiples tipos de datos sin perder comprobaciones en la compilación ',
                 '',
                 '- Tambien permiten flexibilidad al poder usar comodines lo que evita perder restricciones y reducir errores del tipo <em>ClassCastException</em> ',
-                '<strong> - Comodin ilimitado:</strong>         <em> ? </em>             Permiten cualquier tipo',
-                '<strong> - Comodin de limite superior:</strong><em> ? extends Type</em> Restringen el tipo desconocido a un subtipo particular ',
-                '<strong> - Comodin de limite inferior:</strong><em> ? super Type  </em> Restringen el tipo desconocido a un supertipo particular ',
+                '<strong> Comodin ilimitado:</strong>         <em> ? </em>             Permiten cualquier tipo',
+                '<strong> Comodin de limite superior:</strong><em> ? extends Type</em> Restringen el tipo desconocido a un subtipo particular ',
+                '<strong> Comodin de limite inferior:</strong><em> ? super Type  </em> Restringen el tipo desconocido a un supertipo particular ',
                 '',
-                '- Esta caracteristica fue introducida sin cambiar la JVM, por lo que garantiza retrocompatibilidad con versiones más antiguas de Java ',
+                '<strong>- Parametros comunes en Genericos:</strong>',
+                ' T -> Tipe   ',
+                ' E -> Element',
+                ' K -> Key    ',
+                ' N -> Number ',
+                ' V -> Value  ',
+                '',
+                '- Esta caracteristica fue introducida sin cambiar la JVM, por lo que garantiza retrocompatibilidad con versiones previas a Java 5 ',
                 '- Para esto fue necesario realizar un borrado de tipos, ya que la JVM no soporta esta caracteristica siendo solamente en tiempo de compilación ',
                 '- Debido a esto no existe una sobrecarga ni se ve afectado el rendimiento en tiempo de ejecución ',
                 '- Al contrario esto puede traer beneficios en el uso de la memoria al evitar crear objetos intermedios y eliminar casteos innecesarios ',
@@ -1064,7 +1060,7 @@ export const META_CARACTERISTICAS =
                 '- Las operaciones <strong>Asyncronicas</strong> no se recomiendan, cuando se necesitan encadenar tareas que tienen un orden especifico de ejecución ',
                 ' - o necesitan estar sincronizadas y ser fiables, como el acceso y la modificación de datos',
             ]),
-        new Item(META_CARACTERISTICAS_ANOTATIONS,
+        new Item(Keys.META_CARACTERISTICAS_ANOTATIONS,
             [
                 '- Son metadatos que se pueden agregar al codigo para proporcionar información al compilador o al entorno de ejecución ',
                 '- No afecta directamente la funcionalidad del programa, si no que transmiten instrucciones a las herramientas o al marco de trabajo(framework)',
@@ -1076,7 +1072,7 @@ export const META_CARACTERISTICAS =
                 '<strong>- @Override:</strong> Información util para el compilador de que debe sobreescribir el metodo de la clase padre, ya sea por herencia ó contrato ',
                 '<strong>- @SuppressWarnings:</strong> Elimina las advertencias que el compilador pueda mostrar, ya sea por desinteres o improbabilidad ',
             ]),
-        new Item(META_CARACTERISTICAS_CACHE_AND_TYPES,
+        new Item(Keys.META_CARACTERISTICAS_CACHE_AND_TYPES,
             [
                 '- Las estrategias usadas para la escritura/lectura varian segun las necesidades de cada negocio, ya que resuelven problemas en distintos escenarios ',
                 '',
@@ -1107,7 +1103,7 @@ export const META_CARACTERISTICAS =
                 '- Es el escenario donde existe la mayor posibilidad de tener problemas en la coherencia de los datos, a cambio de reducir la presión sobre la BD ',
                 '- Es util en sistemas donde se tengan una cantidad incesante de escrituras que requieran ser procesadas de manera eficiente ',
             ]),
-        new Item(META_CARACTERISTICAS_TYPE_ERASURE,
+        new Item(Keys.META_CARACTERISTICAS_TYPE_ERASURE,
             [
                 '- Es un mecanismo importante de Java además de otros lenguajes que admitan Genericos ',
                 '- Esto con el fin de aplicar restricciones en tiempo de compilación, y descartar la información en tiempo de ejecución ',
@@ -1277,7 +1273,7 @@ export const CONTENEDORES =
                 '',
                 '- Para encontrar los links originales a cada especificación, ademas de otros datos y la comunidad del proyecto, puede revisar la fuente ',
             ]),
-        new Item(CONTENEDORES_SECURE_ORCHESTRATION,
+        new Item(Keys.CONTENEDORES_SECURE_ORCHESTRATION,
             [
                 '- Teniendo en cuenta que un contenedor, es un paquete ejecutable, que contiene todo lo necesario para el tiempo de ejecución ',
                 '- Esta ejecución es entandar, solucionando muchos problemas de compatibilidad que antes existian, además de estar segregada y aislada',
@@ -1288,7 +1284,7 @@ export const CONTENEDORES =
                 '- Pero al no tener acceso a la raiz, Podman depende de otras herramientas, para tener acceso y analizar los contenedores, no administrarlos ',
                 '- Como muchas herramientas, ambas tienen pros y contras, y como siempre es importante saber en que contexto y que necesidades se necesitan suplir ',
             ]),
-        new Item(CONTENEDORES_ARQUITECTURE,
+        new Item(Keys.CONTENEDORES_ARQUITECTURE,
             [
                 '- Los contenedores son unidades estandar que empaqueta todo el codigo y sus dependencias, de manera rapida y confiable, sin importar el entorno ',
                 '- Estos son unidades portatiles y casi todos se basan en Linux, aunque Microsoft ha invertido para que tambien sean compatibles y eficientes en Windows ',
@@ -1314,7 +1310,7 @@ export const CONTENEDORES =
 
 export const FRAMEWORKS =
     [
-        new Item(FRAMEWORKS_FRAMEWORKS,
+        new Item(Keys.FRAMEWORKS_FRAMEWORKS,
             [
                 '- Son marcos de trabajo con la finalidad de acelerar y aumentar la calidad del codigo desarrollado ',
                 '- Evitan perder tiempo desarrollando funciones que el propio entorno ya tiene ',
@@ -1327,7 +1323,7 @@ export const FRAMEWORKS =
                 '- El framework es quien toma el control de la ejecución del codigo del usuario modificando el ciclo de vida como tal ',
                 '- Permite añadir nuevas funciones prefabicadas sin tener que modificar el codigo por medio de la inyección de dependencias ',
             ]),
-        new Item(FRAMEWORKS_IOD,
+        new Item(Keys.FRAMEWORKS_IOD,
             [
                 '- La inyección de dependencias Permite modificar y extender nuestro codigo mucho más facil ',
                 '- Solo es especificar que funcionalidades queremos añadir y estaran disponibles de manera transversal ',
@@ -1372,7 +1368,7 @@ export const FRAMEWORKS =
                 '- Aunque los otros tipos tienen casos donde son más convenientes, e incluso la unica opción, la Inyeción por Constructor ',
                 ' - se considera la mejor opción, creando aplicaciones más testeables, robustas y mantenibles ',
             ]),
-        new Item(FRAMEWORKS_CODE_STRUCTURE,
+        new Item(Keys.FRAMEWORKS_CODE_STRUCTURE,
             [
                 '- Al desarrollar una aplicación con Spring, a menudo el desarrollador se enfrenta con la decisión de como ordenar los paquetes de la aplicación',
                 '- 2 enfoques comunes suele ser el de dividir los paquetes por <em>capa</em> o por <em>feature</em>, con ventajas y desventajas para cada enfoque ',
@@ -1422,7 +1418,7 @@ export const FRAMEWORKS =
 
 export const POO =
     [
-        new Item(POO_POO,
+        new Item(Keys.POO_POO,
             [
                 '- Paradigma de programación, que nos permite crear aplicaciones complejas, manteniendo una base de codigo entendible y manejable ',
                 '- Por eso uno de sus principios es <em>Alta integridad, Bajo acoplamiento</em>',
@@ -1434,7 +1430,7 @@ export const POO =
                 '<strong>Propiedades:</strong> Atributos o caracteristicas de un objeto, estos pueden pertener a un solo objeto ó ser comun a todos los objetos ',
                 '<strong>Metodos:</strong> Comportamientos o acciones de un objeto, que este puede realizar al ser invocadas ',
             ]),
-        new Item(POO_POO_PILARES,
+        new Item(Keys.POO_POO_PILARES,
             [
                 '<strong>Encasulapción:</strong> Todas las propiedades del objeto solo le competen al objeto ó su clase ',
                 '<strong>Abstracción:  </strong> Las acciones son publicas pero su complejidad esta oculta; todos necesitan el que, más no interesa el como ',
@@ -1535,7 +1531,7 @@ export const POO =
                 ' Polimorfismo                 No es necesario ningun mecanismo extra               Se puede lograr mediante interfaces     ',
                 ' Crecimiento                  Dificil, al heredar "basura" junto a lo nuevo        Se incorporan o extienden nuevas piezas '
             ]),
-        new Item(POO_ENLACES,
+        new Item(Keys.POO_ENLACES,
             [
                 '- La asociación entre la definición de los metodos y variables, se suele dar de 2 maneras, durante tiempo de ejecución y de compilación ',
                 '- Todo lo se pueda conocer en tiempo de compilación, y que es necesario para que el programa se pueda ejecutar se conoce como enlace estatico ',
@@ -1598,7 +1594,7 @@ export const POO =
                 ' - Los componentes se pueden agregar/cambiar/reemplazar en tiempo de ejecución ',
                 ' - La mayoria de los comportamientos se pueden especificar de manera generica usando estructuras de datos algebraicas, sin herencia '
             ]),
-        new Item(POO_INMUTABILITY,
+        new Item(Keys.POO_INMUTABILITY,
             [
                 '- Es la propiedad de un objeto de no cambiar su estado, una vez haya sido declarado ',
                 '- Esto permite que sean seguros en lenguajes que soportan el uso de hilos (thread-safe) ',
@@ -1689,7 +1685,7 @@ export const POO =
                 '- Estas son clases finales implícitas, evitando convertirse en cualquier tipo de subclase/superclase',
                 '- Pueden implementar contratos (interfaces), obligando a que cada valor de la enumeración, implemente y defina el debido comportamiento',
             ]),
-        new Item(POO_COUPLING_AND_COHESION,
+        new Item(Keys.POO_COUPLING_AND_COHESION,
             [
                 '<strong>Cohesion:</strong> Se centra en como diseñar cada modulo o clase y entre mejor sean las relaciones mejor sea el Diseño Orientado a Objetos ',
                 '- La cohesión aumenta si las funciones y atributos de una clase tienen caracteristicas en comun, además de que cumplen el Principio de Responsabilidad Unica ',
@@ -1757,7 +1753,7 @@ export const LEYES =
                 '',
                 '- Para revisar los demás temas puedes ir a la fuente original ',
             ]),
-        new Item(LEYES_LEHMAN,
+        new Item(Keys.LEYES_LEHMAN,
             [
                 '- El contenido(información) es eterno, pero no la materia que lo contiene(almacenamiento)',
                 '',
@@ -1770,7 +1766,7 @@ export const LEYES =
                 '<strong>Ley de decremento de la calidad:</strong> La calidad de los sistemas comenzara a disminuir a menos que dichos sistemas se adapten a los cambios ',
                 '<strong>Ley de retroalimentación:</strong> La comunicación con el cliente y con las personas conocedoras es fundamental ',
             ]),
-        new Item(LEYES_CONWAY,
+        new Item(Keys.LEYES_CONWAY,
             [
                 '- El impacto de la comunicación en tu empresa ',
                 '- <em>Cualquier organización que diseñe un sistema producirá un diseño que copia la estructura de comunicación de dicha organización.</em>',
@@ -1800,7 +1796,7 @@ export const LEYES =
                 '- Los extremos no necesariamente son malos, ya que permiten tener nuevas experiencias, y conocer nuevos puntos de vista ',
                 '- Esto se debe hacer de manera racional, y bajo nuestra propia elección, para que podamos reflexionar en vez de seguir ciegamente ',
             ]),
-        new Item(LEYES_HYRUM,
+        new Item(Keys.LEYES_HYRUM,
             [
                 '- Cualquier cosa que ofrezcas será usada por alguien',
                 '- El mantenimiento de las aplicaciones siempre va a ser una constante, por lo que reducir características inútiles es una opción de reducirlo ',
@@ -1912,7 +1908,7 @@ export const LEYES =
                 '- Refactorización, como medidad de aseguarar el matenimiento a medida que crece',
                 '- Monolitos modulares, en vez de un enfoque inicial de microservicios, asi los limites estan claros y una posible transición no seria tan dificil',
             ]),
-        new Item(LEYES_KIDLIN,
+        new Item(Keys.LEYES_KIDLIN,
             [
                 '- Es una teoria de resolucion de problemas que dice: <em>Si escribes el problema claramente, el asunto está medio resuelto',
                 '- La palabra <strong>Claramente</strong> te invita a conocer que es lo que falla, cual es el dolor principal y no los sintomas ',
@@ -1921,7 +1917,7 @@ export const LEYES =
                 '- Para aplicar esta ley se suele dividir el problema en partes más pequeñas y manejables',
                 '- Tambien se suelen implementar etapas, que son bastante similares a las del <em>Ciclo de Deming</em>',
             ]),
-        new Item(LEYES_GOODHARTS,
+        new Item(Keys.LEYES_GOODHARTS,
             [
                 '<em>Cuando una medidad se convierte en un objetivo, deja de ser una buena medida</em>, Charles Goodhart',
                 '- Cuando cualquier metrica se convierte en un objetivo o meta, las personas empezaran a cambiar su comportamiento para cumplir con esa metrica ',
@@ -1935,13 +1931,13 @@ export const LEYES =
                 '- Esto se evita teniendo estas metricas como guias hacia un objetivo y que se instauren de manera estatica ',
                 '- Las metricas no siempre entregaran el mejor valor por solo ser cuantitativas, hay casos donde aporta más un enfoque cualitativo ',
             ]),
-        new Item(LEYES_LINUS,
+        new Item(Keys.LEYES_LINUS,
             [
                 '<em>Si existen los suficientes ojos, todos los errores son osbservables</em>, Eric Raymond',
                 '- Esta es una de las esencias del software libre, donde la participación activa de la comunidad ayuda a identificar y corregir errores ',
                 '- De manera más eficaz que en los sitemas cerrados, al tener una mayor cantidad de manos identificando y solucionando errores ',
             ]),
-        new Item(LEYES_HOFSTADTER,
+        new Item(Keys.LEYES_HOFSTADTER,
             [
                 '<em>Siempre lleva más tiempo del esperado, incluso cuando se tiene en cuenta la Ley de Hofstadter</em>, Douglas Hofstadter',
                 '- Es un gran recordatorio de que somos consistentemente imprecisos al estimar el tiempo requerido para realizar tareas de Desarrollo ',
@@ -1951,7 +1947,7 @@ export const LEYES =
 
 export const ESTATEGIAS_DESARROLLO =
     [
-        new Item(ESTRATEGIAS_DESARROLLO_DDD,
+        new Item(Keys.ESTRATEGIAS_DESARROLLO_DDD,
             [
                 '- El lenguaje debe ser obicuo, que sea entendible por desarrolladores, como por los usuarios ',
                 '- Se proponen <strong>4 capas</strong> principales para la arquitectura: ',
@@ -1979,7 +1975,7 @@ export const ESTATEGIAS_DESARROLLO =
                 '- <strong>Dado</strong> escenario y precondiciones <strong>Cuando</strong> acciones a ejecutar <strong>Entonces</strong> Resultado a validar',
                 '- Mejora la comunicación entre todas las partes, ya que todas se comunican más entre si ',
             ]),
-        new Item(ESTRATEGIAS_DESARROLLO_TDD,
+        new Item(Keys.ESTRATEGIAS_DESARROLLO_TDD,
             [
                 '- Primero se escriben las pruebas, y despues se crea el codigo para que estas funcionen ',
                 '- Puede incrementar la carga de trabajo, pero se obtiene un codigo más robusto y mantenible ',
@@ -2067,7 +2063,7 @@ export const ESTATEGIAS_DESARROLLO =
                 ' - para evitarnos vernos truncados al seguirlas a raja tabla, con caracteristicas que nos son completamente inutiles ',
                 '- Tanto BDUF como Agile pueden implementar aspectos positivos del otro si dejar de ser lo que son ',
             ]),
-        new Item(ESTRATEGIAS_DESARROLLO_SCREAMING_DESIGN,
+        new Item(Keys.ESTRATEGIAS_DESARROLLO_SCREAMING_DESIGN,
             [
                 '- DDD trata basicamente de delimitar lineas, y crear contextos acotados, donde cada componente tenga su propia responsabilidad, ',
                 ' - y se pueda seguir comunicando con otros, para descubrir estos limites, el <strong>Tio Bob</strong> ha dicho <em>Trazar líneas entre las cosas que importan y las que no</em>',
@@ -2085,7 +2081,7 @@ export const ESTATEGIAS_DESARROLLO =
                 '- Tambien permite flexibilidad en cuanto al cambio de tecnologias, herramientas, y marcos de trabajo ',
                 '- Permiten que se puedan realizar pruebas, sin necesidad de depender de marcos, BD o otras complejidades, o en su defecto depender lo menos posible ',
             ]),
-        new Item(ESTRATEGIAS_DESARROLLO_SLDC,
+        new Item(Keys.ESTRATEGIAS_DESARROLLO_SLDC,
             [
                 '- El ciclo de vida del desarrollo de software difiere de acuerdo a la necesidades de cada empresa, sin embargo existen etapas en comun ',
                 '',
@@ -2116,7 +2112,7 @@ export const ESTATEGIAS_DESARROLLO =
                 '',
                 'Un <em>SLDC</em> bien definido ayuda a gestionar los recursos y tener canales de comunicación fluidos, siempre deberia estar claro para todos los involucrados '
             ]),
-        new Item(ESTRATEGIAS_DESARROLLO_BFF,
+        new Item(Keys.ESTRATEGIAS_DESARROLLO_BFF,
             [
                 '- A medida que las aplicaciones se vuelven cada vez más distribuidas han surgido patrones para satifacer a la multitud de dispositivos conectados ',
                 '- Esta arquitectura proporciona una capa de backend dedicada para cada interfaz de frontened, en lugar de depender de un API monolitica o un <em>API Gateway</em> ',
@@ -2262,7 +2258,7 @@ export const MALAS_PRACTICAS =
                 ' - de los componentes, hace que probarlos sea un autentico calvario, por lo que para solventar este problema, se dice que un microservicio debe ser ',
                 ' - <em>observable</em>, una manera más elegante de depurar, pero no le quita el hecho de que es una forma reactiva para encontrar errores, en vez de proactiva ',
             ]),
-        new Item(MALAS_PRACTICAS_ANTI_PATRONES_ARQUITECTURAS,
+        new Item(Keys.MALAS_PRACTICAS_ANTI_PATRONES_ARQUITECTURAS,
             [
                 '- Por mejor pensada que este alguna arquitectura, siempre tendra algun defecto o problema conocido, no hay ninguna que sea perfecta ',
                 '- Esto tambien depende del manejo, correctamente solo seran problemas de poco peso, ó de lo contrario seran problemas sistemicos ',
@@ -2305,7 +2301,7 @@ export const MALAS_PRACTICAS =
                 '- El principal problema de este enfoque es que encurre en los costos de <em>DDD</em> sin aprovechar sus beneficios',
                 '- Este antipatron suele ser comun, ya que hay tecnologias y frameworks que fomentan este enfoque',
             ]),
-        new Item(MALAS_PRACTICAS_TRAIN_WECKS,
+        new Item(Keys.MALAS_PRACTICAS_TRAIN_WECKS,
             [
                 '- En la vida real un choque de trenes son acontecimientos nefastos, donde suelen resultar gente herida',
                 '- Sin embargo no es raro que suceda en el desarrollo de software, cuando un metodo llama a otro y a otro, creando una cadena demasiado larga',
@@ -2315,7 +2311,7 @@ export const MALAS_PRACTICAS =
                 '- Tambien esta en contra de la <em>Ley de demeter</em> que consiste en no hablar con extraños, ni inmiscuirnos en sus responsabilidades',
                 '- No es una excepción, pero tampoco esta mal visto, que este mismo encadenamiento de metodos se de, en flujos y/o operaciones con datos'
             ]),
-        new Item(MALAS_PRACTICAS_DEFAULT_MICROSERVICES,
+        new Item(Keys.MALAS_PRACTICAS_DEFAULT_MICROSERVICES,
             [
                 '- Los monolitos no son malos, ni contienen codigo mal hecho, esto siempre sera responsabilidad de los desarrolladores a cargo ',
                 '- Un punto que siempre va a estar en contra de los microservicios, es la capacidad para testearse de manera conjunta ',
