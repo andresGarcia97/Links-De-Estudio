@@ -142,6 +142,7 @@ export const ANALISIS_MICROSERVICES = 'designMicroservices';
 export const VERSIONAMIENTO_LICENSES_AND_DATA = 'licencesAndData';
 export const VERSIONAMIENTO_DEPENDENCIES_ORDER = 'dependenciesOrder';
 export const VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES = 'backwardAndBreakingChanges';
+export const VERSIONAMIENTO_DOCUMENT_ARQUITECTURE = 'documentArquitecture';
 export const CALIDAD_CLEAN_CODE = 'cleanCode';
 export const CALIDAD_IF_ELSE = 'eliminatingIfElse';
 export const PRINCIPIOS_SOLID = 'SOLID';

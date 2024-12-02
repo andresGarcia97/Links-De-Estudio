@@ -1,9 +1,4 @@
-import {
-    CD_CI_CD_CI, CD_CI_CELL_BASED_ARQUITECTURE, PRINCIPIOS_DRY, PRINCIPIOS_KISS, PRINCIPIOS_SOLID, REFACTORING_CLEAN_CODE,
-    REFACTORING_GOOD_AND_BAD_PRACTICES, REFACTORING_LEGACY_CODE, REFACTORING_MANAGE_DEPENDENCIES, REQUISITOS_AMBIGUITY,
-    REQUISITOS_BUSINESS_VALUE, REQUISITOS_REQUIREMENTS_ENGINEERING, SECURITY_AUTHENTICATION_WAYS, SECURITY_LEAST_PRIVILEGE,
-    SECURITY_PROTOCOLOS_SEGURITY, VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES, VERSIONAMIENTO_DEPENDENCIES_ORDER
-} from "../linkReferencia";
+import * as Keys from '../keys'
 import { Item } from "../models";
 
 export class Content3 {
@@ -48,7 +43,7 @@ export const REQUISITOS =
                 '',
                 '<strong>Requisitos externos:</strong> Son afectados directamente por factores externos al software ',
             ]),
-        new Item(REQUISITOS_BUSINESS_VALUE,
+        new Item(Keys.REQUISITOS_BUSINESS_VALUE,
             [
                 '- Es el impacto real de una funcionalidad en el software, por lo que es subjetivo y depende de quien lo este visualizando ',
                 '- Generalmente son responsabilidad del Product Owner y de los Analistas, si se trabaja con metodologias agiles ',
@@ -57,7 +52,7 @@ export const REQUISITOS =
                 '- Cuestionarse a si mismos, conforme va avanzando el proyecto las cosas pueden cambiar y con estas nuestros objetivos ',
                 '- Dar un valor para el negocio implica directamente que estos items se deben comparar y priorizar, lo cual se hace con tecnicas como <em>MOSCOW</em> '
             ]),
-        new Item(REQUISITOS_AMBIGUITY,
+        new Item(Keys.REQUISITOS_AMBIGUITY,
             [
                 '- Menos es Más, una frase bastante diciente pero que es más facil decirla que aplicarla ',
                 '- La redacción debe ser clara y concisa, ya que muchas personas en diferentes ambitos leeran los requisitos y todos deben entenderlos ',
@@ -156,7 +151,7 @@ export const REQUISITOS =
                 '',
                 '- Para saber del más tema y revisar las respectivas bibliografias, puedes ir al articulo original'
             ]),
-        new Item(REQUISITOS_REQUIREMENTS_ENGINEERING,
+        new Item(Keys.REQUISITOS_REQUIREMENTS_ENGINEERING,
             [
                 '- La parte más dificil de construir un sistema de software es decidir que construir, establecer los requisitos tecnicos detallados y/o inherentes ',
                 ' - como interacciones con el usuario, comportamientos, detalles, además de que ninguna parte perjudica tanto al resultado como esta si se realiza mal ',
@@ -360,19 +355,19 @@ export const VERSIONAMIENTO =
                 ' - tambien debe estar enfocada segun el tipo de persona objetivo, no solo es util para el personal tecnico ',
                 '- El uso de manejadores de versiones como Github o Gitlab tambien son utiles para seguir la pista de en que se esta trabajando ',
                 '',
-                '<strong>- Beneficios:</strong> ',
-                ' - Aumentar la productividad, siempre y cuando este organizada y actualizada ',
-                ' - Agilizar la comunicación entre equipos, en especial cuando son grandes y no siempre se puede hablar con la persona indicada ',
-                ' - La incorporación de nuevos miembros es más efectiva, reduciendo la orientación necesaria por parte del equipo ',
-                ' - Las palabras escritas pueden traducirse de una manera más rapida, si hay miembros del equipo que hablen otros idiomas ',
-                ' - Permite una comunicacíon asincronica, en especial si hay personas con trabajos en diferentes zonas horarias ',
-                ' - Escribir sabiendo el contexto, ayuda a mejorar la retentiva de los integrantes del equipo, y la lectura de los diferentes objetivos ',
+                '<strong>Beneficios:</strong> ',
+                '- Aumentar la productividad, siempre y cuando este organizada y actualizada ',
+                '- Agilizar la comunicación entre equipos, en especial cuando son grandes y no siempre se puede hablar con la persona indicada ',
+                '- La incorporación de nuevos miembros es más efectiva, reduciendo la orientación necesaria por parte del equipo ',
+                '- Las palabras escritas pueden traducirse de una manera más rapida, si hay miembros del equipo que hablen otros idiomas ',
+                '- Permite una comunicacíon asincronica, en especial si hay personas con trabajos en diferentes zonas horarias ',
+                '- Escribir sabiendo el contexto, ayuda a mejorar la retentiva de los integrantes del equipo, y la lectura de los diferentes objetivos ',
                 '',
-                '<strong>- Elementos a considerar:</strong>',
-                ' - Esta debe formar parte de las estrategias de CD/CI que se tengan del proyecto, ya que tambien puede ser versionada sin problemas ',
-                ' - Su alojamiento debe ser en un lugar comun para todo el equipo, de facil acceso y que no sea dificil encontrar el contenido ',
-                ' - Que sea en su mayoria texto, no significa que no sea agradable a la vista, su contenido debe presentarse de manera atractiva ',
-                ' - No tiene porque ser una tarea individual, tambien se puede hacer con todo el equipo o en pair programing ',
+                '<strong>Elementos a considerar:</strong>',
+                '- Esta debe formar parte de las estrategias de CD/CI que se tengan del proyecto, ya que tambien puede ser versionada sin problemas ',
+                '- Su alojamiento debe ser en un lugar comun para todo el equipo, de facil acceso y que no sea dificil encontrar el contenido ',
+                '- Que sea en su mayoria texto, no significa que no sea agradable a la vista, su contenido debe presentarse de manera atractiva ',
+                '- No tiene porque ser una tarea individual, tambien se puede hacer con todo el equipo o en pair programing ',
             ]),
         new Item('licencesAndData',
             [
@@ -396,7 +391,7 @@ export const VERSIONAMIENTO =
                 ' - los datos que consuma o que genere un software, puedan tener una licencia diferente, a la del propio software, ',
                 ' - y al no definirlas por separado, puede estar entrando en una zona gris, y algunos casos infringir normas de manera involuntaria ',
             ]),
-        new Item(VERSIONAMIENTO_DEPENDENCIES_ORDER,
+        new Item(Keys.VERSIONAMIENTO_DEPENDENCIES_ORDER,
             [
                 '- Maven es una de las herramientas de gestión de dependencias más populares de Java, aunque pueden surgir problemas inesperados al manejar muchas dependencias ',
                 '- Para esto es esencial comprender el <strong>pom.xml</strong> que es el archivo que contiene todos los detalles sobre el proyecto como información y configuraciones ',
@@ -415,7 +410,7 @@ export const VERSIONAMIENTO =
                 '- En resumen cuando se encuentran multiples versiones de una misma dependencia, Maven resuelve la dependencia utilizando la profundidad en el <em>arbol</em> ',
                 '- Esto selecciona la definición más cercana la raiz del arbol, pero si se encuentran a la misma profundidad, se tomara la primera declaración ',
             ]),
-        new Item(VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES,
+        new Item(Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES,
             [
                 '- La retro compatibilidad(<em>backward-compatible</em>) y los cambios importantes(<em>breaking changes</em>) son 2 conceptos que van ligados ',
                 '- Un Breaking Change, es cualquier cambio que modifique la forma de consumir o usar cualquier servicio, afectando a otros sistemas o personas ',
@@ -425,11 +420,53 @@ export const VERSIONAMIENTO =
                 ' - aportan beneficios importantes y tienen una razon importante de ser, como para romper la compatibilidad con versiones anteriores',
                 '- Es importante plantearlos, documentarlos y realizarlos de manera adecuada, ya que pueden tener afectaciones desconocidas <em>Ley de Hyrum</em>'
             ]),
+        new Item(Keys.VERSIONAMIENTO_DOCUMENT_ARQUITECTURE,
+            [
+                '- La documentación suele pasarse por alto en favor de la codificación, sin embargo es esencial para alinear equipos y empoderar desarrolladores ',
+                '',
+                '<strong>Registros de decisiones de arquitectura (ADR)</strong>',
+                '- Un metodo simple y poderoso utilizado para documentar sistematicamente decisiones arquitectonicas claves tomadas a lo largo del proceso de desarrollo ',
+                '- Sirven como un registro cronologico del porque se toman las decisiones, bajo que contexto, el razonamiento y los problemas que llevo a esas elecciones ',
+                '- Esto con el fin de que la información se preserve para las personas actuales y futuras ',
+                '- Al conservar un registro historico ofrecen una vista hacia el pasado para tener una linea transparente y coherente ',
+                '',
+                '<strong>Solicitudes de comentarios (RFC)</strong>',
+                '- Recoge comentarios sugerencias y estandarizaciones en torno a la tecnologia, un sistema, o un protocolo en particular ',
+                '- Inicialmente se utilizaban para protocolos de internet, pero se ha difundido y ampliado hasta dominios como redes y formato de datos ',
+                '- Esto invita a expertos y partes interesadas a contribuir con ideas, promoviendo el debate para crear un concenso ',
+                '- Son particularmente utiles en proyectos de codigo abierto donde pueden proponer nuevas caracteristicas y recopilar comentarios de la comunidad ',
+                '',
+                '<strong>Event Storming</strong>',
+                '- Tecnica especificamente diseñada para mejorar la compresión, el diseño y el modelado de dominios empresariales complejos ',
+                '- Esto con el fin de centrarse en los eventos del dominio que son sucesos significativos dentro del contexto empresarial ',
+                '- Aca se reunen las diversas partes interesadas como, analistas, desarrolladores, expertos en dominio, para crear una experiencia compartida y más completa ',
+                '- No solo se facilita la comunicación entre las partes, sino que se consideran multiples perspectivas para modelos más solidos y precisos ',
+                '',
+                '<strong>Modelo C4</strong>',
+                '- Enfoque visual e integral para documentar y comprender la arquitectura del software, donde se puede representar diferentes niveles de abstracción ',
+                '- Esta división lograr crear un entendimiento por capas, entendible para personas tecnicas y no tecnicas ',
+                '- La transferencia de conocimiento se realiza de manera más efectiva acelerando la incorporación y mejorando la comprension general del sistema ',
+                '- Este modelo contempla 4 vistas, cada una con un nivel diferente de abstracción y complejidad ',
+                '<strong> - Contexto:</strong> Proporciona una descripción general del sistema y sus interacciones con entes externos ',
+                '<strong> - Contenedor:</strong> Muestra los principales bloques de la construcción como aplicaciones y bases de datos ',
+                '<strong> - Componente:</strong> Divide estos contenedores en partes más pequeñas y detalladas, explicando sus responsabilidades y relaciones ',
+                '<strong> - Codigo:</strong> profundiza en detalles de implementación, hasta llegar a nivel de codigo ',
+                '',
+                '<strong>arc42</strong>',
+                '- Es una plantilla para la documentación de arquitecturas, con un estilo minimalista ',
+                '- La jerarquia de la documentación estan configurados dentro de los siguiente directorios, pero es adatable segun las necesidades ',
+                ' 1. Introducción y objetivos            7. Vista de implementación    ',
+                ' 2. Restricciones                       8. Conceptos transversales    ',
+                ' 3. Contexto y alcance                  9. Decisiones arquitectonicas ',
+                ' 4. Estrategia de solución             10. Requisitos de calidad      ',
+                ' 5. Vista de bloques de construcción   11. Riesgos y deuda tecnica    ',
+                ' 6. Vista de tiempo de ejecución       12. Glosario                   ',
+            ])
     ];
 
 export const PRINCIPIOS =
     [
-        new Item(PRINCIPIOS_SOLID,
+        new Item(Keys.PRINCIPIOS_SOLID,
             [
                 '<em>S</em> <strong>Responsabilidad única:</strong>     Una cosa <strong>X</strong> solo deberia hacer y conocer cosas de su competencia, si no se tendria un acoplamiento indeseado ',
                 '<em>O</em> <strong>Abierto/Cerrado:</strong>           Casi siempre sera mejor añadir nuevos comportamientos o funciones que modificar los existentes ',
@@ -437,7 +474,7 @@ export const PRINCIPIOS =
                 '<em>I</em> <strong>Segregación de interfaces:</strong> Es mejor tener interfaces especializadas, que interfaces genericas con metodos que generan ruido ',
                 '<em>D</em> <strong>Inversión de dependencias:</strong> Las implementaciones pueden cambiar, pero las abstracciones no, por lo que el sistema se debe basar en estas ',
             ]),
-        new Item(PRINCIPIOS_KISS,
+        new Item(Keys.PRINCIPIOS_KISS,
             [
                 '- Código entendible, esto en la mayoria de los casos hara que modificar y mantener el codigo sea más simple ',
                 '- Mantener modulos, metodos y clases pequeñas en vez de entidades grandes ',
@@ -456,7 +493,7 @@ export const PRINCIPIOS =
                 '- En igualdad de condiciones la solución más optima prevalecera',
                 '- Simplificar las cosas, no implica que se deba ignorar la complejidad, solo que se debe reducir lo más posible '
             ]),
-        new Item(PRINCIPIOS_DRY,
+        new Item(Keys.PRINCIPIOS_DRY,
             [
                 '- Evita repetir código siempre que sea posible en aras de reducir el acoplamiento y mejorar la cohesión ',
                 '- Incrementa la mantenibilidad del código, modularizando y haciendo partes pequeñas y manejables ',
@@ -523,7 +560,7 @@ export const PRINCIPIOS =
 
 export const REFACTORIZACION =
     [
-        new Item(REFACTORING_CLEAN_CODE,
+        new Item(Keys.REFACTORING_CLEAN_CODE,
             [
                 '- Menos es Más, por algo existe el principio de <em>KISS</em>',
                 '- Es más facil de entender para otros, permitiendo que su modificacion y su extensión no se vuelvan un dolor de cabeza ',
@@ -622,7 +659,7 @@ export const REFACTORIZACION =
                 ' - donde se tiene un gran conjunto de datos para comprobar que los resultados sean equanimes, antes y despues de los cambios ',
                 '- Evite que los cambios crezcan de manera descontrolada y se convierta en un rediseño, generando posibles problemas en ambas actividades '
             ]),
-        new Item(REFACTORING_LEGACY_CODE,
+        new Item(Keys.REFACTORING_LEGACY_CODE,
             [
                 '- Como desarrolladores de software no solo debemos crear codigo, debemos mantener el que ya existe, solucionar problemas o agregar funcionalidades ',
                 '<strong>- Hotspot analisis:</strong> El codigo antiguo puede estar llenos de deuda tecnica, pero esto no significa que se deba atacar las peores partes, ',
@@ -685,7 +722,7 @@ export const REFACTORIZACION =
                 '<strong>- Aprendizaje:</strong> Un buen desarrollador que tenga un gran abanico de conceptos, patrones y arquitecturas es menos propenso a equivocarse ',
                 '<strong>- Entrega continua:</strong> Asi se tienen ciclos cortos y una retroalimentación más efectiva ',
             ]),
-        new Item(REFACTORING_MANAGE_DEPENDENCIES,
+        new Item(Keys.REFACTORING_MANAGE_DEPENDENCIES,
             [
                 '- Durante la decada de los 90s y antes de empezar el año 2000 existio un problema informatico gigante, el famoso <strong>Y2K</strong>, debido a la generalización ',
                 ' - de que los años en las fechas, se guardaran en 2 digitos, por lo que una fecha de 1997 se representaba como 97, el caos provenia del año 2000 ',
@@ -717,7 +754,7 @@ export const REFACTORIZACION =
                 ' - patrones arquitectonicos como <strong>Capas</strong> que surgen debido a la necesidad de reducir o controlar este acoplamiento',
                 ' - y tener un mejor entendimiento de la estructura, los componentes y las relaciones que conforman sistema',
             ]),
-        new Item(REFACTORING_GOOD_AND_BAD_PRACTICES,
+        new Item(Keys.REFACTORING_GOOD_AND_BAD_PRACTICES,
             [
                 '- Refactorizar el codigo, es una de las actividades más comunes para mantener una base de codigo mantenible y saludable ',
                 '- Pero también se puede caer en el problema de empeorar las cosas, en vez de facilitarlas ',
@@ -775,7 +812,7 @@ export const SEGURIDAD =
                 '<strong>- NFGW centrado en amenazas:</strong> Incluye las funcionalidades de un <em>NFGW</em> tradicional además de identificar cuales ',
                 ' - son los activos que corren mayor riesgo, reconociendo el contexto completo '
             ]),
-        new Item(SECURITY_PROTOCOLOS_SEGURITY,
+        new Item(Keys.SECURITY_PROTOCOLOS_SEGURITY,
             [
                 '<strong>SSL</strong> capa de sockets seguros ',
                 '- Es una tecnologia para mantener segura una conexión de internet ',
@@ -1119,7 +1156,7 @@ export const SEGURIDAD =
                 '6 <strong>Capa de Presentación   </strong> - Inyeccion de codigo malicioso  - Ataques de formato  - Vulnerabilidades codificación/decodificación',
                 '7 <strong>Capa de Aplicación     </strong> - Inyección de malware           - Ataques DDOS        - Pushing                                     ',
             ]),
-        new Item(SECURITY_LEAST_PRIVILEGE,
+        new Item(Keys.SECURITY_LEAST_PRIVILEGE,
             [
                 '- Concepto de seguridad de la información, en el que un usuario recibe los minimos niveles de acceso o permisos necesarios ',
                 ' - para realizar sus funciones laborales, evitando el acceso privilegiado a datos y activos de alto valor ',
@@ -1137,7 +1174,7 @@ export const SEGURIDAD =
                 '- Separar las cuentas administrativas de las cuentas normales',
                 '- Cambiar las contraseñas de manera regular, y en especial si han sido vulneradas con anterioridad',
             ]),
-        new Item(SECURITY_AUTHENTICATION_WAYS,
+        new Item(Keys.SECURITY_AUTHENTICATION_WAYS,
             [
                 '<strong>Autentificación Basica</strong>',
                 '- El usuario ingresa su usuario y contraseña',
@@ -1589,7 +1626,7 @@ export const NEURO_MARKETING =
 
 export const CD_CI_INFRAESTRUCTURE =
     [
-        new Item(CD_CI_CD_CI,
+        new Item(Keys.CD_CI_CD_CI,
             [
                 '- Integración continua, Entrega continua y Despliegue continuio, nacen para entregar un mejor codigo, de una manera más rapida y con menos errores ',
                 '- Los errores se pueden encontrar de manera previa a estar en producción ',
@@ -1755,7 +1792,7 @@ export const CD_CI_INFRAESTRUCTURE =
                 '- Los pipelines se pueden lanzar mediante eventos como pull requests, no solo por commits o solicitud de los usuarios ',
                 '- No ignore pasos ni deje de realizar revisiones de codigo y revisiones de pares, esto solo es omitible para cambios triviales ',
             ]),
-        new Item(CD_CI_CELL_BASED_ARQUITECTURE,
+        new Item(Keys.CD_CI_CELL_BASED_ARQUITECTURE,
             [
                 '- Este tipo de arquitecturas provienen del concepto de maparo de los barcos, donde los tabiques subdividen el espacio en compartimentos autonomos ',
                 '- Agregan rigidez y resiliencia en caso de averias, evitando fallos catostroficos en el casco ',
