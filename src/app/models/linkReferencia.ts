@@ -159,12 +159,6 @@ export const TESTING_DATA_SUT_DOC = 'sut&Doc';
 export const TESTING_MOCKS = 'mocks';
 export const TESTING_DATA_CREATION = 'creationDataTesting';
 export const TESTING_ADVANCED_ANTI_PATTERNS = 'tdd-antipatterns';
-export const ANALISIS_KPI = 'KPI';
-export const ANALISIS_ALGORITHMS = 'algorithms';
-export const ANALISIS_QUEUES_SYSTEM_DESIGN = 'queueSystemDesign';
-export const ANALISIS_HIGH_LEVEL_VS_LOW_LEVEL = 'highLevelVsLowLevel';
-export const ANALISIS_SYSTEM_DESIGN_CONCEPTS = 'systemDesignConcepts';
-export const ANALISIS_MICROSERVICES = 'designMicroservices';
 export const CALIDAD_CLEAN_CODE = 'cleanCode';
 export const CALIDAD_IF_ELSE = 'eliminatingIfElse';
 export const PRINCIPIOS_SOLID = 'SOLID';
@@ -181,7 +175,7 @@ export const USER_HISTORIES_SMART = 'smart';
 export const USER_HISTORIES_FORMATS = 'historiesFormats';
 export const USER_HISTORIES_ESTIMATIONS = 'historiasEstimacionAgil';
 
-export const LAST_ITEM = Keys.VERSIONAMIENTO_DOCUMENT_ARQUITECTURE;
+export const LAST_ITEM = Keys.ANALISIS_SINGLE_POINT_OF_FAILURE;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -219,16 +213,17 @@ export const ANALISIS_REF = new Map<string, Referencia>([
     ['modeloDominio', new Referencia('https://es.stackoverflow.com/questions/102490/que-es-el-modelo-de-dominio-en-dise%C3%B1o-de-software', 'Modelo de Dominio', ANALISIS_KEY, 'Modelo de dominio')],
     ['timeComplexityBigO', new Referencia('https://www.freecodecamp.org/news/big-o-cheat-sheet-time-complexity-chart/', 'Big O Notación', ANALISIS_KEY, 'Big O Notación', '2022/12/30')],
     //['kpis', new Referencia('https://www.ibm.com/garage/method/practices/learn/kpis-measure-guide-progress/', 'KPIs', ANALISIS_KEY, 'KPI', '2022/12/30')],
-    [ANALISIS_KPI, new Referencia('https://www.ibm.com/garage/method/practices/learn/kpis-measure-guide-progress/', 'KPI', ANALISIS_KEY, 'KPI', '2022/12/30', '2024/07/27')],
+    [Keys.ANALISIS_KPI, new Referencia('https://www.ibm.com/garage/method/practices/learn/kpis-measure-guide-progress/', 'KPI', ANALISIS_KEY, 'KPI', '2022/12/30', '2024/07/27')],
     ['manifiestoReactivo', new Referencia('https://www.reactivemanifesto.org/es', 'Manifiesto Reactivo', ANALISIS_KEY, 'Manifiesto Reactivo', '2023/02/19')],
     ['declineDesign', new Referencia('https://uxdesign.cc/the-decline-in-design-thinking-8fd0145fb4d2', 'Declive del diseño', ANALISIS_KEY, 'Declive del Diseño', '2023/07/23')],
     ['opinionated-no', new Referencia('https://www.baeldung.com/cs/opinionated-software-design', 'Diseño con & sin opiniones', ANALISIS_KEY, 'Diseño con/sin opiniones', '2023/11/11')],
     ['codingEasyPart', new Referencia('https://swizec.com/blog/coding-is-the-easy-part/', 'Codificar es la parte facil', ANALISIS_KEY, 'Codificar es facil', '2023/12/11')],
-    [ANALISIS_ALGORITHMS, new Referencia('https://medium.com/@zgokceaynaci/a-journey-through-the-world-of-algorithms-554bfffcee97', 'Algoritmos', ANALISIS_KEY, 'Algoritmos', '2024/07/27').addRelatedItem(COMPILACION_GRAFOS).addRelatedItem(Keys.META_CARACTERISTICAS_BACKTRACKING)],
-    [ANALISIS_QUEUES_SYSTEM_DESIGN, new Referencia('https://levelup.gitconnected.com/message-queues-in-system-design-0440a1221023', 'Message Queues in System Design', ANALISIS_KEY, 'Message Queues', '2024/09/01').addRelatedItem(META_ESTRUCTURAS_ESTRUCTURAS_DATOS_2).addRelatedItem(APIS_REST_VS_MESSAGING)],
-    [ANALISIS_HIGH_LEVEL_VS_LOW_LEVEL, new Referencia('https://www.baeldung.com/cs/hld-lld', 'High Level Vs Low Level', ANALISIS_KEY, 'High Level Vs Low Level', '2024/09/20').addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_SLDC).addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_DDD).addRelatedItem(PERSISTENCY_ERD)],
-    [ANALISIS_SYSTEM_DESIGN_CONCEPTS, new Referencia('https://www.linkedin.com/posts/brijpandeyji_top-12-system-design-concepts-every-developer-activity-7238729739065069568-h1t6/', 'Design System Concepts', ANALISIS_KEY, 'Design System Concepts', '2024/09/29')],
-    [ANALISIS_MICROSERVICES, new Referencia('https://foojay.io/today/microservices-design-principles-for-well-crafted-architecture/', 'Diseño de Microservicios', ANALISIS_KEY, 'Diseño de Microservicios', '2024/10/22').addRelatedItem(PRINCIPIOS_SOLID).addRelatedItem(POO_POO)],
+    [Keys.ANALISIS_ALGORITHMS, new Referencia('https://medium.com/@zgokceaynaci/a-journey-through-the-world-of-algorithms-554bfffcee97', 'Algoritmos', ANALISIS_KEY, 'Algoritmos', '2024/07/27').addRelatedItem(COMPILACION_GRAFOS).addRelatedItem(Keys.META_CARACTERISTICAS_BACKTRACKING)],
+    [Keys.ANALISIS_QUEUES_SYSTEM_DESIGN, new Referencia('https://levelup.gitconnected.com/message-queues-in-system-design-0440a1221023', 'Message Queues in System Design', ANALISIS_KEY, 'Message Queues', '2024/09/01').addRelatedItem(META_ESTRUCTURAS_ESTRUCTURAS_DATOS_2).addRelatedItem(APIS_REST_VS_MESSAGING)],
+    [Keys.ANALISIS_HIGH_LEVEL_VS_LOW_LEVEL, new Referencia('https://www.baeldung.com/cs/hld-lld', 'High Level Vs Low Level', ANALISIS_KEY, 'High Level Vs Low Level', '2024/09/20').addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_SLDC).addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_DDD).addRelatedItem(PERSISTENCY_ERD)],
+    [Keys.ANALISIS_SYSTEM_DESIGN_CONCEPTS, new Referencia('https://www.linkedin.com/posts/brijpandeyji_top-12-system-design-concepts-every-developer-activity-7238729739065069568-h1t6/', 'Design System Concepts', ANALISIS_KEY, 'Design System Concepts', '2024/09/29')],
+    [Keys.ANALISIS_MICROSERVICES, new Referencia('https://foojay.io/today/microservices-design-principles-for-well-crafted-architecture/', 'Diseño de Microservicios', ANALISIS_KEY, 'Diseño de Microservicios', '2024/10/22').addRelatedItem(PRINCIPIOS_SOLID).addRelatedItem(POO_POO)],
+    [Keys.ANALISIS_SINGLE_POINT_OF_FAILURE, new Referencia('https://levelup.gitconnected.com/single-point-of-failure-spof-in-system-design-c8bbac5af993', 'Single Point Of Failure', ANALISIS_KEY, 'SPOF', '2024/12/07')],
 ]);
 
 export const ARQUITECTURAS_KEY = 'Arquitecturas';

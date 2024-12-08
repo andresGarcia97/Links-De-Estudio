@@ -1,11 +1,4 @@
-import {
-    ANALISIS_ALGORITHMS, ANALISIS_HIGH_LEVEL_VS_LOW_LEVEL, ANALISIS_KPI, ANALISIS_MICROSERVICES, ANALISIS_QUEUES_SYSTEM_DESIGN,
-    ANALISIS_SYSTEM_DESIGN_CONCEPTS, BUENAS_PRACTICAS_FUNCTIONS, COMPILACION_AOT, COMPILACION_DECOMPILE, COMPILACION_DUCK_TYPING,
-    COMPILACION_GRAFOS, COMPILACION_INSTRUMENTS, COMPILACION_OBJECT_CREATION, COMPILACION_STREAMS, GIT_REBASE_MERGE_SQUASH,
-    METODOLOGIAS_AGILES, METODOLOGIAS_LEAN, METODOLOGIAS_MODEL_BING_BANG, METODOLOGIAS_MODEL_V, METODOLOGIAS_SCRUMBAN,
-    TESTING_ADVANCED_ANTI_PATTERNS, TESTING_DATA_CREATION, TESTING_DATA_SUT_DOC, TESTING_MOCKS, USER_HISTORIES_ESTIMATIONS,
-    USER_HISTORIES_FORMATS, USER_HISTORIES_SMART
-} from "../linkReferencia";
+import * as Keys from '../keys'
 import { Item } from "../models";
 
 export class Content2 {
@@ -92,7 +85,7 @@ export const PRUEBAS =
                 '<strong>Self-Validating:</strong> Las pruebas deben mostrar resultados concluyentes, estos no deben tener intervención humana para que sean validos ',
                 '<strong>Timely:</strong>          Toda prueba debe ser oportuna y debe tener una razon de ser, si no se pueden justificar, estas habran sido una perdida de tiempo ',
             ]),
-        new Item(TESTING_DATA_SUT_DOC,
+        new Item(Keys.TESTING_DATA_SUT_DOC,
             [
                 '- Es un competencia basica para empezar a realizar testing, de cualquier tipo, donde se define claramente que se esta probando y que necesita',
                 '',
@@ -105,7 +98,7 @@ export const PRUEBAS =
                 '',
                 '<strong>- Organización:</strong> Generalmente se organizan mediante una tabla que contiene el tipo de prueba, los SUTs y los DOCs ',
             ]),
-        new Item(TESTING_MOCKS,
+        new Item(Keys.TESTING_MOCKS,
             [
                 '- Son objetos que se comportan de manera igual que el elemento que copian, pero son más simples de manejar ',
                 '- Tambien incluyen mecanismos para verificar los comportamientos que se estan simulando',
@@ -181,7 +174,7 @@ export const PRUEBAS =
                 '- El encargado de estos aspectos debe ser el intermediario entre los clientes y sus espectativas y lo que ha sido elaborado ',
                 '- Tambien es el encargado de crear ambientes de prueba que sean similares al ambiente de producción ',
             ]),
-        new Item(TESTING_DATA_CREATION,
+        new Item(Keys.TESTING_DATA_CREATION,
             [
                 '- Crear datos para los tests, es una parte importante, ya que un buen set de datos, son la base de pruebas exitosas y confiables ',
                 '- Mejoran la legibilidad de los casos, al separar la creación de datos de la logica de la prueba ',
@@ -296,7 +289,7 @@ export const ANALISIS =
                 ' - <strong>Cuadratico: </strong> Un buen ejemplo son 2 ciclos anidados, donde cada ciclo se ejecutara n veces ',
                 ' - <strong>Exponencial:</strong> Cada iteración hace crecer el conjunto de datos, como puede ser la secuencia Fibonacci recursiva ',
             ]),
-        new Item(ANALISIS_KPI,
+        new Item(Keys.ANALISIS_KPI,
             [
                 '- <strong>Indicadores claves de desempeño</strong>, son una evolución de las metricas para alinearse con objetivos estrategicos ',
                 '- En cualquier proyecto es esencial definir las metricas y alinearlas con los objetivos comerciales y las metas de IT',
@@ -406,7 +399,7 @@ export const ANALISIS =
                 '- Los requisitos no son claros, y si son claros estan incompletos, nunca faltara el requisito que es intrinseco y por lo tanto nunca se menciona, o ',
                 ' - el requisito que solo existe a nivel de codigo, pero que es fundamental y nadie documento, entre otros casos, que suceden despues de iniciar ',
             ]),
-        new Item(ANALISIS_ALGORITHMS,
+        new Item(Keys.ANALISIS_ALGORITHMS,
             [
                 '- Es un conjunto de instrucciones para llevar a cabo una tarea, estas deben ser lo suficientemente claras para obtener el objetivo requerido ',
                 '- Son especialmente utiles para resolver problemas e innovar en  multiples ambitos, para esto es necesario que sea expresado de una manera comprensible ',
@@ -455,7 +448,7 @@ export const ANALISIS =
                 '<strong>- Backtracking:</strong> Ayudan a explorar multiples opciones hasta encontrar la mejor solución, probando diferentes caminos, si estos non funcionan ',
                 ' - se devuelven hasta un punto de guardado previo e intentan con otra opción, y asi sucesivamente hasta que se encuentre la solución ó se agoten los recursos ',
             ]),
-        new Item(ANALISIS_QUEUES_SYSTEM_DESIGN,
+        new Item(Keys.ANALISIS_QUEUES_SYSTEM_DESIGN,
             [
                 '<strong>Arquitectura Basica:</strong> Una cola de mensajes es un componente duradero y que soporta una comunicación asyncronica ',
                 '- El funcionamiento basico es simple, un servicio de entrada(productor ó publicador) generan mensajes en la cola ',
@@ -478,7 +471,7 @@ export const ANALISIS =
                 '<strong>- Kafka:</strong> Diseñado para un alto rendimiento y transmisión de datos en tiempo real; Consumidores estupidos, cola inteligente ',
                 '<strong>- Amazon SQS:</strong> Servicio administrado y ofrecido por AWS, confiable y con diversos tipos de colas',
             ]),
-        new Item(ANALISIS_HIGH_LEVEL_VS_LOW_LEVEL,
+        new Item(Keys.ANALISIS_HIGH_LEVEL_VS_LOW_LEVEL,
             [
                 '- Un Diseño de Alto Nivel <strong>HLD</strong> es como la vista area de un software, donde se puede ver un bosquejo general como: ',
                 ' - Componentes o modulos principales, Arquitectura de la aplicación a grandes rasgos ',
@@ -503,7 +496,7 @@ export const ANALISIS =
                 ' &brvbar; Etapas     &brvbar; Durante la codificación                   &brvbar; Al principio del ciclo de vida del software         &brvbar;',
                 ' &brvbar; Ejemplos   &brvbar; Normalización de BD, Domain Driven Design &brvbar; Estilos arquitectonicos, stack de tecnologias       &brvbar;',
             ]),
-        new Item(ANALISIS_SYSTEM_DESIGN_CONCEPTS,
+        new Item(Keys.ANALISIS_SYSTEM_DESIGN_CONCEPTS,
             [
                 '- La complejidad de los sistemas ha crecido, cada vez se elaboran sistemas más elaborados, complejos, funcionales e interconectados ',
                 '',
@@ -547,7 +540,7 @@ export const ANALISIS =
                 '',
                 '<strong>Rate-Limiting:</strong> Controla la tasa de peticiones para resguardar los servicios ',
             ]),
-        new Item(ANALISIS_MICROSERVICES,
+        new Item(Keys.ANALISIS_MICROSERVICES,
             [
                 '- Los microservicios al ser componentes de software que priorizan la modularidad y la escalabilidad es importante que cumplan ciertas caracteristicas: ',
                 '',
@@ -572,6 +565,26 @@ export const ANALISIS =
                 '<strong>Considereaciones:</strong>',
                 '- Diseñar microservicios, es una maratón, no un sprint, estos principios son pautas que deben ser adaptados segun cada necesidad ',
                 '- Aplicar estos principios ayuda a crear sistemas robustos, escalables y mantenibles, siempre con el objetivo de brindar valor, y no solo crear codigo ',
+            ]),
+        new Item(Keys.ANALISIS_SINGLE_POINT_OF_FAILURE,
+            [
+                '- Un Punto Unico de Falla <strong>SPOF</strong> es la parte de un sistema que cuando falla, es capaz de tumbar al sistema entero ',
+                '- Esto significa que el sistema entero dejara de funcionar, ya que este componente es tan critico que sin el, el sistema no es capaz de funcionar ',
+                '- Para un sistema complejo es especialmente problematico ya que generan vulnerabilidades y reducen la confiabilidad y la resiliencia ',
+                '- Es importante al menos identificarlos, ya que esto ayuda a tener estrategias para su eliminación o al menos mitigarlo si lo anterior no es posible ',
+                '',
+                '<strong>SPOF Comunes:</strong>',
+                '- Bases de Datos, en especial si solo esta en un servidor sin replicación ',
+                '- Balanceadores de carga, al ser un unico punto de entrada ',
+                '- Servidores de aplicaciones, y más si solo es un unico servidor ',
+                '- Conexiones de red, los enlaces entre aplicaciones si no hay suficientes formas de conectarse a internet ',
+                '',
+                '<strong>Estrategias de eliminación:</strong>',
+                '- Redundancia, se duplican componentes criticos, como bases de datos, balanceadores de carga, servicios ',
+                '- Conmutación por error, si un componente critico deja de funcionar, una copia de seguridad se hace cargo de inmediato ',
+                '- Balanceador de carga, puede considerarse tanto un problema como una solución, por lo que nunca deberia estar solo ',
+                '- Distribución geografica, para sistemas de alcance global, se pueden ubicar y sincronizar multiples servidores ',
+                '- Monitoreo y alertas, al detectar fallas de manera temprana, esto ayuda a abordar problemas antes de que generen afectaciones reales ',
             ])
     ];
 
@@ -840,7 +853,7 @@ export const BUENAS_PRACTICAS =
                 ' - engendrar soluciones faciles y descuidadas puede ser un exito en el corto plazo, pero sera una bola de nieve más adelante ',
                 ' - por lo que se trata de mantener un equilibrio, y realizar las cosas bien sin perder el horizonte',
             ]),
-        new Item(BUENAS_PRACTICAS_FUNCTIONS,
+        new Item(Keys.BUENAS_PRACTICAS_FUNCTIONS,
             [
                 '- <strong>Clean Code</strong> de <em>Robert C Martin</em> se enfoca en como escribir codigo limpio y con buenas practicas, ',
                 ' - por eso existe todo un apartado dedicado a las funciones, a continuación es un compendio de los puntos principales ',
@@ -953,7 +966,7 @@ export const COMPILACION =
                 '- Esto se basa en la declaración de importaciones y exportaciones de ES2015',
                 '- Los empaquetadores modernos como webpack y rollup realizan esto para tener archivos más livianos ',
             ]),
-        new Item(COMPILACION_GRAFOS,
+        new Item(Keys.COMPILACION_GRAFOS,
             [
                 '- Son una composición interesante de un conjunto de objetos denominados nodos (vertices) ',
                 '- Estos estan conectados con otros por medio de aristas (arcos) ',
@@ -964,7 +977,7 @@ export const COMPILACION =
                 '- Un camino, es el recorrido que se da al pasar por cierta cantidad de nodos, para llegar de A a B ',
                 '- Tambien son utiles para la optimización y/o simplificación de redes de cualquier tipo ',
             ]),
-        new Item(COMPILACION_AOT,
+        new Item(Keys.COMPILACION_AOT,
             [
                 '- La compilacion anticipada, es el acto de compilar un lenguaje de alto nivel a bajo nivel (generalmente), más no necesariamente a nivel de maquina ',
                 '- Comunmente asociado al paso intermedio como al bytecode de Java ó CIL de .NET, ',
@@ -979,7 +992,7 @@ export const COMPILACION =
                 '',
                 '- Un aspecto positivo de AOT es que al ya estar listos, se reducen los tiempos necesarios para el arranque y su ejecución ',
             ]),
-        new Item(COMPILACION_DUCK_TYPING,
+        new Item(Keys.COMPILACION_DUCK_TYPING,
             [
                 '- Es un termino comunmente asociado con los lenguajes de programación tipados dinamicamente y el concepto de polimorfismo ',
                 '- Al codigo no le importa el tipo del objeto, si no lo que puede hacer <em>"Si camina como pato y grazna como pato, entonces debe ser un pato"</em> ',
@@ -1169,7 +1182,7 @@ export const COMPILACION =
                 ' - Sistema de codigos directamente interpretados por un circuito programable, como un microprocesador, este puede estar formado por <em>1</em> y <em>0</em>',
                 '  - o bien ser <em>Ensamblador</em>, que es la representación más directa del codigo maquina, que conserva cierta legibilidad para el programador',
             ]),
-        new Item(COMPILACION_STREAMS,
+        new Item(Keys.COMPILACION_STREAMS,
             [
                 '- En Java, como en otros lenguajes existe la capacidad para crear estructuras propias, usar contenedores y realizar operaciones sobre estos ',
                 '- Los Streams son la agregación de operaciones secuenciales o paralelas sobre un conjunto de elementos, utilizando una sintaxis más concisa y legible ',
@@ -1203,7 +1216,7 @@ export const COMPILACION =
                 '',
                 '- Para visualizar más operaciones y ejemplos, puedes consultar el articulo original y/o la documentación de Oracle',
             ]),
-        new Item(COMPILACION_DECOMPILE,
+        new Item(Keys.COMPILACION_DECOMPILE,
             [
                 '- Descompilar es el proceso de convertir el codigo de un programa ejecutable, a algun tipo de lenguaje de programación ',
                 '- Es el proceso inverso de la compilación, donde el resultado es una serie de bits o digitos binarios listos para ser ejecutados ',
@@ -1216,7 +1229,7 @@ export const COMPILACION =
                 '- Modificaciones en el codigo fuente, por motivos de interoperabilidad con otros sistemas',
                 '- Tambien existen motivos poco eticos y/o legales como romper la protección de derechos de autor ',
             ]),
-        new Item(COMPILACION_INSTRUMENTS,
+        new Item(Keys.COMPILACION_INSTRUMENTS,
             [
                 '- Las bibliotecas y los frameworks son capaces de modificar el codigo en tiempo de ejecución, como forma de implementar sus funciones avanzadas ',
                 '- Spring Boot y Mockito son 2 de estos instrumentos que lo hacen para desarrollo y testing respectivamente ',
@@ -1232,7 +1245,7 @@ export const COMPILACION =
                 ' - de lo contrario se retornara el comportamiento normal del objeto ',
                 '- Mientras que Proxy y CGLIB genero nuevas clases que extienden de las originales, mockito verifica si la clase esta mockeada y asi determina cual usar ',
             ]),
-        new Item(COMPILACION_OBJECT_CREATION,
+        new Item(Keys.COMPILACION_OBJECT_CREATION,
             [
                 '- En las aplicaciones el manejo de recursos es fundamental para crear aplicaciones con un gran rendimiento ',
                 '- Cada Objeto que se crea, requiere de un espacio en memoria y de procesamiento, la cual crece entre mayor sea su complejidad ',
@@ -1487,7 +1500,7 @@ export const GIT =
                 '<strong> - Pair Programing:</strong> Donde los desarrolladores puedan fungir tanto como implementadores, como revisores, y que puedan intercambiar con frecuencia ',
                 '<strong> - Merge continuos:</strong> Esto implica tener un flujo de CD/CI aunque sea basico, pero da grandes beneficios, al automatizar y reducir el tiempo asociado ',
             ]),
-        new Item(GIT_REBASE_MERGE_SQUASH,
+        new Item(Keys.GIT_REBASE_MERGE_SQUASH,
             [
                 '- Git ofrece diferentes estrategias para unir cambios entre ramas, cada una con ventajas y deventajas ',
                 '',
@@ -1555,7 +1568,7 @@ export const HISTORIAS_USUARIO =
                 '<strong><em>S</em> Pequeña</strong>       Las HU deben poder realizarse en un solo sprint, por lo que puede ser subdividida de lo contrario ',
                 '<strong><em>T</em> Testeable</strong>     Toda HU debe ser probada y validada de manera clara, permitiendo que se considere finalizada ',
             ]),
-        new Item(USER_HISTORIES_SMART,
+        new Item(Keys.USER_HISTORIES_SMART,
             [
                 '<strong><em>S</em> Especifica</strong> Debe ser lo suficientemente especifica como para ser entendida ',
                 '<strong><em>M</em> Medible</strong>    Ya que debe hacer lo que se pretende, segun el criterio del equipo ',
@@ -1623,7 +1636,7 @@ export const HISTORIAS_USUARIO =
                 '- Las HU no siempre son lo más ideal a la hora de realizar, en los casos donde el cliente y los afectados no estan abiertos a la colaboración, ',
                 ' - ya que son ambiguas y se necesitan comunicación constante entre las partes, para ser refinadas, algo que no siempre se va a dar ',
             ]),
-        new Item(USER_HISTORIES_FORMATS,
+        new Item(Keys.USER_HISTORIES_FORMATS,
             [
                 '- Generalmente las HU se escriben con el tipico formato de <em>Como usuario quiero que...</em>, pero existen otras alternativas ',
                 '',
@@ -1642,7 +1655,7 @@ export const HISTORIAS_USUARIO =
                 ' - QUIERO poder buscar, seleccionar y adquirir los artículos que necesito en línea',
                 ' - PARA recibir los productos de manera rápida y eficiente',
             ]),
-        new Item(USER_HISTORIES_ESTIMATIONS,
+        new Item(Keys.USER_HISTORIES_ESTIMATIONS,
             [
                 '- La estimación deberia evitar desperdiciar tiempo, por lo que es preciso elegir cual es la forma que mejor se adapta a tu equipo ',
                 '',
@@ -1665,7 +1678,7 @@ export const HISTORIAS_USUARIO =
 
 export const METODOLOGIAS =
     [
-        new Item(METODOLOGIAS_AGILES,
+        new Item(Keys.METODOLOGIAS_AGILES,
             [
                 '- Las metodologias agiles buscan hacer que cualquier desarrollo sea de alta calidad, con tiempos y costos reducidos ',
                 '- Estas permiten la rapida adaptación a cualquier caracteristica del proyecto',
@@ -1765,7 +1778,7 @@ export const METODOLOGIAS =
                 '<strong>- Socios:</strong> ¿ Socios y Proveedores claves ?, Quienes te ayudaran a conseguir los recursos necesarios ',
                 '<strong>- Costos:</strong> ¿ Principales costos de mayor a menor ?, Definiendo cuanto gastar y como gastarlo ',
             ]),
-        new Item(METODOLOGIAS_MODEL_BING_BANG,
+        new Item(Keys.METODOLOGIAS_MODEL_BING_BANG,
             [
                 '- Es el modelo más simple, requiere de poca planificación a costa de absorber muchos recursos(tiempo, esfuerzo, personal) ',
                 '- Se basa conceptualmente en la teoria del <em>Bing Bang</em>, donde el universo nacio despues un gran estallido inicial ',
@@ -1810,7 +1823,7 @@ export const METODOLOGIAS =
                 '- Maneja los siguentes roles: ',
                 ' - Equipo, Tester, Tracker, Coach, Big Boss ',
             ]),
-        new Item(METODOLOGIAS_MODEL_V,
+        new Item(Keys.METODOLOGIAS_MODEL_V,
             [
                 '- Desciende del modelo en cascada e igual que este consta de las siguentes fases: ',
                 '- Es un modelo facil de seguir y el emparejamiento entre las etapas logra una mejor localizazion de fallos ',
@@ -1868,7 +1881,7 @@ export const METODOLOGIAS =
                 '- Debido a que todos los empleados son tomados en cuenta a la hora de tomar decisiones, aportando ideas y soluciones desde diferentes niveles ',
                 '- Esto tambien aumentara la productividad y su motivación, lo que a la larga se convierte en un beneficio añadido ',
             ]),
-        new Item(METODOLOGIAS_SCRUMBAN,
+        new Item(Keys.METODOLOGIAS_SCRUMBAN,
             [
                 '<strong>Combina las mejores caracteristicas de ambos permitiendo:</strong> ',
                 '- Tener la naturaleza preceptiva de scrum ',
@@ -1889,7 +1902,7 @@ export const METODOLOGIAS =
                 '- Desarrollo de nuevos productos, posteriores al sprint ',
                 '- Mejora continua de la gestión '
             ]),
-        new Item(METODOLOGIAS_LEAN,
+        new Item(Keys.METODOLOGIAS_LEAN,
             [
                 '- La idea principal es maximizar el valor de cara al cliente, y minimizar el desperdicio ',
                 '- Los procesos claves deben estar enfocados hacia el aumento de valor de manera continua, mientras se optimizan el flujo ',
@@ -2144,7 +2157,7 @@ export const PRUEBAS_AVANZADAS =
                 ' - Supuesto del programador competente: Si un programador es capaz de escribir y probar segementos pequeños, tambien lo hara con más grandes ',
                 ' - Supuesto del efecto del acoplamiento: Si se combinan 2 formas para formar un programa y ambas son buenas, entonces lo combinación tambien lo sera '
             ]),
-        new Item(TESTING_ADVANCED_ANTI_PATTERNS,
+        new Item(Keys.TESTING_ADVANCED_ANTI_PATTERNS,
             [
                 '- <em>TDD</em> es una practica conocida para realizar pruebas, por lo que no esta excenta de malas practicas y antipatrones en su uso',
                 '- Existen una gran variedad de malas practicas y codesmells, por lo que estos solo se consideran una aproximación inicial ',

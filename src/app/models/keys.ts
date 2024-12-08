@@ -139,6 +139,7 @@ export const ANALISIS_QUEUES_SYSTEM_DESIGN = 'queueSystemDesign';
 export const ANALISIS_HIGH_LEVEL_VS_LOW_LEVEL = 'highLevelVsLowLevel';
 export const ANALISIS_SYSTEM_DESIGN_CONCEPTS = 'systemDesignConcepts';
 export const ANALISIS_MICROSERVICES = 'designMicroservices';
+export const ANALISIS_SINGLE_POINT_OF_FAILURE = 'singlePointOfFailure-SPOF';
 export const VERSIONAMIENTO_LICENSES_AND_DATA = 'licencesAndData';
 export const VERSIONAMIENTO_DEPENDENCIES_ORDER = 'dependenciesOrder';
 export const VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES = 'backwardAndBreakingChanges';
