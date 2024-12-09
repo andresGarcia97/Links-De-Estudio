@@ -1,11 +1,4 @@
-import {
-    APIS_API_FIRST, APIS_API_GOVERNANCE, APIS_GATEWAY, APIS_REST_VS_MESSAGING, CONOCIMIENTOS_EMPIRICOS_PAIR_PROGRAMMING,
-    CONOCIMIENTOS_EMPIRICOS_STAGES_COMPETENCE_MODEL, CONOCIMIENTOS_EMPIRICOS_EXPIERENCE_LESSONS, META_ESTRUCTURAS_DEPRECATION,
-    META_ESTRUCTURAS_ESTRUCTURAS_DATOS, META_ESTRUCTURAS_ESTRUCTURAS_DATOS_2, META_ESTRUCTURAS_MAQUINA_ESTADOS,
-    META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION, META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL, NUBE_CAP_TEOREMA, NUBE_TWO_PHASE_COMMIT,
-    NUBE_DISPONIBILITY, NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, NUBE_MICROSERVICES_BEST_PRACTICES, NUBE_OBSERVABILIDAD,
-    PATRONES_CLOUD_DESIGN_PATTERNS, PATRONES_CQRS, PATRONES_PERSISTENCE_PATTERNS, PATRONES_STRANGLER_FIG, PATRONES_DESGLOSE_GOF
-} from "../linkReferencia";
+import * as Keys from '../keys'
 import { Item } from "../models";
 
 export class Content5 {
@@ -41,7 +34,7 @@ export const PATRONES =
                 '<strong>Estructurales:</strong> Separan la interfaz de su implementación por medio de la abstracción ',
                 '<strong>Comportamiento:</strong> Definen la comunicación entre objetos, y la independencia de esta de los objetos ',
             ]),
-        new Item(PATRONES_DESGLOSE_GOF,
+        new Item(Keys.PATRONES_DESGLOSE_GOF,
             [
                 'Creacionales ',
                 '<strong>- Singleton:</strong> Restringe la instancia de la clase a un solo Objeto ',
@@ -88,7 +81,7 @@ export const PATRONES =
                 '<strong>- Controlador:</strong> Sirve como intermediario entre una determinada interfaz y el algoritmo que la implementa, ',
                 ' - es aquel que contiene la logica necesaria para redireccionar a los componentes indicados segun los datos ingresados ',
             ]),
-        new Item(PATRONES_PERSISTENCE_PATTERNS,
+        new Item(Keys.PATRONES_PERSISTENCE_PATTERNS,
             [
                 '- Son usados para el acceso la y manipulación de los datos (persistencia), desde diferentes fuentes, como Bases de Datos',
                 '- Tambien son una forma de diferenciar entre la Programación Orientada a Objetos y la Programación Orientada a Datos',
@@ -166,7 +159,7 @@ export const PATRONES =
                 ' - todas las llamadas de los procesos y de realizar el rollback completo si alguna de las operaciones falla ',
                 '- Más facil de mantener a cambio de convertirse en un posible cuello de botella ',
             ]),
-        new Item(PATRONES_CQRS,
+        new Item(Keys.PATRONES_CQRS,
             [
                 '- <strong>S</strong>egregación de <strong>R</strong>esponsabilidades de <strong>C</strong>omandos y <strong>Q</strong>ueries(Consultas)',
                 '- Las operaciones de lectura y escritura utilizan diferentes modelos de datos ',
@@ -202,7 +195,7 @@ export const PATRONES =
                 '',
                 '<strong>- Patrones de codificación(idioms):</strong> Ayudan a implementar aspectos particulares del diseño, en un lenguaje especifico'
             ]),
-        new Item(PATRONES_STRANGLER_FIG,
+        new Item(Keys.PATRONES_STRANGLER_FIG,
             [
                 '- Una higuera estranguladora, es una planta peculiar, debido a que su semilla crece desde las ramas de un arbol, hasta que echan raices en el suelo ',
                 '- Durante años van creciendo poco a poco sofocando y matando a su huesped, hasta quedar una sombra del arbol original ',
@@ -298,7 +291,7 @@ export const PATRONES =
                 '<strong> - Cerrado:</strong> Enruta las solicitudes y cuenta la cantidad de fallas, hasta que no pasen de un umbral ',
                 '<strong> - Half-Open:</strong> Solo se permite un pequeño numero de operaciones, cambiando entre estados de acuerdo a si fallan o son exitosas ',
             ]),
-        new Item(PATRONES_CLOUD_DESIGN_PATTERNS,
+        new Item(Keys.PATRONES_CLOUD_DESIGN_PATTERNS,
             [
                 '- La administración de datos es un elemento clave de las aplicaciones en la nube, e influye en la mayoria de atributos de calidad ',
                 ' - los datos tienen una naturaleza distribuida de manera intrinseca, que representa desafios como la coherencia y la sincronización',
@@ -535,7 +528,7 @@ export const CONOCIMIENTOS_EMPIRICOS =
                 '',
                 '- Esto es importante ya que afecta a cualquier estudio relacionado con la memoria, además de que se extiende a cualquier proceso de aprendizaje ',
             ]),
-        new Item(CONOCIMIENTOS_EMPIRICOS_PAIR_PROGRAMMING,
+        new Item(Keys.CONOCIMIENTOS_EMPIRICOS_PAIR_PROGRAMMING,
             [
                 '- En la actualidad con los modelos de lenguaje y las aplicaciones para generar codigo han estado relativamente disponibles por un tiempo ',
                 '- Los desarrolladores han descubierto sus fortalezas y debilidades, y han visto como ofrecer más rapido valor a los clientes ',
@@ -560,7 +553,7 @@ export const CONOCIMIENTOS_EMPIRICOS =
                 '- <em>El trabajo de la IA es ser rápida. Tu trabajo es ser bueno</em>, la programación en pareja es un multiplicador de fuerza, ',
                 ' - mientras que uno se centra en la sintaxis y la implementación, el otro cuida el panorama en general, comprende y revisa el codigo generado ',
             ]),
-        new Item(CONOCIMIENTOS_EMPIRICOS_STAGES_COMPETENCE_MODEL,
+        new Item(Keys.CONOCIMIENTOS_EMPIRICOS_STAGES_COMPETENCE_MODEL,
             [
                 '- Este modelo diseñado por <em>Noel Burch</em> identifica y gerarquiza 4 etapas por las que pasan los individuos cuando aprenden una nueva habilidad ó conocimiento ',
                 '',
@@ -576,7 +569,7 @@ export const CONOCIMIENTOS_EMPIRICOS =
                 '<strong>Competencia inconsciente:</strong> <em>4ta Etapa</em>, Las personas han desarrollado un nivel de competencia tan alto que logran hacer tareas sin pensarlo ',
                 '- Han internalizado el conocimiento y la habilidad hasta el punto de que se ha convertido en algo natural, su intuición suele ser correcta ',
             ]),
-        new Item(CONOCIMIENTOS_EMPIRICOS_EXPIERENCE_LESSONS,
+        new Item(Keys.CONOCIMIENTOS_EMPIRICOS_EXPIERENCE_LESSONS,
             [
                 '- Las soluciones inteligentes no siempre son buena opción, lo ideal siempre sera hacer las cosas los más simple posibles ',
                 '- Dar valor, retener algo hasta que este totalmente perfeccionado, esta frenando la creación de valor para la empresa ',
@@ -675,7 +668,7 @@ export const NUBE =
                 '<strong>Retirar:</strong> A veces hay recursos que estan obsoletos o ya no se necesitan, por lo que se eliminan ó se desactivan ',
                 '<strong>Retener:</strong> Son ocasiones donde es necesario soportar tecnologias legacy que no son compatibles con la nube',
             ]),
-        new Item(NUBE_CAP_TEOREMA,
+        new Item(Keys.NUBE_CAP_TEOREMA,
             [
                 '- Este teorema sostiene que no es posible que un sistema distribuido cumpla o garantice más de 2/3 de las siguientes propiedades ',
                 '',
@@ -695,7 +688,7 @@ export const NUBE =
                 '- Aunque este metodo es normal hoy en dia, tambien se puede acceder a los sitios directamente por medio de una IP obteniendo el dominio del sitio ',
                 '- Si un servidor no encuentra la información solicitada, este la restransmite a otros en la red hasta dar con un resultado ',
             ]),
-        new Item(NUBE_FALACIES_DYSTRIBUTED_SYSTEMS,
+        new Item(Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS,
             [
                 '- Que un sistema sea Distribuido no solo tiene beneficios, tambien enfrenta nuevos problemas, que son iherentes a los microservicios y a su separación ',
                 '- Suelen haber falacias a nivel generalizado, que no siempre se contemplan a la hora de solucionar problemas, pero que siempre estan presentes ',
@@ -778,7 +771,7 @@ export const NUBE =
                 '',
                 '<strong>Comprensión:</strong> Comprimir la información antes de enviarse mediante la red',
             ]),
-        new Item(NUBE_OBSERVABILIDAD,
+        new Item(Keys.NUBE_OBSERVABILIDAD,
             [
                 '- Es la capacidad de comprender lo que esta pasando en un sistema complejo, en tiempo real si es posible, los principios fundamentales son: ',
                 '',
@@ -804,7 +797,7 @@ export const NUBE =
                 ' - que tiene un principio y fin (<em>lifecycle</em>), en los sistemas modernos es posible realizar este seguimiento ',
                 ' - a todo lo largo de su proceso, inclusive si pasa a travez de diferentes sistemas, cada salto entre sistema es un <em>span</em>',
             ]),
-        new Item(NUBE_MICROSERVICES_BEST_PRACTICES,
+        new Item(Keys.NUBE_MICROSERVICES_BEST_PRACTICES,
             [
                 '- Los microservicios deben ser eficientes escalables y resilientes, para esto se deben tener lineamientos y seguir buenas practicas ',
                 '',
@@ -833,7 +826,7 @@ export const NUBE =
                 '',
                 '<strong>Event-Driven Architecture:</strong> Un enfoque basado en el manejo de eventos, permitiendo un menor acoplamiento y un manejo asyncronico de los eventos ',
             ]),
-        new Item(NUBE_TWO_PHASE_COMMIT,
+        new Item(Keys.NUBE_TWO_PHASE_COMMIT,
             [
                 '- En la computación distribuida, uno de los problemas más importantes es lograr un concenso entre multiples nodos, lo cual no es facil de lograr ',
                 '- La confirmación de 2 fases, tambien conocida como <strong>2PC</strong> es un algoritmo para lograr la confirmación atomica de las transacciones ',
@@ -851,7 +844,7 @@ export const NUBE =
                 '- En caso de fallo extremo y que el coordinador no pueda tomar una decisión, los nodos no estan en potestad para hacerlo tampoco, ',
                 ' - lo que hace estrictamente necesario que se tome una decisión manualmente en cada nodo participante ',
             ]),
-        new Item(NUBE_DISPONIBILITY,
+        new Item(Keys.NUBE_DISPONIBILITY,
             [
                 '- La disponibilidad es la medida para determinar que un recurso es accesible para los usuarios, durante un periodo de tiempo determinado ',
                 '- Las migraciones a la nube, ha obligado que los proveedores de servicios ofrezcan disponibilidades cada vez más altas ',
@@ -1036,7 +1029,7 @@ export const APIS =
                 ' - Y no se excluye de que este abierto a posibles cambios y mejoras por venir, despues de nuevas iteraciones',
                 ' - Además de que cada tema y subtema a su vez tiene fuentes de profundización, presentes en el articulo original ',
             ]),
-        new Item(APIS_GATEWAY,
+        new Item(Keys.APIS_GATEWAY,
             [
                 '- Aunque sean terminos similares, un Api gateway y un Balanceador de carga son soluciones diferetes, para muchos problemas similares ',
                 '<strong>- Api Gateway:</strong> Son una capa de filtración para las ya conocidas APIs, permitiendo que los clientes puedan realizar llamados y obtener el recurso ',
@@ -1146,7 +1139,7 @@ export const APIS =
                 '<strong>- Autenticación y Autorización:</strong> Toda solicitud debe ser debidamene autorizada y contar ',
                 ' - con una autenticación previa, sin depender de los datos de sesion y al mismo tiempo ser eficiente ',
             ]),
-        new Item(APIS_REST_VS_MESSAGING,
+        new Item(Keys.APIS_REST_VS_MESSAGING,
             [
                 '- Los microservicios han llegado para quedarse, ampliamente adoptados debidos a las ventajas que ofrecen',
                 '- Aun asi, para un correcto funcionamiento, deben poder comunicarse entre si, convirtiendo esta forma en un aspecto critico ',
@@ -1180,7 +1173,7 @@ export const APIS =
                 '<strong>- Resiliencia y Errores:</strong> Al tener plataformas que garantizan la entrega de mensajes, se reduce la logica al no tener que lidiar con mensajes perdidos ',
                 ' - y la consistencia de los datos, eventualmente se recuperara, al procesar todos los mensajes acumulados, durante el tiempo que habian errores ',
             ]),
-        new Item(APIS_API_GOVERNANCE,
+        new Item(Keys.APIS_API_GOVERNANCE,
             [
                 '- La integración entre sistemas por medio de apis, crece todos los dias y se convierten en piezas claves para las estrategias comerciales ',
                 '- Es especialmente beficiosa si es una arquitectura de microservicios, ya que entre mayor sea la empresa, mayor numero de Apis creara/consumira ',
@@ -1195,7 +1188,7 @@ export const APIS =
                 '<strong>Tracking:</strong> El seguimiento de los aspectos de una API deberia ser parte de su gestión, como, quien, cuando, ciclo de vida, etc..',
                 '<strong>Discovery:</strong> Tambien es necesario un metodo para representar las depedencias y ayudar a analizar posibles futuros impactos ',
             ]),
-        new Item(APIS_API_FIRST,
+        new Item(Keys.APIS_API_FIRST,
             [
                 '- Las APIs han existido casi a la par que la informatica moderna, surgieron por la necesidad de que multiples aplicaciones de software se comunicaran ',
                 '- Siguen cumpliendo esa función, trabajando de forma invisible, mientras que en segundo plano comunican millones de dispositivos y aplicaciones ',
@@ -1250,7 +1243,7 @@ export const META_ESTRUCTURAS =
                 '- Los parentesis afectan el orden de evaluación, al mismo tiempo que permiten asociar expresiones ',
                 '- La precedencia puede cambiar entre lenguajes, por lo que se recomienda saber las especificaciones de cada uno ',
             ]),
-        new Item(META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL,
+        new Item(Keys.META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL,
             [
                 '- Una buena estructura es primordial para todo proyecto, sin embargo no siempre debe reflejar la arquitectura del proyecto',
                 '',
@@ -1288,7 +1281,7 @@ export const META_ESTRUCTURAS =
                 '- Los compiladores de muchos lenguajes se basan en analizadores sintacticos, para analizar el codigo copiado, ',
                 ' - estos a su vez se basan en expresiones regulares para saber si se cumplen con las condiciones del lenguaje ',
             ]),
-        new Item(META_ESTRUCTURAS_ESTRUCTURAS_DATOS,
+        new Item(Keys.META_ESTRUCTURAS_ESTRUCTURAS_DATOS,
             [
                 '- Es un concepto general que comparten muchos lenguajes de programación ',
                 '- Que a su vez pueden cambiar y/o tener variaciones segun el lenguaje, dependiendo de cada implementación ',
@@ -1301,7 +1294,7 @@ export const META_ESTRUCTURAS =
                 '',
                 '- Existen más tipos de estructuras, pero estas son de las más comunes y usadas generalmente ',
             ]),
-        new Item(META_ESTRUCTURAS_ESTRUCTURAS_DATOS_2,
+        new Item(Keys.META_ESTRUCTURAS_ESTRUCTURAS_DATOS_2,
             [
                 '<strong>Arrays:</strong> Colección de elementos de una o varias dimensiones con un tamaño fijo y de un tipo especifico <strong>Aplicaciones:</strong> ',
                 '  - Resultados de busquedas             - Sistemas GPS                  - Calendarios',
@@ -1336,7 +1329,7 @@ export const META_ESTRUCTURAS =
                 '- Permite realizar operaciones de manipulacion de codigo en tiempo de compilación en vez de ejecución ',
                 '- Se puede modificar el arbol de sintaxis del lenguaje ',
             ]),
-        new Item(META_ESTRUCTURAS_MAQUINA_ESTADOS,
+        new Item(Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS,
             [
                 '- Es una modelización conceptual en forma de diagrama de un problema ',
                 '- En esta situación siempre se encuentra un inicio, el cual es la espera de un estimulo ',
@@ -1429,7 +1422,7 @@ export const META_ESTRUCTURAS =
                 ' <strong>- Floyd-Warshall:</strong> Encuentra la ruta más corta entre todos los vertices en un grafo con pesos, ya sean dirigidos o no dirigidos ',
                 ' <strong>- Bellman Ford:</strong> Encuentra la ruta más corta entre desde un vertice fuente a un vertice destino ',
             ]),
-        new Item(META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION,
+        new Item(Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION,
             [
                 '- Son 2 conceptos importantes en la programación en general, que permiten que los objetos puedan ser almacenados, transmitidos y reconstruidos ',
                 ' - ya sea para su persistencia, ser transmitidos a traves de una red o ser almacenados en un cache en memoria ',
@@ -1452,7 +1445,7 @@ export const META_ESTRUCTURAS =
                 '<strong> - Legibilidad:</strong> Los datos que se serializan generalmente no son legibles para los humanos, lo que dificulta la solución de problemas ',
                 '  - directamente relacionados con los datos en este estado, ya sea en la transmision o el almacenamiento ',
             ]),
-        new Item(META_ESTRUCTURAS_DEPRECATION,
+        new Item(Keys.META_ESTRUCTURAS_DEPRECATION,
             [
                 '- En Java, como en otros lenguajes es comun encontrar metodos o clases marcadas de esa manera, una clara indicación de que esta en desuso ',
                 '- Muchos lenguajes conformen van evolucionando se optimizan o se corrigen, sin dejar de promover pero no garantizando la <em>retrocompatibilidad</em> ',

@@ -1,14 +1,4 @@
-import {
-    ANALISIS_DATA_DATA_ANALISIS_TYPES, ANALISIS_DATA_ETL_ELT, ANALISIS_DATA_REVERSE_ENGINEERING, ANALISIS_DATA_DATA_STORING,
-    ANALISIS_DATA_SYSTEMS_INFORMATION, ANALISIS_DATA_THEORY_OF_INFORMATION, HARDWARE_OPERATIVE_SYSTEM, HARDWARE_PROTOCOLS,
-    PARADIGMAS_PARADIGMA_DATOS, PEOPLE_PROCESS_BLOAT, PERSISTENCY_ADVANCED_ORM, PERSISTENCY_ADVANCED_SCALING_DB,
-    PERSISTENCY_ADVANCED_WAL, PERSISTENCY_DBMS, PERSISTENCY_OPTIMIZE_SLOW_QUERIES, PERSISTENCY_SCHEMAS, ANALISIS_DATA_CHANGE_DATA_CAPTURE,
-    PERSISTENCY_HARD_SOFT_DELETE, ANALISIS_DATA_GOLDEN_RECORD, CALIDAD_IF_ELSE, HARDWARE_UTF8, ANALISIS_DATA_BATCH_VS_STREAM,
-    WEB_SEO, PERSISTENCY_DB_TYPES, PERSISTENCY_DL, ANALISIS_DATA_OLAP_OLTP, PERSISTENCY_ERD, WEB_GOLDEN_SIGNALS, HARDWARE_MONITOREO,
-    PERSISTENCY_KEY_TYPES, PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS, PERSISTENCY_ADVANCED_PARTITIONING, PERSISTENCY_CONSISTENCY,
-    PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL, PEOPLE_TRIANGLES_SUCCESS, HARDWARE_CLEAN_CODE_PERFORMANCE, CALIDAD_CLEAN_CODE,
-    ANALISIS_DATA_DSL, ANALISIS_DATA_DEDUPLICATION
-} from "../linkReferencia";
+import * as Keys from '../keys'
 import { Item } from "../models";
 
 export class Content1 {
@@ -88,7 +78,7 @@ export const CALIDAD =
                 '',
                 '<strong>Duplicación:</strong> Se da por del desconocimiento general del proyecto, replicando codigo que ya existe ',
             ]),
-        new Item(CALIDAD_CLEAN_CODE,
+        new Item(Keys.CALIDAD_CLEAN_CODE,
             [
                 '- La calidad de codigo es un estandar que siempre se debe perseguir, hasta el codigo más limpio puede verse afectado por malas practicas ',
                 '- El proceso de degradación en todo proyecto es inevitable, más no incontrolable ',
@@ -345,7 +335,7 @@ export const CALIDAD =
                 ' - si no se define una propiedad real, el codigo se pudrira, y dejara de crecer, para ahora mantenerlo funcionando y solucionando errores, ',
                 ' - hasta que sea insostenible y sea necesaria una nueva versión, a la cual le puede pasar lo mismo, si no se aprendieron las lecciones correspondientes',
             ]),
-        new Item(CALIDAD_IF_ELSE,
+        new Item(Keys.CALIDAD_IF_ELSE,
             [
                 '- La <em>complejidad cognitiva</em> suele ser una de las principales razones para <em>refactorizar</em> el codigo, eso incluye las instrucciones de control ',
                 '- Las instrucciones de control <strong>If</strong> y <strong>Else</strong> pueden generar un codigo complejo y dificil de mantener si se usan de manera excesiva ',
@@ -456,7 +446,7 @@ export const HARDWARE =
                 '- Esta organización de capas permite una mejor depuración de errores, ',
                 ' - a la vez que cada capa tiene una responsabilidades bien definidad a la hora de recibir o enviar información ',
             ]),
-        new Item(HARDWARE_MONITOREO,
+        new Item(Keys.HARDWARE_MONITOREO,
             [
                 '- Es un software que nos permite monitorizar y descubrir problemas a nivel de aplicación que pueden ser optimizados ',
                 '- Para esto, es necesario recoger y cuantificar valores como: ',
@@ -502,7 +492,7 @@ export const HARDWARE =
                 ' - Cambiar la administración del cache del componente fisico ',
                 ' - Alterar como el SO administra el uso compartido',
             ]),
-        new Item(HARDWARE_PROTOCOLS,
+        new Item(Keys.HARDWARE_PROTOCOLS,
             [
                 '- Son un conjunto de reglas que describen como los dispositivos conectados se comunican a traves de una red, para intercambiar información ',
                 '- Sirven como un lenguaje en comun, para una comunicación facil y segura sin importar las diferencias de hardware o procesos internos ',
@@ -524,7 +514,7 @@ export const HARDWARE =
                 ' - de los datos en transito, mediante un canal seguro cifrado ',
                 '<strong>- Secure Socket Layer <em>(SSL)</em></strong>: Ayuda a proteger las conexiones de internet, mediante cifrado, tambien existe una versión más reciente y segura <em>TLS</em>',
             ]),
-        new Item(HARDWARE_OPERATIVE_SYSTEM,
+        new Item(Keys.HARDWARE_OPERATIVE_SYSTEM,
             [
                 '- Los <strong>Sistemas Operativos</strong> son la base de la informatica, es un conocimiento esencial para cualquier desarrollador de sistemas backend y/o distribuidos',
                 '',
@@ -546,7 +536,7 @@ export const HARDWARE =
                 '<strong>Solución de problemas y depuración:</strong> Un conocimiento profundo del SO ayudara a diagnosticar y solucionar problemas relacionados con fallas del sistema, ',
                 ' - como fugas de memoria, cuellos de botella, entre otros problemas ',
             ]),
-        new Item(HARDWARE_UTF8,
+        new Item(Keys.HARDWARE_UTF8,
             [
                 '- En los años 60 con el nacimiento de ARPANET, era necesario tener un estandar para transmitir la información, en ese entonces se utilizo <em>ASCII</em>',
                 '- <strong>ASCII</strong> es una manera de codificar información en un sistema binario de 7 bits, de manera que cada letra o caracter escrito se convertia en 7 bits ',
@@ -566,7 +556,7 @@ export const HARDWARE =
                 '',
                 '- Es el metodo de codificación más comun para internet, predeterminado para <em>HTML5</em>, y formatos para la transferencia de datos como <em>JSON</em> y <em>XML</em> ',
             ]),
-        new Item(HARDWARE_CLEAN_CODE_PERFORMANCE,
+        new Item(Keys.HARDWARE_CLEAN_CODE_PERFORMANCE,
             [
                 '- <em>Robert C Martin</em> Es el autor de "Clean Code", coautor del manifiesto Agil y creador de los principios <strong>SOLID</strong> ',
                 '- <em>Casey Muratori</em> Es un programador especializado en investigacion y desarrollo de motores de juegos, usado en franquicias como Age Of Empires y Gears Of War ',
@@ -610,7 +600,7 @@ export const WEB =
                 '- Aunque necesitan internet para actualizaciones de la información, tambien puede funcionar sin este ',
                 '- Bastante acorde con el enfoque mobile-first, que le da prioridad al movil que al escritorio ',
             ]),
-        new Item(WEB_SEO,
+        new Item(Keys.WEB_SEO,
             [
                 '- Los motores de busqueda rastrean el contenido en la web de manera continua para presentar mejores resultados y tener mejores busquedas ',
                 '- La indexación de contenido es una gran herramienta para buscar lo que se necesita ',
@@ -877,7 +867,7 @@ export const WEB =
                 '- Igual que muchas areas de la tecnologia, el desarrollo web constantemente cambia y evoluciona, ya sea por tendencias o por avances tecnologicos ',
                 '- Mantenerse informado y seguir aprendiendo, permite ofrecer soluciones de vanguardia y mantener un perfil profesional competitivo ',
             ]),
-        new Item(WEB_GOLDEN_SIGNALS,
+        new Item(Keys.WEB_GOLDEN_SIGNALS,
             [
                 '- <em>El silencio es oro</em> ó <em>No news, good news</em> Significan de manera general que el silencio es indicativo de normalidad, ningun ruido es bueno ',
                 '- Lamentablamente la mayoria de los sistemas de software no son silenciosos, pueden generar cientos de metricas y rastros difentes ',
@@ -1032,7 +1022,7 @@ export const PARADIGMAS =
                 '<strong>- Repetitiva:</strong> Las acciones que estan dentro del bucle, se realizan, siempre que la condicion sea cierta, verificando antes o despues la afirmación ',
                 '<strong>- Anidamiento:</strong> Las estructuras Selectivas y repetitivas, pueden ser anidadas una dentro de la otra ',
             ]),
-        new Item(PARADIGMAS_PARADIGMA_DATOS,
+        new Item(Keys.PARADIGMAS_PARADIGMA_DATOS,
             [
                 '- Es un paradigma de programación destinado a simplificar el diseño, y la implementación de sistemas, donde la información esta en el centro ',
                 '- En lugar de diseñar sistemas de información que combinan codigo y datos, <strong>DOP</strong> fomenta la separación entre codigos y datos ',
@@ -1390,7 +1380,7 @@ export const PEOPLE =
                 '- En muchas organizaciones, un analisis ONA, ayuda a las personas encargadas a diseñar y cambiar, la organización de las empresas, ',
                 ' - de manera más rapidas y adaptable, enfocandose en las areas por mejorar '
             ]),
-        new Item(PEOPLE_PROCESS_BLOAT,
+        new Item(Keys.PEOPLE_PROCESS_BLOAT,
             [
                 '- En las etapas iniciales de un proyecto, el desarrollo es agil, la toma rapida de decisiones y el entusiasmo por ofrecer valor',
                 '- Sin embargo en la medida que los proyectos ganan complejidad, muchos caen en antipatrones que disminuyen o matan la productividad',
@@ -1420,7 +1410,7 @@ export const PEOPLE =
                 '- Fomente la confianza y la autonomia en la medidad de lo posible',
                 '- Mantenga los procesos en lo minimo viable, solo aquellos procesos que sean absolutamente necesarios para mantener la calidad ',
             ]),
-        new Item(PEOPLE_TRIANGLES_SUCCESS,
+        new Item(Keys.PEOPLE_TRIANGLES_SUCCESS,
             [
                 '- Cuando se trabaja en el sector de las comunicaciones o la tecnologia, es inevitable no sentirse aludido con la Serie de HBO <em>Silicon Valley</em> ',
                 '- Una gran serie que describe la cultura de las empresas emergentes de la tecnologia, y chistes que solamente un programador podria entender por completo ',
@@ -1466,14 +1456,14 @@ export const ANALISIS_DATA =
                 '- Tambien son capaces de usar y reutilizar estructuras complejas ',
                 '- Que un lenguaje o herramienta sea turing complete no garantiza su eficiencia ',
             ]),
-        new Item(ANALISIS_DATA_REVERSE_ENGINEERING,
+        new Item(Keys.ANALISIS_DATA_REVERSE_ENGINEERING,
             [
                 '- Un concepto sencillo pero muy potente, basicamente consta de desmontar y volver a montar algo, para ver como funciona ',
                 '- Esto se da con la intención de mejorar o duplicar ese algo mediante una simple observación ',
                 '- Su nacimiento se da durante la segunda guerra mundial, pero hoy en dia es aplicable hasta para el software ',
                 '- Uno de los primeros casos de esta practica fue el nacimiento del Tu-4 <em>sovietico</em> copia del B-29 <em>Estadounidense</em> ',
             ]),
-        new Item(ANALISIS_DATA_DSL,
+        new Item(Keys.ANALISIS_DATA_DSL,
             [
                 '- Un DSL es un lenguaje de programación con un nivel superior de abstracción ',
                 '- Estos lenguajes son menos complejos que los lenguajes de alto nivel y proposito general, como Java, C, etc.. ',
@@ -1482,7 +1472,7 @@ export const ANALISIS_DATA =
                 '- Este concepto desemboca en la programación poliglota o programación orientada al lenguaje ',
                 '- Otro concepto importante es que los DSL pueden nacer y extenderse, con ó sin bases previas ',
             ]),
-        new Item(ANALISIS_DATA_DATA_ANALISIS_TYPES,
+        new Item(Keys.ANALISIS_DATA_DATA_ANALISIS_TYPES,
             [
                 '- Este un proceso esencial ya que ayuda a encontrar tendencias y responder preguntas de negocio',
                 '- Esto ayuda a las organizaciones a reducir la incertidumbre a la hora de tomar decisiones e incrementar las posibilidades de exito ',
@@ -1500,7 +1490,7 @@ export const ANALISIS_DATA =
                 '<strong>Prescriptiva:</strong> No solo se predicen posibles problemas, ayuda a tomar acciones para aprovechar las tendencias, ',
                 ' - mientras que se sortean inconvenientes y se adaptan automaticamente al tener en cuenta multiples factores externos ',
             ]),
-        new Item(ANALISIS_DATA_SYSTEMS_INFORMATION,
+        new Item(Keys.ANALISIS_DATA_SYSTEMS_INFORMATION,
             [
                 '- Se refiere al conjunto ordenado de mecanismos, personas, herramientas con el fin de administrar datos e información ',
                 '- Estos recursos interactuan y se interconectan de las formas más convenientes posibles con un proposito determinado ',
@@ -1519,7 +1509,7 @@ export const ANALISIS_DATA =
                 '- Soporte de decisiones               - Fisicos            - Distribución                                ',
                 '- Planificación & Automatización      - Herramientas       - Retroalimentación                            '
             ]),
-        new Item(ANALISIS_DATA_DATA_STORING,
+        new Item(Keys.ANALISIS_DATA_DATA_STORING,
             [
                 '- Almacenar los datos es fundamental para las empresas, para cualquier disposicion que estas tengan ',
                 '',
@@ -1546,7 +1536,7 @@ export const ANALISIS_DATA =
                 '  Cumplimiento     Los datos son compatibles        No lo cumple, actualizar       Lo cumple ya que la data   ',
                 '    de ACID        para garantizar la seguridad     y eliminar es complejo         es concurrente             ',
             ]),
-        new Item(ANALISIS_DATA_ETL_ELT,
+        new Item(Keys.ANALISIS_DATA_ETL_ELT,
             [
                 '- <strong>ETL</strong> & <strong>ELT</strong> Son 2 enfoques de procesamiento de datos para el analisis de cientos, miles de datos, desde multiples origenes',
                 '- Ambos son secuencias de procesos que separan los datos para su posterior analisis, capturan, procesan y cargan datos para su analisis en 3 pasos ',
@@ -1581,7 +1571,7 @@ export const ANALISIS_DATA =
                 '',
                 '    Seguridad       Posiblemente se deban crear aplicaciones personalizadas    Se pueden usar las caracteristicas integradas de la BD destino ',
             ]),
-        new Item(ANALISIS_DATA_THEORY_OF_INFORMATION,
+        new Item(Keys.ANALISIS_DATA_THEORY_OF_INFORMATION,
             [
                 '- Tambien conocida como la teoria matematica de la comunicación, es un planteamiento que estudia el procesamiento y medición de los datos, ',
                 ' - en la transmisión de la información, establece un flujo del <strong>mensaje</strong> entre un <strong>emisor</strong> y un <strong>receptor</strong> a travez de un <strong>canal</strong> determinado',
@@ -1618,7 +1608,7 @@ export const ANALISIS_DATA =
                 '- Biologia, en el estudio de las secuencias de ADN y el genoma de las especies',
                 '- Pagos, transacciones y procesos de autentificación ó verificación',
             ]),
-        new Item(ANALISIS_DATA_CHANGE_DATA_CAPTURE,
+        new Item(Keys.ANALISIS_DATA_CHANGE_DATA_CAPTURE,
             [
                 '- La captura de datos modificados es el proceso de seguimiento de todos los cambios en la fuente de datos, como Bases de Datos y almacenes de datos ',
                 '- Esto permite mantener a las organizaciones mantener las diversas fuentes de datos sincronizadas con información consistente, a traves de multiples sistemas ',
@@ -1664,7 +1654,7 @@ export const ANALISIS_DATA =
                 '<strong>- Adopción de la Nube:</strong> Las organizaciones se mudan a la nube para reducir costos y mejorar la agilidad y la elasticidad ',
                 ' - Con CDC estas migraciones se garantizan consistentes, y asi las empresas pueden dedicarse en crear nuevas experiencias digitales ',
             ]),
-        new Item(ANALISIS_DATA_GOLDEN_RECORD,
+        new Item(Keys.ANALISIS_DATA_GOLDEN_RECORD,
             [
                 '- Los usuarios interactuan constantemente con multiples plataformas, estos datos deben ser almacenados y ocasionalmente son duplicados ',
                 '- El resultado son diferentes versiones de un mismo registro, y las diferentes areas tendrian datos incompletos que desencadenan acciones inconexas ',
@@ -1677,7 +1667,7 @@ export const ANALISIS_DATA =
                 '- El cumplimiento de las regulaciones puede cambiar, y estos se facilitan entre menos lugares sea necesario modificar ',
                 '- La toma de decisiones siempre necesita de información y entre más procesada se encuentre mayor confianza tendra ',
             ]),
-        new Item(ANALISIS_DATA_BATCH_VS_STREAM,
+        new Item(Keys.ANALISIS_DATA_BATCH_VS_STREAM,
             [
                 '- Todas las empresas deben de manejar datos, y existen empresas donde este es su modelo de negocio, en el cual existen 2 maneras principales ',
                 '- Aprovechar el potencial de estos datos es crucial para tomar decisiones informadas, ya que estos se siguen generando y procesando continuamente ',
@@ -1726,7 +1716,7 @@ export const ANALISIS_DATA =
                 '&brvbar; Entretenimiento     &brvbar; Actualizaciones de contenido y notificaciones        &brvbar; Analisis de los patrones de visualización                &brvbar;',
                 '-----------------------------------------------------------------------------------------------------------------------------------------',
             ]),
-        new Item(ANALISIS_DATA_OLAP_OLTP,
+        new Item(Keys.ANALISIS_DATA_OLAP_OLTP,
             [
                 '- Son sistemas de administración de BD para almacenar y procesar datos en grandes volumenes, mediante una infraestructura de TI eficiente y confiable ',
                 '<strong>OLAP:</strong> Procesamiento Analitico en Linea, es usado para analizar los datos agregados ',
@@ -1747,7 +1737,7 @@ export const ANALISIS_DATA =
                 '&brvbar; Tiempo de respuesta   &brvbar; Tiempos más largos, segundos y minutos        &brvbar; Tiempos más cortos, milisegundos y segundos     &brvbar;',
                 '&brvbar; Aplicaciones          &brvbar; Analizar tendencias, predecir comportamientos &brvbar; Procesar pagos y pedidos                        &brvbar;',
             ]),
-        new Item(ANALISIS_DATA_DEDUPLICATION,
+        new Item(Keys.ANALISIS_DATA_DEDUPLICATION,
             [
                 '- Es un proceso que elimina copias excesivas de datos, reduciendo significativamente los requisitos de capacidad de almacenamiento ',
                 '- Este puede ser un proceso previo al guardado de los datos, ó como un proceso en segundo plano despues de su guardado ',
@@ -1767,7 +1757,7 @@ export const BASES_DE_DATOS =
                 '- Toda tabla deberia tener una clave primaria, para mejorar la indexación de contenido',
                 '- La información deberia estar normalizada para evitar valores duplicados',
             ]),
-        new Item(PERSISTENCY_DBMS,
+        new Item(Keys.PERSISTENCY_DBMS,
             [
                 '- Se encargan de almacenar, administrar, manipular y resguardar los datos ',
                 '- Las BD guardan diferentes tipos de datos como: texto, numeros, binarios, temporales, documentos, imagenes, geograficos, etc... ',
@@ -1791,7 +1781,7 @@ export const BASES_DE_DATOS =
                 '  Update        UPDATE        PUT, PATCH        ',
                 '  Delete        DELETE        DELETE            ',
             ]),
-        new Item(PERSISTENCY_DL,
+        new Item(Keys.PERSISTENCY_DL,
             [
                 '<strong>DQL - Lenguaje de definición de Consultas:</strong> Creación de Queries y obtención de información ',
                 '<strong>- SELECT:</strong>   Selección de las columnas a obtener ',
@@ -1829,14 +1819,14 @@ export const BASES_DE_DATOS =
                 '- Las BD relacionales cumplen esto mediante el esquema ACID ',
                 '- Las DB NO relacionales no garantizan el 100% de la integridad de los datos, aunque la mayoria son muy fiables ',
             ]),
-        new Item(PERSISTENCY_ERD,
+        new Item(Keys.PERSISTENCY_ERD,
             [
                 '- Demuestra como las entidades (generalmente de una BD) se relacionan entre si ',
                 '- Es una manera de desarrollar BD relacionales de acuerdo al modelo de negocio',
                 '- Demuestra como las entidades (generalmente de una BD) se relacionan entre si ',
                 '- Tambien tienen una relación que denota la cardinalidad 1-1, 1-n, 1-0, m-n',
             ]),
-        new Item('normalizacion',
+        new Item(Keys.PERSISTENCY_NORMALIZATION,
             [
                 '- La normalización hace la información más facil de estructurar, sin gastar espacio en redundancias y eliminado posibles inconsistencias',
                 '- Este proceso conlleva 2 grandes ventajas, se salvaguarda espacio en disco al no tener duplicacion de datos y los procesos de busqueda ',
@@ -1930,7 +1920,7 @@ export const BASES_DE_DATOS =
                 '<strong>- Rendimiento:</strong> Una preocupación constante, que siempre se debe tener en cuenta con cada cambio, por esto es ideal que ',
                 ' - se usen buenas practicas, usar particiones, se eviten procesos intensivos etc.. con el fin de evitar o mitigar posibles cuellos de botella',
             ]),
-        new Item(PERSISTENCY_OPTIMIZE_SLOW_QUERIES,
+        new Item(Keys.PERSISTENCY_OPTIMIZE_SLOW_QUERIES,
             [
                 '- Identificar y optimizar consultas lentas en cualquier gestor de Bases de Datos relacional es fundamental para un optimo rendimiento',
                 '- Si es un desarrollador que usa poco los <em>ORM</em> como Hibernate la optimización no es un concepto ajeno ',
@@ -1954,7 +1944,7 @@ export const BASES_DE_DATOS =
                 '- Verifique la tabla sobre la cual se estan haciendo los queries, es posible que se pueda normalizar o dividirse, reduciendo la cantidad de filas ',
                 '- Use procedimientos almacenados si son consultas demasiado frecuentes y con poca complejidad, sin abusar de estos ',
             ]),
-        new Item(PERSISTENCY_SCHEMAS,
+        new Item(Keys.PERSISTENCY_SCHEMAS,
             [
                 '- El Modelo Relacional, fue un avance trascendental para el almacenamiento de datos y una base fundamental para el software moderno ',
                 '- <strong>Edgar Frank Codd</strong> ó <em>Ted</em> Codd conocido por ser el padre de las bases de datos relacionales, afirmo de manera contundente: ',
@@ -1972,7 +1962,7 @@ export const BASES_DE_DATOS =
                 '- La optimización de consultas, debido a su naturaleza ambivalente es un proceso caotico y riesgoso, que debe tener en cuenta beneficios y riesgos ',
                 ' - por igual, cualquier cambio o actualización de este planeador puede romper consultas cuidadosamente diseñadas ',
             ]),
-        new Item(PERSISTENCY_HARD_SOFT_DELETE,
+        new Item(Keys.PERSISTENCY_HARD_SOFT_DELETE,
             [
                 '- Los datos son uno de los temas más importantes en el desarrollo en general y su gestión es fundamental para tener aplicaciones solidas ',
                 '',
@@ -1991,7 +1981,7 @@ export const BASES_DE_DATOS =
                 '- Cumplimiento de normas de privacidad                                                             ',
                 '- Diseños más simples                                                                              ',
             ]),
-        new Item(PERSISTENCY_DB_TYPES,
+        new Item(Keys.PERSISTENCY_DB_TYPES,
             [
                 '- las bases de datos son un componente critico para cualquier sistema, por eso necesario escoger la mejor opción',
                 '',
@@ -2031,7 +2021,7 @@ export const BASES_DE_DATOS =
                 '<em>- Casos de uso:</em> Mapas y Sistemas de Navegación                     <em>- Casos de uso:</em> Tipos de datos complejos ',
                 '<em>- Ejemplos:</em> PostGIS, Oracle Spatial                                <em>- Ejemplos:</em> db4o, ObjectDB',
             ]),
-        new Item(PERSISTENCY_KEY_TYPES,
+        new Item(Keys.PERSISTENCY_KEY_TYPES,
             [
                 '- Para determinar la unicidad de un registro existe el concepto de key que es sumamente importante a la hora de guardar y gestionar la información ',
                 '',
@@ -2073,7 +2063,7 @@ export const BASE_DE_DATOS_AVANZADO =
                 '<strong>- Grafos:</strong>      Se basan en nodos, relacionados mediante aristas, es necesario de la teoria de grafos para recorrerlas ',
                 '<strong>- Objetos:</strong>     Los datos se manejan mediante Objetos, tal y como en la Programación Orientada a Objetos ',
             ]),
-        new Item(PERSISTENCY_ADVANCED_ORM,
+        new Item(Keys.PERSISTENCY_ADVANCED_ORM,
             [
                 '- El Mapeo Objeto-Relacional permite convertir los objetos convencionales en objetos persistentes ',
                 '- Permite generar esquemas para guardar la información independientes de cualquier Motor de Base de Datos ',
@@ -2081,7 +2071,7 @@ export const BASE_DE_DATOS_AVANZADO =
                 '- Los cambios en las BD se hacen mucho más rapidos de hacer y de probar ',
                 '- El rendimientos para operaciones muy complicadas es ligeramente menor ',
             ]),
-        new Item(PERSISTENCY_CONSISTENCY,
+        new Item(Keys.PERSISTENCY_CONSISTENCY,
             [
                 '- Garantiza la calidad de los servicios, con una gran disponibilidad y escalabilidad, esto aplica solamente para BD relacionales ',
                 '- Cuando la concurrencia es demasiado alta, las peticiones pueden resultar en peticiones bloqueantes ',
@@ -2291,7 +2281,7 @@ export const BASE_DE_DATOS_AVANZADO =
                 '- Las redes sociales suelen ser un mar de información, donde no existe una estructura fija, por lo que contienen un enorme volumen de datos, ',
                 ' - sin estructura o parcialmente estructurados, por lo que una BD NoSQL es idonea para este tipo de ambientes ',
             ]),
-        new Item(PERSISTENCY_ADVANCED_SCALING_DB,
+        new Item(Keys.PERSISTENCY_ADVANCED_SCALING_DB,
             [
                 '- Las BD esta hechas para procesar y almacenar inmensas cantidades de datos, aun asi eso no significa que no deba o no puedan crecer aun más',
                 '',
@@ -2303,7 +2293,7 @@ export const BASE_DE_DATOS_AVANZADO =
                 '<strong>- Replicación:</strong> Crear replicas de la BD principal, para separar las lecturas de la escritura ',
                 '<strong>- Fragmentación:</strong> Dividir las tablas de la BD en partes más pequeñas y distribuirlas en multiples servidores ',
             ]),
-        new Item(PERSISTENCY_ADVANCED_WAL,
+        new Item(Keys.PERSISTENCY_ADVANCED_WAL,
             [
                 '- <em>Write Ahead Logs</em>, es una tecnica utilizada en los sistemas de almacenamiento para garantizar la durabilidad y coherencia de las transacciones ',
                 '- La idea basica es registrar los cambios en un registro antes de que se apliquen al almacenamiento real',
@@ -2338,7 +2328,7 @@ export const BASE_DE_DATOS_AVANZADO =
                 '<strong>- Administrador de recuperación:</strong> En caso de fallas o apagados, este administrador es responsable de restaurar la BD a un estado consistente ',
                 '<strong>- Archivado o mantenimiento:</strong> Dependiendo de la configuración, los archivos pueden guardarse o eliminarse, cuando no sean relevantes para la recuperación ',
             ]),
-        new Item(PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS,
+        new Item(Keys.PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS,
             [
                 '- Casi todos los sistemas informaticos tienen algun estado y necesitan almacenar datos, pero igual que las aplicaciones las Bases de Datos, ',
                 ' - tambien tienen componentes de Hardware y de Software, por lo que no esta exentas de problemas ',
@@ -2379,7 +2369,7 @@ export const BASE_DE_DATOS_AVANZADO =
                 '',
                 '- El crecimiento significativo de los datos genera imprevisibilidad, incluso si se tiene conocimiento del funcionamiento interno ',
             ]),
-        new Item(PERSISTENCY_ADVANCED_PARTITIONING,
+        new Item(Keys.PERSISTENCY_ADVANCED_PARTITIONING,
             [
                 '- Es una tecnica donde grandes volumenes de datos se subdividen en conjuntos más pequeños y manejables ',
                 '- Generalmente se hacen particiones horizontales(filas), pero tambien se pueden hacer de manera vertical(columnas)',
@@ -2399,7 +2389,7 @@ export const BASE_DE_DATOS_AVANZADO =
                 '- Las consulta se puede paralelizar para que se consulten varias particiones al mismo tiempo',
                 '- Se reduce el acceso a los datos al solamente consultar las particiones relevantes ',
             ]),
-        new Item(PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL,
+        new Item(Keys.PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL,
             [
                 '- Es una condición de los sistemas donde todas las partes del sistema alcanzan el mismo estado en algun momento, por lo que habra ',
                 ' - momentos donde temporalmente la información sera inconsistente debido a fallos o retrasos ',

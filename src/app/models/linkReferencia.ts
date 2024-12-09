@@ -58,12 +58,6 @@ export const POO_POO_PILARES = 'pooPilares';
 export const POO_ENLACES = 'enlaces';
 export const POO_INMUTABILITY = 'inmutability';
 export const POO_COUPLING_AND_COHESION = 'couplinAndCohesion';
-export const ARQUITECTURAS_DEFINICION = 'definicion';
-export const ARQUITECTURAS_CAPAS = 'capas';
-export const ARQUITECTURAS_MICRO_SERVICES = 'microServices';
-export const ARQUITECTURAS_HEXAGONAL = 'hexagonal';
-export const ARQUITECTURAS_MVP_MVC = 'mvpMvc';
-export const ARQUITECTURAS_EVENT_DRIVEN = 'eventDriven';
 export const LEYES_HYRUM = 'hyrum';
 export const LEYES_LEHMAN = 'lehman';
 export const LEYES_CONWAY = 'conway';
@@ -119,14 +113,6 @@ export const REFACTORING_CLEAN_CODE = 'cleanCodeRefactoring';
 export const REFACTORING_MANAGE_DEPENDENCIES = 'manageDependencies';
 export const REFACTORING_GOOD_AND_BAD_PRACTICES = 'goodAndBadPracticesRefactoring';
 export const REFACTORING_LEGACY_CODE = 'refactorLegacyCode';
-export const PERSISTENCY_OPTIMIZE_SLOW_QUERIES = 'optimizeSlowQueries';
-export const PERSISTENCY_SCHEMAS = 'schemaPhysicVSschemaLogical';
-export const PERSISTENCY_HARD_SOFT_DELETE = 'hardAndSoftDelete';
-export const PERSISTENCY_DB_TYPES = 'dataBasesTypes';
-export const PERSISTENCY_KEY_TYPES = 'keysTypes';
-export const PERSISTENCY_DBMS = 'dbms'
-export const PERSISTENCY_DL = 'dl'
-export const PERSISTENCY_ERD = 'erd'
 export const HARDWARE_MONITOREO = 'monitoreo(apm)';
 export const HARDWARE_PROTOCOLS = 'protocolsHardware';
 export const HARDWARE_OPERATIVE_SYSTEM = 'operativeSystem';
@@ -175,7 +161,7 @@ export const USER_HISTORIES_SMART = 'smart';
 export const USER_HISTORIES_FORMATS = 'historiesFormats';
 export const USER_HISTORIES_ESTIMATIONS = 'historiasEstimacionAgil';
 
-export const LAST_ITEM = Keys.ANALISIS_SINGLE_POINT_OF_FAILURE;
+export const LAST_ITEM = Keys.ANALISIS_LIGHT_EVENTS_VS_RICH_EVENTS;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -220,36 +206,37 @@ export const ANALISIS_REF = new Map<string, Referencia>([
     ['codingEasyPart', new Referencia('https://swizec.com/blog/coding-is-the-easy-part/', 'Codificar es la parte facil', ANALISIS_KEY, 'Codificar es facil', '2023/12/11')],
     [Keys.ANALISIS_ALGORITHMS, new Referencia('https://medium.com/@zgokceaynaci/a-journey-through-the-world-of-algorithms-554bfffcee97', 'Algoritmos', ANALISIS_KEY, 'Algoritmos', '2024/07/27').addRelatedItem(COMPILACION_GRAFOS).addRelatedItem(Keys.META_CARACTERISTICAS_BACKTRACKING)],
     [Keys.ANALISIS_QUEUES_SYSTEM_DESIGN, new Referencia('https://levelup.gitconnected.com/message-queues-in-system-design-0440a1221023', 'Message Queues in System Design', ANALISIS_KEY, 'Message Queues', '2024/09/01').addRelatedItem(META_ESTRUCTURAS_ESTRUCTURAS_DATOS_2).addRelatedItem(APIS_REST_VS_MESSAGING)],
-    [Keys.ANALISIS_HIGH_LEVEL_VS_LOW_LEVEL, new Referencia('https://www.baeldung.com/cs/hld-lld', 'High Level Vs Low Level', ANALISIS_KEY, 'High Level Vs Low Level', '2024/09/20').addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_SLDC).addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_DDD).addRelatedItem(PERSISTENCY_ERD)],
+    [Keys.ANALISIS_HIGH_LEVEL_VS_LOW_LEVEL, new Referencia('https://www.baeldung.com/cs/hld-lld', 'High Level Vs Low Level', ANALISIS_KEY, 'High Level Vs Low Level', '2024/09/20').addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_SLDC).addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_DDD).addRelatedItem(Keys.PERSISTENCY_ERD)],
     [Keys.ANALISIS_SYSTEM_DESIGN_CONCEPTS, new Referencia('https://www.linkedin.com/posts/brijpandeyji_top-12-system-design-concepts-every-developer-activity-7238729739065069568-h1t6/', 'Design System Concepts', ANALISIS_KEY, 'Design System Concepts', '2024/09/29')],
     [Keys.ANALISIS_MICROSERVICES, new Referencia('https://foojay.io/today/microservices-design-principles-for-well-crafted-architecture/', 'Diseño de Microservicios', ANALISIS_KEY, 'Diseño de Microservicios', '2024/10/22').addRelatedItem(PRINCIPIOS_SOLID).addRelatedItem(POO_POO)],
     [Keys.ANALISIS_SINGLE_POINT_OF_FAILURE, new Referencia('https://levelup.gitconnected.com/single-point-of-failure-spof-in-system-design-c8bbac5af993', 'Single Point Of Failure', ANALISIS_KEY, 'SPOF', '2024/12/07')],
+    [Keys.ANALISIS_LIGHT_EVENTS_VS_RICH_EVENTS, new Referencia('https://theburningmonk.com/2024/11/when-to-use-light-events-vs-rich-events-in-event-driven-architectures/', 'Light Events VS Rich Events', ANALISIS_KEY, 'Eventos', '2024/12/08').addRelatedItem(Keys.ARQUITECTURAS_EVENT_DRIVEN).addRelatedItem(Keys.PERSISTENCY_NORMALIZATION).addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_DDD)],
 ]);
 
 export const ARQUITECTURAS_KEY = 'Arquitecturas';
 export const ARQUITECTURAS_REF = new Map<string, Referencia>([
     //['definicion', new Referencia('https://cgrw01.cgr.go.cr/rup/RUP.es/SmallProjects/core.base_rup/guidances/concepts/software_architecture_4269A354.html', '¿ Que es una arquitectura ?', ARQUITECTURAS_KEY, 'Definición')],
-    [ARQUITECTURAS_DEFINICION, new Referencia('https://www.gluo.mx/blog/arquitectura-de-software-que-es-y-que-tipos-hay', '¿ Que es una arquitectura ?', ARQUITECTURAS_KEY, 'Definición', '', '2024/06/17')],
+    [Keys.ARQUITECTURAS_DEFINICION, new Referencia('https://www.gluo.mx/blog/arquitectura-de-software-que-es-y-que-tipos-hay', '¿ Que es una arquitectura ?', ARQUITECTURAS_KEY, 'Definición', '', '2024/06/17')],
     ['inicioArquitectura', new Referencia('https://sg.com.mx/revista/27/arquitectura-software', 'Etapas & Roles', ARQUITECTURAS_KEY, 'Etapas & Roles')],
     ['conceptosArquitectura', new Referencia('https://www.freecodecamp.org/news/an-introduction-to-software-architecture-patterns/', 'Conceptos Arquitecturas', ARQUITECTURAS_KEY, 'Conceptos')],
     ['principiosArquitecturas', new Referencia('https://www.genbeta.com/desarrollo/principios-de-una-arquitectura-limpia-mantenible-y-testeable', 'Principios de las arquitecturas', ARQUITECTURAS_KEY, 'Principios')],
     ['arquitecturasLimpias', new Referencia('https://medium.com/@diego.coder/introducci%C3%B3n-a-las-clean-architectures-723fe9fe17fa', 'Arquitecturas Limpias', ARQUITECTURAS_KEY, 'Limpias')],
-    [ARQUITECTURAS_CAPAS, new Referencia('https://geeks.ms/jkpelaez/2009/05/30/arquitectura-basada-en-capas/', 'Arquitectura a Capas', ARQUITECTURAS_KEY, 'Capas')],
+    [Keys.ARQUITECTURAS_CAPAS, new Referencia('https://geeks.ms/jkpelaez/2009/05/30/arquitectura-basada-en-capas/', 'Arquitectura a Capas', ARQUITECTURAS_KEY, 'Capas')],
     ['cliente', new Referencia('https://desarrolloweb.com/articulos/arquitectura-cliente-servidor.html', 'Arquitectura Cliente-Servidor', ARQUITECTURAS_KEY, 'Cliente Servidor')],
     ['microServiciosFundamentals', new Referencia('https://medium.com/@kumuthini.program/micro-services-fundamentals-dc0fc369d75e', 'Bases de Micro Servicios', ARQUITECTURAS_KEY, 'Bases de Microservicios')],
-    [ARQUITECTURAS_MICRO_SERVICES, new Referencia('https://aws.amazon.com/es/microservices/', 'Micro servicios', ARQUITECTURAS_KEY, 'Micro servicios', '', '2024/08/17')],
-    [ARQUITECTURAS_HEXAGONAL, new Referencia('https://medium.com/@edusalguero/arquitectura-hexagonal-59834bb44b7f', 'Hexagonal', ARQUITECTURAS_KEY, 'Hexagonal', '', '2024/11/24').addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_DDD)],
+    [Keys.ARQUITECTURAS_MICRO_SERVICES, new Referencia('https://aws.amazon.com/es/microservices/', 'Micro servicios', ARQUITECTURAS_KEY, 'Micro servicios', '', '2024/08/17')],
+    [Keys.ARQUITECTURAS_HEXAGONAL, new Referencia('https://medium.com/@edusalguero/arquitectura-hexagonal-59834bb44b7f', 'Hexagonal', ARQUITECTURAS_KEY, 'Hexagonal', '', '2024/11/24').addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_DDD)],
     ['noHexagonal', new Referencia('https://javiervelezreyes.com/ni-nueva-ni-arquitectura-ni-hexagonal/', 'Ni Nueva, Ni Hexagonal', ARQUITECTURAS_KEY, 'Ni Nueva, Ni hexagonal')],
     ['mvc', new Referencia('https://developer.mozilla.org/es/docs/Glossary/MVC', 'Modelo-Vista-Controlador', ARQUITECTURAS_KEY, 'MVC')],
     //['mvpMvc', new Referencia('https://www.develapps.com/es/noticias/modelo-vista-presentador-mvp-en-android', 'Modelo-Vista-Presentador', ARQUITECTURAS_KEY, 'MVP')],
-    [ARQUITECTURAS_MVP_MVC, new Referencia('https://keepcoding.io/blog/que-es-mvc-mvp-y-mvvm-en-android/', 'Modelo-Vista-Presentador', ARQUITECTURAS_KEY, 'MVP', '', '2024/06/17').addRelatedItem(Keys.META_CARACTERISTICAS_BOILER_PLATE)],
+    [Keys.ARQUITECTURAS_MVP_MVC, new Referencia('https://keepcoding.io/blog/que-es-mvc-mvp-y-mvvm-en-android/', 'Modelo-Vista-Presentador', ARQUITECTURAS_KEY, 'MVP', '', '2024/06/17').addRelatedItem(Keys.META_CARACTERISTICAS_BOILER_PLATE)],
     ['otrasArquitecturas', new Referencia('https://medium.com/@maniakhitoccori/los-10-patrones-comunes-de-arquitectura-de-software-d8b9047edf0b', 'Otras Arquitecturas', ARQUITECTURAS_KEY, 'Otras (patrones)')],
     ['monolitos', new Referencia('https://www.paradigmadigital.com/techbiz/microservicios-vs-microlitos-vs-monolitos-ventajas-desventajas/', 'Monolitos VS Microservicios', ARQUITECTURAS_KEY, 'Monolitos')],
     ['stylesArchitecture1', new Referencia('https://hdnmetatech.com/news/our-press/detail/introduction-to-architecture-styles-and-patterns-as-a-blueprint-for-designing-a-system', 'Estilos #1', ARQUITECTURAS_KEY, 'Estilos & Patrones #1')],
     ['stylesArchitecture2', new Referencia('https://hdnmetatech.com/news/our-press/detail/introduction-to-architecture-styles-and-patterns-as-a-blueprint-for-designing-a-system', 'Estilos #2', ARQUITECTURAS_KEY, 'Estilos & Patrones #2')],
     ['monolitosModulares', new Referencia('https://levelup.gitconnected.com/architecture-style-modulith-vs-microservices-90c7c75713db', 'Monolitos Modulares', ARQUITECTURAS_KEY, 'Monolitos Modulares')],
     ['descomposicionModular', new Referencia('https://ittgweb.wordpress.com/2016/05/29/descomposicion-modular/', 'Descomposición Modular', ARQUITECTURAS_KEY, 'Descomposición', '2024/05/25')],
-    [ARQUITECTURAS_EVENT_DRIVEN, new Referencia('https://medium.com/@alxkm/java-event-driven-architecture-dc456d324ba5', 'Basada en Eventos', ARQUITECTURAS_KEY, 'Basada en Eventos', '2024/06/17').addRelatedItem(NUBE_OBSERVABILIDAD)],
+    [Keys.ARQUITECTURAS_EVENT_DRIVEN, new Referencia('https://medium.com/@alxkm/java-event-driven-architecture-dc456d324ba5', 'Basada en Eventos', ARQUITECTURAS_KEY, 'Basada en Eventos', '2024/06/17').addRelatedItem(NUBE_OBSERVABILIDAD)],
 ]);
 
 export const BUENAS_PRACTICAS_KEY = 'Buenas-Practicas';
@@ -406,7 +393,7 @@ export const FRAMEWORKS_REF = new Map<string, Referencia>([
     [FRAMEWORKS_IOD, new Referencia('https://www.arquitecturajava.com/el-patron-de-inyeccion-de-dependencia/', 'Inyección de dependencias', FRAMEWORKS_KEY, 'Inyección de dependencias', '', '2024/06/09')],
     ['scafolding', new Referencia('https://medium.com/@srinathsrs104/scaffolding-54ac4e47e133', 'Creación automatica de codigo', FRAMEWORKS_KEY, 'Scaffolding')],
     ['iodSpring', new Referencia('https://medium.com/@priyaroul99/what-is-constructor-injection-and-why-should-you-use-it-in-spring-bdb3e1857c58', 'Inyección de Dependencias en Spring', FRAMEWORKS_KEY, 'IoD Spring', '2023/12/02')],
-    [FRAMEWORKS_CODE_STRUCTURE, new Referencia('https://medium.com/@akintopbas96/spring-boot-code-structure-package-by-layer-vs-package-by-feature-5331a0c911fe', 'Paquetes por capas Vs funcionalidad', FRAMEWORKS_KEY, 'Estructura del codigo', '2024/05/18').addRelatedItem(META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL).addRelatedItem(POO_POO).addRelatedItem(ARQUITECTURAS_CAPAS).addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_SCREAMING_DESIGN)],
+    [FRAMEWORKS_CODE_STRUCTURE, new Referencia('https://medium.com/@akintopbas96/spring-boot-code-structure-package-by-layer-vs-package-by-feature-5331a0c911fe', 'Paquetes por capas Vs funcionalidad', FRAMEWORKS_KEY, 'Estructura del codigo', '2024/05/18').addRelatedItem(META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL).addRelatedItem(POO_POO).addRelatedItem(Keys.ARQUITECTURAS_CAPAS).addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_SCREAMING_DESIGN)],
 ]);
 
 export const GIT_KEY = 'Git';
@@ -547,7 +534,7 @@ export const NUBE_REF = new Map<string, Referencia>([
     ['loadBalancing', new Referencia('https://aws.amazon.com/es/what-is/load-balancing/', 'Balancear la Carga', NUBE_KEY, 'Balanceador de carga')],
     ['latencia', new Referencia('https://blog.bytebytego.com/p/ep110-top-5-strategies-to-reduce#top-strategies-to-reduce-latency', 'Reducir la latencia', NUBE_KEY, 'Latencia', '2024/05/12')],
     [NUBE_OBSERVABILIDAD, new Referencia('https://medium.com/@rcougil/software-observabilidad-logs-m%C3%A9tricas-y-trazabilidad-d5bcca56608d', 'Observabilidad', NUBE_KEY, 'Observabilidad', '2024/05/26')],
-    [NUBE_MICROSERVICES_BEST_PRACTICES, new Referencia('https://www.linkedin.com/posts/nelsonamigoscode_systemdesign-coding-interviewtips-activity-7206618794188750848-lNtj/', 'Micro servicios, buenas practicas', NUBE_KEY, 'Micro servicios Practicas', '', '2024/08/17').addRelatedItem(PRINCIPIOS_KISS).addRelatedItem(ARQUITECTURAS_MICRO_SERVICES).addRelatedItem(ARQUITECTURAS_EVENT_DRIVEN)],
+    [NUBE_MICROSERVICES_BEST_PRACTICES, new Referencia('https://www.linkedin.com/posts/nelsonamigoscode_systemdesign-coding-interviewtips-activity-7206618794188750848-lNtj/', 'Micro servicios, buenas practicas', NUBE_KEY, 'Micro servicios Practicas', '', '2024/08/17').addRelatedItem(PRINCIPIOS_KISS).addRelatedItem(Keys.ARQUITECTURAS_MICRO_SERVICES).addRelatedItem(Keys.ARQUITECTURAS_EVENT_DRIVEN)],
     [NUBE_TWO_PHASE_COMMIT, new Referencia('https://hongilkwon.medium.com/when-to-use-two-phase-commit-in-distributed-transaction-f1296b8c23fd', 'Two Phase Commit', NUBE_KEY, 'Two Phase Commit', '2024/11/26')],
     [NUBE_DISPONIBILITY, new Referencia('https://www.computerweekly.com/es/consejo/Disponibilidad-de-cinco-nueves-Que-significa-realmente', 'Disponibilidad de 5 9s', NUBE_KEY, 'Disponibilidad de 5 9s', '2024/11/26').addRelatedItem(CD_CI_CD_CI)],
 ]);
@@ -729,7 +716,7 @@ export const REFACTORING_REF = new Map<string, Referencia>([
     ['cuandoNoRefactorizar', new Referencia('https://www.digite.com/es/agile/refactorizacion-en-agil/', 'Cuando No Refactorizar', REFACTORING_KEY, 'Cuando No', '2023/01/22')],
     [REFACTORING_LEGACY_CODE, new Referencia('https://jesuslc.com/2020/11/21/tecnicas-para-mantener-al-legacy-code-bajo-control/', 'Refactorizar el Legacy Code', REFACTORING_KEY, 'Refactor en Legacy code', '2023/02/05')],
     ['manejarDeudaTecnica', new Referencia('https://newsletter.techworld-with-milan.com/p/how-to-deal-with-technical-debt', 'Manejo de la deuda tecnica', REFACTORING_KEY, '¿ Como manejarla ?', '2024/05/12')],
-    [REFACTORING_MANAGE_DEPENDENCIES, new Referencia('https://levelup.gitconnected.com/world-of-dependencies-4639100d16ef', 'Manejo de las dependencias', REFACTORING_KEY, 'Dependencias', '2024/06/09').addRelatedItem(META_ESTRUCTURAS_MAQUINA_ESTADOS).addRelatedItem(ARQUITECTURAS_CAPAS).addRelatedItem(FRAMEWORKS_IOD)],
+    [REFACTORING_MANAGE_DEPENDENCIES, new Referencia('https://levelup.gitconnected.com/world-of-dependencies-4639100d16ef', 'Manejo de las dependencias', REFACTORING_KEY, 'Dependencias', '2024/06/09').addRelatedItem(META_ESTRUCTURAS_MAQUINA_ESTADOS).addRelatedItem(Keys.ARQUITECTURAS_CAPAS).addRelatedItem(FRAMEWORKS_IOD)],
     [REFACTORING_GOOD_AND_BAD_PRACTICES, new Referencia('https://www.builder.io/blog/good-vs-bad-refactoring', 'Buenas & Malas practicas', REFACTORING_KEY, 'Buenas & Malas practicas', '2024/09/08').addRelatedItem(WEB_SEO).addRelatedItem(PRINCIPIOS_KISS)],
 ]);
 
@@ -804,22 +791,22 @@ export const SMELL_CODES_REF = new Map<string, Referencia>([
 export const PERSISTENCY_KEY = 'Bases de Datos'
 export const PERSISTENCY_REF = new Map<string, Referencia>([
     ['sql', new Referencia('https://www.w3schools.com/sql/default.asp', '¿ Que es SQL ?', PERSISTENCY_KEY, 'SQL')],
-    [PERSISTENCY_DBMS, new Referencia('https://www.astera.com/es/type/blog/database-management-software/', 'Software de Gestion de Bases de Datos', PERSISTENCY_KEY, 'DBMS')],
+    [Keys.PERSISTENCY_DBMS, new Referencia('https://www.astera.com/es/type/blog/database-management-software/', 'Software de Gestion de Bases de Datos', PERSISTENCY_KEY, 'DBMS')],
     ['crud', new Referencia('https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/crud-las-principales-operaciones-de-bases-de-datos/', 'Create, Read, Update, Delete', PERSISTENCY_KEY, 'CRUD')],
-    [PERSISTENCY_DL, new Referencia('https://www.linkedin.com/posts/brijpandeyji_a-solid-grasp-of-sql-is-crucial-for-anyone-activity-7240803134258782208-ElvO/', 'DQL, DDL, DML, DCL, TCL', PERSISTENCY_KEY, 'DQL, DDL, DML, DCL, TCL', '', '2024/09/15')],
+    [Keys.PERSISTENCY_DL, new Referencia('https://www.linkedin.com/posts/brijpandeyji_a-solid-grasp-of-sql-is-crucial-for-anyone-activity-7240803134258782208-ElvO/', 'DQL, DDL, DML, DCL, TCL', PERSISTENCY_KEY, 'DQL, DDL, DML, DCL, TCL', '', '2024/09/15')],
     ['integridad', new Referencia('https://platzi.com/blog/que-es-ddl-dml-dcl-y-tcl-integridad-referencial/', 'Integridad Referencial', PERSISTENCY_KEY, 'Integridad')],
-    [PERSISTENCY_ERD, new Referencia('https://www.lucidchart.com/pages/es/que-es-un-diagrama-entidad-relacion', 'Diagrama Entidad-Relación', PERSISTENCY_KEY, 'ERD')],
-    ['normalizacion', new Referencia('https://docs.microsoft.com/en-us/office/troubleshoot/access/database-normalization-description', 'Normalización de una BD', PERSISTENCY_KEY, 'Normalización')],
+    [Keys.PERSISTENCY_ERD, new Referencia('https://www.lucidchart.com/pages/es/que-es-un-diagrama-entidad-relacion', 'Diagrama Entidad-Relación', PERSISTENCY_KEY, 'ERD')],
+    [Keys.PERSISTENCY_NORMALIZATION, new Referencia('https://docs.microsoft.com/en-us/office/troubleshoot/access/database-normalization-description', 'Normalización de una BD', PERSISTENCY_KEY, 'Normalización')],
     ['acid', new Referencia('https://dosideas.com/noticias/base-de-datos/973-acid-en-las-bases-de-datos', 'Esquema ACID', PERSISTENCY_KEY, 'ACID')],
     ['indices', new Referencia('https://www.ibm.com/docs/es/mam/7.6.0.8?topic=databases-database-indexing', 'Indices', PERSISTENCY_KEY, 'Indices')],
     ['joins', new Referencia('https://ingenieriadesoftware.es/tipos-sql-join-guia-referencia/', 'Tipos de Joins', PERSISTENCY_KEY, 'Tipos de Joins')],
     ['constraints', new Referencia('https://www.w3schools.com/sql/sql_constraints.asp', 'Constraints', PERSISTENCY_KEY, 'Constraints', '2023/10/03')],
     ['dbDesign', new Referencia('https://dzone.com/articles/what-is-good-database-design', 'Diseño de una BD', PERSISTENCY_KEY, 'Diseño', '2023/11/23')],
-    [PERSISTENCY_OPTIMIZE_SLOW_QUERIES, new Referencia('https://digma.ai/how-to-optimize-slow-sql-queries/', 'Optimización de consultas', PERSISTENCY_KEY, 'Optimización', '2024/06/09').addRelatedItem(PERSISTENCY_ADVANCED_ORM).addRelatedItem(PERSISTENCY_ADVANCED_N_1_SELECTS)],
-    [PERSISTENCY_SCHEMAS, new Referencia('https://buttondown.email/jaffray/archive/in-codd-we-trust-or-not', 'Esquema Fisico Vs Esquema Logico', PERSISTENCY_KEY, 'Esquemas (Schema)', '2024/07/16')],
-    [PERSISTENCY_HARD_SOFT_DELETE, new Referencia('https://surajsinghbisht054.medium.com/understanding-soft-delete-and-hard-delete-in-software-development-best-practices-and-importance-539a935d71b5', 'Borrado Fisico Vs Logico', PERSISTENCY_KEY, 'Hard/Soft Delete', '2024/08/10')],
-    [PERSISTENCY_DB_TYPES, new Referencia('https://www.linkedin.com/posts/brijpandeyji_as-data-architectures-evolve-choosing-the-activity-7234400741543587841-sp_I/', 'Tipos de Bases de Datos', PERSISTENCY_KEY, 'Tipos de BD', '2024/09/12').addRelatedItem(POO_POO)],
-    [PERSISTENCY_KEY_TYPES, new Referencia('https://agiledata.org/essays/keys.html', 'Tipos de Keys', PERSISTENCY_KEY, 'Tipos de Keys', '2024/10/06')],
+    [Keys.PERSISTENCY_OPTIMIZE_SLOW_QUERIES, new Referencia('https://digma.ai/how-to-optimize-slow-sql-queries/', 'Optimización de consultas', PERSISTENCY_KEY, 'Optimización', '2024/06/09').addRelatedItem(PERSISTENCY_ADVANCED_ORM).addRelatedItem(PERSISTENCY_ADVANCED_N_1_SELECTS)],
+    [Keys.PERSISTENCY_SCHEMAS, new Referencia('https://buttondown.email/jaffray/archive/in-codd-we-trust-or-not', 'Esquema Fisico Vs Esquema Logico', PERSISTENCY_KEY, 'Esquemas (Schema)', '2024/07/16')],
+    [Keys.PERSISTENCY_HARD_SOFT_DELETE, new Referencia('https://surajsinghbisht054.medium.com/understanding-soft-delete-and-hard-delete-in-software-development-best-practices-and-importance-539a935d71b5', 'Borrado Fisico Vs Logico', PERSISTENCY_KEY, 'Hard/Soft Delete', '2024/08/10')],
+    [Keys.PERSISTENCY_DB_TYPES, new Referencia('https://www.linkedin.com/posts/brijpandeyji_as-data-architectures-evolve-choosing-the-activity-7234400741543587841-sp_I/', 'Tipos de Bases de Datos', PERSISTENCY_KEY, 'Tipos de BD', '2024/09/12').addRelatedItem(POO_POO)],
+    [Keys.PERSISTENCY_KEY_TYPES, new Referencia('https://agiledata.org/essays/keys.html', 'Tipos de Keys', PERSISTENCY_KEY, 'Tipos de Keys', '2024/10/06')],
 ]);
 
 export const PERSISTENCY_ADVANCED_KEY = 'BD Avanzado'
@@ -839,7 +826,7 @@ export const PERSISTENCY_ADVANCED_REF = new Map<string, Referencia>([
     ['MVCC', new Referencia('https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/What-is-MVCC-How-does-Multiversion-Concurrencty-Control-work', 'Control de Concurrencia Multiversion', PERSISTENCY_ADVANCED_KEY, 'Control de Concurrencia', '2023/10/09')],
     ['acidVSbase', new Referencia('https://phoenixnap.com/kb/acid-vs-base', 'BASE', PERSISTENCY_ADVANCED_KEY, 'BASE', '2023/12/04')],
     [PERSISTENCY_ADVANCED_SCALING_DB, new Referencia('https://blog.bytebytego.com/p/ep114-7-must-know-strategies-to-scale', 'Estrategias para escalar una BD', PERSISTENCY_ADVANCED_KEY, 'Escalamiento', '2024/06/07')],
-    [PERSISTENCY_ADVANCED_WAL, new Referencia('https://medium.com/@vinciabhinav7/write-ahead-logs-but-why-494c3efd722d', 'Registros de escritura anticipada (WAL)', PERSISTENCY_ADVANCED_KEY, 'WAL', '2024/06/15').addRelatedItem(Keys.META_CARACTERISTICAS_META_DATOS).addRelatedItem(PERSISTENCY_DBMS)],
+    [PERSISTENCY_ADVANCED_WAL, new Referencia('https://medium.com/@vinciabhinav7/write-ahead-logs-but-why-494c3efd722d', 'Registros de escritura anticipada (WAL)', PERSISTENCY_ADVANCED_KEY, 'WAL', '2024/06/15').addRelatedItem(Keys.META_CARACTERISTICAS_META_DATOS).addRelatedItem(Keys.PERSISTENCY_DBMS)],
     [PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS, new Referencia('https://rakyll.medium.com/things-i-wished-more-developers-knew-about-databases-2d0178464f78', 'Problemas desconocidos', PERSISTENCY_ADVANCED_KEY, 'Problemas deconocidos', '2024/10/06').addRelatedItem(NUBE_FALACIES_DYSTRIBUTED_SYSTEMS)],
     [PERSISTENCY_ADVANCED_PARTITIONING, new Referencia('https://medium.com/@imnazimuddinasif/a-practical-overview-of-database-partitioning-59e8e318142b', 'Particiones', PERSISTENCY_ADVANCED_KEY, 'Particiones', '2024/10/07')],
     [PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL, new Referencia('https://newsletter.systemdesigncodex.com/p/eventual-consistency-is-tricky', 'Consistencia Eventual', PERSISTENCY_ADVANCED_KEY, 'Consistencia Eventual', '2024/10/27')],
