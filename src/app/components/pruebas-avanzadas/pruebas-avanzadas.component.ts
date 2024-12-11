@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { PRUEBAS_AVANZADAS } from 'src/app/models/content/content2';
-import { AGILES_KEY, ARQUITECTURAS_KEY, ESTRATEGIAS_DESARROLLO_KEY, LinkReferencia, REQUISITOS_KEY, TESTING_ADVANCED, TESTING_KEY }
+import { TESTING_ADVANCED } from 'src/app/models/content/content2';
+import { AGILES_KEY, ARQUITECTURAS_KEY, ESTRATEGIAS_DESARROLLO_KEY, LinkReferencia, REQUISITOS_KEY, TESTING_ADVANCED_REF, TESTING_KEY }
 from 'src/app/models/linkReferencia';
 
 @Component({
@@ -9,15 +9,15 @@ from 'src/app/models/linkReferencia';
 })
 export class PruebasAvanzadasComponent implements OnInit {
 
-  items = PRUEBAS_AVANZADAS;
+  items = TESTING_ADVANCED;
 
-  components = TESTING_ADVANCED;
+  components = TESTING_ADVANCED_REF;
   
   itemStart = '';
 
   relatedSections = new Map<string, string>([]);
 
-  tittles = new Map([ ...TESTING_ADVANCED ].map(([key, { tittleShort }]) => [key, tittleShort]));
+  tittles = new Map([ ...TESTING_ADVANCED_REF ].map(([key, { tittleShort }]) => [key, tittleShort]));
 
   ngOnInit(): void {
     this.itemStart = history?.state?.newItem;

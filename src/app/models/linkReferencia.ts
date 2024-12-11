@@ -11,7 +11,7 @@ export class LinkReferencia {
         ...MALAS_PRACTICAS_REF,  ...META_CARATERISTICAS_REF,  ...META_ESTRUCTURAS_REF,
         ...METODOLOGIAS_REF,     ...NUBE_REF,                 ...ANALISIS_DATA_REF,
         ...PARADIGMAS_REF,       ...PATRONES_REF,             ...PEOPLE_REF,  
-        ...POO_REF,              ...TESTING_REF,              ...TESTING_ADVANCED,
+        ...POO_REF,              ...TESTING_REF,              ...TESTING_ADVANCED_REF,
         ...REFACTORING_REF,      ...REQUISITOS_REF,           ...PRINCIPIOS_REF,
         ...SECURITY_REF,         ...SMELL_CODES_REF,          ...PERSISTENCY_REF,
         ...UML_REF,              ...VERSIONAMIENTO_REF,       ...HARDWARE_REF,
@@ -72,10 +72,6 @@ export const PARADIGMAS_PARADIGMA_DATOS = 'paradigmaDatos';
 export const CONOCIMIENTOS_EMPIRICOS_PAIR_PROGRAMMING = 'pairPrograming';
 export const CONOCIMIENTOS_EMPIRICOS_STAGES_COMPETENCE_MODEL = 'stagesCompetenceModel';
 export const CONOCIMIENTOS_EMPIRICOS_EXPIERENCE_LESSONS = 'expierenceLessons';
-export const PEOPLE_GESTION_EXPECTATIVAS = 'gestionDeExpectativas';
-export const PEOPLE_NO_NEWS_GOOD_NEWS = 'noNewsGoodNews';
-export const PEOPLE_PROCESS_BLOAT = 'processBloat';
-export const PEOPLE_TRIANGLES_SUCCESS = 'TrianglesOfSuccess';
 export const METODOLOGIAS_AGILES = 'agiles';
 export const METODOLOGIAS_MODEL_BING_BANG = 'metodologiaBingBang';
 export const METODOLOGIAS_MODEL_V = 'metodologiaModelV';
@@ -114,17 +110,6 @@ export const ANALISIS_DATA_BATCH_VS_STREAM = 'batchVsStreamProcessing';
 export const ANALISIS_DATA_OLAP_OLTP = 'OLAPVsOLTP';
 export const ANALISIS_DATA_DEDUPLICATION = 'deduplication';
 export const GIT_REBASE_MERGE_SQUASH = 'rebaseMergeSquash';
-export const COMPILACION_GRAFOS = 'grafos';
-export const COMPILACION_AOT = 'compilacionAnticipadaAOT';
-export const COMPILACION_DUCK_TYPING = 'duckTyping';
-export const COMPILACION_STREAMS = 'streams';
-export const COMPILACION_DECOMPILE = 'decompile';
-export const COMPILACION_INSTRUMENTS = 'instruments';
-export const COMPILACION_OBJECT_CREATION = 'objectCreation';
-export const TESTING_DATA_SUT_DOC = 'sut&Doc';
-export const TESTING_MOCKS = 'mocks';
-export const TESTING_DATA_CREATION = 'creationDataTesting';
-export const TESTING_ADVANCED_ANTI_PATTERNS = 'tdd-antipatterns';
 export const PRINCIPIOS_SOLID = 'SOLID';
 export const PRINCIPIOS_KISS = 'KISS';
 export const PRINCIPIOS_DRY = 'DRY';
@@ -132,12 +117,6 @@ export const CD_CI_CD_CI = 'cd-ci';
 export const CD_CI_CELL_BASED_ARQUITECTURE = 'cellBasedArquitecture';
 export const WEB_SEO = 'seo';
 export const WEB_GOLDEN_SIGNALS = 'goldenSignals';
-export const REQUISITOS_BUSINESS_VALUE = 'valorNegocio';
-export const REQUISITOS_AMBIGUITY = 'ambiguedad';
-export const REQUISITOS_REQUIREMENTS_ENGINEERING = 'requirementsEngineering';
-export const USER_HISTORIES_SMART = 'smart';
-export const USER_HISTORIES_FORMATS = 'historiesFormats';
-export const USER_HISTORIES_ESTIMATIONS = 'historiasEstimacionAgil';
 
 export const LAST_ITEM = Keys.ANALISIS_LIGHT_EVENTS_VS_RICH_EVENTS;
 
@@ -182,7 +161,7 @@ export const ANALISIS_REF = new Map<string, Referencia>([
     ['declineDesign', new Referencia('https://uxdesign.cc/the-decline-in-design-thinking-8fd0145fb4d2', 'Declive del diseño', ANALISIS_KEY, 'Declive del Diseño', '2023/07/23')],
     ['opinionated-no', new Referencia('https://www.baeldung.com/cs/opinionated-software-design', 'Diseño con & sin opiniones', ANALISIS_KEY, 'Diseño con/sin opiniones', '2023/11/11')],
     ['codingEasyPart', new Referencia('https://swizec.com/blog/coding-is-the-easy-part/', 'Codificar es la parte facil', ANALISIS_KEY, 'Codificar es facil', '2023/12/11')],
-    [Keys.ANALISIS_ALGORITHMS, new Referencia('https://medium.com/@zgokceaynaci/a-journey-through-the-world-of-algorithms-554bfffcee97', 'Algoritmos', ANALISIS_KEY, 'Algoritmos', '2024/07/27').addRelatedItem(COMPILACION_GRAFOS).addRelatedItem(Keys.META_CARACTERISTICAS_BACKTRACKING)],
+    [Keys.ANALISIS_ALGORITHMS, new Referencia('https://medium.com/@zgokceaynaci/a-journey-through-the-world-of-algorithms-554bfffcee97', 'Algoritmos', ANALISIS_KEY, 'Algoritmos', '2024/07/27').addRelatedItem(Keys.COMPILACION_GRAFOS).addRelatedItem(Keys.META_CARACTERISTICAS_BACKTRACKING)],
     [Keys.ANALISIS_QUEUES_SYSTEM_DESIGN, new Referencia('https://levelup.gitconnected.com/message-queues-in-system-design-0440a1221023', 'Message Queues in System Design', ANALISIS_KEY, 'Message Queues', '2024/09/01').addRelatedItem(META_ESTRUCTURAS_ESTRUCTURAS_DATOS_2).addRelatedItem(APIS_REST_VS_MESSAGING)],
     [Keys.ANALISIS_HIGH_LEVEL_VS_LOW_LEVEL, new Referencia('https://www.baeldung.com/cs/hld-lld', 'High Level Vs Low Level', ANALISIS_KEY, 'High Level Vs Low Level', '2024/09/20').addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_SLDC).addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_DDD).addRelatedItem(Keys.PERSISTENCY_ERD)],
     [Keys.ANALISIS_SYSTEM_DESIGN_CONCEPTS, new Referencia('https://www.linkedin.com/posts/brijpandeyji_top-12-system-design-concepts-every-developer-activity-7238729739065069568-h1t6/', 'Design System Concepts', ANALISIS_KEY, 'Design System Concepts', '2024/09/29')],
@@ -268,22 +247,22 @@ export const COMPILACION_REF = new Map<string, Referencia>([
     ['coercion', new Referencia('https://developer.mozilla.org/es/docs/Glossary/Type_coercion', 'Coerción', COMPILACION_KEY, 'Coerción')],
     ['ofuscacion', new Referencia('https://www.azulweb.net/ofuscacion-de-codigo-antipatron-o-buena-practica/', 'Ofuscación', COMPILACION_KEY, 'Ofuscación')],
     ['treeShaking', new Referencia('https://developer.mozilla.org/en-US/docs/Glossary/Tree_shaking', 'TreeShaking', COMPILACION_KEY, 'Tree Shaking')],
-    [COMPILACION_GRAFOS, new Referencia('https://www.grapheverywhere.com/grafos-que-son-tipos-orden-y-herramientas-de-visualizacion/', 'Grafos', COMPILACION_KEY, 'Grafos')],
+    [Keys.COMPILACION_GRAFOS, new Referencia('https://www.grapheverywhere.com/grafos-que-son-tipos-orden-y-herramientas-de-visualizacion/', 'Grafos', COMPILACION_KEY, 'Grafos')],
     //['compilacionAnticipada', new Referencia('https://hmong.es/wiki/Ahead-of-time_compilation', 'Compilación AOT', COMPILACION_KEY, 'Compilación anticipada')],
-    [COMPILACION_AOT, new Referencia('https://www.ibm.com/docs/es/sdk-java-technology/8?topic=reference-aot-compiler', 'Compilación AOT', COMPILACION_KEY, 'Compilación anticipada', '', '2024/11/23')],
+    [Keys.COMPILACION_AOT, new Referencia('https://www.ibm.com/docs/es/sdk-java-technology/8?topic=reference-aot-compiler', 'Compilación AOT', COMPILACION_KEY, 'Compilación anticipada', '', '2024/11/23')],
     //['duckTyping', new Referencia('https://towardsdatascience.com/duck-typing-python-7aeac97e11f8', 'Duck Typing', COMPILACION_KEY, 'Duck Typing')],
-    [COMPILACION_DUCK_TYPING, new Referencia('https://devopedia.org/duck-typing', 'Duck Typing', COMPILACION_KEY, 'Duck Typing', '', '2024/11/23')],
+    [Keys.COMPILACION_DUCK_TYPING, new Referencia('https://devopedia.org/duck-typing', 'Duck Typing', COMPILACION_KEY, 'Duck Typing', '', '2024/11/23')],
     ['sdkVsApi', new Referencia('https://geekflare.com/es/sdk-and-api-comparison/', 'SDK vs API', COMPILACION_KEY, 'SDK vs API')],
     ['casting', new Referencia('https://www.w3schools.com/java/java_type_casting.asp', 'Casting', COMPILACION_KEY, 'Casteo de Datos')],
-    ['verbosity', new Referencia('https://softwareengineering.stackexchange.com/questions/141175/why-is-verbosity-bad-for-a-programming-language', 'Verbosidad', COMPILACION_KEY, 'Verbosidad', '2023/03/31')],
+    [Keys.COMPILACION_VERBOSITY, new Referencia('https://softwareengineering.stackexchange.com/questions/141175/why-is-verbosity-bad-for-a-programming-language', 'Verbosidad', COMPILACION_KEY, 'Verbosidad', '2023/03/31')],
     ['tipoLenguajeProposito', new Referencia('https://ed.team/blog/como-se-clasifican-los-lenguajes-de-programacion', 'Tipos de lenguajes por proposito', COMPILACION_KEY, 'Proposito', '2023/11/09')],
-    ['automatas', new Referencia('https://medium.com/@maniakhitoccori/qu%C3%A9-es-un-aut%C3%B3mata-fbf309138755', 'Automatas', COMPILACION_KEY, 'Automatas', '2024/02/19')],
-    ['estructuraCompilador', new Referencia('https://vicente-aguilera-perez.medium.com/estructura-general-de-un-compilador-df97892f91c3', 'Estructura de un compilador I', COMPILACION_KEY, 'Estructura general I', '2024/02/28')],
-    ['elementosCompilador', new Referencia('https://vicente-aguilera-perez.medium.com/estructura-general-de-un-compilador-df97892f91c3', 'Estructura de un compilador II', COMPILACION_KEY, 'Estructura general II', '2024/02/28')],
-    [COMPILACION_STREAMS, new Referencia('https://medium.com/javarevisited/best-practices-for-using-java-stream-f0f7585f13ba', 'Streams', COMPILACION_KEY, 'Streams', '2024/06/29').addRelatedItem(Keys.POO_INMUTABILITY)],
-    [COMPILACION_DECOMPILE, new Referencia('https://www.techtarget.com/whatis/definition/decompile', 'Descompilar', COMPILACION_KEY, 'Descompilar', '2024/07/21').addRelatedItem(ANALISIS_DATA_REVERSE_ENGINEERING)],
-    [COMPILACION_INSTRUMENTS, new Referencia('https://foojay.io/today/who-instruments-the-instrumenters/', 'Instrumentos', COMPILACION_KEY, 'Instrumentos', '2024/08/18').addRelatedItem(FRAMEWORKS_FRAMEWORKS).addRelatedItem(TESTING_MOCKS)],
-    [COMPILACION_OBJECT_CREATION, new Referencia('https://medium.com/technology-hits/minimizing-object-creation-for-high-performance-java-applications-553f9c9278c1', 'Creacion de Objetos', COMPILACION_KEY, 'Objetos', '2024/11/23').addRelatedItem(Keys.PATRONES_DESGLOSE_GOF)]
+    [Keys.COMPILACION_AUTOMATAS, new Referencia('https://medium.com/@maniakhitoccori/qu%C3%A9-es-un-aut%C3%B3mata-fbf309138755', 'Automatas', COMPILACION_KEY, 'Automatas', '2024/02/19')],
+    [Keys.COMPILACION_STRUCTURE_COMPILATOR, new Referencia('https://vicente-aguilera-perez.medium.com/estructura-general-de-un-compilador-df97892f91c3', 'Estructura de un compilador I', COMPILACION_KEY, 'Estructura general I', '2024/02/28')],
+    [Keys.COMPILACION_ELEMENTS_COMPILATOR, new Referencia('https://vicente-aguilera-perez.medium.com/estructura-general-de-un-compilador-df97892f91c3', 'Estructura de un compilador II', COMPILACION_KEY, 'Estructura general II', '2024/02/28')],
+    [Keys.COMPILACION_STREAMS, new Referencia('https://medium.com/javarevisited/best-practices-for-using-java-stream-f0f7585f13ba', 'Streams', COMPILACION_KEY, 'Streams', '2024/06/29').addRelatedItem(Keys.POO_INMUTABILITY)],
+    [Keys.COMPILACION_DECOMPILE, new Referencia('https://www.techtarget.com/whatis/definition/decompile', 'Descompilar', COMPILACION_KEY, 'Descompilar', '2024/07/21').addRelatedItem(ANALISIS_DATA_REVERSE_ENGINEERING)],
+    [Keys.COMPILACION_INSTRUMENTS, new Referencia('https://foojay.io/today/who-instruments-the-instrumenters/', 'Instrumentos', COMPILACION_KEY, 'Instrumentos', '2024/08/18').addRelatedItem(FRAMEWORKS_FRAMEWORKS).addRelatedItem(Keys.TESTING_MOCKS)],
+    [Keys.COMPILACION_OBJECT_CREATION, new Referencia('https://medium.com/technology-hits/minimizing-object-creation-for-high-performance-java-applications-553f9c9278c1', 'Creacion de Objetos', COMPILACION_KEY, 'Objetos', '2024/11/23').addRelatedItem(Keys.PATRONES_DESGLOSE_GOF)]
 ]);
 
 export const CONOCIMIENTO_EMPIRICO_KEY = 'Empirico';
@@ -327,7 +306,7 @@ export const LEYES_REF = new Map<string, Referencia>([
     [LEYES_KIDLIN, new Referencia('https://www.linkedin.com/pulse/5-leyes-famosas-aplicadas-en-la-pmo-lourdes-medina-pfmp-pmp-pmo-cp-zv4ke/', 'Ley de Kidlin', LEYES_KEY, 'Ley de Kidlin', '2024/07/14').addRelatedItem(Keys.AGILES_DEMING)],
     [LEYES_GOODHARTS, new Referencia('https://levelup.gitconnected.com/9-laws-that-every-software-developer-should-know-a5518bfef022', 'Ley de Goodhart’s', LEYES_KEY, 'Ley de Goodhart’s', '2024/11/08')],
     [LEYES_LINUS, new Referencia('https://levelup.gitconnected.com/9-laws-that-every-software-developer-should-know-a5518bfef022', 'Ley de Linus', LEYES_KEY, 'Ley de Linus', '2024/11/09')],
-    [LEYES_HOFSTADTER, new Referencia('https://levelup.gitconnected.com/9-laws-that-every-software-developer-should-know-a5518bfef022', 'Ley de Hofstadter', LEYES_KEY, 'Ley de Hofstadter', '2024/11/10').addRelatedItem(PEOPLE_GESTION_EXPECTATIVAS)],
+    [LEYES_HOFSTADTER, new Referencia('https://levelup.gitconnected.com/9-laws-that-every-software-developer-should-know-a5518bfef022', 'Ley de Hofstadter', LEYES_KEY, 'Ley de Hofstadter', '2024/11/10').addRelatedItem(Keys.PEOPLE_GESTION_EXPECTATIVAS)],
 ]);
 
 export const CONTENEDORES_KEY = 'Contenedores';
@@ -401,14 +380,14 @@ export const USER_HISTORIES = new Map<string, Referencia>([
     ['partes', new Referencia('https://apiumhub.com/es/tech-blog-barcelona/como-escribir-buenas-historias-de-usuario/', 'Partes de una HU', USER_HISTORIES_KEY, 'Partes')],
     ['invest', new Referencia('https://apiumhub.com/es/tech-blog-barcelona/como-escribir-buenas-historias-de-usuario/', 'Criterio INVEST', USER_HISTORIES_KEY, 'INVEST')],
     //['smart', new Referencia('https://beagilemyfriend.com/historias-de-usuario-invest-smart/', 'Criterio SMART', USER_HISTORIES_KEY, 'SMART')],
-    [USER_HISTORIES_SMART, new Referencia('https://asana.com/es/resources/smart-goals', 'Criterio SMART', USER_HISTORIES_KEY, 'SMART', '', '2024/09/28')],
-    ['3c', new Referencia('https://julibetancur.blog/tag/tres-c/', 'Card-Conversación-Confirmación', USER_HISTORIES_KEY, 'Las 3 C')],
+    [Keys.USER_HISTORIES_SMART, new Referencia('https://asana.com/es/resources/smart-goals', 'Criterio SMART', USER_HISTORIES_KEY, 'SMART', '', '2024/09/28')],
+    [Keys.USER_HISTORIES_3C, new Referencia('https://julibetancur.blog/tag/tres-c/', 'Card-Conversación-Confirmación', USER_HISTORIES_KEY, 'Las 3 C')],
     ['gherkin', new Referencia('https://blog.thiga.co/es/gherkin/', 'Definición de los criterios de aceptación', USER_HISTORIES_KEY, 'Gherkin')],
     ['descomposicionHU', new Referencia('https://www.javiergarzas.com/2012/05/descomponer-historias-de-usuario-en-tareas-1.html', 'Descomposición en tareas', USER_HISTORIES_KEY, 'Descomposición')],
     ['storyPoints', new Referencia('https://ronjeffries.com/articles/019-01ff/story-points/Index.html', 'Puntos de Historia', USER_HISTORIES_KEY, 'Puntos')],
     ['casosVsRequisitosVsHu', new Referencia('http://www.angellozano.com/requisitos-del-sistema-vs-casos-uso-vs-historias-usuario/', 'HU Vs Casos de uso', USER_HISTORIES_KEY, 'Hu Vs Casos de Uso')],
-    [USER_HISTORIES_FORMATS, new Referencia('https://www.linkedin.com/posts/jgarzas_agilidad-bdd-hdd-activity-7178798486358802434-ZK5i/', 'HU Formatos alternativos', USER_HISTORIES_KEY, 'Formatos alternativos', '2024/04/28')],
-    [USER_HISTORIES_ESTIMATIONS, new Referencia('https://www.linkedin.com/posts/jgarzas_las-3-familias-de-estimacion-agil-javier-activity-7231351751667310592-To3O/', 'Estimación Agil', USER_HISTORIES_KEY, 'Estimación Agil', '2024/09/28')],
+    [Keys.USER_HISTORIES_FORMATS, new Referencia('https://www.linkedin.com/posts/jgarzas_agilidad-bdd-hdd-activity-7178798486358802434-ZK5i/', 'HU Formatos alternativos', USER_HISTORIES_KEY, 'Formatos alternativos', '2024/04/28')],
+    [Keys.USER_HISTORIES_ESTIMATIONS, new Referencia('https://www.linkedin.com/posts/jgarzas_las-3-familias-de-estimacion-agil-javier-activity-7231351751667310592-To3O/', 'Estimación Agil', USER_HISTORIES_KEY, 'Estimación Agil', '2024/09/28')],
 ]);
 
 export const MALAS_PRACTICAS_KEY = 'Malas-Practicas';
@@ -423,7 +402,7 @@ export const MALAS_PRACTICAS_REF = new Map<string, Referencia>([
     [Keys.MALAS_PRACTICAS_ANTI_PATRONES_ARQUITECTURAS, new Referencia('https://lab.scub.net/architecture-anti-patterns-the-dark-side-of-the-architect-d9265b52d997', 'Anti patrones en Arquitecturas', MALAS_PRACTICAS_KEY, 'Contra Arquitecturas', '2024/09/07')],
     ['anemicDomain', new Referencia('https://martinfowler.com/bliki/AnemicDomainModel.html', 'Dominio Anemico', MALAS_PRACTICAS_KEY, 'Dominio Anemico', '2024/05/08').addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_DDD)],
     [Keys.MALAS_PRACTICAS_TRAIN_WECKS, new Referencia('https://www.thinkcode.se/blog/2011/12/30/how-many-train-wrecks-are-lurking-in-your-code', 'Accidentes de trenes', MALAS_PRACTICAS_KEY, 'Accidentes de trenes', '2024/05/22', '2024/10/12').addRelatedItem(Keys.BUENAS_PRACTICAS_DEMETER).addRelatedItem(Keys.POO_POO_PILARES)],
-    [Keys.MALAS_PRACTICAS_DEFAULT_MICROSERVICES, new Referencia('https://levelup.gitconnected.com/why-you-should-never-default-to-microservices-c952903fbcb6', 'Microservicios por defecto', MALAS_PRACTICAS_KEY, 'Microservicios por defecto', '2024/10/12').addRelatedItem(TESTING_MOCKS).addRelatedItem(APIS_REST_VS_MESSAGING)],
+    [Keys.MALAS_PRACTICAS_DEFAULT_MICROSERVICES, new Referencia('https://levelup.gitconnected.com/why-you-should-never-default-to-microservices-c952903fbcb6', 'Microservicios por defecto', MALAS_PRACTICAS_KEY, 'Microservicios por defecto', '2024/10/12').addRelatedItem(Keys.TESTING_MOCKS).addRelatedItem(APIS_REST_VS_MESSAGING)],
 ]);
 
 export const META_CARACTERISTICAS_KEY = 'Meta-Caracteristicas';
@@ -602,9 +581,9 @@ export const PEOPLE_REF = new Map<string, Referencia>([
     ['gestionDeActivos', new Referencia('https://freshservice.com/latam/it-asset-management-software/', 'Gestión de activos', PEOPLE_KEY, 'Gestión de activos')],
     ['fidelizacion', new Referencia('https://elviajedelcliente.com/fidelizacion-de-clientes/', 'Fidelización de los clientes', PEOPLE_KEY, 'Fidelizacion')],
     ['modeloDIKW', new Referencia('https://programmerclick.com/article/46021807934/', 'Datos-Info-Conocimiento-Sabiduría', PEOPLE_KEY, 'Modelo DIKW')],
-    [PEOPLE_GESTION_EXPECTATIVAS, new Referencia('https://brainsandbeards.com/blog/expectation-management', 'Gestion de expectativas', PEOPLE_KEY, 'Gestion de expectativas')],
+    [Keys.PEOPLE_GESTION_EXPECTATIVAS, new Referencia('https://brainsandbeards.com/blog/expectation-management', 'Gestion de expectativas', PEOPLE_KEY, 'Gestion de expectativas')],
     ['capa8', new Referencia('https://www.merca20.com/que-es-un-error-de-capa-8-y-como-evitas-que-arruine-tu-marketing/', 'Capa 8', PEOPLE_KEY, 'Error en capa 8')],
-    [PEOPLE_NO_NEWS_GOOD_NEWS, new Referencia('https://blog.carreralinux.com.ar/2020/05/si-no-hay-noticias-son-buenas-noticias-no-news-good-news/', 'Sin noticias, Son buenas noticias', PEOPLE_KEY, 'No News Good News')],
+    [Keys.PEOPLE_NO_NEWS_GOOD_NEWS, new Referencia('https://blog.carreralinux.com.ar/2020/05/si-no-hay-noticias-son-buenas-noticias-no-news-good-news/', 'Sin noticias, Son buenas noticias', PEOPLE_KEY, 'No News Good News')],
     ['tiposHackers', new Referencia('https://www.freecodecamp.org/news/white-hat-black-hat-red-hat-hackers/', 'Tipos de Hackers (sombreros)', PEOPLE_KEY, 'Tipos de Hackers')],
     ['sindromesLaborales', new Referencia('https://www.sage.com/es-es/blog/burnout-procusto-y-otros-14-sindromes-tipicos-del-mundo-empresarial/#gate-263a5c00-99e4-4e71-8421-469deda8e674', 'Sindromes laborales', PEOPLE_KEY, 'Sindromes Laborales', '2023/06/26')],
     ['icebergIgnorance', new Referencia('https://prevencontrol.com/prevenblog/y-tu-cuanto-sabes-acerca-de-lo-que-ocurre-en-tu-organizacion/', 'Iceberg de la Ignorancia', PEOPLE_KEY, 'Iceberg de la Ignorancia', '2023/08/04')],
@@ -612,8 +591,8 @@ export const PEOPLE_REF = new Map<string, Referencia>([
     ['hippoEfect', new Referencia('https://www.forbes.com/sites/bernardmarr/2017/10/26/data-driven-decision-making-beware-of-the-hippo-effect/?sh=4106860c80f9', 'Efecto HIPPO', PEOPLE_KEY, 'Efecto H.I.P.P.O', '2023/11/06')],
     ['burnout', new Referencia('https://chubernetes.com/navigating-tech-industry-burnout-03c015337ba0', 'Sindrome de Burnout', PEOPLE_KEY, 'Burnout', '2024/04/21')],
     ['ona', new Referencia('https://www.linkedin.com/posts/jgarzas_an%C3%A1lisis-de-redes-organizacionales-ona-activity-7185677261528842240-EQvR/', 'Analisis de Redes Organizacionales', PEOPLE_KEY, 'ONA', '2024/04/22')],
-    [PEOPLE_PROCESS_BLOAT, new Referencia('https://ardalis.com/process-bloat-silent-killer-developer-productivity/', 'Hinchazon de procesos', PEOPLE_KEY, 'Process Bloat', '2024/06/01').addRelatedItem(LEYES_LEHMAN).addRelatedItem(METODOLOGIAS_LEAN).addRelatedItem(METODOLOGIAS_AGILES)],
-    [PEOPLE_TRIANGLES_SUCCESS, new Referencia('https://www.entrepreneur.com/growing-a-business/the-triangles-of-success-are-more-than-a-good-laugh/279979', 'Triangulos del exito', PEOPLE_KEY, 'Triangulos del exito', '2024/11/21')],
+    [Keys.PEOPLE_PROCESS_BLOAT, new Referencia('https://ardalis.com/process-bloat-silent-killer-developer-productivity/', 'Hinchazon de procesos', PEOPLE_KEY, 'Process Bloat', '2024/06/01').addRelatedItem(LEYES_LEHMAN).addRelatedItem(METODOLOGIAS_LEAN).addRelatedItem(METODOLOGIAS_AGILES)],
+    [Keys.PEOPLE_TRIANGLES_SUCCESS, new Referencia('https://www.entrepreneur.com/growing-a-business/the-triangles-of-success-are-more-than-a-good-laugh/279979', 'Triangulos del exito', PEOPLE_KEY, 'Triangulos del exito', '2024/11/21')],
 ]);
 
 export const POO_KEY = 'POO';
@@ -650,8 +629,8 @@ export const TESTING_REF = new Map<string, Referencia>([
     ['beneficios', new Referencia('https://platzi.com/blog/testing-ventajas-formas-de-realizar-pruebas/', 'Beneficios del testing', TESTING_KEY, 'Beneficios')],
     ['nombramiento', new Referencia('https://www.petrikainulainen.net/programming/testing/writing-clean-tests-naming-matters/', 'Nombramiento de los componentes', TESTING_KEY, 'Nombramiento')],
     ['first', new Referencia('https://www.paradigmadigital.com/dev/principio-first-aumentar-la-calidad-tests-unitarios/', 'Principio FIRST', TESTING_KEY, 'Principio FIRST')],
-    [TESTING_DATA_SUT_DOC, new Referencia('https://www.javiergarzas.com/2015/09/que-estoy-probando-y-cuales-son-mis-dependencias-en-testing.html', 'SUT & DOC', TESTING_KEY, 'SUT & DOC', '', '2024/07/14')],
-    [TESTING_MOCKS, new Referencia('https://www.codurance.com/publications/2019/04/08/introduction-to-test-doubles', 'Mocks', TESTING_KEY, 'Mocks')],
+    [Keys.TESTING_DATA_SUT_DOC, new Referencia('https://www.javiergarzas.com/2015/09/que-estoy-probando-y-cuales-son-mis-dependencias-en-testing.html', 'SUT & DOC', TESTING_KEY, 'SUT & DOC', '', '2024/07/14')],
+    [Keys.TESTING_MOCKS, new Referencia('https://www.codurance.com/publications/2019/04/08/introduction-to-test-doubles', 'Mocks', TESTING_KEY, 'Mocks')],
     //['aaa', new Referencia('http://oscarmoreno.com/pruebas-unitarias/', 'Arrange-Act-Assert', TESTING_KEY, 'AAA')],
     ['aaa', new Referencia('https://medium.com/@rojasjimenezjosea/aaa-unit-testing-688e3e61902a', 'Arrange-Act-Assert', TESTING_KEY, 'AAA', '', '2024/07/11')],
     ['gwt', new Referencia('https://softwareengineering.stackexchange.com/questions/308160/differences-between-given-when-then-gwt-and-arrange-act-assert-aaa', 'Given-When-Then', TESTING_KEY, 'GWT')],
@@ -661,11 +640,11 @@ export const TESTING_REF = new Map<string, Referencia>([
     //['falsos', new Referencia('https://www.qalovers.com/2015/03/diferencia-entre-falso-positivo-y-falso_5.html#:~:text=La%20definici%C3%B3n%20de%20falso%20negativo,sistema%20que%20est%C3%A1%20realmente%20infectada.%22&text=Un%20falso%20negativo%20llevado%20a,cuando%20en%20realidad%20est%C3%A1%20fallando.', 'Falsos positivos & Falsos negativos', TESTING_KEY, 'Falsos Resultados')],
     ['falsos', new Referencia('https://www.redradix.com/insights/detalles-implementacionl-tests-articulo-de-kentc-dodds', 'Falsos positivos & Falsos negativos', TESTING_KEY, 'Falsos Resultados')],
     ['QAperson', new Referencia('https://www.bbvaapimarket.com/es/mundo-api/que-es-qa-y-por-que-no-debe-faltar-en-tu-proyecto/', '¿ Que es QA ?', TESTING_KEY, 'Quality Analisis')],
-    [TESTING_DATA_CREATION, new Referencia('https://www.linkedin.com/pulse/creating-test-data-object-mother-builder-patterns-alves-pimenta/', 'Patrones de creación de datos', TESTING_KEY, 'Creación de datos', '2024/07/11')],
+    [Keys.TESTING_DATA_CREATION, new Referencia('https://www.linkedin.com/pulse/creating-test-data-object-mother-builder-patterns-alves-pimenta/', 'Patrones de creación de datos', TESTING_KEY, 'Creación de datos', '2024/07/11')],
 ]);
 
 export const TESTING_ADVANCED_KEY = 'Testing-Avanzado';
-export const TESTING_ADVANCED = new Map<string, Referencia>([
+export const TESTING_ADVANCED_REF = new Map<string, Referencia>([
     ['cajaNegraBlanca', new Referencia('https://www.testermoderno.com/caja-blanca-vs-caja-negra/', 'Tests de Caja negra & Caja blanca', TESTING_ADVANCED_KEY, 'Caja Negra & Blanca')],
     //['valorLimite', new Referencia('https://educandocontic.com/valores-limite-pruebas/', 'Valores limite', TESTING_ADVANCED_KEY, 'Valores Limites')],
     ['valorLimite', new Referencia('https://www.linkedin.com/pulse/an%C3%A1lisis-de-valores-l%C3%ADmite-asegurando-la-calidad-en-los-oscar-trejo-taeff/', 'Valores limite', TESTING_ADVANCED_KEY, 'Valores Limites', '', '2024/07/14')],
@@ -676,10 +655,10 @@ export const TESTING_ADVANCED = new Map<string, Referencia>([
     ['outsideInside', new Referencia('https://www.adictosaltrabajo.com/2016/01/29/tdd-outside-in-vs-inside-out/', 'TDD: Outside-In VS Inside-out', TESTING_ADVANCED_KEY, 'Outside & Inside', '', '2024/07/14').addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_TDD)],
     ['casosDePruebas', new Referencia('https://medium.com/grupo-carricay/qu%C3%A9-son-los-casos-de-pruebas-4893799b5b84', 'Casos de prueba', TESTING_ADVANCED_KEY, 'Casos de prueba')],
     ['casosDeUso', new Referencia('https://blogs.encamina.com/piensa-en-software-desarrolla-en-colores/qa-caso-de-uso-vs-caso-de-prueba/', 'Casos de uso', TESTING_ADVANCED_KEY, 'Casos de uso')],
-    ['codeSmellsTests1', new Referencia('https://codingcraftsman.wordpress.com/2018/09/27/test-smells/', 'Smells codes en testing #1', TESTING_ADVANCED_KEY, 'Code smells en testing #1')],
-    ['codeSmellsTests2', new Referencia('https://codingcraftsman.wordpress.com/2018/09/27/test-smells/', 'Smells codes en testing #2', TESTING_ADVANCED_KEY, 'Code smells en testing #2')],
-    ['mutation', new Referencia('https://spa.myservername.com/what-is-mutation-testing', 'Tests de mutación', TESTING_ADVANCED_KEY, 'Pruebas de mutación')],
-    [TESTING_ADVANCED_ANTI_PATTERNS, new Referencia('https://agileinaflash.blogspot.com/2009/06/tdd-antipatterns.html', 'TDD Antipatrones', TESTING_ADVANCED_KEY, 'TDD Antipatrones', '2024/07/14').addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_TDD).addRelatedItem(TESTING_DATA_SUT_DOC)]
+    [Keys.TESTING_ADVANCED_SMELLS_CODES1, new Referencia('https://codingcraftsman.wordpress.com/2018/09/27/test-smells/', 'Smells codes en testing #1', TESTING_ADVANCED_KEY, 'Code smells en testing #1')],
+    [Keys.TESTING_ADVANCED_SMELLS_CODES2, new Referencia('https://codingcraftsman.wordpress.com/2018/09/27/test-smells/', 'Smells codes en testing #2', TESTING_ADVANCED_KEY, 'Code smells en testing #2')],
+    [Keys.TESTING_ADVANCED_MUTATION, new Referencia('https://spa.myservername.com/what-is-mutation-testing', 'Tests de mutación', TESTING_ADVANCED_KEY, 'Pruebas de mutación')],
+    [Keys.TESTING_ADVANCED_ANTI_PATTERNS, new Referencia('https://agileinaflash.blogspot.com/2009/06/tdd-antipatterns.html', 'TDD Antipatrones', TESTING_ADVANCED_KEY, 'TDD Antipatrones', '2024/07/14').addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_TDD).addRelatedItem(Keys.TESTING_DATA_SUT_DOC)]
 ]);
 
 export const REFACTORING_KEY = 'Refactorizacion';
@@ -703,14 +682,14 @@ export const REQUISITOS_REF = new Map<string, Referencia>([
     ['funcionales', new Referencia('https://medium.com/@requeridosblog/requerimientos-funcionales-y-no-funcionales-ejemplos-y-tips-aa31cb59b22a', 'Requisitos funcionales', REQUISITOS_KEY, 'Funcionales')],
     ['NOfuncionales', new Referencia('https://medium.com/@requeridosblog/requerimientos-funcionales-y-no-funcionales-ejemplos-y-tips-aa31cb59b22a', 'Requisitos No funcionales', REQUISITOS_KEY, 'NO Funcionales')],
     //['negocio', new Referencia('https://requeridos.com/que-es-el-valor-de-negocio-y-como-medirlo/', 'El valor del negocio', REQUISITOS_KEY, 'EL Negocio')],
-    [REQUISITOS_BUSINESS_VALUE, new Referencia('https://www.elproximopaso.net/2012/03/8-otra-maneras-de-definir-el-valor-de.html', 'El valor del negocio', REQUISITOS_KEY, 'EL Negocio', '', '2024/09/27')],
+    [Keys.REQUISITOS_BUSINESS_VALUE, new Referencia('https://www.elproximopaso.net/2012/03/8-otra-maneras-de-definir-el-valor-de.html', 'El valor del negocio', REQUISITOS_KEY, 'EL Negocio', '', '2024/09/27')],
     //['ambiguedad', new Referencia('https://requeridos.com/requerimientos-menos-es-mas/', 'Evitar la ambiguedad', REQUISITOS_KEY, 'Evitar la ambiguedad')],
-    [REQUISITOS_AMBIGUITY, new Referencia('https://www.blmovil.com/la-importancia-de-una-buena-captura-de-requisitos-en-el-desarrollo-de-software/', 'Evitar la ambiguedad', REQUISITOS_KEY, 'Evitar la ambiguedad', '2024/09/27')],
+    [Keys.REQUISITOS_AMBIGUITY, new Referencia('https://www.blmovil.com/la-importancia-de-una-buena-captura-de-requisitos-en-el-desarrollo-de-software/', 'Evitar la ambiguedad', REQUISITOS_KEY, 'Evitar la ambiguedad', '2024/09/27')],
     ['calidad', new Referencia('https://platzi.com/tutoriales/1248-pro-arquitectura/5498-atributos-de-calidad-de-un-producto-de-software/', 'Atributos de calidad', REQUISITOS_KEY, 'Atributos de calidad')],
-    ['tradeoff', new Referencia('https://medium.com/analysts-corner/those-other-requirements-quality-attributes-and-their-inescapable-tradeoffs-31dc0691974d', 'Sacrificios y ganancias', REQUISITOS_KEY, 'Trade-offs')],
-    ['objetivos', new Referencia('https://www.pqforce.com/es/blog/objetivos-frente-a-requisitos-cual-es-la-diferencia/', 'Objetivos & Requisitos', REQUISITOS_KEY, 'Objetivos & Requisitos')],
+    [Keys.REQUISITOS_TRADE_OFF, new Referencia('https://medium.com/analysts-corner/those-other-requirements-quality-attributes-and-their-inescapable-tradeoffs-31dc0691974d', 'Sacrificios y ganancias', REQUISITOS_KEY, 'Trade-offs')],
+    [Keys.REQUISITOS_OBJETIVOS, new Referencia('https://www.pqforce.com/es/blog/objetivos-frente-a-requisitos-cual-es-la-diferencia/', 'Objetivos & Requisitos', REQUISITOS_KEY, 'Objetivos & Requisitos')],
     ['cambioDeRequisitos', new Referencia('https://www.javiergarzas.com/2021/04/en-un-sistema-software-los-requisitos-casi-siempre-van-a-cambiar.html', 'Los requisitos cambian', REQUISITOS_KEY, 'Cambios', '2024/03/10')],
-    [REQUISITOS_REQUIREMENTS_ENGINEERING, new Referencia('https://xebrio.com/requirements-engineering/', 'Ingenieria y Toma de Requisitos', REQUISITOS_KEY, '¿ Como Tomarlos ?', '2024/09/27').addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_SLDC)],
+    [Keys.REQUISITOS_REQUIREMENTS_ENGINEERING, new Referencia('https://xebrio.com/requirements-engineering/', 'Ingenieria y Toma de Requisitos', REQUISITOS_KEY, '¿ Como Tomarlos ?', '2024/09/27').addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_SLDC)],
 ]);
 
 export const PRINCIPIOS_KEY = 'Principios';
@@ -779,7 +758,7 @@ export const PERSISTENCY_REF = new Map<string, Referencia>([
     ['indices', new Referencia('https://www.ibm.com/docs/es/mam/7.6.0.8?topic=databases-database-indexing', 'Indices', PERSISTENCY_KEY, 'Indices')],
     ['joins', new Referencia('https://ingenieriadesoftware.es/tipos-sql-join-guia-referencia/', 'Tipos de Joins', PERSISTENCY_KEY, 'Tipos de Joins')],
     ['constraints', new Referencia('https://www.w3schools.com/sql/sql_constraints.asp', 'Constraints', PERSISTENCY_KEY, 'Constraints', '2023/10/03')],
-    ['dbDesign', new Referencia('https://dzone.com/articles/what-is-good-database-design', 'Diseño de una BD', PERSISTENCY_KEY, 'Diseño', '2023/11/23')],
+    [Keys.PERSISTENCY_DB_DESIGN, new Referencia('https://dzone.com/articles/what-is-good-database-design', 'Diseño de una BD', PERSISTENCY_KEY, 'Diseño', '2023/11/23')],
     [Keys.PERSISTENCY_OPTIMIZE_SLOW_QUERIES, new Referencia('https://digma.ai/how-to-optimize-slow-sql-queries/', 'Optimización de consultas', PERSISTENCY_KEY, 'Optimización', '2024/06/09').addRelatedItem(PERSISTENCY_ADVANCED_ORM).addRelatedItem(PERSISTENCY_ADVANCED_N_1_SELECTS)],
     [Keys.PERSISTENCY_SCHEMAS, new Referencia('https://buttondown.email/jaffray/archive/in-codd-we-trust-or-not', 'Esquema Fisico Vs Esquema Logico', PERSISTENCY_KEY, 'Esquemas (Schema)', '2024/07/16')],
     [Keys.PERSISTENCY_HARD_SOFT_DELETE, new Referencia('https://surajsinghbisht054.medium.com/understanding-soft-delete-and-hard-delete-in-software-development-best-practices-and-importance-539a935d71b5', 'Borrado Fisico Vs Logico', PERSISTENCY_KEY, 'Hard/Soft Delete', '2024/08/10')],
@@ -822,8 +801,8 @@ export const UML_REF = new Map<string, Referencia>([
     ['paquetes', new Referencia('https://diagramasuml.com/paquetes/', 'Diagrama de paquetes', UML_KEY, 'De Paquetes')],
     ['estados', new Referencia('https://diagramasuml.com/estados/', 'Diagrama de estados', UML_KEY, 'De Estados')],
     ['vista', new Referencia('https://es.wikipedia.org/wiki/Modelo_de_Vistas_de_Arquitectura_4%2B1', 'Modelo 4+1 vistas', UML_KEY, '4+1 Vistas')],
-    ['tiposUml', new Referencia('https://www.microsoft.com/es-co/microsoft-365/business-insights-ideas/resources/guide-to-uml-diagramming-and-database-modeling#:~:text=El%20Lenguaje%20Unificado%20de%20Modelado,de%20un%20sistema%20o%20proceso.', 'Tipos de Diagramas', UML_KEY, 'Tipos de Diagramas')],
-    ['c4Model', new Referencia('https://towardsdev.com/how-to-visualize-your-system-architecture-using-the-c4-model-247bd718e914', 'Modelo C4', UML_KEY, 'C4')],
+    [Keys.UML_TYPES, new Referencia('https://www.microsoft.com/es-co/microsoft-365/business-insights-ideas/resources/guide-to-uml-diagramming-and-database-modeling', 'Tipos de Diagramas', UML_KEY, 'Tipos de Diagramas')],
+    [Keys.UML_MODEL_C4, new Referencia('https://towardsdev.com/how-to-visualize-your-system-architecture-using-the-c4-model-247bd718e914', 'Modelo C4', UML_KEY, 'Model C4')],
 ]);
 
 export const VERSIONAMIENTO_KEY = 'Versionamiento';
@@ -875,7 +854,7 @@ export const WEB_REF = new Map<string, Referencia>([
     ['menorSorpresa', new Referencia('https://www.linkedin.com/pulse/principle-least-surprise-incus-data-pty-ltd/', 'Menor Sorpresa', WEB_KEY, 'Menor Sorpresa')],
     ['microFrontened', new Referencia('https://newsletter.systemdesign.one/p/micro-frontends', 'Micro Frontends', WEB_KEY, 'Micro Frontends', '2024/03/07')],
     ['buenasPracticasFront', new Referencia('https://dev.to/emmanuelhills/best-practices-for-frontend-web-development-a-comprehensive-guide-27h0', 'Buenas practicas Desarrollo web', WEB_KEY, 'Buenas practicas', '2024/03/31')],
-    [WEB_GOLDEN_SIGNALS, new Referencia('https://www.groundcover.com/blog/4-golden-signals', 'Golden Signals', WEB_KEY, 'Golden Signals', '2024/09/22').addRelatedItem(HARDWARE_MONITOREO).addRelatedItem(PEOPLE_NO_NEWS_GOOD_NEWS)],
+    [WEB_GOLDEN_SIGNALS, new Referencia('https://www.groundcover.com/blog/4-golden-signals', 'Golden Signals', WEB_KEY, 'Golden Signals', '2024/09/22').addRelatedItem(HARDWARE_MONITOREO).addRelatedItem(Keys.PEOPLE_NO_NEWS_GOOD_NEWS)],
 ]);
 
 export const NEURO_MARKETING_KEY = 'Neuro-Marketing';

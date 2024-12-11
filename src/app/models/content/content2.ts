@@ -4,8 +4,8 @@ import { Item } from "../models";
 export class Content2 {
 
     public temas: Item[] = [
-        ...PRUEBAS,
-        ...PRUEBAS_AVANZADAS,
+        ...TESTING,
+        ...TESTING_ADVANCED,
         ...ANALISIS,
         ...BUENAS_PRACTICAS,
         ...COMPILACION,
@@ -16,7 +16,7 @@ export class Content2 {
 
 }
 
-export const PRUEBAS =
+export const TESTING =
     [
         new Item('principios',
             [
@@ -444,11 +444,11 @@ export const ANALISIS =
                 '',
                 '<strong>- Programación lineal:</strong> Se basa en la matematicas para optimizar el rendimiento ó la eficiencia de un problema con multiples variables ',
                 '',
-                '<strong>- Branch & Bounds(Ramificación y poda):</strong> Usado para problemas de optimización, donde de manera progresiva se van creando y solucionando subproblemas, ',
-                ' - si las solución es optima se mantiene la rama, si no se poda, y asi se continua hasta encontrar la solución ó agotar los recursos ',
+                '<strong>- Branch & Bounds(Ramificación y Poda):</strong> Usado para problemas de optimización, de manera progresiva se van creando y solucionando subproblemas, ',
+                ' - si las solución es optima se mantiene la rama, si no se poda, y asi se continua hasta encontrar la mejor solución ó agotar los recursos ',
                 '',
                 '<strong>- Backtracking:</strong> Ayudan a explorar multiples opciones hasta encontrar la mejor solución, probando diferentes caminos, si estos no funcionan ',
-                ' - se devuelven hasta un punto de guardado previo e intentan otra opción, sucesivamente, hasta que se encuentre la solución ó se agoten los recursos ',
+                ' - se devuelve hasta un punto de guardado previo e intenta otra opción, sucesivamente, hasta que se encuentre la solución ó se agoten los recursos ',
             ]),
         new Item(Keys.ANALISIS_QUEUES_SYSTEM_DESIGN,
             [
@@ -544,7 +544,7 @@ export const ANALISIS =
             ]),
         new Item(Keys.ANALISIS_MICROSERVICES,
             [
-                '- Los microservicios al ser componentes de software que priorizan la modularidad y la escalabilidad es importante que cumplan ciertas caracteristicas: ',
+                '- Un microservicio como componente de software que prioriza la modularidad y la escalabilidad, es importante que cumpla ciertas caracteristicas: ',
                 '',
                 '<strong>Principio de responsabilidad unica:</strong> Centrarse en una sola función, es un principio que aplica a multiples niveles en el desarrollo ',
                 '- Gestionar multiples responsabilidades puede generar dificultades en el mantenimiento, su comprensión, y sus acciones ',
@@ -902,7 +902,7 @@ export const BUENAS_PRACTICAS =
                 ' 3 - Evitarlas       (triadic) ',
                 '+4 - No recomendable (polyadic)',
                 '',
-                '<strong>- Comand-Query Separatión:</strong> Como en <strong>CQRS</strong>, una función deberia consultar información ó cambiar estados, realizar ambas cosas puede llevar a confusiones',
+                '<strong>- Comand-Query Separatión:</strong> Como en <strong>CQRS</strong>, una función debe consultar información ó cambiar estados, mezclar ambas puede llevar a confusiones',
                 '<strong>- Preferir Excepciones, sobre codigos de error:</strong> Comprobar estos codigos suele ocultar las causas de los errores, además de que no ayudan ',
                 ' - a una clara separación entre la logica de negocio y el manejo de errores, además de ser una solución proveida por el lenguaje ',
                 '<strong>- Principio DRY:</strong> No te repitas, la duplicación suele ser malvada, genera inconsistencias y aumenta el riesgo de errores ',
@@ -1013,7 +1013,7 @@ export const COMPILACION =
             ]),
         new Item(Keys.COMPILACION_AOT,
             [
-                '- La compilacion anticipada, es el acto de compilar un lenguaje de alto nivel a bajo nivel (generalmente), más no necesariamente a nivel de maquina ',
+                '- La compilacion anticipada, es el acto de compilar un lenguaje de alto nivel a bajo nivel (generalmente), más no necesariamente a nivel maquina ',
                 '- Comunmente asociado al paso intermedio como al bytecode de Java ó CIL de .NET, ',
                 ' - cuando se usa en este contexto especifico suele ser el contrario de la compilación Just in Time (JIT)',
                 '',
@@ -1032,8 +1032,8 @@ export const COMPILACION =
                 '- Al codigo no le importa el tipo del objeto, si no lo que puede hacer <em>"Si camina como pato y grazna como pato, entonces debe ser un pato"</em> ',
                 '- Parte de esto es posible ya que estos lenguajes usan la sobrecarga automatica de operadores de modo que se adaptan al tipo de dato procesado ',
                 '- El polimorfismo permite que el comportarmiento sea el esperado, sin tener que aferrarse a algun tipo en concreto ',
-                '- Aunque es flexible, puede traer problemas en tiempo de ejecución si se quiere usar comportamientos especificos de un tipo en otro que no los soporte ',
-                '- Tambien se pueden comprobar los tipos de los objetos antes de, pero esto generalmente denota un problema de diseño más que de la codificación en si ',
+                '- Aunque es flexible, puede traer problemas la ejecución si se quiere usar comportamientos especificos de un tipo en otro que no lo soporte ',
+                '- Tambien se pueden comprobar los tipos de los objetos antes de, pero esto generalmente denota un problema de diseño más que de codificación ',
             ]),
         new Item('sdkVsApi',
             [
@@ -1089,12 +1089,12 @@ export const COMPILACION =
                 '- Estos casteos tambien se pueden hacer con clases que guarden similitudes o que se relacionen jerarquicamente mediante la herencia ',
                 '- Algunos casteos de tipo Narrowing pueden ocasionar errores, como la perdida de precisión o excepciones en tiempo de ejecución ',
             ]),
-        new Item('verbosity',
+        new Item(Keys.COMPILACION_VERBOSITY,
             [
                 '- Un lenguaje puede ser considerado como Verboso, cuando se usan demasiadas palabras para realizar acciones simples, ',
                 ' - o cada accion debe ser demasiado especificada, todo este codigo extra(ruido), desperdicia tiempo y energia del desarrollador ',
                 '',
-                '- Pero tambien se puede dar el caso contrario, de tener comandos muy especificos para acciones muy especificas, esto peca de ser demasiado conciso, ',
+                '- Tambien se puede dar el caso contrario, de tener comandos muy especificos para acciones muy especificas, esto peca de ser demasiado conciso, ',
                 ' - obligando que el desarrollador sepa cada significado de cada expresion, esto tambien cuesta tiempo ya que no es entendible a primera vista ',
                 '',
                 '- Ambos extremos son malos, ya que en una industria agil y de rapida evolución, como la programación, el codigo debe ser mantenible y entendible, ',
@@ -1108,7 +1108,7 @@ export const COMPILACION =
                 '<strong>Proposito Especifico (DSL):</strong> Estan creados para un uso en particular, dentro de un ambito particular, fuera de su ambito no funcionan',
                 ' - Como <strong>SQL</strong> usado para manipular y consultar información, e incluso se podrian considerar <strong>HTML</strong> y <strong>CSS</strong> ',
             ]),
-        new Item('automatas',
+        new Item(Keys.COMPILACION_AUTOMATAS,
             [
                 '- Es un modelo matematico para una maquina de estado finito, mediante una serie de acuerdos y condiciones puede <em>"saltar"</em> entre <em>estados</em>',
                 '',
@@ -1126,7 +1126,7 @@ export const COMPILACION =
                 '- <strong>Gramaticas:</strong> Son utiles para procesar datos con estructuras recursivas, y es usado en el <strong>Analizador Sintactico</strong>, ',
                 ' - de un compilador tipico, para entender estructuras como expresiones aritmeticas, condicionales, etc... ',
                 '',
-                '<strong>Alfabeto:</strong> Este se modela con clases de caracteres en lugar de simbolos como tal, generalmente son los caracteres que puede representar un computador ',
+                '<strong>Alfabeto:</strong> Se modela con clases de caracteres en lugar de simbolos como tal, generalmente son los caracteres que puede representar un computador ',
                 '- Alfanuméricos: { a ... z, A ... Z, 0 ... 9}',
                 '- Signos de puntuacion y simbolos: { ! " # $ % &  ( ) * + , \ -. / : ; < = > ? @ [ ] ^ _ ` }',
                 '- Otros: { Todos los demás }',
@@ -1137,7 +1137,7 @@ export const COMPILACION =
                 ' <strong>Estados de transición:</strong> Tomando un estado y un simbolo del alfabeto como entrada, regresa el estado siguiente (tabla de transiciones)',
                 ' <strong>Estados de rechazo:</strong> Estados de error, donde se recibe una entrada inesperada/invalida ',
             ]),
-        new Item('estructuraCompilador',
+        new Item(Keys.COMPILACION_STRUCTURE_COMPILATOR,
             [
                 '- La compilación es un proceso secuencial, donde cada fase debe ser exitosamente concluida, para poder pasar a la siguiente ',
                 '- Compilar tiene diferentes significados, a continuación una definicion tomada de <i>mdn web docs</i>',
@@ -1155,8 +1155,8 @@ export const COMPILACION =
                 '- El codigo compilado es modificado de manera que su            - Cada cambio significa volver a realizar todo el proceso',
                 ' - funcionamiento y caracteristicas quedan ocultos',
                 '',
-                '<strong>Fase de Analisis</strong> Tambien se le conoce como frontened, porque es donde se analiza la parte donde el codigo fuente es leido ',
-                '  y suelen salir 2 elementos necesarios para la siguiente fase, como la representación intermedia del programa, y la creación de la tabla de simbolos',
+                '<strong>Fase de Analisis</strong> Tambien se le conoce como frontened, porque es donde se analiza la parte donde el codigo fuente es leido y suelen ',
+                '  salir 2 elementos necesarios para la siguiente fase, como la representación intermedia del programa, y la creación de la tabla de simbolos',
                 '',
                 ' <strong>Análisis Lexico:</strong> Todas las palabras del lenguaje deben ser estructuras apegadas al alfabeto, y que sean palabras tambien definidas en el lenguaje',
                 ' <strong>Análisis Sintáctico:</strong> Cada estructura debe respetar las reglas gramaticales, esto significa tener un sentido estructuralmente correcto ',
@@ -1181,7 +1181,7 @@ export const COMPILACION =
                 '                                          <strong>Manejador de errores</strong>                                                                              ',
                 '',
             ]),
-        new Item('elementosCompilador',
+        new Item(Keys.COMPILACION_ELEMENTS_COMPILATOR,
             [
                 '<strong>Codigo fuente:</strong> Conjunto de lineas de texto con los pasos a seguir por la computadora, normalmente hecho con lenguajes de alto nivel ',
                 '<strong>Tabla de simbolos:</strong> Creada en la fase de Analisis Lexico, tambien crece y se utiliza durante todo el proceso, aca se ',
@@ -1193,7 +1193,7 @@ export const COMPILACION =
                 '',
                 '<strong>Análisis Lexico:</strong>',
                 ' - Verficación de la pertenencia de cada simbolo presente en el codigo fuente, respecto la lenguaje en el que se fue hecho',
-                ' - Clasificación de cada componente, que cada palabra presente en el codigo fuente, pertenezca al lenguaje, y concuerde con los patrones permitidos ',
+                ' - Clasificación de cada componente, cada palabra presente en el codigo fuente, pertenezca al lenguaje, y concuerde con los patrones permitidos ',
                 ' - Creación de tabla de simbolos, registrando en ella, todos los identificadores presentes en el codigo',
                 '',
                 '<strong>Análisis Sintactico:</strong>',
@@ -1219,7 +1219,7 @@ export const COMPILACION =
         new Item(Keys.COMPILACION_STREAMS,
             [
                 '- En Java, como en otros lenguajes existe la capacidad para crear estructuras propias, usar contenedores y realizar operaciones sobre estos ',
-                '- Los Streams son la agregación de operaciones secuenciales o paralelas sobre un conjunto de elementos, utilizando una sintaxis más concisa y legible ',
+                '- Son una agregación de operaciones secuenciales o paralelas sobre un conjunto de elementos, utilizando una sintaxis más concisa y legible ',
                 '- Este procesamiento es un acercamiento al paradigma funcional y facilita una gran cantidad de acciones sobre las colecciones ',
                 '',
                 '- Este flujo de datos(pipeline) siempre es inmutable mientras fluye por la cadena de operaciones intermedias, todo esto es lazy, ',
@@ -1270,14 +1270,14 @@ export const COMPILACION =
                 '- Para que estas puedan lograr su cometido, deben modificar las clases a nivel del bytecode antes de su ejecución ',
                 '- Tambien existen manera de visualizar estos cambios y ver como han modificado las clases antes y despues, usando meta-agentes ',
                 '',
-                '- <strong>Spring</strong> instrumentaliza estas clases mediante la generación de proxies de manera dinamica, generalmente para agregar comportamientos arbitrarios ',
+                '<strong>Spring</strong> instrumentaliza estas clases mediante la generación de proxies de manera dinamica, generalmente para agregar comportamientos arbitrarios ',
                 ' - a un objeto existente, el JDK solo permite esto con Interfaces, mediante el uso de <em>java.lang.reflect.Proxy</em> ',
                 '- Para superar esta limitación Spring usa un <em>fork</em> de <strong>CGLIB</strong> una biblioteca que emula el comportamiento de <em>Proxy</em>',
                 ' - y que puede ser usada con clases, es un fork debido a que esta libreria ha sido <strong>deprecada</strong> en favor de otras opciones ',
                 '',
-                '- <strong>Mockito</strong> como framework de simulación para el testing, primero verifica si se estan usando mocks para retornar el comportamiento simulado, ',
+                '<strong>Mockito</strong> como framework de simulación para el testing, primero verifica si se estan usando mocks para retornar el comportamiento simulado, ',
                 ' - de lo contrario se retornara el comportamiento normal del objeto ',
-                '- Mientras que Proxy y CGLIB genero nuevas clases que extienden de las originales, mockito verifica si la clase esta mockeada y asi determina cual usar ',
+                '- Mientras que Proxy y CGLIB genera nuevas clases que extienden de la original, mockito verifica si la clase esta mockeada y asi determina cual usar ',
             ]),
         new Item(Keys.COMPILACION_OBJECT_CREATION,
             [
@@ -1610,9 +1610,9 @@ export const HISTORIAS_USUARIO =
                 '<strong><em>R</em> Relevant</strong>   Toda tarea debe ser relevante para que contribuya a la historia y al proyecto ',
                 '<strong><em>T</em> Acotada</strong>    Cuenta con un tiempo limite para ser alcanzada, y asi saber los dias en que estara lista aproximadamente ',
             ]),
-        new Item('3c',
+        new Item(Keys.USER_HISTORIES_3C,
             [
-                '- Las HU nacen como un entedimiento comun de lo que se debe hacer, independientemente de quien lo lea, o quien lo haga, de ahi nace el concepto de las 3C ',
+                '- Las HU nacen como un entedimiento comun de lo que se debe hacer, independientemente de quien lo lea, o quien lo haga, de ahi nacen las 3C ',
                 '',
                 '<strong>Tarjeta(card):</strong> Es un breve parrafo que resume la necesidad, el porque, y para quien es util ',
                 ' - Estas tarjetas tienen su propia estructura, la cual generalmente tiene 3 partes + los criterios de aceptación ',
@@ -1968,7 +1968,7 @@ export const METODOLOGIAS =
             ])
     ];
 
-export const PRUEBAS_AVANZADAS =
+export const TESTING_ADVANCED =
     [
         new Item('cajaNegraBlanca',
             [
@@ -2093,7 +2093,7 @@ export const PRUEBAS_AVANZADAS =
                 '- Aca se ha de tener en cuenta factores como que proceso se va a realizar, que actor lo va ejecutar y como lo hara ',
                 '- Estos detallan las funcionalidades del sistema',
             ]),
-        new Item('codeSmellsTests1',
+        new Item(Keys.TESTING_ADVANCED_SMELLS_CODES1,
             [
                 '<strong>Convenciones de nombres:</strong>',
                 '<strong>- Mistaken identity:</strong> Cuando el nombre de una prueba es contrario a lo que esta haciendo ',
@@ -2130,7 +2130,7 @@ export const PRUEBAS_AVANZADAS =
                 '<strong>- Wheel of fortune</strong> Los datos aleatorios pueden conducir al fallo de las pruebas, haciendolas erraticas ',
                 '<strong>- Time Bomb Data:</strong> Cuando se prueban informacion con fechas, si no se tiene cuidado estos datos pueden volverse erraticos ',
             ]),
-        new Item('codeSmellsTests2',
+        new Item(Keys.TESTING_ADVANCED_SMELLS_CODES2,
             [
                 '<strong>Aserciones - frameworks</strong>',
                 '<strong>- Chat logging:</strong> Se usan mensajes por consola o logs para suplir el fallo de una asercion ',
@@ -2164,9 +2164,9 @@ export const PRUEBAS_AVANZADAS =
                 '<strong>Implementacion</strong>',
                 '<strong>- I wrote it like this:</strong> Probando la implementación conocida, en vez del resultado ',
                 '<strong>- Contortionist testing:</strong> Debido a que las pruebas fueron escritas despues del codigo, este debe esforzarse para funcionar ',
-                '<strong>- The Hans Moretti Sword Box:</strong> Entre mas tests se agreguen con los diversos puntos testeables, menos se evitaran las vias no descubiertas del codigo ',
+                '<strong>- The Hans Moretti Sword Box:</strong> Entre mas tests se agreguen a los puntos testeables, menos se evitaran las vias no descubiertas del codigo ',
             ]),
-        new Item('mutation',
+        new Item(Keys.TESTING_ADVANCED_MUTATION,
             [
                 '- Es una tecnica de pruebas para encontrar fallas en las variaciones de un software y determinar la efectividad de las pruebas ',
                 '- Una mutación es una prueba con una ligera modificación del codigo, si estas llegan a pasar el mutante sobrevivio, por lo que el codigo esta mal ',
@@ -2188,8 +2188,8 @@ export const PRUEBAS_AVANZADAS =
                 ' - es necesario contrarrestar mutantes que no tienen sentidos o no son validos en el contexto de la prueba ',
                 '',
                 '<strong>Supuestos en lo que se basan:</strong>',
-                ' - Supuesto del programador competente: Si un programador es capaz de escribir y probar segementos pequeños, tambien lo hara con más grandes ',
-                ' - Supuesto del efecto del acoplamiento: Si se combinan 2 formas para formar un programa y ambas son buenas, entonces lo combinación tambien lo sera '
+                ' - Programadores competentes: Si un programador es capaz de escribir y probar segmentos pequeños, tambien lo hara con más grandes ',
+                ' - Efectos del acoplamiento: Si se combinan 2 formas para formar un programa y ambas son buenas, entonces lo combinación tambien lo sera '
             ]),
         new Item(Keys.TESTING_ADVANCED_ANTI_PATTERNS,
             [
