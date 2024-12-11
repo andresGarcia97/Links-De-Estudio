@@ -305,7 +305,7 @@ export const CALIDAD =
                 '- <strong>Refactorización</strong> La mantenibilidad se logra reduciendo la deuda tecnica reduciendo y solucionando problemas lo antes posible ',
                 '- <strong>Seguridad</strong> Un buen codigo evita la mayor cantidad de vulnerabilidades posibles, en especial las comunes y de facil solución '
             ]),
-        new Item('codeRot',
+        new Item(Keys.CALIDAD_CODE_ROT,
             [
                 '- Inevitablemente todo codigo se degrada con el tiempo, pero esto solamente es un problema si no se contiene ',
                 '- La deuda tecnica, suele ser un acto de negligencia, por parte de desarrolladores apresurados o inexpertos ',
@@ -333,7 +333,7 @@ export const CALIDAD =
                 '',
                 '<strong>Colapso:</strong> Un Jardin descuidado, sera invadido por las malas hierbas, y no importa la calidad, las buenas practicas, el trabajo extra, etc.. ',
                 ' - si no se define una propiedad real, el codigo se pudrira, y dejara de crecer, para ahora mantenerlo funcionando y solucionando errores, ',
-                ' - hasta que sea insostenible y sea necesaria una nueva versión, a la cual le puede pasar lo mismo, si no se aprendieron las lecciones correspondientes',
+                ' - hasta que sea insostenible y sea necesaria una nueva versión, a la cual le puede pasar lo mismo, si no se aprende de los errores ',
             ]),
         new Item(Keys.CALIDAD_IF_ELSE,
             [
@@ -1026,7 +1026,7 @@ export const PARADIGMAS =
             [
                 '- Es un paradigma de programación destinado a simplificar el diseño, y la implementación de sistemas, donde la información esta en el centro ',
                 '- En lugar de diseñar sistemas de información que combinan codigo y datos, <strong>DOP</strong> fomenta la separación entre codigos y datos ',
-                '- En DOP, los datos se tratan como ciudadanos de primera clase, brindando una simplicidad para manipular datos, como si fuera un objeto ó una cadena',
+                '- Los datos se tratan como ciudadanos de primera clase, brindando una simplicidad para manipularlo, como si fuera un objeto ó una cadena',
                 '- Para esto se deben cumplir 4 principios, que son totalmente aplicables a cualquier lenguaje y a cualquier paradigma(POO, Funcional, etc..)',
                 '',
                 '<strong>Separar el codigo de los datos:</strong> Se recomienda una separación clara entre el codigo(comportamiento) y los datos',
@@ -1036,7 +1036,7 @@ export const PARADIGMAS =
                 '',
                 '<strong>Representar datos con estructuras genericas:</strong> Se deben usar estructuras para representar los datos, como mapas y listas, o ',
                 ' - otras no tan genericas como, colas, arboles, pilas, etc.. ',
-                '- Esto conlleva a un modelo más flexible de datos, pero con penalizaciones en el rendimiento y casteos necesarios, en lenguajes estaticamente tipados ',
+                '- Esto conlleva a un modelo más flexible de datos, pero penaliza el rendimiento al agregar casteos necesarios, en lenguajes estaticamente tipados ',
                 '',
                 '<strong>Los datos son inmutables:</strong> Cada modificación que se necesite, obligatoriamente se ha de crear una copia, ',
                 ' - las referencias pueden cambiar, para hacer referencia a la nueva versión, pero nunca los valores de los datos',
