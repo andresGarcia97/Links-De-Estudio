@@ -129,6 +129,7 @@ export const ANALISIS_DATA_GOLDEN_RECORD = 'goldenRecord';
 export const ANALISIS_DATA_BATCH_VS_STREAM = 'batchVsStreamProcessing';
 export const ANALISIS_DATA_OLAP_OLTP = 'OLAPVsOLTP';
 export const ANALISIS_DATA_DEDUPLICATION = 'deduplication';
+export const GIT_STRUCTURE_AND_CONCEPTS = 'structureAndConceptsGit';
 export const GIT_REBASE_MERGE_SQUASH = 'rebaseMergeSquash';
 export const COMPILACION_GRAFOS = 'grafos';
 export const COMPILACION_AOT = 'compilacionAnticipadaAOT';

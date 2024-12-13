@@ -109,7 +109,6 @@ export const ANALISIS_DATA_GOLDEN_RECORD = 'goldenRecord';
 export const ANALISIS_DATA_BATCH_VS_STREAM = 'batchVsStreamProcessing';
 export const ANALISIS_DATA_OLAP_OLTP = 'OLAPVsOLTP';
 export const ANALISIS_DATA_DEDUPLICATION = 'deduplication';
-export const GIT_REBASE_MERGE_SQUASH = 'rebaseMergeSquash';
 export const PRINCIPIOS_SOLID = 'SOLID';
 export const PRINCIPIOS_KISS = 'KISS';
 export const PRINCIPIOS_DRY = 'DRY';
@@ -118,7 +117,7 @@ export const CD_CI_CELL_BASED_ARQUITECTURE = 'cellBasedArquitecture';
 export const WEB_SEO = 'seo';
 export const WEB_GOLDEN_SIGNALS = 'goldenSignals';
 
-export const LAST_ITEM = Keys.ANALISIS_LIGHT_EVENTS_VS_RICH_EVENTS;
+export const LAST_ITEM = Keys.GIT_STRUCTURE_AND_CONCEPTS;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -356,6 +355,7 @@ export const FRAMEWORKS_REF = new Map<string, Referencia>([
 export const GIT_KEY = 'Git';
 export const GIT_REF = new Map<string, Referencia>([
     ['introduccion', new Referencia('https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Acerca-del-Control-de-Versiones', 'Introducción a Git', GIT_KEY, 'Introducción')],
+    [Keys.GIT_STRUCTURE_AND_CONCEPTS, new Referencia('https://www.klooid.com/blog/git-series-conceptos/', 'Estructura Basica GIT', GIT_KEY, 'Estructura Basica', '2024/12/13')],
     ['repositorios', new Referencia('https://git-scm.com/book/es/v2/Fundamentos-de-Git-Trabajar-con-Remotos', 'Repositorios Remotos y Locales', GIT_KEY, 'Repositorios')],
     ['ramas', new Referencia('https://git-scm.com/book/es/v2/Ramificaciones-en-Git-Procedimientos-B%C3%A1sicos-para-Ramificar-y-Fusionar', 'Manejo de ramas', GIT_KEY, 'Ramas')],
     ['protocolos', new Referencia('https://git-scm.com/book/es/v2/Git-en-el-Servidor-Los-Protocolos', 'Comunicación entre repositorios', GIT_KEY, 'Protocolos')],
@@ -370,7 +370,7 @@ export const GIT_REF = new Map<string, Referencia>([
     ['branching-strategies', new Referencia('https://www.virtusway.com/es/workflows-strategies-for-working-with-git.html', 'Estrategias de Ramificación', GIT_KEY, 'Ramificación', '2023/07/18', '2024/06/26')],
     ['monoRepo', new Referencia('https://monorepo.tools/#understanding-monorepos', 'Mono Repo', GIT_KEY, 'Mono Repo', '2023/09/05')],
     ['pullRequestsToxic', new Referencia('https://devinterrupted.substack.com/p/the-11-types-of-toxic-pull-requests', 'Pull Requests Toxicos', GIT_KEY, 'Pull Requests Toxicos', '2023/09/17')],
-    [GIT_REBASE_MERGE_SQUASH, new Referencia('https://medium.com/@shikha.ritu17/git-rebase-vs-merge-vs-squash-choosing-the-right-strategy-for-version-control-a9c9bb97040e', 'Rebase Vs Merge Vs Squash', GIT_KEY, 'Rebase/Merge/Squash', '2024/06/26')],
+    [Keys.GIT_REBASE_MERGE_SQUASH, new Referencia('https://medium.com/@shikha.ritu17/git-rebase-vs-merge-vs-squash-choosing-the-right-strategy-for-version-control-a9c9bb97040e', 'Rebase Vs Merge Vs Squash', GIT_KEY, 'Rebase/Merge/Squash', '2024/06/26')],
 ]);
 
 export const USER_HISTORIES_KEY = 'Historias-Usuario';
