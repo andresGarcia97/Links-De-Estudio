@@ -114,10 +114,8 @@ export const PRINCIPIOS_KISS = 'KISS';
 export const PRINCIPIOS_DRY = 'DRY';
 export const CD_CI_CD_CI = 'cd-ci';
 export const CD_CI_CELL_BASED_ARQUITECTURE = 'cellBasedArquitecture';
-export const WEB_SEO = 'seo';
-export const WEB_GOLDEN_SIGNALS = 'goldenSignals';
 
-export const LAST_ITEM = Keys.GIT_STRUCTURE_AND_CONCEPTS;
+export const LAST_ITEM = Keys.WEB_SIMPLIFY_DESIGN;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -357,7 +355,7 @@ export const GIT_REF = new Map<string, Referencia>([
     ['introduccion', new Referencia('https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Acerca-del-Control-de-Versiones', 'Introducción a Git', GIT_KEY, 'Introducción')],
     [Keys.GIT_STRUCTURE_AND_CONCEPTS, new Referencia('https://www.klooid.com/blog/git-series-conceptos/', 'Estructura Basica GIT', GIT_KEY, 'Estructura Basica', '2024/12/13')],
     ['repositorios', new Referencia('https://git-scm.com/book/es/v2/Fundamentos-de-Git-Trabajar-con-Remotos', 'Repositorios Remotos y Locales', GIT_KEY, 'Repositorios')],
-    ['ramas', new Referencia('https://git-scm.com/book/es/v2/Ramificaciones-en-Git-Procedimientos-B%C3%A1sicos-para-Ramificar-y-Fusionar', 'Manejo de ramas', GIT_KEY, 'Ramas')],
+    [Keys.GIT_BRANCHS, new Referencia('https://git-scm.com/book/es/v2/Ramificaciones-en-Git-Procedimientos-B%C3%A1sicos-para-Ramificar-y-Fusionar', 'Manejo de ramas', GIT_KEY, 'Ramas')],
     ['protocolos', new Referencia('https://git-scm.com/book/es/v2/Git-en-el-Servidor-Los-Protocolos', 'Comunicación entre repositorios', GIT_KEY, 'Protocolos')],
     ['versiones', new Referencia('https://git-scm.com/book/es/v2/Git-en-entornos-distribuidos-Manteniendo-un-proyecto', 'Versiones mediante etiquetas', GIT_KEY, 'Versiones y tags')],
     ['forks', new Referencia('https://git-scm.com/book/es/v2/GitHub-Participando-en-Proyectos', 'Solicitudes a otros proyectos', GIT_KEY, 'Forks y Pull requests')],
@@ -369,7 +367,7 @@ export const GIT_REF = new Map<string, Referencia>([
     ['practicas', new Referencia('https://codigofacilito.com/articles/41', 'Buenas practicas para realizar commits', GIT_KEY, 'Buenas Practicas')],
     ['branching-strategies', new Referencia('https://www.virtusway.com/es/workflows-strategies-for-working-with-git.html', 'Estrategias de Ramificación', GIT_KEY, 'Ramificación', '2023/07/18', '2024/06/26')],
     ['monoRepo', new Referencia('https://monorepo.tools/#understanding-monorepos', 'Mono Repo', GIT_KEY, 'Mono Repo', '2023/09/05')],
-    ['pullRequestsToxic', new Referencia('https://devinterrupted.substack.com/p/the-11-types-of-toxic-pull-requests', 'Pull Requests Toxicos', GIT_KEY, 'Pull Requests Toxicos', '2023/09/17')],
+    [Keys.GIT_PULL_REQUESTS_TOXIC, new Referencia('https://devinterrupted.substack.com/p/the-11-types-of-toxic-pull-requests', 'Pull Requests Toxicos', GIT_KEY, 'Pull Requests Toxicos', '2023/09/17')],
     [Keys.GIT_REBASE_MERGE_SQUASH, new Referencia('https://medium.com/@shikha.ritu17/git-rebase-vs-merge-vs-squash-choosing-the-right-strategy-for-version-control-a9c9bb97040e', 'Rebase Vs Merge Vs Squash', GIT_KEY, 'Rebase/Merge/Squash', '2024/06/26')],
 ]);
 
@@ -674,7 +672,7 @@ export const REFACTORING_REF = new Map<string, Referencia>([
     [Keys.REFACTORING_LEGACY_CODE, new Referencia('https://jesuslc.com/2020/11/21/tecnicas-para-mantener-al-legacy-code-bajo-control/', 'Refactorizar el Legacy Code', REFACTORING_KEY, 'Refactor en Legacy code', '2023/02/05')],
     [Keys.REFACTORING_MANAGE_DEUDA_TECNICA, new Referencia('https://newsletter.techworld-with-milan.com/p/how-to-deal-with-technical-debt', 'Manejo de la deuda tecnica', REFACTORING_KEY, '¿ Como manejarla ?', '2024/05/12')],
     [Keys.REFACTORING_MANAGE_DEPENDENCIES, new Referencia('https://levelup.gitconnected.com/world-of-dependencies-4639100d16ef', 'Manejo de las dependencias', REFACTORING_KEY, 'Dependencias', '2024/06/09').addRelatedItem(META_ESTRUCTURAS_MAQUINA_ESTADOS).addRelatedItem(Keys.ARQUITECTURAS_CAPAS).addRelatedItem(FRAMEWORKS_IOD)],
-    [Keys.REFACTORING_GOOD_AND_BAD_PRACTICES, new Referencia('https://www.builder.io/blog/good-vs-bad-refactoring', 'Buenas & Malas practicas', REFACTORING_KEY, 'Buenas & Malas practicas', '2024/09/08').addRelatedItem(WEB_SEO).addRelatedItem(PRINCIPIOS_KISS)],
+    [Keys.REFACTORING_GOOD_AND_BAD_PRACTICES, new Referencia('https://www.builder.io/blog/good-vs-bad-refactoring', 'Buenas & Malas practicas', REFACTORING_KEY, 'Buenas & Malas practicas', '2024/09/08').addRelatedItem(Keys.WEB_SEO).addRelatedItem(PRINCIPIOS_KISS)],
 ]);
 
 export const REQUISITOS_KEY = 'Requisitos';
@@ -841,8 +839,9 @@ export const WEB_KEY = 'Web';
 export const WEB_REF = new Map<string, Referencia>([
     ['spa', new Referencia('https://desarrolloweb.com/articulos/que-es-una-spa.html', 'Single Page Aplication', WEB_KEY, 'SPA')],
     ['pwa', new Referencia('https://www.iebschool.com/blog/progressive-web-apps-analitica-usabilidad/', 'Progressive Web App', WEB_KEY, 'PWA')],
-    [WEB_SEO, new Referencia('https://www.40defiebre.com/guia-seo/que-es-seo-por-que-necesito', 'Search Engine Optimization', WEB_KEY, 'SEO')],
-    ['espacio', new Referencia('https://www.dsigno.es/blog/diseno-grafico/espacios-negativos-en-diseno-grafico', 'El uso del espacio para diseñar', WEB_KEY, 'Espacio Negativo')],
+    [Keys.WEB_SEO, new Referencia('https://www.40defiebre.com/guia-seo/que-es-seo-por-que-necesito', 'Search Engine Optimization', WEB_KEY, 'SEO')],
+    //['espacio', new Referencia('https://www.dsigno.es/blog/diseno-grafico/espacios-negativos-en-diseno-grafico', 'El uso del espacio para diseñar', WEB_KEY, 'Espacio Negativo')],
+    [Keys.WEB_SPACE, new Referencia('https://heyjaime.com/blog/espacio-negativo/', 'El uso del espacio para diseñar', WEB_KEY, 'Espacio Negativo', '', '2024/12/13')],
     ['diseno', new Referencia('https://seocom.agency/es/blog/diseno-grafico-web/', 'Diseño grafico', WEB_KEY, 'Diseño Grafico')],
     ['interfacesUsuario', new Referencia('https://pensamientodigital.wordpress.com/diseno-de-interfases-de-usuario/', 'Interfaces de usuario', WEB_KEY, 'UI')],
     ['experienciaUsuario', new Referencia('https://www.coursera.org/articles/ui-vs-ux-design', 'Experiencia de usuario', WEB_KEY, 'UX')],
@@ -852,9 +851,10 @@ export const WEB_REF = new Map<string, Referencia>([
     ['ssr-csr-ssg-isr', new Referencia('https://medium.com/@prashantramnyc/server-side-rendering-ssr-vs-client-side-rendering-csr-vs-pre-rendering-using-static-site-89f2d05182ef', 'SSR vs CSR vs SSG', WEB_KEY, 'SSR vs CSR vs SSG')],
     ['esqueumorfismo', new Referencia('https://aderal.es/estrategias-de-marketing-y-transformacion-digital/nuevas-tendencias-en-diseno-grafico-digital-el-regreso-del-esqueumorfismo/', 'Esqueumorfismo', WEB_KEY, 'Esqueumorfismo')],
     ['menorSorpresa', new Referencia('https://www.linkedin.com/pulse/principle-least-surprise-incus-data-pty-ltd/', 'Menor Sorpresa', WEB_KEY, 'Menor Sorpresa')],
-    ['microFrontened', new Referencia('https://newsletter.systemdesign.one/p/micro-frontends', 'Micro Frontends', WEB_KEY, 'Micro Frontends', '2024/03/07')],
+    [Keys.WEB_MICRO_FRONTENED, new Referencia('https://newsletter.systemdesign.one/p/micro-frontends', 'Micro Frontends', WEB_KEY, 'Micro Frontends', '2024/03/07')],
     ['buenasPracticasFront', new Referencia('https://dev.to/emmanuelhills/best-practices-for-frontend-web-development-a-comprehensive-guide-27h0', 'Buenas practicas Desarrollo web', WEB_KEY, 'Buenas practicas', '2024/03/31')],
-    [WEB_GOLDEN_SIGNALS, new Referencia('https://www.groundcover.com/blog/4-golden-signals', 'Golden Signals', WEB_KEY, 'Golden Signals', '2024/09/22').addRelatedItem(HARDWARE_MONITOREO).addRelatedItem(Keys.PEOPLE_NO_NEWS_GOOD_NEWS)],
+    [Keys.WEB_GOLDEN_SIGNALS, new Referencia('https://www.groundcover.com/blog/4-golden-signals', 'Golden Signals', WEB_KEY, 'Golden Signals', '2024/09/22').addRelatedItem(HARDWARE_MONITOREO).addRelatedItem(Keys.PEOPLE_NO_NEWS_GOOD_NEWS)],
+    [Keys.WEB_SIMPLIFY_DESIGN, new Referencia('https://uxdesign.cc/10-heuristics-to-simplify-design-decision-making-36bd41868243', 'Simplificar el Diseño', WEB_KEY, 'Simplificar el diseño', '2024/12/13')],
 ]);
 
 export const NEURO_MARKETING_KEY = 'Neuro-Marketing';
