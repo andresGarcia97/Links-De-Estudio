@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { BASE_DE_DATOS_AVANZADO } from 'src/app/models/content/content1';
-import { PERSISTENCY_KEY, LinkReferencia, PERSISTENCY_ADVANCED_REF, WEB_KEY, HARDWARE_KEY, PATRONES_KEY } from 'src/app/models/linkReferencia';
+import { PERSISTENCY_KEY, LinkReferencia, PERSISTENCY_ADVANCED_REF, WEB_KEY, HARDWARE_KEY, PATRONES_KEY }
+from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-sql-nosql-advanced',

@@ -896,6 +896,17 @@ export const NUBE =
                 '&brvbar; Servidor publico cloud        &brvbar; 99.9%    &brvbar;  8 H 46 m  &brvbar;',
                 '&brvbar; Grupo de alta disponibilidad  &brvbar; 99.99%   &brvbar;  0 H 56 m  &brvbar;',
                 '&brvbar; Disponibilidad continua       &brvbar; 99.999%  &brvbar;  5 m 16 s  &brvbar;',
+            ]),
+        new Item(Keys.NUBE_PACELC,
+            [
+                '- Los sistemas distribuidos tienen diversos puntos de fallos, como los servidores, la red, perdida de datos, etc.. ',
+                '- Anteriormente el <strong>Teorema CAP</strong> establece que es imposible que un sistema distribuido proporcione simultaneamente: <strong>C</strong> Coherencia',
+                '- Sin embargo, un sistema <strong>CA</strong> que no tolera Particiones, no es coherente                                           <strong>A</strong> Disponibilidad',
+                '- Debido a esto, los <strong>DBMS</strong>, tuvieron que escoger entre Consistencia(<strong>ACID</strong>) y Disponibilidad(<strong>BASE</strong>)                   <strong>P</strong> Tolerancia a particiones ',
+                '',
+                '- Este teorema cubre aspectos faltante de CAP y establece que un sistema que replique datos: ',
+                ' - Si hay una Partición(<strong>P</strong>) un sistema distribuido puede equilibrar entre Disponibilidad(<strong>A</strong>) y Consistencia(<strong>C</strong>) ',
+                ' - Si no hay(<strong>E</strong>) Particiónes, el sistema se equilibrara entre Latencia(<strong>L</strong>) y Consistencia(<strong>C</strong>)',
             ])
     ];
 
