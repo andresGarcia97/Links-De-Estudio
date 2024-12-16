@@ -1132,7 +1132,7 @@ export const APIS =
                 '<strong>URI:</strong> Nombre de Recurso Uniforme, es similar a la URL, pero esta es independiente de la ubicación, y es persistente ',
                 ' - lo que significa que siempre identifica el mismo recurso, incluso cuando deja de estar disponible o deja de existir ',
             ]),
-        new Item('apiTesting',
+        new Item(Keys.APIS_TESTING,
             [
                 '<strong>Pruebas de humo:</strong> Validación simple de que el API funcione y nada se rompa',
                 '<strong>Pruebas funcionales:</strong> Crea un plan de pruebas basado en los requisitos funcionales, y compara los resultados con los esperados ',
