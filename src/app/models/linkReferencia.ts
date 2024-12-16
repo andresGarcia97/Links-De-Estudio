@@ -53,13 +53,6 @@ export const META_ESTRUCTURAS_DEPRECATION = 'deprecation';
 export const FRAMEWORKS_FRAMEWORKS = 'frameworks';
 export const FRAMEWORKS_CODE_STRUCTURE = 'codeStructucture';
 export const FRAMEWORKS_IOD = 'iod';
-export const LEYES_HYRUM = 'hyrum';
-export const LEYES_LEHMAN = 'lehman';
-export const LEYES_CONWAY = 'conway';
-export const LEYES_KIDLIN = 'kidlin';
-export const LEYES_GOODHARTS = 'Goodharts';
-export const LEYES_LINUS = 'linus';
-export const LEYES_HOFSTADTER = 'Hofstadter';
 export const CONTENEDORES_SECURE_ORCHESTRATION = 'secureOrchestration';
 export const CONTENEDORES_ARQUITECTURE = 'arquitectureDocker';
 export const NUBE_CAP_TEOREMA = 'capTeorema';
@@ -68,10 +61,6 @@ export const NUBE_OBSERVABILIDAD = 'observabilidad';
 export const NUBE_MICROSERVICES_BEST_PRACTICES = 'microservicesBestPractices';
 export const NUBE_TWO_PHASE_COMMIT = 'twoPhaseCommit';
 export const NUBE_DISPONIBILITY = 'disponibilidad';
-export const PARADIGMAS_PARADIGMA_DATOS = 'paradigmaDatos';
-export const CONOCIMIENTOS_EMPIRICOS_PAIR_PROGRAMMING = 'pairPrograming';
-export const CONOCIMIENTOS_EMPIRICOS_STAGES_COMPETENCE_MODEL = 'stagesCompetenceModel';
-export const CONOCIMIENTOS_EMPIRICOS_EXPIERENCE_LESSONS = 'expierenceLessons';
 export const METODOLOGIAS_AGILES = 'agiles';
 export const METODOLOGIAS_MODEL_BING_BANG = 'metodologiaBingBang';
 export const METODOLOGIAS_MODEL_V = 'metodologiaModelV';
@@ -115,7 +104,7 @@ export const PRINCIPIOS_DRY = 'DRY';
 export const CD_CI_CD_CI = 'cd-ci';
 export const CD_CI_CELL_BASED_ARQUITECTURE = 'cellBasedArquitecture';
 
-export const LAST_ITEM = Keys.WEB_SIMPLIFY_DESIGN;
+export const LAST_ITEM = Keys.PATRONES_ENRICHED_MODEL;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -280,19 +269,19 @@ export const CONOCIMIENTO_EMPIRICO = new Map<string, Referencia>([
     ['boilingFrog', new Referencia('https://www.linkedin.com/pulse/boiling-frog-syndrome-suyash-jaju/', 'Sindrome de la Rana Hervida', CONOCIMIENTO_EMPIRICO_KEY, 'Rana Hervida', '2024/04/16')],
     ['boysScouts', new Referencia('https://www.linkedin.com/pulse/la-regla-de-los-boys-scouts-hugo-raher/', 'Regla de los Boys Scouts', CONOCIMIENTO_EMPIRICO_KEY, 'Boys Scouts', '2024/04/16')],
     ['zeigarnik', new Referencia('https://psicologiaymente.com/psicologia/efecto-zeigarnik', 'Efecto Zeigarnik', CONOCIMIENTO_EMPIRICO_KEY, 'Efecto Zeigarnik', '2024/05/13')],
-    [CONOCIMIENTOS_EMPIRICOS_PAIR_PROGRAMMING, new Referencia('https://stackoverflow.blog/2024/04/03/developers-with-ai-assistants-need-to-follow-the-pair-programming-model', 'Pair Programing con IA', CONOCIMIENTO_EMPIRICO_KEY, 'Pair Programing', '2024/05/26')],
-    [CONOCIMIENTOS_EMPIRICOS_STAGES_COMPETENCE_MODEL, new Referencia('https://www.innovationtraining.org/the-four-stages-of-competence-model/', 'Etapas del modelo de competencia', CONOCIMIENTO_EMPIRICO_KEY, 'Modelo de competencia', '2024/09/09')],
-    [CONOCIMIENTOS_EMPIRICOS_EXPIERENCE_LESSONS, new Referencia('https://dev.jimgrey.net/2024/07/03/lessons-learned-in-35-years-of-making-software/', 'Experiencia', CONOCIMIENTO_EMPIRICO_KEY, 'Experiencia', '2024/10/31')],
+    [Keys.CONOCIMIENTOS_EMPIRICOS_PAIR_PROGRAMMING, new Referencia('https://stackoverflow.blog/2024/04/03/developers-with-ai-assistants-need-to-follow-the-pair-programming-model', 'Pair Programing con IA', CONOCIMIENTO_EMPIRICO_KEY, 'Pair Programing', '2024/05/26')],
+    [Keys.CONOCIMIENTOS_EMPIRICOS_STAGES_COMPETENCE_MODEL, new Referencia('https://www.innovationtraining.org/the-four-stages-of-competence-model/', 'Etapas del modelo de competencia', CONOCIMIENTO_EMPIRICO_KEY, 'Modelo de competencia', '2024/09/09')],
+    [Keys.CONOCIMIENTOS_EMPIRICOS_EXPIERENCE_LESSONS, new Referencia('https://dev.jimgrey.net/2024/07/03/lessons-learned-in-35-years-of-making-software/', 'Experiencia', CONOCIMIENTO_EMPIRICO_KEY, 'Experiencia', '2024/10/31')],
 ]);
 
 export const LEYES_KEY = 'Leyes';
 export const LEYES_REF = new Map<string, Referencia>([
     ['balas', new Referencia('https://gist.github.com/esparta/582e43af7b803e0aaf69', 'Balas de Plata', LEYES_KEY, 'Balas de Plata', '', '2024/07/14')],
-    [LEYES_LEHMAN, new Referencia('https://medium.com/@cartontabla/las-leyes-de-lehman-b57c623c3404', 'Leyes de Lehman - Evolución del software', LEYES_KEY, 'Leyes de Lehman', '', '2024/09/22')],
-    [LEYES_CONWAY, new Referencia('https://www.javiergarzas.com/2015/06/conway.html', 'Ley de Conway', LEYES_KEY, 'Ley de Conway')],
+    [Keys.LEYES_LEHMAN, new Referencia('https://medium.com/@cartontabla/las-leyes-de-lehman-b57c623c3404', 'Leyes de Lehman - Evolución del software', LEYES_KEY, 'Leyes de Lehman', '', '2024/09/22')],
+    [Keys.LEYES_CONWAY, new Referencia('https://www.javiergarzas.com/2015/06/conway.html', 'Ley de Conway', LEYES_KEY, 'Ley de Conway')],
     ['murphy', new Referencia('https://www.caracteristicas.co/ley-de-murphy/', 'Ley de Murphy', LEYES_KEY, 'Ley de Murphy')],
     ['pendulo', new Referencia('http://www.grupocrece.es/blog/Psicolog%C3%ADala-ley-del-pndulo-en-psicologa', 'Ley del pendulo', LEYES_KEY, 'Ley del pendulo')],
-    [LEYES_HYRUM, new Referencia('https://thebootstrappedfounder.com/hyrums-law/', 'Ley de Hyrum', LEYES_KEY, 'Ley de Hyrum')],
+    [Keys.LEYES_HYRUM, new Referencia('https://thebootstrappedfounder.com/hyrums-law/', 'Ley de Hyrum', LEYES_KEY, 'Ley de Hyrum')],
     ['leblanc', new Referencia('https://www.quora.com/What-resources-could-I-read-about-Leblancs-law', 'Ley de Leblanc', LEYES_KEY, 'Ley de Leblanc´s')],
     ['leyesInternet', new Referencia('https://www.bbc.com/mundo/noticias-46102313.amp', 'Conductas en internet', LEYES_KEY, 'Leyes En Internet')],
     ['pareto', new Referencia('https://www.becas-santander.com/es/blog/ley-de-pareto.html', 'Ley de Pareto', LEYES_KEY, 'Ley de Pareto', '2023/02/04')],
@@ -300,10 +289,10 @@ export const LEYES_REF = new Map<string, Referencia>([
     ['mooreAndWirth', new Referencia('https://blogs.uoc.edu/informatica/la-ley-de-wirth-la-ley-de-moore-inversa-del-software/', 'Ley de Moore & Ley de Wirth', LEYES_KEY, 'Moore & Wirth', '2023/07/04')],
     ['amdahl', new Referencia('https://www.techtarget.com/whatis/definition/Amdahls-law', 'Ley de Amdahls', LEYES_KEY, 'Ley de Amdahls', '2023/08/25')],
     ['gall', new Referencia('https://deviq.com/laws/galls-law', 'Ley de Gall', LEYES_KEY, 'Ley de Gall', '2024/05/13')],
-    [LEYES_KIDLIN, new Referencia('https://www.linkedin.com/pulse/5-leyes-famosas-aplicadas-en-la-pmo-lourdes-medina-pfmp-pmp-pmo-cp-zv4ke/', 'Ley de Kidlin', LEYES_KEY, 'Ley de Kidlin', '2024/07/14').addRelatedItem(Keys.AGILES_DEMING)],
-    [LEYES_GOODHARTS, new Referencia('https://levelup.gitconnected.com/9-laws-that-every-software-developer-should-know-a5518bfef022', 'Ley de Goodhart’s', LEYES_KEY, 'Ley de Goodhart’s', '2024/11/08')],
-    [LEYES_LINUS, new Referencia('https://levelup.gitconnected.com/9-laws-that-every-software-developer-should-know-a5518bfef022', 'Ley de Linus', LEYES_KEY, 'Ley de Linus', '2024/11/09')],
-    [LEYES_HOFSTADTER, new Referencia('https://levelup.gitconnected.com/9-laws-that-every-software-developer-should-know-a5518bfef022', 'Ley de Hofstadter', LEYES_KEY, 'Ley de Hofstadter', '2024/11/10').addRelatedItem(Keys.PEOPLE_GESTION_EXPECTATIVAS)],
+    [Keys.LEYES_KIDLIN, new Referencia('https://www.linkedin.com/pulse/5-leyes-famosas-aplicadas-en-la-pmo-lourdes-medina-pfmp-pmp-pmo-cp-zv4ke/', 'Ley de Kidlin', LEYES_KEY, 'Ley de Kidlin', '2024/07/14').addRelatedItem(Keys.AGILES_DEMING)],
+    [Keys.LEYES_GOODHARTS, new Referencia('https://levelup.gitconnected.com/9-laws-that-every-software-developer-should-know-a5518bfef022', 'Ley de Goodhart’s', LEYES_KEY, 'Ley de Goodhart’s', '2024/11/08')],
+    [Keys.LEYES_LINUS, new Referencia('https://levelup.gitconnected.com/9-laws-that-every-software-developer-should-know-a5518bfef022', 'Ley de Linus', LEYES_KEY, 'Ley de Linus', '2024/11/09')],
+    [Keys.LEYES_HOFSTADTER, new Referencia('https://levelup.gitconnected.com/9-laws-that-every-software-developer-should-know-a5518bfef022', 'Ley de Hofstadter', LEYES_KEY, 'Ley de Hofstadter', '2024/11/10').addRelatedItem(Keys.PEOPLE_GESTION_EXPECTATIVAS)],
 ]);
 
 export const CONTENEDORES_KEY = 'Contenedores';
@@ -398,7 +387,7 @@ export const MALAS_PRACTICAS_REF = new Map<string, Referencia>([
     ['malasPracticasSCRUM', new Referencia('https://blog.palo-it.com/es/antipatrones-comunes-en-scrum', 'Malas practicas en SCRUM', MALAS_PRACTICAS_KEY, 'Contra SCRUM', '2023/05/01')],
     [Keys.MALAS_PRACTICAS_DEATH_BY_MICROSERVICES, new Referencia('https://renegadeotter.com/2023/09/10/death-by-a-thousand-microservices.html', 'Muerte por microservicios', MALAS_PRACTICAS_KEY, 'Muerte por microservicios', '2023/09/14').addRelatedItem(NUBE_OBSERVABILIDAD)],
     [Keys.MALAS_PRACTICAS_ANTI_PATRONES_ARQUITECTURAS, new Referencia('https://lab.scub.net/architecture-anti-patterns-the-dark-side-of-the-architect-d9265b52d997', 'Anti patrones en Arquitecturas', MALAS_PRACTICAS_KEY, 'Contra Arquitecturas', '2024/09/07')],
-    ['anemicDomain', new Referencia('https://martinfowler.com/bliki/AnemicDomainModel.html', 'Dominio Anemico', MALAS_PRACTICAS_KEY, 'Dominio Anemico', '2024/05/08').addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_DDD)],
+    [Keys.MALAS_PRACTICAS_ANEMIC_DOMAIN, new Referencia('https://martinfowler.com/bliki/AnemicDomainModel.html', 'Dominio Anemico', MALAS_PRACTICAS_KEY, 'Dominio Anemico', '2024/05/08').addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_DDD)],
     [Keys.MALAS_PRACTICAS_TRAIN_WECKS, new Referencia('https://www.thinkcode.se/blog/2011/12/30/how-many-train-wrecks-are-lurking-in-your-code', 'Accidentes de trenes', MALAS_PRACTICAS_KEY, 'Accidentes de trenes', '2024/05/22', '2024/10/12').addRelatedItem(Keys.BUENAS_PRACTICAS_DEMETER).addRelatedItem(Keys.POO_POO_PILARES)],
     [Keys.MALAS_PRACTICAS_DEFAULT_MICROSERVICES, new Referencia('https://levelup.gitconnected.com/why-you-should-never-default-to-microservices-c952903fbcb6', 'Microservicios por defecto', MALAS_PRACTICAS_KEY, 'Microservicios por defecto', '2024/10/12').addRelatedItem(Keys.TESTING_MOCKS).addRelatedItem(APIS_REST_VS_MESSAGING)],
 ]);
@@ -546,30 +535,32 @@ export const PARADIGMAS_REF = new Map<string, Referencia>([
     ['aspectos', new Referencia('https://www.baeldung.com/spring-aop', 'Orientación a aspectos', PARADIGMAS_KEY, 'Aspectos')],
     ['logica', new Referencia('https://ferestrepoca.github.io/paradigmas-de-programacion/proglogica/logica_teoria/aplicaciones.html', 'Programación Logica', PARADIGMAS_KEY, 'Logica')],
     ['estructurada', new Referencia('https://informatica.uv.es/iiguia/AED/oldwww/2004_05/AED.Tema.04.pdf', 'Programación Estructurada', PARADIGMAS_KEY, 'Estructurada')],
-    [PARADIGMAS_PARADIGMA_DATOS, new Referencia('https://blog.klipse.tech/dop/2022/06/22/principles-of-dop.html', 'Programación Orientada a Datos', PARADIGMAS_KEY, 'Datos')],
+    [Keys.PARADIGMAS_PARADIGMA_DATOS, new Referencia('https://blog.klipse.tech/dop/2022/06/22/principles-of-dop.html', 'Programación Orientada a Datos', PARADIGMAS_KEY, 'Datos')],
 ]);
 
 export const PATRONES_KEY = 'Patrones';
 export const PATRONES_REF = new Map<string, Referencia>([
     ['definicionPatrones', new Referencia('http://www.ecured.cu/Patrones_de_dise%C3%B1o_y_arquitectura', '¿ Que son los patrones ?', PATRONES_KEY, 'Definición')],
     //['gof', new Referencia('http://www.cleformacion.com/tic-tek/-/blogs/patrones-gof', 'Gang of Four (GoF)', PATRONES_KEY, 'GOF')],
-    ['gof', new Referencia('https://cleformacion.com/patrones-gof-fecha-de-publicacion/', 'Gang of Four (GoF)', PATRONES_KEY, 'GOF', '', '2024/05/25')],
+    [Keys.PATRONES_GOF, new Referencia('https://cleformacion.com/patrones-gof-fecha-de-publicacion/', 'Gang of Four (GoF)', PATRONES_KEY, 'GOF', '', '2024/05/25')],
     [Keys.PATRONES_DESGLOSE_GOF, new Referencia('https://refactoring.guru/es/design-patterns/catalog', 'Definciones de los GoF', PATRONES_KEY, 'Desglose GOF')],
-    ['grasp', new Referencia('https://www.adictosaltrabajo.com/2003/12/22/grasp/', 'Asignación de responsabilidades', PATRONES_KEY, 'GRASP')],
+    [Keys.PATRONES_GRASP, new Referencia('https://www.adictosaltrabajo.com/2003/12/22/grasp/', 'Asignación de responsabilidades', PATRONES_KEY, 'GRASP')],
     //['desglosegrasp', new Referencia('https://juan-garcia-carmona.blogspot.com/search/label/patr%C3%B3n', 'Patrones GRASP', PATRONES_KEY, 'Desglose Grasp')],
-    ['desglosegrasp', new Referencia('https://juan-garcia-carmona.blogspot.com/2012/09/patrones-generales-de-asignacion-de.html', 'Patrones GRASP', PATRONES_KEY, 'Desglose Grasp', '', '2024/05/25')],
+    //['desglosegrasp', new Referencia('https://juan-garcia-carmona.blogspot.com/2012/09/patrones-generales-de-asignacion-de.html', 'Patrones GRASP', PATRONES_KEY, 'Desglose Grasp', '', '2024/05/25')],
+    [Keys.PATRONES_DESGLOSE_GRASP, new Referencia('https://www.codescouts.academy/blog/grasp/', 'Patrones GRASP', PATRONES_KEY, 'Desglose Grasp', '', '2024/12/15')],
     //['dao', new Referencia('https://www.genbeta.com/desarrollo/patrones-de-diseno-active-record-vs-dao', 'Data Acess Object', PATRONES_KEY, 'DAO & Active Record')],
-    [Keys.PATRONES_PERSISTENCE_PATTERNS, new Referencia('https://www.infoq.com/articles/architecting-java-persistence-patterns-and-strategies/', 'Persistencia & manejo de datos', PATRONES_KEY, 'Persistencia & Datos', '', '2024/05/26').addRelatedItem(Keys.POO_POO).addRelatedItem(Keys.POO_INMUTABILITY).addRelatedItem(PARADIGMAS_PARADIGMA_DATOS)],
+    [Keys.PATRONES_PERSISTENCE_PATTERNS, new Referencia('https://www.infoq.com/articles/architecting-java-persistence-patterns-and-strategies/', 'Persistencia & manejo de datos', PATRONES_KEY, 'Persistencia & Datos', '', '2024/05/26').addRelatedItem(Keys.POO_POO).addRelatedItem(Keys.POO_INMUTABILITY).addRelatedItem(Keys.PARADIGMAS_PARADIGMA_DATOS)],
     [Keys.PATRONES_ANTI_PATTERNS, new Referencia('https://sg.com.mx/revista/11/anti-patrones-la-mejor-forma-hacer-un-pesimo-sistema-software', 'Antipatrones, Desarrollo', PATRONES_KEY, 'Anti Patrones, Desarrollo')],
     ['dobleDespacho', new Referencia('https://blog.nicopaez.com/2016/11/09/una-alternativa-al-double-dispatch/', 'Patron doble despacho', PATRONES_KEY, 'Doble despacho')],
     ['patronSaga', new Referencia('https://unpocodejava.com/2020/01/02/que-es-el-patron-saga/', 'Patron Saga', PATRONES_KEY, 'Patron saga')],
     [Keys.PATRONES_CQRS, new Referencia('https://learn.microsoft.com/es-mx/azure/architecture/patterns/cqrs', 'Patron CQRS', PATRONES_KEY, 'Patron CQRS', '', '2024/10/18')],
     ['patronUndoRedo', new Referencia('https://medium.com/dottech/implementando-undo-redo-con-ngrx-o-redux-f8ef5de535ef', 'Patron Undo-Redo', PATRONES_KEY, 'Patron undo-redo')],
-    ['tiposDePatrones', new Referencia('https://www.javiergarzas.com/2014/08/tipos-patrones-software.html', 'Tipos de patrones', PATRONES_KEY, 'Tipos de Patrones')],
-    [Keys.PATRONES_STRANGLER_FIG, new Referencia('https://martinfowler.com/bliki/StranglerFigApplication.html', 'StranglerFig App', PATRONES_KEY, 'StranglerFig App', '', '2024/09/22').addRelatedItem(LEYES_CONWAY)],
+    [Keys.PATRONES_TYPES, new Referencia('https://www.javiergarzas.com/2014/08/tipos-patrones-software.html', 'Tipos de patrones', PATRONES_KEY, 'Tipos de Patrones')],
+    [Keys.PATRONES_STRANGLER_FIG, new Referencia('https://martinfowler.com/bliki/StranglerFigApplication.html', 'StranglerFig App', PATRONES_KEY, 'StranglerFig App', '', '2024/09/22').addRelatedItem(Keys.LEYES_CONWAY)],
     ['antipatronesPM', new Referencia('https://sourcemaking.com/antipatterns', 'Antipatrones, Product Management', PATRONES_KEY, 'Anti Patrones, PM')],
     ['patternsMicroservices', new Referencia('https://blog.openreplay.com/7-microservice-design-patterns-to-use/', 'Patrones & Microservicios', PATRONES_KEY, 'Patrones & Microservicios')],
     [Keys.PATRONES_CLOUD_DESIGN_PATTERNS, new Referencia('https://learn.microsoft.com/es-mx/azure/architecture/patterns/', 'Patrones Para la Nube', PATRONES_KEY, 'Patrones Nube', '2024/06/02')],
+    [Keys.PATRONES_ENRICHED_MODEL, new Referencia('https://sacavix.com/2024/05/modelos-anemicos-vs-enriquecidos/', 'Modelo Enriquecido', PATRONES_KEY, 'Modelo Enriquecido', '2024/12/15').addRelatedItem(Keys.MALAS_PRACTICAS_ANEMIC_DOMAIN).addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_DDD).addRelatedItem(Keys.POO_INMUTABILITY).addRelatedItem(Keys.POO_POO)],
 ]);
 
 export const PEOPLE_KEY = 'Personas';
@@ -589,7 +580,7 @@ export const PEOPLE_REF = new Map<string, Referencia>([
     ['hippoEfect', new Referencia('https://www.forbes.com/sites/bernardmarr/2017/10/26/data-driven-decision-making-beware-of-the-hippo-effect/?sh=4106860c80f9', 'Efecto HIPPO', PEOPLE_KEY, 'Efecto H.I.P.P.O', '2023/11/06')],
     ['burnout', new Referencia('https://chubernetes.com/navigating-tech-industry-burnout-03c015337ba0', 'Sindrome de Burnout', PEOPLE_KEY, 'Burnout', '2024/04/21')],
     ['ona', new Referencia('https://www.linkedin.com/posts/jgarzas_an%C3%A1lisis-de-redes-organizacionales-ona-activity-7185677261528842240-EQvR/', 'Analisis de Redes Organizacionales', PEOPLE_KEY, 'ONA', '2024/04/22')],
-    [Keys.PEOPLE_PROCESS_BLOAT, new Referencia('https://ardalis.com/process-bloat-silent-killer-developer-productivity/', 'Hinchazon de procesos', PEOPLE_KEY, 'Process Bloat', '2024/06/01').addRelatedItem(LEYES_LEHMAN).addRelatedItem(METODOLOGIAS_LEAN).addRelatedItem(METODOLOGIAS_AGILES)],
+    [Keys.PEOPLE_PROCESS_BLOAT, new Referencia('https://ardalis.com/process-bloat-silent-killer-developer-productivity/', 'Hinchazon de procesos', PEOPLE_KEY, 'Process Bloat', '2024/06/01').addRelatedItem(Keys.LEYES_LEHMAN).addRelatedItem(METODOLOGIAS_LEAN).addRelatedItem(METODOLOGIAS_AGILES)],
     [Keys.PEOPLE_TRIANGLES_SUCCESS, new Referencia('https://www.entrepreneur.com/growing-a-business/the-triangles-of-success-are-more-than-a-good-laugh/279979', 'Triangulos del exito', PEOPLE_KEY, 'Triangulos del exito', '2024/11/21')],
 ]);
 
@@ -813,7 +804,7 @@ export const VERSIONAMIENTO_REF = new Map<string, Referencia>([
     ['documentation', new Referencia('https://shopify.engineering/good-documentation-productivity', 'Documentación & Productividad', VERSIONAMIENTO_KEY, 'Documentacion')],
     [Keys.VERSIONAMIENTO_LICENSES_AND_DATA, new Referencia('https://medium.com/@torgo/whats-the-deal-with-open-source-open-data-and-open-standards-licenses-d769d8e30dc0', 'Licencias y Datos abiertos', VERSIONAMIENTO_KEY, 'Licencias & Datos', '2023/08/17')],
     [Keys.VERSIONAMIENTO_DEPENDENCIES_ORDER, new Referencia('https://www.baeldung.com/maven-dependencies-order', 'Orden de Dependencias', VERSIONAMIENTO_KEY, 'Orden', '2024/08/04').addRelatedItem(META_ESTRUCTURAS_ESTRUCTURAS_DATOS_2)],
-    [Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES, new Referencia('https://github.com/kedro-org/kedro/wiki/Backwards-compatibility-and-breaking-changes', 'Retro compatibilidad y Breaking changes', VERSIONAMIENTO_KEY, 'Cambios y compatibilidad', '2024/05/19').addRelatedItem(LEYES_HYRUM).addRelatedItem(META_ESTRUCTURAS_DEPRECATION)],
+    [Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES, new Referencia('https://github.com/kedro-org/kedro/wiki/Backwards-compatibility-and-breaking-changes', 'Retro compatibilidad y Breaking changes', VERSIONAMIENTO_KEY, 'Cambios y compatibilidad', '2024/05/19').addRelatedItem(Keys.LEYES_HYRUM).addRelatedItem(META_ESTRUCTURAS_DEPRECATION)],
     [Keys.VERSIONAMIENTO_DOCUMENT_ARQUITECTURE, new Referencia('https://lucamezzalira.medium.com/how-to-document-software-architecture-techniques-and-best-practices-2556b1915850', 'Documentación & Arquitectura', VERSIONAMIENTO_KEY, 'Docs & Arquitectura', '2024/12/01').addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_DDD)],
 ]);
 

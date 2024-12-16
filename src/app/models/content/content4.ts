@@ -2290,7 +2290,7 @@ export const MALAS_PRACTICAS =
                 '<strong>- Eternal Nights Lock:</strong> En sistemas mal configurados, los circuitos pueden quedarse abiertos indefinidamente, ',
                 ' - ya sea por fallas en el reinicio, o fallas continuas cuando intenta cerrarse, permaneciendo en un estado de falla permanente ',
             ]),
-        new Item('anemicDomain',
+        new Item(Keys.MALAS_PRACTICAS_ANEMIC_DOMAIN,
             [
                 '- Se refiere a un modelo de dominio que carece de detalles y profundidad, en el contexto de <em>DDD</em>',
                 '- Este modelo no proporciona una comprensión suficiente del dominio, ni de los problemas que se pretenden resolver ',
