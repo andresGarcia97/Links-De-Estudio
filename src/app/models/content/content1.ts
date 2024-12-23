@@ -625,7 +625,7 @@ export const WEB =
                 '- Además de la identidad es importante saberlos combinar y tener un buen contraste y legibilidad entre si ',
                 '- El uso de las imagenes y las fuentes tipograficas son más importantes de lo que parecen ',
             ]),
-        new Item('interfacesUsuario',
+        new Item(Keys.WEB_USER_INTERFACE,
             [
                 '<strong>Principios para el diseño de una UI</strong>',
                 '<strong>- Familiaridad con el usuario:</strong> Utilizar conceptos y la experiencia del usuario para que le sea más "facil" de usar ',

@@ -746,6 +746,25 @@ export const ARQUITECTURAS =
                 '<strong>- Debugging/Logging:</strong> Rastrear y monitorear puede resultar dificil, especialmente entre más productores y consumidores existan ',
                 '<strong>- Coherencia Eventual:</strong> Que las actualizaciones del sistema se propaguen y logren una coherencia solida, puede requerir coordinación extra',
                 '<strong>- Gastos:</strong> El manejo de eventos y la infraestructura necesaria para estos, pueden consumir más recursos y tener mayor latencia ',
+            ]),
+        new Item(Keys.ARQUITECTURAS_LAYERS_SOFTWARE,
+            [
+                '- Construir aplicaciones de software modernas, requiere entender/conocer/implementar de 5 capas fundamentales ',
+                '',
+                '<strong>User Interface/User Experience:</strong> Capa interactiva, generalmente grafica, con la interactua el usuario y el software ',
+                '- Tech Stack: Angular, Vue, React, Astro',
+                '',
+                '<strong>API Layer:</strong> Puente de comunicación entre componentes, ya sean interacciones asincronas/sincronas ',
+                '- Tech Stack: REST, GraphQL, SOAP',
+                '',
+                '<strong>Business Logic:</strong> Es el cerebro de la aplicación, donde sucede el procesamiento de la información y las reglas de negocio ',
+                '- Tech Stack: Java, Spring, Python, Go, C++',
+                '',
+                '<strong>Database:</strong> El hogar de tus datos, un lugar seguro y confiable para guardar y consultar tus datos ',
+                '- Tech Stack: PostgreSQL, Oracle, MongoDB, Redis',
+                '',
+                '<strong>Infraestructure:</strong> La base sobre la cual todo corre, aun con el auge de la nube, tambien puede existir de manera local ',
+                '- Tech Stack: AWS, Docker, Kubernetes, Azure',
             ])
     ];
 
@@ -1132,7 +1151,7 @@ export const CONTENEDORES =
                 '- Los contenedores de Docker estan diseñados para ejecutar un unico proceso, por contenedor ',
                 '- Mientras que <em>Lxc</em> esta orientado a replicar distribuciones de Linux, <em>Docker</em> solo el de empaquetar aplicaciones individuales '
             ]),
-        new Item('docker',
+        new Item(Keys.CONTENEDORES_DOCKER,
             [
                 '- Esta basado en el Kernel de Linux y su proposito es segregar los procesos de manera que sean independientes ',
                 '- Reduce el consumo de recursos al solo tener lo necesario para ejecutar los procesos ',

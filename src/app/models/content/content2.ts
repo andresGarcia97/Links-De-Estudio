@@ -262,11 +262,17 @@ export const ANALISIS =
                 '- Al ser problemas raros, es más costoso y complejo evitar que sucedan a controlarlos cuando suceden ',
                 '- Además de que se agregaria complejidad extra por un esceneario poco probable ',
             ]),
-        new Item('modeloDominio',
+        new Item(Keys.ANALISIS_MODEL_DOMAIN,
             [
-                '<strong>- Dominio:</strong> Es el problema que quieres resolver, reglas de negocio, procesos, subtareas, etc...',
-                '<strong>- Modelo:</strong> Es la abstracción de la realidad, en el contexto determinado, para darle solución al problema en cuestión ',
-                '<strong>- Modelo de Dominio:</strong> Organización y estructura de todo el conocimiento aceca del problema, sus partes, actores, relaciones, alcance, etc...',
+                '<strong>Dominio:</strong> Es el problema que quieres resolver, reglas de negocio, procesos, subtareas, etc...',
+                '- Para dominios complejos y altamente conectados, probablemente se deba dividir en subdominios acotados y claramente definidos ',
+                '',
+                '<strong>Modelo:</strong> Es la abstracción de la realidad, en el contexto determinado, para darle solución al problema en cuestión ',
+                '- Tambien suele estar acompañado de alguna descripción o imagenes que especifiquen alguna función, estructura o comportamiento ',
+                '',
+                '<strong>Modelo de Dominio:</strong> Organización y estructura de todo el conocimiento acerca del problema, sus partes, actores, relaciones, alcance, etc...',
+                '- Se debe colocar en el foco la logica de negocio, que sera el nucleo(core)',
+                '- Es de construcción grupal y colaborativa, teniendo en cuenta partes tecnicas y expertas del negocio'
             ]),
         new Item('timeComplexityBigO',
             [

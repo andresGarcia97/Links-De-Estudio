@@ -50,33 +50,16 @@ export const META_ESTRUCTURAS_ESTRUCTURAS_DATOS_2 = 'estructurasDatos2';
 export const META_ESTRUCTURAS_MAQUINA_ESTADOS = 'maquinaEstados';
 export const META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION = 'serializationDeserialization';
 export const META_ESTRUCTURAS_DEPRECATION = 'deprecation';
-export const METODOLOGIAS_AGILES = 'agiles';
-export const METODOLOGIAS_MODEL_BING_BANG = 'metodologiaBingBang';
-export const METODOLOGIAS_MODEL_V = 'metodologiaModelV';
-export const METODOLOGIAS_SCRUMBAN = 'metodologiaScrumban';
-export const METODOLOGIAS_LEAN = 'lean';
 export const SECURITY_PROTOCOLOS_SEGURITY = 'protocolosSecurity';
 export const SECURITY_LEAST_PRIVILEGE = 'leastPrivilege';
 export const SECURITY_AUTHENTICATION_WAYS = 'authenticationWays';
-export const ANALISIS_DATA_REVERSE_ENGINEERING = 'ingenieriaInversa';
-export const ANALISIS_DATA_DSL = 'domainSpecificLanguage-dsl';
-export const ANALISIS_DATA_DATA_ANALISIS_TYPES = 'dataAnalisisTypes';
-export const ANALISIS_DATA_SYSTEMS_INFORMATION = 'sistemsInformation';
-export const ANALISIS_DATA_DATA_STORING = 'dataStoring';
-export const ANALISIS_DATA_ETL_ELT = 'etl&elt';
-export const ANALISIS_DATA_THEORY_OF_INFORMATION = 'theoryOfInformation';
-export const ANALISIS_DATA_CHANGE_DATA_CAPTURE = 'changeDataCapture';
-export const ANALISIS_DATA_GOLDEN_RECORD = 'goldenRecord';
-export const ANALISIS_DATA_BATCH_VS_STREAM = 'batchVsStreamProcessing';
-export const ANALISIS_DATA_OLAP_OLTP = 'OLAPVsOLTP';
-export const ANALISIS_DATA_DEDUPLICATION = 'deduplication';
 export const PRINCIPIOS_SOLID = 'SOLID';
 export const PRINCIPIOS_KISS = 'KISS';
 export const PRINCIPIOS_DRY = 'DRY';
 export const CD_CI_CD_CI = 'cd-ci';
 export const CD_CI_CELL_BASED_ARQUITECTURE = 'cellBasedArquitecture';
 
-export const LAST_ITEM = Keys.TESTING_ADVANCED_APDEX;
+export const LAST_ITEM = Keys.ARQUITECTURAS_LAYERS_SOFTWARE;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -111,7 +94,7 @@ export const ANALISIS_REF = new Map<string, Referencia>([
     ['diseño', new Referencia('https://www.bravent.net/la-importancia-de-un-buen-diseno-del-software/', 'Ventajas de un buen diseño', ANALISIS_KEY, 'Un buen diseño')],
     ['crc', new Referencia('https://medium.com/@marcosrrg9813/tarjetas-crc-clase-responsabilidad-colaborador-81924cec3af0', 'Tarjetas Clase-Responsabilidad-Colaborador', ANALISIS_KEY, 'Tarjetas CRC')],
     ['avestruz', new Referencia('https://geeks.ms/gvelez/2009/09/28/el-algoritmo-del-avestruz-en-sharepoint/', 'Algoritmo del Avestruz', ANALISIS_KEY, 'Avestruz')],
-    ['modeloDominio', new Referencia('https://es.stackoverflow.com/questions/102490/que-es-el-modelo-de-dominio-en-dise%C3%B1o-de-software', 'Modelo de Dominio', ANALISIS_KEY, 'Modelo de dominio')],
+    [Keys.ANALISIS_MODEL_DOMAIN, new Referencia('https://es.stackoverflow.com/questions/102490/que-es-el-modelo-de-dominio-en-dise%C3%B1o-de-software', 'Modelo de Dominio', ANALISIS_KEY, 'Modelo de dominio', '', '2024/12/22').addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_DDD)],
     ['timeComplexityBigO', new Referencia('https://www.freecodecamp.org/news/big-o-cheat-sheet-time-complexity-chart/', 'Big O Notación', ANALISIS_KEY, 'Big O Notación', '2022/12/30')],
     //['kpis', new Referencia('https://www.ibm.com/garage/method/practices/learn/kpis-measure-guide-progress/', 'KPIs', ANALISIS_KEY, 'KPI', '2022/12/30')],
     [Keys.ANALISIS_KPI, new Referencia('https://www.ibm.com/garage/method/practices/learn/kpis-measure-guide-progress/', 'KPI', ANALISIS_KEY, 'KPI', '2022/12/30', '2024/07/27')],
@@ -152,6 +135,7 @@ export const ARQUITECTURAS_REF = new Map<string, Referencia>([
     ['monolitosModulares', new Referencia('https://levelup.gitconnected.com/architecture-style-modulith-vs-microservices-90c7c75713db', 'Monolitos Modulares', ARQUITECTURAS_KEY, 'Monolitos Modulares')],
     ['descomposicionModular', new Referencia('https://ittgweb.wordpress.com/2016/05/29/descomposicion-modular/', 'Descomposición Modular', ARQUITECTURAS_KEY, 'Descomposición', '2024/05/25')],
     [Keys.ARQUITECTURAS_EVENT_DRIVEN, new Referencia('https://medium.com/@alxkm/java-event-driven-architecture-dc456d324ba5', 'Basada en Eventos', ARQUITECTURAS_KEY, 'Basada en Eventos', '2024/06/17').addRelatedItem(Keys.NUBE_OBSERVABILIDAD)],
+    [Keys.ARQUITECTURAS_LAYERS_SOFTWARE, new Referencia('https://www.linkedin.com/posts/brijpandeyji_building-software-at-scale-requires-a-clear-activity-7276459295502655488-dLTk/', 'Capas del Software', ARQUITECTURAS_KEY, 'Capas del Software', '2024/12/22').addRelatedItem(Keys.APIS_REST_VS_MESSAGING).addRelatedItem(Keys.PERSISTENCY_DBMS).addRelatedItem(Keys.WEB_USER_INTERFACE).addRelatedItem(Keys.CONTENEDORES_DOCKER).addRelatedItem(Keys.ANALISIS_MODEL_DOMAIN)],
 ]);
 
 export const BUENAS_PRACTICAS_KEY = 'Buenas-Practicas';
@@ -218,7 +202,7 @@ export const COMPILACION_REF = new Map<string, Referencia>([
     [Keys.COMPILACION_STRUCTURE_COMPILATOR, new Referencia('https://vicente-aguilera-perez.medium.com/estructura-general-de-un-compilador-df97892f91c3', 'Estructura de un compilador I', COMPILACION_KEY, 'Estructura general I', '2024/02/28')],
     [Keys.COMPILACION_ELEMENTS_COMPILATOR, new Referencia('https://vicente-aguilera-perez.medium.com/estructura-general-de-un-compilador-df97892f91c3', 'Estructura de un compilador II', COMPILACION_KEY, 'Estructura general II', '2024/02/28')],
     [Keys.COMPILACION_STREAMS, new Referencia('https://medium.com/javarevisited/best-practices-for-using-java-stream-f0f7585f13ba', 'Streams', COMPILACION_KEY, 'Streams', '2024/06/29').addRelatedItem(Keys.POO_INMUTABILITY)],
-    [Keys.COMPILACION_DECOMPILE, new Referencia('https://www.techtarget.com/whatis/definition/decompile', 'Descompilar', COMPILACION_KEY, 'Descompilar', '2024/07/21').addRelatedItem(ANALISIS_DATA_REVERSE_ENGINEERING)],
+    [Keys.COMPILACION_DECOMPILE, new Referencia('https://www.techtarget.com/whatis/definition/decompile', 'Descompilar', COMPILACION_KEY, 'Descompilar', '2024/07/21').addRelatedItem(Keys.ANALISIS_DATA_REVERSE_ENGINEERING)],
     [Keys.COMPILACION_INSTRUMENTS, new Referencia('https://foojay.io/today/who-instruments-the-instrumenters/', 'Instrumentos', COMPILACION_KEY, 'Instrumentos', '2024/08/18').addRelatedItem(Keys.FRAMEWORKS_FRAMEWORKS).addRelatedItem(Keys.TESTING_MOCKS)],
     [Keys.COMPILACION_OBJECT_CREATION, new Referencia('https://medium.com/technology-hits/minimizing-object-creation-for-high-performance-java-applications-553f9c9278c1', 'Creacion de Objetos', COMPILACION_KEY, 'Objetos', '2024/11/23').addRelatedItem(Keys.PATRONES_DESGLOSE_GOF)]
 ]);
@@ -271,7 +255,7 @@ export const CONTENEDORES_KEY = 'Contenedores';
 export const CONTAINERS = new Map<string, Referencia>([
     //['lxc', new Referencia('https://www.section.io/engineering-education/lxc-vs-docker-what-is-the-difference-and-why-docker-is-better/', 'Linux Containers', CONTENEDORES_KEY, 'Linux Containers')],
     ['lxc', new Referencia('https://earthly.dev/blog/lxc-vs-docker/', 'Linux Containers', CONTENEDORES_KEY, 'Linux Containers', '', '2024/04/06')],
-    ['docker', new Referencia('https://www.xataka.com/otros/docker-a-kubernetes-entendiendo-que-contenedores-que-mayores-revoluciones-industria-desarrollo', '¿ Que es Docker ?', CONTENEDORES_KEY, 'Docker')],
+    [Keys.CONTENEDORES_DOCKER, new Referencia('https://www.xataka.com/otros/docker-a-kubernetes-entendiendo-que-contenedores-que-mayores-revoluciones-industria-desarrollo', '¿ Que es Docker ?', CONTENEDORES_KEY, 'Docker')],
     ['images', new Referencia('https://clouding.io/hc/es/articles/360010283060-Trabajando-con-im%C3%A1genes-en-Docker', '¿ Que es una imagen ?', CONTENEDORES_KEY, 'Imagenes')],
     ['containers', new Referencia('https://aulasoftwarelibre.github.io/taller-de-docker/containers/', '¿ Que es un contenedor ?', CONTENEDORES_KEY, 'Contenedores')],
     ['volumes', new Referencia('https://www.josedomingo.org/pledin/2016/05/gestion-del-almacenamiento-en-docker', '¿ Que es un volumen ?', CONTENEDORES_KEY, 'Volumenes')],
@@ -415,25 +399,25 @@ export const META_ESTRUCTURAS_REF = new Map<string, Referencia>([
 
 export const METODOLOGIAS_KEY = 'Metodologias';
 export const METODOLOGIAS_REF = new Map<string, Referencia>([
-    [METODOLOGIAS_AGILES, new Referencia('https://www.iebschool.com/blog/que-son-metodologias-agiles-agile-scrum/', '¿ Que son las metodologias agiles ?', METODOLOGIAS_KEY, 'Agiles')],
+    [Keys.METODOLOGIAS_AGILES, new Referencia('https://www.iebschool.com/blog/que-son-metodologias-agiles-agile-scrum/', '¿ Que son las metodologias agiles ?', METODOLOGIAS_KEY, 'Agiles')],
     ['scrum', new Referencia('https://www.iebschool.com/blog/metodologia-scrum-agile-scrum/', 'Scrum', METODOLOGIAS_KEY, 'SCRUM')],
     ['scrumPrinciples', new Referencia('https://rootstack.com/es/blog/los-pilares-del-scrum-claves-para-la-gestion-de-procesos', 'Principios Scrum', METODOLOGIAS_KEY, 'Principios Scrum')],
     ['kanban', new Referencia('https://www.iebschool.com/blog/metodologia-kanban-agile-scrum/', 'Kanban', METODOLOGIAS_KEY, 'Kanban')],
     ['elevator', new Referencia('https://www.iebschool.com/blog/las-claves-para-realizar-un-elevator-pitch-lean-startup/', 'Elevator Pitch', METODOLOGIAS_KEY, 'Elevator Pitch')],
     ['canvas', new Referencia('https://www.iebschool.com/blog/que-es-el-modelo-canvas-y-como-aplicarlo-a-tu-negocio-agile-scrum/', 'Canvas', METODOLOGIAS_KEY, 'Canvas')],
     //['tradicionales', new Referencia('https://www.tutorialspoint.com/es/software_engineering/software_development_life_cycle.htm', 'Metodologias Tradicionales', METODOLOGIAS_KEY, 'Tradicionales')],
-    [METODOLOGIAS_MODEL_BING_BANG, new Referencia('https://www.tutorialspoint.com/es/software_engineering/software_development_life_cycle.htm', 'Bing Bang', METODOLOGIAS_KEY, 'Bing Bang', '2024/10/10')],
+    [Keys.METODOLOGIAS_MODEL_BING_BANG, new Referencia('https://www.tutorialspoint.com/es/software_engineering/software_development_life_cycle.htm', 'Bing Bang', METODOLOGIAS_KEY, 'Bing Bang', '2024/10/10')],
     ['cascada', new Referencia('https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/el-modelo-en-cascada/', 'Cascada', METODOLOGIAS_KEY, 'Cascada')],
     ['espiral', new Referencia('https://www.ionos.es/startupguide/productividad/modelo-en-espiral/', 'Espiral', METODOLOGIAS_KEY, 'Espiral')],
     ['iterativo', new Referencia('https://proyectosagiles.org/desarrollo-iterativo-incremental/', 'Iterativo-incremental', METODOLOGIAS_KEY, 'Iterativo-Incremental')],
     ['extrema', new Referencia('https://www.diegocalvo.es/metodologia-xp-programacion-extrema-metodologia-agil/', 'Programación Extrema', METODOLOGIAS_KEY, 'XP')],
     //['v', new Referencia('https://ingsoftware.weebly.com/ciclo-de-vida-en-v.html', 'Modelo en V', METODOLOGIAS_KEY, 'Modelo V')],
-    [METODOLOGIAS_MODEL_V, new Referencia('https://www.linkedin.com/posts/alexxubyte_systemdesign-coding-interviewtips-activity-7241834626241949696-v5Se/', 'Modelo en V', METODOLOGIAS_KEY, 'Modelo V', '', '2024/10/10')],
+    [Keys.METODOLOGIAS_MODEL_V, new Referencia('https://www.linkedin.com/posts/alexxubyte_systemdesign-coding-interviewtips-activity-7241834626241949696-v5Se/', 'Modelo en V', METODOLOGIAS_KEY, 'Modelo V', '', '2024/10/10')],
     ['rup', new Referencia('https://rupmetodologia.blogspot.com/?view=sidebar', 'Proceso Racional Unificado', METODOLOGIAS_KEY, 'RUP')],
     ['kaizen', new Referencia('https://www.movertis.com/blog/que-es-la-metodologia-kaizen', 'Kaizen', METODOLOGIAS_KEY, 'Kaizen')],
     //['scrumban', new Referencia('https://kanbantool.com/es/scrumban-scrum-y-kanb', 'Scrumban', METODOLOGIAS_KEY, 'Scrumban')],
-    [METODOLOGIAS_SCRUMBAN, new Referencia('https://www.atlassian.com/es/agile/project-management/scrumban', 'Scrumban', METODOLOGIAS_KEY, 'Scrumban', '', '2024/10/10')],
-    [METODOLOGIAS_LEAN, new Referencia('https://www.obsbusiness.school/blog/lean-management-metodologia-origenes-y-principios', 'Lean management', METODOLOGIAS_KEY, 'Lean')]
+    [Keys.METODOLOGIAS_SCRUMBAN, new Referencia('https://www.atlassian.com/es/agile/project-management/scrumban', 'Scrumban', METODOLOGIAS_KEY, 'Scrumban', '', '2024/10/10')],
+    [Keys.METODOLOGIAS_LEAN, new Referencia('https://www.obsbusiness.school/blog/lean-management-metodologia-origenes-y-principios', 'Lean management', METODOLOGIAS_KEY, 'Lean')]
 ]);
 
 export const NUBE_KEY = 'Nube';
@@ -482,19 +466,19 @@ export const ANALISIS_DATA_REF = new Map<string, Referencia>([
     ['scraping', new Referencia('https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/que-es-el-web-scraping/', 'Web Scrapping', ANALISIS_DATA_KEY, 'Web Scrapping')],
     ['mvp', new Referencia('https://www.inboundcycle.com/blog-de-inbound-marketing/bid/189238/qu-es-el-mvp-o-producto-m-nimo-viable', 'Minimo Producto Viable', ANALISIS_DATA_KEY, 'MVP')],
     ['turingComplete', new Referencia('https://www.eleconomista.es/economia/noticias/8817210/12/17/Ethereum-es-Turing-completo-y-eso-que-es.html', 'Turing Complete', ANALISIS_DATA_KEY, 'Turing Complete')],
-    [ANALISIS_DATA_REVERSE_ENGINEERING, new Referencia('https://ingenierosasesores.com/actualidad/ingenieria-inversa-concepto-aplicaciones/', 'Ingenieria Inversa', ANALISIS_DATA_KEY, 'Ingenieria Inversa')],
-    [ANALISIS_DATA_DSL, new Referencia('https://www.jetbrains.com/es-es/mps/concepts/domain-specific-languages/', 'Lenguaje de Dominio Especifico', ANALISIS_DATA_KEY, 'DSL')],
+    [Keys.ANALISIS_DATA_REVERSE_ENGINEERING, new Referencia('https://ingenierosasesores.com/actualidad/ingenieria-inversa-concepto-aplicaciones/', 'Ingenieria Inversa', ANALISIS_DATA_KEY, 'Ingenieria Inversa')],
+    [Keys.ANALISIS_DATA_DSL, new Referencia('https://www.jetbrains.com/es-es/mps/concepts/domain-specific-languages/', 'Lenguaje de Dominio Especifico', ANALISIS_DATA_KEY, 'DSL')],
     //['dataAnalisis', new Referencia('https://tienda.digital/4-tipos-de-analisis-de-datos-para-mejorar-la-toma-de-decisiones/', 'Analisis de datos', ANALISIS_KEY, 'Analisis de datos')],
-    [ANALISIS_DATA_DATA_ANALISIS_TYPES, new Referencia('https://cidei.net/4-tipos-de-analitica-de-datos-que-mejoran-tu-toma-de-decisiones/', 'Tipos de analitica', ANALISIS_DATA_KEY, 'Analitica de datos', '2022/09/26', '2024/06/23')],
-    [ANALISIS_DATA_SYSTEMS_INFORMATION, new Referencia('https://concepto.de/sistema-de-informacion/', 'Sistemas de Información', ANALISIS_DATA_KEY, 'Información', '', '2024/06/23')],
-    [ANALISIS_DATA_DATA_STORING, new Referencia('https://www.striim.com/blog/data-warehouse-vs-data-lake-vs-data-lakehouse-an-overview/', 'Analisis y almacenamiento de datos', ANALISIS_DATA_KEY, 'Almacenamiento de datos', '2023/08/22')],
-    [ANALISIS_DATA_ETL_ELT, new Referencia('https://aws.amazon.com/es/compare/the-difference-between-etl-and-elt', 'ETL & ELT', ANALISIS_DATA_KEY, 'ETL & ELT', '2024/02/11')],
-    [ANALISIS_DATA_THEORY_OF_INFORMATION, new Referencia('https://www.ferrovial.com/es/stem/teoria-de-la-informacion/', 'Teoria de la información', ANALISIS_DATA_KEY, 'Teoria de la información', '2024/06/23').addRelatedItem(META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION)],
-    [ANALISIS_DATA_CHANGE_DATA_CAPTURE, new Referencia('https://www.confluent.io/learn/change-data-capture/', 'Change Data Capture', ANALISIS_DATA_KEY, 'CDC', '2024/07/28').addRelatedItem(Keys.PERSISTENCY_ADVANCED_WAL)],
-    [ANALISIS_DATA_GOLDEN_RECORD, new Referencia('https://www.stibosystems.com/blog/benefits-of-creating-golden-customer-records', 'Golden Record', ANALISIS_DATA_KEY, 'Golden Record', '2024/08/10')],
-    [ANALISIS_DATA_BATCH_VS_STREAM, new Referencia('https://estuary.dev/batch-processing-vs-stream-processing/', 'Batch Vs Stream Processing', ANALISIS_DATA_KEY, 'Batch Vs Stream', '2024/08/31')],
-    [ANALISIS_DATA_OLAP_OLTP, new Referencia('https://aws.amazon.com/es/compare/the-difference-between-olap-and-oltp/', 'OLAP & OLTP', ANALISIS_DATA_KEY, 'OLAP & OLTP', '2024/09/15')],
-    [ANALISIS_DATA_DEDUPLICATION, new Referencia('https://www.netapp.com/es/data-management/what-is-data-deduplication/', 'Deduplicación', ANALISIS_DATA_KEY, 'Deduplicación', '2024/11/24')],
+    [Keys.ANALISIS_DATA_DATA_ANALISIS_TYPES, new Referencia('https://cidei.net/4-tipos-de-analitica-de-datos-que-mejoran-tu-toma-de-decisiones/', 'Tipos de analitica', ANALISIS_DATA_KEY, 'Analitica de datos', '2022/09/26', '2024/06/23')],
+    [Keys.ANALISIS_DATA_SYSTEMS_INFORMATION, new Referencia('https://concepto.de/sistema-de-informacion/', 'Sistemas de Información', ANALISIS_DATA_KEY, 'Información', '', '2024/06/23')],
+    [Keys.ANALISIS_DATA_DATA_STORING, new Referencia('https://www.striim.com/blog/data-warehouse-vs-data-lake-vs-data-lakehouse-an-overview/', 'Analisis y almacenamiento de datos', ANALISIS_DATA_KEY, 'Almacenamiento de datos', '2023/08/22')],
+    [Keys.ANALISIS_DATA_ETL_ELT, new Referencia('https://aws.amazon.com/es/compare/the-difference-between-etl-and-elt', 'ETL & ELT', ANALISIS_DATA_KEY, 'ETL & ELT', '2024/02/11')],
+    [Keys.ANALISIS_DATA_THEORY_OF_INFORMATION, new Referencia('https://www.ferrovial.com/es/stem/teoria-de-la-informacion/', 'Teoria de la información', ANALISIS_DATA_KEY, 'Teoria de la información', '2024/06/23').addRelatedItem(META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION)],
+    [Keys.ANALISIS_DATA_CHANGE_DATA_CAPTURE, new Referencia('https://www.confluent.io/learn/change-data-capture/', 'Change Data Capture', ANALISIS_DATA_KEY, 'CDC', '2024/07/28').addRelatedItem(Keys.PERSISTENCY_ADVANCED_WAL)],
+    [Keys.ANALISIS_DATA_GOLDEN_RECORD, new Referencia('https://www.stibosystems.com/blog/benefits-of-creating-golden-customer-records', 'Golden Record', ANALISIS_DATA_KEY, 'Golden Record', '2024/08/10')],
+    [Keys.ANALISIS_DATA_BATCH_VS_STREAM, new Referencia('https://estuary.dev/batch-processing-vs-stream-processing/', 'Batch Vs Stream Processing', ANALISIS_DATA_KEY, 'Batch Vs Stream', '2024/08/31')],
+    [Keys.ANALISIS_DATA_OLAP_OLTP, new Referencia('https://aws.amazon.com/es/compare/the-difference-between-olap-and-oltp/', 'OLAP & OLTP', ANALISIS_DATA_KEY, 'OLAP & OLTP', '2024/09/15')],
+    [Keys.ANALISIS_DATA_DEDUPLICATION, new Referencia('https://www.netapp.com/es/data-management/what-is-data-deduplication/', 'Deduplicación', ANALISIS_DATA_KEY, 'Deduplicación', '2024/11/24')],
 ]);
 
 export const PARADIGMAS_KEY = 'Paradigmas';
@@ -553,7 +537,7 @@ export const PEOPLE_REF = new Map<string, Referencia>([
     ['hippoEfect', new Referencia('https://www.forbes.com/sites/bernardmarr/2017/10/26/data-driven-decision-making-beware-of-the-hippo-effect/?sh=4106860c80f9', 'Efecto HIPPO', PEOPLE_KEY, 'Efecto H.I.P.P.O', '2023/11/06')],
     ['burnout', new Referencia('https://chubernetes.com/navigating-tech-industry-burnout-03c015337ba0', 'Sindrome de Burnout', PEOPLE_KEY, 'Burnout', '2024/04/21')],
     ['ona', new Referencia('https://www.linkedin.com/posts/jgarzas_an%C3%A1lisis-de-redes-organizacionales-ona-activity-7185677261528842240-EQvR/', 'Analisis de Redes Organizacionales', PEOPLE_KEY, 'ONA', '2024/04/22')],
-    [Keys.PEOPLE_PROCESS_BLOAT, new Referencia('https://ardalis.com/process-bloat-silent-killer-developer-productivity/', 'Hinchazon de procesos', PEOPLE_KEY, 'Process Bloat', '2024/06/01').addRelatedItem(Keys.LEYES_LEHMAN).addRelatedItem(METODOLOGIAS_LEAN).addRelatedItem(METODOLOGIAS_AGILES)],
+    [Keys.PEOPLE_PROCESS_BLOAT, new Referencia('https://ardalis.com/process-bloat-silent-killer-developer-productivity/', 'Hinchazon de procesos', PEOPLE_KEY, 'Process Bloat', '2024/06/01').addRelatedItem(Keys.LEYES_LEHMAN).addRelatedItem(Keys.METODOLOGIAS_LEAN).addRelatedItem(Keys.METODOLOGIAS_AGILES)],
     [Keys.PEOPLE_TRIANGLES_SUCCESS, new Referencia('https://www.entrepreneur.com/growing-a-business/the-triangles-of-success-are-more-than-a-good-laugh/279979', 'Triangulos del exito', PEOPLE_KEY, 'Triangulos del exito', '2024/11/21')],
 ]);
 
@@ -808,7 +792,7 @@ export const WEB_REF = new Map<string, Referencia>([
     //['espacio', new Referencia('https://www.dsigno.es/blog/diseno-grafico/espacios-negativos-en-diseno-grafico', 'El uso del espacio para diseñar', WEB_KEY, 'Espacio Negativo')],
     [Keys.WEB_SPACE, new Referencia('https://heyjaime.com/blog/espacio-negativo/', 'El uso del espacio para diseñar', WEB_KEY, 'Espacio Negativo', '', '2024/12/13')],
     ['diseno', new Referencia('https://seocom.agency/es/blog/diseno-grafico-web/', 'Diseño grafico', WEB_KEY, 'Diseño Grafico')],
-    ['interfacesUsuario', new Referencia('https://pensamientodigital.wordpress.com/diseno-de-interfases-de-usuario/', 'Interfaces de usuario', WEB_KEY, 'UI')],
+    [Keys.WEB_USER_INTERFACE, new Referencia('https://pensamientodigital.wordpress.com/diseno-de-interfases-de-usuario/', 'Interfaces de usuario', WEB_KEY, 'UI')],
     ['experienciaUsuario', new Referencia('https://www.coursera.org/articles/ui-vs-ux-design', 'Experiencia de usuario', WEB_KEY, 'UX')],
     ['logos', new Referencia('https://franciscotorreblanca.es/logotipo-imagotipo-isotipo-e-isologo/', 'Logotipo, Imagotipo, Isotipo, Isologo', WEB_KEY, 'Logos')],
     //['experienciasUsuario', new Referencia('https://blog.acantu.com/que-es-ux-y-ui/', 'Experiencia de usuario', WEB_KEY, 'UX')],
