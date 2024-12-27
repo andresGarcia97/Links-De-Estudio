@@ -44,7 +44,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.PEOPLE_SOMBREROS_PENSAMIENTO;
+export const LAST_ITEM = Keys.CD_CI_RULES;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -155,7 +155,7 @@ export const CALIDAD_REF = new Map<string, Referencia>([
     ['qualityGates', new Referencia('https://docs.sonarqube.org/latest/user-guide/quality-gates/', 'Politicas de calidad', CALIDAD_KEY, 'Politicas de calidad')],
     ['qualityMetrics', new Referencia('https://docs.sonarqube.org/latest/user-guide/metric-definitions/', 'Definición de Metricas', CALIDAD_KEY, 'Metricas de calidad')],
     ['codeReviews', new Referencia('https://www.atlassian.com/blog/add-ons/code-review-best-practices', 'Revisiones de codigo', CALIDAD_KEY, 'Revisiones')],
-    ['linting', new Referencia('https://www.freecodecamp.org/espanol/news/que-es-linting-y-eslint/', 'Linting', CALIDAD_KEY, 'Linting')],
+    [Keys.CALIDAD_LINTING, new Referencia('https://www.freecodecamp.org/espanol/news/que-es-linting-y-eslint/', 'Linting', CALIDAD_KEY, 'Linting', '', '2024/12/26')],
     ['analystQA', new Referencia('https://ed.team/blog/que-es-y-que-hace-un-analista-qa', 'Analista de QA', CALIDAD_KEY, 'Analista de QA')],
     ['codeReviewPyramid', new Referencia('https://www.morling.dev/blog/the-code-review-pyramid/', 'Piramide del CodeReview', CALIDAD_KEY, 'Piramide del Code Review')],
     ['doraAndSpaceMetrics', new Referencia('https://echometerapp.com/es/dora-and-space-metrics/', 'Metricas DORA & SPACE', CALIDAD_KEY, 'DORA & SPACE')],
@@ -566,7 +566,7 @@ export const TESTING_REF = new Map<string, Referencia>([
     //['aaa', new Referencia('http://oscarmoreno.com/pruebas-unitarias/', 'Arrange-Act-Assert', TESTING_KEY, 'AAA')],
     ['aaa', new Referencia('https://medium.com/@rojasjimenezjosea/aaa-unit-testing-688e3e61902a', 'Arrange-Act-Assert', TESTING_KEY, 'AAA', '', '2024/07/11')],
     ['gwt', new Referencia('https://softwareengineering.stackexchange.com/questions/308160/differences-between-given-when-then-gwt-and-arrange-act-assert-aaa', 'Given-When-Then', TESTING_KEY, 'GWT')],
-    ['piramide', new Referencia('https://medium.com/@wc.testing.qa/la-famosa-pir%C3%A1mide-de-cohn-y-la-dura-realidad-e1250dfbe5f3', 'Piramide de tests', TESTING_KEY, 'Piramides de tests')],
+    [Keys.TESTING_PIRAMIDE, new Referencia('https://medium.com/@wc.testing.qa/la-famosa-pir%C3%A1mide-de-cohn-y-la-dura-realidad-e1250dfbe5f3', 'Piramide de tests', TESTING_KEY, 'Piramide de tests', '', '2024/12/26')],
     ['triangulo', new Referencia('https://proyectosagiles.org/triangulo-hierro/', 'Triangulo de Hierro', TESTING_KEY, 'Triangulo de Hierro')],
     ['cobertura', new Referencia('https://argonur.com/2020/05/11/code-coverage-cobertura-de-codigo/', 'Cobertura de pruebas', TESTING_KEY, 'Cobertura')],
     //['falsos', new Referencia('https://www.qalovers.com/2015/03/diferencia-entre-falso-positivo-y-falso_5.html#:~:text=La%20definici%C3%B3n%20de%20falso%20negativo,sistema%20que%20est%C3%A1%20realmente%20infectada.%22&text=Un%20falso%20negativo%20llevado%20a,cuando%20en%20realidad%20est%C3%A1%20fallando.', 'Falsos positivos & Falsos negativos', TESTING_KEY, 'Falsos Resultados')],
@@ -820,4 +820,5 @@ export const CD_CI_REF = new Map<string, Referencia>([
     ['industrialDevops', new Referencia('https://itrevolution.com/articles/what-is-industrial-devops/', 'Industrial DevOps', CD_CI_KEY, 'Industrial DevOps', '2023/11/21')],
     ['pipelines', new Referencia('https://semaphoreci.com/blog/cicd-pipeline', 'Pipelines', CD_CI_KEY, '¿ Que es un Pipeline ?', '2023/12/26')],
     [Keys.CD_CI_CELL_BASED_ARQUITECTURE, new Referencia('https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of-impact-with-cell-based-architecture/what-is-a-cell-based-architecture.html', 'Cell Based Arquitecture', CD_CI_KEY, 'Cell Based Arquitecture', '2024/08/25')],
+    [Keys.CD_CI_RULES, new Referencia('https://semaphoreci.com/blog/rules-ci-pipeline', 'Rules', CD_CI_KEY, 'Rules', '2024/12/26').addRelatedItem(Keys.GIT_BRANCHS).addRelatedItem(Keys.CALIDAD_LINTING).addRelatedItem(Keys.TESTING_PIRAMIDE).addRelatedItem(Keys.CONTENEDORES_DOCKER)],
 ]);

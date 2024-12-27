@@ -183,7 +183,7 @@ export const CALIDAD =
                 ' - de manera que esto no se convierta en una carga impositiva, si no que sea un espacio colaborativo y de aprendizaje ',
                 ' - y que el proceso se pueda convertir en punto de referencia para detectar y corregir errores antes de que su costo aumente ',
             ]),
-        new Item('linting',
+        new Item(Keys.CALIDAD_LINTING,
             [
                 '- Son una ayuda para encontrar errores y falencias en nuestro codigo durante la etapa de desarrollo, como:',
                 '',
@@ -193,6 +193,11 @@ export const CALIDAD =
                 '- Estos errores suelen ser comunes, dado que suelen ser menos evidentes y generalmente poco graves, pero siguen estando ahi ',
                 '- Estas herramientas no solo nos muestran los posibles errores, tambien pueden dar sugerencias de posibles soluciones ',
                 '- Tambien permiten la configuración de nuevas reglas para cuando se trabaja en equipo y mantener la consistencia ',
+                '',
+                '<strong>Partes:</strong>',
+                '<strong>- Parser:</strong> Se encarga de traducir el codigo escrito, a una representación entendible por la maquina, como un Arbol ',
+                '<strong>- Reglas:</strong> Es una colección de logica, que permite identificar problemas potenciales y posibles soluciones ',
+                '<strong>- Resultado:</strong> Se muestra el reporte de las reglas que se infringierón ',
             ]),
         new Item('analystQA',
             [
