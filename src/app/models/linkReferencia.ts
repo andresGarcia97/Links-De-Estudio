@@ -44,7 +44,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.CD_CI_RULES;
+export const LAST_ITEM = Keys.USER_HISTORIES_DOR_DOD;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -316,6 +316,7 @@ export const USER_HISTORIES = new Map<string, Referencia>([
     ['casosVsRequisitosVsHu', new Referencia('http://www.angellozano.com/requisitos-del-sistema-vs-casos-uso-vs-historias-usuario/', 'HU Vs Casos de uso', USER_HISTORIES_KEY, 'Hu Vs Casos de Uso')],
     [Keys.USER_HISTORIES_FORMATS, new Referencia('https://www.linkedin.com/posts/jgarzas_agilidad-bdd-hdd-activity-7178798486358802434-ZK5i/', 'HU Formatos alternativos', USER_HISTORIES_KEY, 'Formatos alternativos', '2024/04/28')],
     [Keys.USER_HISTORIES_ESTIMATIONS, new Referencia('https://www.linkedin.com/posts/jgarzas_las-3-familias-de-estimacion-agil-javier-activity-7231351751667310592-To3O/', 'Estimación Agil', USER_HISTORIES_KEY, 'Estimación Agil', '2024/09/28')],
+    [Keys.USER_HISTORIES_DOR_DOD, new Referencia('https://www.linkedin.com/pulse/historias-de-usuario-dor-y-dod-clave-para-la-del-remedios-d%C3%ADaz/', 'Definition Of Done & Definition Of Ready', USER_HISTORIES_KEY, 'DoR & DoD', '2024/12/29')],
 ]);
 
 export const MALAS_PRACTICAS_KEY = 'Malas-Practicas';

@@ -209,5 +209,6 @@ export const USER_HISTORIES_SMART = 'smart';
 export const USER_HISTORIES_3C = '3c';
 export const USER_HISTORIES_FORMATS = 'historiesFormats';
 export const USER_HISTORIES_ESTIMATIONS = 'historiasEstimacionAgil';
+export const USER_HISTORIES_DOR_DOD = 'dor-dod';
 export const UML_TYPES = 'tiposUml';
 export const UML_MODEL_C4 = 'c4Model';
