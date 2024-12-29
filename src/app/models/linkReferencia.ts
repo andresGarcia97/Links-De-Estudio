@@ -44,7 +44,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.USER_HISTORIES_DOR_DOD;
+export const LAST_ITEM = Keys.SMELL_CODES_ARCHITECTURAL_SMELLS;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -543,7 +543,7 @@ export const POO_REF = new Map<string, Referencia>([
     ['herVScomp', new Referencia('https://devexperto.com/herencia-vs-composicion/', 'Herencia VS Composición', POO_KEY, 'Herencia/Composición')],
     //['enlaces', new Referencia('https://es.fondoperlaterra.org/comdifference-between-static-and-dynamic-binding-2', 'Enlace estatico & dinamico', POO_KEY, 'Enlaces')],
     [Keys.POO_ENLACES, new Referencia('https://www.geeksforgeeks.org/static-vs-dynamic-binding-in-java/', 'Enlace estatico & dinamico', POO_KEY, 'Enlaces', '', '2024/10/27')],
-    ['acoplamientoComponentes', new Referencia('https://mg-laboratory.tistory.com/189', 'Acoplamiento de componentes', POO_KEY, 'SDP, ADP, SAP')],
+    [Keys.POO_COUPLING_COMPONENTS, new Referencia('https://mg-laboratory.tistory.com/189', 'Acoplamiento de componentes', POO_KEY, 'SDP, ADP, SAP')],
     ['beginingPoo', new Referencia('https://medium.com/javascript-scene/the-forgotten-history-of-oop-88d71b9b2d9f', 'Nacimiento de Poo', POO_KEY, 'Inicios de POO')],
     [Keys.POO_INMUTABILITY, new Referencia('https://www.campusmvp.es/recursos/post/programacion-funcional-inmutabilidad-y-funciones-puras.aspx', 'Inmutabilidad', POO_KEY, 'Inmutabilidad')],
     ['typesPolimorfismo', new Referencia('https://medium.com/lenguajes-y-dialectos-en-programaci%C3%B3n/polimorfismo-y-paradigmas-tipos-y-ejemplos-ca6a56093a66', 'Tipos de Polimorfismo', POO_KEY, 'Tipos de Polimorfismo')],
@@ -597,8 +597,8 @@ export const TESTING_ADVANCED_REF = new Map<string, Referencia>([
 
 export const REFACTORING_KEY = 'Refactorizacion';
 export const REFACTORING_REF = new Map<string, Referencia>([
-    [Keys.REFACTORING_CLEAN_CODE, new Referencia('https://refactoring.guru/es/refactoring/what-is-refactoring', '¿ Que es Codigó Limpio ?', REFACTORING_KEY, 'Codigó limpio')],
-    ['deudatecnica', new Referencia('https://refactoring.guru/es/refactoring/technical-debt', 'Deuda tecnica', REFACTORING_KEY, 'Deuda tecnica')],
+    [Keys.REFACTORING_CLEAN_CODE, new Referencia('https://refactoring.guru/es/refactoring/what-is-refactoring', '¿ Que es Codigó Limpio ?', REFACTORING_KEY, 'Codigó Limpio')],
+    [Keys.REFACTORING_DEUDA_TECNICA, new Referencia('https://refactoring.guru/es/refactoring/technical-debt', 'Deuda tecnica', REFACTORING_KEY, 'Deuda tecnica')],
     ['tiposDeudaTecnica', new Referencia('https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/deuda-tecnica-explicada/', 'Tipos de deuda tecnica', REFACTORING_KEY, 'Tipos de deuda')],
     ['comentarios', new Referencia('https://www.scrummanager.net/bok/index.php?title=Deuda_t%C3%A9cnica', 'Comentarios especiales', REFACTORING_KEY, 'Comentar la deuda')],
     ['cuandorefactorizar', new Referencia('https://refactoring.guru/es/refactoring/when', '¿ Cuando refactorizar ?', REFACTORING_KEY, '¿ Cuando ?')],
@@ -671,12 +671,13 @@ export const SECURITY_REF = new Map<string, Referencia>([
 
 export const SMELL_CODES_KEY = 'Smell-Codes';
 export const SMELL_CODES_REF = new Map<string, Referencia>([
-    ['codesmells', new Referencia('https://openwebinars.net/blog/code-smells-y-deuda-tecnica/', 'Smell Codes', SMELL_CODES_KEY, 'Smell Codes', '2021/06/06')],
-    ['tiposSmellCodes', new Referencia('https://refactoring.guru/es/refactoring/smells', 'Tipos de Smell codes', SMELL_CODES_KEY, 'Tipos', '2021/06/06')],
-    ['desglose', new Referencia('https://refactoring.guru/es/refactoring/smells', 'Smell codes por tipo', SMELL_CODES_KEY, 'Desglose', '2021/06/06')],
-    ['casos', new Referencia('https://refactoring.guru/es/refactoring/smells', 'Casos donde pueden ser ignorados', SMELL_CODES_KEY, 'Casos especiales', '2021/06/06')],
-    ['payoff', new Referencia('https://refactoring.guru/es/refactoring/smells', 'Beneficios de corregir code smells', SMELL_CODES_KEY, 'Ganancias', '2021/06/06')],
-    ['designsmells', new Referencia('https://www.alpharithms.com/code-smell-492316/', 'Code smells en diseño', SMELL_CODES_KEY, 'A nivel de diseño', '2023/01/22')],
+    [Keys.SMELL_CODES_SMELLS_CODES, new Referencia('https://openwebinars.net/blog/code-smells-y-deuda-tecnica/', 'Smell Codes', SMELL_CODES_KEY, 'Smell Codes', '2021/06/06', '2024/12/29').addRelatedItem(Keys.REFACTORING_DEUDA_TECNICA).addRelatedItem(Keys.PRINCIPIOS_DRY)],
+    [Keys.SMELL_CODES_TYPES, new Referencia('https://refactoring.guru/es/refactoring/smells', 'Tipos de Smell Codes', SMELL_CODES_KEY, 'Tipos', '2021/06/06')],
+    [Keys.SMELL_CODES_DESGLOSE, new Referencia('https://refactoring.guru/es/refactoring/smells', 'Smell Codes por tipo', SMELL_CODES_KEY, 'Desglose', '2021/06/06')],
+    [Keys.SMELL_CODES_EXCEPTIONS, new Referencia('https://refactoring.guru/es/refactoring/smells', 'Casos donde pueden ser ignorados', SMELL_CODES_KEY, 'Casos especiales', '2021/06/06')],
+    [Keys.SMELL_CODES_PAY_OFF, new Referencia('https://refactoring.guru/es/refactoring/smells', 'Beneficios de corregir Code Smells', SMELL_CODES_KEY, 'Ganancias', '2021/06/06')],
+    [Keys.SMELL_CODES_DESIGN, new Referencia('https://www.alpharithms.com/code-smell-492316/', 'Code smells en Diseño', SMELL_CODES_KEY, 'A nivel de Diseño', '2023/01/22')],
+    [Keys.SMELL_CODES_ARCHITECTURAL_SMELLS, new Referencia('https://docs.arcan.tech/latest/architectural_smells/', 'Code smells en Arquitecturas', SMELL_CODES_KEY, 'A nivel de arquitectura', '2024/12/29').addRelatedItem(Keys.POO_COUPLING_COMPONENTS).addRelatedItem(Keys.POO_COUPLING_AND_COHESION).addRelatedItem(Keys.PATRONES_GOF).addRelatedItem(Keys.POO_HERENCIA).addRelatedItem(Keys.ANALISIS_SINGLE_POINT_OF_FAILURE)],
 ]);
 
 export const PERSISTENCY_KEY = 'Bases de Datos'

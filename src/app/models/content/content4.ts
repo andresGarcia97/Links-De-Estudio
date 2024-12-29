@@ -1558,7 +1558,7 @@ export const POO =
                 '- Lo demás que es necesario ejecutar el programa para conocer su valor y su comportamiento, se conoce como enlace dinamico ',
                 '- Los miembros privados, finales y estaticos usan el enlace estatico, mientras que los metodos anulados y en general son por enlace dinamico '
             ]),
-        new Item('acoplamientoComponentes',
+        new Item(Keys.POO_COUPLING_COMPONENTS,
             [
                 '- Los componentes deberian estar estructurados de manera jerarquica, y de manera que tengan poca complejidad entre sus relaciones, ',
                 '- Tambien es ideal reducir la dependencia entre si, en la medida de lo posible; Existen varios tipos a tener en cuenta: ',
