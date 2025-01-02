@@ -44,7 +44,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.REFACTORING_REWRITE_TRAP;
+export const LAST_ITEM = Keys.SECURITY_RBAC_ABAC;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -659,7 +659,7 @@ export const SECURITY_REF = new Map<string, Referencia>([
     ['zeroDayExploit', new Referencia('https://latam.kaspersky.com/resource-center/definitions/zero-day-exploit', 'Zero Day Exploit', SECURITY_KEY, 'Zero Day Exploit')],
     ['pentest', new Referencia('https://www.hiberus.com/crecemos-contigo/pentesting-owasp-fases-metodologia/', 'Testing de intrusión', SECURITY_KEY, 'Test de Intrusión')],
     ['owaspTop', new Referencia('https://owasp.org/Top10/', 'OWASP Top 10', SECURITY_KEY, 'OWASP Top 10')],
-    ['stride', new Referencia('https://www.softwaresecured.com/stride-threat-modeling/', 'STRIDE', SECURITY_KEY, 'STRIDE')],
+    ['stride', new Referencia('https://www.softwaresecured.com/post/stride-threat-modelling', 'STRIDE', SECURITY_KEY, 'STRIDE')],
     ['ciam', new Referencia('https://auth0.com/blog/why-do-you-need-ciam/', 'CIAM', SECURITY_KEY, 'CIAM')],
     ['lateralChanel', new Referencia('https://ciberseguridad.com/amenzas/ataque-canal-lateral/', 'Ataques de canal lateral', SECURITY_KEY, 'Ataques de canal lateral')],
     ['csp', new Referencia('https://auth0.com/blog/from-zero-to-hero-with-csp/', 'Content Security Police', SECURITY_KEY, 'Content Security Police', '2022/11/07')],
@@ -667,7 +667,8 @@ export const SECURITY_REF = new Map<string, Referencia>([
     ['restApiAuth', new Referencia('https://blog.bytebytego.com/p/ep91-rest-api-authentication-methods', 'Autenticación en APIs REST', SECURITY_KEY, 'REST API Authentication', '2024/02/15')],
     ['attacksOnModelOSI', new Referencia('https://blog.bytebytego.com/p/ep97-10-good-coding-principles-to#%C2%A7top-network-security-cheatsheet', 'Ataques contra el Modelo OSI', SECURITY_KEY, 'Modelo OSI', '2024/03/21')],
     [Keys.SECURITY_LEAST_PRIVILEGE, new Referencia('https://www.cyberark.com/what-is/least-privilege/', 'Menor privilegio', SECURITY_KEY, 'Menor Privilegio', '2024/06/16')],
-    [Keys.SECURITY_AUTHENTICATION_WAYS, new Referencia('https://medium.com/@iamprovidence/authentication-history-basic-digest-cookie-session-token-jwt-api-key-55d6c21be90b', 'Formas de Authenticación', SECURITY_KEY, 'Authenticación', '2024/07/21')]
+    [Keys.SECURITY_AUTHENTICATION_WAYS, new Referencia('https://medium.com/@iamprovidence/authentication-history-basic-digest-cookie-session-token-jwt-api-key-55d6c21be90b', 'Formas de Authenticación', SECURITY_KEY, 'Authenticación', '2024/07/21')],
+    [Keys.SECURITY_RBAC_ABAC, new Referencia('https://www.strongdm.com/blog/rbac-vs-abac', 'Control de Acceso', SECURITY_KEY, 'Control de Acceso', '2025/01/02')]
 ]);
 
 export const SMELL_CODES_KEY = 'Smell-Codes';

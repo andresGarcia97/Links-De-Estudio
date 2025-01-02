@@ -135,6 +135,7 @@ export const HARDWARE_CLEAN_CODE_PERFORMANCE = 'cleanCodeWorstPerformance';
 export const SECURITY_PROTOCOLOS_SEGURITY = 'protocolosSecurity';
 export const SECURITY_LEAST_PRIVILEGE = 'leastPrivilege';
 export const SECURITY_AUTHENTICATION_WAYS = 'authenticationWays';
+export const SECURITY_RBAC_ABAC = 'controlDeAcceso-rbac-abac';
 export const ANALISIS_DATA_REVERSE_ENGINEERING = 'ingenieriaInversa';
 export const ANALISIS_DATA_DSL = 'domainSpecificLanguage-dsl';
 export const ANALISIS_DATA_DATA_ANALISIS_TYPES = 'dataAnalisisTypes';

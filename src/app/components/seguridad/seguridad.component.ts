@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { SEGURIDAD } from 'src/app/models/content/content3';
-import { APIS_KEY, HARDWARE_KEY, LinkReferencia, NUBE_KEY, REQUISITOS_KEY, SECURITY_REF, WEB_KEY } from 'src/app/models/linkReferencia';
+import { APIS_KEY, HARDWARE_KEY, LinkReferencia, NUBE_KEY, REQUISITOS_KEY, SECURITY_REF, WEB_KEY }
+from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-seguridad',
