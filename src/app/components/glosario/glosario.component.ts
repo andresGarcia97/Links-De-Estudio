@@ -43,6 +43,7 @@ export class GlosarioComponent implements OnInit {
     console.info("%c Actualmente son: " + this.temas.length + " Temas ", "color:#000; font-size: 16px;background:#FFBA08; font-weight: bold;");
     console.info("%c Tambien hay: " + this.fuentes.size + " Temas practicos ", "color:white; font-size: 16px;background:#1976d2; font-weight: bold;");
 
+    const temas2025 = this.componentsWithDate.filter((x: any) => x.dateRead.includes('2025') || x.dateUpdate.includes('2025')).length;
     const temas2024 = this.componentsWithDate.filter((x: any) => x.dateRead.includes('2024') || x.dateUpdate.includes('2024')).length;
     const temas2023 = this.componentsWithDate.filter((x: any) => x.dateRead.includes('2023') || x.dateUpdate.includes('2023')).length;
     const temas2022 = this.componentsWithDate.filter((x: any) => x.dateRead.includes('2022') || x.dateUpdate.includes('2022')).length;
@@ -50,6 +51,7 @@ export class GlosarioComponent implements OnInit {
     const temasWithOutRevision = this.componentsWithDate.filter((x: any) => x.dateRead == '' && x.dateUpdate == '').length;
 
     const resumeActivity = `
+    Temas leidos/actualizados 2025: ${temas2025}\n
     Temas leidos/actualizados 2024: ${temas2024}\n
     Temas leidos/actualizados 2023: ${temas2023}\n
     Temas leidos/actualizados 2022: ${temas2022}\n

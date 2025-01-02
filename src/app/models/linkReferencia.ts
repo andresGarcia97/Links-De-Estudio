@@ -44,7 +44,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.SMELL_CODES_ARCHITECTURAL_SMELLS;
+export const LAST_ITEM = Keys.REFACTORING_REWRITE_TRAP;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -196,7 +196,7 @@ export const CONOCIMIENTO_EMPIRICO_KEY = 'Empirico';
 export const CONOCIMIENTO_EMPIRICO = new Map<string, Referencia>([
     ['cristales', new Referencia('https://lamenteesmaravillosa.com/la-teoria-las-ventanas-rotas/', 'Efecto de los cristales rotos', CONOCIMIENTO_EMPIRICO_KEY, 'Cristales rotos')],
     ['quo', new Referencia('https://psicologiaymente.com/social/sesgo-statu-quo/', 'Status Quo', CONOCIMIENTO_EMPIRICO_KEY, 'Status Quo')],
-    ['costo', new Referencia('https://psicologiaymente.com/psicologia/falacia-costo-hundido/', 'Falacia del costo hundido', CONOCIMIENTO_EMPIRICO_KEY, 'Costo Hundido')],
+    [Keys.CONOCIMIENTOS_EMPIRICOS_COSTO_HUNDIDO, new Referencia('https://psicologiaymente.com/psicologia/falacia-costo-hundido/', 'Falacia del costo hundido', CONOCIMIENTO_EMPIRICO_KEY, 'Costo Hundido')],
     ['tiposProgramadores', new Referencia('https://stevenbenner.com/2010/07/the-5-types-of-programmers/', 'Tipos de programadores', CONOCIMIENTO_EMPIRICO_KEY, 'Programadores')],
     ['sesgos', new Referencia('https://www.brainvestigations.com/neurociencia/sesgo-cognitivo-negocios/', 'Algunos Sesgos cognitivos', CONOCIMIENTO_EMPIRICO_KEY, 'Sesgo Cognitivo')],
     ['prejuicios', new Referencia('https://www.boream.com/insights/sesgos-cognitivos-y-prejuicios-en-los-procesos-de-diseno-de-interfaz-como-combatirlos', 'Prejuicios', CONOCIMIENTO_EMPIRICO_KEY, 'Prejuicios')],
@@ -609,6 +609,7 @@ export const REFACTORING_REF = new Map<string, Referencia>([
     [Keys.REFACTORING_MANAGE_DEUDA_TECNICA, new Referencia('https://newsletter.techworld-with-milan.com/p/how-to-deal-with-technical-debt', 'Manejo de la deuda tecnica', REFACTORING_KEY, '¿ Como manejarla ?', '2024/05/12')],
     [Keys.REFACTORING_MANAGE_DEPENDENCIES, new Referencia('https://levelup.gitconnected.com/world-of-dependencies-4639100d16ef', 'Manejo de las dependencias', REFACTORING_KEY, 'Dependencias', '2024/06/09').addRelatedItem(Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS).addRelatedItem(Keys.ARQUITECTURAS_CAPAS).addRelatedItem(Keys.FRAMEWORKS_IOD)],
     [Keys.REFACTORING_GOOD_AND_BAD_PRACTICES, new Referencia('https://www.builder.io/blog/good-vs-bad-refactoring', 'Buenas & Malas practicas', REFACTORING_KEY, 'Buenas & Malas practicas', '2024/09/08').addRelatedItem(Keys.WEB_SEO).addRelatedItem(Keys.PRINCIPIOS_KISS)],
+    [Keys.REFACTORING_REWRITE_TRAP, new Referencia('https://levelup.gitconnected.com/the-endless-rewrite-why-developers-fall-into-the-start-from-scratch-trap-and-how-to-avoid-it-4a2246837ac5', 'Refactorización & Reconstrucción', REFACTORING_KEY, 'Reconstrucción', '2025/01/01').addRelatedItem(Keys.CONOCIMIENTOS_EMPIRICOS_COSTO_HUNDIDO).addRelatedItem(Keys.PATRONES_STRANGLER_FIG)],
 ]);
 
 export const REQUISITOS_KEY = 'Requisitos';

@@ -380,7 +380,7 @@ export const CONOCIMIENTOS_EMPIRICOS =
                 '- Estos fenomenos se pueden dar en el mundo del software al no realizar refactors, o limpiezas en el codigo solamente porque, ',
                 ' - "funciona", aunque lo haga de manera complicada u poco optima ',
             ]),
-        new Item('costo',
+        new Item(Keys.CONOCIMIENTOS_EMPIRICOS_COSTO_HUNDIDO,
             [
                 '- La falacia del costo hundido es la tendencia a mantener proyectos fracasados ó obsoletos ',
                 '- Esto se debe al tiempo y gastos invertidos en los proyectos, que no queremos soltar por la aversion a las perdidas ',
