@@ -72,18 +72,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "links-estudio:build"
+            "buildTarget": "links-estudio:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "links-estudio:build:production"
+              "buildTarget": "links-estudio:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "links-estudio:build"
+            "buildTarget": "links-estudio:build"
           }
         },
         "test": {
