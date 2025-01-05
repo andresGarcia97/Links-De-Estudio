@@ -1903,9 +1903,26 @@ export const BASES_DE_DATOS =
         new Item(Keys.PERSISTENCY_ERD,
             [
                 '- Demuestra como las entidades (generalmente de una BD) se relacionan entre si ',
-                '- Es una manera de desarrollar BD relacionales de acuerdo al modelo de negocio',
-                '- Demuestra como las entidades (generalmente de una BD) se relacionan entre si ',
-                '- Tambien tienen una relación que denota la cardinalidad 1-1, 1-n, 1-0, m-n',
+                '- Es una manera de desarrollar BD relacionales o esquemas de datos de acuerdo al modelo de negocio',
+                '',
+                '<strong>Entidad:</strong> Algo que se puede definir, como una persona, objeto, concepto o evento, sobre el cual se puedan almacenar datos ',
+                '<strong>- Entidad Fuerte:</strong> Se puede definir unicamente por sus atributos ',
+                '<strong>- Entidad Debil:</strong> Es aquella que contiene relaciones de otras entidades o elementos, tambien llamada asociativa ó intermedia ',
+                '',
+                '<strong>Claves:</strong> Se refiere a un atributo o conjunto de atributos que definen de manera unica un registro ',
+                '<strong>- Clave Primaria(PK):</strong> Identifica de manera unica un registro sin la posibilidad de que se repita ',
+                '<strong>- Clave Foranea(FK):</strong> Identifica una relación entre entidades',
+                '<strong>- Clave Candidata:</strong> Atributo o conjunto de estos, con el cual se puede seguir cumpliendo la identificación unica del registro ',
+                '',
+                '<strong>Relación:</strong> Relación o asociación de las entidades, esta se acompaña de una cardinalidad 1-1, 1-n, n-1, m-n',
+                '- Como suelen ser acciones en la que interactuan las entidades, se nombran con verbos y pueden tener restricciones de maximos/minimos ',
+                '',
+                '<strong>Atributo:</strong> Propiedad o caracteristica pertenciente a una Entidad ',
+                '<strong>- Atributo Simple:</strong> Su valor es minimo y no puede subdivirse, como un numero de telefono ',
+                '<strong>- Atributo Compuesto:</strong> Surgen en base a la combinación de uno o varios atributos, como una ubicación ',
+                '<strong>- Atributo Derivado:</strong> Se calculan en base a otro, como la edad ',
+                '',
+                '- Existen diferentes formas para su visualizarse como la Notación Chen, Notación de Martin, Notación Barker, etc... '
             ]),
         new Item(Keys.PERSISTENCY_NORMALIZATION,
             [
@@ -2122,6 +2139,20 @@ export const BASES_DE_DATOS =
                 '<strong>- Valores altos y bajos:</strong> Tiene 2 partes logicas, las cuales aumentan y reinician de manera separada; 1701000, 1701001... 1701999 -> 1702000, 1702001',
                 '<strong>- Claves inteligentes:</strong> Contienen 2 o más partes que brindan significado, como el codigo postal, nombres, identificacion, ',
                 ' - esto No se recomienda debido a que estas claves cambian con el tiempo y son complejas de mantener',
+            ]),
+        new Item(Keys.PERSISTENCY_COMMON_TABLE_EXPRESSION,
+            [
+                '- Es una forma de simplificar las consultas de SQL, estas funcionan como tablas virtuales que se crean durante la ejecución de la consulta ',
+                '- Este resultado solo es temporal y ocupan espacio mientras la consulta se hace, despues son eliminadas ',
+                '- Estas se declaran con la palabra reservada <strong>WITH</strong> & <strong>AS</strong> y se crean a partir de un <strong>SELECT</strong> ',
+                '',
+                ' WITH my_cte AS (SELECT a,b,c FROM T1)',
+                ' SELECT a,c FROM my_cte WHERE ....',
+                '',
+                '- Esto permite generar resultados individuales y testeables, de manera que pueden ser agrupados y reutilizados para formar consultas más complejas ',
+                '- las CTE tambien admiten Recursividad, especialmente util para los conjuntos de datos que se expresan como jerarquias ',
+                '- Es importante gestionar los CTE Recursivos con cuidado para evitar un bucle infinito, si la condición de de terminación es inadecuada ',
+                '- No todos los Motores de BD soportan esto, esta compatibilidad esta generalizada en las versiones más actuales '
             ])
     ];
 
