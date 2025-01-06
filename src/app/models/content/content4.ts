@@ -821,7 +821,7 @@ export const META_CARACTERISTICAS =
                 '- Son una opción a considerar si se quiere evitar la programación defensiva ',
                 '- Existen diferentes librerias para su implementanción pero se desaconseja el uso de los "asserts" propios de Java en entornos productivos '
             ]),
-        new Item('excepciones',
+        new Item(Keys.META_CARACTERISTICAS_EXCEPTIONS,
             [
                 '- Es la indicación de que se produjo un error en la ejecución del programa ',
                 '- Estas pueden ser situaciones esperadas, inesperadas e incluso pueden se provocadas ',
