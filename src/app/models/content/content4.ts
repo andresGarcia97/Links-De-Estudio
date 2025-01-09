@@ -268,6 +268,22 @@ export const AGILES =
                 '&brvbar; ----------------------------------------------------- &brvbar;       ',
                 '&brvbar;  Funcionalidad Irrelevante  &brvbar;  Funcionalidad Basica   &brvbar;',
                 '&brvbar;  No me satisface            &brvbar;  Me molesta no tenerla  &brvbar;',
+            ]),
+        new Item(Keys.AGILES_STAR,
+            [
+                '- Es una tecnica usada por Recursos humanos para seleccionar personal pero puede ser usada en la creación de Tareas y HUs',
+                '',
+                '<strong>Situación:</strong> Se describe una situación o reto por el cual se deba atravesar en un lenguaje neutro ',
+                '- La situación debe ser relevante y especifica de manera que fomente la reflexión pero se eviten ambiguedades/malentendidos ',
+                '',
+                '<strong>Tarea:</strong> Se indaga sobre la tarea o responsabilidad que se tiene para evaluar la situación descrita ',
+                '- Es importante tener en cuenta detalles y el contexto sobre el que se da la acción ',
+                '',
+                '<strong>Acción:</strong> Son las acciones que se van a hacer para acercarse a la situación y que decisiones se han tomado ',
+                '- Fomentar el analisis y observar desde que perspectivas se va a abordar el problema ',
+                '',
+                '<strong>Resultado:</strong> Se buscan resultados cuantificables y medibles, consecuencias de las acciones a corto y largo plazo',
+                '- Es importante evaluar el aprendizaje y como se puede aplicar para futuras situaciones ',
             ])
     ];
 

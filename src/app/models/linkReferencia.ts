@@ -44,7 +44,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.POO_DESIGN_BY_CONTRACT_PARTS;
+export const LAST_ITEM = Keys.AGILES_STAR;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -68,6 +68,7 @@ export const AGILES_REF = new Map<string, Referencia>([
     ['requisitosAgiles', new Referencia('https://www.javiergarzas.com/2019/12/los-requisitos-nunca-se-entienden-y-el-usuario-sabe-lo-que-quiere-cuando-lo-ve-funcionando.html', 'Entender los Requisitos', AGILES_KEY, 'Requisitos', '2024/03/10')],
     [Keys.AGILES_OUTPUT_AND_OUTCOME, new Referencia('https://www.linkedin.com/pulse/impact-vs-output-outcome-t%C3%A9cnicas-para-outcomes-guzm%C3%A1n-/', 'Output & Outcome', AGILES_KEY, 'Impacto y entrega de valor', '2024/05/25')],
     [Keys.AGILES_PRIORITIZATION, new Referencia('https://www.javiergarzas.com/2023/10/las-3-matrices-de-priorizacion-agil.html', 'Priorización', AGILES_KEY, 'Priorización', '2024/08/19')],
+    [Keys.AGILES_STAR, new Referencia('https://www.deel.com/es/blog/que-es-metodo-star-como-usarlo/', 'Metodo STAR', AGILES_KEY, 'STAR', '2025/01/08').addRelatedItem(Keys.PEOPLE_PEOPLE_AND_PROCESS)],
 ]);
 
 export const ANALISIS_KEY = 'Analisis';
@@ -510,7 +511,7 @@ export const PATRONES_REF = new Map<string, Referencia>([
 
 export const PEOPLE_KEY = 'Personas';
 export const PEOPLE_REF = new Map<string, Referencia>([
-    ['personasYprocesos', new Referencia('https://www.heflo.com/es/blog/bpm/personas-procesos-tecnologia/', 'Personas-Procesos-Tecnologias', PEOPLE_KEY, 'Personas y procesos')],
+    [Keys.PEOPLE_PEOPLE_AND_PROCESS, new Referencia('https://www.heflo.com/es/blog/bpm/personas-procesos-tecnologia/', 'Personas-Procesos-Tecnologias', PEOPLE_KEY, 'Personas y procesos', '', '2025/01/08')],
     ['gestionDeServicios', new Referencia('https://www.ambit-bst.com/blog/itsm.-todo-lo-que-debes-saber-sobre-la-gesti%C3%B3n-de-servicios-it', 'Gestión de servicios tecnologicos', PEOPLE_KEY, 'Gestión de servicios')],
     ['gestionDeActivos', new Referencia('https://freshservice.com/latam/it-asset-management-software/', 'Gestión de activos', PEOPLE_KEY, 'Gestión de activos')],
     ['fidelizacion', new Referencia('https://elviajedelcliente.com/fidelizacion-de-clientes/', 'Fidelización de los clientes', PEOPLE_KEY, 'Fidelizacion')],
