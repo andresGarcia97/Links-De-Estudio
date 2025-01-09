@@ -44,7 +44,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.COMPILACION_ERRORS_AND_EXCEPTIONS;
+export const LAST_ITEM = Keys.POO_DESIGN_BY_CONTRACT_PARTS;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -538,7 +538,8 @@ export const POO_REF = new Map<string, Referencia>([
     ['pooStatic', new Referencia('https://desarrolloweb.com/articulos/metodos-atributos-static-poo.html', 'palabra reservada static', POO_KEY, 'Static en POO')],
     ['sobrecarga', new Referencia('https://www.netmentor.es/Entrada/sobrecarga-metodos', 'Sobrecarga de metodos', POO_KEY, 'Sobrecarga de Metodos')],
     ['acoplamiento', new Referencia('https://jummp.wordpress.com/2010/06/26/acoplamiento-aferente-acoplamiento-eferente-inestabilidad-y-abstraccion-i/', 'Tipos de acoplamiento', POO_KEY, 'Acoplamiento')],
-    ['contratos', new Referencia('https://dosideas.com/wiki/Dise%C3%B1o_Por_Contrato', 'Diseño por contratos', POO_KEY, 'Contratos')],
+    [Keys.POO_DESIGN_BY_CONTRACT, new Referencia('https://dosideas.com/wiki/Dise%C3%B1o_Por_Contrato', 'Diseño por Contratos', POO_KEY, 'Contratos I', '', '2025/01/08')],
+    [Keys.POO_DESIGN_BY_CONTRACT_PARTS, new Referencia('https://opendatascience.com/dissecting-the-software-designing-approach-of-design-by-contract/', 'Pre/Post condiciones, Invariantes', POO_KEY, 'Contratos II', '2025/01/08').addRelatedItem(Keys.PRINCIPIOS_SOLID)],
     ['descomposicion', new Referencia('http://miguedt.blogspot.com/2013/01/descomposicion-funcional.html', 'Descomposición', POO_KEY, 'Descomposición')],
     [Keys.POO_HERENCIA, new Referencia('https://www.ecured.cu/Herencia_(Inform%C3%A1tica)', 'Herencia', POO_KEY, 'Herencia', '', '2024/12/10')],
     ['polimorfismo', new Referencia('https://ifgeekthen.nttdata.com/es/polimorfismo-en-java-programaci%C3%B3n-orientada-objetos', 'Polimorfismo', POO_KEY, 'Polimorfismo')],
