@@ -44,7 +44,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.AGILES_STAR;
+export const LAST_ITEM = Keys.PATRONES_OUTBOX;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -486,10 +486,10 @@ export const PARADIGMAS_REF = new Map<string, Referencia>([
 
 export const PATRONES_KEY = 'Patrones';
 export const PATRONES_REF = new Map<string, Referencia>([
-    ['definicionPatrones', new Referencia('http://www.ecured.cu/Patrones_de_dise%C3%B1o_y_arquitectura', '¿ Que son los patrones ?', PATRONES_KEY, 'Definición')],
+    [Keys.PATRONES_DEFINITION, new Referencia('http://www.ecured.cu/Patrones_de_dise%C3%B1o_y_arquitectura', '¿ Que son los patrones ?', PATRONES_KEY, 'Definición')],
     //['gof', new Referencia('http://www.cleformacion.com/tic-tek/-/blogs/patrones-gof', 'Gang of Four (GoF)', PATRONES_KEY, 'GOF')],
     [Keys.PATRONES_GOF, new Referencia('https://cleformacion.com/patrones-gof-fecha-de-publicacion/', 'Gang of Four (GoF)', PATRONES_KEY, 'GOF', '', '2024/05/25')],
-    [Keys.PATRONES_DESGLOSE_GOF, new Referencia('https://refactoring.guru/es/design-patterns/catalog', 'Definciones de los GoF', PATRONES_KEY, 'Desglose GOF')],
+    [Keys.PATRONES_DESGLOSE_GOF, new Referencia('https://refactoring.guru/es/design-patterns/catalog', 'Definiciones de los GoF', PATRONES_KEY, 'Desglose GOF')],
     [Keys.PATRONES_GRASP, new Referencia('https://www.adictosaltrabajo.com/2003/12/22/grasp/', 'Asignación de responsabilidades', PATRONES_KEY, 'GRASP')],
     //['desglosegrasp', new Referencia('https://juan-garcia-carmona.blogspot.com/search/label/patr%C3%B3n', 'Patrones GRASP', PATRONES_KEY, 'Desglose Grasp')],
     //['desglosegrasp', new Referencia('https://juan-garcia-carmona.blogspot.com/2012/09/patrones-generales-de-asignacion-de.html', 'Patrones GRASP', PATRONES_KEY, 'Desglose Grasp', '', '2024/05/25')],
@@ -507,6 +507,7 @@ export const PATRONES_REF = new Map<string, Referencia>([
     ['patternsMicroservices', new Referencia('https://blog.openreplay.com/7-microservice-design-patterns-to-use/', 'Patrones & Microservicios', PATRONES_KEY, 'Patrones & Microservicios')],
     [Keys.PATRONES_CLOUD_DESIGN_PATTERNS, new Referencia('https://learn.microsoft.com/es-mx/azure/architecture/patterns/', 'Patrones Para la Nube', PATRONES_KEY, 'Patrones Nube', '2024/06/02')],
     [Keys.PATRONES_ENRICHED_MODEL, new Referencia('https://sacavix.com/2024/05/modelos-anemicos-vs-enriquecidos/', 'Modelo Enriquecido', PATRONES_KEY, 'Modelo Enriquecido', '2024/12/15').addRelatedItem(Keys.MALAS_PRACTICAS_ANEMIC_DOMAIN).addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_DDD).addRelatedItem(Keys.POO_INMUTABILITY).addRelatedItem(Keys.POO_POO)],
+    [Keys.PATRONES_OUTBOX, new Referencia('https://www.baeldung.com/cs/outbox-pattern-microservices', 'Patron OutBox', PATRONES_KEY, 'Patron outbox', '2025/01/12').addRelatedItem(Keys.PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL).addRelatedItem(Keys.APIS_REST_VS_MESSAGING)],
 ]);
 
 export const PEOPLE_KEY = 'Personas';

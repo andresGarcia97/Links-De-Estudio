@@ -16,7 +16,7 @@ export class Content5 {
 
 export const PATRONES =
     [
-        new Item('definicionPatrones',
+        new Item(Keys.PATRONES_DEFINITION,
             [
                 '- Son soluciones especificas y reutilizables a problemas comunes, o con abstracciones similares, los más conocidos son: ',
                 '<strong>GOF:</strong> Que se dividen en 3, creacionales, estructurales y de comportamiento ',
@@ -312,7 +312,7 @@ export const PATRONES =
                 '',
                 '<strong>Anti-Corruption Layer:</strong> Implementa una capa de fachada o de adatador entre una aplicación moderna y un sistema heredado',
                 '',
-                '<strong>Backedns for Frontends:</strong> Servicios independientes de back-end que determinadas aplicaciones ó front-end puedan usar ',
+                '<strong>Backends for Frontends:</strong> Servicios independientes de back-end que determinadas aplicaciones ó front-end puedan usar ',
                 '',
                 '<strong>Cache-Aside:</strong> Carga datos a petición en una memoria caches desde algun almacen de datos',
                 '',
@@ -355,6 +355,27 @@ export const PATRONES =
                 '- Las clases inmutables son incompatibles con este tipo de logica para enriquecer las clases ',
                 '- Esto debido a la imposibilidad de cambiar sus atributos, pero existen escenarios donde esta caracteristica es requerida ',
                 '- Cada enfoque se debe usar de acuerdo a las necesidades y como mejor se adecuen ',
+            ]),
+        new Item(Keys.PATRONES_OUTBOX,
+            [
+                '- Con el auge de los microservicios el patron <strong>outbox</strong> surge como una forma de ayudar con el orden y la coherencia ',
+                '- Este patrón organiza la comunicación de eventos y garantiza la coherencia de los datos debido a los desafios de la comunicacion asyncrona ',
+                '',
+                '- En primer lugar este patron define un almacenamiento temporal donde se registran los cambios en los datos salientes ',
+                '- Despues se transmiten los registros serializados hacia el o los servicios externos ',
+                '- Como ultimo paso se actualizan los registros para confirmar el exito en el envio ó su fallo y asi reintentar posteriormente ',
+                '',
+                '- Esto permite que en caso de cualquier falla los datos permanezcan hasta que puedan ser enviados sin contratiempos ',
+                '- Este mecanismo permite crear sistemas resilientes al mismo tiempo que mantiene la consistencia de los datos, en especial en sistemas complejos ',
+                '',
+                '- Cuando se alteran los datos los datos siempre se registran inicialmente en la BD ',
+                '- El envio no se hace de inmediato, por lo que suele existir un proceso o tarea segundaria que revisa periodicamente los mensajes pendientes por enviar ',
+                '- Tambien debe considerar un mecanismo de limpieza, si los mensajes no son esenciales o no se considera mantener un historico de los datos ',
+                '',
+                '<strong>Ventajas & Desventajas</strong>',
+                '- Mantiene la consistencia de los datos y no se pierden eventos sin al menos haberse reintentado ',
+                '- Se agrega complejidad ya que se deben guardar y actualizar los mensajes antes y despues del envio ',
+                '- Tambien se gasta más espacio debido a la necesidad de almacenar los mensajes y ralentiza el sistema ',
             ])
     ];
 
