@@ -434,11 +434,12 @@ export const ARQUITECTURAS =
             [
                 '- Se basa en la distribución de roles y responsabilidades de forma jerarquica en cada capa ',
                 '- Puede tener N capas, generalmente son 3, de la cual se desprende MVC ',
-                '- La abstracción se mejora al definir la responsabilidad de cada capa ',
+                '- La abstracción se mejora al definir la responsabilidad de cada capa y que interfaces se pueden usar/exponer ',
                 '- Se aumenta la reutilización, al tener componentes especializados ',
                 '- El desacople y la integración mejoran como resultado de una adecuada abstracción y definición de responsabilidades ',
                 '- Con un alto grado de abstracción se pueden aislar ciertas capas y hacerlas independientes de las tecnologias ',
-                '- Los cambios tienen bajo impacto y la matenibilidad es más eficiente de hacer ',
+                '- Los cambios tienen bajo impacto y la mantenibilidad es más eficiente de hacer si hay una adecuada modularidad ',
+                '- Es una arquitectura muy usada en aplicaciones web, sistemas de gestión de contenido y aplicaciones moviles ',
             ]),
         new Item('cliente',
             [
@@ -781,6 +782,18 @@ export const ARQUITECTURAS =
                 '',
                 '<strong>Infraestructure:</strong> La base sobre la cual todo corre, aun con el auge de la nube, tambien puede existir de manera local ',
                 '- Tech Stack: AWS, Docker, Kubernetes, Azure',
+            ]),
+        new Item(Keys.ARQUITECTURAS_EXPERIMENTATION,
+            [
+                '- Cuando se esta experimentado o creando una nueva arquitectura, inevitablemente habra equivocaciones ',
+                '- Esta parte del proceso debe seguir existiendo, para recopilar datos y tomar decisiones fundamentales en equipo ',
+                '- La <strong>Minima Arquitectura Viable</strong>(MVA) tambien pone a prueba a los <strong>MVP</strong> de manera tecnica ',
+                '- Equivocarse es importante ya que ayuda a expandir nuestros limites, para eso se pueden aislar las partes y experimentar de manera individual ',
+                '- Saber que probar es la mitad del problema, la otra es idear experimentos efectivos y de bajo costo, siempre con la mentalidad de fallar rapido ',
+                '- Si no se realizan estos experimentos, no hay forma de probar las suposiciones hasta que sea demasiado tarde y costoso ',
+                '- Estos experimentos deben ser lo suficientemente pequeños como para recopilar información de manera rapida y al mismo tiempo ser significativos ',
+                ' - para enfrentar los riesgos que enfrenta el equipo además de tener tiempo maximo de duración o un cronograma de ser posible ',
+                '- En caso de algun fallo o de no haber cumplido las expectativas, debe existir un plan de reversión como <strong>Pruebas A/B</strong>',
             ])
     ];
 

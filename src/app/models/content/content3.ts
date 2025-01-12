@@ -1665,9 +1665,9 @@ export const NEURO_MARKETING =
                 '- Realizar entrevistas a los clientes             - Realiza estudios de mercado',
                 '- Información de analitica y datos de la empresa  - Consultar al equipo de ventas',
             ]),
-        new Item('neuroMarketing',
+        new Item(Keys.NEURO_MARKETING_WHAT_IS,
             [
-                '- En porcas palabras es la neuro ciencia, aplicada al Marketing, y busca comprender los procesos de compra y el comportamiento con las marcas, ',
+                '- En pocas palabras es la neuro ciencia, aplicada al Marketing, y busca comprender los procesos de compra y el comportamiento con las marcas, ',
                 ' - a partir de la actividad neuronal; esto como complemento de otras estategias más tradicionales como los Focus Group y las encuestas ',
                 '- Para el cerebro no hay secretos, y aun menos para el inconsciente, se calcula que cerca del 95% ',
                 ' - de las decisiones de compra son tomadas por este en alrededor de 2.5 segundos, por lo que es una mala idea pensar que comprar es 100% racional ',
@@ -1820,7 +1820,7 @@ export const CD_CI_INFRAESTRUCTURE =
                 '    La seguridad es independiente                              Se basa en protocolos de internet ',
                 '    del estado y del servidor                                  que requieren de compartir y mantener estados',
             ]),
-        new Item('deploymentPatterns',
+        new Item(Keys.CD_CI_DEPLOYMENT_PATTERNS,
             [
                 '- Son metodos automatizados para presentar nuevas funciones de aplicaciones a los usuarios, reduciendo el tiempo de inactividad al maximo posible ',
                 '- Esto depende de la forma en que se realize, y cuantas etapas previas se hayan realizado ',

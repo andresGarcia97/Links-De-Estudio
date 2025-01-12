@@ -1101,7 +1101,7 @@ export const ANALISIS_DATA =
                 '- Puede violar las leyes de derechos de autor, por lo que puede llegar a ser ilegal ',
                 '- Tambien se puede bloquear por medio de software ó dificultarles la extracción de los datos (imagenes) ',
             ]),
-        new Item('mvp',
+        new Item(Keys.ANALISIS_DATA_MVP,
             [
                 '- Es el conjunto minimo de funcionalidades precisas para que un software pueda atraer clientes potenciales ',
                 '- Esto ayuda a crear productos apegados a la realidad ',
