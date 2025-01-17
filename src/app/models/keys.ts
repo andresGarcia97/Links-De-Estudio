@@ -40,6 +40,7 @@ export const META_CARACTERISTICAS_GENERICS = 'generics';
 export const META_CARACTERISTICAS_ANOTATIONS = 'anottations';
 export const META_CARACTERISTICAS_CACHE_AND_TYPES = 'cacheReadWriteStrategy';
 export const META_CARACTERISTICAS_TYPE_ERASURE = 'typeErasure';
+export const META_CARACTERISTICAS_PROCESS_AND_THREADS = 'processAndThreads';
 export const LEYES_HYRUM = 'hyrum';
 export const LEYES_LEHMAN = 'lehman';
 export const LEYES_CONWAY = 'conway';

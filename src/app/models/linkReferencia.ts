@@ -44,7 +44,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.ARQUITECTURAS_EXPERIMENTATION;
+export const LAST_ITEM = Keys.META_CARACTERISTICAS_PROCESS_AND_THREADS;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -348,7 +348,8 @@ export const META_CARATERISTICAS_REF = new Map<string, Referencia>([
     ['asserts', new Referencia('https://www.adictosaltrabajo.com/2016/01/07/haz-tu-codigo-mas-fiable-con-asserts/', 'Comprobaciones del codigo', META_CARACTERISTICAS_KEY, 'Aserciones')],
     [Keys.META_CARACTERISTICAS_EXCEPTIONS, new Referencia('https://universidad-de-los-andes.gitbooks.io/fundamentos-de-programacion/content/Nivel4/5_ManejoDeLasExcepciones.html', 'Lanzamiento y manejo de excepciones', META_CARACTERISTICAS_KEY, 'Excepciones')],
     ['cache', new Referencia('https://medium.com/bancolombia-tech/dise%C3%B1ando-una-estrategia-de-cach%C3%A9-39366876009b', 'Tipos de Cache', META_CARACTERISTICAS_KEY, 'Tipos de Cache')],
-    ['hilos', new Referencia('https://facturapp.weebly.com/hilos.html', 'Hilos', META_CARACTERISTICAS_KEY, 'Hilos')],
+    //['hilos', new Referencia('https://facturapp.weebly.com/hilos.html', 'Hilos', META_CARACTERISTICAS_KEY, 'Hilos')],
+    [Keys.META_CARACTERISTICAS_PROCESS_AND_THREADS, new Referencia('https://www.linkedin.com/posts/bytebytego_systemdesign-coding-interviewtips-activity-7282264394716090368-bJfF/', 'Procesos & Hilos', META_CARACTERISTICAS_KEY, 'Procesos & Hilos', '', '2025/01/16').addRelatedItem(Keys.HARDWARE_OPERATIVE_SYSTEM)],
     ['argumentos', new Referencia('https://picodotdev.github.io/blog-bitix/2021/01/en-java-los-argumentos-se-pasan-por-valor-o-por-referencia/', 'Argumentos por valor y por referencia', META_CARACTERISTICAS_KEY, 'Argumentos')],
     //['concurrenciaParalelismo', new Referencia('https://codigofacilito.com/articulos/programacion-concurrente', 'Concurrencia & Paralelismo', META_CARACTERISTICAS_KEY, 'Concurrencia')],
     [Keys.META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM, new Referencia('https://www.linkedin.com/feed/update/urn:li:activity:7209404927750615040/', 'Concurrencia & Paralelismo', META_CARACTERISTICAS_KEY, 'Concurrencia/Paralelismo', '', '2024/06/26')],
