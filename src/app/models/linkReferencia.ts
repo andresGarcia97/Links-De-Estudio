@@ -45,7 +45,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.META_CARACTERISTICAS_PROCESS_AND_THREADS;
+export const LAST_ITEM = Keys.MICROSERVICES_TRADEOFFS;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -118,7 +118,7 @@ export const ARQUITECTURAS_REF = new Map<string, Referencia>([
     ['stylesArchitecture1', new Referencia('https://hdnmetatech.com/news/our-press/detail/introduction-to-architecture-styles-and-patterns-as-a-blueprint-for-designing-a-system', 'Estilos #1', ARQUITECTURAS_KEY, 'Estilos & Patrones #1')],
     ['stylesArchitecture2', new Referencia('https://hdnmetatech.com/news/our-press/detail/introduction-to-architecture-styles-and-patterns-as-a-blueprint-for-designing-a-system', 'Estilos #2', ARQUITECTURAS_KEY, 'Estilos & Patrones #2')],
     ['monolitosModulares', new Referencia('https://levelup.gitconnected.com/architecture-style-modulith-vs-microservices-90c7c75713db', 'Monolitos Modulares', ARQUITECTURAS_KEY, 'Monolitos Modulares')],
-    ['descomposicionModular', new Referencia('https://ittgweb.wordpress.com/2016/05/29/descomposicion-modular/', 'Descomposición Modular', ARQUITECTURAS_KEY, 'Descomposición', '2024/05/25')],
+    [Keys.ARQUITECTURAS_DESCOMPOSICION_MODULAR, new Referencia('https://ittgweb.wordpress.com/2016/05/29/descomposicion-modular/', 'Descomposición Modular', ARQUITECTURAS_KEY, 'Descomposición', '2024/05/25')],
     [Keys.ARQUITECTURAS_EVENT_DRIVEN, new Referencia('https://medium.com/@alxkm/java-event-driven-architecture-dc456d324ba5', 'Basada en Eventos', ARQUITECTURAS_KEY, 'Basada en Eventos', '2024/06/17').addRelatedItem(Keys.NUBE_OBSERVABILIDAD)],
     [Keys.ARQUITECTURAS_LAYERS_SOFTWARE, new Referencia('https://www.linkedin.com/posts/brijpandeyji_building-software-at-scale-requires-a-clear-activity-7276459295502655488-dLTk/', 'Capas del Software', ARQUITECTURAS_KEY, 'Capas del Software', '2024/12/22').addRelatedItem(Keys.APIS_REST_VS_MESSAGING).addRelatedItem(Keys.PERSISTENCY_DBMS).addRelatedItem(Keys.WEB_USER_INTERFACE).addRelatedItem(Keys.CONTENEDORES_DOCKER).addRelatedItem(Keys.ANALISIS_MODEL_DOMAIN)],
     [Keys.ARQUITECTURAS_EXPERIMENTATION, new Referencia('https://www.infoq.com/articles/architecture-experimentation/', 'Minima Arquitectura Viable', ARQUITECTURAS_KEY, 'MVA', '2025/01/12').addRelatedItem(Keys.ANALISIS_DATA_MVP).addRelatedItem(Keys.CD_CI_DEPLOYMENT_PATTERNS).addRelatedItem(Keys.NEURO_MARKETING_WHAT_IS)],
@@ -840,4 +840,5 @@ export const MICRO_SERVICES_REF = new Map<string, Referencia>([
     [Keys.MICROSERVICES_ARQUITECTURAS, new Referencia('https://aws.amazon.com/es/microservices/', 'Microservicios & Arquitectura', MICRO_SERVICES_KEY, 'Arquitecturas', '', '2024/08/17')],
     [Keys.MICROSERVICES_BEST_PRACTICES, new Referencia('https://www.linkedin.com/posts/nelsonamigoscode_systemdesign-coding-interviewtips-activity-7206618794188750848-lNtj/', 'Microservicios, buenas practicas', MICRO_SERVICES_KEY, 'Buenas Practicas', '', '2024/08/17').addRelatedItem(Keys.PRINCIPIOS_KISS).addRelatedItem(Keys.MICROSERVICES_ARQUITECTURAS).addRelatedItem(Keys.ARQUITECTURAS_EVENT_DRIVEN)],
     [Keys.MICROSERVICES_BY_DEFAULT, new Referencia('https://levelup.gitconnected.com/why-you-should-never-default-to-microservices-c952903fbcb6', 'Microservicios por defecto', MICRO_SERVICES_KEY, '¿ Usarlos por defecto ?', '2024/10/12').addRelatedItem(Keys.TESTING_MOCKS).addRelatedItem(Keys.APIS_REST_VS_MESSAGING).addRelatedItem(Keys.ARQUITECTURAS_MONOLITOS)],
+    [Keys.MICROSERVICES_TRADEOFFS, new Referencia('https://martinfowler.com/articles/microservice-trade-offs.html', 'Microservicios Tradeoffs', MICRO_SERVICES_KEY, 'Pros & Contras', '2025/01/18').addRelatedItem(Keys.ARQUITECTURAS_DESCOMPOSICION_MODULAR).addRelatedItem(Keys.LEYES_CONWAY).addRelatedItem(Keys.CD_CI_CD_CI).addRelatedItem(Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS).addRelatedItem(Keys.NUBE_CAP_TEOREMA)],
 ]);

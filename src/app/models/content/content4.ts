@@ -680,7 +680,7 @@ export const ARQUITECTURAS =
                 '<strong>- Limitaciones tecnologicas:</strong> La aplicación tiene un stack de tecnologias definido, y no siempre se pueden cambiar, de acuerdo a la más indicada ',
                 '<strong>- Paros:</strong> Debido a que solo existen modulos, estos suelen tener puntos criticos que si fallan, pueden afectar el resto de la aplicación ',
             ]),
-        new Item('descomposicionModular',
+        new Item(Keys.ARQUITECTURAS_DESCOMPOSICION_MODULAR,
             [
                 '- Es el proceso de descomponer un sistema, en una serie de elementos más pequeños y manejables(divide y venceras)',
                 '- Este conjunto de elementos debe mantener un bajo acoplamiento(independientes) con un alto grado de cohesion(significado)',
