@@ -17,10 +17,10 @@ export class Content1 {
 
 export const CALIDAD =
     [
-        new Item('metricas',
+        new Item(Keys.CALIDAD_METRICS_SOFTWARE,
             [
                 '- Además de revelar el desempeño del equipo de desarrollo, puede ser indicativo de la efectividad del equipo ',
-                '- Las organizaciones se basan en una gran variedad de KPI para comprender el progreso en la ingenieria de software, en 4 categorias ',
+                '- Las organizaciones se basan en una gran variedad de <em>KPI</em> para comprender el progreso en la ingenieria de software, en 4 categorias ',
                 '',
                 '<strong>Metricas de productividad</strong>',
                 '<strong>- Tiempo de entrega:</strong> Tiempo que se tarda de inicio a fin para entregar un proyecto ',

@@ -75,16 +75,17 @@ export const AGILES_REF = new Map<string, Referencia>([
 export const ANALISIS_KEY = 'Analisis';
 export const ANALISIS_REF = new Map<string, Referencia>([
     ['comportamiento', new Referencia('https://es.wikipedia.org/wiki/Modelo_de_comportamiento_(inform%C3%A1tica)', 'Comportamiento del sistema', ANALISIS_KEY, 'Comportamiento')],
-    ['dominio', new Referencia('https://www.redalyc.org/jatsRepo/4768/476862530003/html/index.html#:~:text=El%20An%C3%A1lisis%20de%20Dominio%20es,la%20identificaci%C3%B3n%2C%20el%20an%C3%A1lisis%20y', 'Analisis de Dominio', ANALISIS_KEY, 'Analisis de Dominio')],
+    [Keys.ANALISIS_ANALISIS_DOMAIN, new Referencia('https://www.redalyc.org/jatsRepo/4768/476862530003/html/index.html', 'Analisis de Dominio', ANALISIS_KEY, 'Analisis de Dominio')],
     ['case', new Referencia('https://www.tutorialspoint.com/es/software_engineering/case_tools_overview.htm', 'Herramientas Case', ANALISIS_KEY, 'Herramientas CASE')],
     ['divide', new Referencia('https://es.khanacademy.org/computing/computer-science/algorithms/merge-sort/a/divide-and-conquer-algorithms', 'Divide y Venceras', ANALISIS_KEY, 'Divide y venceras')],
     ['diseño', new Referencia('https://www.bravent.net/la-importancia-de-un-buen-diseno-del-software/', 'Ventajas de un buen diseño', ANALISIS_KEY, 'Un buen diseño')],
     ['crc', new Referencia('https://medium.com/@marcosrrg9813/tarjetas-crc-clase-responsabilidad-colaborador-81924cec3af0', 'Tarjetas Clase-Responsabilidad-Colaborador', ANALISIS_KEY, 'Tarjetas CRC')],
-    ['avestruz', new Referencia('https://geeks.ms/gvelez/2009/09/28/el-algoritmo-del-avestruz-en-sharepoint/', 'Algoritmo del Avestruz', ANALISIS_KEY, 'Avestruz')],
+    //['avestruz', new Referencia('https://geeks.ms/gvelez/2009/09/28/el-algoritmo-del-avestruz-en-sharepoint/', 'Algoritmo del Avestruz', ANALISIS_KEY, 'Avestruz')],
+    [Keys.ANALISIS_AVESTRUZ, new Referencia('https://www.baeldung.com/cs/ostrich-algorithm', 'Algoritmo del Avestruz', ANALISIS_KEY, 'Avestruz', '', '2025/01/18')],
     [Keys.ANALISIS_MODEL_DOMAIN, new Referencia('https://es.stackoverflow.com/questions/102490/que-es-el-modelo-de-dominio-en-dise%C3%B1o-de-software', 'Modelo de Dominio', ANALISIS_KEY, 'Modelo de dominio', '', '2024/12/22').addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_DDD)],
     ['timeComplexityBigO', new Referencia('https://www.freecodecamp.org/news/big-o-cheat-sheet-time-complexity-chart/', 'Big O Notación', ANALISIS_KEY, 'Big O Notación', '2022/12/30')],
     //['kpis', new Referencia('https://www.ibm.com/garage/method/practices/learn/kpis-measure-guide-progress/', 'KPIs', ANALISIS_KEY, 'KPI', '2022/12/30')],
-    [Keys.ANALISIS_KPI, new Referencia('https://www.ibm.com/garage/method/practices/learn/kpis-measure-guide-progress/', 'KPI', ANALISIS_KEY, 'KPI', '2022/12/30', '2024/07/27')],
+    [Keys.ANALISIS_KPI_OKR, new Referencia('https://asana.com/es/resources/okr-vs-kpi', 'KPI & OKR', ANALISIS_KEY, 'KPI & OKR', '2022/12/30', '2025/01/18').addRelatedItem(Keys.AGILES_DEMING).addRelatedItem(Keys.CALIDAD_METRICS_SOFTWARE)],
     [Keys.ANALISIS_MANIFEST_REACTIVE, new Referencia('https://www.reactivemanifesto.org/es', 'Manifiesto Reactivo', ANALISIS_KEY, 'Manifiesto Reactivo', '2023/02/19', '2024/12/10')],
     ['declineDesign', new Referencia('https://uxdesign.cc/the-decline-in-design-thinking-8fd0145fb4d2', 'Declive del diseño', ANALISIS_KEY, 'Declive del Diseño', '2023/07/23')],
     ['opinionated-no', new Referencia('https://www.baeldung.com/cs/opinionated-software-design', 'Diseño con & sin opiniones', ANALISIS_KEY, 'Diseño con/sin opiniones', '2023/11/11')],
@@ -148,7 +149,7 @@ export const BUENAS_PRACTICAS_REF = new Map<string, Referencia>([
 
 export const CALIDAD_KEY = 'Calidad';
 export const CALIDAD_REF = new Map<string, Referencia>([
-    ['metricas', new Referencia('https://www.computerweekly.com/es/consejo/23-metricas-de-desarrollo-de-software-que-monitorear-hoy', 'Metricas del Software', CALIDAD_KEY, 'Metricas #1')],
+    [Keys.CALIDAD_METRICS_SOFTWARE, new Referencia('https://www.computerweekly.com/es/consejo/23-metricas-de-desarrollo-de-software-que-monitorear-hoy', 'Metricas del Software', CALIDAD_KEY, 'Metricas #1')],
     ['metricasEnCodigo', new Referencia('https://blog.desafiolatam.com/metricas-de-calidad-de-software', 'Metricas del codigo', CALIDAD_KEY, 'Metricas #2')],
     [Keys.CALIDAD_CLEAN_CODE, new Referencia('https://medium.com/@tijuhasz/in-one-of-the-most-groundbreaking-practical-books-on-software-development-clean-code-right-in-3ef3006c68f2', 'Clean Code & Code rot', CALIDAD_KEY, 'Clean Code')],
     ['artesanos', new Referencia('https://manifesto.softwarecraftsmanship.org/#/es', 'Artesanos de software', CALIDAD_KEY, 'Artesanos')],
