@@ -16,7 +16,8 @@ export class LinkReferencia {
         ...SECURITY_REF,         ...SMELL_CODES_REF,          ...PERSISTENCY_REF,
         ...UML_REF,              ...VERSIONAMIENTO_REF,       ...HARDWARE_REF,
         ...WEB_REF,              ...LEYES_REF,                ...NEURO_MARKETING_REF,
-        ...CD_CI_REF,            ...APIS_REF,                 ...PERSISTENCY_ADVANCED_REF  
+        ...CD_CI_REF,            ...APIS_REF,                 ...PERSISTENCY_ADVANCED_REF,
+        ...MICRO_SERVICES_REF  
     ]);
 
     public routesAndSections: Map<string, string> = new Map([
@@ -39,7 +40,7 @@ export class LinkReferencia {
         [VERSIONAMIENTO_KEY, 'versionamiento'],               [HARDWARE_KEY, 'hardware'],
         [WEB_KEY, 'web'],                                     [NEURO_MARKETING_KEY, 'neuro-marketing'],
         [PERSISTENCY_ADVANCED_KEY, 'bd-avanzado'],            [CD_CI_KEY, 'cd-ci-infraestructura'],
-        [APIS_KEY, 'apis']
+        [APIS_KEY, 'apis'],                                   [MICRO_SERVICES_KEY, 'microservices']
     ]);
 
 }
@@ -835,4 +836,9 @@ export const CD_CI_REF = new Map<string, Referencia>([
     ['pipelines', new Referencia('https://semaphoreci.com/blog/cicd-pipeline', 'Pipelines', CD_CI_KEY, '¿ Que es un Pipeline ?', '2023/12/26')],
     [Keys.CD_CI_CELL_BASED_ARQUITECTURE, new Referencia('https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of-impact-with-cell-based-architecture/what-is-a-cell-based-architecture.html', 'Cell Based Arquitecture', CD_CI_KEY, 'Cell Based Arquitecture', '2024/08/25')],
     [Keys.CD_CI_RULES, new Referencia('https://semaphoreci.com/blog/rules-ci-pipeline', 'Rules', CD_CI_KEY, 'Rules', '2024/12/26').addRelatedItem(Keys.GIT_BRANCHS).addRelatedItem(Keys.CALIDAD_LINTING).addRelatedItem(Keys.TESTING_PIRAMIDE).addRelatedItem(Keys.CONTENEDORES_DOCKER)],
+]);
+
+export const MICRO_SERVICES_KEY = 'microservices';
+export const MICRO_SERVICES_REF = new Map<string, Referencia>([
+
 ]);

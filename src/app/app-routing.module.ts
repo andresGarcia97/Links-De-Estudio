@@ -4,14 +4,15 @@ import {
   AGILES_KEY, ANALISIS_KEY, APIS_KEY, ARQUITECTURAS_KEY, BUENAS_PRACTICAS_KEY, CALIDAD_KEY, META_CARACTERISTICAS_KEY, CD_CI_KEY, COMPILACION_KEY,
   CONOCIMIENTO_EMPIRICO_KEY, CONTENEDORES_KEY, PERSISTENCY_ADVANCED_KEY, PERSISTENCY_KEY, ESTRATEGIAS_DESARROLLO_KEY, META_ESTRUCTURAS_KEY, FRAMEWORKS_KEY,
   GIT_KEY, HARDWARE_KEY, LEYES_KEY, MALAS_PRACTICAS_KEY, METODOLOGIAS_KEY, NEURO_MARKETING_KEY, NUBE_KEY, ANALISIS_DATA_KEY,
-  PARADIGMAS_KEY, PATRONES_KEY, PEOPLE_KEY, POO_KEY, PRINCIPIOS_KEY, REFACTORING_KEY, REQUISITOS_KEY, SECURITY_KEY,
-  SMELL_CODES_KEY, TESTING_ADVANCED_KEY, TESTING_KEY, UML_KEY, USER_HISTORIES_KEY, VERSIONAMIENTO_KEY, WEB_KEY
+  PARADIGMAS_KEY, PATRONES_KEY, PEOPLE_KEY, POO_KEY, PRINCIPIOS_KEY, REFACTORING_KEY, REQUISITOS_KEY, SECURITY_KEY, SMELL_CODES_KEY,
+  TESTING_ADVANCED_KEY, TESTING_KEY, UML_KEY, USER_HISTORIES_KEY, VERSIONAMIENTO_KEY, WEB_KEY, MICRO_SERVICES_KEY
 } from 'src/app/models/linkReferencia';
 import { GlosarioComponent } from './components/glosario/glosario.component';
 import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
 
+  { path: 'microservices', loadChildren: () => import('./components/micro-services/micro-services.module').then(m => m.MicroServicesModule), title: MICRO_SERVICES_KEY  },
   { path: 'apis', loadChildren: () => import('./components/apis-terms/apis-terms.module').then(m => m.ApisTermsModule), title: APIS_KEY  },
   { path: 'cd-ci-infraestructura', loadChildren: () => import('./components/cd-ci/cd-ci.module').then(m => m.CdCiModule), title: CD_CI_KEY },
   { path: 'neuro-marketing', loadChildren: () => import('./components/neuro-marketing/neuro-marketing.module').then(m => m.NeuroMarketingModule), title: NEURO_MARKETING_KEY },
@@ -22,7 +23,6 @@ const routes: Routes = [
   { path: 'calidad', loadChildren: () => import('./components/calidad/calidad.module').then(m => m.CalidadModule), title: CALIDAD_KEY },
   { path: 'personas', loadChildren: () => import('./components/personas/personas.module').then(m => m.PersonasModule), title: PEOPLE_KEY },
   { path: 'nube', loadChildren: () => import('./components/nube/nube.module').then(m => m.NubeModule), title: NUBE_KEY },
-  { path: 'glosario', component: GlosarioComponent, title: 'Glosario' },
   { path: 'fuentes', loadChildren: () => import('./components/fuentes/fuentes.module').then(m => m.FuentesModule), title: 'Fuentes' },
   { path: 'metacaracteristicas', loadChildren: () => import('./components/meta-caracteristicas/meta-caracteristicas.module').then(m => m.MetaCaracteristicasModule), title: META_CARACTERISTICAS_KEY },
   { path: 'smells-codes', loadChildren: () => import('./components/smells-codes/smells-codes.module').then(m => m.SmellsCodesModule), title: SMELL_CODES_KEY },
@@ -53,6 +53,7 @@ const routes: Routes = [
   { path: 'buenas-practicas', loadChildren: () => import('./components/buenas-practicas/buenas-practicas.module').then(m => m.BuenasPracticasModule), title: BUENAS_PRACTICAS_KEY },
   { path: 'arquitecturas', loadChildren: () => import('./components/arquitecturas/arquitecturas.module').then(m => m.ArquitecturasModule), title: ARQUITECTURAS_KEY },
   { path: 'agiles', loadChildren: () => import('./components/agiles/agiles.module').then(m => m.AgilesModule), title: AGILES_KEY  },
+  { path: 'glosario', component: GlosarioComponent, title: 'Glosario' },
   { path: '', component: HomeComponent, pathMatch: 'full', title: 'Contenido De Repaso' },
   // { path: '**', component: PageNotFoundComponent }
 ];
