@@ -21,6 +21,12 @@ export class ExtraInfoComponent implements OnChanges {
   constructor(private router: Router) { }
 
   ngOnChanges(): void {
+    
+    const dates = { 
+      ...(this.dateUpdate && { dateUpdate: this.dateUpdate }),
+      ...(this.dateRead && { dateRead: this.dateRead })
+    };
+    console.log(dates);    
 
     this.components.clear();
 

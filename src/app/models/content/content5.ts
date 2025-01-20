@@ -2052,7 +2052,7 @@ export const MICRO_SERVICES =
                 '',
                 '<strong>Implementación Independiente:</strong>',
                 '- La complejidad del negocio siempre va a estar presente, pero algo que ha ido cambiando con el tiempo es la forma de desplegar las aplicaciones ',
-                '- Actualmente a areas como <em>CD/CI</em> los despliegues suelen ser automatizados y tienen multiples mecanismos de recuperación ',
+                '- Actualmente areas como <em>CD/CI</em> los despliegues suelen ser automatizados y tienen multiples mecanismos de recuperación ',
                 '- Esto hace que los microservicios no deberian existir sin buenas practicas de <em>DevOps</em> y una infraestructura que lo soporte ',
                 '',
                 '<strong>Diversidad Tecnologica:</strong>',
