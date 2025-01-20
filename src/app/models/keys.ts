@@ -250,3 +250,5 @@ export const MICROSERVICES_ARQUITECTURAS = 'microservicesArquitecture';
 export const MICROSERVICES_BEST_PRACTICES = 'microserviceBestPractices';
 export const MICROSERVICES_BY_DEFAULT = 'microservicesAsDefault';
 export const MICROSERVICES_TRADEOFFS = 'microservicesTradeoffs';
+export const MICROSERVICES_PATTERNS = 'microservicesPatterns';
+export const MICROSERVICES_ANTI_PATTERNS = 'microservicesAntipatterns';

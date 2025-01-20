@@ -45,7 +45,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.MICROSERVICES_TRADEOFFS;
+export const LAST_ITEM = Keys.MICROSERVICES_ANTI_PATTERNS;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -504,7 +504,6 @@ export const PATRONES_REF = new Map<string, Referencia>([
     [Keys.PATRONES_TYPES, new Referencia('https://www.javiergarzas.com/2014/08/tipos-patrones-software.html', 'Tipos de patrones', PATRONES_KEY, 'Tipos de Patrones')],
     [Keys.PATRONES_STRANGLER_FIG, new Referencia('https://martinfowler.com/bliki/StranglerFigApplication.html', 'StranglerFig App', PATRONES_KEY, 'StranglerFig App', '', '2024/09/22').addRelatedItem(Keys.LEYES_CONWAY)],
     ['antipatronesPM', new Referencia('https://sourcemaking.com/antipatterns', 'Antipatrones, Product Management', PATRONES_KEY, 'Anti Patrones, PM')],
-    ['patternsMicroservices', new Referencia('https://blog.openreplay.com/7-microservice-design-patterns-to-use/', 'Patrones & Microservicios', PATRONES_KEY, 'Patrones & Microservicios')],
     [Keys.PATRONES_CLOUD_DESIGN_PATTERNS, new Referencia('https://learn.microsoft.com/es-mx/azure/architecture/patterns/', 'Patrones Para la Nube', PATRONES_KEY, 'Patrones Nube', '2024/06/02')],
     [Keys.PATRONES_ENRICHED_MODEL, new Referencia('https://sacavix.com/2024/05/modelos-anemicos-vs-enriquecidos/', 'Modelo Enriquecido', PATRONES_KEY, 'Modelo Enriquecido', '2024/12/15').addRelatedItem(Keys.MALAS_PRACTICAS_ANEMIC_DOMAIN).addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_DDD).addRelatedItem(Keys.POO_INMUTABILITY).addRelatedItem(Keys.POO_POO)],
     [Keys.PATRONES_OUTBOX, new Referencia('https://www.baeldung.com/cs/outbox-pattern-microservices', 'Patron OutBox', PATRONES_KEY, 'Patron outbox', '2025/01/12').addRelatedItem(Keys.PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL).addRelatedItem(Keys.APIS_REST_VS_MESSAGING)],
@@ -834,7 +833,7 @@ export const CD_CI_REF = new Map<string, Referencia>([
     [Keys.CD_CI_RULES, new Referencia('https://semaphoreci.com/blog/rules-ci-pipeline', 'Rules', CD_CI_KEY, 'Rules', '2024/12/26').addRelatedItem(Keys.GIT_BRANCHS).addRelatedItem(Keys.CALIDAD_LINTING).addRelatedItem(Keys.TESTING_PIRAMIDE).addRelatedItem(Keys.CONTENEDORES_DOCKER)],
 ]);
 
-export const MICRO_SERVICES_KEY = 'microservices';
+export const MICRO_SERVICES_KEY = 'Microservicios';
 export const MICRO_SERVICES_REF = new Map<string, Referencia>([
     [Keys.MICROSERVICES_ANALISIS, new Referencia('https://foojay.io/today/microservices-design-principles-for-well-crafted-architecture/', 'Diseño de Microservicios', MICRO_SERVICES_KEY, 'Diseño ', '2024/10/22').addRelatedItem(Keys.PRINCIPIOS_SOLID).addRelatedItem(Keys.POO_POO)],
     [Keys.MICROSERVICES_FUNDAMENTALS, new Referencia('https://medium.com/@kumuthini.program/micro-services-fundamentals-dc0fc369d75e', 'Bases de Microservicios', MICRO_SERVICES_KEY, 'Bases')],
@@ -842,4 +841,6 @@ export const MICRO_SERVICES_REF = new Map<string, Referencia>([
     [Keys.MICROSERVICES_BEST_PRACTICES, new Referencia('https://www.linkedin.com/posts/nelsonamigoscode_systemdesign-coding-interviewtips-activity-7206618794188750848-lNtj/', 'Microservicios, buenas practicas', MICRO_SERVICES_KEY, 'Buenas Practicas', '', '2024/08/17').addRelatedItem(Keys.PRINCIPIOS_KISS).addRelatedItem(Keys.MICROSERVICES_ARQUITECTURAS).addRelatedItem(Keys.ARQUITECTURAS_EVENT_DRIVEN)],
     [Keys.MICROSERVICES_BY_DEFAULT, new Referencia('https://levelup.gitconnected.com/why-you-should-never-default-to-microservices-c952903fbcb6', 'Microservicios por defecto', MICRO_SERVICES_KEY, '¿ Usarlos por defecto ?', '2024/10/12').addRelatedItem(Keys.TESTING_MOCKS).addRelatedItem(Keys.APIS_REST_VS_MESSAGING).addRelatedItem(Keys.ARQUITECTURAS_MONOLITOS)],
     [Keys.MICROSERVICES_TRADEOFFS, new Referencia('https://martinfowler.com/articles/microservice-trade-offs.html', 'Microservicios Tradeoffs', MICRO_SERVICES_KEY, 'Pros & Contras', '2025/01/18').addRelatedItem(Keys.ARQUITECTURAS_DESCOMPOSICION_MODULAR).addRelatedItem(Keys.LEYES_CONWAY).addRelatedItem(Keys.CD_CI_CD_CI).addRelatedItem(Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS).addRelatedItem(Keys.NUBE_CAP_TEOREMA)],
+    [Keys.MICROSERVICES_PATTERNS, new Referencia('https://blog.openreplay.com/7-microservice-design-patterns-to-use/', 'Patrones & Microservicios', MICRO_SERVICES_KEY, 'Patrones', '', '2025/01/19').addRelatedItem(Keys.ANALISIS_LIGHT_EVENTS_VS_RICH_EVENTS)],
+    [Keys.MICROSERVICES_ANTI_PATTERNS, new Referencia('https://blog.bitsrc.io/10-microservice-anti-patterns-278bcb7f385d', 'Antipatrones & Microservicios', MICRO_SERVICES_KEY, 'Antipatrones', '2025/01/19').addRelatedItem(Keys.ANALISIS_SINGLE_POINT_OF_FAILURE).addRelatedItem(Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION).addRelatedItem(Keys.NUBE_OBSERVABILIDAD)],
 ]);
