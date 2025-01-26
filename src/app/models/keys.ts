@@ -138,6 +138,7 @@ export const PERSISTENCY_DL = 'dl'
 export const PERSISTENCY_ERD = 'erd'
 export const PERSISTENCY_NORMALIZATION = 'normalizacion'
 export const PERSISTENCY_ACID = 'ACID'
+export const PERSISTENCY_DATA_MODELING = 'dataModeling';
 export const HARDWARE_MONITOREO = 'monitoreo(apm)';
 export const HARDWARE_PROTOCOLS = 'protocolsHardware';
 export const HARDWARE_OPERATIVE_SYSTEM = 'operativeSystem';

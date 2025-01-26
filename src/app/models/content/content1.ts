@@ -1419,15 +1419,16 @@ export const BASES_DE_DATOS =
             ]),
         new Item(Keys.PERSISTENCY_DBMS,
             [
-                '- Se encargan de almacenar, administrar, manipular y resguardar los datos ',
+                '- Se encargan de almacenar, administrar, manipular y resguardar los datos, para que puedan ser accesibles de manera estructurada y segura ',
                 '- Las BD guardan diferentes tipos de datos como: texto, numeros, binarios, temporales, documentos, imagenes, geograficos, etc... ',
                 '',
                 '- Un buen DBMS deberia tener las siguientes caracteristicas: ',
-                '<strong>- Redundancia:</strong>   Los duplicados en las BD se reducen al tener un unico lugar donde almacenar los datos',
-                '<strong>- Mantenimiento:</strong> Tener todos los datos en solo lugar permite que se administren con más eficiencia ',
-                '<strong>- Seguridad:</strong>     Define quien y con que privilegios puede acceder a la informacón ',
-                '<strong>- Consistencia:</strong>  Se maneja un estandar para todos los datos de todas las BD ',
-                '<strong>- MultiUsuario:</strong>  El acceso concurrente de varios usuarios es un tema comun para las BD ',
+                '<strong>Redundancia:</strong>   Los duplicados en las BD se reducen al tener un unico lugar donde almacenar los datos',
+                '<strong>Mantenimiento:</strong> Tener todos los datos en solo lugar permite que se administren con más eficiencia ',
+                '<strong>Seguridad:</strong>     Define quien y con que privilegios puede acceder a la informacón ',
+                '<strong>Consistencia:</strong>  Se maneja un estandar para todos los datos de todas las BD ',
+                '<strong>MultiUsuario:</strong>  El acceso concurrente de varios usuarios es un tema comun para las BD ',
+                '<strong>Recuperación:</strong>  Permiten crear copias de seguridad y proveen mecanismos para recuperar los datos en caso de perdidas o daños '
             ]),
         new Item('crud',
             [
@@ -1732,6 +1733,23 @@ export const BASES_DE_DATOS =
                 '- las CTE tambien admiten Recursividad, especialmente util para los conjuntos de datos que se expresan como jerarquias ',
                 '- Es importante gestionar los CTE Recursivos con cuidado para evitar un bucle infinito, si la condición de de terminación es inadecuada ',
                 '- No todos los Motores de BD soportan esto, esta compatibilidad esta generalizada en las versiones más actuales '
+            ]),
+        new Item(Keys.PERSISTENCY_DATA_MODELING,
+            [
+                '<strong>Fase Conceptual:</strong> Define los requisitos de alto nivel, funcionales y no funcionales ',
+                '- Identificar el proposito y los objetivos de la BD es esencial para escoger la más indicada ',
+                '- Despues se definen las entidades, con sus respectivos atributos y cardinalidad, generalmente se expresa mediante un <em>ERD</em> ',
+                '- Al identificar las relaciones se suelen usar nombres que representen la interacciones reales entre las entidades: <em>Autor</em> <strong>publica</strong> <em>Libros</em>',
+                '',
+                '<strong>Fase Logica:</strong> El enfoque se centraliza en la normalización de los datos, eliminando redundancias y mejorar la integridad ',
+                '- Un modelo logico normalizado refleja con precisión las relaciones y dependencias entre entidades ',
+                '- Una correcta estructuración puede optimizar las consultas y vincularlo a un esquema segun los criterios especificos ',
+                '',
+                '<strong>Fase Fisica:</strong> Se definen las estructuras de almacenamiento, estrategias de indexación y los tipos de datos ',
+                '- Para garantizar un almacenamiento y una recuperación eficiente de los datos, aca cobra importancia el <em>DBMS</em> a usar ',
+                '- En este paso se plasma los conceptos anteriores mediante SQL, ya sea de manera generica ó con optimizaciones de acuerdo al tipo de BD usado ',
+                '',
+                '- El modelado de datos no es exclusivo de las BD, tambien puede ser aplicado a relaciones Jerarquicas o en la <em>Programación Orientada a Objetos</em> ',
             ])
     ];
 
