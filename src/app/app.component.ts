@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Meta } from '@angular/platform-browser';
+import { Router } from '@angular/router';
 import { fromEvent } from 'rxjs';
 import { map } from 'rxjs/operators';
 
@@ -31,7 +32,7 @@ export class AppComponent implements OnInit {
   buttonChangueMode = false;
   
   // https://usefulangle.com/post/243/change-browser-address-bar-theme-color-with-html-meta-tag
-  constructor(private meta: Meta) {}
+  constructor(private meta: Meta, private router: Router) {}
   
   ngOnInit(): void {
     const now = new Date();
@@ -66,6 +67,10 @@ export class AppComponent implements OnInit {
   public updateColorAdressBar(): void {
     const updateColorAddressBar = this.buttonChangueMode ? colorNavyBlue : colorSelectiveYellow;
     this.meta.updateTag({ name: 'theme-color', content: updateColorAddressBar });
+  }
+
+  public routeTo(component: string): void {
+    this.router.navigateByUrl(`/${component}`)
   }
 
 }
