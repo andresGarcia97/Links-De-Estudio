@@ -1469,8 +1469,10 @@ export const BASES_DE_DATOS =
                 '<strong>- REVOKE:</strong> Retira los privilegios previamente otorgados ',
                 '',
                 '<strong>TCL - Lenguaje de Control de Transacciones</strong>',
-                '<strong>- COMMIT:</strong>   Guarda los cambios realizados ',
-                '<strong>- ROLLBACK:</strong> Deshace el ultimo cambio hecho ',
+                '<strong>- BEGIN:</strong>     Empieza una nueva transacción ',
+                '<strong>- COMMIT:</strong>    Guarda los cambios realizados ',
+                '<strong>- SAVEPOINT:</strong> Crea un punto de guardado dentro de la transacción ',
+                '<strong>- ROLLBACK:</strong>  Deshace todos los cambios hechos por la transacción ',
             ]),
         new Item('integridad',
             [
@@ -1892,7 +1894,7 @@ export const BASE_DE_DATOS_AVANZADO =
                 '- Información muy consultada y de poca edición puede usarse con NoSql ',
                 '- Operaciones criticas y que requieran consistencia con SQL por tradición ',
             ]),
-        new Item('locking',
+        new Item(Keys.PERSISTENCY_ADVANCED_LOCKING,
             [
                 '- En entornos de alta concurrencia es inevitable que hayan conflictos o colisiones, por lo que en las BD se suelen usar 2 estrategias ',
                 '',

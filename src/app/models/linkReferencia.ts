@@ -45,7 +45,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.PERSISTENCY_DATA_MODELING;
+export const LAST_ITEM = Keys.META_CARACTERISTICAS_DEAD_LOCKS;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -367,6 +367,7 @@ export const META_CARATERISTICAS_REF = new Map<string, Referencia>([
     [Keys.META_CARACTERISTICAS_ANOTATIONS, new Referencia('https://vaheaslanyan7.medium.com/the-java-interview-prep-handbook-50-questions-solved-code-examples-62fed44e3e6a', 'Anotaciones', META_CARACTERISTICAS_KEY, 'Anotaciones', '2024/06/30').addRelatedItem(Keys.FRAMEWORKS_FRAMEWORKS).addRelatedItem(Keys.META_ESTRUCTURAS_DEPRECATION)],
     [Keys.META_CARACTERISTICAS_CACHE_AND_TYPES, new Referencia('https://medium.com/@junfeng0828/d884ccac7c87', 'Estrategias del Cache', META_CARACTERISTICAS_KEY, 'Estrategias del Cache', '2024/10/19')],
     [Keys.META_CARACTERISTICAS_TYPE_ERASURE, new Referencia('https://www.baeldung.com/java-type-erasure', 'Borrado de Tipos', META_CARACTERISTICAS_KEY, 'Borrado de Tipos', '2024/11/15').addRelatedItem(Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES)],
+    [Keys.META_CARACTERISTICAS_DEAD_LOCKS, new Referencia('https://www.linkedin.com/posts/bytebytego_systemdesign-coding-interviewtips-activity-7288797053613166592-CNce/', 'DeadLocks - Bloqueos', META_CARACTERISTICAS_KEY, 'DeadLocks - Bloqueos', '2025/01/26').addRelatedItem(Keys.PERSISTENCY_ADVANCED_LOCKING).addRelatedItem(Keys.PERSISTENCY_DBMS).addRelatedItem(Keys.PERSISTENCY_DL)],
 ]);
 
 export const META_ESTRUCTURAS_KEY = 'Meta-Estructuras';
@@ -693,7 +694,7 @@ export const PERSISTENCY_REF = new Map<string, Referencia>([
     //[Keys.PERSISTENCY_DBMS, new Referencia('https://www.astera.com/es/type/blog/database-management-software/', 'Software de Gestion de Bases de Datos', PERSISTENCY_KEY, 'DBMS')],
     [Keys.PERSISTENCY_DBMS, new Referencia('https://www.conectasoftware.com/magazine/glosario/dbms/', 'Software de Gestion de Bases de Datos', PERSISTENCY_KEY, 'DBMS', '', '2025/01/26')],
     ['crud', new Referencia('https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/crud-las-principales-operaciones-de-bases-de-datos/', 'Create, Read, Update, Delete', PERSISTENCY_KEY, 'CRUD')],
-    [Keys.PERSISTENCY_DL, new Referencia('https://www.linkedin.com/posts/brijpandeyji_a-solid-grasp-of-sql-is-crucial-for-anyone-activity-7240803134258782208-ElvO/', 'DQL, DDL, DML, DCL, TCL', PERSISTENCY_KEY, 'DQL, DDL, DML, DCL, TCL', '', '2024/09/15')],
+    [Keys.PERSISTENCY_DL, new Referencia('https://www.linkedin.com/posts/brijpandeyji_a-solid-grasp-of-sql-is-crucial-for-anyone-activity-7240803134258782208-ElvO/', 'DQL, DDL, DML, DCL, TCL', PERSISTENCY_KEY, 'DQL, DDL, DML, DCL, TCL', '2024/09/15', '2025/01/26')],
     ['integridad', new Referencia('https://platzi.com/blog/que-es-ddl-dml-dcl-y-tcl-integridad-referencial/', 'Integridad Referencial', PERSISTENCY_KEY, 'Integridad')],
     [Keys.PERSISTENCY_ERD, new Referencia('https://www.lucidchart.com/pages/es/que-es-un-diagrama-entidad-relacion', 'Diagrama Entidad Relación', PERSISTENCY_KEY, 'ERD', '', '2025/01/04')],
     [Keys.PERSISTENCY_NORMALIZATION, new Referencia('https://docs.microsoft.com/en-us/office/troubleshoot/access/database-normalization-description', 'Normalización de una BD', PERSISTENCY_KEY, 'Normalización')],
@@ -722,7 +723,7 @@ export const PERSISTENCY_ADVANCED_REF = new Map<string, Referencia>([
     [Keys.PERSISTENCY_ADVANCED_N_1_SELECTS, new Referencia('https://stackoverflow.com/questions/97197/what-is-the-n1-selects-problem-in-orm-object-relational-mapping', 'N + 1 Problem', PERSISTENCY_ADVANCED_KEY, 'N + 1 Selects')],
     ['boyceCodd', new Referencia('https://normalizacionunit4.blogspot.com/2019/05/46-forma-normal-boyce-codd.html', 'Boyce-Codd', PERSISTENCY_ADVANCED_KEY, 'Boyce-Codd')],
     ['sqlVsNosql', new Referencia('https://medium.com/@eugeniomendoza/c%C3%B3mo-saber-si-necesitas-una-base-de-datos-nosql-b6cfd5bb7d9b', 'SQL ó NoSql', PERSISTENCY_ADVANCED_KEY, 'SQL ó NoSql', '', '2024/06/06')],
-    ['locking', new Referencia('https://vladmihalcea.com/optimistic-vs-pessimistic-locking/', 'Bloqueo Optimista & Pesimista', PERSISTENCY_ADVANCED_KEY, 'Bloqueos', '2024/06/17')],
+    [Keys.PERSISTENCY_ADVANCED_LOCKING, new Referencia('https://vladmihalcea.com/optimistic-vs-pessimistic-locking/', 'Bloqueo Optimista & Pesimista', PERSISTENCY_ADVANCED_KEY, 'Bloqueos', '2024/06/17')],
     ['sqlOrderExecution', new Referencia('https://matam-kirankumar.medium.com/sql-query-order-of-execution-37001da1462', 'Orden de Ejecución', PERSISTENCY_ADVANCED_KEY, 'Orden de Ejecución', '2023/08/13')],
     ['sargeable', new Referencia('https://dev.to/kanani_nirav/secret-to-optimizing-sql-queries-understand-the-sql-execution-order-28m1', 'Consultas SARGEABLE', PERSISTENCY_ADVANCED_KEY, 'SARGEABLE', '2023/08/14')],
     ['MVCC', new Referencia('https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/What-is-MVCC-How-does-Multiversion-Concurrencty-Control-work', 'Control de Concurrencia Multiversion', PERSISTENCY_ADVANCED_KEY, 'Control de Concurrencia', '2023/10/09')],
