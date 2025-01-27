@@ -874,15 +874,6 @@ div a.circle-link {
     width: 160px;
   }
 
-  .share-button-back {
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-
-  .share-button-back:hover {
-    opacity: 1;
-  }
-
 }
 
 @media screen and (max-width: 900px) {
