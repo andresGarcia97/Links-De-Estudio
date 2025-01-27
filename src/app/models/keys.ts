@@ -163,6 +163,7 @@ export const ANALISIS_DATA_GOLDEN_RECORD = 'goldenRecord';
 export const ANALISIS_DATA_BATCH_VS_STREAM = 'batchVsStreamProcessing';
 export const ANALISIS_DATA_OLAP_OLTP = 'OLAPVsOLTP';
 export const ANALISIS_DATA_DEDUPLICATION = 'deduplication';
+export const ANALISIS_DATA_TGS = 'teoriaGeneralDeSistemas-tgs';
 export const GIT_STRUCTURE_AND_CONCEPTS = 'structureAndConceptsGit';
 export const GIT_BRANCHS = 'ramas';
 export const GIT_PULL_REQUESTS_TOXIC = 'pullRequestsToxic';

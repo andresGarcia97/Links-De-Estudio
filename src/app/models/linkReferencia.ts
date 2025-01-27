@@ -45,7 +45,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.META_CARACTERISTICAS_DEAD_LOCKS;
+export const LAST_ITEM = Keys.ANALISIS_DATA_TGS;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -469,6 +469,7 @@ export const ANALISIS_DATA_REF = new Map<string, Referencia>([
     [Keys.ANALISIS_DATA_BATCH_VS_STREAM, new Referencia('https://estuary.dev/batch-processing-vs-stream-processing/', 'Batch Vs Stream Processing', ANALISIS_DATA_KEY, 'Batch Vs Stream', '2024/08/31')],
     [Keys.ANALISIS_DATA_OLAP_OLTP, new Referencia('https://aws.amazon.com/es/compare/the-difference-between-olap-and-oltp/', 'OLAP & OLTP', ANALISIS_DATA_KEY, 'OLAP & OLTP', '2024/09/15')],
     [Keys.ANALISIS_DATA_DEDUPLICATION, new Referencia('https://www.netapp.com/es/data-management/what-is-data-deduplication/', 'Deduplicación', ANALISIS_DATA_KEY, 'Deduplicación', '2024/11/24')],
+    [Keys.ANALISIS_DATA_TGS, new Referencia('https://economipedia.com/definiciones/teoria-general-de-sistemas-tgs.html', 'Teoria General de Sistemas', ANALISIS_DATA_KEY, 'TGS', '2025/01/26')],
 ]);
 
 export const PARADIGMAS_KEY = 'Paradigmas';
