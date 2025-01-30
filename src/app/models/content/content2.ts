@@ -679,7 +679,7 @@ export const BUENAS_PRACTICAS =
                 ' - Metodos pequeños para funcionalidades más desacopladas ',
                 ' - Evitar sentencias y parametros innecesarios, ya que esto es un indicativo de que hay multiples opciones, violando <strong>SRP</strong>',
             ]),
-        new Item('logging',
+        new Item(Keys.BUENAS_PRACTICAS_LOGGING,
             [
                 '<em>“Depurar es como ser el detective de una película policial en la que también eres el asesino.”</em> <strong>Filipe Fortes</strong>',
                 '',
