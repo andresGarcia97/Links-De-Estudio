@@ -89,7 +89,8 @@ export const CURIOSITIES = new Map([
     ['roadMapDevelop', { titulo: 'Aprender programación', referencia: 'https://www.freecodecamp.org/news/how-to-learn-programming/' }],
     ['howDnsWork', { titulo: 'como funciona un DNS', referencia: 'https://howdns.works/es/' }],
     ['IAexplained', { titulo: 'Terminos comunes en IA', referencia: 'https://www.linkedin.com/pulse/qu%25C3%25A9-es-la-ia-gu%25C3%25ADa-definitiva-para-programadores-y-edteam/?trackingId=iMcaNpgFShCr0%2BTEfhlBvw%3D%3D' }],
-    ['exercism', { titulo: 'Ejercicios', referencia: 'https://exercism.org/' }]
+    ['exercism', { titulo: 'Ejercicios', referencia: 'https://exercism.org/' }],
+    ['networkkProtocols', { titulo: 'Protocolos de Red', referencia: 'https://www.linkedin.com/posts/brijpandeyji_%F0%9D%97%A1%F0%9D%97%B2%F0%9D%98%81%F0%9D%98%84%F0%9D%97%BC%F0%9D%97%BF%F0%9D%97%B8-%F0%9D%97%A3%F0%9D%97%BF%F0%9D%97%BC%F0%9D%98%81%F0%9D%97%BC%F0%9D%97%B0%F0%9D%97%BC%F0%9D%97%B9-%F0%9D%97%97%F0%9D%97%B2%F0%9D%97%BD%F0%9D%97%B2%F0%9D%97%BB%F0%9D%97%B1%F0%9D%97%B2%F0%9D%97%BB%F0%9D%97%B0%F0%9D%97%B6%F0%9D%97%B2%F0%9D%98%80-activity-7288880791546134528-bWrI/' }]
 ]);
 
 export const SECURITY = new Map([
