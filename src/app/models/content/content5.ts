@@ -920,7 +920,7 @@ export const APIS =
                 '<strong>Documentación:</strong> Cuando algo cambia la documentación tambien debe hacerlo, de lo contrario puede haber problemas e inconsistencias ',
                 '<strong>Respuestas:</strong> Los codigos deben reflejar lo que haya sucedido, es una mala practica siempre devolver <strong>200</strong>, en especial si han sucedido errores ',
             ]),
-        new Item('madurezDeUnaApi',
+        new Item(Keys.APIS_MADURITY,
             [
                 '- Entre más niveles se implementen, más util y completa se puede considerar una API',
                 '',
