@@ -26,7 +26,7 @@ export const TESTING =
                 '- Agrupar defectos permite que las soluciones sean más especializadas, y las pruebas sean más efectivas ',
                 '- La paradoja del pesticida, si nuestro software cambia, las pruebas tambien deben hacerlo, que sigan funcionando no siempre es buena señal ',
                 '- Las pruebas dependen del contexto, entre más se parezca el entorno de pruebas al entorno de producción mejor ',
-                '- Que no se presenten errores no significa que no se presentaran errores, solo que no se han dado las condiciones ',
+                '- Que no se presenten errores no significa que no existan errores, solo que no se han dado las condiciones ',
             ]
         ),
         new Item('manifiesto',
@@ -2323,5 +2323,22 @@ export const TESTING_ADVANCED =
                 ' - de manera que cubra la mayor cantidad de funcionalidades, caracteristicas, y casos extremos del producto/sistema ',
                 '<strong>Planeación:</strong> Estos casos no solo se ejecutan, se deben realizar de manera controlada y si es posible siguiendo un plan, ',
                 ' - asi registrar los resultados y monitorear la ejecución se simplifican ',
+            ]),
+        new Item(Keys.TESTING_ADVANCED_ISOLATION,
+            [
+                '<strong>Principio de Aislación:</strong> Indica que las pruebas deben ser aisladas y no depender unas de otras, evitando fallas en cascada y que el orden sea relevante ',
+                '<strong>Patron de Pruebas hermetico:</strong> Cada prueba es una isla, que no afecta a las demás y de igual manera es autosuficiente ',
+                '',
+                '- La configuración puede ser reutilizada más no modificada, al mismo tiempo que deben poder existir escenarios individuales ',
+                '- La destrucción o desmontaje de recursos siempre debe suceder despues de cada test para no afectar a los siguientes ',
+                '- Aunque el entorno sea compartido, este siempre debe ser el mismo para cada prueba y si se requieren variaciones deben estar contenidas ',
+                '- Un conjunto de pruebas con problemas de Aislación, dificilmente sera automatizado, además de que genera retrasos y desperdicio de recursos ',
+                '',
+                '<strong>Detectar pruebas mal aisladas</strong>',
+                '- La ejecución individual falla, pero en una suite o conjunto no',
+                '- La prueba falla de manera aleatoria ',
+                '- Es dependiente de otra prueba ó de un orden de ejecución especificos, Smell code <strong>The Leaky Cauldron</strong> ó <em>caldero chorreante</em>',
+                '- La transición hacia un nuevo ambiente rompe una o varias pruebas ',
+                '- No soportan ser ejecutadas en paralelo, aun si estan diseñadas para permitirlo '
             ])
     ];

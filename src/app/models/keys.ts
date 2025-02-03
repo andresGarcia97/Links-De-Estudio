@@ -200,6 +200,7 @@ export const TESTING_ADVANCED_MUTATION = 'mutation';
 export const TESTING_ADVANCED_ANTI_PATTERNS = 'tdd-antipatterns';
 export const TESTING_ADVANCED_APDEX = 'apdex';
 export const TESTING_ADVANCED_COSTS = 'costsOfTesting';
+export const TESTING_ADVANCED_ISOLATION = 'testsIsolation';
 export const ANALISIS_ANALISIS_DOMAIN = 'analisisDominio';
 export const ANALISIS_MODEL_DOMAIN = 'modeloDominio';
 export const ANALISIS_AVESTRUZ = 'avestruz';

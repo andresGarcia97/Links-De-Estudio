@@ -45,7 +45,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.PRINCIPIOS_SLAP;
+export const LAST_ITEM = Keys.TESTING_ADVANCED_ISOLATION;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -597,12 +597,13 @@ export const TESTING_ADVANCED_REF = new Map<string, Referencia>([
     ['outsideInside', new Referencia('https://www.adictosaltrabajo.com/2016/01/29/tdd-outside-in-vs-inside-out/', 'TDD: Outside-In VS Inside-out', TESTING_ADVANCED_KEY, 'Outside & Inside', '', '2024/07/14').addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_TDD)],
     ['casosDePruebas', new Referencia('https://medium.com/grupo-carricay/qu%C3%A9-son-los-casos-de-pruebas-4893799b5b84', 'Casos de prueba', TESTING_ADVANCED_KEY, 'Casos de prueba')],
     ['casosDeUso', new Referencia('https://blogs.encamina.com/piensa-en-software-desarrolla-en-colores/qa-caso-de-uso-vs-caso-de-prueba/', 'Casos de uso', TESTING_ADVANCED_KEY, 'Casos de uso')],
-    [Keys.TESTING_ADVANCED_SMELLS_CODES1, new Referencia('https://codingcraftsman.wordpress.com/2018/09/27/test-smells/', 'Smells codes en testing #1', TESTING_ADVANCED_KEY, 'Code smells en testing #1')],
-    [Keys.TESTING_ADVANCED_SMELLS_CODES2, new Referencia('https://codingcraftsman.wordpress.com/2018/09/27/test-smells/', 'Smells codes en testing #2', TESTING_ADVANCED_KEY, 'Code smells en testing #2')],
+    [Keys.TESTING_ADVANCED_SMELLS_CODES1, new Referencia('https://codingcraftsman.wordpress.com/2018/09/27/test-smells/', 'Smells codes en testing #1', TESTING_ADVANCED_KEY, 'Smells codes en testing #1')],
+    [Keys.TESTING_ADVANCED_SMELLS_CODES2, new Referencia('https://codingcraftsman.wordpress.com/2018/09/27/test-smells/', 'Smells codes en testing #2', TESTING_ADVANCED_KEY, 'Smells codes en testing #2')],
     [Keys.TESTING_ADVANCED_MUTATION, new Referencia('https://spa.myservername.com/what-is-mutation-testing', 'Tests de mutación', TESTING_ADVANCED_KEY, 'Pruebas de mutación')],
     [Keys.TESTING_ADVANCED_ANTI_PATTERNS, new Referencia('https://agileinaflash.blogspot.com/2009/06/tdd-antipatterns.html', 'TDD Antipatrones', TESTING_ADVANCED_KEY, 'TDD Antipatrones', '2024/07/14').addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_TDD).addRelatedItem(Keys.TESTING_DATA_SUT_DOC)],
     [Keys.TESTING_ADVANCED_APDEX, new Referencia('https://www.techtarget.com/searchitoperations/definition/Application-Performance-Index-Apdex', 'Application Performance Index', TESTING_ADVANCED_KEY, 'Apdex', '2024/12/16').addRelatedItem(Keys.HARDWARE_MONITOREO).addRelatedItem(Keys.APIS_TESTING)],
     [Keys.TESTING_ADVANCED_COSTS, new Referencia('https://fastercapital.com/es/contenido/Costo-de-las-pruebas--como-calcular-el-costo-de-verificar-la-calidad-o-el-rendimiento-de-un-producto-o-sistema.html', 'Costos del Testing', TESTING_ADVANCED_KEY, 'Costos', '2025/01/04')],
+    [Keys.TESTING_ADVANCED_ISOLATION, new Referencia('https://mrslavchev.com/2018/08/03/hindsight-lessons-about-automation-test-isolation-principle/', 'Aislamiento de pruebas', TESTING_ADVANCED_KEY, 'Aislamiento', '2025/02/02')],
 ]);
 
 export const REFACTORING_KEY = 'Refactorizacion';
