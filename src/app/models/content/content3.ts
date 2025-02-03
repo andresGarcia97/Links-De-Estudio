@@ -551,11 +551,12 @@ export const PRINCIPIOS =
                 '- Generalmente las entidades externas son los frameworks que ejecutan el codigo del usuario ',
                 '- Las instancias se crean y se eliminan de manera más eficiente, mejorando el rendimiento ',
             ]),
-        new Item('tellDontAsk',
+        new Item(Keys.PRINCIPIOS_TELL_DONT_ASK,
             [
-                '- La responsabilidad debe ser delegada al objeto correspondiente, en lugar de extraerla en un componente afuera ',
+                '- La responsabilidad debe ser delegada al objeto correspondiente, en lugar de extraerla en un componente diferente ',
                 '- En lugar de pedir los datos a los objetos, debemos decirles que hacer y esperar el resultado de la operación ',
                 '- Esto es un refuerzo del concepto de encapsulación, propio de la orientación a objetos ',
+                '- De esta manera se limita el acoplamiento de los componentes y se centralizan acciones evitando posible duplicación '
             ]),
         new Item('stupid',
             [

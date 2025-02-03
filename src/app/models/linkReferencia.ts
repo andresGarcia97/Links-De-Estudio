@@ -645,13 +645,13 @@ export const PRINCIPIOS_REF = new Map<string, Referencia>([
     ['occam', new Referencia('https://www.genbeta.com/desarrollo/la-navaja-de-occam-kiss-y-yagni-la-simplicidad-en-el-codigo-no-deberia-ser-solo-postureo-developer', 'La navaja de Occam', PRINCIPIOS_KEY, 'Occam')],
     [Keys.PRINCIPIOS_DRY, new Referencia('https://medium.com/@psdevraye/mastering-the-dry-principle-in-java-a-guide-to-cleaner-code-afd889bfca42', 'No te repitas', PRINCIPIOS_KEY, 'DRY', '', '2024/10/18')],
     [Keys.PRINCIPIOS_HOLLYWOOD, new Referencia('https://www.genbeta.com/desarrollo/doce-principios-de-diseno-que-todo-desarrollador-deberia-conocer', 'No nos llames, nosotros te llamamos', PRINCIPIOS_KEY, 'Hollywood')],
-    ['tellDontAsk', new Referencia('https://www.disrupciontecnologica.com/tell-dont-ask/?reload=977836', 'Dile, no le preguntes', PRINCIPIOS_KEY, 'TDA')],
+    [Keys.PRINCIPIOS_TELL_DONT_ASK, new Referencia('https://www.disrupciontecnologica.com/tell-dont-ask/', 'Dile, no le preguntes', PRINCIPIOS_KEY, 'Tell, Don´t Ask', '', '2025/02/02')],
     ['stupid', new Referencia('https://williamdurand.fr/2013/07/30/from-stupid-to-solid-code/#singleton', 'NO seas S.T.U.P.I.D', PRINCIPIOS_KEY, 'STUPID')],
     ['twice-one', new Referencia('https://betterprogramming.pub/measure-twice-cut-once-isnt-very-agile-3af456d932b9', 'Mide 2 veces, Corta 1 vez', PRINCIPIOS_KEY, '2-1')],
     ['divide-conquer', new Referencia('https://betterprogramming.pub/10-design-principles-in-software-engineering-f88647cf5a07', 'Divide y Conquistaras', PRINCIPIOS_KEY, 'Dividir y Conquistar')],
     [Keys.PRINCIPIOS_SOC, new Referencia('https://geeksprogramming.com/key-principles-in-software-and-acronyms/', 'Separacion de Conceptos', PRINCIPIOS_KEY, 'SOC', '2024/01/13')],
     [Keys.PRINCIPIOS_POC, new Referencia('https://geeksprogramming.com/key-principles-in-software-and-acronyms/', 'Prueba de Concepto', PRINCIPIOS_KEY, 'POC', '2024/01/13')],
-    [Keys.PRINCIPIOS_SLAP, new Referencia('https://medium.com/javarevisited/slap-that-ugly-code-6ec276d3a4bc', 'Principio de abstracción de un solo nivel', PRINCIPIOS_KEY, 'SLAP', '2025/02/02').addRelatedItem(Keys.POO_POO_PILARES)],
+    [Keys.PRINCIPIOS_SLAP, new Referencia('https://medium.com/javarevisited/slap-that-ugly-code-6ec276d3a4bc', 'Principio de abstracción de un solo nivel', PRINCIPIOS_KEY, 'SLAP', '2025/02/02')],
 ]);
 
 export const SECURITY_KEY = 'Seguridad';

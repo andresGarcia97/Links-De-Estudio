@@ -227,6 +227,7 @@ export const PRINCIPIOS_SOLID = 'SOLID';
 export const PRINCIPIOS_KISS = 'KISS';
 export const PRINCIPIOS_DRY = 'DRY';
 export const PRINCIPIOS_HOLLYWOOD = 'hollywood';
+export const PRINCIPIOS_TELL_DONT_ASK = 'tellDontAsk';
 export const PRINCIPIOS_SOC = 'SOC';
 export const PRINCIPIOS_POC = 'POC';
 export const PRINCIPIOS_SLAP = 'SLAP';
