@@ -53,6 +53,7 @@ export const BACK = new Map([
 export const UTILS = new Map([
     ['atributosCalidad', { titulo: 'Atributos de calidad', referencia: 'https://platzi.com/tutoriales/1248-pro-arquitectura/2545-resumen-grafico-de-los-atributos-de-calidad/' }],
     ['expresionesRegulares', { titulo: 'Expresiones regulares', referencia: 'https://regexr.com/' }],
+    ['expresionesRegularesInteractivas', { titulo: 'Expresiones regulares Interactivas', referencia: 'https://regex-vis.com/' }],
     ['javascriptStandars', { titulo: 'Estandars para Javascript', referencia: 'https://github.com/airbnb/javascript#table-of-contents' }],
     ['algoritms', { titulo: 'Algoritmos', referencia: 'https://github.com/TheAlgorithms' }],
     ['devDocs', { titulo: 'Dev Docs', referencia: 'https://devdocs.io/' }],
@@ -89,8 +90,7 @@ export const CURIOSITIES = new Map([
     ['roadMapDevelop', { titulo: 'Aprender programación', referencia: 'https://www.freecodecamp.org/news/how-to-learn-programming/' }],
     ['howDnsWork', { titulo: 'como funciona un DNS', referencia: 'https://howdns.works/es/' }],
     ['IAexplained', { titulo: 'Terminos comunes en IA', referencia: 'https://www.linkedin.com/pulse/qu%25C3%25A9-es-la-ia-gu%25C3%25ADa-definitiva-para-programadores-y-edteam/?trackingId=iMcaNpgFShCr0%2BTEfhlBvw%3D%3D' }],
-    ['exercism', { titulo: 'Ejercicios', referencia: 'https://exercism.org/' }],
-    ['networkkProtocols', { titulo: 'Protocolos de Red', referencia: 'https://www.linkedin.com/posts/brijpandeyji_%F0%9D%97%A1%F0%9D%97%B2%F0%9D%98%81%F0%9D%98%84%F0%9D%97%BC%F0%9D%97%BF%F0%9D%97%B8-%F0%9D%97%A3%F0%9D%97%BF%F0%9D%97%BC%F0%9D%98%81%F0%9D%97%BC%F0%9D%97%B0%F0%9D%97%BC%F0%9D%97%B9-%F0%9D%97%97%F0%9D%97%B2%F0%9D%97%BD%F0%9D%97%B2%F0%9D%97%BB%F0%9D%97%B1%F0%9D%97%B2%F0%9D%97%BB%F0%9D%97%B0%F0%9D%97%B6%F0%9D%97%B2%F0%9D%98%80-activity-7288880791546134528-bWrI/' }]
+    ['exercism', { titulo: 'Ejercicios', referencia: 'https://exercism.org/' }]
 ]);
 
 export const SECURITY = new Map([
@@ -99,7 +99,8 @@ export const SECURITY = new Map([
     ['web3.0', { titulo: 'Web 3.0 & e Internet', referencia: 'https://www.freecodecamp.org/espanol/news/que-es-web-3/' }],
     ['permisosUbuntu', { titulo: 'Permisos en Ubuntu', referencia: 'https://www.freecodecamp.org/news/linux-chmod-chown-change-file-permissions/' }],
     ['auth0', { titulo: 'Auth 0, blog & noticias', referencia: 'https://auth0.com/blog/' }],
-    ['https', { titulo: 'HTTPS, en un comic', referencia: 'https://howhttps.works/why-do-we-need-https/' }]
+    ['https', { titulo: 'HTTPS, en un comic', referencia: 'https://howhttps.works/why-do-we-need-https/' }],
+    ['networkProtocols', { titulo: 'Protocolos de Red', referencia: 'https://www.linkedin.com/posts/brijpandeyji_%F0%9D%97%A1%F0%9D%97%B2%F0%9D%98%81%F0%9D%98%84%F0%9D%97%BC%F0%9D%97%BF%F0%9D%97%B8-%F0%9D%97%A3%F0%9D%97%BF%F0%9D%97%BC%F0%9D%98%81%F0%9D%97%BC%F0%9D%97%B0%F0%9D%97%BC%F0%9D%97%B9-%F0%9D%97%97%F0%9D%97%B2%F0%9D%97%BD%F0%9D%97%B2%F0%9D%97%BB%F0%9D%97%B1%F0%9D%97%B2%F0%9D%97%BB%F0%9D%97%B0%F0%9D%97%B6%F0%9D%97%B2%F0%9D%98%80-activity-7288880791546134528-bWrI/' }]
 ]);
 
 export const GIT = new Map([
