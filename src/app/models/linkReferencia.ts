@@ -45,7 +45,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.ESTRATEGIAS_DESARROLLO_DDD_MADURITY;
+export const LAST_ITEM = Keys.PRINCIPIOS_SLAP;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -279,7 +279,7 @@ export const ESTRATEGIAS_DESARROLLO_REF = new Map<string, Referencia>([
 export const FRAMEWORKS_KEY = 'Frameworks';
 export const FRAMEWORKS_REF = new Map<string, Referencia>([
     [Keys.FRAMEWORKS_FRAMEWORKS, new Referencia('https://neoattack.com/neowiki/framework/', '¿ Que es un framework ?', FRAMEWORKS_KEY, '¿ Que es un framework ?')],
-    ['ioc', new Referencia('https://medium.com/all-you-need-is-clean-code/inversi%C3%B3n-de-control-principio-de-hollywood-dont-call-us-we-ll-call-you-179e9c70e3d0', 'Inversión de Control', FRAMEWORKS_KEY, 'Inversión de control')],
+    ['ioc', new Referencia('https://medium.com/all-you-need-is-clean-code/inversi%C3%B3n-de-control-principio-de-hollywood-dont-call-us-we-ll-call-you-179e9c70e3d0', 'Inversión de Control', FRAMEWORKS_KEY, 'Inversión de control').addRelatedItem(Keys.PRINCIPIOS_HOLLYWOOD)],
     [Keys.FRAMEWORKS_IOD, new Referencia('https://www.arquitecturajava.com/el-patron-de-inyeccion-de-dependencia/', 'Inyección de dependencias', FRAMEWORKS_KEY, 'Inyección de dependencias', '', '2024/06/09')],
     ['scafolding', new Referencia('https://medium.com/@srinathsrs104/scaffolding-54ac4e47e133', 'Creación automatica de codigo', FRAMEWORKS_KEY, 'Scaffolding')],
     ['iodSpring', new Referencia('https://medium.com/@priyaroul99/what-is-constructor-injection-and-why-should-you-use-it-in-spring-bdb3e1857c58', 'Inyección de Dependencias en Spring', FRAMEWORKS_KEY, 'IoD Spring', '2023/12/02')],
@@ -644,13 +644,14 @@ export const PRINCIPIOS_REF = new Map<string, Referencia>([
     ['yagni', new Referencia('https://www.genbeta.com/desarrollo/la-navaja-de-occam-kiss-y-yagni-la-simplicidad-en-el-codigo-no-deberia-ser-solo-postureo-developer', 'No vas a necesitarlo', PRINCIPIOS_KEY, 'YAGNI')],
     ['occam', new Referencia('https://www.genbeta.com/desarrollo/la-navaja-de-occam-kiss-y-yagni-la-simplicidad-en-el-codigo-no-deberia-ser-solo-postureo-developer', 'La navaja de Occam', PRINCIPIOS_KEY, 'Occam')],
     [Keys.PRINCIPIOS_DRY, new Referencia('https://medium.com/@psdevraye/mastering-the-dry-principle-in-java-a-guide-to-cleaner-code-afd889bfca42', 'No te repitas', PRINCIPIOS_KEY, 'DRY', '', '2024/10/18')],
-    ['hollywood', new Referencia('https://www.genbeta.com/desarrollo/doce-principios-de-diseno-que-todo-desarrollador-deberia-conocer', 'No nos llames, nosotros te llamamos', PRINCIPIOS_KEY, 'Hollywood')],
+    [Keys.PRINCIPIOS_HOLLYWOOD, new Referencia('https://www.genbeta.com/desarrollo/doce-principios-de-diseno-que-todo-desarrollador-deberia-conocer', 'No nos llames, nosotros te llamamos', PRINCIPIOS_KEY, 'Hollywood')],
     ['tellDontAsk', new Referencia('https://www.disrupciontecnologica.com/tell-dont-ask/?reload=977836', 'Dile, no le preguntes', PRINCIPIOS_KEY, 'TDA')],
     ['stupid', new Referencia('https://williamdurand.fr/2013/07/30/from-stupid-to-solid-code/#singleton', 'NO seas S.T.U.P.I.D', PRINCIPIOS_KEY, 'STUPID')],
     ['twice-one', new Referencia('https://betterprogramming.pub/measure-twice-cut-once-isnt-very-agile-3af456d932b9', 'Mide 2 veces, Corta 1 vez', PRINCIPIOS_KEY, '2-1')],
     ['divide-conquer', new Referencia('https://betterprogramming.pub/10-design-principles-in-software-engineering-f88647cf5a07', 'Divide y Conquistaras', PRINCIPIOS_KEY, 'Dividir y Conquistar')],
-    ['soc', new Referencia('https://geeksprogramming.com/key-principles-in-software-and-acronyms/', 'Separacion de Conceptos', PRINCIPIOS_KEY, 'SOC')],
-    ['poc', new Referencia('https://geeksprogramming.com/key-principles-in-software-and-acronyms/', 'Prueba de Concepto', PRINCIPIOS_KEY, 'POC')],
+    [Keys.PRINCIPIOS_SOC, new Referencia('https://geeksprogramming.com/key-principles-in-software-and-acronyms/', 'Separacion de Conceptos', PRINCIPIOS_KEY, 'SOC', '2024/01/13')],
+    [Keys.PRINCIPIOS_POC, new Referencia('https://geeksprogramming.com/key-principles-in-software-and-acronyms/', 'Prueba de Concepto', PRINCIPIOS_KEY, 'POC', '2024/01/13')],
+    [Keys.PRINCIPIOS_SLAP, new Referencia('https://medium.com/javarevisited/slap-that-ugly-code-6ec276d3a4bc', 'Principio de abstracción de un solo nivel', PRINCIPIOS_KEY, 'SLAP', '2025/02/02').addRelatedItem(Keys.POO_POO_PILARES)],
 ]);
 
 export const SECURITY_KEY = 'Seguridad';

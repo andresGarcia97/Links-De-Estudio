@@ -1984,7 +1984,7 @@ export const METODOLOGIAS =
                 '4 <strong>Actuar:</strong>     Si has logrado cumplir los objetivos marcados, entonces es hora de estandarizar y continuar con las mejoras ',
                 '',
                 '<strong>La importancia de los empleados</strong>',
-                '- Una gran ventaja de esta metodologia es que no siempre son necesarias cuatiosas inversiones para obtener resultados',
+                '- Una gran ventaja de esta metodologia es que no siempre son necesarias cuantiosas inversiones para obtener resultados',
                 '- Debido a que todos los empleados son tomados en cuenta a la hora de tomar decisiones, aportando ideas y soluciones desde diferentes niveles ',
                 '- Esto tambien aumentara la productividad y su motivación, lo que a la larga se convierte en un beneficio añadido ',
             ]),

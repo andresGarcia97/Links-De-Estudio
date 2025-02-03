@@ -544,9 +544,9 @@ export const PRINCIPIOS =
                 '- Más importante que el NO duplicar codigo es el NO duplicar conceptos que tengan el mismo significado ',
                 '- No siempre es aplicable, puede existir la duplicación en vez de mantener una mala abstracción/generalización '
             ]),
-        new Item('hollywood',
+        new Item(Keys.PRINCIPIOS_HOLLYWOOD,
             [
-                '- Se basa en la inversion de dependencias para crear la inversion de control ',
+                '- Se basa en la inversión de dependencias para crear la inversión de control ',
                 '- Esto logra obtener las referencias y datos necesarios para funcionar mediante una entidad externa (frameworks)',
                 '- Generalmente las entidades externas son los frameworks que ejecutan el codigo del usuario ',
                 '- Las instancias se crean y se eliminan de manera más eficiente, mejorando el rendimiento ',
@@ -583,7 +583,7 @@ export const PRINCIPIOS =
                 '- Esto se puede ver como una muñeca Rusa, donde cada muñeca esta formada por más partes que se van haciendo más pequeñas ',
                 ' - pero juntas son capaces de conformar un todo, mayor a la suma de sus partes ',
             ]),
-        new Item('soc',
+        new Item(Keys.PRINCIPIOS_SOC,
             [
                 '- Un concepto simple que dice que no todo se debe solucionar junto, en el mismo archivo, en la misma funcion, etc... ',
                 '- Sino que se debe dividir en fragmentos, de modo que cada parte pueda completar una parte distinta, especifica y más acotada ',
@@ -591,12 +591,21 @@ export const PRINCIPIOS =
                 '  <em>es la única técnica disponible, que yo sepa, para ordenar eficazmente los propios pensamientos</em>',
                 '- Esto aplica desde funciones, clases, pasando por modulos, hasta llegar a proyectos ',
             ]),
-        new Item('poc',
+        new Item(Keys.PRINCIPIOS_POC,
             [
                 '- Es una prueba inicial, donde se toman acciones para determinar si una idea es lo suficientemente valiosa, factible, e incluso posible ',
                 '- Tambien prueba la viabilidad de un producto para resolver alguna necesidad empresarial',
                 '- Esto se diferencia de un <em>MVP</em> ya que esto es un pequeño documento o demostración de la etapa inicial, del cual se puede empezar a construir ',
                 '- Despues de que se hayan aceptado por un cliente y/o usuario final, y asi poder empezar una toma de requisitos y factores claves de la aplicación ',
+            ]),
+        new Item(Keys.PRINCIPIOS_SLAP,
+            [
+                '- Es un principio ampliamente explicado por multiples autores, pero principalmente se recuerda a <em>Robert C Martin</em> en el libro de <strong>Clean Code</strong>',
+                '- La idea es que todo el codigo dentro de un metodo debe estar en el mismo nivel de abstracción, para facilitar la lectura y su comprensión ',
+                '- El fin es evitar la mezcla de operaciones de alto y bajo nivel manejando un mismo nivel conceptual ',
+                '- Tambien se ha de tener cuidado con la aplicación de este principio, porque se pueden crear multiples metodos para ocultar los detalles ',
+                ' - de la implementación aumentando la indirección y el esfuerzo necesario para su mantenimiento ',
+                '',
             ])
     ];
 
