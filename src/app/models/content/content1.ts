@@ -969,7 +969,7 @@ export const PARADIGMAS =
                 '<strong>- Mutabilidad & Inmutabilidad:</strong> Indican si una variable puede ser modificada o no despues de su creación ',
                 '<strong>- Efectos secundarios</strong> Todo cambio de estado, que se de por fuera de la función llamada, se evitan principalmente ',
             ]),
-        new Item('scripting',
+        new Item(Keys.PARADIGMAS_PARADIGMA_SCRIPTING,
             [
                 '- Son lenguajes no compilados y que se ejecutan directamente en el lado del cliente, aunque tambien existen en el lado del servidor ',
                 '- El más famoso es Javascript, pero otros como Python y Ruby tambien lo son',
