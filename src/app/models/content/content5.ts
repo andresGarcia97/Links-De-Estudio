@@ -1317,7 +1317,13 @@ export const META_ESTRUCTURAS =
                 '<strong>Grafos:</strong> Consta de Vertices(nodos) conectados mediante aristas que pueden ser caminos con una sola dirección o bidireccioneales ',
                 '- La dirección los convierte en Grafos Dirigidos o No dirigidos respectivamente <strong>Aplicaciones:</strong>',
                 ' - Modelado de relaciones              - Analisis de redes              - Redes sociales',
-                ' - Sistemas de recomendación           - BD No relacionales '
+                ' - Sistemas de recomendación           - BD No relacionales ',
+                '',
+                '<strong>Hash Tables:</strong> Almacen de datos de tipo clave-valor de manera que facilitan su busqueda y permiten crecer de manera dinamica ',
+                '- Especialmente utiles cuando los valores son grandes y/o complejos, a los cuales se les aplica una funcion hash para identificarlos ',
+                '- Hay datos que siendo diferentes pueden generar hashs repetidos(colisiones), aunque sea improbable hay formas de solventarlo <strong>Aplicaciones:</strong> ',
+                ' - Cache                               - Motores de busqueda         ',
+                ' - Detección de duplicados             - Cifrado/descifrado de datos ',
             ]),
         new Item('homoiconicidad',
             [

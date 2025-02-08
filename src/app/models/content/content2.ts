@@ -723,7 +723,7 @@ export const BUENAS_PRACTICAS =
                 '<strong>- Codigo limpio:</strong> Tenga en cuenta que los principios como SOLID, KISS, DRY y muchos más estan ahi para mejorar nuestro codigo, ',
                 ' - tenerlos en cuenta a la hora de codificar nos ayuda a crear implementaciones más limpias y mantenibles ',
             ]),
-        new Item('complejidadCognitiva',
+        new Item(Keys.BUENAS_PRACTICAS_COMPLEJIDAD_COGNITIVA,
             [
                 '- Es una metrica de software complementaria a la complejidad ciclomatica ',
                 '- Esta metrica trata sobre que tan dificil es de entender un fragmento de codigo ',
@@ -742,7 +742,7 @@ export const BUENAS_PRACTICAS =
                 '- Un codigo con una alta complejidad cognitiva es dificil de mantener y de entender, por lo que siempre se busca simplificarla, ',
                 ' - sin cambiar su comportamiento, para que sea más facil de comprender y de modificar ',
             ]),
-        new Item('complejidadAlgoritmica',
+        new Item(Keys.BUENAS_PRACTICAS_COMPLEJIDAD_ALGORITMICA,
             [
                 '- Un algoritmo es una manera de hallar un dato desconocido, o una secuencia de pasos para obtener un resultado ',
                 '- Los problemas pueden ser resueltos de diversas maneras, sin embargo no todas son optimas o viables ',

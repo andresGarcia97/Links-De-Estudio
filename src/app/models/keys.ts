@@ -65,6 +65,7 @@ export const MALAS_PRACTICAS_TRAIN_WECKS = 'trainWrecks';
 export const BUENAS_PRACTICAS_DEMETER = 'demeter';
 export const BUENAS_PRACTICAS_LOGGING = 'logging';
 export const BUENAS_PRACTICAS_COMPLEJIDAD_COGNITIVA = 'complejidadCognitiva';
+export const BUENAS_PRACTICAS_COMPLEJIDAD_ALGORITMICA = 'complejidadAlgoritmica';
 export const BUENAS_PRACTICAS_FUNCTIONS = 'functions';
 export const BUENAS_PRACTICAS_EXCEPTIONS = 'exceptionGoodPractices';
 export const AGILES_5S = '5S';
