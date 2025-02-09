@@ -862,6 +862,22 @@ export const NUBE =
                 '- Este teorema cubre aspectos faltante de CAP y establece que un sistema que replique datos: ',
                 ' - Si hay una Partición(<strong>P</strong>) un sistema distribuido puede equilibrar entre Disponibilidad(<strong>A</strong>) y Consistencia(<strong>C</strong>) ',
                 ' - Si no hay(<strong>E</strong>) Particiónes, el sistema se equilibrara entre Latencia(<strong>L</strong>) y Consistencia(<strong>C</strong>)',
+            ]),
+        new Item(Keys.NUBE_NATIVE,
+            [
+                '                  &brvbar; 1980-1990 &brvbar;    2000    &brvbar;     2010...    &brvbar;',
+                '-------------------------------------------------------------',
+                '&brvbar;   <strong>Proceso de</strong>    &brvbar;  Cascada  &brvbar;   Agiles   &brvbar;     DevOps     &brvbar;  Los ciclos de desarrollo se aceleran junto a las          ',
+                '&brvbar;   <strong>desarrollo</strong>    &brvbar;           &brvbar;            &brvbar;                &brvbar;   necesidades y expectativas de los consumidores           ',
+                '-------------------------------------------------------------',
+                '&brvbar;  <strong>Arquitecturas</strong>  &brvbar; Monolitos &brvbar;     N      &brvbar; Microservicios &brvbar;  Las Arquitecturas se adaptan para que puedan cambiar      ',
+                '&brvbar;    <strong>más usadas</strong>   &brvbar;           &brvbar;   Capas    &brvbar;                &brvbar;   y crecer sin necesidad de estar acopladas                ',
+                '-------------------------------------------------------------',
+                '&brvbar;   <strong>Despliegue &</strong>  &brvbar; Servidor  &brvbar;  Maquinas  &brvbar; Contenedores & &brvbar;  El consumo de recursos se torna más controlado y su       ',
+                '&brvbar;   <strong>empaquetado</strong>   &brvbar;  fisico   &brvbar;  virtuales &brvbar; Orquestación   &brvbar;   asignación se vuelve más eficiente y adaptable           ',
+                '-------------------------------------------------------------',
+                '&brvbar; <strong>Infraestructura</strong> &brvbar; Centro de &brvbar; Servidores &brvbar;      Nube      &brvbar;  Los servidores locales dejan de usarse y las aplicaciones ',
+                '&brvbar;    <strong>& Hosting</strong>    &brvbar;   datos   &brvbar;  locales   &brvbar;                &brvbar;   distribuidas y altamente disponibles se vuelven comunes  ',
             ])
     ];
 
@@ -2005,7 +2021,7 @@ export const MICRO_SERVICES =
                 '<strong>Diseño evolutivo y mejora continua:</strong> Los sistemas deben adaptarse y evolucionar en pro de cubrir nuevas necesidades y expectativas ',
                 '- Los sistemas se van refinando y adaptando constantemente, de lo contrario se volverian obsoletos e insostenible ',
                 '',
-                '<strong>Considereaciones:</strong>',
+                '<strong>Consideraciones:</strong>',
                 '- Diseñar microservicios, es una maratón, no un sprint, estos principios son pautas que deben ser adaptados segun cada necesidad ',
                 '- Aplicar estos principios ayuda a crear sistemas robustos, escalables y mantenibles, con el objetivo de brindar valor, y no solo crear codigo ',
             ]),

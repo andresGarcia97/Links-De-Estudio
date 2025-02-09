@@ -38,4 +38,9 @@ export class Referencia {
         return this;
     }
 
+    public addRelatedItems(...relatedItems: string[]): Referencia {
+        this.relatedItems.push(...relatedItems);
+        return this;
+    }
+
 }

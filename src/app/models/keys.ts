@@ -102,6 +102,7 @@ export const NUBE_OBSERVABILIDAD = 'observabilidad';
 export const NUBE_TWO_PHASE_COMMIT = 'twoPhaseCommit';
 export const NUBE_DISPONIBILITY = 'disponibilidad';
 export const NUBE_PACELC = 'PACELC';
+export const NUBE_NATIVE = 'cloudNative';
 export const PARADIGMAS_PARADIGMA_SCRIPTING = 'scripting';
 export const PARADIGMAS_PARADIGMA_DATOS = 'paradigmaDatos';
 export const CONOCIMIENTOS_EMPIRICOS_COSTO_HUNDIDO = 'costoHundido';
