@@ -45,7 +45,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.NUBE_NATIVE;
+export const LAST_ITEM = Keys.POO_CALISTHENICS;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -140,7 +140,7 @@ export const BUENAS_PRACTICAS_REF = new Map<string, Referencia>([
     [Keys.BUENAS_PRACTICAS_COMPLEJIDAD_ALGORITMICA, new Referencia('https://medium.com/@joseguillermo_/qu%C3%A9-es-la-complejidad-algor%C3%ADtmica-y-con-qu%C3%A9-se-come-2638e7fd9e8c', 'Complejidad Algoritmica', BUENAS_PRACTICAS_KEY, 'Complejidad Algoritmica')],
     ['estandaresNombramiento', new Referencia('https://adrianalonso.es/cajon-desatre/convencion-de-nombres-desde-el-camelcase-hasta-el-kebab-case/', 'Estandares de nombramiento', BUENAS_PRACTICAS_KEY, 'Nombramiento')],
     ['estatico', new Referencia('https://www.welivesecurity.com/la-es/2021/01/18/analisis-estatico-codigo-fuente-orientado-a-seguridad/', 'Analisis de codigo estatico', BUENAS_PRACTICAS_KEY, 'Analisis de codigo')],
-    ['guardClauses', new Referencia('https://artansoft.com/2017/01/guard-clauses-definicion-beneficios/', 'Guard clauses', BUENAS_PRACTICAS_KEY, 'Guard Clauses')],
+    [Keys.BUENAS_PRACTICAS_GUARD_CLAUSES, new Referencia('https://artansoft.com/2017/01/guard-clauses-definicion-beneficios/', 'Guard clauses', BUENAS_PRACTICAS_KEY, 'Guard Clauses')],
     ['semanticConstructors', new Referencia('https://medium.com/all-you-need-is-clean-code/constructores-sem%C3%A1nticos-ae7ac70b23aa', 'Constructores Semanticos', BUENAS_PRACTICAS_KEY, 'Constructores Semanticos')],
     [Keys.BUENAS_PRACTICAS_EXCEPTIONS, new Referencia('https://javachallengers.com/mistakes-when-using-exceptions/', 'Manejo de Excepciones', BUENAS_PRACTICAS_KEY, 'Manejo de Excepciones')],
     ['goodHabits', new Referencia('https://vadimkravcenko.com/shorts/habits-of-great-software-engineers/', 'Buenos habitos de un desarrollador', BUENAS_PRACTICAS_KEY, 'Buenos habitos')],
@@ -163,7 +163,7 @@ export const CALIDAD_REF = new Map<string, Referencia>([
     ['doraAndSpaceMetrics', new Referencia('https://echometerapp.com/es/dora-and-space-metrics/', 'Metricas DORA & SPACE', CALIDAD_KEY, 'DORA & SPACE')],
     ['goodCodingPrinciples', new Referencia('https://blog.bytebytego.com/p/ep97-10-good-coding-principles-to#%C2%A7good-coding-principles-to-improve-code-quality', 'Principios para una buena codificación', CALIDAD_KEY, 'Good Coding Principles')],
     [Keys.CALIDAD_CODE_ROT, new Referencia('https://betterprogramming.pub/code-rot-is-a-process-decision-d4b37cf1e26b', 'Control de la Degradación', CALIDAD_KEY, 'Degradación')],
-    [Keys.CALIDAD_IF_ELSE, new Referencia('https://medium.com/@akintopbas96/refactoring-java-spring-boot-code-eliminating-if-else-statements-for-cleaner-extensible-logic-f1314cf9724e', 'Como Reducir los if/else', CALIDAD_KEY, 'Reducción de if/else', '2024/08/11').addRelatedItems(Keys.REFACTORING_CLEAN_CODE, Keys.BUENAS_PRACTICAS_COMPLEJIDAD_COGNITIVA)],
+    [Keys.CALIDAD_IF_ELSE, new Referencia('https://medium.com/@akintopbas96/refactoring-java-spring-boot-code-eliminating-if-else-statements-for-cleaner-extensible-logic-f1314cf9724e', 'Como Reducir los if/else', CALIDAD_KEY, 'Reducción de if/else', '2024/08/11').addRelatedItems(Keys.REFACTORING_CLEAN_CODE, Keys.BUENAS_PRACTICAS_COMPLEJIDAD_COGNITIVA, Keys.BUENAS_PRACTICAS_GUARD_CLAUSES)],
 ]);
 
 export const COMPILACION_KEY = 'Compilacion';
@@ -387,7 +387,7 @@ export const META_ESTRUCTURAS_REF = new Map<string, Referencia>([
     [Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS, new Referencia('http://fisicotronica.com/maquina-de-estados-nos-referimos/', 'Maquinas de estados', META_ESTRUCTURAS_KEY, 'Maquina de estados')],
     ['sistemasComplejos', new Referencia('https://www.researchgate.net/figure/Figura-2-Caracteristicas-basicas-de-los-sistemas-complejos-Comportamiento-impredecible_fig1_262437348', 'Complejidad inherente al sistema', META_ESTRUCTURAS_KEY, 'Sistemas Complejos')],
     ['funcionesLambda', new Referencia('https://www.tokioschool.com/noticias/expresiones-lambda-uso-programacion-aplicaciones/', 'Funciones Lambda', META_ESTRUCTURAS_KEY, 'Funciones lambda')],
-    ['valueObjects', new Referencia('https://medium.com/all-you-need-is-clean-code/value-objects-d4c24115fa69', 'Value Objects', META_ESTRUCTURAS_KEY, 'Value Objects', '2022/11/07')],
+    [Keys.META_ESTRUCTURAS_VALUE_OBJECTS, new Referencia('https://medium.com/all-you-need-is-clean-code/value-objects-d4c24115fa69', 'Value Objects', META_ESTRUCTURAS_KEY, 'Value Objects', '2022/11/07')],
     ['dynamicProgramming', new Referencia('https://www.spiceworks.com/tech/devops/articles/what-is-dynamic-programming/', 'Programacion Dinamica', META_ESTRUCTURAS_KEY, 'Programacion Dinamica', '2023/03/26')],
     [Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION, new Referencia('https://www.baeldung.com/cs/serialization-deserialization', 'Serialización y Deserialización', META_ESTRUCTURAS_KEY, 'Serializar & Deserializar', '2023/05/31')],
     [Keys.META_ESTRUCTURAS_DEPRECATION, new Referencia('https://digma.ai/deprecated-methods-in-java/', 'Deprecated (Obsolencia)', META_ESTRUCTURAS_KEY, 'Deprecated (Obsolencia)', '2024/06/15').addRelatedItems(Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES, Keys.REFACTORING_LEGACY_CODE)],
@@ -564,6 +564,7 @@ export const POO_REF = new Map<string, Referencia>([
     ['interfacesOverInheritance', new Referencia('https://www.infoworld.com/article/2073649/why-extends-is-evil.html', 'Interfaces VS Herencia', POO_KEY, 'Interfaces VS Herencia', '2023/03/13')],
     ['enumeraciones', new Referencia('https://jarroba.com/enum-enumerados-en-java-con-ejemplos/', 'Enumeraciones', POO_KEY, 'Enumeraciones', '', '2024/05/05')],
     [Keys.POO_COUPLING_AND_COHESION, new Referencia('https://ducmanhphan.github.io/2019-03-23-Coupling-and-Cohension-in-OOP/', 'Acoplamiento & Cohesion', POO_KEY, 'Acoplamiento & Cohesion', '', '2024/10/27')],
+    [Keys.POO_CALISTHENICS, new Referencia('https://keyvanakbary.com/object-calisthenics-mejora-tu-diseno-orientado-a-objetos/', 'Calistenia de Objetos', POO_KEY, 'Calistenia de Objetos', '2025/09/02').addRelatedItems(Keys.CALIDAD_IF_ELSE, Keys.BUENAS_PRACTICAS_DEMETER, Keys.PRINCIPIOS_SOLID, Keys.BUENAS_PRACTICAS_COMPLEJIDAD, Keys.META_ESTRUCTURAS_VALUE_OBJECTS)],
 ]);
 
 export const TESTING_KEY = 'Testing';

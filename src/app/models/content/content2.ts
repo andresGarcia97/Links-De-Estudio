@@ -660,7 +660,7 @@ export const BUENAS_PRACTICAS =
                 '- Algunas desventajas de esta ley, son que se debe abstraer una solución y su implementación puede conllevar perdidas de rendimiento',
                 '- No aceptar caramelos de extraños, ó no hables con extraños, son 2 formas de resumir este concepto ',
             ]),
-        new Item('complejidad',
+        new Item(Keys.BUENAS_PRACTICAS_COMPLEJIDAD,
             [
                 '- Es una metrica del software que proporciona una medida cuantitativa de la complejidad logica del programa ',
                 '- Son los diferentes caminos que puede seguir una aplicación desde la entrada hasta la salida, ',
@@ -814,7 +814,7 @@ export const BUENAS_PRACTICAS =
                 '<strong>- Vulnerabilidad:</strong> Son comportamientos errores que a la larga pueden llevar a posibles problemas, ',
                 ' - de rendimiento ó de seguridad, más no son considerados problemas graves ',
             ]),
-        new Item('guardClauses',
+        new Item(Keys.BUENAS_PRACTICAS_GUARD_CLAUSES,
             [
                 '- La identación puede ser una aliada a la hora de leer el codigo, pero demasiada puede convertirse en un obstaculo ',
                 '- Esto no solo complica el entendimiento, si no que puede indicar un alto grado de anidación y complejidad ',
