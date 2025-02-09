@@ -944,12 +944,13 @@ export const COMPILACION =
                 '- Debido a esto son multiplataforma, y se hace a pedido, (just in Time) ',
                 '- La ejecución de estos programas estan aisladas del SO, por lo que requieren más recursos, para tener una mayor independencia ',
             ]),
-        new Item('transpilacion',
+        new Item(Keys.COMPILACION_TRANSPILACION,
             [
-                '- Estos tambien traducen codigo de un lenguaje a otro, pero de igual nivel ',
-                '- Uno de los ejemplos más relevantes es paso de Typescript a Javascript ',
+                '- Es el proceso de traducción de un lenguaje a otro, pero de igual nivel y generalmente sucede con lenguajes de alto nivel ',
+                '- De los ejemplos más relevantes es el paso de Typescript a Javascript ó sass a css',
                 '- Todo transpilador puede ser considerado un compilador, pero no al contrario ',
                 '- Generalmente toda la sintaxis del lenguaje destino es compatible con la de origen, pero no al contrario ',
+                '- Tambien pueden ser usados para modernizar el codigo con nuevas caracteristicas manteniendolo compatible con versiones anteriores ',
             ]),
         new Item('azucarSintactico',
             [
