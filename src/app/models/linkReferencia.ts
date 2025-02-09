@@ -45,7 +45,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.META_ESTRUCTURAS_ALGORITMOS;
+export const LAST_ITEM = Keys.META_ESTRUCTURAS_SEARCH_AND_SORT;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -382,7 +382,7 @@ export const META_ESTRUCTURAS_REF = new Map<string, Referencia>([
     [Keys.META_ESTRUCTURAS_REGEX, new Referencia('https://jarroba.com/busqueda-de-patrones-expresiones-regulares/', 'Expresiones Regulares(regex)', META_ESTRUCTURAS_KEY, 'Expresiones Regulares', '', '2025/02/08').addRelatedItem(Keys.COMPILACION_ELEMENTS_COMPILATOR).addRelatedItem(Keys.UML_STATES)],
     [Keys.META_ESTRUCTURAS_ESTRUCTURAS_DATOS, new Referencia('https://medium.com/techwomenc/estructuras-de-datos-a29062de5483', 'Estructuras de datos I', META_ESTRUCTURAS_KEY, 'Estructuras de datos I')],
     [Keys.META_ESTRUCTURAS_ESTRUCTURAS_DATOS_2, new Referencia('https://ai.plainenglish.io/data-structures-how-computers-store-and-organize-data-the-backbone-5f0576b3150c', 'Estructuras de datos II', META_ESTRUCTURAS_KEY, 'Estructuras de datos II', '2023/02/05', '2025/02/08').addRelatedItem(Keys.BUENAS_PRACTICAS_COMPLEJIDAD_ALGORITMICA)],
-    [Keys.META_ESTRUCTURAS_ALGORITMOS, new Referencia('https://medium.com/edureka/data-structures-algorithms-in-java-d27e915db1c5', 'Algoritmos', META_ESTRUCTURAS_KEY, 'Algoritmos', '2025/02/08').addRelatedItem(Keys.BUENAS_PRACTICAS_COMPLEJIDAD_COGNITIVA).addRelatedItem(Keys.BUENAS_PRACTICAS_COMPLEJIDAD_ALGORITMICA)],
+    [Keys.META_ESTRUCTURAS_SEARCH_AND_SORT, new Referencia('https://medium.com/edureka/data-structures-algorithms-in-java-d27e915db1c5', 'Algoritmos, Busqueda & Ordenación', META_ESTRUCTURAS_KEY, 'Busqueda & Ordenación', '2025/02/08').addRelatedItem(Keys.BUENAS_PRACTICAS_COMPLEJIDAD_COGNITIVA).addRelatedItem(Keys.BUENAS_PRACTICAS_COMPLEJIDAD_ALGORITMICA).addRelatedItem(Keys.ANALISIS_ALGORITHMS)],
     ['homoiconicidad', new Referencia('https://es.wikipedia.org/wiki/Homoiconicidad', 'Homoiconicidad', META_ESTRUCTURAS_KEY, 'Homoiconicidad')],
     [Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS, new Referencia('http://fisicotronica.com/maquina-de-estados-nos-referimos/', 'Maquinas de estados', META_ESTRUCTURAS_KEY, 'Maquina de estados')],
     ['sistemasComplejos', new Referencia('https://www.researchgate.net/figure/Figura-2-Caracteristicas-basicas-de-los-sistemas-complejos-Comportamiento-impredecible_fig1_262437348', 'Complejidad inherente al sistema', META_ESTRUCTURAS_KEY, 'Sistemas Complejos')],
