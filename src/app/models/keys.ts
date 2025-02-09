@@ -1,6 +1,9 @@
+export const META_ESTRUCTURAS_SCOPE = 'scope';
+export const META_ESTRUCTURAS_REGEX = 'expresionesRegulares';
 export const META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL = 'verticalAndHorizontal';
 export const META_ESTRUCTURAS_ESTRUCTURAS_DATOS = 'estructurasDatos';
 export const META_ESTRUCTURAS_ESTRUCTURAS_DATOS_2 = 'estructurasDatos2';
+export const META_ESTRUCTURAS_ALGORITMOS = 'algoritmos';
 export const META_ESTRUCTURAS_MAQUINA_ESTADOS = 'maquinaEstados';
 export const META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION = 'serializationDeserialization';
 export const META_ESTRUCTURAS_DEPRECATION = 'deprecation';
@@ -259,6 +262,7 @@ export const USER_HISTORIES_3C = '3c';
 export const USER_HISTORIES_FORMATS = 'historiesFormats';
 export const USER_HISTORIES_ESTIMATIONS = 'historiasEstimacionAgil';
 export const USER_HISTORIES_DOR_DOD = 'dor-dod';
+export const UML_STATES = 'diagramasDeEstados';
 export const UML_TYPES = 'tiposUml';
 export const UML_MODEL_C4 = 'C4Model';
 export const SMELL_CODES_SMELLS_CODES = 'smellCodes';
