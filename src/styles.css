@@ -53,12 +53,12 @@
 }
 
 .oscuro svg#clouds {
-  animation: animate-clouds-oscuro 1.4s ease-in 0.6s both;
+  animation: animate-clouds-oscuro 1.2s ease-in 0.6s both;
 }
 
 .oscuro .card-container .card:not(.highlight-card):hover {
   transform: translateY(-3px);
-  box-shadow: 0 4px 17px var(--color-cultured);
+  box-shadow: 0 4px 16px var(--color-cultured);
 }
 
 .oscuro .card-container .card:not(.highlight-card):hover .material-icons path {
@@ -169,6 +169,9 @@
 }
 
 @keyframes animate-clouds-oscuro {
+  0% {
+    fill: transparent;
+  }
   100% {
     fill: var(--color-jet);
   }
@@ -336,7 +339,7 @@ svg.material-icons:not(:last-child) {
 
 .card-container .card:not(.highlight-card):hover {
   transform: translateY(-3px);
-  box-shadow: 0 4px 17px var(--color-black, 0.35);
+  box-shadow: 0 4px 16px var(--color-black, 0.35);
 }
 
 .card-container .card:not(.highlight-card):hover .material-icons path {
@@ -524,7 +527,7 @@ pre::selection {
   color: var(--color-black);
   display: flex;
   align-items: center;
-  padding: 3px 10px;
+  padding: 2px 10px;
   height: 28px;
   border-radius: 20px;
   background-color: var(--color-cultured);
@@ -546,7 +549,7 @@ svg#clouds {
   left: -100px;
   z-index: -10;
   width: 1920px;
-  animation: animate-clouds 1.4s ease-in 0.6s both;
+  animation: animate-clouds 1.2s ease-in 0.6s both;
 }
 
 .progress-bar {
