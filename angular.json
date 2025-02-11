@@ -79,18 +79,6 @@
               "buildTarget": "links-estudio:build:production"
             }
           }
-        },
-        "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n",
-          "options": {
-            "buildTarget": "links-estudio:build"
-          }
-        },
-        "test": {
-
-        },
-        "e2e": {
-
         }
       }
     }
