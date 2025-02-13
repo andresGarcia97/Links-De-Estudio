@@ -22,7 +22,11 @@
 
     </div>
 
-    <app-referencia class="flexbox terminal" [referencia]="referencia" [titulo]="titulo"></app-referencia>
+    <div class="flexbox terminal">
+        <div class="terminal window">
+          <h2>{{titulo}}</h2>
+        </div>
+      </div>
 
     <div class="terminal" [ngSwitch]="selection" *ngIf="selection !== '' " #terminal>
         
@@ -36,14 +40,14 @@
 
             <span id="snackbar">Successfully Copied</span>
 
-            <div class="circle-link" (click)="copyUrlToShareAndShowSnackBar(selection)">
+            <button class="circle-link" (click)="copyUrlToShareAndShowSnackBar(selection)">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512">
                     <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                     <path d="M352 224c53 0 96-43 96-96s-43-96-96-96s-96 43-96 96c0 4 .2 8 .7 11.9l-94.1 47C145.4 170.2 121.9 160 96 160c-53 0-96 43-96 96s43 96 96 96c25.9 0 49.4-10.2 66.6-26.9l94.1 47c-.5 3.9-.7 7.8-.7 11.9c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-25.9 0-49.4 10.2-66.6 26.9l-94.1-47c.5-3.9 .7-7.8 .7-11.9s-.2-8-.7-11.9l94.1-47C302.6 213.8 326.1 224 352 224z"/>
                 </svg>
-            </div>
+            </button>
 
-            <div class="circle-link" *ngIf="!(itemSelected === 0)" (click)="getBeforeElement()">
+            <button class="circle-link" [disabled]="(itemSelected === 0)" (click)="getBeforeElement()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 490 490">
                   <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
                   <path *ngIf="!iterationBackwards" d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 
@@ -52,9 +56,9 @@
                   256 214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160zm352-160l-160 160c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 
                   12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L269.3 256 406.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0z"/>
                 </svg>
-            </div>
+            </button>
 
-            <div *ngIf="relatedSections.size > 0 || dateRead !== '' || dateUpdate !== '' || relatedItems.length > 0" class="circle-link" (click)="showHideRelatedSections()">
+            <button *ngIf="relatedSections.size > 0 || dateRead !== '' || dateUpdate !== '' || relatedItems.length > 0" class="circle-link" (click)="showHideRelatedSections()">
                 <svg *ngIf="!showRelatedSections" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 448 512">
                     <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                     <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/>
@@ -63,9 +67,9 @@
                     <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                     <path d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/>
                 </svg>
-            </div>
+            </button>
 
-            <div class="circle-link" *ngIf="!(itemSelected === lengthItems)" (click)="getNextElement()">
+            <button class="circle-link" [disabled]="(itemSelected === lengthItems)" (click)="getNextElement()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 490 490">
                   <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
                   <path *ngIf="!iterationBackwards" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 
@@ -74,7 +78,20 @@
                   393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 
                   0s-12.5 32.8 0 45.3L178.7 256 41.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"/>
                 </svg>
-            </div>
+            </button>
+
+            <button class="circle-link">
+                <a class="reference" target="_blank" rel="noopener noreferrer" [href]="referencia">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 490 490">
+                    <path d="M247.759,14.358,16,125.946V184H496V125.638ZM464,152H48v-5.946L248.241,49.642,464,146.362Z"></path>
+                    <path d="M16,496H496V392H16Zm32-72H464v40H48Z"></path>
+                    <rect width="32" height="160" x="72" y="208"></rect>
+                    <rect width="32" height="160" x="408" y="208"></rect>
+                    <rect width="32" height="160" x="184" y="208"></rect>
+                    <rect width="32" height="160" x="296" y="208"></rect>
+                  </svg>
+                </a>
+            </button>
 
         </div>
 

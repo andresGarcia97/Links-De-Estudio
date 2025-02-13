@@ -203,6 +203,10 @@
   box-shadow: 0 4px 10px var(--color-navy-blue);
 }
 
+.oscuro button:disabled:hover {
+  background-color: var(--color-french-sky-blue);
+}
+
 /* fin del modo oscuro */
 
 h1,
@@ -455,7 +459,7 @@ a:hover {
 .terminal {
   position: relative;
   width: 98%;
-  border-radius: 6px;
+  border-radius: 10px;
   padding-top: 16px;
   padding-bottom: 12px;
   overflow-y: hidden;
@@ -464,6 +468,8 @@ a:hover {
 }
 
 .terminal .window {
+  width: 100%;
+  border-radius: 2px;
   background-color: var(--color-black);
 }
 
@@ -781,6 +787,10 @@ div a.circle-link {
 .card.card-small.itemSelected {
   color: var(--color-fulvous);
   border-color: var(--color-orange-yellow-crayola);
+}
+
+button:disabled:hover {
+  background-color: var(--color-fulvous);
 }
 
 @media screen and (min-width: 641px) and (max-width: 920px) {
