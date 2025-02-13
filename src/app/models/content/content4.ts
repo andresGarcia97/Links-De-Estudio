@@ -1009,7 +1009,7 @@ export const META_CARACTERISTICAS =
                 ' - realizar el <em>autoboxing</em> y <em>unboxing</em> entre primitivos y sus correspondientes tipos de envoltorio(Wrapper)',
                 '- Tambien evite usar <em>Raw Types</em>(tipos crudos) ya que no cuentan con la seguridad que proporcionan los genericos ',
             ]),
-        new Item('memorySafety',
+        new Item(Keys.META_CARACTERISTICAS_MEMORY_SAFETY,
             [
                 '- Ya no solo se pone interes en el software que se crea, tambien en el como se crea, y parece que tambien paso a ser un tema de seguridad nacional ',
                 '- La oficina del director cibernetico de la casa blanca de Estados Unidos asi lo cree, ya que en febrero del 2024, publicaron un informe donde, ',
