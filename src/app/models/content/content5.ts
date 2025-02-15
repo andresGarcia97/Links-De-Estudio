@@ -2215,5 +2215,27 @@ export const MICRO_SERVICES =
                 '- El trabajo excesivo empieza a afectar la vida personal y el tiempo libre de los colaboradores, disminuyendo su productividad a larga ',
                 '- Las capacidades del equipo no son tenidas en cuenta a la hora de planear los plazos y generan expectativas poco realistas ',
                 '- Microgestión o falta de apoyo, ya sea por parte de los lideres o del mismo equipo respectivamente ',
+            ]),
+        new Item(Keys.MICROSERVICES_PRODUCER_CONSUMER_PROBLEM,
+            [
+                '- Es un problema clasico de sincronización en los sistemas operativos y sistemas que funcionan con eventos ',
+                '- El problema se define de la siguiente manera, hay un buffer o cola de tamaño fijo, un productor y un consumidor ',
+                '',
+                '<strong>Productor:</strong> Crea un elemento y lo agrega al bufer compartido',
+                '<strong>Mensaje:</strong> Contiene la información producida, ya sea en formato Json, Objetos, numeros, textos, etc.. ',
+                '<strong>Consumidor:</strong> Extrae elementos del buffer y los procesa "<em>consume</em>"',
+                '',
+                '<strong>Condiciones:</strong>',
+                '- El productor no debe producir un elemento si el medio compartido esta lleno ',
+                '- El consumidor no debe consumir elementos si el buffer esta vacio ',
+                '- El acceso al buffer compartido debe ser mutuamente excluyente; esto significa que cualquier instancia dada, ',
+                ' - solo un proceso(consumidor/productor) dado debe poder acceder al buffer y hacer cambios sobre el (borrar/agregar)',
+                '- En casos donde existan multiples productores y consumidores, un mismo mensaje puede ser procesado por varios consumidores ',
+                '',
+                '<strong>Semaforo:</strong>',
+                '- Monitorear el espacio disponible en la cola/buffer despues de cada consumo/produccion',
+                '- Rastrear el espacio y valida para que se puedan producir mensajes',
+                '- Notifica que se han producido mensajes y pueden ser consumidos ',
+                '- Permite un solo cambio en la cola de manera sincrona, aunque hay implementaciones que permiten concurrencia en ambos extremos '
             ])
     ];

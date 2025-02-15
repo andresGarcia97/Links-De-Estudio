@@ -45,7 +45,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.TESTING_ADVANCED_CHARGE;
+export const LAST_ITEM = Keys.MICROSERVICES_PRODUCER_CONSUMER_PROBLEM;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -861,4 +861,5 @@ export const MICRO_SERVICES_REF = new Map<string, Referencia>([
     [Keys.MICROSERVICES_TRADEOFFS, new Referencia('https://martinfowler.com/articles/microservice-trade-offs.html', 'Microservicios Tradeoffs', MICRO_SERVICES_KEY, 'Pros & Contras', '2025/01/18').addRelatedItems(Keys.ARQUITECTURAS_DESCOMPOSICION_MODULAR, Keys.LEYES_CONWAY, Keys.CD_CI_CD_CI, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.NUBE_CAP_TEOREMA)],
     [Keys.MICROSERVICES_PATTERNS, new Referencia('https://blog.openreplay.com/7-microservice-design-patterns-to-use/', 'Patrones & Microservicios', MICRO_SERVICES_KEY, 'Patrones', '', '2025/01/19').addRelatedItem(Keys.ANALISIS_LIGHT_EVENTS_VS_RICH_EVENTS)],
     [Keys.MICROSERVICES_ANTI_PATTERNS, new Referencia('https://blog.bitsrc.io/10-microservice-anti-patterns-278bcb7f385d', 'Antipatrones & Microservicios', MICRO_SERVICES_KEY, 'Antipatrones', '2025/01/19').addRelatedItems(Keys.ANALISIS_SINGLE_POINT_OF_FAILURE, Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION, Keys.NUBE_OBSERVABILIDAD)],
+    [Keys.MICROSERVICES_PRODUCER_CONSUMER_PROBLEM, new Referencia('https://www.baeldung.com/java-producer-consumer-problem', 'Problema Productor Consumidor', MICRO_SERVICES_KEY, 'Productor-Consumidor', '2025/02/15').addRelatedItems(Keys.ANALISIS_QUEUES_SYSTEM_DESIGN, Keys.META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM, Keys.META_CARACTERISTICAS_PROCESS_AND_THREADS)],
 ]);
