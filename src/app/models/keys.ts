@@ -171,6 +171,7 @@ export const HARDWARE_OPERATIVE_SYSTEM = 'operativeSystem';
 export const HARDWARE_UTF8 = 'UTF-8';
 export const HARDWARE_CLEAN_CODE_PERFORMANCE = 'cleanCodeWorstPerformance';
 export const SECURITY_PROTOCOLOS_SEGURITY = 'protocolosSecurity';
+export const SECURITY_PROXY = 'proxy';
 export const SECURITY_LEAST_PRIVILEGE = 'leastPrivilege';
 export const SECURITY_AUTHENTICATION_WAYS = 'authenticationWays';
 export const SECURITY_RBAC_ABAC = 'controlDeAcceso-rbac-abac';
