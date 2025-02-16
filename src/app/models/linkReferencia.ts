@@ -45,7 +45,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.MICROSERVICES_PRODUCER_CONSUMER_PROBLEM;
+export const LAST_ITEM = Keys.ANALISIS_DATA_ARQUITECTURE_PATTERNS;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -460,9 +460,10 @@ export const APIS_REF = new Map<string, Referencia>([
 
 export const ANALISIS_DATA_KEY = 'Analisis-datos';
 export const ANALISIS_DATA_REF = new Map<string, Referencia>([
-    ['scraping', new Referencia('https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/que-es-el-web-scraping/', 'Web Scrapping', ANALISIS_DATA_KEY, 'Web Scrapping')],
+    [Keys.ANALISIS_DATA_WEB_SCRAPING, new Referencia('https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/que-es-el-web-scraping/', 'Web Scrapping', ANALISIS_DATA_KEY, 'Web Scrapping', '', '2025/02/15')],
     [Keys.ANALISIS_DATA_MVP, new Referencia('https://www.inboundcycle.com/blog-de-inbound-marketing/que-es-mvp-o-producto-minimo-viable', 'Minimo Producto Viable', ANALISIS_DATA_KEY, 'MVP')],
-    ['turingComplete', new Referencia('https://www.eleconomista.es/economia/noticias/8817210/12/17/Ethereum-es-Turing-completo-y-eso-que-es.html', 'Turing Complete', ANALISIS_DATA_KEY, 'Turing Complete')],
+    //['turingComplete', new Referencia('https://www.eleconomista.es/economia/noticias/8817210/12/17/Ethereum-es-Turing-completo-y-eso-que-es.html', 'Turing Complete', ANALISIS_DATA_KEY, 'Turing Complete')],
+    [Keys.ANALISIS_DATA_TURING_COMPLETE, new Referencia('https://www.bitstamp.net/learn/blockchain/what-is-turing-complete/', 'Turing Complete', ANALISIS_DATA_KEY, 'Turing Complete', '', '2025/02/15').addRelatedItem(Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS)],
     [Keys.ANALISIS_DATA_REVERSE_ENGINEERING, new Referencia('https://ingenierosasesores.com/actualidad/ingenieria-inversa-concepto-aplicaciones/', 'Ingenieria Inversa', ANALISIS_DATA_KEY, 'Ingenieria Inversa')],
     [Keys.ANALISIS_DATA_DSL, new Referencia('https://www.jetbrains.com/es-es/mps/concepts/domain-specific-languages/', 'Lenguaje de Dominio Especifico', ANALISIS_DATA_KEY, 'DSL')],
     //['dataAnalisis', new Referencia('https://tienda.digital/4-tipos-de-analisis-de-datos-para-mejorar-la-toma-de-decisiones/', 'Analisis de datos', ANALISIS_KEY, 'Analisis de datos')],
@@ -477,6 +478,7 @@ export const ANALISIS_DATA_REF = new Map<string, Referencia>([
     [Keys.ANALISIS_DATA_OLAP_OLTP, new Referencia('https://aws.amazon.com/es/compare/the-difference-between-olap-and-oltp/', 'OLAP & OLTP', ANALISIS_DATA_KEY, 'OLAP & OLTP', '2024/09/15')],
     [Keys.ANALISIS_DATA_DEDUPLICATION, new Referencia('https://www.netapp.com/es/data-management/what-is-data-deduplication/', 'Deduplicación', ANALISIS_DATA_KEY, 'Deduplicación', '2024/11/24')],
     [Keys.ANALISIS_DATA_TGS, new Referencia('https://economipedia.com/definiciones/teoria-general-de-sistemas-tgs.html', 'Teoria General de Sistemas', ANALISIS_DATA_KEY, 'TGS', '2025/01/26')],
+    [Keys.ANALISIS_DATA_ARQUITECTURE_PATTERNS, new Referencia('https://www.linkedin.com/posts/pooja-jain-898253106_data-engineering-bigdata-activity-7296475835677478912-F6tu/', 'Arquitecturas de Datos', ANALISIS_DATA_KEY, 'Arquitecturas de Datos', '2025/02/15')],
 ]);
 
 export const PARADIGMAS_KEY = 'Paradigmas';

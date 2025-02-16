@@ -1091,12 +1091,11 @@ export const PARADIGMAS =
 
 export const ANALISIS_DATA =
     [
-        new Item('scraping',
+        new Item(Keys.ANALISIS_DATA_WEB_SCRAPING,
             [
-                '- Es una forma de buscar contenido de las paginas en internet ',
-                '- Algunos buscadores como Google hacen esto para indexar contenido ',
-                '- Son tipos especiales de Bots que buscan terminos especificos de busqueda ',
-                '- Se puede dar manera de automatica (software de  analisis sintactico) y manual (copiar y pegar) ',
+                '- Es una forma de extraer contenido de las paginas en internet para analizarlo o utilizarlo ',
+                '- Algunos buscadores como Google hacen esto para indexar contenido mediante Bots que buscan terminos especificos de busqueda ',
+                '- Se puede dar manera de automatica (analisis sintactico), manual (copiar y pegar) o mediante texto con la funcion <em>grep</em> de linux ',
                 '- Esto puede conllevar a una ventaja sobre tu competencia al comparar su contenido con el tuyo ',
                 '- Puede violar las leyes de derechos de autor, por lo que puede llegar a ser ilegal ',
                 '- Tambien se puede bloquear por medio de software ó dificultarles la extracción de los datos (imagenes) ',
@@ -1109,12 +1108,14 @@ export const ANALISIS_DATA =
                 '- Todo mvp es una apuesta orientada a conseguir un maximo de aprendizaje con la menor inversion posible ',
                 '- A veces puede ser reutilizable o desechable, eso depende de su exito inicial ',
             ]),
-        new Item('turingComplete',
+        new Item(Keys.ANALISIS_DATA_TURING_COMPLETE,
             [
                 '- Es un concepto usado para denotar aquellos lenguajes que teniendo recursos infinitos (teoricamente), ',
-                ' - son capaces de realizar cualquier tipo de calculo, independientemente de los recursos usados ',
-                '- Tambien son capaces de usar y reutilizar estructuras complejas ',
+                ' - son capaces de realizar cualquier tipo de calculo, independientemente de los recursos usados (tiempo & memoria)',
                 '- Que un lenguaje o herramienta sea turing complete no garantiza su eficiencia ',
+                '- Casi todos los lenguajes de programación hoy en dia son Turing complete, e incluso algunas blockchain como <em>Ethereum</strong>',
+                '- En la decada de los 1930 <strong>Alan Turing</strong> describio una maquina hipotetica capaz de leer un conjunto simple de instrucciones arbitrarias, ',
+                ' - este es la base para las computadoras programables y la informatica moderna '
             ]),
         new Item(Keys.ANALISIS_DATA_REVERSE_ENGINEERING,
             [
@@ -1428,6 +1429,26 @@ export const ANALISIS_DATA =
                 '<strong>Homeostasis:</strong> Es el equilibrio dinamico entre las diferentes partes del sistema ',
                 '<strong>Entropia:</strong> Tendencia de todo sistema de desgastarse y fluir de un estado de menor a mayor desorden(aleatoriedad)',
                 '<strong>Armonia:</strong> Es una propiedad de los sistemas que mide el nivel de compatibilidad en su Ambiente o Contexto ',
+            ]),
+        new Item(Keys.ANALISIS_DATA_ARQUITECTURE_PATTERNS,
+            [
+                '<strong>Data Lake:</strong> Repositorio de datos centralizado que almacena datos con o sin estructura, en cualquier escala y los disponibiliza para propositos de analitica ',
+                '',
+                '<strong>Data Warehouse:</strong> Un gran almacen de datos transformados, con estructura y optimizados, listos para realizar consultas y reportes sobre los mismos ',
+                '',
+                '<strong>Lambda arquitecture:</strong> Procesamiento de datos que combina procesos en batch y streaming para ser escalable y tolerante a fallas ',
+                '',
+                '<strong>Kappa arquitecture:</strong> Alternativa a las lambdas que solo procesa datos en streaming, permitiendo tiempo real y manejar datos historicos ',
+                '',
+                '<strong>Streaming:</strong> Eventos y procesos que suceden en tiempo real, conforme la información va llegando se debe procesar con baja latencia ',
+                '',
+                '<strong>Event Driven Arquitecture:</strong> Se basa en la generación, detección y reacción ante cualquier evento que suceda ',
+                '',
+                '<strong>Polyglot Persistence:</strong> Almacenamiento que no se limita a algun tipo de BD especifica, sino que se combinan segun las necesidades ',
+                '',
+                '<strong>Data Mesh:</strong> Enfoque donde el pensamiento se da orientado a los datos, como la definición de propiedad y su función para el negocio ',
+                '',
+                '<strong>Data Vault:</strong> Modelo de datos y de almacenamiento hibrido, que combina una BD en 3 Forma Normal y una topologia de estrella ',
             ])
     ];
 
