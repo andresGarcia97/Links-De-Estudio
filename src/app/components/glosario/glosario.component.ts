@@ -7,7 +7,7 @@ import { Content4 } from 'src/app/models/content/content4';
 import { Content5 } from 'src/app/models/content/content5';
 import { LinkFuente } from 'src/app/models/linkFuente';
 import { LinkReferencia } from 'src/app/models/linkReferencia';
-import { Item } from 'src/app/models/models';
+import { Fuente, Item, Referencia } from 'src/app/models/models';
 
 @Component({
   selector: 'app-glosario',
@@ -24,13 +24,10 @@ export class GlosarioComponent implements OnInit {
 
   search = '';
 
-  previewFuentes = Array.from(this.fuentes, ([name, value]) => ({ name, value }));
-  onlyFuentes = this.converPreviewFuentesToArray(this.previewFuentes);
+  onlyFuentes = this.convertFuentesToArray(this.fuentes);
 
   componentes = this.linkReferencia.components;
-  previewComponents = Array.from(this.componentes, ([name, value]) => ({ name, value }));
-  onlyComponents = this.convertComponentsToArray(this.previewComponents);
-  componentsWithDate = this.convertComponentsWithDatesToArray(this.previewComponents);
+  onlyComponents = this.convertComponentsToArray(this.componentes);
 
   referencia = '';
   titulo = '';
@@ -40,15 +37,16 @@ export class GlosarioComponent implements OnInit {
   showItem = false;
 
   ngOnInit(): void {
-    console.info("%c Actualmente son: " + this.temas.length + " Temas ", "color:#000; font-size: 16px;background:#FFBA08; font-weight: bold;");
-    console.info("%c Tambien hay: " + this.fuentes.size + " Temas practicos ", "color:white; font-size: 16px;background:#1976d2; font-weight: bold;");
+    console.info("%c Temas: " + this.temas.length, "color:#000; font-size: 16px;background:#FFBA08; font-weight: bold;");
+    console.info("%c Temas practicos: " + this.fuentes.size, "color:white; font-size: 16px;background:#1976d2; font-weight: bold;");
 
-    const temas2025 = this.componentsWithDate.filter((x: any) => x.dateRead.includes('2025') || x.dateUpdate.includes('2025')).length;
-    const temas2024 = this.componentsWithDate.filter((x: any) => x.dateRead.includes('2024') || x.dateUpdate.includes('2024')).length;
-    const temas2023 = this.componentsWithDate.filter((x: any) => x.dateRead.includes('2023') || x.dateUpdate.includes('2023')).length;
-    const temas2022 = this.componentsWithDate.filter((x: any) => x.dateRead.includes('2022') || x.dateUpdate.includes('2022')).length;
-    const temas2021 = this.componentsWithDate.filter((x: any) => x.dateRead.includes('2021') || x.dateUpdate.includes('2021')).length;
-    const temasWithOutRevision = this.componentsWithDate.filter((x: any) => x.dateRead == '' && x.dateUpdate == '').length;
+    const componentsWithDate = Array.from(this.componentes.values());
+    const temas2025 = componentsWithDate.filter((x: Referencia) => x.dateRead.includes('2025') || x.dateUpdate.includes('2025')).length;
+    const temas2024 = componentsWithDate.filter((x: Referencia) => x.dateRead.includes('2024') || x.dateUpdate.includes('2024')).length;
+    const temas2023 = componentsWithDate.filter((x: Referencia) => x.dateRead.includes('2023') || x.dateUpdate.includes('2023')).length;
+    const temas2022 = componentsWithDate.filter((x: Referencia) => x.dateRead.includes('2022') || x.dateUpdate.includes('2022')).length;
+    const temas2021 = componentsWithDate.filter((x: Referencia) => x.dateRead.includes('2021') || x.dateUpdate.includes('2021')).length;
+    const temasWithOutRevision = componentsWithDate.filter((x: Referencia) => x.dateRead == '' && x.dateUpdate == '').length;
 
     const resumeActivity = `
     Temas leidos/actualizados 2025: ${temas2025}\n
@@ -63,57 +61,31 @@ export class GlosarioComponent implements OnInit {
 
   constructor(private router: Router) { }
 
-  private converPreviewFuentesToArray(namesAndValues: Array<any>): Array<object> {
-    const onlyFuentes = new Array();
-    namesAndValues.forEach((element) => {
-      const newElement = {
-        titulo: element.value.titulo,
-        referencia: element.value.referencia,
-        componente: 'contenido practico'
-      };
-      onlyFuentes.push(newElement);
-    });
-    return onlyFuentes;
+  private convertFuentesToArray(namesAndValues: Map<string, Fuente>): Array<object> {
+    return [...namesAndValues.values()].map(value => ({
+      titulo: value.titulo,
+      referencia: value.referencia,
+      componente: 'contenido practico'
+    }));
   }
 
-  private convertComponentsToArray(namesAndValues: Array<any>): Array<object> {
-    const onlyComponents = new Array();
-    namesAndValues.forEach((element) => {
-      const newElement = {
-        titulo: element.value.tittle,
-        tittleShort: element.value.tittleShort,
-        componente: element.value.component,
-        key: element.name
-      };
-      onlyComponents.push(newElement);
-    });
-    return onlyComponents;
+  private convertComponentsToArray(namesAndValues: Map<string, Referencia>): Array<object> {
+    return [...namesAndValues].map(keyAndValue => ({
+      titulo: keyAndValue[1].tittle,
+      tittleShort: keyAndValue[1].tittleShort,
+      componente: keyAndValue[1].component,
+      key: keyAndValue[0]
+    }));
   }
 
-  private convertComponentsWithDatesToArray(values: Array<any>): Array<object> {
-    const onlyComponents = new Array();
-    values.forEach((element) => {
-      const newElement = {
-        //titulo: element.value.tittle,
-        //referencia: element.value.referencia,
-        //componente: element.value.component,
-        //key: element.name,
-        dateRead: element.value.dateRead,
-        dateUpdate: element.value.dateUpdate
-      };
-      onlyComponents.push(newElement);
-    });
-    return onlyComponents;
-  }
-
-  public scrollToView($element: any): void {
+  public scrollToView($element: HTMLElement): void {
     if (typeof $element !== 'undefined') {
       $element.scrollIntoView({ behavior: 'smooth' });
     }
   }
 
-  public createViewItem(key: string, $view: any): void {
-    const items = this.temas.filter((item) => {
+  public createViewItem(key: string, $view: HTMLElement): void {
+    const items = this.temas.filter(item => {
       return item.key === key;
     });
     if (items.length === 0) {
@@ -126,7 +98,7 @@ export class GlosarioComponent implements OnInit {
       this.showItem = true;
       this.scrollToView($view);
     }
-    if (this.search != '') {
+    if (this.search !== '') {
       this.inputSearch.nativeElement.focus();
     }
   }
