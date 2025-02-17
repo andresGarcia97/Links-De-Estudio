@@ -43,6 +43,10 @@ export class SectionComponent implements OnInit {
       this.router.navigateByUrl("");
     }
 
+    if ("Enter" === key) {
+      this.openLink();
+    }
+
   });
 
   @Input() components: Map<string, Referencia> = new Map<string, Referencia>([]);
@@ -177,6 +181,13 @@ export class SectionComponent implements OnInit {
     navigator.clipboard.writeText(urlShare);
 
     setTimeout(() => { snackbar!.className = snackbar!.className.replace("show", ""); }, 3000);
+  }
+
+  public openLink(): void {
+    const newWindow = window.open(this.referencia, '_blank', 'noopener,noreferrer');
+    if (newWindow) {
+      newWindow.opener = null;
+    }
   }
 
 }
