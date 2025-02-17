@@ -382,7 +382,7 @@ export const HARDWARE =
                 '- Son rapidas y más eficientes ya que no necesitan interfaces graficas para funcionar ',
                 '- Tambien son más complejas de usar, ya que se basan en la memoria del usuario ',
             ]),
-        new Item('escalamiento',
+        new Item(Keys.HARDWARE_ESCALAMIENTO,
             [
                 '- Capacidad de un software para crecer de acuerdo a la demanda ',
                 '',
@@ -659,7 +659,7 @@ export const WEB =
                 '- Flexibilidad, control y libertad para el usuario ',
                 '- Reconocimiento de acciones y ayudas ',
             ]),
-        new Item('experienciaUsuario',
+        new Item(Keys.WEB_USER_XPERIENCE,
             [
                 '- Es la percepción del usuario al interactuar con un producto ',
                 '- Una buena UX se logra cuando el producto sea util y usable por el cliente a la hora de usarse',
@@ -1896,7 +1896,7 @@ export const BASE_DE_DATOS_AVANZADO =
                 ' <strong>CodPostal Direccion    Ciudad             CodPostal  Direccion       CodPostal  Ciudad </strong>',
                 ' 3000      las flores   Merida             3000       las flores      3000       Merida ',
             ]),
-        new Item('sqlVsNosql',
+        new Item(Keys.PERSISTENCY_ADVANCED_SQL_NO_SQL,
             [
                 '- Si ya se conoce SQL y se manejan bien las relaciones y la normalización, intentar replicar esto en NoSql es un gran error ',
                 '- Contrario a lo que se pensaria las BD NoSql no tienen problema alguno con la redundancia ',

@@ -45,7 +45,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.ANALISIS_DATA_ARQUITECTURE_PATTERNS;
+export const LAST_ITEM = Keys.ANALISIS_SYSTEM_DESIGN_II;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -96,6 +96,8 @@ export const ANALISIS_REF = new Map<string, Referencia>([
     [Keys.ANALISIS_SYSTEM_DESIGN_CONCEPTS, new Referencia('https://www.linkedin.com/posts/brijpandeyji_top-12-system-design-concepts-every-developer-activity-7238729739065069568-h1t6/', 'Design System Concepts', ANALISIS_KEY, 'Design System Concepts', '2024/09/29')],
     [Keys.ANALISIS_SINGLE_POINT_OF_FAILURE, new Referencia('https://levelup.gitconnected.com/single-point-of-failure-spof-in-system-design-c8bbac5af993', 'Single Point Of Failure', ANALISIS_KEY, 'SPOF', '2024/12/07')],
     [Keys.ANALISIS_LIGHT_EVENTS_VS_RICH_EVENTS, new Referencia('https://theburningmonk.com/2024/11/when-to-use-light-events-vs-rich-events-in-event-driven-architectures/', 'Light Events VS Rich Events', ANALISIS_KEY, 'Eventos', '2024/12/08').addRelatedItems(Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.PERSISTENCY_NORMALIZATION, Keys.ESTRATEGIAS_DESARROLLO_DDD)],
+    [Keys.ANALISIS_SYSTEM_DESIGN_I, new Referencia('https://newsletter.systemdesigncodex.com/p/how-to-do-well-in-system-design-interviews', 'Design System I', ANALISIS_KEY, 'Design System I', '2025/02/16').addRelatedItems(Keys.REQUISITOS_FUNCIONALES, Keys.REQUISITOS_NO_FUNCIONALES, Keys.PERSISTENCY_ADVANCED_SQL_NO_SQL, Keys.WEB_USER_XPERIENCE, Keys.PERSISTENCY_ADVANCED_DENORMALIZATION, Keys.PERSISTENCY_NORMALIZATION)],
+    [Keys.ANALISIS_SYSTEM_DESIGN_II, new Referencia('https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction', 'Design System II', ANALISIS_KEY, 'Design System II', '2025/02/16').addRelatedItems(Keys.APIS_API_FIRST, Keys.CONTENEDORES_ORCHESTRATION, Keys.CD_CI_IAS_CODE, Keys.HARDWARE_ESCALAMIENTO, Keys.META_CARACTERISTICAS_CACHE, Keys.NUBE_PACELC)],
 ]);
 
 export const ARQUITECTURAS_KEY = 'Arquitecturas';
@@ -254,7 +256,7 @@ export const CONTAINERS = new Map<string, Referencia>([
     //['compose', new Referencia('https://dockertips.com/utilizando-docker-compose#:~:text=Docker%20Compose%20es%20una%20herramienta%20que%20permite%20simplificar%20el%20uso%20de%20Docker.&text=En%20vez%20de%20utilizar%20Docker,Engine%20a%20realizar%20tareas%2C%20programaticamente', 'Manejo del docker-compose', CONTENEDORES_KEY, 'Docker Compose')],
     ['compose', new Referencia('https://docs.docker.com/compose/intro/features-uses/', 'Orquestación con Docker Compose', CONTENEDORES_KEY, 'Docker Compose', '', '2024/04/06')],
     ['kubernetes', new Referencia('https://kubernetes.io/es/docs/concepts/overview/what-is-kubernetes/', 'Kubernetes', CONTENEDORES_KEY, 'Kubernetes')],
-    ['containerOrchestation', new Referencia('https://geekflare.com/container-orchestration-software/', 'Orquestación', CONTENEDORES_KEY, 'Orquestación', '2023/07/07')],
+    [Keys.CONTENEDORES_ORCHESTRATION, new Referencia('https://geekflare.com/container-orchestration-software/', 'Orquestación', CONTENEDORES_KEY, 'Orquestación', '2023/07/07')],
     ['openContainer', new Referencia('https://opencontainers.org/about/overview/', 'Open Container Initiative', CONTENEDORES_KEY, 'Open Container Initiative', '2023/07/16')],
     [Keys.CONTENEDORES_SECURE_ORCHESTRATION, new Referencia('https://levelup.gitconnected.com/docker-vs-podman-a-new-era-in-secure-orchestration-957ea2123098', 'Seguridad en Orquestación', CONTENEDORES_KEY, 'Seguridad', '2024/05/25')],
     [Keys.CONTENEDORES_ARQUITECTURE, new Referencia('https://medium.com/@dmosyan/deep-dive-into-docker-containers-architecture-and-features-530a937f4c87', 'Arquitectura en Docker', CONTENEDORES_KEY, 'Arquitectura', '2024/08/04')],
@@ -347,7 +349,7 @@ export const META_CARATERISTICAS_REF = new Map<string, Referencia>([
     [Keys.META_CARACTERISTICAS_REFLEXION, new Referencia('https://levelup.gitconnected.com/reflecting-on-java-unveiling-the-magic-of-reflection-7140a465ff6b', 'Auto mutabilidad del codigo', META_CARACTERISTICAS_KEY, 'Reflexión', '', '2024/07/12')],
     ['asserts', new Referencia('https://www.adictosaltrabajo.com/2016/01/07/haz-tu-codigo-mas-fiable-con-asserts/', 'Comprobaciones del codigo', META_CARACTERISTICAS_KEY, 'Aserciones')],
     [Keys.META_CARACTERISTICAS_EXCEPTIONS, new Referencia('https://universidad-de-los-andes.gitbooks.io/fundamentos-de-programacion/content/Nivel4/5_ManejoDeLasExcepciones.html', 'Lanzamiento y manejo de excepciones', META_CARACTERISTICAS_KEY, 'Excepciones')],
-    ['cache', new Referencia('https://medium.com/bancolombia-tech/dise%C3%B1ando-una-estrategia-de-cach%C3%A9-39366876009b', 'Tipos de Cache', META_CARACTERISTICAS_KEY, 'Tipos de Cache')],
+    [Keys.META_CARACTERISTICAS_CACHE, new Referencia('https://medium.com/bancolombia-tech/dise%C3%B1ando-una-estrategia-de-cach%C3%A9-39366876009b', 'Tipos de Cache', META_CARACTERISTICAS_KEY, 'Tipos de Cache')],
     //['hilos', new Referencia('https://facturapp.weebly.com/hilos.html', 'Hilos', META_CARACTERISTICAS_KEY, 'Hilos')],
     [Keys.META_CARACTERISTICAS_PROCESS_AND_THREADS, new Referencia('https://www.linkedin.com/posts/bytebytego_systemdesign-coding-interviewtips-activity-7282264394716090368-bJfF/', 'Procesos & Hilos', META_CARACTERISTICAS_KEY, 'Procesos & Hilos', '', '2025/01/16').addRelatedItem(Keys.HARDWARE_OPERATIVE_SYSTEM)],
     ['argumentos', new Referencia('https://picodotdev.github.io/blog-bitix/2021/01/en-java-los-argumentos-se-pasan-por-valor-o-por-referencia/', 'Argumentos por valor y por referencia', META_CARACTERISTICAS_KEY, 'Argumentos')],
@@ -633,8 +635,8 @@ export const REFACTORING_REF = new Map<string, Referencia>([
 
 export const REQUISITOS_KEY = 'Requisitos';
 export const REQUISITOS_REF = new Map<string, Referencia>([
-    ['funcionales', new Referencia('https://medium.com/@requeridosblog/requerimientos-funcionales-y-no-funcionales-ejemplos-y-tips-aa31cb59b22a', 'Requisitos funcionales', REQUISITOS_KEY, 'Funcionales')],
-    ['NOfuncionales', new Referencia('https://medium.com/@requeridosblog/requerimientos-funcionales-y-no-funcionales-ejemplos-y-tips-aa31cb59b22a', 'Requisitos No funcionales', REQUISITOS_KEY, 'NO Funcionales')],
+    [Keys.REQUISITOS_FUNCIONALES, new Referencia('https://medium.com/@requeridosblog/requerimientos-funcionales-y-no-funcionales-ejemplos-y-tips-aa31cb59b22a', 'Requisitos funcionales', REQUISITOS_KEY, 'Funcionales')],
+    [Keys.REQUISITOS_NO_FUNCIONALES, new Referencia('https://medium.com/@requeridosblog/requerimientos-funcionales-y-no-funcionales-ejemplos-y-tips-aa31cb59b22a', 'Requisitos No funcionales', REQUISITOS_KEY, 'NO Funcionales')],
     //['negocio', new Referencia('https://requeridos.com/que-es-el-valor-de-negocio-y-como-medirlo/', 'El valor del negocio', REQUISITOS_KEY, 'EL Negocio')],
     [Keys.REQUISITOS_BUSINESS_VALUE, new Referencia('https://www.elproximopaso.net/2012/03/8-otra-maneras-de-definir-el-valor-de.html', 'El valor del negocio', REQUISITOS_KEY, 'EL Negocio', '', '2024/09/27')],
     //['ambiguedad', new Referencia('https://requeridos.com/requerimientos-menos-es-mas/', 'Evitar la ambiguedad', REQUISITOS_KEY, 'Evitar la ambiguedad')],
@@ -737,7 +739,7 @@ export const PERSISTENCY_ADVANCED_REF = new Map<string, Referencia>([
     ['algebraRelacional', new Referencia('https://lienzos.uv.mx/Uploads/resources/LenguajeAlgebraRelacional_18e0.pdf', 'Algebra Relacional', PERSISTENCY_ADVANCED_KEY, 'Algebra Relacional', '', '2024/06/07')],
     [Keys.PERSISTENCY_ADVANCED_N_1_SELECTS, new Referencia('https://stackoverflow.com/questions/97197/what-is-the-n1-selects-problem-in-orm-object-relational-mapping', 'N + 1 Problem', PERSISTENCY_ADVANCED_KEY, 'N + 1 Selects')],
     ['boyceCodd', new Referencia('https://normalizacionunit4.blogspot.com/2019/05/46-forma-normal-boyce-codd.html', 'Boyce-Codd', PERSISTENCY_ADVANCED_KEY, 'Boyce-Codd')],
-    ['sqlVsNosql', new Referencia('https://medium.com/@eugeniomendoza/c%C3%B3mo-saber-si-necesitas-una-base-de-datos-nosql-b6cfd5bb7d9b', 'SQL ó NoSql', PERSISTENCY_ADVANCED_KEY, 'SQL ó NoSql', '', '2024/06/06')],
+    [Keys.PERSISTENCY_ADVANCED_SQL_NO_SQL, new Referencia('https://medium.com/@eugeniomendoza/c%C3%B3mo-saber-si-necesitas-una-base-de-datos-nosql-b6cfd5bb7d9b', 'SQL ó NoSql', PERSISTENCY_ADVANCED_KEY, 'SQL ó NoSql', '', '2024/06/06')],
     [Keys.PERSISTENCY_ADVANCED_LOCKING, new Referencia('https://vladmihalcea.com/optimistic-vs-pessimistic-locking/', 'Bloqueo Optimista & Pesimista', PERSISTENCY_ADVANCED_KEY, 'Bloqueos', '2024/06/17')],
     ['sqlOrderExecution', new Referencia('https://matam-kirankumar.medium.com/sql-query-order-of-execution-37001da1462', 'Orden de Ejecución', PERSISTENCY_ADVANCED_KEY, 'Orden de Ejecución', '2023/08/13')],
     ['sargeable', new Referencia('https://dev.to/kanani_nirav/secret-to-optimizing-sql-queries-understand-the-sql-execution-order-28m1', 'Consultas SARGEABLE', PERSISTENCY_ADVANCED_KEY, 'SARGEABLE', '2023/08/14')],
@@ -787,7 +789,7 @@ export const HARDWARE_REF = new Map<string, Referencia>([
     ['virtualizacion', new Referencia('https://www.redhat.com/es/topics/virtualization/what-is-a-virtual-machine', 'Virtualización', HARDWARE_KEY, 'Virtualizacion')],
     //['cli', new Referencia('https://searchdatacenter.techtarget.com/es/definicion/Interfaz-de-linea-de-comandos-o-CLI', 'Interfaz de Linea de Comandos', HARDWARE_KEY, 'CLI')],
     ['cli', new Referencia('https://www.computerweekly.com/es/definicion/Interfaz-de-linea-de-comandos-o-CLI', 'Interfaz de Linea de Comandos', HARDWARE_KEY, 'CLI', '', '2024/06/11')],
-    ['escalamiento', new Referencia('https://www.oscarblancarteblog.com/2017/03/07/escalabilidad-horizontal-y-vertical/', 'Escalamiento de un sistema', HARDWARE_KEY, 'Escalamiento')],
+    [Keys.HARDWARE_ESCALAMIENTO, new Referencia('https://www.oscarblancarteblog.com/2017/03/07/escalabilidad-horizontal-y-vertical/', 'Escalamiento de un sistema', HARDWARE_KEY, 'Escalamiento')],
     ['nubeVSvirtualizacion', new Referencia('https://www.redhat.com/es/topics/cloud-computing/cloud-vs-virtualization', 'Nube VS Virtualizacion', HARDWARE_KEY, 'Nube VS VM')],
     ['rendering', new Referencia('https://www.freecodecamp.org/news/what-exactly-is-client-side-rendering-and-hows-it-different-from-server-side-rendering-bd5c786b340d/', 'Server-side VS client-side rendering', HARDWARE_KEY, 'Rendering')],
     ['modelOSI', new Referencia('https://www.cloudflare.com/es-es/learning/ddos/glossary/open-systems-interconnection-model-osi/', 'Modelo OSI', HARDWARE_KEY, 'Modelo OSI')],
@@ -809,7 +811,7 @@ export const WEB_REF = new Map<string, Referencia>([
     [Keys.WEB_SPACE, new Referencia('https://heyjaime.com/blog/espacio-negativo/', 'El uso del espacio para diseñar', WEB_KEY, 'Espacio Negativo', '', '2024/12/13')],
     ['diseno', new Referencia('https://seocom.agency/es/blog/diseno-grafico-web/', 'Diseño grafico', WEB_KEY, 'Diseño Grafico')],
     [Keys.WEB_USER_INTERFACE, new Referencia('https://pensamientodigital.wordpress.com/diseno-de-interfases-de-usuario/', 'Interfaces de usuario', WEB_KEY, 'UI')],
-    ['experienciaUsuario', new Referencia('https://www.coursera.org/articles/ui-vs-ux-design', 'Experiencia de usuario', WEB_KEY, 'UX')],
+    [Keys.WEB_USER_XPERIENCE, new Referencia('https://www.coursera.org/articles/ui-vs-ux-design', 'Experiencia de usuario', WEB_KEY, 'UX')],
     ['logos', new Referencia('https://franciscotorreblanca.es/logotipo-imagotipo-isotipo-e-isologo/', 'Logotipo, Imagotipo, Isotipo, Isologo', WEB_KEY, 'Logos')],
     //['experienciasUsuario', new Referencia('https://blog.acantu.com/que-es-ux-y-ui/', 'Experiencia de usuario', WEB_KEY, 'UX')],
     ['gestalt', new Referencia('https://imborrable.com/blog/teoria-de-la-gestalt/', 'Teoria de Gestalt', WEB_KEY, 'Teoria de Gestalt')],
@@ -844,7 +846,7 @@ export const CD_CI_KEY = 'CD/CI-Infraestructura';
 export const CD_CI_REF = new Map<string, Referencia>([
     [Keys.CD_CI_CD_CI, new Referencia('https://www.aplyca.com/es/blog/integracion-entrega-continua-ci-cd', 'Integración Continua y Entrega Continua', CD_CI_KEY, 'CD/CI', '', '2024/08/25')],
     ['devops', new Referencia('https://www.paradigmadigital.com/techbiz/que-es-devops-y-sobre-todo-que-no-es-devops/', 'DevOps', CD_CI_KEY, 'DevOps')],
-    ['iascode', new Referencia('https://www.redhat.com/es/topics/automation/what-is-infrastructure-as-code-iac', 'Infraestructura como Codigo', CD_CI_KEY, 'Infraestructura & Codigo')],
+    [Keys.CD_CI_IAS_CODE, new Referencia('https://www.redhat.com/es/topics/automation/what-is-infrastructure-as-code-iac', 'Infraestructura como Codigo', CD_CI_KEY, 'Infraestructura & Codigo').addRelatedItem(Keys.CONTENEDORES_DOCKER)],
     ['stateless-stateful', new Referencia('https://refactorizando.com/stateful-vs-stateless-arquitectura/', 'Stateful VS Stateless', CD_CI_KEY, 'Stateless VS Stateful')],
     [Keys.CD_CI_DEPLOYMENT_PATTERNS, new Referencia('https://newsletter.techworld-with-milan.com/p/what-are-deployment-patterns', 'Patrones de Despliegue', CD_CI_KEY, 'Patrones de Despliegue')],
     ['industrialDevops', new Referencia('https://itrevolution.com/articles/what-is-industrial-devops/', 'Industrial DevOps', CD_CI_KEY, 'Industrial DevOps', '2023/11/21')],

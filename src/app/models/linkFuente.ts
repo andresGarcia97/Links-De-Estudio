@@ -63,7 +63,8 @@ export const UTILS = new Map([
     ['apisNavegador', { titulo: 'APIs del navegador', referencia: 'https://developer.mozilla.org/es/docs/Learn/JavaScript/Client-side_web_APIs/Introduction#apis_de_navegador_m%C3%A1s_comunes' }],
     ['eventDrivenArquitectures', { titulo: 'Event Driven Visuals', referencia: 'https://serverlessland.com/event-driven-architecture/visuals/' }],
     ['cpuLand', { titulo: 'CPU', referencia: 'https://cpu.land/' }],
-    ['interviews', { titulo: 'Entrevistas', referencia: 'https://github.com/DevCaress/guia-entrevistas-de-programacion' }]
+    ['interviews', { titulo: 'Entrevistas', referencia: 'https://github.com/DevCaress/guia-entrevistas-de-programacion' }],
+    ['designInterviews', { titulo: 'Design Systems', referencia: 'https://github.com/karanpratapsingh/system-design' }]
 ]);
 
 export const TESTING = new Map([

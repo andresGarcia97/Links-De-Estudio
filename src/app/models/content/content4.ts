@@ -824,7 +824,7 @@ export const META_CARACTERISTICAS =
                 '- El manejo de excepciones es fundamental para conseguir programas robustos y confiables, por esto es ideal definir, ',
                 ' - responsabilidades acerca de quienes pueden lanzar excepciones y quienes pueden atraparlas ',
             ]),
-        new Item('cache',
+        new Item(Keys.META_CARACTERISTICAS_CACHE,
             [
                 '- La cache existe para diminuir la latencia e incrementar el rendimiento en operaciones costosas ',
                 '- Esta es recomendable usarla en los casos donde el rendimiento no es el esperado, o si son recursos poco mutables y muy solicitados ',
@@ -1316,7 +1316,7 @@ export const CONTENEDORES =
                 '',
                 '- El nombre de kubernetes proviene del griego "<i>κυβερνήτης</i>" que significa timonel, de ahi su logo '
             ]),
-        new Item('containerOrchestation',
+        new Item(Keys.CONTENEDORES_ORCHESTRATION,
             [
                 '- Debido a lo escalable y populares que son los contenedores, es imperativo tener una manera de manejarlos y automatizarlos ',
                 '',

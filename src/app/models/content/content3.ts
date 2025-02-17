@@ -19,7 +19,7 @@ export class Content3 {
 
 export const REQUISITOS =
     [
-        new Item('funcionales',
+        new Item(Keys.REQUISITOS_FUNCIONALES,
             [
                 '- Son la declaración de los servicios y funciones que tendra la aplicación ',
                 '- Estos se basan en una serie de requerimientos del software previamente realizada ',
@@ -28,7 +28,7 @@ export const REQUISITOS =
                 '- Las Historias de Usuario son una gran ayuda en este ambito, aun asi estas tambien pueden equivocarse ',
                 '- Los requisitos deben ser coherentes, sin contradicciones entre si, más no significa que no puedan cambiar ',
             ]),
-        new Item('NOfuncionales',
+        new Item(Keys.REQUISITOS_NO_FUNCIONALES,
             [
                 '- No son caracteristicas que son expresadas directamente por el cliente ',
                 '- Son una declaración de como se debe comportar el sistema, de que propiedades son importantes ',
@@ -1786,7 +1786,7 @@ export const CD_CI_INFRAESTRUCTURE =
                 '- Ya que la meta es que cada despliegue sea automatico, reduciendo el tiempo de corrección de errores, aumentando la productividad ',
                 '- La automatización de las tareas y las pruebas permite que el codigo en desarrollo fluya rapidamente a producción ',
             ]),
-        new Item('iascode',
+        new Item(Keys.CD_CI_IAS_CODE,
             [
                 '- Permite gestionar y preparar la infraestructura a traves del codigo, en vez de usar procesos manuales',
                 '- Se realiza mediante archivos de configuración, que contienen las especificaciones necesarias ',
