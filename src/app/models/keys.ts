@@ -306,3 +306,4 @@ export const MICROSERVICES_TRADEOFFS = 'microservicesTradeoffs';
 export const MICROSERVICES_PATTERNS = 'microservicesPatterns';
 export const MICROSERVICES_ANTI_PATTERNS = 'microservicesAntipatterns';
 export const MICROSERVICES_PRODUCER_CONSUMER_PROBLEM = 'producerConsumerProblem';
+export const MICROSERVICES_CACHE_FAILS = 'cacheFails';

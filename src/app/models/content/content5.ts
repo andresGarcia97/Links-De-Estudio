@@ -2237,5 +2237,25 @@ export const MICRO_SERVICES =
                 '- Rastrear el espacio y valida para que se puedan producir mensajes',
                 '- Notifica que se han producido mensajes y pueden ser consumidos ',
                 '- Permite un solo cambio en la cola de manera sincrona, aunque hay implementaciones que permiten concurrencia en ambos extremos '
+            ]),
+        new Item(Keys.MICROSERVICES_CACHE_FAILS,
+            [
+                '- Los caches son sistemas que ayudan a resolver problemas de rendimiento, reducir la latencia, además de otros beneficios ',
+                '- Esto no los excluye de que puedan tener fallos ó generar problemas mientras se usan ',
+                '',
+                '<strong>Thunder Hurd Problem:</strong> Sucede cuando una gran cantidad de claves caducan al mismo tiempo, obligando a ir masivamente a la Base de datos',
+                '- Una forma de solventarlo es aleatorizando la vida de los datos en el cache para que no caduquen en masa ',
+                '- Permitir que solo los datos criticos puedan ir a la base de datos y el resto solo esperar hasta que se haga la copia en el cache ',
+                '',
+                '<strong>Cache Penetration:</strong> Sucede cuando el dato a buscar no existe en el cache ni en la BD, generando una sobrecarga en ambos sistemas ',
+                '- Se pueden almacenar valores nulos para llaves inexistentes, evitando buscar en la BD ',
+                '- Tambien se puede hacer un filtro de bloom y determinar si estadisticamente el dato puede existir en la BD, y solo en ese caso buscarlo ',
+                '',
+                '<strong>Cache Breakdown:</strong> Similar al <em>Thunder Hurd</em> pero aca solo sucede con uno o varios datos que son muy utilizados ',
+                '- Conociendo estos valores, es conveniente tenerlas sin caducidad ',
+                '',
+                '<strong>Caidas:</strong> Por alguna razón el cache esta fuera de servicio y todas las solicitudes deben ir a base de datos ',
+                '- Se puede usar un circuit breaker para evitar que los problemas se propagen aun más ',
+                '- Configurar un cluster para mejorar la disponibilidad del cache ante imprevistos ',
             ])
     ];
