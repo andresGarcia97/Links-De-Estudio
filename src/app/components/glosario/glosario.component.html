@@ -1,8 +1,8 @@
 <div class="content"></div>
-<div class="content" #glosario>
+<div class="content">
 
   <div class="card-container">
-    <input #inputSearch class="search" type="text" [(ngModel)]="search" name="search" (ngModelChange)="searchChanged()" />
+    <input #inputSearch class="search" type="text" [(ngModel)]="search" name="search"/>
   
     <div class="close-glosary" tabindex="0" (click)="cleanSearch()" *ngIf="search !== ''">
       <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 512 512"> 
@@ -15,22 +15,12 @@
     
   </div>
 
-  <div class="card-container" #view>
-
-    <app-referencia *ngIf="showItem" class="flexbox terminal" [referencia]="referencia" [titulo]="titulo"></app-referencia>
-    <div *ngIf="showItem" class="terminal">
-      <pre *ngFor="let content of item.content" [innerHTML]="content">{{content}}</pre>
-    </div>
-
-  </div>
-
   <div class="card-container">
 
-    <div [ngClass]="{'glosarySelected' : componente.titulo === titulo }" 
+    <div class="card card-small card-no-size tooltip"
       *ngFor="let componente of onlyComponents | filter : search" 
-      class="card card-small card-no-size tooltip"
-      (click)="createViewItem(componente.key, view)"> {{componente.titulo}}
-      <span (click)="goToSection(componente.componente, componente.key)" class="tooltiptext gradient">Seccion: {{componente.componente}}</span>
+      (click)="goToSection(componente.componente, componente.key)"> {{componente.titulo}}
+      <span class="tooltiptext gradient">Seccion: {{componente.componente}}</span>
     </div>
 
   </div>

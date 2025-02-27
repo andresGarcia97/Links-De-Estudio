@@ -183,12 +183,6 @@
   background-color: var(--color-fulvous);
 }
 
-.oscuro .glosarySelected.card-no-size.tooltip {
-  color: var(--color-french-sky-blue);
-  background-color: var(--color-jet);
-  border-color: var(--color-navy-blue);
-} 
-
 .oscuro .card.card-small.itemSelected  {
   color: var(--color-navy-blue);
   border-color: var(--color-french-sky-blue);
@@ -781,12 +775,6 @@ div a.circle-link {
 .share-button:hover .share-link:nth-of-type(4) {
   transition-delay: 0.4s;
 }
-
-.glosarySelected.card-no-size.tooltip {
-  color: var(--color-orange-yellow-crayola);
-  background-color: var(--color-raisin-black);
-  border-color: var(--color-fulvous);
-} 
 
 .card.card-small.itemSelected {
   color: var(--color-fulvous);
