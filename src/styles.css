@@ -1,9 +1,9 @@
-/* paleta de colores -> https://coolors.co/dd0031-1976d2-eeeeee-000000-ffba08 */
+/* paleta de colores -> https://coolors.co/dd0031-1976d2-eeeeee-0a0a0a-ffba08 */
 
 /*https://blog.nubecolectiva.com/como-crear-el-efecto-modo-oscuro-claro-en-un-sitio-web-con-css-3-javascript/*/
 
 :root {
-  --color-black: black;
+  --color-night: #0A0A0A;
   --color-raisin-black: #1d1e2c;
   --color-jet: #3a3a3a;
   --color-white: white;
@@ -32,7 +32,7 @@
 }
 
 .oscuro .terminal pre {
-  color: var(--color-black);
+  color: var(--color-night);
 }
 
 .oscuro .terminal h2 {
@@ -76,7 +76,7 @@
 .oscuro em::selection,
 .oscuro pre::selection {
   background: var(--color-navy-blue);
-  color: var(--color-black);
+  color: var(--color-night);
 }
 
 .oscuro.scroll::-webkit-scrollbar-thumb {
@@ -151,7 +151,7 @@
 .oscuro .glass-efect {
   background: rgba(var(--color-white), 0.2);
   box-shadow: 2px 2px 4px 2px var(--color-fulvous);
-  border: 1px solid rgba(var(--color-black), 0.18);
+  border: 1px solid rgba(var(--color-night), 0.18);
 }
 
 .oscuro .glass-efect:hover {
@@ -232,7 +232,7 @@ p {
   height: 60px;
   display: flex;
   align-items: center;
-  background-color: var(--color-black);
+  background-color: var(--color-night);
   color: var(--color-white);
   font-weight: 600;
   border-bottom-left-radius: 6px;
@@ -293,7 +293,7 @@ svg.material-icons:not(:last-child) {
 }
 
 .card svg.material-icons path {
-  fill: var(--color-black);
+  fill: var(--color-night);
 }
 
 .card-container {
@@ -339,7 +339,7 @@ svg.material-icons:not(:last-child) {
 
 .card-container .card:not(.highlight-card):hover {
   transform: translateY(-3px);
-  box-shadow: 0 4px 16px var(--color-black, 0.35);
+  box-shadow: 0 4px 16px var(--color-night, 0.35);
 }
 
 .card-container .card:not(.highlight-card):hover .material-icons path {
@@ -365,12 +365,12 @@ svg.material-icons:not(:last-child) {
 }
 
 .card.card.highlight-card span {
-  color: var(--color-black);
+  color: var(--color-night);
   margin-left: 60px;
 }
 
 .card.card.highlight-card span.noMargin {
-  color: var(--color-black);
+  color: var(--color-night);
   margin: 5px;
 }
 
@@ -405,7 +405,7 @@ a:hover {
 }
 
 .card-container a {
-  color: var(--color-black);
+  color: var(--color-night);
 }
 
 /* https://github.com/atherosai/ui/blob/main/pages/input-search.tsx */
@@ -466,7 +466,7 @@ a:hover {
 .terminal .window {
   width: 100%;
   border-radius: 2px;
-  background-color: var(--color-black);
+  background-color: var(--color-night);
 }
 
 .terminal pre {
@@ -495,7 +495,7 @@ strong::selection,
 em::selection,
 pre::selection {
   background: var(--color-selective-yellow);
-  color: var(--color-black);
+  color: var(--color-night);
 }
 
 .circle-link {
@@ -509,7 +509,7 @@ pre::selection {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  box-shadow: var(--color-black);
+  box-shadow: var(--color-night);
   transition: 0.3s ease-out;
   flex-wrap: wrap;
 }
@@ -520,7 +520,7 @@ pre::selection {
 
 .circle-link:hover {
   transform: translateY(-4px);
-  box-shadow: 0px 3px 12px var(--color-black);
+  box-shadow: 0px 3px 12px var(--color-night);
 }
 
 .circle-link svg:hover {
@@ -528,7 +528,7 @@ pre::selection {
 }
 
 .github-star-badge {
-  color: var(--color-black);
+  color: var(--color-night);
   display: flex;
   align-items: center;
   padding: 2px 10px;
@@ -622,7 +622,7 @@ div a.circle-link {
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
   border-radius: 10px;
-  border: 1px solid rgba(var(--color-black), 0.18);
+  border: 1px solid rgba(var(--color-night), 0.18);
 }
 
 .glass-efect:hover {
@@ -637,7 +637,7 @@ div a.circle-link {
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 170px;
-  background-color: var(--color-black);
+  background-color: var(--color-night);
   color: var(--color-cultured);
   text-align: center;
   border-radius: 8px;
@@ -735,7 +735,7 @@ div a.circle-link {
   line-height: 40px;
   font-size: 16px;
   text-align: center;
-  color: var(--color-black);
+  color: var(--color-night);
 }
 
 .share-link {
