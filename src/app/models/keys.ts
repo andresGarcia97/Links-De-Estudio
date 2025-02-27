@@ -309,3 +309,4 @@ export const MICROSERVICES_ANTI_PATTERNS = 'microservicesAntipatterns';
 export const MICROSERVICES_PRODUCER_CONSUMER_PROBLEM = 'producerConsumerProblem';
 export const MICROSERVICES_CACHE_FAILS = 'cacheFails';
 export const MICROSERVICES_DISTRIBUTED_TRACING = 'distributedTracing';
+export const MICROSERVICES_DEAD_LETTER_QUEUE = 'deadLetterQueue';

@@ -45,7 +45,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.MICROSERVICES_DISTRIBUTED_TRACING;
+export const LAST_ITEM = Keys.MICROSERVICES_DEAD_LETTER_QUEUE;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -869,4 +869,5 @@ export const MICRO_SERVICES_REF = new Map<string, Referencia>([
     [Keys.MICROSERVICES_PRODUCER_CONSUMER_PROBLEM, new Referencia('https://www.baeldung.com/java-producer-consumer-problem', 'Problema Productor Consumidor', MICRO_SERVICES_KEY, 'Productor-Consumidor', '2025/02/15').addRelatedItems(Keys.ANALISIS_QUEUES_SYSTEM_DESIGN, Keys.META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM, Keys.META_CARACTERISTICAS_PROCESS_AND_THREADS)],
     [Keys.MICROSERVICES_CACHE_FAILS, new Referencia('https://www.linkedin.com/posts/bytebytego_systemdesign-coding-interviewtips-activity-7296767687978827776-Dizz/', 'Fallos del cache', MICRO_SERVICES_KEY, 'Fallos del cache', '2025/02/22').addRelatedItems(Keys.META_CARACTERISTICAS_CACHE, Keys.PERSISTENCY_ADVANCED_SCALING_DB)],
     [Keys.MICROSERVICES_DISTRIBUTED_TRACING, new Referencia('https://www.dynatrace.com/news/blog/what-is-distributed-tracing/', 'Tracing Distribuido', MICRO_SERVICES_KEY, 'Tracing Distribuido', '2025/02/23').addRelatedItems(Keys.NUBE_OBSERVABILIDAD, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.BUENAS_PRACTICAS_DEBUGGING, Keys.BUENAS_PRACTICAS_LOGGING)],
+    [Keys.MICROSERVICES_DEAD_LETTER_QUEUE, new Referencia('https://www.geeksforgeeks.org/dead-letter-queue-system-design/', 'Dead Letter Queue - DLQ & DLT', MICRO_SERVICES_KEY, 'Dead Letter Queue', '2025/02/26').addRelatedItem(Keys.ANALISIS_QUEUES_SYSTEM_DESIGN)],
 ]);
