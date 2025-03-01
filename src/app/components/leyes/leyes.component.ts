@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { LEYES } from 'src/app/models/content/content4';
+import { LEYES } from 'src/app/models/content/content6';
 import { AGILES_KEY, CONOCIMIENTO_EMPIRICO_KEY, HARDWARE_KEY, LEYES_REF, LinkReferencia, PEOPLE_KEY }
 from 'src/app/models/linkReferencia';
 

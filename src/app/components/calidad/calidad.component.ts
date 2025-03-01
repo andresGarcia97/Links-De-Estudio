@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CALIDAD } from 'src/app/models/content/content1';
+import { CALIDAD } from 'src/app/models/content/content6';
 import { AGILES_KEY, ANALISIS_KEY, BUENAS_PRACTICAS_KEY, CALIDAD_REF, LinkReferencia, MALAS_PRACTICAS_KEY, PATRONES_KEY }
 from 'src/app/models/linkReferencia';
 

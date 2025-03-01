@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { NEURO_MARKETING } from 'src/app/models/content/content3';
+import { NEURO_MARKETING } from 'src/app/models/content/content6';
 import { CONOCIMIENTO_EMPIRICO_KEY, LinkReferencia, NEURO_MARKETING_REF, PEOPLE_KEY } from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-neuro-marketing',
   templateUrl: './neuro-marketing.component.html'
 })
-export class NeuroMarketingComponent  implements OnInit {
+export class NeuroMarketingComponent implements OnInit {
 
   items = NEURO_MARKETING;
   

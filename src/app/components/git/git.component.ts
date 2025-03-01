@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { GIT } from 'src/app/models/content/content2';
+import { GIT } from 'src/app/models/content/content6';
 import { GIT_REF, LinkReferencia, VERSIONAMIENTO_KEY } from 'src/app/models/linkReferencia';
 
 @Component({
