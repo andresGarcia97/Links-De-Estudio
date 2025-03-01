@@ -45,7 +45,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.MICROSERVICES_DEAD_LETTER_QUEUE;
+export const LAST_ITEM = Keys.ANALISIS_DOMAIN_EVENTS;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -95,7 +95,8 @@ export const ANALISIS_REF = new Map<string, Referencia>([
     [Keys.ANALISIS_HIGH_LEVEL_VS_LOW_LEVEL, new Referencia('https://www.baeldung.com/cs/hld-lld', 'High Level Vs Low Level', ANALISIS_KEY, 'High Level Vs Low Level', '2024/09/20').addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_SLDC).addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.PERSISTENCY_ERD)],
     [Keys.ANALISIS_SYSTEM_DESIGN_CONCEPTS, new Referencia('https://www.linkedin.com/posts/brijpandeyji_top-12-system-design-concepts-every-developer-activity-7238729739065069568-h1t6/', 'System Design Concepts', ANALISIS_KEY, 'System Design Concepts', '2024/09/29')],
     [Keys.ANALISIS_SINGLE_POINT_OF_FAILURE, new Referencia('https://levelup.gitconnected.com/single-point-of-failure-spof-in-system-design-c8bbac5af993', 'Single Point Of Failure', ANALISIS_KEY, 'SPOF', '2024/12/07')],
-    [Keys.ANALISIS_LIGHT_EVENTS_VS_RICH_EVENTS, new Referencia('https://theburningmonk.com/2024/11/when-to-use-light-events-vs-rich-events-in-event-driven-architectures/', 'Light Events VS Rich Events', ANALISIS_KEY, 'Eventos', '2024/12/08').addRelatedItems(Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.PERSISTENCY_NORMALIZATION, Keys.ESTRATEGIAS_DESARROLLO_DDD)],
+    [Keys.ANALISIS_DOMAIN_EVENTS, new Referencia('https://medium.com/yield-studio/ddd-do-not-leak-your-domain-events-456919346273', 'Domain Events', ANALISIS_KEY, 'Domain Events', '2025/02/28').addRelatedItems(Keys.POO_COUPLING_AND_COHESION, Keys.ESTRATEGIAS_DESARROLLO_DDD)],
+    [Keys.ANALISIS_LIGHT_EVENTS_VS_RICH_EVENTS, new Referencia('https://theburningmonk.com/2024/11/when-to-use-light-events-vs-rich-events-in-event-driven-architectures/', 'Light Events VS Rich Events', ANALISIS_KEY, 'Light/Rich Events', '2024/12/08').addRelatedItems(Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.PERSISTENCY_NORMALIZATION, Keys.ESTRATEGIAS_DESARROLLO_DDD)],
     [Keys.ANALISIS_SYSTEM_DESIGN_I, new Referencia('https://newsletter.systemdesigncodex.com/p/how-to-do-well-in-system-design-interviews', 'System Design I', ANALISIS_KEY, 'System Design I', '2025/02/16').addRelatedItems(Keys.REQUISITOS_FUNCIONALES, Keys.REQUISITOS_NO_FUNCIONALES, Keys.PERSISTENCY_ADVANCED_SQL_NO_SQL, Keys.WEB_USER_XPERIENCE, Keys.PERSISTENCY_ADVANCED_DENORMALIZATION, Keys.PERSISTENCY_NORMALIZATION)],
     [Keys.ANALISIS_SYSTEM_DESIGN_II, new Referencia('https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction', 'System Design II', ANALISIS_KEY, 'System Design II', '2025/02/16').addRelatedItems(Keys.APIS_API_FIRST, Keys.CONTENEDORES_ORCHESTRATION, Keys.CD_CI_IAS_CODE, Keys.HARDWARE_ESCALAMIENTO, Keys.META_CARACTERISTICAS_CACHE, Keys.NUBE_PACELC)],
 ]);
@@ -264,7 +265,7 @@ export const CONTAINERS = new Map<string, Referencia>([
 
 export const ESTRATEGIAS_DESARROLLO_KEY = 'Estrategias-Desarrollo';
 export const ESTRATEGIAS_DESARROLLO_REF = new Map<string, Referencia>([
-    [Keys.ESTRATEGIAS_DESARROLLO_DDD, new Referencia('https://github.com/jatubio/5minutos_laravel/wiki/Resumen-sobre-DDD.-Domain-Driven-Design', 'Diseño Orientado a Dominios', ESTRATEGIAS_DESARROLLO_KEY, 'DDD')],
+    [Keys.ESTRATEGIAS_DESARROLLO_DDD, new Referencia('https://github.com/jatubio/5minutos_laravel/wiki/Resumen-sobre-DDD.-Domain-Driven-Design', 'Diseño Orientado a Dominios', ESTRATEGIAS_DESARROLLO_KEY, 'DDD', '', '2025/02/28').addRelatedItem(Keys.ARQUITECTURAS_HEXAGONAL)],
     [Keys.ESTRATEGIAS_DESARROLLO_BDD, new Referencia('https://www.itdo.com/blog/que-es-bdd-behavior-driven-development/', 'Desarrollo Dirigido por Comportamiento', ESTRATEGIAS_DESARROLLO_KEY, 'BDD', '', '2025/02/02').addRelatedItem(Keys.USER_HISTORIES_FORMATS)],
     [Keys.ESTRATEGIAS_DESARROLLO_TDD, new Referencia('https://www.paradigmadigital.com/dev/tdd-como-metodologia-de-diseno-de-software/', 'Desarrollo Dirigido por Tests', ESTRATEGIAS_DESARROLLO_KEY, 'TDD')],
     ['atdd', new Referencia('https://www.javiergarzas.com/2015/07/que-es-eso-de-atdd.html', 'Desarrollo por pruebas de aceptación', ESTRATEGIAS_DESARROLLO_KEY, 'ATDD')],

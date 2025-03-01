@@ -242,6 +242,7 @@ export const ANALISIS_QUEUES_SYSTEM_DESIGN = 'queueSystemDesign';
 export const ANALISIS_HIGH_LEVEL_VS_LOW_LEVEL = 'highLevelVsLowLevel';
 export const ANALISIS_SYSTEM_DESIGN_CONCEPTS = 'systemDesignConcepts';
 export const ANALISIS_SINGLE_POINT_OF_FAILURE = 'singlePointOfFailure-SPOF';
+export const ANALISIS_DOMAIN_EVENTS = 'domainEvents';
 export const ANALISIS_LIGHT_EVENTS_VS_RICH_EVENTS = 'lightEventsVsRichEvents';
 export const ANALISIS_SYSTEM_DESIGN_I = 'systemDesign-I';
 export const ANALISIS_SYSTEM_DESIGN_II = 'systemDesign-II';
