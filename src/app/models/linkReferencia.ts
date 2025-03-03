@@ -45,7 +45,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.ANALISIS_DOMAIN_EVENTS;
+export const LAST_ITEM = Keys.TESTING_FIVE_FACTORS;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -593,6 +593,7 @@ export const TESTING_REF = new Map<string, Referencia>([
     ['falsos', new Referencia('https://www.redradix.com/insights/detalles-implementacionl-tests-articulo-de-kentc-dodds', 'Falsos positivos & Falsos negativos', TESTING_KEY, 'Falsos Resultados')],
     ['QAperson', new Referencia('https://www.bbvaapimarket.com/es/mundo-api/que-es-qa-y-por-que-no-debe-faltar-en-tu-proyecto/', '¿ Que es QA ?', TESTING_KEY, 'Quality Analisis')],
     [Keys.TESTING_DATA_CREATION, new Referencia('https://www.linkedin.com/pulse/creating-test-data-object-mother-builder-patterns-alves-pimenta/', 'Patrones de creación de datos', TESTING_KEY, 'Creación de datos', '2024/07/11')],
+    [Keys.TESTING_FIVE_FACTORS, new Referencia('https://madeintandem.com/blog/five-factor-testing/', 'Five Factor Testing', TESTING_KEY, 'Five Factor Testing', '2025/03/02').addRelatedItems(Keys.VERSIONAMIENTO_DOCUMENTATION, Keys.ANALISIS_OPINIONATED_NO, Keys.REFACTORING_LEGACY_CODE)],
 ]);
 
 export const TESTING_ADVANCED_KEY = 'Testing-Avanzado';
@@ -627,7 +628,7 @@ export const REFACTORING_REF = new Map<string, Referencia>([
     ['comorefactorizar', new Referencia('https://refactoring.guru/es/refactoring/how-to', '¿ Como refactorizar ? ', REFACTORING_KEY, '¿ Como ?')],
     ['tecnicasRefactoring', new Referencia('https://refactoring.guru/es/refactoring/techniques', 'Tecnicas para refactorizar', REFACTORING_KEY, 'Tecnicas')],
     ['cuandoNoRefactorizar', new Referencia('https://www.digite.com/es/agile/refactorizacion-en-agil/', 'Cuando No Refactorizar', REFACTORING_KEY, 'Cuando No', '2023/01/22')],
-    [Keys.REFACTORING_LEGACY_CODE, new Referencia('https://jesuslc.com/2020/11/21/tecnicas-para-mantener-al-legacy-code-bajo-control/', 'Refactorizar el Legacy Code', REFACTORING_KEY, 'Refactor en Legacy code', '2023/02/05')],
+    [Keys.REFACTORING_LEGACY_CODE, new Referencia('https://jesuslc.com/2020/11/21/tecnicas-para-mantener-al-legacy-code-bajo-control/', 'Refactorizar el Legacy Code', REFACTORING_KEY, 'Refactor en Legacy code', '2023/02/05', '2025/03/02')],
     [Keys.REFACTORING_MANAGE_DEUDA_TECNICA, new Referencia('https://newsletter.techworld-with-milan.com/p/how-to-deal-with-technical-debt', 'Manejo de la deuda tecnica', REFACTORING_KEY, '¿ Como manejarla ?', '2024/05/12')],
     [Keys.REFACTORING_MANAGE_DEPENDENCIES, new Referencia('https://levelup.gitconnected.com/world-of-dependencies-4639100d16ef', 'Manejo de las dependencias', REFACTORING_KEY, 'Dependencias', '2024/06/09').addRelatedItems(Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS, Keys.ARQUITECTURAS_CAPAS, Keys.FRAMEWORKS_IOD)],
     [Keys.REFACTORING_GOOD_AND_BAD_PRACTICES, new Referencia('https://www.builder.io/blog/good-vs-bad-refactoring', 'Buenas & Malas practicas', REFACTORING_KEY, 'Buenas & Malas practicas', '2024/09/08').addRelatedItems(Keys.WEB_SEO, Keys.PRINCIPIOS_KISS)],
@@ -779,7 +780,7 @@ export const VERSIONAMIENTO_REF = new Map<string, Referencia>([
     ['versionamiento', new Referencia('https://ed.team/blog/como-se-deciden-las-versiones-del-software', 'Manejo de versiones', VERSIONAMIENTO_KEY, 'Versionamiento')],
     //['licencias', new Referencia('https://www.bbvaapimarket.com/es/mundo-api/las-5-licencias-de-software-libre-mas-importantes-que-todo-desarrollador-debe-conocer/', 'Tipos de licencias', VERSIONAMIENTO_KEY, 'Licencias')],
     [Keys.VERSIONAMIENTO_LICENSES, new Referencia('https://snyk.io/articles/open-source-licenses/', 'Tipos de licencias open source', VERSIONAMIENTO_KEY, 'Licencias Open Source', '', '2025/02/13')],
-    ['documentation', new Referencia('https://shopify.engineering/good-documentation-productivity', 'Documentación & Productividad', VERSIONAMIENTO_KEY, 'Documentacion')],
+    [Keys.VERSIONAMIENTO_DOCUMENTATION, new Referencia('https://shopify.engineering/good-documentation-productivity', 'Documentación & Productividad', VERSIONAMIENTO_KEY, 'Documentacion')],
     [Keys.VERSIONAMIENTO_LICENSES_AND_DATA, new Referencia('https://medium.com/@torgo/whats-the-deal-with-open-source-open-data-and-open-standards-licenses-d769d8e30dc0', 'Licencias y Datos abiertos', VERSIONAMIENTO_KEY, 'Licencias & Datos', '2023/08/17')],
     [Keys.VERSIONAMIENTO_DEPENDENCIES_ORDER, new Referencia('https://www.baeldung.com/maven-dependencies-order', 'Orden de Dependencias', VERSIONAMIENTO_KEY, 'Orden', '2024/08/04').addRelatedItem(Keys.META_ESTRUCTURAS_ESTRUCTURAS_DATOS_2)],
     [Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES, new Referencia('https://github.com/kedro-org/kedro/wiki/Backwards-compatibility-and-breaking-changes', 'Retro compatibilidad y Breaking changes', VERSIONAMIENTO_KEY, 'Cambios y compatibilidad', '2024/05/19').addRelatedItems(Keys.LEYES_HYRUM, Keys.META_ESTRUCTURAS_DEPRECATION)],

@@ -394,7 +394,7 @@ export const VERSIONAMIENTO =
                 '<strong>- No derivadas</strong> La obra no puede ser modificada ',
                 '<strong>- Compartir igual</strong> Las derivaciones solo se permiten manteniendo la licencia original y con permiso del autor ',
             ]),
-        new Item('documentation',
+        new Item(Keys.VERSIONAMIENTO_DOCUMENTATION,
             [
                 '- Manejar o tener documentación siempre ha sido de los pasos más olvidados en todos los proyectos de tecnologia',
                 '- Generalmente si esta existe, no sera una prioridad, ya que el conocimiento del proyecto se mantiene de boca en boca',
@@ -719,7 +719,9 @@ export const REFACTORIZACION =
         new Item(Keys.REFACTORING_LEGACY_CODE,
             [
                 '- Como desarrolladores de software no solo debemos crear codigo, debemos mantener el que ya existe, solucionar problemas o agregar funcionalidades ',
-                '<strong>- Hotspot analisis:</strong> El codigo antiguo puede estar llenos de deuda tecnica, pero esto no significa que se deba atacar las peores partes, ',
+                '- Modificar/crear codigo en los proyectos <em>Legacy</em> pocas veces es facil, en especial si el proyecto esta mal estructurado o con malas practicas ',
+                '',
+                '<strong>Hotspot analisis:</strong> El codigo antiguo puede estar llenos de deuda tecnica, pero esto no significa que se deba atacar las peores partes, ',
                 ' - se debe priorizar el codigo de peor calidad y que cambia con mayor periodicidad, lo que indica que es prioridad ',
                 '',
                 '<strong>Mikado Method:</strong> Una manera de "Estimar" aquellos refactors grandes sin perdernos en el camino, para esto debemos ',
