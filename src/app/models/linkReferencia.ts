@@ -45,7 +45,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.TESTING_FIVE_FACTORS;
+export const LAST_ITEM = Keys.TESTING_ADVANCED_ARCH_UNIT;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -106,7 +106,7 @@ export const ARQUITECTURAS_REF = new Map<string, Referencia>([
     //['definicion', new Referencia('https://cgrw01.cgr.go.cr/rup/RUP.es/SmallProjects/core.base_rup/guidances/concepts/software_architecture_4269A354.html', '¿ Que es una arquitectura ?', ARQUITECTURAS_KEY, 'Definición')],
     [Keys.ARQUITECTURAS_DEFINICION, new Referencia('https://www.gluo.mx/blog/arquitectura-de-software-que-es-y-que-tipos-hay', '¿ Que es una arquitectura ?', ARQUITECTURAS_KEY, 'Definición', '', '2024/06/17')],
     ['inicioArquitectura', new Referencia('https://sg.com.mx/revista/27/arquitectura-software', 'Etapas & Roles', ARQUITECTURAS_KEY, 'Etapas & Roles')],
-    ['conceptosArquitectura', new Referencia('https://www.freecodecamp.org/news/an-introduction-to-software-architecture-patterns/', 'Conceptos Arquitecturas', ARQUITECTURAS_KEY, 'Conceptos')],
+    [Keys.ARQUITECTURAS_IMPORTANT_CONCEPTS, new Referencia('https://www.freecodecamp.org/news/an-introduction-to-software-architecture-patterns/', 'Conceptos de Arquitecturas', ARQUITECTURAS_KEY, 'Conceptos', '', '2025/03/06')],
     ['principiosArquitecturas', new Referencia('https://www.genbeta.com/desarrollo/principios-de-una-arquitectura-limpia-mantenible-y-testeable', 'Principios de las arquitecturas', ARQUITECTURAS_KEY, 'Principios')],
     [Keys.ARQUITECTURAS_CLEAN, new Referencia('https://medium.com/@diego.coder/introducci%C3%B3n-a-las-clean-architectures-723fe9fe17fa', 'Arquitecturas Limpias', ARQUITECTURAS_KEY, 'Limpias')],
     //[Keys.ARQUITECTURAS_CAPAS, new Referencia('https://geeks.ms/jkpelaez/2009/05/30/arquitectura-basada-en-capas/', 'Arquitectura a Capas', ARQUITECTURAS_KEY, 'Capas')],
@@ -114,7 +114,7 @@ export const ARQUITECTURAS_REF = new Map<string, Referencia>([
     ['cliente', new Referencia('https://desarrolloweb.com/articulos/arquitectura-cliente-servidor.html', 'Arquitectura Cliente-Servidor', ARQUITECTURAS_KEY, 'Cliente Servidor')],
     [Keys.ARQUITECTURAS_HEXAGONAL, new Referencia('https://medium.com/@edusalguero/arquitectura-hexagonal-59834bb44b7f', 'Hexagonal', ARQUITECTURAS_KEY, 'Hexagonal', '', '2024/11/24').addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_DDD)],
     ['noHexagonal', new Referencia('https://javiervelezreyes.com/ni-nueva-ni-arquitectura-ni-hexagonal/', 'Ni Nueva, Ni Hexagonal', ARQUITECTURAS_KEY, 'Ni Nueva, Ni hexagonal')],
-    ['mvc', new Referencia('https://developer.mozilla.org/es/docs/Glossary/MVC', 'Modelo-Vista-Controlador', ARQUITECTURAS_KEY, 'MVC')],
+    [Keys.ARQUITECTURAS_MVC, new Referencia('https://developer.mozilla.org/es/docs/Glossary/MVC', 'Modelo-Vista-Controlador', ARQUITECTURAS_KEY, 'MVC', '2025/03/06')],
     //['mvpMvc', new Referencia('https://www.develapps.com/es/noticias/modelo-vista-presentador-mvp-en-android', 'Modelo-Vista-Presentador', ARQUITECTURAS_KEY, 'MVP')],
     [Keys.ARQUITECTURAS_MVP_MVC, new Referencia('https://keepcoding.io/blog/que-es-mvc-mvp-y-mvvm-en-android/', 'Modelo-Vista-Presentador', ARQUITECTURAS_KEY, 'MVP', '', '2024/06/17').addRelatedItem(Keys.META_CARACTERISTICAS_BOILER_PLATE)],
     ['otrasArquitecturas', new Referencia('https://medium.com/@maniakhitoccori/los-10-patrones-comunes-de-arquitectura-de-software-d8b9047edf0b', 'Otras Arquitecturas', ARQUITECTURAS_KEY, 'Otras (patrones)')],
@@ -616,6 +616,7 @@ export const TESTING_ADVANCED_REF = new Map<string, Referencia>([
     [Keys.TESTING_ADVANCED_COSTS, new Referencia('https://fastercapital.com/es/contenido/Costo-de-las-pruebas--como-calcular-el-costo-de-verificar-la-calidad-o-el-rendimiento-de-un-producto-o-sistema.html', 'Costos del Testing', TESTING_ADVANCED_KEY, 'Costos', '2025/01/04')],
     [Keys.TESTING_ADVANCED_ISOLATION, new Referencia('https://mrslavchev.com/2018/08/03/hindsight-lessons-about-automation-test-isolation-principle/', 'Aislamiento de pruebas', TESTING_ADVANCED_KEY, 'Aislamiento', '2025/02/02')],
     [Keys.TESTING_ADVANCED_CHARGE, new Referencia('https://www.headspin.io/blog/best-performance-testing-tools', 'Pruebas de carga', TESTING_ADVANCED_KEY, 'Performance', '2025/02/11').addRelatedItems(Keys.ANALISIS_DATA_DSL, Keys.NUBE_OBSERVABILIDAD, Keys.META_CARACTERISTICAS_MEMORY_SAFETY, Keys.VERSIONAMIENTO_LICENSES)],
+    [Keys.TESTING_ADVANCED_ARCH_UNIT, new Referencia('https://www.baeldung.com/java-archunit-intro', 'Tests sobre la Arquitectura', TESTING_ADVANCED_KEY, 'ArchUnit', '2025/03/06').addRelatedItems(Keys.META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL, Keys.ARQUITECTURAS_IMPORTANT_CONCEPTS, Keys.ARQUITECTURAS_MVC, Keys.ESTRATEGIAS_DESARROLLO_DDD)],
 ]);
 
 export const REFACTORING_KEY = 'Refactorizacion';

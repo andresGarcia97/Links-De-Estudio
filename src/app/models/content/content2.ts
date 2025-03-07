@@ -2232,6 +2232,25 @@ export const TESTING_ADVANCED =
                 '<strong>- Gatling:</strong> Open-source con scripts <em>DSL</em> compatibles con Scala y Java, con un enfoque asincronico de alto rendimiento ',
                 '<strong>- K6:</strong> Open-source sin interfaz grafica, pero con scripts simples y eficientes, especialmente en entornos de la nube ',
                 '<strong>- BlazeMeter:</strong> Basado en la nube como una extensión avanzada de Jmeter para empresas, con una gran compatibilidad de protocolos e integraciones ',
-
+            ]),
+        new Item(Keys.TESTING_ADVANCED_ARCH_UNIT,
+            [
+                '- La relación entre arquitectura y mantenibilidad es un tema de estudio en la industria del software ',
+                '- Siempre puede existir codigo que no se adhiera a nuestras reglas arquitectonicas ó que este fuera de contexto ',
+                '- En este caso dentro del amplio contexto que involucra la arquitectura, hace referencia a la organización en paquetes de nuestro codigo ',
+                '',
+                '- En una arquitectura basica <strong>MVC</strong> se pueden encontrar las siguientes reglas en base a solamente como estan organizadas las carpetas ',
+                ' - La capa de presentación solo puede depender del servicio ',
+                ' - La capa de servicio solo puede depender de las clases de persistencia ',
+                ' - La capa de persistencia no puede depender de nadie más ',
+                '',
+                '- De manera que se pueden crear reglas en que cierto paquete solo contenga clases de otro ó otros paquetes determinados ',
+                '- Las clases de los frameworks usados y del lenguaje en si, suelen excluirse ya que estas son transversales a todo el proyecto ',
+                '- Aunque tambien pueden existir capas que no pueden contener dependencias externas de ningun tipo, como el dominio en <strong>DDD</strong>',
+                '',
+                '<strong>Casos de Uso comunes</strong>',
+                '- Buscar problemas de dependencias ciclicas   - Definir capas y que capas pueden usarse entre si',
+                '- Validar estandares de nombramiento          - Verificar clases deprecadas para limpieza',
+                '- Uso de anotaciones indebidas                - Mantener convenciones de codigo',
             ])
     ];
