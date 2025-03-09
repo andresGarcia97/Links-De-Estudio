@@ -107,6 +107,7 @@ export const PATRONES_STRANGLER_FIG = 'stranglerFig';
 export const PATRONES_CLOUD_DESIGN_PATTERNS = 'patternsCloud';
 export const PATRONES_ENRICHED_MODEL = 'enrichedModel';
 export const PATRONES_OUTBOX = 'outbox';
+export const PATRONES_UNIT_OF_WORK = 'unitOfWork';
 export const NUBE_CAP_TEOREMA = 'capTeorema';
 export const NUBE_FALACIES_DYSTRIBUTED_SYSTEMS = 'falaciesDistributedSystems';
 export const NUBE_OBSERVABILIDAD = 'observabilidad';

@@ -340,6 +340,14 @@ export const PATRONES =
                 '- Mantiene la consistencia de los datos y no se pierden eventos sin al menos haberse reintentado ',
                 '- Se agrega complejidad ya que se deben guardar y actualizar los mensajes antes y despues del envio ',
                 '- Tambien se gasta más espacio debido a la necesidad de almacenar los mensajes y ralentiza el sistema ',
+            ]),
+        new Item(Keys.PATRONES_UNIT_OF_WORK,
+            [
+                '- Rastrea los cambios de los objetos durante las transacciones y confirma todos los cambios como una sola unidad(Atomicidad) ',
+                ' - garantizando la consistencia y la reducción de las operaciones al agrupar todo ',
+                '- Especialmente util cuando los cambios se hacen individualmente, pero a nivel de negocio se considera un solo movimiento ',
+                '- Esta coordinación tambien es necesaria cuando se trabaja con algun <strong>ORM</strong>',
+                '- Este patron suele usarse en <strong>DDD</strong> para manejar temas de infrastructura y transacciones ademas de otros como Repository ',
             ])
     ];
 
