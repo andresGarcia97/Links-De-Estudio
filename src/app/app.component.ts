@@ -26,7 +26,6 @@ const colorNavyBlue = '#1976d2';
   selector: 'app-root',
   templateUrl: './app.component.html'
 })
-
 export class AppComponent implements OnInit {
   
   buttonChangueMode = false;
@@ -35,12 +34,9 @@ export class AppComponent implements OnInit {
   constructor(private meta: Meta, private router: Router) {}
   
   ngOnInit(): void {
-    const now = new Date();
-    if(now.getHours() >= 19 || now.getHours() <= 5) {
-      this.changueMode();
-      return;
-    }
+    this.setModeConfig();
     this.setColorAdressBar();
+    this.saveStateChangeMode();
   }
 
   porciento: any = porcentaje.subscribe((valor) => {
@@ -52,25 +48,53 @@ export class AppComponent implements OnInit {
   shareTwitter = `https://twitter.com/intent/tweet?text=Una gran fuente de repaso para Programadores&url=${this.domain}`;
   shareFacebook = `https://www.facebook.com/sharer/sharer.php?u=${this.domain}`;
 
-  public changueMode(): void {
-    this.buttonChangueMode = !this.buttonChangueMode;
+  public setModeConfig(): void {
+
+    const savedMode = localStorage.getItem('darkMode');
+    if (savedMode !== null) {
+      this.buttonChangueMode = savedMode === 'true';
+      if (this.buttonChangueMode) {
+        this.changueMode(false);
+      }
+    }
+    else {
+      const now = new Date();
+      if (now.getHours() >= 19 || now.getHours() <= 5) {
+        this.changueMode(false);
+      }
+    }
+
+    this.saveStateChangeMode();
+  }
+
+  public saveStateChangeMode(): void {
+    localStorage.setItem('darkMode', this.buttonChangueMode.toString());
+  }
+
+  public changueMode(setModeManual: boolean): void {
+
+    if(setModeManual){
+      this.buttonChangueMode = !this.buttonChangueMode;
+    }
+
     const body = document.body;
     body.classList.toggle('oscuro');
     this.updateColorAdressBar();
+    this.saveStateChangeMode();
   }
 
   public setColorAdressBar(): void {
-    const setColorAddressBar = this.buttonChangueMode ? colorNavyBlue : colorSelectiveYellow;
-    this.meta.addTag({ name: 'theme-color', content: setColorAddressBar });
+    const colorAddressBar = this.buttonChangueMode ? colorNavyBlue : colorSelectiveYellow;
+    this.meta.addTag({ name: 'theme-color', content: colorAddressBar });
   }
 
   public updateColorAdressBar(): void {
-    const updateColorAddressBar = this.buttonChangueMode ? colorNavyBlue : colorSelectiveYellow;
-    this.meta.updateTag({ name: 'theme-color', content: updateColorAddressBar });
+    const colorAddressBar = this.buttonChangueMode ? colorNavyBlue : colorSelectiveYellow;
+    this.meta.updateTag({ name: 'theme-color', content: colorAddressBar });
   }
 
   public routeTo(component: string): void {
-    this.router.navigateByUrl(`/${component}`)
+    this.router.navigateByUrl(`/${component}`);
   }
 
 }
