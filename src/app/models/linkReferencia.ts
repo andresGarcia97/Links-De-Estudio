@@ -252,7 +252,7 @@ export const CONTAINERS = new Map<string, Referencia>([
     ['containers', new Referencia('https://aulasoftwarelibre.github.io/taller-de-docker/containers/', '¿ Que es un contenedor ?', CONTENEDORES_KEY, 'Contenedores')],
     ['volumes', new Referencia('https://www.josedomingo.org/pledin/2016/05/gestion-del-almacenamiento-en-docker', '¿ Que es un volumen ?', CONTENEDORES_KEY, 'Volumenes')],
     //['network', new Referencia('https://dockertips.com/algo_sobre_redes', 'Manejo de redes en Docker', CONTENEDORES_KEY, 'Redes')],
-    ['network', new Referencia('https://docs.docker.com/network/', 'Redes en Docker', CONTENEDORES_KEY, 'Redes', '', '2024/04/06')],
+    [Keys.CONTENEDORES_REDES, new Referencia('https://docs.docker.com/network/', 'Redes en Docker', CONTENEDORES_KEY, 'Redes', '2024/04/06', '2025/03/09')],
     ['file', new Referencia('https://docs.docker.com/develop/develop-images/dockerfile_best-practices/', 'Construcción de imagenes', CONTENEDORES_KEY, 'Docker File')],
     //['compose', new Referencia('https://dockertips.com/utilizando-docker-compose#:~:text=Docker%20Compose%20es%20una%20herramienta%20que%20permite%20simplificar%20el%20uso%20de%20Docker.&text=En%20vez%20de%20utilizar%20Docker,Engine%20a%20realizar%20tareas%2C%20programaticamente', 'Manejo del docker-compose', CONTENEDORES_KEY, 'Docker Compose')],
     ['compose', new Referencia('https://docs.docker.com/compose/intro/features-uses/', 'Orquestación con Docker Compose', CONTENEDORES_KEY, 'Docker Compose', '', '2024/04/06')],

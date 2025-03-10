@@ -93,6 +93,7 @@ export const AGILES_STAR = 'STAR';
 export const CONTENEDORES_ORCHESTRATION = 'containerOrchestation';
 export const CONTENEDORES_SECURE_ORCHESTRATION = 'secureOrchestration';
 export const CONTENEDORES_DOCKER = 'docker';
+export const CONTENEDORES_REDES = 'containerNetwork';
 export const CONTENEDORES_ARQUITECTURE = 'arquitectureDocker';
 export const PATRONES_DEFINITION = 'definicionPatrones';
 export const PATRONES_GOF = 'GOF';
