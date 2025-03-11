@@ -1298,12 +1298,20 @@ export const CONTENEDORES =
                 '<strong>- WORKDIR</strong> Indica el directorio donde trabajara la aplicación, y se recomienda el uso de rutas absolutas para este ',
                 '<strong>- ONBUILD</strong> Son comandos que se ejecutaran una vez terminada la construcción de la imagen principal ',
             ]),
-        new Item('compose',
+        new Item(Keys.CONTENEDORES_DOCKER_COMPOSE,
             [
                 '- Docker Compose permite simplificar y administrar los contenedores por medio de archivos YAML ',
                 '- Esto permite conectar y administrar a los contenedores y sus puertos, volumenes, configuraciones, etc.. ',
                 '- Se puede usar con Dockerfiles previamente creados, o especificar todo directamente en el archivo ',
-                '- Mejora la portabilidad entre ambientes, y es ampliamente usado y soportado por la comunidad'
+                '- Mejora la portabilidad entre ambientes, y es ampliamente usado y soportado por la comunidad',
+                '- En Compose V1 era necesario especificar la versión del archivo, pero desde Compose V2 ya no es necesario gracias a una estandarización ',
+                '',
+                '<strong>Compose Spec:</strong>',
+                '<strong>- Services:</strong> Concepto abstracto que se ejecuta en una plataforma, con la misma imagen y configuración n veces ',
+                '<strong>- Networks:</strong> Los servicios se comunican entre si, gracias a una capa de abstracción capaz de establecer comunicación entre las direcciones IP',
+                '<strong>- Volumes:</strong> Los servicios almacenan o comparten datos entre si, con un sistema de archivos global ',
+                '<strong>- Configs:</strong> Información en tiempo de ejecución requerida por los servicios, como parametros y configuraciones de la aplicación ',
+                '<strong>- Secrets</strong> Son configuraciones que suele ser información sensible, como conexiones a bases de datos y credenciales de usuarios ',
             ]),
         new Item('kubernetes',
             [
