@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { BUENAS_PRACTICAS } from 'src/app/models/content/content2';
+import { BUENAS_PRACTICAS } from 'src/app/models/content/content6';
 import { ANALISIS_KEY, BUENAS_PRACTICAS_REF, CALIDAD_KEY, LinkReferencia, MALAS_PRACTICAS_KEY, PRINCIPIOS_KEY }
 from 'src/app/models/linkReferencia';
 
