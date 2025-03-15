@@ -45,7 +45,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.PATRONES_UNIT_OF_WORK;
+export const LAST_ITEM = Keys.MICROSERVICES_DISTRIBUTED_TRANSACTIONS;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -455,7 +455,7 @@ export const APIS_REF = new Map<string, Referencia>([
     ['arquitecturalApiStyles', new Referencia('https://www.linkedin.com/feed/update/urn:li:activity:7095365669969350656/', 'Estilos de Arquitectura API', APIS_KEY, 'Estilos de Arquitectura API', '2023/09/08')],
     ['uri', new Referencia('https://www.techtarget.com/whatis/definition/URI-Uniform-Resource-Identifier', 'Uniform Resource Identifier', APIS_KEY, 'URI', '2023/11/03')],
     [Keys.APIS_TESTING, new Referencia('https://blog.bytebytego.com/p/ep83-explaining-9-types-of-api-testing#%C2%A7explaining-types-of-api-testing', 'API Testing', APIS_KEY, 'Testing in APIs', '2023/11/13')],
-    ['apiIdempotencia', new Referencia('https://blog.bitsrc.io/design-an-idempotent-api-in-2024-d4a3cf8d8bf2', 'APIs Idempotentes', APIS_KEY, 'Idempotencia', '2024/02/17')],
+    [Keys.APIS_IDEMPOTENCIA, new Referencia('https://blog.bitsrc.io/design-an-idempotent-api-in-2024-d4a3cf8d8bf2', 'APIs Idempotentes', APIS_KEY, 'Idempotencia', '2024/02/17')],
     [Keys.APIS_REST_VS_MESSAGING, new Referencia('https://solace.com/blog/experience-awesomeness-event-driven-microservices/', 'REST VS Messaging & Microservicios', APIS_KEY, 'REST VS Messaging', '2024/03/15')],
     [Keys.APIS_API_GOVERNANCE, new Referencia('https://swagger.io/resources/articles/best-practices-in-api-governance/', 'Gobernanza', APIS_KEY, 'Gobernanza', '2024/06/01')],
     [Keys.APIS_API_FIRST, new Referencia('https://www.postman.com/api-first/', 'API-First', APIS_KEY, 'API-First', '2024/09/13').addRelatedItem(Keys.VERSIONAMIENTO_LICENSES_AND_DATA)],
@@ -512,7 +512,8 @@ export const PATRONES_REF = new Map<string, Referencia>([
     [Keys.PATRONES_PERSISTENCE_PATTERNS, new Referencia('https://www.infoq.com/articles/architecting-java-persistence-patterns-and-strategies/', 'Persistencia & manejo de datos', PATRONES_KEY, 'Persistencia & Datos', '', '2024/05/26').addRelatedItems(Keys.POO_POO, Keys.POO_INMUTABILITY, Keys.PARADIGMAS_PARADIGMA_DATOS)],
     [Keys.PATRONES_ANTI_PATTERNS, new Referencia('https://sg.com.mx/revista/11/anti-patrones-la-mejor-forma-hacer-un-pesimo-sistema-software', 'Antipatrones, Desarrollo', PATRONES_KEY, 'Anti Patrones, Desarrollo')],
     ['dobleDespacho', new Referencia('https://blog.nicopaez.com/2016/11/09/una-alternativa-al-double-dispatch/', 'Patron doble despacho', PATRONES_KEY, 'Doble despacho')],
-    ['patronSaga', new Referencia('https://unpocodejava.com/2020/01/02/que-es-el-patron-saga/', 'Patron Saga', PATRONES_KEY, 'Patron saga')],
+    //[Keys.PATRONES_SAGA, new Referencia('https://unpocodejava.com/2020/01/02/que-es-el-patron-saga/', 'Patron Saga', PATRONES_KEY, 'Patron saga')],
+    [Keys.PATRONES_SAGA, new Referencia('https://docs.aws.amazon.com/es_es/prescriptive-guidance/latest/cloud-design-patterns/saga.html', 'Patron Saga', PATRONES_KEY, 'Patron Saga', '', '2025/03/14').addRelatedItems(Keys.ANALISIS_SINGLE_POINT_OF_FAILURE, Keys.APIS_IDEMPOTENCIA)],
     [Keys.PATRONES_CQRS, new Referencia('https://learn.microsoft.com/es-mx/azure/architecture/patterns/cqrs', 'Patron CQRS', PATRONES_KEY, 'Patron CQRS', '', '2024/10/18')],
     ['patronUndoRedo', new Referencia('https://medium.com/dottech/implementando-undo-redo-con-ngrx-o-redux-f8ef5de535ef', 'Patron Undo-Redo', PATRONES_KEY, 'Patron undo-redo')],
     [Keys.PATRONES_TYPES, new Referencia('https://www.javiergarzas.com/2014/08/tipos-patrones-software.html', 'Tipos de patrones', PATRONES_KEY, 'Tipos de Patrones')],
@@ -875,4 +876,5 @@ export const MICRO_SERVICES_REF = new Map<string, Referencia>([
     [Keys.MICROSERVICES_CACHE_FAILS, new Referencia('https://www.linkedin.com/posts/bytebytego_systemdesign-coding-interviewtips-activity-7296767687978827776-Dizz/', 'Fallos del cache', MICRO_SERVICES_KEY, 'Fallos del cache', '2025/02/22').addRelatedItems(Keys.META_CARACTERISTICAS_CACHE, Keys.PERSISTENCY_ADVANCED_SCALING_DB)],
     [Keys.MICROSERVICES_DISTRIBUTED_TRACING, new Referencia('https://www.dynatrace.com/news/blog/what-is-distributed-tracing/', 'Tracing Distribuido', MICRO_SERVICES_KEY, 'Tracing Distribuido', '2025/02/23').addRelatedItems(Keys.NUBE_OBSERVABILIDAD, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.BUENAS_PRACTICAS_DEBUGGING, Keys.BUENAS_PRACTICAS_LOGGING)],
     [Keys.MICROSERVICES_DEAD_LETTER_QUEUE, new Referencia('https://www.geeksforgeeks.org/dead-letter-queue-system-design/', 'Dead Letter Queue - DLQ & DLT', MICRO_SERVICES_KEY, 'Dead Letter Queue', '2025/02/26').addRelatedItem(Keys.ANALISIS_QUEUES_SYSTEM_DESIGN)],
+    [Keys.MICROSERVICES_DISTRIBUTED_TRANSACTIONS, new Referencia('https://gist.github.com/rponte/9477858e619d8b986e17771c8be7827f', 'Transacciones Distribuidas', MICRO_SERVICES_KEY, 'Transacciones Distribuidas', '2025/03/14').addRelatedItems(Keys.NUBE_TWO_PHASE_COMMIT, Keys.PERSISTENCY_ACID, Keys.PATRONES_SAGA, Keys.NUBE_OBSERVABILIDAD, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.PERSISTENCY_CONSISTENCY)],
 ]);
