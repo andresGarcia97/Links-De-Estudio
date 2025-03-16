@@ -1510,12 +1510,19 @@ export const CD_CI_INFRAESTRUCTURE =
                 '<strong>Despliegue continuo:</strong> Es la automatización de las entregas con la menor interferencia humana posible ',
                 '- Todo cambio activa diferentes acciones, pueden ir desde acciones como correr las pruebas, hasta desplegar en un ambiente especifico '
             ]),
-        new Item('devops',
+        new Item(Keys.CD_CI_DEV_OPS,
             [
                 '- Es una metodologia para crear software de una manera más eficiente, con mayor calidad y menos problemas en producción ',
                 '- Este modelo no consiste en aumentar las responsabilidades del desarrollador, todo lo contrario ',
-                '- Ya que la meta es que cada despliegue sea automatico, reduciendo el tiempo de corrección de errores, aumentando la productividad ',
-                '- La automatización de las tareas y las pruebas permite que el codigo en desarrollo fluya rapidamente a producción ',
+                '- Esta integración entre el codigo desarrollado y su respectivo despliegue(releases) debe ser transparente y colaborativa ',
+                '- Ya que la meta es que cada despliegue sea automatico, reduciendo el tiempo de corrección de errores y aumentando la productividad ',
+                '- La automatización de tareas como calidad, compilación, pruebas, etc.. permite que el codigo en desarrollo fluya rapidamente a producción ',
+                '',
+                '- Aunque tecnicamente no es un perfil, si no un conjunto de practicas y conocimientos que se dan en el equipo, las más comunes son: ',
+                '<strong>- Desarrollo:</strong> No debe ser un experto, pero si tener una visión general o tener conocimientos basicos es de gran ayuda ',
+                '<strong>- Quality Assurance:</strong> Entender los diferentes tipos de tests que se pueden hacer y cuales son necesarios de acuerdo a la etapa del software ',
+                '<strong>- Seguridad:</strong> Una gran olvidada y por lo cual se pagan las consecuencias, dependencias vulnerables e infraestructura mal configurada ',
+                '<strong>- Administración de sistemas:</strong> Poder encargarse de toda la instalación, configuración, mantenimiento, supervisión de la infraestructura no es tarea facil ',
             ]),
         new Item(Keys.CD_CI_IAS_CODE,
             [
