@@ -1182,19 +1182,21 @@ export const PEOPLE =
                 '- Motivación interna, para asegurar la priorización del cumplimiento, y la entrega de valor a largo plazo ',
                 '- Reduzca el estres, evitando grandes cantidades de <strong>Cortisol</strong>, y generar una resiliencia hacia el estres cronico ',
             ]),
-        new Item('ona',
+        new Item(Keys.PEOPLE_ONA,
             [
                 '- En las empresas de creación de productos intelectuales, que manejan grupos y diferentes tipos de personal, ',
                 ' - y que tienen estructuras jerarquicas tradicionales, han demostrado problemas debido a su complejidad y cambio constantes ',
                 '',
-                '- Esta herramienta ofrece una vision profunda de los patrones de las relaciones e interacciones, dentro de nuestras empresas ',
-                ' - permitiendo visualiazar el flujo de la información y la colaboración entre areas ',
+                '- Esta herramienta ofrece una vision profunda de los patrones de las relaciones e interacciones, dentro de las empresas ',
+                ' - permitiendo visualizar el flujo de la información y la colaboración entre areas ',
                 '',
                 '- <em>Rob Cross</em> uno de los pioneros en este campo, destaco como esta puede actuar como una radiografia de los entresijos organizacionales ',
-                ' - revelando patrones invisibles que afectan directamente la efectividad de nuestra empresa, y como influye la participación de los empleados ',
+                ' - revelando patrones invisibles que afectan directamente la efectividad de la empresa, y como influye la participación de los empleados ',
                 '',
                 '- En muchas organizaciones, un analisis ONA, ayuda a las personas encargadas a diseñar y cambiar, la organización de las empresas, ',
-                ' - de manera más rapidas y adaptable, enfocandose en las areas por mejorar '
+                ' - de manera más rapida y adaptable, enfocandose en las areas por mejorar ',
+                '',
+                '- El uso de ONA es indicativo de que tan agil es una empresa, y que tanto las relaciones humanas ayudan al flujo de información a traves de toda la organización '
             ]),
         new Item(Keys.PEOPLE_PROCESS_BLOAT,
             [
