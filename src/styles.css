@@ -527,7 +527,7 @@ pre::selection {
   fill: var(--color-selective-yellow);
 }
 
-.github-star-badge {
+.star-badge {
   color: var(--color-night);
   display: flex;
   align-items: center;
@@ -538,11 +538,11 @@ pre::selection {
   margin: 0 16px;
 }
 
-.github-star-badge:hover {
+.star-badge:hover {
   background-color: var(--color-white);
 }
 
-.github-star-badge .material-icons {
+.star-badge .material-icons {
   height: 16px;
   width: 16px;
 }
@@ -871,7 +871,7 @@ button:disabled:hover {
     margin: 0 8px;
   }
 
-  .github-star-badge {
+  .star-badge {
     margin: 0 14px;
   }
 
