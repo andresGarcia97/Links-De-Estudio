@@ -45,7 +45,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.MICROSERVICES_PROBLEMS;
+export const LAST_ITEM = Keys.PATRONES_INBOX;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -512,7 +512,7 @@ export const PATRONES_REF = new Map<string, Referencia>([
     //['dao', new Referencia('https://www.genbeta.com/desarrollo/patrones-de-diseno-active-record-vs-dao', 'Data Acess Object', PATRONES_KEY, 'DAO & Active Record')],
     [Keys.PATRONES_PERSISTENCE_PATTERNS, new Referencia('https://www.infoq.com/articles/architecting-java-persistence-patterns-and-strategies/', 'Persistencia & manejo de datos', PATRONES_KEY, 'Persistencia & Datos', '', '2024/05/26').addRelatedItems(Keys.POO_POO, Keys.POO_INMUTABILITY, Keys.PARADIGMAS_PARADIGMA_DATOS)],
     [Keys.PATRONES_ANTI_PATTERNS, new Referencia('https://sg.com.mx/revista/11/anti-patrones-la-mejor-forma-hacer-un-pesimo-sistema-software', 'Antipatrones, Desarrollo', PATRONES_KEY, 'Anti Patrones, Desarrollo')],
-    ['dobleDespacho', new Referencia('https://blog.nicopaez.com/2016/11/09/una-alternativa-al-double-dispatch/', 'Patron doble despacho', PATRONES_KEY, 'Doble despacho')],
+    //['dobleDespacho', new Referencia('https://blog.nicopaez.com/2016/11/09/una-alternativa-al-double-dispatch/', 'Patron doble despacho', PATRONES_KEY, 'Doble despacho')],
     //[Keys.PATRONES_SAGA, new Referencia('https://unpocodejava.com/2020/01/02/que-es-el-patron-saga/', 'Patron Saga', PATRONES_KEY, 'Patron saga')],
     [Keys.PATRONES_SAGA, new Referencia('https://docs.aws.amazon.com/es_es/prescriptive-guidance/latest/cloud-design-patterns/saga.html', 'Patron Saga', PATRONES_KEY, 'Patron Saga', '', '2025/03/14').addRelatedItems(Keys.ANALISIS_SINGLE_POINT_OF_FAILURE, Keys.APIS_IDEMPOTENCIA)],
     [Keys.PATRONES_CQRS, new Referencia('https://learn.microsoft.com/es-mx/azure/architecture/patterns/cqrs', 'Patron CQRS', PATRONES_KEY, 'Patron CQRS', '', '2024/10/18')],
@@ -522,7 +522,8 @@ export const PATRONES_REF = new Map<string, Referencia>([
     ['antipatronesPM', new Referencia('https://sourcemaking.com/antipatterns', 'Antipatrones, Product Management', PATRONES_KEY, 'Anti Patrones, PM')],
     [Keys.PATRONES_CLOUD_DESIGN_PATTERNS, new Referencia('https://learn.microsoft.com/es-mx/azure/architecture/patterns/', 'Patrones Para la Nube', PATRONES_KEY, 'Patrones Nube', '2024/06/02')],
     [Keys.PATRONES_ENRICHED_MODEL, new Referencia('https://sacavix.com/2024/05/modelos-anemicos-vs-enriquecidos/', 'Modelo Enriquecido', PATRONES_KEY, 'Modelo Enriquecido', '2024/12/15').addRelatedItems(Keys.MALAS_PRACTICAS_ANEMIC_DOMAIN, Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.POO_INMUTABILITY, Keys.POO_POO)],
-    [Keys.PATRONES_OUTBOX, new Referencia('https://www.baeldung.com/cs/outbox-pattern-microservices', 'Patron OutBox', PATRONES_KEY, 'Patron outbox', '2025/01/12').addRelatedItems(Keys.PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL, Keys.APIS_REST_VS_MESSAGING)],
+    [Keys.PATRONES_OUTBOX, new Referencia('https://www.baeldung.com/cs/outbox-pattern-microservices', 'Patron Outbox', PATRONES_KEY, 'Patron Outbox', '2025/01/12').addRelatedItems(Keys.PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL, Keys.APIS_REST_VS_MESSAGING)],
+    [Keys.PATRONES_INBOX, new Referencia('https://medium.com/hprog99/overcoming-message-delivery-challenges-in-distributed-systems-a-comprehensive-look-at-outbox-and-a669e5f21898', 'Patron Inbox', PATRONES_KEY, 'Patron Inbox', '2025/03/18').addRelatedItem(Keys.APIS_IDEMPOTENCIA)],
     [Keys.PATRONES_UNIT_OF_WORK, new Referencia('https://java-design-patterns.com/patterns/unit-of-work/', 'Unit of Work', PATRONES_KEY, 'Unit of Work', '2025/03/09').addRelatedItems(Keys.PERSISTENCY_ACID, Keys.PERSISTENCY_ADVANCED_ORM, Keys.ESTRATEGIAS_DESARROLLO_DDD)],
 ]);
 
