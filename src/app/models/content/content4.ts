@@ -1552,12 +1552,6 @@ export const POO =
                 '- No necesitan ser instanciados para ser usados, solo basta con saber en que clase fueron implementados(metodos), declarados(atributos)',
                 '- Si es un metodo, debe estar implementado por obligación, no puede ser abstracto '
             ]),
-        new Item('sobrecarga',
-            [
-                '- Algunos lenguajes permite sobrecargar los metodos y constructores, siempre y cuando este no sea cohibido ',
-                '- El nombre sera el mismo pero deben recibir una cantidad/tipos diferentes de parametros o retorno, cambiando la firma del metodo ',
-                '- Deben tener diferencias entre si, de lo contrario el compilador sacara error ',
-            ]),
         new Item('acoplamiento',
             [
                 '<strong>Aferente:</strong> Hace referencia a una clase con un alto grado de responsabilidad y una jerarquia bastante alta',
@@ -1631,23 +1625,29 @@ export const POO =
             ]),
         new Item(Keys.POO_POLIMORFISMO,
             [
-                '- El polimorfismo es la capacidad de adoptar diferentes comportamientos ante un mismo estimulo, dependiendo de si se es un tipo o un super tipo ',
+                '- El <strong>polimorfismo</strong> es la capacidad de adoptar diferentes comportamientos ante un mismo estimulo, dependiendo del tipo que sea ',
                 '- Es una relajación del sistema de tipos en lenguajes tipados, además de que es un consecuencia directa de la herencia ',
                 '- Este se puede lograr de diversas maneras, no solo con la herencia, como el uso de interfaces, sobrecarga de metodos, uso de genericos ',
-                '- No deben confundirse la Sobrecarga(Overloading), con la Sobreescritura(Overriding), ya que son diferentes formas de polimorfismo ',
-                '- Al estar tan ligado a la herencia, es inevitable tener en cuenta la relación de <em>Ser/Tener</em>, asi se puede evitar el mal uso de la herencia '
+                '&bull; <strong>Sobrecarga(Overloading):</strong> Diferentes metodos dentro de una clase, con el mismo nombre pero una firma diferente, se da en tiempo de compilación ',
+                '&bull; <strong>Sobreescritura(Overriding):</strong> Redefinición de los metodos en la subclase heredados/implementados de la superclase, se da en tiempo de ejecución ',
+                '',
+                '- Dada su relación directa con la herencia, el uso de <em>Ser/Tener</em> durante el diseño, puede evitarnos el mal uso de la herencia ',
+                '- La idea fundamental es proveer un comportamiento comun en la clase base, y que las clases derivadas provean un comportamiento más especializado ',
+                '- El polimorfismo permite crear sistemas flexibles y reutilizables, pero este no deberia de violar el Principio de Sustitución de Liskov ',
+                '- <strong>LSP</strong> garantiza que la sustitución de los padres por sus hijos sea segura y predecible, de manera que los nuevos comportamientos siempre esten alineados ',
             ]),
-        new Item('herVScomp',
+        new Item(Keys.POO_HERENCIA_COMPOSICION,
             [
-                '<strong>        Caso                Diseño basado en Herencia                          Diseño basado en Composición</strong>',
-                ' Inicio del desarrollo        Más rapido                                           Más lento                               ',
-                ' Diseño del software          Facil pero pobre                                     Más complejo                            ',
-                ' Efectos no deseados          Propicia                                             Reducidos                               ',
-                ' Adaptabilidad                Entre más niveles más complejidad                    Facil de cambiar (instancias)           ',
-                ' Testing                      Entre más sobreescritura más dificil de cambiar      Piezas acotadas y fronteras claras      ',
-                ' Extension                    Debe hacerse con cuidado de no extender "basura"     Facil incorporación de piezas nuevas    ',
-                ' Polimorfismo                 No es necesario ningun mecanismo extra               Se puede lograr mediante interfaces     ',
-                ' Crecimiento                  Dificil, al heredar "basura" junto a lo nuevo        Se incorporan o extienden nuevas piezas '
+                '<strong>        Caso                Diseño basado en Herencia                          Diseño basado en Composición</strong> ',
+                ' Inicio del desarrollo        Más rapido                                           Más lento                                 ',
+                ' Diseño del software          Facil pero pobre                                     Más complejo                              ',
+                ' Efectos no deseados          Propicia                                             Reducidos                                 ',
+                ' Adaptabilidad                Entre más niveles más complejidad                    Facil de cambiar (instancias)             ',
+                ' Testing                      Entre más sobreescritura más dificil de cambiar      Piezas acotadas y fronteras claras        ',
+                ' Extension                    Debe hacerse con cuidado de no extender "basura"     Facil incorporación de piezas nuevas      ',
+                ' Polimorfismo                 No es necesario ningun mecanismo extra               Se puede lograr mediante interfaces       ',
+                ' Crecimiento                  Dificil, al heredar "basura" junto a lo nuevo        Se incorporan o extienden nuevas piezas   ',
+                ' Relacion/Cardinalidad        Ser <em>Es un/una</em>, 1:1                                   Tiene <em>Tiene un/una</em>, N:M '
             ]),
         new Item(Keys.POO_ENLACES,
             [

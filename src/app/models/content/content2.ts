@@ -734,11 +734,15 @@ export const ANALISIS =
 
 export const COMPILACION =
     [
-        new Item('compilacion',
+        new Item(Keys.COMPILACION_COMPILACION,
             [
-                ' - Es el proceso de pasar un lenguaje de programación a otro formato de manera equivalente ',
-                ' - Generalmente es un proceso de lenguajes de alto nivel a bajo nivel ',
-                ' - Durante el proceso el codigo se puede optimizar o añadir más procesos ',
+                '- Es el proceso de pasar un lenguaje de programación a otro formato de manera equivalente ',
+                '- Generalmente es un proceso de lenguajes de alto nivel a bajo nivel, pasando de un programa a un conjunto de instrucciones ejecutable ',
+                '- Durante el proceso el codigo se puede optimizar o añadir más procesos ',
+                '',
+                '- Suele haber 2 maneras de hacerlo:',
+                '<strong>Compilacion Anticipada(ahead-of-time, AOT):</strong> Son invocados tipicamente desde una linea de comandos o dentro de un IDE',
+                '<strong>En tiempo de ejecución(just-in-time, JIT):</strong> Se integran internamente en los entornos de ejecución, adaptandose al entorno para un mejor rendimiento ',
             ]),
         new Item('nivel',
             [
