@@ -361,7 +361,7 @@ export const PATRONES =
                 ' - garantizando la consistencia y la reducción de las operaciones al agrupar todo ',
                 '- Especialmente util cuando los cambios se hacen individualmente, pero a nivel de negocio se considera un solo movimiento ',
                 '- Esta coordinación tambien es necesaria cuando se trabaja con algun <strong>ORM</strong>',
-                '- Este patron suele usarse en <strong>DDD</strong> para manejar temas de infrastructura y transacciones ademas de otros como Repository ',
+                '- Este patron suele usarse en <strong>DDD</strong> para manejar temas de infraestructura y transacciones ademas de otros como Repository ',
             ])
     ];
 
@@ -1847,7 +1847,7 @@ export const MICRO_SERVICES =
                 '- Es un problema clasico de sincronización en los sistemas operativos y sistemas que funcionan con eventos ',
                 '- El problema se define de la siguiente manera, hay un buffer o cola de tamaño fijo, un productor y un consumidor ',
                 '',
-                '<strong>Productor:</strong> Crea un elemento y lo agrega al bufer compartido',
+                '<strong>Productor:</strong> Crea un elemento "<em>mensaje</em>" y lo agrega al bufer compartido',
                 '<strong>Mensaje:</strong> Contiene la información producida, ya sea en formato Json, Objetos, numeros, textos, etc.. ',
                 '<strong>Consumidor:</strong> Extrae elementos del buffer y los procesa "<em>consume</em>"',
                 '',

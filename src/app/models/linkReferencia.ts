@@ -45,7 +45,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.PATRONES_INBOX;
+export const LAST_ITEM = Keys.ANALISIS_DELIVERY_GUARANTED;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -99,6 +99,7 @@ export const ANALISIS_REF = new Map<string, Referencia>([
     [Keys.ANALISIS_LIGHT_EVENTS_VS_RICH_EVENTS, new Referencia('https://theburningmonk.com/2024/11/when-to-use-light-events-vs-rich-events-in-event-driven-architectures/', 'Light Events VS Rich Events', ANALISIS_KEY, 'Light/Rich Events', '2024/12/08').addRelatedItems(Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.PERSISTENCY_NORMALIZATION, Keys.ESTRATEGIAS_DESARROLLO_DDD)],
     [Keys.ANALISIS_SYSTEM_DESIGN_I, new Referencia('https://newsletter.systemdesigncodex.com/p/how-to-do-well-in-system-design-interviews', 'System Design I', ANALISIS_KEY, 'System Design I', '2025/02/16').addRelatedItems(Keys.REQUISITOS_FUNCIONALES, Keys.REQUISITOS_NO_FUNCIONALES, Keys.PERSISTENCY_ADVANCED_SQL_NO_SQL, Keys.WEB_USER_XPERIENCE, Keys.PERSISTENCY_ADVANCED_DENORMALIZATION, Keys.PERSISTENCY_NORMALIZATION)],
     [Keys.ANALISIS_SYSTEM_DESIGN_II, new Referencia('https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction', 'System Design II', ANALISIS_KEY, 'System Design II', '2025/02/16').addRelatedItems(Keys.APIS_API_FIRST, Keys.CONTENEDORES_ORCHESTRATION, Keys.CD_CI_IAS_CODE, Keys.HARDWARE_ESCALAMIENTO, Keys.META_CARACTERISTICAS_CACHE, Keys.NUBE_PACELC)],
+    [Keys.ANALISIS_DELIVERY_GUARANTED, new Referencia('https://docs.confluent.io/kafka/design/delivery-semantics.html', 'Delivery Guaranted', ANALISIS_KEY, 'Delivery Guaranted', '2025/03/21').addRelatedItems(Keys.MICROSERVICES_PRODUCER_CONSUMER_PROBLEM, Keys.APIS_IDEMPOTENCIA)],
 ]);
 
 export const ARQUITECTURAS_KEY = 'Arquitecturas';

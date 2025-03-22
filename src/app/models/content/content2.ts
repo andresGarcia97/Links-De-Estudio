@@ -729,6 +729,28 @@ export const ANALISIS =
                 '- Diseño de infraestructura, suelen ser más tecnicas y hacen enfasis en casos especificos que demuestren un gran dominio del tema ',
                 '- Diseño backend(<strong>POO</strong>), se basan en detalles de implementación con lenguajes como Java y C# y evaluan cosas como principios y patrones ',
                 '- Diseño frontened, apuntan a aplicaciones que son visuales y de mucha interacción con los usuarios ',
+            ]),
+        new Item(Keys.ANALISIS_DELIVERY_GUARANTED,
+            [
+                '- En la mensajeria de eventos existen 3 actores principales <strong>Productor</strong> <-> <strong>Broker</strong> <-> <strong>Consumidor</strong> y para que todo funcione correctamente, ',
+                ' - debe existir un acuerdo o protocolo sobre los mensajes, validando que fueron producidos & consumidos ',
+                '',
+                '<strong>Productor</strong>',
+                '<strong>At most once:</strong> Los mensajes se entregan una sola vez, si hay alguna falla los mensajes se pueden perder, ya que nunca reintenta ',
+                ' - de esta manera se obtiene la menor latencia posible ',
+                '<strong>At least once:</strong> Los mensajes se entregan una o más veces, si hay alguna falla los mensajes no se pierden, pero con los reintentos, ',
+                ' - se pueden entregar más de una vez, aca es necesario configurar o tener validaciones para garantizar la idempotencia ',
+                '<strong>Exactly once:</strong> Este comportamiento garantiza que el mensaje se entrega una sola vez, incluso con fallas en el sistema ',
+                ' - esto se puede lograr de diversas maneras y una de ellas es manejar cada mensaje como si fuera una transacción involucrando cada una de las partes ',
+                '',
+                '<strong>Consumidor</strong>',
+                '<strong>At most once:</strong> Lee el conjunto de mensajes y guarda la posición, si el proceso del consumidor falla despues de guardar su posición, ',
+                ' - pero antes de guardar la salida del procesamiento de los mensajes, puede llegar el caso en que haya alguna perdida de mensajes ',
+                '<strong>At least once:</strong> Si el consumidor lee el conjunto de mensajes los procesa y guarda su posición, ',
+                ' - en este caso si el proceso del consumidor falla despues de procesar los mensajes pero antes de guardar la posición, podria darse ',
+                ' - un doble procesamiento, para garantizar la idempotencia de los mensajes se pueden usar llaves unicas y evitar duplicaciones ',
+                '<strong>Exactly once:</strong> El mensaje se entrega una sola vez, para lograr esto se pueden usar transacciones pero todas las partes deben estar configuradas ',
+                ' - para que la transacción se de correctamente ',
             ])
     ];
 

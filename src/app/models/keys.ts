@@ -262,6 +262,7 @@ export const ANALISIS_DOMAIN_EVENTS = 'domainEvents';
 export const ANALISIS_LIGHT_EVENTS_VS_RICH_EVENTS = 'lightEventsVsRichEvents';
 export const ANALISIS_SYSTEM_DESIGN_I = 'systemDesign-I';
 export const ANALISIS_SYSTEM_DESIGN_II = 'systemDesign-II';
+export const ANALISIS_DELIVERY_GUARANTED = 'deliveryGuaranted';
 export const VERSIONAMIENTO_LICENSES = 'licences';
 export const VERSIONAMIENTO_DOCUMENTATION = 'documentation';
 export const VERSIONAMIENTO_LICENSES_AND_DATA = 'licencesAndData';
