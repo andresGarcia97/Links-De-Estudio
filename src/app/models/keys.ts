@@ -114,6 +114,7 @@ export const PATRONES_ENRICHED_MODEL = 'enrichedModel';
 export const PATRONES_OUTBOX = 'outbox';
 export const PATRONES_INBOX = 'inbox';
 export const PATRONES_UNIT_OF_WORK = 'unitOfWork';
+export const PATRONES_CRITERIA = 'patronCriteria';
 export const NUBE_CAP_TEOREMA = 'capTeorema';
 export const NUBE_FALACIES_DYSTRIBUTED_SYSTEMS = 'falaciesDistributedSystems';
 export const NUBE_OBSERVABILIDAD = 'observabilidad';

@@ -362,6 +362,16 @@ export const PATRONES =
                 '- Especialmente util cuando los cambios se hacen individualmente, pero a nivel de negocio se considera un solo movimiento ',
                 '- Esta coordinación tambien es necesaria cuando se trabaja con algun <strong>ORM</strong>',
                 '- Este patron suele usarse en <strong>DDD</strong> para manejar temas de infraestructura y transacciones ademas de otros como Repository ',
+            ]),
+        new Item(Keys.PATRONES_CRITERIA,
+            [
+                '- Cuando se implementa el patron <strong>Repository</strong>, como puede ser en una arquitectura hexagonal ',
+                '- Entre más consultas y funciones se vayan agregando es normal que el Repository sufra una explosión de metodos desmesurada ',
+                ' - que suele surgir en el intento de NO romper el principio de Open/Close, parte de <strong>SOLID</strong>, volviendose necesario usar Criteria ',
+                '- Lo que busca es poder consultar de manera modular y reutilizable con criterios de busqueda flexibles ',
+                '- Asi se pueden realizar busquedas complejas mediante la union de operaciones genericas definidas por el dominio ',
+                '- Para una correcta implementación, deben existir adaptadores que conviertan la consulta expresada de manera generica, ',
+                ' - a un Query listo para ser ejecutado y totalmente compatible con el Motor de BD a usar ',
             ])
     ];
 
