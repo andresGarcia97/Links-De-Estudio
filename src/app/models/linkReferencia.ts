@@ -45,7 +45,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.PATRONES_CRITERIA;
+export const LAST_ITEM = Keys.ARQUITECTURAS_HOW_TO_CHOOSE_IT;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -111,7 +111,8 @@ export const ARQUITECTURAS_REF = new Map<string, Referencia>([
     ['principiosArquitecturas', new Referencia('https://www.genbeta.com/desarrollo/principios-de-una-arquitectura-limpia-mantenible-y-testeable', 'Principios de las arquitecturas', ARQUITECTURAS_KEY, 'Principios')],
     [Keys.ARQUITECTURAS_CLEAN, new Referencia('https://medium.com/@diego.coder/introducci%C3%B3n-a-las-clean-architectures-723fe9fe17fa', 'Arquitecturas Limpias', ARQUITECTURAS_KEY, 'Limpias')],
     //[Keys.ARQUITECTURAS_CAPAS, new Referencia('https://geeks.ms/jkpelaez/2009/05/30/arquitectura-basada-en-capas/', 'Arquitectura a Capas', ARQUITECTURAS_KEY, 'Capas')],
-    [Keys.ARQUITECTURAS_CAPAS, new Referencia('https://blog.hubspot.es/website/que-es-arquitectura-en-capas', 'Arquitectura a Capas', ARQUITECTURAS_KEY, 'Capas', '', '2025/01/12')],
+    //[Keys.ARQUITECTURAS_CAPAS, new Referencia('https://blog.hubspot.es/website/que-es-arquitectura-en-capas', 'Arquitectura a Capas', ARQUITECTURAS_KEY, 'Capas', '', '2025/01/12')],
+    [Keys.ARQUITECTURAS_CAPAS, new Referencia('https://learn.microsoft.com/es-es/dotnet/architecture/modern-web-apps-azure/common-web-application-architectures', 'Arquitectura a Capas', ARQUITECTURAS_KEY, 'Capas', '2025/01/12', '2025/03/26').addRelatedItem(Keys.PATRONES_PERSISTENCE_PATTERNS)],
     ['cliente', new Referencia('https://desarrolloweb.com/articulos/arquitectura-cliente-servidor.html', 'Arquitectura Cliente-Servidor', ARQUITECTURAS_KEY, 'Cliente Servidor')],
     [Keys.ARQUITECTURAS_HEXAGONAL, new Referencia('https://medium.com/@edusalguero/arquitectura-hexagonal-59834bb44b7f', 'Hexagonal', ARQUITECTURAS_KEY, 'Hexagonal', '', '2024/11/24').addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_DDD)],
     ['noHexagonal', new Referencia('https://javiervelezreyes.com/ni-nueva-ni-arquitectura-ni-hexagonal/', 'Ni Nueva, Ni Hexagonal', ARQUITECTURAS_KEY, 'Ni Nueva, Ni hexagonal')],
@@ -127,6 +128,7 @@ export const ARQUITECTURAS_REF = new Map<string, Referencia>([
     [Keys.ARQUITECTURAS_EVENT_DRIVEN, new Referencia('https://medium.com/@alxkm/java-event-driven-architecture-dc456d324ba5', 'Basada en Eventos', ARQUITECTURAS_KEY, 'Basada en Eventos', '2024/06/17').addRelatedItem(Keys.NUBE_OBSERVABILIDAD)],
     [Keys.ARQUITECTURAS_LAYERS_SOFTWARE, new Referencia('https://www.linkedin.com/posts/brijpandeyji_building-software-at-scale-requires-a-clear-activity-7276459295502655488-dLTk/', 'Capas del Software', ARQUITECTURAS_KEY, 'Capas del Software', '2024/12/22').addRelatedItems(Keys.APIS_REST_VS_MESSAGING, Keys.PERSISTENCY_DBMS, Keys.WEB_USER_INTERFACE, Keys.CONTENEDORES_DOCKER, Keys.ANALISIS_MODEL_DOMAIN)],
     [Keys.ARQUITECTURAS_EXPERIMENTATION, new Referencia('https://www.infoq.com/articles/architecture-experimentation/', 'Minima Arquitectura Viable', ARQUITECTURAS_KEY, 'MVA', '2025/01/12').addRelatedItems(Keys.ANALISIS_DATA_MVP, Keys.CD_CI_DEPLOYMENT_PATTERNS, Keys.NEURO_MARKETING_WHAT_IS)],
+    [Keys.ARQUITECTURAS_HOW_TO_CHOOSE_IT, new Referencia('https://appmaster.io/es/blog/como-elegir-la-arquitectura-de-software', '¿ Como escoger una Arquitectura ?', ARQUITECTURAS_KEY, '¿ Como Escogerla ?', '2025/03/25').addRelatedItems(Keys.HARDWARE_ESCALAMIENTO, Keys.MICROSERVICES_FUNDAMENTALS, Keys.NUBE_NATIVE)],
 ]);
 
 export const BUENAS_PRACTICAS_KEY = 'Buenas-Practicas';

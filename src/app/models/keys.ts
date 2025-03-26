@@ -37,6 +37,7 @@ export const ARQUITECTURAS_DESCOMPOSICION_MODULAR = 'descomposicionModular';
 export const ARQUITECTURAS_EVENT_DRIVEN = 'eventDriven';
 export const ARQUITECTURAS_LAYERS_SOFTWARE = 'systemArquitectureSoftwareLayers';
 export const ARQUITECTURAS_EXPERIMENTATION = 'arquitectureExperimentation-MVA';
+export const ARQUITECTURAS_HOW_TO_CHOOSE_IT = 'arquitectureComoEscogerla';
 export const ESTRATEGIAS_DESARROLLO_DDD = 'ddd';
 export const ESTRATEGIAS_DESARROLLO_TDD = 'tdd';
 export const ESTRATEGIAS_DESARROLLO_BDD = 'bdd';
