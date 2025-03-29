@@ -221,12 +221,14 @@ export const TESTING =
 
 export const ANALISIS =
     [
-        new Item('comportamiento',
+        new Item(Keys.ANALISIS_COMPORTAMIENTO,
             [
-                '- Estos modelos se usan para describir a profundidad el comportamiento de un sistema ',
+                '- Estos modelos se usan para describir a profundidad el comportamiento de un sistema, como si es un sistema con base en los datos o en eventos ',
+                '- Estos modelos pueden usarse de manera conjunta o de manera individual, eso depende de la cantidad de detalles necesarios ',
                 '',
-                '<strong>Flujos de datos:</strong> Modelan el procesamiento de los datos del sistema, no solo sirven para saber las entradas y salidad del sistema ',
-                '- Tambien para validaciones con los usuarios y que estos validen los datos y los procesos a nivel interno',
+                '<strong>Flujos de datos:</strong> Modelan el procesamiento de los datos en el sistema, no solo sirven para saber las entradas y salidad del sistema ',
+                '- Son valiosos ya que ayudan a realizar el seguimiento y documentan como los datos asociados siguen un flujo a traves de los componentes del sistema ',
+                '- Tambien ayudan a entablar validaciones con los usuarios, que estos validen los datos y los procesos a nivel interno ',
                 '',
                 '<strong>Maquinas de estado:</strong> Modelan la reacción del evento en cuanto a los estimulos externos/internos ',
                 '- Estos indican los posibles estados de un sistema, y que puede suceder cuando paso un estimulo en especifico ',
@@ -751,6 +753,31 @@ export const ANALISIS =
                 ' - un doble procesamiento, para garantizar la idempotencia de los mensajes se pueden usar llaves unicas y evitar duplicaciones ',
                 '<strong>Exactly once:</strong> El mensaje se entrega una sola vez, para lograr esto se pueden usar transacciones pero todas las partes deben estar configuradas ',
                 ' - para que la transacción se de correctamente ',
+            ]),
+        new Item(Keys.ANALISIS_SYSTEM_THINKING,
+            [
+                '- Los sistemas más complejos y resilientes son organismos vivos, trabajan de manera coordinada, dinamica y fluida ',
+                '- Perciben su entorno, se adaptan al cambio y mantienen un equilibrio, con poco o ningun control centralizado ',
+                '- El pensamiento sistemico nos puede ayudar a crear sistemas "<em>vivos</em>" adaptables y resilientes como en la naturaleza ',
+                '- Los modelos tradicionales suelen tener un pensamiento lineal al cual responde antes los cambios y evoluciona de una manera más rigida ',
+                '',
+                '<strong>Principios</strong>',
+                '- El desarrollo de software es un trabajo en equipo; la arquictectura, el diseño y el codigo deben comunicarse de forma clara e intuitiva ',
+                '- La complejidad es el enemigo, esta debe reducirse lo más posible mediante iteraciones y mejora continua ',
+                '- Escuchar a los expertos nos ayuda a crear aplicaciones que resuelven mejor las necesidades evitando cometer errores por falta de comunicación ',
+                '- La arquitectura es plomeria, si el flujo de datos se detiene, el negocio tambien, los represamientos pueden llegar a ser desastrosos ',
+                '- Mantener los componentes que hacen el trabajo pequeños y los conectores que los comunican claramente definidos ',
+                '- Los mensajes son la carga util, transportando datos e instrucciones por lo que debe ser flexible y ser capaz de ser sincrona/asyncrona ',
+                '- La organización es importante, una adecuada distribución de responsabilidades evita puntos criticos que puedan fallar ',
+                '- La evolución de un sistema es inevitable, diseñar sin tener en cuenta afectara la mantenibilidad y escalabilidad del sistema ',
+                '',
+                '<strong>Caracteristicas</strong>',
+                '- Las personas son parte fundamental ya que el comportamiento se puede ver afectado por estas y viceversa, como en la Ley de Conway',
+                '- Es importante tener un entendimiento compartido, ya que generalmente no siempre hay una sola parte involucrada como en DDD',
+                '- Los requisitos y la Arquitectura deben ir de la mano, sin unos requisitos bien definidos, se pueden tomar decisiones arquitectonicas erradas ',
+                '- La comunicación es muy importante, entre más flexible mejor, y siempre se debe procurar mantener la Retrocompatibilidad ',
+                '- La resiliencia y su capacidad para escalarse para mantener un estado interno estable, es similar a la <em>homeostasis</em> en los sistemas biologicos ',
+                '- La personalización y evolución del sistema siempre requerira desarrollo y mantenimiento, factores que consumen recursos y deben ser tenidos en cuenta ',
             ])
     ];
 
