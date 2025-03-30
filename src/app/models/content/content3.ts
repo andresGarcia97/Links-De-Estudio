@@ -1252,7 +1252,7 @@ export const SEGURIDAD =
                 '',
                 '- Existen otros metodos, pero estos de los más populares y usados que hay '
             ]),
-        new Item('attacksOnModelOSI',
+        new Item(Keys.SECURITY_ATTACK_ON_MODEL_OSI,
             [
                 '- Acontinuación se mostraran algunos de los posibles ataques en cada una de las 7 capas del modelo OSI',
                 '',

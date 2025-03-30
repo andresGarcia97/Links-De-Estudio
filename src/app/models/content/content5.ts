@@ -803,7 +803,7 @@ export const NUBE =
                 '- Tambien se pueden clasificar por tipo de tecnologia, ya sean si realizan la acción mediante <em>hardware</em> o <em>software</em>',
                 '- Ademas de la clasificación por tipo de carga, donde se clasifican por <em>aplicación</em>, de <em>red</em>, de <em>servidor global</em> y <em>DNS</em>',
             ]),
-        new Item('latencia',
+        new Item(Keys.NUBE_LATENCY,
             [
                 '- Los sistemas con una gran latencia y que estan orientados al uso de los usuarios, el tiempo perdido son ganancias perdidas',
                 '- Algunas Estrategias para reducir la latencia: ',
@@ -1299,6 +1299,34 @@ export const APIS =
                 '- Es un modelo compatible con multiples rutas de trabajo, siendo adaptable segun la necesidades ',
                 '- Cumplir con esta designación, implica que se deben seguir mas procedimientos, etapas, iteraciones, etc.. que aumentan la calidad del software '
             ]),
+        new Item(Keys.APIS_LATENCY_THROUGHPUT_BANDWITH,
+            [
+                '- La velocidad de la red es el termino general para describir la velocidad en que los datos viajan a traves de la red ',
+                '- Esta se divide en 3 conceptos principales que no deben ser confundidos, a pesar de su correlación ',
+                '- La relación entre estas 3 caracteristicas pueden darse de diferentes maneras y algunas pueden ser hasta contraituitivas',
+                '',
+                '<strong>Latencia:</strong> Se refiere al tiempo que tarda un paquete de datos para viajar de un punto a otro de la red ',
+                '- Entre menor sea la latencia, menor sera el retraso para el usuario final, aunque no se garantize un buen rendimiento ',
+                '',
+                '<strong>Rendimiento(throughput):</strong> Cantidad de datos que viajan correctamente a traves de la red, durante un intervalo especifico ',
+                '- Se ve afectado por multiples factores, desde fisicos como el estado de la infraestructura, hasta la cantidad de usuarios y el tipo de datos ',
+                '',
+                '<strong>Ancho de banda:</strong> Capacidad maxima de la transferencia de datos de la red, se define de manera teorica en un periodo especifico ',
+                '- Suele ser comparados con los carriles de una autopista y como esta soporta una gran cantidad de automoviles(paquetes) de manera simultanea ',
+                '',
+                '&brvbar;                    <strong>Factores influyentes</strong>                    &brvbar;',
+                '&brvbar;     <strong>Latencia</strong>     &brvbar;     <strong>Rendimiento</strong>     &brvbar;  <strong>Ancho de banda</strong>   &brvbar;',
+                '&brvbar; Distancia        &brvbar; Ancho de banda      &brvbar; Capacidad teorica &brvbar;',
+                '&brvbar; Numero de saltos &brvbar; Latencia            &brvbar; Enrutamiento      &brvbar;',
+                '&brvbar; Medios fisicos   &brvbar; Perdida de paquetes &brvbar; Interferecias     &brvbar;',
+                '&brvbar; Congestión       &brvbar; Congestión          &brvbar; Congestión        &brvbar;',
+                '&brvbar; Hardware         &brvbar; Hardware            &brvbar; Hardware          &brvbar;',
+                '&brvbar; Infraestructura  &brvbar; Infraestructura     &brvbar; Infraestructura   &brvbar;',
+                '',
+                '- Otros factores importantes a tener en cuenta son que los sistemas pueden deliberadamente limitar la velocidad <strong>Rate Limit</strong> ',
+                '- Esto con el fin de proteger el sistema y se suele definir en solicitudes por minuto <strong>RPM</strong> o solicitudes por segundo <strong>RPS</strong> ',
+                '- Este <em>limite de velocidad</em> permite que los recursos no sean acaparados y garantiza una circulación fluida evitando la saturación del sistema '
+            ])
     ];
 
 export const META_ESTRUCTURAS =
