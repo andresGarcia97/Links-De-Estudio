@@ -34,6 +34,7 @@ export class GlosarioComponent implements OnInit {
 
   componentes = this.linkReferencia.components;
   onlyComponents = this.convertComponentsToArray(this.componentes);
+  searchOnContent: Map<string, Referencia> = new Map();
 
   ngOnInit(): void {
     console.info("%c Temas: " + this.temas.length, "color:#000; font-size: 16px;background:#FFBA08; font-weight: bold;");
@@ -85,6 +86,36 @@ export class GlosarioComponent implements OnInit {
   public cleanSearch(): void {
     this.search = '';
     this.inputSearch.nativeElement.focus();
+    this.searchOnContent = new Map();
+  }
+
+  public searchInsideContent(): void {
+
+    const matchingKeys = new Set<string>();
+
+    // \\b en ambos lados asegura que no sea una coincidencia parcial dentro de otra palabra, que solo coincida con palabras completas
+    // 'i' es el modificador que hace que la búsqueda no distinga entre mayúsculas y minúsculas
+    const searchRegex = new RegExp(`\\b${this.search}\\b`, 'i');
+
+    this.temas.filter(item => {
+      const containsSearchTerm = item.content.some(contentItem => searchRegex.test(contentItem));
+      if (containsSearchTerm) {
+        matchingKeys.add(item.key);
+      }
+    });
+
+    if (matchingKeys.size === 0) {
+      return;
+    }
+
+    const filteredReferences = new Map<string, Referencia>();
+    this.componentes.forEach((referencia, key) => {
+      if (matchingKeys.has(key)) {
+        filteredReferences.set(key, referencia);
+      }
+    });
+
+    this.searchOnContent = filteredReferences;
   }
 
 }
