@@ -45,7 +45,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.APIS_LATENCY_THROUGHPUT_BANDWITH;
+export const LAST_ITEM = Keys.PATRONES_DYSTRIBUTED_SYSTEMS;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -262,7 +262,7 @@ export const CONTAINERS = new Map<string, Referencia>([
     ['file', new Referencia('https://docs.docker.com/develop/develop-images/dockerfile_best-practices/', 'Construcción de imagenes', CONTENEDORES_KEY, 'Docker File')],
     //['compose', new Referencia('https://dockertips.com/utilizando-docker-compose#:~:text=Docker%20Compose%20es%20una%20herramienta%20que%20permite%20simplificar%20el%20uso%20de%20Docker.&text=En%20vez%20de%20utilizar%20Docker,Engine%20a%20realizar%20tareas%2C%20programaticamente', 'Manejo del docker-compose', CONTENEDORES_KEY, 'Docker Compose')],
     [Keys.CONTENEDORES_DOCKER_COMPOSE, new Referencia('https://docs.docker.com/compose/intro/features-uses/', 'Orquestación con Docker Compose', CONTENEDORES_KEY, 'Docker Compose', '2024/04/06', '2025/03/10')],
-    ['kubernetes', new Referencia('https://kubernetes.io/es/docs/concepts/overview/what-is-kubernetes/', 'Kubernetes', CONTENEDORES_KEY, 'Kubernetes')],
+    [Keys.CONTENEDORES_KUBERNETES, new Referencia('https://kubernetes.io/es/docs/concepts/overview/what-is-kubernetes/', 'Kubernetes', CONTENEDORES_KEY, 'Kubernetes', '', '2025/04/02').addRelatedItem(Keys.NUBE_IAAS_PAAS_SAAS)],
     [Keys.CONTENEDORES_ORCHESTRATION, new Referencia('https://geekflare.com/container-orchestration-software/', 'Orquestación', CONTENEDORES_KEY, 'Orquestación', '2023/07/07')],
     ['openContainer', new Referencia('https://opencontainers.org/about/overview/', 'Open Container Initiative', CONTENEDORES_KEY, 'Open Container Initiative', '2023/07/16')],
     [Keys.CONTENEDORES_SECURE_ORCHESTRATION, new Referencia('https://levelup.gitconnected.com/docker-vs-podman-a-new-era-in-secure-orchestration-957ea2123098', 'Seguridad en Orquestación', CONTENEDORES_KEY, 'Seguridad', '2024/05/25')],
@@ -429,7 +429,7 @@ export const METODOLOGIAS_REF = new Map<string, Referencia>([
 export const NUBE_KEY = 'Nube';
 export const NUBE_REF = new Map<string, Referencia>([
     ['nube', new Referencia('https://azure.microsoft.com/es-es/overview/what-are-private-public-hybrid-clouds/', 'Tipos de nube', NUBE_KEY, 'Tipos de nube')],
-    ['iaas-paas-saas', new Referencia('https://www.ambit-bst.com/blog/definici%C3%B3n-de-iaas-paas-y-saas-en-qu%C3%A9-se-diferencian', 'IaaS, PaaS, SaaS', NUBE_KEY, 'IaaS, PaaS, SaaS')],
+    [Keys.NUBE_IAAS_PAAS_SAAS, new Referencia('https://www.ambit-bst.com/blog/definici%C3%B3n-de-iaas-paas-y-saas-en-qu%C3%A9-se-diferencian', 'IaaS, PaaS, SaaS', NUBE_KEY, 'IaaS, PaaS, SaaS', '2023/12/30', '2025/04/02')],
     ['caas-daas-faas', new Referencia('https://aws.plainenglish.io/conquering-the-cloud-unveiling-saas-paas-caas-daas-iaas-and-faas-3789b0ad7018', 'CaaS, DaaS, FaaS', NUBE_KEY, 'CaaS, DaaS, FaaS', '2024/03/18')],
     ['factores12', new Referencia('https://12factor.net/es/', '12 factores para una aplicación SaaS', NUBE_KEY, '12 - factores')],
     ['migracionesNube', new Referencia('https://www.paradigmadigital.com/techbiz/mitos-lift-shift-mentiras-migraciones-cloud/', 'Migraciones hacia la nube y las 6R', NUBE_KEY, 'Migraciones')],
@@ -523,7 +523,7 @@ export const PATRONES_REF = new Map<string, Referencia>([
     //[Keys.PATRONES_SAGA, new Referencia('https://unpocodejava.com/2020/01/02/que-es-el-patron-saga/', 'Patron Saga', PATRONES_KEY, 'Patron saga')],
     [Keys.PATRONES_SAGA, new Referencia('https://docs.aws.amazon.com/es_es/prescriptive-guidance/latest/cloud-design-patterns/saga.html', 'Patron Saga', PATRONES_KEY, 'Patron Saga', '', '2025/03/14').addRelatedItems(Keys.ANALISIS_SINGLE_POINT_OF_FAILURE, Keys.APIS_IDEMPOTENCIA)],
     [Keys.PATRONES_CQRS, new Referencia('https://learn.microsoft.com/es-mx/azure/architecture/patterns/cqrs', 'Patron CQRS', PATRONES_KEY, 'Patron CQRS', '', '2024/10/18')],
-    ['patronUndoRedo', new Referencia('https://medium.com/dottech/implementando-undo-redo-con-ngrx-o-redux-f8ef5de535ef', 'Patron Undo-Redo', PATRONES_KEY, 'Patron undo-redo')],
+    [Keys.PATRONES_UNDO_REDO, new Referencia('https://medium.com/dottech/implementando-undo-redo-con-ngrx-o-redux-f8ef5de535ef', 'Patron Undo-Redo', PATRONES_KEY, 'Patron undo-redo', '', '2025/04/02')],
     [Keys.PATRONES_TYPES, new Referencia('https://www.javiergarzas.com/2014/08/tipos-patrones-software.html', 'Tipos de patrones', PATRONES_KEY, 'Tipos de Patrones')],
     [Keys.PATRONES_STRANGLER_FIG, new Referencia('https://martinfowler.com/bliki/StranglerFigApplication.html', 'StranglerFig App', PATRONES_KEY, 'StranglerFig App', '', '2024/09/22').addRelatedItem(Keys.LEYES_CONWAY)],
     ['antipatronesPM', new Referencia('https://sourcemaking.com/antipatterns', 'Antipatrones, Product Management', PATRONES_KEY, 'Anti Patrones, PM')],
@@ -533,6 +533,7 @@ export const PATRONES_REF = new Map<string, Referencia>([
     [Keys.PATRONES_INBOX, new Referencia('https://medium.com/hprog99/overcoming-message-delivery-challenges-in-distributed-systems-a-comprehensive-look-at-outbox-and-a669e5f21898', 'Patron Inbox', PATRONES_KEY, 'Patron Inbox', '2025/03/18').addRelatedItem(Keys.APIS_IDEMPOTENCIA)],
     [Keys.PATRONES_UNIT_OF_WORK, new Referencia('https://java-design-patterns.com/patterns/unit-of-work/', 'Unit of Work', PATRONES_KEY, 'Unit of Work', '2025/03/09').addRelatedItems(Keys.PERSISTENCY_ACID, Keys.PERSISTENCY_ADVANCED_ORM, Keys.ESTRATEGIAS_DESARROLLO_DDD)],
     [Keys.PATRONES_CRITERIA, new Referencia('https://medium.com/@zerodata.aolink/desafiando-la-complejidad-c%C3%B3mo-el-patr%C3%B3n-criteria-resuelve-la-explosi%C3%B3n-de-m%C3%A9todos-de-nuestro-60ece5829f89', 'Patron Criteria', PATRONES_KEY, 'Patron Criteria', '2025/03/22').addRelatedItems(Keys.ARQUITECTURAS_HEXAGONAL, Keys.PRINCIPIOS_SOLID)],
+    [Keys.PATRONES_DYSTRIBUTED_SYSTEMS, new Referencia('https://medium.com/@maheshsaini.sec/10-must-know-distributed-system-patterns-ab98c594806a', 'Patrones para Sistemas Distribuidos', PATRONES_KEY, 'Sistemas Distribuidos', '2025/04/02').addRelatedItems(Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.MICROSERVICES_FUNDAMENTALS, Keys.CONTENEDORES_KUBERNETES, Keys.CD_CI_CELL_BASED_ARQUITECTURE, Keys.GIT_STRUCTURE_AND_CONCEPTS, Keys.MICROSERVICES_PRODUCER_CONSUMER_PROBLEM)],
 ]);
 
 export const PEOPLE_KEY = 'Personas';

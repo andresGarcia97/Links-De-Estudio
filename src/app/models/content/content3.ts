@@ -1673,9 +1673,9 @@ export const CD_CI_INFRAESTRUCTURE =
             ]),
         new Item(Keys.CD_CI_CELL_BASED_ARQUITECTURE,
             [
-                '- Este tipo de arquitecturas provienen del concepto de maparo de los barcos, donde los tabiques subdividen el espacio en compartimentos autonomos ',
+                '- Este tipo de arquitecturas provienen del concepto de mamparo de los barcos, donde los tabiques subdividen el espacio en compartimentos autonomos ',
                 '- Agregan rigidez y resiliencia en caso de averias, evitando fallos catostroficos en el casco ',
-                '- Reducen la extensión de los daños en caso de inundación, limitandose al compartamimento dañado ',
+                '- Reducen la extensión de los daños en caso de inundación, limitandose al compartimento dañado ',
                 '- Aislan la falla en una sección especifica del casco, reduciendo las afectaciones en general del barco ',
                 '- Estas 3 ventajas son aplicables a los sistemas complejos ya que las cargas de trabajo se dividen entre celdas, para reducir el numero de afectados ',
                 '',
