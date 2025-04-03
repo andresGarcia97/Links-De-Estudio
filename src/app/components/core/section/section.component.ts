@@ -1,6 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { fromEvent } from 'rxjs';
+import { fromEvent, Subscription } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { Item, Referencia } from 'src/app/models/models';
 
@@ -16,11 +16,11 @@ const key = keypressed$.pipe(
   selector: 'app-section',
   templateUrl: './section.component.html'
 })
-export class SectionComponent implements OnInit {
+export class SectionComponent implements OnInit, OnDestroy  {
 
   constructor(private router: Router, private activeRoute: ActivatedRoute) { }
 
-  listenArrows: any = key.subscribe((value) => {
+  listenArrows: Subscription = key.subscribe((value) => {
     const event = value as KeyboardEvent;
     const key = event.key;
 
@@ -78,6 +78,10 @@ export class SectionComponent implements OnInit {
     if (FIREFOX_BROWSER === browser) {
       this.iterationBackwards = true;
     }
+  }
+
+  ngOnDestroy(): void {
+    this.listenArrows.unsubscribe();
   }
 
   public getItemByIndex(index: number): void {
