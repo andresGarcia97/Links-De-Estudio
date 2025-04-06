@@ -16,7 +16,7 @@ const key = keypressed$.pipe(
   selector: 'app-section',
   templateUrl: './section.component.html'
 })
-export class SectionComponent implements OnInit, OnDestroy  {
+export class SectionComponent implements OnInit, OnDestroy {
 
   constructor(private router: Router, private activeRoute: ActivatedRoute) { }
 
@@ -36,6 +36,11 @@ export class SectionComponent implements OnInit, OnDestroy  {
 
     if ("ArrowDown" === key || "ArrowUp" === key || "+" === key || "-" === key) {
       this.showHideRelatedSections();
+      return;
+    }
+
+    if ("AltGraph" === key) {
+      this.openAllLinks();
       return;
     }
 
@@ -188,10 +193,24 @@ export class SectionComponent implements OnInit, OnDestroy  {
   }
 
   public openLink(): void {
+
+    if (this.referencia === '') {
+      return;
+    }
+
     const newWindow = window.open(this.referencia, '_blank', 'noopener,noreferrer');
     if (newWindow) {
       newWindow.opener = null;
     }
+  }
+
+  public openAllLinks(): void {
+    this.components.forEach(item => {
+      const newWindow = window.open(item.referencia, '_blank', 'noopener,noreferrer');
+      if (newWindow) {
+        newWindow.opener = null;
+      }
+    })
   }
 
 }
