@@ -16,17 +16,20 @@ export class Content2 {
 
 export const TESTING =
     [
-        new Item('principios',
+        new Item(Keys.TESTING_PRINCIPLES,
             [
-                '- Las pruebas demuestran la presencia de defectos, por ende entre más pruebas halla mejor ',
-                '- Es improductivo hacer pruebas exhaustivas, ademas de que es casi imposible de hacer ',
+                '- El testing es una actividad clave del Ciclo de vida del software, este garantiza la calidad y la funcionalidad de cualquier aplicación o servicio ',
+                '- International Software Testing Qualifications Board, es una entidad con el proposito de definir un esquema de certificación internacional ',
+                '- Cada entidad es libre de tener sus principios y metodos para realizar pruebas, <strong>ISTQB</strong> propone 7 Principios ',
+                '',
+                '- Las pruebas demuestran la presencia de defectos, más no su ausencia, por ende entre más pruebas halla mejor ',
+                '- Es improductivo hacer pruebas exhaustivas, ademas de que es casi imposible de hacer, excepto en productos increiblemente sencillos ',
                 '- Las pruebas tempranas ayudan a encontrar defectos con prontitud, y a su vez reducir tiempo y costos ',
-                '- Agrupar defectos permite que las soluciones sean más especializadas, y las pruebas sean más efectivas ',
+                '- Agrupar defectos permite que las soluciones sean más especializadas, y lograr pruebas más efectivas ',
                 '- La paradoja del pesticida, si nuestro software cambia, las pruebas tambien deben hacerlo, que sigan funcionando no siempre es buena señal ',
                 '- Las pruebas dependen del contexto, entre más se parezca el entorno de pruebas al entorno de producción mejor ',
-                '- Que no se presenten errores no significa que no existan errores, solo que no se han dado las condiciones ',
-            ]
-        ),
+                '- Que no se presenten errores no significa que no existan errores, solo que no se han dado las condiciones, para estos casos existe <strong>QA</strong>',
+            ]),
         new Item('manifiesto',
             [
                 '- El testing no es una fase más, siempre debe estar presente en todo el desarrollo ',
@@ -53,8 +56,7 @@ export const TESTING =
                 '<strong>Pruebas de rendimiento:</strong> Se ponen a prueba factores como velocidad, desempeño, estres, confiabilidad ante grandes cargas de trabajo',
                 '',
                 '<strong>Pruebas de usabilidad:</strong> Se evaluan diferentes aspectos en terminos de aprendizaje y operatividad para el usuario final '
-            ]
-        ),
+            ]),
         new Item('beneficios',
             [
                 '- La calidad mejora al encontrar errores en etapas previas y durante el desarrollo, en vez de hacerlo en etapas finales ',
