@@ -306,6 +306,7 @@ export const CD_CI_IAS_CODE = 'iascode';
 export const CD_CI_DEPLOYMENT_PATTERNS = 'deploymentPatterns';
 export const CD_CI_CELL_BASED_ARQUITECTURE = 'cellBasedArquitecture';
 export const CD_CI_RULES = 'rules&GoodPractices';
+export const CD_CI_FAILOVER = 'failover-chaos-engineering-fault-tolerance-disaster-recovery';
 export const WEB_SEO = 'seo';
 export const WEB_SPACE = 'negativeSpace';
 export const WEB_USER_INTERFACE = 'userInterface-UI';

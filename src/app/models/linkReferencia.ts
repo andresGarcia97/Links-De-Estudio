@@ -45,7 +45,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.PATRONES_DYSTRIBUTED_SYSTEMS;
+export const LAST_ITEM = Keys.CD_CI_FAILOVER;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -873,6 +873,7 @@ export const CD_CI_REF = new Map<string, Referencia>([
     ['pipelines', new Referencia('https://semaphoreci.com/blog/cicd-pipeline', 'Pipelines', CD_CI_KEY, '¿ Que es un Pipeline ?', '2023/12/26')],
     [Keys.CD_CI_CELL_BASED_ARQUITECTURE, new Referencia('https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of-impact-with-cell-based-architecture/what-is-a-cell-based-architecture.html', 'Cell Based Arquitecture', CD_CI_KEY, 'Cell Based Arquitecture', '2024/08/25')],
     [Keys.CD_CI_RULES, new Referencia('https://semaphoreci.com/blog/rules-ci-pipeline', 'Rules', CD_CI_KEY, 'Rules', '2024/12/26').addRelatedItems(Keys.GIT_BRANCHS, Keys.CALIDAD_LINTING, Keys.TESTING_PIRAMIDE, Keys.CONTENEDORES_DOCKER)],
+    [Keys.CD_CI_FAILOVER, new Referencia('https://stackoverflow.blog/2020/10/23/adrian-cockcroft-aws-failover-chaos-engineering-fault-tolerance-distaster-recovery/', 'Failover & Ingenieria del caos', CD_CI_KEY, 'Failover, Caos, Resiliencia', '2025/04/06').addRelatedItems(Keys.NUBE_SRE, Keys.ANALISIS_SINGLE_POINT_OF_FAILURE, Keys.NUBE_DISPONIBILITY)],
 ]);
 
 export const MICRO_SERVICES_KEY = 'Microservicios';

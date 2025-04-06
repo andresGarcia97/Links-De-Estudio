@@ -22,8 +22,8 @@ export class CDCIComponent implements OnInit {
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
     this.relatedSections.set(CONTENEDORES_KEY, routes.get(CONTENEDORES_KEY)!)
-    this.relatedSections.set(NUBE_KEY,         routes.get(NUBE_KEY)!);
     this.relatedSections.set(HARDWARE_KEY,     routes.get(HARDWARE_KEY)!);
+    this.relatedSections.set(NUBE_KEY,         routes.get(NUBE_KEY)!);
     this.relatedSections.set(APIS_KEY,         routes.get(APIS_KEY)!);
     this.relatedSections.set(WEB_KEY,          routes.get(WEB_KEY)!);
   }
