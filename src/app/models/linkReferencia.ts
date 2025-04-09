@@ -45,7 +45,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.CD_CI_FAILOVER;
+export const LAST_ITEM = Keys.ANALISIS_COHESERS_DECOUPLERS;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -101,6 +101,7 @@ export const ANALISIS_REF = new Map<string, Referencia>([
     [Keys.ANALISIS_SYSTEM_DESIGN_II, new Referencia('https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction', 'System Design II', ANALISIS_KEY, 'System Design II', '2025/02/16').addRelatedItems(Keys.APIS_API_FIRST, Keys.CONTENEDORES_ORCHESTRATION, Keys.CD_CI_IAS_CODE, Keys.HARDWARE_ESCALAMIENTO, Keys.META_CARACTERISTICAS_CACHE, Keys.NUBE_PACELC)],
     [Keys.ANALISIS_DELIVERY_GUARANTED, new Referencia('https://docs.confluent.io/kafka/design/delivery-semantics.html', 'Delivery Guaranted', ANALISIS_KEY, 'Delivery Guaranted', '2025/03/21').addRelatedItems(Keys.MICROSERVICES_PRODUCER_CONSUMER_PROBLEM, Keys.APIS_IDEMPOTENCIA)],
     [Keys.ANALISIS_SYSTEM_THINKING, new Referencia('https://medium.com/nerd-for-tech/part-2-applying-systems-thinking-to-software-development-e98cbd195a83', 'Pensamiento Sistemico en el Diseño', ANALISIS_KEY, 'Pensamiento Sistemico', '2025/03/29').addRelatedItems(Keys.APIS_REST_VS_MESSAGING, Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.LEYES_LEHMAN, Keys.LEYES_CONWAY, Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES, Keys.HARDWARE_ESCALAMIENTO)],
+    [Keys.ANALISIS_COHESERS_DECOUPLERS, new Referencia('https://itnext.io/cohesers-and-decouplers-ecac2964081a', 'Cohesores y Desacopladores ', ANALISIS_KEY, 'Desacoplamiento', '2025/04/07').addRelatedItems(Keys.POO_COUPLING_AND_COHESION, Keys.ARQUITECTURAS_MONOLITOS, Keys.META_CARACTERISTICAS_DEAD_LOCKS, Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.SECURITY_CONDICION_CARRERA, Keys.PERSISTENCY_ADVANCED_SCALING_DB, Keys.LEYES_CONWAY)],
 ]);
 
 export const ARQUITECTURAS_KEY = 'Arquitecturas';
@@ -694,7 +695,7 @@ export const SECURITY_REF = new Map<string, Referencia>([
     ['cia', new Referencia('https://www.computerweekly.com/es/opinion/Que-es-la-triada-de-la-CIA', 'Confidencialidad-Integridad-Accesibilidad ', SECURITY_KEY, 'CIA', '', '2024/06/16')],
     ['noRepudio', new Referencia('https://www.unir.net/ingenieria/revista/no-repudio-seguridad-informatica/', 'No repudio', SECURITY_KEY, 'NO Repudio')],
     ['matrizDeRiesgo', new Referencia('https://www.protek.com.py/novedades/objetivos-de-una-matriz-de-riesgos/', 'Matriz de Riesgo', SECURITY_KEY, 'Matriz de Riesgo')],
-    ['condicionDeCarrera', new Referencia('https://ciberseguridad.com/amenzas/vulnerabilidades/condicion-de-carrera/', 'Condición de Carrera', SECURITY_KEY, 'Carrera')],
+    [Keys.SECURITY_CONDICION_CARRERA, new Referencia('https://ciberseguridad.com/amenzas/vulnerabilidades/condicion-de-carrera/', 'Condición de Carrera', SECURITY_KEY, 'Carrera', '', '2025/04/08')],
     ['honeypot', new Referencia('https://latam.kaspersky.com/resource-center/threats/what-is-a-honeypot', 'Honetypot', SECURITY_KEY, 'Honeypot')],
     ['zeroDayExploit', new Referencia('https://latam.kaspersky.com/resource-center/definitions/zero-day-exploit', 'Zero Day Exploit', SECURITY_KEY, 'Zero Day Exploit')],
     ['pentest', new Referencia('https://www.hiberus.com/crecemos-contigo/pentesting-owasp-fases-metodologia/', 'Testing de intrusión', SECURITY_KEY, 'Test de Intrusión')],
