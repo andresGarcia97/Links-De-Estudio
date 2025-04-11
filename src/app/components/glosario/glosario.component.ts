@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { AfterViewChecked, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { Content1 } from 'src/app/models/content/content1';
 import { Content2 } from 'src/app/models/content/content2';
@@ -14,9 +14,9 @@ import { Fuente, Referencia } from 'src/app/models/models';
   selector: 'app-glosario',
   templateUrl: './glosario.component.html'
 })
-export class GlosarioComponent implements OnInit {
+export class GlosarioComponent implements OnInit, AfterViewChecked {
 
-  @ViewChild("inputSearch") inputSearch!: ElementRef;
+  @ViewChild("inputSearch") inputSearch!: ElementRef<HTMLInputElement>;
 
   fuentes = new LinkFuente().fuentes;
   linkReferencia = new LinkReferencia();
@@ -41,22 +41,31 @@ export class GlosarioComponent implements OnInit {
     console.info("%c Temas practicos: " + this.fuentes.size, "color:white; font-size: 16px;background:#1976d2; font-weight: bold;");
 
     const componentsWithDate = Array.from(this.componentes.values());
-    const temas2025 = componentsWithDate.filter((x: Referencia) => x.dateRead.includes('2025') || x.dateUpdate.includes('2025')).length;
-    const temas2024 = componentsWithDate.filter((x: Referencia) => x.dateRead.includes('2024') || x.dateUpdate.includes('2024')).length;
-    const temas2023 = componentsWithDate.filter((x: Referencia) => x.dateRead.includes('2023') || x.dateUpdate.includes('2023')).length;
-    const temas2022 = componentsWithDate.filter((x: Referencia) => x.dateRead.includes('2022') || x.dateUpdate.includes('2022')).length;
-    const temas2021 = componentsWithDate.filter((x: Referencia) => x.dateRead.includes('2021') || x.dateUpdate.includes('2021')).length;
-    const temasWithOutRevision = componentsWithDate.filter((x: Referencia) => x.dateRead === '' && x.dateUpdate === '').length;
+    const temasWithOutRevision = componentsWithDate.filter((ref: Referencia) => ref.dateRead === '' && ref.dateUpdate === '').length;
+    console.info("%c Temas sin fecha: " + temasWithOutRevision, "color:white; font-size: 16px;background:#dd0031; font-weight: bold;");
 
-    const resumeActivity = `
-    Temas leidos/actualizados 2025: ${temas2025}\n
-    Temas leidos/actualizados 2024: ${temas2024}\n
-    Temas leidos/actualizados 2023: ${temas2023}\n
-    Temas leidos/actualizados 2022: ${temas2022}\n
-    Temas leidos/actualizados 2021: ${temas2021}\n
-    Temas leidos/actualizados sin fecha: ${temasWithOutRevision}`;
+    function getYearlyStats(references: Referencia[], year: string) {
+      const reads = references.filter(ref => ref.dateRead?.includes(year)).length;
+      const updates = references.filter(ref => ref.dateUpdate?.includes(year) && !ref.dateRead?.includes(year)).length;
+      return { year, reads, updates, total: (reads + updates) };
+    }
 
-    console.log(resumeActivity);
+    const years = ['2025', '2024', '2023', '2022', '2021'];
+    const stats = years.map(year => getYearlyStats(componentsWithDate, year));
+    console.table(stats);
+  }
+
+  ngAfterViewChecked() {
+
+    const inputSearch = this.inputSearch.nativeElement;
+
+    if (this.search && document.activeElement !== inputSearch) {
+      inputSearch.focus();
+    }
+    else if (!this.search && document.activeElement === inputSearch) {
+      inputSearch.blur();
+      this.searchOnContent = new Map();
+    }
   }
 
   constructor(private router: Router) { }
@@ -81,12 +90,6 @@ export class GlosarioComponent implements OnInit {
   public goToSection(component: string, item: string) {
     const urlSection = this.linkReferencia.routesAndSections.get(component);
     this.router.navigateByUrl(`/${urlSection}`, { state: { newItem: item } })
-  }
-
-  public cleanSearch(): void {
-    this.search = '';
-    this.inputSearch.nativeElement.focus();
-    this.searchOnContent = new Map();
   }
 
   public searchInsideContent(): void {
