@@ -325,11 +325,12 @@ export const SMELLS_CODES =
 
 export const VERSIONAMIENTO =
     [
-        new Item('git',
+        new Item(Keys.VERSIONAMIENTO_MANAGEMENT_VERSIONS,
             [
                 '- El control de versiones ayuda a mantener una trazabilidad de todos los cambios en una aplicación ',
+                '- Como se mantiene un historial preciso de la aplicación, esto es vital para poder retroceder versiones ó cambios en caso de problemas ',
                 '- El más conocido es GIT pero tambien existen otros como Mercurial',
-                '- GIT puede ser usado en repositorios locales o distribuidos en la nube, permitiendo la colaboración entre desarrolladores ',
+                '- GIT puede ser usado en repositorios locales o distribuidos en la nube, permitiendo el entendimiento y la colaboración entre desarrolladores ',
                 '- Permite crear ramificaciones para trabajar de manera aislada sin afectar a todo el flujo en general',
                 '- Tambien se pueden crear etiquetas para marcar commits y que sean más faciles de encontrar',
             ]),
@@ -508,6 +509,14 @@ export const VERSIONAMIENTO =
                 ' 4. Estrategia de solución             10. Requisitos de calidad      ',
                 ' 5. Vista de bloques de construcción   11. Riesgos y deuda tecnica    ',
                 ' 6. Vista de tiempo de ejecución       12. Glosario                   ',
+            ]),
+        new Item(Keys.VERSIONAMIENTO_BOM,
+            [
+                '- Un pom es un archivo XML que contiene la información necesaria de un proyecto, como configuraciones, dependencias, compilación que Maven necesita ',
+                '- <strong>Bill Of Materials:</strong> Es un pom especial que se usa para controlar las versiones de las dependencias de un proyecto ',
+                '- Este manejo centralizado tiene una gran cantidad de ventajas ya que permite modificar las versiones sin necesidad de cambiarlas en multiples lugares ',
+                '- Al compartir la versión se hace explicito para todos los artefactos y deja de ser implicito(orden), reduciendo problemas de dependencias transitivas ',
+                '- La exclusión, el uso de la herencia y definir versiones especificas sigue siendo posible ',
             ])
     ];
 

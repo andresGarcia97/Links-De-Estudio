@@ -45,7 +45,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.ANALISIS_COHESERS_DECOUPLERS;
+export const LAST_ITEM = Keys.VERSIONAMIENTO_BOM;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -792,7 +792,7 @@ export const UML_REF = new Map<string, Referencia>([
 
 export const VERSIONAMIENTO_KEY = 'Versionamiento';
 export const VERSIONAMIENTO_REF = new Map<string, Referencia>([
-    ['git', new Referencia('https://david-estevez.gitbooks.io/the-git-the-bad-and-the-ugly/content/es/control-de-versiones.html', 'Gestores de versiones', VERSIONAMIENTO_KEY, 'Gestor de Versiones')],
+    [Keys.VERSIONAMIENTO_MANAGEMENT_VERSIONS, new Referencia('https://david-estevez.gitbooks.io/the-git-the-bad-and-the-ugly/content/es/control-de-versiones.html', 'Gestor de versiones', VERSIONAMIENTO_KEY, 'Gestor de Versiones', '', '2025/04/10').addRelatedItem(Keys.GIT_STRUCTURE_AND_CONCEPTS)],
     ['dependencias', new Referencia('https://www.hongkiat.com/blog/manage-dependencies-tools-webdev/', 'Gestores de dependencias', VERSIONAMIENTO_KEY, 'Dependencias Web')],
     ['gradlevsmaven', new Referencia('https://www.chakray.com/es/gradle-vs-maven-definiciones-diferencias/', 'Gradle VS Maven', VERSIONAMIENTO_KEY, 'Gradle VS Maven')],
     ['versionamiento', new Referencia('https://ed.team/blog/como-se-deciden-las-versiones-del-software', 'Manejo de versiones', VERSIONAMIENTO_KEY, 'Versionamiento')],
@@ -803,6 +803,7 @@ export const VERSIONAMIENTO_REF = new Map<string, Referencia>([
     [Keys.VERSIONAMIENTO_DEPENDENCIES_ORDER, new Referencia('https://www.baeldung.com/maven-dependencies-order', 'Orden de Dependencias', VERSIONAMIENTO_KEY, 'Orden', '2024/08/04').addRelatedItem(Keys.META_ESTRUCTURAS_ESTRUCTURAS_DATOS_2)],
     [Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES, new Referencia('https://github.com/kedro-org/kedro/wiki/Backwards-compatibility-and-breaking-changes', 'Retro compatibilidad y Breaking changes', VERSIONAMIENTO_KEY, 'Cambios y compatibilidad', '2024/05/19').addRelatedItems(Keys.LEYES_HYRUM, Keys.META_ESTRUCTURAS_DEPRECATION)],
     [Keys.VERSIONAMIENTO_DOCUMENT_ARQUITECTURE, new Referencia('https://lucamezzalira.medium.com/how-to-document-software-architecture-techniques-and-best-practices-2556b1915850', 'Documentación & Arquitectura', VERSIONAMIENTO_KEY, 'Docs & Arquitectura', '2024/12/01').addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_DDD)],
+    [Keys.VERSIONAMIENTO_BOM, new Referencia('https://www.baeldung.com/spring-maven-bom', 'Gestion de dependencias con BOM', VERSIONAMIENTO_KEY, 'BOM', '2025/04/10').addRelatedItem(Keys.POO_HERENCIA)],
 ]);
 
 export const HARDWARE_KEY = 'Hardware';
