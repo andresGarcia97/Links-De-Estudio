@@ -96,9 +96,28 @@ export class GlosarioComponent implements OnInit, AfterViewChecked {
 
     const matchingKeys = new Set<string>();
 
+    // normalize('NFD') descompone letras acentuadas en letras base + acento (á → a + acento) y se elimina los acentos para comparar
+    const normalizeToRegex = (search: string): string =>
+      search
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .replace(/[aeiou]/gi, (char) => {
+          const base = char.toLowerCase();
+          const accentedMap: { [key: string]: string } = {
+            a: '[aáàäâãå]',
+            e: '[eéèëê]',
+            i: '[iíìïî]',
+            o: '[oóòöôõ]',
+            u: '[uúùüû]'
+          };
+          const pattern = accentedMap[base];
+          return char === char.toUpperCase() ? pattern.toUpperCase() : pattern;
+        });
+
     // \\b en ambos lados asegura que no sea una coincidencia parcial dentro de otra palabra, que solo coincida con palabras completas
     // 'i' es el modificador que hace que la búsqueda no distinga entre mayúsculas y minúsculas
-    const searchRegex = new RegExp(`\\b${this.search}\\b`, 'i');
+    const normalizedSearch = normalizeToRegex(this.search);
+    const searchRegex = new RegExp(`\\b${normalizedSearch}\\b`, 'i');
 
     this.temas.filter(item => {
       const containsSearchTerm = item.content.some(contentItem => searchRegex.test(contentItem));
