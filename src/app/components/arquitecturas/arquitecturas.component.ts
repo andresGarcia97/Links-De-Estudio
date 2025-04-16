@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ARQUITECTURAS } from 'src/app/models/content/content4';
-import { ANALISIS_KEY, ARQUITECTURAS_REF, LinkReferencia, METODOLOGIAS_KEY, NUBE_KEY, PATRONES_KEY, UML_KEY }
+import { ANALISIS_KEY, ARQUITECTURAS_REF, LinkReferencia, METODOLOGIAS_KEY, NUBE_KEY, PATRONES_KEY, POO_KEY, UML_KEY }
 from 'src/app/models/linkReferencia';
 
 @Component({
@@ -27,6 +27,7 @@ export class ArquitecturasComponent implements OnInit {
     this.relatedSections.set(ANALISIS_KEY,     routes.get(ANALISIS_KEY)!);
     this.relatedSections.set(NUBE_KEY,         routes.get(NUBE_KEY)!);
     this.relatedSections.set(UML_KEY,          routes.get(UML_KEY)!);
+    this.relatedSections.set(POO_KEY,          routes.get(POO_KEY)!);
   }
 
 }

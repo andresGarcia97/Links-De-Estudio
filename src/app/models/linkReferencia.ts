@@ -45,7 +45,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.VERSIONAMIENTO_BOM;
+export const LAST_ITEM = Keys.ARQUITECTURAS_WHY_CLEAN;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -108,7 +108,7 @@ export const ARQUITECTURAS_KEY = 'Arquitecturas';
 export const ARQUITECTURAS_REF = new Map<string, Referencia>([
     //['definicion', new Referencia('https://cgrw01.cgr.go.cr/rup/RUP.es/SmallProjects/core.base_rup/guidances/concepts/software_architecture_4269A354.html', '¿ Que es una arquitectura ?', ARQUITECTURAS_KEY, 'Definición')],
     [Keys.ARQUITECTURAS_DEFINICION, new Referencia('https://www.gluo.mx/blog/arquitectura-de-software-que-es-y-que-tipos-hay', '¿ Que es una arquitectura ?', ARQUITECTURAS_KEY, 'Definición', '', '2024/06/17')],
-    ['inicioArquitectura', new Referencia('https://sg.com.mx/revista/27/arquitectura-software', 'Etapas & Roles', ARQUITECTURAS_KEY, 'Etapas & Roles')],
+    [Keys.ARQUITECTURAS_ETAPAS_ROLES, new Referencia('https://sg.com.mx/revista/27/arquitectura-software', 'Etapas & Roles', ARQUITECTURAS_KEY, 'Etapas & Roles', '', '2025/04/13').addRelatedItems(Keys.REQUISITOS_REQUIREMENTS_ENGINEERING, Keys.VERSIONAMIENTO_DOCUMENT_ARQUITECTURE, Keys.VERSIONAMIENTO_DOCUMENTATION)],
     [Keys.ARQUITECTURAS_IMPORTANT_CONCEPTS, new Referencia('https://www.freecodecamp.org/news/an-introduction-to-software-architecture-patterns/', 'Conceptos de Arquitecturas', ARQUITECTURAS_KEY, 'Conceptos', '', '2025/03/06')],
     ['principiosArquitecturas', new Referencia('https://www.genbeta.com/desarrollo/principios-de-una-arquitectura-limpia-mantenible-y-testeable', 'Principios de las arquitecturas', ARQUITECTURAS_KEY, 'Principios')],
     [Keys.ARQUITECTURAS_CLEAN, new Referencia('https://medium.com/@diego.coder/introducci%C3%B3n-a-las-clean-architectures-723fe9fe17fa', 'Arquitecturas Limpias', ARQUITECTURAS_KEY, 'Limpias')],
@@ -133,6 +133,7 @@ export const ARQUITECTURAS_REF = new Map<string, Referencia>([
     [Keys.ARQUITECTURAS_LAYERS_SOFTWARE, new Referencia('https://www.linkedin.com/posts/brijpandeyji_building-software-at-scale-requires-a-clear-activity-7276459295502655488-dLTk/', 'Capas del Software', ARQUITECTURAS_KEY, 'Capas del Software', '2024/12/22').addRelatedItems(Keys.APIS_REST_VS_MESSAGING, Keys.PERSISTENCY_DBMS, Keys.WEB_USER_INTERFACE, Keys.CONTENEDORES_DOCKER, Keys.ANALISIS_MODEL_DOMAIN)],
     [Keys.ARQUITECTURAS_EXPERIMENTATION, new Referencia('https://www.infoq.com/articles/architecture-experimentation/', 'Minima Arquitectura Viable', ARQUITECTURAS_KEY, 'MVA', '2025/01/12').addRelatedItems(Keys.ANALISIS_DATA_MVP, Keys.CD_CI_DEPLOYMENT_PATTERNS, Keys.NEURO_MARKETING_WHAT_IS)],
     [Keys.ARQUITECTURAS_HOW_TO_CHOOSE_IT, new Referencia('https://appmaster.io/es/blog/como-elegir-la-arquitectura-de-software', '¿ Como escoger una Arquitectura ?', ARQUITECTURAS_KEY, '¿ Como Escogerla ?', '2025/03/25').addRelatedItems(Keys.HARDWARE_ESCALAMIENTO, Keys.MICROSERVICES_FUNDAMENTALS, Keys.NUBE_NATIVE)],
+    [Keys.ARQUITECTURAS_WHY_CLEAN, new Referencia('https://medium.com/unil-ci-software-engineering/why-clean-architecture-b84be50ea80d', '¿ Porque una Arquitectura Limpia ?', ARQUITECTURAS_KEY, '¿ Porque ?', '2025/04/13').addRelatedItems(Keys.POO_COUPLING_COMPONENTS, Keys.META_ESTRUCTURAS_SISTEMAS_COMPLEJOS, Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS, Keys.POO_POLIMORFISMO, Keys.PRINCIPIOS_SOLID, Keys.ESTRATEGIAS_DESARROLLO_DDD)],
 ]);
 
 export const BUENAS_PRACTICAS_KEY = 'Buenas-Practicas';
