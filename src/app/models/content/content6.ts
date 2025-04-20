@@ -1787,7 +1787,7 @@ export const BUENAS_PRACTICAS =
                 '- Cierre recursos y evite posible fugas de memoria, al tener acciones que hagan esto despues de manejar los errores ',
                 '- Es importante saber retransmitir la información, de manera que no se pierda información de pila de errores ',
             ]),
-        new Item('goodHabits',
+        new Item(Keys.BUENAS_PRACTICAS_GOOD_HABITS,
             [
                 '- Un desarrollador no solo codifica, un buen desarrollador tiene una gran cantidad de habilidades que van más alla de la codificación ',
                 '- Los items acontinuación son una recopilación subjetiva y no son una guia en que confiar ciegamente',
@@ -1848,6 +1848,19 @@ export const BUENAS_PRACTICAS =
                 '<strong>- Preferir Excepciones, sobre codigos de error:</strong> Comprobar estos codigos suele ocultar las causas de los errores, además de que no ayudan ',
                 ' - a una clara separación entre la logica de negocio y el manejo de errores, además de ser una solución proveida por el lenguaje ',
                 '<strong>- Principio DRY:</strong> No te repitas, la duplicación suele ser malvada, genera inconsistencias y aumenta el riesgo de errores ',
+            ]),
+        new Item(Keys.BUENAS_PRACTICAS_AGGREGATES,
+            [
+                '<strong>¿ Qué es un Aggregate ?</strong> Es un grupo de entidades relacionadas y Value Objects que se tratan como una unidad para el modelo de dominio ',
+                '- Encapsulan elementos estrechamente vinculados que deben mantenerse juntos para no perder la consistencia ',
+                '- Definen limites claros dentro del modelo de dominio y sus interacciones con el mundo exterior ',
+                '- Aseguran que las reglas de negocio se cumplan internamente y funcionan como unico punto de entrada para realizarlas ',
+                '- Esto evita que la logica se disperse, sea dificil de mantener y evitan la construcción de sistemas fragiles o con malas asociaciones ',
+                '',
+                '<strong>¿ Qué es un Aggregate Root ?</strong> Es la entidad principal dentro del agregado, que se encarga de mantener la integridad propia y del conjunto ',
+                '- Es el unico punto de entrada por el cual todas las operaciones deben pasar y ser validadas para respetar las reglas de negocio ',
+                '- Gestionan el almacenamiento y la recuperación de los datos como un todo, evitando interacciones directas con otras entidades ',
+                '- Los agregados definen limites, mientras que los aggregate root los refuerzan asegurando una mejor consistencia y cohesión ',
             ])
     ];
 
@@ -1857,7 +1870,7 @@ export const MALAS_PRACTICAS =
             [
                 '- Generalmente es un problema al hacer codigo con caracteristicas asincronas (generalmente javascript) ',
                 '- Un <em>callback</em> son funciones de primera clase, diseñadas para pasarse como argumento a otra función y ejecutarse posteriormente ',
-                '- El problema va más alla del simple asincronismo, cuando se incrementa la anidación y estos incluyen callbacks se dificulta el entendimiento ', 
+                '- El problema va más alla del simple asincronismo, cuando se incrementa la anidación y estos incluyen callbacks se dificulta el entendimiento ',
                 '- Por lo que el orden en que se copia el codigo no necesariamente es en el que va a ser ejecutado',
                 '- Cambiar el orden de las llamadas puede evitar el anidamiento innecesario',
                 '- Usar el encadenamiento de Promesas ó el Async/Await, hara que el codigo se más entendible y que se comporte de manera más sincronica ',

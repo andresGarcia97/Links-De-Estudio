@@ -45,7 +45,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.ARQUITECTURAS_WHY_CLEAN;
+export const LAST_ITEM = Keys.BUENAS_PRACTICAS_AGGREGATES;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -155,8 +155,9 @@ export const BUENAS_PRACTICAS_REF = new Map<string, Referencia>([
     [Keys.BUENAS_PRACTICAS_GUARD_CLAUSES, new Referencia('https://artansoft.com/2017/01/guard-clauses-definicion-beneficios/', 'Guard clauses', BUENAS_PRACTICAS_KEY, 'Guard Clauses')],
     ['semanticConstructors', new Referencia('https://medium.com/all-you-need-is-clean-code/constructores-sem%C3%A1nticos-ae7ac70b23aa', 'Constructores Semanticos', BUENAS_PRACTICAS_KEY, 'Constructores Semanticos')],
     [Keys.BUENAS_PRACTICAS_EXCEPTIONS, new Referencia('https://javachallengers.com/mistakes-when-using-exceptions/', 'Manejo de Excepciones', BUENAS_PRACTICAS_KEY, 'Manejo de Excepciones')],
-    ['goodHabits', new Referencia('https://vadimkravcenko.com/shorts/habits-of-great-software-engineers/', 'Buenos habitos de un desarrollador', BUENAS_PRACTICAS_KEY, 'Buenos habitos')],
-    [Keys.BUENAS_PRACTICAS_FUNCTIONS, new Referencia('https://medium.com/@akineralkan/clean-code-notes-chapter-3-functions-de4a30191300', 'Buenas practicas, Funciones', BUENAS_PRACTICAS_KEY, 'Funciones', '2024/10/18').addRelatedItem(Keys.PATRONES_CQRS)]
+    [Keys.BUENAS_PRACTICAS_GOOD_HABITS, new Referencia('https://vadimkravcenko.com/shorts/habits-of-great-software-engineers/', 'Buenos habitos de un desarrollador', BUENAS_PRACTICAS_KEY, 'Buenos habitos')],
+    [Keys.BUENAS_PRACTICAS_FUNCTIONS, new Referencia('https://medium.com/@akineralkan/clean-code-notes-chapter-3-functions-de4a30191300', 'Buenas practicas, Funciones', BUENAS_PRACTICAS_KEY, 'Funciones', '2024/10/18').addRelatedItem(Keys.PATRONES_CQRS)],
+    [Keys.BUENAS_PRACTICAS_AGGREGATES, new Referencia('https://www.kranio.io/blog/de-bueno-a-excelente-en-ddd-entendiendo-aggregates-y-aggregate-roots-en-domain-driven-design---3-10', 'Aggregates y Aggregate Roots', BUENAS_PRACTICAS_KEY, 'Agregados', '2025/04/20').addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.META_ESTRUCTURAS_VALUE_OBJECTS, Keys.POO_DESIGN_BY_CONTRACT_PARTS, Keys.ANALISIS_COHESERS_DECOUPLERS)]
 ]);
 
 export const CALIDAD_KEY = 'Calidad';
