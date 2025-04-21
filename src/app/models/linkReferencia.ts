@@ -45,7 +45,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.BUENAS_PRACTICAS_AGGREGATES;
+export const LAST_ITEM = Keys.PATRONES_STATE;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -199,7 +199,7 @@ export const COMPILACION_REF = new Map<string, Referencia>([
     [Keys.COMPILACION_CASTING, new Referencia('https://www.w3schools.com/java/java_type_casting.asp', 'Casting', COMPILACION_KEY, 'Casteo de Datos')],
     [Keys.COMPILACION_VERBOSITY, new Referencia('https://softwareengineering.stackexchange.com/questions/141175/why-is-verbosity-bad-for-a-programming-language', 'Verbosidad', COMPILACION_KEY, 'Verbosidad', '2023/03/31')],
     ['tipoLenguajeProposito', new Referencia('https://ed.team/blog/como-se-clasifican-los-lenguajes-de-programacion', 'Tipos de lenguajes por proposito', COMPILACION_KEY, 'Proposito', '2023/11/09')],
-    [Keys.COMPILACION_AUTOMATAS, new Referencia('https://medium.com/@maniakhitoccori/qu%C3%A9-es-un-aut%C3%B3mata-fbf309138755', 'Automatas', COMPILACION_KEY, 'Automatas', '2024/02/19')],
+    [Keys.COMPILACION_AUTOMATAS, new Referencia('https://medium.com/@maniakhitoccori/qu%C3%A9-es-un-aut%C3%B3mata-fbf309138755', 'Automatas', COMPILACION_KEY, 'Automatas', '2024/02/19').addRelatedItem(Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS)],
     [Keys.COMPILACION_STRUCTURE_COMPILATOR, new Referencia('https://vicente-aguilera-perez.medium.com/estructura-general-de-un-compilador-df97892f91c3', 'Estructura de un compilador I', COMPILACION_KEY, 'Estructura general I', '2024/02/28')],
     [Keys.COMPILACION_ELEMENTS_COMPILATOR, new Referencia('https://vicente-aguilera-perez.medium.com/estructura-general-de-un-compilador-df97892f91c3', 'Estructura de un compilador II', COMPILACION_KEY, 'Estructura general II', '2024/02/28')],
     [Keys.COMPILACION_STREAMS, new Referencia('https://medium.com/javarevisited/best-practices-for-using-java-stream-f0f7585f13ba', 'Streams', COMPILACION_KEY, 'Streams', '2024/06/29').addRelatedItem(Keys.POO_INMUTABILITY)],
@@ -398,7 +398,7 @@ export const META_ESTRUCTURAS_REF = new Map<string, Referencia>([
     [Keys.META_ESTRUCTURAS_ESTRUCTURAS_DATOS_2, new Referencia('https://ai.plainenglish.io/data-structures-how-computers-store-and-organize-data-the-backbone-5f0576b3150c', 'Estructuras de datos II', META_ESTRUCTURAS_KEY, 'Estructuras de datos II', '2023/02/05', '2025/02/08').addRelatedItem(Keys.BUENAS_PRACTICAS_COMPLEJIDAD_ALGORITMICA)],
     [Keys.META_ESTRUCTURAS_SEARCH_AND_SORT, new Referencia('https://medium.com/edureka/data-structures-algorithms-in-java-d27e915db1c5', 'Algoritmos, Busqueda & Ordenación', META_ESTRUCTURAS_KEY, 'Busqueda & Ordenación', '2025/02/08').addRelatedItems(Keys.BUENAS_PRACTICAS_COMPLEJIDAD_COGNITIVA, Keys.BUENAS_PRACTICAS_COMPLEJIDAD_ALGORITMICA, Keys.ANALISIS_ALGORITHMS)],
     ['homoiconicidad', new Referencia('https://es.wikipedia.org/wiki/Homoiconicidad', 'Homoiconicidad', META_ESTRUCTURAS_KEY, 'Homoiconicidad')],
-    [Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS, new Referencia('http://fisicotronica.com/maquina-de-estados-nos-referimos/', 'Maquinas de estados', META_ESTRUCTURAS_KEY, 'Maquina de estados')],
+    [Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS, new Referencia('http://fisicotronica.com/maquina-de-estados-nos-referimos/', 'Maquinas de estados', META_ESTRUCTURAS_KEY, 'Maquina de estados', '', '2025/04/20').addRelatedItem(Keys.COMPILACION_AUTOMATAS)],
     [Keys.META_ESTRUCTURAS_SISTEMAS_COMPLEJOS, new Referencia('https://www.researchgate.net/figure/Figura-2-Caracteristicas-basicas-de-los-sistemas-complejos-Comportamiento-impredecible_fig1_262437348', 'Complejidad inherente al sistema', META_ESTRUCTURAS_KEY, 'Sistemas Complejos', '', '2025/03/18')],
     ['funcionesLambda', new Referencia('https://www.tokioschool.com/noticias/expresiones-lambda-uso-programacion-aplicaciones/', 'Funciones Lambda', META_ESTRUCTURAS_KEY, 'Funciones lambda')],
     [Keys.META_ESTRUCTURAS_VALUE_OBJECTS, new Referencia('https://medium.com/all-you-need-is-clean-code/value-objects-d4c24115fa69', 'Value Objects', META_ESTRUCTURAS_KEY, 'Value Objects', '2022/11/07')],
@@ -531,7 +531,7 @@ export const PATRONES_REF = new Map<string, Referencia>([
     [Keys.PATRONES_UNDO_REDO, new Referencia('https://medium.com/dottech/implementando-undo-redo-con-ngrx-o-redux-f8ef5de535ef', 'Patron Undo-Redo', PATRONES_KEY, 'Patron undo-redo', '', '2025/04/02')],
     [Keys.PATRONES_TYPES, new Referencia('https://www.javiergarzas.com/2014/08/tipos-patrones-software.html', 'Tipos de patrones', PATRONES_KEY, 'Tipos de Patrones')],
     [Keys.PATRONES_STRANGLER_FIG, new Referencia('https://martinfowler.com/bliki/StranglerFigApplication.html', 'StranglerFig App', PATRONES_KEY, 'StranglerFig App', '', '2024/09/22').addRelatedItem(Keys.LEYES_CONWAY)],
-    ['antipatronesPM', new Referencia('https://sourcemaking.com/antipatterns', 'Antipatrones, Product Management', PATRONES_KEY, 'Anti Patrones, PM')],
+    [Keys.PATRONES_ANTI_PATRONES_PM, new Referencia('https://sourcemaking.com/antipatterns', 'Antipatrones, Product Management', PATRONES_KEY, 'Anti Patrones, PM')],
     [Keys.PATRONES_CLOUD_DESIGN_PATTERNS, new Referencia('https://learn.microsoft.com/es-mx/azure/architecture/patterns/', 'Patrones Para la Nube', PATRONES_KEY, 'Patrones Nube', '2024/06/02')],
     [Keys.PATRONES_ENRICHED_MODEL, new Referencia('https://sacavix.com/2024/05/modelos-anemicos-vs-enriquecidos/', 'Modelo Enriquecido', PATRONES_KEY, 'Modelo Enriquecido', '2024/12/15').addRelatedItems(Keys.MALAS_PRACTICAS_ANEMIC_DOMAIN, Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.POO_INMUTABILITY, Keys.POO_POO)],
     [Keys.PATRONES_OUTBOX, new Referencia('https://www.baeldung.com/cs/outbox-pattern-microservices', 'Patron Outbox', PATRONES_KEY, 'Patron Outbox', '2025/01/12').addRelatedItems(Keys.PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL, Keys.APIS_REST_VS_MESSAGING)],
@@ -539,6 +539,7 @@ export const PATRONES_REF = new Map<string, Referencia>([
     [Keys.PATRONES_UNIT_OF_WORK, new Referencia('https://java-design-patterns.com/patterns/unit-of-work/', 'Unit of Work', PATRONES_KEY, 'Unit of Work', '2025/03/09').addRelatedItems(Keys.PERSISTENCY_ACID, Keys.PERSISTENCY_ADVANCED_ORM, Keys.ESTRATEGIAS_DESARROLLO_DDD)],
     [Keys.PATRONES_CRITERIA, new Referencia('https://medium.com/@zerodata.aolink/desafiando-la-complejidad-c%C3%B3mo-el-patr%C3%B3n-criteria-resuelve-la-explosi%C3%B3n-de-m%C3%A9todos-de-nuestro-60ece5829f89', 'Patron Criteria', PATRONES_KEY, 'Patron Criteria', '2025/03/22').addRelatedItems(Keys.ARQUITECTURAS_HEXAGONAL, Keys.PRINCIPIOS_SOLID)],
     [Keys.PATRONES_DYSTRIBUTED_SYSTEMS, new Referencia('https://medium.com/@maheshsaini.sec/10-must-know-distributed-system-patterns-ab98c594806a', 'Patrones para Sistemas Distribuidos', PATRONES_KEY, 'Sistemas Distribuidos', '2025/04/02').addRelatedItems(Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.MICROSERVICES_FUNDAMENTALS, Keys.CONTENEDORES_KUBERNETES, Keys.CD_CI_CELL_BASED_ARQUITECTURE, Keys.GIT_STRUCTURE_AND_CONCEPTS, Keys.MICROSERVICES_PRODUCER_CONSUMER_PROBLEM)],
+    [Keys.PATRONES_STATE, new Referencia('https://maxim-gorin.medium.com/stop-writing-if-else-trees-use-the-state-pattern-instead-1fe9ff39a39c', 'Patron State', PATRONES_KEY, 'Patron State', '2025/04/20').addRelatedItems(Keys.CALIDAD_IF_ELSE, Keys.POO_POLIMORFISMO, Keys.PRINCIPIOS_SOLID, Keys.POO_ENUMS, Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS)],
 ]);
 
 export const PEOPLE_KEY = 'Personas';
@@ -584,7 +585,7 @@ export const POO_REF = new Map<string, Referencia>([
     ['typesPolimorfismo', new Referencia('https://medium.com/lenguajes-y-dialectos-en-programaci%C3%B3n/polimorfismo-y-paradigmas-tipos-y-ejemplos-ca6a56093a66', 'Tipos de Polimorfismo', POO_KEY, 'Tipos de Polimorfismo')],
     ['factoryMethods', new Referencia('https://www.baeldung.com/java-constructors-vs-static-factory-methods', 'Factory Methods', POO_KEY, 'Factory Methods', '2022/11/07')],
     ['interfacesOverInheritance', new Referencia('https://www.infoworld.com/article/2073649/why-extends-is-evil.html', 'Interfaces VS Herencia', POO_KEY, 'Interfaces VS Herencia', '2023/03/13')],
-    ['enumeraciones', new Referencia('https://jarroba.com/enum-enumerados-en-java-con-ejemplos/', 'Enumeraciones', POO_KEY, 'Enumeraciones', '', '2024/05/05')],
+    [Keys.POO_ENUMS, new Referencia('https://jarroba.com/enum-enumerados-en-java-con-ejemplos/', 'Enumeraciones', POO_KEY, 'Enumeraciones', '', '2024/05/05')],
     [Keys.POO_COUPLING_AND_COHESION, new Referencia('https://ducmanhphan.github.io/2019-03-23-Coupling-and-Cohension-in-OOP/', 'Acoplamiento & Cohesion', POO_KEY, 'Acoplamiento & Cohesion', '', '2024/10/27')],
     [Keys.POO_CALISTHENICS, new Referencia('https://keyvanakbary.com/object-calisthenics-mejora-tu-diseno-orientado-a-objetos/', 'Calistenia de Objetos', POO_KEY, 'Calistenia de Objetos', '2025/09/02').addRelatedItems(Keys.CALIDAD_IF_ELSE, Keys.BUENAS_PRACTICAS_DEMETER, Keys.PRINCIPIOS_SOLID, Keys.BUENAS_PRACTICAS_COMPLEJIDAD, Keys.META_ESTRUCTURAS_VALUE_OBJECTS)],
 ]);

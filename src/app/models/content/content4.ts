@@ -1868,7 +1868,7 @@ export const POO =
                 ' - de maneras deseadas e indeseadas por igual, si no se tiene cuidado ',
                 '- Si una clase llega a tener la necesidad de anular metodos del padre; debido a un malfuncionamiento, se deberia reconsiderar su uso ',
             ]),
-        new Item('enumeraciones',
+        new Item(Keys.POO_ENUMS,
             [
                 '- Una enumeración es una clase <em>especial</em>, que limita la creación de objetos al conjunto especificado explícitamente dentro la clase',
                 '- Las enumeraciones existen en multiples lenguajes, especialmente si son fuertemente tipados',
