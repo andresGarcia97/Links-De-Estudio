@@ -1375,10 +1375,10 @@ export const UML =
                 '- El nivel de detalle que puede llegar a ser superficial ó increiblemente complejo ',
                 '- Es un lenguaje independiente de la plataforma de desarrollo, por lo cual depende de la capacidad de abstracción ',
             ]),
-        new Item('clase',
+        new Item(Keys.UML_CLASES,
             [
-                '- Esta orientado al modelo y se basa especialmente en la programación orientada a objetos ',
-                '- Representan las interacciones y las clases que conforman el sistema ',
+                '- Esta orientado al modelo y se basa especialmente en la Programación Orientada a Objetos ',
+                '- Representan las interacciones y las clases o interfaces que conforman el sistema ',
                 '- Se pueden diagramar los modificadores de acceso, la multiplicidad, los atributos, relaciones, etc.. ',
             ]),
         new Item('componentes',

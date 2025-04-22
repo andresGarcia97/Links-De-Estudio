@@ -278,18 +278,6 @@ export const ANALISIS =
                 '<strong>A la medida:</strong> El diseño puede crecer y cambiar de acuerdo a las especificaciones de cliente, no necesariamente debe nacer completo ',
                 '<strong>Documentación:</strong> La documentación debe existir en cualquier proyecto, para ayudar a la compresión del sistema, sea a nivel general ó especifico ',
             ]),
-        new Item('crc',
-            [
-                '- Ayuda a los equipos a entender los procesos de una manera más facil y concisa ',
-                '- Al tener todos las posibles parte del sistema a la disposición se reduce la redundancia y se asignan mejor las responsabilidades ',
-                '- Es ideal hacer esto mediante una lluvia de ideas, donde todos participen ',
-                '- Cuando hay demasiadas tarjetas, estas empiezan a añadir complejidad al entendimiento del modelado, ',
-                '- En caso de que se empiecen a acumular, se desarrollaron los casos de uso, y explorar diferentes flujos y especializaciones ',
-                '',
-                '<strong>Clase:</strong> Nombre de la clase en si, el cual debe ser diciente y que ayude a entender el porque de su creación ',
-                '<strong>Responsabilidad:</strong> Cual es la función ó funciones de la clase, entre más especifica mejor ',
-                '<strong>Colaborador:</strong> Son otras clases ó entidades que son necesarias para el correcto funcionamiento de la clase ',
-            ]),
         new Item(Keys.ANALISIS_AVESTRUZ,
             [
                 '- Es una estrategia donde se ignora un problema, en vez de buscar una solución para este ',
@@ -1375,7 +1363,7 @@ export const HISTORIAS_USUARIO =
                 '- Intentar cumplir con las estimaciones genera una presión que puede apresurar los resultados y afectar la calidad ',
                 '- La división de tareas realmente pequeñas, tambien ayuda a completarlas eficazmente, definiendo lo realmente importante ',
             ]),
-        new Item('casosVsRequisitosVsHu',
+        new Item(Keys.USER_HISTORIES_USE_CASE_REQUISITOS,
             [
                 '<strong>Requisitos del sistema:</strong> Estan escritos de manera tecnica y no dependen del usuario, representan caracteristicas puras ',
                 '',
@@ -1590,7 +1578,7 @@ export const METODOLOGIAS =
                 '- Permite desconocer detalles iniciales que se iran solucionando con las iteracciones ',
                 '- Es funcional desde el primer ciclo, permite mejorar las estimaciones del proyecto ',
             ]),
-        new Item('extrema',
+        new Item(Keys.METODOLOGIAS_MODEL_XP,
             [
                 '- Muy utilizada en la gestión de proyectos ',
                 '- Se centra en potenciar las relaciones intepersonales de los equipos ',

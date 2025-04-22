@@ -70,6 +70,7 @@ export const AGILES_REF = new Map<string, Referencia>([
     [Keys.AGILES_OUTPUT_AND_OUTCOME, new Referencia('https://www.linkedin.com/pulse/impact-vs-output-outcome-t%C3%A9cnicas-para-outcomes-guzm%C3%A1n-/', 'Output & Outcome', AGILES_KEY, 'Impacto y entrega de valor', '2024/05/25')],
     [Keys.AGILES_PRIORITIZATION, new Referencia('https://www.javiergarzas.com/2023/10/las-3-matrices-de-priorizacion-agil.html', 'Priorización', AGILES_KEY, 'Priorización', '2024/08/19')],
     [Keys.AGILES_STAR, new Referencia('https://www.deel.com/es/blog/que-es-metodo-star-como-usarlo/', 'Metodo STAR', AGILES_KEY, 'STAR', '2025/01/08').addRelatedItem(Keys.PEOPLE_PEOPLE_AND_PROCESS)],
+    [Keys.AGILES_CRC, new Referencia('https://agilemodeling.com/artifacts/crcmodel.htm', 'Tarjetas Clase-Responsabilidad-Colaborador', AGILES_KEY, 'Tarjetas CRC', '2023/12/11', '2025/04/21').addRelatedItems(Keys.POO_POO, Keys.USER_HISTORIES_USE_CASE_REQUISITOS, Keys.METODOLOGIAS_MODEL_XP, Keys.UML_CLASES)],
 ]);
 
 export const ANALISIS_KEY = 'Analisis';
@@ -79,7 +80,6 @@ export const ANALISIS_REF = new Map<string, Referencia>([
     ['case', new Referencia('https://www.tutorialspoint.com/es/software_engineering/case_tools_overview.htm', 'Herramientas Case', ANALISIS_KEY, 'Herramientas CASE')],
     ['divide', new Referencia('https://es.khanacademy.org/computing/computer-science/algorithms/merge-sort/a/divide-and-conquer-algorithms', 'Divide y Venceras', ANALISIS_KEY, 'Divide y venceras')],
     ['diseño', new Referencia('https://www.bravent.net/la-importancia-de-un-buen-diseno-del-software/', 'Ventajas de un buen diseño', ANALISIS_KEY, 'Un buen diseño')],
-    ['crc', new Referencia('https://medium.com/@marcosrrg9813/tarjetas-crc-clase-responsabilidad-colaborador-81924cec3af0', 'Tarjetas Clase-Responsabilidad-Colaborador', ANALISIS_KEY, 'Tarjetas CRC')],
     //['avestruz', new Referencia('https://geeks.ms/gvelez/2009/09/28/el-algoritmo-del-avestruz-en-sharepoint/', 'Algoritmo del Avestruz', ANALISIS_KEY, 'Avestruz')],
     [Keys.ANALISIS_AVESTRUZ, new Referencia('https://www.baeldung.com/cs/ostrich-algorithm', 'Algoritmo del Avestruz', ANALISIS_KEY, 'Avestruz', '', '2025/01/18')],
     [Keys.ANALISIS_MODEL_DOMAIN, new Referencia('https://es.stackoverflow.com/questions/102490/que-es-el-modelo-de-dominio-en-dise%C3%B1o-de-software', 'Modelo de Dominio', ANALISIS_KEY, 'Modelo de dominio', '', '2024/12/22').addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_DDD)],
@@ -333,7 +333,7 @@ export const USER_HISTORIES = new Map<string, Referencia>([
     ['gherkin', new Referencia('https://blog.thiga.co/es/gherkin/', 'Definición de los criterios de aceptación', USER_HISTORIES_KEY, 'Gherkin')],
     ['descomposicionHU', new Referencia('https://www.javiergarzas.com/2012/05/descomponer-historias-de-usuario-en-tareas-1.html', 'Descomposición en tareas', USER_HISTORIES_KEY, 'Descomposición')],
     ['storyPoints', new Referencia('https://ronjeffries.com/articles/019-01ff/story-points/Index.html', 'Puntos de Historia', USER_HISTORIES_KEY, 'Puntos')],
-    ['casosVsRequisitosVsHu', new Referencia('http://www.angellozano.com/requisitos-del-sistema-vs-casos-uso-vs-historias-usuario/', 'HU Vs Casos de uso', USER_HISTORIES_KEY, 'Hu Vs Casos de Uso')],
+    [Keys.USER_HISTORIES_USE_CASE_REQUISITOS, new Referencia('http://www.angellozano.com/requisitos-del-sistema-vs-casos-uso-vs-historias-usuario/', 'HU Vs Casos de uso', USER_HISTORIES_KEY, 'Hu Vs Casos de Uso')],
     [Keys.USER_HISTORIES_FORMATS, new Referencia('https://www.linkedin.com/posts/jgarzas_agilidad-bdd-hdd-activity-7178798486358802434-ZK5i/', 'HU Formatos alternativos', USER_HISTORIES_KEY, 'Formatos alternativos', '2024/04/28')],
     [Keys.USER_HISTORIES_ESTIMATIONS, new Referencia('https://www.linkedin.com/posts/jgarzas_las-3-familias-de-estimacion-agil-javier-activity-7231351751667310592-To3O/', 'Estimación Agil', USER_HISTORIES_KEY, 'Estimación Agil', '2024/09/28')],
     [Keys.USER_HISTORIES_DOR_DOD, new Referencia('https://www.linkedin.com/pulse/historias-de-usuario-dor-y-dod-clave-para-la-del-remedios-d%C3%ADaz/', 'Definition Of Done & Definition Of Ready', USER_HISTORIES_KEY, 'DoR & DoD', '2024/12/29')],
@@ -422,7 +422,7 @@ export const METODOLOGIAS_REF = new Map<string, Referencia>([
     ['cascada', new Referencia('https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/el-modelo-en-cascada/', 'Cascada', METODOLOGIAS_KEY, 'Cascada')],
     ['espiral', new Referencia('https://www.ionos.es/startupguide/productividad/modelo-en-espiral/', 'Espiral', METODOLOGIAS_KEY, 'Espiral')],
     ['iterativo', new Referencia('https://proyectosagiles.org/desarrollo-iterativo-incremental/', 'Iterativo-incremental', METODOLOGIAS_KEY, 'Iterativo-Incremental')],
-    ['extrema', new Referencia('https://www.diegocalvo.es/metodologia-xp-programacion-extrema-metodologia-agil/', 'Programación Extrema', METODOLOGIAS_KEY, 'XP')],
+    [Keys.METODOLOGIAS_MODEL_XP, new Referencia('https://www.diegocalvo.es/metodologia-xp-programacion-extrema-metodologia-agil/', 'Programación Extrema', METODOLOGIAS_KEY, 'XP')],
     //['v', new Referencia('https://ingsoftware.weebly.com/ciclo-de-vida-en-v.html', 'Modelo en V', METODOLOGIAS_KEY, 'Modelo V')],
     [Keys.METODOLOGIAS_MODEL_V, new Referencia('https://www.linkedin.com/posts/alexxubyte_systemdesign-coding-interviewtips-activity-7241834626241949696-v5Se/', 'Modelo en V', METODOLOGIAS_KEY, 'Modelo V', '', '2024/10/10')],
     ['rup', new Referencia('https://rupmetodologia.blogspot.com/?view=sidebar', 'Proceso Racional Unificado', METODOLOGIAS_KEY, 'RUP')],
@@ -569,7 +569,7 @@ export const POO_KEY = 'POO';
 export const POO_REF = new Map<string, Referencia>([
     [Keys.POO_POO, new Referencia('https://desarrolloweb.com/articulos/499.php', 'Programación Orientada a Objetos', POO_KEY, 'POO')],
     [Keys.POO_POO_PILARES, new Referencia('https://www.campusmvp.es/recursos/post/los-conceptos-fundamentales-sobre-programacion-orientada-objetos-explicados-de-manera-simple.aspx', 'Pilares de POO', POO_KEY, 'Pilares POO')],
-    ['composicion', new Referencia('https://www.seas.es/blog/informatica/agregacion-vs-composicion-en-diagramas-de-clases-uml/', 'Agregación & Composición', POO_KEY, 'Relaciones')],
+    [Keys.POO_COMPOSICION, new Referencia('https://www.seas.es/blog/informatica/agregacion-vs-composicion-en-diagramas-de-clases-uml/', 'Agregación & Composición', POO_KEY, 'Relaciones')],
     ['pooStatic', new Referencia('https://desarrolloweb.com/articulos/metodos-atributos-static-poo.html', 'palabra reservada static', POO_KEY, 'Static en POO')],
     ['acoplamiento', new Referencia('https://jummp.wordpress.com/2010/06/26/acoplamiento-aferente-acoplamiento-eferente-inestabilidad-y-abstraccion-i/', 'Tipos de acoplamiento', POO_KEY, 'Acoplamiento')],
     [Keys.POO_DESIGN_BY_CONTRACT, new Referencia('https://dosideas.com/wiki/Dise%C3%B1o_Por_Contrato', 'Diseño por Contratos', POO_KEY, 'Contratos I', '', '2025/01/08')],
@@ -780,8 +780,8 @@ export const PERSISTENCY_ADVANCED_REF = new Map<string, Referencia>([
 
 export const UML_KEY = 'UML';
 export const UML_REF = new Map<string, Referencia>([
-    ['uml', new Referencia('https://diagramasuml.com/', 'Lenguaje Unificado de Modelado', UML_KEY, '¿ Que es ?')],
-    ['clase', new Referencia('https://diagramasuml.com/diagrama-de-clases/', 'Diagrama de clases', UML_KEY, 'De Clases')],
+    ['uml', new Referencia('https://diagramasuml.com/', 'Lenguaje Unificado de Modelado', UML_KEY, '¿ Que es UML ?')],
+    [Keys.UML_CLASES, new Referencia('https://diagramasuml.com/diagrama-de-clases/', 'Diagrama de clases', UML_KEY, 'De Clases', '', '2025/04/22').addRelatedItems(Keys.POO_POO, Keys.POO_COMPOSICION)],
     ['componentes', new Referencia('https://diagramasuml.com/componentes/', 'Diagrama de componentes', UML_KEY, 'De Componentes')],
     ['despliegue', new Referencia('https://diagramasuml.com/despliegue/', 'Diagrama de despliegue', UML_KEY, 'De Despliegue')],
     ['usos', new Referencia('https://diagramasuml.com/casos-de-uso/', 'Diagrama de casos de uso', UML_KEY, 'Casos de Uso')],

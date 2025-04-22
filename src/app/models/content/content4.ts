@@ -282,7 +282,20 @@ export const AGILES =
                 '',
                 '<strong>Resultado:</strong> Se buscan resultados cuantificables y medibles, consecuencias de las acciones a corto y largo plazo',
                 '- Es importante evaluar el aprendizaje y como se puede aplicar para futuras situaciones ',
-            ])
+            ]),
+        new Item(Keys.AGILES_CRC,
+            [
+                '- Aunque nacieron como una forma de modelar clases en POO, se han convertido en una gran utilidad para modelar conceptos y en la programación extrema ',
+                '- Ayuda a los equipos a entender los procesos de una manera más facil y concisa, sin la necesidad inmediata de realizar el codigo ',
+                '- Al tener todos las posibles parte del sistema a la disposición se reduce la redundancia y se asignan mejor las responsabilidades ',
+                '- Es ideal hacer esto mediante una lluvia de ideas, donde todos participen y se tengan en cuenta multiples perspectivas ',
+                '- Cuando hay demasiadas tarjetas, estas empiezan a añadir complejidad al entendimiento del modelado ',
+                '- En caso de que se empiecen a acumular, se deberian desarrollar casos de uso, y explorar diferentes flujos o especializaciones ',
+                '',
+                '<strong>Clase:</strong> Nombre de la clase en si, el cual debe ser diciente y que ayude a entender el porque de su creación ',
+                '<strong>Responsabilidad:</strong> Es lo que es y que funciones tiene, se debe ser especifico, pero no puede estar cerrada a modificaciones ',
+                '<strong>Colaborador:</strong> Son otras clases ó entidades que son necesarias para el correcto funcionamiento de la clase ',
+            ]),
     ];
 
 export const ARQUITECTURAS =
@@ -1602,7 +1615,7 @@ export const POO =
                 '<strong>Herencia:     </strong> Todo hijo tienen acceso a los metodos y atributos del padre, además de las propias, pero el padre no conoce a ningun hijo ',
                 '<strong>Polimorfismo: </strong> Cada objeto se puede comportar diferente, aunque tenga una misma base, solamente cambiandose por la instancia deseada ',
             ]),
-        new Item('composicion',
+        new Item(Keys.POO_COMPOSICION,
             [
                 '- En los diagramas UML se suele representar por medio de un diamante con o sin relleno, ubicado en la clase contenedora ',
                 '- En cuestion de codigo ambas relaciones no cuentan con grandes diferencias entre si (en la mayoria de lenguajes) ',
