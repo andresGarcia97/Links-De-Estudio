@@ -986,12 +986,13 @@ export const PEOPLE =
                 ' - es importante generar acuerdos y dejarlos por escrito, asi demostrar alguna equivocación, ',
                 ' - y quien es el responsable o que este obligado a resolver el problema',
             ]),
-        new Item('capa8',
+        new Item(Keys.PEOPLE_CAPA_8,
             [
                 '- Es un error relacionado directamente con el usuario final, ya sea por desconocimiento o por un mal diseño de la UX/UI',
-                '- Esta capa no existe como tal, es una expresión para aludir la culpa al usuario ',
+                '- Esta capa no existe como tal, es una expresión para aludir la culpa directamente al usuario ',
                 '- El nombre viene del modelo OSI que consta de 7 capas, donde la septima capa es la aplicación, la que usa el usuario final ',
-                '- Estos errores son de las principales fuente de error en las organizaciones y excelente puerta de entrada para los hackers ',
+                '- Estos errores son de las principales fuente de error en las organizaciones, al mismo tiempo que son los más evitables ',
+                '- Son una puerta de entrada excelente para los hackers, aprovechandose de conductas tipicas y errores humanos '
             ]),
         new Item(Keys.PEOPLE_NO_NEWS_GOOD_NEWS,
             [
