@@ -45,7 +45,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.ANALISIS_SYSTEM_DESIGN_CONCEPTS_II;
+export const LAST_ITEM = Keys.TESTING_BUG;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -610,10 +610,12 @@ export const TESTING_REF = new Map<string, Referencia>([
     ['triangulo', new Referencia('https://proyectosagiles.org/triangulo-hierro/', 'Triangulo de Hierro', TESTING_KEY, 'Triangulo de Hierro')],
     ['cobertura', new Referencia('https://argonur.com/2020/05/11/code-coverage-cobertura-de-codigo/', 'Cobertura de pruebas', TESTING_KEY, 'Cobertura')],
     //['falsos', new Referencia('https://www.qalovers.com/2015/03/diferencia-entre-falso-positivo-y-falso_5.html#:~:text=La%20definici%C3%B3n%20de%20falso%20negativo,sistema%20que%20est%C3%A1%20realmente%20infectada.%22&text=Un%20falso%20negativo%20llevado%20a,cuando%20en%20realidad%20est%C3%A1%20fallando.', 'Falsos positivos & Falsos negativos', TESTING_KEY, 'Falsos Resultados')],
-    ['falsos', new Referencia('https://www.redradix.com/insights/detalles-implementacionl-tests-articulo-de-kentc-dodds', 'Falsos positivos & Falsos negativos', TESTING_KEY, 'Falsos Resultados')],
+    //['falsos', new Referencia('https://www.redradix.com/insights/detalles-implementacionl-tests-articulo-de-kentc-dodds', 'Falsos positivos & Falsos negativos', TESTING_KEY, 'Falsos Resultados')],
+    [Keys.TESTING_FALSES_POSITIVES_NEGATIVES, new Referencia('https://www.browserstack.com/guide/false-positives-and-false-negatives-in-testing', 'Falsos positivos & Falsos negativos', TESTING_KEY, 'Falsos Resultados', '2024/07/11', '2025/04/26')],
     [Keys.TESTING_QUALITY_ASSURANCE, new Referencia('https://www.bbvaapimarket.com/es/mundo-api/que-es-qa-y-por-que-no-debe-faltar-en-tu-proyecto/', '¿ Que es QA ?', TESTING_KEY, 'Quality Assurance', '', '2025/03/15').addRelatedItem(Keys.PEOPLE_GESTION_EXPECTATIVAS)],
     [Keys.TESTING_DATA_CREATION, new Referencia('https://www.linkedin.com/pulse/creating-test-data-object-mother-builder-patterns-alves-pimenta/', 'Patrones de creación de datos', TESTING_KEY, 'Creación de datos', '2024/07/11')],
     [Keys.TESTING_FIVE_FACTORS, new Referencia('https://madeintandem.com/blog/five-factor-testing/', 'Five Factor Testing', TESTING_KEY, 'Five Factor Testing', '2025/03/02').addRelatedItems(Keys.VERSIONAMIENTO_DOCUMENTATION, Keys.ANALISIS_OPINIONATED_NO, Keys.REFACTORING_LEGACY_CODE)],
+    [Keys.TESTING_BUG, new Referencia('https://testgrid.io/blog/bug-life-cycle/', 'Ciclo de vida de un Error(Bug)', TESTING_KEY, 'Bugs', '2025/04/23').addRelatedItems(Keys.BUENAS_PRACTICAS_DEBUGGING, Keys.BUENAS_PRACTICAS_LOGGING, Keys.PEOPLE_CAPA_8, Keys.COMPILACION_ERRORS_AND_EXCEPTIONS)]
 ]);
 
 export const TESTING_ADVANCED_KEY = 'Testing-Avanzado';
