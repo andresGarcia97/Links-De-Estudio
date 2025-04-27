@@ -297,6 +297,7 @@ export const ANALISIS_SYSTEM_DESIGN_II = 'systemDesign-II';
 export const ANALISIS_DELIVERY_GUARANTED = 'deliveryGuaranted';
 export const ANALISIS_SYSTEM_THINKING = 'systemThinking';
 export const ANALISIS_COHESERS_DECOUPLERS = 'cohesers-decouplers';
+export const ANALISIS_COMMON_METRICS = 'commonMetrics';
 export const VERSIONAMIENTO_MANAGEMENT_VERSIONS = 'managementVersions-git';
 export const VERSIONAMIENTO_LICENSES = 'licences';
 export const VERSIONAMIENTO_DOCUMENTATION = 'documentation';

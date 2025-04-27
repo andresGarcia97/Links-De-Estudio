@@ -45,7 +45,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.TESTING_BUG;
+export const LAST_ITEM = Keys.ANALISIS_COMMON_METRICS;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -103,6 +103,10 @@ export const ANALISIS_REF = new Map<string, Referencia>([
     [Keys.ANALISIS_DELIVERY_GUARANTED, new Referencia('https://docs.confluent.io/kafka/design/delivery-semantics.html', 'Delivery Guaranted', ANALISIS_KEY, 'Delivery Guaranted', '2025/03/21').addRelatedItems(Keys.MICROSERVICES_PRODUCER_CONSUMER_PROBLEM, Keys.APIS_IDEMPOTENCIA)],
     [Keys.ANALISIS_SYSTEM_THINKING, new Referencia('https://medium.com/nerd-for-tech/part-2-applying-systems-thinking-to-software-development-e98cbd195a83', 'Pensamiento Sistemico en el Diseño', ANALISIS_KEY, 'Pensamiento Sistemico', '2025/03/29').addRelatedItems(Keys.APIS_REST_VS_MESSAGING, Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.LEYES_LEHMAN, Keys.LEYES_CONWAY, Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES, Keys.HARDWARE_ESCALAMIENTO)],
     [Keys.ANALISIS_COHESERS_DECOUPLERS, new Referencia('https://itnext.io/cohesers-and-decouplers-ecac2964081a', 'Cohesores y Desacopladores ', ANALISIS_KEY, 'Desacoplamiento', '2025/04/07').addRelatedItems(Keys.POO_COUPLING_AND_COHESION, Keys.ARQUITECTURAS_MONOLITOS, Keys.META_CARACTERISTICAS_DEAD_LOCKS, Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.SECURITY_CONDICION_CARRERA, Keys.PERSISTENCY_ADVANCED_SCALING_DB, Keys.LEYES_CONWAY)],
+    [Keys.ANALISIS_COMMON_METRICS, new Referencia('https://medium.com/javarevisited/dont-go-into-your-system-design-interview-without-mastering-this-31ee7af2ed7b', 'Metricas comunes en System Design', ANALISIS_KEY, 'Metricas comunes', '2025/04/26')
+        .addRelatedItems(Keys.META_CARACTERISTICAS_CACHE, Keys.NUBE_OBSERVABILIDAD, Keys.HARDWARE_MONITOREO, Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.CD_CI_FAILOVER, Keys.PERSISTENCY_ACID)
+        .addMoreReferences("https://systemdesignschool.io/fundamentals/qps", "https://speedscale.com/blog/determine-transactions-per-second/", "https://medium.com/@alexa.polly007/understanding-caching-eviction-invalidation-patterns-and-their-use-cases-9fbfd34be970")
+    ],
 ]);
 
 export const ARQUITECTURAS_KEY = 'Arquitecturas';
