@@ -40,7 +40,7 @@ export class SectionComponent implements OnInit, OnDestroy {
     }
 
     if ("AltGraph" === key) {
-      this.openAllLinks();
+      this.openAllLinksIncludeExtraReferences();
       return;
     }
 
@@ -69,6 +69,7 @@ export class SectionComponent implements OnInit, OnDestroy {
   iterationBackwards = false;
   showRelatedSections = false;
   relatedItems: string[] = [];
+  moreReferences: string[] = [];
 
   ngOnInit(): void {
     this.lengthItems = this.items.length - 1;
@@ -135,6 +136,7 @@ export class SectionComponent implements OnInit, OnDestroy {
     this.dateUpdate = this.components.get(key)?.dateUpdate ?? '';
     this.itemSelected = this.getIndexItemSelected(this.selection);
     this.relatedItems = this.components.get(key)?.relatedItems ?? [];
+    this.moreReferences = this.components.get(key)?.moreReferences ?? [];
   }
 
   public getIndexItemSelected(key: string): number {
@@ -204,12 +206,24 @@ export class SectionComponent implements OnInit, OnDestroy {
     }
   }
 
-  public openAllLinks(): void {
+  private openAllLinksIncludeExtraReferences(): void {
     this.components.forEach(item => {
       const newWindow = window.open(item.referencia, '_blank', 'noopener,noreferrer');
       if (newWindow) {
         newWindow.opener = null;
       }
+
+      const extraReferences = item.moreReferences;
+
+      if(extraReferences.length > 0){
+        extraReferences.forEach(reference => {
+          const newWindowMoreReference = window.open(reference, '_blank', 'noopener,noreferrer');
+          if (newWindowMoreReference) {
+            newWindowMoreReference.opener = null;
+          }
+        });
+      }
+
     })
   }
 

@@ -23,6 +23,7 @@ export class Referencia {
     dateRead = '';
     dateUpdate = '';
     relatedItems: string[] = [];
+    moreReferences: string[] = [];
 
     constructor(referencia: string, tittle: string, component: string, tittleShort: string, dateRead = '', dateUpdate = '') {
         this.referencia = referencia;
@@ -40,6 +41,11 @@ export class Referencia {
 
     public addRelatedItems(...relatedItems: string[]): Referencia {
         this.relatedItems.push(...relatedItems);
+        return this;
+    }
+
+    public addMoreReferences(...moreReferences: string[]): Referencia {
+        this.moreReferences.push(...moreReferences);
         return this;
     }
 
