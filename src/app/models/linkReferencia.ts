@@ -504,7 +504,9 @@ export const ANALISIS_DATA_REF = new Map<string, Referencia>([
 
 export const PARADIGMAS_KEY = 'Paradigmas';
 export const PARADIGMAS_REF = new Map<string, Referencia>([
-    ['imperativo', new Referencia('https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/paradigmas-de-programacion', 'Paradigmas Imperativo & Declarativo', PARADIGMAS_KEY, 'Estilos Programación')],
+    [Keys.PARADIGMAS_IMPERATIVO, new Referencia('https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/paradigmas-de-programacion', 'Paradigmas Imperativo & Declarativo', PARADIGMAS_KEY, 'Imperativo & Declarativo', '', '2025/04/28')
+        .addMoreReferences("https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/programacion-declarativa/", "https://www.ionos.com/es-us/digitalguide/paginas-web/desarrollo-web/programacion-imperativa/")
+    ],
     ['funcional', new Referencia('https://codigofacilito.com/articulos/programacion-funcional', 'Paradigma funcional', PARADIGMAS_KEY, 'Funcional')],
     ['scripting', new Referencia('https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/que-son-los-lenguajes-de-scripting/', 'Lenguajes de scripting', PARADIGMAS_KEY, 'Scripting')],
     ['reactiva', new Referencia('https://profile.es/blog/que-es-la-programacion-reactiva-una-introduccion/', 'Programación reactiva', PARADIGMAS_KEY, 'Reactiva')],
@@ -512,7 +514,8 @@ export const PARADIGMAS_REF = new Map<string, Referencia>([
     ['marcado', new Referencia('https://www.ticarte.com/contenido/que-son-los-lenguajes-de-marcas', 'Lenguajes de marcado', PARADIGMAS_KEY, 'De Marcado')],
     ['aspectos', new Referencia('https://www.baeldung.com/spring-aop', 'Orientación a aspectos', PARADIGMAS_KEY, 'Aspectos')],
     ['logica', new Referencia('https://ferestrepoca.github.io/paradigmas-de-programacion/proglogica/logica_teoria/aplicaciones.html', 'Programación Logica', PARADIGMAS_KEY, 'Logica')],
-    ['estructurada', new Referencia('https://informatica.uv.es/iiguia/AED/oldwww/2004_05/AED.Tema.04.pdf', 'Programación Estructurada', PARADIGMAS_KEY, 'Estructurada')],
+    //['estructurada', new Referencia('https://informatica.uv.es/iiguia/AED/oldwww/2004_05/AED.Tema.04.pdf', 'Programación Estructurada', PARADIGMAS_KEY, 'Estructurada')],
+    [Keys.PARADIGMAS_ESTRUCTURADA, new Referencia('https://webs.um.es/ldaniel/iscyp17-18/10-programacionEstructurada.html', 'Programación Estructurada', PARADIGMAS_KEY, 'Estructurada', '', '2025/04/28')],
     [Keys.PARADIGMAS_PARADIGMA_DATOS, new Referencia('https://blog.klipse.tech/dop/2022/06/22/principles-of-dop.html', 'Programación Orientada a Datos', PARADIGMAS_KEY, 'Datos')],
 ]);
 
