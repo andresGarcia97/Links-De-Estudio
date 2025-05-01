@@ -906,7 +906,7 @@ export const COMPILACION =
                 '- Son lenguajes más cercanos al entendimiento humano, además de ser más dinamicos y contar con una gran cantidad de abstracciones ',
                 '- Son independientes de las maquinas donde se ejecuten, a traves de un traductor que funciona como intermediario ',
             ]),
-        new Item('interprete',
+        new Item(Keys.COMPILACION_INTERPRETADOS,
             [
                 '<strong>Compilados</strong>',
                 '- Suelen ser lenguajes de niveles alto y medio',

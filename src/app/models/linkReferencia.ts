@@ -45,7 +45,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.ANALISIS_COMMON_METRICS;
+export const LAST_ITEM = Keys.META_CARACTERISTICAS_MEMORY_MANAGEMENT;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -188,7 +188,7 @@ export const COMPILACION_KEY = 'Compilacion';
 export const COMPILACION_REF = new Map<string, Referencia>([
     [Keys.COMPILACION_COMPILACION, new Referencia('https://developer.mozilla.org/es/docs/Glossary/Compile', '¿ Que es compilar ?', COMPILACION_KEY, '¿ Que es Compilar ?', '', '2025/03/19')],
     ['nivel', new Referencia('https://desarrolloweb.com/articulos/2358.php', 'Niveles de compilación', COMPILACION_KEY, 'Niveles')],
-    ['interprete', new Referencia('https://yosoy.dev/diferencia-entre-lenguajes-compilados-e-interpretados/', 'Tipos de lenguajes por ejecución', COMPILACION_KEY, 'Ejecución')],
+    [Keys.COMPILACION_INTERPRETADOS, new Referencia('https://yosoy.dev/diferencia-entre-lenguajes-compilados-e-interpretados/', 'Tipos de lenguajes por ejecución', COMPILACION_KEY, 'Ejecución')],
     [Keys.COMPILACION_TRANSPILACION, new Referencia('https://ingenieriadesoftware.es/diferencia-transpilacion-compilacion/', '¿ Que es la transpilación ?', COMPILACION_KEY, 'Transpilación', '', '2025/02/09').addRelatedItem(Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES)],
     ['azucarSintactico', new Referencia('https://es.wikipedia.org/wiki/Az%C3%BAcar_sint%C3%A1ctico', 'Azucar Sintactico', COMPILACION_KEY, 'Azucar Sintactico')],
     ['coercion', new Referencia('https://developer.mozilla.org/es/docs/Glossary/Type_coercion', 'Coerción', COMPILACION_KEY, 'Coerción')],
@@ -390,6 +390,10 @@ export const META_CARATERISTICAS_REF = new Map<string, Referencia>([
     [Keys.META_CARACTERISTICAS_TYPE_ERASURE, new Referencia('https://www.baeldung.com/java-type-erasure', 'Borrado de Tipos', META_CARACTERISTICAS_KEY, 'Borrado de Tipos', '2024/11/15').addRelatedItem(Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES)],
     [Keys.META_CARACTERISTICAS_DEAD_LOCKS, new Referencia('https://www.linkedin.com/posts/bytebytego_systemdesign-coding-interviewtips-activity-7288797053613166592-CNce/', 'DeadLocks - Bloqueos', META_CARACTERISTICAS_KEY, 'DeadLocks - Bloqueos', '2025/01/26').addRelatedItems(Keys.PERSISTENCY_ADVANCED_LOCKING, Keys.PERSISTENCY_DBMS, Keys.PERSISTENCY_DL)],
     [Keys.META_CARACTERISTICAS_TIPOS, new Referencia('https://wiki.uqbar.org/wiki/articles/esquemas-de-tipado.html', 'Sistema de Tipos', META_CARACTERISTICAS_KEY, 'Tipos', '2025/02/03').addRelatedItems(Keys.PARADIGMAS_PARADIGMA_SCRIPTING, Keys.POO_POLIMORFISMO)],
+    [Keys.META_CARACTERISTICAS_MEMORY_MANAGEMENT, new Referencia('https://peerdh.com/blogs/programming-insights/understanding-memory-management-in-programming-paradigms', 'Manejo de la memoria', META_CARACTERISTICAS_KEY, 'Manejo de la memoria', '2025/04/28')
+        .addRelatedItems(Keys.COMPILACION_INTERPRETADOS, Keys.COMPILACION_COMPILACION, Keys.PARADIGMAS_IMPERATIVO, Keys.POO_INMUTABILITY, Keys.COMPILACION_OBJECT_CREATION)
+        .addMoreReferences("https://medium.com/@alexander.paul.gilbert/oop-vs-functional-is-dead-ff51a70c83ce")
+    ],
 ]);
 
 export const META_ESTRUCTURAS_KEY = 'Meta-Estructuras';
