@@ -45,7 +45,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.META_CARACTERISTICAS_MEMORY_MANAGEMENT;
+export const LAST_ITEM = Keys.CD_CI_MONITORING;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -451,7 +451,7 @@ export const NUBE_REF = new Map<string, Referencia>([
     ['dns', new Referencia('https://www.ionos.es/digitalguide/servidores/know-how/que-es-el-servidor-dns-y-como-funciona/', 'Servidor DNS', NUBE_KEY, 'Servidor DNS')],
     //['falaciesDistributedSystems', new Referencia('https://architecturenotes.co/fallacies-of-distributed-systems/', 'Sistemas Distribuidos', NUBE_KEY, 'Sistemas Distribuidos')],
     [Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, new Referencia('https://www.genbeta.com/desarrollo/las-8-falacias-de-la-computacion-distribuida', 'Falacias Sistemas Distribuidos', NUBE_KEY, 'Sistemas Distribuidos', '', '2024/10/06')],
-    ['loadBalancing', new Referencia('https://aws.amazon.com/es/what-is/load-balancing/', 'Balancear la Carga', NUBE_KEY, 'Balanceador de carga')],
+    [Keys.NUBE_LOAD_BALANCING, new Referencia('https://aws.amazon.com/es/what-is/load-balancing/', 'Balancear la Carga', NUBE_KEY, 'Balanceador de carga', '2023/12/30', '2025/05/01')],
     [Keys.NUBE_LATENCY, new Referencia('https://blog.bytebytego.com/p/ep110-top-5-strategies-to-reduce#top-strategies-to-reduce-latency', 'Reducir la latencia', NUBE_KEY, 'Reducir la Latencia', '2024/05/12')],
     [Keys.NUBE_OBSERVABILIDAD, new Referencia('https://medium.com/@rcougil/software-observabilidad-logs-m%C3%A9tricas-y-trazabilidad-d5bcca56608d', 'Observabilidad', NUBE_KEY, 'Observabilidad', '2024/05/26')],
     [Keys.NUBE_TWO_PHASE_COMMIT, new Referencia('https://hongilkwon.medium.com/when-to-use-two-phase-commit-in-distributed-transaction-f1296b8c23fd', 'Two Phase Commit', NUBE_KEY, 'Two Phase Commit', '2024/11/26')],
@@ -886,13 +886,15 @@ export const CD_CI_REF = new Map<string, Referencia>([
     [Keys.CD_CI_CD_CI, new Referencia('https://www.aplyca.com/es/blog/integracion-entrega-continua-ci-cd', 'Integración Continua y Entrega Continua', CD_CI_KEY, 'CD/CI', '', '2024/08/25')],
     [Keys.CD_CI_DEV_OPS, new Referencia('https://www.paradigmadigital.com/techbiz/que-es-devops-y-sobre-todo-que-no-es-devops/', 'DevOps', CD_CI_KEY, 'DevOps', '', '2025/03/15').addRelatedItem(Keys.TESTING_QUALITY_ASSURANCE)],
     [Keys.CD_CI_IAS_CODE, new Referencia('https://www.redhat.com/es/topics/automation/what-is-infrastructure-as-code-iac', 'Infraestructura como Codigo', CD_CI_KEY, 'Infraestructura & Codigo').addRelatedItem(Keys.CONTENEDORES_DOCKER)],
-    ['stateless-stateful', new Referencia('https://refactorizando.com/stateful-vs-stateless-arquitectura/', 'Stateful VS Stateless', CD_CI_KEY, 'Stateless VS Stateful')],
+    //['stateless-stateful', new Referencia('https://refactorizando.com/stateful-vs-stateless-arquitectura/', 'Stateful VS Stateless', CD_CI_KEY, 'Stateless VS Stateful')],
+    [Keys.CD_CI_STATELESS_STATEFUL, new Referencia('https://www.redhat.com/en/topics/cloud-native-apps/stateful-vs-stateless', 'Stateful VS Stateless', CD_CI_KEY, 'Stateless VS Stateful', '2023/12/26', '2025/05/01').addRelatedItems(Keys.MICROSERVICES_FUNDAMENTALS, Keys.NUBE_IAAS_PAAS_SAAS, Keys.APIS_IDEMPOTENCIA)],
     [Keys.CD_CI_DEPLOYMENT_PATTERNS, new Referencia('https://newsletter.techworld-with-milan.com/p/what-are-deployment-patterns', 'Patrones de Despliegue', CD_CI_KEY, 'Patrones de Despliegue')],
     ['industrialDevops', new Referencia('https://itrevolution.com/articles/what-is-industrial-devops/', 'Industrial DevOps', CD_CI_KEY, 'Industrial DevOps', '2023/11/21')],
     ['pipelines', new Referencia('https://semaphoreci.com/blog/cicd-pipeline', 'Pipelines', CD_CI_KEY, '¿ Que es un Pipeline ?', '2023/12/26')],
     [Keys.CD_CI_CELL_BASED_ARQUITECTURE, new Referencia('https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of-impact-with-cell-based-architecture/what-is-a-cell-based-architecture.html', 'Cell Based Arquitecture', CD_CI_KEY, 'Cell Based Arquitecture', '2024/08/25')],
     [Keys.CD_CI_RULES, new Referencia('https://semaphoreci.com/blog/rules-ci-pipeline', 'Rules', CD_CI_KEY, 'Rules', '2024/12/26').addRelatedItems(Keys.GIT_BRANCHS, Keys.CALIDAD_LINTING, Keys.TESTING_PIRAMIDE, Keys.CONTENEDORES_DOCKER)],
     [Keys.CD_CI_FAILOVER, new Referencia('https://stackoverflow.blog/2020/10/23/adrian-cockcroft-aws-failover-chaos-engineering-fault-tolerance-distaster-recovery/', 'Failover & Ingenieria del caos', CD_CI_KEY, 'Failover, Caos, Resiliencia', '2025/04/06').addRelatedItems(Keys.NUBE_SRE, Keys.ANALISIS_SINGLE_POINT_OF_FAILURE, Keys.NUBE_DISPONIBILITY)],
+    [Keys.CD_CI_MONITORING, new Referencia('https://www.squadcast.com/blog/comparing-uptime-monitoring-heartbeat-monitoring-and-synthetic-monitoring', 'Monitoreo de un sistema', CD_CI_KEY, 'Monitoreo', '2025/05/01').addRelatedItems(Keys.NUBE_DISPONIBILITY, Keys.NUBE_SRE, Keys.NUBE_LOAD_BALANCING, Keys.HARDWARE_ESCALAMIENTO, Keys.WEB_GOLDEN_SIGNALS, Keys.MICROSERVICES_DISTRIBUTED_TRANSACTIONS)],
 ]);
 
 export const MICRO_SERVICES_KEY = 'Microservicios';
