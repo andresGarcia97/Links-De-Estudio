@@ -21,31 +21,25 @@ export class LinkReferencia {
     ]);
 
     public routesAndSections: Map<string, string> = new Map([
-        [AGILES_KEY, 'agiles'],                               [ANALISIS_KEY, 'analisis'],
-        [ARQUITECTURAS_KEY, 'arquitecturas'],                 [BUENAS_PRACTICAS_KEY, 'buenas-practicas'],
-        [CALIDAD_KEY, 'calidad'],                             [COMPILACION_KEY, 'compilacion'],
-        [CONOCIMIENTO_EMPIRICO_KEY, 'conocimiento-empirico'], [LEYES_KEY, 'leyes'],
-        [CONTENEDORES_KEY, 'contenedores'],                   [ESTRATEGIAS_DESARROLLO_KEY, 'estrategias-de-desarrollo'],
-        [FRAMEWORKS_KEY, 'frameworks'],                       [GIT_KEY, 'git'],
-        [USER_HISTORIES_KEY, 'historias-de-usuario'],         [MALAS_PRACTICAS_KEY, 'malas-practicas'],
-        [META_CARACTERISTICAS_KEY, 'metacaracteristicas'],    [META_ESTRUCTURAS_KEY, 'meta-estructuras'],
-        [METODOLOGIAS_KEY, 'metodologias'],                   [NUBE_KEY, 'nube'],
-        [ANALISIS_DATA_KEY, 'analisis-datos'],                [PATRONES_KEY, 'patrones'],
-        [PARADIGMAS_KEY, 'paradigmas'],                       [PEOPLE_KEY, 'personas'],
-        [POO_KEY, 'poo'],                                     [TESTING_KEY, 'testing'],
-        [TESTING_ADVANCED_KEY, 'testing-avanzado'],           [REFACTORING_KEY, 'refactorizacion'],
-        [REQUISITOS_KEY, 'requisitos'],                       [PRINCIPIOS_KEY, 'principios'],
-        [SECURITY_KEY, 'seguridad'],                          [SMELL_CODES_KEY, 'smells-codes'],
-        [PERSISTENCY_KEY, 'bases-de-datos'],                  [UML_KEY, 'uml'],
-        [VERSIONAMIENTO_KEY, 'versionamiento'],               [HARDWARE_KEY, 'hardware'],
-        [WEB_KEY, 'web'],                                     [NEURO_MARKETING_KEY, 'neuro-marketing'],
-        [PERSISTENCY_ADVANCED_KEY, 'bd-avanzado'],            [CD_CI_KEY, 'cd-ci-infraestructura'],
-        [APIS_KEY, 'apis'],                                   [MICRO_SERVICES_KEY, 'microservices']
+        [ANALISIS_KEY, 'analisis'],     [PATRONES_KEY, 'patrones'],             [META_CARACTERISTICAS_KEY, 'metacaracteristicas'],
+        [AGILES_KEY, 'agiles'],         [PEOPLE_KEY, 'personas'],               [CONOCIMIENTO_EMPIRICO_KEY, 'conocimiento-empirico'],  
+        [UML_KEY, 'uml'],               [PERSISTENCY_KEY, 'bases-de-datos'],    [ESTRATEGIAS_DESARROLLO_KEY, 'estrategias-de-desarrollo'],                  
+        [GIT_KEY, 'git'],               [METODOLOGIAS_KEY, 'metodologias'],     [BUENAS_PRACTICAS_KEY, 'buenas-practicas'],
+        [CALIDAD_KEY, 'calidad'],       [COMPILACION_KEY, 'compilacion'],       [MALAS_PRACTICAS_KEY, 'malas-practicas'],
+        [LEYES_KEY, 'leyes'],           [CONTENEDORES_KEY, 'contenedores'],     [CD_CI_KEY, 'cd-ci-infraestructura'],
+        [POO_KEY, 'poo'],               [FRAMEWORKS_KEY, 'frameworks'],         [NEURO_MARKETING_KEY, 'neuro-marketing'],     
+        [WEB_KEY, 'web'],               [PRINCIPIOS_KEY, 'principios'],         [PERSISTENCY_ADVANCED_KEY, 'bd-avanzado'],   
+        [APIS_KEY, 'apis'],             [SECURITY_KEY, 'seguridad'],            [USER_HISTORIES_KEY, 'historias-de-usuario'],
+        [PARADIGMAS_KEY, 'paradigmas'], [SMELL_CODES_KEY, 'smells-codes'],      [META_ESTRUCTURAS_KEY, 'meta-estructuras'],                     
+        [HARDWARE_KEY, 'hardware'],     [REFACTORING_KEY, 'refactorizacion'],   [MICRO_SERVICES_KEY, 'microservices'],   
+        [REQUISITOS_KEY, 'requisitos'], [VERSIONAMIENTO_KEY, 'versionamiento'], [TESTING_ADVANCED_KEY, 'testing-avanzado'],
+        [NUBE_KEY, 'nube'],             [ARQUITECTURAS_KEY, 'arquitecturas'],   [ANALISIS_DATA_KEY, 'analisis-datos'],                  
+        [TESTING_KEY, 'testing'],                                                          
     ]);
 
 }
 
-export const LAST_ITEM = Keys.CD_CI_MONITORING;
+export const LAST_ITEM = Keys.ANALISIS_SYSTEM_DESIGN_CONCEPTS_III;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -85,7 +79,6 @@ export const ANALISIS_REF = new Map<string, Referencia>([
     [Keys.ANALISIS_MODEL_DOMAIN, new Referencia('https://es.stackoverflow.com/questions/102490/que-es-el-modelo-de-dominio-en-dise%C3%B1o-de-software', 'Modelo de Dominio', ANALISIS_KEY, 'Modelo de dominio', '', '2024/12/22').addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_DDD)],
     [Keys.ANALISIS_TIME_COMPLEXITY, new Referencia('https://www.freecodecamp.org/news/big-o-cheat-sheet-time-complexity-chart/', 'Big O Notación', ANALISIS_KEY, 'Big O Notación', '2022/12/30', '2025/03/29').addRelatedItems(Keys.BUENAS_PRACTICAS_COMPLEJIDAD_ALGORITMICA, Keys.BUENAS_PRACTICAS_COMPLEJIDAD_COGNITIVA)],
     //['kpis', new Referencia('https://www.ibm.com/garage/method/practices/learn/kpis-measure-guide-progress/', 'KPIs', ANALISIS_KEY, 'KPI', '2022/12/30')],
-    [Keys.ANALISIS_KPI_OKR, new Referencia('https://asana.com/es/resources/okr-vs-kpi', 'KPI & OKR', ANALISIS_KEY, 'KPI & OKR', '2022/12/30', '2025/01/18').addRelatedItems(Keys.AGILES_DEMING, Keys.CALIDAD_METRICS_SOFTWARE)],
     [Keys.ANALISIS_MANIFEST_REACTIVE, new Referencia('https://www.reactivemanifesto.org/es', 'Manifiesto Reactivo', ANALISIS_KEY, 'Manifiesto Reactivo', '2023/02/19', '2024/12/10')],
     ['declineDesign', new Referencia('https://uxdesign.cc/the-decline-in-design-thinking-8fd0145fb4d2', 'Declive del diseño', ANALISIS_KEY, 'Declive del Diseño', '2023/07/23')],
     ['opinionated-no', new Referencia('https://www.baeldung.com/cs/opinionated-software-design', 'Diseño con & sin opiniones', ANALISIS_KEY, 'Diseño con/sin opiniones', '2023/11/11')],
@@ -95,6 +88,7 @@ export const ANALISIS_REF = new Map<string, Referencia>([
     [Keys.ANALISIS_HIGH_LEVEL_VS_LOW_LEVEL, new Referencia('https://www.baeldung.com/cs/hld-lld', 'High Level Vs Low Level', ANALISIS_KEY, 'High Level Vs Low Level', '2024/09/20').addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_SLDC).addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.PERSISTENCY_ERD)],
     [Keys.ANALISIS_SYSTEM_DESIGN_CONCEPTS_I, new Referencia('https://www.linkedin.com/posts/brijpandeyji_top-12-system-design-concepts-every-developer-activity-7238729739065069568-h1t6/', 'System Design Concepts I', ANALISIS_KEY, 'System Design Concepts I', '2024/09/29')],
     [Keys.ANALISIS_SYSTEM_DESIGN_CONCEPTS_II, new Referencia('https://www.linkedin.com/posts/alexxubyte_systemdesign-coding-interviewtips-activity-7320110326635520001-mdMb/', 'System Design Concepts II', ANALISIS_KEY, 'System Design Concepts II', '2025/04/21')],
+    [Keys.ANALISIS_SYSTEM_DESIGN_CONCEPTS_III, new Referencia('https://medium.com/javarevisited/21-essential-system-design-building-blocks-for-software-engineers-c5f4120549c4', 'System Design Concepts III', ANALISIS_KEY, 'System Design Concepts III', '2025/05/03')],
     [Keys.ANALISIS_SINGLE_POINT_OF_FAILURE, new Referencia('https://levelup.gitconnected.com/single-point-of-failure-spof-in-system-design-c8bbac5af993', 'Single Point Of Failure', ANALISIS_KEY, 'SPOF', '2024/12/07')],
     [Keys.ANALISIS_DOMAIN_EVENTS, new Referencia('https://medium.com/yield-studio/ddd-do-not-leak-your-domain-events-456919346273', 'Domain Events', ANALISIS_KEY, 'Domain Events', '2025/02/28').addRelatedItems(Keys.POO_COUPLING_AND_COHESION, Keys.ESTRATEGIAS_DESARROLLO_DDD)],
     [Keys.ANALISIS_LIGHT_EVENTS_VS_RICH_EVENTS, new Referencia('https://theburningmonk.com/2024/11/when-to-use-light-events-vs-rich-events-in-event-driven-architectures/', 'Light Events VS Rich Events', ANALISIS_KEY, 'Light/Rich Events', '2024/12/08').addRelatedItems(Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.PERSISTENCY_NORMALIZATION, Keys.ESTRATEGIAS_DESARROLLO_DDD)],
@@ -682,6 +676,7 @@ export const REQUISITOS_REF = new Map<string, Referencia>([
     [Keys.REQUISITOS_OBJETIVOS, new Referencia('https://www.pqforce.com/es/blog/objetivos-frente-a-requisitos-cual-es-la-diferencia/', 'Objetivos & Requisitos', REQUISITOS_KEY, 'Objetivos & Requisitos')],
     ['cambioDeRequisitos', new Referencia('https://www.javiergarzas.com/2021/04/en-un-sistema-software-los-requisitos-casi-siempre-van-a-cambiar.html', 'Los requisitos cambian', REQUISITOS_KEY, 'Cambios', '2024/03/10')],
     [Keys.REQUISITOS_REQUIREMENTS_ENGINEERING, new Referencia('https://xebrio.com/requirements-engineering/', 'Ingenieria y Toma de Requisitos', REQUISITOS_KEY, '¿ Como Tomarlos ?', '2024/09/27').addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_SLDC)],
+    [Keys.REQUISITOS_KPI_OKR, new Referencia('https://asana.com/es/resources/okr-vs-kpi', 'KPI & OKR', REQUISITOS_KEY, 'KPI & OKR', '2022/12/30', '2025/01/18').addRelatedItems(Keys.AGILES_DEMING, Keys.CALIDAD_METRICS_SOFTWARE)],
 ]);
 
 export const PRINCIPIOS_KEY = 'Principios';
