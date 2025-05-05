@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.ANALISIS_SYSTEM_DESIGN_CONCEPTS_III;
+export const LAST_ITEM = Keys.TESTING_ADVANCED_ENVIRONMENT;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -313,7 +313,7 @@ export const GIT_REF = new Map<string, Referencia>([
     ['migracion', new Referencia('https://git-scm.com/book/es/v2/Git-y-Otros-Sistemas-Migraci%C3%B3n-a-Git', 'Migración entre sistemas y otras acciones', GIT_KEY, 'Entresijos')],
     ['flow', new Referencia('https://aprendegit.com/que-es-git-flow/', 'Flujo de trabajo con Git', GIT_KEY, 'Git flow')],
     ['practicas', new Referencia('https://codigofacilito.com/articles/41', 'Buenas practicas para realizar commits', GIT_KEY, 'Buenas Practicas')],
-    ['branching-strategies', new Referencia('https://www.virtusway.com/es/workflows-strategies-for-working-with-git.html', 'Estrategias de Ramificación', GIT_KEY, 'Ramificación', '2023/07/18', '2024/06/26')],
+    [Keys.GIT_BRANCHS_STRATEGIES, new Referencia('https://www.virtusway.com/es/workflows-strategies-for-working-with-git.html', 'Estrategias de Ramificación', GIT_KEY, 'Ramificación', '2023/07/18', '2024/06/26')],
     ['monoRepo', new Referencia('https://monorepo.tools/#understanding-monorepos', 'Mono Repo', GIT_KEY, 'Mono Repo', '2023/09/05')],
     [Keys.GIT_PULL_REQUESTS_TOXIC, new Referencia('https://devinterrupted.substack.com/p/the-11-types-of-toxic-pull-requests', 'Pull Requests Toxicos', GIT_KEY, 'Pull Requests Toxicos', '2023/09/17')],
     [Keys.GIT_REBASE_MERGE_SQUASH, new Referencia('https://medium.com/@shikha.ritu17/git-rebase-vs-merge-vs-squash-choosing-the-right-strategy-for-version-control-a9c9bb97040e', 'Rebase Vs Merge Vs Squash', GIT_KEY, 'Rebase/Merge/Squash', '2024/06/26')],
@@ -373,7 +373,7 @@ export const META_CARATERISTICAS_REF = new Map<string, Referencia>([
     [Keys.META_CARACTERISTICAS_RAW_TYPES, new Referencia('https://stackoverflow.com/questions/2770321/what-is-a-raw-type-and-why-shouldnt-we-use-it/', 'Tipos Crudos', META_CARACTERISTICAS_KEY, 'Tipos crudos', '', '2025/02/09')],
     ['memoryAndGarbage', new Referencia('https://www.computerworld.com/article/2596992/memory-leaks-and-garbage-collection.amp.html', 'Fugas de memoria y recoleccion de basura', META_CARACTERISTICAS_KEY, 'Fugas de memoria')],
     ['footprint', new Referencia('https://www.pcmag.com/encyclopedia/term/memory-footprint', 'Huella en memoria', META_CARACTERISTICAS_KEY, 'Huellas de memoria', '2023/11/03')],
-    ['featureFlag', new Referencia('https://www.optimizely.com/optimization-glossary/feature-flags/', 'Feature Flags', META_CARACTERISTICAS_KEY, 'Feature Flags', '2023/11/30')],
+    [Keys.META_CARACTERISTICAS_FEATURE_FLAGS, new Referencia('https://www.optimizely.com/optimization-glossary/feature-flags/', 'Feature Flags', META_CARACTERISTICAS_KEY, 'Feature Flags', '2023/11/30')],
     //['generics', new Referencia('https://medium.com/@AlexanderObregon/java-generics-type-safety-and-performance-a0864ca72a5a', 'Genericos', META_CARACTERISTICAS_KEY, 'Genericos', '2023/12/28')],
     [Keys.META_CARACTERISTICAS_GENERICS, new Referencia('https://medium.com/@aqilzeka99/mastering-generics-in-java-interview-questions-571232c02af9', 'Genericos', META_CARACTERISTICAS_KEY, 'Genericos', '2023/12/28', '2024/12/01')],
     [Keys.META_CARACTERISTICAS_MEMORY_SAFETY, new Referencia('https://stackoverflow.blog/2024/03/04/in-rust-we-trust-white-house-office-urges-memory-safety', 'Seguridad en la memoria', META_CARACTERISTICAS_KEY, 'Seguridad en la memoria', '2024/03/26')],
@@ -634,7 +634,7 @@ export const TESTING_ADVANCED_REF = new Map<string, Referencia>([
     ['tiposDePruebas', new Referencia('https://www.softwaretestinghelp.com/types-of-software-testing/', 'Clasificación de las pruebas', TESTING_ADVANCED_KEY, 'Tipos de pruebas')],
     ['outsideInside', new Referencia('https://www.adictosaltrabajo.com/2016/01/29/tdd-outside-in-vs-inside-out/', 'TDD: Outside-In VS Inside-out', TESTING_ADVANCED_KEY, 'Outside & Inside', '', '2024/07/14').addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_TDD)],
     ['casosDePruebas', new Referencia('https://medium.com/grupo-carricay/qu%C3%A9-son-los-casos-de-pruebas-4893799b5b84', 'Casos de prueba', TESTING_ADVANCED_KEY, 'Casos de prueba')],
-    ['casosDeUso', new Referencia('https://blogs.encamina.com/piensa-en-software-desarrolla-en-colores/qa-caso-de-uso-vs-caso-de-prueba/', 'Casos de uso', TESTING_ADVANCED_KEY, 'Casos de uso')],
+    [Keys.TESTING_ADVANCED_USES_CASES, new Referencia('https://blogs.encamina.com/piensa-en-software-desarrolla-en-colores/qa-caso-de-uso-vs-caso-de-prueba/', 'Casos de uso', TESTING_ADVANCED_KEY, 'Casos de uso', '', '2025/05/04').addRelatedItems(Keys.USER_HISTORIES_USE_CASE_REQUISITOS, Keys.UML_USE_CASES)],
     [Keys.TESTING_ADVANCED_SMELLS_CODES1, new Referencia('https://codingcraftsman.wordpress.com/2018/09/27/test-smells/', 'Smells codes en testing #1', TESTING_ADVANCED_KEY, 'Smells codes en testing #1')],
     [Keys.TESTING_ADVANCED_SMELLS_CODES2, new Referencia('https://codingcraftsman.wordpress.com/2018/09/27/test-smells/', 'Smells codes en testing #2', TESTING_ADVANCED_KEY, 'Smells codes en testing #2')],
     [Keys.TESTING_ADVANCED_MUTATION, new Referencia('https://spa.myservername.com/what-is-mutation-testing', 'Tests de mutación', TESTING_ADVANCED_KEY, 'Pruebas de mutación')],
@@ -644,6 +644,7 @@ export const TESTING_ADVANCED_REF = new Map<string, Referencia>([
     [Keys.TESTING_ADVANCED_ISOLATION, new Referencia('https://mrslavchev.com/2018/08/03/hindsight-lessons-about-automation-test-isolation-principle/', 'Aislamiento de pruebas', TESTING_ADVANCED_KEY, 'Aislamiento', '2025/02/02')],
     [Keys.TESTING_ADVANCED_CHARGE, new Referencia('https://www.headspin.io/blog/best-performance-testing-tools', 'Pruebas de carga', TESTING_ADVANCED_KEY, 'Performance', '2025/02/11').addRelatedItems(Keys.ANALISIS_DATA_DSL, Keys.NUBE_OBSERVABILIDAD, Keys.META_CARACTERISTICAS_MEMORY_SAFETY, Keys.VERSIONAMIENTO_LICENSES)],
     [Keys.TESTING_ADVANCED_ARCH_UNIT, new Referencia('https://www.baeldung.com/java-archunit-intro', 'Tests sobre la Arquitectura', TESTING_ADVANCED_KEY, 'ArchUnit', '2025/03/06').addRelatedItems(Keys.META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL, Keys.ARQUITECTURAS_IMPORTANT_CONCEPTS, Keys.ARQUITECTURAS_MVC, Keys.ESTRATEGIAS_DESARROLLO_DDD)],
+    [Keys.TESTING_ADVANCED_ENVIRONMENT, new Referencia('https://www.abtasty.com/blog/test-environment/', 'Pruebas por Environment (ambiente)', TESTING_ADVANCED_KEY, 'Entornos', '2025/05/04').addRelatedItems(Keys.CD_CI_DEPLOYMENT_PIPELINES, Keys.CALIDAD_ANALYST_QA, Keys.ESTRATEGIAS_DESARROLLO_SLDC, Keys.GIT_BRANCHS_STRATEGIES, Keys.CD_CI_DEPLOYMENT_PATTERNS, Keys.META_CARACTERISTICAS_FEATURE_FLAGS)],
 ]);
 
 export const REFACTORING_KEY = 'Refactorizacion';
@@ -792,7 +793,7 @@ export const UML_REF = new Map<string, Referencia>([
     [Keys.UML_CLASES, new Referencia('https://diagramasuml.com/diagrama-de-clases/', 'Diagrama de clases', UML_KEY, 'De Clases', '', '2025/04/22').addRelatedItems(Keys.POO_POO, Keys.POO_COMPOSICION)],
     ['componentes', new Referencia('https://diagramasuml.com/componentes/', 'Diagrama de componentes', UML_KEY, 'De Componentes')],
     ['despliegue', new Referencia('https://diagramasuml.com/despliegue/', 'Diagrama de despliegue', UML_KEY, 'De Despliegue')],
-    ['usos', new Referencia('https://diagramasuml.com/casos-de-uso/', 'Diagrama de casos de uso', UML_KEY, 'Casos de Uso')],
+    [Keys.UML_USE_CASES, new Referencia('https://diagramasuml.com/casos-de-uso/', 'Diagrama de casos de uso', UML_KEY, 'Casos de Uso')],
     ['secuencia', new Referencia('https://diagramasuml.com/secuencia/', 'Diagrama de secuencia', UML_KEY, 'De Secuencia')],
     ['actividades', new Referencia('https://diagramasuml.com/actividades/', 'Diagrama de actividades', UML_KEY, 'De Actividades')],
     ['paquetes', new Referencia('https://diagramasuml.com/paquetes/', 'Diagrama de paquetes', UML_KEY, 'De Paquetes')],
@@ -885,7 +886,7 @@ export const CD_CI_REF = new Map<string, Referencia>([
     [Keys.CD_CI_STATELESS_STATEFUL, new Referencia('https://www.redhat.com/en/topics/cloud-native-apps/stateful-vs-stateless', 'Stateful VS Stateless', CD_CI_KEY, 'Stateless VS Stateful', '2023/12/26', '2025/05/01').addRelatedItems(Keys.MICROSERVICES_FUNDAMENTALS, Keys.NUBE_IAAS_PAAS_SAAS, Keys.APIS_IDEMPOTENCIA)],
     [Keys.CD_CI_DEPLOYMENT_PATTERNS, new Referencia('https://newsletter.techworld-with-milan.com/p/what-are-deployment-patterns', 'Patrones de Despliegue', CD_CI_KEY, 'Patrones de Despliegue')],
     ['industrialDevops', new Referencia('https://itrevolution.com/articles/what-is-industrial-devops/', 'Industrial DevOps', CD_CI_KEY, 'Industrial DevOps', '2023/11/21')],
-    ['pipelines', new Referencia('https://semaphoreci.com/blog/cicd-pipeline', 'Pipelines', CD_CI_KEY, '¿ Que es un Pipeline ?', '2023/12/26')],
+    [Keys.CD_CI_DEPLOYMENT_PIPELINES, new Referencia('https://semaphoreci.com/blog/cicd-pipeline', 'Pipelines', CD_CI_KEY, '¿ Que es un Pipeline ?', '2023/12/26', '2025/05/04').addRelatedItem(Keys.CONTENEDORES_ORCHESTRATION)],
     [Keys.CD_CI_CELL_BASED_ARQUITECTURE, new Referencia('https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of-impact-with-cell-based-architecture/what-is-a-cell-based-architecture.html', 'Cell Based Arquitecture', CD_CI_KEY, 'Cell Based Arquitecture', '2024/08/25')],
     [Keys.CD_CI_RULES, new Referencia('https://semaphoreci.com/blog/rules-ci-pipeline', 'Rules', CD_CI_KEY, 'Rules', '2024/12/26').addRelatedItems(Keys.GIT_BRANCHS, Keys.CALIDAD_LINTING, Keys.TESTING_PIRAMIDE, Keys.CONTENEDORES_DOCKER)],
     [Keys.CD_CI_FAILOVER, new Referencia('https://stackoverflow.blog/2020/10/23/adrian-cockcroft-aws-failover-chaos-engineering-fault-tolerance-distaster-recovery/', 'Failover & Ingenieria del caos', CD_CI_KEY, 'Failover, Caos, Resiliencia', '2025/04/06').addRelatedItems(Keys.NUBE_SRE, Keys.ANALISIS_SINGLE_POINT_OF_FAILURE, Keys.NUBE_DISPONIBILITY)],
