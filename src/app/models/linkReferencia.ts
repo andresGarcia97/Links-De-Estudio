@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.BUENAS_PRACTICAS_INDIRECTION;
+export const LAST_ITEM = Keys.CONTENEDORES_IMAGES_DISTROLESS;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -271,6 +271,7 @@ export const CONTAINERS = new Map<string, Referencia>([
     ['openContainer', new Referencia('https://opencontainers.org/about/overview/', 'Open Container Initiative', CONTENEDORES_KEY, 'Open Container Initiative', '2023/07/16')],
     [Keys.CONTENEDORES_SECURE_ORCHESTRATION, new Referencia('https://levelup.gitconnected.com/docker-vs-podman-a-new-era-in-secure-orchestration-957ea2123098', 'Seguridad en Orquestación', CONTENEDORES_KEY, 'Seguridad', '2024/05/25')],
     [Keys.CONTENEDORES_ARQUITECTURE, new Referencia('https://medium.com/@dmosyan/deep-dive-into-docker-containers-architecture-and-features-530a937f4c87', 'Arquitectura en Docker', CONTENEDORES_KEY, 'Arquitectura', '2024/08/04')],
+    [Keys.CONTENEDORES_IMAGES_DISTROLESS, new Referencia('https://bell-sw.com/blog/distroless-containers-for-security-and-size/', 'Imagenes Distroless', CONTENEDORES_KEY, 'Distroless', '2025/05/15').addRelatedItems(Keys.META_CARACTERISTICAS_MEMORY_MANAGEMENT, Keys.HARDWARE_VIRTUAL_MACHINES_VS_CONTAINERS)],
 ]);
 
 export const ESTRATEGIAS_DESARROLLO_KEY = 'Estrategias-Desarrollo';
@@ -835,7 +836,7 @@ export const HARDWARE_REF = new Map<string, Referencia>([
     ['rendering', new Referencia('https://www.freecodecamp.org/news/what-exactly-is-client-side-rendering-and-hows-it-different-from-server-side-rendering-bd5c786b340d/', 'Server-side VS client-side rendering', HARDWARE_KEY, 'Rendering')],
     [Keys.HARDWARE_MODEL_OSI, new Referencia('https://www.cloudflare.com/es-es/learning/ddos/glossary/open-systems-interconnection-model-osi/', 'Modelo OSI', HARDWARE_KEY, 'Modelo OSI', '', '2025/04/23').addRelatedItem(Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION)],
     [Keys.HARDWARE_MONITOREO, new Referencia('https://www.hiberus.com/crecemos-contigo/uso-de-los-apm-monitoreo-del-rendimiento-de-aplicaciones/', 'Aplication Performance Management (apm)', HARDWARE_KEY, 'Monitoreo')],
-    ['vmVsContainers', new Referencia('https://cloudnativeislamabad.hashnode.dev/virtualization-vs-containerization', 'Maquinas Virtuales VS Contenedores', HARDWARE_KEY, 'VM VS Contenedores')],
+    [Keys.HARDWARE_VIRTUAL_MACHINES_VS_CONTAINERS, new Referencia('https://cloudnativeislamabad.hashnode.dev/virtualization-vs-containerization', 'Maquinas Virtuales VS Contenedores', HARDWARE_KEY, 'VM VS Contenedores')],
     ['falseSharing', new Referencia('https://www.easytechjunkie.com/what-is-false-sharing.htm', 'False Sharing', HARDWARE_KEY, 'False Sharing', '2022/12/29')],
     [Keys.HARDWARE_PROTOCOLS, new Referencia('https://www.solarwinds.com/resources/it-glossary/network-protocols', 'Network Protocols', HARDWARE_KEY, 'Network Protocols', '2024/06/11')],
     [Keys.HARDWARE_OPERATIVE_SYSTEM, new Referencia('https://medium.com/@oyebisijemil_41110/why-understanding-operating-systems-is-important-for-every-back-end-distributed-systems-engineers-fc8412af4c6c', 'Sistema Operativo', HARDWARE_KEY, 'Sistema Operativo', '2024/06/30')],

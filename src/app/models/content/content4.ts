@@ -1522,6 +1522,19 @@ export const CONTENEDORES =
                 '',
                 '- Si los namespaces aportan al aislamiento, tambien existe el Control de Grupos(cgroups) que limitan los recursos compartidos disponibles ',
                 '- Ningun contenedor puede consumir recursos sin control alguno, recursos como CPU, RAM, Network, I/O, evitando posibles ataques DoS'
+            ]),
+        new Item(Keys.CONTENEDORES_IMAGES_DISTROLESS,
+            [
+                '- La computación en la nube y los sistemas distribuidos requieren ser ligeros, seguros y eficientes ',
+                '- Una Imagen <strong>Distroless</strong> solo tiene los componentes estrictamente necesarios para ejecutar la aplicación ',
+                '- Entre más dinamica sea la aplicación, más componentes se necesitaran por lo que existen multiples versiones de acuerdo a cada necesidad ',
+                '- Aunque ya existen versiones estaticas y versiones base de este tipo, se pueden construir de manera personalizada si se tiene el conocimiento suficiente ',
+                '',
+                '<strong>Ventajas:</strong>',
+                '&bull; Minimiza el espacio necesario para su almacenamiento, logrando que la distribución y transporte por la red sea más eficiente ',
+                '&bull; Reduce la superficie para ser atacada haciendola más segura ante escaneos de vulnerabilidades, pero no son invulnerables ',
+                '&bull; El consumo de recursos se reduce, ya que se enfoca en solo lo que necesita la imagen, sin ningun complemento adicional ',
+                '&bull; Generalmente solo son una distribución Linux increiblemente reducida, sin administradores de paquetes, la Shell, ó otros componentes tipicos ',
             ])
     ];
 

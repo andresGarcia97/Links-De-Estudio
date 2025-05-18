@@ -120,7 +120,7 @@ export const HARDWARE =
                 ' - Problemas con el Garbage Collector o la JVM ',
                 ' - Manejo erroneo de problemas ',
             ]),
-        new Item('vmVsContainers',
+        new Item(Keys.HARDWARE_VIRTUAL_MACHINES_VS_CONTAINERS,
             [
                 '                    <strong>Virtualización</strong>                                        <strong>Contenedores</strong>               ',
                 '         - Reduce los costos asociados al hardware             - Requieren menos recursos y son más livianos                           ',
