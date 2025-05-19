@@ -928,27 +928,31 @@ export const REFACTORIZACION =
 
 export const SEGURIDAD =
     [
-        new Item('firewall',
+        new Item(Keys.SECURITY_FIREWALL,
             [
                 '- Tiene la función de denegar ó permitir el acceso a nuestra red, tanto entradas como salidas ',
                 '- El trafico debe cumplir con una serie de reglas previamente definidas para su libre circulación ',
-                '- Se puede implementar por medio de Hardware, Software, ó ambos ',
+                '- Son fundamentales para proteger las redes de accesos no autorizados, actividades dañinas y posibles amenazas ',
+                '- Se puede implementar por medio de Hardware, Software o su combinación ',
                 '',
-                '<strong>Estas son algunas de sus funciones:</strong>',
+                '<strong>Algunas de sus funciones:</strong>',
                 '- Bloquear accesos no permitidos                    - Supervisar el trafico interno                 ',
                 '- Evitar accesos no autorizados, dentro de la red   - Advertir de posibles accesos malintencionados ',
-                '- Posibilidad de bloquear aplicaciones peligrosas                                                   ',
+                '- Posibilidad de bloquear aplicaciones peligrosas   - Filtrado de URLs                              ',
                 '',
                 '<strong>Tipos:</strong>',
-                '<strong>- Proxy:</strong> funciona como gateway de una red a otra para una aplicación especifica',
+                '<strong>- Filtrado:</strong> Analizan cada paquete que los atraviesa y filtra segun parametros como origen, destino, IP, puertos ',
+                '<strong>- Proxy:</strong> Funciona como gateway de una red a otra para una aplicación especifica',
                 '<strong>- Inspección activa:</strong> Permite bloquear el trafico en función del estado, puerto y el protocolo y monitorea la actividad',
-                ' - desde la apertura hasta el cierre de una conexión, para decidir si aplicar o no en base a la condiciones de filtrado',
+                ' - desde la apertura hasta el cierre de una conexión, para decidir si aplicar o no en base a las condiciones de filtrado',
                 '<strong>- Administración Unificada de Amenazas(UTM):</strong> Suele combinar de manera flexible las funciones de un firewall de ',
                 ' - inspección activa, con prevención de instrucciones y antivirus, estos se centran en la simplicidad y facilidad de uso',
                 '<strong>- De proxima generación(NGFW):</strong> Es la evolución de la inspección activa y del filtrado de paquetes, ya que tambien ',
-                ' - pueden proteger la capa de aplicación y malwares avanzados',
+                ' - pueden proteger la capa de aplicación y malwares avanzados, usando más criterios como las URLs y su geolocalización y reputación ',
                 '<strong>- NFGW centrado en amenazas:</strong> Incluye las funcionalidades de un <em>NFGW</em> tradicional además de identificar cuales ',
-                ' - son los activos que corren mayor riesgo, reconociendo el contexto completo '
+                ' - son los activos que corren mayor riesgo, reconociendo el contexto completo ',
+                '<strong>- Impulsados por IA:</strong> Usan el aprendizaje automatico para mejorar la protección ante las amenazas y la seguridad de la red ',
+                ' - llendo más alla de las reglas tradicionales reconociendo patrones en base al trafico real '
             ]),
         new Item(Keys.SECURITY_PROTOCOLOS_SEGURITY,
             [
@@ -1394,6 +1398,23 @@ export const SEGURIDAD =
                 '<strong>DAC - Control de Acceso Discrecional:</strong> Cada usuario controla el acceso a sus propios datos ',
                 '- Esto descentraliza las decisiones de seguridad y lo dejan a conveniencia de los usuarios ',
                 '- Para organizaciones grandes y complejas este enfoque no es recomendable, ya que no hay un control unificado ',
+            ]),
+        new Item(Keys.SECURITY_CVE,
+            [
+                '- Son un conjunto de amenazas de seguridad que se incluyen en un sistema de referencia que describe los riesgos conocidos publicamente ',
+                '- Es una iniciativa entre privados, fundaciones sin animo de lucro y la Division Nacional de Ciberseguridad de Estados Unidos ',
+                '- Esta identificación y disposición se hace con el fin de ayudar a las organizaciones para mejorar antes multiples amenazas de software y firmware ',
+                '',
+                '<strong>Vulnerabilidad:</strong> Se define como un error dentro del codigo que permite a un atacante obtener un acceso directo no autorizado ',
+                '- Con el fin de propagar malware y robar información confidencial con permisos de administrador o como superusuarios ',
+                '',
+                '<strong>Exposición:</strong> Son errores de codigo o de configuración que permiten al atacante obtener acceso indirecto al sistema o las redes ',
+                '- Esto permite acechar las redes informaticas y la recopilación de datos sensibles, credenciales o datos de los usuarios ',
+                '',
+                '- Cada CVE solo tiene el identificador estandar, riesgo, indicador del estado, una breve descripción además de otros detalles ',
+                '- No se incluye la información tecnica, correciones o el impacto de la vulnerabilidad, estos detalles se encuentran en otras Bases de datos aliadas ',
+                '- Los CVE no se suelen revelar tan pronto como se identifican, se mantienen en secreto hasta que el proveedor haya desarrollado y probado la correción ',
+                '- La gravedad de la vulnerabilidad se suele expresar mediante el <em>Sistema común de puntuación de vulnerabilidades</em>(CVSS) que la asigna desde 0.0 hasta 10.0 ',
             ])
     ];
 

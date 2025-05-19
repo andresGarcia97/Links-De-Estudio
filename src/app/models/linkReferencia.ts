@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.CONTENEDORES_IMAGES_DISTROLESS;
+export const LAST_ITEM = Keys.SECURITY_CVE;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -707,7 +707,8 @@ export const PRINCIPIOS_REF = new Map<string, Referencia>([
 export const SECURITY_KEY = 'Seguridad';
 export const SECURITY_REF = new Map<string, Referencia>([
     //['firewall', new Referencia('https://idgrup.com/firewall-que-es-y-como-funciona/#:~:text=Un%20firewall%2C%20tambi%C3%A9n%20llamado%20cortafuegos,ordenadores%20de%20una%20misma%20red', 'Firewall', SECURITY_KEY, 'Firewall')],
-    ['firewall', new Referencia('https://www.cisco.com/c/es_mx/products/security/firewalls/what-is-a-firewall.html', 'Firewall', SECURITY_KEY, 'Firewall', '', '2024/06/16')],
+    //['firewall', new Referencia('https://www.cisco.com/c/es_mx/products/security/firewalls/what-is-a-firewall.html', 'Firewall', SECURITY_KEY, 'Firewall', '', '2024/06/16')],
+    [Keys.SECURITY_FIREWALL, new Referencia('https://www.cisco.com/site/us/en/learn/topics/security/what-is-a-firewall.html', 'Firewall', SECURITY_KEY, 'Firewall', '2024/06/16', '2025/05/18').addRelatedItems(Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.APIS_GATEWAY)],
     [Keys.SECURITY_PROTOCOLOS_SEGURITY, new Referencia('https://www.websecurity.digicert.com/es/es/security-topics/what-is-ssl-tls-https', 'SSL, TSL, HTTPS', SECURITY_KEY, 'SSL, TSL, HTTPS')],
     [Keys.SECURITY_PROXY, new Referencia('https://www.welivesecurity.com/la-es/2020/01/02/que-es-proxy-para-que-sirve/', 'Proxy & Proxy Inverso', SECURITY_KEY, 'Proxy & Proxy Inverso', '', '2025/02/15')],
     ['ciberSeguridad', new Referencia('https://latam.kaspersky.com/resource-center/definitions/what-is-cyber-security', 'Ciberseguridad y otras amenazas', SECURITY_KEY, 'Ciberseguridad')],
@@ -729,7 +730,8 @@ export const SECURITY_REF = new Map<string, Referencia>([
     [Keys.SECURITY_ATTACK_ON_MODEL_OSI, new Referencia('https://blog.bytebytego.com/p/ep97-10-good-coding-principles-to#%C2%A7top-network-security-cheatsheet', 'Ataques contra el Modelo OSI', SECURITY_KEY, 'Modelo OSI', '2024/03/21')],
     [Keys.SECURITY_LEAST_PRIVILEGE, new Referencia('https://www.cyberark.com/what-is/least-privilege/', 'Menor privilegio', SECURITY_KEY, 'Menor Privilegio', '2024/06/16')],
     [Keys.SECURITY_AUTHENTICATION_WAYS, new Referencia('https://medium.com/@iamprovidence/authentication-history-basic-digest-cookie-session-token-jwt-api-key-55d6c21be90b', 'Formas de Authenticación', SECURITY_KEY, 'Authenticación', '2024/07/21')],
-    [Keys.SECURITY_RBAC_ABAC, new Referencia('https://www.strongdm.com/blog/rbac-vs-abac', 'Control de Acceso', SECURITY_KEY, 'Control de Acceso', '2025/01/02')]
+    [Keys.SECURITY_RBAC_ABAC, new Referencia('https://www.strongdm.com/blog/rbac-vs-abac', 'Control de Acceso', SECURITY_KEY, 'Control de Acceso', '2025/01/02')],
+    [Keys.SECURITY_CVE, new Referencia('https://www.fortinet.com/lat/resources/cyberglossary/cve', 'Vulnerabilidades & Exposiciones Comunes', SECURITY_KEY, 'CVE', '2025/05/18')]
 ]);
 
 export const SMELL_CODES_KEY = 'Smell-Codes';
