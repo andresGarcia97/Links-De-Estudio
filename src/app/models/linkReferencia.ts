@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.SECURITY_CVE;
+export const LAST_ITEM = Keys.MALAS_PRACTICAS_OVER_ENGINEERING;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -352,6 +352,7 @@ export const MALAS_PRACTICAS_REF = new Map<string, Referencia>([
     [Keys.MALAS_PRACTICAS_ANTI_PATRONES_ARQUITECTURAS, new Referencia('https://lab.scub.net/architecture-anti-patterns-the-dark-side-of-the-architect-d9265b52d997', 'Anti patrones en Arquitecturas', MALAS_PRACTICAS_KEY, 'Contra Arquitecturas', '2024/09/07')],
     [Keys.MALAS_PRACTICAS_ANEMIC_DOMAIN, new Referencia('https://martinfowler.com/bliki/AnemicDomainModel.html', 'Dominio Anemico', MALAS_PRACTICAS_KEY, 'Dominio Anemico', '2024/05/08').addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_DDD)],
     [Keys.MALAS_PRACTICAS_TRAIN_WECKS, new Referencia('https://www.thinkcode.se/blog/2011/12/30/how-many-train-wrecks-are-lurking-in-your-code', 'Accidentes de trenes', MALAS_PRACTICAS_KEY, 'Accidentes de trenes', '2024/05/22', '2024/10/12').addRelatedItems(Keys.BUENAS_PRACTICAS_DEMETER, Keys.POO_POO_PILARES)],
+    [Keys.MALAS_PRACTICAS_OVER_ENGINEERING, new Referencia('https://vtsen.hashnode.dev/dry-kiss-and-yagni-to-avoid-over-engineering-trap', 'Sobre Ingenieria', MALAS_PRACTICAS_KEY, 'Sobre Ingenieria', '2025/05/20').addRelatedItems(Keys.META_CARACTERISTICAS_GENERICS, Keys.POO_HERENCIA_COMPOSICION, Keys.PRINCIPIOS_SOLID, Keys.BUENAS_PRACTICAS_INDIRECTION)]
 ]);
 
 export const META_CARACTERISTICAS_KEY = 'Meta-Caracteristicas';
@@ -691,7 +692,7 @@ export const PRINCIPIOS_KEY = 'Principios';
 export const PRINCIPIOS_REF = new Map<string, Referencia>([
     [Keys.PRINCIPIOS_SOLID, new Referencia('https://profile.es/blog/principios-solid-desarrollo-software-calidad/', 'Principios SOLID', PRINCIPIOS_KEY, 'SOLID')],
     [Keys.PRINCIPIOS_KISS, new Referencia('https://manuelzapata.co/principio-kiss-keep-it-simple-stupid/', 'Mantenlo simple, estupido', PRINCIPIOS_KEY, 'KISS')],
-    ['yagni', new Referencia('https://www.genbeta.com/desarrollo/la-navaja-de-occam-kiss-y-yagni-la-simplicidad-en-el-codigo-no-deberia-ser-solo-postureo-developer', 'No vas a necesitarlo', PRINCIPIOS_KEY, 'YAGNI')],
+    [Keys.PRINCIPIOS_YAGNI, new Referencia('https://www.genbeta.com/desarrollo/la-navaja-de-occam-kiss-y-yagni-la-simplicidad-en-el-codigo-no-deberia-ser-solo-postureo-developer', 'No vas a necesitarlo', PRINCIPIOS_KEY, 'YAGNI', '', '2025/05/24')],
     ['occam', new Referencia('https://www.genbeta.com/desarrollo/la-navaja-de-occam-kiss-y-yagni-la-simplicidad-en-el-codigo-no-deberia-ser-solo-postureo-developer', 'La navaja de Occam', PRINCIPIOS_KEY, 'Occam')],
     [Keys.PRINCIPIOS_DRY, new Referencia('https://medium.com/@psdevraye/mastering-the-dry-principle-in-java-a-guide-to-cleaner-code-afd889bfca42', 'No te repitas', PRINCIPIOS_KEY, 'DRY', '', '2024/10/18')],
     [Keys.PRINCIPIOS_HOLLYWOOD, new Referencia('https://www.genbeta.com/desarrollo/doce-principios-de-diseno-que-todo-desarrollador-deberia-conocer', 'No nos llames, nosotros te llamamos', PRINCIPIOS_KEY, 'Hollywood')],

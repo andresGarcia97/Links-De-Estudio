@@ -568,11 +568,11 @@ export const PRINCIPIOS =
                 '- Código autocomentado, nombres claros para las variables, metodos, clases, aplica para todo lo que pueda ser nombrado ',
                 '- No abusar de los comentarios, estos solo se deben emplear cuando sean necesarios, y dado el caso mantenerlos actualizados',
             ]),
-        new Item('yagni',
+        new Item(Keys.PRINCIPIOS_YAGNI,
             [
-                '- No lo añadas hasta que no lo necesites',
-                '- Define prioridades, evita trabajo innecesario y que no aporta valor ',
-                '- Esto tambien evita futuros retrasos y suposiciones erroneas, al tomar desiciones en base a los hechos '
+                '- No lo añadas hasta que no lo necesites, solo cuando se necesite se aplicara realmente ',
+                '- Define prioridades, evita trabajo innecesario que no aporta valor ni ayude a cumplir los requisitos ',
+                '- Esto tambien evita futuros retrasos y suposiciones erroneas, al tomar decisiones en base a hechos y observaciones ',
             ]),
         new Item('occam',
             [

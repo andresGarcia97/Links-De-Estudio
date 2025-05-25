@@ -2061,4 +2061,26 @@ export const MALAS_PRACTICAS =
                 '- Tambien esta en contra de la <em>Ley de demeter</em> que consiste en no hablar con extraños, ni inmiscuirnos en sus responsabilidades',
                 '- No es una excepción, pero tampoco esta mal visto, que este mismo encadenamiento de metodos se de, en flujos y/o operaciones con datos'
             ]),
+        new Item(Keys.MALAS_PRACTICAS_OVER_ENGINEERING,
+            [
+                '- La sobre ingenieria es un problema silencioso en el que muchos desarrolladores pueden llegar a caer sin darse cuenta ',
+                '',
+                '<strong>Factores que contribuyen</strong>',
+                '- Poca comprensión de los requisitos, anticipando problemas que son poco probables generando complejidad innecesaria en el sistema ',
+                '- No se tienen requisitos a largo plazo o objetivos, ni un alto conocimiento del dominio, si no se tienen es mejor solucionar a corto y mediano plazo ',
+                '- Demasiada libertad, donde se pueden diseñar y crear soluciones tecnicamente elegantes, pero innecesariamente complejas ',
+                '',
+                '<strong>Sintomas</strong>',
+                '- Aumento en el tiempo de desarrollo ya sea por deuda tecnica que requiera refactorizaciones continuas, o sistemas demasiado genericos ',
+                '- Usabilidad reducida sin posibilidades de extenderse, haciendo que sea más factible copiar y pegar que reutilizar ',
+                '- Principios como <em>KISS</em>, <em>DRY</em> y <em>YAGNI</em> dejan de cumplirse ',
+                '',
+                '<strong>Ejemplos</strong>',
+                '- El uso excesivo de genericos oculta el proposito general y dificulta la legibilidad en general ',
+                '- Primar el uso de la composición sobre la herencia permite una mayor flexibilidad y reutilización, pero la explosión de clases y metodos, ',
+                ' - el manejo de sus relaciones y la propensión a duplicar codigo, pueden ser problemas peores que la anulación y sobreescritura de metodos ',
+                '- El abuso de SOLID, cualquier cosa llevada al extremo degenera su proposito, en este caso la segregación de interfaces ',
+                ' - donde el objetivo es tener interfaces pequeñas pero su cantidad aumenta significativamente creando contratos que solo aumentan la indirección ',
+                '- Uso de arquitecturas y patrones complejos para problemas que se sabe que no van a escalar o son necesidades estaticas ',
+            ])
     ];
