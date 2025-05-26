@@ -456,7 +456,7 @@ export const ARQUITECTURAS =
                 '- Es una arquitectura muy usada en aplicaciones web, sistemas de gestión de contenido y aplicaciones moviles ',
                 '- Para evitar problemas de acoplamiento, se pueden imponer restricciones de comunicación entre capas '
             ]),
-        new Item('cliente',
+        new Item(Keys.ARQUITECTURAS_CLIENTE_SERVIDOR,
             [
                 '- Tiene 3 elementos principales y es una de las arquitecturas más usadas debido a su simplicidad ',
                 '',
