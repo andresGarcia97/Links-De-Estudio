@@ -467,7 +467,7 @@ export const APIS_REF = new Map<string, Referencia>([
         .addMoreReferences('https://www.computerweekly.com/es/definicion/Interfaz-de-programacion-de-aplicaciones-API')
     ],
     //['restfull', new Referencia('http://adwe.es/general/colaboraciones/servicios-web-restful-con-http-parte-i-introduccion-y-bases-teoricas/', 'Rest & Restfull', APIS_KEY, 'Rest & RestFull')],
-    [Keys.APIS_REST_FULL, new Referencia('http://adwe.es/general/colaboraciones/servicios-web-restful-con-http-parte-i-introduccion-y-bases-teoricas/', 'Rest & Restfull', APIS_KEY, 'Rest & RestFull', '', '2025/05/25')
+    [Keys.APIS_REST_FULL, new Referencia('https://www.enmilocalfunciona.io/servicios-web-restful-i-introduccion/', 'Rest & Restfull', APIS_KEY, 'Rest & RestFull', '', '2025/05/25')
         .addMoreReferences('https://aws.amazon.com/what-is/restful-api/')
     ],
     //['caracteristicas', new Referencia('https://adwe.es/codigo/apis-codigo/servicios-web-restful-con-http-parte-ii-ejemplos/', 'Caracteristicas de una api restfull', APIS_KEY, 'Estandares RestFull')],
