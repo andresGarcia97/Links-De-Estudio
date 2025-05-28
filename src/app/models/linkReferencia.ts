@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.MALAS_PRACTICAS_OVER_ENGINEERING;
+export const LAST_ITEM = Keys.HARDWARE_DATA_CENTERS;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -852,6 +852,10 @@ export const HARDWARE_REF = new Map<string, Referencia>([
     [Keys.HARDWARE_OPERATIVE_SYSTEM, new Referencia('https://medium.com/@oyebisijemil_41110/why-understanding-operating-systems-is-important-for-every-back-end-distributed-systems-engineers-fc8412af4c6c', 'Sistema Operativo', HARDWARE_KEY, 'Sistema Operativo', '2024/06/30')],
     [Keys.HARDWARE_UTF8, new Referencia('https://medium.com/@dmosyan/utf-8-and-the-problem-that-it-solves-a294aed2aa20', 'UTF-8', HARDWARE_KEY, 'UTF-8', '2024/08/24').addRelatedItems(Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES, Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION)],
     [Keys.HARDWARE_CLEAN_CODE_PERFORMANCE, new Referencia('https://pvs-studio.com/en/blog/posts/1157/', 'Clean Code, peor Performance ?', HARDWARE_KEY, 'Clean Code & Performance', '2024/11/03').addRelatedItems(Keys.PRINCIPIOS_SOLID, Keys.CALIDAD_CLEAN_CODE, Keys.AGILES_MANIFEST_AGIL)],
+    [Keys.HARDWARE_DATA_CENTERS, new Referencia('https://www.ionos.es/digitalguide/servidores/know-how/sistemas-de-evaluacion-para-data-centers/', 'Data Centers', HARDWARE_KEY, 'Data Centers', '2025/05/27')
+        .addRelatedItems(Keys.NUBE_DISPONIBILITY, Keys.NUBE_NATIVE, Keys.ANALISIS_SINGLE_POINT_OF_FAILURE)
+        .addMoreReferences('https://www.tuvsud.com/en-us/industries/infrastructure-and-rail/infrastructure/data-center-infrastructure-services', 'https://www.techtarget.com/searchdatacenter/definition/Uptime-data-center-tier-standards')
+    ],
 ]);
 
 export const WEB_KEY = 'Web';
