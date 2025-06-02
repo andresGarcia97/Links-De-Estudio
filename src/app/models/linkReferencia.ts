@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.HARDWARE_DATA_CENTERS;
+export const LAST_ITEM = Keys.PEOPLE_PRODUCT_CHALLENGES;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -63,7 +63,7 @@ export const AGILES_REF = new Map<string, Referencia>([
     ['requisitosAgiles', new Referencia('https://www.javiergarzas.com/2019/12/los-requisitos-nunca-se-entienden-y-el-usuario-sabe-lo-que-quiere-cuando-lo-ve-funcionando.html', 'Entender los Requisitos', AGILES_KEY, 'Requisitos', '2024/03/10')],
     [Keys.AGILES_OUTPUT_AND_OUTCOME, new Referencia('https://www.linkedin.com/pulse/impact-vs-output-outcome-t%C3%A9cnicas-para-outcomes-guzm%C3%A1n-/', 'Output & Outcome', AGILES_KEY, 'Impacto y entrega de valor', '2024/05/25')],
     [Keys.AGILES_PRIORITIZATION, new Referencia('https://www.javiergarzas.com/2023/10/las-3-matrices-de-priorizacion-agil.html', 'Priorización', AGILES_KEY, 'Priorización', '2024/08/19')],
-    [Keys.AGILES_STAR, new Referencia('https://www.deel.com/es/blog/que-es-metodo-star-como-usarlo/', 'Metodo STAR', AGILES_KEY, 'STAR', '2025/01/08').addRelatedItem(Keys.PEOPLE_PEOPLE_AND_PROCESS)],
+    [Keys.AGILES_STAR, new Referencia('https://www.deel.com/es/blog/que-es-metodo-star-como-usarlo/', 'Metodo STAR', AGILES_KEY, 'STAR', '2025/01/08').addRelatedItem(Keys.PEOPLE_PEOPLE_PROCESS_TECNOLOGY)],
     [Keys.AGILES_CRC, new Referencia('https://agilemodeling.com/artifacts/crcmodel.htm', 'Tarjetas Clase-Responsabilidad-Colaborador', AGILES_KEY, 'Tarjetas CRC', '2023/12/11', '2025/04/21').addRelatedItems(Keys.POO_POO, Keys.USER_HISTORIES_USE_CASE_REQUISITOS, Keys.METODOLOGIAS_MODEL_XP, Keys.UML_CLASES)],
 ]);
 
@@ -565,11 +565,12 @@ export const PATRONES_REF = new Map<string, Referencia>([
 
 export const PEOPLE_KEY = 'Personas';
 export const PEOPLE_REF = new Map<string, Referencia>([
-    [Keys.PEOPLE_PEOPLE_AND_PROCESS, new Referencia('https://www.heflo.com/es/blog/bpm/personas-procesos-tecnologia/', 'Personas-Procesos-Tecnologias', PEOPLE_KEY, 'Personas y procesos', '', '2025/01/08')],
+    //[Keys.PEOPLE_PEOPLE_AND_PROCESS, new Referencia('https://www.heflo.com/es/blog/bpm/personas-procesos-tecnologia/', 'Personas-Procesos-Tecnologias', PEOPLE_KEY, 'Personas y procesos', '', '2025/01/08')],
+    [Keys.PEOPLE_PEOPLE_PROCESS_TECNOLOGY, new Referencia('https://blog.invgate.com/es/procesos-personas-y-tecnologia', 'Personas-Procesos-Tecnologia', PEOPLE_KEY, 'Personas y Procesos', '2025/01/08', '2025/06/01')],
     ['gestionDeServicios', new Referencia('https://www.ambit-bst.com/blog/itsm.-todo-lo-que-debes-saber-sobre-la-gesti%C3%B3n-de-servicios-it', 'Gestión de servicios tecnologicos', PEOPLE_KEY, 'Gestión de servicios')],
     ['gestionDeActivos', new Referencia('https://freshservice.com/latam/it-asset-management-software/', 'Gestión de activos', PEOPLE_KEY, 'Gestión de activos')],
     ['fidelizacion', new Referencia('https://elviajedelcliente.com/fidelizacion-de-clientes/', 'Fidelización de los clientes', PEOPLE_KEY, 'Fidelizacion')],
-    ['modeloDIKW', new Referencia('https://programmerclick.com/article/46021807934/', 'Datos-Info-Conocimiento-Sabiduría', PEOPLE_KEY, 'Modelo DIKW')],
+    ['modeloDIKW', new Referencia('https://programmerclick.com/article/46021807934/', 'Datos-Información-Conocimiento-Sabiduría', PEOPLE_KEY, 'Modelo DIKW')],
     [Keys.PEOPLE_GESTION_EXPECTATIVAS, new Referencia('https://brainsandbeards.com/blog/expectation-management', 'Gestion de expectativas', PEOPLE_KEY, 'Gestion de expectativas')],
     [Keys.PEOPLE_CAPA_8, new Referencia('https://www.merca20.com/que-es-un-error-de-capa-8-y-como-evitas-que-arruine-tu-marketing/', 'Capa 8', PEOPLE_KEY, 'Error en capa 8', '', '2025/04/23').addRelatedItem(Keys.HARDWARE_MODEL_OSI)],
     [Keys.PEOPLE_NO_NEWS_GOOD_NEWS, new Referencia('https://blog.carreralinux.com.ar/2020/05/si-no-hay-noticias-son-buenas-noticias-no-news-good-news/', 'Sin noticias, Son buenas noticias', PEOPLE_KEY, 'No News Good News', '', '2025/02/02')],
@@ -583,6 +584,7 @@ export const PEOPLE_REF = new Map<string, Referencia>([
     [Keys.PEOPLE_PROCESS_BLOAT, new Referencia('https://ardalis.com/process-bloat-silent-killer-developer-productivity/', 'Hinchazon de procesos', PEOPLE_KEY, 'Process Bloat', '2024/06/01').addRelatedItems(Keys.LEYES_LEHMAN, Keys.METODOLOGIAS_LEAN, Keys.METODOLOGIAS_AGILES)],
     [Keys.PEOPLE_TRIANGLES_SUCCESS, new Referencia('https://www.entrepreneur.com/growing-a-business/the-triangles-of-success-are-more-than-a-good-laugh/279979', 'Triangulos del exito', PEOPLE_KEY, 'Triangulos del exito', '2024/11/21')],
     [Keys.PEOPLE_SOMBREROS_PENSAMIENTO, new Referencia('https://xn--designthinkingespaa-d4b.com/seis-sombreros-para-pensar', 'Sombreros para Pensar', PEOPLE_KEY, 'Sombreros para Pensar', '2024/12/25')],
+    [Keys.PEOPLE_PRODUCT_CHALLENGES, new Referencia('https://itamargilad.com/product-challenges/', 'Desafios al construir un producto', PEOPLE_KEY, 'Producto', '2025/05/31').addRelatedItems(Keys.METODOLOGIAS_LEAN, Keys.REQUISITOS_KPI_OKR)],
 ]);
 
 export const POO_KEY = 'POO';
