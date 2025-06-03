@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.PEOPLE_PRODUCT_CHALLENGES;
+export const LAST_ITEM = Keys.ANALISIS_BOUNDED_CONTEXT;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -71,18 +71,18 @@ export const ANALISIS_KEY = 'Analisis';
 export const ANALISIS_REF = new Map<string, Referencia>([
     [Keys.ANALISIS_COMPORTAMIENTO, new Referencia('https://es.wikipedia.org/wiki/Modelo_de_comportamiento_(inform%C3%A1tica)', 'Comportamiento del sistema', ANALISIS_KEY, 'Comportamiento', '', '2025/03/29').addRelatedItems(Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS, Keys.ESTRATEGIAS_DESARROLLO_BDD)],
     [Keys.ANALISIS_ANALISIS_DOMAIN, new Referencia('https://www.redalyc.org/jatsRepo/4768/476862530003/html/index.html', 'Analisis de Dominio', ANALISIS_KEY, 'Analisis de Dominio')],
-    ['case', new Referencia('https://www.tutorialspoint.com/es/software_engineering/case_tools_overview.htm', 'Herramientas Case', ANALISIS_KEY, 'Herramientas CASE')],
-    ['divide', new Referencia('https://es.khanacademy.org/computing/computer-science/algorithms/merge-sort/a/divide-and-conquer-algorithms', 'Divide y Venceras', ANALISIS_KEY, 'Divide y venceras')],
-    ['diseño', new Referencia('https://www.bravent.net/la-importancia-de-un-buen-diseno-del-software/', 'Ventajas de un buen diseño', ANALISIS_KEY, 'Un buen diseño')],
+    [Keys.ANALISIS_CASE, new Referencia('https://www.tutorialspoint.com/es/software_engineering/case_tools_overview.htm', 'Herramientas Case', ANALISIS_KEY, 'Herramientas CASE')],
+    [Keys.ANALISIS_DIVIDE, new Referencia('https://es.khanacademy.org/computing/computer-science/algorithms/merge-sort/a/divide-and-conquer-algorithms', 'Divide y Venceras', ANALISIS_KEY, 'Divide y venceras')],
+    [Keys.ANALISIS_DISENO, new Referencia('https://www.bravent.net/la-importancia-de-un-buen-diseno-del-software/', 'Ventajas de un buen diseño', ANALISIS_KEY, 'Un buen diseño')],
     //['avestruz', new Referencia('https://geeks.ms/gvelez/2009/09/28/el-algoritmo-del-avestruz-en-sharepoint/', 'Algoritmo del Avestruz', ANALISIS_KEY, 'Avestruz')],
     [Keys.ANALISIS_AVESTRUZ, new Referencia('https://www.baeldung.com/cs/ostrich-algorithm', 'Algoritmo del Avestruz', ANALISIS_KEY, 'Avestruz', '', '2025/01/18')],
     [Keys.ANALISIS_MODEL_DOMAIN, new Referencia('https://es.stackoverflow.com/questions/102490/que-es-el-modelo-de-dominio-en-dise%C3%B1o-de-software', 'Modelo de Dominio', ANALISIS_KEY, 'Modelo de dominio', '', '2024/12/22').addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_DDD)],
     [Keys.ANALISIS_TIME_COMPLEXITY, new Referencia('https://www.freecodecamp.org/news/big-o-cheat-sheet-time-complexity-chart/', 'Big O Notación', ANALISIS_KEY, 'Big O Notación', '2022/12/30', '2025/03/29').addRelatedItems(Keys.BUENAS_PRACTICAS_COMPLEJIDAD_ALGORITMICA, Keys.BUENAS_PRACTICAS_COMPLEJIDAD_COGNITIVA)],
     //['kpis', new Referencia('https://www.ibm.com/garage/method/practices/learn/kpis-measure-guide-progress/', 'KPIs', ANALISIS_KEY, 'KPI', '2022/12/30')],
     [Keys.ANALISIS_MANIFEST_REACTIVE, new Referencia('https://www.reactivemanifesto.org/es', 'Manifiesto Reactivo', ANALISIS_KEY, 'Manifiesto Reactivo', '2023/02/19', '2024/12/10')],
-    ['declineDesign', new Referencia('https://uxdesign.cc/the-decline-in-design-thinking-8fd0145fb4d2', 'Declive del diseño', ANALISIS_KEY, 'Declive del Diseño', '2023/07/23')],
-    ['opinionated-no', new Referencia('https://www.baeldung.com/cs/opinionated-software-design', 'Diseño con & sin opiniones', ANALISIS_KEY, 'Diseño con/sin opiniones', '2023/11/11')],
-    ['codingEasyPart', new Referencia('https://swizec.com/blog/coding-is-the-easy-part/', 'Codificar es la parte facil', ANALISIS_KEY, 'Codificar es facil', '2023/12/11')],
+    [Keys.ANALISIS_DECLINE_DESIGN, new Referencia('https://uxdesign.cc/the-decline-in-design-thinking-8fd0145fb4d2', 'Declive del diseño', ANALISIS_KEY, 'Declive del Diseño', '2023/07/23')],
+    [Keys.ANALISIS_OPINIONATED_NO, new Referencia('https://www.baeldung.com/cs/opinionated-software-design', 'Diseño con & sin opiniones', ANALISIS_KEY, 'Diseño con/sin opiniones', '2023/11/11')],
+    [Keys.ANALISIS_CODING_EASY_PART, new Referencia('https://swizec.com/blog/coding-is-the-easy-part/', 'Codificar es la parte facil', ANALISIS_KEY, 'Codificar es facil', '2023/12/11')],
     [Keys.ANALISIS_ALGORITHMS, new Referencia('https://medium.com/@zgokceaynaci/a-journey-through-the-world-of-algorithms-554bfffcee97', 'Algoritmos', ANALISIS_KEY, 'Algoritmos', '2024/07/27').addRelatedItems(Keys.COMPILACION_GRAFOS, Keys.META_CARACTERISTICAS_BACKTRACKING)],
     [Keys.ANALISIS_QUEUES_SYSTEM_DESIGN, new Referencia('https://levelup.gitconnected.com/message-queues-in-system-design-0440a1221023', 'Message Queues in System Design', ANALISIS_KEY, 'Message Queues', '2024/09/01').addRelatedItems(Keys.META_ESTRUCTURAS_ESTRUCTURAS_DATOS_2, Keys.APIS_REST_VS_MESSAGING)],
     [Keys.ANALISIS_HIGH_LEVEL_VS_LOW_LEVEL, new Referencia('https://www.baeldung.com/cs/hld-lld', 'High Level Vs Low Level', ANALISIS_KEY, 'High Level Vs Low Level', '2024/09/20').addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_SLDC).addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.PERSISTENCY_ERD)],
@@ -101,6 +101,7 @@ export const ANALISIS_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.META_CARACTERISTICAS_CACHE, Keys.NUBE_OBSERVABILIDAD, Keys.HARDWARE_MONITOREO, Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.CD_CI_FAILOVER, Keys.PERSISTENCY_ACID)
         .addMoreReferences("https://systemdesignschool.io/fundamentals/qps", "https://speedscale.com/blog/determine-transactions-per-second/", "https://medium.com/@alexa.polly007/understanding-caching-eviction-invalidation-patterns-and-their-use-cases-9fbfd34be970")
     ],
+    [Keys.ANALISIS_BOUNDED_CONTEXT, new Referencia('https://martinfowler.com/bliki/BoundedContext.html', 'Bounded Context', ANALISIS_KEY, 'Bounded Context', '2025/06/02').addRelatedItems(Keys.BUENAS_PRACTICAS_AGGREGATES, Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.PEOPLE_LANGUAGE_UBICUOS, Keys.POO_COUPLING_AND_COHESION)],
 ]);
 
 export const ARQUITECTURAS_KEY = 'Arquitecturas';
