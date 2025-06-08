@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.ANALISIS_BOUNDED_CONTEXT;
+export const LAST_ITEM = Keys.MICROSERVICES_PUSH_PULL_EVENTS;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -519,7 +519,7 @@ export const PARADIGMAS_REF = new Map<string, Referencia>([
     ],
     ['funcional', new Referencia('https://codigofacilito.com/articulos/programacion-funcional', 'Paradigma funcional', PARADIGMAS_KEY, 'Funcional')],
     ['scripting', new Referencia('https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/que-son-los-lenguajes-de-scripting/', 'Lenguajes de scripting', PARADIGMAS_KEY, 'Scripting')],
-    ['reactiva', new Referencia('https://profile.es/blog/que-es-la-programacion-reactiva-una-introduccion/', 'Programación reactiva', PARADIGMAS_KEY, 'Reactiva')],
+    [Keys.PARADIGMAS_REACTIVO, new Referencia('https://profile.es/blog/que-es-la-programacion-reactiva-una-introduccion/', 'Programación reactiva', PARADIGMAS_KEY, 'Reactiva', '', '2025/06/07').addRelatedItems(Keys.ANALISIS_MANIFEST_REACTIVE, Keys.MALAS_PRACTICAS_CALLBACK_HELL)],
     //['marcado', new Referencia('https://blog.educacionit.com/2018/12/26/diferencia-entre-lenguajes-de-scripting-lenguajes-de-marcado-y-lenguajes-de-programacion/', 'Lenguajes de marcado', PARADIGMAS_KEY)],
     ['marcado', new Referencia('https://www.ticarte.com/contenido/que-son-los-lenguajes-de-marcas', 'Lenguajes de marcado', PARADIGMAS_KEY, 'De Marcado')],
     ['aspectos', new Referencia('https://www.baeldung.com/spring-aop', 'Orientación a aspectos', PARADIGMAS_KEY, 'Aspectos')],
@@ -933,4 +933,5 @@ export const MICRO_SERVICES_REF = new Map<string, Referencia>([
     [Keys.MICROSERVICES_DEAD_LETTER_QUEUE, new Referencia('https://www.geeksforgeeks.org/dead-letter-queue-system-design/', 'Dead Letter Queue - DLQ & DLT', MICRO_SERVICES_KEY, 'Dead Letter Queue', '2025/02/26').addRelatedItem(Keys.ANALISIS_QUEUES_SYSTEM_DESIGN)],
     [Keys.MICROSERVICES_DISTRIBUTED_TRANSACTIONS, new Referencia('https://gist.github.com/rponte/9477858e619d8b986e17771c8be7827f', 'Transacciones Distribuidas', MICRO_SERVICES_KEY, 'Transacciones Distribuidas', '2025/03/14').addRelatedItems(Keys.NUBE_TWO_PHASE_COMMIT, Keys.PERSISTENCY_ACID, Keys.PATRONES_SAGA, Keys.NUBE_OBSERVABILIDAD, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.PERSISTENCY_CONSISTENCY)],
     [Keys.MICROSERVICES_PROBLEMS, new Referencia('https://blog.container-solutions.com/why-im-no-longer-talking-to-architects-about-microservices', 'Problemas de los Microservicios', MICRO_SERVICES_KEY, 'Problemas', '2025/03/17').addRelatedItems(Keys.CONTENEDORES_ORCHESTRATION, Keys.MALAS_PRACTICAS_DEATH_BY_MICROSERVICES, Keys.CD_CI_DEV_OPS, Keys.METODOLOGIAS_AGILES, Keys.NUBE_SRE, Keys.NUBE_OBSERVABILIDAD, Keys.PEOPLE_ONA)],
+    [Keys.MICROSERVICES_PUSH_PULL_EVENTS, new Referencia('https://theburningmonk.com/2025/05/understanding-push-vs-poll-in-event-driven-architectures/', 'Push VS Poll', MICRO_SERVICES_KEY, 'Push VS Poll Events', '2025/06/04').addRelatedItems(Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.ANALISIS_QUEUES_SYSTEM_DESIGN, Keys.ANALISIS_LIGHT_EVENTS_VS_RICH_EVENTS, Keys.PARADIGMAS_REACTIVO)],
 ]);

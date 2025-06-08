@@ -686,15 +686,19 @@ export const PARADIGMAS =
                 '- Generalmente son debilmente tipados, lo que da más flexibilidad al mismo tiempo que aumenta la posiblidad de errores',
                 '- Estas caracteristicas los hace especialmente buenos para tareas especificas y más directas, pero malos para calculos intensivos y pesados'
             ]),
-        new Item('reactiva',
+        new Item(Keys.PARADIGMAS_REACTIVO,
             [
-                '- Es un paradigma enfocado al trabajo con flujo de datos, generalmente debe ser: ',
-                '<strong>- Resilientes:</strong> Deben responder incluso cuando hay estados de error',
-                '<strong>- Elasticos:</strong> El aumento de la concurrencia no debe afectar las respuestas',
-                '<strong>- Comunicación:</strong> Minimo acoplamiento al hacer que todo se comunique mediante mensajeria ',
-                '<strong>- Operadores:</strong> Tener soporte hacia estos, y que permitan transformar el flujo de datos ',
-                '<strong>- Manejar el Backpressure:</strong> Para evitar saturar subscriptores lentos o limitar la cantidad de datos a procesar ',
-                '<strong>- Composición:</strong> Juntar diversas funciones asyncronas o sincronas, no debe ser un calvario ni volverser algo incomprensible'
+                '- Es un paradigma enfocado al trabajo con flujos de datos, finitos o infinitos, generalmente se apega a los principios de los Sistemas reactivos',
+                '<strong>Responsivos:</strong> Aseguran la calidad del servicio cumpliendo con unos tiempos de respuesta establecidos ',
+                '<strong>Resilientes:</strong> Deben responder incluso cuando hay estados de error',
+                '<strong>Elasticos:</strong> El aumento de la concurrencia no debe afectar las respuestas',
+                '<strong>Orientados a mensajes(eventos):</strong> Minimo acoplamiento al hacer que todo se comunique mediante mensajeria ',
+                '',
+                '- Tambien muchas librerias actuales han mejorado aspectos que se deben tener en cuenta al codificar bajo este paradigma ',
+                '<strong>Operadores:</strong> Tener soporte hacia estos, y que permitan transformar el flujo de datos ',
+                '<strong>Backpressure:</strong> Para evitar saturar subscriptores lentos, se puede limitar la cantidad de datos enviados o solicitarlos si es posible ',
+                '<strong>Composición:</strong> Juntar diversas funciones asyncronas o sincronas, no debe ser un calvario ni volverser algo incomprensible',
+                '<strong>Legibilidad:</strong> Un codigo incompresible puede degenerarse en un <em>callback hell</em>'
             ]),
         new Item('marcado',
             [
