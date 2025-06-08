@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.MICROSERVICES_PUSH_PULL_EVENTS;
+export const LAST_ITEM = Keys.ANALISIS_SYSTEM_TYPES;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -102,6 +102,7 @@ export const ANALISIS_REF = new Map<string, Referencia>([
         .addMoreReferences("https://systemdesignschool.io/fundamentals/qps", "https://speedscale.com/blog/determine-transactions-per-second/", "https://medium.com/@alexa.polly007/understanding-caching-eviction-invalidation-patterns-and-their-use-cases-9fbfd34be970")
     ],
     [Keys.ANALISIS_BOUNDED_CONTEXT, new Referencia('https://martinfowler.com/bliki/BoundedContext.html', 'Bounded Context', ANALISIS_KEY, 'Bounded Context', '2025/06/02').addRelatedItems(Keys.BUENAS_PRACTICAS_AGGREGATES, Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.PEOPLE_LANGUAGE_UBICUOS, Keys.POO_COUPLING_AND_COHESION)],
+    [Keys.ANALISIS_SYSTEM_TYPES, new Referencia('https://medium.com/@bugfreeai/understanding-system-design-interview-types-a-strategic-guide-for-2025-320af44efc8b', 'Tipos generales de sistemas', ANALISIS_KEY, 'Tipos de sistemas', '2025/06/08').addRelatedItems(Keys.HARDWARE_ESCALAMIENTO, Keys.PERSISTENCY_ADVANCED_SCALING_DB, Keys.NUBE_LATENCY, Keys.MICROSERVICES_CACHE_FAILS, Keys.PERSISTENCY_CONSISTENCY, Keys.PERSISTENCY_ADVANCED_WAL, Keys.NUBE_CAP_TEOREMA, Keys.PERSISTENCY_ACID, Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS, Keys.PARADIGMAS_PARADIGMA_DATOS, Keys.PERSISTENCY_INDICES, Keys.ANALISIS_DATA_DATA_STORING)],
 ]);
 
 export const ARQUITECTURAS_KEY = 'Arquitecturas';

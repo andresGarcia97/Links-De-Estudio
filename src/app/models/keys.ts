@@ -334,6 +334,7 @@ export const ANALISIS_SYSTEM_THINKING = 'systemThinking';
 export const ANALISIS_COHESERS_DECOUPLERS = 'cohesers-decouplers';
 export const ANALISIS_COMMON_METRICS = 'commonMetrics';
 export const ANALISIS_BOUNDED_CONTEXT = 'boundedContext';
+export const ANALISIS_SYSTEM_TYPES = 'systemTypes';
 export const VERSIONAMIENTO_MANAGEMENT_VERSIONS = 'managementVersions-git';
 export const VERSIONAMIENTO_LICENSES = 'licences';
 export const VERSIONAMIENTO_DOCUMENTATION = 'documentation';
