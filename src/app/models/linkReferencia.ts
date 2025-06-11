@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.ANALISIS_SYSTEM_TYPES;
+export const LAST_ITEM = Keys.MICROSERVICES_BENEFITS;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -921,7 +921,8 @@ export const CD_CI_REF = new Map<string, Referencia>([
 export const MICRO_SERVICES_KEY = 'Microservicios';
 export const MICRO_SERVICES_REF = new Map<string, Referencia>([
     [Keys.MICROSERVICES_ANALISIS, new Referencia('https://foojay.io/today/microservices-design-principles-for-well-crafted-architecture/', 'Diseño de Microservicios', MICRO_SERVICES_KEY, 'Diseño ', '2024/10/22').addRelatedItem(Keys.PRINCIPIOS_SOLID).addRelatedItem(Keys.POO_POO)],
-    [Keys.MICROSERVICES_FUNDAMENTALS, new Referencia('https://medium.com/@kumuthini.program/micro-services-fundamentals-dc0fc369d75e', 'Bases de Microservicios', MICRO_SERVICES_KEY, 'Bases').addRelatedItem(Keys.META_ESTRUCTURAS_SISTEMAS_COMPLEJOS)],
+    [Keys.MICROSERVICES_FUNDAMENTALS, new Referencia('https://medium.com/@kumuthini.program/micro-services-fundamentals-dc0fc369d75e', 'Bases de Microservicios', MICRO_SERVICES_KEY, 'Bases', '2025/03/18').addRelatedItem(Keys.META_ESTRUCTURAS_SISTEMAS_COMPLEJOS)],
+    [Keys.MICROSERVICES_BENEFITS, new Referencia('https://www.milanjovanovic.tech/blog/understanding-microservices-core-concepts-and-benefits', 'Beneficios de Microservicios', MICRO_SERVICES_KEY, 'Beneficios', '2025/06/09').addRelatedItems(Keys.ANALISIS_BOUNDED_CONTEXT, Keys.REQUISITOS_BUSINESS_VALUE, Keys.ARQUITECTURAS_LAYERS_SOFTWARE, Keys.APIS_REST_VS_MESSAGING, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.LEYES_CONWAY, Keys.CD_CI_DEV_OPS, Keys.APIS_IDEMPOTENCIA, Keys.ANALISIS_SYSTEM_TYPES, Keys.PERSISTENCY_CONSISTENCY, Keys.ARQUITECTURAS_MONOLITOS)],
     [Keys.MICROSERVICES_ARQUITECTURAS, new Referencia('https://aws.amazon.com/es/microservices/', 'Microservicios & Arquitectura', MICRO_SERVICES_KEY, 'Arquitecturas', '', '2024/08/17')],
     [Keys.MICROSERVICES_BEST_PRACTICES, new Referencia('https://www.linkedin.com/posts/nelsonamigoscode_systemdesign-coding-interviewtips-activity-7206618794188750848-lNtj/', 'Microservicios, buenas practicas', MICRO_SERVICES_KEY, 'Buenas Practicas', '', '2024/08/17').addRelatedItems(Keys.PRINCIPIOS_KISS, Keys.MICROSERVICES_ARQUITECTURAS, Keys.ARQUITECTURAS_EVENT_DRIVEN)],
     [Keys.MICROSERVICES_BY_DEFAULT, new Referencia('https://levelup.gitconnected.com/why-you-should-never-default-to-microservices-c952903fbcb6', 'Microservicios por defecto', MICRO_SERVICES_KEY, '¿ Usarlos por defecto ?', '2024/10/12').addRelatedItems(Keys.TESTING_MOCKS, Keys.APIS_REST_VS_MESSAGING, Keys.ARQUITECTURAS_MONOLITOS)],

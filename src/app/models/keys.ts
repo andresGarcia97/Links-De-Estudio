@@ -404,6 +404,7 @@ export const SMELL_CODES_ARCHITECTURAL_SMELLS = 'smellsCodesArchitectural';
 export const NEURO_MARKETING_WHAT_IS = 'neuroMarketing';
 export const MICROSERVICES_ANALISIS = 'designMicroservices';
 export const MICROSERVICES_FUNDAMENTALS = 'microservicesFundamentals';
+export const MICROSERVICES_BENEFITS = 'microservicesBenefits';
 export const MICROSERVICES_ARQUITECTURAS = 'microservicesArquitecture';
 export const MICROSERVICES_BEST_PRACTICES = 'microserviceBestPractices';
 export const MICROSERVICES_BY_DEFAULT = 'microservicesAsDefault';

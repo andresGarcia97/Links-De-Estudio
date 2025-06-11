@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MICRO_SERVICES } from 'src/app/models/content/content5';
-import { ANALISIS_KEY, ARQUITECTURAS_KEY, LinkReferencia, MALAS_PRACTICAS_KEY, MICRO_SERVICES_REF, NUBE_KEY, PATRONES_KEY }
+import { ANALISIS_KEY, ARQUITECTURAS_KEY, LinkReferencia, MALAS_PRACTICAS_KEY, MICRO_SERVICES_REF, NUBE_KEY, PATRONES_KEY, PERSISTENCY_KEY }
 from 'src/app/models/linkReferencia';
 
 @Component({
@@ -24,6 +24,7 @@ export class MicroServicesComponent implements OnInit {
     const routes = new LinkReferencia().routesAndSections;
     this.relatedSections.set(MALAS_PRACTICAS_KEY, routes.get(MALAS_PRACTICAS_KEY)!);
     this.relatedSections.set(ARQUITECTURAS_KEY,   routes.get(ARQUITECTURAS_KEY)!);
+    this.relatedSections.set(PERSISTENCY_KEY,   routes.get(PERSISTENCY_KEY)!);
     this.relatedSections.set(ANALISIS_KEY,        routes.get(ANALISIS_KEY)!);
     this.relatedSections.set(PATRONES_KEY,        routes.get(PATRONES_KEY)!);
     this.relatedSections.set(NUBE_KEY,            routes.get(NUBE_KEY)!);
