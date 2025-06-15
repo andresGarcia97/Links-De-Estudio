@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.MICROSERVICES_BENEFITS;
+export const LAST_ITEM = Keys.CD_CI_DEPLOYMENT_ARQUITECTURE;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -829,7 +829,7 @@ export const VERSIONAMIENTO_REF = new Map<string, Referencia>([
     [Keys.VERSIONAMIENTO_MANAGEMENT_VERSIONS, new Referencia('https://david-estevez.gitbooks.io/the-git-the-bad-and-the-ugly/content/es/control-de-versiones.html', 'Gestor de versiones', VERSIONAMIENTO_KEY, 'Gestor de Versiones', '', '2025/04/10').addRelatedItem(Keys.GIT_STRUCTURE_AND_CONCEPTS)],
     ['dependencias', new Referencia('https://www.hongkiat.com/blog/manage-dependencies-tools-webdev/', 'Gestores de dependencias', VERSIONAMIENTO_KEY, 'Dependencias Web')],
     ['gradlevsmaven', new Referencia('https://www.chakray.com/es/gradle-vs-maven-definiciones-diferencias/', 'Gradle VS Maven', VERSIONAMIENTO_KEY, 'Gradle VS Maven')],
-    ['versionamiento', new Referencia('https://ed.team/blog/como-se-deciden-las-versiones-del-software', 'Manejo de versiones', VERSIONAMIENTO_KEY, 'Versionamiento')],
+    [Keys.VERSIONAMIENTO_VERSIONAMIENTO, new Referencia('https://ed.team/blog/como-se-deciden-las-versiones-del-software', 'Manejo de versiones', VERSIONAMIENTO_KEY, 'Versionamiento')],
     //['licencias', new Referencia('https://www.bbvaapimarket.com/es/mundo-api/las-5-licencias-de-software-libre-mas-importantes-que-todo-desarrollador-debe-conocer/', 'Tipos de licencias', VERSIONAMIENTO_KEY, 'Licencias')],
     [Keys.VERSIONAMIENTO_LICENSES, new Referencia('https://snyk.io/articles/open-source-licenses/', 'Tipos de licencias open source', VERSIONAMIENTO_KEY, 'Licencias Open Source', '', '2025/02/13')],
     [Keys.VERSIONAMIENTO_DOCUMENTATION, new Referencia('https://shopify.engineering/good-documentation-productivity', 'Documentación & Productividad', VERSIONAMIENTO_KEY, 'Documentacion')],
@@ -910,12 +910,13 @@ export const CD_CI_REF = new Map<string, Referencia>([
     //['stateless-stateful', new Referencia('https://refactorizando.com/stateful-vs-stateless-arquitectura/', 'Stateful VS Stateless', CD_CI_KEY, 'Stateless VS Stateful')],
     [Keys.CD_CI_STATELESS_STATEFUL, new Referencia('https://www.redhat.com/en/topics/cloud-native-apps/stateful-vs-stateless', 'Stateful VS Stateless', CD_CI_KEY, 'Stateless VS Stateful', '2023/12/26', '2025/05/01').addRelatedItems(Keys.MICROSERVICES_FUNDAMENTALS, Keys.NUBE_IAAS_PAAS_SAAS, Keys.APIS_IDEMPOTENCIA)],
     [Keys.CD_CI_DEPLOYMENT_PATTERNS, new Referencia('https://newsletter.techworld-with-milan.com/p/what-are-deployment-patterns', 'Patrones de Despliegue', CD_CI_KEY, 'Patrones de Despliegue')],
-    ['industrialDevops', new Referencia('https://itrevolution.com/articles/what-is-industrial-devops/', 'Industrial DevOps', CD_CI_KEY, 'Industrial DevOps', '2023/11/21')],
+    [Keys.CD_CI_INDUSTRIAL_DEV_OPS, new Referencia('https://itrevolution.com/articles/what-is-industrial-devops/', 'Industrial DevOps', CD_CI_KEY, 'Industrial DevOps', '2023/11/21')],
     [Keys.CD_CI_DEPLOYMENT_PIPELINES, new Referencia('https://semaphoreci.com/blog/cicd-pipeline', 'Pipelines', CD_CI_KEY, '¿ Que es un Pipeline ?', '2023/12/26', '2025/05/04').addRelatedItem(Keys.CONTENEDORES_ORCHESTRATION)],
     [Keys.CD_CI_CELL_BASED_ARQUITECTURE, new Referencia('https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of-impact-with-cell-based-architecture/what-is-a-cell-based-architecture.html', 'Cell Based Arquitecture', CD_CI_KEY, 'Cell Based Arquitecture', '2024/08/25')],
     [Keys.CD_CI_RULES, new Referencia('https://semaphoreci.com/blog/rules-ci-pipeline', 'Rules', CD_CI_KEY, 'Rules', '2024/12/26').addRelatedItems(Keys.GIT_BRANCHS, Keys.CALIDAD_LINTING, Keys.TESTING_PIRAMIDE, Keys.CONTENEDORES_DOCKER)],
     [Keys.CD_CI_FAILOVER, new Referencia('https://stackoverflow.blog/2020/10/23/adrian-cockcroft-aws-failover-chaos-engineering-fault-tolerance-distaster-recovery/', 'Failover & Ingenieria del caos', CD_CI_KEY, 'Failover, Caos, Resiliencia', '2025/04/06').addRelatedItems(Keys.NUBE_SRE, Keys.ANALISIS_SINGLE_POINT_OF_FAILURE, Keys.NUBE_DISPONIBILITY)],
     [Keys.CD_CI_MONITORING, new Referencia('https://www.squadcast.com/blog/comparing-uptime-monitoring-heartbeat-monitoring-and-synthetic-monitoring', 'Monitoreo de un sistema', CD_CI_KEY, 'Monitoreo', '2025/05/01').addRelatedItems(Keys.NUBE_DISPONIBILITY, Keys.NUBE_SRE, Keys.NUBE_LOAD_BALANCING, Keys.HARDWARE_ESCALAMIENTO, Keys.WEB_GOLDEN_SIGNALS, Keys.MICROSERVICES_DISTRIBUTED_TRANSACTIONS)],
+    [Keys.CD_CI_DEPLOYMENT_ARQUITECTURE, new Referencia('https://medium.com/nerd-for-tech/software-deployment-as-architecture-648867bdb77c', 'Implementación como Arquitectura', CD_CI_KEY, 'Deploy & Arquitectura', '2025/06/12').addRelatedItems(Keys.ARQUITECTURAS_DESCOMPOSICION_MODULAR, Keys.ARQUITECTURAS_MONOLITOS, Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES, Keys.VERSIONAMIENTO_VERSIONAMIENTO, Keys.APIS_REST_VS_MESSAGING, Keys.ANALISIS_BOUNDED_CONTEXT, Keys.MICROSERVICES_ARQUITECTURAS, Keys.CONTENEDORES_ORCHESTRATION, Keys.NUBE_NATIVE, Keys.MALAS_PRACTICAS_DEATH_BY_MICROSERVICES)],
 ]);
 
 export const MICRO_SERVICES_KEY = 'Microservicios';
