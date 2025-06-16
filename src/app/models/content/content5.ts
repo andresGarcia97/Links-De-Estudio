@@ -1083,7 +1083,7 @@ export const APIS =
                 '<strong>Nivel 2:</strong> Ademas de usar varias URIs, tambien se usan más metodos y tipos para cada URI, a su vez este expone más recursos ',
                 '<strong>Nivel 3:</strong> Este hace uso de todo lo anterior además de incluir HATEOAS, esto facilita su navegación al punto de ser más intuitivo ',
             ]),
-        new Item('httpCodes',
+        new Item(Keys.APIS_HTTP_CODES,
             [
                 '<strong>Respuestas informativas(1xx):</strong> Son poco usadas y se enfocan más a aspectos de la red y la comunicación ',
                 '- 100 Continue              Repuesta provisional, indica que todo esta bien y que el cliente debe continuar o ignorar la solicitud',
@@ -1111,7 +1111,7 @@ export const APIS =
                 '- 502 Bad Gateway           Al obtener una puerta de enlace se obtiene una respuesta invalida ',
                 '- 503 Service unavailable   Servicio no disponible ',
             ]),
-        new Item('HATEOAS',
+        new Item(Keys.APIS_HATEOAS,
             [
                 '- Los servicios REST son más simples, por eso son una gran opción sobre SOAP, pero tambien se puede abusar de esto ',
                 '- <strong>Hypermedia As The Engine Of Application State</strong> (hipermedia como motor del estado de la aplicación)',
@@ -1119,7 +1119,7 @@ export const APIS =
                 '- Para que esto se cumpla, parte de la respuesta deben ser hipervinculos a sus recursos asociados ',
                 '- Esto con el fin de mantener compatibilidad con versiones más antiguas, y evitar problemas a sus consumidores ',
             ]),
-        new Item('apiStandars',
+        new Item(Keys.APIS_STANDARS,
             [
                 '- Tener estandares para una API, es una manera simple de mejorar la coherencia, la estabilidad ',
                 ' - la generalidad y su usabilidad, ya sean estandares de la comunidad, comerciales o propios ',
@@ -1225,7 +1225,7 @@ export const APIS =
                 '&bull; Que tanta seguridad se requiere ',
                 '&bull; Proyecciones de escalabilidad ',
             ]),
-        new Item('uri',
+        new Item(Keys.APIS_URI,
             [
                 '- Es una secuencia de caracteres que identifica un recurso logico(abstracto) o fisico, que no necesariamente esta conectado a internet',
                 '- Esto permite que los protocolos de internet faciliten sus interacciones, esta sintaxis generica se define como: ',
@@ -1402,6 +1402,34 @@ export const APIS =
                 '- Otros factores importantes a tener en cuenta son que los sistemas pueden deliberadamente limitar la velocidad <strong>Rate Limit</strong> ',
                 '- Esto con el fin de proteger el sistema y se suele definir en solicitudes por minuto <strong>RPM</strong> o solicitudes por segundo <strong>RPS</strong> ',
                 '- Este <em>limite de velocidad</em> permite que los recursos no sean acaparados y garantiza una circulación fluida evitando la saturación del sistema '
+            ]),
+        new Item(Keys.APIS_RATE_LIMITING,
+            [
+                '- La limitación del consumo es una estrategia imprescindible en cualquier aplicación Backend, evitando que los usuarios sobre utilizen los recursos ',
+                '- Generen degradaciones en los servicios, salvaguardar recursos ó como proteccion contra ataques DDoS; <strong>Estrategias comunes:</strong> ',
+                '',
+                '<strong>Token bucket</strong>',
+                '- Un cubo contiene una cantidad fija de fichas ',
+                '- Los tokens se agregan al cubo a una tasa fija y cuando llega una solicitud: ',
+                '- Si hay un token disponible se elimina del cubo y se permite la solicitud, si no la solicitud se rechaza o se retrasa ',
+                '- Permite un alto trafico de solicitudes o rafagas siempre y cuando haya capacidad ',
+                '',
+                '<strong>Leaky bucket</strong>',
+                '- Se puede ver como un cubo de agua que pierde agua a un ritmo fijo ',
+                '- Las solicitudes entrantes se agregan al cubo ',
+                '- Las solicitudes se procesan o se "filtran" a un ritmo constante  ',
+                '- Si el deposito esta lleno cuando llegue una nueva solicitud, esta se descarta ',
+                '- Suaviza los picos y emite solicitudes a un ritmo constante ',
+                '',
+                '<strong>Fixed Window counter</strong>',
+                '- El tiempo se divide en ventanas de tamaño fijo ',
+                '- Un contador rastrea la cantidad de solicitudes por cliente/IP en la ventana actual ',
+                '- Si el recuento excede el limite se rechazan hasta la siguiente ventana ',
+                '',
+                '<strong>Sliding window counter</strong>',
+                '- Cada registro tiene la fecha en que fue hecha la petición, ',
+                '- Con cada solicitud se cuentan los registros para saber la cantidad en <strong>X</strong> tiempo determinado ',
+                '- Si esta por debajo del limite se procesa, de lo contrario se rechaza ',
             ])
     ];
 
