@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.APIS_API_FIRST_VS_CODE_FIRST;
+export const LAST_ITEM = Keys.POO_ABSTRACTIONS;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -599,25 +599,26 @@ export const POO_REF = new Map<string, Referencia>([
     [Keys.POO_POO, new Referencia('https://desarrolloweb.com/articulos/499.php', 'Programación Orientada a Objetos', POO_KEY, 'POO')],
     [Keys.POO_POO_PILARES, new Referencia('https://www.campusmvp.es/recursos/post/los-conceptos-fundamentales-sobre-programacion-orientada-objetos-explicados-de-manera-simple.aspx', 'Pilares de POO', POO_KEY, 'Pilares POO')],
     [Keys.POO_COMPOSICION, new Referencia('https://www.seas.es/blog/informatica/agregacion-vs-composicion-en-diagramas-de-clases-uml/', 'Agregación & Composición', POO_KEY, 'Relaciones')],
-    ['pooStatic', new Referencia('https://desarrolloweb.com/articulos/metodos-atributos-static-poo.html', 'palabra reservada static', POO_KEY, 'Static en POO')],
+    [Keys.POO_STATIC, new Referencia('https://desarrolloweb.com/articulos/metodos-atributos-static-poo.html', 'palabra reservada static', POO_KEY, 'Static en POO')],
     [Keys.POO_DESIGN_COUPLING, new Referencia('https://jummp.wordpress.com/2010/06/26/acoplamiento-aferente-acoplamiento-eferente-inestabilidad-y-abstraccion-i/', 'Tipos de acoplamiento', POO_KEY, 'Acoplamiento', '', '2025/05/14').addRelatedItem(Keys.ANALISIS_COHESERS_DECOUPLERS)],
     [Keys.POO_DESIGN_BY_CONTRACT, new Referencia('https://dosideas.com/wiki/Dise%C3%B1o_Por_Contrato', 'Diseño por Contratos', POO_KEY, 'Contratos I', '', '2025/01/08')],
     [Keys.POO_DESIGN_BY_CONTRACT_PARTS, new Referencia('https://opendatascience.com/dissecting-the-software-designing-approach-of-design-by-contract/', 'Pre/Post condiciones, Invariantes', POO_KEY, 'Contratos II', '2025/01/08').addRelatedItem(Keys.PRINCIPIOS_SOLID)],
-    ['descomposicion', new Referencia('http://miguedt.blogspot.com/2013/01/descomposicion-funcional.html', 'Descomposición', POO_KEY, 'Descomposición')],
+    [Keys.POO_DESCOMPOSITION, new Referencia('http://miguedt.blogspot.com/2013/01/descomposicion-funcional.html', 'Descomposición', POO_KEY, 'Descomposición')],
     [Keys.POO_HERENCIA, new Referencia('https://www.ecured.cu/Herencia_(Inform%C3%A1tica)', 'Herencia', POO_KEY, 'Herencia', '', '2024/12/10')],
     [Keys.POO_POLIMORFISMO, new Referencia('https://ifgeekthen.nttdata.com/es/polimorfismo-en-java-programaci%C3%B3n-orientada-objetos', 'Polimorfismo & Sobrecarga', POO_KEY, 'Polimorfismo/Sobrecarga', '', '2025/03/19').addRelatedItems(Keys.COMPILACION_COMPILACION, Keys.META_CARACTERISTICAS_GENERICS, Keys.PRINCIPIOS_SOLID)],
     [Keys.POO_HERENCIA_COMPOSICION, new Referencia('https://devexperto.com/herencia-vs-composicion/', 'Herencia VS Composición', POO_KEY, 'Herencia VS Composición', '', '2025/03/20')],
     //['enlaces', new Referencia('https://es.fondoperlaterra.org/comdifference-between-static-and-dynamic-binding-2', 'Enlace estatico & dinamico', POO_KEY, 'Enlaces')],
     [Keys.POO_ENLACES, new Referencia('https://www.geeksforgeeks.org/static-vs-dynamic-binding-in-java/', 'Enlace estatico & dinamico', POO_KEY, 'Enlaces', '', '2024/10/27')],
     [Keys.POO_COUPLING_COMPONENTS, new Referencia('https://mg-laboratory.tistory.com/189', 'Acoplamiento de componentes', POO_KEY, 'SDP, ADP, SAP').addRelatedItem(Keys.ARQUITECTURAS_DESCOMPOSICION_MODULAR)],
-    ['beginingPoo', new Referencia('https://medium.com/javascript-scene/the-forgotten-history-of-oop-88d71b9b2d9f', 'Nacimiento de Poo', POO_KEY, 'Inicios de POO')],
+    [Keys.POO_BEGINING, new Referencia('https://medium.com/javascript-scene/the-forgotten-history-of-oop-88d71b9b2d9f', 'Nacimiento de Poo', POO_KEY, 'Inicios de POO')],
     [Keys.POO_INMUTABILITY, new Referencia('https://www.campusmvp.es/recursos/post/programacion-funcional-inmutabilidad-y-funciones-puras.aspx', 'Inmutabilidad', POO_KEY, 'Inmutabilidad')],
-    ['typesPolimorfismo', new Referencia('https://medium.com/lenguajes-y-dialectos-en-programaci%C3%B3n/polimorfismo-y-paradigmas-tipos-y-ejemplos-ca6a56093a66', 'Tipos de Polimorfismo', POO_KEY, 'Tipos de Polimorfismo')],
-    ['factoryMethods', new Referencia('https://www.baeldung.com/java-constructors-vs-static-factory-methods', 'Factory Methods', POO_KEY, 'Factory Methods', '2022/11/07')],
-    ['interfacesOverInheritance', new Referencia('https://www.infoworld.com/article/2073649/why-extends-is-evil.html', 'Interfaces VS Herencia', POO_KEY, 'Interfaces VS Herencia', '2023/03/13')],
+    [Keys.POO_TYPES_POLIMORFISMO, new Referencia('https://medium.com/lenguajes-y-dialectos-en-programaci%C3%B3n/polimorfismo-y-paradigmas-tipos-y-ejemplos-ca6a56093a66', 'Tipos de Polimorfismo', POO_KEY, 'Tipos de Polimorfismo')],
+    [Keys.POO_FACTORY_METODS, new Referencia('https://www.baeldung.com/java-constructors-vs-static-factory-methods', 'Factory Methods', POO_KEY, 'Factory Methods', '2022/11/07')],
+    [Keys.POO_INTERFACES_OVER_INHERITANCE, new Referencia('https://www.infoworld.com/article/2073649/why-extends-is-evil.html', 'Interfaces VS Herencia', POO_KEY, 'Interfaces VS Herencia', '2023/03/13')],
     [Keys.POO_ENUMS, new Referencia('https://jarroba.com/enum-enumerados-en-java-con-ejemplos/', 'Enumeraciones', POO_KEY, 'Enumeraciones', '', '2024/05/05')],
     [Keys.POO_COUPLING_AND_COHESION, new Referencia('https://ducmanhphan.github.io/2019-03-23-Coupling-and-Cohension-in-OOP/', 'Acoplamiento & Cohesion', POO_KEY, 'Acoplamiento & Cohesion', '', '2024/10/27')],
     [Keys.POO_CALISTHENICS, new Referencia('https://keyvanakbary.com/object-calisthenics-mejora-tu-diseno-orientado-a-objetos/', 'Calistenia de Objetos', POO_KEY, 'Calistenia de Objetos', '2025/09/02').addRelatedItems(Keys.CALIDAD_IF_ELSE, Keys.BUENAS_PRACTICAS_DEMETER, Keys.PRINCIPIOS_SOLID, Keys.BUENAS_PRACTICAS_COMPLEJIDAD, Keys.META_ESTRUCTURAS_VALUE_OBJECTS)],
+    [Keys.POO_ABSTRACTIONS, new Referencia('https://itnext.io/abstractions-done-right-discussing-when-it-is-worth-or-not-d75a32724f34', 'Abstracciones', POO_KEY, 'Abstracciones', '2025/06/22').addRelatedItems(Keys.MALAS_PRACTICAS_OVER_ENGINEERING, Keys.PRINCIPIOS_SOLID, Keys.FRAMEWORKS_IOD, Keys.TESTING_MOCKS, Keys.META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL, Keys.ESTRATEGIAS_DESARROLLO_DDD)],
 ]);
 
 export const TESTING_KEY = 'Testing';
