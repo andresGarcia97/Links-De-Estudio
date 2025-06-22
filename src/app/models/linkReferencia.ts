@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.APIS_RATE_LIMITING;
+export const LAST_ITEM = Keys.APIS_API_FIRST_VS_CODE_FIRST;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -489,6 +489,10 @@ export const APIS_REF = new Map<string, Referencia>([
     [Keys.APIS_API_FIRST, new Referencia('https://www.postman.com/api-first/', 'API-First', APIS_KEY, 'API-First', '2024/09/13').addRelatedItem(Keys.VERSIONAMIENTO_LICENSES_AND_DATA)],
     [Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, new Referencia('https://www.kentik.com/kentipedia/latency-vs-throughput-vs-bandwidth/', 'Latencia, Rendimiento, Ancho de banda', APIS_KEY, 'Latencia & Rendimiento', '2025/03/29').addRelatedItems(Keys.NUBE_LATENCY, Keys.SECURITY_ATTACK_ON_MODEL_OSI)],
     [Keys.APIS_RATE_LIMITING, new Referencia('https://blog.sagyamthapa.com.np/interactive-guide-to-rate-limiting', 'Rate Limiting', APIS_KEY, 'Rate Limiting', '2025/06/15').addRelatedItems(Keys.SECURITY_ATTACK_ON_MODEL_OSI, Keys.ANALISIS_SYSTEM_DESIGN_CONCEPTS_I)],
+    [Keys.APIS_API_FIRST_VS_CODE_FIRST, new Referencia('https://www.enmilocalfunciona.io/servicios-web-restful-ii-api-first-vs-code-first/', 'API-First VS Code-First', APIS_KEY, 'API-First VS Code-First', '2025/06/16')
+        .addRelatedItems(Keys.POO_DESIGN_BY_CONTRACT, Keys.TESTING_ADVANCED_APDEX)
+        .addMoreReferences('https://swagger.io/blog/code-first-vs-design-first-api/')
+    ],
 ]);
 
 export const ANALISIS_DATA_KEY = 'Analisis-datos';
