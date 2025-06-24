@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.POO_ABSTRACTIONS;
+export const LAST_ITEM = Keys.MICROSERVICES_ESENTIAL_COMPONENTS;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -943,4 +943,5 @@ export const MICRO_SERVICES_REF = new Map<string, Referencia>([
     [Keys.MICROSERVICES_DISTRIBUTED_TRANSACTIONS, new Referencia('https://gist.github.com/rponte/9477858e619d8b986e17771c8be7827f', 'Transacciones Distribuidas', MICRO_SERVICES_KEY, 'Transacciones Distribuidas', '2025/03/14').addRelatedItems(Keys.NUBE_TWO_PHASE_COMMIT, Keys.PERSISTENCY_ACID, Keys.PATRONES_SAGA, Keys.NUBE_OBSERVABILIDAD, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.PERSISTENCY_CONSISTENCY)],
     [Keys.MICROSERVICES_PROBLEMS, new Referencia('https://blog.container-solutions.com/why-im-no-longer-talking-to-architects-about-microservices', 'Problemas de los Microservicios', MICRO_SERVICES_KEY, 'Problemas', '2025/03/17').addRelatedItems(Keys.CONTENEDORES_ORCHESTRATION, Keys.MALAS_PRACTICAS_DEATH_BY_MICROSERVICES, Keys.CD_CI_DEV_OPS, Keys.METODOLOGIAS_AGILES, Keys.NUBE_SRE, Keys.NUBE_OBSERVABILIDAD, Keys.PEOPLE_ONA)],
     [Keys.MICROSERVICES_PUSH_PULL_EVENTS, new Referencia('https://theburningmonk.com/2025/05/understanding-push-vs-poll-in-event-driven-architectures/', 'Push VS Poll', MICRO_SERVICES_KEY, 'Push VS Poll Events', '2025/06/04').addRelatedItems(Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.ANALISIS_QUEUES_SYSTEM_DESIGN, Keys.ANALISIS_LIGHT_EVENTS_VS_RICH_EVENTS, Keys.PARADIGMAS_REACTIVO)],
+    [Keys.MICROSERVICES_ESENTIAL_COMPONENTS, new Referencia('https://newsletter.systemdesigncodex.com/p/essential-components-of-a-production-069', 'Componentes Esenciales', MICRO_SERVICES_KEY, 'Componentes Esenciales', '2025/06/23').addRelatedItems(Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.ANALISIS_QUEUES_SYSTEM_DESIGN, Keys.HARDWARE_ESCALAMIENTO, Keys.FRAMEWORKS_FRAMEWORKS, Keys.PERSISTENCY_ADVANCED_SQL_NO_SQL, Keys.META_CARACTERISTICAS_CACHE, Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.NUBE_OBSERVABILIDAD, Keys.APIS_RATE_LIMITING)],
 ]);

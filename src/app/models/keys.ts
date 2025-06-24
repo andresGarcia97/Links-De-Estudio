@@ -434,3 +434,4 @@ export const MICROSERVICES_DEAD_LETTER_QUEUE = 'deadLetterQueue';
 export const MICROSERVICES_DISTRIBUTED_TRANSACTIONS = 'microservicesDistributedTrasanctions';
 export const MICROSERVICES_PROBLEMS = 'microservicesProblems';
 export const MICROSERVICES_PUSH_PULL_EVENTS = 'push-vs-poll-events';
+export const MICROSERVICES_ESENTIAL_COMPONENTS = 'microservices-esential-components';
