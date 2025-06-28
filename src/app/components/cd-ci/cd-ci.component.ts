@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CD_CI_INFRAESTRUCTURE } from 'src/app/models/content/content3';
-import { APIS_KEY, CD_CI_REF, CONTENEDORES_KEY, HARDWARE_KEY, LinkReferencia, NUBE_KEY, VERSIONAMIENTO_KEY, WEB_KEY } from 'src/app/models/linkReferencia';
+import { APIS_KEY, CD_CI_REF, CONTENEDORES_KEY, HARDWARE_KEY, LinkReferencia, NUBE_KEY, VERSIONAMIENTO_KEY, WEB_KEY }
+from 'src/app/models/linkReferencia';
 
 @Component({
   selector: 'app-cd-ci',
