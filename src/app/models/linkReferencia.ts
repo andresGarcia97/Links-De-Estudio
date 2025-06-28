@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.PERSISTENCY_DATA_BASE_OBJECTS;
+export const LAST_ITEM = Keys.PERSISTENCY_ADVANCED_NEW_SQL;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -796,20 +796,24 @@ export const PERSISTENCY_REF = new Map<string, Referencia>([
 
 export const PERSISTENCY_ADVANCED_KEY = 'BD Avanzado'
 export const PERSISTENCY_ADVANCED_REF = new Map<string, Referencia>([
-    ['nosql', new Referencia('https://pandorafms.com/blog/es/bases-de-datos-nosql/', 'Bases de Datos NO SQL', PERSISTENCY_ADVANCED_KEY, 'NoSQL')],
-    ['tiposBD', new Referencia('https://www.acens.com/wp-content/images/2014/02/bbdd-nosql-wp-acens.pdf', 'Tipos de BD No SQL', PERSISTENCY_ADVANCED_KEY, 'Tipos NoSQL')],
+    [Keys.PERSISTENCY_ADVANCED_NO_SQL, new Referencia('https://pandorafms.com/blog/es/bases-de-datos-nosql/', 'Bases de Datos NO SQL', PERSISTENCY_ADVANCED_KEY, 'NoSQL', '', '2025/06/27')],
+    [Keys.PERSISTENCY_ADVANCED_NO_SQL_TYPES, new Referencia('https://www.acens.com/wp-content/images/2014/02/bbdd-nosql-wp-acens.pdf', 'Tipos de BD No SQL', PERSISTENCY_ADVANCED_KEY, 'Tipos NoSQL', '', '2025/06/27')],
     [Keys.PERSISTENCY_ADVANCED_ORM, new Referencia('https://programarfacil.com/blog/que-es-un-orm/', 'Mapeo Objeto-Relacional (ORM)', PERSISTENCY_ADVANCED_KEY, 'ORM')],
     //[Keys.PERSISTENCY_CONSISTENCY, new Referencia('https://medium.com/@gabanox/consistencia-eventual-en-s3-6ba5b2ecd721', 'Consistencia', PERSISTENCY_ADVANCED_KEY, 'Consistencia')],
     [Keys.PERSISTENCY_CONSISTENCY, new Referencia('https://www.scylladb.com/glossary/consistency-models/', 'Consistencia', PERSISTENCY_ADVANCED_KEY, 'Consistencia', '', '2025/03/13').addRelatedItem(Keys.NUBE_CAP_TEOREMA)],
     //['algebraRelacional', new Referencia('https://sites.google.com/site/basededatosdistribuidastics/algebra-relacional', 'Algebra Relacional', PERSISTENCY_ADVANCED_KEY, 'Algebra Relacional')],
-    ['algebraRelacional', new Referencia('https://lienzos.uv.mx/Uploads/resources/LenguajeAlgebraRelacional_18e0.pdf', 'Algebra Relacional', PERSISTENCY_ADVANCED_KEY, 'Algebra Relacional', '', '2024/06/07')],
+    [Keys.PERSISTENCY_ALGEBRA_RELACIONAL, new Referencia('https://lienzos.uv.mx/Uploads/resources/LenguajeAlgebraRelacional_18e0.pdf', 'Algebra Relacional', PERSISTENCY_ADVANCED_KEY, 'Algebra Relacional', '', '2024/06/07')],
     [Keys.PERSISTENCY_ADVANCED_N_1_SELECTS, new Referencia('https://stackoverflow.com/questions/97197/what-is-the-n1-selects-problem-in-orm-object-relational-mapping', 'N + 1 Problem', PERSISTENCY_ADVANCED_KEY, 'N + 1 Selects')],
-    ['boyceCodd', new Referencia('https://normalizacionunit4.blogspot.com/2019/05/46-forma-normal-boyce-codd.html', 'Boyce-Codd', PERSISTENCY_ADVANCED_KEY, 'Boyce-Codd')],
+    [Keys.PERSISTENCY_ADVANCED_BOYCE_CODD, new Referencia('https://normalizacionunit4.blogspot.com/2019/05/46-forma-normal-boyce-codd.html', 'Boyce-Codd', PERSISTENCY_ADVANCED_KEY, 'Boyce-Codd')],
     [Keys.PERSISTENCY_ADVANCED_SQL_NO_SQL, new Referencia('https://medium.com/@eugeniomendoza/c%C3%B3mo-saber-si-necesitas-una-base-de-datos-nosql-b6cfd5bb7d9b', 'SQL ó NoSql', PERSISTENCY_ADVANCED_KEY, 'SQL ó NoSql', '', '2024/06/06')],
+    [Keys.PERSISTENCY_ADVANCED_NEW_SQL, new Referencia('https://www.baeldung.com/sql/database-newsql-intro', 'NewSQL', PERSISTENCY_ADVANCED_KEY, 'NewSQL', '2025/06/26')
+        .addRelatedItems(Keys.ANALISIS_DATA_OLAP_OLTP, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.HARDWARE_ESCALAMIENTO, Keys.NUBE_PACELC)
+        .addMoreReferences('https://www.linkedin.com/pulse/bases-de-datos-sql-vs-nosql-newsql-jos%C3%A9-tello-villalobos/')
+    ],
     [Keys.PERSISTENCY_ADVANCED_LOCKING, new Referencia('https://vladmihalcea.com/optimistic-vs-pessimistic-locking/', 'Bloqueo Optimista & Pesimista', PERSISTENCY_ADVANCED_KEY, 'Bloqueos', '2024/06/17')],
-    ['sqlOrderExecution', new Referencia('https://matam-kirankumar.medium.com/sql-query-order-of-execution-37001da1462', 'Orden de Ejecución', PERSISTENCY_ADVANCED_KEY, 'Orden de Ejecución', '2023/08/13')],
-    ['sargeable', new Referencia('https://dev.to/kanani_nirav/secret-to-optimizing-sql-queries-understand-the-sql-execution-order-28m1', 'Consultas SARGEABLE', PERSISTENCY_ADVANCED_KEY, 'SARGEABLE', '2023/08/14')],
-    ['MVCC', new Referencia('https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/What-is-MVCC-How-does-Multiversion-Concurrencty-Control-work', 'Control de Concurrencia Multiversion', PERSISTENCY_ADVANCED_KEY, 'Control de Concurrencia', '2023/10/09')],
+    [Keys.PERSISTENCY_ADVANCED_SQL_ORDER_EXECUTION, new Referencia('https://matam-kirankumar.medium.com/sql-query-order-of-execution-37001da1462', 'Orden de Ejecución', PERSISTENCY_ADVANCED_KEY, 'Orden de Ejecución', '2023/08/13')],
+    [Keys.PERSISTENCY_ADVANCED_SARGEABLE, new Referencia('https://dev.to/kanani_nirav/secret-to-optimizing-sql-queries-understand-the-sql-execution-order-28m1', 'Consultas SARGEABLE', PERSISTENCY_ADVANCED_KEY, 'SARGEABLE', '2023/08/14')],
+    [Keys.PERSISTENCY_ADVANCED_MVCC, new Referencia('https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/What-is-MVCC-How-does-Multiversion-Concurrencty-Control-work', 'Control de Concurrencia Multiversion', PERSISTENCY_ADVANCED_KEY, 'Control de Concurrencia', '2023/10/09')],
     [Keys.PERSISTENCY_ADVANCED_BASE, new Referencia('https://phoenixnap.com/kb/acid-vs-base', 'BASE', PERSISTENCY_ADVANCED_KEY, 'BASE', '2023/12/04')],
     [Keys.PERSISTENCY_ADVANCED_SCALING_DB, new Referencia('https://blog.bytebytego.com/p/ep114-7-must-know-strategies-to-scale', 'Estrategias para escalar una BD', PERSISTENCY_ADVANCED_KEY, '¿ Como escalar una BD ?', '2024/06/07')],
     [Keys.PERSISTENCY_ADVANCED_WAL, new Referencia('https://medium.com/@vinciabhinav7/write-ahead-logs-but-why-494c3efd722d', 'Registros de escritura anticipada (WAL)', PERSISTENCY_ADVANCED_KEY, 'WAL', '2024/06/15').addRelatedItems(Keys.META_CARACTERISTICAS_META_DATOS, Keys.PERSISTENCY_DBMS)],
