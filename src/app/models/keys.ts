@@ -449,3 +449,4 @@ export const MICROSERVICES_DISTRIBUTED_TRANSACTIONS = 'microservicesDistributedT
 export const MICROSERVICES_PROBLEMS = 'microservicesProblems';
 export const MICROSERVICES_PUSH_PULL_EVENTS = 'push-vs-poll-events';
 export const MICROSERVICES_ESENTIAL_COMPONENTS = 'microservices-esential-components';
+export const MICROSERVICES_EVENTS_VS_REQUEST_RESPONSE = 'architectureBasedEvents-vs-requestResponse';

@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.PERSISTENCY_ADVANCED_NEW_SQL;
+export const LAST_ITEM = Keys.MICROSERVICES_EVENTS_VS_REQUEST_RESPONSE;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -953,4 +953,5 @@ export const MICRO_SERVICES_REF = new Map<string, Referencia>([
     [Keys.MICROSERVICES_PROBLEMS, new Referencia('https://blog.container-solutions.com/why-im-no-longer-talking-to-architects-about-microservices', 'Problemas de los Microservicios', MICRO_SERVICES_KEY, 'Problemas', '2025/03/17').addRelatedItems(Keys.CONTENEDORES_ORCHESTRATION, Keys.MALAS_PRACTICAS_DEATH_BY_MICROSERVICES, Keys.CD_CI_DEV_OPS, Keys.METODOLOGIAS_AGILES, Keys.NUBE_SRE, Keys.NUBE_OBSERVABILIDAD, Keys.PEOPLE_ONA)],
     [Keys.MICROSERVICES_PUSH_PULL_EVENTS, new Referencia('https://theburningmonk.com/2025/05/understanding-push-vs-poll-in-event-driven-architectures/', 'Push VS Poll', MICRO_SERVICES_KEY, 'Push VS Poll Events', '2025/06/04').addRelatedItems(Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.ANALISIS_QUEUES_SYSTEM_DESIGN, Keys.ANALISIS_LIGHT_EVENTS_VS_RICH_EVENTS, Keys.PARADIGMAS_REACTIVO)],
     [Keys.MICROSERVICES_ESENTIAL_COMPONENTS, new Referencia('https://newsletter.systemdesigncodex.com/p/essential-components-of-a-production-069', 'Componentes Esenciales', MICRO_SERVICES_KEY, 'Componentes Esenciales', '2025/06/23').addRelatedItems(Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.ANALISIS_QUEUES_SYSTEM_DESIGN, Keys.HARDWARE_ESCALAMIENTO, Keys.FRAMEWORKS_FRAMEWORKS, Keys.PERSISTENCY_ADVANCED_SQL_NO_SQL, Keys.META_CARACTERISTICAS_CACHE, Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.NUBE_OBSERVABILIDAD, Keys.APIS_RATE_LIMITING)],
+    [Keys.MICROSERVICES_EVENTS_VS_REQUEST_RESPONSE, new Referencia('https://javascript.plainenglish.io/event-driven-architecture-vs-request-response-developer-guide-acec290f44a1', 'Basado en Eventos VS Request-Response', MICRO_SERVICES_KEY, 'Events VS Requests', '2025/06/30').addRelatedItems(Keys.ANALISIS_SYSTEM_TYPES, Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.PATRONES_DYSTRIBUTED_SYSTEMS)],
 ]);
