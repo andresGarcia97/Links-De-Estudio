@@ -1885,7 +1885,7 @@ export const TESTING_ADVANCED =
                 '- Donde una causa (entradas) pueden generar en diversos efectos (salidas) ',
                 '- Estas entradas y salidas tambien se pueden combinar para elaborar complejas reglas de negocio ',
             ]),
-        new Item('tiposDePruebas',
+        new Item(Keys.TESTING_ADVANCED_TYPES_TESTS,
             [
                 '<strong>Pruebas Funcionales</strong>',
                 '',

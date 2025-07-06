@@ -621,7 +621,7 @@ export const CONOCIMIENTOS_EMPIRICOS =
                 ' - de eventos que culminaran en un evento posterior predecible',
                 '- Tambien se puede encontrar una relación directa con el <em>efecto mariposa</em>(matematicas) y la <em>paradoja de sorites</em>(filosofia)',
             ]),
-        new Item('boysScouts',
+        new Item(Keys.CONOCIMIENTOS_EMPIRICOS_BOYS_SCOUTS,
             [
                 '- Los Boys Scouts tienen una regla general <em>Dejar siempre el campamento más limpio de lo que se encontro</em>',
                 '- Si encuentras algun desorden, limpialo, mejoras intencionalmente el entorno, para el siguiente grupo de personas ',
