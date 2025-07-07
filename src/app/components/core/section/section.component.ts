@@ -2,7 +2,7 @@ import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { fromEvent, Subscription } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { Item, Referencia } from 'src/app/models/models';
+import { Item, PreviousAndNextSection, Referencia } from 'src/app/models/models';
 
 const FIREFOX_BROWSER = "firefox";
 
@@ -59,6 +59,7 @@ export class SectionComponent implements OnInit, OnDestroy {
   @Input() items = new Array<Item>();
   @Input() selection = '';
   @Input() relatedSections = new Map<string, string>([]);
+  @Input() previousAndNextSection?: PreviousAndNextSection;
 
   referencia = '';
   titulo = '';

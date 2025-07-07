@@ -50,3 +50,17 @@ export class Referencia {
     }
 
 }
+
+export class PreviousAndNextSection {
+    titlePrevious = '';
+    sectionPrevious = '';
+    titleNext = '';
+    sectionNext = '';
+
+    constructor(titlePrevious: string, sectionPrevious: string, titleNext: string, sectionNext: string) {
+        this.titlePrevious = titlePrevious;
+        this.sectionPrevious = sectionPrevious;
+        this.titleNext = titleNext;
+        this.sectionNext = sectionNext;
+    }
+}

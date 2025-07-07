@@ -95,6 +95,10 @@
   background-color: var(--color-navy-blue);
 }
 
+.oscuro .card.highlight-card.light-color {
+  background-color: var(--color-french-sky-blue);
+}
+
 .oscuro .toolbar #logo {
   fill: var(--color-navy-blue);
 }
@@ -107,7 +111,7 @@
   color: var(--color-white);
 }
 
-.oscuro .card.card.highlight-card span.noMargin {
+.oscuro .card.card.highlight-card span.no-margin {
   color: var(--color-white);
 }
 
@@ -358,6 +362,10 @@ svg.material-icons:not(:last-child) {
   position: relative;
 }
 
+.card.highlight-card.light-color {
+  background-color: var(--color-fulvous);
+}
+
 .card.highlight-card:hover {
   cursor: pointer;
   transform: translateY(4px);
@@ -369,7 +377,7 @@ svg.material-icons:not(:last-child) {
   margin-left: 60px;
 }
 
-.card.card.highlight-card span.noMargin {
+.card.card.highlight-card span.no-margin {
   color: var(--color-night);
   margin: 5px;
 }
