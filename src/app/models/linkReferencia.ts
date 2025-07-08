@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.ESTRATEGIAS_DESARROLLO_VERTICAL;
+export const LAST_ITEM = Keys.TESTING_ADVANCED_PERFORMANCE;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -657,15 +657,17 @@ export const TESTING_REF = new Map<string, Referencia>([
 
 export const TESTING_ADVANCED_KEY = 'Testing-Avanzado';
 export const TESTING_ADVANCED_REF = new Map<string, Referencia>([
-    ['cajaNegraBlanca', new Referencia('https://www.testermoderno.com/caja-blanca-vs-caja-negra/', 'Tests de Caja negra & Caja blanca', TESTING_ADVANCED_KEY, 'Caja Negra & Blanca')],
+    [Keys.TESTING_ADVANCED_CAJA_NEGRA_CAJA_BLANCA, new Referencia('https://www.testermoderno.com/caja-blanca-vs-caja-negra/', 'Tests de Caja Negra & Caja Blanca', TESTING_ADVANCED_KEY, 'Caja Negra & Blanca', '', '2025/07/06')],
     //['valorLimite', new Referencia('https://educandocontic.com/valores-limite-pruebas/', 'Valores limite', TESTING_ADVANCED_KEY, 'Valores Limites')],
     [Keys.TESTING_ADVANCED_VALOR_LIMITE, new Referencia('https://www.linkedin.com/pulse/an%C3%A1lisis-de-valores-l%C3%ADmite-asegurando-la-calidad-en-los-oscar-trejo-taeff/', 'Valores limite', TESTING_ADVANCED_KEY, 'Valores Limites', '2024/07/14', '2025/01/04')],
     //['clasesEquivalencia', new Referencia('https://educandocontic.com/particiones-de-equivalencia/', 'Clases de equivalencia', TESTING_ADVANCED_KEY, 'Equivalencias')],
-    ['clasesEquivalencia', new Referencia('https://www.diariodeqa.com/post/tecnicas-de-prueba-de-caja-negra', 'Clases de equivalencia', TESTING_ADVANCED_KEY, 'Equivalencias', '', '2024/07/14')],
-    ['grafosCausaEfecto', new Referencia('https://platzi.com/tutoriales/1421-pruebas-software/9606-pruebas-con-grafos-causa-efecto/', 'Grafos Causa -> Efecto', TESTING_ADVANCED_KEY, 'Causa -> Efecto')],
+    //['clasesEquivalencia', new Referencia('https://www.diariodeqa.com/post/tecnicas-de-prueba-de-caja-negra', 'Clases de equivalencia', TESTING_ADVANCED_KEY, 'Equivalencias', '', '2024/07/14')],
+    [Keys.TESTING_CLASES_EQUIVALENCIA, new Referencia('https://katalon.com/resources-center/blog/equivalence-class-partitioning-guide', 'Clases de equivalencia', TESTING_ADVANCED_KEY, 'Equivalencias', '2024/07/14', '2025/07/07')],
+    //['grafosCausaEfecto', new Referencia('https://platzi.com/tutoriales/1421-pruebas-software/9606-pruebas-con-grafos-causa-efecto/', 'Grafos Causa -> Efecto', TESTING_ADVANCED_KEY, 'Causa -> Efecto')],
+    [Keys.TESTING_GRAFOS_CAUSA_EFECTO, new Referencia('https://www.softwaretestinghelp.com/cause-and-effect-graph-test-case-writing-technique/', 'Grafos Causa -> Efecto', TESTING_ADVANCED_KEY, 'Causa -> Efecto', '2024/07/14', '2025/07/07')],
     [Keys.TESTING_ADVANCED_TYPES_TESTS, new Referencia('https://www.softwaretestinghelp.com/types-of-software-testing/', 'Clasificación de las pruebas', TESTING_ADVANCED_KEY, 'Tipos de pruebas')],
-    ['outsideInside', new Referencia('https://www.adictosaltrabajo.com/2016/01/29/tdd-outside-in-vs-inside-out/', 'TDD: Outside-In VS Inside-out', TESTING_ADVANCED_KEY, 'Outside & Inside', '', '2024/07/14').addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_TDD)],
-    ['casosDePruebas', new Referencia('https://medium.com/grupo-carricay/qu%C3%A9-son-los-casos-de-pruebas-4893799b5b84', 'Casos de prueba', TESTING_ADVANCED_KEY, 'Casos de prueba')],
+    [Keys.TESTING_ADVANCED_OUTSIDE_INSIDE, new Referencia('https://www.adictosaltrabajo.com/2016/01/29/tdd-outside-in-vs-inside-out/', 'TDD: Outside-In VS Inside-out', TESTING_ADVANCED_KEY, 'Outside & Inside', '', '2024/07/14').addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_TDD)],
+    [Keys.TESTING_ADVANCED_CASOS_DE_PRUEBA, new Referencia('https://medium.com/grupo-carricay/qu%C3%A9-son-los-casos-de-pruebas-4893799b5b84', 'Casos de prueba', TESTING_ADVANCED_KEY, 'Casos de prueba')],
     [Keys.TESTING_ADVANCED_USES_CASES, new Referencia('https://blogs.encamina.com/piensa-en-software-desarrolla-en-colores/qa-caso-de-uso-vs-caso-de-prueba/', 'Casos de uso', TESTING_ADVANCED_KEY, 'Casos de uso', '', '2025/05/04').addRelatedItems(Keys.USER_HISTORIES_USE_CASE_REQUISITOS, Keys.UML_USE_CASES)],
     [Keys.TESTING_ADVANCED_SMELLS_CODES1, new Referencia('https://codingcraftsman.wordpress.com/2018/09/27/test-smells/', 'Smells codes en testing #1', TESTING_ADVANCED_KEY, 'Smells codes en testing #1')],
     [Keys.TESTING_ADVANCED_SMELLS_CODES2, new Referencia('https://codingcraftsman.wordpress.com/2018/09/27/test-smells/', 'Smells codes en testing #2', TESTING_ADVANCED_KEY, 'Smells codes en testing #2')],
@@ -677,6 +679,7 @@ export const TESTING_ADVANCED_REF = new Map<string, Referencia>([
     [Keys.TESTING_ADVANCED_CHARGE, new Referencia('https://www.headspin.io/blog/best-performance-testing-tools', 'Pruebas de carga', TESTING_ADVANCED_KEY, 'Performance', '2025/02/11').addRelatedItems(Keys.ANALISIS_DATA_DSL, Keys.NUBE_OBSERVABILIDAD, Keys.META_CARACTERISTICAS_MEMORY_SAFETY, Keys.VERSIONAMIENTO_LICENSES)],
     [Keys.TESTING_ADVANCED_ARCH_UNIT, new Referencia('https://www.baeldung.com/java-archunit-intro', 'Tests sobre la Arquitectura', TESTING_ADVANCED_KEY, 'ArchUnit', '2025/03/06').addRelatedItems(Keys.META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL, Keys.ARQUITECTURAS_IMPORTANT_CONCEPTS, Keys.ARQUITECTURAS_MVC, Keys.ESTRATEGIAS_DESARROLLO_DDD)],
     [Keys.TESTING_ADVANCED_ENVIRONMENT, new Referencia('https://www.abtasty.com/blog/test-environment/', 'Pruebas por Environment (ambiente)', TESTING_ADVANCED_KEY, 'Entornos', '2025/05/04').addRelatedItems(Keys.CD_CI_DEPLOYMENT_PIPELINES, Keys.CALIDAD_ANALYST_QA, Keys.ESTRATEGIAS_DESARROLLO_SLDC, Keys.GIT_BRANCHS_STRATEGIES, Keys.CD_CI_DEPLOYMENT_PATTERNS, Keys.META_CARACTERISTICAS_FEATURE_FLAGS)],
+    [Keys.TESTING_ADVANCED_PERFORMANCE, new Referencia('https://es.abstracta.us/blog/metricas-pruebas-performance-software/', 'Metricas & Performance', TESTING_ADVANCED_KEY, 'Metricas & Performance', '2025/07/07')],
 ]);
 
 export const REFACTORING_KEY = 'Refactorizacion';

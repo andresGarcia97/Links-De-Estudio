@@ -2026,7 +2026,7 @@ export const POO =
                 '- El foco se concentra en los microservicios donde se argumenta que esta separación es innecesaria por su definición de ser pequeños y faciles de reescribir ',
                 '- Los mismo puntos a favor de las interfaces aplican aca, agregando que la separación de responsabilidades ayuda a mantener baja la carga cognitiva ',
                 '',
-                '- Estas capas generales se alinean con las que representa <strong>DDD</strong>',                
+                '- Estas capas generales se alinean con las que representa <strong>DDD</strong>',
                 '&bull; <strong>UI:</strong> Responsable de recibir la entrada y formatear la salida de datos ',
                 '&bull; <strong>Aplicación:</strong> Responsable de orquestar las dependencias involucradas con cada funcionalidad ',
                 '&bull; <strong>Dominio:</strong> Es la logica de negocio definiendo contratos, conceptos y encapsular el comportamiento individual ',
