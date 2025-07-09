@@ -406,7 +406,7 @@ export const WEB =
                 '<strong>- Logotipo:</strong>  Texto que representa la marca y es la parte reconocible de esta ',
                 '<strong>- Imagotipo:</strong> Combinación de imagen y texto, que tambien pueden separarse y ser efectiva ',
             ]),
-        new Item('gestalt',
+        new Item(Keys.WEB_GESTALT,
             [
                 '- Es una manera de encontrar sentido en como nuestras mentes perciben las cosas, como un todo y no solo como los elementos que lo forman ',
                 '- <em>El todo es mayor que la suma de sus partes </em>',
@@ -480,7 +480,7 @@ export const WEB =
                 '- Se mantienen los iconos realistas sin caer en un exceso de detalles que sobrecarguen la experiencia ',
                 '- A su vez se usan colores mezclas y degradados bastante expresivos, que van más alla de la cotidianidad ',
             ]),
-        new Item('menorSorpresa',
+        new Item(Keys.WEB_MENOR_SORPRESA,
             [
                 '- Es una guia de diseño para las interfaces de usuario, donde cada componente debe comportarse  ',
                 ' - de la manera que la mayoria de los usuarios se comporte o ya esten acostumbrados ',

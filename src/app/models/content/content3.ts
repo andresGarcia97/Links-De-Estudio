@@ -574,7 +574,7 @@ export const PRINCIPIOS =
                 '- Define prioridades, evita trabajo innecesario que no aporta valor ni ayude a cumplir los requisitos ',
                 '- Esto tambien evita futuros retrasos y suposiciones erroneas, al tomar decisiones en base a hechos y observaciones ',
             ]),
-        new Item('occam',
+        new Item(Keys.PRINCIPIOS_OCCAM,
             [
                 '- Preferir siempre la solución más simple, asi se evita agregar complejidad arbitraria ',
                 '- En igualdad de condiciones la solución más optima prevalecera',
@@ -603,7 +603,7 @@ export const PRINCIPIOS =
                 '- Esto es un refuerzo del concepto de encapsulación, propio de la orientación a objetos ',
                 '- De esta manera se limita el acoplamiento de los componentes y se centralizan acciones evitando posible duplicación '
             ]),
-        new Item('stupid',
+        new Item(Keys.PRINCIPIOS_STUPID,
             [
                 '<em>S</em> <strong>Patron singleton:</strong>       Es el unico patron que mal usado puede convertirse en un antipatron, no lo uses si no es necesario ',
                 '<em>T</em> <strong>Acoplamiento indebido:</strong>  Sucede cuando un cambio afecta más partes de las debidas, esto indica una mala modularización ',
@@ -612,15 +612,15 @@ export const PRINCIPIOS =
                 '<em>I</em> <strong>Nombres indescriptivos:</strong> Todo codigo idealmente deberia ser autocomentado, por lo que nombrar mal las cosas hace inalcanzable esta meta ',
                 '<em>D</em> <strong>Duplicación:</strong>            El codigo duplicado deberia evitarse siempre que se pueda, aplicando <em>DRY</em> & <em>KISS</em>, además de otras practicas ',
             ]),
-        new Item('twice-one',
+        new Item(Keys.PRINCIPIOS_TWICE_ONE,
             [
-                '- Un dicho proveniente desde la carpinteria y aplicado a distintas y variadas profesiones ',
+                '- Un dicho proveniente desde la carpinteria y aplicado a distintas profesiones ',
                 '- Este dicho encarna la mentalidad de una planificacion minuciosa puede evitar errores, en especial si son costosos',
                 ' - especialmente cuando se pueden realizar acciones faciles de hacer, pero dificiles de deshacer ',
                 '- Debido a que el software es intangible y puede ser reversible, se puede convertir en una <em>"puerta de 2 vias"</em> segun Jeff Bezzos',
                 '- Aun asi esto evitara malgastar tiempo y recursos, al solo cortar y deshacer, solo porque es posible conllevando menos efectos adversos ',
             ]),
-        new Item('divide-conquer',
+        new Item(Keys.PRINCIPIOS_DIVIDE_AND_CONQUER,
             [
                 '- Un adagio popular dedicado a la resolución de problemas, donde al dividir un problema en partes más pequeñas, ',
                 ' - encontrando soluciones a problemas más acotados y menos complejos, permitiendo que la suma de todos los esfuerzos ',
@@ -651,7 +651,6 @@ export const PRINCIPIOS =
                 '- El fin es evitar la mezcla de operaciones de alto y bajo nivel manejando un mismo nivel conceptual ',
                 '- Tambien se ha de tener cuidado con la aplicación de este principio, porque se pueden crear multiples metodos para ocultar los detalles ',
                 ' - de la implementación aumentando la indirección y el esfuerzo necesario para su mantenimiento ',
-                '',
             ])
     ];
 

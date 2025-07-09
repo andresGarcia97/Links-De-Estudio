@@ -32,7 +32,7 @@ export class PruebasAvanzadasComponent implements OnInit {
     this.relatedSections.set(TESTING_KEY,                routes.get(TESTING_KEY)!);
     this.relatedSections.set(AGILES_KEY,                 routes.get(AGILES_KEY)!);
     this.previousAndNextSection = new PreviousAndNextSection(
-      TESTING_KEY, routes.get(TESTING_KEY)!,
+      TESTING_KEY,     routes.get(TESTING_KEY)!,
       PERSISTENCY_KEY, routes.get(PERSISTENCY_KEY)!
     );
   }
