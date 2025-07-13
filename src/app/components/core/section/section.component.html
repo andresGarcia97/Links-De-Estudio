@@ -204,7 +204,7 @@
 
     <div *ngIf="previousAndNextSection!" class="card-container">
 
-        <div class="card card-no-size highlight-card light-color" (click)="routeToRelatedSection(previousAndNextSection.sectionPrevious)" tabindex="0">
+        <div *ngIf="previousAndNextSection.sectionPrevious !== '' " class="card card-no-size highlight-card light-color" (click)="routeToRelatedSection(previousAndNextSection.sectionPrevious)" tabindex="0">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 490 490">
                 <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
                 <path *ngIf="iterationBackwards" d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 
@@ -216,7 +216,7 @@
             <span class="no-margin">{{previousAndNextSection.titlePrevious}}</span>
         </div>
 
-        <div class="card card-no-size highlight-card light-color" (click)="routeToRelatedSection(previousAndNextSection.sectionNext)" tabindex="0">
+        <div *ngIf="previousAndNextSection.sectionNext !== '' " class="card card-no-size highlight-card light-color" (click)="routeToRelatedSection(previousAndNextSection.sectionNext)" tabindex="0">
             <span class="no-margin">{{previousAndNextSection.titleNext}}</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 490 490">
                 <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->

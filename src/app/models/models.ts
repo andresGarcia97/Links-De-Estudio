@@ -57,7 +57,7 @@ export class PreviousAndNextSection {
     titleNext = '';
     sectionNext = '';
 
-    constructor(titlePrevious: string, sectionPrevious: string, titleNext: string, sectionNext: string) {
+    constructor(titlePrevious = '', sectionPrevious = '', titleNext = '', sectionNext = '') {
         this.titlePrevious = titlePrevious;
         this.sectionPrevious = sectionPrevious;
         this.titleNext = titleNext;

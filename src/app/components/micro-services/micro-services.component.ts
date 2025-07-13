@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { MICRO_SERVICES } from 'src/app/models/content/content5';
 import { 
-  ANALISIS_KEY, ARQUITECTURAS_KEY, LinkReferencia, MALAS_PRACTICAS_KEY, MICRO_SERVICES_REF, NUBE_KEY, PATRONES_KEY, PERSISTENCY_KEY }
+  ANALISIS_KEY, ARQUITECTURAS_KEY, LinkReferencia, MALAS_PRACTICAS_KEY, MICRO_SERVICES_REF,
+  NEURO_MARKETING_KEY, NUBE_KEY, PATRONES_KEY, PERSISTENCY_KEY }
 from 'src/app/models/linkReferencia';
+import { PreviousAndNextSection } from 'src/app/models/models';
 
 @Component({
   selector: 'app-micro-services',
@@ -20,6 +22,8 @@ export class MicroServicesComponent implements OnInit {
 
   tittles = new Map([ ...MICRO_SERVICES_REF ].map(([key, { tittleShort }]) => [key, tittleShort]));
 
+  previousAndNextSection!: PreviousAndNextSection;
+
   ngOnInit(): void {
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
@@ -29,6 +33,10 @@ export class MicroServicesComponent implements OnInit {
     this.relatedSections.set(ANALISIS_KEY,        routes.get(ANALISIS_KEY)!);
     this.relatedSections.set(PATRONES_KEY,        routes.get(PATRONES_KEY)!);
     this.relatedSections.set(NUBE_KEY,            routes.get(NUBE_KEY)!);
+    this.previousAndNextSection = new PreviousAndNextSection(
+      NEURO_MARKETING_KEY, routes.get(NEURO_MARKETING_KEY)!,
+      '',                  ''
+    );
   }
 
 }

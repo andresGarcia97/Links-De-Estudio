@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ARQUITECTURAS } from 'src/app/models/content/content4';
 import { ANALISIS_KEY, ARQUITECTURAS_REF, LinkReferencia, METODOLOGIAS_KEY, NUBE_KEY, PATRONES_KEY, POO_KEY, UML_KEY }
 from 'src/app/models/linkReferencia';
+import { PreviousAndNextSection } from 'src/app/models/models';
 
 @Component({
   selector: 'app-arquitecturas',
@@ -19,6 +20,8 @@ export class ArquitecturasComponent implements OnInit {
 
   tittles = new Map([ ...ARQUITECTURAS_REF ].map(([key, { tittleShort }]) => [key, tittleShort]));
 
+  previousAndNextSection!: PreviousAndNextSection;
+
   ngOnInit(): void {
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
@@ -28,6 +31,10 @@ export class ArquitecturasComponent implements OnInit {
     this.relatedSections.set(NUBE_KEY,         routes.get(NUBE_KEY)!);
     this.relatedSections.set(UML_KEY,          routes.get(UML_KEY)!);
     this.relatedSections.set(POO_KEY,          routes.get(POO_KEY)!);
+    this.previousAndNextSection = new PreviousAndNextSection(
+      POO_KEY,      routes.get(POO_KEY)!,
+      PATRONES_KEY, routes.get(PATRONES_KEY)!
+    );
   }
 
 }

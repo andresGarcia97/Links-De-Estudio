@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PRINCIPIOS } from 'src/app/models/content/content3';
-import { ARQUITECTURAS_KEY, LinkReferencia, MICRO_SERVICES_KEY, PARADIGMAS_KEY, PATRONES_KEY, POO_KEY, PRINCIPIOS_REF }
+import { ARQUITECTURAS_KEY, LinkReferencia, PARADIGMAS_KEY, PATRONES_KEY, POO_KEY, PRINCIPIOS_REF }
 from 'src/app/models/linkReferencia';
 import { PreviousAndNextSection } from 'src/app/models/models';
 
@@ -30,8 +30,8 @@ export class PrincipiosComponent implements OnInit {
     this.relatedSections.set(PATRONES_KEY,      routes.get(PATRONES_KEY)!);
     this.relatedSections.set(POO_KEY,           routes.get(POO_KEY)!);
     this.previousAndNextSection = new PreviousAndNextSection(
-      MICRO_SERVICES_KEY, routes.get(MICRO_SERVICES_KEY)!,
-      PARADIGMAS_KEY,     routes.get(PARADIGMAS_KEY)!
+      '',             '',
+      PARADIGMAS_KEY, routes.get(PARADIGMAS_KEY)!
     );
   }
 
