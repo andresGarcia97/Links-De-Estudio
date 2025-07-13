@@ -39,12 +39,12 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.CONOCIMIENTOS_EMPIRICOS_CODE_MAINTAINER;
+export const LAST_ITEM = Keys.ANALISIS_STRATEGIC_DESIGN;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
     //['moscow', new Referencia('https://proagilist.es/blog/agilidad-y-gestion-agil/priorizar-requisitos-tecnica-priorizacion-moscow/', 'MOSCOW', AGILES_KEY, 'MOSCOW')],
-    ['moscow', new Referencia('https://www.itdo.com/blog/moscow-que-es-y-como-priorizar-en-el-desarrollo-de-tu-aplicacion/', 'MOSCOW', AGILES_KEY, 'MOSCOW', '', '2024/05/01')],
+    [Keys.AGILES_MOSCOW, new Referencia('https://www.itdo.com/blog/moscow-que-es-y-como-priorizar-en-el-desarrollo-de-tu-aplicacion/', 'MOSCOW', AGILES_KEY, 'MOSCOW', '', '2024/05/01')],
     ['scoring', new Referencia('https://comunidad.iebschool.com/metodologiasparaelcambio/2014/03/23/priorizando-historias-de-usuario/', 'Theme Scoring', AGILES_KEY, 'Theme Scoring')],
     ['muda', new Referencia('https://prevencontrol.com/prevenblog/las-7-mudas', 'Desperdicio', AGILES_KEY, 'Desperdicio')],
     [Keys.AGILES_5S, new Referencia('https://www.gestiopolis.com/5s-seiri-seiton-seiso-seiketsu-y-shitsuke-base-de-la-mejora-continua/', 'Seiri, Seiton, Seiso, Seiketsu, Shitsuke', AGILES_KEY, '5S - Kaizen')],
@@ -103,6 +103,7 @@ export const ANALISIS_REF = new Map<string, Referencia>([
     ],
     [Keys.ANALISIS_BOUNDED_CONTEXT, new Referencia('https://martinfowler.com/bliki/BoundedContext.html', 'Bounded Context', ANALISIS_KEY, 'Bounded Context', '2025/06/02').addRelatedItems(Keys.BUENAS_PRACTICAS_AGGREGATES, Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.PEOPLE_LANGUAGE_UBICUOS, Keys.POO_COUPLING_AND_COHESION)],
     [Keys.ANALISIS_SYSTEM_TYPES, new Referencia('https://medium.com/@bugfreeai/understanding-system-design-interview-types-a-strategic-guide-for-2025-320af44efc8b', 'Tipos generales de sistemas', ANALISIS_KEY, 'Tipos de sistemas', '2025/06/08').addRelatedItems(Keys.HARDWARE_ESCALAMIENTO, Keys.PERSISTENCY_ADVANCED_SCALING_DB, Keys.NUBE_LATENCY, Keys.MICROSERVICES_CACHE_FAILS, Keys.PERSISTENCY_CONSISTENCY, Keys.PERSISTENCY_ADVANCED_WAL, Keys.NUBE_CAP_TEOREMA, Keys.PERSISTENCY_ACID, Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS, Keys.PARADIGMAS_PARADIGMA_DATOS, Keys.PERSISTENCY_INDICES, Keys.ANALISIS_DATA_DATA_STORING)],
+    [Keys.ANALISIS_STRATEGIC_DESIGN, new Referencia('https://medium.com/@lambrych/domain-driven-design-ddd-strategic-design-explained-55e10b7ecc0f', 'Diseño estrategico', ANALISIS_KEY, 'Diseño estrategico', '2025/07/10').addRelatedItems(Keys.BUENAS_PRACTICAS_AGGREGATES, Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.PEOPLE_LANGUAGE_UBICUOS, Keys.META_ESTRUCTURAS_VALUE_OBJECTS, Keys.REQUISITOS_BUSINESS_VALUE)],
 ]);
 
 export const ARQUITECTURAS_KEY = 'Arquitecturas';
@@ -709,7 +710,7 @@ export const REQUISITOS_REF = new Map<string, Referencia>([
     [Keys.REQUISITOS_FUNCIONALES, new Referencia('https://medium.com/@requeridosblog/requerimientos-funcionales-y-no-funcionales-ejemplos-y-tips-aa31cb59b22a', 'Requisitos funcionales', REQUISITOS_KEY, 'Funcionales')],
     [Keys.REQUISITOS_NO_FUNCIONALES, new Referencia('https://medium.com/@requeridosblog/requerimientos-funcionales-y-no-funcionales-ejemplos-y-tips-aa31cb59b22a', 'Requisitos No funcionales', REQUISITOS_KEY, 'NO Funcionales')],
     //['negocio', new Referencia('https://requeridos.com/que-es-el-valor-de-negocio-y-como-medirlo/', 'El valor del negocio', REQUISITOS_KEY, 'EL Negocio')],
-    [Keys.REQUISITOS_BUSINESS_VALUE, new Referencia('https://www.elproximopaso.net/2012/03/8-otra-maneras-de-definir-el-valor-de.html', 'El valor del negocio', REQUISITOS_KEY, 'EL Negocio', '', '2024/09/27')],
+    [Keys.REQUISITOS_BUSINESS_VALUE, new Referencia('https://www.elproximopaso.net/2012/03/8-otra-maneras-de-definir-el-valor-de.html', 'El valor del negocio', REQUISITOS_KEY, 'EL Negocio', '', '2024/09/27').addRelatedItem(Keys.AGILES_MOSCOW)],
     //['ambiguedad', new Referencia('https://requeridos.com/requerimientos-menos-es-mas/', 'Evitar la ambiguedad', REQUISITOS_KEY, 'Evitar la ambiguedad')],
     [Keys.REQUISITOS_AMBIGUITY, new Referencia('https://www.blmovil.com/la-importancia-de-una-buena-captura-de-requisitos-en-el-desarrollo-de-software/', 'Evitar la ambiguedad', REQUISITOS_KEY, 'Evitar la ambiguedad', '2024/09/27')],
     ['calidad', new Referencia('https://platzi.com/tutoriales/1248-pro-arquitectura/5498-atributos-de-calidad-de-un-producto-de-software/', 'Atributos de calidad', REQUISITOS_KEY, 'Atributos de calidad')],
@@ -849,7 +850,7 @@ export const UML_REF = new Map<string, Referencia>([
     ['actividades', new Referencia('https://diagramasuml.com/actividades/', 'Diagrama de actividades', UML_KEY, 'De Actividades')],
     ['paquetes', new Referencia('https://diagramasuml.com/paquetes/', 'Diagrama de paquetes', UML_KEY, 'De Paquetes')],
     [Keys.UML_STATES, new Referencia('https://diagramasuml.com/estados/', 'Diagrama de estados', UML_KEY, 'De Estados')],
-    ['vista', new Referencia('https://es.wikipedia.org/wiki/Modelo_de_Vistas_de_Arquitectura_4%2B1', 'Modelo 4+1 vistas', UML_KEY, '4+1 Vistas')],
+    [Keys.UML_4_1_VISTA, new Referencia('https://es.wikipedia.org/wiki/Modelo_de_Vistas_de_Arquitectura_4%2B1', 'Modelo 4+1 vistas', UML_KEY, '4+1 Vistas', '', '2025/07/10')],
     [Keys.UML_TYPES, new Referencia('https://www.microsoft.com/es-co/microsoft-365/business-insights-ideas/resources/guide-to-uml-diagramming-and-database-modeling', 'Tipos de Diagramas', UML_KEY, 'Tipos de Diagramas')],
     [Keys.UML_MODEL_C4, new Referencia('https://towardsdev.com/how-to-visualize-your-system-architecture-using-the-c4-model-247bd718e914', 'Modelo C4', UML_KEY, 'Model C4')],
 ]);

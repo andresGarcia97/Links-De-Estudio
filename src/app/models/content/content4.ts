@@ -17,7 +17,7 @@ export class Content4 {
 
 export const AGILES =
     [
-        new Item('moscow',
+        new Item(Keys.AGILES_MOSCOW,
             [
                 '- Es una tecnica para la priorización de requisitos y funciones para lograr un alcance especificado, ya sea en etapas iniciales o para un <em>MVP</em>',
                 '',
