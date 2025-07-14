@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.ANALISIS_STRATEGIC_DESIGN;
+export const LAST_ITEM = Keys.ANALISIS_TACTIC_DESIGN;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -82,7 +82,6 @@ export const ANALISIS_REF = new Map<string, Referencia>([
     [Keys.ANALISIS_MANIFEST_REACTIVE, new Referencia('https://www.reactivemanifesto.org/es', 'Manifiesto Reactivo', ANALISIS_KEY, 'Manifiesto Reactivo', '2023/02/19', '2024/12/10')],
     [Keys.ANALISIS_DECLINE_DESIGN, new Referencia('https://uxdesign.cc/the-decline-in-design-thinking-8fd0145fb4d2', 'Declive del diseño', ANALISIS_KEY, 'Declive del Diseño', '2023/07/23')],
     [Keys.ANALISIS_OPINIONATED_NO, new Referencia('https://www.baeldung.com/cs/opinionated-software-design', 'Diseño con & sin opiniones', ANALISIS_KEY, 'Diseño con/sin opiniones', '2023/11/11')],
-    [Keys.ANALISIS_CODING_EASY_PART, new Referencia('https://swizec.com/blog/coding-is-the-easy-part/', 'Codificar es la parte facil', ANALISIS_KEY, 'Codificar es facil', '2023/12/11')],
     [Keys.ANALISIS_ALGORITHMS, new Referencia('https://medium.com/@zgokceaynaci/a-journey-through-the-world-of-algorithms-554bfffcee97', 'Algoritmos', ANALISIS_KEY, 'Algoritmos', '2024/07/27').addRelatedItems(Keys.COMPILACION_GRAFOS, Keys.META_CARACTERISTICAS_BACKTRACKING)],
     [Keys.ANALISIS_QUEUES_SYSTEM_DESIGN, new Referencia('https://levelup.gitconnected.com/message-queues-in-system-design-0440a1221023', 'Message Queues in System Design', ANALISIS_KEY, 'Message Queues', '2024/09/01').addRelatedItems(Keys.META_ESTRUCTURAS_ESTRUCTURAS_DATOS_2, Keys.APIS_REST_VS_MESSAGING)],
     [Keys.ANALISIS_HIGH_LEVEL_VS_LOW_LEVEL, new Referencia('https://www.baeldung.com/cs/hld-lld', 'High Level Vs Low Level', ANALISIS_KEY, 'High Level Vs Low Level', '2024/09/20').addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_SLDC).addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.PERSISTENCY_ERD)],
@@ -104,6 +103,10 @@ export const ANALISIS_REF = new Map<string, Referencia>([
     [Keys.ANALISIS_BOUNDED_CONTEXT, new Referencia('https://martinfowler.com/bliki/BoundedContext.html', 'Bounded Context', ANALISIS_KEY, 'Bounded Context', '2025/06/02').addRelatedItems(Keys.BUENAS_PRACTICAS_AGGREGATES, Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.PEOPLE_LANGUAGE_UBICUOS, Keys.POO_COUPLING_AND_COHESION)],
     [Keys.ANALISIS_SYSTEM_TYPES, new Referencia('https://medium.com/@bugfreeai/understanding-system-design-interview-types-a-strategic-guide-for-2025-320af44efc8b', 'Tipos generales de sistemas', ANALISIS_KEY, 'Tipos de sistemas', '2025/06/08').addRelatedItems(Keys.HARDWARE_ESCALAMIENTO, Keys.PERSISTENCY_ADVANCED_SCALING_DB, Keys.NUBE_LATENCY, Keys.MICROSERVICES_CACHE_FAILS, Keys.PERSISTENCY_CONSISTENCY, Keys.PERSISTENCY_ADVANCED_WAL, Keys.NUBE_CAP_TEOREMA, Keys.PERSISTENCY_ACID, Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS, Keys.PARADIGMAS_PARADIGMA_DATOS, Keys.PERSISTENCY_INDICES, Keys.ANALISIS_DATA_DATA_STORING)],
     [Keys.ANALISIS_STRATEGIC_DESIGN, new Referencia('https://medium.com/@lambrych/domain-driven-design-ddd-strategic-design-explained-55e10b7ecc0f', 'Diseño estrategico', ANALISIS_KEY, 'Diseño estrategico', '2025/07/10').addRelatedItems(Keys.BUENAS_PRACTICAS_AGGREGATES, Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.PEOPLE_LANGUAGE_UBICUOS, Keys.META_ESTRUCTURAS_VALUE_OBJECTS, Keys.REQUISITOS_BUSINESS_VALUE)],
+    [Keys.ANALISIS_TACTIC_DESIGN, new Referencia('https://medium.com/@lambrych/eventstorming-for-domain-driven-design-strengths-and-limitations-3f0b49009c38', 'Event Storming & Diseño tactico', ANALISIS_KEY, 'Diseño tactico', '2025/07/13')
+        .addRelatedItems(Keys.VERSIONAMIENTO_DOCUMENT_ARQUITECTURE, Keys.NUBE_MIGRATIONS, Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.USER_HISTORIES_USER_HISTORIES, Keys.PATRONES_PERSISTENCE_PATTERNS, Keys.PATRONES_DYSTRIBUTED_SYSTEMS, Keys.POO_FACTORY_METODS)
+        .addMoreReferences('https://medium.com/@lambrych/can-eventstorming-guide-the-design-workflow-6f75d8aa20e0')
+    ],
 ]);
 
 export const ARQUITECTURAS_KEY = 'Arquitecturas';
@@ -228,6 +231,7 @@ export const CONOCIMIENTO_EMPIRICO = new Map<string, Referencia>([
     [Keys.CONOCIMIENTOS_EMPIRICOS_REFORZAMIENTO_SKINNER, new Referencia('https://psicologiaymente.com/psicologia/teoria-reforzamiento-skinner', 'Reforzamiento de conductas', CONOCIMIENTO_EMPIRICO_KEY, 'Reforzamiento')],
     [Keys.CONOCIMIENTOS_EMPIRICOS_PASTA_THEORY, new Referencia('https://www.techtarget.com/searchsoftwarequality/tip/Fix-spaghetti-code-and-other-pasta-theory-antipatterns/', 'Teoria de la pasta', CONOCIMIENTO_EMPIRICO_KEY, 'Codigo como pasta')],
     [Keys.CONOCIMIENTOS_EMPIRICOS_THINGS_THAT_ARE_NOT_TAUGHT, new Referencia('https://vadimkravcenko.com/shorts/things-they-didnt-teach-you/', 'Cosas que no se enseñan', CONOCIMIENTO_EMPIRICO_KEY, 'Cosas que no se enseñan', '2023/02/09')],
+    [Keys.CONOCIMIENTOS_EMPIRICOS_CODING_EASY_PART, new Referencia('https://swizec.com/blog/coding-is-the-easy-part/', 'Codificar es la parte facil', CONOCIMIENTO_EMPIRICO_KEY, 'Codificar es facil', '2023/12/11', '2025/07/13').addRelatedItem(Keys.LEYES_HYRUM)],
     [Keys.CONOCIMIENTOS_EMPIRICOS_BOILING_FROG, new Referencia('https://www.linkedin.com/pulse/boiling-frog-syndrome-suyash-jaju/', 'Sindrome de la Rana Hervida', CONOCIMIENTO_EMPIRICO_KEY, 'Rana Hervida', '2024/04/16')],
     [Keys.CONOCIMIENTOS_EMPIRICOS_BOYS_SCOUTS, new Referencia('https://www.linkedin.com/pulse/la-regla-de-los-boys-scouts-hugo-raher/', 'Regla de los Boys Scouts', CONOCIMIENTO_EMPIRICO_KEY, 'Boys Scouts', '2024/04/16')],
     [Keys.CONOCIMIENTOS_EMPIRICOS_ZEIGARNIK, new Referencia('https://psicologiaymente.com/psicologia/efecto-zeigarnik', 'Efecto Zeigarnik', CONOCIMIENTO_EMPIRICO_KEY, 'Efecto Zeigarnik', '2024/05/13').addRelatedItem(Keys.WEB_GESTALT)],
@@ -332,8 +336,8 @@ export const GIT_REF = new Map<string, Referencia>([
 
 export const USER_HISTORIES_KEY = 'Historias-Usuario';
 export const USER_HISTORIES = new Map<string, Referencia>([
-    ['historias', new Referencia('https://apiumhub.com/es/tech-blog-barcelona/como-escribir-buenas-historias-de-usuario/', '¿ Que son las HU ?', USER_HISTORIES_KEY, '¿ Que son ?')],
-    ['objetivos', new Referencia('https://apiumhub.com/es/tech-blog-barcelona/como-escribir-buenas-historias-de-usuario/', '¿ Que busca una HU ?', USER_HISTORIES_KEY, '¿ Que buscan ?')],
+    [Keys.USER_HISTORIES_USER_HISTORIES, new Referencia('https://apiumhub.com/es/tech-blog-barcelona/como-escribir-buenas-historias-de-usuario/', '¿ Que son las HU ?', USER_HISTORIES_KEY, '¿ Que son las HU ?', '2024/04/28')],
+    [Keys.USER_HISTORIES_OBJECTIVES, new Referencia('https://apiumhub.com/es/tech-blog-barcelona/como-escribir-buenas-historias-de-usuario/', '¿ Que busca una HU ?', USER_HISTORIES_KEY, '¿ Que busca una HU ?', '2024/04/28')],
     [Keys.USER_HISTORIES_PARTS, new Referencia('https://apiumhub.com/es/tech-blog-barcelona/como-escribir-buenas-historias-de-usuario/', 'Partes de una HU', USER_HISTORIES_KEY, 'Partes')],
     ['invest', new Referencia('https://apiumhub.com/es/tech-blog-barcelona/como-escribir-buenas-historias-de-usuario/', 'Criterio INVEST', USER_HISTORIES_KEY, 'INVEST')],
     //['smart', new Referencia('https://beagilemyfriend.com/historias-de-usuario-invest-smart/', 'Criterio SMART', USER_HISTORIES_KEY, 'SMART')],
