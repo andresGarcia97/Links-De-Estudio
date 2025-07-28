@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.ANALISIS_TACTIC_DESIGN;
+export const LAST_ITEM = Keys.MICROSERVICES_ARQUITECTURE_BACK_MONOLITH;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -980,4 +980,8 @@ export const MICRO_SERVICES_REF = new Map<string, Referencia>([
     [Keys.MICROSERVICES_PUSH_PULL_EVENTS, new Referencia('https://theburningmonk.com/2025/05/understanding-push-vs-poll-in-event-driven-architectures/', 'Push VS Poll', MICRO_SERVICES_KEY, 'Push VS Poll Events', '2025/06/04').addRelatedItems(Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.ANALISIS_QUEUES_SYSTEM_DESIGN, Keys.ANALISIS_LIGHT_EVENTS_VS_RICH_EVENTS, Keys.PARADIGMAS_REACTIVO)],
     [Keys.MICROSERVICES_ESENTIAL_COMPONENTS, new Referencia('https://newsletter.systemdesigncodex.com/p/essential-components-of-a-production-069', 'Componentes Esenciales', MICRO_SERVICES_KEY, 'Componentes Esenciales', '2025/06/23').addRelatedItems(Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.ANALISIS_QUEUES_SYSTEM_DESIGN, Keys.HARDWARE_ESCALAMIENTO, Keys.FRAMEWORKS_FRAMEWORKS, Keys.PERSISTENCY_ADVANCED_SQL_NO_SQL, Keys.META_CARACTERISTICAS_CACHE, Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.NUBE_OBSERVABILIDAD, Keys.APIS_RATE_LIMITING)],
     [Keys.MICROSERVICES_EVENTS_VS_REQUEST_RESPONSE, new Referencia('https://javascript.plainenglish.io/event-driven-architecture-vs-request-response-developer-guide-acec290f44a1', 'Basado en Eventos VS Request-Response', MICRO_SERVICES_KEY, 'Events VS Requests', '2025/06/30').addRelatedItems(Keys.ANALISIS_SYSTEM_TYPES, Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.PATRONES_DYSTRIBUTED_SYSTEMS)],
+    [Keys.MICROSERVICES_ARQUITECTURE_BACK_MONOLITH, new Referencia('https://medium.com/mr-plan-publication/the-surprising-comeback-of-monoliths-why-big-names-are-moving-applications-from-microservices-to-6f43a69179dc', '¿ Regresar a un monolito ?', MICRO_SERVICES_KEY, '¿ Regresar a un monolito ?', '2025/07/27')
+        .addRelatedItems(Keys.ARQUITECTURAS_MONOLITOS, Keys.ARQUITECTURAS_HOW_TO_CHOOSE_IT, Keys.ARQUITECTURAS_MODULITHS, Keys.ANALISIS_COHESERS_DECOUPLERS, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.PRINCIPIOS_POC, Keys.NUBE_DISPONIBILITY)
+        .addMoreReferences('https://medium.com/mr-plan-publication/monolith-architecture-software-architecture-part-1-845a04ab303c', 'https://medium.com/mr-plan-publication/microservices-and-microservice-architecture-software-architecture-part-2-7ee5fb796270')
+    ],
 ]);
