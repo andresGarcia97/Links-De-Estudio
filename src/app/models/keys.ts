@@ -269,6 +269,7 @@ export const PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS = 'unknownProblems';
 export const PERSISTENCY_ADVANCED_PARTITIONING = 'partitioning';
 export const PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL = 'consistencyEventual';
 export const PERSISTENCY_ADVANCED_DENORMALIZATION = 'denormalization';
+export const PERSISTENCY_ADVANCED_SQL_ENGINE_ANATOMY = 'sqlEngineAnatomy';
 export const REFACTORING_CLEAN_CODE = 'cleanCodeRefactoring';
 export const REFACTORING_DEUDA_TECNICA = 'deudaTecnica';
 export const REFACTORING_DEUDA_TECNICA_TYPES = 'deudaTecnicaTipos';

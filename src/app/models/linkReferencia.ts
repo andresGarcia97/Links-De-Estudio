@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.MICROSERVICES_ARQUITECTURE_BACK_MONOLITH;
+export const LAST_ITEM = Keys.PERSISTENCY_ADVANCED_SQL_ENGINE_ANATOMY;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -847,6 +847,7 @@ export const PERSISTENCY_ADVANCED_REF = new Map<string, Referencia>([
     [Keys.PERSISTENCY_ADVANCED_PARTITIONING, new Referencia('https://medium.com/@imnazimuddinasif/a-practical-overview-of-database-partitioning-59e8e318142b', 'Particiones', PERSISTENCY_ADVANCED_KEY, 'Particiones', '2024/10/07')],
     [Keys.PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL, new Referencia('https://newsletter.systemdesigncodex.com/p/eventual-consistency-is-tricky', 'Consistencia Eventual', PERSISTENCY_ADVANCED_KEY, 'Consistencia Eventual', '2024/10/27')],
     [Keys.PERSISTENCY_ADVANCED_DENORMALIZATION, new Referencia('https://dgraph.io/blog/post/denormalize-database/', 'Desnormalización', PERSISTENCY_ADVANCED_KEY, 'Desnormalización', '2025/02/05').addRelatedItem(Keys.PERSISTENCY_NORMALIZATION)],
+    [Keys.PERSISTENCY_ADVANCED_SQL_ENGINE_ANATOMY, new Referencia('https://www.dolthub.com/blog/2025-04-25-sql-engine-anatomy/', 'Anatomia de un motor SQL', PERSISTENCY_ADVANCED_KEY, 'Motores SQL', '2025/07/28').addRelatedItems(Keys.META_CARACTERISTICAS_RECURSIVIDAD, Keys.META_ESTRUCTURAS_SCOPE)],
 ]);
 
 export const UML_KEY = 'UML';
