@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { CD_CI_INFRAESTRUCTURE } from 'src/app/models/content/content3';
-import { APIS_KEY, CD_CI_REF, CONTENEDORES_KEY, HARDWARE_KEY, LinkReferencia, NUBE_KEY, VERSIONAMIENTO_KEY, WEB_KEY }
+import {
+  ANALISIS_DATA_KEY, APIS_KEY, CD_CI_REF, CONTENEDORES_KEY, HARDWARE_KEY, LinkReferencia, NUBE_KEY, VERSIONAMIENTO_KEY, WEB_KEY }
 from 'src/app/models/linkReferencia';
+import { PreviousAndNextSection } from 'src/app/models/models';
 
 @Component({
   selector: 'app-cd-ci',
@@ -19,6 +21,8 @@ export class CDCIComponent implements OnInit {
 
   tittles = new Map([ ...CD_CI_REF ].map(([key, { tittleShort }]) => [key, tittleShort]));
 
+  previousAndNextSection!: PreviousAndNextSection;
+
   ngOnInit(): void {
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
@@ -28,6 +32,10 @@ export class CDCIComponent implements OnInit {
     this.relatedSections.set(NUBE_KEY,           routes.get(NUBE_KEY)!);
     this.relatedSections.set(APIS_KEY,           routes.get(APIS_KEY)!);
     this.relatedSections.set(WEB_KEY,            routes.get(WEB_KEY)!);
+    this.previousAndNextSection = new PreviousAndNextSection(
+      HARDWARE_KEY,      routes.get(HARDWARE_KEY)!,
+      ANALISIS_DATA_KEY, routes.get(ANALISIS_DATA_KEY)!
+    );
   }
 
 }

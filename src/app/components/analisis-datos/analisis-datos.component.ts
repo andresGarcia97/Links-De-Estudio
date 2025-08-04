@@ -2,8 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { ANALISIS_DATA } from 'src/app/models/content/content1';
 import { 
   META_CARACTERISTICAS_KEY, LinkReferencia, ANALISIS_DATA_REF, ANALISIS_KEY, CD_CI_KEY, CONOCIMIENTO_EMPIRICO_KEY,
-  PERSISTENCY_KEY, PATRONES_KEY
+  PERSISTENCY_KEY, PATRONES_KEY, NEURO_MARKETING_KEY
 } from 'src/app/models/linkReferencia';
+import { PreviousAndNextSection } from 'src/app/models/models';
 
 @Component({
   selector: 'app-analisis-datos',
@@ -21,6 +22,8 @@ export class AnalisisDatosComponent implements OnInit {
 
   tittles = new Map([ ...ANALISIS_DATA_REF ].map(([key, { tittleShort }]) => [key, tittleShort]));
 
+  previousAndNextSection!: PreviousAndNextSection;
+
   ngOnInit(): void {
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
@@ -30,6 +33,10 @@ export class AnalisisDatosComponent implements OnInit {
     this.relatedSections.set(ANALISIS_KEY,              routes.get(ANALISIS_KEY)!);
     this.relatedSections.set(PATRONES_KEY,              routes.get(PATRONES_KEY)!);
     this.relatedSections.set(CD_CI_KEY,                 routes.get(CD_CI_KEY)!);
+    this.previousAndNextSection = new PreviousAndNextSection(
+      CD_CI_KEY,           routes.get(CD_CI_KEY)!,
+      NEURO_MARKETING_KEY, routes.get(NEURO_MARKETING_KEY)!
+    );
   }
 
 }

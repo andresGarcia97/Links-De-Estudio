@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { CALIDAD } from 'src/app/models/content/content6';
-import { AGILES_KEY, ANALISIS_KEY, BUENAS_PRACTICAS_KEY, CALIDAD_REF, LinkReferencia, MALAS_PRACTICAS_KEY, PATRONES_KEY }
+import { 
+  AGILES_KEY, ANALISIS_KEY, BUENAS_PRACTICAS_KEY, CALIDAD_REF, LinkReferencia, MALAS_PRACTICAS_KEY, METODOLOGIAS_KEY, PATRONES_KEY }
 from 'src/app/models/linkReferencia';
+import { PreviousAndNextSection } from 'src/app/models/models';
 
 @Component({
   selector: 'app-calidad',
@@ -18,6 +20,8 @@ export class CalidadComponent implements OnInit {
   relatedSections = new Map<string, string>([]);
 
   tittles = new Map([ ...CALIDAD_REF ].map(([key, { tittleShort }]) => [key, tittleShort]));
+  
+  previousAndNextSection!: PreviousAndNextSection;
 
   ngOnInit(): void {
     this.itemStart = history?.state?.newItem;
@@ -27,6 +31,10 @@ export class CalidadComponent implements OnInit {
     this.relatedSections.set(ANALISIS_KEY,         routes.get(ANALISIS_KEY)!);
     this.relatedSections.set(PATRONES_KEY,         routes.get(PATRONES_KEY)!);
     this.relatedSections.set(AGILES_KEY,           routes.get(AGILES_KEY)!);
+    this.previousAndNextSection = new PreviousAndNextSection(
+      MALAS_PRACTICAS_KEY, routes.get(MALAS_PRACTICAS_KEY)!,
+      METODOLOGIAS_KEY,    routes.get(METODOLOGIAS_KEY)!
+    );
   }
 
 }
