@@ -1551,6 +1551,19 @@ export const FRAMEWORKS =
                 '- Aumentan la productividad y la reutilización de codigo ',
                 '- Existen infinidad de frameworks tanto para back como front, desarrollo movil, persistencia y analisis de datos, etc... '
             ]),
+        new Item(Keys.FRAMEWORKS_CASE,
+            [
+                '- Ingeniería Asistida por Computador, es el desarrollo y mantenimiento de proyectos de software por medio de herramientas de software ',
+                '- Existen herramientas para cada etapa de desarrollo, ahorrando recursos además de otros beneficios como consistencia y unificación ',
+                '',
+                '<strong>Documentación:    </strong> Crea documentos de cualquiera de las etapas del proyecto y para diferentes tipos de personas(DrExplain)',
+                '<strong>Configuración:    </strong> Son utiles para el control de versiones y la evolución del software(Git & Mercurial)',
+                '<strong>Diseño:           </strong> Creación de la estructura del programa y de su desglose para detallarlos y refinarlos(Star UML) ',
+                '<strong>Analisis:         </strong> Ayuda a cumplir con los requisitos al analizar los diagramas por posibles falencias, omisiones ó redundancias(casecomplete) ',
+                '<strong>Implementación:   </strong> Programas como los IDEs(Intellij) y herramientas para hacer prototipos(Mockup Builder) y generación de codigo base(Jhispter) ',
+                '<strong>Calidad & Pruebas:</strong> Usadas para realizar pruebas de software(Jmeter) y aumentar la calidad(Sonar)',
+                '<strong>Mantenimiento:    </strong> Sirven para documentar errores y seguimiento de defectos(HP Quality Center) ',
+            ]),
         new Item(Keys.FRAMEWORKS_IOC,
             [
                 '- La inversion de control es la implementación del principio de Hollywood en la que se basan muchos frameworks para funcionar ',

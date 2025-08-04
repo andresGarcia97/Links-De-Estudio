@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.PERSISTENCY_ADVANCED_SQL_ENGINE_ANATOMY;
+export const LAST_ITEM = Keys.ANALISIS_SYSTEM_THINKING_II;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -71,7 +71,6 @@ export const ANALISIS_KEY = 'Analisis';
 export const ANALISIS_REF = new Map<string, Referencia>([
     [Keys.ANALISIS_COMPORTAMIENTO, new Referencia('https://es.wikipedia.org/wiki/Modelo_de_comportamiento_(inform%C3%A1tica)', 'Comportamiento del sistema', ANALISIS_KEY, 'Comportamiento', '', '2025/03/29').addRelatedItems(Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS, Keys.ESTRATEGIAS_DESARROLLO_BDD)],
     [Keys.ANALISIS_ANALISIS_DOMAIN, new Referencia('https://www.redalyc.org/jatsRepo/4768/476862530003/html/index.html', 'Analisis de Dominio', ANALISIS_KEY, 'Analisis de Dominio')],
-    [Keys.ANALISIS_CASE, new Referencia('https://www.tutorialspoint.com/es/software_engineering/case_tools_overview.htm', 'Herramientas Case', ANALISIS_KEY, 'Herramientas CASE')],
     [Keys.ANALISIS_DIVIDE, new Referencia('https://es.khanacademy.org/computing/computer-science/algorithms/merge-sort/a/divide-and-conquer-algorithms', 'Divide y Venceras', ANALISIS_KEY, 'Divide y venceras')],
     [Keys.ANALISIS_DISENO, new Referencia('https://www.bravent.net/la-importancia-de-un-buen-diseno-del-software/', 'Ventajas de un buen diseño', ANALISIS_KEY, 'Un buen diseño')],
     //['avestruz', new Referencia('https://geeks.ms/gvelez/2009/09/28/el-algoritmo-del-avestruz-en-sharepoint/', 'Algoritmo del Avestruz', ANALISIS_KEY, 'Avestruz')],
@@ -94,7 +93,14 @@ export const ANALISIS_REF = new Map<string, Referencia>([
     [Keys.ANALISIS_SYSTEM_DESIGN_I, new Referencia('https://newsletter.systemdesigncodex.com/p/how-to-do-well-in-system-design-interviews', 'System Design I', ANALISIS_KEY, 'System Design I', '2025/02/16').addRelatedItems(Keys.REQUISITOS_FUNCIONALES, Keys.REQUISITOS_NO_FUNCIONALES, Keys.PERSISTENCY_ADVANCED_SQL_NO_SQL, Keys.WEB_USER_XPERIENCE, Keys.PERSISTENCY_ADVANCED_DENORMALIZATION, Keys.PERSISTENCY_NORMALIZATION)],
     [Keys.ANALISIS_SYSTEM_DESIGN_II, new Referencia('https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction', 'System Design II', ANALISIS_KEY, 'System Design II', '2025/02/16').addRelatedItems(Keys.APIS_API_FIRST, Keys.CONTENEDORES_ORCHESTRATION, Keys.CD_CI_IAS_CODE, Keys.HARDWARE_ESCALAMIENTO, Keys.META_CARACTERISTICAS_CACHE, Keys.NUBE_PACELC)],
     [Keys.ANALISIS_DELIVERY_GUARANTED, new Referencia('https://docs.confluent.io/kafka/design/delivery-semantics.html', 'Delivery Guaranted', ANALISIS_KEY, 'Delivery Guaranted', '2025/03/21').addRelatedItems(Keys.MICROSERVICES_PRODUCER_CONSUMER_PROBLEM, Keys.APIS_IDEMPOTENCIA)],
-    [Keys.ANALISIS_SYSTEM_THINKING, new Referencia('https://medium.com/nerd-for-tech/part-2-applying-systems-thinking-to-software-development-e98cbd195a83', 'Pensamiento Sistemico en el Diseño', ANALISIS_KEY, 'Pensamiento Sistemico', '2025/03/29').addRelatedItems(Keys.APIS_REST_VS_MESSAGING, Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.LEYES_LEHMAN, Keys.LEYES_CONWAY, Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES, Keys.HARDWARE_ESCALAMIENTO)],
+    [Keys.ANALISIS_SYSTEM_THINKING_I, new Referencia('https://medium.com/nerd-for-tech/part-2-applying-systems-thinking-to-software-development-e98cbd195a83', 'Pensamiento Sistemico I', ANALISIS_KEY, 'Pensamiento Sistemico I', '2025/03/29', '2025/08/03')
+        .addRelatedItems(Keys.APIS_REST_VS_MESSAGING, Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.LEYES_LEHMAN, Keys.LEYES_CONWAY, Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES, Keys.HARDWARE_ESCALAMIENTO, Keys.ANALISIS_DATA_TGS)
+        .addMoreReferences('https://medium.com/nerd-for-tech/part-1-a-systems-thinking-primer-fe75f9e92c91')
+    ],
+    [Keys.ANALISIS_SYSTEM_THINKING_II, new Referencia('https://medium.com/illumination/thinking-in-systems-how-to-approach-complex-software-problems-513039f81782', 'Pensamiento Sistemico II', ANALISIS_KEY, 'Pensamiento Sistemico II', '2025/08/03')
+        .addRelatedItems(Keys.ANALISIS_DATA_TGS, Keys.TESTING_GRAFOS_CAUSA_EFECTO, Keys.PEOPLE_NO_NEWS_GOOD_NEWS, Keys.ARQUITECTURAS_MODULITHS, Keys.PRINCIPIOS_SOC, Keys.VERSIONAMIENTO_DOCUMENT_ARQUITECTURE)
+        .addMoreReferences('https://medium.com/@pudarimadhavi99/10-secrets-to-making-rock-solid-architectural-decisions-as-a-senior-developer-5f45e97fe69f')
+    ],
     [Keys.ANALISIS_COHESERS_DECOUPLERS, new Referencia('https://itnext.io/cohesers-and-decouplers-ecac2964081a', 'Cohesores y Desacopladores ', ANALISIS_KEY, 'Desacoplamiento', '2025/04/07').addRelatedItems(Keys.POO_COUPLING_AND_COHESION, Keys.ARQUITECTURAS_MONOLITOS, Keys.META_CARACTERISTICAS_DEAD_LOCKS, Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.SECURITY_CONDICION_CARRERA, Keys.PERSISTENCY_ADVANCED_SCALING_DB, Keys.LEYES_CONWAY)],
     [Keys.ANALISIS_COMMON_METRICS, new Referencia('https://medium.com/javarevisited/dont-go-into-your-system-design-interview-without-mastering-this-31ee7af2ed7b', 'Metricas comunes en System Design', ANALISIS_KEY, 'Metricas comunes', '2025/04/26')
         .addRelatedItems(Keys.META_CARACTERISTICAS_CACHE, Keys.NUBE_OBSERVABILIDAD, Keys.HARDWARE_MONITOREO, Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.CD_CI_FAILOVER, Keys.PERSISTENCY_ACID)
@@ -306,6 +312,7 @@ export const ESTRATEGIAS_DESARROLLO_REF = new Map<string, Referencia>([
 export const FRAMEWORKS_KEY = 'Frameworks';
 export const FRAMEWORKS_REF = new Map<string, Referencia>([
     [Keys.FRAMEWORKS_FRAMEWORKS, new Referencia('https://neoattack.com/neowiki/framework/', '¿ Que es un framework ?', FRAMEWORKS_KEY, '¿ Que es un framework ?')],
+    [Keys.FRAMEWORKS_CASE, new Referencia('https://www.tutorialspoint.com/es/software_engineering/case_tools_overview.htm', 'Herramientas CASE', FRAMEWORKS_KEY, 'Herramientas CASE', '', '2025/08/02').addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_SLDC)],
     [Keys.FRAMEWORKS_IOC, new Referencia('https://medium.com/all-you-need-is-clean-code/inversi%C3%B3n-de-control-principio-de-hollywood-dont-call-us-we-ll-call-you-179e9c70e3d0', 'Inversión de Control', FRAMEWORKS_KEY, 'Inversión de control').addRelatedItem(Keys.PRINCIPIOS_HOLLYWOOD)],
     [Keys.FRAMEWORKS_IOD, new Referencia('https://www.arquitecturajava.com/el-patron-de-inyeccion-de-dependencia/', 'Inyección de dependencias', FRAMEWORKS_KEY, 'Inyección de dependencias', '', '2024/06/09')],
     [Keys.FRAMEWORKS_SCAFFOLDING, new Referencia('https://medium.com/@srinathsrs104/scaffolding-54ac4e47e133', 'Creación automatica de codigo', FRAMEWORKS_KEY, 'Scaffolding', '2023/12/27', '2025/07/13')
