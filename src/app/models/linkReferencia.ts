@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.ANALISIS_SYSTEM_THINKING_II;
+export const LAST_ITEM = Keys.LEYES_LITTLE;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -252,23 +252,24 @@ export const CONOCIMIENTO_EMPIRICO = new Map<string, Referencia>([
 
 export const LEYES_KEY = 'Leyes';
 export const LEYES_REF = new Map<string, Referencia>([
-    ['balas', new Referencia('https://gist.github.com/esparta/582e43af7b803e0aaf69', 'Balas de Plata', LEYES_KEY, 'Balas de Plata', '', '2024/07/14')],
+    [Keys.LEYES_SILVER_BULLETS, new Referencia('https://gist.github.com/esparta/582e43af7b803e0aaf69', 'Balas de Plata', LEYES_KEY, 'Balas de Plata', '', '2024/07/14')],
     [Keys.LEYES_LEHMAN, new Referencia('https://medium.com/@cartontabla/las-leyes-de-lehman-b57c623c3404', 'Leyes de Lehman - Evolución del software', LEYES_KEY, 'Leyes de Lehman', '', '2024/09/22')],
     [Keys.LEYES_CONWAY, new Referencia('https://www.javiergarzas.com/2015/06/conway.html', 'Ley de Conway', LEYES_KEY, 'Ley de Conway').addRelatedItem(Keys.PEOPLE_LANGUAGE_UBICUOS)],
-    ['murphy', new Referencia('https://www.caracteristicas.co/ley-de-murphy/', 'Ley de Murphy', LEYES_KEY, 'Ley de Murphy')],
-    ['pendulo', new Referencia('http://www.grupocrece.es/blog/Psicolog%C3%ADala-ley-del-pndulo-en-psicologa', 'Ley del pendulo', LEYES_KEY, 'Ley del pendulo')],
+    [Keys.LEYES_MURPHY, new Referencia('https://www.caracteristicas.co/ley-de-murphy/', 'Ley de Murphy', LEYES_KEY, 'Ley de Murphy')],
+    [Keys.LEYES_PENDULO, new Referencia('http://www.grupocrece.es/blog/Psicolog%C3%ADala-ley-del-pndulo-en-psicologa', 'Ley del pendulo', LEYES_KEY, 'Ley del pendulo')],
     [Keys.LEYES_HYRUM, new Referencia('https://thebootstrappedfounder.com/hyrums-law/', 'Ley de Hyrum', LEYES_KEY, 'Ley de Hyrum')],
-    ['leblanc', new Referencia('https://www.quora.com/What-resources-could-I-read-about-Leblancs-law', 'Ley de Leblanc', LEYES_KEY, 'Ley de Leblanc´s')],
-    ['leyesInternet', new Referencia('https://www.bbc.com/mundo/noticias-46102313.amp', 'Conductas en internet', LEYES_KEY, 'Leyes En Internet')],
-    ['pareto', new Referencia('https://www.becas-santander.com/es/blog/ley-de-pareto.html', 'Ley de Pareto', LEYES_KEY, 'Ley de Pareto', '2023/02/04')],
-    ['brooksLaw', new Referencia('https://www.genbeta.com/desarrollo/ley-brooks-desarrollo-software-clasico-profesion-que-habria-hecho-imposible-linux/amp', 'Ley de Brooks', LEYES_KEY, 'Ley de Brooks', '2023/03/24')],
-    ['mooreAndWirth', new Referencia('https://blogs.uoc.edu/informatica/la-ley-de-wirth-la-ley-de-moore-inversa-del-software/', 'Ley de Moore & Ley de Wirth', LEYES_KEY, 'Moore & Wirth', '2023/07/04')],
-    ['amdahl', new Referencia('https://www.techtarget.com/whatis/definition/Amdahls-law', 'Ley de Amdahls', LEYES_KEY, 'Ley de Amdahls', '2023/08/25')],
-    ['gall', new Referencia('https://deviq.com/laws/galls-law', 'Ley de Gall', LEYES_KEY, 'Ley de Gall', '2024/05/13')],
+    [Keys.LEYES_LEBLANC, new Referencia('https://www.quora.com/What-resources-could-I-read-about-Leblancs-law', 'Ley de Leblanc', LEYES_KEY, 'Ley de Leblanc´s')],
+    [Keys.LEYES_INTERNET, new Referencia('https://www.bbc.com/mundo/noticias-46102313.amp', 'Conductas en internet', LEYES_KEY, 'Leyes En Internet')],
+    [Keys.LEYES_PARETO, new Referencia('https://www.becas-santander.com/es/blog/ley-de-pareto.html', 'Ley de Pareto', LEYES_KEY, 'Ley de Pareto', '2023/02/04')],
+    [Keys.LEYES_BROOKS, new Referencia('https://www.genbeta.com/desarrollo/ley-brooks-desarrollo-software-clasico-profesion-que-habria-hecho-imposible-linux/amp', 'Ley de Brooks', LEYES_KEY, 'Ley de Brooks', '2023/03/24')],
+    [Keys.LEYES_MOORE_AND_WIRTH, new Referencia('https://blogs.uoc.edu/informatica/la-ley-de-wirth-la-ley-de-moore-inversa-del-software/', 'Ley de Moore & Ley de Wirth', LEYES_KEY, 'Moore & Wirth', '2023/07/04')],
+    [Keys.LEYES_AMDAHL, new Referencia('https://www.techtarget.com/whatis/definition/Amdahls-law', 'Ley de Amdahls', LEYES_KEY, 'Ley de Amdahls', '2023/08/25')],
+    [Keys.LEYES_GALL, new Referencia('https://deviq.com/laws/galls-law', 'Ley de Gall', LEYES_KEY, 'Ley de Gall', '2024/05/13')],
     [Keys.LEYES_KIDLIN, new Referencia('https://www.linkedin.com/pulse/5-leyes-famosas-aplicadas-en-la-pmo-lourdes-medina-pfmp-pmp-pmo-cp-zv4ke/', 'Ley de Kidlin', LEYES_KEY, 'Ley de Kidlin', '2024/07/14').addRelatedItem(Keys.AGILES_DEMING)],
     [Keys.LEYES_GOODHARTS, new Referencia('https://levelup.gitconnected.com/9-laws-that-every-software-developer-should-know-a5518bfef022', 'Ley de Goodhart’s', LEYES_KEY, 'Ley de Goodhart’s', '2024/11/08')],
     [Keys.LEYES_LINUS, new Referencia('https://levelup.gitconnected.com/9-laws-that-every-software-developer-should-know-a5518bfef022', 'Ley de Linus', LEYES_KEY, 'Ley de Linus', '2024/11/09')],
     [Keys.LEYES_HOFSTADTER, new Referencia('https://levelup.gitconnected.com/9-laws-that-every-software-developer-should-know-a5518bfef022', 'Ley de Hofstadter', LEYES_KEY, 'Ley de Hofstadter', '2024/11/10').addRelatedItem(Keys.PEOPLE_GESTION_EXPECTATIVAS)],
+    [Keys.LEYES_LITTLE, new Referencia('https://safetyculture.com/es/temas/ley-de-little/', 'Ley de Little', LEYES_KEY, 'Ley de Little', '2025/08/04').addRelatedItems(Keys.ANALISIS_QUEUES_SYSTEM_DESIGN, Keys.METODOLOGIAS_KANBAN, Keys.AGILES_ESTIMATION_LAWS)],
 ]);
 
 export const CONTENEDORES_KEY = 'Contenedores';

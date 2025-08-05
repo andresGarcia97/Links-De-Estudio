@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { LEYES } from 'src/app/models/content/content6';
-import { AGILES_KEY, CONOCIMIENTO_EMPIRICO_KEY, HARDWARE_KEY, LEYES_REF, LinkReferencia, PEOPLE_KEY }
+import { AGILES_KEY, CONOCIMIENTO_EMPIRICO_KEY, HARDWARE_KEY, LEYES_REF, LinkReferencia, PEOPLE_KEY, SECURITY_KEY }
 from 'src/app/models/linkReferencia';
+import { PreviousAndNextSection } from 'src/app/models/models';
 
 @Component({
   selector: 'app-leyes',
@@ -19,6 +20,8 @@ export class LeyesComponent implements OnInit {
 
   tittles = new Map([ ...LEYES_REF ].map(([key, { tittleShort }]) => [key, tittleShort]));
 
+  previousAndNextSection!: PreviousAndNextSection;
+
   ngOnInit(): void {
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
@@ -26,6 +29,10 @@ export class LeyesComponent implements OnInit {
     this.relatedSections.set(HARDWARE_KEY,              routes.get(HARDWARE_KEY)!);
     this.relatedSections.set(PEOPLE_KEY,                routes.get(PEOPLE_KEY)!);
     this.relatedSections.set(AGILES_KEY,                routes.get(AGILES_KEY)!);
+    this.previousAndNextSection = new PreviousAndNextSection(
+      CONOCIMIENTO_EMPIRICO_KEY, routes.get(CONOCIMIENTO_EMPIRICO_KEY)!,
+      SECURITY_KEY,              routes.get(SECURITY_KEY)!
+    );
   }
 
 }

@@ -623,7 +623,7 @@ export const GIT =
 
 export const LEYES =
     [
-        new Item('balas',
+        new Item(Keys.LEYES_SILVER_BULLETS,
             [
                 '- El software puede tener dificultades inherentes al software y accidentales ',
                 '- Los errores son gajes del oficio, pero tienen diferentes grados de repercusión en el software ',
@@ -687,14 +687,14 @@ export const LEYES =
                 ' - Empresas orgullosas, que comparten su codigo y sus buenas practicas ',
                 ' - Estos y más ejemplos hay, como empresas y personas halla ',
             ]),
-        new Item('murphy',
+        new Item(Keys.LEYES_MURPHY,
             [
                 '<strong>- Si algo malo puede pasar, pasara</strong>',
                 '- Se inspira en el concepto fisico de la entropia, el cual dicta que todo sistema fluye del orden al desorden ',
                 '- Puede ser util para ayudar a prevenir el desastre, si se usa para tomar precauciones ',
                 '- No hay ninguna demostración matematica que la niegue ó la acepta, solo es un conocimiento nacido de lo cotidiano ',
             ]),
-        new Item('pendulo',
+        new Item(Keys.LEYES_PENDULO,
             [
                 '- Permite explicar comportamientos humanos cuando son llevados al extremo; Se puede producir por diferentes razones: ',
                 '<strong>Idealización del opuesto:</strong> Cuando estamos constreñidos en algo, tendemos a idealizar el contrario ',
@@ -712,16 +712,16 @@ export const LEYES =
                 '- Hacer esto puede conllevar problemas con los clientes ya que estos cambios abruptos hacen sentir al cliente que no están siendo considerados ',
                 '- También hay que tener en cuenta que estos cambios a veces son fundamentales y se deben hacer incomoden o no a tus usuarios ',
             ]),
-        new Item('leblanc',
+        new Item(Keys.LEYES_LEBLANC,
             [
                 '- Esta ley nace debido a la tendencia natural de las personas de procastinar ',
                 '- Haciendo referencia a esas cosas que se dice que se van a arreglar despues, pero... , nunca se terminan arreglando ',
                 '- Despues es lo mismo que Nunca ',
                 '- Estos pendientes se acumulan poco a poco y convertirse en una bola de nieve, lo ideal es hacerlos en el acto, o como tareas en el corto plazo ',
             ]),
-        new Item('leyesInternet',
+        new Item(Keys.LEYES_INTERNET,
             [
-                '- Las autoridades aun no encuentran una forma universal de controlar internet, porque este ha creado sus propias "leyes" para "autoregularse" ',
+                '- Las autoridades aun no encuentran una forma universal de controlar internet, porque este ha creado sus propias <em>"leyes"</em> para <em>"autoregularse"</em> ',
                 '- Aunque se les llama leyes, son observaciones que se repiten a lo largo del tiempo y son poco contrariadas ',
                 '- Un ejemplo de esto es la <em>Ley de murphy</em> que que tiene su propio ajuste para internet (ley de Skitt)',
                 '',
@@ -737,7 +737,7 @@ export const LEYES =
                 '<strong>Ley de Haig:</strong> "La fealdad de un diseño de una página en internet es directamente proporcional a la demencia de su contenido y de su creador" ',
                 '<strong>Efecto Streisand:</strong> "Todo aquel que intente censurar u ocultar información en la red, acaba consiguiendo que se divulgue aún más" ',
             ]),
-        new Item('pareto',
+        new Item(Keys.LEYES_PARETO,
             [
                 '- Tambien conocida como la regla de <strong>80/20</strong> que asegura que el 80% de las causas proviene del 20% del esfuerzo ',
                 '- Termino acuñado en Italia en 1896 por el filosofo e ingeniero <em>Vilfredo Federico Pareto</em> ',
@@ -754,7 +754,7 @@ export const LEYES =
                 ' - Mejora la toma de decisiones, al tener datos de lo que es realmente importante ',
                 ' - Optimización de recursos, ya que se gastan donde realmente pueden generar un impacto '
             ]),
-        new Item('brooksLaw',
+        new Item(Keys.LEYES_BROOKS,
             [
                 '- <strong>Fred Brooks</strong>, Experto en computación e ingeniero de software desarrollador del sistema operativo OS/360 de IBM, además del ',
                 ' - mitico libro del <em>hombre-mes</em>, uno de los libros más citados y utiles en el ejercicio de la ingenieria de software ',
@@ -768,7 +768,7 @@ export const LEYES =
                 '- Sin embargo esta ley tiene algunas excepciones, como lo es Linux y el software libre, ',
                 ' - en el cual miles de programadores estan dispuestos a revisar y corregir, aca se tienen una alta convicción para superar el desconocimiento ',
             ]),
-        new Item('mooreAndWirth',
+        new Item(Keys.LEYES_MOORE_AND_WIRTH,
             [
                 '- El software y el hardware van de la mano, no solo existen PC lentos, tambien existen software lentos ',
                 '',
@@ -781,7 +781,7 @@ export const LEYES =
                 '- <strong>Ley de Moore:</strong> Observo en 1965 que el numero de transistores en un circuito integrado, se dobla aproximadamente cada 24 meses ',
                 '- No solo es lograr un Hardware más potente, tampoco se debe descuidar el Software, solamente porque sera compensado por mejores componentes '
             ]),
-        new Item('amdahl',
+        new Item(Keys.LEYES_AMDAHL,
             [
                 '- Es una observación intuitiva, con una formula asociada, en que la mejora de rendimiento, que se puede obtener mediante procesamiento en paralelo ',
                 ' - esta limitada por las partes de un sistema, que es inherentemente secuencial, donde la formula enseña la mejora maxima que se puede esperar ',
@@ -799,7 +799,7 @@ export const LEYES =
                 '- Esta ley se puede considerar un complemento, ya que agrega predicciones a la mejora, entre más nucleos se vayan agregando ',
                 '- Esto debido a que la ley de Amdahl supone que el problema del tamaño es fijo, pero en la practica los recursos pueden crecer ',
             ]),
-        new Item('gall',
+        new Item(Keys.LEYES_GALL,
             [
                 '- Es una observación sobre la naturaleza y evolución de los sistemas complejos, un principio que resuena en el mundo del software ',
                 '- <em>Invariablemente se descubre que un sistema complejo que funciona ha evolucionado a partir de un sistema simple que funcionó.</em>',
@@ -851,6 +851,22 @@ export const LEYES =
                 '<em>Siempre lleva más tiempo del esperado, incluso cuando se tiene en cuenta la Ley de Hofstadter</em>, Douglas Hofstadter',
                 '- Es un gran recordatorio de que somos consistentemente imprecisos al estimar el tiempo requerido para realizar tareas de Desarrollo ',
                 '- Esto es especialmente util ya que los tiempos siguen siendo imprecisos, aun cuando se tiene en cuenta esta imprecisión ',
+            ]),
+        new Item(Keys.LEYES_LITTLE,
+            [
+                '- Es una forma de estimación para procesos que funcionan como colas y como son suceptibles para optimizar los procesos ',
+                '- Esta formula se ve mucho en <em>Kanban</em> y metodologias <em>Agiles</em>, como forma de mejorar la productividad y la eficiencia de la organización ',
+                '',
+                '<strong>L = λ x W</strong>   &bull; L Número medio de artículos en un sistema de colas ',
+                '            &bull; λ Número de artículos que llegan por unidad de tiempo               ',
+                '            &bull; W Tiempo medio de espera de cada elemento en un sistema de colas    ',
+                '',
+                '<strong>Ejemplo:</strong> Si hay una media de 40 productos manofacturados por hora y cada producto pasa 10 minutos(0,16h) antes de ser vendido, se debe determinar ',
+                ' - si el espacio actual de 8 elementos es suficiente, reemplazando quedaria <strong>L = 40 x 0,1667 &#8771; 6,7</strong> ',
+                '- Esto significa que el espacio disponible de 8 unidades es suficiente sin alcanzar su capacidad máxima ',
+                '',
+                '- Esta ley descompone un sistema de colas en un esquema sencillo con solo 2 variables, determinando si las colas tienen o no la capacidad adecuada ',
+                ' - para el numero de articulos o clientes en un momento dado ',
             ])
     ];
 
