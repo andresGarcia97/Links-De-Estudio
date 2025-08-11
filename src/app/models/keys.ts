@@ -402,7 +402,6 @@ export const TESTING_ADVANCED_ENVIRONMENT = 'test-environment';
 export const TESTING_ADVANCED_PERFORMANCE = 'test-performance';
 export const ANALISIS_COMPORTAMIENTO = 'comportamientoDelSistema';
 export const ANALISIS_ANALISIS_DOMAIN = 'analisisDominio';
-export const ANALISIS_DIVIDE = 'divide';
 export const ANALISIS_DISENO = 'diseño';
 export const ANALISIS_MODEL_DOMAIN = 'modeloDominio';
 export const ANALISIS_TIME_COMPLEXITY = 'timeComplexityBigO';
