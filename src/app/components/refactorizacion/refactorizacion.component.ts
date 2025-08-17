@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { REFACTORIZACION } from 'src/app/models/content/content3';
-import { BUENAS_PRACTICAS_KEY, CALIDAD_KEY, LinkReferencia, PATRONES_KEY, REFACTORING_REF, SMELL_CODES_KEY, TESTING_KEY }
+import { BUENAS_PRACTICAS_KEY, CALIDAD_KEY, ESTRATEGIAS_DESARROLLO_KEY, LinkReferencia, PATRONES_KEY, REFACTORING_REF,
+  SMELL_CODES_KEY, TESTING_KEY }
 from 'src/app/models/linkReferencia';
+import { PreviousAndNextSection } from 'src/app/models/models';
 
 @Component({
   selector: 'app-refactorizacion',
@@ -19,6 +21,8 @@ export class RefactorizacionComponent implements OnInit {
 
   tittles = new Map([ ...REFACTORING_REF ].map(([key, { tittleShort }]) => [key, tittleShort]));
 
+  previousAndNextSection!: PreviousAndNextSection;
+
   ngOnInit(): void {
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
@@ -27,6 +31,10 @@ export class RefactorizacionComponent implements OnInit {
     this.relatedSections.set(PATRONES_KEY,         routes.get(PATRONES_KEY)!);
     this.relatedSections.set(TESTING_KEY,          routes.get(TESTING_KEY)!);
     this.relatedSections.set(CALIDAD_KEY,          routes.get(CALIDAD_KEY)!);
+    this.previousAndNextSection = new PreviousAndNextSection(
+      ESTRATEGIAS_DESARROLLO_KEY, routes.get(ESTRATEGIAS_DESARROLLO_KEY)!,
+      SMELL_CODES_KEY,            routes.get(SMELL_CODES_KEY)!
+    );
   }
 
 }

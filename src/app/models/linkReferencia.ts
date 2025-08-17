@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.LEYES_LITTLE;
+export const LAST_ITEM = Keys.REFACTORING_MODERNIZATION_LEGACY;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -720,6 +720,9 @@ export const REFACTORING_REF = new Map<string, Referencia>([
     [Keys.REFACTORING_MANAGE_DEPENDENCIES, new Referencia('https://levelup.gitconnected.com/world-of-dependencies-4639100d16ef', 'Manejo de las dependencias', REFACTORING_KEY, 'Dependencias', '2024/06/09').addRelatedItems(Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS, Keys.ARQUITECTURAS_CAPAS, Keys.FRAMEWORKS_IOD)],
     [Keys.REFACTORING_GOOD_AND_BAD_PRACTICES, new Referencia('https://www.builder.io/blog/good-vs-bad-refactoring', 'Buenas & Malas practicas', REFACTORING_KEY, 'Buenas & Malas practicas', '2024/09/08').addRelatedItems(Keys.WEB_SEO, Keys.PRINCIPIOS_KISS)],
     [Keys.REFACTORING_REWRITE_TRAP, new Referencia('https://levelup.gitconnected.com/the-endless-rewrite-why-developers-fall-into-the-start-from-scratch-trap-and-how-to-avoid-it-4a2246837ac5', 'Refactorización & Reconstrucción', REFACTORING_KEY, 'Reconstrucción', '2025/01/01').addRelatedItems(Keys.CONOCIMIENTOS_EMPIRICOS_COSTO_HUNDIDO, Keys.PATRONES_STRANGLER_FIG)],
+    [Keys.REFACTORING_MODERNIZATION_LEGACY, new Referencia('https://martinfowler.com/articles/patterns-legacy-displacement/', 'Modernización del legado', REFACTORING_KEY, 'Modernización', '2025/08/10')
+        .addRelatedItems(Keys.NUBE_MIGRATIONS, Keys.REQUISITOS_BUSINESS_VALUE, Keys.AGILES_OUTPUT_AND_OUTCOME, Keys.PRINCIPIOS_DIVIDE_AND_CONQUER, Keys.ANALISIS_TACTIC_DESIGN, Keys.METODOLOGIAS_AGILES, Keys.MICROSERVICES_ARQUITECTURAS, Keys.LEYES_CONWAY, Keys.META_ESTRUCTURAS_SISTEMAS_COMPLEJOS)
+    ],
 ]);
 
 export const REQUISITOS_KEY = 'Requisitos';

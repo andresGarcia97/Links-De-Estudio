@@ -295,6 +295,7 @@ export const REFACTORING_MANAGE_DEUDA_TECNICA = 'manejarDeudaTecnica';
 export const REFACTORING_MANAGE_DEPENDENCIES = 'manageDependencies';
 export const REFACTORING_GOOD_AND_BAD_PRACTICES = 'goodAndBadPracticesRefactoring';
 export const REFACTORING_REWRITE_TRAP = 'refactorVsRewriteTrap';
+export const REFACTORING_MODERNIZATION_LEGACY = 'modernizationLegacySystems';
 export const PERSISTENCY_SQL = 'sql';
 export const PERSISTENCY_DBMS = 'dbms';
 export const PERSISTENCY_CRUD = 'crud';
