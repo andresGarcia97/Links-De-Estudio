@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.REFACTORING_MODERNIZATION_LEGACY;
+export const LAST_ITEM = Keys.PATRONES_RESILIENCIA;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -594,6 +594,10 @@ export const PATRONES_REF = new Map<string, Referencia>([
     [Keys.PATRONES_FOR_INTEGRATION, new Referencia('https://docs.oracle.com/cd/E17904_01/doc.1111/e17363/chapter05.htm#FPCON244', 'Patrones para Integraciones', PATRONES_KEY, 'Integraciones', '2025/05/07')
         .addRelatedItems(Keys.APIS_REST_VS_MESSAGING, Keys.META_CARACTERISTICAS_BLOCKING_AND_NO_BLOCKING, Keys.ESTRATEGIAS_DESARROLLO_BFF, Keys.ANALISIS_QUEUES_SYSTEM_DESIGN)
         .addMoreReferences('https://medium.com/mandiri-engineering/fire-and-forget-e59b745c9f97', 'https://gravitar.biz/bi/tipos-tratamiento-datos/')
+    ],
+    [Keys.PATRONES_RESILIENCIA, new Referencia('https://www.paradigmadigital.com/dev/4-patrones-resiliencia-fundamentales/', 'Patrones & Resiliencia', PATRONES_KEY, 'Patrones & Resiliencia', '2025/08/14')
+        .addRelatedItems(Keys.CD_CI_FAILOVER, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.MICROSERVICES_ANALISIS, Keys.LEYES_MURPHY, Keys.APIS_IDEMPOTENCIA)
+        .addMoreReferences('https://aws.amazon.com/es/blogs/aws-spanish/entender-los-patrones-de-resiliencia-y-las-consideraciones-claves-para-arquitecturar-eficientemente-en-la-nube/')
     ],
 ]);
 

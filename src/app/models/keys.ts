@@ -180,6 +180,7 @@ export const PATRONES_CRITERIA = 'patronCriteria';
 export const PATRONES_DYSTRIBUTED_SYSTEMS = 'patronDystributedSystems';
 export const PATRONES_STATE = 'patronState';
 export const PATRONES_FOR_INTEGRATION = 'patternsForIntegrations';
+export const PATRONES_RESILIENCIA = 'patronesResiliencia';
 export const NUBE_IAAS_PAAS_SAAS = 'iaas-paas-saas';
 export const NUBE_MIGRATIONS = 'migracionesNube';
 export const NUBE_CAP_TEOREMA = 'capTeorema';

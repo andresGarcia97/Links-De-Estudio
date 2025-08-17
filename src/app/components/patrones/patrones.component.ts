@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { PATRONES } from 'src/app/models/content/content5';
-import { ANALISIS_KEY, FRAMEWORKS_KEY, LinkReferencia, NUBE_KEY, PARADIGMAS_KEY, PATRONES_KEY, PATRONES_REF, PRINCIPIOS_KEY }
+import { ANALISIS_KEY, ARQUITECTURAS_KEY, ESTRATEGIAS_DESARROLLO_KEY, FRAMEWORKS_KEY, LinkReferencia, NUBE_KEY,
+  PARADIGMAS_KEY, PATRONES_KEY, PATRONES_REF, PRINCIPIOS_KEY }
 from 'src/app/models/linkReferencia';
+import { PreviousAndNextSection } from 'src/app/models/models';
 
 @Component({
   selector: 'app-patrones',
@@ -19,6 +21,8 @@ export class PatronesComponent implements OnInit {
 
   tittles = new Map([ ...PATRONES_REF ].map(([key, { tittleShort }]) => [key, tittleShort]));
 
+  previousAndNextSection!: PreviousAndNextSection;
+
   ngOnInit(): void {
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
@@ -27,6 +31,10 @@ export class PatronesComponent implements OnInit {
     this.relatedSections.set(PARADIGMAS_KEY, routes.get(PATRONES_KEY)!);
     this.relatedSections.set(ANALISIS_KEY,   routes.get(ANALISIS_KEY)!);
     this.relatedSections.set(NUBE_KEY,       routes.get(NUBE_KEY)!);
+    this.previousAndNextSection = new PreviousAndNextSection(
+      ARQUITECTURAS_KEY,          routes.get(ARQUITECTURAS_KEY)!,
+      ESTRATEGIAS_DESARROLLO_KEY, routes.get(ESTRATEGIAS_DESARROLLO_KEY)!
+    );
   }
 
 }
