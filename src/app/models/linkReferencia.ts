@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.PATRONES_RESILIENCIA;
+export const LAST_ITEM = Keys.ARQUITECTURAS_MISTAKES;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -120,18 +120,18 @@ export const ARQUITECTURAS_REF = new Map<string, Referencia>([
     [Keys.ARQUITECTURAS_DEFINICION, new Referencia('https://www.gluo.mx/blog/arquitectura-de-software-que-es-y-que-tipos-hay', '¿ Que es una arquitectura ?', ARQUITECTURAS_KEY, 'Definición', '', '2024/06/17')],
     [Keys.ARQUITECTURAS_ETAPAS_ROLES, new Referencia('https://sg.com.mx/revista/27/arquitectura-software', 'Etapas & Roles', ARQUITECTURAS_KEY, 'Etapas & Roles', '', '2025/04/13').addRelatedItems(Keys.REQUISITOS_REQUIREMENTS_ENGINEERING, Keys.VERSIONAMIENTO_DOCUMENT_ARQUITECTURE, Keys.VERSIONAMIENTO_DOCUMENTATION)],
     [Keys.ARQUITECTURAS_IMPORTANT_CONCEPTS, new Referencia('https://www.freecodecamp.org/news/an-introduction-to-software-architecture-patterns/', 'Conceptos de Arquitecturas', ARQUITECTURAS_KEY, 'Conceptos', '', '2025/03/06')],
-    ['principiosArquitecturas', new Referencia('https://www.genbeta.com/desarrollo/principios-de-una-arquitectura-limpia-mantenible-y-testeable', 'Principios de las arquitecturas', ARQUITECTURAS_KEY, 'Principios')],
+    [Keys.ARQUITECTURAS_PRINCIPLES, new Referencia('https://www.genbeta.com/desarrollo/principios-de-una-arquitectura-limpia-mantenible-y-testeable', 'Principios de las arquitecturas', ARQUITECTURAS_KEY, 'Principios', '2023/12/17', '2025/08/18').addRelatedItems(Keys.POO_COUPLING_AND_COHESION, Keys.ANALISIS_COHESERS_DECOUPLERS, Keys.PRINCIPIOS_SOLID)],
     [Keys.ARQUITECTURAS_CLEAN, new Referencia('https://medium.com/@diego.coder/introducci%C3%B3n-a-las-clean-architectures-723fe9fe17fa', 'Arquitecturas Limpias', ARQUITECTURAS_KEY, 'Limpias')],
     //[Keys.ARQUITECTURAS_CAPAS, new Referencia('https://geeks.ms/jkpelaez/2009/05/30/arquitectura-basada-en-capas/', 'Arquitectura a Capas', ARQUITECTURAS_KEY, 'Capas')],
     //[Keys.ARQUITECTURAS_CAPAS, new Referencia('https://blog.hubspot.es/website/que-es-arquitectura-en-capas', 'Arquitectura a Capas', ARQUITECTURAS_KEY, 'Capas', '', '2025/01/12')],
     [Keys.ARQUITECTURAS_CAPAS, new Referencia('https://learn.microsoft.com/es-es/dotnet/architecture/modern-web-apps-azure/common-web-application-architectures', 'Arquitectura a Capas', ARQUITECTURAS_KEY, 'Capas', '2025/01/12', '2025/03/26').addRelatedItem(Keys.PATRONES_PERSISTENCE_PATTERNS)],
     [Keys.ARQUITECTURAS_CLIENTE_SERVIDOR, new Referencia('https://desarrolloweb.com/articulos/arquitectura-cliente-servidor.html', 'Arquitectura Cliente-Servidor', ARQUITECTURAS_KEY, 'Cliente Servidor')],
     [Keys.ARQUITECTURAS_HEXAGONAL, new Referencia('https://medium.com/@edusalguero/arquitectura-hexagonal-59834bb44b7f', 'Hexagonal', ARQUITECTURAS_KEY, 'Hexagonal', '', '2024/11/24').addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_DDD)],
-    ['noHexagonal', new Referencia('https://javiervelezreyes.com/ni-nueva-ni-arquitectura-ni-hexagonal/', 'Ni Nueva, Ni Hexagonal', ARQUITECTURAS_KEY, 'Ni Nueva, Ni hexagonal')],
+    [Keys.ARQUITECTURAS_NO_HEXAGONAL, new Referencia('https://javiervelezreyes.com/ni-nueva-ni-arquitectura-ni-hexagonal/', 'Ni Nueva, Ni Hexagonal', ARQUITECTURAS_KEY, 'Ni Nueva, Ni hexagonal')],
     [Keys.ARQUITECTURAS_MVC, new Referencia('https://developer.mozilla.org/es/docs/Glossary/MVC', 'Modelo-Vista-Controlador', ARQUITECTURAS_KEY, 'MVC', '2025/03/06')],
     //['mvpMvc', new Referencia('https://www.develapps.com/es/noticias/modelo-vista-presentador-mvp-en-android', 'Modelo-Vista-Presentador', ARQUITECTURAS_KEY, 'MVP')],
     [Keys.ARQUITECTURAS_MVP_MVC, new Referencia('https://keepcoding.io/blog/que-es-mvc-mvp-y-mvvm-en-android/', 'Modelo-Vista-Presentador', ARQUITECTURAS_KEY, 'MVP', '', '2024/06/17').addRelatedItem(Keys.META_CARACTERISTICAS_BOILER_PLATE)],
-    ['otrasArquitecturas', new Referencia('https://medium.com/@maniakhitoccori/los-10-patrones-comunes-de-arquitectura-de-software-d8b9047edf0b', 'Otras Arquitecturas', ARQUITECTURAS_KEY, 'Otras (patrones)')],
+    [Keys.ARQUITECTURAS_OTRAS, new Referencia('https://medium.com/@maniakhitoccori/los-10-patrones-comunes-de-arquitectura-de-software-d8b9047edf0b', 'Otras Arquitecturas', ARQUITECTURAS_KEY, 'Otras (patrones)', '2023/12/17', '2025/08/18').addRelatedItems(Keys.MICROSERVICES_ARQUITECTURAS, Keys.APIS_REST_VS_MESSAGING, Keys.ANALISIS_DOMAIN_EVENTS)],
     [Keys.ARQUITECTURAS_MONOLITOS, new Referencia('https://www.paradigmadigital.com/techbiz/microservicios-vs-microlitos-vs-monolitos-ventajas-desventajas/', 'Monolitos VS Microservicios', ARQUITECTURAS_KEY, 'Monolitos')],
     //['stylesArchitecture1', new Referencia('https://hdnmetatech.com/news/our-press/detail/introduction-to-architecture-styles-and-patterns-as-a-blueprint-for-designing-a-system', 'Estilos #1', ARQUITECTURAS_KEY, 'Estilos & Patrones #1')],
     //['stylesArchitecture2', new Referencia('https://hdnmetatech.com/news/our-press/detail/introduction-to-architecture-styles-and-patterns-as-a-blueprint-for-designing-a-system', 'Estilos #2', ARQUITECTURAS_KEY, 'Estilos & Patrones #2')],
@@ -147,6 +147,7 @@ export const ARQUITECTURAS_REF = new Map<string, Referencia>([
     [Keys.ARQUITECTURAS_EXPERIMENTATION, new Referencia('https://www.infoq.com/articles/architecture-experimentation/', 'Minima Arquitectura Viable', ARQUITECTURAS_KEY, 'MVA', '2025/01/12').addRelatedItems(Keys.ANALISIS_DATA_MVP, Keys.CD_CI_DEPLOYMENT_PATTERNS, Keys.NEURO_MARKETING_WHAT_IS)],
     [Keys.ARQUITECTURAS_HOW_TO_CHOOSE_IT, new Referencia('https://appmaster.io/es/blog/como-elegir-la-arquitectura-de-software', '¿ Como escoger una Arquitectura ?', ARQUITECTURAS_KEY, '¿ Como Escogerla ?', '2025/03/25').addRelatedItems(Keys.HARDWARE_ESCALAMIENTO, Keys.MICROSERVICES_FUNDAMENTALS, Keys.NUBE_NATIVE)],
     [Keys.ARQUITECTURAS_WHY_CLEAN, new Referencia('https://medium.com/unil-ci-software-engineering/why-clean-architecture-b84be50ea80d', '¿ Porque una Arquitectura Limpia ?', ARQUITECTURAS_KEY, '¿ Porque ?', '2025/04/13').addRelatedItems(Keys.POO_COUPLING_COMPONENTS, Keys.META_ESTRUCTURAS_SISTEMAS_COMPLEJOS, Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS, Keys.POO_POLIMORFISMO, Keys.PRINCIPIOS_SOLID, Keys.ESTRATEGIAS_DESARROLLO_DDD)],
+    [Keys.ARQUITECTURAS_MISTAKES, new Referencia('https://medium.com/@vndpal/7-architecture-mistakes-even-senior-engineers-make-and-how-to-fix-them-9f4086d487da', 'Errores a evitar', ARQUITECTURAS_KEY, 'Errores', '2025/08/18').addRelatedItems(Keys.MALAS_PRACTICAS_OVER_ENGINEERING, Keys.PRINCIPIOS_KISS, Keys.MALAS_PRACTICAS_DEATH_BY_MICROSERVICES, Keys.NUBE_OBSERVABILIDAD, Keys.VERSIONAMIENTO_DOCUMENTATION, Keys.CONOCIMIENTOS_EMPIRICOS_CODE_MAINTAINER)],
 ]);
 
 export const BUENAS_PRACTICAS_KEY = 'Buenas-Practicas';
@@ -201,7 +202,7 @@ export const COMPILACION_REF = new Map<string, Referencia>([
     [Keys.COMPILACION_TRANSPILACION, new Referencia('https://ingenieriadesoftware.es/diferencia-transpilacion-compilacion/', '¿ Que es la transpilación ?', COMPILACION_KEY, 'Transpilación', '', '2025/02/09').addRelatedItem(Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES)],
     ['azucarSintactico', new Referencia('https://es.wikipedia.org/wiki/Az%C3%BAcar_sint%C3%A1ctico', 'Azucar Sintactico', COMPILACION_KEY, 'Azucar Sintactico')],
     ['coercion', new Referencia('https://developer.mozilla.org/es/docs/Glossary/Type_coercion', 'Coerción', COMPILACION_KEY, 'Coerción')],
-    ['ofuscacion', new Referencia('https://www.azulweb.net/ofuscacion-de-codigo-antipatron-o-buena-practica/', 'Ofuscación', COMPILACION_KEY, 'Ofuscación')],
+    [Keys.COMPILACION_OFUSCACION, new Referencia('https://www.azulweb.net/ofuscacion-de-codigo-antipatron-o-buena-practica/', 'Ofuscación', COMPILACION_KEY, 'Ofuscación', '', '2025/08/18').addRelatedItem(Keys.META_CARACTERISTICAS_REFLEXION)],
     ['treeShaking', new Referencia('https://developer.mozilla.org/en-US/docs/Glossary/Tree_shaking', 'TreeShaking', COMPILACION_KEY, 'Tree Shaking')],
     [Keys.COMPILACION_GRAFOS, new Referencia('https://www.grapheverywhere.com/grafos-que-son-tipos-orden-y-herramientas-de-visualizacion/', 'Grafos', COMPILACION_KEY, 'Grafos')],
     //['compilacionAnticipada', new Referencia('https://hmong.es/wiki/Ahead-of-time_compilation', 'Compilación AOT', COMPILACION_KEY, 'Compilación anticipada')],
@@ -246,7 +247,7 @@ export const CONOCIMIENTO_EMPIRICO = new Map<string, Referencia>([
     [Keys.CONOCIMIENTOS_EMPIRICOS_PAIR_PROGRAMMING, new Referencia('https://stackoverflow.blog/2024/04/03/developers-with-ai-assistants-need-to-follow-the-pair-programming-model', 'Pair Programing con IA', CONOCIMIENTO_EMPIRICO_KEY, 'Pair Programing', '2024/05/26')],
     [Keys.CONOCIMIENTOS_EMPIRICOS_STAGES_COMPETENCE_MODEL, new Referencia('https://www.innovationtraining.org/the-four-stages-of-competence-model/', 'Etapas del modelo de competencia', CONOCIMIENTO_EMPIRICO_KEY, 'Modelo de competencia', '2024/09/09')],
     [Keys.CONOCIMIENTOS_EMPIRICOS_EXPIERENCE_LESSONS, new Referencia('https://dev.jimgrey.net/2024/07/03/lessons-learned-in-35-years-of-making-software/', 'Experiencia', CONOCIMIENTO_EMPIRICO_KEY, 'Experiencia', '2024/10/31')],
-    [Keys.CONOCIMIENTOS_EMPIRICOS_CODE_MAINTAINER, new Referencia('https://java-design-patterns.com/es/principles/#code-for-the-maintainer', 'Mantenimiento de codigo', CONOCIMIENTO_EMPIRICO_KEY, 'Mantenimiento', '2025/07/08').addRelatedItems(Keys.WEB_MENOR_SORPRESA, Keys.REFACTORING_CLEAN_CODE)],
+    [Keys.CONOCIMIENTOS_EMPIRICOS_CODE_MAINTAINER, new Referencia('https://java-design-patterns.com/es/principles/#code-for-the-maintainer', 'Mantenimiento de codigo', CONOCIMIENTO_EMPIRICO_KEY, 'Mantenimiento', '2025/07/08').addRelatedItems(Keys.WEB_MENOR_SORPRESA, Keys.REFACTORING_CLEAN_CODE, Keys.COMPILACION_OFUSCACION)],
 ]);
 
 export const LEYES_KEY = 'Leyes';
