@@ -1,10 +1,30 @@
 {
   "hosting": {
-    "public": "dist/links-estudio",
+    "public": "dist/links-estudio/browser",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "headers": [
+      {
+        "source": "**/*.@(jpg|jpeg|gif|png|svg|ico|webp)",
+        "headers": [
+          { "key": "Cache-Control", "value": "public,max-age=2592000,immutable" }
+        ]
+      },
+      {
+        "source": "**/*.@(js|css)",
+        "headers": [
+          { "key": "Cache-Control", "value": "public,max-age=2592000,immutable" }
+        ]
+      },
+      {
+        "source": "/index.html",
+        "headers": [
+          { "key": "Cache-Control", "value": "no-cache" }
+        ]
+      }
     ],
     "rewrites": [
       {
