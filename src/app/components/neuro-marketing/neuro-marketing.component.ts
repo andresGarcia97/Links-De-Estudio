@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { NEURO_MARKETING } from 'src/app/models/content/content6';
-import { CONOCIMIENTO_EMPIRICO_KEY, LinkReferencia, NEURO_MARKETING_REF, PEOPLE_KEY } from 'src/app/models/linkReferencia';
+import { ANALISIS_DATA_KEY, CONOCIMIENTO_EMPIRICO_KEY, LinkReferencia, MICRO_SERVICES_KEY, NEURO_MARKETING_REF, PEOPLE_KEY }
+from 'src/app/models/linkReferencia';
+import { PreviousAndNextSection } from 'src/app/models/models';
 
 @Component({
   selector: 'app-neuro-marketing',
@@ -18,11 +20,17 @@ export class NeuroMarketingComponent implements OnInit {
 
   tittles = new Map([ ...NEURO_MARKETING_REF ].map(([key, { tittleShort }]) => [key, tittleShort]));
 
+  previousAndNextSection!: PreviousAndNextSection;
+
   ngOnInit(): void {
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
     this.relatedSections.set(CONOCIMIENTO_EMPIRICO_KEY, routes.get(CONOCIMIENTO_EMPIRICO_KEY)!);
     this.relatedSections.set(PEOPLE_KEY,                routes.get(PEOPLE_KEY)!);
+    this.previousAndNextSection = new PreviousAndNextSection(
+      ANALISIS_DATA_KEY,  routes.get(ANALISIS_DATA_KEY)!,
+      MICRO_SERVICES_KEY, routes.get(MICRO_SERVICES_KEY)!
+    );
   }
 
 }

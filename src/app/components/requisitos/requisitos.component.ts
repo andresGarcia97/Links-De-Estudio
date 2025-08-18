@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { REQUISITOS } from 'src/app/models/content/content3';
-import { AGILES_KEY, ANALISIS_KEY, LinkReferencia, PEOPLE_KEY, REQUISITOS_REF, USER_HISTORIES_KEY }
+import { AGILES_KEY, ANALISIS_KEY, LinkReferencia, PEOPLE_KEY, REQUISITOS_REF, UML_KEY, USER_HISTORIES_KEY }
 from 'src/app/models/linkReferencia';
+import { PreviousAndNextSection } from 'src/app/models/models';
 
 @Component({
   selector: 'app-requisitos',
@@ -19,6 +20,8 @@ export class RequisitosComponent implements OnInit {
 
   tittles = new Map([ ...REQUISITOS_REF ].map(([key, { tittleShort }]) => [key, tittleShort]));
 
+  previousAndNextSection!: PreviousAndNextSection;
+
   ngOnInit(): void {
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
@@ -26,6 +29,10 @@ export class RequisitosComponent implements OnInit {
     this.relatedSections.set(ANALISIS_KEY,       routes.get(ANALISIS_KEY)!);
     this.relatedSections.set(PEOPLE_KEY,         routes.get(PEOPLE_KEY)!);
     this.relatedSections.set(AGILES_KEY,         routes.get(AGILES_KEY)!);
+    this.previousAndNextSection = new PreviousAndNextSection(
+      PEOPLE_KEY, routes.get(PEOPLE_KEY)!,
+      UML_KEY,    routes.get(UML_KEY)!
+    );
   }
 
 }

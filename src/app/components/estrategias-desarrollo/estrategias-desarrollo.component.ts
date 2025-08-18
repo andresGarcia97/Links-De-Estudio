@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ESTRATEGIAS_DESARROLLO } from 'src/app/models/content/content4';
 import { AGILES_KEY, ARQUITECTURAS_KEY, CD_CI_KEY, ESTRATEGIAS_DESARROLLO_REF, LinkReferencia, METODOLOGIAS_KEY,
-  REQUISITOS_KEY, TESTING_KEY }
+  PATRONES_KEY, REFACTORING_KEY, REQUISITOS_KEY, TESTING_KEY }
   from 'src/app/models/linkReferencia';
+import { PreviousAndNextSection } from 'src/app/models/models';
 
 @Component({
   selector: 'app-estrategias-desarrollo',
@@ -20,6 +21,8 @@ export class EstrategiasDesarrolloComponent implements OnInit {
 
   tittles = new Map([ ...ESTRATEGIAS_DESARROLLO_REF ].map(([key, { tittleShort }]) => [key, tittleShort]));
 
+  previousAndNextSection!: PreviousAndNextSection;
+
   ngOnInit(): void {
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
@@ -29,6 +32,10 @@ export class EstrategiasDesarrolloComponent implements OnInit {
     this.relatedSections.set(TESTING_KEY,       routes.get(TESTING_KEY)!);
     this.relatedSections.set(AGILES_KEY,        routes.get(AGILES_KEY)!);
     this.relatedSections.set(CD_CI_KEY,         routes.get(CD_CI_KEY)!);
+    this.previousAndNextSection = new PreviousAndNextSection(
+      PATRONES_KEY,    routes.get(PATRONES_KEY)!,
+      REFACTORING_KEY, routes.get(REFACTORING_KEY)!
+    );
   }
 
 }

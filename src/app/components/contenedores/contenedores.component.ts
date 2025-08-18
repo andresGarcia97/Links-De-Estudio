@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { CONTENEDORES } from 'src/app/models/content/content4';
-import { CD_CI_KEY, CONTAINERS, HARDWARE_KEY, LinkReferencia, NUBE_KEY, SECURITY_KEY } from 'src/app/models/linkReferencia';
+import { CD_CI_KEY, CONTAINERS, GIT_KEY, HARDWARE_KEY, LinkReferencia, NUBE_KEY, SECURITY_KEY, WEB_KEY }
+from 'src/app/models/linkReferencia';
+import { PreviousAndNextSection } from 'src/app/models/models';
 
 @Component({
   selector: 'app-docker',
@@ -18,6 +20,8 @@ export class ContenedoresComponent implements OnInit {
 
   tittles = new Map([ ...CONTAINERS ].map(([key, { tittleShort }]) => [key, tittleShort]));
 
+  previousAndNextSection!: PreviousAndNextSection;
+
   ngOnInit(): void {
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
@@ -25,6 +29,10 @@ export class ContenedoresComponent implements OnInit {
     this.relatedSections.set(HARDWARE_KEY, routes.get(HARDWARE_KEY)!);
     this.relatedSections.set(CD_CI_KEY,    routes.get(CD_CI_KEY)!);
     this.relatedSections.set(NUBE_KEY,     routes.get(NUBE_KEY)!);
+    this.previousAndNextSection = new PreviousAndNextSection(
+      GIT_KEY, routes.get(GIT_KEY)!,
+      WEB_KEY, routes.get(WEB_KEY)!
+    );
   }
 
 }

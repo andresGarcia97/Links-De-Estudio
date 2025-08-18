@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { WEB } from 'src/app/models/content/content1';
-import { BUENAS_PRACTICAS_KEY, CD_CI_KEY, FRAMEWORKS_KEY, LinkReferencia, NUBE_KEY, SECURITY_KEY, WEB_REF }
+import { BUENAS_PRACTICAS_KEY, CD_CI_KEY, CONOCIMIENTO_EMPIRICO_KEY, CONTENEDORES_KEY, FRAMEWORKS_KEY, LinkReferencia,
+  NUBE_KEY, SECURITY_KEY, WEB_REF }
 from 'src/app/models/linkReferencia';
+import { PreviousAndNextSection } from 'src/app/models/models';
 
 @Component({
   selector: 'app-web',
@@ -19,6 +21,8 @@ export class WebComponent implements OnInit {
 
   tittles = new Map([ ...WEB_REF ].map(([key, { tittleShort }]) => [key, tittleShort]));
 
+  previousAndNextSection!: PreviousAndNextSection;
+
   ngOnInit(): void {
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
@@ -27,6 +31,10 @@ export class WebComponent implements OnInit {
     this.relatedSections.set(SECURITY_KEY,         routes.get(SECURITY_KEY)!);
     this.relatedSections.set(CD_CI_KEY,            routes.get(CD_CI_KEY)!);
     this.relatedSections.set(NUBE_KEY,             routes.get(NUBE_KEY)!);
+    this.previousAndNextSection = new PreviousAndNextSection(
+      CONTENEDORES_KEY,          routes.get(CONTENEDORES_KEY)!,
+      CONOCIMIENTO_EMPIRICO_KEY, routes.get(CONOCIMIENTO_EMPIRICO_KEY)!
+    );
   }
 
 }
