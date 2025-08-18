@@ -17,7 +17,7 @@ jobs:
       run: |
         npm install
         npm install -g @angular/cli
-        ng build --configuration production --build-optimizer=true
+        ng build --configuration production
     - name: Firebase Deploy
       run: |
         sudo npm install -g firebase-tools
