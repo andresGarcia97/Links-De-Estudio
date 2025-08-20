@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.ARQUITECTURAS_MISTAKES;
+export const LAST_ITEM = Keys.TESTING_CONTRACT_TESTING;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -657,27 +657,31 @@ export const TESTING_KEY = 'Testing';
 export const TESTING_REF = new Map<string, Referencia>([
     //['principios', new Referencia('https://todosqa.com/siete-principios-del-proceso-de-prueba/', 'Principios de testing', TESTING_KEY, 'Principios de testing')],
     [Keys.TESTING_PRINCIPLES, new Referencia('https://www.hiberus.com/crecemos-contigo/siete-principios-que-deben-guiar-el-testing-de-software-segun-istqb/', 'Principios de testing', TESTING_KEY, 'Principios de testing', '', '2025/04/05').addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_SLDC, Keys.CALIDAD_ANALYST_QA)],
-    ['manifiesto', new Referencia('https://www.adictosaltrabajo.com/2019/12/18/testing-en-un-mundo-agile/', 'Manifiesto para testing', TESTING_KEY, 'Testing manifiesto')],
+    [Keys.TESTING_MANIFIESTO, new Referencia('https://www.adictosaltrabajo.com/2019/12/18/testing-en-un-mundo-agile/', 'Testing manifiesto', TESTING_KEY, 'Testing manifiesto', '', '2025/08/19').addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_SLDC)],
     //['tiposPruebas', new Referencia('https://visual-engin.com/2017/10/26/importancia-pruebas-de-software-testing/', 'Tipos de pruebas', TESTING_KEY, 'Tipos')],
-    ['tiposPruebas', new Referencia('https://www.certus.edu.pe/blog/pruebas-de-software-importancia/', 'Tipos de pruebas', TESTING_KEY, 'Tipos', '', '2024/07/11')],
-    ['beneficios', new Referencia('https://platzi.com/blog/testing-ventajas-formas-de-realizar-pruebas/', 'Beneficios del testing', TESTING_KEY, 'Beneficios')],
-    ['nombramiento', new Referencia('https://www.petrikainulainen.net/programming/testing/writing-clean-tests-naming-matters/', 'Nombramiento de los componentes', TESTING_KEY, 'Nombramiento')],
-    ['first', new Referencia('https://www.paradigmadigital.com/dev/principio-first-aumentar-la-calidad-tests-unitarios/', 'Principio FIRST', TESTING_KEY, 'Principio FIRST')],
+    [Keys.TESTING_TYPES, new Referencia('https://www.certus.edu.pe/blog/pruebas-de-software-importancia/', 'Tipos de pruebas', TESTING_KEY, 'Tipos', '', '2024/07/11')],
+    [Keys.TESTING_BENEFICIOS, new Referencia('https://platzi.com/blog/testing-ventajas-formas-de-realizar-pruebas/', 'Beneficios del testing', TESTING_KEY, 'Beneficios')],
+    [Keys.TESTING_NAMING, new Referencia('https://www.petrikainulainen.net/programming/testing/writing-clean-tests-naming-matters/', 'Nombramiento de los componentes', TESTING_KEY, 'Nombramiento')],
+    [Keys.TESTING_FIRST, new Referencia('https://www.paradigmadigital.com/dev/principio-first-aumentar-la-calidad-tests-unitarios/', 'Principio FIRST', TESTING_KEY, 'Principio FIRST')],
     [Keys.TESTING_DATA_SUT_DOC, new Referencia('https://www.javiergarzas.com/2015/09/que-estoy-probando-y-cuales-son-mis-dependencias-en-testing.html', 'SUT & DOC', TESTING_KEY, 'SUT & DOC', '', '2024/07/14')],
     [Keys.TESTING_MOCKS, new Referencia('https://www.codurance.com/publications/2019/04/08/introduction-to-test-doubles', 'Mocks', TESTING_KEY, 'Mocks')],
     //['aaa', new Referencia('http://oscarmoreno.com/pruebas-unitarias/', 'Arrange-Act-Assert', TESTING_KEY, 'AAA')],
-    ['aaa', new Referencia('https://medium.com/@rojasjimenezjosea/aaa-unit-testing-688e3e61902a', 'Arrange-Act-Assert', TESTING_KEY, 'AAA', '', '2024/07/11')],
-    ['gwt', new Referencia('https://softwareengineering.stackexchange.com/questions/308160/differences-between-given-when-then-gwt-and-arrange-act-assert-aaa', 'Given-When-Then', TESTING_KEY, 'GWT')],
+    [Keys.TESTING_AAA, new Referencia('https://medium.com/@rojasjimenezjosea/aaa-unit-testing-688e3e61902a', 'Arrange-Act-Assert', TESTING_KEY, 'AAA', '', '2024/07/11')],
+    [Keys.TESTING_GWT, new Referencia('https://softwareengineering.stackexchange.com/questions/308160/differences-between-given-when-then-gwt-and-arrange-act-assert-aaa', 'Given-When-Then', TESTING_KEY, 'GWT').addRelatedItems(Keys.PEOPLE_LANGUAGE_UBICUOS, Keys.ESTRATEGIAS_DESARROLLO_BDD)],
     [Keys.TESTING_PIRAMIDE, new Referencia('https://medium.com/@wc.testing.qa/la-famosa-pir%C3%A1mide-de-cohn-y-la-dura-realidad-e1250dfbe5f3', 'Piramide de tests', TESTING_KEY, 'Piramide de tests', '', '2024/12/26')],
-    ['triangulo', new Referencia('https://proyectosagiles.org/triangulo-hierro/', 'Triangulo de Hierro', TESTING_KEY, 'Triangulo de Hierro')],
-    ['cobertura', new Referencia('https://argonur.com/2020/05/11/code-coverage-cobertura-de-codigo/', 'Cobertura de pruebas', TESTING_KEY, 'Cobertura')],
+    [Keys.TESTING_TRIANGULO, new Referencia('https://proyectosagiles.org/triangulo-hierro/', 'Triangulo de Hierro', TESTING_KEY, 'Triangulo de Hierro')],
+    [Keys.TESTING_COBERTURA, new Referencia('https://argonur.com/2020/05/11/code-coverage-cobertura-de-codigo/', 'Cobertura de pruebas', TESTING_KEY, 'Cobertura')],
     //['falsos', new Referencia('https://www.qalovers.com/2015/03/diferencia-entre-falso-positivo-y-falso_5.html#:~:text=La%20definici%C3%B3n%20de%20falso%20negativo,sistema%20que%20est%C3%A1%20realmente%20infectada.%22&text=Un%20falso%20negativo%20llevado%20a,cuando%20en%20realidad%20est%C3%A1%20fallando.', 'Falsos positivos & Falsos negativos', TESTING_KEY, 'Falsos Resultados')],
     //['falsos', new Referencia('https://www.redradix.com/insights/detalles-implementacionl-tests-articulo-de-kentc-dodds', 'Falsos positivos & Falsos negativos', TESTING_KEY, 'Falsos Resultados')],
     [Keys.TESTING_FALSES_POSITIVES_NEGATIVES, new Referencia('https://www.browserstack.com/guide/false-positives-and-false-negatives-in-testing', 'Falsos positivos & Falsos negativos', TESTING_KEY, 'Falsos Resultados', '2024/07/11', '2025/04/26')],
     [Keys.TESTING_QUALITY_ASSURANCE, new Referencia('https://www.bbvaapimarket.com/es/mundo-api/que-es-qa-y-por-que-no-debe-faltar-en-tu-proyecto/', '¿ Que es QA ?', TESTING_KEY, 'Quality Assurance', '', '2025/03/15').addRelatedItem(Keys.PEOPLE_GESTION_EXPECTATIVAS)],
     [Keys.TESTING_DATA_CREATION, new Referencia('https://www.linkedin.com/pulse/creating-test-data-object-mother-builder-patterns-alves-pimenta/', 'Patrones de creación de datos', TESTING_KEY, 'Creación de datos', '2024/07/11')],
     [Keys.TESTING_FIVE_FACTORS, new Referencia('https://madeintandem.com/blog/five-factor-testing/', 'Five Factor Testing', TESTING_KEY, 'Five Factor Testing', '2025/03/02').addRelatedItems(Keys.VERSIONAMIENTO_DOCUMENTATION, Keys.ANALISIS_OPINIONATED_NO, Keys.REFACTORING_LEGACY_CODE)],
-    [Keys.TESTING_BUG, new Referencia('https://testgrid.io/blog/bug-life-cycle/', 'Ciclo de vida de un Error(Bug)', TESTING_KEY, 'Bugs', '2025/04/23').addRelatedItems(Keys.BUENAS_PRACTICAS_DEBUGGING, Keys.BUENAS_PRACTICAS_LOGGING, Keys.PEOPLE_CAPA_8, Keys.COMPILACION_ERRORS_AND_EXCEPTIONS)]
+    [Keys.TESTING_BUG, new Referencia('https://testgrid.io/blog/bug-life-cycle/', 'Ciclo de vida de un Error(Bug)', TESTING_KEY, 'Bugs', '2025/04/23').addRelatedItems(Keys.BUENAS_PRACTICAS_DEBUGGING, Keys.BUENAS_PRACTICAS_LOGGING, Keys.PEOPLE_CAPA_8, Keys.COMPILACION_ERRORS_AND_EXCEPTIONS)],
+    [Keys.TESTING_CONTRACT_TESTING, new Referencia('https://www.paradigmadigital.com/dev/patrones-arquitectura-microservicios-consumer-driven-contract-testing/', 'Contract Testing', TESTING_KEY, 'Contract Testing', '2025/08/19')
+        .addRelatedItems(Keys.POO_DESIGN_BY_CONTRACT, Keys.PATRONES_FOR_INTEGRATION, Keys.MICROSERVICES_EVENTS_VS_REQUEST_RESPONSE, Keys.ANALISIS_DOMAIN_EVENTS, Keys.APIS_API_FIRST_VS_CODE_FIRST, Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION, Keys.CD_CI_DEPLOYMENT_PIPELINES, Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES)
+        .addMoreReferences('https://medium.com/@chinthakadd/contract-testing-for-event-driven-architectures-can-we-do-we-and-how-do-we-177c8e9acfc7')
+    ],
 ]);
 
 export const TESTING_ADVANCED_KEY = 'Testing-Avanzado';
