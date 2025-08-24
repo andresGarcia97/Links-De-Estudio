@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { BASES_DE_DATOS } from 'src/app/models/content/content1';
-import { PERSISTENCY_ADVANCED_KEY, HARDWARE_KEY, LinkReferencia, PATRONES_KEY, PERSISTENCY_REF, TESTING_ADVANCED_KEY } from 'src/app/models/linkReferencia';
+import { PERSISTENCY_ADVANCED_KEY, HARDWARE_KEY, LinkReferencia, PATRONES_KEY, PERSISTENCY_REF, TESTING_ADVANCED_KEY }
+from 'src/app/models/linkReferencia';
 import { PreviousAndNextSection } from 'src/app/models/models';
 
 @Component({

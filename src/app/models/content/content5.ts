@@ -1596,7 +1596,7 @@ export const META_ESTRUCTURAS =
                 '- <em>Remplazar</em> lo encontrado por otra cosa       - <em>Posiciónes</em> de cada coicidencia que se haya encontrado ',
                 '- <em>Separar</em> un elemento en diversas partes      - <em>Transformación</em> de un texto a otro segun el patrón ',
             ]),
-        new Item(Keys.META_ESTRUCTURAS_ESTRUCTURAS_DATOS,
+        new Item(Keys.META_ESTRUCTURAS_ESTRUCTURAS_DATOS_I,
             [
                 '- Es un concepto general que comparten muchos lenguajes de programación ',
                 '- Que a su vez pueden cambiar y/o tener variaciones segun el lenguaje, dependiendo de cada implementación ',
@@ -1609,7 +1609,7 @@ export const META_ESTRUCTURAS =
                 '',
                 '- Existen más tipos de estructuras, pero estas son de las más comunes y usadas generalmente ',
             ]),
-        new Item(Keys.META_ESTRUCTURAS_ESTRUCTURAS_DATOS_2,
+        new Item(Keys.META_ESTRUCTURAS_ESTRUCTURAS_DATOS_II,
             [
                 '<strong>Arrays:</strong> Colección de elementos de una o varias dimensiones con un tamaño fijo y de un tipo especifico <strong>Aplicaciones:</strong> ',
                 '  - Resultados de busquedas             - Sistemas GPS                  - Calendarios',

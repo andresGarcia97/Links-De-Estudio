@@ -962,7 +962,7 @@ export const PEOPLE =
                 '<strong>- Indiferentes:</strong> Son neutrales frente a la marca, y aunque esten satisfechos solo haran compras ocasionales ',
                 '<strong>- Terroristas:</strong> Además de estar insatisfechos, estos hablaran mal de la marca en sus circulos de influencia ',
             ]),
-        new Item('modeloDIKW',
+        new Item(Keys.PEOPLE_DIKW,
             [
                 '- Es un sistema jerarquico donde cada capa le da soporte a las caracteristicas de la siguiente ',
                 ' &uarr;',
