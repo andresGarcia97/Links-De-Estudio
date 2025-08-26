@@ -27,6 +27,31 @@
 
   </div>
 
+  
+  <div class="flexbox-column">
+
+    <div class="card-container">
+
+      <h2>SQL</h2>
+
+      <span *ngFor="let keyFront of sql">
+        <app-fuente [key]="keyFront"></app-fuente>
+      </span>
+
+    </div>
+
+    <div class="card-container">
+
+      <h2>Docker & Kubernetes</h2>
+
+      <span *ngFor="let keyBack of docker">
+        <app-fuente [key]="keyBack"></app-fuente>
+      </span>
+
+    </div>
+
+  </div>
+
   <div class="flexbox-column">
 
     <div class="card-container">

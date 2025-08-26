@@ -824,7 +824,9 @@ export const PERSISTENCY_REF = new Map<string, Referencia>([
     [Keys.PERSISTENCY_ACID, new Referencia('https://dosideas.com/noticias/base-de-datos/973-acid-en-las-bases-de-datos', 'Esquema ACID', PERSISTENCY_KEY, 'ACID')],
     //['indices', new Referencia('https://www.ibm.com/docs/es/mam/7.6.0.8?topic=databases-database-indexing', 'Indices', PERSISTENCY_KEY, 'Indices')],
     [Keys.PERSISTENCY_INDICES, new Referencia('https://www.adesso.es/es/noticias/blog/indices-de-bases-de-datos-la-clave-para-la-optimizacion-del-rendimiento.jsp', 'Indices', PERSISTENCY_KEY, 'Indices', '', '2024/02/04').addRelatedItem(Keys.META_ESTRUCTURAS_ESTRUCTURAS_DATOS_II)],
-    [Keys.PERSISTENCY_JOINS, new Referencia('https://ingenieriadesoftware.es/tipos-sql-join-guia-referencia/', 'Tipos de Joins', PERSISTENCY_KEY, 'Tipos de Joins', '', '2025/06/25')],
+    [Keys.PERSISTENCY_JOINS, new Referencia('https://ingenieriadesoftware.es/tipos-sql-join-guia-referencia/', 'Tipos de Joins', PERSISTENCY_KEY, 'Tipos de Joins', '2025/06/25', '2025/08/26')
+        .addMoreReferences('https://vladmihalcea.com/sql-join-using/')
+    ],
     [Keys.PERSISTENCY_CONSTRAINTS, new Referencia('https://www.w3schools.com/sql/sql_constraints.asp', 'Constraints', PERSISTENCY_KEY, 'Constraints', '2023/10/03')],
     [Keys.PERSISTENCY_DATA_BASE_OBJECTS, new Referencia('https://www.geeksforgeeks.org/dbms/database-objects-in-dbms/', 'Database Objects', PERSISTENCY_KEY, 'Database Objects', '2025/06/24')
         .addRelatedItem(Keys.PARADIGMAS_IMPERATIVO)

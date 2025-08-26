@@ -4,6 +4,7 @@ export class LinkFuente {
 
     public fuentes: Map<string, Fuente> = new Map([
         ...FRONT,       ...BACK,
+        ...SQL,         ...DOCKER,
         ...UTILS,       ...TESTING,
         ...CURIOSITIES, ...SECURITY,
         ...GIT,         ...APIS
@@ -29,9 +30,7 @@ export const FRONT = new Map([
 ]);
 
 export const BACK = new Map([
-    ['sqlTutorial', { titulo: 'SQL Tutorial', referencia: 'https://www.w3schools.com/sql/default.asp' }],
     ['patronesDisenoJava', { titulo: 'Patrones en Java', referencia: 'https://www.journaldev.com/1827/java-design-patterns-example-tutorial' }],
-    ['comandosDocker', { titulo: 'Comandos Docker', referencia: 'https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes-es' }],
     ['paradigmaFuncionaljava', { titulo: 'Paradigma funcional Java', referencia: 'https://www.adictosaltrabajo.com/2016/06/23/uso-basico-de-java-8-stream-y-lambdas/' }],
     ['apisJava', { titulo: 'APIs comunes de Java', referencia: 'https://www.simplilearn.com/tutorials/java-tutorial/java-api?source=sl_frs_nav_playlist_video_clicked#the_most_commonly_used_java_apis' }],
     ['precendenciaJava', { titulo: 'Operadores Java', referencia: 'https://es.stackoverflow.com/questions/57225/cu%C3%A1l-es-la-precedencia-de-operadores-en-java/57226' }],
@@ -39,15 +38,25 @@ export const BACK = new Map([
     ['eventLoop', { titulo: 'Event Loop', referencia: 'https://geekflare.com/es/javascript-event-loops/' }],
     ['convivenciaArquitecturas', { titulo: 'Multiples arquitecturas', referencia: 'https://herbertograca.com/2017/11/16/explicit-architecture-01-ddd-hexagonal-onion-clean-cqrs-how-i-put-it-all-together/' }],
     ['designPatternsJavascript', { titulo: 'Patrones en Javascript', referencia: 'https://www.freecodecamp.org/news/javascript-design-patterns-explained/' }],
-    ['easySql', { titulo: 'Easy SQL', referencia: 'https://www.sql-easy.com/' }],
     ['orderAndSearch', { titulo: 'Busqueda & Ordenacion', referencia: 'https://www.javaguides.net/p/data-structures-and-algorithms-in-java.html' }],
     ['LinuxCommands', { titulo: 'Comandos de Linux', referencia: 'https://xmind.app/m/WwtB/' }],
+    ['javaTags', { titulo: 'Inside Java Tags', referencia: 'https://inside.java/tags' }],
+    ['arquitecturesStyles', { titulo: 'Estilos arquitectonicos', referencia: 'https://blog.bytebytego.com/p/ep68-top-architectural-styles#%C2%A7top-architectural-styles' }],
+]);
+
+export const SQL = new Map([
+    ['sqlTutorial', { titulo: 'SQL Tutorial', referencia: 'https://www.w3schools.com/sql/default.asp' }],
+    ['easySql', { titulo: 'Easy SQL', referencia: 'https://www.sql-easy.com/' }],
     ['sqlAdvanced', { titulo: 'Preguntas SQL Avanzado', referencia: 'https://www.kdnuggets.com/2023/01/top-10-advanced-data-science-sql-interview-questions-must-know-answer.html?utm_source=rss&utm_medium=rss&utm_campaign=top-10-advanced-data-science-sql-interview-questions-you-must-know-how-to-answer' }],
     ['sqlPractices', { titulo: 'Buenas practicas SQL', referencia: 'https://www.metabase.com/learn/sql-questions/sql-best-practices' }],
     ['sqlRoadMap', { titulo: 'Mapa de Ruta SQL', referencia: 'https://roadmap.sh/sql' }],
-    ['javaTags', { titulo: 'Inside Java Tags', referencia: 'https://inside.java/tags' }],
-    ['arquitecturesStyles', { titulo: 'Estilos arquitectonicos', referencia: 'https://blog.bytebytego.com/p/ep68-top-architectural-styles#%C2%A7top-architectural-styles' }],
-    ['dockerSecurity', { titulo: 'Seguridad en Docker', referencia: 'https://spacelift.io/blog/docker-security#2-regularly-rebuild-your-images' }],
+]);
+
+export const DOCKER = new Map([
+    ['comandosDocker', { titulo: 'Comandos Docker', referencia: 'https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes-es' }],
+    ['dockerSecurity', { titulo: 'Seguridad en Docker', referencia: 'https://spacelift.io/blog/docker-security/' }],
+    ['awesomeDockerCompose', { titulo: 'Awesome Compose', referencia: 'https://awesome-docker-compose.com/' }],
+    ['kodekloud', { titulo: 'kode kloud', referencia: 'https://kodekloud.com/' }],
 ]);
 
 export const UTILS = new Map([

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { APIS, BACK, CURIOSITIES, FRONT, GIT, SECURITY, TESTING, UTILS } from 'src/app/models/linkFuente';
+import { APIS, BACK, CURIOSITIES, DOCKER, FRONT, GIT, SECURITY, SQL, TESTING, UTILS } from 'src/app/models/linkFuente';
 
 @Component({
   selector: 'app-fuentes',
@@ -10,6 +10,10 @@ export class FuentesComponent {
   front = [...FRONT.keys()];
 
   back = [...BACK.keys()];
+
+  sql = [...SQL.keys()];
+
+  docker = [...DOCKER.keys()];
 
   utils = [...UTILS.keys()];
 
