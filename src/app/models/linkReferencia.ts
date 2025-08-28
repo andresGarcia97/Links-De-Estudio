@@ -898,9 +898,13 @@ export const UML_REF = new Map<string, Referencia>([
 export const VERSIONAMIENTO_KEY = 'Versionamiento';
 export const VERSIONAMIENTO_REF = new Map<string, Referencia>([
     [Keys.VERSIONAMIENTO_MANAGEMENT_VERSIONS, new Referencia('https://david-estevez.gitbooks.io/the-git-the-bad-and-the-ugly/content/es/control-de-versiones.html', 'Gestor de versiones', VERSIONAMIENTO_KEY, 'Gestor de Versiones', '', '2025/04/10').addRelatedItem(Keys.GIT_STRUCTURE_AND_CONCEPTS)],
-    ['dependencias', new Referencia('https://www.hongkiat.com/blog/manage-dependencies-tools-webdev/', 'Gestores de dependencias', VERSIONAMIENTO_KEY, 'Dependencias Web')],
-    ['gradlevsmaven', new Referencia('https://www.chakray.com/es/gradle-vs-maven-definiciones-diferencias/', 'Gradle VS Maven', VERSIONAMIENTO_KEY, 'Gradle VS Maven')],
-    [Keys.VERSIONAMIENTO_VERSIONAMIENTO, new Referencia('https://ed.team/blog/como-se-deciden-las-versiones-del-software', 'Manejo de versiones', VERSIONAMIENTO_KEY, 'Versionamiento')],
+    [Keys.VERSIONAMIENTO_MANAGEMENT_DEPENDENCIES, new Referencia('https://www.hongkiat.com/blog/manage-dependencies-tools-webdev/', 'Gestores de dependencias', VERSIONAMIENTO_KEY, 'Dependencias Web')],
+    // [Keys.VERSIONAMIENTO_VERSIONAMIENTO, new Referencia('https://ed.team/blog/como-se-deciden-las-versiones-del-software', 'Manejo de versiones', VERSIONAMIENTO_KEY, 'Versionamiento', '', '2025/08/27')
+    [Keys.VERSIONAMIENTO_GRADLEW_VS_MAVEN, new Referencia('https://www.chakray.com/es/gradle-vs-maven-definiciones-diferencias/', 'Gradle VS Maven', VERSIONAMIENTO_KEY, 'Gradle VS Maven')],
+    [Keys.VERSIONAMIENTO_VERSIONAMIENTO, new Referencia('https://www.linkedin.com/posts/alexxubyte_systemdesign-coding-interviewtips-activity-7366133616688414722-wAeu/', 'Manejo de versiones', VERSIONAMIENTO_KEY, 'Versionamiento', '', '2025/08/27')
+        .addRelatedItems(Keys.APIS_API_GOVERNANCE, Keys.APIS_MADURITY, Keys.APIS_URI, Keys.APIS_REST_FULL)
+        .addMoreReferences('https://medium.com/@gaddamnaveen192/api-versioning-in-spring-boot-all-4-types-explained-with-examples-and-best-practices-9619e41d2b9e')
+    ],
     //['licencias', new Referencia('https://www.bbvaapimarket.com/es/mundo-api/las-5-licencias-de-software-libre-mas-importantes-que-todo-desarrollador-debe-conocer/', 'Tipos de licencias', VERSIONAMIENTO_KEY, 'Licencias')],
     [Keys.VERSIONAMIENTO_LICENSES, new Referencia('https://snyk.io/articles/open-source-licenses/', 'Tipos de licencias open source', VERSIONAMIENTO_KEY, 'Licencias Open Source', '', '2025/02/13')],
     [Keys.VERSIONAMIENTO_DOCUMENTATION, new Referencia('https://shopify.engineering/good-documentation-productivity', 'Documentación & Productividad', VERSIONAMIENTO_KEY, 'Documentacion')],
