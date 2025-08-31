@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AGILES } from 'src/app/models/content/content4';
+import { AGILES } from 'src/app/models/content/content7';
 import { AGILES_REF, LinkReferencia, METODOLOGIAS_KEY, USER_HISTORIES_KEY, LEYES_KEY, REQUISITOS_KEY, ANALISIS_KEY }
 from 'src/app/models/linkReferencia';
 import { PreviousAndNextSection } from 'src/app/models/models';

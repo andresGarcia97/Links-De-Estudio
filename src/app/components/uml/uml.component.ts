@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { UML } from 'src/app/models/content/content3';
-import { ANALISIS_KEY, GIT_KEY, LinkReferencia, REQUISITOS_KEY, TESTING_KEY, UML_REF, VERSIONAMIENTO_KEY } from 'src/app/models/linkReferencia';
+import { UML } from 'src/app/models/content/content7';
+import { ANALISIS_KEY, GIT_KEY, LinkReferencia, REQUISITOS_KEY, TESTING_KEY, UML_REF, VERSIONAMIENTO_KEY }
+from 'src/app/models/linkReferencia';
 import { PreviousAndNextSection } from 'src/app/models/models';
 
 @Component({

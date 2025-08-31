@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CONOCIMIENTOS_EMPIRICOS } from 'src/app/models/content/content5';
+import { CONOCIMIENTOS_EMPIRICOS } from 'src/app/models/content/content7';
 import { ANALISIS_KEY, CONOCIMIENTO_EMPIRICO, LEYES_KEY, LinkReferencia, PEOPLE_KEY, PRINCIPIOS_KEY, WEB_KEY }
 from 'src/app/models/linkReferencia';
 import { PreviousAndNextSection } from 'src/app/models/models';

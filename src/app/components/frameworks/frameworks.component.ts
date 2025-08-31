@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FRAMEWORKS } from 'src/app/models/content/content4';
+import { FRAMEWORKS } from 'src/app/models/content/content7';
 import { ANALISIS_KEY, ARQUITECTURAS_KEY, CALIDAD_KEY, COMPILACION_KEY, FRAMEWORKS_REF, LinkReferencia,
   PERSISTENCY_ADVANCED_KEY, PRINCIPIOS_KEY }
 from 'src/app/models/linkReferencia';

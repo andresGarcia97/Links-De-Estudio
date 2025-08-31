@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { WEB } from 'src/app/models/content/content1';
+import { WEB } from 'src/app/models/content/content7';
 import { BUENAS_PRACTICAS_KEY, CD_CI_KEY, CONOCIMIENTO_EMPIRICO_KEY, CONTENEDORES_KEY, FRAMEWORKS_KEY, LinkReferencia,
   NUBE_KEY, SECURITY_KEY, WEB_REF }
 from 'src/app/models/linkReferencia';

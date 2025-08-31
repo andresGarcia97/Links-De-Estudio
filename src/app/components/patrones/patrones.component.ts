@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PATRONES } from 'src/app/models/content/content5';
+import { PATRONES } from 'src/app/models/content/content7';
 import { ANALISIS_KEY, ARQUITECTURAS_KEY, ESTRATEGIAS_DESARROLLO_KEY, FRAMEWORKS_KEY, LinkReferencia, NUBE_KEY,
   PARADIGMAS_KEY, PATRONES_KEY, PATRONES_REF, PRINCIPIOS_KEY }
 from 'src/app/models/linkReferencia';

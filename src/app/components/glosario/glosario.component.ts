@@ -6,6 +6,7 @@ import { Content3 } from 'src/app/models/content/content3';
 import { Content4 } from 'src/app/models/content/content4';
 import { Content5 } from 'src/app/models/content/content5';
 import { Content6 } from 'src/app/models/content/content6';
+import { Content7 } from 'src/app/models/content/content7';
 import { LinkFuente } from 'src/app/models/linkFuente';
 import { LinkReferencia } from 'src/app/models/linkReferencia';
 import { Fuente, Referencia } from 'src/app/models/models';
@@ -26,7 +27,8 @@ export class GlosarioComponent implements OnInit, AfterViewChecked {
     .concat(new Content3().temas)
     .concat(new Content4().temas)
     .concat(new Content5().temas)
-    .concat(new Content6().temas);
+    .concat(new Content6().temas)
+    .concat(new Content7().temas);
 
   search = '';
 
