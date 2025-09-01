@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.PERSISTENCY_DATA_STRUCTURED_DATABASE_SYSTEM;
+export const LAST_ITEM = Keys.MICROSERVICES_PRODUCER_CONSUMER_IDEMPOTENCY;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -1009,6 +1009,10 @@ export const MICRO_SERVICES_REF = new Map<string, Referencia>([
     [Keys.MICROSERVICES_PATTERNS, new Referencia('https://blog.openreplay.com/7-microservice-design-patterns-to-use/', 'Patrones & Microservicios', MICRO_SERVICES_KEY, 'Patrones', '', '2025/01/19').addRelatedItem(Keys.ANALISIS_LIGHT_EVENTS_VS_RICH_EVENTS)],
     [Keys.MICROSERVICES_ANTI_PATTERNS, new Referencia('https://blog.bitsrc.io/10-microservice-anti-patterns-278bcb7f385d', 'Antipatrones & Microservicios', MICRO_SERVICES_KEY, 'Antipatrones', '2025/01/19').addRelatedItems(Keys.ANALISIS_SINGLE_POINT_OF_FAILURE, Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION, Keys.NUBE_OBSERVABILIDAD)],
     [Keys.MICROSERVICES_PRODUCER_CONSUMER_PROBLEM, new Referencia('https://www.baeldung.com/java-producer-consumer-problem', 'Problema Productor Consumidor', MICRO_SERVICES_KEY, 'Productor-Consumidor', '2025/02/15').addRelatedItems(Keys.ANALISIS_QUEUES_SYSTEM_DESIGN, Keys.META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM, Keys.META_CARACTERISTICAS_PROCESS_AND_THREADS)],
+    [Keys.MICROSERVICES_PRODUCER_CONSUMER_IDEMPOTENCY, new Referencia('https://microservices.io/post/microservices/patterns/2020/10/16/idempotent-consumer.html', 'Idempotencia & Duplicacion de Eventos', MICRO_SERVICES_KEY, 'Idempotencia', '2025/09/01')
+        .addRelatedItems(Keys.ANALISIS_QUEUES_SYSTEM_DESIGN, Keys.ANALISIS_DELIVERY_GUARANTED, Keys.ANALISIS_LIGHT_EVENTS_VS_RICH_EVENTS, Keys.PATRONES_OUTBOX, Keys.ANALISIS_DATA_CHANGE_DATA_CAPTURE, Keys.PERSISTENCY_ADVANCED_NO_SQL_TYPES, Keys.META_CARACTERISTICAS_CACHE, Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.ANALISIS_COMMON_METRICS, Keys.ANALISIS_DATA_DEDUPLICATION, Keys.PERSISTENCY_INDICES, Keys.APIS_IDEMPOTENCIA)
+        .addMoreReferences('https://nejckorasa.github.io/posts/idempotent-kafka-procesing/', 'https://medium.com/@zdb.dashti/exactly-once-semantics-using-the-idempotent-consumer-pattern-927b2595f231', 'https://www.rabbitmq.com/docs/confirms')
+    ],
     [Keys.MICROSERVICES_CACHE_FAILS, new Referencia('https://www.linkedin.com/posts/bytebytego_systemdesign-coding-interviewtips-activity-7296767687978827776-Dizz/', 'Fallos del cache', MICRO_SERVICES_KEY, 'Fallos del cache', '2025/02/22').addRelatedItems(Keys.META_CARACTERISTICAS_CACHE, Keys.PERSISTENCY_ADVANCED_SCALING_DB)],
     [Keys.MICROSERVICES_DISTRIBUTED_TRACING, new Referencia('https://www.dynatrace.com/news/blog/what-is-distributed-tracing/', 'Tracing Distribuido', MICRO_SERVICES_KEY, 'Tracing Distribuido', '2025/02/23').addRelatedItems(Keys.NUBE_OBSERVABILIDAD, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.BUENAS_PRACTICAS_DEBUGGING, Keys.BUENAS_PRACTICAS_LOGGING)],
     [Keys.MICROSERVICES_DEAD_LETTER_QUEUE, new Referencia('https://www.geeksforgeeks.org/dead-letter-queue-system-design/', 'Dead Letter Queue - DLQ & DLT', MICRO_SERVICES_KEY, 'Dead Letter Queue', '2025/02/26').addRelatedItem(Keys.ANALISIS_QUEUES_SYSTEM_DESIGN)],
