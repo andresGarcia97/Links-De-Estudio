@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { CD_CI_INFRAESTRUCTURE } from 'src/app/models/content/content3';
 import {
-  ANALISIS_DATA_KEY, APIS_KEY, CD_CI_REF, CONTENEDORES_KEY, HARDWARE_KEY, LinkReferencia, NUBE_KEY, VERSIONAMIENTO_KEY, WEB_KEY }
+  ANALISIS_DATA_KEY, APIS_KEY, CD_CI_REF, CONTENEDORES_KEY, HARDWARE_KEY, LinkReferencia, MICRO_SERVICES_KEY, NUBE_KEY,
+  VERSIONAMIENTO_KEY, WEB_KEY }
 from 'src/app/models/linkReferencia';
 import { PreviousAndNextSection } from 'src/app/models/models';
 
@@ -26,8 +27,9 @@ export class CDCIComponent implements OnInit {
   ngOnInit(): void {
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
-    this.relatedSections.set(VERSIONAMIENTO_KEY, routes.get(VERSIONAMIENTO_KEY)!)
-    this.relatedSections.set(CONTENEDORES_KEY,   routes.get(CONTENEDORES_KEY)!)
+    this.relatedSections.set(VERSIONAMIENTO_KEY, routes.get(VERSIONAMIENTO_KEY)!);
+    this.relatedSections.set(MICRO_SERVICES_KEY, routes.get(MICRO_SERVICES_KEY)!);
+    this.relatedSections.set(CONTENEDORES_KEY,   routes.get(CONTENEDORES_KEY)!);
     this.relatedSections.set(HARDWARE_KEY,       routes.get(HARDWARE_KEY)!);
     this.relatedSections.set(NUBE_KEY,           routes.get(NUBE_KEY)!);
     this.relatedSections.set(APIS_KEY,           routes.get(APIS_KEY)!);

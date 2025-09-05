@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.MICROSERVICES_PRODUCER_CONSUMER_IDEMPOTENCY;
+export const LAST_ITEM = Keys.CD_CI_INFRAESTRUCTURE_DESIGN;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -875,7 +875,7 @@ export const PERSISTENCY_ADVANCED_REF = new Map<string, Referencia>([
         .addMoreReferences('https://medium.com/@himanshusingour7/why-scaling-a-database-is-harder-than-scaling-a-server-9f83779c2deb')
     ],
     [Keys.PERSISTENCY_ADVANCED_WAL, new Referencia('https://medium.com/@vinciabhinav7/write-ahead-logs-but-why-494c3efd722d', 'Registros de escritura anticipada (WAL)', PERSISTENCY_ADVANCED_KEY, 'WAL', '2024/06/15').addRelatedItems(Keys.META_CARACTERISTICAS_META_DATOS, Keys.PERSISTENCY_DBMS)],
-    [Keys.PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS, new Referencia('https://rakyll.medium.com/things-i-wished-more-developers-knew-about-databases-2d0178464f78', 'Problemas desconocidos', PERSISTENCY_ADVANCED_KEY, 'Problemas desconocidos', '2024/10/06').addRelatedItem(Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS)],
+    [Keys.PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS, new Referencia('https://rakyll.medium.com/things-i-wished-more-developers-knew-about-databases-2d0178464f78', 'Problemas desconocidos de una BD', PERSISTENCY_ADVANCED_KEY, 'Problemas desconocidos', '2024/10/06').addRelatedItem(Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS)],
     [Keys.PERSISTENCY_ADVANCED_PARTITIONING, new Referencia('https://medium.com/@imnazimuddinasif/a-practical-overview-of-database-partitioning-59e8e318142b', 'Particiones', PERSISTENCY_ADVANCED_KEY, 'Particiones', '2024/10/07')],
     [Keys.PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL, new Referencia('https://newsletter.systemdesigncodex.com/p/eventual-consistency-is-tricky', 'Consistencia Eventual', PERSISTENCY_ADVANCED_KEY, 'Consistencia Eventual', '2024/10/27')],
     [Keys.PERSISTENCY_ADVANCED_DENORMALIZATION, new Referencia('https://dgraph.io/blog/post/denormalize-database/', 'Desnormalización', PERSISTENCY_ADVANCED_KEY, 'Desnormalización', '2025/02/05').addRelatedItem(Keys.PERSISTENCY_NORMALIZATION)],
@@ -995,6 +995,10 @@ export const CD_CI_REF = new Map<string, Referencia>([
     [Keys.CD_CI_FAILOVER, new Referencia('https://stackoverflow.blog/2020/10/23/adrian-cockcroft-aws-failover-chaos-engineering-fault-tolerance-distaster-recovery/', 'Failover & Ingenieria del caos', CD_CI_KEY, 'Failover, Caos, Resiliencia', '2025/04/06').addRelatedItems(Keys.NUBE_SRE, Keys.ANALISIS_SINGLE_POINT_OF_FAILURE, Keys.NUBE_DISPONIBILITY)],
     [Keys.CD_CI_MONITORING, new Referencia('https://www.squadcast.com/blog/comparing-uptime-monitoring-heartbeat-monitoring-and-synthetic-monitoring', 'Monitoreo de un sistema', CD_CI_KEY, 'Monitoreo', '2025/05/01').addRelatedItems(Keys.NUBE_DISPONIBILITY, Keys.NUBE_SRE, Keys.NUBE_LOAD_BALANCING, Keys.HARDWARE_ESCALAMIENTO, Keys.WEB_GOLDEN_SIGNALS, Keys.MICROSERVICES_DISTRIBUTED_TRANSACTIONS)],
     [Keys.CD_CI_DEPLOYMENT_ARQUITECTURE, new Referencia('https://medium.com/nerd-for-tech/software-deployment-as-architecture-648867bdb77c', 'Implementación como Arquitectura', CD_CI_KEY, 'Deploy & Arquitectura', '2025/06/12').addRelatedItems(Keys.ARQUITECTURAS_DESCOMPOSICION_MODULAR, Keys.ARQUITECTURAS_MONOLITOS, Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES, Keys.VERSIONAMIENTO_VERSIONAMIENTO, Keys.APIS_REST_VS_MESSAGING, Keys.ANALISIS_BOUNDED_CONTEXT, Keys.MICROSERVICES_ARQUITECTURAS, Keys.CONTENEDORES_ORCHESTRATION, Keys.NUBE_NATIVE, Keys.MALAS_PRACTICAS_DEATH_BY_MICROSERVICES)],
+    [Keys.CD_CI_INFRAESTRUCTURE_DESIGN, new Referencia('https://medium.com/@osomudeyazudonu/10-infrastructure-design-choices-that-will-haunt-you-in-production-31c1c83fb2a3', 'Diseño & infraestructura', CD_CI_KEY, 'Diseño & infraestructura', '2025/09/02')
+        .addRelatedItems(Keys.TESTING_ADVANCED_ENVIRONMENT, Keys.ANALISIS_SYSTEM_THINKING_II, Keys.ANALISIS_SINGLE_POINT_OF_FAILURE, Keys.APIS_API_FIRST, Keys.MICROSERVICES_PROBLEMS, Keys.LEYES_MURPHY, Keys.SECURITY_LEAST_PRIVILEGE, Keys.PATRONES_DYSTRIBUTED_SYSTEMS, Keys.CALIDAD_CODE_REVIEWS, Keys.HARDWARE_ESCALAMIENTO, Keys.NUBE_DISPONIBILITY, Keys.MICROSERVICES_DISTRIBUTED_TRACING)
+        .addMoreReferences('https://www.enterspeed.com/insights/it-infrastructure-design-building-a-scalable-and-secure-foundation')
+    ],
 ]);
 
 export const MICRO_SERVICES_KEY = 'Microservicios';
