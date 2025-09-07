@@ -496,6 +496,7 @@ export const CD_CI_FAILOVER = 'failover-chaos-engineering-fault-tolerance-disast
 export const CD_CI_MONITORING = 'monitoring';
 export const CD_CI_DEPLOYMENT_ARQUITECTURE = 'deploymentArquitecture';
 export const CD_CI_INFRAESTRUCTURE_DESIGN = 'infraestructureDesign';
+export const CD_CI_RPO_RTO = 'RPO-RTO';
 export const WEB_SEO = 'seo';
 export const WEB_SPACE = 'negativeSpace';
 export const WEB_USER_INTERFACE = 'userInterface-UI';

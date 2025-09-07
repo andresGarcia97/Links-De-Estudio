@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.CD_CI_INFRAESTRUCTURE_DESIGN;
+export const LAST_ITEM = Keys.CD_CI_RPO_RTO;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -1000,6 +1000,7 @@ export const CD_CI_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.TESTING_ADVANCED_ENVIRONMENT, Keys.ANALISIS_SYSTEM_THINKING_II, Keys.ANALISIS_SINGLE_POINT_OF_FAILURE, Keys.APIS_API_FIRST, Keys.MICROSERVICES_PROBLEMS, Keys.LEYES_MURPHY, Keys.SECURITY_LEAST_PRIVILEGE, Keys.PATRONES_DYSTRIBUTED_SYSTEMS, Keys.CALIDAD_CODE_REVIEWS, Keys.HARDWARE_ESCALAMIENTO, Keys.NUBE_DISPONIBILITY, Keys.MICROSERVICES_DISTRIBUTED_TRACING)
         .addMoreReferences('https://www.enterspeed.com/insights/it-infrastructure-design-building-a-scalable-and-secure-foundation')
     ],
+    [Keys.CD_CI_RPO_RTO, new Referencia('https://www.acronis.com/es/blog/posts/rto-rpo/', 'RPO & RTO', CD_CI_KEY, 'RPO & RTO', '2025/09/05')],
 ]);
 
 export const MICRO_SERVICES_KEY = 'Microservicios';
