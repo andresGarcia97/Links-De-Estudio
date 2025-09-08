@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.CD_CI_RPO_RTO;
+export const LAST_ITEM = Keys.META_ESTRUCTURAS_QUEUES;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -444,6 +444,7 @@ export const META_ESTRUCTURAS_REF = new Map<string, Referencia>([
     [Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION, new Referencia('https://www.baeldung.com/cs/serialization-deserialization', 'Serialización y Deserialización', META_ESTRUCTURAS_KEY, 'Serializar & Deserializar', '2023/05/31')],
     [Keys.META_ESTRUCTURAS_DEPRECATION, new Referencia('https://digma.ai/deprecated-methods-in-java/', 'Deprecated (Obsolencia)', META_ESTRUCTURAS_KEY, 'Deprecated (Obsolencia)', '2024/06/15').addRelatedItems(Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES, Keys.REFACTORING_LEGACY_CODE)],
     [Keys.META_ESTRUCTURAS_LOGS, new Referencia('https://betterstack.com/community/guides/logging/log-levels-explained/', 'Logs', META_ESTRUCTURAS_KEY, 'Logs', '2025/01/29', '2025/02/02').addRelatedItems(Keys.NUBE_OBSERVABILIDAD, Keys.BUENAS_PRACTICAS_LOGGING, Keys.PEOPLE_NO_NEWS_GOOD_NEWS)],
+    [Keys.META_ESTRUCTURAS_QUEUES, new Referencia('https://github.com/joelparkerhenderson/queueing-theory', 'Teoria de Colas', META_ESTRUCTURAS_KEY, 'Teoria de Colas', '2025/09/07').addRelatedItems(Keys.LEYES_LITTLE, Keys.ANALISIS_QUEUES_SYSTEM_DESIGN)],
 ]);
 
 export const METODOLOGIAS_KEY = 'Metodologias';

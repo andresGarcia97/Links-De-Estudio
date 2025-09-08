@@ -1097,6 +1097,27 @@ export const META_ESTRUCTURAS =
                 '<strong>Alertas:</strong> Pueden activar mecanismos de alerta y notificación para abordar eventos criticos de formas proactiva, ',
                 ' - por ejemplo enviar correos a soporte cuando se detecten multiples errores en un intervalo corto de tiempo ',
                 '<strong>Calculo de metricas:</strong> Ayudan al analisis del comportamiento de la aplicación en ausencia de herramientas más especializadas ',
+            ]),
+        new Item(Keys.META_ESTRUCTURAS_QUEUES,
+            [
+                '- La teoria de colas es el estudio matematico de las colas, usado para analizar y optimizar practicas de procesos como: ',
+                '&bull; Capacidad de respuesta de servicio al cliente ',
+                '&bull; La planificación Kanban de la gestión de proyectos ',
+                '&bull; Colas de mensajes y comunicación entre procesos ',
+                '&bull; Pipelines de implementación de DevOps ',
+                '',
+                '<strong>Tipos:</strong> Describen como la cola elige que elementos procesar ',
+                '&bull; Primero en entrar, Primero en salir(FIFO): Procesar el elemento más antiguo ',
+                '&bull; Ultimo en entrar, Primero en salir(LIFO): Procesar el elemento más reciente ',
+                '&bull; Priorización: Los elementos se pueden escoger unos sobre otros de acuerdo al nivel o caracteristica que se defina ',
+                '&bull; Tiempo compartido: Procesar a todos al mismo tiempo, la capacidad se distribuye equitativamente entre todos los que esperan ',
+                '',
+                '<strong>Tasa de utilización ρ = λ / μ</strong>',
+                '&bull; λ Mide la velocidad con la que llegan nuevos artículos a la cola ',
+                '&bull; μ Mide la velocidad con la que se procesan los elementos en la cola ',
+                '&bull; ρ = 1 La tasa de llegada es igual a la tasa de servicio; la cola permanece del mismo tamaño ',
+                '&bull; ρ > 1 La tasa de llegada es mayor que la tasa de servicio; la cola se está haciendo más grande ',
+                '&bull; ρ < 1 La tasa de llegada es menor que la tasa de servicio; la cola se está haciendo más pequeña ',
             ])
     ];
 

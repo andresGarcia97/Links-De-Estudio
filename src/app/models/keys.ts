@@ -14,6 +14,7 @@ export const META_ESTRUCTURAS_DYNAMIC_PROGAMING = 'dynamicProgramming';
 export const META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION = 'serializationDeserialization';
 export const META_ESTRUCTURAS_DEPRECATION = 'deprecation';
 export const META_ESTRUCTURAS_LOGS = 'logs';
+export const META_ESTRUCTURAS_QUEUES = 'queue-theory';
 export const FRAMEWORKS_FRAMEWORKS = 'frameworks';
 export const FRAMEWORKS_CASE = 'case';
 export const FRAMEWORKS_IOC = 'ioc';
