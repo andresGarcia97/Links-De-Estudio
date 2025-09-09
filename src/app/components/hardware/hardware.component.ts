@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HARDWARE } from 'src/app/models/content/content1';
-import { CD_CI_KEY, COMPILACION_KEY, HARDWARE_REF, LinkReferencia, META_ESTRUCTURAS_KEY, NUBE_KEY }
+import { CD_CI_KEY, COMPILACION_KEY, HARDWARE_REF, LEYES_KEY, LinkReferencia, META_ESTRUCTURAS_KEY, NUBE_KEY }
 from 'src/app/models/linkReferencia';
 import { PreviousAndNextSection } from 'src/app/models/models';
 
@@ -27,6 +27,7 @@ export class HardwareComponent implements OnInit {
     const routes = new LinkReferencia().routesAndSections;
     this.relatedSections.set(COMPILACION_KEY, routes.get(COMPILACION_KEY)!);
     this.relatedSections.set(CD_CI_KEY,       routes.get(CD_CI_KEY)!);
+    this.relatedSections.set(LEYES_KEY,       routes.get(LEYES_KEY)!);
     this.relatedSections.set(NUBE_KEY,        routes.get(NUBE_KEY)!);
     this.previousAndNextSection = new PreviousAndNextSection(
       META_ESTRUCTURAS_KEY, routes.get(META_ESTRUCTURAS_KEY)!,

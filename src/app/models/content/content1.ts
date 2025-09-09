@@ -15,7 +15,7 @@ export class Content1 {
 
 export const HARDWARE =
     [
-        new Item('virtualizacion',
+        new Item(Keys.HARDWARE_VIRTUALIZACION,
             [
                 '- Es un entorno virtual que funciona con su propia CPU, memoria, red, y almacenamiento, que se crea dentro de un sistema de hardware fisico ',
                 '- Esto se da mediante un software llamado <em>hipervisor</em> encargado de separar y gestionar los recursos reales para que la VM pueda gestionarlos ',
@@ -27,7 +27,7 @@ export const HARDWARE =
                 '- Dado su aislamiento se puede ejecutar software que no es de confianza sin peligro de que dañe al host ',
                 '- Ofrecen más formas de recuperación ante desastres, ante desastres permiten permiten la tolerancia a fallos y la redundancia '
             ]),
-        new Item('cli',
+        new Item(Keys.HARDWARE_CLI,
             [
                 '- Es una interfaz de usuario basada en texto ',
                 '- Antes de la invención del mouse, la unica interacción posible con el Sistema Operativo era mediantes comandos ',
@@ -51,7 +51,7 @@ export const HARDWARE =
                 '- Soporta el balanceo de cargas y tiene una disponibilidad muy alta, además de que se puede combinar con un escalamiento vertical',
                 '- El mantenimiento se incrementa considerablemente, además de que se requieren cambios en el software para poder trabajar como un conjunto'
             ]),
-        new Item('nubeVSvirtualizacion',
+        new Item(Keys.HARDWARE_NUBE_VS_VIRTUALIZACION,
             [
                 '- Ambos conceptos hacen referencia a la creación de entornos utiles a partir de recursos abstractos, bajo diferentes conceptos ',
                 '- La virtualización nos permite esto teniendo recursos especificos y de manera fisica ',
@@ -72,7 +72,7 @@ export const HARDWARE =
                 '',
                 '- Escalabilidad               vertical                    horizontal                  ',
             ]),
-        new Item('rendering',
+        new Item(Keys.HARDWARE_RENDERING,
             [
                 '<strong>Server-side:</strong> Esta funciona convirtiendo archivos estaticos HTML en información utilizable por el navegador ',
                 '- Este proceso no cuenta con un modo de cache, por lo que cada vez que se necesite, este sera pedido al servidor ',
@@ -133,7 +133,7 @@ export const HARDWARE =
                 '         - Pueden ser infectadas por el host                   - No esta 100% estandarizado, entre provedores                          ',
                 '                                                               - Las aplicaciones graficas no funcionan bien                           ',
             ]),
-        new Item('falseSharing',
+        new Item(Keys.HARDWARE_FALSE_SHARING,
             [
                 '- Suele suceder cuando varias aplicaciones intentan acceder a la misma region de memoria logica y ',
                 ' - cada programa/subprograma a su vez ha almacenado un copia de este valor, en su propio cache',
@@ -294,6 +294,23 @@ export const HARDWARE =
                 '<strong>Rated-4: Fault Tolerant Site Infrastructure</strong> -> Protegido contra casi todos los eventos físicos',
                 '&bull; Se puede realizar el mantenimiento sin interrupciones. Si se produce un fallo en la infraestructura, el data center puede seguir funcionando ',
                 '&bull; <strong>Recomendado para:</strong> Data centers con componentes redundantes y múltiples rutas de distribución independientes ',
+            ]),
+        new Item(Keys.HARDWARE_LAWS_SCALABILITY,
+            [
+                '- Los sistemas crecen y entre más crecen, más problemas pueden presentar para satisfacer las necesidades de los clientes ',
+                '- Por eso se suelen considerar una serie de condiciones a la hora de ejecutar, que modelan el crecimiento de los sistemas y las personas involucradas ',
+                '',
+                '<strong>Ley de Amdahl:</strong> Predice la velocidad de una tarea cuando se escala a ejecutarse en multiples procesadores ',
+                '<strong>Ley de Brooks’s:</strong> Establece que agregar personas a un proyecto ya retrasado, solamente lo atrasara más ',
+                '<strong>Ley de escalabilidad universal:</strong> Describe la capacidad relativa de un sistema, en terminos de concurrencia, contención y coherencia ',
+                '<strong>Ley de Little:</strong> Permite calcular el numero de elementos en una cola para elementos estables, como parte esencial de la teoria de colas ',
+                '<strong>Formula del rey:</strong> Amplia la ley de Little añadiendo utilización y variables para predecir el tiempo de espera ',
+                '<strong>Ley de Gustafson’s:</strong> Complementa la ley de Amdahl con la observación de que la computación paralela permite resolver problemas más grandes ',
+                '<strong>Ley de Conway:</strong> Toda organización que diseña un sistema producira un diseño cuya estructura es una copia de la comunicación de la organización ',
+                '<strong>Principio de Pareto:</strong> Establece que para muchos casos aproximadamente el 80% de los resultados provienen del 20% del esfuerzo ',
+                '<strong>Ley de Metcalfe’s:</strong> El valor de una red crece de forma proporcional con sus usuarios (N<sup>2</sup>), dado el aumento exponencial de las conexiones posibles ',
+                '<strong>Leys de Wirth & Moore:</strong> El software y el hardware van de la mano, mientras que el hardware se acelera el software se vuelve lento y complejo ',
+                '<strong>Ley de Parkinson & Hofstadter’s:</strong> Es la tendencia natural a que los proyectos sean más complejos y demorados, que las estimaciones iniciales ',
             ])
     ];
 
