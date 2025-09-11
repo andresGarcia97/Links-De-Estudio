@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.HARDWARE_LAWS_SCALABILITY;
+export const LAST_ITEM = Keys.TESTING_INTEGRATION;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -301,7 +301,7 @@ export const ESTRATEGIAS_DESARROLLO_REF = new Map<string, Referencia>([
     [Keys.ESTRATEGIAS_DESARROLLO_TDD, new Referencia('https://www.paradigmadigital.com/dev/tdd-como-metodologia-de-diseno-de-software/', 'Desarrollo Dirigido por Tests', ESTRATEGIAS_DESARROLLO_KEY, 'TDD')],
     [Keys.ESTRATEGIAS_DESARROLLO_ATDD, new Referencia('https://www.javiergarzas.com/2015/07/que-es-eso-de-atdd.html', 'Desarrollo por pruebas de aceptación', ESTRATEGIAS_DESARROLLO_KEY, 'ATDD')],
     //['analisis', new Referencia('https://www.ubjonline.mx/en-que-consisten-los-analisis-top-down-y-bottom-up/', 'Bottom Up & Top Down', ESTRATEGIAS_DESARROLLO_KEY, 'Enfoques')],
-    [Keys.ESTRATEGIAS_DESARROLLO_BOTTOM_UP_AND_TOP_DOWN, new Referencia('https://asana.com/es/resources/top-down-approach', 'Bottom Up & Top Down', ESTRATEGIAS_DESARROLLO_KEY, 'Enfoques', '', '2025/02/02')],
+    [Keys.ESTRATEGIAS_DESARROLLO_BOTTOM_UP_AND_TOP_DOWN, new Referencia('https://asana.com/es/resources/top-down-approach', 'Bottom Up & Top Down', ESTRATEGIAS_DESARROLLO_KEY, 'Enfoques Up & Down', '', '2025/02/02')],
     [Keys.ESTRATEGIAS_DESARROLLO_TLD_TDD, new Referencia('https://medium.com/swlh/tdd-vs-tld-and-what-is-the-minimum-code-coverage-needed-f380181d3400', 'Tests al final del desarrollo', ESTRATEGIAS_DESARROLLO_KEY, 'TLD vs TDD', '', '2025/02/02')],
     [Keys.ESTRATEGIAS_DESARROLLO_BDUF, new Referencia('https://www.freecodecamp.org/news/the-pros-and-cons-of-big-design-up-front-and-what-i-do-instead-375f00542dec/', 'Big Design Up Front', ESTRATEGIAS_DESARROLLO_KEY, 'BDUF', '', '2025/06/30').addRelatedItem(Keys.METODOLOGIAS_CASCADA)],
     [Keys.ESTRATEGIAS_DESARROLLO_SCREAMING_DESIGN, new Referencia('https://medium.com/@mubashirhussain29/the-screaming-architecture-story-08750691291f', 'Diseño a gritos', ESTRATEGIAS_DESARROLLO_KEY, 'Gritos', '2024/05/25').addRelatedItem(Keys.META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL)],
@@ -680,6 +680,7 @@ export const TESTING_REF = new Map<string, Referencia>([
     [Keys.TESTING_DATA_CREATION, new Referencia('https://www.linkedin.com/pulse/creating-test-data-object-mother-builder-patterns-alves-pimenta/', 'Patrones de creación de datos', TESTING_KEY, 'Creación de datos', '2024/07/11')],
     [Keys.TESTING_FIVE_FACTORS, new Referencia('https://madeintandem.com/blog/five-factor-testing/', 'Five Factor Testing', TESTING_KEY, 'Five Factor Testing', '2025/03/02').addRelatedItems(Keys.VERSIONAMIENTO_DOCUMENTATION, Keys.ANALISIS_OPINIONATED_NO, Keys.REFACTORING_LEGACY_CODE)],
     [Keys.TESTING_BUG, new Referencia('https://testgrid.io/blog/bug-life-cycle/', 'Ciclo de vida de un Error(Bug)', TESTING_KEY, 'Bugs', '2025/04/23').addRelatedItems(Keys.BUENAS_PRACTICAS_DEBUGGING, Keys.BUENAS_PRACTICAS_LOGGING, Keys.PEOPLE_CAPA_8, Keys.COMPILACION_ERRORS_AND_EXCEPTIONS)],
+    [Keys.TESTING_INTEGRATION, new Referencia('https://qalified.com/es/blog/pruebas-de-integracion-que-son/', 'Pruebas de Integración', TESTING_KEY, 'Integracion', '2025/09/10').addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_BOTTOM_UP_AND_TOP_DOWN, Keys.PATRONES_FOR_INTEGRATION, Keys.POO_COUPLING_AND_COHESION, Keys.METODOLOGIAS_MODEL_BING_BANG, Keys.CD_CI_RULES)],
     [Keys.TESTING_CONTRACT_TESTING, new Referencia('https://www.paradigmadigital.com/dev/patrones-arquitectura-microservicios-consumer-driven-contract-testing/', 'Contract Testing', TESTING_KEY, 'Contract Testing', '2025/08/19')
         .addRelatedItems(Keys.POO_DESIGN_BY_CONTRACT, Keys.PATRONES_FOR_INTEGRATION, Keys.MICROSERVICES_EVENTS_VS_REQUEST_RESPONSE, Keys.ANALISIS_DOMAIN_EVENTS, Keys.APIS_API_FIRST_VS_CODE_FIRST, Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION, Keys.CD_CI_DEPLOYMENT_PIPELINES, Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES)
         .addMoreReferences('https://medium.com/@chinthakadd/contract-testing-for-event-driven-architectures-can-we-do-we-and-how-do-we-177c8e9acfc7')
@@ -996,7 +997,7 @@ export const CD_CI_REF = new Map<string, Referencia>([
     [Keys.CD_CI_INDUSTRIAL_DEV_OPS, new Referencia('https://itrevolution.com/articles/what-is-industrial-devops/', 'Industrial DevOps', CD_CI_KEY, 'Industrial DevOps', '2023/11/21')],
     [Keys.CD_CI_DEPLOYMENT_PIPELINES, new Referencia('https://semaphoreci.com/blog/cicd-pipeline', 'Pipelines', CD_CI_KEY, '¿ Que es un Pipeline ?', '2023/12/26', '2025/05/04').addRelatedItem(Keys.CONTENEDORES_ORCHESTRATION)],
     [Keys.CD_CI_CELL_BASED_ARQUITECTURE, new Referencia('https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of-impact-with-cell-based-architecture/what-is-a-cell-based-architecture.html', 'Cell Based Arquitecture', CD_CI_KEY, 'Cell Based Arquitecture', '2024/08/25')],
-    [Keys.CD_CI_RULES, new Referencia('https://semaphoreci.com/blog/rules-ci-pipeline', 'Rules', CD_CI_KEY, 'Rules', '2024/12/26').addRelatedItems(Keys.GIT_BRANCHS, Keys.CALIDAD_LINTING, Keys.TESTING_PIRAMIDE, Keys.CONTENEDORES_DOCKER)],
+    [Keys.CD_CI_RULES, new Referencia('https://semaphoreci.com/blog/rules-ci-pipeline', 'Reglas de un Pipeline', CD_CI_KEY, 'Pipelines Rules', '2024/12/26').addRelatedItems(Keys.GIT_BRANCHS, Keys.CALIDAD_LINTING, Keys.TESTING_PIRAMIDE, Keys.CONTENEDORES_DOCKER)],
     [Keys.CD_CI_FAILOVER, new Referencia('https://stackoverflow.blog/2020/10/23/adrian-cockcroft-aws-failover-chaos-engineering-fault-tolerance-distaster-recovery/', 'Failover & Ingenieria del caos', CD_CI_KEY, 'Failover, Caos, Resiliencia', '2025/04/06').addRelatedItems(Keys.NUBE_SRE, Keys.ANALISIS_SINGLE_POINT_OF_FAILURE, Keys.NUBE_DISPONIBILITY)],
     [Keys.CD_CI_MONITORING, new Referencia('https://www.squadcast.com/blog/comparing-uptime-monitoring-heartbeat-monitoring-and-synthetic-monitoring', 'Monitoreo de un sistema', CD_CI_KEY, 'Monitoreo', '2025/05/01').addRelatedItems(Keys.NUBE_DISPONIBILITY, Keys.NUBE_SRE, Keys.NUBE_LOAD_BALANCING, Keys.HARDWARE_ESCALAMIENTO, Keys.WEB_GOLDEN_SIGNALS, Keys.MICROSERVICES_DISTRIBUTED_TRANSACTIONS)],
     [Keys.CD_CI_DEPLOYMENT_ARQUITECTURE, new Referencia('https://medium.com/nerd-for-tech/software-deployment-as-architecture-648867bdb77c', 'Implementación como Arquitectura', CD_CI_KEY, 'Deploy & Arquitectura', '2025/06/12').addRelatedItems(Keys.ARQUITECTURAS_DESCOMPOSICION_MODULAR, Keys.ARQUITECTURAS_MONOLITOS, Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES, Keys.VERSIONAMIENTO_VERSIONAMIENTO, Keys.APIS_REST_VS_MESSAGING, Keys.ANALISIS_BOUNDED_CONTEXT, Keys.MICROSERVICES_ARQUITECTURAS, Keys.CONTENEDORES_ORCHESTRATION, Keys.NUBE_NATIVE, Keys.MALAS_PRACTICAS_DEATH_BY_MICROSERVICES)],
