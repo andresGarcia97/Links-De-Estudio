@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ANALISIS_DATA } from 'src/app/models/content/content1';
 import { 
-  META_CARACTERISTICAS_KEY, LinkReferencia, ANALISIS_DATA_REF, ANALISIS_KEY, CD_CI_KEY, CONOCIMIENTO_EMPIRICO_KEY,
+  META_CARACTERISTICAS_KEY, LinkReferencia, ANALISIS_DATA_REF, ANALISIS_KEY, CI_CD_KEY, CONOCIMIENTO_EMPIRICO_KEY,
   PERSISTENCY_KEY, PATRONES_KEY, NEURO_MARKETING_KEY
 } from 'src/app/models/linkReferencia';
 import { PreviousAndNextSection } from 'src/app/models/models';
@@ -32,9 +32,9 @@ export class AnalisisDatosComponent implements OnInit {
     this.relatedSections.set(PERSISTENCY_KEY,           routes.get(PERSISTENCY_KEY)!);
     this.relatedSections.set(ANALISIS_KEY,              routes.get(ANALISIS_KEY)!);
     this.relatedSections.set(PATRONES_KEY,              routes.get(PATRONES_KEY)!);
-    this.relatedSections.set(CD_CI_KEY,                 routes.get(CD_CI_KEY)!);
+    this.relatedSections.set(CI_CD_KEY,                 routes.get(CI_CD_KEY)!);
     this.previousAndNextSection = new PreviousAndNextSection(
-      CD_CI_KEY,           routes.get(CD_CI_KEY)!,
+      CI_CD_KEY,           routes.get(CI_CD_KEY)!,
       NEURO_MARKETING_KEY, routes.get(NEURO_MARKETING_KEY)!
     );
   }

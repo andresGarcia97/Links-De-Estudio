@@ -819,7 +819,7 @@ export const META_CARACTERISTICAS =
                 '- Generalmente se modifican los archivos de configuración o se cambian las variables del entorno ',
                 '- De esta manera es posible <em>apagar</em> funcionalidades sin tener que pasar nuevamente por procesos de revisión o implementación ',
                 '',
-                '<strong>CD/CI:</strong> El ciclo de entrega continua se beneficia, ya que permite la unión de funcionalidades incompletas sin afectar producción ',
+                '<strong>CI/CD:</strong> El ciclo de entrega continua se beneficia, ya que permite la unión de funcionalidades incompletas sin afectar producción ',
                 '- Los mecanismos para <em>activar/desactivar</em> estan implicitos con cada feature flag ',
                 '',
                 '<strong>Ciclo de vida:</strong>',

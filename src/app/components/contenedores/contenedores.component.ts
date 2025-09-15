@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CONTENEDORES } from 'src/app/models/content/content4';
-import { CD_CI_KEY, CONTAINERS, GIT_KEY, HARDWARE_KEY, LinkReferencia, NUBE_KEY, SECURITY_KEY, WEB_KEY }
+import { CI_CD_KEY, CONTAINERS, GIT_KEY, HARDWARE_KEY, LinkReferencia, NUBE_KEY, SECURITY_KEY, WEB_KEY }
 from 'src/app/models/linkReferencia';
 import { PreviousAndNextSection } from 'src/app/models/models';
 
@@ -27,7 +27,7 @@ export class ContenedoresComponent implements OnInit {
     const routes = new LinkReferencia().routesAndSections;
     this.relatedSections.set(SECURITY_KEY, routes.get(SECURITY_KEY)!);
     this.relatedSections.set(HARDWARE_KEY, routes.get(HARDWARE_KEY)!);
-    this.relatedSections.set(CD_CI_KEY,    routes.get(CD_CI_KEY)!);
+    this.relatedSections.set(CI_CD_KEY,    routes.get(CI_CD_KEY)!);
     this.relatedSections.set(NUBE_KEY,     routes.get(NUBE_KEY)!);
     this.previousAndNextSection = new PreviousAndNextSection(
       GIT_KEY, routes.get(GIT_KEY)!,

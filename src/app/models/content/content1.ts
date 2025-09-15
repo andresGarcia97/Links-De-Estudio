@@ -124,7 +124,7 @@ export const HARDWARE =
                 '                    <strong>Virtualización</strong>                                        <strong>Contenedores</strong>               ',
                 '         - Reduce los costos asociados al hardware             - Requieren menos recursos y son más livianos                           ',
                 '           al utilizar recursos desperdiciados                 - Más eficientes y escalables                                           ',
-                '<strong>Pros</strong>     - Aislamiento de las aplicaciones                     - Son más congruentes y simplifican el CD/CI           ',
+                '<strong>Pros</strong>     - Aislamiento de las aplicaciones                     - Son más congruentes y simplifican el CI/CD           ',
                 '         - Menos espacio en equipos fisicos                    - Son más portatiles e interoperables                                   ',
                 '                                                                                                                                       ',
                 '                                                                                                                                       ',

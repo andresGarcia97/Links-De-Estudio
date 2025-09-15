@@ -16,7 +16,7 @@ export class LinkReferencia {
         ...SECURITY_REF,         ...SMELL_CODES_REF,          ...PERSISTENCY_REF,
         ...UML_REF,              ...VERSIONAMIENTO_REF,       ...HARDWARE_REF,
         ...WEB_REF,              ...LEYES_REF,                ...NEURO_MARKETING_REF,
-        ...CD_CI_REF,            ...APIS_REF,                 ...PERSISTENCY_ADVANCED_REF,
+        ...CI_CD_REF,            ...APIS_REF,                 ...PERSISTENCY_ADVANCED_REF,
         ...MICRO_SERVICES_REF  
     ]);
 
@@ -26,7 +26,7 @@ export class LinkReferencia {
         [UML_KEY, 'uml'],               [PERSISTENCY_KEY, 'bases-de-datos'],    [ESTRATEGIAS_DESARROLLO_KEY, 'estrategias-de-desarrollo'],                  
         [GIT_KEY, 'git'],               [METODOLOGIAS_KEY, 'metodologias'],     [BUENAS_PRACTICAS_KEY, 'buenas-practicas'],
         [CALIDAD_KEY, 'calidad'],       [COMPILACION_KEY, 'compilacion'],       [MALAS_PRACTICAS_KEY, 'malas-practicas'],
-        [LEYES_KEY, 'leyes'],           [CONTENEDORES_KEY, 'contenedores'],     [CD_CI_KEY, 'cd-ci-infraestructura'],
+        [LEYES_KEY, 'leyes'],           [CONTENEDORES_KEY, 'contenedores'],     [CI_CD_KEY, 'ci-cd-infraestructura'],
         [POO_KEY, 'poo'],               [FRAMEWORKS_KEY, 'frameworks'],         [NEURO_MARKETING_KEY, 'neuro-marketing'],     
         [WEB_KEY, 'web'],               [PRINCIPIOS_KEY, 'principios'],         [PERSISTENCY_ADVANCED_KEY, 'bd-avanzado'],   
         [APIS_KEY, 'apis'],             [SECURITY_KEY, 'seguridad'],            [USER_HISTORIES_KEY, 'historias-de-usuario'],
@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.TESTING_INTEGRATION;
+export const LAST_ITEM = Keys.TESTING_ADVANCED_SHIFT_LEFT_SHIFT_RIGHT;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -701,8 +701,8 @@ export const TESTING_ADVANCED_REF = new Map<string, Referencia>([
     [Keys.TESTING_ADVANCED_OUTSIDE_INSIDE, new Referencia('https://www.adictosaltrabajo.com/2016/01/29/tdd-outside-in-vs-inside-out/', 'TDD: Outside-In VS Inside-out', TESTING_ADVANCED_KEY, 'Outside & Inside', '', '2024/07/14').addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_TDD)],
     [Keys.TESTING_ADVANCED_CASOS_DE_PRUEBA, new Referencia('https://medium.com/grupo-carricay/qu%C3%A9-son-los-casos-de-pruebas-4893799b5b84', 'Casos de prueba', TESTING_ADVANCED_KEY, 'Casos de prueba')],
     [Keys.TESTING_ADVANCED_USES_CASES, new Referencia('https://blogs.encamina.com/piensa-en-software-desarrolla-en-colores/qa-caso-de-uso-vs-caso-de-prueba/', 'Casos de uso', TESTING_ADVANCED_KEY, 'Casos de uso', '', '2025/05/04').addRelatedItems(Keys.USER_HISTORIES_USE_CASE_REQUISITOS, Keys.UML_USE_CASES)],
-    [Keys.TESTING_ADVANCED_SMELLS_CODES1, new Referencia('https://codingcraftsman.wordpress.com/2018/09/27/test-smells/', 'Smells codes en testing #1', TESTING_ADVANCED_KEY, 'Smells codes en testing #1')],
-    [Keys.TESTING_ADVANCED_SMELLS_CODES2, new Referencia('https://codingcraftsman.wordpress.com/2018/09/27/test-smells/', 'Smells codes en testing #2', TESTING_ADVANCED_KEY, 'Smells codes en testing #2')],
+    [Keys.TESTING_ADVANCED_SMELLS_CODES1, new Referencia('https://codingcraftsman.wordpress.com/2018/09/27/test-smells/', 'Smells codes en testing I', TESTING_ADVANCED_KEY, 'Smells codes en testing I')],
+    [Keys.TESTING_ADVANCED_SMELLS_CODES2, new Referencia('https://codingcraftsman.wordpress.com/2018/09/27/test-smells/', 'Smells codes en testing II', TESTING_ADVANCED_KEY, 'Smells codes en testing II')],
     [Keys.TESTING_ADVANCED_MUTATION, new Referencia('https://spa.myservername.com/what-is-mutation-testing', 'Tests de mutación', TESTING_ADVANCED_KEY, 'Pruebas de mutación')],
     [Keys.TESTING_ADVANCED_ANTI_PATTERNS, new Referencia('https://agileinaflash.blogspot.com/2009/06/tdd-antipatterns.html', 'TDD Antipatrones', TESTING_ADVANCED_KEY, 'TDD Antipatrones', '2024/07/14').addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_TDD, Keys.TESTING_DATA_SUT_DOC)],
     [Keys.TESTING_ADVANCED_APDEX, new Referencia('https://www.techtarget.com/searchitoperations/definition/Application-Performance-Index-Apdex', 'Application Performance Index', TESTING_ADVANCED_KEY, 'Apdex', '2024/12/16').addRelatedItems(Keys.HARDWARE_MONITOREO, Keys.APIS_TESTING)],
@@ -712,6 +712,7 @@ export const TESTING_ADVANCED_REF = new Map<string, Referencia>([
     [Keys.TESTING_ADVANCED_ARCH_UNIT, new Referencia('https://www.baeldung.com/java-archunit-intro', 'Tests sobre la Arquitectura', TESTING_ADVANCED_KEY, 'ArchUnit', '2025/03/06').addRelatedItems(Keys.META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL, Keys.ARQUITECTURAS_IMPORTANT_CONCEPTS, Keys.ARQUITECTURAS_MVC, Keys.ESTRATEGIAS_DESARROLLO_DDD)],
     [Keys.TESTING_ADVANCED_ENVIRONMENT, new Referencia('https://www.abtasty.com/blog/test-environment/', 'Pruebas por Environment (ambiente)', TESTING_ADVANCED_KEY, 'Entornos', '2025/05/04').addRelatedItems(Keys.CD_CI_DEPLOYMENT_PIPELINES, Keys.CALIDAD_ANALYST_QA, Keys.ESTRATEGIAS_DESARROLLO_SLDC, Keys.GIT_BRANCHS_STRATEGIES, Keys.CD_CI_DEPLOYMENT_PATTERNS, Keys.META_CARACTERISTICAS_FEATURE_FLAGS)],
     [Keys.TESTING_ADVANCED_PERFORMANCE, new Referencia('https://es.abstracta.us/blog/metricas-pruebas-performance-software/', 'Metricas & Performance', TESTING_ADVANCED_KEY, 'Metricas & Performance', '2025/07/07')],
+    [Keys.TESTING_ADVANCED_SHIFT_LEFT_SHIFT_RIGHT, new Referencia('https://es.abstracta.us/blog/shift-left-right-testing-software-enfoques/', 'Shift-Left & Shift-Right Testing', TESTING_ADVANCED_KEY, 'Shift-Left & Shift-Right', '2025/09/14').addRelatedItems(Keys.METODOLOGIAS_CASCADA, Keys.METODOLOGIAS_AGILES, Keys.ESTRATEGIAS_DESARROLLO_TDD, Keys.ESTRATEGIAS_DESARROLLO_BDD, Keys.CD_CI_CD_CI, Keys.REQUISITOS_NO_FUNCIONALES, Keys.CD_CI_DEV_OPS, Keys.CD_CI_DEPLOYMENT_PATTERNS)],
 ]);
 
 export const REFACTORING_KEY = 'Refactorizacion';
@@ -986,26 +987,26 @@ export const NEURO_MARKETING_REF = new Map<string, Referencia>([
     ['jobsToBeDone', new Referencia('https://rockcontent.com/es/blog/jobs-to-be-done/', 'Trabajos por acabar', NEURO_MARKETING_KEY, 'Trabajos por acabar', '2024/05/02')],
 ]);
 
-export const CD_CI_KEY = 'CD/CI-Infraestructura';
-export const CD_CI_REF = new Map<string, Referencia>([
-    [Keys.CD_CI_CD_CI, new Referencia('https://www.aplyca.com/es/blog/integracion-entrega-continua-ci-cd', 'Integración Continua y Entrega Continua', CD_CI_KEY, 'CD/CI', '', '2024/08/25')],
-    [Keys.CD_CI_DEV_OPS, new Referencia('https://www.paradigmadigital.com/techbiz/que-es-devops-y-sobre-todo-que-no-es-devops/', 'DevOps', CD_CI_KEY, 'DevOps', '', '2025/03/15').addRelatedItem(Keys.TESTING_QUALITY_ASSURANCE)],
-    [Keys.CD_CI_IAS_CODE, new Referencia('https://www.redhat.com/es/topics/automation/what-is-infrastructure-as-code-iac', 'Infraestructura como Codigo', CD_CI_KEY, 'Infraestructura & Codigo').addRelatedItem(Keys.CONTENEDORES_DOCKER)],
+export const CI_CD_KEY = 'CI/CD-Infraestructura';
+export const CI_CD_REF = new Map<string, Referencia>([
+    [Keys.CD_CI_CD_CI, new Referencia('https://www.aplyca.com/es/blog/integracion-entrega-continua-ci-cd', 'Integración Continua y Entrega Continua', CI_CD_KEY, 'CI/CD', '', '2024/08/25')],
+    [Keys.CD_CI_DEV_OPS, new Referencia('https://www.paradigmadigital.com/techbiz/que-es-devops-y-sobre-todo-que-no-es-devops/', 'DevOps', CI_CD_KEY, 'DevOps', '', '2025/03/15').addRelatedItem(Keys.TESTING_QUALITY_ASSURANCE)],
+    [Keys.CD_CI_IAS_CODE, new Referencia('https://www.redhat.com/es/topics/automation/what-is-infrastructure-as-code-iac', 'Infraestructura como Codigo', CI_CD_KEY, 'Infraestructura & Codigo').addRelatedItem(Keys.CONTENEDORES_DOCKER)],
     //['stateless-stateful', new Referencia('https://refactorizando.com/stateful-vs-stateless-arquitectura/', 'Stateful VS Stateless', CD_CI_KEY, 'Stateless VS Stateful')],
-    [Keys.CD_CI_STATELESS_STATEFUL, new Referencia('https://www.redhat.com/en/topics/cloud-native-apps/stateful-vs-stateless', 'Stateful VS Stateless', CD_CI_KEY, 'Stateless VS Stateful', '2023/12/26', '2025/05/01').addRelatedItems(Keys.MICROSERVICES_FUNDAMENTALS, Keys.NUBE_IAAS_PAAS_SAAS, Keys.APIS_IDEMPOTENCIA)],
-    [Keys.CD_CI_DEPLOYMENT_PATTERNS, new Referencia('https://newsletter.techworld-with-milan.com/p/what-are-deployment-patterns', 'Patrones de Despliegue', CD_CI_KEY, 'Patrones de Despliegue')],
-    [Keys.CD_CI_INDUSTRIAL_DEV_OPS, new Referencia('https://itrevolution.com/articles/what-is-industrial-devops/', 'Industrial DevOps', CD_CI_KEY, 'Industrial DevOps', '2023/11/21')],
-    [Keys.CD_CI_DEPLOYMENT_PIPELINES, new Referencia('https://semaphoreci.com/blog/cicd-pipeline', 'Pipelines', CD_CI_KEY, '¿ Que es un Pipeline ?', '2023/12/26', '2025/05/04').addRelatedItem(Keys.CONTENEDORES_ORCHESTRATION)],
-    [Keys.CD_CI_CELL_BASED_ARQUITECTURE, new Referencia('https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of-impact-with-cell-based-architecture/what-is-a-cell-based-architecture.html', 'Cell Based Arquitecture', CD_CI_KEY, 'Cell Based Arquitecture', '2024/08/25')],
-    [Keys.CD_CI_RULES, new Referencia('https://semaphoreci.com/blog/rules-ci-pipeline', 'Reglas de un Pipeline', CD_CI_KEY, 'Pipelines Rules', '2024/12/26').addRelatedItems(Keys.GIT_BRANCHS, Keys.CALIDAD_LINTING, Keys.TESTING_PIRAMIDE, Keys.CONTENEDORES_DOCKER)],
-    [Keys.CD_CI_FAILOVER, new Referencia('https://stackoverflow.blog/2020/10/23/adrian-cockcroft-aws-failover-chaos-engineering-fault-tolerance-distaster-recovery/', 'Failover & Ingenieria del caos', CD_CI_KEY, 'Failover, Caos, Resiliencia', '2025/04/06').addRelatedItems(Keys.NUBE_SRE, Keys.ANALISIS_SINGLE_POINT_OF_FAILURE, Keys.NUBE_DISPONIBILITY)],
-    [Keys.CD_CI_MONITORING, new Referencia('https://www.squadcast.com/blog/comparing-uptime-monitoring-heartbeat-monitoring-and-synthetic-monitoring', 'Monitoreo de un sistema', CD_CI_KEY, 'Monitoreo', '2025/05/01').addRelatedItems(Keys.NUBE_DISPONIBILITY, Keys.NUBE_SRE, Keys.NUBE_LOAD_BALANCING, Keys.HARDWARE_ESCALAMIENTO, Keys.WEB_GOLDEN_SIGNALS, Keys.MICROSERVICES_DISTRIBUTED_TRANSACTIONS)],
-    [Keys.CD_CI_DEPLOYMENT_ARQUITECTURE, new Referencia('https://medium.com/nerd-for-tech/software-deployment-as-architecture-648867bdb77c', 'Implementación como Arquitectura', CD_CI_KEY, 'Deploy & Arquitectura', '2025/06/12').addRelatedItems(Keys.ARQUITECTURAS_DESCOMPOSICION_MODULAR, Keys.ARQUITECTURAS_MONOLITOS, Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES, Keys.VERSIONAMIENTO_VERSIONAMIENTO, Keys.APIS_REST_VS_MESSAGING, Keys.ANALISIS_BOUNDED_CONTEXT, Keys.MICROSERVICES_ARQUITECTURAS, Keys.CONTENEDORES_ORCHESTRATION, Keys.NUBE_NATIVE, Keys.MALAS_PRACTICAS_DEATH_BY_MICROSERVICES)],
-    [Keys.CD_CI_INFRAESTRUCTURE_DESIGN, new Referencia('https://medium.com/@osomudeyazudonu/10-infrastructure-design-choices-that-will-haunt-you-in-production-31c1c83fb2a3', 'Diseño & infraestructura', CD_CI_KEY, 'Diseño & infraestructura', '2025/09/02')
+    [Keys.CD_CI_STATELESS_STATEFUL, new Referencia('https://www.redhat.com/en/topics/cloud-native-apps/stateful-vs-stateless', 'Stateful VS Stateless', CI_CD_KEY, 'Stateless VS Stateful', '2023/12/26', '2025/05/01').addRelatedItems(Keys.MICROSERVICES_FUNDAMENTALS, Keys.NUBE_IAAS_PAAS_SAAS, Keys.APIS_IDEMPOTENCIA)],
+    [Keys.CD_CI_DEPLOYMENT_PATTERNS, new Referencia('https://newsletter.techworld-with-milan.com/p/what-are-deployment-patterns', 'Patrones de Despliegue', CI_CD_KEY, 'Patrones de Despliegue')],
+    [Keys.CD_CI_INDUSTRIAL_DEV_OPS, new Referencia('https://itrevolution.com/articles/what-is-industrial-devops/', 'Industrial DevOps', CI_CD_KEY, 'Industrial DevOps', '2023/11/21')],
+    [Keys.CD_CI_DEPLOYMENT_PIPELINES, new Referencia('https://semaphoreci.com/blog/cicd-pipeline', 'Pipelines', CI_CD_KEY, '¿ Que es un Pipeline ?', '2023/12/26', '2025/05/04').addRelatedItem(Keys.CONTENEDORES_ORCHESTRATION)],
+    [Keys.CD_CI_CELL_BASED_ARQUITECTURE, new Referencia('https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of-impact-with-cell-based-architecture/what-is-a-cell-based-architecture.html', 'Cell Based Arquitecture', CI_CD_KEY, 'Cell Based Arquitecture', '2024/08/25')],
+    [Keys.CD_CI_RULES, new Referencia('https://semaphoreci.com/blog/rules-ci-pipeline', 'Reglas de un Pipeline', CI_CD_KEY, 'Pipelines Rules', '2024/12/26').addRelatedItems(Keys.GIT_BRANCHS, Keys.CALIDAD_LINTING, Keys.TESTING_PIRAMIDE, Keys.CONTENEDORES_DOCKER)],
+    [Keys.CD_CI_FAILOVER, new Referencia('https://stackoverflow.blog/2020/10/23/adrian-cockcroft-aws-failover-chaos-engineering-fault-tolerance-distaster-recovery/', 'Failover & Ingenieria del caos', CI_CD_KEY, 'Failover, Caos, Resiliencia', '2025/04/06').addRelatedItems(Keys.NUBE_SRE, Keys.ANALISIS_SINGLE_POINT_OF_FAILURE, Keys.NUBE_DISPONIBILITY)],
+    [Keys.CD_CI_MONITORING, new Referencia('https://www.squadcast.com/blog/comparing-uptime-monitoring-heartbeat-monitoring-and-synthetic-monitoring', 'Monitoreo de un sistema', CI_CD_KEY, 'Monitoreo', '2025/05/01').addRelatedItems(Keys.NUBE_DISPONIBILITY, Keys.NUBE_SRE, Keys.NUBE_LOAD_BALANCING, Keys.HARDWARE_ESCALAMIENTO, Keys.WEB_GOLDEN_SIGNALS, Keys.MICROSERVICES_DISTRIBUTED_TRANSACTIONS)],
+    [Keys.CD_CI_DEPLOYMENT_ARQUITECTURE, new Referencia('https://medium.com/nerd-for-tech/software-deployment-as-architecture-648867bdb77c', 'Implementación como Arquitectura', CI_CD_KEY, 'Deploy & Arquitectura', '2025/06/12').addRelatedItems(Keys.ARQUITECTURAS_DESCOMPOSICION_MODULAR, Keys.ARQUITECTURAS_MONOLITOS, Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES, Keys.VERSIONAMIENTO_VERSIONAMIENTO, Keys.APIS_REST_VS_MESSAGING, Keys.ANALISIS_BOUNDED_CONTEXT, Keys.MICROSERVICES_ARQUITECTURAS, Keys.CONTENEDORES_ORCHESTRATION, Keys.NUBE_NATIVE, Keys.MALAS_PRACTICAS_DEATH_BY_MICROSERVICES)],
+    [Keys.CD_CI_INFRAESTRUCTURE_DESIGN, new Referencia('https://medium.com/@osomudeyazudonu/10-infrastructure-design-choices-that-will-haunt-you-in-production-31c1c83fb2a3', 'Diseño & infraestructura', CI_CD_KEY, 'Diseño & infraestructura', '2025/09/02')
         .addRelatedItems(Keys.TESTING_ADVANCED_ENVIRONMENT, Keys.ANALISIS_SYSTEM_THINKING_II, Keys.ANALISIS_SINGLE_POINT_OF_FAILURE, Keys.APIS_API_FIRST, Keys.MICROSERVICES_PROBLEMS, Keys.LEYES_MURPHY, Keys.SECURITY_LEAST_PRIVILEGE, Keys.PATRONES_DYSTRIBUTED_SYSTEMS, Keys.CALIDAD_CODE_REVIEWS, Keys.HARDWARE_ESCALAMIENTO, Keys.NUBE_DISPONIBILITY, Keys.MICROSERVICES_DISTRIBUTED_TRACING)
         .addMoreReferences('https://www.enterspeed.com/insights/it-infrastructure-design-building-a-scalable-and-secure-foundation')
     ],
-    [Keys.CD_CI_RPO_RTO, new Referencia('https://www.acronis.com/es/blog/posts/rto-rpo/', 'RPO & RTO', CD_CI_KEY, 'RPO & RTO', '2025/09/05')],
+    [Keys.CD_CI_RPO_RTO, new Referencia('https://www.acronis.com/es/blog/posts/rto-rpo/', 'RPO & RTO', CI_CD_KEY, 'RPO & RTO', '2025/09/05')],
 ]);
 
 export const MICRO_SERVICES_KEY = 'Microservicios';

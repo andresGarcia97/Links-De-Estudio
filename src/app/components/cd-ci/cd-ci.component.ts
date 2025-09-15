@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CD_CI_INFRAESTRUCTURE } from 'src/app/models/content/content3';
 import {
-  ANALISIS_DATA_KEY, APIS_KEY, CD_CI_REF, CONTENEDORES_KEY, HARDWARE_KEY, LinkReferencia, MICRO_SERVICES_KEY, NUBE_KEY,
+  ANALISIS_DATA_KEY, APIS_KEY, CI_CD_REF, CONTENEDORES_KEY, HARDWARE_KEY, LinkReferencia, MICRO_SERVICES_KEY, NUBE_KEY,
   VERSIONAMIENTO_KEY, WEB_KEY }
 from 'src/app/models/linkReferencia';
 import { PreviousAndNextSection } from 'src/app/models/models';
@@ -14,13 +14,13 @@ export class CDCIComponent implements OnInit {
 
   items = CD_CI_INFRAESTRUCTURE;
 
-  components = CD_CI_REF;
+  components = CI_CD_REF;
 
   itemStart = '';
 
   relatedSections = new Map<string, string>([]);
 
-  tittles = new Map([ ...CD_CI_REF ].map(([key, { tittleShort }]) => [key, tittleShort]));
+  tittles = new Map([ ...CI_CD_REF ].map(([key, { tittleShort }]) => [key, tittleShort]));
 
   previousAndNextSection!: PreviousAndNextSection;
 
