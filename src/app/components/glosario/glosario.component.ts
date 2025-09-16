@@ -1,4 +1,4 @@
-import { AfterViewChecked, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { Content1 } from 'src/app/models/content/content1';
 import { Content2 } from 'src/app/models/content/content2';
@@ -15,7 +15,7 @@ import { Fuente, Referencia } from 'src/app/models/models';
   selector: 'app-glosario',
   templateUrl: './glosario.component.html'
 })
-export class GlosarioComponent implements OnInit, AfterViewChecked {
+export class GlosarioComponent implements OnInit {
 
   @ViewChild("inputSearch") inputSearch!: ElementRef<HTMLInputElement>;
 
@@ -55,19 +55,10 @@ export class GlosarioComponent implements OnInit, AfterViewChecked {
     const years = ['2025', '2024', '2023', '2022', '2021'];
     const stats = years.map(year => getYearlyStats(componentsWithDate, year));
     console.table(stats);
-  }
 
-  ngAfterViewChecked() {
-
-    const inputSearch = this.inputSearch.nativeElement;
-
-    if (this.search && document.activeElement !== inputSearch) {
-      inputSearch.focus();
-    }
-    else if (!this.search && document.activeElement === inputSearch) {
-      inputSearch.blur();
-      this.searchOnContent = new Map();
-    }
+    setTimeout(() => {
+      this.inputSearch?.nativeElement?.focus();
+    }, 0);
   }
 
   constructor(private router: Router) { }
