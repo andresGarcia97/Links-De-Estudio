@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.TESTING_ADVANCED_SHIFT_LEFT_SHIFT_RIGHT;
+export const LAST_ITEM = Keys.PATRONES_MESSAGING;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -602,6 +602,10 @@ export const PATRONES_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.CD_CI_FAILOVER, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.MICROSERVICES_ANALISIS, Keys.LEYES_MURPHY, Keys.APIS_IDEMPOTENCIA)
         .addMoreReferences('https://aws.amazon.com/es/blogs/aws-spanish/entender-los-patrones-de-resiliencia-y-las-consideraciones-claves-para-arquitecturar-eficientemente-en-la-nube/')
     ],
+    [Keys.PATRONES_MESSAGING, new Referencia('https://yasir.com.pk/blog/system-design/messaging/messaging-patterns-for-scalable-systems', 'Patrones Para Mensajeria', PATRONES_KEY, 'Patrones & Mensajeria', '2025/09/15')
+        .addRelatedItems(Keys.ANALISIS_QUEUES_SYSTEM_DESIGN, Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.MICROSERVICES_DEAD_LETTER_QUEUE, Keys.MICROSERVICES_EVENTS_VS_REQUEST_RESPONSE, Keys.ANALISIS_DELIVERY_GUARANTED, Keys.HARDWARE_ROUTING_MESSAGES)
+        .addMoreReferences('https://java-design-patterns.com/patterns/fanout-fanin/')
+    ],
 ]);
 
 export const PEOPLE_KEY = 'Personas';
@@ -779,7 +783,7 @@ export const SECURITY_REF = new Map<string, Referencia>([
     [Keys.SECURITY_FIREWALL, new Referencia('https://www.cisco.com/site/us/en/learn/topics/security/what-is-a-firewall.html', 'Firewall', SECURITY_KEY, 'Firewall', '2024/06/16', '2025/05/18').addRelatedItems(Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.APIS_GATEWAY)],
     [Keys.SECURITY_PROTOCOLOS_SEGURITY, new Referencia('https://www.websecurity.digicert.com/es/es/security-topics/what-is-ssl-tls-https', 'SSL, TSL, HTTPS', SECURITY_KEY, 'SSL, TSL, HTTPS')],
     [Keys.SECURITY_PROXY, new Referencia('https://www.welivesecurity.com/la-es/2020/01/02/que-es-proxy-para-que-sirve/', 'Proxy & Proxy Inverso', SECURITY_KEY, 'Proxy & Proxy Inverso', '', '2025/02/15')],
-    ['ciberSeguridad', new Referencia('https://latam.kaspersky.com/resource-center/definitions/what-is-cyber-security', 'Ciberseguridad y otras amenazas', SECURITY_KEY, 'Ciberseguridad')],
+    [Keys.SECURITY_CIBER_SECURITY, new Referencia('https://latam.kaspersky.com/resource-center/definitions/what-is-cyber-security', 'Ciberseguridad y otras amenazas', SECURITY_KEY, 'Ciberseguridad')],
     //['cia', new Referencia('https://searchdatacenter.techtarget.com/es/opinion/Que-es-la-triada-de-la-CIA', 'Confidencialidad-Integridad-Accesibilidad ', SECURITY_KEY, 'CIA')],
     ['cia', new Referencia('https://www.computerweekly.com/es/opinion/Que-es-la-triada-de-la-CIA', 'Confidencialidad-Integridad-Accesibilidad ', SECURITY_KEY, 'CIA', '', '2024/06/16')],
     ['noRepudio', new Referencia('https://www.unir.net/ingenieria/revista/no-repudio-seguridad-informatica/', 'No repudio', SECURITY_KEY, 'NO Repudio')],
@@ -931,6 +935,10 @@ export const HARDWARE_REF = new Map<string, Referencia>([
     [Keys.HARDWARE_NUBE_VS_VIRTUALIZACION, new Referencia('https://www.redhat.com/es/topics/cloud-computing/cloud-vs-virtualization', 'Nube VS Virtualizacion', HARDWARE_KEY, 'Nube VS VM')],
     [Keys.HARDWARE_RENDERING, new Referencia('https://www.freecodecamp.org/news/what-exactly-is-client-side-rendering-and-hows-it-different-from-server-side-rendering-bd5c786b340d/', 'Server-side VS client-side rendering', HARDWARE_KEY, 'Rendering')],
     [Keys.HARDWARE_MODEL_OSI, new Referencia('https://www.cloudflare.com/es-es/learning/ddos/glossary/open-systems-interconnection-model-osi/', 'Modelo OSI', HARDWARE_KEY, 'Modelo OSI', '', '2025/04/23').addRelatedItem(Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION)],
+    [Keys.HARDWARE_ROUTING_MESSAGES, new Referencia('https://www.redhat.com/es/blog/architectural-messaging-patterns', 'Enrutamiento de Mensajes', HARDWARE_KEY, 'Routing', '2025/09/15')
+        .addRelatedItems(Keys.NUBE_LATENCY, Keys.PATRONES_MESSAGING, Keys.SECURITY_CIBER_SECURITY)
+        .addMoreReferences('https://www.baeldung.com/cs/multicast-vs-broadcast-anycast-unicast')
+    ],
     [Keys.HARDWARE_MONITOREO, new Referencia('https://www.hiberus.com/crecemos-contigo/uso-de-los-apm-monitoreo-del-rendimiento-de-aplicaciones/', 'Aplication Performance Management (apm)', HARDWARE_KEY, 'Monitoreo')],
     [Keys.HARDWARE_VIRTUAL_MACHINES_VS_CONTAINERS, new Referencia('https://cloudnativeislamabad.hashnode.dev/virtualization-vs-containerization', 'Maquinas Virtuales VS Contenedores', HARDWARE_KEY, 'VM VS Contenedores')],
     [Keys.HARDWARE_FALSE_SHARING, new Referencia('https://www.easytechjunkie.com/what-is-false-sharing.htm', 'False Sharing', HARDWARE_KEY, 'False Sharing', '2022/12/29')],

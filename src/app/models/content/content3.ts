@@ -1072,7 +1072,7 @@ export const SEGURIDAD =
                 '- Aunque existen muchas VPN y son más seguras generalmente, hay que tener cuidado con aquellas <em>gratuitas</em> ya que ',
                 ' - se han dado casos donde roban datos ó se usan para cometer delitos como fraudes y suplantaciones '
             ]),
-        new Item('ciberSeguridad',
+        new Item(Keys.SECURITY_CIBER_SECURITY,
             [
                 '- Es la practica de defender toda la infraestructura fisica y logica necesaria para nuestra negocio ',
                 '- Aplica desde diferentes ramas de negocios, hasta los dispositivos moviles ',
@@ -1105,8 +1105,7 @@ export const SEGURIDAD =
                 '<strong>- Inyección de SQL:</strong> Se puede usar para robar datos o tomar el control de bases de datos, por medio de instrucciones que la base de datos ejecutara',
                 '<strong>- Phishing:</strong> Son correos electronicos que aparentan ser legitimos, pero solo buscan robar información personal, entregada por el mismo usuario',
                 '<strong>- Man-in-the-middle:</strong> Es la interceptación de comunicaciones entre 2 dispositivos, por ejemplo una red publica y un dispositivo conectado a esta',
-                '<strong>- Ataque de denegación de servicio(DoS):</strong>',
-                ' - se impide que un sistema pueda satisfacer a sus usuarios al sobrecargar e inutilizar los servidores mediante inmensas cantidades de trafico',
+                '<strong>- Denegación de servicio(DoS):</strong> Impide satisfacer a los usuarios al sobrecargar e inutilizar los servidores con inmensas cantidades de trafico',
                 '',
                 '<strong>Protecciones:</strong>',
                 '- Mantenga actualizado su sistema operativo ',
