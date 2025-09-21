@@ -286,7 +286,7 @@ export const CALIDAD =
                 '- Mientras que <em>DORA</em> capta aspectos tecnicos, <em>SPACE</em> se centra en factores humanos y sociales ',
                 '- Obteniendo una mejor comprensión de los puntos fuertes y debiles de tu equipo, alineandose mejor con los objetivos y retos a enfrentar ',
             ]),
-        new Item('goodCodingPrinciples',
+        new Item(Keys.CALIDAD_CODING_PRINCIPLES,
             [
                 '- Seguir las <strong>convenciones</strong> de la comunidad y las <strong>especificaciones</strong> del lenguaje, ayudando con la consistencia y la legibilidad ',
                 '',
@@ -305,7 +305,7 @@ export const CALIDAD =
                 '',
                 '- Usar <strong>Patrones de Diseño</strong> Sin abusar de ellos, cada patron tiene un escenario donde es aplicable, asi no se agrega complejidad innecesaria ',
                 '- <strong>Reducir las dependencias globales</strong> Para evitar una gestión de estados innecesarias, y reducir efectos segundarios ',
-                '- <strong>Refactorización</strong> La mantenibilidad se logra reduciendo la deuda tecnica reduciendo y solucionando problemas lo antes posible ',
+                '- <strong>Refactorización</strong> La mantenibilidad se logra reduciendo la deuda tecnica, mejorando, y solucionando problemas lo antes posible ',
                 '- <strong>Seguridad</strong> Un buen codigo evita la mayor cantidad de vulnerabilidades posibles, en especial las comunes y de facil solución '
             ]),
         new Item(Keys.CALIDAD_CODE_ROT,

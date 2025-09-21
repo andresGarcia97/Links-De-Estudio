@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.PATRONES_MESSAGING;
+export const LAST_ITEM = Keys.POO_INTERFACES;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -190,7 +190,7 @@ export const CALIDAD_REF = new Map<string, Referencia>([
     [Keys.CALIDAD_ANALYST_QA, new Referencia('https://ed.team/blog/que-es-y-que-hace-un-analista-qa', 'Analista de QA', CALIDAD_KEY, 'Analista de QA')],
     ['codeReviewPyramid', new Referencia('https://www.morling.dev/blog/the-code-review-pyramid/', 'Piramide del CodeReview', CALIDAD_KEY, 'Piramide del Code Review')],
     ['doraAndSpaceMetrics', new Referencia('https://echometerapp.com/es/dora-and-space-metrics/', 'Metricas DORA & SPACE', CALIDAD_KEY, 'DORA & SPACE')],
-    ['goodCodingPrinciples', new Referencia('https://blog.bytebytego.com/p/ep97-10-good-coding-principles-to#%C2%A7good-coding-principles-to-improve-code-quality', 'Principios para una buena codificación', CALIDAD_KEY, 'Good Coding Principles')],
+    [Keys.CALIDAD_CODING_PRINCIPLES, new Referencia('https://blog.bytebytego.com/p/ep97-10-good-coding-principles-to#%C2%A7good-coding-principles-to-improve-code-quality', 'Principios para una buena codificación', CALIDAD_KEY, 'Good Coding Principles')],
     [Keys.CALIDAD_CODE_ROT, new Referencia('https://betterprogramming.pub/code-rot-is-a-process-decision-d4b37cf1e26b', 'Control de la Degradación', CALIDAD_KEY, 'Degradación')],
     [Keys.CALIDAD_IF_ELSE, new Referencia('https://medium.com/@akintopbas96/refactoring-java-spring-boot-code-eliminating-if-else-statements-for-cleaner-extensible-logic-f1314cf9724e', 'Como Reducir los if/else', CALIDAD_KEY, 'Reducción de if/else', '2024/08/11').addRelatedItems(Keys.REFACTORING_CLEAN_CODE, Keys.BUENAS_PRACTICAS_COMPLEJIDAD_COGNITIVA, Keys.BUENAS_PRACTICAS_GUARD_CLAUSES)],
 ]);
@@ -643,6 +643,10 @@ export const POO_REF = new Map<string, Referencia>([
     [Keys.POO_DESIGN_BY_CONTRACT_PARTS, new Referencia('https://opendatascience.com/dissecting-the-software-designing-approach-of-design-by-contract/', 'Pre/Post condiciones, Invariantes', POO_KEY, 'Contratos II', '2025/01/08').addRelatedItem(Keys.PRINCIPIOS_SOLID)],
     [Keys.POO_DESCOMPOSITION, new Referencia('http://miguedt.blogspot.com/2013/01/descomposicion-funcional.html', 'Descomposición', POO_KEY, 'Descomposición')],
     [Keys.POO_HERENCIA, new Referencia('https://www.ecured.cu/Herencia_(Inform%C3%A1tica)', 'Herencia', POO_KEY, 'Herencia', '', '2024/12/10')],
+    [Keys.POO_INTERFACES, new Referencia('https://blog.stackademic.com/why-your-java-interfaces-are-just-fancy-comments-6cd86e97c382', 'Cuando usar Interfaces', POO_KEY, 'Interfaces', '2025/09/20')
+        .addRelatedItems(Keys.ANALISIS_COMPORTAMIENTO, Keys.PRINCIPIOS_SOC, Keys.PRINCIPIOS_SOLID, Keys.FRAMEWORKS_IOD_SPRING, Keys.COMPILACION_SDK_VS_API, Keys.BUENAS_PRACTICAS_INDIRECTION, Keys.CALIDAD_CODING_PRINCIPLES, Keys.ARQUITECTURAS_HEXAGONAL)
+        .addMoreReferences('https://www.baeldung.com/cs/program-to-interface', 'https://stackoverflow.com/questions/639592/why-are-interfaces-preferred-to-abstract-classes')
+    ],
     [Keys.POO_POLIMORFISMO, new Referencia('https://ifgeekthen.nttdata.com/es/polimorfismo-en-java-programaci%C3%B3n-orientada-objetos', 'Polimorfismo & Sobrecarga', POO_KEY, 'Polimorfismo/Sobrecarga', '', '2025/03/19').addRelatedItems(Keys.COMPILACION_COMPILACION, Keys.META_CARACTERISTICAS_GENERICS, Keys.PRINCIPIOS_SOLID)],
     [Keys.POO_HERENCIA_COMPOSICION, new Referencia('https://devexperto.com/herencia-vs-composicion/', 'Herencia VS Composición', POO_KEY, 'Herencia VS Composición', '', '2025/03/20')],
     //['enlaces', new Referencia('https://es.fondoperlaterra.org/comdifference-between-static-and-dynamic-binding-2', 'Enlace estatico & dinamico', POO_KEY, 'Enlaces')],
