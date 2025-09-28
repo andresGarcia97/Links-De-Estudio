@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.POO_INTERFACES;
+export const LAST_ITEM = Keys.MICROSERVICES_DISTRIBUTED_MONOLITH;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -1053,5 +1053,8 @@ export const MICRO_SERVICES_REF = new Map<string, Referencia>([
     [Keys.MICROSERVICES_ARQUITECTURE_BACK_MONOLITH, new Referencia('https://medium.com/mr-plan-publication/the-surprising-comeback-of-monoliths-why-big-names-are-moving-applications-from-microservices-to-6f43a69179dc', '¿ Regresar a un monolito ?', MICRO_SERVICES_KEY, '¿ Regresar a un monolito ?', '2025/07/27')
         .addRelatedItems(Keys.ARQUITECTURAS_MONOLITOS, Keys.ARQUITECTURAS_HOW_TO_CHOOSE_IT, Keys.ARQUITECTURAS_MODULITHS, Keys.ANALISIS_COHESERS_DECOUPLERS, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.PRINCIPIOS_POC, Keys.NUBE_DISPONIBILITY)
         .addMoreReferences('https://medium.com/mr-plan-publication/monolith-architecture-software-architecture-part-1-845a04ab303c', 'https://medium.com/mr-plan-publication/microservices-and-microservice-architecture-software-architecture-part-2-7ee5fb796270')
+    ],
+    [Keys.MICROSERVICES_DISTRIBUTED_MONOLITH, new Referencia('https://levelup.gitconnected.com/your-microservices-strategy-is-broken-you-built-a-distributed-monolith-332f74867f73', 'Monolito distribuido', MICRO_SERVICES_KEY, 'Monolito distribuido', '2025/09/27')
+        .addRelatedItems(Keys.NUBE_CAP_TEOREMA, Keys.ARQUITECTURAS_MONOLITOS, Keys.ARQUITECTURAS_MODULITHS, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.TESTING_INTEGRATION, Keys.NUBE_TWO_PHASE_COMMIT, Keys.PATRONES_SAGA, Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.META_CARACTERISTICAS_CACHE_AND_TYPES, Keys.CD_CI_FAILOVER, Keys.CD_CI_DEPLOYMENT_PIPELINES, Keys.PATRONES_STRANGLER_FIG, Keys.ANALISIS_STRATEGIC_DESIGN, Keys.NUBE_SRE, Keys.CD_CI_DEV_OPS, Keys.VERSIONAMIENTO_VERSIONAMIENTO)
     ],
 ]);
