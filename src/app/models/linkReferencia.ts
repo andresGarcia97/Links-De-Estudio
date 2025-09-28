@@ -807,10 +807,12 @@ export const SECURITY_REF = new Map<string, Referencia>([
     ['lateralChanel', new Referencia('https://ciberseguridad.com/amenzas/ataque-canal-lateral/', 'Ataques de canal lateral', SECURITY_KEY, 'Ataques de canal lateral')],
     ['csp', new Referencia('https://auth0.com/blog/from-zero-to-hero-with-csp/', 'Content Security Police', SECURITY_KEY, 'Content Security Police', '2022/11/07')],
     ['csrf', new Referencia('https://www.welivesecurity.com/la-es/2015/04/21/vulnerabilidad-cross-site-request-forgery-csrf/', 'Cross Site Request Forgery', SECURITY_KEY, 'CSRF', '2023/01/06')],
-    ['restApiAuth', new Referencia('https://blog.bytebytego.com/p/ep91-rest-api-authentication-methods', 'Autenticación en APIs REST', SECURITY_KEY, 'REST API Authentication', '2024/02/15')],
     [Keys.SECURITY_ATTACK_ON_MODEL_OSI, new Referencia('https://blog.bytebytego.com/p/ep97-10-good-coding-principles-to#%C2%A7top-network-security-cheatsheet', 'Ataques contra el Modelo OSI', SECURITY_KEY, 'Modelo OSI', '2024/03/21')],
     [Keys.SECURITY_LEAST_PRIVILEGE, new Referencia('https://www.cyberark.com/what-is/least-privilege/', 'Menor privilegio', SECURITY_KEY, 'Menor Privilegio', '2024/06/16')],
-    [Keys.SECURITY_AUTHENTICATION_WAYS, new Referencia('https://medium.com/@iamprovidence/authentication-history-basic-digest-cookie-session-token-jwt-api-key-55d6c21be90b', 'Formas de Autenticación', SECURITY_KEY, 'Autenticación', '2024/07/21')],
+    [Keys.SECURITY_AUTHENTICATION_WAYS, new Referencia('https://medium.com/@iamprovidence/authentication-history-basic-digest-cookie-session-token-jwt-api-key-55d6c21be90b', 'Formas de Autenticación', SECURITY_KEY, 'Autenticación', '2024/07/21', '2025/09/28')
+        .addRelatedItem(Keys.APIS_SECURITY)
+        .addMoreReferences('https://blog.bytebytego.com/p/ep91-rest-api-authentication-methods', 'https://levelup.gitconnected.com/authentication-explained-when-to-use-basic-bearer-oauth2-jwt-sso-b2418c1af939')
+    ],
     [Keys.SECURITY_RBAC_ABAC, new Referencia('https://www.strongdm.com/blog/rbac-vs-abac', 'Control de Acceso', SECURITY_KEY, 'Control de Acceso', '2025/01/02')],
     [Keys.SECURITY_CVE, new Referencia('https://www.fortinet.com/lat/resources/cyberglossary/cve', 'Vulnerabilidades & Exposiciones Comunes', SECURITY_KEY, 'CVE', '2025/05/18')]
 ]);
