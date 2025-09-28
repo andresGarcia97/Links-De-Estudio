@@ -1410,7 +1410,7 @@ export const POO =
                 ' - empezar a crear elementos cada vez más grandes y complejos como: Abstracciones, Comportamientos, Funcionalidades etc..',
                 '',
                 '- Cuando se piensa en comportamientos y abstracciones sobre implementaciones especificas, se puede decir que se esta programando para interfaces ',
-                '- Esto ayuda a tener una separación clara de conceptos, abstraer comportamientos comunes, mateniendo un codigo desacoplado ',
+                '- Esto ayuda a tener una separación clara de conceptos, abstraer comportamientos comunes, manteniendo un codigo desacoplado ',
                 '- Crear conexiones con interfaces y no con implementaciones concretas, permite que los sistemas dependan de abstracciones y no de detalles (SOLID)',
                 '',
                 '<strong>¿ Cuando usarlas realmente ?</strong>',
