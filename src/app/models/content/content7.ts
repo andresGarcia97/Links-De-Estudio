@@ -1775,7 +1775,7 @@ export const NEURO_MARKETING =
                 '- Cuando se lanza al mercado se convierte en una <em>Interrogante</em> que se convierte en una <em>Estrella</em> al crecer,',
                 ' - pero cuando se consolida se convertira en <em>Vaca</em> hasta que se estanque y en el declive se convierta en <em>Perro</em> ',
             ]),
-        new Item('b2b-b2c',
+        new Item(Keys.NEURO_MARKETING_B2B_B2C,
             [
                 '- Son 2 Tecnicas de marketing bastante diferentes, que intentan atraer publicos diferentes con estrategias diferentes ',
                 '<strong>B2B:</strong> Business to Business, Comercialización de productos y servicios con una empresa o profesional como cliente,',

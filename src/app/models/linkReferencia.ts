@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.MICROSERVICES_DISTRIBUTED_MONOLITH;
+export const LAST_ITEM = Keys.APIS_SECURITY;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -526,6 +526,9 @@ export const APIS_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.POO_DESIGN_BY_CONTRACT, Keys.TESTING_ADVANCED_APDEX)
         .addMoreReferences('https://swagger.io/blog/code-first-vs-design-first-api/')
     ],
+    [Keys.APIS_SECURITY, new Referencia('https://levelup.gitconnected.com/api-security-explained-7-must-know-protections-06e63fb69e9b', 'API Security & Protections', APIS_KEY, 'API Protections', '2025/09/28')
+        .addRelatedItems(Keys.SECURITY_AUTHENTICATION_WAYS, Keys.PERSISTENCY_ADVANCED_ORM, Keys.SECURITY_FIREWALL, Keys.HARDWARE_RENDERING, Keys.NEURO_MARKETING_B2B_B2C)
+    ],
 ]);
 
 export const ANALISIS_DATA_KEY = 'Analisis-datos';
@@ -992,7 +995,7 @@ export const NEURO_MARKETING_KEY = 'Neuro-Marketing';
 export const NEURO_MARKETING_REF = new Map<string, Referencia>([
     ['pestel', new Referencia('https://www.simla.com/blog/analisis-pestel', 'Analisis PESTEL', NEURO_MARKETING_KEY, 'Analisis PESTEL', '2023/01/29')],
     ['matrizBcg', new Referencia('https://emprendepyme.net/tipos-de-productos-segun-la-matriz-bcg-y-ejemplos-reales.html', 'Matriz BCG', NEURO_MARKETING_KEY, 'Matriz BCG', '2023/01/29')],
-    ['b2b-b2c', new Referencia('https://www.uup.es/blog/b2b-y-b2c-que-son-y-que-diferencias-hay-entre-ambos/', 'B2B & B2C', NEURO_MARKETING_KEY, 'B2B & B2C', '2023/02/04')],
+    [Keys.NEURO_MARKETING_B2B_B2C, new Referencia('https://www.uup.es/blog/b2b-y-b2c-que-son-y-que-diferencias-hay-entre-ambos/', 'B2B & B2C', NEURO_MARKETING_KEY, 'B2B & B2C', '2023/02/04')],
     ['eric', new Referencia('http://www.azentoconsulting.com/2020/07/21/como-crear-un-nuevo-modelo-de-negocio-o-reformular-nuestro-modelo-de-negocio-ya-existente-la-matriz-eric/', 'Matriz ERIC', NEURO_MARKETING_KEY, 'Matriz ERIC', '2023/01/29')],
     ['gamificacionMarketing', new Referencia('https://www.yeeply.com/blog/gamificacion-marketing-estrategias-ejemplos/', 'Gamificacion & Marketing', NEURO_MARKETING_KEY, 'Gamificacion & Marketing', '2023/02/08')],
     ['maslow-barret', new Referencia('https://www.danielcolombo.com/los-7-niveles-de-consciencia-personal-y-empresarial-por-daniel-colombo/', 'Maslow & Barret', NEURO_MARKETING_KEY, 'Maslow & Barret', '2023/02/12')],
