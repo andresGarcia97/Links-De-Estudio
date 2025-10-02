@@ -1880,7 +1880,7 @@ export const ESTRATEGIAS_DESARROLLO =
             ]),
         new Item(Keys.ESTRATEGIAS_DESARROLLO_BFF,
             [
-                '- A medida que las aplicaciones se vuelven cada vez más distribuidas han surgido patrones para satifacer a la multitud de dispositivos conectados ',
+                '- A medida que las aplicaciones se vuelven cada vez más distribuidas han surgido patrones para satisfacer a la multitud de dispositivos conectados ',
                 '- Esta arquitectura proporciona un backend dedicado para cada interfaz de frontened, en lugar de depender de un API monolitica o un <em>API Gateway</em> ',
                 '- Cada backend es independiente y se encarga de: ',
                 ' - Consolidar u orquestar las llamadas a los multiples servicios involucrados ',
