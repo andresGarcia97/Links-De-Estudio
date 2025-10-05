@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.APIS_SECURITY;
+export const LAST_ITEM = Keys.CONOCIMIENTOS_EMPIRICOS_LESSONS_AND_LEADER_TECHNICAL;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -252,6 +252,10 @@ export const CONOCIMIENTO_EMPIRICO = new Map<string, Referencia>([
     [Keys.CONOCIMIENTOS_EMPIRICOS_STAGES_COMPETENCE_MODEL, new Referencia('https://www.innovationtraining.org/the-four-stages-of-competence-model/', 'Etapas del modelo de competencia', CONOCIMIENTO_EMPIRICO_KEY, 'Modelo de competencia', '2024/09/09')],
     [Keys.CONOCIMIENTOS_EMPIRICOS_EXPIERENCE_LESSONS, new Referencia('https://dev.jimgrey.net/2024/07/03/lessons-learned-in-35-years-of-making-software/', 'Experiencia', CONOCIMIENTO_EMPIRICO_KEY, 'Experiencia', '2024/10/31')],
     [Keys.CONOCIMIENTOS_EMPIRICOS_CODE_MAINTAINER, new Referencia('https://java-design-patterns.com/es/principles/#code-for-the-maintainer', 'Mantenimiento de codigo', CONOCIMIENTO_EMPIRICO_KEY, 'Mantenimiento', '2025/07/08').addRelatedItems(Keys.WEB_MENOR_SORPRESA, Keys.REFACTORING_CLEAN_CODE, Keys.COMPILACION_OFUSCACION)],
+    [Keys.CONOCIMIENTOS_EMPIRICOS_LESSONS_AND_LEADER_TECHNICAL, new Referencia('https://medium.com/javarevisited/5-programming-lessons-i-wish-someone-had-beaten-into-my-head-early-on-af88960ac480', 'Lecciones técnicas y de liderazgo', CONOCIMIENTO_EMPIRICO_KEY, 'Lecciones & Liderazgo', '2025/10/04')
+        .addRelatedItems(Keys.REFACTORING_CLEAN_CODE, Keys.POO_ABSTRACTIONS, Keys.PRINCIPIOS_YAGNI, Keys.POO_HERENCIA_COMPOSICION, Keys.REFACTORING_GOOD_AND_BAD_PRACTICES, Keys.PRINCIPIOS_KISS, Keys.MALAS_PRACTICAS_CONTRA_CALIDAD, Keys.PEOPLE_LANGUAGE_UBICUOS, Keys.PEOPLE_SINDROMES_LABORALES, Keys.CALIDAD_CODE_REVIEWS, Keys.PERSISTENCY_ADVANCED_ORM, Keys.PERSISTENCY_ADVANCED_N_1_SELECTS)
+        .addMoreReferences('https://medium.com/javarevisited/what-no-one-told-me-about-becoming-a-tech-lead-0d16f689aa6a')
+    ],
 ]);
 
 export const LEYES_KEY = 'Leyes';
@@ -374,7 +378,7 @@ export const MALAS_PRACTICAS_KEY = 'Malas-Practicas';
 export const MALAS_PRACTICAS_REF = new Map<string, Referencia>([
     //['callbackhell', new Referencia('https://codearmy.co/que-es-el-callback-hell-y-como-evitarlo-4af418a6ed14', 'Cadena de llamados asincronos', MALAS_PRACTICAS_KEY, 'Callback Hell')],
     [Keys.MALAS_PRACTICAS_CALLBACK_HELL, new Referencia('https://dev.to/shameel/callback-callback-hell-promise-chaining-and-asyncawait-in-javascript-120i', 'Cadena de llamados asincronos', MALAS_PRACTICAS_KEY, 'Callback Hell', '', '2025/04/05')],
-    ['contraCalidad', new Referencia('https://softgrade.mx/5-causas-afectan-la-calidad-software/', 'En contra de la calidad', MALAS_PRACTICAS_KEY, 'Contra la calidad')],
+    [Keys.MALAS_PRACTICAS_CONTRA_CALIDAD, new Referencia('https://softgrade.mx/5-causas-afectan-la-calidad-software/', 'En contra de la calidad', MALAS_PRACTICAS_KEY, 'Contra la calidad', '', '2025/10/05').addRelatedItems(Keys.AGILES_ESTIMATION_LAWS, Keys.REQUISITOS_BUSINESS_VALUE, Keys.PATRONES_GOF)],
     //['contraGestion', new Referencia('https://blog.gft.com/es/2016/01/20/las-10-malas-practicas-mas-comunes-en-la-gestion-de-proyectos/', 'En contra de la gestión', MALAS_PRACTICAS_KEY, 'Contra la gestion')],
     ['contraGestion', new Referencia('https://www.smartprecisesolutions.com/2018/01/malas-practicas-en-la-gestion-de-proyectos/', 'En contra de la gestión', MALAS_PRACTICAS_KEY, 'Contra la gestion', '', '2024/05/08')],
     ['contraAgilidad', new Referencia('https://giovannycifuentes.com/los-6-antipatrones-en-la-adopcion-de-agilidad-que-los-lideres-deberian-conocer/', 'En contra de las metodologias agiles', MALAS_PRACTICAS_KEY, 'Contra la Agilidad', '2023/02/25')],
@@ -628,7 +632,7 @@ export const PEOPLE_REF = new Map<string, Referencia>([
     [Keys.PEOPLE_CAPA_8, new Referencia('https://www.merca20.com/que-es-un-error-de-capa-8-y-como-evitas-que-arruine-tu-marketing/', 'Capa 8', PEOPLE_KEY, 'Error en capa 8', '', '2025/04/23').addRelatedItem(Keys.HARDWARE_MODEL_OSI)],
     [Keys.PEOPLE_NO_NEWS_GOOD_NEWS, new Referencia('https://blog.carreralinux.com.ar/2020/05/si-no-hay-noticias-son-buenas-noticias-no-news-good-news/', 'Sin noticias, Son buenas noticias', PEOPLE_KEY, 'No News Good News', '', '2025/02/02')],
     ['tiposHackers', new Referencia('https://www.freecodecamp.org/news/white-hat-black-hat-red-hat-hackers/', 'Tipos de Hackers (sombreros)', PEOPLE_KEY, 'Tipos de Hackers')],
-    ['sindromesLaborales', new Referencia('https://www.sage.com/es-es/blog/burnout-procusto-y-otros-14-sindromes-tipicos-del-mundo-empresarial/#gate-263a5c00-99e4-4e71-8421-469deda8e674', 'Sindromes laborales', PEOPLE_KEY, 'Sindromes Laborales', '2023/06/26')],
+    [Keys.PEOPLE_SINDROMES_LABORALES, new Referencia('https://www.sage.com/es-es/blog/burnout-procusto-y-otros-14-sindromes-tipicos-del-mundo-empresarial/#gate-263a5c00-99e4-4e71-8421-469deda8e674', 'Sindromes laborales', PEOPLE_KEY, 'Sindromes Laborales', '2023/06/26')],
     ['icebergIgnorance', new Referencia('https://prevencontrol.com/prevenblog/y-tu-cuanto-sabes-acerca-de-lo-que-ocurre-en-tu-organizacion/', 'Iceberg de la Ignorancia', PEOPLE_KEY, 'Iceberg de la Ignorancia', '2023/08/04')],
     [Keys.PEOPLE_LANGUAGE_UBICUOS, new Referencia('https://hackernoon.com/ubiquitous-language-a-key-to-success-in-professional-environments/', 'Lenguaje Ubicuo', PEOPLE_KEY, 'Lenguaje Ubicuo', '2023/09/03').addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_DDD)],
     ['hippoEfect', new Referencia('https://www.forbes.com/sites/bernardmarr/2017/10/26/data-driven-decision-making-beware-of-the-hippo-effect/', 'Efecto HIPPO', PEOPLE_KEY, 'Efecto H.I.P.P.O', '2023/11/06')],
