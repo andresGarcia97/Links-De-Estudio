@@ -833,7 +833,7 @@ export const FRAMEWORKS =
                 '- Algunos frameworks pueden ayudar en este sentido, e incluso existen aplicaciones con este proposito ',
                 '',
                 '- No solo se genera el código funcional, también se generan las bases para crear las pruebas unitarias y de integración respectivas ',
-                '- Un problema comun suele ser la sobre ingenieria ya que se genera una base enorme de código que se debe comprender y mantener ',
+                '- Un problema comun suele ser la sobreingenieria ya que se genera una base enorme de código que se debe comprender y mantener ',
                 '- Cada generación se debe acomodar al framework que se escoja y a la forma de trabajar del equipo, no al reves ',
             ]),
         new Item(Keys.FRAMEWORKS_IOD_SPRING,

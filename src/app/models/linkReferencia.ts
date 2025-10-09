@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.CONOCIMIENTOS_EMPIRICOS_LESSONS_AND_LEADER_TECHNICAL;
+export const LAST_ITEM = Keys.ARQUITECTURAS_MISTAKES_II;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -151,7 +151,10 @@ export const ARQUITECTURAS_REF = new Map<string, Referencia>([
     [Keys.ARQUITECTURAS_EXPERIMENTATION, new Referencia('https://www.infoq.com/articles/architecture-experimentation/', 'Minima Arquitectura Viable', ARQUITECTURAS_KEY, 'MVA', '2025/01/12').addRelatedItems(Keys.ANALISIS_DATA_MVP, Keys.CD_CI_DEPLOYMENT_PATTERNS, Keys.NEURO_MARKETING_WHAT_IS)],
     [Keys.ARQUITECTURAS_HOW_TO_CHOOSE_IT, new Referencia('https://appmaster.io/es/blog/como-elegir-la-arquitectura-de-software', '¿ Como escoger una Arquitectura ?', ARQUITECTURAS_KEY, '¿ Como Escogerla ?', '2025/03/25').addRelatedItems(Keys.HARDWARE_ESCALAMIENTO, Keys.MICROSERVICES_FUNDAMENTALS, Keys.NUBE_NATIVE)],
     [Keys.ARQUITECTURAS_WHY_CLEAN, new Referencia('https://medium.com/unil-ci-software-engineering/why-clean-architecture-b84be50ea80d', '¿ Porque una Arquitectura Limpia ?', ARQUITECTURAS_KEY, '¿ Porque ?', '2025/04/13').addRelatedItems(Keys.POO_COUPLING_COMPONENTS, Keys.META_ESTRUCTURAS_SISTEMAS_COMPLEJOS, Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS, Keys.POO_POLIMORFISMO, Keys.PRINCIPIOS_SOLID, Keys.ESTRATEGIAS_DESARROLLO_DDD)],
-    [Keys.ARQUITECTURAS_MISTAKES, new Referencia('https://medium.com/@vndpal/7-architecture-mistakes-even-senior-engineers-make-and-how-to-fix-them-9f4086d487da', 'Errores a evitar', ARQUITECTURAS_KEY, 'Errores', '2025/08/18').addRelatedItems(Keys.MALAS_PRACTICAS_OVER_ENGINEERING, Keys.PRINCIPIOS_KISS, Keys.MALAS_PRACTICAS_DEATH_BY_MICROSERVICES, Keys.NUBE_OBSERVABILIDAD, Keys.VERSIONAMIENTO_DOCUMENTATION, Keys.CONOCIMIENTOS_EMPIRICOS_CODE_MAINTAINER)],
+    [Keys.ARQUITECTURAS_MISTAKES_I, new Referencia('https://medium.com/@vndpal/7-architecture-mistakes-even-senior-engineers-make-and-how-to-fix-them-9f4086d487da', 'Errores a evitar', ARQUITECTURAS_KEY, 'Errores I', '2025/08/18').addRelatedItems(Keys.MALAS_PRACTICAS_OVER_ENGINEERING, Keys.PRINCIPIOS_KISS, Keys.MALAS_PRACTICAS_DEATH_BY_MICROSERVICES, Keys.NUBE_OBSERVABILIDAD, Keys.VERSIONAMIENTO_DOCUMENTATION, Keys.CONOCIMIENTOS_EMPIRICOS_CODE_MAINTAINER)],
+    [Keys.ARQUITECTURAS_MISTAKES_II, new Referencia('https://medium.com/@maahisoft20/10-deadly-sins-of-system-architecture-that-will-haunt-you-at-scale-841dabe54a44', 'Errores de arquitectura que emergen al escalar', ARQUITECTURAS_KEY, 'Errores II', '2025/10/08')
+        .addRelatedItems(Keys.TESTING_ADVANCED_CHARGE, Keys.MICROSERVICES_DISTRIBUTED_MONOLITH, Keys.PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL, Keys.PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS, Keys.NUBE_OBSERVABILIDAD, Keys.MALAS_PRACTICAS_OVER_ENGINEERING, Keys.CD_CI_STATELESS_STATEFUL, Keys.CD_CI_FAILOVER, Keys.PATRONES_RESILIENCIA, Keys.PEOPLE_PEOPLE_PROCESS_TECNOLOGY)
+    ],
 ]);
 
 export const BUENAS_PRACTICAS_KEY = 'Buenas-Practicas';
@@ -387,7 +390,7 @@ export const MALAS_PRACTICAS_REF = new Map<string, Referencia>([
     [Keys.MALAS_PRACTICAS_ANTI_PATRONES_ARQUITECTURAS, new Referencia('https://lab.scub.net/architecture-anti-patterns-the-dark-side-of-the-architect-d9265b52d997', 'Anti patrones en Arquitecturas', MALAS_PRACTICAS_KEY, 'Contra Arquitecturas', '2024/09/07')],
     [Keys.MALAS_PRACTICAS_ANEMIC_DOMAIN, new Referencia('https://martinfowler.com/bliki/AnemicDomainModel.html', 'Dominio Anemico', MALAS_PRACTICAS_KEY, 'Dominio Anemico', '2024/05/08').addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_DDD)],
     [Keys.MALAS_PRACTICAS_TRAIN_WECKS, new Referencia('https://www.thinkcode.se/blog/2011/12/30/how-many-train-wrecks-are-lurking-in-your-code', 'Accidentes de trenes', MALAS_PRACTICAS_KEY, 'Accidentes de trenes', '2024/05/22', '2024/10/12').addRelatedItems(Keys.BUENAS_PRACTICAS_DEMETER, Keys.POO_POO_PILARES)],
-    [Keys.MALAS_PRACTICAS_OVER_ENGINEERING, new Referencia('https://vtsen.hashnode.dev/dry-kiss-and-yagni-to-avoid-over-engineering-trap', 'Sobre Ingenieria', MALAS_PRACTICAS_KEY, 'Sobre Ingenieria', '2025/05/20').addRelatedItems(Keys.META_CARACTERISTICAS_GENERICS, Keys.POO_HERENCIA_COMPOSICION, Keys.PRINCIPIOS_SOLID, Keys.BUENAS_PRACTICAS_INDIRECTION)]
+    [Keys.MALAS_PRACTICAS_OVER_ENGINEERING, new Referencia('https://vtsen.hashnode.dev/dry-kiss-and-yagni-to-avoid-over-engineering-trap', 'Sobreingenieria', MALAS_PRACTICAS_KEY, 'Sobreingenieria', '2025/05/20').addRelatedItems(Keys.META_CARACTERISTICAS_GENERICS, Keys.POO_HERENCIA_COMPOSICION, Keys.PRINCIPIOS_SOLID, Keys.BUENAS_PRACTICAS_INDIRECTION)]
 ]);
 
 export const META_CARACTERISTICAS_KEY = 'Meta-Caracteristicas';

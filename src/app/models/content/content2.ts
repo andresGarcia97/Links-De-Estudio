@@ -832,7 +832,7 @@ export const ANALISIS =
                 '- Los modelos tradicionales suelen tener un pensamiento lineal al cual responde antes los cambios y evoluciona de una manera más rigida ',
                 '',
                 '<strong>Principios</strong>',
-                '- El desarrollo de software es un trabajo en equipo; la arquictectura, el diseño y el codigo deben comunicarse de forma clara e intuitiva ',
+                '- El desarrollo de software es un trabajo en equipo; la arquitectura, el diseño y el codigo deben comunicarse de forma clara e intuitiva ',
                 '- La complejidad es el enemigo, esta debe reducirse lo más posible mediante iteraciones y mejora continua ',
                 '- Escuchar a los expertos nos ayuda a crear aplicaciones que resuelven mejor las necesidades evitando cometer errores por falta de comunicación ',
                 '- La arquitectura es plomeria, si el flujo de datos se detiene, el negocio tambien, los represamientos pueden llegar a ser desastrosos ',

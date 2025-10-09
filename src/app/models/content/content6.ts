@@ -1854,7 +1854,7 @@ export const MALAS_PRACTICAS =
             ]),
         new Item(Keys.MALAS_PRACTICAS_OVER_ENGINEERING,
             [
-                '- La sobre ingenieria es un problema silencioso en el que muchos desarrolladores pueden llegar a caer sin darse cuenta ',
+                '- La sobreingenieria es un problema silencioso en el que muchos desarrolladores pueden llegar a caer sin darse cuenta ',
                 '',
                 '<strong>Factores que contribuyen</strong>',
                 '- Poca comprensión de los requisitos, anticipando problemas que son poco probables generando complejidad innecesaria en el sistema ',
