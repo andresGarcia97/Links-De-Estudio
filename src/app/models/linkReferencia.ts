@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.BUENAS_PRACTICAS_DYNAMIC_CODE_ANALYSIS;
+export const LAST_ITEM = Keys.CD_CI_MONITORING_AND_ALERTS;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -818,7 +818,7 @@ export const SECURITY_REF = new Map<string, Referencia>([
     //['cia', new Referencia('https://searchdatacenter.techtarget.com/es/opinion/Que-es-la-triada-de-la-CIA', 'Confidencialidad-Integridad-Accesibilidad ', SECURITY_KEY, 'CIA')],
     ['cia', new Referencia('https://www.computerweekly.com/es/opinion/Que-es-la-triada-de-la-CIA', 'Confidencialidad-Integridad-Accesibilidad ', SECURITY_KEY, 'CIA', '', '2024/06/16')],
     ['noRepudio', new Referencia('https://www.unir.net/ingenieria/revista/no-repudio-seguridad-informatica/', 'No repudio', SECURITY_KEY, 'NO Repudio')],
-    ['matrizDeRiesgo', new Referencia('https://www.protek.com.py/novedades/objetivos-de-una-matriz-de-riesgos/', 'Matriz de Riesgo', SECURITY_KEY, 'Matriz de Riesgo')],
+    [Keys.SECURITY_MATRIZ_DE_RIESGOS, new Referencia('https://www.protek.com.py/novedades/objetivos-de-una-matriz-de-riesgos/', 'Matriz de Riesgo', SECURITY_KEY, 'Matriz de Riesgo', '', '2025/10/12')],
     [Keys.SECURITY_CONDICION_CARRERA, new Referencia('https://ciberseguridad.com/amenzas/vulnerabilidades/condicion-de-carrera/', 'Condición de Carrera', SECURITY_KEY, 'Carrera', '', '2025/04/08')],
     ['honeypot', new Referencia('https://latam.kaspersky.com/resource-center/threats/what-is-a-honeypot', 'Honetypot', SECURITY_KEY, 'Honeypot')],
     ['zeroDayExploit', new Referencia('https://latam.kaspersky.com/resource-center/definitions/zero-day-exploit', 'Zero Day Exploit', SECURITY_KEY, 'Zero Day Exploit')],
@@ -1042,6 +1042,10 @@ export const CI_CD_REF = new Map<string, Referencia>([
     [Keys.CD_CI_RULES, new Referencia('https://semaphoreci.com/blog/rules-ci-pipeline', 'Reglas de un Pipeline', CI_CD_KEY, 'Pipelines Rules', '2024/12/26').addRelatedItems(Keys.GIT_BRANCHS, Keys.CALIDAD_LINTING, Keys.TESTING_PIRAMIDE, Keys.CONTENEDORES_DOCKER)],
     [Keys.CD_CI_FAILOVER, new Referencia('https://stackoverflow.blog/2020/10/23/adrian-cockcroft-aws-failover-chaos-engineering-fault-tolerance-distaster-recovery/', 'Failover & Ingenieria del caos', CI_CD_KEY, 'Failover, Caos, Resiliencia', '2025/04/06').addRelatedItems(Keys.NUBE_SRE, Keys.ANALISIS_SINGLE_POINT_OF_FAILURE, Keys.NUBE_DISPONIBILITY)],
     [Keys.CD_CI_MONITORING, new Referencia('https://www.squadcast.com/blog/comparing-uptime-monitoring-heartbeat-monitoring-and-synthetic-monitoring', 'Monitoreo de un sistema', CI_CD_KEY, 'Monitoreo', '2025/05/01').addRelatedItems(Keys.NUBE_DISPONIBILITY, Keys.NUBE_SRE, Keys.NUBE_LOAD_BALANCING, Keys.HARDWARE_ESCALAMIENTO, Keys.WEB_GOLDEN_SIGNALS, Keys.MICROSERVICES_DISTRIBUTED_TRANSACTIONS)],
+    [Keys.CD_CI_MONITORING_AND_ALERTS, new Referencia('https://edgedelta.com/company/blog/monitoring-and-alerting-best-practices', 'Monitoreo, Alertas & Observabilidad', CI_CD_KEY, 'Monitoreo y Alertas', '2025/10/12')
+        .addRelatedItems(Keys.NUBE_OBSERVABILIDAD, Keys.TESTING_ADVANCED_PERFORMANCE, Keys.ANALISIS_COMMON_METRICS, Keys.PEOPLE_DIKW, Keys.SECURITY_MATRIZ_DE_RIESGOS, Keys.COMPILACION_INSTRUMENTS, Keys.NUBE_SRE, Keys.COMPILACION_SDK_VS_API)
+        .addMoreReferences('https://opentelemetry.io/docs/what-is-opentelemetry/', 'https://opentelemetry.io/docs/concepts/instrumentation/zero-code/', 'https://betterstack.com/community/guides/monitoring/what-is-metrics-monitoring-alerting/')
+    ],
     [Keys.CD_CI_DEPLOYMENT_ARQUITECTURE, new Referencia('https://medium.com/nerd-for-tech/software-deployment-as-architecture-648867bdb77c', 'Implementación como Arquitectura', CI_CD_KEY, 'Deploy & Arquitectura', '2025/06/12').addRelatedItems(Keys.ARQUITECTURAS_DESCOMPOSICION_MODULAR, Keys.ARQUITECTURAS_MONOLITOS, Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES, Keys.VERSIONAMIENTO_VERSIONAMIENTO, Keys.APIS_REST_VS_MESSAGING, Keys.ANALISIS_BOUNDED_CONTEXT, Keys.MICROSERVICES_ARQUITECTURAS, Keys.CONTENEDORES_ORCHESTRATION, Keys.NUBE_NATIVE, Keys.MALAS_PRACTICAS_DEATH_BY_MICROSERVICES)],
     [Keys.CD_CI_INFRAESTRUCTURE_DESIGN, new Referencia('https://medium.com/@osomudeyazudonu/10-infrastructure-design-choices-that-will-haunt-you-in-production-31c1c83fb2a3', 'Diseño & infraestructura', CI_CD_KEY, 'Diseño & infraestructura', '2025/09/02')
         .addRelatedItems(Keys.TESTING_ADVANCED_ENVIRONMENT, Keys.ANALISIS_SYSTEM_THINKING_II, Keys.ANALISIS_SINGLE_POINT_OF_FAILURE, Keys.APIS_API_FIRST, Keys.MICROSERVICES_PROBLEMS, Keys.LEYES_MURPHY, Keys.SECURITY_LEAST_PRIVILEGE, Keys.PATRONES_DYSTRIBUTED_SYSTEMS, Keys.CALIDAD_CODE_REVIEWS, Keys.HARDWARE_ESCALAMIENTO, Keys.NUBE_DISPONIBILITY, Keys.MICROSERVICES_DISTRIBUTED_TRACING)
