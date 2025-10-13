@@ -1,7 +1,8 @@
 export const META_ESTRUCTURAS_SCOPE = 'scope';
 export const META_ESTRUCTURAS_PRECEDENCIA = 'precedencia';
-export const META_ESTRUCTURAS_REGEX = 'expresionesRegulares';
 export const META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL = 'verticalAndHorizontal';
+export const META_ESTRUCTURAS_LAYERS_SOFTWARE = 'systemArquitectureSoftwareLayers';
+export const META_ESTRUCTURAS_REGEX = 'expresionesRegulares';
 export const META_ESTRUCTURAS_ESTRUCTURAS_DATOS_I = 'estructurasDatos-I';
 export const META_ESTRUCTURAS_ESTRUCTURAS_DATOS_II = 'estructurasDatos-II';
 export const META_ESTRUCTURAS_SEARCH_AND_SORT = 'searchAndSort';
@@ -63,7 +64,6 @@ export const ARQUITECTURAS_STYLES_II = 'stylesArchitecture-II';
 export const ARQUITECTURAS_MODULITHS = 'monolitosModulares';
 export const ARQUITECTURAS_DESCOMPOSICION_MODULAR = 'descomposicionModular';
 export const ARQUITECTURAS_EVENT_DRIVEN = 'eventDriven';
-export const ARQUITECTURAS_LAYERS_SOFTWARE = 'systemArquitectureSoftwareLayers';
 export const ARQUITECTURAS_EXPERIMENTATION = 'arquitectureExperimentation-MVA';
 export const ARQUITECTURAS_HOW_TO_CHOOSE_IT = 'arquitectureComoEscogerla';
 export const ARQUITECTURAS_WHY_CLEAN = 'whyCleanArquitecture';

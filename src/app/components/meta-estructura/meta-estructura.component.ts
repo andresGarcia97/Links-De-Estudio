@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { META_ESTRUCTURAS } from 'src/app/models/content/content5';
 import { META_CARACTERISTICAS_KEY, COMPILACION_KEY, LinkReferencia, META_ESTRUCTURAS_REF, PATRONES_KEY, REFACTORING_KEY,
-  CALIDAD_KEY, META_ESTRUCTURAS_KEY, HARDWARE_KEY }
+  CALIDAD_KEY, HARDWARE_KEY }
 from 'src/app/models/linkReferencia';
 import { PreviousAndNextSection } from 'src/app/models/models';
 
@@ -32,8 +32,8 @@ export class MetaEstructuraComponent implements OnInit {
     this.relatedSections.set(PATRONES_KEY,             routes.get(PATRONES_KEY)!);
     this.relatedSections.set(CALIDAD_KEY,              routes.get(CALIDAD_KEY)!);
     this.previousAndNextSection = new PreviousAndNextSection(
-      META_ESTRUCTURAS_KEY, routes.get(META_ESTRUCTURAS_KEY)!,
-      HARDWARE_KEY,         routes.get(HARDWARE_KEY)!
+      META_CARACTERISTICAS_KEY, routes.get(META_CARACTERISTICAS_KEY)!,
+      HARDWARE_KEY,             routes.get(HARDWARE_KEY)!
     );
   }
 
