@@ -1662,6 +1662,9 @@ export const PATRONES =
                 '',
                 '<strong>Sharding:</strong> Fragmentar es dividir una pieza de gran tamaño, en otras más pequeñas y manejables ',
                 '- En grandes volumenes de datos se hace esto para gestionarlos de manera eficiente, además de reducir la latencia al estar mejor localizados ',
+                '',
+                '<strong>Auditoria & Registro:</strong> Rastrean acciones, eventos y cambios relevantes para la seguridad del sistema distribuido ',
+                '- Los registros y la auditoria deben ser exhaustivos, de manera que puedan ayudar en el analisis forense e investigación de incidentes '
             ]),
         new Item(Keys.PATRONES_STATE,
             [

@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.CD_CI_MONITORING_AND_ALERTS;
+export const LAST_ITEM = Keys.ARQUITECTURAS_PATRONES_II;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -135,12 +135,18 @@ export const ARQUITECTURAS_REF = new Map<string, Referencia>([
     [Keys.ARQUITECTURAS_MVC, new Referencia('https://developer.mozilla.org/es/docs/Glossary/MVC', 'Modelo-Vista-Controlador', ARQUITECTURAS_KEY, 'MVC', '2025/03/06')],
     //['mvpMvc', new Referencia('https://www.develapps.com/es/noticias/modelo-vista-presentador-mvp-en-android', 'Modelo-Vista-Presentador', ARQUITECTURAS_KEY, 'MVP')],
     [Keys.ARQUITECTURAS_MVP_MVC, new Referencia('https://keepcoding.io/blog/que-es-mvc-mvp-y-mvvm-en-android/', 'Modelo-Vista-Presentador', ARQUITECTURAS_KEY, 'MVP', '', '2024/06/17').addRelatedItem(Keys.META_CARACTERISTICAS_BOILER_PLATE)],
-    [Keys.ARQUITECTURAS_OTRAS, new Referencia('https://medium.com/@maniakhitoccori/los-10-patrones-comunes-de-arquitectura-de-software-d8b9047edf0b', 'Otras Arquitecturas', ARQUITECTURAS_KEY, 'Otras (patrones)', '2023/12/17', '2025/08/18').addRelatedItems(Keys.MICROSERVICES_ARQUITECTURAS, Keys.APIS_REST_VS_MESSAGING, Keys.ANALISIS_DOMAIN_EVENTS)],
+    [Keys.ARQUITECTURAS_PATRONES_I, new Referencia('https://medium.com/@maniakhitoccori/los-10-patrones-comunes-de-arquitectura-de-software-d8b9047edf0b', 'Patrones Arquitectonicos I', ARQUITECTURAS_KEY, 'Patrones Arquitectonicos I', '2023/12/17', '2025/08/18')
+        .addRelatedItems(Keys.MICROSERVICES_ARQUITECTURAS, Keys.APIS_REST_VS_MESSAGING, Keys.ANALISIS_DOMAIN_EVENTS)
+    ],
+    [Keys.ARQUITECTURAS_PATRONES_II, new Referencia('https://levelup.gitconnected.com/architecture-design-patterns-every-senior-developer-must-know-part-2-0409ec13f8c2', 'Patrones Arquitectonicos II', ARQUITECTURAS_KEY, 'Patrones Arquitectonicos II', '2025/10/12')
+        .addRelatedItems(Keys.ANALISIS_DATA_BATCH_VS_STREAM, Keys.PATRONES_SAGA, Keys.COMPILACION_INSTRUMENTS, Keys.CD_CI_FAILOVER, Keys.ANALISIS_LIGHT_EVENTS_VS_RICH_EVENTS, Keys.NUBE_PACELC, Keys.PERSISTENCY_CONSISTENCY)
+        .addMoreReferences('https://dev.to/jaiminbariya/understanding-quorum-based-approaches-in-distributed-systems-jaimin-bariya-5h1b/')
+    ],
     [Keys.ARQUITECTURAS_MONOLITOS, new Referencia('https://www.paradigmadigital.com/techbiz/microservicios-vs-microlitos-vs-monolitos-ventajas-desventajas/', 'Monolitos VS Microservicios', ARQUITECTURAS_KEY, 'Monolitos')],
     //['stylesArchitecture1', new Referencia('https://hdnmetatech.com/news/our-press/detail/introduction-to-architecture-styles-and-patterns-as-a-blueprint-for-designing-a-system', 'Estilos #1', ARQUITECTURAS_KEY, 'Estilos & Patrones #1')],
     //['stylesArchitecture2', new Referencia('https://hdnmetatech.com/news/our-press/detail/introduction-to-architecture-styles-and-patterns-as-a-blueprint-for-designing-a-system', 'Estilos #2', ARQUITECTURAS_KEY, 'Estilos & Patrones #2')],
-    [Keys.ARQUITECTURAS_STYLES_I, new Referencia('https://blog.bytebytego.com/p/ep68-top-architectural-styles?open=false#%C2%A7top-architectural-styles', 'Estilos de Arquitecturas #1', ARQUITECTURAS_KEY, 'Estilos & Patrones #1', '', '2025/04/01').addRelatedItems(Keys.POO_POO_PILARES, Keys.MICROSERVICES_ARQUITECTURAS, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS)],
-    [Keys.ARQUITECTURAS_STYLES_II, new Referencia('https://blog.bytebytego.com/p/ep68-top-architectural-styles?open=false#%C2%A7top-architectural-styles', 'Estilos de Arquitecturas #2', ARQUITECTURAS_KEY, 'Estilos & Patrones #2', '', '2025/04/01').addRelatedItems(Keys.ANALISIS_DATA_ARQUITECTURE_PATTERNS, Keys.ANALISIS_DOMAIN_EVENTS)],
+    [Keys.ARQUITECTURAS_STYLES_I, new Referencia('https://blog.bytebytego.com/p/ep68-top-architectural-styles?open=false#%C2%A7top-architectural-styles', 'Estilos de Arquitecturas I', ARQUITECTURAS_KEY, 'Estilos & Patrones I', '', '2025/04/01').addRelatedItems(Keys.POO_POO_PILARES, Keys.MICROSERVICES_ARQUITECTURAS, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS)],
+    [Keys.ARQUITECTURAS_STYLES_II, new Referencia('https://blog.bytebytego.com/p/ep68-top-architectural-styles?open=false#%C2%A7top-architectural-styles', 'Estilos de Arquitecturas II', ARQUITECTURAS_KEY, 'Estilos & Patrones II', '', '2025/04/01').addRelatedItems(Keys.ANALISIS_DATA_ARQUITECTURE_PATTERNS, Keys.ANALISIS_DOMAIN_EVENTS)],
     [Keys.ARQUITECTURAS_MODULITHS, new Referencia('https://levelup.gitconnected.com/architecture-style-modulith-vs-microservices-90c7c75713db', 'Monolitos Modulares', ARQUITECTURAS_KEY, 'Monolitos Modulares', '2024/02/02', '2025/07/13')
         .addRelatedItems(Keys.MICROSERVICES_ARQUITECTURAS, Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.ANALISIS_SINGLE_POINT_OF_FAILURE, Keys.POO_DESIGN_BY_CONTRACT)
         .addMoreReferences('https://medium.com/mr-plan-publication/modular-monoliths-software-architecture-part-4-3cc7fa376e58')
@@ -619,7 +625,10 @@ export const PATRONES_REF = new Map<string, Referencia>([
     [Keys.PATRONES_INBOX, new Referencia('https://medium.com/hprog99/overcoming-message-delivery-challenges-in-distributed-systems-a-comprehensive-look-at-outbox-and-a669e5f21898', 'Patron Inbox', PATRONES_KEY, 'Patron Inbox', '2025/03/18').addRelatedItem(Keys.APIS_IDEMPOTENCIA)],
     [Keys.PATRONES_UNIT_OF_WORK, new Referencia('https://java-design-patterns.com/patterns/unit-of-work/', 'Unit of Work', PATRONES_KEY, 'Unit of Work', '2025/03/09').addRelatedItems(Keys.PERSISTENCY_ACID, Keys.PERSISTENCY_ADVANCED_ORM, Keys.ESTRATEGIAS_DESARROLLO_DDD)],
     [Keys.PATRONES_CRITERIA, new Referencia('https://medium.com/@zerodata.aolink/desafiando-la-complejidad-c%C3%B3mo-el-patr%C3%B3n-criteria-resuelve-la-explosi%C3%B3n-de-m%C3%A9todos-de-nuestro-60ece5829f89', 'Patron Criteria', PATRONES_KEY, 'Patron Criteria', '2025/03/22').addRelatedItems(Keys.ARQUITECTURAS_HEXAGONAL, Keys.PRINCIPIOS_SOLID)],
-    [Keys.PATRONES_DYSTRIBUTED_SYSTEMS, new Referencia('https://medium.com/@maheshsaini.sec/10-must-know-distributed-system-patterns-ab98c594806a', 'Patrones para Sistemas Distribuidos', PATRONES_KEY, 'Sistemas Distribuidos', '2025/04/02').addRelatedItems(Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.MICROSERVICES_FUNDAMENTALS, Keys.CONTENEDORES_KUBERNETES, Keys.CD_CI_CELL_BASED_ARQUITECTURE, Keys.GIT_STRUCTURE_AND_CONCEPTS, Keys.MICROSERVICES_PRODUCER_CONSUMER_PROBLEM)],
+    [Keys.PATRONES_DYSTRIBUTED_SYSTEMS, new Referencia('https://medium.com/@maheshsaini.sec/10-must-know-distributed-system-patterns-ab98c594806a', 'Patrones para Sistemas Distribuidos', PATRONES_KEY, 'Sistemas Distribuidos', '2025/04/02')
+        .addRelatedItems(Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.MICROSERVICES_FUNDAMENTALS, Keys.CONTENEDORES_KUBERNETES, Keys.CD_CI_CELL_BASED_ARQUITECTURE, Keys.GIT_STRUCTURE_AND_CONCEPTS, Keys.MICROSERVICES_PRODUCER_CONSUMER_PROBLEM)
+        .addMoreReferences('https://www.geeksforgeeks.org/system-design/distributed-system-patterns/')
+    ],
     [Keys.PATRONES_STATE, new Referencia('https://maxim-gorin.medium.com/stop-writing-if-else-trees-use-the-state-pattern-instead-1fe9ff39a39c', 'Patron State', PATRONES_KEY, 'Patron State', '2025/04/20').addRelatedItems(Keys.CALIDAD_IF_ELSE, Keys.POO_POLIMORFISMO, Keys.PRINCIPIOS_SOLID, Keys.POO_ENUMS, Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS)],
     [Keys.PATRONES_FOR_INTEGRATION, new Referencia('https://docs.oracle.com/cd/E17904_01/doc.1111/e17363/chapter05.htm#FPCON244', 'Patrones para Integraciones', PATRONES_KEY, 'Integraciones', '2025/05/07')
         .addRelatedItems(Keys.APIS_REST_VS_MESSAGING, Keys.META_CARACTERISTICAS_BLOCKING_AND_NO_BLOCKING, Keys.ESTRATEGIAS_DESARROLLO_BFF, Keys.ANALISIS_QUEUES_SYSTEM_DESIGN)
