@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.ARQUITECTURAS_PATRONES_II;
+export const LAST_ITEM = Keys.VERSIONAMIENTO_EVOLUTION_SCHEMA_AND_SCHEMA_REGISTRY;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -951,7 +951,8 @@ export const UML_REF = new Map<string, Referencia>([
 export const VERSIONAMIENTO_KEY = 'Versionamiento';
 export const VERSIONAMIENTO_REF = new Map<string, Referencia>([
     [Keys.VERSIONAMIENTO_MANAGEMENT_VERSIONS, new Referencia('https://david-estevez.gitbooks.io/the-git-the-bad-and-the-ugly/content/es/control-de-versiones.html', 'Gestor de versiones', VERSIONAMIENTO_KEY, 'Gestor de Versiones', '', '2025/04/10').addRelatedItem(Keys.GIT_STRUCTURE_AND_CONCEPTS)],
-    [Keys.VERSIONAMIENTO_MANAGEMENT_DEPENDENCIES, new Referencia('https://www.hongkiat.com/blog/manage-dependencies-tools-webdev/', 'Gestores de dependencias', VERSIONAMIENTO_KEY, 'Dependencias Web')],
+    //[Keys.VERSIONAMIENTO_MANAGEMENT_DEPENDENCIES, new Referencia('https://www.hongkiat.com/blog/manage-dependencies-tools-webdev/', 'Gestores de dependencias', VERSIONAMIENTO_KEY, 'Dependencias Web')],
+    [Keys.VERSIONAMIENTO_MANAGEMENT_DEPENDENCIES, new Referencia('https://www.qodo.ai/glossary/software-dependency-management/', 'Gestores de dependencias', VERSIONAMIENTO_KEY, 'Gestores de dependencias', '', '2025/10/15')],
     // [Keys.VERSIONAMIENTO_VERSIONAMIENTO, new Referencia('https://ed.team/blog/como-se-deciden-las-versiones-del-software', 'Manejo de versiones', VERSIONAMIENTO_KEY, 'Versionamiento', '', '2025/08/27')
     [Keys.VERSIONAMIENTO_GRADLEW_VS_MAVEN, new Referencia('https://www.chakray.com/es/gradle-vs-maven-definiciones-diferencias/', 'Gradle VS Maven', VERSIONAMIENTO_KEY, 'Gradle VS Maven')],
     [Keys.VERSIONAMIENTO_VERSIONAMIENTO, new Referencia('https://www.linkedin.com/posts/alexxubyte_systemdesign-coding-interviewtips-activity-7366133616688414722-wAeu/', 'Manejo de versiones', VERSIONAMIENTO_KEY, 'Versionamiento', '', '2025/08/27')
@@ -966,6 +967,10 @@ export const VERSIONAMIENTO_REF = new Map<string, Referencia>([
     [Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES, new Referencia('https://github.com/kedro-org/kedro/wiki/Backwards-compatibility-and-breaking-changes', 'Retro compatibilidad y Breaking changes', VERSIONAMIENTO_KEY, 'Cambios y compatibilidad', '2024/05/19').addRelatedItems(Keys.LEYES_HYRUM, Keys.META_ESTRUCTURAS_DEPRECATION)],
     [Keys.VERSIONAMIENTO_DOCUMENT_ARQUITECTURE, new Referencia('https://lucamezzalira.medium.com/how-to-document-software-architecture-techniques-and-best-practices-2556b1915850', 'Documentación & Arquitectura', VERSIONAMIENTO_KEY, 'Docs & Arquitectura', '2024/12/01').addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_DDD)],
     [Keys.VERSIONAMIENTO_BOM, new Referencia('https://www.baeldung.com/spring-maven-bom', 'Gestion de dependencias con BOM', VERSIONAMIENTO_KEY, 'BOM', '2025/04/10').addRelatedItem(Keys.POO_HERENCIA)],
+    [Keys.VERSIONAMIENTO_EVOLUTION_SCHEMA_AND_SCHEMA_REGISTRY, new Referencia('https://estuary.dev/blog/real-time-schema-evolution/', 'Evolución de esquemas (schemas)', VERSIONAMIENTO_KEY, 'Evolución de esquemas', '2025/10/14')
+        .addRelatedItems(Keys.ANALISIS_QUEUES_SYSTEM_DESIGN, Keys.ANALISIS_DATA_BATCH_VS_STREAM, Keys.LEYES_LEHMAN, Keys.TESTING_CONTRACT_TESTING, Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION)
+        .addMoreReferences('https://docs.solace.com/Schema-Registry/schema-registry-best-practices.htm')
+    ],
 ]);
 
 export const HARDWARE_KEY = 'Hardware';

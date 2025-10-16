@@ -8,7 +8,7 @@ import { PreviousAndNextSection } from 'src/app/models/models';
   selector: 'app-versionamiento',
   templateUrl: './versionamiento.component.html'
 })
-export class VersionamientoComponent  implements OnInit {
+export class VersionamientoComponent implements OnInit {
 
   items = VERSIONAMIENTO;
 

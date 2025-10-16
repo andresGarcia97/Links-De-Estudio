@@ -489,6 +489,7 @@ export const VERSIONAMIENTO_DEPENDENCIES_ORDER = 'dependenciesOrder';
 export const VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES = 'backwardAndBreakingChanges';
 export const VERSIONAMIENTO_DOCUMENT_ARQUITECTURE = 'documentArquitecture';
 export const VERSIONAMIENTO_BOM = 'BillOfMaterials-BOM';
+export const VERSIONAMIENTO_EVOLUTION_SCHEMA_AND_SCHEMA_REGISTRY = 'evolution-schemas-and-schema-registry';
 export const CALIDAD_METRICS_SOFTWARE = 'metricsSoftware';
 export const CALIDAD_CLEAN_CODE = 'cleanCode';
 export const CALIDAD_CODE_REVIEWS = 'codeReviews';
