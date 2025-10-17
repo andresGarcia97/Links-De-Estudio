@@ -386,6 +386,7 @@ export const ANALISIS_DATA_OLAP_OLTP = 'OLAPvsOLTP';
 export const ANALISIS_DATA_DEDUPLICATION = 'deduplication';
 export const ANALISIS_DATA_TGS = 'teoriaGeneralDeSistemas-tgs';
 export const ANALISIS_DATA_ARQUITECTURE_PATTERNS = 'dataArquitecturePatterns';
+export const ANALISIS_DATA_COLUMNS_VS_ROWS = 'columnarDatabasesVsRowDatabases';
 export const GIT_STRUCTURE_AND_CONCEPTS = 'structureAndConceptsGit';
 export const GIT_BRANCHS = 'ramas';
 export const GIT_BRANCHS_STRATEGIES = 'branching-strategies';

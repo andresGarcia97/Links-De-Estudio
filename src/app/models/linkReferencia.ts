@@ -567,7 +567,9 @@ export const ANALISIS_DATA_REF = new Map<string, Referencia>([
     //['dataAnalisis', new Referencia('https://tienda.digital/4-tipos-de-analisis-de-datos-para-mejorar-la-toma-de-decisiones/', 'Analisis de datos', ANALISIS_KEY, 'Analisis de datos')],
     [Keys.ANALISIS_DATA_DATA_ANALISIS_TYPES, new Referencia('https://cidei.net/4-tipos-de-analitica-de-datos-que-mejoran-tu-toma-de-decisiones/', 'Tipos de analitica', ANALISIS_DATA_KEY, 'Analitica de datos', '2022/09/26', '2024/06/23')],
     [Keys.ANALISIS_DATA_SYSTEMS_INFORMATION, new Referencia('https://concepto.de/sistema-de-informacion/', 'Sistemas de Información', ANALISIS_DATA_KEY, 'Información', '', '2024/06/23')],
-    [Keys.ANALISIS_DATA_DATA_STORING, new Referencia('https://www.striim.com/blog/data-warehouse-vs-data-lake-vs-data-lakehouse-an-overview/', 'Analisis y almacenamiento de datos', ANALISIS_DATA_KEY, 'Almacenamiento de datos', '2023/08/22')],
+    [Keys.ANALISIS_DATA_DATA_STORING, new Referencia('https://www.striim.com/blog/data-warehouse-vs-data-lake-vs-data-lakehouse-an-overview/', 'Analisis y almacenamiento de datos', ANALISIS_DATA_KEY, 'Almacenamiento de datos', '2023/08/22', '2025/10/16')
+        .addMoreReferences('https://tdtapas.medium.com/battle-of-the-file-formats-parquet-delta-lake-iceberg-hudi-3ce21501b072')
+    ],
     [Keys.ANALISIS_DATA_ETL_ELT, new Referencia('https://aws.amazon.com/es/compare/the-difference-between-etl-and-elt', 'ETL & ELT', ANALISIS_DATA_KEY, 'ETL & ELT', '2024/02/11')],
     [Keys.ANALISIS_DATA_THEORY_OF_INFORMATION, new Referencia('https://www.ferrovial.com/es/stem/teoria-de-la-informacion/', 'Teoria de la información', ANALISIS_DATA_KEY, 'Teoria de la información', '2024/06/23').addRelatedItem(Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION)],
     [Keys.ANALISIS_DATA_CHANGE_DATA_CAPTURE, new Referencia('https://www.confluent.io/learn/change-data-capture/', 'Change Data Capture', ANALISIS_DATA_KEY, 'CDC', '2024/07/28').addRelatedItem(Keys.PERSISTENCY_ADVANCED_WAL)],
@@ -579,6 +581,9 @@ export const ANALISIS_DATA_REF = new Map<string, Referencia>([
     [Keys.ANALISIS_DATA_DEDUPLICATION, new Referencia('https://www.netapp.com/es/data-management/what-is-data-deduplication/', 'Deduplicación', ANALISIS_DATA_KEY, 'Deduplicación', '2024/11/24')],
     [Keys.ANALISIS_DATA_TGS, new Referencia('https://economipedia.com/definiciones/teoria-general-de-sistemas-tgs.html', 'Teoria General de Sistemas', ANALISIS_DATA_KEY, 'TGS', '2025/01/26')],
     [Keys.ANALISIS_DATA_ARQUITECTURE_PATTERNS, new Referencia('https://www.linkedin.com/posts/pooja-jain-898253106_data-engineering-bigdata-activity-7296475835677478912-F6tu/', 'Arquitecturas de Datos', ANALISIS_DATA_KEY, 'Arquitecturas de Datos', '2025/02/15')],
+    [Keys.ANALISIS_DATA_COLUMNS_VS_ROWS, new Referencia('https://www.tigerdata.com/learn/columnar-databases-vs-row-oriented-databases-which-to-choose', 'Columnas Vs Filas', ANALISIS_DATA_KEY, 'Columnas Vs Filas', '2025/10/16')
+        .addRelatedItems(Keys.PERSISTENCY_SCHEMAS, Keys.PERSISTENCY_ACID, Keys.PERSISTENCY_CRUD, Keys.PERSISTENCY_ADVANCED_NO_SQL_TYPES)
+    ],
 ]);
 
 export const PARADIGMAS_KEY = 'Paradigmas';
