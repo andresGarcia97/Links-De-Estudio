@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CD_CI_INFRAESTRUCTURE } from 'src/app/models/content/content3';
+import { CI_CD_INFRAESTRUCTURE } from 'src/app/models/content/content3';
 import {
   ANALISIS_DATA_KEY, APIS_KEY, CI_CD_REF, CONTENEDORES_KEY, HARDWARE_KEY, LinkReferencia, MICRO_SERVICES_KEY, NUBE_KEY,
   VERSIONAMIENTO_KEY, WEB_KEY }
@@ -12,7 +12,7 @@ import { PreviousAndNextSection } from 'src/app/models/models';
 })
 export class CDCIComponent implements OnInit {
 
-  items = CD_CI_INFRAESTRUCTURE;
+  items = CI_CD_INFRAESTRUCTURE;
 
   components = CI_CD_REF;
 

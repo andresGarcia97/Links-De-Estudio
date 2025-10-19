@@ -10,7 +10,7 @@ export class Content3 {
         ...PRINCIPIOS,
         ...REFACTORIZACION,
         ...SEGURIDAD,
-        ...CD_CI_INFRAESTRUCTURE
+        ...CI_CD_INFRAESTRUCTURE
     ];
 
 }
@@ -1555,7 +1555,7 @@ export const SEGURIDAD =
             ])
     ];
 
-export const CD_CI_INFRAESTRUCTURE =
+export const CI_CD_INFRAESTRUCTURE =
     [
         new Item(Keys.CD_CI_CD_CI,
             [
@@ -1590,28 +1590,34 @@ export const CD_CI_INFRAESTRUCTURE =
         new Item(Keys.CD_CI_IAS_CODE,
             [
                 '- Permite gestionar y preparar la infraestructura a traves del codigo, en vez de usar procesos manuales',
-                '- Se realiza mediante archivos de configuración, que contienen las especificaciones necesarias ',
+                '- Se realiza mediante archivos de configuración, que contienen todos los pasos y especificaciones necesarias ',
                 '- Garantizando un entorno que siempre va a ser congruente y evitar cambios abruptos sin documentación ',
-                '- Preparar la infraestructura generalmente habia sido un proceso manual y desganstante, pero en la actualidad ',
+                '- Preparar la infraestructura generalmente habia sido un proceso manual y desgastante, pero en la actualidad ',
                 ' - su gestión se ha traslado a enfoques como la virtualización, los contenedores o la Nube; logrando una mayor uniformidad y reduciendo errores ',
                 '',
-                '<strong>Enfoques:</strong>',
-                '<Strong>- Declarativo:</strong> Se define el estado de los sistemas, incluyendo los recursos que necesita y las prpiedades del sistema ',
-                ' - Delegando la responsabilidad del montaje, cofiguración y desmontaje a la herramienta que se haya escogido ',
-                '<Strong>- Imperativo:</strong> Aca se definen los comandos y el orden en que se deben realizar, para lograr la configuración deseada ',
-                ' - Muchas herramientas usan el primer enfoque, ya que cada cambio es resuelto por la herramienta y no es necesario intervenir ',
+                '<strong>Enfoques:</strong> Ambos enfoques se pueden combinar si es necesario, no son excluyentes ',
+                '<Strong>&bull; Declarativo:</strong> Se define el estado de los sistemas, incluyendo los recursos que necesita y las propiedades del sistema ',
+                '- Delega la responsabilidad del montaje, configuración y desmontaje a la herramienta que se haya escogido ',
+                '<Strong>&bull; Imperativo:</strong> Aca se definen los comandos y el orden en que se deben realizar, para lograr la configuración deseada ',
+                '- Muchas herramientas usan el primer enfoque, ya que cada cambio es resuelto por la herramienta y no es necesario intervenir ',
                 '',
                 '<strong>Ventajas:</strong>                                                 <strong>Herramientas:</strong>',
-                '- Reducción de costos                                      - Chef          - AWS CloudFormation',
-                '- Mejora la velocidad de implementación                    - Puppet        - Salstack',
-                '- Reduce la cantidad de errores                            - Terraform     - Red Hat Ansible Automation Platform ',
+                '- Reducción de costos                                     - Chef          - AWS CloudFormation',
+                '- Mejora la velocidad de implementación                   - Puppet        - SaltStack',
+                '- Reduce la cantidad de errores                           - Terraform     - Red Hat Ansible Automation Platform ',
                 '- Uniformidad en todos los ambientes                       ',
                 '- La configuración se vuelve un proceso estandar           ',
                 '',
-                '<strong>Importancia en DevOps:</strong>',
+                '<strong>Importancia en DevOps</strong>',
                 '- Libera a los desarrolladores de tener que preparar toda la infraestructura necesaria ',
                 '- Los administradores de sistema no tienen que realizar procedimientos manuales repetitivos ',
                 '- Permite coordinar los equipos al utilizar una misma descripción para el mismo proceso ',
+                '',
+                '<strong>Infraestructura Inmutable</strong>',
+                '- Se refiere a la infraestructura que no puede cambiar una vez creada, cualquier cambio se realiza destruyendo o recreandolo, como en un contenedor ',
+                '- Al prevenir o identificar cambios no autorizados esto mitiga los riesgos de seguridad, y asegura que siempre se trate la infraestructura como codigo ',
+                '- El registro de versiones, que puede ser Git o otro cualquiera, funciona como historial y auditoria de cada cambio realizado en el sistema ',
+                '- Una infraestructura facil de replicar ayuda a una pronta recuperación ante desastres y una alta disponibilidad si es necesaria ',
             ]),
         new Item(Keys.CD_CI_STATELESS_STATEFUL,
             [

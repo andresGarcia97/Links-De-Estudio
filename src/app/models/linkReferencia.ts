@@ -1051,11 +1051,16 @@ export const CI_CD_KEY = 'CI/CD-Infraestructura';
 export const CI_CD_REF = new Map<string, Referencia>([
     [Keys.CD_CI_CD_CI, new Referencia('https://www.aplyca.com/es/blog/integracion-entrega-continua-ci-cd', 'Integración Continua y Entrega Continua', CI_CD_KEY, 'CI/CD', '', '2024/08/25')],
     [Keys.CD_CI_DEV_OPS, new Referencia('https://www.paradigmadigital.com/techbiz/que-es-devops-y-sobre-todo-que-no-es-devops/', 'DevOps', CI_CD_KEY, 'DevOps', '', '2025/03/15').addRelatedItem(Keys.TESTING_QUALITY_ASSURANCE)],
-    [Keys.CD_CI_IAS_CODE, new Referencia('https://www.redhat.com/es/topics/automation/what-is-infrastructure-as-code-iac', 'Infraestructura como Codigo', CI_CD_KEY, 'Infraestructura & Codigo').addRelatedItem(Keys.CONTENEDORES_DOCKER)],
+    [Keys.CD_CI_IAS_CODE, new Referencia('https://www.redhat.com/es/topics/automation/what-is-infrastructure-as-code-iac', 'Infraestructura como Codigo', CI_CD_KEY, 'IaC', '2025/10/18')
+        .addRelatedItem(Keys.CONTENEDORES_DOCKER)
+        .addMoreReferences('https://glossary.cncf.io/es/immutable-infrastructure/')
+    ],
     //['stateless-stateful', new Referencia('https://refactorizando.com/stateful-vs-stateless-arquitectura/', 'Stateful VS Stateless', CD_CI_KEY, 'Stateless VS Stateful')],
     [Keys.CD_CI_STATELESS_STATEFUL, new Referencia('https://www.redhat.com/en/topics/cloud-native-apps/stateful-vs-stateless', 'Stateful VS Stateless', CI_CD_KEY, 'Stateless VS Stateful', '2023/12/26', '2025/05/01').addRelatedItems(Keys.MICROSERVICES_FUNDAMENTALS, Keys.NUBE_IAAS_PAAS_SAAS, Keys.APIS_IDEMPOTENCIA)],
     [Keys.CD_CI_DEPLOYMENT_PATTERNS, new Referencia('https://newsletter.techworld-with-milan.com/p/what-are-deployment-patterns', 'Patrones de Despliegue', CI_CD_KEY, 'Patrones de Despliegue')],
-    [Keys.CD_CI_INDUSTRIAL_DEV_OPS, new Referencia('https://itrevolution.com/articles/what-is-industrial-devops/', 'Industrial DevOps', CI_CD_KEY, 'Industrial DevOps', '2023/11/21')],
+    [Keys.CD_CI_INDUSTRIAL_DEV_OPS, new Referencia('https://itrevolution.com/articles/what-is-industrial-devops/', 'Industrial DevOps', CI_CD_KEY, 'Industrial DevOps', '2023/11/21')
+        .addRelatedItem(Keys.TESTING_ADVANCED_SHIFT_LEFT_SHIFT_RIGHT)
+    ],
     [Keys.CD_CI_DEPLOYMENT_PIPELINES, new Referencia('https://semaphoreci.com/blog/cicd-pipeline', 'Pipelines', CI_CD_KEY, '¿ Que es un Pipeline ?', '2023/12/26', '2025/05/04').addRelatedItem(Keys.CONTENEDORES_ORCHESTRATION)],
     [Keys.CD_CI_CELL_BASED_ARQUITECTURE, new Referencia('https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of-impact-with-cell-based-architecture/what-is-a-cell-based-architecture.html', 'Cell Based Arquitecture', CI_CD_KEY, 'Cell Based Arquitecture', '2024/08/25')],
     [Keys.CD_CI_RULES, new Referencia('https://semaphoreci.com/blog/rules-ci-pipeline', 'Reglas de un Pipeline', CI_CD_KEY, 'Pipelines Rules', '2024/12/26').addRelatedItems(Keys.GIT_BRANCHS, Keys.CALIDAD_LINTING, Keys.TESTING_PIRAMIDE, Keys.CONTENEDORES_DOCKER)],
