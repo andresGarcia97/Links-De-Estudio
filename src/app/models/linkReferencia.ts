@@ -1075,7 +1075,10 @@ export const CI_CD_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.TESTING_ADVANCED_ENVIRONMENT, Keys.ANALISIS_SYSTEM_THINKING_II, Keys.ANALISIS_SINGLE_POINT_OF_FAILURE, Keys.APIS_API_FIRST, Keys.MICROSERVICES_PROBLEMS, Keys.LEYES_MURPHY, Keys.SECURITY_LEAST_PRIVILEGE, Keys.PATRONES_DYSTRIBUTED_SYSTEMS, Keys.CALIDAD_CODE_REVIEWS, Keys.HARDWARE_ESCALAMIENTO, Keys.NUBE_DISPONIBILITY, Keys.MICROSERVICES_DISTRIBUTED_TRACING)
         .addMoreReferences('https://www.enterspeed.com/insights/it-infrastructure-design-building-a-scalable-and-secure-foundation')
     ],
-    [Keys.CD_CI_RPO_RTO, new Referencia('https://www.acronis.com/es/blog/posts/rto-rpo/', 'RPO & RTO', CI_CD_KEY, 'RPO & RTO', '2025/09/05')],
+    [Keys.CD_CI_DI_RPO_RTO, new Referencia('https://www.acronis.com/es/blog/posts/rto-rpo/', 'Disaster Recovery, RPO & RTO', CI_CD_KEY, 'DI & RPO & RTO', '2025/09/05', '2025/10/19')
+        .addRelatedItem(Keys.NUBE_DISPONIBILITY)
+        .addMoreReferences('https://docs.aws.amazon.com/es_es/wellarchitected/latest/reliability-pillar/disaster-recovery-dr-objectives.html')
+    ],
 ]);
 
 export const MICRO_SERVICES_KEY = 'Microservicios';
