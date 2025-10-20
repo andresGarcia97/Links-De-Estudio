@@ -2061,5 +2061,26 @@ export const CI_CD_INFRAESTRUCTURE =
                 '<strong>Revisiones;</strong> Evaluar regularmente los planes puede hacer la diferencia entre una ejecución exitosa y un desastre mayor ',
                 '&bull; <em>RPO</em> Puntos de restauración y copias de seguridad actualizadas y funcionales ',
                 '&bull; <em>RTO</em> Simulacros donde se apliquen fallas a proposito y se midan el tiempo y las acciones de respuesta ',
+            ]),
+        new Item(Keys.CD_CI_BAAS_RAAS_DRAAC_DRAAS,
+            [
+                '- Asi como la Infraestructura como codigo revoluciono la gestión de la infraestructura automatizandola ',
+                '- La Recuperación ante desastres como codigo <strong>DRaaC</strong> hizo lo mismo con la Recuperación ante desastres, haciendola predecible y consistente ',
+                '- Se refiere a la definición de procedimientos de recuperación automatizados, versionados y repetibles, con poca o nula interacción humana ',
+                '- Los falsos positivos pueden causar interrupciones innecesarias, por lo que la automatización se debe acompañar de un monitoreo preciso ',
+                '',
+                '<strong>BaaS - Backup as Service:</strong> Es un modelo de respaldo y recuperación donde se externalizan los servicios de respaldo y recuperación ',
+                '- Eso implica conectarse a sistemas de nube publicas o privadas facilitando la gestión de los datos en un proveedor de servicios confiable ',
+                '- Es la más barata de los 3 tipos y aplicable para escenarios con bajos costos y que toleren tiempos de inactividad, más que la perdida de datos ',
+                '',
+                '<strong>RaaS - Recovery as Service:</strong> Recuperación de datos basada en la nube que permite recuperarse de forma completa y eficiente desde la nube ',
+                '- No solo permite recuperar datos si no de sistemas completos, siendo una recuperación rapida y con tiempos de inactividad minimos ',
+                '- Se ha de considerar si la infraestructura es compleja de reconstruir y se requiera un acceso continuo a los datos ',
+                '',
+                '<strong>DraaS - Disaster Recovery as Service:</strong> Solución en la nube que permite una recuperación de desastres e interrupciones de la infraestructura ',
+                '- Solución integral más alla de copias de seguridad y recuperación de ambientes, permitiendo copias casi en tiempo real garantizando la continuidad del negocio ',
+                '- Cuenta con el tiempo de recuperación más bajo y eso al mismo tiempo lo hace la opción más costosa ',
+                '',
+                '- DRaaC tambien suele orquestar servicios de BaaS, RaaS o DRaaS con herramientas de IaC, garantizando la coherencia entre respaldo, recuperación y continuidad '
             ])
     ];

@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.ANALISIS_DATA_COLUMNS_VS_ROWS;
+export const LAST_ITEM = Keys.CD_CI_BAAS_RAAS_DRAAC_DRAAS;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -502,7 +502,7 @@ export const NUBE_KEY = 'Nube';
 export const NUBE_REF = new Map<string, Referencia>([
     ['nube', new Referencia('https://azure.microsoft.com/es-es/overview/what-are-private-public-hybrid-clouds/', 'Tipos de nube', NUBE_KEY, 'Tipos de nube')],
     [Keys.NUBE_IAAS_PAAS_SAAS, new Referencia('https://www.ambit-bst.com/blog/definici%C3%B3n-de-iaas-paas-y-saas-en-qu%C3%A9-se-diferencian', 'IaaS, PaaS, SaaS', NUBE_KEY, 'IaaS, PaaS, SaaS', '2023/12/30', '2025/04/02')],
-    ['caas-daas-faas', new Referencia('https://aws.plainenglish.io/conquering-the-cloud-unveiling-saas-paas-caas-daas-iaas-and-faas-3789b0ad7018', 'CaaS, DaaS, FaaS', NUBE_KEY, 'CaaS, DaaS, FaaS', '2024/03/18')],
+    [Keys.NUBE_CAAS_DAAS_FAAS, new Referencia('https://aws.plainenglish.io/conquering-the-cloud-unveiling-saas-paas-caas-daas-iaas-and-faas-3789b0ad7018', 'CaaS, DaaS, FaaS', NUBE_KEY, 'CaaS, DaaS, FaaS', '2024/03/18')],
     ['factores12', new Referencia('https://12factor.net/es/', '12 factores para una aplicación SaaS', NUBE_KEY, '12 - factores')],
     [Keys.NUBE_MIGRATIONS, new Referencia('https://www.paradigmadigital.com/techbiz/mitos-lift-shift-mentiras-migraciones-cloud/', 'Migraciones hacia la nube y las 6R', NUBE_KEY, 'Migraciones')],
     [Keys.NUBE_CAP_TEOREMA, new Referencia('https://www.ionos.es/digitalguide/servidores/know-how/que-es-el-cap-theorem/', 'Coherencia, Disponibilidad y Tolerancia', NUBE_KEY, 'Teorema CAP').addRelatedItem(Keys.PERSISTENCY_DBMS)],
@@ -1078,6 +1078,10 @@ export const CI_CD_REF = new Map<string, Referencia>([
     [Keys.CD_CI_DI_RPO_RTO, new Referencia('https://www.acronis.com/es/blog/posts/rto-rpo/', 'Disaster Recovery, RPO & RTO', CI_CD_KEY, 'DI & RPO & RTO', '2025/09/05', '2025/10/19')
         .addRelatedItem(Keys.NUBE_DISPONIBILITY)
         .addMoreReferences('https://docs.aws.amazon.com/es_es/wellarchitected/latest/reliability-pillar/disaster-recovery-dr-objectives.html')
+    ],
+    [Keys.CD_CI_BAAS_RAAS_DRAAC_DRAAS, new Referencia('https://stonefly.com/blog/baas-vs-raas-vs-draas-comparison/', 'BaaS, RaaS, DRaaC, DRaaS', CI_CD_KEY, 'BaaS, RaaS, DRaaC, DRaaS', '2025/10/19')
+        .addRelatedItems(Keys.NUBE_IAAS_PAAS_SAAS, Keys.NUBE_CAAS_DAAS_FAAS)
+        .addMoreReferences('https://www.linkedin.com/pulse/fail-smart-codifying-disaster-recovery-dr-20-instant-resilience-tmovc/')
     ],
 ]);
 
