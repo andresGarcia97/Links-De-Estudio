@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.CD_CI_BAAS_RAAS_DRAAC_DRAAS;
+export const LAST_ITEM = Keys.ANALISIS_TYPE_EVENTS;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -91,6 +91,10 @@ export const ANALISIS_REF = new Map<string, Referencia>([
     [Keys.ANALISIS_SYSTEM_DESIGN_CONCEPTS_II, new Referencia('https://www.linkedin.com/posts/alexxubyte_systemdesign-coding-interviewtips-activity-7320110326635520001-mdMb/', 'System Design Concepts II', ANALISIS_KEY, 'System Design Concepts II', '2025/04/21')],
     [Keys.ANALISIS_SYSTEM_DESIGN_CONCEPTS_III, new Referencia('https://medium.com/javarevisited/21-essential-system-design-building-blocks-for-software-engineers-c5f4120549c4', 'System Design Concepts III', ANALISIS_KEY, 'System Design Concepts III', '2025/05/03')],
     [Keys.ANALISIS_SINGLE_POINT_OF_FAILURE, new Referencia('https://levelup.gitconnected.com/single-point-of-failure-spof-in-system-design-c8bbac5af993', 'Single Point Of Failure', ANALISIS_KEY, 'SPOF', '2024/12/07')],
+    [Keys.ANALISIS_TYPE_EVENTS, new Referencia('https://solace.com/blog/events-schemas-payloads/', 'Tipos de Eventos', ANALISIS_KEY, 'Tipos de Eventos', '2025/10/21')
+        .addRelatedItems(Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION, Keys.VERSIONAMIENTO_EVOLUTION_SCHEMA_AND_SCHEMA_REGISTRY, Keys.MICROSERVICES_PRODUCER_CONSUMER_PROBLEM, Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL, Keys.NUBE_PACELC, Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.ANALISIS_DATA_ETL_ELT)
+        .addMoreReferences('https://www.confluent.io/blog/spring-kafka-can-your-kafka-consumers-handle-a-poison-pill/')
+    ],
     [Keys.ANALISIS_DOMAIN_EVENTS, new Referencia('https://medium.com/yield-studio/ddd-do-not-leak-your-domain-events-456919346273', 'Domain Events', ANALISIS_KEY, 'Domain Events', '2025/02/28').addRelatedItems(Keys.POO_COUPLING_AND_COHESION, Keys.ESTRATEGIAS_DESARROLLO_DDD)],
     [Keys.ANALISIS_LIGHT_EVENTS_VS_RICH_EVENTS, new Referencia('https://theburningmonk.com/2024/11/when-to-use-light-events-vs-rich-events-in-event-driven-architectures/', 'Light Events VS Rich Events', ANALISIS_KEY, 'Light/Rich Events', '2024/12/08').addRelatedItems(Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.PERSISTENCY_NORMALIZATION, Keys.ESTRATEGIAS_DESARROLLO_DDD)],
     [Keys.ANALISIS_SYSTEM_DESIGN_I, new Referencia('https://newsletter.systemdesigncodex.com/p/how-to-do-well-in-system-design-interviews', 'System Design I', ANALISIS_KEY, 'System Design I', '2025/02/16').addRelatedItems(Keys.REQUISITOS_FUNCIONALES, Keys.REQUISITOS_NO_FUNCIONALES, Keys.PERSISTENCY_ADVANCED_SQL_NO_SQL, Keys.WEB_USER_XPERIENCE, Keys.PERSISTENCY_ADVANCED_DENORMALIZATION, Keys.PERSISTENCY_NORMALIZATION)],

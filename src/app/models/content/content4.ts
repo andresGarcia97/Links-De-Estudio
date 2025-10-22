@@ -472,7 +472,7 @@ export const ARQUITECTURAS =
             ]),
         new Item(Keys.ARQUITECTURAS_EVENT_DRIVEN,
             [
-                '- <em>Event Driven Arquitecture</em> es un patron de diseño en el que los componentes se comunican mediante la producción y el consumo de eventos ',
+                '- <em>Event-Driven Arquitecture</em> es un patron de diseño en el que los componentes se comunican mediante la producción y el consumo de eventos ',
                 '- Los componentes tienen un bajo acoplamiento y son flexibles en su forma de interacturar, esta comunicación se da de manera asincrona',
                 '',
                 '<strong>- Eventos:</strong> Define los eventos/mensajes que se intercambiaran entre servicios ',
