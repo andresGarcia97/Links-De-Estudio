@@ -73,8 +73,6 @@ export const ANALISIS_REF = new Map<string, Referencia>([
     [Keys.ANALISIS_COMPORTAMIENTO, new Referencia('https://es.wikipedia.org/wiki/Modelo_de_comportamiento_(inform%C3%A1tica)', 'Comportamiento del sistema', ANALISIS_KEY, 'Comportamiento', '', '2025/03/29').addRelatedItems(Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS, Keys.ESTRATEGIAS_DESARROLLO_BDD)],
     [Keys.ANALISIS_ANALISIS_DOMAIN, new Referencia('https://www.redalyc.org/jatsRepo/4768/476862530003/html/index.html', 'Analisis de Dominio', ANALISIS_KEY, 'Analisis de Dominio')],
     [Keys.ANALISIS_DISENO, new Referencia('https://www.bravent.net/la-importancia-de-un-buen-diseno-del-software/', 'Ventajas de un buen diseño', ANALISIS_KEY, 'Un buen diseño')],
-    //['avestruz', new Referencia('https://geeks.ms/gvelez/2009/09/28/el-algoritmo-del-avestruz-en-sharepoint/', 'Algoritmo del Avestruz', ANALISIS_KEY, 'Avestruz')],
-    [Keys.ANALISIS_AVESTRUZ, new Referencia('https://www.baeldung.com/cs/ostrich-algorithm', 'Algoritmo del Avestruz', ANALISIS_KEY, 'Avestruz', '', '2025/01/18')],
     [Keys.ANALISIS_MODEL_DOMAIN, new Referencia('https://es.stackoverflow.com/questions/102490/que-es-el-modelo-de-dominio-en-dise%C3%B1o-de-software', 'Modelo de Dominio', ANALISIS_KEY, 'Modelo de dominio', '', '2024/12/22').addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_DDD)],
     [Keys.ANALISIS_TIME_COMPLEXITY, new Referencia('https://www.freecodecamp.org/news/big-o-cheat-sheet-time-complexity-chart/', 'Big O Notación', ANALISIS_KEY, 'Big O Notación', '2022/12/30', '2025/03/29').addRelatedItems(Keys.BUENAS_PRACTICAS_COMPLEJIDAD_ALGORITMICA, Keys.BUENAS_PRACTICAS_COMPLEJIDAD_COGNITIVA)],
     //['kpis', new Referencia('https://www.ibm.com/garage/method/practices/learn/kpis-measure-guide-progress/', 'KPIs', ANALISIS_KEY, 'KPI', '2022/12/30')],
@@ -269,6 +267,9 @@ export const CONOCIMIENTO_EMPIRICO = new Map<string, Referencia>([
     [Keys.CONOCIMIENTOS_EMPIRICOS_PASTA_THEORY, new Referencia('https://www.techtarget.com/searchsoftwarequality/tip/Fix-spaghetti-code-and-other-pasta-theory-antipatterns/', 'Teoria de la pasta', CONOCIMIENTO_EMPIRICO_KEY, 'Codigo como pasta')],
     [Keys.CONOCIMIENTOS_EMPIRICOS_THINGS_THAT_ARE_NOT_TAUGHT, new Referencia('https://vadimkravcenko.com/shorts/things-they-didnt-teach-you/', 'Cosas que no se enseñan', CONOCIMIENTO_EMPIRICO_KEY, 'Cosas que no se enseñan', '2023/02/09')],
     [Keys.CONOCIMIENTOS_EMPIRICOS_CODING_EASY_PART, new Referencia('https://swizec.com/blog/coding-is-the-easy-part/', 'Codificar es la parte facil', CONOCIMIENTO_EMPIRICO_KEY, 'Codificar es facil', '2023/12/11', '2025/07/13').addRelatedItem(Keys.LEYES_HYRUM)],
+    [Keys.CONOCIMIENTOS_EMPIRICOS_AVESTRUZ, new Referencia('https://www.baeldung.com/cs/ostrich-algorithm', 'Algoritmo del Avestruz', CONOCIMIENTO_EMPIRICO_KEY, 'Avestruz', '', '2025/01/18')
+        .addRelatedItems(Keys.META_CARACTERISTICAS_DEAD_LOCKS, Keys.HARDWARE_OPERATIVE_SYSTEM)
+    ],
     [Keys.CONOCIMIENTOS_EMPIRICOS_BOILING_FROG, new Referencia('https://www.linkedin.com/pulse/boiling-frog-syndrome-suyash-jaju/', 'Sindrome de la Rana Hervida', CONOCIMIENTO_EMPIRICO_KEY, 'Rana Hervida', '2024/04/16')],
     [Keys.CONOCIMIENTOS_EMPIRICOS_BOYS_SCOUTS, new Referencia('https://www.linkedin.com/pulse/la-regla-de-los-boys-scouts-hugo-raher/', 'Regla de los Boys Scouts', CONOCIMIENTO_EMPIRICO_KEY, 'Boys Scouts', '2024/04/16')],
     [Keys.CONOCIMIENTOS_EMPIRICOS_ZEIGARNIK, new Referencia('https://psicologiaymente.com/psicologia/efecto-zeigarnik', 'Efecto Zeigarnik', CONOCIMIENTO_EMPIRICO_KEY, 'Efecto Zeigarnik', '2024/05/13').addRelatedItem(Keys.WEB_GESTALT)],

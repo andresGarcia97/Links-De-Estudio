@@ -344,14 +344,6 @@ export const ANALISIS =
                 '<strong>A la medida:</strong> El diseño puede crecer y cambiar de acuerdo a las especificaciones de cliente, no necesariamente debe nacer completo ',
                 '<strong>Documentación:</strong> La documentación debe existir en cualquier proyecto, para ayudar a la compresión del sistema, sea a nivel general ó especifico ',
             ]),
-        new Item(Keys.ANALISIS_AVESTRUZ,
-            [
-                '- Es una estrategia donde se ignora un problema, en vez de buscar una solución para este ',
-                '- Esto es debido a la premisa de suponer de que son problemas increiblemente raros ',
-                '- Al ser problemas raros, es más costoso y complejo evitar que sucedan a controlarlos cuando suceden ',
-                '- Además de que se agregaria complejidad extra por un esceneario poco probable y que no necesariamente es critico ',
-                '- Generalmente esto sucede con la asignación de recursos por parte del Sistema Operativo ',
-            ]),
         new Item(Keys.ANALISIS_MODEL_DOMAIN,
             [
                 '<strong>Dominio:</strong> Es el problema que quieres resolver, reglas de negocio, procesos, subtareas, etc...',

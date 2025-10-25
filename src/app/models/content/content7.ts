@@ -1120,6 +1120,16 @@ export const CONOCIMIENTOS_EMPIRICOS =
                 '- Los requisitos no son claros, y si son claros estan incompletos, nunca faltara el requisito que es intrinseco y por lo tanto nunca se menciona, ',
                 ' - o el requisito que solo existe a nivel de código, pero que es fundamental y nadie documento, entre otros casos, que suceden despues de iniciar ',
             ]),
+        new Item(Keys.CONOCIMIENTOS_EMPIRICOS_AVESTRUZ,
+            [
+                '- Es una estrategia donde se ignora un problema, en vez de buscar una solución para este ',
+                '- Esto es debido a la premisa de suponer de que son problemas increiblemente raros ',
+                '- Al ser problemas raros, es más costoso y complejo evitar que sucedan a controlarlos cuando suceden ',
+                '- Además de que se agregaria complejidad extra por un escenario poco probable y que no necesariamente es critico ',
+                '- Generalmente esto sucede con la asignación de recursos por parte del Sistema Operativo ',
+                '- Ignorar los problemas permite que el sistema siga funcionando, en especial si es critico, ',
+                ' - pero no evita las consecuencias como perdida de datos, incosistencias y dificultad para diagnosticar problemas '
+            ]),
         new Item(Keys.CONOCIMIENTOS_EMPIRICOS_BOILING_FROG,
             [
                 '- Este sindrome se basa en una leyenda urbana, donde una rana es hervida lentamente, con un premisa simple, si la rana se coloca de repente, ',
