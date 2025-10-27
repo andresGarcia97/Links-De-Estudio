@@ -729,6 +729,18 @@ export const PRINCIPIOS =
                 '- El fin es evitar la mezcla de operaciones de alto y bajo nivel manejando un mismo nivel conceptual ',
                 '- Tambien se ha de tener cuidado con la aplicación de este principio, porque se pueden crear multiples metodos para ocultar los detalles ',
                 ' - de la implementación aumentando la indirección y el esfuerzo necesario para su mantenimiento ',
+            ]),
+        new Item(Keys.PRINCIPIOS_DIP,
+            [
+                '- Es un principio concebido por <em>Robert Martin</em> o el <em>Tio Bob</em> que data desde 2002 ',
+                '- Como es parte de <strong>SOLID</strong> suele verse directamente relacionado, pero es un principio totalmente util por si mismo ',
+                '',
+                '&bull; Los módulos de alto nivel no deberían depender de los de bajo nivel, ambos deberían depender de abstracciones.',
+                '&bull; Las abstracciones no deberían depender de los detalles, los detalles deberían depender de las abstracciones.',
+                '',
+                '- Es importante entender que no solo hay una inversión de la dirección de la dependencia, sino tambien una inversión en la propiedad de la interfaz ',
+                '- Este acuerdo mediante contratos si se respeta llega a lograr un cliente agnostico del funcionamiento interno, de manera que sea reutilizable y seguro ',
+                '- <strong>DIP</strong> Tambien esta directamente relacionado con la <em>Inyección de Dependencias</em> y la <em>Inversión de Control</em>, llegando a coexistir en el mismo contexto ',
             ])
     ];
 

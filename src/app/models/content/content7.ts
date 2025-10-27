@@ -1549,7 +1549,7 @@ export const PATRONES =
                 '- Un buen diseño incluye el mantenimiento y la reutilización para permitir que componentes y subsistemas, se puedan utilizar en otras aplicaciones ',
                 '- La naturaleza distribuida de las aplicaciones requiere una infraestructura de mensajeria, que permita conectar los componentes y servicios',
                 '',
-                '<strong>Anti-Corruption Layer:</strong> Implementa una capa de fachada o de adatador entre una aplicación moderna y un sistema heredado',
+                '<strong>Anti-Corruption Layer:</strong> Implementa una capa de fachada o de adaptador entre una aplicación moderna y un sistema heredado',
                 '',
                 '<strong>Backends for Frontends:</strong> Servicios independientes de back-end que determinadas aplicaciones ó front-end puedan usar ',
                 '',

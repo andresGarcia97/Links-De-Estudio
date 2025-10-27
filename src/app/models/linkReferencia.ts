@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.ANALISIS_TYPE_EVENTS;
+export const LAST_ITEM = Keys.ANALISIS_MULTI_BOUNDED_CONTEXT;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -112,6 +112,10 @@ export const ANALISIS_REF = new Map<string, Referencia>([
         .addMoreReferences("https://systemdesignschool.io/fundamentals/qps", "https://speedscale.com/blog/determine-transactions-per-second/", "https://medium.com/@alexa.polly007/understanding-caching-eviction-invalidation-patterns-and-their-use-cases-9fbfd34be970")
     ],
     [Keys.ANALISIS_BOUNDED_CONTEXT, new Referencia('https://martinfowler.com/bliki/BoundedContext.html', 'Bounded Context', ANALISIS_KEY, 'Bounded Context', '2025/06/02').addRelatedItems(Keys.BUENAS_PRACTICAS_AGGREGATES, Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.PEOPLE_LANGUAGE_UBICUOS, Keys.POO_COUPLING_AND_COHESION)],
+    [Keys.ANALISIS_MULTI_BOUNDED_CONTEXT, new Referencia('https://medium.com/ssense-tech/ddd-beyond-the-basics-mastering-multi-bounded-context-integration-ca0c7cec6561', 'Multi Bounded Context', ANALISIS_KEY, 'Multi Bounded Context', '2025/10/25')
+        .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.META_ESTRUCTURAS_SCOPE, Keys.PEOPLE_LANGUAGE_UBICUOS, Keys.PATRONES_CLOUD_DESIGN_PATTERNS, Keys.ESTRATEGIAS_DESARROLLO_VERTICAL)
+        .addMoreReferences('https://verraes.net/2025/08/domain-and-bounded-contexts-dont-map-one-on-one/', 'https://medium.com/ssense-tech/domain-driven-design-everything-you-always-wanted-to-know-about-it-but-were-afraid-to-ask-a85e7b74497a')
+    ],
     [Keys.ANALISIS_SYSTEM_TYPES, new Referencia('https://medium.com/@bugfreeai/understanding-system-design-interview-types-a-strategic-guide-for-2025-320af44efc8b', 'Tipos generales de sistemas', ANALISIS_KEY, 'Tipos de sistemas', '2025/06/08').addRelatedItems(Keys.HARDWARE_ESCALAMIENTO, Keys.PERSISTENCY_ADVANCED_SCALING_DB, Keys.NUBE_LATENCY, Keys.MICROSERVICES_CACHE_FAILS, Keys.PERSISTENCY_CONSISTENCY, Keys.PERSISTENCY_ADVANCED_WAL, Keys.NUBE_CAP_TEOREMA, Keys.PERSISTENCY_ACID, Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS, Keys.PARADIGMAS_PARADIGMA_DATOS, Keys.PERSISTENCY_INDICES, Keys.ANALISIS_DATA_DATA_STORING)],
     [Keys.ANALISIS_STRATEGIC_DESIGN, new Referencia('https://medium.com/@lambrych/domain-driven-design-ddd-strategic-design-explained-55e10b7ecc0f', 'Diseño estrategico', ANALISIS_KEY, 'Diseño estrategico', '2025/07/10').addRelatedItems(Keys.BUENAS_PRACTICAS_AGGREGATES, Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.PEOPLE_LANGUAGE_UBICUOS, Keys.META_ESTRUCTURAS_VALUE_OBJECTS, Keys.REQUISITOS_BUSINESS_VALUE)],
     [Keys.ANALISIS_TACTIC_DESIGN, new Referencia('https://medium.com/@lambrych/eventstorming-for-domain-driven-design-strengths-and-limitations-3f0b49009c38', 'Event Storming & Diseño tactico', ANALISIS_KEY, 'Diseño tactico', '2025/07/13')
@@ -347,8 +351,12 @@ export const FRAMEWORKS_KEY = 'Frameworks';
 export const FRAMEWORKS_REF = new Map<string, Referencia>([
     [Keys.FRAMEWORKS_FRAMEWORKS, new Referencia('https://neoattack.com/neowiki/framework/', '¿ Que es un framework ?', FRAMEWORKS_KEY, '¿ Que es un framework ?')],
     [Keys.FRAMEWORKS_CASE, new Referencia('https://www.tutorialspoint.com/es/software_engineering/case_tools_overview.htm', 'Herramientas CASE', FRAMEWORKS_KEY, 'Herramientas CASE', '', '2025/08/02').addRelatedItem(Keys.ESTRATEGIAS_DESARROLLO_SLDC)],
-    [Keys.FRAMEWORKS_IOC, new Referencia('https://medium.com/all-you-need-is-clean-code/inversi%C3%B3n-de-control-principio-de-hollywood-dont-call-us-we-ll-call-you-179e9c70e3d0', 'Inversión de Control', FRAMEWORKS_KEY, 'Inversión de control').addRelatedItem(Keys.PRINCIPIOS_HOLLYWOOD)],
-    [Keys.FRAMEWORKS_IOD, new Referencia('https://www.arquitecturajava.com/el-patron-de-inyeccion-de-dependencia/', 'Inyección de dependencias', FRAMEWORKS_KEY, 'Inyección de dependencias', '', '2024/06/09')],
+    [Keys.FRAMEWORKS_IOC, new Referencia('https://medium.com/all-you-need-is-clean-code/inversi%C3%B3n-de-control-principio-de-hollywood-dont-call-us-we-ll-call-you-179e9c70e3d0', 'Inversión de Control', FRAMEWORKS_KEY, 'Inversión de Control')
+        .addRelatedItems(Keys.PRINCIPIOS_HOLLYWOOD, Keys.PRINCIPIOS_DIP)
+    ],
+    [Keys.FRAMEWORKS_IOD, new Referencia('https://www.arquitecturajava.com/el-patron-de-inyeccion-de-dependencia/', 'Inyección de Dependencias', FRAMEWORKS_KEY, 'Inyección de Dependencias', '', '2024/06/09')
+        .addRelatedItems(Keys.PRINCIPIOS_HOLLYWOOD, Keys.PRINCIPIOS_DIP)
+    ],
     [Keys.FRAMEWORKS_SCAFFOLDING, new Referencia('https://medium.com/@srinathsrs104/scaffolding-54ac4e47e133', 'Creación automatica de codigo', FRAMEWORKS_KEY, 'Scaffolding', '2023/12/27', '2025/07/13')
         .addRelatedItems(Keys.META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL, Keys.PERSISTENCY_CRUD, Keys.MALAS_PRACTICAS_OVER_ENGINEERING)
         .addMoreReferences('https://testmetry.com/scaffolding-in-software-testing/')
@@ -629,7 +637,9 @@ export const PATRONES_REF = new Map<string, Referencia>([
     [Keys.PATRONES_TYPES, new Referencia('https://www.javiergarzas.com/2014/08/tipos-patrones-software.html', 'Tipos de patrones', PATRONES_KEY, 'Tipos de Patrones')],
     [Keys.PATRONES_STRANGLER_FIG, new Referencia('https://martinfowler.com/bliki/StranglerFigApplication.html', 'StranglerFig App', PATRONES_KEY, 'StranglerFig App', '', '2024/09/22').addRelatedItem(Keys.LEYES_CONWAY)],
     [Keys.PATRONES_ANTI_PATRONES_PM, new Referencia('https://sourcemaking.com/antipatterns', 'Antipatrones, Product Management', PATRONES_KEY, 'Anti Patrones, PM')],
-    [Keys.PATRONES_CLOUD_DESIGN_PATTERNS, new Referencia('https://learn.microsoft.com/es-mx/azure/architecture/patterns/', 'Patrones Para la Nube', PATRONES_KEY, 'Patrones Nube', '2024/06/02')],
+    [Keys.PATRONES_CLOUD_DESIGN_PATTERNS, new Referencia('https://learn.microsoft.com/es-mx/azure/architecture/patterns/', 'Patrones Para la Nube', PATRONES_KEY, 'Patrones Nube', '2024/06/02')
+        .addRelatedItems(Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.PERSISTENCY_CONSISTENCY)
+    ],
     [Keys.PATRONES_ENRICHED_MODEL, new Referencia('https://sacavix.com/2024/05/modelos-anemicos-vs-enriquecidos/', 'Modelo Enriquecido', PATRONES_KEY, 'Modelo Enriquecido', '2024/12/15').addRelatedItems(Keys.MALAS_PRACTICAS_ANEMIC_DOMAIN, Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.POO_INMUTABILITY, Keys.POO_POO)],
     [Keys.PATRONES_OUTBOX, new Referencia('https://www.baeldung.com/cs/outbox-pattern-microservices', 'Patron Outbox', PATRONES_KEY, 'Patron Outbox', '2025/01/12').addRelatedItems(Keys.PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL, Keys.APIS_REST_VS_MESSAGING)],
     [Keys.PATRONES_INBOX, new Referencia('https://medium.com/hprog99/overcoming-message-delivery-challenges-in-distributed-systems-a-comprehensive-look-at-outbox-and-a669e5f21898', 'Patron Inbox', PATRONES_KEY, 'Patron Inbox', '2025/03/18').addRelatedItem(Keys.APIS_IDEMPOTENCIA)],
@@ -824,6 +834,9 @@ export const PRINCIPIOS_REF = new Map<string, Referencia>([
     [Keys.PRINCIPIOS_SOC, new Referencia('https://geeksprogramming.com/key-principles-in-software-and-acronyms/', 'Separacion de Conceptos', PRINCIPIOS_KEY, 'SOC', '2024/01/13')],
     [Keys.PRINCIPIOS_POC, new Referencia('https://geeksprogramming.com/key-principles-in-software-and-acronyms/', 'Prueba de Concepto', PRINCIPIOS_KEY, 'POC', '2024/01/13')],
     [Keys.PRINCIPIOS_SLAP, new Referencia('https://medium.com/javarevisited/slap-that-ugly-code-6ec276d3a4bc', 'Principio de abstracción de un solo nivel', PRINCIPIOS_KEY, 'SLAP', '2025/02/02')],
+    [Keys.PRINCIPIOS_DIP, new Referencia('https://medium.com/ssense-tech/dependency-injection-vs-dependency-inversion-vs-inversion-of-control-lets-set-the-record-straight-5dc818dc32d1', 'Principio de Inversión de Dependencias', PRINCIPIOS_KEY, 'DIP', '2025/10/26')
+        .addRelatedItems(Keys.FRAMEWORKS_IOC, Keys.FRAMEWORKS_IOD, Keys.ARQUITECTURAS_WHY_CLEAN, Keys.POO_DESIGN_BY_CONTRACT, Keys.POO_DESCOMPOSITION)
+    ],
 ]);
 
 export const SECURITY_KEY = 'Seguridad';
