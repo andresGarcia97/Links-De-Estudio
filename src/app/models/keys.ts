@@ -595,3 +595,4 @@ export const MICROSERVICES_ESENTIAL_COMPONENTS = 'microservices-esential-compone
 export const MICROSERVICES_EVENTS_VS_REQUEST_RESPONSE = 'architectureBasedEvents-vs-requestResponse';
 export const MICROSERVICES_ARQUITECTURE_BACK_MONOLITH = 'architecture-back-to-monoliths';
 export const MICROSERVICES_DISTRIBUTED_MONOLITH = 'distributed-monolith';
+export const MICROSERVICES_DISTRIBUTED_LOCKING = 'distributed-locking';

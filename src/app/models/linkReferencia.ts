@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.ANALISIS_MULTI_BOUNDED_CONTEXT;
+export const LAST_ITEM = Keys.MICROSERVICES_DISTRIBUTED_LOCKING;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -1136,5 +1136,8 @@ export const MICRO_SERVICES_REF = new Map<string, Referencia>([
     ],
     [Keys.MICROSERVICES_DISTRIBUTED_MONOLITH, new Referencia('https://levelup.gitconnected.com/your-microservices-strategy-is-broken-you-built-a-distributed-monolith-332f74867f73', 'Monolito distribuido', MICRO_SERVICES_KEY, 'Monolito distribuido', '2025/09/27')
         .addRelatedItems(Keys.NUBE_CAP_TEOREMA, Keys.ARQUITECTURAS_MONOLITOS, Keys.ARQUITECTURAS_MODULITHS, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.TESTING_INTEGRATION, Keys.NUBE_TWO_PHASE_COMMIT, Keys.PATRONES_SAGA, Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.META_CARACTERISTICAS_CACHE_AND_TYPES, Keys.CD_CI_FAILOVER, Keys.CD_CI_DEPLOYMENT_PIPELINES, Keys.PATRONES_STRANGLER_FIG, Keys.ANALISIS_STRATEGIC_DESIGN, Keys.NUBE_SRE, Keys.CD_CI_DEV_OPS, Keys.VERSIONAMIENTO_VERSIONAMIENTO)
+    ],
+    [Keys.MICROSERVICES_DISTRIBUTED_LOCKING, new Referencia('https://codefarm0.medium.com/distributed-locking-under-the-hood-of-coordination-2ef8b039c13f', 'Bloqueo distribuido', MICRO_SERVICES_KEY, 'Bloqueo distribuido', '2025/10/31')
+        .addRelatedItems(Keys.PERSISTENCY_ADVANCED_LOCKING, Keys.META_CARACTERISTICAS_DEAD_LOCKS, Keys.META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM, Keys.PATRONES_DYSTRIBUTED_SYSTEMS, Keys.ANALISIS_COMMON_METRICS)
     ],
 ]);
