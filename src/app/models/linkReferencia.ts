@@ -117,7 +117,10 @@ export const ANALISIS_REF = new Map<string, Referencia>([
         .addMoreReferences('https://verraes.net/2025/08/domain-and-bounded-contexts-dont-map-one-on-one/', 'https://medium.com/ssense-tech/domain-driven-design-everything-you-always-wanted-to-know-about-it-but-were-afraid-to-ask-a85e7b74497a')
     ],
     [Keys.ANALISIS_SYSTEM_TYPES, new Referencia('https://medium.com/@bugfreeai/understanding-system-design-interview-types-a-strategic-guide-for-2025-320af44efc8b', 'Tipos generales de sistemas', ANALISIS_KEY, 'Tipos de sistemas', '2025/06/08').addRelatedItems(Keys.HARDWARE_ESCALAMIENTO, Keys.PERSISTENCY_ADVANCED_SCALING_DB, Keys.NUBE_LATENCY, Keys.MICROSERVICES_CACHE_FAILS, Keys.PERSISTENCY_CONSISTENCY, Keys.PERSISTENCY_ADVANCED_WAL, Keys.NUBE_CAP_TEOREMA, Keys.PERSISTENCY_ACID, Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS, Keys.PARADIGMAS_PARADIGMA_DATOS, Keys.PERSISTENCY_INDICES, Keys.ANALISIS_DATA_DATA_STORING)],
-    [Keys.ANALISIS_STRATEGIC_DESIGN, new Referencia('https://medium.com/@lambrych/domain-driven-design-ddd-strategic-design-explained-55e10b7ecc0f', 'Diseño estrategico', ANALISIS_KEY, 'Diseño estrategico', '2025/07/10').addRelatedItems(Keys.BUENAS_PRACTICAS_AGGREGATES, Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.PEOPLE_LANGUAGE_UBICUOS, Keys.META_ESTRUCTURAS_VALUE_OBJECTS, Keys.REQUISITOS_BUSINESS_VALUE)],
+    [Keys.ANALISIS_STRATEGIC_DESIGN, new Referencia('https://medium.com/@lambrych/domain-driven-design-ddd-strategic-design-explained-55e10b7ecc0f', 'Diseño estrategico', ANALISIS_KEY, 'Diseño estrategico', '2025/07/10')
+        .addRelatedItems(Keys.BUENAS_PRACTICAS_AGGREGATES, Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.PEOPLE_LANGUAGE_UBICUOS, Keys.META_ESTRUCTURAS_VALUE_OBJECTS, Keys.REQUISITOS_BUSINESS_VALUE)
+        .addMoreReferences('https://www.workingsoftware.dev/fundamental-techniques-for-software-architects/#context-mapping')
+    ],
     [Keys.ANALISIS_TACTIC_DESIGN, new Referencia('https://medium.com/@lambrych/eventstorming-for-domain-driven-design-strengths-and-limitations-3f0b49009c38', 'Event Storming & Diseño tactico', ANALISIS_KEY, 'Diseño tactico', '2025/07/13')
         .addRelatedItems(Keys.VERSIONAMIENTO_DOCUMENT_ARQUITECTURE, Keys.NUBE_MIGRATIONS, Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.USER_HISTORIES_USER_HISTORIES, Keys.PATRONES_PERSISTENCE_PATTERNS, Keys.PATRONES_DYSTRIBUTED_SYSTEMS, Keys.POO_FACTORY_METODS)
         .addMoreReferences('https://medium.com/@lambrych/can-eventstorming-guide-the-design-workflow-6f75d8aa20e0')
@@ -513,18 +516,21 @@ export const METODOLOGIAS_REF = new Map<string, Referencia>([
 
 export const NUBE_KEY = 'Nube';
 export const NUBE_REF = new Map<string, Referencia>([
-    ['nube', new Referencia('https://azure.microsoft.com/es-es/overview/what-are-private-public-hybrid-clouds/', 'Tipos de nube', NUBE_KEY, 'Tipos de nube')],
+    [Keys.NUBE_NUBE, new Referencia('https://azure.microsoft.com/es-es/overview/what-are-private-public-hybrid-clouds/', 'Tipos de nube', NUBE_KEY, 'Tipos de nube')],
     [Keys.NUBE_IAAS_PAAS_SAAS, new Referencia('https://www.ambit-bst.com/blog/definici%C3%B3n-de-iaas-paas-y-saas-en-qu%C3%A9-se-diferencian', 'IaaS, PaaS, SaaS', NUBE_KEY, 'IaaS, PaaS, SaaS', '2023/12/30', '2025/04/02')],
     [Keys.NUBE_CAAS_DAAS_FAAS, new Referencia('https://aws.plainenglish.io/conquering-the-cloud-unveiling-saas-paas-caas-daas-iaas-and-faas-3789b0ad7018', 'CaaS, DaaS, FaaS', NUBE_KEY, 'CaaS, DaaS, FaaS', '2024/03/18')],
-    ['factores12', new Referencia('https://12factor.net/es/', '12 factores para una aplicación SaaS', NUBE_KEY, '12 - factores')],
+    [Keys.NUBE_12_FACTORES, new Referencia('https://12factor.net/es/', '12 factores para una aplicación SaaS', NUBE_KEY, '12 - factores')],
     [Keys.NUBE_MIGRATIONS, new Referencia('https://www.paradigmadigital.com/techbiz/mitos-lift-shift-mentiras-migraciones-cloud/', 'Migraciones hacia la nube y las 6R', NUBE_KEY, 'Migraciones')],
     [Keys.NUBE_CAP_TEOREMA, new Referencia('https://www.ionos.es/digitalguide/servidores/know-how/que-es-el-cap-theorem/', 'Coherencia, Disponibilidad y Tolerancia', NUBE_KEY, 'Teorema CAP').addRelatedItem(Keys.PERSISTENCY_DBMS)],
-    ['dns', new Referencia('https://www.ionos.es/digitalguide/servidores/know-how/que-es-el-servidor-dns-y-como-funciona/', 'Servidor DNS', NUBE_KEY, 'Servidor DNS')],
+    [Keys.NUBE_DNS, new Referencia('https://www.ionos.es/digitalguide/servidores/know-how/que-es-el-servidor-dns-y-como-funciona/', 'Servidor DNS', NUBE_KEY, 'Servidor DNS', '', '2025/11/02')],
     //['falaciesDistributedSystems', new Referencia('https://architecturenotes.co/fallacies-of-distributed-systems/', 'Sistemas Distribuidos', NUBE_KEY, 'Sistemas Distribuidos')],
     [Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, new Referencia('https://www.genbeta.com/desarrollo/las-8-falacias-de-la-computacion-distribuida', 'Falacias Sistemas Distribuidos', NUBE_KEY, 'Sistemas Distribuidos', '', '2024/10/06')],
     [Keys.NUBE_LOAD_BALANCING, new Referencia('https://aws.amazon.com/es/what-is/load-balancing/', 'Balancear la Carga', NUBE_KEY, 'Balanceador de carga', '2023/12/30', '2025/05/01')],
     [Keys.NUBE_LATENCY, new Referencia('https://blog.bytebytego.com/p/ep110-top-5-strategies-to-reduce#top-strategies-to-reduce-latency', 'Reducir la latencia', NUBE_KEY, 'Reducir la Latencia', '2024/05/12')],
-    [Keys.NUBE_OBSERVABILIDAD, new Referencia('https://medium.com/@rcougil/software-observabilidad-logs-m%C3%A9tricas-y-trazabilidad-d5bcca56608d', 'Observabilidad', NUBE_KEY, 'Observabilidad', '2024/05/26')],
+    [Keys.NUBE_OBSERVABILIDAD, new Referencia('https://medium.com/@rcougil/software-observabilidad-logs-m%C3%A9tricas-y-trazabilidad-d5bcca56608d', 'Observabilidad', NUBE_KEY, 'Observabilidad', '2024/05/26', '2025/11/02')
+        .addRelatedItems(Keys.META_ESTRUCTURAS_LOGS, Keys.MICROSERVICES_DISTRIBUTED_TRACING, Keys.CD_CI_MONITORING_AND_ALERTS)
+        .addMoreReferences('https://engineering.theblueground.com/a-software-engineers-guide-to-observability/')
+    ],
     [Keys.NUBE_TWO_PHASE_COMMIT, new Referencia('https://hongilkwon.medium.com/when-to-use-two-phase-commit-in-distributed-transaction-f1296b8c23fd', 'Two Phase Commit', NUBE_KEY, 'Two Phase Commit', '2024/11/26')],
     [Keys.NUBE_DISPONIBILITY, new Referencia('https://www.computerweekly.com/es/consejo/Disponibilidad-de-cinco-nueves-Que-significa-realmente', 'Disponibilidad de 5 9s', NUBE_KEY, 'Disponibilidad de 5 9s', '2024/11/26').addRelatedItem(Keys.CD_CI_CD_CI)],
     [Keys.NUBE_PACELC, new Referencia('https://www.designgurus.io/blog/system-design-interview-basics-cap-vs-pacelc', 'CAP, Else Latencia y Consistencia', NUBE_KEY, 'Teorema PACELC', '2024/12/15').addRelatedItems(Keys.PERSISTENCY_ACID, Keys.PERSISTENCY_ADVANCED_BASE)],
