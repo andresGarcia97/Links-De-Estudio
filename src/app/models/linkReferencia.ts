@@ -589,7 +589,9 @@ export const ANALISIS_DATA_REF = new Map<string, Referencia>([
     [Keys.ANALISIS_DATA_DATA_STORING, new Referencia('https://www.striim.com/blog/data-warehouse-vs-data-lake-vs-data-lakehouse-an-overview/', 'Analisis y almacenamiento de datos', ANALISIS_DATA_KEY, 'Almacenamiento de datos', '2023/08/22', '2025/10/16')
         .addMoreReferences('https://tdtapas.medium.com/battle-of-the-file-formats-parquet-delta-lake-iceberg-hudi-3ce21501b072')
     ],
-    [Keys.ANALISIS_DATA_ETL_ELT, new Referencia('https://aws.amazon.com/es/compare/the-difference-between-etl-and-elt', 'ETL & ELT', ANALISIS_DATA_KEY, 'ETL & ELT', '2024/02/11')],
+    [Keys.ANALISIS_DATA_ETL_ELT, new Referencia('https://aws.amazon.com/es/compare/the-difference-between-etl-and-elt', 'ETL & ELT', ANALISIS_DATA_KEY, 'ETL & ELT', '2024/02/11', '2025/11/03')
+        .addMoreReferences('https://blog.stackademic.com/elt-vs-etl-vs-reverse-etl-data-pipelines-49e5e08c6745')
+    ],
     [Keys.ANALISIS_DATA_THEORY_OF_INFORMATION, new Referencia('https://www.ferrovial.com/es/stem/teoria-de-la-informacion/', 'Teoria de la información', ANALISIS_DATA_KEY, 'Teoria de la información', '2024/06/23').addRelatedItem(Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION)],
     [Keys.ANALISIS_DATA_CHANGE_DATA_CAPTURE, new Referencia('https://www.confluent.io/learn/change-data-capture/', 'Change Data Capture', ANALISIS_DATA_KEY, 'CDC', '2024/07/28').addRelatedItem(Keys.PERSISTENCY_ADVANCED_WAL)],
     [Keys.ANALISIS_DATA_GOLDEN_RECORD, new Referencia('https://www.stibosystems.com/blog/benefits-of-creating-golden-customer-records', 'Golden Record', ANALISIS_DATA_KEY, 'Golden Record', '2024/08/10')],
