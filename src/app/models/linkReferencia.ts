@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.MICROSERVICES_DISTRIBUTED_LOCKING;
+export const LAST_ITEM = Keys.ANALISIS_DATA_STREAMING_VS_MESSAGING;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -597,6 +597,10 @@ export const ANALISIS_DATA_REF = new Map<string, Referencia>([
     [Keys.ANALISIS_DATA_GOLDEN_RECORD, new Referencia('https://www.stibosystems.com/blog/benefits-of-creating-golden-customer-records', 'Golden Record', ANALISIS_DATA_KEY, 'Golden Record', '2024/08/10')],
     [Keys.ANALISIS_DATA_BATCH_VS_STREAM, new Referencia('https://estuary.dev/batch-processing-vs-stream-processing/', 'Batch Vs Stream Processing', ANALISIS_DATA_KEY, 'Batch Vs Stream', '2024/08/31', '2025/09/27')
         .addRelatedItems(Keys.PATRONES_MESSAGING, Keys.ANALISIS_QUEUES_SYSTEM_DESIGN)
+    ],
+    [Keys.ANALISIS_DATA_STREAMING_VS_MESSAGING, new Referencia('https://medium.com/qest/messaging-vs-streaming-a-software-engineers-guide-8500d97f6f25', 'Streaming Vs Mensajes', ANALISIS_DATA_KEY, 'Streaming Vs Mensajes', '2025/11/06')
+        .addRelatedItems(Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.VERSIONAMIENTO_EVOLUTION_SCHEMA_AND_SCHEMA_REGISTRY, Keys.PATRONES_MESSAGING, Keys.MICROSERVICES_EVENTS_VS_REQUEST_RESPONSE, Keys.PATRONES_FOR_INTEGRATION, Keys.MICROSERVICES_PRODUCER_CONSUMER_PROBLEM, Keys.MICROSERVICES_PRODUCER_CONSUMER_IDEMPOTENCY, Keys.META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM, Keys.ANALISIS_QUEUES_SYSTEM_DESIGN, Keys.APIS_LATENCY_THROUGHPUT_BANDWITH)
+        .addMoreReferences('https://quix.io/blog/apache-kafka-vs-rabbitmq-comparison', 'https://pathway.com/blog/kafka-vs-rabbit-mq-for-data-streaming/')
     ],
     [Keys.ANALISIS_DATA_OLAP_OLTP, new Referencia('https://aws.amazon.com/es/compare/the-difference-between-olap-and-oltp/', 'OLAP & OLTP', ANALISIS_DATA_KEY, 'OLAP & OLTP', '2024/09/15')],
     [Keys.ANALISIS_DATA_DEDUPLICATION, new Referencia('https://www.netapp.com/es/data-management/what-is-data-deduplication/', 'Deduplicación', ANALISIS_DATA_KEY, 'Deduplicación', '2024/11/24')],

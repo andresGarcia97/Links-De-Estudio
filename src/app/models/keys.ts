@@ -387,6 +387,7 @@ export const ANALISIS_DATA_THEORY_OF_INFORMATION = 'theoryOfInformation';
 export const ANALISIS_DATA_CHANGE_DATA_CAPTURE = 'changeDataCapture';
 export const ANALISIS_DATA_GOLDEN_RECORD = 'goldenRecord';
 export const ANALISIS_DATA_BATCH_VS_STREAM = 'batchVsStreamProcessing';
+export const ANALISIS_DATA_STREAMING_VS_MESSAGING = 'StreamingVsMessaging';
 export const ANALISIS_DATA_OLAP_OLTP = 'OLAPvsOLTP';
 export const ANALISIS_DATA_DEDUPLICATION = 'deduplication';
 export const ANALISIS_DATA_TGS = 'teoriaGeneralDeSistemas-tgs';
