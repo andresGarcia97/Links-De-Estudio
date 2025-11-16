@@ -533,7 +533,10 @@ export const NUBE_REF = new Map<string, Referencia>([
     ],
     [Keys.NUBE_TWO_PHASE_COMMIT, new Referencia('https://hongilkwon.medium.com/when-to-use-two-phase-commit-in-distributed-transaction-f1296b8c23fd', 'Two Phase Commit', NUBE_KEY, 'Two Phase Commit', '2024/11/26')],
     [Keys.NUBE_DISPONIBILITY, new Referencia('https://www.computerweekly.com/es/consejo/Disponibilidad-de-cinco-nueves-Que-significa-realmente', 'Disponibilidad de 5 9s', NUBE_KEY, 'Disponibilidad de 5 9s', '2024/11/26').addRelatedItem(Keys.CD_CI_CD_CI)],
-    [Keys.NUBE_PACELC, new Referencia('https://www.designgurus.io/blog/system-design-interview-basics-cap-vs-pacelc', 'CAP, Else Latencia y Consistencia', NUBE_KEY, 'Teorema PACELC', '2024/12/15').addRelatedItems(Keys.PERSISTENCY_ACID, Keys.PERSISTENCY_ADVANCED_BASE)],
+    [Keys.NUBE_PACELC, new Referencia('https://www.designgurus.io/blog/system-design-interview-basics-cap-vs-pacelc', 'PAC, Else Latencia y Consistencia', NUBE_KEY, 'Teorema PACELC', '2024/12/15', '2025/11/15')
+        .addRelatedItems(Keys.PERSISTENCY_ACID, Keys.PERSISTENCY_ADVANCED_BASE)
+        .addMoreReferences('https://medium.com/javarevisited/pacelc-the-missing-piece-beyond-cap-8e086a53abda')
+    ],
     [Keys.NUBE_NATIVE, new Referencia('https://www.oracle.com/cloud/cloud-native/what-is-cloud-native/', 'Evolución de la Nube', NUBE_KEY, 'Cloud Native', '2025/02/09').addRelatedItems(Keys.ARQUITECTURAS_MONOLITOS, Keys.ESTRATEGIAS_DESARROLLO_SLDC, Keys.MICROSERVICES_ANALISIS)],
     [Keys.NUBE_SRE, new Referencia('https://aws.amazon.com/es/what-is/sre/', 'Ingenieria de Fiabilidad del Sitio', NUBE_KEY, 'SRE', '2025/03/15').addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_SLDC, Keys.CD_CI_DEV_OPS)],
 ]);
