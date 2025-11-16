@@ -291,6 +291,7 @@ export const APIS_LATENCY_THROUGHPUT_BANDWITH = 'latency-throughput-bandwidth';
 export const APIS_RATE_LIMITING = 'rate-limiting';
 export const APIS_API_FIRST_VS_CODE_FIRST = 'api-first-vs-code-first';
 export const APIS_SECURITY = 'api-security-protections';
+export const APIS_EVOLUTION = 'api-evolution';
 export const PERSISTENCY_ADVANCED_BASE = 'BASE';
 export const PERSISTENCY_ADVANCED_SCALING_DB = 'scalingDataBases';
 export const PERSISTENCY_ADVANCED_NO_SQL = 'nosql';

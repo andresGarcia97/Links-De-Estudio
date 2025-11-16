@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.ANALISIS_DATA_STREAMING_VS_MESSAGING;
+export const LAST_ITEM = Keys.APIS_EVOLUTION;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -575,6 +575,10 @@ export const APIS_REF = new Map<string, Referencia>([
     ],
     [Keys.APIS_SECURITY, new Referencia('https://levelup.gitconnected.com/api-security-explained-7-must-know-protections-06e63fb69e9b', 'API Security & Protections', APIS_KEY, 'API Protections', '2025/09/28')
         .addRelatedItems(Keys.SECURITY_AUTHENTICATION_WAYS, Keys.PERSISTENCY_ADVANCED_ORM, Keys.SECURITY_FIREWALL, Keys.HARDWARE_RENDERING, Keys.NEURO_MARKETING_B2B_B2C)
+    ],
+    [Keys.APIS_EVOLUTION, new Referencia('https://philsturgeon.com/api-evolution-for-rest-http-apis/', 'Como Evolucionar una API', APIS_KEY, 'Evolución API', '2025/10/14')
+        .addRelatedItems(Keys.TESTING_CONTRACT_TESTING, Keys.VERSIONAMIENTO_EVOLUTION_SCHEMA_AND_SCHEMA_REGISTRY, Keys.META_ESTRUCTURAS_DEPRECATION, Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES, Keys.VERSIONAMIENTO_VERSIONAMIENTO)
+        .addMoreReferences('https://swagger.io/blog/api-strategy/best-practices-for-deprecating-apis/', 'https://apisyouwonthate.com/blog/json-schema-client-side-validation/', 'https://www.techtarget.com/searchapparchitecture/feature/5-stages-of-an-API-lifecycle-explained', 'https://hygraph.com/blog/evolution-of-apis')
     ],
 ]);
 

@@ -813,6 +813,18 @@ export const APIS =
                 '<strong>XSS (Cross-Site Scripting):</strong> Los atacantes inyectan scripts maliciosos en comentarios, mensajes o perfiles ',
                 '- De esta manera los navegadores de otros usuarios ejecutarán este código después de renderizarlo ',
                 '- Se corrige de igual manera, desinfectando las entradas de los usuarios antes de mostrarlas, junto a una política de <em>Content Security Policy</em> (CSP)',
+            ]),
+        new Item(Keys.APIS_EVOLUTION,
+            [
+                '- Las APIs tienen diferentes formar de versionarse, (Path, Headers, Parametros), pero esto solo indica la versión usada, no como sus cambios se manejan ',
+                '- La evolución de una API se basa en mantener siempre la misma <strong>I</strong>nterfaz (contrato) y solo modificarlos cuando sea estrictamente necesario ',
+                '- Peticiones, Respuestas, Parametros, Funcionalidad, deberia ser estables para evitar cambios en todos los clientes/consumidores ',
+                '- Una forma comun de lograr esto es siempre agregando campos nuevos manteniendo los campos actuales sin variaciones en sus valores o nombres ',
+                '',
+                '- Es más problematico cuando se desea <em>deprecar</em> campos, esto requiere avisar y esperar a que cada cliente haga sus respectivos cambios ',
+                '- Además de esto se puede incluir los <strong>Headers</strong> de <em>Sunset</em> y <em>Deprecation</em> que agregan información adicional como fechas de finalización ',
+                '- Los cambios <em>retrocompatibles</em> son una arma de doble filo, no todos los clientes son capaces de soportarlos y esto puede generar incidentes no previstos ',
+                '- Tambien existen formas de validar los esquemas JSON entregados por el servidor. Esto reduce la dependencia para encontrar errores del lado del cliente ',
             ])
     ];
 
