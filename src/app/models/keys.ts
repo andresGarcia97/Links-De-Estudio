@@ -487,6 +487,7 @@ export const SYSTEM_THINKING_I = 'systemThinking-I';
 export const SYSTEM_THINKING_II = 'systemThinking-II';
 export const SYSTEM_DESIGN_COMMON_METRICS = 'commonMetrics';
 export const SYSTEM_DESIGN_SYSTEM_TYPES = 'systemTypes';
+export const SYSTEM_DESIGN_SCALING_WRITES = 'systemDesign-scaling-writes';
 export const VERSIONAMIENTO_MANAGEMENT_VERSIONS = 'managementVersions-git';
 export const VERSIONAMIENTO_MANAGEMENT_DEPENDENCIES = 'dependencias';
 export const VERSIONAMIENTO_GRADLEW_VS_MAVEN = 'gradleVSmaven';

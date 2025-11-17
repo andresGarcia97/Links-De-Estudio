@@ -17,7 +17,7 @@ export class LinkReferencia {
         ...UML_REF,              ...VERSIONAMIENTO_REF,       ...HARDWARE_REF,
         ...WEB_REF,              ...LEYES_REF,                ...NEURO_MARKETING_REF,
         ...CI_CD_REF,            ...APIS_REF,                 ...PERSISTENCY_ADVANCED_REF,
-        ...MICRO_SERVICES_REF  
+        ...MICRO_SERVICES_REF,   ...SYSTEM_DESIGN_REF  
     ]);
 
     public routesAndSections: Map<string, string> = new Map([
@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.APIS_EVOLUTION;
+export const LAST_ITEM = Keys.SYSTEM_DESIGN_SCALING_WRITES;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -155,6 +155,10 @@ export const SYSTEM_DESIGN_REF = new Map<string, Referencia>([
     ],
     [Keys.SYSTEM_DESIGN_SYSTEM_TYPES, new Referencia('https://medium.com/@bugfreeai/understanding-system-design-interview-types-a-strategic-guide-for-2025-320af44efc8b', 'Tipos generales de sistemas', SYSTEM_DESIGN_KEY, 'Tipos de sistemas', '2025/06/08')
         .addRelatedItems(Keys.HARDWARE_ESCALAMIENTO, Keys.PERSISTENCY_ADVANCED_SCALING_DB, Keys.NUBE_LATENCY, Keys.MICROSERVICES_CACHE_FAILS, Keys.PERSISTENCY_CONSISTENCY, Keys.PERSISTENCY_ADVANCED_WAL, Keys.NUBE_CAP_TEOREMA, Keys.PERSISTENCY_ACID, Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS, Keys.PARADIGMAS_PARADIGMA_DATOS, Keys.PERSISTENCY_INDICES, Keys.ANALISIS_DATA_DATA_STORING)
+    ],
+    [Keys.SYSTEM_DESIGN_SCALING_WRITES, new Referencia('https://medium.com/@priyasrivastava18official/system-design-pattern-scaling-writes-how-big-tech-handles-billions-of-writes-per-second-60c92d0374f2', 'Diseño de sistemas, escritura', SYSTEM_DESIGN_KEY, 'Escalar la escritura', '2025/11/17')
+        .addRelatedItems(Keys.ANALISIS_DATA_STREAMING_VS_MESSAGING, Keys.PERSISTENCY_ADVANCED_SCALING_DB, Keys.ARQUITECTURAS_MISTAKES_II, Keys.META_CARACTERISTICAS_BLOCKING_AND_NO_BLOCKING, Keys.ANALISIS_DATA_GOLDEN_RECORD, Keys.PERSISTENCY_CONSISTENCY, Keys.NUBE_PACELC, Keys.ANALISIS_DATA_OLAP_OLTP, Keys.PERSISTENCY_DB_TYPES, Keys.PERSISTENCY_ADVANCED_WAL, Keys.PERSISTENCY_INDICES, Keys.ARQUITECTURAS_EVENT_DRIVEN)
+        .addMoreReferences('https://medium.com/@priyasrivastava18official/system-design-pattern-scaling-reads-reads-are-the-silent-killers-of-performance-heres-the-c0a74ec46646')
     ]
 ]);
 
