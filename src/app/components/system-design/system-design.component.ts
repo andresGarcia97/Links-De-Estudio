@@ -19,7 +19,7 @@ export class SystemDesignComponent implements OnInit {
 
   relatedSections = new Map<string, string>([]);
 
-  tittles = new Map([ ...ANALISIS_REF ].map(([key, { tittleShort }]) => [key, tittleShort]));
+  tittles = new Map([ ...SYSTEM_DESIGN_REF ].map(([key, { tittleShort }]) => [key, tittleShort]));
 
   previousAndNextSection!: PreviousAndNextSection;
 
