@@ -1,19 +1,21 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {
-  AGILES_KEY, ANALISIS_KEY, APIS_KEY, ARQUITECTURAS_KEY, BUENAS_PRACTICAS_KEY, CALIDAD_KEY, META_CARACTERISTICAS_KEY, CI_CD_KEY, COMPILACION_KEY,
-  CONOCIMIENTO_EMPIRICO_KEY, CONTENEDORES_KEY, PERSISTENCY_ADVANCED_KEY, PERSISTENCY_KEY, ESTRATEGIAS_DESARROLLO_KEY, META_ESTRUCTURAS_KEY, FRAMEWORKS_KEY,
-  GIT_KEY, HARDWARE_KEY, LEYES_KEY, MALAS_PRACTICAS_KEY, METODOLOGIAS_KEY, NEURO_MARKETING_KEY, NUBE_KEY, ANALISIS_DATA_KEY,
-  PARADIGMAS_KEY, PATRONES_KEY, PEOPLE_KEY, POO_KEY, PRINCIPIOS_KEY, REFACTORING_KEY, REQUISITOS_KEY, SECURITY_KEY, SMELL_CODES_KEY,
-  TESTING_ADVANCED_KEY, TESTING_KEY, UML_KEY, USER_HISTORIES_KEY, VERSIONAMIENTO_KEY, WEB_KEY, MICRO_SERVICES_KEY
+  AGILES_KEY, ANALISIS_KEY, APIS_KEY, ARQUITECTURAS_KEY, BUENAS_PRACTICAS_KEY, CALIDAD_KEY, META_CARACTERISTICAS_KEY,
+  CI_CD_KEY, COMPILACION_KEY, CONOCIMIENTO_EMPIRICO_KEY, CONTENEDORES_KEY, PERSISTENCY_ADVANCED_KEY, PERSISTENCY_KEY,
+  ESTRATEGIAS_DESARROLLO_KEY, META_ESTRUCTURAS_KEY, FRAMEWORKS_KEY, GIT_KEY, HARDWARE_KEY, LEYES_KEY, MALAS_PRACTICAS_KEY,
+  METODOLOGIAS_KEY, NEURO_MARKETING_KEY, NUBE_KEY, ANALISIS_DATA_KEY, PARADIGMAS_KEY, PATRONES_KEY, PEOPLE_KEY, POO_KEY,
+  PRINCIPIOS_KEY, REFACTORING_KEY, REQUISITOS_KEY, SECURITY_KEY, SMELL_CODES_KEY, TESTING_ADVANCED_KEY, TESTING_KEY, UML_KEY,
+  USER_HISTORIES_KEY, VERSIONAMIENTO_KEY, WEB_KEY, MICRO_SERVICES_KEY, SYSTEM_DESIGN_KEY
 } from 'src/app/models/linkReferencia';
 import { GlosarioComponent } from './components/glosario/glosario.component';
 import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
 
-  { path: 'microservices', loadChildren: () => import('./components/micro-services/micro-services.module').then(m => m.MicroServicesModule), title: MICRO_SERVICES_KEY  },
-  { path: 'apis', loadChildren: () => import('./components/apis-terms/apis-terms.module').then(m => m.ApisTermsModule), title: APIS_KEY  },
+  { path: 'system-design', loadChildren: () => import('./components/system-design/system-design.module').then(m => m.SystemsDesignModule), title: SYSTEM_DESIGN_KEY },
+  { path: 'microservices', loadChildren: () => import('./components/micro-services/micro-services.module').then(m => m.MicroServicesModule), title: MICRO_SERVICES_KEY },
+  { path: 'apis', loadChildren: () => import('./components/apis-terms/apis-terms.module').then(m => m.ApisTermsModule), title: APIS_KEY },
   { path: 'ci-cd-infraestructura', loadChildren: () => import('./components/cd-ci/cd-ci.module').then(m => m.CdCiModule), title: CI_CD_KEY },
   { path: 'neuro-marketing', loadChildren: () => import('./components/neuro-marketing/neuro-marketing.module').then(m => m.NeuroMarketingModule), title: NEURO_MARKETING_KEY },
   { path: 'hardware', loadChildren: () => import('./components/hardware/hardware.module').then(m => m.HardwareModule), title: HARDWARE_KEY },
@@ -36,7 +38,7 @@ const routes: Routes = [
   { path: 'testing', loadChildren: () => import('./components/pruebas/pruebas.module').then(m => m.PruebasModule), title: TESTING_KEY },
   { path: 'requisitos', loadChildren: () => import('./components/requisitos/requisitos.module').then(m => m.RequisitosModule), title: REQUISITOS_KEY },
   { path: 'uml', loadChildren: () => import('./components/uml/uml.module').then(m => m.UMLModule), title: UML_KEY },
-  { path: 'estrategias-de-desarrollo',  loadChildren: () => import('./components/estrategias-desarrollo/estrategias-desarrollo.module').then(m => m.EstrategiasDesarrolloModule), title: ESTRATEGIAS_DESARROLLO_KEY },
+  { path: 'estrategias-de-desarrollo', loadChildren: () => import('./components/estrategias-desarrollo/estrategias-desarrollo.module').then(m => m.EstrategiasDesarrolloModule), title: ESTRATEGIAS_DESARROLLO_KEY },
   { path: 'versionamiento', loadChildren: () => import('./components/versionamiento/versionamiento.module').then(m => m.VersionamientoModule), title: VERSIONAMIENTO_KEY },
   { path: 'historias-de-usuario', loadChildren: () => import('./components/historia-usuario/historias-usuario.module').then(m => m.HistoriasUsuarioModule), title: USER_HISTORIES_KEY },
   { path: 'compilacion', loadChildren: () => import('./components/compilacion/compilacion.module').then(m => m.CompilacionModule), title: COMPILACION_KEY },
@@ -52,10 +54,9 @@ const routes: Routes = [
   { path: 'frameworks', loadChildren: () => import('./components/frameworks/frameworks.module').then(m => m.FrameworksModule), title: FRAMEWORKS_KEY },
   { path: 'buenas-practicas', loadChildren: () => import('./components/buenas-practicas/buenas-practicas.module').then(m => m.BuenasPracticasModule), title: BUENAS_PRACTICAS_KEY },
   { path: 'arquitecturas', loadChildren: () => import('./components/arquitecturas/arquitecturas.module').then(m => m.ArquitecturasModule), title: ARQUITECTURAS_KEY },
-  { path: 'agiles', loadChildren: () => import('./components/agiles/agiles.module').then(m => m.AgilesModule), title: AGILES_KEY  },
+  { path: 'agiles', loadChildren: () => import('./components/agiles/agiles.module').then(m => m.AgilesModule), title: AGILES_KEY },
   { path: 'glosario', component: GlosarioComponent, title: 'Glosario' },
   { path: '', component: HomeComponent, pathMatch: 'full', title: 'Contenido De Repaso' },
-  // { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({

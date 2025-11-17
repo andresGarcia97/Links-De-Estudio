@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HISTORIAS_USUARIO } from 'src/app/models/content/content2';
 import { 
-  AGILES_KEY, ANALISIS_KEY, CONOCIMIENTO_EMPIRICO_KEY, LinkReferencia, PEOPLE_KEY, REQUISITOS_KEY, USER_HISTORIES }
+  AGILES_KEY, CONOCIMIENTO_EMPIRICO_KEY, LinkReferencia, PEOPLE_KEY, REQUISITOS_KEY, SYSTEM_DESIGN_KEY, USER_HISTORIES }
   from 'src/app/models/linkReferencia';
 import { PreviousAndNextSection } from 'src/app/models/models';
 
@@ -31,8 +31,8 @@ export class HistoriaUsuarioComponent implements OnInit {
     this.relatedSections.set(PEOPLE_KEY,                routes.get(PEOPLE_KEY)!);
     this.relatedSections.set(AGILES_KEY,                routes.get(AGILES_KEY)!);
     this.previousAndNextSection = new PreviousAndNextSection(
-      ANALISIS_KEY, routes.get(ANALISIS_KEY)!,
-      PEOPLE_KEY,   routes.get(PEOPLE_KEY)!
+      SYSTEM_DESIGN_KEY, routes.get(SYSTEM_DESIGN_KEY)!,
+      PEOPLE_KEY,        routes.get(PEOPLE_KEY)!
     );
   }
 

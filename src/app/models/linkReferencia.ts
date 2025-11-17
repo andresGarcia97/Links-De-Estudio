@@ -34,7 +34,7 @@ export class LinkReferencia {
         [HARDWARE_KEY, 'hardware'],     [REFACTORING_KEY, 'refactorizacion'],   [MICRO_SERVICES_KEY, 'microservices'],   
         [REQUISITOS_KEY, 'requisitos'], [VERSIONAMIENTO_KEY, 'versionamiento'], [TESTING_ADVANCED_KEY, 'testing-avanzado'],
         [NUBE_KEY, 'nube'],             [ARQUITECTURAS_KEY, 'arquitecturas'],   [ANALISIS_DATA_KEY, 'analisis-datos'],                  
-        [TESTING_KEY, 'testing'],                                                          
+        [TESTING_KEY, 'testing'],       [SYSTEM_DESIGN_KEY, 'system-design']                                                       
     ]);
 
 }
@@ -122,6 +122,65 @@ export const ANALISIS_REF = new Map<string, Referencia>([
         .addMoreReferences('https://www.workingsoftware.dev/fundamental-techniques-for-software-architects/#context-mapping')
     ],
     [Keys.ANALISIS_TACTIC_DESIGN, new Referencia('https://medium.com/@lambrych/eventstorming-for-domain-driven-design-strengths-and-limitations-3f0b49009c38', 'Event Storming & Diseño tactico', ANALISIS_KEY, 'Diseño tactico', '2025/07/13')
+        .addRelatedItems(Keys.VERSIONAMIENTO_DOCUMENT_ARQUITECTURE, Keys.NUBE_MIGRATIONS, Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.USER_HISTORIES_USER_HISTORIES, Keys.PATRONES_PERSISTENCE_PATTERNS, Keys.PATRONES_DYSTRIBUTED_SYSTEMS, Keys.POO_FACTORY_METODS)
+        .addMoreReferences('https://medium.com/@lambrych/can-eventstorming-guide-the-design-workflow-6f75d8aa20e0')
+    ],
+]);
+
+export const SYSTEM_DESIGN_KEY = 'System-Design';
+export const SYSTEM_DESIGN_REF = new Map<string, Referencia>([
+    [Keys.ANALISIS_COMPORTAMIENTO, new Referencia('https://es.wikipedia.org/wiki/Modelo_de_comportamiento_(inform%C3%A1tica)', 'Comportamiento del sistema', SYSTEM_DESIGN_KEY, 'Comportamiento', '', '2025/03/29').addRelatedItems(Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS, Keys.ESTRATEGIAS_DESARROLLO_BDD)],
+    [Keys.ANALISIS_ANALISIS_DOMAIN, new Referencia('https://www.redalyc.org/jatsRepo/4768/476862530003/html/index.html', 'Analisis de Dominio', SYSTEM_DESIGN_KEY, 'Analisis de Dominio')],
+    [Keys.ANALISIS_DISENO, new Referencia('https://www.bravent.net/la-importancia-de-un-buen-diseno-del-software/', 'Ventajas de un buen diseño', SYSTEM_DESIGN_KEY, 'Un buen diseño')],
+    [Keys.ANALISIS_MODEL_DOMAIN, new Referencia('https://es.stackoverflow.com/questions/102490/que-es-el-modelo-de-dominio-en-dise%C3%B1o-de-software', 'Modelo de Dominio', SYSTEM_DESIGN_KEY, 'Modelo de dominio', '', '2024/12/22').addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_DDD)],
+    [Keys.ANALISIS_TIME_COMPLEXITY, new Referencia('https://www.freecodecamp.org/news/big-o-cheat-sheet-time-complexity-chart/', 'Big O Notación', SYSTEM_DESIGN_KEY, 'Big O Notación', '2022/12/30', '2025/03/29').addRelatedItems(Keys.BUENAS_PRACTICAS_COMPLEJIDAD_ALGORITMICA, Keys.BUENAS_PRACTICAS_COMPLEJIDAD_COGNITIVA)],
+    //['kpis', new Referencia('https://www.ibm.com/garage/method/practices/learn/kpis-measure-guide-progress/', 'KPIs', ANALISIS_KEY, 'KPI', '2022/12/30')],
+    [Keys.ANALISIS_MANIFEST_REACTIVE, new Referencia('https://www.reactivemanifesto.org/es', 'Manifiesto Reactivo', SYSTEM_DESIGN_KEY, 'Manifiesto Reactivo', '2023/02/19', '2024/12/10')],
+    [Keys.ANALISIS_DECLINE_DESIGN, new Referencia('https://uxdesign.cc/the-decline-in-design-thinking-8fd0145fb4d2', 'Declive del diseño', SYSTEM_DESIGN_KEY, 'Declive del Diseño', '2023/07/23')],
+    [Keys.ANALISIS_OPINIONATED_NO, new Referencia('https://www.baeldung.com/cs/opinionated-software-design', 'Diseño con & sin opiniones', SYSTEM_DESIGN_KEY, 'Diseño con/sin opiniones', '2023/11/11')],
+    [Keys.ANALISIS_ALGORITHMS, new Referencia('https://medium.com/@zgokceaynaci/a-journey-through-the-world-of-algorithms-554bfffcee97', 'Algoritmos', SYSTEM_DESIGN_KEY, 'Algoritmos', '2024/07/27').addRelatedItems(Keys.COMPILACION_GRAFOS, Keys.META_CARACTERISTICAS_BACKTRACKING)],
+    [Keys.ANALISIS_QUEUES_SYSTEM_DESIGN, new Referencia('https://levelup.gitconnected.com/message-queues-in-system-design-0440a1221023', 'Message Queues in System Design', SYSTEM_DESIGN_KEY, 'Message Queues', '2024/09/01', '2025/09/21')
+        .addRelatedItems(Keys.META_ESTRUCTURAS_ESTRUCTURAS_DATOS_II, Keys.APIS_REST_VS_MESSAGING, Keys.PATRONES_MESSAGING, Keys.ANALISIS_DATA_BATCH_VS_STREAM, Keys.MICROSERVICES_PRODUCER_CONSUMER_IDEMPOTENCY)
+        .addMoreReferences('https://solace.com/products/event-broker/messaging-patterns-queue-types/', 'https://airbyte.com/data-engineering-resources/rabbitmq-vs-kafka')
+    ],
+    [Keys.ANALISIS_HIGH_LEVEL_VS_LOW_LEVEL, new Referencia('https://www.baeldung.com/cs/hld-lld', 'High Level Vs Low Level', SYSTEM_DESIGN_KEY, 'High Level Vs Low Level', '2024/09/20').addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_SLDC).addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.PERSISTENCY_ERD)],
+    [Keys.ANALISIS_SYSTEM_DESIGN_CONCEPTS_I, new Referencia('https://www.linkedin.com/posts/brijpandeyji_top-12-system-design-concepts-every-developer-activity-7238729739065069568-h1t6/', 'System Design Concepts I', SYSTEM_DESIGN_KEY, 'System Design Concepts I', '2024/09/29')],
+    [Keys.ANALISIS_SYSTEM_DESIGN_CONCEPTS_II, new Referencia('https://www.linkedin.com/posts/alexxubyte_systemdesign-coding-interviewtips-activity-7320110326635520001-mdMb/', 'System Design Concepts II', SYSTEM_DESIGN_KEY, 'System Design Concepts II', '2025/04/21')],
+    [Keys.ANALISIS_SYSTEM_DESIGN_CONCEPTS_III, new Referencia('https://medium.com/javarevisited/21-essential-system-design-building-blocks-for-software-engineers-c5f4120549c4', 'System Design Concepts III', SYSTEM_DESIGN_KEY, 'System Design Concepts III', '2025/05/03')],
+    [Keys.ANALISIS_SINGLE_POINT_OF_FAILURE, new Referencia('https://levelup.gitconnected.com/single-point-of-failure-spof-in-system-design-c8bbac5af993', 'Single Point Of Failure', SYSTEM_DESIGN_KEY, 'SPOF', '2024/12/07')],
+    [Keys.ANALISIS_TYPE_EVENTS, new Referencia('https://solace.com/blog/events-schemas-payloads/', 'Tipos de Eventos', SYSTEM_DESIGN_KEY, 'Tipos de Eventos', '2025/10/21')
+        .addRelatedItems(Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION, Keys.VERSIONAMIENTO_EVOLUTION_SCHEMA_AND_SCHEMA_REGISTRY, Keys.MICROSERVICES_PRODUCER_CONSUMER_PROBLEM, Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL, Keys.NUBE_PACELC, Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.ANALISIS_DATA_ETL_ELT)
+        .addMoreReferences('https://www.confluent.io/blog/spring-kafka-can-your-kafka-consumers-handle-a-poison-pill/')
+    ],
+    [Keys.ANALISIS_DOMAIN_EVENTS, new Referencia('https://medium.com/yield-studio/ddd-do-not-leak-your-domain-events-456919346273', 'Domain Events', SYSTEM_DESIGN_KEY, 'Domain Events', '2025/02/28').addRelatedItems(Keys.POO_COUPLING_AND_COHESION, Keys.ESTRATEGIAS_DESARROLLO_DDD)],
+    [Keys.ANALISIS_LIGHT_EVENTS_VS_RICH_EVENTS, new Referencia('https://theburningmonk.com/2024/11/when-to-use-light-events-vs-rich-events-in-event-driven-architectures/', 'Light Events VS Rich Events', SYSTEM_DESIGN_KEY, 'Light/Rich Events', '2024/12/08').addRelatedItems(Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.PERSISTENCY_NORMALIZATION, Keys.ESTRATEGIAS_DESARROLLO_DDD)],
+    [Keys.ANALISIS_SYSTEM_DESIGN_I, new Referencia('https://newsletter.systemdesigncodex.com/p/how-to-do-well-in-system-design-interviews', 'System Design I', SYSTEM_DESIGN_KEY, 'System Design I', '2025/02/16').addRelatedItems(Keys.REQUISITOS_FUNCIONALES, Keys.REQUISITOS_NO_FUNCIONALES, Keys.PERSISTENCY_ADVANCED_SQL_NO_SQL, Keys.WEB_USER_XPERIENCE, Keys.PERSISTENCY_ADVANCED_DENORMALIZATION, Keys.PERSISTENCY_NORMALIZATION)],
+    [Keys.ANALISIS_SYSTEM_DESIGN_II, new Referencia('https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction', 'System Design II', SYSTEM_DESIGN_KEY, 'System Design II', '2025/02/16').addRelatedItems(Keys.APIS_API_FIRST, Keys.CONTENEDORES_ORCHESTRATION, Keys.CD_CI_IAS_CODE, Keys.HARDWARE_ESCALAMIENTO, Keys.META_CARACTERISTICAS_CACHE, Keys.NUBE_PACELC)],
+    [Keys.ANALISIS_DELIVERY_GUARANTED, new Referencia('https://docs.confluent.io/kafka/design/delivery-semantics.html', 'Delivery Guaranted', SYSTEM_DESIGN_KEY, 'Delivery Guaranted', '2025/03/21').addRelatedItems(Keys.MICROSERVICES_PRODUCER_CONSUMER_PROBLEM, Keys.APIS_IDEMPOTENCIA)],
+    [Keys.ANALISIS_SYSTEM_THINKING_I, new Referencia('https://medium.com/nerd-for-tech/part-2-applying-systems-thinking-to-software-development-e98cbd195a83', 'Pensamiento Sistemico I', SYSTEM_DESIGN_KEY, 'Pensamiento Sistemico I', '2025/03/29', '2025/08/03')
+        .addRelatedItems(Keys.APIS_REST_VS_MESSAGING, Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.LEYES_LEHMAN, Keys.LEYES_CONWAY, Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES, Keys.HARDWARE_ESCALAMIENTO, Keys.ANALISIS_DATA_TGS)
+        .addMoreReferences('https://medium.com/nerd-for-tech/part-1-a-systems-thinking-primer-fe75f9e92c91')
+    ],
+    [Keys.ANALISIS_SYSTEM_THINKING_II, new Referencia('https://medium.com/illumination/thinking-in-systems-how-to-approach-complex-software-problems-513039f81782', 'Pensamiento Sistemico II', SYSTEM_DESIGN_KEY, 'Pensamiento Sistemico II', '2025/08/03')
+        .addRelatedItems(Keys.ANALISIS_DATA_TGS, Keys.TESTING_GRAFOS_CAUSA_EFECTO, Keys.PEOPLE_NO_NEWS_GOOD_NEWS, Keys.ARQUITECTURAS_MODULITHS, Keys.PRINCIPIOS_SOC, Keys.VERSIONAMIENTO_DOCUMENT_ARQUITECTURE)
+        .addMoreReferences('https://medium.com/@pudarimadhavi99/10-secrets-to-making-rock-solid-architectural-decisions-as-a-senior-developer-5f45e97fe69f')
+    ],
+    [Keys.ANALISIS_COHESERS_DECOUPLERS, new Referencia('https://itnext.io/cohesers-and-decouplers-ecac2964081a', 'Cohesores y Desacopladores ', SYSTEM_DESIGN_KEY, 'Desacoplamiento', '2025/04/07').addRelatedItems(Keys.POO_COUPLING_AND_COHESION, Keys.ARQUITECTURAS_MONOLITOS, Keys.META_CARACTERISTICAS_DEAD_LOCKS, Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.SECURITY_CONDICION_CARRERA, Keys.PERSISTENCY_ADVANCED_SCALING_DB, Keys.LEYES_CONWAY)],
+    [Keys.ANALISIS_COMMON_METRICS, new Referencia('https://medium.com/javarevisited/dont-go-into-your-system-design-interview-without-mastering-this-31ee7af2ed7b', 'Metricas comunes en System Design', SYSTEM_DESIGN_KEY, 'Metricas comunes', '2025/04/26')
+        .addRelatedItems(Keys.META_CARACTERISTICAS_CACHE, Keys.NUBE_OBSERVABILIDAD, Keys.HARDWARE_MONITOREO, Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.CD_CI_FAILOVER, Keys.PERSISTENCY_ACID)
+        .addMoreReferences("https://systemdesignschool.io/fundamentals/qps", "https://speedscale.com/blog/determine-transactions-per-second/", "https://medium.com/@alexa.polly007/understanding-caching-eviction-invalidation-patterns-and-their-use-cases-9fbfd34be970")
+    ],
+    [Keys.ANALISIS_BOUNDED_CONTEXT, new Referencia('https://martinfowler.com/bliki/BoundedContext.html', 'Bounded Context', SYSTEM_DESIGN_KEY, 'Bounded Context', '2025/06/02').addRelatedItems(Keys.BUENAS_PRACTICAS_AGGREGATES, Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.PEOPLE_LANGUAGE_UBICUOS, Keys.POO_COUPLING_AND_COHESION)],
+    [Keys.ANALISIS_MULTI_BOUNDED_CONTEXT, new Referencia('https://medium.com/ssense-tech/ddd-beyond-the-basics-mastering-multi-bounded-context-integration-ca0c7cec6561', 'Multi Bounded Context', SYSTEM_DESIGN_KEY, 'Multi Bounded Context', '2025/10/25')
+        .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.META_ESTRUCTURAS_SCOPE, Keys.PEOPLE_LANGUAGE_UBICUOS, Keys.PATRONES_CLOUD_DESIGN_PATTERNS, Keys.ESTRATEGIAS_DESARROLLO_VERTICAL)
+        .addMoreReferences('https://verraes.net/2025/08/domain-and-bounded-contexts-dont-map-one-on-one/', 'https://medium.com/ssense-tech/domain-driven-design-everything-you-always-wanted-to-know-about-it-but-were-afraid-to-ask-a85e7b74497a')
+    ],
+    [Keys.ANALISIS_SYSTEM_TYPES, new Referencia('https://medium.com/@bugfreeai/understanding-system-design-interview-types-a-strategic-guide-for-2025-320af44efc8b', 'Tipos generales de sistemas', SYSTEM_DESIGN_KEY, 'Tipos de sistemas', '2025/06/08').addRelatedItems(Keys.HARDWARE_ESCALAMIENTO, Keys.PERSISTENCY_ADVANCED_SCALING_DB, Keys.NUBE_LATENCY, Keys.MICROSERVICES_CACHE_FAILS, Keys.PERSISTENCY_CONSISTENCY, Keys.PERSISTENCY_ADVANCED_WAL, Keys.NUBE_CAP_TEOREMA, Keys.PERSISTENCY_ACID, Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS, Keys.PARADIGMAS_PARADIGMA_DATOS, Keys.PERSISTENCY_INDICES, Keys.ANALISIS_DATA_DATA_STORING)],
+    [Keys.ANALISIS_STRATEGIC_DESIGN, new Referencia('https://medium.com/@lambrych/domain-driven-design-ddd-strategic-design-explained-55e10b7ecc0f', 'Diseño estrategico', SYSTEM_DESIGN_KEY, 'Diseño estrategico', '2025/07/10')
+        .addRelatedItems(Keys.BUENAS_PRACTICAS_AGGREGATES, Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.PEOPLE_LANGUAGE_UBICUOS, Keys.META_ESTRUCTURAS_VALUE_OBJECTS, Keys.REQUISITOS_BUSINESS_VALUE)
+        .addMoreReferences('https://www.workingsoftware.dev/fundamental-techniques-for-software-architects/#context-mapping')
+    ],
+    [Keys.ANALISIS_TACTIC_DESIGN, new Referencia('https://medium.com/@lambrych/eventstorming-for-domain-driven-design-strengths-and-limitations-3f0b49009c38', 'Event Storming & Diseño tactico', SYSTEM_DESIGN_KEY, 'Diseño tactico', '2025/07/13')
         .addRelatedItems(Keys.VERSIONAMIENTO_DOCUMENT_ARQUITECTURE, Keys.NUBE_MIGRATIONS, Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.USER_HISTORIES_USER_HISTORIES, Keys.PATRONES_PERSISTENCE_PATTERNS, Keys.PATRONES_DYSTRIBUTED_SYSTEMS, Keys.POO_FACTORY_METODS)
         .addMoreReferences('https://medium.com/@lambrych/can-eventstorming-guide-the-design-workflow-6f75d8aa20e0')
     ],
