@@ -34,11 +34,6 @@ export class Referencia {
         this.dateUpdate = dateUpdate;
     }
 
-    public addRelatedItem(relatedItem: string): Referencia {
-        this.relatedItems.push(relatedItem);
-        return this;
-    }
-
     public addRelatedItems(...relatedItems: string[]): Referencia {
         this.relatedItems.push(...relatedItems);
         return this;
