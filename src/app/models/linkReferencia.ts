@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.SYSTEM_DESIGN_SCALING_WRITES;
+export const LAST_ITEM = Keys.TESTING_PROPERTY_TESTING_FUZZING_TESTING;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -805,6 +805,10 @@ export const TESTING_REF = new Map<string, Referencia>([
     [Keys.TESTING_CONTRACT_TESTING, new Referencia('https://www.paradigmadigital.com/dev/patrones-arquitectura-microservicios-consumer-driven-contract-testing/', 'Contract Testing', TESTING_KEY, 'Contract Testing', '2025/08/19')
         .addRelatedItems(Keys.POO_DESIGN_BY_CONTRACT, Keys.PATRONES_FOR_INTEGRATION, Keys.MICROSERVICES_EVENTS_VS_REQUEST_RESPONSE, Keys.ANALISIS_DOMAIN_EVENTS, Keys.APIS_API_FIRST_VS_CODE_FIRST, Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION, Keys.CD_CI_DEPLOYMENT_PIPELINES, Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES)
         .addMoreReferences('https://medium.com/@chinthakadd/contract-testing-for-event-driven-architectures-can-we-do-we-and-how-do-we-177c8e9acfc7')
+    ],
+    [Keys.TESTING_PROPERTY_TESTING_FUZZING_TESTING, new Referencia('https://www.mayhem.security/blog/what-is-property-based-testing', 'Property Testing & Fuzz Testing', TESTING_KEY, 'Property/Fuzz Testing', '2025/11/22')
+        .addRelatedItems(Keys.ANALISIS_COMPORTAMIENTO, Keys.COMPILACION_AUTOMATAS, Keys.TESTING_ADVANCED_MUTATION, Keys.APIS_TESTING, Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION, Keys.POO_DESIGN_BY_CONTRACT_PARTS, Keys.META_CARACTERISTICAS_EXCEPTIONS)
+        .addMoreReferences('https://www.mayhem.security/blog/property-based-fuzzing', 'https://www.mayhem.security/blog/useful-properties-to-check-with-fuzz-testing')
     ],
 ]);
 
