@@ -6,8 +6,9 @@ import { ANALISIS_REF, LinkReferencia, PERSISTENCY_ADVANCED_KEY, META_CARACTERIS
 import { PreviousAndNextSection } from 'src/app/models/models';
 
 @Component({
-  selector: 'app-system-design',
-  templateUrl: './system-design.component.html'
+    selector: 'app-system-design',
+    templateUrl: './system-design.component.html',
+    standalone: false
 })
 export class SystemDesignComponent implements OnInit {
 

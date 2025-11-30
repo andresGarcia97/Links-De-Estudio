@@ -7,8 +7,9 @@ from 'src/app/models/linkReferencia';
 import { PreviousAndNextSection } from 'src/app/models/models';
 
 @Component({
-  selector: 'app-analisis',
-  templateUrl: './analisis.component.html'
+    selector: 'app-analisis',
+    templateUrl: './analisis.component.html',
+    standalone: false
 })
 export class AnalisisComponent implements OnInit {
 

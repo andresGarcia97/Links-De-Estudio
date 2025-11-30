@@ -5,8 +5,9 @@ from 'src/app/models/linkReferencia';
 import { PreviousAndNextSection } from 'src/app/models/models';
 
 @Component({
-  selector: 'app-sql-nosql',
-  templateUrl: './sql-nosql.component.html'
+    selector: 'app-sql-nosql',
+    templateUrl: './sql-nosql.component.html',
+    standalone: false
 })
 export class SqlNosqlComponent implements OnInit {
 

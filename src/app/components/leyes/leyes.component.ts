@@ -5,8 +5,9 @@ from 'src/app/models/linkReferencia';
 import { PreviousAndNextSection } from 'src/app/models/models';
 
 @Component({
-  selector: 'app-leyes',
-  templateUrl: './leyes.component.html'
+    selector: 'app-leyes',
+    templateUrl: './leyes.component.html',
+    standalone: false
 })
 export class LeyesComponent implements OnInit {
 

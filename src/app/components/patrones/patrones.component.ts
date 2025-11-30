@@ -6,8 +6,9 @@ from 'src/app/models/linkReferencia';
 import { PreviousAndNextSection } from 'src/app/models/models';
 
 @Component({
-  selector: 'app-patrones',
-  templateUrl: './patrones.component.html'
+    selector: 'app-patrones',
+    templateUrl: './patrones.component.html',
+    standalone: false
 })
 export class PatronesComponent implements OnInit {
 

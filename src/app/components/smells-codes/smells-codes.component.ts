@@ -5,8 +5,9 @@ from 'src/app/models/linkReferencia';
 import { PreviousAndNextSection } from 'src/app/models/models';
 
 @Component({
-  selector: 'app-smells-codes',
-  templateUrl: './smells-codes.component.html'
+    selector: 'app-smells-codes',
+    templateUrl: './smells-codes.component.html',
+    standalone: false
 })
 export class SmellsCodesComponent implements OnInit {
 

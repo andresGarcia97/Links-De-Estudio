@@ -2,8 +2,9 @@ import { Component } from '@angular/core';
 import { APIS, BACK, CURIOSITIES, DOCKER, FRONT, GIT, SECURITY, SQL, TESTING, UTILS } from 'src/app/models/linkFuente';
 
 @Component({
-  selector: 'app-fuentes',
-  templateUrl: './fuentes.component.html'
+    selector: 'app-fuentes',
+    templateUrl: './fuentes.component.html',
+    standalone: false
 })
 export class FuentesComponent {
 

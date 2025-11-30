@@ -12,8 +12,9 @@ import { LinkReferencia } from 'src/app/models/linkReferencia';
 import { Fuente, Referencia } from 'src/app/models/models';
 
 @Component({
-  selector: 'app-glosario',
-  templateUrl: './glosario.component.html'
+    selector: 'app-glosario',
+    templateUrl: './glosario.component.html',
+    standalone: false
 })
 export class GlosarioComponent implements OnInit {
 

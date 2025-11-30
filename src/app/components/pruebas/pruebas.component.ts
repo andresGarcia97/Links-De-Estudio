@@ -5,8 +5,9 @@ from 'src/app/models/linkReferencia';
 import { PreviousAndNextSection } from 'src/app/models/models';
 
 @Component({
-  selector: 'app-pruebas',
-  templateUrl: './pruebas.component.html'
+    selector: 'app-pruebas',
+    templateUrl: './pruebas.component.html',
+    standalone: false
 })
 export class PruebasComponent implements OnInit {
 

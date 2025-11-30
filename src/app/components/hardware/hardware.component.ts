@@ -5,8 +5,9 @@ from 'src/app/models/linkReferencia';
 import { PreviousAndNextSection } from 'src/app/models/models';
 
 @Component({
-  selector: 'app-hardware',
-  templateUrl: './hardware.component.html'
+    selector: 'app-hardware',
+    templateUrl: './hardware.component.html',
+    standalone: false
 })
 export class HardwareComponent implements OnInit {
 

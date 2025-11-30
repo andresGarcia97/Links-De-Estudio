@@ -7,8 +7,9 @@ import {
 import { PreviousAndNextSection } from 'src/app/models/models';
 
 @Component({
-  selector: 'app-analisis-datos',
-  templateUrl: './analisis-datos.component.html'
+    selector: 'app-analisis-datos',
+    templateUrl: './analisis-datos.component.html',
+    standalone: false
 })
 export class AnalisisDatosComponent implements OnInit {
 

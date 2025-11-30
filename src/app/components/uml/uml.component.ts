@@ -5,8 +5,9 @@ from 'src/app/models/linkReferencia';
 import { PreviousAndNextSection } from 'src/app/models/models';
 
 @Component({
-  selector: 'app-uml',
-  templateUrl: './uml.component.html'
+    selector: 'app-uml',
+    templateUrl: './uml.component.html',
+    standalone: false
 })
 export class UmlComponent implements OnInit {
 

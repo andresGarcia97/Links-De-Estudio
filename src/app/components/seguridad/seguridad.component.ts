@@ -5,8 +5,9 @@ from 'src/app/models/linkReferencia';
 import { PreviousAndNextSection } from 'src/app/models/models';
 
 @Component({
-  selector: 'app-seguridad',
-  templateUrl: './seguridad.component.html'
+    selector: 'app-seguridad',
+    templateUrl: './seguridad.component.html',
+    standalone: false
 })
 export class SeguridadComponent implements OnInit {
 

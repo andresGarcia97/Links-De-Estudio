@@ -5,8 +5,9 @@ import { LAST_ITEM, LinkReferencia } from 'src/app/models/linkReferencia';
 const references = new LinkReferencia()
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html'
+    selector: 'app-home',
+    templateUrl: './home.component.html',
+    standalone: false
 })
 export class HomeComponent {
 

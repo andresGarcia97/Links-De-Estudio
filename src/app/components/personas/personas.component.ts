@@ -7,8 +7,9 @@ import {
 import { PreviousAndNextSection } from 'src/app/models/models';
 
 @Component({
-  selector: 'app-personas',
-  templateUrl: './personas.component.html'
+    selector: 'app-personas',
+    templateUrl: './personas.component.html',
+    standalone: false
 })
 export class PersonasComponent implements OnInit {
 

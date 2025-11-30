@@ -5,8 +5,9 @@ from 'src/app/models/linkReferencia';
 import { PreviousAndNextSection } from 'src/app/models/models';
 
 @Component({
-  selector: 'app-versionamiento',
-  templateUrl: './versionamiento.component.html'
+    selector: 'app-versionamiento',
+    templateUrl: './versionamiento.component.html',
+    standalone: false
 })
 export class VersionamientoComponent implements OnInit {
 

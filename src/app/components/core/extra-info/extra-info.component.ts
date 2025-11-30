@@ -6,8 +6,9 @@ import { Referencia } from 'src/app/models/models';
 const references = new LinkReferencia();
 
 @Component({
-  selector: 'app-extra-info',
-  templateUrl: './extra-info.component.html'
+    selector: 'app-extra-info',
+    templateUrl: './extra-info.component.html',
+    standalone: false
 })
 export class ExtraInfoComponent implements OnChanges {
 

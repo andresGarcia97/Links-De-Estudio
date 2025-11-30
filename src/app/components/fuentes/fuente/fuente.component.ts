@@ -5,8 +5,9 @@ import { Fuente } from 'src/app/models/models';
 const fuentes = new LinkFuente().fuentes;
 
 @Component({
-  selector: 'app-fuente',
-  templateUrl: './fuente.component.html'
+    selector: 'app-fuente',
+    templateUrl: './fuente.component.html',
+    standalone: false
 })
 export class FuenteComponent implements OnInit {
 

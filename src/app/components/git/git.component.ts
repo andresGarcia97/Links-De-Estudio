@@ -4,8 +4,9 @@ import { CONTENEDORES_KEY, GIT_REF, LinkReferencia, VERSIONAMIENTO_KEY } from 's
 import { PreviousAndNextSection } from 'src/app/models/models';
 
 @Component({
-  selector: 'app-git',
-  templateUrl: './git.component.html'
+    selector: 'app-git',
+    templateUrl: './git.component.html',
+    standalone: false
 })
 export class GitComponent implements OnInit {
 

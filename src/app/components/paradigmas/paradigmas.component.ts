@@ -5,8 +5,9 @@ from 'src/app/models/linkReferencia';
 import { PreviousAndNextSection } from 'src/app/models/models';
 
 @Component({
-  selector: 'app-paradigmas',
-  templateUrl: './paradigmas.component.html'
+    selector: 'app-paradigmas',
+    templateUrl: './paradigmas.component.html',
+    standalone: false
 })
 export class ParadigmasComponent  implements OnInit {
 

@@ -6,8 +6,9 @@ from 'src/app/models/linkReferencia';
 import { PreviousAndNextSection } from 'src/app/models/models';
 
 @Component({
-  selector: 'app-refactorizacion',
-  templateUrl: './refactorizacion.component.html'
+    selector: 'app-refactorizacion',
+    templateUrl: './refactorizacion.component.html',
+    standalone: false
 })
 export class RefactorizacionComponent implements OnInit {
 

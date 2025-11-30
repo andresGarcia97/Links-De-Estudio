@@ -6,8 +6,9 @@ from 'src/app/models/linkReferencia';
 import { PreviousAndNextSection } from 'src/app/models/models';
 
 @Component({
-  selector: 'app-web',
-  templateUrl: './web.component.html'
+    selector: 'app-web',
+    templateUrl: './web.component.html',
+    standalone: false
 })
 export class WebComponent implements OnInit {
 

@@ -5,8 +5,9 @@ from 'src/app/models/linkReferencia';
 import { PreviousAndNextSection } from 'src/app/models/models';
 
 @Component({
-  selector: 'app-buenas-practicas',
-  templateUrl: './buenas-practicas.component.html'
+    selector: 'app-buenas-practicas',
+    templateUrl: './buenas-practicas.component.html',
+    standalone: false
 })
 export class BuenasPracticasComponent implements OnInit {
 

@@ -5,8 +5,9 @@ from 'src/app/models/linkReferencia';
 import { PreviousAndNextSection } from 'src/app/models/models';
 
 @Component({
-  selector: 'app-requisitos',
-  templateUrl: './requisitos.component.html'
+    selector: 'app-requisitos',
+    templateUrl: './requisitos.component.html',
+    standalone: false
 })
 export class RequisitosComponent implements OnInit {
 

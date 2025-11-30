@@ -5,8 +5,9 @@ from 'src/app/models/linkReferencia';
 import { PreviousAndNextSection } from 'src/app/models/models';
 
 @Component({
-  selector: 'app-agiles',
-  templateUrl: './agiles.component.html'
+    selector: 'app-agiles',
+    templateUrl: './agiles.component.html',
+    standalone: false
 })
 export class AgilesComponent implements OnInit {
 

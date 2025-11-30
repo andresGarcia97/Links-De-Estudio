@@ -6,8 +6,9 @@ from 'src/app/models/linkReferencia';
 import { PreviousAndNextSection } from 'src/app/models/models';
 
 @Component({
-  selector: 'app-compilacion',
-  templateUrl: './compilacion.component.html'
+    selector: 'app-compilacion',
+    templateUrl: './compilacion.component.html',
+    standalone: false
 })
 export class CompilacionComponent implements OnInit {
 

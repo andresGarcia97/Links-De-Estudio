@@ -6,8 +6,9 @@ from 'src/app/models/linkReferencia';
 import { PreviousAndNextSection } from 'src/app/models/models';
 
 @Component({
-  selector: 'app-calidad',
-  templateUrl: './calidad.component.html'
+    selector: 'app-calidad',
+    templateUrl: './calidad.component.html',
+    standalone: false
 })
 export class CalidadComponent implements OnInit {
 

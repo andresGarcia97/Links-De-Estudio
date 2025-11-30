@@ -5,8 +5,9 @@ from 'src/app/models/linkReferencia';
 import { PreviousAndNextSection } from 'src/app/models/models';
 
 @Component({
-  selector: 'app-conocimientos-empiricos',
-  templateUrl: './conocimientos-empiricos.component.html'
+    selector: 'app-conocimientos-empiricos',
+    templateUrl: './conocimientos-empiricos.component.html',
+    standalone: false
 })
 export class ConocimientosEmpiricosComponent implements OnInit {
 

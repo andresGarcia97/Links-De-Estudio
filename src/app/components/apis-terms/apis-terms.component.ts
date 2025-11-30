@@ -5,8 +5,9 @@ from 'src/app/models/linkReferencia';
 import { PreviousAndNextSection } from 'src/app/models/models';
 
 @Component({
-  selector: 'app-apis-terms',
-  templateUrl: './apis-terms.component.html'
+    selector: 'app-apis-terms',
+    templateUrl: './apis-terms.component.html',
+    standalone: false
 })
 export class ApisTermsComponent implements OnInit {
 

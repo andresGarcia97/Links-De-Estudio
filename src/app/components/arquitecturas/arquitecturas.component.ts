@@ -5,8 +5,9 @@ from 'src/app/models/linkReferencia';
 import { PreviousAndNextSection } from 'src/app/models/models';
 
 @Component({
-  selector: 'app-arquitecturas',
-  templateUrl: './arquitecturas.component.html'
+    selector: 'app-arquitecturas',
+    templateUrl: './arquitecturas.component.html',
+    standalone: false
 })
 export class ArquitecturasComponent implements OnInit {
 

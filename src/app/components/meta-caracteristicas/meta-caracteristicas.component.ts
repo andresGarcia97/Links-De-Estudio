@@ -6,8 +6,9 @@ from 'src/app/models/linkReferencia';
 import { PreviousAndNextSection } from 'src/app/models/models';
 
 @Component({
-  selector: 'app-meta-caracteristicas',
-  templateUrl: './meta-caracteristicas.component.html'
+    selector: 'app-meta-caracteristicas',
+    templateUrl: './meta-caracteristicas.component.html',
+    standalone: false
 })
 export class MetaCaracteristicasComponent implements OnInit {
 

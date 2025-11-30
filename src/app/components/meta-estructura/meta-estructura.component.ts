@@ -6,8 +6,9 @@ from 'src/app/models/linkReferencia';
 import { PreviousAndNextSection } from 'src/app/models/models';
 
 @Component({
-  selector: 'app-meta-estructura',
-  templateUrl: './meta-estructura.component.html'
+    selector: 'app-meta-estructura',
+    templateUrl: './meta-estructura.component.html',
+    standalone: false
 })
 export class MetaEstructuraComponent implements OnInit {
 

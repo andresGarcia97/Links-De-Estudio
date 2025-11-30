@@ -6,8 +6,9 @@ from 'src/app/models/linkReferencia';
 import { PreviousAndNextSection } from 'src/app/models/models';
 
 @Component({
-  selector: 'app-poo',
-  templateUrl: './poo.component.html'
+    selector: 'app-poo',
+    templateUrl: './poo.component.html',
+    standalone: false
 })
 export class PooComponent implements OnInit {
 

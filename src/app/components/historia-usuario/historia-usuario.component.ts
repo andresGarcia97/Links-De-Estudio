@@ -6,8 +6,9 @@ import {
 import { PreviousAndNextSection } from 'src/app/models/models';
 
 @Component({
-  selector: 'app-historia-usuario',
-  templateUrl: './historia-usuario.component.html'
+    selector: 'app-historia-usuario',
+    templateUrl: './historia-usuario.component.html',
+    standalone: false
 })
 export class HistoriaUsuarioComponent implements OnInit {
 

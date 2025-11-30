@@ -13,8 +13,9 @@ const key = keypressed$.pipe(
 );
 
 @Component({
-  selector: 'app-section',
-  templateUrl: './section.component.html'
+    selector: 'app-section',
+    templateUrl: './section.component.html',
+    standalone: false
 })
 export class SectionComponent implements OnInit, OnDestroy {
 

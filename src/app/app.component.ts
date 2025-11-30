@@ -23,8 +23,9 @@ const colorSelectiveYellow = '#FFBA08';
 const colorNavyBlue = '#1976d2';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html'
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    standalone: false
 })
 export class AppComponent implements OnInit {
   

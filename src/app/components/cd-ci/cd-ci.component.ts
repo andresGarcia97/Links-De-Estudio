@@ -7,8 +7,9 @@ from 'src/app/models/linkReferencia';
 import { PreviousAndNextSection } from 'src/app/models/models';
 
 @Component({
-  selector: 'app-cd-ci',
-  templateUrl: './cd-ci.component.html'
+    selector: 'app-cd-ci',
+    templateUrl: './cd-ci.component.html',
+    standalone: false
 })
 export class CDCIComponent implements OnInit {
 

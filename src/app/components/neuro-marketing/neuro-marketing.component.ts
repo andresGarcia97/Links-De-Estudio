@@ -5,8 +5,9 @@ from 'src/app/models/linkReferencia';
 import { PreviousAndNextSection } from 'src/app/models/models';
 
 @Component({
-  selector: 'app-neuro-marketing',
-  templateUrl: './neuro-marketing.component.html'
+    selector: 'app-neuro-marketing',
+    templateUrl: './neuro-marketing.component.html',
+    standalone: false
 })
 export class NeuroMarketingComponent implements OnInit {
 

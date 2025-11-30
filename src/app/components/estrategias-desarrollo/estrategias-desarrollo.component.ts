@@ -6,8 +6,9 @@ import { AGILES_KEY, ARQUITECTURAS_KEY, CI_CD_KEY, ESTRATEGIAS_DESARROLLO_REF, L
 import { PreviousAndNextSection } from 'src/app/models/models';
 
 @Component({
-  selector: 'app-estrategias-desarrollo',
-  templateUrl: './estrategias-desarrollo.component.html'
+    selector: 'app-estrategias-desarrollo',
+    templateUrl: './estrategias-desarrollo.component.html',
+    standalone: false
 })
 export class EstrategiasDesarrolloComponent implements OnInit {
 

@@ -7,8 +7,9 @@ import {
 import { PreviousAndNextSection } from 'src/app/models/models';
 
 @Component({
-  selector: 'app-malas-practicas',
-  templateUrl: './malas-practicas.component.html'
+    selector: 'app-malas-practicas',
+    templateUrl: './malas-practicas.component.html',
+    standalone: false
 })
 export class MalasPracticasComponent implements OnInit {
 

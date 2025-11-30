@@ -5,8 +5,9 @@ from 'src/app/models/linkReferencia';
 import { PreviousAndNextSection } from 'src/app/models/models';
 
 @Component({
-  selector: 'app-docker',
-  templateUrl: './contenedores.component.html'
+    selector: 'app-docker',
+    templateUrl: './contenedores.component.html',
+    standalone: false
 })
 export class ContenedoresComponent implements OnInit {
 

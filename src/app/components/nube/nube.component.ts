@@ -4,8 +4,9 @@ import { APIS_KEY, CI_CD_KEY, CONTENEDORES_KEY, LinkReferencia, NUBE_REF, SECURI
 import { PreviousAndNextSection } from 'src/app/models/models';
 
 @Component({
-  selector: 'app-nube',
-  templateUrl: './nube.component.html'
+    selector: 'app-nube',
+    templateUrl: './nube.component.html',
+    standalone: false
 })
 export class NubeComponent implements OnInit {
 

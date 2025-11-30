@@ -4,8 +4,9 @@ import { AGILES_KEY, CALIDAD_KEY, ESTRATEGIAS_DESARROLLO_KEY, LinkReferencia, ME
 import { PreviousAndNextSection } from 'src/app/models/models';
 
 @Component({
-  selector: 'app-metodologias',
-  templateUrl: './metodologias.component.html'
+    selector: 'app-metodologias',
+    templateUrl: './metodologias.component.html',
+    standalone: false
 })
 export class MetodologiasComponent implements OnInit {
 

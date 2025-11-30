@@ -6,8 +6,9 @@ from 'src/app/models/linkReferencia';
 import { PreviousAndNextSection } from 'src/app/models/models';
 
 @Component({
-  selector: 'app-frameworks',
-  templateUrl: './frameworks.component.html'
+    selector: 'app-frameworks',
+    templateUrl: './frameworks.component.html',
+    standalone: false
 })
 export class FrameworksComponent implements OnInit {
 

@@ -7,8 +7,9 @@ from 'src/app/models/linkReferencia';
 import { PreviousAndNextSection } from 'src/app/models/models';
 
 @Component({
-  selector: 'app-micro-services',
-  templateUrl: './micro-services.component.html'
+    selector: 'app-micro-services',
+    templateUrl: './micro-services.component.html',
+    standalone: false
 })
 export class MicroServicesComponent implements OnInit {
 
