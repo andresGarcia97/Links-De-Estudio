@@ -2148,6 +2148,17 @@ export const METODOLOGIAS =
                 '- De la misma manera que otras metodologias, no hay una receta, ni una practica estandarizada, por lo que se debe tomar como una filosofia, ',
                 ' - de la gestión que busca mejora los procesos y productos a largo plazo, de manera sistematica y gradual, que se visualiza ',
                 ' - segun la interpretación del lider, que es además el encargado de ejecutarla '
+            ]),
+        new Item(Keys.METODOLOGIAS_SIX_SIGMA_HOSHIN_KANRI,
+            [
+                '- La mejora continua no es imposible, y tampoco es alcanzable de manera instantanea, para garantizar resultados sostenibles, debe ser un proceso continuo ',
+                '- Igual que un proceso continuo se deben tener pasos y objetivos que alcanzar antes de continuar con la siguiente etapa ',
+                '',
+                '<strong>- 5S:</strong> Antes de optimizar el proceso, es necesario optimizar y estandarizar el entorno ',
+                '<strong>- Kaizen:</strong> Cambios ordenados, pequeños y constantes que involucran al equipo completo y genera inercia ',
+                '<strong>- Lean:</strong> Maxima eficiencia con el minimo de desperdicio, reduciendo constantemente las MUDAS (desperdicio) ',
+                '<strong>- Six-Sigma:</strong> Con la maxima eficiencia alcanzada el producto se puede perfeccionar mediante analisis estadisticos y reduciendo la variabilidad ',
+                '<strong>- Hoshin Kanri:</strong> Despliegue e información de nuevas politicas, cada mejora por pequeña que sea, debe estar alineada con los objetivos estrategicos ',
             ])
     ];
 

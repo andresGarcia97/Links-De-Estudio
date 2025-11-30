@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.TESTING_PROPERTY_TESTING_FUZZING_TESTING;
+export const LAST_ITEM = Keys.METODOLOGIAS_SIX_SIGMA_HOSHIN_KANRI;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -531,7 +531,9 @@ export const METODOLOGIAS_REF = new Map<string, Referencia>([
     [Keys.METODOLOGIAS_AGILES, new Referencia('https://www.iebschool.com/blog/que-son-metodologias-agiles-agile-scrum/', '¿ Que son las metodologias agiles ?', METODOLOGIAS_KEY, 'Agiles')],
     [Keys.METODOLOGIAS_SCRUM, new Referencia('https://www.iebschool.com/blog/metodologia-scrum-agile-scrum/', 'Scrum', METODOLOGIAS_KEY, 'SCRUM')],
     [Keys.METODOLOGIAS_SCRUM_PRINCIPLES, new Referencia('https://rootstack.com/es/blog/los-pilares-del-scrum-claves-para-la-gestion-de-procesos', 'Principios Scrum', METODOLOGIAS_KEY, 'Principios Scrum')],
-    [Keys.METODOLOGIAS_KANBAN, new Referencia('https://www.iebschool.com/blog/metodologia-kanban-agile-scrum/', 'Kanban', METODOLOGIAS_KEY, 'Kanban', '', '2025/06/30').addRelatedItems(Keys.PRINCIPIOS_YAGNI)],
+    [Keys.METODOLOGIAS_KANBAN, new Referencia('https://www.iebschool.com/blog/metodologia-kanban-agile-scrum/', 'Kanban', METODOLOGIAS_KEY, 'Kanban', '', '2025/06/30')
+        .addRelatedItems(Keys.PRINCIPIOS_YAGNI)
+    ],
     [Keys.METODOLOGIAS_ELEVATOR, new Referencia('https://www.iebschool.com/blog/las-claves-para-realizar-un-elevator-pitch-lean-startup/', 'Elevator Pitch', METODOLOGIAS_KEY, 'Elevator Pitch')],
     [Keys.METODOLOGIAS_CANVAS, new Referencia('https://www.iebschool.com/blog/que-es-el-modelo-canvas-y-como-aplicarlo-a-tu-negocio-agile-scrum/', 'Canvas', METODOLOGIAS_KEY, 'Canvas')],
     //['tradicionales', new Referencia('https://www.tutorialspoint.com/es/software_engineering/software_development_life_cycle.htm', 'Metodologias Tradicionales', METODOLOGIAS_KEY, 'Tradicionales')],
@@ -545,11 +547,18 @@ export const METODOLOGIAS_REF = new Map<string, Referencia>([
     ],
     //['v', new Referencia('https://ingsoftware.weebly.com/ciclo-de-vida-en-v.html', 'Modelo en V', METODOLOGIAS_KEY, 'Modelo V')],
     [Keys.METODOLOGIAS_MODEL_V, new Referencia('https://www.linkedin.com/posts/alexxubyte_systemdesign-coding-interviewtips-activity-7241834626241949696-v5Se/', 'Modelo en V', METODOLOGIAS_KEY, 'Modelo V', '', '2024/10/10')],
-    [Keys.METODOLOGIAS_RUP, new Referencia('https://rupmetodologia.blogspot.com/?view=sidebar', 'Proceso Racional Unificado', METODOLOGIAS_KEY, 'RUP', '', '2025/06/30').addRelatedItems(Keys.UML_TYPES)],
-    [Keys.METODOLOGIAS_KAIZEN, new Referencia('https://www.movertis.com/blog/que-es-la-metodologia-kaizen', 'Kaizen', METODOLOGIAS_KEY, 'Kaizen', '', '2025/06/30').addRelatedItems(Keys.AGILES_5S)],
+    [Keys.METODOLOGIAS_RUP, new Referencia('https://rupmetodologia.blogspot.com/?view=sidebar', 'Proceso Racional Unificado', METODOLOGIAS_KEY, 'RUP', '', '2025/06/30')
+        .addRelatedItems(Keys.UML_TYPES)
+    ],
+    [Keys.METODOLOGIAS_KAIZEN, new Referencia('https://www.movertis.com/blog/que-es-la-metodologia-kaizen', 'Kaizen', METODOLOGIAS_KEY, 'Kaizen', '', '2025/06/30')
+        .addRelatedItems(Keys.AGILES_5S)
+    ],
     //['scrumban', new Referencia('https://kanbantool.com/es/scrumban-scrum-y-kanb', 'Scrumban', METODOLOGIAS_KEY, 'Scrumban')],
     [Keys.METODOLOGIAS_SCRUMBAN, new Referencia('https://www.atlassian.com/es/agile/project-management/scrumban', 'Scrumban', METODOLOGIAS_KEY, 'Scrumban', '', '2024/10/10')],
-    [Keys.METODOLOGIAS_LEAN, new Referencia('https://www.obsbusiness.school/blog/lean-management-metodologia-origenes-y-principios', 'Lean management', METODOLOGIAS_KEY, 'Lean')]
+    [Keys.METODOLOGIAS_LEAN, new Referencia('https://www.obsbusiness.school/blog/lean-management-metodologia-origenes-y-principios', 'Lean management', METODOLOGIAS_KEY, 'Lean')],
+    [Keys.METODOLOGIAS_SIX_SIGMA_HOSHIN_KANRI, new Referencia('https://www.linkedin.com/posts/pedroprh_mejoracontinua-lean-sixsigma-activity-7399077028039397377-Umrc/', 'Six Sigma - Hoshin Kanri', METODOLOGIAS_KEY, 'Six Sigma - Hoshin Kanri')
+        .addRelatedItems(Keys.AGILES_5S, Keys.AGILES_MUDA, Keys.AGILES_MUDA_SOFTWARE)
+    ]
 ]);
 
 export const NUBE_KEY = 'Nube';

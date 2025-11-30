@@ -212,7 +212,7 @@ export const AGILES =
             ]),
         new Item(Keys.AGILES_OUTPUT_AND_OUTCOME,
             [
-                '- En la actualizadad, todavia es dificil determinar la relación de lo que realizan los equipos y el valor de negocio generado a la compañia ',
+                '- En la actualidad, todavia es dificil determinar la relación de lo que realizan los equipos y el valor de negocio generado a la compañia ',
                 '- Los gerentes piensan en maximizar el valor generado (<em>Impacto</em>), lo cual se puede traducir en en mayores ingresos, mejor imagen, o nuevos mercados ',
                 '- Por otro lado los equipos agiles, estan preocupados del <em>Output</em> que consiste en indicadores asociados a realizar entregables, como: ',
                 ' - puntos de historia, velocidad, nuevos features, cantidad de usuarios por sprint, sin embargo ambos indicadores no tienen relación entre si ',

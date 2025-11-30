@@ -672,7 +672,7 @@ export const ANALISIS_DATA =
                 '<strong>- Ruido:</strong> Problemas ó sucesos que impiden que el mensaje llegue con normalidad, y este no sea entendido ó quede incompleto ',
                 '',
                 '<strong>Planteamientos generales:</strong>',
-                '- Sirve para estudiar todo el proceso informativo, desde que la fuente lo coincibe, hasta el entedimiento en su destino',
+                '- Sirve para estudiar todo el proceso informativo, desde que la fuente lo concibe, hasta el entendimiento en su destino',
                 '- Determinar la forma más sencilla y eficaz de transmitir un mensajes, sin que haya alteraciones en el proceso ',
                 '- Reconocer elementos de distorsión ó impedimentos para que el mensaje sea transmitido de manera optima ',
                 '- Tanto el emisor como el receptor deben ser capaces de <em>codificar/decodificar</em> los mensajes',
