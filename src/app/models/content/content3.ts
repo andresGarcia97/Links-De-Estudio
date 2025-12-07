@@ -674,7 +674,12 @@ export const PRINCIPIOS =
                 '- La responsabilidad debe ser delegada al objeto correspondiente, en lugar de extraerla en un componente diferente ',
                 '- En lugar de pedir los datos a los objetos, debemos decirles que hacer y esperar el resultado de la operación ',
                 '- Esto es un refuerzo del concepto de encapsulación, propio de la orientación a objetos ',
-                '- De esta manera se limita el acoplamiento de los componentes y se centralizan acciones evitando posible duplicación '
+                '- De esta manera se limita el acoplamiento de los componentes y se centralizan acciones evitando posible duplicación ',
+                '',
+                '- Esto no solo ayuda al codigo limpio, tambien se alinea con las arquitecturas limpias de diversas maneras:',
+                '&bull; Las entidades de dominio encapsulan comportamientos y no son simples DTO (getters & setters) ',
+                '&bull; Los casos de uso y servicios dejan de inspeccionar activamente las entidades para realizar acciones con ellas, se la piden a la entidad ',
+                '&bull; Los controladores delegan, no necesitan conocer los detalles ni toman decisiones de negocio ',
             ]),
         new Item(Keys.PRINCIPIOS_STUPID,
             [

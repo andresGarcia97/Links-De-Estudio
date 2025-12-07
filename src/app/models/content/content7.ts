@@ -1369,7 +1369,7 @@ export const PATRONES =
         new Item(Keys.PATRONES_PERSISTENCE_PATTERNS,
             [
                 '- Son usados para el acceso la y manipulación de los datos (persistencia), desde diferentes fuentes, como Bases de Datos',
-                '- también son una forma de diferenciar entre la Programación Orientada a Objetos y la Programación Orientada a Datos',
+                '- también son una forma de diferenciar entre la <strong>Programación Orientada a Objetos</strong> y la <strong>Programación Orientada a Datos</strong>',
                 '- Mientras que en <em>POO</em> pone enfasis en conceptos como la Encapsulación, Polimorfismo y la Abstracción',
                 '- En <em>POD</em> se hace enfasis en la separación entre los datos y su manipulación, la generalización y la inmutabilidad',
                 '',

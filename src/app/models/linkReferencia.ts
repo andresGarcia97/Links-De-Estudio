@@ -793,7 +793,10 @@ export const POO_REF = new Map<string, Referencia>([
     [Keys.POO_TYPES_POLIMORFISMO, new Referencia('https://medium.com/lenguajes-y-dialectos-en-programaci%C3%B3n/polimorfismo-y-paradigmas-tipos-y-ejemplos-ca6a56093a66', 'Tipos de Polimorfismo', POO_KEY, 'Tipos de Polimorfismo')],
     [Keys.POO_FACTORY_METODS, new Referencia('https://www.baeldung.com/java-constructors-vs-static-factory-methods', 'Factory Methods', POO_KEY, 'Factory Methods', '2022/11/07')],
     [Keys.POO_INTERFACES_OVER_INHERITANCE, new Referencia('https://www.infoworld.com/article/2073649/why-extends-is-evil.html', 'Interfaces VS Herencia', POO_KEY, 'Interfaces VS Herencia', '2023/03/13')],
-    [Keys.POO_ENUMS, new Referencia('https://jarroba.com/enum-enumerados-en-java-con-ejemplos/', 'Enumeraciones', POO_KEY, 'Enumeraciones', '', '2024/05/05')],
+    [Keys.POO_ENUMS, new Referencia('https://jarroba.com/enum-enumerados-en-java-con-ejemplos/', 'Enumeraciones', POO_KEY, 'Enumeraciones', '', '2025/12/07')
+        .addRelatedItems(Keys.META_ESTRUCTURAS_VALUE_OBJECTS, Keys.ESTRATEGIAS_DESARROLLO_DDD)
+        .addMoreReferences('https://blog.stackademic.com/stop-using-static-final-constants-java-enums-exist-for-a-reason-most-devs-learn-this-too-late-4cc346e93d8e')
+    ],
     [Keys.POO_COUPLING_AND_COHESION, new Referencia('https://ducmanhphan.github.io/2019-03-23-Coupling-and-Cohension-in-OOP/', 'Acoplamiento & Cohesion', POO_KEY, 'Acoplamiento & Cohesion', '', '2024/10/27')],
     [Keys.POO_CALISTHENICS, new Referencia('https://keyvanakbary.com/object-calisthenics-mejora-tu-diseno-orientado-a-objetos/', 'Calistenia de Objetos', POO_KEY, 'Calistenia de Objetos', '2025/09/02').addRelatedItems(Keys.CALIDAD_IF_ELSE, Keys.BUENAS_PRACTICAS_DEMETER, Keys.PRINCIPIOS_SOLID, Keys.BUENAS_PRACTICAS_COMPLEJIDAD, Keys.META_ESTRUCTURAS_VALUE_OBJECTS)],
     [Keys.POO_ABSTRACTIONS, new Referencia('https://itnext.io/abstractions-done-right-discussing-when-it-is-worth-or-not-d75a32724f34', 'Abstracciones', POO_KEY, 'Abstracciones', '2025/06/22').addRelatedItems(Keys.MALAS_PRACTICAS_OVER_ENGINEERING, Keys.PRINCIPIOS_SOLID, Keys.FRAMEWORKS_IOD, Keys.TESTING_MOCKS, Keys.META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL, Keys.ESTRATEGIAS_DESARROLLO_DDD)],
@@ -910,11 +913,16 @@ export const PRINCIPIOS_REF = new Map<string, Referencia>([
     [Keys.PRINCIPIOS_OCCAM, new Referencia('https://www.genbeta.com/desarrollo/la-navaja-de-occam-kiss-y-yagni-la-simplicidad-en-el-codigo-no-deberia-ser-solo-postureo-developer', 'La navaja de Occam', PRINCIPIOS_KEY, 'Occam')],
     [Keys.PRINCIPIOS_DRY, new Referencia('https://medium.com/@psdevraye/mastering-the-dry-principle-in-java-a-guide-to-cleaner-code-afd889bfca42', 'No te repitas', PRINCIPIOS_KEY, 'DRY', '', '2024/10/18')],
     [Keys.PRINCIPIOS_HOLLYWOOD, new Referencia('https://www.genbeta.com/desarrollo/doce-principios-de-diseno-que-todo-desarrollador-deberia-conocer', 'No nos llames, nosotros te llamamos', PRINCIPIOS_KEY, 'Hollywood')],
-    [Keys.PRINCIPIOS_TELL_DONT_ASK, new Referencia('https://www.disrupciontecnologica.com/tell-dont-ask/', 'Dile, no le preguntes', PRINCIPIOS_KEY, 'Tell, Don´t Ask', '', '2025/02/02')],
+    [Keys.PRINCIPIOS_TELL_DONT_ASK, new Referencia('https://www.disrupciontecnologica.com/tell-dont-ask/', 'Dile, no le preguntes', PRINCIPIOS_KEY, 'Tell, Don´t Ask', '', '2025/12/07')
+        .addRelatedItems(Keys.PATRONES_ENRICHED_MODEL, Keys.ARQUITECTURAS_CLEAN)
+        .addMoreReferences('https://medium.com/@gopi_ck/561351353693')
+    ],
     [Keys.PRINCIPIOS_STUPID, new Referencia('https://williamdurand.fr/2013/07/30/from-stupid-to-solid-code/', 'NO seas S.T.U.P.I.D', PRINCIPIOS_KEY, 'STUPID')],
     [Keys.PRINCIPIOS_TWICE_ONE, new Referencia('https://betterprogramming.pub/measure-twice-cut-once-isnt-very-agile-3af456d932b9', 'Mide 2 veces, Corta 1 vez', PRINCIPIOS_KEY, 'Mide 2 veces, Corta 1 vez')],
     //[Keys.PRINCIPIOS_DIVIDE_AND_CONQUER, new Referencia('https://betterprogramming.pub/10-design-principles-in-software-engineering-f88647cf5a07', 'Divide y Conquistaras', PRINCIPIOS_KEY, 'Dividir y Conquistar')],
-    [Keys.PRINCIPIOS_DIVIDE_AND_CONQUER, new Referencia('https://es.khanacademy.org/computing/computer-science/algorithms/merge-sort/a/divide-and-conquer-algorithms', 'Divide y Conquistaras', PRINCIPIOS_KEY, 'Divide y venceras', '', '2025/08/10').addRelatedItems(Keys.META_CARACTERISTICAS_RECURSIVIDAD)],
+    [Keys.PRINCIPIOS_DIVIDE_AND_CONQUER, new Referencia('https://es.khanacademy.org/computing/computer-science/algorithms/merge-sort/a/divide-and-conquer-algorithms', 'Divide y Conquistaras', PRINCIPIOS_KEY, 'Divide y venceras', '', '2025/08/10')
+        .addRelatedItems(Keys.META_CARACTERISTICAS_RECURSIVIDAD)
+    ],
     [Keys.PRINCIPIOS_SOC, new Referencia('https://geeksprogramming.com/key-principles-in-software-and-acronyms/', 'Separacion de Conceptos', PRINCIPIOS_KEY, 'SOC', '2024/01/13')],
     [Keys.PRINCIPIOS_POC, new Referencia('https://geeksprogramming.com/key-principles-in-software-and-acronyms/', 'Prueba de Concepto', PRINCIPIOS_KEY, 'POC', '2024/01/13')],
     [Keys.PRINCIPIOS_SLAP, new Referencia('https://medium.com/javarevisited/slap-that-ugly-code-6ec276d3a4bc', 'Principio de abstracción de un solo nivel', PRINCIPIOS_KEY, 'SLAP', '2025/02/02')],
