@@ -895,7 +895,7 @@ export const PEOPLE =
                 '&bull; Mejora continua de los procesos y aumentar la productividad ',
                 '&bull; Generar valor agregado de manera que este conocimiento sea una ventaja competitiva ',
             ]),
-        new Item('gestionDeServicios',
+        new Item(Keys.PEOPLE_SERVICE_MANAGEMENT,
             [
                 '- Es una metodologia que pone su foco en el cliente y como mejorar su atención ',
                 '- Toda organización debe contar con personal competente en cuanto al uso de las tecnologias que se usen ',
@@ -911,7 +911,7 @@ export const PEOPLE =
                 '- Entre más simple sea un proceso mejor ',
                 '- La automatización y la optimización siempre deben ser aspectos a alcanzar ',
             ]),
-        new Item('gestionDeActivos',
+        new Item(Keys.PEOPLE_ASSET_MANAGEMENT,
             [
                 '- Los elementos fisicos y no fisicos de las empresas tambien deben ser considerados como partes del negocio ',
                 '- Esto se puede aplicar a todo software que la empresa use o desarrolle y los elementos necesarios para su funcionamiento ',
@@ -938,7 +938,7 @@ export const PEOPLE =
                 '- Costos totales de la empresa de manera global ',
                 '- Permite la estandarización de manera transversal en la empresa ',
             ]),
-        new Item('fidelizacion',
+        new Item(Keys.PEOPLE_CUSTOMER_LOYALTY,
             [
                 '- Fidelizar a un cliente, garantiza que esta siempre permanecera comprando nuestos productos y servicios ',
                 '- Segun la ley de pareto el 80% de las ventas son de los clientes actuales y 20% de los nuevos ',
@@ -978,7 +978,7 @@ export const PEOPLE =
                 '<strong>Conocimiento:</strong> Ya con la información podemos actuar en base a esta, tomar decisiones especificas, o responder interrogantes de manera practica ',
                 '<strong>Sabiduria:</strong> Generalmente es la capacidad de pensar y analizar las situaciones, que se presenten, además de poder abstraerlo a otros contextos',
             ]),
-        new Item('gestionDeExpectativas',
+        new Item(Keys.PEOPLE_GESTION_EXPECTATIVAS,
             [
                 '- Lo más probable es que estas esten formadas por diferentes factores y experiencias pasadas ',
                 '- Muchas cosas pueden salir mal en un proyecto pero estas son algunas maneras de solucionarlo ',
@@ -1021,7 +1021,7 @@ export const PEOPLE =
                 '1 - Failure -> Proceso Fallido',
                 '2 - Abject failure -> Fracaso absoluto',
             ]),
-        new Item('tiposHackers',
+        new Item(Keys.PEOPLE_HACKER_TYPES,
             [
                 '- Un Hacker es aquel individuo que usa sus habilidades informaticas para violentar y penetrar la ciberseguridad ',
                 '- Inicialmente solo existian 3 sombreros como clasificación, pero hay otros que han surgido con el tiempo ',
@@ -1116,7 +1116,7 @@ export const PEOPLE =
                 '<strong>Sindrome de No Inventado aqui:</strong> Un rechazo frontal y categorico, a toda solución que sean ajenas, aunque sean más simples o eficientes, ',
                 ' - prefiriendo gastar recursos innecesariamente, que abrirse a nuevas oportunidades y conocimientos, que podrian mejorar las cosas ',
             ]),
-        new Item('icebergIgnorance',
+        new Item(Keys.PEOPLE_ICEBERG_IGNORANCE,
             [
                 '- En 1989 Sidney Yoshida desarrollo la teoria de <em>Iceberg de la ignorancia</em>, que refleja ciertos datos, sobre el funcionamiento de las organizaciones',
                 '',
@@ -1147,7 +1147,7 @@ export const PEOPLE =
                 '- De esta manera tener conversaciones entre congeneres y transmitir ideas, es algo que beneficia a todos los involucrados y no se pierde tiempo ',
                 ' - al tener que explicar conceptos y metodologias que se usan en la ingenieria y que son transversales ',
             ]),
-        new Item('hippoEfect',
+        new Item(Keys.PEOPLE_HIPPO_EFFECT,
             [
                 '- <strong>La Opinion de la Persona Mejor Pagada</strong>, suele tener demasiado impacto cuando no se cuentan con datos para tomar decisiones ',
                 '- Y es peor cuando se tienen los datos, pero estos no se toman en cuenta cuando prevalece la persona HIPPO en la habitación ',
@@ -1158,7 +1158,7 @@ export const PEOPLE =
                 '- Esto es peligroso debido a que los humanos tienen una tendencia al sesgo de autoridad, ilustrado por el <em>Experimento de Milgram</em> de 1963',
                 '- Resulta que las personas tienden a crear en aquello que dice o hace, aquellos que consideramos como expertos y no oponerse a sus ordenes ',
             ]),
-        new Item('burnout',
+        new Item(Keys.PEOPLE_BURNOUT,
             [
                 '- Tener un enfoque sostenible dentro de la industria del software, es algo que cada vez es más importante, dentro de la industria del software ',
                 '- Algunas reflexiones de como se puede obtener un enfoque sostenible dentro de la industria',
@@ -1333,6 +1333,24 @@ export const PEOPLE =
                 '- En cambio otras suelen estar <em>atrasadas</em>, con un funcionamiento severamente limitado, adaptando todo lo nuevo a su organización y no al reves ',
                 '- El cambio cultural es dificil, adoptar nuevos procesos sin actualizar el sistema de creencias subyacentes, a lo cual las organizaciónes suelen resistirse ',
                 '- Construir una cultura no es facil y cambiarla tampoco, esta se debe construir en base a las personas de manera que se apropiable para el personal ',
+            ]),
+        new Item(Keys.PEOPLE_POST_MORTEM,
+            [
+                '- Los errores son inevitables y cada empresa tiene, sus prioridades y procesos para responder, mitigar y recuperarse ante fallas ',
+                '- Después de solucionarlos se suelen hacer informes, sobre que salio mal para evitar que vuelva a suceder, de las fallas se aprende ',
+                '- Durante incidentes masivos o demasiados importantes, las causas y acciones pueden documentarse durante la recuperación del fallo ',
+                '- Reflexionar sobre como no se detecto fortalece los procesos y genera experiencia valiosa para futuros problemas ',
+                '- Los <strong>post mortem</strong> no asignan culpas individuales, busca fallos de los procesos y no fallas personales ',
+                '- Se proporciona un software más robusto estable y con menos errores despues de tomar acciones en base a la información recolectada ',
+                '',
+                '- Una plantilla post mortem suele tener detalles como: ',
+                '&bull; ¿ Quien hace el analisis ?',
+                '&bull; Lecciones aprendidas y acciones a tomar ',
+                '&bull; Cronologia del error ',
+                '&bull; Acciones durante el incidente ',
+                '&bull; Cuantificación del impacto ',
+                '&bull; Severidad del impacto ',
+                '&bull; Evidencia tecnica ',
             ])
     ];
 

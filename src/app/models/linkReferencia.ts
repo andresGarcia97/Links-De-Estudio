@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.METODOLOGIAS_SIX_SIGMA_HOSHIN_KANRI;
+export const LAST_ITEM = Keys.PEOPLE_POST_MORTEM;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -734,24 +734,38 @@ export const PEOPLE_KEY = 'Personas';
 export const PEOPLE_REF = new Map<string, Referencia>([
     //[Keys.PEOPLE_PEOPLE_AND_PROCESS, new Referencia('https://www.heflo.com/es/blog/bpm/personas-procesos-tecnologia/', 'Personas-Procesos-Tecnologias', PEOPLE_KEY, 'Personas y procesos', '', '2025/01/08')],
     [Keys.PEOPLE_PEOPLE_PROCESS_TECNOLOGY, new Referencia('https://blog.invgate.com/es/procesos-personas-y-tecnologia', 'Personas-Procesos-Tecnologia', PEOPLE_KEY, 'Personas y Procesos', '2025/01/08', '2025/06/01')],
-    ['gestionDeServicios', new Referencia('https://www.ambit-bst.com/blog/itsm.-todo-lo-que-debes-saber-sobre-la-gesti%C3%B3n-de-servicios-it', 'Gestión de servicios tecnologicos', PEOPLE_KEY, 'Gestión de servicios')],
-    ['gestionDeActivos', new Referencia('https://freshservice.com/latam/it-asset-management-software/', 'Gestión de activos', PEOPLE_KEY, 'Gestión de activos')],
-    ['fidelizacion', new Referencia('https://elviajedelcliente.com/fidelizacion-de-clientes/', 'Fidelización de los clientes', PEOPLE_KEY, 'Fidelizacion')],
+    [Keys.PEOPLE_SERVICE_MANAGEMENT, new Referencia('https://www.ambit-bst.com/blog/itsm.-todo-lo-que-debes-saber-sobre-la-gesti%C3%B3n-de-servicios-it', 'Gestión de servicios tecnologicos', PEOPLE_KEY, 'Gestión de servicios')],
+    [Keys.PEOPLE_ASSET_MANAGEMENT, new Referencia('https://freshservice.com/latam/it-asset-management-software/', 'Gestión de activos', PEOPLE_KEY, 'Gestión de activos')],
+    [Keys.PEOPLE_CUSTOMER_LOYALTY, new Referencia('https://elviajedelcliente.com/fidelizacion-de-clientes/', 'Fidelización de los clientes', PEOPLE_KEY, 'Fidelizacion')],
     [Keys.PEOPLE_DIKW, new Referencia('https://programmerclick.com/article/46021807934/', 'Datos-Información-Conocimiento-Sabiduría', PEOPLE_KEY, 'Modelo DIKW')],
     [Keys.PEOPLE_GESTION_EXPECTATIVAS, new Referencia('https://brainsandbeards.com/blog/expectation-management', 'Gestion de expectativas', PEOPLE_KEY, 'Gestion de expectativas')],
-    [Keys.PEOPLE_CAPA_8, new Referencia('https://www.merca20.com/que-es-un-error-de-capa-8-y-como-evitas-que-arruine-tu-marketing/', 'Capa 8', PEOPLE_KEY, 'Error en capa 8', '', '2025/04/23').addRelatedItems(Keys.HARDWARE_MODEL_OSI)],
+    [Keys.PEOPLE_CAPA_8, new Referencia('https://www.merca20.com/que-es-un-error-de-capa-8-y-como-evitas-que-arruine-tu-marketing/', 'Capa 8', PEOPLE_KEY, 'Error en capa 8', '', '2025/04/23')
+        .addRelatedItems(Keys.HARDWARE_MODEL_OSI)
+    ],
     [Keys.PEOPLE_NO_NEWS_GOOD_NEWS, new Referencia('https://blog.carreralinux.com.ar/2020/05/si-no-hay-noticias-son-buenas-noticias-no-news-good-news/', 'Sin noticias, Son buenas noticias', PEOPLE_KEY, 'No News Good News', '', '2025/02/02')],
-    ['tiposHackers', new Referencia('https://www.freecodecamp.org/news/white-hat-black-hat-red-hat-hackers/', 'Tipos de Hackers (sombreros)', PEOPLE_KEY, 'Tipos de Hackers')],
+    [Keys.PEOPLE_HACKER_TYPES, new Referencia('https://www.freecodecamp.org/news/white-hat-black-hat-red-hat-hackers/', 'Tipos de Hackers (sombreros)', PEOPLE_KEY, 'Tipos de Hackers')],
     [Keys.PEOPLE_SINDROMES_LABORALES, new Referencia('https://www.sage.com/es-es/blog/burnout-procusto-y-otros-14-sindromes-tipicos-del-mundo-empresarial/#gate-263a5c00-99e4-4e71-8421-469deda8e674', 'Sindromes laborales', PEOPLE_KEY, 'Sindromes Laborales', '2023/06/26')],
-    ['icebergIgnorance', new Referencia('https://prevencontrol.com/prevenblog/y-tu-cuanto-sabes-acerca-de-lo-que-ocurre-en-tu-organizacion/', 'Iceberg de la Ignorancia', PEOPLE_KEY, 'Iceberg de la Ignorancia', '2023/08/04')],
-    [Keys.PEOPLE_LANGUAGE_UBICUOS, new Referencia('https://hackernoon.com/ubiquitous-language-a-key-to-success-in-professional-environments/', 'Lenguaje Ubicuo', PEOPLE_KEY, 'Lenguaje Ubicuo', '2023/09/03').addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_DDD)],
-    ['hippoEfect', new Referencia('https://www.forbes.com/sites/bernardmarr/2017/10/26/data-driven-decision-making-beware-of-the-hippo-effect/', 'Efecto HIPPO', PEOPLE_KEY, 'Efecto H.I.P.P.O', '2023/11/06')],
-    ['burnout', new Referencia('https://chubernetes.com/navigating-tech-industry-burnout-03c015337ba0', 'Sindrome de Burnout', PEOPLE_KEY, 'Burnout', '2024/04/21')],
-    [Keys.PEOPLE_ONA, new Referencia('https://www.linkedin.com/posts/jgarzas_an%C3%A1lisis-de-redes-organizacionales-ona-activity-7185677261528842240-EQvR/', 'Analisis de Redes Organizacionales', PEOPLE_KEY, 'ONA', '2024/04/22', '2025/03/17').addRelatedItems(Keys.LEYES_CONWAY)],
-    [Keys.PEOPLE_PROCESS_BLOAT, new Referencia('https://ardalis.com/process-bloat-silent-killer-developer-productivity/', 'Hinchazon de procesos', PEOPLE_KEY, 'Process Bloat', '2024/06/01').addRelatedItems(Keys.LEYES_LEHMAN, Keys.METODOLOGIAS_LEAN, Keys.METODOLOGIAS_AGILES)],
+    [Keys.PEOPLE_ICEBERG_IGNORANCE, new Referencia('https://prevencontrol.com/prevenblog/y-tu-cuanto-sabes-acerca-de-lo-que-ocurre-en-tu-organizacion/', 'Iceberg de la Ignorancia', PEOPLE_KEY, 'Iceberg de la Ignorancia', '2023/08/04')],
+    [Keys.PEOPLE_LANGUAGE_UBICUOS, new Referencia('https://hackernoon.com/ubiquitous-language-a-key-to-success-in-professional-environments/', 'Lenguaje Ubicuo', PEOPLE_KEY, 'Lenguaje Ubicuo', '2023/09/03')
+        .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_DDD)
+    ],
+    [Keys.PEOPLE_HIPPO_EFFECT, new Referencia('https://www.forbes.com/sites/bernardmarr/2017/10/26/data-driven-decision-making-beware-of-the-hippo-effect/', 'Efecto HIPPO', PEOPLE_KEY, 'Efecto H.I.P.P.O', '2023/11/06')],
+    [Keys.PEOPLE_BURNOUT, new Referencia('https://chubernetes.com/navigating-tech-industry-burnout-03c015337ba0', 'Sindrome de Burnout', PEOPLE_KEY, 'Burnout', '2024/04/21')],
+    [Keys.PEOPLE_ONA, new Referencia('https://www.linkedin.com/posts/jgarzas_an%C3%A1lisis-de-redes-organizacionales-ona-activity-7185677261528842240-EQvR/', 'Analisis de Redes Organizacionales', PEOPLE_KEY, 'ONA', '2024/04/22', '2025/03/17')
+        .addRelatedItems(Keys.LEYES_CONWAY)
+    ],
+    [Keys.PEOPLE_PROCESS_BLOAT, new Referencia('https://ardalis.com/process-bloat-silent-killer-developer-productivity/', 'Hinchazon de procesos', PEOPLE_KEY, 'Process Bloat', '2024/06/01')
+        .addRelatedItems(Keys.LEYES_LEHMAN, Keys.METODOLOGIAS_LEAN, Keys.METODOLOGIAS_AGILES)
+    ],
     [Keys.PEOPLE_TRIANGLES_SUCCESS, new Referencia('https://www.entrepreneur.com/growing-a-business/the-triangles-of-success-are-more-than-a-good-laugh/279979', 'Triangulos del exito', PEOPLE_KEY, 'Triangulos del exito', '2024/11/21')],
     [Keys.PEOPLE_SOMBREROS_PENSAMIENTO, new Referencia('https://xn--designthinkingespaa-d4b.com/seis-sombreros-para-pensar', 'Sombreros para Pensar', PEOPLE_KEY, 'Sombreros para Pensar', '2024/12/25')],
-    [Keys.PEOPLE_PRODUCT_CHALLENGES, new Referencia('https://itamargilad.com/product-challenges/', 'Desafios al construir un producto', PEOPLE_KEY, 'Producto', '2025/05/31').addRelatedItems(Keys.METODOLOGIAS_LEAN, Keys.REQUISITOS_KPI_OKR)],
+    [Keys.PEOPLE_PRODUCT_CHALLENGES, new Referencia('https://itamargilad.com/product-challenges/', 'Desafios al construir un producto', PEOPLE_KEY, 'Producto', '2025/05/31')
+        .addRelatedItems(Keys.METODOLOGIAS_LEAN, Keys.REQUISITOS_KPI_OKR)
+    ],
+    [Keys.PEOPLE_POST_MORTEM, new Referencia('https://www.freecodecamp.org/news/what-is-a-software-post-mortem/', 'Post mortem', PEOPLE_KEY, 'Post mortem', '2025/12/06')
+        .addRelatedItems(Keys.CD_CI_FAILOVER, Keys.CD_CI_MONITORING_AND_ALERTS)
+        .addMoreReferences('https://github.com/danluu/post-mortems')
+    ],
 ]);
 
 export const POO_KEY = 'POO';
@@ -1155,7 +1169,7 @@ export const CI_CD_REF = new Map<string, Referencia>([
     [Keys.CD_CI_FAILOVER, new Referencia('https://stackoverflow.blog/2020/10/23/adrian-cockcroft-aws-failover-chaos-engineering-fault-tolerance-distaster-recovery/', 'Failover & Ingenieria del caos', CI_CD_KEY, 'Failover, Caos, Resiliencia', '2025/04/06').addRelatedItems(Keys.NUBE_SRE, Keys.SYSTEM_DESIGN_SINGLE_POINT_OF_FAILURE, Keys.NUBE_DISPONIBILITY)],
     [Keys.CD_CI_MONITORING, new Referencia('https://www.squadcast.com/blog/comparing-uptime-monitoring-heartbeat-monitoring-and-synthetic-monitoring', 'Monitoreo de un sistema', CI_CD_KEY, 'Monitoreo', '2025/05/01').addRelatedItems(Keys.NUBE_DISPONIBILITY, Keys.NUBE_SRE, Keys.NUBE_LOAD_BALANCING, Keys.HARDWARE_ESCALAMIENTO, Keys.WEB_GOLDEN_SIGNALS, Keys.MICROSERVICES_DISTRIBUTED_TRANSACTIONS)],
     [Keys.CD_CI_MONITORING_AND_ALERTS, new Referencia('https://edgedelta.com/company/blog/monitoring-and-alerting-best-practices', 'Monitoreo, Alertas & Observabilidad', CI_CD_KEY, 'Monitoreo y Alertas', '2025/10/12')
-        .addRelatedItems(Keys.NUBE_OBSERVABILIDAD, Keys.TESTING_ADVANCED_PERFORMANCE, Keys.SYSTEM_DESIGN_COMMON_METRICS, Keys.PEOPLE_DIKW, Keys.SECURITY_MATRIZ_DE_RIESGOS, Keys.COMPILACION_INSTRUMENTS, Keys.NUBE_SRE, Keys.COMPILACION_SDK_VS_API)
+        .addRelatedItems(Keys.NUBE_OBSERVABILIDAD, Keys.TESTING_ADVANCED_PERFORMANCE, Keys.SYSTEM_DESIGN_COMMON_METRICS, Keys.PEOPLE_DIKW, Keys.SECURITY_MATRIZ_DE_RIESGOS, Keys.COMPILACION_INSTRUMENTS, Keys.NUBE_SRE, Keys.COMPILACION_SDK_VS_API, Keys.PEOPLE_POST_MORTEM)
         .addMoreReferences('https://opentelemetry.io/docs/what-is-opentelemetry/', 'https://opentelemetry.io/docs/concepts/instrumentation/zero-code/', 'https://betterstack.com/community/guides/monitoring/what-is-metrics-monitoring-alerting/')
     ],
     [Keys.CD_CI_DEPLOYMENT_ARQUITECTURE, new Referencia('https://medium.com/nerd-for-tech/software-deployment-as-architecture-648867bdb77c', 'Implementación como Arquitectura', CI_CD_KEY, 'Deploy & Arquitectura', '2025/06/12').addRelatedItems(Keys.ARQUITECTURAS_DESCOMPOSICION_MODULAR, Keys.ARQUITECTURAS_MONOLITOS, Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES, Keys.VERSIONAMIENTO_VERSIONAMIENTO, Keys.APIS_REST_VS_MESSAGING, Keys.ANALISIS_BOUNDED_CONTEXT, Keys.MICROSERVICES_ARQUITECTURAS, Keys.CONTENEDORES_ORCHESTRATION, Keys.NUBE_NATIVE, Keys.MALAS_PRACTICAS_DEATH_BY_MICROSERVICES)],
