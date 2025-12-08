@@ -343,6 +343,7 @@ export const PERSISTENCY_DL = 'dl';
 export const PERSISTENCY_INTEGRITY = 'integridad';
 export const PERSISTENCY_ERD = 'erd';
 export const PERSISTENCY_NORMALIZATION = 'normalizacion';
+export const PERSISTENCY_NORMALIZATION_ERRORS = 'como-no-normalizar';
 export const PERSISTENCY_ACID = 'ACID';
 export const PERSISTENCY_INDICES = 'indices';
 export const PERSISTENCY_JOINS = 'joins';
