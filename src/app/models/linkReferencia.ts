@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.PERSISTENCY_NORMALIZATION_ERRORS;
+export const LAST_ITEM = Keys.PERSISTENCY_DB_DESIGN_II;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -1002,14 +1002,28 @@ export const PERSISTENCY_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.PARADIGMAS_IMPERATIVO)
         .addMoreReferences('https://medium.com/@madu.sharadika/stored-procedures-views-and-triggers-in-sql-3845708d0ee7')
     ],
-    [Keys.PERSISTENCY_DB_DESIGN, new Referencia('https://dzone.com/articles/what-is-good-database-design', 'Diseño de una BD', PERSISTENCY_KEY, 'Diseño', '2023/11/23')],
-    [Keys.PERSISTENCY_OPTIMIZE_SLOW_QUERIES, new Referencia('https://digma.ai/how-to-optimize-slow-sql-queries/', 'Optimización de consultas', PERSISTENCY_KEY, 'Optimización', '2024/06/09').addRelatedItems(Keys.PERSISTENCY_ADVANCED_ORM, Keys.PERSISTENCY_ADVANCED_N_1_SELECTS)],
+    [Keys.PERSISTENCY_DB_DESIGN_I, new Referencia('https://dzone.com/articles/what-is-good-database-design', 'Diseño I', PERSISTENCY_KEY, 'Diseño I', '2023/11/23')
+        .addRelatedItems(Keys.PERSISTENCY_ADVANCED_SCALING_DB)
+    ],
+    [Keys.PERSISTENCY_DB_DESIGN_II, new Referencia('https://medium.com/@artemkhrenov/database-design-patterns-the-complete-developers-guide-to-modern-data-architecture-8b4f06e646ce', 'Diseño II', PERSISTENCY_KEY, 'Diseño II', '2025/12/08')
+        .addRelatedItems(Keys.NUBE_NATIVE, Keys.SYSTEM_DESIGN_SCALING_WRITES, Keys.ANALISIS_STRATEGIC_DESIGN, Keys.PERSISTENCY_ADVANCED_SCALING_DB, Keys.CD_CI_FAILOVER, Keys.MICROSERVICES_DISTRIBUTED_TRANSACTIONS, Keys.ARQUITECTURAS_EVENT_DRIVEN)
+        .addMoreReferences('https://medium.com/@artemkhrenov/database-design-patterns-the-complete-developers-guide-to-modern-data-architecture-c4e891875001')
+    ],
+    [Keys.PERSISTENCY_OPTIMIZE_SLOW_QUERIES, new Referencia('https://digma.ai/how-to-optimize-slow-sql-queries/', 'Optimización de consultas', PERSISTENCY_KEY, 'Optimización', '2024/06/09')
+        .addRelatedItems(Keys.PERSISTENCY_ADVANCED_ORM, Keys.PERSISTENCY_ADVANCED_N_1_SELECTS)
+    ],
     [Keys.PERSISTENCY_SCHEMAS, new Referencia('https://buttondown.email/jaffray/archive/in-codd-we-trust-or-not', 'Esquema Fisico Vs Esquema Logico', PERSISTENCY_KEY, 'Esquemas (Schema)', '2024/07/16')],
     [Keys.PERSISTENCY_HARD_SOFT_DELETE, new Referencia('https://surajsinghbisht054.medium.com/understanding-soft-delete-and-hard-delete-in-software-development-best-practices-and-importance-539a935d71b5', 'Borrado Fisico Vs Logico', PERSISTENCY_KEY, 'Hard/Soft Delete', '2024/08/10')],
-    [Keys.PERSISTENCY_DB_TYPES, new Referencia('https://www.linkedin.com/posts/brijpandeyji_as-data-architectures-evolve-choosing-the-activity-7234400741543587841-sp_I/', 'Tipos de Bases de Datos', PERSISTENCY_KEY, 'Tipos de BD', '2024/09/12').addRelatedItems(Keys.POO_POO)],
+    [Keys.PERSISTENCY_DB_TYPES, new Referencia('https://www.linkedin.com/posts/brijpandeyji_as-data-architectures-evolve-choosing-the-activity-7234400741543587841-sp_I/', 'Tipos de Bases de Datos', PERSISTENCY_KEY, 'Tipos de BD', '2024/09/12')
+        .addRelatedItems(Keys.POO_POO)
+    ],
     [Keys.PERSISTENCY_KEY_TYPES, new Referencia('https://agiledata.org/essays/keys.html', 'Tipos de Keys', PERSISTENCY_KEY, 'Tipos de Keys', '2024/10/06')],
-    [Keys.PERSISTENCY_COMMON_TABLE_EXPRESSION, new Referencia('https://learnsql.com/blog/what-is-common-table-expression/', 'Common Table Expression', PERSISTENCY_KEY, 'CTE', '2025/01/04').addRelatedItems(Keys.META_CARACTERISTICAS_RECURSIVIDAD)],
-    [Keys.PERSISTENCY_DATA_MODELING, new Referencia('https://towardsdev.com/mastering-data-modeling-a-step-by-step-guide-99dd32bfaa89', 'Modelado de Datos', PERSISTENCY_KEY, 'Modelado de Datos', '2025/01/23').addRelatedItems(Keys.POO_POO)],
+    [Keys.PERSISTENCY_COMMON_TABLE_EXPRESSION, new Referencia('https://learnsql.com/blog/what-is-common-table-expression/', 'Common Table Expression', PERSISTENCY_KEY, 'CTE', '2025/01/04')
+        .addRelatedItems(Keys.META_CARACTERISTICAS_RECURSIVIDAD)
+    ],
+    [Keys.PERSISTENCY_DATA_MODELING, new Referencia('https://towardsdev.com/mastering-data-modeling-a-step-by-step-guide-99dd32bfaa89', 'Modelado de Datos', PERSISTENCY_KEY, 'Modelado de Datos', '2025/01/23')
+        .addRelatedItems(Keys.POO_POO)
+    ],
     [Keys.PERSISTENCY_DATA_STRUCTURED_DATABASE_SYSTEM, new Referencia('https://www.freecodecamp.org/news/how-to-design-structured-database-systems-using-sql-full-book/', 'Estructurar una BD', PERSISTENCY_KEY, 'Estructurar una BD', '2025/08/21')
         .addRelatedItems(Keys.PEOPLE_DIKW, Keys.NEURO_MARKETING_SEMANTICA_PRAGMATICA, Keys.HARDWARE_UTF8, Keys.META_ESTRUCTURAS_SISTEMAS_COMPLEJOS, Keys.ANALISIS_DATA_DATA_STORING, Keys.META_CARACTERISTICAS_META_DATOS, Keys.META_ESTRUCTURAS_ESTRUCTURAS_DATOS_II, Keys.META_CARACTERISTICAS_BLOCKING_AND_NO_BLOCKING, Keys.ANALISIS_DATA_OLAP_OLTP, Keys.REQUISITOS_REQUIREMENTS_ENGINEERING)
     ],
@@ -1025,7 +1039,9 @@ export const PERSISTENCY_ADVANCED_REF = new Map<string, Referencia>([
     ],
     [Keys.PERSISTENCY_ADVANCED_ORM, new Referencia('https://programarfacil.com/blog/que-es-un-orm/', 'Mapeo Objeto-Relacional (ORM)', PERSISTENCY_ADVANCED_KEY, 'ORM')],
     //[Keys.PERSISTENCY_CONSISTENCY, new Referencia('https://medium.com/@gabanox/consistencia-eventual-en-s3-6ba5b2ecd721', 'Consistencia', PERSISTENCY_ADVANCED_KEY, 'Consistencia')],
-    [Keys.PERSISTENCY_CONSISTENCY, new Referencia('https://www.scylladb.com/glossary/consistency-models/', 'Consistencia', PERSISTENCY_ADVANCED_KEY, 'Consistencia', '', '2025/03/13').addRelatedItems(Keys.NUBE_CAP_TEOREMA)],
+    [Keys.PERSISTENCY_CONSISTENCY, new Referencia('https://www.scylladb.com/glossary/consistency-models/', 'Consistencia', PERSISTENCY_ADVANCED_KEY, 'Consistencia', '', '2025/03/13')
+        .addRelatedItems(Keys.NUBE_CAP_TEOREMA)
+    ],
     //['algebraRelacional', new Referencia('https://sites.google.com/site/basededatosdistribuidastics/algebra-relacional', 'Algebra Relacional', PERSISTENCY_ADVANCED_KEY, 'Algebra Relacional')],
     [Keys.PERSISTENCY_ALGEBRA_RELACIONAL, new Referencia('https://lienzos.uv.mx/Uploads/resources/LenguajeAlgebraRelacional_18e0.pdf', 'Algebra Relacional', PERSISTENCY_ADVANCED_KEY, 'Algebra Relacional', '', '2024/06/07')],
     [Keys.PERSISTENCY_ADVANCED_N_1_SELECTS, new Referencia('https://stackoverflow.com/questions/97197/what-is-the-n1-selects-problem-in-orm-object-relational-mapping', 'N + 1 Problem', PERSISTENCY_ADVANCED_KEY, 'N + 1 Selects')],
@@ -1044,12 +1060,20 @@ export const PERSISTENCY_ADVANCED_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.HARDWARE_ESCALAMIENTO)
         .addMoreReferences('https://medium.com/@himanshusingour7/why-scaling-a-database-is-harder-than-scaling-a-server-9f83779c2deb')
     ],
-    [Keys.PERSISTENCY_ADVANCED_WAL, new Referencia('https://medium.com/@vinciabhinav7/write-ahead-logs-but-why-494c3efd722d', 'Registros de escritura anticipada (WAL)', PERSISTENCY_ADVANCED_KEY, 'WAL', '2024/06/15').addRelatedItems(Keys.META_CARACTERISTICAS_META_DATOS, Keys.PERSISTENCY_DBMS)],
-    [Keys.PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS, new Referencia('https://rakyll.medium.com/things-i-wished-more-developers-knew-about-databases-2d0178464f78', 'Problemas desconocidos de una BD', PERSISTENCY_ADVANCED_KEY, 'Problemas desconocidos', '2024/10/06').addRelatedItems(Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS)],
+    [Keys.PERSISTENCY_ADVANCED_WAL, new Referencia('https://medium.com/@vinciabhinav7/write-ahead-logs-but-why-494c3efd722d', 'Registros de escritura anticipada (WAL)', PERSISTENCY_ADVANCED_KEY, 'WAL', '2024/06/15')
+        .addRelatedItems(Keys.META_CARACTERISTICAS_META_DATOS, Keys.PERSISTENCY_DBMS)
+    ],
+    [Keys.PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS, new Referencia('https://rakyll.medium.com/things-i-wished-more-developers-knew-about-databases-2d0178464f78', 'Problemas desconocidos de una BD', PERSISTENCY_ADVANCED_KEY, 'Problemas desconocidos', '2024/10/06')
+        .addRelatedItems(Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS)
+    ],
     [Keys.PERSISTENCY_ADVANCED_PARTITIONING, new Referencia('https://medium.com/@imnazimuddinasif/a-practical-overview-of-database-partitioning-59e8e318142b', 'Particiones', PERSISTENCY_ADVANCED_KEY, 'Particiones', '2024/10/07')],
     [Keys.PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL, new Referencia('https://newsletter.systemdesigncodex.com/p/eventual-consistency-is-tricky', 'Consistencia Eventual', PERSISTENCY_ADVANCED_KEY, 'Consistencia Eventual', '2024/10/27')],
-    [Keys.PERSISTENCY_ADVANCED_DENORMALIZATION, new Referencia('https://dgraph.io/blog/post/denormalize-database/', 'Desnormalización', PERSISTENCY_ADVANCED_KEY, 'Desnormalización', '2025/02/05').addRelatedItems(Keys.PERSISTENCY_NORMALIZATION)],
-    [Keys.PERSISTENCY_ADVANCED_SQL_ENGINE_ANATOMY, new Referencia('https://www.dolthub.com/blog/2025-04-25-sql-engine-anatomy/', 'Anatomia de un motor SQL', PERSISTENCY_ADVANCED_KEY, 'Motores SQL', '2025/07/28').addRelatedItems(Keys.META_CARACTERISTICAS_RECURSIVIDAD, Keys.META_ESTRUCTURAS_SCOPE)],
+    [Keys.PERSISTENCY_ADVANCED_DENORMALIZATION, new Referencia('https://dgraph.io/blog/post/denormalize-database/', 'Desnormalización', PERSISTENCY_ADVANCED_KEY, 'Desnormalización', '2025/02/05')
+        .addRelatedItems(Keys.PERSISTENCY_NORMALIZATION)
+    ],
+    [Keys.PERSISTENCY_ADVANCED_SQL_ENGINE_ANATOMY, new Referencia('https://www.dolthub.com/blog/2025-04-25-sql-engine-anatomy/', 'Anatomia de un motor SQL', PERSISTENCY_ADVANCED_KEY, 'Motores SQL', '2025/07/28')
+        .addRelatedItems(Keys.META_CARACTERISTICAS_RECURSIVIDAD, Keys.META_ESTRUCTURAS_SCOPE)
+    ]
 ]);
 
 export const UML_KEY = 'UML';
