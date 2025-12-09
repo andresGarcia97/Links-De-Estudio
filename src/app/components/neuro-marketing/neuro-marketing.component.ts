@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NEURO_MARKETING } from 'src/app/models/content/content7';
+import { NEURO_MARKETING } from 'src/app/models/content/content8';
 import { ANALISIS_DATA_KEY, CONOCIMIENTO_EMPIRICO_KEY, LinkReferencia, MICRO_SERVICES_KEY, NEURO_MARKETING_REF, PEOPLE_KEY }
 from 'src/app/models/linkReferencia';
 import { PreviousAndNextSection } from 'src/app/models/models';

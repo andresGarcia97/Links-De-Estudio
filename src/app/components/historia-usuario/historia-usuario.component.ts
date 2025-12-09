@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HISTORIAS_USUARIO } from 'src/app/models/content/content2';
+import { HISTORIAS_USUARIO } from 'src/app/models/content/content8';
 import { 
   AGILES_KEY, CONOCIMIENTO_EMPIRICO_KEY, LinkReferencia, PEOPLE_KEY, REQUISITOS_KEY, SYSTEM_DESIGN_KEY, USER_HISTORIES }
   from 'src/app/models/linkReferencia';
