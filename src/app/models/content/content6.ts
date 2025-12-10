@@ -360,7 +360,7 @@ export const CALIDAD =
 
 export const GIT =
     [
-        new Item('introduccion',
+        new Item(Keys.GIT_INTRODUCTION,
             [
                 '- Todo archivo puede tener un seguimiento, y todo archivo seguido tiene un identificador unico que cambia con cualquier cambio del archivo ',
                 '- Existen 3 estados principales, cambios confirmados, archivos modificados y cambios en espera ',
@@ -383,7 +383,7 @@ export const GIT =
                 '&brvbar;  &brvbar;--------------------------&brvbar;  &brvbar;   <strong>Diff:</strong> Compara archivos de texto, en busca de diferencias ',
                 '&brvbar;--------------------------------&brvbar;   <strong>Patch:</strong> Toma los diff y los coloca en un archivo, para sincronizar las versiones previas de archivos y carpetas ',
             ]),
-        new Item('repositorios',
+        new Item(Keys.GIT_REPOSITORIES,
             [
                 '- Git trabaja principalmente de manera local, pero es necesario sincronizar los cambios hechos con el repositorio central ',
                 '- Los cambios pueden subirse mediante un push o bajarse del repositorio mediante un pull o un fetch ',
@@ -398,7 +398,7 @@ export const GIT =
                 '- Estas tambien traen el problema de que puedan surgir conflictos, que son segmentos o archivos con varias modificaciones por diferentes personas ',
                 '- Solucionar conflictos y organizar las ramas suele ser delicado, por lo que debe realizarse con plena conciencia de lo que se esta haciendo ',
             ]),
-        new Item('protocolos',
+        new Item(Keys.GIT_PROTOCOLS,
             [
                 '- La comunicación entre el repositorio remoto y local se puede hacer mediante diferentes maneras ',
                 '<strong>Local:</strong> Se usa el mismo metodo de carpetas y archivos que tenga el host por defecto ',
@@ -406,37 +406,37 @@ export const GIT =
                 '<strong>SSH:</strong>   Requiere de generar una clave encriptada que debe esta almacenada en ambos repositorios, más complejo pero seguro ',
                 '<strong>Git:</strong>   No requiere ningun tipo de autenticación y es el más rapido de todos, haciendolo vulnerable a modificaciones de cualquier ente externo ',
             ]),
-        new Item('versiones',
+        new Item(Keys.GIT_VERSIONS,
             [
                 '- Las etiquetas se añaden a un commit en especifico, dando a entender que esa ha de ser una nueva versión ó hay un cambio bastante importante ',
                 '- Tambien se puede crear un archivo comprimido con todo el codigo de la nueva versión listo para descargar y ejecutar ',
             ]),
-        new Item('forks',
+        new Item(Keys.GIT_FORKS,
             [
                 '<strong>- Fork:</strong> Es una clonación de un proyecto desde un repositorio a otro en un momento y rama en especifico, con el usuario como nuevo dueño ',
                 '<strong>- Pull request:</strong> Es la solicitud de una persona que haya modificaciones de manera externa al repositorio pero que quiera integrarlas al original ',
                 '<strong>- Markdown:</strong> Son archivos utiles a la hora de añadir información extra del proyecto, de manera más interactiva que un simple archivo de texto ',
             ]),
-        new Item('stash',
+        new Item(Keys.GIT_STASH,
             [
                 '<strong>- Stash:</strong> El stash nos permite intercambiar entre ramas, sin necesidad de hacer commits pero guardando los cambios hechos ',
                 '<strong>- Pop:</strong> Permite retomar los cambios guardados y continuar en el punto que se dejo ',
                 '<strong>- Reset:</strong> Borra todos lo cambios hechos y devuelve la rama al ultimo commit hecho ',
             ]),
-        new Item('merge',
+        new Item(Keys.GIT_MERGE,
             [
                 '- Une los cambios de una rama a otra especifica, ocasionalmente surgen conflictos, que dependeran de la divergencia de los cambios realizados ',
                 '- Las ramas se pueden desfusionar si hay errores, ó abortarse si se vuelve muy problematica, mediante un revert o un abort segun el caso ',
                 '<strong>- Rerere:</strong> Esta opción oculta permite dotar a memoria a Git para que esta resuelva conflictos de manera automatica ',
             ]),
-        new Item('atributos',
+        new Item(Keys.GIT_ATRIBUTOS,
             [
                 '- Evitar la comparación de archivos binarios que git no pueda detectar por si mismo ',
                 '- Configurar maneras diferentes de ver los cambios de los archivos dependiendo de las extensiones (imagenes, textos, etc... )',
                 '- Ignorar archivos a la hora de comprimir el proyecto ',
                 '- Cambiar la forma de fusión de acuerdo a ciertos tipos de archivos ',
             ]),
-        new Item('migracion',
+        new Item(Keys.GIT_MIGRACION,
             [
                 '- Manejar los espacios en blanco que suelen ser un problema comun ',
                 '- Git permite la migración desde diferentes sistemas de versionamiento anteriores ó que han caido en el deshuso como: ',
@@ -445,7 +445,7 @@ export const GIT =
                 '- Configurar variables de ambiente como cualquier otro programa ',
                 '- Los entornos de desarrollo (IDE), ya traen integrado git por defecto generalmente ',
             ]),
-        new Item('flow',
+        new Item(Keys.GIT_FLOW,
             [
                 '- Es una forma de trabajar basada en el uso de las ramas y una estrategia comun, consta de 2 ramas principales y varias auxiliares ',
                 '',
@@ -458,7 +458,7 @@ export const GIT =
                 '- Todas las ramas <em>Hotfix</em> se unen con master y develop ',
                 '- Cualquier rama <em>Feature</em> se une a develop ',
             ]),
-        new Item('practicas',
+        new Item(Keys.GIT_COMMITS_PRACTICES,
             [
                 '- Los commits son sumamente importantes en git, y si se realizan correctamente puede aportar metadata al proyecto',
                 '',
@@ -475,6 +475,17 @@ export const GIT =
                 '<strong> - subject:</strong> No más de 50 caracteres y ser concisos, tambien se recomienda hacerlo en ingles ',
                 '<strong> - body:</strong> No más de 72 caracteres, es una explicación más detallada del porque del commit ',
                 '<strong> - footer:</strong> Se usa para el seguimiento de los IDs cuando hay incidencias ',
+            ]),
+        new Item(Keys.GIT_DEPURATION,
+            [
+                '&bull; Debido a que Git mantiene el historial completo del repositorio, es util para busquedas y depuracion del codigo, para eso existen multiples comandos: ',
+                '',
+                '<strong>&brvbar;   Comando  &brvbar;                           Proposito general                              &brvbar;                Enfoque                 &brvbar;</strong>',
+                '&brvbar; git log    &brvbar; Listar/filtrar el historial completo de los commits alcanzables          &brvbar; Rango de commits                       &brvbar;',
+                '&brvbar; git show   &brvbar; Detalles completos y <em>diff</em> del objeto especificado                        &brvbar; Generalmente un commit                 &brvbar;',
+                '&brvbar; git blame  &brvbar; Anotar cada linea de un archivo con el autor y ultimo cambio realizado   &brvbar; Linea por linea del archivo            &brvbar;',
+                '&brvbar; git bisect &brvbar; Encontrar commits que introdujeron problemas o bugs                      &brvbar; Rango de commits                       &brvbar;',
+                '&brvbar; git grep   &brvbar; Ayuda a encontrar coincidencias de texto en base a expresiones regulares &brvbar; A nivel del repositorio/branch/commits &brvbar;',
             ]),
         new Item(Keys.GIT_BRANCHS_STRATEGIES,
             [
@@ -532,7 +543,7 @@ export const GIT =
                 '  y ciclos largos de ',
                 '    mantenimiento ',
             ]),
-        new Item('monoRepo',
+        new Item(Keys.GIT_MONO_REPO,
             [
                 '- Un monorepo es un repositorio unico que contiene multiples proyectos distintos, con relaciones y fronteras bien definidas ',
                 '- Este se diferencia de un monolito, o de multiples componentes bajo un mismo repositorio ya que ',
