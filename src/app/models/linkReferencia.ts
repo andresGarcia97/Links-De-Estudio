@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.PERSISTENCY_DB_DESIGN_II;
+export const LAST_ITEM = Keys.REFACTORING_LEGACY_CODE_II;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -521,7 +521,7 @@ export const META_ESTRUCTURAS_REF = new Map<string, Referencia>([
     [Keys.META_ESTRUCTURAS_VALUE_OBJECTS, new Referencia('https://medium.com/all-you-need-is-clean-code/value-objects-d4c24115fa69', 'Value Objects', META_ESTRUCTURAS_KEY, 'Value Objects', '2022/11/07')],
     [Keys.META_ESTRUCTURAS_DYNAMIC_PROGAMING, new Referencia('https://www.spiceworks.com/tech/devops/articles/what-is-dynamic-programming/', 'Programacion Dinamica', META_ESTRUCTURAS_KEY, 'Programacion Dinamica', '2023/03/26')],
     [Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION, new Referencia('https://www.baeldung.com/cs/serialization-deserialization', 'Serialización y Deserialización', META_ESTRUCTURAS_KEY, 'Serializar & Deserializar', '2023/05/31')],
-    [Keys.META_ESTRUCTURAS_DEPRECATION, new Referencia('https://digma.ai/deprecated-methods-in-java/', 'Deprecated (Obsolencia)', META_ESTRUCTURAS_KEY, 'Deprecated (Obsolencia)', '2024/06/15').addRelatedItems(Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES, Keys.REFACTORING_LEGACY_CODE)],
+    [Keys.META_ESTRUCTURAS_DEPRECATION, new Referencia('https://digma.ai/deprecated-methods-in-java/', 'Deprecated (Obsolencia)', META_ESTRUCTURAS_KEY, 'Deprecated (Obsolencia)', '2024/06/15').addRelatedItems(Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES, Keys.REFACTORING_LEGACY_CODE_I)],
     [Keys.META_ESTRUCTURAS_LOGS, new Referencia('https://betterstack.com/community/guides/logging/log-levels-explained/', 'Logs', META_ESTRUCTURAS_KEY, 'Logs', '2025/01/29', '2025/02/02').addRelatedItems(Keys.NUBE_OBSERVABILIDAD, Keys.BUENAS_PRACTICAS_LOGGING, Keys.PEOPLE_NO_NEWS_GOOD_NEWS)],
     [Keys.META_ESTRUCTURAS_QUEUES, new Referencia('https://github.com/joelparkerhenderson/queueing-theory', 'Teoria de Colas', META_ESTRUCTURAS_KEY, 'Teoria de Colas', '2025/09/07').addRelatedItems(Keys.LEYES_LITTLE, Keys.SYSTEM_DESIGN_QUEUES)],
 ]);
@@ -825,7 +825,7 @@ export const TESTING_REF = new Map<string, Referencia>([
     [Keys.TESTING_FALSES_POSITIVES_NEGATIVES, new Referencia('https://www.browserstack.com/guide/false-positives-and-false-negatives-in-testing', 'Falsos positivos & Falsos negativos', TESTING_KEY, 'Falsos Resultados', '2024/07/11', '2025/04/26')],
     [Keys.TESTING_QUALITY_ASSURANCE, new Referencia('https://www.bbvaapimarket.com/es/mundo-api/que-es-qa-y-por-que-no-debe-faltar-en-tu-proyecto/', '¿ Que es QA ?', TESTING_KEY, 'Quality Assurance', '', '2025/03/15').addRelatedItems(Keys.PEOPLE_GESTION_EXPECTATIVAS)],
     [Keys.TESTING_DATA_CREATION, new Referencia('https://www.linkedin.com/pulse/creating-test-data-object-mother-builder-patterns-alves-pimenta/', 'Patrones de creación de datos', TESTING_KEY, 'Creación de datos', '2024/07/11')],
-    [Keys.TESTING_FIVE_FACTORS, new Referencia('https://madeintandem.com/blog/five-factor-testing/', 'Five Factor Testing', TESTING_KEY, 'Five Factor Testing', '2025/03/02').addRelatedItems(Keys.VERSIONAMIENTO_DOCUMENTATION, Keys.ANALISIS_OPINIONATED_NO, Keys.REFACTORING_LEGACY_CODE)],
+    [Keys.TESTING_FIVE_FACTORS, new Referencia('https://madeintandem.com/blog/five-factor-testing/', 'Five Factor Testing', TESTING_KEY, 'Five Factor Testing', '2025/03/02').addRelatedItems(Keys.VERSIONAMIENTO_DOCUMENTATION, Keys.ANALISIS_OPINIONATED_NO, Keys.REFACTORING_LEGACY_CODE_I)],
     [Keys.TESTING_BUG, new Referencia('https://testgrid.io/blog/bug-life-cycle/', 'Ciclo de vida de un Error(Bug)', TESTING_KEY, 'Bugs', '2025/04/23').addRelatedItems(Keys.BUENAS_PRACTICAS_DEBUGGING, Keys.BUENAS_PRACTICAS_LOGGING, Keys.PEOPLE_CAPA_8, Keys.COMPILACION_ERRORS_AND_EXCEPTIONS)],
     [Keys.TESTING_INTEGRATION, new Referencia('https://qalified.com/es/blog/pruebas-de-integracion-que-son/', 'Pruebas de Integración', TESTING_KEY, 'Integracion', '2025/09/10').addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_BOTTOM_UP_AND_TOP_DOWN, Keys.PATRONES_FOR_INTEGRATION, Keys.POO_COUPLING_AND_COHESION, Keys.METODOLOGIAS_MODEL_BING_BANG, Keys.CD_CI_RULES)],
     [Keys.TESTING_CONTRACT_TESTING, new Referencia('https://www.paradigmadigital.com/dev/patrones-arquitectura-microservicios-consumer-driven-contract-testing/', 'Contract Testing', TESTING_KEY, 'Contract Testing', '2025/08/19')
@@ -870,20 +870,35 @@ export const REFACTORING_KEY = 'Refactorizacion';
 export const REFACTORING_REF = new Map<string, Referencia>([
     [Keys.REFACTORING_CLEAN_CODE, new Referencia('https://refactoring.guru/es/refactoring/what-is-refactoring', '¿ Que es Codigó Limpio ?', REFACTORING_KEY, 'Codigó Limpio')],
     [Keys.REFACTORING_DEUDA_TECNICA, new Referencia('https://refactoring.guru/es/refactoring/technical-debt', 'Deuda tecnica', REFACTORING_KEY, 'Deuda tecnica')],
-    [Keys.REFACTORING_DEUDA_TECNICA_TYPES, new Referencia('https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/deuda-tecnica-explicada/', 'Tipos de deuda tecnica', REFACTORING_KEY, 'Tipos de deuda', '', '2025/07/05').addRelatedItems(Keys.AGILES_MANIFEST_AGIL, Keys.CALIDAD_CLEAN_CODE)],
+    [Keys.REFACTORING_DEUDA_TECNICA_TYPES, new Referencia('https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/deuda-tecnica-explicada/', 'Tipos de deuda tecnica', REFACTORING_KEY, 'Tipos de deuda', '', '2025/07/05')
+        .addRelatedItems(Keys.AGILES_MANIFEST_AGIL, Keys.CALIDAD_CLEAN_CODE)
+    ],
     [Keys.REFACTORING_COMMENT_DEUDA, new Referencia('https://www.scrummanager.net/bok/index.php?title=Deuda_t%C3%A9cnica', 'Comentarios especiales', REFACTORING_KEY, 'Comentar la deuda')],
     [Keys.REFACTORING_WHEN, new Referencia('https://refactoring.guru/es/refactoring/when', '¿ Cuando Refactorizar ?', REFACTORING_KEY, '¿ Cuando ?', '', '2025/07/05')],
     [Keys.REFACTORING_HOW, new Referencia('https://refactoring.guru/es/refactoring/how-to', '¿ Como Refactorizar ? ', REFACTORING_KEY, '¿ Como ?', '', '2025/07/05')
         .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_BDD, Keys.TESTING_ADVANCED_TYPES_TESTS, Keys.CALIDAD_CLEAN_CODE, Keys.CONOCIMIENTOS_EMPIRICOS_BOYS_SCOUTS, Keys.META_ESTRUCTURAS_DEPRECATION, Keys.LEYES_HYRUM, Keys.CALIDAD_CODE_REVIEWS, Keys.POO_COUPLING_AND_COHESION, Keys.BUENAS_PRACTICAS_COMPLEJIDAD_COGNITIVA)
         .addMoreReferences('https://blog.stackademic.com/i-refactored-100-000-lines-of-java-code-these-12-rules-saved-me-3ece7245f174')
     ],
-    [Keys.REFACTORING_TECNICAS, new Referencia('https://refactoring.guru/es/refactoring/techniques', 'Tecnicas para Refactorizar', REFACTORING_KEY, 'Tecnicas', '', '2025/07/05').addRelatedItems(Keys.PRINCIPIOS_SLAP, Keys.BUENAS_PRACTICAS_INDIRECTION, Keys.POO_COUPLING_AND_COHESION, Keys.BUENAS_PRACTICAS_COMPLEJIDAD_COGNITIVA)],
+    [Keys.REFACTORING_TECNICAS, new Referencia('https://refactoring.guru/es/refactoring/techniques', 'Tecnicas para Refactorizar', REFACTORING_KEY, 'Tecnicas', '', '2025/07/05')
+        .addRelatedItems(Keys.PRINCIPIOS_SLAP, Keys.BUENAS_PRACTICAS_INDIRECTION, Keys.POO_COUPLING_AND_COHESION, Keys.BUENAS_PRACTICAS_COMPLEJIDAD_COGNITIVA)
+    ],
     [Keys.REFACTORING_WHEN_NOT, new Referencia('https://www.digite.com/agile/refactorizacion-en-agil/', 'Cuando No Refactorizar', REFACTORING_KEY, 'Cuando No', '2023/01/22')],
-    [Keys.REFACTORING_LEGACY_CODE, new Referencia('https://jesuslc.com/2020/11/21/tecnicas-para-mantener-al-legacy-code-bajo-control/', 'Refactorizar el Legacy Code', REFACTORING_KEY, 'Refactor en Legacy code', '2023/02/05', '2025/03/02')],
+    [Keys.REFACTORING_LEGACY_CODE_I, new Referencia('https://jesuslc.com/2020/11/21/tecnicas-para-mantener-al-legacy-code-bajo-control/', 'Refactorizar el Legacy Code I', REFACTORING_KEY, 'Refactor en Legacy code I', '2023/02/05', '2025/03/02')
+        .addRelatedItems(Keys.VERSIONAMIENTO_DOCUMENT_ARQUITECTURE)
+    ],
+    [Keys.REFACTORING_LEGACY_CODE_II, new Referencia('https://itnext.io/legacy-code-chesterton-fence-vs-%C3%B3lafurs-yellow-box-45f3cb040c05', 'Refactorizar el Legacy Code II', REFACTORING_KEY, 'Refactor en Legacy code II', '2025/12/09')
+        .addRelatedItems(Keys.BUENAS_PRACTICAS_COMPLEJIDAD, Keys.GIT_DEPURATION, Keys.TESTING_COBERTURA)
+    ],
     [Keys.REFACTORING_MANAGE_DEUDA_TECNICA, new Referencia('https://newsletter.techworld-with-milan.com/p/how-to-deal-with-technical-debt', 'Manejo de la deuda tecnica', REFACTORING_KEY, '¿ Como manejarla ?', '2024/05/12')],
-    [Keys.REFACTORING_MANAGE_DEPENDENCIES, new Referencia('https://levelup.gitconnected.com/world-of-dependencies-4639100d16ef', 'Manejo de las dependencias', REFACTORING_KEY, 'Dependencias', '2024/06/09').addRelatedItems(Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS, Keys.ARQUITECTURAS_CAPAS, Keys.FRAMEWORKS_IOD)],
-    [Keys.REFACTORING_GOOD_AND_BAD_PRACTICES, new Referencia('https://www.builder.io/blog/good-vs-bad-refactoring', 'Buenas & Malas practicas', REFACTORING_KEY, 'Buenas & Malas practicas', '2024/09/08').addRelatedItems(Keys.WEB_SEO, Keys.PRINCIPIOS_KISS)],
-    [Keys.REFACTORING_REWRITE_TRAP, new Referencia('https://levelup.gitconnected.com/the-endless-rewrite-why-developers-fall-into-the-start-from-scratch-trap-and-how-to-avoid-it-4a2246837ac5', 'Refactorización & Reconstrucción', REFACTORING_KEY, 'Reconstrucción', '2025/01/01').addRelatedItems(Keys.CONOCIMIENTOS_EMPIRICOS_COSTO_HUNDIDO, Keys.PATRONES_STRANGLER_FIG)],
+    [Keys.REFACTORING_MANAGE_DEPENDENCIES, new Referencia('https://levelup.gitconnected.com/world-of-dependencies-4639100d16ef', 'Manejo de las dependencias', REFACTORING_KEY, 'Dependencias', '2024/06/09')
+        .addRelatedItems(Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS, Keys.ARQUITECTURAS_CAPAS, Keys.FRAMEWORKS_IOD)
+    ],
+    [Keys.REFACTORING_GOOD_AND_BAD_PRACTICES, new Referencia('https://www.builder.io/blog/good-vs-bad-refactoring', 'Buenas & Malas practicas', REFACTORING_KEY, 'Buenas & Malas practicas', '2024/09/08')
+        .addRelatedItems(Keys.WEB_SEO, Keys.PRINCIPIOS_KISS)
+    ],
+    [Keys.REFACTORING_REWRITE_TRAP, new Referencia('https://levelup.gitconnected.com/the-endless-rewrite-why-developers-fall-into-the-start-from-scratch-trap-and-how-to-avoid-it-4a2246837ac5', 'Refactorización & Reconstrucción', REFACTORING_KEY, 'Reconstrucción', '2025/01/01')
+        .addRelatedItems(Keys.CONOCIMIENTOS_EMPIRICOS_COSTO_HUNDIDO, Keys.PATRONES_STRANGLER_FIG)
+    ],
     [Keys.REFACTORING_MODERNIZATION_LEGACY, new Referencia('https://martinfowler.com/articles/patterns-legacy-displacement/', 'Modernización del legado', REFACTORING_KEY, 'Modernización', '2025/08/10')
         .addRelatedItems(Keys.NUBE_MIGRATIONS, Keys.REQUISITOS_BUSINESS_VALUE, Keys.AGILES_OUTPUT_AND_OUTCOME, Keys.PRINCIPIOS_DIVIDE_AND_CONQUER, Keys.ANALISIS_TACTIC_DESIGN, Keys.METODOLOGIAS_AGILES, Keys.MICROSERVICES_ARQUITECTURAS, Keys.LEYES_CONWAY, Keys.META_ESTRUCTURAS_SISTEMAS_COMPLEJOS)
     ],
@@ -1002,10 +1017,10 @@ export const PERSISTENCY_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.PARADIGMAS_IMPERATIVO)
         .addMoreReferences('https://medium.com/@madu.sharadika/stored-procedures-views-and-triggers-in-sql-3845708d0ee7')
     ],
-    [Keys.PERSISTENCY_DB_DESIGN_I, new Referencia('https://dzone.com/articles/what-is-good-database-design', 'Diseño I', PERSISTENCY_KEY, 'Diseño I', '2023/11/23')
+    [Keys.PERSISTENCY_DB_DESIGN_I, new Referencia('https://dzone.com/articles/what-is-good-database-design', 'Diseño DB I', PERSISTENCY_KEY, 'Diseño DB I', '2023/11/23')
         .addRelatedItems(Keys.PERSISTENCY_ADVANCED_SCALING_DB)
     ],
-    [Keys.PERSISTENCY_DB_DESIGN_II, new Referencia('https://medium.com/@artemkhrenov/database-design-patterns-the-complete-developers-guide-to-modern-data-architecture-8b4f06e646ce', 'Diseño II', PERSISTENCY_KEY, 'Diseño II', '2025/12/08')
+    [Keys.PERSISTENCY_DB_DESIGN_II, new Referencia('https://medium.com/@artemkhrenov/database-design-patterns-the-complete-developers-guide-to-modern-data-architecture-8b4f06e646ce', 'Diseño DB II', PERSISTENCY_KEY, 'Diseño DB II', '2025/12/08')
         .addRelatedItems(Keys.NUBE_NATIVE, Keys.SYSTEM_DESIGN_SCALING_WRITES, Keys.ANALISIS_STRATEGIC_DESIGN, Keys.PERSISTENCY_ADVANCED_SCALING_DB, Keys.CD_CI_FAILOVER, Keys.MICROSERVICES_DISTRIBUTED_TRANSACTIONS, Keys.ARQUITECTURAS_EVENT_DRIVEN)
         .addMoreReferences('https://medium.com/@artemkhrenov/database-design-patterns-the-complete-developers-guide-to-modern-data-architecture-c4e891875001')
     ],
@@ -1014,7 +1029,7 @@ export const PERSISTENCY_REF = new Map<string, Referencia>([
     ],
     [Keys.PERSISTENCY_SCHEMAS, new Referencia('https://buttondown.email/jaffray/archive/in-codd-we-trust-or-not', 'Esquema Fisico Vs Esquema Logico', PERSISTENCY_KEY, 'Esquemas (Schema)', '2024/07/16')],
     [Keys.PERSISTENCY_HARD_SOFT_DELETE, new Referencia('https://surajsinghbisht054.medium.com/understanding-soft-delete-and-hard-delete-in-software-development-best-practices-and-importance-539a935d71b5', 'Borrado Fisico Vs Logico', PERSISTENCY_KEY, 'Hard/Soft Delete', '2024/08/10')],
-    [Keys.PERSISTENCY_DB_TYPES, new Referencia('https://www.linkedin.com/posts/brijpandeyji_as-data-architectures-evolve-choosing-the-activity-7234400741543587841-sp_I/', 'Tipos de Bases de Datos', PERSISTENCY_KEY, 'Tipos de BD', '2024/09/12')
+    [Keys.PERSISTENCY_DB_TYPES, new Referencia('https://www.linkedin.com/posts/brijpandeyji_as-data-architectures-evolve-choosing-the-activity-7234400741543587841-sp_I/', 'Tipos de Bases de Datos', PERSISTENCY_KEY, 'Tipos de DB', '2024/09/12')
         .addRelatedItems(Keys.POO_POO)
     ],
     [Keys.PERSISTENCY_KEY_TYPES, new Referencia('https://agiledata.org/essays/keys.html', 'Tipos de Keys', PERSISTENCY_KEY, 'Tipos de Keys', '2024/10/06')],
@@ -1024,16 +1039,16 @@ export const PERSISTENCY_REF = new Map<string, Referencia>([
     [Keys.PERSISTENCY_DATA_MODELING, new Referencia('https://towardsdev.com/mastering-data-modeling-a-step-by-step-guide-99dd32bfaa89', 'Modelado de Datos', PERSISTENCY_KEY, 'Modelado de Datos', '2025/01/23')
         .addRelatedItems(Keys.POO_POO)
     ],
-    [Keys.PERSISTENCY_DATA_STRUCTURED_DATABASE_SYSTEM, new Referencia('https://www.freecodecamp.org/news/how-to-design-structured-database-systems-using-sql-full-book/', 'Estructurar una BD', PERSISTENCY_KEY, 'Estructurar una BD', '2025/08/21')
+    [Keys.PERSISTENCY_DATA_STRUCTURED_DATABASE_SYSTEM, new Referencia('https://www.freecodecamp.org/news/how-to-design-structured-database-systems-using-sql-full-book/', 'Estructurar una DB', PERSISTENCY_KEY, 'Estructurar una DB', '2025/08/21')
         .addRelatedItems(Keys.PEOPLE_DIKW, Keys.NEURO_MARKETING_SEMANTICA_PRAGMATICA, Keys.HARDWARE_UTF8, Keys.META_ESTRUCTURAS_SISTEMAS_COMPLEJOS, Keys.ANALISIS_DATA_DATA_STORING, Keys.META_CARACTERISTICAS_META_DATOS, Keys.META_ESTRUCTURAS_ESTRUCTURAS_DATOS_II, Keys.META_CARACTERISTICAS_BLOCKING_AND_NO_BLOCKING, Keys.ANALISIS_DATA_OLAP_OLTP, Keys.REQUISITOS_REQUIREMENTS_ENGINEERING)
     ],
 ]);
 
-export const PERSISTENCY_ADVANCED_KEY = 'BD Avanzado'
+export const PERSISTENCY_ADVANCED_KEY = 'DB Avanzado'
 export const PERSISTENCY_ADVANCED_REF = new Map<string, Referencia>([
     [Keys.PERSISTENCY_ADVANCED_NO_SQL, new Referencia('https://pandorafms.com/blog/es/bases-de-datos-nosql/', 'Bases de Datos NO SQL', PERSISTENCY_ADVANCED_KEY, 'NoSQL', '', '2025/06/27')],
     //[Keys.PERSISTENCY_ADVANCED_NO_SQL_TYPES, new Referencia('https://www.acens.com/wp-content/images/2014/02/bbdd-nosql-wp-acens.pdf', 'Tipos de BD No SQL', PERSISTENCY_ADVANCED_KEY, 'Tipos NoSQL', '', '2025/06/27')],
-    [Keys.PERSISTENCY_ADVANCED_NO_SQL_TYPES, new Referencia('https://www.instaclustr.com/education/nosql-database/nosql-databases-types-use-cases-and-8-databases-to-try/', 'Tipos de BD No SQL', PERSISTENCY_ADVANCED_KEY, 'Tipos NoSQL', '', '2025/08/23')
+    [Keys.PERSISTENCY_ADVANCED_NO_SQL_TYPES, new Referencia('https://www.instaclustr.com/education/nosql-database/nosql-databases-types-use-cases-and-8-databases-to-try/', 'Tipos de DB No SQL', PERSISTENCY_ADVANCED_KEY, 'Tipos NoSQL', '', '2025/08/23')
         .addRelatedItems(Keys.NUBE_CAP_TEOREMA)
         .addMoreReferences('https://www.mongodb.com/es/resources/basics/databases/nosql-explained','https://docs.aws.amazon.com/whitepapers/latest/choosing-an-aws-nosql-database/types-of-nosql-databases.html')
     ],
