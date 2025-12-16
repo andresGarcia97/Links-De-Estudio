@@ -234,7 +234,10 @@ export const BUENAS_PRACTICAS_REF = new Map<string, Referencia>([
     ],
     [Keys.BUENAS_PRACTICAS_GUARD_CLAUSES, new Referencia('https://artansoft.com/2017/01/guard-clauses-definicion-beneficios/', 'Guard clauses', BUENAS_PRACTICAS_KEY, 'Guard Clauses')],
     [Keys.BUENAS_PRACTICAS_SEMANTIC_CONSTRUCTORS, new Referencia('https://medium.com/all-you-need-is-clean-code/constructores-sem%C3%A1nticos-ae7ac70b23aa', 'Constructores Semanticos', BUENAS_PRACTICAS_KEY, 'Constructores Semanticos')],
-    [Keys.BUENAS_PRACTICAS_EXCEPTIONS, new Referencia('https://javachallengers.com/mistakes-when-using-exceptions/', 'Manejo de Excepciones', BUENAS_PRACTICAS_KEY, 'Manejo de Excepciones')],
+    [Keys.BUENAS_PRACTICAS_EXCEPTIONS, new Referencia('https://javachallengers.com/mistakes-when-using-exceptions/', 'Manejo de Excepciones', BUENAS_PRACTICAS_KEY, 'Manejo de Excepciones', '', '2025/12/16')
+        .addRelatedItems(Keys.COMPILACION_ERRORS_AND_EXCEPTIONS, Keys.META_CARACTERISTICAS_EXCEPTIONS, Keys.HARDWARE_MONITOREO, Keys.APIS_ERRORS, Keys.NUBE_OBSERVABILIDAD, Keys.PATRONES_RESILIENCIA)
+        .addMoreReferences('https://medium.com/@csvaibhavpasrija/838292f305fd')
+    ],
     [Keys.BUENAS_PRACTICAS_GOOD_HABITS, new Referencia('https://vadimkravcenko.com/shorts/habits-of-great-software-engineers/', 'Buenos habitos de un desarrollador', BUENAS_PRACTICAS_KEY, 'Buenos habitos')],
     [Keys.BUENAS_PRACTICAS_FUNCTIONS, new Referencia('https://medium.com/@akineralkan/clean-code-notes-chapter-3-functions-de4a30191300', 'Buenas practicas, Funciones', BUENAS_PRACTICAS_KEY, 'Funciones', '2024/10/18').addRelatedItems(Keys.PATRONES_CQRS)],
     [Keys.BUENAS_PRACTICAS_AGGREGATES, new Referencia('https://www.kranio.io/blog/de-bueno-a-excelente-en-ddd-entendiendo-aggregates-y-aggregate-roots-en-domain-driven-design---3-10', 'Aggregates y Aggregate Roots', BUENAS_PRACTICAS_KEY, 'Agregados', '2025/04/20')
