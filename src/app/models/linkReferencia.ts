@@ -1014,8 +1014,9 @@ export const PERSISTENCY_REF = new Map<string, Referencia>([
     ],
     [Keys.PERSISTENCY_ACID, new Referencia('https://dosideas.com/noticias/base-de-datos/973-acid-en-las-bases-de-datos', 'Esquema ACID', PERSISTENCY_KEY, 'ACID')],
     //['indices', new Referencia('https://www.ibm.com/docs/es/mam/7.6.0.8?topic=databases-database-indexing', 'Indices', PERSISTENCY_KEY, 'Indices')],
-    [Keys.PERSISTENCY_INDICES, new Referencia('https://www.adesso.es/es/noticias/blog/indices-de-bases-de-datos-la-clave-para-la-optimizacion-del-rendimiento.jsp', 'Indices', PERSISTENCY_KEY, 'Indices', '', '2024/02/04')
-        .addRelatedItems(Keys.META_ESTRUCTURAS_ESTRUCTURAS_DATOS_II)
+    [Keys.PERSISTENCY_INDICES, new Referencia('https://www.adesso.es/es/noticias/blog/indices-de-bases-de-datos-la-clave-para-la-optimizacion-del-rendimiento.jsp', 'Indices & Indices parciales', PERSISTENCY_KEY, 'Indices', '', '2025/12/20')
+        .addRelatedItems(Keys.META_ESTRUCTURAS_ESTRUCTURAS_DATOS_II, Keys.PERSISTENCY_ADVANCED_SARGEABLE)
+        .addMoreReferences('https://use-the-index-luke.com/es/sql/where/%C3%ADndices-parciales')
     ],
     [Keys.PERSISTENCY_JOINS, new Referencia('https://ingenieriadesoftware.es/tipos-sql-join-guia-referencia/', 'Tipos de Joins', PERSISTENCY_KEY, 'Tipos de Joins', '2025/06/25', '2025/08/26')
         .addMoreReferences('https://vladmihalcea.com/sql-join-using/')

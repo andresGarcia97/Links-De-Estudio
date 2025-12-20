@@ -1104,12 +1104,16 @@ export const BASES_DE_DATOS =
             ]),
         new Item(Keys.PERSISTENCY_INDICES,
             [
-                '- Es una manera de optimizar las consultas y mejorar la eficiencia de una BD, reduciendo el tiempo de espera y las lecturas del disco duro ',
+                '<strong>Indices:</strong> Es una manera de optimizar las consultas y mejorar la eficiencia de una BD, reduciendo el tiempo de espera y las lecturas del disco duro ',
                 '- Esto se logra mediante estructuras binarias(arboles) asociadas a cada registro de la BD ',
                 '- La indexación puede presentar un problema para las operaciones de INSERT, UPDATE y DELETE, ya que esto obliga a equilibrar el arbol ',
                 ' - significando la actualización de los indices asociados, ralentizando las transacciones en comparación si no existiera el indice ',
                 '- Tener demasiados indices tambien es contraproducente ya que pueden retrasar el procesamiento de los datos ',
                 '- Cada motor puede manejar de diferentes maneras los indices, y esto a su vez afectar el rendimiento de cada tipo ',
+                '',
+                '<strong>Indices parciales:</strong> Los indices parciales son más efectivos que un indice normal ya que limitan aun más los registros a buscar ',
+                '- Limitan el espacio usado, ya que tienen más conocimiento de como se consultaran los datos (WHERE), la reducción se da debido a que ',
+                ' - contienen menos registros en total y las actualizaciones rebalancean el arbol, borrando/agregando registros que ya no cumplen ',
                 '',
                 '<strong>Buenas Practicas:</strong>',
                 '- Si existen consultas complejas que involucren multiples Joins, los indices en las PK y las FK agilizan la consulta, evitando escaneos completos ',
@@ -1664,9 +1668,9 @@ export const BASE_DE_DATOS_AVANZADO =
                 '- Usar los tipos correctos de los datos, para evitar conversiones implicitas que puedan afectar el uso de los indices',
                 '- Evitar usar Operaciones de ordenamiento y agrupamiento, solo se debe de usar cuando son requeridas ',
                 '- Usar columnas derivadas o valores precalculadas, en vez de usar operaciones sobre las columnas, y menos en las que estan indexadas ',
-                '- Siempre intente usar el WHERE, como una manera de reducir los datos, para todos los pasos subsiguientes ',
-                '- Intente usar LIMIT, para mejorar el rendimiento y la cantidad de datos a procesar ',
-                '- Escoja los JOINS indicados, no siempre sera necesario, tener toda la información de todas las tablas'
+                '- Siempre intente usar el <strong>WHERE</strong>, como una manera de reducir los datos, para todos los pasos subsiguientes ',
+                '- Intente usar <strong>LIMIT</strong>, para mejorar el rendimiento y la cantidad de datos a procesar ',
+                '- Escoja los <strong>JOINS</strong> indicados, no siempre sera necesario, tener toda la información de todas las tablas'
             ]),
         new Item(Keys.PERSISTENCY_ADVANCED_MVCC,
             [
