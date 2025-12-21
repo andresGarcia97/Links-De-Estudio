@@ -825,6 +825,22 @@ export const APIS =
                 '- Además de esto se puede incluir los <strong>Headers</strong> de <em>Sunset</em> y <em>Deprecation</em> que agregan información adicional como fechas de finalización ',
                 '- Los cambios <em>retrocompatibles</em> son una arma de doble filo, no todos los clientes son capaces de soportarlos y esto puede generar incidentes no previstos ',
                 '- Tambien existen formas de validar los esquemas JSON entregados por el servidor. Esto reduce la dependencia para encontrar errores del lado del cliente ',
+            ]),
+        new Item(Keys.APIS_ERRORS,
+            [
+                '- Comunicar los errores es fundamental, especialmente si se habla de integraciones y comunicación entre aplicaciones ',
+                '- Esta necesidad fue por la que se definio <em>application/problem+json</em> para la comunicación de errores de manera estandar ',
+                '- Los codigos HTTP son utiles comunicando errores y causas generales, pero carecen de detalles y <em>contenido</em> ',
+                '',
+                '<strong>RFC 7807</strong> Fue la primera definición para una respuesta estandar, legible para humanos y maquinas, tambien conocida como <strong>Problem Details</strong> ',
+                '<strong>RFC 9457</strong> Ofrecen mejoras para esta transmisión de información, de manera retrocompatible y solucionando problemas de adopción ',
+                '',
+                '- El objetivo de esta especificación es definir formatos de error comunes, de manera que no tengan que definir formatos personalizados ',
+                '&bull; type: A URI que identifica el tipo del problema ',
+                '&bull; title: Un resumen breve y legible del tipo del problema ',
+                '&bull; status: El codigo HTTP generado por la ocurrencia del problema ',
+                '&bull; detail: Explicación legible para humanos, el contenido puede variar ',
+                '&bull; instance: Referencia URI que identifica el problema, proporcionando más detalles si el localizador es desreferenciable ',
             ])
     ];
 

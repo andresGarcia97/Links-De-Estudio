@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.REFACTORING_LEGACY_CODE_II;
+export const LAST_ITEM = Keys.APIS_ERRORS;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -634,6 +634,10 @@ export const APIS_REF = new Map<string, Referencia>([
     [Keys.APIS_EVOLUTION, new Referencia('https://philsturgeon.com/api-evolution-for-rest-http-apis/', 'Como Evolucionar una API', APIS_KEY, 'Evolución API', '2025/10/14')
         .addRelatedItems(Keys.TESTING_CONTRACT_TESTING, Keys.VERSIONAMIENTO_EVOLUTION_SCHEMA_AND_SCHEMA_REGISTRY, Keys.META_ESTRUCTURAS_DEPRECATION, Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES, Keys.VERSIONAMIENTO_VERSIONAMIENTO)
         .addMoreReferences('https://swagger.io/blog/api-strategy/best-practices-for-deprecating-apis/', 'https://apisyouwonthate.com/blog/json-schema-client-side-validation/', 'https://www.techtarget.com/searchapparchitecture/feature/5-stages-of-an-API-lifecycle-explained', 'https://hygraph.com/blog/evolution-of-apis')
+    ],
+    [Keys.APIS_ERRORS, new Referencia('https://blog.frankel.ch/problem-details-http-apis/', 'API Errors', APIS_KEY, 'API Errors', '2025/12/16')
+        .addRelatedItems(Keys.BUENAS_PRACTICAS_EXCEPTIONS, Keys.META_ESTRUCTURAS_DEPRECATION)
+        .addMoreReferences('https://swagger.io/blog/problem-details-rfc9457-doing-api-errors-well/')
     ],
 ]);
 
