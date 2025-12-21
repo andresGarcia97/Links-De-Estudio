@@ -1900,5 +1900,19 @@ export const BASE_DE_DATOS_AVANZADO =
                 '',
                 '<strong>Spooling Results:</strong> Leer desde el almacenamiento y escribir en la red son conceptualmente similares, pero se encuentran en extremos opuestos ',
                 '- Los datos se mueven entre los formatos de almacenamiento, ejecución y uso de la conexión, de la misma manera que representaciones intermedias previas ',
+            ]),
+        new Item(Keys.PERSISTENCY_ADVANCED_UPSERT,
+            [
+                '- El termino <strong>upsert</strong> proviene de la combinación de <em>insert</em> y <em>update</em>, que es una operación que realiza una o otra acción de manera atomica ',
+                '&bull; Actualiza la fila si ya existe ',
+                '&bull; Inserta la fila si no existe ',
+                '',
+                '- Este no es un comando propio de SQL, por eso cada motor tiene su sintaxis y forma diferente de manejar los conflictos ',
+                '- La Sentencia en PostgreSQL es más compleja, pero esta complejidad tiene el beneficio de poder escoger acciones concretas sobre cada campo ',
+                '',
+                '<strong>Upsert en MySQL</strong>                            <strong>Upsert en PostgreSQL</strong>',
+                '<em>INSERT INTO employees (col1, col2, col3)</em>   <em>INSERT INTO table (col1, col2, col3)</em>',
+                '<em>VALUES (val1, val2, val3)</em>                  <em>VALUES (val1, val2, val3)</em>',
+                '<em>ON DUPLICATE KEY UPDATE;</em>                   <em>ON CONFLICT conflict_target conflict_action;</em>',
             ])
     ];
