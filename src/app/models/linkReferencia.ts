@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.PERSISTENCY_ADVANCED_UPSERT;
+export const LAST_ITEM = Keys.PERSISTENCY_OPTIMIZE_SLOW_QUERIES_II;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -1051,8 +1051,12 @@ export const PERSISTENCY_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.NUBE_NATIVE, Keys.SYSTEM_DESIGN_SCALING_WRITES, Keys.ANALISIS_STRATEGIC_DESIGN, Keys.PERSISTENCY_ADVANCED_SCALING_DB, Keys.CD_CI_FAILOVER, Keys.MICROSERVICES_DISTRIBUTED_TRANSACTIONS, Keys.ARQUITECTURAS_EVENT_DRIVEN)
         .addMoreReferences('https://medium.com/@artemkhrenov/database-design-patterns-the-complete-developers-guide-to-modern-data-architecture-c4e891875001')
     ],
-    [Keys.PERSISTENCY_OPTIMIZE_SLOW_QUERIES, new Referencia('https://digma.ai/how-to-optimize-slow-sql-queries/', 'Optimización de consultas', PERSISTENCY_KEY, 'Optimización', '2024/06/09')
+    [Keys.PERSISTENCY_OPTIMIZE_SLOW_QUERIES_I, new Referencia('https://digma.ai/how-to-optimize-slow-sql-queries/', 'Optimización de consultas I', PERSISTENCY_KEY, 'Optimización I', '2024/06/09')
         .addRelatedItems(Keys.PERSISTENCY_ADVANCED_ORM, Keys.PERSISTENCY_ADVANCED_N_1_SELECTS)
+    ],
+    [Keys.PERSISTENCY_OPTIMIZE_SLOW_QUERIES_II, new Referencia('https://darren-tan0512.medium.com/sql-best-practices-hard-learned-lessons-from-my-years-as-a-software-engineer-1d50f6ea54b7', 'Optimización de consultas II', PERSISTENCY_KEY, 'Optimización II', '2025/12/21')
+        .addRelatedItems(Keys.BUENAS_PRACTICAS_DEBUGGING, Keys.NUBE_OBSERVABILIDAD)
+        .addMoreReferences('https://medium.com/@kotiavula6/this-sql-question-exposes-fake-senior-developers-most-people-get-it-wrong-ce8a6a94952d')
     ],
     [Keys.PERSISTENCY_SCHEMAS, new Referencia('https://buttondown.email/jaffray/archive/in-codd-we-trust-or-not', 'Esquema Fisico Vs Esquema Logico', PERSISTENCY_KEY, 'Esquemas (Schema)', '2024/07/16')],
     [Keys.PERSISTENCY_HARD_SOFT_DELETE, new Referencia('https://surajsinghbisht054.medium.com/understanding-soft-delete-and-hard-delete-in-software-development-best-practices-and-importance-539a935d71b5', 'Borrado Fisico Vs Logico', PERSISTENCY_KEY, 'Hard/Soft Delete', '2024/08/10')],
