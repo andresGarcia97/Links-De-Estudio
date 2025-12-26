@@ -50,7 +50,7 @@ export const CALIDAD =
                 '<strong>- Usabilidad:</strong> Mide que tan bien el software permite alcanzar los objetivos del usuario ',
                 '<strong>- Net Promoter Score(NPS):</strong> Puntaje que representa la voluntad de un cliente para recomendar la aplicación a otros ',
             ]),
-        new Item('metricasEnCodigo',
+        new Item(Keys.CALIDAD_METRICS_CODE,
             [
                 '- La calidad del software es relativa y multidimensional, ligada a expectativas y caracteristicas, como restricciones y compromisos ',
                 '- Algo que siempre se va a notar es la mala calidad de un software, mientras que la calidad suele pasar desapercibida y se da por sentada ',
@@ -96,7 +96,7 @@ export const CALIDAD =
                 '',
                 '- Realizados de manera adecuada, con la calidad del codigo en la mente, la degeneración de nuestro codigo puede ser aceptable ',
             ]),
-        new Item('artesanos',
+        new Item(Keys.CALIDAD_MANIFEST_CRAFTMANSHIP,
             [
                 '- Se puede considerar el siguiente nivel del desarrollo profesional, mejorando nosotros mismos, y a los demás ',
                 '',
@@ -105,7 +105,7 @@ export const CALIDAD =
                 '- No sólo individuos e interacciones, <strong>SINO</strong> también una comunidad de profesionales',
                 '- No sólo colaboración con el cliente, <strong>SINO</strong> también asociaciones productivas',
             ]),
-        new Item('costOfQuality',
+        new Item(Keys.CALIDAD_COST_QUALITY,
             [
                 '- En un nivel operacional las tecnicas de gestión de calidad deben identificar desperdicios, resolver problemas y optimizar procesos ',
                 '- Generalmente enfocado a la prevención, pero tambien enfocado a la solución reactiva ',
@@ -115,7 +115,7 @@ export const CALIDAD =
                 '<strong>Costos de conformidad:</strong> Asociados a prevención y evaluación de la conformidad con los requisitos ',
                 '<strong>Costos de NO conformidad:</strong> Han de ver con las fallas ya sean internas y/o externas no detectadas y que terminan afectando al cliente ',
             ]),
-        new Item('qualityGates',
+        new Item(Keys.CALIDAD_QUALITY_GATES,
             [
                 '- Son politicas de calidad de las organizaciones, para cumplir con el objetivo de realizar un nuevo despliegue ',
                 '- Suelen ser politicas para garantizar la calidad, fiabilidad, y reducción de errores, facilitando aspectos como el CI/CD',
@@ -130,7 +130,7 @@ export const CALIDAD =
                 '',
                 '<strong>Valores generales</strong>(<em>SonarQube</em>) Cobertura<strong> >=80%</strong>   Duplicación<strong> <=3%</strong>   Fiabilidad <strong>A</strong>   Vulnerabilidades <strong>A</strong>    Deuda tecnica<strong> <=5%</strong> '
             ]),
-        new Item('qualityMetrics',
+        new Item(Keys.CALIDAD_QUALITY_METRICS,
             [
                 '- Casi todas esta metricas varian en cuanto al lenguaje en el que se apliquen, haciendo que sean congruentes entre si, más no iguales ',
                 '',
@@ -197,7 +197,7 @@ export const CALIDAD =
                 '<strong>- Reglas:</strong> Es una colección de logica, que permite identificar problemas potenciales y posibles soluciones ',
                 '<strong>- Resultado:</strong> Se muestra el reporte de las reglas que se infringierón ',
             ]),
-        new Item('analystQA',
+        new Item(Keys.CALIDAD_ANALYST_QA,
             [
                 '- Es una forma de asegurar la calidad de los productos y los servicios que se utilizan a diario, un analista en esta area, ',
                 ' - es el encargado de garantizar la calidad final del producto, servicio, hardware, etc.. previniendo errores y defectos ',
@@ -224,7 +224,7 @@ export const CALIDAD =
                 '- Ayuda a mejorar la calidad, el rendimiento, la seguridad y la usabilidad de los productos ',
                 '- Ayuda a mejorar la reputación de la empresa, al tener una area comprometida con la calidad y el servicio ',
             ]),
-        new Item('codeReviewPyramid',
+        new Item(Keys.CALIDAD_CODE_REVIEW_PYRAMID,
             [
                 '- Aveces en una revisión de codigo, se hace hincapie en asuntos mundados del software como ortografia, formato y estilo de codificación ',
                 '- Aspectos que en grandes niveles pierden importancia, como retrocompatibilidad, es eficaz ?, cumple con lo pactado ? ',
@@ -265,7 +265,7 @@ export const CALIDAD =
                 '- Entre más problemas se hallen en la partes bajas, mayor sera el esfuerzo para cambiarlo y/o corregirlo ',
                 '- Las parte más altas, son las más propensas a automatización ',
             ]),
-        new Item('doraAndSpaceMetrics',
+        new Item(Keys.CALIDAD_DORA_SPACE_METRICS,
             [
                 '<strong>DORA</strong> <em>DevOps Research and Assessments</em> es un conjunto de 4 metricas que evaluan el rendimiento en las entregas de software ',
                 '',
@@ -342,19 +342,26 @@ export const CALIDAD =
             [
                 '- La <em>complejidad cognitiva</em> suele ser una de las principales razones para <em>refactorizar</em> el codigo, eso incluye las instrucciones de control ',
                 '- Las instrucciones de control <strong>If</strong> y <strong>Else</strong> pueden generar un codigo complejo y dificil de mantener si se usan de manera excesiva ',
+                '- Reducir estas sentencias de control tambien puede lograr un codigo más conciso y extensible, de manera que se cumpla el principio de Open/Close ',
                 '',
                 '<strong>Strattegy Pattern:</strong> El patron de estrategia define una familia de algoritmos que puedan ser encapsulables e intercambiables ',
                 '- Este patron es util cuando existen multiples formas de realizar una tarea determinada y pueden ser abstraidas de manera generica ',
                 '',
                 '<strong>Enums:</strong> Las enumeraciones pueden ser usadas como un conjunto de constantes predefinidas, con sus respectivos comportamientos asociados ',
+                '- Permiten vincular directamente las validaciones con el estado del objeto, además de que todo estado agregado debe ser implementado obligatoriamente ',
                 '',
-                '<strong>Polimorfismo:</strong> El polimorfismo permite que un objeto se trate como instancias de diferentes tipos',
+                '<strong>Polimorfismo:</strong> El polimorfismo permite que un objeto se trate como la instancia de tipo especifico que es ',
+                '- Esta forma esta predefinida desde el tiempo de compilación, por lo que no conlleva ningun procesamiento extra en tiempo de ejecución ',
                 '',
                 '<strong>Expresiones lambda e interfaces funcionales:</strong> Cuando se trata de metodos pequeños y logica simple ',
                 '',
                 '<strong>Command Pattern:</strong> Encapsula peticiones como objetos parametrizados ',
                 '',
                 '<strong>Guard Clauses:</strong> Se cambian las condiciones de manera que se puedan tener retornos anticipados reduciendo las estructuras anidadas ',
+                '',
+                '<strong>Mapas o diccionarios:</strong> Aprovechan la separación de los datos y la logica de flujo de control, además de que toda busqueda tiene tiempo constante ',
+                '',
+                '<strong>Cadena de responsabilidad:</strong> Las reglas son independientes entre si, podiendo agregar/eliminar validaciones sin afectar el caso principal '
             ])
     ];
 
