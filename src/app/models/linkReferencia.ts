@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.PERSISTENCY_OPTIMIZE_SLOW_QUERIES_II;
+export const LAST_ITEM = Keys.COMPILACION_CALLS_AND_INVOCATION;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -275,13 +275,17 @@ export const CALIDAD_REF = new Map<string, Referencia>([
 export const COMPILACION_KEY = 'Compilacion';
 export const COMPILACION_REF = new Map<string, Referencia>([
     [Keys.COMPILACION_COMPILACION, new Referencia('https://developer.mozilla.org/es/docs/Glossary/Compile', '¿ Que es compilar ?', COMPILACION_KEY, '¿ Que es Compilar ?', '', '2025/03/19')],
-    ['nivel', new Referencia('https://desarrolloweb.com/articulos/2358.php', 'Niveles de compilación', COMPILACION_KEY, 'Niveles')],
+    [Keys.COMPILACION_NIVEL, new Referencia('https://desarrolloweb.com/articulos/2358.php', 'Niveles de compilación', COMPILACION_KEY, 'Niveles')],
     [Keys.COMPILACION_INTERPRETADOS, new Referencia('https://yosoy.dev/diferencia-entre-lenguajes-compilados-e-interpretados/', 'Tipos de lenguajes por ejecución', COMPILACION_KEY, 'Ejecución')],
-    [Keys.COMPILACION_TRANSPILACION, new Referencia('https://ingenieriadesoftware.es/diferencia-transpilacion-compilacion/', '¿ Que es la transpilación ?', COMPILACION_KEY, 'Transpilación', '', '2025/02/09').addRelatedItems(Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES)],
-    ['azucarSintactico', new Referencia('https://es.wikipedia.org/wiki/Az%C3%BAcar_sint%C3%A1ctico', 'Azucar Sintactico', COMPILACION_KEY, 'Azucar Sintactico')],
-    ['coercion', new Referencia('https://developer.mozilla.org/es/docs/Glossary/Type_coercion', 'Coerción', COMPILACION_KEY, 'Coerción')],
-    [Keys.COMPILACION_OFUSCACION, new Referencia('https://www.azulweb.net/ofuscacion-de-codigo-antipatron-o-buena-practica/', 'Ofuscación', COMPILACION_KEY, 'Ofuscación', '', '2025/08/18').addRelatedItems(Keys.META_CARACTERISTICAS_REFLEXION)],
-    ['treeShaking', new Referencia('https://developer.mozilla.org/en-US/docs/Glossary/Tree_shaking', 'TreeShaking', COMPILACION_KEY, 'Tree Shaking')],
+    [Keys.COMPILACION_TRANSPILACION, new Referencia('https://ingenieriadesoftware.es/diferencia-transpilacion-compilacion/', '¿ Que es la transpilación ?', COMPILACION_KEY, 'Transpilación', '', '2025/02/09')
+        .addRelatedItems(Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES)
+    ],
+    [Keys.COMPILACION_AZUCAR_SINTACTICO, new Referencia('https://es.wikipedia.org/wiki/Az%C3%BAcar_sint%C3%A1ctico', 'Azucar Sintactico', COMPILACION_KEY, 'Azucar Sintactico')],
+    [Keys.COMPILACION_COERCION, new Referencia('https://developer.mozilla.org/es/docs/Glossary/Type_coercion', 'Coerción', COMPILACION_KEY, 'Coerción')],
+    [Keys.COMPILACION_OFUSCACION, new Referencia('https://www.azulweb.net/ofuscacion-de-codigo-antipatron-o-buena-practica/', 'Ofuscación', COMPILACION_KEY, 'Ofuscación', '', '2025/08/18')
+        .addRelatedItems(Keys.META_CARACTERISTICAS_REFLEXION)
+    ],
+    [Keys.COMPILACION_TREE_SHAKING, new Referencia('https://developer.mozilla.org/en-US/docs/Glossary/Tree_shaking', 'TreeShaking', COMPILACION_KEY, 'Tree Shaking')],
     [Keys.COMPILACION_GRAFOS, new Referencia('https://www.grapheverywhere.com/grafos-que-son-tipos-orden-y-herramientas-de-visualizacion/', 'Grafos', COMPILACION_KEY, 'Grafos')],
     //['compilacionAnticipada', new Referencia('https://hmong.es/wiki/Ahead-of-time_compilation', 'Compilación AOT', COMPILACION_KEY, 'Compilación anticipada')],
     [Keys.COMPILACION_AOT, new Referencia('https://www.ibm.com/docs/es/sdk-java-technology/8?topic=reference-aot-compiler', 'Compilación AOT', COMPILACION_KEY, 'Compilación anticipada', '', '2024/11/23')],
@@ -291,15 +295,30 @@ export const COMPILACION_REF = new Map<string, Referencia>([
     [Keys.COMPILACION_SDK_VS_API, new Referencia('https://www.g2.com/articles/sdk', 'SDK vs API', COMPILACION_KEY, 'SDK vs API', '', '2025/01/06')],
     [Keys.COMPILACION_CASTING, new Referencia('https://www.w3schools.com/java/java_type_casting.asp', 'Casting', COMPILACION_KEY, 'Casteo de Datos')],
     [Keys.COMPILACION_VERBOSITY, new Referencia('https://softwareengineering.stackexchange.com/questions/141175/why-is-verbosity-bad-for-a-programming-language', 'Verbosidad', COMPILACION_KEY, 'Verbosidad', '2023/03/31')],
-    ['tipoLenguajeProposito', new Referencia('https://ed.team/blog/como-se-clasifican-los-lenguajes-de-programacion', 'Tipos de lenguajes por proposito', COMPILACION_KEY, 'Proposito', '2023/11/09')],
-    [Keys.COMPILACION_AUTOMATAS, new Referencia('https://medium.com/@maniakhitoccori/qu%C3%A9-es-un-aut%C3%B3mata-fbf309138755', 'Automatas', COMPILACION_KEY, 'Automatas', '2024/02/19').addRelatedItems(Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS)],
+    [Keys.COMPILACION_TIPOS_LENGUAJE_PROPOSITO, new Referencia('https://ed.team/blog/como-se-clasifican-los-lenguajes-de-programacion', 'Tipos de lenguajes por proposito', COMPILACION_KEY, 'Proposito', '2023/11/09')],
+    [Keys.COMPILACION_AUTOMATAS, new Referencia('https://medium.com/@maniakhitoccori/qu%C3%A9-es-un-aut%C3%B3mata-fbf309138755', 'Automatas', COMPILACION_KEY, 'Automatas', '2024/02/19')
+        .addRelatedItems(Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS)
+    ],
     [Keys.COMPILACION_STRUCTURE_COMPILATOR, new Referencia('https://vicente-aguilera-perez.medium.com/estructura-general-de-un-compilador-df97892f91c3', 'Estructura de un compilador I', COMPILACION_KEY, 'Estructura general I', '2024/02/28')],
     [Keys.COMPILACION_ELEMENTS_COMPILATOR, new Referencia('https://vicente-aguilera-perez.medium.com/estructura-general-de-un-compilador-df97892f91c3', 'Estructura de un compilador II', COMPILACION_KEY, 'Estructura general II', '2024/02/28')],
-    [Keys.COMPILACION_STREAMS, new Referencia('https://medium.com/javarevisited/best-practices-for-using-java-stream-f0f7585f13ba', 'Streams', COMPILACION_KEY, 'Streams', '2024/06/29').addRelatedItems(Keys.POO_INMUTABILITY)],
-    [Keys.COMPILACION_DECOMPILE, new Referencia('https://www.techtarget.com/whatis/definition/decompile', 'Descompilar', COMPILACION_KEY, 'Descompilar', '2024/07/21').addRelatedItems(Keys.ANALISIS_DATA_REVERSE_ENGINEERING)],
-    [Keys.COMPILACION_INSTRUMENTS, new Referencia('https://foojay.io/today/who-instruments-the-instrumenters/', 'Instrumentos', COMPILACION_KEY, 'Instrumentos', '2024/08/18').addRelatedItems(Keys.FRAMEWORKS_FRAMEWORKS, Keys.TESTING_MOCKS)],
-    [Keys.COMPILACION_OBJECT_CREATION, new Referencia('https://medium.com/technology-hits/minimizing-object-creation-for-high-performance-java-applications-553f9c9278c1', 'Creacion de Objetos', COMPILACION_KEY, 'Objetos', '2024/11/23').addRelatedItems(Keys.PATRONES_DESGLOSE_GOF)],
-    [Keys.COMPILACION_ERRORS_AND_EXCEPTIONS, new Referencia('https://medium.com/javarevisited/because-i-didnt-know-the-difference-between-exception-and-error-in-java-i-failed-the-interview-b44b07823f72', 'Errors & Exceptions', COMPILACION_KEY, 'Errors & Exceptions', '2025/01/06').addRelatedItems(Keys.META_CARACTERISTICAS_EXCEPTIONS, Keys.BUENAS_PRACTICAS_EXCEPTIONS)],
+    [Keys.COMPILACION_STREAMS, new Referencia('https://medium.com/javarevisited/best-practices-for-using-java-stream-f0f7585f13ba', 'Streams', COMPILACION_KEY, 'Streams', '2024/06/29')
+        .addRelatedItems(Keys.POO_INMUTABILITY)
+    ],
+    [Keys.COMPILACION_DECOMPILE, new Referencia('https://www.techtarget.com/whatis/definition/decompile', 'Descompilar', COMPILACION_KEY, 'Descompilar', '2024/07/21')
+        .addRelatedItems(Keys.ANALISIS_DATA_REVERSE_ENGINEERING)
+    ],
+    [Keys.COMPILACION_INSTRUMENTS, new Referencia('https://foojay.io/today/who-instruments-the-instrumenters/', 'Instrumentos', COMPILACION_KEY, 'Instrumentos', '2024/08/18')
+        .addRelatedItems(Keys.FRAMEWORKS_FRAMEWORKS, Keys.TESTING_MOCKS)
+    ],
+    [Keys.COMPILACION_OBJECT_CREATION, new Referencia('https://medium.com/technology-hits/minimizing-object-creation-for-high-performance-java-applications-553f9c9278c1', 'Creacion de Objetos', COMPILACION_KEY, 'Objetos', '2024/11/23')
+        .addRelatedItems(Keys.PATRONES_DESGLOSE_GOF)
+    ],
+    [Keys.COMPILACION_ERRORS_AND_EXCEPTIONS, new Referencia('https://medium.com/javarevisited/because-i-didnt-know-the-difference-between-exception-and-error-in-java-i-failed-the-interview-b44b07823f72', 'Errors & Exceptions', COMPILACION_KEY, 'Errors & Exceptions', '2025/01/06')
+        .addRelatedItems(Keys.META_CARACTERISTICAS_EXCEPTIONS, Keys.BUENAS_PRACTICAS_EXCEPTIONS)
+    ],
+    [Keys.COMPILACION_CALLS_AND_INVOCATION, new Referencia('https://msmk.university/que-es-un-call/', '¿Llamado o invocación de una función?', COMPILACION_KEY, '¿ Llamado o invocación ?', '2025/12/26')
+        .addRelatedItems(Keys.CONOCIMIENTOS_EMPIRICOS_PASTA_THEORY, Keys.POO_POO, Keys.META_CARACTERISTICAS_ARGUMENTS, Keys.META_CARACTERISTICAS_MEMORY_MANAGEMENT, Keys.META_CARACTERISTICAS_RECURSIVIDAD, Keys.META_ESTRUCTURAS_ESTRUCTURAS_DATOS_II, Keys.MALAS_PRACTICAS_CALLBACK_HELL, Keys.META_ESTRUCTURAS_SCOPE)
+    ]
 ]);
 
 export const CONOCIMIENTO_EMPIRICO_KEY = 'Empirico';
@@ -691,7 +710,9 @@ export const PARADIGMAS_REF = new Map<string, Referencia>([
     ],
     [Keys.PARADIGMAS_FUNCIONAL, new Referencia('https://codigofacilito.com/articulos/programacion-funcional', 'Paradigma funcional', PARADIGMAS_KEY, 'Funcional')],
     ['scripting', new Referencia('https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/que-son-los-lenguajes-de-scripting/', 'Lenguajes de scripting', PARADIGMAS_KEY, 'Scripting')],
-    [Keys.PARADIGMAS_REACTIVO, new Referencia('https://profile.es/blog/que-es-la-programacion-reactiva-una-introduccion/', 'Programación reactiva', PARADIGMAS_KEY, 'Reactiva', '', '2025/06/07').addRelatedItems(Keys.ANALISIS_MANIFEST_REACTIVE, Keys.MALAS_PRACTICAS_CALLBACK_HELL)],
+    [Keys.PARADIGMAS_REACTIVO, new Referencia('https://profile.es/blog/que-es-la-programacion-reactiva-una-introduccion/', 'Programación reactiva', PARADIGMAS_KEY, 'Reactiva', '', '2025/06/07')
+        .addRelatedItems(Keys.ANALISIS_MANIFEST_REACTIVE, Keys.MALAS_PRACTICAS_CALLBACK_HELL)
+    ],
     //['marcado', new Referencia('https://blog.educacionit.com/2018/12/26/diferencia-entre-lenguajes-de-scripting-lenguajes-de-marcado-y-lenguajes-de-programacion/', 'Lenguajes de marcado', PARADIGMAS_KEY)],
     ['marcado', new Referencia('https://www.ticarte.com/contenido/que-son-los-lenguajes-de-marcas', 'Lenguajes de marcado', PARADIGMAS_KEY, 'De Marcado')],
     ['aspectos', new Referencia('https://www.baeldung.com/spring-aop', 'Orientación a aspectos', PARADIGMAS_KEY, 'Aspectos')],
