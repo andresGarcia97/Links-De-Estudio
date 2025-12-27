@@ -374,31 +374,10 @@ svg.material-icons:not(:last-child) {
 
 .card.card.highlight-card span {
   color: var(--color-night);
-  margin-left: 60px;
 }
 
 .card.card.highlight-card span.no-margin {
   color: var(--color-night);
-  margin: 5px;
-}
-
-#rocket2Span {
-  margin-left: 10px;
-  margin-right: 60px;
-}
-
-svg#rocket {
-  width: 70px;
-  position: absolute;
-  left: -10px;
-  top: -26px;
-}
-
-svg#rocket2 {
-  width: 70px;
-  position: absolute;
-  right: -10px;
-  top: -26px;
 }
 
 svg circle {
@@ -805,10 +784,6 @@ button:disabled:hover {
     width: max-content;
   }
 
-  .card.card.highlight-card span {
-    margin-left: 45px;
-  }
-
   .card.card-small:not(.card.highlight-card) {
     height: 16px;
     width: 250px;
@@ -816,20 +791,6 @@ button:disabled:hover {
 
   .terminal {
     max-width: 310px;
-  }
-
-  svg#rocket {
-    width: 60px;
-    position: absolute;
-    left: -14px;
-    top: -30px;
-  }
-
-  svg#rocket2 {
-    width: 60px;
-    position: absolute;
-    right: -5px;
-    top: -31px;
   }
 
 }
@@ -851,24 +812,6 @@ button:disabled:hover {
 
   .card.highlight-card {
     width: max-content;
-  }
-
-  .card.card.highlight-card span {
-    margin-left: 30px;
-  }
-
-  svg#rocket {
-    width: 45px;
-    position: absolute;
-    left: -16px;
-    top: -31px;
-  }
-
-  svg#rocket2 {
-    width: 45px;
-    position: absolute;
-    right: -7px;
-    top: -31px;
   }
 
   .spacer {

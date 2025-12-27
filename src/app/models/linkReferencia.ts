@@ -40,6 +40,7 @@ export class LinkReferencia {
 }
 
 export const LAST_ITEM = Keys.COMPILACION_CALLS_AND_INVOCATION;
+export const LAST_UPDATE = Keys.META_ESTRUCTURAS_ESTRUCTURAS_DATOS_II;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
