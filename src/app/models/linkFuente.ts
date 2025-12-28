@@ -50,6 +50,7 @@ export const SQL = new Map([
     ['sqlAdvanced', { titulo: 'Preguntas SQL Avanzado', referencia: 'https://www.kdnuggets.com/2023/01/top-10-advanced-data-science-sql-interview-questions-must-know-answer.html?utm_source=rss&utm_medium=rss&utm_campaign=top-10-advanced-data-science-sql-interview-questions-you-must-know-how-to-answer' }],
     ['sqlPractices', { titulo: 'Buenas practicas SQL', referencia: 'https://www.metabase.com/learn/sql-questions/sql-best-practices' }],
     ['sqlRoadMap', { titulo: 'Mapa de Ruta SQL', referencia: 'https://roadmap.sh/sql' }],
+    ['SpringDataJpaTransactions', { titulo: 'Spring Data & JPA', referencia: 'https://codefarm0.medium.com/spring-data-jpa-transactions-comprehensive-questions-list-for-interviews-and-conceptual-6690e5e219ae' }],
 ]);
 
 export const DOCKER = new Map([
@@ -61,8 +62,8 @@ export const DOCKER = new Map([
 
 export const UTILS = new Map([
     ['atributosCalidad', { titulo: 'Atributos de calidad', referencia: 'https://platzi.com/tutoriales/1248-pro-arquitectura/2545-resumen-grafico-de-los-atributos-de-calidad/' }],
-    ['expresionesRegulares', { titulo: 'Expresiones regulares', referencia: 'https://regexr.com/' }],
-    ['expresionesRegularesInteractivas', { titulo: 'Expresiones regulares Interactivas', referencia: 'https://regex-vis.com/' }],
+    ['expresionesRegulares', { titulo: 'Expresiones regulares I', referencia: 'https://regexr.com/' }],
+    ['expresionesRegularesInteractivas', { titulo: 'Expresiones regulares II', referencia: 'https://regex-vis.com/' }],
     ['javascriptStandars', { titulo: 'Estandars para Javascript', referencia: 'https://github.com/airbnb/javascript#table-of-contents' }],
     ['algoritms', { titulo: 'Algoritmos', referencia: 'https://github.com/TheAlgorithms' }],
     ['devDocs', { titulo: 'Dev Docs', referencia: 'https://devdocs.io/' }],
