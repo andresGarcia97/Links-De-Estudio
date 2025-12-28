@@ -39,8 +39,8 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.COMPILACION_CALLS_AND_INVOCATION;
-export const LAST_UPDATE = Keys.META_ESTRUCTURAS_ESTRUCTURAS_DATOS_II;
+export const LAST_ITEM = Keys.FRAMEWORKS_TRANSACTIONAL_I;
+export const LAST_UPDATE = Keys.PARADIGMAS_ASPECTOS;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -418,11 +418,13 @@ export const ESTRATEGIAS_DESARROLLO_REF = new Map<string, Referencia>([
 export const FRAMEWORKS_KEY = 'Frameworks';
 export const FRAMEWORKS_REF = new Map<string, Referencia>([
     [Keys.FRAMEWORKS_FRAMEWORKS, new Referencia('https://neoattack.com/neowiki/framework/', '¿ Que es un framework ?', FRAMEWORKS_KEY, '¿ Que es un framework ?')],
-    [Keys.FRAMEWORKS_CASE, new Referencia('https://www.tutorialspoint.com/es/software_engineering/case_tools_overview.htm', 'Herramientas CASE', FRAMEWORKS_KEY, 'Herramientas CASE', '', '2025/08/02').addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_SLDC)],
+    [Keys.FRAMEWORKS_CASE, new Referencia('https://www.tutorialspoint.com/es/software_engineering/case_tools_overview.htm', 'Herramientas CASE', FRAMEWORKS_KEY, 'Herramientas CASE', '', '2025/08/02')
+        .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_SLDC)
+    ],
     [Keys.FRAMEWORKS_IOC, new Referencia('https://medium.com/all-you-need-is-clean-code/inversi%C3%B3n-de-control-principio-de-hollywood-dont-call-us-we-ll-call-you-179e9c70e3d0', 'Inversión de Control', FRAMEWORKS_KEY, 'Inversión de Control')
         .addRelatedItems(Keys.PRINCIPIOS_HOLLYWOOD, Keys.PRINCIPIOS_DIP)
     ],
-    [Keys.FRAMEWORKS_IOD, new Referencia('https://www.arquitecturajava.com/el-patron-de-inyeccion-de-dependencia/', 'Inyección de Dependencias', FRAMEWORKS_KEY, 'Inyección de Dependencias', '', '2024/06/09')
+    [Keys.FRAMEWORKS_IOD, new Referencia('https://www.arquitecturajava.com/el-patron-de-inyeccion-de-dependencia/', 'Inyección de Dependencias', FRAMEWORKS_KEY, 'Inyección Dependencias', '', '2024/06/09')
         .addRelatedItems(Keys.PRINCIPIOS_HOLLYWOOD, Keys.PRINCIPIOS_DIP)
     ],
     [Keys.FRAMEWORKS_SCAFFOLDING, new Referencia('https://medium.com/@srinathsrs104/scaffolding-54ac4e47e133', 'Creación automatica de codigo', FRAMEWORKS_KEY, 'Scaffolding', '2023/12/27', '2025/07/13')
@@ -433,6 +435,14 @@ export const FRAMEWORKS_REF = new Map<string, Referencia>([
     [Keys.FRAMEWORKS_CODE_STRUCTURE, new Referencia('https://medium.com/@akintopbas96/spring-boot-code-structure-package-by-layer-vs-package-by-feature-5331a0c911fe', 'Paquetes por capas Vs funcionalidad', FRAMEWORKS_KEY, 'Estructura, Vertical Slice', '2024/05/18', '2025/07/13')
         .addRelatedItems(Keys.META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL, Keys.POO_POO, Keys.ARQUITECTURAS_CAPAS, Keys.ESTRATEGIAS_DESARROLLO_SCREAMING_DESIGN, Keys.ARQUITECTURAS_MONOLITOS, Keys.MICROSERVICES_ARQUITECTURAS)
         .addMoreReferences('https://antondevtips.com/blog/vertical-slice-architecture-the-best-ways-to-structure-your-project', 'https://medium.com/mr-plan-publication/vertical-slice-architecture-software-architecture-part-5-102db9331d16')
+    ],
+    [Keys.FRAMEWORKS_TRANSACTIONAL_I, new Referencia('https://codefarm0.medium.com/beginners-guide-to-transactional-in-spring-boot-18a04e2a84bb', 'Spring Transactional I', FRAMEWORKS_KEY, 'Spring Transactional I', '2025/12/27')
+        .addRelatedItems(Keys.PERSISTENCY_ACID, Keys.PATRONES_PERSISTENCE_PATTERNS, Keys.META_CARACTERISTICAS_ANOTATIONS, Keys.PARADIGMAS_ASPECTOS, Keys.COMPILACION_CALLS_AND_INVOCATION, Keys.PERSISTENCY_ADVANCED_MVCC, Keys.PERSISTENCY_ADVANCED_LOCKING)
+        .addMoreReferences('https://codefarm0.medium.com/spring-transaction-internals-what-really-happens-under-the-hood-175b09a32db8', 'https://codefarm0.medium.com/deep-dive-into-transaction-propagation-and-isolation-levels-in-spring-boot-a25acd1ffd3b', 'https://medium.com/@pudarimadhavi99/the-dark-side-of-transactional-in-spring-boot-exposed-b4967c2ae166')
+    ],
+    [Keys.FRAMEWORKS_TRANSACTIONAL_II, new Referencia('https://codefarm0.medium.com/what-are-nested-transactions-in-spring-boot-while-using-transactional-1ad9957e0b9a', 'Spring Transactional II', FRAMEWORKS_KEY, 'Spring Transactional II', '2025/12/27')
+        .addRelatedItems(Keys.ANALISIS_TYPE_EVENTS, Keys.MICROSERVICES_DISTRIBUTED_TRANSACTIONS, Keys.PATRONES_PERSISTENCE_PATTERNS, Keys.META_ESTRUCTURAS_SCOPE, Keys.PERSISTENCY_CONSISTENCY, Keys.COMPILACION_ERRORS_AND_EXCEPTIONS)
+        .addMoreReferences('https://codefarm0.medium.com/top-spring-boot-transaction-interview-questions-c872fb800120', 'https://dev.to/haraf/understanding-transactioneventlistener-in-spring-boot-use-cases-real-time-examples-and-4aof', 'https://docs.spring.io/spring-framework/reference/data-access/transaction/declarative/annotations.html')
     ],
 ]);
 
@@ -719,7 +729,10 @@ export const PARADIGMAS_REF = new Map<string, Referencia>([
     ],
     //['marcado', new Referencia('https://blog.educacionit.com/2018/12/26/diferencia-entre-lenguajes-de-scripting-lenguajes-de-marcado-y-lenguajes-de-programacion/', 'Lenguajes de marcado', PARADIGMAS_KEY)],
     ['marcado', new Referencia('https://www.ticarte.com/contenido/que-son-los-lenguajes-de-marcas', 'Lenguajes de marcado', PARADIGMAS_KEY, 'De Marcado')],
-    ['aspectos', new Referencia('https://www.baeldung.com/spring-aop', 'Orientación a aspectos', PARADIGMAS_KEY, 'Aspectos')],
+    [Keys.PARADIGMAS_ASPECTOS, new Referencia('https://www.baeldung.com/spring-aop', 'Orientación a aspectos', PARADIGMAS_KEY, 'Aspectos', '', '2025/12/27')
+        .addRelatedItems(Keys.COMPILACION_CALLS_AND_INVOCATION, Keys.COMPILACION_INSTRUMENTS)
+        .addMoreReferences('https://docs.spring.io/spring-framework/reference/core/aop/introduction-defn.html')
+    ],
     ['logica', new Referencia('https://ferestrepoca.github.io/paradigmas-de-programacion/proglogica/logica_teoria/aplicaciones.html', 'Programación Logica', PARADIGMAS_KEY, 'Logica')],
     //['estructurada', new Referencia('https://informatica.uv.es/iiguia/AED/oldwww/2004_05/AED.Tema.04.pdf', 'Programación Estructurada', PARADIGMAS_KEY, 'Estructurada')],
     [Keys.PARADIGMAS_ESTRUCTURADA, new Referencia('https://webs.um.es/ldaniel/iscyp17-18/10-programacionEstructurada.html', 'Programación Estructurada', PARADIGMAS_KEY, 'Estructurada', '', '2025/04/28')],
