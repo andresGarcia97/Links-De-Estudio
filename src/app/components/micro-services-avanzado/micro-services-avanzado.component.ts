@@ -28,6 +28,7 @@ export class MicroServicesAvanzadoComponent implements OnInit {
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
     this.relatedSections.set(MALAS_PRACTICAS_KEY, routes.get(MALAS_PRACTICAS_KEY)!);
+    this.relatedSections.set(MICRO_SERVICES_KEY,  routes.get(MICRO_SERVICES_KEY)!);
     this.relatedSections.set(ARQUITECTURAS_KEY,   routes.get(ARQUITECTURAS_KEY)!);
     this.relatedSections.set(PERSISTENCY_KEY,     routes.get(PERSISTENCY_KEY)!);
     this.relatedSections.set(ANALISIS_KEY,        routes.get(ANALISIS_KEY)!);

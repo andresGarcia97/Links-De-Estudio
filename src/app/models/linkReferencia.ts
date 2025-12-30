@@ -4,42 +4,42 @@ import { Referencia } from './models';
 export class LinkReferencia {
 
     public components: Map<string, Referencia> = new Map([
-        ...AGILES_REF,           ...CONTAINERS,               ...ANALISIS_REF,       
+        ...AGILES_REF,           ...CONTAINERS,               ...ANALISIS_REF,
         ...ARQUITECTURAS_REF,    ...BUENAS_PRACTICAS_REF,     ...CALIDAD_REF,
         ...COMPILACION_REF,      ...CONOCIMIENTO_EMPIRICO,    ...ESTRATEGIAS_DESARROLLO_REF,
         ...FRAMEWORKS_REF,       ...GIT_REF,                  ...USER_HISTORIES,
         ...MALAS_PRACTICAS_REF,  ...META_CARATERISTICAS_REF,  ...META_ESTRUCTURAS_REF,
         ...METODOLOGIAS_REF,     ...NUBE_REF,                 ...ANALISIS_DATA_REF,
-        ...PARADIGMAS_REF,       ...PATRONES_REF,             ...PEOPLE_REF,  
+        ...PARADIGMAS_REF,       ...PATRONES_REF,             ...PEOPLE_REF,
         ...POO_REF,              ...TESTING_REF,              ...TESTING_ADVANCED_REF,
         ...REFACTORING_REF,      ...REQUISITOS_REF,           ...PRINCIPIOS_REF,
         ...SECURITY_REF,         ...SMELL_CODES_REF,          ...PERSISTENCY_REF,
         ...UML_REF,              ...VERSIONAMIENTO_REF,       ...HARDWARE_REF,
         ...WEB_REF,              ...LEYES_REF,                ...NEURO_MARKETING_REF,
         ...CI_CD_REF,            ...APIS_REF,                 ...PERSISTENCY_ADVANCED_REF,
-        ...MICRO_SERVICES_REF,   ...SYSTEM_DESIGN_REF,        ...MICRO_SERVICES_ADVANCED_REF  
+        ...MICRO_SERVICES_REF,   ...SYSTEM_DESIGN_REF,        ...MICRO_SERVICES_ADVANCED_REF
     ]);
 
     public routesAndSections: Map<string, string> = new Map([
         [ANALISIS_KEY, 'analisis'],     [PATRONES_KEY, 'patrones'],             [META_CARACTERISTICAS_KEY, 'metacaracteristicas'],
-        [AGILES_KEY, 'agiles'],         [PEOPLE_KEY, 'personas'],               [CONOCIMIENTO_EMPIRICO_KEY, 'conocimiento-empirico'],  
-        [UML_KEY, 'uml'],               [PERSISTENCY_KEY, 'bases-de-datos'],    [ESTRATEGIAS_DESARROLLO_KEY, 'estrategias-de-desarrollo'],                  
+        [AGILES_KEY, 'agiles'],         [PEOPLE_KEY, 'personas'],               [CONOCIMIENTO_EMPIRICO_KEY, 'conocimiento-empirico'],
+        [UML_KEY, 'uml'],               [PERSISTENCY_KEY, 'bases-de-datos'],    [ESTRATEGIAS_DESARROLLO_KEY, 'estrategias-de-desarrollo'],
         [GIT_KEY, 'git'],               [METODOLOGIAS_KEY, 'metodologias'],     [BUENAS_PRACTICAS_KEY, 'buenas-practicas'],
         [CALIDAD_KEY, 'calidad'],       [COMPILACION_KEY, 'compilacion'],       [MALAS_PRACTICAS_KEY, 'malas-practicas'],
         [LEYES_KEY, 'leyes'],           [CONTENEDORES_KEY, 'contenedores'],     [CI_CD_KEY, 'ci-cd-infraestructura'],
-        [POO_KEY, 'poo'],               [FRAMEWORKS_KEY, 'frameworks'],         [NEURO_MARKETING_KEY, 'neuro-marketing'],     
-        [WEB_KEY, 'web'],               [PRINCIPIOS_KEY, 'principios'],         [PERSISTENCY_ADVANCED_KEY, 'bd-avanzado'],   
+        [POO_KEY, 'poo'],               [FRAMEWORKS_KEY, 'frameworks'],         [NEURO_MARKETING_KEY, 'neuro-marketing'],
+        [WEB_KEY, 'web'],               [PRINCIPIOS_KEY, 'principios'],         [PERSISTENCY_ADVANCED_KEY, 'bd-avanzado'],
         [APIS_KEY, 'apis'],             [SECURITY_KEY, 'seguridad'],            [USER_HISTORIES_KEY, 'historias-de-usuario'],
-        [PARADIGMAS_KEY, 'paradigmas'], [SMELL_CODES_KEY, 'smells-codes'],      [META_ESTRUCTURAS_KEY, 'meta-estructuras'],                     
-        [HARDWARE_KEY, 'hardware'],     [REFACTORING_KEY, 'refactorizacion'],   [MICRO_SERVICES_KEY, 'microservices'],   
+        [PARADIGMAS_KEY, 'paradigmas'], [SMELL_CODES_KEY, 'smells-codes'],      [META_ESTRUCTURAS_KEY, 'meta-estructuras'],
+        [HARDWARE_KEY, 'hardware'],     [REFACTORING_KEY, 'refactorizacion'],   [MICRO_SERVICES_KEY, 'microservices'],
         [REQUISITOS_KEY, 'requisitos'], [VERSIONAMIENTO_KEY, 'versionamiento'], [TESTING_ADVANCED_KEY, 'testing-avanzado'],
-        [NUBE_KEY, 'nube'],             [ARQUITECTURAS_KEY, 'arquitecturas'],   [ANALISIS_DATA_KEY, 'analisis-datos'],                  
-        [TESTING_KEY, 'testing'],       [SYSTEM_DESIGN_KEY, 'system-design'],   [MICRO_SERVICES_ADVANCED_KEY, 'microservices-avanzado'],                                                       
+        [NUBE_KEY, 'nube'],             [ARQUITECTURAS_KEY, 'arquitecturas'],   [ANALISIS_DATA_KEY, 'analisis-datos'],
+        [TESTING_KEY, 'testing'],       [SYSTEM_DESIGN_KEY, 'system-design'],   [MICRO_SERVICES_ADVANCED_KEY, 'microservices-avanzado'],
     ]);
 
 }
 
-export const LAST_ITEM = Keys.FRAMEWORKS_TRANSACTIONAL_I;
+export const LAST_ITEM = Keys.MICROSERVICES_DATA_ACCESS_PATTERNS;
 export const LAST_UPDATE = Keys.PARADIGMAS_ASPECTOS;
 
 export const AGILES_KEY = 'Agiles';
@@ -782,7 +782,7 @@ export const PATRONES_REF = new Map<string, Referencia>([
         .addMoreReferences('https://aws.amazon.com/es/blogs/aws-spanish/entender-los-patrones-de-resiliencia-y-las-consideraciones-claves-para-arquitecturar-eficientemente-en-la-nube/')
     ],
     [Keys.PATRONES_MESSAGING, new Referencia('https://yasir.com.pk/blog/system-design/messaging/messaging-patterns-for-scalable-systems', 'Patrones Para Mensajeria', PATRONES_KEY, 'Patrones & Mensajeria', '2025/09/15')
-        .addRelatedItems(Keys.SYSTEM_DESIGN_QUEUES, Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.MICROSERVICES_ADVANCED_DEAD_LETTER_QUEUE, Keys.MICROSERVICES_EVENTS_VS_REQUEST_RESPONSE, Keys.ANALISIS_DELIVERY_GUARANTED, Keys.HARDWARE_ROUTING_MESSAGES)
+        .addRelatedItems(Keys.SYSTEM_DESIGN_QUEUES, Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.MICROSERVICES_ADVANCED_DEAD_LETTER_QUEUE, Keys.MICROSERVICES_EVENTS_VS_REQUEST_RESPONSE, Keys.ANALISIS_DELIVERY_GUARANTED, Keys.HARDWARE_ROUTING_MESSAGES, Keys.PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL)
         .addMoreReferences('https://java-design-patterns.com/patterns/fanout-fanin/')
     ],
 ]);
@@ -1348,6 +1348,9 @@ export const MICRO_SERVICES_REF = new Map<string, Referencia>([
     ],
     [Keys.MICROSERVICES_EVENTS_VS_REQUEST_RESPONSE, new Referencia('https://javascript.plainenglish.io/event-driven-architecture-vs-request-response-developer-guide-acec290f44a1', 'Basado en Eventos VS Request-Response', MICRO_SERVICES_KEY, 'Events VS Requests', '2025/06/30')
         .addRelatedItems(Keys.SYSTEM_DESIGN_SYSTEM_TYPES, Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.PATRONES_DYSTRIBUTED_SYSTEMS)
+    ],
+    [Keys.MICROSERVICES_DATA_ACCESS_PATTERNS, new Referencia('https://medium.com/@jaredhatfield/data-access-patterns-in-microservices-1e51d26ee205', 'Acceso a datos', MICRO_SERVICES_KEY, 'Acceso a datos', '2025/12/29')
+        .addRelatedItems(Keys.NUBE_LATENCY, Keys.POO_COUPLING_AND_COHESION, Keys.APIS_REST_VS_MESSAGING, Keys.VERSIONAMIENTO_VERSIONAMIENTO, Keys.PERSISTENCY_ADVANCED_SCALING_DB, Keys.ANALISIS_DATA_ETL_ELT, Keys.ANALISIS_DATA_BATCH_VS_STREAM, Keys.ANALISIS_DATA_STREAMING_VS_MESSAGING, Keys.PATRONES_MESSAGING, Keys.ANALISIS_TYPE_EVENTS, Keys.VERSIONAMIENTO_EVOLUTION_SCHEMA_AND_SCHEMA_REGISTRY)
     ],
 ]);
 

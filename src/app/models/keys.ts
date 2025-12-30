@@ -635,6 +635,7 @@ export const MICROSERVICES_PATTERNS = 'microservicesPatterns';
 export const MICROSERVICES_ESENTIAL_COMPONENTS = 'microservices-esential-components';
 export const MICROSERVICES_PUSH_PULL_EVENTS = 'push-vs-poll-events';
 export const MICROSERVICES_EVENTS_VS_REQUEST_RESPONSE = 'architectureBasedEvents-vs-requestResponse';
+export const MICROSERVICES_DATA_ACCESS_PATTERNS = 'microservices-data-access-patterns';
 export const MICROSERVICES_ADVANCED_BY_DEFAULT = 'microservicesAsDefault';
 export const MICROSERVICES_ADVANCED_ANTI_PATTERNS = 'microservicesAntipatterns';
 export const MICROSERVICES_ADVANCED_PRODUCER_CONSUMER_PROBLEM = 'producerConsumerProblem';

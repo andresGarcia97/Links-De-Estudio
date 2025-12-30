@@ -28,12 +28,13 @@ export class MicroServicesComponent implements OnInit {
   ngOnInit(): void {
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
-    this.relatedSections.set(MALAS_PRACTICAS_KEY, routes.get(MALAS_PRACTICAS_KEY)!);
-    this.relatedSections.set(ARQUITECTURAS_KEY,   routes.get(ARQUITECTURAS_KEY)!);
-    this.relatedSections.set(PERSISTENCY_KEY,     routes.get(PERSISTENCY_KEY)!);
-    this.relatedSections.set(ANALISIS_KEY,        routes.get(ANALISIS_KEY)!);
-    this.relatedSections.set(PATRONES_KEY,        routes.get(PATRONES_KEY)!);
-    this.relatedSections.set(NUBE_KEY,            routes.get(NUBE_KEY)!);
+    this.relatedSections.set(MICRO_SERVICES_ADVANCED_KEY, routes.get(MICRO_SERVICES_ADVANCED_KEY)!);
+    this.relatedSections.set(MALAS_PRACTICAS_KEY,         routes.get(MALAS_PRACTICAS_KEY)!);
+    this.relatedSections.set(ARQUITECTURAS_KEY,           routes.get(ARQUITECTURAS_KEY)!);
+    this.relatedSections.set(PERSISTENCY_KEY,             routes.get(PERSISTENCY_KEY)!);
+    this.relatedSections.set(ANALISIS_KEY,                routes.get(ANALISIS_KEY)!);
+    this.relatedSections.set(PATRONES_KEY,                routes.get(PATRONES_KEY)!);
+    this.relatedSections.set(NUBE_KEY,                    routes.get(NUBE_KEY)!);
     this.previousAndNextSection = new PreviousAndNextSection(
       NEURO_MARKETING_KEY,         routes.get(NEURO_MARKETING_KEY)!,
       MICRO_SERVICES_ADVANCED_KEY, routes.get(MICRO_SERVICES_ADVANCED_KEY)!
