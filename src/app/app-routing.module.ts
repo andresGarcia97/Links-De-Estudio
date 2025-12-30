@@ -6,7 +6,7 @@ import {
   ESTRATEGIAS_DESARROLLO_KEY, META_ESTRUCTURAS_KEY, FRAMEWORKS_KEY, GIT_KEY, HARDWARE_KEY, LEYES_KEY, MALAS_PRACTICAS_KEY,
   METODOLOGIAS_KEY, NEURO_MARKETING_KEY, NUBE_KEY, ANALISIS_DATA_KEY, PARADIGMAS_KEY, PATRONES_KEY, PEOPLE_KEY, POO_KEY,
   PRINCIPIOS_KEY, REFACTORING_KEY, REQUISITOS_KEY, SECURITY_KEY, SMELL_CODES_KEY, TESTING_ADVANCED_KEY, TESTING_KEY, UML_KEY,
-  USER_HISTORIES_KEY, VERSIONAMIENTO_KEY, WEB_KEY, MICRO_SERVICES_KEY, SYSTEM_DESIGN_KEY
+  USER_HISTORIES_KEY, VERSIONAMIENTO_KEY, WEB_KEY, MICRO_SERVICES_KEY, SYSTEM_DESIGN_KEY, MICRO_SERVICES_ADVANCED_KEY
 } from 'src/app/models/linkReferencia';
 import { GlosarioComponent } from './components/glosario/glosario.component';
 import { HomeComponent } from './components/home/home.component';
@@ -14,6 +14,7 @@ import { HomeComponent } from './components/home/home.component';
 const routes: Routes = [
 
   { path: 'system-design', loadChildren: () => import('./components/system-design/system-design.module').then(m => m.SystemsDesignModule), title: SYSTEM_DESIGN_KEY },
+  { path: 'microservices-avanzado', loadChildren: () => import('./components/micro-services-avanzado/micro-services-avanzado.module').then(m => m.MicroServicesAvanzadoModule), title: MICRO_SERVICES_ADVANCED_KEY },
   { path: 'microservices', loadChildren: () => import('./components/micro-services/micro-services.module').then(m => m.MicroServicesModule), title: MICRO_SERVICES_KEY },
   { path: 'apis', loadChildren: () => import('./components/apis-terms/apis-terms.module').then(m => m.ApisTermsModule), title: APIS_KEY },
   { path: 'ci-cd-infraestructura', loadChildren: () => import('./components/cd-ci/cd-ci.module').then(m => m.CdCiModule), title: CI_CD_KEY },
