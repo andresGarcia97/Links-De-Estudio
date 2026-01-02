@@ -648,3 +648,4 @@ export const MICROSERVICES_ADVANCED_PROBLEMS = 'microservicesProblems';
 export const MICROSERVICES_ADVANCED_ARQUITECTURE_BACK_MONOLITH = 'architecture-back-to-monoliths';
 export const MICROSERVICES_ADVANCED_DISTRIBUTED_MONOLITH = 'distributed-monolith';
 export const MICROSERVICES_ADVANCED_DISTRIBUTED_LOCKING = 'distributed-locking';
+export const MICROSERVICES_ADVANCED_PROCESSING_ARCHETYPES = 'processing-archetypes';

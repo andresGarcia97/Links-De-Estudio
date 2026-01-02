@@ -1134,7 +1134,7 @@ export const SYSTEM_DESIGN =
                 '<strong>- Bandwidth:</strong> Capacidad maxima de transferencia de datos ',
                 '',
                 '<strong>Metricas del caché</strong>',
-                '<strong>- Time To Live(TTL):</strong> Duración de los objetos en la memoria del cache y sean borrados por expiración ',
+                '<strong>- Time To Live (TTL):</strong> Duración de los objetos en la memoria del cache y sean borrados por expiración ',
                 '<strong>- Hit Rate:</strong> Porcentaje de solicitudes atendidas satisfactoriamente, entre mayor sea mejor ',
                 '<strong>- Miss Rate:</strong> complementa el Hit Rate y representan las solicitudes que van directamente a la BD ',
                 '<strong>- Eviction Rate:</strong> Frecuencia con que los objetos se borran del cache, una tasa alta es señal de politicas insuficientes ',

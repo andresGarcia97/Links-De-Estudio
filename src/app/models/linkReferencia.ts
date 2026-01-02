@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.MICROSERVICES_DATA_ACCESS_PATTERNS;
+export const LAST_ITEM = Keys.MICROSERVICES_ADVANCED_PROCESSING_ARCHETYPES;
 export const LAST_UPDATE = Keys.PARADIGMAS_ASPECTOS;
 
 export const AGILES_KEY = 'Agiles';
@@ -1393,5 +1393,8 @@ export const MICRO_SERVICES_ADVANCED_REF = new Map<string, Referencia>([
     ],
     [Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_LOCKING, new Referencia('https://codefarm0.medium.com/distributed-locking-under-the-hood-of-coordination-2ef8b039c13f', 'Bloqueo distribuido', MICRO_SERVICES_ADVANCED_KEY, 'Bloqueo distribuido', '2025/10/31')
         .addRelatedItems(Keys.PERSISTENCY_ADVANCED_LOCKING, Keys.META_CARACTERISTICAS_DEAD_LOCKS, Keys.META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM, Keys.PATRONES_DYSTRIBUTED_SYSTEMS, Keys.SYSTEM_DESIGN_COMMON_METRICS)
+    ],
+    [Keys.MICROSERVICES_ADVANCED_PROCESSING_ARCHETYPES, new Referencia('https://medium.com/@jaredhatfield/lessons-in-asynchronous-messaging-patterns-pitfalls-and-best-practices-35254b3218e8', 'Arquetipos de procesamiento de mensajes', MICRO_SERVICES_ADVANCED_KEY, 'Arquetipos Procesamiento', '2026/01/01')
+        .addRelatedItems(Keys.ANALISIS_DATA_BATCH_VS_STREAM, Keys.ANALISIS_DATA_ETL_ELT, Keys.BUENAS_PRACTICAS_AGGREGATES, Keys.PATRONES_FOR_INTEGRATION, Keys.PATRONES_MESSAGING, Keys.PATRONES_RESILIENCIA, Keys.ANALISIS_TYPE_EVENTS, Keys.SYSTEM_DESIGN_COMMON_METRICS)
     ],
 ]);
