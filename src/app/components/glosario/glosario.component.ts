@@ -55,7 +55,7 @@ export class GlosarioComponent implements OnInit {
       return { year, reads, updates, total: (reads + updates) };
     }
 
-    const years = ['2025', '2024', '2023', '2022', '2021'];
+    const years = ['2026', '2025', '2024', '2023', '2022', '2021'];
     const stats = years.map(year => getYearlyStats(componentsWithDate, year));
     console.table(stats);
 
