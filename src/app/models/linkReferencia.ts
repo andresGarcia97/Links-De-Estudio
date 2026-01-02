@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.MICROSERVICES_ADVANCED_PROCESSING_ARCHETYPES;
+export const LAST_ITEM = Keys.PERSISTENCY_ADVANCED_MIGRATIONS;
 export const LAST_UPDATE = Keys.PARADIGMAS_ASPECTOS;
 
 export const AGILES_KEY = 'Agiles';
@@ -1165,7 +1165,11 @@ export const PERSISTENCY_ADVANCED_REF = new Map<string, Referencia>([
     [Keys.PERSISTENCY_ADVANCED_SQL_ENGINE_ANATOMY, new Referencia('https://www.dolthub.com/blog/2025-04-25-sql-engine-anatomy/', 'Anatomia de un motor SQL', PERSISTENCY_ADVANCED_KEY, 'Motores SQL', '2025/07/28')
         .addRelatedItems(Keys.META_CARACTERISTICAS_RECURSIVIDAD, Keys.META_ESTRUCTURAS_SCOPE)
     ],
-    [Keys.PERSISTENCY_ADVANCED_UPSERT, new Referencia('https://www.cockroachlabs.com/blog/sql-upsert/', 'Upsert', PERSISTENCY_ADVANCED_KEY, 'Upsert', '2025/12/21')]
+    [Keys.PERSISTENCY_ADVANCED_UPSERT, new Referencia('https://www.cockroachlabs.com/blog/sql-upsert/', 'Upsert', PERSISTENCY_ADVANCED_KEY, 'Upsert', '2025/12/21')],
+    [Keys.PERSISTENCY_ADVANCED_MIGRATIONS, new Referencia('https://medium.com/@jaredhatfield/database-migration-patterns-6b5ede23d06e', 'Patrones de Migración', PERSISTENCY_ADVANCED_KEY, 'Patrones Migración', '2026/01/02')
+        .addRelatedItems(Keys.TESTING_ADVANCED_PERFORMANCE, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRANSACTIONS, Keys.ANALISIS_DATA_CHANGE_DATA_CAPTURE, Keys.ANALISIS_DATA_GOLDEN_RECORD, Keys.PATRONES_STRANGLER_FIG)
+        .addMoreReferences('https://dzone.com/articles/split-brain-in-distributed-systems', 'https://medium.com/@adkomyagin/validating-data-like-a-pro-post-migration-integrity-d06300d6bfb8')
+    ]
 ]);
 
 export const UML_KEY = 'UML';

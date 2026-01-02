@@ -327,6 +327,7 @@ export const PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL = 'consistencyEventual';
 export const PERSISTENCY_ADVANCED_DENORMALIZATION = 'denormalization';
 export const PERSISTENCY_ADVANCED_SQL_ENGINE_ANATOMY = 'sqlEngineAnatomy';
 export const PERSISTENCY_ADVANCED_UPSERT = 'upsert';
+export const PERSISTENCY_ADVANCED_MIGRATIONS = 'database-migration-patterns';
 export const REFACTORING_CLEAN_CODE = 'cleanCodeRefactoring';
 export const REFACTORING_DEUDA_TECNICA = 'deudaTecnica';
 export const REFACTORING_DEUDA_TECNICA_TYPES = 'deudaTecnicaTipos';
