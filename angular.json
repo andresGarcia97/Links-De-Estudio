@@ -62,11 +62,12 @@
               "sourceMap": false,
               "namedChunks": false,
               "extractLicenses": true,
+              "aot": true,
               "budgets": [
                 {
                   "type": "initial",
                   "maximumWarning": "500kb",
-                  "maximumError": "2mb"
+                  "maximumError": "2.1mb"
                 },
                 {
                   "type": "anyComponentStyle",

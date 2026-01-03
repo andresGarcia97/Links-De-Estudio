@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SYSTEM_DESIGN } from 'src/app/models/content/content2';
-import { ANALISIS_REF, LinkReferencia, PERSISTENCY_ADVANCED_KEY, META_CARACTERISTICAS_KEY, ANALISIS_DATA_KEY,
+import { LinkReferencia, PERSISTENCY_ADVANCED_KEY, META_CARACTERISTICAS_KEY, ANALISIS_DATA_KEY,
   ARQUITECTURAS_KEY, PERSISTENCY_KEY, REQUISITOS_KEY, PEOPLE_KEY, LEYES_KEY, CI_CD_KEY, APIS_KEY, NUBE_KEY, UML_KEY,
   USER_HISTORIES_KEY, ANALISIS_KEY, SYSTEM_DESIGN_REF } from 'src/app/models/linkReferencia';
 import { PreviousAndNextSection } from 'src/app/models/models';
