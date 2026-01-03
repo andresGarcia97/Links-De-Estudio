@@ -117,7 +117,6 @@ export const SECURITY = new Map([
 export const GIT = new Map([
     ['comandosGit', { titulo: 'Comandos GIT', referencia: 'https://www.hostinger.co/tutoriales/comandos-de-git' }],
     ['comandosGitFlow', { titulo: 'Comandos Git Flow', referencia: 'http://danielkummer.github.io/git-flow-cheatsheet/index.es_ES.html' }],
-    ['changeLog', { titulo: 'Change Log', referencia: 'https://keepachangelog.com/es-ES/1.0.0/' }],
     ['commitConventions', { titulo: 'Estructura de un commit', referencia: 'https://www.conventionalcommits.org/es/v1.0.0/' }],
     ['shitGit', { titulo: 'Reparalo con Git', referencia: 'https://ohshitgit.com/' }],
     ['aGoodReadme', { titulo: 'Haciendo un buen Readme', referencia: 'https://dev.to/merlos/how-to-write-a-good-readme-bog' }],
