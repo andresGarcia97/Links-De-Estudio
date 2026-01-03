@@ -7,7 +7,7 @@ const fuentes = new LinkFuente().fuentes;
 @Component({
     selector: 'app-fuente',
     templateUrl: './fuente.component.html',
-    standalone: false
+    standalone: true
 })
 export class FuenteComponent implements OnInit {
 

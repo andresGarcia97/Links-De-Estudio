@@ -1,4 +1,6 @@
+import { KeyValuePipe, NgFor, NgIf } from '@angular/common';
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Content1 } from 'src/app/models/content/content1';
 import { Content2 } from 'src/app/models/content/content2';
@@ -11,11 +13,19 @@ import { Content8 } from 'src/app/models/content/content8';
 import { LinkFuente } from 'src/app/models/linkFuente';
 import { LinkReferencia } from 'src/app/models/linkReferencia';
 import { Fuente, Referencia } from 'src/app/models/models';
+import { FilterPipe } from 'src/app/pipes/filter.pipe';
 
 @Component({
     selector: 'app-glosario',
     templateUrl: './glosario.component.html',
-    standalone: false
+    standalone: true,
+    imports: [
+      FormsModule,
+      NgIf,
+      NgFor,
+      KeyValuePipe,
+      FilterPipe
+  ],
 })
 export class GlosarioComponent implements OnInit {
 

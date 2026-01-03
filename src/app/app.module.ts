@@ -4,16 +4,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './components/core/core.module';
-import { GlosarioComponent } from './components/glosario/glosario.component';
-import { FilterPipe } from './pipes/filter.pipe';
-import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    GlosarioComponent,
-    FilterPipe,
-    HomeComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,

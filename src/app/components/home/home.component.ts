@@ -7,7 +7,7 @@ const references = new LinkReferencia()
 @Component({
     selector: 'app-home',
     templateUrl: './home.component.html',
-    standalone: false
+    standalone: true
 })
 export class HomeComponent {
 

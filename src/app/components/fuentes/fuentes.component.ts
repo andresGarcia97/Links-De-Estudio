@@ -1,10 +1,16 @@
+import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 import { APIS, BACK, CURIOSITIES, DOCKER, FRONT, GIT, SECURITY, SQL, TESTING, UTILS } from 'src/app/models/linkFuente';
+import { FuenteComponent } from './fuente/fuente.component';
 
 @Component({
     selector: 'app-fuentes',
     templateUrl: './fuentes.component.html',
-    standalone: false
+    standalone: true,
+    imports: [
+      NgFor,
+      FuenteComponent
+    ]
 })
 export class FuentesComponent {
 
