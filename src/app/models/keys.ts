@@ -431,6 +431,7 @@ export const GIT_MONO_REPO = 'monorepoGit';
 export const GIT_PULL_REQUESTS_TOXIC = 'pullRequestsToxic';
 export const GIT_REBASE_MERGE_SQUASH = 'rebaseMergeSquash';
 export const GIT_DEPURATION = 'depuration-on-git';
+export const GIT_ERRORS = 'errors-on-git';
 export const COMPILACION_COMPILACION = 'compilacion';
 export const COMPILACION_NIVEL = 'compilacion-nivel';
 export const COMPILACION_INTERPRETADOS = 'interprete';

@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.PERSISTENCY_ADVANCED_MIGRATIONS;
+export const LAST_ITEM = Keys.GIT_ERRORS;
 export const LAST_UPDATE = Keys.VERSIONAMIENTO_CHANGELOG;
 
 export const AGILES_KEY = 'Agiles';
@@ -160,6 +160,10 @@ export const SYSTEM_DESIGN_REF = new Map<string, Referencia>([
     [Keys.SYSTEM_DESIGN_SCALING_WRITES, new Referencia('https://medium.com/@priyasrivastava18official/system-design-pattern-scaling-writes-how-big-tech-handles-billions-of-writes-per-second-60c92d0374f2', 'Diseño de sistemas, escritura', SYSTEM_DESIGN_KEY, 'Escalar la escritura', '2025/11/17')
         .addRelatedItems(Keys.ANALISIS_DATA_STREAMING_VS_MESSAGING, Keys.PERSISTENCY_ADVANCED_SCALING_DB, Keys.ARQUITECTURAS_MISTAKES_II, Keys.META_CARACTERISTICAS_BLOCKING_AND_NO_BLOCKING, Keys.ANALISIS_DATA_GOLDEN_RECORD, Keys.PERSISTENCY_CONSISTENCY, Keys.NUBE_PACELC, Keys.ANALISIS_DATA_OLAP_OLTP, Keys.PERSISTENCY_DB_TYPES, Keys.PERSISTENCY_ADVANCED_WAL, Keys.PERSISTENCY_INDICES, Keys.ARQUITECTURAS_EVENT_DRIVEN)
         .addMoreReferences('https://medium.com/@priyasrivastava18official/system-design-pattern-scaling-reads-reads-are-the-silent-killers-of-performance-heres-the-c0a74ec46646')
+    ],
+    [Keys.SYSTEM_DESIGN_CONTENTION, new Referencia('https://medium.com/@priyasrivastava18official/system-design-patterns-the-essential-guide-to-managing-contention-in-distributed-systems-d531b2f69dea', 'Diseño de sistemas, contención', SYSTEM_DESIGN_KEY, 'Contención y step process', '2025/11/18')
+        .addRelatedItems(Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_LOCKING, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRANSACTIONS, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS)
+        .addMoreReferences('https://medium.com/@priyasrivastava18official/system-design-pattern-designing-reliable-multi-step-processes-in-distributed-systems-e22283c3ba30')
     ]
 ]);
 
@@ -469,6 +473,10 @@ export const GIT_REF = new Map<string, Referencia>([
     [Keys.GIT_DEPURATION, new Referencia('https://git-scm.com/book/es/v2/Ap%C3%A9ndice-C:-Comandos-de-Git-Depuraci%C3%B3n', 'Depuración y Historial con Git', GIT_KEY, 'Depuración/Historial', '2025/12/09')
         .addRelatedItems(Keys.BUENAS_PRACTICAS_DEBUGGING, Keys.META_ESTRUCTURAS_REGEX)
         .addMoreReferences('https://git-scm.com/book/es/v2/Ap%c3%a9ndice-C:-Comandos-de-Git-Inspecci%c3%b3n-y-Comparaci%c3%b3n')
+    ],
+    [Keys.GIT_ERRORS, new Referencia('https://medium.com/@vndpal/7-git-mistakes-even-senior-engineers-make-and-how-to-fix-them-32cbb1b2f90f', 'Errores a evitar', GIT_KEY, 'Errores en Git', '2025/01/02')
+        .addRelatedItems(Keys.VERSIONAMIENTO_CHANGELOG, Keys.CD_CI_RULES, Keys.TESTING_BUG)
+        .addMoreReferences('https://rewind.com/blog/how-to-restore-deleted-branch-commit-git-reflog/')
     ],
 ]);
 
