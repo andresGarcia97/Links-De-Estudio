@@ -841,7 +841,22 @@ export const APIS =
                 '&bull; status: El codigo HTTP generado por la ocurrencia del problema ',
                 '&bull; detail: Explicación legible para humanos, el contenido puede variar ',
                 '&bull; instance: Referencia URI que identifica el problema, proporcionando más detalles si el localizador es desreferenciable ',
-            ])
+            ]),
+        new Item(Keys.APIS_WEB_HOOK_VS_SOCKET_VS_SSE,
+            [
+                '<strong>WebSockets:</strong> Es un canal de comunicación persistente y bidireccional, permitiendo actualizaciones en tiempo real entre cliente y servidor ',
+                '- Esto es crucial para actualizaciones en tiempo de real como aplicaciones de chat y transmisiones en vivo ',
+                '- Debido a que el canal se mantiene abierto se logra una comunicación más fluida, sin la necesidad de nuevas peticiones HTTP ',
+                '',
+                '<strong>Webhook:</strong> Es una comunicación entre servidores y ocurre a modo de notificación cuando sucede un evento relevante para el receptor ',
+                '- Puede definirse como una <em>API inversa</em> debido a que es el servidor quien llama al cliente y sucede bajo acciones especificas ',
+                '- Relevante para la automatización de procesos e integraciones asincronas ',
+                '',
+                '<strong>Server Sent Events (SSE):</strong> Permite que el servidor envie eventos al cliente a traves de un canal unidireccional ',
+                '- Es más simple que un websocket y se adapta para actualizaciones en vivo o notificaciones por parte del servidor ',
+                '- Usado en dashboards, notificaciones en vivo y actualizaciones de de publicaciones '
+            ]
+        ),
     ];
 
 export const META_ESTRUCTURAS =

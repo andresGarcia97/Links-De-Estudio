@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.GIT_ERRORS;
+export const LAST_ITEM = Keys.APIS_WEB_HOOK_VS_SOCKET_VS_SSE;
 export const LAST_UPDATE = Keys.VERSIONAMIENTO_CHANGELOG;
 
 export const AGILES_KEY = 'Agiles';
@@ -686,6 +686,9 @@ export const APIS_REF = new Map<string, Referencia>([
     [Keys.APIS_ERRORS, new Referencia('https://blog.frankel.ch/problem-details-http-apis/', 'API Errors', APIS_KEY, 'API Errors', '2025/12/16')
         .addRelatedItems(Keys.BUENAS_PRACTICAS_EXCEPTIONS, Keys.META_ESTRUCTURAS_DEPRECATION)
         .addMoreReferences('https://swagger.io/blog/problem-details-rfc9457-doing-api-errors-well/')
+    ],
+    [Keys.APIS_WEB_HOOK_VS_SOCKET_VS_SSE, new Referencia('https://cristiansuarez.dev/arquitectura/sse-vs-webhooks-vs-websockets/', 'Websocket Vs Webhook Vs SSE', APIS_KEY, 'SSE, Websocket, Webhook', '2026/01/10')
+        .addRelatedItems(Keys.MICROSERVICES_EVENTS_VS_REQUEST_RESPONSE)
     ],
 ]);
 
