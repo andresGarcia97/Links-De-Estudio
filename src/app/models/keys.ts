@@ -395,6 +395,7 @@ export const SECURITY_LEAST_PRIVILEGE = 'leastPrivilege';
 export const SECURITY_AUTHENTICATION_WAYS = 'authenticationWays';
 export const SECURITY_RBAC_ABAC = 'controlDeAcceso-rbac-abac';
 export const SECURITY_CVE = 'CVE';
+export const SECURITY_ZERO_TRUST = 'zero-trust';
 export const ANALISIS_DATA_WEB_SCRAPING = 'web-scraping';
 export const ANALISIS_DATA_MVP = 'MVP';
 export const ANALISIS_DATA_TURING_COMPLETE = 'turingComplete';

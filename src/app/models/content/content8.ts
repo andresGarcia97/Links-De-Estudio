@@ -1577,7 +1577,7 @@ export const SEGURIDAD =
                 '- El servidor recibe la solicitud, y además de validar la firma de la cookie, tambien recupera la sessión correspondiente ',
                 '',
                 '<strong>Token:</strong> Es la misma que la de la sesión, solo que sin cookies y en vez del ID de la sesión, se tiene una cadena aleatoria, menos predecible ',
-                '- El usuario ingresa su usuario y contraseña, si es valida se crea la sesión y se emite una cadena aleatoria directamente relacionada, al cual se le llama Token',
+                '- El usuario ingresa su usuario y contraseña, si es valida se crea la sesión y se emite una cadena aleatoria directamente relacionada (token) ',
                 '- Seguro para sistemas escalables evitando enviar datos confidenciales de manera constante ',
                 '- El navegador almacena este Token, la cual sera necesaria enviar como encabezado en cada petición subsecuente ',
                 '- El servidor recibe la solicitud, y recupera la sessión correspondiente al token recibido, para conceder el acceso ',
@@ -1647,5 +1647,19 @@ export const SEGURIDAD =
                 '- No se incluye la información tecnica, correciones o el impacto de la vulnerabilidad, estos detalles se encuentran en otras Bases de datos aliadas ',
                 '- Los CVE no se suelen revelar tan pronto como se identifican, se mantienen en secreto hasta que el proveedor haya desarrollado y probado la correción ',
                 '- La gravedad de la vulnerabilidad se suele expresar mediante el <em>Sistema común de puntuación de vulnerabilidades</em>(CVSS) que la asigna desde 0.0 hasta 10.0 ',
+            ]),
+        new Item(Keys.SECURITY_ZERO_TRUST,
+            [
+                '<strong>Zero Trust:</strong> Es un modelo de seguridad donde la arquitectura central asume que ninguna entidad dentro o fuera de la red es fiable ',
+                '- Toda comunicación requiere una verificación estricta, siendo validada de manera activa para reducir la superficie de ataque ',
+                '- Esto incluye a personas y dispositivos por igual, el perimetro interno deja de considerarse seguro, lo que era una concepción tradicional ',
+                '- Tambien se asignan tiempos para que las conexiones establecidas se agoten periodicamente, como forma de verificación continua ',
+                '',
+                '<strong>Movimiento lateral:</strong> Una vez adentro de la red, los atacantes podian moverse con mayor libertad y su identificación se dificultaba aun más ',
+                '- Zero trust tambien microsegmenta los perimetros de seguridad en otros más pequeños, confinando las diferentes zonas y dificultando el movimiento ',
+                '',
+                '<strong>Identity Access Management (IAM):</strong> La gestión de identidades y accesos es fundamental para lograr que Zero trust sea efectiva ',
+                '- Se debe manejar un equilibrio de manera que detenga a los atacantes pero no impida el acceso de los usuarios y dispositivos legitimos ',
+                '- Tambien se suele contar con <em>Autenticación Multi Factor (MFA)</em> para mitigar el riesgo de apropiación de credenciales y sus privilegios ',
             ])
     ];

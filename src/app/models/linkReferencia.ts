@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.APIS_WEB_HOOK_VS_SOCKET_VS_SSE;
+export const LAST_ITEM = Keys.SECURITY_ZERO_TRUST;
 export const LAST_UPDATE = Keys.VERSIONAMIENTO_CHANGELOG;
 
 export const AGILES_KEY = 'Agiles';
@@ -1057,7 +1057,10 @@ export const SECURITY_REF = new Map<string, Referencia>([
         .addMoreReferences('https://blog.bytebytego.com/p/ep91-rest-api-authentication-methods', 'https://levelup.gitconnected.com/authentication-explained-when-to-use-basic-bearer-oauth2-jwt-sso-b2418c1af939')
     ],
     [Keys.SECURITY_RBAC_ABAC, new Referencia('https://www.strongdm.com/blog/rbac-vs-abac', 'Control de Acceso', SECURITY_KEY, 'Control de Acceso', '2025/01/02')],
-    [Keys.SECURITY_CVE, new Referencia('https://www.fortinet.com/lat/resources/cyberglossary/cve', 'Vulnerabilidades & Exposiciones Comunes', SECURITY_KEY, 'CVE', '2025/05/18')]
+    [Keys.SECURITY_CVE, new Referencia('https://www.fortinet.com/lat/resources/cyberglossary/cve', 'Vulnerabilidades & Exposiciones Comunes', SECURITY_KEY, 'CVE', '2025/05/18')],
+    [Keys.SECURITY_ZERO_TRUST, new Referencia('https://www.cloudflare.com/es-es/learning/security/glossary/what-is-zero-trust/', 'Zero Trust & IAM', SECURITY_KEY, 'Zero trust & IAM', '2026/01/11')
+        .addRelatedItems('https://www.entrust.com/blog/2023/10/zero-trust-iam-security')
+    ]
 ]);
 
 export const SMELL_CODES_KEY = 'Smell-Codes';
