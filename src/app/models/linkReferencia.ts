@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.SECURITY_ZERO_TRUST;
+export const LAST_ITEM = Keys.FRAMEWORKS_SPRING_ANNOTATIONS;
 export const LAST_UPDATE = Keys.VERSIONAMIENTO_CHANGELOG;
 
 export const AGILES_KEY = 'Agiles';
@@ -436,6 +436,10 @@ export const FRAMEWORKS_REF = new Map<string, Referencia>([
         .addMoreReferences('https://testmetry.com/scaffolding-in-software-testing/')
     ],
     [Keys.FRAMEWORKS_IOD_SPRING, new Referencia('https://medium.com/@priyaroul99/what-is-constructor-injection-and-why-should-you-use-it-in-spring-bdb3e1857c58', 'Inyección de Dependencias en Spring', FRAMEWORKS_KEY, 'IoD Spring', '2023/12/02')],
+    [Keys.FRAMEWORKS_SPRING_ANNOTATIONS, new Referencia('https://medium.com/@sharmapraveen91/comprehensive-guide-to-spring-annotations-under-the-hood-working-43e9570002c4', 'Anotaciones de Spring', FRAMEWORKS_KEY, 'Anotaciones de Spring', '2026/01/13')
+        .addRelatedItems(Keys.META_CARACTERISTICAS_ANOTATIONS, Keys.PATRONES_DESGLOSE_GOF, Keys.PERSISTENCY_CRUD, Keys.ARQUITECTURAS_MVC, Keys.APIS_REST_FULL, Keys.PATRONES_PERSISTENCE_PATTERNS, Keys.META_ESTRUCTURAS_LAYERS_SOFTWARE, Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION)
+        .addMoreReferences('https://www.geeksforgeeks.org/springboot/spring-boot-annotations/', 'https://www.baeldung.com/spring-qualifier-annotation')
+    ],
     [Keys.FRAMEWORKS_CODE_STRUCTURE, new Referencia('https://medium.com/@akintopbas96/spring-boot-code-structure-package-by-layer-vs-package-by-feature-5331a0c911fe', 'Paquetes por capas Vs funcionalidad', FRAMEWORKS_KEY, 'Estructura, Vertical Slice', '2024/05/18', '2025/07/13')
         .addRelatedItems(Keys.META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL, Keys.POO_POO, Keys.ARQUITECTURAS_CAPAS, Keys.ESTRATEGIAS_DESARROLLO_SCREAMING_DESIGN, Keys.ARQUITECTURAS_MONOLITOS, Keys.MICROSERVICES_ARQUITECTURAS)
         .addMoreReferences('https://antondevtips.com/blog/vertical-slice-architecture-the-best-ways-to-structure-your-project', 'https://medium.com/mr-plan-publication/vertical-slice-architecture-software-architecture-part-5-102db9331d16')
