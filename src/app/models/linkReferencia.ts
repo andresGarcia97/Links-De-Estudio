@@ -39,8 +39,8 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.FRAMEWORKS_SPRING_ANNOTATIONS;
-export const LAST_UPDATE = Keys.VERSIONAMIENTO_CHANGELOG;
+export const LAST_ITEM = Keys.SYSTEM_DESIGN_CONTENTION;
+export const LAST_UPDATE = Keys.PERSISTENCY_ACID;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -161,8 +161,8 @@ export const SYSTEM_DESIGN_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.ANALISIS_DATA_STREAMING_VS_MESSAGING, Keys.PERSISTENCY_ADVANCED_SCALING_DB, Keys.ARQUITECTURAS_MISTAKES_II, Keys.META_CARACTERISTICAS_BLOCKING_AND_NO_BLOCKING, Keys.ANALISIS_DATA_GOLDEN_RECORD, Keys.PERSISTENCY_CONSISTENCY, Keys.NUBE_PACELC, Keys.ANALISIS_DATA_OLAP_OLTP, Keys.PERSISTENCY_DB_TYPES, Keys.PERSISTENCY_ADVANCED_WAL, Keys.PERSISTENCY_INDICES, Keys.ARQUITECTURAS_EVENT_DRIVEN)
         .addMoreReferences('https://medium.com/@priyasrivastava18official/system-design-pattern-scaling-reads-reads-are-the-silent-killers-of-performance-heres-the-c0a74ec46646')
     ],
-    [Keys.SYSTEM_DESIGN_CONTENTION, new Referencia('https://medium.com/@priyasrivastava18official/system-design-patterns-the-essential-guide-to-managing-contention-in-distributed-systems-d531b2f69dea', 'Diseño de sistemas, contención', SYSTEM_DESIGN_KEY, 'Contención y step process', '2025/11/18')
-        .addRelatedItems(Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_LOCKING, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRANSACTIONS, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS)
+    [Keys.SYSTEM_DESIGN_CONTENTION, new Referencia('https://medium.com/@priyasrivastava18official/system-design-patterns-the-essential-guide-to-managing-contention-in-distributed-systems-d531b2f69dea', 'Diseño de sistemas, contención', SYSTEM_DESIGN_KEY, 'Contención y step process', '2026/01/15')
+        .addRelatedItems(Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_LOCKING, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRANSACTIONS, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.SECURITY_CONDICION_CARRERA, Keys.META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM, Keys.PERSISTENCY_ACID, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_LOCKING, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRANSACTIONS, Keys.APIS_RATE_LIMITING)
         .addMoreReferences('https://medium.com/@priyasrivastava18official/system-design-pattern-designing-reliable-multi-step-processes-in-distributed-systems-e22283c3ba30')
     ]
 ]);

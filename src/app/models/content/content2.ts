@@ -1262,6 +1262,32 @@ export const SYSTEM_DESIGN =
                 '- Fragmentar y particionar si el crecimiento exige distribución de datos ',
                 '- Colas y broker de mensajeria si existen picos impredecibles de carga y se pueda escalar de formar organizada ',
                 '- Procesamiento de lotes para operaciones predecibles y que necesites que la escritura sea eficiente '
+            ]),
+        new Item(Keys.SYSTEM_DESIGN_CONTENTION,
+            [
+                '- La contención es un desafío común en sistemas distribuidos, con recursos que son usados simultáneamente, si no se controla eficazmente ',
+                ' - puede generar problemas como condiciones de carrera, inconsistencias de datos, lecturas incorrectas y degradación del rendimiento ',
+                '- La contención se da cuando varias operaciones o procesos compiten por el mismo recurso (fila de DB, archivo, memoria, conexión de red) ',
+                '- <strong>ACID</strong> Es la base para el exito o fracaso de una transacción, pero por sí solo no es suficiente en sistemas más elaborados ',
+                '',
+                '<strong>Problemas Comunes:</strong>',
+                '<strong>- Condición de carrera:</strong> 2 o más procesos acceden a un recurso de manera concurrente y desincronizada ',
+                '<strong>- Actualización perdida:</strong> Actualizaciones de una transacción sobreescriben los cambios de otra ',
+                '<strong>- Doble reserva:</strong> Múltiples usuarios/procesos reservan el mismo elemento/recurso simultáneamente debido a falta de coordinación ',
+                '<strong>- Lectura sucia:</strong> Lectura de datos sin confirmación (commit) ',
+                '<strong>- Estado inconsistente:</strong> El sistema termina en un estado invalido o incorrecto que viola las reglas existentes ',
+                '',
+                '<strong>Soluciones comunes:</strong>',
+                '<strong>- Bloqueo pesimista:</strong> Adquiere bloqueos preventivos antes de usar el recurso, excluyendo a otros y evitando conflictos ',
+                '<strong>- Concurrencia optimista:</strong> Permite leer/escribir sin bloqueos, verificando conflictos solo cuando se confirma la operación ',
+                '<strong>- Modificar el aislamiento:</strong> Ajustar el nivel de aislamiento SQL para equilibrar rendimiento y consistencia ',
+                '<strong>- Bloqueos distribuidos:</strong> Utilizar sistemas externos para coordinar bloqueos entre nodos ',
+                '<strong>- Colas:</strong> Las colas de mensajes permiten procesar mensajes de manera secuencial ',
+                '<strong>- Patrón SAGA:</strong> Usado en transacciones distribuidas y microservicios que necesitan coordinación y acciones de compensación ',
+                '<strong>- Rate Limit:</strong> Limitación directa de la cantidad de solicitudes a procesar ',
+                '<strong>- Control de concurrencia Multiversión (MVCC):</strong> Maneja múltiples versiones de datos para lectores/escritores evitando bloqueos al leer ',
+                '<strong>- Tipos de Datos Replicados sin Conflicto (CRDT):</strong> Permite sincronización eventual entre réplicas, logrando convergencia sin coordinación central ',
+                '<strong>- Ejecuciones duraderas y flujos de trabajo:</strong> Usar checkpoints y estados persistentes para manejar procesos de larga duración que pueden detenerse/reanudarse '
             ])
     ];
 
