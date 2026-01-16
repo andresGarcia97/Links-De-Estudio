@@ -1093,7 +1093,9 @@ export const PERSISTENCY_REF = new Map<string, Referencia>([
     [Keys.PERSISTENCY_NORMALIZATION_ERRORS, new Referencia('https://medium.com/@artemkhrenov/understanding-database-normalization-from-1nf-to-bcnf-3893fac16fc9', 'Como Normalizar', PERSISTENCY_KEY, 'Como Normalizar', '2025/12/08')
         .addRelatedItems(Keys.PRINCIPIOS_STUPID, Keys.TESTING_ADVANCED_CHARGE)
     ],
-    [Keys.PERSISTENCY_ACID, new Referencia('https://dosideas.com/noticias/base-de-datos/973-acid-en-las-bases-de-datos', 'Esquema ACID', PERSISTENCY_KEY, 'ACID')],
+    [Keys.PERSISTENCY_ACID, new Referencia('https://dosideas.com/noticias/base-de-datos/973-acid-en-las-bases-de-datos', 'Esquema ACID', PERSISTENCY_KEY, 'ACID', '', '2026/01/15')
+        .addRelatedItems(Keys.FRAMEWORKS_TRANSACTIONAL_I, Keys.FRAMEWORKS_TRANSACTIONAL_II, Keys.META_CARACTERISTICAS_DEAD_LOCKS)
+    ],
     //['indices', new Referencia('https://www.ibm.com/docs/es/mam/7.6.0.8?topic=databases-database-indexing', 'Indices', PERSISTENCY_KEY, 'Indices')],
     [Keys.PERSISTENCY_INDICES, new Referencia('https://www.adesso.es/es/noticias/blog/indices-de-bases-de-datos-la-clave-para-la-optimizacion-del-rendimiento.jsp', 'Indices & Indices parciales', PERSISTENCY_KEY, 'Indices', '', '2025/12/20')
         .addRelatedItems(Keys.META_ESTRUCTURAS_ESTRUCTURAS_DATOS_II, Keys.PERSISTENCY_ADVANCED_SARGEABLE)
