@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.SYSTEM_DESIGN_CONTENTION;
+export const LAST_ITEM = Keys.SYSTEM_DESIGN_COMMON_FAILS;
 export const LAST_UPDATE = Keys.PERSISTENCY_ACID;
 
 export const AGILES_KEY = 'Agiles';
@@ -164,6 +164,9 @@ export const SYSTEM_DESIGN_REF = new Map<string, Referencia>([
     [Keys.SYSTEM_DESIGN_CONTENTION, new Referencia('https://medium.com/@priyasrivastava18official/system-design-patterns-the-essential-guide-to-managing-contention-in-distributed-systems-d531b2f69dea', 'Diseño de sistemas, contención', SYSTEM_DESIGN_KEY, 'Contención y step process', '2026/01/15')
         .addRelatedItems(Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_LOCKING, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRANSACTIONS, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.SECURITY_CONDICION_CARRERA, Keys.META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM, Keys.PERSISTENCY_ACID, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_LOCKING, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRANSACTIONS, Keys.APIS_RATE_LIMITING)
         .addMoreReferences('https://medium.com/@priyasrivastava18official/system-design-pattern-designing-reliable-multi-step-processes-in-distributed-systems-e22283c3ba30')
+    ],
+    [Keys.SYSTEM_DESIGN_COMMON_FAILS, new Referencia('https://levelup.gitconnected.com/3-am-production-fires-the-12-patterns-that-keep-breaking-everything-5f64e11b1baf', 'Fallas comunes', SYSTEM_DESIGN_KEY, 'Fallas comunes', '2026/01/18')
+        .addRelatedItems(Keys.PERSISTENCY_ADVANCED_N_1_SELECTS, Keys.META_CARACTERISTICAS_MEMORY_AND_GARBAGE, Keys.PATRONES_RESILIENCIA, Keys.META_CARACTERISTICAS_BLOCKING_AND_NO_BLOCKING, Keys.PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS, Keys.PARADIGMAS_REACTIVO, Keys.META_ESTRUCTURAS_LOGS, Keys.SECURITY_CONDICION_CARRERA, Keys.PERSISTENCY_ADVANCED_LOCKING, Keys.CD_CI_CELL_BASED_ARQUITECTURE)
     ]
 ]);
 
