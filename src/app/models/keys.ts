@@ -591,6 +591,7 @@ export const CD_CI_DEPLOYMENT_ARQUITECTURE = 'deploymentArquitecture';
 export const CD_CI_INFRAESTRUCTURE_DESIGN = 'infraestructureDesign';
 export const CD_CI_DI_RPO_RTO = 'DI-RPO-RTO';
 export const CD_CI_BAAS_RAAS_DRAAC_DRAAS = 'baas-raas-draac-draas';
+export const CD_CI_ROLLING_DEPLOYMENT = 'rolling-deployment';
 export const WEB_SEO = 'seo';
 export const WEB_SPACE = 'negativeSpace';
 export const WEB_USER_INTERFACE = 'userInterface-UI';

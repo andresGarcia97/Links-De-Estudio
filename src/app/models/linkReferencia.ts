@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.SYSTEM_DESIGN_COMMON_FAILS;
+export const LAST_ITEM = Keys.CD_CI_ROLLING_DEPLOYMENT;
 export const LAST_UPDATE = Keys.PERSISTENCY_ACID;
 
 export const AGILES_KEY = 'Agiles';
@@ -1354,6 +1354,9 @@ export const CI_CD_REF = new Map<string, Referencia>([
     [Keys.CD_CI_BAAS_RAAS_DRAAC_DRAAS, new Referencia('https://stonefly.com/blog/baas-vs-raas-vs-draas-comparison/', 'BaaS, RaaS, DRaaC, DRaaS', CI_CD_KEY, 'BaaS, RaaS, DRaaC, DRaaS', '2025/10/19')
         .addRelatedItems(Keys.NUBE_IAAS_PAAS_SAAS, Keys.NUBE_CAAS_DAAS_FAAS)
         .addMoreReferences('https://www.linkedin.com/pulse/fail-smart-codifying-disaster-recovery-dr-20-instant-resilience-tmovc/')
+    ],
+    [Keys.CD_CI_ROLLING_DEPLOYMENT, new Referencia('https://octopus.com/devops/software-deployments/rolling-deployment/', 'Rolling deployment', CI_CD_KEY, 'Rolling deployment', '2026/01/25')
+        .addRelatedItems(Keys.SYSTEM_DESIGN_SINGLE_POINT_OF_FAILURE, Keys.TESTING_ADVANCED_ENVIRONMENT, Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES)
     ],
 ]);
 
