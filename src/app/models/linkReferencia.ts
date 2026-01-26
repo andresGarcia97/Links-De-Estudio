@@ -40,7 +40,7 @@ export class LinkReferencia {
 }
 
 export const LAST_ITEM = Keys.CD_CI_ROLLING_DEPLOYMENT;
-export const LAST_UPDATE = Keys.PERSISTENCY_ACID;
+export const LAST_UPDATE = Keys.METODOLOGIAS_AGILES;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -591,7 +591,7 @@ export const META_ESTRUCTURAS_REF = new Map<string, Referencia>([
 
 export const METODOLOGIAS_KEY = 'Metodologias';
 export const METODOLOGIAS_REF = new Map<string, Referencia>([
-    [Keys.METODOLOGIAS_AGILES, new Referencia('https://www.iebschool.com/blog/que-son-metodologias-agiles-agile-scrum/', '¿ Que son las metodologias agiles ?', METODOLOGIAS_KEY, 'Agiles')],
+    [Keys.METODOLOGIAS_AGILES, new Referencia('https://www.iebschool.com/blog/que-son-metodologias-agiles-agile-scrum/', '¿ Que son las metodologias agiles ?', METODOLOGIAS_KEY, 'Agiles', '', '2026/01/25')],
     [Keys.METODOLOGIAS_SCRUM, new Referencia('https://www.iebschool.com/blog/metodologia-scrum-agile-scrum/', 'Scrum', METODOLOGIAS_KEY, 'SCRUM')],
     [Keys.METODOLOGIAS_SCRUM_PRINCIPLES, new Referencia('https://rootstack.com/es/blog/los-pilares-del-scrum-claves-para-la-gestion-de-procesos', 'Principios Scrum', METODOLOGIAS_KEY, 'Principios Scrum')],
     [Keys.METODOLOGIAS_KANBAN, new Referencia('https://www.iebschool.com/blog/metodologia-kanban-agile-scrum/', 'Kanban', METODOLOGIAS_KEY, 'Kanban', '', '2025/06/30')

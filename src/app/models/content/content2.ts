@@ -1339,12 +1339,18 @@ export const METODOLOGIAS =
     [
         new Item(Keys.METODOLOGIAS_AGILES,
             [
-                '- Las metodologias agiles buscan hacer que cualquier desarrollo sea de alta calidad, con tiempos y costos reducidos ',
-                '- Estas permiten la rapida adaptación a cualquier caracteristica del proyecto',
+                '- Las metodologias agiles buscan hacer que el desarrollo de Software sea de alta calidad, con tiempos y costos reducidos ',
+                '- La adaptación es fundamental si las condiciones cambian, no es óptimo siempre seguir el plan si este ya no es acorde a lo esperado ',
                 '- La participación de los clientes es fundamental en todo el transcurso del desarrollo',
                 '- El progreso se mide de una manera más relevante y metodica generando metricas más precisas',
-                '- Estas formas de trabajar no son marcos irrompibles pueden ser modificadas y combinadas de acuerdo a las necesidades ',
-                '- Algunas de estas son: Extreme Programing, SCRUM, Kanban, Agile Inception, Desing Sprint',
+                '- Estas formas de trabajar no son marcos irrompibles, pueden ser modificadas y combinadas de acuerdo a las necesidades ',
+                '',
+                '<strong>Extreme Programming:</strong> Son prácticas de ingeniería como Pair Programming, TDD, CI/CD, que mejoran la calidad y la comunicación entre equipo-cliente ',
+                '<strong>SCRUM:</strong> Se basa en <em>Sprints</em> iterativos que entregan incrementos funcionales de manera rápida ',
+                '<strong>Kanban:</strong> El <em>Tablero</em> debe estar disponible para todo el equipo y que siempre todos sepan qué está pendiente, en proceso, terminado ',
+                '<strong>Design Sprint:</strong> La estrategia de negocios es lo más importante, y todas las tareas y/o entregables giran alrededor de esta ',
+                '<strong>Lean:</strong> Nace de la industria automotriz y su objetivo principal es eliminar el desperdicio ',
+                '<strong>Crystal:</strong> Se adapta a las necesidades específicas de cada proyecto, menos rígida que las anteriores para evolucionar según la complejidad y tamaño '
             ]),
         new Item(Keys.METODOLOGIAS_SCRUM,
             [
