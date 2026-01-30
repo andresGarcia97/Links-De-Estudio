@@ -655,8 +655,9 @@ export const WEB =
 
 export const UML =
     [
-        new Item('uml',
+        new Item(Keys.UML_DIAGRAMS,
             [
+                '- <strong>L</strong>enguaje <strong>U</strong>niversal de <strong>M</strong>odelado',
                 '- Desarrollado para ayudar a todos los involucrados en el desarrollo y modelado de un sistema ',
                 '- Pueden servir como planos para la codificación ó como documentación despues de la etapa de desarrollo ',
                 '- El nivel de detalle que puede llegar a ser superficial ó increiblemente complejo ',

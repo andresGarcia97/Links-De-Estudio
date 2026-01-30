@@ -2024,5 +2024,18 @@ export const BASE_DE_DATOS_AVANZADO =
                 '&brvbar; Replicación Unidireccional &brvbar; Bajo (minutos) &brvbar; Media        &brvbar; Medio     &brvbar; Eventual durante réplica &brvbar; Fácil         &brvbar;',
                 '&brvbar; Replicación Bidireccional  &brvbar; Cero           &brvbar; Muy Alta     &brvbar; Muy Alto  &brvbar; Compleja (Split-Brain)   &brvbar; Muy Difícil   &brvbar;',
                 '&brvbar; Escritura Dual             &brvbar; Cero           &brvbar; Alta         &brvbar; Alto      &brvbar; Eventual (no ACID)       &brvbar; Medio         &brvbar;',
+            ]),
+        new Item(Keys.PERSISTENCY_ADVANCED_LEDGER_DATABASE,
+            [
+                '- Los sistemas Ledger existen desde hace mucho tiempo atras, siglos para ser precisos, estos <em>libros contables</em> suelen contar con las siguientes caracteristicas: ',
+                '&bull; Los datos son inmutables ',
+                '&bull; Los datos son perdurables y permanentes ',
+                '&bull; Los datos son transparentes y observables ',
+                '',
+                '- Esto permite tener a los usuarios el historial completo de los cambios, a traves del tiempo, el cual en caso de pasar algun error fatal, ',
+                ' - el saldo actual puede reconstruirse gracias a que cada acción fue guardada y  ',
+                '- En una BD normal la consistencia y la integridad de los datos se logra mediante <strong>ACID</strong>, las DB de este tipo tambien se benefician de ACID ',
+                ' - el cual auque puede cumplirlo, el enfoque de almaceamiento es diferente, las transacciones se van almacenando de manera secuencial, ',
+                ' - tal cual como suceden, sin actualizaciones de por medio y el saldo actual como en un banco siempre sera al ideal ',
             ])
     ];

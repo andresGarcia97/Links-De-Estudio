@@ -39,8 +39,8 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.CD_CI_ROLLING_DEPLOYMENT;
-export const LAST_UPDATE = Keys.METODOLOGIAS_AGILES;
+export const LAST_ITEM = Keys.PERSISTENCY_ADVANCED_LEDGER_DATABASE;
+export const LAST_UPDATE = Keys.UML_DIAGRAMS;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -1192,13 +1192,19 @@ export const PERSISTENCY_ADVANCED_REF = new Map<string, Referencia>([
     [Keys.PERSISTENCY_ADVANCED_MIGRATIONS, new Referencia('https://medium.com/@jaredhatfield/database-migration-patterns-6b5ede23d06e', 'Patrones de Migración', PERSISTENCY_ADVANCED_KEY, 'Patrones Migración', '2026/01/02')
         .addRelatedItems(Keys.TESTING_ADVANCED_PERFORMANCE, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRANSACTIONS, Keys.ANALISIS_DATA_CHANGE_DATA_CAPTURE, Keys.ANALISIS_DATA_GOLDEN_RECORD, Keys.PATRONES_STRANGLER_FIG)
         .addMoreReferences('https://dzone.com/articles/split-brain-in-distributed-systems', 'https://medium.com/@adkomyagin/validating-data-like-a-pro-post-migration-integrity-d06300d6bfb8')
-    ]
+    ],
+    [Keys.PERSISTENCY_ADVANCED_LEDGER_DATABASE, new Referencia('https://www.techtarget.com/searchcio/definition/ledger-database', 'Ledger database', PERSISTENCY_ADVANCED_KEY, 'Ledger Database', '2026/01/28')
+        .addRelatedItems(Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRANSACTIONS, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.POO_INMUTABILITY)
+        .addMoreReferences('https://atechnologistspov.com/do-i-need-a-ledger-database-what-is-it-6f3b7261238')
+    ],
 ]);
 
 export const UML_KEY = 'UML';
 export const UML_REF = new Map<string, Referencia>([
-    ['uml', new Referencia('https://diagramasuml.com/', 'Lenguaje Unificado de Modelado', UML_KEY, '¿ Que es UML ?')],
-    [Keys.UML_CLASES, new Referencia('https://diagramasuml.com/diagrama-de-clases/', 'Diagrama de clases', UML_KEY, 'De Clases', '', '2025/04/22').addRelatedItems(Keys.POO_POO, Keys.POO_COMPOSICION)],
+    [Keys.UML_DIAGRAMS, new Referencia('https://diagramasuml.com/', 'Lenguaje Unificado de Modelado', UML_KEY, '¿ Que es UML ?', '', '2026/01/28')],
+    [Keys.UML_CLASES, new Referencia('https://diagramasuml.com/diagrama-de-clases/', 'Diagrama de clases', UML_KEY, 'De Clases', '', '2025/04/28')
+        .addRelatedItems(Keys.POO_POO, Keys.POO_COMPOSICION)
+    ],
     ['componentes', new Referencia('https://diagramasuml.com/componentes/', 'Diagrama de componentes', UML_KEY, 'De Componentes')],
     ['despliegue', new Referencia('https://diagramasuml.com/despliegue/', 'Diagrama de despliegue', UML_KEY, 'De Despliegue')],
     [Keys.UML_USE_CASES, new Referencia('https://diagramasuml.com/casos-de-uso/', 'Diagrama de casos de uso', UML_KEY, 'Casos de Uso')],
