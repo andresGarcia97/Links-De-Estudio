@@ -657,11 +657,11 @@ export const UML =
     [
         new Item(Keys.UML_DIAGRAMS,
             [
-                '- <strong>L</strong>enguaje <strong>U</strong>niversal de <strong>M</strong>odelado',
                 '- Desarrollado para ayudar a todos los involucrados en el desarrollo y modelado de un sistema ',
-                '- Pueden servir como planos para la codificación ó como documentación despues de la etapa de desarrollo ',
-                '- El nivel de detalle que puede llegar a ser superficial ó increiblemente complejo ',
-                '- Es un lenguaje independiente de la plataforma de desarrollo, por lo cual depende de la capacidad de abstracción ',
+                '- Pueden servir como planos para la implementación o como documentación después de la etapa de desarrollo ',
+                '- El nivel de detalle que puede llegar a ser superficial o increíblemente detallado, depende del objetivo ',
+                '- Es independiente del lenguaje de programación y la tecnología de implementación, su efectividad depende de la capacidad de abstracción del modelador ',
+                '- Puede extenderse de acuerdo con la necesidad del dominio mediante perfiles y estereotipos especializados '
             ]),
         new Item(Keys.UML_CLASES,
             [
