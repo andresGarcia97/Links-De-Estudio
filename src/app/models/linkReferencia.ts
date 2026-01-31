@@ -1194,8 +1194,8 @@ export const PERSISTENCY_ADVANCED_REF = new Map<string, Referencia>([
         .addMoreReferences('https://dzone.com/articles/split-brain-in-distributed-systems', 'https://medium.com/@adkomyagin/validating-data-like-a-pro-post-migration-integrity-d06300d6bfb8')
     ],
     [Keys.PERSISTENCY_ADVANCED_LEDGER_DATABASE, new Referencia('https://www.techtarget.com/searchcio/definition/ledger-database', 'Ledger database', PERSISTENCY_ADVANCED_KEY, 'Ledger Database', '2026/01/28')
-        .addRelatedItems(Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRANSACTIONS, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.POO_INMUTABILITY)
-        .addMoreReferences('https://atechnologistspov.com/do-i-need-a-ledger-database-what-is-it-6f3b7261238')
+        .addRelatedItems(Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRANSACTIONS, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.POO_INMUTABILITY, Keys.META_CARACTERISTICAS_BLOCKING_AND_NO_BLOCKING)
+        .addMoreReferences('https://learn.microsoft.com/en-us/sql/relational-databases/security/ledger/ledger-append-only-ledger-tables?view=sql-server-ver17')
     ],
 ]);
 
