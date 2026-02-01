@@ -534,6 +534,7 @@ export const SYSTEM_DESIGN_SYSTEM_TYPES = 'systemTypes';
 export const SYSTEM_DESIGN_SCALING_WRITES = 'systemDesign-scaling-writes';
 export const SYSTEM_DESIGN_CONTENTION = 'systemDesign-contentions';
 export const SYSTEM_DESIGN_COMMON_FAILS = 'systemDesign-common-fails';
+export const SYSTEM_DESIGN_DATABASE_WITHOUT_LOGIC = 'systemDesign-database-with-out-logic';
 export const VERSIONAMIENTO_MANAGEMENT_VERSIONS = 'managementVersions-git';
 export const VERSIONAMIENTO_MANAGEMENT_DEPENDENCIES = 'dependencias';
 export const VERSIONAMIENTO_GRADLEW_VS_MAVEN = 'gradleVSmaven';
