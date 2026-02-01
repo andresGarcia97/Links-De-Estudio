@@ -39,8 +39,8 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.PERSISTENCY_ADVANCED_LEDGER_DATABASE;
-export const LAST_UPDATE = Keys.UML_DIAGRAMS;
+export const LAST_ITEM = Keys.SYSTEM_DESIGN_DATABASE_WITHOUT_LOGIC;
+export const LAST_UPDATE = Keys.ARQUITECTURAS_NO_HEXAGONAL;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -174,19 +174,33 @@ export const ARQUITECTURAS_KEY = 'Arquitecturas';
 export const ARQUITECTURAS_REF = new Map<string, Referencia>([
     //['definicion', new Referencia('https://cgrw01.cgr.go.cr/rup/RUP.es/SmallProjects/core.base_rup/guidances/concepts/software_architecture_4269A354.html', '¿ Que es una arquitectura ?', ARQUITECTURAS_KEY, 'Definición')],
     [Keys.ARQUITECTURAS_DEFINICION, new Referencia('https://www.gluo.mx/blog/arquitectura-de-software-que-es-y-que-tipos-hay', '¿ Que es una arquitectura ?', ARQUITECTURAS_KEY, 'Definición', '', '2024/06/17')],
-    [Keys.ARQUITECTURAS_ETAPAS_ROLES, new Referencia('https://sg.com.mx/revista/27/arquitectura-software', 'Etapas & Roles', ARQUITECTURAS_KEY, 'Etapas & Roles', '', '2025/04/13').addRelatedItems(Keys.REQUISITOS_REQUIREMENTS_ENGINEERING, Keys.VERSIONAMIENTO_DOCUMENT_ARQUITECTURE, Keys.VERSIONAMIENTO_DOCUMENTATION)],
+    [Keys.ARQUITECTURAS_ETAPAS_ROLES, new Referencia('https://sg.com.mx/revista/27/arquitectura-software', 'Etapas & Roles', ARQUITECTURAS_KEY, 'Etapas & Roles', '', '2025/04/13')
+        .addRelatedItems(Keys.REQUISITOS_REQUIREMENTS_ENGINEERING, Keys.VERSIONAMIENTO_DOCUMENT_ARQUITECTURE, Keys.VERSIONAMIENTO_DOCUMENTATION)
+    ],
     [Keys.ARQUITECTURAS_IMPORTANT_CONCEPTS, new Referencia('https://www.freecodecamp.org/news/an-introduction-to-software-architecture-patterns/', 'Conceptos de Arquitecturas', ARQUITECTURAS_KEY, 'Conceptos', '', '2025/03/06')],
-    [Keys.ARQUITECTURAS_PRINCIPLES, new Referencia('https://www.genbeta.com/desarrollo/principios-de-una-arquitectura-limpia-mantenible-y-testeable', 'Principios de las arquitecturas', ARQUITECTURAS_KEY, 'Principios', '2023/12/17', '2025/08/18').addRelatedItems(Keys.POO_COUPLING_AND_COHESION, Keys.ANALISIS_COHESERS_DECOUPLERS, Keys.PRINCIPIOS_SOLID)],
+    [Keys.ARQUITECTURAS_PRINCIPLES, new Referencia('https://www.genbeta.com/desarrollo/principios-de-una-arquitectura-limpia-mantenible-y-testeable', 'Principios de las arquitecturas', ARQUITECTURAS_KEY, 'Principios', '2023/12/17', '2025/08/18')
+        .addRelatedItems(Keys.POO_COUPLING_AND_COHESION, Keys.ANALISIS_COHESERS_DECOUPLERS, Keys.PRINCIPIOS_SOLID)
+    ],
     [Keys.ARQUITECTURAS_CLEAN, new Referencia('https://medium.com/@diego.coder/introducci%C3%B3n-a-las-clean-architectures-723fe9fe17fa', 'Arquitecturas Limpias', ARQUITECTURAS_KEY, 'Limpias')],
     //[Keys.ARQUITECTURAS_CAPAS, new Referencia('https://geeks.ms/jkpelaez/2009/05/30/arquitectura-basada-en-capas/', 'Arquitectura a Capas', ARQUITECTURAS_KEY, 'Capas')],
     //[Keys.ARQUITECTURAS_CAPAS, new Referencia('https://blog.hubspot.es/website/que-es-arquitectura-en-capas', 'Arquitectura a Capas', ARQUITECTURAS_KEY, 'Capas', '', '2025/01/12')],
-    [Keys.ARQUITECTURAS_CAPAS, new Referencia('https://learn.microsoft.com/es-es/dotnet/architecture/modern-web-apps-azure/common-web-application-architectures', 'Arquitectura a Capas', ARQUITECTURAS_KEY, 'Capas', '2025/01/12', '2025/03/26').addRelatedItems(Keys.PATRONES_PERSISTENCE_PATTERNS)],
+    [Keys.ARQUITECTURAS_CAPAS, new Referencia('https://learn.microsoft.com/es-es/dotnet/architecture/modern-web-apps-azure/common-web-application-architectures', 'Arquitectura a Capas', ARQUITECTURAS_KEY, 'Capas', '2025/01/12', '2025/03/26')
+        .addRelatedItems(Keys.PATRONES_PERSISTENCE_PATTERNS)
+    ],
     [Keys.ARQUITECTURAS_CLIENTE_SERVIDOR, new Referencia('https://desarrolloweb.com/articulos/arquitectura-cliente-servidor.html', 'Arquitectura Cliente-Servidor', ARQUITECTURAS_KEY, 'Cliente Servidor')],
-    [Keys.ARQUITECTURAS_HEXAGONAL, new Referencia('https://medium.com/@edusalguero/arquitectura-hexagonal-59834bb44b7f', 'Hexagonal', ARQUITECTURAS_KEY, 'Hexagonal', '', '2024/11/24').addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_DDD)],
-    [Keys.ARQUITECTURAS_NO_HEXAGONAL, new Referencia('https://javiervelezreyes.com/ni-nueva-ni-arquitectura-ni-hexagonal/', 'Ni Nueva, Ni Hexagonal', ARQUITECTURAS_KEY, 'Ni Nueva, Ni hexagonal')],
+    [Keys.ARQUITECTURAS_HEXAGONAL, new Referencia('https://medium.com/@edusalguero/arquitectura-hexagonal-59834bb44b7f', 'Hexagonal', ARQUITECTURAS_KEY, 'Hexagonal', '', '2024/11/24')
+        .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_DDD)
+    ],
+    //[Keys.ARQUITECTURAS_NO_HEXAGONAL, new Referencia('https://javiervelezreyes.com/ni-nueva-ni-arquitectura-ni-hexagonal/', 'Ni Nueva, Ni Hexagonal', ARQUITECTURAS_KEY, 'Ni Nueva, Ni hexagonal')],
+    [Keys.ARQUITECTURAS_NO_HEXAGONAL, new Referencia('https://javiervelezreyes.com/articulos/recortes/opinion/ni-nueva-ni-arquitectura-ni-hexagonal/', 'Ni Nueva, Ni Hexagonal', ARQUITECTURAS_KEY, 'Ni Nueva, Ni hexagonal', '', '2026/01/31')
+        .addRelatedItems(Keys.ANALISIS_COHESERS_DECOUPLERS)
+        .addMoreReferences('https://www.thoughtworks.com/insights/blog/architecture/demystify-software-architecture-patterns')
+    ],
     [Keys.ARQUITECTURAS_MVC, new Referencia('https://developer.mozilla.org/es/docs/Glossary/MVC', 'Modelo-Vista-Controlador', ARQUITECTURAS_KEY, 'MVC', '2025/03/06')],
     //['mvpMvc', new Referencia('https://www.develapps.com/es/noticias/modelo-vista-presentador-mvp-en-android', 'Modelo-Vista-Presentador', ARQUITECTURAS_KEY, 'MVP')],
-    [Keys.ARQUITECTURAS_MVP_MVC, new Referencia('https://keepcoding.io/blog/que-es-mvc-mvp-y-mvvm-en-android/', 'Modelo-Vista-Presentador', ARQUITECTURAS_KEY, 'MVP', '', '2024/06/17').addRelatedItems(Keys.META_CARACTERISTICAS_BOILER_PLATE)],
+    [Keys.ARQUITECTURAS_MVP_MVC, new Referencia('https://keepcoding.io/blog/que-es-mvc-mvp-y-mvvm-en-android/', 'Modelo-Vista-Presentador', ARQUITECTURAS_KEY, 'MVP', '', '2024/06/17')
+        .addRelatedItems(Keys.META_CARACTERISTICAS_BOILER_PLATE)
+    ],
     [Keys.ARQUITECTURAS_PATRONES_I, new Referencia('https://medium.com/@maniakhitoccori/los-10-patrones-comunes-de-arquitectura-de-software-d8b9047edf0b', 'Patrones Arquitectonicos I', ARQUITECTURAS_KEY, 'Patrones Arquitectonicos I', '2023/12/17', '2025/08/18')
         .addRelatedItems(Keys.MICROSERVICES_ARQUITECTURAS, Keys.APIS_REST_VS_MESSAGING, Keys.ANALISIS_DOMAIN_EVENTS)
     ],
@@ -197,18 +211,32 @@ export const ARQUITECTURAS_REF = new Map<string, Referencia>([
     [Keys.ARQUITECTURAS_MONOLITOS, new Referencia('https://www.paradigmadigital.com/techbiz/microservicios-vs-microlitos-vs-monolitos-ventajas-desventajas/', 'Monolitos VS Microservicios', ARQUITECTURAS_KEY, 'Monolitos')],
     //['stylesArchitecture1', new Referencia('https://hdnmetatech.com/news/our-press/detail/introduction-to-architecture-styles-and-patterns-as-a-blueprint-for-designing-a-system', 'Estilos #1', ARQUITECTURAS_KEY, 'Estilos & Patrones #1')],
     //['stylesArchitecture2', new Referencia('https://hdnmetatech.com/news/our-press/detail/introduction-to-architecture-styles-and-patterns-as-a-blueprint-for-designing-a-system', 'Estilos #2', ARQUITECTURAS_KEY, 'Estilos & Patrones #2')],
-    [Keys.ARQUITECTURAS_STYLES_I, new Referencia('https://blog.bytebytego.com/p/ep68-top-architectural-styles?open=false#%C2%A7top-architectural-styles', 'Estilos de Arquitecturas I', ARQUITECTURAS_KEY, 'Estilos & Patrones I', '', '2025/04/01').addRelatedItems(Keys.POO_POO_PILARES, Keys.MICROSERVICES_ARQUITECTURAS, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS)],
-    [Keys.ARQUITECTURAS_STYLES_II, new Referencia('https://blog.bytebytego.com/p/ep68-top-architectural-styles?open=false#%C2%A7top-architectural-styles', 'Estilos de Arquitecturas II', ARQUITECTURAS_KEY, 'Estilos & Patrones II', '', '2025/04/01').addRelatedItems(Keys.ANALISIS_DATA_ARQUITECTURE_PATTERNS, Keys.ANALISIS_DOMAIN_EVENTS)],
+    [Keys.ARQUITECTURAS_STYLES_I, new Referencia('https://blog.bytebytego.com/p/ep68-top-architectural-styles?open=false#%C2%A7top-architectural-styles', 'Estilos de Arquitecturas I', ARQUITECTURAS_KEY, 'Estilos & Patrones I', '', '2025/04/01')
+        .addRelatedItems(Keys.POO_PILARES, Keys.MICROSERVICES_ARQUITECTURAS, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS)
+    ],
+    [Keys.ARQUITECTURAS_STYLES_II, new Referencia('https://blog.bytebytego.com/p/ep68-top-architectural-styles?open=false#%C2%A7top-architectural-styles', 'Estilos de Arquitecturas II', ARQUITECTURAS_KEY, 'Estilos & Patrones II', '', '2025/04/01')
+        .addRelatedItems(Keys.ANALISIS_DATA_ARQUITECTURE_PATTERNS, Keys.ANALISIS_DOMAIN_EVENTS)
+    ],
     [Keys.ARQUITECTURAS_MODULITHS, new Referencia('https://levelup.gitconnected.com/architecture-style-modulith-vs-microservices-90c7c75713db', 'Monolitos Modulares', ARQUITECTURAS_KEY, 'Monolitos Modulares', '2024/02/02', '2025/07/13')
         .addRelatedItems(Keys.MICROSERVICES_ARQUITECTURAS, Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.SYSTEM_DESIGN_SINGLE_POINT_OF_FAILURE, Keys.POO_DESIGN_BY_CONTRACT)
         .addMoreReferences('https://medium.com/mr-plan-publication/modular-monoliths-software-architecture-part-4-3cc7fa376e58')
     ],
     [Keys.ARQUITECTURAS_DESCOMPOSICION_MODULAR, new Referencia('https://ittgweb.wordpress.com/2016/05/29/descomposicion-modular/', 'Descomposición Modular', ARQUITECTURAS_KEY, 'Descomposición', '2024/05/25')],
-    [Keys.ARQUITECTURAS_EVENT_DRIVEN, new Referencia('https://medium.com/@alxkm/java-event-driven-architecture-dc456d324ba5', 'Basada en Eventos', ARQUITECTURAS_KEY, 'Basada en Eventos', '2024/06/17').addRelatedItems(Keys.NUBE_OBSERVABILIDAD)],
-    [Keys.ARQUITECTURAS_EXPERIMENTATION, new Referencia('https://www.infoq.com/articles/architecture-experimentation/', 'Minima Arquitectura Viable', ARQUITECTURAS_KEY, 'MVA', '2025/01/12').addRelatedItems(Keys.ANALISIS_DATA_MVP, Keys.CD_CI_DEPLOYMENT_PATTERNS, Keys.NEURO_MARKETING_WHAT_IS)],
-    [Keys.ARQUITECTURAS_HOW_TO_CHOOSE_IT, new Referencia('https://appmaster.io/es/blog/como-elegir-la-arquitectura-de-software', '¿ Como escoger una Arquitectura ?', ARQUITECTURAS_KEY, '¿ Como Escogerla ?', '2025/03/25').addRelatedItems(Keys.HARDWARE_ESCALAMIENTO, Keys.MICROSERVICES_FUNDAMENTALS, Keys.NUBE_NATIVE)],
-    [Keys.ARQUITECTURAS_WHY_CLEAN, new Referencia('https://medium.com/unil-ci-software-engineering/why-clean-architecture-b84be50ea80d', '¿ Porque una Arquitectura Limpia ?', ARQUITECTURAS_KEY, '¿ Porque ?', '2025/04/13').addRelatedItems(Keys.POO_COUPLING_COMPONENTS, Keys.META_ESTRUCTURAS_SISTEMAS_COMPLEJOS, Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS, Keys.POO_POLIMORFISMO, Keys.PRINCIPIOS_SOLID, Keys.ESTRATEGIAS_DESARROLLO_DDD)],
-    [Keys.ARQUITECTURAS_MISTAKES_I, new Referencia('https://medium.com/@vndpal/7-architecture-mistakes-even-senior-engineers-make-and-how-to-fix-them-9f4086d487da', 'Errores a evitar', ARQUITECTURAS_KEY, 'Errores I', '2025/08/18').addRelatedItems(Keys.MALAS_PRACTICAS_OVER_ENGINEERING, Keys.PRINCIPIOS_KISS, Keys.MALAS_PRACTICAS_DEATH_BY_MICROSERVICES, Keys.NUBE_OBSERVABILIDAD, Keys.VERSIONAMIENTO_DOCUMENTATION, Keys.CONOCIMIENTOS_EMPIRICOS_CODE_MAINTAINER)],
+    [Keys.ARQUITECTURAS_EVENT_DRIVEN, new Referencia('https://medium.com/@alxkm/java-event-driven-architecture-dc456d324ba5', 'Basada en Eventos', ARQUITECTURAS_KEY, 'Basada en Eventos', '2024/06/17')
+        .addRelatedItems(Keys.NUBE_OBSERVABILIDAD)
+    ],
+    [Keys.ARQUITECTURAS_EXPERIMENTATION, new Referencia('https://www.infoq.com/articles/architecture-experimentation/', 'Minima Arquitectura Viable', ARQUITECTURAS_KEY, 'MVA', '2025/01/12')
+        .addRelatedItems(Keys.ANALISIS_DATA_MVP, Keys.CD_CI_DEPLOYMENT_PATTERNS, Keys.NEURO_MARKETING_WHAT_IS)
+    ],
+    [Keys.ARQUITECTURAS_HOW_TO_CHOOSE_IT, new Referencia('https://appmaster.io/es/blog/como-elegir-la-arquitectura-de-software', '¿ Como escoger una Arquitectura ?', ARQUITECTURAS_KEY, '¿ Como Escogerla ?', '2025/03/25')
+        .addRelatedItems(Keys.HARDWARE_ESCALAMIENTO, Keys.MICROSERVICES_FUNDAMENTALS, Keys.NUBE_NATIVE)
+    ],
+    [Keys.ARQUITECTURAS_WHY_CLEAN, new Referencia('https://medium.com/unil-ci-software-engineering/why-clean-architecture-b84be50ea80d', '¿ Porque una Arquitectura Limpia ?', ARQUITECTURAS_KEY, '¿ Porque ?', '2025/04/13')
+        .addRelatedItems(Keys.POO_COUPLING_COMPONENTS, Keys.META_ESTRUCTURAS_SISTEMAS_COMPLEJOS, Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS, Keys.POO_POLIMORFISMO, Keys.PRINCIPIOS_SOLID, Keys.ESTRATEGIAS_DESARROLLO_DDD)
+    ],
+    [Keys.ARQUITECTURAS_MISTAKES_I, new Referencia('https://medium.com/@vndpal/7-architecture-mistakes-even-senior-engineers-make-and-how-to-fix-them-9f4086d487da', 'Errores a evitar', ARQUITECTURAS_KEY, 'Errores I', '2025/08/18')
+        .addRelatedItems(Keys.MALAS_PRACTICAS_OVER_ENGINEERING, Keys.PRINCIPIOS_KISS, Keys.MALAS_PRACTICAS_DEATH_BY_MICROSERVICES, Keys.NUBE_OBSERVABILIDAD, Keys.VERSIONAMIENTO_DOCUMENTATION, Keys.CONOCIMIENTOS_EMPIRICOS_CODE_MAINTAINER)
+    ],
     [Keys.ARQUITECTURAS_MISTAKES_II, new Referencia('https://medium.com/@maahisoft20/10-deadly-sins-of-system-architecture-that-will-haunt-you-at-scale-841dabe54a44', 'Errores de arquitectura que emergen al escalar', ARQUITECTURAS_KEY, 'Errores II', '2025/10/08')
         .addRelatedItems(Keys.TESTING_ADVANCED_CHARGE, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_MONOLITH, Keys.PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL, Keys.PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS, Keys.NUBE_OBSERVABILIDAD, Keys.MALAS_PRACTICAS_OVER_ENGINEERING, Keys.CD_CI_STATELESS_STATEFUL, Keys.CD_CI_FAILOVER, Keys.PATRONES_RESILIENCIA, Keys.PEOPLE_PEOPLE_PROCESS_TECNOLOGY)
     ],
@@ -418,7 +446,7 @@ export const ESTRATEGIAS_DESARROLLO_REF = new Map<string, Referencia>([
     [Keys.ESTRATEGIAS_DESARROLLO_SCREAMING_DESIGN, new Referencia('https://medium.com/@mubashirhussain29/the-screaming-architecture-story-08750691291f', 'Diseño a gritos', ESTRATEGIAS_DESARROLLO_KEY, 'Gritos', '2024/05/25').addRelatedItems(Keys.META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL)],
     [Keys.ESTRATEGIAS_DESARROLLO_SLDC, new Referencia('https://www.netguru.com/blog/stages-of-software-development', 'Ciclo de Vida del Desarrollo de Software', ESTRATEGIAS_DESARROLLO_KEY, 'SLDC', '2024/06/29')],
     [Keys.ESTRATEGIAS_DESARROLLO_BFF, new Referencia('https://levelup.gitconnected.com/backend-for-frontend-bff-architecture-64fa9f316a5a', 'Backend For Frontened', ESTRATEGIAS_DESARROLLO_KEY, 'BFF', '2024/10/27').addRelatedItems(Keys.APIS_GATEWAY)],
-    [Keys.ESTRATEGIAS_DESARROLLO_DDD_MADURITY, new Referencia('https://medium.com/unil-ci-software-engineering/maturity-model-for-clean-ddd-b55c4b06efcb', 'Madurez de DDD', ESTRATEGIAS_DESARROLLO_KEY, 'Madurez de DDD', '2025/02/02').addRelatedItems(Keys.APIS_MADURITY, Keys.POO_POO_PILARES, Keys.BUENAS_PRACTICAS_DEMETER, Keys.PRINCIPIOS_SOLID, Keys.PEOPLE_LANGUAGE_UBICUOS, Keys.POO_DESIGN_BY_CONTRACT_PARTS, Keys.COMPILACION_ERRORS_AND_EXCEPTIONS)],
+    [Keys.ESTRATEGIAS_DESARROLLO_DDD_MADURITY, new Referencia('https://medium.com/unil-ci-software-engineering/maturity-model-for-clean-ddd-b55c4b06efcb', 'Madurez de DDD', ESTRATEGIAS_DESARROLLO_KEY, 'Madurez de DDD', '2025/02/02').addRelatedItems(Keys.APIS_MADURITY, Keys.POO_PILARES, Keys.BUENAS_PRACTICAS_DEMETER, Keys.PRINCIPIOS_SOLID, Keys.PEOPLE_LANGUAGE_UBICUOS, Keys.POO_DESIGN_BY_CONTRACT_PARTS, Keys.COMPILACION_ERRORS_AND_EXCEPTIONS)],
     [Keys.ESTRATEGIAS_DESARROLLO_VERTICAL, new Referencia('https://medium.com/ssense-tech/vertical-software-development-495b73f7fcdf', 'Vertical Development', ESTRATEGIAS_DESARROLLO_KEY, 'Vertical Development', '2025/06/30').addRelatedItems(Keys.METODOLOGIAS_AGILES, Keys.AGILES_MANIFEST_AGIL, Keys.AGILES_MANIFEST_PRINCIPLES_AGIL, Keys.METODOLOGIAS_SCRUM, Keys.ARQUITECTURAS_CAPAS, Keys.ARQUITECTURAS_HEXAGONAL, Keys.META_ESTRUCTURAS_LAYERS_SOFTWARE, Keys.USER_HISTORIES_PARTS, Keys.CALIDAD_CODE_REVIEWS)],
 ]);
 
@@ -517,7 +545,7 @@ export const MALAS_PRACTICAS_REF = new Map<string, Referencia>([
     [Keys.MALAS_PRACTICAS_DEATH_BY_MICROSERVICES, new Referencia('https://renegadeotter.com/2023/09/10/death-by-a-thousand-microservices.html', 'Muerte por Microservicios', MALAS_PRACTICAS_KEY, 'Muerte por Microservicios', '2023/09/14').addRelatedItems(Keys.NUBE_OBSERVABILIDAD)],
     [Keys.MALAS_PRACTICAS_ANTI_PATRONES_ARQUITECTURAS, new Referencia('https://lab.scub.net/architecture-anti-patterns-the-dark-side-of-the-architect-d9265b52d997', 'Anti patrones en Arquitecturas', MALAS_PRACTICAS_KEY, 'Contra Arquitecturas', '2024/09/07')],
     [Keys.MALAS_PRACTICAS_ANEMIC_DOMAIN, new Referencia('https://martinfowler.com/bliki/AnemicDomainModel.html', 'Dominio Anemico', MALAS_PRACTICAS_KEY, 'Dominio Anemico', '2024/05/08').addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_DDD)],
-    [Keys.MALAS_PRACTICAS_TRAIN_WECKS, new Referencia('https://www.thinkcode.se/blog/2011/12/30/how-many-train-wrecks-are-lurking-in-your-code', 'Accidentes de trenes', MALAS_PRACTICAS_KEY, 'Accidentes de trenes', '2024/05/22', '2024/10/12').addRelatedItems(Keys.BUENAS_PRACTICAS_DEMETER, Keys.POO_POO_PILARES)],
+    [Keys.MALAS_PRACTICAS_TRAIN_WECKS, new Referencia('https://www.thinkcode.se/blog/2011/12/30/how-many-train-wrecks-are-lurking-in-your-code', 'Accidentes de trenes', MALAS_PRACTICAS_KEY, 'Accidentes de trenes', '2024/05/22', '2024/10/12').addRelatedItems(Keys.BUENAS_PRACTICAS_DEMETER, Keys.POO_PILARES)],
     [Keys.MALAS_PRACTICAS_OVER_ENGINEERING, new Referencia('https://vtsen.hashnode.dev/dry-kiss-and-yagni-to-avoid-over-engineering-trap', 'Sobreingenieria', MALAS_PRACTICAS_KEY, 'Sobreingenieria', '2025/05/20').addRelatedItems(Keys.META_CARACTERISTICAS_GENERICS, Keys.POO_HERENCIA_COMPOSICION, Keys.PRINCIPIOS_SOLID, Keys.BUENAS_PRACTICAS_INDIRECTION)]
 ]);
 
@@ -846,7 +874,7 @@ export const PEOPLE_REF = new Map<string, Referencia>([
 export const POO_KEY = 'POO';
 export const POO_REF = new Map<string, Referencia>([
     [Keys.POO_POO, new Referencia('https://desarrolloweb.com/articulos/499.php', 'Programación Orientada a Objetos', POO_KEY, 'POO')],
-    [Keys.POO_POO_PILARES, new Referencia('https://www.campusmvp.es/recursos/post/los-conceptos-fundamentales-sobre-programacion-orientada-objetos-explicados-de-manera-simple.aspx', 'Pilares de POO', POO_KEY, 'Pilares POO', '', '2025/12/21')
+    [Keys.POO_PILARES, new Referencia('https://www.campusmvp.es/recursos/post/los-conceptos-fundamentales-sobre-programacion-orientada-objetos-explicados-de-manera-simple.aspx', 'Pilares de POO', POO_KEY, 'Pilares POO', '', '2025/12/21')
         .addMoreReferences('https://blog.stackademic.com/every-java-developer-claims-to-know-oop-these-6-secrets-prove-who-actually-does-ef0b64ef2166')
     ],
     [Keys.POO_COMPOSICION, new Referencia('https://www.seas.es/blog/informatica/agregacion-vs-composicion-en-diagramas-de-clases-uml/', 'Agregación & Composición', POO_KEY, 'Relaciones')],
