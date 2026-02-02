@@ -678,7 +678,7 @@ export const COMPILACION =
 
 export const CONTENEDORES =
     [
-        new Item('lxc',
+        new Item(Keys.CONTENEDORES_LXC,
             [
                 '- Los contenedores de aplicaciones en linux buscaban mejorar la asignación de recursos a los procesos por medio de una interfaz de espacio de usuario ',
                 '- Esto con el objetivo de mejorar mejorar el rendimiento de las maquinas virtuales y su uso de recursos ',
@@ -703,7 +703,7 @@ export const CONTENEDORES =
                 '- Los contenedores son entornos de ejecución completos haciendolos independientes del sistema anfitrión ',
                 '- Los servicios se pueden unir para generar aplicaciones de más complejidad y eficiencia ',
             ]),
-        new Item('images',
+        new Item(Keys.CONTENEDORES_IMAGES,
             [
                 '- Son los elementos necesarios para crear instancias de lo que se necesite ',
                 '- Estas imagenes pueden ser oficiales ó personalizadas, especificamente para nuestros requerimientos ',
@@ -717,7 +717,7 @@ export const CONTENEDORES =
                 '  - las cuales se van apilando y modificando entre si para construir algo más complejo ',
                 ' - Tambien existen herramientas automatizadas, configurables y que cumplen los estandares y especificaciones de la <strong>OCI</strong>'
             ]),
-        new Item('containers',
+        new Item(Keys.CONTENEDORES_CONTAINERS,
             [
                 '- Son las instancias de las imagenes creadas/descargadas, que se ejecutan de manera aislada',
                 '- <strong>docker ps</strong>                         Contenedores ejecutandose                                    ',
@@ -730,7 +730,7 @@ export const CONTENEDORES =
                 '- <strong>docker inspect <em>nombre_contenedor</em></strong>  Muestra la informacion completa del contenedor      ',
                 '- para estos comandos tambien se puede usar los ID de los contenedores ',
             ]),
-        new Item('volumes',
+        new Item(Keys.CONTENEDORES_VOLUMES,
             [
                 '- Un volumen es un directorio o fichero que esta asociado a un contenedor/contenedores, son independientes y no se afectan cuando se destruyen ',
                 '- Son usados para almacenar toda la información que se quiere mantener de un contenedor, debido a su naturaleza efimera ',
@@ -762,7 +762,7 @@ export const CONTENEDORES =
                 '- Igual que en un host normal, no pueden existir 2 contenedores encendidos con los mismos puertos expuestos ',
                 '<em>Host <-> Docker</em><strong> : </strong><em>Docker <-> Contenedor</em> <strong>Ejemplo:</strong> - P 8080:8080',
             ]),
-        new Item('file',
+        new Item(Keys.CONTENEDORES_FILE,
             [
                 '<strong>- FROM</strong> Indica el SO base de la imagen ',
                 '<strong>- COPY</strong> Añade archivos del directorio actual a la imagen ',
@@ -827,7 +827,7 @@ export const CONTENEDORES =
                 '',
                 '- Para ver otras opciones o conseguir los enlaces oficiales de cada tecnologia, puedes seguir leyendo el articulo original ',
             ]),
-        new Item('openContainer',
+        new Item(Keys.CONTENEDORES_OPEN_CONTAINER,
             [
                 '- Es una proyecto de gobernanza abierta y liviana, formada bajo el auspicio de la Fundación Linux ',
                 '- Fue creada en el 2015 por Docker, CoreOs y otros lideres en la industria de contenedores ',
@@ -837,11 +837,11 @@ export const CONTENEDORES =
                 '- Especificación de las imagenes <strong>(image-spec)</strong>',
                 '- Especificación de distribución <strong>(distribution-spec)</strong>',
                 '',
-                '- La especificación de tiempo de ejecución describe como ejecutar un "paquete de sistema de archivos" presente en el disco, ',
+                '- La especificación de tiempo de ejecución describe como ejecutar un <em>"paquete de sistema de archivos"</em> presente en el disco, ',
                 ' - otra implementación descargaria la imagen, se desempaqueta para ser ejecutado, sin argumentos o procesos adicionales para cada paso ',
                 '',
                 '- Para que las UX el formato de la OCI contiene suficientes especificaciones para usar comandos, variables de entorno, argumentos, etc ',
-                '- Para las imagenes construidas, se encuentra generamente un manifiesto de la imagen, las capas, y la configuración ',
+                '- Para las imagenes construidas, se encuentra generalmente un manifiesto de la imagen, las capas, y la configuración ',
                 '- Para el ambiente de ejecución, Docker dono su formato de contenedores y su ejecución, para que sirviera como base ',
                 '',
                 '- Para encontrar los links originales a cada especificación, ademas de otros datos y la comunidad del proyecto, puede revisar la fuente ',
@@ -891,6 +891,36 @@ export const CONTENEDORES =
                 '&bull; Reduce la superficie para ser atacada haciendola más segura ante escaneos de vulnerabilidades, pero no son invulnerables ',
                 '&bull; El consumo de recursos se reduce, ya que se enfoca en solo lo que necesita la imagen, sin ningun complemento adicional ',
                 '&bull; Generalmente solo son una distribución Linux increiblemente reducida, sin administradores de paquetes, la Shell, ó otros componentes tipicos ',
+            ]),
+        new Item(Keys.CONTENEDORES_RUNTIME,
+            [
+                '- La ejecución de un contenedor es un tema avanzado y no siempre es necesario dominarlo, por eso entornos de ejecución como <em>containerd</em> ya se encargan ',
+                '- Un componente clave de esta robustez es el uso predeterminado de entornos de ejecución compatibles con la <em>Open Container Initiative</em> ',
+                '- Es una capa de abstracción que gestiona espacios de nombres, grupos de control, sistema de archivos, red y más ',
+                '- Gestionan de manera eficiente el ciclo de vida de los contenedores, como la creación, inicio, detención, eliminación ',
+                '- Esta separación permite modularidad y flexibilidad de manera que sea compatible con multiples tecnologias, aunque sean de stacks diferentes ',
+                '',
+                '<strong>Dockerd (Docker Daemon):</strong> Es el demonio de Docker responsable de la administración (contenedores, imágenes, volúmenes, redes, etc. )',
+                '- Docker se basa en containerd para crear una experiencia de desarrollo cohesiva y crear una cadena completa de herramientas, creación y ejecución ',
+                ' - (Docker Desktop, Docker CLI, Docker Compose), pruebas (Testcontainers), verificación (Docker Scout, Docker Hub), compartir (Docker Registry), etc. ',
+                '',
+                '<strong>containerd:</strong> Es un runtime de código abierto y se basa en las características del kernel del SO ',
+                '- En 2017 Docker donó su entorno de ejecución principal a la CNCF, para 2019 <em>containerd</em> había alcanzado gran madurez con un gran apoyo de la comunidad ',
+                '- Actualmente es reconocido como el runtime estándar de la industria, siendo escalable, estable y con un gran rendimiento ',
+                '- Es ligero y se especializa en la funcionalidad principal de la ejecución, permitiendo el acceso de bajo nivel a los contenedores si es necesario ',
+                '',
+                '<strong>Container Runtime Interface (CRI):</strong> Define una interfaz estándar que Kubernetes utiliza para comunicarse con los runtime de los contenedores ',
+                '',
+                '<strong>CRI-O:</strong> Desarrollado por Red Hat, Intel e IBM principalmente, es un runtime open source y ligero frente a otras alternativas, como Docker ',
+                '- Directamente diseñado para ser un runtime <em>CRI</em>, sin las funcionalidades adicionales que containerd ofrece más allá del runtime básico',
+                '',
+                '<strong>Kubernetes:</strong> Esta separación también permite que se usen otros tipos de runtime, más ligeros de acuerdo a las necesidades de la nube ',
+                '- Kubernetes no necesitaba todas las funcionalidades que ofrece Docker, por eso desde Kubernetes 1.10 (2018) se puede usar containerd y ',
+                ' - desde Kubernetes 1.20 (2020) el soporte para Docker Engine (dockershim) se deprecó y eliminó, además de permitir otros runtime ',
+                '- Docker Engine es una plataforma completa muy útil para el desarrollo, pero cuando solo se necesita el runtime, ',
+                ' - partes como redes, volúmenes, la CLI, solo aumentaban la superficie de ataque ',
+                '',
+                '- También existen runtimes OCI de bajo nivel como <strong>runc</strong> (runtime de referencia de OCI) y alternativas como <strong>gVisor</strong> (runtime con sandboxing adicional) ',
             ])
     ];
 

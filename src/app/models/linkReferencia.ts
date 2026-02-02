@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.SYSTEM_DESIGN_DATABASE_WITHOUT_LOGIC;
+export const LAST_ITEM = Keys.CONTENEDORES_RUNTIME;
 export const LAST_UPDATE = Keys.ARQUITECTURAS_NO_HEXAGONAL;
 
 export const AGILES_KEY = 'Agiles';
@@ -419,22 +419,30 @@ export const LEYES_REF = new Map<string, Referencia>([
 export const CONTENEDORES_KEY = 'Contenedores';
 export const CONTAINERS = new Map<string, Referencia>([
     //['lxc', new Referencia('https://www.section.io/engineering-education/lxc-vs-docker-what-is-the-difference-and-why-docker-is-better/', 'Linux Containers', CONTENEDORES_KEY, 'Linux Containers')],
-    ['lxc', new Referencia('https://earthly.dev/blog/lxc-vs-docker/', 'Linux Containers', CONTENEDORES_KEY, 'Linux Containers', '', '2024/04/06')],
+    [Keys.CONTENEDORES_LXC, new Referencia('https://earthly.dev/blog/lxc-vs-docker/', 'Linux Containers', CONTENEDORES_KEY, 'Linux Containers', '', '2024/04/06')],
     [Keys.CONTENEDORES_DOCKER, new Referencia('https://www.xataka.com/otros/docker-a-kubernetes-entendiendo-que-contenedores-que-mayores-revoluciones-industria-desarrollo', '¿ Que es Docker ?', CONTENEDORES_KEY, 'Docker')],
-    ['images', new Referencia('https://clouding.io/hc/es/articles/360010283060-Trabajando-con-im%C3%A1genes-en-Docker', '¿ Que es una imagen ?', CONTENEDORES_KEY, 'Imagenes')],
-    ['containers', new Referencia('https://aulasoftwarelibre.github.io/taller-de-docker/containers/', '¿ Que es un contenedor ?', CONTENEDORES_KEY, 'Contenedores')],
-    ['volumes', new Referencia('https://www.josedomingo.org/pledin/2016/05/gestion-del-almacenamiento-en-docker', '¿ Que es un volumen ?', CONTENEDORES_KEY, 'Volumenes')],
+    [Keys.CONTENEDORES_IMAGES, new Referencia('https://clouding.io/hc/es/articles/360010283060-Trabajando-con-im%C3%A1genes-en-Docker', '¿ Que es una imagen ?', CONTENEDORES_KEY, 'Imagenes')],
+    [Keys.CONTENEDORES_CONTAINERS, new Referencia('https://aulasoftwarelibre.github.io/taller-de-docker/containers/', '¿ Que es un contenedor ?', CONTENEDORES_KEY, 'Contenedores')],
+    [Keys.CONTENEDORES_VOLUMES, new Referencia('https://www.josedomingo.org/pledin/2016/05/gestion-del-almacenamiento-en-docker', '¿ Que es un volumen ?', CONTENEDORES_KEY, 'Volumenes')],
     //['network', new Referencia('https://dockertips.com/algo_sobre_redes', 'Manejo de redes en Docker', CONTENEDORES_KEY, 'Redes')],
     [Keys.CONTENEDORES_REDES, new Referencia('https://docs.docker.com/network/', 'Redes en Docker', CONTENEDORES_KEY, 'Redes', '2024/04/06', '2025/03/09')],
-    ['file', new Referencia('https://docs.docker.com/develop/develop-images/dockerfile_best-practices/', 'Construcción de imagenes', CONTENEDORES_KEY, 'Docker File')],
+    [Keys.CONTENEDORES_FILE, new Referencia('https://docs.docker.com/develop/develop-images/dockerfile_best-practices/', 'Construcción de imagenes', CONTENEDORES_KEY, 'Docker File')],
     //['compose', new Referencia('https://dockertips.com/utilizando-docker-compose#:~:text=Docker%20Compose%20es%20una%20herramienta%20que%20permite%20simplificar%20el%20uso%20de%20Docker.&text=En%20vez%20de%20utilizar%20Docker,Engine%20a%20realizar%20tareas%2C%20programaticamente', 'Manejo del docker-compose', CONTENEDORES_KEY, 'Docker Compose')],
     [Keys.CONTENEDORES_DOCKER_COMPOSE, new Referencia('https://docs.docker.com/compose/intro/features-uses/', 'Orquestación con Docker Compose', CONTENEDORES_KEY, 'Docker Compose', '2024/04/06', '2025/03/10')],
-    [Keys.CONTENEDORES_KUBERNETES, new Referencia('https://kubernetes.io/es/docs/concepts/overview/what-is-kubernetes/', 'Kubernetes', CONTENEDORES_KEY, 'Kubernetes', '', '2025/04/02').addRelatedItems(Keys.NUBE_IAAS_PAAS_SAAS)],
+    [Keys.CONTENEDORES_KUBERNETES, new Referencia('https://kubernetes.io/es/docs/concepts/overview/what-is-kubernetes/', 'Kubernetes', CONTENEDORES_KEY, 'Kubernetes', '', '2025/04/02')
+        .addRelatedItems(Keys.NUBE_IAAS_PAAS_SAAS)
+    ],
     [Keys.CONTENEDORES_ORCHESTRATION, new Referencia('https://geekflare.com/container-orchestration-software/', 'Orquestación', CONTENEDORES_KEY, 'Orquestación', '2023/07/07')],
-    ['openContainer', new Referencia('https://opencontainers.org/about/overview/', 'Open Container Initiative', CONTENEDORES_KEY, 'Open Container Initiative', '2023/07/16')],
+    [Keys.CONTENEDORES_OPEN_CONTAINER, new Referencia('https://opencontainers.org/about/overview/', 'Open Container Initiative', CONTENEDORES_KEY, 'Open Container Initiative', '2023/07/16')],
     [Keys.CONTENEDORES_SECURE_ORCHESTRATION, new Referencia('https://levelup.gitconnected.com/docker-vs-podman-a-new-era-in-secure-orchestration-957ea2123098', 'Seguridad en Orquestación', CONTENEDORES_KEY, 'Seguridad', '2024/05/25')],
     [Keys.CONTENEDORES_ARQUITECTURE, new Referencia('https://medium.com/@dmosyan/deep-dive-into-docker-containers-architecture-and-features-530a937f4c87', 'Arquitectura en Docker', CONTENEDORES_KEY, 'Arquitectura', '2024/08/04')],
-    [Keys.CONTENEDORES_IMAGES_DISTROLESS, new Referencia('https://bell-sw.com/blog/distroless-containers-for-security-and-size/', 'Imagenes Distroless', CONTENEDORES_KEY, 'Distroless', '2025/05/15').addRelatedItems(Keys.META_CARACTERISTICAS_MEMORY_MANAGEMENT, Keys.HARDWARE_VIRTUAL_MACHINES_VS_CONTAINERS)],
+    [Keys.CONTENEDORES_IMAGES_DISTROLESS, new Referencia('https://bell-sw.com/blog/distroless-containers-for-security-and-size/', 'Imagenes Distroless', CONTENEDORES_KEY, 'Distroless', '2025/05/15')
+        .addRelatedItems(Keys.META_CARACTERISTICAS_MEMORY_MANAGEMENT, Keys.HARDWARE_VIRTUAL_MACHINES_VS_CONTAINERS)
+    ],
+    [Keys.CONTENEDORES_RUNTIME, new Referencia('https://www.docker.com/blog/containerd-vs-docker/', 'Ejecución de contenedores', CONTENEDORES_KEY, 'Runtime', '2026/02/01')
+        .addRelatedItems(Keys.HARDWARE_OPERATIVE_SYSTEM, Keys.HARDWARE_CLI, Keys.VERSIONAMIENTO_LICENSES)
+        .addMoreReferences('https://galvarado.com.mx/post/container-runtimes/', 'https://kubernetes.io/blog/2018/05/24/kubernetes-containerd-integration-goes-ga/')
+    ],
 ]);
 
 export const ESTRATEGIAS_DESARROLLO_KEY = 'Estrategias-Desarrollo';
