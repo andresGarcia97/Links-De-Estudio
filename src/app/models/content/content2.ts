@@ -1400,7 +1400,7 @@ export const SYSTEM_DESIGN =
                 '- Si se considera que este cambio es improbable o requiere demasiada inversión, no tema en aprovechar las características especiales de cada DB ',
                 '',
                 '<strong>Testing</strong>',
-                '- La testeabilidad no es un tema se abordara con frecuencia en las discusiones de diseño, pero desde el nacimiento de las <em>metodologias agiles</em> y <strong>TDD</strong> ',
+                '- La testeabilidad no es un tema que se aborda con frecuencia en las discusiones de diseño, pero desde el nacimiento de las <em>metodologias agiles</em> y <strong>TDD</strong> ',
                 ' - cada vez se tiene más en cuenta para todas las etapas del desarrollo del software ',
                 '- Generalmente el SQL no se suele probar, aun teniendo herramientas que logran generar un entorno comprobable ',
                 '- Probar la lógica en memoria suele ser mucho más eficiente, mediante tests unitarios, sin necesidad de tests de integración como si los requiere SQL ',
