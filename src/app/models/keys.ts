@@ -156,6 +156,7 @@ export const BUENAS_PRACTICAS_GOOD_HABITS = 'goodHabits';
 export const BUENAS_PRACTICAS_EXCEPTIONS = 'exceptionGoodPractices';
 export const BUENAS_PRACTICAS_AGGREGATES = 'aggregatesAggregateRoots';
 export const BUENAS_PRACTICAS_INDIRECTION = 'indireccion';
+export const BUENAS_PRACTICAS_RESULT_OBJECT = 'result-object';
 export const AGILES_MOSCOW = 'MOSCOW';
 export const AGILES_SCORING = 'scoring';
 export const AGILES_MUDA = 'MUDA';

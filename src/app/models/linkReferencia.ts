@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.CONTENEDORES_RUNTIME;
+export const LAST_ITEM = Keys.BUENAS_PRACTICAS_RESULT_OBJECT;
 export const LAST_UPDATE = Keys.ARQUITECTURAS_NO_HEXAGONAL;
 
 export const AGILES_KEY = 'Agiles';
@@ -283,7 +283,13 @@ export const BUENAS_PRACTICAS_REF = new Map<string, Referencia>([
     [Keys.BUENAS_PRACTICAS_AGGREGATES, new Referencia('https://www.kranio.io/blog/de-bueno-a-excelente-en-ddd-entendiendo-aggregates-y-aggregate-roots-en-domain-driven-design---3-10', 'Aggregates y Aggregate Roots', BUENAS_PRACTICAS_KEY, 'Agregados', '2025/04/20')
         .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.META_ESTRUCTURAS_VALUE_OBJECTS, Keys.POO_DESIGN_BY_CONTRACT_PARTS, Keys.ANALISIS_COHESERS_DECOUPLERS)
     ],
-    [Keys.BUENAS_PRACTICAS_INDIRECTION, new Referencia('https://medium.com/@nmckinnonblog/indirection-fba1857630e2', 'Indirección', BUENAS_PRACTICAS_KEY, 'Indirección', '2025/05/13').addRelatedItems(Keys.PRINCIPIOS_SLAP, Keys.PATRONES_DESGLOSE_GRASP, Keys.HARDWARE_CLEAN_CODE_PERFORMANCE, Keys.POO_DESIGN_COUPLING)]
+    [Keys.BUENAS_PRACTICAS_INDIRECTION, new Referencia('https://medium.com/@nmckinnonblog/indirection-fba1857630e2', 'Indirección', BUENAS_PRACTICAS_KEY, 'Indirección', '2025/05/13')
+        .addRelatedItems(Keys.PRINCIPIOS_SLAP, Keys.PATRONES_DESGLOSE_GRASP, Keys.HARDWARE_CLEAN_CODE_PERFORMANCE, Keys.POO_DESIGN_COUPLING)
+    ],
+    [Keys.BUENAS_PRACTICAS_RESULT_OBJECT, new Referencia('https://medium.com/@cummingsi1993/the-operation-result-pattern-a-simple-guide-fe10ff959080', 'Result Pattern & Result Object', BUENAS_PRACTICAS_KEY, 'Result Object/Pattern', '2026/02/03')
+        .addRelatedItems(Keys.META_CARACTERISTICAS_EXCEPTIONS, Keys.PARADIGMAS_FUNCIONAL, Keys.POO_DESIGN_BY_CONTRACT_PARTS)
+        .addMoreReferences('https://czioutas.com/blog/result-object/')
+    ]
 ]);
 
 export const CALIDAD_KEY = 'Calidad';
