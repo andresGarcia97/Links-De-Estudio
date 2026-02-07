@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.BUENAS_PRACTICAS_RESULT_OBJECT;
+export const LAST_ITEM = Keys.CONOCIMIENTOS_EMPIRICOS_MODEL_T;
 export const LAST_UPDATE = Keys.TESTING_TRIANGULO;
 
 export const AGILES_KEY = 'Agiles';
@@ -383,21 +383,28 @@ export const CONOCIMIENTO_EMPIRICO = new Map<string, Referencia>([
     [Keys.CONOCIMIENTOS_EMPIRICOS_REFORZAMIENTO_SKINNER, new Referencia('https://psicologiaymente.com/psicologia/teoria-reforzamiento-skinner', 'Reforzamiento de conductas', CONOCIMIENTO_EMPIRICO_KEY, 'Reforzamiento')],
     [Keys.CONOCIMIENTOS_EMPIRICOS_PASTA_THEORY, new Referencia('https://www.techtarget.com/searchsoftwarequality/tip/Fix-spaghetti-code-and-other-pasta-theory-antipatterns/', 'Teoria de la pasta', CONOCIMIENTO_EMPIRICO_KEY, 'Codigo como pasta')],
     [Keys.CONOCIMIENTOS_EMPIRICOS_THINGS_THAT_ARE_NOT_TAUGHT, new Referencia('https://vadimkravcenko.com/shorts/things-they-didnt-teach-you/', 'Cosas que no se enseñan', CONOCIMIENTO_EMPIRICO_KEY, 'Cosas que no se enseñan', '2023/02/09')],
-    [Keys.CONOCIMIENTOS_EMPIRICOS_CODING_EASY_PART, new Referencia('https://swizec.com/blog/coding-is-the-easy-part/', 'Codificar es la parte facil', CONOCIMIENTO_EMPIRICO_KEY, 'Codificar es facil', '2023/12/11', '2025/07/13').addRelatedItems(Keys.LEYES_HYRUM)],
+    [Keys.CONOCIMIENTOS_EMPIRICOS_CODING_EASY_PART, new Referencia('https://swizec.com/blog/coding-is-the-easy-part/', 'Codificar es la parte facil', CONOCIMIENTO_EMPIRICO_KEY, 'Codificar es facil', '2023/12/11', '2025/07/13')
+        .addRelatedItems(Keys.LEYES_HYRUM)
+    ],
     [Keys.CONOCIMIENTOS_EMPIRICOS_AVESTRUZ, new Referencia('https://www.baeldung.com/cs/ostrich-algorithm', 'Algoritmo del Avestruz', CONOCIMIENTO_EMPIRICO_KEY, 'Avestruz', '', '2025/01/18')
         .addRelatedItems(Keys.META_CARACTERISTICAS_DEAD_LOCKS, Keys.HARDWARE_OPERATIVE_SYSTEM)
     ],
     [Keys.CONOCIMIENTOS_EMPIRICOS_BOILING_FROG, new Referencia('https://www.linkedin.com/pulse/boiling-frog-syndrome-suyash-jaju/', 'Sindrome de la Rana Hervida', CONOCIMIENTO_EMPIRICO_KEY, 'Rana Hervida', '2024/04/16')],
     [Keys.CONOCIMIENTOS_EMPIRICOS_BOYS_SCOUTS, new Referencia('https://www.linkedin.com/pulse/la-regla-de-los-boys-scouts-hugo-raher/', 'Regla de los Boys Scouts', CONOCIMIENTO_EMPIRICO_KEY, 'Boys Scouts', '2024/04/16')],
-    [Keys.CONOCIMIENTOS_EMPIRICOS_ZEIGARNIK, new Referencia('https://psicologiaymente.com/psicologia/efecto-zeigarnik', 'Efecto Zeigarnik', CONOCIMIENTO_EMPIRICO_KEY, 'Efecto Zeigarnik', '2024/05/13').addRelatedItems(Keys.WEB_GESTALT)],
+    [Keys.CONOCIMIENTOS_EMPIRICOS_ZEIGARNIK, new Referencia('https://psicologiaymente.com/psicologia/efecto-zeigarnik', 'Efecto Zeigarnik', CONOCIMIENTO_EMPIRICO_KEY, 'Efecto Zeigarnik', '2024/05/13')
+        .addRelatedItems(Keys.WEB_GESTALT)
+    ],
     [Keys.CONOCIMIENTOS_EMPIRICOS_PAIR_PROGRAMMING, new Referencia('https://stackoverflow.blog/2024/04/03/developers-with-ai-assistants-need-to-follow-the-pair-programming-model', 'Pair Programing con IA', CONOCIMIENTO_EMPIRICO_KEY, 'Pair Programing', '2024/05/26')],
     [Keys.CONOCIMIENTOS_EMPIRICOS_STAGES_COMPETENCE_MODEL, new Referencia('https://www.innovationtraining.org/the-four-stages-of-competence-model/', 'Etapas del modelo de competencia', CONOCIMIENTO_EMPIRICO_KEY, 'Modelo de competencia', '2024/09/09')],
     [Keys.CONOCIMIENTOS_EMPIRICOS_EXPIERENCE_LESSONS, new Referencia('https://dev.jimgrey.net/2024/07/03/lessons-learned-in-35-years-of-making-software/', 'Experiencia', CONOCIMIENTO_EMPIRICO_KEY, 'Experiencia', '2024/10/31')],
-    [Keys.CONOCIMIENTOS_EMPIRICOS_CODE_MAINTAINER, new Referencia('https://java-design-patterns.com/es/principles/#code-for-the-maintainer', 'Mantenimiento de codigo', CONOCIMIENTO_EMPIRICO_KEY, 'Mantenimiento', '2025/07/08').addRelatedItems(Keys.WEB_MENOR_SORPRESA, Keys.REFACTORING_CLEAN_CODE, Keys.COMPILACION_OFUSCACION)],
+    [Keys.CONOCIMIENTOS_EMPIRICOS_CODE_MAINTAINER, new Referencia('https://java-design-patterns.com/es/principles/#code-for-the-maintainer', 'Mantenimiento de codigo', CONOCIMIENTO_EMPIRICO_KEY, 'Mantenimiento', '2025/07/08')
+        .addRelatedItems(Keys.WEB_MENOR_SORPRESA, Keys.REFACTORING_CLEAN_CODE, Keys.COMPILACION_OFUSCACION)
+    ],
     [Keys.CONOCIMIENTOS_EMPIRICOS_LESSONS_AND_LEADER_TECHNICAL, new Referencia('https://medium.com/javarevisited/5-programming-lessons-i-wish-someone-had-beaten-into-my-head-early-on-af88960ac480', 'Lecciones técnicas y de liderazgo', CONOCIMIENTO_EMPIRICO_KEY, 'Lecciones & Liderazgo', '2025/10/04')
         .addRelatedItems(Keys.REFACTORING_CLEAN_CODE, Keys.POO_ABSTRACTIONS, Keys.PRINCIPIOS_YAGNI, Keys.POO_HERENCIA_COMPOSICION, Keys.REFACTORING_GOOD_AND_BAD_PRACTICES, Keys.PRINCIPIOS_KISS, Keys.MALAS_PRACTICAS_CONTRA_CALIDAD, Keys.PEOPLE_LANGUAGE_UBICUOS, Keys.PEOPLE_SINDROMES_LABORALES, Keys.CALIDAD_CODE_REVIEWS, Keys.PERSISTENCY_ADVANCED_ORM, Keys.PERSISTENCY_ADVANCED_N_1_SELECTS)
         .addMoreReferences('https://medium.com/javarevisited/what-no-one-told-me-about-becoming-a-tech-lead-0d16f689aa6a')
     ],
+    [Keys.CONOCIMIENTOS_EMPIRICOS_MODEL_T, new Referencia('https://ingenieriadesoftware.es/que-es-t-shaped-developer-y-como-serlo/', 'T-shaped, Modelo T', CONOCIMIENTO_EMPIRICO_KEY, 'Modelo T', '2026/02/07')]
 ]);
 
 export const LEYES_KEY = 'Leyes';

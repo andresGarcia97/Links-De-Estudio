@@ -1413,6 +1413,19 @@ export const CONOCIMIENTOS_EMPIRICOS =
                 '',
                 '- El liderazgo técnico es un equilibrio entre conocimiento técnico profundo y habilidades humanas ya sea que se codifique en mayor o menor medida ',
                 ' - el mayor reto viene de convertirse en un apoyo sólido y multiplicador del impacto a través del equipo'
+            ]),
+        new Item(Keys.CONOCIMIENTOS_EMPIRICOS_MODEL_T,
+            [
+                '- Existen diferentes formas de clasificar a los desarrolladores como <em>Full Stack</em>, <em>Front-End</em>, <em>Back-End</em>, <em>Especialista</em> ',
+                '- Tambien existen formas diferentes, como el <em>T-Shaped</em>, un concepto que es aplicable a cualquier profesión ',
+                '- Antes se solia buscar expertos en areas especificas, los cuales son muy productivos y eficientes en lo que conocen, pero no fuera de su terreno ',
+                '- Cuando las opciones eran limitadas y el mercado no estaba lleno de tecnologias, estos perfiles eran muy buscados, pero el mercado laboral ha cambiado ',
+                '',
+                '<strong>Beneficios</strong>',
+                '- Un profesional de este tipo es más completo, ya que además de conocer una especialidad, tambien pueden realizar trabajos alrededor de ella ',
+                '- Puede contribuir desde diferentes areas, ya que al conocerlas puede atender una mayor area de trabajo ',
+                '- Comprende las necesidades de otras areas y sabe que las interacciones deben cambiar de acuerdo a cada miembro del equipo  ',
+                '- Tiene la mente abierta para aprender de acuerdo a las necesidades y esta en capacidad de cubrir otras areas ',
             ])
     ];
 

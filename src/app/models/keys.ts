@@ -257,6 +257,7 @@ export const CONOCIMIENTOS_EMPIRICOS_STAGES_COMPETENCE_MODEL = 'stagesCompetence
 export const CONOCIMIENTOS_EMPIRICOS_EXPIERENCE_LESSONS = 'expierenceLessons';
 export const CONOCIMIENTOS_EMPIRICOS_CODE_MAINTAINER = 'codeMaintainer';
 export const CONOCIMIENTOS_EMPIRICOS_LESSONS_AND_LEADER_TECHNICAL = 'programing-lessons-tech-lead';
+export const CONOCIMIENTOS_EMPIRICOS_MODEL_T = 'model-T';
 export const PEOPLE_PEOPLE_PROCESS_TECNOLOGY = 'personasProcesosTecnologia';
 export const PEOPLE_SERVICE_MANAGEMENT = 'serviceManagement';
 export const PEOPLE_ASSET_MANAGEMENT = 'assetManagement';
