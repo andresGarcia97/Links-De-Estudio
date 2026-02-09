@@ -921,6 +921,26 @@ export const CONTENEDORES =
                 ' - partes como redes, volúmenes, la CLI, solo aumentaban la superficie de ataque ',
                 '',
                 '- También existen runtimes OCI de bajo nivel como <strong>runc</strong> (runtime de referencia de OCI) y alternativas como <strong>gVisor</strong> (runtime con sandboxing adicional) ',
+            ]),
+        new Item(Keys.CONTENEDORES_TESTCONTAINERS,
+            [
+                '- El software evoluciona y las pruebas lo hacen también, las pruebas automatizadas son esenciales para un flujo de CI/CD bien organizado ',
+                '- Pruebas unitarias, de integración y E2E son imprescindibles para verificar diferentes aspectos del software ',
+                '- Generalmente las pruebas de integración y E2E suelen ser más complejas y necesitan de dependencias reales para su fiabilidad ',
+                '- Testcontainers es una forma ligera de crear pruebas de integración, con dependencias reales, combinadas con la simplicidad de las pruebas unitarias ',
+                '- Las pruebas con mocks, o solo en memoria pueden dar la impresión errónea de que el sistema funciona correctamente, ',
+                ' - podiendo retrasar la identificación/solución de errores, además de decisiones basadas en el ciclo de retroalimentación ',
+                '',
+                '<strong>Beneficios:</strong>',
+                '<strong>Problemas de compatibilidad:</strong> Las aplicaciones pueden aprovechar detalles específicos de sus dependencias, como bases de datos ',
+                '- Una base de datos en memoria podría no ser compatible con la base de datos elegida en otros ambientes, haciendo que los tests no reflejen la realidad ',
+                '<strong>CI/CD:</strong> Puede correr localmente, en la nube, o en un pipeline, el único requisito es que el entorno sea compatible con Docker ',
+                '<strong>Limpieza:</strong> Los contenedores son efímeros y se destruyen de manera automática después de cada prueba ',
+                '<strong>Independencia:</strong> Cada prueba es independiente, incluso si se corren los pipelines de forma paralela ',
+                '<strong>Bajo demanda:</strong> No se necesita una infraestructura preaprovisionada, los contenedores ejecutarán lo necesario para la prueba ',
+                '<strong>Comunicación en red:</strong> Dado el caso es posible orquestar varios contenedores para realizar escenarios más complejos ',
+                '<strong>Soporte:</strong> Testcontainers admite una gran variedad de tecnologías, previamente configuradas, como si fueran módulos ya listos para usar ',
+                ' - entre estos se encuentran DB relacionales, DB NoSQL, brokers de mensajería, cachés, servidores web, sin contar los múltiples lenguajes en que se puede usar '
             ])
     ];
 

@@ -188,6 +188,7 @@ export const CONTENEDORES_SECURE_ORCHESTRATION = 'secureOrchestration';
 export const CONTENEDORES_ARQUITECTURE = 'arquitectureDocker';
 export const CONTENEDORES_IMAGES_DISTROLESS = 'distroless';
 export const CONTENEDORES_RUNTIME = 'container-runtime';
+export const CONTENEDORES_TESTCONTAINERS = 'testcontainers';
 export const PATRONES_DEFINITION = 'definicionPatrones';
 export const PATRONES_GOF = 'GOF';
 export const PATRONES_DESGLOSE_GOF = 'patternsDesgloseGoF';

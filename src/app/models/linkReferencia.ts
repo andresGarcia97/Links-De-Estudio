@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.CONOCIMIENTOS_EMPIRICOS_MODEL_T;
+export const LAST_ITEM = Keys.CONTENEDORES_TESTCONTAINERS;
 export const LAST_UPDATE = Keys.TESTING_AAA_GWT;
 
 export const AGILES_KEY = 'Agiles';
@@ -455,6 +455,10 @@ export const CONTAINERS = new Map<string, Referencia>([
     [Keys.CONTENEDORES_RUNTIME, new Referencia('https://www.docker.com/blog/containerd-vs-docker/', 'Ejecución de contenedores', CONTENEDORES_KEY, 'Runtime', '2026/02/01')
         .addRelatedItems(Keys.HARDWARE_OPERATIVE_SYSTEM, Keys.HARDWARE_CLI, Keys.VERSIONAMIENTO_LICENSES)
         .addMoreReferences('https://galvarado.com.mx/post/container-runtimes/', 'https://kubernetes.io/blog/2018/05/24/kubernetes-containerd-integration-goes-ga/')
+    ],
+    [Keys.CONTENEDORES_TESTCONTAINERS, new Referencia('https://testcontainers.com/getting-started/', 'Testcontainers', CONTENEDORES_KEY, 'Testcontainers', '2026/02/08')
+        .addRelatedItems(Keys.TESTING_ADVANCED_ENVIRONMENT, Keys.TESTING_INTEGRATION, Keys.CD_CI_DEPLOYMENT_PIPELINES)
+        .addMoreReferences('https://www.docker.com/blog/testcontainers-testing-with-real-dependencies/')
     ],
 ]);
 
