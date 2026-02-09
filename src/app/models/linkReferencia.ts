@@ -40,7 +40,7 @@ export class LinkReferencia {
 }
 
 export const LAST_ITEM = Keys.CONOCIMIENTOS_EMPIRICOS_MODEL_T;
-export const LAST_UPDATE = Keys.TESTING_TRIANGULO;
+export const LAST_UPDATE = Keys.TESTING_AAA_GWT;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -947,7 +947,7 @@ export const POO_REF = new Map<string, Referencia>([
 export const TESTING_KEY = 'Testing';
 export const TESTING_REF = new Map<string, Referencia>([
     //['principios', new Referencia('https://todosqa.com/siete-principios-del-proceso-de-prueba/', 'Principios de testing', TESTING_KEY, 'Principios de testing')],
-    [Keys.TESTING_PRINCIPLES, new Referencia('https://www.hiberus.com/crecemos-contigo/siete-principios-que-deben-guiar-el-testing-de-software-segun-istqb/', 'Principios de testing', TESTING_KEY, 'Principios de testing', '', '2025/04/05')
+    [Keys.TESTING_PRINCIPLES, new Referencia('https://www.hiberus.com/crecemos-contigo/siete-principios-que-deben-guiar-el-testing-de-software-segun-istqb/', 'Principios de testing (ISTQB)', TESTING_KEY, 'Principios de testing', '', '2025/04/05')
         .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_SLDC, Keys.CALIDAD_ANALYST_QA)
     ],
     [Keys.TESTING_MANIFIESTO, new Referencia('https://www.adictosaltrabajo.com/2019/12/18/testing-en-un-mundo-agile/', 'Testing manifiesto', TESTING_KEY, 'Testing manifiesto', '', '2025/08/19')
@@ -961,9 +961,9 @@ export const TESTING_REF = new Map<string, Referencia>([
     [Keys.TESTING_DATA_SUT_DOC, new Referencia('https://www.javiergarzas.com/2015/09/que-estoy-probando-y-cuales-son-mis-dependencias-en-testing.html', 'SUT & DOC', TESTING_KEY, 'SUT & DOC', '', '2024/07/14')],
     [Keys.TESTING_MOCKS, new Referencia('https://www.codurance.com/publications/2019/04/08/introduction-to-test-doubles', 'Mocks', TESTING_KEY, 'Mocks')],
     //['aaa', new Referencia('http://oscarmoreno.com/pruebas-unitarias/', 'Arrange-Act-Assert', TESTING_KEY, 'AAA')],
-    [Keys.TESTING_AAA, new Referencia('https://medium.com/@rojasjimenezjosea/aaa-unit-testing-688e3e61902a', 'Arrange-Act-Assert', TESTING_KEY, 'AAA', '', '2024/07/11')],
-    [Keys.TESTING_GWT, new Referencia('https://softwareengineering.stackexchange.com/questions/308160/differences-between-given-when-then-gwt-and-arrange-act-assert-aaa', 'Given-When-Then', TESTING_KEY, 'GWT')
-        .addRelatedItems(Keys.PEOPLE_LANGUAGE_UBICUOS, Keys.ESTRATEGIAS_DESARROLLO_BDD)
+    [Keys.TESTING_AAA_GWT, new Referencia('https://medium.com/beyond-the-brackets/mastering-testing-patterns-aaa-gwt-and-beyond-3e7f21e37d88', 'Patrones de pruebas', TESTING_KEY, 'AAA & GWT', '2024/07/11', '2026/02/08')
+        .addRelatedItems(Keys.PEOPLE_LANGUAGE_UBICUOS, Keys.ESTRATEGIAS_DESARROLLO_BDD, Keys.ESTRATEGIAS_DESARROLLO_TDD, Keys.PRINCIPIOS_DRY)
+        .addMoreReferences('https://softwareengineering.stackexchange.com/questions/308160/differences-between-given-when-then-gwt-and-arrange-act-assert-aaa')
     ],
     [Keys.TESTING_PIRAMIDE, new Referencia('https://medium.com/@wc.testing.qa/la-famosa-pir%C3%A1mide-de-cohn-y-la-dura-realidad-e1250dfbe5f3', 'Piramide de tests', TESTING_KEY, 'Piramide de tests', '', '2024/12/26')],
     [Keys.TESTING_TRIANGULO, new Referencia('https://proyectosagiles.org/triangulo-hierro/', 'Triangulo de Hierro', TESTING_KEY, 'Triangulo de Hierro', '', '2026/02/07')
