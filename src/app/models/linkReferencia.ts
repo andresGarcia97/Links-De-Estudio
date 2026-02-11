@@ -40,7 +40,7 @@ export class LinkReferencia {
 }
 
 export const LAST_ITEM = Keys.CONTENEDORES_TESTCONTAINERS;
-export const LAST_UPDATE = Keys.TESTING_AAA_GWT;
+export const LAST_UPDATE = Keys.ANALISIS_DATA_ARQUITECTURE_PATTERNS;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -761,7 +761,9 @@ export const ANALISIS_DATA_REF = new Map<string, Referencia>([
     [Keys.ANALISIS_DATA_WEB_SCRAPING, new Referencia('https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/que-es-el-web-scraping/', 'Web Scrapping', ANALISIS_DATA_KEY, 'Web Scrapping', '', '2025/02/15')],
     [Keys.ANALISIS_DATA_MVP, new Referencia('https://www.inboundcycle.com/blog-de-inbound-marketing/que-es-mvp-o-producto-minimo-viable', 'Minimo Producto Viable', ANALISIS_DATA_KEY, 'MVP')],
     //['turingComplete', new Referencia('https://www.eleconomista.es/economia/noticias/8817210/12/17/Ethereum-es-Turing-completo-y-eso-que-es.html', 'Turing Complete', ANALISIS_DATA_KEY, 'Turing Complete')],
-    [Keys.ANALISIS_DATA_TURING_COMPLETE, new Referencia('https://www.bitstamp.net/learn/blockchain/what-is-turing-complete/', 'Turing Complete', ANALISIS_DATA_KEY, 'Turing Complete', '', '2025/02/15').addRelatedItems(Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS)],
+    [Keys.ANALISIS_DATA_TURING_COMPLETE, new Referencia('https://www.bitstamp.net/learn/blockchain/what-is-turing-complete/', 'Turing Complete', ANALISIS_DATA_KEY, 'Turing Complete', '', '2025/02/15')
+        .addRelatedItems(Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS)
+    ],
     [Keys.ANALISIS_DATA_REVERSE_ENGINEERING, new Referencia('https://ingenierosasesores.com/actualidad/ingenieria-inversa-concepto-aplicaciones/', 'Ingenieria Inversa', ANALISIS_DATA_KEY, 'Ingenieria Inversa')],
     [Keys.ANALISIS_DATA_DSL, new Referencia('https://www.jetbrains.com/es-es/mps/concepts/domain-specific-languages/', 'Lenguaje de Dominio Especifico', ANALISIS_DATA_KEY, 'DSL')],
     //['dataAnalisis', new Referencia('https://tienda.digital/4-tipos-de-analisis-de-datos-para-mejorar-la-toma-de-decisiones/', 'Analisis de datos', ANALISIS_KEY, 'Analisis de datos')],
@@ -773,8 +775,12 @@ export const ANALISIS_DATA_REF = new Map<string, Referencia>([
     [Keys.ANALISIS_DATA_ETL_ELT, new Referencia('https://aws.amazon.com/es/compare/the-difference-between-etl-and-elt', 'ETL & ELT', ANALISIS_DATA_KEY, 'ETL & ELT', '2024/02/11', '2025/11/03')
         .addMoreReferences('https://blog.stackademic.com/elt-vs-etl-vs-reverse-etl-data-pipelines-49e5e08c6745')
     ],
-    [Keys.ANALISIS_DATA_THEORY_OF_INFORMATION, new Referencia('https://www.ferrovial.com/es/stem/teoria-de-la-informacion/', 'Teoria de la información', ANALISIS_DATA_KEY, 'Teoria de la información', '2024/06/23').addRelatedItems(Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION)],
-    [Keys.ANALISIS_DATA_CHANGE_DATA_CAPTURE, new Referencia('https://www.confluent.io/learn/change-data-capture/', 'Change Data Capture', ANALISIS_DATA_KEY, 'CDC', '2024/07/28').addRelatedItems(Keys.PERSISTENCY_ADVANCED_WAL)],
+    [Keys.ANALISIS_DATA_THEORY_OF_INFORMATION, new Referencia('https://www.ferrovial.com/es/stem/teoria-de-la-informacion/', 'Teoria de la información', ANALISIS_DATA_KEY, 'Teoria de la información', '2024/06/23')
+        .addRelatedItems(Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION)
+    ],
+    [Keys.ANALISIS_DATA_CHANGE_DATA_CAPTURE, new Referencia('https://www.confluent.io/learn/change-data-capture/', 'Change Data Capture', ANALISIS_DATA_KEY, 'CDC', '2024/07/28')
+        .addRelatedItems(Keys.PERSISTENCY_ADVANCED_WAL)
+    ],
     [Keys.ANALISIS_DATA_GOLDEN_RECORD, new Referencia('https://www.stibosystems.com/blog/benefits-of-creating-golden-customer-records', 'Golden Record', ANALISIS_DATA_KEY, 'Golden Record', '2024/08/10')],
     [Keys.ANALISIS_DATA_BATCH_VS_STREAM, new Referencia('https://estuary.dev/batch-processing-vs-stream-processing/', 'Batch Vs Stream Processing', ANALISIS_DATA_KEY, 'Batch Vs Stream', '2024/08/31', '2025/09/27')
         .addRelatedItems(Keys.PATRONES_MESSAGING, Keys.SYSTEM_DESIGN_QUEUES)
@@ -786,7 +792,10 @@ export const ANALISIS_DATA_REF = new Map<string, Referencia>([
     [Keys.ANALISIS_DATA_OLAP_OLTP, new Referencia('https://aws.amazon.com/es/compare/the-difference-between-olap-and-oltp/', 'OLAP & OLTP', ANALISIS_DATA_KEY, 'OLAP & OLTP', '2024/09/15')],
     [Keys.ANALISIS_DATA_DEDUPLICATION, new Referencia('https://www.netapp.com/es/data-management/what-is-data-deduplication/', 'Deduplicación', ANALISIS_DATA_KEY, 'Deduplicación', '2024/11/24')],
     [Keys.ANALISIS_DATA_TGS, new Referencia('https://economipedia.com/definiciones/teoria-general-de-sistemas-tgs.html', 'Teoria General de Sistemas', ANALISIS_DATA_KEY, 'TGS', '2025/01/26')],
-    [Keys.ANALISIS_DATA_ARQUITECTURE_PATTERNS, new Referencia('https://www.linkedin.com/posts/pooja-jain-898253106_data-engineering-bigdata-activity-7296475835677478912-F6tu/', 'Arquitecturas de Datos', ANALISIS_DATA_KEY, 'Arquitecturas de Datos', '2025/02/15')],
+    [Keys.ANALISIS_DATA_ARQUITECTURE_PATTERNS, new Referencia('https://www.linkedin.com/posts/pooja-jain-898253106_data-engineering-bigdata-activity-7296475835677478912-F6tu/', 'Arquitecturas de Datos', ANALISIS_DATA_KEY, 'Arquitecturas de Datos', '2025/02/15', '2026/02/10')
+        .addRelatedItems(Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.PERSISTENCY_NORMALIZATION)
+        .addMoreReferences('https://www.linkedin.com/posts/mailenlujanolivadilosa_dataengineering-softwarearchitecture-datascience-activity-7426769342228262912-lE3m/')
+    ],
     [Keys.ANALISIS_DATA_COLUMNS_VS_ROWS, new Referencia('https://www.tigerdata.com/learn/columnar-databases-vs-row-oriented-databases-which-to-choose', 'Columnas Vs Filas', ANALISIS_DATA_KEY, 'Columnas Vs Filas', '2025/10/16')
         .addRelatedItems(Keys.PERSISTENCY_SCHEMAS, Keys.PERSISTENCY_ACID, Keys.PERSISTENCY_CRUD, Keys.PERSISTENCY_ADVANCED_NO_SQL_TYPES)
     ],
