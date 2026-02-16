@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.CONTENEDORES_TESTCONTAINERS;
+export const LAST_ITEM = Keys.ANALISIS_DATA_DESIGN_PATTERNS_II;
 export const LAST_UPDATE = Keys.ANALISIS_DATA_ARQUITECTURE_PATTERNS;
 
 export const AGILES_KEY = 'Agiles';
@@ -798,6 +798,12 @@ export const ANALISIS_DATA_REF = new Map<string, Referencia>([
     ],
     [Keys.ANALISIS_DATA_COLUMNS_VS_ROWS, new Referencia('https://www.tigerdata.com/learn/columnar-databases-vs-row-oriented-databases-which-to-choose', 'Columnas Vs Filas', ANALISIS_DATA_KEY, 'Columnas Vs Filas', '2025/10/16')
         .addRelatedItems(Keys.PERSISTENCY_SCHEMAS, Keys.PERSISTENCY_ACID, Keys.PERSISTENCY_CRUD, Keys.PERSISTENCY_ADVANCED_NO_SQL_TYPES)
+    ],
+    [Keys.ANALISIS_DATA_DESIGN_PATTERNS_I, new Referencia('https://aws.plainenglish.io/data-engineering-design-patterns-you-must-learn-in-2026-c25b7bd0b9a7', 'Data Engineering Design Patterns I', ANALISIS_DATA_KEY, 'Data Design Patterns I', '2026/02/15')
+        .addRelatedItems(Keys.PERSISTENCY_CRUD, Keys.META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM, Keys.PERSISTENCY_ACID, Keys.COMPILACION_GRAFOS)
+    ],
+    [Keys.ANALISIS_DATA_DESIGN_PATTERNS_II, new Referencia('https://aws.plainenglish.io/data-engineering-design-patterns-you-must-learn-in-2026-c25b7bd0b9a7', 'Data Engineering Design Patterns II', ANALISIS_DATA_KEY, 'Data Design Patterns II', '2026/02/15')
+        .addRelatedItems(Keys.MICROSERVICES_ADVANCED_DEAD_LETTER_QUEUE, Keys.ANALISIS_DELIVERY_GUARANTED, Keys.PEOPLE_DIKW, Keys.VERSIONAMIENTO_EVOLUTION_SCHEMA_AND_SCHEMA_REGISTRY, Keys.PERSISTENCY_ADVANCED_PARTITIONING)
     ],
 ]);
 
