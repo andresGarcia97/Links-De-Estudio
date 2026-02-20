@@ -25,6 +25,7 @@
     "@angular/build": "^19.2.19",
     "@angular/cli": "^19.2.19",
     "@angular/compiler-cli": "^19.2.16",
+    "baseline-browser-mapping": "^2.10.0",
     "typescript": "~5.8.3"
   }
 }
