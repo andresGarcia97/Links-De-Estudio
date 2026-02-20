@@ -40,7 +40,7 @@ export class LinkReferencia {
 }
 
 export const LAST_ITEM = Keys.ANALISIS_DATA_DESIGN_PATTERNS_II;
-export const LAST_UPDATE = Keys.ANALISIS_DATA_ARQUITECTURE_PATTERNS;
+export const LAST_UPDATE = Keys.MICROSERVICES_ADVANCED_IDEMPOTENCY_II;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -127,7 +127,7 @@ export const ANALISIS_REF = new Map<string, Referencia>([
 export const SYSTEM_DESIGN_KEY = 'System-Design';
 export const SYSTEM_DESIGN_REF = new Map<string, Referencia>([
     [Keys.SYSTEM_DESIGN_QUEUES, new Referencia('https://levelup.gitconnected.com/message-queues-in-system-design-0440a1221023', 'Message Queues in System Design', SYSTEM_DESIGN_KEY, 'Message Queues', '2024/09/01', '2025/09/21')
-        .addRelatedItems(Keys.META_ESTRUCTURAS_ESTRUCTURAS_DATOS_II, Keys.APIS_REST_VS_MESSAGING, Keys.PATRONES_MESSAGING, Keys.ANALISIS_DATA_BATCH_VS_STREAM, Keys.MICROSERVICES_ADVANCED_PRODUCER_CONSUMER_IDEMPOTENCY)
+        .addRelatedItems(Keys.META_ESTRUCTURAS_ESTRUCTURAS_DATOS_II, Keys.APIS_REST_VS_MESSAGING, Keys.PATRONES_MESSAGING, Keys.ANALISIS_DATA_BATCH_VS_STREAM, Keys.MICROSERVICES_ADVANCED_IDEMPOTENCY_I)
         .addMoreReferences('https://solace.com/products/event-broker/messaging-patterns-queue-types/', 'https://airbyte.com/data-engineering-resources/rabbitmq-vs-kafka')
     ],
     [Keys.SYSTEM_DESIGN_CONCEPTS_I, new Referencia('https://www.linkedin.com/posts/brijpandeyji_top-12-system-design-concepts-every-developer-activity-7238729739065069568-h1t6/', 'System Design Concepts I', SYSTEM_DESIGN_KEY, 'System Design Concepts I', '2024/09/29')],
@@ -786,7 +786,7 @@ export const ANALISIS_DATA_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.PATRONES_MESSAGING, Keys.SYSTEM_DESIGN_QUEUES)
     ],
     [Keys.ANALISIS_DATA_STREAMING_VS_MESSAGING, new Referencia('https://medium.com/qest/messaging-vs-streaming-a-software-engineers-guide-8500d97f6f25', 'Streaming Vs Mensajes', ANALISIS_DATA_KEY, 'Streaming Vs Mensajes', '2025/11/06')
-        .addRelatedItems(Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.VERSIONAMIENTO_EVOLUTION_SCHEMA_AND_SCHEMA_REGISTRY, Keys.PATRONES_MESSAGING, Keys.MICROSERVICES_EVENTS_VS_REQUEST_RESPONSE, Keys.PATRONES_FOR_INTEGRATION, Keys.MICROSERVICES_ADVANCED_PRODUCER_CONSUMER_PROBLEM, Keys.MICROSERVICES_ADVANCED_PRODUCER_CONSUMER_IDEMPOTENCY, Keys.META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM, Keys.SYSTEM_DESIGN_QUEUES, Keys.APIS_LATENCY_THROUGHPUT_BANDWITH)
+        .addRelatedItems(Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.VERSIONAMIENTO_EVOLUTION_SCHEMA_AND_SCHEMA_REGISTRY, Keys.PATRONES_MESSAGING, Keys.MICROSERVICES_EVENTS_VS_REQUEST_RESPONSE, Keys.PATRONES_FOR_INTEGRATION, Keys.MICROSERVICES_ADVANCED_PRODUCER_CONSUMER_PROBLEM, Keys.MICROSERVICES_ADVANCED_IDEMPOTENCY_I, Keys.META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM, Keys.SYSTEM_DESIGN_QUEUES, Keys.APIS_LATENCY_THROUGHPUT_BANDWITH)
         .addMoreReferences('https://quix.io/blog/apache-kafka-vs-rabbitmq-comparison', 'https://pathway.com/blog/kafka-vs-rabbit-mq-for-data-streaming/')
     ],
     [Keys.ANALISIS_DATA_OLAP_OLTP, new Referencia('https://aws.amazon.com/es/compare/the-difference-between-olap-and-oltp/', 'OLAP & OLTP', ANALISIS_DATA_KEY, 'OLAP & OLTP', '2024/09/15')],
@@ -1475,7 +1475,7 @@ export const MICRO_SERVICES_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.ARQUITECTURAS_DESCOMPOSICION_MODULAR, Keys.LEYES_CONWAY, Keys.CD_CI_CD_CI, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.NUBE_CAP_TEOREMA)
     ],
     [Keys.MICROSERVICES_PATTERNS, new Referencia('https://blog.openreplay.com/7-microservice-design-patterns-to-use/', 'Patrones & Microservicios', MICRO_SERVICES_KEY, 'Patrones', '2025/01/19', '2025/10/01')
-        .addRelatedItems(Keys.ANALISIS_LIGHT_EVENTS_VS_RICH_EVENTS, Keys.PATRONES_SAGA, Keys.PATRONES_DYSTRIBUTED_SYSTEMS, Keys.MICROSERVICES_ADVANCED_PRODUCER_CONSUMER_IDEMPOTENCY, Keys.MICROSERVICES_BEST_PRACTICES, Keys.ESTRATEGIAS_DESARROLLO_BFF, Keys.APIS_GATEWAY, Keys.SYSTEM_DESIGN_SINGLE_POINT_OF_FAILURE, Keys.PATRONES_CLOUD_DESIGN_PATTERNS, Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS)
+        .addRelatedItems(Keys.ANALISIS_LIGHT_EVENTS_VS_RICH_EVENTS, Keys.PATRONES_SAGA, Keys.PATRONES_DYSTRIBUTED_SYSTEMS, Keys.MICROSERVICES_ADVANCED_IDEMPOTENCY_I, Keys.MICROSERVICES_BEST_PRACTICES, Keys.ESTRATEGIAS_DESARROLLO_BFF, Keys.APIS_GATEWAY, Keys.SYSTEM_DESIGN_SINGLE_POINT_OF_FAILURE, Keys.PATRONES_CLOUD_DESIGN_PATTERNS, Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS)
         .addMoreReferences('https://codefarm0.medium.com/5-critical-microservices-patterns-that-actually-work-in-production-66716db72b41')
     ],
     [Keys.MICROSERVICES_ESENTIAL_COMPONENTS, new Referencia('https://newsletter.systemdesigncodex.com/p/essential-components-of-a-production-069', 'Componentes Esenciales', MICRO_SERVICES_KEY, 'Componentes Esenciales', '2025/06/23')
@@ -1503,9 +1503,13 @@ export const MICRO_SERVICES_ADVANCED_REF = new Map<string, Referencia>([
     [Keys.MICROSERVICES_ADVANCED_PRODUCER_CONSUMER_PROBLEM, new Referencia('https://www.baeldung.com/java-producer-consumer-problem', 'Problema Productor Consumidor', MICRO_SERVICES_ADVANCED_KEY, 'Productor-Consumidor', '2025/02/15')
         .addRelatedItems(Keys.SYSTEM_DESIGN_QUEUES, Keys.META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM, Keys.META_CARACTERISTICAS_PROCESS_AND_THREADS)
     ],
-    [Keys.MICROSERVICES_ADVANCED_PRODUCER_CONSUMER_IDEMPOTENCY, new Referencia('https://microservices.io/post/microservices/patterns/2020/10/16/idempotent-consumer.html', 'Idempotencia & Duplicacion de Eventos', MICRO_SERVICES_ADVANCED_KEY, 'Idempotencia', '2025/09/01')
-        .addRelatedItems(Keys.SYSTEM_DESIGN_QUEUES, Keys.ANALISIS_DELIVERY_GUARANTED, Keys.ANALISIS_LIGHT_EVENTS_VS_RICH_EVENTS, Keys.PATRONES_OUTBOX, Keys.ANALISIS_DATA_CHANGE_DATA_CAPTURE, Keys.PERSISTENCY_ADVANCED_NO_SQL_TYPES, Keys.META_CARACTERISTICAS_CACHE, Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.SYSTEM_DESIGN_COMMON_METRICS, Keys.ANALISIS_DATA_DEDUPLICATION, Keys.PERSISTENCY_INDICES, Keys.APIS_IDEMPOTENCIA)
+    [Keys.MICROSERVICES_ADVANCED_IDEMPOTENCY_I, new Referencia('https://microservices.io/post/microservices/patterns/2020/10/16/idempotent-consumer.html', 'Idempotencia & Duplicacion I', MICRO_SERVICES_ADVANCED_KEY, 'Idempotencia I', '2025/09/01')
+        .addRelatedItems(Keys.SYSTEM_DESIGN_QUEUES, Keys.ANALISIS_DELIVERY_GUARANTED, Keys.ANALISIS_LIGHT_EVENTS_VS_RICH_EVENTS, Keys.PATRONES_OUTBOX, Keys.ANALISIS_DATA_CHANGE_DATA_CAPTURE, Keys.PERSISTENCY_ADVANCED_NO_SQL_TYPES, Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.SYSTEM_DESIGN_COMMON_METRICS, Keys.PERSISTENCY_INDICES, Keys.PERSISTENCY_ADVANCED_UPSERT)
         .addMoreReferences('https://nejckorasa.github.io/posts/idempotent-kafka-procesing/', 'https://medium.com/@zdb.dashti/exactly-once-semantics-using-the-idempotent-consumer-pattern-927b2595f231', 'https://www.rabbitmq.com/docs/confirms')
+    ],
+    [Keys.MICROSERVICES_ADVANCED_IDEMPOTENCY_II, new Referencia('https://medium.com/javarevisited/idempotency-in-distributed-systems-preventing-duplicate-operations-85ce4468d161', 'Idempotencia & Duplicacion II', MICRO_SERVICES_ADVANCED_KEY, 'Idempotencia II', '2026/02/15')
+        .addRelatedItems(Keys.MICROSERVICES_ADVANCED_DEAD_LETTER_QUEUE, Keys.META_CARACTERISTICAS_CACHE, Keys.APIS_IDEMPOTENCIA, Keys.ANALISIS_DATA_DEDUPLICATION, Keys.PERSISTENCY_CONSTRAINTS, Keys.APIS_HTTP_CODES, Keys.META_CARACTERISTICAS_DEAD_LOCKS)
+        .addMoreReferences('https://dev.to/woovi/practical-usages-of-idempotency-3926')
     ],
     [Keys.MICROSERVICES_ADVANCED_CACHE_FAILS, new Referencia('https://www.linkedin.com/posts/bytebytego_systemdesign-coding-interviewtips-activity-7296767687978827776-Dizz/', 'Fallos del cache', MICRO_SERVICES_ADVANCED_KEY, 'Fallos del cache', '2025/02/22')
         .addRelatedItems(Keys.META_CARACTERISTICAS_CACHE, Keys.PERSISTENCY_ADVANCED_SCALING_DB)
