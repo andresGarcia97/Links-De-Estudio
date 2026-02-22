@@ -40,7 +40,7 @@ export class LinkReferencia {
 }
 
 export const LAST_ITEM = Keys.ANALISIS_DATA_DESIGN_PATTERNS_II;
-export const LAST_UPDATE = Keys.MICROSERVICES_ADVANCED_IDEMPOTENCY_II;
+export const LAST_UPDATE = Keys.PERSISTENCY_ADVANCED_N_1_SELECTS;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -1246,7 +1246,9 @@ export const PERSISTENCY_ADVANCED_REF = new Map<string, Referencia>([
     ],
     //['algebraRelacional', new Referencia('https://sites.google.com/site/basededatosdistribuidastics/algebra-relacional', 'Algebra Relacional', PERSISTENCY_ADVANCED_KEY, 'Algebra Relacional')],
     [Keys.PERSISTENCY_ALGEBRA_RELACIONAL, new Referencia('https://lienzos.uv.mx/Uploads/resources/LenguajeAlgebraRelacional_18e0.pdf', 'Algebra Relacional', PERSISTENCY_ADVANCED_KEY, 'Algebra Relacional', '', '2024/06/07')],
-    [Keys.PERSISTENCY_ADVANCED_N_1_SELECTS, new Referencia('https://stackoverflow.com/questions/97197/what-is-the-n1-selects-problem-in-orm-object-relational-mapping', 'N + 1 Problem', PERSISTENCY_ADVANCED_KEY, 'N + 1 Selects')],
+    [Keys.PERSISTENCY_ADVANCED_N_1_SELECTS, new Referencia('https://stackoverflow.com/questions/97197/what-is-the-n1-selects-problem-in-orm-object-relational-mapping', 'N + 1 Problem', PERSISTENCY_ADVANCED_KEY, 'N + 1 Selects', '', '2026/02/21')
+        .addMoreReferences('https://medium.com/lets-code-future/i-reduced-our-api-response-time-from-3s-to-80ms-with-one-java-change-0f7938e28bb7')
+    ],
     [Keys.PERSISTENCY_ADVANCED_BOYCE_CODD, new Referencia('https://normalizacionunit4.blogspot.com/2019/05/46-forma-normal-boyce-codd.html', 'Boyce-Codd', PERSISTENCY_ADVANCED_KEY, 'Boyce-Codd')],
     [Keys.PERSISTENCY_ADVANCED_SQL_NO_SQL, new Referencia('https://medium.com/@eugeniomendoza/c%C3%B3mo-saber-si-necesitas-una-base-de-datos-nosql-b6cfd5bb7d9b', 'SQL ó NoSql', PERSISTENCY_ADVANCED_KEY, 'SQL ó NoSql', '', '2024/06/06')],
     [Keys.PERSISTENCY_ADVANCED_NEW_SQL, new Referencia('https://www.baeldung.com/sql/database-newsql-intro', 'NewSQL', PERSISTENCY_ADVANCED_KEY, 'NewSQL', '2025/06/26')
