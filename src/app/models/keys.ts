@@ -512,6 +512,7 @@ export const TESTING_ADVANCED_ARCH_UNIT = 'testsArchUnit';
 export const TESTING_ADVANCED_ENVIRONMENT = 'test-environment';
 export const TESTING_ADVANCED_PERFORMANCE = 'test-performance';
 export const TESTING_ADVANCED_SHIFT_LEFT_SHIFT_RIGHT = 'test-shift-left-shift-right';
+export const TESTING_ADVANCED_DEFECT_RATE = 'defect-rate';
 export const ANALISIS_COMPORTAMIENTO = 'comportamientoDelSistema';
 export const ANALISIS_ANALISIS_DOMAIN = 'analisisDominio';
 export const ANALISIS_DISENO = 'diseño';

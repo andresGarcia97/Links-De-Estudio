@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.ANALISIS_DATA_DESIGN_PATTERNS_II;
+export const LAST_ITEM = Keys.TESTING_ADVANCED_DEFECT_RATE;
 export const LAST_UPDATE = Keys.PERSISTENCY_ADVANCED_N_1_SELECTS;
 
 export const AGILES_KEY = 'Agiles';
@@ -1026,21 +1026,40 @@ export const TESTING_ADVANCED_REF = new Map<string, Referencia>([
     //['grafosCausaEfecto', new Referencia('https://platzi.com/tutoriales/1421-pruebas-software/9606-pruebas-con-grafos-causa-efecto/', 'Grafos Causa -> Efecto', TESTING_ADVANCED_KEY, 'Causa -> Efecto')],
     [Keys.TESTING_GRAFOS_CAUSA_EFECTO, new Referencia('https://www.softwaretestinghelp.com/cause-and-effect-graph-test-case-writing-technique/', 'Grafos Causa -> Efecto', TESTING_ADVANCED_KEY, 'Causa -> Efecto', '2024/07/14', '2025/07/07')],
     [Keys.TESTING_ADVANCED_TYPES_TESTS, new Referencia('https://www.softwaretestinghelp.com/types-of-software-testing/', 'Clasificación de las pruebas', TESTING_ADVANCED_KEY, 'Tipos de pruebas')],
-    [Keys.TESTING_ADVANCED_OUTSIDE_INSIDE, new Referencia('https://www.adictosaltrabajo.com/2016/01/29/tdd-outside-in-vs-inside-out/', 'TDD: Outside-In VS Inside-out', TESTING_ADVANCED_KEY, 'Outside & Inside', '', '2024/07/14').addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_TDD)],
+    [Keys.TESTING_ADVANCED_OUTSIDE_INSIDE, new Referencia('https://www.adictosaltrabajo.com/2016/01/29/tdd-outside-in-vs-inside-out/', 'TDD: Outside-In VS Inside-out', TESTING_ADVANCED_KEY, 'Outside & Inside', '', '2024/07/14')
+        .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_TDD)
+    ],
     [Keys.TESTING_ADVANCED_CASOS_DE_PRUEBA, new Referencia('https://medium.com/grupo-carricay/qu%C3%A9-son-los-casos-de-pruebas-4893799b5b84', 'Casos de prueba', TESTING_ADVANCED_KEY, 'Casos de prueba')],
-    [Keys.TESTING_ADVANCED_USES_CASES, new Referencia('https://blogs.encamina.com/piensa-en-software-desarrolla-en-colores/qa-caso-de-uso-vs-caso-de-prueba/', 'Casos de uso', TESTING_ADVANCED_KEY, 'Casos de uso', '', '2025/05/04').addRelatedItems(Keys.USER_HISTORIES_USE_CASE_REQUISITOS, Keys.UML_USE_CASES)],
+    [Keys.TESTING_ADVANCED_USES_CASES, new Referencia('https://blogs.encamina.com/piensa-en-software-desarrolla-en-colores/qa-caso-de-uso-vs-caso-de-prueba/', 'Casos de uso', TESTING_ADVANCED_KEY, 'Casos de uso', '', '2025/05/04')
+        .addRelatedItems(Keys.USER_HISTORIES_USE_CASE_REQUISITOS, Keys.UML_USE_CASES)
+    ],
     [Keys.TESTING_ADVANCED_SMELLS_CODES1, new Referencia('https://codingcraftsman.wordpress.com/2018/09/27/test-smells/', 'Smells codes en testing I', TESTING_ADVANCED_KEY, 'Smells codes en testing I')],
     [Keys.TESTING_ADVANCED_SMELLS_CODES2, new Referencia('https://codingcraftsman.wordpress.com/2018/09/27/test-smells/', 'Smells codes en testing II', TESTING_ADVANCED_KEY, 'Smells codes en testing II')],
     [Keys.TESTING_ADVANCED_MUTATION, new Referencia('https://spa.myservername.com/what-is-mutation-testing', 'Tests de mutación', TESTING_ADVANCED_KEY, 'Pruebas de mutación')],
-    [Keys.TESTING_ADVANCED_ANTI_PATTERNS, new Referencia('https://agileinaflash.blogspot.com/2009/06/tdd-antipatterns.html', 'TDD Antipatrones', TESTING_ADVANCED_KEY, 'TDD Antipatrones', '2024/07/14').addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_TDD, Keys.TESTING_DATA_SUT_DOC)],
-    [Keys.TESTING_ADVANCED_APDEX, new Referencia('https://www.techtarget.com/searchitoperations/definition/Application-Performance-Index-Apdex', 'Application Performance Index', TESTING_ADVANCED_KEY, 'Apdex', '2024/12/16').addRelatedItems(Keys.HARDWARE_MONITOREO, Keys.APIS_TESTING)],
+    [Keys.TESTING_ADVANCED_ANTI_PATTERNS, new Referencia('https://agileinaflash.blogspot.com/2009/06/tdd-antipatterns.html', 'TDD Antipatrones', TESTING_ADVANCED_KEY, 'TDD Antipatrones', '2024/07/14')
+        .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_TDD, Keys.TESTING_DATA_SUT_DOC)
+    ],
+    [Keys.TESTING_ADVANCED_APDEX, new Referencia('https://www.techtarget.com/searchitoperations/definition/Application-Performance-Index-Apdex', 'Application Performance Index', TESTING_ADVANCED_KEY, 'Apdex', '2024/12/16')
+        .addRelatedItems(Keys.HARDWARE_MONITOREO, Keys.APIS_TESTING)
+    ],
     [Keys.TESTING_ADVANCED_COSTS, new Referencia('https://fastercapital.com/es/contenido/Costo-de-las-pruebas--como-calcular-el-costo-de-verificar-la-calidad-o-el-rendimiento-de-un-producto-o-sistema.html', 'Costos del Testing', TESTING_ADVANCED_KEY, 'Costos', '2025/01/04')],
     [Keys.TESTING_ADVANCED_ISOLATION, new Referencia('https://mrslavchev.com/2018/08/03/hindsight-lessons-about-automation-test-isolation-principle/', 'Aislamiento de pruebas', TESTING_ADVANCED_KEY, 'Aislamiento', '2025/02/02')],
-    [Keys.TESTING_ADVANCED_CHARGE, new Referencia('https://www.headspin.io/blog/best-performance-testing-tools', 'Pruebas de carga', TESTING_ADVANCED_KEY, 'Performance', '2025/02/11').addRelatedItems(Keys.ANALISIS_DATA_DSL, Keys.NUBE_OBSERVABILIDAD, Keys.META_CARACTERISTICAS_MEMORY_SAFETY, Keys.VERSIONAMIENTO_LICENSES)],
-    [Keys.TESTING_ADVANCED_ARCH_UNIT, new Referencia('https://www.baeldung.com/java-archunit-intro', 'Tests sobre la Arquitectura', TESTING_ADVANCED_KEY, 'ArchUnit', '2025/03/06').addRelatedItems(Keys.META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL, Keys.ARQUITECTURAS_IMPORTANT_CONCEPTS, Keys.ARQUITECTURAS_MVC, Keys.ESTRATEGIAS_DESARROLLO_DDD)],
-    [Keys.TESTING_ADVANCED_ENVIRONMENT, new Referencia('https://www.abtasty.com/blog/test-environment/', 'Pruebas por Environment (ambiente)', TESTING_ADVANCED_KEY, 'Entornos', '2025/05/04').addRelatedItems(Keys.CD_CI_DEPLOYMENT_PIPELINES, Keys.CALIDAD_ANALYST_QA, Keys.ESTRATEGIAS_DESARROLLO_SLDC, Keys.GIT_BRANCHS_STRATEGIES, Keys.CD_CI_DEPLOYMENT_PATTERNS, Keys.META_CARACTERISTICAS_FEATURE_FLAGS)],
+    [Keys.TESTING_ADVANCED_CHARGE, new Referencia('https://www.headspin.io/blog/best-performance-testing-tools', 'Pruebas de carga', TESTING_ADVANCED_KEY, 'Performance', '2025/02/11')
+        .addRelatedItems(Keys.ANALISIS_DATA_DSL, Keys.NUBE_OBSERVABILIDAD, Keys.META_CARACTERISTICAS_MEMORY_SAFETY, Keys.VERSIONAMIENTO_LICENSES)
+    ],
+    [Keys.TESTING_ADVANCED_ARCH_UNIT, new Referencia('https://www.baeldung.com/java-archunit-intro', 'Tests sobre la Arquitectura', TESTING_ADVANCED_KEY, 'ArchUnit', '2025/03/06')
+        .addRelatedItems(Keys.META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL, Keys.ARQUITECTURAS_IMPORTANT_CONCEPTS, Keys.ARQUITECTURAS_MVC, Keys.ESTRATEGIAS_DESARROLLO_DDD)
+    ],
+    [Keys.TESTING_ADVANCED_ENVIRONMENT, new Referencia('https://www.abtasty.com/blog/test-environment/', 'Pruebas por Environment (ambiente)', TESTING_ADVANCED_KEY, 'Entornos', '2025/05/04')
+        .addRelatedItems(Keys.CD_CI_DEPLOYMENT_PIPELINES, Keys.CALIDAD_ANALYST_QA, Keys.ESTRATEGIAS_DESARROLLO_SLDC, Keys.GIT_BRANCHS_STRATEGIES, Keys.CD_CI_DEPLOYMENT_PATTERNS, Keys.META_CARACTERISTICAS_FEATURE_FLAGS)
+    ],
     [Keys.TESTING_ADVANCED_PERFORMANCE, new Referencia('https://es.abstracta.us/blog/metricas-pruebas-performance-software/', 'Metricas & Performance', TESTING_ADVANCED_KEY, 'Metricas & Performance', '2025/07/07')],
-    [Keys.TESTING_ADVANCED_SHIFT_LEFT_SHIFT_RIGHT, new Referencia('https://es.abstracta.us/blog/shift-left-right-testing-software-enfoques/', 'Shift-Left & Shift-Right Testing', TESTING_ADVANCED_KEY, 'Shift-Left & Shift-Right', '2025/09/14').addRelatedItems(Keys.METODOLOGIAS_CASCADA, Keys.METODOLOGIAS_AGILES, Keys.ESTRATEGIAS_DESARROLLO_TDD, Keys.ESTRATEGIAS_DESARROLLO_BDD, Keys.CD_CI_CD_CI, Keys.REQUISITOS_NO_FUNCIONALES, Keys.CD_CI_DEV_OPS, Keys.CD_CI_DEPLOYMENT_PATTERNS)],
+    [Keys.TESTING_ADVANCED_SHIFT_LEFT_SHIFT_RIGHT, new Referencia('https://es.abstracta.us/blog/shift-left-right-testing-software-enfoques/', 'Shift-Left & Shift-Right Testing', TESTING_ADVANCED_KEY, 'Shift-Left & Shift-Right', '2025/09/14')
+        .addRelatedItems(Keys.METODOLOGIAS_CASCADA, Keys.METODOLOGIAS_AGILES, Keys.ESTRATEGIAS_DESARROLLO_TDD, Keys.ESTRATEGIAS_DESARROLLO_BDD, Keys.CD_CI_CD_CI, Keys.REQUISITOS_NO_FUNCIONALES, Keys.CD_CI_DEV_OPS, Keys.CD_CI_DEPLOYMENT_PATTERNS)
+    ],
+    [Keys.TESTING_ADVANCED_DEFECT_RATE, new Referencia('https://axify.io/blog/defect-rate', 'Tasa de defectos', TESTING_ADVANCED_KEY, 'Defect Rate', '2026/02/22')
+        .addRelatedItems(Keys.META_ESTRUCTURAS_SISTEMAS_COMPLEJOS, Keys.CALIDAD_CODE_REVIEWS, Keys.BUENAS_PRACTICAS_STATIC_CODE_ANALYSIS, Keys.PEOPLE_CUSTOMER_LOYALTY, Keys.WEB_USER_INTERFACE, Keys.WEB_USER_XPERIENCE, Keys.ESTRATEGIAS_DESARROLLO_SLDC, Keys.CALIDAD_CODE_REVIEWS, Keys.CALIDAD_DORA_SPACE_METRICS, Keys.REFACTORING_DEUDA_TECNICA_TYPES)
+    ],
 ]);
 
 export const REFACTORING_KEY = 'Refactorizacion';
