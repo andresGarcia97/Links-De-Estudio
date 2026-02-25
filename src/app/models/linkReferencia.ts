@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.TESTING_ADVANCED_DEFECT_RATE;
+export const LAST_ITEM = Keys.REQUISITOS_PRAGMATIC_ENGINEER;
 export const LAST_UPDATE = Keys.PERSISTENCY_ADVANCED_N_1_SELECTS;
 
 export const AGILES_KEY = 'Agiles';
@@ -1105,15 +1105,24 @@ export const REQUISITOS_REF = new Map<string, Referencia>([
     [Keys.REQUISITOS_FUNCIONALES, new Referencia('https://medium.com/@requeridosblog/requerimientos-funcionales-y-no-funcionales-ejemplos-y-tips-aa31cb59b22a', 'Requisitos funcionales', REQUISITOS_KEY, 'Funcionales')],
     [Keys.REQUISITOS_NO_FUNCIONALES, new Referencia('https://medium.com/@requeridosblog/requerimientos-funcionales-y-no-funcionales-ejemplos-y-tips-aa31cb59b22a', 'Requisitos No funcionales', REQUISITOS_KEY, 'NO Funcionales')],
     //['negocio', new Referencia('https://requeridos.com/que-es-el-valor-de-negocio-y-como-medirlo/', 'El valor del negocio', REQUISITOS_KEY, 'EL Negocio')],
-    [Keys.REQUISITOS_BUSINESS_VALUE, new Referencia('https://www.elproximopaso.net/2012/03/8-otra-maneras-de-definir-el-valor-de.html', 'El valor del negocio', REQUISITOS_KEY, 'El Negocio', '', '2024/09/27').addRelatedItems(Keys.AGILES_MOSCOW)],
+    [Keys.REQUISITOS_BUSINESS_VALUE, new Referencia('https://www.elproximopaso.net/2012/03/8-otra-maneras-de-definir-el-valor-de.html', 'El valor del negocio', REQUISITOS_KEY, 'El Negocio', '', '2024/09/27')
+        .addRelatedItems(Keys.AGILES_MOSCOW)
+    ],
     //['ambiguedad', new Referencia('https://requeridos.com/requerimientos-menos-es-mas/', 'Evitar la ambiguedad', REQUISITOS_KEY, 'Evitar la ambiguedad')],
     [Keys.REQUISITOS_AMBIGUITY, new Referencia('https://www.blmovil.com/la-importancia-de-una-buena-captura-de-requisitos-en-el-desarrollo-de-software/', 'Evitar la ambiguedad', REQUISITOS_KEY, 'Evitar la ambiguedad', '2024/09/27')],
-    ['calidad', new Referencia('https://platzi.com/tutoriales/1248-pro-arquitectura/5498-atributos-de-calidad-de-un-producto-de-software/', 'Atributos de calidad', REQUISITOS_KEY, 'Atributos de calidad')],
+    [Keys.REQUISITOS_QUALITY, new Referencia('https://platzi.com/tutoriales/1248-pro-arquitectura/5498-atributos-de-calidad-de-un-producto-de-software/', 'Atributos de calidad', REQUISITOS_KEY, 'Atributos de calidad')],
     [Keys.REQUISITOS_TRADE_OFF, new Referencia('https://medium.com/analysts-corner/those-other-requirements-quality-attributes-and-their-inescapable-tradeoffs-31dc0691974d', 'Sacrificios y ganancias', REQUISITOS_KEY, 'Trade-offs')],
     [Keys.REQUISITOS_OBJETIVOS, new Referencia('https://www.pqforce.com/es/blog/objetivos-frente-a-requisitos-cual-es-la-diferencia/', 'Objetivos & Requisitos', REQUISITOS_KEY, 'Objetivos & Requisitos')],
-    ['cambioDeRequisitos', new Referencia('https://www.javiergarzas.com/2021/04/en-un-sistema-software-los-requisitos-casi-siempre-van-a-cambiar.html', 'Los requisitos cambian', REQUISITOS_KEY, 'Cambios', '2024/03/10')],
-    [Keys.REQUISITOS_REQUIREMENTS_ENGINEERING, new Referencia('https://xebrio.com/requirements-engineering/', 'Ingenieria y Toma de Requisitos', REQUISITOS_KEY, '¿ Como Tomarlos ?', '2024/09/27').addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_SLDC)],
-    [Keys.REQUISITOS_KPI_OKR, new Referencia('https://asana.com/es/resources/okr-vs-kpi', 'KPI & OKR', REQUISITOS_KEY, 'KPI & OKR', '2022/12/30', '2025/01/18').addRelatedItems(Keys.AGILES_DEMING, Keys.CALIDAD_METRICS_SOFTWARE)],
+    [Keys.REQUISITOS_REQUIREMENTS_CHANGE, new Referencia('https://www.javiergarzas.com/2021/04/en-un-sistema-software-los-requisitos-casi-siempre-van-a-cambiar.html', 'Los requisitos cambian', REQUISITOS_KEY, 'Cambios', '2024/03/10')],
+    [Keys.REQUISITOS_REQUIREMENTS_ENGINEERING, new Referencia('https://xebrio.com/requirements-engineering/', 'Ingenieria y Toma de Requisitos', REQUISITOS_KEY, '¿ Como Tomarlos ?', '2024/09/27')
+        .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_SLDC)
+    ],
+    [Keys.REQUISITOS_KPI_OKR, new Referencia('https://asana.com/es/resources/okr-vs-kpi', 'KPI & OKR', REQUISITOS_KEY, 'KPI & OKR', '2022/12/30', '2025/01/18')
+        .addRelatedItems(Keys.AGILES_DEMING, Keys.CALIDAD_METRICS_SOFTWARE)
+    ],
+    [Keys.REQUISITOS_PRAGMATIC_ENGINEER, new Referencia('https://newsletter.eng-leadership.com/p/how-to-be-pragmatic-as-an-engineer', 'Como ser pragmatico', REQUISITOS_KEY, 'Ingeniero Pragmatico', '2026/02/23')
+        .addRelatedItems(Keys.PRINCIPIOS_KISS, Keys.PRINCIPIOS_OCCAM, Keys.PRINCIPIOS_YAGNI, Keys.CONOCIMIENTOS_EMPIRICOS_LESSONS_AND_LEADER_TECHNICAL, Keys.AGILES_PRIORITIZATION, Keys.MALAS_PRACTICAS_OVER_ENGINEERING, Keys.CONOCIMIENTOS_EMPIRICOS_CODE_MAINTAINER, Keys.ARQUITECTURAS_MISTAKES_II, Keys.PEOPLE_PEOPLE_PROCESS_TECNOLOGY)
+    ]
 ]);
 
 export const PRINCIPIOS_KEY = 'Principios';
