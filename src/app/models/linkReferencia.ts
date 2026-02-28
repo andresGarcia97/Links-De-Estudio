@@ -1283,7 +1283,10 @@ export const PERSISTENCY_ADVANCED_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.ANALISIS_DATA_OLAP_OLTP, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.HARDWARE_ESCALAMIENTO, Keys.NUBE_PACELC)
         .addMoreReferences('https://www.linkedin.com/pulse/bases-de-datos-sql-vs-nosql-newsql-jos%C3%A9-tello-villalobos/')
     ],
-    [Keys.PERSISTENCY_ADVANCED_LOCKING, new Referencia('https://vladmihalcea.com/optimistic-vs-pessimistic-locking/', 'Bloqueo Optimista & Pesimista', PERSISTENCY_ADVANCED_KEY, 'Bloqueos', '2024/06/17')],
+    [Keys.PERSISTENCY_ADVANCED_LOCKING, new Referencia('https://vladmihalcea.com/optimistic-vs-pessimistic-locking/', 'Bloqueo Optimista & Pesimista', PERSISTENCY_ADVANCED_KEY, 'Bloqueos', '2024/06/17')
+        .addRelatedItems(Keys.META_CARACTERISTICAS_DEAD_LOCKS, Keys.FRAMEWORKS_TRANSACTIONAL_I, Keys.FRAMEWORKS_TRANSACTIONAL_II)
+        .addMoreReferences('https://www.baeldung.com/jpa-optimistic-locking', 'https://www.baeldung.com/jpa-pessimistic-locking')
+    ],
     [Keys.PERSISTENCY_ADVANCED_SQL_ORDER_EXECUTION, new Referencia('https://matam-kirankumar.medium.com/sql-query-order-of-execution-37001da1462', 'Orden de Ejecución', PERSISTENCY_ADVANCED_KEY, 'Orden de Ejecución', '2023/08/13')],
     [Keys.PERSISTENCY_ADVANCED_SARGEABLE, new Referencia('https://dev.to/kanani_nirav/secret-to-optimizing-sql-queries-understand-the-sql-execution-order-28m1', 'Consultas SARGEABLE', PERSISTENCY_ADVANCED_KEY, 'SARGEABLE', '2023/08/14')],
     [Keys.PERSISTENCY_ADVANCED_MVCC, new Referencia('https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/What-is-MVCC-How-does-Multiversion-Concurrencty-Control-work', 'Control de Concurrencia Multiversion', PERSISTENCY_ADVANCED_KEY, 'Control de Concurrencia', '2023/10/09')],
