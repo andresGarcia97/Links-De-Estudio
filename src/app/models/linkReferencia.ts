@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.REQUISITOS_PRAGMATIC_ENGINEER;
+export const LAST_ITEM = Keys.PERSISTENCY_ADVANCED_LONG_TRANSACTIONS;
 export const LAST_UPDATE = Keys.PERSISTENCY_ADVANCED_N_1_SELECTS;
 
 export const AGILES_KEY = 'Agiles';
@@ -1317,6 +1317,9 @@ export const PERSISTENCY_ADVANCED_REF = new Map<string, Referencia>([
     [Keys.PERSISTENCY_ADVANCED_LEDGER_DATABASE, new Referencia('https://www.techtarget.com/searchcio/definition/ledger-database', 'Ledger database', PERSISTENCY_ADVANCED_KEY, 'Ledger Database', '2026/01/28')
         .addRelatedItems(Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRANSACTIONS, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.POO_INMUTABILITY, Keys.META_CARACTERISTICAS_BLOCKING_AND_NO_BLOCKING)
         .addMoreReferences('https://learn.microsoft.com/en-us/sql/relational-databases/security/ledger/ledger-append-only-ledger-tables?view=sql-server-ver17')
+    ],
+    [Keys.PERSISTENCY_ADVANCED_LONG_TRANSACTIONS, new Referencia('https://www.linkedin.com/pulse/long-running-transactions-financial-systems-mario-kresnadi/', 'Transacciones largas & performance', PERSISTENCY_ADVANCED_KEY, 'Transacciones largas', '2026/03/01')
+        .addRelatedItems(Keys.CD_CI_MONITORING_AND_ALERTS, Keys.NUBE_PACELC, Keys.PATRONES_SAGA, Keys.PEOPLE_POST_MORTEM)
     ],
 ]);
 

@@ -2161,5 +2161,21 @@ export const BASE_DE_DATOS_AVANZADO =
                 '- Las bases de datos de este tipo son ideales para sistemas de auditoría, gestión de eventos, Blockchain y sistemas bancarios ',
                 '- Suelen ser más eficientes en la velocidad de escritura ya que usan las ventajas de la escritura secuencial del disco (append-only)',
                 ' - y no necesitan actualizar/eliminar datos (update-in-place) que conllevan bloqueos y sincronización de manera subyacente ',
+            ]),
+        new Item(Keys.PERSISTENCY_ADVANCED_LONG_TRANSACTIONS,
+            [
+                '- De los aspectos más importantes que toda base de datos relacional debe garantizar, estan la integridad y la consistencia de los datos  ',
+                '- Para esto es esencial mantener el control y validar cada operación que modifique/agregue/elimine datos ',
+                '',
+                '- Las transacciones largas ponen a prueba esto debido a su complejidad, leen, persisten, filtran, calculan, actualizan, etc.',
+                ' - y todo eso debe suceder de manera cohesiva y agruparse de manera que puedan seguirse manejando como una sola operación ',
+                '- Al aplicar los fundamentos de <strong>ACID</strong> implica mantener un bloqueo durante mucho tiempo, que puede provocar encolamiento y bloqueos de otras transacciones ',
+                '',
+                '- Esto es importante en ambientes donde la consistencia y la fiabilidad de los datos es vital, como en bancos y hospitales ',
+                '- Entre mayor sea el volumen de datos, más importante es tener esto en cuenta, cada paso y cada acción incrementa la latencia total de la transacción ',
+                '',
+                '- En caso de suceder una anomalia o interrupción imprevista el sistema podra revertir la transacción completa, ',
+                ' - evitando dejar datos y/o registros en posibles estados invalidos o inconsistentes ',
+                '- El proceso de reversión es automático, la intervención humana aplica en la revisión post-mortem o en la atención de alertas ante comportamientos críticos ',
             ])
     ];

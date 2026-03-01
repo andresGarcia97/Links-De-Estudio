@@ -341,6 +341,7 @@ export const PERSISTENCY_ADVANCED_SQL_ENGINE_ANATOMY = 'sqlEngineAnatomy';
 export const PERSISTENCY_ADVANCED_UPSERT = 'upsert';
 export const PERSISTENCY_ADVANCED_MIGRATIONS = 'database-migration-patterns';
 export const PERSISTENCY_ADVANCED_LEDGER_DATABASE = 'ledger-database';
+export const PERSISTENCY_ADVANCED_LONG_TRANSACTIONS = 'long-transactions-performance';
 export const REFACTORING_CLEAN_CODE = 'cleanCodeRefactoring';
 export const REFACTORING_DEUDA_TECNICA = 'deudaTecnica';
 export const REFACTORING_DEUDA_TECNICA_TYPES = 'deudaTecnicaTipos';
