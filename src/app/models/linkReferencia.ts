@@ -39,7 +39,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.PERSISTENCY_ADVANCED_LONG_TRANSACTIONS;
+export const LAST_ITEM = Keys.HARDWARE_IO_BOUND_CPU_BOUND;
 export const LAST_UPDATE = Keys.PERSISTENCY_ADVANCED_N_1_SELECTS;
 
 export const AGILES_KEY = 'Agiles';
@@ -1388,7 +1388,9 @@ export const HARDWARE_REF = new Map<string, Referencia>([
     [Keys.HARDWARE_ESCALAMIENTO, new Referencia('https://www.oscarblancarteblog.com/2017/03/07/escalabilidad-horizontal-y-vertical/', 'Escalamiento de un sistema', HARDWARE_KEY, 'Escalamiento')],
     [Keys.HARDWARE_NUBE_VS_VIRTUALIZACION, new Referencia('https://www.redhat.com/es/topics/cloud-computing/cloud-vs-virtualization', 'Nube VS Virtualizacion', HARDWARE_KEY, 'Nube VS VM')],
     [Keys.HARDWARE_RENDERING, new Referencia('https://www.freecodecamp.org/news/what-exactly-is-client-side-rendering-and-hows-it-different-from-server-side-rendering-bd5c786b340d/', 'Server-side VS client-side rendering', HARDWARE_KEY, 'Rendering')],
-    [Keys.HARDWARE_MODEL_OSI, new Referencia('https://www.cloudflare.com/es-es/learning/ddos/glossary/open-systems-interconnection-model-osi/', 'Modelo OSI', HARDWARE_KEY, 'Modelo OSI', '', '2025/04/23').addRelatedItems(Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION)],
+    [Keys.HARDWARE_MODEL_OSI, new Referencia('https://www.cloudflare.com/es-es/learning/ddos/glossary/open-systems-interconnection-model-osi/', 'Modelo OSI', HARDWARE_KEY, 'Modelo OSI', '', '2025/04/23')
+        .addRelatedItems(Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION)
+    ],
     [Keys.HARDWARE_ROUTING_MESSAGES, new Referencia('https://www.redhat.com/es/blog/architectural-messaging-patterns', 'Enrutamiento de Mensajes', HARDWARE_KEY, 'Routing', '2025/09/15')
         .addRelatedItems(Keys.NUBE_LATENCY, Keys.PATRONES_MESSAGING, Keys.SECURITY_CIBER_SECURITY)
         .addMoreReferences('https://www.baeldung.com/cs/multicast-vs-broadcast-anycast-unicast')
@@ -1398,14 +1400,22 @@ export const HARDWARE_REF = new Map<string, Referencia>([
     [Keys.HARDWARE_FALSE_SHARING, new Referencia('https://www.easytechjunkie.com/what-is-false-sharing.htm', 'False Sharing', HARDWARE_KEY, 'False Sharing', '2022/12/29')],
     [Keys.HARDWARE_PROTOCOLS, new Referencia('https://www.solarwinds.com/resources/it-glossary/network-protocols', 'Network Protocols', HARDWARE_KEY, 'Network Protocols', '2024/06/11')],
     [Keys.HARDWARE_OPERATIVE_SYSTEM, new Referencia('https://medium.com/@oyebisijemil_41110/why-understanding-operating-systems-is-important-for-every-back-end-distributed-systems-engineers-fc8412af4c6c', 'Sistema Operativo', HARDWARE_KEY, 'Sistema Operativo', '2024/06/30')],
-    [Keys.HARDWARE_UTF8, new Referencia('https://medium.com/@dmosyan/utf-8-and-the-problem-that-it-solves-a294aed2aa20', 'UTF-8', HARDWARE_KEY, 'UTF-8', '2024/08/24').addRelatedItems(Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES, Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION)],
-    [Keys.HARDWARE_CLEAN_CODE_PERFORMANCE, new Referencia('https://pvs-studio.com/en/blog/posts/1157/', 'Clean Code, peor Performance ?', HARDWARE_KEY, 'Clean Code & Performance', '2024/11/03').addRelatedItems(Keys.PRINCIPIOS_SOLID, Keys.CALIDAD_CLEAN_CODE, Keys.AGILES_MANIFEST_AGIL)],
+    [Keys.HARDWARE_UTF8, new Referencia('https://medium.com/@dmosyan/utf-8-and-the-problem-that-it-solves-a294aed2aa20', 'UTF-8', HARDWARE_KEY, 'UTF-8', '2024/08/24')
+        .addRelatedItems(Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES, Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION)
+    ],
+    [Keys.HARDWARE_CLEAN_CODE_PERFORMANCE, new Referencia('https://pvs-studio.com/en/blog/posts/1157/', 'Clean Code, peor Performance ?', HARDWARE_KEY, 'Clean Code & Performance', '2024/11/03')
+        .addRelatedItems(Keys.PRINCIPIOS_SOLID, Keys.CALIDAD_CLEAN_CODE, Keys.AGILES_MANIFEST_AGIL)
+    ],
     [Keys.HARDWARE_DATA_CENTERS, new Referencia('https://www.ionos.es/digitalguide/servidores/know-how/sistemas-de-evaluacion-para-data-centers/', 'Data Centers', HARDWARE_KEY, 'Data Centers', '2025/05/27')
         .addRelatedItems(Keys.NUBE_DISPONIBILITY, Keys.NUBE_NATIVE, Keys.SYSTEM_DESIGN_SINGLE_POINT_OF_FAILURE)
         .addMoreReferences('https://www.tuvsud.com/en-us/industries/infrastructure-and-rail/infrastructure/data-center-infrastructure-services', 'https://www.techtarget.com/searchdatacenter/definition/Uptime-data-center-tier-standards')
     ],
     [Keys.HARDWARE_LAWS_SCALABILITY, new Referencia('https://shahbhat.medium.com/applying-laws-of-scalability-to-technology-and-people-5884b4b4b04', 'Leyes de escalabilidad', HARDWARE_KEY, 'Leyes de escalabilidad', '2025/09/08')
         .addRelatedItems(Keys.META_ESTRUCTURAS_QUEUES, Keys.AGILES_ESTIMATION_LAWS, Keys.LEYES_AMDAHL, Keys.LEYES_BROOKS, Keys.LEYES_LITTLE, Keys.LEYES_CONWAY, Keys.LEYES_MOORE_AND_WIRTH, Keys.AGILES_ESTIMATION_LAWS)
+    ],
+    [Keys.HARDWARE_IO_BOUND_CPU_BOUND, new Referencia('https://www.baeldung.com/cs/cpu-io-bound', 'I/O Bound & CPU Bound', HARDWARE_KEY, 'I/O Bound & CPU Bound', '2026/03/02')
+        .addRelatedItems(Keys.META_CARACTERISTICAS_BLOCKING_AND_NO_BLOCKING, Keys.META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM)
+        .addMoreReferences('https://ashdaily.co.uk/blog/post0011/')
     ],
 ]);
 
