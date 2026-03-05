@@ -9,6 +9,7 @@ export class Content8 {
         ...CONTENEDORES,
         ...NEURO_MARKETING,
         ...SEGURIDAD,
+        ...OBSERVABILIDAD
     ];
 
 }

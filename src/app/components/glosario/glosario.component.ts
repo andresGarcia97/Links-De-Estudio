@@ -34,7 +34,7 @@ export class GlosarioComponent implements OnInit {
   fuentes = new LinkFuente().fuentes;
   linkReferencia = new LinkReferencia();
 
-  temas = Array.from(new Content1().temas)
+  joinAllTemas = Array.from(new Content1().temas)
     .concat(new Content2().temas)
     .concat(new Content3().temas)
     .concat(new Content4().temas)
@@ -52,12 +52,13 @@ export class GlosarioComponent implements OnInit {
   searchOnContent: Map<string, Referencia> = new Map();
 
   ngOnInit(): void {
-    console.info("%c Temas: " + this.temas.length, "color:#000; font-size: 16px;background:#FFBA08; font-weight: bold;");
+    console.info("%c Temas: " + this.joinAllTemas.length, "color:#000; font-size: 16px;background:#FFBA08; font-weight: bold;");
     console.info("%c Temas practicos: " + this.fuentes.size, "color:white; font-size: 16px;background:#1976d2; font-weight: bold;");
 
     const componentsWithDate = Array.from(this.componentes.values());
-    const temasWithOutRevision = componentsWithDate.filter((ref: Referencia) => ref.dateRead === '' && ref.dateUpdate === '').length;
-    console.info("%c Temas sin fecha: " + temasWithOutRevision, "color:white; font-size: 16px;background:#dd0031; font-weight: bold;");
+    const temasWithOutRevision = componentsWithDate.filter((ref: Referencia) => ref.dateRead === '' && ref.dateUpdate === '');
+    //console.table(temasWithOutRevision.map(({ component, tittle }) => ({ component, tittle })));
+    console.info("%c Temas sin fecha: " + temasWithOutRevision.length, "color:white; font-size: 16px;background:#dd0031; font-weight: bold;");
 
     function getYearlyStats(references: Referencia[], year: string) {
       const reads = references.filter(ref => ref.dateRead?.includes(year)).length;
@@ -125,7 +126,7 @@ export class GlosarioComponent implements OnInit {
     const normalizedSearch = normalizeToRegex(this.search);
     const searchRegex = new RegExp(`\\b${normalizedSearch}\\b`, 'i');
 
-    this.temas.filter(item => {
+    this.joinAllTemas.filter(item => {
       const containsSearchTerm = item.content.some(contentItem => searchRegex.test(contentItem));
       if (containsSearchTerm) {
         matchingKeys.add(item.key);
