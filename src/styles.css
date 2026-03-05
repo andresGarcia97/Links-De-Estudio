@@ -52,10 +52,6 @@
   color: var(--color-white);
 }
 
-.oscuro svg#clouds {
-  animation: animate-clouds-oscuro 1.2s ease-in 0.6s both;
-}
-
 .oscuro .card-container .card:not(.highlight-card):hover {
   transform: translateY(-3px);
   box-shadow: 0 4px 16px var(--color-cultured);
@@ -174,15 +170,6 @@
   animation: gradient-animation 4s alternate infinite;
 }
 
-@keyframes animate-clouds-oscuro {
-  0% {
-    fill: transparent;
-  }
-  100% {
-    fill: var(--color-jet);
-  }
-}
-
 .oscuro .share-button-back {
   background-color: var(--color-fulvous);
 }
@@ -267,6 +254,10 @@ p {
   max-width: 1280px;
   flex-direction: column;
   align-items: center;
+}
+
+.content.less-margin {
+  margin: 2em auto 2em;
 }
 
 /*https://ed.team/blog/personaliza-el-scroll-de-tu-web-solo-con-css*/
@@ -532,15 +523,6 @@ pre::selection {
 .star-badge .material-icons {
   height: 16px;
   width: 16px;
-}
-
-svg#clouds {
-  position: fixed;
-  bottom: -160px;
-  left: -100px;
-  z-index: -10;
-  width: 1920px;
-  animation: animate-clouds 1.2s ease-in 0.6s both;
 }
 
 .progress-bar {
@@ -822,12 +804,25 @@ button:disabled:hover {
     margin: 0 8px;
   }
 
+  .toolbar {
+    flex-wrap: wrap;
+    height: auto;
+    min-height: 60px;
+    padding: 8px 0;
+  }
+
   .star-badge {
     margin: 0 14px;
   }
 
   .search:focus {
     width: 160px;
+  }
+
+  .content {
+    padding: 0 12px;
+    width: 100%;
+    box-sizing: border-box;
   }
 
 }
@@ -851,18 +846,6 @@ button:disabled:hover {
 @media screen and (min-width: 1200px) {
   .card-container .card.card-small.card-no-size {
     flex: 1 0 20%;
-  }
-}
-
-/** https://svgartista.net **/
-
-@keyframes animate-clouds {
-  0% {
-    fill: transparent;
-  }
-
-  100% {
-    fill: var(--color-cultured);
   }
 }
 
