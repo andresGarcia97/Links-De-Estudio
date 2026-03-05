@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { APIS } from 'src/app/models/content/content5';
-import { APIS_REF, LinkReferencia, CONTENEDORES_KEY, SECURITY_KEY, CI_CD_KEY, WEB_KEY, NUBE_KEY, META_CARACTERISTICAS_KEY }
+import { APIS_REF, LinkReferencia, CONTENEDORES_KEY, SECURITY_KEY, CI_CD_KEY, WEB_KEY, NUBE_KEY, META_CARACTERISTICAS_KEY,
+  OBSERVABILIDAD_KEY }
 from 'src/app/models/linkReferencia';
 import { PreviousAndNextSection } from 'src/app/models/models';
 
@@ -32,7 +33,7 @@ export class ApisTermsComponent implements OnInit {
     this.relatedSections.set(NUBE_KEY,         routes.get(NUBE_KEY)!);
     this.relatedSections.set(WEB_KEY,          routes.get(WEB_KEY)!);
     this.previousAndNextSection = new PreviousAndNextSection(
-      NUBE_KEY,                 routes.get(NUBE_KEY)!,
+      OBSERVABILIDAD_KEY,       routes.get(OBSERVABILIDAD_KEY)!,
       META_CARACTERISTICAS_KEY, routes.get(META_CARACTERISTICAS_KEY)!
     );
   }

@@ -6,7 +6,7 @@ import {
   ESTRATEGIAS_DESARROLLO_KEY, META_ESTRUCTURAS_KEY, FRAMEWORKS_KEY, GIT_KEY, HARDWARE_KEY, LEYES_KEY, MALAS_PRACTICAS_KEY,
   METODOLOGIAS_KEY, NEURO_MARKETING_KEY, NUBE_KEY, ANALISIS_DATA_KEY, PARADIGMAS_KEY, PATRONES_KEY, PEOPLE_KEY, POO_KEY,
   PRINCIPIOS_KEY, REFACTORING_KEY, REQUISITOS_KEY, SECURITY_KEY, SMELL_CODES_KEY, TESTING_ADVANCED_KEY, TESTING_KEY, UML_KEY,
-  USER_HISTORIES_KEY, VERSIONAMIENTO_KEY, WEB_KEY, MICRO_SERVICES_KEY, SYSTEM_DESIGN_KEY, MICRO_SERVICES_ADVANCED_KEY
+  USER_HISTORIES_KEY, VERSIONAMIENTO_KEY, WEB_KEY, MICRO_SERVICES_KEY, SYSTEM_DESIGN_KEY, MICRO_SERVICES_ADVANCED_KEY, OBSERVABILIDAD_KEY
 } from 'src/app/models/linkReferencia';
 import { GlosarioComponent } from './components/glosario/glosario.component';
 import { HomeComponent } from './components/home/home.component';
@@ -26,6 +26,7 @@ const routes: Routes = [
   { path: 'calidad', loadChildren: () => import('./components/calidad/calidad.module').then(m => m.CalidadModule), title: CALIDAD_KEY },
   { path: 'personas', loadChildren: () => import('./components/personas/personas.module').then(m => m.PersonasModule), title: PEOPLE_KEY },
   { path: 'nube', loadChildren: () => import('./components/nube/nube.module').then(m => m.NubeModule), title: NUBE_KEY },
+  { path: 'observabilidad', loadChildren: () => import('./components/observabilidad/observabilidad.module').then(m => m.ObservabilidadModule), title: OBSERVABILIDAD_KEY },
   { path: 'fuentes', loadChildren: () => import('./components/fuentes/fuentes.module').then(m => m.FuentesModule), title: 'Fuentes' },
   { path: 'metacaracteristicas', loadChildren: () => import('./components/meta-caracteristicas/meta-caracteristicas.module').then(m => m.MetaCaracteristicasModule), title: META_CARACTERISTICAS_KEY },
   { path: 'smells-codes', loadChildren: () => import('./components/smells-codes/smells-codes.module').then(m => m.SmellsCodesModule), title: SMELL_CODES_KEY },

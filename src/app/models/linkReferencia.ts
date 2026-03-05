@@ -17,12 +17,13 @@ export class LinkReferencia {
         ...UML_REF,              ...VERSIONAMIENTO_REF,       ...HARDWARE_REF,
         ...WEB_REF,              ...LEYES_REF,                ...NEURO_MARKETING_REF,
         ...CI_CD_REF,            ...APIS_REF,                 ...PERSISTENCY_ADVANCED_REF,
-        ...MICRO_SERVICES_REF,   ...SYSTEM_DESIGN_REF,        ...MICRO_SERVICES_ADVANCED_REF
+        ...MICRO_SERVICES_REF,   ...SYSTEM_DESIGN_REF,        ...MICRO_SERVICES_ADVANCED_REF,
+        ...OBSERVABILIDAD_REF
     ]);
 
     public routesAndSections: Map<string, string> = new Map([
         [ANALISIS_KEY, 'analisis'],     [PATRONES_KEY, 'patrones'],             [META_CARACTERISTICAS_KEY, 'metacaracteristicas'],
-        [AGILES_KEY, 'agiles'],         [PEOPLE_KEY, 'personas'],               [CONOCIMIENTO_EMPIRICO_KEY, 'conocimiento-empirico'],
+        [AGILES_KEY, 'agiles'],         [OBSERVABILIDAD_KEY, 'observabilidad'], [CONOCIMIENTO_EMPIRICO_KEY, 'conocimiento-empirico'],
         [UML_KEY, 'uml'],               [PERSISTENCY_KEY, 'bases-de-datos'],    [ESTRATEGIAS_DESARROLLO_KEY, 'estrategias-de-desarrollo'],
         [GIT_KEY, 'git'],               [METODOLOGIAS_KEY, 'metodologias'],     [BUENAS_PRACTICAS_KEY, 'buenas-practicas'],
         [CALIDAD_KEY, 'calidad'],       [COMPILACION_KEY, 'compilacion'],       [MALAS_PRACTICAS_KEY, 'malas-practicas'],
@@ -35,6 +36,7 @@ export class LinkReferencia {
         [REQUISITOS_KEY, 'requisitos'], [VERSIONAMIENTO_KEY, 'versionamiento'], [TESTING_ADVANCED_KEY, 'testing-avanzado'],
         [NUBE_KEY, 'nube'],             [ARQUITECTURAS_KEY, 'arquitecturas'],   [ANALISIS_DATA_KEY, 'analisis-datos'],
         [TESTING_KEY, 'testing'],       [SYSTEM_DESIGN_KEY, 'system-design'],   [MICRO_SERVICES_ADVANCED_KEY, 'microservices-avanzado'],
+        [PEOPLE_KEY, 'personas']
     ]);
 
 }
@@ -150,10 +152,6 @@ export const SYSTEM_DESIGN_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.ANALISIS_DATA_TGS, Keys.TESTING_GRAFOS_CAUSA_EFECTO, Keys.PEOPLE_NO_NEWS_GOOD_NEWS, Keys.ARQUITECTURAS_MODULITHS, Keys.PRINCIPIOS_SOC, Keys.VERSIONAMIENTO_DOCUMENT_ARQUITECTURE)
         .addMoreReferences('https://medium.com/@pudarimadhavi99/10-secrets-to-making-rock-solid-architectural-decisions-as-a-senior-developer-5f45e97fe69f')
     ],
-    [Keys.SYSTEM_DESIGN_COMMON_METRICS, new Referencia('https://medium.com/javarevisited/dont-go-into-your-system-design-interview-without-mastering-this-31ee7af2ed7b', 'Metricas comunes en System Design', SYSTEM_DESIGN_KEY, 'Metricas comunes', '2025/04/26')
-        .addRelatedItems(Keys.META_CARACTERISTICAS_CACHE, Keys.NUBE_OBSERVABILIDAD, Keys.HARDWARE_MONITOREO, Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.CD_CI_FAILOVER, Keys.PERSISTENCY_ACID)
-        .addMoreReferences("https://systemdesignschool.io/fundamentals/qps", "https://speedscale.com/blog/determine-transactions-per-second/", "https://medium.com/@alexa.polly007/understanding-caching-eviction-invalidation-patterns-and-their-use-cases-9fbfd34be970")
-    ],
     [Keys.SYSTEM_DESIGN_SYSTEM_TYPES, new Referencia('https://medium.com/@bugfreeai/understanding-system-design-interview-types-a-strategic-guide-for-2025-320af44efc8b', 'Tipos generales de sistemas', SYSTEM_DESIGN_KEY, 'Tipos de sistemas', '2025/06/08')
         .addRelatedItems(Keys.HARDWARE_ESCALAMIENTO, Keys.PERSISTENCY_ADVANCED_SCALING_DB, Keys.NUBE_LATENCY, Keys.MICROSERVICES_ADVANCED_CACHE_FAILS, Keys.PERSISTENCY_CONSISTENCY, Keys.PERSISTENCY_ADVANCED_WAL, Keys.NUBE_CAP_TEOREMA, Keys.PERSISTENCY_ACID, Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS, Keys.PARADIGMAS_PARADIGMA_DATOS, Keys.PERSISTENCY_INDICES, Keys.ANALISIS_DATA_DATA_STORING)
     ],
@@ -227,7 +225,7 @@ export const ARQUITECTURAS_REF = new Map<string, Referencia>([
     ],
     [Keys.ARQUITECTURAS_DESCOMPOSICION_MODULAR, new Referencia('https://ittgweb.wordpress.com/2016/05/29/descomposicion-modular/', 'Descomposición Modular', ARQUITECTURAS_KEY, 'Descomposición', '2024/05/25')],
     [Keys.ARQUITECTURAS_EVENT_DRIVEN, new Referencia('https://medium.com/@alxkm/java-event-driven-architecture-dc456d324ba5', 'Basada en Eventos', ARQUITECTURAS_KEY, 'Basada en Eventos', '2024/06/17')
-        .addRelatedItems(Keys.NUBE_OBSERVABILIDAD)
+        .addRelatedItems(Keys.OBSERVABILIDAD_OBSERVABILITY)
     ],
     [Keys.ARQUITECTURAS_EXPERIMENTATION, new Referencia('https://www.infoq.com/articles/architecture-experimentation/', 'Minima Arquitectura Viable', ARQUITECTURAS_KEY, 'MVA', '2025/01/12')
         .addRelatedItems(Keys.ANALISIS_DATA_MVP, Keys.CD_CI_DEPLOYMENT_PATTERNS, Keys.NEURO_MARKETING_WHAT_IS)
@@ -239,10 +237,10 @@ export const ARQUITECTURAS_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.POO_COUPLING_COMPONENTS, Keys.META_ESTRUCTURAS_SISTEMAS_COMPLEJOS, Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS, Keys.POO_POLIMORFISMO, Keys.PRINCIPIOS_SOLID, Keys.ESTRATEGIAS_DESARROLLO_DDD)
     ],
     [Keys.ARQUITECTURAS_MISTAKES_I, new Referencia('https://medium.com/@vndpal/7-architecture-mistakes-even-senior-engineers-make-and-how-to-fix-them-9f4086d487da', 'Errores a evitar', ARQUITECTURAS_KEY, 'Errores I', '2025/08/18')
-        .addRelatedItems(Keys.MALAS_PRACTICAS_OVER_ENGINEERING, Keys.PRINCIPIOS_KISS, Keys.MALAS_PRACTICAS_DEATH_BY_MICROSERVICES, Keys.NUBE_OBSERVABILIDAD, Keys.VERSIONAMIENTO_DOCUMENTATION, Keys.CONOCIMIENTOS_EMPIRICOS_CODE_MAINTAINER)
+        .addRelatedItems(Keys.MALAS_PRACTICAS_OVER_ENGINEERING, Keys.PRINCIPIOS_KISS, Keys.MALAS_PRACTICAS_DEATH_BY_MICROSERVICES, Keys.OBSERVABILIDAD_OBSERVABILITY, Keys.VERSIONAMIENTO_DOCUMENTATION, Keys.CONOCIMIENTOS_EMPIRICOS_CODE_MAINTAINER)
     ],
     [Keys.ARQUITECTURAS_MISTAKES_II, new Referencia('https://medium.com/@maahisoft20/10-deadly-sins-of-system-architecture-that-will-haunt-you-at-scale-841dabe54a44', 'Errores de arquitectura que emergen al escalar', ARQUITECTURAS_KEY, 'Errores II', '2025/10/08')
-        .addRelatedItems(Keys.TESTING_ADVANCED_CHARGE, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_MONOLITH, Keys.PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL, Keys.PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS, Keys.NUBE_OBSERVABILIDAD, Keys.MALAS_PRACTICAS_OVER_ENGINEERING, Keys.CD_CI_STATELESS_STATEFUL, Keys.CD_CI_FAILOVER, Keys.PATRONES_RESILIENCIA, Keys.PEOPLE_PEOPLE_PROCESS_TECNOLOGY)
+        .addRelatedItems(Keys.TESTING_ADVANCED_CHARGE, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_MONOLITH, Keys.PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL, Keys.PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS, Keys.OBSERVABILIDAD_OBSERVABILITY, Keys.MALAS_PRACTICAS_OVER_ENGINEERING, Keys.CD_CI_STATELESS_STATEFUL, Keys.CD_CI_FAILOVER, Keys.PATRONES_RESILIENCIA, Keys.PEOPLE_PEOPLE_PROCESS_TECNOLOGY)
     ],
 ]);
 
@@ -275,7 +273,7 @@ export const BUENAS_PRACTICAS_REF = new Map<string, Referencia>([
     [Keys.BUENAS_PRACTICAS_GUARD_CLAUSES, new Referencia('https://artansoft.com/2017/01/guard-clauses-definicion-beneficios/', 'Guard clauses', BUENAS_PRACTICAS_KEY, 'Guard Clauses')],
     [Keys.BUENAS_PRACTICAS_SEMANTIC_CONSTRUCTORS, new Referencia('https://medium.com/all-you-need-is-clean-code/constructores-sem%C3%A1nticos-ae7ac70b23aa', 'Constructores Semanticos', BUENAS_PRACTICAS_KEY, 'Constructores Semanticos')],
     [Keys.BUENAS_PRACTICAS_EXCEPTIONS, new Referencia('https://javachallengers.com/mistakes-when-using-exceptions/', 'Manejo de Excepciones', BUENAS_PRACTICAS_KEY, 'Manejo de Excepciones', '', '2025/12/16')
-        .addRelatedItems(Keys.COMPILACION_ERRORS_AND_EXCEPTIONS, Keys.META_CARACTERISTICAS_EXCEPTIONS, Keys.HARDWARE_MONITOREO, Keys.APIS_ERRORS, Keys.NUBE_OBSERVABILIDAD, Keys.PATRONES_RESILIENCIA)
+        .addRelatedItems(Keys.COMPILACION_ERRORS_AND_EXCEPTIONS, Keys.META_CARACTERISTICAS_EXCEPTIONS, Keys.OBSERVABILIDAD_MONITOREO, Keys.APIS_ERRORS, Keys.OBSERVABILIDAD_OBSERVABILITY, Keys.PATRONES_RESILIENCIA)
         .addMoreReferences('https://medium.com/@csvaibhavpasrija/838292f305fd')
     ],
     [Keys.BUENAS_PRACTICAS_GOOD_HABITS, new Referencia('https://vadimkravcenko.com/shorts/habits-of-great-software-engineers/', 'Buenos habitos de un desarrollador', BUENAS_PRACTICAS_KEY, 'Buenos habitos')],
@@ -566,16 +564,26 @@ export const MALAS_PRACTICAS_KEY = 'Malas-Practicas';
 export const MALAS_PRACTICAS_REF = new Map<string, Referencia>([
     //['callbackhell', new Referencia('https://codearmy.co/que-es-el-callback-hell-y-como-evitarlo-4af418a6ed14', 'Cadena de llamados asincronos', MALAS_PRACTICAS_KEY, 'Callback Hell')],
     [Keys.MALAS_PRACTICAS_CALLBACK_HELL, new Referencia('https://dev.to/shameel/callback-callback-hell-promise-chaining-and-asyncawait-in-javascript-120i', 'Cadena de llamados asincronos', MALAS_PRACTICAS_KEY, 'Callback Hell', '', '2025/04/05')],
-    [Keys.MALAS_PRACTICAS_CONTRA_CALIDAD, new Referencia('https://softgrade.mx/5-causas-afectan-la-calidad-software/', 'En contra de la calidad', MALAS_PRACTICAS_KEY, 'Contra la calidad', '', '2025/10/05').addRelatedItems(Keys.AGILES_ESTIMATION_LAWS, Keys.REQUISITOS_BUSINESS_VALUE, Keys.PATRONES_GOF)],
+    [Keys.MALAS_PRACTICAS_CONTRA_CALIDAD, new Referencia('https://softgrade.mx/5-causas-afectan-la-calidad-software/', 'En contra de la calidad', MALAS_PRACTICAS_KEY, 'Contra la calidad', '', '2025/10/05')
+        .addRelatedItems(Keys.AGILES_ESTIMATION_LAWS, Keys.REQUISITOS_BUSINESS_VALUE, Keys.PATRONES_GOF)
+    ],
     //['contraGestion', new Referencia('https://blog.gft.com/es/2016/01/20/las-10-malas-practicas-mas-comunes-en-la-gestion-de-proyectos/', 'En contra de la gestión', MALAS_PRACTICAS_KEY, 'Contra la gestion')],
     ['contraGestion', new Referencia('https://www.smartprecisesolutions.com/2018/01/malas-practicas-en-la-gestion-de-proyectos/', 'En contra de la gestión', MALAS_PRACTICAS_KEY, 'Contra la gestion', '', '2024/05/08')],
     ['contraAgilidad', new Referencia('https://giovannycifuentes.com/los-6-antipatrones-en-la-adopcion-de-agilidad-que-los-lideres-deberian-conocer/', 'En contra de las metodologias agiles', MALAS_PRACTICAS_KEY, 'Contra la Agilidad', '2023/02/25')],
     ['malasPracticasSCRUM', new Referencia('https://blog.palo-it.com/es/antipatrones-comunes-en-scrum', 'Malas practicas en SCRUM', MALAS_PRACTICAS_KEY, 'Contra SCRUM', '2023/05/01')],
-    [Keys.MALAS_PRACTICAS_DEATH_BY_MICROSERVICES, new Referencia('https://renegadeotter.com/2023/09/10/death-by-a-thousand-microservices.html', 'Muerte por Microservicios', MALAS_PRACTICAS_KEY, 'Muerte por Microservicios', '2023/09/14').addRelatedItems(Keys.NUBE_OBSERVABILIDAD)],
+    [Keys.MALAS_PRACTICAS_DEATH_BY_MICROSERVICES, new Referencia('https://renegadeotter.com/2023/09/10/death-by-a-thousand-microservices.html', 'Muerte por Microservicios', MALAS_PRACTICAS_KEY, 'Muerte por Microservicios', '2023/09/14')
+        .addRelatedItems(Keys.OBSERVABILIDAD_OBSERVABILITY)
+    ],
     [Keys.MALAS_PRACTICAS_ANTI_PATRONES_ARQUITECTURAS, new Referencia('https://lab.scub.net/architecture-anti-patterns-the-dark-side-of-the-architect-d9265b52d997', 'Anti patrones en Arquitecturas', MALAS_PRACTICAS_KEY, 'Contra Arquitecturas', '2024/09/07')],
-    [Keys.MALAS_PRACTICAS_ANEMIC_DOMAIN, new Referencia('https://martinfowler.com/bliki/AnemicDomainModel.html', 'Dominio Anemico', MALAS_PRACTICAS_KEY, 'Dominio Anemico', '2024/05/08').addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_DDD)],
-    [Keys.MALAS_PRACTICAS_TRAIN_WECKS, new Referencia('https://www.thinkcode.se/blog/2011/12/30/how-many-train-wrecks-are-lurking-in-your-code', 'Accidentes de trenes', MALAS_PRACTICAS_KEY, 'Accidentes de trenes', '2024/05/22', '2024/10/12').addRelatedItems(Keys.BUENAS_PRACTICAS_DEMETER, Keys.POO_PILARES)],
-    [Keys.MALAS_PRACTICAS_OVER_ENGINEERING, new Referencia('https://vtsen.hashnode.dev/dry-kiss-and-yagni-to-avoid-over-engineering-trap', 'Sobreingenieria', MALAS_PRACTICAS_KEY, 'Sobreingenieria', '2025/05/20').addRelatedItems(Keys.META_CARACTERISTICAS_GENERICS, Keys.POO_HERENCIA_COMPOSICION, Keys.PRINCIPIOS_SOLID, Keys.BUENAS_PRACTICAS_INDIRECTION)]
+    [Keys.MALAS_PRACTICAS_ANEMIC_DOMAIN, new Referencia('https://martinfowler.com/bliki/AnemicDomainModel.html', 'Dominio Anemico', MALAS_PRACTICAS_KEY, 'Dominio Anemico', '2024/05/08')
+        .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_DDD)
+    ],
+    [Keys.MALAS_PRACTICAS_TRAIN_WECKS, new Referencia('https://www.thinkcode.se/blog/2011/12/30/how-many-train-wrecks-are-lurking-in-your-code', 'Accidentes de trenes', MALAS_PRACTICAS_KEY, 'Accidentes de trenes', '2024/05/22', '2024/10/12')
+        .addRelatedItems(Keys.BUENAS_PRACTICAS_DEMETER, Keys.POO_PILARES)
+    ],
+    [Keys.MALAS_PRACTICAS_OVER_ENGINEERING, new Referencia('https://vtsen.hashnode.dev/dry-kiss-and-yagni-to-avoid-over-engineering-trap', 'Sobreingenieria', MALAS_PRACTICAS_KEY, 'Sobreingenieria', '2025/05/20')
+        .addRelatedItems(Keys.META_CARACTERISTICAS_GENERICS, Keys.POO_HERENCIA_COMPOSICION, Keys.PRINCIPIOS_SOLID, Keys.BUENAS_PRACTICAS_INDIRECTION)
+    ]
 ]);
 
 export const META_CARACTERISTICAS_KEY = 'Meta-Caracteristicas';
@@ -620,7 +628,9 @@ export const META_CARATERISTICAS_REF = new Map<string, Referencia>([
 export const META_ESTRUCTURAS_KEY = 'Meta-Estructuras';
 export const META_ESTRUCTURAS_REF = new Map<string, Referencia>([
     //['scope', new Referencia('https://platzi.com/blog/como-funciona-el-scope-en-javascript/', 'Alcance', META_ESTRUCTURAS_KEY, 'Scope')],
-    [Keys.META_ESTRUCTURAS_SCOPE, new Referencia('https://codingornot.com/ambito-o-scope-en-programacion', 'Scope o Ambito', META_ESTRUCTURAS_KEY, 'Scope', '', '2025/02/08').addRelatedItems(Keys.COMPILACION_OBJECT_CREATION)],
+    [Keys.META_ESTRUCTURAS_SCOPE, new Referencia('https://codingornot.com/ambito-o-scope-en-programacion', 'Scope o Ambito', META_ESTRUCTURAS_KEY, 'Scope', '', '2025/02/08')
+        .addRelatedItems(Keys.COMPILACION_OBJECT_CREATION)
+    ],
     [Keys.META_ESTRUCTURAS_PRECEDENCIA, new Referencia('https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Operator_Precedence', 'Precedencia y jerarquia de operaciones', META_ESTRUCTURAS_KEY, 'Precedencia', '', '2025/07/03')],
     [Keys.META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL, new Referencia('https://xurxodev.com/vertical-scile/', 'Organización de un proyecto', META_ESTRUCTURAS_KEY, 'Organización')],
     [Keys.META_ESTRUCTURAS_LAYERS_SOFTWARE, new Referencia('https://www.linkedin.com/posts/brijpandeyji_building-software-at-scale-requires-a-clear-activity-7276459295502655488-dLTk/', 'Capas del Software', META_ESTRUCTURAS_KEY, 'Capas del Software', '2024/12/22').addRelatedItems(Keys.APIS_REST_VS_MESSAGING, Keys.PERSISTENCY_DBMS, Keys.WEB_USER_INTERFACE, Keys.CONTENEDORES_DOCKER, Keys.ANALISIS_MODEL_DOMAIN)],
@@ -632,7 +642,9 @@ export const META_ESTRUCTURAS_REF = new Map<string, Referencia>([
     ],
     [Keys.META_ESTRUCTURAS_SEARCH_AND_SORT, new Referencia('https://medium.com/edureka/data-structures-algorithms-in-java-d27e915db1c5', 'Algoritmos, Busqueda & Ordenación', META_ESTRUCTURAS_KEY, 'Busqueda & Ordenación', '2025/02/08').addRelatedItems(Keys.BUENAS_PRACTICAS_COMPLEJIDAD_COGNITIVA, Keys.BUENAS_PRACTICAS_COMPLEJIDAD_ALGORITMICA, Keys.ANALISIS_ALGORITHMS)],
     [Keys.META_ESTRUCTURAS_HOMOICONICIDAD, new Referencia('https://es.wikipedia.org/wiki/Homoiconicidad', 'Homoiconicidad', META_ESTRUCTURAS_KEY, 'Homoiconicidad')],
-    [Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS, new Referencia('http://fisicotronica.com/maquina-de-estados-nos-referimos/', 'Maquinas de estados', META_ESTRUCTURAS_KEY, 'Maquina de estados', '', '2025/04/20').addRelatedItems(Keys.COMPILACION_AUTOMATAS)],
+    [Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS, new Referencia('http://fisicotronica.com/maquina-de-estados-nos-referimos/', 'Maquinas de estados', META_ESTRUCTURAS_KEY, 'Maquina de estados', '', '2025/04/20')
+        .addRelatedItems(Keys.COMPILACION_AUTOMATAS)
+    ],
     [Keys.META_ESTRUCTURAS_SISTEMAS_COMPLEJOS, new Referencia('https://www.researchgate.net/figure/Figura-2-Caracteristicas-basicas-de-los-sistemas-complejos-Comportamiento-impredecible_fig1_262437348', 'Complejidad inherente al sistema', META_ESTRUCTURAS_KEY, 'Sistemas Complejos', '', '2025/03/18')],
     [Keys.META_ESTRUCTURAS_FUNCIONES_LAMBDA, new Referencia('https://www.tokioschool.com/noticias/expresiones-lambda-uso-programacion-aplicaciones/', 'Funciones Lambda', META_ESTRUCTURAS_KEY, 'Funciones lambda', '', '2025/07/03')
         .addRelatedItems(Keys.POO_INMUTABILITY, Keys.PARADIGMAS_FUNCIONAL, Keys.COMPILACION_STREAMS)
@@ -642,7 +654,9 @@ export const META_ESTRUCTURAS_REF = new Map<string, Referencia>([
     [Keys.META_ESTRUCTURAS_DYNAMIC_PROGAMING, new Referencia('https://www.spiceworks.com/tech/devops/articles/what-is-dynamic-programming/', 'Programacion Dinamica', META_ESTRUCTURAS_KEY, 'Programacion Dinamica', '2023/03/26')],
     [Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION, new Referencia('https://www.baeldung.com/cs/serialization-deserialization', 'Serialización y Deserialización', META_ESTRUCTURAS_KEY, 'Serializar & Deserializar', '2023/05/31')],
     [Keys.META_ESTRUCTURAS_DEPRECATION, new Referencia('https://digma.ai/deprecated-methods-in-java/', 'Deprecated (Obsolencia)', META_ESTRUCTURAS_KEY, 'Deprecated (Obsolencia)', '2024/06/15').addRelatedItems(Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES, Keys.REFACTORING_LEGACY_CODE_I)],
-    [Keys.META_ESTRUCTURAS_LOGS, new Referencia('https://betterstack.com/community/guides/logging/log-levels-explained/', 'Logs', META_ESTRUCTURAS_KEY, 'Logs', '2025/01/29', '2025/02/02').addRelatedItems(Keys.NUBE_OBSERVABILIDAD, Keys.BUENAS_PRACTICAS_LOGGING, Keys.PEOPLE_NO_NEWS_GOOD_NEWS)],
+    [Keys.META_ESTRUCTURAS_LOGS, new Referencia('https://betterstack.com/community/guides/logging/log-levels-explained/', 'Logs', META_ESTRUCTURAS_KEY, 'Logs', '2025/01/29', '2025/02/02')
+        .addRelatedItems(Keys.OBSERVABILIDAD_OBSERVABILITY, Keys.BUENAS_PRACTICAS_LOGGING, Keys.PEOPLE_NO_NEWS_GOOD_NEWS)
+    ],
     [Keys.META_ESTRUCTURAS_QUEUES, new Referencia('https://github.com/joelparkerhenderson/queueing-theory', 'Teoria de Colas', META_ESTRUCTURAS_KEY, 'Teoria de Colas', '2025/09/07').addRelatedItems(Keys.LEYES_LITTLE, Keys.SYSTEM_DESIGN_QUEUES)],
 ]);
 
@@ -688,24 +702,25 @@ export const NUBE_REF = new Map<string, Referencia>([
     [Keys.NUBE_CAAS_DAAS_FAAS, new Referencia('https://aws.plainenglish.io/conquering-the-cloud-unveiling-saas-paas-caas-daas-iaas-and-faas-3789b0ad7018', 'CaaS, DaaS, FaaS', NUBE_KEY, 'CaaS, DaaS, FaaS', '2024/03/18')],
     [Keys.NUBE_12_FACTORES, new Referencia('https://12factor.net/es/', '12 factores para una aplicación SaaS', NUBE_KEY, '12 - factores')],
     [Keys.NUBE_MIGRATIONS, new Referencia('https://www.paradigmadigital.com/techbiz/mitos-lift-shift-mentiras-migraciones-cloud/', 'Migraciones hacia la nube y las 6R', NUBE_KEY, 'Migraciones')],
-    [Keys.NUBE_CAP_TEOREMA, new Referencia('https://www.ionos.es/digitalguide/servidores/know-how/que-es-el-cap-theorem/', 'Coherencia, Disponibilidad y Tolerancia', NUBE_KEY, 'Teorema CAP').addRelatedItems(Keys.PERSISTENCY_DBMS)],
+    [Keys.NUBE_CAP_TEOREMA, new Referencia('https://www.ionos.es/digitalguide/servidores/know-how/que-es-el-cap-theorem/', 'Coherencia, Disponibilidad y Tolerancia', NUBE_KEY, 'Teorema CAP')
+        .addRelatedItems(Keys.PERSISTENCY_DBMS)
+    ],
     [Keys.NUBE_DNS, new Referencia('https://www.ionos.es/digitalguide/servidores/know-how/que-es-el-servidor-dns-y-como-funciona/', 'Servidor DNS', NUBE_KEY, 'Servidor DNS', '', '2025/11/02')],
     //['falaciesDistributedSystems', new Referencia('https://architecturenotes.co/fallacies-of-distributed-systems/', 'Sistemas Distribuidos', NUBE_KEY, 'Sistemas Distribuidos')],
     [Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, new Referencia('https://www.genbeta.com/desarrollo/las-8-falacias-de-la-computacion-distribuida', 'Falacias Sistemas Distribuidos', NUBE_KEY, 'Sistemas Distribuidos', '', '2024/10/06')],
     [Keys.NUBE_LOAD_BALANCING, new Referencia('https://aws.amazon.com/es/what-is/load-balancing/', 'Balancear la Carga', NUBE_KEY, 'Balanceador de carga', '2023/12/30', '2025/05/01')],
     [Keys.NUBE_LATENCY, new Referencia('https://blog.bytebytego.com/p/ep110-top-5-strategies-to-reduce#top-strategies-to-reduce-latency', 'Reducir la latencia', NUBE_KEY, 'Reducir la Latencia', '2024/05/12')],
-    [Keys.NUBE_OBSERVABILIDAD, new Referencia('https://medium.com/@rcougil/software-observabilidad-logs-m%C3%A9tricas-y-trazabilidad-d5bcca56608d', 'Observabilidad', NUBE_KEY, 'Observabilidad', '2024/05/26', '2025/11/02')
-        .addRelatedItems(Keys.META_ESTRUCTURAS_LOGS, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRACING, Keys.CD_CI_MONITORING_AND_ALERTS)
-        .addMoreReferences('https://engineering.theblueground.com/a-software-engineers-guide-to-observability/')
-    ],
     [Keys.NUBE_TWO_PHASE_COMMIT, new Referencia('https://hongilkwon.medium.com/when-to-use-two-phase-commit-in-distributed-transaction-f1296b8c23fd', 'Two Phase Commit', NUBE_KEY, 'Two Phase Commit', '2024/11/26')],
-    [Keys.NUBE_DISPONIBILITY, new Referencia('https://www.computerweekly.com/es/consejo/Disponibilidad-de-cinco-nueves-Que-significa-realmente', 'Disponibilidad de 5 9s', NUBE_KEY, 'Disponibilidad de 5 9s', '2024/11/26').addRelatedItems(Keys.CD_CI_CD_CI)],
+    [Keys.NUBE_DISPONIBILITY, new Referencia('https://www.computerweekly.com/es/consejo/Disponibilidad-de-cinco-nueves-Que-significa-realmente', 'Disponibilidad de 5 9s', NUBE_KEY, 'Disponibilidad de 5 9s', '2024/11/26')
+        .addRelatedItems(Keys.CD_CI_CD_CI)
+    ],
     [Keys.NUBE_PACELC, new Referencia('https://www.designgurus.io/blog/system-design-interview-basics-cap-vs-pacelc', 'PAC, Else Latencia y Consistencia', NUBE_KEY, 'Teorema PACELC', '2024/12/15', '2025/11/15')
         .addRelatedItems(Keys.PERSISTENCY_ACID, Keys.PERSISTENCY_ADVANCED_BASE)
         .addMoreReferences('https://medium.com/javarevisited/pacelc-the-missing-piece-beyond-cap-8e086a53abda')
     ],
-    [Keys.NUBE_NATIVE, new Referencia('https://www.oracle.com/cloud/cloud-native/what-is-cloud-native/', 'Evolución de la Nube', NUBE_KEY, 'Cloud Native', '2025/02/09').addRelatedItems(Keys.ARQUITECTURAS_MONOLITOS, Keys.ESTRATEGIAS_DESARROLLO_SLDC, Keys.MICROSERVICES_ANALISIS)],
-    [Keys.NUBE_SRE, new Referencia('https://aws.amazon.com/es/what-is/sre/', 'Ingenieria de Fiabilidad del Sitio', NUBE_KEY, 'SRE', '2025/03/15').addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_SLDC, Keys.CD_CI_DEV_OPS)],
+    [Keys.NUBE_NATIVE, new Referencia('https://www.oracle.com/cloud/cloud-native/what-is-cloud-native/', 'Evolución de la Nube', NUBE_KEY, 'Cloud Native', '2025/02/09')
+        .addRelatedItems(Keys.ARQUITECTURAS_MONOLITOS, Keys.ESTRATEGIAS_DESARROLLO_SLDC, Keys.MICROSERVICES_ANALISIS)
+    ],
 ]);
 
 export const APIS_KEY = 'APIs';
@@ -1040,12 +1055,12 @@ export const TESTING_ADVANCED_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_TDD, Keys.TESTING_DATA_SUT_DOC)
     ],
     [Keys.TESTING_ADVANCED_APDEX, new Referencia('https://www.techtarget.com/searchitoperations/definition/Application-Performance-Index-Apdex', 'Application Performance Index', TESTING_ADVANCED_KEY, 'Apdex', '2024/12/16')
-        .addRelatedItems(Keys.HARDWARE_MONITOREO, Keys.APIS_TESTING)
+        .addRelatedItems(Keys.OBSERVABILIDAD_MONITOREO, Keys.APIS_TESTING)
     ],
     [Keys.TESTING_ADVANCED_COSTS, new Referencia('https://fastercapital.com/es/contenido/Costo-de-las-pruebas--como-calcular-el-costo-de-verificar-la-calidad-o-el-rendimiento-de-un-producto-o-sistema.html', 'Costos del Testing', TESTING_ADVANCED_KEY, 'Costos', '2025/01/04')],
     [Keys.TESTING_ADVANCED_ISOLATION, new Referencia('https://mrslavchev.com/2018/08/03/hindsight-lessons-about-automation-test-isolation-principle/', 'Aislamiento de pruebas', TESTING_ADVANCED_KEY, 'Aislamiento', '2025/02/02')],
     [Keys.TESTING_ADVANCED_CHARGE, new Referencia('https://www.headspin.io/blog/best-performance-testing-tools', 'Pruebas de carga', TESTING_ADVANCED_KEY, 'Performance', '2025/02/11')
-        .addRelatedItems(Keys.ANALISIS_DATA_DSL, Keys.NUBE_OBSERVABILIDAD, Keys.META_CARACTERISTICAS_MEMORY_SAFETY, Keys.VERSIONAMIENTO_LICENSES)
+        .addRelatedItems(Keys.ANALISIS_DATA_DSL, Keys.OBSERVABILIDAD_OBSERVABILITY, Keys.META_CARACTERISTICAS_MEMORY_SAFETY, Keys.VERSIONAMIENTO_LICENSES)
     ],
     [Keys.TESTING_ADVANCED_ARCH_UNIT, new Referencia('https://www.baeldung.com/java-archunit-intro', 'Tests sobre la Arquitectura', TESTING_ADVANCED_KEY, 'ArchUnit', '2025/03/06')
         .addRelatedItems(Keys.META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL, Keys.ARQUITECTURAS_IMPORTANT_CONCEPTS, Keys.ARQUITECTURAS_MVC, Keys.ESTRATEGIAS_DESARROLLO_DDD)
@@ -1239,7 +1254,7 @@ export const PERSISTENCY_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.PERSISTENCY_ADVANCED_ORM, Keys.PERSISTENCY_ADVANCED_N_1_SELECTS)
     ],
     [Keys.PERSISTENCY_OPTIMIZE_SLOW_QUERIES_II, new Referencia('https://darren-tan0512.medium.com/sql-best-practices-hard-learned-lessons-from-my-years-as-a-software-engineer-1d50f6ea54b7', 'Optimización de consultas II', PERSISTENCY_KEY, 'Optimización II', '2025/12/21')
-        .addRelatedItems(Keys.BUENAS_PRACTICAS_DEBUGGING, Keys.NUBE_OBSERVABILIDAD)
+        .addRelatedItems(Keys.BUENAS_PRACTICAS_DEBUGGING, Keys.OBSERVABILIDAD_OBSERVABILITY)
         .addMoreReferences('https://medium.com/@kotiavula6/this-sql-question-exposes-fake-senior-developers-most-people-get-it-wrong-ce8a6a94952d')
     ],
     [Keys.PERSISTENCY_SCHEMAS, new Referencia('https://buttondown.email/jaffray/archive/in-codd-we-trust-or-not', 'Esquema Fisico Vs Esquema Logico', PERSISTENCY_KEY, 'Esquemas (Schema)', '2024/07/16')],
@@ -1395,7 +1410,6 @@ export const HARDWARE_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.NUBE_LATENCY, Keys.PATRONES_MESSAGING, Keys.SECURITY_CIBER_SECURITY)
         .addMoreReferences('https://www.baeldung.com/cs/multicast-vs-broadcast-anycast-unicast')
     ],
-    [Keys.HARDWARE_MONITOREO, new Referencia('https://www.hiberus.com/crecemos-contigo/uso-de-los-apm-monitoreo-del-rendimiento-de-aplicaciones/', 'Aplication Performance Management (apm)', HARDWARE_KEY, 'Monitoreo')],
     [Keys.HARDWARE_VIRTUAL_MACHINES_VS_CONTAINERS, new Referencia('https://cloudnativeislamabad.hashnode.dev/virtualization-vs-containerization', 'Maquinas Virtuales VS Contenedores', HARDWARE_KEY, 'VM VS Contenedores')],
     [Keys.HARDWARE_FALSE_SHARING, new Referencia('https://www.easytechjunkie.com/what-is-false-sharing.htm', 'False Sharing', HARDWARE_KEY, 'False Sharing', '2022/12/29')],
     [Keys.HARDWARE_PROTOCOLS, new Referencia('https://www.solarwinds.com/resources/it-glossary/network-protocols', 'Network Protocols', HARDWARE_KEY, 'Network Protocols', '2024/06/11')],
@@ -1437,7 +1451,9 @@ export const WEB_REF = new Map<string, Referencia>([
     [Keys.WEB_MENOR_SORPRESA, new Referencia('https://www.linkedin.com/pulse/principle-least-surprise-incus-data-pty-ltd/', 'Menor Sorpresa', WEB_KEY, 'Menor Sorpresa')],
     [Keys.WEB_MICRO_FRONTENED, new Referencia('https://newsletter.systemdesign.one/p/micro-frontends', 'Micro Frontends', WEB_KEY, 'Micro Frontends', '2024/03/07')],
     ['buenasPracticasFront', new Referencia('https://dev.to/emmanuelhills/best-practices-for-frontend-web-development-a-comprehensive-guide-27h0', 'Buenas practicas Desarrollo web', WEB_KEY, 'Buenas practicas', '2024/03/31')],
-    [Keys.WEB_GOLDEN_SIGNALS, new Referencia('https://www.groundcover.com/blog/4-golden-signals', 'Golden Signals', WEB_KEY, 'Golden Signals', '2024/09/22').addRelatedItems(Keys.HARDWARE_MONITOREO, Keys.PEOPLE_NO_NEWS_GOOD_NEWS)],
+    [Keys.WEB_GOLDEN_SIGNALS, new Referencia('https://www.groundcover.com/blog/4-golden-signals', 'Golden Signals', WEB_KEY, 'Golden Signals', '2024/09/22')
+        .addRelatedItems(Keys.OBSERVABILIDAD_MONITOREO, Keys.PEOPLE_NO_NEWS_GOOD_NEWS)
+    ],
     [Keys.WEB_SIMPLIFY_DESIGN, new Referencia('https://uxdesign.cc/10-heuristics-to-simplify-design-decision-making-36bd41868243', 'Simplificar el Diseño', WEB_KEY, 'Simplificar el diseño', '2024/12/13')],
 ]);
 
@@ -1462,27 +1478,41 @@ export const NEURO_MARKETING_REF = new Map<string, Referencia>([
 export const CI_CD_KEY = 'CI/CD-Infraestructura';
 export const CI_CD_REF = new Map<string, Referencia>([
     [Keys.CD_CI_CD_CI, new Referencia('https://www.aplyca.com/es/blog/integracion-entrega-continua-ci-cd', 'Integración Continua y Entrega Continua', CI_CD_KEY, 'CI/CD', '', '2024/08/25')],
-    [Keys.CD_CI_DEV_OPS, new Referencia('https://www.paradigmadigital.com/techbiz/que-es-devops-y-sobre-todo-que-no-es-devops/', 'DevOps', CI_CD_KEY, 'DevOps', '', '2025/03/15').addRelatedItems(Keys.TESTING_QUALITY_ASSURANCE)],
+    [Keys.CD_CI_DEV_OPS, new Referencia('https://www.paradigmadigital.com/techbiz/que-es-devops-y-sobre-todo-que-no-es-devops/', 'DevOps', CI_CD_KEY, 'DevOps', '', '2025/03/15')
+        .addRelatedItems(Keys.TESTING_QUALITY_ASSURANCE)
+    ],
     [Keys.CD_CI_IAS_CODE, new Referencia('https://www.redhat.com/es/topics/automation/what-is-infrastructure-as-code-iac', 'Infraestructura como Codigo', CI_CD_KEY, 'IaC', '2025/10/18')
         .addRelatedItems(Keys.CONTENEDORES_DOCKER)
         .addMoreReferences('https://glossary.cncf.io/es/immutable-infrastructure/')
     ],
     //['stateless-stateful', new Referencia('https://refactorizando.com/stateful-vs-stateless-arquitectura/', 'Stateful VS Stateless', CD_CI_KEY, 'Stateless VS Stateful')],
-    [Keys.CD_CI_STATELESS_STATEFUL, new Referencia('https://www.redhat.com/en/topics/cloud-native-apps/stateful-vs-stateless', 'Stateful VS Stateless', CI_CD_KEY, 'Stateless VS Stateful', '2023/12/26', '2025/05/01').addRelatedItems(Keys.MICROSERVICES_FUNDAMENTALS, Keys.NUBE_IAAS_PAAS_SAAS, Keys.APIS_IDEMPOTENCIA)],
+    [Keys.CD_CI_STATELESS_STATEFUL, new Referencia('https://www.redhat.com/en/topics/cloud-native-apps/stateful-vs-stateless', 'Stateful VS Stateless', CI_CD_KEY, 'Stateless VS Stateful', '2023/12/26', '2025/05/01')
+        .addRelatedItems(Keys.MICROSERVICES_FUNDAMENTALS, Keys.NUBE_IAAS_PAAS_SAAS, Keys.APIS_IDEMPOTENCIA)
+    ],
     [Keys.CD_CI_DEPLOYMENT_PATTERNS, new Referencia('https://newsletter.techworld-with-milan.com/p/what-are-deployment-patterns', 'Patrones de Despliegue', CI_CD_KEY, 'Patrones de Despliegue')],
     [Keys.CD_CI_INDUSTRIAL_DEV_OPS, new Referencia('https://itrevolution.com/articles/what-is-industrial-devops/', 'Industrial DevOps', CI_CD_KEY, 'Industrial DevOps', '2023/11/21')
         .addRelatedItems(Keys.TESTING_ADVANCED_SHIFT_LEFT_SHIFT_RIGHT)
     ],
-    [Keys.CD_CI_DEPLOYMENT_PIPELINES, new Referencia('https://semaphoreci.com/blog/cicd-pipeline', 'Pipelines', CI_CD_KEY, '¿ Que es un Pipeline ?', '2023/12/26', '2025/05/04').addRelatedItems(Keys.CONTENEDORES_ORCHESTRATION)],
+    [Keys.CD_CI_DEPLOYMENT_PIPELINES, new Referencia('https://semaphoreci.com/blog/cicd-pipeline', 'Pipelines', CI_CD_KEY, '¿ Que es un Pipeline ?', '2023/12/26', '2025/05/04')
+        .addRelatedItems(Keys.CONTENEDORES_ORCHESTRATION)
+    ],
     [Keys.CD_CI_CELL_BASED_ARQUITECTURE, new Referencia('https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of-impact-with-cell-based-architecture/what-is-a-cell-based-architecture.html', 'Cell Based Arquitecture', CI_CD_KEY, 'Cell Based Arquitecture', '2024/08/25')],
-    [Keys.CD_CI_RULES, new Referencia('https://semaphoreci.com/blog/rules-ci-pipeline', 'Reglas de un Pipeline', CI_CD_KEY, 'Pipelines Rules', '2024/12/26').addRelatedItems(Keys.GIT_BRANCHS, Keys.CALIDAD_LINTING, Keys.TESTING_PIRAMIDE, Keys.CONTENEDORES_DOCKER)],
-    [Keys.CD_CI_FAILOVER, new Referencia('https://stackoverflow.blog/2020/10/23/adrian-cockcroft-aws-failover-chaos-engineering-fault-tolerance-distaster-recovery/', 'Failover & Ingenieria del caos', CI_CD_KEY, 'Failover, Caos, Resiliencia', '2025/04/06').addRelatedItems(Keys.NUBE_SRE, Keys.SYSTEM_DESIGN_SINGLE_POINT_OF_FAILURE, Keys.NUBE_DISPONIBILITY)],
-    [Keys.CD_CI_MONITORING, new Referencia('https://www.squadcast.com/blog/comparing-uptime-monitoring-heartbeat-monitoring-and-synthetic-monitoring', 'Monitoreo de un sistema', CI_CD_KEY, 'Monitoreo', '2025/05/01').addRelatedItems(Keys.NUBE_DISPONIBILITY, Keys.NUBE_SRE, Keys.NUBE_LOAD_BALANCING, Keys.HARDWARE_ESCALAMIENTO, Keys.WEB_GOLDEN_SIGNALS, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRANSACTIONS)],
+    [Keys.CD_CI_RULES, new Referencia('https://semaphoreci.com/blog/rules-ci-pipeline', 'Reglas de un Pipeline', CI_CD_KEY, 'Pipelines Rules', '2024/12/26')
+        .addRelatedItems(Keys.GIT_BRANCHS, Keys.CALIDAD_LINTING, Keys.TESTING_PIRAMIDE, Keys.CONTENEDORES_DOCKER)
+    ],
+    [Keys.CD_CI_FAILOVER, new Referencia('https://stackoverflow.blog/2020/10/23/adrian-cockcroft-aws-failover-chaos-engineering-fault-tolerance-distaster-recovery/', 'Failover & Ingenieria del caos', CI_CD_KEY, 'Failover, Caos, Resiliencia', '2025/04/06')
+        .addRelatedItems(Keys.OBSERVABILIDAD_SRE, Keys.SYSTEM_DESIGN_SINGLE_POINT_OF_FAILURE, Keys.NUBE_DISPONIBILITY)
+    ],
+    [Keys.CD_CI_MONITORING, new Referencia('https://www.squadcast.com/blog/comparing-uptime-monitoring-heartbeat-monitoring-and-synthetic-monitoring', 'Monitoreo de un sistema', CI_CD_KEY, 'Monitoreo', '2025/05/01')
+        .addRelatedItems(Keys.NUBE_DISPONIBILITY, Keys.OBSERVABILIDAD_SRE, Keys.NUBE_LOAD_BALANCING, Keys.HARDWARE_ESCALAMIENTO, Keys.WEB_GOLDEN_SIGNALS, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRANSACTIONS)
+    ],
     [Keys.CD_CI_MONITORING_AND_ALERTS, new Referencia('https://edgedelta.com/company/blog/monitoring-and-alerting-best-practices', 'Monitoreo, Alertas & Observabilidad', CI_CD_KEY, 'Monitoreo y Alertas', '2025/10/12')
-        .addRelatedItems(Keys.NUBE_OBSERVABILIDAD, Keys.TESTING_ADVANCED_PERFORMANCE, Keys.SYSTEM_DESIGN_COMMON_METRICS, Keys.PEOPLE_DIKW, Keys.SECURITY_MATRIZ_DE_RIESGOS, Keys.COMPILACION_INSTRUMENTS, Keys.NUBE_SRE, Keys.COMPILACION_SDK_VS_API, Keys.PEOPLE_POST_MORTEM)
+        .addRelatedItems(Keys.OBSERVABILIDAD_OBSERVABILITY, Keys.TESTING_ADVANCED_PERFORMANCE, Keys.OBSERVABILIDAD_COMMON_METRICS, Keys.PEOPLE_DIKW, Keys.SECURITY_MATRIZ_DE_RIESGOS, Keys.COMPILACION_INSTRUMENTS, Keys.OBSERVABILIDAD_SRE, Keys.COMPILACION_SDK_VS_API, Keys.PEOPLE_POST_MORTEM)
         .addMoreReferences('https://opentelemetry.io/docs/what-is-opentelemetry/', 'https://opentelemetry.io/docs/concepts/instrumentation/zero-code/', 'https://betterstack.com/community/guides/monitoring/what-is-metrics-monitoring-alerting/')
     ],
-    [Keys.CD_CI_DEPLOYMENT_ARQUITECTURE, new Referencia('https://medium.com/nerd-for-tech/software-deployment-as-architecture-648867bdb77c', 'Implementación como Arquitectura', CI_CD_KEY, 'Deploy & Arquitectura', '2025/06/12').addRelatedItems(Keys.ARQUITECTURAS_DESCOMPOSICION_MODULAR, Keys.ARQUITECTURAS_MONOLITOS, Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES, Keys.VERSIONAMIENTO_VERSIONAMIENTO, Keys.APIS_REST_VS_MESSAGING, Keys.ANALISIS_BOUNDED_CONTEXT, Keys.MICROSERVICES_ARQUITECTURAS, Keys.CONTENEDORES_ORCHESTRATION, Keys.NUBE_NATIVE, Keys.MALAS_PRACTICAS_DEATH_BY_MICROSERVICES)],
+    [Keys.CD_CI_DEPLOYMENT_ARQUITECTURE, new Referencia('https://medium.com/nerd-for-tech/software-deployment-as-architecture-648867bdb77c', 'Implementación como Arquitectura', CI_CD_KEY, 'Deploy & Arquitectura', '2025/06/12')
+        .addRelatedItems(Keys.ARQUITECTURAS_DESCOMPOSICION_MODULAR, Keys.ARQUITECTURAS_MONOLITOS, Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES, Keys.VERSIONAMIENTO_VERSIONAMIENTO, Keys.APIS_REST_VS_MESSAGING, Keys.ANALISIS_BOUNDED_CONTEXT, Keys.MICROSERVICES_ARQUITECTURAS, Keys.CONTENEDORES_ORCHESTRATION, Keys.NUBE_NATIVE, Keys.MALAS_PRACTICAS_DEATH_BY_MICROSERVICES)
+    ],
     [Keys.CD_CI_INFRAESTRUCTURE_DESIGN, new Referencia('https://medium.com/@osomudeyazudonu/10-infrastructure-design-choices-that-will-haunt-you-in-production-31c1c83fb2a3', 'Diseño & infraestructura', CI_CD_KEY, 'Diseño & infraestructura', '2025/09/02')
         .addRelatedItems(Keys.TESTING_ADVANCED_ENVIRONMENT, Keys.SYSTEM_THINKING_II, Keys.SYSTEM_DESIGN_SINGLE_POINT_OF_FAILURE, Keys.APIS_API_FIRST, Keys.MICROSERVICES_ADVANCED_PROBLEMS, Keys.LEYES_MURPHY, Keys.SECURITY_LEAST_PRIVILEGE, Keys.PATRONES_DYSTRIBUTED_SYSTEMS, Keys.CALIDAD_CODE_REVIEWS, Keys.HARDWARE_ESCALAMIENTO, Keys.NUBE_DISPONIBILITY, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRACING)
         .addMoreReferences('https://www.enterspeed.com/insights/it-infrastructure-design-building-a-scalable-and-secure-foundation')
@@ -1525,7 +1555,7 @@ export const MICRO_SERVICES_REF = new Map<string, Referencia>([
         .addMoreReferences('https://codefarm0.medium.com/5-critical-microservices-patterns-that-actually-work-in-production-66716db72b41')
     ],
     [Keys.MICROSERVICES_ESENTIAL_COMPONENTS, new Referencia('https://newsletter.systemdesigncodex.com/p/essential-components-of-a-production-069', 'Componentes Esenciales', MICRO_SERVICES_KEY, 'Componentes Esenciales', '2025/06/23')
-        .addRelatedItems(Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.SYSTEM_DESIGN_QUEUES, Keys.HARDWARE_ESCALAMIENTO, Keys.FRAMEWORKS_FRAMEWORKS, Keys.PERSISTENCY_ADVANCED_SQL_NO_SQL, Keys.META_CARACTERISTICAS_CACHE, Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.NUBE_OBSERVABILIDAD, Keys.APIS_RATE_LIMITING)
+        .addRelatedItems(Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.SYSTEM_DESIGN_QUEUES, Keys.HARDWARE_ESCALAMIENTO, Keys.FRAMEWORKS_FRAMEWORKS, Keys.PERSISTENCY_ADVANCED_SQL_NO_SQL, Keys.META_CARACTERISTICAS_CACHE, Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.OBSERVABILIDAD_OBSERVABILITY, Keys.APIS_RATE_LIMITING)
     ],
     [Keys.MICROSERVICES_PUSH_PULL_EVENTS, new Referencia('https://theburningmonk.com/2025/05/understanding-push-vs-poll-in-event-driven-architectures/', 'Push VS Poll', MICRO_SERVICES_KEY, 'Push VS Poll Events', '2025/06/04')
         .addRelatedItems(Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.SYSTEM_DESIGN_QUEUES, Keys.ANALISIS_LIGHT_EVENTS_VS_RICH_EVENTS, Keys.PARADIGMAS_REACTIVO)
@@ -1544,13 +1574,13 @@ export const MICRO_SERVICES_ADVANCED_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.TESTING_MOCKS, Keys.APIS_REST_VS_MESSAGING, Keys.ARQUITECTURAS_MONOLITOS)
     ],
     [Keys.MICROSERVICES_ADVANCED_ANTI_PATTERNS, new Referencia('https://blog.bitsrc.io/10-microservice-anti-patterns-278bcb7f385d', 'Antipatrones & Microservicios', MICRO_SERVICES_ADVANCED_KEY, 'Antipatrones', '2025/01/19')
-        .addRelatedItems(Keys.SYSTEM_DESIGN_SINGLE_POINT_OF_FAILURE, Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION, Keys.NUBE_OBSERVABILIDAD)
+        .addRelatedItems(Keys.SYSTEM_DESIGN_SINGLE_POINT_OF_FAILURE, Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION, Keys.OBSERVABILIDAD_OBSERVABILITY)
     ],
     [Keys.MICROSERVICES_ADVANCED_PRODUCER_CONSUMER_PROBLEM, new Referencia('https://www.baeldung.com/java-producer-consumer-problem', 'Problema Productor Consumidor', MICRO_SERVICES_ADVANCED_KEY, 'Productor-Consumidor', '2025/02/15')
         .addRelatedItems(Keys.SYSTEM_DESIGN_QUEUES, Keys.META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM, Keys.META_CARACTERISTICAS_PROCESS_AND_THREADS)
     ],
     [Keys.MICROSERVICES_ADVANCED_IDEMPOTENCY_I, new Referencia('https://microservices.io/post/microservices/patterns/2020/10/16/idempotent-consumer.html', 'Idempotencia & Duplicacion I', MICRO_SERVICES_ADVANCED_KEY, 'Idempotencia I', '2025/09/01')
-        .addRelatedItems(Keys.SYSTEM_DESIGN_QUEUES, Keys.ANALISIS_DELIVERY_GUARANTED, Keys.ANALISIS_LIGHT_EVENTS_VS_RICH_EVENTS, Keys.PATRONES_OUTBOX, Keys.ANALISIS_DATA_CHANGE_DATA_CAPTURE, Keys.PERSISTENCY_ADVANCED_NO_SQL_TYPES, Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.SYSTEM_DESIGN_COMMON_METRICS, Keys.PERSISTENCY_INDICES, Keys.PERSISTENCY_ADVANCED_UPSERT)
+        .addRelatedItems(Keys.SYSTEM_DESIGN_QUEUES, Keys.ANALISIS_DELIVERY_GUARANTED, Keys.ANALISIS_LIGHT_EVENTS_VS_RICH_EVENTS, Keys.PATRONES_OUTBOX, Keys.ANALISIS_DATA_CHANGE_DATA_CAPTURE, Keys.PERSISTENCY_ADVANCED_NO_SQL_TYPES, Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.OBSERVABILIDAD_COMMON_METRICS, Keys.PERSISTENCY_INDICES, Keys.PERSISTENCY_ADVANCED_UPSERT)
         .addMoreReferences('https://nejckorasa.github.io/posts/idempotent-kafka-procesing/', 'https://medium.com/@zdb.dashti/exactly-once-semantics-using-the-idempotent-consumer-pattern-927b2595f231', 'https://www.rabbitmq.com/docs/confirms')
     ],
     [Keys.MICROSERVICES_ADVANCED_IDEMPOTENCY_II, new Referencia('https://medium.com/javarevisited/idempotency-in-distributed-systems-preventing-duplicate-operations-85ce4468d161', 'Idempotencia & Duplicacion II', MICRO_SERVICES_ADVANCED_KEY, 'Idempotencia II', '2026/02/15')
@@ -1561,28 +1591,47 @@ export const MICRO_SERVICES_ADVANCED_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.META_CARACTERISTICAS_CACHE, Keys.PERSISTENCY_ADVANCED_SCALING_DB)
     ],
     [Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRACING, new Referencia('https://www.dynatrace.com/news/blog/what-is-distributed-tracing/', 'Tracing Distribuido', MICRO_SERVICES_ADVANCED_KEY, 'Tracing Distribuido', '2025/02/23')
-        .addRelatedItems(Keys.NUBE_OBSERVABILIDAD, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.BUENAS_PRACTICAS_DEBUGGING, Keys.BUENAS_PRACTICAS_LOGGING)
+        .addRelatedItems(Keys.OBSERVABILIDAD_OBSERVABILITY, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.BUENAS_PRACTICAS_DEBUGGING, Keys.BUENAS_PRACTICAS_LOGGING)
     ],
     [Keys.MICROSERVICES_ADVANCED_DEAD_LETTER_QUEUE, new Referencia('https://www.geeksforgeeks.org/dead-letter-queue-system-design/', 'Dead Letter Queue - DLQ & DLT', MICRO_SERVICES_ADVANCED_KEY, 'Dead Letter Queue', '2025/02/26')
         .addRelatedItems(Keys.SYSTEM_DESIGN_QUEUES)
     ],
     [Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRANSACTIONS, new Referencia('https://gist.github.com/rponte/9477858e619d8b986e17771c8be7827f', 'Transacciones Distribuidas', MICRO_SERVICES_ADVANCED_KEY, 'Transacciones Distribuidas', '2025/03/14')
-        .addRelatedItems(Keys.NUBE_TWO_PHASE_COMMIT, Keys.PERSISTENCY_ACID, Keys.PATRONES_SAGA, Keys.NUBE_OBSERVABILIDAD, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.PERSISTENCY_CONSISTENCY)
+        .addRelatedItems(Keys.NUBE_TWO_PHASE_COMMIT, Keys.PERSISTENCY_ACID, Keys.PATRONES_SAGA, Keys.OBSERVABILIDAD_OBSERVABILITY, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.PERSISTENCY_CONSISTENCY)
     ],
     [Keys.MICROSERVICES_ADVANCED_PROBLEMS, new Referencia('https://blog.container-solutions.com/why-im-no-longer-talking-to-architects-about-microservices', 'Problemas de los Microservicios', MICRO_SERVICES_ADVANCED_KEY, 'Problemas', '2025/03/17')
-        .addRelatedItems(Keys.CONTENEDORES_ORCHESTRATION, Keys.MALAS_PRACTICAS_DEATH_BY_MICROSERVICES, Keys.CD_CI_DEV_OPS, Keys.METODOLOGIAS_AGILES, Keys.NUBE_SRE, Keys.NUBE_OBSERVABILIDAD, Keys.PEOPLE_ONA)
+        .addRelatedItems(Keys.CONTENEDORES_ORCHESTRATION, Keys.MALAS_PRACTICAS_DEATH_BY_MICROSERVICES, Keys.CD_CI_DEV_OPS, Keys.METODOLOGIAS_AGILES, Keys.OBSERVABILIDAD_SRE, Keys.OBSERVABILIDAD_OBSERVABILITY, Keys.PEOPLE_ONA)
     ],
     [Keys.MICROSERVICES_ADVANCED_ARQUITECTURE_BACK_MONOLITH, new Referencia('https://medium.com/mr-plan-publication/the-surprising-comeback-of-monoliths-why-big-names-are-moving-applications-from-microservices-to-6f43a69179dc', '¿ Regresar a un monolito ?', MICRO_SERVICES_ADVANCED_KEY, '¿ Regresar a un monolito ?', '2025/07/27')
         .addRelatedItems(Keys.ARQUITECTURAS_MONOLITOS, Keys.ARQUITECTURAS_HOW_TO_CHOOSE_IT, Keys.ARQUITECTURAS_MODULITHS, Keys.ANALISIS_COHESERS_DECOUPLERS, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.PRINCIPIOS_POC, Keys.NUBE_DISPONIBILITY)
         .addMoreReferences('https://medium.com/mr-plan-publication/monolith-architecture-software-architecture-part-1-845a04ab303c', 'https://medium.com/mr-plan-publication/microservices-and-microservice-architecture-software-architecture-part-2-7ee5fb796270')
     ],
     [Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_MONOLITH, new Referencia('https://levelup.gitconnected.com/your-microservices-strategy-is-broken-you-built-a-distributed-monolith-332f74867f73', 'Monolito distribuido', MICRO_SERVICES_ADVANCED_KEY, 'Monolito distribuido', '2025/09/27')
-        .addRelatedItems(Keys.NUBE_CAP_TEOREMA, Keys.ARQUITECTURAS_MONOLITOS, Keys.ARQUITECTURAS_MODULITHS, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.TESTING_INTEGRATION, Keys.NUBE_TWO_PHASE_COMMIT, Keys.PATRONES_SAGA, Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.META_CARACTERISTICAS_CACHE_AND_TYPES, Keys.CD_CI_FAILOVER, Keys.CD_CI_DEPLOYMENT_PIPELINES, Keys.PATRONES_STRANGLER_FIG, Keys.ANALISIS_STRATEGIC_DESIGN, Keys.NUBE_SRE, Keys.CD_CI_DEV_OPS, Keys.VERSIONAMIENTO_VERSIONAMIENTO)
+        .addRelatedItems(Keys.NUBE_CAP_TEOREMA, Keys.ARQUITECTURAS_MONOLITOS, Keys.ARQUITECTURAS_MODULITHS, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.TESTING_INTEGRATION, Keys.NUBE_TWO_PHASE_COMMIT, Keys.PATRONES_SAGA, Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.META_CARACTERISTICAS_CACHE_AND_TYPES, Keys.CD_CI_FAILOVER, Keys.CD_CI_DEPLOYMENT_PIPELINES, Keys.PATRONES_STRANGLER_FIG, Keys.ANALISIS_STRATEGIC_DESIGN, Keys.OBSERVABILIDAD_SRE, Keys.CD_CI_DEV_OPS, Keys.VERSIONAMIENTO_VERSIONAMIENTO)
     ],
     [Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_LOCKING, new Referencia('https://codefarm0.medium.com/distributed-locking-under-the-hood-of-coordination-2ef8b039c13f', 'Bloqueo distribuido', MICRO_SERVICES_ADVANCED_KEY, 'Bloqueo distribuido', '2025/10/31')
-        .addRelatedItems(Keys.PERSISTENCY_ADVANCED_LOCKING, Keys.META_CARACTERISTICAS_DEAD_LOCKS, Keys.META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM, Keys.PATRONES_DYSTRIBUTED_SYSTEMS, Keys.SYSTEM_DESIGN_COMMON_METRICS)
+        .addRelatedItems(Keys.PERSISTENCY_ADVANCED_LOCKING, Keys.META_CARACTERISTICAS_DEAD_LOCKS, Keys.META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM, Keys.PATRONES_DYSTRIBUTED_SYSTEMS, Keys.OBSERVABILIDAD_COMMON_METRICS)
     ],
     [Keys.MICROSERVICES_ADVANCED_PROCESSING_ARCHETYPES, new Referencia('https://medium.com/@jaredhatfield/lessons-in-asynchronous-messaging-patterns-pitfalls-and-best-practices-35254b3218e8', 'Arquetipos de procesamiento de mensajes', MICRO_SERVICES_ADVANCED_KEY, 'Arquetipos Procesamiento', '2026/01/01')
-        .addRelatedItems(Keys.ANALISIS_DATA_BATCH_VS_STREAM, Keys.ANALISIS_DATA_ETL_ELT, Keys.BUENAS_PRACTICAS_AGGREGATES, Keys.PATRONES_FOR_INTEGRATION, Keys.PATRONES_MESSAGING, Keys.PATRONES_RESILIENCIA, Keys.ANALISIS_TYPE_EVENTS, Keys.SYSTEM_DESIGN_COMMON_METRICS)
+        .addRelatedItems(Keys.ANALISIS_DATA_BATCH_VS_STREAM, Keys.ANALISIS_DATA_ETL_ELT, Keys.BUENAS_PRACTICAS_AGGREGATES, Keys.PATRONES_FOR_INTEGRATION, Keys.PATRONES_MESSAGING, Keys.PATRONES_RESILIENCIA, Keys.ANALISIS_TYPE_EVENTS, Keys.OBSERVABILIDAD_COMMON_METRICS)
     ],
+]);
+
+export const OBSERVABILIDAD_KEY = 'Observabilidad';
+export const OBSERVABILIDAD_REF = new Map<string, Referencia>([
+    [Keys.OBSERVABILIDAD_OBSERVABILITY, new Referencia('https://medium.com/@rcougil/software-observabilidad-logs-m%C3%A9tricas-y-trazabilidad-d5bcca56608d', 'Observabilidad', OBSERVABILIDAD_KEY, 'Observabilidad', '2024/05/26', '2025/11/02')
+        .addRelatedItems(Keys.META_ESTRUCTURAS_LOGS, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRACING, Keys.CD_CI_MONITORING_AND_ALERTS)
+        .addMoreReferences('https://engineering.theblueground.com/a-software-engineers-guide-to-observability/')
+    ],
+    [Keys.OBSERVABILIDAD_COMMON_METRICS, new Referencia('https://medium.com/javarevisited/dont-go-into-your-system-design-interview-without-mastering-this-31ee7af2ed7b', 'Metricas comunes en System Design', OBSERVABILIDAD_KEY, 'Metricas comunes', '2025/04/26')
+        .addRelatedItems(Keys.META_CARACTERISTICAS_CACHE, Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.CD_CI_FAILOVER, Keys.PERSISTENCY_ACID)
+        .addMoreReferences("https://systemdesignschool.io/fundamentals/qps", "https://speedscale.com/blog/determine-transactions-per-second/", "https://medium.com/@alexa.polly007/understanding-caching-eviction-invalidation-patterns-and-their-use-cases-9fbfd34be970")
+    ],
+    [Keys.OBSERVABILIDAD_MONITOREO, new Referencia('https://www.hiberus.com/crecemos-contigo/uso-de-los-apm-monitoreo-del-rendimiento-de-aplicaciones/', 'Aplication Performance Management', OBSERVABILIDAD_KEY, 'Monitoreo(APM)')
+        .addRelatedItems(Keys.HARDWARE_IO_BOUND_CPU_BOUND, Keys.BUENAS_PRACTICAS_LOGGING, Keys.CD_CI_MONITORING_AND_ALERTS)
+    ],
+    [Keys.OBSERVABILIDAD_SRE, new Referencia('https://aws.amazon.com/es/what-is/sre/', 'Ingenieria de Fiabilidad del Sitio', OBSERVABILIDAD_KEY, 'SRE', '2025/03/15')
+        .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_SLDC, Keys.CD_CI_DEV_OPS)
+        .addMoreReferences('https://sre.google/books/')
+    ]
 ]);
