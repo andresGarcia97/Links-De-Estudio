@@ -41,7 +41,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.HARDWARE_IO_BOUND_CPU_BOUND;
+export const LAST_ITEM = Keys.OBSERVABILIDAD_CARDINALITY;
 export const LAST_UPDATE = Keys.PERSISTENCY_ADVANCED_N_1_SELECTS;
 
 export const AGILES_KEY = 'Agiles';
@@ -1633,5 +1633,8 @@ export const OBSERVABILIDAD_REF = new Map<string, Referencia>([
     [Keys.OBSERVABILIDAD_SRE, new Referencia('https://aws.amazon.com/es/what-is/sre/', 'Ingenieria de Fiabilidad del Sitio', OBSERVABILIDAD_KEY, 'SRE', '2025/03/15')
         .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_SLDC, Keys.CD_CI_DEV_OPS)
         .addMoreReferences('https://sre.google/books/')
-    ]
+    ],
+    [Keys.OBSERVABILIDAD_CARDINALITY, new Referencia('https://grafana.com/blog/what-are-cardinality-spikes-and-why-do-they-matter/', 'Alta Cardinalidad', OBSERVABILIDAD_KEY, 'Cardinalidad', '2026/03/04')
+        .addMoreReferences('https://chronosphere.io/learn/what-is-high-cardinality/')
+    ],
 ]);

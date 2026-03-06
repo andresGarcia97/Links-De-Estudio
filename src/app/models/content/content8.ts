@@ -1825,5 +1825,17 @@ export const OBSERVABILIDAD =
                 ' &bull; Por ejemplo el equipo tecnico resolvera el problema de su cliente dentro de las 24 horas posteriores al informe ó se reembolsara al cliente ',
                 '<strong>Presupuesto de errores:</strong> Margenes admisibles para fallos del SLO, si este se sobrepasa, se deben destinar recursos para cumplirlo ',
                 ' &bull; Por ejemplo si se tiene un tiempo de actividad del 99,95% se permite un periodo de inactividad del 0,05% ',
+            ]),
+        new Item(Keys.OBSERVABILIDAD_CARDINALITY,
+            [
+                '- La cardinalidad se puede definir como la cantidad de series de tiempo únicas generadas por las combinaciones posibles de etiquetas de una métrica ',
+                '- Esta crece de manera exponencial con la cantidad de etiquetas y los valores únicos que cada una pueda tomar ',
+                '- Si el crecimiento es desmesurado, puede afectar el funcionamiento y el uso de recursos de la herramienta de monitoreo ',
+                '- Hay etiquetas concretas que se consideran problematicas debido a su alta variabilidad intrinseca, como identificadores de usuario o de peticiones ',
+                '',
+                '<strong>Como reducir la cardinalidad:</strong>',
+                '- Para cuidar la infraestructura y tener un optimo funcionamiento, debe ser un equilibrio entre tener mucha o poca información ',
+                '- Tener más datos no necesariamente significa que algo sea <em>mejor</em>, las metricas recopiladas deben ayudar a la comprensión del sistema ',
+                '- Controlar el flujo de datos es muy importante, las métricas que llegan en grandes volúmenes sin contexto ni correlación entre sí, no aportan valor ',
             ])
     ];
