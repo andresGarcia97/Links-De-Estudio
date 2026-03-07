@@ -42,7 +42,7 @@ export class LinkReferencia {
 }
 
 export const LAST_ITEM = Keys.NEURO_MARKETING_CUATRO_P;
-export const LAST_UPDATE = Keys.PERSISTENCY_ADVANCED_N_1_SELECTS;
+export const LAST_UPDATE = Keys.NEURO_MARKETING_MULTI_OMNI_CANAL;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -1464,11 +1464,13 @@ export const NEURO_MARKETING_REF = new Map<string, Referencia>([
     [Keys.NEURO_MARKETING_B2B_B2C, new Referencia('https://www.uup.es/blog/b2b-y-b2c-que-son-y-que-diferencias-hay-entre-ambos/', 'B2B & B2C', NEURO_MARKETING_KEY, 'B2B & B2C', '2023/02/04')],
     [Keys.NEURO_MARKETING_MATRIZ_ERIC, new Referencia('http://www.azentoconsulting.com/2020/07/21/como-crear-un-nuevo-modelo-de-negocio-o-reformular-nuestro-modelo-de-negocio-ya-existente-la-matriz-eric/', 'Matriz ERIC', NEURO_MARKETING_KEY, 'Matriz ERIC', '2023/01/29')],
     [Keys.NEURO_MARKETING_GAMIFICACION, new Referencia('https://www.yeeply.com/blog/gamificacion-marketing-estrategias-ejemplos/', 'Gamificacion & Marketing', NEURO_MARKETING_KEY, 'Gamificacion & Marketing', '2023/02/08')],
-    [Keys.NEURO_MARKETING_MASLOW_BARRET, new Referencia('https://www.danielcolombo.com/los-7-niveles-de-consciencia-personal-y-empresarial-por-daniel-colombo/', 'Maslow & Barret', NEURO_MARKETING_KEY, 'Maslow & Barret', '2023/02/12')],
+    //[Keys.NEURO_MARKETING_MASLOW_BARRET, new Referencia('https://www.danielcolombo.com/los-7-niveles-de-consciencia-personal-y-empresarial-por-daniel-colombo/', 'Maslow & Barret', NEURO_MARKETING_KEY, 'Maslow & Barret', '2023/02/12')],
+    [Keys.NEURO_MARKETING_MASLOW_BARRET, new Referencia('https://www.equilia.es/es/2020/02/16/los-7-niveles-de-conciencia-de-richard-barrett/', 'Maslow & Barret', NEURO_MARKETING_KEY, 'Maslow & Barret', '2023/02/12', '2026/03/06')],
     [Keys.NEURO_MARKETING_CEREBRO_TRIURNO, new Referencia('https://www.educaciontrespuntocero.com/recursos/neuroeducacion-cerebro-triuno/', 'Cerebro Triurno', NEURO_MARKETING_KEY, 'Cerebro Triurno', '2023/02/19')],
     [Keys.NEURO_MARKETING_ELEMENT_VALUES, new Referencia('https://media.bain.com/elements-of-value/#', 'Elementos de Valor', NEURO_MARKETING_KEY, 'Elementos de Valor', '2023/02/25')],
-    [Keys.NEURO_MARKETING_MULTI_OMNI_CANAL, new Referencia('https://www.chakray.com/es/omnicanal-vs-multicanal-cual-es-la-diferencia/', 'Multi & Omni Canalidad', NEURO_MARKETING_KEY, 'Multi & Omni Canalidad', '2023/03/07')],
-    [Keys.NEURO_MARKETING_BUYER_PERSON, new Referencia('https://es.semrush.com/blog/como-crear-un-buyer-persona/', 'Buyer Persona', NEURO_MARKETING_KEY, 'Buyer Persona', '2023/03/11')],
+    //[Keys.NEURO_MARKETING_MULTI_OMNI_CANAL, new Referencia('https://www.chakray.com/es/omnicanal-vs-multicanal-cual-es-la-diferencia/', 'Multi & Omni Canalidad', NEURO_MARKETING_KEY, 'Multi & Omni Canalidad', '2023/03/07')],
+    [Keys.NEURO_MARKETING_MULTI_OMNI_CANAL, new Referencia('https://www.infobip.com/es/blog/omnicanalidad-vs-multicanalidad-en-que-se-diferencian-y-cuales-son-sus-beneficios', 'Multi & Omni Canalidad', NEURO_MARKETING_KEY, 'Multi & Omni Canalidad', '2023/03/07', '2026/03/06')],
+    [Keys.NEURO_MARKETING_BUYER_PERSON, new Referencia('https://www.semrush.com/blog/buyer-persona/', 'Buyer Persona', NEURO_MARKETING_KEY, 'Buyer Persona', '2023/03/11')],
     [Keys.NEURO_MARKETING_WHAT_IS, new Referencia('https://rockcontent.com/es/blog/neuromarketing/', 'Neuro Marketing', NEURO_MARKETING_KEY, 'Neuro Marketing', '2023/04/02')],
     [Keys.NEURO_MARKETING_SEMANTICA_PRAGMATICA, new Referencia('https://creatividadpersuasiva.cl/semiosis-sintaxis-semantica-y-pragmatica/', 'Semantica & Pragmatica', NEURO_MARKETING_KEY, 'Semantica & Pragmatica', '2023/05/22')],
     [Keys.NEURO_MARKETING_PNL, new Referencia('https://psicologiaymente.com/coach/principios-pnl-programacion-neurolinguistica', 'Programación Neurolinguistica', NEURO_MARKETING_KEY, 'Neurolinguistica', '2023/05/28')],
