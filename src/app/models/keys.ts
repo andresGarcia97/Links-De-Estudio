@@ -680,3 +680,4 @@ export const OBSERVABILIDAD_COMMON_METRICS = 'commonMetrics';
 export const OBSERVABILIDAD_MONITOREO = 'monitoreo(apm)';
 export const OBSERVABILIDAD_SRE = 'SRE';
 export const OBSERVABILIDAD_CARDINALITY = 'high-cardinality';
+export const OBSERVABILIDAD_ACTUATORS = 'actuators';

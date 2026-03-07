@@ -41,7 +41,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.OBSERVABILIDAD_CARDINALITY;
+export const LAST_ITEM = Keys.OBSERVABILIDAD_ACTUATORS;
 export const LAST_UPDATE = Keys.PERSISTENCY_ADVANCED_N_1_SELECTS;
 
 export const AGILES_KEY = 'Agiles';
@@ -1636,5 +1636,9 @@ export const OBSERVABILIDAD_REF = new Map<string, Referencia>([
     ],
     [Keys.OBSERVABILIDAD_CARDINALITY, new Referencia('https://grafana.com/blog/what-are-cardinality-spikes-and-why-do-they-matter/', 'Alta Cardinalidad', OBSERVABILIDAD_KEY, 'Cardinalidad', '2026/03/04')
         .addMoreReferences('https://chronosphere.io/learn/what-is-high-cardinality/')
+    ],
+    [Keys.OBSERVABILIDAD_ACTUATORS, new Referencia('https://medium.com/@gaddamnaveen192/stop-watching-production-fail-do-this-instead-446b7c44b62a', 'Actuators', OBSERVABILIDAD_KEY, 'Actuators', '2026/03/05')
+        .addRelatedItems(Keys.CD_CI_DI_RPO_RTO, Keys.META_CARACTERISTICAS_CACHE_AND_TYPES, Keys.PATRONES_RESILIENCIA)
+        .addMoreReferences('https://www.syscrest.com/2025/02/securing-spring-boot-actuator/')
     ],
 ]);
