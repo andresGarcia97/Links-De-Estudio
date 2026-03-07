@@ -947,7 +947,7 @@ export const CONTENEDORES =
 
 export const NEURO_MARKETING =
     [
-        new Item('pestel',
+        new Item(Keys.NEURO_MARKETING_PESTEL,
             [
                 '- Es una herramienta de gran utilidad para conocer el entorno de tu empresa, y elaborar planes estrategicos acertados ',
                 '- Nos ayuda a definir analisis macroeconomicos de la empresa y como diferentes factores externos afectan al negocio',
@@ -986,7 +986,7 @@ export const NEURO_MARKETING =
                 '  - Normativas sobre empleos                - Seguridad laboral',
                 '  - Propiedad intelectual                   - Licencias',
             ]),
-        new Item('matrizBcg',
+        new Item(Keys.NEURO_MARKETING_MATRIZ_BCG,
             [
                 '- Matriz de crecimiento para marketing estrategico, para saber la rentabilidad de los productos y decidir que estrategias usar ',
                 '- Es un concepto proveniendte de los años 70, y fue creada por <em>Boston Consulting Group</em> ',
@@ -1023,7 +1023,7 @@ export const NEURO_MARKETING =
                 '- Los mensajes en B2C suelen ser directos, claros y sencillos, en B2B describen el valor agregado que pueden aportar ',
                 '- La logica sigue siendo la misma, vender, lo que cambia es a quien le queremos vender y como se debe hacer ',
             ]),
-        new Item('eric',
+        new Item(Keys.NEURO_MARKETING_MATRIZ_ERIC,
             [
                 '- Como crear un nuevo modelo o reformular nuestro modelo ya existente, para brindar más valor hacia nuestros consumidores ',
                 '<strong>Eliminar</strong> Completamente aquellas variables que no aportan valor hacia nuestro clientes existentes o futuros ',
@@ -1033,7 +1033,7 @@ export const NEURO_MARKETING =
                 '',
                 '- Parte de la clave en estos modelos de negocio es tomar decisiones divergentes frente a las propuestas ya existentes ',
             ]),
-        new Item('gamificacionMarketing',
+        new Item(Keys.NEURO_MARKETING_GAMIFICACION,
             [
                 '- La gamificación en marketing va más alla de usar juegos moviles, esta toma mecanicas y recursos de estos, aplicandolas a otros contextos ',
                 '',
@@ -1050,7 +1050,7 @@ export const NEURO_MARKETING =
                 '- Las recompensas, no siempre deben ser fisicas, a veces pueden ser simples códigos redimibles, lo importante es que le agrade al publico ',
                 '- Sin riesgo no hay exito, la innovación es parte del proceso y nunca debe ser dejada de lado ',
             ]),
-        new Item('maslow-barret',
+        new Item(Keys.NEURO_MARKETING_MASLOW_BARRET,
             [
                 '- Existen necesidades basicas que todo ser humano debe satisfacer, estas fueron planteadas por <em>Abraham Maslow</em> de forma piramidal ',
                 '',
@@ -1071,7 +1071,7 @@ export const NEURO_MARKETING =
                 '<strong> Nivel 6: Contribución</strong> Aca se focalizan los aportes individuales, de manera que sean utiles para el colectivo y dejen una "huella", un legado ',
                 '<strong> Nivel 7: Servicio</strong> Complementa el Nivel 5 de Maslow como los anteriores, aca se conecta con un proposito mayor, el porque de nuestra existencia ',
             ]),
-        new Item('cerebroTriurno',
+        new Item(Keys.NEURO_MARKETING_CEREBRO_TRIURNO,
             [
                 '- El cerebro Triurno responde a una clasificación basada en la evolución del ser humano como especie ',
                 '- Para un enfoque practico y con una mirada educativa, se pueden detallar 3 grandes funcionalidades del cerebro ',
@@ -1088,7 +1088,7 @@ export const NEURO_MARKETING =
                 '- Para otras areas como el Marketing y los negocios, no solo se debe apelar al intelecto, también al lado emocional ',
                 ' - de manera que la atención se centre en los aspectos que queremos estimular para vender nuestros productos, ',
             ]),
-        new Item('elementValues',
+        new Item(Keys.NEURO_MARKETING_ELEMENT_VALUES,
             [
                 '- Es un desglose de la matriz de Maslow, donde cada escalafon se puede dividir en más necesidades, con diferentes perpectivas ',
                 '',
@@ -1111,7 +1111,7 @@ export const NEURO_MARKETING =
                 '',
                 'Para una descripción más detallada y ejemplos de la vida real, puedes ir a la fuente original de <em>Bain & Company</em>'
             ]),
-        new Item('multi&omniCanal',
+        new Item(Keys.NEURO_MARKETING_MULTI_OMNI_CANAL,
             [
                 '- En una solución hacia los clientes multicanal, el cliente se enfrenta a una experiencia de compra fragmentada, ',
                 ' - con diversas fuentes de interrupciones o cortes, cuando se pasa de un canal a otro ',
@@ -1122,7 +1122,7 @@ export const NEURO_MARKETING =
                 '- La omnicanalidad representa un desafio extra a nivel de tecnologias además del compromiso de todos los empleados ',
                 ' - independientemente del nivel en que se encuentren ',
             ]),
-        new Item('buyerPersona',
+        new Item(Keys.NEURO_MARKETING_BUYER_PERSON,
             [
                 '- Un Buyer Persona, es la definición para todo negocio de su cliente ideal, un concepto que siempre esta presente en el marketing ',
                 '- Es una descripción abstracta de un consumidor ideal, basado en investigaciones de mercado, competidores, y perfiles de clientes ',
@@ -1171,7 +1171,7 @@ export const NEURO_MARKETING =
                 '<strong>- El diseño:</strong> Todo diseño que involucre a tu empresa, debe ser impecable y tener una razon de ser, acorde a tu negocio ',
                 '<strong>- Ofrece pocas opciones de elección:</strong> No solo es saber que hacer, también es que evitar, por eso se dice que <em>"menos es más"</em>',
             ]),
-        new Item('semanticaPragmatica',
+        new Item(Keys.NEURO_MARKETING_SEMANTICA_PRAGMATICA,
             [
                 '<strong>Semiosis:</strong> Se puede entender como el proceso o influencia, que suponga una colaboración entre 3 partes, como puede ser, ',
                 ' - un signo, su objeto y el interprete, ampliando el concepto a algo mas que simples sujetos humanos, de ahi que se puedan distinguir 3 dimensiones: ',
@@ -1185,7 +1185,7 @@ export const NEURO_MARKETING =
                 '<strong>Dimesión Pragmatica:</strong> <em>Es la relación de los signos con sus interpretes</em>, Esto supone una complejidad extra y que es relativa, ',
                 ' - para cada emisor y su respectivo interprete, ya que no necesariamente todo mensaje tenga el mismo significado, para ambas partes ',
             ]),
-        new Item('pnl',
+        new Item(Keys.NEURO_MARKETING_PNL,
             [
                 '- Son una series de estrategias que se centra en identificar y usar modelos de pensamiento que influyan sobre una persona, para resolver problemas ',
                 '',
@@ -1202,7 +1202,7 @@ export const NEURO_MARKETING =
                 '<strong>- Todo fracaso es una oportunidad:</strong> Estos deben verse como medidas que permiten la auto superación ',
                 '<strong>- Si algo no funciona, probar de otra manera:</strong> Si algo no funciona pero siempre intentas lo mismo, no esperes resultados diferentes ',
             ]),
-        new Item('jobsToBeDone',
+        new Item(Keys.NEURO_MARKETING_JOBS_TO_BE_DONE,
             [
                 '- Es una metodologia desarrollada para conocer mejor a tu grupo de consumidores',
                 '- Las personas no suelen comprar ropar para vestirse, al menos no exclusivamente por esta razon, pueden buscar autoestima, estatus, comodidad, etc.. ',
@@ -1212,6 +1212,31 @@ export const NEURO_MARKETING =
                 '- Aca es importante enfocar lo que el cliente quiere resolver y no lo que el cliente quiere comprar',
                 '- Muchas de las razones suelen tener una dimensión funcional, social o emocional, y tener un mercado el cual puede ser mejor explotado ',
                 '- Para esto la <em>segmetación</em>, <em>Buyer persona</em> y <em>Big data</em> suelen ser herramientas utiles',
+            ]),
+        new Item(Keys.NEURO_MARKETING_CUATRO_P,
+            [
+                '- En 1960, el profesor <em>E. Jerome McCarthy</em>, de la Universidad Estatal de Michigan, introdujo por primera vez el concepto de ',
+                ' - marketing mix y las 4 P del marketing en su libro <em>Basic Marketing: A Managerial Approach</em>.',
+                '',
+                '<strong>Product:</strong> Es el eje central de cualquier estrategia comercial, este es el valor tangible o intangible con el que se pretende ',
+                ' - satisfacer las necesidades de los clientes actuales y de los potenciales, de manera efectiva ',
+                '',
+                '<strong>Price:</strong> Valor monetario que el cliente debe pagar para adquirir el producto o servicio, una fijación inadecuada ',
+                ' - puede impactar negativamente la demanda, disminuir la competitividad y reducir las oportunidades de venta ',
+                '',
+                '<strong>Place:</strong> Es el medio o canal por el cual el producto llegara a las manos del consumidor, este concepto no se limita ',
+                ' - a un punto de venta fisico, tambien puede referirse o incluir los canales digitales y las estrategias omnicanal ',
+                '',
+                '<strong>Promotion:</strong> Engloba todas las acciones y estrategias destinadas a dar a conocer el producto, como posicionamiento, persuasión, ',
+                ' - buscar un mercado objetivo, entender al consumidor, activaciones organicas y personalización ',
+                '',
+                '- En 1981, <em>Bernard Booms</em> y <em>Mary Bitner</em> introdujeron tres nuevas <strong>P</strong>, enfocadas al sector de servicios',
+                '',
+                '<strong>People:</strong> El personal que trabaja en el equipo es parte intrínseca de la calidad del producto/servicio, es una impacto directo ',
+                '',
+                '<strong>Process:</strong> La optimización de procesos resulta fundamental, para ofrecer productos/experiencias satisfactorios ',
+                '',
+                '<strong>Physical Evidence:</strong> Locales, el color, los logos, empaques, son elementos tangibles que pueden cambiar la percepción de la marca ',
             ])
     ];
 
