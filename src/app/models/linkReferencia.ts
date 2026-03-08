@@ -41,8 +41,8 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.NEURO_MARKETING_CUATRO_P;
-export const LAST_UPDATE = Keys.NEURO_MARKETING_MULTI_OMNI_CANAL;
+export const LAST_ITEM = Keys.REFACTORING_ERRORS_ON_CLEAN_CODE;
+export const LAST_UPDATE = Keys.REFACTORING_CLEAN_CODE;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -1079,7 +1079,13 @@ export const TESTING_ADVANCED_REF = new Map<string, Referencia>([
 
 export const REFACTORING_KEY = 'Refactorizacion';
 export const REFACTORING_REF = new Map<string, Referencia>([
-    [Keys.REFACTORING_CLEAN_CODE, new Referencia('https://refactoring.guru/es/refactoring/what-is-refactoring', '¿ Que es Codigó Limpio ?', REFACTORING_KEY, 'Codigó Limpio')],
+    [Keys.REFACTORING_CLEAN_CODE, new Referencia('https://refactoring.guru/es/refactoring/what-is-refactoring', '¿ Que es Codigó Limpio ?', REFACTORING_KEY, 'Codigó Limpio', '', '2026/03/07')
+        .addRelatedItems(Keys.PRINCIPIOS_KISS, Keys.PRINCIPIOS_DRY, Keys.PRINCIPIOS_YAGNI, Keys.CONOCIMIENTOS_EMPIRICOS_CODE_MAINTAINER)
+    ],
+    [Keys.REFACTORING_ERRORS_ON_CLEAN_CODE, new Referencia('https://medium.com/@vndpal/10-popular-clean-code-practices-that-do-more-harm-than-good-5ddcf7db90f8', 'Errores a evitar en el Codigó Limpio', REFACTORING_KEY, 'Errores & Codigó Limpio', '2026/03/07')
+        .addRelatedItems(Keys.BUENAS_PRACTICAS_INDIRECTION, Keys.POO_COUPLING_AND_COHESION, Keys.TESTING_PRINCIPLES, Keys.MALAS_PRACTICAS_OVER_ENGINEERING, Keys.BUENAS_PRACTICAS_EXCEPTIONS)
+        .addMoreReferences('https://sandimetz.com/blog/2016/1/20/the-wrong-abstraction')
+    ],
     [Keys.REFACTORING_DEUDA_TECNICA, new Referencia('https://refactoring.guru/es/refactoring/technical-debt', 'Deuda tecnica', REFACTORING_KEY, 'Deuda tecnica')],
     [Keys.REFACTORING_DEUDA_TECNICA_TYPES, new Referencia('https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/deuda-tecnica-explicada/', 'Tipos de deuda tecnica', REFACTORING_KEY, 'Tipos de deuda', '', '2025/07/05')
         .addRelatedItems(Keys.AGILES_MANIFEST_AGIL, Keys.CALIDAD_CLEAN_CODE)
