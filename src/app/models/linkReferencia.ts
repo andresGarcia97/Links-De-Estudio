@@ -42,7 +42,7 @@ export class LinkReferencia {
 }
 
 export const LAST_ITEM = Keys.REFACTORING_ERRORS_ON_CLEAN_CODE;
-export const LAST_UPDATE = Keys.REFACTORING_CLEAN_CODE;
+export const LAST_UPDATE = Keys.POO_DESIGN_COUPLING;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -938,8 +938,9 @@ export const POO_REF = new Map<string, Referencia>([
     ],
     [Keys.POO_COMPOSICION, new Referencia('https://www.seas.es/blog/informatica/agregacion-vs-composicion-en-diagramas-de-clases-uml/', 'Agregación & Composición', POO_KEY, 'Relaciones')],
     [Keys.POO_STATIC, new Referencia('https://desarrolloweb.com/articulos/metodos-atributos-static-poo.html', 'palabra reservada static', POO_KEY, 'Static en POO')],
-    [Keys.POO_DESIGN_COUPLING, new Referencia('https://jummp.wordpress.com/2010/06/26/acoplamiento-aferente-acoplamiento-eferente-inestabilidad-y-abstraccion-i/', 'Tipos de acoplamiento', POO_KEY, 'Acoplamiento', '', '2025/05/14')
-        .addRelatedItems(Keys.ANALISIS_COHESERS_DECOUPLERS)
+    [Keys.POO_DESIGN_COUPLING, new Referencia('https://jummp.wordpress.com/2010/06/26/acoplamiento-aferente-acoplamiento-eferente-inestabilidad-y-abstraccion-i/', 'Tipos de acoplamiento', POO_KEY, 'Acoplamiento', '', '2026/03/08')
+        .addRelatedItems(Keys.ANALISIS_COHESERS_DECOUPLERS, Keys.SYSTEM_THINKING_II)
+        .addMoreReferences('https://jummp.wordpress.com/2010/06/27/acoplamiento-aferente-acoplamiento-eferente-inestabilidad-y-abstraccion-ii/', 'https://jummp.wordpress.com/2010/09/19/desarrollo-de-software-la-cohesion/')
     ],
     [Keys.POO_DESIGN_BY_CONTRACT, new Referencia('https://dosideas.com/wiki/Dise%C3%B1o_Por_Contrato', 'Diseño por Contratos', POO_KEY, 'Contratos I', '', '2025/01/08')],
     [Keys.POO_DESIGN_BY_CONTRACT_PARTS, new Referencia('https://opendatascience.com/dissecting-the-software-designing-approach-of-design-by-contract/', 'Pre/Post condiciones, Invariantes', POO_KEY, 'Contratos II', '2025/01/08')
