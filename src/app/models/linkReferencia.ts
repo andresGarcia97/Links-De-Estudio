@@ -41,7 +41,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.REFACTORING_ERRORS_ON_CLEAN_CODE;
+export const LAST_ITEM = Keys.OBSERVABILIDAD_CORRELATION_CAUSATION;
 export const LAST_UPDATE = Keys.POO_DESIGN_COUPLING;
 
 export const AGILES_KEY = 'Agiles';
@@ -1653,4 +1653,8 @@ export const OBSERVABILIDAD_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.CD_CI_DI_RPO_RTO, Keys.META_CARACTERISTICAS_CACHE_AND_TYPES, Keys.PATRONES_RESILIENCIA)
         .addMoreReferences('https://www.syscrest.com/2025/02/securing-spring-boot-actuator/')
     ],
+    [Keys.OBSERVABILIDAD_CORRELATION_CAUSATION, new Referencia('https://www.jmp.com/es/statistics-knowledge-portal/what-is-correlation', 'Correlación & Causalidad', OBSERVABILIDAD_KEY, 'Correlación & Causalidad', '2025/03/08')
+        .addRelatedItems(Keys.TESTING_GRAFOS_CAUSA_EFECTO)
+        .addMoreReferences('https://www.jmp.com/es/statistics-knowledge-portal/what-is-correlation/correlation-vs-causation')
+    ]
 ]);

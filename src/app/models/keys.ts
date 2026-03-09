@@ -694,3 +694,4 @@ export const OBSERVABILIDAD_MONITOREO = 'monitoreo(apm)';
 export const OBSERVABILIDAD_SRE = 'SRE';
 export const OBSERVABILIDAD_CARDINALITY = 'high-cardinality';
 export const OBSERVABILIDAD_ACTUATORS = 'actuators';
+export const OBSERVABILIDAD_CORRELATION_CAUSATION = 'correlation-vs-causation';
