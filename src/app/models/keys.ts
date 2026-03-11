@@ -227,6 +227,7 @@ export const NUBE_TWO_PHASE_COMMIT = 'twoPhaseCommit';
 export const NUBE_DISPONIBILITY = 'disponibilidad';
 export const NUBE_PACELC = 'PACELC';
 export const NUBE_NATIVE = 'cloudNative';
+export const NUBE_CDN_RTT = 'cdn-rtt';
 export const PARADIGMAS_IMPERATIVO = 'imperativo-declarativo';
 export const PARADIGMAS_FUNCIONAL = 'funcional';
 export const PARADIGMAS_REACTIVO = 'reactiva';

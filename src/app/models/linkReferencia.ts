@@ -41,7 +41,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.OBSERVABILIDAD_CORRELATION_CAUSATION;
+export const LAST_ITEM = Keys.NUBE_CDN_RTT;
 export const LAST_UPDATE = Keys.POO_DESIGN_COUPLING;
 
 export const AGILES_KEY = 'Agiles';
@@ -721,6 +721,10 @@ export const NUBE_REF = new Map<string, Referencia>([
     [Keys.NUBE_NATIVE, new Referencia('https://www.oracle.com/cloud/cloud-native/what-is-cloud-native/', 'Evolución de la Nube', NUBE_KEY, 'Cloud Native', '2025/02/09')
         .addRelatedItems(Keys.ARQUITECTURAS_MONOLITOS, Keys.ESTRATEGIAS_DESARROLLO_SLDC, Keys.MICROSERVICES_ANALISIS)
     ],
+    [Keys.NUBE_CDN_RTT, new Referencia('https://www.cloudflare.com/es-es/learning/cdn/what-is-a-cdn/', 'CDN & RTT', NUBE_KEY, 'CDN & RTT', '2026/03/10')
+        .addRelatedItems(Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.SECURITY_ATTACK_ON_MODEL_OSI)
+        .addMoreReferences('https://www.cloudflare.com/es-es/learning/cdn/glossary/round-trip-time-rtt/')
+    ]
 ]);
 
 export const APIS_KEY = 'APIs';
@@ -1195,7 +1199,9 @@ export const SECURITY_REF = new Map<string, Referencia>([
     ['lateralChanel', new Referencia('https://ciberseguridad.com/amenzas/ataque-canal-lateral/', 'Ataques de canal lateral', SECURITY_KEY, 'Ataques de canal lateral')],
     ['csp', new Referencia('https://auth0.com/blog/from-zero-to-hero-with-csp/', 'Content Security Police', SECURITY_KEY, 'Content Security Police', '2022/11/07')],
     ['csrf', new Referencia('https://www.welivesecurity.com/la-es/2015/04/21/vulnerabilidad-cross-site-request-forgery-csrf/', 'Cross Site Request Forgery', SECURITY_KEY, 'CSRF', '2023/01/06')],
-    [Keys.SECURITY_ATTACK_ON_MODEL_OSI, new Referencia('https://blog.bytebytego.com/p/ep97-10-good-coding-principles-to#%C2%A7top-network-security-cheatsheet', 'Ataques contra el Modelo OSI', SECURITY_KEY, 'Modelo OSI', '2024/03/21')],
+    [Keys.SECURITY_ATTACK_ON_MODEL_OSI, new Referencia('https://blog.bytebytego.com/p/ep97-10-good-coding-principles-to#%C2%A7top-network-security-cheatsheet', 'Ataques contra el Modelo OSI', SECURITY_KEY, 'Ataques Modelo OSI', '2024/03/21')
+        .addRelatedItems(Keys.HARDWARE_MODEL_OSI)
+    ],
     [Keys.SECURITY_LEAST_PRIVILEGE, new Referencia('https://www.cyberark.com/what-is/least-privilege/', 'Menor privilegio', SECURITY_KEY, 'Menor Privilegio', '2024/06/16')],
     [Keys.SECURITY_AUTHENTICATION_WAYS, new Referencia('https://medium.com/@iamprovidence/authentication-history-basic-digest-cookie-session-token-jwt-api-key-55d6c21be90b', 'Formas de Autenticación', SECURITY_KEY, 'Autenticación', '2024/07/21', '2025/09/28')
         .addRelatedItems(Keys.APIS_SECURITY)
@@ -1639,7 +1645,7 @@ export const OBSERVABILIDAD_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.META_CARACTERISTICAS_CACHE, Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.CD_CI_FAILOVER, Keys.PERSISTENCY_ACID)
         .addMoreReferences("https://systemdesignschool.io/fundamentals/qps", "https://speedscale.com/blog/determine-transactions-per-second/", "https://medium.com/@alexa.polly007/understanding-caching-eviction-invalidation-patterns-and-their-use-cases-9fbfd34be970")
     ],
-    [Keys.OBSERVABILIDAD_MONITOREO, new Referencia('https://www.hiberus.com/crecemos-contigo/uso-de-los-apm-monitoreo-del-rendimiento-de-aplicaciones/', 'Aplication Performance Management', OBSERVABILIDAD_KEY, 'Monitoreo(APM)')
+    [Keys.OBSERVABILIDAD_MONITOREO, new Referencia('https://www.hiberus.com/crecemos-contigo/uso-de-los-apm-monitoreo-del-rendimiento-de-aplicaciones/', 'Aplication Performance Management', OBSERVABILIDAD_KEY, 'Monitoreo(APM)', '', '2026/03/10')
         .addRelatedItems(Keys.HARDWARE_IO_BOUND_CPU_BOUND, Keys.BUENAS_PRACTICAS_LOGGING, Keys.CD_CI_MONITORING_AND_ALERTS)
     ],
     [Keys.OBSERVABILIDAD_SRE, new Referencia('https://aws.amazon.com/es/what-is/sre/', 'Ingenieria de Fiabilidad del Sitio', OBSERVABILIDAD_KEY, 'SRE', '2025/03/15')

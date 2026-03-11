@@ -274,6 +274,23 @@ export const NUBE =
                 '-------------------------------------------------------------',
                 '&brvbar; <strong>Infraestructura</strong> &brvbar; Centro de &brvbar; Servidores &brvbar;      Nube      &brvbar;  Los servidores locales dejan de usarse y las aplicaciones ',
                 '&brvbar;    <strong>& Hosting</strong>    &brvbar;   datos   &brvbar;  locales   &brvbar;                &brvbar;   distribuidas y altamente disponibles se vuelven comunes  ',
+            ]),
+        new Item(Keys.NUBE_CDN_RTT,
+            [
+                '<strong>CDN:</strong> Una red de entrega de contenido es un grupo de servidores distribuidos geográficamente que almacenan en <em>cache</em> contenido cerca de los usuarios ',
+                '- Permite transferir rápidamente cualquier clase de contenido: HTML, CSS, JS, imágenes, videos y audio, siendo adoptado globalmente por miles de servicios ',
+                '- Los cdn ayudan a mantener la fiabilidad y velocidad de los sitios, además de brindar una capa extra de seguridad ante ataques <em>DDoS</em> ',
+                '',
+                '<strong>Round-trip time(RTT):</strong> Es la duración en milisegundos del tiempo que tarda una solicitud de la red en ir de un punto de partida a un destino y volver ',
+                '- Es una métrica muy importante para determinar la salud de una conexión en una red local, ayudando a determinar la fiabilidad y la conexión de la red ',
+                '- La utilidad <em>ping</em> estima este tiempo de forma práctica, mientras que <em>traceroute</em> permite visualizar cada salto de red que se presente ',
+                '',
+                '<strong>Factores que afectan el RTT</strong>',
+                '- La naturaleza del medio, las conexiones hechas por fibra optica, por un cable de cobre, por redes inalambricas o por satelite, se comportaran diferente ',
+                '- Trafico en la red Local <em>(LAN)</em>, si hay demasiado trafico en la red local se puede crear un cuello de botella, incluso antes de salir a internet ',
+                '- Tiempo de respuesta del servidor, si esta saturado por las peticiones o por un ataque DDoS tendra una capacidad mermada y respondera de manera deficiente ',
+                '- Cantidad de saltos (<em>hop count</em>), entre mayor sea la cantidad de nodos intermedios entre el origen y el destino, más se ralentizará la conexión ',
+                '- Distancia física, aunque un CDN reduzca saltos y acerque el contenido, las limitaciones físicas como la velocidad de la luz siguen siendo un techo real ',
             ])
     ];
 
