@@ -41,7 +41,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.NUBE_CDN_RTT;
+export const LAST_ITEM = Keys.MICROSERVICES_ADVANCED_SPLIT_BRAIN;
 export const LAST_UPDATE = Keys.POO_DESIGN_COUPLING;
 
 export const AGILES_KEY = 'Agiles';
@@ -1339,8 +1339,8 @@ export const PERSISTENCY_ADVANCED_REF = new Map<string, Referencia>([
     ],
     [Keys.PERSISTENCY_ADVANCED_UPSERT, new Referencia('https://www.cockroachlabs.com/blog/sql-upsert/', 'Upsert', PERSISTENCY_ADVANCED_KEY, 'Upsert', '2025/12/21')],
     [Keys.PERSISTENCY_ADVANCED_MIGRATIONS, new Referencia('https://medium.com/@jaredhatfield/database-migration-patterns-6b5ede23d06e', 'Patrones de Migración', PERSISTENCY_ADVANCED_KEY, 'Patrones Migración', '2026/01/02')
-        .addRelatedItems(Keys.TESTING_ADVANCED_PERFORMANCE, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRANSACTIONS, Keys.ANALISIS_DATA_CHANGE_DATA_CAPTURE, Keys.ANALISIS_DATA_GOLDEN_RECORD, Keys.PATRONES_STRANGLER_FIG)
-        .addMoreReferences('https://dzone.com/articles/split-brain-in-distributed-systems', 'https://medium.com/@adkomyagin/validating-data-like-a-pro-post-migration-integrity-d06300d6bfb8')
+        .addRelatedItems(Keys.TESTING_ADVANCED_PERFORMANCE, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRANSACTIONS, Keys.ANALISIS_DATA_CHANGE_DATA_CAPTURE, Keys.ANALISIS_DATA_GOLDEN_RECORD, Keys.PATRONES_STRANGLER_FIG, Keys.MICROSERVICES_ADVANCED_SPLIT_BRAIN)
+        .addMoreReferences('https://medium.com/@adkomyagin/validating-data-like-a-pro-post-migration-integrity-d06300d6bfb8')
     ],
     [Keys.PERSISTENCY_ADVANCED_LEDGER_DATABASE, new Referencia('https://www.techtarget.com/searchcio/definition/ledger-database', 'Ledger database', PERSISTENCY_ADVANCED_KEY, 'Ledger Database', '2026/01/28')
         .addRelatedItems(Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRANSACTIONS, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.POO_INMUTABILITY, Keys.META_CARACTERISTICAS_BLOCKING_AND_NO_BLOCKING)
@@ -1633,6 +1633,10 @@ export const MICRO_SERVICES_ADVANCED_REF = new Map<string, Referencia>([
     [Keys.MICROSERVICES_ADVANCED_PROCESSING_ARCHETYPES, new Referencia('https://medium.com/@jaredhatfield/lessons-in-asynchronous-messaging-patterns-pitfalls-and-best-practices-35254b3218e8', 'Arquetipos de procesamiento de mensajes', MICRO_SERVICES_ADVANCED_KEY, 'Arquetipos Procesamiento', '2026/01/01')
         .addRelatedItems(Keys.ANALISIS_DATA_BATCH_VS_STREAM, Keys.ANALISIS_DATA_ETL_ELT, Keys.BUENAS_PRACTICAS_AGGREGATES, Keys.PATRONES_FOR_INTEGRATION, Keys.PATRONES_MESSAGING, Keys.PATRONES_RESILIENCIA, Keys.ANALISIS_TYPE_EVENTS, Keys.OBSERVABILIDAD_COMMON_METRICS)
     ],
+    [Keys.MICROSERVICES_ADVANCED_SPLIT_BRAIN, new Referencia('https://www.starwindsoftware.com/blog/whats-split-brain-and-how-to-avoid-it/', 'Split Brain', MICRO_SERVICES_ADVANCED_KEY, 'Split Brain', '2026/03/11')
+        .addRelatedItems(Keys.PATRONES_SAGA, Keys.CD_CI_MONITORING, Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.NUBE_PACELC)
+        .addMoreReferences('https://dzone.com/articles/split-brain-in-distributed-systems')
+    ]
 ]);
 
 export const OBSERVABILIDAD_KEY = 'Observabilidad';

@@ -689,6 +689,7 @@ export const MICROSERVICES_ADVANCED_ARQUITECTURE_BACK_MONOLITH = 'architecture-b
 export const MICROSERVICES_ADVANCED_DISTRIBUTED_MONOLITH = 'distributed-monolith';
 export const MICROSERVICES_ADVANCED_DISTRIBUTED_LOCKING = 'distributed-locking';
 export const MICROSERVICES_ADVANCED_PROCESSING_ARCHETYPES = 'processing-archetypes';
+export const MICROSERVICES_ADVANCED_SPLIT_BRAIN = 'split-brain';
 export const OBSERVABILIDAD_OBSERVABILITY = 'observabilidad';
 export const OBSERVABILIDAD_COMMON_METRICS = 'commonMetrics';
 export const OBSERVABILIDAD_MONITOREO = 'monitoreo(apm)';
