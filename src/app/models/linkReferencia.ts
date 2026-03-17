@@ -42,7 +42,7 @@ export class LinkReferencia {
 }
 
 export const LAST_ITEM = Keys.TESTING_E2E;
-export const LAST_UPDATE = Keys.POO_DESIGN_COUPLING;
+export const LAST_UPDATE = Keys.TESTING_INTEGRATION;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -1022,8 +1022,9 @@ export const TESTING_REF = new Map<string, Referencia>([
     [Keys.TESTING_BUG, new Referencia('https://testgrid.io/blog/bug-life-cycle/', 'Ciclo de vida de un Error(Bug)', TESTING_KEY, 'Bugs', '2025/04/23')
         .addRelatedItems(Keys.BUENAS_PRACTICAS_DEBUGGING, Keys.BUENAS_PRACTICAS_LOGGING, Keys.PEOPLE_CAPA_8, Keys.COMPILACION_ERRORS_AND_EXCEPTIONS)
     ],
-    [Keys.TESTING_INTEGRATION, new Referencia('https://qalified.com/es/blog/pruebas-de-integracion-que-son/', 'Pruebas de Integración', TESTING_KEY, 'Integracion', '2025/09/10')
-        .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_BOTTOM_UP_AND_TOP_DOWN, Keys.PATRONES_FOR_INTEGRATION, Keys.POO_COUPLING_AND_COHESION, Keys.METODOLOGIAS_MODEL_BING_BANG, Keys.CD_CI_RULES)
+    [Keys.TESTING_INTEGRATION, new Referencia('https://qalified.com/es/blog/pruebas-de-integracion-que-son/', 'Pruebas de Integración', TESTING_KEY, 'Integracion', '2025/09/10', '2026/03/16')
+        .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_BOTTOM_UP_AND_TOP_DOWN, Keys.PATRONES_FOR_INTEGRATION, Keys.POO_COUPLING_AND_COHESION, Keys.METODOLOGIAS_MODEL_BING_BANG, Keys.CD_CI_RULES, Keys.FRAMEWORKS_IOD_SPRING)
+        .addMoreReferences('https://www.baeldung.com/spring-tests')
     ],
     [Keys.TESTING_E2E, new Referencia('https://martinfowler.com/articles/practical-test-pyramid.html', 'Pruebas E2E & Aceptación', TESTING_KEY, 'E2E & Aceptación', '2026/03/16')
         .addRelatedItems(Keys.CD_CI_CI_CD, Keys.ESTRATEGIAS_DESARROLLO_BDD)
