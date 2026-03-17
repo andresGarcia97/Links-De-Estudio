@@ -41,7 +41,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.MICROSERVICES_ADVANCED_SPLIT_BRAIN;
+export const LAST_ITEM = Keys.TESTING_E2E;
 export const LAST_UPDATE = Keys.POO_DESIGN_COUPLING;
 
 export const AGILES_KEY = 'Agiles';
@@ -712,7 +712,7 @@ export const NUBE_REF = new Map<string, Referencia>([
     [Keys.NUBE_LATENCY, new Referencia('https://blog.bytebytego.com/p/ep110-top-5-strategies-to-reduce#top-strategies-to-reduce-latency', 'Reducir la latencia', NUBE_KEY, 'Reducir la Latencia', '2024/05/12')],
     [Keys.NUBE_TWO_PHASE_COMMIT, new Referencia('https://hongilkwon.medium.com/when-to-use-two-phase-commit-in-distributed-transaction-f1296b8c23fd', 'Two Phase Commit', NUBE_KEY, 'Two Phase Commit', '2024/11/26')],
     [Keys.NUBE_DISPONIBILITY, new Referencia('https://www.computerweekly.com/es/consejo/Disponibilidad-de-cinco-nueves-Que-significa-realmente', 'Disponibilidad de 5 9s', NUBE_KEY, 'Disponibilidad de 5 9s', '2024/11/26')
-        .addRelatedItems(Keys.CD_CI_CD_CI)
+        .addRelatedItems(Keys.CD_CI_CI_CD)
     ],
     [Keys.NUBE_PACELC, new Referencia('https://www.designgurus.io/blog/system-design-interview-basics-cap-vs-pacelc', 'PAC, Else Latencia y Consistencia', NUBE_KEY, 'Teorema PACELC', '2024/12/15', '2025/11/15')
         .addRelatedItems(Keys.PERSISTENCY_ACID, Keys.PERSISTENCY_ADVANCED_BASE)
@@ -1025,6 +1025,10 @@ export const TESTING_REF = new Map<string, Referencia>([
     [Keys.TESTING_INTEGRATION, new Referencia('https://qalified.com/es/blog/pruebas-de-integracion-que-son/', 'Pruebas de Integración', TESTING_KEY, 'Integracion', '2025/09/10')
         .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_BOTTOM_UP_AND_TOP_DOWN, Keys.PATRONES_FOR_INTEGRATION, Keys.POO_COUPLING_AND_COHESION, Keys.METODOLOGIAS_MODEL_BING_BANG, Keys.CD_CI_RULES)
     ],
+    [Keys.TESTING_E2E, new Referencia('https://martinfowler.com/articles/practical-test-pyramid.html', 'Pruebas E2E & Aceptación', TESTING_KEY, 'E2E & Aceptación', '2026/03/16')
+        .addRelatedItems(Keys.CD_CI_CI_CD, Keys.ESTRATEGIAS_DESARROLLO_BDD)
+        .addMoreReferences('https://stackoverflow.com/questions/6453235/what-does-damp-not-dry-mean-when-talking-about-unit-tests')
+    ],
     [Keys.TESTING_CONTRACT_TESTING, new Referencia('https://www.paradigmadigital.com/dev/patrones-arquitectura-microservicios-consumer-driven-contract-testing/', 'Contract Testing', TESTING_KEY, 'Contract Testing', '2025/08/19')
         .addRelatedItems(Keys.POO_DESIGN_BY_CONTRACT, Keys.PATRONES_FOR_INTEGRATION, Keys.MICROSERVICES_EVENTS_VS_REQUEST_RESPONSE, Keys.ANALISIS_DOMAIN_EVENTS, Keys.APIS_API_FIRST_VS_CODE_FIRST, Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION, Keys.CD_CI_DEPLOYMENT_PIPELINES, Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES)
         .addMoreReferences('https://medium.com/@chinthakadd/contract-testing-for-event-driven-architectures-can-we-do-we-and-how-do-we-177c8e9acfc7')
@@ -1075,7 +1079,7 @@ export const TESTING_ADVANCED_REF = new Map<string, Referencia>([
     ],
     [Keys.TESTING_ADVANCED_PERFORMANCE, new Referencia('https://es.abstracta.us/blog/metricas-pruebas-performance-software/', 'Metricas & Performance', TESTING_ADVANCED_KEY, 'Metricas & Performance', '2025/07/07')],
     [Keys.TESTING_ADVANCED_SHIFT_LEFT_SHIFT_RIGHT, new Referencia('https://es.abstracta.us/blog/shift-left-right-testing-software-enfoques/', 'Shift-Left & Shift-Right Testing', TESTING_ADVANCED_KEY, 'Shift-Left & Shift-Right', '2025/09/14')
-        .addRelatedItems(Keys.METODOLOGIAS_CASCADA, Keys.METODOLOGIAS_AGILES, Keys.ESTRATEGIAS_DESARROLLO_TDD, Keys.ESTRATEGIAS_DESARROLLO_BDD, Keys.CD_CI_CD_CI, Keys.REQUISITOS_NO_FUNCIONALES, Keys.CD_CI_DEV_OPS, Keys.CD_CI_DEPLOYMENT_PATTERNS)
+        .addRelatedItems(Keys.METODOLOGIAS_CASCADA, Keys.METODOLOGIAS_AGILES, Keys.ESTRATEGIAS_DESARROLLO_TDD, Keys.ESTRATEGIAS_DESARROLLO_BDD, Keys.CD_CI_CI_CD, Keys.REQUISITOS_NO_FUNCIONALES, Keys.CD_CI_DEV_OPS, Keys.CD_CI_DEPLOYMENT_PATTERNS)
     ],
     [Keys.TESTING_ADVANCED_DEFECT_RATE, new Referencia('https://axify.io/blog/defect-rate', 'Tasa de defectos', TESTING_ADVANCED_KEY, 'Defect Rate', '2026/02/22')
         .addRelatedItems(Keys.META_ESTRUCTURAS_SISTEMAS_COMPLEJOS, Keys.CALIDAD_CODE_REVIEWS, Keys.BUENAS_PRACTICAS_STATIC_CODE_ANALYSIS, Keys.PEOPLE_CUSTOMER_LOYALTY, Keys.WEB_USER_INTERFACE, Keys.WEB_USER_XPERIENCE, Keys.ESTRATEGIAS_DESARROLLO_SLDC, Keys.CALIDAD_CODE_REVIEWS, Keys.CALIDAD_DORA_SPACE_METRICS, Keys.REFACTORING_DEUDA_TECNICA_TYPES)
@@ -1495,7 +1499,7 @@ export const NEURO_MARKETING_REF = new Map<string, Referencia>([
 
 export const CI_CD_KEY = 'CI/CD-Infraestructura';
 export const CI_CD_REF = new Map<string, Referencia>([
-    [Keys.CD_CI_CD_CI, new Referencia('https://www.aplyca.com/es/blog/integracion-entrega-continua-ci-cd', 'Integración Continua y Entrega Continua', CI_CD_KEY, 'CI/CD', '', '2024/08/25')],
+    [Keys.CD_CI_CI_CD, new Referencia('https://www.aplyca.com/es/blog/integracion-entrega-continua-ci-cd', 'Integración Continua y Entrega Continua', CI_CD_KEY, 'CI/CD', '', '2024/08/25')],
     [Keys.CD_CI_DEV_OPS, new Referencia('https://www.paradigmadigital.com/techbiz/que-es-devops-y-sobre-todo-que-no-es-devops/', 'DevOps', CI_CD_KEY, 'DevOps', '', '2025/03/15')
         .addRelatedItems(Keys.TESTING_QUALITY_ASSURANCE)
     ],
@@ -1566,7 +1570,7 @@ export const MICRO_SERVICES_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.PRINCIPIOS_KISS, Keys.MICROSERVICES_ARQUITECTURAS, Keys.ARQUITECTURAS_EVENT_DRIVEN)
     ],
     [Keys.MICROSERVICES_TRADEOFFS, new Referencia('https://martinfowler.com/articles/microservice-trade-offs.html', 'Microservicios Tradeoffs', MICRO_SERVICES_KEY, 'Pros & Contras', '2025/01/18')
-        .addRelatedItems(Keys.ARQUITECTURAS_DESCOMPOSICION_MODULAR, Keys.LEYES_CONWAY, Keys.CD_CI_CD_CI, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.NUBE_CAP_TEOREMA)
+        .addRelatedItems(Keys.ARQUITECTURAS_DESCOMPOSICION_MODULAR, Keys.LEYES_CONWAY, Keys.CD_CI_CI_CD, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.NUBE_CAP_TEOREMA)
     ],
     [Keys.MICROSERVICES_PATTERNS, new Referencia('https://blog.openreplay.com/7-microservice-design-patterns-to-use/', 'Patrones & Microservicios', MICRO_SERVICES_KEY, 'Patrones', '2025/01/19', '2025/10/01')
         .addRelatedItems(Keys.ANALISIS_LIGHT_EVENTS_VS_RICH_EVENTS, Keys.PATRONES_SAGA, Keys.PATRONES_DYSTRIBUTED_SYSTEMS, Keys.MICROSERVICES_ADVANCED_IDEMPOTENCY_I, Keys.MICROSERVICES_BEST_PRACTICES, Keys.ESTRATEGIAS_DESARROLLO_BFF, Keys.APIS_GATEWAY, Keys.SYSTEM_DESIGN_SINGLE_POINT_OF_FAILURE, Keys.PATRONES_CLOUD_DESIGN_PATTERNS, Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS)

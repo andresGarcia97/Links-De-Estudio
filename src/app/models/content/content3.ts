@@ -1225,7 +1225,7 @@ export const REFACTORIZACION =
 
 export const CI_CD_INFRAESTRUCTURE =
     [
-        new Item(Keys.CD_CI_CD_CI,
+        new Item(Keys.CD_CI_CI_CD,
             [
                 '- Integración continua, Entrega continua y Despliegue continuo, nacen para entregar un mejor codigo, de manera más rapida y con menos errores ',
                 '- Los errores se pueden encontrar de manera previa a estar en producción, reduciendo significativamente sus costos ',
