@@ -42,7 +42,7 @@ export class LinkReferencia {
 }
 
 export const LAST_ITEM = Keys.TESTING_E2E;
-export const LAST_UPDATE = Keys.TESTING_INTEGRATION;
+export const LAST_UPDATE = Keys.CONTENEDORES_IMAGES_DISTROLESS_HARDENED;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -432,7 +432,7 @@ export const CONTAINERS = new Map<string, Referencia>([
     //['lxc', new Referencia('https://www.section.io/engineering-education/lxc-vs-docker-what-is-the-difference-and-why-docker-is-better/', 'Linux Containers', CONTENEDORES_KEY, 'Linux Containers')],
     [Keys.CONTENEDORES_LXC, new Referencia('https://earthly.dev/blog/lxc-vs-docker/', 'Linux Containers', CONTENEDORES_KEY, 'Linux Containers', '', '2024/04/06')],
     [Keys.CONTENEDORES_DOCKER, new Referencia('https://www.xataka.com/otros/docker-a-kubernetes-entendiendo-que-contenedores-que-mayores-revoluciones-industria-desarrollo', '¿ Que es Docker ?', CONTENEDORES_KEY, 'Docker')],
-    [Keys.CONTENEDORES_IMAGES, new Referencia('https://clouding.io/hc/es/articles/360010283060-Trabajando-con-im%C3%A1genes-en-Docker', '¿ Que es una imagen ?', CONTENEDORES_KEY, 'Imagenes')],
+    [Keys.CONTENEDORES_IMAGES, new Referencia('https://clouding.io/hc/es/articles/360010283060-Trabajando-con-im%C3%A1genes-en-Docker', '¿ Que es una imagen ?', CONTENEDORES_KEY, 'Imagenes', '', '2026/03/18')],
     [Keys.CONTENEDORES_CONTAINERS, new Referencia('https://aulasoftwarelibre.github.io/taller-de-docker/containers/', '¿ Que es un contenedor ?', CONTENEDORES_KEY, 'Contenedores')],
     [Keys.CONTENEDORES_VOLUMES, new Referencia('https://www.josedomingo.org/pledin/2016/05/gestion-del-almacenamiento-en-docker', '¿ Que es un volumen ?', CONTENEDORES_KEY, 'Volumenes')],
     //['network', new Referencia('https://dockertips.com/algo_sobre_redes', 'Manejo de redes en Docker', CONTENEDORES_KEY, 'Redes')],
@@ -447,8 +447,9 @@ export const CONTAINERS = new Map<string, Referencia>([
     [Keys.CONTENEDORES_OPEN_CONTAINER, new Referencia('https://opencontainers.org/about/overview/', 'Open Container Initiative', CONTENEDORES_KEY, 'Open Container Initiative', '2023/07/16')],
     [Keys.CONTENEDORES_SECURE_ORCHESTRATION, new Referencia('https://levelup.gitconnected.com/docker-vs-podman-a-new-era-in-secure-orchestration-957ea2123098', 'Seguridad en Orquestación', CONTENEDORES_KEY, 'Seguridad', '2024/05/25')],
     [Keys.CONTENEDORES_ARQUITECTURE, new Referencia('https://medium.com/@dmosyan/deep-dive-into-docker-containers-architecture-and-features-530a937f4c87', 'Arquitectura en Docker', CONTENEDORES_KEY, 'Arquitectura', '2024/08/04')],
-    [Keys.CONTENEDORES_IMAGES_DISTROLESS, new Referencia('https://bell-sw.com/blog/distroless-containers-for-security-and-size/', 'Imagenes Distroless', CONTENEDORES_KEY, 'Distroless', '2025/05/15')
-        .addRelatedItems(Keys.META_CARACTERISTICAS_MEMORY_MANAGEMENT, Keys.HARDWARE_VIRTUAL_MACHINES_VS_CONTAINERS)
+    [Keys.CONTENEDORES_IMAGES_DISTROLESS_HARDENED, new Referencia('https://bell-sw.com/blog/distroless-containers-for-security-and-size/', 'Imagenes Distroless & Hardened', CONTENEDORES_KEY, 'Distroless & Hardened', '2025/05/15', '2026/03/18')
+        .addRelatedItems(Keys.META_CARACTERISTICAS_MEMORY_MANAGEMENT, Keys.HARDWARE_VIRTUAL_MACHINES_VS_CONTAINERS, Keys.SECURITY_CVE, Keys.VERSIONAMIENTO_BOM, Keys.CD_CI_DEPLOYMENT_PIPELINES)
+        .addMoreReferences('https://hopla.tech/docker-hardened-images-dhi/')
     ],
     [Keys.CONTENEDORES_RUNTIME, new Referencia('https://www.docker.com/blog/containerd-vs-docker/', 'Ejecución de contenedores', CONTENEDORES_KEY, 'Runtime', '2026/02/01')
         .addRelatedItems(Keys.HARDWARE_OPERATIVE_SYSTEM, Keys.HARDWARE_CLI, Keys.VERSIONAMIENTO_LICENSES)
@@ -965,7 +966,7 @@ export const POO_REF = new Map<string, Referencia>([
     [Keys.POO_COUPLING_COMPONENTS, new Referencia('https://mg-laboratory.tistory.com/189', 'Acoplamiento de componentes', POO_KEY, 'SDP, ADP, SAP')
         .addRelatedItems(Keys.ARQUITECTURAS_DESCOMPOSICION_MODULAR)
     ],
-    [Keys.POO_BEGINING, new Referencia('https://medium.com/javascript-scene/the-forgotten-history-of-oop-88d71b9b2d9f', 'Nacimiento de Poo', POO_KEY, 'Inicios de POO')],
+    [Keys.POO_BEGINING, new Referencia('https://medium.com/javascript-scene/the-forgotten-history-of-oop-88d71b9b2d9f', 'Nacimiento de POO', POO_KEY, 'Inicios de POO')],
     [Keys.POO_INMUTABILITY, new Referencia('https://www.campusmvp.es/recursos/post/programacion-funcional-inmutabilidad-y-funciones-puras.aspx', 'Inmutabilidad', POO_KEY, 'Inmutabilidad')],
     [Keys.POO_TYPES_POLIMORFISMO, new Referencia('https://medium.com/lenguajes-y-dialectos-en-programaci%C3%B3n/polimorfismo-y-paradigmas-tipos-y-ejemplos-ca6a56093a66', 'Tipos de Polimorfismo', POO_KEY, 'Tipos de Polimorfismo')],
     [Keys.POO_FACTORY_METODS, new Referencia('https://www.baeldung.com/java-constructors-vs-static-factory-methods', 'Factory Methods', POO_KEY, 'Factory Methods', '2022/11/07')],
