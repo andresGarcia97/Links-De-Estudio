@@ -501,6 +501,7 @@ export const TESTING_GRAFOS_CAUSA_EFECTO = 'grafosCausaEfecto';
 export const TESTING_ADVANCED_TYPES_TESTS = 'tiposDePruebas';
 export const TESTING_ADVANCED_OUTSIDE_INSIDE = 'outsideInside';
 export const TESTING_ADVANCED_CASOS_DE_PRUEBA = 'casosDePrueba';
+export const TESTING_ADVANCED_CORNER_AND_EDGE_CASE = 'corner-case-edge-case';
 export const TESTING_ADVANCED_USES_CASES = 'casosDeUso';
 export const TESTING_ADVANCED_SMELLS_CODES1 = 'codeSmellsTests1';
 export const TESTING_ADVANCED_SMELLS_CODES2 = 'codeSmellsTests2';

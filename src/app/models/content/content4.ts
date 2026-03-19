@@ -1605,8 +1605,9 @@ export const ESTRATEGIAS_DESARROLLO =
             ]),
         new Item(Keys.ESTRATEGIAS_DESARROLLO_ATDD,
             [
-                '- Primero se escriben las pruebas, despues se crean los casos de aceptación Y de ultimas se crea el codigo para que estos funcionen ',
-                '- Las pruebas se automatizan, por lo que a la larga el desarrollo se volvera más agil ',
+                '- Proviene de <em>Acceptance Test-Driven Development</em> donde todo el equipo analiza conjuntamente los criterios de aceptación antes de comenzar el desarrollo ',
+                '- Primero se escriben las pruebas, despues se crean los casos de aceptación y de ultimas se crea el codigo para que estos pasen ',
+                '- Las pruebas se que más cuestan se automatizan, por lo que a la larga el desarrollo se volvera más agil ',
                 '- Definir las Historias de Usuario y sus casos de aceptación es fundamental para evitar perder tiempo ',
             ]),
         new Item(Keys.ESTRATEGIAS_DESARROLLO_BOTTOM_UP_AND_TOP_DOWN,
