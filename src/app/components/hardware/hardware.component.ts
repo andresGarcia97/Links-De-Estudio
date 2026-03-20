@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { HARDWARE } from 'src/app/models/content/content1';
+import { ActivatedRoute } from '@angular/router';
 import { CI_CD_KEY, COMPILACION_KEY, HARDWARE_REF, LEYES_KEY, LinkReferencia, META_ESTRUCTURAS_KEY, NUBE_KEY }
 from 'src/app/models/linkReferencia';
-import { PreviousAndNextSection } from 'src/app/models/models';
+import { Item, PreviousAndNextSection } from 'src/app/models/models';
+import { HARDWARE_PATH } from 'src/app/models/relationsSummary';
 
 @Component({
     selector: 'app-hardware',
@@ -11,7 +12,7 @@ import { PreviousAndNextSection } from 'src/app/models/models';
 })
 export class HardwareComponent implements OnInit {
 
-  items = HARDWARE;
+  items: Item[] = [];
 
   components = HARDWARE_REF;
 
@@ -23,7 +24,10 @@ export class HardwareComponent implements OnInit {
 
   previousAndNextSection!: PreviousAndNextSection;
 
+  constructor(private route: ActivatedRoute) {}
+
   ngOnInit(): void {
+    this.items = this.route.snapshot.data[HARDWARE_PATH.propertyNameData];
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
     this.relatedSections.set(COMPILACION_KEY, routes.get(COMPILACION_KEY)!);

@@ -59,3 +59,15 @@ export class PreviousAndNextSection {
         this.sectionNext = sectionNext;
     }
 }
+
+export class RelationKeyWithSection {
+    key = '';
+    file = '';
+    propertyNameData = '';
+
+    constructor(key = '', file = '', propertyNameData = '') {
+        this.key = key;
+        this.file = file;
+        this.propertyNameData = propertyNameData;
+    }
+}
