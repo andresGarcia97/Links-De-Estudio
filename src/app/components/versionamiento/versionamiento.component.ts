@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { VERSIONAMIENTO } from 'src/app/models/content/content3';
+import { ActivatedRoute } from '@angular/router';
 import { ANALISIS_KEY, APIS_KEY, COMPILACION_KEY, GIT_KEY, LinkReferencia, UML_KEY, VERSIONAMIENTO_REF }
 from 'src/app/models/linkReferencia';
-import { PreviousAndNextSection } from 'src/app/models/models';
+import { Item, PreviousAndNextSection } from 'src/app/models/models';
+import { VERSIONAMIENTO_PATH } from 'src/app/models/relationsSummary';
 
 @Component({
     selector: 'app-versionamiento',
@@ -11,7 +12,7 @@ import { PreviousAndNextSection } from 'src/app/models/models';
 })
 export class VersionamientoComponent implements OnInit {
 
-  items = VERSIONAMIENTO;
+  items: Item[] = [];
 
   components = VERSIONAMIENTO_REF;
 
@@ -23,7 +24,10 @@ export class VersionamientoComponent implements OnInit {
 
   previousAndNextSection!: PreviousAndNextSection;
 
+  constructor(private route: ActivatedRoute) {}
+
   ngOnInit(): void {
+    this.items = this.route.snapshot.data[VERSIONAMIENTO_PATH.propertyNameData];
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
     this.relatedSections.set(ANALISIS_KEY, routes.get(ANALISIS_KEY)!);

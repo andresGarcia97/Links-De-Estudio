@@ -1,7 +1,7 @@
 import {
     ANALISIS_DATA_KEY, ANALISIS_KEY, CI_CD_KEY, HARDWARE_KEY, METODOLOGIAS_KEY, PARADIGMAS_KEY, PERSISTENCY_ADVANCED_KEY,
     PERSISTENCY_KEY, PRINCIPIOS_KEY, REFACTORING_KEY, REQUISITOS_KEY, SMELL_CODES_KEY, SYSTEM_DESIGN_KEY, TESTING_ADVANCED_KEY,
-    TESTING_KEY
+    TESTING_KEY, VERSIONAMIENTO_KEY
 }
     from "./linkReferencia";
 import { RelationKeyWithSection } from "./models";
@@ -21,3 +21,4 @@ export const PRINCIPIOS_PATH = new RelationKeyWithSection(PRINCIPIOS_KEY, 'princ
 export const REFACTORING_PATH = new RelationKeyWithSection(REFACTORING_KEY, 'refactoring', 'refactoring');
 export const REQUISITOS_PATH = new RelationKeyWithSection(REQUISITOS_KEY, 'requisitos', 'requisitos');
 export const SMELL_CODES_PATH = new RelationKeyWithSection(SMELL_CODES_KEY, 'smell_codes', 'smellCodes');
+export const VERSIONAMIENTO_PATH = new RelationKeyWithSection(VERSIONAMIENTO_KEY, 'versioning', 'versioning');
