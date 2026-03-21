@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { SYSTEM_DESIGN } from 'src/app/models/content/content2';
+import { ActivatedRoute } from '@angular/router';
 import { LinkReferencia, PERSISTENCY_ADVANCED_KEY, META_CARACTERISTICAS_KEY, ANALISIS_DATA_KEY,
   ARQUITECTURAS_KEY, PERSISTENCY_KEY, REQUISITOS_KEY, PEOPLE_KEY, LEYES_KEY, CI_CD_KEY, APIS_KEY, NUBE_KEY, UML_KEY,
   USER_HISTORIES_KEY, ANALISIS_KEY, SYSTEM_DESIGN_REF } from 'src/app/models/linkReferencia';
-import { PreviousAndNextSection } from 'src/app/models/models';
+import { Item, PreviousAndNextSection } from 'src/app/models/models';
+import { SYSTEM_DESIGN_PATH } from 'src/app/models/relationsSummary';
 
 @Component({
     selector: 'app-system-design',
@@ -12,7 +13,7 @@ import { PreviousAndNextSection } from 'src/app/models/models';
 })
 export class SystemDesignComponent implements OnInit {
 
-  items = SYSTEM_DESIGN;
+  items: Item[] = [];
 
   components = SYSTEM_DESIGN_REF;
 
@@ -24,7 +25,10 @@ export class SystemDesignComponent implements OnInit {
 
   previousAndNextSection!: PreviousAndNextSection;
 
+  constructor(private route: ActivatedRoute) {}
+
   ngOnInit(): void {
+    this.items = this.route.snapshot.data[SYSTEM_DESIGN_PATH.propertyNameData];
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
     this.relatedSections.set(PERSISTENCY_ADVANCED_KEY, routes.get(PERSISTENCY_ADVANCED_KEY)!);
