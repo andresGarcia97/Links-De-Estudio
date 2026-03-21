@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { ANALISIS } from 'src/app/models/content/content2';
+import { ActivatedRoute } from '@angular/router';
 import { ANALISIS_REF, LinkReferencia, PEOPLE_KEY, LEYES_KEY, ANALISIS_DATA_KEY, UML_KEY, NUBE_KEY, PERSISTENCY_KEY,
   REQUISITOS_KEY, ARQUITECTURAS_KEY, PERSISTENCY_ADVANCED_KEY, APIS_KEY, CI_CD_KEY, META_CARACTERISTICAS_KEY, 
   AGILES_KEY, SYSTEM_DESIGN_KEY}
 from 'src/app/models/linkReferencia';
-import { PreviousAndNextSection } from 'src/app/models/models';
+import { Item, PreviousAndNextSection } from 'src/app/models/models';
+import { ANALISIS_PATH } from 'src/app/models/relationsSummary';
 
 @Component({
     selector: 'app-analisis',
@@ -13,7 +14,7 @@ import { PreviousAndNextSection } from 'src/app/models/models';
 })
 export class AnalisisComponent implements OnInit {
 
-  items = ANALISIS;
+  items: Item[] = [];
 
   components = ANALISIS_REF;
 
@@ -25,7 +26,10 @@ export class AnalisisComponent implements OnInit {
 
   previousAndNextSection!: PreviousAndNextSection;
 
+  constructor(private route: ActivatedRoute) {}
+
   ngOnInit(): void {
+    this.items = this.route.snapshot.data[ANALISIS_PATH.propertyNameData];
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
     this.relatedSections.set(PERSISTENCY_ADVANCED_KEY, routes.get(PERSISTENCY_ADVANCED_KEY)!);
