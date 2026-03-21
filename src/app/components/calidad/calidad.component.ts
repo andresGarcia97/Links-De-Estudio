@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { CALIDAD } from 'src/app/models/content/content6';
+import { ActivatedRoute } from '@angular/router';
 import { 
   AGILES_KEY, ANALISIS_KEY, BUENAS_PRACTICAS_KEY, CALIDAD_REF, LinkReferencia, MALAS_PRACTICAS_KEY, METODOLOGIAS_KEY, PATRONES_KEY }
 from 'src/app/models/linkReferencia';
-import { PreviousAndNextSection } from 'src/app/models/models';
+import { Item, PreviousAndNextSection } from 'src/app/models/models';
+import { CALIDAD_PATH } from 'src/app/models/relationsSummary';
 
 @Component({
     selector: 'app-calidad',
@@ -12,7 +13,7 @@ import { PreviousAndNextSection } from 'src/app/models/models';
 })
 export class CalidadComponent implements OnInit {
 
-  items = CALIDAD;
+  items: Item[] = [];
 
   components = CALIDAD_REF;
 
@@ -24,8 +25,10 @@ export class CalidadComponent implements OnInit {
   
   previousAndNextSection!: PreviousAndNextSection;
 
+  constructor(private route: ActivatedRoute) {}
+
   ngOnInit(): void {
-    this.itemStart = history?.state?.newItem;
+    this.items = this.route.snapshot.data[CALIDAD_PATH.propertyNameData];
     const routes = new LinkReferencia().routesAndSections;
     this.relatedSections.set(BUENAS_PRACTICAS_KEY, routes.get(BUENAS_PRACTICAS_KEY)!);
     this.relatedSections.set(MALAS_PRACTICAS_KEY,  routes.get(MALAS_PRACTICAS_KEY)!);
