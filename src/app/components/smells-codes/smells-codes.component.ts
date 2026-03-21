@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { SMELLS_CODES } from 'src/app/models/content/content3';
+import { ActivatedRoute } from '@angular/router';
 import { ANALISIS_KEY, ARQUITECTURAS_KEY, BUENAS_PRACTICAS_KEY, LinkReferencia, MALAS_PRACTICAS_KEY, REFACTORING_KEY, SMELL_CODES_REF }
 from 'src/app/models/linkReferencia';
-import { PreviousAndNextSection } from 'src/app/models/models';
+import { Item, PreviousAndNextSection } from 'src/app/models/models';
+import { SMELL_CODES_PATH } from 'src/app/models/relationsSummary';
 
 @Component({
     selector: 'app-smells-codes',
@@ -11,7 +12,7 @@ import { PreviousAndNextSection } from 'src/app/models/models';
 })
 export class SmellsCodesComponent implements OnInit {
 
-  items = SMELLS_CODES;
+  items: Item[] = [];
   
   components = SMELL_CODES_REF;
 
@@ -23,7 +24,10 @@ export class SmellsCodesComponent implements OnInit {
 
   previousAndNextSection!: PreviousAndNextSection;
 
+  constructor(private route: ActivatedRoute) {}
+
   ngOnInit(): void {
+    this.items = this.route.snapshot.data[SMELL_CODES_PATH.propertyNameData];
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
     this.relatedSections.set(BUENAS_PRACTICAS_KEY, routes.get(BUENAS_PRACTICAS_KEY)!);
