@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { META_CARACTERISTICAS } from 'src/app/models/content/content4';
+import { ActivatedRoute } from '@angular/router';
 import { CALIDAD_KEY, META_ESTRUCTURAS_KEY, HARDWARE_KEY, LinkReferencia, META_CARATERISTICAS_REF, POO_KEY,
   REFACTORING_KEY, COMPILACION_KEY, APIS_KEY}
 from 'src/app/models/linkReferencia';
-import { PreviousAndNextSection } from 'src/app/models/models';
+import { Item, PreviousAndNextSection } from 'src/app/models/models';
+import { CARACTERISTICAS_PATH } from 'src/app/models/relationsSummary';
 
 @Component({
     selector: 'app-meta-caracteristicas',
@@ -12,7 +13,7 @@ import { PreviousAndNextSection } from 'src/app/models/models';
 })
 export class MetaCaracteristicasComponent implements OnInit {
 
-  items = META_CARACTERISTICAS;
+  items: Item[] = [];
 
   components = META_CARATERISTICAS_REF;
 
@@ -24,7 +25,10 @@ export class MetaCaracteristicasComponent implements OnInit {
 
   previousAndNextSection!: PreviousAndNextSection;
 
+  constructor(private route: ActivatedRoute) {}
+
   ngOnInit(): void {
+    this.items = this.route.snapshot.data[CARACTERISTICAS_PATH.propertyNameData];
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
     this.relatedSections.set(META_ESTRUCTURAS_KEY, routes.get(META_ESTRUCTURAS_KEY)!);
