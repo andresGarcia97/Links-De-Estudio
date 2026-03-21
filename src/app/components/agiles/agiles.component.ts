@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { AGILES } from 'src/app/models/content/content7';
+import { ActivatedRoute } from '@angular/router';
 import { AGILES_REF, LinkReferencia, METODOLOGIAS_KEY, USER_HISTORIES_KEY, LEYES_KEY, REQUISITOS_KEY, ANALISIS_KEY }
 from 'src/app/models/linkReferencia';
-import { PreviousAndNextSection } from 'src/app/models/models';
+import { Item, PreviousAndNextSection } from 'src/app/models/models';
+import { AGILES_PATH } from 'src/app/models/relationsSummary';
 
 @Component({
     selector: 'app-agiles',
@@ -11,7 +12,7 @@ import { PreviousAndNextSection } from 'src/app/models/models';
 })
 export class AgilesComponent implements OnInit {
 
-  items = AGILES;
+  items: Item[] = [];
 
   components = AGILES_REF;
 
@@ -23,7 +24,10 @@ export class AgilesComponent implements OnInit {
 
   previousAndNextSection!: PreviousAndNextSection;
 
+  constructor(private route: ActivatedRoute) {}
+
   ngOnInit(): void {
+    this.items = this.route.snapshot.data[AGILES_PATH.propertyNameData];
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
     this.relatedSections.set(USER_HISTORIES_KEY, routes.get(USER_HISTORIES_KEY)!);
