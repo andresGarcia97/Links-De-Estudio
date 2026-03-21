@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { ESTRATEGIAS_DESARROLLO } from 'src/app/models/content/content4';
+import { ActivatedRoute } from '@angular/router';
 import { AGILES_KEY, ARQUITECTURAS_KEY, CI_CD_KEY, ESTRATEGIAS_DESARROLLO_REF, LinkReferencia, METODOLOGIAS_KEY,
   PATRONES_KEY, REFACTORING_KEY, REQUISITOS_KEY, TESTING_KEY }
   from 'src/app/models/linkReferencia';
-import { PreviousAndNextSection } from 'src/app/models/models';
+import { Item, PreviousAndNextSection } from 'src/app/models/models';
+import { ESTRATEGIAS_PATH } from 'src/app/models/relationsSummary';
 
 @Component({
     selector: 'app-estrategias-desarrollo',
@@ -12,7 +13,7 @@ import { PreviousAndNextSection } from 'src/app/models/models';
 })
 export class EstrategiasDesarrolloComponent implements OnInit {
 
-  items = ESTRATEGIAS_DESARROLLO;
+  items: Item[] = [];
 
   components = ESTRATEGIAS_DESARROLLO_REF;
 
@@ -24,7 +25,10 @@ export class EstrategiasDesarrolloComponent implements OnInit {
 
   previousAndNextSection!: PreviousAndNextSection;
 
+  constructor(private route: ActivatedRoute) {}
+
   ngOnInit(): void {
+    this.items = this.route.snapshot.data[ESTRATEGIAS_PATH.propertyNameData];
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
     this.relatedSections.set(ARQUITECTURAS_KEY, routes.get(ARQUITECTURAS_KEY)!);
