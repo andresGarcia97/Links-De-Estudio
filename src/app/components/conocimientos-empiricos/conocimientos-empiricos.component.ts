@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { CONOCIMIENTOS_EMPIRICOS } from 'src/app/models/content/content7';
+import { ActivatedRoute } from '@angular/router';
 import { ANALISIS_KEY, CONOCIMIENTO_EMPIRICO, LEYES_KEY, LinkReferencia, PEOPLE_KEY, PRINCIPIOS_KEY, WEB_KEY }
 from 'src/app/models/linkReferencia';
-import { PreviousAndNextSection } from 'src/app/models/models';
+import { Item, PreviousAndNextSection } from 'src/app/models/models';
+import { EMPIRICO_PATH } from 'src/app/models/relationsSummary';
 
 @Component({
     selector: 'app-conocimientos-empiricos',
@@ -11,7 +12,7 @@ import { PreviousAndNextSection } from 'src/app/models/models';
 })
 export class ConocimientosEmpiricosComponent implements OnInit {
 
-  items = CONOCIMIENTOS_EMPIRICOS;
+  items: Item[] = [];
 
   components = CONOCIMIENTO_EMPIRICO;
 
@@ -23,7 +24,10 @@ export class ConocimientosEmpiricosComponent implements OnInit {
 
   previousAndNextSection!: PreviousAndNextSection;
 
+  constructor(private route: ActivatedRoute) {}
+
   ngOnInit(): void {
+    this.items = this.route.snapshot.data[EMPIRICO_PATH.propertyNameData];
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
     this.relatedSections.set(PRINCIPIOS_KEY, routes.get(PRINCIPIOS_KEY)!);
