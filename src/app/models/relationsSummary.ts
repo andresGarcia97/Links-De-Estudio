@@ -1,4 +1,4 @@
-import { ANALISIS_DATA_KEY, ANALISIS_KEY, HARDWARE_KEY, PARADIGMAS_KEY, PERSISTENCY_ADVANCED_KEY, PERSISTENCY_KEY }
+import { ANALISIS_DATA_KEY, ANALISIS_KEY, HARDWARE_KEY, METODOLOGIAS_KEY, PARADIGMAS_KEY, PERSISTENCY_ADVANCED_KEY, PERSISTENCY_KEY }
     from "./linkReferencia";
 import { RelationKeyWithSection } from "./models";
 
@@ -8,3 +8,4 @@ export const PERSISTENCY_PATH = new RelationKeyWithSection(PERSISTENCY_KEY, 'per
 export const PERSISTENCY_ADVANCED_PATH = new RelationKeyWithSection(PERSISTENCY_ADVANCED_KEY, 'persistency_advanced', 'persistency');
 export const PARADIGMAS_PATH = new RelationKeyWithSection(PARADIGMAS_KEY, 'paradigmas', 'paradigmas');
 export const ANALISIS_PATH = new RelationKeyWithSection(ANALISIS_KEY, 'analisis', 'analisis');
+export const METODOLOGIAS_PATH = new RelationKeyWithSection(METODOLOGIAS_KEY, 'metodologias', 'metodologias');

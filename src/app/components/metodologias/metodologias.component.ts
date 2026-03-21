@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { METODOLOGIAS } from 'src/app/models/content/content2';
+import { ActivatedRoute } from '@angular/router';
 import { AGILES_KEY, CALIDAD_KEY, ESTRATEGIAS_DESARROLLO_KEY, LinkReferencia, METODOLOGIAS_REF } from 'src/app/models/linkReferencia';
-import { PreviousAndNextSection } from 'src/app/models/models';
+import { Item, PreviousAndNextSection } from 'src/app/models/models';
+import { METODOLOGIAS_PATH } from 'src/app/models/relationsSummary';
 
 @Component({
     selector: 'app-metodologias',
@@ -10,7 +11,7 @@ import { PreviousAndNextSection } from 'src/app/models/models';
 })
 export class MetodologiasComponent implements OnInit {
 
-  items = METODOLOGIAS;
+  items: Item[] = [];
 
   components = METODOLOGIAS_REF;
 
@@ -22,7 +23,10 @@ export class MetodologiasComponent implements OnInit {
 
   previousAndNextSection!: PreviousAndNextSection;
 
+  constructor(private route: ActivatedRoute) {}
+
   ngOnInit(): void {
+    this.items = this.route.snapshot.data[METODOLOGIAS_PATH.propertyNameData];
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
     this.relatedSections.set(ESTRATEGIAS_DESARROLLO_KEY, routes.get(ESTRATEGIAS_DESARROLLO_KEY)!);
