@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { MICRO_SERVICES } from 'src/app/models/content/content5';
+import { ActivatedRoute } from '@angular/router';
 import { 
   ANALISIS_KEY, ARQUITECTURAS_KEY, LinkReferencia, MALAS_PRACTICAS_KEY, MICRO_SERVICES_ADVANCED_KEY, MICRO_SERVICES_REF,
   NEURO_MARKETING_KEY, NUBE_KEY, PATRONES_KEY, PERSISTENCY_KEY }
 from 'src/app/models/linkReferencia';
-import { PreviousAndNextSection } from 'src/app/models/models';
+import { Item, PreviousAndNextSection } from 'src/app/models/models';
+import { MICROSERVICES_PATH } from 'src/app/models/relationsSummary';
 
 @Component({
     selector: 'app-micro-services',
@@ -13,7 +14,7 @@ import { PreviousAndNextSection } from 'src/app/models/models';
 })
 export class MicroServicesComponent implements OnInit {
 
-  items = MICRO_SERVICES;
+  items: Item[] = [];
 
   components = MICRO_SERVICES_REF;
 
@@ -25,7 +26,10 @@ export class MicroServicesComponent implements OnInit {
 
   previousAndNextSection!: PreviousAndNextSection;
 
+  constructor(private route: ActivatedRoute) {}
+
   ngOnInit(): void {
+    this.items = this.route.snapshot.data[MICROSERVICES_PATH.propertyNameData];
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
     this.relatedSections.set(MICRO_SERVICES_ADVANCED_KEY, routes.get(MICRO_SERVICES_ADVANCED_KEY)!);
