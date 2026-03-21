@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { BUENAS_PRACTICAS } from 'src/app/models/content/content6';
+import { ActivatedRoute } from '@angular/router';
 import { ANALISIS_KEY, BUENAS_PRACTICAS_REF, CALIDAD_KEY, LinkReferencia, MALAS_PRACTICAS_KEY, PRINCIPIOS_KEY, SMELL_CODES_KEY }
 from 'src/app/models/linkReferencia';
-import { PreviousAndNextSection } from 'src/app/models/models';
+import { Item, PreviousAndNextSection } from 'src/app/models/models';
+import { BUENAS_PRACTICAS_PATH } from 'src/app/models/relationsSummary';
 
 @Component({
     selector: 'app-buenas-practicas',
@@ -11,7 +12,7 @@ import { PreviousAndNextSection } from 'src/app/models/models';
 })
 export class BuenasPracticasComponent implements OnInit {
 
-  items = BUENAS_PRACTICAS;
+  items: Item[] = [];
 
   components = BUENAS_PRACTICAS_REF;
 
@@ -23,7 +24,10 @@ export class BuenasPracticasComponent implements OnInit {
 
   previousAndNextSection!: PreviousAndNextSection;
 
+  constructor(private route: ActivatedRoute) {}
+
   ngOnInit(): void {
+    this.items = this.route.snapshot.data[BUENAS_PRACTICAS_PATH.propertyNameData];
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
     this.relatedSections.set(MALAS_PRACTICAS_KEY, routes.get(MALAS_PRACTICAS_KEY)!);
