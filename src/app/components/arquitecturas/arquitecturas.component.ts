@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { ARQUITECTURAS } from 'src/app/models/content/content4';
+import { ActivatedRoute } from '@angular/router';
 import { ANALISIS_KEY, ARQUITECTURAS_REF, LinkReferencia, METODOLOGIAS_KEY, NUBE_KEY, PATRONES_KEY, POO_KEY, UML_KEY }
 from 'src/app/models/linkReferencia';
-import { PreviousAndNextSection } from 'src/app/models/models';
+import { Item, PreviousAndNextSection } from 'src/app/models/models';
+import { ARQUITECTURAS_PATH } from 'src/app/models/relationsSummary';
 
 @Component({
     selector: 'app-arquitecturas',
@@ -11,7 +12,7 @@ import { PreviousAndNextSection } from 'src/app/models/models';
 })
 export class ArquitecturasComponent implements OnInit {
 
-  items = ARQUITECTURAS;
+  items: Item[] = [];
 
   components = ARQUITECTURAS_REF;
 
@@ -23,7 +24,10 @@ export class ArquitecturasComponent implements OnInit {
 
   previousAndNextSection!: PreviousAndNextSection;
 
+  constructor(private route: ActivatedRoute) {}
+
   ngOnInit(): void {
+    this.items = this.route.snapshot.data[ARQUITECTURAS_PATH.propertyNameData];
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
     this.relatedSections.set(METODOLOGIAS_KEY, routes.get(METODOLOGIAS_KEY)!);
