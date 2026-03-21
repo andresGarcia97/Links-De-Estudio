@@ -5,7 +5,6 @@ import { forkJoin, of } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { Item } from 'src/app/models/models';
 import * as Paths from '../../models/relationsSummary'
-import { Content6 } from 'src/app/models/content/content6';
 import { Content7 } from 'src/app/models/content/content7';
 import { Content8 } from 'src/app/models/content/content8';
 
@@ -34,11 +33,16 @@ const MIGRATED_FILES: string[] = [
     Paths.ESTRUCTURAS_PATH.file,
     Paths.MICROSERVICES_PATH.file,
     Paths.MICROSERVICES_ADVANCED_PATH.file,
-    Paths.NUBE_PATH.file
+    Paths.NUBE_PATH.file,
+    Paths.PEOPLE_PATH.file,
+    Paths.BUENAS_PRACTICAS_PATH.file,
+    Paths.MALAS_PRACTICAS_PATH.file,
+    Paths.CALIDAD_PATH.file,
+    Paths.GIT_PATH.file,
+    Paths.LEYES_PATH.file
 ];
 
 const PENDING_ITEMS: Item[] = [
-    ...new Content6().temas,
     ...new Content7().temas,
     ...new Content8().temas,
 ];
