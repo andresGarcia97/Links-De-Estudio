@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { PARADIGMAS } from 'src/app/models/content/content1';
+import { ActivatedRoute } from '@angular/router';
 import { ANALISIS_KEY, META_CARACTERISTICAS_KEY, LinkReferencia, PARADIGMAS_REF, PATRONES_KEY, PRINCIPIOS_KEY, POO_KEY } 
 from 'src/app/models/linkReferencia';
-import { PreviousAndNextSection } from 'src/app/models/models';
+import { Item, PreviousAndNextSection } from 'src/app/models/models';
+import { PARADIGMAS_PATH } from 'src/app/models/relationsSummary';
 
 @Component({
     selector: 'app-paradigmas',
@@ -11,7 +12,7 @@ import { PreviousAndNextSection } from 'src/app/models/models';
 })
 export class ParadigmasComponent  implements OnInit {
 
-  items = PARADIGMAS;
+  items: Item[] = [];
 
   components = PARADIGMAS_REF;
 
@@ -23,7 +24,10 @@ export class ParadigmasComponent  implements OnInit {
 
   previousAndNextSection!: PreviousAndNextSection;
 
+  constructor(private route: ActivatedRoute) {}
+
   ngOnInit(): void {
+    this.items = this.route.snapshot.data[PARADIGMAS_PATH.propertyNameData];
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
     this.relatedSections.set(META_CARACTERISTICAS_KEY, routes.get(META_CARACTERISTICAS_KEY)!);

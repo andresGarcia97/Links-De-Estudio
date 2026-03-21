@@ -847,17 +847,17 @@ export const PARADIGMAS_REF = new Map<string, Referencia>([
         .addMoreReferences("https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/programacion-declarativa/", "https://www.ionos.com/es-us/digitalguide/paginas-web/desarrollo-web/programacion-imperativa/")
     ],
     [Keys.PARADIGMAS_FUNCIONAL, new Referencia('https://codigofacilito.com/articulos/programacion-funcional', 'Paradigma funcional', PARADIGMAS_KEY, 'Funcional')],
-    ['scripting', new Referencia('https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/que-son-los-lenguajes-de-scripting/', 'Lenguajes de scripting', PARADIGMAS_KEY, 'Scripting')],
+    [Keys.PARADIGMAS_SCRIPTING, new Referencia('https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/que-son-los-lenguajes-de-scripting/', 'Lenguajes de scripting', PARADIGMAS_KEY, 'Scripting')],
     [Keys.PARADIGMAS_REACTIVO, new Referencia('https://profile.es/blog/que-es-la-programacion-reactiva-una-introduccion/', 'Programación reactiva', PARADIGMAS_KEY, 'Reactiva', '', '2025/06/07')
         .addRelatedItems(Keys.ANALISIS_MANIFEST_REACTIVE, Keys.MALAS_PRACTICAS_CALLBACK_HELL)
     ],
     //['marcado', new Referencia('https://blog.educacionit.com/2018/12/26/diferencia-entre-lenguajes-de-scripting-lenguajes-de-marcado-y-lenguajes-de-programacion/', 'Lenguajes de marcado', PARADIGMAS_KEY)],
-    ['marcado', new Referencia('https://www.ticarte.com/contenido/que-son-los-lenguajes-de-marcas', 'Lenguajes de marcado', PARADIGMAS_KEY, 'De Marcado')],
+    [Keys.PARADIGMAS_MARCADO, new Referencia('https://www.ticarte.com/contenido/que-son-los-lenguajes-de-marcas', 'Lenguajes de marcado', PARADIGMAS_KEY, 'De Marcado')],
     [Keys.PARADIGMAS_ASPECTOS, new Referencia('https://www.baeldung.com/spring-aop', 'Orientación a aspectos', PARADIGMAS_KEY, 'Aspectos', '', '2025/12/27')
         .addRelatedItems(Keys.COMPILACION_CALLS_AND_INVOCATION, Keys.COMPILACION_INSTRUMENTS)
         .addMoreReferences('https://docs.spring.io/spring-framework/reference/core/aop/introduction-defn.html')
     ],
-    ['logica', new Referencia('https://ferestrepoca.github.io/paradigmas-de-programacion/proglogica/logica_teoria/aplicaciones.html', 'Programación Logica', PARADIGMAS_KEY, 'Logica')],
+    [Keys.PARADIGMAS_LOGICA, new Referencia('https://ferestrepoca.github.io/paradigmas-de-programacion/proglogica/logica_teoria/aplicaciones.html', 'Programación Logica', PARADIGMAS_KEY, 'Logica')],
     //['estructurada', new Referencia('https://informatica.uv.es/iiguia/AED/oldwww/2004_05/AED.Tema.04.pdf', 'Programación Estructurada', PARADIGMAS_KEY, 'Estructurada')],
     [Keys.PARADIGMAS_ESTRUCTURADA, new Referencia('https://webs.um.es/ldaniel/iscyp17-18/10-programacionEstructurada.html', 'Programación Estructurada', PARADIGMAS_KEY, 'Estructurada', '', '2025/04/28')],
     [Keys.PARADIGMAS_PARADIGMA_DATOS, new Referencia('https://blog.klipse.tech/dop/2022/06/22/principles-of-dop.html', 'Programación Orientada a Datos', PARADIGMAS_KEY, 'Datos')],
