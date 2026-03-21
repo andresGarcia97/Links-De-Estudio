@@ -10,6 +10,7 @@ import {
 } from 'src/app/models/linkReferencia';
 import { GlosarioComponent } from './components/glosario/glosario.component';
 import { HomeComponent } from './components/home/home.component';
+import { glosarioResolver } from './components/glosario/glosario.resolver';
 
 const routes: Routes = [
 
@@ -57,7 +58,7 @@ const routes: Routes = [
   { path: 'buenas-practicas', loadChildren: () => import('./components/buenas-practicas/buenas-practicas.module').then(m => m.BuenasPracticasModule), title: BUENAS_PRACTICAS_KEY },
   { path: 'arquitecturas', loadChildren: () => import('./components/arquitecturas/arquitecturas.module').then(m => m.ArquitecturasModule), title: ARQUITECTURAS_KEY },
   { path: 'agiles', loadChildren: () => import('./components/agiles/agiles.module').then(m => m.AgilesModule), title: AGILES_KEY },
-  { path: 'glosario', component: GlosarioComponent, title: 'Glosario' },
+  { path: 'glosario', component: GlosarioComponent, title: 'Glosario', resolve: { temas: glosarioResolver } },
   { path: '', component: HomeComponent, pathMatch: 'full', title: 'Contenido De Repaso' },
 ];
 

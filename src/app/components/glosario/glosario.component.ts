@@ -1,30 +1,22 @@
 import { KeyValuePipe, NgFor, NgIf } from '@angular/common';
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { Router } from '@angular/router';
-import { Content1 } from 'src/app/models/content/content1';
-import { Content2 } from 'src/app/models/content/content2';
-import { Content3 } from 'src/app/models/content/content3';
-import { Content4 } from 'src/app/models/content/content4';
-import { Content5 } from 'src/app/models/content/content5';
-import { Content6 } from 'src/app/models/content/content6';
-import { Content7 } from 'src/app/models/content/content7';
-import { Content8 } from 'src/app/models/content/content8';
+import { ActivatedRoute, Router } from '@angular/router';
 import { LinkFuente } from 'src/app/models/linkFuente';
 import { LinkReferencia } from 'src/app/models/linkReferencia';
-import { Fuente, Referencia } from 'src/app/models/models';
+import { Fuente, Item, Referencia } from 'src/app/models/models';
 import { FilterPipe } from 'src/app/pipes/filter.pipe';
 
 @Component({
-    selector: 'app-glosario',
-    templateUrl: './glosario.component.html',
-    standalone: true,
-    imports: [
-      FormsModule,
-      NgIf,
-      NgFor,
-      KeyValuePipe,
-      FilterPipe
+  selector: 'app-glosario',
+  templateUrl: './glosario.component.html',
+  standalone: true,
+  imports: [
+    FormsModule,
+    NgIf,
+    NgFor,
+    KeyValuePipe,
+    FilterPipe
   ],
 })
 export class GlosarioComponent implements OnInit {
@@ -34,22 +26,19 @@ export class GlosarioComponent implements OnInit {
   fuentes = new LinkFuente().fuentes;
   linkReferencia = new LinkReferencia();
 
-  joinAllTemas = Array.from(new Content1().temas)
-    .concat(new Content2().temas)
-    .concat(new Content3().temas)
-    .concat(new Content4().temas)
-    .concat(new Content5().temas)
-    .concat(new Content6().temas)
-    .concat(new Content7().temas)
-    .concat(new Content8().temas);
+  joinAllTemas: Item[] = this.route.snapshot.data['temas']
 
   search = '';
 
   onlyFuentes = this.convertFuentesToArray(this.fuentes);
 
   componentes = this.linkReferencia.components;
+
   onlyComponents = this.convertComponentsToArray(this.componentes);
+
   searchOnContent: Map<string, Referencia> = new Map();
+
+  constructor(private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     console.info("%c Temas: " + this.joinAllTemas.length, "color:#000; font-size: 16px;background:#FFBA08; font-weight: bold;");
@@ -74,8 +63,6 @@ export class GlosarioComponent implements OnInit {
       this.inputSearch?.nativeElement?.focus();
     }, 300);
   }
-
-  constructor(private router: Router) { }
 
   private convertFuentesToArray(namesAndValues: Map<string, Fuente>): Array<object> {
     return [...namesAndValues.values()].map(value => ({
