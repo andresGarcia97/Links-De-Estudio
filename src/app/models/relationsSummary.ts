@@ -1,6 +1,6 @@
 import {
     ANALISIS_DATA_KEY, ANALISIS_KEY, CI_CD_KEY, HARDWARE_KEY, METODOLOGIAS_KEY, PARADIGMAS_KEY, PERSISTENCY_ADVANCED_KEY,
-    PERSISTENCY_KEY, PRINCIPIOS_KEY, REFACTORING_KEY, SYSTEM_DESIGN_KEY, TESTING_ADVANCED_KEY, TESTING_KEY
+    PERSISTENCY_KEY, PRINCIPIOS_KEY, REFACTORING_KEY, REQUISITOS_KEY, SYSTEM_DESIGN_KEY, TESTING_ADVANCED_KEY, TESTING_KEY
 }
     from "./linkReferencia";
 import { RelationKeyWithSection } from "./models";
@@ -18,3 +18,4 @@ export const TESTING_ADVANCED_PATH = new RelationKeyWithSection(TESTING_ADVANCED
 export const CICD_INFRAESTRUCTURE_PATH = new RelationKeyWithSection(CI_CD_KEY, 'cicd_infraestructure', 'infraestructure');
 export const PRINCIPIOS_PATH = new RelationKeyWithSection(PRINCIPIOS_KEY, 'principios', 'principios');
 export const REFACTORING_PATH = new RelationKeyWithSection(REFACTORING_KEY, 'refactoring', 'refactoring');
+export const REQUISITOS_PATH = new RelationKeyWithSection(REQUISITOS_KEY, 'requisitos', 'requisitos');
