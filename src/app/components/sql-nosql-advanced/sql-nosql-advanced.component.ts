@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { BASE_DE_DATOS_AVANZADO } from 'src/app/models/content/content1';
+import { ActivatedRoute } from '@angular/router';
 import { PERSISTENCY_KEY, LinkReferencia, PERSISTENCY_ADVANCED_REF, WEB_KEY, HARDWARE_KEY, PATRONES_KEY, FRAMEWORKS_KEY }
 from 'src/app/models/linkReferencia';
-import { PreviousAndNextSection } from 'src/app/models/models';
+import { Item, PreviousAndNextSection } from 'src/app/models/models';
+import { PERSISTENCY_ADVANCED_PATH } from 'src/app/models/relationsSummary';
 
 @Component({
     selector: 'app-sql-nosql-advanced',
@@ -11,7 +12,7 @@ import { PreviousAndNextSection } from 'src/app/models/models';
 })
 export class SqlNosqlAdvancedComponent implements OnInit {
 
-  items = BASE_DE_DATOS_AVANZADO;
+  items: Item[] = [];
 
   components = PERSISTENCY_ADVANCED_REF;
 
@@ -23,7 +24,10 @@ export class SqlNosqlAdvancedComponent implements OnInit {
 
   previousAndNextSection!: PreviousAndNextSection;
 
+  constructor(private route: ActivatedRoute) {}
+
   ngOnInit(): void {
+    this.items = this.route.snapshot.data[PERSISTENCY_ADVANCED_PATH.propertyNameData];
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
     this.relatedSections.set(PERSISTENCY_KEY, routes.get(PERSISTENCY_KEY)!);
