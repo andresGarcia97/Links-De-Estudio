@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { APIS } from 'src/app/models/content/content5';
+import { ActivatedRoute } from '@angular/router';
 import { APIS_REF, LinkReferencia, CONTENEDORES_KEY, SECURITY_KEY, CI_CD_KEY, WEB_KEY, NUBE_KEY, META_CARACTERISTICAS_KEY,
   OBSERVABILIDAD_KEY }
 from 'src/app/models/linkReferencia';
-import { PreviousAndNextSection } from 'src/app/models/models';
+import { Item, PreviousAndNextSection } from 'src/app/models/models';
+import { APIS_PATH } from 'src/app/models/relationsSummary';
 
 @Component({
     selector: 'app-apis-terms',
@@ -12,7 +13,7 @@ import { PreviousAndNextSection } from 'src/app/models/models';
 })
 export class ApisTermsComponent implements OnInit {
 
-  items = APIS;
+  items: Item[] = [];
 
   components = APIS_REF;
 
@@ -24,7 +25,10 @@ export class ApisTermsComponent implements OnInit {
 
   previousAndNextSection!: PreviousAndNextSection;
 
+  constructor(private route: ActivatedRoute) {}
+
   ngOnInit(): void {
+    this.items = this.route.snapshot.data[APIS_PATH.propertyNameData];
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
     this.relatedSections.set(CONTENEDORES_KEY, routes.get(CONTENEDORES_KEY)!);
