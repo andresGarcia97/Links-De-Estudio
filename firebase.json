@@ -10,13 +10,28 @@
       {
         "source": "**/*.@(jpg|jpeg|gif|png|svg|ico|webp)",
         "headers": [
-          { "key": "Cache-Control", "value": "public,max-age=2592000,immutable" }
+          {
+            "key": "Cache-Control",
+            "value": "public,max-age=2592000,immutable"
+          }
+        ]
+      },
+      {
+        "source": "assets/content/*.json",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public,max-age=86400,must-revalidate"
+          }
         ]
       },
       {
         "source": "/index.html",
         "headers": [
-          { "key": "Cache-Control", "value": "no-cache" }
+          {
+            "key": "Cache-Control",
+            "value": "no-cache"
+          }
         ]
       }
     ],
