@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { PEOPLE } from 'src/app/models/content/content6';
+import { ActivatedRoute } from '@angular/router';
 import {
   CONOCIMIENTO_EMPIRICO_KEY, ESTRATEGIAS_DESARROLLO_KEY, LEYES_KEY, LinkReferencia, METODOLOGIAS_KEY, PEOPLE_REF,
   REQUISITOS_KEY, USER_HISTORIES_KEY
 } from 'src/app/models/linkReferencia';
-import { PreviousAndNextSection } from 'src/app/models/models';
+import { Item, PreviousAndNextSection } from 'src/app/models/models';
+import { PEOPLE_PATH } from 'src/app/models/relationsSummary';
 
 @Component({
     selector: 'app-personas',
@@ -13,7 +14,7 @@ import { PreviousAndNextSection } from 'src/app/models/models';
 })
 export class PersonasComponent implements OnInit {
 
-  items = PEOPLE;
+  items: Item[] = [];
 
   components = PEOPLE_REF;
 
@@ -25,7 +26,10 @@ export class PersonasComponent implements OnInit {
 
   previousAndNextSection!: PreviousAndNextSection;
 
+  constructor(private route: ActivatedRoute) {}
+
   ngOnInit(): void {
+    this.items = this.route.snapshot.data[PEOPLE_PATH.propertyNameData];
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
     this.relatedSections.set(ESTRATEGIAS_DESARROLLO_KEY, routes.get(ESTRATEGIAS_DESARROLLO_KEY)!);
