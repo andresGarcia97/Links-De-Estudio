@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { UML } from 'src/app/models/content/content7';
+import { ActivatedRoute } from '@angular/router';
 import { ANALISIS_KEY, GIT_KEY, LinkReferencia, REQUISITOS_KEY, TESTING_KEY, UML_REF, VERSIONAMIENTO_KEY }
 from 'src/app/models/linkReferencia';
-import { PreviousAndNextSection } from 'src/app/models/models';
+import { Item, PreviousAndNextSection } from 'src/app/models/models';
+import { UML_PATH } from 'src/app/models/relationsSummary';
 
 @Component({
     selector: 'app-uml',
@@ -11,7 +12,7 @@ import { PreviousAndNextSection } from 'src/app/models/models';
 })
 export class UmlComponent implements OnInit {
 
-  items = UML;
+  items: Item[] = [];
 
   components = UML_REF;
   
@@ -23,7 +24,10 @@ export class UmlComponent implements OnInit {
 
   previousAndNextSection!: PreviousAndNextSection;
 
+  constructor(private route: ActivatedRoute) {}
+
   ngOnInit(): void {
+    this.items = this.route.snapshot.data[UML_PATH.propertyNameData];
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
     this.relatedSections.set(VERSIONAMIENTO_KEY, routes.get(VERSIONAMIENTO_KEY)!);
