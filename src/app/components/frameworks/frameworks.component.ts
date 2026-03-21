@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { FRAMEWORKS } from 'src/app/models/content/content7';
+import { ActivatedRoute } from '@angular/router';
 import { ANALISIS_KEY, ARQUITECTURAS_KEY, CALIDAD_KEY, COMPILACION_KEY, FRAMEWORKS_REF, LinkReferencia,
   PERSISTENCY_ADVANCED_KEY, PRINCIPIOS_KEY }
 from 'src/app/models/linkReferencia';
-import { PreviousAndNextSection } from 'src/app/models/models';
+import { Item, PreviousAndNextSection } from 'src/app/models/models';
+import { FRAMEWORKS_PATH } from 'src/app/models/relationsSummary';
 
 @Component({
     selector: 'app-frameworks',
@@ -12,7 +13,7 @@ import { PreviousAndNextSection } from 'src/app/models/models';
 })
 export class FrameworksComponent implements OnInit {
 
-  items = FRAMEWORKS;
+  items: Item[] = [];
 
   components = FRAMEWORKS_REF;
 
@@ -24,7 +25,10 @@ export class FrameworksComponent implements OnInit {
 
   previousAndNextSection!: PreviousAndNextSection;
 
+  constructor(private route: ActivatedRoute) {}
+
   ngOnInit(): void {
+    this.items = this.route.snapshot.data[FRAMEWORKS_PATH.propertyNameData];
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
     this.relatedSections.set(ARQUITECTURAS_KEY, routes.get(ARQUITECTURAS_KEY)!);
