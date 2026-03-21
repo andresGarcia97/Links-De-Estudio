@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { ANALISIS_DATA } from 'src/app/models/content/content1';
+import { ActivatedRoute } from '@angular/router';
 import { 
   META_CARACTERISTICAS_KEY, LinkReferencia, ANALISIS_DATA_REF, ANALISIS_KEY, CI_CD_KEY, CONOCIMIENTO_EMPIRICO_KEY,
   PERSISTENCY_KEY, PATRONES_KEY, NEURO_MARKETING_KEY
 } from 'src/app/models/linkReferencia';
-import { PreviousAndNextSection } from 'src/app/models/models';
+import { Item, PreviousAndNextSection } from 'src/app/models/models';
+import { ANALISIS_DATA_PATH } from 'src/app/models/relationsSummary';
 
 @Component({
     selector: 'app-analisis-datos',
@@ -13,7 +14,7 @@ import { PreviousAndNextSection } from 'src/app/models/models';
 })
 export class AnalisisDatosComponent implements OnInit {
 
-  items = ANALISIS_DATA;
+  items: Item[] = [];;
 
   components = ANALISIS_DATA_REF;
 
@@ -25,7 +26,10 @@ export class AnalisisDatosComponent implements OnInit {
 
   previousAndNextSection!: PreviousAndNextSection;
 
+  constructor(private route: ActivatedRoute) {}
+
   ngOnInit(): void {
+    this.items = this.route.snapshot.data[ANALISIS_DATA_PATH.propertyNameData];
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
     this.relatedSections.set(CONOCIMIENTO_EMPIRICO_KEY, routes.get(CONOCIMIENTO_EMPIRICO_KEY)!);
