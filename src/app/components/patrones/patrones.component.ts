@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { PATRONES } from 'src/app/models/content/content7';
+import { ActivatedRoute } from '@angular/router';
 import { ANALISIS_KEY, ARQUITECTURAS_KEY, ESTRATEGIAS_DESARROLLO_KEY, FRAMEWORKS_KEY, LinkReferencia, NUBE_KEY,
   PARADIGMAS_KEY, PATRONES_KEY, PATRONES_REF, PRINCIPIOS_KEY }
 from 'src/app/models/linkReferencia';
-import { PreviousAndNextSection } from 'src/app/models/models';
+import { Item, PreviousAndNextSection } from 'src/app/models/models';
+import { PATRONES_PATH } from 'src/app/models/relationsSummary';
 
 @Component({
     selector: 'app-patrones',
@@ -12,7 +13,7 @@ import { PreviousAndNextSection } from 'src/app/models/models';
 })
 export class PatronesComponent implements OnInit {
 
-  items = PATRONES;
+  items: Item[] = [];
 
   components = PATRONES_REF;
 
@@ -24,7 +25,10 @@ export class PatronesComponent implements OnInit {
 
   previousAndNextSection!: PreviousAndNextSection;
 
+  constructor(private route: ActivatedRoute) {}
+
   ngOnInit(): void {
+    this.items = this.route.snapshot.data[PATRONES_PATH.propertyNameData];
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
     this.relatedSections.set(PRINCIPIOS_KEY, routes.get(PRINCIPIOS_KEY)!);
