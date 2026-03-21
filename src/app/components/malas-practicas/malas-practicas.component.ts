@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { MALAS_PRACTICAS } from 'src/app/models/content/content6';
+import { ActivatedRoute } from '@angular/router';
 import { 
   AGILES_KEY, ARQUITECTURAS_KEY, BUENAS_PRACTICAS_KEY, CALIDAD_KEY, CONOCIMIENTO_EMPIRICO_KEY, LinkReferencia, MALAS_PRACTICAS_REF,
   METODOLOGIAS_KEY, PRINCIPIOS_KEY
 } from 'src/app/models/linkReferencia';
-import { PreviousAndNextSection } from 'src/app/models/models';
+import { Item, PreviousAndNextSection } from 'src/app/models/models';
+import { MALAS_PRACTICAS_PATH } from 'src/app/models/relationsSummary';
 
 @Component({
     selector: 'app-malas-practicas',
@@ -13,7 +14,7 @@ import { PreviousAndNextSection } from 'src/app/models/models';
 })
 export class MalasPracticasComponent implements OnInit {
 
-  items = MALAS_PRACTICAS;
+  items: Item[] = [];
 
   components = MALAS_PRACTICAS_REF;
 
@@ -25,7 +26,10 @@ export class MalasPracticasComponent implements OnInit {
 
   previousAndNextSection!: PreviousAndNextSection;
 
+  constructor(private route: ActivatedRoute) {}
+
   ngOnInit(): void {
+    this.items = this.route.snapshot.data[MALAS_PRACTICAS_PATH.propertyNameData];
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
     this.relatedSections.set(CONOCIMIENTO_EMPIRICO_KEY, routes.get(CONOCIMIENTO_EMPIRICO_KEY)!);

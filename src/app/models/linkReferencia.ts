@@ -583,9 +583,9 @@ export const MALAS_PRACTICAS_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.AGILES_ESTIMATION_LAWS, Keys.REQUISITOS_BUSINESS_VALUE, Keys.PATRONES_GOF)
     ],
     //['contraGestion', new Referencia('https://blog.gft.com/es/2016/01/20/las-10-malas-practicas-mas-comunes-en-la-gestion-de-proyectos/', 'En contra de la gestión', MALAS_PRACTICAS_KEY, 'Contra la gestion')],
-    ['contraGestion', new Referencia('https://www.smartprecisesolutions.com/2018/01/malas-practicas-en-la-gestion-de-proyectos/', 'En contra de la gestión', MALAS_PRACTICAS_KEY, 'Contra la gestion', '', '2024/05/08')],
-    ['contraAgilidad', new Referencia('https://giovannycifuentes.com/los-6-antipatrones-en-la-adopcion-de-agilidad-que-los-lideres-deberian-conocer/', 'En contra de las metodologias agiles', MALAS_PRACTICAS_KEY, 'Contra la Agilidad', '2023/02/25')],
-    ['malasPracticasSCRUM', new Referencia('https://blog.palo-it.com/es/antipatrones-comunes-en-scrum', 'Malas practicas en SCRUM', MALAS_PRACTICAS_KEY, 'Contra SCRUM', '2023/05/01')],
+    [Keys.MALAS_PRACTICAS_CONTRA_GESTION, new Referencia('https://www.smartprecisesolutions.com/2018/01/malas-practicas-en-la-gestion-de-proyectos/', 'En contra de la gestión', MALAS_PRACTICAS_KEY, 'Contra la gestion', '', '2024/05/08')],
+    [Keys.MALAS_PRACTICAS_CONTRA_AGILIDAD, new Referencia('https://giovannycifuentes.com/los-6-antipatrones-en-la-adopcion-de-agilidad-que-los-lideres-deberian-conocer/', 'En contra de las metodologias agiles', MALAS_PRACTICAS_KEY, 'Contra la Agilidad', '2023/02/25')],
+    [Keys.MALAS_PRACTICAS_CONTRA_SCRUM, new Referencia('https://blog.palo-it.com/es/antipatrones-comunes-en-scrum', 'Malas practicas en SCRUM', MALAS_PRACTICAS_KEY, 'Contra SCRUM', '2023/05/01')],
     [Keys.MALAS_PRACTICAS_DEATH_BY_MICROSERVICES, new Referencia('https://renegadeotter.com/2023/09/10/death-by-a-thousand-microservices.html', 'Muerte por Microservicios', MALAS_PRACTICAS_KEY, 'Muerte por Microservicios', '2023/09/14')
         .addRelatedItems(Keys.OBSERVABILIDAD_OBSERVABILITY)
     ],
