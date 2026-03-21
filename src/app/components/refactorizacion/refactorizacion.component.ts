@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { REFACTORIZACION } from 'src/app/models/content/content3';
+import { ActivatedRoute } from '@angular/router';
 import { BUENAS_PRACTICAS_KEY, CALIDAD_KEY, ESTRATEGIAS_DESARROLLO_KEY, LinkReferencia, PATRONES_KEY, REFACTORING_REF,
   SMELL_CODES_KEY, TESTING_KEY }
 from 'src/app/models/linkReferencia';
-import { PreviousAndNextSection } from 'src/app/models/models';
+import { Item, PreviousAndNextSection } from 'src/app/models/models';
+import { REFACTORING_PATH } from 'src/app/models/relationsSummary';
 
 @Component({
     selector: 'app-refactorizacion',
@@ -12,7 +13,7 @@ import { PreviousAndNextSection } from 'src/app/models/models';
 })
 export class RefactorizacionComponent implements OnInit {
 
-  items = REFACTORIZACION;
+  items: Item[] = [];
 
   components = REFACTORING_REF;
   
@@ -24,7 +25,10 @@ export class RefactorizacionComponent implements OnInit {
 
   previousAndNextSection!: PreviousAndNextSection;
 
+  constructor(private route: ActivatedRoute) {}
+
   ngOnInit(): void {
+    this.items = this.route.snapshot.data[REFACTORING_PATH.propertyNameData];
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
     this.relatedSections.set(BUENAS_PRACTICAS_KEY, routes.get(BUENAS_PRACTICAS_KEY)!);
