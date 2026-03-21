@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { CI_CD_INFRAESTRUCTURE } from 'src/app/models/content/content3';
+import { ActivatedRoute } from '@angular/router';
 import {
   ANALISIS_DATA_KEY, APIS_KEY, CI_CD_REF, CONTENEDORES_KEY, HARDWARE_KEY, LinkReferencia, MICRO_SERVICES_KEY, NUBE_KEY,
   VERSIONAMIENTO_KEY, WEB_KEY }
 from 'src/app/models/linkReferencia';
-import { PreviousAndNextSection } from 'src/app/models/models';
+import { Item, PreviousAndNextSection } from 'src/app/models/models';
+import { CICD_INFRAESTRUCTURE_PATH } from 'src/app/models/relationsSummary';
 
 @Component({
     selector: 'app-cd-ci',
@@ -13,7 +14,7 @@ import { PreviousAndNextSection } from 'src/app/models/models';
 })
 export class CDCIComponent implements OnInit {
 
-  items = CI_CD_INFRAESTRUCTURE;
+  items: Item[] = [];
 
   components = CI_CD_REF;
 
@@ -25,7 +26,10 @@ export class CDCIComponent implements OnInit {
 
   previousAndNextSection!: PreviousAndNextSection;
 
+  constructor(private route: ActivatedRoute) {}
+
   ngOnInit(): void {
+    this.items = this.route.snapshot.data[CICD_INFRAESTRUCTURE_PATH.propertyNameData];
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
     this.relatedSections.set(VERSIONAMIENTO_KEY, routes.get(VERSIONAMIENTO_KEY)!);

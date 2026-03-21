@@ -1,6 +1,6 @@
 import {
-    ANALISIS_DATA_KEY, ANALISIS_KEY, HARDWARE_KEY, METODOLOGIAS_KEY, PARADIGMAS_KEY, PERSISTENCY_ADVANCED_KEY, PERSISTENCY_KEY,
-    SYSTEM_DESIGN_KEY, TESTING_ADVANCED_KEY, TESTING_KEY
+    ANALISIS_DATA_KEY, ANALISIS_KEY, CI_CD_KEY, HARDWARE_KEY, METODOLOGIAS_KEY, PARADIGMAS_KEY, PERSISTENCY_ADVANCED_KEY,
+    PERSISTENCY_KEY, SYSTEM_DESIGN_KEY, TESTING_ADVANCED_KEY, TESTING_KEY
 }
     from "./linkReferencia";
 import { RelationKeyWithSection } from "./models";
@@ -15,3 +15,4 @@ export const METODOLOGIAS_PATH = new RelationKeyWithSection(METODOLOGIAS_KEY, 'm
 export const SYSTEM_DESIGN_PATH = new RelationKeyWithSection(SYSTEM_DESIGN_KEY, 'system_design', 'systemDesign');
 export const TESTING_PATH = new RelationKeyWithSection(TESTING_KEY, 'testing', 'testing');
 export const TESTING_ADVANCED_PATH = new RelationKeyWithSection(TESTING_ADVANCED_KEY, 'testing_advanced', 'testing');
+export const CICD_INFRAESTRUCTURE_PATH = new RelationKeyWithSection(CI_CD_KEY, 'cicd_infraestructure', 'infraestructure');
