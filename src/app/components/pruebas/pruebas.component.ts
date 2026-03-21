@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { TESTING } from 'src/app/models/content/content2';
+import { ActivatedRoute } from '@angular/router';
 import { AGILES_KEY, ARQUITECTURAS_KEY, LinkReferencia, REQUISITOS_KEY, TESTING_ADVANCED_KEY, TESTING_REF, UML_KEY }
 from 'src/app/models/linkReferencia';
-import { PreviousAndNextSection } from 'src/app/models/models';
+import { Item, PreviousAndNextSection } from 'src/app/models/models';
+import { TESTING_PATH } from 'src/app/models/relationsSummary';
 
 @Component({
     selector: 'app-pruebas',
@@ -11,7 +12,7 @@ import { PreviousAndNextSection } from 'src/app/models/models';
 })
 export class PruebasComponent implements OnInit {
 
-  items = TESTING;
+  items: Item[] = [];
   
   components = TESTING_REF;
 
@@ -23,7 +24,10 @@ export class PruebasComponent implements OnInit {
 
   previousAndNextSection!: PreviousAndNextSection;
 
+  constructor(private route: ActivatedRoute) {}
+
   ngOnInit(): void {
+    this.items = this.route.snapshot.data[TESTING_PATH.propertyNameData];
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
     this.relatedSections.set(TESTING_ADVANCED_KEY, routes.get(TESTING_ADVANCED_KEY)!);
