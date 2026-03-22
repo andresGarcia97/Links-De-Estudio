@@ -1,13 +1,12 @@
 import { inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ResolveFn } from '@angular/router';
-import { forkJoin, of } from 'rxjs';
+import { forkJoin } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { Item } from 'src/app/models/models';
-import * as Paths from '../../models/relationsSummary'
-import { Content8 } from 'src/app/models/content/content8';
+import * as Paths from '../../models/relationsSummary';
 
-const MIGRATED_FILES: string[] = [
+const CONTENT_FILES: string[] = [
     Paths.HARDWARE_PATH.file,
     Paths.ANALISIS_DATA_PATH.file,
     Paths.PERSISTENCY_PATH.file,
@@ -44,11 +43,13 @@ const MIGRATED_FILES: string[] = [
     Paths.FRAMEWORKS_PATH.file,
     Paths.PATRONES_PATH.file,
     Paths.UML_PATH.file,
-    Paths.WEB_PATH.file
-];
-
-const PENDING_ITEMS: Item[] = [
-    ...new Content8().temas,
+    Paths.WEB_PATH.file,
+    Paths.COMPILACION_PATH.file,
+    Paths.CONTENEDORES_PATH.file,
+    Paths.USER_HISTORIES_PATH.file,
+    Paths.NEURO_MARKETING_PATH.file,
+    Paths.OBSERVABILIDAD_PATH.file,
+    Paths.SEGURIDAD_PATH.file,
 ];
 
 function loadJson(http: HttpClient, file: string) {
@@ -59,12 +60,7 @@ function loadJson(http: HttpClient, file: string) {
 
 export const glosarioResolver: ResolveFn<Item[]> = () => {
     const http = inject(HttpClient);
-
-    const json$ = MIGRATED_FILES.length > 0
-        ? forkJoin(MIGRATED_FILES.map(file => loadJson(http, file))).pipe(map(r => r.flat()))
-        : of([] as Item[]);
-
-    return json$.pipe(
-        map(migratedItems => [...migratedItems, ...PENDING_ITEMS])
+    return forkJoin(CONTENT_FILES.map(file => loadJson(http, file))).pipe(
+        map(results => results.flat())
     );
 };
