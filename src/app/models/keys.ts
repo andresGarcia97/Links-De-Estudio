@@ -140,6 +140,7 @@ export const MALAS_PRACTICAS_ANTI_PATRONES_ARQUITECTURAS = 'antipatronesArquitec
 export const MALAS_PRACTICAS_ANEMIC_DOMAIN = 'anemicDomain';
 export const MALAS_PRACTICAS_TRAIN_WECKS = 'trainWrecks';
 export const MALAS_PRACTICAS_OVER_ENGINEERING = 'over-engineering-trap';
+export const MALAS_PRACTICAS_BOOLEAN_TRAP = 'boolean-trap';
 export const BUENAS_PRACTICAS_BUENAS_PRACTICAS_I = 'buenas-practicas-I';
 export const BUENAS_PRACTICAS_BUENAS_PRACTICAS_II = 'buenas-practicas-II';
 export const BUENAS_PRACTICAS_DEMETER = 'demeter';

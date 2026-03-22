@@ -1,11 +1,11 @@
 {
   "callbackHell": [
-    "- Generalmente es un problema al hacer codigo con caracteristicas asincronas (generalmente javascript) ",
+    "- Generalmente es un problema al hacer código con caracteristicas asincronas (generalmente javascript) ",
     "- Un <em>callback</em> son funciones de primera clase, diseñadas para pasarse como argumento a otra función y ejecutarse posteriormente ",
     "- El problema va más alla del simple asincronismo, cuando se incrementa la anidación y estos incluyen callbacks se dificulta el entendimiento ",
-    "- Por lo que el orden en que se copia el codigo no necesariamente es en el que va a ser ejecutado",
+    "- Por lo que el orden en que se copia el código no necesariamente es en el que va a ser ejecutado",
     "- Cambiar el orden de las llamadas puede evitar el anidamiento innecesario",
-    "- Usar el encadenamiento de Promesas ó el Async/Await, hara que el codigo se más entendible y que se comporte de manera más sincronica "
+    "- Usar el encadenamiento de Promesas ó el Async/Await, hara que el código se más entendible y que se comporte de manera más sincronica "
   ],
   "contraCalidad": [
     "<strong>Falta del dominio</strong>",
@@ -111,7 +111,7 @@
     "",
     "- Un gran perdida y que poco se menciona con el uso de microservicios, es que se deja de aplicar <strong>DRY</strong>, ya que es preferible copiar y pegar, ",
     " - lo que se necesite, y en caso de que sea aplique y se extraiga en una libreria en comun, esta introduce nuevos aspectos a tener en cuenta, ",
-    " - como el manejo de las versiones, manejo de los repositorios de codigo, hasta problemas de contexto y de alcance ",
+    " - como el manejo de las versiones, manejo de los repositorios de código, hasta problemas de contexto y de alcance ",
     "",
     "- Tampoco se pueden ignorar las pruebas de integración, las unitarias puede que sigan funcionando con normalidad, pero la división y distribución ",
     " - de los componentes, hace que probarlos sea un autentico calvario, por lo que para solventar este problema, se dice que un microservicio debe ",
@@ -123,7 +123,7 @@
     "",
     "<strong>Multiinquilino</strong>",
     "<strong>- Fiesta de fantasmas:</strong> No separar adecuadamente los datos de inquilinos puede provocar fugas entre estos y violar leyes de protección de datos ",
-    "<strong>- Mantenimiento Frankestein:</strong> Las personalizaciones puede hacer que el codigo base sea confuso y dificil de mantener, más si esta mal modularizado ",
+    "<strong>- Mantenimiento Frankestein:</strong> Las personalizaciones puede hacer que el código base sea confuso y dificil de mantener, más si esta mal modularizado ",
     "",
     "<strong>Backend For Frontened(BFF)</strong>",
     "<strong>- The poltergeist payload:</strong> Sin optimizaciónes adecuadas, la recuperación de datos puede ser excesiva o insuficiente ",
@@ -183,9 +183,21 @@
     "<strong>Ejemplos</strong>",
     "- El uso excesivo de genericos oculta el proposito general y dificulta la legibilidad en general ",
     "- Primar el uso de la composición sobre la herencia permite una mayor flexibilidad y reutilización, pero la explosión de clases y metodos, ",
-    " - el manejo de sus relaciones y la propensión a duplicar codigo, pueden ser problemas peores que la anulación y sobreescritura de metodos ",
+    " - el manejo de sus relaciones y la propensión a duplicar código, pueden ser problemas peores que la anulación y sobreescritura de metodos ",
     "- El abuso de SOLID, cualquier cosa llevada al extremo degenera su proposito, en este caso la segregación de interfaces ",
     " - donde el objetivo es tener interfaces pequeñas pero su cantidad aumenta significativamente creando contratos que solo aumentan la indirección ",
     "- Uso de arquitecturas y patrones complejos para problemas que se sabe que no van a escalar o son necesidades estaticas "
+  ],
+  "boolean-trap": [
+    "- Los valores booleanos son simples y fáciles de usar, pero esa misma simplicidad los convierte en un problema si se usan mal ",
+    "- El problema con los <em>Argument Flag</em> o <em>Banderas</em>, surge al usarlos como parámetros en funciones sin el contexto apropiado ",
+    " - ocultando la intención donde se use(call-site), obligando muchas veces a revisar el comportamiento interno ",
+    "- Las banderas suelen indicar que una función tiene más de una responsabilidad, dejando de cumplir el principio de responsabilidad única ",
+    "- Un código bien escrito es predecible y por eso mismo debe ser fácil de leer y comprender",
+    "",
+    "<strong>Cuando Si y cuando NO</strong>",
+    "- Usar enumeraciones hace el código legible, representan su intención y permiten manejar más de 2 valores de ser necesario ",
+    "- Esto no significa erradicar su uso, hay contextos donde no implica una mala práctica, ",
+    " - si el parámetro es implícito o no existe una posibilidad real de extensión Ejemplo: <em>setIsModalOpen(bool isModalOpen)</em>"
   ]
 }

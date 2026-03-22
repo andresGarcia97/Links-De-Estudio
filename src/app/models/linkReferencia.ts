@@ -41,7 +41,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.TESTING_ADVANCED_CORNER_AND_EDGE_CASE;
+export const LAST_ITEM = Keys.MALAS_PRACTICAS_BOOLEAN_TRAP;
 export const LAST_UPDATE = Keys.BUENAS_PRACTICAS_BUENAS_PRACTICAS_II;
 
 export const AGILES_KEY = 'Agiles';
@@ -601,7 +601,11 @@ export const MALAS_PRACTICAS_REF = new Map<string, Referencia>([
     ],
     [Keys.MALAS_PRACTICAS_OVER_ENGINEERING, new Referencia('https://vtsen.hashnode.dev/dry-kiss-and-yagni-to-avoid-over-engineering-trap', 'Sobreingenieria', MALAS_PRACTICAS_KEY, 'Sobreingenieria', '2025/05/20')
         .addRelatedItems(Keys.META_CARACTERISTICAS_GENERICS, Keys.POO_HERENCIA_COMPOSICION, Keys.PRINCIPIOS_SOLID, Keys.BUENAS_PRACTICAS_INDIRECTION)
-    ]
+    ],
+    [Keys.MALAS_PRACTICAS_BOOLEAN_TRAP, new Referencia('https://read.engineerscodex.com/p/the-boolean-trap', 'Boolean Trap', MALAS_PRACTICAS_KEY, 'Boolean Trap', '2026/03/22')
+        .addRelatedItems(Keys.POO_ENUMS, Keys.META_CARACTERISTICAS_FEATURE_FLAGS, Keys.POO_COUPLING_AND_COHESION, Keys.PRINCIPIOS_SOLID)
+        .addMoreReferences('https://martinfowler.com/bliki/FlagArgument.html')
+    ],
 ]);
 
 export const META_CARACTERISTICAS_KEY = 'Meta-Caracteristicas';
