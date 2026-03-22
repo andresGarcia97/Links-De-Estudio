@@ -1513,7 +1513,7 @@ export const NEURO_MARKETING_REF = new Map<string, Referencia>([
     [Keys.NEURO_MARKETING_SEMANTICA_PRAGMATICA, new Referencia('https://creatividadpersuasiva.cl/semiosis-sintaxis-semantica-y-pragmatica/', 'Semantica & Pragmatica', NEURO_MARKETING_KEY, 'Semantica & Pragmatica', '2023/05/22')],
     [Keys.NEURO_MARKETING_PNL, new Referencia('https://psicologiaymente.com/coach/principios-pnl-programacion-neurolinguistica', 'Programación Neurolinguistica', NEURO_MARKETING_KEY, 'Neurolinguistica', '2023/05/28')],
     [Keys.NEURO_MARKETING_JOBS_TO_BE_DONE, new Referencia('https://rockcontent.com/es/blog/jobs-to-be-done/', 'Trabajos por acabar', NEURO_MARKETING_KEY, 'Trabajos por acabar', '2024/05/02')],
-    [Keys.NEURO_MARKETING_CUATRO_P, new Referencia('https://www.santanderopenacademy.com/es/blog/las-4-p-del-marketing.html', 'Las 4 P del marketing', NEURO_MARKETING_KEY, 'Las 4 P', '2026/03/06')
+    [Keys.NEURO_MARKETING_CUATRO_P, new Referencia('https://www.santanderopenacademy.com/es/blog/las-4-p-del-marketing.html', 'Las 4 P del marketing', NEURO_MARKETING_KEY, '4P & 7P', '2026/03/06')
         .addRelatedItems(Keys.PEOPLE_PEOPLE_PROCESS_TECNOLOGY, Keys.PEOPLE_CUSTOMER_LOYALTY)
     ],
 ]);
