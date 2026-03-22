@@ -1,27 +1,34 @@
 {
   "buenas-practicas-I": [
-    "- Definir el alcance y los requisitos, estableciendo limites acerca del trabajo a realizar con las partes involucradas",
+    "- Definir el alcance y los requisitos, estableciendo limites acerca del trabajo a realizar con los involucrados (negocio, desarrollo, etc) ",
     "- Dividir el desarrollo en fases o entregables que sean factibles, asi se pueden tener avances tangibles con su retroalimentación",
     "- Elegir el mejor <em>IDE</em> de acuerdo a los conocimientos y las necesidades, ya que esta herramienta nos ayuda a ser productivos ",
+    "- Utilizar metodologias como Scrum o Kanban para permitir un enfoque incremental y la adaptación a los cambios ",
     "",
-    "- Reutiliza código(<em>DRY</em>) y comentalo cuando sea necesario, pero no hay mejor codigo que aquel que esta autocomentado",
-    "- Documenta lo que haz hecho, asi es más facil integrar personal y sera util para futuros desarrollos ",
-    "- Parte esencial de la codificación es realizar testing, principalmente para tener una red de seguridad, frente a los cambios",
+    "- El codigo debe estar implementado en base a principios comunes(DRY, KISS, Yagni, etc) y en lo posible que este <em>autocomentado</em> ",
+    "- No solo se trata de escribir codigo limpio, debe ser codigo predecible, su comportamiento debe ser claro y entendible ",
+    "- Documenta lo que haz hecho, especificando el <strong>Porque</strong> más que el <strong>Como</strong>, en especial si es algo complejo ",
+    "- El testing no se realiza para tener metricas de cobertura, se hace para tener una red de seguridad, frente a los cambios ",
     "",
-    "- Estandariza reglas de desarrollo, asi se define la forma de trabajar para el grupo y se genera un codigo más mantenible y homogeneo ",
-    "- Optimiza recursos, no todo programa requiere grandes capacidades de procesamiento; No reinventes la rueda, pocas veces es necesarios ",
-    "- Utilizar metodologias como Scrum o Kanban para permitir un enfoque incremental y la adaptación a los cambios "
+    "- Estandares y reglas de desarrollo, definiendo guias de trabajo para el grupo y que se genere un codigo mantenible, coherente y homogeneo ",
+    "- Los valores sensibles o que puedan cambiar, son candidatos a ser configurables y/o parametrizables, evite valores quemados (Hardcoded) ",
+    "- Optimiza recursos, no todo programa requiere grandes capacidades de procesamiento; No reinventes la rueda, pocas veces es necesario ",
+    "- Los valores entregados por sistemas externos, nunca se deberian tratar como confiables, siempre deberian estar sujetos a ser validados "
   ],
   "buenas-practicas-II": [
-    "- Presencia activa de los clientes en el desarollo, ya que eso son la fuente de conocimiento primordial, del negocio y sus necesidades",
-    "- Definir los requerimientos de mano con el cliente, asi se pueden manejar estimaciones y priorizarlos, mediante metodologias agiles ",
-    "- Adaptar el lenguaje de acuerdo a los tipos de clientes, para evitar no comunicar informacion importante, o hacerla inentendible ",
-    "- Nunca dejar funciones al azar, que las pruebas demuestren su funcionamiento, y asi reducir problemas de retrocompatibilidad"
-  ],
-  "buenas-practicas-III": [
-    "- Escoger un ciclo de vida adecuado segun cada desarrollo, además del personal humano con las destrezas y experiencia relevantes",
-    "- Estimar y presupuestar razonablemente, pero esto es más facil decirlo que hacerlo, pero se puede intentar con tecnicas agiles ",
-    "- Control de calidad y revisiones de código periodicas, además de manejar del control de versiones, en caso de necesitar una reversión",
+    "- Presencia activa de los clientes en el desarollo, ya que eso son la fuente de conocimiento primordial, del negocio y sus necesidades ",
+    "- Visualización de la arquitectura, generalmente es un modelado inicial con un nivel de abstracción alto para identificar estrategias de desarrollo ",
+    "- Adaptar el lenguaje de acuerdo a los tipos de clientes, para evitar errores de comunicación o que al ser poco clara, se pierda información ",
+    "- No dejar funciones al azar, que las pruebas demuestren su funcionamiento, reduciendo problemas de retrocompatibilidad o presencia de defectos ",
+    "",
+    "- La evolución de un sistema es inevitable, este puede ir diseñandose, creciendo y evolucionando conforme avanza el proyecto ",
+    "- Escoger un ciclo de vida adecuado segun cada desarrollo, además del personal humano con las destrezas y experiencia relevante",
+    "- Manejar un control de versiones adecuado y escribir commits atomicos permiten mantener un historial limpio y habilitan revisiones eficaces ",
+    "- Los errores no son solo interrupciones/anomalias en el sistema, parte de un diagnostico/solución eficaz viene de errores claros y descriptivos ",
+    "",
+    "- Estimar y presupuestar razonablemente, para reducir la incertidumbre lo más posible, esto se puede lograr con herramientas y metodologias agiles ",
+    "- La etapa de pruebas no solo se reduce a tests sobre el codigo, tambien debe cubrir aspectos como seguridad, rendimiento, resiliencia, etc ",
+    "- Control de calidad y revisiones de código periodicas, además de manejar del control de versiones, en caso de necesitar una reversión ",
     "- Planificar como se realizara el matenimiento, los despliegues y el soporte tecnico, para que estos procesos sean conocidos y seguidos"
   ],
   "demeter": [

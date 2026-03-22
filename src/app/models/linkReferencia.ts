@@ -42,7 +42,7 @@ export class LinkReferencia {
 }
 
 export const LAST_ITEM = Keys.TESTING_ADVANCED_CORNER_AND_EDGE_CASE;
-export const LAST_UPDATE = Keys.TESTING_ADVANCED_CASOS_DE_PRUEBA;
+export const LAST_UPDATE = Keys.BUENAS_PRACTICAS_BUENAS_PRACTICAS_II;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -247,11 +247,14 @@ export const ARQUITECTURAS_REF = new Map<string, Referencia>([
 export const BUENAS_PRACTICAS_KEY = 'Buenas-Practicas';
 export const BUENAS_PRACTICAS_REF = new Map<string, Referencia>([
     //['practicas1', new Referencia('https://www.tithink.com/es/2018/06/13/12-buenas-practicas-para-el-desarrollo-software/', 'Buenas practicas parte #1', BUENAS_PRACTICAS_KEY, 'Buenas Practicas #1')],
-    [Keys.BUENAS_PRACTICAS_BUENAS_PRACTICAS_I, new Referencia('https://mtpinternational.mx/cuales-son-las-mejores-practicas-del-desarrollo-de-software/', 'Buenas practicas I', BUENAS_PRACTICAS_KEY, 'Buenas Practicas I', '', '2025/10/11')
+    [Keys.BUENAS_PRACTICAS_BUENAS_PRACTICAS_I, new Referencia('https://mtpinternational.mx/cuales-son-las-mejores-practicas-del-desarrollo-de-software/', 'Buenas practicas I', BUENAS_PRACTICAS_KEY, 'Buenas Practicas I', '2025/10/11', '2026/03/21')
         .addRelatedItems(Keys.METODOLOGIAS_AGILES)
+        .addMoreReferences('https://blog.stackademic.com/dont-just-code-the-15-essential-practices-senior-developers-want-you-to-learn-now-84246fb2f6ed')
     ],
-    [Keys.BUENAS_PRACTICAS_BUENAS_PRACTICAS_II, new Referencia('https://sg.com.mx/revista/mejores-pr%C3%A1cticas-para-el-desarrollo-software', 'Buenas practicas II', BUENAS_PRACTICAS_KEY, 'Buenas Practicas II')],
-    [Keys.BUENAS_PRACTICAS_BUENAS_PRACTICAS_III, new Referencia('https://velneo.es/15-buenas-practicas-proyectos-desarrollo-software/', 'Buenas practicas III', BUENAS_PRACTICAS_KEY, 'Buenas Practicas III')],
+    [Keys.BUENAS_PRACTICAS_BUENAS_PRACTICAS_II, new Referencia('https://sg.com.mx/revista/mejores-pr%C3%A1cticas-para-el-desarrollo-software', 'Buenas practicas II', BUENAS_PRACTICAS_KEY, 'Buenas Practicas II', '', '2026/03/21')
+        .addRelatedItems(Keys.ANALISIS_MODEL_DOMAIN)
+        .addMoreReferences('https://velneo.es/15-buenas-practicas-proyectos-desarrollo-software/')
+    ],
     //['practicas4', new Referencia('http://www.noussintelligence.com/desarrollo-software-buenas-practicas-recomendaciones/', 'Buenas practicas parte #4', BUENAS_PRACTICAS_KEY, 'Parte #4')],
     [Keys.BUENAS_PRACTICAS_DEMETER, new Referencia('https://www.adictosaltrabajo.com/2015/07/24/ley-de-demeter/', 'Ley de Demeter', BUENAS_PRACTICAS_KEY, 'Ley de Demeter')],
     //['complejidad', new Referencia('http://oscarmoreno.com/la-complejidad-ciclomatica/', 'Complejidad Ciclomatica', BUENAS_PRACTICAS_KEY, 'Complejidad')],

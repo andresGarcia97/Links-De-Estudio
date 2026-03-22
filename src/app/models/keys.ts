@@ -142,7 +142,6 @@ export const MALAS_PRACTICAS_TRAIN_WECKS = 'trainWrecks';
 export const MALAS_PRACTICAS_OVER_ENGINEERING = 'over-engineering-trap';
 export const BUENAS_PRACTICAS_BUENAS_PRACTICAS_I = 'buenas-practicas-I';
 export const BUENAS_PRACTICAS_BUENAS_PRACTICAS_II = 'buenas-practicas-II';
-export const BUENAS_PRACTICAS_BUENAS_PRACTICAS_III = 'buenas-practicas-III';
 export const BUENAS_PRACTICAS_DEMETER = 'demeter';
 export const BUENAS_PRACTICAS_COMPLEJIDAD = 'complejidad';
 export const BUENAS_PRACTICAS_LOGGING = 'logging';
