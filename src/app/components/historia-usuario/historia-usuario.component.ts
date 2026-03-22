@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { HISTORIAS_USUARIO } from 'src/app/models/content/content8';
+import { ActivatedRoute } from '@angular/router';
 import { 
   AGILES_KEY, CONOCIMIENTO_EMPIRICO_KEY, LinkReferencia, PEOPLE_KEY, REQUISITOS_KEY, SYSTEM_DESIGN_KEY, USER_HISTORIES }
   from 'src/app/models/linkReferencia';
-import { PreviousAndNextSection } from 'src/app/models/models';
+import { Item, PreviousAndNextSection } from 'src/app/models/models';
+import { USER_HISTORIES_PATH } from 'src/app/models/relationsSummary';
 
 @Component({
     selector: 'app-historia-usuario',
@@ -12,7 +13,7 @@ import { PreviousAndNextSection } from 'src/app/models/models';
 })
 export class HistoriaUsuarioComponent implements OnInit {
 
-  items = HISTORIAS_USUARIO;
+  items: Item[] = [];
 
   components = USER_HISTORIES;
 
@@ -24,7 +25,10 @@ export class HistoriaUsuarioComponent implements OnInit {
 
   previousAndNextSection!: PreviousAndNextSection;
 
+  constructor(private route: ActivatedRoute) {}
+
   ngOnInit(): void {
+    this.items = this.route.snapshot.data[USER_HISTORIES_PATH.propertyNameData];
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
     this.relatedSections.set(CONOCIMIENTO_EMPIRICO_KEY, routes.get(CONOCIMIENTO_EMPIRICO_KEY)!);

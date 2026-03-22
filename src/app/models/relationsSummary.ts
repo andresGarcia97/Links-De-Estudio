@@ -4,7 +4,7 @@ import {
     LEYES_KEY, MALAS_PRACTICAS_KEY, META_CARACTERISTICAS_KEY, META_ESTRUCTURAS_KEY, METODOLOGIAS_KEY, MICRO_SERVICES_ADVANCED_KEY,
     MICRO_SERVICES_KEY, NUBE_KEY, PARADIGMAS_KEY, PATRONES_KEY, PEOPLE_KEY, PERSISTENCY_ADVANCED_KEY, PERSISTENCY_KEY,
     POO_KEY, PRINCIPIOS_KEY, REFACTORING_KEY, REQUISITOS_KEY, SMELL_CODES_KEY, SYSTEM_DESIGN_KEY, TESTING_ADVANCED_KEY,
-    TESTING_KEY, UML_KEY, VERSIONAMIENTO_KEY, WEB_KEY
+    TESTING_KEY, UML_KEY, USER_HISTORIES_KEY, VERSIONAMIENTO_KEY, WEB_KEY
 }
     from "./linkReferencia";
 import { RelationKeyWithSection } from "./models";
@@ -48,3 +48,4 @@ export const UML_PATH = new RelationKeyWithSection(UML_KEY, 'uml', 'uml');
 export const WEB_PATH = new RelationKeyWithSection(WEB_KEY, 'web', 'web');
 export const COMPILACION_PATH = new RelationKeyWithSection(COMPILACION_KEY, 'compilacion', 'compilacion');
 export const CONTENEDORES_PATH = new RelationKeyWithSection(CONTENEDORES_KEY, 'contenedores', 'contenedores');
+export const USER_HISTORIES_PATH = new RelationKeyWithSection(USER_HISTORIES_KEY, 'historias_usuario', 'historias');
