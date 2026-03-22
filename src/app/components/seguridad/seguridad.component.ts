@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { SEGURIDAD } from 'src/app/models/content/content8';
+import { ActivatedRoute } from '@angular/router';
 import { APIS_KEY, HARDWARE_KEY, LEYES_KEY, LinkReferencia, NUBE_KEY, REQUISITOS_KEY, SECURITY_REF, WEB_KEY }
 from 'src/app/models/linkReferencia';
-import { PreviousAndNextSection } from 'src/app/models/models';
+import { Item, PreviousAndNextSection } from 'src/app/models/models';
+import { SEGURIDAD_PATH } from 'src/app/models/relationsSummary';
 
 @Component({
     selector: 'app-seguridad',
@@ -11,7 +12,7 @@ import { PreviousAndNextSection } from 'src/app/models/models';
 })
 export class SeguridadComponent implements OnInit {
 
-  items = SEGURIDAD;
+  items: Item[] = [];
 
   components = SECURITY_REF;
   
@@ -23,7 +24,10 @@ export class SeguridadComponent implements OnInit {
 
   previousAndNextSection!: PreviousAndNextSection;
 
+  constructor(private route: ActivatedRoute) {}
+
   ngOnInit(): void {
+    this.items = this.route.snapshot.data[SEGURIDAD_PATH.propertyNameData];
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
     this.relatedSections.set(REQUISITOS_KEY, routes.get(REQUISITOS_KEY)!);
