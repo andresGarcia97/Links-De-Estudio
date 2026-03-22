@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { WEB } from 'src/app/models/content/content7';
+import { ActivatedRoute } from '@angular/router';
 import { BUENAS_PRACTICAS_KEY, CI_CD_KEY, CONOCIMIENTO_EMPIRICO_KEY, CONTENEDORES_KEY, FRAMEWORKS_KEY, LinkReferencia,
   NUBE_KEY, SECURITY_KEY, WEB_REF }
 from 'src/app/models/linkReferencia';
-import { PreviousAndNextSection } from 'src/app/models/models';
+import { Item, PreviousAndNextSection } from 'src/app/models/models';
+import { WEB_PATH } from 'src/app/models/relationsSummary';
 
 @Component({
     selector: 'app-web',
@@ -12,7 +13,7 @@ import { PreviousAndNextSection } from 'src/app/models/models';
 })
 export class WebComponent implements OnInit {
 
-  items = WEB;
+  items: Item[] = [];
 
   components = WEB_REF;
 
@@ -24,7 +25,10 @@ export class WebComponent implements OnInit {
 
   previousAndNextSection!: PreviousAndNextSection;
 
+  constructor(private route: ActivatedRoute) {}
+
   ngOnInit(): void {
+    this.items = this.route.snapshot.data[WEB_PATH.propertyNameData];
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
     this.relatedSections.set(BUENAS_PRACTICAS_KEY, routes.get(BUENAS_PRACTICAS_KEY)!);

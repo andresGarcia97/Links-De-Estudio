@@ -1473,22 +1473,22 @@ export const HARDWARE_REF = new Map<string, Referencia>([
 
 export const WEB_KEY = 'Web';
 export const WEB_REF = new Map<string, Referencia>([
-    ['spa', new Referencia('https://desarrolloweb.com/articulos/que-es-una-spa.html', 'Single Page Aplication', WEB_KEY, 'SPA')],
-    ['pwa', new Referencia('https://www.iebschool.com/blog/progressive-web-apps-analitica-usabilidad/', 'Progressive Web App', WEB_KEY, 'PWA')],
+    [Keys.WEB_SPA, new Referencia('https://desarrolloweb.com/articulos/que-es-una-spa.html', 'Single Page Aplication', WEB_KEY, 'SPA')],
+    [Keys.WEB_PWA, new Referencia('https://www.iebschool.com/blog/progressive-web-apps-analitica-usabilidad/', 'Progressive Web App', WEB_KEY, 'PWA')],
     [Keys.WEB_SEO, new Referencia('https://www.40defiebre.com/guia-seo/que-es-seo-por-que-necesito', 'Search Engine Optimization', WEB_KEY, 'SEO')],
     //['espacio', new Referencia('https://www.dsigno.es/blog/diseno-grafico/espacios-negativos-en-diseno-grafico', 'El uso del espacio para diseñar', WEB_KEY, 'Espacio Negativo')],
     [Keys.WEB_SPACE, new Referencia('https://heyjaime.com/blog/espacio-negativo/', 'El uso del espacio para diseñar', WEB_KEY, 'Espacio Negativo', '', '2024/12/13')],
-    ['diseno', new Referencia('https://seocom.agency/es/blog/diseno-grafico-web/', 'Diseño grafico', WEB_KEY, 'Diseño Grafico')],
+    [Keys.WEB_DISEÑO, new Referencia('https://seocom.agency/es/blog/diseno-grafico-web/', 'Diseño grafico', WEB_KEY, 'Diseño Grafico')],
     [Keys.WEB_USER_INTERFACE, new Referencia('https://pensamientodigital.wordpress.com/diseno-de-interfases-de-usuario/', 'Interfaces de usuario', WEB_KEY, 'UI')],
     [Keys.WEB_USER_XPERIENCE, new Referencia('https://www.coursera.org/articles/ui-vs-ux-design', 'Experiencia de usuario', WEB_KEY, 'UX')],
-    ['logos', new Referencia('https://franciscotorreblanca.es/logotipo-imagotipo-isotipo-e-isologo/', 'Logotipo, Imagotipo, Isotipo, Isologo', WEB_KEY, 'Logos')],
+    [Keys.WEB_LOGOS, new Referencia('https://franciscotorreblanca.es/logotipo-imagotipo-isotipo-e-isologo/', 'Logotipo, Imagotipo, Isotipo, Isologo', WEB_KEY, 'Logos')],
     //['experienciasUsuario', new Referencia('https://blog.acantu.com/que-es-ux-y-ui/', 'Experiencia de usuario', WEB_KEY, 'UX')],
     [Keys.WEB_GESTALT, new Referencia('https://imborrable.com/blog/teoria-de-la-gestalt/', 'Teoria de Gestalt', WEB_KEY, 'Teoria de Gestalt')],
-    ['ssr-csr-ssg-isr', new Referencia('https://medium.com/@prashantramnyc/server-side-rendering-ssr-vs-client-side-rendering-csr-vs-pre-rendering-using-static-site-89f2d05182ef', 'SSR vs CSR vs SSG', WEB_KEY, 'SSR vs CSR vs SSG')],
-    ['esqueumorfismo', new Referencia('https://aderal.es/estrategias-de-marketing-y-transformacion-digital/nuevas-tendencias-en-diseno-grafico-digital-el-regreso-del-esqueumorfismo/', 'Esqueumorfismo', WEB_KEY, 'Esqueumorfismo')],
+    [Keys.WEB_SSR_CSR_SSG_ISG, new Referencia('https://medium.com/@prashantramnyc/server-side-rendering-ssr-vs-client-side-rendering-csr-vs-pre-rendering-using-static-site-89f2d05182ef', 'SSR vs CSR vs SSG', WEB_KEY, 'SSR vs CSR vs SSG')],
+    [Keys.WEB_ESQUEUMORFISMO, new Referencia('https://aderal.es/estrategias-de-marketing-y-transformacion-digital/nuevas-tendencias-en-diseno-grafico-digital-el-regreso-del-esqueumorfismo/', 'Esqueumorfismo', WEB_KEY, 'Esqueumorfismo')],
     [Keys.WEB_MENOR_SORPRESA, new Referencia('https://www.linkedin.com/pulse/principle-least-surprise-incus-data-pty-ltd/', 'Menor Sorpresa', WEB_KEY, 'Menor Sorpresa')],
     [Keys.WEB_MICRO_FRONTENED, new Referencia('https://newsletter.systemdesign.one/p/micro-frontends', 'Micro Frontends', WEB_KEY, 'Micro Frontends', '2024/03/07')],
-    ['buenasPracticasFront', new Referencia('https://dev.to/emmanuelhills/best-practices-for-frontend-web-development-a-comprehensive-guide-27h0', 'Buenas practicas Desarrollo web', WEB_KEY, 'Buenas practicas', '2024/03/31')],
+    [Keys.WEB_BUENAS_PRACTICAS, new Referencia('https://dev.to/emmanuelhills/best-practices-for-frontend-web-development-a-comprehensive-guide-27h0', 'Buenas practicas Desarrollo web', WEB_KEY, 'Buenas practicas', '2024/03/31')],
     [Keys.WEB_GOLDEN_SIGNALS, new Referencia('https://www.groundcover.com/blog/4-golden-signals', 'Golden Signals', WEB_KEY, 'Golden Signals', '2024/09/22')
         .addRelatedItems(Keys.OBSERVABILIDAD_MONITOREO, Keys.PEOPLE_NO_NEWS_GOOD_NEWS)
     ],
