@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { COMPILACION } from 'src/app/models/content/content8';
+import { ActivatedRoute } from '@angular/router';
 import {
   META_CARACTERISTICAS_KEY, COMPILACION_REF, META_ESTRUCTURAS_KEY, HARDWARE_KEY, LinkReferencia, FRAMEWORKS_KEY, VERSIONAMIENTO_KEY, 
   PARADIGMAS_KEY}
 from 'src/app/models/linkReferencia';
-import { PreviousAndNextSection } from 'src/app/models/models';
+import { Item, PreviousAndNextSection } from 'src/app/models/models';
+import { COMPILACION_PATH } from 'src/app/models/relationsSummary';
 
 @Component({
     selector: 'app-compilacion',
@@ -13,7 +14,7 @@ import { PreviousAndNextSection } from 'src/app/models/models';
 })
 export class CompilacionComponent implements OnInit {
 
-  items = COMPILACION;
+  items: Item[] = [];
 
   components = COMPILACION_REF;
 
@@ -25,7 +26,10 @@ export class CompilacionComponent implements OnInit {
 
   previousAndNextSection!: PreviousAndNextSection;
 
+  constructor(private route: ActivatedRoute) {}
+
   ngOnInit(): void {
+    this.items = this.route.snapshot.data[COMPILACION_PATH.propertyNameData];
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
     this.relatedSections.set(META_CARACTERISTICAS_KEY, routes.get(META_CARACTERISTICAS_KEY)!);
