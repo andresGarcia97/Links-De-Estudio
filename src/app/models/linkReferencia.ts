@@ -41,7 +41,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.MALAS_PRACTICAS_BOOLEAN_TRAP;
+export const LAST_ITEM = Keys.SYSTEM_DESIGN_RESILIENCE;
 export const LAST_UPDATE = Keys.BUENAS_PRACTICAS_BUENAS_PRACTICAS_II;
 
 export const AGILES_KEY = 'Agiles';
@@ -67,8 +67,12 @@ export const AGILES_REF = new Map<string, Referencia>([
     [Keys.AGILES_REQUISITOS_AGILES, new Referencia('https://www.javiergarzas.com/2019/12/los-requisitos-nunca-se-entienden-y-el-usuario-sabe-lo-que-quiere-cuando-lo-ve-funcionando.html', 'Entender los Requisitos', AGILES_KEY, 'Requisitos', '2024/03/10')],
     [Keys.AGILES_OUTPUT_AND_OUTCOME, new Referencia('https://www.linkedin.com/pulse/impact-vs-output-outcome-t%C3%A9cnicas-para-outcomes-guzm%C3%A1n-/', 'Output & Outcome', AGILES_KEY, 'Impacto y entrega de valor', '2024/05/25')],
     [Keys.AGILES_PRIORITIZATION, new Referencia('https://www.javiergarzas.com/2023/10/las-3-matrices-de-priorizacion-agil.html', 'Priorización', AGILES_KEY, 'Priorización', '2024/08/19')],
-    [Keys.AGILES_STAR, new Referencia('https://www.deel.com/es/blog/que-es-metodo-star-como-usarlo/', 'Metodo STAR', AGILES_KEY, 'STAR', '2025/01/08').addRelatedItems(Keys.PEOPLE_PEOPLE_PROCESS_TECNOLOGY)],
-    [Keys.AGILES_CRC, new Referencia('https://agilemodeling.com/artifacts/crcmodel.htm', 'Tarjetas Clase-Responsabilidad-Colaborador', AGILES_KEY, 'Tarjetas CRC', '2023/12/11', '2025/04/21').addRelatedItems(Keys.POO_POO, Keys.USER_HISTORIES_USE_CASE_REQUISITOS, Keys.METODOLOGIAS_MODEL_XP, Keys.UML_CLASES)],
+    [Keys.AGILES_STAR, new Referencia('https://www.deel.com/es/blog/que-es-metodo-star-como-usarlo/', 'Metodo STAR', AGILES_KEY, 'STAR', '2025/01/08')
+        .addRelatedItems(Keys.PEOPLE_PEOPLE_PROCESS_TECNOLOGY)
+    ],
+    [Keys.AGILES_CRC, new Referencia('https://agilemodeling.com/artifacts/crcmodel.htm', 'Tarjetas Clase-Responsabilidad-Colaborador', AGILES_KEY, 'Tarjetas CRC', '2023/12/11', '2025/04/21')
+        .addRelatedItems(Keys.POO_POO, Keys.USER_HISTORIES_USE_CASE_REQUISITOS, Keys.METODOLOGIAS_MODEL_XP, Keys.UML_CLASES)
+    ],
 ]);
 
 export const ANALISIS_KEY = 'Analisis';
@@ -169,6 +173,10 @@ export const SYSTEM_DESIGN_REF = new Map<string, Referencia>([
     [Keys.SYSTEM_DESIGN_DATABASE_WITHOUT_LOGIC, new Referencia('https://martinfowler.com/articles/dblogic.html', '¿ Bases de datos, sin logica ?', SYSTEM_DESIGN_KEY, '¿ Logica en la DB ?', '2026/01/31')
         .addRelatedItems(Keys.PERSISTENCY_ADVANCED_SQL_ENGINE_ANATOMY, Keys.PARADIGMAS_PARADIGMA_DATOS, Keys.ARQUITECTURAS_CAPAS, Keys.REQUISITOS_TRADE_OFF, Keys.META_CARACTERISTICAS_MEMORY_PROFILING, Keys.POO_DESIGN_BY_CONTRACT, Keys.PERSISTENCY_ADVANCED_SQL_NO_SQL, Keys.BUENAS_PRACTICAS_COMPLEJIDAD_COGNITIVA, Keys.PRINCIPIOS_DRY, Keys.PERSISTENCY_DATA_BASE_OBJECTS, Keys.POO_PILARES, Keys.SMELL_CODES_DESGLOSE, Keys.PERSISTENCY_SCHEMAS, Keys.PERSISTENCY_ADVANCED_MIGRATIONS, Keys.ESTRATEGIAS_DESARROLLO_TDD, Keys.PERSISTENCY_ADVANCED_ORM, Keys.ANALISIS_DATA_TURING_COMPLETE, Keys.PARADIGMAS_IMPERATIVO)
         .addMoreReferences('https://rmhw.medium.com/business-logic-versus-data-logic-9e4be45d7007', 'https://www.percona.com/blog/should-you-keep-your-business-logic-in-your-database/', 'https://enterprisecraftsmanship.com/posts/is-sql-good-place-for-business-logic/')
+    ],
+    [Keys.SYSTEM_DESIGN_RESILIENCE, new Referencia('https://codefarm0.medium.com/resilience-patterns-in-distributed-systems-bc847ee2533c', 'Resiliencia en sistemas distribuidos', SYSTEM_DESIGN_KEY, 'Resiliencia ', '2026/03/22')
+        .addRelatedItems(Keys.PATRONES_RESILIENCIA, Keys.CD_CI_FAILOVER, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.APIS_RATE_LIMITING, Keys.PATRONES_DYSTRIBUTED_SYSTEMS, Keys.CD_CI_CELL_BASED_ARQUITECTURE)
+        .addMoreReferences('https://medium.com/@mhd.umair/building-resilient-systems-designing-for-self-healing-in-application-development-564a40abb095')
     ]
 ]);
 
