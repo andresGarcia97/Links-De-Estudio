@@ -17,15 +17,6 @@
         ]
       },
       {
-        "source": "assets/content/*.json",
-        "headers": [
-          {
-            "key": "Cache-Control",
-            "value": "public,max-age=300,must-revalidate"
-          }
-        ]
-      },
-      {
         "source": "/index.html",
         "headers": [
           {
