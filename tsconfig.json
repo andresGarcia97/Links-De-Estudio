@@ -23,7 +23,6 @@
     "useDefineForClassFields": false,
     "skipLibCheck": true,
     "resolveJsonModule": true,
-    "allowSyntheticDefaultImports": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "removeComments": true
