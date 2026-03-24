@@ -1,4 +1,4 @@
-import { KeyValuePipe, NgFor, NgIf } from '@angular/common';
+import { KeyValuePipe } from '@angular/common';
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
@@ -13,8 +13,6 @@ import { FilterPipe } from 'src/app/pipes/filter.pipe';
   standalone: true,
   imports: [
     FormsModule,
-    NgIf,
-    NgFor,
     KeyValuePipe,
     FilterPipe
   ],

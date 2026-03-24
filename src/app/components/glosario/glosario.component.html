@@ -2,45 +2,56 @@
 <div class="content">
 
   <div class="card-container">
-    <input #inputSearch class="search" type="text" [(ngModel)]="search" name="search"/>
+    <input #inputSearch class="search" type="text" [(ngModel)]="search" name="search" />
 
-    <div class="close-glosary" *ngIf="search !== '' " (click)="searchInsideContent()">
+    @if (search !== '') {
+    <div class="close-glosary" (click)="searchInsideContent()">
       <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 448 512">
-          <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-          <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/>
+        <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+        <path
+          d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
       </svg>
     </div>
-    
+    }
+
   </div>
 
   <div class="card-container">
 
-    <div class="card card-small card-no-size tooltip" *ngFor="let componente of onlyComponents | filter : search" 
-      (click)="goToSection(componente.componente, componente.key)"> {{componente.titulo}}
+    @for (componente of onlyComponents | filter : search; track componente.key) {
+    <div class="card card-small card-no-size tooltip" (click)="goToSection(componente.componente, componente.key)">
+      {{componente.titulo}}
       <span class="tooltiptext gradient">Seccion: {{componente.componente}}</span>
     </div>
+    }
 
   </div>
 
   <div class="card-container">
 
-    <a *ngFor="let linkAndFuente of onlyFuentes | filter : search" class="card card-small card-no-size tooltip"
-      target="_blank" rel="noopener noreferrer" [href]="linkAndFuente.referencia">
+    @for (linkAndFuente of onlyFuentes | filter : search; track linkAndFuente.referencia) {
+    <a class="card card-small card-no-size tooltip" target="_blank" rel="noopener noreferrer"
+      [href]="linkAndFuente.referencia">
       <span>{{linkAndFuente.titulo}}</span>
       <span class="tooltiptext gradient">{{linkAndFuente.componente}}</span>
     </a>
+    }
 
   </div>
 
-  <div class="card-container" *ngIf="searchOnContent.size > 0">
+  @if (searchOnContent.size > 0) {
+  <div class="card-container">
 
     <h2>Coincidencias por contenido</h2>
 
-    <div class="card card-small card-no-size tooltip" *ngFor="let componente of searchOnContent | keyvalue" 
-      (click)="goToSection(componente.value.component, componente.key)"> {{componente.value.tittle}}
+    @for (componente of searchOnContent | keyvalue; track componente.key) {
+    <div class="card card-small card-no-size tooltip" (click)="goToSection(componente.value.component, componente.key)">
+      {{componente.value.tittle}}
       <span class="tooltiptext gradient">Seccion: {{componente.value.component}}</span>
     </div>
+    }
 
   </div>
+  }
 
 </div>
