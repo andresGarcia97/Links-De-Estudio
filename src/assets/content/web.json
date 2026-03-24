@@ -29,10 +29,18 @@
   ],
   "diseño": [
     "- El diseño grafico es importante en la programación debido a que este sera la cara visible de tu producto ",
-    "- Es importante contestar respuestas previamente como: ¿ cual es tu objetivo ? & ¿ cual es tu producto ? ",
+    "- Es importante contestar respuestas previamente como: ¿ Cual es tu objetivo ? & ¿ Cual es tu producto ? ",
     "- NO descuides el color, tener una paleta de colores es tener una identidad ",
     "- Además de la identidad es importante saberlos combinar y tener un buen contraste y legibilidad entre si ",
-    "- El uso de las imagenes y las fuentes tipograficas son más importantes de lo que parecen "
+    "- El uso de las imagenes y las fuentes tipograficas son más importantes de lo que parece ",
+    "",
+    "<strong>Look & feel:</strong> Es el aspecto del sitio para el usuario y lo que siente cuando interactua con este ",
+    "<strong>Look:</strong>                    <strong>Feel:</strong>",
+    "&bull; Paleta de colores      &bull; Rapidez de carga del contenido, imagenes, archivos, etc ",
+    "&bull; Imagenes               &bull; Movimiento y respuesta de componentes dinamicos como menus, botones, etc ",
+    "&bull; Diseño                 &bull; Efectos de sonido ",
+    "&bull; Fuentes ",
+    "&bull; Estilo general "
   ],
   "userInterface-UI": [
     "<strong>Principios para el diseño de una UI</strong>",
