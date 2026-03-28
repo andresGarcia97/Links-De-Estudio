@@ -231,6 +231,7 @@ export const NUBE_DISPONIBILITY = 'disponibilidad';
 export const NUBE_PACELC = 'PACELC';
 export const NUBE_NATIVE = 'cloudNative';
 export const NUBE_CDN_RTT = 'cdn-rtt';
+export const NUBE_PROVISIONING = 'provisioning';
 export const PARADIGMAS_IMPERATIVO = 'imperativo-declarativo';
 export const PARADIGMAS_FUNCIONAL = 'funcional';
 export const PARADIGMAS_SCRIPTING = 'scripting';

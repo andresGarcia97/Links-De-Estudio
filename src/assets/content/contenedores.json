@@ -37,6 +37,12 @@
   ],
   "containers": [
     "- Son las instancias de las imagenes creadas/descargadas, que se ejecutan de manera aislada",
+    "- Estos contenedores son capaces de crear aplicaciones modernas, ligeras y portables, el SO host deja de ser una restricción ",
+    "- Los contenedores no solo permiten crear aplicaciones hechas para la nube, tambien permiten migrarlas, el enfoque <em>lift-and-shift</em>, ",
+    " - es una estrategia de software que implica encapsular aplicaciones legacy y trasladarlas a la nube, ",
+    " - convirtiendose en una opción de modernización sin necesidad de reescrituras completas",
+    "",
+    "<strong>Comandos de Docker:</strong>",
     "- <strong>docker ps</strong>                         Contenedores ejecutandose                                    ",
     "- <strong>docker ps -a</strong>                      Contenedores existentes, independientemente de su estado     ",
     "- <strong>docker exec</strong>                       Ejecutar comandos dentro del contenedor, sin tener que entrar",

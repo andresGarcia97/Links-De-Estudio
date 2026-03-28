@@ -91,7 +91,7 @@
     "- Es la manera como accedemos a una pagina web por medio de nombres(dominios) y no de direcciones IP ",
     "- Este proceso de traducción de direcciones es realizado por estos servidores que estan esparcidos por el mundo ",
     "- Al estar esparcidos por el mundo esto permite una administración descentralizada, pero sigue estando interconectada ",
-    "- Aunque este metodo es normal hoy en dia, tambien se puede acceder a los sitios directamente por medio de una IP obteniendo el dominio del sitio ",
+    "- Aunque este método es normal hoy en dia, tambien se puede acceder a los sitios directamente por medio de una IP obteniendo el dominio del sitio ",
     "- Si un servidor no encuentra la información solicitada, este la restransmite a otros en la red hasta dar con un resultado ",
     "",
     "<strong>¿ Que ocurre sin fallan ?</strong>",
@@ -128,7 +128,7 @@
     "- No existe ninguna formula magica para solucionar estos problemas, lo maximo a lo que se llegara seran soluciones que solventen las consecuencias "
   ],
   "loadBalancing": [
-    "- Es un metodo para distribuir el trafico de red de manera equitativa, en un conjunto de recursos que admite una aplicación ",
+    "- Es un método para distribuir el trafico de red de manera equitativa, en un conjunto de recursos que admite una aplicación ",
     "- Las aplicaciones modernas deben procesar millones de peticiones de miles de usuario, de manera simultanea rapida y fiable ",
     "",
     "<strong>Beneficios:</strong>",
@@ -151,7 +151,7 @@
     "<strong>Carga Dinamica:</strong> Examinan el estado actual de los servidores antes de distribuir el trafico ",
     "<strong>&bull; Metodo de Conexión minima:</strong>",
     "- Una conexión es un canal abierto entre un cliente y un servidor, estas conexiones se comprueban para saber cuales tienen la mayor cantidad activa,",
-    " - y enviar a los servidores con menos conexiones, este metodo supone que todas las conexiones requieren la misma potencia de procesamiento ",
+    " - y enviar a los servidores con menos conexiones, este método supone que todas las conexiones requieren la misma potencia de procesamiento ",
     "<strong>&bull; Metodo de respuesta minimo:</strong>",
     "- Se toma el tiempo de respuesta total del servidor, lo cual se combina con la cantidad de conexiones activas, para determinar la mejor opción, ",
     " - con el fin de garantizar un servicio más rapido para todos los usuarios",
@@ -261,5 +261,31 @@
     "- Tiempo de respuesta del servidor, si esta saturado por las peticiones o por un ataque DDoS tendra una capacidad mermada y respondera de manera deficiente ",
     "- Cantidad de saltos (<em>hop count</em>), entre mayor sea la cantidad de nodos intermedios entre el origen y el destino, más se ralentizará la conexión ",
     "- Distancia física, aunque un CDN reduzca saltos y acerque el contenido, las limitaciones físicas como la velocidad de la luz siguen siendo un techo real "
+  ],
+  "provisioning": [
+    "- El aprovisionamiento en la nube es el proceso de desplegar los recursos de infraestructura, de los cuales dependeran tus aplicaciones ",
+    "- Aca se incluyen recursos como instancias, dispositivos de almacenamiento, reglas de red, politicas de IAM, pipelines de CI/CD, etc ",
+    "- Automatizar este proceso permite escalar dinamicamente los recursos y darle autonomia a los desarrolladores y sus necesidades ",
+    "",
+    "<strong>Tipos de aprovisionamiento:</strong>",
+    "<strong>Manual:</strong> Es el método tradicional donde se crean los recursos, mediante el panel de control del respectivo proveedor de la nube ",
+    "- Tambien denominado como <em>ClickOps</em> es facil y accesible para los principiantes, pero tedioso y propenso a errores ",
+    "",
+    "<strong>Automatizado:</strong> Se apoya en IaC o scripts para la gestión de los recursos, además requiere trabajo previo para configurar el uso de CI/CD ",
+    "- Esto integra la gestión de la infraestructura con los flujos de trabajo DevOps, agilizando multiples partes del proceso del SLDC ",
+    "",
+    "<strong>Bajo demanda:</strong> Ya con el proceso automatizado, se puede conceder el acceso a los desarrolladores tengan una mayor autonomia ",
+    "- De esta manera cualquier desarrollador puede crear los recursos que requiere, dentro de las políticas y límites establecidos ",
+    "",
+    "<strong>Beneficios</strong>",
+    "- La gestión de la infraestructura pasa a un segundo plano, permitiendo concentrarse en nuevas tareas como resiliencia y auditoria ",
+    "- Los entornos de la nube son consistentes y repetibles, evitando problemas por incongruencias entre ambientes ",
+    "- Seguimiento eficaz de los costos, para optimizar gastos y desmantelar recursos inactivos ",
+    "- Aumento de la productividad, al tener una reducción de tareas que antes eran manuales ",
+    "- La previsualización de los cambios permite detectar desviaciones con antelación y realizar reversiones de forma segura ",
+    "",
+    "<strong>Configuraciones</strong>",
+    "- Crear los recursos no es la unica función que se puede automatizar, configurarlos para que queden listos para usar es otra capacidad ",
+    "- Aunque son procesos independientes, pueden solaparse y en muchos casos la misma herramienta permite realizar ambas acciones "
   ]
 }

@@ -41,8 +41,8 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.SYSTEM_DESIGN_RESILIENCE;
-export const LAST_UPDATE = Keys.BUENAS_PRACTICAS_BUENAS_PRACTICAS_II;
+export const LAST_ITEM = Keys.NUBE_PROVISIONING;
+export const LAST_UPDATE = Keys.CONTENEDORES_CONTAINERS;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -444,7 +444,10 @@ export const CONTAINERS = new Map<string, Referencia>([
     [Keys.CONTENEDORES_LXC, new Referencia('https://earthly.dev/blog/lxc-vs-docker/', 'Linux Containers', CONTENEDORES_KEY, 'Linux Containers', '', '2024/04/06')],
     [Keys.CONTENEDORES_DOCKER, new Referencia('https://www.xataka.com/otros/docker-a-kubernetes-entendiendo-que-contenedores-que-mayores-revoluciones-industria-desarrollo', '¿ Que es Docker ?', CONTENEDORES_KEY, 'Docker')],
     [Keys.CONTENEDORES_IMAGES, new Referencia('https://clouding.io/hc/es/articles/360010283060-Trabajando-con-im%C3%A1genes-en-Docker', '¿ Que es una imagen ?', CONTENEDORES_KEY, 'Imagenes', '', '2026/03/18')],
-    [Keys.CONTENEDORES_CONTAINERS, new Referencia('https://aulasoftwarelibre.github.io/taller-de-docker/containers/', '¿ Que es un contenedor ?', CONTENEDORES_KEY, 'Contenedores')],
+    [Keys.CONTENEDORES_CONTAINERS, new Referencia('https://aws.amazon.com/es/what-is/containerization/', '¿ Que es un contenedor ?', CONTENEDORES_KEY, 'Contenedores', '', '2026/03/24')
+        .addRelatedItems(Keys.REFACTORING_MODERNIZATION_LEGACY)
+        .addMoreReferences('Keys.https://aulasoftwarelibre.github.io/taller-de-docker/containers/')
+    ],
     [Keys.CONTENEDORES_VOLUMES, new Referencia('https://www.josedomingo.org/pledin/2016/05/gestion-del-almacenamiento-en-docker', '¿ Que es un volumen ?', CONTENEDORES_KEY, 'Volumenes')],
     //['network', new Referencia('https://dockertips.com/algo_sobre_redes', 'Manejo de redes en Docker', CONTENEDORES_KEY, 'Redes')],
     [Keys.CONTENEDORES_REDES, new Referencia('https://docs.docker.com/network/', 'Redes en Docker', CONTENEDORES_KEY, 'Redes', '2024/04/06', '2025/03/09')],
@@ -754,7 +757,10 @@ export const NUBE_REF = new Map<string, Referencia>([
     [Keys.NUBE_CDN_RTT, new Referencia('https://www.cloudflare.com/es-es/learning/cdn/what-is-a-cdn/', 'CDN & RTT', NUBE_KEY, 'CDN & RTT', '2026/03/10')
         .addRelatedItems(Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.SECURITY_ATTACK_ON_MODEL_OSI)
         .addMoreReferences('https://www.cloudflare.com/es-es/learning/cdn/glossary/round-trip-time-rtt/')
-    ]
+    ],
+    [Keys.NUBE_PROVISIONING, new Referencia('https://spacelift.io/blog/cloud-provisioning', 'Provisionamiento', NUBE_KEY, 'Provisionamiento', '2026/03/24')
+        .addRelatedItems(Keys.SECURITY_ZERO_TRUST, Keys.CONTENEDORES_CONTAINERS, Keys.CD_CI_DEV_OPS, Keys.CD_CI_IAS_CODE, Keys.ESTRATEGIAS_DESARROLLO_SLDC, Keys.CD_CI_CI_CD, Keys.CD_CI_DEPLOYMENT_PIPELINES)
+    ],
 ]);
 
 export const APIS_KEY = 'APIs';
