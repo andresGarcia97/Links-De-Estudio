@@ -42,7 +42,7 @@ export class LinkReferencia {
 }
 
 export const LAST_ITEM = Keys.NUBE_PROVISIONING;
-export const LAST_UPDATE = Keys.CONTENEDORES_CONTAINERS;
+export const LAST_UPDATE = Keys.META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -622,36 +622,57 @@ export const MALAS_PRACTICAS_REF = new Map<string, Referencia>([
 export const META_CARACTERISTICAS_KEY = 'Meta-Caracteristicas';
 export const META_CARATERISTICAS_REF = new Map<string, Referencia>([
     [Keys.META_CARACTERISTICAS_META_DATOS, new Referencia('https://blog.powerdata.es/el-valor-de-la-gestion-de-datos/que-son-los-metadatos-y-cual-es-su-utilidad', '¿ Que son los metadatos ?', META_CARACTERISTICAS_KEY, 'Meta data', '', '2024/06/15')],
-    [Keys.META_CARACTERISTICAS_META_CLASE, new Referencia('https://quesignificado.org/que-es-una-metaclase/', '¿ Que es una meta clase ?', META_CARACTERISTICAS_KEY, 'Meta Clase', '', '2025/05/12').addRelatedItems(Keys.POO_POO, Keys.TESTING_MOCKS)],
+    [Keys.META_CARACTERISTICAS_META_CLASE, new Referencia('https://quesignificado.org/que-es-una-metaclase/', '¿ Que es una meta clase ?', META_CARACTERISTICAS_KEY, 'Meta Clase', '', '2025/05/12')
+        .addRelatedItems(Keys.POO_POO, Keys.TESTING_MOCKS)
+    ],
     //['reflexion', new Referencia('https://es.linkfang.org/wiki/Reflexi%C3%B3n_(inform%C3%A1tica)', 'Auto mutabilidad del codigo', META_CARACTERISTICAS_KEY, 'Reflexión')],
     [Keys.META_CARACTERISTICAS_REFLEXION, new Referencia('https://levelup.gitconnected.com/reflecting-on-java-unveiling-the-magic-of-reflection-7140a465ff6b', 'Auto mutabilidad del codigo', META_CARACTERISTICAS_KEY, 'Reflexión', '', '2024/07/12')],
     [Keys.META_CARACTERISTICAS_ASSERTS, new Referencia('https://www.adictosaltrabajo.com/2016/01/07/haz-tu-codigo-mas-fiable-con-asserts/', 'Comprobaciones del codigo', META_CARACTERISTICAS_KEY, 'Aserciones', '', '2025/05/12')],
     [Keys.META_CARACTERISTICAS_EXCEPTIONS, new Referencia('https://universidad-de-los-andes.gitbooks.io/fundamentos-de-programacion/content/Nivel4/5_ManejoDeLasExcepciones.html', 'Lanzamiento y manejo de excepciones', META_CARACTERISTICAS_KEY, 'Excepciones')],
     [Keys.META_CARACTERISTICAS_CACHE, new Referencia('https://medium.com/bancolombia-tech/dise%C3%B1ando-una-estrategia-de-cach%C3%A9-39366876009b', 'Tipos de Cache', META_CARACTERISTICAS_KEY, 'Tipos de Cache')],
-    //['hilos', new Referencia('https://facturapp.weebly.com/hilos.html', 'Hilos', META_CARACTERISTICAS_KEY, 'Hilos')],
-    [Keys.META_CARACTERISTICAS_PROCESS_AND_THREADS, new Referencia('https://www.linkedin.com/posts/bytebytego_systemdesign-coding-interviewtips-activity-7282264394716090368-bJfF/', 'Procesos & Hilos', META_CARACTERISTICAS_KEY, 'Procesos & Hilos', '', '2025/01/16').addRelatedItems(Keys.HARDWARE_OPERATIVE_SYSTEM)],
-    [Keys.META_CARACTERISTICAS_ARGUMENTS, new Referencia('https://picodotdev.github.io/blog-bitix/2021/01/en-java-los-argumentos-se-pasan-por-valor-o-por-referencia/', 'Argumentos por valor y por referencia', META_CARACTERISTICAS_KEY, 'Argumentos', '', '2025/05/12').addRelatedItems(Keys.POO_INMUTABILITY)],
+    [Keys.META_CARACTERISTICAS_PROCESS_AND_THREADS, new Referencia('https://www.linkedin.com/posts/bytebytego_systemdesign-coding-interviewtips-activity-7282264394716090368-bJfF/', 'Procesos & Hilos', META_CARACTERISTICAS_KEY, 'Procesos & Hilos', '', '2026/03/28')
+        .addRelatedItems(Keys.HARDWARE_OPERATIVE_SYSTEM)
+        .addMoreReferences('https://facturapp.weebly.com/hilos.html', 'https://medium.com/@akovtun/concurrency-parallelism-processes-threads-thread-safe-systems-1d4e7d351824')
+    ],
+    [Keys.META_CARACTERISTICAS_ARGUMENTS, new Referencia('https://picodotdev.github.io/blog-bitix/2021/01/en-java-los-argumentos-se-pasan-por-valor-o-por-referencia/', 'Argumentos por valor y por referencia', META_CARACTERISTICAS_KEY, 'Argumentos', '', '2025/05/12')
+        .addRelatedItems(Keys.POO_INMUTABILITY)
+    ],
     //['concurrenciaParalelismo', new Referencia('https://codigofacilito.com/articulos/programacion-concurrente', 'Concurrencia & Paralelismo', META_CARACTERISTICAS_KEY, 'Concurrencia')],
-    [Keys.META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM, new Referencia('https://www.linkedin.com/feed/update/urn:li:activity:7209404927750615040/', 'Concurrencia & Paralelismo', META_CARACTERISTICAS_KEY, 'Concurrencia/Paralelismo', '', '2024/06/26')],
+    [Keys.META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM, new Referencia('https://www.linkedin.com/feed/update/urn:li:activity:7209404927750615040/', 'Concurrencia & Paralelismo', META_CARACTERISTICAS_KEY, 'Concurrencia/Paralelismo', '', '2026/03/28')
+        .addRelatedItems(Keys.SYSTEM_DESIGN_COMMON_FAILS, Keys.HARDWARE_IO_BOUND_CPU_BOUND, Keys.HARDWARE_FALSE_SHARING)
+        .addMoreReferences('https://www.baeldung.com/cs/concurrency-vs-parallelism', 'https://medium.com/@akovtun/concurrency-parallelism-processes-threads-thread-safe-systems-1d4e7d351824')
+    ],
     //['ortogonalidad', new Referencia('https://qastack.mx/programming/1527393/what-is-orthogonality', 'Ortogonalidad', META_CARACTERISTICAS_KEY, 'Ortogonalidad')],
-    [Keys.META_CARACTERISTICAS_ORTHOGONALITY, new Referencia('https://www.freecodecamp.org/news/orthogonality-in-software-engineering', 'Ortogonalidad', META_CARACTERISTICAS_KEY, 'Ortogonalidad', '', '2025/05/12').addRelatedItems(Keys.ANALISIS_COHESERS_DECOUPLERS)],
+    [Keys.META_CARACTERISTICAS_ORTHOGONALITY, new Referencia('https://www.freecodecamp.org/news/orthogonality-in-software-engineering', 'Ortogonalidad', META_CARACTERISTICAS_KEY, 'Ortogonalidad', '', '2025/05/12')
+        .addRelatedItems(Keys.ANALISIS_COHESERS_DECOUPLERS)
+    ],
     [Keys.META_CARACTERISTICAS_BOILER_PLATE, new Referencia('https://www.freecodecamp.org/news/whats-boilerplate-and-why-do-we-use-it-let-s-check-out-the-coding-style-guide-ac2b6c814ee7/', 'Boiler Plate (codigo repetitivo)', META_CARACTERISTICAS_KEY, 'BoilerPlate')],
     [Keys.META_CARACTERISTICAS_RECURSIVIDAD, new Referencia('https://geekytheory.com/que-es-la-recursividad/', 'Recursividad', META_CARACTERISTICAS_KEY, 'Recursividad')],
     [Keys.META_CARACTERISTICAS_BACKTRACKING, new Referencia('https://www.ecured.cu/Vuelta_atr%C3%A1s_(backtracking)', 'Back Tracking', META_CARACTERISTICAS_KEY, 'Back tracking')],
     [Keys.META_CARACTERISTICAS_RAW_TYPES, new Referencia('https://stackoverflow.com/questions/2770321/what-is-a-raw-type-and-why-shouldnt-we-use-it/', 'Tipos Crudos', META_CARACTERISTICAS_KEY, 'Tipos crudos', '', '2025/02/09')],
     [Keys.META_CARACTERISTICAS_MEMORY_AND_GARBAGE, new Referencia('https://www.computerworld.com/article/2596992/memory-leaks-and-garbage-collection.html', 'Fugas de memoria y recoleccion de basura', META_CARACTERISTICAS_KEY, 'Fugas de memoria', '')],
     [Keys.META_CARACTERISTICAS_FOOTPRINT, new Referencia('https://www.pcmag.com/encyclopedia/term/memory-footprint', 'Huella en memoria', META_CARACTERISTICAS_KEY, 'Huellas de memoria', '2023/11/03')],
-    [Keys.META_CARACTERISTICAS_FEATURE_FLAGS, new Referencia('https://www.optimizely.com/optimization-glossary/feature-flags/', 'Feature Flags', META_CARACTERISTICAS_KEY, 'Feature Flags', '2023/11/30', '2025/05/12').addRelatedItems(Keys.CD_CI_DEPLOYMENT_PATTERNS)],
+    [Keys.META_CARACTERISTICAS_FEATURE_FLAGS, new Referencia('https://www.optimizely.com/optimization-glossary/feature-flags/', 'Feature Flags', META_CARACTERISTICAS_KEY, 'Feature Flags', '2023/11/30', '2025/05/12')
+        .addRelatedItems(Keys.CD_CI_DEPLOYMENT_PATTERNS)
+    ],
     //['generics', new Referencia('https://medium.com/@AlexanderObregon/java-generics-type-safety-and-performance-a0864ca72a5a', 'Genericos', META_CARACTERISTICAS_KEY, 'Genericos', '2023/12/28')],
     [Keys.META_CARACTERISTICAS_GENERICS, new Referencia('https://medium.com/@aqilzeka99/mastering-generics-in-java-interview-questions-571232c02af9', 'Genericos', META_CARACTERISTICAS_KEY, 'Genericos', '2023/12/28', '2024/12/01')],
     [Keys.META_CARACTERISTICAS_MEMORY_SAFETY, new Referencia('https://stackoverflow.blog/2024/03/04/in-rust-we-trust-white-house-office-urges-memory-safety', 'Seguridad en la memoria', META_CARACTERISTICAS_KEY, 'Seguridad en la memoria', '2024/03/26')],
     [Keys.META_CARACTERISTICAS_MEMORY_PROFILING, new Referencia('https://digma.ai/9-best-java-profilers-to-use-in-2024/', 'Profiling', META_CARACTERISTICAS_KEY, 'Profiling', '2024/05/05')],
     [Keys.META_CARACTERISTICAS_BLOCKING_AND_NO_BLOCKING, new Referencia('https://www.geeksforgeeks.org/blocking-and-nonblocking-io-in-operating-system/', 'Operaciones Bloqueantes & No Bloqueantes', META_CARACTERISTICAS_KEY, 'Bloqueos/Sin Bloqueos', '2024/05/12')],
-    [Keys.META_CARACTERISTICAS_ANOTATIONS, new Referencia('https://vaheaslanyan7.medium.com/the-java-interview-prep-handbook-50-questions-solved-code-examples-62fed44e3e6a', 'Anotaciones', META_CARACTERISTICAS_KEY, 'Anotaciones', '2024/06/30').addRelatedItems(Keys.FRAMEWORKS_FRAMEWORKS, Keys.META_ESTRUCTURAS_DEPRECATION)],
+    [Keys.META_CARACTERISTICAS_ANOTATIONS, new Referencia('https://vaheaslanyan7.medium.com/the-java-interview-prep-handbook-50-questions-solved-code-examples-62fed44e3e6a', 'Anotaciones', META_CARACTERISTICAS_KEY, 'Anotaciones', '2024/06/30')
+        .addRelatedItems(Keys.FRAMEWORKS_FRAMEWORKS, Keys.META_ESTRUCTURAS_DEPRECATION)
+    ],
     [Keys.META_CARACTERISTICAS_CACHE_AND_TYPES, new Referencia('https://medium.com/@junfeng0828/d884ccac7c87', 'Estrategias del Cache', META_CARACTERISTICAS_KEY, 'Estrategias del Cache', '2024/10/19')],
-    [Keys.META_CARACTERISTICAS_TYPE_ERASURE, new Referencia('https://www.baeldung.com/java-type-erasure', 'Borrado de Tipos', META_CARACTERISTICAS_KEY, 'Borrado de Tipos', '2024/11/15').addRelatedItems(Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES)],
-    [Keys.META_CARACTERISTICAS_DEAD_LOCKS, new Referencia('https://www.linkedin.com/posts/bytebytego_systemdesign-coding-interviewtips-activity-7288797053613166592-CNce/', 'DeadLocks - Bloqueos', META_CARACTERISTICAS_KEY, 'DeadLocks - Bloqueos', '2025/01/26').addRelatedItems(Keys.PERSISTENCY_ADVANCED_LOCKING, Keys.PERSISTENCY_DBMS, Keys.PERSISTENCY_DL)],
-    [Keys.META_CARACTERISTICAS_TIPOS, new Referencia('https://wiki.uqbar.org/wiki/articles/esquemas-de-tipado.html', 'Sistema de Tipos', META_CARACTERISTICAS_KEY, 'Tipos', '2025/02/03').addRelatedItems(Keys.PARADIGMAS_PARADIGMA_SCRIPTING, Keys.POO_POLIMORFISMO)],
+    [Keys.META_CARACTERISTICAS_TYPE_ERASURE, new Referencia('https://www.baeldung.com/java-type-erasure', 'Borrado de Tipos', META_CARACTERISTICAS_KEY, 'Borrado de Tipos', '2024/11/15')
+        .addRelatedItems(Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES)
+    ],
+    [Keys.META_CARACTERISTICAS_DEAD_LOCKS, new Referencia('https://www.linkedin.com/posts/bytebytego_systemdesign-coding-interviewtips-activity-7288797053613166592-CNce/', 'DeadLocks - Bloqueos', META_CARACTERISTICAS_KEY, 'DeadLocks - Bloqueos', '2025/01/26')
+        .addRelatedItems(Keys.PERSISTENCY_ADVANCED_LOCKING, Keys.PERSISTENCY_DBMS, Keys.PERSISTENCY_DL)
+    ],
+    [Keys.META_CARACTERISTICAS_TIPOS, new Referencia('https://wiki.uqbar.org/wiki/articles/esquemas-de-tipado.html', 'Sistema de Tipos', META_CARACTERISTICAS_KEY, 'Tipos', '2025/02/03')
+        .addRelatedItems(Keys.PARADIGMAS_PARADIGMA_SCRIPTING, Keys.POO_POLIMORFISMO)
+    ],
     [Keys.META_CARACTERISTICAS_MEMORY_MANAGEMENT, new Referencia('https://peerdh.com/blogs/programming-insights/understanding-memory-management-in-programming-paradigms', 'Manejo de la memoria', META_CARACTERISTICAS_KEY, 'Manejo de la memoria', '2025/04/28')
         .addRelatedItems(Keys.COMPILACION_INTERPRETADOS, Keys.COMPILACION_COMPILACION, Keys.PARADIGMAS_IMPERATIVO, Keys.POO_INMUTABILITY, Keys.COMPILACION_OBJECT_CREATION)
         .addMoreReferences("https://medium.com/@alexander.paul.gilbert/oop-vs-functional-is-dead-ff51a70c83ce")
