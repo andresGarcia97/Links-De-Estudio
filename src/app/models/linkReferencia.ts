@@ -41,8 +41,8 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.NUBE_PROVISIONING;
-export const LAST_UPDATE = Keys.META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM;
+export const LAST_ITEM = Keys.META_ESTRUCTURAS_SERIALIZATION_FORMATS;
+export const LAST_UPDATE = Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -687,14 +687,20 @@ export const META_ESTRUCTURAS_REF = new Map<string, Referencia>([
     ],
     [Keys.META_ESTRUCTURAS_PRECEDENCIA, new Referencia('https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Operator_Precedence', 'Precedencia y jerarquia de operaciones', META_ESTRUCTURAS_KEY, 'Precedencia', '', '2025/07/03')],
     [Keys.META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL, new Referencia('https://xurxodev.com/vertical-scile/', 'Organización de un proyecto', META_ESTRUCTURAS_KEY, 'Organización')],
-    [Keys.META_ESTRUCTURAS_LAYERS_SOFTWARE, new Referencia('https://www.linkedin.com/posts/brijpandeyji_building-software-at-scale-requires-a-clear-activity-7276459295502655488-dLTk/', 'Capas del Software', META_ESTRUCTURAS_KEY, 'Capas del Software', '2024/12/22').addRelatedItems(Keys.APIS_REST_VS_MESSAGING, Keys.PERSISTENCY_DBMS, Keys.WEB_USER_INTERFACE, Keys.CONTENEDORES_DOCKER, Keys.ANALISIS_MODEL_DOMAIN)],
-    [Keys.META_ESTRUCTURAS_REGEX, new Referencia('https://jarroba.com/busqueda-de-patrones-expresiones-regulares/', 'Expresiones Regulares(regex)', META_ESTRUCTURAS_KEY, 'Expresiones Regulares', '', '2025/02/08').addRelatedItems(Keys.COMPILACION_ELEMENTS_COMPILATOR, Keys.UML_STATES)],
+    [Keys.META_ESTRUCTURAS_LAYERS_SOFTWARE, new Referencia('https://www.linkedin.com/posts/brijpandeyji_building-software-at-scale-requires-a-clear-activity-7276459295502655488-dLTk/', 'Capas del Software', META_ESTRUCTURAS_KEY, 'Capas del Software', '2024/12/22')
+        .addRelatedItems(Keys.APIS_REST_VS_MESSAGING, Keys.PERSISTENCY_DBMS, Keys.WEB_USER_INTERFACE, Keys.CONTENEDORES_DOCKER, Keys.ANALISIS_MODEL_DOMAIN)
+    ],
+    [Keys.META_ESTRUCTURAS_REGEX, new Referencia('https://jarroba.com/busqueda-de-patrones-expresiones-regulares/', 'Expresiones Regulares(regex)', META_ESTRUCTURAS_KEY, 'Expresiones Regulares', '', '2025/02/08')
+        .addRelatedItems(Keys.COMPILACION_ELEMENTS_COMPILATOR, Keys.UML_STATES)
+    ],
     [Keys.META_ESTRUCTURAS_ESTRUCTURAS_DATOS_I, new Referencia('https://medium.com/techwomenc/estructuras-de-datos-a29062de5483', 'Estructuras de datos I', META_ESTRUCTURAS_KEY, 'Estructuras de datos I')],
     [Keys.META_ESTRUCTURAS_ESTRUCTURAS_DATOS_II, new Referencia('https://ai.plainenglish.io/data-structures-how-computers-store-and-organize-data-the-backbone-5f0576b3150c', 'Estructuras de datos II', META_ESTRUCTURAS_KEY, 'Estructuras de datos II', '2023/02/05', '2025/12/26')
         .addRelatedItems(Keys.BUENAS_PRACTICAS_COMPLEJIDAD_ALGORITMICA)
         .addMoreReferences('https://medium.com/@noahblogwriter2025/the-12-data-structures-every-developer-should-master-before-an-interview-a5be06a5c71d')
     ],
-    [Keys.META_ESTRUCTURAS_SEARCH_AND_SORT, new Referencia('https://medium.com/edureka/data-structures-algorithms-in-java-d27e915db1c5', 'Algoritmos, Busqueda & Ordenación', META_ESTRUCTURAS_KEY, 'Busqueda & Ordenación', '2025/02/08').addRelatedItems(Keys.BUENAS_PRACTICAS_COMPLEJIDAD_COGNITIVA, Keys.BUENAS_PRACTICAS_COMPLEJIDAD_ALGORITMICA, Keys.ANALISIS_ALGORITHMS)],
+    [Keys.META_ESTRUCTURAS_SEARCH_AND_SORT, new Referencia('https://medium.com/edureka/data-structures-algorithms-in-java-d27e915db1c5', 'Algoritmos, Busqueda & Ordenación', META_ESTRUCTURAS_KEY, 'Busqueda & Ordenación', '2025/02/08')
+        .addRelatedItems(Keys.BUENAS_PRACTICAS_COMPLEJIDAD_COGNITIVA, Keys.BUENAS_PRACTICAS_COMPLEJIDAD_ALGORITMICA, Keys.ANALISIS_ALGORITHMS)
+    ],
     [Keys.META_ESTRUCTURAS_HOMOICONICIDAD, new Referencia('https://es.wikipedia.org/wiki/Homoiconicidad', 'Homoiconicidad', META_ESTRUCTURAS_KEY, 'Homoiconicidad')],
     [Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS, new Referencia('http://fisicotronica.com/maquina-de-estados-nos-referimos/', 'Maquinas de estados', META_ESTRUCTURAS_KEY, 'Maquina de estados', '', '2025/04/20')
         .addRelatedItems(Keys.COMPILACION_AUTOMATAS)
@@ -706,12 +712,23 @@ export const META_ESTRUCTURAS_REF = new Map<string, Referencia>([
     ],
     [Keys.META_ESTRUCTURAS_VALUE_OBJECTS, new Referencia('https://medium.com/all-you-need-is-clean-code/value-objects-d4c24115fa69', 'Value Objects', META_ESTRUCTURAS_KEY, 'Value Objects', '2022/11/07')],
     [Keys.META_ESTRUCTURAS_DYNAMIC_PROGAMING, new Referencia('https://www.spiceworks.com/tech/devops/articles/what-is-dynamic-programming/', 'Programacion Dinamica', META_ESTRUCTURAS_KEY, 'Programacion Dinamica', '2023/03/26')],
-    [Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION, new Referencia('https://www.baeldung.com/cs/serialization-deserialization', 'Serialización y Deserialización', META_ESTRUCTURAS_KEY, 'Serializar & Deserializar', '2023/05/31')],
-    [Keys.META_ESTRUCTURAS_DEPRECATION, new Referencia('https://digma.ai/deprecated-methods-in-java/', 'Deprecated (Obsolencia)', META_ESTRUCTURAS_KEY, 'Deprecated (Obsolencia)', '2024/06/15').addRelatedItems(Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES, Keys.REFACTORING_LEGACY_CODE_I)],
+    [Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION, new Referencia('https://www.baeldung.com/cs/serialization-deserialization', 'Serialización y Deserialización', META_ESTRUCTURAS_KEY, 'Serializar & Deserializar I', '2023/05/31', '2026/03/29')
+        .addRelatedItems(Keys.META_CARACTERISTICAS_REFLEXION, Keys.VERSIONAMIENTO_EVOLUTION_SCHEMA_AND_SCHEMA_REGISTRY)
+        .addMoreReferences('https://levelup.gitconnected.com/the-hidden-cost-of-jackson-serialization-425612a4ac06')
+    ],
+    [Keys.META_ESTRUCTURAS_SERIALIZATION_FORMATS, new Referencia('https://blog.mbedded.ninja/programming/serialization-formats/a-comparison-of-serialization-formats/', 'Formatos de Serialización', META_ESTRUCTURAS_KEY, 'Serializar & Deserializar II', '2026/03/29')
+        .addRelatedItems(Keys.HARDWARE_IO_BOUND_CPU_BOUND, Keys.ANALISIS_DATA_DATA_STORING, Keys.COMPILACION_VERBOSITY, Keys.APIS_REST_FULL)
+        .addMoreReferences('https://celerdata.com/glossary/understanding-data-serialization-a-format-comparison-guide', 'https://pub.towardsai.net/from-json-to-toon-evolving-serialization-for-llms-60e99076f48c')
+    ],
+    [Keys.META_ESTRUCTURAS_DEPRECATION, new Referencia('https://digma.ai/deprecated-methods-in-java/', 'Deprecated (Obsolencia)', META_ESTRUCTURAS_KEY, 'Deprecated (Obsolencia)', '2024/06/15')
+        .addRelatedItems(Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES, Keys.REFACTORING_LEGACY_CODE_I)
+    ],
     [Keys.META_ESTRUCTURAS_LOGS, new Referencia('https://betterstack.com/community/guides/logging/log-levels-explained/', 'Logs', META_ESTRUCTURAS_KEY, 'Logs', '2025/01/29', '2025/02/02')
         .addRelatedItems(Keys.OBSERVABILIDAD_OBSERVABILITY, Keys.BUENAS_PRACTICAS_LOGGING, Keys.PEOPLE_NO_NEWS_GOOD_NEWS)
     ],
-    [Keys.META_ESTRUCTURAS_QUEUES, new Referencia('https://github.com/joelparkerhenderson/queueing-theory', 'Teoria de Colas', META_ESTRUCTURAS_KEY, 'Teoria de Colas', '2025/09/07').addRelatedItems(Keys.LEYES_LITTLE, Keys.SYSTEM_DESIGN_QUEUES)],
+    [Keys.META_ESTRUCTURAS_QUEUES, new Referencia('https://github.com/joelparkerhenderson/queueing-theory', 'Teoria de Colas', META_ESTRUCTURAS_KEY, 'Teoria de Colas', '2025/09/07')
+        .addRelatedItems(Keys.LEYES_LITTLE, Keys.SYSTEM_DESIGN_QUEUES)
+    ],
 ]);
 
 export const METODOLOGIAS_KEY = 'Metodologias';

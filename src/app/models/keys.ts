@@ -13,6 +13,7 @@ export const META_ESTRUCTURAS_FUNCIONES_LAMBDA = 'funcionesLambda';
 export const META_ESTRUCTURAS_VALUE_OBJECTS = 'valueObjects';
 export const META_ESTRUCTURAS_DYNAMIC_PROGAMING = 'dynamicProgramming';
 export const META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION = 'serializationDeserialization';
+export const META_ESTRUCTURAS_SERIALIZATION_FORMATS = 'serialization-formats';
 export const META_ESTRUCTURAS_DEPRECATION = 'deprecation';
 export const META_ESTRUCTURAS_LOGS = 'logs';
 export const META_ESTRUCTURAS_QUEUES = 'queue-theory';
