@@ -39,6 +39,10 @@
   color: var(--color-french-sky-blue);
 }
 
+.oscuro .terminal pre a {
+  color: var(--color-fulvous);
+}
+
 .oscuro .card {
   background-color: var(--color-white);
 }
@@ -460,6 +464,10 @@ a:hover {
   padding: 0, 0, 0, 0;
   margin: 0;
   height: max-content;
+}
+
+.terminal pre a {
+  color: var(--color-orange-yellow-crayola);
 }
 
 h1::selection,
