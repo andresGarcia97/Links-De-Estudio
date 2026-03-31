@@ -41,7 +41,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.META_ESTRUCTURAS_SERIALIZATION_FORMATS;
+export const LAST_ITEM = Keys.META_CARACTERISTICAS_ASINCRONISMO;
 export const LAST_UPDATE = Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION;
 
 export const AGILES_KEY = 'Agiles';
@@ -676,6 +676,9 @@ export const META_CARATERISTICAS_REF = new Map<string, Referencia>([
     [Keys.META_CARACTERISTICAS_MEMORY_MANAGEMENT, new Referencia('https://peerdh.com/blogs/programming-insights/understanding-memory-management-in-programming-paradigms', 'Manejo de la memoria', META_CARACTERISTICAS_KEY, 'Manejo de la memoria', '2025/04/28')
         .addRelatedItems(Keys.COMPILACION_INTERPRETADOS, Keys.COMPILACION_COMPILACION, Keys.PARADIGMAS_IMPERATIVO, Keys.POO_INMUTABILITY, Keys.COMPILACION_OBJECT_CREATION)
         .addMoreReferences("https://medium.com/@alexander.paul.gilbert/oop-vs-functional-is-dead-ff51a70c83ce")
+    ],
+    [Keys.META_CARACTERISTICAS_ASINCRONISMO, new Referencia('https://code.likeagirl.io/concurrency-parallelism-async-47312e0be553', 'Asincronismo', META_CARACTERISTICAS_KEY, 'Asincronismo', '2026/03/30')
+        .addRelatedItems(Keys.HARDWARE_LAWS_SCALABILITY, Keys.MALAS_PRACTICAS_CALLBACK_HELL, Keys.HARDWARE_IO_BOUND_CPU_BOUND, Keys.POO_INMUTABILITY, Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS)
     ],
 ]);
 

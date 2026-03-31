@@ -443,5 +443,32 @@
     "&bull; Perfile la aplicación con el fin de realizar mejoras de rendimiento y capturar posibles fugas de memoria ",
     "&bull; Evite asignaciones y desasignaciones innecesarias, no deje que todo el trabajo recaiga en el Garbage collector ",
     "&bull; Mantenga el codigo actualizado, las dependencias y las formas de manejar la memoria mejoran con el tiempo "
+  ],
+  "asicronismo": [
+    "- El asincronismo suele ser usado a la par con la concurrencia y el paralelismo, pero los 3 conceptos significan cosas diferentes ",
+    "- La confusión se da porque los 3 conceptos abordan la misma pregunta: <strong>¿ Cómo hacer para hacer más de una acción a la vez ?</strong> ",
+    "- El asincronismo es un modelo de programación, no una propiedad del hardware, y responde a una pregunta diferente ",
+    " - <strong>¿ Cómo puede un solo hilo manejar muchas tareas de manera eficiente sin permanecer inactivo en ningun momento ?</strong>",
+    "",
+    "- La idea principal es usar el <em>event loop</em> en entornos monohilo, en lugar de bloquear el hilo mientras se espera una respuesta ",
+    "- Un caso puede ser una consulta a DB, un sistema asincrono registra una función de <em>callback</em> o encadena una <em>promise</em> liberando el hilo ",
+    " - y retomando su ejecución al recibir la respuesta; cada lenguaje tiene diferentes abstracciones para este modelo ",
+    "- El código que parece lineal se transforma en una máquina de estados que se pausa y reanuda hasta resolver cada operación pendiente ",
+    "",
+    "- <strong>Rob Pike</strong>, cocreador de Go, lo expresó a la perfección: ",
+    " - <em>“La concurrencia consiste en gestionar muchas cosas a la vez. El paralelismo consiste en hacer muchas cosas a la vez”</em>",
+    "",
+    "<strong>Puntos a tener en cuenta</strong>",
+    "- ¿ El cuello de botella está en la CPU o en la I/O ? Si la limitación es externa como consultas a APIs, DB o servicios de red ",
+    "- Agregar paralelismo a menudo no cambia nada, a no ser que tambien haya multiples operaciones bloqueantes independientes ",
+    "",
+    "- ¿ Cuántas tareas se ejecutan simultáneamente ? Una docena de hilos no representa un problema, miles o cientos de miles son costosos ",
+    "- Si prevé miles de conexiones simultáneas la programación asíncrona es más eficiente para el uso de la memoria ",
+    "",
+    "- ¿ Las tareas comparten estado ? Si es así, todas las opciones se tornan más complejas, y se vuelve necesario complementar con estrategias ",
+    "- Como: inmutabilidad, actores, bloqueos (pesimista/optimista), mutex, etc. ",
+    "",
+    "- ¿ Qué admite tu entorno de ejecución ? Cada lenguaje ha sido diseñado para un propósito general y no siempre es compatible ",
+    "- Ruby limitaba el paralelismo por su GVL hasta Ruby 3.0; Node.js es monohilo y asíncrono por diseño; Go fue diseñado para la concurrencia mediante goroutines "
   ]
 }

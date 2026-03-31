@@ -113,6 +113,7 @@ export const META_CARACTERISTICAS_TYPE_ERASURE = 'typeErasure';
 export const META_CARACTERISTICAS_DEAD_LOCKS = 'deadLocks-bloqueos';
 export const META_CARACTERISTICAS_TIPOS = 'tipos';
 export const META_CARACTERISTICAS_MEMORY_MANAGEMENT = 'memoryManagement';
+export const META_CARACTERISTICAS_ASINCRONISMO = 'asicronismo';
 export const LEYES_SILVER_BULLETS = 'silver-bullets';
 export const LEYES_LEHMAN = 'lehman';
 export const LEYES_CONWAY = 'conway';
