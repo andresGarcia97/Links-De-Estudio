@@ -18,7 +18,7 @@ export class LinkReferencia {
         ...WEB_REF,              ...LEYES_REF,                ...NEURO_MARKETING_REF,
         ...CI_CD_REF,            ...APIS_REF,                 ...PERSISTENCY_ADVANCED_REF,
         ...MICRO_SERVICES_REF,   ...SYSTEM_DESIGN_REF,        ...MICRO_SERVICES_ADVANCED_REF,
-        ...OBSERVABILIDAD_REF
+        ...OBSERVABILIDAD_REF,   ...EJECUCION_REF
     ]);
 
     public routesAndSections: Map<string, string> = new Map([
@@ -36,7 +36,7 @@ export class LinkReferencia {
         [REQUISITOS_KEY, 'requisitos'], [VERSIONAMIENTO_KEY, 'versionamiento'], [TESTING_ADVANCED_KEY, 'testing-avanzado'],
         [NUBE_KEY, 'nube'],             [ARQUITECTURAS_KEY, 'arquitecturas'],   [ANALISIS_DATA_KEY, 'analisis-datos'],
         [TESTING_KEY, 'testing'],       [SYSTEM_DESIGN_KEY, 'system-design'],   [MICRO_SERVICES_ADVANCED_KEY, 'microservices-avanzado'],
-        [PEOPLE_KEY, 'personas']
+        [PEOPLE_KEY, 'personas'],       [EJECUCION_KEY, 'ejecucion']
     ]);
 
 }

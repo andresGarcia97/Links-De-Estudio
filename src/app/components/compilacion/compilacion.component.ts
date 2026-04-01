@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import {
-  META_CARACTERISTICAS_KEY, COMPILACION_REF, META_ESTRUCTURAS_KEY, HARDWARE_KEY, LinkReferencia, FRAMEWORKS_KEY, VERSIONAMIENTO_KEY, 
-  PARADIGMAS_KEY}
+  META_CARACTERISTICAS_KEY, COMPILACION_REF, META_ESTRUCTURAS_KEY, HARDWARE_KEY, LinkReferencia,
+  FRAMEWORKS_KEY, PARADIGMAS_KEY, EJECUCION_KEY}
 from 'src/app/models/linkReferencia';
 import { Item, PreviousAndNextSection } from 'src/app/models/models';
 import { COMPILACION_PATH } from 'src/app/models/relationsSummary';
@@ -35,10 +35,11 @@ export class CompilacionComponent implements OnInit {
     this.relatedSections.set(META_CARACTERISTICAS_KEY, routes.get(META_CARACTERISTICAS_KEY)!);
     this.relatedSections.set(META_ESTRUCTURAS_KEY,     routes.get(META_ESTRUCTURAS_KEY)!);
     this.relatedSections.set(PARADIGMAS_KEY,           routes.get(PARADIGMAS_KEY)!);
+    this.relatedSections.set(EJECUCION_KEY,            routes.get(EJECUCION_KEY)!);
     this.relatedSections.set(HARDWARE_KEY,             routes.get(HARDWARE_KEY)!);
     this.previousAndNextSection = new PreviousAndNextSection(
-      FRAMEWORKS_KEY,     routes.get(FRAMEWORKS_KEY)!,
-      VERSIONAMIENTO_KEY, routes.get(VERSIONAMIENTO_KEY)!
+      FRAMEWORKS_KEY, routes.get(FRAMEWORKS_KEY)!,
+      EJECUCION_KEY,  routes.get(EJECUCION_KEY)!
     );
   }
 

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { ANALISIS_KEY, APIS_KEY, COMPILACION_KEY, GIT_KEY, LinkReferencia, UML_KEY, VERSIONAMIENTO_REF }
+import { ANALISIS_KEY, APIS_KEY, EJECUCION_KEY, GIT_KEY, LinkReferencia, UML_KEY, VERSIONAMIENTO_REF }
 from 'src/app/models/linkReferencia';
 import { Item, PreviousAndNextSection } from 'src/app/models/models';
 import { VERSIONAMIENTO_PATH } from 'src/app/models/relationsSummary';
@@ -35,8 +35,8 @@ export class VersionamientoComponent implements OnInit {
     this.relatedSections.set(UML_KEY,      routes.get(UML_KEY)!);
     this.relatedSections.set(GIT_KEY,      routes.get(GIT_KEY)!);
     this.previousAndNextSection = new PreviousAndNextSection(
-      COMPILACION_KEY, routes.get(COMPILACION_KEY)!,
-      GIT_KEY,         routes.get(GIT_KEY)!
+      EJECUCION_KEY, routes.get(EJECUCION_KEY)!,
+      GIT_KEY,       routes.get(GIT_KEY)!
     );
   }
 
