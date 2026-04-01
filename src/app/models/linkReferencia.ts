@@ -41,7 +41,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.META_CARACTERISTICAS_ASINCRONISMO;
+export const LAST_ITEM = Keys.EJECUCION_ASINCRONISMO;
 export const LAST_UPDATE = Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION;
 
 export const AGILES_KEY = 'Agiles';
@@ -92,7 +92,7 @@ export const ANALISIS_REF = new Map<string, Referencia>([
     [Keys.ANALISIS_DECLINE_DESIGN, new Referencia('https://uxdesign.cc/the-decline-in-design-thinking-8fd0145fb4d2', 'Declive del diseño', ANALISIS_KEY, 'Declive del Diseño', '2023/07/23')],
     [Keys.ANALISIS_OPINIONATED_NO, new Referencia('https://www.baeldung.com/cs/opinionated-software-design', 'Diseño con & sin opiniones', ANALISIS_KEY, 'Diseño con/sin opiniones', '2023/11/11')],
     [Keys.ANALISIS_ALGORITHMS, new Referencia('https://medium.com/@zgokceaynaci/a-journey-through-the-world-of-algorithms-554bfffcee97', 'Algoritmos', ANALISIS_KEY, 'Algoritmos', '2024/07/27')
-        .addRelatedItems(Keys.COMPILACION_GRAFOS, Keys.META_CARACTERISTICAS_BACKTRACKING)
+        .addRelatedItems(Keys.COMPILACION_GRAFOS, Keys.EJECUCION_BACKTRACKING)
     ],
     [Keys.ANALISIS_HIGH_LEVEL_VS_LOW_LEVEL, new Referencia('https://www.baeldung.com/cs/hld-lld', 'High Level Vs Low Level', ANALISIS_KEY, 'High Level Vs Low Level', '2024/09/20')
         .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_SLDC, Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.PERSISTENCY_ERD)
@@ -111,7 +111,7 @@ export const ANALISIS_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.MICROSERVICES_ADVANCED_PRODUCER_CONSUMER_PROBLEM, Keys.APIS_IDEMPOTENCIA)
     ],
     [Keys.ANALISIS_COHESERS_DECOUPLERS, new Referencia('https://itnext.io/cohesers-and-decouplers-ecac2964081a', 'Cohesores y Desacopladores ', ANALISIS_KEY, 'Desacoplamiento', '2025/04/07')
-        .addRelatedItems(Keys.POO_COUPLING_AND_COHESION, Keys.ARQUITECTURAS_MONOLITOS, Keys.META_CARACTERISTICAS_DEAD_LOCKS, Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.SECURITY_CONDICION_CARRERA, Keys.PERSISTENCY_ADVANCED_SCALING_DB, Keys.LEYES_CONWAY)
+        .addRelatedItems(Keys.POO_COUPLING_AND_COHESION, Keys.ARQUITECTURAS_MONOLITOS, Keys.EJECUCION_DEAD_LOCKS, Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.SECURITY_CONDICION_CARRERA, Keys.PERSISTENCY_ADVANCED_SCALING_DB, Keys.LEYES_CONWAY)
     ],
     [Keys.ANALISIS_BOUNDED_CONTEXT, new Referencia('https://martinfowler.com/bliki/BoundedContext.html', 'Bounded Context', ANALISIS_KEY, 'Bounded Context', '2025/06/02')
         .addRelatedItems(Keys.BUENAS_PRACTICAS_AGGREGATES, Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.PEOPLE_LANGUAGE_UBICUOS, Keys.POO_COUPLING_AND_COHESION)
@@ -160,18 +160,18 @@ export const SYSTEM_DESIGN_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.HARDWARE_ESCALAMIENTO, Keys.PERSISTENCY_ADVANCED_SCALING_DB, Keys.NUBE_LATENCY, Keys.MICROSERVICES_ADVANCED_CACHE_FAILS, Keys.PERSISTENCY_CONSISTENCY, Keys.PERSISTENCY_ADVANCED_WAL, Keys.NUBE_CAP_TEOREMA, Keys.PERSISTENCY_ACID, Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS, Keys.PARADIGMAS_PARADIGMA_DATOS, Keys.PERSISTENCY_INDICES, Keys.ANALISIS_DATA_DATA_STORING)
     ],
     [Keys.SYSTEM_DESIGN_SCALING_WRITES, new Referencia('https://medium.com/@priyasrivastava18official/system-design-pattern-scaling-writes-how-big-tech-handles-billions-of-writes-per-second-60c92d0374f2', 'Diseño de sistemas, escritura', SYSTEM_DESIGN_KEY, 'Escalar la escritura', '2025/11/17')
-        .addRelatedItems(Keys.ANALISIS_DATA_STREAMING_VS_MESSAGING, Keys.PERSISTENCY_ADVANCED_SCALING_DB, Keys.ARQUITECTURAS_MISTAKES_II, Keys.META_CARACTERISTICAS_BLOCKING_AND_NO_BLOCKING, Keys.ANALISIS_DATA_GOLDEN_RECORD, Keys.PERSISTENCY_CONSISTENCY, Keys.NUBE_PACELC, Keys.ANALISIS_DATA_OLAP_OLTP, Keys.PERSISTENCY_DB_TYPES, Keys.PERSISTENCY_ADVANCED_WAL, Keys.PERSISTENCY_INDICES, Keys.ARQUITECTURAS_EVENT_DRIVEN)
+        .addRelatedItems(Keys.ANALISIS_DATA_STREAMING_VS_MESSAGING, Keys.PERSISTENCY_ADVANCED_SCALING_DB, Keys.ARQUITECTURAS_MISTAKES_II, Keys.EJECUCION_BLOCKING_AND_NO_BLOCKING, Keys.ANALISIS_DATA_GOLDEN_RECORD, Keys.PERSISTENCY_CONSISTENCY, Keys.NUBE_PACELC, Keys.ANALISIS_DATA_OLAP_OLTP, Keys.PERSISTENCY_DB_TYPES, Keys.PERSISTENCY_ADVANCED_WAL, Keys.PERSISTENCY_INDICES, Keys.ARQUITECTURAS_EVENT_DRIVEN)
         .addMoreReferences('https://medium.com/@priyasrivastava18official/system-design-pattern-scaling-reads-reads-are-the-silent-killers-of-performance-heres-the-c0a74ec46646')
     ],
     [Keys.SYSTEM_DESIGN_CONTENTION, new Referencia('https://medium.com/@priyasrivastava18official/system-design-patterns-the-essential-guide-to-managing-contention-in-distributed-systems-d531b2f69dea', 'Diseño de sistemas, contención', SYSTEM_DESIGN_KEY, 'Contención y step process', '2026/01/15')
-        .addRelatedItems(Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_LOCKING, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRANSACTIONS, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.SECURITY_CONDICION_CARRERA, Keys.META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM, Keys.PERSISTENCY_ACID, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_LOCKING, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRANSACTIONS, Keys.APIS_RATE_LIMITING)
+        .addRelatedItems(Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_LOCKING, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRANSACTIONS, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.SECURITY_CONDICION_CARRERA, Keys.EJECUCION_CONCURRENCY_AND_PARALLELISM, Keys.PERSISTENCY_ACID, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_LOCKING, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRANSACTIONS, Keys.APIS_RATE_LIMITING)
         .addMoreReferences('https://medium.com/@priyasrivastava18official/system-design-pattern-designing-reliable-multi-step-processes-in-distributed-systems-e22283c3ba30')
     ],
     [Keys.SYSTEM_DESIGN_COMMON_FAILS, new Referencia('https://levelup.gitconnected.com/3-am-production-fires-the-12-patterns-that-keep-breaking-everything-5f64e11b1baf', 'Fallas comunes', SYSTEM_DESIGN_KEY, 'Fallas comunes', '2026/01/18')
-        .addRelatedItems(Keys.PERSISTENCY_ADVANCED_N_1_SELECTS, Keys.META_CARACTERISTICAS_MEMORY_AND_GARBAGE, Keys.PATRONES_RESILIENCIA, Keys.META_CARACTERISTICAS_BLOCKING_AND_NO_BLOCKING, Keys.PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS, Keys.PARADIGMAS_REACTIVO, Keys.META_ESTRUCTURAS_LOGS, Keys.SECURITY_CONDICION_CARRERA, Keys.PERSISTENCY_ADVANCED_LOCKING, Keys.CD_CI_CELL_BASED_ARQUITECTURE)
+        .addRelatedItems(Keys.PERSISTENCY_ADVANCED_N_1_SELECTS, Keys.EJECUCION_MEMORY_AND_GARBAGE, Keys.PATRONES_RESILIENCIA, Keys.EJECUCION_BLOCKING_AND_NO_BLOCKING, Keys.PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS, Keys.PARADIGMAS_REACTIVO, Keys.META_ESTRUCTURAS_LOGS, Keys.SECURITY_CONDICION_CARRERA, Keys.PERSISTENCY_ADVANCED_LOCKING, Keys.CD_CI_CELL_BASED_ARQUITECTURE)
     ],
     [Keys.SYSTEM_DESIGN_DATABASE_WITHOUT_LOGIC, new Referencia('https://martinfowler.com/articles/dblogic.html', '¿ Bases de datos, sin logica ?', SYSTEM_DESIGN_KEY, '¿ Logica en la DB ?', '2026/01/31')
-        .addRelatedItems(Keys.PERSISTENCY_ADVANCED_SQL_ENGINE_ANATOMY, Keys.PARADIGMAS_PARADIGMA_DATOS, Keys.ARQUITECTURAS_CAPAS, Keys.REQUISITOS_TRADE_OFF, Keys.META_CARACTERISTICAS_MEMORY_PROFILING, Keys.POO_DESIGN_BY_CONTRACT, Keys.PERSISTENCY_ADVANCED_SQL_NO_SQL, Keys.BUENAS_PRACTICAS_COMPLEJIDAD_COGNITIVA, Keys.PRINCIPIOS_DRY, Keys.PERSISTENCY_DATA_BASE_OBJECTS, Keys.POO_PILARES, Keys.SMELL_CODES_DESGLOSE, Keys.PERSISTENCY_SCHEMAS, Keys.PERSISTENCY_ADVANCED_MIGRATIONS, Keys.ESTRATEGIAS_DESARROLLO_TDD, Keys.PERSISTENCY_ADVANCED_ORM, Keys.ANALISIS_DATA_TURING_COMPLETE, Keys.PARADIGMAS_IMPERATIVO)
+        .addRelatedItems(Keys.PERSISTENCY_ADVANCED_SQL_ENGINE_ANATOMY, Keys.PARADIGMAS_PARADIGMA_DATOS, Keys.ARQUITECTURAS_CAPAS, Keys.REQUISITOS_TRADE_OFF, Keys.EJECUCION_MEMORY_PROFILING, Keys.POO_DESIGN_BY_CONTRACT, Keys.PERSISTENCY_ADVANCED_SQL_NO_SQL, Keys.BUENAS_PRACTICAS_COMPLEJIDAD_COGNITIVA, Keys.PRINCIPIOS_DRY, Keys.PERSISTENCY_DATA_BASE_OBJECTS, Keys.POO_PILARES, Keys.SMELL_CODES_DESGLOSE, Keys.PERSISTENCY_SCHEMAS, Keys.PERSISTENCY_ADVANCED_MIGRATIONS, Keys.ESTRATEGIAS_DESARROLLO_TDD, Keys.PERSISTENCY_ADVANCED_ORM, Keys.ANALISIS_DATA_TURING_COMPLETE, Keys.PARADIGMAS_IMPERATIVO)
         .addMoreReferences('https://rmhw.medium.com/business-logic-versus-data-logic-9e4be45d7007', 'https://www.percona.com/blog/should-you-keep-your-business-logic-in-your-database/', 'https://enterprisecraftsmanship.com/posts/is-sql-good-place-for-business-logic/')
     ],
     [Keys.SYSTEM_DESIGN_RESILIENCE, new Referencia('https://codefarm0.medium.com/resilience-patterns-in-distributed-systems-bc847ee2533c', 'Resiliencia en sistemas distribuidos', SYSTEM_DESIGN_KEY, 'Resiliencia ', '2026/03/22')
@@ -338,7 +338,7 @@ export const COMPILACION_REF = new Map<string, Referencia>([
     [Keys.COMPILACION_AZUCAR_SINTACTICO, new Referencia('https://es.wikipedia.org/wiki/Az%C3%BAcar_sint%C3%A1ctico', 'Azucar Sintactico', COMPILACION_KEY, 'Azucar Sintactico')],
     [Keys.COMPILACION_COERCION, new Referencia('https://developer.mozilla.org/es/docs/Glossary/Type_coercion', 'Coerción', COMPILACION_KEY, 'Coerción')],
     [Keys.COMPILACION_OFUSCACION, new Referencia('https://www.azulweb.net/ofuscacion-de-codigo-antipatron-o-buena-practica/', 'Ofuscación', COMPILACION_KEY, 'Ofuscación', '', '2025/08/18')
-        .addRelatedItems(Keys.META_CARACTERISTICAS_REFLEXION)
+        .addRelatedItems(Keys.EJECUCION_REFLEXION)
     ],
     [Keys.COMPILACION_TREE_SHAKING, new Referencia('https://developer.mozilla.org/en-US/docs/Glossary/Tree_shaking', 'TreeShaking', COMPILACION_KEY, 'Tree Shaking')],
     [Keys.COMPILACION_GRAFOS, new Referencia('https://www.grapheverywhere.com/grafos-que-son-tipos-orden-y-herramientas-de-visualizacion/', 'Grafos', COMPILACION_KEY, 'Grafos')],
@@ -372,7 +372,42 @@ export const COMPILACION_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.META_CARACTERISTICAS_EXCEPTIONS, Keys.BUENAS_PRACTICAS_EXCEPTIONS)
     ],
     [Keys.COMPILACION_CALLS_AND_INVOCATION, new Referencia('https://msmk.university/que-es-un-call/', '¿Llamado o invocación de una función?', COMPILACION_KEY, '¿ Llamado o invocación ?', '2025/12/26')
-        .addRelatedItems(Keys.CONOCIMIENTOS_EMPIRICOS_PASTA_THEORY, Keys.POO_POO, Keys.META_CARACTERISTICAS_ARGUMENTS, Keys.META_CARACTERISTICAS_MEMORY_MANAGEMENT, Keys.META_CARACTERISTICAS_RECURSIVIDAD, Keys.META_ESTRUCTURAS_ESTRUCTURAS_DATOS_II, Keys.MALAS_PRACTICAS_CALLBACK_HELL, Keys.META_ESTRUCTURAS_SCOPE)
+        .addRelatedItems(Keys.CONOCIMIENTOS_EMPIRICOS_PASTA_THEORY, Keys.POO_POO, Keys.META_CARACTERISTICAS_ARGUMENTS, Keys.EJECUCION_MEMORY_MANAGEMENT, Keys.EJECUCION_RECURSIVIDAD, Keys.META_ESTRUCTURAS_ESTRUCTURAS_DATOS_II, Keys.MALAS_PRACTICAS_CALLBACK_HELL, Keys.META_ESTRUCTURAS_SCOPE)
+    ]
+]);
+
+export const EJECUCION_KEY = 'Ejecucion';
+export const EJECUCION_REF = new Map<string, Referencia>([
+    [Keys.EJECUCION_REFLEXION, new Referencia('https://levelup.gitconnected.com/reflecting-on-java-unveiling-the-magic-of-reflection-7140a465ff6b', 'Auto mutabilidad del codigo', EJECUCION_KEY, 'Reflexión', '', '2024/07/12')],
+    [Keys.EJECUCION_PROCESS_AND_THREADS, new Referencia('https://www.linkedin.com/posts/bytebytego_systemdesign-coding-interviewtips-activity-7282264394716090368-bJfF/', 'Procesos & Hilos', EJECUCION_KEY, 'Procesos & Hilos', '', '2026/03/28')
+        .addRelatedItems(Keys.HARDWARE_OPERATIVE_SYSTEM)
+        .addMoreReferences('https://facturapp.weebly.com/hilos.html', 'https://medium.com/@akovtun/concurrency-parallelism-processes-threads-thread-safe-systems-1d4e7d351824')
+    ],
+    //['concurrenciaParalelismo', new Referencia('https://codigofacilito.com/articulos/programacion-concurrente', 'Concurrencia & Paralelismo', META_CARACTERISTICAS_KEY, 'Concurrencia')],
+    [Keys.EJECUCION_CONCURRENCY_AND_PARALLELISM, new Referencia('https://www.linkedin.com/feed/update/urn:li:activity:7209404927750615040/', 'Concurrencia & Paralelismo', EJECUCION_KEY, 'Concurrencia/Paralelismo', '', '2026/03/28')
+        .addRelatedItems(Keys.SYSTEM_DESIGN_COMMON_FAILS, Keys.HARDWARE_IO_BOUND_CPU_BOUND, Keys.HARDWARE_FALSE_SHARING)
+        .addMoreReferences('https://www.baeldung.com/cs/concurrency-vs-parallelism', 'https://medium.com/@akovtun/concurrency-parallelism-processes-threads-thread-safe-systems-1d4e7d351824')
+    ],
+    [Keys.EJECUCION_RECURSIVIDAD, new Referencia('https://geekytheory.com/que-es-la-recursividad/', 'Recursividad', EJECUCION_KEY, 'Recursividad')],
+    [Keys.EJECUCION_BACKTRACKING, new Referencia('https://www.ecured.cu/Vuelta_atr%C3%A1s_(backtracking)', 'Back Tracking', EJECUCION_KEY, 'Back tracking')],
+    [Keys.EJECUCION_MEMORY_AND_GARBAGE, new Referencia('https://www.computerworld.com/article/2596992/memory-leaks-and-garbage-collection.html', 'Fugas de memoria y recoleccion de basura', EJECUCION_KEY, 'Fugas de memoria', '')],
+    [Keys.EJECUCION_FOOTPRINT, new Referencia('https://www.pcmag.com/encyclopedia/term/memory-footprint', 'Huella en memoria', EJECUCION_KEY, 'Huellas de memoria', '2023/11/03')],
+    [Keys.EJECUCION_FEATURE_FLAGS, new Referencia('https://www.optimizely.com/optimization-glossary/feature-flags/', 'Feature Flags', EJECUCION_KEY, 'Feature Flags', '2023/11/30', '2025/05/12')
+        .addRelatedItems(Keys.CD_CI_DEPLOYMENT_PATTERNS)
+    ],
+    [Keys.EJECUCION_MEMORY_SAFETY, new Referencia('https://stackoverflow.blog/2024/03/04/in-rust-we-trust-white-house-office-urges-memory-safety', 'Seguridad en la memoria', EJECUCION_KEY, 'Seguridad en la memoria', '2024/03/26')],
+    [Keys.EJECUCION_MEMORY_PROFILING, new Referencia('https://digma.ai/9-best-java-profilers-to-use-in-2024/', 'Profiling', EJECUCION_KEY, 'Profiling', '2024/05/05')],
+    [Keys.EJECUCION_BLOCKING_AND_NO_BLOCKING, new Referencia('https://www.geeksforgeeks.org/blocking-and-nonblocking-io-in-operating-system/', 'Operaciones Bloqueantes & No Bloqueantes', EJECUCION_KEY, 'Bloqueos/Sin Bloqueos', '2024/05/12')],
+    [Keys.EJECUCION_CACHE_AND_TYPES, new Referencia('https://medium.com/@junfeng0828/d884ccac7c87', 'Estrategias del Cache', EJECUCION_KEY, 'Estrategias del Cache', '2024/10/19')],
+    [Keys.EJECUCION_DEAD_LOCKS, new Referencia('https://www.linkedin.com/posts/bytebytego_systemdesign-coding-interviewtips-activity-7288797053613166592-CNce/', 'DeadLocks - Bloqueos', EJECUCION_KEY, 'DeadLocks - Bloqueos', '2025/01/26')
+        .addRelatedItems(Keys.PERSISTENCY_ADVANCED_LOCKING, Keys.PERSISTENCY_DBMS, Keys.PERSISTENCY_DL)
+    ],
+    [Keys.EJECUCION_MEMORY_MANAGEMENT, new Referencia('https://peerdh.com/blogs/programming-insights/understanding-memory-management-in-programming-paradigms', 'Manejo de la memoria', EJECUCION_KEY, 'Manejo de la memoria', '2025/04/28')
+        .addRelatedItems(Keys.COMPILACION_INTERPRETADOS, Keys.COMPILACION_COMPILACION, Keys.PARADIGMAS_IMPERATIVO, Keys.POO_INMUTABILITY, Keys.COMPILACION_OBJECT_CREATION)
+        .addMoreReferences("https://medium.com/@alexander.paul.gilbert/oop-vs-functional-is-dead-ff51a70c83ce")
+    ],
+    [Keys.EJECUCION_ASINCRONISMO, new Referencia('https://code.likeagirl.io/concurrency-parallelism-async-47312e0be553', 'Asincronismo', EJECUCION_KEY, 'Asincronismo', '2026/03/30')
+        .addRelatedItems(Keys.HARDWARE_LAWS_SCALABILITY, Keys.MALAS_PRACTICAS_CALLBACK_HELL, Keys.HARDWARE_IO_BOUND_CPU_BOUND, Keys.POO_INMUTABILITY, Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS)
     ]
 ]);
 
@@ -396,7 +431,7 @@ export const CONOCIMIENTO_EMPIRICO = new Map<string, Referencia>([
         .addRelatedItems(Keys.LEYES_HYRUM)
     ],
     [Keys.CONOCIMIENTOS_EMPIRICOS_AVESTRUZ, new Referencia('https://www.baeldung.com/cs/ostrich-algorithm', 'Algoritmo del Avestruz', CONOCIMIENTO_EMPIRICO_KEY, 'Avestruz', '', '2025/01/18')
-        .addRelatedItems(Keys.META_CARACTERISTICAS_DEAD_LOCKS, Keys.HARDWARE_OPERATIVE_SYSTEM)
+        .addRelatedItems(Keys.EJECUCION_DEAD_LOCKS, Keys.HARDWARE_OPERATIVE_SYSTEM)
     ],
     [Keys.CONOCIMIENTOS_EMPIRICOS_BOILING_FROG, new Referencia('https://www.linkedin.com/pulse/boiling-frog-syndrome-suyash-jaju/', 'Sindrome de la Rana Hervida', CONOCIMIENTO_EMPIRICO_KEY, 'Rana Hervida', '2024/04/16')],
     [Keys.CONOCIMIENTOS_EMPIRICOS_BOYS_SCOUTS, new Referencia('https://www.linkedin.com/pulse/la-regla-de-los-boys-scouts-hugo-raher/', 'Regla de los Boys Scouts', CONOCIMIENTO_EMPIRICO_KEY, 'Boys Scouts', '2024/04/16')],
@@ -462,7 +497,7 @@ export const CONTAINERS = new Map<string, Referencia>([
     [Keys.CONTENEDORES_SECURE_ORCHESTRATION, new Referencia('https://levelup.gitconnected.com/docker-vs-podman-a-new-era-in-secure-orchestration-957ea2123098', 'Seguridad en Orquestación', CONTENEDORES_KEY, 'Seguridad', '2024/05/25')],
     [Keys.CONTENEDORES_ARQUITECTURE, new Referencia('https://medium.com/@dmosyan/deep-dive-into-docker-containers-architecture-and-features-530a937f4c87', 'Arquitectura en Docker', CONTENEDORES_KEY, 'Arquitectura', '2024/08/04')],
     [Keys.CONTENEDORES_IMAGES_DISTROLESS_HARDENED, new Referencia('https://bell-sw.com/blog/distroless-containers-for-security-and-size/', 'Imagenes Distroless & Hardened', CONTENEDORES_KEY, 'Distroless & Hardened', '2025/05/15', '2026/03/18')
-        .addRelatedItems(Keys.META_CARACTERISTICAS_MEMORY_MANAGEMENT, Keys.HARDWARE_VIRTUAL_MACHINES_VS_CONTAINERS, Keys.SECURITY_CVE, Keys.VERSIONAMIENTO_BOM, Keys.CD_CI_DEPLOYMENT_PIPELINES)
+        .addRelatedItems(Keys.EJECUCION_MEMORY_MANAGEMENT, Keys.HARDWARE_VIRTUAL_MACHINES_VS_CONTAINERS, Keys.SECURITY_CVE, Keys.VERSIONAMIENTO_BOM, Keys.CD_CI_DEPLOYMENT_PIPELINES)
         .addMoreReferences('https://hopla.tech/docker-hardened-images-dhi/')
     ],
     [Keys.CONTENEDORES_RUNTIME, new Referencia('https://www.docker.com/blog/containerd-vs-docker/', 'Ejecución de contenedores', CONTENEDORES_KEY, 'Runtime', '2026/02/01')
@@ -614,7 +649,7 @@ export const MALAS_PRACTICAS_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.META_CARACTERISTICAS_GENERICS, Keys.POO_HERENCIA_COMPOSICION, Keys.PRINCIPIOS_SOLID, Keys.BUENAS_PRACTICAS_INDIRECTION)
     ],
     [Keys.MALAS_PRACTICAS_BOOLEAN_TRAP, new Referencia('https://read.engineerscodex.com/p/the-boolean-trap', 'Boolean Trap', MALAS_PRACTICAS_KEY, 'Boolean Trap', '2026/03/22')
-        .addRelatedItems(Keys.POO_ENUMS, Keys.META_CARACTERISTICAS_FEATURE_FLAGS, Keys.POO_COUPLING_AND_COHESION, Keys.PRINCIPIOS_SOLID)
+        .addRelatedItems(Keys.POO_ENUMS, Keys.EJECUCION_FEATURE_FLAGS, Keys.POO_COUPLING_AND_COHESION, Keys.PRINCIPIOS_SOLID)
         .addMoreReferences('https://martinfowler.com/bliki/FlagArgument.html')
     ],
 ]);
@@ -626,59 +661,28 @@ export const META_CARATERISTICAS_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.POO_POO, Keys.TESTING_MOCKS)
     ],
     //['reflexion', new Referencia('https://es.linkfang.org/wiki/Reflexi%C3%B3n_(inform%C3%A1tica)', 'Auto mutabilidad del codigo', META_CARACTERISTICAS_KEY, 'Reflexión')],
-    [Keys.META_CARACTERISTICAS_REFLEXION, new Referencia('https://levelup.gitconnected.com/reflecting-on-java-unveiling-the-magic-of-reflection-7140a465ff6b', 'Auto mutabilidad del codigo', META_CARACTERISTICAS_KEY, 'Reflexión', '', '2024/07/12')],
     [Keys.META_CARACTERISTICAS_ASSERTS, new Referencia('https://www.adictosaltrabajo.com/2016/01/07/haz-tu-codigo-mas-fiable-con-asserts/', 'Comprobaciones del codigo', META_CARACTERISTICAS_KEY, 'Aserciones', '', '2025/05/12')],
     [Keys.META_CARACTERISTICAS_EXCEPTIONS, new Referencia('https://universidad-de-los-andes.gitbooks.io/fundamentos-de-programacion/content/Nivel4/5_ManejoDeLasExcepciones.html', 'Lanzamiento y manejo de excepciones', META_CARACTERISTICAS_KEY, 'Excepciones')],
     [Keys.META_CARACTERISTICAS_CACHE, new Referencia('https://medium.com/bancolombia-tech/dise%C3%B1ando-una-estrategia-de-cach%C3%A9-39366876009b', 'Tipos de Cache', META_CARACTERISTICAS_KEY, 'Tipos de Cache')],
-    [Keys.META_CARACTERISTICAS_PROCESS_AND_THREADS, new Referencia('https://www.linkedin.com/posts/bytebytego_systemdesign-coding-interviewtips-activity-7282264394716090368-bJfF/', 'Procesos & Hilos', META_CARACTERISTICAS_KEY, 'Procesos & Hilos', '', '2026/03/28')
-        .addRelatedItems(Keys.HARDWARE_OPERATIVE_SYSTEM)
-        .addMoreReferences('https://facturapp.weebly.com/hilos.html', 'https://medium.com/@akovtun/concurrency-parallelism-processes-threads-thread-safe-systems-1d4e7d351824')
-    ],
     [Keys.META_CARACTERISTICAS_ARGUMENTS, new Referencia('https://picodotdev.github.io/blog-bitix/2021/01/en-java-los-argumentos-se-pasan-por-valor-o-por-referencia/', 'Argumentos por valor y por referencia', META_CARACTERISTICAS_KEY, 'Argumentos', '', '2025/05/12')
         .addRelatedItems(Keys.POO_INMUTABILITY)
-    ],
-    //['concurrenciaParalelismo', new Referencia('https://codigofacilito.com/articulos/programacion-concurrente', 'Concurrencia & Paralelismo', META_CARACTERISTICAS_KEY, 'Concurrencia')],
-    [Keys.META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM, new Referencia('https://www.linkedin.com/feed/update/urn:li:activity:7209404927750615040/', 'Concurrencia & Paralelismo', META_CARACTERISTICAS_KEY, 'Concurrencia/Paralelismo', '', '2026/03/28')
-        .addRelatedItems(Keys.SYSTEM_DESIGN_COMMON_FAILS, Keys.HARDWARE_IO_BOUND_CPU_BOUND, Keys.HARDWARE_FALSE_SHARING)
-        .addMoreReferences('https://www.baeldung.com/cs/concurrency-vs-parallelism', 'https://medium.com/@akovtun/concurrency-parallelism-processes-threads-thread-safe-systems-1d4e7d351824')
     ],
     //['ortogonalidad', new Referencia('https://qastack.mx/programming/1527393/what-is-orthogonality', 'Ortogonalidad', META_CARACTERISTICAS_KEY, 'Ortogonalidad')],
     [Keys.META_CARACTERISTICAS_ORTHOGONALITY, new Referencia('https://www.freecodecamp.org/news/orthogonality-in-software-engineering', 'Ortogonalidad', META_CARACTERISTICAS_KEY, 'Ortogonalidad', '', '2025/05/12')
         .addRelatedItems(Keys.ANALISIS_COHESERS_DECOUPLERS)
     ],
     [Keys.META_CARACTERISTICAS_BOILER_PLATE, new Referencia('https://www.freecodecamp.org/news/whats-boilerplate-and-why-do-we-use-it-let-s-check-out-the-coding-style-guide-ac2b6c814ee7/', 'Boiler Plate (codigo repetitivo)', META_CARACTERISTICAS_KEY, 'BoilerPlate')],
-    [Keys.META_CARACTERISTICAS_RECURSIVIDAD, new Referencia('https://geekytheory.com/que-es-la-recursividad/', 'Recursividad', META_CARACTERISTICAS_KEY, 'Recursividad')],
-    [Keys.META_CARACTERISTICAS_BACKTRACKING, new Referencia('https://www.ecured.cu/Vuelta_atr%C3%A1s_(backtracking)', 'Back Tracking', META_CARACTERISTICAS_KEY, 'Back tracking')],
     [Keys.META_CARACTERISTICAS_RAW_TYPES, new Referencia('https://stackoverflow.com/questions/2770321/what-is-a-raw-type-and-why-shouldnt-we-use-it/', 'Tipos Crudos', META_CARACTERISTICAS_KEY, 'Tipos crudos', '', '2025/02/09')],
-    [Keys.META_CARACTERISTICAS_MEMORY_AND_GARBAGE, new Referencia('https://www.computerworld.com/article/2596992/memory-leaks-and-garbage-collection.html', 'Fugas de memoria y recoleccion de basura', META_CARACTERISTICAS_KEY, 'Fugas de memoria', '')],
-    [Keys.META_CARACTERISTICAS_FOOTPRINT, new Referencia('https://www.pcmag.com/encyclopedia/term/memory-footprint', 'Huella en memoria', META_CARACTERISTICAS_KEY, 'Huellas de memoria', '2023/11/03')],
-    [Keys.META_CARACTERISTICAS_FEATURE_FLAGS, new Referencia('https://www.optimizely.com/optimization-glossary/feature-flags/', 'Feature Flags', META_CARACTERISTICAS_KEY, 'Feature Flags', '2023/11/30', '2025/05/12')
-        .addRelatedItems(Keys.CD_CI_DEPLOYMENT_PATTERNS)
-    ],
     //['generics', new Referencia('https://medium.com/@AlexanderObregon/java-generics-type-safety-and-performance-a0864ca72a5a', 'Genericos', META_CARACTERISTICAS_KEY, 'Genericos', '2023/12/28')],
     [Keys.META_CARACTERISTICAS_GENERICS, new Referencia('https://medium.com/@aqilzeka99/mastering-generics-in-java-interview-questions-571232c02af9', 'Genericos', META_CARACTERISTICAS_KEY, 'Genericos', '2023/12/28', '2024/12/01')],
-    [Keys.META_CARACTERISTICAS_MEMORY_SAFETY, new Referencia('https://stackoverflow.blog/2024/03/04/in-rust-we-trust-white-house-office-urges-memory-safety', 'Seguridad en la memoria', META_CARACTERISTICAS_KEY, 'Seguridad en la memoria', '2024/03/26')],
-    [Keys.META_CARACTERISTICAS_MEMORY_PROFILING, new Referencia('https://digma.ai/9-best-java-profilers-to-use-in-2024/', 'Profiling', META_CARACTERISTICAS_KEY, 'Profiling', '2024/05/05')],
-    [Keys.META_CARACTERISTICAS_BLOCKING_AND_NO_BLOCKING, new Referencia('https://www.geeksforgeeks.org/blocking-and-nonblocking-io-in-operating-system/', 'Operaciones Bloqueantes & No Bloqueantes', META_CARACTERISTICAS_KEY, 'Bloqueos/Sin Bloqueos', '2024/05/12')],
     [Keys.META_CARACTERISTICAS_ANOTATIONS, new Referencia('https://vaheaslanyan7.medium.com/the-java-interview-prep-handbook-50-questions-solved-code-examples-62fed44e3e6a', 'Anotaciones', META_CARACTERISTICAS_KEY, 'Anotaciones', '2024/06/30')
         .addRelatedItems(Keys.FRAMEWORKS_FRAMEWORKS, Keys.META_ESTRUCTURAS_DEPRECATION)
     ],
-    [Keys.META_CARACTERISTICAS_CACHE_AND_TYPES, new Referencia('https://medium.com/@junfeng0828/d884ccac7c87', 'Estrategias del Cache', META_CARACTERISTICAS_KEY, 'Estrategias del Cache', '2024/10/19')],
     [Keys.META_CARACTERISTICAS_TYPE_ERASURE, new Referencia('https://www.baeldung.com/java-type-erasure', 'Borrado de Tipos', META_CARACTERISTICAS_KEY, 'Borrado de Tipos', '2024/11/15')
         .addRelatedItems(Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES)
     ],
-    [Keys.META_CARACTERISTICAS_DEAD_LOCKS, new Referencia('https://www.linkedin.com/posts/bytebytego_systemdesign-coding-interviewtips-activity-7288797053613166592-CNce/', 'DeadLocks - Bloqueos', META_CARACTERISTICAS_KEY, 'DeadLocks - Bloqueos', '2025/01/26')
-        .addRelatedItems(Keys.PERSISTENCY_ADVANCED_LOCKING, Keys.PERSISTENCY_DBMS, Keys.PERSISTENCY_DL)
-    ],
     [Keys.META_CARACTERISTICAS_TIPOS, new Referencia('https://wiki.uqbar.org/wiki/articles/esquemas-de-tipado.html', 'Sistema de Tipos', META_CARACTERISTICAS_KEY, 'Tipos', '2025/02/03')
         .addRelatedItems(Keys.PARADIGMAS_PARADIGMA_SCRIPTING, Keys.POO_POLIMORFISMO)
-    ],
-    [Keys.META_CARACTERISTICAS_MEMORY_MANAGEMENT, new Referencia('https://peerdh.com/blogs/programming-insights/understanding-memory-management-in-programming-paradigms', 'Manejo de la memoria', META_CARACTERISTICAS_KEY, 'Manejo de la memoria', '2025/04/28')
-        .addRelatedItems(Keys.COMPILACION_INTERPRETADOS, Keys.COMPILACION_COMPILACION, Keys.PARADIGMAS_IMPERATIVO, Keys.POO_INMUTABILITY, Keys.COMPILACION_OBJECT_CREATION)
-        .addMoreReferences("https://medium.com/@alexander.paul.gilbert/oop-vs-functional-is-dead-ff51a70c83ce")
-    ],
-    [Keys.META_CARACTERISTICAS_ASINCRONISMO, new Referencia('https://code.likeagirl.io/concurrency-parallelism-async-47312e0be553', 'Asincronismo', META_CARACTERISTICAS_KEY, 'Asincronismo', '2026/03/30')
-        .addRelatedItems(Keys.HARDWARE_LAWS_SCALABILITY, Keys.MALAS_PRACTICAS_CALLBACK_HELL, Keys.HARDWARE_IO_BOUND_CPU_BOUND, Keys.POO_INMUTABILITY, Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS)
     ],
 ]);
 
@@ -716,7 +720,7 @@ export const META_ESTRUCTURAS_REF = new Map<string, Referencia>([
     [Keys.META_ESTRUCTURAS_VALUE_OBJECTS, new Referencia('https://medium.com/all-you-need-is-clean-code/value-objects-d4c24115fa69', 'Value Objects', META_ESTRUCTURAS_KEY, 'Value Objects', '2022/11/07')],
     [Keys.META_ESTRUCTURAS_DYNAMIC_PROGAMING, new Referencia('https://www.spiceworks.com/tech/devops/articles/what-is-dynamic-programming/', 'Programacion Dinamica', META_ESTRUCTURAS_KEY, 'Programacion Dinamica', '2023/03/26')],
     [Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION, new Referencia('https://www.baeldung.com/cs/serialization-deserialization', 'Serialización y Deserialización', META_ESTRUCTURAS_KEY, 'Serializar & Deserializar I', '2023/05/31', '2026/03/29')
-        .addRelatedItems(Keys.META_CARACTERISTICAS_REFLEXION, Keys.VERSIONAMIENTO_EVOLUTION_SCHEMA_AND_SCHEMA_REGISTRY)
+        .addRelatedItems(Keys.EJECUCION_REFLEXION, Keys.VERSIONAMIENTO_EVOLUTION_SCHEMA_AND_SCHEMA_REGISTRY)
         .addMoreReferences('https://levelup.gitconnected.com/the-hidden-cost-of-jackson-serialization-425612a4ac06')
     ],
     [Keys.META_ESTRUCTURAS_SERIALIZATION_FORMATS, new Referencia('https://blog.mbedded.ninja/programming/serialization-formats/a-comparison-of-serialization-formats/', 'Formatos de Serialización', META_ESTRUCTURAS_KEY, 'Serializar & Deserializar II', '2026/03/29')
@@ -882,7 +886,7 @@ export const ANALISIS_DATA_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.PATRONES_MESSAGING, Keys.SYSTEM_DESIGN_QUEUES)
     ],
     [Keys.ANALISIS_DATA_STREAMING_VS_MESSAGING, new Referencia('https://medium.com/qest/messaging-vs-streaming-a-software-engineers-guide-8500d97f6f25', 'Streaming Vs Mensajes', ANALISIS_DATA_KEY, 'Streaming Vs Mensajes', '2025/11/06')
-        .addRelatedItems(Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.VERSIONAMIENTO_EVOLUTION_SCHEMA_AND_SCHEMA_REGISTRY, Keys.PATRONES_MESSAGING, Keys.MICROSERVICES_EVENTS_VS_REQUEST_RESPONSE, Keys.PATRONES_FOR_INTEGRATION, Keys.MICROSERVICES_ADVANCED_PRODUCER_CONSUMER_PROBLEM, Keys.MICROSERVICES_ADVANCED_IDEMPOTENCY_I, Keys.META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM, Keys.SYSTEM_DESIGN_QUEUES, Keys.APIS_LATENCY_THROUGHPUT_BANDWITH)
+        .addRelatedItems(Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.VERSIONAMIENTO_EVOLUTION_SCHEMA_AND_SCHEMA_REGISTRY, Keys.PATRONES_MESSAGING, Keys.MICROSERVICES_EVENTS_VS_REQUEST_RESPONSE, Keys.PATRONES_FOR_INTEGRATION, Keys.MICROSERVICES_ADVANCED_PRODUCER_CONSUMER_PROBLEM, Keys.MICROSERVICES_ADVANCED_IDEMPOTENCY_I, Keys.EJECUCION_CONCURRENCY_AND_PARALLELISM, Keys.SYSTEM_DESIGN_QUEUES, Keys.APIS_LATENCY_THROUGHPUT_BANDWITH)
         .addMoreReferences('https://quix.io/blog/apache-kafka-vs-rabbitmq-comparison', 'https://pathway.com/blog/kafka-vs-rabbit-mq-for-data-streaming/')
     ],
     [Keys.ANALISIS_DATA_OLAP_OLTP, new Referencia('https://aws.amazon.com/es/compare/the-difference-between-olap-and-oltp/', 'OLAP & OLTP', ANALISIS_DATA_KEY, 'OLAP & OLTP', '2024/09/15')],
@@ -896,7 +900,7 @@ export const ANALISIS_DATA_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.PERSISTENCY_SCHEMAS, Keys.PERSISTENCY_ACID, Keys.PERSISTENCY_CRUD, Keys.PERSISTENCY_ADVANCED_NO_SQL_TYPES)
     ],
     [Keys.ANALISIS_DATA_DESIGN_PATTERNS_I, new Referencia('https://aws.plainenglish.io/data-engineering-design-patterns-you-must-learn-in-2026-c25b7bd0b9a7', 'Data Engineering Design Patterns I', ANALISIS_DATA_KEY, 'Data Design Patterns I', '2026/02/15')
-        .addRelatedItems(Keys.PERSISTENCY_CRUD, Keys.META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM, Keys.PERSISTENCY_ACID, Keys.COMPILACION_GRAFOS)
+        .addRelatedItems(Keys.PERSISTENCY_CRUD, Keys.EJECUCION_CONCURRENCY_AND_PARALLELISM, Keys.PERSISTENCY_ACID, Keys.COMPILACION_GRAFOS)
     ],
     [Keys.ANALISIS_DATA_DESIGN_PATTERNS_II, new Referencia('https://aws.plainenglish.io/data-engineering-design-patterns-you-must-learn-in-2026-c25b7bd0b9a7', 'Data Engineering Design Patterns II', ANALISIS_DATA_KEY, 'Data Design Patterns II', '2026/02/15')
         .addRelatedItems(Keys.MICROSERVICES_ADVANCED_DEAD_LETTER_QUEUE, Keys.ANALISIS_DELIVERY_GUARANTED, Keys.PEOPLE_DIKW, Keys.VERSIONAMIENTO_EVOLUTION_SCHEMA_AND_SCHEMA_REGISTRY, Keys.PERSISTENCY_ADVANCED_PARTITIONING)
@@ -960,7 +964,7 @@ export const PATRONES_REF = new Map<string, Referencia>([
     ],
     [Keys.PATRONES_STATE, new Referencia('https://maxim-gorin.medium.com/stop-writing-if-else-trees-use-the-state-pattern-instead-1fe9ff39a39c', 'Patron State', PATRONES_KEY, 'Patron State', '2025/04/20').addRelatedItems(Keys.CALIDAD_IF_ELSE, Keys.POO_POLIMORFISMO, Keys.PRINCIPIOS_SOLID, Keys.POO_ENUMS, Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS)],
     [Keys.PATRONES_FOR_INTEGRATION, new Referencia('https://docs.oracle.com/cd/E17904_01/doc.1111/e17363/chapter05.htm#FPCON244', 'Patrones para Integraciones', PATRONES_KEY, 'Integraciones', '2025/05/07')
-        .addRelatedItems(Keys.APIS_REST_VS_MESSAGING, Keys.META_CARACTERISTICAS_BLOCKING_AND_NO_BLOCKING, Keys.ESTRATEGIAS_DESARROLLO_BFF, Keys.SYSTEM_DESIGN_QUEUES)
+        .addRelatedItems(Keys.APIS_REST_VS_MESSAGING, Keys.EJECUCION_BLOCKING_AND_NO_BLOCKING, Keys.ESTRATEGIAS_DESARROLLO_BFF, Keys.SYSTEM_DESIGN_QUEUES)
         .addMoreReferences('https://medium.com/mandiri-engineering/fire-and-forget-e59b745c9f97', 'https://gravitar.biz/bi/tipos-tratamiento-datos/')
     ],
     [Keys.PATRONES_RESILIENCIA, new Referencia('https://www.paradigmadigital.com/dev/4-patrones-resiliencia-fundamentales/', 'Patrones & Resiliencia', PATRONES_KEY, 'Patrones & Resiliencia', '2025/08/14')
@@ -1152,13 +1156,13 @@ export const TESTING_ADVANCED_REF = new Map<string, Referencia>([
     [Keys.TESTING_ADVANCED_COSTS, new Referencia('https://fastercapital.com/es/contenido/Costo-de-las-pruebas--como-calcular-el-costo-de-verificar-la-calidad-o-el-rendimiento-de-un-producto-o-sistema.html', 'Costos del Testing', TESTING_ADVANCED_KEY, 'Costos', '2025/01/04')],
     [Keys.TESTING_ADVANCED_ISOLATION, new Referencia('https://mrslavchev.com/2018/08/03/hindsight-lessons-about-automation-test-isolation-principle/', 'Aislamiento de pruebas', TESTING_ADVANCED_KEY, 'Aislamiento', '2025/02/02')],
     [Keys.TESTING_ADVANCED_CHARGE, new Referencia('https://www.headspin.io/blog/best-performance-testing-tools', 'Pruebas de carga', TESTING_ADVANCED_KEY, 'Performance', '2025/02/11')
-        .addRelatedItems(Keys.ANALISIS_DATA_DSL, Keys.OBSERVABILIDAD_OBSERVABILITY, Keys.META_CARACTERISTICAS_MEMORY_SAFETY, Keys.VERSIONAMIENTO_LICENSES)
+        .addRelatedItems(Keys.ANALISIS_DATA_DSL, Keys.OBSERVABILIDAD_OBSERVABILITY, Keys.EJECUCION_MEMORY_SAFETY, Keys.VERSIONAMIENTO_LICENSES)
     ],
     [Keys.TESTING_ADVANCED_ARCH_UNIT, new Referencia('https://www.baeldung.com/java-archunit-intro', 'Tests sobre la Arquitectura', TESTING_ADVANCED_KEY, 'ArchUnit', '2025/03/06')
         .addRelatedItems(Keys.META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL, Keys.ARQUITECTURAS_IMPORTANT_CONCEPTS, Keys.ARQUITECTURAS_MVC, Keys.ESTRATEGIAS_DESARROLLO_DDD)
     ],
     [Keys.TESTING_ADVANCED_ENVIRONMENT, new Referencia('https://www.abtasty.com/blog/test-environment/', 'Pruebas por Environment (ambiente)', TESTING_ADVANCED_KEY, 'Entornos', '2025/05/04')
-        .addRelatedItems(Keys.CD_CI_DEPLOYMENT_PIPELINES, Keys.CALIDAD_ANALYST_QA, Keys.ESTRATEGIAS_DESARROLLO_SLDC, Keys.GIT_BRANCHS_STRATEGIES, Keys.CD_CI_DEPLOYMENT_PATTERNS, Keys.META_CARACTERISTICAS_FEATURE_FLAGS)
+        .addRelatedItems(Keys.CD_CI_DEPLOYMENT_PIPELINES, Keys.CALIDAD_ANALYST_QA, Keys.ESTRATEGIAS_DESARROLLO_SLDC, Keys.GIT_BRANCHS_STRATEGIES, Keys.CD_CI_DEPLOYMENT_PATTERNS, Keys.EJECUCION_FEATURE_FLAGS)
     ],
     [Keys.TESTING_ADVANCED_PERFORMANCE, new Referencia('https://es.abstracta.us/blog/metricas-pruebas-performance-software/', 'Metricas & Performance', TESTING_ADVANCED_KEY, 'Metricas & Performance', '2025/07/07')],
     [Keys.TESTING_ADVANCED_SHIFT_LEFT_SHIFT_RIGHT, new Referencia('https://es.abstracta.us/blog/shift-left-right-testing-software-enfoques/', 'Shift-Left & Shift-Right Testing', TESTING_ADVANCED_KEY, 'Shift-Left & Shift-Right', '2025/09/14')
@@ -1254,7 +1258,7 @@ export const PRINCIPIOS_REF = new Map<string, Referencia>([
     [Keys.PRINCIPIOS_TWICE_ONE, new Referencia('https://betterprogramming.pub/measure-twice-cut-once-isnt-very-agile-3af456d932b9', 'Mide 2 veces, Corta 1 vez', PRINCIPIOS_KEY, 'Mide 2 veces, Corta 1 vez')],
     //[Keys.PRINCIPIOS_DIVIDE_AND_CONQUER, new Referencia('https://betterprogramming.pub/10-design-principles-in-software-engineering-f88647cf5a07', 'Divide y Conquistaras', PRINCIPIOS_KEY, 'Dividir y Conquistar')],
     [Keys.PRINCIPIOS_DIVIDE_AND_CONQUER, new Referencia('https://es.khanacademy.org/computing/computer-science/algorithms/merge-sort/a/divide-and-conquer-algorithms', 'Divide y Conquistaras', PRINCIPIOS_KEY, 'Divide y venceras', '', '2025/08/10')
-        .addRelatedItems(Keys.META_CARACTERISTICAS_RECURSIVIDAD)
+        .addRelatedItems(Keys.EJECUCION_RECURSIVIDAD)
     ],
     [Keys.PRINCIPIOS_SOC, new Referencia('https://geeksprogramming.com/key-principles-in-software-and-acronyms/', 'Separacion de Conceptos', PRINCIPIOS_KEY, 'SOC', '2024/01/13')],
     [Keys.PRINCIPIOS_POC, new Referencia('https://geeksprogramming.com/key-principles-in-software-and-acronyms/', 'Prueba de Concepto', PRINCIPIOS_KEY, 'POC', '2024/01/13')],
@@ -1328,7 +1332,7 @@ export const PERSISTENCY_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.PRINCIPIOS_STUPID, Keys.TESTING_ADVANCED_CHARGE)
     ],
     [Keys.PERSISTENCY_ACID, new Referencia('https://dosideas.com/noticias/base-de-datos/973-acid-en-las-bases-de-datos', 'Esquema ACID', PERSISTENCY_KEY, 'ACID', '', '2026/01/15')
-        .addRelatedItems(Keys.FRAMEWORKS_TRANSACTIONAL_I, Keys.FRAMEWORKS_TRANSACTIONAL_II, Keys.META_CARACTERISTICAS_DEAD_LOCKS)
+        .addRelatedItems(Keys.FRAMEWORKS_TRANSACTIONAL_I, Keys.FRAMEWORKS_TRANSACTIONAL_II, Keys.EJECUCION_DEAD_LOCKS)
     ],
     //['indices', new Referencia('https://www.ibm.com/docs/es/mam/7.6.0.8?topic=databases-database-indexing', 'Indices', PERSISTENCY_KEY, 'Indices')],
     [Keys.PERSISTENCY_INDICES, new Referencia('https://www.adesso.es/es/noticias/blog/indices-de-bases-de-datos-la-clave-para-la-optimizacion-del-rendimiento.jsp', 'Indices & Indices parciales', PERSISTENCY_KEY, 'Indices', '', '2025/12/20')
@@ -1364,13 +1368,13 @@ export const PERSISTENCY_REF = new Map<string, Referencia>([
     ],
     [Keys.PERSISTENCY_KEY_TYPES, new Referencia('https://agiledata.org/essays/keys.html', 'Tipos de Keys', PERSISTENCY_KEY, 'Tipos de Keys', '2024/10/06')],
     [Keys.PERSISTENCY_COMMON_TABLE_EXPRESSION, new Referencia('https://learnsql.com/blog/what-is-common-table-expression/', 'Common Table Expression', PERSISTENCY_KEY, 'CTE', '2025/01/04')
-        .addRelatedItems(Keys.META_CARACTERISTICAS_RECURSIVIDAD)
+        .addRelatedItems(Keys.EJECUCION_RECURSIVIDAD)
     ],
     [Keys.PERSISTENCY_DATA_MODELING, new Referencia('https://towardsdev.com/mastering-data-modeling-a-step-by-step-guide-99dd32bfaa89', 'Modelado de Datos', PERSISTENCY_KEY, 'Modelado de Datos', '2025/01/23')
         .addRelatedItems(Keys.POO_POO)
     ],
     [Keys.PERSISTENCY_DATA_STRUCTURED_DATABASE_SYSTEM, new Referencia('https://www.freecodecamp.org/news/how-to-design-structured-database-systems-using-sql-full-book/', 'Estructurar una DB', PERSISTENCY_KEY, 'Estructurar una DB', '2025/08/21')
-        .addRelatedItems(Keys.PEOPLE_DIKW, Keys.NEURO_MARKETING_SEMANTICA_PRAGMATICA, Keys.HARDWARE_UTF8, Keys.META_ESTRUCTURAS_SISTEMAS_COMPLEJOS, Keys.ANALISIS_DATA_DATA_STORING, Keys.META_CARACTERISTICAS_META_DATOS, Keys.META_ESTRUCTURAS_ESTRUCTURAS_DATOS_II, Keys.META_CARACTERISTICAS_BLOCKING_AND_NO_BLOCKING, Keys.ANALISIS_DATA_OLAP_OLTP, Keys.REQUISITOS_REQUIREMENTS_ENGINEERING)
+        .addRelatedItems(Keys.PEOPLE_DIKW, Keys.NEURO_MARKETING_SEMANTICA_PRAGMATICA, Keys.HARDWARE_UTF8, Keys.META_ESTRUCTURAS_SISTEMAS_COMPLEJOS, Keys.ANALISIS_DATA_DATA_STORING, Keys.META_CARACTERISTICAS_META_DATOS, Keys.META_ESTRUCTURAS_ESTRUCTURAS_DATOS_II, Keys.EJECUCION_BLOCKING_AND_NO_BLOCKING, Keys.ANALISIS_DATA_OLAP_OLTP, Keys.REQUISITOS_REQUIREMENTS_ENGINEERING)
     ],
 ]);
 
@@ -1399,7 +1403,7 @@ export const PERSISTENCY_ADVANCED_REF = new Map<string, Referencia>([
         .addMoreReferences('https://www.linkedin.com/pulse/bases-de-datos-sql-vs-nosql-newsql-jos%C3%A9-tello-villalobos/')
     ],
     [Keys.PERSISTENCY_ADVANCED_LOCKING, new Referencia('https://vladmihalcea.com/optimistic-vs-pessimistic-locking/', 'Bloqueo Optimista & Pesimista', PERSISTENCY_ADVANCED_KEY, 'Bloqueos', '2024/06/17')
-        .addRelatedItems(Keys.META_CARACTERISTICAS_DEAD_LOCKS, Keys.FRAMEWORKS_TRANSACTIONAL_I, Keys.FRAMEWORKS_TRANSACTIONAL_II)
+        .addRelatedItems(Keys.EJECUCION_DEAD_LOCKS, Keys.FRAMEWORKS_TRANSACTIONAL_I, Keys.FRAMEWORKS_TRANSACTIONAL_II)
         .addMoreReferences('https://www.baeldung.com/jpa-optimistic-locking', 'https://www.baeldung.com/jpa-pessimistic-locking')
     ],
     [Keys.PERSISTENCY_ADVANCED_SQL_ORDER_EXECUTION, new Referencia('https://matam-kirankumar.medium.com/sql-query-order-of-execution-37001da1462', 'Orden de Ejecución', PERSISTENCY_ADVANCED_KEY, 'Orden de Ejecución', '2023/08/13')],
@@ -1422,7 +1426,7 @@ export const PERSISTENCY_ADVANCED_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.PERSISTENCY_NORMALIZATION)
     ],
     [Keys.PERSISTENCY_ADVANCED_SQL_ENGINE_ANATOMY, new Referencia('https://www.dolthub.com/blog/2025-04-25-sql-engine-anatomy/', 'Anatomia de un motor SQL', PERSISTENCY_ADVANCED_KEY, 'Motores SQL', '2025/07/28')
-        .addRelatedItems(Keys.META_CARACTERISTICAS_RECURSIVIDAD, Keys.META_ESTRUCTURAS_SCOPE)
+        .addRelatedItems(Keys.EJECUCION_RECURSIVIDAD, Keys.META_ESTRUCTURAS_SCOPE)
     ],
     [Keys.PERSISTENCY_ADVANCED_UPSERT, new Referencia('https://www.cockroachlabs.com/blog/sql-upsert/', 'Upsert', PERSISTENCY_ADVANCED_KEY, 'Upsert', '2025/12/21')],
     [Keys.PERSISTENCY_ADVANCED_MIGRATIONS, new Referencia('https://medium.com/@jaredhatfield/database-migration-patterns-6b5ede23d06e', 'Patrones de Migración', PERSISTENCY_ADVANCED_KEY, 'Patrones Migración', '2026/01/02')
@@ -1430,7 +1434,7 @@ export const PERSISTENCY_ADVANCED_REF = new Map<string, Referencia>([
         .addMoreReferences('https://medium.com/@adkomyagin/validating-data-like-a-pro-post-migration-integrity-d06300d6bfb8')
     ],
     [Keys.PERSISTENCY_ADVANCED_LEDGER_DATABASE, new Referencia('https://www.techtarget.com/searchcio/definition/ledger-database', 'Ledger database', PERSISTENCY_ADVANCED_KEY, 'Ledger Database', '2026/01/28')
-        .addRelatedItems(Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRANSACTIONS, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.POO_INMUTABILITY, Keys.META_CARACTERISTICAS_BLOCKING_AND_NO_BLOCKING)
+        .addRelatedItems(Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRANSACTIONS, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.POO_INMUTABILITY, Keys.EJECUCION_BLOCKING_AND_NO_BLOCKING)
         .addMoreReferences('https://learn.microsoft.com/en-us/sql/relational-databases/security/ledger/ledger-append-only-ledger-tables?view=sql-server-ver17')
     ],
     [Keys.PERSISTENCY_ADVANCED_LONG_TRANSACTIONS, new Referencia('https://www.linkedin.com/pulse/long-running-transactions-financial-systems-mario-kresnadi/', 'Transacciones largas & performance', PERSISTENCY_ADVANCED_KEY, 'Transacciones largas', '2026/03/01')
@@ -1528,7 +1532,7 @@ export const HARDWARE_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.META_ESTRUCTURAS_QUEUES, Keys.AGILES_ESTIMATION_LAWS, Keys.LEYES_AMDAHL, Keys.LEYES_BROOKS, Keys.LEYES_LITTLE, Keys.LEYES_CONWAY, Keys.LEYES_MOORE_AND_WIRTH, Keys.AGILES_ESTIMATION_LAWS)
     ],
     [Keys.HARDWARE_IO_BOUND_CPU_BOUND, new Referencia('https://www.baeldung.com/cs/cpu-io-bound', 'I/O Bound & CPU Bound', HARDWARE_KEY, 'I/O Bound & CPU Bound', '2026/03/02')
-        .addRelatedItems(Keys.META_CARACTERISTICAS_BLOCKING_AND_NO_BLOCKING, Keys.META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM)
+        .addRelatedItems(Keys.EJECUCION_BLOCKING_AND_NO_BLOCKING, Keys.EJECUCION_CONCURRENCY_AND_PARALLELISM)
         .addMoreReferences('https://ashdaily.co.uk/blog/post0011/')
     ],
 ]);
@@ -1684,14 +1688,14 @@ export const MICRO_SERVICES_ADVANCED_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.SYSTEM_DESIGN_SINGLE_POINT_OF_FAILURE, Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION, Keys.OBSERVABILIDAD_OBSERVABILITY)
     ],
     [Keys.MICROSERVICES_ADVANCED_PRODUCER_CONSUMER_PROBLEM, new Referencia('https://www.baeldung.com/java-producer-consumer-problem', 'Problema Productor Consumidor', MICRO_SERVICES_ADVANCED_KEY, 'Productor-Consumidor', '2025/02/15')
-        .addRelatedItems(Keys.SYSTEM_DESIGN_QUEUES, Keys.META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM, Keys.META_CARACTERISTICAS_PROCESS_AND_THREADS)
+        .addRelatedItems(Keys.SYSTEM_DESIGN_QUEUES, Keys.EJECUCION_CONCURRENCY_AND_PARALLELISM, Keys.EJECUCION_PROCESS_AND_THREADS)
     ],
     [Keys.MICROSERVICES_ADVANCED_IDEMPOTENCY_I, new Referencia('https://microservices.io/post/microservices/patterns/2020/10/16/idempotent-consumer.html', 'Idempotencia & Duplicacion I', MICRO_SERVICES_ADVANCED_KEY, 'Idempotencia I', '2025/09/01')
         .addRelatedItems(Keys.SYSTEM_DESIGN_QUEUES, Keys.ANALISIS_DELIVERY_GUARANTED, Keys.ANALISIS_LIGHT_EVENTS_VS_RICH_EVENTS, Keys.PATRONES_OUTBOX, Keys.ANALISIS_DATA_CHANGE_DATA_CAPTURE, Keys.PERSISTENCY_ADVANCED_NO_SQL_TYPES, Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.OBSERVABILIDAD_COMMON_METRICS, Keys.PERSISTENCY_INDICES, Keys.PERSISTENCY_ADVANCED_UPSERT)
         .addMoreReferences('https://nejckorasa.github.io/posts/idempotent-kafka-procesing/', 'https://medium.com/@zdb.dashti/exactly-once-semantics-using-the-idempotent-consumer-pattern-927b2595f231', 'https://www.rabbitmq.com/docs/confirms')
     ],
     [Keys.MICROSERVICES_ADVANCED_IDEMPOTENCY_II, new Referencia('https://medium.com/javarevisited/idempotency-in-distributed-systems-preventing-duplicate-operations-85ce4468d161', 'Idempotencia & Duplicacion II', MICRO_SERVICES_ADVANCED_KEY, 'Idempotencia II', '2026/02/15')
-        .addRelatedItems(Keys.MICROSERVICES_ADVANCED_DEAD_LETTER_QUEUE, Keys.META_CARACTERISTICAS_CACHE, Keys.APIS_IDEMPOTENCIA, Keys.ANALISIS_DATA_DEDUPLICATION, Keys.PERSISTENCY_CONSTRAINTS, Keys.APIS_HTTP_CODES, Keys.META_CARACTERISTICAS_DEAD_LOCKS)
+        .addRelatedItems(Keys.MICROSERVICES_ADVANCED_DEAD_LETTER_QUEUE, Keys.META_CARACTERISTICAS_CACHE, Keys.APIS_IDEMPOTENCIA, Keys.ANALISIS_DATA_DEDUPLICATION, Keys.PERSISTENCY_CONSTRAINTS, Keys.APIS_HTTP_CODES, Keys.EJECUCION_DEAD_LOCKS)
         .addMoreReferences('https://dev.to/woovi/practical-usages-of-idempotency-3926')
     ],
     [Keys.MICROSERVICES_ADVANCED_CACHE_FAILS, new Referencia('https://www.linkedin.com/posts/bytebytego_systemdesign-coding-interviewtips-activity-7296767687978827776-Dizz/', 'Fallos del cache', MICRO_SERVICES_ADVANCED_KEY, 'Fallos del cache', '2025/02/22')
@@ -1714,10 +1718,10 @@ export const MICRO_SERVICES_ADVANCED_REF = new Map<string, Referencia>([
         .addMoreReferences('https://medium.com/mr-plan-publication/monolith-architecture-software-architecture-part-1-845a04ab303c', 'https://medium.com/mr-plan-publication/microservices-and-microservice-architecture-software-architecture-part-2-7ee5fb796270')
     ],
     [Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_MONOLITH, new Referencia('https://levelup.gitconnected.com/your-microservices-strategy-is-broken-you-built-a-distributed-monolith-332f74867f73', 'Monolito distribuido', MICRO_SERVICES_ADVANCED_KEY, 'Monolito distribuido', '2025/09/27')
-        .addRelatedItems(Keys.NUBE_CAP_TEOREMA, Keys.ARQUITECTURAS_MONOLITOS, Keys.ARQUITECTURAS_MODULITHS, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.TESTING_INTEGRATION, Keys.NUBE_TWO_PHASE_COMMIT, Keys.PATRONES_SAGA, Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.META_CARACTERISTICAS_CACHE_AND_TYPES, Keys.CD_CI_FAILOVER, Keys.CD_CI_DEPLOYMENT_PIPELINES, Keys.PATRONES_STRANGLER_FIG, Keys.ANALISIS_STRATEGIC_DESIGN, Keys.OBSERVABILIDAD_SRE, Keys.CD_CI_DEV_OPS, Keys.VERSIONAMIENTO_VERSIONAMIENTO)
+        .addRelatedItems(Keys.NUBE_CAP_TEOREMA, Keys.ARQUITECTURAS_MONOLITOS, Keys.ARQUITECTURAS_MODULITHS, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.TESTING_INTEGRATION, Keys.NUBE_TWO_PHASE_COMMIT, Keys.PATRONES_SAGA, Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.EJECUCION_CACHE_AND_TYPES, Keys.CD_CI_FAILOVER, Keys.CD_CI_DEPLOYMENT_PIPELINES, Keys.PATRONES_STRANGLER_FIG, Keys.ANALISIS_STRATEGIC_DESIGN, Keys.OBSERVABILIDAD_SRE, Keys.CD_CI_DEV_OPS, Keys.VERSIONAMIENTO_VERSIONAMIENTO)
     ],
     [Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_LOCKING, new Referencia('https://codefarm0.medium.com/distributed-locking-under-the-hood-of-coordination-2ef8b039c13f', 'Bloqueo distribuido', MICRO_SERVICES_ADVANCED_KEY, 'Bloqueo distribuido', '2025/10/31')
-        .addRelatedItems(Keys.PERSISTENCY_ADVANCED_LOCKING, Keys.META_CARACTERISTICAS_DEAD_LOCKS, Keys.META_CARACTERISTICAS_CONCURRENCY_AND_PARALLELISM, Keys.PATRONES_DYSTRIBUTED_SYSTEMS, Keys.OBSERVABILIDAD_COMMON_METRICS)
+        .addRelatedItems(Keys.PERSISTENCY_ADVANCED_LOCKING, Keys.EJECUCION_DEAD_LOCKS, Keys.EJECUCION_CONCURRENCY_AND_PARALLELISM, Keys.PATRONES_DYSTRIBUTED_SYSTEMS, Keys.OBSERVABILIDAD_COMMON_METRICS)
     ],
     [Keys.MICROSERVICES_ADVANCED_PROCESSING_ARCHETYPES, new Referencia('https://medium.com/@jaredhatfield/lessons-in-asynchronous-messaging-patterns-pitfalls-and-best-practices-35254b3218e8', 'Arquetipos de procesamiento de mensajes', MICRO_SERVICES_ADVANCED_KEY, 'Arquetipos Procesamiento', '2026/01/01')
         .addRelatedItems(Keys.ANALISIS_DATA_BATCH_VS_STREAM, Keys.ANALISIS_DATA_ETL_ELT, Keys.BUENAS_PRACTICAS_AGGREGATES, Keys.PATRONES_FOR_INTEGRATION, Keys.PATRONES_MESSAGING, Keys.PATRONES_RESILIENCIA, Keys.ANALISIS_TYPE_EVENTS, Keys.OBSERVABILIDAD_COMMON_METRICS)
@@ -1749,7 +1753,7 @@ export const OBSERVABILIDAD_REF = new Map<string, Referencia>([
         .addMoreReferences('https://chronosphere.io/learn/what-is-high-cardinality/')
     ],
     [Keys.OBSERVABILIDAD_ACTUATORS, new Referencia('https://medium.com/@gaddamnaveen192/stop-watching-production-fail-do-this-instead-446b7c44b62a', 'Actuators', OBSERVABILIDAD_KEY, 'Actuators', '2026/03/05')
-        .addRelatedItems(Keys.CD_CI_DI_RPO_RTO, Keys.META_CARACTERISTICAS_CACHE_AND_TYPES, Keys.PATRONES_RESILIENCIA)
+        .addRelatedItems(Keys.CD_CI_DI_RPO_RTO, Keys.EJECUCION_CACHE_AND_TYPES, Keys.PATRONES_RESILIENCIA)
         .addMoreReferences('https://www.syscrest.com/2025/02/securing-spring-boot-actuator/')
     ],
     [Keys.OBSERVABILIDAD_CORRELATION_CAUSATION, new Referencia('https://www.jmp.com/es/statistics-knowledge-portal/what-is-correlation', 'Correlación & Causalidad', OBSERVABILIDAD_KEY, 'Correlación & Causalidad', '2025/03/08')
