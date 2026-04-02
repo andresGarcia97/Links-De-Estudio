@@ -42,7 +42,7 @@ export class LinkReferencia {
 }
 
 export const LAST_ITEM = Keys.VERSIONAMIENTO_DATABASE_VERSION_CONTROL;
-export const LAST_UPDATE = Keys.ARQUITECTURAS_HOW_TO_CHOOSE_IT;
+export const LAST_UPDATE = Keys.GIT_COMMITS_PRACTICES;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -592,7 +592,10 @@ export const GIT_REF = new Map<string, Referencia>([
     [Keys.GIT_ATRIBUTOS, new Referencia('https://git-scm.com/book/es/v2/Personalizaci%C3%B3n-de-Git-Git-Attributes', 'Personalización y acciones por defecto', GIT_KEY, 'Atributos')],
     [Keys.GIT_MIGRACION, new Referencia('https://git-scm.com/book/es/v2/Git-y-Otros-Sistemas-Migraci%C3%B3n-a-Git', 'Migración entre sistemas y otras acciones', GIT_KEY, 'Entresijos')],
     [Keys.GIT_FLOW, new Referencia('https://aprendegit.com/que-es-git-flow/', 'Flujo de trabajo con Git', GIT_KEY, 'Git flow')],
-    [Keys.GIT_COMMITS_PRACTICES, new Referencia('https://codigofacilito.com/articles/41', 'Buenas practicas para realizar commits', GIT_KEY, 'Buenas Practicas')],
+    [Keys.GIT_COMMITS_PRACTICES, new Referencia('https://codigofacilito.com/articles/41', 'Buenas practicas & commits atomicos', GIT_KEY, 'Buenas Practicas', '', '2026/04/01')
+        .addRelatedItems(Keys.VERSIONAMIENTO_CHANGELOG)
+        .addMoreReferences('https://www.freshconsulting.com/insights/blog/atomic-commits/', 'https://midu.dev/buenas-practicas-escribir-commits-git/')
+    ],
     [Keys.GIT_BRANCHS_STRATEGIES, new Referencia('https://www.virtusway.com/es/workflows-strategies-for-working-with-git.html', 'Estrategias de Ramificación', GIT_KEY, 'Ramificación', '2023/07/18', '2024/06/26')],
     [Keys.GIT_MONO_REPO, new Referencia('https://monorepo.tools/#understanding-monorepos', 'Mono Repo', GIT_KEY, 'Mono Repo', '2023/09/05')],
     [Keys.GIT_PULL_REQUESTS_TOXIC, new Referencia('https://devinterrupted.substack.com/p/the-11-types-of-toxic-pull-requests', 'Pull Requests Toxicos', GIT_KEY, 'Pull Requests Toxicos', '2023/09/17')],
