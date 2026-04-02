@@ -41,7 +41,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.EJECUCION_ASINCRONISMO;
+export const LAST_ITEM = Keys.VERSIONAMIENTO_DATABASE_VERSION_CONTROL;
 export const LAST_UPDATE = Keys.ARQUITECTURAS_HOW_TO_CHOOSE_IT;
 
 export const AGILES_KEY = 'Agiles';
@@ -1497,6 +1497,10 @@ export const VERSIONAMIENTO_REF = new Map<string, Referencia>([
     [Keys.VERSIONAMIENTO_CHANGELOG, new Referencia('https://keepachangelog.com/es-ES/1.1.0/', 'Changelog', VERSIONAMIENTO_KEY, 'Changelog', '', '2026/01/02')
         .addRelatedItems(Keys.CD_CI_DEPLOYMENT_PATTERNS, Keys.GIT_COMMITS_PRACTICES)
         .addMoreReferences('https://github.com/olivierlacan/keep-a-changelog/blob/main/CHANGELOG.md')
+    ],
+    [Keys.VERSIONAMIENTO_DATABASE_VERSION_CONTROL, new Referencia('https://blog.codinghorror.com/get-your-database-under-version-control/', 'Database version control', VERSIONAMIENTO_KEY, 'DB version control', '2026/04/01')
+        .addRelatedItems(Keys.CD_CI_DEPLOYMENT_PATTERNS, Keys.GIT_COMMITS_PRACTICES, Keys.TESTING_ADVANCED_ENVIRONMENT)
+        .addMoreReferences('https://medium.com/but-it-works-on-my-machine/flyway-vs-liquibase-with-spring-boot-which-one-to-choose-e4a410e3d365')
     ],
 ]);
 
