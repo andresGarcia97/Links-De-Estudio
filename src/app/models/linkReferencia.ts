@@ -41,7 +41,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.VERSIONAMIENTO_DATABASE_VERSION_CONTROL;
+export const LAST_ITEM = Keys.PERSISTENCY_ADVANCED_VERTICAL_PARTITIONING_AND_LOOK_UP_TABLE;
 export const LAST_UPDATE = Keys.GIT_COMMITS_PRACTICES;
 
 export const AGILES_KEY = 'Agiles';
@@ -1444,6 +1444,10 @@ export const PERSISTENCY_ADVANCED_REF = new Map<string, Referencia>([
     [Keys.PERSISTENCY_ADVANCED_LONG_TRANSACTIONS, new Referencia('https://www.linkedin.com/pulse/long-running-transactions-financial-systems-mario-kresnadi/', 'Transacciones largas & performance', PERSISTENCY_ADVANCED_KEY, 'Transacciones largas', '2026/03/01')
         .addRelatedItems(Keys.CD_CI_MONITORING_AND_ALERTS, Keys.NUBE_PACELC, Keys.PATRONES_SAGA, Keys.PEOPLE_POST_MORTEM)
     ],
+    [Keys.PERSISTENCY_ADVANCED_VERTICAL_PARTITIONING_AND_LOOK_UP_TABLE, new Referencia('https://algomaster.io/learn/system-design/vertical-partitioning', 'Particionamiento Vertical Vs Lookup tables', PERSISTENCY_ADVANCED_KEY, 'Lookup tables', '2026/04/02')
+        .addRelatedItems(Keys.HARDWARE_ESCALAMIENTO, Keys.VERSIONAMIENTO_DATABASE_VERSION_CONTROL)
+        .addMoreReferences('https://oracle-base.com/articles/misc/one-true-lookup-tables-otlt')
+    ]
 ]);
 
 export const UML_KEY = 'UML';

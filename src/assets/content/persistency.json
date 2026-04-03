@@ -154,7 +154,7 @@
     "- Estos niveles (Read Uncommitted, Read Committed, Repeatable Read, Serializable) balancean concurrencia vs consistencia mediante locks ",
     "",
     "<strong>Durabilidad:</strong> Toda transacción que se haya realizado debe ser perdurable en el tiempo, incluso ante fallos del sistema ",
-    "- Se garantiza con almacenamiento no volátil, write-ahead logging (WAL) y mecanismos de respaldo.} "
+    "- Se garantiza con almacenamiento no volátil, write-ahead logging (WAL) y mecanismos de respaldo."
   ],
   "indices": [
     "<strong>Indices:</strong> Es una manera de optimizar las consultas y mejorar la eficiencia de una BD, reduciendo el tiempo de espera y las lecturas del disco duro ",

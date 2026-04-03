@@ -335,6 +335,7 @@ export const PERSISTENCY_ADVANCED_UPSERT = 'upsert';
 export const PERSISTENCY_ADVANCED_MIGRATIONS = 'database-migration-patterns';
 export const PERSISTENCY_ADVANCED_LEDGER_DATABASE = 'ledger-database';
 export const PERSISTENCY_ADVANCED_LONG_TRANSACTIONS = 'long-transactions-performance';
+export const PERSISTENCY_ADVANCED_VERTICAL_PARTITIONING_AND_LOOK_UP_TABLE = 'vertical-partitioning-lookup-tables';
 export const REFACTORING_CLEAN_CODE = 'cleanCodeRefactoring';
 export const REFACTORING_ERRORS_ON_CLEAN_CODE = 'cleanCode-with-out-errors-on-application';
 export const REFACTORING_DEUDA_TECNICA = 'deudaTecnica';
