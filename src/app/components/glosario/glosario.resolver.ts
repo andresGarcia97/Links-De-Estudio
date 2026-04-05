@@ -10,6 +10,7 @@ const CONTENT_FILES: string[] = [
     Paths.HARDWARE_PATH.file,
     Paths.ANALISIS_DATA_PATH.file,
     Paths.PERSISTENCY_PATH.file,
+    Paths.PERSISTENCY_INTERMEDIATE_PATH.file,
     Paths.PERSISTENCY_ADVANCED_PATH.file,
     Paths.PARADIGMAS_PATH.file,
     Paths.ANALISIS_PATH.file,

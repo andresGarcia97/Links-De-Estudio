@@ -7,7 +7,7 @@ import {
   METODOLOGIAS_KEY, NEURO_MARKETING_KEY, NUBE_KEY, ANALISIS_DATA_KEY, PARADIGMAS_KEY, PATRONES_KEY, PEOPLE_KEY, POO_KEY,
   PRINCIPIOS_KEY, REFACTORING_KEY, REQUISITOS_KEY, SECURITY_KEY, SMELL_CODES_KEY, TESTING_ADVANCED_KEY, TESTING_KEY, UML_KEY,
   USER_HISTORIES_KEY, VERSIONAMIENTO_KEY, WEB_KEY, MICRO_SERVICES_KEY, SYSTEM_DESIGN_KEY, MICRO_SERVICES_ADVANCED_KEY,
-  OBSERVABILIDAD_KEY, EJECUCION_KEY
+  OBSERVABILIDAD_KEY, EJECUCION_KEY, PERSISTENCY_INTERMEDIATE_KEY
 } from 'src/app/models/linkReferencia';
 import { GlosarioComponent } from './components/glosario/glosario.component';
 import { HomeComponent } from './components/home/home.component';
@@ -48,6 +48,7 @@ const routes: Routes = [
   { path: 'compilacion', loadChildren: () => import('./components/compilacion/compilacion.module').then(m => m.CompilacionModule), title: COMPILACION_KEY },
   { path: 'ejecucion', loadChildren: () => import('./components/ejecucion/ejecucion.module').then(m => m.EjecucionModule), title: EJECUCION_KEY },
   { path: 'bases-de-datos', loadChildren: () => import('./components/sql-nosql/sql-nosql.module').then(m => m.SqlNoSqlModule), title: PERSISTENCY_KEY },
+  { path: 'bd-intermedio', loadChildren: () => import('./components/sql-nosql-intermediate/sql-nosql-intermediate.module').then(m => m.SqlNoSqlIntermediateModule), title: PERSISTENCY_INTERMEDIATE_KEY },
   { path: 'bd-avanzado', loadChildren: () => import('./components/sql-nosql-advanced/sql-nosql-advanced.module').then(m => m.SqlNoSqlAdvancedModule), title: PERSISTENCY_ADVANCED_KEY },
   { path: 'principios', loadChildren: () => import('./components/principios/principios.module').then(m => m.PrincipiosModule), title: PRINCIPIOS_KEY },
   { path: 'refactorizacion', loadChildren: () => import('./components/refactorizacion/refactorizacion.module').then(m => m.RefactorizacionModule), title: REFACTORING_KEY },
