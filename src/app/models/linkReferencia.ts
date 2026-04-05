@@ -42,7 +42,7 @@ export class LinkReferencia {
 }
 
 export const LAST_ITEM = Keys.PERSISTENCY_ADVANCED_VERTICAL_PARTITIONING_AND_LOOK_UP_TABLE;
-export const LAST_UPDATE = Keys.GIT_COMMITS_PRACTICES;
+export const LAST_UPDATE = Keys.MICROSERVICES_ADVANCED_ANTI_PATTERNS;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -1715,8 +1715,9 @@ export const MICRO_SERVICES_ADVANCED_REF = new Map<string, Referencia>([
     [Keys.MICROSERVICES_ADVANCED_BY_DEFAULT, new Referencia('https://levelup.gitconnected.com/why-you-should-never-default-to-microservices-c952903fbcb6', 'Microservicios por defecto', MICRO_SERVICES_ADVANCED_KEY, '¿ Usarlos por defecto ?', '2024/10/12')
         .addRelatedItems(Keys.TESTING_MOCKS, Keys.APIS_REST_VS_MESSAGING, Keys.ARQUITECTURAS_MONOLITOS)
     ],
-    [Keys.MICROSERVICES_ADVANCED_ANTI_PATTERNS, new Referencia('https://blog.bitsrc.io/10-microservice-anti-patterns-278bcb7f385d', 'Antipatrones & Microservicios', MICRO_SERVICES_ADVANCED_KEY, 'Antipatrones', '2025/01/19')
+    [Keys.MICROSERVICES_ADVANCED_ANTI_PATTERNS, new Referencia('https://blog.bitsrc.io/10-microservice-anti-patterns-278bcb7f385d', 'Antipatrones & Microservicios', MICRO_SERVICES_ADVANCED_KEY, 'Antipatrones', '2025/01/19', '2026/04/04')
         .addRelatedItems(Keys.SYSTEM_DESIGN_SINGLE_POINT_OF_FAILURE, Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION, Keys.OBSERVABILIDAD_OBSERVABILITY)
+        .addMoreReferences('https://sacavix.substack.com/p/los-7-asesinos-de-la-arquitectura')
     ],
     [Keys.MICROSERVICES_ADVANCED_PRODUCER_CONSUMER_PROBLEM, new Referencia('https://www.baeldung.com/java-producer-consumer-problem', 'Problema Productor Consumidor', MICRO_SERVICES_ADVANCED_KEY, 'Productor-Consumidor', '2025/02/15')
         .addRelatedItems(Keys.SYSTEM_DESIGN_QUEUES, Keys.EJECUCION_CONCURRENCY_AND_PARALLELISM, Keys.EJECUCION_PROCESS_AND_THREADS)
