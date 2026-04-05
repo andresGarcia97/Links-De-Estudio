@@ -47,10 +47,10 @@
     "<strong>Metricas del caché</strong>",
     "<strong>- Time To Live (TTL):</strong> Duración de los objetos en la memoria del cache y sean borrados por expiración ",
     "<strong>- Hit Rate:</strong> Porcentaje de solicitudes atendidas satisfactoriamente, entre mayor sea mejor ",
-    "<strong>- Miss Rate:</strong> complementa el Hit Rate y representan las solicitudes que van directamente a la BD ",
+    "<strong>- Miss Rate:</strong> complementa el Hit Rate y representan las solicitudes que van directamente a la DB ",
     "<strong>- Eviction Rate:</strong> Frecuencia con que los objetos se borran del cache, una tasa alta es señal de politicas insuficientes ",
     "",
-    "<strong>Uso de una BD</strong>",
+    "<strong>Uso de una DB</strong>",
     "<strong>- Conexiones activas:</strong> Un pool de conexiones demasiado alto puede resultar en una saturación y un aumento de la latencia ",
     "<strong>- Uso de CPU & Memoria:</strong> Si el uso se mantiene alto de manera constante indica una falta de optimización ",
     "<strong>- Uso de Disco:</strong> Los datos consumen espacio y este no es infinito, si se agota seria un error fatal "

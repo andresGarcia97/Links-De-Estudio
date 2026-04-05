@@ -30,7 +30,7 @@
   "arquitecturasConceptos": [
     "- Esto puede ser ambiguo, y se puede referir a multiples cosas, tales como: ",
     "<strong> Detalles de la implementación:</strong> Estructura de las carpetas y localización de componentes ",
-    "<strong> Diseño de la implementación:</strong>   Decisiciones como, Server side ó Client side rendering, BD SQL ó NoSQL, entre otras ",
+    "<strong> Diseño de la implementación:</strong>   Decisiciones como, Server side ó Client side rendering, DB SQL ó NoSQL, entre otras ",
     "<strong> Tecnologias:</strong>                   Rest ó GraphQl, Node con Express ó Java con Spring, y muchas más opciones ",
     "<strong> Diseño del sistema:</strong>            Monolito ó Micro servicios ",
     "<strong> Infraestructura:</strong>               Un host autoadministrado ó un Proveedeor en la nube ",
@@ -94,7 +94,7 @@
     "- Son independientes de los frameworks en la mayor medida posible, ya que estos son herramientas y no obligaciones ",
     "- La lógica de la aplicación es testeable y no depende de otras partes para esto ",
     "- La interfaz grafica depende de nuestra aplicación, no al contrario, los cambios en esta solo son relevantes para los usuarios ",
-    "- La capa de persistencia, es agnostica, por lo que nuestra aplicación es minimamente afectada por la BD que este usando ",
+    "- La capa de persistencia, es agnostica, por lo que nuestra aplicación es minimamente afectada por la DB que este usando ",
     "- Los cambios externos, no deben afectar a los componentes internos ",
     "",
     "<strong>Definición de fronteras</strong>",
@@ -386,7 +386,7 @@
     " - donde la salida de una pieza, pueda ser la entrada de otro elemento, y asi continuar la cadena ",
     "",
     "<strong>Arquitecturas centradas en datos:</strong>",
-    "&bull; Principios:   Todas las interacciones ocurren a travez de la BD, la cual es el centro",
+    "&bull; Principios:   Todas las interacciones ocurren a travez de la DB, la cual es el centro",
     "&bull; Fortalezas:   Proporciona coherencia, integridad y fiabilidad de los datos",
     "&bull; Debilidades:  Puede crear cuellos de botella, afectando la escalabilidad",
     "&bull; Usos:         Aplicaciones empresariales, Sistemas CRM y ERP",
@@ -394,7 +394,7 @@
     "",
     "<strong>Patron CQRS:</strong> Separa las operaciones de lectura de las de escritura, ideal en casos, donde la cantidad de operaciones es bastante dispareja ",
     "<strong>Patron Event-Sourcing:</strong> Modela los cambios de estado, como una secuencia inmutable o registro de eventos, para su procesamiento ",
-    "<strong>Patron Kappa:</strong> No utiliza una BD como un almacenamiento convenciona, si no que lo usa para mantener un registro inmutable ",
+    "<strong>Patron Kappa:</strong> No utiliza una DB como un almacenamiento convencional, si no que lo usa para mantener un registro inmutable ",
     "<strong>Patron Lambda:</strong> Procesamiento por lotes, y secuencias para manejar grandes cantidades de datos, como en el BigData "
   ],
   "monolitosModulares": [

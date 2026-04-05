@@ -390,7 +390,7 @@
     "<strong>- try... catch:</strong> Indica la captura de posibles excepciones, además de darle algun posible manejo ",
     "<strong>- try... finally:</strong> Independientemente de como se ejecute el bloque encapsulado por el try, siempre se hara la acción dentro de finally ",
     "<strong>- try... catch... finally:</strong> El mismo comportamiento anterior, agregando la posibilidad de hacer algo ante el error capturado ",
-    "<strong>- try... with... resources:</strong> Usado cuando es necesario cerrar recursos despues de su uso, como Streams de I/O o Conexiones con la BD",
+    "<strong>- try... with... resources:</strong> Usado cuando es necesario cerrar recursos despues de su uso, como Streams de I/O o Conexiones con la DB",
     "",
     "<strong>Lanzamiento y Retransmision:</strong>",
     "<strong>- throws:</strong> Declara que el metodo lanzara una excepción y quien lo use deba capturarla o continuar lanzandola en cadena ",

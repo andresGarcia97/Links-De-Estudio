@@ -193,12 +193,12 @@
     " ----------------------------------------------------------------------------------------------------------------                            ",
     " &brvbar; Enfoque    &brvbar; Detalles especificos de la implementacion &brvbar; Arquitectura y Diseño general                       &brvbar;",
     " &brvbar; Cobertura  &brvbar; Componentes / Modulos                     &brvbar; Componentes Principales                             &brvbar;",
-    " &brvbar; Artefactos &brvbar; Diagramas de clase, Esquemas de BD(ERD)   &brvbar; Diagramas de arquitectura, Diagramas de componentes &brvbar;",
+    " &brvbar; Artefactos &brvbar; Diagramas de clase, Esquemas de DB(ERD)   &brvbar; Diagramas de arquitectura, Diagramas de componentes &brvbar;",
     " &brvbar;            &brvbar;  Modelos, Algoritmos                      &brvbar;  FLujo de datos, definiciones e interfaces          &brvbar;",
     " &brvbar; Entradas   &brvbar; Diseño de Alto Nivel                      &brvbar; Requisitos, Limitaciones, Objetivos de negocio      &brvbar;",
     " &brvbar; Salidas    &brvbar; Codigo base                               &brvbar; Plan de diseño, plan de pruebas                     &brvbar;",
     " &brvbar; Etapas     &brvbar; Durante la codificación                   &brvbar; Al principio del ciclo de vida del software         &brvbar;",
-    " &brvbar; Ejemplos   &brvbar; Normalización de BD, Domain Driven Design &brvbar; Estilos arquitectonicos, stack de tecnologias       &brvbar;"
+    " &brvbar; Ejemplos   &brvbar; Normalización de DB, Domain Driven Design &brvbar; Estilos arquitectonicos, stack de tecnologias       &brvbar;"
   ],
   "typeEvents": [
     "<strong>Event-Driven Architecture:</strong> Es una de las arquitecturas más comunes en microservicios debido a su flexibilidad ",

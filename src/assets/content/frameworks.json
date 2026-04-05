@@ -190,7 +190,7 @@
     "<strong>- Nota</strong> Es importante que no sea privado ni sea invocado desde la misma clase, o el proxy no podrá interceptarlo ",
     "- El proxy inicia una transacción de Spring a través de <em>PlatformTransactionManager</em>",
     "- El proxy delega la ejecución al método real ",
-    "- En caso de éxito confirma (commit) las operaciones con la BD, o en caso de excepciones las revierte (rollback) ",
+    "- En caso de éxito confirma (commit) las operaciones con la DB, o en caso de excepciones las revierte (rollback) ",
     "<strong>- Nota</strong> De manera predeterminada solo se revierten las excepciones no controladas <em>RuntimeException</em> y sus subclases",
     "",
     "<strong>Propagación:</strong> Define como se comporta una transacción, cuando se llama a un método transaccional dentro de otro que tambien lo es ",
