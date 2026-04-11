@@ -274,9 +274,22 @@
     "- EL software que se esta creando, algun dia sera descontinuado o dejara de funcionar, por eso cree incrementos pequeños y entregables "
   ],
   "codeMaintainer": [
-    "- El mantenimiento del código es una fase fundamental de cualquier aplicación y a menudo también una de las más dificiles ",
-    "- A manera de adagio popular, codifique siempre como si la siguiente persona fuera un psicopata violento que sabe donde vive ",
-    "- Intente dejar un código tan entendible que cualquier persona con o sin experiencia pueda comprenderlo y hasta disfrutar de realizar cualquier cambio ",
+    "- El valor de un programador no solo se mide por la complejidad de los problemas que logra resolver, tambien importa la forma en que lo hace ",
+    "- El mantenimiento del código es una fase fundamental de cualquier aplicación y a menudo también una de las más largas y difíciles ",
+    "- <em>Brian Kernighan</em> uno de los contribuidores de Unix expresó lo siguiente en 1978 ",
+    "- <em>Todo el mundo sabe que la depuración es el doble de difícil que la escritura de un programa. Si cuando lo escribes agotas toda tu ingeniosidad </em>",
+    " - ¿Cómo vas a depurarlo después?",
+    "",
+    "- El software casi nunca es una obra solitaria, es un elemento vivo que debe sobrevivir el paso del tiempo, personas, herramientas y contextos cambiantes ",
+    "- Un código brillante que solo quien lo escribió puede mantener, es un pasivo, no un producto de ingeniería ",
+    "- El software exitoso suele pasar más del 80% de su vida en mantenimiento y evolución, y no necesariamente por personas que lo desarrollaron ",
+    "- La opacidad genera costos, a manera de adagio popular, codifique siempre como si la siguiente persona fuera un psicopata violento que sabe donde usted vive ",
+    "",
+    "- Actualmente con el auge de la <strong>IA</strong> la generación de código ha reducido su costo de elaboración de manera exponencial, ",
+    " - desplazando el valor del ingeniero hacia capacidades de más alto nivel, que requieren de una mayor abstracción, como validar, revisar e integrar ",
+    "- Si las soluciones son demasiado inteligentes pero opacas y el humano no es capaz de descifrarlas, ",
+    " - la velocidad inicial queda anulada por problemas de depuración y mantenimiento que se generan en el futuro ",
+    "- Intente dejar un código tan legible que cualquier persona con o sin experiencia pueda comprenderlo y hasta disfrutar de realizar cualquier cambio ",
     "- Esto no solo evita costos y reduce el tiempo, también evita errores debido a un mal entendimiento de la aplicación "
   ],
   "programing-lessons-tech-lead": [

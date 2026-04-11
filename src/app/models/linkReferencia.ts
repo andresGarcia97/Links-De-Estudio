@@ -41,7 +41,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.PERSISTENCY_ADVANCED_VERTICAL_PARTITIONING_AND_LOOK_UP_TABLE;
+export const LAST_ITEM = Keys.CONOCIMIENTOS_EMPIRICOS_CODE_MAINTAINER;
 export const LAST_UPDATE = Keys.MICROSERVICES_ADVANCED_ANTI_PATTERNS;
 
 export const AGILES_KEY = 'Agiles';
@@ -442,8 +442,8 @@ export const CONOCIMIENTO_EMPIRICO = new Map<string, Referencia>([
     [Keys.CONOCIMIENTOS_EMPIRICOS_PAIR_PROGRAMMING, new Referencia('https://stackoverflow.blog/2024/04/03/developers-with-ai-assistants-need-to-follow-the-pair-programming-model', 'Pair Programing con IA', CONOCIMIENTO_EMPIRICO_KEY, 'Pair Programing', '2024/05/26')],
     [Keys.CONOCIMIENTOS_EMPIRICOS_STAGES_COMPETENCE_MODEL, new Referencia('https://www.innovationtraining.org/the-four-stages-of-competence-model/', 'Etapas del modelo de competencia', CONOCIMIENTO_EMPIRICO_KEY, 'Modelo de competencia', '2024/09/09')],
     [Keys.CONOCIMIENTOS_EMPIRICOS_EXPIERENCE_LESSONS, new Referencia('https://dev.jimgrey.net/2024/07/03/lessons-learned-in-35-years-of-making-software/', 'Experiencia', CONOCIMIENTO_EMPIRICO_KEY, 'Experiencia', '2024/10/31')],
-    [Keys.CONOCIMIENTOS_EMPIRICOS_CODE_MAINTAINER, new Referencia('https://java-design-patterns.com/es/principles/#code-for-the-maintainer', 'Mantenimiento de codigo', CONOCIMIENTO_EMPIRICO_KEY, 'Mantenimiento', '2025/07/08')
-        .addRelatedItems(Keys.WEB_MENOR_SORPRESA, Keys.REFACTORING_CLEAN_CODE, Keys.COMPILACION_OFUSCACION)
+    [Keys.CONOCIMIENTOS_EMPIRICOS_CODE_MAINTAINER, new Referencia('https://www.danieleteti.it/post/the-art-of-invisible-code-es/', 'Mantenimiento de codigo', CONOCIMIENTO_EMPIRICO_KEY, 'Mantenimiento', '2025/07/08', '2026/04/10')
+        .addRelatedItems(Keys.WEB_MENOR_SORPRESA, Keys.REFACTORING_CLEAN_CODE, Keys.COMPILACION_OFUSCACION, Keys.LEYES_HYRUM)
     ],
     [Keys.CONOCIMIENTOS_EMPIRICOS_LESSONS_AND_LEADER_TECHNICAL, new Referencia('https://medium.com/javarevisited/5-programming-lessons-i-wish-someone-had-beaten-into-my-head-early-on-af88960ac480', 'Lecciones técnicas y de liderazgo', CONOCIMIENTO_EMPIRICO_KEY, 'Lecciones & Liderazgo', '2025/10/04')
         .addRelatedItems(Keys.REFACTORING_CLEAN_CODE, Keys.POO_ABSTRACTIONS, Keys.PRINCIPIOS_YAGNI, Keys.POO_HERENCIA_COMPOSICION, Keys.REFACTORING_GOOD_AND_BAD_PRACTICES, Keys.PRINCIPIOS_KISS, Keys.MALAS_PRACTICAS_CONTRA_CALIDAD, Keys.PEOPLE_LANGUAGE_UBICUOS, Keys.PEOPLE_SINDROMES_LABORALES, Keys.CALIDAD_CODE_REVIEWS, Keys.PERSISTENCY_INTERMEDIATE_ORM, Keys.PERSISTENCY_INTERMEDIATE_N_1_SELECTS)
@@ -456,7 +456,9 @@ export const LEYES_KEY = 'Leyes';
 export const LEYES_REF = new Map<string, Referencia>([
     [Keys.LEYES_SILVER_BULLETS, new Referencia('https://gist.github.com/esparta/582e43af7b803e0aaf69', 'Balas de Plata', LEYES_KEY, 'Balas de Plata', '', '2024/07/14')],
     [Keys.LEYES_LEHMAN, new Referencia('https://medium.com/@cartontabla/las-leyes-de-lehman-b57c623c3404', 'Leyes de Lehman - Evolución del software', LEYES_KEY, 'Leyes de Lehman', '', '2024/09/22')],
-    [Keys.LEYES_CONWAY, new Referencia('https://www.javiergarzas.com/2015/06/conway.html', 'Ley de Conway', LEYES_KEY, 'Ley de Conway').addRelatedItems(Keys.PEOPLE_LANGUAGE_UBICUOS)],
+    [Keys.LEYES_CONWAY, new Referencia('https://www.javiergarzas.com/2015/06/conway.html', 'Ley de Conway', LEYES_KEY, 'Ley de Conway')
+        .addRelatedItems(Keys.PEOPLE_LANGUAGE_UBICUOS)
+    ],
     [Keys.LEYES_MURPHY, new Referencia('https://www.caracteristicas.co/ley-de-murphy/', 'Ley de Murphy', LEYES_KEY, 'Ley de Murphy')],
     [Keys.LEYES_PENDULO, new Referencia('http://www.grupocrece.es/blog/Psicolog%C3%ADala-ley-del-pndulo-en-psicologa', 'Ley del pendulo', LEYES_KEY, 'Ley del pendulo')],
     [Keys.LEYES_HYRUM, new Referencia('https://thebootstrappedfounder.com/hyrums-law/', 'Ley de Hyrum', LEYES_KEY, 'Ley de Hyrum')],
@@ -467,11 +469,17 @@ export const LEYES_REF = new Map<string, Referencia>([
     [Keys.LEYES_MOORE_AND_WIRTH, new Referencia('https://blogs.uoc.edu/informatica/la-ley-de-wirth-la-ley-de-moore-inversa-del-software/', 'Ley de Moore & Ley de Wirth', LEYES_KEY, 'Moore & Wirth', '2023/07/04')],
     [Keys.LEYES_AMDAHL, new Referencia('https://www.techtarget.com/whatis/definition/Amdahls-law', 'Ley de Amdahls', LEYES_KEY, 'Ley de Amdahls', '2023/08/25')],
     [Keys.LEYES_GALL, new Referencia('https://deviq.com/laws/galls-law', 'Ley de Gall', LEYES_KEY, 'Ley de Gall', '2024/05/13')],
-    [Keys.LEYES_KIDLIN, new Referencia('https://www.linkedin.com/pulse/5-leyes-famosas-aplicadas-en-la-pmo-lourdes-medina-pfmp-pmp-pmo-cp-zv4ke/', 'Ley de Kidlin', LEYES_KEY, 'Ley de Kidlin', '2024/07/14').addRelatedItems(Keys.AGILES_DEMING)],
+    [Keys.LEYES_KIDLIN, new Referencia('https://www.linkedin.com/pulse/5-leyes-famosas-aplicadas-en-la-pmo-lourdes-medina-pfmp-pmp-pmo-cp-zv4ke/', 'Ley de Kidlin', LEYES_KEY, 'Ley de Kidlin', '2024/07/14')
+        .addRelatedItems(Keys.AGILES_DEMING)
+    ],
     [Keys.LEYES_GOODHARTS, new Referencia('https://levelup.gitconnected.com/9-laws-that-every-software-developer-should-know-a5518bfef022', 'Ley de Goodhart’s', LEYES_KEY, 'Ley de Goodhart’s', '2024/11/08')],
     [Keys.LEYES_LINUS, new Referencia('https://levelup.gitconnected.com/9-laws-that-every-software-developer-should-know-a5518bfef022', 'Ley de Linus', LEYES_KEY, 'Ley de Linus', '2024/11/09')],
-    [Keys.LEYES_HOFSTADTER, new Referencia('https://levelup.gitconnected.com/9-laws-that-every-software-developer-should-know-a5518bfef022', 'Ley de Hofstadter', LEYES_KEY, 'Ley de Hofstadter', '2024/11/10').addRelatedItems(Keys.PEOPLE_GESTION_EXPECTATIVAS)],
-    [Keys.LEYES_LITTLE, new Referencia('https://safetyculture.com/es/temas/ley-de-little/', 'Ley de Little', LEYES_KEY, 'Ley de Little', '2025/08/04').addRelatedItems(Keys.SYSTEM_DESIGN_QUEUES, Keys.METODOLOGIAS_KANBAN, Keys.AGILES_ESTIMATION_LAWS)],
+    [Keys.LEYES_HOFSTADTER, new Referencia('https://levelup.gitconnected.com/9-laws-that-every-software-developer-should-know-a5518bfef022', 'Ley de Hofstadter', LEYES_KEY, 'Ley de Hofstadter', '2024/11/10')
+        .addRelatedItems(Keys.PEOPLE_GESTION_EXPECTATIVAS)
+    ],
+    [Keys.LEYES_LITTLE, new Referencia('https://safetyculture.com/es/temas/ley-de-little/', 'Ley de Little', LEYES_KEY, 'Ley de Little', '2025/08/04')
+        .addRelatedItems(Keys.SYSTEM_DESIGN_QUEUES, Keys.METODOLOGIAS_KANBAN, Keys.AGILES_ESTIMATION_LAWS)
+    ],
 ]);
 
 export const CONTENEDORES_KEY = 'Contenedores';
