@@ -494,6 +494,7 @@ export const EJECUCION_CACHE_AND_TYPES = 'cacheReadWriteStrategy';
 export const EJECUCION_DEAD_LOCKS = 'deadLocks-bloqueos';
 export const EJECUCION_MEMORY_MANAGEMENT = 'memoryManagement';
 export const EJECUCION_ASINCRONISMO = 'asicronismo';
+export const EJECUCION_PREMATURE_OPTIMIZATION = 'premature-optimization';
 export const TESTING_PRINCIPLES = 'testingPrinciples';
 export const TESTING_MANIFIESTO = 'testingManifiesto';
 export const TESTING_TYPES = 'testingTypes';

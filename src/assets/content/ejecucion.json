@@ -1,24 +1,24 @@
 {
   "reflexion": [
-    "- Capacidad de un codigo de observarse asi mismo y cambiar su estructura a alto nivel o su comportamiento en tiempo de ejecución ",
+    "- Capacidad de un código de observarse asi mismo y cambiar su estructura a alto nivel o su comportamiento en tiempo de ejecución ",
     "- Puede ser dinamica o estatica, y es más comun en los lenguajes que usan maquinas virtuales para ejecutarse, como JAVA ",
-    "- Cuando el codigo fuente se compila normalmente pierde su estructura al pasar a un lenguaje de un nivel más bajo ",
+    "- Cuando el código fuente se compila normalmente pierde su estructura al pasar a un lenguaje de un nivel más bajo ",
     "- Para que este comportamiento se de, esta estructura se debe preservar como metadatos, los cuales puedan manipularse ",
     "",
     "<strong>Permite realizar acciones como:</strong>",
-    " - Descubrir y modificar secciones de codigo en tiempo de ejecución ",
+    " - Descubrir y modificar secciones de código en tiempo de ejecución ",
     " - Evaluar una cadena como si fuera una sentencia de código fuente en tiempo de ejecución ",
     " - Flexibilizar el tipado en lenguajes fuertemente tipados ",
     " - Invocar metodos y constructores de objetos de manera dinamica, modificar y/o obtener información de las clases ",
     "",
     "<strong>Aplicaciones:</strong>",
     " - Multiples <em>ORM</em> como Hibernate usan anotaciones para asignar comportamientos dinamicamente a los objetos",
-    " - Inyección de dependencias, usada por Spring y otros frameworks para inyectar codigo en tiempo de ejecución ",
+    " - Inyección de dependencias, usada por Spring y otros frameworks para inyectar código en tiempo de ejecución ",
     " - Testing, Marcos de pruebas como Junit y Mockito, que permiten el descubrimiento, suplantación y verificación de objetos ",
     " - Serialización/Deserialización, donde bibliotecas como Jackson y Gson convierten objetos a Json o Xml y viceversa ",
     "",
     "<strong>Contras:</strong>",
-    " - Perdidas de rendimiento debido a la flexibilidad requerida para afectar el codigo de manera dinamica",
+    " - Perdidas de rendimiento debido a la flexibilidad requerida para afectar el código de manera dinamica",
     " - Preocupaciones de seguridad, ya que omite mecanismos de control que se dan de manera normal ",
     " - Problemas en tiempo de ejecución, ya que puede afectar o corromper los metadatos necesarios para que el programa funcione "
   ],
@@ -67,7 +67,7 @@
     "- El paralelismo puede conllevar problemas como <em>corrupción de la memoria</em> o <em>false sharing</em>"
   ],
   "recursividad": [
-    "- Es una tecnica de programación para ejecutar codigo un cierto numero de veces ",
+    "- Es una tecnica de programación para ejecutar código un cierto numero de veces ",
     "- Esto es posible a la caracteristica de cualquier lenguaje de permitir que los metodos se llamen a si mismas ",
     "- La recursividad tiene que tener un condición de salida, de lo contrario se convertira, en una pila de llamados infinita a si mismo ",
     "- Es una alternativa y en ocasiones más eficiente de realizar tareas que requieren ser repetitivas ",
@@ -132,7 +132,7 @@
     "",
     "<strong>Ciclo de vida:</strong>",
     "&bull; <strong>Creación y Configuración:</strong> Se define la bandera, los valores que tendra y su gestión ",
-    "&bull; <strong>Implementación:</strong> Se libera el codigo a producción ",
+    "&bull; <strong>Implementación:</strong> Se libera el código a producción ",
     "&bull; <strong>Supervisión:</strong> Se realizan acciones de seguimiento como participación de usuarios, tasa de errores, recopilación de comentarios, etc",
     "&bull; <strong>Eliminación:</strong> Cuando la bandera ha dejado de ser relevante y su ambiente se encuentra estable, dejarla solo incrementa la deuda tecnica "
   ],
@@ -175,13 +175,13 @@
     "- Finalize los String en Null, una vez se dejen de usar, para evitar fugas de memoria ",
     "- Escoja correctamente los tipos de variables, para evitar desbordamientos y conversiones innecesarias ",
     "",
-    "- En lenguajes seguros, tambien se recomienda utilizar metodos formales para comprobar posibles vulnerabilidades, como el analisis de codigo estatico ",
+    "- En lenguajes seguros, tambien se recomienda utilizar metodos formales para comprobar posibles vulnerabilidades, como el analisis de código estatico ",
     " - y pruebas basadas en afirmaciones, que solo son correctas si no hay errores en el software "
   ],
   "profiling": [
     "- Las aplicaciones pueden fallar y tener errores debido a problemas de falta de memoria, y para encontrarlos suelen haber herramientas especificas ",
     "- Un perfilador es una herramienta para medir y examinar el rendimiento de las aplicaciones, no solo de Java ",
-    "- Mediante la verificación de la construcción y operación del codigo de bytes a nivel de Java en la JVM",
+    "- Mediante la verificación de la construcción y operación del código de bytes a nivel de Java en la JVM",
     "",
     "- Este recopila datos de la ejecución del programa <strong>como:</strong>",
     "&bull; Tiempo de ejecución de las funciones   &bull; Frecuencia de los llamados",
@@ -190,12 +190,12 @@
     "",
     "<strong>Beneficios:</strong>",
     "- Ayuda a identificar cuellos de botella",
-    "- Permite identificar secciones de codigo con retrasos",
+    "- Permite identificar secciones de código con retrasos",
     "- Analiza el consumo de recursos e identificar lugares que se puedan optimizar ",
     "",
     "<strong>Tipos:</strong>",
     "<strong>- De Muestreo:</strong> Toman periodicamente instantaneas del programa en ejecución, y analizan la pila de llamados, para identificar puntos de acceso",
-    "<strong>- De Instrumentación:</strong> Modifican el codigo durante la ejecución, para recopilar datos más detallados acerca del rendimiento"
+    "<strong>- De Instrumentación:</strong> Modifican el código durante la ejecución, para recopilar datos más detallados acerca del rendimiento"
   ],
   "blockingAndNoBlocking": [
     "- Son 2 maneras diferentes de como el Sistema Operativo para manejar operaciones de <strong>I/O</strong>",
@@ -205,7 +205,7 @@
     "- En cambios las llamadas sin bloqueo(asincronas) no bloquean el hilo ni esperan que sucedan los procesos, ",
     " - estas retornan inmediatamente cuando finalizan, sin tener efecto en lo que sucede en otros subprocesos",
     "",
-    "- La diferencia principal entre estos 2 tipos de operaciones es como se comporta el codigo durante la operación sin bloqueo,",
+    "- La diferencia principal entre estos 2 tipos de operaciones es como se comporta el código durante la operación sin bloqueo,",
     " - la principal ventaja es que el usuario puede continuar con otras tareas, sin tener que esperar a que finalize",
     "",
     "- Las operaciones asincronas son más complicadas de escribir ya que hay que tener en cuenta posibles efectos segundarios,",
@@ -289,10 +289,10 @@
     "- Ya que los datos se crean de manera constante la recolección de basura suele ser más agresiva ",
     "",
     "<strong>Buenas practicas</strong>",
-    "&bull; Comprender el lenguaje y su funcionamiento interno hara que piense en la gestión de la memoria al escribir el codigo ",
+    "&bull; Comprender el lenguaje y su funcionamiento interno hara que piense en la gestión de la memoria al escribir el código ",
     "&bull; Perfile la aplicación con el fin de realizar mejoras de rendimiento y capturar posibles fugas de memoria ",
     "&bull; Evite asignaciones y desasignaciones innecesarias, no deje que todo el trabajo recaiga en el Garbage collector ",
-    "&bull; Mantenga el codigo actualizado, las dependencias y las formas de manejar la memoria mejoran con el tiempo "
+    "&bull; Mantenga el código actualizado, las dependencias y las formas de manejar la memoria mejoran con el tiempo "
   ],
   "asicronismo": [
     "- El asincronismo suele ser usado a la par con la concurrencia y el paralelismo, pero los 3 conceptos significan cosas diferentes ",
@@ -320,5 +320,16 @@
     "",
     "- ¿ Qué admite tu entorno de ejecución ? Cada lenguaje ha sido diseñado para un propósito general y no siempre es compatible ",
     "- Ruby limitaba el paralelismo por su GVL hasta Ruby 3.0; Node.js es monohilo y asíncrono por diseño; Go fue diseñado para la concurrencia mediante goroutines "
+  ],
+  "premature-optimization": [
+    "- El rendimiento es importante, pero ¿debe ser siempre la prioridad? ¿qué pasa cuando las optimizaciones generan un código menos legible?",
+    "- <strong>Donald Knuth</strong> autor de <em>The Art of Computer Programming</em> dijo: <em>Los programadores pierden muchísimo tiempo pensando o </em>",
+    " - <em>preocupándose por la velocidad de las partes no críticas de sus programas, y estos intentos de eficiencia tienen un fuerte impacto negativo </em>",
+    " - <em>en la depuración y el mantenimiento. Deberíamos olvidarnos de las pequeñas mejoras de eficiencia, digamos el 97% del tiempo: </em>",
+    " - <em>la optimización prematura es la raíz de todos los males. Sin embargo, no debemos desaprovechar las oportunidades que se nos presentan en ese 3% crítico </em>",
+    "",
+    "- La frase se popularizó de manera incompleta hasta la versión compacta que conocemos hoy en día <strong>La optimización prematura es la raíz de todos los males</strong> ",
+    "- El mayor problema de una optimización prematura, es sacrificar legibilidad y eso puede ocultar errores o comportamientos inesperados, ",
+    " - sin embargo es diferente de optimizaciones obvias que sí aportan valor, un valor tangible y previamente respaldado por metricas "
   ]
 }

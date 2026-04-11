@@ -41,8 +41,8 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.CONOCIMIENTOS_EMPIRICOS_CODE_MAINTAINER;
-export const LAST_UPDATE = Keys.MICROSERVICES_ADVANCED_ANTI_PATTERNS;
+export const LAST_ITEM = Keys.EJECUCION_PREMATURE_OPTIMIZATION;
+export const LAST_UPDATE = Keys.CONOCIMIENTOS_EMPIRICOS_CODE_MAINTAINER;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -409,6 +409,10 @@ export const EJECUCION_REF = new Map<string, Referencia>([
     ],
     [Keys.EJECUCION_ASINCRONISMO, new Referencia('https://code.likeagirl.io/concurrency-parallelism-async-47312e0be553', 'Asincronismo', EJECUCION_KEY, 'Asincronismo', '2026/03/30')
         .addRelatedItems(Keys.HARDWARE_LAWS_SCALABILITY, Keys.MALAS_PRACTICAS_CALLBACK_HELL, Keys.HARDWARE_IO_BOUND_CPU_BOUND, Keys.POO_INMUTABILITY, Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS)
+    ],
+    [Keys.EJECUCION_PREMATURE_OPTIMIZATION, new Referencia('https://java-design-patterns.com/es/principles/#avoid-premature-optimization', 'Optimización prematura', EJECUCION_KEY, 'Optimización prematura', '2026/04/10')
+        .addRelatedItems(Keys.HARDWARE_LAWS_SCALABILITY, Keys.REQUISITOS_PRAGMATIC_ENGINEER, Keys.PRINCIPIOS_STUPID)
+        .addMoreReferences('https://softwareengineering.stackexchange.com/questions/99445/is-micro-optimisation-important-when-coding', 'https://softwareengineering.stackexchange.com/questions/80084/is-premature-optimization-really-the-root-of-all-evil')
     ]
 ]);
 
