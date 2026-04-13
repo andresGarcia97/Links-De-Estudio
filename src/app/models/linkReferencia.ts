@@ -7,7 +7,7 @@ export class LinkReferencia {
         ...AGILES_REF,           ...CONTAINERS,               ...ANALISIS_REF,
         ...ARQUITECTURAS_REF,    ...BUENAS_PRACTICAS_REF,     ...CALIDAD_REF,
         ...COMPILACION_REF,      ...CONOCIMIENTO_EMPIRICO,    ...ESTRATEGIAS_DESARROLLO_REF,
-        ...FRAMEWORKS_REF,       ...GIT_REF,                  ...USER_HISTORIES,
+        ...FRAMEWORKS_REF,       ...PATRONES_ADVANCED_REF,    ...USER_HISTORIES,
         ...MALAS_PRACTICAS_REF,  ...META_CARATERISTICAS_REF,  ...META_ESTRUCTURAS_REF,
         ...METODOLOGIAS_REF,     ...NUBE_REF,                 ...ANALISIS_DATA_REF,
         ...PARADIGMAS_REF,       ...PATRONES_REF,             ...PEOPLE_REF,
@@ -18,7 +18,8 @@ export class LinkReferencia {
         ...WEB_REF,              ...LEYES_REF,                ...NEURO_MARKETING_REF,
         ...CI_CD_REF,            ...APIS_REF,                 ...PERSISTENCY_ADVANCED_REF,
         ...MICRO_SERVICES_REF,   ...SYSTEM_DESIGN_REF,        ...MICRO_SERVICES_ADVANCED_REF,
-        ...OBSERVABILIDAD_REF,   ...EJECUCION_REF,            ...PERSISTENCY_INTERMEDIATE_REF
+        ...OBSERVABILIDAD_REF,   ...EJECUCION_REF,            ...PERSISTENCY_INTERMEDIATE_REF,
+        ...GIT_REF
     ]);
 
     public routesAndSections: Map<string, string> = new Map([
@@ -30,13 +31,14 @@ export class LinkReferencia {
         [LEYES_KEY, 'leyes'],           [CONTENEDORES_KEY, 'contenedores'],     [CI_CD_KEY, 'ci-cd-infraestructura'],
         [POO_KEY, 'poo'],               [FRAMEWORKS_KEY, 'frameworks'],         [NEURO_MARKETING_KEY, 'neuro-marketing'],
         [WEB_KEY, 'web'],               [PRINCIPIOS_KEY, 'principios'],         [PERSISTENCY_ADVANCED_KEY, 'bd-avanzado'],
-        [APIS_KEY, 'apis'],             [SECURITY_KEY, 'seguridad'],            [USER_HISTORIES_KEY, 'historias-de-usuario'],
+        [APIS_KEY, 'apis'],             [MICRO_SERVICES_KEY, 'microservices'],  [USER_HISTORIES_KEY, 'historias-de-usuario'],
         [PARADIGMAS_KEY, 'paradigmas'], [SMELL_CODES_KEY, 'smells-codes'],      [META_ESTRUCTURAS_KEY, 'meta-estructuras'],
-        [HARDWARE_KEY, 'hardware'],     [REFACTORING_KEY, 'refactorizacion'],   [MICRO_SERVICES_KEY, 'microservices'],
+        [HARDWARE_KEY, 'hardware'],     [REFACTORING_KEY, 'refactorizacion'],   [PATRONES_ADVANCED_KEY, 'patrones-avanzado'],
         [REQUISITOS_KEY, 'requisitos'], [VERSIONAMIENTO_KEY, 'versionamiento'], [TESTING_ADVANCED_KEY, 'testing-avanzado'],
         [NUBE_KEY, 'nube'],             [ARQUITECTURAS_KEY, 'arquitecturas'],   [ANALISIS_DATA_KEY, 'analisis-datos'],
         [TESTING_KEY, 'testing'],       [SYSTEM_DESIGN_KEY, 'system-design'],   [MICRO_SERVICES_ADVANCED_KEY, 'microservices-avanzado'],
-        [PEOPLE_KEY, 'personas'],       [EJECUCION_KEY, 'ejecucion'],           [PERSISTENCY_INTERMEDIATE_KEY, 'bd-intermedio']
+        [PEOPLE_KEY, 'personas'],       [EJECUCION_KEY, 'ejecucion'],           [PERSISTENCY_INTERMEDIATE_KEY, 'bd-intermedio'],
+        [SECURITY_KEY, 'seguridad']
     ]);
 
 }

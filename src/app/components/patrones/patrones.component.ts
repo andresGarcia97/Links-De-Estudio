@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { ANALISIS_KEY, ARQUITECTURAS_KEY, ESTRATEGIAS_DESARROLLO_KEY, FRAMEWORKS_KEY, LinkReferencia, NUBE_KEY,
-  PARADIGMAS_KEY, PATRONES_KEY, PATRONES_REF, PRINCIPIOS_KEY }
+import { ANALISIS_KEY, ARQUITECTURAS_KEY, FRAMEWORKS_KEY, LinkReferencia, NUBE_KEY,
+  PARADIGMAS_KEY, PATRONES_ADVANCED_KEY, PATRONES_REF, PRINCIPIOS_KEY }
 from 'src/app/models/linkReferencia';
 import { Item, PreviousAndNextSection } from 'src/app/models/models';
 import { PATRONES_PATH } from 'src/app/models/relationsSummary';
@@ -31,14 +31,15 @@ export class PatronesComponent implements OnInit {
     this.items = this.route.snapshot.data[PATRONES_PATH.propertyNameData];
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
-    this.relatedSections.set(PRINCIPIOS_KEY, routes.get(PRINCIPIOS_KEY)!);
-    this.relatedSections.set(FRAMEWORKS_KEY, routes.get(FRAMEWORKS_KEY)!);
-    this.relatedSections.set(PARADIGMAS_KEY, routes.get(PATRONES_KEY)!);
-    this.relatedSections.set(ANALISIS_KEY,   routes.get(ANALISIS_KEY)!);
-    this.relatedSections.set(NUBE_KEY,       routes.get(NUBE_KEY)!);
+    this.relatedSections.set(PATRONES_ADVANCED_KEY, routes.get(PATRONES_ADVANCED_KEY)!);
+    this.relatedSections.set(PRINCIPIOS_KEY,        routes.get(PRINCIPIOS_KEY)!);
+    this.relatedSections.set(FRAMEWORKS_KEY,        routes.get(FRAMEWORKS_KEY)!);
+    this.relatedSections.set(PARADIGMAS_KEY,        routes.get(PARADIGMAS_KEY)!);
+    this.relatedSections.set(ANALISIS_KEY,          routes.get(ANALISIS_KEY)!);
+    this.relatedSections.set(NUBE_KEY,              routes.get(NUBE_KEY)!);
     this.previousAndNextSection = new PreviousAndNextSection(
-      ARQUITECTURAS_KEY,          routes.get(ARQUITECTURAS_KEY)!,
-      ESTRATEGIAS_DESARROLLO_KEY, routes.get(ESTRATEGIAS_DESARROLLO_KEY)!
+      ARQUITECTURAS_KEY,     routes.get(ARQUITECTURAS_KEY)!,
+      PATRONES_ADVANCED_KEY, routes.get(PATRONES_ADVANCED_KEY)!
     );
   }
 

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { AGILES_KEY, ARQUITECTURAS_KEY, CI_CD_KEY, ESTRATEGIAS_DESARROLLO_REF, LinkReferencia, METODOLOGIAS_KEY,
-  PATRONES_KEY, REFACTORING_KEY, REQUISITOS_KEY, TESTING_KEY }
+  PATRONES_ADVANCED_KEY, REFACTORING_KEY, REQUISITOS_KEY, TESTING_KEY }
   from 'src/app/models/linkReferencia';
 import { Item, PreviousAndNextSection } from 'src/app/models/models';
 import { ESTRATEGIAS_PATH } from 'src/app/models/relationsSummary';
@@ -38,8 +38,8 @@ export class EstrategiasDesarrolloComponent implements OnInit {
     this.relatedSections.set(AGILES_KEY,        routes.get(AGILES_KEY)!);
     this.relatedSections.set(CI_CD_KEY,         routes.get(CI_CD_KEY)!);
     this.previousAndNextSection = new PreviousAndNextSection(
-      PATRONES_KEY,    routes.get(PATRONES_KEY)!,
-      REFACTORING_KEY, routes.get(REFACTORING_KEY)!
+      PATRONES_ADVANCED_KEY, routes.get(PATRONES_ADVANCED_KEY)!,
+      REFACTORING_KEY,       routes.get(REFACTORING_KEY)!
     );
   }
 

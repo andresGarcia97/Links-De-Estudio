@@ -7,7 +7,7 @@ import {
   METODOLOGIAS_KEY, NEURO_MARKETING_KEY, NUBE_KEY, ANALISIS_DATA_KEY, PARADIGMAS_KEY, PATRONES_KEY, PEOPLE_KEY, POO_KEY,
   PRINCIPIOS_KEY, REFACTORING_KEY, REQUISITOS_KEY, SECURITY_KEY, SMELL_CODES_KEY, TESTING_ADVANCED_KEY, TESTING_KEY, UML_KEY,
   USER_HISTORIES_KEY, VERSIONAMIENTO_KEY, WEB_KEY, MICRO_SERVICES_KEY, SYSTEM_DESIGN_KEY, MICRO_SERVICES_ADVANCED_KEY,
-  OBSERVABILIDAD_KEY, EJECUCION_KEY, PERSISTENCY_INTERMEDIATE_KEY
+  OBSERVABILIDAD_KEY, EJECUCION_KEY, PERSISTENCY_INTERMEDIATE_KEY, PATRONES_ADVANCED_KEY
 } from 'src/app/models/linkReferencia';
 import { GlosarioComponent } from './components/glosario/glosario.component';
 import { HomeComponent } from './components/home/home.component';
@@ -53,6 +53,7 @@ const routes: Routes = [
   { path: 'principios', loadChildren: () => import('./components/principios/principios.module').then(m => m.PrincipiosModule), title: PRINCIPIOS_KEY },
   { path: 'refactorizacion', loadChildren: () => import('./components/refactorizacion/refactorizacion.module').then(m => m.RefactorizacionModule), title: REFACTORING_KEY },
   { path: 'patrones', loadChildren: () => import('./components/patrones/patrones.module').then(m => m.PatronesModule), title: PATRONES_KEY },
+  { path: 'patrones-avanzado', loadChildren: () => import('./components/patrones-advanced/patrones-advanced.module').then(m => m.PatronesAdvancedModule), title: PATRONES_ADVANCED_KEY },
   { path: 'paradigmas', loadChildren: () => import('./components/paradigmas/paradigmas.module').then(m => m.ParadigmasModule), title: PARADIGMAS_KEY },
   { path: 'analisis-datos', loadChildren: () => import('./components/analisis-datos/analisis-datos.module').then(m => m.AnalisisDatosModule), title: ANALISIS_DATA_KEY },
   { path: 'metodologias', loadChildren: () => import('./components/metodologias/metodologias.module').then(m => m.MetodologiasModule), title: METODOLOGIAS_KEY },

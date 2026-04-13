@@ -46,6 +46,7 @@ export const AGILES_PATH = new RelationKeyWithSection(AGILES_KEY, 'agiles', 'agi
 export const EMPIRICO_PATH = new RelationKeyWithSection(CONOCIMIENTO_EMPIRICO_KEY, 'conocimiento_empirico', 'empirico');
 export const FRAMEWORKS_PATH = new RelationKeyWithSection(FRAMEWORKS_KEY, 'frameworks', 'frameworks');
 export const PATRONES_PATH = new RelationKeyWithSection(PATRONES_KEY, 'patrones', 'patrones');
+export const PATRONES_ADVANCED_PATH = new RelationKeyWithSection(PATRONES_KEY, 'patrones_advanced', 'patrones');
 export const UML_PATH = new RelationKeyWithSection(UML_KEY, 'uml', 'uml');
 export const WEB_PATH = new RelationKeyWithSection(WEB_KEY, 'web', 'web');
 export const COMPILACION_PATH = new RelationKeyWithSection(COMPILACION_KEY, 'compilacion', 'compilacion');

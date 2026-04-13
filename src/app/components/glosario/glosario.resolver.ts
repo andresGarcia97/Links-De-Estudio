@@ -43,6 +43,7 @@ const CONTENT_FILES: string[] = [
     Paths.EMPIRICO_PATH.file,
     Paths.FRAMEWORKS_PATH.file,
     Paths.PATRONES_PATH.file,
+    Paths.PATRONES_ADVANCED_PATH.file,
     Paths.UML_PATH.file,
     Paths.WEB_PATH.file,
     Paths.COMPILACION_PATH.file,
