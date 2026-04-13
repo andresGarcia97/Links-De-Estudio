@@ -31,7 +31,6 @@
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true,
-    "enableI18nLegacyMessageIdFormat": false,
-    "strictNullChecks": true
+    "enableI18nLegacyMessageIdFormat": false
   }
 }
