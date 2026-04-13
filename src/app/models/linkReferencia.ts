@@ -119,7 +119,7 @@ export const ANALISIS_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.BUENAS_PRACTICAS_AGGREGATES, Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.PEOPLE_LANGUAGE_UBICUOS, Keys.POO_COUPLING_AND_COHESION)
     ],
     [Keys.ANALISIS_MULTI_BOUNDED_CONTEXT, new Referencia('https://medium.com/ssense-tech/ddd-beyond-the-basics-mastering-multi-bounded-context-integration-ca0c7cec6561', 'Multi Bounded Context', ANALISIS_KEY, 'Multi Bounded Context', '2025/10/25')
-        .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.META_ESTRUCTURAS_SCOPE, Keys.PEOPLE_LANGUAGE_UBICUOS, Keys.PATRONES_CLOUD_DESIGN_PATTERNS, Keys.ESTRATEGIAS_DESARROLLO_VERTICAL)
+        .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.META_ESTRUCTURAS_SCOPE, Keys.PEOPLE_LANGUAGE_UBICUOS, Keys.PATRONES_ADVANCED_CLOUD_DESIGN_PATTERNS, Keys.ESTRATEGIAS_DESARROLLO_VERTICAL)
         .addMoreReferences('https://verraes.net/2025/08/domain-and-bounded-contexts-dont-map-one-on-one/', 'https://medium.com/ssense-tech/domain-driven-design-everything-you-always-wanted-to-know-about-it-but-were-afraid-to-ask-a85e7b74497a')
     ],
     [Keys.ANALISIS_STRATEGIC_DESIGN, new Referencia('https://medium.com/@lambrych/domain-driven-design-ddd-strategic-design-explained-55e10b7ecc0f', 'Diseño estrategico', ANALISIS_KEY, 'Diseño estrategico', '2025/07/10')
@@ -127,7 +127,7 @@ export const ANALISIS_REF = new Map<string, Referencia>([
         .addMoreReferences('https://www.workingsoftware.dev/fundamental-techniques-for-software-architects/#context-mapping')
     ],
     [Keys.ANALISIS_TACTIC_DESIGN, new Referencia('https://medium.com/@lambrych/eventstorming-for-domain-driven-design-strengths-and-limitations-3f0b49009c38', 'Event Storming & Diseño tactico', ANALISIS_KEY, 'Diseño tactico', '2025/07/13')
-        .addRelatedItems(Keys.VERSIONAMIENTO_DOCUMENT_ARQUITECTURE, Keys.NUBE_MIGRATIONS, Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.USER_HISTORIES_USER_HISTORIES, Keys.PATRONES_PERSISTENCE_PATTERNS, Keys.PATRONES_DYSTRIBUTED_SYSTEMS, Keys.POO_FACTORY_METODS)
+        .addRelatedItems(Keys.VERSIONAMIENTO_DOCUMENT_ARQUITECTURE, Keys.NUBE_MIGRATIONS, Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.USER_HISTORIES_USER_HISTORIES, Keys.PATRONES_ADVANCED_PERSISTENCE_PATTERNS, Keys.PATRONES_ADVANCED_DISTRIBUTED_SYSTEMS, Keys.POO_FACTORY_METODS)
         .addMoreReferences('https://medium.com/@lambrych/can-eventstorming-guide-the-design-workflow-6f75d8aa20e0')
     ],
 ]);
@@ -135,7 +135,7 @@ export const ANALISIS_REF = new Map<string, Referencia>([
 export const SYSTEM_DESIGN_KEY = 'System-Design';
 export const SYSTEM_DESIGN_REF = new Map<string, Referencia>([
     [Keys.SYSTEM_DESIGN_QUEUES, new Referencia('https://levelup.gitconnected.com/message-queues-in-system-design-0440a1221023', 'Message Queues in System Design', SYSTEM_DESIGN_KEY, 'Message Queues', '2024/09/01', '2025/09/21')
-        .addRelatedItems(Keys.META_ESTRUCTURAS_ESTRUCTURAS_DATOS_II, Keys.APIS_REST_VS_MESSAGING, Keys.PATRONES_MESSAGING, Keys.ANALISIS_DATA_BATCH_VS_STREAM, Keys.MICROSERVICES_ADVANCED_IDEMPOTENCY_I)
+        .addRelatedItems(Keys.META_ESTRUCTURAS_ESTRUCTURAS_DATOS_II, Keys.APIS_REST_VS_MESSAGING, Keys.PATRONES_ADVANCED_MESSAGING, Keys.ANALISIS_DATA_BATCH_VS_STREAM, Keys.MICROSERVICES_ADVANCED_IDEMPOTENCY_I)
         .addMoreReferences('https://solace.com/products/event-broker/messaging-patterns-queue-types/', 'https://airbyte.com/data-engineering-resources/rabbitmq-vs-kafka')
     ],
     [Keys.SYSTEM_DESIGN_CONCEPTS_I, new Referencia('https://www.linkedin.com/posts/brijpandeyji_top-12-system-design-concepts-every-developer-activity-7238729739065069568-h1t6/', 'System Design Concepts I', SYSTEM_DESIGN_KEY, 'System Design Concepts I', '2024/09/29')],
@@ -170,14 +170,14 @@ export const SYSTEM_DESIGN_REF = new Map<string, Referencia>([
         .addMoreReferences('https://medium.com/@priyasrivastava18official/system-design-pattern-designing-reliable-multi-step-processes-in-distributed-systems-e22283c3ba30')
     ],
     [Keys.SYSTEM_DESIGN_COMMON_FAILS, new Referencia('https://levelup.gitconnected.com/3-am-production-fires-the-12-patterns-that-keep-breaking-everything-5f64e11b1baf', 'Fallas comunes', SYSTEM_DESIGN_KEY, 'Fallas comunes', '2026/01/18')
-        .addRelatedItems(Keys.PERSISTENCY_INTERMEDIATE_N_1_SELECTS, Keys.EJECUCION_MEMORY_AND_GARBAGE, Keys.PATRONES_RESILIENCIA, Keys.EJECUCION_BLOCKING_AND_NO_BLOCKING, Keys.PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS, Keys.PARADIGMAS_REACTIVO, Keys.META_ESTRUCTURAS_LOGS, Keys.SECURITY_CONDICION_CARRERA, Keys.PERSISTENCY_ADVANCED_LOCKING, Keys.CD_CI_CELL_BASED_ARQUITECTURE)
+        .addRelatedItems(Keys.PERSISTENCY_INTERMEDIATE_N_1_SELECTS, Keys.EJECUCION_MEMORY_AND_GARBAGE, Keys.PATRONES_ADVANCED_RESILIENCIA, Keys.EJECUCION_BLOCKING_AND_NO_BLOCKING, Keys.PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS, Keys.PARADIGMAS_REACTIVO, Keys.META_ESTRUCTURAS_LOGS, Keys.SECURITY_CONDICION_CARRERA, Keys.PERSISTENCY_ADVANCED_LOCKING, Keys.CD_CI_CELL_BASED_ARQUITECTURE)
     ],
     [Keys.SYSTEM_DESIGN_DATABASE_WITHOUT_LOGIC, new Referencia('https://martinfowler.com/articles/dblogic.html', '¿ Bases de datos, sin logica ?', SYSTEM_DESIGN_KEY, '¿ Logica en la DB ?', '2026/01/31')
         .addRelatedItems(Keys.PERSISTENCY_ADVANCED_SQL_ENGINE_ANATOMY, Keys.PARADIGMAS_PARADIGMA_DATOS, Keys.ARQUITECTURAS_CAPAS, Keys.REQUISITOS_TRADE_OFF, Keys.EJECUCION_MEMORY_PROFILING, Keys.POO_DESIGN_BY_CONTRACT, Keys.PERSISTENCY_INTERMEDIATE_SQL_NO_SQL, Keys.BUENAS_PRACTICAS_COMPLEJIDAD_COGNITIVA, Keys.PRINCIPIOS_DRY, Keys.PERSISTENCY_INTERMEDIATE_DATA_BASE_OBJECTS, Keys.POO_PILARES, Keys.SMELL_CODES_DESGLOSE, Keys.PERSISTENCY_INTERMEDIATE_SCHEMAS, Keys.PERSISTENCY_ADVANCED_MIGRATIONS, Keys.ESTRATEGIAS_DESARROLLO_TDD, Keys.PERSISTENCY_INTERMEDIATE_ORM, Keys.ANALISIS_DATA_TURING_COMPLETE, Keys.PARADIGMAS_IMPERATIVO)
         .addMoreReferences('https://rmhw.medium.com/business-logic-versus-data-logic-9e4be45d7007', 'https://www.percona.com/blog/should-you-keep-your-business-logic-in-your-database/', 'https://enterprisecraftsmanship.com/posts/is-sql-good-place-for-business-logic/')
     ],
     [Keys.SYSTEM_DESIGN_RESILIENCE, new Referencia('https://codefarm0.medium.com/resilience-patterns-in-distributed-systems-bc847ee2533c', 'Resiliencia en sistemas distribuidos', SYSTEM_DESIGN_KEY, 'Resiliencia ', '2026/03/22')
-        .addRelatedItems(Keys.PATRONES_RESILIENCIA, Keys.CD_CI_FAILOVER, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.APIS_RATE_LIMITING, Keys.PATRONES_DYSTRIBUTED_SYSTEMS, Keys.CD_CI_CELL_BASED_ARQUITECTURE)
+        .addRelatedItems(Keys.PATRONES_ADVANCED_RESILIENCIA, Keys.CD_CI_FAILOVER, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.APIS_RATE_LIMITING, Keys.PATRONES_ADVANCED_DISTRIBUTED_SYSTEMS, Keys.CD_CI_CELL_BASED_ARQUITECTURE)
         .addMoreReferences('https://medium.com/@mhd.umair/building-resilient-systems-designing-for-self-healing-in-application-development-564a40abb095')
     ]
 ]);
@@ -197,7 +197,7 @@ export const ARQUITECTURAS_REF = new Map<string, Referencia>([
     //[Keys.ARQUITECTURAS_CAPAS, new Referencia('https://geeks.ms/jkpelaez/2009/05/30/arquitectura-basada-en-capas/', 'Arquitectura a Capas', ARQUITECTURAS_KEY, 'Capas')],
     //[Keys.ARQUITECTURAS_CAPAS, new Referencia('https://blog.hubspot.es/website/que-es-arquitectura-en-capas', 'Arquitectura a Capas', ARQUITECTURAS_KEY, 'Capas', '', '2025/01/12')],
     [Keys.ARQUITECTURAS_CAPAS, new Referencia('https://learn.microsoft.com/es-es/dotnet/architecture/modern-web-apps-azure/common-web-application-architectures', 'Arquitectura a Capas', ARQUITECTURAS_KEY, 'Capas', '2025/01/12', '2025/03/26')
-        .addRelatedItems(Keys.PATRONES_PERSISTENCE_PATTERNS)
+        .addRelatedItems(Keys.PATRONES_ADVANCED_PERSISTENCE_PATTERNS)
     ],
     [Keys.ARQUITECTURAS_CLIENTE_SERVIDOR, new Referencia('https://desarrolloweb.com/articulos/arquitectura-cliente-servidor.html', 'Arquitectura Cliente-Servidor', ARQUITECTURAS_KEY, 'Cliente Servidor')],
     [Keys.ARQUITECTURAS_HEXAGONAL, new Referencia('https://medium.com/@edusalguero/arquitectura-hexagonal-59834bb44b7f', 'Hexagonal', ARQUITECTURAS_KEY, 'Hexagonal', '', '2024/11/24')
@@ -217,7 +217,7 @@ export const ARQUITECTURAS_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.MICROSERVICES_ARQUITECTURAS, Keys.APIS_REST_VS_MESSAGING, Keys.ANALISIS_DOMAIN_EVENTS)
     ],
     [Keys.ARQUITECTURAS_PATRONES_II, new Referencia('https://levelup.gitconnected.com/architecture-design-patterns-every-senior-developer-must-know-part-2-0409ec13f8c2', 'Patrones Arquitectonicos II', ARQUITECTURAS_KEY, 'Patrones Arquitectonicos II', '2025/10/12')
-        .addRelatedItems(Keys.ANALISIS_DATA_BATCH_VS_STREAM, Keys.PATRONES_SAGA, Keys.COMPILACION_INSTRUMENTS, Keys.CD_CI_FAILOVER, Keys.ANALISIS_LIGHT_EVENTS_VS_RICH_EVENTS, Keys.NUBE_PACELC, Keys.PERSISTENCY_ADVANCED_CONSISTENCY)
+        .addRelatedItems(Keys.ANALISIS_DATA_BATCH_VS_STREAM, Keys.PATRONES_ADVANCED_SAGA, Keys.COMPILACION_INSTRUMENTS, Keys.CD_CI_FAILOVER, Keys.ANALISIS_LIGHT_EVENTS_VS_RICH_EVENTS, Keys.NUBE_PACELC, Keys.PERSISTENCY_ADVANCED_CONSISTENCY)
         .addMoreReferences('https://dev.to/jaiminbariya/understanding-quorum-based-approaches-in-distributed-systems-jaimin-bariya-5h1b/')
     ],
     [Keys.ARQUITECTURAS_MONOLITOS, new Referencia('https://www.paradigmadigital.com/techbiz/microservicios-vs-microlitos-vs-monolitos-ventajas-desventajas/', 'Monolitos VS Microservicios', ARQUITECTURAS_KEY, 'Monolitos')],
@@ -251,7 +251,7 @@ export const ARQUITECTURAS_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.MALAS_PRACTICAS_OVER_ENGINEERING, Keys.PRINCIPIOS_KISS, Keys.MALAS_PRACTICAS_DEATH_BY_MICROSERVICES, Keys.OBSERVABILIDAD_OBSERVABILITY, Keys.VERSIONAMIENTO_DOCUMENTATION, Keys.CONOCIMIENTOS_EMPIRICOS_CODE_MAINTAINER)
     ],
     [Keys.ARQUITECTURAS_MISTAKES_II, new Referencia('https://medium.com/@maahisoft20/10-deadly-sins-of-system-architecture-that-will-haunt-you-at-scale-841dabe54a44', 'Errores de arquitectura que emergen al escalar', ARQUITECTURAS_KEY, 'Errores II', '2025/10/08')
-        .addRelatedItems(Keys.TESTING_ADVANCED_CHARGE, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_MONOLITH, Keys.PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL, Keys.PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS, Keys.OBSERVABILIDAD_OBSERVABILITY, Keys.MALAS_PRACTICAS_OVER_ENGINEERING, Keys.CD_CI_STATELESS_STATEFUL, Keys.CD_CI_FAILOVER, Keys.PATRONES_RESILIENCIA, Keys.PEOPLE_PEOPLE_PROCESS_TECNOLOGY)
+        .addRelatedItems(Keys.TESTING_ADVANCED_CHARGE, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_MONOLITH, Keys.PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL, Keys.PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS, Keys.OBSERVABILIDAD_OBSERVABILITY, Keys.MALAS_PRACTICAS_OVER_ENGINEERING, Keys.CD_CI_STATELESS_STATEFUL, Keys.CD_CI_FAILOVER, Keys.PATRONES_ADVANCED_RESILIENCIA, Keys.PEOPLE_PEOPLE_PROCESS_TECNOLOGY)
     ],
 ]);
 
@@ -287,11 +287,11 @@ export const BUENAS_PRACTICAS_REF = new Map<string, Referencia>([
     [Keys.BUENAS_PRACTICAS_GUARD_CLAUSES, new Referencia('https://artansoft.com/2017/01/guard-clauses-definicion-beneficios/', 'Guard clauses', BUENAS_PRACTICAS_KEY, 'Guard Clauses')],
     [Keys.BUENAS_PRACTICAS_SEMANTIC_CONSTRUCTORS, new Referencia('https://medium.com/all-you-need-is-clean-code/constructores-sem%C3%A1nticos-ae7ac70b23aa', 'Constructores Semanticos', BUENAS_PRACTICAS_KEY, 'Constructores Semanticos')],
     [Keys.BUENAS_PRACTICAS_EXCEPTIONS, new Referencia('https://javachallengers.com/mistakes-when-using-exceptions/', 'Manejo de Excepciones', BUENAS_PRACTICAS_KEY, 'Manejo de Excepciones', '', '2025/12/16')
-        .addRelatedItems(Keys.COMPILACION_ERRORS_AND_EXCEPTIONS, Keys.META_CARACTERISTICAS_EXCEPTIONS, Keys.OBSERVABILIDAD_MONITOREO, Keys.APIS_ERRORS, Keys.OBSERVABILIDAD_OBSERVABILITY, Keys.PATRONES_RESILIENCIA)
+        .addRelatedItems(Keys.COMPILACION_ERRORS_AND_EXCEPTIONS, Keys.META_CARACTERISTICAS_EXCEPTIONS, Keys.OBSERVABILIDAD_MONITOREO, Keys.APIS_ERRORS, Keys.OBSERVABILIDAD_OBSERVABILITY, Keys.PATRONES_ADVANCED_RESILIENCIA)
         .addMoreReferences('https://medium.com/@csvaibhavpasrija/838292f305fd')
     ],
     [Keys.BUENAS_PRACTICAS_GOOD_HABITS, new Referencia('https://vadimkravcenko.com/shorts/habits-of-great-software-engineers/', 'Buenos habitos de un desarrollador', BUENAS_PRACTICAS_KEY, 'Buenos habitos')],
-    [Keys.BUENAS_PRACTICAS_FUNCTIONS, new Referencia('https://medium.com/@akineralkan/clean-code-notes-chapter-3-functions-de4a30191300', 'Buenas practicas, Funciones', BUENAS_PRACTICAS_KEY, 'Funciones', '2024/10/18').addRelatedItems(Keys.PATRONES_CQRS)],
+    [Keys.BUENAS_PRACTICAS_FUNCTIONS, new Referencia('https://medium.com/@akineralkan/clean-code-notes-chapter-3-functions-de4a30191300', 'Buenas practicas, Funciones', BUENAS_PRACTICAS_KEY, 'Funciones', '2024/10/18').addRelatedItems(Keys.PATRONES_ADVANCED_CQRS)],
     [Keys.BUENAS_PRACTICAS_AGGREGATES, new Referencia('https://www.kranio.io/blog/de-bueno-a-excelente-en-ddd-entendiendo-aggregates-y-aggregate-roots-en-domain-driven-design---3-10', 'Aggregates y Aggregate Roots', BUENAS_PRACTICAS_KEY, 'Agregados', '2025/04/20')
         .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.META_ESTRUCTURAS_VALUE_OBJECTS, Keys.POO_DESIGN_BY_CONTRACT_PARTS, Keys.ANALISIS_COHESERS_DECOUPLERS)
     ],
@@ -574,7 +574,7 @@ export const FRAMEWORKS_REF = new Map<string, Referencia>([
     ],
     [Keys.FRAMEWORKS_IOD_SPRING, new Referencia('https://medium.com/@priyaroul99/what-is-constructor-injection-and-why-should-you-use-it-in-spring-bdb3e1857c58', 'Inyección de Dependencias en Spring', FRAMEWORKS_KEY, 'IoD Spring', '2023/12/02')],
     [Keys.FRAMEWORKS_SPRING_ANNOTATIONS, new Referencia('https://medium.com/@sharmapraveen91/comprehensive-guide-to-spring-annotations-under-the-hood-working-43e9570002c4', 'Anotaciones de Spring', FRAMEWORKS_KEY, 'Anotaciones de Spring', '2026/01/13')
-        .addRelatedItems(Keys.META_CARACTERISTICAS_ANOTATIONS, Keys.PATRONES_DESGLOSE_GOF, Keys.PERSISTENCY_CRUD, Keys.ARQUITECTURAS_MVC, Keys.APIS_REST_FULL, Keys.PATRONES_PERSISTENCE_PATTERNS, Keys.META_ESTRUCTURAS_LAYERS_SOFTWARE, Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION)
+        .addRelatedItems(Keys.META_CARACTERISTICAS_ANOTATIONS, Keys.PATRONES_DESGLOSE_GOF, Keys.PERSISTENCY_CRUD, Keys.ARQUITECTURAS_MVC, Keys.APIS_REST_FULL, Keys.PATRONES_ADVANCED_PERSISTENCE_PATTERNS, Keys.META_ESTRUCTURAS_LAYERS_SOFTWARE, Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION)
         .addMoreReferences('https://www.geeksforgeeks.org/springboot/spring-boot-annotations/', 'https://www.baeldung.com/spring-qualifier-annotation')
     ],
     [Keys.FRAMEWORKS_CODE_STRUCTURE, new Referencia('https://medium.com/@akintopbas96/spring-boot-code-structure-package-by-layer-vs-package-by-feature-5331a0c911fe', 'Paquetes por capas Vs funcionalidad', FRAMEWORKS_KEY, 'Estructura, Vertical Slice', '2024/05/18', '2025/07/13')
@@ -582,11 +582,11 @@ export const FRAMEWORKS_REF = new Map<string, Referencia>([
         .addMoreReferences('https://antondevtips.com/blog/vertical-slice-architecture-the-best-ways-to-structure-your-project', 'https://medium.com/mr-plan-publication/vertical-slice-architecture-software-architecture-part-5-102db9331d16')
     ],
     [Keys.FRAMEWORKS_TRANSACTIONAL_I, new Referencia('https://codefarm0.medium.com/beginners-guide-to-transactional-in-spring-boot-18a04e2a84bb', 'Spring Transactional I', FRAMEWORKS_KEY, 'Spring Transactional I', '2025/12/27')
-        .addRelatedItems(Keys.PERSISTENCY_ACID, Keys.PATRONES_PERSISTENCE_PATTERNS, Keys.META_CARACTERISTICAS_ANOTATIONS, Keys.PARADIGMAS_ASPECTOS, Keys.COMPILACION_CALLS_AND_INVOCATION, Keys.PERSISTENCY_ADVANCED_MVCC, Keys.PERSISTENCY_ADVANCED_LOCKING)
+        .addRelatedItems(Keys.PERSISTENCY_ACID, Keys.PATRONES_ADVANCED_PERSISTENCE_PATTERNS, Keys.META_CARACTERISTICAS_ANOTATIONS, Keys.PARADIGMAS_ASPECTOS, Keys.COMPILACION_CALLS_AND_INVOCATION, Keys.PERSISTENCY_ADVANCED_MVCC, Keys.PERSISTENCY_ADVANCED_LOCKING)
         .addMoreReferences('https://codefarm0.medium.com/spring-transaction-internals-what-really-happens-under-the-hood-175b09a32db8', 'https://codefarm0.medium.com/deep-dive-into-transaction-propagation-and-isolation-levels-in-spring-boot-a25acd1ffd3b', 'https://medium.com/@pudarimadhavi99/the-dark-side-of-transactional-in-spring-boot-exposed-b4967c2ae166')
     ],
     [Keys.FRAMEWORKS_TRANSACTIONAL_II, new Referencia('https://codefarm0.medium.com/what-are-nested-transactions-in-spring-boot-while-using-transactional-1ad9957e0b9a', 'Spring Transactional II', FRAMEWORKS_KEY, 'Spring Transactional II', '2025/12/27')
-        .addRelatedItems(Keys.ANALISIS_TYPE_EVENTS, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRANSACTIONS, Keys.PATRONES_PERSISTENCE_PATTERNS, Keys.META_ESTRUCTURAS_SCOPE, Keys.PERSISTENCY_ADVANCED_CONSISTENCY, Keys.COMPILACION_ERRORS_AND_EXCEPTIONS)
+        .addRelatedItems(Keys.ANALISIS_TYPE_EVENTS, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRANSACTIONS, Keys.PATRONES_ADVANCED_PERSISTENCE_PATTERNS, Keys.META_ESTRUCTURAS_SCOPE, Keys.PERSISTENCY_ADVANCED_CONSISTENCY, Keys.COMPILACION_ERRORS_AND_EXCEPTIONS)
         .addMoreReferences('https://codefarm0.medium.com/top-spring-boot-transaction-interview-questions-c872fb800120', 'https://dev.to/haraf/understanding-transactioneventlistener-in-spring-boot-use-cases-real-time-examples-and-4aof', 'https://docs.spring.io/spring-framework/reference/data-access/transaction/declarative/annotations.html')
     ],
 ]);
@@ -901,10 +901,10 @@ export const ANALISIS_DATA_REF = new Map<string, Referencia>([
     ],
     [Keys.ANALISIS_DATA_GOLDEN_RECORD, new Referencia('https://www.stibosystems.com/blog/benefits-of-creating-golden-customer-records', 'Golden Record', ANALISIS_DATA_KEY, 'Golden Record', '2024/08/10')],
     [Keys.ANALISIS_DATA_BATCH_VS_STREAM, new Referencia('https://estuary.dev/batch-processing-vs-stream-processing/', 'Batch Vs Stream Processing', ANALISIS_DATA_KEY, 'Batch Vs Stream', '2024/08/31', '2025/09/27')
-        .addRelatedItems(Keys.PATRONES_MESSAGING, Keys.SYSTEM_DESIGN_QUEUES)
+        .addRelatedItems(Keys.PATRONES_ADVANCED_MESSAGING, Keys.SYSTEM_DESIGN_QUEUES)
     ],
     [Keys.ANALISIS_DATA_STREAMING_VS_MESSAGING, new Referencia('https://medium.com/qest/messaging-vs-streaming-a-software-engineers-guide-8500d97f6f25', 'Streaming Vs Mensajes', ANALISIS_DATA_KEY, 'Streaming Vs Mensajes', '2025/11/06')
-        .addRelatedItems(Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.VERSIONAMIENTO_EVOLUTION_SCHEMA_AND_SCHEMA_REGISTRY, Keys.PATRONES_MESSAGING, Keys.MICROSERVICES_EVENTS_VS_REQUEST_RESPONSE, Keys.PATRONES_FOR_INTEGRATION, Keys.MICROSERVICES_ADVANCED_PRODUCER_CONSUMER_PROBLEM, Keys.MICROSERVICES_ADVANCED_IDEMPOTENCY_I, Keys.EJECUCION_CONCURRENCY_AND_PARALLELISM, Keys.SYSTEM_DESIGN_QUEUES, Keys.APIS_LATENCY_THROUGHPUT_BANDWITH)
+        .addRelatedItems(Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.VERSIONAMIENTO_EVOLUTION_SCHEMA_AND_SCHEMA_REGISTRY, Keys.PATRONES_ADVANCED_MESSAGING, Keys.MICROSERVICES_EVENTS_VS_REQUEST_RESPONSE, Keys.PATRONES_ADVANCED_FOR_INTEGRATION, Keys.MICROSERVICES_ADVANCED_PRODUCER_CONSUMER_PROBLEM, Keys.MICROSERVICES_ADVANCED_IDEMPOTENCY_I, Keys.EJECUCION_CONCURRENCY_AND_PARALLELISM, Keys.SYSTEM_DESIGN_QUEUES, Keys.APIS_LATENCY_THROUGHPUT_BANDWITH)
         .addMoreReferences('https://quix.io/blog/apache-kafka-vs-rabbitmq-comparison', 'https://pathway.com/blog/kafka-vs-rabbit-mq-for-data-streaming/')
     ],
     [Keys.ANALISIS_DATA_OLAP_OLTP, new Referencia('https://aws.amazon.com/es/compare/the-difference-between-olap-and-oltp/', 'OLAP & OLTP', ANALISIS_DATA_KEY, 'OLAP & OLTP', '2024/09/15')],
@@ -950,64 +950,62 @@ export const PARADIGMAS_REF = new Map<string, Referencia>([
 export const PATRONES_KEY = 'Patrones';
 export const PATRONES_REF = new Map<string, Referencia>([
     [Keys.PATRONES_DEFINITION, new Referencia('http://www.ecured.cu/Patrones_de_dise%C3%B1o_y_arquitectura', '¿ Que son los patrones ?', PATRONES_KEY, 'Definición')],
-    //['gof', new Referencia('http://www.cleformacion.com/tic-tek/-/blogs/patrones-gof', 'Gang of Four (GoF)', PATRONES_KEY, 'GOF')],
     [Keys.PATRONES_GOF, new Referencia('https://cleformacion.com/patrones-gof-fecha-de-publicacion/', 'Gang of Four (GoF)', PATRONES_KEY, 'GOF', '', '2024/05/25')],
     [Keys.PATRONES_DESGLOSE_GOF, new Referencia('https://refactoring.guru/es/design-patterns/catalog', 'Definiciones de los GoF', PATRONES_KEY, 'Desglose GOF')],
     [Keys.PATRONES_GRASP, new Referencia('https://www.adictosaltrabajo.com/2003/12/22/grasp/', 'Asignación de responsabilidades', PATRONES_KEY, 'GRASP')],
-    //['desglosegrasp', new Referencia('https://juan-garcia-carmona.blogspot.com/search/label/patr%C3%B3n', 'Patrones GRASP', PATRONES_KEY, 'Desglose Grasp')],
-    //['desglosegrasp', new Referencia('https://juan-garcia-carmona.blogspot.com/2012/09/patrones-generales-de-asignacion-de.html', 'Patrones GRASP', PATRONES_KEY, 'Desglose Grasp', '', '2024/05/25')],
     [Keys.PATRONES_DESGLOSE_GRASP, new Referencia('https://www.codescouts.academy/blog/grasp/', 'Patrones GRASP', PATRONES_KEY, 'Desglose Grasp', '', '2024/12/15')],
-    //['dao', new Referencia('https://www.genbeta.com/desarrollo/patrones-de-diseno-active-record-vs-dao', 'Data Acess Object', PATRONES_KEY, 'DAO & Active Record')],
-    [Keys.PATRONES_PERSISTENCE_PATTERNS, new Referencia('https://www.infoq.com/articles/architecting-java-persistence-patterns-and-strategies/', 'Persistencia & manejo de datos', PATRONES_KEY, 'Persistencia & Datos', '', '2024/05/26')
-        .addRelatedItems(Keys.POO_POO, Keys.POO_INMUTABILITY, Keys.PARADIGMAS_PARADIGMA_DATOS)
-    ],
     [Keys.PATRONES_ANTI_PATTERNS, new Referencia('https://sg.com.mx/revista/11/anti-patrones-la-mejor-forma-hacer-un-pesimo-sistema-software', 'Antipatrones, Desarrollo', PATRONES_KEY, 'Anti Patrones, Desarrollo')],
-    //['dobleDespacho', new Referencia('https://blog.nicopaez.com/2016/11/09/una-alternativa-al-double-dispatch/', 'Patron doble despacho', PATRONES_KEY, 'Doble despacho')],
-    //[Keys.PATRONES_SAGA, new Referencia('https://unpocodejava.com/2020/01/02/que-es-el-patron-saga/', 'Patron Saga', PATRONES_KEY, 'Patron saga')],
-    [Keys.PATRONES_SAGA, new Referencia('https://docs.aws.amazon.com/es_es/prescriptive-guidance/latest/cloud-design-patterns/saga.html', 'Patron Saga', PATRONES_KEY, 'Patron Saga', '', '2025/03/14')
-        .addRelatedItems(Keys.SYSTEM_DESIGN_SINGLE_POINT_OF_FAILURE, Keys.APIS_IDEMPOTENCIA)
-    ],
-    [Keys.PATRONES_CQRS, new Referencia('https://learn.microsoft.com/es-mx/azure/architecture/patterns/cqrs', 'Patron CQRS', PATRONES_KEY, 'Patron CQRS', '', '2024/10/18')],
-    [Keys.PATRONES_UNDO_REDO, new Referencia('https://medium.com/dottech/implementando-undo-redo-con-ngrx-o-redux-f8ef5de535ef', 'Patron Undo-Redo', PATRONES_KEY, 'Patron undo-redo', '', '2025/04/02')],
     [Keys.PATRONES_TYPES, new Referencia('https://www.javiergarzas.com/2014/08/tipos-patrones-software.html', 'Tipos de patrones', PATRONES_KEY, 'Tipos de Patrones')],
-    [Keys.PATRONES_STRANGLER_FIG, new Referencia('https://martinfowler.com/bliki/StranglerFigApplication.html', 'StranglerFig App', PATRONES_KEY, 'StranglerFig App', '', '2024/09/22')
-        .addRelatedItems(Keys.LEYES_CONWAY)
-    ],
     [Keys.PATRONES_ANTI_PATRONES_PM, new Referencia('https://sourcemaking.com/antipatterns', 'Antipatrones, Product Management', PATRONES_KEY, 'Anti Patrones, PM')],
-    [Keys.PATRONES_CLOUD_DESIGN_PATTERNS, new Referencia('https://learn.microsoft.com/es-mx/azure/architecture/patterns/', 'Patrones Para la Nube', PATRONES_KEY, 'Patrones Nube', '2024/06/02')
-        .addRelatedItems(Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.PERSISTENCY_ADVANCED_CONSISTENCY)
-    ],
     [Keys.PATRONES_ENRICHED_MODEL, new Referencia('https://sacavix.com/2024/05/modelos-anemicos-vs-enriquecidos/', 'Modelo Enriquecido', PATRONES_KEY, 'Modelo Enriquecido', '2024/12/15')
         .addRelatedItems(Keys.MALAS_PRACTICAS_ANEMIC_DOMAIN, Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.POO_INMUTABILITY, Keys.POO_POO)
-    ],
-    [Keys.PATRONES_OUTBOX, new Referencia('https://www.baeldung.com/cs/outbox-pattern-microservices', 'Patron Outbox', PATRONES_KEY, 'Patron Outbox', '2025/01/12')
-        .addRelatedItems(Keys.PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL, Keys.APIS_REST_VS_MESSAGING)
-    ],
-    [Keys.PATRONES_INBOX, new Referencia('https://medium.com/hprog99/overcoming-message-delivery-challenges-in-distributed-systems-a-comprehensive-look-at-outbox-and-a669e5f21898', 'Patron Inbox', PATRONES_KEY, 'Patron Inbox', '2025/03/18')
-        .addRelatedItems(Keys.APIS_IDEMPOTENCIA)
-    ],
-    [Keys.PATRONES_UNIT_OF_WORK, new Referencia('https://java-design-patterns.com/patterns/unit-of-work/', 'Unit of Work', PATRONES_KEY, 'Unit of Work', '2025/03/09')
-        .addRelatedItems(Keys.PERSISTENCY_ACID, Keys.PERSISTENCY_INTERMEDIATE_ORM, Keys.ESTRATEGIAS_DESARROLLO_DDD)
     ],
     [Keys.PATRONES_CRITERIA, new Referencia('https://medium.com/@zerodata.aolink/desafiando-la-complejidad-c%C3%B3mo-el-patr%C3%B3n-criteria-resuelve-la-explosi%C3%B3n-de-m%C3%A9todos-de-nuestro-60ece5829f89', 'Patron Criteria', PATRONES_KEY, 'Patron Criteria', '2025/03/22')
         .addRelatedItems(Keys.ARQUITECTURAS_HEXAGONAL, Keys.PRINCIPIOS_SOLID)
     ],
-    [Keys.PATRONES_DYSTRIBUTED_SYSTEMS, new Referencia('https://medium.com/@maheshsaini.sec/10-must-know-distributed-system-patterns-ab98c594806a', 'Patrones para Sistemas Distribuidos', PATRONES_KEY, 'Sistemas Distribuidos', '2025/04/02')
+    [Keys.PATRONES_STATE, new Referencia('https://maxim-gorin.medium.com/stop-writing-if-else-trees-use-the-state-pattern-instead-1fe9ff39a39c', 'Patron State', PATRONES_KEY, 'Patron State', '2025/04/20')
+        .addRelatedItems(Keys.CALIDAD_IF_ELSE, Keys.POO_POLIMORFISMO, Keys.PRINCIPIOS_SOLID, Keys.POO_ENUMS, Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS)
+    ]
+]);
+
+export const PATRONES_ADVANCED_KEY = 'Patrones-avanzado';
+export const PATRONES_ADVANCED_REF = new Map<string, Referencia>([
+    [Keys.PATRONES_ADVANCED_PERSISTENCE_PATTERNS, new Referencia('https://www.infoq.com/articles/architecting-java-persistence-patterns-and-strategies/', 'Persistencia & manejo de datos', PATRONES_KEY, 'Persistencia & Datos', '', '2024/05/26')
+        .addRelatedItems(Keys.POO_POO, Keys.POO_INMUTABILITY, Keys.PARADIGMAS_PARADIGMA_DATOS)
+    ],
+    [Keys.PATRONES_ADVANCED_SAGA, new Referencia('https://docs.aws.amazon.com/es_es/prescriptive-guidance/latest/cloud-design-patterns/saga.html', 'Patron Saga', PATRONES_KEY, 'Patron Saga', '', '2025/03/14')
+        .addRelatedItems(Keys.SYSTEM_DESIGN_SINGLE_POINT_OF_FAILURE, Keys.APIS_IDEMPOTENCIA)
+    ],
+    [Keys.PATRONES_ADVANCED_CQRS, new Referencia('https://learn.microsoft.com/es-mx/azure/architecture/patterns/cqrs', 'Patron CQRS', PATRONES_KEY, 'Patron CQRS', '', '2024/10/18')],
+    [Keys.PATRONES_ADVANCED_UNDO_REDO, new Referencia('https://medium.com/dottech/implementando-undo-redo-con-ngrx-o-redux-f8ef5de535ef', 'Patron Undo-Redo', PATRONES_KEY, 'Patron undo-redo', '', '2025/04/02')],
+    [Keys.PATRONES_ADVANCED_STRANGLER_FIG, new Referencia('https://martinfowler.com/bliki/StranglerFigApplication.html', 'StranglerFig App', PATRONES_KEY, 'StranglerFig App', '', '2024/09/22')
+        .addRelatedItems(Keys.LEYES_CONWAY)
+    ],
+    [Keys.PATRONES_ADVANCED_CLOUD_DESIGN_PATTERNS, new Referencia('https://learn.microsoft.com/es-mx/azure/architecture/patterns/', 'Patrones Para la Nube', PATRONES_KEY, 'Patrones Nube', '2024/06/02')
+        .addRelatedItems(Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.PERSISTENCY_ADVANCED_CONSISTENCY)
+    ],
+    [Keys.PATRONES_ADVANCED_OUTBOX, new Referencia('https://www.baeldung.com/cs/outbox-pattern-microservices', 'Patron Outbox', PATRONES_KEY, 'Patron Outbox', '2025/01/12')
+        .addRelatedItems(Keys.PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL, Keys.APIS_REST_VS_MESSAGING)
+    ],
+    [Keys.PATRONES_ADVANCED_INBOX, new Referencia('https://medium.com/hprog99/overcoming-message-delivery-challenges-in-distributed-systems-a-comprehensive-look-at-outbox-and-a669e5f21898', 'Patron Inbox', PATRONES_KEY, 'Patron Inbox', '2025/03/18')
+        .addRelatedItems(Keys.APIS_IDEMPOTENCIA)
+    ],
+    [Keys.PATRONES_ADVANCED_UNIT_OF_WORK, new Referencia('https://java-design-patterns.com/patterns/unit-of-work/', 'Unit of Work', PATRONES_KEY, 'Unit of Work', '2025/03/09')
+        .addRelatedItems(Keys.PERSISTENCY_ACID, Keys.PERSISTENCY_INTERMEDIATE_ORM, Keys.ESTRATEGIAS_DESARROLLO_DDD)
+    ],
+    [Keys.PATRONES_ADVANCED_DISTRIBUTED_SYSTEMS, new Referencia('https://medium.com/@maheshsaini.sec/10-must-know-distributed-system-patterns-ab98c594806a', 'Patrones para Sistemas Distribuidos', PATRONES_KEY, 'Sistemas Distribuidos', '2025/04/02')
         .addRelatedItems(Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.MICROSERVICES_FUNDAMENTALS, Keys.CONTENEDORES_KUBERNETES, Keys.CD_CI_CELL_BASED_ARQUITECTURE, Keys.GIT_STRUCTURE_AND_CONCEPTS, Keys.MICROSERVICES_ADVANCED_PRODUCER_CONSUMER_PROBLEM)
         .addMoreReferences('https://www.geeksforgeeks.org/system-design/distributed-system-patterns/')
     ],
-    [Keys.PATRONES_STATE, new Referencia('https://maxim-gorin.medium.com/stop-writing-if-else-trees-use-the-state-pattern-instead-1fe9ff39a39c', 'Patron State', PATRONES_KEY, 'Patron State', '2025/04/20')
-        .addRelatedItems(Keys.CALIDAD_IF_ELSE, Keys.POO_POLIMORFISMO, Keys.PRINCIPIOS_SOLID, Keys.POO_ENUMS, Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS)
-    ],
-    [Keys.PATRONES_FOR_INTEGRATION, new Referencia('https://docs.oracle.com/cd/E17904_01/doc.1111/e17363/chapter05.htm#FPCON244', 'Patrones para Integraciones', PATRONES_KEY, 'Integraciones', '2025/05/07')
+    [Keys.PATRONES_ADVANCED_FOR_INTEGRATION, new Referencia('https://docs.oracle.com/cd/E17904_01/doc.1111/e17363/chapter05.htm#FPCON244', 'Patrones para Integraciones', PATRONES_KEY, 'Integraciones', '2025/05/07')
         .addRelatedItems(Keys.APIS_REST_VS_MESSAGING, Keys.EJECUCION_BLOCKING_AND_NO_BLOCKING, Keys.ESTRATEGIAS_DESARROLLO_BFF, Keys.SYSTEM_DESIGN_QUEUES)
         .addMoreReferences('https://medium.com/mandiri-engineering/fire-and-forget-e59b745c9f97', 'https://gravitar.biz/bi/tipos-tratamiento-datos/')
     ],
-    [Keys.PATRONES_RESILIENCIA, new Referencia('https://www.paradigmadigital.com/dev/4-patrones-resiliencia-fundamentales/', 'Patrones & Resiliencia', PATRONES_KEY, 'Patrones & Resiliencia', '2025/08/14')
+    [Keys.PATRONES_ADVANCED_RESILIENCIA, new Referencia('https://www.paradigmadigital.com/dev/4-patrones-resiliencia-fundamentales/', 'Patrones & Resiliencia', PATRONES_KEY, 'Patrones & Resiliencia', '2025/08/14')
         .addRelatedItems(Keys.CD_CI_FAILOVER, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.MICROSERVICES_ANALISIS, Keys.LEYES_MURPHY, Keys.APIS_IDEMPOTENCIA)
         .addMoreReferences('https://aws.amazon.com/es/blogs/aws-spanish/entender-los-patrones-de-resiliencia-y-las-consideraciones-claves-para-arquitecturar-eficientemente-en-la-nube/')
     ],
-    [Keys.PATRONES_MESSAGING, new Referencia('https://yasir.com.pk/blog/system-design/messaging/messaging-patterns-for-scalable-systems', 'Patrones Para Mensajeria', PATRONES_KEY, 'Patrones & Mensajeria', '2025/09/15')
+    [Keys.PATRONES_ADVANCED_MESSAGING, new Referencia('https://yasir.com.pk/blog/system-design/messaging/messaging-patterns-for-scalable-systems', 'Patrones Para Mensajeria', PATRONES_KEY, 'Patrones & Mensajeria', '2025/09/15')
         .addRelatedItems(Keys.SYSTEM_DESIGN_QUEUES, Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.MICROSERVICES_ADVANCED_DEAD_LETTER_QUEUE, Keys.MICROSERVICES_EVENTS_VS_REQUEST_RESPONSE, Keys.ANALISIS_DELIVERY_GUARANTED, Keys.HARDWARE_ROUTING_MESSAGES, Keys.PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL)
         .addMoreReferences('https://java-design-patterns.com/patterns/fanout-fanin/')
     ],
@@ -1140,7 +1138,7 @@ export const TESTING_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.BUENAS_PRACTICAS_DEBUGGING, Keys.BUENAS_PRACTICAS_LOGGING, Keys.PEOPLE_CAPA_8, Keys.COMPILACION_ERRORS_AND_EXCEPTIONS)
     ],
     [Keys.TESTING_INTEGRATION, new Referencia('https://qalified.com/es/blog/pruebas-de-integracion-que-son/', 'Pruebas de Integración', TESTING_KEY, 'Integracion', '2025/09/10', '2026/03/16')
-        .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_BOTTOM_UP_AND_TOP_DOWN, Keys.PATRONES_FOR_INTEGRATION, Keys.POO_COUPLING_AND_COHESION, Keys.METODOLOGIAS_MODEL_BING_BANG, Keys.CD_CI_RULES, Keys.FRAMEWORKS_IOD_SPRING)
+        .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_BOTTOM_UP_AND_TOP_DOWN, Keys.PATRONES_ADVANCED_FOR_INTEGRATION, Keys.POO_COUPLING_AND_COHESION, Keys.METODOLOGIAS_MODEL_BING_BANG, Keys.CD_CI_RULES, Keys.FRAMEWORKS_IOD_SPRING)
         .addMoreReferences('https://www.baeldung.com/spring-tests')
     ],
     [Keys.TESTING_E2E, new Referencia('https://martinfowler.com/articles/practical-test-pyramid.html', 'Pruebas E2E & Aceptación', TESTING_KEY, 'E2E & Aceptación', '2026/03/16')
@@ -1148,7 +1146,7 @@ export const TESTING_REF = new Map<string, Referencia>([
         .addMoreReferences('https://stackoverflow.com/questions/6453235/what-does-damp-not-dry-mean-when-talking-about-unit-tests')
     ],
     [Keys.TESTING_CONTRACT_TESTING, new Referencia('https://www.paradigmadigital.com/dev/patrones-arquitectura-microservicios-consumer-driven-contract-testing/', 'Contract Testing', TESTING_KEY, 'Contract Testing', '2025/08/19')
-        .addRelatedItems(Keys.POO_DESIGN_BY_CONTRACT, Keys.PATRONES_FOR_INTEGRATION, Keys.MICROSERVICES_EVENTS_VS_REQUEST_RESPONSE, Keys.ANALISIS_DOMAIN_EVENTS, Keys.APIS_API_FIRST_VS_CODE_FIRST, Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION, Keys.CD_CI_DEPLOYMENT_PIPELINES, Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES)
+        .addRelatedItems(Keys.POO_DESIGN_BY_CONTRACT, Keys.PATRONES_ADVANCED_FOR_INTEGRATION, Keys.MICROSERVICES_EVENTS_VS_REQUEST_RESPONSE, Keys.ANALISIS_DOMAIN_EVENTS, Keys.APIS_API_FIRST_VS_CODE_FIRST, Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION, Keys.CD_CI_DEPLOYMENT_PIPELINES, Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES)
         .addMoreReferences('https://medium.com/@chinthakadd/contract-testing-for-event-driven-architectures-can-we-do-we-and-how-do-we-177c8e9acfc7')
     ],
     [Keys.TESTING_PROPERTY_TESTING_FUZZING_TESTING, new Referencia('https://www.mayhem.security/blog/what-is-property-based-testing', 'Property Testing & Fuzz Testing', TESTING_KEY, 'Property/Fuzz Testing', '2025/11/22')
@@ -1246,7 +1244,7 @@ export const REFACTORING_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.WEB_SEO, Keys.PRINCIPIOS_KISS)
     ],
     [Keys.REFACTORING_REWRITE_TRAP, new Referencia('https://levelup.gitconnected.com/the-endless-rewrite-why-developers-fall-into-the-start-from-scratch-trap-and-how-to-avoid-it-4a2246837ac5', 'Refactorización & Reconstrucción', REFACTORING_KEY, 'Reconstrucción', '2025/01/01')
-        .addRelatedItems(Keys.CONOCIMIENTOS_EMPIRICOS_COSTO_HUNDIDO, Keys.PATRONES_STRANGLER_FIG)
+        .addRelatedItems(Keys.CONOCIMIENTOS_EMPIRICOS_COSTO_HUNDIDO, Keys.PATRONES_ADVANCED_STRANGLER_FIG)
     ],
     [Keys.REFACTORING_MODERNIZATION_LEGACY, new Referencia('https://martinfowler.com/articles/patterns-legacy-displacement/', 'Modernización del legado', REFACTORING_KEY, 'Modernización', '2025/08/10')
         .addRelatedItems(Keys.NUBE_MIGRATIONS, Keys.REQUISITOS_BUSINESS_VALUE, Keys.AGILES_OUTPUT_AND_OUTCOME, Keys.PRINCIPIOS_DIVIDE_AND_CONQUER, Keys.ANALISIS_TACTIC_DESIGN, Keys.METODOLOGIAS_AGILES, Keys.MICROSERVICES_ARQUITECTURAS, Keys.LEYES_CONWAY, Keys.META_ESTRUCTURAS_SISTEMAS_COMPLEJOS)
@@ -1467,7 +1465,7 @@ export const PERSISTENCY_ADVANCED_REF = new Map<string, Referencia>([
     ],
     [Keys.PERSISTENCY_ADVANCED_UPSERT, new Referencia('https://www.cockroachlabs.com/blog/sql-upsert/', 'Upsert', PERSISTENCY_ADVANCED_KEY, 'Upsert', '2025/12/21')],
     [Keys.PERSISTENCY_ADVANCED_MIGRATIONS, new Referencia('https://medium.com/@jaredhatfield/database-migration-patterns-6b5ede23d06e', 'Patrones de Migración', PERSISTENCY_ADVANCED_KEY, 'Patrones Migración', '2026/01/02')
-        .addRelatedItems(Keys.TESTING_ADVANCED_PERFORMANCE, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRANSACTIONS, Keys.ANALISIS_DATA_CHANGE_DATA_CAPTURE, Keys.ANALISIS_DATA_GOLDEN_RECORD, Keys.PATRONES_STRANGLER_FIG, Keys.MICROSERVICES_ADVANCED_SPLIT_BRAIN)
+        .addRelatedItems(Keys.TESTING_ADVANCED_PERFORMANCE, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRANSACTIONS, Keys.ANALISIS_DATA_CHANGE_DATA_CAPTURE, Keys.ANALISIS_DATA_GOLDEN_RECORD, Keys.PATRONES_ADVANCED_STRANGLER_FIG, Keys.MICROSERVICES_ADVANCED_SPLIT_BRAIN)
         .addMoreReferences('https://medium.com/@adkomyagin/validating-data-like-a-pro-post-migration-integrity-d06300d6bfb8')
     ],
     [Keys.PERSISTENCY_ADVANCED_LEDGER_DATABASE, new Referencia('https://www.techtarget.com/searchcio/definition/ledger-database', 'Ledger database', PERSISTENCY_ADVANCED_KEY, 'Ledger Database', '2026/01/28')
@@ -1475,7 +1473,7 @@ export const PERSISTENCY_ADVANCED_REF = new Map<string, Referencia>([
         .addMoreReferences('https://learn.microsoft.com/en-us/sql/relational-databases/security/ledger/ledger-append-only-ledger-tables?view=sql-server-ver17')
     ],
     [Keys.PERSISTENCY_ADVANCED_LONG_TRANSACTIONS, new Referencia('https://www.linkedin.com/pulse/long-running-transactions-financial-systems-mario-kresnadi/', 'Transacciones largas & performance', PERSISTENCY_ADVANCED_KEY, 'Transacciones largas', '2026/03/01')
-        .addRelatedItems(Keys.CD_CI_MONITORING_AND_ALERTS, Keys.NUBE_PACELC, Keys.PATRONES_SAGA, Keys.PEOPLE_POST_MORTEM)
+        .addRelatedItems(Keys.CD_CI_MONITORING_AND_ALERTS, Keys.NUBE_PACELC, Keys.PATRONES_ADVANCED_SAGA, Keys.PEOPLE_POST_MORTEM)
     ],
     [Keys.PERSISTENCY_ADVANCED_VERTICAL_PARTITIONING_AND_LOOK_UP_TABLE, new Referencia('https://algomaster.io/learn/system-design/vertical-partitioning', 'Particionamiento Vertical Vs Lookup tables', PERSISTENCY_ADVANCED_KEY, 'Lookup tables', '2026/04/02')
         .addRelatedItems(Keys.HARDWARE_ESCALAMIENTO, Keys.VERSIONAMIENTO_DATABASE_VERSION_CONTROL)
@@ -1556,7 +1554,7 @@ export const HARDWARE_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION)
     ],
     [Keys.HARDWARE_ROUTING_MESSAGES, new Referencia('https://www.redhat.com/es/blog/architectural-messaging-patterns', 'Enrutamiento de Mensajes', HARDWARE_KEY, 'Routing', '2025/09/15')
-        .addRelatedItems(Keys.NUBE_LATENCY, Keys.PATRONES_MESSAGING, Keys.SECURITY_CIBER_SECURITY)
+        .addRelatedItems(Keys.NUBE_LATENCY, Keys.PATRONES_ADVANCED_MESSAGING, Keys.SECURITY_CIBER_SECURITY)
         .addMoreReferences('https://www.baeldung.com/cs/multicast-vs-broadcast-anycast-unicast')
     ],
     [Keys.HARDWARE_VIRTUAL_MACHINES_VS_CONTAINERS, new Referencia('https://cloudnativeislamabad.hashnode.dev/virtualization-vs-containerization', 'Maquinas Virtuales VS Contenedores', HARDWARE_KEY, 'VM VS Contenedores')],
@@ -1670,7 +1668,7 @@ export const CI_CD_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.ARQUITECTURAS_DESCOMPOSICION_MODULAR, Keys.ARQUITECTURAS_MONOLITOS, Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES, Keys.VERSIONAMIENTO_VERSIONAMIENTO, Keys.APIS_REST_VS_MESSAGING, Keys.ANALISIS_BOUNDED_CONTEXT, Keys.MICROSERVICES_ARQUITECTURAS, Keys.CONTENEDORES_ORCHESTRATION, Keys.NUBE_NATIVE, Keys.MALAS_PRACTICAS_DEATH_BY_MICROSERVICES)
     ],
     [Keys.CD_CI_INFRAESTRUCTURE_DESIGN, new Referencia('https://medium.com/@osomudeyazudonu/10-infrastructure-design-choices-that-will-haunt-you-in-production-31c1c83fb2a3', 'Diseño & infraestructura', CI_CD_KEY, 'Diseño & infraestructura', '2025/09/02')
-        .addRelatedItems(Keys.TESTING_ADVANCED_ENVIRONMENT, Keys.SYSTEM_THINKING_II, Keys.SYSTEM_DESIGN_SINGLE_POINT_OF_FAILURE, Keys.APIS_API_FIRST, Keys.MICROSERVICES_ADVANCED_PROBLEMS, Keys.LEYES_MURPHY, Keys.SECURITY_LEAST_PRIVILEGE, Keys.PATRONES_DYSTRIBUTED_SYSTEMS, Keys.CALIDAD_CODE_REVIEWS, Keys.HARDWARE_ESCALAMIENTO, Keys.NUBE_DISPONIBILITY, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRACING)
+        .addRelatedItems(Keys.TESTING_ADVANCED_ENVIRONMENT, Keys.SYSTEM_THINKING_II, Keys.SYSTEM_DESIGN_SINGLE_POINT_OF_FAILURE, Keys.APIS_API_FIRST, Keys.MICROSERVICES_ADVANCED_PROBLEMS, Keys.LEYES_MURPHY, Keys.SECURITY_LEAST_PRIVILEGE, Keys.PATRONES_ADVANCED_DISTRIBUTED_SYSTEMS, Keys.CALIDAD_CODE_REVIEWS, Keys.HARDWARE_ESCALAMIENTO, Keys.NUBE_DISPONIBILITY, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRACING)
         .addMoreReferences('https://www.enterspeed.com/insights/it-infrastructure-design-building-a-scalable-and-secure-foundation')
     ],
     [Keys.CD_CI_DI_RPO_RTO, new Referencia('https://www.acronis.com/es/blog/posts/rto-rpo/', 'Disaster Recovery, RPO & RTO', CI_CD_KEY, 'DI & RPO & RTO', '2025/09/05', '2025/10/19')
@@ -1707,7 +1705,7 @@ export const MICRO_SERVICES_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.ARQUITECTURAS_DESCOMPOSICION_MODULAR, Keys.LEYES_CONWAY, Keys.CD_CI_CI_CD, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.NUBE_CAP_TEOREMA)
     ],
     [Keys.MICROSERVICES_PATTERNS, new Referencia('https://blog.openreplay.com/7-microservice-design-patterns-to-use/', 'Patrones & Microservicios', MICRO_SERVICES_KEY, 'Patrones', '2025/01/19', '2025/10/01')
-        .addRelatedItems(Keys.ANALISIS_LIGHT_EVENTS_VS_RICH_EVENTS, Keys.PATRONES_SAGA, Keys.PATRONES_DYSTRIBUTED_SYSTEMS, Keys.MICROSERVICES_ADVANCED_IDEMPOTENCY_I, Keys.MICROSERVICES_BEST_PRACTICES, Keys.ESTRATEGIAS_DESARROLLO_BFF, Keys.APIS_GATEWAY, Keys.SYSTEM_DESIGN_SINGLE_POINT_OF_FAILURE, Keys.PATRONES_CLOUD_DESIGN_PATTERNS, Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS)
+        .addRelatedItems(Keys.ANALISIS_LIGHT_EVENTS_VS_RICH_EVENTS, Keys.PATRONES_ADVANCED_SAGA, Keys.PATRONES_ADVANCED_DISTRIBUTED_SYSTEMS, Keys.MICROSERVICES_ADVANCED_IDEMPOTENCY_I, Keys.MICROSERVICES_BEST_PRACTICES, Keys.ESTRATEGIAS_DESARROLLO_BFF, Keys.APIS_GATEWAY, Keys.SYSTEM_DESIGN_SINGLE_POINT_OF_FAILURE, Keys.PATRONES_ADVANCED_CLOUD_DESIGN_PATTERNS, Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS)
         .addMoreReferences('https://codefarm0.medium.com/5-critical-microservices-patterns-that-actually-work-in-production-66716db72b41')
     ],
     [Keys.MICROSERVICES_ESENTIAL_COMPONENTS, new Referencia('https://newsletter.systemdesigncodex.com/p/essential-components-of-a-production-069', 'Componentes Esenciales', MICRO_SERVICES_KEY, 'Componentes Esenciales', '2025/06/23')
@@ -1717,10 +1715,10 @@ export const MICRO_SERVICES_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.SYSTEM_DESIGN_QUEUES, Keys.ANALISIS_LIGHT_EVENTS_VS_RICH_EVENTS, Keys.PARADIGMAS_REACTIVO)
     ],
     [Keys.MICROSERVICES_EVENTS_VS_REQUEST_RESPONSE, new Referencia('https://javascript.plainenglish.io/event-driven-architecture-vs-request-response-developer-guide-acec290f44a1', 'Basado en Eventos VS Request-Response', MICRO_SERVICES_KEY, 'Events VS Requests', '2025/06/30')
-        .addRelatedItems(Keys.SYSTEM_DESIGN_SYSTEM_TYPES, Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.PATRONES_DYSTRIBUTED_SYSTEMS)
+        .addRelatedItems(Keys.SYSTEM_DESIGN_SYSTEM_TYPES, Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.PATRONES_ADVANCED_DISTRIBUTED_SYSTEMS)
     ],
     [Keys.MICROSERVICES_DATA_ACCESS_PATTERNS, new Referencia('https://medium.com/@jaredhatfield/data-access-patterns-in-microservices-1e51d26ee205', 'Acceso a datos', MICRO_SERVICES_KEY, 'Acceso a datos', '2025/12/29')
-        .addRelatedItems(Keys.NUBE_LATENCY, Keys.POO_COUPLING_AND_COHESION, Keys.APIS_REST_VS_MESSAGING, Keys.VERSIONAMIENTO_VERSIONAMIENTO, Keys.PERSISTENCY_ADVANCED_SCALING_DB, Keys.ANALISIS_DATA_ETL_ELT, Keys.ANALISIS_DATA_BATCH_VS_STREAM, Keys.ANALISIS_DATA_STREAMING_VS_MESSAGING, Keys.PATRONES_MESSAGING, Keys.ANALISIS_TYPE_EVENTS, Keys.VERSIONAMIENTO_EVOLUTION_SCHEMA_AND_SCHEMA_REGISTRY)
+        .addRelatedItems(Keys.NUBE_LATENCY, Keys.POO_COUPLING_AND_COHESION, Keys.APIS_REST_VS_MESSAGING, Keys.VERSIONAMIENTO_VERSIONAMIENTO, Keys.PERSISTENCY_ADVANCED_SCALING_DB, Keys.ANALISIS_DATA_ETL_ELT, Keys.ANALISIS_DATA_BATCH_VS_STREAM, Keys.ANALISIS_DATA_STREAMING_VS_MESSAGING, Keys.PATRONES_ADVANCED_MESSAGING, Keys.ANALISIS_TYPE_EVENTS, Keys.VERSIONAMIENTO_EVOLUTION_SCHEMA_AND_SCHEMA_REGISTRY)
     ],
 ]);
 
@@ -1737,7 +1735,7 @@ export const MICRO_SERVICES_ADVANCED_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.SYSTEM_DESIGN_QUEUES, Keys.EJECUCION_CONCURRENCY_AND_PARALLELISM, Keys.EJECUCION_PROCESS_AND_THREADS)
     ],
     [Keys.MICROSERVICES_ADVANCED_IDEMPOTENCY_I, new Referencia('https://microservices.io/post/microservices/patterns/2020/10/16/idempotent-consumer.html', 'Idempotencia & Duplicacion I', MICRO_SERVICES_ADVANCED_KEY, 'Idempotencia I', '2025/09/01')
-        .addRelatedItems(Keys.SYSTEM_DESIGN_QUEUES, Keys.ANALISIS_DELIVERY_GUARANTED, Keys.ANALISIS_LIGHT_EVENTS_VS_RICH_EVENTS, Keys.PATRONES_OUTBOX, Keys.ANALISIS_DATA_CHANGE_DATA_CAPTURE, Keys.PERSISTENCY_ADVANCED_NO_SQL_TYPES, Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.OBSERVABILIDAD_COMMON_METRICS, Keys.PERSISTENCY_INTERMEDIATE_INDICES, Keys.PERSISTENCY_ADVANCED_UPSERT)
+        .addRelatedItems(Keys.SYSTEM_DESIGN_QUEUES, Keys.ANALISIS_DELIVERY_GUARANTED, Keys.ANALISIS_LIGHT_EVENTS_VS_RICH_EVENTS, Keys.PATRONES_ADVANCED_OUTBOX, Keys.ANALISIS_DATA_CHANGE_DATA_CAPTURE, Keys.PERSISTENCY_ADVANCED_NO_SQL_TYPES, Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.OBSERVABILIDAD_COMMON_METRICS, Keys.PERSISTENCY_INTERMEDIATE_INDICES, Keys.PERSISTENCY_ADVANCED_UPSERT)
         .addMoreReferences('https://nejckorasa.github.io/posts/idempotent-kafka-procesing/', 'https://medium.com/@zdb.dashti/exactly-once-semantics-using-the-idempotent-consumer-pattern-927b2595f231', 'https://www.rabbitmq.com/docs/confirms')
     ],
     [Keys.MICROSERVICES_ADVANCED_IDEMPOTENCY_II, new Referencia('https://medium.com/javarevisited/idempotency-in-distributed-systems-preventing-duplicate-operations-85ce4468d161', 'Idempotencia & Duplicacion II', MICRO_SERVICES_ADVANCED_KEY, 'Idempotencia II', '2026/02/15')
@@ -1754,7 +1752,7 @@ export const MICRO_SERVICES_ADVANCED_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.SYSTEM_DESIGN_QUEUES)
     ],
     [Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRANSACTIONS, new Referencia('https://gist.github.com/rponte/9477858e619d8b986e17771c8be7827f', 'Transacciones Distribuidas', MICRO_SERVICES_ADVANCED_KEY, 'Transacciones Distribuidas', '2025/03/14')
-        .addRelatedItems(Keys.NUBE_TWO_PHASE_COMMIT, Keys.PERSISTENCY_ACID, Keys.PATRONES_SAGA, Keys.OBSERVABILIDAD_OBSERVABILITY, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.PERSISTENCY_ADVANCED_CONSISTENCY)
+        .addRelatedItems(Keys.NUBE_TWO_PHASE_COMMIT, Keys.PERSISTENCY_ACID, Keys.PATRONES_ADVANCED_SAGA, Keys.OBSERVABILIDAD_OBSERVABILITY, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.PERSISTENCY_ADVANCED_CONSISTENCY)
     ],
     [Keys.MICROSERVICES_ADVANCED_PROBLEMS, new Referencia('https://blog.container-solutions.com/why-im-no-longer-talking-to-architects-about-microservices', 'Problemas de los Microservicios', MICRO_SERVICES_ADVANCED_KEY, 'Problemas', '2025/03/17')
         .addRelatedItems(Keys.CONTENEDORES_ORCHESTRATION, Keys.MALAS_PRACTICAS_DEATH_BY_MICROSERVICES, Keys.CD_CI_DEV_OPS, Keys.METODOLOGIAS_AGILES, Keys.OBSERVABILIDAD_SRE, Keys.OBSERVABILIDAD_OBSERVABILITY, Keys.PEOPLE_ONA)
@@ -1764,16 +1762,16 @@ export const MICRO_SERVICES_ADVANCED_REF = new Map<string, Referencia>([
         .addMoreReferences('https://medium.com/mr-plan-publication/monolith-architecture-software-architecture-part-1-845a04ab303c', 'https://medium.com/mr-plan-publication/microservices-and-microservice-architecture-software-architecture-part-2-7ee5fb796270')
     ],
     [Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_MONOLITH, new Referencia('https://levelup.gitconnected.com/your-microservices-strategy-is-broken-you-built-a-distributed-monolith-332f74867f73', 'Monolito distribuido', MICRO_SERVICES_ADVANCED_KEY, 'Monolito distribuido', '2025/09/27')
-        .addRelatedItems(Keys.NUBE_CAP_TEOREMA, Keys.ARQUITECTURAS_MONOLITOS, Keys.ARQUITECTURAS_MODULITHS, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.TESTING_INTEGRATION, Keys.NUBE_TWO_PHASE_COMMIT, Keys.PATRONES_SAGA, Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.EJECUCION_CACHE_AND_TYPES, Keys.CD_CI_FAILOVER, Keys.CD_CI_DEPLOYMENT_PIPELINES, Keys.PATRONES_STRANGLER_FIG, Keys.ANALISIS_STRATEGIC_DESIGN, Keys.OBSERVABILIDAD_SRE, Keys.CD_CI_DEV_OPS, Keys.VERSIONAMIENTO_VERSIONAMIENTO)
+        .addRelatedItems(Keys.NUBE_CAP_TEOREMA, Keys.ARQUITECTURAS_MONOLITOS, Keys.ARQUITECTURAS_MODULITHS, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.TESTING_INTEGRATION, Keys.NUBE_TWO_PHASE_COMMIT, Keys.PATRONES_ADVANCED_SAGA, Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.EJECUCION_CACHE_AND_TYPES, Keys.CD_CI_FAILOVER, Keys.CD_CI_DEPLOYMENT_PIPELINES, Keys.PATRONES_ADVANCED_STRANGLER_FIG, Keys.ANALISIS_STRATEGIC_DESIGN, Keys.OBSERVABILIDAD_SRE, Keys.CD_CI_DEV_OPS, Keys.VERSIONAMIENTO_VERSIONAMIENTO)
     ],
     [Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_LOCKING, new Referencia('https://codefarm0.medium.com/distributed-locking-under-the-hood-of-coordination-2ef8b039c13f', 'Bloqueo distribuido', MICRO_SERVICES_ADVANCED_KEY, 'Bloqueo distribuido', '2025/10/31')
-        .addRelatedItems(Keys.PERSISTENCY_ADVANCED_LOCKING, Keys.EJECUCION_DEAD_LOCKS, Keys.EJECUCION_CONCURRENCY_AND_PARALLELISM, Keys.PATRONES_DYSTRIBUTED_SYSTEMS, Keys.OBSERVABILIDAD_COMMON_METRICS)
+        .addRelatedItems(Keys.PERSISTENCY_ADVANCED_LOCKING, Keys.EJECUCION_DEAD_LOCKS, Keys.EJECUCION_CONCURRENCY_AND_PARALLELISM, Keys.PATRONES_ADVANCED_DISTRIBUTED_SYSTEMS, Keys.OBSERVABILIDAD_COMMON_METRICS)
     ],
     [Keys.MICROSERVICES_ADVANCED_PROCESSING_ARCHETYPES, new Referencia('https://medium.com/@jaredhatfield/lessons-in-asynchronous-messaging-patterns-pitfalls-and-best-practices-35254b3218e8', 'Arquetipos de procesamiento de mensajes', MICRO_SERVICES_ADVANCED_KEY, 'Arquetipos Procesamiento', '2026/01/01')
-        .addRelatedItems(Keys.ANALISIS_DATA_BATCH_VS_STREAM, Keys.ANALISIS_DATA_ETL_ELT, Keys.BUENAS_PRACTICAS_AGGREGATES, Keys.PATRONES_FOR_INTEGRATION, Keys.PATRONES_MESSAGING, Keys.PATRONES_RESILIENCIA, Keys.ANALISIS_TYPE_EVENTS, Keys.OBSERVABILIDAD_COMMON_METRICS)
+        .addRelatedItems(Keys.ANALISIS_DATA_BATCH_VS_STREAM, Keys.ANALISIS_DATA_ETL_ELT, Keys.BUENAS_PRACTICAS_AGGREGATES, Keys.PATRONES_ADVANCED_FOR_INTEGRATION, Keys.PATRONES_ADVANCED_MESSAGING, Keys.PATRONES_ADVANCED_RESILIENCIA, Keys.ANALISIS_TYPE_EVENTS, Keys.OBSERVABILIDAD_COMMON_METRICS)
     ],
     [Keys.MICROSERVICES_ADVANCED_SPLIT_BRAIN, new Referencia('https://www.starwindsoftware.com/blog/whats-split-brain-and-how-to-avoid-it/', 'Split Brain', MICRO_SERVICES_ADVANCED_KEY, 'Split Brain', '2026/03/11')
-        .addRelatedItems(Keys.PATRONES_SAGA, Keys.CD_CI_MONITORING, Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.NUBE_PACELC)
+        .addRelatedItems(Keys.PATRONES_ADVANCED_SAGA, Keys.CD_CI_MONITORING, Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.NUBE_PACELC)
         .addMoreReferences('https://dzone.com/articles/split-brain-in-distributed-systems')
     ]
 ]);
@@ -1799,7 +1797,7 @@ export const OBSERVABILIDAD_REF = new Map<string, Referencia>([
         .addMoreReferences('https://chronosphere.io/learn/what-is-high-cardinality/')
     ],
     [Keys.OBSERVABILIDAD_ACTUATORS, new Referencia('https://medium.com/@gaddamnaveen192/stop-watching-production-fail-do-this-instead-446b7c44b62a', 'Actuators', OBSERVABILIDAD_KEY, 'Actuators', '2026/03/05')
-        .addRelatedItems(Keys.CD_CI_DI_RPO_RTO, Keys.EJECUCION_CACHE_AND_TYPES, Keys.PATRONES_RESILIENCIA)
+        .addRelatedItems(Keys.CD_CI_DI_RPO_RTO, Keys.EJECUCION_CACHE_AND_TYPES, Keys.PATRONES_ADVANCED_RESILIENCIA)
         .addMoreReferences('https://www.syscrest.com/2025/02/securing-spring-boot-actuator/')
     ],
     [Keys.OBSERVABILIDAD_CORRELATION_CAUSATION, new Referencia('https://www.jmp.com/es/statistics-knowledge-portal/what-is-correlation', 'Correlación & Causalidad', OBSERVABILIDAD_KEY, 'Correlación & Causalidad', '2025/03/08')
