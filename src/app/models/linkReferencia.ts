@@ -43,8 +43,8 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.EJECUCION_PREMATURE_OPTIMIZATION;
-export const LAST_UPDATE = Keys.CONOCIMIENTOS_EMPIRICOS_CODE_MAINTAINER;
+export const LAST_ITEM = Keys.PATRONES_ANTI_PATRONES_CONCURRENCY;
+export const LAST_UPDATE = Keys.PATRONES_ENRICHED_MODEL;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -949,7 +949,7 @@ export const PARADIGMAS_REF = new Map<string, Referencia>([
 
 export const PATRONES_KEY = 'Patrones';
 export const PATRONES_REF = new Map<string, Referencia>([
-    [Keys.PATRONES_DEFINITION, new Referencia('http://www.ecured.cu/Patrones_de_dise%C3%B1o_y_arquitectura', '¿ Que son los patrones ?', PATRONES_KEY, 'Definición')],
+    [Keys.PATRONES_DEFINITION, new Referencia('http://www.ecured.cu/Patrones_de_dise%C3%B1o_y_arquitectura', '¿ Que son los patrones ?', PATRONES_KEY, 'Definición', '2026/04/12')],
     [Keys.PATRONES_GOF, new Referencia('https://cleformacion.com/patrones-gof-fecha-de-publicacion/', 'Gang of Four (GoF)', PATRONES_KEY, 'GOF', '', '2024/05/25')],
     [Keys.PATRONES_DESGLOSE_GOF, new Referencia('https://refactoring.guru/es/design-patterns/catalog', 'Definiciones de los GoF', PATRONES_KEY, 'Desglose GOF')],
     [Keys.PATRONES_GRASP, new Referencia('https://www.adictosaltrabajo.com/2003/12/22/grasp/', 'Asignación de responsabilidades', PATRONES_KEY, 'GRASP')],
@@ -957,15 +957,19 @@ export const PATRONES_REF = new Map<string, Referencia>([
     [Keys.PATRONES_ANTI_PATTERNS, new Referencia('https://sg.com.mx/revista/11/anti-patrones-la-mejor-forma-hacer-un-pesimo-sistema-software', 'Antipatrones, Desarrollo', PATRONES_KEY, 'Anti Patrones, Desarrollo')],
     [Keys.PATRONES_TYPES, new Referencia('https://www.javiergarzas.com/2014/08/tipos-patrones-software.html', 'Tipos de patrones', PATRONES_KEY, 'Tipos de Patrones')],
     [Keys.PATRONES_ANTI_PATRONES_PM, new Referencia('https://sourcemaking.com/antipatterns', 'Antipatrones, Product Management', PATRONES_KEY, 'Anti Patrones, PM')],
-    [Keys.PATRONES_ENRICHED_MODEL, new Referencia('https://sacavix.com/2024/05/modelos-anemicos-vs-enriquecidos/', 'Modelo Enriquecido', PATRONES_KEY, 'Modelo Enriquecido', '2024/12/15')
-        .addRelatedItems(Keys.MALAS_PRACTICAS_ANEMIC_DOMAIN, Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.POO_INMUTABILITY, Keys.POO_POO)
+    [Keys.PATRONES_ENRICHED_MODEL, new Referencia('https://memobackend.com.ar/2024-06-11-modelos-anemicos-enriquecidos/', 'Modelo Enriquecido', PATRONES_KEY, 'Modelo Enriquecido', '2024/12/15', '2026/04/12')
+        .addRelatedItems(Keys.MALAS_PRACTICAS_ANEMIC_DOMAIN, Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.POO_INMUTABILITY, Keys.POO_POO, Keys.PRINCIPIOS_TELL_DONT_ASK)
     ],
     [Keys.PATRONES_CRITERIA, new Referencia('https://medium.com/@zerodata.aolink/desafiando-la-complejidad-c%C3%B3mo-el-patr%C3%B3n-criteria-resuelve-la-explosi%C3%B3n-de-m%C3%A9todos-de-nuestro-60ece5829f89', 'Patron Criteria', PATRONES_KEY, 'Patron Criteria', '2025/03/22')
         .addRelatedItems(Keys.ARQUITECTURAS_HEXAGONAL, Keys.PRINCIPIOS_SOLID)
     ],
     [Keys.PATRONES_STATE, new Referencia('https://maxim-gorin.medium.com/stop-writing-if-else-trees-use-the-state-pattern-instead-1fe9ff39a39c', 'Patron State', PATRONES_KEY, 'Patron State', '2025/04/20')
         .addRelatedItems(Keys.CALIDAD_IF_ELSE, Keys.POO_POLIMORFISMO, Keys.PRINCIPIOS_SOLID, Keys.POO_ENUMS, Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS)
-    ]
+    ],
+    [Keys.PATRONES_ANTI_PATRONES_CONCURRENCY, new Referencia('https://medium.com/@gaddamnaveen192/java-concurrency-anti-patterns-that-break-interviews-2090ec3ca2e4', 'Anti Patrones, concurrencia', PATRONES_KEY, 'Concurrencia', '2026/04/12')
+        .addRelatedItems(Keys.EJECUCION_CONCURRENCY_AND_PARALLELISM, Keys.EJECUCION_DEAD_LOCKS, Keys.FRAMEWORKS_SPRING_ANNOTATIONS, Keys.SYSTEM_DESIGN_CONTENTION)
+        .addMoreReferences('https://mikemybytes.com/2024/02/28/curiosities-of-java-virtual-threads-pinning-with-synchronized/', 'https://jenkov.com/tutorials/java-concurrency/concurrency-models.html')
+    ],
 ]);
 
 export const PATRONES_ADVANCED_KEY = 'Patrones-avanzado';

@@ -1,6 +1,9 @@
 {
   "definicionPatrones": [
-    "- Son soluciones especificas y reutilizables a problemas comunes, o con abstracciones similares, los más conocidos son: ",
+    "- Son soluciones especificas y reutilizables a problemas comunes, o con abstracciones similares ",
+    "- Usados de forma estrategica evitan reiventar la rueda y ayudan al entendimiento del sistema por medio de un lenguaje en comun ",
+    "",
+    "- Los más conocidos son: ",
     "<strong>GOF:</strong> Que se dividen en 3, creacionales, estructurales y de comportamiento ",
     "<strong>GRASP:</strong> Representan los principios básicos de la asignación de responsabilidades a objetos, en forma de patrones "
   ],
@@ -71,7 +74,7 @@
     " - De su area de parametros ",
     " - Un objeto creado en su propio ambito (los demás se dan por incluidos)"
   ],
-  "antipatronesDev": [
+  "antipatrones-desarrollo": [
     "- Son malas soluciones a problemas comunes que parecen buena idea, y nacen del afan de implementar patrones o de  mezclarlos de manera icorrecta ",
     "",
     "<strong>- Golden Hammer:</strong> Pretende que todo se solucione de la misma manera o con el mismo lenguaje",
@@ -140,6 +143,7 @@
   "enrichedModel": [
     "- En <strong>POO</strong> la forma como se diseñan las clases tiene un impacto significativo en la calidad y mantenibilidad del código ",
     "- En Java es comun el uso de modelos(entidades), DTO, y Objetos planos (POJO), que se pueden crear como simples clases con atributos ",
+    "- Los DTO (Data Transfer Objects) que solo deberian usarse como empaquetadores entre capas ",
     "",
     "<strong>Clases anemicas:</strong>",
     "- Clases contenedoras de datos, sin lógica significativa para el negocio ",
@@ -148,7 +152,7 @@
     "",
     "<strong>Clases enriquecidas:</strong>",
     "- La clase encapsula tanto los datos como las operaciones relacionadas con esos datos ",
-    "- Una clase no solo debe transportar datos como un DTO, también debe comportamientos y validaciones sobre estos ",
+    "- Una clase no solo debe transportar datos como un DTO, también tiene comportamientos y validaciones sobre estos ",
     "- Al ser la misma clase la encargada de su manipulación se mejora la encapsulación y la cohesión ",
     "",
     "<strong>Inmutabilidad:</strong>",
@@ -161,6 +165,7 @@
     "- Entre más consultas y funciones se vayan agregando es normal que el Repository sufra una explosión de metodos desmesurada ",
     " - que suele surgir en el intento de NO romper el principio de Open/Close, parte de <strong>SOLID</strong>, volviendose necesario usar Criteria ",
     "- Lo que busca es poder consultar de manera modular y reutilizable con criterios de busqueda flexibles ",
+    "",
     "- Asi se pueden realizar busquedas complejas mediante la union de operaciones genericas definidas por el dominio ",
     "- Para una correcta implementación, deben existir adaptadores que conviertan la consulta expresada de manera generica, ",
     " - a un Query listo para ser ejecutado y totalmente compatible con el Motor de BD a usar "
@@ -179,5 +184,32 @@
     "- Si los cambios son poco frecuentes y el rendimiento es importante, la sobrecarga de clases no es rentable ",
     "- Si existe un numero definido de estados y no van a crecer, este patron realmente destaca en escenarios complejos y que cambian con el tiempo ",
     "- Un enfoque inicial puede darse perfectamente con if o enumeraciones y evolucionar en la medida en que el mantenimiento se dificulte "
+  ],
+  "antipatrones-concurrencia": [
+    "- Ejecutar una aplicación multihilo no solo significa que puede ejecutar más cosas al mismo tiempo, tambien significa que puede tener nuevos tipos de errores ",
+    "",
+    "<strong>Threads Are Cheap:</strong> Crear demasiados hilos parece una opción lógica para procesar concurrentemente muchas peticiones, pero los hilos NO son gratis ",
+    "- Cada hilo requiere memoria, uso de la CPU, contención con otros hilos, cambio de contexto ",
+    "- Un ejemplo común, es crear un hilo por cada nueva solicitud, sin una correcta gestión eventualmente se puede generar un bloqueo y colapso de la aplicación ",
+    "<strong>Como hacerlo:</strong> Utilizar thread pools y reutilización de hilos, las tareas se encolan en lugar de solicitar recursos indiscriminadamente ",
+    "",
+    "<strong>Synchronizing Everything:</strong> Cuando la inconsistencia de los datos es muy grande, una de las soluciones más fáciles es la sincronización obligatoria entre hilos ",
+    "- Actualizaciones de cache, contadores en memoria, Objetos de tipo Singleton ",
+    "- Este problema ha vuelto a ser relevante con Java 21 y virtual threads, que pueden presentar problemas de <em>pinning</em> ",
+    "- Sincronizar significa bloquear, si son operaciones complejas de mucho tiempo, entre más crezca la cola, poco a poco se convertirá en un cuello de botella ",
+    "<strong>Como hacerlo:</strong> Sincroniza de manera concisa, y sincronizar unicamente lo que realmente necesite protección ",
+    "",
+    "<strong>Thread Safety:</strong> Por ejemplo un Bean de Spring, su alcance es Singleton por defecto, si este usa datos mutables, se pueden presentar condiciones de carrera ",
+    "- Multiples hilos pueden acceder al mismo recurso y si no esta sincronizado o protegido ante concurrencia, el comportamiento será impredecible ",
+    "<strong>Como hacerlo:</strong> Hacer las funciones sin estado o usar estructuras seguras para concurrencia ",
+    "",
+    "<strong>Deadlocks:</strong> Estado en el que dos o más hilos se bloquean mutuamente esperando recursos que el otro retiene ",
+    "- Para que esto se de, se deben cumplir las 4 <em>condiciones de Coffman</em>, Java no advierte, el hilo queda suspendido esperando un bloqueo que nunca se libera ",
+    "<strong>Como evitarlos:</strong> Adquirir los bloqueos (synchronized) siempre en el mismo orden e incluso evitelos en la medida de lo posible ",
+    "",
+    "<strong><em>volatile</em> Solves Everything:</strong> En Java es una palabra clave para trabajar en un ambiente multihilos, pero eso no la excluye de problemas ",
+    "- Esta palabra reservada garantiza la visibilidad, pero no la atomicidad ",
+    "<strong>Como usarla:</strong> Se puede usar para visibilidad del estado o flags (banderas) ",
+    " - Para atributos con operaciones compuestas (read-modify-write), se usan estructuras seguras para concurrencia, como AtomicInteger o AtomicReference "
   ]
 }
