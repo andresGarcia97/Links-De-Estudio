@@ -204,6 +204,7 @@ export const PATRONES_ADVANCED_DISTRIBUTED_SYSTEMS = 'patternsDistributedSystems
 export const PATRONES_ADVANCED_FOR_INTEGRATION = 'patternsForIntegrations';
 export const PATRONES_ADVANCED_RESILIENCIA = 'patronesResiliencia';
 export const PATRONES_ADVANCED_MESSAGING = 'patronesMessaging';
+export const PATRONES_ADVANCED_DOUBLE_CHECKING = 'doubleCheckLock';
 export const NUBE_NUBE = 'nube';
 export const NUBE_IAAS_PAAS_SAAS = 'iaas-paas-saas';
 export const NUBE_CAAS_DAAS_FAAS = 'caas-daas-faas';

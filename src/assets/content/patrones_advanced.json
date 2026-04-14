@@ -275,5 +275,11 @@
     "",
     "<strong>Dead Letter Queue(DLQ):</strong> Mensajes que requieren atención, despues de haber haber fallado multiples veces, sin corregir el problema de raiz ",
     "- Estas previenen el bloqueo del sistema antes errores, al mismo tiempo que evita o reduce la perdida de mensajes y pueden activar alertas "
+  ],
+  "doubleCheckLock": [
+    "- Es un patrón que minimiza la adquisición del lock de sincronización, verificando la condición antes de intentar bloquearlo ",
+    "- Mejora el rendimiento en escenarios donde el costo de sincronización por cada invocación es significativo ",
+    "- Introduce complejidad; si la frecuencia de acceso es baja, un bloque con synchronized sin doble verificación es suficiente ",
+    "- Es el patrón base para implementar lazy initialization de recursos compartidos en entornos multihilo "
   ]
 }

@@ -43,7 +43,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.PATRONES_ANTI_PATRONES_CONCURRENCY;
+export const LAST_ITEM = Keys.PATRONES_ADVANCED_DOUBLE_CHECKING;
 export const LAST_UPDATE = Keys.PATRONES_ENRICHED_MODEL;
 
 export const AGILES_KEY = 'Agiles';
@@ -974,45 +974,48 @@ export const PATRONES_REF = new Map<string, Referencia>([
 
 export const PATRONES_ADVANCED_KEY = 'Patrones-avanzado';
 export const PATRONES_ADVANCED_REF = new Map<string, Referencia>([
-    [Keys.PATRONES_ADVANCED_PERSISTENCE_PATTERNS, new Referencia('https://www.infoq.com/articles/architecting-java-persistence-patterns-and-strategies/', 'Persistencia & manejo de datos', PATRONES_KEY, 'Persistencia & Datos', '', '2024/05/26')
+    [Keys.PATRONES_ADVANCED_PERSISTENCE_PATTERNS, new Referencia('https://www.infoq.com/articles/architecting-java-persistence-patterns-and-strategies/', 'Persistencia & manejo de datos', PATRONES_ADVANCED_KEY, 'Persistencia & Datos', '', '2024/05/26')
         .addRelatedItems(Keys.POO_POO, Keys.POO_INMUTABILITY, Keys.PARADIGMAS_PARADIGMA_DATOS)
     ],
-    [Keys.PATRONES_ADVANCED_SAGA, new Referencia('https://docs.aws.amazon.com/es_es/prescriptive-guidance/latest/cloud-design-patterns/saga.html', 'Patron Saga', PATRONES_KEY, 'Patron Saga', '', '2025/03/14')
+    [Keys.PATRONES_ADVANCED_SAGA, new Referencia('https://docs.aws.amazon.com/es_es/prescriptive-guidance/latest/cloud-design-patterns/saga.html', 'Patron Saga', PATRONES_ADVANCED_KEY, 'Patron Saga', '', '2025/03/14')
         .addRelatedItems(Keys.SYSTEM_DESIGN_SINGLE_POINT_OF_FAILURE, Keys.APIS_IDEMPOTENCIA)
     ],
-    [Keys.PATRONES_ADVANCED_CQRS, new Referencia('https://learn.microsoft.com/es-mx/azure/architecture/patterns/cqrs', 'Patron CQRS', PATRONES_KEY, 'Patron CQRS', '', '2024/10/18')],
-    [Keys.PATRONES_ADVANCED_UNDO_REDO, new Referencia('https://medium.com/dottech/implementando-undo-redo-con-ngrx-o-redux-f8ef5de535ef', 'Patron Undo-Redo', PATRONES_KEY, 'Patron undo-redo', '', '2025/04/02')],
-    [Keys.PATRONES_ADVANCED_STRANGLER_FIG, new Referencia('https://martinfowler.com/bliki/StranglerFigApplication.html', 'StranglerFig App', PATRONES_KEY, 'StranglerFig App', '', '2024/09/22')
+    [Keys.PATRONES_ADVANCED_CQRS, new Referencia('https://learn.microsoft.com/es-mx/azure/architecture/patterns/cqrs', 'Patron CQRS', PATRONES_ADVANCED_KEY, 'Patron CQRS', '', '2024/10/18')],
+    [Keys.PATRONES_ADVANCED_UNDO_REDO, new Referencia('https://medium.com/dottech/implementando-undo-redo-con-ngrx-o-redux-f8ef5de535ef', 'Patron Undo-Redo', PATRONES_ADVANCED_KEY, 'Patron undo-redo', '', '2025/04/02')],
+    [Keys.PATRONES_ADVANCED_STRANGLER_FIG, new Referencia('https://martinfowler.com/bliki/StranglerFigApplication.html', 'StranglerFig App', PATRONES_ADVANCED_KEY, 'StranglerFig App', '', '2024/09/22')
         .addRelatedItems(Keys.LEYES_CONWAY)
     ],
-    [Keys.PATRONES_ADVANCED_CLOUD_DESIGN_PATTERNS, new Referencia('https://learn.microsoft.com/es-mx/azure/architecture/patterns/', 'Patrones Para la Nube', PATRONES_KEY, 'Patrones Nube', '2024/06/02')
+    [Keys.PATRONES_ADVANCED_CLOUD_DESIGN_PATTERNS, new Referencia('https://learn.microsoft.com/es-mx/azure/architecture/patterns/', 'Patrones Para la Nube', PATRONES_ADVANCED_KEY, 'Patrones Nube', '2024/06/02')
         .addRelatedItems(Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.PERSISTENCY_ADVANCED_CONSISTENCY)
     ],
-    [Keys.PATRONES_ADVANCED_OUTBOX, new Referencia('https://www.baeldung.com/cs/outbox-pattern-microservices', 'Patron Outbox', PATRONES_KEY, 'Patron Outbox', '2025/01/12')
+    [Keys.PATRONES_ADVANCED_OUTBOX, new Referencia('https://www.baeldung.com/cs/outbox-pattern-microservices', 'Patron Outbox', PATRONES_ADVANCED_KEY, 'Patron Outbox', '2025/01/12')
         .addRelatedItems(Keys.PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL, Keys.APIS_REST_VS_MESSAGING)
     ],
-    [Keys.PATRONES_ADVANCED_INBOX, new Referencia('https://medium.com/hprog99/overcoming-message-delivery-challenges-in-distributed-systems-a-comprehensive-look-at-outbox-and-a669e5f21898', 'Patron Inbox', PATRONES_KEY, 'Patron Inbox', '2025/03/18')
+    [Keys.PATRONES_ADVANCED_INBOX, new Referencia('https://medium.com/hprog99/overcoming-message-delivery-challenges-in-distributed-systems-a-comprehensive-look-at-outbox-and-a669e5f21898', 'Patron Inbox', PATRONES_ADVANCED_KEY, 'Patron Inbox', '2025/03/18')
         .addRelatedItems(Keys.APIS_IDEMPOTENCIA)
     ],
-    [Keys.PATRONES_ADVANCED_UNIT_OF_WORK, new Referencia('https://java-design-patterns.com/patterns/unit-of-work/', 'Unit of Work', PATRONES_KEY, 'Unit of Work', '2025/03/09')
+    [Keys.PATRONES_ADVANCED_UNIT_OF_WORK, new Referencia('https://java-design-patterns.com/patterns/unit-of-work/', 'Unit of Work', PATRONES_ADVANCED_KEY, 'Unit of Work', '2025/03/09')
         .addRelatedItems(Keys.PERSISTENCY_ACID, Keys.PERSISTENCY_INTERMEDIATE_ORM, Keys.ESTRATEGIAS_DESARROLLO_DDD)
     ],
-    [Keys.PATRONES_ADVANCED_DISTRIBUTED_SYSTEMS, new Referencia('https://medium.com/@maheshsaini.sec/10-must-know-distributed-system-patterns-ab98c594806a', 'Patrones para Sistemas Distribuidos', PATRONES_KEY, 'Sistemas Distribuidos', '2025/04/02')
+    [Keys.PATRONES_ADVANCED_DISTRIBUTED_SYSTEMS, new Referencia('https://medium.com/@maheshsaini.sec/10-must-know-distributed-system-patterns-ab98c594806a', 'Patrones para Sistemas Distribuidos', PATRONES_ADVANCED_KEY, 'Sistemas Distribuidos', '2025/04/02')
         .addRelatedItems(Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.MICROSERVICES_FUNDAMENTALS, Keys.CONTENEDORES_KUBERNETES, Keys.CD_CI_CELL_BASED_ARQUITECTURE, Keys.GIT_STRUCTURE_AND_CONCEPTS, Keys.MICROSERVICES_ADVANCED_PRODUCER_CONSUMER_PROBLEM)
         .addMoreReferences('https://www.geeksforgeeks.org/system-design/distributed-system-patterns/')
     ],
-    [Keys.PATRONES_ADVANCED_FOR_INTEGRATION, new Referencia('https://docs.oracle.com/cd/E17904_01/doc.1111/e17363/chapter05.htm#FPCON244', 'Patrones para Integraciones', PATRONES_KEY, 'Integraciones', '2025/05/07')
+    [Keys.PATRONES_ADVANCED_FOR_INTEGRATION, new Referencia('https://docs.oracle.com/cd/E17904_01/doc.1111/e17363/chapter05.htm#FPCON244', 'Patrones para Integraciones', PATRONES_ADVANCED_KEY, 'Integraciones', '2025/05/07')
         .addRelatedItems(Keys.APIS_REST_VS_MESSAGING, Keys.EJECUCION_BLOCKING_AND_NO_BLOCKING, Keys.ESTRATEGIAS_DESARROLLO_BFF, Keys.SYSTEM_DESIGN_QUEUES)
         .addMoreReferences('https://medium.com/mandiri-engineering/fire-and-forget-e59b745c9f97', 'https://gravitar.biz/bi/tipos-tratamiento-datos/')
     ],
-    [Keys.PATRONES_ADVANCED_RESILIENCIA, new Referencia('https://www.paradigmadigital.com/dev/4-patrones-resiliencia-fundamentales/', 'Patrones & Resiliencia', PATRONES_KEY, 'Patrones & Resiliencia', '2025/08/14')
+    [Keys.PATRONES_ADVANCED_RESILIENCIA, new Referencia('https://www.paradigmadigital.com/dev/4-patrones-resiliencia-fundamentales/', 'Patrones & Resiliencia', PATRONES_ADVANCED_KEY, 'Patrones & Resiliencia', '2025/08/14')
         .addRelatedItems(Keys.CD_CI_FAILOVER, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.MICROSERVICES_ANALISIS, Keys.LEYES_MURPHY, Keys.APIS_IDEMPOTENCIA)
         .addMoreReferences('https://aws.amazon.com/es/blogs/aws-spanish/entender-los-patrones-de-resiliencia-y-las-consideraciones-claves-para-arquitecturar-eficientemente-en-la-nube/')
     ],
-    [Keys.PATRONES_ADVANCED_MESSAGING, new Referencia('https://yasir.com.pk/blog/system-design/messaging/messaging-patterns-for-scalable-systems', 'Patrones Para Mensajeria', PATRONES_KEY, 'Patrones & Mensajeria', '2025/09/15')
+    [Keys.PATRONES_ADVANCED_MESSAGING, new Referencia('https://yasir.com.pk/blog/system-design/messaging/messaging-patterns-for-scalable-systems', 'Patrones Para Mensajeria', PATRONES_ADVANCED_KEY, 'Patrones & Mensajeria', '2025/09/15')
         .addRelatedItems(Keys.SYSTEM_DESIGN_QUEUES, Keys.ARQUITECTURAS_EVENT_DRIVEN, Keys.MICROSERVICES_ADVANCED_DEAD_LETTER_QUEUE, Keys.MICROSERVICES_EVENTS_VS_REQUEST_RESPONSE, Keys.ANALISIS_DELIVERY_GUARANTED, Keys.HARDWARE_ROUTING_MESSAGES, Keys.PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL)
         .addMoreReferences('https://java-design-patterns.com/patterns/fanout-fanin/')
     ],
+    [Keys.PATRONES_ADVANCED_DOUBLE_CHECKING, new Referencia('https://sergeylappo.github.io/posts/double-checked-locking/', 'Double checked locking', PATRONES_ADVANCED_KEY, 'Double Checked Locking', '2026/04/13')
+        .addRelatedItems(Keys.COMPILACION_OBJECT_CREATION)
+    ]
 ]);
 
 export const PEOPLE_KEY = 'Personas';
