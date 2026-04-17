@@ -43,7 +43,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.PATRONES_ADVANCED_DOUBLE_CHECKING;
+export const LAST_ITEM = Keys.SECURITY_HASHING_ENCRYPTION;
 export const LAST_UPDATE = Keys.PATRONES_ENRICHED_MODEL;
 
 export const AGILES_KEY = 'Agiles';
@@ -1313,7 +1313,9 @@ export const SECURITY_KEY = 'Seguridad';
 export const SECURITY_REF = new Map<string, Referencia>([
     //['firewall', new Referencia('https://idgrup.com/firewall-que-es-y-como-funciona/#:~:text=Un%20firewall%2C%20tambi%C3%A9n%20llamado%20cortafuegos,ordenadores%20de%20una%20misma%20red', 'Firewall', SECURITY_KEY, 'Firewall')],
     //['firewall', new Referencia('https://www.cisco.com/c/es_mx/products/security/firewalls/what-is-a-firewall.html', 'Firewall', SECURITY_KEY, 'Firewall', '', '2024/06/16')],
-    [Keys.SECURITY_FIREWALL, new Referencia('https://www.cisco.com/site/us/en/learn/topics/security/what-is-a-firewall.html', 'Firewall', SECURITY_KEY, 'Firewall', '2024/06/16', '2025/05/18').addRelatedItems(Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.APIS_GATEWAY)],
+    [Keys.SECURITY_FIREWALL, new Referencia('https://www.cisco.com/site/us/en/learn/topics/security/what-is-a-firewall.html', 'Firewall', SECURITY_KEY, 'Firewall', '2024/06/16', '2025/05/18')
+        .addRelatedItems(Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.APIS_GATEWAY)
+    ],
     [Keys.SECURITY_PROTOCOLOS_SEGURITY, new Referencia('https://www.websecurity.digicert.com/es/es/security-topics/what-is-ssl-tls-https', 'SSL, TSL, HTTPS', SECURITY_KEY, 'SSL, TSL, HTTPS')],
     [Keys.SECURITY_PROXY, new Referencia('https://www.welivesecurity.com/la-es/2020/01/02/que-es-proxy-para-que-sirve/', 'Proxy & Proxy Inverso', SECURITY_KEY, 'Proxy & Proxy Inverso', '', '2025/02/15')],
     [Keys.SECURITY_CIBER_SECURITY, new Referencia('https://latam.kaspersky.com/resource-center/definitions/what-is-cyber-security', 'Ciberseguridad y otras amenazas', SECURITY_KEY, 'Ciberseguridad')],
@@ -1343,7 +1345,10 @@ export const SECURITY_REF = new Map<string, Referencia>([
     [Keys.SECURITY_CVE, new Referencia('https://www.fortinet.com/lat/resources/cyberglossary/cve', 'Vulnerabilidades & Exposiciones Comunes', SECURITY_KEY, 'CVE', '2025/05/18')],
     [Keys.SECURITY_ZERO_TRUST, new Referencia('https://www.cloudflare.com/es-es/learning/security/glossary/what-is-zero-trust/', 'Zero Trust & IAM', SECURITY_KEY, 'Zero trust & IAM', '2026/01/11')
         .addRelatedItems('https://www.entrust.com/blog/2023/10/zero-trust-iam-security')
-    ]
+    ],
+    [Keys.SECURITY_HASHING_ENCRYPTION, new Referencia('https://medium.com/@gaddamnaveen192/hashing-vs-encryption-the-mistake-that-separates-good-developers-from-great-ones-26f39fd05eab', 'hashing & encryption', SECURITY_KEY, 'hashing & encryption', '2026/04/17')
+        .addMoreReferences('https://auth0.com/blog/adding-salt-to-hashing-a-better-way-to-store-passwords/')
+    ],
 ]);
 
 export const SMELL_CODES_KEY = 'Smell-Codes';

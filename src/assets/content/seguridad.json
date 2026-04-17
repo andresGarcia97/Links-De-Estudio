@@ -471,5 +471,22 @@
     "<strong>Identity Access Management (IAM):</strong> La gestión de identidades y accesos es fundamental para lograr que Zero trust sea efectiva ",
     "- Se debe manejar un equilibrio de manera que detenga a los atacantes pero no impida el acceso de los usuarios y dispositivos legitimos ",
     "- Tambien se suele contar con <em>Autenticación Multi Factor (MFA)</em> para mitigar el riesgo de apropiación de credenciales y sus privilegios "
+  ],
+  "hashing-vs-encryption": [
+    "<strong>Hashing:</strong> Es un proceso unidireccional que transforma una <strong>entrada</strong> mediante un algoritmo de hash y produce como <strong>salida</strong> una cadena de longitud fija ",
+    "- Esta cadena es opaca y no guarda ninguna relación con la cadena original, este resultado está hecho para ser irreversible pero también determinista ",
+    "- Que sea determinista es esencial para que cualquier texto siempre genere la misma salida y así poder verificar sin necesidad explícita del valor original ",
+    "- Las funciones hash son muy usadas para almacenar contraseñas e información sensible relacionada con la autenticación y autorización de un usuario ",
+    "",
+    "<strong>- Colisiones:</strong> Dependiendo del algoritmo usado, puede darse una colisión, cuando 2 entradas distintas producen exactamente el mismo hash de salida ",
+    "<strong>- Salt:</strong> Para evitar ataques de rainbow tables, se agrega un valor aleatorio único por entrada, garantizando hashes distintos aunque la contraseña sea igual ",
+    "",
+    "<strong>Encryption:</strong> Es cifrar un dato usando una llave, permitiendo recuperar el valor original mediante la misma llave (simétrica) o una relacionada (asimétrica) ",
+    "- El cifrado se aplica a datos que deben protegerse en tránsito o en reposo, pero que requieren ser recuperados en texto claro: ",
+    " &bull; Documentos de identidad  &bull; Copias de seguridad",
+    " &bull; Tarjetas de credito      &bull; API secrets",
+    "",
+    "<strong>- Symmetric Encryption (AES):</strong> Se usa la misma llave tanto para cifrar/descifrar, rápido y eficiente, especialmente con grandes volúmenes de datos ",
+    "<strong>- Asymmetric Encryption (RSA):</strong> Se usan 2 llaves: una pública para cifrar los datos y una privada para descifrarlos "
   ]
 }
