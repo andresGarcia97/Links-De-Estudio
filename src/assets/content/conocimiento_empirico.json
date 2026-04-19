@@ -358,5 +358,17 @@
     "- Puede contribuir desde diferentes areas, ya que al conocerlas puede atender una mayor area de trabajo ",
     "- Comprende las necesidades de otras areas y sabe que las interacciones deben cambiar de acuerdo a cada miembro del equipo  ",
     "- Tiene la mente abierta para aprender de acuerdo a las necesidades y esta en capacidad de cubrir otras areas "
+  ],
+  "Jevons-paradox": [
+    "- El trabajo de los desarrolladores y de las personas que trabajan con tecnología no va a desaparecer por el auge de la IA ",
+    "- Simplemente se transformará, pasará a ser más abstracto y menos repetitivo, tornándose más administrativo también y orientado al negocio ",
+    "",
+    "<strong>Paradoja de Jevons:</strong> <em>Stanley Jevons</em> demostró que cuando la eficiencia en el uso de un recurso aumenta, el consumo total no baja, se dispara ",
+    "- Si producir software es más barato, las empresas querrán sistemas más grandes y complejos; esto ya ocurrió y sigue ocurriendo:",
+    "",
+    "&bull; La invención de la maquina de vapor hizo más eficiente el uso del carbon, pero la demanda no disminuyo, al contrario su uso total se incremento ",
+    "&bull; Con electrodomésticos cada vez más eficientes, el consumo total de energía eléctrica no bajó, sino que aumentó ",
+    "&bull; Bombillos de bajo consumo: al gastar menos energía, dejamos de preocuparnos por apagarlos o por la cantidad, incrementando su uso total ",
+    "&bull; Tener autos que consumen menos combustibles no implica la reducción de su uso, al contrario, lo incentiva al reducir el costo por kilómetro recorrido "
   ]
 }

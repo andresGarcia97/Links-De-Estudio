@@ -43,7 +43,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.SECURITY_HASHING_ENCRYPTION;
+export const LAST_ITEM = Keys.CONOCIMIENTOS_EMPIRICOS_JEVONS;
 export const LAST_UPDATE = Keys.PATRONES_ENRICHED_MODEL;
 
 export const AGILES_KEY = 'Agiles';
@@ -455,7 +455,11 @@ export const CONOCIMIENTO_EMPIRICO = new Map<string, Referencia>([
         .addRelatedItems(Keys.REFACTORING_CLEAN_CODE, Keys.POO_ABSTRACTIONS, Keys.PRINCIPIOS_YAGNI, Keys.POO_HERENCIA_COMPOSICION, Keys.REFACTORING_GOOD_AND_BAD_PRACTICES, Keys.PRINCIPIOS_KISS, Keys.MALAS_PRACTICAS_CONTRA_CALIDAD, Keys.PEOPLE_LANGUAGE_UBICUOS, Keys.PEOPLE_SINDROMES_LABORALES, Keys.CALIDAD_CODE_REVIEWS, Keys.PERSISTENCY_INTERMEDIATE_ORM, Keys.PERSISTENCY_INTERMEDIATE_N_1_SELECTS)
         .addMoreReferences('https://medium.com/javarevisited/what-no-one-told-me-about-becoming-a-tech-lead-0d16f689aa6a')
     ],
-    [Keys.CONOCIMIENTOS_EMPIRICOS_MODEL_T, new Referencia('https://ingenieriadesoftware.es/que-es-t-shaped-developer-y-como-serlo/', 'T-shaped, Modelo T', CONOCIMIENTO_EMPIRICO_KEY, 'Modelo T', '2026/02/07')]
+    [Keys.CONOCIMIENTOS_EMPIRICOS_MODEL_T, new Referencia('https://ingenieriadesoftware.es/que-es-t-shaped-developer-y-como-serlo/', 'T-shaped, Modelo T', CONOCIMIENTO_EMPIRICO_KEY, 'Modelo T', '2026/02/07')],
+    [Keys.CONOCIMIENTOS_EMPIRICOS_JEVONS, new Referencia('https://www.linkedin.com/posts/gustavo-ghioldi-a5722946_softwareengineering-jevonsparadox-wirthslaw-share-7438903908975947776-26fm/', 'Paradoja de Jevons', CONOCIMIENTO_EMPIRICO_KEY, 'Paradoja de Jevons', '2026/04/18')
+        .addRelatedItems(Keys.LEYES_MOORE_AND_WIRTH)
+        .addMoreReferences('https://psicologiaymente.com/cultura/paradoja-jevons')
+    ]
 ]);
 
 export const LEYES_KEY = 'Leyes';
