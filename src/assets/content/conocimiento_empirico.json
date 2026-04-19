@@ -1,9 +1,12 @@
 {
   "cristales-rotos": [
-    "- Esta teoria predice que los desperfectos del ambiente van a generar la sensación de que la ley no existe ",
-    "- Corregir los errores, aun por más por pequeños que sean evitara que el software se degenere ",
-    "- Las pequeñas faltas pueden conllevar a transgresiones mayores ",
-    "- Establecer normas claras y realizar revisiones periodicas ayuda a evitar este fenomeno "
+    "- Esta teoria predice que los desperfectos del ambiente o sobre algun bien o objeto, generan la sensación de descuido y deterioro ",
+    "- Si la ley no existe o no se aplica, se presenta una sensación de que <em>todo vale</em> o simplemente que no hay <em>consecuencias</em> ",
+    "- Corregir los errores, aun por más por pequeños que sean, evitara que la situación empeore ",
+    "",
+    "- En el Software se evita mediante reglas arquitectonicas claras y convenciones de programación a seguir por el equipo, evitando su degeneración ",
+    "- Las pequeñas faltas pueden conllevar a la violación sistematica de las reglas y terminar en transgresiones mayores ",
+    "- Establecer normas claras, realizar revisiones periodicas o la aplicación de la norma de manera estricta, ayuda a evitar este fenomeno "
   ],
   "statusQuo": [
     "- Es la preferencia innata del ser humano a la estabilidad ",
@@ -20,9 +23,11 @@
   "costoHundido": [
     "- La falacia del costo hundido es la tendencia a mantener proyectos fracasados ó obsoletos ",
     "- Esto se debe al tiempo y gastos invertidos en los proyectos, que no queremos soltar por la aversion a las perdidas ",
+    "- La toma de decisiones se ve condicionada por elementos ajenos a la racionalidad (pros & contras) tanto a corto como a largo plazo ",
+    "- Las consecuencias de estas acciones pueden ser realmente dramaticas, desde fracasos personales, hasta descalabros economicos ",
     "",
-    "- En la industria del software es comun tener casos donde hay sistemas que constantemente deben ser parcheados, ",
-    " - costando tiempo y dinero, y donde la solucion más optima seria rehacer el sistema que continuar con este tipo de situaciones ",
+    "- En el Software es comun tener casos donde hay sistemas que constantemente deben ser parcheados, costando tiempo y dinero ",
+    " - donde la solucion más optima seria rehacer el sistema en base a las lecciones aprendidas que continuar con este tipo de situaciones ",
     "",
     "- también estan los casos donde las personas se niegan a abandonar proyectos estables, pero que eventualmente seran obsoletos ",
     " - ya que migrar esto implica un costo, que puede ser menor que mantener a un proyecto legacy; pero esto no se ve a corto plazo "

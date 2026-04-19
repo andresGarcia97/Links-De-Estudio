@@ -29,6 +29,7 @@ export class CalidadComponent implements OnInit {
 
   ngOnInit(): void {
     this.items = this.route.snapshot.data[CALIDAD_PATH.propertyNameData];
+    this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
     this.relatedSections.set(BUENAS_PRACTICAS_KEY, routes.get(BUENAS_PRACTICAS_KEY)!);
     this.relatedSections.set(MALAS_PRACTICAS_KEY,  routes.get(MALAS_PRACTICAS_KEY)!);

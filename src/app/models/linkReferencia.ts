@@ -44,7 +44,7 @@ export class LinkReferencia {
 }
 
 export const LAST_ITEM = Keys.CONOCIMIENTOS_EMPIRICOS_JEVONS;
-export const LAST_UPDATE = Keys.PATRONES_ENRICHED_MODEL;
+export const LAST_UPDATE = Keys.CONOCIMIENTOS_EMPIRICOS_CRISTALES_ROTOS;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -420,9 +420,13 @@ export const EJECUCION_REF = new Map<string, Referencia>([
 
 export const CONOCIMIENTO_EMPIRICO_KEY = 'Empirico';
 export const CONOCIMIENTO_EMPIRICO = new Map<string, Referencia>([
-    [Keys.CONOCIMIENTOS_EMPIRICOS_CRISTALES_ROTOS, new Referencia('https://lamenteesmaravillosa.com/la-teoria-las-ventanas-rotas/', 'Efecto de los cristales rotos', CONOCIMIENTO_EMPIRICO_KEY, 'Cristales rotos')],
+    [Keys.CONOCIMIENTOS_EMPIRICOS_CRISTALES_ROTOS, new Referencia('https://lamenteesmaravillosa.com/la-teoria-las-ventanas-rotas/', 'Cristales rotos ó Ventanas rotas', CONOCIMIENTO_EMPIRICO_KEY, 'Cristales rotos', '', '2026/04/18')
+        .addRelatedItems(Keys.CALIDAD_CLEAN_CODE)
+    ],
     [Keys.CONOCIMIENTOS_EMPIRICOS_STATUS_QUO, new Referencia('https://psicologiaymente.com/social/sesgo-statu-quo/', 'Status Quo', CONOCIMIENTO_EMPIRICO_KEY, 'Status Quo', '', '2025/07/08')],
-    [Keys.CONOCIMIENTOS_EMPIRICOS_COSTO_HUNDIDO, new Referencia('https://psicologiaymente.com/psicologia/falacia-costo-hundido/', 'Falacia del costo hundido', CONOCIMIENTO_EMPIRICO_KEY, 'Costo Hundido')],
+    [Keys.CONOCIMIENTOS_EMPIRICOS_COSTO_HUNDIDO, new Referencia('https://psicologiaymente.com/psicologia/falacia-costo-hundido/', 'Falacia del costo hundido', CONOCIMIENTO_EMPIRICO_KEY, 'Costo Hundido', '', '2026/04/18')
+        .addRelatedItems(Keys.REFACTORING_REWRITE_TRAP)
+    ],
     [Keys.CONOCIMIENTOS_EMPIRICOS_TIPOS_PROGRAMADORES, new Referencia('https://stevenbenner.com/2010/07/the-5-types-of-programmers/', 'Tipos de programadores', CONOCIMIENTO_EMPIRICO_KEY, 'Programadores')],
     [Keys.CONOCIMIENTOS_EMPIRICOS_SESGOS_COGNITIVOS, new Referencia('https://www.brainvestigations.com/neurociencia/sesgo-cognitivo-negocios/', 'Algunos Sesgos cognitivos', CONOCIMIENTO_EMPIRICO_KEY, 'Sesgo Cognitivo')],
     [Keys.CONOCIMIENTOS_EMPIRICOS_PREJUICIOS, new Referencia('https://www.boream.com/insights/sesgos-cognitivos-y-prejuicios-en-los-procesos-de-diseno-de-interfaz-como-combatirlos', 'Prejuicios', CONOCIMIENTO_EMPIRICO_KEY, 'Prejuicios')],
