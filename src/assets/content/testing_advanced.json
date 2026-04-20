@@ -471,5 +471,29 @@
     "&bull; Revisiones de codigo, que ayudan a detectar desde inconsistencias menores, hasta errores significativos ",
     "&bull; El monitoreo de metricas de manera regular, ayuda a anticiparse a las tendencias y darle seguimiento a los problemas actuales ",
     "&bull; Reducir el trabajo en progreso (WIP), esto ayuda al equipo a concentrarse mejor, sin cambiar de contexto y completarlas con estandares más altos "
+  ],
+  "heisenberg-bug": [
+    "- Es una categoria especial de errores, que solo existen cuando nadie los ve ",
+    "- En 1927 <em>Werner Heisenberg</em> formuló el principio de incertidumbre, demostrando que observar un sistema cuántico lo perturba inevitablemente ",
+    "- Intentar observar algo, lo cambia; esto es lo que pasa con este tipo de errores, cuando se buscan, dejan de aparecer ",
+    "",
+    "<strong>¿Por qué sucede esto?</strong>",
+    "&bull; Un computador diferente, más rápido o más lento ",
+    "&bull; Datos diferentes, ya sea por temas de históricos, operaciones, operaciones erróneas, etc. ",
+    "&bull; La latencia, es un factor clave que no siempre se puede replicar ",
+    "&bull; Navegadores diferentes, pestañas abiertas, extensiones, motores de renderizado, buscadores, idiomas, zonas horarias, etc. ",
+    "&bull; Herramientas de desarrollador, al estar activas estas cambian la ejecución y brindan nuevas herramientas ",
+    "",
+    "<strong>¿Por qué las herramientas de depuración mienten?</strong>",
+    "&bull; Agregar logs cambia la sincronización y aumenta el tiempo de escritura aunque sea ínfimo, suficiente para eliminar/enmascarar condiciones de carrera ",
+    "&bull; Interceptar el trafico aumenta la latencia, los errores relacionados con el tiempo de espera ya no apareceran necesariamente ",
+    "&bull; Reinicios, muchos depuradores y herramientas requieren un reinicio para su activación, cambia el estado en memoria y las condiciones previas ",
+    "",
+    "<strong>¿Cómo solucionarlo?</strong>",
+    "&bull; Dejar de buscar su replicación, él no vive en el ambiente de desarrollo, se encuentra donde realmente esta, en producción con los usarios ",
+    "&bull; Utilizar herramientas para registrar sesiones, ver la pantalla, las llamadas de red, el bug se reproduce solo, mientras es capturado en vivo ",
+    "&bull; Enviar una <em>versión canary</em> para que solo cierta cantidad de usuarios (1% al 5%) sean desviados a una versión con logs y rastreo más agresivos ",
+    "&bull; Asegurese de haber agotado todas las alternativas previamente, como la simulación de fallos, datos reales, limitantes para la CPU/Ram, configuraciones ",
+    "&bull; Se han obtenido todos los datos posibles del usuario, un simple paso a paso o pequeños detalles omitidos pueden hacer una gran diferencia "
   ]
 }

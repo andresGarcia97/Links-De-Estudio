@@ -43,7 +43,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.CONOCIMIENTOS_EMPIRICOS_JEVONS;
+export const LAST_ITEM = Keys.TESTING_ADVANCED_HEISENBERG_BUG;
 export const LAST_UPDATE = Keys.CONOCIMIENTOS_EMPIRICOS_CRISTALES_ROTOS;
 
 export const AGILES_KEY = 'Agiles';
@@ -1219,6 +1219,10 @@ export const TESTING_ADVANCED_REF = new Map<string, Referencia>([
     ],
     [Keys.TESTING_ADVANCED_DEFECT_RATE, new Referencia('https://axify.io/blog/defect-rate', 'Tasa de defectos', TESTING_ADVANCED_KEY, 'Defect Rate', '2026/02/22')
         .addRelatedItems(Keys.META_ESTRUCTURAS_SISTEMAS_COMPLEJOS, Keys.CALIDAD_CODE_REVIEWS, Keys.BUENAS_PRACTICAS_STATIC_CODE_ANALYSIS, Keys.PEOPLE_CUSTOMER_LOYALTY, Keys.WEB_USER_INTERFACE, Keys.WEB_USER_XPERIENCE, Keys.ESTRATEGIAS_DESARROLLO_SLDC, Keys.CALIDAD_CODE_REVIEWS, Keys.CALIDAD_DORA_SPACE_METRICS, Keys.REFACTORING_DEUDA_TECNICA_TYPES)
+    ],
+    [Keys.TESTING_ADVANCED_HEISENBERG_BUG, new Referencia('https://medium.com/@vndpal/the-heisenberg-bug-how-to-debug-bugs-that-disappear-9c41affc9500', 'Heisenberg Bug', TESTING_ADVANCED_KEY, 'Heisenberg Bug', '2026/04/19')
+        .addRelatedItems(Keys.CD_CI_DEPLOYMENT_PATTERNS, Keys.SECURITY_CONDICION_CARRERA, Keys.APIS_LATENCY_THROUGHPUT_BANDWITH)
+        .addMoreReferences('https://franverona.com/blog/heisenbug-el-bug-que-cambia-mientras-se-depura', 'https://qpoint.io/blog/debugging-server-heisenbugs/')
     ],
 ]);
 
