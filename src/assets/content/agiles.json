@@ -22,14 +22,15 @@
     "- Todo esto siempre es con el objetivo de tomar decisiones informadas sobre que temas abordar primero y su respectivo <strong>Porque</strong> debidamente justificado "
   ],
   "MUDA": [
-    "- El desperdicio en las empresas viene del termino japones <strong>MUDA</strong>, que es todo lo inutil, superfluo, despilfarro, inservible, ocioso ",
+    "- El desperdicio en las empresas viene del término japones <strong>MUDA</strong>, que engloba todo lo inútil, superfluo, inservible u ocioso dentro de un proceso ",
+    "- Son 7 conceptos desarrollados en el <em>Toyota Production System (TPS)</em>, ideado por el ingeniero <em>Taiichi Ohno</em> ",
     "",
-    "<strong>Sobreproducción:</strong> Producir más de lo demandado, esperando que el mercado lo necesite es una mala praxis, que despilfarra recursos de otras areas ",
-    "<strong>Esperas:</strong> Son los famosos cuellos de botella, donde un proceso alenta a los demás, haciendo perder tiempo a todo el proceso ",
-    "<strong>Transporte:</strong> Todo movimiento innecesario de elementos que no aporta valor debe ser minimizado ",
-    "<strong>Sobre procesos:</strong> Son procesos que aunque pueden ser utiles, no van a volver ser usados, por eso su realización es un desperdicio ",
-    "<strong>Exceso de inventario:</strong> Puede conllevar a perdidad monetarias a la empresa, debido a que se pueden volver obsoletos, o nunca usarse ",
-    "<strong>Movimientos innecesarios:</strong> Todo movimiento que no aporte valor al producto es un despedicio, hasta caminar al trabajo puede serlo ",
+    "<strong>Sobreproducción:</strong> Producir más de lo demandado, esperando que el mercado lo necesite es una mala práctica, que despilfarra recursos ",
+    "<strong>Esperas:</strong> Son los famosos cuellos de botella, donde un proceso ralentiza a los demás, haciendo perder tiempo al proceso en general ",
+    "<strong>Transporte:</strong> Todo movimiento innecesario de elementos que no aporta valor debe ser minimizado, mediante recorridos más eficientes ",
+    "<strong>Sobre procesos:</strong> Son procesos que aunque pueden ser útiles, no están optimizados o no van a volver a ser usados, su realización se ha de reducir ",
+    "<strong>Exceso de inventario:</strong> Puede generar pérdidas monetarias a la empresa, debido a que se pueden volver obsoletos o nunca usarse ",
+    "<strong>Movimientos innecesarios:</strong> Todo movimiento que no aporte valor al producto es un desperdicio, hasta caminar por una herramienta puede serlo ",
     "<strong>Defectos:</strong> Todo error consume tiempo para ser resuelto, independientemente de su tamaño, además de la insatisfacción del cliente "
   ],
   "5S": [
@@ -266,5 +267,19 @@
     "<strong>Clase:</strong> Nombre de la clase en si, el cual debe ser diciente y que ayude a entender el porque de su creación ",
     "<strong>Responsabilidad:</strong> Es lo que es y que funciones tiene, se debe ser especifico, pero no puede estar cerrada a modificaciones ",
     "<strong>Colaborador:</strong> Son otras clases ó entidades que son necesarias para el correcto funcionamiento de la clase "
+  ],
+  "mvp-prototype-poc": [
+    "- Estos 3 conceptos en el contexto del agilismo no son intercambiables, aunque parezcan similares ",
+    "",
+    "<strong>Prueba de concepto:</strong> Es simplemente una prueba de una idea o una suposición, permitiendo confirmar si una tecnología o enfoque técnico es factible ",
+    "- No suelen ser tareas centradas en el usuario final y pueden tardar algunos días, de acuerdo a la profundidad alcanzada ",
+    "",
+    "<strong>Prototipo:</strong> Es una representación básica de cómo lucirá y funcionará el producto, permitiendo validar flujos e interacciones con usuarios finales ",
+    "- Es el siguiente paso tras el discovery, materializando los hallazgos en flujos navegables antes de comprometer esfuerzo de desarrollo ",
+    "",
+    "<strong>Producto minimo viable:</strong> Es una versión funcional pero basica del producto, contiene unicamente las funcionalidades y características esenciales ",
+    " - para poder ser lanzado al mercado; a diferencia de los anteriores, el MVP está construido para soportar uso real en producción ",
+    "- El enfoque principal de un MVP no es desarrollar una aplicación completa desde el inicio, es descubrir como adaptar la siguiente versión del producto ",
+    " - y cubrir más necesidades mediante nuevas funcionalidades o rediseños según la retroalimentación de los usuarios "
   ]
 }

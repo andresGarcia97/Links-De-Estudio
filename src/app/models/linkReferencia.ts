@@ -43,16 +43,17 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.TESTING_ADVANCED_HEISENBERG_BUG;
-export const LAST_UPDATE = Keys.CONOCIMIENTOS_EMPIRICOS_CRISTALES_ROTOS;
+export const LAST_ITEM = Keys.AGILES_MVP_PROTOTYPE_POC;
+export const LAST_UPDATE = Keys.AGILES_MUDA;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
-    //['moscow', new Referencia('https://proagilist.es/blog/agilidad-y-gestion-agil/priorizar-requisitos-tecnica-priorizacion-moscow/', 'MOSCOW', AGILES_KEY, 'MOSCOW')],
     [Keys.AGILES_MOSCOW, new Referencia('https://www.itdo.com/blog/moscow-que-es-y-como-priorizar-en-el-desarrollo-de-tu-aplicacion/', 'MOSCOW', AGILES_KEY, 'MOSCOW', '', '2024/05/01')],
     //['scoring', new Referencia('https://comunidad.iebschool.com/metodologiasparaelcambio/2014/03/23/priorizando-historias-de-usuario/', 'Theme Scoring', AGILES_KEY, 'Theme Scoring')],
     [Keys.AGILES_SCORING, new Referencia('https://www.growingscrummasters.com/keywords/theme-scoring/', 'Theme Scoring', AGILES_KEY, 'Theme Scoring', '', '2025/09/04')],
-    [Keys.AGILES_MUDA, new Referencia('https://prevencontrol.com/prevenblog/las-7-mudas', 'Desperdicio', AGILES_KEY, 'Desperdicio')],
+    [Keys.AGILES_MUDA, new Referencia('https://prevencontrol.com/prevenblog/las-7-mudas', 'Desperdicio', AGILES_KEY, 'MUDA', '', '2026/04/20')
+        .addRelatedItems(Keys.PEOPLE_PEOPLE_PROCESS_TECNOLOGY)
+    ],
     [Keys.AGILES_5S, new Referencia('https://www.gestiopolis.com/5s-seiri-seiton-seiso-seiketsu-y-shitsuke-base-de-la-mejora-continua/', 'Seiri, Seiton, Seiso, Seiketsu, Shitsuke', AGILES_KEY, '5S - Kaizen')],
     //['muda#1', new Referencia('https://samuelcasanova.com/2014/03/los-7-desperdicios-del-desarrollo-de-software-i/', 'Muda en el software, parte #1', AGILES_KEY, 'Muda #1')],
     //['muda#2', new Referencia('https://samuelcasanova.com/2014/03/los-7-desperdicios-del-desarrollo-de-software-y-ii/', 'Muda en el software, parte #2', AGILES_KEY, 'Muda #2')],
@@ -75,6 +76,9 @@ export const AGILES_REF = new Map<string, Referencia>([
     [Keys.AGILES_CRC, new Referencia('https://agilemodeling.com/artifacts/crcmodel.htm', 'Tarjetas Clase-Responsabilidad-Colaborador', AGILES_KEY, 'Tarjetas CRC', '2023/12/11', '2025/04/21')
         .addRelatedItems(Keys.POO_POO, Keys.USER_HISTORIES_USE_CASE_REQUISITOS, Keys.METODOLOGIAS_MODEL_XP, Keys.UML_CLASES)
     ],
+    [Keys.AGILES_MVP_PROTOTYPE_POC, new Referencia('https://railsware.com/blog/mvp-prototype-poc/', 'MVP Vs Prototipo Vs POC', AGILES_KEY, 'MVP Vs Prototipo Vs POC', '2026/04/20')
+        .addRelatedItems(Keys.PRINCIPIOS_POC, Keys.ANALISIS_DATA_MVP, Keys.ESTRATEGIAS_DESARROLLO_SLDC, Keys.PEOPLE_PRODUCT_CHALLENGES)
+    ]
 ]);
 
 export const ANALISIS_KEY = 'Analisis';
