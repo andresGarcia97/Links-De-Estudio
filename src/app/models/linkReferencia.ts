@@ -44,7 +44,7 @@ export class LinkReferencia {
 }
 
 export const LAST_ITEM = Keys.AGILES_MVP_PROTOTYPE_POC;
-export const LAST_UPDATE = Keys.AGILES_MUDA;
+export const LAST_UPDATE = Keys.PERSISTENCY_CRUD;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -1383,7 +1383,7 @@ export const PERSISTENCY_REF = new Map<string, Referencia>([
     [Keys.PERSISTENCY_SQL, new Referencia('https://www.w3schools.com/sql/default.asp', '¿ Que es SQL ?', PERSISTENCY_KEY, 'SQL', '', '2025/06/25')],
     //[Keys.PERSISTENCY_DBMS, new Referencia('https://www.astera.com/es/type/blog/database-management-software/', 'Software de Gestion de Bases de Datos', PERSISTENCY_KEY, 'DBMS')],
     [Keys.PERSISTENCY_DBMS, new Referencia('https://www.conectasoftware.com/magazine/glosario/dbms/', 'Software de Gestion de Bases de Datos', PERSISTENCY_KEY, 'DBMS', '', '2025/01/26')],
-    [Keys.PERSISTENCY_CRUD, new Referencia('https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/crud-las-principales-operaciones-de-bases-de-datos/', 'Create, Read, Update, Delete', PERSISTENCY_KEY, 'CRUD')],
+    [Keys.PERSISTENCY_CRUD, new Referencia('https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/crud-las-principales-operaciones-de-bases-de-datos/', 'Create, Read, Update, Delete', PERSISTENCY_KEY, 'CRUD', '', '2026/04/27')],
     [Keys.PERSISTENCY_DL, new Referencia('https://www.linkedin.com/posts/brijpandeyji_a-solid-grasp-of-sql-is-crucial-for-anyone-activity-7240803134258782208-ElvO/', 'DQL, DDL, DML, DCL, TCL', PERSISTENCY_KEY, 'DQL, DDL, DML, DCL, TCL', '2024/09/15', '2025/01/26')],
     //['integridad', new Referencia('https://platzi.com/blog/que-es-ddl-dml-dcl-y-tcl-integridad-referencial/', 'Integridad Referencial', PERSISTENCY_KEY, 'Integridad')],
     [Keys.PERSISTENCY_INTEGRITY, new Referencia('https://intelligent-ds.com/blog/what-is-referential-integrity', 'Integridad Referencial', PERSISTENCY_KEY, 'Integridad', '2024/06/09', '2025/06/25')],

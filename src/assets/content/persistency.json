@@ -19,12 +19,12 @@
     "<strong>MultiUsuario:</strong>  El acceso concurrente de varios usuarios es un tema comun para las BD ",
     "<strong>Recuperación:</strong>  Permiten crear copias de seguridad y proveen mecanismos para recuperar los datos en caso de perdidas o daños "
   ],
-  "crud": [
+  "CRUD": [
     "- Son las 4 operaciones basicas a la hora de gestionar los datos de una BD           &brvbar; <strong>Operación</strong> &brvbar; <strong>SQL</strong>    &brvbar; <strong>HTTP, Restful</strong> &brvbar;</strong>",
-    "- No solo es aplicable para SQL, tambien tiene su equivalencia en HTTP               &brvbar; Create    &brvbar; INSERT &brvbar; POST          &brvbar;",
+    "- No solo es aplicable para SQL & NoSQL, tambien tiene su equivalencia en HTTP       &brvbar; Create    &brvbar; INSERT &brvbar; POST          &brvbar;",
     "- La mayoria de frameworks tienen estos metodos ya implementados y listos            &brvbar; Read      &brvbar; SELECT &brvbar; GET, HEAD     &brvbar;",
     " - para usarse, además de permitir personalizaciones dado el caso                    &brvbar; Update    &brvbar; UPDATE &brvbar; PUT, PATCH    &brvbar;",
-    "                                                                                     &brvbar; Delete    &brvbar; DELETE &brvbar; DELETE        &brvbar;"
+    "- Un sistema de este tipo esta acoplado temporalmente y operativamente               &brvbar; Delete    &brvbar; DELETE &brvbar; DELETE        &brvbar;"
   ],
   "dl": [
     "<strong>DQL - Lenguaje de definición de Consultas:</strong> Creación de Queries y obtención de información ",
