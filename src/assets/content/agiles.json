@@ -42,16 +42,17 @@
     "<strong>Seiketsu:</strong> Estandares, este estado solo se obtiene cuando la limpieza y la organización se mantienen constantes ",
     "<strong>Shitsuke:</strong> Disciplina, es la creación de habitos que eviten el rompimiento de los conceptos anteriores ",
     "",
-    "¿ Porque no la aplican algunas empresas ? ",
-    "<strong>- La maquinaria no puede parar:</strong> Los cronogramas no dan tiempo de mantenimiento de la maquinaria ",
-    "<strong>- La limpieza como perdida de tiempo:</strong> Algunos empleadores pagan para trabajar, no para limpiar su area de trabajo ",
-    "<strong>- Costumbre:</strong> Crear nuevos habitos y cambiar los viejos es un cambio fuerte y prolongado de paradigma ",
+    "<strong>¿ Porque no la aplican algunas empresas ?</strong>",
+    "- La maquinaria no puede parar: Los cronogramas no dan tiempo de mantenimiento de la maquinaria ",
+    "- La limpieza como perdida de tiempo: Algunos empleadores pagan para trabajar, no para limpiar su area de trabajo ",
+    "- Costumbre: Crear nuevos habitos y cambiar los viejos es un cambio fuerte y prolongado de paradigma ",
     "",
     "<strong>Beneficios</strong>",
     "- Mayor seguridad de los empleados ",
     "- Reducción de las perdidas y mermas por defectos ",
     "- Mayor calidad, y menos tiempo de respuesta ",
-    "- Genera una cultura organizacional "
+    "- Genera una cultura organizacional ",
+    "- El mantenimiento preventivo aumenta la vida util de las herramientas "
   ],
   "MUDA-Software": [
     "<strong>Trabajo hecho a medias:</strong> Desplegar sin probar y tener errores conocidos más no solucionados, ",
@@ -281,5 +282,27 @@
     " - para poder ser lanzado al mercado; a diferencia de los anteriores, el MVP está construido para soportar uso real en producción ",
     "- El enfoque principal de un MVP no es desarrollar una aplicación completa desde el inicio, es descubrir como adaptar la siguiente versión del producto ",
     " - y cubrir más necesidades mediante nuevas funcionalidades o rediseños según la retroalimentación de los usuarios "
+  ],
+  "deudaTecnicaAgiles": [
+    "- La deuda tecnica no es exclusiva de la metodologias tradicionales, también se presenta en las ágiles y puede acumularse con la misma velocidad ",
+    "- La deuda se puede definir como el <strong>costo actual y futuro de decisiones técnicas tomadas en el pasado</strong>, ",
+    " - en algunos casos son <em>atajos</em> deliberados y en otros la consecuencia de decisiones tomadas con información incompleta ",
+    "- La deuda no es un sistema que <em>funciona pero está feo</em> es un sistema que <strong>limita la capacidad del equipo para evolucionar y responder al cambio</strong> ",
+    "",
+    "&bull; Un sistema legado que funciona, que nunca cambia y no tiene problemas importantes no es deuda prioritaria ",
+    "&bull; Un módulo difícil de leer pero estable tampoco lo es necesariamente ",
+    "",
+    "- La deuda en el software funciona igual que una deuda financiera, tenerla y manejarla puede ser una decisión estratégica válida, pero ",
+    " - la insolvencia llega cuando los intereses se acumulan sin control, en el Software los intereses son: lentitud, bugs, incidentes, etc. ",
+    "- Atender la deuda y entregar valor no son mutuamente excluyentes, reducir la deuda técnica también es entregar valor ",
+    " - solo que no es visible de forma inmediata, menor tiempo de onboarding, reducción de incidentes y mayor predictibilidad en las estimaciones ",
+    "",
+    "- Agile es una forma de aprender y adaptarse rapidamente, pero muchas implementaciones lo reducen a una cadencia mecánica sin mejora continua real ",
+    "&bull; Planificación -> Daily -> Review -> Retrospectiva -> Cierre -> Repetición; Todo lo que no entra en el Sprint no existe ",
+    "- El resultado es tener solo visión de corto plazo; no por negligencia, sino por ausencia de espacios para trabajo técnico estructural ",
+    "",
+    "- El <strong>Líder técnico</strong> es fundamental para <strong>priorizar qué deuda atender</strong> y traducirla en términos de negocio y riesgo operativo ",
+    "- Un buen liderazgo técnico támbien evita 2 trampas conocidas, la <em>parálisis por análisis</em> y la <em>negligencia disfrazada de pragmatismo</em> ",
+    "- Un equipo maduro no es aquel que nunca genera deuda, es aquel que sabe cuándo tomarla, cómo hacerla explícita y es consciente de su capacidad de pago "
   ]
 }

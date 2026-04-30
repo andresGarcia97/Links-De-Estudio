@@ -164,6 +164,7 @@ export const AGILES_PRIORITIZATION = 'prioritization';
 export const AGILES_STAR = 'STAR';
 export const AGILES_CRC = 'tarjetas-CRC';
 export const AGILES_MVP_PROTOTYPE_POC = 'mvp-prototype-poc';
+export const AGILES_DEUDA_TECNICA = 'deudaTecnicaAgiles';
 export const CONTENEDORES_LXC = 'lxc';
 export const CONTENEDORES_DOCKER = 'docker';
 export const CONTENEDORES_IMAGES = 'images';

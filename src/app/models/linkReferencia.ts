@@ -43,8 +43,8 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.AGILES_MVP_PROTOTYPE_POC;
-export const LAST_UPDATE = Keys.PERSISTENCY_CRUD;
+export const LAST_ITEM = Keys.AGILES_DEUDA_TECNICA;
+export const LAST_UPDATE = Keys.AGILES_5S;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -54,7 +54,9 @@ export const AGILES_REF = new Map<string, Referencia>([
     [Keys.AGILES_MUDA, new Referencia('https://prevencontrol.com/prevenblog/las-7-mudas', 'Desperdicio', AGILES_KEY, 'MUDA', '', '2026/04/20')
         .addRelatedItems(Keys.PEOPLE_PEOPLE_PROCESS_TECNOLOGY)
     ],
-    [Keys.AGILES_5S, new Referencia('https://www.gestiopolis.com/5s-seiri-seiton-seiso-seiketsu-y-shitsuke-base-de-la-mejora-continua/', 'Seiri, Seiton, Seiso, Seiketsu, Shitsuke', AGILES_KEY, '5S - Kaizen')],
+    [Keys.AGILES_5S, new Referencia('https://www.gestiopolis.com/5s-seiri-seiton-seiso-seiketsu-y-shitsuke-base-de-la-mejora-continua/', 'Seiri, Seiton, Seiso, Seiketsu, Shitsuke', AGILES_KEY, '5S - Kaizen', '2026/04/29')
+        .addRelatedItems(Keys.METODOLOGIAS_KAIZEN)
+    ],
     //['muda#1', new Referencia('https://samuelcasanova.com/2014/03/los-7-desperdicios-del-desarrollo-de-software-i/', 'Muda en el software, parte #1', AGILES_KEY, 'Muda #1')],
     //['muda#2', new Referencia('https://samuelcasanova.com/2014/03/los-7-desperdicios-del-desarrollo-de-software-y-ii/', 'Muda en el software, parte #2', AGILES_KEY, 'Muda #2')],
     [Keys.AGILES_MUDA_SOFTWARE, new Referencia('https://medium.com/@techworldwithmilan/7-wastes-of-software-development-8febe264c5a8', 'Desperdicio en el software', AGILES_KEY, 'Muda Software', '', '2024/05/01')],
@@ -78,6 +80,9 @@ export const AGILES_REF = new Map<string, Referencia>([
     ],
     [Keys.AGILES_MVP_PROTOTYPE_POC, new Referencia('https://railsware.com/blog/mvp-prototype-poc/', 'MVP Vs Prototipo Vs POC', AGILES_KEY, 'MVP Vs Prototipo Vs POC', '2026/04/20')
         .addRelatedItems(Keys.PRINCIPIOS_POC, Keys.ANALISIS_DATA_MVP, Keys.ESTRATEGIAS_DESARROLLO_SLDC, Keys.PEOPLE_PRODUCT_CHALLENGES)
+    ],
+    [Keys.AGILES_DEUDA_TECNICA, new Referencia('https://domix.codes/blog/deuda-tecnica-sprint-en-sprint/', 'Deuda tecnica en metodologias agiles', AGILES_KEY, 'Deuda tecnica', '2026/04/29')
+        .addRelatedItems(Keys.REFACTORING_DEUDA_TECNICA_TYPES, Keys.REFACTORING_MANAGE_DEUDA_TECNICA, Keys.REQUISITOS_PRAGMATIC_ENGINEER, Keys.PATRONES_ANTI_PATRONES_PM)
     ]
 ]);
 
@@ -1259,7 +1264,9 @@ export const REFACTORING_REF = new Map<string, Referencia>([
     [Keys.REFACTORING_LEGACY_CODE_II, new Referencia('https://itnext.io/legacy-code-chesterton-fence-vs-%C3%B3lafurs-yellow-box-45f3cb040c05', 'Refactorizar el Legacy Code II', REFACTORING_KEY, 'Refactor en Legacy code II', '2025/12/09')
         .addRelatedItems(Keys.BUENAS_PRACTICAS_COMPLEJIDAD, Keys.GIT_DEPURATION, Keys.TESTING_COBERTURA)
     ],
-    [Keys.REFACTORING_MANAGE_DEUDA_TECNICA, new Referencia('https://newsletter.techworld-with-milan.com/p/how-to-deal-with-technical-debt', 'Manejo de la deuda tecnica', REFACTORING_KEY, '¿ Como manejarla ?', '2024/05/12')],
+    [Keys.REFACTORING_MANAGE_DEUDA_TECNICA, new Referencia('https://newsletter.techworld-with-milan.com/p/how-to-deal-with-technical-debt', 'Manejo de la deuda tecnica', REFACTORING_KEY, '¿ Como manejarla ?', '2024/05/12')
+        .addRelatedItems(Keys.LEYES_CONWAY)
+    ],
     [Keys.REFACTORING_MANAGE_DEPENDENCIES, new Referencia('https://levelup.gitconnected.com/world-of-dependencies-4639100d16ef', 'Manejo de las dependencias', REFACTORING_KEY, 'Dependencias', '2024/06/09')
         .addRelatedItems(Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS, Keys.ARQUITECTURAS_CAPAS, Keys.FRAMEWORKS_IOD)
     ],
@@ -1420,7 +1427,7 @@ export const PERSISTENCY_INTERMEDIATE_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.NUBE_NATIVE, Keys.SYSTEM_DESIGN_SCALING_WRITES, Keys.ANALISIS_STRATEGIC_DESIGN, Keys.PERSISTENCY_ADVANCED_SCALING_DB, Keys.CD_CI_FAILOVER, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRANSACTIONS, Keys.ARQUITECTURAS_EVENT_DRIVEN)
         .addMoreReferences('https://medium.com/@artemkhrenov/database-design-patterns-the-complete-developers-guide-to-modern-data-architecture-c4e891875001')
     ],
-     [Keys.PERSISTENCY_INTERMEDIATE_JOINS, new Referencia('https://ingenieriadesoftware.es/tipos-sql-join-guia-referencia/', 'Tipos de Joins', PERSISTENCY_INTERMEDIATE_KEY, 'Tipos de Joins', '2025/06/25', '2025/08/26')
+    [Keys.PERSISTENCY_INTERMEDIATE_JOINS, new Referencia('https://ingenieriadesoftware.es/tipos-sql-join-guia-referencia/', 'Tipos de Joins', PERSISTENCY_INTERMEDIATE_KEY, 'Tipos de Joins', '2025/06/25', '2025/08/26')
         .addMoreReferences('https://vladmihalcea.com/sql-join-using/')
     ],
     [Keys.PERSISTENCY_INTERMEDIATE_COMMON_TABLE_EXPRESSION, new Referencia('https://learnsql.com/blog/what-is-common-table-expression/', 'Common Table Expression', PERSISTENCY_INTERMEDIATE_KEY, 'CTE', '2025/01/04')
@@ -1437,11 +1444,11 @@ export const PERSISTENCY_INTERMEDIATE_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.BUENAS_PRACTICAS_DEBUGGING, Keys.OBSERVABILIDAD_OBSERVABILITY)
         .addMoreReferences('https://medium.com/@kotiavula6/this-sql-question-exposes-fake-senior-developers-most-people-get-it-wrong-ce8a6a94952d')
     ],
-     [Keys.PERSISTENCY_INTERMEDIATE_ORM, new Referencia('https://programarfacil.com/blog/que-es-un-orm/', 'Mapeo Objeto-Relacional (ORM)', PERSISTENCY_INTERMEDIATE_KEY, 'ORM')],
+    [Keys.PERSISTENCY_INTERMEDIATE_ORM, new Referencia('https://programarfacil.com/blog/que-es-un-orm/', 'Mapeo Objeto-Relacional (ORM)', PERSISTENCY_INTERMEDIATE_KEY, 'ORM')],
     [Keys.PERSISTENCY_INTERMEDIATE_N_1_SELECTS, new Referencia('https://stackoverflow.com/questions/97197/what-is-the-n1-selects-problem-in-orm-object-relational-mapping', 'N + 1 Problem', PERSISTENCY_INTERMEDIATE_KEY, 'N + 1 Selects', '', '2026/02/21')
         .addMoreReferences('https://medium.com/lets-code-future/i-reduced-our-api-response-time-from-3s-to-80ms-with-one-java-change-0f7938e28bb7')
     ],
-     [Keys.PERSISTENCY_INTERMEDIATE_DATA_BASE_OBJECTS, new Referencia('https://www.geeksforgeeks.org/dbms/database-objects-in-dbms/', 'Database Objects', PERSISTENCY_INTERMEDIATE_KEY, 'Database Objects', '2025/06/24')
+    [Keys.PERSISTENCY_INTERMEDIATE_DATA_BASE_OBJECTS, new Referencia('https://www.geeksforgeeks.org/dbms/database-objects-in-dbms/', 'Database Objects', PERSISTENCY_INTERMEDIATE_KEY, 'Database Objects', '2025/06/24')
         .addRelatedItems(Keys.PARADIGMAS_IMPERATIVO)
         .addMoreReferences('https://medium.com/@madu.sharadika/stored-procedures-views-and-triggers-in-sql-3845708d0ee7')
     ],
