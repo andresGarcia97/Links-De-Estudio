@@ -14,7 +14,7 @@
     "<strong>Despliegue continuo:</strong> Es la automatización de las entregas con la menor interferencia humana posible ",
     "- Todo cambio activa diferentes acciones, pueden ir desde acciones como correr las pruebas, hasta desplegar en un ambiente especifico "
   ],
-  "devops": [
+  "devOps": [
     "- Es una metodologia para crear software de una manera más eficiente, con mayor calidad y menos problemas en producción ",
     "- Este modelo no consiste en aumentar las responsabilidades del desarrollador, todo lo contrario ",
     "- Esta integración entre el codigo desarrollado y su respectivo despliegue(releases) debe ser transparente y colaborativa ",
@@ -26,6 +26,16 @@
     "<strong>- Quality Assurance:</strong> Entender los diferentes tipos de tests que se pueden hacer y cuales son necesarios de acuerdo a la etapa del software ",
     "<strong>- Seguridad:</strong> Una gran olvidada y por lo cual se pagan las consecuencias, dependencias vulnerables e infraestructura mal configurada ",
     "<strong>- Administración de sistemas:</strong> Poder encargarse de toda la instalación, configuración, mantenimiento, supervisión de la infraestructura no es tarea facil "
+  ],
+  "devSecOps": [
+    "- Desarrollo, operaciones y seguridad integrados en una cultura que incorpora la seguridad como parte nativa del ciclo de entrega continuo y automatizado ",
+    "- Esto implica que todos los roles involucrados en el ciclo de desarrollo comparten la responsabilidad de la seguridad desde el inicio ",
+    "- Se diferencia de devOps en que la seguridad es una responsabilidad transversal, integrada desde el inicio del ciclo (shift-left) ",
+    "- Esta integración se implementa en el pipeline a través de controles como análisis estático, escaneo de dependencias, entre otros ",
+    "",
+    "<strong>Análisis de Composición de Software (SCA):</strong> Se centra en identificar y gestionar dependencias de terceros, detectando vulnerabilidades y problemas de licencias",
+    "<strong>Dynamic Application Security Testing (DAST):</strong> Prueba la aplicación en ejecución simulando ataques externos para detectar vulnerabilidades no visibles en el código fuente ",
+    "<strong>Static Application Security Testing (SAST):</strong> Examina el código fuente sin ejecutarlo, identificando vulnerabilidades en etapas tempranas del desarrollo "
   ],
   "iascode": [
     "- Permite gestionar y preparar la infraestructura a traves del codigo, en vez de usar procesos manuales",

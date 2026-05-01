@@ -240,8 +240,9 @@
   ],
   "owaspTop": [
     "<strong>- Open Web Security Application Security:</strong> Es una colección de recursos que incluye una guia de desarrollo para evitar problemas de seguridad ",
-    " - Regularmente sacan un top 10 con los problemas más comunes y peligrosos a nivel general de las aplicaciones ",
+    "- Regularmente sacan un top 10 con los problemas más comunes y peligrosos a nivel general de las aplicaciones ",
     "",
+    "<strong>Top 2021</strong>",
     "<strong> 1 Broken access control:</strong> Fallo o intrusion de los permisos de acción de los usuarios, exponiendo o perdiendo información sensible ",
     "<strong> 2 Cryptografic failures:</strong> Fallos en la ocultación de la información debido a falencias en la encriptación ",
     "<strong> 3 Injection:</strong> La información no es filtrada ni valida previamente por lo que se pueden inyectar scripts de SQL y NoSQL maliciosos ",
@@ -253,7 +254,18 @@
     "<strong> 9 Security Logging and Monitoring Failures:</strong> El registro y monitoreo de la seguridad puede ser insuficiente teniendo lugares sin supervisión ",
     "<strong> 10 Server-Side Request Forgery:</strong> Esto ocurre cuando se obtiene un recurso de una url sin validar la confiabilidad de esta ",
     "",
-    "- Estos son los incidentes de seguridad para el top del 2021"
+    "<strong>Top 2025</strong>",
+    "<strong> 1 Broken access control:</strong> Fallo o intrusion de los permisos de acción de los usuarios, exponiendo o perdiendo información sensible ",
+    "<strong> 2 Security Misconfiguration:</strong> Privilegios y configuraciones laxas o innecesarias ",
+    "<strong> 3 Software Supply Chain Failures:</strong> Son interrupciones u otras deficiencias en el proceso de creación, distribución o actualización de software ",
+    "<strong> 4 Cryptografic failures:</strong> Fallos en la ocultación de la información debido a falencias en la encriptación ",
+    "<strong> 5 Injection:</strong> La información no es filtrada ni valida previamente por lo que se pueden inyectar scripts de SQL y NoSQL maliciosos ",
+    "<strong> 6 Insecure Design:</strong> Fallas en los diseños iniciales que no contemplan validaciones de seguridad ",
+    "<strong> 7 Identification and Authentication Failures:</strong> Contraseñas debiles o conocidas por los atacantes son usadas en la aplicación ",
+    "<strong> 8 Software and Data Integrity Failures:</strong> Uso de fuentes desconocidas o librerias de terceros de poca confianza ",
+    "<strong> 9 Security Logging and Alerting Failures:</strong> El registro y monitoreo de la seguridad puede ser insuficiente teniendo lugares sin supervisión ",
+    "<strong> 10 Mishandling of Exceptional Conditions:</strong> Manejo inadecuado de condiciones excepcionales en el software ocurre cuando los programas no logran prevenir, ",
+    " - detectar ni responder a situaciones inusuales e impredecibles lo que provoca fallos, comportamientos inesperados y, en ocasiones, vulnerabilidades "
   ],
   "stride": [
     "- Modelado de amenazas, es una estrategia para identificar y eliminar posibles vulnerabilidades antes de escribir código ",

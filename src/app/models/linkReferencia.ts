@@ -43,8 +43,8 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.AGILES_DEUDA_TECNICA;
-export const LAST_UPDATE = Keys.AGILES_5S;
+export const LAST_ITEM = Keys.CD_CI_DEV_SEC_OPS;
+export const LAST_UPDATE = Keys.SECURITY_OWASTOP;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -1350,7 +1350,9 @@ export const SECURITY_REF = new Map<string, Referencia>([
     [Keys.SECURITY_HONEYPOT, new Referencia('https://latam.kaspersky.com/resource-center/threats/what-is-a-honeypot', 'Honeypot', SECURITY_KEY, 'Honeypot')],
     [Keys.SECURITY_ZERO_DAY_EXPLOIT, new Referencia('https://latam.kaspersky.com/resource-center/definitions/zero-day-exploit', 'Zero Day Exploit', SECURITY_KEY, 'Zero Day Exploit')],
     [Keys.SECURITY_PENTEST, new Referencia('https://www.hiberus.com/crecemos-contigo/pentesting-owasp-fases-metodologia/', 'Testing de intrusión', SECURITY_KEY, 'Test de Intrusión')],
-    [Keys.SECURITY_OWASTOP, new Referencia('https://owasp.org/Top10/', 'OWASP Top 10', SECURITY_KEY, 'OWASP Top 10')],
+    [Keys.SECURITY_OWASTOP, new Referencia('https://owasp.org/Top10/2021/es/', 'OWASP Top 10', SECURITY_KEY, 'OWASP Top 10', '', '2026/05/01')
+        .addMoreReferences('https://owasp.org/Top10/2025/')
+    ],
     [Keys.SECURITY_STRIDE, new Referencia('https://www.softwaresecured.com/post/stride-threat-modelling', 'STRIDE', SECURITY_KEY, 'STRIDE')],
     [Keys.SECURITY_CIAM, new Referencia('https://auth0.com/blog/why-do-you-need-ciam/', 'CIAM', SECURITY_KEY, 'CIAM')],
     [Keys.SECURITY_LATERAL_CHANEL, new Referencia('https://ciberseguridad.com/amenzas/ataque-canal-lateral/', 'Ataques de canal lateral', SECURITY_KEY, 'Ataques de canal lateral')],
@@ -1669,6 +1671,10 @@ export const CI_CD_REF = new Map<string, Referencia>([
     [Keys.CD_CI_CI_CD, new Referencia('https://www.aplyca.com/es/blog/integracion-entrega-continua-ci-cd', 'Integración Continua y Entrega Continua', CI_CD_KEY, 'CI/CD', '', '2024/08/25')],
     [Keys.CD_CI_DEV_OPS, new Referencia('https://www.paradigmadigital.com/techbiz/que-es-devops-y-sobre-todo-que-no-es-devops/', 'DevOps', CI_CD_KEY, 'DevOps', '', '2025/03/15')
         .addRelatedItems(Keys.TESTING_QUALITY_ASSURANCE)
+    ],
+    [Keys.CD_CI_DEV_SEC_OPS, new Referencia('https://www.computerweekly.com/es/definicion/SecOps-o-DevSecOps', 'SecDevOps y SCA, SAST, DAST', CI_CD_KEY, 'SecDevOps', '', '2026/04/30')
+        .addRelatedItems(Keys.BUENAS_PRACTICAS_STATIC_CODE_ANALYSIS, Keys.BUENAS_PRACTICAS_DYNAMIC_CODE_ANALYSIS, Keys.SECURITY_OWASTOP)
+        .addMoreReferences('https://checkmarx.com/learn/sca/sca-sast-dast/')
     ],
     [Keys.CD_CI_IAS_CODE, new Referencia('https://www.redhat.com/es/topics/automation/what-is-infrastructure-as-code-iac', 'Infraestructura como Codigo', CI_CD_KEY, 'IaC', '2025/10/18')
         .addRelatedItems(Keys.CONTENEDORES_DOCKER)
