@@ -183,6 +183,7 @@ export const CONTENEDORES_RUNTIME = 'container-runtime';
 export const CONTENEDORES_TESTCONTAINERS = 'testcontainers';
 export const PATRONES_DEFINITION = 'definicionPatrones';
 export const PATRONES_GOF = 'GOF';
+export const PATRONES_DECISION_TREE = 'patrones-decision-tree';
 export const PATRONES_DESGLOSE_GOF = 'patternsDesgloseGoF';
 export const PATRONES_GRASP = 'GRASP';
 export const PATRONES_DESGLOSE_GRASP = 'desgloseGRASP';

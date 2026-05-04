@@ -43,8 +43,8 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.CD_CI_DEV_SEC_OPS;
-export const LAST_UPDATE = Keys.SECURITY_OWASTOP;
+export const LAST_ITEM = Keys.PATRONES_DECISION_TREE;
+export const LAST_UPDATE = Keys.PATRONES_DESGLOSE_GOF;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -968,7 +968,10 @@ export const PATRONES_KEY = 'Patrones';
 export const PATRONES_REF = new Map<string, Referencia>([
     [Keys.PATRONES_DEFINITION, new Referencia('http://www.ecured.cu/Patrones_de_dise%C3%B1o_y_arquitectura', '¿ Que son los patrones ?', PATRONES_KEY, 'Definición', '2026/04/12')],
     [Keys.PATRONES_GOF, new Referencia('https://cleformacion.com/patrones-gof-fecha-de-publicacion/', 'Gang of Four (GoF)', PATRONES_KEY, 'GOF', '', '2024/05/25')],
-    [Keys.PATRONES_DESGLOSE_GOF, new Referencia('https://refactoring.guru/es/design-patterns/catalog', 'Definiciones de los GoF', PATRONES_KEY, 'Desglose GOF')],
+    [Keys.PATRONES_DECISION_TREE, new Referencia('https://medium.com/womenintechnology/stop-memorizing-design-patterns-use-this-decision-tree-instead-e84f22fca9fa', 'Como escoger un Patron', PATRONES_KEY, 'Como escoger un Patron', '2026/05/03')
+        .addRelatedItems(Keys.CALIDAD_IF_ELSE)
+    ],
+    [Keys.PATRONES_DESGLOSE_GOF, new Referencia('https://refactoring.guru/es/design-patterns/catalog', 'Definiciones de los GoF', PATRONES_KEY, 'Desglose GOF', '', '2026/05/03')],
     [Keys.PATRONES_GRASP, new Referencia('https://www.adictosaltrabajo.com/2003/12/22/grasp/', 'Asignación de responsabilidades', PATRONES_KEY, 'GRASP')],
     [Keys.PATRONES_DESGLOSE_GRASP, new Referencia('https://www.codescouts.academy/blog/grasp/', 'Patrones GRASP', PATRONES_KEY, 'Desglose Grasp', '', '2024/12/15')],
     [Keys.PATRONES_ANTI_PATTERNS, new Referencia('https://sg.com.mx/revista/11/anti-patrones-la-mejor-forma-hacer-un-pesimo-sistema-software', 'Antipatrones, Desarrollo', PATRONES_KEY, 'Anti Patrones, Desarrollo')],
@@ -986,7 +989,7 @@ export const PATRONES_REF = new Map<string, Referencia>([
     [Keys.PATRONES_ANTI_PATRONES_CONCURRENCY, new Referencia('https://medium.com/@gaddamnaveen192/java-concurrency-anti-patterns-that-break-interviews-2090ec3ca2e4', 'Anti Patrones, concurrencia', PATRONES_KEY, 'Concurrencia', '2026/04/12')
         .addRelatedItems(Keys.EJECUCION_CONCURRENCY_AND_PARALLELISM, Keys.EJECUCION_DEAD_LOCKS, Keys.FRAMEWORKS_SPRING_ANNOTATIONS, Keys.SYSTEM_DESIGN_CONTENTION)
         .addMoreReferences('https://mikemybytes.com/2024/02/28/curiosities-of-java-virtual-threads-pinning-with-synchronized/', 'https://jenkov.com/tutorials/java-concurrency/concurrency-models.html')
-    ],
+    ]
 ]);
 
 export const PATRONES_ADVANCED_KEY = 'Patrones-avanzado';
