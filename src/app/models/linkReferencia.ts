@@ -43,7 +43,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.PATRONES_DECISION_TREE;
+export const LAST_ITEM = Keys.SYSTEM_DESIGN_CONCEPTS_IV;
 export const LAST_UPDATE = Keys.PATRONES_DESGLOSE_GOF;
 
 export const AGILES_KEY = 'Agiles';
@@ -99,7 +99,9 @@ export const ANALISIS_REF = new Map<string, Referencia>([
     [Keys.ANALISIS_TIME_COMPLEXITY, new Referencia('https://www.freecodecamp.org/news/big-o-cheat-sheet-time-complexity-chart/', 'Big O Notación', ANALISIS_KEY, 'Big O Notación', '2022/12/30', '2025/03/29')
         .addRelatedItems(Keys.BUENAS_PRACTICAS_COMPLEJIDAD_ALGORITMICA, Keys.BUENAS_PRACTICAS_COMPLEJIDAD_COGNITIVA)
     ],
-    [Keys.ANALISIS_MANIFEST_REACTIVE, new Referencia('https://www.reactivemanifesto.org/es', 'Manifiesto Reactivo', ANALISIS_KEY, 'Manifiesto Reactivo', '2023/02/19', '2024/12/10')],
+    [Keys.ANALISIS_MANIFEST_REACTIVE, new Referencia('https://www.reactivemanifesto.org/es', 'Manifiesto Reactivo', ANALISIS_KEY, 'Manifiesto Reactivo', '2023/02/19', '2024/12/10')
+        .addMoreReferences('https://medium.com/@jayphelps/backpressure-explained-the-flow-of-data-through-software-2350b3e77ce7')
+    ],
     [Keys.ANALISIS_DECLINE_DESIGN, new Referencia('https://uxdesign.cc/the-decline-in-design-thinking-8fd0145fb4d2', 'Declive del diseño', ANALISIS_KEY, 'Declive del Diseño', '2023/07/23')],
     [Keys.ANALISIS_OPINIONATED_NO, new Referencia('https://www.baeldung.com/cs/opinionated-software-design', 'Diseño con & sin opiniones', ANALISIS_KEY, 'Diseño con/sin opiniones', '2023/11/11')],
     [Keys.ANALISIS_ALGORITHMS, new Referencia('https://medium.com/@zgokceaynaci/a-journey-through-the-world-of-algorithms-554bfffcee97', 'Algoritmos', ANALISIS_KEY, 'Algoritmos', '2024/07/27')
@@ -150,6 +152,9 @@ export const SYSTEM_DESIGN_REF = new Map<string, Referencia>([
     [Keys.SYSTEM_DESIGN_CONCEPTS_I, new Referencia('https://www.linkedin.com/posts/brijpandeyji_top-12-system-design-concepts-every-developer-activity-7238729739065069568-h1t6/', 'System Design Concepts I', SYSTEM_DESIGN_KEY, 'System Design Concepts I', '2024/09/29')],
     [Keys.SYSTEM_DESIGN_CONCEPTS_II, new Referencia('https://www.linkedin.com/posts/alexxubyte_systemdesign-coding-interviewtips-activity-7320110326635520001-mdMb/', 'System Design Concepts II', SYSTEM_DESIGN_KEY, 'System Design Concepts II', '2025/04/21')],
     [Keys.SYSTEM_DESIGN_CONCEPTS_III, new Referencia('https://medium.com/javarevisited/21-essential-system-design-building-blocks-for-software-engineers-c5f4120549c4', 'System Design Concepts III', SYSTEM_DESIGN_KEY, 'System Design Concepts III', '2025/05/03')],
+    [Keys.SYSTEM_DESIGN_CONCEPTS_IV, new Referencia('https://medium.com/@pudarimadhavi99/i-thought-i-understood-system-design-then-these-21-concepts-proved-me-wrong-4fd9a485b206', 'System Design Concepts IV', SYSTEM_DESIGN_KEY, 'System Design Concepts IV', '2026/05/10')
+        .addMoreReferences('https://medium.com/@shanureddy/you-think-youre-a-senior-engineer-these-9-architecture-traps-will-prove-you-wrong-b745db6d1525')
+    ],
     [Keys.SYSTEM_DESIGN_SINGLE_POINT_OF_FAILURE, new Referencia('https://levelup.gitconnected.com/single-point-of-failure-spof-in-system-design-c8bbac5af993', 'Single Point Of Failure', SYSTEM_DESIGN_KEY, 'SPOF', '2024/12/07')
         .addRelatedItems(Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS)
     ],

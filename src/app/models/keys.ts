@@ -569,6 +569,7 @@ export const SYSTEM_DESIGN_QUEUES = 'queueSystemDesign';
 export const SYSTEM_DESIGN_CONCEPTS_I = 'systemDesignConcepts-I';
 export const SYSTEM_DESIGN_CONCEPTS_II = 'systemDesignConcepts-II';
 export const SYSTEM_DESIGN_CONCEPTS_III = 'systemDesignConcepts-III';
+export const SYSTEM_DESIGN_CONCEPTS_IV = 'systemDesignConcepts-IV';
 export const SYSTEM_DESIGN_SINGLE_POINT_OF_FAILURE = 'singlePointOfFailure-SPOF';
 export const SYSTEM_DESIGN_I = 'systemDesign-I';
 export const SYSTEM_DESIGN_II = 'systemDesign-II';

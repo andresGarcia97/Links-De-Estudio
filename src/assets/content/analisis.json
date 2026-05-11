@@ -72,7 +72,7 @@
     "<strong>- Resilientes:</strong> El sistema sigue respondiendo, aun frente a diversos fallos, ya que estos se deben manejar sin comprometer al todo ",
     "<strong>- Elasticos:  </strong> El sistema debe continuar respondiendo con diferentes niveles de carga, evitando cuellos de botella Y sabiendo como crecer ",
     "<strong>- Orientado a mensajes:</strong> Los sistemas reactivos confian en el intercambio de mensajes asyncronos, ya sea para funcionar y/o delegar fallos, ",
-    " - esta comunicación debe tener estrategias para ser No-bloqueante e implementar back-pressure para no desperdiciar recursos "
+    " - esta comunicación debe tener estrategias para ser No-bloqueante e implementar backpressure para no desperdiciar recursos "
   ],
   "declineDesign": [
     "- El diseño es una actividad intrinseca para crear cualquier producto, por eso es que esta presente en todo y en todas partes ",
