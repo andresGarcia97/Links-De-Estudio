@@ -295,6 +295,7 @@ export const METODOLOGIAS_KAIZEN = 'kaizen';
 export const METODOLOGIAS_SCRUMBAN = 'metodologiaScrumban';
 export const METODOLOGIAS_LEAN = 'lean';
 export const METODOLOGIAS_SIX_SIGMA_HOSHIN_KANRI = 'sixSigma-HoshinKanri';
+export const METODOLOGIAS_SPEC_DRIVEN_DEVELOPMENT = 'spec-driven-development';
 export const APIS_API = 'api';
 export const APIS_REST_FULL = 'apiRestFull';
 export const APIS_MADURITY = 'apiMadurity';

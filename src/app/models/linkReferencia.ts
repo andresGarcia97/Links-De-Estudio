@@ -43,7 +43,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.SYSTEM_DESIGN_CONCEPTS_IV;
+export const LAST_ITEM = Keys.METODOLOGIAS_SPEC_DRIVEN_DEVELOPMENT;
 export const LAST_UPDATE = Keys.PATRONES_DESGLOSE_GOF;
 
 export const AGILES_KEY = 'Agiles';
@@ -807,10 +807,14 @@ export const METODOLOGIAS_REF = new Map<string, Referencia>([
     ],
     //['scrumban', new Referencia('https://kanbantool.com/es/scrumban-scrum-y-kanb', 'Scrumban', METODOLOGIAS_KEY, 'Scrumban')],
     [Keys.METODOLOGIAS_SCRUMBAN, new Referencia('https://www.atlassian.com/es/agile/project-management/scrumban', 'Scrumban', METODOLOGIAS_KEY, 'Scrumban', '', '2024/10/10')],
-    [Keys.METODOLOGIAS_LEAN, new Referencia('https://www.obsbusiness.school/blog/lean-management-metodologia-origenes-y-principios', 'Lean management', METODOLOGIAS_KEY, 'Lean')],
-    [Keys.METODOLOGIAS_SIX_SIGMA_HOSHIN_KANRI, new Referencia('https://www.linkedin.com/posts/pedroprh_mejoracontinua-lean-sixsigma-activity-7399077028039397377-Umrc/', 'Six Sigma - Hoshin Kanri', METODOLOGIAS_KEY, 'Six Sigma - Hoshin Kanri')
+    [Keys.METODOLOGIAS_LEAN, new Referencia('https://www.obsbusiness.school/blog/lean-management-metodologia-origenes-y-principios', 'Lean management', METODOLOGIAS_KEY, 'Lean', '2024/12/01')],
+    [Keys.METODOLOGIAS_SIX_SIGMA_HOSHIN_KANRI, new Referencia('https://www.linkedin.com/posts/pedroprh_mejoracontinua-lean-sixsigma-activity-7399077028039397377-Umrc/', 'Six Sigma - Hoshin Kanri', METODOLOGIAS_KEY, 'Six Sigma - Hoshin Kanri', '2025/11/30')
         .addRelatedItems(Keys.AGILES_5S, Keys.AGILES_MUDA, Keys.AGILES_MUDA_SOFTWARE)
-    ]
+    ],
+    [Keys.METODOLOGIAS_SPEC_DRIVEN_DEVELOPMENT, new Referencia('https://www.augmentcode.com/guides/what-is-spec-driven-development', 'Spec-Driven Development', METODOLOGIAS_KEY, 'SSD', '2026/05/14')
+        .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_TDD, Keys.ESTRATEGIAS_DESARROLLO_BDD, Keys.TESTING_AAA_GWT, Keys.TESTING_TRIANGULO)
+        .addMoreReferences('https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html')
+    ],
 ]);
 
 export const NUBE_KEY = 'Nube';
