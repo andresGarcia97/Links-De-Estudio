@@ -2,3 +2,33 @@
 User-agent: *
 Disallow:
 sitemap: https://contenidoderepaso.web.app/sitemap.xml
+
+User-agent: GPTBot      # OpenAI's training crawler
+Disallow: /
+
+User-agent: ChatGPT-User  # OpenAI's custom GPT scraper
+Disallow: /
+
+User-agent: anthropic-ai  # Anthropic's Claude crawler
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Google-Extended # Blocks Google Gemini AI training
+Disallow: /
+
+User-agent: OAI-SearchBot   # ChatGPT Search (live queries)
+Disallow: /
+
+User-agent: PerplexityBot   # Perplexity AI
+Disallow: /
+
+User-agent: CCBot           # Common Crawl (used by many LLMs)
+Disallow: /
+
+User-agent: Bytespider      # ByteDance/TikTok AI crawler
+Disallow: /
+
+User-agent: DiffBot         # Data extraction bot
+Disallow: /
