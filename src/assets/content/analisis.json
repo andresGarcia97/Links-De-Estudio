@@ -473,5 +473,21 @@
     "&bull; Complemente o modele las adiciones mediante UML o notación personalizada para capturar detalles importantes ",
     "&bull; Iterar y perfeccionar el modelo ya sea con EventStorming o otras tecnicas de acuerdo a las necesidades ",
     "&bull; Alinear que la implementación esta de acuerdo con la arquitectura y los patrones de implementación elegidos "
+  ],
+  "projections-and-read-models": [
+    "- Los eventos son hechos, representan algo que sucedió en el pasado, y las proyecciones son interpretaciones o derivaciones a partir de ellos ",
+    "- En las proyecciones tomamos un conjunto de eventos que representan diversos hechos sobre la misma entidad o sobre múltiples entidades ",
+    "- Generalmente almacenamos el resultado como un modelo de lectura materializado, sin embargo el resultado de la materialización ",
+    " - puede ser cualquier cosa: caché, notificaciones, archivos, etc. ",
+    "",
+    "- Los eventos son la fuente de verdad del sistema; mediante un <em>left-fold</em> sobre su secuencia se reconstruye el estado actual del modelo de lectura ",
+    " - se aplica el siguiente evento de la secuencia y se obtiene el nuevo estado proyectado ",
+    "- Las proyecciones son parte de las arquitecturas orientadas a eventos y un componente esencial de <strong>CQRS</strong> ",
+    "- Al manejar eventos, hay que considerar que pueden existir eventos duplicados, por lo que la idempotencia debe garantizarse ",
+    "- El <strong>orden</strong> de los eventos es otra restricción crítica; no siempre puede garantizarse y está directamente relacionado con la <em>consistencia eventual</em> ",
+    "",
+    "<strong>¿Cómo escalan las proyecciones?</strong> El escalado depende más del particionamiento del event stream que del stack tecnológico utilizado ",
+    "- Esto también implica que múltiples proyecciones no deberían escribir sobre los mismos datos para evitar condiciones de carrera ",
+    "- Para que las proyecciones sean eficientes, deben estar lo más cerca posible del almacenamiento final; usar abstracciones solo cuando sea necesario "
   ]
 }

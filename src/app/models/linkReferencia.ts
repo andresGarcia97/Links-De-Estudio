@@ -43,7 +43,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.LEYES_ARQUITECTURE;
+export const LAST_ITEM = Keys.ANALISIS_PROJECTIONS;
 export const LAST_UPDATE = Keys.PATRONES_DESGLOSE_GOF;
 
 export const AGILES_KEY = 'Agiles';
@@ -141,6 +141,9 @@ export const ANALISIS_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.VERSIONAMIENTO_DOCUMENT_ARQUITECTURE, Keys.NUBE_MIGRATIONS, Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.USER_HISTORIES_USER_HISTORIES, Keys.PATRONES_ADVANCED_PERSISTENCE_PATTERNS, Keys.PATRONES_ADVANCED_DISTRIBUTED_SYSTEMS, Keys.POO_FACTORY_METODS)
         .addMoreReferences('https://medium.com/@lambrych/can-eventstorming-guide-the-design-workflow-6f75d8aa20e0')
     ],
+    [Keys.ANALISIS_PROJECTIONS, new Referencia('https://event-driven.io/en/projections_and_read_models_in_event_driven_architecture/', 'Event Driven Arquitecture & Projections', ANALISIS_KEY, 'Proyecciones', '2026/05/23')
+        .addRelatedItems(Keys.PATRONES_ADVANCED_PERSISTENCE_PATTERNS, Keys.PATRONES_ADVANCED_CQRS, Keys.APIS_IDEMPOTENCIA, Keys.SECURITY_CONDICION_CARRERA, Keys.ARQUITECTURAS_EVENT_DRIVEN)
+    ]
 ]);
 
 export const SYSTEM_DESIGN_KEY = 'System-Design';
@@ -248,7 +251,7 @@ export const ARQUITECTURAS_REF = new Map<string, Referencia>([
         .addMoreReferences('https://medium.com/mr-plan-publication/modular-monoliths-software-architecture-part-4-3cc7fa376e58')
     ],
     [Keys.ARQUITECTURAS_DESCOMPOSICION_MODULAR, new Referencia('https://ittgweb.wordpress.com/2016/05/29/descomposicion-modular/', 'Descomposición Modular', ARQUITECTURAS_KEY, 'Descomposición', '2024/05/25')],
-    [Keys.ARQUITECTURAS_EVENT_DRIVEN, new Referencia('https://medium.com/@alxkm/java-event-driven-architecture-dc456d324ba5', 'Basada en Eventos', ARQUITECTURAS_KEY, 'Basada en Eventos', '2024/06/17')
+    [Keys.ARQUITECTURAS_EVENT_DRIVEN, new Referencia('https://medium.com/@alxkm/java-event-driven-architecture-dc456d324ba5', 'Basada en Eventos', ARQUITECTURAS_KEY, 'EDA', '2024/06/17')
         .addRelatedItems(Keys.OBSERVABILIDAD_OBSERVABILITY)
     ],
     [Keys.ARQUITECTURAS_EXPERIMENTATION, new Referencia('https://www.infoq.com/articles/architecture-experimentation/', 'Minima Arquitectura Viable', ARQUITECTURAS_KEY, 'MVA', '2025/01/12')
