@@ -548,5 +548,33 @@
     "- Posibilidad de estados inconsistentes debido a la coexistencia temporal de múltiples versiones, especialmente si, ",
     " - hay cambios en esquemas de datos o contratos de API entre versiones ",
     "- El balanceador de carga puede convertirse en un <em>SPOF</em> si no está debidamente replicado o distribuido, especialmente a gran escala "
+  ],
+  "configuration-patterns": [
+    "<strong>Build Time:</strong> Configuraciones que se aplican antes de que el software sea ejecutado ",
+    "",
+    "<strong>- Build Tools Config:</strong> El código fuente pasa por herramientas de construcción como Maven o Gradle ",
+    "Estas herramientas procesan el código y producen un paquete desplegable listo para su distribución ",
+    "<strong>- Dependency Management Config:</strong> Un archivo de dependencias (.xml, .json) declara las librerías externas requeridas ",
+    "Gestores de paquetes como npm o PyPI descargan dichas librerías y las consolidan en la carpeta del proyecto ",
+    "<strong>- Compiler / Interpreter Config:</strong> El código fuente es procesado por un compilador o intérprete ",
+    "Esta configuración determina cómo se transforma el código en ejecutables que el sistema operativo puede correr ",
+    "",
+    "<strong>Deployment Time:</strong> Configuraciones que definen cómo y dónde se despliega el software ",
+    "",
+    "<strong>- Infra Config:</strong> Una herramienta de IaC aprovisiona los recursos necesarios como servidores, redes y almacenamiento ",
+    "Dichos recursos son desplegados en proveedores cloud como Azure o AWS ",
+    "<strong>- Environment Specific Config:</strong> Se definen configuraciones específicas por ambiente, como Staging y Producción ",
+    "Cada conjunto de configuraciones genera una instancia de la aplicación aislada para su ambiente correspondiente ",
+    "<strong>- Deployment Pipeline Config:</strong> Desde el repositorio de código, una configuración de pipeline en herramientas como Github define los pasos del proceso ",
+    "El pipeline ejecuta el despliegue a través de una herramienta de deployment que publica la aplicación final ",
+    "",
+    "<strong>Run Time:</strong> Configuraciones que determinan el comportamiento del software mientras está corriendo ",
+    "",
+    "<strong>- Application Config:</strong> La configuración de la app inyecta parámetros al API y la base de datos que la soporta ",
+    "Esto define el entorno de ejecución con el que la aplicación opera en tiempo real ",
+    "<strong>- Container Config:</strong> Un archivo de configuración de contenedor es procesado por orquestadores como Kubernetes u OpenShift ",
+    "Los orquestadores construyen y despliegan los contenedores que exponen el servicio final ",
+    "<strong>- Logging Config:</strong> La aplicación genera logs que son capturados por un framework de logging como Logback ",
+    "Los datos de log resultantes son almacenados y analizados para observabilidad y diagnóstico del sistema "
   ]
 }

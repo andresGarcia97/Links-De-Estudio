@@ -645,6 +645,7 @@ export const CD_CI_INFRAESTRUCTURE_DESIGN = 'infraestructureDesign';
 export const CD_CI_DI_RPO_RTO = 'DI-RPO-RTO';
 export const CD_CI_BAAS_RAAS_DRAAC_DRAAS = 'baas-raas-draac-draas';
 export const CD_CI_ROLLING_DEPLOYMENT = 'rolling-deployment';
+export const CD_CI_CONFIGURATION_PATTERNS = 'configuration-patterns';
 export const WEB_SPA = 'SPA';
 export const WEB_PWA = 'PWA';
 export const WEB_SEO = 'SEO';

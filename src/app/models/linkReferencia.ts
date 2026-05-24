@@ -43,7 +43,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.ANALISIS_PROJECTIONS;
+export const LAST_ITEM = Keys.CD_CI_CONFIGURATION_PATTERNS;
 export const LAST_UPDATE = Keys.PATRONES_DESGLOSE_GOF;
 
 export const AGILES_KEY = 'Agiles';
@@ -1742,6 +1742,9 @@ export const CI_CD_REF = new Map<string, Referencia>([
     [Keys.CD_CI_ROLLING_DEPLOYMENT, new Referencia('https://octopus.com/devops/software-deployments/rolling-deployment/', 'Rolling deployment', CI_CD_KEY, 'Rolling deployment', '2026/01/25')
         .addRelatedItems(Keys.SYSTEM_DESIGN_SINGLE_POINT_OF_FAILURE, Keys.TESTING_ADVANCED_ENVIRONMENT, Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES)
     ],
+    [Keys.CD_CI_CONFIGURATION_PATTERNS, new Referencia('https://www.linkedin.com/posts/many-devops-engineers-dont-know-there-are-share-7460168423919222784-gfsG/', 'Configuration patterns', CI_CD_KEY, 'Configuration patterns', '2026/05/23')
+        .addRelatedItems(Keys.COMPILACION_COMPILACION, Keys.EJECUCION_MEMORY_MANAGEMENT, Keys.CONTENEDORES_ORCHESTRATION)
+    ]
 ]);
 
 export const MICRO_SERVICES_KEY = 'Microservicios-Introduccion';
