@@ -247,11 +247,14 @@
         "&bull; Los optimizadores de consultas, usan de manera activa las estadisticas para sus decisiones, estadisticas obsoletas generan planes deficientes "
     ],
     "orm": [
-        "- El Mapeo Objeto-Relacional permite convertir los objetos convencionales en objetos persistentes ",
-        "- Permite generar esquemas para guardar la información independientes de cualquier Motor de Base de Datos ",
-        "- Todas las operaciones basicas del CRUD son facilmente implementables ",
-        "- Los cambios en las BD se hacen mucho más rapidos de hacer y de probar ",
-        "- El rendimientos para operaciones muy complicadas es ligeramente menor "
+        "- El <strong>Mapeo Objeto-Relacional</strong> permite abstraer el mapeo entre las entidades (objetos) del lenguaje de programación ",
+        " - y sus correspondientes esquemas, tablas y columnas en la base de datos ",
+        "- Permite definir y migrar esquemas con portabilidad entre distintos motores de base de datos ",
+        "- Todas las operaciones básicas del CRUD son fácilmente implementables ",
+        "",
+        "- Los cambios en el esquema son más rápidos de implementar al no requerir escribir SQL subyacente directamente ",
+        "- El rendimiento en consultas complejas decrece debido a la generación de SQL ineficiente por parte del ORM ",
+        "- Las jerarquías de herencia en POO son difíciles de representar en un modelo relacional (impedance mismatch) "
     ],
     "n+1selects": [
         "- Es un problema cuando se manejan ORM, dado una colección o una relación entre objetos, que a su vez pueden tener otras colecciones/objetos como atributos ",

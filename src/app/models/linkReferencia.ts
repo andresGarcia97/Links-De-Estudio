@@ -44,7 +44,7 @@ export class LinkReferencia {
 }
 
 export const LAST_ITEM = Keys.CD_CI_CONFIGURATION_PATTERNS;
-export const LAST_UPDATE = Keys.PATRONES_DESGLOSE_GOF;
+export const LAST_UPDATE = Keys.PERSISTENCY_INTERMEDIATE_ORM;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -1465,7 +1465,9 @@ export const PERSISTENCY_INTERMEDIATE_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.BUENAS_PRACTICAS_DEBUGGING, Keys.OBSERVABILIDAD_OBSERVABILITY)
         .addMoreReferences('https://medium.com/@kotiavula6/this-sql-question-exposes-fake-senior-developers-most-people-get-it-wrong-ce8a6a94952d')
     ],
-    [Keys.PERSISTENCY_INTERMEDIATE_ORM, new Referencia('https://programarfacil.com/blog/que-es-un-orm/', 'Mapeo Objeto-Relacional (ORM)', PERSISTENCY_INTERMEDIATE_KEY, 'ORM')],
+    [Keys.PERSISTENCY_INTERMEDIATE_ORM, new Referencia('https://aws.amazon.com/es/what-is/object-relational-mapping/', 'Mapeo Objeto-Relacional (ORM)', PERSISTENCY_INTERMEDIATE_KEY, 'ORM', '', '2026/05/23')
+        .addRelatedItems(Keys.POO_POO)
+    ],
     [Keys.PERSISTENCY_INTERMEDIATE_N_1_SELECTS, new Referencia('https://stackoverflow.com/questions/97197/what-is-the-n1-selects-problem-in-orm-object-relational-mapping', 'N + 1 Problem', PERSISTENCY_INTERMEDIATE_KEY, 'N + 1 Selects', '', '2026/02/21')
         .addMoreReferences('https://medium.com/lets-code-future/i-reduced-our-api-response-time-from-3s-to-80ms-with-one-java-change-0f7938e28bb7')
     ],
