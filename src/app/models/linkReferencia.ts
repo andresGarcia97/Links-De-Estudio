@@ -43,8 +43,8 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.CD_CI_CONFIGURATION_PATTERNS;
-export const LAST_UPDATE = Keys.PERSISTENCY_INTERMEDIATE_ORM;
+export const LAST_ITEM = Keys.PERSISTENCY_INTERMEDIATE_OPTIMIZE_SLOW_QUERIES_III;
+export const LAST_UPDATE = Keys.PERSISTENCY_INTERMEDIATE_INDICES;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -1455,15 +1455,21 @@ export const PERSISTENCY_INTERMEDIATE_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.EJECUCION_RECURSIVIDAD)
     ],
     [Keys.PERSISTENCY_INTERMEDIATE_ADVANCED_SQL_ORDER_EXECUTION, new Referencia('https://matam-kirankumar.medium.com/sql-query-order-of-execution-37001da1462', 'Orden de Ejecución', PERSISTENCY_INTERMEDIATE_KEY, 'Orden de Ejecución', '2023/08/13')],
-    [Keys.PERSISTENCY_INTERMEDIATE_INDICES, new Referencia('https://www.adesso.es/es/noticias/blog/indices-de-bases-de-datos-la-clave-para-la-optimizacion-del-rendimiento.jsp', 'Indices & Indices parciales', PERSISTENCY_INTERMEDIATE_KEY, 'Indices', '', '2025/12/20')
+    [Keys.PERSISTENCY_INTERMEDIATE_INDICES, new Referencia('https://www.adesso.es/es/noticias/blog/indices-de-bases-de-datos-la-clave-para-la-optimizacion-del-rendimiento.jsp', 'Indices & Indices compuestos/parciales', PERSISTENCY_INTERMEDIATE_KEY, 'Indices', '', '2026/05/26')
         .addRelatedItems(Keys.META_ESTRUCTURAS_ESTRUCTURAS_DATOS_II, Keys.PERSISTENCY_INTERMEDIATE_ADVANCED_SARGEABLE)
-        .addMoreReferences('https://use-the-index-luke.com/es/sql/where/%C3%ADndices-parciales')
+        .addMoreReferences('https://use-the-index-luke.com/es/sql/where/%C3%ADndices-parciales', 'https://medium.com/@anas-issath/83f4939a8441')
     ],
     [Keys.PERSISTENCY_INTERMEDIATE_ADVANCED_SARGEABLE, new Referencia('https://dev.to/kanani_nirav/secret-to-optimizing-sql-queries-understand-the-sql-execution-order-28m1', 'Consultas SARGEABLE', PERSISTENCY_INTERMEDIATE_KEY, 'SARGEABLE', '2023/08/14')],
-    [Keys.PERSISTENCY_INTERMEDIATE_OPTIMIZE_SLOW_QUERIES_I, new Referencia('https://digma.ai/how-to-optimize-slow-sql-queries/', 'Optimización de consultas I', PERSISTENCY_INTERMEDIATE_KEY, 'Optimización I', '2024/06/09')],
-    [Keys.PERSISTENCY_INTERMEDIATE_OPTIMIZE_SLOW_QUERIES_II, new Referencia('https://darren-tan0512.medium.com/sql-best-practices-hard-learned-lessons-from-my-years-as-a-software-engineer-1d50f6ea54b7', 'Optimización de consultas II', PERSISTENCY_INTERMEDIATE_KEY, 'Optimización II', '2025/12/21')
+    [Keys.PERSISTENCY_INTERMEDIATE_OPTIMIZE_SLOW_QUERIES_I, new Referencia('https://digma.ai/how-to-optimize-slow-sql-queries/', 'Optimización de consultas I', PERSISTENCY_INTERMEDIATE_KEY, 'Optimización I', '2024/06/09', '2026/05/26')
+        .addMoreReferences('https://blog.stackademic.com/sql-query-optimization-how-i-reduced-query-time-from-3-seconds-to-50ms-e1d1dccd890d')
+    ],
+    [Keys.PERSISTENCY_INTERMEDIATE_OPTIMIZE_SLOW_QUERIES_II, new Referencia('https://darren-tan0512.medium.com/sql-best-practices-hard-learned-lessons-from-my-years-as-a-software-engineer-1d50f6ea54b7', 'Optimización de consultas II', PERSISTENCY_INTERMEDIATE_KEY, 'Optimización II', '2025/12/21', '2026/05/26')
         .addRelatedItems(Keys.BUENAS_PRACTICAS_DEBUGGING, Keys.OBSERVABILIDAD_OBSERVABILITY)
         .addMoreReferences('https://medium.com/@kotiavula6/this-sql-question-exposes-fake-senior-developers-most-people-get-it-wrong-ce8a6a94952d')
+    ],
+    [Keys.PERSISTENCY_INTERMEDIATE_OPTIMIZE_SLOW_QUERIES_III, new Referencia('https://tanelpoder.com/posts/reasons-why-select-star-is-bad-for-sql-performance/', 'Optimización de consultas III', PERSISTENCY_INTERMEDIATE_KEY, 'Optimización III', '2026/05/26')
+        .addRelatedItems(Keys.ANALISIS_PROJECTIONS)
+        .addMoreReferences('https://medium.com/@hnasr/how-slow-is-select-8d4308ca1f0c', 'https://www.thoughtspot.com/data-trends/data-modeling/optimizing-sql-queries', 'https://www.datacamp.com/blog/sql-query-optimization')
     ],
     [Keys.PERSISTENCY_INTERMEDIATE_ORM, new Referencia('https://aws.amazon.com/es/what-is/object-relational-mapping/', 'Mapeo Objeto-Relacional (ORM)', PERSISTENCY_INTERMEDIATE_KEY, 'ORM', '', '2026/05/23')
         .addRelatedItems(Keys.POO_POO)
