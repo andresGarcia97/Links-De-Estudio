@@ -43,7 +43,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.PERSISTENCY_INTERMEDIATE_OPTIMIZE_SLOW_QUERIES_III;
+export const LAST_ITEM = Keys.LEYES_BRANDOLINI;
 export const LAST_UPDATE = Keys.PERSISTENCY_INTERMEDIATE_INDICES;
 
 export const AGILES_KEY = 'Agiles';
@@ -514,6 +514,9 @@ export const LEYES_REF = new Map<string, Referencia>([
     [Keys.LEYES_ARQUITECTURE, new Referencia('https://lawsofsoftwareengineering.com/laws/law-of-leaky-abstractions/', 'Leyes sobre Arquitectura', LEYES_KEY, 'Leyes & Arquitectura', '2026/05/18')
         .addRelatedItems(Keys.POO_ABSTRACTIONS, Keys.PATRONES_ADVANCED_STRANGLER_FIG, Keys.WEB_SIMPLIFY_DESIGN, Keys.SYSTEM_DESIGN_COMMON_FAILS, Keys.PERSISTENCY_INTERMEDIATE_ORM)
         .addMoreReferences('https://lawsofsoftwareengineering.com/laws/law-of-unintended-consequences/', 'https://lawsofsoftwareengineering.com/laws/second-system-effect/', 'https://lawsofsoftwareengineering.com/laws/zawinskis-law/')
+    ],
+    [Keys.LEYES_BRANDOLINI, new Referencia('https://psicologiaymente.com/social/ley-de-brandolini', 'Ley de Brandolini', LEYES_KEY, 'Ley de Brandolini', '2026/05/28')
+        .addRelatedItems(Keys.PEOPLE_SINDROMES_LABORALES, Keys.CONOCIMIENTOS_EMPIRICOS_SESGOS_COGNITIVOS)
     ]
 ]);
 

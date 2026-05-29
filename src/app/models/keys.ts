@@ -118,6 +118,7 @@ export const LEYES_LINUS = 'linus';
 export const LEYES_HOFSTADTER = 'Hofstadter';
 export const LEYES_LITTLE = 'little';
 export const LEYES_ARQUITECTURE = 'arquitecture-laws';
+export const LEYES_BRANDOLINI = 'brandolini';
 export const MALAS_PRACTICAS_CALLBACK_HELL = 'callbackHell';
 export const MALAS_PRACTICAS_CONTRA_CALIDAD = 'contraCalidad';
 export const MALAS_PRACTICAS_CONTRA_GESTION = 'contraGestion';
