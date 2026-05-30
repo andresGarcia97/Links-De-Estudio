@@ -43,7 +43,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.LEYES_BRANDOLINI;
+export const LAST_ITEM = Keys.CD_CI_SIGTERM;
 export const LAST_UPDATE = Keys.PERSISTENCY_INTERMEDIATE_INDICES;
 
 export const AGILES_KEY = 'Agiles';
@@ -1755,6 +1755,9 @@ export const CI_CD_REF = new Map<string, Referencia>([
     ],
     [Keys.CD_CI_CONFIGURATION_PATTERNS, new Referencia('https://www.linkedin.com/posts/many-devops-engineers-dont-know-there-are-share-7460168423919222784-gfsG/', 'Configuration patterns', CI_CD_KEY, 'Configuration patterns', '2026/05/23')
         .addRelatedItems(Keys.COMPILACION_COMPILACION, Keys.EJECUCION_MEMORY_MANAGEMENT, Keys.CONTENEDORES_ORCHESTRATION)
+    ],
+    [Keys.CD_CI_SIGTERM, new Referencia('https://medium.com/@gaddamnaveen192/thinking-like-a-senior-engineer-what-happens-when-your-service-gets-sigterm-71d4b666b068', 'Signal Terminate', CI_CD_KEY, 'SIGTERM', '2026/05/29')
+        .addRelatedItems(Keys.EJECUCION_PROCESS_AND_THREADS, Keys.CONTENEDORES_ORCHESTRATION, Keys.PERSISTENCY_ADVANCED_LONG_TRANSACTIONS)
     ]
 ]);
 
