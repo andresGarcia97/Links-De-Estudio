@@ -43,7 +43,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.CD_CI_SIGTERM;
+export const LAST_ITEM = Keys.FRAMEWORKS_HIDDEN_LAYERS;
 export const LAST_UPDATE = Keys.PERSISTENCY_INTERMEDIATE_INDICES;
 
 export const AGILES_KEY = 'Agiles';
@@ -621,6 +621,9 @@ export const FRAMEWORKS_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.ANALISIS_TYPE_EVENTS, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRANSACTIONS, Keys.PATRONES_ADVANCED_PERSISTENCE_PATTERNS, Keys.META_ESTRUCTURAS_SCOPE, Keys.PERSISTENCY_ADVANCED_CONSISTENCY, Keys.COMPILACION_ERRORS_AND_EXCEPTIONS)
         .addMoreReferences('https://codefarm0.medium.com/top-spring-boot-transaction-interview-questions-c872fb800120', 'https://dev.to/haraf/understanding-transactioneventlistener-in-spring-boot-use-cases-real-time-examples-and-4aof', 'https://docs.spring.io/spring-framework/reference/data-access/transaction/declarative/annotations.html')
     ],
+    [Keys.FRAMEWORKS_HIDDEN_LAYERS, new Referencia('https://medium.com/javarevisited/you-call-response-getbody-and-think-youre-done-you-re-not-even-close-ceb5ed2b7e74', 'Capas inherentemente ocultas', FRAMEWORKS_KEY, 'Layers', '2026/05/30')
+        .addRelatedItems(Keys.ARQUITECTURAS_CAPAS, Keys.META_ESTRUCTURAS_LAYERS_SOFTWARE, Keys.HARDWARE_MODEL_OSI)
+    ]
 ]);
 
 export const GIT_KEY = 'Git';

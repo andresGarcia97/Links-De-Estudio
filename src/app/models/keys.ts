@@ -27,6 +27,7 @@ export const FRAMEWORKS_SPRING_ANNOTATIONS = 'spring-annotations';
 export const FRAMEWORKS_CODE_STRUCTURE = 'codeStructucture';
 export const FRAMEWORKS_TRANSACTIONAL_I = 'transactional-I';
 export const FRAMEWORKS_TRANSACTIONAL_II = 'transactional-II';
+export const FRAMEWORKS_HIDDEN_LAYERS = 'hidden-layers';
 export const POO_POO = 'poo';
 export const POO_PILARES = 'pooPilares';
 export const POO_COMPOSICION = 'composicion';
