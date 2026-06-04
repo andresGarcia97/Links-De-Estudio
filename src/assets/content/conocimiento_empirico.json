@@ -375,5 +375,33 @@
     "&bull; Con electrodomésticos cada vez más eficientes, el consumo total de energía eléctrica no bajó, sino que aumentó ",
     "&bull; Bombillos de bajo consumo: al gastar menos energía, dejamos de preocuparnos por apagarlos o por la cantidad, incrementando su uso total ",
     "&bull; Tener autos que consumen menos combustibles no implica la reducción de su uso, al contrario, lo incentiva al reducir el costo por kilómetro recorrido "
+  ],
+  "breaking-production-lessons": [
+    "- Afectar el ambiente productivo es inevitable en algun momento, los incidentes y efectos secundarios siempre pueden surgir ",
+    "- Existen lecciones que solo se aprenden desde los errores o en palabras de <strong>Oscar Wilde</strong>, <em>La experiencia es el nombre que todos le dan a sus errores</em> ",
+    "",
+    "<strong>Siempre esta relacionado:</strong> Si producción se desestabiliza despues de desplegar un cambio, lo ideal es hacer rollback, estabilizar y debugear ",
+    "- Los cambios, por más sutiles o inocentes que parezcan, pueden tener efectos inesperados ",
+    "",
+    "<strong>Backups:</strong> Las copias de seguridad solo funcionan cuando se han probado y realmente han traido de vuelta los datos ",
+    "- Confiar en una copia de seguridad que esta ahí y que no se ha restaurado nunca es una salvaguarda falsa ",
+    "",
+    "<strong>Logs:</strong> Cuando pasa un incidente, los logs son de mucha ayuda, pero no necesariamente siempre tienen toda la trazabilidad que necesitamos ",
+    "- Esto no nos puede llevar al extremo de generar demasiados logs, ruidosos o verbosos ",
+    "",
+    "<strong>Rollback:</strong> Si se tocan datos, siempre se debe tener el plan previamente validado, por más pequeño que sea el cambio ",
+    "- Todo rollback que no se haya ejecutado siempre tendra una posibilidad del 50/50 ",
+    "",
+    "<strong>Dependencias:</strong> Usar APIs externas que son confiables o facilmente integrables, nos hace olvidarnos de que estas tambien se pueden <em>caer</em> ",
+    "- Toda dependencia externa puede fallar, nos corresponde estar preparados para ese escenario ",
+    "",
+    "<strong>Revisiones:</strong> Cuando no se tiene seguridad de una acción o de un cambio, siempre será oportuno que este tenga una revisión por pares ",
+    "- Con solo explicar lo que se planea hacer, los errores pueden volverse evidentes a simple vista ",
+    "",
+    "<strong>Arreglos temporales:</strong> Las decisiones/acciones que se toman de manera rápida para arreglar problemas pocas veces o nunca directamente son cambiadas de nuevo",
+    "- No hay nada más duradero que un arreglo temporal",
+    "",
+    "<strong>Monitoreo y alertas:</strong> Saber que producción falló por las quejas de los usuarios es la peor forma de enterarse de un incidente ",
+    "- Una alerta que siempre se dispara termina siendo ignorada, igual que una que nunca se dispara "
   ]
 }

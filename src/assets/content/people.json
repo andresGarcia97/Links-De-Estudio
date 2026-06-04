@@ -452,12 +452,12 @@
     "- Se proporciona un software más robusto estable y con menos errores despues de tomar acciones en base a la información recolectada ",
     "",
     "- Una plantilla post mortem suele tener detalles como: ",
-    "&bull; ¿ Quien hace el analisis ?",
-    "&bull; Lecciones aprendidas y acciones a tomar ",
-    "&bull; Cronologia del error ",
-    "&bull; Acciones durante el incidente ",
-    "&bull; Cuantificación del impacto ",
-    "&bull; Severidad del impacto ",
-    "&bull; Evidencia tecnica "
+    "&bull; ¿ Quien hace el analisis ?       &bull; Evidencia tecnica",
+    "&bull; Lecciones aprendidas             &bull; Severidad del impacto",
+    "&bull; Cronologia del error             &bull; Cuantificación del impacto",
+    "&bull; Acciones durante el incidente    &bull; Acciones despues del incidente ",
+    " ",
+    " ",
+    " "
   ]
 }

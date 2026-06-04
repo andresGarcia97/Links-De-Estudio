@@ -43,7 +43,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.FRAMEWORKS_HIDDEN_LAYERS;
+export const LAST_ITEM = Keys.CONOCIMIENTOS_EMPIRICOS_BREAKING_PRODUCTION_LESSONS;
 export const LAST_UPDATE = Keys.PERSISTENCY_INTERMEDIATE_INDICES;
 
 export const AGILES_KEY = 'Agiles';
@@ -480,6 +480,10 @@ export const CONOCIMIENTO_EMPIRICO = new Map<string, Referencia>([
     [Keys.CONOCIMIENTOS_EMPIRICOS_JEVONS, new Referencia('https://www.linkedin.com/posts/gustavo-ghioldi-a5722946_softwareengineering-jevonsparadox-wirthslaw-share-7438903908975947776-26fm/', 'Paradoja de Jevons', CONOCIMIENTO_EMPIRICO_KEY, 'Paradoja de Jevons', '2026/04/18')
         .addRelatedItems(Keys.LEYES_MOORE_AND_WIRTH)
         .addMoreReferences('https://psicologiaymente.com/cultura/paradoja-jevons')
+    ],
+    [Keys.CONOCIMIENTOS_EMPIRICOS_BREAKING_PRODUCTION_LESSONS, new Referencia('https://www.linkedin.com/posts/anton-zaides_7-software-engineering-lessons-you-learn-share-7450966788504231936-tQ0_/', 'Lecciones despues de romper produccion', CONOCIMIENTO_EMPIRICO_KEY, 'Breaking Production', '2026/06/04')
+        .addRelatedItems(Keys.CD_CI_ROLLING_DEPLOYMENT, Keys.CD_CI_FAILOVER, Keys.SYSTEM_DESIGN_RESILIENCE, Keys.BUENAS_PRACTICAS_DEBUGGING, Keys.PEOPLE_POST_MORTEM, Keys.CD_CI_MONITORING_AND_ALERTS)
+        .addMoreReferences('https://psicologiaymente.com/reflexiones/frases-oscar-wilde')
     ]
 ]);
 

@@ -254,7 +254,7 @@
     "- Muchas funcionalidades o conveniencias que un Framework aporta, suelen tener un sustento técnico bastante rico que no siempre vemos o conocemos ",
     "- Conocer las multiples capas involucradas para que una simple petición GET viajes sin problemas, por ejemplo, nos enseña que la ingeniera cambia y evoluciona ",
     "",
-    "<strong>1 capa, tu codigo:</strong> Es la capa visible y reconocible para todo programadador debido a que fue escrita y es entendida por el mismo ",
+    "<strong>1 capa, Tu codigo:</strong> Es la capa visible y reconocible para todo programadador debido a que fue escrita y es entendida por el mismo ",
     "",
     "<strong>2 capa, Dispatcher Servlet:</strong> Antes de que se llame un controlador la solicitud pasa por este componente que recibe todas las llamadas HTTP y decide su destino ",
     "- Va más alla del simple enrutamiento, encontrando el patron que coincide con la URL y gestiona todo el ciclo de vida en torno al controlador ",
