@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { BUENAS_PRACTICAS_KEY, CI_CD_KEY, CONOCIMIENTO_EMPIRICO_KEY, CONTENEDORES_KEY, FRAMEWORKS_KEY, LinkReferencia,
+import { BUENAS_PRACTICAS_KEY, CI_CD_KEY, CONOCIMIENTO_PSICOLOGICO_KEY, CONTENEDORES_KEY, FRAMEWORKS_KEY, LinkReferencia,
   NUBE_KEY, SECURITY_KEY, WEB_REF }
 from 'src/app/models/linkReferencia';
 import { Item, PreviousAndNextSection } from 'src/app/models/models';
@@ -37,8 +37,8 @@ export class WebComponent implements OnInit {
     this.relatedSections.set(CI_CD_KEY,            routes.get(CI_CD_KEY)!);
     this.relatedSections.set(NUBE_KEY,             routes.get(NUBE_KEY)!);
     this.previousAndNextSection = new PreviousAndNextSection(
-      CONTENEDORES_KEY,          routes.get(CONTENEDORES_KEY)!,
-      CONOCIMIENTO_EMPIRICO_KEY, routes.get(CONOCIMIENTO_EMPIRICO_KEY)!
+      CONTENEDORES_KEY,             routes.get(CONTENEDORES_KEY)!,
+      CONOCIMIENTO_PSICOLOGICO_KEY, routes.get(CONOCIMIENTO_PSICOLOGICO_KEY)!
     );
   }
 
