@@ -330,5 +330,31 @@
     "<strong>Mapas o diccionarios:</strong> Aprovechan la separación de los datos y la lógica de flujo de control, además de que toda busqueda tiene tiempo constante ",
     "",
     "<strong>Cadena de responsabilidad:</strong> Las reglas son independientes entre si, podiendo agregar/eliminar validaciones sin afectar el caso principal "
+  ],
+  "ISO-25010-quality-model": [
+    "- Garantizar la calidad del software es algo fundamental, eso va desde experiencias fluidas hasta soportar funcionalidades robustas",
+    "- La calidad implica directamente la satisfacción del usuario e impacta la eficiencia de la organización",
+    "- Existen formas y marcos para medirla, un marco internacional y de los más comunes para hacerlo es el <strong>ISO 25010</strong>",
+    "",
+    "- Es un estándar que describe modelos de calidad para software, compuestos por características y sub-características medibles",
+    "<strong>Calidad en uso</strong>: 4 factores que describen cómo la calidad del producto impacta la experiencia del usuario final",
+    "- <strong>Efectividad:</strong> El producto permite a los usuarios alcanzar sus objetivos con precisión y completitud",
+    "- <strong>Eficiencia:</strong> Los usuarios logran sus metas con el menor esfuerzo y recursos posibles",
+    "- <strong>Satisfacción:</strong> El producto genera una experiencia positiva, cómoda y de confianza para el usuario",
+    "- <strong>Ausencia de riesgo:</strong> El sistema no representa riesgos para la salud, seguridad, economía ni el entorno del usuario",
+    "",
+    "<strong>Calidad del producto</strong>: 8 características sobre propiedades estáticas y dinámicas del sistema",
+    "- <strong>Adecuación Funcional:</strong> Qué tan bien el sistema cubre las necesidades declaradas e implícitas del usuario (completitud, corrección y apropiación funcional)",
+    "- <strong>Fiabilidad:</strong> Capacidad del sistema de operar bajo condiciones específicas; incluye disponibilidad, tolerancia a fallos y recuperabilidad",
+    "- <strong>Eficiencia de Desempeño:</strong> Rendimiento relativo a los recursos consumidos; contempla tiempos de respuesta, uso de recursos y capacidad máxima",
+    "- <strong>Usabilidad:</strong> Facilidad con la que los usuarios logran sus objetivos; incluye learnability, operabilidad, protección ante errores y accesibilidad",
+    "- <strong>Seguridad:</strong> Protección de datos e información; cubre confidencialidad, integridad, no repudio, accountability y autenticidad",
+    "- <strong>Compatibilidad:</strong> Capacidad de coexistir e interoperar con otros productos compartiendo entorno o recursos",
+    "- <strong>Mantenibilidad:</strong> Facilidad para modificar el sistema; se mide en modularidad, reusabilidad, analizabilidad, modificabilidad y testabilidad",
+    "- <strong>Portabilidad:</strong> Capacidad de migrar el sistema entre entornos; incluye adaptabilidad, instalabilidad y reemplazabilidad",
+    "",
+    "- El ISO 25010 (2011) reemplazó al ISO 9126 (2001); la diferencia clave es que incorporó <strong>Seguridad</strong> y <strong>Compatibilidad</strong> como características independientes",
+    "- Aplicar este estándar permite al usuario final tener un producto efectivo, seguro, satisfactorio y que funcione tal como se espera en el contexto para el que fue creado",
+    "- En la práctica se usa como checklist durante todo el ciclo de desarrollo: desde la revisión de requerimientos hasta la evaluación de los resultados del QA"
   ]
 }

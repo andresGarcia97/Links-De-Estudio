@@ -43,7 +43,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.CONOCIMIENTOS_EMPIRICOS_BREAKING_PRODUCTION_LESSONS;
+export const LAST_ITEM = Keys.CALIDAD_ISO_IEC_25010;
 export const LAST_UPDATE = Keys.PERSISTENCY_INTERMEDIATE_INDICES;
 
 export const AGILES_KEY = 'Agiles';
@@ -344,6 +344,9 @@ export const CALIDAD_REF = new Map<string, Referencia>([
     [Keys.CALIDAD_IF_ELSE, new Referencia('https://medium.com/@akintopbas96/refactoring-java-spring-boot-code-eliminating-if-else-statements-for-cleaner-extensible-logic-f1314cf9724e', 'Como Reducir los if/else', CALIDAD_KEY, 'Reducción de if/else', '2024/08/11', '2025/12/26')
         .addRelatedItems(Keys.REFACTORING_CLEAN_CODE, Keys.BUENAS_PRACTICAS_COMPLEJIDAD_COGNITIVA, Keys.BUENAS_PRACTICAS_GUARD_CLAUSES, Keys.PRINCIPIOS_SOLID)
         .addMoreReferences('https://blog.stackademic.com/junior-developers-use-if-else-senior-developers-use-these-java-design-patterns-instead-d8b3baabb367')
+    ],
+    [Keys.CALIDAD_ISO_IEC_25010, new Referencia('https://www.perforce.com/blog/qac/what-is-iso-25010', 'Quality Model - ISO 25010', CALIDAD_KEY, 'Quality Model', '2026/06/06')
+        .addMoreReferences('https://helpware.com/blog/tech/iso-25010-enhancing-our-software-quality-management-process')
     ],
 ]);
 
