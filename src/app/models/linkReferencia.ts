@@ -10,7 +10,7 @@ export class LinkReferencia {
         ...FRAMEWORKS_REF,       ...PATRONES_ADVANCED_REF,    ...USER_HISTORIES,
         ...MALAS_PRACTICAS_REF,  ...META_CARATERISTICAS_REF,  ...META_ESTRUCTURAS_REF,
         ...METODOLOGIAS_REF,     ...NUBE_REF,                 ...ANALISIS_DATA_REF,
-        ...PARADIGMAS_REF,       ...PATRONES_REF,             ...PEOPLE_REF,
+        ...PARADIGMAS_REF,       ...PATRONES_REF,             ...CONOCIMIENTO_PSICOLOGICO,
         ...POO_REF,              ...TESTING_REF,              ...TESTING_ADVANCED_REF,
         ...REFACTORING_REF,      ...REQUISITOS_REF,           ...PRINCIPIOS_REF,
         ...SECURITY_REF,         ...SMELL_CODES_REF,          ...PERSISTENCY_REF,
@@ -19,7 +19,7 @@ export class LinkReferencia {
         ...CI_CD_REF,            ...APIS_REF,                 ...PERSISTENCY_ADVANCED_REF,
         ...MICRO_SERVICES_REF,   ...SYSTEM_DESIGN_REF,        ...MICRO_SERVICES_ADVANCED_REF,
         ...OBSERVABILIDAD_REF,   ...EJECUCION_REF,            ...PERSISTENCY_INTERMEDIATE_REF,
-        ...GIT_REF
+        ...GIT_REF,              ...PEOPLE_REF
     ]);
 
     public routesAndSections: Map<string, string> = new Map([
@@ -28,7 +28,7 @@ export class LinkReferencia {
         [UML_KEY, 'uml'],               [PERSISTENCY_KEY, 'bases-de-datos'],    [ESTRATEGIAS_DESARROLLO_KEY, 'estrategias-de-desarrollo'],
         [GIT_KEY, 'git'],               [METODOLOGIAS_KEY, 'metodologias'],     [BUENAS_PRACTICAS_KEY, 'buenas-practicas'],
         [CALIDAD_KEY, 'calidad'],       [COMPILACION_KEY, 'compilacion'],       [MALAS_PRACTICAS_KEY, 'malas-practicas'],
-        [LEYES_KEY, 'leyes'],           [CONTENEDORES_KEY, 'contenedores'],     [CI_CD_KEY, 'ci-cd-infraestructura'],
+        [LEYES_KEY, 'leyes'],           [CONTENEDORES_KEY, 'contenedores'],     [CONOCIMIENTO_PSICOLOGICO_KEY, 'conocimiento-psicologico'],
         [POO_KEY, 'poo'],               [FRAMEWORKS_KEY, 'frameworks'],         [NEURO_MARKETING_KEY, 'neuro-marketing'],
         [WEB_KEY, 'web'],               [PRINCIPIOS_KEY, 'principios'],         [PERSISTENCY_ADVANCED_KEY, 'bd-avanzado'],
         [APIS_KEY, 'apis'],             [MICRO_SERVICES_KEY, 'microservices'],  [USER_HISTORIES_KEY, 'historias-de-usuario'],
@@ -38,7 +38,7 @@ export class LinkReferencia {
         [NUBE_KEY, 'nube'],             [ARQUITECTURAS_KEY, 'arquitecturas'],   [ANALISIS_DATA_KEY, 'analisis-datos'],
         [TESTING_KEY, 'testing'],       [SYSTEM_DESIGN_KEY, 'system-design'],   [MICRO_SERVICES_ADVANCED_KEY, 'microservices-avanzado'],
         [PEOPLE_KEY, 'personas'],       [EJECUCION_KEY, 'ejecucion'],           [PERSISTENCY_INTERMEDIATE_KEY, 'bd-intermedio'],
-        [SECURITY_KEY, 'seguridad']
+        [SECURITY_KEY, 'seguridad'],    [CI_CD_KEY, 'ci-cd-infraestructura']
     ]);
 
 }
@@ -440,32 +440,14 @@ export const CONOCIMIENTO_EMPIRICO = new Map<string, Referencia>([
     [Keys.CONOCIMIENTOS_EMPIRICOS_CRISTALES_ROTOS, new Referencia('https://lamenteesmaravillosa.com/la-teoria-las-ventanas-rotas/', 'Cristales rotos ó Ventanas rotas', CONOCIMIENTO_EMPIRICO_KEY, 'Cristales rotos', '', '2026/04/18')
         .addRelatedItems(Keys.CALIDAD_CLEAN_CODE)
     ],
-    [Keys.CONOCIMIENTOS_EMPIRICOS_STATUS_QUO, new Referencia('https://psicologiaymente.com/social/sesgo-statu-quo/', 'Status Quo', CONOCIMIENTO_EMPIRICO_KEY, 'Status Quo', '', '2025/07/08')],
-    [Keys.CONOCIMIENTOS_EMPIRICOS_COSTO_HUNDIDO, new Referencia('https://psicologiaymente.com/psicologia/falacia-costo-hundido/', 'Falacia del costo hundido', CONOCIMIENTO_EMPIRICO_KEY, 'Costo Hundido', '', '2026/04/18')
-        .addRelatedItems(Keys.REFACTORING_REWRITE_TRAP)
-    ],
     [Keys.CONOCIMIENTOS_EMPIRICOS_TIPOS_PROGRAMADORES, new Referencia('https://stevenbenner.com/2010/07/the-5-types-of-programmers/', 'Tipos de programadores', CONOCIMIENTO_EMPIRICO_KEY, 'Programadores')],
-    [Keys.CONOCIMIENTOS_EMPIRICOS_SESGOS_COGNITIVOS, new Referencia('https://www.brainvestigations.com/neurociencia/sesgo-cognitivo-negocios/', 'Algunos Sesgos cognitivos', CONOCIMIENTO_EMPIRICO_KEY, 'Sesgo Cognitivo')],
-    [Keys.CONOCIMIENTOS_EMPIRICOS_PREJUICIOS, new Referencia('https://www.boream.com/insights/sesgos-cognitivos-y-prejuicios-en-los-procesos-de-diseno-de-interfaz-como-combatirlos', 'Prejuicios', CONOCIMIENTO_EMPIRICO_KEY, 'Prejuicios')],
-    //["multitarea", new Referencia('https://www.sodexo.es/blog/multitarea-multitasking/', 'Pros y Contras del multitasking', CONOCIMIENTO_EMPIRICO_KEY, 'Multitareas')],
     [Keys.CONOCIMIENTOS_EMPIRICOS_MULTI_TASKING, new Referencia('https://www.nationalgeographicla.com/ciencia/2022/11/como-nos-afecta-el-multitasking-3-efectos-de-la-multitarea', 'Pros y Contras del Multitasking', CONOCIMIENTO_EMPIRICO_KEY, 'Multitarea', '', '2025/07/08')],
-    //['maxwellCurve', new Referencia('https://blog.axosoft.com/the-maxwell-curve-blunder-in-the-name-of-scrum/', 'La curva de Maxwell', CONOCIMIENTO_EMPIRICO_KEY, 'Curva de Maxwell')],
-    [Keys.CONOCIMIENTOS_EMPIRICOS_MAXWELL_CURVE, new Referencia('https://www.scrumnetwork.com/blog/scrum-no-te-apresures-no-te-detengas', 'La curva de Maxwell', CONOCIMIENTO_EMPIRICO_KEY, 'Curva de Maxwell', '', '2024/04/16')],
-    [Keys.CONOCIMIENTOS_EMPIRICOS_DUNNIN_KRUGGER, new Referencia('https://www.awenpsicologia.com/efecto-dunning-kruger/', 'Efecto Dunning-Kruger', CONOCIMIENTO_EMPIRICO_KEY, 'Dunning-Kruger')],
-    [Keys.CONOCIMIENTOS_EMPIRICOS_REFORZAMIENTO_SKINNER, new Referencia('https://psicologiaymente.com/psicologia/teoria-reforzamiento-skinner', 'Reforzamiento de conductas', CONOCIMIENTO_EMPIRICO_KEY, 'Reforzamiento')],
     [Keys.CONOCIMIENTOS_EMPIRICOS_PASTA_THEORY, new Referencia('https://www.techtarget.com/searchsoftwarequality/tip/Fix-spaghetti-code-and-other-pasta-theory-antipatterns/', 'Teoria de la pasta', CONOCIMIENTO_EMPIRICO_KEY, 'Codigo como pasta')],
     [Keys.CONOCIMIENTOS_EMPIRICOS_THINGS_THAT_ARE_NOT_TAUGHT, new Referencia('https://vadimkravcenko.com/shorts/things-they-didnt-teach-you/', 'Cosas que no se enseñan', CONOCIMIENTO_EMPIRICO_KEY, 'Cosas que no se enseñan', '2023/02/09')],
     [Keys.CONOCIMIENTOS_EMPIRICOS_CODING_EASY_PART, new Referencia('https://swizec.com/blog/coding-is-the-easy-part/', 'Codificar es la parte facil', CONOCIMIENTO_EMPIRICO_KEY, 'Codificar es facil', '2023/12/11', '2025/07/13')
         .addRelatedItems(Keys.LEYES_HYRUM)
     ],
-    [Keys.CONOCIMIENTOS_EMPIRICOS_AVESTRUZ, new Referencia('https://www.baeldung.com/cs/ostrich-algorithm', 'Algoritmo del Avestruz', CONOCIMIENTO_EMPIRICO_KEY, 'Avestruz', '', '2025/01/18')
-        .addRelatedItems(Keys.EJECUCION_DEAD_LOCKS, Keys.HARDWARE_OPERATIVE_SYSTEM)
-    ],
-    [Keys.CONOCIMIENTOS_EMPIRICOS_BOILING_FROG, new Referencia('https://www.linkedin.com/pulse/boiling-frog-syndrome-suyash-jaju/', 'Sindrome de la Rana Hervida', CONOCIMIENTO_EMPIRICO_KEY, 'Rana Hervida', '2024/04/16')],
     [Keys.CONOCIMIENTOS_EMPIRICOS_BOYS_SCOUTS, new Referencia('https://www.linkedin.com/pulse/la-regla-de-los-boys-scouts-hugo-raher/', 'Regla de los Boys Scouts', CONOCIMIENTO_EMPIRICO_KEY, 'Boys Scouts', '2024/04/16')],
-    [Keys.CONOCIMIENTOS_EMPIRICOS_ZEIGARNIK, new Referencia('https://psicologiaymente.com/psicologia/efecto-zeigarnik', 'Efecto Zeigarnik', CONOCIMIENTO_EMPIRICO_KEY, 'Efecto Zeigarnik', '2024/05/13')
-        .addRelatedItems(Keys.WEB_GESTALT)
-    ],
     [Keys.CONOCIMIENTOS_EMPIRICOS_PAIR_PROGRAMMING, new Referencia('https://stackoverflow.blog/2024/04/03/developers-with-ai-assistants-need-to-follow-the-pair-programming-model', 'Pair Programing con IA', CONOCIMIENTO_EMPIRICO_KEY, 'Pair Programing', '2024/05/26')],
     [Keys.CONOCIMIENTOS_EMPIRICOS_STAGES_COMPETENCE_MODEL, new Referencia('https://www.innovationtraining.org/the-four-stages-of-competence-model/', 'Etapas del modelo de competencia', CONOCIMIENTO_EMPIRICO_KEY, 'Modelo de competencia', '2024/09/09')],
     [Keys.CONOCIMIENTOS_EMPIRICOS_EXPIERENCE_LESSONS, new Referencia('https://dev.jimgrey.net/2024/07/03/lessons-learned-in-35-years-of-making-software/', 'Experiencia', CONOCIMIENTO_EMPIRICO_KEY, 'Experiencia', '2024/10/31')],
@@ -484,6 +466,26 @@ export const CONOCIMIENTO_EMPIRICO = new Map<string, Referencia>([
     [Keys.CONOCIMIENTOS_EMPIRICOS_BREAKING_PRODUCTION_LESSONS, new Referencia('https://www.linkedin.com/posts/anton-zaides_7-software-engineering-lessons-you-learn-share-7450966788504231936-tQ0_/', 'Lecciones despues de romper produccion', CONOCIMIENTO_EMPIRICO_KEY, 'Breaking Production', '2026/06/04')
         .addRelatedItems(Keys.CD_CI_ROLLING_DEPLOYMENT, Keys.CD_CI_FAILOVER, Keys.SYSTEM_DESIGN_RESILIENCE, Keys.BUENAS_PRACTICAS_DEBUGGING, Keys.PEOPLE_POST_MORTEM, Keys.CD_CI_MONITORING_AND_ALERTS)
         .addMoreReferences('https://psicologiaymente.com/reflexiones/frases-oscar-wilde')
+    ]
+]);
+
+export const CONOCIMIENTO_PSICOLOGICO_KEY = 'Psicologico';
+export const CONOCIMIENTO_PSICOLOGICO = new Map<string, Referencia>([
+    [Keys.CONOCIMIENTOS_PSICOLOGICOS_STATUS_QUO, new Referencia('https://psicologiaymente.com/social/sesgo-statu-quo/', 'Status Quo', CONOCIMIENTO_PSICOLOGICO_KEY, 'Status Quo', '', '2025/07/08')],
+    [Keys.CONOCIMIENTOS_PSICOLOGICOS_COSTO_HUNDIDO, new Referencia('https://psicologiaymente.com/psicologia/falacia-costo-hundido/', 'Falacia del costo hundido', CONOCIMIENTO_PSICOLOGICO_KEY, 'Costo Hundido', '', '2026/04/18')
+        .addRelatedItems(Keys.REFACTORING_REWRITE_TRAP)
+    ],
+    [Keys.CONOCIMIENTOS_PSICOLOGICOS_SESGOS_COGNITIVOS, new Referencia('https://www.brainvestigations.com/neurociencia/sesgo-cognitivo-negocios/', 'Algunos Sesgos cognitivos', CONOCIMIENTO_PSICOLOGICO_KEY, 'Sesgo Cognitivo')],
+    [Keys.CONOCIMIENTOS_PSICOLOGICOS_PREJUICIOS, new Referencia('https://www.boream.com/insights/sesgos-cognitivos-y-prejuicios-en-los-procesos-de-diseno-de-interfaz-como-combatirlos', 'Prejuicios', CONOCIMIENTO_PSICOLOGICO_KEY, 'Prejuicios')],
+    [Keys.CONOCIMIENTOS_PSICOLOGICOS_MAXWELL_CURVE, new Referencia('https://www.scrumnetwork.com/blog/scrum-no-te-apresures-no-te-detengas', 'La curva de Maxwell', CONOCIMIENTO_PSICOLOGICO_KEY, 'Curva de Maxwell', '', '2024/04/16')],
+    [Keys.CONOCIMIENTOS_PSICOLOGICOS_DUNNIN_KRUGGER, new Referencia('https://www.awenpsicologia.com/efecto-dunning-kruger/', 'Efecto Dunning-Kruger', CONOCIMIENTO_PSICOLOGICO_KEY, 'Dunning-Kruger')],
+    [Keys.CONOCIMIENTOS_PSICOLOGICOS_REFORZAMIENTO_SKINNER, new Referencia('https://psicologiaymente.com/psicologia/teoria-reforzamiento-skinner', 'Reforzamiento de conductas', CONOCIMIENTO_PSICOLOGICO_KEY, 'Reforzamiento')],
+    [Keys.CONOCIMIENTOS_PSICOLOGICOS_AVESTRUZ, new Referencia('https://www.baeldung.com/cs/ostrich-algorithm', 'Algoritmo del Avestruz', CONOCIMIENTO_PSICOLOGICO_KEY, 'Avestruz', '', '2025/01/18')
+        .addRelatedItems(Keys.EJECUCION_DEAD_LOCKS, Keys.HARDWARE_OPERATIVE_SYSTEM)
+    ],
+    [Keys.CONOCIMIENTOS_PSICOLOGICOS_BOILING_FROG, new Referencia('https://www.linkedin.com/pulse/boiling-frog-syndrome-suyash-jaju/', 'Sindrome de la Rana Hervida', CONOCIMIENTO_PSICOLOGICO_KEY, 'Rana Hervida', '2024/04/16')],
+    [Keys.CONOCIMIENTOS_PSICOLOGICOS_ZEIGARNIK, new Referencia('https://psicologiaymente.com/psicologia/efecto-zeigarnik', 'Efecto Zeigarnik', CONOCIMIENTO_PSICOLOGICO_KEY, 'Efecto Zeigarnik', '2024/05/13')
+        .addRelatedItems(Keys.WEB_GESTALT)
     ]
 ]);
 
@@ -520,7 +522,7 @@ export const LEYES_REF = new Map<string, Referencia>([
         .addMoreReferences('https://lawsofsoftwareengineering.com/laws/law-of-unintended-consequences/', 'https://lawsofsoftwareengineering.com/laws/second-system-effect/', 'https://lawsofsoftwareengineering.com/laws/zawinskis-law/')
     ],
     [Keys.LEYES_BRANDOLINI, new Referencia('https://psicologiaymente.com/social/ley-de-brandolini', 'Ley de Brandolini', LEYES_KEY, 'Ley de Brandolini', '2026/05/28')
-        .addRelatedItems(Keys.PEOPLE_SINDROMES_LABORALES, Keys.CONOCIMIENTOS_EMPIRICOS_SESGOS_COGNITIVOS)
+        .addRelatedItems(Keys.PEOPLE_SINDROMES_LABORALES, Keys.CONOCIMIENTOS_PSICOLOGICOS_SESGOS_COGNITIVOS)
     ]
 ]);
 
@@ -1303,7 +1305,7 @@ export const REFACTORING_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.WEB_SEO, Keys.PRINCIPIOS_KISS)
     ],
     [Keys.REFACTORING_REWRITE_TRAP, new Referencia('https://levelup.gitconnected.com/the-endless-rewrite-why-developers-fall-into-the-start-from-scratch-trap-and-how-to-avoid-it-4a2246837ac5', 'Refactorización & Reconstrucción', REFACTORING_KEY, 'Reconstrucción', '2025/01/01')
-        .addRelatedItems(Keys.CONOCIMIENTOS_EMPIRICOS_COSTO_HUNDIDO, Keys.PATRONES_ADVANCED_STRANGLER_FIG)
+        .addRelatedItems(Keys.CONOCIMIENTOS_PSICOLOGICOS_COSTO_HUNDIDO, Keys.PATRONES_ADVANCED_STRANGLER_FIG)
     ],
     [Keys.REFACTORING_MODERNIZATION_LEGACY, new Referencia('https://martinfowler.com/articles/patterns-legacy-displacement/', 'Modernización del legado', REFACTORING_KEY, 'Modernización', '2025/08/10')
         .addRelatedItems(Keys.NUBE_MIGRATIONS, Keys.REQUISITOS_BUSINESS_VALUE, Keys.AGILES_OUTPUT_AND_OUTCOME, Keys.PRINCIPIOS_DIVIDE_AND_CONQUER, Keys.ANALISIS_TACTIC_DESIGN, Keys.METODOLOGIAS_AGILES, Keys.MICROSERVICES_ARQUITECTURAS, Keys.LEYES_CONWAY, Keys.META_ESTRUCTURAS_SISTEMAS_COMPLEJOS)

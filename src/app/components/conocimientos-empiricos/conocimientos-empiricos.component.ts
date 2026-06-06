@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { ANALISIS_KEY, CONOCIMIENTO_EMPIRICO, LEYES_KEY, LinkReferencia, PEOPLE_KEY, PRINCIPIOS_KEY, WEB_KEY }
+import { ANALISIS_KEY, CONOCIMIENTO_EMPIRICO, CONOCIMIENTO_PSICOLOGICO_KEY, LEYES_KEY, LinkReferencia,
+  PEOPLE_KEY, PRINCIPIOS_KEY, WEB_KEY }
 from 'src/app/models/linkReferencia';
 import { Item, PreviousAndNextSection } from 'src/app/models/models';
 import { EMPIRICO_PATH } from 'src/app/models/relationsSummary';
@@ -36,8 +37,8 @@ export class ConocimientosEmpiricosComponent implements OnInit {
     this.relatedSections.set(LEYES_KEY,      routes.get(LEYES_KEY)!);
     this.relatedSections.set(WEB_KEY,        routes.get(WEB_KEY)!);
     this.previousAndNextSection = new PreviousAndNextSection(
-      WEB_KEY,   routes.get(WEB_KEY)!,
-      LEYES_KEY, routes.get(LEYES_KEY)!
+      CONOCIMIENTO_PSICOLOGICO_KEY, routes.get(CONOCIMIENTO_PSICOLOGICO_KEY)!,
+      LEYES_KEY,                    routes.get(LEYES_KEY)!
     );
   }
 
