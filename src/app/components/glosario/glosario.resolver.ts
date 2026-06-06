@@ -41,6 +41,7 @@ const CONTENT_FILES: string[] = [
     Paths.LEYES_PATH.file,
     Paths.AGILES_PATH.file,
     Paths.EMPIRICO_PATH.file,
+    Paths.PSICOLOGICO_PATH.file,
     Paths.FRAMEWORKS_PATH.file,
     Paths.PATRONES_PATH.file,
     Paths.PATRONES_ADVANCED_PATH.file,
