@@ -7,7 +7,7 @@ import {
   METODOLOGIAS_KEY, NEURO_MARKETING_KEY, NUBE_KEY, ANALISIS_DATA_KEY, PARADIGMAS_KEY, PATRONES_KEY, PEOPLE_KEY, POO_KEY,
   PRINCIPIOS_KEY, REFACTORING_KEY, REQUISITOS_KEY, SECURITY_KEY, SMELL_CODES_KEY, TESTING_ADVANCED_KEY, TESTING_KEY, UML_KEY,
   USER_HISTORIES_KEY, VERSIONAMIENTO_KEY, WEB_KEY, MICRO_SERVICES_KEY, SYSTEM_DESIGN_KEY, MICRO_SERVICES_ADVANCED_KEY,
-  OBSERVABILIDAD_KEY, EJECUCION_KEY, PERSISTENCY_INTERMEDIATE_KEY, PATRONES_ADVANCED_KEY
+  OBSERVABILIDAD_KEY, EJECUCION_KEY, PERSISTENCY_INTERMEDIATE_KEY, PATRONES_ADVANCED_KEY, CONOCIMIENTO_PSICOLOGICO_KEY
 } from 'src/app/models/linkReferencia';
 import { GlosarioComponent } from './components/glosario/glosario.component';
 import { HomeComponent } from './components/home/home.component';
@@ -37,6 +37,7 @@ const routes: Routes = [
   { path: 'analisis', loadChildren: () => import('./components/analisis/analisis.module').then(m => m.AnalisisModule), title: ANALISIS_KEY },
   { path: 'seguridad', loadChildren: () => import('./components/seguridad/seguridad.module').then(m => m.SeguridadModule), title: SECURITY_KEY },
   { path: 'conocimiento-empirico', loadChildren: () => import('./components/conocimientos-empiricos/conocimientos-empiricos.module').then(m => m.ConocimientosEmpiricosModule), title: CONOCIMIENTO_EMPIRICO_KEY },
+  { path: 'conocimiento-psicologico', loadChildren: () => import('./components/conocimientos-psicologicos/conocimientos-psicologicos.module').then(m => m.ConocimientosPsicologicosModule), title: CONOCIMIENTO_PSICOLOGICO_KEY },
   { path: 'web', loadChildren: () => import('./components/web/web.module').then(m => m.WebModule), title: WEB_KEY },
   { path: 'git', loadChildren: () => import('./components/git/git.module').then(m => m.GitModule), title: GIT_KEY },
   { path: 'testing', loadChildren: () => import('./components/pruebas/pruebas.module').then(m => m.PruebasModule), title: TESTING_KEY },
