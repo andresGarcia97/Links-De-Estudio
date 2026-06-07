@@ -573,6 +573,7 @@ export const ANALISIS_MULTI_BOUNDED_CONTEXT = 'multiBoundedContext';
 export const ANALISIS_STRATEGIC_DESIGN = 'strategic-design';
 export const ANALISIS_TACTIC_DESIGN = 'tactic-design';
 export const ANALISIS_PROJECTIONS = 'projections-and-read-models';
+export const ANALISIS_CORE_VALUES_SOFTWARE_ENGINEER = 'core-values-software-engineer';
 export const SYSTEM_DESIGN_QUEUES = 'queueSystemDesign';
 export const SYSTEM_DESIGN_CONCEPTS_I = 'systemDesignConcepts-I';
 export const SYSTEM_DESIGN_CONCEPTS_II = 'systemDesignConcepts-II';

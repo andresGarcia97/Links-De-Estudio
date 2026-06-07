@@ -544,13 +544,16 @@
     "- P vs NP pregunta si todo problema cuya solución puede verificarse rápidamente, también puede resolverse rápidamente, estudiado formalmente desde 1971 ",
     "- Con los años, la lista de problemas sin solución en tiempos asumibles no ha dejado de crecer ",
     "",
-    "- <strong>NP</strong> por sus siglas en inglés de <em>tiempo no determinista polinomial</em> son los problemas cuya solución puede verificarse eficientemente, y <strong>P</strong> los que además pueden resolverse eficientemente ",
+    "- <strong>NP</strong> por sus siglas en inglés de <em>tiempo no determinista polinomial</em> son los problemas cuya solución puede verificarse eficientemente, ",
+    " - y <strong>P</strong> los que además pueden resolverse eficientemente",
     "- Un ejemplo de NP es el problema del viajante, que consiste en hallar la ruta más corta al entregar múltiples paquetes ",
     " - encontrar la solución óptima requiere explorar combinaciones exponenciales, algo intratable incluso para supercomputadores ",
-    "- Hasta el día de hoy se sabe que todo problema P está dentro de NP, pero no se ha probado que NP sea igual a P, lo que los haría todos resolubles eficientemente ",
+    "- Hasta el día de hoy se sabe que todo problema P está dentro de NP, pero no se ha probado que NP sea igual a P, ",
+    " - lo que los haría todos resolubles eficientemente",
     "",
-    "- Cook también demostró que dentro de NP existe una subclase llamada NP-complete, cuyos problemas son clave, porque si se encuentra la manera de resolver uno ",
+    "- Cook también demostró que dentro de NP existe una subclase llamada <em>NP-complete</em>, cuyos problemas son clave, porque si se encuentra la manera de resolver uno ",
     " - eficientemente, aunque sea uno solo, por reducción polinomial todos los NP podrían resolverse eficientemente también ",
-    "- Los NP-hard son al menos tan difíciles como cualquier problema NP, pero a diferencia de NP-complete, ni siquiera se garantiza que verificar su solución sea eficiente "
+    "- Los <em>NP-hard</em> son al menos tan difíciles como cualquier problema NP, pero a diferencia de NP-complete, ",
+    " - ni siquiera se garantiza que verificar su solución sea eficiente"
   ]
 }

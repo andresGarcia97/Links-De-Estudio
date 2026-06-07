@@ -143,7 +143,8 @@ export const ANALISIS_REF = new Map<string, Referencia>([
     ],
     [Keys.ANALISIS_PROJECTIONS, new Referencia('https://event-driven.io/en/projections_and_read_models_in_event_driven_architecture/', 'Event Driven Arquitecture & Projections', ANALISIS_KEY, 'Proyecciones', '2026/05/23')
         .addRelatedItems(Keys.PATRONES_ADVANCED_PERSISTENCE_PATTERNS, Keys.PATRONES_ADVANCED_CQRS, Keys.APIS_IDEMPOTENCIA, Keys.SECURITY_CONDICION_CARRERA, Keys.ARQUITECTURAS_EVENT_DRIVEN)
-    ]
+    ],
+    [Keys.ANALISIS_CORE_VALUES_SOFTWARE_ENGINEER, new Referencia('https://anitsh.medium.com/core-values-of-a-successful-software-engineer-245801ba7247', 'Core Values Software Engineer', ANALISIS_KEY, 'Core Values', '2026/06/06')]
 ]);
 
 export const SYSTEM_DESIGN_KEY = 'System-Design';
