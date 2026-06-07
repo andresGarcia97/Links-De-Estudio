@@ -44,7 +44,7 @@ export class LinkReferencia {
 }
 
 export const LAST_ITEM = Keys.ANALISIS_DATA_P_VS_NP;
-export const LAST_UPDATE = Keys.PERSISTENCY_INTERMEDIATE_INDICES;
+export const LAST_UPDATE = Keys.ANALISIS_CORE_VALUES_SOFTWARE_ENGINEER;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
