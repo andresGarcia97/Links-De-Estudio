@@ -353,8 +353,7 @@
     "- <strong>Mantenibilidad:</strong> Facilidad para modificar el sistema; se mide en modularidad, reusabilidad, analizabilidad, modificabilidad y testabilidad",
     "- <strong>Portabilidad:</strong> Capacidad de migrar el sistema entre entornos; incluye adaptabilidad, instalabilidad y reemplazabilidad",
     "",
-    "- El ISO 25010 (2011) reemplazó al ISO 9126 (2001); la diferencia clave es que incorporó <strong>Seguridad</strong> y <strong>Compatibilidad</strong> como características independientes",
-    "- Aplicar este estándar permite al usuario final tener un producto efectivo, seguro, satisfactorio y que funcione tal como se espera en el contexto para el que fue creado",
+    "- Este estándar permite al usuario final tener un producto efectivo, seguro, satisfactorio y que funcione tal como se espera en el contexto de su creacion ",
     "- En la práctica se usa como checklist durante todo el ciclo de desarrollo: desde la revisión de requerimientos hasta la evaluación de los resultados del QA"
   ]
 }

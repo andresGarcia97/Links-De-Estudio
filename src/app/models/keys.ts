@@ -449,6 +449,7 @@ export const ANALISIS_DATA_ARQUITECTURE_PATTERNS = 'dataArquitecturePatterns';
 export const ANALISIS_DATA_COLUMNS_VS_ROWS = 'columnarDatabasesVsRowDatabases';
 export const ANALISIS_DATA_DESIGN_PATTERNS_I = 'data-enginering-deisgn-patterns-I';
 export const ANALISIS_DATA_DESIGN_PATTERNS_II = 'data-enginering-deisgn-patterns-II';
+export const ANALISIS_DATA_P_VS_NP = 'P-vs-NP';
 export const GIT_INTRODUCTION = 'what-is-Git';
 export const GIT_STRUCTURE_AND_CONCEPTS = 'structureAndConceptsGit';
 export const GIT_REPOSITORIES = 'repositoriosGit';

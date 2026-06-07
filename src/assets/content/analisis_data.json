@@ -538,5 +538,19 @@
     "",
     "- Es necesaria una supervisión activa para evitar acumulaciones y que los costos nunca se reduzcan, se pueden combinar las 3 estrategias ",
     "- El particionamiento limita lo que se lee, el cache limita lo que se recompila, y el almacenamiento bajo demanda limita lo que es costoso "
+  ],
+  "P-vs-NP": [
+    "- El problema más famoso de las ciencias de la computación, el cual sigue teniendo una recompensa de un millon de dolares por su solución ",
+    "- P vs NP pregunta si todo problema cuya solución puede verificarse rápidamente, también puede resolverse rápidamente, estudiado formalmente desde 1971 ",
+    "- Con los años, la lista de problemas sin solución en tiempos asumibles no ha dejado de crecer ",
+    "",
+    "- <strong>NP</strong> por sus siglas en inglés de <em>tiempo no determinista polinomial</em> son los problemas cuya solución puede verificarse eficientemente, y <strong>P</strong> los que además pueden resolverse eficientemente ",
+    "- Un ejemplo de NP es el problema del viajante, que consiste en hallar la ruta más corta al entregar múltiples paquetes ",
+    " - encontrar la solución óptima requiere explorar combinaciones exponenciales, algo intratable incluso para supercomputadores ",
+    "- Hasta el día de hoy se sabe que todo problema P está dentro de NP, pero no se ha probado que NP sea igual a P, lo que los haría todos resolubles eficientemente ",
+    "",
+    "- Cook también demostró que dentro de NP existe una subclase llamada NP-complete, cuyos problemas son clave, porque si se encuentra la manera de resolver uno ",
+    " - eficientemente, aunque sea uno solo, por reducción polinomial todos los NP podrían resolverse eficientemente también ",
+    "- Los NP-hard son al menos tan difíciles como cualquier problema NP, pero a diferencia de NP-complete, ni siquiera se garantiza que verificar su solución sea eficiente "
   ]
 }

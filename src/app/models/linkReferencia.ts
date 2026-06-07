@@ -43,7 +43,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.CALIDAD_ISO_IEC_25010;
+export const LAST_ITEM = Keys.ANALISIS_DATA_P_VS_NP;
 export const LAST_UPDATE = Keys.PERSISTENCY_INTERMEDIATE_INDICES;
 
 export const AGILES_KEY = 'Agiles';
@@ -971,6 +971,10 @@ export const ANALISIS_DATA_REF = new Map<string, Referencia>([
     [Keys.ANALISIS_DATA_DESIGN_PATTERNS_II, new Referencia('https://aws.plainenglish.io/data-engineering-design-patterns-you-must-learn-in-2026-c25b7bd0b9a7', 'Data Engineering Design Patterns II', ANALISIS_DATA_KEY, 'Data Design Patterns II', '2026/02/15')
         .addRelatedItems(Keys.MICROSERVICES_ADVANCED_DEAD_LETTER_QUEUE, Keys.ANALISIS_DELIVERY_GUARANTED, Keys.PEOPLE_DIKW, Keys.VERSIONAMIENTO_EVOLUTION_SCHEMA_AND_SCHEMA_REGISTRY, Keys.PERSISTENCY_ADVANCED_PARTITIONING)
     ],
+    [Keys.ANALISIS_DATA_P_VS_NP, new Referencia('https://www.bbva.com/es/p-versus-np-he-ahi-dilema/', 'P Vs NP', ANALISIS_DATA_KEY, 'P Vs NP', '2026/06/06')
+        .addRelatedItems(Keys.ANALISIS_TIME_COMPLEXITY)
+        .addMoreReferences('https://www.geeksforgeeks.org/dsa/types-of-complexity-classes-p-np-conp-np-hard-and-np-complete/')
+    ]
 ]);
 
 export const PARADIGMAS_KEY = 'Paradigmas';
