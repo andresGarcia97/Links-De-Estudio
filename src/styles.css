@@ -355,6 +355,8 @@ svg.material-icons:not(:last-child) {
   justify-content: center;
   align-items: center;
   position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .card.highlight-card.light-color {
