@@ -43,7 +43,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.ANALISIS_DATA_P_VS_NP;
+export const LAST_ITEM = Keys.ARQUITECTURAS_DECISIONS;
 export const LAST_UPDATE = Keys.ANALISIS_CORE_VALUES_SOFTWARE_ENGINEER;
 
 export const AGILES_KEY = 'Agiles';
@@ -271,6 +271,10 @@ export const ARQUITECTURAS_REF = new Map<string, Referencia>([
     [Keys.ARQUITECTURAS_MISTAKES_II, new Referencia('https://medium.com/@maahisoft20/10-deadly-sins-of-system-architecture-that-will-haunt-you-at-scale-841dabe54a44', 'Errores de arquitectura que emergen al escalar', ARQUITECTURAS_KEY, 'Errores II', '2025/10/08')
         .addRelatedItems(Keys.TESTING_ADVANCED_CHARGE, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_MONOLITH, Keys.PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL, Keys.PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS, Keys.CD_CI_STATELESS_STATEFUL, Keys.CD_CI_FAILOVER, Keys.PATRONES_ADVANCED_RESILIENCIA, Keys.PEOPLE_PEOPLE_PROCESS_TECNOLOGY)
     ],
+    [Keys.ARQUITECTURAS_DECISIONS, new Referencia('https://architectelevator.com/architecture/important-decisions/', 'Toma de decisiones sobre la arquitectura', ARQUITECTURAS_KEY, 'Decisiones', '2026/06/07')
+        .addRelatedItems(Keys.TESTING_ADVANCED_ARCH_UNIT)
+        .addMoreReferences('https://www.timsommer.be/deferring-decisions-in-evolutionary-architecture/', 'https://www.infoq.com/articles/fitness-functions-architecture/')
+    ]
 ]);
 
 export const BUENAS_PRACTICAS_KEY = 'Buenas-Practicas';

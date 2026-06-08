@@ -616,5 +616,21 @@
     "",
     "&bull; Los sistemas a gran escala fallan y la pregunta no es como, sino cuando, por eso siempre es importante aprender de cada problema sucedido, ",
     " - no hay ningún sistema exento de fallas, solo sistemas que han sobrevivido a estas, aprendido lecciones valiosas incorporadas en el sistema "
+  ],
+  "arquitectureTakeDecisions": [
+    "- La toma de decisiones consciente es un paso fundamental hacia una mejor arquitectura ",
+    "- Se puede tener una aplicación con decisiones arquitectónicas, pero sin una arquitectura consciente, ya que no se han tomado decisiones trascendentales ",
+    "- Una buena arquitectura no se basa en la complejidad, sino en la toma de decisiones cruciales y significativas ",
+    "- Las decisiones inconscientes suelen presentarse en forma de suposiciones, estas son arriesgadas porque dan lugar a requisitos no deseados ",
+    " - o requisitos que existen pero no están documentados, ambos casos pueden afectar las expectativas o que surjan problemas en el futuro ",
+    "",
+    "- Aplazar las decisiones tambien es una forma de conciencia, especialmente cuando se trabaja con arquitecturas evolutivas ",
+    "- El atributo de calidad más importante de una arquitectura evolutiva es la capacidad de evolución, modificación e incrementos guiados ",
+    "- Pospón tus decisiones hasta que sean absolutamente necesarias, toma decisiones basadas en hechos no conjeturas ni teniendo incógnitas ",
+    "- Recopilar todos los requisitos antes de la implementación suele ser difícil o de entrada imposible, además de la rápida evolución que puede haber ",
+    "",
+    "- Para mantener esta evolución sin salirse de las reglas establecidas, suelen existir <em>fitness functions</em> que evalúan el cumplimiento de los atributos de calidad ",
+    " - ante cambios erráticos o indeseados, garantizando que la evolución se mantenga en la dirección deseada ",
+    "- Estas definen criterios de evaluación objetivos y medibles, como pueden ser pruebas unitarias o pruebas de arquitectura "
   ]
 }

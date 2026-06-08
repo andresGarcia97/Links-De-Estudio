@@ -75,6 +75,7 @@ export const ARQUITECTURAS_HOW_TO_CHOOSE_IT = 'arquitecturaComoEscogerla';
 export const ARQUITECTURAS_WHY_CLEAN = 'whyCleanArquitecture';
 export const ARQUITECTURAS_MISTAKES_I = 'arquitectureMistakes-I'
 export const ARQUITECTURAS_MISTAKES_II = 'arquitectureMistakes-II';
+export const ARQUITECTURAS_DECISIONS = 'arquitectureTakeDecisions';
 export const ESTRATEGIAS_DESARROLLO_DDD = 'DDD';
 export const ESTRATEGIAS_DESARROLLO_TDD = 'TDD';
 export const ESTRATEGIAS_DESARROLLO_ATDD = 'ATDD';
