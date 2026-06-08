@@ -1,34 +1,34 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { ANALISIS_KEY, ARQUITECTURAS_IMPL_KEY, ARQUITECTURAS_REF, LinkReferencia, METODOLOGIAS_KEY, NUBE_KEY, PATRONES_KEY,
+import { ANALISIS_KEY, ARQUITECTURAS_IMPL_REF, ARQUITECTURAS_KEY, LinkReferencia, METODOLOGIAS_KEY, NUBE_KEY, PATRONES_KEY,
   POO_KEY, UML_KEY }
-from 'src/app/models/linkReferencia';
+  from 'src/app/models/linkReferencia';
 import { Item, PreviousAndNextSection } from 'src/app/models/models';
-import { ARQUITECTURAS_PATH } from 'src/app/models/relationsSummary';
+import { ARQUITECTURAS_IMPL_PATH } from 'src/app/models/relationsSummary';
 
 @Component({
-    selector: 'app-arquitecturas',
-    templateUrl: './arquitecturas.component.html',
-    standalone: false
+  selector: 'app-arquitecturas-impl',
+  templateUrl: './arquitecturas-impl.component.html',
+  standalone: false
 })
-export class ArquitecturasComponent implements OnInit {
+export class ArquitecturasImplComponent implements OnInit {
 
   items: Item[] = [];
 
-  components = ARQUITECTURAS_REF;
+  components = ARQUITECTURAS_IMPL_REF;
 
   itemStart = '';
 
   relatedSections = new Map<string, string>([]);
 
-  tittles = new Map([ ...ARQUITECTURAS_REF ].map(([key, { tittleShort }]) => [key, tittleShort]));
+  tittles = new Map([ ...ARQUITECTURAS_IMPL_REF ].map(([key, { tittleShort }]) => [key, tittleShort]));
 
   previousAndNextSection!: PreviousAndNextSection;
 
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    this.items = this.route.snapshot.data[ARQUITECTURAS_PATH.propertyNameData];
+    this.items = this.route.snapshot.data[ARQUITECTURAS_IMPL_PATH.propertyNameData];
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
     this.relatedSections.set(METODOLOGIAS_KEY, routes.get(METODOLOGIAS_KEY)!);
@@ -38,8 +38,8 @@ export class ArquitecturasComponent implements OnInit {
     this.relatedSections.set(UML_KEY,          routes.get(UML_KEY)!);
     this.relatedSections.set(POO_KEY,          routes.get(POO_KEY)!);
     this.previousAndNextSection = new PreviousAndNextSection(
-      POO_KEY,                routes.get(POO_KEY)!,
-      ARQUITECTURAS_IMPL_KEY, routes.get(ARQUITECTURAS_IMPL_KEY)!
+      ARQUITECTURAS_KEY, routes.get(ARQUITECTURAS_KEY)!,
+      PATRONES_KEY,      routes.get(PATRONES_KEY)!
     );
   }
 

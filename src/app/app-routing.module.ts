@@ -7,7 +7,8 @@ import {
   METODOLOGIAS_KEY, NEURO_MARKETING_KEY, NUBE_KEY, ANALISIS_DATA_KEY, PARADIGMAS_KEY, PATRONES_KEY, PEOPLE_KEY, POO_KEY,
   PRINCIPIOS_KEY, REFACTORING_KEY, REQUISITOS_KEY, SECURITY_KEY, SMELL_CODES_KEY, TESTING_ADVANCED_KEY, TESTING_KEY, UML_KEY,
   USER_HISTORIES_KEY, VERSIONAMIENTO_KEY, WEB_KEY, MICRO_SERVICES_KEY, SYSTEM_DESIGN_KEY, MICRO_SERVICES_ADVANCED_KEY,
-  OBSERVABILIDAD_KEY, EJECUCION_KEY, PERSISTENCY_INTERMEDIATE_KEY, PATRONES_ADVANCED_KEY, CONOCIMIENTO_PSICOLOGICO_KEY
+  OBSERVABILIDAD_KEY, EJECUCION_KEY, PERSISTENCY_INTERMEDIATE_KEY, PATRONES_ADVANCED_KEY, CONOCIMIENTO_PSICOLOGICO_KEY,
+  ARQUITECTURAS_IMPL_KEY
 } from 'src/app/models/linkReferencia';
 import { GlosarioComponent } from './components/glosario/glosario.component';
 import { HomeComponent } from './components/home/home.component';
@@ -61,6 +62,7 @@ const routes: Routes = [
   { path: 'malas-practicas', loadChildren: () => import('./components/malas-practicas/malas-practicas.module').then(m => m.MalasPracticasModule), title: MALAS_PRACTICAS_KEY },
   { path: 'frameworks', loadChildren: () => import('./components/frameworks/frameworks.module').then(m => m.FrameworksModule), title: FRAMEWORKS_KEY },
   { path: 'buenas-practicas', loadChildren: () => import('./components/buenas-practicas/buenas-practicas.module').then(m => m.BuenasPracticasModule), title: BUENAS_PRACTICAS_KEY },
+  { path: 'arquitecturas-impl', loadChildren: () => import('./components/arquitecturas-impl/arquitecturas-impl.module').then(m => m.ArquitecturasImplModule), title: ARQUITECTURAS_IMPL_KEY },
   { path: 'arquitecturas', loadChildren: () => import('./components/arquitecturas/arquitecturas.module').then(m => m.ArquitecturasModule), title: ARQUITECTURAS_KEY },
   { path: 'agiles', loadChildren: () => import('./components/agiles/agiles.module').then(m => m.AgilesModule), title: AGILES_KEY },
   { path: 'glosario', component: GlosarioComponent, title: 'Glosario', resolve: { temas: glosarioResolver } },

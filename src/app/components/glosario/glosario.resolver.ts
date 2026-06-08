@@ -25,6 +25,7 @@ const CONTENT_FILES: string[] = [
     Paths.SMELL_CODES_PATH.file,
     Paths.VERSIONAMIENTO_PATH.file,
     Paths.ARQUITECTURAS_PATH.file,
+    Paths.ARQUITECTURAS_IMPL_PATH.file,
     Paths.ESTRATEGIAS_PATH.file,
     Paths.CARACTERISTICAS_PATH.file,
     Paths.POO_PATH.file,

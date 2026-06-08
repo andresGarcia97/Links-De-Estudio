@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { ANALISIS_KEY, ARQUITECTURAS_KEY, FRAMEWORKS_KEY, LinkReferencia, NUBE_KEY,
-  PARADIGMAS_KEY, PATRONES_ADVANCED_KEY, PATRONES_REF, PRINCIPIOS_KEY }
+import { ANALISIS_KEY, ARQUITECTURAS_IMPL_KEY, FRAMEWORKS_KEY, LinkReferencia, NUBE_KEY, PARADIGMAS_KEY,
+  PATRONES_ADVANCED_KEY, PATRONES_REF, PRINCIPIOS_KEY }
 from 'src/app/models/linkReferencia';
 import { Item, PreviousAndNextSection } from 'src/app/models/models';
 import { PATRONES_PATH } from 'src/app/models/relationsSummary';
@@ -38,8 +38,8 @@ export class PatronesComponent implements OnInit {
     this.relatedSections.set(ANALISIS_KEY,          routes.get(ANALISIS_KEY)!);
     this.relatedSections.set(NUBE_KEY,              routes.get(NUBE_KEY)!);
     this.previousAndNextSection = new PreviousAndNextSection(
-      ARQUITECTURAS_KEY,     routes.get(ARQUITECTURAS_KEY)!,
-      PATRONES_ADVANCED_KEY, routes.get(PATRONES_ADVANCED_KEY)!
+      ARQUITECTURAS_IMPL_KEY, routes.get(ARQUITECTURAS_IMPL_KEY)!,
+      PATRONES_ADVANCED_KEY,  routes.get(PATRONES_ADVANCED_KEY)!
     );
   }
 
