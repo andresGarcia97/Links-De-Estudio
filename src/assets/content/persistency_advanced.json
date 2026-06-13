@@ -41,20 +41,6 @@
     "<strong>Consistencia Read-your-writes:</strong> Si un proceso realiza una escritura y luego una lectura, siempre vera el valor anteriormente escrito ",
     "<strong>Consistencia reads/write:</strong> Garantiza que las lecturas ó las escrituras no se veran datos desactualizados despues en su ejecución "
   ],
-  "algebraRelacional": [
-    "- Este tipo de algebra toma un conjunto de datos y realiza operaciones sobre estos, para generar un nuevo conjunto ",
-    "- Tambien soporta el concepto de anidación al usar un resultado para una operación y generar otro resultado ",
-    "",
-    "<strong>&bull; UNION:</strong>        Une 2 tablas iguales, sin registros repetidos ",
-    "<strong>&bull; INTERSECCIÓN:</strong> Une 2 tablas iguales donde los registros sean iguales, evitando la repetición ",
-    "<strong>&bull; DIFERENCIA:</strong>   Opera en tablas y devuelve el contenido que se encuentre en la primera tabla pero no en la segunda ",
-    "<strong>&bull; PRODUCTO:</strong>     Toma 2 tablas y devuelve una tercera con el contenido de acuerdo a las posibles combinaciones, ya sean iguales o diferentes ",
-    "<strong>&bull; SELECCION:</strong>    Toma 2 ó más tablas, iguales o diferentes, y devuelve los campos donde se cumplan las condiciones dadas ",
-    "<strong>&bull; PROYECCIÓN:</strong>   Opera igual que la selección, pero aca se pueden especificar que columnas se quieren tener ",
-    "<strong>&bull; REUNIÓN:</strong>      Opera sobre 2 ó más tablas y devuelve todos los campos deseados, que esten relacionados mediante alguna condición ",
-    "<strong>&bull; DIVISIÓN:</strong>     Opera sobre 2 tablas donde el resultado no existe en la primera tabla, y todas las filas tengan esta relación ",
-    "<strong>&bull; ASIGNACIÓN:</strong>   Cambia los valores de las columnas donde se cumplan las condiciones dadas "
-  ],
   "boyceCodd": [
     "- El modelo relacional fue introducido en los años 60 por Edgar Frank Codd e IBM, e incremento su popularidad hasta ser el principal modelo actual ",
     "- En este modelo se definen los siguientes objetivos, para una adecuada normalización: ",
@@ -333,6 +319,12 @@
     "<em>INSERT INTO employees (col1, col2, col3)</em>   <em>INSERT INTO table (col1, col2, col3)</em>",
     "<em>VALUES (val1, val2, val3)</em>                  <em>VALUES (val1, val2, val3)</em>",
     "<em>ON DUPLICATE KEY UPDATE;</em>                   <em>ON CONFLICT conflict_target conflict_action;</em>"
+  ],
+  "DMS": [
+    "- Migrar los datos entre bases de datos es un proceso natural cuando se cambia un sistema ",
+    "- Este tipo de servicios está hecho explicitamente para realizar migraciones seguras, controladas y observables ",
+    "- Tienen tiempos de inactividad muy bajos o directamente son capaces de funcionar sin interrupciones operativas ",
+    "- Soportan múltiples motores de bases de datos, tanto homogéneas como heterogéneas, relacionales o NoSQL "
   ],
   "database-migration-patterns": [
     "- Trasladar los datos de una fuente a otra no suena atractivo, pero es una operación fundamental para la evolución de una aplicación ",

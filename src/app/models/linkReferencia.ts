@@ -43,7 +43,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.ARQUITECTURAS_DECISIONS;
+export const LAST_ITEM = Keys.PERSISTENCY_ADVANCED_DMS;
 export const LAST_UPDATE = Keys.ANALISIS_CORE_VALUES_SOFTWARE_ENGINEER;
 
 export const AGILES_KEY = 'Agiles';
@@ -1431,15 +1431,22 @@ export const SMELL_CODES_REF = new Map<string, Referencia>([
 export const PERSISTENCY_KEY = 'Bases de Datos'
 export const PERSISTENCY_REF = new Map<string, Referencia>([
     [Keys.PERSISTENCY_SQL, new Referencia('https://www.w3schools.com/sql/default.asp', '¿ Que es SQL ?', PERSISTENCY_KEY, 'SQL', '', '2025/06/25')],
-    //[Keys.PERSISTENCY_DBMS, new Referencia('https://www.astera.com/es/type/blog/database-management-software/', 'Software de Gestion de Bases de Datos', PERSISTENCY_KEY, 'DBMS')],
-    [Keys.PERSISTENCY_DBMS, new Referencia('https://www.conectasoftware.com/magazine/glosario/dbms/', 'Software de Gestion de Bases de Datos', PERSISTENCY_KEY, 'DBMS', '', '2025/01/26')],
+    [Keys.PERSISTENCY_DBMS, new Referencia('https://www.conectasoftware.com/magazine/glosario/dbms/', 'Software de Gestion de Bases de Datos', PERSISTENCY_KEY, 'DBMS', '', '2025/01/26')
+        .addMoreReferences('https://www.astera.com/es/type/blog/database-management-software/')
+    ],
     [Keys.PERSISTENCY_CRUD, new Referencia('https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/crud-las-principales-operaciones-de-bases-de-datos/', 'Create, Read, Update, Delete', PERSISTENCY_KEY, 'CRUD', '', '2026/04/27')],
+    [Keys.PERSISTENCY_JOINS, new Referencia('https://ingenieriadesoftware.es/tipos-sql-join-guia-referencia/', 'Tipos de Joins', PERSISTENCY_KEY, 'Joins', '2025/06/25', '2025/08/26')
+        .addMoreReferences('https://vladmihalcea.com/sql-join-using/')
+    ],
+    [Keys.PERSISTENCY_ALGEBRA_RELACIONAL, new Referencia('https://lienzos.uv.mx/Uploads/resources/LenguajeAlgebraRelacional_18e0.pdf', 'Algebra Relacional', PERSISTENCY_KEY, 'Algebra Relacional', '', '2024/06/07')],
     [Keys.PERSISTENCY_DL, new Referencia('https://www.linkedin.com/posts/brijpandeyji_a-solid-grasp-of-sql-is-crucial-for-anyone-activity-7240803134258782208-ElvO/', 'DQL, DDL, DML, DCL, TCL', PERSISTENCY_KEY, 'DQL, DDL, DML, DCL, TCL', '2024/09/15', '2025/01/26')],
-    //['integridad', new Referencia('https://platzi.com/blog/que-es-ddl-dml-dcl-y-tcl-integridad-referencial/', 'Integridad Referencial', PERSISTENCY_KEY, 'Integridad')],
-    [Keys.PERSISTENCY_INTEGRITY, new Referencia('https://intelligent-ds.com/blog/what-is-referential-integrity', 'Integridad Referencial', PERSISTENCY_KEY, 'Integridad', '2024/06/09', '2025/06/25')],
+    [Keys.PERSISTENCY_INTEGRITY, new Referencia('https://intelligent-ds.com/blog/what-is-referential-integrity', 'Integridad Referencial', PERSISTENCY_KEY, 'Integridad', '2024/06/09', '2025/06/25')
+        .addMoreReferences('https://platzi.com/blog/que-es-ddl-dml-dcl-y-tcl-integridad-referencial/')
+    ],
     [Keys.PERSISTENCY_ERD, new Referencia('https://www.lucidchart.com/pages/es/que-es-un-diagrama-entidad-relacion', 'Diagrama Entidad Relación', PERSISTENCY_KEY, 'ERD', '', '2025/01/04')],
-    //[Keys.PERSISTENCY_NORMALIZATION, new Referencia('https://docs.microsoft.com/en-us/office/troubleshoot/access/database-normalization-description', 'Normalización', PERSISTENCY_KEY, 'Normalización')],
-    [Keys.PERSISTENCY_NORMALIZATION, new Referencia('https://www.datacamp.com/es/tutorial/normalization-in-sql', 'Normalización', PERSISTENCY_KEY, 'Normalización', '', '2025/02/17')],
+    [Keys.PERSISTENCY_NORMALIZATION, new Referencia('https://www.datacamp.com/es/tutorial/normalization-in-sql', 'Normalización', PERSISTENCY_KEY, 'Normalización', '', '2025/02/17')
+        .addMoreReferences('https://docs.microsoft.com/en-us/office/troubleshoot/access/database-normalization-description')
+    ],
     [Keys.PERSISTENCY_NORMALIZATION_ERRORS, new Referencia('https://medium.com/@artemkhrenov/understanding-database-normalization-from-1nf-to-bcnf-3893fac16fc9', 'Como Normalizar', PERSISTENCY_KEY, 'Como Normalizar', '2025/12/08')
         .addRelatedItems(Keys.PRINCIPIOS_STUPID, Keys.TESTING_ADVANCED_CHARGE)
     ],
@@ -1469,9 +1476,6 @@ export const PERSISTENCY_INTERMEDIATE_REF = new Map<string, Referencia>([
     [Keys.PERSISTENCY_INTERMEDIATE_DB_DESIGN_II, new Referencia('https://medium.com/@artemkhrenov/database-design-patterns-the-complete-developers-guide-to-modern-data-architecture-8b4f06e646ce', 'Diseño DB II', PERSISTENCY_INTERMEDIATE_KEY, 'Diseño DB II', '2025/12/08')
         .addRelatedItems(Keys.NUBE_NATIVE, Keys.SYSTEM_DESIGN_SCALING_WRITES, Keys.ANALISIS_STRATEGIC_DESIGN, Keys.PERSISTENCY_ADVANCED_SCALING_DB, Keys.CD_CI_FAILOVER, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRANSACTIONS, Keys.ARQUITECTURAS_IMPL_EVENT_DRIVEN)
         .addMoreReferences('https://medium.com/@artemkhrenov/database-design-patterns-the-complete-developers-guide-to-modern-data-architecture-c4e891875001')
-    ],
-    [Keys.PERSISTENCY_INTERMEDIATE_JOINS, new Referencia('https://ingenieriadesoftware.es/tipos-sql-join-guia-referencia/', 'Tipos de Joins', PERSISTENCY_INTERMEDIATE_KEY, 'Tipos de Joins', '2025/06/25', '2025/08/26')
-        .addMoreReferences('https://vladmihalcea.com/sql-join-using/')
     ],
     [Keys.PERSISTENCY_INTERMEDIATE_COMMON_TABLE_EXPRESSION, new Referencia('https://learnsql.com/blog/what-is-common-table-expression/', 'Common Table Expression', PERSISTENCY_INTERMEDIATE_KEY, 'CTE', '2025/01/04')
         .addRelatedItems(Keys.EJECUCION_RECURSIVIDAD)
@@ -1506,7 +1510,7 @@ export const PERSISTENCY_INTERMEDIATE_REF = new Map<string, Referencia>([
     [Keys.PERSISTENCY_INTERMEDIATE_SQL_NO_SQL, new Referencia('https://medium.com/@eugeniomendoza/c%C3%B3mo-saber-si-necesitas-una-base-de-datos-nosql-b6cfd5bb7d9b', 'SQL ó NoSql', PERSISTENCY_INTERMEDIATE_KEY, 'SQL ó NoSql', '', '2024/06/06')],
     [Keys.PERSISTENCY_INTERMEDIATE_DENORMALIZATION, new Referencia('https://dgraph.io/blog/post/denormalize-database/', 'Desnormalización', PERSISTENCY_INTERMEDIATE_KEY, 'Desnormalización', '2025/02/05')
         .addRelatedItems(Keys.PERSISTENCY_NORMALIZATION)
-    ],
+    ]
 ]);
 
 export const PERSISTENCY_ADVANCED_KEY = 'DB Avanzado'
@@ -1517,12 +1521,10 @@ export const PERSISTENCY_ADVANCED_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.NUBE_CAP_TEOREMA)
         .addMoreReferences('https://www.mongodb.com/es/resources/basics/databases/nosql-explained', 'https://docs.aws.amazon.com/whitepapers/latest/choosing-an-aws-nosql-database/types-of-nosql-databases.html')
     ],
-    //[Keys.PERSISTENCY_CONSISTENCY, new Referencia('https://medium.com/@gabanox/consistencia-eventual-en-s3-6ba5b2ecd721', 'Consistencia', PERSISTENCY_ADVANCED_KEY, 'Consistencia')],
     [Keys.PERSISTENCY_ADVANCED_CONSISTENCY, new Referencia('https://www.scylladb.com/glossary/consistency-models/', 'Consistencia', PERSISTENCY_ADVANCED_KEY, 'Consistencia', '', '2025/03/13')
         .addRelatedItems(Keys.NUBE_CAP_TEOREMA)
+        .addMoreReferences('https://medium.com/@gabanox/consistencia-eventual-en-s3-6ba5b2ecd721')
     ],
-    //['algebraRelacional', new Referencia('https://sites.google.com/site/basededatosdistribuidastics/algebra-relacional', 'Algebra Relacional', PERSISTENCY_ADVANCED_KEY, 'Algebra Relacional')],
-    [Keys.PERSISTENCY_ADVANCED_ALGEBRA_RELACIONAL, new Referencia('https://lienzos.uv.mx/Uploads/resources/LenguajeAlgebraRelacional_18e0.pdf', 'Algebra Relacional', PERSISTENCY_ADVANCED_KEY, 'Algebra Relacional', '', '2024/06/07')],
     [Keys.PERSISTENCY_ADVANCED_BOYCE_CODD, new Referencia('https://normalizacionunit4.blogspot.com/2019/05/46-forma-normal-boyce-codd.html', 'Boyce-Codd', PERSISTENCY_ADVANCED_KEY, 'Boyce-Codd')],
     [Keys.PERSISTENCY_ADVANCED_NEW_SQL, new Referencia('https://www.baeldung.com/sql/database-newsql-intro', 'NewSQL', PERSISTENCY_ADVANCED_KEY, 'NewSQL', '2025/06/26')
         .addRelatedItems(Keys.ANALISIS_DATA_OLAP_OLTP, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.HARDWARE_ESCALAMIENTO, Keys.NUBE_PACELC)
@@ -1550,6 +1552,9 @@ export const PERSISTENCY_ADVANCED_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.EJECUCION_RECURSIVIDAD, Keys.META_ESTRUCTURAS_SCOPE)
     ],
     [Keys.PERSISTENCY_ADVANCED_UPSERT, new Referencia('https://www.cockroachlabs.com/blog/sql-upsert/', 'Upsert', PERSISTENCY_ADVANCED_KEY, 'Upsert', '2025/12/21')],
+    [Keys.PERSISTENCY_ADVANCED_DMS, new Referencia('https://aws.amazon.com/es/dms/', 'Database Migration Service', PERSISTENCY_ADVANCED_KEY, 'DMS', '2026/06/12')
+        .addRelatedItems(Keys.ANALISIS_DATA_CHANGE_DATA_CAPTURE)
+    ],
     [Keys.PERSISTENCY_ADVANCED_MIGRATIONS, new Referencia('https://medium.com/@jaredhatfield/database-migration-patterns-6b5ede23d06e', 'Patrones de Migración', PERSISTENCY_ADVANCED_KEY, 'Patrones Migración', '2026/01/02')
         .addRelatedItems(Keys.TESTING_ADVANCED_PERFORMANCE, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRANSACTIONS, Keys.ANALISIS_DATA_CHANGE_DATA_CAPTURE, Keys.ANALISIS_DATA_GOLDEN_RECORD, Keys.PATRONES_ADVANCED_STRANGLER_FIG, Keys.MICROSERVICES_ADVANCED_SPLIT_BRAIN)
         .addMoreReferences('https://medium.com/@adkomyagin/validating-data-like-a-pro-post-migration-integrity-d06300d6bfb8')
