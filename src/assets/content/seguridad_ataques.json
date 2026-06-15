@@ -230,5 +230,18 @@
         " - Estos ataques son principalmente de fuerza bruta ya que se requiere una gran capacidad para lograr su objetivo ",
         "<em>E</em><strong> Elevación de privilegios:</strong> Usuarios con o sin autorización pueden acceder a posibilidades que previamente no tenian ",
         " - Estos accesos se dan debido a modificaciones ilegales en los permisos de los usuarios o accesos ilegales a la aplicación "
+    ],
+    "supply-chain": [
+        "- La cadena de suministro es el sistema integrado de personas, organizaciones, actividades y recursos involucrados en mover un producto o servicio, ",
+        " - desde el origen hasta el consumidor final, su eficiencia es una de las principales determinantes de la competitividad empresarial ",
+        "- Un ataque en la cadena de suministros utiliza herramientas o servicios de terceros para infiltrarse en el sistema o la red de un objetivo ",
+        "- Por naturaleza son ataques indirectos y pueden materializarse a través de dependencias de código, paquetes de terceros o componentes comprometidos ",
+        "",
+        "<strong>Metodos comunes:</strong>",
+        "<strong>- Ataques de software:</strong> El malware se inyecta en actualizaciones que aparentan ser legítimas del proveedor de software ",
+        "<strong>- Ataques basados en el navegador:</strong> El codigo malicioso se ejecuta en los navegadores de los usuarios finales, mediante bibliotecas o extensiones de Javascript ",
+        "<strong>- Ataques Magecart:</strong> Se utilizan scripts maliciosos para robar datos de tarjetas de crédito de formularios de pago ",
+        "<strong>- Ataques de abrevadero:</strong> Para una distribución más eficiente se identifican y compromenten sitios web utilizados por algun grupo especifico de usuarios ",
+        "<strong>- Ataques a repositorios de paquetes (npm, PyPI, Maven):</strong> Comprometer el paquete en el registro público antes de que sea descargado "
     ]
 }

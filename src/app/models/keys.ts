@@ -430,6 +430,7 @@ export const SECURITY_ATTACK_HONEYPOT = 'honeypot';
 export const SECURITY_ATTACK_PENTEST = 'pentest';
 export const SECURITY_ATTACK_OWASTOP = 'owaspTop';
 export const SECURITY_ATTACK_STRIDE = 'stride';
+export const SECURITY_ATTACK_SUPPLY_CHAIN = 'supply-chain';
 export const ANALISIS_DATA_WEB_SCRAPING = 'web-scraping';
 export const ANALISIS_DATA_MVP = 'MVP';
 export const ANALISIS_DATA_TURING_COMPLETE = 'turingComplete';

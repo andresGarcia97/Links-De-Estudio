@@ -45,7 +45,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.PERSISTENCY_ADVANCED_DMS;
+export const LAST_ITEM = Keys.SECURITY_ATTACK_SUPPLY_CHAIN;
 export const LAST_UPDATE = Keys.ANALISIS_CORE_VALUES_SOFTWARE_ENGINEER;
 
 export const AGILES_KEY = 'Agiles';
@@ -1418,7 +1418,10 @@ export const SECURITY_ATTACKS_REF = new Map<string, Referencia>([
     [Keys.SECURITY_ATTACK_OWASTOP, new Referencia('https://owasp.org/Top10/2021/es/', 'OWASP Top 10', SECURITY_ATTACKS_KEY, 'OWASP Top 10', '', '2026/05/01')
         .addMoreReferences('https://owasp.org/Top10/2025/')
     ],
-    [Keys.SECURITY_ATTACK_STRIDE, new Referencia('https://www.softwaresecured.com/post/stride-threat-modelling', 'STRIDE', SECURITY_ATTACKS_KEY, 'STRIDE')]
+    [Keys.SECURITY_ATTACK_STRIDE, new Referencia('https://www.softwaresecured.com/post/stride-threat-modelling', 'STRIDE', SECURITY_ATTACKS_KEY, 'STRIDE')],
+    [Keys.SECURITY_ATTACK_SUPPLY_CHAIN, new Referencia('https://www.cloudflare.com/es-es/learning/security/what-is-a-supply-chain-attack/', 'Supply Chain', SECURITY_ATTACKS_KEY, 'Supply Chain', '2026/06/14')
+        .addMoreReferences('https://ecosistemastartup.com/glosario/supply-chain-que-es-guia-completa-2026/')
+    ]
 ]);
 
 export const SMELL_CODES_KEY = 'Smell-Codes';
