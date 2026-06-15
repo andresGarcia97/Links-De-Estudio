@@ -46,7 +46,7 @@ export class LinkReferencia {
 }
 
 export const LAST_ITEM = Keys.SECURITY_ATTACK_SUPPLY_CHAIN;
-export const LAST_UPDATE = Keys.ANALISIS_CORE_VALUES_SOFTWARE_ENGINEER;
+export const LAST_UPDATE = Keys.SECURITY_IDOR;
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -1372,7 +1372,7 @@ export const PRINCIPIOS_REF = new Map<string, Referencia>([
     [Keys.PRINCIPIOS_SLAP, new Referencia('https://medium.com/javarevisited/slap-that-ugly-code-6ec276d3a4bc', 'Principio de abstracción de un solo nivel', PRINCIPIOS_KEY, 'SLAP', '2025/02/02')],
     [Keys.PRINCIPIOS_DIP, new Referencia('https://medium.com/ssense-tech/dependency-injection-vs-dependency-inversion-vs-inversion-of-control-lets-set-the-record-straight-5dc818dc32d1', 'Principio de Inversión de Dependencias', PRINCIPIOS_KEY, 'DIP', '2025/10/26')
         .addRelatedItems(Keys.FRAMEWORKS_IOC, Keys.FRAMEWORKS_IOD, Keys.ARQUITECTURAS_WHY_CLEAN, Keys.POO_DESIGN_BY_CONTRACT, Keys.POO_DESCOMPOSITION)
-    ],
+    ]
 ]);
 
 export const SECURITY_KEY = 'Seguridad';
@@ -1395,6 +1395,9 @@ export const SECURITY_REF = new Map<string, Referencia>([
     ],
     [Keys.SECURITY_HASHING_ENCRYPTION, new Referencia('https://medium.com/@gaddamnaveen192/hashing-vs-encryption-the-mistake-that-separates-good-developers-from-great-ones-26f39fd05eab', 'hashing & encryption', SECURITY_KEY, 'hashing & encryption', '2026/04/17')
         .addMoreReferences('https://auth0.com/blog/adding-salt-to-hashing-a-better-way-to-store-passwords/')
+    ],
+    [Keys.SECURITY_IDOR, new Referencia('https://blog.hackmetrix.com/insecure-direct-object-reference/', 'Insecure Direct Object Reference', SECURITY_KEY, 'IDOR', '2026/06/15')
+        .addRelatedItems(Keys.SECURITY_ATTACK_PENTEST)
     ]
 ]);
 
@@ -1436,7 +1439,7 @@ export const SMELL_CODES_REF = new Map<string, Referencia>([
     [Keys.SMELL_CODES_DESIGN, new Referencia('https://www.alpharithms.com/code-smell-492316/', 'Code smells en Diseño', SMELL_CODES_KEY, 'A nivel de Diseño', '2023/01/22')],
     [Keys.SMELL_CODES_ARCHITECTURAL_SMELLS, new Referencia('https://docs.arcan.tech/latest/architectural_smells/', 'Code smells en Arquitecturas', SMELL_CODES_KEY, 'A nivel de arquitectura', '2024/12/29')
         .addRelatedItems(Keys.POO_COUPLING_COMPONENTS, Keys.POO_COUPLING_AND_COHESION, Keys.PATRONES_GOF, Keys.POO_HERENCIA, Keys.SYSTEM_DESIGN_SINGLE_POINT_OF_FAILURE)
-    ],
+    ]
 ]);
 
 export const PERSISTENCY_KEY = 'Bases de Datos'
