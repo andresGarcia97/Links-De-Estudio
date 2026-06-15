@@ -1,33 +1,33 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { APIS_KEY, HARDWARE_KEY, LEYES_KEY, LinkReferencia, NUBE_KEY, REQUISITOS_KEY, SECURITY_ATTACKS_KEY, SECURITY_REF, WEB_KEY }
+import { APIS_KEY, HARDWARE_KEY, LinkReferencia, NUBE_KEY, REQUISITOS_KEY, SECURITY_ATTACKS_REF, SECURITY_KEY, WEB_KEY }
 from 'src/app/models/linkReferencia';
 import { Item, PreviousAndNextSection } from 'src/app/models/models';
-import { SEGURIDAD_PATH } from 'src/app/models/relationsSummary';
+import { SEGURIDAD_ATAQUES_PATH } from 'src/app/models/relationsSummary';
 
 @Component({
     selector: 'app-seguridad',
-    templateUrl: './seguridad.component.html',
+    templateUrl: './seguridad-ataques.component.html',
     standalone: false
 })
-export class SeguridadComponent implements OnInit {
+export class SeguridadAtaquesComponent implements OnInit {
 
   items: Item[] = [];
 
-  components = SECURITY_REF;
+  components = SECURITY_ATTACKS_REF;
   
   itemStart = '';
 
   relatedSections = new Map<string, string>([]);
 
-  tittles = new Map([ ...SECURITY_REF ].map(([key, { tittleShort }]) => [key, tittleShort]));
+  tittles = new Map([ ...SECURITY_ATTACKS_REF ].map(([key, { tittleShort }]) => [key, tittleShort]));
 
   previousAndNextSection!: PreviousAndNextSection;
 
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    this.items = this.route.snapshot.data[SEGURIDAD_PATH.propertyNameData];
+    this.items = this.route.snapshot.data[SEGURIDAD_ATAQUES_PATH.propertyNameData];
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
     this.relatedSections.set(REQUISITOS_KEY, routes.get(REQUISITOS_KEY)!);
@@ -36,8 +36,8 @@ export class SeguridadComponent implements OnInit {
     this.relatedSections.set(APIS_KEY,       routes.get(APIS_KEY)!);
     this.relatedSections.set(WEB_KEY,        routes.get(WEB_KEY)!);
     this.previousAndNextSection = new PreviousAndNextSection(
-      LEYES_KEY,            routes.get(LEYES_KEY)!,
-      SECURITY_ATTACKS_KEY, routes.get(SECURITY_ATTACKS_KEY)!
+      SECURITY_KEY, routes.get(SECURITY_KEY)!,
+      NUBE_KEY,     routes.get(NUBE_KEY)!
     );
   }
 

@@ -19,11 +19,12 @@ export class LinkReferencia {
         ...CI_CD_REF,            ...APIS_REF,                 ...PERSISTENCY_ADVANCED_REF,
         ...MICRO_SERVICES_REF,   ...SYSTEM_DESIGN_REF,        ...MICRO_SERVICES_ADVANCED_REF,
         ...OBSERVABILIDAD_REF,   ...EJECUCION_REF,            ...PERSISTENCY_INTERMEDIATE_REF,
-        ...GIT_REF,              ...PEOPLE_REF,               ...CALIDAD_REF
+        ...GIT_REF,              ...PEOPLE_REF,               ...SECURITY_ATTACKS_REF,
+        ...CALIDAD_REF
     ]);
 
     public routesAndSections: Map<string, string> = new Map([
-        [ANALISIS_KEY, 'analisis'],     [PATRONES_KEY, 'patrones'],             [META_CARACTERISTICAS_KEY, 'metacaracteristicas'],
+        [ANALISIS_KEY, 'analisis'],     [ANALISIS_DATA_KEY, 'analisis-datos'],  [META_CARACTERISTICAS_KEY, 'metacaracteristicas'],
         [AGILES_KEY, 'agiles'],         [OBSERVABILIDAD_KEY, 'observabilidad'], [CONOCIMIENTO_EMPIRICO_KEY, 'conocimiento-empirico'],
         [UML_KEY, 'uml'],               [PERSISTENCY_KEY, 'bases-de-datos'],    [ESTRATEGIAS_DESARROLLO_KEY, 'estrategias-de-desarrollo'],
         [GIT_KEY, 'git'],               [METODOLOGIAS_KEY, 'metodologias'],     [BUENAS_PRACTICAS_KEY, 'buenas-practicas'],
@@ -35,10 +36,11 @@ export class LinkReferencia {
         [PARADIGMAS_KEY, 'paradigmas'], [SMELL_CODES_KEY, 'smells-codes'],      [META_ESTRUCTURAS_KEY, 'meta-estructuras'],
         [HARDWARE_KEY, 'hardware'],     [REFACTORING_KEY, 'refactorizacion'],   [PATRONES_ADVANCED_KEY, 'patrones-avanzado'],
         [REQUISITOS_KEY, 'requisitos'], [VERSIONAMIENTO_KEY, 'versionamiento'], [TESTING_ADVANCED_KEY, 'testing-avanzado'],
-        [NUBE_KEY, 'nube'],             [ARQUITECTURAS_KEY, 'arquitecturas'],   [ANALISIS_DATA_KEY, 'analisis-datos'],
+        [NUBE_KEY, 'nube'],             [ARQUITECTURAS_KEY, 'arquitecturas'],   [SECURITY_ATTACKS_KEY, 'seguridad-ataques'],
         [TESTING_KEY, 'testing'],       [SYSTEM_DESIGN_KEY, 'system-design'],   [MICRO_SERVICES_ADVANCED_KEY, 'microservices-avanzado'],
         [PEOPLE_KEY, 'personas'],       [EJECUCION_KEY, 'ejecucion'],           [PERSISTENCY_INTERMEDIATE_KEY, 'bd-intermedio'],
-        [SECURITY_KEY, 'seguridad'],    [CI_CD_KEY, 'ci-cd-infraestructura'],   [ARQUITECTURAS_IMPL_KEY, 'arquitecturas-impl']
+        [SECURITY_KEY, 'seguridad'],    [CI_CD_KEY, 'ci-cd-infraestructura'],   [ARQUITECTURAS_IMPL_KEY, 'arquitecturas-impl'],
+        [PATRONES_KEY, 'patrones']
     ]);
 
 }
@@ -124,7 +126,7 @@ export const ANALISIS_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.MICROSERVICES_ADVANCED_PRODUCER_CONSUMER_PROBLEM, Keys.APIS_IDEMPOTENCIA)
     ],
     [Keys.ANALISIS_COHESERS_DECOUPLERS, new Referencia('https://itnext.io/cohesers-and-decouplers-ecac2964081a', 'Cohesores y Desacopladores ', ANALISIS_KEY, 'Desacoplamiento', '2025/04/07')
-        .addRelatedItems(Keys.POO_COUPLING_AND_COHESION, Keys.ARQUITECTURAS_IMPL_MONOLITOS, Keys.EJECUCION_DEAD_LOCKS, Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.SECURITY_CONDICION_CARRERA, Keys.PERSISTENCY_ADVANCED_SCALING_DB, Keys.LEYES_CONWAY)
+        .addRelatedItems(Keys.POO_COUPLING_AND_COHESION, Keys.ARQUITECTURAS_IMPL_MONOLITOS, Keys.EJECUCION_DEAD_LOCKS, Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.SECURITY_ATTACK_CONDICION_CARRERA, Keys.PERSISTENCY_ADVANCED_SCALING_DB, Keys.LEYES_CONWAY)
     ],
     [Keys.ANALISIS_BOUNDED_CONTEXT, new Referencia('https://martinfowler.com/bliki/BoundedContext.html', 'Bounded Context', ANALISIS_KEY, 'Bounded Context', '2025/06/02')
         .addRelatedItems(Keys.BUENAS_PRACTICAS_AGGREGATES, Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.PEOPLE_LANGUAGE_UBICUOS, Keys.POO_COUPLING_AND_COHESION)
@@ -142,7 +144,7 @@ export const ANALISIS_REF = new Map<string, Referencia>([
         .addMoreReferences('https://medium.com/@lambrych/can-eventstorming-guide-the-design-workflow-6f75d8aa20e0')
     ],
     [Keys.ANALISIS_PROJECTIONS, new Referencia('https://event-driven.io/en/projections_and_read_models_in_event_driven_architecture/', 'Event Driven Arquitecture & Projections', ANALISIS_KEY, 'Proyecciones', '2026/05/23')
-        .addRelatedItems(Keys.PATRONES_ADVANCED_PERSISTENCE_PATTERNS, Keys.PATRONES_ADVANCED_CQRS, Keys.APIS_IDEMPOTENCIA, Keys.SECURITY_CONDICION_CARRERA, Keys.ARQUITECTURAS_IMPL_EVENT_DRIVEN)
+        .addRelatedItems(Keys.PATRONES_ADVANCED_PERSISTENCE_PATTERNS, Keys.PATRONES_ADVANCED_CQRS, Keys.APIS_IDEMPOTENCIA, Keys.SECURITY_ATTACK_CONDICION_CARRERA, Keys.ARQUITECTURAS_IMPL_EVENT_DRIVEN)
     ],
     [Keys.ANALISIS_CORE_VALUES_SOFTWARE_ENGINEER, new Referencia('https://anitsh.medium.com/core-values-of-a-successful-software-engineer-245801ba7247', 'Core Values Software Engineer', ANALISIS_KEY, 'Core Values', '2026/06/06')]
 ]);
@@ -184,11 +186,11 @@ export const SYSTEM_DESIGN_REF = new Map<string, Referencia>([
         .addMoreReferences('https://medium.com/@priyasrivastava18official/system-design-pattern-scaling-reads-reads-are-the-silent-killers-of-performance-heres-the-c0a74ec46646')
     ],
     [Keys.SYSTEM_DESIGN_CONTENTION, new Referencia('https://medium.com/@priyasrivastava18official/system-design-patterns-the-essential-guide-to-managing-contention-in-distributed-systems-d531b2f69dea', 'Diseño de sistemas, contención', SYSTEM_DESIGN_KEY, 'Contención y step process', '2026/01/15')
-        .addRelatedItems(Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_LOCKING, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRANSACTIONS, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.SECURITY_CONDICION_CARRERA, Keys.EJECUCION_CONCURRENCY_AND_PARALLELISM, Keys.PERSISTENCY_ACID, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_LOCKING, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRANSACTIONS, Keys.APIS_RATE_LIMITING)
+        .addRelatedItems(Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_LOCKING, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRANSACTIONS, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.SECURITY_ATTACK_CONDICION_CARRERA, Keys.EJECUCION_CONCURRENCY_AND_PARALLELISM, Keys.PERSISTENCY_ACID, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_LOCKING, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRANSACTIONS, Keys.APIS_RATE_LIMITING)
         .addMoreReferences('https://medium.com/@priyasrivastava18official/system-design-pattern-designing-reliable-multi-step-processes-in-distributed-systems-e22283c3ba30')
     ],
     [Keys.SYSTEM_DESIGN_COMMON_FAILS, new Referencia('https://levelup.gitconnected.com/3-am-production-fires-the-12-patterns-that-keep-breaking-everything-5f64e11b1baf', 'Fallas comunes', SYSTEM_DESIGN_KEY, 'Fallas comunes', '2026/01/18')
-        .addRelatedItems(Keys.PERSISTENCY_INTERMEDIATE_N_1_SELECTS, Keys.EJECUCION_MEMORY_AND_GARBAGE, Keys.PATRONES_ADVANCED_RESILIENCIA, Keys.EJECUCION_BLOCKING_AND_NO_BLOCKING, Keys.PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS, Keys.PARADIGMAS_REACTIVO, Keys.META_ESTRUCTURAS_LOGS, Keys.SECURITY_CONDICION_CARRERA, Keys.PERSISTENCY_ADVANCED_LOCKING, Keys.CD_CI_CELL_BASED_ARQUITECTURE)
+        .addRelatedItems(Keys.PERSISTENCY_INTERMEDIATE_N_1_SELECTS, Keys.EJECUCION_MEMORY_AND_GARBAGE, Keys.PATRONES_ADVANCED_RESILIENCIA, Keys.EJECUCION_BLOCKING_AND_NO_BLOCKING, Keys.PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS, Keys.PARADIGMAS_REACTIVO, Keys.META_ESTRUCTURAS_LOGS, Keys.SECURITY_ATTACK_CONDICION_CARRERA, Keys.PERSISTENCY_ADVANCED_LOCKING, Keys.CD_CI_CELL_BASED_ARQUITECTURE)
     ],
     [Keys.SYSTEM_DESIGN_DATABASE_WITHOUT_LOGIC, new Referencia('https://martinfowler.com/articles/dblogic.html', '¿ Bases de datos, sin logica ?', SYSTEM_DESIGN_KEY, '¿ Logica en la DB ?', '2026/01/31')
         .addRelatedItems(Keys.PERSISTENCY_ADVANCED_SQL_ENGINE_ANATOMY, Keys.PARADIGMAS_PARADIGMA_DATOS, Keys.ARQUITECTURAS_IMPL_CAPAS, Keys.REQUISITOS_TRADE_OFF, Keys.EJECUCION_MEMORY_PROFILING, Keys.POO_DESIGN_BY_CONTRACT, Keys.PERSISTENCY_INTERMEDIATE_SQL_NO_SQL, Keys.BUENAS_PRACTICAS_COMPLEJIDAD_COGNITIVA, Keys.PRINCIPIOS_DRY, Keys.PERSISTENCY_INTERMEDIATE_DATA_BASE_OBJECTS, Keys.POO_PILARES, Keys.SMELL_CODES_DESGLOSE, Keys.PERSISTENCY_INTERMEDIATE_SCHEMAS, Keys.PERSISTENCY_ADVANCED_MIGRATIONS, Keys.ESTRATEGIAS_DESARROLLO_TDD, Keys.PERSISTENCY_INTERMEDIATE_ORM, Keys.ANALISIS_DATA_TURING_COMPLETE, Keys.PARADIGMAS_IMPERATIVO)
@@ -870,7 +872,7 @@ export const NUBE_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.ARQUITECTURAS_IMPL_MONOLITOS, Keys.ESTRATEGIAS_DESARROLLO_SLDC, Keys.MICROSERVICES_ANALISIS)
     ],
     [Keys.NUBE_CDN_RTT, new Referencia('https://www.cloudflare.com/es-es/learning/cdn/what-is-a-cdn/', 'CDN & RTT', NUBE_KEY, 'CDN & RTT', '2026/03/10')
-        .addRelatedItems(Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.SECURITY_ATTACK_ON_MODEL_OSI)
+        .addRelatedItems(Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.SECURITY_ATTACK_MODEL_OSI)
         .addMoreReferences('https://www.cloudflare.com/es-es/learning/cdn/glossary/round-trip-time-rtt/')
     ],
     [Keys.NUBE_PROVISIONING, new Referencia('https://spacelift.io/blog/cloud-provisioning', 'Provisionamiento', NUBE_KEY, 'Provisionamiento', '2026/03/24')
@@ -903,14 +905,14 @@ export const APIS_REF = new Map<string, Referencia>([
     [Keys.APIS_REST_VS_MESSAGING, new Referencia('https://solace.com/blog/experience-awesomeness-event-driven-microservices/', 'REST VS Messaging & Microservicios', APIS_KEY, 'REST VS Messaging', '2024/03/15')],
     [Keys.APIS_API_GOVERNANCE, new Referencia('https://swagger.io/resources/articles/best-practices-in-api-governance/', 'Gobernanza', APIS_KEY, 'Gobernanza', '2024/06/01')],
     [Keys.APIS_API_FIRST, new Referencia('https://www.postman.com/api-first/', 'API-First', APIS_KEY, 'API-First', '2024/09/13').addRelatedItems(Keys.VERSIONAMIENTO_LICENSES_AND_DATA)],
-    [Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, new Referencia('https://www.kentik.com/kentipedia/latency-vs-throughput-vs-bandwidth/', 'Latencia, Rendimiento, Ancho de banda', APIS_KEY, 'Latencia & Rendimiento', '2025/03/29').addRelatedItems(Keys.NUBE_LATENCY, Keys.SECURITY_ATTACK_ON_MODEL_OSI)],
-    [Keys.APIS_RATE_LIMITING, new Referencia('https://blog.sagyamthapa.com.np/interactive-guide-to-rate-limiting', 'Rate Limiting', APIS_KEY, 'Rate Limiting', '2025/06/15').addRelatedItems(Keys.SECURITY_ATTACK_ON_MODEL_OSI, Keys.SYSTEM_DESIGN_CONCEPTS_I)],
+    [Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, new Referencia('https://www.kentik.com/kentipedia/latency-vs-throughput-vs-bandwidth/', 'Latencia, Rendimiento, Ancho de banda', APIS_KEY, 'Latencia & Rendimiento', '2025/03/29').addRelatedItems(Keys.NUBE_LATENCY, Keys.SECURITY_ATTACK_MODEL_OSI)],
+    [Keys.APIS_RATE_LIMITING, new Referencia('https://blog.sagyamthapa.com.np/interactive-guide-to-rate-limiting', 'Rate Limiting', APIS_KEY, 'Rate Limiting', '2025/06/15').addRelatedItems(Keys.SECURITY_ATTACK_MODEL_OSI, Keys.SYSTEM_DESIGN_CONCEPTS_I)],
     [Keys.APIS_API_FIRST_VS_CODE_FIRST, new Referencia('https://www.enmilocalfunciona.io/servicios-web-restful-ii-api-first-vs-code-first/', 'API-First VS Code-First', APIS_KEY, 'API-First VS Code-First', '2025/06/16')
         .addRelatedItems(Keys.POO_DESIGN_BY_CONTRACT, Keys.TESTING_ADVANCED_APDEX)
         .addMoreReferences('https://swagger.io/blog/code-first-vs-design-first-api/')
     ],
     [Keys.APIS_SECURITY, new Referencia('https://levelup.gitconnected.com/api-security-explained-7-must-know-protections-06e63fb69e9b', 'API Security & Protections', APIS_KEY, 'API Protections', '2025/09/28')
-        .addRelatedItems(Keys.SECURITY_AUTHENTICATION_WAYS, Keys.PERSISTENCY_INTERMEDIATE_ORM, Keys.SECURITY_FIREWALL, Keys.HARDWARE_RENDERING, Keys.NEURO_MARKETING_B2B_B2C)
+        .addRelatedItems(Keys.SECURITY_AUTHENTICATION_WAYS, Keys.PERSISTENCY_INTERMEDIATE_ORM, Keys.SECURITY_ATTACK_FIREWALL, Keys.HARDWARE_RENDERING, Keys.NEURO_MARKETING_B2B_B2C)
     ],
     [Keys.APIS_EVOLUTION, new Referencia('https://philsturgeon.com/api-evolution-for-rest-http-apis/', 'Como Evolucionar una API', APIS_KEY, 'Evolución API', '2025/10/14')
         .addRelatedItems(Keys.TESTING_CONTRACT_TESTING, Keys.VERSIONAMIENTO_EVOLUTION_SCHEMA_AND_SCHEMA_REGISTRY, Keys.META_ESTRUCTURAS_DEPRECATION, Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES, Keys.VERSIONAMIENTO_VERSIONAMIENTO)
@@ -1271,7 +1273,7 @@ export const TESTING_ADVANCED_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.META_ESTRUCTURAS_SISTEMAS_COMPLEJOS, Keys.CALIDAD_CODE_REVIEWS, Keys.BUENAS_PRACTICAS_STATIC_CODE_ANALYSIS, Keys.PEOPLE_CUSTOMER_LOYALTY, Keys.WEB_USER_INTERFACE, Keys.WEB_USER_XPERIENCE, Keys.ESTRATEGIAS_DESARROLLO_SLDC, Keys.CALIDAD_CODE_REVIEWS, Keys.CALIDAD_DORA_SPACE_METRICS, Keys.REFACTORING_DEUDA_TECNICA_TYPES)
     ],
     [Keys.TESTING_ADVANCED_HEISENBERG_BUG, new Referencia('https://medium.com/@vndpal/the-heisenberg-bug-how-to-debug-bugs-that-disappear-9c41affc9500', 'Heisenberg Bug', TESTING_ADVANCED_KEY, 'Heisenberg Bug', '2026/04/19')
-        .addRelatedItems(Keys.CD_CI_DEPLOYMENT_PATTERNS, Keys.SECURITY_CONDICION_CARRERA, Keys.APIS_LATENCY_THROUGHPUT_BANDWITH)
+        .addRelatedItems(Keys.CD_CI_DEPLOYMENT_PATTERNS, Keys.SECURITY_ATTACK_CONDICION_CARRERA, Keys.APIS_LATENCY_THROUGHPUT_BANDWITH)
         .addMoreReferences('https://franverona.com/blog/heisenbug-el-bug-que-cambia-mientras-se-depura', 'https://qpoint.io/blog/debugging-server-heisenbugs/')
     ],
 ]);
@@ -1375,33 +1377,12 @@ export const PRINCIPIOS_REF = new Map<string, Referencia>([
 
 export const SECURITY_KEY = 'Seguridad';
 export const SECURITY_REF = new Map<string, Referencia>([
-    //['firewall', new Referencia('https://idgrup.com/firewall-que-es-y-como-funciona/#:~:text=Un%20firewall%2C%20tambi%C3%A9n%20llamado%20cortafuegos,ordenadores%20de%20una%20misma%20red', 'Firewall', SECURITY_KEY, 'Firewall')],
-    //['firewall', new Referencia('https://www.cisco.com/c/es_mx/products/security/firewalls/what-is-a-firewall.html', 'Firewall', SECURITY_KEY, 'Firewall', '', '2024/06/16')],
-    [Keys.SECURITY_FIREWALL, new Referencia('https://www.cisco.com/site/us/en/learn/topics/security/what-is-a-firewall.html', 'Firewall', SECURITY_KEY, 'Firewall', '2024/06/16', '2025/05/18')
-        .addRelatedItems(Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.APIS_GATEWAY)
-    ],
-    [Keys.SECURITY_PROTOCOLOS_SEGURITY, new Referencia('https://www.websecurity.digicert.com/es/es/security-topics/what-is-ssl-tls-https', 'SSL, TSL, HTTPS', SECURITY_KEY, 'SSL, TSL, HTTPS')],
-    [Keys.SECURITY_PROXY, new Referencia('https://www.welivesecurity.com/la-es/2020/01/02/que-es-proxy-para-que-sirve/', 'Proxy & Proxy Inverso', SECURITY_KEY, 'Proxy & Proxy Inverso', '', '2025/02/15')],
     [Keys.SECURITY_CIBER_SECURITY, new Referencia('https://latam.kaspersky.com/resource-center/definitions/what-is-cyber-security', 'Ciberseguridad y otras amenazas', SECURITY_KEY, 'Ciberseguridad')],
     //['cia', new Referencia('https://searchdatacenter.techtarget.com/es/opinion/Que-es-la-triada-de-la-CIA', 'Confidencialidad-Integridad-Accesibilidad ', SECURITY_KEY, 'CIA')],
     [Keys.SECURITY_CIA, new Referencia('https://www.computerweekly.com/es/opinion/Que-es-la-triada-de-la-CIA', 'Confidencialidad-Integridad-Accesibilidad ', SECURITY_KEY, 'CIA', '', '2024/06/16')],
     [Keys.SECURITY_NO_REPUDIO, new Referencia('https://www.unir.net/ingenieria/revista/no-repudio-seguridad-informatica/', 'No repudio', SECURITY_KEY, 'NO Repudio')],
     [Keys.SECURITY_MATRIZ_DE_RIESGOS, new Referencia('https://www.protek.com.py/novedades/objetivos-de-una-matriz-de-riesgos/', 'Matriz de Riesgo', SECURITY_KEY, 'Matriz de Riesgo', '', '2025/10/12')],
-    [Keys.SECURITY_CONDICION_CARRERA, new Referencia('https://ciberseguridad.com/amenzas/vulnerabilidades/condicion-de-carrera/', 'Condición de Carrera', SECURITY_KEY, 'Carrera', '', '2025/04/08')],
-    [Keys.SECURITY_HONEYPOT, new Referencia('https://latam.kaspersky.com/resource-center/threats/what-is-a-honeypot', 'Honeypot', SECURITY_KEY, 'Honeypot')],
-    [Keys.SECURITY_ZERO_DAY_EXPLOIT, new Referencia('https://latam.kaspersky.com/resource-center/definitions/zero-day-exploit', 'Zero Day Exploit', SECURITY_KEY, 'Zero Day Exploit')],
-    [Keys.SECURITY_PENTEST, new Referencia('https://www.hiberus.com/crecemos-contigo/pentesting-owasp-fases-metodologia/', 'Testing de intrusión', SECURITY_KEY, 'Test de Intrusión')],
-    [Keys.SECURITY_OWASTOP, new Referencia('https://owasp.org/Top10/2021/es/', 'OWASP Top 10', SECURITY_KEY, 'OWASP Top 10', '', '2026/05/01')
-        .addMoreReferences('https://owasp.org/Top10/2025/')
-    ],
-    [Keys.SECURITY_STRIDE, new Referencia('https://www.softwaresecured.com/post/stride-threat-modelling', 'STRIDE', SECURITY_KEY, 'STRIDE')],
     [Keys.SECURITY_CIAM, new Referencia('https://auth0.com/blog/why-do-you-need-ciam/', 'CIAM', SECURITY_KEY, 'CIAM')],
-    [Keys.SECURITY_LATERAL_CHANEL, new Referencia('https://ciberseguridad.com/amenzas/ataque-canal-lateral/', 'Ataques de canal lateral', SECURITY_KEY, 'Ataques de canal lateral')],
-    [Keys.SECURITY_CSP, new Referencia('https://auth0.com/blog/from-zero-to-hero-with-csp/', 'Content Security Police', SECURITY_KEY, 'Content Security Police', '2022/11/07')],
-    [Keys.SECURITY_CRSF, new Referencia('https://www.welivesecurity.com/la-es/2015/04/21/vulnerabilidad-cross-site-request-forgery-csrf/', 'Cross Site Request Forgery', SECURITY_KEY, 'CSRF', '2023/01/06')],
-    [Keys.SECURITY_ATTACK_ON_MODEL_OSI, new Referencia('https://blog.bytebytego.com/p/ep97-10-good-coding-principles-to#%C2%A7top-network-security-cheatsheet', 'Ataques contra el Modelo OSI', SECURITY_KEY, 'Ataques Modelo OSI', '2024/03/21')
-        .addRelatedItems(Keys.HARDWARE_MODEL_OSI)
-    ],
     [Keys.SECURITY_LEAST_PRIVILEGE, new Referencia('https://www.cyberark.com/what-is/least-privilege/', 'Menor privilegio', SECURITY_KEY, 'Menor Privilegio', '2024/06/16')],
     [Keys.SECURITY_AUTHENTICATION_WAYS, new Referencia('https://medium.com/@iamprovidence/authentication-history-basic-digest-cookie-session-token-jwt-api-key-55d6c21be90b', 'Formas de Autenticación', SECURITY_KEY, 'Autenticación', '2024/07/21', '2025/09/28')
         .addRelatedItems(Keys.APIS_SECURITY)
@@ -1414,18 +1395,45 @@ export const SECURITY_REF = new Map<string, Referencia>([
     ],
     [Keys.SECURITY_HASHING_ENCRYPTION, new Referencia('https://medium.com/@gaddamnaveen192/hashing-vs-encryption-the-mistake-that-separates-good-developers-from-great-ones-26f39fd05eab', 'hashing & encryption', SECURITY_KEY, 'hashing & encryption', '2026/04/17')
         .addMoreReferences('https://auth0.com/blog/adding-salt-to-hashing-a-better-way-to-store-passwords/')
+    ]
+]);
+
+export const SECURITY_ATTACKS_KEY = 'Ataques';
+export const SECURITY_ATTACKS_REF = new Map<string, Referencia>([
+    [Keys.SECURITY_ATTACK_FIREWALL, new Referencia('https://www.cisco.com/site/us/en/learn/topics/security/what-is-a-firewall.html', 'Firewall', SECURITY_ATTACKS_KEY, 'Firewall', '2024/06/16', '2025/05/18')
+        .addRelatedItems(Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.APIS_GATEWAY)
     ],
+    [Keys.SECURITY_ATTACK_PROTOCOLOS, new Referencia('https://www.websecurity.digicert.com/es/es/security-topics/what-is-ssl-tls-https', 'SSL, TSL, HTTPS', SECURITY_ATTACKS_KEY, 'SSL, TSL, HTTPS')],
+    [Keys.SECURITY_ATTACK_PROXY, new Referencia('https://www.welivesecurity.com/la-es/2020/01/02/que-es-proxy-para-que-sirve/', 'Proxy & Proxy Inverso', SECURITY_ATTACKS_KEY, 'Proxy & Proxy Inverso', '', '2025/02/15')],
+    [Keys.SECURITY_ATTACK_CSP, new Referencia('https://auth0.com/blog/from-zero-to-hero-with-csp/', 'Content Security Police', SECURITY_ATTACKS_KEY, 'CSP', '2022/11/07')],
+    [Keys.SECURITY_ATTACK_CRSF, new Referencia('https://www.welivesecurity.com/la-es/2015/04/21/vulnerabilidad-cross-site-request-forgery-csrf/', 'Cross Site Request Forgery', SECURITY_ATTACKS_KEY, 'CSRF', '2023/01/06')],
+    [Keys.SECURITY_ATTACK_CONDICION_CARRERA, new Referencia('https://ciberseguridad.com/amenzas/vulnerabilidades/condicion-de-carrera/', 'Condición de Carrera', SECURITY_ATTACKS_KEY, 'Carrera', '', '2025/04/08')],
+    [Keys.SECURITY_ATTACK_ZERO_DAY, new Referencia('https://latam.kaspersky.com/resource-center/definitions/zero-day-exploit', 'Zero Day Exploit', SECURITY_ATTACKS_KEY, 'Zero Day')],
+    [Keys.SECURITY_ATTACK_LATERAL_CHANEL, new Referencia('https://ciberseguridad.com/amenzas/ataque-canal-lateral/', 'Ataques de canal lateral', SECURITY_ATTACKS_KEY, 'Canal lateral')],
+    [Keys.SECURITY_ATTACK_MODEL_OSI, new Referencia('https://blog.bytebytego.com/p/ep97-10-good-coding-principles-to#%C2%A7top-network-security-cheatsheet', 'Ataques contra el Modelo OSI', SECURITY_ATTACKS_KEY, 'Modelo OSI', '2024/03/21')
+        .addRelatedItems(Keys.HARDWARE_MODEL_OSI)
+    ],
+    [Keys.SECURITY_ATTACK_HONEYPOT, new Referencia('https://latam.kaspersky.com/resource-center/threats/what-is-a-honeypot', 'Honeypot', SECURITY_ATTACKS_KEY, 'Honeypot')],
+    [Keys.SECURITY_ATTACK_PENTEST, new Referencia('https://www.hiberus.com/crecemos-contigo/pentesting-owasp-fases-metodologia/', 'Testing de intrusión', SECURITY_ATTACKS_KEY, 'Pentest')],
+    [Keys.SECURITY_ATTACK_OWASTOP, new Referencia('https://owasp.org/Top10/2021/es/', 'OWASP Top 10', SECURITY_ATTACKS_KEY, 'OWASP Top 10', '', '2026/05/01')
+        .addMoreReferences('https://owasp.org/Top10/2025/')
+    ],
+    [Keys.SECURITY_ATTACK_STRIDE, new Referencia('https://www.softwaresecured.com/post/stride-threat-modelling', 'STRIDE', SECURITY_ATTACKS_KEY, 'STRIDE')]
 ]);
 
 export const SMELL_CODES_KEY = 'Smell-Codes';
 export const SMELL_CODES_REF = new Map<string, Referencia>([
-    [Keys.SMELL_CODES_SMELLS_CODES, new Referencia('https://openwebinars.net/blog/code-smells-y-deuda-tecnica/', 'Smell Codes', SMELL_CODES_KEY, 'Smell Codes', '2021/06/06', '2024/12/29').addRelatedItems(Keys.REFACTORING_DEUDA_TECNICA, Keys.PRINCIPIOS_DRY)],
+    [Keys.SMELL_CODES_SMELLS_CODES, new Referencia('https://openwebinars.net/blog/code-smells-y-deuda-tecnica/', 'Smell Codes', SMELL_CODES_KEY, 'Smell Codes', '2021/06/06', '2024/12/29')
+        .addRelatedItems(Keys.REFACTORING_DEUDA_TECNICA, Keys.PRINCIPIOS_DRY)
+    ],
     [Keys.SMELL_CODES_TYPES, new Referencia('https://refactoring.guru/es/refactoring/smells', 'Tipos de Smell Codes', SMELL_CODES_KEY, 'Tipos', '2021/06/06')],
     [Keys.SMELL_CODES_DESGLOSE, new Referencia('https://refactoring.guru/es/refactoring/smells', 'Smell Codes por tipo', SMELL_CODES_KEY, 'Desglose', '2021/06/06')],
     [Keys.SMELL_CODES_EXCEPTIONS, new Referencia('https://refactoring.guru/es/refactoring/smells', 'Casos donde pueden ser ignorados', SMELL_CODES_KEY, 'Casos especiales', '2021/06/06')],
     [Keys.SMELL_CODES_PAY_OFF, new Referencia('https://refactoring.guru/es/refactoring/smells', 'Beneficios de corregir Code Smells', SMELL_CODES_KEY, 'Ganancias', '2021/06/06')],
     [Keys.SMELL_CODES_DESIGN, new Referencia('https://www.alpharithms.com/code-smell-492316/', 'Code smells en Diseño', SMELL_CODES_KEY, 'A nivel de Diseño', '2023/01/22')],
-    [Keys.SMELL_CODES_ARCHITECTURAL_SMELLS, new Referencia('https://docs.arcan.tech/latest/architectural_smells/', 'Code smells en Arquitecturas', SMELL_CODES_KEY, 'A nivel de arquitectura', '2024/12/29').addRelatedItems(Keys.POO_COUPLING_COMPONENTS, Keys.POO_COUPLING_AND_COHESION, Keys.PATRONES_GOF, Keys.POO_HERENCIA, Keys.SYSTEM_DESIGN_SINGLE_POINT_OF_FAILURE)],
+    [Keys.SMELL_CODES_ARCHITECTURAL_SMELLS, new Referencia('https://docs.arcan.tech/latest/architectural_smells/', 'Code smells en Arquitecturas', SMELL_CODES_KEY, 'A nivel de arquitectura', '2024/12/29')
+        .addRelatedItems(Keys.POO_COUPLING_COMPONENTS, Keys.POO_COUPLING_AND_COHESION, Keys.PATRONES_GOF, Keys.POO_HERENCIA, Keys.SYSTEM_DESIGN_SINGLE_POINT_OF_FAILURE)
+    ],
 ]);
 
 export const PERSISTENCY_KEY = 'Bases de Datos'
@@ -1727,7 +1735,7 @@ export const CI_CD_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.TESTING_QUALITY_ASSURANCE)
     ],
     [Keys.CD_CI_DEV_SEC_OPS, new Referencia('https://www.computerweekly.com/es/definicion/SecOps-o-DevSecOps', 'SecDevOps y SCA, SAST, DAST', CI_CD_KEY, 'SecDevOps', '', '2026/04/30')
-        .addRelatedItems(Keys.BUENAS_PRACTICAS_STATIC_CODE_ANALYSIS, Keys.BUENAS_PRACTICAS_DYNAMIC_CODE_ANALYSIS, Keys.SECURITY_OWASTOP)
+        .addRelatedItems(Keys.BUENAS_PRACTICAS_STATIC_CODE_ANALYSIS, Keys.BUENAS_PRACTICAS_DYNAMIC_CODE_ANALYSIS, Keys.SECURITY_ATTACK_OWASTOP)
         .addMoreReferences('https://checkmarx.com/learn/sca/sca-sast-dast/')
     ],
     [Keys.CD_CI_IAS_CODE, new Referencia('https://www.redhat.com/es/topics/automation/what-is-infrastructure-as-code-iac', 'Infraestructura como Codigo', CI_CD_KEY, 'IaC', '2025/10/18')

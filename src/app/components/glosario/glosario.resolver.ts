@@ -55,6 +55,7 @@ const CONTENT_FILES: string[] = [
     Paths.NEURO_MARKETING_PATH.file,
     Paths.OBSERVABILIDAD_PATH.file,
     Paths.SEGURIDAD_PATH.file,
+    Paths.SEGURIDAD_ATAQUES_PATH.file
 ];
 
 function loadJson(http: HttpClient, file: string) {

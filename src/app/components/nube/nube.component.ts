@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { APIS_KEY, CI_CD_KEY, CONTENEDORES_KEY, LinkReferencia, NUBE_REF, OBSERVABILIDAD_KEY, SECURITY_KEY, WEB_KEY }
+import { APIS_KEY, CI_CD_KEY, CONTENEDORES_KEY, LinkReferencia, NUBE_REF, OBSERVABILIDAD_KEY,
+  SECURITY_ATTACKS_KEY, SECURITY_KEY, WEB_KEY }
   from 'src/app/models/linkReferencia';
 import { Item, PreviousAndNextSection } from 'src/app/models/models';
 import { NUBE_PATH } from 'src/app/models/relationsSummary';
@@ -36,8 +37,8 @@ export class NubeComponent implements OnInit {
     this.relatedSections.set(APIS_KEY,         routes.get(APIS_KEY)!);
     this.relatedSections.set(WEB_KEY,          routes.get(WEB_KEY)!);
     this.previousAndNextSection = new PreviousAndNextSection(
-      SECURITY_KEY,       routes.get(SECURITY_KEY)!,
-      OBSERVABILIDAD_KEY, routes.get(OBSERVABILIDAD_KEY)!
+      SECURITY_ATTACKS_KEY, routes.get(SECURITY_ATTACKS_KEY)!,
+      OBSERVABILIDAD_KEY,   routes.get(OBSERVABILIDAD_KEY)!
     );
   }
 
