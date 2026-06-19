@@ -331,5 +331,28 @@
     "- La frase se popularizó de manera incompleta hasta la versión compacta que conocemos hoy en día <strong>La optimización prematura es la raíz de todos los males</strong> ",
     "- El mayor problema de una optimización prematura, es sacrificar legibilidad y eso puede ocultar errores o comportamientos inesperados, ",
     " - sin embargo es diferente de optimizaciones obvias que sí aportan valor, un valor tangible y previamente respaldado por metricas "
+  ],
+  "expresiones-cron": [
+    "- Una expresión CRON es una cadena de texto compuesta, que se utiliza para representar instantes recurrentes en el tiempo ",
+    "- Su uso recae en la planificación de ejecuciones de procesos o rutinas programadas ",
+    "- Incluso este formato suele ser interpretado por defecto en sistemas Unix, aunque en este caso las Cron constan de 5 campos ",
+    "- Numerosas plataformas y Frameworks la usan, para el caso de Java uno de los más reconocidos es <em>Quartz</em> ",
+    "",
+    "<strong>Formato:</strong> Son 6 o 7 campos separados por un espacio en blanco, los campos tienen un orden concreto a la hora de indicar a que nos estamos refiriendo ",
+    "&brvbar; <strong>Campo</strong>            &brvbar; <strong>Obligatorio</strong> &brvbar; <strong>Valores Permitidos</strong> &brvbar; ",
+    "&brvbar; Segundos         &brvbar;      SI     &brvbar;        0-59        &brvbar; ",
+    "&brvbar; Minutos          &brvbar;      SI     &brvbar;        0-59        &brvbar; ",
+    "&brvbar; Horas            &brvbar;      SI     &brvbar;        0-23        &brvbar; ",
+    "&brvbar; Día del mes      &brvbar;      SI     &brvbar;        1-31        &brvbar; ",
+    "&brvbar; Mes              &brvbar;      SI     &brvbar;   1-12 o JAN-DEC   &brvbar; ",
+    "&brvbar; Día de la semana &brvbar;      SI     &brvbar;   1-7 o SUN-SAT    &brvbar; ",
+    "&brvbar; Año              &brvbar;      NO     &brvbar; Vacío | 1970-2099  &brvbar; ",
+    "<strong>Caracteres especiales</strong>",
+    " * : Selecciona todos los valores de un campo (por ejemplo cada hora, cada minuto)",
+    " ? : Sin un valor específico cuando se puede utilizar (es similar a decir cualquiera)",
+    " - : Selecciona rango de valores (por ejemplo 4-6 que es de 4 a 6)",
+    " , : Selecciona valores específicos (por ejemplo MON,WED,FRI)",
+    " # : Selecciona la posición de un día del mes (por ejemplo 6#3 -> el tercer viernes del mes)",
+    " / : Selecciona incrementos a partir del primer valor (por ejemplo 0/15 que es cada 15 minutos comenzando desde el minuto 0 -> 15, 30 ,45) "
   ]
 }

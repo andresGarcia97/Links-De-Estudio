@@ -45,7 +45,7 @@ export class LinkReferencia {
 
 }
 
-export const LAST_ITEM = Keys.SECURITY_ATTACK_SUPPLY_CHAIN;
+export const LAST_ITEM = Keys.EJECUCION_EXPRESIONES_CRON;
 export const LAST_UPDATE = Keys.SECURITY_IDOR;
 
 export const AGILES_KEY = 'Agiles';
@@ -441,6 +441,9 @@ export const EJECUCION_REF = new Map<string, Referencia>([
     [Keys.EJECUCION_PREMATURE_OPTIMIZATION, new Referencia('https://java-design-patterns.com/es/principles/#avoid-premature-optimization', 'Optimización prematura', EJECUCION_KEY, 'Optimización prematura', '2026/04/10')
         .addRelatedItems(Keys.HARDWARE_LAWS_SCALABILITY, Keys.REQUISITOS_PRAGMATIC_ENGINEER, Keys.PRINCIPIOS_STUPID)
         .addMoreReferences('https://softwareengineering.stackexchange.com/questions/99445/is-micro-optimisation-important-when-coding', 'https://softwareengineering.stackexchange.com/questions/80084/is-premature-optimization-really-the-root-of-all-evil')
+    ],
+    [Keys.EJECUCION_EXPRESIONES_CRON, new Referencia('https://adictosaltrabajo.com/2010/02/22/expresiones-cron/', 'Expresiones CRON', EJECUCION_KEY, 'Expresiones CRON', '2026/06/18')
+        .addRelatedItems(Keys.META_ESTRUCTURAS_REGEX)
     ]
 ]);
 

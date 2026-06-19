@@ -270,12 +270,12 @@
     "<strong>- Asymmetric Encryption (RSA):</strong> Se usan 2 llaves: una pública para cifrar los datos y una privada para descifrarlos "
   ],
   "insecure-direct-object-reference": [
-    "- Esta vulnerabilidad permite a los usuarios acceder directamente a objetos (recursos, archivos, registros) mediante referencias expuestas y controladas por el propio usuario ",
+    "- Esta vulnerabilidad permite acceder directamente a objetos (recursos, archivos, registros) mediante referencias expuestas para el usuario ",
     "- El servidor no realiza las debidas verificaciones de control de acceso, este error es bastante comun y suele estar dentro del OWASP Top 10 ",
     "- El impacto varía según el objeto expuesto: filtraciones de datos, elevación de privilegios horizontal o vertical, entre otros ",
     "",
     "<strong>Casos comunes:</strong>",
-    "- Acceso a información de otros usuarios <em>https://sitio-inseguro.com/user_info?user_id=998</em>",
+    "- Acceso a información de otros usuarios <em>https://sitio-inseguro.com/user_info?user_id=998</em> solo cambiando el <em>user_id</em>",
     "- Cambio de contraseña de otro usuario alterando el identificador del titular en la solicitud ",
     "- Archivos estáticos accesibles mediante rutas predecibles sin ninguna validación de permisos <em>https://sitio-inseguro.com/fake-bus/certificados/177.pdf</em>"
   ]
