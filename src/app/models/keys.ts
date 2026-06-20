@@ -639,6 +639,7 @@ export const PRINCIPIOS_SOC = 'SOC';
 export const PRINCIPIOS_POC = 'POC';
 export const PRINCIPIOS_SLAP = 'SLAP';
 export const PRINCIPIOS_DIP = 'DIP';
+export const PRINCIPIOS_AHA = 'AHA';
 export const CD_CI_CI_CD = 'CI-CD';
 export const CD_CI_DEV_OPS = 'devOps';
 export const CD_CI_DEV_SEC_OPS = 'devSecOps';

@@ -105,5 +105,15 @@
     "- Es importante entender que no solo hay una inversión de la dirección de la dependencia, sino tambien una inversión en la propiedad de la interfaz ",
     "- Este acuerdo mediante contratos si se respeta llega a lograr un cliente agnostico del funcionamiento interno, de manera que sea reutilizable y seguro ",
     "- <strong>DIP</strong> Tambien esta directamente relacionado con la <em>Inyección de Dependencias</em> y la <em>Inversión de Control</em>, llegando a coexistir en el mismo contexto "
+  ],
+  "AHA": [
+    "- El principio de evitar abstracciones apresuradas recomienda priorizar la duplicación, sobre una abstracción incorrecta ",
+    "- Optimizar primero para el cambio e identificar el patrón sobre el cual surgen las abstracciones ",
+    "- Un buen desarrollador se esfuerza por escribir código limpio, cuidando aspectos como la mantenibilidad y legibilidad ",
+    "- Este principio no va en contra de <strong>DRY</strong> solo recomienda no crear abstracciones o interfaces innecesarias o prematuras ",
+    "",
+    "- Es preferible duplicar código a tener una abstracción incorrecta, sin caer en el extremo de evitar a toda costa nuevas abstracciones ",
+    "- Este principio es ambiguo y debe tomarse como guia, no como una regla estricta ",
+    "- Una buena heuristica es la <strong>regla de tres</strong> donde se espera hasta la tercera repetición antes de abstraer "
   ]
 }

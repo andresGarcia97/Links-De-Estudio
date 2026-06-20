@@ -1389,7 +1389,6 @@ export const PRINCIPIOS_REF = new Map<string, Referencia>([
     ],
     [Keys.PRINCIPIOS_STUPID, new Referencia('https://williamdurand.fr/2013/07/30/from-stupid-to-solid-code/', 'NO seas S.T.U.P.I.D', PRINCIPIOS_KEY, 'STUPID')],
     [Keys.PRINCIPIOS_TWICE_ONE, new Referencia('https://betterprogramming.pub/measure-twice-cut-once-isnt-very-agile-3af456d932b9', 'Mide 2 veces, Corta 1 vez', PRINCIPIOS_KEY, 'Mide 2 veces, Corta 1 vez')],
-    //[Keys.PRINCIPIOS_DIVIDE_AND_CONQUER, new Referencia('https://betterprogramming.pub/10-design-principles-in-software-engineering-f88647cf5a07', 'Divide y Conquistaras', PRINCIPIOS_KEY, 'Dividir y Conquistar')],
     [Keys.PRINCIPIOS_DIVIDE_AND_CONQUER, new Referencia('https://es.khanacademy.org/computing/computer-science/algorithms/merge-sort/a/divide-and-conquer-algorithms', 'Divide y Conquistaras', PRINCIPIOS_KEY, 'Divide y venceras', '', '2025/08/10')
         .addRelatedItems(Keys.EJECUCION_RECURSIVIDAD)
     ],
@@ -1398,7 +1397,10 @@ export const PRINCIPIOS_REF = new Map<string, Referencia>([
     [Keys.PRINCIPIOS_SLAP, new Referencia('https://medium.com/javarevisited/slap-that-ugly-code-6ec276d3a4bc', 'Principio de abstracción de un solo nivel', PRINCIPIOS_KEY, 'SLAP', '2025/02/02')],
     [Keys.PRINCIPIOS_DIP, new Referencia('https://medium.com/ssense-tech/dependency-injection-vs-dependency-inversion-vs-inversion-of-control-lets-set-the-record-straight-5dc818dc32d1', 'Principio de Inversión de Dependencias', PRINCIPIOS_KEY, 'DIP', '2025/10/26')
         .addRelatedItems(Keys.FRAMEWORKS_IOC, Keys.FRAMEWORKS_IOD, Keys.ARQUITECTURAS_WHY_CLEAN, Keys.POO_DESIGN_BY_CONTRACT, Keys.POO_DESCOMPOSITION)
-    ]
+    ],
+    [Keys.PRINCIPIOS_AHA, new Referencia('https://www.vladimirzdrazil.com/posts/aha-principle/', 'Avoid Hasty Abstractions', PRINCIPIOS_KEY, 'AHA', '2026/06/19')
+        .addRelatedItems(Keys.MALAS_PRACTICAS_OVER_ENGINEERING, Keys.CONOCIMIENTOS_PSICOLOGICOS_SESGOS_COGNITIVOS)
+    ],
 ]);
 
 export const SECURITY_KEY = 'Seguridad';
