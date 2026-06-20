@@ -4,22 +4,22 @@ import { Referencia } from './models';
 export class LinkReferencia {
 
     public components: Map<string, Referencia> = new Map([
-        ...AGILES_REF,           ...CONTAINERS,               ...ANALISIS_REF,
-        ...ARQUITECTURAS_REF,    ...BUENAS_PRACTICAS_REF,     ...ARQUITECTURAS_IMPL_REF,
-        ...COMPILACION_REF,      ...CONOCIMIENTO_EMPIRICO,    ...ESTRATEGIAS_DESARROLLO_REF,
-        ...FRAMEWORKS_REF,       ...PATRONES_ADVANCED_REF,    ...USER_HISTORIES,
-        ...MALAS_PRACTICAS_REF,  ...META_CARATERISTICAS_REF,  ...META_ESTRUCTURAS_REF,
-        ...METODOLOGIAS_REF,     ...NUBE_REF,                 ...ANALISIS_DATA_REF,
-        ...PARADIGMAS_REF,       ...PATRONES_REF,             ...CONOCIMIENTO_PSICOLOGICO,
-        ...POO_REF,              ...TESTING_REF,              ...TESTING_ADVANCED_REF,
-        ...REFACTORING_REF,      ...REQUISITOS_REF,           ...PRINCIPIOS_REF,
-        ...SECURITY_REF,         ...SMELL_CODES_REF,          ...PERSISTENCY_REF,
-        ...UML_REF,              ...VERSIONAMIENTO_REF,       ...HARDWARE_REF,
-        ...WEB_REF,              ...LEYES_REF,                ...NEURO_MARKETING_REF,
-        ...CI_CD_REF,            ...APIS_REF,                 ...PERSISTENCY_ADVANCED_REF,
-        ...MICRO_SERVICES_REF,   ...SYSTEM_DESIGN_REF,        ...MICRO_SERVICES_ADVANCED_REF,
-        ...OBSERVABILIDAD_REF,   ...EJECUCION_REF,            ...PERSISTENCY_INTERMEDIATE_REF,
-        ...GIT_REF,              ...PEOPLE_REF,               ...SECURITY_ATTACKS_REF,
+        ...AGILES_REF,          ...CONTAINERS,              ...ANALISIS_REF,
+        ...ARQUITECTURAS_REF,   ...BUENAS_PRACTICAS_REF,    ...ARQUITECTURAS_IMPL_REF,
+        ...COMPILACION_REF,     ...CONOCIMIENTO_EMPIRICO,   ...ESTRATEGIAS_DESARROLLO_REF,
+        ...FRAMEWORKS_REF,      ...PATRONES_ADVANCED_REF,   ...USER_HISTORIES,
+        ...MALAS_PRACTICAS_REF, ...META_CARATERISTICAS_REF, ...META_ESTRUCTURAS_REF,
+        ...METODOLOGIAS_REF,    ...NUBE_REF,                ...ANALISIS_DATA_REF,
+        ...PARADIGMAS_REF,      ...PATRONES_REF,            ...CONOCIMIENTO_PSICOLOGICO,
+        ...POO_REF,             ...TESTING_REF,             ...TESTING_ADVANCED_REF,
+        ...REFACTORING_REF,     ...REQUISITOS_REF,          ...PRINCIPIOS_REF,
+        ...SECURITY_REF,        ...SMELL_CODES_REF,         ...PERSISTENCY_REF,
+        ...UML_REF,             ...VERSIONAMIENTO_REF,      ...HARDWARE_REF,
+        ...WEB_REF,             ...LEYES_REF,               ...NEURO_MARKETING_REF,
+        ...CI_CD_REF,           ...APIS_REF,                ...PERSISTENCY_ADVANCED_REF,
+        ...MICRO_SERVICES_REF,  ...SYSTEM_DESIGN_REF,       ...MICRO_SERVICES_ADVANCED_REF,
+        ...OBSERVABILIDAD_REF,  ...EJECUCION_REF,           ...PERSISTENCY_INTERMEDIATE_REF,
+        ...GIT_REF,             ...PEOPLE_REF,              ...SECURITY_ATTACKS_REF,
         ...CALIDAD_REF
     ]);
 
