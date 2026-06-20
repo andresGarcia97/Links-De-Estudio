@@ -43,10 +43,33 @@ export class LinkReferencia {
         [PATRONES_KEY, 'patrones']
     ]);
 
-}
+    public getLastKeyByType(type: 'read' | 'update'): string {
 
-export const LAST_ITEM = Keys.EJECUCION_EXPRESIONES_CRON;
-export const LAST_UPDATE = Keys.SECURITY_IDOR;
+        let lastKey = '';
+        let lastDate: Date | null = null;
+
+        for (const [key, referencia] of this.components) {
+
+            const dateValue = type === 'read'
+                ? referencia.dateRead
+                : referencia.dateUpdate;
+
+            if (!dateValue) {
+                continue;
+            }
+
+            const currentDate = new Date(dateValue);
+
+            if (!lastDate || currentDate > lastDate) {
+                lastDate = currentDate;
+                lastKey = key;
+            }
+        }
+
+        return lastKey;
+    }
+
+}
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
@@ -1923,3 +1946,7 @@ export const OBSERVABILIDAD_REF = new Map<string, Referencia>([
         .addMoreReferences('https://www.jmp.com/es/statistics-knowledge-portal/what-is-correlation/correlation-vs-causation')
     ]
 ]);
+
+const linkReferencia = new LinkReferencia();
+export const LAST_ITEM = linkReferencia.getLastKeyByType('read');
+export const LAST_UPDATE = linkReferencia.getLastKeyByType('update');
