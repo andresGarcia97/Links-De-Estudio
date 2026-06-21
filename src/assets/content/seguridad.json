@@ -278,5 +278,25 @@
     "- Acceso a información de otros usuarios <em>https://sitio-inseguro.com/user_info?user_id=998</em> solo cambiando el <em>user_id</em>",
     "- Cambio de contraseña de otro usuario alterando el identificador del titular en la solicitud ",
     "- Archivos estáticos accesibles mediante rutas predecibles sin ninguna validación de permisos <em>https://sitio-inseguro.com/fake-bus/certificados/177.pdf</em>"
+  ],
+  "entropy-source-in-key-generation": [
+    "- Muchos sistemas que necesitan seguridad se basan en la solidez e imprevisibilidad de las claves privadas y para esto es fundamental la <em>entropía</em> ",
+    "- En <strong>criptografía</strong> la entropía se refiere a la verdadera aleatoriedad que recolecta un sistema para generar claves privadas ",
+    "",
+    "<strong>Fuentes de entropía:</strong>",
+    "- Eventos del sistema operativo: recolección de eventos de hardware (pulsaciones de teclas, movimiento del mouse, sensores) e interrupciones del propio sistema ",
+    "- Generadores de números aleatorios basados en hardware que maximizan la imprevisibilidad de su salida ",
+    "- Interacciones físicas como lanzar dados, lanzar monedas, lámparas de lava, etc. ",
+    "",
+    "<strong>Cloudflare & las lámparas de lava:</strong> Para generar datos aleatorios y caóticos un ordenador debe disponer de una fuente de aleatoriedad del <em>mundo real</em> ",
+    "- Esto logra sortear el problema de los ordenadores, que están hechos para proporcionar resultados lógicos y predecibles a partir de una entrada ",
+    "- Cloudflare colocó alrededor de 100 lámparas de lava en San Francisco, a las cuales regularmente les toman fotos para alimentar el siguiente flujo: ",
+    "- Fuente física -> Imagen -> Representación compacta (hash) -> Cryptographically Secure Pseudorandom Number Generator (CSPRNG)",
+    "",
+    "- De esta manera se puede ofrecer un cifrado SSL/TLS extremadamente robusto y suficientemente aleatorio, teniendo en cuenta que millones de sitios lo usan ",
+    "- Oficialmente se llama <strong>LavaRand</strong> y Cloudflare también tiene otros sistemas en otras oficinas, como: ",
+    " - Un sistema de doble péndulo en Londres",
+    " - Móviles traslúcidos movidos por el viento en Texas ",
+    " - Máquinas de ondas en Lisboa"
   ]
 }
