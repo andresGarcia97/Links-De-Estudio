@@ -159,7 +159,7 @@
     "<strong>5NF:</strong> Esto garantiza que al unir las tablas no se puede obtener información adicional que no estuviera ",
     " - ya disponible en las tablas separadas, estos casos son menos probables debido a las formas normales aplicadas previamente "
   ],
-  "como-no-normalizar": [
+  "como-normalizar": [
     "- Normalizar generalmente es una buena practica, pero no siempre es la solución, hay casos donde es importante romper las reglas intencionalmente ",
     "<strong>Normalizar</strong> Si la consistencia es fundamental o los datos cambian con relativa frecuencia y deben ser visualizados inmediatamente ",
     "<strong>Desnormalizar</strong> Si necesita informes que involucran datos de multiples tablas, especialmente si se necesitan con mucha frecuencia ",

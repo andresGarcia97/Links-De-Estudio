@@ -42,7 +42,7 @@
     "<strong>Consistencia reads/write:</strong> Garantiza que las lecturas ó las escrituras no se veran datos desactualizados despues en su ejecución "
   ],
   "boyceCodd": [
-    "- El modelo relacional fue introducido en los años 60 por Edgar Frank Codd e IBM, e incremento su popularidad hasta ser el principal modelo actual ",
+    "- El modelo relacional fue introducido en los años 60 por Edgar Frank Codd en IBM, e incrementó su popularidad hasta ser el principal modelo actual ",
     "- En este modelo se definen los siguientes objetivos, para una adecuada normalización: ",
     "",
     "<strong>&bull; Independencia fisica:</strong> La forma de almacenar los datos, no debe influir en su manipulación ",
@@ -50,12 +50,13 @@
     "<strong>&bull; Flexibilidad:</strong>         La BD deberia ofrecer distintas vistas en funcion del usuario que la necesite ",
     "<strong>&bull; Sencillez:</strong>            La estructura lógica deberia estar normalizada, hasta la 3ra forma normal, o la 4ta forma normal Boyce-Codd",
     "",
-    "- Normalmente casi todas las tablas que estan en la 3FN no suelen infrigir la FNBC ",
-    "- No existe una regla definida para corregir de la 3ra a la 4ta forma normal ",
+    "- <strong>FNBC:</strong> Toda dependencia funcional no trivial debe tener como determinante una superclave ",
+    "- Normalmente casi todas las tablas que estan en la 3FN no suelen infringir la FNBC ",
+    "- No existe una regla definida para pasar de la 3ra a la 4ta forma normal ",
     "- En ciertos casos no es indicado hacerlo ya que la descomposición puede hacer perder la semantica de la relación ",
     "",
     " Se tiene la siguiente tabla en 3FN        La FNBC serian las siguientes tablas: ",
-    " <strong>CodPostal Direccion    Ciudad             CodPostal  Direccion       CodPostal  Ciudad </strong>",
+    " <strong>CodPostal Dirección    Ciudad             CodPostal  Dirección       CodPostal  Ciudad </strong>",
     " 3000      las flores   Merida             3000       las flores      3000       Merida "
   ],
   "newSql": [

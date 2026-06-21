@@ -1493,7 +1493,7 @@ export const PERSISTENCY_REF = new Map<string, Referencia>([
     [Keys.PERSISTENCY_NORMALIZATION, new Referencia('https://www.datacamp.com/es/tutorial/normalization-in-sql', 'Normalización', PERSISTENCY_KEY, 'Normalización', '', '2025/02/17')
         .addMoreReferences('https://docs.microsoft.com/en-us/office/troubleshoot/access/database-normalization-description')
     ],
-    [Keys.PERSISTENCY_NORMALIZATION_ERRORS, new Referencia('https://medium.com/@artemkhrenov/understanding-database-normalization-from-1nf-to-bcnf-3893fac16fc9', 'Como Normalizar', PERSISTENCY_KEY, 'Como Normalizar', '2025/12/08')
+    [Keys.PERSISTENCY_HOW_NORMALIZATION, new Referencia('https://medium.com/@artemkhrenov/understanding-database-normalization-from-1nf-to-bcnf-3893fac16fc9', 'Como Normalizar', PERSISTENCY_KEY, 'Como Normalizar', '2025/12/08')
         .addRelatedItems(Keys.PRINCIPIOS_STUPID, Keys.TESTING_ADVANCED_CHARGE)
     ],
     [Keys.PERSISTENCY_ACID, new Referencia('https://dosideas.com/noticias/base-de-datos/973-acid-en-las-bases-de-datos', 'Esquema ACID', PERSISTENCY_KEY, 'ACID', '', '2026/01/15')
@@ -1562,7 +1562,6 @@ export const PERSISTENCY_INTERMEDIATE_REF = new Map<string, Referencia>([
 export const PERSISTENCY_ADVANCED_KEY = 'DB Avanzado'
 export const PERSISTENCY_ADVANCED_REF = new Map<string, Referencia>([
     [Keys.PERSISTENCY_ADVANCED_NO_SQL, new Referencia('https://pandorafms.com/blog/es/bases-de-datos-nosql/', 'Bases de Datos NO SQL', PERSISTENCY_ADVANCED_KEY, 'NoSQL', '', '2025/06/27')],
-    //[Keys.PERSISTENCY_ADVANCED_NO_SQL_TYPES, new Referencia('https://www.acens.com/wp-content/images/2014/02/bbdd-nosql-wp-acens.pdf', 'Tipos de BD No SQL', PERSISTENCY_ADVANCED_KEY, 'Tipos NoSQL', '', '2025/06/27')],
     [Keys.PERSISTENCY_ADVANCED_NO_SQL_TYPES, new Referencia('https://www.instaclustr.com/education/nosql-database/nosql-databases-types-use-cases-and-8-databases-to-try/', 'Tipos de DB No SQL', PERSISTENCY_ADVANCED_KEY, 'Tipos NoSQL', '', '2025/08/23')
         .addRelatedItems(Keys.NUBE_CAP_TEOREMA)
         .addMoreReferences('https://www.mongodb.com/es/resources/basics/databases/nosql-explained', 'https://docs.aws.amazon.com/whitepapers/latest/choosing-an-aws-nosql-database/types-of-nosql-databases.html')
@@ -1571,7 +1570,9 @@ export const PERSISTENCY_ADVANCED_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.NUBE_CAP_TEOREMA)
         .addMoreReferences('https://medium.com/@gabanox/consistencia-eventual-en-s3-6ba5b2ecd721')
     ],
-    [Keys.PERSISTENCY_ADVANCED_BOYCE_CODD, new Referencia('https://normalizacionunit4.blogspot.com/2019/05/46-forma-normal-boyce-codd.html', 'Boyce-Codd', PERSISTENCY_ADVANCED_KEY, 'Boyce-Codd')],
+    [Keys.PERSISTENCY_ADVANCED_BOYCE_CODD, new Referencia('https://normalizacionunit4.blogspot.com/2019/05/46-forma-normal-boyce-codd.html', 'Boyce-Codd', PERSISTENCY_ADVANCED_KEY, 'Boyce-Codd', '', '2026/06/20')
+        .addRelatedItems(Keys.PERSISTENCY_NORMALIZATION, Keys.PERSISTENCY_HOW_NORMALIZATION)
+    ],
     [Keys.PERSISTENCY_ADVANCED_NEW_SQL, new Referencia('https://www.baeldung.com/sql/database-newsql-intro', 'NewSQL', PERSISTENCY_ADVANCED_KEY, 'NewSQL', '2025/06/26')
         .addRelatedItems(Keys.ANALISIS_DATA_OLAP_OLTP, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.HARDWARE_ESCALAMIENTO, Keys.NUBE_PACELC)
         .addMoreReferences('https://www.linkedin.com/pulse/bases-de-datos-sql-vs-nosql-newsql-jos%C3%A9-tello-villalobos/')
