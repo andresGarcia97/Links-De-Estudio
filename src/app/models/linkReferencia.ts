@@ -222,6 +222,10 @@ export const SYSTEM_DESIGN_REF = new Map<string, Referencia>([
     [Keys.SYSTEM_DESIGN_RESILIENCE, new Referencia('https://codefarm0.medium.com/resilience-patterns-in-distributed-systems-bc847ee2533c', 'Resiliencia en sistemas distribuidos', SYSTEM_DESIGN_KEY, 'Resiliencia ', '2026/03/22')
         .addRelatedItems(Keys.PATRONES_ADVANCED_RESILIENCIA, Keys.CD_CI_FAILOVER, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.APIS_RATE_LIMITING, Keys.PATRONES_ADVANCED_DISTRIBUTED_SYSTEMS, Keys.CD_CI_CELL_BASED_ARQUITECTURE)
         .addMoreReferences('https://medium.com/@mhd.umair/building-resilient-systems-designing-for-self-healing-in-application-development-564a40abb095')
+    ],
+    [Keys.SYSTEM_DESIGN_MOTOR_DE_REGLAS, new Referencia('https://martinfowler.com/bliki/RulesEngine.html', 'Motor de reglas', SYSTEM_DESIGN_KEY, 'Motor de reglas', '2026/06/22')
+        .addRelatedItems(Keys.CALIDAD_IF_ELSE, Keys.PATRONES_GOF, Keys.PARADIGMAS_IMPERATIVO)
+        .addMoreReferences('https://www.sydle.com/es/blog/motor-de-reglas-676052617f855b3bdcf7591e', 'https://refactoring.guru/es/design-patterns/chain-of-responsibility')
     ]
 ]);
 

@@ -623,5 +623,20 @@
     "&bull; <strong>Redundancia & Failover:</strong> Tener redundancia, ya sea activa-pasiva o activa-activa garantiza que el sistema pueda continuar ",
     "&bull; <strong>Monitoreo:</strong> La observabilidad permite detectar problemas antes de que escalen y actuar automáticamente según la necesidad ",
     "&bull; <strong>Recovery & Rollback:</strong> Cuando se produce un fallo, para recuperarse el sistema puede volver a un estado anterior que sea correcto y estable "
+  ],
+  "systemDesign-motor-de-reglas": [
+    "- Tomar decisiones rápidas en el ámbito de los negocios sobre acciones complejas que requieren evaluar múltiples criterios y aspectos ",
+    " - es una característica fundamental de estos motores que permite automatizar decisiones y reducir la intervención manual ",
+    "- Una característica inherente es que suelen ser muy flexibles permitiendo adaptar las reglas a necesidades o estándares específicos ",
+    "- Existen varias implementaciones, pero una de las más conocidas es el algoritmo <em>Rete</em>, usado en sistemas expertos para emparejar patrones ",
+    "",
+    "<strong>Cálculos:</strong> El sistema cruza los datos proporcionados por los usuarios o integrados desde otras plataformas ",
+    " - para realizar los cálculos necesarios en la toma de decisiones ",
+    "<strong>Reglas:</strong> Estas son previamente definidas y establecen cómo deben operar los procesos ",
+    " - generalmente cada una cuenta con una condición y una acción ",
+    "<strong>Encadenamiento:</strong> Es una propiedad importante ya que la acción de una regla modifica el estado del sistema de tal manera ",
+    " - que altera el valor de la condición para otras reglas, esto permite comportamientos complejos pero a su vez difíciles de comprender ",
+    "<strong>Orden:</strong> Una de las principales diferencias con el modelo imperativo habitual es que las reglas no están obligadas a tener un orden ",
+    " - pero debe existir una estrategia de resolución cuando varias reglas son aplicables simultáneamente "
   ]
 }
