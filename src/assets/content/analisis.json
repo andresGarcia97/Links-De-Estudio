@@ -536,5 +536,29 @@
     "- <a href=\"https://contenidoderepaso.web.app/arquitecturas?key=arquitecturaComoEscogerla\" target=\"_blank\">Escoger una arquitectura</a>, que atributos de calidad debe exhibir el sistema y como esta se alinea con las necesidades y requisitos ",
     "",
     "- Conoce la <a href=\"https://contenidoderepaso.web.app/nube?key=cloudNativeNube\" target=\"_blank\">Nube</a>, y conoce guias como los <a href=\"https://contenidoderepaso.web.app/nube?key=factores12\" target=\"_blank\">Doce factores</a>, además de herramientas y practicas de <a href=\"https://contenidoderepaso.web.app/ci-cd-infraestructura?key=CI-CD\" target=\"_blank\">CI/CD</a>"
+  ],
+  "asynchronus-workflow": [
+    "- Los sistemas distribuidos no siempre necesitan un broker de mensajería para un flujo de trabajo asíncrono ",
+    "- Usar tareas programadas o Postgres y Redis puede ser suficiente ",
+    "- Uno de los desafíos es cuando varios sistemas, con múltiples propósitos, empiezan a depender de la base de datos ",
+    " &bull; Analítica            &bull; Aprendizaje automático ",
+    " &bull; Detección de fraude  &bull; Reportes ",
+    " &bull; Auditoría            &bull; Transacciones ",
+    "",
+    "- La decisión arquitectónica suele ser la que resuelve el problema actual sin introducir demasiada complejidad a futuro ",
+    "- Todas las opciones tienen <em>tradeoffs</em> importantes a considerar, ninguna es mejor o peor que las otras, solo responden a necesidades diferentes ",
+    "",
+    "      &brvbar; Se necesita comunicación asíncrona &brvbar;                                                                                 ",
+    "            NO                     SI                                                         <strong>Necesidad</strong>                   ",
+    "   &brvbar; HTTP, REST, gRPC &brvbar; &brvbar; El volumen es suficiente &brvbar;                                                           ",
+    "                        &brvbar; para necesitar un broker &brvbar;                                                                         ",
+    "                         NO                        SI                                         <strong>Durabilidad</strong>                 ",
+    "                 &brvbar; Postgres/Redis &brvbar;   &brvbar; Se necesitan los mensajes &brvbar;                                            ",
+    "                 &brvbar;  Simple Queue  &brvbar;   &brvbar; después de ser procesados &brvbar;                                            ",
+    "                                        NO                             SI                     <strong>Patrones de los mensajes</strong>    ",
+    "                               &brvbar; Se está en AWS &brvbar;  &brvbar; Necesita mantener el histórico o       &brvbar;                  ",
+    "                               &brvbar;                &brvbar;  &brvbar; distribuir los mensajes entre sistemas &brvbar;                  ",
+    "                                  NO        SI                NO            SI                <strong>Plataforma</strong>                  ",
+    "                            &brvbar; RabbitMQ &brvbar;  &brvbar; SQS &brvbar;      &brvbar; RabbitMQ/SQS &brvbar;  &brvbar; Kafka &brvbar; "
   ]
 }
