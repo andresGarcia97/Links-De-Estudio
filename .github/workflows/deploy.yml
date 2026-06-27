@@ -20,7 +20,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
           cache: npm
 
       - name: Install dependencies
@@ -56,4 +56,34 @@ jobs:
         run: npm install -g firebase-tools@latest
 
       - name: Firebase Deploy
-        run: firebase deploy --token ${{ secrets.FIREBASE_TOKEN }} --non-interactive --debug
+        run: |
+          set +e
+          OUTPUT=$(firebase deploy --token "${{ secrets.FIREBASE_TOKEN }}" --non-interactive 2>&1)
+          CODE=$?
+          echo "$OUTPUT"
+          if [ $CODE -ne 0 ] && echo "$OUTPUT" | grep -q "is the current active version"; then
+            echo "El release ya se aplicó (error de confirmación duplicada por red inestable). Continuando."
+            exit 0
+          fi
+          exit $CODE
+
+      - name: Delete build artifact
+        if: always()
+        uses: geekyeggo/delete-artifact@v5
+        with:
+          name: dist
+
+  verify:
+    name: Verify deployment
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check site is up
+        run: |
+          STATUS=$(curl -s -o /dev/null -w "%{http_code}" https://contenidoderepaso.web.app/)
+          echo "HTTP status: $STATUS"
+          if [ "$STATUS" -ne 200 ]; then
+            echo "El sitio no respondió 200, devolvió $STATUS"
+            exit 1
+          fi
+          echo "Sitio verificado correctamente."
