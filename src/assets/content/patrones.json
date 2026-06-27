@@ -176,6 +176,19 @@
     "- Esto debido a la imposibilidad de cambiar sus atributos, pero existen escenarios donde esta caracteristica es requerida ",
     "- Cada enfoque se debe usar de acuerdo a las necesidades y como mejor se adecuen "
   ],
+  "dto-model-entity": [
+    "<strong>DTO (Data Transfer Object):</strong> Es una clase hecha para compartir datos, ya sea a través de la red (Json/Xml), o entre capas de la misma aplicación ",
+    "- Estos no tienen por qué ser copias directas de un modelo o de una entidad, pueden tener más o menos atributos según la necesidad ",
+    "",
+    "<strong>Modelo:</strong> Contiene las entidades y objetos de valor importantes para el negocio, segun la clasificación que se use ",
+    "- En ciertos contextos se puede usar el término de modelo para encapsular a la entidad y al DTO, pero generalmente son conceptualmente distintos ",
+    "",
+    "<strong>Entidad:</strong> Clase con identidad propia que persiste en el tiempo, y que puede mapearse a una tabla en base de datos según el contexto de persistencia ",
+    "- Exponer esta entidad más allá de la capa de persistencia es un antipatrón que genera acoplamiento y puede llegar a exponer información sensible ",
+    "",
+    "<strong>Value Object:</strong> Estos nacen de valores primitivos importantes, son inmutables y se comparan por valor, no por identidad ",
+    "- Algunos casos importantes suelen ser el dinero, peso, el correo electrónico, etc"
+  ],
   "patronCriteria": [
     "- Cuando se implementa el patron <strong>Repository</strong>, como puede ser en una arquitectura hexagonal ",
     "- Entre más consultas y funciones se vayan agregando es normal que el Repository sufra una explosión de metodos desmesurada ",

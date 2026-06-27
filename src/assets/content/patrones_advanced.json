@@ -39,7 +39,6 @@
     "            - Mantiene la separación entre las 2 capas                                                                                              ",
     "",
     "<strong>Data Transfer Object(DTO):</strong> Estrictamente hablando no es un patron para la persistencia de datos, pero si para su manipulación ",
-    " - Es un patron versatil multiproposito, como el movimiento fluido de datos entre diferentes capas ó sistemas ",
     " - Esto también representa la responsabilidad de mantener el correcto aislamiento entre capas y la coherencia dentro de la aplicación ",
     "<strong>CQRS:</strong> Es una estrategia arquitectonica, para mejorar el rendimiento y separar las acciones entre lectura y escritura",
     " - Esta separación puede conllevar problemas potenciales como la sincronización de los datos ó la complejidad adicional de esta separación "

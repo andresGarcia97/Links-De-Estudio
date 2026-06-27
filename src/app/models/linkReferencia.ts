@@ -819,7 +819,9 @@ export const META_ESTRUCTURAS_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.POO_INMUTABILITY, Keys.PARADIGMAS_FUNCIONAL, Keys.COMPILACION_STREAMS)
         .addMoreReferences('https://stackchief.com/tutorials/The%20Ultimate%20Guide%20to%20Lambda%20Expressions%20in%20Java')
     ],
-    [Keys.META_ESTRUCTURAS_VALUE_OBJECTS, new Referencia('https://medium.com/all-you-need-is-clean-code/value-objects-d4c24115fa69', 'Value Objects', META_ESTRUCTURAS_KEY, 'Value Objects', '2022/11/07')],
+    [Keys.META_ESTRUCTURAS_VALUE_OBJECTS, new Referencia('https://medium.com/all-you-need-is-clean-code/value-objects-d4c24115fa69', 'Value Objects', META_ESTRUCTURAS_KEY, 'Value Objects', '2022/11/07')
+        .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_DDD)
+    ],
     [Keys.META_ESTRUCTURAS_DYNAMIC_PROGAMING, new Referencia('https://www.spiceworks.com/tech/devops/articles/what-is-dynamic-programming/', 'Programacion Dinamica', META_ESTRUCTURAS_KEY, 'Programacion Dinamica', '2023/03/26')],
     [Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION, new Referencia('https://www.baeldung.com/cs/serialization-deserialization', 'Serialización y Deserialización', META_ESTRUCTURAS_KEY, 'Serializar & Deserializar I', '2023/05/31', '2026/03/29')
         .addRelatedItems(Keys.EJECUCION_REFLEXION, Keys.VERSIONAMIENTO_EVOLUTION_SCHEMA_AND_SCHEMA_REGISTRY)
@@ -1053,6 +1055,10 @@ export const PATRONES_REF = new Map<string, Referencia>([
     [Keys.PATRONES_ANTI_PATRONES_PM, new Referencia('https://sourcemaking.com/antipatterns', 'Antipatrones, Product Management', PATRONES_KEY, 'Anti Patrones, PM')],
     [Keys.PATRONES_ENRICHED_MODEL, new Referencia('https://memobackend.com.ar/2024-06-11-modelos-anemicos-enriquecidos/', 'Modelo Enriquecido', PATRONES_KEY, 'Modelo Enriquecido', '2024/12/15', '2026/04/12')
         .addRelatedItems(Keys.MALAS_PRACTICAS_ANEMIC_DOMAIN, Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.POO_INMUTABILITY, Keys.POO_POO, Keys.PRINCIPIOS_TELL_DONT_ASK)
+    ],
+    [Keys.PATRONES_DTO_MODEL_ENTITY, new Referencia('https://stackoverflow.com/questions/72025894/list-differences-dto-vo-entity-domain-model', 'DTO vs Model vs Entity', PATRONES_KEY, 'DTO vs Model vs Entity', '2026/06/27')
+        .addRelatedItems(Keys.META_ESTRUCTURAS_VALUE_OBJECTS, Keys.ANALISIS_MODEL_DOMAIN, Keys.PATRONES_ADVANCED_PERSISTENCE_PATTERNS)
+        .addMoreReferences('https://dev.to/aznaxdev/entity-vs-dto-vs-model-stop-using-these-terms-interchangeably-bej')
     ],
     [Keys.PATRONES_CRITERIA, new Referencia('https://medium.com/@zerodata.aolink/desafiando-la-complejidad-c%C3%B3mo-el-patr%C3%B3n-criteria-resuelve-la-explosi%C3%B3n-de-m%C3%A9todos-de-nuestro-60ece5829f89', 'Patron Criteria', PATRONES_KEY, 'Patron Criteria', '2025/03/22')
         .addRelatedItems(Keys.ARQUITECTURAS_IMPL_HEXAGONAL, Keys.PRINCIPIOS_SOLID)
