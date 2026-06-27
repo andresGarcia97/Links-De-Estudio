@@ -22,7 +22,7 @@
     "",
     "<strong>Consideraciones:</strong>",
     "- Diseñar microservicios, es una maratón, no un sprint, estos principios son pautas que deben ser adaptados segun cada necesidad ",
-    "- Aplicar estos principios ayuda a crear sistemas robustos, escalables y mantenibles, con el objetivo de brindar valor, y no solo crear codigo "
+    "- Aplicar estos principios ayuda a crear sistemas robustos, escalables y mantenibles, con el objetivo de brindar valor, y no solo crear código "
   ],
   "microservicesFundamentals": [
     "- Los monolitos y los microservicios son de las arquitecturas más usadas, debido a que son conceptualmente simples ",
@@ -45,7 +45,7 @@
     "<strong>- Escalabilidad:</strong> De acuerdo al libro <em>The Art of Scalability</em>, se puede expresar como un cubo donde:",
     "<strong>Eje X:</strong> Duplicación horizontal, Donde la carga se distribuye entre n instancias creadas ",
     " - Si n instancias son insuficientes, siempre se pueden crear más, teniendo en cuenta que el crecimiento no siempre es lineal ",
-    "<strong>Eje Z:</strong> Partición de datos: El codigo fuente es identico en cada copia, pero la base de datos esta segmentada ",
+    "<strong>Eje Z:</strong> Partición de datos: El código fuente es identico en cada copia, pero la base de datos esta segmentada ",
     " - Por lo tanto debe haber un componente capaz de enrutar las solicitudes, a quien tenga los datos indicados ",
     "<strong>Eje Y</strong> Descomposición funcional: La aplicación se divide en subsistemas más pequeños, que sean independientes entre si ",
     " - Asi se puede escalar solamente las partes que tengan una alta demanda, sin aumentar todo innecesariamente "
@@ -99,12 +99,15 @@
     "<strong>&bull; Migraciónes:</strong> Migrar de un monolito deberia hacerse solo si se justifica la sobrecarga y los costos, ya que estos bien diseñados suelen ser más estables "
   ],
   "microservicesArquitecture": [
-    "- Se pasa del concepto de un nucleo central y robusto a tener diferentes partes más pequeñas, ligeras y debidamente acotadas ",
-    "- Esto permite que sean autonomos y su desarrollo no afecte generalmente el codigo de otros servicios ó funcionalidades ",
-    "- Cada micro servicio esta diseñado de manera que pueda ser especializado, resolviendo problemas particulares con requisitos especificos ",
-    "- Las partes se intercomunican entre si y funcionan de manera separada, aumentando la tolerancia a fallos ",
-    "- Los servicios pueden ser independientes de las tecnologias, además de que tambien se pueden subdividir en caso de tener gran complejidad ",
-    "- Tambien se pueden escalar/desescalar de manera individual optimizando el uso de recursos "
+    "- Si bien no existe una definición precisa de este estilo arquitectónico, existen características comunes en cuanto a la organización y descentralización ",
+    "- Se pasa del concepto de un núcleo central y robusto a tener diferentes partes más pequeñas, ligeras y debidamente acotadas ",
+    "- Esto permite que sean autónomos y su desarrollo no afecte generalmente el código de otros servicios ó funcionalidades ",
+    "- Cada microservicio esta diseñado de manera que pueda ser especializado, resolviendo problemas particulares con requisitos especificos ",
+    "",
+    "- Las partes se intercomunican entre sí y funcionan de manera separada, aislando los servicios y por ende aumentando la tolerancia a fallos ",
+    "- Surgen nuevos problemas por la misma separacion intrínseca de los componentes, principalmente porque ahora se comunican a traves de la red (REST o Colas) ",
+    "- Los servicios pueden ser independientes de las tecnologías, además de que tambien se pueden subdividir en caso de tener gran complejidad ",
+    "- También se pueden escalar/desescalar de manera individual optimizando el uso de recursos "
   ],
   "microserviceBestPractices": [
     "- Los microservicios deben ser eficientes escalables y resilientes, para esto se deben tener lineamientos y seguir buenas practicas ",
@@ -143,7 +146,7 @@
     "<strong>Limites entre modulos:</strong>",
     "- Esta fuerte delimitación tambien se puede lograr en un monolito, pero aca se da de una manera más solida y es más dificil de eludir ",
     "- Especialmente util cuando el software crece, permitiendo que esta división facilite el mantenimiento y los cambios tengan un impacto menor ",
-    "- Esto tambien depende de la disciplina de los equipos, ya que se puede copiar y pegar el codigo en vez de implementar librerias en comun ",
+    "- Esto tambien depende de la disciplina de los equipos, ya que se puede copiar y pegar el código en vez de implementar librerias en comun ",
     "- Tambien aplican puntos como la <em>Ley de Conway</em> y que idealmente es mejor iniciar con monolitos y solo migrar despues de cierta maduración ",
     "",
     "<strong>Implementación Independiente:</strong>",
@@ -174,7 +177,7 @@
     "- El usar unidades pequeñas e independientes es una gran ventaja para el desarrollo, pero esto se puede convertir en una presión adicional ",
     " - ya que se multiplican la cantidad de acciones y funcionalidades que se deben observar y/o gestionar ",
     "- Tambien existe el riesgo de no eliminar la complejidad, simplemente se traslada a la intercomunicación entre servicios ",
-    "- EL panorama general es más dificil de dislumbrar, la base de codigo esta repartida en multiples partes igual que las responsabilidades "
+    "- EL panorama general es más dificil de dislumbrar, la base de código esta repartida en multiples partes igual que las responsabilidades "
   ],
   "microservicesPatterns": [
     "<strong>Patron Saga:</strong> Proporciona una gestión eficaz de la transacción, usando una secuencia de transacciones locales ",
