@@ -1120,13 +1120,14 @@ export const PATRONES_ADVANCED_REF = new Map<string, Referencia>([
 
 export const PEOPLE_KEY = 'Personas';
 export const PEOPLE_REF = new Map<string, Referencia>([
-    //[Keys.PEOPLE_PEOPLE_AND_PROCESS, new Referencia('https://www.heflo.com/es/blog/bpm/personas-procesos-tecnologia/', 'Personas-Procesos-Tecnologias', PEOPLE_KEY, 'Personas y procesos', '', '2025/01/08')],
-    [Keys.PEOPLE_PEOPLE_PROCESS_TECNOLOGY, new Referencia('https://blog.invgate.com/es/procesos-personas-y-tecnologia', 'Personas-Procesos-Tecnologia', PEOPLE_KEY, 'Personas y Procesos', '2025/01/08', '2025/06/01')],
+    [Keys.PEOPLE_PEOPLE_PROCESS_TECNOLOGY, new Referencia('https://blog.invgate.com/es/procesos-personas-y-tecnologia', 'Personas-Procesos-Tecnologia', PEOPLE_KEY, 'Personas y Procesos', '2025/01/08', '2025/06/01')
+        .addMoreReferences('https://www.heflo.com/es/blog/personas-procesos-tecnologia')
+    ],
     [Keys.PEOPLE_SERVICE_MANAGEMENT, new Referencia('https://www.ambit-bst.com/blog/itsm.-todo-lo-que-debes-saber-sobre-la-gesti%C3%B3n-de-servicios-it', 'Gestión de servicios tecnologicos', PEOPLE_KEY, 'Gestión de servicios')],
     [Keys.PEOPLE_ASSET_MANAGEMENT, new Referencia('https://freshservice.com/latam/it-asset-management-software/', 'Gestión de activos', PEOPLE_KEY, 'Gestión de activos')],
     [Keys.PEOPLE_CUSTOMER_LOYALTY, new Referencia('https://elviajedelcliente.com/fidelizacion-de-clientes/', 'Fidelización de los clientes', PEOPLE_KEY, 'Fidelizacion')],
     [Keys.PEOPLE_DIKW, new Referencia('https://programmerclick.com/article/46021807934/', 'Datos-Información-Conocimiento-Sabiduría', PEOPLE_KEY, 'Modelo DIKW')],
-    [Keys.PEOPLE_GESTION_EXPECTATIVAS, new Referencia('https://brainsandbeards.com/blog/expectation-management', 'Gestion de expectativas', PEOPLE_KEY, 'Gestion de expectativas')],
+    [Keys.PEOPLE_GESTION_EXPECTATIVAS, new Referencia('https://brainsandbeards.com/blog/expectation-management', 'Gestion de expectativas', PEOPLE_KEY, 'Gestion de expectativas', '', '2026/06/27')],
     [Keys.PEOPLE_CAPA_8, new Referencia('https://www.merca20.com/que-es-un-error-de-capa-8-y-como-evitas-que-arruine-tu-marketing/', 'Capa 8', PEOPLE_KEY, 'Error en capa 8', '', '2025/04/23')
         .addRelatedItems(Keys.HARDWARE_MODEL_OSI)
     ],
