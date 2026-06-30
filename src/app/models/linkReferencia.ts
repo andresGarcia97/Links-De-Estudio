@@ -1050,7 +1050,10 @@ export const PATRONES_REF = new Map<string, Referencia>([
     [Keys.PATRONES_DESGLOSE_GOF, new Referencia('https://refactoring.guru/es/design-patterns/catalog', 'Definiciones de los GoF', PATRONES_KEY, 'Desglose GOF', '', '2026/05/03')],
     [Keys.PATRONES_GRASP, new Referencia('https://www.adictosaltrabajo.com/2003/12/22/grasp/', 'Asignación de responsabilidades', PATRONES_KEY, 'GRASP')],
     [Keys.PATRONES_DESGLOSE_GRASP, new Referencia('https://www.codescouts.academy/blog/grasp/', 'Patrones GRASP', PATRONES_KEY, 'Desglose Grasp', '', '2024/12/15')],
-    [Keys.PATRONES_ANTI_PATTERNS, new Referencia('https://sg.com.mx/revista/11/anti-patrones-la-mejor-forma-hacer-un-pesimo-sistema-software', 'Antipatrones, Desarrollo', PATRONES_KEY, 'Anti Patrones, Desarrollo')],
+    [Keys.PATRONES_ANTI_PATTERNS, new Referencia('https://sg.com.mx/revista/11/anti-patrones-la-mejor-forma-hacer-un-pesimo-sistema-software', 'Antipatrones, Desarrollo', PATRONES_KEY, 'Anti Patrones, Desarrollo', '', '2026/06/28')
+        .addRelatedItems(Keys.MALAS_PRACTICAS_OVER_ENGINEERING, Keys.CONOCIMIENTOS_EMPIRICOS_CODE_MAINTAINER)
+        .addMoreReferences('https://medium.com/skillstuff/9-coding-habits-i-learned-from-senior-engineers-eaff0937e100')
+    ],
     [Keys.PATRONES_TYPES, new Referencia('https://www.javiergarzas.com/2014/08/tipos-patrones-software.html', 'Tipos de patrones', PATRONES_KEY, 'Tipos de Patrones')],
     [Keys.PATRONES_ANTI_PATRONES_PM, new Referencia('https://sourcemaking.com/antipatterns', 'Antipatrones, Product Management', PATRONES_KEY, 'Anti Patrones, PM')],
     [Keys.PATRONES_ENRICHED_MODEL, new Referencia('https://memobackend.com.ar/2024-06-11-modelos-anemicos-enriquecidos/', 'Modelo Enriquecido', PATRONES_KEY, 'Modelo Enriquecido', '2024/12/15', '2026/04/12')
@@ -1065,6 +1068,10 @@ export const PATRONES_REF = new Map<string, Referencia>([
     ],
     [Keys.PATRONES_STATE, new Referencia('https://maxim-gorin.medium.com/stop-writing-if-else-trees-use-the-state-pattern-instead-1fe9ff39a39c', 'Patron State', PATRONES_KEY, 'Patron State', '2025/04/20')
         .addRelatedItems(Keys.CALIDAD_IF_ELSE, Keys.POO_POLIMORFISMO, Keys.PRINCIPIOS_SOLID, Keys.POO_ENUMS, Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS)
+    ],
+    [Keys.PATRONES_CHAIN_OF_RESPONSABILITY, new Referencia('https://refactoring.guru/design-patterns/chain-of-responsibility', 'Cadena de responsabilidad', PATRONES_KEY, 'Cadena', '2026/06/28')
+        .addRelatedItems(Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS)
+        .addMoreReferences('https://medium.com/javarevisited/what-is-the-chain-of-responsibility-design-pattern-and-how-to-use-it-3987cc35218f')
     ],
     [Keys.PATRONES_ANTI_PATRONES_CONCURRENCY, new Referencia('https://medium.com/@gaddamnaveen192/java-concurrency-anti-patterns-that-break-interviews-2090ec3ca2e4', 'Anti Patrones, concurrencia', PATRONES_KEY, 'Concurrencia', '2026/04/12')
         .addRelatedItems(Keys.EJECUCION_CONCURRENCY_AND_PARALLELISM, Keys.EJECUCION_DEAD_LOCKS, Keys.FRAMEWORKS_SPRING_ANNOTATIONS, Keys.SYSTEM_DESIGN_CONTENTION)

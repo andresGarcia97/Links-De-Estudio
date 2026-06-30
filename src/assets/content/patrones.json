@@ -20,8 +20,8 @@
     "<strong>Comportamiento:</strong> Definen la comunicación entre objetos, y la independencia de esta de los objetos "
   ],
   "patrones-decision-tree": [
-    "- Escoger un patron no debe ser una decisión dificil, pero escoger el incorrecto para el problema que se tiene, si conlleva a más problemas de los que habian ",
-    "- El arbol para escoger que patron usar va directamente relacionada con los tipos principales de los Gof",
+    "- Escoger un patrón no debe ser una decisión dificil, pero escoger el incorrecto para el problema que se tiene, si conlleva a más problemas de los que habian ",
+    "- El arbol para escoger que patrón usar va directamente relacionada con los tipos principales de los Gof",
     "",
     "&bull; El dolor radica en la creación de objetos ? <strong>Creacionales</strong>",
     "- Demasiados parametros, configuraciones repetidas, valores predeterminados poco claros, diferentes combinaciones dispersas por todo el código ",
@@ -91,17 +91,24 @@
     " - Un objeto creado en su propio ambito (los demás se dan por incluidos)"
   ],
   "antipatrones-desarrollo": [
-    "- Son malas soluciones a problemas comunes que parecen buena idea, y nacen del afan de implementar patrones o de  mezclarlos de manera icorrecta ",
+    "- Son malas soluciones a problemas comunes que parecen buena idea, y nacen del afán de implementar patrones o de mezclarlos de manera incorrecta ",
     "",
-    "<strong>- Golden Hammer:</strong> Pretende que todo se solucione de la misma manera o con el mismo lenguaje",
-    "<strong>- Lava Flow:</strong> Es la codificación de manera continua, sin un orden alguno, y lleno de redundancias",
-    "<strong>- Spaghetti Code:</strong> Aparece cuando se suelen mezclar muchos lenguajes, aumentando la complejidad de la solución ",
-    "<strong>- God Class:</strong> Sucede cuando todo se soluciona en un solo archivo metodo o clase",
-    "<strong>- Poltergeist:</strong> Es la existencia de elementos injustificadamente",
+    "&bull; Relacionados con el código",
+    "<strong>- Golden Hammer:</strong> Pretende que todo se solucione de la misma manera, con el mismo lenguaje, framework o patrón ",
+    "<strong>- Lava Flow:</strong> Es la codificación de manera continua, sin un orden alguno, lleno de redundancias y código sin limpiar ",
+    "<strong>- Spaghetti Code:</strong> Aparece cuando el flujo de control está enredado, sin estructura modular ni cohesión y el sistema crece peor que en el lava flow ",
+    "<strong>- God Class:</strong> Sucede cuando todo se soluciona en un solo archivo, método o clase",
+    "<strong>- Poltergeist:</strong> Es la existencia de elementos injustificadamente, que solo dispersan el código en demasiados lugares ",
     "",
-    "también se pueden aplicar para temas de arquitectura",
+    "&bull; Relacionados con el diseño",
+    "<strong>- Código <em>inteligente</em>:</strong> Crear soluciones complejas a problemas simples, generalmente necesitan ser mantenidas y explicadas más de lo necesario ",
+    "<strong>- Omitir el manejo de errores:</strong> Deberían ser parte del diseño del sistema, ya que por mínimo que sea, pueden afectar la experiencia del usuario ",
+    "<strong>- Ignorar los riesgos:</strong> Todo sistema tiene puntos de falla especificos, estos riesgos como mínimo deben ser identificados y mitigados o en su defecto aceptados ",
+    "",
+    "&bull; Relacionados con la arquitectura",
     "<strong>- Reinventar la rueda:</strong> Es la implementación de soluciones que ya existen de antemano",
-    "<strong>- Casarse con el diablo:</strong> Es la dependencia total de algun elemento sin contingencia alguna "
+    "<strong>- Casarse con el diablo:</strong> Es la dependencia total de algún elemento sin contingencia alguna ",
+    "<strong>- Violación de capas:</strong> Sucede cuando un componente empieza a tener responsabilidades que no le corresponden, como logica de negocio en el front/db "
   ],
   "tiposDePatrones": [
     "- Existen diferentes clasificaciones para los patrones de acuerdo a su nivel de abstracción, según la clasificación de Frank Buschmann serian: ",
@@ -190,7 +197,7 @@
     "- Algunos casos importantes suelen ser el dinero, peso, el correo electrónico, etc"
   ],
   "patronCriteria": [
-    "- Cuando se implementa el patron <strong>Repository</strong>, como puede ser en una arquitectura hexagonal ",
+    "- Cuando se implementa el patrón <strong>Repository</strong>, como puede ser en una arquitectura hexagonal ",
     "- Entre más consultas y funciones se vayan agregando es normal que el Repository sufra una explosión de metodos desmesurada ",
     " - que suele surgir en el intento de NO romper el principio de Open/Close, parte de <strong>SOLID</strong>, volviendose necesario usar Criteria ",
     "- Lo que busca es poder consultar de manera modular y reutilizable con criterios de busqueda flexibles ",
@@ -200,19 +207,40 @@
     " - a un Query listo para ser ejecutado y totalmente compatible con el Motor de BD a usar "
   ],
   "patronState": [
-    "- Este patron de comportamiento permite que un objeto cambie su comportamiento cuando cambie su estado, sin tener que recurrir a una saturación de if/else ",
+    "- Este patrón de comportamiento permite que un objeto cambie su comportamiento cuando cambie su estado, sin tener que recurrir a una saturación de if/else ",
     "- Un buen ejemplo son las notificaciones de nuestro celular, estas cambian de acuerdo al modo que se escoja <em>Normal/Silencio/Vibración</em> ",
     "- Entre más condiciones y estados existan, si solo se usaran <strong>if</strong> el mantenimiento creceria y seria más propenso a errores ",
-    "- Con este patron se recurre al polimorfismo para que las instancias y sus comportamientos cambien de acuerdo al modo seleccionado ",
+    "- Con este patrón se recurre al polimorfismo para que las instancias y sus comportamientos cambien de acuerdo al modo seleccionado ",
     "- Esto evita la complejidad condicional y tener que modificar multiples clases con cada adición, siguiendo los principios Open/Close y Single Responsibility ",
     "- <em>Las operaciones tienen sentencias condicionales extensas y multiparte que dependen del estado del objeto… </em>",
     " - <em>El patrón State ubica cada rama de la condición en una clase independiente, tratando el estado como un objeto por derecho propio</em>",
     "",
     "<strong>Cuando No usarlo:</strong>",
-    "- Si el objeto tiene pocos estados y diferencias de comportamientos muy simples, implementar este patron es excesivo y dificulta la legibilidad ",
+    "- Si el objeto tiene pocos estados y diferencias de comportamientos muy simples, implementar este patrón es excesivo y dificulta la legibilidad ",
     "- Si los cambios son poco frecuentes y el rendimiento es importante, la sobrecarga de clases no es rentable ",
-    "- Si existe un numero definido de estados y no van a crecer, este patron realmente destaca en escenarios complejos y que cambian con el tiempo ",
+    "- Si existe un numero definido de estados y no van a crecer, este patrón realmente destaca en escenarios complejos y que cambian con el tiempo ",
     "- Un enfoque inicial puede darse perfectamente con if o enumeraciones y evolucionar en la medida en que el mantenimiento se dificulte "
+  ],
+  "chain-of-responsability": [
+    "- Es un patrón comportamental que permite pasar solicitudes a lo largo de una cadena de manejadores, los cuales tienen 2 opciones ",
+    "&bull; Procesar y continuar la cadena",
+    "&bull; Procesar y terminar la cadena ",
+    "",
+    "- Este patrón se basa en transformar comportamientos particulares en objetos autónomos, designados como <em>handlers</em> ",
+    "&bull; Cada handler cuenta con un único método que realiza las comprobaciones ",
+    "&bull; También tienen un campo para encadenar el siguiente paso de la cadena ",
+    "&bull; Un cliente, que es aquel que suele empezar la cadena y la construye a la medida ",
+    "&bull; Suele tener un handler por defecto, para mitigar el riesgo de una cadena rota (<em>broken chain</em>) ",
+    "",
+    "<strong>Aplicaciones:</strong>",
+    "- Se deben procesar múltiples tipos de solicitudes, de múltiples maneras, pero los tipos exactos y secuencias no necesariamente se conozcan de antemano ",
+    "- El orden del procesamiento debe ser específico o al contrario, este deba cambiar de manera dinámica durante la ejecución ",
+    "- Las transiciones y validaciones son más complejas y numerosas como para que una máquina de estados se vuelva compleja y pierda mantenibilidad ",
+    "",
+    "<strong>Pros & Contras</strong>",
+    "<ins>&#x2713;</ins> Responsabilidad única, cada manejador realiza una sola tarea                    <del>&#x2717;</del> Hay cadenas que pueden quedarse sin procesar",
+    "<ins>&#x2713;</ins> Cumple Open/Close, al agregar nuevos handlers sin modificar los existentes      <del>&#x2717;</del> Cadenas muy largas afectan la depuración",
+    "<ins>&#x2713;</ins> Código desacoplado y suficientemente abstraído para aquel que empieza la cadena <del>&#x2717;</del> Sin un registro detallado, se pierde trazabilidad "
   ],
   "antipatrones-concurrencia": [
     "- Ejecutar una aplicación multihilo no solo significa que puede ejecutar más cosas al mismo tiempo, tambien significa que puede tener nuevos tipos de errores ",

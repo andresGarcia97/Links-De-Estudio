@@ -198,6 +198,7 @@ export const PATRONES_ENRICHED_MODEL = 'enrichedModel';
 export const PATRONES_DTO_MODEL_ENTITY = 'dto-model-entity';
 export const PATRONES_CRITERIA = 'patronCriteria';
 export const PATRONES_STATE = 'patronState';
+export const PATRONES_CHAIN_OF_RESPONSABILITY = 'chain-of-responsability';
 export const PATRONES_ANTI_PATRONES_CONCURRENCY = 'antipatrones-concurrencia';
 export const PATRONES_ADVANCED_PERSISTENCE_PATTERNS = 'persistencePatterns';
 export const PATRONES_ADVANCED_SAGA = 'patronSaga';

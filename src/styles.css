@@ -14,6 +14,7 @@
   --color-cultured: #eeeeee;
   --color-crimson: #dd0031;
   --color-fulvous: #E8871E;
+  --color-deep-green: #2e7d32;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 14px;
   box-sizing: border-box;
@@ -470,6 +471,16 @@ a:hover {
 
 .terminal pre a {
   color: var(--color-orange-yellow-crayola);
+}
+
+.terminal pre ins {
+  color: var(--color-deep-green);
+  text-decoration: none;
+}
+
+.terminal pre del {
+  color: var(--color-crimson);
+  text-decoration: none;
 }
 
 h1::selection,
