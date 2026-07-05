@@ -639,8 +639,8 @@ export const ESTRATEGIAS_DESARROLLO_REF = new Map<string, Referencia>([
 
 export const FRAMEWORKS_KEY = 'Frameworks';
 export const FRAMEWORKS_REF = new Map<string, Referencia>([
-    [Keys.FRAMEWORKS_FRAMEWORKS, new Referencia('https://neoattack.com/neowiki/framework/', '¿ Que es un framework ?', FRAMEWORKS_KEY, '¿ Que es un framework ?')],
-    [Keys.FRAMEWORKS_CASE, new Referencia('https://www.tutorialspoint.com/es/software_engineering/case_tools_overview.htm', 'Herramientas CASE', FRAMEWORKS_KEY, 'Herramientas CASE', '', '2025/08/02')
+    [Keys.FRAMEWORKS_FRAMEWORKS, new Referencia('https://aws.amazon.com/es/what-is/framework/', '¿ Que es un framework ?', FRAMEWORKS_KEY, '¿ Que es un framework ?', '', '2026/07/04')],
+    [Keys.FRAMEWORKS_CASE, new Referencia('https://www.geeksforgeeks.org/software-engineering/software-engineering-case-tool-and-its-scope/', 'Herramientas CASE', FRAMEWORKS_KEY, 'Herramientas CASE', '2025/08/02', '2026/07/04')
         .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_SLDC)
     ],
     [Keys.FRAMEWORKS_IOC, new Referencia('https://medium.com/all-you-need-is-clean-code/inversi%C3%B3n-de-control-principio-de-hollywood-dont-call-us-we-ll-call-you-179e9c70e3d0', 'Inversión de Control', FRAMEWORKS_KEY, 'Inversión de Control')

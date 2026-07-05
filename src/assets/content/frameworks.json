@@ -2,18 +2,19 @@
   "frameworks": [
     "- Son marcos de trabajo con la finalidad de acelerar y aumentar la calidad del código desarrollado ",
     "- Evitan perder tiempo desarrollando funciones que el propio entorno ya tiene ",
-    "- Aumentan la productividad y la reutilización de código ",
+    "- Aumentan la productividad y la reutilización de código mediante el uso de componentes basados en estandares y protocolos ",
     "- Existen infinidad de frameworks tanto para back como front, desarrollo movil, persistencia y analisis de datos, etc... "
   ],
   "case": [
-    "- Ingeniería Asistida por Computador, es el desarrollo y mantenimiento de proyectos de software por medio de herramientas de software ",
+    "- Ingeniería de Software Asistida por Computadora: uso de herramientas para el desarrollo y mantenimiento de proyectos de software  ",
     "- Existen herramientas para cada etapa de desarrollo, ahorrando recursos además de otros beneficios como consistencia y unificación ",
     "",
-    "<strong>Documentación:    </strong> Crea documentos de cualquiera de las etapas del proyecto y para diferentes tipos de personas(DrExplain)",
+    "<strong>Documentación:    </strong> Crea documentos de cualquiera de las etapas del proyecto y para diferentes roles del equipo(DrExplain)",
     "<strong>Configuración:    </strong> Son utiles para el control de versiones y la evolución del software(Git & Mercurial)",
-    "<strong>Diseño:           </strong> Creación de la estructura del programa y de su desglose para detallarlos y refinarlos(Star UML) ",
-    "<strong>Analisis:         </strong> Ayuda a cumplir con los requisitos al analizar los diagramas por posibles falencias, omisiones ó redundancias(casecomplete) ",
-    "<strong>Implementación:   </strong> Programas como los IDEs(Intellij) y herramientas para hacer prototipos(Mockup Builder) y generación de código base(Jhispter) ",
+    "<strong>Diseño:           </strong> Creación de la estructura del programa y de su desglose para detallarlo y refinarlo(Star UML) ",
+    "<strong>Analisis:         </strong> Ayuda a cumplir con los requisitos al analizar los diagramas por posibles falencias, omisiones ó redundancias(caseComplete) ",
+    "<strong>Implementación:   </strong> Programas como los IDEs(IntelliJ) y herramientas para hacer prototipos(Mockup Builder) y generación de código base(JHipster) ",
+    "<strong>Codificación & IA:</strong> Escritura del código de manera autonoma/asistida mediante modelos LLM (Codex y Claude Code) ",
     "<strong>Calidad & Pruebas:</strong> Usadas para realizar pruebas de software(Jmeter) y aumentar la calidad(Sonar)",
     "<strong>Mantenimiento:    </strong> Sirven para documentar errores y seguimiento de defectos(HP Quality Center) "
   ],
