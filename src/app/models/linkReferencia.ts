@@ -73,9 +73,13 @@ export class LinkReferencia {
 
 export const AGILES_KEY = 'Agiles';
 export const AGILES_REF = new Map<string, Referencia>([
-    [Keys.AGILES_MOSCOW, new Referencia('https://www.itdo.com/blog/moscow-que-es-y-como-priorizar-en-el-desarrollo-de-tu-aplicacion/', 'MOSCOW', AGILES_KEY, 'MOSCOW', '', '2024/05/01')],
-    //['scoring', new Referencia('https://comunidad.iebschool.com/metodologiasparaelcambio/2014/03/23/priorizando-historias-de-usuario/', 'Theme Scoring', AGILES_KEY, 'Theme Scoring')],
-    [Keys.AGILES_SCORING, new Referencia('https://www.growingscrummasters.com/keywords/theme-scoring/', 'Theme Scoring', AGILES_KEY, 'Theme Scoring', '', '2025/09/04')],
+    [Keys.AGILES_MOSCOW_RICE, new Referencia('https://www.itdo.com/blog/moscow-que-es-y-como-priorizar-en-el-desarrollo-de-tu-aplicacion/', 'MOSCOW & RICE', AGILES_KEY, 'MOSCOW & RICE', '2024/05/01', '2026/07/05')
+        .addRelatedItems(Keys.ANALISIS_DATA_MVP)
+        .addMoreReferences('https://www.linkedin.com/posts/jsalvadorb-project-manager_todo-es-prioridad-es-una-de-las-frases-share-7478133988042174465-jMQd/')
+    ],
+    [Keys.AGILES_SCORING, new Referencia('https://www.growingscrummasters.com/keywords/theme-scoring/', 'Theme Scoring', AGILES_KEY, 'Theme Scoring', '', '2025/09/04')
+        .addMoreReferences('https://comunidad.iebschool.com/metodologiasparaelcambio/2014/03/23/priorizando-historias-de-usuario/')
+    ],
     [Keys.AGILES_MUDA, new Referencia('https://prevencontrol.com/prevenblog/las-7-mudas', 'Desperdicio', AGILES_KEY, 'MUDA', '', '2026/04/20')
         .addRelatedItems(Keys.PEOPLE_PEOPLE_PROCESS_TECNOLOGY)
     ],
@@ -1382,7 +1386,7 @@ export const REQUISITOS_REF = new Map<string, Referencia>([
     [Keys.REQUISITOS_NO_FUNCIONALES, new Referencia('https://medium.com/@requeridosblog/requerimientos-funcionales-y-no-funcionales-ejemplos-y-tips-aa31cb59b22a', 'Requisitos No funcionales', REQUISITOS_KEY, 'NO Funcionales')],
     //['negocio', new Referencia('https://requeridos.com/que-es-el-valor-de-negocio-y-como-medirlo/', 'El valor del negocio', REQUISITOS_KEY, 'EL Negocio')],
     [Keys.REQUISITOS_BUSINESS_VALUE, new Referencia('https://www.elproximopaso.net/2012/03/8-otra-maneras-de-definir-el-valor-de.html', 'El valor del negocio', REQUISITOS_KEY, 'El Negocio', '', '2024/09/27')
-        .addRelatedItems(Keys.AGILES_MOSCOW)
+        .addRelatedItems(Keys.AGILES_MOSCOW_RICE)
     ],
     //['ambiguedad', new Referencia('https://requeridos.com/requerimientos-menos-es-mas/', 'Evitar la ambiguedad', REQUISITOS_KEY, 'Evitar la ambiguedad')],
     [Keys.REQUISITOS_AMBIGUITY, new Referencia('https://www.blmovil.com/la-importancia-de-una-buena-captura-de-requisitos-en-el-desarrollo-de-software/', 'Evitar la ambiguedad', REQUISITOS_KEY, 'Evitar la ambiguedad', '2024/09/27')],
