@@ -658,6 +658,10 @@ export const FRAMEWORKS_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.META_CARACTERISTICAS_ANOTATIONS, Keys.PATRONES_DESGLOSE_GOF, Keys.PERSISTENCY_CRUD, Keys.ARQUITECTURAS_IMPL_MVC, Keys.APIS_REST_FULL, Keys.PATRONES_ADVANCED_PERSISTENCE_PATTERNS, Keys.META_ESTRUCTURAS_LAYERS_SOFTWARE, Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION)
         .addMoreReferences('https://www.geeksforgeeks.org/springboot/spring-boot-annotations/', 'https://www.baeldung.com/spring-qualifier-annotation')
     ],
+    [Keys.FRAMEWORKS_SPRING_JPA_RELATIONS, new Referencia('https://medium.com/@gaddamnaveen192/i-reviewed-100-spring-boot-projects-these-7-jpa-patterns-appeared-everywhere-5d4fc67db258', 'JPA Relations', FRAMEWORKS_KEY, 'JPA Relations', '2026/06/29')
+        .addRelatedItems(Keys.PERSISTENCY_HOW_NORMALIZATION, Keys.PERSISTENCY_INTERMEDIATE_ORM, Keys.PERSISTENCY_INTERMEDIATE_DATA_MODELING, Keys.PERSISTENCY_INTERMEDIATE_N_1_SELECTS)
+        .addMoreReferences('https://medium.com/@chikim79/ultimate-best-practices-guide-for-jpa-hibernate-relationship-mappings-cb4c02917e0e', 'https://vladmihalcea.com/14-high-performance-java-persistence-tips/')
+    ],
     [Keys.FRAMEWORKS_CODE_STRUCTURE, new Referencia('https://medium.com/@akintopbas96/spring-boot-code-structure-package-by-layer-vs-package-by-feature-5331a0c911fe', 'Paquetes por capas Vs funcionalidad', FRAMEWORKS_KEY, 'Estructura, Vertical Slice', '2024/05/18', '2025/07/13')
         .addRelatedItems(Keys.META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL, Keys.POO_POO, Keys.ARQUITECTURAS_IMPL_CAPAS, Keys.ESTRATEGIAS_DESARROLLO_SCREAMING_DESIGN, Keys.ARQUITECTURAS_IMPL_MONOLITOS, Keys.MICROSERVICES_ARQUITECTURAS)
         .addMoreReferences('https://antondevtips.com/blog/vertical-slice-architecture-the-best-ways-to-structure-your-project', 'https://medium.com/mr-plan-publication/vertical-slice-architecture-software-architecture-part-5-102db9331d16')

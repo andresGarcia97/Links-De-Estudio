@@ -24,6 +24,7 @@ export const FRAMEWORKS_IOD = 'iod';
 export const FRAMEWORKS_SCAFFOLDING = 'scaffolding';
 export const FRAMEWORKS_IOD_SPRING = 'iodSpring';
 export const FRAMEWORKS_SPRING_ANNOTATIONS = 'spring-annotations';
+export const FRAMEWORKS_SPRING_JPA_RELATIONS = 'spring-jpa-relations';
 export const FRAMEWORKS_CODE_STRUCTURE = 'codeStructucture';
 export const FRAMEWORKS_TRANSACTIONAL_I = 'transactional-I';
 export const FRAMEWORKS_TRANSACTIONAL_II = 'transactional-II';

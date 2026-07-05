@@ -236,7 +236,7 @@
     "- Las migraciones en linea y sin tiempos de inactividad son complejas pero posibles, incluso si se cambia de motor de BD ",
     " - Defina su nuevo esquema y comience a realizar escrituras duales ",
     " - Habilite la lectura de datos de manera que pueda consultar ambas ",
-    " - Despues de que la nueva BD permita lecturas/escrituras y contenga la mayoria de registros, deje de escrbir en la BD anterior ",
+    " - Despues de que la nueva BD permita lecturas/escrituras y contenga la mayoria de registros, deje de escribir en la BD anterior ",
     " - La BD anterior solo deberia quedar para lecturas, y los datos faltantes se migran hasta reducir el uso a <strong>0</strong> ",
     "",
     "- El crecimiento significativo de los datos genera imprevisibilidad, incluso si se tiene conocimiento del funcionamiento interno "
