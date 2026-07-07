@@ -278,6 +278,17 @@
     " - patrones arquitectonicos como <strong>Capas</strong> que surgen debido a la necesidad de reducir o controlar este acoplamiento",
     " - y tener un mejor entendimiento de la estructura, los componentes y las relaciones que conforman sistema"
   ],
+  "circularDependencies": [
+    "- Las dependencias circulares ocurren cuando 2 o más componentes dependen unos de otros, creando un bucle difícil de romper debido a su necesidad mutua ",
+    "- Esto puede causar diversos problemas de mantenibilidad, compilación y entendimiento, entre otros ",
+    "- Aunque este nivel de dependencia es posible a nivel de servicios, es improbable debido al diseño cuidadoso que requiere el nivel de arquitectura ",
+    "- Es más común verlos a nivel de módulos y clases ",
+    "",
+    "- Para evitar esto se usa el <strong>Principio de Inversión de Dependencias</strong>, donde las dependencias deben referirse a abstracciones y no implementaciones concretas ",
+    "- Esto es importante si las implementaciones son propensas a cambiar, pero los comportamientos que representan no ",
+    "- Las dependencias circulares suelen ser el resultado de un mal diseño, que tiene un fuerte acoplamiento e igual de mala abstracción ",
+    "- Si este cambio no es viable, existen alternativas como la inyección mediante getters/setters o dependencias anotadas con <strong>@Lazy</strong> en caso de Spring Framework "
+  ],
   "goodAndBadPracticesRefactoring": [
     "- Refactorizar el codigo, es una de las actividades más comunes para mantener una base de codigo mantenible y saludable ",
     "- Pero también se puede caer en el problema de empeorar las cosas, en vez de facilitarlas ",

@@ -1369,6 +1369,10 @@ export const REFACTORING_REF = new Map<string, Referencia>([
     [Keys.REFACTORING_MANAGE_DEPENDENCIES, new Referencia('https://levelup.gitconnected.com/world-of-dependencies-4639100d16ef', 'Manejo de las dependencias', REFACTORING_KEY, 'Dependencias', '2024/06/09')
         .addRelatedItems(Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS, Keys.ARQUITECTURAS_IMPL_CAPAS, Keys.FRAMEWORKS_IOD)
     ],
+    [Keys.REFACTORING_CIRCULAR_DEPENDENCIES, new Referencia('https://medium.com/@louismrc/fix-your-circular-dependencies-with-dependency-inversion-e22b6f4c9510', 'Dependencias Circulares', REFACTORING_KEY, 'Dependencias Circulares', '2026/07/06')
+        .addRelatedItems(Keys.FRAMEWORKS_IOD, Keys.BUENAS_PRACTICAS_INDIRECTION, Keys.POO_COUPLING_AND_COHESION, Keys.FRAMEWORKS_SPRING_ANNOTATIONS, Keys.POO_ABSTRACTIONS)
+        .addMoreReferences('https://www.baeldung.com/circular-dependencies-in-spring')
+    ],
     [Keys.REFACTORING_GOOD_AND_BAD_PRACTICES, new Referencia('https://www.builder.io/blog/good-vs-bad-refactoring', 'Buenas & Malas practicas', REFACTORING_KEY, 'Buenas & Malas practicas', '2024/09/08')
         .addRelatedItems(Keys.WEB_SEO, Keys.PRINCIPIOS_KISS)
     ],

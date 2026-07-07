@@ -338,6 +338,7 @@ export const REFACTORING_LEGACY_CODE_I = 'refactorLegacyCode-I';
 export const REFACTORING_LEGACY_CODE_II = 'refactorLegacyCode-II';
 export const REFACTORING_MANAGE_DEUDA_TECNICA = 'manejarDeudaTecnica';
 export const REFACTORING_MANAGE_DEPENDENCIES = 'manageDependencies';
+export const REFACTORING_CIRCULAR_DEPENDENCIES = 'circularDependencies';
 export const REFACTORING_GOOD_AND_BAD_PRACTICES = 'goodAndBadPracticesRefactoring';
 export const REFACTORING_REWRITE_TRAP = 'refactorVsRewriteTrap';
 export const REFACTORING_MODERNIZATION_LEGACY = 'modernizationLegacySystems';
