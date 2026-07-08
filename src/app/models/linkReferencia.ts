@@ -975,13 +975,11 @@ export const ANALISIS_DATA_KEY = 'Analisis-datos';
 export const ANALISIS_DATA_REF = new Map<string, Referencia>([
     [Keys.ANALISIS_DATA_WEB_SCRAPING, new Referencia('https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/que-es-el-web-scraping/', 'Web Scrapping', ANALISIS_DATA_KEY, 'Web Scrapping', '', '2025/02/15')],
     [Keys.ANALISIS_DATA_MVP, new Referencia('https://www.inboundcycle.com/blog-de-inbound-marketing/que-es-mvp-o-producto-minimo-viable', 'Minimo Producto Viable', ANALISIS_DATA_KEY, 'MVP')],
-    //['turingComplete', new Referencia('https://www.eleconomista.es/economia/noticias/8817210/12/17/Ethereum-es-Turing-completo-y-eso-que-es.html', 'Turing Complete', ANALISIS_DATA_KEY, 'Turing Complete')],
     [Keys.ANALISIS_DATA_TURING_COMPLETE, new Referencia('https://www.bitstamp.net/learn/blockchain/what-is-turing-complete/', 'Turing Complete', ANALISIS_DATA_KEY, 'Turing Complete', '', '2025/02/15')
         .addRelatedItems(Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS)
     ],
     [Keys.ANALISIS_DATA_REVERSE_ENGINEERING, new Referencia('https://ingenierosasesores.com/actualidad/ingenieria-inversa-concepto-aplicaciones/', 'Ingenieria Inversa', ANALISIS_DATA_KEY, 'Ingenieria Inversa')],
     [Keys.ANALISIS_DATA_DSL, new Referencia('https://www.jetbrains.com/es-es/mps/concepts/domain-specific-languages/', 'Lenguaje de Dominio Especifico', ANALISIS_DATA_KEY, 'DSL')],
-    //['dataAnalisis', new Referencia('https://tienda.digital/4-tipos-de-analisis-de-datos-para-mejorar-la-toma-de-decisiones/', 'Analisis de datos', ANALISIS_KEY, 'Analisis de datos')],
     [Keys.ANALISIS_DATA_DATA_ANALISIS_TYPES, new Referencia('https://cidei.net/4-tipos-de-analitica-de-datos-que-mejoran-tu-toma-de-decisiones/', 'Tipos de analitica', ANALISIS_DATA_KEY, 'Analitica de datos', '2022/09/26', '2024/06/23')],
     [Keys.ANALISIS_DATA_SYSTEMS_INFORMATION, new Referencia('https://concepto.de/sistema-de-informacion/', 'Sistemas de Información', ANALISIS_DATA_KEY, 'Información', '', '2024/06/23')],
     [Keys.ANALISIS_DATA_DATA_STORING, new Referencia('https://www.striim.com/blog/data-warehouse-vs-data-lake-vs-data-lakehouse-an-overview/', 'Analisis y almacenamiento de datos', ANALISIS_DATA_KEY, 'Almacenamiento de datos', '2023/08/22', '2025/10/16')
@@ -1023,6 +1021,9 @@ export const ANALISIS_DATA_REF = new Map<string, Referencia>([
     [Keys.ANALISIS_DATA_P_VS_NP, new Referencia('https://www.bbva.com/es/p-versus-np-he-ahi-dilema/', 'P Vs NP', ANALISIS_DATA_KEY, 'P Vs NP', '2026/06/06')
         .addRelatedItems(Keys.ANALISIS_TIME_COMPLEXITY)
         .addMoreReferences('https://www.geeksforgeeks.org/dsa/types-of-complexity-classes-p-np-conp-np-hard-and-np-complete/')
+    ],
+    [Keys.ANALISIS_DATA_STADISTICS_PRINCIPLES, new Referencia('https://www.linkedin.com/feed/update/urn:li:activity:7231830479941898242/', 'Principios estadisticos', ANALISIS_DATA_KEY, 'Principios estadisticos', '2026/07/07')
+        .addRelatedItems(Keys.OBSERVABILIDAD_CORRELATION_CAUSATION)
     ]
 ]);
 
