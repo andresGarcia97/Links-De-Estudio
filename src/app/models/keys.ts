@@ -384,6 +384,7 @@ export const PERSISTENCY_ADVANCED_NEW_SQL = 'newSql';
 export const PERSISTENCY_ADVANCED_LOCKING = 'locking';
 export const PERSISTENCY_ADVANCED_MVCC = 'MVCC';
 export const PERSISTENCY_ADVANCED_WAL = 'writeAheadLogs';
+export const PERSISTENCY_ADVANCED_UNLOGGED_TABLES = 'unlogged-tables';
 export const PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS = 'unknownProblems';
 export const PERSISTENCY_ADVANCED_PARTITIONING = 'partitioning';
 export const PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL = 'consistencyEventual';

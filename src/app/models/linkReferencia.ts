@@ -1625,6 +1625,9 @@ export const PERSISTENCY_ADVANCED_REF = new Map<string, Referencia>([
     [Keys.PERSISTENCY_ADVANCED_WAL, new Referencia('https://medium.com/@vinciabhinav7/write-ahead-logs-but-why-494c3efd722d', 'Registros de escritura anticipada (WAL)', PERSISTENCY_ADVANCED_KEY, 'WAL', '2024/06/15')
         .addRelatedItems(Keys.META_CARACTERISTICAS_META_DATOS, Keys.PERSISTENCY_DBMS)
     ],
+    [Keys.PERSISTENCY_ADVANCED_UNLOGGED_TABLES, new Referencia('https://www.crunchydata.com/blog/postgresl-unlogged-tables', 'Unlogged tables (No WAL)', PERSISTENCY_ADVANCED_KEY, 'Unlogged tables', '2026/07/10')
+        .addRelatedItems(Keys.ANALISIS_DATA_ETL_ELT)
+    ],
     [Keys.PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS, new Referencia('https://rakyll.medium.com/things-i-wished-more-developers-knew-about-databases-2d0178464f78', 'Problemas desconocidos de una BD', PERSISTENCY_ADVANCED_KEY, 'Problemas desconocidos', '2024/10/06')
         .addRelatedItems(Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS)
     ],
