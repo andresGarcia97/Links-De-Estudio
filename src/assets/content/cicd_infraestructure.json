@@ -97,7 +97,7 @@
   ],
   "deploymentPatterns": [
     "- Son metodos automatizados para presentar nuevas funciones de aplicaciones a los usuarios, reduciendo el tiempo de inactividad al maximo posible ",
-    "- Esto depende de la forma en que se realize, y cuantas etapas previas se hayan realizado ",
+    "- Esto depende de la forma en que se realice, y cuantas etapas previas se hayan realizado ",
     "",
     "<strong>Canary Release</strong>",
     "- Se lanza una nueva versión solamente para un grupo selecto de usuarios, voluntarios, antes de afectar a todos los consumidores ",
@@ -105,14 +105,18 @@
     "<strong>Blue/Green</strong>",
     "- Se ejecutan 2 ambientes similares de manera simultanea, reduciendo el tiempo de inactividad, pero solo uno esta activo en dado momento ",
     "- Aca se utiliza un enrutador o un equilibrador de carga, para dirigir el trafico hacia las instancias que se desee ",
-    "- Tambien puede funcionar como una forma de regresión rapida, si algo sale mal en el otro entorno ",
+    "- Tambien puede funcionar como una forma de rollback rapida, si algo sale mal en el otro entorno ",
     "<strong>Feature Toggles</strong>",
     "- Las funcionalidades se pueden apagar o encender, mediante un simple interruptor, asi no estara expuestos a nuevas caracteristicas sin terminar ",
     "<strong>A/B Testing</strong>",
     "- Se presentan 2 o más versiones para ser comparadas de manera aleatoria, y la mejor se escoge mediante analisis estadisticos ",
-    "<strong>Dark Launchs</strong>",
+    "<strong>Dark Launch</strong>",
     "- Se presenta la nueva funcionalidad a un grupo selecto de usuarios, y no al publico general, estos deben estar conscientes de que esta ayudando ",
-    " - a desarrollar y probar la nueva funcionalidad, para obtener comentarios y probar la eficacia "
+    " - a desarrollar y probar la nueva funcionalidad, para obtener comentarios y probar la eficacia ",
+    "<strong>Multi stage:</strong>",
+    "- Paquetes de aplicaciones completos como unidades de implementación a traves de multiples entornos hasta llegar a producción ",
+    "<strong>Big Bang:</strong>",
+    "- Ofrecen colecciones completas de funciones simultaneamente, lo que genera importantes desafios de adaptación para los usuarios "
   ],
   "industrialDevops": [
     "- Es la unión/aplicación de los principios <em>Lean</em>, <em>Agile</em> y <em>DevOps</em> además del desarrollo, planificación e implementación, ",

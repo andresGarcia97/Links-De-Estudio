@@ -1819,11 +1819,13 @@ export const CI_CD_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.CONTENEDORES_DOCKER)
         .addMoreReferences('https://glossary.cncf.io/es/immutable-infrastructure/')
     ],
-    //['stateless-stateful', new Referencia('https://refactorizando.com/stateful-vs-stateless-arquitectura/', 'Stateful VS Stateless', CD_CI_KEY, 'Stateless VS Stateful')],
     [Keys.CD_CI_STATELESS_STATEFUL, new Referencia('https://www.redhat.com/en/topics/cloud-native-apps/stateful-vs-stateless', 'Stateful VS Stateless', CI_CD_KEY, 'Stateless VS Stateful', '2023/12/26', '2025/05/01')
         .addRelatedItems(Keys.MICROSERVICES_FUNDAMENTALS, Keys.NUBE_IAAS_PAAS_SAAS, Keys.APIS_IDEMPOTENCIA)
     ],
-    [Keys.CD_CI_DEPLOYMENT_PATTERNS, new Referencia('https://newsletter.techworld-with-milan.com/p/what-are-deployment-patterns', 'Patrones de Despliegue', CI_CD_KEY, 'Patrones de Despliegue')],
+    [Keys.CD_CI_DEPLOYMENT_PATTERNS, new Referencia('https://newsletter.techworld-with-milan.com/p/what-are-deployment-patterns', 'Patrones de Despliegue', CI_CD_KEY, 'Patrones de Despliegue', '', '2026/07/10')
+        .addRelatedItems(Keys.NUBE_PROVISIONING, Keys.PERSISTENCY_ADVANCED_MIGRATIONS, Keys.NUBE_NATIVE)
+        .addMoreReferences('https://learn.microsoft.com/en-us/training/modules/introduction-to-deployment-patterns/3-examine-classical-deployment-patterns')
+    ],
     [Keys.CD_CI_INDUSTRIAL_DEV_OPS, new Referencia('https://itrevolution.com/articles/what-is-industrial-devops/', 'Industrial DevOps', CI_CD_KEY, 'Industrial DevOps', '2023/11/21')
         .addRelatedItems(Keys.TESTING_ADVANCED_SHIFT_LEFT_SHIFT_RIGHT)
     ],
