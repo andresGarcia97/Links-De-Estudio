@@ -89,6 +89,30 @@
     "- Esta estrategia es usada en los analisis sintacticos de los compiladores y en la inteligencia artificial, ",
     " - dando lugar a nuevos algoritmos de busqueda como el A*"
   ],
+  "objectCreation": [
+    "- En las aplicaciones el manejo de recursos es fundamental para crear aplicaciones con un gran rendimiento ",
+    "- Cada Objeto que se crea, requiere de un espacio en memoria y de procesamiento, la cual crece entre mayor sea su complejidad ",
+    "",
+    "En Java la creación de un objeto, comprende de varias fases: ",
+    "<strong>- Instanciación:</strong> Utilizando la palabra clave <em>new</em> Java asigna memoria para un objeto en el <strong>Heap</strong> ",
+    "<strong>- Uso & Referencia:</strong> Los metodos son ejecutados y las propiedades son accesadas y modificadas ",
+    "<strong>- Garbage Collector:</strong> La <em>JVM</em> automaticamente reclama memoria de los objetos que no son referenciados ",
+    "<strong>- Destrución</strong> La <em>JVM</em> borra de manera completa el objeto, liberando recursos para nuevos datos ",
+    "",
+    "<strong>Stack Memory:</strong> Almacena llamadas a metodos, variables locales y objetos de corta duración, mediante una estructura <strong>LIFO</strong> ",
+    "- Esta memoria es suceptible a <em>StackOverflowError</em> si sobrecarga con recursividad o muchas variables ",
+    "",
+    "<strong>Heap Memory:</strong> Utiliza una asignación dinamica de memoria para almacenar objetos y propiedades con un scope mayor ",
+    "- Un uso excesivo de esta memoria puede resultar en un error de tipo <em>OutOfMemoryError</em> por falta de memoria libre ",
+    "",
+    "<strong>Reducir la creación de objetos:</strong>",
+    "- Evite crear objetos dentro de bucles, si no es necesario, en su lugar inicialize objetos reutilizables ",
+    "- Cree objetos de manera condicional, solamente en el momento previo a su uso, considerandose objetos perezosos (Lazy Initializatión) ",
+    "- Use el patron <em>Builder</em> si requiere de la construcción de objetos complejos de forma incremental ",
+    "- Un Pool de objetos, es una tecnica eficiente de creación de objetos y de su respectiva reutilización, ",
+    " - en lugar de crear y desperdiciar objetos costosos muy usados, como lo puede ser una conexión a Base de Datos ",
+    "- Serializar y Deserializar implica conversiones hacia y desde formatos binarios, por ejemplo el almacenaje de objetos en cache, de manera externa "
+  ],
   "memoryAndGarbage": [
     "- Una fuga de memoria(memory leak) es el deterioro gradual del rendimiento del sistema en el transcurso del tiempo, ",
     " - como resultado del uso y de la fragmentacion de la memoria RAM del dispositivo, evitando su liberación oportuna ",
@@ -102,7 +126,7 @@
     " - ya que el desarrollador no debe preocuparse de un proceso que ocurre de manera silenciosa y constante "
   ],
   "footprint": [
-    "- Es la cantidad de Memoria RAM que utiliza el software cuando se ejecuta, las instrucciones del programa, los datos ",
+    "- Es la cantidad de Memoria RAM que utiliza el software cuando se ejecuta, las instrucciones del programa, manejo de datos, uso de objetos, etc.. ",
     "- Tambien puede reservar para instrucciones adicionales, o acciones que se soliciten ",
     "",
     "<strong>Sistemas embedidos:</strong>",

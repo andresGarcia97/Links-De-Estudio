@@ -434,9 +434,6 @@ export const COMPILACION_REF = new Map<string, Referencia>([
     [Keys.COMPILACION_INSTRUMENTS, new Referencia('https://foojay.io/today/who-instruments-the-instrumenters/', 'Instrumentos', COMPILACION_KEY, 'Instrumentos', '2024/08/18')
         .addRelatedItems(Keys.FRAMEWORKS_FRAMEWORKS, Keys.TESTING_MOCKS)
     ],
-    [Keys.COMPILACION_OBJECT_CREATION, new Referencia('https://medium.com/technology-hits/minimizing-object-creation-for-high-performance-java-applications-553f9c9278c1', 'Creacion de Objetos', COMPILACION_KEY, 'Objetos', '2024/11/23')
-        .addRelatedItems(Keys.PATRONES_DESGLOSE_GOF)
-    ],
     [Keys.COMPILACION_ERRORS_AND_EXCEPTIONS, new Referencia('https://medium.com/javarevisited/because-i-didnt-know-the-difference-between-exception-and-error-in-java-i-failed-the-interview-b44b07823f72', 'Errors & Exceptions', COMPILACION_KEY, 'Errors & Exceptions', '2025/01/06')
         .addRelatedItems(Keys.META_CARACTERISTICAS_EXCEPTIONS, Keys.BUENAS_PRACTICAS_EXCEPTIONS)
     ],
@@ -459,6 +456,9 @@ export const EJECUCION_REF = new Map<string, Referencia>([
     ],
     [Keys.EJECUCION_RECURSIVIDAD, new Referencia('https://geekytheory.com/que-es-la-recursividad/', 'Recursividad', EJECUCION_KEY, 'Recursividad')],
     [Keys.EJECUCION_BACKTRACKING, new Referencia('https://www.ecured.cu/Vuelta_atr%C3%A1s_(backtracking)', 'Back Tracking', EJECUCION_KEY, 'Back tracking')],
+    [Keys.EJECUCION_OBJECT_CREATION, new Referencia('https://medium.com/technology-hits/minimizing-object-creation-for-high-performance-java-applications-553f9c9278c1', 'Creacion de Objetos', EJECUCION_KEY, 'Objetos', '2024/11/23')
+        .addRelatedItems(Keys.PATRONES_DESGLOSE_GOF, Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION)
+    ],
     [Keys.EJECUCION_MEMORY_AND_GARBAGE, new Referencia('https://www.computerworld.com/article/2596992/memory-leaks-and-garbage-collection.html', 'Fugas de memoria y recoleccion de basura', EJECUCION_KEY, 'Fugas de memoria', '')],
     [Keys.EJECUCION_FOOTPRINT, new Referencia('https://www.pcmag.com/encyclopedia/term/memory-footprint', 'Huella en memoria', EJECUCION_KEY, 'Huellas de memoria', '2023/11/03')],
     [Keys.EJECUCION_FEATURE_FLAGS, new Referencia('https://www.optimizely.com/optimization-glossary/feature-flags/', 'Feature Flags', EJECUCION_KEY, 'Feature Flags', '2023/11/30', '2025/05/12')
@@ -472,7 +472,7 @@ export const EJECUCION_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.PERSISTENCY_ADVANCED_LOCKING, Keys.PERSISTENCY_DBMS, Keys.PERSISTENCY_DL)
     ],
     [Keys.EJECUCION_MEMORY_MANAGEMENT, new Referencia('https://peerdh.com/blogs/programming-insights/understanding-memory-management-in-programming-paradigms', 'Manejo de la memoria', EJECUCION_KEY, 'Manejo de la memoria', '2025/04/28')
-        .addRelatedItems(Keys.COMPILACION_INTERPRETADOS, Keys.COMPILACION_COMPILACION, Keys.PARADIGMAS_IMPERATIVO, Keys.POO_INMUTABILITY, Keys.COMPILACION_OBJECT_CREATION)
+        .addRelatedItems(Keys.COMPILACION_INTERPRETADOS, Keys.COMPILACION_COMPILACION, Keys.PARADIGMAS_IMPERATIVO, Keys.POO_INMUTABILITY)
         .addMoreReferences("https://medium.com/@alexander.paul.gilbert/oop-vs-functional-is-dead-ff51a70c83ce")
     ],
     [Keys.EJECUCION_ASINCRONISMO, new Referencia('https://code.likeagirl.io/concurrency-parallelism-async-47312e0be553', 'Asincronismo', EJECUCION_KEY, 'Asincronismo', '2026/03/30')
@@ -483,7 +483,7 @@ export const EJECUCION_REF = new Map<string, Referencia>([
         .addMoreReferences('https://softwareengineering.stackexchange.com/questions/99445/is-micro-optimisation-important-when-coding', 'https://softwareengineering.stackexchange.com/questions/80084/is-premature-optimization-really-the-root-of-all-evil')
     ],
     [Keys.EJECUCION_EXPRESIONES_CRON, new Referencia('https://adictosaltrabajo.com/2010/02/22/expresiones-cron/', 'Expresiones CRON', EJECUCION_KEY, 'Expresiones CRON', '2026/06/18')
-        .addRelatedItems(Keys.META_ESTRUCTURAS_REGEX)
+        .addRelatedItems(Keys.META_ESTRUCTURAS_REGEX, Keys.SYSTEM_DESIGN_SYSTEM_TYPES_I)
     ]
 ]);
 
@@ -805,7 +805,7 @@ export const META_ESTRUCTURAS_KEY = 'Meta-Estructuras';
 export const META_ESTRUCTURAS_REF = new Map<string, Referencia>([
     //['scope', new Referencia('https://platzi.com/blog/como-funciona-el-scope-en-javascript/', 'Alcance', META_ESTRUCTURAS_KEY, 'Scope')],
     [Keys.META_ESTRUCTURAS_SCOPE, new Referencia('https://codingornot.com/ambito-o-scope-en-programacion', 'Scope o Ambito', META_ESTRUCTURAS_KEY, 'Scope', '', '2025/02/08')
-        .addRelatedItems(Keys.COMPILACION_OBJECT_CREATION)
+        .addRelatedItems(Keys.EJECUCION_OBJECT_CREATION)
     ],
     [Keys.META_ESTRUCTURAS_PRECEDENCIA, new Referencia('https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Operator_Precedence', 'Precedencia y jerarquia de operaciones', META_ESTRUCTURAS_KEY, 'Precedencia', '', '2025/07/03')],
     [Keys.META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL, new Referencia('https://xurxodev.com/vertical-scile/', 'Organización de un proyecto', META_ESTRUCTURAS_KEY, 'Organización')],
@@ -1135,7 +1135,7 @@ export const PATRONES_ADVANCED_REF = new Map<string, Referencia>([
         .addMoreReferences('https://java-design-patterns.com/patterns/fanout-fanin/')
     ],
     [Keys.PATRONES_ADVANCED_DOUBLE_CHECKING, new Referencia('https://sergeylappo.github.io/posts/double-checked-locking/', 'Double checked locking', PATRONES_ADVANCED_KEY, 'Double Checked Locking', '2026/04/13')
-        .addRelatedItems(Keys.COMPILACION_OBJECT_CREATION)
+        .addRelatedItems(Keys.EJECUCION_OBJECT_CREATION)
     ]
 ]);
 
