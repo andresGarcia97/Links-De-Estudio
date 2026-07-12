@@ -209,8 +209,13 @@ export const SYSTEM_DESIGN_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.ANALISIS_DATA_TGS, Keys.TESTING_GRAFOS_CAUSA_EFECTO, Keys.PEOPLE_NO_NEWS_GOOD_NEWS, Keys.ARQUITECTURAS_IMPL_MODULITHS, Keys.PRINCIPIOS_SOC, Keys.VERSIONAMIENTO_DOCUMENT_ARQUITECTURE)
         .addMoreReferences('https://medium.com/@pudarimadhavi99/10-secrets-to-making-rock-solid-architectural-decisions-as-a-senior-developer-5f45e97fe69f')
     ],
-    [Keys.SYSTEM_DESIGN_SYSTEM_TYPES, new Referencia('https://medium.com/@bugfreeai/understanding-system-design-interview-types-a-strategic-guide-for-2025-320af44efc8b', 'Tipos generales de sistemas', SYSTEM_DESIGN_KEY, 'Tipos de sistemas', '2025/06/08')
-        .addRelatedItems(Keys.HARDWARE_ESCALAMIENTO, Keys.PERSISTENCY_ADVANCED_SCALING_DB, Keys.NUBE_LATENCY, Keys.MICROSERVICES_ADVANCED_CACHE_FAILS, Keys.PERSISTENCY_ADVANCED_CONSISTENCY, Keys.PERSISTENCY_ADVANCED_WAL, Keys.NUBE_CAP_TEOREMA, Keys.PERSISTENCY_ACID, Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS, Keys.PARADIGMAS_PARADIGMA_DATOS, Keys.PERSISTENCY_INTERMEDIATE_INDICES, Keys.ANALISIS_DATA_DATA_STORING)
+    [Keys.SYSTEM_DESIGN_SYSTEM_TYPES_I, new Referencia('https://medium.com/@bugfreeai/understanding-system-design-interview-types-a-strategic-guide-for-2025-320af44efc8b', 'Tipos generales de sistemas I', SYSTEM_DESIGN_KEY, 'Tipos de sistemas I', '2025/06/08', '2026/07/11')
+        .addRelatedItems(Keys.HARDWARE_ESCALAMIENTO, Keys.PERSISTENCY_ADVANCED_SCALING_DB, Keys.MICROSERVICES_ADVANCED_CACHE_FAILS, Keys.PERSISTENCY_ADVANCED_CONSISTENCY, Keys.PERSISTENCY_ADVANCED_WAL, Keys.NUBE_CAP_TEOREMA, Keys.PERSISTENCY_ACID, Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS, Keys.PARADIGMAS_PARADIGMA_DATOS, Keys.PERSISTENCY_INTERMEDIATE_INDICES, Keys.ANALISIS_DATA_DATA_STORING)
+        .addMoreReferences('https://bugfree.ai/collection/system-design-top')
+    ],
+    [Keys.SYSTEM_DESIGN_SYSTEM_TYPES_II, new Referencia('https://www.designgurus.io/blog/system-design-decision-tree', 'Tipos generales de sistemas II', SYSTEM_DESIGN_KEY, 'Tipos de sistemas II', '2026/07/11')
+        .addRelatedItems(Keys.MICROSERVICES_PUSH_PULL_EVENTS, Keys.APIS_WEB_HOOK_VS_SOCKET_VS_SSE, Keys.NUBE_LATENCY, Keys.PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL, Keys.ANALISIS_DATA_STREAMING_VS_MESSAGING, Keys.SECURITY_ATTACK_CONDICION_CARRERA, Keys.PERSISTENCY_ACID, Keys.EJECUCION_CONCURRENCY_AND_PARALLELISM, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRACING)
+        .addMoreReferences('https://medium.com/@saquibdev/how-to-prepare-for-system-design-interview-31fa1753379f')
     ],
     [Keys.SYSTEM_DESIGN_SCALING_WRITES, new Referencia('https://medium.com/@priyasrivastava18official/system-design-pattern-scaling-writes-how-big-tech-handles-billions-of-writes-per-second-60c92d0374f2', 'Diseño de sistemas, escritura', SYSTEM_DESIGN_KEY, 'Escalar la escritura', '2025/11/17')
         .addRelatedItems(Keys.ANALISIS_DATA_STREAMING_VS_MESSAGING, Keys.PERSISTENCY_ADVANCED_SCALING_DB, Keys.ARQUITECTURAS_MISTAKES_II, Keys.EJECUCION_BLOCKING_AND_NO_BLOCKING, Keys.ANALISIS_DATA_GOLDEN_RECORD, Keys.PERSISTENCY_ADVANCED_CONSISTENCY, Keys.NUBE_PACELC, Keys.ANALISIS_DATA_OLAP_OLTP, Keys.PERSISTENCY_DB_TYPES, Keys.PERSISTENCY_ADVANCED_WAL, Keys.PERSISTENCY_INTERMEDIATE_INDICES, Keys.ARQUITECTURAS_IMPL_EVENT_DRIVEN)
@@ -1881,7 +1886,7 @@ export const MICRO_SERVICES_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.META_ESTRUCTURAS_SISTEMAS_COMPLEJOS)
     ],
     [Keys.MICROSERVICES_BENEFITS, new Referencia('https://www.milanjovanovic.tech/blog/understanding-microservices-core-concepts-and-benefits', 'Beneficios de Microservicios', MICRO_SERVICES_KEY, 'Beneficios', '2025/06/09')
-        .addRelatedItems(Keys.ANALISIS_BOUNDED_CONTEXT, Keys.REQUISITOS_BUSINESS_VALUE, Keys.META_ESTRUCTURAS_LAYERS_SOFTWARE, Keys.APIS_REST_VS_MESSAGING, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.LEYES_CONWAY, Keys.CD_CI_DEV_OPS, Keys.APIS_IDEMPOTENCIA, Keys.SYSTEM_DESIGN_SYSTEM_TYPES, Keys.PERSISTENCY_ADVANCED_CONSISTENCY, Keys.ARQUITECTURAS_IMPL_MONOLITOS)
+        .addRelatedItems(Keys.ANALISIS_BOUNDED_CONTEXT, Keys.REQUISITOS_BUSINESS_VALUE, Keys.META_ESTRUCTURAS_LAYERS_SOFTWARE, Keys.APIS_REST_VS_MESSAGING, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.LEYES_CONWAY, Keys.CD_CI_DEV_OPS, Keys.APIS_IDEMPOTENCIA, Keys.SYSTEM_DESIGN_SYSTEM_TYPES_I, Keys.PERSISTENCY_ADVANCED_CONSISTENCY, Keys.ARQUITECTURAS_IMPL_MONOLITOS)
     ],
     [Keys.MICROSERVICES_ARQUITECTURAS, new Referencia('https://martinfowler.com/articles/microservices.html', 'Microservicios & Arquitectura', MICRO_SERVICES_KEY, 'Arquitecturas', '', '2026/06/27')
         .addRelatedItems(Keys.ARQUITECTURAS_IMPL_EVENT_DRIVEN, Keys.ARQUITECTURAS_IMPL_STYLES_I)
@@ -1904,7 +1909,7 @@ export const MICRO_SERVICES_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.ARQUITECTURAS_IMPL_EVENT_DRIVEN, Keys.SYSTEM_DESIGN_QUEUES, Keys.ANALISIS_LIGHT_EVENTS_VS_RICH_EVENTS, Keys.PARADIGMAS_REACTIVO)
     ],
     [Keys.MICROSERVICES_EVENTS_VS_REQUEST_RESPONSE, new Referencia('https://javascript.plainenglish.io/event-driven-architecture-vs-request-response-developer-guide-acec290f44a1', 'Basado en Eventos VS Request-Response', MICRO_SERVICES_KEY, 'Events VS Requests', '2025/06/30')
-        .addRelatedItems(Keys.SYSTEM_DESIGN_SYSTEM_TYPES, Keys.ARQUITECTURAS_IMPL_EVENT_DRIVEN, Keys.PATRONES_ADVANCED_DISTRIBUTED_SYSTEMS)
+        .addRelatedItems(Keys.SYSTEM_DESIGN_SYSTEM_TYPES_I, Keys.ARQUITECTURAS_IMPL_EVENT_DRIVEN, Keys.PATRONES_ADVANCED_DISTRIBUTED_SYSTEMS)
     ],
     [Keys.MICROSERVICES_DATA_ACCESS_PATTERNS, new Referencia('https://medium.com/@jaredhatfield/data-access-patterns-in-microservices-1e51d26ee205', 'Acceso a datos', MICRO_SERVICES_KEY, 'Acceso a datos', '2025/12/29')
         .addRelatedItems(Keys.NUBE_LATENCY, Keys.POO_COUPLING_AND_COHESION, Keys.APIS_REST_VS_MESSAGING, Keys.VERSIONAMIENTO_VERSIONAMIENTO, Keys.PERSISTENCY_ADVANCED_SCALING_DB, Keys.ANALISIS_DATA_ETL_ELT, Keys.ANALISIS_DATA_BATCH_VS_STREAM, Keys.ANALISIS_DATA_STREAMING_VS_MESSAGING, Keys.PATRONES_ADVANCED_MESSAGING, Keys.ANALISIS_TYPE_EVENTS, Keys.VERSIONAMIENTO_EVOLUTION_SCHEMA_AND_SCHEMA_REGISTRY)
