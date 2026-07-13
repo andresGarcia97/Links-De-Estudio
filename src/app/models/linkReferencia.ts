@@ -769,6 +769,10 @@ export const MALAS_PRACTICAS_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.POO_ENUMS, Keys.EJECUCION_FEATURE_FLAGS, Keys.POO_COUPLING_AND_COHESION, Keys.PRINCIPIOS_SOLID)
         .addMoreReferences('https://martinfowler.com/bliki/FlagArgument.html')
     ],
+    [Keys.MALAS_PRACTICAS_LOG_AND_THROW, new Referencia('https://stackoverflow.com/questions/6639963/why-is-log-and-throw-considered-an-anti-pattern', 'Log & Throw', MALAS_PRACTICAS_KEY, 'Log & Throw', '2026/07/13')
+        .addRelatedItems(Keys.META_ESTRUCTURAS_LOGS, Keys.META_CARACTERISTICAS_EXCEPTIONS, Keys.BUENAS_PRACTICAS_DEBUGGING, Keys.CD_CI_MONITORING_AND_ALERTS)
+        .addMoreReferences('https://signoz.io/guides/throw-exception-vs-logging/')
+    ]
 ]);
 
 export const META_CARACTERISTICAS_KEY = 'Meta-Caracteristicas';

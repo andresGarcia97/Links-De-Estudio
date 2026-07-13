@@ -199,5 +199,23 @@
     "- Usar enumeraciones hace el código legible, representan su intención y permiten manejar más de 2 valores de ser necesario ",
     "- Esto no significa erradicar su uso, hay contextos donde no implica una mala práctica, ",
     " - si el parámetro es implícito o no existe una posibilidad real de extensión Ejemplo: <em>setIsModalOpen(bool isModalOpen)</em>"
+  ],
+  "log-and-throw": [
+    "- Cuando sucede un error existen 2 opciones principales que se pueden realizar ",
+    "&bull; hacer logging del error y continuar la ejecución ",
+    "&bull; lanzar una excepción e interrumpir el flujo normal ",
+    "- El problema surge cuando ambas opciones se realizan al mismo tiempo, sin ningún tipo de valor agregado ",
+    "",
+    "<strong>Qué hacer & Qué No Hacer</strong>",
+    "<ins>&#x2713;</ins> Incluir en los logs, información contextual sobre el error, los datos que lo provocaron o cualquier información que sea relevante ",
+    "<ins>&#x2713;</ins> No hacer logging siempre de toda la traza del error y escoger en que lugares aporta valor generar el log de error ",
+    "<ins>&#x2713;</ins> Envolver y/o enriquecer la excepción original dentro de otra más especializada, sin perder la traza original del error ",
+    "<del>&#x2717;</del> Log del error, sin agregar ni filtrar la información original ",
+    "<del>&#x2717;</del> Lanzar la excepción original sin información adicional ni contexto del problema ",
+    "<del>&#x2717;</del> No definir que lugares deben manejar el error y cuales solo deben relanzarlo (re-throw) ",
+    "",
+    "- Este problema es critico cuando se repite multiples veces en la base del código, principalmente porque aumenta el ruido durante la depuración ",
+    "- Ambos procesos tienen costos y afectan el rendimiento del sistema, por lo que realizarlos de manera desmedida puede ralentizarlo ",
+    "- La mantenibilidad del código disminuye al no tener claridad sobre el origen del error o la clase final que debe manejarlo "
   ]
 }
