@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ANALISIS_KEY, ARQUITECTURAS_KEY, LinkReferencia, MALAS_PRACTICAS_KEY, MICRO_SERVICES_ADVANCED_REF, MICRO_SERVICES_KEY, 
   NUBE_KEY, PATRONES_KEY, PERSISTENCY_KEY }
@@ -25,7 +25,7 @@ export class MicroServicesAvanzadoComponent implements OnInit {
 
   previousAndNextSection!: PreviousAndNextSection;
 
-  constructor(private route: ActivatedRoute) {}
+  private route = inject(ActivatedRoute);
 
   ngOnInit(): void {
     this.items = this.route.snapshot.data[MICROSERVICES_ADVANCED_PATH.propertyNameData];

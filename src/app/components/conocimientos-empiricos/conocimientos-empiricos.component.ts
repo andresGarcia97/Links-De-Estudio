@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ANALISIS_KEY, CONOCIMIENTO_EMPIRICO, CONOCIMIENTO_PSICOLOGICO_KEY, LEYES_KEY, LinkReferencia,
   PEOPLE_KEY, PRINCIPIOS_KEY, WEB_KEY }
@@ -25,7 +25,7 @@ export class ConocimientosEmpiricosComponent implements OnInit {
 
   previousAndNextSection!: PreviousAndNextSection;
 
-  constructor(private route: ActivatedRoute) {}
+  private route = inject(ActivatedRoute);
 
   ngOnInit(): void {
     this.items = this.route.snapshot.data[EMPIRICO_PATH.propertyNameData];

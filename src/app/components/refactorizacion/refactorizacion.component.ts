@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { BUENAS_PRACTICAS_KEY, CALIDAD_KEY, ESTRATEGIAS_DESARROLLO_KEY, LinkReferencia, PATRONES_KEY, REFACTORING_REF,
   SMELL_CODES_KEY, TESTING_KEY }
@@ -25,7 +25,7 @@ export class RefactorizacionComponent implements OnInit {
 
   previousAndNextSection!: PreviousAndNextSection;
 
-  constructor(private route: ActivatedRoute) {}
+  private route = inject(ActivatedRoute);
 
   ngOnInit(): void {
     this.items = this.route.snapshot.data[REFACTORING_PATH.propertyNameData];

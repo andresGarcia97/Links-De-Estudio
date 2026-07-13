@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { AGILES_KEY, ARQUITECTURAS_KEY, LinkReferencia, REQUISITOS_KEY, TESTING_ADVANCED_KEY, TESTING_REF, UML_KEY }
 from 'src/app/models/linkReferencia';
@@ -24,7 +24,7 @@ export class PruebasComponent implements OnInit {
 
   previousAndNextSection!: PreviousAndNextSection;
 
-  constructor(private route: ActivatedRoute) {}
+  private route = inject(ActivatedRoute);
 
   ngOnInit(): void {
     this.items = this.route.snapshot.data[TESTING_PATH.propertyNameData];

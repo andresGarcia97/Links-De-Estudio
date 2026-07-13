@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ANALISIS_DATA_KEY, CONOCIMIENTO_EMPIRICO_KEY, LinkReferencia, MICRO_SERVICES_KEY, NEURO_MARKETING_REF, PEOPLE_KEY }
 from 'src/app/models/linkReferencia';
@@ -24,7 +24,7 @@ export class NeuroMarketingComponent implements OnInit {
 
   previousAndNextSection!: PreviousAndNextSection;
 
-  constructor(private route: ActivatedRoute) {}
+  private route = inject(ActivatedRoute);
 
   ngOnInit(): void {
     this.items = this.route.snapshot.data[NEURO_MARKETING_PATH.propertyNameData];

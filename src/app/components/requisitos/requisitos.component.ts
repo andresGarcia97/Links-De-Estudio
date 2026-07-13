@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { AGILES_KEY, ANALISIS_KEY, LinkReferencia, PEOPLE_KEY, REQUISITOS_REF, UML_KEY, USER_HISTORIES_KEY }
 from 'src/app/models/linkReferencia';
@@ -24,7 +24,7 @@ export class RequisitosComponent implements OnInit {
 
   previousAndNextSection!: PreviousAndNextSection;
 
-  constructor(private route: ActivatedRoute) {}
+  private route = inject(ActivatedRoute);
 
   ngOnInit(): void {
     this.items = this.route.snapshot.data[REQUISITOS_PATH.propertyNameData];

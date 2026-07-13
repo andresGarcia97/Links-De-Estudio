@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { APIS_KEY, CI_CD_KEY, CONTENEDORES_KEY, LinkReferencia, NUBE_REF, OBSERVABILIDAD_KEY,
   SECURITY_ATTACKS_KEY, SECURITY_KEY, WEB_KEY }
@@ -25,7 +25,7 @@ export class NubeComponent implements OnInit {
 
   previousAndNextSection!: PreviousAndNextSection;
 
-  constructor(private route: ActivatedRoute) {}
+  private route = inject(ActivatedRoute);
 
   ngOnInit(): void {
     this.items = this.route.snapshot.data[NUBE_PATH.propertyNameData];

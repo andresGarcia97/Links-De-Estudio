@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { PERSISTENCY_KEY, LinkReferencia, PERSISTENCY_ADVANCED_REF, WEB_KEY, HARDWARE_KEY, PATRONES_KEY, FRAMEWORKS_KEY,
   PERSISTENCY_INTERMEDIATE_KEY }
@@ -25,7 +25,7 @@ export class SqlNosqlAdvancedComponent implements OnInit {
 
   previousAndNextSection!: PreviousAndNextSection;
 
-  constructor(private route: ActivatedRoute) {}
+  private route = inject(ActivatedRoute);
 
   ngOnInit(): void {
     this.items = this.route.snapshot.data[PERSISTENCY_ADVANCED_PATH.propertyNameData];

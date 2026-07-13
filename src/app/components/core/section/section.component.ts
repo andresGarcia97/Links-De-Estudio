@@ -1,4 +1,4 @@
-import { Component, Input, OnDestroy, OnInit } from '@angular/core';
+import { Component, Input, OnDestroy, OnInit, inject } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { fromEvent, Subscription } from 'rxjs';
 import { map } from 'rxjs/operators';
@@ -19,7 +19,8 @@ const key = keypressed$.pipe(
 })
 export class SectionComponent implements OnInit, OnDestroy {
 
-  constructor(private router: Router, private activeRoute: ActivatedRoute) { }
+  private router = inject(Router);
+  private activeRoute = inject(ActivatedRoute);
 
   listenArrows: Subscription = key.subscribe((value) => {
     const event = value as KeyboardEvent;
@@ -130,7 +131,7 @@ export class SectionComponent implements OnInit, OnDestroy {
     return -1;
   }
 
-  public setDataByKey(key: string = ''): void {
+  public setDataByKey(key = ''): void {
     this.selection = key;
     this.referencia = this.components.get(key)?.referencia ?? '';
     this.titulo = this.components.get(key)?.tittle ?? '';

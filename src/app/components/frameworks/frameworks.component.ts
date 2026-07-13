@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ANALISIS_KEY, ARQUITECTURAS_KEY, CALIDAD_KEY, COMPILACION_KEY, FRAMEWORKS_REF, LinkReferencia,
   PERSISTENCY_ADVANCED_KEY, PRINCIPIOS_KEY }
@@ -25,7 +25,7 @@ export class FrameworksComponent implements OnInit {
 
   previousAndNextSection!: PreviousAndNextSection;
 
-  constructor(private route: ActivatedRoute) {}
+  private route = inject(ActivatedRoute);
 
   ngOnInit(): void {
     this.items = this.route.snapshot.data[FRAMEWORKS_PATH.propertyNameData];

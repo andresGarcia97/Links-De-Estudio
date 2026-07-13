@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { APIS_KEY, HARDWARE_KEY, LinkReferencia, NUBE_KEY, REQUISITOS_KEY, SECURITY_ATTACKS_REF, SECURITY_KEY, WEB_KEY }
 from 'src/app/models/linkReferencia';
@@ -24,7 +24,7 @@ export class SeguridadAtaquesComponent implements OnInit {
 
   previousAndNextSection!: PreviousAndNextSection;
 
-  constructor(private route: ActivatedRoute) {}
+  private route = inject(ActivatedRoute);
 
   ngOnInit(): void {
     this.items = this.route.snapshot.data[SEGURIDAD_ATAQUES_PATH.propertyNameData];

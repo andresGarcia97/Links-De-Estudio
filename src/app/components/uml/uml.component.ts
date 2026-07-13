@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ANALISIS_KEY, GIT_KEY, LinkReferencia, REQUISITOS_KEY, TESTING_KEY, UML_REF, VERSIONAMIENTO_KEY }
 from 'src/app/models/linkReferencia';
@@ -24,7 +24,7 @@ export class UmlComponent implements OnInit {
 
   previousAndNextSection!: PreviousAndNextSection;
 
-  constructor(private route: ActivatedRoute) {}
+  private route = inject(ActivatedRoute);
 
   ngOnInit(): void {
     this.items = this.route.snapshot.data[UML_PATH.propertyNameData];

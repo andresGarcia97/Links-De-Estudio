@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { LinkReferencia, SECURITY_KEY, HARDWARE_KEY, CI_CD_KEY, NUBE_KEY, EJECUCION_REF, COMPILACION_KEY, VERSIONAMIENTO_KEY }
   from 'src/app/models/linkReferencia';
@@ -24,7 +24,7 @@ export class EjecucionComponent implements OnInit {
 
   previousAndNextSection!: PreviousAndNextSection;
 
-  constructor(private route: ActivatedRoute) {}
+  private route = inject(ActivatedRoute);
 
   ngOnInit(): void {
     this.items = this.route.snapshot.data[EJECUCION_PATH.propertyNameData];

@@ -3,7 +3,7 @@ import { Referencia } from './models';
 
 export class LinkReferencia {
 
-    public components: Map<string, Referencia> = new Map([
+    public components: Map<string, Referencia> = new Map<string, Referencia>([
         ...AGILES_REF,          ...CONTAINERS,              ...ANALISIS_REF,
         ...ARQUITECTURAS_REF,   ...BUENAS_PRACTICAS_REF,    ...ARQUITECTURAS_IMPL_REF,
         ...COMPILACION_REF,     ...CONOCIMIENTO_EMPIRICO,   ...ESTRATEGIAS_DESARROLLO_REF,
@@ -23,7 +23,7 @@ export class LinkReferencia {
         ...CALIDAD_REF
     ]);
 
-    public routesAndSections: Map<string, string> = new Map([
+    public routesAndSections: Map<string, string> = new Map<string, string>([
         [ANALISIS_KEY, 'analisis'],     [ANALISIS_DATA_KEY, 'analisis-datos'],  [META_CARACTERISTICAS_KEY, 'metacaracteristicas'],
         [AGILES_KEY, 'agiles'],         [OBSERVABILIDAD_KEY, 'observabilidad'], [CONOCIMIENTO_EMPIRICO_KEY, 'conocimiento-empirico'],
         [UML_KEY, 'uml'],               [PERSISTENCY_KEY, 'bases-de-datos'],    [ESTRATEGIAS_DESARROLLO_KEY, 'estrategias-de-desarrollo'],

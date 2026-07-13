@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ANALISIS_KEY, META_CARACTERISTICAS_KEY, LinkReferencia, PARADIGMAS_REF, PATRONES_KEY, PRINCIPIOS_KEY, POO_KEY } 
 from 'src/app/models/linkReferencia';
@@ -24,7 +24,7 @@ export class ParadigmasComponent  implements OnInit {
 
   previousAndNextSection!: PreviousAndNextSection;
 
-  constructor(private route: ActivatedRoute) {}
+  private route = inject(ActivatedRoute);
 
   ngOnInit(): void {
     this.items = this.route.snapshot.data[PARADIGMAS_PATH.propertyNameData];

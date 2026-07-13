@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ANALISIS_KEY, APIS_KEY, EJECUCION_KEY, GIT_KEY, LinkReferencia, UML_KEY, VERSIONAMIENTO_REF }
 from 'src/app/models/linkReferencia';
@@ -24,7 +24,7 @@ export class VersionamientoComponent implements OnInit {
 
   previousAndNextSection!: PreviousAndNextSection;
 
-  constructor(private route: ActivatedRoute) {}
+  private route = inject(ActivatedRoute);
 
   ngOnInit(): void {
     this.items = this.route.snapshot.data[VERSIONAMIENTO_PATH.propertyNameData];

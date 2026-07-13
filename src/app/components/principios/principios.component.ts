@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ARQUITECTURAS_KEY, LinkReferencia, PARADIGMAS_KEY, PATRONES_KEY, POO_KEY, PRINCIPIOS_REF }
 from 'src/app/models/linkReferencia';
@@ -24,7 +24,7 @@ export class PrincipiosComponent implements OnInit {
 
   previousAndNextSection!: PreviousAndNextSection;
 
-  constructor(private route: ActivatedRoute) {}
+  private route = inject(ActivatedRoute);
 
   ngOnInit(): void {
     this.items = this.route.snapshot.data[PRINCIPIOS_PATH.propertyNameData];

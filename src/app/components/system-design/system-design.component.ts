@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { LinkReferencia, PERSISTENCY_ADVANCED_KEY, META_CARACTERISTICAS_KEY, ANALISIS_DATA_KEY,
   ARQUITECTURAS_KEY, PERSISTENCY_KEY, REQUISITOS_KEY, PEOPLE_KEY, LEYES_KEY, CI_CD_KEY, APIS_KEY, NUBE_KEY, UML_KEY,
@@ -25,7 +25,7 @@ export class SystemDesignComponent implements OnInit {
 
   previousAndNextSection!: PreviousAndNextSection;
 
-  constructor(private route: ActivatedRoute) {}
+  private route = inject(ActivatedRoute);
 
   ngOnInit(): void {
     this.items = this.route.snapshot.data[SYSTEM_DESIGN_PATH.propertyNameData];

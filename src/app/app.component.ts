@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { Meta } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import { fromEvent } from 'rxjs';
@@ -31,9 +31,9 @@ export class AppComponent implements OnInit {
   
   buttonChangueMode = false;
   
-  // https://usefulangle.com/post/243/change-browser-address-bar-theme-color-with-html-meta-tag
-  constructor(private meta: Meta, private router: Router) {}
-  
+  private meta = inject(Meta);
+  private router = inject(Router);
+
   ngOnInit(): void {
     this.setModeConfig();
     this.setColorAdressBar();

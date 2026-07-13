@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { LAST_ITEM, LAST_UPDATE, LinkReferencia } from 'src/app/models/linkReferencia';
 
@@ -11,7 +11,7 @@ const references = new LinkReferencia()
 })
 export class HomeComponent {
 
-  constructor(private router: Router) { }
+  private router = inject(Router);
 
   public routeTo(component: string): void {
     this.router.navigateByUrl(`/${component}`)

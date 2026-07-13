@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges } from '@angular/core';
+import { Component, Input, OnChanges, inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { LinkReferencia } from 'src/app/models/linkReferencia';
 import { Referencia } from 'src/app/models/models';
@@ -19,7 +19,7 @@ export class ExtraInfoComponent implements OnChanges {
 
   components: Map<string, Referencia> = new Map<string, Referencia>([]);
 
-  constructor(private router: Router) { }
+  private router = inject(Router);
 
   ngOnChanges(): void {
     

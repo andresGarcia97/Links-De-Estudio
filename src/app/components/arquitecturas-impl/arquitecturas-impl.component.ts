@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ANALISIS_KEY, ARQUITECTURAS_IMPL_REF, ARQUITECTURAS_KEY, LinkReferencia, METODOLOGIAS_KEY, NUBE_KEY, PATRONES_KEY,
   POO_KEY, UML_KEY }
@@ -25,7 +25,7 @@ export class ArquitecturasImplComponent implements OnInit {
 
   previousAndNextSection!: PreviousAndNextSection;
 
-  constructor(private route: ActivatedRoute) {}
+  private route = inject(ActivatedRoute);
 
   ngOnInit(): void {
     this.items = this.route.snapshot.data[ARQUITECTURAS_IMPL_PATH.propertyNameData];

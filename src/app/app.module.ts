@@ -1,5 +1,4 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
@@ -12,7 +11,6 @@ import { CoreModule } from './components/core/core.module';
   ],
   imports: [
     BrowserModule,
-    FormsModule,
     CoreModule,
     AppRoutingModule,
   ],

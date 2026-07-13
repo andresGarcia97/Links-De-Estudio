@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { APIS_REF, LinkReferencia, CONTENEDORES_KEY, SECURITY_KEY, CI_CD_KEY, WEB_KEY, NUBE_KEY, META_CARACTERISTICAS_KEY,
   OBSERVABILIDAD_KEY }
@@ -25,7 +25,7 @@ export class ApisTermsComponent implements OnInit {
 
   previousAndNextSection!: PreviousAndNextSection;
 
-  constructor(private route: ActivatedRoute) {}
+  private route = inject(ActivatedRoute);
 
   ngOnInit(): void {
     this.items = this.route.snapshot.data[APIS_PATH.propertyNameData];

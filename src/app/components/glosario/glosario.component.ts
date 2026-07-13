@@ -1,5 +1,5 @@
 import { KeyValuePipe } from '@angular/common';
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { LinkFuente } from 'src/app/models/linkFuente';
@@ -18,6 +18,9 @@ import { FilterPipe } from 'src/app/pipes/filter.pipe';
   ],
 })
 export class GlosarioComponent implements OnInit {
+  private router = inject(Router);
+  private route = inject(ActivatedRoute);
+
 
   @ViewChild("inputSearch") inputSearch!: ElementRef<HTMLInputElement>;
 
@@ -35,8 +38,6 @@ export class GlosarioComponent implements OnInit {
   onlyComponents = this.convertComponentsToArray(this.componentes);
 
   searchOnContent: Map<string, Referencia> = new Map();
-
-  constructor(private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     console.info("%c Temas: " + this.joinAllTemas.length, "color:#000; font-size: 16px;background:#FFBA08; font-weight: bold;");

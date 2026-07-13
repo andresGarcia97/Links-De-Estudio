@@ -2,7 +2,7 @@ import { Fuente } from "./models";
 
 export class LinkFuente {
 
-    public fuentes: Map<string, Fuente> = new Map([
+    public fuentes = new Map<string, Fuente>([
         ...FRONT,       ...BACK,
         ...SQL,         ...DOCKER,
         ...UTILS,       ...TESTING,

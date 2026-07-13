@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { BUENAS_PRACTICAS_KEY, CI_CD_KEY, CONOCIMIENTO_PSICOLOGICO_KEY, CONTENEDORES_KEY, FRAMEWORKS_KEY, LinkReferencia,
   NUBE_KEY, SECURITY_KEY, WEB_REF }
@@ -25,7 +25,7 @@ export class WebComponent implements OnInit {
 
   previousAndNextSection!: PreviousAndNextSection;
 
-  constructor(private route: ActivatedRoute) {}
+  private route = inject(ActivatedRoute);
 
   ngOnInit(): void {
     this.items = this.route.snapshot.data[WEB_PATH.propertyNameData];
