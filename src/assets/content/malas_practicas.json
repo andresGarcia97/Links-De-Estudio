@@ -27,14 +27,16 @@
   ],
   "contraGestion": [
     "- Asignación erronea del personal en roles inadecuados o sin la experiencia necesaria ",
-    "- Asumir información sin tener una confirmación previa",
-    "- Empezar a planear sin tener todas las variables a tener en cuenta",
-    "- No se debe abusar de la capacidad de multitarea del equipo",
-    "- La falta de comunicación en el equipo puede conllevar al desastre",
+    "- Asumir información sin tener una confirmación previa ",
+    "- Empezar a planear sin tener todas las variables a tener en cuenta, como objetivos, recursos, personal, tiempo, etc.. ",
+    "- La falta de comunicación o su ausencia en el equipo puede conllevar al desastre ",
     "- No poner limites es tan malo como ser inflexible, siempre hay un punto medio",
-    "- Entregar productos incompletos, lo ideal seria pedir más tiempo o recursos",
-    "- Asignación erronea del personal en roles inadecuados o sin la experiencia necesaria ",
-    "- Exceso de control, cerrando el paso a nuevas iniciativas y causando descontento en el equipo"
+    "",
+    "- Entregar productos incompletos o con retrasos, lo ideal seria pedir más tiempo o recursos en la medida que las limitaciones lo permitan ",
+    "- Los entregables del proyecto cambian a medida que avanza el proyecto, sin modificar el alcance previsto ",
+    "- Exceso de control, cerrando el paso a nuevas iniciativas y causando descontento en el equipo",
+    "- Expectativas poco realistas sobre el proyecto, donde el exito no es viable o las condiciones no son idoneas ",
+    "- Problemas de transparencia, como falta de documentación, cronogramas poco claros, medición de objetivos, gestión del esfuerzo, etc.. "
   ],
   "contraAgilidad": [
     "- Usar practicas tecnicas o metodos sin los comportamientos de una cultura agil ",

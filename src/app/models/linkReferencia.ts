@@ -743,13 +743,14 @@ export const USER_HISTORIES = new Map<string, Referencia>([
 
 export const MALAS_PRACTICAS_KEY = 'Malas-Practicas';
 export const MALAS_PRACTICAS_REF = new Map<string, Referencia>([
-    //['callbackhell', new Referencia('https://codearmy.co/que-es-el-callback-hell-y-como-evitarlo-4af418a6ed14', 'Cadena de llamados asincronos', MALAS_PRACTICAS_KEY, 'Callback Hell')],
     [Keys.MALAS_PRACTICAS_CALLBACK_HELL, new Referencia('https://dev.to/shameel/callback-callback-hell-promise-chaining-and-asyncawait-in-javascript-120i', 'Cadena de llamados asincronos', MALAS_PRACTICAS_KEY, 'Callback Hell', '', '2025/04/05')],
     [Keys.MALAS_PRACTICAS_CONTRA_CALIDAD, new Referencia('https://softgrade.mx/5-causas-afectan-la-calidad-software/', 'En contra de la calidad', MALAS_PRACTICAS_KEY, 'Contra la calidad', '', '2025/10/05')
         .addRelatedItems(Keys.AGILES_ESTIMATION_LAWS, Keys.REQUISITOS_BUSINESS_VALUE, Keys.PATRONES_GOF)
     ],
-    //['contraGestion', new Referencia('https://blog.gft.com/es/2016/01/20/las-10-malas-practicas-mas-comunes-en-la-gestion-de-proyectos/', 'En contra de la gestión', MALAS_PRACTICAS_KEY, 'Contra la gestion')],
-    [Keys.MALAS_PRACTICAS_CONTRA_GESTION, new Referencia('https://www.smartprecisesolutions.com/2018/01/malas-practicas-en-la-gestion-de-proyectos/', 'En contra de la gestión', MALAS_PRACTICAS_KEY, 'Contra la gestion', '', '2024/05/08')],
+    [Keys.MALAS_PRACTICAS_CONTRA_GESTION, new Referencia('https://asana.com/es/resources/why-projects-fail', 'En contra de la gestión', MALAS_PRACTICAS_KEY, 'Contra la gestion', '', '2026/07/13')
+        .addRelatedItems(Keys.TESTING_TRIANGULO, Keys.PEOPLE_GESTION_EXPECTATIVAS)
+        .addMoreReferences('https://www.pwc.com/my/en/perspective/workforce/190724-the-rise-of-value-management-office.html')
+    ],
     [Keys.MALAS_PRACTICAS_CONTRA_AGILIDAD, new Referencia('https://giovannycifuentes.com/los-6-antipatrones-en-la-adopcion-de-agilidad-que-los-lideres-deberian-conocer/', 'En contra de las metodologias agiles', MALAS_PRACTICAS_KEY, 'Contra la Agilidad', '2023/02/25')],
     [Keys.MALAS_PRACTICAS_CONTRA_SCRUM, new Referencia('https://blog.palo-it.com/es/antipatrones-comunes-en-scrum', 'Malas practicas en SCRUM', MALAS_PRACTICAS_KEY, 'Contra SCRUM', '2023/05/01')],
     [Keys.MALAS_PRACTICAS_DEATH_BY_MICROSERVICES, new Referencia('https://renegadeotter.com/2023/09/10/death-by-a-thousand-microservices.html', 'Muerte por Microservicios', MALAS_PRACTICAS_KEY, 'Muerte por Microservicios', '2023/09/14')
