@@ -960,9 +960,16 @@ export const APIS_REF = new Map<string, Referencia>([
     [Keys.APIS_IDEMPOTENCIA, new Referencia('https://blog.bitsrc.io/design-an-idempotent-api-in-2024-d4a3cf8d8bf2', 'APIs Idempotentes', APIS_KEY, 'Idempotencia', '2024/02/17')],
     [Keys.APIS_REST_VS_MESSAGING, new Referencia('https://solace.com/blog/experience-awesomeness-event-driven-microservices/', 'REST VS Messaging & Microservicios', APIS_KEY, 'REST VS Messaging', '2024/03/15')],
     [Keys.APIS_API_GOVERNANCE, new Referencia('https://swagger.io/resources/articles/best-practices-in-api-governance/', 'Gobernanza', APIS_KEY, 'Gobernanza', '2024/06/01')],
-    [Keys.APIS_API_FIRST, new Referencia('https://www.postman.com/api-first/', 'API-First', APIS_KEY, 'API-First', '2024/09/13').addRelatedItems(Keys.VERSIONAMIENTO_LICENSES_AND_DATA)],
-    [Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, new Referencia('https://www.kentik.com/kentipedia/latency-vs-throughput-vs-bandwidth/', 'Latencia, Rendimiento, Ancho de banda', APIS_KEY, 'Latencia & Rendimiento', '2025/03/29').addRelatedItems(Keys.NUBE_LATENCY, Keys.SECURITY_ATTACK_MODEL_OSI)],
-    [Keys.APIS_RATE_LIMITING, new Referencia('https://blog.sagyamthapa.com.np/interactive-guide-to-rate-limiting', 'Rate Limiting', APIS_KEY, 'Rate Limiting', '2025/06/15').addRelatedItems(Keys.SECURITY_ATTACK_MODEL_OSI, Keys.SYSTEM_DESIGN_CONCEPTS_I)],
+    [Keys.APIS_API_FIRST, new Referencia('https://www.postman.com/api-first/', 'API-First', APIS_KEY, 'API-First', '2024/09/13')
+        .addRelatedItems(Keys.VERSIONAMIENTO_LICENSES_AND_DATA)
+    ],
+    [Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, new Referencia('https://www.kentik.com/kentipedia/latency-vs-throughput-vs-bandwidth/', 'Latencia, Rendimiento, Ancho de banda', APIS_KEY, 'Latencia & Rendimiento', '2025/03/29')
+        .addRelatedItems(Keys.NUBE_LATENCY, Keys.SECURITY_ATTACK_MODEL_OSI)
+    ],
+    [Keys.APIS_RATE_LIMITING, new Referencia('https://blog.sagyamthapa.com.np/interactive-guide-to-rate-limiting', 'Rate Limiting', APIS_KEY, 'Rate Limiting', '2025/06/15', '2026/07/13')
+        .addRelatedItems(Keys.SECURITY_ATTACK_MODEL_OSI, Keys.SYSTEM_DESIGN_CONCEPTS_I, Keys.OBSERVABILIDAD_COMMON_METRICS)
+        .addMoreReferences('https://blog.axway.com/learning-center/apis/api-design/api-quota')
+    ],
     [Keys.APIS_API_FIRST_VS_CODE_FIRST, new Referencia('https://www.enmilocalfunciona.io/servicios-web-restful-ii-api-first-vs-code-first/', 'API-First VS Code-First', APIS_KEY, 'API-First VS Code-First', '2025/06/16')
         .addRelatedItems(Keys.POO_DESIGN_BY_CONTRACT, Keys.TESTING_ADVANCED_APDEX)
         .addMoreReferences('https://swagger.io/blog/code-first-vs-design-first-api/')
