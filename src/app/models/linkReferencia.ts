@@ -411,17 +411,19 @@ export const COMPILACION_REF = new Map<string, Referencia>([
     ],
     [Keys.COMPILACION_TREE_SHAKING, new Referencia('https://developer.mozilla.org/en-US/docs/Glossary/Tree_shaking', 'TreeShaking', COMPILACION_KEY, 'Tree Shaking')],
     [Keys.COMPILACION_GRAFOS, new Referencia('https://www.grapheverywhere.com/grafos-que-son-tipos-orden-y-herramientas-de-visualizacion/', 'Grafos', COMPILACION_KEY, 'Grafos')],
-    //['compilacionAnticipada', new Referencia('https://hmong.es/wiki/Ahead-of-time_compilation', 'Compilación AOT', COMPILACION_KEY, 'Compilación anticipada')],
     [Keys.COMPILACION_AOT, new Referencia('https://www.ibm.com/docs/es/sdk-java-technology/8?topic=reference-aot-compiler', 'Compilación AOT', COMPILACION_KEY, 'Compilación anticipada', '', '2024/11/23')],
-    //['duckTyping', new Referencia('https://towardsdatascience.com/duck-typing-python-7aeac97e11f8', 'Duck Typing', COMPILACION_KEY, 'Duck Typing')],
     [Keys.COMPILACION_DUCK_TYPING, new Referencia('https://devopedia.org/duck-typing', 'Duck Typing', COMPILACION_KEY, 'Duck Typing', '', '2024/11/23')],
-    //['sdkVsApi', new Referencia('https://geekflare.com/es/sdk-and-api-comparison/', 'SDK vs API', COMPILACION_KEY, 'SDK vs API')],
     [Keys.COMPILACION_SDK_VS_API, new Referencia('https://www.g2.com/articles/sdk', 'SDK vs API', COMPILACION_KEY, 'SDK vs API', '', '2025/01/06')],
     [Keys.COMPILACION_CASTING, new Referencia('https://www.w3schools.com/java/java_type_casting.asp', 'Casting', COMPILACION_KEY, 'Casteo de Datos')],
     [Keys.COMPILACION_VERBOSITY, new Referencia('https://softwareengineering.stackexchange.com/questions/141175/why-is-verbosity-bad-for-a-programming-language', 'Verbosidad', COMPILACION_KEY, 'Verbosidad', '2023/03/31')],
     [Keys.COMPILACION_TIPOS_LENGUAJE_PROPOSITO, new Referencia('https://ed.team/blog/como-se-clasifican-los-lenguajes-de-programacion', 'Tipos de lenguajes por proposito', COMPILACION_KEY, 'Proposito', '2023/11/09')],
-    [Keys.COMPILACION_AUTOMATAS, new Referencia('https://medium.com/@maniakhitoccori/qu%C3%A9-es-un-aut%C3%B3mata-fbf309138755', 'Automatas', COMPILACION_KEY, 'Automatas', '2024/02/19')
+    [Keys.COMPILACION_DETERMINISTIC_NON_DETERMINISTIC, new Referencia('https://www.geeksforgeeks.org/dsa/difference-between-deterministic-and-non-deterministic-algorithms/', 'Determinista & No Determinista', COMPILACION_KEY, 'Determinismo', '2026/07/12')
+        .addRelatedItems(Keys.SECURITY_ENTROPIA_KEYS, Keys.TESTING_ADVANCED_SMELLS_CODES_II, Keys.TESTING_TYPES)
+        .addMoreReferences('https://martinfowler.com/articles/nonDeterminism.html', 'https://www.flowhunt.io/es/glosario/deterministic-model/')
+    ],
+    [Keys.COMPILACION_AUTOMATAS, new Referencia('https://medium.com/@maniakhitoccori/qu%C3%A9-es-un-aut%C3%B3mata-fbf309138755', 'Automatas', COMPILACION_KEY, 'Automatas', '2024/02/19', '2026/07/12')
         .addRelatedItems(Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS)
+        .addMoreReferences('https://cs.stackexchange.com/questions/22472/why-is-non-determinism-a-useful-concept')
     ],
     [Keys.COMPILACION_STRUCTURE_COMPILATOR, new Referencia('https://vicente-aguilera-perez.medium.com/estructura-general-de-un-compilador-df97892f91c3', 'Estructura de un compilador I', COMPILACION_KEY, 'Estructura general I', '2024/02/28')],
     [Keys.COMPILACION_ELEMENTS_COMPILATOR, new Referencia('https://vicente-aguilera-perez.medium.com/estructura-general-de-un-compilador-df97892f91c3', 'Estructura de un compilador II', COMPILACION_KEY, 'Estructura general II', '2024/02/28')],
@@ -1307,8 +1309,8 @@ export const TESTING_ADVANCED_REF = new Map<string, Referencia>([
     [Keys.TESTING_ADVANCED_USES_CASES, new Referencia('https://blogs.encamina.com/piensa-en-software-desarrolla-en-colores/qa-caso-de-uso-vs-caso-de-prueba/', 'Casos de uso', TESTING_ADVANCED_KEY, 'Casos de uso', '', '2025/05/04')
         .addRelatedItems(Keys.USER_HISTORIES_USE_CASE_REQUISITOS, Keys.UML_USE_CASES)
     ],
-    [Keys.TESTING_ADVANCED_SMELLS_CODES1, new Referencia('https://codingcraftsman.wordpress.com/2018/09/27/test-smells/', 'Smells codes en testing I', TESTING_ADVANCED_KEY, 'Smells codes en testing I')],
-    [Keys.TESTING_ADVANCED_SMELLS_CODES2, new Referencia('https://codingcraftsman.wordpress.com/2018/09/27/test-smells/', 'Smells codes en testing II', TESTING_ADVANCED_KEY, 'Smells codes en testing II')],
+    [Keys.TESTING_ADVANCED_SMELLS_CODES_I, new Referencia('https://codingcraftsman.wordpress.com/2018/09/27/test-smells/', 'Smells codes en testing I', TESTING_ADVANCED_KEY, 'Smells codes en testing I')],
+    [Keys.TESTING_ADVANCED_SMELLS_CODES_II, new Referencia('https://codingcraftsman.wordpress.com/2018/09/27/test-smells/', 'Smells codes en testing II', TESTING_ADVANCED_KEY, 'Smells codes en testing II')],
     [Keys.TESTING_ADVANCED_MUTATION, new Referencia('https://spa.myservername.com/what-is-mutation-testing', 'Tests de mutación', TESTING_ADVANCED_KEY, 'Pruebas de mutación')],
     [Keys.TESTING_ADVANCED_ANTI_PATTERNS, new Referencia('https://agileinaflash.blogspot.com/2009/06/tdd-antipatterns.html', 'TDD Antipatrones', TESTING_ADVANCED_KEY, 'TDD Antipatrones', '2024/07/14')
         .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_TDD, Keys.TESTING_DATA_SUT_DOC)

@@ -129,7 +129,7 @@
     "- Aca se ha de tener en cuenta factores como que proceso se va a realizar, que actor lo va ejecutar y como lo hara ",
     "- Estos detallan una o varias funcionalidades del sistema y como se agrupan para obtener un resultado final "
   ],
-  "codeSmellsTests1": [
+  "smellCodesTests-I": [
     "<strong>Convenciones de nombres:</strong>",
     "<strong>- Mistaken identity:</strong> Cuando el nombre de una prueba es contrario a lo que esta haciendo ",
     "<strong>- Anonymous test case:</strong> Cuando su nombre no describe lo que se esta probando ",
@@ -165,7 +165,7 @@
     "<strong>- Wheel of fortune</strong> Los datos aleatorios pueden conducir al fallo de las pruebas, haciendolas erraticas ",
     "<strong>- Time Bomb Data:</strong> Cuando se prueban informacion con fechas, si no se tiene cuidado estos datos pueden volverse erraticos "
   ],
-  "codeSmellsTests2": [
+  "smellCodesTests-II": [
     "<strong>Aserciones - frameworks</strong>",
     "<strong>- Chat logging:</strong> Se usan mensajes por consola o logs para suplir el fallo de una asercion ",
     "<strong>- Bumbling assertions:</strong> Se escogen a voluntad afirmaciones poco sofisticadas y de fácil verificacion ",
