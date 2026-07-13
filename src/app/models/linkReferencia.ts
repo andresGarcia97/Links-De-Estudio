@@ -942,11 +942,9 @@ export const APIS_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.VERSIONAMIENTO_DOCUMENTATION, Keys.ARQUITECTURAS_IMPL_CLIENTE_SERVIDOR)
         .addMoreReferences('https://www.computerweekly.com/es/definicion/Interfaz-de-programacion-de-aplicaciones-API')
     ],
-    //['restfull', new Referencia('http://adwe.es/general/colaboraciones/servicios-web-restful-con-http-parte-i-introduccion-y-bases-teoricas/', 'Rest & Restfull', APIS_KEY, 'Rest & RestFull')],
     [Keys.APIS_REST_FULL, new Referencia('https://www.enmilocalfunciona.io/servicios-web-restful-i-introduccion/', 'Rest & Restfull', APIS_KEY, 'Rest & RestFull', '', '2025/05/25')
         .addMoreReferences('https://aws.amazon.com/what-is/restful-api/')
     ],
-    //['caracteristicas', new Referencia('https://adwe.es/codigo/apis-codigo/servicios-web-restful-con-http-parte-ii-ejemplos/', 'Caracteristicas de una api restfull', APIS_KEY, 'Estandares RestFull')],
     [Keys.APIS_MADURITY, new Referencia('https://restfulapi.net/richardson-maturity-model/', 'Nivel de madurez de una API', APIS_KEY, 'Nivel de Madurez')],
     [Keys.APIS_HTTP_CODES, new Referencia('https://developer.mozilla.org/es/docs/Web/HTTP/Status', 'Codigos Http', APIS_KEY, 'Codigos HTTP')],
     [Keys.APIS_HATEOAS, new Referencia('https://www.adictosaltrabajo.com/2013/12/02/spring-hateoas/', 'HATEOAS', APIS_KEY, 'HATEOAS', '2022/11/04')],
@@ -957,7 +955,10 @@ export const APIS_REF = new Map<string, Referencia>([
     ],
     [Keys.APIS_URI, new Referencia('https://www.techtarget.com/whatis/definition/URI-Uniform-Resource-Identifier', 'Uniform Resource Identifier', APIS_KEY, 'URI & URL', '2023/11/03', '2025/08/09')],
     [Keys.APIS_TESTING, new Referencia('https://blog.bytebytego.com/p/ep83-explaining-9-types-of-api-testing#%C2%A7explaining-types-of-api-testing', 'API Testing', APIS_KEY, 'Testing in APIs', '2023/11/13')],
-    [Keys.APIS_IDEMPOTENCIA, new Referencia('https://blog.bitsrc.io/design-an-idempotent-api-in-2024-d4a3cf8d8bf2', 'APIs Idempotentes', APIS_KEY, 'Idempotencia', '2024/02/17')],
+    [Keys.APIS_IDEMPOTENCIA, new Referencia('https://restfulapi.net/idempotent-rest-apis/', 'APIs Idempotentes', APIS_KEY, 'APIs & Idempotencia', '2024/02/17', '2026/07/13')
+        .addRelatedItems(Keys.MICROSERVICES_ADVANCED_IDEMPOTENCY_II)
+        .addMoreReferences('https://temporal.io/blog/idempotency-and-durable-execution')
+    ],
     [Keys.APIS_REST_VS_MESSAGING, new Referencia('https://solace.com/blog/experience-awesomeness-event-driven-microservices/', 'REST VS Messaging & Microservicios', APIS_KEY, 'REST VS Messaging', '2024/03/15')],
     [Keys.APIS_API_GOVERNANCE, new Referencia('https://swagger.io/resources/articles/best-practices-in-api-governance/', 'Gobernanza', APIS_KEY, 'Gobernanza', '2024/06/01')],
     [Keys.APIS_API_FIRST, new Referencia('https://www.postman.com/api-first/', 'API-First', APIS_KEY, 'API-First', '2024/09/13')
@@ -987,7 +988,7 @@ export const APIS_REF = new Map<string, Referencia>([
     ],
     [Keys.APIS_WEB_HOOK_VS_SOCKET_VS_SSE, new Referencia('https://cristiansuarez.dev/arquitectura/sse-vs-webhooks-vs-websockets/', 'Websocket Vs Webhook Vs SSE', APIS_KEY, 'SSE, Websocket, Webhook', '2026/01/10')
         .addRelatedItems(Keys.MICROSERVICES_EVENTS_VS_REQUEST_RESPONSE)
-    ],
+    ]
 ]);
 
 export const ANALISIS_DATA_KEY = 'Analisis-datos';
