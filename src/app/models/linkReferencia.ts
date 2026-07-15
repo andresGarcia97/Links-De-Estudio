@@ -177,6 +177,9 @@ export const ANALISIS_REF = new Map<string, Referencia>([
     [Keys.ANALISIS_ASYNCHRONUS_WORKFLOW, new Referencia('https://www.linkedin.com/posts/raulcejas04_softwarearchitecture-distributedsystems-backendengineering-share-7469727928717762560-bKEk/', 'Kafka vs RabbitMQ vs SQS', ANALISIS_KEY, 'Flujo asincrono', '2026/06/25')
         .addRelatedItems(Keys.ARQUITECTURAS_IMPL_EVENT_DRIVEN, Keys.SYSTEM_DESIGN_QUEUES, Keys.ANALISIS_DATA_STREAMING_VS_MESSAGING, Keys.PATRONES_ADVANCED_MESSAGING)
         .addMoreReferences('https://danubedata.ro/blog/rabbitmq-vs-kafka-vs-sqs-comparison-2026')
+    ],
+    [Keys.ANALISIS_EXCEPTION_DESIGN, new Referencia('https://medium.com/but-it-works-on-my-machine/the-trap-of-checked-exceptions-when-to-catch-and-when-to-throw-in-java-ffec454b00bb', 'Analisis & Excepciones', ANALISIS_KEY, 'Analisis & Excepciones', '2026/07/14')
+        .addRelatedItems(Keys.BUENAS_PRACTICAS_RESULT_OBJECT, Keys.BUENAS_PRACTICAS_EXCEPTIONS, Keys.MALAS_PRACTICAS_LOG_AND_THROW, Keys.META_CARACTERISTICAS_EXCEPTIONS, Keys.POO_HERENCIA, Keys.COMPILACION_ERRORS_AND_EXCEPTIONS, Keys.POO_ABSTRACTIONS)
     ]
 ]);
 
@@ -354,7 +357,9 @@ export const BUENAS_PRACTICAS_REF = new Map<string, Referencia>([
         .addMoreReferences('https://medium.com/@csvaibhavpasrija/838292f305fd')
     ],
     [Keys.BUENAS_PRACTICAS_GOOD_HABITS, new Referencia('https://vadimkravcenko.com/shorts/habits-of-great-software-engineers/', 'Buenos habitos de un desarrollador', BUENAS_PRACTICAS_KEY, 'Buenos habitos')],
-    [Keys.BUENAS_PRACTICAS_FUNCTIONS, new Referencia('https://medium.com/@akineralkan/clean-code-notes-chapter-3-functions-de4a30191300', 'Buenas practicas, Funciones', BUENAS_PRACTICAS_KEY, 'Funciones', '2024/10/18').addRelatedItems(Keys.PATRONES_ADVANCED_CQRS)],
+    [Keys.BUENAS_PRACTICAS_FUNCTIONS, new Referencia('https://medium.com/@akineralkan/clean-code-notes-chapter-3-functions-de4a30191300', 'Buenas practicas, Funciones', BUENAS_PRACTICAS_KEY, 'Funciones', '2024/10/18')
+        .addRelatedItems(Keys.PATRONES_ADVANCED_CQRS)
+    ],
     [Keys.BUENAS_PRACTICAS_AGGREGATES, new Referencia('https://www.kranio.io/blog/de-bueno-a-excelente-en-ddd-entendiendo-aggregates-y-aggregate-roots-en-domain-driven-design---3-10', 'Aggregates y Aggregate Roots', BUENAS_PRACTICAS_KEY, 'Agregados', '2025/04/20')
         .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.META_ESTRUCTURAS_VALUE_OBJECTS, Keys.POO_DESIGN_BY_CONTRACT_PARTS, Keys.ANALISIS_COHESERS_DECOUPLERS)
     ],
@@ -782,21 +787,21 @@ export const META_CARATERISTICAS_REF = new Map<string, Referencia>([
     [Keys.META_CARACTERISTICAS_META_CLASE, new Referencia('https://quesignificado.org/que-es-una-metaclase/', '¿ Que es una meta clase ?', META_CARACTERISTICAS_KEY, 'Meta Clase', '', '2025/05/12')
         .addRelatedItems(Keys.POO_POO, Keys.TESTING_MOCKS)
     ],
-    //['reflexion', new Referencia('https://es.linkfang.org/wiki/Reflexi%C3%B3n_(inform%C3%A1tica)', 'Auto mutabilidad del codigo', META_CARACTERISTICAS_KEY, 'Reflexión')],
     [Keys.META_CARACTERISTICAS_ASSERTS, new Referencia('https://www.adictosaltrabajo.com/2016/01/07/haz-tu-codigo-mas-fiable-con-asserts/', 'Comprobaciones del codigo', META_CARACTERISTICAS_KEY, 'Aserciones', '', '2025/05/12')],
-    [Keys.META_CARACTERISTICAS_EXCEPTIONS, new Referencia('https://universidad-de-los-andes.gitbooks.io/fundamentos-de-programacion/content/Nivel4/5_ManejoDeLasExcepciones.html', 'Lanzamiento y manejo de excepciones', META_CARACTERISTICAS_KEY, 'Excepciones')],
+    [Keys.META_CARACTERISTICAS_EXCEPTIONS, new Referencia('https://universidad-de-los-andes.gitbooks.io/fundamentos-de-programacion/content/Nivel4/5_ManejoDeLasExcepciones.html', 'Excepciones', META_CARACTERISTICAS_KEY, 'Excepciones')],
     [Keys.META_CARACTERISTICAS_CACHE, new Referencia('https://medium.com/bancolombia-tech/dise%C3%B1ando-una-estrategia-de-cach%C3%A9-39366876009b', 'Tipos de Cache', META_CARACTERISTICAS_KEY, 'Tipos de Cache')],
     [Keys.META_CARACTERISTICAS_ARGUMENTS, new Referencia('https://picodotdev.github.io/blog-bitix/2021/01/en-java-los-argumentos-se-pasan-por-valor-o-por-referencia/', 'Argumentos por valor y por referencia', META_CARACTERISTICAS_KEY, 'Argumentos', '', '2025/05/12')
         .addRelatedItems(Keys.POO_INMUTABILITY)
     ],
-    //['ortogonalidad', new Referencia('https://qastack.mx/programming/1527393/what-is-orthogonality', 'Ortogonalidad', META_CARACTERISTICAS_KEY, 'Ortogonalidad')],
     [Keys.META_CARACTERISTICAS_ORTHOGONALITY, new Referencia('https://www.freecodecamp.org/news/orthogonality-in-software-engineering', 'Ortogonalidad', META_CARACTERISTICAS_KEY, 'Ortogonalidad', '', '2025/05/12')
         .addRelatedItems(Keys.ANALISIS_COHESERS_DECOUPLERS)
+        .addMoreReferences('https://qastack.mx/programming/1527393/what-is-orthogonality')
     ],
     [Keys.META_CARACTERISTICAS_BOILER_PLATE, new Referencia('https://www.freecodecamp.org/news/whats-boilerplate-and-why-do-we-use-it-let-s-check-out-the-coding-style-guide-ac2b6c814ee7/', 'Boiler Plate (codigo repetitivo)', META_CARACTERISTICAS_KEY, 'BoilerPlate')],
     [Keys.META_CARACTERISTICAS_RAW_TYPES, new Referencia('https://stackoverflow.com/questions/2770321/what-is-a-raw-type-and-why-shouldnt-we-use-it/', 'Tipos Crudos', META_CARACTERISTICAS_KEY, 'Tipos crudos', '', '2025/02/09')],
-    //['generics', new Referencia('https://medium.com/@AlexanderObregon/java-generics-type-safety-and-performance-a0864ca72a5a', 'Genericos', META_CARACTERISTICAS_KEY, 'Genericos', '2023/12/28')],
-    [Keys.META_CARACTERISTICAS_GENERICS, new Referencia('https://medium.com/@aqilzeka99/mastering-generics-in-java-interview-questions-571232c02af9', 'Genericos', META_CARACTERISTICAS_KEY, 'Genericos', '2023/12/28', '2024/12/01')],
+    [Keys.META_CARACTERISTICAS_GENERICS, new Referencia('https://medium.com/@aqilzeka99/mastering-generics-in-java-interview-questions-571232c02af9', 'Genericos', META_CARACTERISTICAS_KEY, 'Genericos', '2023/12/28', '2024/12/01')
+        .addMoreReferences('https://medium.com/@AlexanderObregon/java-generics-type-safety-and-performance-a0864ca72a5a')
+    ],
     [Keys.META_CARACTERISTICAS_ANOTATIONS, new Referencia('https://vaheaslanyan7.medium.com/the-java-interview-prep-handbook-50-questions-solved-code-examples-62fed44e3e6a', 'Anotaciones', META_CARACTERISTICAS_KEY, 'Anotaciones', '2024/06/30')
         .addRelatedItems(Keys.FRAMEWORKS_FRAMEWORKS, Keys.META_ESTRUCTURAS_DEPRECATION)
     ],
@@ -805,7 +810,7 @@ export const META_CARATERISTICAS_REF = new Map<string, Referencia>([
     ],
     [Keys.META_CARACTERISTICAS_TIPOS, new Referencia('https://wiki.uqbar.org/wiki/articles/esquemas-de-tipado.html', 'Sistema de Tipos', META_CARACTERISTICAS_KEY, 'Tipos', '2025/02/03')
         .addRelatedItems(Keys.PARADIGMAS_PARADIGMA_SCRIPTING, Keys.POO_POLIMORFISMO)
-    ],
+    ]
 ]);
 
 export const META_ESTRUCTURAS_KEY = 'Meta-Estructuras';

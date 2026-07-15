@@ -1,7 +1,3 @@
-# Pagina web
-
-Para acceder a la pagina o volver a ella, da click aqui [contenidoderepaso.web.app](https://contenidoderepaso.web.app/)
-
 # Acerca del contenido
 
 ```
@@ -20,7 +16,9 @@ Para acceder a la pagina o volver a ella, da click aqui [contenidoderepaso.web.a
 | &rarr; | → | Flecha hacia la derecha (rightwards arrow). |
 | &uarr; | ↑ | Flecha hacia arriba (upwards arrow). |
 | &#x2713; | ✓ | Marca de verificación / check (U+2713). |
+| <ins>&#x2713;</ins>|✓ | Marca de verificación color verde (mediante CSS) |
 | &#x2717; | ✗ | Marca de cruz / equis (BALLOT X, U+2717). Indica fallo/error. |
+| <del>&#x2717;</del> | ✗ | Marca de cruz color rojo (mediante CSS) |
 | &#x25FD; | ◽ | Cuadrado medio pequeño blanco (WHITE MEDIUM SMALL SQUARE, U+25FD). |
 | &#x25A2; | ▢ | Cuadrado vacío / cuadrado blanco (WHITE SQUARE VARIANT, U+25A2). |
 | &asymp; | ≃ | Signo “asintóticamente igual” / parecido a (U+2243). Se usa como “≈ / ≃” para aproximación. |
