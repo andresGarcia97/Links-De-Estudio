@@ -1460,7 +1460,7 @@ export const PRINCIPIOS_REF = new Map<string, Referencia>([
     ],
     [Keys.PRINCIPIOS_AHA, new Referencia('https://www.vladimirzdrazil.com/posts/aha-principle/', 'Avoid Hasty Abstractions', PRINCIPIOS_KEY, 'AHA', '2026/06/19')
         .addRelatedItems(Keys.MALAS_PRACTICAS_OVER_ENGINEERING, Keys.CONOCIMIENTOS_PSICOLOGICOS_SESGOS_COGNITIVOS)
-    ],
+    ]
 ]);
 
 export const SECURITY_KEY = 'Seguridad';
@@ -1495,8 +1495,9 @@ export const SECURITY_REF = new Map<string, Referencia>([
 
 export const SECURITY_ATTACKS_KEY = 'Ataques';
 export const SECURITY_ATTACKS_REF = new Map<string, Referencia>([
-    [Keys.SECURITY_ATTACK_FIREWALL, new Referencia('https://www.cisco.com/site/us/en/learn/topics/security/what-is-a-firewall.html', 'Firewall', SECURITY_ATTACKS_KEY, 'Firewall', '2024/06/16', '2025/05/18')
-        .addRelatedItems(Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.APIS_GATEWAY)
+    [Keys.SECURITY_ATTACK_FIREWALL, new Referencia('https://www.cisco.com/site/us/en/learn/topics/security/what-is-a-firewall.html', 'Firewall', SECURITY_ATTACKS_KEY, 'Firewall', '2024/06/16', '2026/07/16')
+        .addRelatedItems(Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.APIS_GATEWAY, Keys.APIS_RATE_LIMITING)
+        .addMoreReferences('https://www.cloudflare.com/es-es/learning/ddos/glossary/web-application-firewall-waf/')
     ],
     [Keys.SECURITY_ATTACK_PROTOCOLOS, new Referencia('https://www.websecurity.digicert.com/es/es/security-topics/what-is-ssl-tls-https', 'SSL, TSL, HTTPS', SECURITY_ATTACKS_KEY, 'SSL, TSL, HTTPS')],
     [Keys.SECURITY_ATTACK_PROXY, new Referencia('https://www.welivesecurity.com/la-es/2020/01/02/que-es-proxy-para-que-sirve/', 'Proxy & Proxy Inverso', SECURITY_ATTACKS_KEY, 'Proxy & Proxy Inverso', '', '2025/02/15')],
