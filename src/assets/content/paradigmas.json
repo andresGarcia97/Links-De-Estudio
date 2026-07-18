@@ -18,11 +18,18 @@
   ],
   "funcional": [
     "- Las acciones son delegadas a funciones propias del lenguaje, o funciones personalizadas, con ayuda del propio lenguaje ",
-    "<strong>- Funciones Puras:</strong> Dada una entrada siempre van a tener la misma salida",
-    "<strong>- Composición:</strong> Se pueden juntar y crear una secuencia y resultado diferente ",
-    "<strong>- Estados compartidos:</strong> Son los cambios visibles fuera de la función llamada ",
-    "<strong>- Mutabilidad & Inmutabilidad:</strong> Indican si una variable puede ser modificada o no despues de su creación ",
-    "<strong>- Efectos secundarios</strong> Todo cambio de estado, que se de por fuera de la función llamada, se evitan principalmente "
+    "",
+    "<strong>- Funciones Puras:</strong> Son totalmente independientes ya que dada una entrada siempre van a tener la misma salida ",
+    "<strong>- Funciones Impuras:</strong> Contienen uno o más efectos secundarios y su funcionamiento es No determinista ",
+    "<strong>- Composición:</strong> Las funciones se pueden juntar, crear nuevas secuencias y generar resultados diferentes ",
+    "",
+    "<strong>- Estados compartidos:</strong> Son datos mutables accedidos por varias funciones a la vez ",
+    "<strong>- Recursion:</strong> En los lenguajes funcionales no existen bucles <em>for</em> ni <em>while</em>, iterar se implementa mediante la recursión ",
+    "<strong>- Mutabilidad/Inmutabilidad:</strong> Indican si una variable puede ser modificada o no despues de su creación ",
+    "",
+    "<strong>- Efectos secundarios:</strong> Todo cambio de estado, que se de por fuera de la función llamada, se evita principalmente ",
+    "<strong>- Funciones de orden superior:</strong> Reciben una o más funciones como argumento, o retornan una función como resultado ",
+    "<strong>- Currificación (Currying):</strong> Transforma una función de múltiples argumentos en una secuencia de funciones que reciben un único argumento cada una "
   ],
   "scripting": [
     "- Son lenguajes no compilados y que se ejecutan directamente en el lado del cliente, aunque tambien existen en el lado del servidor ",
