@@ -100,6 +100,22 @@
     "<strong>Presupuesto de errores:</strong> Margenes admisibles para fallos del SLO, si este se sobrepasa, se deben destinar recursos para cumplirlo ",
     " &bull; Por ejemplo si se tiene un tiempo de actividad del 99,95% se permite un periodo de inactividad del 0,05% "
   ],
+  "time-series": [
+    "- Las bases de datos de series temporales son uno de los elementos en que se basan las métricas para que tengan datos fiables y duraderos ",
+    "- Están especializadas para almacenar y manipular datos con marcas de tiempo de manera eficiente ",
+    "- Una <strong>serie temporal</strong> es una secuencia de puntos de datos donde cada punto es un par {marca de tiempo, valor numérico} ",
+    "- Esta representación simple de datos puede ser engañosa, cuando la escala crece, con cientos de servicios generando datos, ",
+    " - se pueden llegar a gestionar millones de series activas simultáneamente ",
+    "",
+    "- Una via importante de la optimización de estos datos es la <strong>compresión</strong> que reduce la cantidad de bits necesarios para representar los mismos datos ",
+    "- La compresión se basa en el principio de que las marcas de tiempo siempre son crecientes, y que conociendo la marca de tiempo inicial, la siguiente ",
+    " - solo estara desplazada con respecto a la anterior, se crea la <em>codificación delta</em> que almacena las diferencias en lugar de solo valores sin procesar ",
+    "",
+    "- Las metricas suelen tener multiples <strong>tags</strong> que son parametros clave-valor que se pueden adjuntar a una serie de tiempo ",
+    "- Los tags son el complemento de los valores normales, no solo basta con incrementar un contador de errores, es util saber el tipo y el contexto ",
+    "- Cada combinación de tags genera una serie temporal distinta, pudiéndose graficar individualmente, creciendo en la medida ",
+    " - que las combinaciones tengan más variabilidad, esto puede llegar a convertirse en un problema de alta cardinalidad "
+  ],
   "high-cardinality": [
     "- La cardinalidad se puede definir como la cantidad de series de tiempo únicas generadas por las combinaciones posibles de etiquetas de una métrica ",
     "- Esta crece de manera exponencial con la cantidad de etiquetas y los valores únicos que cada una pueda tomar ",

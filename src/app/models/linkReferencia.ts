@@ -2008,6 +2008,9 @@ export const OBSERVABILIDAD_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_SLDC, Keys.CD_CI_DEV_OPS)
         .addMoreReferences('https://sre.google/books/')
     ],
+    [Keys.OBSERVABILIDAD_TIME_SERIES, new Referencia('https://www.honeycomb.io/blog/time-series-database', 'Time Series', OBSERVABILIDAD_KEY, 'Time Series', '2026/07/17')
+        .addRelatedItems(Keys.PERSISTENCY_DB_TYPES)
+    ],
     [Keys.OBSERVABILIDAD_CARDINALITY, new Referencia('https://grafana.com/blog/what-are-cardinality-spikes-and-why-do-they-matter/', 'Alta Cardinalidad', OBSERVABILIDAD_KEY, 'Cardinalidad', '2026/03/04')
         .addMoreReferences('https://chronosphere.io/learn/what-is-high-cardinality/')
     ],
@@ -2017,7 +2020,7 @@ export const OBSERVABILIDAD_REF = new Map<string, Referencia>([
     ],
     [Keys.OBSERVABILIDAD_CORRELATION_CAUSATION, new Referencia('https://www.jmp.com/es/statistics-knowledge-portal/what-is-correlation', 'Correlación & Causalidad', OBSERVABILIDAD_KEY, 'Correlación & Causalidad', '2025/03/08')
         .addRelatedItems(Keys.TESTING_GRAFOS_CAUSA_EFECTO)
-        .addMoreReferences('https://www.jmp.com/es/statistics-knowledge-portal/what-is-correlation/correlation-vs-causation')
+        .addMoreReferences('https://www.jmp.com/es/statistics-knowledge-portal/what-is-correlation/correlation-vs-causation', 'https://tylervigen.com/spurious-correlations')
     ]
 ]);
 
