@@ -922,7 +922,7 @@ export const NUBE_REF = new Map<string, Referencia>([
     [Keys.NUBE_LOAD_BALANCING, new Referencia('https://aws.amazon.com/es/what-is/load-balancing/', 'Balancear la Carga', NUBE_KEY, 'Balanceador de carga', '2023/12/30', '2025/05/01')],
     [Keys.NUBE_LATENCY, new Referencia('https://blog.bytebytego.com/p/ep110-top-5-strategies-to-reduce#top-strategies-to-reduce-latency', 'Reducir la latencia', NUBE_KEY, 'Reducir la Latencia', '2024/05/12')],
     [Keys.NUBE_TWO_PHASE_COMMIT, new Referencia('https://hongilkwon.medium.com/when-to-use-two-phase-commit-in-distributed-transaction-f1296b8c23fd', 'Two Phase Commit', NUBE_KEY, 'Two Phase Commit', '2024/11/26')],
-    [Keys.NUBE_DISPONIBILITY, new Referencia('https://www.computerweekly.com/es/consejo/Disponibilidad-de-cinco-nueves-Que-significa-realmente', 'Disponibilidad de 5 9s', NUBE_KEY, 'Disponibilidad de 5 9s', '2024/11/26')
+    [Keys.NUBE_DISPONIBILITY, new Referencia('https://www.computerweekly.com/es/consejo/Disponibilidad-de-cinco-nueves-Que-significa-realmente', 'Disponibilidad de 5 nueves', NUBE_KEY, 'Disponibilidad', '2024/11/26')
         .addRelatedItems(Keys.CD_CI_CI_CD)
     ],
     [Keys.NUBE_PACELC, new Referencia('https://www.designgurus.io/blog/system-design-interview-basics-cap-vs-pacelc', 'PAC, Else Latencia y Consistencia', NUBE_KEY, 'Teorema PACELC', '2024/12/15', '2025/11/15')
@@ -973,7 +973,7 @@ export const APIS_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.NUBE_LATENCY, Keys.SECURITY_ATTACK_MODEL_OSI)
     ],
     [Keys.APIS_RATE_LIMITING, new Referencia('https://blog.sagyamthapa.com.np/interactive-guide-to-rate-limiting', 'Rate Limiting', APIS_KEY, 'Rate Limiting', '2025/06/15', '2026/07/13')
-        .addRelatedItems(Keys.SECURITY_ATTACK_MODEL_OSI, Keys.SYSTEM_DESIGN_CONCEPTS_I, Keys.OBSERVABILIDAD_COMMON_METRICS)
+        .addRelatedItems(Keys.SECURITY_ATTACK_MODEL_OSI, Keys.SYSTEM_DESIGN_CONCEPTS_I, Keys.OBSERVABILIDAD_COMMON_METRICS_I)
         .addMoreReferences('https://blog.axway.com/learning-center/apis/api-design/api-quota')
     ],
     [Keys.APIS_API_FIRST_VS_CODE_FIRST, new Referencia('https://www.enmilocalfunciona.io/servicios-web-restful-ii-api-first-vs-code-first/', 'API-First VS Code-First', APIS_KEY, 'API-First VS Code-First', '2025/06/16')
@@ -1874,7 +1874,7 @@ export const CI_CD_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.NUBE_DISPONIBILITY, Keys.OBSERVABILIDAD_SRE, Keys.NUBE_LOAD_BALANCING, Keys.HARDWARE_ESCALAMIENTO, Keys.WEB_GOLDEN_SIGNALS, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRANSACTIONS)
     ],
     [Keys.CD_CI_MONITORING_AND_ALERTS, new Referencia('https://edgedelta.com/company/blog/monitoring-and-alerting-best-practices', 'Monitoreo, Alertas & Observabilidad', CI_CD_KEY, 'Monitoreo y Alertas', '2025/10/12')
-        .addRelatedItems(Keys.OBSERVABILIDAD_OBSERVABILITY, Keys.TESTING_ADVANCED_PERFORMANCE, Keys.OBSERVABILIDAD_COMMON_METRICS, Keys.PEOPLE_DIKW, Keys.SECURITY_MATRIZ_DE_RIESGOS, Keys.COMPILACION_INSTRUMENTS, Keys.OBSERVABILIDAD_SRE, Keys.COMPILACION_SDK_VS_API, Keys.PEOPLE_POST_MORTEM)
+        .addRelatedItems(Keys.OBSERVABILIDAD_OBSERVABILITY, Keys.TESTING_ADVANCED_PERFORMANCE, Keys.OBSERVABILIDAD_COMMON_METRICS_I, Keys.PEOPLE_DIKW, Keys.SECURITY_MATRIZ_DE_RIESGOS, Keys.COMPILACION_INSTRUMENTS, Keys.OBSERVABILIDAD_SRE, Keys.COMPILACION_SDK_VS_API, Keys.PEOPLE_POST_MORTEM)
         .addMoreReferences('https://opentelemetry.io/docs/what-is-opentelemetry/', 'https://opentelemetry.io/docs/concepts/instrumentation/zero-code/', 'https://betterstack.com/community/guides/monitoring/what-is-metrics-monitoring-alerting/')
     ],
     [Keys.CD_CI_DEPLOYMENT_ARQUITECTURE, new Referencia('https://medium.com/nerd-for-tech/software-deployment-as-architecture-648867bdb77c', 'Implementación como Arquitectura', CI_CD_KEY, 'Deploy & Arquitectura', '2025/06/12')
@@ -1955,7 +1955,7 @@ export const MICRO_SERVICES_ADVANCED_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.SYSTEM_DESIGN_QUEUES, Keys.EJECUCION_CONCURRENCY_AND_PARALLELISM, Keys.EJECUCION_PROCESS_AND_THREADS)
     ],
     [Keys.MICROSERVICES_ADVANCED_IDEMPOTENCY_I, new Referencia('https://microservices.io/post/microservices/patterns/2020/10/16/idempotent-consumer.html', 'Idempotencia & Duplicacion I', MICRO_SERVICES_ADVANCED_KEY, 'Idempotencia I', '2025/09/01')
-        .addRelatedItems(Keys.SYSTEM_DESIGN_QUEUES, Keys.ANALISIS_DELIVERY_GUARANTED, Keys.ANALISIS_LIGHT_EVENTS_VS_RICH_EVENTS, Keys.PATRONES_ADVANCED_OUTBOX, Keys.ANALISIS_DATA_CHANGE_DATA_CAPTURE, Keys.PERSISTENCY_ADVANCED_NO_SQL_TYPES, Keys.ARQUITECTURAS_IMPL_EVENT_DRIVEN, Keys.OBSERVABILIDAD_COMMON_METRICS, Keys.PERSISTENCY_INTERMEDIATE_INDICES, Keys.PERSISTENCY_ADVANCED_UPSERT)
+        .addRelatedItems(Keys.SYSTEM_DESIGN_QUEUES, Keys.ANALISIS_DELIVERY_GUARANTED, Keys.ANALISIS_LIGHT_EVENTS_VS_RICH_EVENTS, Keys.PATRONES_ADVANCED_OUTBOX, Keys.ANALISIS_DATA_CHANGE_DATA_CAPTURE, Keys.PERSISTENCY_ADVANCED_NO_SQL_TYPES, Keys.ARQUITECTURAS_IMPL_EVENT_DRIVEN, Keys.OBSERVABILIDAD_COMMON_METRICS_I, Keys.PERSISTENCY_INTERMEDIATE_INDICES, Keys.PERSISTENCY_ADVANCED_UPSERT)
         .addMoreReferences('https://nejckorasa.github.io/posts/idempotent-kafka-procesing/', 'https://medium.com/@zdb.dashti/exactly-once-semantics-using-the-idempotent-consumer-pattern-927b2595f231', 'https://www.rabbitmq.com/docs/confirms')
     ],
     [Keys.MICROSERVICES_ADVANCED_IDEMPOTENCY_II, new Referencia('https://medium.com/javarevisited/idempotency-in-distributed-systems-preventing-duplicate-operations-85ce4468d161', 'Idempotencia & Duplicacion II', MICRO_SERVICES_ADVANCED_KEY, 'Idempotencia II', '2026/02/15')
@@ -1985,10 +1985,10 @@ export const MICRO_SERVICES_ADVANCED_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.NUBE_CAP_TEOREMA, Keys.ARQUITECTURAS_IMPL_MONOLITOS, Keys.ARQUITECTURAS_IMPL_MODULITHS, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.TESTING_INTEGRATION, Keys.NUBE_TWO_PHASE_COMMIT, Keys.PATRONES_ADVANCED_SAGA, Keys.ARQUITECTURAS_IMPL_EVENT_DRIVEN, Keys.EJECUCION_CACHE_AND_TYPES, Keys.CD_CI_FAILOVER, Keys.CD_CI_DEPLOYMENT_PIPELINES, Keys.PATRONES_ADVANCED_STRANGLER_FIG, Keys.ANALISIS_STRATEGIC_DESIGN, Keys.OBSERVABILIDAD_SRE, Keys.CD_CI_DEV_OPS, Keys.VERSIONAMIENTO_VERSIONAMIENTO)
     ],
     [Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_LOCKING, new Referencia('https://codefarm0.medium.com/distributed-locking-under-the-hood-of-coordination-2ef8b039c13f', 'Bloqueo distribuido', MICRO_SERVICES_ADVANCED_KEY, 'Bloqueo distribuido', '2025/10/31')
-        .addRelatedItems(Keys.PERSISTENCY_ADVANCED_LOCKING, Keys.EJECUCION_DEAD_LOCKS, Keys.EJECUCION_CONCURRENCY_AND_PARALLELISM, Keys.PATRONES_ADVANCED_DISTRIBUTED_SYSTEMS, Keys.OBSERVABILIDAD_COMMON_METRICS)
+        .addRelatedItems(Keys.PERSISTENCY_ADVANCED_LOCKING, Keys.EJECUCION_DEAD_LOCKS, Keys.EJECUCION_CONCURRENCY_AND_PARALLELISM, Keys.PATRONES_ADVANCED_DISTRIBUTED_SYSTEMS, Keys.OBSERVABILIDAD_COMMON_METRICS_I)
     ],
     [Keys.MICROSERVICES_ADVANCED_PROCESSING_ARCHETYPES, new Referencia('https://medium.com/@jaredhatfield/lessons-in-asynchronous-messaging-patterns-pitfalls-and-best-practices-35254b3218e8', 'Arquetipos de procesamiento de mensajes', MICRO_SERVICES_ADVANCED_KEY, 'Arquetipos Procesamiento', '2026/01/01')
-        .addRelatedItems(Keys.ANALISIS_DATA_BATCH_VS_STREAM, Keys.ANALISIS_DATA_ETL_ELT, Keys.BUENAS_PRACTICAS_AGGREGATES, Keys.PATRONES_ADVANCED_FOR_INTEGRATION, Keys.PATRONES_ADVANCED_MESSAGING, Keys.PATRONES_ADVANCED_RESILIENCIA, Keys.ANALISIS_TYPE_EVENTS, Keys.OBSERVABILIDAD_COMMON_METRICS)
+        .addRelatedItems(Keys.ANALISIS_DATA_BATCH_VS_STREAM, Keys.ANALISIS_DATA_ETL_ELT, Keys.BUENAS_PRACTICAS_AGGREGATES, Keys.PATRONES_ADVANCED_FOR_INTEGRATION, Keys.PATRONES_ADVANCED_MESSAGING, Keys.PATRONES_ADVANCED_RESILIENCIA, Keys.ANALISIS_TYPE_EVENTS, Keys.OBSERVABILIDAD_COMMON_METRICS_I)
     ],
     [Keys.MICROSERVICES_ADVANCED_SPLIT_BRAIN, new Referencia('https://www.starwindsoftware.com/blog/whats-split-brain-and-how-to-avoid-it/', 'Split Brain', MICRO_SERVICES_ADVANCED_KEY, 'Split Brain', '2026/03/11')
         .addRelatedItems(Keys.PATRONES_ADVANCED_SAGA, Keys.CD_CI_MONITORING, Keys.ARQUITECTURAS_IMPL_EVENT_DRIVEN, Keys.NUBE_PACELC)
@@ -2002,9 +2002,13 @@ export const OBSERVABILIDAD_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.META_ESTRUCTURAS_LOGS, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRACING, Keys.CD_CI_MONITORING_AND_ALERTS)
         .addMoreReferences('https://engineering.theblueground.com/a-software-engineers-guide-to-observability/')
     ],
-    [Keys.OBSERVABILIDAD_COMMON_METRICS, new Referencia('https://medium.com/javarevisited/dont-go-into-your-system-design-interview-without-mastering-this-31ee7af2ed7b', 'Metricas comunes en System Design', OBSERVABILIDAD_KEY, 'Metricas comunes', '2025/04/26')
+    [Keys.OBSERVABILIDAD_COMMON_METRICS_I, new Referencia('https://medium.com/javarevisited/dont-go-into-your-system-design-interview-without-mastering-this-31ee7af2ed7b', 'Metricas comunes en System Design I', OBSERVABILIDAD_KEY, 'Metricas comunes I', '2025/04/26')
         .addRelatedItems(Keys.META_CARACTERISTICAS_CACHE, Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.CD_CI_FAILOVER, Keys.PERSISTENCY_ACID)
         .addMoreReferences("https://systemdesignschool.io/fundamentals/qps", "https://speedscale.com/blog/determine-transactions-per-second/", "https://medium.com/@alexa.polly007/understanding-caching-eviction-invalidation-patterns-and-their-use-cases-9fbfd34be970")
+    ],
+    [Keys.OBSERVABILIDAD_COMMON_METRICS_II, new Referencia('https://newsletter.systemdesigncodex.com/p/top-system-design-performance-metrics', 'Metricas comunes en System Design II', OBSERVABILIDAD_KEY, 'Metricas comunes II', '2026/07/18')
+        .addRelatedItems(Keys.NUBE_DISPONIBILITY, Keys.HARDWARE_ESCALAMIENTO, Keys.SYSTEM_DESIGN_RESILIENCE, Keys.SYSTEM_DESIGN_SINGLE_POINT_OF_FAILURE)
+        .addMoreReferences("https://medium.com/@yvmmfyd/escalabilidad-y-elasticidad-sin-complicaciones-una-gu%C3%ADa-para-ingenieros-de-datos-fd598c97a349", 'https://www.geeksforgeeks.org/operating-systems/redundancy-in-system-design/')
     ],
     [Keys.OBSERVABILIDAD_MONITOREO, new Referencia('https://www.hiberus.com/crecemos-contigo/uso-de-los-apm-monitoreo-del-rendimiento-de-aplicaciones/', 'Aplication Performance Management', OBSERVABILIDAD_KEY, 'Monitoreo(APM)', '', '2026/03/10')
         .addRelatedItems(Keys.HARDWARE_IO_BOUND_CPU_BOUND, Keys.BUENAS_PRACTICAS_LOGGING, Keys.CD_CI_MONITORING_AND_ALERTS)
