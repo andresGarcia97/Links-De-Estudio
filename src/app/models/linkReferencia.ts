@@ -650,7 +650,7 @@ export const ESTRATEGIAS_DESARROLLO_REF = new Map<string, Referencia>([
     ],
     [Keys.ESTRATEGIAS_DESARROLLO_VERTICAL, new Referencia('https://medium.com/ssense-tech/vertical-software-development-495b73f7fcdf', 'Vertical Development', ESTRATEGIAS_DESARROLLO_KEY, 'Vertical Development', '2025/06/30')
         .addRelatedItems(Keys.METODOLOGIAS_AGILES, Keys.AGILES_MANIFEST_AGIL, Keys.AGILES_MANIFEST_PRINCIPLES_AGIL, Keys.METODOLOGIAS_SCRUM, Keys.ARQUITECTURAS_IMPL_CAPAS, Keys.ARQUITECTURAS_IMPL_HEXAGONAL, Keys.META_ESTRUCTURAS_LAYERS_SOFTWARE, Keys.USER_HISTORIES_PARTS, Keys.CALIDAD_CODE_REVIEWS)
-    ],
+    ]
 ]);
 
 export const FRAMEWORKS_KEY = 'Frameworks';
@@ -659,8 +659,8 @@ export const FRAMEWORKS_REF = new Map<string, Referencia>([
     [Keys.FRAMEWORKS_CASE, new Referencia('https://www.geeksforgeeks.org/software-engineering/software-engineering-case-tool-and-its-scope/', 'Herramientas CASE', FRAMEWORKS_KEY, 'Herramientas CASE', '2025/08/02', '2026/07/04')
         .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_SLDC)
     ],
-    [Keys.FRAMEWORKS_IOC, new Referencia('https://medium.com/all-you-need-is-clean-code/inversi%C3%B3n-de-control-principio-de-hollywood-dont-call-us-we-ll-call-you-179e9c70e3d0', 'Inversión de Control', FRAMEWORKS_KEY, 'Inversión de Control')
-        .addRelatedItems(Keys.PRINCIPIOS_HOLLYWOOD, Keys.PRINCIPIOS_DIP)
+    [Keys.FRAMEWORKS_IOC, new Referencia('https://medium.com/all-you-need-is-clean-code/inversi%C3%B3n-de-control-principio-de-hollywood-dont-call-us-we-ll-call-you-179e9c70e3d0', 'Inversión de Control', FRAMEWORKS_KEY, 'Inversión de Control', '', '2026/07/18')
+        .addRelatedItems(Keys.PRINCIPIOS_HOLLYWOOD, Keys.PRINCIPIOS_DIP, Keys.PATRONES_DESGLOSE_GOF)
     ],
     [Keys.FRAMEWORKS_IOD, new Referencia('https://www.arquitecturajava.com/el-patron-de-inyeccion-de-dependencia/', 'Inyección de Dependencias', FRAMEWORKS_KEY, 'Inyección Dependencias', '', '2024/06/09')
         .addRelatedItems(Keys.PRINCIPIOS_HOLLYWOOD, Keys.PRINCIPIOS_DIP)
@@ -725,7 +725,7 @@ export const GIT_REF = new Map<string, Referencia>([
     [Keys.GIT_ERRORS, new Referencia('https://medium.com/@vndpal/7-git-mistakes-even-senior-engineers-make-and-how-to-fix-them-32cbb1b2f90f', 'Errores a evitar', GIT_KEY, 'Errores en Git', '2025/01/02')
         .addRelatedItems(Keys.VERSIONAMIENTO_CHANGELOG, Keys.CD_CI_RULES, Keys.TESTING_BUG)
         .addMoreReferences('https://rewind.com/blog/how-to-restore-deleted-branch-commit-git-reflog/')
-    ],
+    ]
 ]);
 
 export const USER_HISTORIES_KEY = 'Historias-Usuario';

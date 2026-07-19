@@ -19,16 +19,17 @@
     "<strong>Mantenimiento:    </strong> Sirven para documentar errores y seguimiento de defectos(HP Quality Center) "
   ],
   "ioc": [
-    "- La inversion de control es la implementación del principio de Hollywood en la que se basan muchos frameworks para funcionar ",
-    "- El framework es quien toma el control de la ejecución del código del usuario modificando el ciclo de vida como tal ",
-    "- Permite añadir nuevas funciones prefabicadas sin tener que modificar el código por medio de la inyección de dependencias "
+    "- La Inversión de Control es un principio conocido como el principio de Hollywood, en el que se basan muchos frameworks para funcionar ",
+    "- El framework es quien toma el control de la ejecución del código del usuario, interviniendo en su ciclo de vida ",
+    "- Permite añadir nuevas funciones prefabicadas sin tener que modificar el código por medio de la inyección de dependencias ",
+    "- IoC tambien esta presente en otros patrones de diseño conocidos, como <em>Factory method</em>, <em>Strategy</em> y <em>Template Method</em> "
   ],
   "iod": [
     "- La inyección de dependencias Permite modificar y extender nuestro código mucho más facil ",
     "- Solo es especificar que funcionalidades queremos añadir y estaran disponibles de manera transversal ",
     "- El código modificado se vuelve más reutilizable, compacto y manejable, además de que tiene un mejor reparto de responsabilidades ",
     "- Asi se tiene un código compuesto, menos acoplado y mejor abstraido, donde lo más importante es que hace, en vez de como lo hace ",
-    "- también ayuda al manejo implicito de las dependencias y una mejor visión de como se relacionan las diferentes partes del sistema"
+    "- Ayuda al manejo implicito de las dependencias y una mejor visión de como se relacionan las diferentes partes del sistema "
   ],
   "scaffolding": [
     "- Es la generación automatica de código funcional, archivos, carpetas, configuraciones, interfaces graficas, etc... ",

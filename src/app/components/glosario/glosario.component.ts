@@ -18,9 +18,9 @@ import { FilterPipe } from 'src/app/pipes/filter.pipe';
   ],
 })
 export class GlosarioComponent implements OnInit {
+  
   private router = inject(Router);
   private route = inject(ActivatedRoute);
-
 
   @ViewChild("inputSearch") inputSearch!: ElementRef<HTMLInputElement>;
 
@@ -37,7 +37,7 @@ export class GlosarioComponent implements OnInit {
 
   onlyComponents = this.convertComponentsToArray(this.componentes);
 
-  searchOnContent: Map<string, Referencia> = new Map();
+  searchOnContent: Map<string, Referencia> = new Map<string, Referencia>();
 
   ngOnInit(): void {
     console.info("%c Temas: " + this.joinAllTemas.length, "color:#000; font-size: 16px;background:#FFBA08; font-weight: bold;");
@@ -63,7 +63,7 @@ export class GlosarioComponent implements OnInit {
     }, 300);
   }
 
-  private convertFuentesToArray(namesAndValues: Map<string, Fuente>): Array<object> {
+  private convertFuentesToArray(namesAndValues: Map<string, Fuente>): object[] {
     return [...namesAndValues.values()].map(value => ({
       titulo: value.titulo,
       referencia: value.referencia,
@@ -71,7 +71,7 @@ export class GlosarioComponent implements OnInit {
     }));
   }
 
-  private convertComponentsToArray(namesAndValues: Map<string, Referencia>): Array<object> {
+  private convertComponentsToArray(namesAndValues: Map<string, Referencia>): object[] {
     return [...namesAndValues].map(keyAndValue => ({
       titulo: keyAndValue[1].tittle,
       tittleShort: keyAndValue[1].tittleShort,
@@ -96,7 +96,7 @@ export class GlosarioComponent implements OnInit {
         .replace(/[\u0300-\u036f]/g, '')
         .replace(/[aeiou]/gi, (char) => {
           const base = char.toLowerCase();
-          const accentedMap: { [key: string]: string } = {
+          const accentedMap: Record<string, string> = {
             a: '[aáàäâãå]',
             e: '[eéèëê]',
             i: '[iíìïî]',
