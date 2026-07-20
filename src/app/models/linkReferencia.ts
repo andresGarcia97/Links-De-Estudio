@@ -1412,18 +1412,16 @@ export const REFACTORING_REF = new Map<string, Referencia>([
     ],
     [Keys.REFACTORING_MODERNIZATION_LEGACY, new Referencia('https://martinfowler.com/articles/patterns-legacy-displacement/', 'Modernización del legado', REFACTORING_KEY, 'Modernización', '2025/08/10')
         .addRelatedItems(Keys.NUBE_MIGRATIONS, Keys.REQUISITOS_BUSINESS_VALUE, Keys.AGILES_OUTPUT_AND_OUTCOME, Keys.PRINCIPIOS_DIVIDE_AND_CONQUER, Keys.ANALISIS_TACTIC_DESIGN, Keys.METODOLOGIAS_AGILES, Keys.MICROSERVICES_ARQUITECTURAS, Keys.LEYES_CONWAY, Keys.META_ESTRUCTURAS_SISTEMAS_COMPLEJOS)
-    ],
+    ]
 ]);
 
 export const REQUISITOS_KEY = 'Requisitos';
 export const REQUISITOS_REF = new Map<string, Referencia>([
     [Keys.REQUISITOS_FUNCIONALES, new Referencia('https://medium.com/@requeridosblog/requerimientos-funcionales-y-no-funcionales-ejemplos-y-tips-aa31cb59b22a', 'Requisitos funcionales', REQUISITOS_KEY, 'Funcionales')],
     [Keys.REQUISITOS_NO_FUNCIONALES, new Referencia('https://medium.com/@requeridosblog/requerimientos-funcionales-y-no-funcionales-ejemplos-y-tips-aa31cb59b22a', 'Requisitos No funcionales', REQUISITOS_KEY, 'NO Funcionales')],
-    //['negocio', new Referencia('https://requeridos.com/que-es-el-valor-de-negocio-y-como-medirlo/', 'El valor del negocio', REQUISITOS_KEY, 'EL Negocio')],
     [Keys.REQUISITOS_BUSINESS_VALUE, new Referencia('https://www.elproximopaso.net/2012/03/8-otra-maneras-de-definir-el-valor-de.html', 'El valor del negocio', REQUISITOS_KEY, 'El Negocio', '', '2024/09/27')
         .addRelatedItems(Keys.AGILES_MOSCOW_RICE)
     ],
-    //['ambiguedad', new Referencia('https://requeridos.com/requerimientos-menos-es-mas/', 'Evitar la ambiguedad', REQUISITOS_KEY, 'Evitar la ambiguedad')],
     [Keys.REQUISITOS_AMBIGUITY, new Referencia('https://www.blmovil.com/la-importancia-de-una-buena-captura-de-requisitos-en-el-desarrollo-de-software/', 'Evitar la ambiguedad', REQUISITOS_KEY, 'Evitar la ambiguedad', '2024/09/27')],
     [Keys.REQUISITOS_QUALITY, new Referencia('https://platzi.com/tutoriales/1248-pro-arquitectura/5498-atributos-de-calidad-de-un-producto-de-software/', 'Atributos de calidad', REQUISITOS_KEY, 'Atributos de calidad')],
     [Keys.REQUISITOS_TRADE_OFF, new Referencia('https://medium.com/analysts-corner/those-other-requirements-quality-attributes-and-their-inescapable-tradeoffs-31dc0691974d', 'Sacrificios y ganancias', REQUISITOS_KEY, 'Trade-offs')],
@@ -1437,6 +1435,10 @@ export const REQUISITOS_REF = new Map<string, Referencia>([
     ],
     [Keys.REQUISITOS_PRAGMATIC_ENGINEER, new Referencia('https://newsletter.eng-leadership.com/p/how-to-be-pragmatic-as-an-engineer', 'Como ser pragmatico', REQUISITOS_KEY, 'Ingeniero Pragmatico', '2026/02/23')
         .addRelatedItems(Keys.PRINCIPIOS_KISS, Keys.PRINCIPIOS_OCCAM, Keys.PRINCIPIOS_YAGNI, Keys.CONOCIMIENTOS_EMPIRICOS_LESSONS_AND_LEADER_TECHNICAL, Keys.AGILES_PRIORITIZATION, Keys.MALAS_PRACTICAS_OVER_ENGINEERING, Keys.CONOCIMIENTOS_EMPIRICOS_CODE_MAINTAINER, Keys.ARQUITECTURAS_MISTAKES_II, Keys.PEOPLE_PEOPLE_PROCESS_TECNOLOGY)
+    ],
+    [Keys.REQUISITOS_BRD_PRD_SDD_TDD, new Referencia('https://medium.com/@habibullah.diu/understanding-brd-prd-sdd-tsd-the-blueprint-of-modern-software-engineering-689aac9acc0b', 'BRD, PRD, SDD, TSD', REQUISITOS_KEY, 'BRD, PRD, SDD, TSD', '2026/07/20')
+        .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_SLDC, Keys.VERSIONAMIENTO_DOCUMENT_ARQUITECTURE, Keys.LEYES_LEHMAN, Keys.CALIDAD_ANALYST_QA, Keys.CD_CI_DEV_OPS, Keys.ANALISIS_HIGH_LEVEL_VS_LOW_LEVEL, Keys.PEOPLE_PRODUCT_CHALLENGES, Keys.ESTRATEGIAS_DESARROLLO_BOTTOM_UP_AND_TOP_DOWN)
+        .addMoreReferences('https://asana.com/es/resources/business-requirements-document-template', 'https://www.atlassian.com/es/agile/product-management/requirements', 'https://www.atlassian.com/work-management/knowledge-sharing/documentation/software-design-document', 'https://refact.co/insights/digital-product/technical-specification-document')
     ]
 ]);
 

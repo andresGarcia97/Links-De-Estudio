@@ -700,6 +700,7 @@ export const REQUISITOS_REQUIREMENTS_CHANGE = 'requirementsChange';
 export const REQUISITOS_REQUIREMENTS_ENGINEERING = 'requirementsEngineering';
 export const REQUISITOS_KPI_OKR = 'KPI-OKR';
 export const REQUISITOS_PRAGMATIC_ENGINEER = 'pragmatic-engineer';
+export const REQUISITOS_BRD_PRD_SDD_TDD = 'BRD-PRD-SDD-TSD';
 export const USER_HISTORIES_USER_HISTORIES = 'user-histories';
 export const USER_HISTORIES_OBJECTIVES = 'user-histories-objectives';
 export const USER_HISTORIES_PARTS = 'user-histories-parts';
