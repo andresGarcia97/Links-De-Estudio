@@ -301,7 +301,7 @@
     "- Mejora la experiencia de usuario ya que (latencia, trafico, errores) son señales percibidas directamente por el usuario final ",
     "",
     "<strong>Consideraciones:</strong>",
-    "- Existen metodos más simples y faciles de implementar como <strong>RED</strong>(tasa, errores, duración) y <strong>USE</strong>(utilización, saturación, errores)",
+    "- Existen metodos más simples y faciles de implementar como <strong>RED</strong> (tasa, errores, duración) y <strong>USE</strong> (utilización, saturación, errores)",
     "- Estas señales son categorias de información en lugar de tipos especificos de datos, y no son obtenibles en primera instancia ",
     "- La recopilación de datos se debe hacer de manera que también se incluyan alertas sobre alguna de las señales y el uso de <em>APM</em>"
   ],

@@ -88,14 +88,19 @@
     "<strong>- Sistema CA:</strong> Coherencia y disponibilidad (aplicaciones financieras)"
   ],
   "DNS": [
-    "- Es la manera como accedemos a una pagina web por medio de nombres(dominios) y no de direcciones IP ",
+    "- <strong>Domain Name System:</strong> Es la manera como accedemos a una pagina web por medio de nombres(dominios) y no de direcciones IP ",
     "- Este proceso de traducción de direcciones es realizado por estos servidores que estan esparcidos por el mundo ",
-    "- Al estar esparcidos por el mundo esto permite una administración descentralizada, pero sigue estando interconectada ",
+    "- Al estar esparcidos por el mundo esto permite una administración descentralizada, pero que tambien sigue estando interconectada ",
     "- Aunque este método es normal hoy en dia, tambien se puede acceder a los sitios directamente por medio de una IP obteniendo el dominio del sitio ",
     "- Si un servidor no encuentra la información solicitada, este la restransmite a otros en la red hasta dar con un resultado ",
     "",
+    "<strong>Border Gateway Protocol:</strong> Es otra tecnologia tan critica como el DNS, es un protocolo de enrutamiento que permite a las sistemas autonomos ",
+    " - saber como llegar a las redes que controlan, es más facil de entender con un <em>ejemplo:</em>",
+    "- Para llegar a la casa de un amigo, la dirección seria el DNS pero la ruta por la que llega, es el trabajo de BGP ",
+    "",
     "<strong>¿ Que ocurre sin fallan ?</strong>",
     "- Si un servidor DNS no responde o incluso falla, el proceso de resolución de nombres no puede completarse, esto provoca interrupciones en los servicios ",
+    "- Si las direcciónes se enrutan mal o de manera ineficiente, la información puede llegar de manera incompleta e incluso perderse ",
     "- Existen formas de mitigar este riesgo como infraestructura multi-zona o redundancia mediante replicas primarias-segundarias "
   ],
   "falaciesDistributedSystems": [
@@ -113,8 +118,8 @@
     "<strong>La red es Segura:</strong> Asumir esto como confiar en las personas, puede ser un error critico, por lo que un buen analisis, ",
     " - correción de errores y un diseño pensado para ser seguro no deberian faltar ",
     "",
-    "<strong>La topologia no cambia:</strong> La estructura de la red, no siempre sera la misma, ¿ nuestro sistema esta preparado, ",
-    " - si un sistema critico dejara de funcionar ?, tecnologias como Docker y Kubernetes casi nos hacen olvidar que esto no es fiable al 100%",
+    "<strong>La topologia no cambia:</strong> La estructura de la red, no siempre sera la misma ¿ El sistema esta preparado, si un sistema critico dejara de funcionar ? ",
+    "- Tecnologias como Docker y Kubernetes casi nos hacen olvidar que esto no es fiable al 100%",
     "",
     "<strong>Administración:</strong> No todo se puede controlar todo el tiempo, eventualmente el sistema crecera y evolucionara, ",
     " - por lo que la dependencia con otros sistemas seran inevitables, por lo que el monitoreo y la observabilidad deben estar al orden del dia ",
@@ -124,6 +129,9 @@
     "",
     "<strong>La red es Homogenea:</strong> La interoperabilidad es algo fundamental en la actualidad, pero no todo es tan ordenado y funcional, ",
     " - y como no todos los sistemas son iguales, se deben crear soluciones genericas que puedan ser adaptadas para nuevos sistemas ",
+    "",
+    "<strong>El sistema es totalmente observable:</strong> Visualizar el sistema de manera completa e integral pocas veces es posible, en especial ",
+    " - si el sistema es complejo y a los tamaños inherentes, esto tambien aplica para depuración, optimizaciones, logs, tracing, alertas ",
     "",
     "- No existe ninguna formula magica para solucionar estos problemas, lo maximo a lo que se llegara seran soluciones que solventen las consecuencias "
   ],

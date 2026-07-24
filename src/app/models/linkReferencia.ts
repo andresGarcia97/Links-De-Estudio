@@ -189,9 +189,15 @@ export const SYSTEM_DESIGN_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.META_ESTRUCTURAS_ESTRUCTURAS_DATOS_II, Keys.APIS_REST_VS_MESSAGING, Keys.PATRONES_ADVANCED_MESSAGING, Keys.ANALISIS_DATA_BATCH_VS_STREAM, Keys.MICROSERVICES_ADVANCED_IDEMPOTENCY_I)
         .addMoreReferences('https://solace.com/products/event-broker/messaging-patterns-queue-types/', 'https://airbyte.com/data-engineering-resources/rabbitmq-vs-kafka')
     ],
-    [Keys.SYSTEM_DESIGN_CONCEPTS_I, new Referencia('https://www.linkedin.com/posts/brijpandeyji_top-12-system-design-concepts-every-developer-activity-7238729739065069568-h1t6/', 'System Design Concepts I', SYSTEM_DESIGN_KEY, 'System Design Concepts I', '2024/09/29')],
-    [Keys.SYSTEM_DESIGN_CONCEPTS_II, new Referencia('https://www.linkedin.com/posts/alexxubyte_systemdesign-coding-interviewtips-activity-7320110326635520001-mdMb/', 'System Design Concepts II', SYSTEM_DESIGN_KEY, 'System Design Concepts II', '2025/04/21')],
-    [Keys.SYSTEM_DESIGN_CONCEPTS_III, new Referencia('https://medium.com/javarevisited/21-essential-system-design-building-blocks-for-software-engineers-c5f4120549c4', 'System Design Concepts III', SYSTEM_DESIGN_KEY, 'System Design Concepts III', '2025/05/03')],
+    [Keys.SYSTEM_DESIGN_CONCEPTS_I, new Referencia('https://www.linkedin.com/posts/brijpandeyji_top-12-system-design-concepts-every-developer-activity-7238729739065069568-h1t6/', 'System Design Concepts I', SYSTEM_DESIGN_KEY, 'System Design Concepts I', '2024/09/29')
+        .addMoreReferences('https://medium.com/womenintechnology/28-core-system-design-concepts-explained-through-the-failures-they-prevent-35af0377520f')
+    ],
+    [Keys.SYSTEM_DESIGN_CONCEPTS_II, new Referencia('https://www.linkedin.com/posts/alexxubyte_systemdesign-coding-interviewtips-activity-7320110326635520001-mdMb/', 'System Design Concepts II', SYSTEM_DESIGN_KEY, 'System Design Concepts II', '2025/04/21')
+        .addMoreReferences('https://codefarm0.medium.com/22-scenario-based-system-design-questions-that-reveal-how-real-systems-actually-break-7c75de3c5cd2')
+    ],
+    [Keys.SYSTEM_DESIGN_CONCEPTS_III, new Referencia('https://medium.com/javarevisited/21-essential-system-design-building-blocks-for-software-engineers-c5f4120549c4', 'System Design Concepts III', SYSTEM_DESIGN_KEY, 'System Design Concepts III', '2025/05/03')
+        .addMoreReferences('https://medium.com/javarevisited/how-to-actually-get-good-at-system-design-without-feeling-lost-67fd7d1c9f59')
+    ],
     [Keys.SYSTEM_DESIGN_CONCEPTS_IV, new Referencia('https://medium.com/@pudarimadhavi99/i-thought-i-understood-system-design-then-these-21-concepts-proved-me-wrong-4fd9a485b206', 'System Design Concepts IV', SYSTEM_DESIGN_KEY, 'System Design Concepts IV', '2026/05/10')
         .addMoreReferences('https://medium.com/@shanureddy/you-think-youre-a-senior-engineer-these-9-architecture-traps-will-prove-you-wrong-b745db6d1525')
     ],
@@ -228,8 +234,11 @@ export const SYSTEM_DESIGN_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_LOCKING, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRANSACTIONS, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.SECURITY_ATTACK_CONDICION_CARRERA, Keys.EJECUCION_CONCURRENCY_AND_PARALLELISM, Keys.PERSISTENCY_ACID, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_LOCKING, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRANSACTIONS, Keys.APIS_RATE_LIMITING)
         .addMoreReferences('https://medium.com/@priyasrivastava18official/system-design-pattern-designing-reliable-multi-step-processes-in-distributed-systems-e22283c3ba30')
     ],
-    [Keys.SYSTEM_DESIGN_COMMON_FAILS, new Referencia('https://levelup.gitconnected.com/3-am-production-fires-the-12-patterns-that-keep-breaking-everything-5f64e11b1baf', 'Fallas comunes', SYSTEM_DESIGN_KEY, 'Fallas comunes', '2026/01/18')
+    [Keys.SYSTEM_DESIGN_FAILS_I, new Referencia('https://levelup.gitconnected.com/3-am-production-fires-the-12-patterns-that-keep-breaking-everything-5f64e11b1baf', 'Fallas en diseño de sistemas I', SYSTEM_DESIGN_KEY, 'Fallas comunes I', '2026/01/18')
         .addRelatedItems(Keys.PERSISTENCY_INTERMEDIATE_N_1_SELECTS, Keys.EJECUCION_MEMORY_AND_GARBAGE, Keys.PATRONES_ADVANCED_RESILIENCIA, Keys.EJECUCION_BLOCKING_AND_NO_BLOCKING, Keys.PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS, Keys.PARADIGMAS_REACTIVO, Keys.META_ESTRUCTURAS_LOGS, Keys.SECURITY_ATTACK_CONDICION_CARRERA, Keys.PERSISTENCY_ADVANCED_LOCKING, Keys.CD_CI_CELL_BASED_ARQUITECTURE)
+    ],
+    [Keys.SYSTEM_DESIGN_FAILS_II, new Referencia('https://levelup.gitconnected.com/what-5-famous-outages-taught-me-about-system-design-85f6b57b00b6', 'Fallas en diseño de sistemas II', SYSTEM_DESIGN_KEY, 'Fallas comunes II', '2026/07/22')
+        .addRelatedItems(Keys.CONOCIMIENTOS_EMPIRICOS_BREAKING_PRODUCTION_LESSONS, Keys.PEOPLE_POST_MORTEM, Keys.MICROSERVICES_ESENTIAL_COMPONENTS, Keys.NUBE_DNS)
     ],
     [Keys.SYSTEM_DESIGN_DATABASE_WITHOUT_LOGIC, new Referencia('https://martinfowler.com/articles/dblogic.html', '¿ Bases de datos, sin logica ?', SYSTEM_DESIGN_KEY, '¿ Logica en la DB ?', '2026/01/31')
         .addRelatedItems(Keys.PERSISTENCY_ADVANCED_SQL_ENGINE_ANATOMY, Keys.PARADIGMAS_PARADIGMA_DATOS, Keys.ARQUITECTURAS_IMPL_CAPAS, Keys.REQUISITOS_TRADE_OFF, Keys.EJECUCION_MEMORY_PROFILING, Keys.POO_DESIGN_BY_CONTRACT, Keys.PERSISTENCY_INTERMEDIATE_SQL_NO_SQL, Keys.BUENAS_PRACTICAS_COMPLEJIDAD_COGNITIVA, Keys.PRINCIPIOS_DRY, Keys.PERSISTENCY_INTERMEDIATE_DATA_BASE_OBJECTS, Keys.POO_PILARES, Keys.SMELL_CODES_DESGLOSE, Keys.PERSISTENCY_INTERMEDIATE_SCHEMAS, Keys.PERSISTENCY_ADVANCED_MIGRATIONS, Keys.ESTRATEGIAS_DESARROLLO_TDD, Keys.PERSISTENCY_INTERMEDIATE_ORM, Keys.ANALISIS_DATA_TURING_COMPLETE, Keys.PARADIGMAS_IMPERATIVO)
@@ -458,7 +467,7 @@ export const EJECUCION_REF = new Map<string, Referencia>([
     ],
     //['concurrenciaParalelismo', new Referencia('https://codigofacilito.com/articulos/programacion-concurrente', 'Concurrencia & Paralelismo', META_CARACTERISTICAS_KEY, 'Concurrencia')],
     [Keys.EJECUCION_CONCURRENCY_AND_PARALLELISM, new Referencia('https://www.linkedin.com/feed/update/urn:li:activity:7209404927750615040/', 'Concurrencia & Paralelismo', EJECUCION_KEY, 'Concurrencia/Paralelismo', '', '2026/03/28')
-        .addRelatedItems(Keys.SYSTEM_DESIGN_COMMON_FAILS, Keys.HARDWARE_IO_BOUND_CPU_BOUND, Keys.HARDWARE_FALSE_SHARING)
+        .addRelatedItems(Keys.SYSTEM_DESIGN_FAILS_I, Keys.HARDWARE_IO_BOUND_CPU_BOUND, Keys.HARDWARE_FALSE_SHARING)
         .addMoreReferences('https://www.baeldung.com/cs/concurrency-vs-parallelism', 'https://medium.com/@akovtun/concurrency-parallelism-processes-threads-thread-safe-systems-1d4e7d351824')
     ],
     [Keys.EJECUCION_RECURSIVIDAD, new Referencia('https://geekytheory.com/que-es-la-recursividad/', 'Recursividad', EJECUCION_KEY, 'Recursividad')],
@@ -577,7 +586,7 @@ export const LEYES_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.SYSTEM_DESIGN_QUEUES, Keys.METODOLOGIAS_KANBAN, Keys.AGILES_ESTIMATION_LAWS)
     ],
     [Keys.LEYES_ARQUITECTURE, new Referencia('https://lawsofsoftwareengineering.com/laws/law-of-leaky-abstractions/', 'Leyes sobre Arquitectura', LEYES_KEY, 'Leyes & Arquitectura', '2026/05/18')
-        .addRelatedItems(Keys.POO_ABSTRACTIONS, Keys.PATRONES_ADVANCED_STRANGLER_FIG, Keys.WEB_SIMPLIFY_DESIGN, Keys.SYSTEM_DESIGN_COMMON_FAILS, Keys.PERSISTENCY_INTERMEDIATE_ORM)
+        .addRelatedItems(Keys.POO_ABSTRACTIONS, Keys.PATRONES_ADVANCED_STRANGLER_FIG, Keys.WEB_SIMPLIFY_DESIGN, Keys.SYSTEM_DESIGN_FAILS_I, Keys.PERSISTENCY_INTERMEDIATE_ORM)
         .addMoreReferences('https://lawsofsoftwareengineering.com/laws/law-of-unintended-consequences/', 'https://lawsofsoftwareengineering.com/laws/second-system-effect/', 'https://lawsofsoftwareengineering.com/laws/zawinskis-law/')
     ],
     [Keys.LEYES_BRANDOLINI, new Referencia('https://psicologiaymente.com/social/ley-de-brandolini', 'Ley de Brandolini', LEYES_KEY, 'Ley de Brandolini', '2026/05/28')
@@ -903,7 +912,7 @@ export const METODOLOGIAS_REF = new Map<string, Referencia>([
     [Keys.METODOLOGIAS_SPEC_DRIVEN_DEVELOPMENT, new Referencia('https://www.augmentcode.com/guides/what-is-spec-driven-development', 'Spec-Driven Development', METODOLOGIAS_KEY, 'SDD', '2026/05/14')
         .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_TDD, Keys.ESTRATEGIAS_DESARROLLO_BDD, Keys.TESTING_AAA_GWT, Keys.TESTING_TRIANGULO)
         .addMoreReferences('https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html')
-    ],
+    ]
 ]);
 
 export const NUBE_KEY = 'Nube';
@@ -916,9 +925,14 @@ export const NUBE_REF = new Map<string, Referencia>([
     [Keys.NUBE_CAP_TEOREMA, new Referencia('https://www.ionos.es/digitalguide/servidores/know-how/que-es-el-cap-theorem/', 'Coherencia, Disponibilidad y Tolerancia', NUBE_KEY, 'Teorema CAP')
         .addRelatedItems(Keys.PERSISTENCY_DBMS)
     ],
-    [Keys.NUBE_DNS, new Referencia('https://www.ionos.es/digitalguide/servidores/know-how/que-es-el-servidor-dns-y-como-funciona/', 'Servidor DNS', NUBE_KEY, 'Servidor DNS', '', '2025/11/02')],
-    //['falaciesDistributedSystems', new Referencia('https://architecturenotes.co/fallacies-of-distributed-systems/', 'Sistemas Distribuidos', NUBE_KEY, 'Sistemas Distribuidos')],
-    [Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, new Referencia('https://www.genbeta.com/desarrollo/las-8-falacias-de-la-computacion-distribuida', 'Falacias Sistemas Distribuidos', NUBE_KEY, 'Sistemas Distribuidos', '', '2024/10/06')],
+    [Keys.NUBE_DNS, new Referencia('https://www.ionos.es/digitalguide/servidores/know-how/que-es-el-servidor-dns-y-como-funciona/', 'DNS & BGP', NUBE_KEY, 'DNS & BGP', '2025/11/02', '2026/07/23')
+        .addRelatedItems(Keys.HARDWARE_MODEL_OSI)
+        .addMoreReferences('https://www.computerweekly.com/es/opinion/BGP-DNS-y-la-fragilidad-de-nuestros-sistemas-criticos')
+    ],
+    [Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, new Referencia('https://www.genbeta.com/desarrollo/las-8-falacias-de-la-computacion-distribuida', 'Falacias Sistemas Distribuidos', NUBE_KEY, 'Sistemas Distribuidos', '2024/10/06', '2026/07/23')
+        .addRelatedItems(Keys.CD_CI_FAILOVER, Keys.APIS_LATENCY_THROUGHPUT_BANDWITH)
+        .addMoreReferences('https://www.geeksforgeeks.org/system-design/fallacies-of-distributed-systems/')
+    ],
     [Keys.NUBE_LOAD_BALANCING, new Referencia('https://aws.amazon.com/es/what-is/load-balancing/', 'Balancear la Carga', NUBE_KEY, 'Balanceador de carga', '2023/12/30', '2025/05/01')],
     [Keys.NUBE_LATENCY, new Referencia('https://blog.bytebytego.com/p/ep110-top-5-strategies-to-reduce#top-strategies-to-reduce-latency', 'Reducir la latencia', NUBE_KEY, 'Reducir la Latencia', '2024/05/12')],
     [Keys.NUBE_TWO_PHASE_COMMIT, new Referencia('https://hongilkwon.medium.com/when-to-use-two-phase-commit-in-distributed-transaction-f1296b8c23fd', 'Two Phase Commit', NUBE_KEY, 'Two Phase Commit', '2024/11/26')],
@@ -938,7 +952,7 @@ export const NUBE_REF = new Map<string, Referencia>([
     ],
     [Keys.NUBE_PROVISIONING, new Referencia('https://spacelift.io/blog/cloud-provisioning', 'Provisionamiento', NUBE_KEY, 'Provisionamiento', '2026/03/24')
         .addRelatedItems(Keys.SECURITY_ZERO_TRUST, Keys.CONTENEDORES_CONTAINERS, Keys.CD_CI_DEV_OPS, Keys.CD_CI_IAS_CODE, Keys.ESTRATEGIAS_DESARROLLO_SLDC, Keys.CD_CI_CI_CD, Keys.CD_CI_DEPLOYMENT_PIPELINES)
-    ],
+    ]
 ]);
 
 export const APIS_KEY = 'APIs';
