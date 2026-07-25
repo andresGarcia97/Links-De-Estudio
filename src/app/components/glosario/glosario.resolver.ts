@@ -49,6 +49,7 @@ const CONTENT_FILES: string[] = [
     Paths.UML_PATH.file,
     Paths.WEB_PATH.file,
     Paths.COMPILACION_PATH.file,
+    Paths.BUILD_PATH.file,
     Paths.EJECUCION_PATH.file,
     Paths.CONTENEDORES_PATH.file,
     Paths.USER_HISTORIES_PATH.file,

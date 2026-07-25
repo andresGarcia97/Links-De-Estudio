@@ -20,7 +20,7 @@ export class LinkReferencia {
         ...MICRO_SERVICES_REF,  ...SYSTEM_DESIGN_REF,       ...MICRO_SERVICES_ADVANCED_REF,
         ...OBSERVABILIDAD_REF,  ...EJECUCION_REF,           ...PERSISTENCY_INTERMEDIATE_REF,
         ...GIT_REF,             ...PEOPLE_REF,              ...SECURITY_ATTACKS_REF,
-        ...CALIDAD_REF
+        ...CALIDAD_REF,         ...BUILD_REF
     ]);
 
     public routesAndSections: Map<string, string> = new Map<string, string>([
@@ -40,7 +40,7 @@ export class LinkReferencia {
         [TESTING_KEY, 'testing'],       [SYSTEM_DESIGN_KEY, 'system-design'],   [MICRO_SERVICES_ADVANCED_KEY, 'microservices-avanzado'],
         [PEOPLE_KEY, 'personas'],       [EJECUCION_KEY, 'ejecucion'],           [PERSISTENCY_INTERMEDIATE_KEY, 'bd-intermedio'],
         [SECURITY_KEY, 'seguridad'],    [CI_CD_KEY, 'ci-cd-infraestructura'],   [ARQUITECTURAS_IMPL_KEY, 'arquitecturas-impl'],
-        [PATRONES_KEY, 'patrones']
+        [PATRONES_KEY, 'patrones'],     [BUILD_KEY, 'build']
     ]);
 
     public getLastKeyByType(type: 'read' | 'update'): string {
@@ -179,7 +179,7 @@ export const ANALISIS_REF = new Map<string, Referencia>([
         .addMoreReferences('https://danubedata.ro/blog/rabbitmq-vs-kafka-vs-sqs-comparison-2026')
     ],
     [Keys.ANALISIS_EXCEPTION_DESIGN, new Referencia('https://medium.com/but-it-works-on-my-machine/the-trap-of-checked-exceptions-when-to-catch-and-when-to-throw-in-java-ffec454b00bb', 'Analisis & Excepciones', ANALISIS_KEY, 'Analisis & Excepciones', '2026/07/14')
-        .addRelatedItems(Keys.BUENAS_PRACTICAS_RESULT_OBJECT, Keys.BUENAS_PRACTICAS_EXCEPTIONS, Keys.MALAS_PRACTICAS_LOG_AND_THROW, Keys.META_CARACTERISTICAS_EXCEPTIONS, Keys.POO_HERENCIA, Keys.COMPILACION_ERRORS_AND_EXCEPTIONS, Keys.POO_ABSTRACTIONS)
+        .addRelatedItems(Keys.BUENAS_PRACTICAS_RESULT_OBJECT, Keys.BUENAS_PRACTICAS_EXCEPTIONS, Keys.MALAS_PRACTICAS_LOG_AND_THROW, Keys.META_CARACTERISTICAS_EXCEPTIONS, Keys.POO_HERENCIA, Keys.BUILD_ERRORS_AND_EXCEPTIONS, Keys.POO_ABSTRACTIONS)
     ]
 ]);
 
@@ -317,7 +317,7 @@ export const ARQUITECTURAS_IMPL_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.MICROSERVICES_ARQUITECTURAS, Keys.APIS_REST_VS_MESSAGING, Keys.ANALISIS_DOMAIN_EVENTS)
     ],
     [Keys.ARQUITECTURAS_IMPL_PATRONES_II, new Referencia('https://levelup.gitconnected.com/architecture-design-patterns-every-senior-developer-must-know-part-2-0409ec13f8c2', 'Patrones Arquitectonicos II', ARQUITECTURAS_IMPL_KEY, 'Patrones Arquitectonicos II', '2025/10/12')
-        .addRelatedItems(Keys.ANALISIS_DATA_BATCH_VS_STREAM, Keys.PATRONES_ADVANCED_SAGA, Keys.COMPILACION_INSTRUMENTS, Keys.CD_CI_FAILOVER, Keys.ANALISIS_LIGHT_EVENTS_VS_RICH_EVENTS, Keys.NUBE_PACELC, Keys.PERSISTENCY_ADVANCED_CONSISTENCY)
+        .addRelatedItems(Keys.ANALISIS_DATA_BATCH_VS_STREAM, Keys.PATRONES_ADVANCED_SAGA, Keys.BUILD_INSTRUMENTS, Keys.CD_CI_FAILOVER, Keys.ANALISIS_LIGHT_EVENTS_VS_RICH_EVENTS, Keys.NUBE_PACELC, Keys.PERSISTENCY_ADVANCED_CONSISTENCY)
         .addMoreReferences('https://dev.to/jaiminbariya/understanding-quorum-based-approaches-in-distributed-systems-jaimin-bariya-5h1b/')
     ],
     [Keys.ARQUITECTURAS_IMPL_STYLES_I, new Referencia('https://blog.bytebytego.com/p/ep68-top-architectural-styles?open=false#%C2%A7top-architectural-styles', 'Estilos de Arquitecturas I', ARQUITECTURAS_IMPL_KEY, 'Estilos & Patrones I', '', '2025/04/01')
@@ -362,7 +362,7 @@ export const BUENAS_PRACTICAS_REF = new Map<string, Referencia>([
     [Keys.BUENAS_PRACTICAS_GUARD_CLAUSES, new Referencia('https://artansoft.com/2017/01/guard-clauses-definicion-beneficios/', 'Guard clauses', BUENAS_PRACTICAS_KEY, 'Guard Clauses')],
     [Keys.BUENAS_PRACTICAS_SEMANTIC_CONSTRUCTORS, new Referencia('https://medium.com/all-you-need-is-clean-code/constructores-sem%C3%A1nticos-ae7ac70b23aa', 'Constructores Semanticos', BUENAS_PRACTICAS_KEY, 'Constructores Semanticos')],
     [Keys.BUENAS_PRACTICAS_EXCEPTIONS, new Referencia('https://javachallengers.com/mistakes-when-using-exceptions/', 'Manejo de Excepciones', BUENAS_PRACTICAS_KEY, 'Manejo de Excepciones', '', '2025/12/16')
-        .addRelatedItems(Keys.COMPILACION_ERRORS_AND_EXCEPTIONS, Keys.META_CARACTERISTICAS_EXCEPTIONS, Keys.OBSERVABILIDAD_MONITOREO, Keys.APIS_ERRORS, Keys.OBSERVABILIDAD_OBSERVABILITY, Keys.PATRONES_ADVANCED_RESILIENCIA)
+        .addRelatedItems(Keys.BUILD_ERRORS_AND_EXCEPTIONS, Keys.META_CARACTERISTICAS_EXCEPTIONS, Keys.OBSERVABILIDAD_MONITOREO, Keys.APIS_ERRORS, Keys.OBSERVABILIDAD_OBSERVABILITY, Keys.PATRONES_ADVANCED_RESILIENCIA)
         .addMoreReferences('https://medium.com/@csvaibhavpasrija/838292f305fd')
     ],
     [Keys.BUENAS_PRACTICAS_GOOD_HABITS, new Referencia('https://vadimkravcenko.com/shorts/habits-of-great-software-engineers/', 'Buenos habitos de un desarrollador', BUENAS_PRACTICAS_KEY, 'Buenos habitos')],
@@ -407,7 +407,7 @@ export const CALIDAD_REF = new Map<string, Referencia>([
     ],
     [Keys.CALIDAD_ISO_IEC_25010, new Referencia('https://www.perforce.com/blog/qac/what-is-iso-25010', 'Quality Model - ISO 25010', CALIDAD_KEY, 'Quality Model', '2026/06/06')
         .addMoreReferences('https://helpware.com/blog/tech/iso-25010-enhancing-our-software-quality-management-process')
-    ],
+    ]
 ]);
 
 export const COMPILACION_KEY = 'Compilacion';
@@ -418,18 +418,8 @@ export const COMPILACION_REF = new Map<string, Referencia>([
     [Keys.COMPILACION_TRANSPILACION, new Referencia('https://ingenieriadesoftware.es/diferencia-transpilacion-compilacion/', '¿ Que es la transpilación ?', COMPILACION_KEY, 'Transpilación', '', '2025/02/09')
         .addRelatedItems(Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES)
     ],
-    [Keys.COMPILACION_AZUCAR_SINTACTICO, new Referencia('https://es.wikipedia.org/wiki/Az%C3%BAcar_sint%C3%A1ctico', 'Azucar Sintactico', COMPILACION_KEY, 'Azucar Sintactico')],
-    [Keys.COMPILACION_COERCION, new Referencia('https://developer.mozilla.org/es/docs/Glossary/Type_coercion', 'Coerción', COMPILACION_KEY, 'Coerción')],
-    [Keys.COMPILACION_OFUSCACION, new Referencia('https://www.azulweb.net/ofuscacion-de-codigo-antipatron-o-buena-practica/', 'Ofuscación', COMPILACION_KEY, 'Ofuscación', '', '2025/08/18')
-        .addRelatedItems(Keys.EJECUCION_REFLEXION)
-    ],
-    [Keys.COMPILACION_TREE_SHAKING, new Referencia('https://developer.mozilla.org/en-US/docs/Glossary/Tree_shaking', 'TreeShaking', COMPILACION_KEY, 'Tree Shaking')],
     [Keys.COMPILACION_GRAFOS, new Referencia('https://www.grapheverywhere.com/grafos-que-son-tipos-orden-y-herramientas-de-visualizacion/', 'Grafos', COMPILACION_KEY, 'Grafos')],
     [Keys.COMPILACION_AOT, new Referencia('https://www.ibm.com/docs/es/sdk-java-technology/8?topic=reference-aot-compiler', 'Compilación AOT', COMPILACION_KEY, 'Compilación anticipada', '', '2024/11/23')],
-    [Keys.COMPILACION_DUCK_TYPING, new Referencia('https://devopedia.org/duck-typing', 'Duck Typing', COMPILACION_KEY, 'Duck Typing', '', '2024/11/23')],
-    [Keys.COMPILACION_SDK_VS_API, new Referencia('https://www.g2.com/articles/sdk', 'SDK vs API', COMPILACION_KEY, 'SDK vs API', '', '2025/01/06')],
-    [Keys.COMPILACION_CASTING, new Referencia('https://www.w3schools.com/java/java_type_casting.asp', 'Casting', COMPILACION_KEY, 'Casteo de Datos')],
-    [Keys.COMPILACION_VERBOSITY, new Referencia('https://softwareengineering.stackexchange.com/questions/141175/why-is-verbosity-bad-for-a-programming-language', 'Verbosidad', COMPILACION_KEY, 'Verbosidad', '2023/03/31')],
     [Keys.COMPILACION_TIPOS_LENGUAJE_PROPOSITO, new Referencia('https://ed.team/blog/como-se-clasifican-los-lenguajes-de-programacion', 'Tipos de lenguajes por proposito', COMPILACION_KEY, 'Proposito', '2023/11/09')],
     [Keys.COMPILACION_DETERMINISTIC_NON_DETERMINISTIC, new Referencia('https://www.geeksforgeeks.org/dsa/difference-between-deterministic-and-non-deterministic-algorithms/', 'Determinista & No Determinista', COMPILACION_KEY, 'Determinismo', '2026/07/12')
         .addRelatedItems(Keys.SECURITY_ENTROPIA_KEYS, Keys.TESTING_ADVANCED_SMELLS_CODES_II, Keys.TESTING_TYPES)
@@ -441,19 +431,33 @@ export const COMPILACION_REF = new Map<string, Referencia>([
     ],
     [Keys.COMPILACION_STRUCTURE_COMPILATOR, new Referencia('https://vicente-aguilera-perez.medium.com/estructura-general-de-un-compilador-df97892f91c3', 'Estructura de un compilador I', COMPILACION_KEY, 'Estructura general I', '2024/02/28')],
     [Keys.COMPILACION_ELEMENTS_COMPILATOR, new Referencia('https://vicente-aguilera-perez.medium.com/estructura-general-de-un-compilador-df97892f91c3', 'Estructura de un compilador II', COMPILACION_KEY, 'Estructura general II', '2024/02/28')],
-    [Keys.COMPILACION_STREAMS, new Referencia('https://medium.com/javarevisited/best-practices-for-using-java-stream-f0f7585f13ba', 'Streams', COMPILACION_KEY, 'Streams', '2024/06/29')
-        .addRelatedItems(Keys.POO_INMUTABILITY)
-    ],
     [Keys.COMPILACION_DECOMPILE, new Referencia('https://www.techtarget.com/whatis/definition/decompile', 'Descompilar', COMPILACION_KEY, 'Descompilar', '2024/07/21')
         .addRelatedItems(Keys.ANALISIS_DATA_REVERSE_ENGINEERING)
+    ]
+]);
+
+export const BUILD_KEY = 'Build';
+export const BUILD_REF = new Map<string, Referencia>([
+    [Keys.BUILD_AZUCAR_SINTACTICO, new Referencia('https://es.wikipedia.org/wiki/Az%C3%BAcar_sint%C3%A1ctico', 'Azucar Sintactico', BUILD_KEY, 'Azucar Sintactico')],
+    [Keys.BUILD_COERCION, new Referencia('https://developer.mozilla.org/es/docs/Glossary/Type_coercion', 'Coerción', BUILD_KEY, 'Coerción')],
+    [Keys.BUILD_DUCK_TYPING, new Referencia('https://devopedia.org/duck-typing', 'Duck Typing', BUILD_KEY, 'Duck Typing', '', '2024/11/23')],
+    [Keys.BUILD_CASTING, new Referencia('https://www.w3schools.com/java/java_type_casting.asp', 'Casting', BUILD_KEY, 'Casteo de Datos')],
+    [Keys.BUILD_VERBOSITY, new Referencia('https://softwareengineering.stackexchange.com/questions/141175/why-is-verbosity-bad-for-a-programming-language', 'Verbosidad', BUILD_KEY, 'Verbosidad', '2023/03/31')],
+    [Keys.BUILD_TREE_SHAKING, new Referencia('https://developer.mozilla.org/en-US/docs/Glossary/Tree_shaking', 'TreeShaking', BUILD_KEY, 'Tree Shaking')],
+    [Keys.BUILD_OFUSCACION, new Referencia('https://www.azulweb.net/ofuscacion-de-codigo-antipatron-o-buena-practica/', 'Ofuscación', BUILD_KEY, 'Ofuscación', '', '2025/08/18')
+        .addRelatedItems(Keys.EJECUCION_REFLEXION)
     ],
-    [Keys.COMPILACION_INSTRUMENTS, new Referencia('https://foojay.io/today/who-instruments-the-instrumenters/', 'Instrumentos', COMPILACION_KEY, 'Instrumentos', '2024/08/18')
+    [Keys.BUILD_INSTRUMENTS, new Referencia('https://foojay.io/today/who-instruments-the-instrumenters/', 'Instrumentos', BUILD_KEY, 'Instrumentos', '2024/08/18')
         .addRelatedItems(Keys.FRAMEWORKS_FRAMEWORKS, Keys.TESTING_MOCKS)
     ],
-    [Keys.COMPILACION_ERRORS_AND_EXCEPTIONS, new Referencia('https://medium.com/javarevisited/because-i-didnt-know-the-difference-between-exception-and-error-in-java-i-failed-the-interview-b44b07823f72', 'Errors & Exceptions', COMPILACION_KEY, 'Errors & Exceptions', '2025/01/06')
+    [Keys.BUILD_SDK_VS_API, new Referencia('https://www.g2.com/articles/sdk', 'SDK vs API', BUILD_KEY, 'SDK vs API', '', '2025/01/06')],
+    [Keys.BUILD_ERRORS_AND_EXCEPTIONS, new Referencia('https://medium.com/javarevisited/because-i-didnt-know-the-difference-between-exception-and-error-in-java-i-failed-the-interview-b44b07823f72', 'Errors & Exceptions', BUILD_KEY, 'Errors & Exceptions', '2025/01/06')
         .addRelatedItems(Keys.META_CARACTERISTICAS_EXCEPTIONS, Keys.BUENAS_PRACTICAS_EXCEPTIONS)
     ],
-    [Keys.COMPILACION_CALLS_AND_INVOCATION, new Referencia('https://msmk.university/que-es-un-call/', '¿Llamado o invocación de una función?', COMPILACION_KEY, '¿ Llamado o invocación ?', '2025/12/26')
+    [Keys.BUILD_STREAMS, new Referencia('https://medium.com/javarevisited/best-practices-for-using-java-stream-f0f7585f13ba', 'Streams', BUILD_KEY, 'Streams', '2024/06/29')
+        .addRelatedItems(Keys.POO_INMUTABILITY, Keys.PARADIGMAS_FUNCIONAL, Keys.ANALISIS_DATA_BATCH_VS_STREAM)
+    ],
+    [Keys.BUILD_CALLS_AND_INVOCATION, new Referencia('https://msmk.university/que-es-un-call/', '¿Llamado o invocación de una función?', BUILD_KEY, '¿ Llamado o invocación ?', '2025/12/26')
         .addRelatedItems(Keys.CONOCIMIENTOS_EMPIRICOS_PASTA_THEORY, Keys.POO_POO, Keys.META_CARACTERISTICAS_ARGUMENTS, Keys.EJECUCION_MEMORY_MANAGEMENT, Keys.EJECUCION_RECURSIVIDAD, Keys.META_ESTRUCTURAS_ESTRUCTURAS_DATOS_II, Keys.MALAS_PRACTICAS_CALLBACK_HELL, Keys.META_ESTRUCTURAS_SCOPE)
     ]
 ]);
@@ -520,7 +524,7 @@ export const CONOCIMIENTO_EMPIRICO = new Map<string, Referencia>([
     [Keys.CONOCIMIENTOS_EMPIRICOS_STAGES_COMPETENCE_MODEL, new Referencia('https://www.innovationtraining.org/the-four-stages-of-competence-model/', 'Etapas del modelo de competencia', CONOCIMIENTO_EMPIRICO_KEY, 'Modelo de competencia', '2024/09/09')],
     [Keys.CONOCIMIENTOS_EMPIRICOS_EXPIERENCE_LESSONS, new Referencia('https://dev.jimgrey.net/2024/07/03/lessons-learned-in-35-years-of-making-software/', 'Experiencia', CONOCIMIENTO_EMPIRICO_KEY, 'Experiencia', '2024/10/31')],
     [Keys.CONOCIMIENTOS_EMPIRICOS_CODE_MAINTAINER, new Referencia('https://www.danieleteti.it/post/the-art-of-invisible-code-es/', 'Mantenimiento de codigo', CONOCIMIENTO_EMPIRICO_KEY, 'Mantenimiento', '2025/07/08', '2026/04/10')
-        .addRelatedItems(Keys.WEB_MENOR_SORPRESA, Keys.REFACTORING_CLEAN_CODE, Keys.COMPILACION_OFUSCACION, Keys.LEYES_HYRUM)
+        .addRelatedItems(Keys.WEB_MENOR_SORPRESA, Keys.REFACTORING_CLEAN_CODE, Keys.BUILD_OFUSCACION, Keys.LEYES_HYRUM)
     ],
     [Keys.CONOCIMIENTOS_EMPIRICOS_LESSONS_AND_LEADER_TECHNICAL, new Referencia('https://medium.com/javarevisited/5-programming-lessons-i-wish-someone-had-beaten-into-my-head-early-on-af88960ac480', 'Lecciones técnicas y de liderazgo', CONOCIMIENTO_EMPIRICO_KEY, 'Lecciones & Liderazgo', '2025/10/04')
         .addRelatedItems(Keys.REFACTORING_CLEAN_CODE, Keys.POO_ABSTRACTIONS, Keys.PRINCIPIOS_YAGNI, Keys.POO_HERENCIA_COMPOSICION, Keys.REFACTORING_GOOD_AND_BAD_PRACTICES, Keys.PRINCIPIOS_KISS, Keys.MALAS_PRACTICAS_CONTRA_CALIDAD, Keys.PEOPLE_LANGUAGE_UBICUOS, Keys.PEOPLE_SINDROMES_LABORALES, Keys.CALIDAD_CODE_REVIEWS, Keys.PERSISTENCY_INTERMEDIATE_ORM, Keys.PERSISTENCY_INTERMEDIATE_N_1_SELECTS)
@@ -655,7 +659,7 @@ export const ESTRATEGIAS_DESARROLLO_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.APIS_GATEWAY)
     ],
     [Keys.ESTRATEGIAS_DESARROLLO_DDD_MADURITY, new Referencia('https://medium.com/unil-ci-software-engineering/maturity-model-for-clean-ddd-b55c4b06efcb', 'Madurez de DDD', ESTRATEGIAS_DESARROLLO_KEY, 'Madurez de DDD', '2025/02/02')
-        .addRelatedItems(Keys.APIS_MADURITY, Keys.POO_PILARES, Keys.BUENAS_PRACTICAS_DEMETER, Keys.PRINCIPIOS_SOLID, Keys.PEOPLE_LANGUAGE_UBICUOS, Keys.POO_DESIGN_BY_CONTRACT_PARTS, Keys.COMPILACION_ERRORS_AND_EXCEPTIONS)
+        .addRelatedItems(Keys.APIS_MADURITY, Keys.POO_PILARES, Keys.BUENAS_PRACTICAS_DEMETER, Keys.PRINCIPIOS_SOLID, Keys.PEOPLE_LANGUAGE_UBICUOS, Keys.POO_DESIGN_BY_CONTRACT_PARTS, Keys.BUILD_ERRORS_AND_EXCEPTIONS)
     ],
     [Keys.ESTRATEGIAS_DESARROLLO_VERTICAL, new Referencia('https://medium.com/ssense-tech/vertical-software-development-495b73f7fcdf', 'Vertical Development', ESTRATEGIAS_DESARROLLO_KEY, 'Vertical Development', '2025/06/30')
         .addRelatedItems(Keys.METODOLOGIAS_AGILES, Keys.AGILES_MANIFEST_AGIL, Keys.AGILES_MANIFEST_PRINCIPLES_AGIL, Keys.METODOLOGIAS_SCRUM, Keys.ARQUITECTURAS_IMPL_CAPAS, Keys.ARQUITECTURAS_IMPL_HEXAGONAL, Keys.META_ESTRUCTURAS_LAYERS_SOFTWARE, Keys.USER_HISTORIES_PARTS, Keys.CALIDAD_CODE_REVIEWS)
@@ -692,11 +696,11 @@ export const FRAMEWORKS_REF = new Map<string, Referencia>([
         .addMoreReferences('https://antondevtips.com/blog/vertical-slice-architecture-the-best-ways-to-structure-your-project', 'https://medium.com/mr-plan-publication/vertical-slice-architecture-software-architecture-part-5-102db9331d16')
     ],
     [Keys.FRAMEWORKS_TRANSACTIONAL_I, new Referencia('https://codefarm0.medium.com/beginners-guide-to-transactional-in-spring-boot-18a04e2a84bb', 'Spring Transactional I', FRAMEWORKS_KEY, 'Spring Transactional I', '2025/12/27')
-        .addRelatedItems(Keys.PERSISTENCY_ACID, Keys.PATRONES_ADVANCED_PERSISTENCE_PATTERNS, Keys.META_CARACTERISTICAS_ANOTATIONS, Keys.PARADIGMAS_ASPECTOS, Keys.COMPILACION_CALLS_AND_INVOCATION, Keys.PERSISTENCY_ADVANCED_MVCC, Keys.PERSISTENCY_ADVANCED_LOCKING)
+        .addRelatedItems(Keys.PERSISTENCY_ACID, Keys.PATRONES_ADVANCED_PERSISTENCE_PATTERNS, Keys.META_CARACTERISTICAS_ANOTATIONS, Keys.PARADIGMAS_ASPECTOS, Keys.BUILD_CALLS_AND_INVOCATION, Keys.PERSISTENCY_ADVANCED_MVCC, Keys.PERSISTENCY_ADVANCED_LOCKING)
         .addMoreReferences('https://codefarm0.medium.com/spring-transaction-internals-what-really-happens-under-the-hood-175b09a32db8', 'https://codefarm0.medium.com/deep-dive-into-transaction-propagation-and-isolation-levels-in-spring-boot-a25acd1ffd3b', 'https://medium.com/@pudarimadhavi99/the-dark-side-of-transactional-in-spring-boot-exposed-b4967c2ae166')
     ],
     [Keys.FRAMEWORKS_TRANSACTIONAL_II, new Referencia('https://codefarm0.medium.com/what-are-nested-transactions-in-spring-boot-while-using-transactional-1ad9957e0b9a', 'Spring Transactional II', FRAMEWORKS_KEY, 'Spring Transactional II', '2025/12/27')
-        .addRelatedItems(Keys.ANALISIS_TYPE_EVENTS, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRANSACTIONS, Keys.PATRONES_ADVANCED_PERSISTENCE_PATTERNS, Keys.META_ESTRUCTURAS_SCOPE, Keys.PERSISTENCY_ADVANCED_CONSISTENCY, Keys.COMPILACION_ERRORS_AND_EXCEPTIONS)
+        .addRelatedItems(Keys.ANALISIS_TYPE_EVENTS, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRANSACTIONS, Keys.PATRONES_ADVANCED_PERSISTENCE_PATTERNS, Keys.META_ESTRUCTURAS_SCOPE, Keys.PERSISTENCY_ADVANCED_CONSISTENCY, Keys.BUILD_ERRORS_AND_EXCEPTIONS)
         .addMoreReferences('https://codefarm0.medium.com/top-spring-boot-transaction-interview-questions-c872fb800120', 'https://dev.to/haraf/understanding-transactioneventlistener-in-spring-boot-use-cases-real-time-examples-and-4aof', 'https://docs.spring.io/spring-framework/reference/data-access/transaction/declarative/annotations.html')
     ],
     [Keys.FRAMEWORKS_HIDDEN_LAYERS, new Referencia('https://medium.com/javarevisited/you-call-response-getbody-and-think-youre-done-you-re-not-even-close-ceb5ed2b7e74', 'Capas inherentemente ocultas', FRAMEWORKS_KEY, 'Layers', '2026/05/30')
@@ -850,7 +854,7 @@ export const META_ESTRUCTURAS_REF = new Map<string, Referencia>([
     ],
     [Keys.META_ESTRUCTURAS_SISTEMAS_COMPLEJOS, new Referencia('https://www.researchgate.net/figure/Figura-2-Caracteristicas-basicas-de-los-sistemas-complejos-Comportamiento-impredecible_fig1_262437348', 'Complejidad inherente al sistema', META_ESTRUCTURAS_KEY, 'Sistemas Complejos', '', '2025/03/18')],
     [Keys.META_ESTRUCTURAS_FUNCIONES_LAMBDA, new Referencia('https://www.tokioschool.com/noticias/expresiones-lambda-uso-programacion-aplicaciones/', 'Funciones Lambda', META_ESTRUCTURAS_KEY, 'Funciones lambda', '', '2025/07/03')
-        .addRelatedItems(Keys.POO_INMUTABILITY, Keys.PARADIGMAS_FUNCIONAL, Keys.COMPILACION_STREAMS)
+        .addRelatedItems(Keys.POO_INMUTABILITY, Keys.PARADIGMAS_FUNCIONAL, Keys.BUILD_STREAMS)
         .addMoreReferences('https://stackchief.com/tutorials/The%20Ultimate%20Guide%20to%20Lambda%20Expressions%20in%20Java')
     ],
     [Keys.META_ESTRUCTURAS_VALUE_OBJECTS, new Referencia('https://medium.com/all-you-need-is-clean-code/value-objects-d4c24115fa69', 'Value Objects', META_ESTRUCTURAS_KEY, 'Value Objects', '2022/11/07')
@@ -862,7 +866,7 @@ export const META_ESTRUCTURAS_REF = new Map<string, Referencia>([
         .addMoreReferences('https://levelup.gitconnected.com/the-hidden-cost-of-jackson-serialization-425612a4ac06')
     ],
     [Keys.META_ESTRUCTURAS_SERIALIZATION_FORMATS, new Referencia('https://blog.mbedded.ninja/programming/serialization-formats/a-comparison-of-serialization-formats/', 'Formatos de Serialización', META_ESTRUCTURAS_KEY, 'Serializar & Deserializar II', '2026/03/29')
-        .addRelatedItems(Keys.HARDWARE_IO_BOUND_CPU_BOUND, Keys.ANALISIS_DATA_DATA_STORING, Keys.COMPILACION_VERBOSITY, Keys.APIS_REST_FULL)
+        .addRelatedItems(Keys.HARDWARE_IO_BOUND_CPU_BOUND, Keys.ANALISIS_DATA_DATA_STORING, Keys.BUILD_VERBOSITY, Keys.APIS_REST_FULL)
         .addMoreReferences('https://celerdata.com/glossary/understanding-data-serialization-a-format-comparison-guide', 'https://pub.towardsai.net/from-json-to-toon-evolving-serialization-for-llms-60e99076f48c')
     ],
     [Keys.META_ESTRUCTURAS_DEPRECATION, new Referencia('https://digma.ai/deprecated-methods-in-java/', 'Deprecated (Obsolencia)', META_ESTRUCTURAS_KEY, 'Deprecated (Obsolencia)', '2024/06/15')
@@ -1083,7 +1087,7 @@ export const PARADIGMAS_REF = new Map<string, Referencia>([
         .addMoreReferences('https://blog.educacionit.com/2018/12/26/diferencia-entre-lenguajes-de-scripting-lenguajes-de-marcado-y-lenguajes-de-programacion/')
     ],
     [Keys.PARADIGMAS_ASPECTOS, new Referencia('https://www.baeldung.com/spring-aop', 'Orientación a aspectos', PARADIGMAS_KEY, 'Aspectos', '', '2025/12/27')
-        .addRelatedItems(Keys.COMPILACION_CALLS_AND_INVOCATION, Keys.COMPILACION_INSTRUMENTS)
+        .addRelatedItems(Keys.BUILD_CALLS_AND_INVOCATION, Keys.BUILD_INSTRUMENTS)
         .addMoreReferences('https://docs.spring.io/spring-framework/reference/core/aop/introduction-defn.html')
     ],
     [Keys.PARADIGMAS_LOGICA, new Referencia('https://ferestrepoca.github.io/paradigmas-de-programacion/proglogica/logica_teoria/aplicaciones.html', 'Programación Logica', PARADIGMAS_KEY, 'Logica')],
@@ -1236,7 +1240,7 @@ export const POO_REF = new Map<string, Referencia>([
     [Keys.POO_DESCOMPOSITION, new Referencia('http://miguedt.blogspot.com/2013/01/descomposicion-funcional.html', 'Descomposición', POO_KEY, 'Descomposición')],
     [Keys.POO_HERENCIA, new Referencia('https://www.ecured.cu/Herencia_(Inform%C3%A1tica)', 'Herencia', POO_KEY, 'Herencia', '', '2024/12/10')],
     [Keys.POO_INTERFACES, new Referencia('https://blog.stackademic.com/why-your-java-interfaces-are-just-fancy-comments-6cd86e97c382', 'Cuando usar Interfaces', POO_KEY, 'Interfaces', '2025/09/20')
-        .addRelatedItems(Keys.ANALISIS_COMPORTAMIENTO, Keys.PRINCIPIOS_SOC, Keys.PRINCIPIOS_SOLID, Keys.FRAMEWORKS_IOD_SPRING, Keys.COMPILACION_SDK_VS_API, Keys.BUENAS_PRACTICAS_INDIRECTION, Keys.CALIDAD_CODING_PRINCIPLES, Keys.ARQUITECTURAS_IMPL_HEXAGONAL)
+        .addRelatedItems(Keys.ANALISIS_COMPORTAMIENTO, Keys.PRINCIPIOS_SOC, Keys.PRINCIPIOS_SOLID, Keys.FRAMEWORKS_IOD_SPRING, Keys.BUILD_SDK_VS_API, Keys.BUENAS_PRACTICAS_INDIRECTION, Keys.CALIDAD_CODING_PRINCIPLES, Keys.ARQUITECTURAS_IMPL_HEXAGONAL)
         .addMoreReferences('https://www.baeldung.com/cs/program-to-interface', 'https://stackoverflow.com/questions/639592/why-are-interfaces-preferred-to-abstract-classes')
     ],
     [Keys.POO_POLIMORFISMO, new Referencia('https://ifgeekthen.nttdata.com/es/polimorfismo-en-java-programaci%C3%B3n-orientada-objetos', 'Polimorfismo & Sobrecarga', POO_KEY, 'Polimorfismo/Sobrecarga', '', '2025/03/19')
@@ -1303,7 +1307,7 @@ export const TESTING_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.VERSIONAMIENTO_DOCUMENTATION, Keys.ANALISIS_OPINIONATED_NO, Keys.REFACTORING_LEGACY_CODE_I)
     ],
     [Keys.TESTING_BUG, new Referencia('https://testgrid.io/blog/bug-life-cycle/', 'Ciclo de vida de un Error(Bug)', TESTING_KEY, 'Bugs', '2025/04/23')
-        .addRelatedItems(Keys.BUENAS_PRACTICAS_DEBUGGING, Keys.BUENAS_PRACTICAS_LOGGING, Keys.PEOPLE_CAPA_8, Keys.COMPILACION_ERRORS_AND_EXCEPTIONS)
+        .addRelatedItems(Keys.BUENAS_PRACTICAS_DEBUGGING, Keys.BUENAS_PRACTICAS_LOGGING, Keys.PEOPLE_CAPA_8, Keys.BUILD_ERRORS_AND_EXCEPTIONS)
     ],
     [Keys.TESTING_INTEGRATION, new Referencia('https://qalified.com/es/blog/pruebas-de-integracion-que-son/', 'Pruebas de Integración', TESTING_KEY, 'Integracion', '2025/09/10', '2026/03/16')
         .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_BOTTOM_UP_AND_TOP_DOWN, Keys.PATRONES_ADVANCED_FOR_INTEGRATION, Keys.POO_COUPLING_AND_COHESION, Keys.METODOLOGIAS_MODEL_BING_BANG, Keys.CD_CI_RULES, Keys.FRAMEWORKS_IOD_SPRING)
@@ -1890,7 +1894,7 @@ export const CI_CD_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.NUBE_DISPONIBILITY, Keys.OBSERVABILIDAD_SRE, Keys.NUBE_LOAD_BALANCING, Keys.HARDWARE_ESCALAMIENTO, Keys.WEB_GOLDEN_SIGNALS, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRANSACTIONS)
     ],
     [Keys.CD_CI_MONITORING_AND_ALERTS, new Referencia('https://edgedelta.com/company/blog/monitoring-and-alerting-best-practices', 'Monitoreo, Alertas & Observabilidad', CI_CD_KEY, 'Monitoreo y Alertas', '2025/10/12')
-        .addRelatedItems(Keys.OBSERVABILIDAD_OBSERVABILITY, Keys.TESTING_ADVANCED_PERFORMANCE, Keys.OBSERVABILIDAD_COMMON_METRICS_I, Keys.PEOPLE_DIKW, Keys.SECURITY_MATRIZ_DE_RIESGOS, Keys.COMPILACION_INSTRUMENTS, Keys.OBSERVABILIDAD_SRE, Keys.COMPILACION_SDK_VS_API, Keys.PEOPLE_POST_MORTEM)
+        .addRelatedItems(Keys.OBSERVABILIDAD_OBSERVABILITY, Keys.TESTING_ADVANCED_PERFORMANCE, Keys.OBSERVABILIDAD_COMMON_METRICS_I, Keys.PEOPLE_DIKW, Keys.SECURITY_MATRIZ_DE_RIESGOS, Keys.BUILD_INSTRUMENTS, Keys.OBSERVABILIDAD_SRE, Keys.BUILD_SDK_VS_API, Keys.PEOPLE_POST_MORTEM)
         .addMoreReferences('https://opentelemetry.io/docs/what-is-opentelemetry/', 'https://opentelemetry.io/docs/concepts/instrumentation/zero-code/', 'https://betterstack.com/community/guides/monitoring/what-is-metrics-monitoring-alerting/')
     ],
     [Keys.CD_CI_DEPLOYMENT_ARQUITECTURE, new Referencia('https://medium.com/nerd-for-tech/software-deployment-as-architecture-648867bdb77c', 'Implementación como Arquitectura', CI_CD_KEY, 'Deploy & Arquitectura', '2025/06/12')

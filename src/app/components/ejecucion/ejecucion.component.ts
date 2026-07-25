@@ -1,6 +1,7 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { LinkReferencia, SECURITY_KEY, HARDWARE_KEY, CI_CD_KEY, NUBE_KEY, EJECUCION_REF, COMPILACION_KEY, VERSIONAMIENTO_KEY }
+import { LinkReferencia, SECURITY_KEY, HARDWARE_KEY, CI_CD_KEY, NUBE_KEY, EJECUCION_REF, COMPILACION_KEY,
+  VERSIONAMIENTO_KEY, BUILD_KEY }
   from 'src/app/models/linkReferencia';
 import { Item, PreviousAndNextSection } from 'src/app/models/models';
 import { EJECUCION_PATH } from 'src/app/models/relationsSummary';
@@ -36,7 +37,7 @@ export class EjecucionComponent implements OnInit {
     this.relatedSections.set(CI_CD_KEY,       routes.get(CI_CD_KEY)!);
     this.relatedSections.set(NUBE_KEY,        routes.get(NUBE_KEY)!);
     this.previousAndNextSection = new PreviousAndNextSection(
-      COMPILACION_KEY,    routes.get(COMPILACION_KEY)!,
+      BUILD_KEY,          routes.get(BUILD_KEY)!,
       VERSIONAMIENTO_KEY, routes.get(VERSIONAMIENTO_KEY)!
     );
   }

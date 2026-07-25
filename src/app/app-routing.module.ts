@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {
-  AGILES_KEY, ANALISIS_KEY, APIS_KEY, ARQUITECTURAS_KEY, BUENAS_PRACTICAS_KEY, CALIDAD_KEY, META_CARACTERISTICAS_KEY,
+  AGILES_KEY, ANALISIS_KEY, APIS_KEY, ARQUITECTURAS_KEY, BUENAS_PRACTICAS_KEY, BUILD_KEY, CALIDAD_KEY, META_CARACTERISTICAS_KEY,
   CI_CD_KEY, COMPILACION_KEY, CONOCIMIENTO_EMPIRICO_KEY, CONTENEDORES_KEY, PERSISTENCY_ADVANCED_KEY, PERSISTENCY_KEY,
   ESTRATEGIAS_DESARROLLO_KEY, META_ESTRUCTURAS_KEY, FRAMEWORKS_KEY, GIT_KEY, HARDWARE_KEY, LEYES_KEY, MALAS_PRACTICAS_KEY,
   METODOLOGIAS_KEY, NEURO_MARKETING_KEY, NUBE_KEY, ANALISIS_DATA_KEY, PARADIGMAS_KEY, PATRONES_KEY, PEOPLE_KEY, POO_KEY,
@@ -49,6 +49,7 @@ const routes: Routes = [
   { path: 'versionamiento', loadChildren: () => import('./components/versionamiento/versionamiento.module').then(m => m.VersionamientoModule), title: VERSIONAMIENTO_KEY },
   { path: 'historias-de-usuario', loadChildren: () => import('./components/historia-usuario/historias-usuario.module').then(m => m.HistoriasUsuarioModule), title: USER_HISTORIES_KEY },
   { path: 'compilacion', loadChildren: () => import('./components/compilacion/compilacion.module').then(m => m.CompilacionModule), title: COMPILACION_KEY },
+  { path: 'build', loadChildren: () => import('./components/build/build.module').then(m => m.BuildModule), title: BUILD_KEY },
   { path: 'ejecucion', loadChildren: () => import('./components/ejecucion/ejecucion.module').then(m => m.EjecucionModule), title: EJECUCION_KEY },
   { path: 'bases-de-datos', loadChildren: () => import('./components/sql-nosql/sql-nosql.module').then(m => m.SqlNoSqlModule), title: PERSISTENCY_KEY },
   { path: 'bd-intermedio', loadChildren: () => import('./components/sql-nosql-intermediate/sql-nosql-intermediate.module').then(m => m.SqlNoSqlIntermediateModule), title: PERSISTENCY_INTERMEDIATE_KEY },

@@ -1,35 +1,35 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import {
-  META_CARACTERISTICAS_KEY, COMPILACION_REF, META_ESTRUCTURAS_KEY, HARDWARE_KEY, LinkReferencia,
-  FRAMEWORKS_KEY, PARADIGMAS_KEY, EJECUCION_KEY, BUILD_KEY }
-from 'src/app/models/linkReferencia';
+  META_CARACTERISTICAS_KEY, BUILD_REF, META_ESTRUCTURAS_KEY, HARDWARE_KEY, LinkReferencia, PARADIGMAS_KEY,
+  EJECUCION_KEY, COMPILACION_KEY
+} from 'src/app/models/linkReferencia';
 import { Item, PreviousAndNextSection } from 'src/app/models/models';
-import { COMPILACION_PATH } from 'src/app/models/relationsSummary';
+import { BUILD_PATH } from 'src/app/models/relationsSummary';
 
 @Component({
-    selector: 'app-compilacion',
-    templateUrl: './compilacion.component.html',
-    standalone: false
+  selector: 'app-build',
+  templateUrl: './build.component.html',
+  standalone: false
 })
-export class CompilacionComponent implements OnInit {
+export class BuildComponent implements OnInit {
 
   items: Item[] = [];
 
-  components = COMPILACION_REF;
+  components = BUILD_REF;
 
   itemStart = '';
 
   relatedSections = new Map<string, string>([]);
 
-  tittles = new Map([ ...COMPILACION_REF ].map(([key, { tittleShort }]) => [key, tittleShort]));
+  tittles = new Map([ ...BUILD_REF ].map(([key, { tittleShort }]) => [key, tittleShort]));
 
   previousAndNextSection!: PreviousAndNextSection;
 
   private route = inject(ActivatedRoute);
 
   ngOnInit(): void {
-    this.items = this.route.snapshot.data[COMPILACION_PATH.propertyNameData];
+    this.items = this.route.snapshot.data[BUILD_PATH.propertyNameData];
     this.itemStart = history?.state?.newItem;
     const routes = new LinkReferencia().routesAndSections;
     this.relatedSections.set(META_CARACTERISTICAS_KEY, routes.get(META_CARACTERISTICAS_KEY)!);
@@ -38,8 +38,8 @@ export class CompilacionComponent implements OnInit {
     this.relatedSections.set(EJECUCION_KEY,            routes.get(EJECUCION_KEY)!);
     this.relatedSections.set(HARDWARE_KEY,             routes.get(HARDWARE_KEY)!);
     this.previousAndNextSection = new PreviousAndNextSection(
-      FRAMEWORKS_KEY, routes.get(FRAMEWORKS_KEY)!,
-      BUILD_KEY,      routes.get(BUILD_KEY)!
+      COMPILACION_KEY, routes.get(COMPILACION_KEY)!,
+      EJECUCION_KEY,   routes.get(EJECUCION_KEY)!
     );
   }
 
