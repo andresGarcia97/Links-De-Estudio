@@ -441,6 +441,9 @@ export const BUILD_REF = new Map<string, Referencia>([
     [Keys.BUILD_AZUCAR_SINTACTICO, new Referencia('https://es.wikipedia.org/wiki/Az%C3%BAcar_sint%C3%A1ctico', 'Azucar Sintactico', BUILD_KEY, 'Azucar Sintactico')],
     [Keys.BUILD_COERCION, new Referencia('https://developer.mozilla.org/es/docs/Glossary/Type_coercion', 'Coerción', BUILD_KEY, 'Coerción')],
     [Keys.BUILD_DUCK_TYPING, new Referencia('https://devopedia.org/duck-typing', 'Duck Typing', BUILD_KEY, 'Duck Typing', '', '2024/11/23')],
+    [Keys.BUILD_REPRESENTAR_AUSENCIA, new Referencia('https://www.luisllamas.es/concepto-null-undefined-none/', 'null, undefined y none', BUILD_KEY, 'Ausencia', '2026/07/24')
+        .addRelatedItems(Keys.META_CARACTERISTICAS_ARGUMENTS, Keys.EJECUCION_OBJECT_CREATION, Keys.META_CARACTERISTICAS_GENERICS)
+    ],
     [Keys.BUILD_CASTING, new Referencia('https://www.w3schools.com/java/java_type_casting.asp', 'Casting', BUILD_KEY, 'Casteo de Datos')],
     [Keys.BUILD_VERBOSITY, new Referencia('https://softwareengineering.stackexchange.com/questions/141175/why-is-verbosity-bad-for-a-programming-language', 'Verbosidad', BUILD_KEY, 'Verbosidad', '2023/03/31')],
     [Keys.BUILD_TREE_SHAKING, new Referencia('https://developer.mozilla.org/en-US/docs/Glossary/Tree_shaking', 'TreeShaking', BUILD_KEY, 'Tree Shaking')],

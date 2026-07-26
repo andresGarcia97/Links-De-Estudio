@@ -496,6 +496,7 @@ export const COMPILACION_DECOMPILE = 'decompile';
 export const BUILD_AZUCAR_SINTACTICO = 'azucarSintactico';
 export const BUILD_COERCION = 'coercion';
 export const BUILD_DUCK_TYPING = 'duckTyping';
+export const BUILD_REPRESENTAR_AUSENCIA = 'null-undefined-none';
 export const BUILD_CASTING = 'casting';
 export const BUILD_VERBOSITY = 'verbosity';
 export const BUILD_TREE_SHAKING = 'treeShaking';

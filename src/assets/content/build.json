@@ -21,6 +21,17 @@
         "- Aunque es flexible, puede traer problemas la ejecución si se quiere usar comportamientos especificos de un tipo en otro que no lo soporte ",
         "- Tambien se pueden comprobar los tipos de los objetos antes de, pero esto generalmente denota un problema de diseño más que de codificación "
     ],
+    "null-undefined-none": [
+        "- En la programación los conceptos de <em>null</em>, <em>undefined</em> y <em>none</em> son fundamentales para manejar el concepto de la <strong>ausencia de valores</strong> ",
+        "- Puede parecer sencillo, pero ha sido fuente de debates, complejidad y dolores de cabeza a traves del tiempo ",
+        "- Si una variable es una <em>caja</em>, en la vida real estaria <strong>vacia</strong> si no tiene <strong>nada</strong>, en programación una caja <em>vacia</em> no significa <em>nada</em> ",
+        "- El concepto de nada varia entre los lenguajes, pero intentan decir lo mismos, <em>esta variable contine nada</em> ",
+        "",
+        "- <strong>El error de miles de millones de dolares:</strong> Es importante recalcar que el null tiene muy mala fama, es especial acumulada a traves de los años ",
+        "- Fue introducido en 1965 por <strong>Tony Hoare</strong> y decadas despues en una conferencia pidio disculpas publicamente: ",
+        "- <em>Lo llamo mi error del billón de dólares. […] Simplemente, no pude resistir la tentación de poner una referencia nula,</em> ",
+        " - <em>simplemente porque era muy fácil de implementar. Esto ha provocado innumerables errores, vulnerabilidades y fallos del sistema.”</em> "
+    ],
     "casting": [
         "- Es una cambio de un valor de un tipo a otro, ya sea primitivo o de clase ",
         "<strong>Widening Casting:</strong> Cuando se convierte de un dato pequeño a uno más grande; float -> double ",
