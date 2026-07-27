@@ -409,7 +409,7 @@ export const CALIDAD_REF = new Map<string, Referencia>([
         .addMoreReferences('https://helpware.com/blog/tech/iso-25010-enhancing-our-software-quality-management-process')
     ],
     [Keys.CALIDAD_ESTABILIDAD, new Referencia('https://velneo.com/blog/estabilidad-en-el-software/', 'Estabilidad en el software', CALIDAD_KEY, 'Estabilidad en el software', '2026/07/25')
-        .addRelatedItems(Keys.REFACTORING_MANAGE_DEUDA_TECNICA, Keys.SECURITY_CIA, Keys.REQUISITOS_TRADE_OFF, Keys.TESTING_ADVANCED_DEFECT_RATE, Keys.CONOCIMIENTOS_EMPIRICOS_CODE_MAINTAINER, Keys.ESTRATEGIAS_DESARROLLO_SLDC, Keys.CD_CI_CI_CD)
+        .addRelatedItems(Keys.REFACTORING_MANAGE_DEUDA_TECNICA, Keys.SECURITY_CIA, Keys.REQUISITOS_TRADE_OFF, Keys.TESTING_ADVANCED_DEFECT_RATE, Keys.CONOCIMIENTOS_EMPIRICOS_CODE_MAINTAINER, Keys.ESTRATEGIAS_DESARROLLO_SLDC, Keys.CD_CI_CI_CD, Keys.HARDWARE_DEGRADATION)
         .addMoreReferences('https://www.inesem.es/revistadigital/gestion-empresarial/eres-eficaz-eficiente-o-efectivo')
     ]
 ]);
@@ -1815,6 +1815,9 @@ export const HARDWARE_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.EJECUCION_BLOCKING_AND_NO_BLOCKING, Keys.EJECUCION_CONCURRENCY_AND_PARALLELISM)
         .addMoreReferences('https://ashdaily.co.uk/blog/post0011/')
     ],
+    [Keys.HARDWARE_DEGRADATION, new Referencia('https://www.techtarget.com/searchitoperations/definition/server-hardware-degradation', 'Degradación', HARDWARE_KEY, 'Degradación', '2026/07/26')
+        .addRelatedItems(Keys.TESTING_ADVANCED_PERFORMANCE, Keys.EJECUCION_PREMATURE_OPTIMIZATION, Keys.TESTING_ADVANCED_CHARGE, Keys.CONTENEDORES_CONTAINERS, Keys.CD_CI_MONITORING)
+    ]
 ]);
 
 export const WEB_KEY = 'Web';

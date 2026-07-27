@@ -412,6 +412,7 @@ export const HARDWARE_CLEAN_CODE_PERFORMANCE = 'cleanCodeWorstPerformance';
 export const HARDWARE_DATA_CENTERS = 'clasificationDataCenters';
 export const HARDWARE_LAWS_SCALABILITY = 'laws-of-scalability';
 export const HARDWARE_IO_BOUND_CPU_BOUND = 'io-bound-cpu-bound';
+export const HARDWARE_DEGRADATION = 'degradation';
 export const SECURITY_CIBER_SECURITY = 'ciberSeguridad';
 export const SECURITY_CIA = 'CIA';
 export const SECURITY_NO_REPUDIO = 'noRepudio';

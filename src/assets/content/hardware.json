@@ -311,5 +311,18 @@
     "&bull; ¿ Cuanto se demora el sistema esperando respuestas externas ?",
     "&bull; ¿ El sistema puede depender de ambas ? y si es asi, ¿ cual es más critica ? ",
     "&bull; ¿ Que es más comun en el sistema concurrencia o paralelismo ?"
+  ],
+  "degradation": [
+    "- Es un proceso físico y gradual donde las partes de un servidor dejan de funcionar de manera adecuada o directamente fallan ",
+    "- Todo servidor suele tener una vida util maxima, pero por seguridad muchas empresas reemplazan estos equipos antes de que se cumpla ",
+    "- La virtualización, los contenedores y la nube han permitido abstraer las cargas del hardware físico, reduciendo el impacto de su degradación ",
+    "- Finalmente el tipo de software que se ejecuta tambien ayuda a reducir/acelerar esta degradación ",
+    "",
+    "- Las fuentes de alimentación pueden fallar por sobrecalentamientos, sobretensiones o falta de refrigeración ",
+    "- La memoria igual que muchos componentes electronicos, es sensible a las sobretension y sobrecalentamiento ",
+    "- La CPU se puede sobrecalentar si hay dificultades para disipar el calor, si lo hace esta se protege reduciendo la velocidad para evitar daños ",
+    "- El almacenamiento es el componente más sensible a la degradación, no importa si son HDD (discos giratorios y cabezal) o SSD (almacenamiento flash)",
+    "",
+    "- Para evitar interrupciones del servicio, además de la salud del software también se vigila la salud del hardware en el que está alojado "
   ]
 }
