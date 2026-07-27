@@ -407,6 +407,10 @@ export const CALIDAD_REF = new Map<string, Referencia>([
     ],
     [Keys.CALIDAD_ISO_IEC_25010, new Referencia('https://www.perforce.com/blog/qac/what-is-iso-25010', 'Quality Model - ISO 25010', CALIDAD_KEY, 'Quality Model', '2026/06/06')
         .addMoreReferences('https://helpware.com/blog/tech/iso-25010-enhancing-our-software-quality-management-process')
+    ],
+    [Keys.CALIDAD_ESTABILIDAD, new Referencia('https://velneo.com/blog/estabilidad-en-el-software/', 'Estabilidad en el software', CALIDAD_KEY, 'Estabilidad en el software', '2026/07/25')
+        .addRelatedItems(Keys.REFACTORING_MANAGE_DEUDA_TECNICA, Keys.SECURITY_CIA, Keys.REQUISITOS_TRADE_OFF, Keys.TESTING_ADVANCED_DEFECT_RATE, Keys.CONOCIMIENTOS_EMPIRICOS_CODE_MAINTAINER, Keys.ESTRATEGIAS_DESARROLLO_SLDC, Keys.CD_CI_CI_CD)
+        .addMoreReferences('https://www.inesem.es/revistadigital/gestion-empresarial/eres-eficaz-eficiente-o-efectivo')
     ]
 ]);
 
@@ -574,7 +578,10 @@ export const LEYES_REF = new Map<string, Referencia>([
     [Keys.LEYES_MURPHY, new Referencia('https://www.caracteristicas.co/ley-de-murphy/', 'Ley de Murphy', LEYES_KEY, 'Ley de Murphy')],
     [Keys.LEYES_PENDULO, new Referencia('http://www.grupocrece.es/blog/Psicolog%C3%ADala-ley-del-pndulo-en-psicologa', 'Ley del pendulo', LEYES_KEY, 'Ley del pendulo')],
     [Keys.LEYES_HYRUM, new Referencia('https://thebootstrappedfounder.com/hyrums-law/', 'Ley de Hyrum', LEYES_KEY, 'Ley de Hyrum')],
-    [Keys.LEYES_LEBLANC, new Referencia('https://www.quora.com/What-resources-could-I-read-about-Leblancs-law', 'Ley de Leblanc', LEYES_KEY, 'Ley de Leblanc´s')],
+    [Keys.LEYES_LEBLANC, new Referencia('https://www.quora.com/What-resources-could-I-read-about-Leblancs-law', 'Ley de Leblanc', LEYES_KEY, 'Ley de Leblanc´s', '', '2026/07/25')
+        .addRelatedItems(Keys.CONOCIMIENTOS_EMPIRICOS_BOYS_SCOUTS, Keys.REFACTORING_REWRITE_TRAP)
+        .addMoreReferences('https://www.karllhughes.com/posts/five-takeaways-from-clean-code-a-handbook-of-agile-software-craftsmanship')
+    ],
     [Keys.LEYES_INTERNET, new Referencia('https://www.bbc.com/mundo/noticias-46102313.amp', 'Conductas en internet', LEYES_KEY, 'Leyes En Internet')],
     [Keys.LEYES_PARETO, new Referencia('https://www.becas-santander.com/es/blog/ley-de-pareto.html', 'Ley de Pareto', LEYES_KEY, 'Ley de Pareto', '2023/02/04')],
     [Keys.LEYES_BROOKS, new Referencia('https://www.genbeta.com/desarrollo/ley-brooks-desarrollo-software-clasico-profesion-que-habria-hecho-imposible-linux/amp', 'Ley de Brooks', LEYES_KEY, 'Ley de Brooks', '2023/03/24')],

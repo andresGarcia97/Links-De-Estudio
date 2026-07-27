@@ -355,5 +355,30 @@
     "",
     "- Este estándar permite al usuario final tener un producto efectivo, seguro, satisfactorio y que funcione tal como se espera en el contexto de su creacion ",
     "- En la práctica se usa como checklist durante todo el ciclo de desarrollo: desde la revisión de requerimientos hasta la evaluación de los resultados del QA"
+  ],
+  "estabilidad": [
+    "- La estabilidad en el software es esencial por varias razones, como fiabilidad, integridad de datos, seguridad, efectividad, ",
+    " - mantenimiento, rentabilidad y finalmente la satisfacción del usuario ",
+    "- Se dice que un sistema es estable cuando su nivel de fallos disminuye por debajo de un umbral, umbral que se adecua segun la necesidad ",
+    "",
+    "<strong>Fiabilidad:</strong> Funciona de forma consistente y predecible, lo que da confianza para que el usuario pueda realizar sus tareas ",
+    "<strong>Integridad de datos:</strong> Un malfuncionamiento puede corromper o perder los datos, causando problemas significativos al carecer de exactitud/coherencia ",
+    "<strong>Seguridad:</strong> Las vulnerabilidades presentes pueden ser explotadas por agentes maliciosos, provocando múltiples incidentes ",
+    "<strong>Efectividad:</strong> Utiliza los recursos disponibles de forma eficiente sin dejar de ser eficaz ",
+    "<strong>Satisfacción:</strong> Los usuarios prefieren un software estable porque proporciona una experiencia fluida e ininterrumpida ",
+    "<strong>Mantenimiento:</strong> Con un software estable los desarrolladores se pueden centrar en nuevas funcionalidades y no en corregir fallos ",
+    "<strong>Rentabilidad:</strong> A mayor inestabilidad más recursos deben ser destinados a solucionar problemas y corregir errores ",
+    "",
+    "&bull; Crear un software estable involucra una planificación cuidadosa en cada etapa de desarrollo ",
+    "<ins>-></ins> <strong>Requisitos:</strong> Que todos esten bien definidos y que todo el equipo los entienda ",
+    " <ins>-></ins> <strong>Diseño:</strong> El diseño debe ser modular y escalable, sin complejidad extra y que solucione el problema ",
+    "  <ins>-></ins> <strong>Código:</strong> Código limpio, que siga patrones, buenas practicas, que este debidamente documentado y sin problemas de rendimiento ",
+    "   <ins>-></ins> <strong>Revision:</strong> Revisiones periodicas de código ayudan a identificar posibles problemas que se hayan pasado por alto ",
+    "    <ins>-></ins> <strong>Pruebas:</strong> Las pruebas deben ser las más exhaustivas posibles, para que existan la menor cantidad de problemas posible ",
+    "     <ins>-></ins> <strong>CI/CD:</strong> La integración de pipelines automatizados acelera cada una de las etapas, desarrollo, pruebas, despliegues, etc.. ",
+    "      <ins>-></ins> <strong>Mantenimiento:</strong> Actualizaciones periodicas y contar con un esquema de soporte ayudan con la estabilidad a lo largo del tiempo ",
+    "",
+    "<strong>Más versiones = Más Estabilidad:</strong> Las nuevas versiones no son exclusivas para lanzar nuevas funcionalidades, tambien pueden existir para ",
+    " - corregir errores, mejoras de rendimiento, reducción de deuda tecnica, documentación, etc, cualquier otro cambie que aumente la estabilidad "
   ]
 }

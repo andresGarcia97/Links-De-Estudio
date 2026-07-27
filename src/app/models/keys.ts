@@ -640,6 +640,7 @@ export const CALIDAD_CODING_PRINCIPLES = 'goodCodingPrinciples';
 export const CALIDAD_CODE_ROT = 'codeRot';
 export const CALIDAD_IF_ELSE = 'reducingIfElse';
 export const CALIDAD_ISO_IEC_25010 = 'ISO-25010-quality-model';
+export const CALIDAD_ESTABILIDAD = 'estabilidad';
 export const PRINCIPIOS_SOLID = 'SOLID';
 export const PRINCIPIOS_KISS = 'KISS';
 export const PRINCIPIOS_YAGNI = 'YAGNI';
