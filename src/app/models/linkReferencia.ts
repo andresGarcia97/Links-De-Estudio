@@ -332,7 +332,6 @@ export const ARQUITECTURAS_IMPL_REF = new Map<string, Referencia>([
 
 export const BUENAS_PRACTICAS_KEY = 'Buenas-Practicas';
 export const BUENAS_PRACTICAS_REF = new Map<string, Referencia>([
-    //['practicas1', new Referencia('https://www.tithink.com/es/2018/06/13/12-buenas-practicas-para-el-desarrollo-software/', 'Buenas practicas parte #1', BUENAS_PRACTICAS_KEY, 'Buenas Practicas #1')],
     [Keys.BUENAS_PRACTICAS_BUENAS_PRACTICAS_I, new Referencia('https://mtpinternational.mx/cuales-son-las-mejores-practicas-del-desarrollo-de-software/', 'Buenas practicas I', BUENAS_PRACTICAS_KEY, 'Buenas Practicas I', '2025/10/11', '2026/03/21')
         .addRelatedItems(Keys.METODOLOGIAS_AGILES)
         .addMoreReferences('https://blog.stackademic.com/dont-just-code-the-15-essential-practices-senior-developers-want-you-to-learn-now-84246fb2f6ed')
@@ -341,15 +340,12 @@ export const BUENAS_PRACTICAS_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.ANALISIS_MODEL_DOMAIN)
         .addMoreReferences('https://velneo.es/15-buenas-practicas-proyectos-desarrollo-software/')
     ],
-    //['practicas4', new Referencia('http://www.noussintelligence.com/desarrollo-software-buenas-practicas-recomendaciones/', 'Buenas practicas parte #4', BUENAS_PRACTICAS_KEY, 'Parte #4')],
     [Keys.BUENAS_PRACTICAS_DEMETER, new Referencia('https://www.adictosaltrabajo.com/2015/07/24/ley-de-demeter/', 'Ley de Demeter', BUENAS_PRACTICAS_KEY, 'Ley de Demeter')],
-    //['complejidad', new Referencia('http://oscarmoreno.com/la-complejidad-ciclomatica/', 'Complejidad Ciclomatica', BUENAS_PRACTICAS_KEY, 'Complejidad')],
     [Keys.BUENAS_PRACTICAS_COMPLEJIDAD, new Referencia('https://mpijierro.medium.com/complejidad-ciclom%C3%A1tica-y-como-reducirla-7374c215f666', 'Complejidad Ciclomatica', BUENAS_PRACTICAS_KEY, 'Complejidad')],
     [Keys.BUENAS_PRACTICAS_LOGGING, new Referencia('https://itnext.io/logger-or-debugger-which-one-to-choose-3f6a72200b15', 'Logging VS Debugging', BUENAS_PRACTICAS_KEY, 'Logs VS Debug')],
     [Keys.BUENAS_PRACTICAS_DEBUGGING, new Referencia('https://www.freecodecamp.org/news/what-is-debugging-how-to-debug-code/', 'Como Depurar', BUENAS_PRACTICAS_KEY, 'Debugging', '', '2025/02/23')],
     [Keys.BUENAS_PRACTICAS_COMPLEJIDAD_COGNITIVA, new Referencia('https://enmilocalfunciona.io/complejidad-cognitiva/', 'Complejidad Cognitiva', BUENAS_PRACTICAS_KEY, 'Complejidad Cognitiva')],
     [Keys.BUENAS_PRACTICAS_COMPLEJIDAD_ALGORITMICA, new Referencia('https://medium.com/@joseguillermo_/qu%C3%A9-es-la-complejidad-algor%C3%ADtmica-y-con-qu%C3%A9-se-come-2638e7fd9e8c', 'Complejidad Algoritmica', BUENAS_PRACTICAS_KEY, 'Complejidad Algoritmica')],
-    //['estandaresNombramiento', new Referencia('https://adrianalonso.es/cajon-desatre/convencion-de-nombres-desde-el-camelcase-hasta-el-kebab-case/', 'Estandares de nombramiento', BUENAS_PRACTICAS_KEY, 'Nombramiento')],
     [Keys.BUENAS_PRACTICAS_NAMING_CONVENTION, new Referencia('https://www.pluralsight.com/resources/blog/software-development/programming-naming-conventions-explained', 'Convenciones de nombramiento', BUENAS_PRACTICAS_KEY, 'Nombramiento/Nomeclatura', '', '2025/04/05')],
     [Keys.BUENAS_PRACTICAS_STATIC_CODE_ANALYSIS, new Referencia('https://www.checkpoint.com/es/cyber-hub/cloud-security/what-is-static-code-analysis/', 'Analisis de código estatico', BUENAS_PRACTICAS_KEY, 'Analisis de código I', '2023/12/17', '2025/10/11')
         .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_SLDC, Keys.SMELL_CODES_SMELLS_CODES, Keys.SECURITY_CVE)
@@ -366,8 +362,9 @@ export const BUENAS_PRACTICAS_REF = new Map<string, Referencia>([
         .addMoreReferences('https://medium.com/@csvaibhavpasrija/838292f305fd')
     ],
     [Keys.BUENAS_PRACTICAS_GOOD_HABITS, new Referencia('https://vadimkravcenko.com/shorts/habits-of-great-software-engineers/', 'Buenos habitos de un desarrollador', BUENAS_PRACTICAS_KEY, 'Buenos habitos')],
-    [Keys.BUENAS_PRACTICAS_FUNCTIONS, new Referencia('https://medium.com/@akineralkan/clean-code-notes-chapter-3-functions-de4a30191300', 'Buenas practicas, Funciones', BUENAS_PRACTICAS_KEY, 'Funciones', '2024/10/18')
-        .addRelatedItems(Keys.PATRONES_ADVANCED_CQRS)
+    [Keys.BUENAS_PRACTICAS_FUNCTIONS, new Referencia('https://medium.com/@akineralkan/clean-code-notes-chapter-3-functions-de4a30191300', 'Buenas practicas, Funciones', BUENAS_PRACTICAS_KEY, 'Funciones', '2024/10/18', '2026/07/27')
+        .addRelatedItems(Keys.PATRONES_ADVANCED_CQRS, Keys.CALIDAD_CLEAN_CODE, Keys.PRINCIPIOS_SOLID, Keys.ANALISIS_EXCEPTION_DESIGN)
+        .addMoreReferences('https://medium.com/swlh/clean-code-writing-functions-or-methods-4e6e53ff4ac2')
     ],
     [Keys.BUENAS_PRACTICAS_AGGREGATES, new Referencia('https://www.kranio.io/blog/de-bueno-a-excelente-en-ddd-entendiendo-aggregates-y-aggregate-roots-en-domain-driven-design---3-10', 'Aggregates y Aggregate Roots', BUENAS_PRACTICAS_KEY, 'Agregados', '2025/04/20')
         .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.META_ESTRUCTURAS_VALUE_OBJECTS, Keys.POO_DESIGN_BY_CONTRACT_PARTS, Keys.ANALISIS_COHESERS_DECOUPLERS)
