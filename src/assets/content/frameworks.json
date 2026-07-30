@@ -276,7 +276,7 @@
     "&brvbar; AFTER_ROLLBACK         &brvbar; Logging del error o generar una acción compensatoria                                   &brvbar; ",
     "&brvbar; AFTER_COMPLETION       &brvbar; Medición del tiempo de la transacción, independientemente de si hizo COMMIT o ROLLBACK &brvbar; "
   ],
-  "hidden-layers": [
+  "hidden-layers-app": [
     "- Muchas funcionalidades o conveniencias que un Framework aporta, suelen tener un sustento técnico bastante rico que no siempre vemos o conocemos ",
     "- Conocer las multiples capas involucradas para que una simple petición GET viajes sin problemas, por ejemplo, nos enseña que la ingeniera cambia y evoluciona ",
     "",

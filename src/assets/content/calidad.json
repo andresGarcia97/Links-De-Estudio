@@ -61,7 +61,7 @@
     "- La calidad de código es un estandar que siempre se debe perseguir, hasta el código más limpio puede verse afectado por malas practicas ",
     "- El proceso de degradación en todo proyecto es inevitable, más no incontrolable ",
     "- Los parches pueden ser reparaciones o adiciones rapidas y funcionales, sin embargo puedan estar en contravia directa de la calidad ",
-    "- Una de las principales causas de esta degradación, es la calidad inicial del código base, entre mejor sea, más se ralentizara ",
+    "- Una de las principales causas de esta degradación, es la calidad de cada cambio, entre mejor sea, más se ralentizara ",
     "",
     "<strong>Analisis de caracteristicas:</strong> Toda nueva funcionalidad debe ser analizada y esclarecida por negocio para que durante su, ",
     " - implementación el mayor numero de inquietudes este resuelto, entre más tiempo y correciones se hagan, sera peor y su costo aumentara ",
@@ -76,7 +76,7 @@
     " - de la arquitectura, definiendo las entradas y las salidas internamente, y en algunos casos son complementarios a la documentación ",
     "",
     "<strong>WTF por minuto:</strong> Esta medida es más empirica que real pero es una forma de medir la calidad, de manera que ",
-    " - un código dificil de comprender, de mantener y de depurar suele tener pocos WFT por minuto, solo un buen código tiene un conteo bajo, ",
+    " - un código dificil de comprender, de mantener y de depurar suele tener altos WFT por minuto, solo un buen código tiene un conteo bajo, ",
     " - para lograr esto se requiere esfuerzo y dedicación, en especial en tiempos en que la IA ha abaratado el costo de su generación ",
     "",
     "<strong>El principio de Ward:</strong> <em>Sabes que estás trabajando en código limpio cuando cada rutina resulta ser prácticamente lo que esperabas</em>"

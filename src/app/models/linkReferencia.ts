@@ -713,7 +713,7 @@ export const FRAMEWORKS_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.ANALISIS_TYPE_EVENTS, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRANSACTIONS, Keys.PATRONES_ADVANCED_PERSISTENCE_PATTERNS, Keys.META_ESTRUCTURAS_SCOPE, Keys.PERSISTENCY_ADVANCED_CONSISTENCY, Keys.BUILD_ERRORS_AND_EXCEPTIONS)
         .addMoreReferences('https://codefarm0.medium.com/top-spring-boot-transaction-interview-questions-c872fb800120', 'https://dev.to/haraf/understanding-transactioneventlistener-in-spring-boot-use-cases-real-time-examples-and-4aof', 'https://docs.spring.io/spring-framework/reference/data-access/transaction/declarative/annotations.html')
     ],
-    [Keys.FRAMEWORKS_HIDDEN_LAYERS, new Referencia('https://medium.com/javarevisited/you-call-response-getbody-and-think-youre-done-you-re-not-even-close-ceb5ed2b7e74', 'Capas inherentemente ocultas', FRAMEWORKS_KEY, 'Layers', '2026/05/30')
+    [Keys.FRAMEWORKS_HIDDEN_LAYERS, new Referencia('https://medium.com/javarevisited/you-call-response-getbody-and-think-youre-done-you-re-not-even-close-ceb5ed2b7e74', 'Capas ocultas I', FRAMEWORKS_KEY, 'Hidden Layers I', '2026/05/30')
         .addRelatedItems(Keys.ARQUITECTURAS_IMPL_CAPAS, Keys.META_ESTRUCTURAS_LAYERS_SOFTWARE, Keys.HARDWARE_MODEL_OSI)
     ]
 ]);
@@ -1843,7 +1843,7 @@ export const WEB_REF = new Map<string, Referencia>([
     [Keys.WEB_GOLDEN_SIGNALS, new Referencia('https://www.groundcover.com/blog/4-golden-signals', 'Golden Signals', WEB_KEY, 'Golden Signals', '2024/09/22')
         .addRelatedItems(Keys.OBSERVABILIDAD_MONITOREO, Keys.PEOPLE_NO_NEWS_GOOD_NEWS)
     ],
-    [Keys.WEB_SIMPLIFY_DESIGN, new Referencia('https://uxdesign.cc/10-heuristics-to-simplify-design-decision-making-36bd41868243', 'Simplificar el Diseño', WEB_KEY, 'Simplificar el diseño', '2024/12/13')],
+    [Keys.WEB_SIMPLIFY_DESIGN, new Referencia('https://uxdesign.cc/10-heuristics-to-simplify-design-decision-making-36bd41868243', 'Simplificar el Diseño', WEB_KEY, 'Simplificar el diseño', '2024/12/13')]
 ]);
 
 export const NEURO_MARKETING_KEY = 'Neuro-Marketing';
@@ -1866,7 +1866,7 @@ export const NEURO_MARKETING_REF = new Map<string, Referencia>([
     [Keys.NEURO_MARKETING_JOBS_TO_BE_DONE, new Referencia('https://rockcontent.com/es/blog/jobs-to-be-done/', 'Trabajos por acabar', NEURO_MARKETING_KEY, 'Trabajos por acabar', '2024/05/02')],
     [Keys.NEURO_MARKETING_CUATRO_P, new Referencia('https://www.santanderopenacademy.com/es/blog/las-4-p-del-marketing.html', 'Las 4 P del marketing', NEURO_MARKETING_KEY, '4P & 7P', '2026/03/06')
         .addRelatedItems(Keys.PEOPLE_PEOPLE_PROCESS_TECNOLOGY, Keys.PEOPLE_CUSTOMER_LOYALTY)
-    ],
+    ]
 ]);
 
 export const CI_CD_KEY = 'CI/CD-Infraestructura';
@@ -1933,6 +1933,9 @@ export const CI_CD_REF = new Map<string, Referencia>([
     ],
     [Keys.CD_CI_SIGTERM, new Referencia('https://medium.com/@gaddamnaveen192/thinking-like-a-senior-engineer-what-happens-when-your-service-gets-sigterm-71d4b666b068', 'Signal Terminate', CI_CD_KEY, 'SIGTERM', '2026/05/29')
         .addRelatedItems(Keys.EJECUCION_PROCESS_AND_THREADS, Keys.CONTENEDORES_ORCHESTRATION, Keys.PERSISTENCY_ADVANCED_LONG_TRANSACTIONS)
+    ],
+    [Keys.CD_CI_HIDDEN_LAYERS, new Referencia('https://medium.com/javarevisited/your-code-runs-on-nine-layers-of-infrastructure-you-didnt-write-a18e5c6075b7', 'Capas Ocultas II', CI_CD_KEY, 'Hidden Layers II', '2026/07/29')
+        .addRelatedItems(Keys.CONTENEDORES_ORCHESTRATION, Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.FRAMEWORKS_HIDDEN_LAYERS, Keys.HARDWARE_OPERATIVE_SYSTEM, Keys.HARDWARE_VIRTUAL_MACHINES_VS_CONTAINERS, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.CD_CI_CELL_BASED_ARQUITECTURE, Keys.CONTENEDORES_RUNTIME)
     ]
 ]);
 
@@ -1972,7 +1975,7 @@ export const MICRO_SERVICES_REF = new Map<string, Referencia>([
     ],
     [Keys.MICROSERVICES_DATA_ACCESS_PATTERNS, new Referencia('https://medium.com/@jaredhatfield/data-access-patterns-in-microservices-1e51d26ee205', 'Acceso a datos', MICRO_SERVICES_KEY, 'Acceso a datos', '2025/12/29')
         .addRelatedItems(Keys.NUBE_LATENCY, Keys.POO_COUPLING_AND_COHESION, Keys.APIS_REST_VS_MESSAGING, Keys.VERSIONAMIENTO_VERSIONAMIENTO, Keys.PERSISTENCY_ADVANCED_SCALING_DB, Keys.ANALISIS_DATA_ETL_ELT, Keys.ANALISIS_DATA_BATCH_VS_STREAM, Keys.ANALISIS_DATA_STREAMING_VS_MESSAGING, Keys.PATRONES_ADVANCED_MESSAGING, Keys.ANALISIS_TYPE_EVENTS, Keys.VERSIONAMIENTO_EVOLUTION_SCHEMA_AND_SCHEMA_REGISTRY)
-    ],
+    ]
 ]);
 
 export const MICRO_SERVICES_ADVANCED_KEY = 'Microservicios-Avanzado';
