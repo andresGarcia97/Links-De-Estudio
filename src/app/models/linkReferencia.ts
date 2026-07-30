@@ -382,7 +382,10 @@ export const CALIDAD_KEY = 'Calidad';
 export const CALIDAD_REF = new Map<string, Referencia>([
     [Keys.CALIDAD_METRICS_SOFTWARE, new Referencia('https://www.computerweekly.com/es/consejo/23-metricas-de-desarrollo-de-software-que-monitorear-hoy', 'Metricas del Software', CALIDAD_KEY, 'Metricas #1')],
     [Keys.CALIDAD_METRICS_CODE, new Referencia('https://blog.desafiolatam.com/metricas-de-calidad-de-software', 'Metricas del codigo', CALIDAD_KEY, 'Metricas #2')],
-    [Keys.CALIDAD_CLEAN_CODE, new Referencia('https://medium.com/@tijuhasz/in-one-of-the-most-groundbreaking-practical-books-on-software-development-clean-code-right-in-3ef3006c68f2', 'Clean Code & Code rot', CALIDAD_KEY, 'Clean Code')],
+    [Keys.CALIDAD_CLEAN_CODE, new Referencia('https://medium.com/@tijuhasz/in-one-of-the-most-groundbreaking-practical-books-on-software-development-clean-code-right-in-3ef3006c68f2', 'Clean Code & Code Rot', CALIDAD_KEY, 'Clean Code', '2026/07/28')
+        .addRelatedItems(Keys.BUENAS_PRACTICAS_FUNCTIONS)
+        .addMoreReferences('https://medium.com/@paulotaylor/code-quality-measurement-wtfs-minute-774225fb7394', 'https://www.goodreads.com/quotes/4440041-ward-s-principle-you-know-you-are-working-on-clean-code')
+    ],
     [Keys.CALIDAD_MANIFEST_CRAFTMANSHIP, new Referencia('https://manifesto.softwarecraftsmanship.org/#/es', 'Artesanos de software', CALIDAD_KEY, 'Artesanos')
         .addRelatedItems(Keys.AGILES_MANIFEST_AGIL)
     ],
