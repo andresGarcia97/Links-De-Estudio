@@ -287,6 +287,7 @@ export const PEOPLE_TRIANGLES_SUCCESS = 'TrianglesOfSuccess';
 export const PEOPLE_SOMBREROS_PENSAMIENTO = 'sombrerosPensamiento';
 export const PEOPLE_PRODUCT_CHALLENGES = 'productChallenges';
 export const PEOPLE_POST_MORTEM = 'post-mortem';
+export const PEOPLE_TECNOLOGY_PROJECTS = 'project-implementations-types';
 export const METODOLOGIAS_AGILES = 'agiles';
 export const METODOLOGIAS_SCRUM = 'scrum';
 export const METODOLOGIAS_SCRUM_PRINCIPLES = 'scrumPrinciples';

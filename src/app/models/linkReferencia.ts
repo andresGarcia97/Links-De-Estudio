@@ -1229,6 +1229,9 @@ export const PEOPLE_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.CD_CI_FAILOVER, Keys.CD_CI_MONITORING_AND_ALERTS)
         .addMoreReferences('https://github.com/danluu/post-mortems')
     ],
+    [Keys.PEOPLE_TECNOLOGY_PROJECTS, new Referencia('https://jorgeocampos.blog/2024/09/02/tipos-de-implementaciones-greenfield-brownfield/', 'greenfield VS brownfield', PEOPLE_KEY, 'greenfield VS brownfield', '2026/07/30')
+        .addRelatedItems(Keys.ANALISIS_DECLINE_DESIGN, Keys.CONOCIMIENTOS_PSICOLOGICOS_SESGOS_COGNITIVOS, Keys.NUBE_MIGRATIONS, Keys.PERSISTENCY_ADVANCED_MIGRATIONS)
+    ]
 ]);
 
 export const POO_KEY = 'POO';
@@ -1277,7 +1280,7 @@ export const POO_REF = new Map<string, Referencia>([
     ],
     [Keys.POO_ABSTRACTIONS, new Referencia('https://itnext.io/abstractions-done-right-discussing-when-it-is-worth-or-not-d75a32724f34', 'Abstracciones', POO_KEY, 'Abstracciones', '2025/06/22')
         .addRelatedItems(Keys.MALAS_PRACTICAS_OVER_ENGINEERING, Keys.PRINCIPIOS_SOLID, Keys.FRAMEWORKS_IOD, Keys.TESTING_MOCKS, Keys.META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL, Keys.ESTRATEGIAS_DESARROLLO_DDD)
-    ],
+    ]
 ]);
 
 export const TESTING_KEY = 'Testing';
@@ -1334,7 +1337,7 @@ export const TESTING_REF = new Map<string, Referencia>([
     [Keys.TESTING_PROPERTY_TESTING_FUZZING_TESTING, new Referencia('https://www.mayhem.security/blog/what-is-property-based-testing', 'Property Testing & Fuzz Testing', TESTING_KEY, 'Property/Fuzz Testing', '2025/11/22')
         .addRelatedItems(Keys.ANALISIS_COMPORTAMIENTO, Keys.COMPILACION_AUTOMATAS, Keys.TESTING_ADVANCED_MUTATION, Keys.APIS_TESTING, Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION, Keys.POO_DESIGN_BY_CONTRACT_PARTS, Keys.META_CARACTERISTICAS_EXCEPTIONS)
         .addMoreReferences('https://www.mayhem.security/blog/property-based-fuzzing', 'https://www.mayhem.security/blog/useful-properties-to-check-with-fuzz-testing')
-    ],
+    ]
 ]);
 
 export const TESTING_ADVANCED_KEY = 'Testing-Avanzado';

@@ -455,5 +455,19 @@
     "&bull; Lecciones aprendidas             &bull; Severidad del impacto",
     "&bull; Cronologia del error             &bull; Cuantificación del impacto",
     "&bull; Acciones durante el incidente    &bull; Acciones despues del incidente "
+  ],
+  "project-implementations-types": [
+    "- Igual que muchos conceptos del mundo real y de multiples profesiones previas al software, se han adoptado y resignificado dentro de la profesión ",
+    " - este termino de la planificación urbanistica describe la situación de un proyecto tecnologico, aunque tambien se ha migrado a otros tipos de areas ",
+    "",
+    "<strong>Greenfield:</strong> Creación de sistemas o proyectos desde cero, sin restricciones previas como si fuera un campo verde para ser construido ",
+    "- Se tiene libertad para diseñar y construir sistemas modernos, sin arrastrar tecnologias o compatibilidades con otros proyectos más antiguos ",
+    "",
+    "<strong>Brownfield:</strong> Transformación o cambio de sistemas existentes, actualizando o integrando nuevos componentes a lo previamente existente ",
+    "- Su diseño suele estar guiado por una arquitectura con restricciones existentes, y la incertidumbre es menor al tener procesos y pruebas para su verificación ",
+    "",
+    "<strong>Bluefield:</strong> Es la migración controlada que toma partes de los enfoques previos, seleccionando que partes renovar y cuales mantener ",
+    "- Esta flexibilidad reduce el riesgo y permite una transición controlada entre sistemas reduciendo las interrupciones ",
+    "- Este termino suele estar asociado más a conversiones de sistemas ERP (por ejemplo, migraciones SAP S/4HANA) y no es estandar "
   ]
 }
