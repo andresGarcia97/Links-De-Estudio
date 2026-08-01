@@ -1,4 +1,3 @@
-import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 import { APIS, BACK, CURIOSITIES, DOCKER, FRONT, GIT, SECURITY, SQL, TESTING, UTILS } from 'src/app/models/linkFuente';
 import { FuenteComponent } from './fuente/fuente.component';
@@ -8,7 +7,6 @@ import { FuenteComponent } from './fuente/fuente.component';
     templateUrl: './fuentes.component.html',
     standalone: true,
     imports: [
-      NgFor,
       FuenteComponent
     ]
 })

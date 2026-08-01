@@ -9,9 +9,9 @@
 
       <h2>Front</h2>
 
-      <span *ngFor="let keyFront of front">
+      @for (keyFront of front; track keyFront) {
         <app-fuente [key]="keyFront"></app-fuente>
-      </span>
+      }
 
     </div>
 
@@ -19,9 +19,9 @@
 
       <h2>Back</h2>
 
-      <span *ngFor="let keyBack of back">
+      @for (keyBack of back; track keyBack) {
         <app-fuente [key]="keyBack"></app-fuente>
-      </span>
+      }
 
     </div>
 
@@ -34,9 +34,9 @@
 
       <h2>SQL</h2>
 
-      <span *ngFor="let keyFront of sql">
+      @for (keyFront of sql; track keyFront) {
         <app-fuente [key]="keyFront"></app-fuente>
-      </span>
+      }
 
     </div>
 
@@ -44,9 +44,9 @@
 
       <h2>Docker & Kubernetes</h2>
 
-      <span *ngFor="let keyBack of docker">
+      @for (keyBack of docker; track keyBack) {
         <app-fuente [key]="keyBack"></app-fuente>
-      </span>
+      }
 
     </div>
 
@@ -58,9 +58,9 @@
 
       <h2>Utiles</h2>
 
-      <span *ngFor="let keyUtils of utils">
+      @for (keyUtils of utils; track keyUtils) {
         <app-fuente [key]="keyUtils"></app-fuente>
-      </span>
+      }
 
     </div>
 
@@ -68,9 +68,9 @@
 
       <h2>Testing & Calidad</h2>
 
-      <span *ngFor="let keyTest of testing">
+      @for (keyTest of testing; track keyTest) {
         <app-fuente [key]="keyTest"></app-fuente>
-      </span>
+      }
 
     </div>
 
@@ -82,9 +82,9 @@
 
       <h2>Curiosidades</h2>
 
-      <span *ngFor="let keyCuriosity of curiosities">
+      @for (keyCuriosity of curiosities; track keyCuriosity) {
         <app-fuente [key]="keyCuriosity"></app-fuente>
-      </span>
+      }
 
     </div>
 
@@ -92,9 +92,9 @@
 
       <h2>Seguridad</h2>
 
-      <span *ngFor="let keySecurity of security">
+      @for (keySecurity of security; track keySecurity) {
         <app-fuente [key]="keySecurity"></app-fuente>
-      </span>
+      }
 
     </div>
 
@@ -106,9 +106,9 @@
 
       <h2>Git & Versionamiento</h2>
 
-      <span *ngFor="let keyGit of git">
+      @for (keyGit of git; track keyGit) {
         <app-fuente [key]="keyGit"></app-fuente>
-      </span>
+      }
 
     </div>
 
@@ -116,9 +116,9 @@
 
       <h2>APIs REST</h2>
 
-      <span *ngFor="let keyApi of apis">
+      @for (keyApi of apis; track keyApi) {
         <app-fuente [key]="keyApi"></app-fuente>
-      </span>
+      }
 
     </div>
 

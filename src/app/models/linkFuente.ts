@@ -74,7 +74,8 @@ export const UTILS = new Map([
     ['eventDrivenArquitectures', { titulo: 'Event Driven Visuals', referencia: 'https://serverlessland.com/event-driven-architecture/visuals/' }],
     ['cpuLand', { titulo: 'CPU', referencia: 'https://cpu.land/' }],
     ['interviews', { titulo: 'Entrevistas', referencia: 'https://github.com/DevCaress/guia-entrevistas-de-programacion' }],
-    ['designInterviews', { titulo: 'Design Systems', referencia: 'https://github.com/karanpratapsingh/system-design' }]
+    ['designInterviews-I', { titulo: 'System Design resources I', referencia: 'https://github.com/karanpratapsingh/system-design' }],
+    ['designInterviews-II', { titulo: 'System Design resources II', referencia: 'https://medium.com/javarevisited/system-design-cheatsheet-4607e716db5a' }]
 ]);
 
 export const TESTING = new Map([
