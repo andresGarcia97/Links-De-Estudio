@@ -17,6 +17,20 @@
 
     <div class="card-container">
 
+      <h2>Estilos y Maquetación</h2>
+
+      @for (keyFrontStyle of frontStyles; track keyFrontStyle) {
+        <app-fuente [key]="keyFrontStyle"></app-fuente>
+      }
+
+    </div>
+
+  </div>
+
+  <div class="flexbox-column">
+
+    <div class="card-container">
+
       <h2>Back</h2>
 
       @for (keyBack of back; track keyBack) {
@@ -25,8 +39,17 @@
 
     </div>
 
-  </div>
+    <div class="card-container">
 
+      <h2>System Design</h2>
+
+      @for (keySystem of systemDesign; track keySystem) {
+        <app-fuente [key]="keySystem"></app-fuente>
+      }
+
+    </div>
+
+  </div>
   
   <div class="flexbox-column">
 

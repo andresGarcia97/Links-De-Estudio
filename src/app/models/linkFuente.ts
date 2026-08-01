@@ -3,29 +3,36 @@ import { Fuente } from "./models";
 export class LinkFuente {
 
     public fuentes = new Map<string, Fuente>([
-        ...FRONT,       ...BACK,
-        ...SQL,         ...DOCKER,
-        ...UTILS,       ...TESTING,
-        ...CURIOSITIES, ...SECURITY,
-        ...GIT,         ...APIS
+        ...FRONT, ...FRONT_STYLES,
+        ...BACK,  ...SYSTEM_DESIGN, 
+        ...SQL,   ...DOCKER,
+        ...UTILS, ...TESTING,
+        ...APIS,  ...CURIOSITIES,
+        ...GIT,   ...SECURITY      
     ]);
 
 }
 
 export const FRONT = new Map([
-    ['cssRecursos', { titulo: 'Recursos de CSS', referencia: 'https://recursosrecursosrecursos.netlify.app/' }],
-    ['coloresAndPaletas', { titulo: 'Colores & paletas', referencia: 'https://coolors.co/' }],
-    ['disenoWebAdaptable', { titulo: 'Diseño web adaptable', referencia: 'https://developers.google.com/web/fundamentals/design-and-ux/responsive/patterns?hl=es' }],
-    ['juegoFlexBox', { titulo: 'Juego de flex-box', referencia: 'https://flexboxfroggy.com/#es' }],
-    ['htmlEntities', { titulo: 'Html Entities', referencia: 'https://www.freeformatter.com/html-entities.html' }],
     ['cargasDeScripts', { titulo: 'Carga de scripts', referencia: 'https://manzdev.github.io/script-type/' }],
     ['keyEvents', { titulo: 'Eventos del teclado', referencia: 'https://keycode.info/' }],
-    ['htmlElements', { titulo: 'Etiquetas HTML', referencia: 'https://lenguajehtml.com/html/introduccion/tabla-periodica-html5/' }],
-    ['glassmorphism', { titulo: 'Glassmorphism', referencia: 'https://hype4.academy/tools/glassmorphism-generator' }],
     ['canIuse', { titulo: 'Can I Use ?', referencia: 'https://caniuse.com/' }],
     ['javascriptDataStructures', { titulo: 'Estructuras en Javascript', referencia: 'https://www.freecodecamp.org/news/data-structures-in-javascript-with-examples/' }],
+    ['designPatternsJavascript', { titulo: 'Patrones en Javascript', referencia: 'https://www.freecodecamp.org/news/javascript-design-patterns-explained/' }],
+    ['eventLoop', { titulo: 'Event Loop', referencia: 'https://geekflare.com/es/javascript-event-loops/' }],
     ['canInclude', { titulo: 'Can Include ?', referencia: 'https://caninclude.glitch.me/' }],
+    ['disenoWebAdaptable', { titulo: 'Diseño web adaptable', referencia: 'https://developers.google.com/web/fundamentals/design-and-ux/responsive/patterns?hl=es' }],
+    ['ComponentDriven', { titulo: 'Component Driven', referencia: 'https://www.componentdriven.org/' }]
+]);
+
+export const FRONT_STYLES = new Map([
+    ['cssRecursos', { titulo: 'Recursos de CSS', referencia: 'https://recursosrecursosrecursos.netlify.app/' }],
+    ['coloresAndPaletas', { titulo: 'Colores & paletas', referencia: 'https://coolors.co/' }],
+    ['juegoFlexBox', { titulo: 'Juego de flex-box', referencia: 'https://flexboxfroggy.com/#es' }],
+    ['glassmorphism', { titulo: 'Glassmorphism', referencia: 'https://hype4.academy/tools/glassmorphism-generator' }],
     ['cssLayout', { titulo: 'CSS layouts', referencia: 'https://csslayout.io/' }],
+    ['htmlEntities', { titulo: 'Html Entities', referencia: 'https://www.freeformatter.com/html-entities.html' }],
+    ['htmlElements', { titulo: 'Etiquetas HTML', referencia: 'https://lenguajehtml.com/html/introduccion/tabla-periodica-html5/' }],
     ['htmlHellHeaven', { titulo: 'HTML Hell & Heaven', referencia: 'https://www.htmhell.dev/' }]
 ]);
 
@@ -35,13 +42,19 @@ export const BACK = new Map([
     ['apisJava', { titulo: 'APIs comunes de Java', referencia: 'https://www.simplilearn.com/tutorials/java-tutorial/java-api?source=sl_frs_nav_playlist_video_clicked#the_most_commonly_used_java_apis' }],
     ['precendenciaJava', { titulo: 'Operadores Java', referencia: 'https://es.stackoverflow.com/questions/57225/cu%C3%A1l-es-la-precedencia-de-operadores-en-java/57226' }],
     ['codificacionJava', { titulo: 'Codificación en Java', referencia: 'https://amap.cantabria.es/amap/bin/view/AMAP/CodificacionJava' }],
-    ['eventLoop', { titulo: 'Event Loop', referencia: 'https://geekflare.com/es/javascript-event-loops/' }],
+    ['LinuxCommands', { titulo: 'Comandos de Linux', referencia: 'https://xmind.app/m/WwtB/' }],
+    ['javaTags', { titulo: 'Inside Java Tags', referencia: 'https://inside.java/tags' }]
+]);
+
+export const SYSTEM_DESIGN = new Map([
     ['convivenciaArquitecturas', { titulo: 'Multiples arquitecturas', referencia: 'https://herbertograca.com/2017/11/16/explicit-architecture-01-ddd-hexagonal-onion-clean-cqrs-how-i-put-it-all-together/' }],
     ['designPatternsJavascript', { titulo: 'Patrones en Javascript', referencia: 'https://www.freecodecamp.org/news/javascript-design-patterns-explained/' }],
     ['orderAndSearch', { titulo: 'Busqueda & Ordenacion', referencia: 'https://www.javaguides.net/p/data-structures-and-algorithms-in-java.html' }],
-    ['LinuxCommands', { titulo: 'Comandos de Linux', referencia: 'https://xmind.app/m/WwtB/' }],
-    ['javaTags', { titulo: 'Inside Java Tags', referencia: 'https://inside.java/tags' }],
     ['arquitecturesStyles', { titulo: 'Estilos arquitectonicos', referencia: 'https://blog.bytebytego.com/p/ep68-top-architectural-styles#%C2%A7top-architectural-styles' }],
+    ['eventDrivenArquitectures', { titulo: 'Event Driven Visuals', referencia: 'https://serverlessland.com/event-driven-architecture/visuals/' }],
+    ['interviews', { titulo: 'Entrevistas', referencia: 'https://github.com/DevCaress/guia-entrevistas-de-programacion' }],
+    ['designInterviews-I', { titulo: 'System Design resources I', referencia: 'https://github.com/karanpratapsingh/system-design' }],
+    ['designInterviews-II', { titulo: 'System Design resources II', referencia: 'https://medium.com/javarevisited/system-design-cheatsheet-4607e716db5a' }]
 ]);
 
 export const SQL = new Map([
@@ -50,14 +63,14 @@ export const SQL = new Map([
     ['sqlAdvanced', { titulo: 'Preguntas SQL Avanzado', referencia: 'https://www.kdnuggets.com/2023/01/top-10-advanced-data-science-sql-interview-questions-must-know-answer.html?utm_source=rss&utm_medium=rss&utm_campaign=top-10-advanced-data-science-sql-interview-questions-you-must-know-how-to-answer' }],
     ['sqlPractices', { titulo: 'Buenas practicas SQL', referencia: 'https://www.metabase.com/learn/sql-questions/sql-best-practices' }],
     ['sqlRoadMap', { titulo: 'Mapa de Ruta SQL', referencia: 'https://roadmap.sh/sql' }],
-    ['SpringDataJpaTransactions', { titulo: 'Spring Data & JPA', referencia: 'https://codefarm0.medium.com/spring-data-jpa-transactions-comprehensive-questions-list-for-interviews-and-conceptual-6690e5e219ae' }],
+    ['SpringDataJpaTransactions', { titulo: 'Spring Data & JPA', referencia: 'https://codefarm0.medium.com/spring-data-jpa-transactions-comprehensive-questions-list-for-interviews-and-conceptual-6690e5e219ae' }]
 ]);
 
 export const DOCKER = new Map([
     ['comandosDocker', { titulo: 'Comandos Docker', referencia: 'https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes-es' }],
     ['dockerSecurity', { titulo: 'Seguridad en Docker', referencia: 'https://spacelift.io/blog/docker-security/' }],
     ['awesomeDockerCompose', { titulo: 'Awesome Compose', referencia: 'https://awesome-docker-compose.com/' }],
-    ['kodekloud', { titulo: 'kode kloud', referencia: 'https://kodekloud.com/' }],
+    ['kodekloud', { titulo: 'kode kloud', referencia: 'https://kodekloud.com/' }]
 ]);
 
 export const UTILS = new Map([
@@ -71,11 +84,8 @@ export const UTILS = new Map([
     ['bundlephobia', { titulo: 'Bundle Phobia', referencia: 'https://bundlephobia.com/' }],
     ['wizardZines', { titulo: 'Trucos & Comics', referencia: 'https://wizardzines.com/' }],
     ['apisNavegador', { titulo: 'APIs del navegador', referencia: 'https://developer.mozilla.org/es/docs/Learn/JavaScript/Client-side_web_APIs/Introduction#apis_de_navegador_m%C3%A1s_comunes' }],
-    ['eventDrivenArquitectures', { titulo: 'Event Driven Visuals', referencia: 'https://serverlessland.com/event-driven-architecture/visuals/' }],
     ['cpuLand', { titulo: 'CPU', referencia: 'https://cpu.land/' }],
-    ['interviews', { titulo: 'Entrevistas', referencia: 'https://github.com/DevCaress/guia-entrevistas-de-programacion' }],
-    ['designInterviews-I', { titulo: 'System Design resources I', referencia: 'https://github.com/karanpratapsingh/system-design' }],
-    ['designInterviews-II', { titulo: 'System Design resources II', referencia: 'https://medium.com/javarevisited/system-design-cheatsheet-4607e716db5a' }]
+    ['diagramTools', { titulo: 'Diagram Tools', referencia: 'https://edrawmax.wondershare.com/diagram-tools/plantuml-vs-mermaid.html' }]
 ]);
 
 export const TESTING = new Map([
@@ -87,7 +97,7 @@ export const TESTING = new Map([
     ['sonarRules', { titulo: 'Sonar Rules', referencia: 'https://rules.sonarsource.com/' }],
     ['yellowLab', { titulo: 'Yellow Lab', referencia: 'https://yellowlab.tools/' }],
     ['cleanCodeCheckList', { titulo: 'Clean Code ✅', referencia: 'https://github.com/dev-aritra/clean-code-developer-checklist/tree/master' }],
-    ['designTerms', { titulo: 'Design Terms', referencia: 'https://medium.com/@TharunKumarReddyPolu/top-50-system-design-terminologies-you-must-know-3c78f5fb99c1' }],
+    ['designTerms', { titulo: 'Design Terms', referencia: 'https://medium.com/@TharunKumarReddyPolu/top-50-system-design-terminologies-you-must-know-3c78f5fb99c1' }]
 ]);
 
 export const CURIOSITIES = new Map([

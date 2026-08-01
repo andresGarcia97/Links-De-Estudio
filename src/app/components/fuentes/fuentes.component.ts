@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { APIS, BACK, CURIOSITIES, DOCKER, FRONT, GIT, SECURITY, SQL, TESTING, UTILS } from 'src/app/models/linkFuente';
+import { APIS, BACK, CURIOSITIES, DOCKER, FRONT, FRONT_STYLES, GIT, SECURITY, SQL, SYSTEM_DESIGN, TESTING, UTILS }
+from 'src/app/models/linkFuente';
 import { FuenteComponent } from './fuente/fuente.component';
 
 @Component({
@@ -14,7 +15,11 @@ export class FuentesComponent {
 
   front = [...FRONT.keys()];
 
+  frontStyles = [...FRONT_STYLES.keys()];
+
   back = [...BACK.keys()];
+
+  systemDesign = [...SYSTEM_DESIGN.keys()];
 
   sql = [...SQL.keys()];
 
