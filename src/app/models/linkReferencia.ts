@@ -313,8 +313,9 @@ export const ARQUITECTURAS_IMPL_REF = new Map<string, Referencia>([
     [Keys.ARQUITECTURAS_IMPL_EVENT_DRIVEN, new Referencia('https://medium.com/@alxkm/java-event-driven-architecture-dc456d324ba5', 'Basada en Eventos', ARQUITECTURAS_IMPL_KEY, 'EDA', '2024/06/17')
         .addRelatedItems(Keys.OBSERVABILIDAD_OBSERVABILITY)
     ],
-    [Keys.ARQUITECTURAS_IMPL_PATRONES_I, new Referencia('https://medium.com/@maniakhitoccori/los-10-patrones-comunes-de-arquitectura-de-software-d8b9047edf0b', 'Patrones Arquitectonicos I', ARQUITECTURAS_IMPL_KEY, 'Patrones Arquitectonicos I', '2023/12/17', '2025/08/18')
-        .addRelatedItems(Keys.MICROSERVICES_ARQUITECTURAS, Keys.APIS_REST_VS_MESSAGING, Keys.ANALISIS_DOMAIN_EVENTS)
+    [Keys.ARQUITECTURAS_IMPL_PATRONES_I, new Referencia('https://medium.com/@maniakhitoccori/los-10-patrones-comunes-de-arquitectura-de-software-d8b9047edf0b', 'Patrones Arquitectonicos I', ARQUITECTURAS_IMPL_KEY, 'Patrones Arquitectonicos I', '2023/12/17', '2026/07/31')
+        .addRelatedItems(Keys.MICROSERVICES_ARQUITECTURAS, Keys.APIS_REST_VS_MESSAGING, Keys.ANALISIS_DOMAIN_EVENTS, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS)
+        .addMoreReferences('https://medium.com/@sweetondonie/master-replica-leader-follower-the-architecture-of-coordination-b8feeeaf1229')
     ],
     [Keys.ARQUITECTURAS_IMPL_PATRONES_II, new Referencia('https://levelup.gitconnected.com/architecture-design-patterns-every-senior-developer-must-know-part-2-0409ec13f8c2', 'Patrones Arquitectonicos II', ARQUITECTURAS_IMPL_KEY, 'Patrones Arquitectonicos II', '2025/10/12')
         .addRelatedItems(Keys.ANALISIS_DATA_BATCH_VS_STREAM, Keys.PATRONES_ADVANCED_SAGA, Keys.BUILD_INSTRUMENTS, Keys.CD_CI_FAILOVER, Keys.ANALISIS_LIGHT_EVENTS_VS_RICH_EVENTS, Keys.NUBE_PACELC, Keys.PERSISTENCY_ADVANCED_CONSISTENCY)
@@ -1426,7 +1427,7 @@ export const REFACTORING_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.BUENAS_PRACTICAS_COMPLEJIDAD, Keys.GIT_DEPURATION, Keys.TESTING_COBERTURA)
     ],
     [Keys.REFACTORING_MANAGE_DEUDA_TECNICA, new Referencia('https://newsletter.techworld-with-milan.com/p/how-to-deal-with-technical-debt', 'Manejo de la deuda tecnica', REFACTORING_KEY, '¿ Como manejarla ?', '2024/05/12')
-        .addRelatedItems(Keys.LEYES_CONWAY)
+        .addRelatedItems(Keys.LEYES_CONWAY, Keys.AGILES_MOSCOW_RICE)
     ],
     [Keys.REFACTORING_MANAGE_DEPENDENCIES, new Referencia('https://levelup.gitconnected.com/world-of-dependencies-4639100d16ef', 'Manejo de las dependencias', REFACTORING_KEY, 'Dependencias', '2024/06/09')
         .addRelatedItems(Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS, Keys.ARQUITECTURAS_IMPL_CAPAS, Keys.FRAMEWORKS_IOD)
