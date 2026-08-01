@@ -87,6 +87,11 @@ export class GlosarioComponent implements OnInit {
 
   public searchInsideContent(): void {
 
+    if (this.search.trim() === '') {
+      this.searchOnContent.clear();
+      return;
+    }
+
     const matchingKeys = new Set<string>();
 
     // normalize('NFD') descompone letras acentuadas en letras base + acento (á → a + acento) y se elimina los acentos para comparar
@@ -120,6 +125,7 @@ export class GlosarioComponent implements OnInit {
     });
 
     if (matchingKeys.size === 0) {
+      this.searchOnContent.clear();
       return;
     }
 
