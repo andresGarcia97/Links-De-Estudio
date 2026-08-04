@@ -546,6 +546,10 @@ export const CONOCIMIENTO_EMPIRICO = new Map<string, Referencia>([
     [Keys.CONOCIMIENTOS_EMPIRICOS_BREAKING_PRODUCTION_LESSONS, new Referencia('https://www.linkedin.com/posts/anton-zaides_7-software-engineering-lessons-you-learn-share-7450966788504231936-tQ0_/', 'Lecciones despues de romper produccion', CONOCIMIENTO_EMPIRICO_KEY, 'Breaking Production', '2026/06/04')
         .addRelatedItems(Keys.CD_CI_ROLLING_DEPLOYMENT, Keys.CD_CI_FAILOVER, Keys.SYSTEM_DESIGN_RESILIENCE, Keys.BUENAS_PRACTICAS_DEBUGGING, Keys.PEOPLE_POST_MORTEM, Keys.CD_CI_MONITORING_AND_ALERTS)
         .addMoreReferences('https://psicologiaymente.com/reflexiones/frases-oscar-wilde')
+    ],
+    [Keys.CONOCIMIENTOS_EMPIRICOS_DEUDA_COGNITIVA, new Referencia('https://newsletter.getdx.com/p/cognitive-debt-the-hidden-risk-in', 'Deuda cognitiva', CONOCIMIENTO_EMPIRICO_KEY, 'Deuda cognitiva', '2026/08/02')
+        .addRelatedItems(Keys.AGILES_DEUDA_TECNICA, Keys.REFACTORING_DEUDA_TECNICA, Keys.PEOPLE_PEOPLE_PROCESS_TECNOLOGY, Keys.PEOPLE_ONA, Keys.CALIDAD_CLEAN_CODE, Keys.CALIDAD_CODE_REVIEWS, Keys.PEOPLE_BURNOUT, Keys.PEOPLE_DIKW, Keys.CALIDAD_CODE_REVIEWS_IA)
+        .addMoreReferences('https://www.udesa.edu.ar/noticias/deuda-cognitiva-el-reto-de-aprovechar-la-ia-sin-perder-el-pensamiento-critico')
     ]
 ]);
 
