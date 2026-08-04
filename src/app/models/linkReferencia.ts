@@ -390,7 +390,13 @@ export const CALIDAD_REF = new Map<string, Referencia>([
     [Keys.CALIDAD_MANIFEST_CRAFTMANSHIP, new Referencia('https://manifesto.softwarecraftsmanship.org/#/es', 'Artesanos de software', CALIDAD_KEY, 'Artesanos')
         .addRelatedItems(Keys.AGILES_MANIFEST_AGIL)
     ],
-    [Keys.CALIDAD_COST_QUALITY, new Referencia('https://blog.softexpert.com/es/cuales-son-los-costos-de-la-calidad', 'Costo de la calidad', CALIDAD_KEY, 'Costo de la calidad')],
+    [Keys.CALIDAD_COST_QUALITY_I, new Referencia('https://blog.softexpert.com/es/cuales-son-los-costos-de-la-calidad', 'Costo de la calidad I', CALIDAD_KEY, 'Costo de la calidad I')
+        .addRelatedItems(Keys.SYSTEM_DESIGN_FAILS_I)
+    ],
+    [Keys.CALIDAD_COST_QUALITY_II, new Referencia('https://fyccorp.com/10-grandes-errores-de-software/', 'Costo de la calidad II', CALIDAD_KEY, 'Costo de la calidad II', '2026/08/01')
+        .addRelatedItems(Keys.SYSTEM_DESIGN_FAILS_II)
+        .addMoreReferences('https://qawerk.es/blog/errores-de-programacion-que-cuestan-vidas-tiempo-y-dinero/', 'https://javiergarzas.com/2013/05/top-7-de-errores-informaticos.html')
+    ],
     [Keys.CALIDAD_QUALITY_GATES, new Referencia('https://docs.sonarqube.org/latest/user-guide/quality-gates/', 'Politicas de calidad', CALIDAD_KEY, 'Politicas de calidad')],
     [Keys.CALIDAD_QUALITY_METRICS, new Referencia('https://docs.sonarqube.org/latest/user-guide/metric-definitions/', 'Definición de Metricas', CALIDAD_KEY, 'Metricas de calidad')],
     [Keys.CALIDAD_CODE_REVIEWS, new Referencia('https://www.atlassian.com/blog/add-ons/code-review-best-practices', 'Revisiones de codigo', CALIDAD_KEY, 'Revisiones')],

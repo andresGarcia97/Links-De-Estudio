@@ -89,7 +89,7 @@
     "- No sólo individuos e interacciones, <strong>SINO</strong> también una comunidad de profesionales",
     "- No sólo colaboración con el cliente, <strong>SINO</strong> también asociaciones productivas"
   ],
-  "costOfQuality": [
+  "costOfQuality-I": [
     "- En un nivel operacional las tecnicas de gestión de calidad deben identificar desperdicios, resolver problemas y optimizar procesos ",
     "- Generalmente enfocado a la prevención, pero tambien enfocado a la solución reactiva ",
     "",
@@ -97,6 +97,39 @@
     "<strong>Costos de la calidad:</strong> Relacionados a los problemas encontrados, estos pueden desaparecer si el proceso fuera libre de errores ",
     "<strong>Costos de conformidad:</strong> Asociados a prevención y evaluación de la conformidad con los requisitos ",
     "<strong>Costos de NO conformidad:</strong> Han de ver con las fallas ya sean internas y/o externas no detectadas y que terminan afectando al cliente "
+  ],
+  "costOfQuality-II": [
+    "<strong>Errores más costosos del software:</strong> Los errores no solo pueden costar dinero, tambien pueden costar vidas humanas, algo mucho peor ",
+    "",
+    "<strong>Mariner I:</strong> En 1962 la NASA planeaba lanzar esta misión con el fin de sobrevolar Venus, pero fallo a los 5 minutos de haber sido lanzada ",
+    "- La catástrofe se origino por una mala transcripción de un código y la omisión de un guión <strong>'-'</strong>",
+    "",
+    "<strong>Therac-25:</strong> En 1982 esta máquina para tratamientos con radioterapia a pacientes de cáncer, habia <em>innovado</em> al eliminar protecciones mecanicas ",
+    "- Todos los controles eran por software, por una condición de carrera administro dosis hasta <strong>100 veces</strong> más altas, matando al menos a 3 pacientes ",
+    "",
+    "<strong>Caída de la red AT&T:</strong> El 15 de enero de 1990 casi toda su red se cayó durante 9 horas, debido a un problema en uno de sus centros de conmutadores ",
+    "- Una linea de código erronea durante una compleja actualización de software que planeaba acelerar las llamadas, paralizó cerca de 75 millones de llamadas ",
+    "",
+    "<strong>Misil Patriot:</strong> El 25 de febrero de 1991 el sistema de defensa no interceptó el ataque a un cuartel del ejercito, dejando morir 28 soldados ",
+    "- Por un error de redondeo en su reloj interno, los procesadores acumulaban cerca de 0,0034 segundos de error por hora, que crecía sin reinicio ",
+    "",
+    "<strong>Ariane V:</strong> Un cohete no tripulado se destruyó junto con 4 satélites destinados a investigación científica a los 37 segundos del despegue ",
+    "- El fallo fue la conversión de un valor de velocidad horizontal de 64 bits a 16 bits, terminando en un desbordamiento que provoco la autodestrucción ",
+    "",
+    "<strong>Error Y2K:</strong> Para el cambio del siglo XXI existia un temor de que todos los sistemas interpretaran el año 2000 como 1900, creando caos a escala mundial ",
+    "- Esto se debia a que para ahorrar memoria en las fechas, el año se guardaba con los ultimos 2 digitos, <em>dd/mm/aa</em> en lugar de <em>dd/mm/aaaa</em> ",
+    "- Este error se solvento gracias a esfuerzos masivos de miles de programadores buscando y corrigiendo millones de lineas de código ",
+    "",
+    "<strong>El error de Knight Capital:</strong> Era una empresa dedicada a la venta y compra de acciones en Wall Street, hasta que su aplicación automatica perdio el control y ",
+    " - enloquecio comprando caro y vendiendo barato, debido a que una aplicación de pruebas se colo al ambiente productivo, les tomo 45 minutos solucionar el error, ",
+    " - generando perdidas de más de 440 millones de dolares, llevando la empresa casi a la quiebra y debilitandola hasta ser absorbida por otra ",
+    "",
+    "<strong>Conducción automatica:</strong> Un auto de Tesla que funcionaba en piloto automatico no activo el sistema de frenos de manera oportuna y choco ",
+    "- El coche no reconocio un camión de color claro frente a un cielo claro, este caso trágico cobró la vida de su conductor, Joshua Brown ",
+    "",
+    "<strong>Mars Climate Orbiter:</strong> En 1999 los ingenieros de la NASA perdieron contacto con esta nave después de entrar en la órbita de Marte ",
+    "- La causa fue que el proveedor calculaba el impulso en libras-fuerza por segundo (sistema inglés) ",
+    " - mientras que el software de la NASA esperaba esos datos en newton-segundo (sistema métrico decimal) "
   ],
   "qualityGates": [
     "- Son politicas de calidad de las organizaciones, para cumplir con el objetivo de realizar un nuevo despliegue ",
