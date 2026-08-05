@@ -381,8 +381,8 @@ export const BUENAS_PRACTICAS_REF = new Map<string, Referencia>([
 
 export const CALIDAD_KEY = 'Calidad';
 export const CALIDAD_REF = new Map<string, Referencia>([
-    [Keys.CALIDAD_METRICS_SOFTWARE, new Referencia('https://www.computerweekly.com/es/consejo/23-metricas-de-desarrollo-de-software-que-monitorear-hoy', 'Metricas del Software', CALIDAD_KEY, 'Metricas #1')],
-    [Keys.CALIDAD_METRICS_CODE, new Referencia('https://blog.desafiolatam.com/metricas-de-calidad-de-software', 'Metricas del codigo', CALIDAD_KEY, 'Metricas #2')],
+    [Keys.CALIDAD_METRICS_SOFTWARE, new Referencia('https://www.computerweekly.com/es/consejo/23-metricas-de-desarrollo-de-software-que-monitorear-hoy', 'Metricas del Software', CALIDAD_KEY, 'Metricas I')],
+    [Keys.CALIDAD_METRICS_CODE, new Referencia('https://blog.desafiolatam.com/metricas-de-calidad-de-software', 'Metricas del codigo', CALIDAD_KEY, 'Metricas II')],
     [Keys.CALIDAD_CLEAN_CODE, new Referencia('https://medium.com/@tijuhasz/in-one-of-the-most-groundbreaking-practical-books-on-software-development-clean-code-right-in-3ef3006c68f2', 'Clean Code & Code Rot', CALIDAD_KEY, 'Clean Code', '2026/07/28')
         .addRelatedItems(Keys.BUENAS_PRACTICAS_FUNCTIONS)
         .addMoreReferences('https://medium.com/@paulotaylor/code-quality-measurement-wtfs-minute-774225fb7394', 'https://www.goodreads.com/quotes/4440041-ward-s-principle-you-know-you-are-working-on-clean-code')
@@ -400,6 +400,10 @@ export const CALIDAD_REF = new Map<string, Referencia>([
     [Keys.CALIDAD_QUALITY_GATES, new Referencia('https://docs.sonarqube.org/latest/user-guide/quality-gates/', 'Politicas de calidad', CALIDAD_KEY, 'Politicas de calidad')],
     [Keys.CALIDAD_QUALITY_METRICS, new Referencia('https://docs.sonarqube.org/latest/user-guide/metric-definitions/', 'Definición de Metricas', CALIDAD_KEY, 'Metricas de calidad')],
     [Keys.CALIDAD_CODE_REVIEWS, new Referencia('https://www.atlassian.com/blog/add-ons/code-review-best-practices', 'Revisiones de codigo', CALIDAD_KEY, 'Revisiones')],
+    [Keys.CALIDAD_CODE_REVIEWS_IA, new Referencia('https://thilo-hermann.medium.com/the-agent-writes-10-000-lines-before-lunch-good-luck-reviewing-them-34aa69bf0db1', 'Revision y Generacion de código con IA', CALIDAD_KEY, 'Revisiones con IA', '2026/08/03')
+        .addRelatedItems(Keys.BUENAS_PRACTICAS_DEBUGGING, Keys.REQUISITOS_KPI_OKR, Keys.CD_CI_DEV_SEC_OPS)
+        .addMoreReferences('https://redwerk.es/blog/revisiones-de-codigo-impulsadas-por-ia/')
+    ],
     [Keys.CALIDAD_LINTING, new Referencia('https://www.freecodecamp.org/espanol/news/que-es-linting-y-eslint/', 'Linting', CALIDAD_KEY, 'Linting', '', '2024/12/26')],
     [Keys.CALIDAD_ANALYST_QA, new Referencia('https://ed.team/blog/que-es-y-que-hace-un-analista-qa', 'Analista de QA', CALIDAD_KEY, 'Analista de QA')],
     [Keys.CALIDAD_CODE_REVIEW_PYRAMID, new Referencia('https://www.morling.dev/blog/the-code-review-pyramid/', 'Piramide del CodeReview', CALIDAD_KEY, 'Piramide del Code Review')],

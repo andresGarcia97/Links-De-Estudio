@@ -34,7 +34,7 @@
     "- Esta integración se implementa en el pipeline a través de controles como análisis estático, escaneo de dependencias, entre otros ",
     "",
     "<strong>Análisis de Composición de Software (SCA):</strong> Se centra en identificar y gestionar dependencias de terceros, detectando vulnerabilidades y problemas de licencias",
-    "<strong>Dynamic Application Security Testing (DAST):</strong> Prueba la aplicación en ejecución simulando ataques externos para detectar vulnerabilidades no visibles en el código fuente ",
+    "<strong>Dynamic Application Security Testing (DAST):</strong> Prueba la aplicación en ejecución simulando ataques externos para detectar vulnerabilidades no visibles en el código ",
     "<strong>Static Application Security Testing (SAST):</strong> Examina el código fuente sin ejecutarlo, identificando vulnerabilidades en etapas tempranas del desarrollo "
   ],
   "iascode": [
