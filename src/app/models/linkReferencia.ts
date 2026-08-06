@@ -1408,7 +1408,7 @@ export const TESTING_ADVANCED_REF = new Map<string, Referencia>([
     [Keys.TESTING_ADVANCED_HEISENBERG_BUG, new Referencia('https://medium.com/@vndpal/the-heisenberg-bug-how-to-debug-bugs-that-disappear-9c41affc9500', 'Heisenberg Bug', TESTING_ADVANCED_KEY, 'Heisenberg Bug', '2026/04/19')
         .addRelatedItems(Keys.CD_CI_DEPLOYMENT_PATTERNS, Keys.SECURITY_ATTACK_CONDICION_CARRERA, Keys.APIS_LATENCY_THROUGHPUT_BANDWITH)
         .addMoreReferences('https://franverona.com/blog/heisenbug-el-bug-que-cambia-mientras-se-depura', 'https://qpoint.io/blog/debugging-server-heisenbugs/')
-    ],
+    ]
 ]);
 
 export const REFACTORING_KEY = 'Refactorizacion';
@@ -1433,7 +1433,9 @@ export const REFACTORING_REF = new Map<string, Referencia>([
     [Keys.REFACTORING_TECNICAS, new Referencia('https://refactoring.guru/es/refactoring/techniques', 'Tecnicas para Refactorizar', REFACTORING_KEY, 'Tecnicas', '', '2025/07/05')
         .addRelatedItems(Keys.PRINCIPIOS_SLAP, Keys.BUENAS_PRACTICAS_INDIRECTION, Keys.POO_COUPLING_AND_COHESION, Keys.BUENAS_PRACTICAS_COMPLEJIDAD_COGNITIVA)
     ],
-    [Keys.REFACTORING_WHEN_NOT, new Referencia('https://www.digite.com/agile/refactorizacion-en-agil/', 'Cuando No Refactorizar', REFACTORING_KEY, 'Cuando No', '2023/01/22')],
+    [Keys.REFACTORING_WHEN_NOT, new Referencia('https://www.digite.com/agile/refactorizacion-en-agil/', 'Cuando No Refactorizar', REFACTORING_KEY, 'Cuando No', '2023/01/22', '2026/08/04')
+        .addMoreReferences('https://www.techtarget.com/whatis/definition/yak-shaving')
+    ],
     [Keys.REFACTORING_LEGACY_CODE_I, new Referencia('https://jesuslc.com/2020/11/21/tecnicas-para-mantener-al-legacy-code-bajo-control/', 'Refactorizar el Legacy Code I', REFACTORING_KEY, 'Refactor en Legacy code I', '2023/02/05', '2025/03/02')
         .addRelatedItems(Keys.VERSIONAMIENTO_DOCUMENT_ARQUITECTURE)
     ],
