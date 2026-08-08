@@ -16,6 +16,24 @@
         "- La optimización de consultas, debido a su naturaleza ambivalente es un proceso caotico y riesgoso, que debe tener en cuenta beneficios y riesgos ",
         " - por igual, cualquier cambio o actualización de este planeador puede romper consultas cuidadosamente diseñadas "
     ],
+    "schema-design-principles": [
+        "- Los esquemas de bases de datos actuan como un plano donde se organiza y estructura la DB, disposición de tablas, campos, relaciones, etc.. ",
+        "- En las bases de datos más modernas tambien admiten la gobernanza de datos y mejores opciones de escalabilidad ",
+        "- Para los equipos que requieren una fuerte gobernanza de datos, es importante que cualquier cambio se alinee con las políticas creadas ",
+        "- Todo diseño debe tener en cuenta como es el patron de acceso de los datos antes de iniciar o si es nuevo debe adaptarse segun las consultas ",
+        "",
+        "<strong>¿Porque es importante?</strong>",
+        "- Permiten a los desarrolladores organizar los objetos en espacios de nombres y agruparlos en una misma DB, permitiendo acciones como: ",
+        "&bull; Segregar partes especificas de la aplicación como <em>accounts</em>, <em>payments</em> ",
+        "&bull; Mantener la lógica de terceros o tablas de datos externas, separadas de la aplicación principal ",
+        "&bull; Aislamiento de usuarios para que el trabajo no entre en conflicto ",
+        "",
+        "<strong>Pasos para diseñar un esquema</strong>",
+        "- <strong>Recopilación y analisis de requisitos</strong>, entendimiento del negocio, relaciones de los datos, documentación existente ",
+        "- <strong>Diseño conceptual con diagramas Entidad-Relación</strong>, identificando a alto nivel, tablas, Primary Keys, Foreign Keys, etc.. ",
+        "- <strong>Detalles del esquema lógico</strong>, como tipos de datos, normalización de datos o incluso desnormalización si es pertinente ",
+        "- <strong>Implementación del esquema fisico</strong>, en alguna DB en particular, e incluye optimizaciones de lectura/escritura sobre la DB escogida "
+    ],
     "hardAndSoftDelete": [
         "- Los datos son uno de los temas más importantes en el desarrollo en general y su gestión es fundamental para tener aplicaciones solidas ",
         "",

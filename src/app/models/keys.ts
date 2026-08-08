@@ -361,6 +361,7 @@ export const PERSISTENCY_DB_TYPES = 'dataBasesTypes';
 export const PERSISTENCY_KEY_TYPES = 'keysTypes';
 export const PERSISTENCY_DATA_STRUCTURED_DATABASE_SYSTEM = 'structured-database-systems';
 export const PERSISTENCY_INTERMEDIATE_SCHEMAS = 'schemaPhysicVSschemaLogical';
+export const PERSISTENCY_INTERMEDIATE_SCHEMAS_DESIGN = 'schema-design-principles';
 export const PERSISTENCY_INTERMEDIATE_HARD_SOFT_DELETE = 'hardAndSoftDelete';
 export const PERSISTENCY_INTERMEDIATE_DATA_MODELING = 'dataModeling';
 export const PERSISTENCY_INTERMEDIATE_DB_DESIGN_I = 'database-design-I';

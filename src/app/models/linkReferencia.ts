@@ -657,7 +657,7 @@ export const CONTAINERS = new Map<string, Referencia>([
     [Keys.CONTENEDORES_TESTCONTAINERS, new Referencia('https://testcontainers.com/getting-started/', 'Testcontainers', CONTENEDORES_KEY, 'Testcontainers', '2026/02/08')
         .addRelatedItems(Keys.TESTING_ADVANCED_ENVIRONMENT, Keys.TESTING_INTEGRATION, Keys.CD_CI_DEPLOYMENT_PIPELINES)
         .addMoreReferences('https://www.docker.com/blog/testcontainers-testing-with-real-dependencies/')
-    ],
+    ]
 ]);
 
 export const ESTRATEGIAS_DESARROLLO_KEY = 'Estrategias-Desarrollo';
@@ -781,7 +781,7 @@ export const USER_HISTORIES = new Map<string, Referencia>([
     [Keys.USER_HISTORIES_USE_CASE_REQUISITOS, new Referencia('http://www.angellozano.com/requisitos-del-sistema-vs-casos-uso-vs-historias-usuario/', 'HU Vs Casos de uso', USER_HISTORIES_KEY, 'Hu Vs Casos de Uso')],
     [Keys.USER_HISTORIES_FORMATS, new Referencia('https://www.linkedin.com/posts/jgarzas_agilidad-bdd-hdd-activity-7178798486358802434-ZK5i/', 'HU Formatos alternativos', USER_HISTORIES_KEY, 'Formatos alternativos', '2024/04/28')],
     [Keys.USER_HISTORIES_ESTIMATIONS, new Referencia('https://www.linkedin.com/posts/jgarzas_las-3-familias-de-estimacion-agil-javier-activity-7231351751667310592-To3O/', 'Estimación Agil', USER_HISTORIES_KEY, 'Estimación Agil', '2024/09/28')],
-    [Keys.USER_HISTORIES_DOR_DOD, new Referencia('https://www.linkedin.com/pulse/historias-de-usuario-dor-y-dod-clave-para-la-del-remedios-d%C3%ADaz/', 'Definition Of Done & Definition Of Ready', USER_HISTORIES_KEY, 'DoR & DoD', '2024/12/29')],
+    [Keys.USER_HISTORIES_DOR_DOD, new Referencia('https://www.linkedin.com/pulse/historias-de-usuario-dor-y-dod-clave-para-la-del-remedios-d%C3%ADaz/', 'Definition Of Done & Definition Of Ready', USER_HISTORIES_KEY, 'DoR & DoD', '2024/12/29')]
 ]);
 
 export const MALAS_PRACTICAS_KEY = 'Malas-Practicas';
@@ -902,7 +902,7 @@ export const META_ESTRUCTURAS_REF = new Map<string, Referencia>([
     ],
     [Keys.META_ESTRUCTURAS_QUEUES, new Referencia('https://github.com/joelparkerhenderson/queueing-theory', 'Teoria de Colas', META_ESTRUCTURAS_KEY, 'Teoria de Colas', '2025/09/07')
         .addRelatedItems(Keys.LEYES_LITTLE, Keys.SYSTEM_DESIGN_QUEUES)
-    ],
+    ]
 ]);
 
 export const METODOLOGIAS_KEY = 'Metodologias';
@@ -1628,6 +1628,9 @@ export const PERSISTENCY_REF = new Map<string, Referencia>([
 export const PERSISTENCY_INTERMEDIATE_KEY = 'DB Intermedio'
 export const PERSISTENCY_INTERMEDIATE_REF = new Map<string, Referencia>([
     [Keys.PERSISTENCY_INTERMEDIATE_SCHEMAS, new Referencia('https://buttondown.email/jaffray/archive/in-codd-we-trust-or-not', 'Esquema Fisico Vs Esquema Logico', PERSISTENCY_INTERMEDIATE_KEY, 'Esquemas (Schema)', '2024/07/16')],
+    [Keys.PERSISTENCY_INTERMEDIATE_SCHEMAS_DESIGN, new Referencia('https://www.databricks.com/es/blog/what-is-database-schema', 'Diseño de Esquemas', PERSISTENCY_INTERMEDIATE_KEY, 'Diseño de Esquemas', '2026/08/07')
+        .addMoreReferences('https://www.crunchydata.com/blog/demystifying-schemas-search_path-through-examples')
+    ],
     [Keys.PERSISTENCY_INTERMEDIATE_HARD_SOFT_DELETE, new Referencia('https://surajsinghbisht054.medium.com/understanding-soft-delete-and-hard-delete-in-software-development-best-practices-and-importance-539a935d71b5', 'Borrado Fisico Vs Logico', PERSISTENCY_INTERMEDIATE_KEY, 'Hard/Soft Delete', '2024/08/10')],
     [Keys.PERSISTENCY_INTERMEDIATE_DATA_MODELING, new Referencia('https://towardsdev.com/mastering-data-modeling-a-step-by-step-guide-99dd32bfaa89', 'Modelado de Datos', PERSISTENCY_INTERMEDIATE_KEY, 'Modelado de Datos', '2025/01/23')
         .addRelatedItems(Keys.POO_POO)
@@ -1753,7 +1756,7 @@ export const UML_REF = new Map<string, Referencia>([
     [Keys.UML_STATES, new Referencia('https://diagramasuml.com/estados/', 'Diagrama de estados', UML_KEY, 'De Estados')],
     [Keys.UML_4_1_VISTA, new Referencia('https://es.wikipedia.org/wiki/Modelo_de_Vistas_de_Arquitectura_4%2B1', 'Modelo 4+1 vistas', UML_KEY, '4+1 Vistas', '', '2025/07/10')],
     [Keys.UML_TYPES, new Referencia('https://www.microsoft.com/es-co/microsoft-365/business-insights-ideas/resources/guide-to-uml-diagramming-and-database-modeling', 'Tipos de Diagramas', UML_KEY, 'Tipos de Diagramas')],
-    [Keys.UML_MODEL_C4, new Referencia('https://towardsdev.com/how-to-visualize-your-system-architecture-using-the-c4-model-247bd718e914', 'Modelo C4', UML_KEY, 'Model C4')],
+    [Keys.UML_MODEL_C4, new Referencia('https://towardsdev.com/how-to-visualize-your-system-architecture-using-the-c4-model-247bd718e914', 'Modelo C4', UML_KEY, 'Model C4')]
 ]);
 
 export const VERSIONAMIENTO_KEY = 'Versionamiento';
@@ -1796,7 +1799,7 @@ export const VERSIONAMIENTO_REF = new Map<string, Referencia>([
     [Keys.VERSIONAMIENTO_DATABASE_VERSION_CONTROL, new Referencia('https://blog.codinghorror.com/get-your-database-under-version-control/', 'Database version control', VERSIONAMIENTO_KEY, 'DB version control', '2026/04/01')
         .addRelatedItems(Keys.CD_CI_DEPLOYMENT_PATTERNS, Keys.GIT_COMMITS_PRACTICES, Keys.TESTING_ADVANCED_ENVIRONMENT)
         .addMoreReferences('https://medium.com/but-it-works-on-my-machine/flyway-vs-liquibase-with-spring-boot-which-one-to-choose-e4a410e3d365')
-    ],
+    ]
 ]);
 
 export const HARDWARE_KEY = 'Hardware';
