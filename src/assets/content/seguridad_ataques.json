@@ -31,16 +31,18 @@
         "<strong>Impulsados por IA:</strong> Usan el aprendizaje automatico para mejorar la protección ante las amenazas y la seguridad de la red ",
         " - llendo más alla de las reglas tradicionales reconociendo patrones en base al trafico real "
     ],
-    "protocolosSecurity": [
-        "<strong>SSL</strong> capa de sockets seguros ",
-        "- Es una tecnologia para mantener segura una conexión de internet ",
-        "- Esto protege toda la información privada que se envia entre 2 sistemas, (cliente-servidor)",
+    "protocols-security": [
+        "<strong>SSL - Secure Sockets Layer:</strong> Mantiene segura una conexión de internet, mediante el cifrado de los datos en transito ",
+        "- Esto protege toda la información privada que se envia entre 2 sistemas (cliente-servidor) o (servidor-servidor)",
         "",
-        "<strong>TSL</strong> una versión más actual y segura de SSL ",
-        "- La principal difirencia es el algoritmo de cifrado ",
+        "<strong>TLS - Transport Layer Security</strong> una versión más actual y segura de SSL que corrige vulnerabilidades existentes ",
         "",
-        "<strong>HTTPS</strong> Hyper Text Transfer Protocol Secure o protocolo seguro de transferencia de hipertexto ",
-        "- Basicamente indica si una conexion es segura, por medio de un certificado de TSL ó SSL "
+        "<strong>HTTPS - HyperText Transfer Protocol Secure:</strong> Indica si una conexion es segura, por medio de un certificado de TLS ó SSL ",
+        "",
+        "<strong>Como funcionan los certificados:</strong>",
+        "&bull; <strong>Autenticación:</strong> Cada vez que un usuario accede a su sitio web el servidor se identifica por medio de certificados ",
+        "&bull; <strong>Cifrado:</strong> El servidor transmite la clave pública al navegador del usuario e intercambian claves ",
+        "&bull; <strong>Descifrado:</strong> El secreto pre-maestro se transmite al servidor que lo descifra por medio de la clave privada, estableciendo la conexión "
     ],
     "proxy": [
         "<strong>Proxy</strong>",

@@ -88,19 +88,21 @@
     "<strong>- Sistema CA:</strong> Coherencia y disponibilidad (aplicaciones financieras)"
   ],
   "DNS": [
-    "- <strong>Domain Name System:</strong> Es la manera como accedemos a una pagina web por medio de nombres(dominios) y no de direcciones IP ",
-    "- Este proceso de traducción de direcciones es realizado por estos servidores que estan esparcidos por el mundo ",
-    "- Al estar esparcidos por el mundo esto permite una administración descentralizada, pero que tambien sigue estando interconectada ",
-    "- Aunque este método es normal hoy en dia, tambien se puede acceder a los sitios directamente por medio de una IP obteniendo el dominio del sitio ",
-    "- Si un servidor no encuentra la información solicitada, este la restransmite a otros en la red hasta dar con un resultado ",
+    "<strong>Domain Name System:</strong> Es la manera como accedemos a una pagina web por medio de nombres(dominios) y no de direcciones IP ",
+    "- Este proceso de traducción de direcciones es realizado por estos servidores que estan esparcidos por el mundo, permitiendo 2 ventajas: ",
+    "&bull; Administración descentralizada, pero que tambien sigue estando interconectada, reduciendo el riesgo de ser un punto de fallo critico ",
+    "&bull; Devolver diferentes direcciones IP de acuerdo a la ubicación geografica, la distancia suele traducirse en latencia ",
+    "",
+    "- Aunque este método es normal hoy en dia, tambien se puede acceder a los sitios directamente por medio de una IP sin necesidad del dominio del sitio ",
+    "- Si un servidor no encuentra la información solicitada, este consulta a otros en la red hasta dar con un resultado ",
     "",
     "<strong>Border Gateway Protocol:</strong> Es otra tecnologia tan critica como el DNS, es un protocolo de enrutamiento que permite a las sistemas autonomos ",
     " - saber como llegar a las redes que controlan, es más facil de entender con un <em>ejemplo:</em>",
     "- Para llegar a la casa de un amigo, la dirección seria el DNS pero la ruta por la que llega, es el trabajo de BGP ",
     "",
-    "<strong>¿ Que ocurre sin fallan ?</strong>",
+    "<strong>¿ Que ocurre si fallan ?</strong>",
     "- Si un servidor DNS no responde o incluso falla, el proceso de resolución de nombres no puede completarse, esto provoca interrupciones en los servicios ",
-    "- Si las direcciónes se enrutan mal o de manera ineficiente, la información puede llegar de manera incompleta e incluso perderse ",
+    "- Si el tráfico se enruta mal o de manera ineficiente, la información puede llegar de manera incompleta e incluso perderse ",
     "- Existen formas de mitigar este riesgo como infraestructura multi-zona o redundancia mediante replicas primarias-segundarias "
   ],
   "falaciesDistributedSystems": [

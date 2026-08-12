@@ -974,6 +974,7 @@ export const NUBE_REF = new Map<string, Referencia>([
     ],
     [Keys.NUBE_NATIVE, new Referencia('https://www.oracle.com/cloud/cloud-native/what-is-cloud-native/', 'Evolución de la Nube', NUBE_KEY, 'Cloud Native', '2025/02/09')
         .addRelatedItems(Keys.ARQUITECTURAS_IMPL_MONOLITOS, Keys.ESTRATEGIAS_DESARROLLO_SLDC, Keys.MICROSERVICES_ANALISIS)
+        .addMoreReferences('https://bytebytego.com/guides/what-is-cloud-native/')
     ],
     [Keys.NUBE_CDN_RTT, new Referencia('https://www.cloudflare.com/es-es/learning/cdn/what-is-a-cdn/', 'CDN & RTT', NUBE_KEY, 'CDN & RTT', '2026/03/10')
         .addRelatedItems(Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.SECURITY_ATTACK_MODEL_OSI)
@@ -1554,7 +1555,9 @@ export const SECURITY_ATTACKS_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.APIS_GATEWAY, Keys.APIS_RATE_LIMITING)
         .addMoreReferences('https://www.cloudflare.com/es-es/learning/ddos/glossary/web-application-firewall-waf/')
     ],
-    [Keys.SECURITY_ATTACK_PROTOCOLOS, new Referencia('https://www.websecurity.digicert.com/es/es/security-topics/what-is-ssl-tls-https', 'SSL, TSL, HTTPS', SECURITY_ATTACKS_KEY, 'SSL, TSL, HTTPS')],
+    [Keys.SECURITY_ATTACK_PROTOCOLOS, new Referencia('https://www.websecurity.digicert.com/es/es/security-topics/what-is-ssl-tls-https', 'SSL, TLS, HTTPS', SECURITY_ATTACKS_KEY, 'SSL, TLS, HTTPS', '', '2026/08/11')
+        .addRelatedItems(Keys.HARDWARE_PROTOCOLS)
+    ],
     [Keys.SECURITY_ATTACK_PROXY, new Referencia('https://www.welivesecurity.com/la-es/2020/01/02/que-es-proxy-para-que-sirve/', 'Proxy & Proxy Inverso', SECURITY_ATTACKS_KEY, 'Proxy & Proxy Inverso', '', '2025/02/15')],
     [Keys.SECURITY_ATTACK_CSP, new Referencia('https://auth0.com/blog/from-zero-to-hero-with-csp/', 'Content Security Police', SECURITY_ATTACKS_KEY, 'CSP', '2022/11/07')],
     [Keys.SECURITY_ATTACK_CRSF, new Referencia('https://www.welivesecurity.com/la-es/2015/04/21/vulnerabilidad-cross-site-request-forgery-csrf/', 'Cross Site Request Forgery', SECURITY_ATTACKS_KEY, 'CSRF', '2023/01/06')],
@@ -1856,7 +1859,6 @@ export const WEB_REF = new Map<string, Referencia>([
     [Keys.WEB_USER_INTERFACE, new Referencia('https://pensamientodigital.wordpress.com/diseno-de-interfases-de-usuario/', 'Interfaces de usuario', WEB_KEY, 'UI')],
     [Keys.WEB_USER_XPERIENCE, new Referencia('https://www.coursera.org/articles/ui-vs-ux-design', 'Experiencia de usuario', WEB_KEY, 'UX')],
     [Keys.WEB_LOGOS, new Referencia('https://franciscotorreblanca.es/logotipo-imagotipo-isotipo-e-isologo/', 'Logotipo, Imagotipo, Isotipo, Isologo', WEB_KEY, 'Logos')],
-    //['experienciasUsuario', new Referencia('https://blog.acantu.com/que-es-ux-y-ui/', 'Experiencia de usuario', WEB_KEY, 'UX')],
     [Keys.WEB_GESTALT, new Referencia('https://imborrable.com/blog/teoria-de-la-gestalt/', 'Teoria de Gestalt', WEB_KEY, 'Teoria de Gestalt')],
     [Keys.WEB_SSR_CSR_SSG_ISG, new Referencia('https://medium.com/@prashantramnyc/server-side-rendering-ssr-vs-client-side-rendering-csr-vs-pre-rendering-using-static-site-89f2d05182ef', 'SSR vs CSR vs SSG', WEB_KEY, 'SSR vs CSR vs SSG')],
     [Keys.WEB_ESQUEUMORFISMO, new Referencia('https://aderal.es/estrategias-de-marketing-y-transformacion-digital/nuevas-tendencias-en-diseno-grafico-digital-el-regreso-del-esqueumorfismo/', 'Esqueumorfismo', WEB_KEY, 'Esqueumorfismo')],
@@ -1866,7 +1868,11 @@ export const WEB_REF = new Map<string, Referencia>([
     [Keys.WEB_GOLDEN_SIGNALS, new Referencia('https://www.groundcover.com/blog/4-golden-signals', 'Golden Signals', WEB_KEY, 'Golden Signals', '2024/09/22')
         .addRelatedItems(Keys.OBSERVABILIDAD_MONITOREO, Keys.PEOPLE_NO_NEWS_GOOD_NEWS)
     ],
-    [Keys.WEB_SIMPLIFY_DESIGN, new Referencia('https://uxdesign.cc/10-heuristics-to-simplify-design-decision-making-36bd41868243', 'Simplificar el Diseño', WEB_KEY, 'Simplificar el diseño', '2024/12/13')]
+    [Keys.WEB_SIMPLIFY_DESIGN, new Referencia('https://uxdesign.cc/10-heuristics-to-simplify-design-decision-making-36bd41868243', 'Simplificar el Diseño', WEB_KEY, 'Simplificar el diseño', '2024/12/13')],
+    [Keys.WEB_ARCHITECTURE, new Referencia('https://medium.com/womenintechnology/modern-web-architecture-101-b430df7b9d8e', 'Modern Web Architecture', WEB_KEY, 'Web Architecture', '2026/08/09')
+        .addRelatedItems(Keys.CD_CI_HIDDEN_LAYERS, Keys.FRAMEWORKS_HIDDEN_LAYERS, Keys.NUBE_DNS, Keys.NUBE_LOAD_BALANCING, Keys.NUBE_NATIVE, Keys.PERSISTENCY_INTERMEDIATE_SQL_NO_SQL, Keys.EJECUCION_CACHE_AND_TYPES, Keys.NUBE_CDN_RTT, Keys.SECURITY_ATTACK_PROTOCOLOS, Keys.OBSERVABILIDAD_OBSERVABILITY)
+        .addMoreReferences('https://medium.com/storyblocks-engineering/web-architecture-101-a3224e126947')
+    ]
 ]);
 
 export const NEURO_MARKETING_KEY = 'Neuro-Marketing';
