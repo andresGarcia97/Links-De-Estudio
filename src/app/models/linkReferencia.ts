@@ -1808,7 +1808,6 @@ export const VERSIONAMIENTO_REF = new Map<string, Referencia>([
 export const HARDWARE_KEY = 'Hardware';
 export const HARDWARE_REF = new Map<string, Referencia>([
     [Keys.HARDWARE_VIRTUALIZACION, new Referencia('https://www.redhat.com/es/topics/virtualization/what-is-a-virtual-machine', 'Virtualización', HARDWARE_KEY, 'Virtualizacion')],
-    //['cli', new Referencia('https://searchdatacenter.techtarget.com/es/definicion/Interfaz-de-linea-de-comandos-o-CLI', 'Interfaz de Linea de Comandos', HARDWARE_KEY, 'CLI')],
     [Keys.HARDWARE_CLI, new Referencia('https://www.computerweekly.com/es/definicion/Interfaz-de-linea-de-comandos-o-CLI', 'Interfaz de Linea de Comandos', HARDWARE_KEY, 'CLI', '', '2024/06/11')],
     [Keys.HARDWARE_ESCALAMIENTO, new Referencia('https://www.oscarblancarteblog.com/2017/03/07/escalabilidad-horizontal-y-vertical/', 'Escalamiento de un sistema', HARDWARE_KEY, 'Escalamiento')],
     [Keys.HARDWARE_NUBE_VS_VIRTUALIZACION, new Referencia('https://www.redhat.com/es/topics/cloud-computing/cloud-vs-virtualization', 'Nube VS Virtualizacion', HARDWARE_KEY, 'Nube VS VM')],
@@ -1851,7 +1850,6 @@ export const WEB_REF = new Map<string, Referencia>([
     [Keys.WEB_SPA, new Referencia('https://desarrolloweb.com/articulos/que-es-una-spa.html', 'Single Page Aplication', WEB_KEY, 'SPA')],
     [Keys.WEB_PWA, new Referencia('https://www.iebschool.com/blog/progressive-web-apps-analitica-usabilidad/', 'Progressive Web App', WEB_KEY, 'PWA')],
     [Keys.WEB_SEO, new Referencia('https://www.40defiebre.com/guia-seo/que-es-seo-por-que-necesito', 'Search Engine Optimization', WEB_KEY, 'SEO')],
-    //['espacio', new Referencia('https://www.dsigno.es/blog/diseno-grafico/espacios-negativos-en-diseno-grafico', 'El uso del espacio para diseñar', WEB_KEY, 'Espacio Negativo')],
     [Keys.WEB_SPACE, new Referencia('https://heyjaime.com/blog/espacio-negativo/', 'El uso del espacio para diseñar', WEB_KEY, 'Espacio Negativo', '', '2024/12/13')],
     [Keys.WEB_DISEÑO, new Referencia('https://seocom.agency/es/blog/diseno-grafico-web/', 'Diseño grafico', WEB_KEY, 'Diseño Grafico', '', '2026/03/23')
         .addMoreReferences('https://www.somoscafeina.com/articles/que-es-el-look-and-feel-de-un-sitio-web-y-por-que-es-importante')
@@ -1882,11 +1880,9 @@ export const NEURO_MARKETING_REF = new Map<string, Referencia>([
     [Keys.NEURO_MARKETING_B2B_B2C, new Referencia('https://www.uup.es/blog/b2b-y-b2c-que-son-y-que-diferencias-hay-entre-ambos/', 'B2B & B2C', NEURO_MARKETING_KEY, 'B2B & B2C', '2023/02/04')],
     [Keys.NEURO_MARKETING_MATRIZ_ERIC, new Referencia('http://www.azentoconsulting.com/2020/07/21/como-crear-un-nuevo-modelo-de-negocio-o-reformular-nuestro-modelo-de-negocio-ya-existente-la-matriz-eric/', 'Matriz ERIC', NEURO_MARKETING_KEY, 'Matriz ERIC', '2023/01/29')],
     [Keys.NEURO_MARKETING_GAMIFICACION, new Referencia('https://www.yeeply.com/blog/gamificacion-marketing-estrategias-ejemplos/', 'Gamificacion & Marketing', NEURO_MARKETING_KEY, 'Gamificacion & Marketing', '2023/02/08')],
-    //[Keys.NEURO_MARKETING_MASLOW_BARRET, new Referencia('https://www.danielcolombo.com/los-7-niveles-de-consciencia-personal-y-empresarial-por-daniel-colombo/', 'Maslow & Barret', NEURO_MARKETING_KEY, 'Maslow & Barret', '2023/02/12')],
     [Keys.NEURO_MARKETING_MASLOW_BARRET, new Referencia('https://www.equilia.es/es/2020/02/16/los-7-niveles-de-conciencia-de-richard-barrett/', 'Maslow & Barret', NEURO_MARKETING_KEY, 'Maslow & Barret', '2023/02/12', '2026/03/06')],
     [Keys.NEURO_MARKETING_CEREBRO_TRIURNO, new Referencia('https://www.educaciontrespuntocero.com/recursos/neuroeducacion-cerebro-triuno/', 'Cerebro Triurno', NEURO_MARKETING_KEY, 'Cerebro Triurno', '2023/02/19')],
     [Keys.NEURO_MARKETING_ELEMENT_VALUES, new Referencia('https://media.bain.com/elements-of-value/#', 'Elementos de Valor', NEURO_MARKETING_KEY, 'Elementos de Valor', '2023/02/25')],
-    //[Keys.NEURO_MARKETING_MULTI_OMNI_CANAL, new Referencia('https://www.chakray.com/es/omnicanal-vs-multicanal-cual-es-la-diferencia/', 'Multi & Omni Canalidad', NEURO_MARKETING_KEY, 'Multi & Omni Canalidad', '2023/03/07')],
     [Keys.NEURO_MARKETING_MULTI_OMNI_CANAL, new Referencia('https://www.infobip.com/es/blog/omnicanalidad-vs-multicanalidad-en-que-se-diferencian-y-cuales-son-sus-beneficios', 'Multi & Omni Canalidad', NEURO_MARKETING_KEY, 'Multi & Omni Canalidad', '2023/03/07', '2026/03/06')],
     [Keys.NEURO_MARKETING_BUYER_PERSON, new Referencia('https://www.semrush.com/blog/buyer-persona/', 'Buyer Persona', NEURO_MARKETING_KEY, 'Buyer Persona', '2023/03/11')],
     [Keys.NEURO_MARKETING_WHAT_IS, new Referencia('https://rockcontent.com/es/blog/neuromarketing/', 'Neuro Marketing', NEURO_MARKETING_KEY, 'Neuro Marketing', '2023/04/02')],
