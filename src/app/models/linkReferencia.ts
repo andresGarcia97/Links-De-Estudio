@@ -1301,21 +1301,18 @@ export const POO_REF = new Map<string, Referencia>([
 
 export const TESTING_KEY = 'Testing';
 export const TESTING_REF = new Map<string, Referencia>([
-    //['principios', new Referencia('https://todosqa.com/siete-principios-del-proceso-de-prueba/', 'Principios de testing', TESTING_KEY, 'Principios de testing')],
     [Keys.TESTING_PRINCIPLES, new Referencia('https://www.hiberus.com/crecemos-contigo/siete-principios-que-deben-guiar-el-testing-de-software-segun-istqb/', 'Principios de testing (ISTQB)', TESTING_KEY, 'Principios de testing', '', '2025/04/05')
         .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_SLDC, Keys.CALIDAD_ANALYST_QA)
     ],
     [Keys.TESTING_MANIFIESTO, new Referencia('https://www.adictosaltrabajo.com/2019/12/18/testing-en-un-mundo-agile/', 'Testing manifiesto', TESTING_KEY, 'Testing manifiesto', '', '2025/08/19')
         .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_SLDC)
     ],
-    //['tiposPruebas', new Referencia('https://visual-engin.com/2017/10/26/importancia-pruebas-de-software-testing/', 'Tipos de pruebas', TESTING_KEY, 'Tipos')],
     [Keys.TESTING_TYPES, new Referencia('https://www.certus.edu.pe/blog/pruebas-de-software-importancia/', 'Tipos de pruebas', TESTING_KEY, 'Tipos', '', '2024/07/11')],
     [Keys.TESTING_BENEFICIOS, new Referencia('https://platzi.com/blog/testing-ventajas-formas-de-realizar-pruebas/', 'Beneficios del testing', TESTING_KEY, 'Beneficios')],
     [Keys.TESTING_NAMING, new Referencia('https://www.petrikainulainen.net/programming/testing/writing-clean-tests-naming-matters/', 'Nombramiento de los componentes', TESTING_KEY, 'Nombramiento')],
     [Keys.TESTING_FIRST, new Referencia('https://www.paradigmadigital.com/dev/principio-first-aumentar-la-calidad-tests-unitarios/', 'Principio FIRST', TESTING_KEY, 'Principio FIRST')],
     [Keys.TESTING_DATA_SUT_DOC, new Referencia('https://www.javiergarzas.com/2015/09/que-estoy-probando-y-cuales-son-mis-dependencias-en-testing.html', 'SUT & DOC', TESTING_KEY, 'SUT & DOC', '', '2024/07/14')],
     [Keys.TESTING_MOCKS, new Referencia('https://www.codurance.com/publications/2019/04/08/introduction-to-test-doubles', 'Mocks', TESTING_KEY, 'Mocks')],
-    //['aaa', new Referencia('http://oscarmoreno.com/pruebas-unitarias/', 'Arrange-Act-Assert', TESTING_KEY, 'AAA')],
     [Keys.TESTING_AAA_GWT, new Referencia('https://medium.com/beyond-the-brackets/mastering-testing-patterns-aaa-gwt-and-beyond-3e7f21e37d88', 'Patrones de pruebas', TESTING_KEY, 'AAA & GWT', '2024/07/11', '2026/02/08')
         .addRelatedItems(Keys.PEOPLE_LANGUAGE_UBICUOS, Keys.ESTRATEGIAS_DESARROLLO_BDD, Keys.ESTRATEGIAS_DESARROLLO_TDD, Keys.PRINCIPIOS_DRY)
         .addMoreReferences('https://softwareengineering.stackexchange.com/questions/308160/differences-between-given-when-then-gwt-and-arrange-act-assert-aaa')
@@ -1325,8 +1322,6 @@ export const TESTING_REF = new Map<string, Referencia>([
         .addMoreReferences('https://www.linkedin.com/posts/jgarzas_alcance-tiempo-y-coste-el-cliente-s%C3%B3lo-activity-7425237597343596544-7cpO/')
     ],
     [Keys.TESTING_COBERTURA, new Referencia('https://argonur.com/2020/05/11/code-coverage-cobertura-de-codigo/', 'Cobertura de pruebas', TESTING_KEY, 'Cobertura')],
-    //['falsos', new Referencia('https://www.qalovers.com/2015/03/diferencia-entre-falso-positivo-y-falso_5.html#:~:text=La%20definici%C3%B3n%20de%20falso%20negativo,sistema%20que%20est%C3%A1%20realmente%20infectada.%22&text=Un%20falso%20negativo%20llevado%20a,cuando%20en%20realidad%20est%C3%A1%20fallando.', 'Falsos positivos & Falsos negativos', TESTING_KEY, 'Falsos Resultados')],
-    //['falsos', new Referencia('https://www.redradix.com/insights/detalles-implementacionl-tests-articulo-de-kentc-dodds', 'Falsos positivos & Falsos negativos', TESTING_KEY, 'Falsos Resultados')],
     [Keys.TESTING_FALSES_POSITIVES_NEGATIVES, new Referencia('https://www.browserstack.com/guide/false-positives-and-false-negatives-in-testing', 'Falsos positivos & Falsos negativos', TESTING_KEY, 'Falsos Resultados', '2024/07/11', '2025/04/26')],
     [Keys.TESTING_QUALITY_ASSURANCE, new Referencia('https://www.bbvaapimarket.com/es/mundo-api/que-es-qa-y-por-que-no-debe-faltar-en-tu-proyecto/', '¿ Que es QA ?', TESTING_KEY, 'Quality Assurance', '', '2025/03/15')
         .addRelatedItems(Keys.PEOPLE_GESTION_EXPECTATIVAS)

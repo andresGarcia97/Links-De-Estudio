@@ -97,7 +97,8 @@ export const TESTING = new Map([
     ['sonarRules', { titulo: 'Sonar Rules', referencia: 'https://rules.sonarsource.com/' }],
     ['yellowLab', { titulo: 'Yellow Lab', referencia: 'https://yellowlab.tools/' }],
     ['cleanCodeCheckList', { titulo: 'Clean Code ✅', referencia: 'https://github.com/dev-aritra/clean-code-developer-checklist/tree/master' }],
-    ['designTerms', { titulo: 'Design Terms', referencia: 'https://medium.com/@TharunKumarReddyPolu/top-50-system-design-terminologies-you-must-know-3c78f5fb99c1' }]
+    ['designTerms', { titulo: 'Design Terms', referencia: 'https://medium.com/@TharunKumarReddyPolu/top-50-system-design-terminologies-you-must-know-3c78f5fb99c1' }],
+    ['testerHouse', { titulo: 'Tester House', referencia: 'https://testerhouse.com/pruebas-funcionales/' }]
 ]);
 
 export const CURIOSITIES = new Map([
