@@ -298,5 +298,15 @@
     " - Un sistema de doble péndulo en Londres",
     " - Móviles traslúcidos movidos por el viento en Texas ",
     " - Máquinas de ondas en Lisboa"
+  ],
+  "environment-variables": [
+    "- Gestionar archivos de configuración, para multiples pruebas es un problema comun y puede convertirse en una brecha de seguridad ",
+    "- Las variables de entorno ofrecen una solución robusta y confiable para proteger los secretos de la aplicación ",
+    "",
+    "<strong>Hardcoding de variables:</strong> Quemar las variables directamente en el código es una mala practica que expone un riesgo para la operación ",
+    "- Cambiar los valores significa modificar y desplegar de nuevo, además de que los valores cambian para cada ambiente (dev, cert, prod) ",
+    "",
+    "<strong>Configuración:</strong> La metodologia de 12 factores para aplicaciones <strong>SaaS</strong> expone de manera explicita que la configuración y el código no se mezclan ",
+    "- Toda configuración que no cambie entre ambientes y no comprometa secretos de funcionamiento, puede vivir en el código "
   ]
 }

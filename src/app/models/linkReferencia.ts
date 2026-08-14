@@ -1541,6 +1541,10 @@ export const SECURITY_REF = new Map<string, Referencia>([
     [Keys.SECURITY_ENTROPIA_KEYS, new Referencia('https://www.cloudflare.com/learning/ssl/lava-lamp-encryption/', 'Entropia y criptografia', SECURITY_KEY, 'Entropia ', '2026/06/20')
         .addRelatedItems(Keys.SECURITY_ATTACK_PROTOCOLOS)
         .addMoreReferences('https://blog.cloudflare.com/harnessing-office-chaos/', 'https://blog.cloudflare.com/chaos-in-cloudflare-lisbon-office-securing-the-internet-with-wave-motion/')
+    ],
+    [Keys.SECURITY_ENVINROMENT_VARIABLES, new Referencia('https://medium.com/@aedemirsen/948438ef66cc', 'Environment Variables', SECURITY_KEY, 'Variables de Ambiente', '2026/08/13')
+        .addRelatedItems(Keys.TESTING_ADVANCED_ENVIRONMENT, Keys.NUBE_12_FACTORES, Keys.NUBE_IAAS_PAAS_SAAS, Keys.SECURITY_ATTACK_OWASTOP)
+        .addMoreReferences('https://www.geeksforgeeks.org/javascript/what-are-environment-variables-in-development/')
     ]
 ]);
 
