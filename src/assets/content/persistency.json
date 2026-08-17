@@ -178,6 +178,22 @@
     "- Salir a producción sin pruebas de rendimiento, usar volumenes y patrones de consultas realistas de acuerdo a la demanda esperada ",
     "- No monitorear la base de datos, el rendimiento de las consultas puede diferir o degradarse más de lo esperado y se hace necesario iterar el diseño "
   ],
+  "desnormalizacion": [
+    "- Es el caso contrario de la <strong>Normalización</strong> aca se busca optimizar la lectura de los datos, sacrificando almacenamiento ",
+    "- Aca la redundacia de los datos se hace manera intencionada, de manera que se reducen las uniones entre tablas y los calculos complejos ",
+    "- Los campos usados frecuentemente y atributos calculados suelen usar columnas duplicadas y almacenarse ya calculados, respectivamente ",
+    "",
+    "<strong>Beneficios:</strong>",
+    "- Mejorar el rendimiento en tablas con una alta carga de lectura, reduciendo las uniones y las operaciones de lectura/escritura",
+    "- Consultas más sencillas de entender y mantener ",
+    "",
+    "<strong>Desventajas:</strong>",
+    "- La redundancia de datos aumenta y con ello el espacio necesario para almacenarlos tambien, especialmente en grandes volumenes de datos ",
+    "- Menor cosistencia de los datos, debido a la dificultad de mantener todas las copias que existan actualizadas ",
+    "",
+    "<strong>Vistas materializadas:</strong>",
+    "- Almacenan los resultados de Queries complejos y que son constantemente consultados, como informes y analisis estadisticos "
+  ],
   "ACID": [
     "- Son 4 propiedades que garantizan la confiabilidad de las operaciones y la integridad de los datos en las BD relacionales ",
     "",

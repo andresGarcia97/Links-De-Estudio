@@ -205,7 +205,7 @@ export const SYSTEM_DESIGN_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS)
     ],
     [Keys.SYSTEM_DESIGN_I, new Referencia('https://newsletter.systemdesigncodex.com/p/how-to-do-well-in-system-design-interviews', 'System Design I', SYSTEM_DESIGN_KEY, 'System Design I', '2025/02/16')
-        .addRelatedItems(Keys.REQUISITOS_FUNCIONALES, Keys.REQUISITOS_NO_FUNCIONALES, Keys.PERSISTENCY_INTERMEDIATE_SQL_NO_SQL, Keys.WEB_USER_XPERIENCE, Keys.PERSISTENCY_INTERMEDIATE_DENORMALIZATION, Keys.PERSISTENCY_NORMALIZATION)
+        .addRelatedItems(Keys.REQUISITOS_FUNCIONALES, Keys.REQUISITOS_NO_FUNCIONALES, Keys.PERSISTENCY_INTERMEDIATE_SQL_NO_SQL, Keys.WEB_USER_XPERIENCE, Keys.PERSISTENCY_DENORMALIZATION, Keys.PERSISTENCY_NORMALIZATION)
     ],
     [Keys.SYSTEM_DESIGN_II, new Referencia('https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction', 'System Design II', SYSTEM_DESIGN_KEY, 'System Design II', '2025/02/16')
         .addRelatedItems(Keys.APIS_API_FIRST, Keys.CONTENEDORES_ORCHESTRATION, Keys.CD_CI_IAS_CODE, Keys.HARDWARE_ESCALAMIENTO, Keys.META_CARACTERISTICAS_CACHE, Keys.NUBE_PACELC)
@@ -1616,6 +1616,7 @@ export const PERSISTENCY_REF = new Map<string, Referencia>([
     [Keys.PERSISTENCY_HOW_NORMALIZATION, new Referencia('https://medium.com/@artemkhrenov/understanding-database-normalization-from-1nf-to-bcnf-3893fac16fc9', 'Como Normalizar', PERSISTENCY_KEY, 'Como Normalizar', '2025/12/08')
         .addRelatedItems(Keys.PRINCIPIOS_STUPID, Keys.TESTING_ADVANCED_CHARGE)
     ],
+    [Keys.PERSISTENCY_DENORMALIZATION, new Referencia('https://dgraph.io/blog/post/denormalize-database/', 'Desnormalización', PERSISTENCY_KEY, 'Desnormalización', '2025/02/05')],
     [Keys.PERSISTENCY_ACID, new Referencia('https://dosideas.com/noticias/base-de-datos/973-acid-en-las-bases-de-datos', 'Esquema ACID', PERSISTENCY_KEY, 'ACID', '', '2026/01/15')
         .addRelatedItems(Keys.FRAMEWORKS_TRANSACTIONAL_I, Keys.FRAMEWORKS_TRANSACTIONAL_II, Keys.EJECUCION_DEAD_LOCKS)
     ],
@@ -1677,8 +1678,8 @@ export const PERSISTENCY_INTERMEDIATE_REF = new Map<string, Referencia>([
         .addMoreReferences('https://medium.com/@madu.sharadika/stored-procedures-views-and-triggers-in-sql-3845708d0ee7')
     ],
     [Keys.PERSISTENCY_INTERMEDIATE_SQL_NO_SQL, new Referencia('https://medium.com/@eugeniomendoza/c%C3%B3mo-saber-si-necesitas-una-base-de-datos-nosql-b6cfd5bb7d9b', 'SQL ó NoSql', PERSISTENCY_INTERMEDIATE_KEY, 'SQL ó NoSql', '', '2024/06/06')],
-    [Keys.PERSISTENCY_INTERMEDIATE_DENORMALIZATION, new Referencia('https://dgraph.io/blog/post/denormalize-database/', 'Desnormalización', PERSISTENCY_INTERMEDIATE_KEY, 'Desnormalización', '2025/02/05')
-        .addRelatedItems(Keys.PERSISTENCY_NORMALIZATION)
+    [Keys.PERSISTENCY_INTERMEDIATE_CHOOSE_DB, new Referencia('https://medium.com/@akovtun/the-five-questions-to-pick-a-database-a-decision-tree-for-sql-nosql-cache-and-search-f62facca7566', 'Como escoger una DB', PERSISTENCY_INTERMEDIATE_KEY, 'Escoger una DB', '2026/08/15')
+        .addRelatedItems(Keys.PERSISTENCY_DB_TYPES, Keys.META_CARACTERISTICAS_CACHE, Keys.PERSISTENCY_ACID, Keys.PERSISTENCY_ADVANCED_BASE, Keys.PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL)
     ]
 ]);
 
