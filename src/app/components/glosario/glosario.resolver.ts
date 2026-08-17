@@ -1,12 +1,11 @@
-import { inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ResolveFn } from '@angular/router';
-import { forkJoin } from 'rxjs';
+import { forkJoin, of } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { Item } from 'src/app/models/models';
 import * as Paths from '../../models/relationsSummary';
 
-const CONTENT_FILES: string[] = [
+export const GLOSARIO_CONTENT_FILES: string[] = [
     Paths.HARDWARE_PATH.file,
     Paths.ANALISIS_DATA_PATH.file,
     Paths.PERSISTENCY_PATH.file,
@@ -65,9 +64,12 @@ function loadJson(http: HttpClient, file: string) {
     );
 }
 
-export const glosarioResolver: ResolveFn<Item[]> = () => {
-    const http = inject(HttpClient);
-    return forkJoin(CONTENT_FILES.map(file => loadJson(http, file))).pipe(
+export function loadGlosarioContent(http: HttpClient) {
+    return forkJoin(GLOSARIO_CONTENT_FILES.map(file => loadJson(http, file))).pipe(
         map(results => results.flat())
     );
+}
+
+export const glosarioResolver: ResolveFn<Item[]> = () => {
+    return of([]);
 };

@@ -22,10 +22,10 @@
     <h2>Coincidencias por titulo</h2>
 
     @for (componente of onlyComponents | filter : search; track componente.key) {
-    <div class="card card-small card-no-size tooltip" (click)="goToSection(componente.componente, componente.key)">
+    <button class="card card-small card-no-size tooltip" (click)="goToSection(componente.componente, componente.key)">
       {{componente.titulo}}
       <span class="tooltiptext gradient">Seccion: {{componente.componente}}</span>
-    </div>
+    </button>
     }
 
   </div>
@@ -49,10 +49,10 @@
     <h2>Coincidencias por contenido</h2>
 
     @for (componente of searchOnContent | keyvalue; track componente.key) {
-    <div class="card card-small card-no-size tooltip" (click)="goToSection(componente.value.component, componente.key)">
+    <button class="card card-small card-no-size tooltip" (click)="goToSection(componente.value.component, componente.key)">
       {{componente.value.tittle}}
       <span class="tooltiptext gradient">Seccion: {{componente.value.component}}</span>
-    </div>
+    </button>
     }
 
   </div>

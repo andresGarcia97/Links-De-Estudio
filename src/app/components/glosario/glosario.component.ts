@@ -1,4 +1,5 @@
 import { KeyValuePipe } from '@angular/common';
+import { HttpClient } from '@angular/common/http';
 import { Component, ElementRef, OnInit, ViewChild, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
@@ -6,6 +7,7 @@ import { LinkFuente } from 'src/app/models/linkFuente';
 import { LinkReferencia } from 'src/app/models/linkReferencia';
 import { Fuente, Item, Referencia } from 'src/app/models/models';
 import { FilterPipe } from 'src/app/pipes/filter.pipe';
+import { loadGlosarioContent } from './glosario.resolver';
 
 @Component({
   selector: 'app-glosario',
@@ -21,13 +23,15 @@ export class GlosarioComponent implements OnInit {
   
   private router = inject(Router);
   private route = inject(ActivatedRoute);
+  private http = inject(HttpClient);
 
   @ViewChild("inputSearch") inputSearch!: ElementRef<HTMLInputElement>;
 
   fuentes = new LinkFuente().fuentes;
   linkReferencia = new LinkReferencia();
 
-  joinAllTemas: Item[] = this.route.snapshot.data['temas']
+  joinAllTemas: Item[] = this.route.snapshot.data['temas'] ?? [];
+  private isLoadingTemas = false;
 
   search = '';
 
@@ -58,9 +62,33 @@ export class GlosarioComponent implements OnInit {
     const stats = years.map(year => getYearlyStats(componentsWithDate, year));
     console.table(stats);
 
+    this.loadTemasInBackground();
+
     setTimeout(() => {
       this.inputSearch?.nativeElement?.focus();
-    }, 300);
+    }, 350);
+  }
+
+  private loadTemasInBackground(): void {
+    if (this.isLoadingTemas) {
+      return;
+    }
+
+    this.isLoadingTemas = true;
+
+    loadGlosarioContent(this.http).subscribe({
+      next: (items: Item[]) => {
+        this.joinAllTemas = items;
+        this.isLoadingTemas = false;
+
+        if (this.search.trim()) {
+          this.searchInsideContent();
+        }
+      },
+      error: () => {
+        this.isLoadingTemas = false;
+      }
+    });
   }
 
   private convertFuentesToArray(namesAndValues: Map<string, Fuente>): object[] {
