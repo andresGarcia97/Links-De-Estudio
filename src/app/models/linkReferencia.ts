@@ -362,7 +362,12 @@ export const BUENAS_PRACTICAS_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.BUILD_ERRORS_AND_EXCEPTIONS, Keys.META_CARACTERISTICAS_EXCEPTIONS, Keys.OBSERVABILIDAD_MONITOREO, Keys.APIS_ERRORS, Keys.OBSERVABILIDAD_OBSERVABILITY, Keys.PATRONES_ADVANCED_RESILIENCIA)
         .addMoreReferences('https://medium.com/@csvaibhavpasrija/838292f305fd')
     ],
-    [Keys.BUENAS_PRACTICAS_GOOD_HABITS, new Referencia('https://vadimkravcenko.com/shorts/habits-of-great-software-engineers/', 'Buenos habitos de un desarrollador', BUENAS_PRACTICAS_KEY, 'Buenos habitos')],
+    [Keys.BUENAS_PRACTICAS_GOOD_HABITS_I, new Referencia('https://vadimkravcenko.com/shorts/habits-of-great-software-engineers/', 'Buenos habitos de un desarrollador I', BUENAS_PRACTICAS_KEY, 'Buenos habitos I', '', '2026/08/16')
+        .addRelatedItems(Keys.REQUISITOS_PRAGMATIC_ENGINEER, Keys.PEOPLE_PRODUCT_CHALLENGES)
+    ],
+    [Keys.BUENAS_PRACTICAS_GOOD_HABITS_II, new Referencia('https://medium.com/skillstuff/7-small-coding-decisions-that-prevent-expensive-production-bugs-512c3dbedc5b', 'Buenos habitos de un desarrollador II', BUENAS_PRACTICAS_KEY, 'Buenos habitos II', '2026/08/16')
+        .addRelatedItems(Keys.TESTING_BUG, Keys.META_CARACTERISTICAS_ASSERTS, Keys.POO_DESIGN_BY_CONTRACT_PARTS, Keys.MICROSERVICES_ADVANCED_IDEMPOTENCY_II, Keys.PERSISTENCY_CONSTRAINTS, Keys.EJECUCION_CONCURRENCY_AND_PARALLELISM, Keys.SYSTEM_DESIGN_RESILIENCE, Keys.ANALISIS_DATA_GOLDEN_RECORD)
+    ],
     [Keys.BUENAS_PRACTICAS_FUNCTIONS, new Referencia('https://medium.com/@akineralkan/clean-code-notes-chapter-3-functions-de4a30191300', 'Buenas practicas, Funciones', BUENAS_PRACTICAS_KEY, 'Funciones', '2024/10/18', '2026/07/27')
         .addRelatedItems(Keys.PATRONES_ADVANCED_CQRS, Keys.CALIDAD_CLEAN_CODE, Keys.PRINCIPIOS_SOLID, Keys.ANALISIS_EXCEPTION_DESIGN)
         .addMoreReferences('https://medium.com/swlh/clean-code-writing-functions-or-methods-4e6e53ff4ac2')
