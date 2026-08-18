@@ -1809,6 +1809,10 @@ export const VERSIONAMIENTO_REF = new Map<string, Referencia>([
     [Keys.VERSIONAMIENTO_DATABASE_VERSION_CONTROL, new Referencia('https://blog.codinghorror.com/get-your-database-under-version-control/', 'Database version control', VERSIONAMIENTO_KEY, 'DB version control', '2026/04/01')
         .addRelatedItems(Keys.CD_CI_DEPLOYMENT_PATTERNS, Keys.GIT_COMMITS_PRACTICES, Keys.TESTING_ADVANCED_ENVIRONMENT)
         .addMoreReferences('https://medium.com/but-it-works-on-my-machine/flyway-vs-liquibase-with-spring-boot-which-one-to-choose-e4a410e3d365')
+    ],
+    [Keys.VERSIONAMIENTO_RELEASE_DEPLOY, new Referencia('https://medium.com/cloud-native-daily/deploying-vs-releasing-understanding-the-difference-473d04abbd2c', 'Deploy & Release', VERSIONAMIENTO_KEY, 'Deploy & Release', '2026/08/17')
+        .addRelatedItems(Keys.CD_CI_DEPLOYMENT_PATTERNS, Keys.CD_CI_ROLLING_DEPLOYMENT, Keys.NUBE_PROVISIONING, Keys.CD_CI_IAS_CODE, Keys.CD_CI_CI_CD, Keys.TESTING_QUALITY_ASSURANCE, Keys.CONOCIMIENTOS_EMPIRICOS_BREAKING_PRODUCTION_LESSONS, Keys.EJECUCION_FEATURE_FLAGS, Keys.OBSERVABILIDAD_OBSERVABILITY)
+        .addMoreReferences('https://www.bmc.com/blogs/software-deployment-vs-release/')
     ]
 ]);
 

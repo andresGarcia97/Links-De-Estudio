@@ -311,5 +311,22 @@
     "- <strong>Reversión:</strong> Liquibase soporta rollback de forma integrada mediante changesets; con Flyway debe implementarse de manera manual ",
     "- <strong>Complejidad:</strong> Flyway es sencillo para empezar; la curva de aprendizaje de Liquibase es moderada ",
     "- <strong>Compatibilidad:</strong> Liquibase es agnóstico al motor por diseño; con Flyway los scripts SQL deben adaptarse a cada motor de base de datos "
+  ],
+  "release-deploy": [
+    "- En el desarrollo <em>desplegar</em> y <em>lanzar</em> suelen ser usados de manera intercambiable, pero representan etapas diferentes del ciclo de vida ",
+    "",
+    "<strong>Despliegue:</strong> Proceso de poner el software a disposición del entorno de destino (servidores, plataformas, dispositivos) para su ejecución ",
+    "&bull; Asegurar su funcionamiento y operatividad estable, además de contar con logs, metricas y alertas (observabilidad) ",
+    "&bull; Escalabilidad de la infraestructura de acuerdo a la demanda ",
+    "&bull; Asignación de recursos de manera que sean los necesarios para las cargas de trabajo previstas ",
+    "&bull; Provisionamiento de la infraestructura relacionada, ya sea con <strong>IaC</strong> o herramientas de gestión de configuración ",
+    "&bull; Variables de entorno y entornos separados (dev, cert, prod), generalmente integrados en el pipeline de <strong>CI/CD</strong> ",
+    "",
+    "<strong>Release/lanzamiento:</strong> Es el proceso posterior donde el software se pone a disposición de los usuarios finales o clientes ",
+    "&bull; Un control de versiones y el seguimiento de los cambios, garantizan saber siempre la versión que esta ejecutándose ",
+    "&bull; Pruebas y control de calidad exitosos, con una cobertura de pruebas que reduzca el riesgo de errores graves ",
+    "&bull; Corrección de errores y gestión de incidencias, priorizándolas y dando seguimiento a su resolución ",
+    "&bull; Documentación que contenga el contenido de cada versión y del funcionamiento general, guias de usuario, soporte, etc. ",
+    "&bull; Estrategias de rollback o feature flags en caso de que la aplicación presente errores críticos, revirtiendo los cambios para minimizar los riesgos "
   ]
 }
