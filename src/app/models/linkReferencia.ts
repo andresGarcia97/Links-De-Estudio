@@ -86,16 +86,11 @@ export const AGILES_REF = new Map<string, Referencia>([
     [Keys.AGILES_5S, new Referencia('https://www.gestiopolis.com/5s-seiri-seiton-seiso-seiketsu-y-shitsuke-base-de-la-mejora-continua/', 'Seiri, Seiton, Seiso, Seiketsu, Shitsuke', AGILES_KEY, '5S - Kaizen', '2026/04/29')
         .addRelatedItems(Keys.METODOLOGIAS_KAIZEN)
     ],
-    //['muda#1', new Referencia('https://samuelcasanova.com/2014/03/los-7-desperdicios-del-desarrollo-de-software-i/', 'Muda en el software, parte #1', AGILES_KEY, 'Muda #1')],
-    //['muda#2', new Referencia('https://samuelcasanova.com/2014/03/los-7-desperdicios-del-desarrollo-de-software-y-ii/', 'Muda en el software, parte #2', AGILES_KEY, 'Muda #2')],
     [Keys.AGILES_MUDA_SOFTWARE, new Referencia('https://medium.com/@techworldwithmilan/7-wastes-of-software-development-8febe264c5a8', 'Desperdicio en el software', AGILES_KEY, 'Muda Software', '', '2024/05/01')],
-    //['planningPoker', new Referencia('https://samuelcasanova.com/2016/01/estimacion-agil-con-la-tecnica-planning-poker/', 'Planning Poker y la estimación agil', AGILES_KEY, 'Planning Poker')],
     [Keys.AGILES_PLANNING_POKER, new Referencia('https://www.estratecno.com/blog/planning-poker-como-utilizar-la-tecnica-de-estimacion-agil.html', 'Planning Poker y la estimación agil', AGILES_KEY, 'Planning Poker', '', '2024/08/19')],
     [Keys.AGILES_MANIFEST_AGIL, new Referencia('https://agilemanifesto.org/iso/es/manifesto.html', 'Manifiesto Agil', AGILES_KEY, 'Manifiesto Agil')],
     [Keys.AGILES_MANIFEST_PRINCIPLES_AGIL, new Referencia('https://www.agilealliance.org/agile101/12-principles-behind-the-agile-manifesto/', 'Principios del agilismo', AGILES_KEY, 'Principios')],
-    //['spike', new Referencia('https://samuelcasanova.com/2021/09/spike-que-es/', 'Spike', AGILES_KEY, 'Spike')],
     [Keys.AGILES_SPIKE, new Referencia('https://www.scrumio.com/blog/que-es-un-spike/', 'Spike', AGILES_KEY, 'Spike', '', '2024/05/01')],
-    //['deming', new Referencia('https://www.beetrack.com/es/blog/ciclo-de-deming-etapas-ejemplos', 'Ciclo de Deming', AGILES_KEY, 'Ciclo de Deming')],
     [Keys.AGILES_DEMING, new Referencia('https://www.eurofins-environment.es/es/el-ciclo-deming-que-consiste-y-como-ayuda-gestion-procesos/', 'Ciclo de Deming', AGILES_KEY, 'Ciclo de Deming', '2023/01/06', '2024/05/01')],
     [Keys.AGILES_ESTIMATION_LAWS, new Referencia('https://www.javiergarzas.com/2023/07/descifrando-las-leyes-de-la-estimacion-agil.html', 'Leyes de estimación agil', AGILES_KEY, 'Estimaciones', '2023/12/08')],
     [Keys.AGILES_REQUISITOS_AGILES, new Referencia('https://www.javiergarzas.com/2019/12/los-requisitos-nunca-se-entienden-y-el-usuario-sabe-lo-que-quiere-cuando-lo-ve-funcionando.html', 'Entender los Requisitos', AGILES_KEY, 'Requisitos', '2024/03/10')],
@@ -492,7 +487,6 @@ export const EJECUCION_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.HARDWARE_OPERATIVE_SYSTEM)
         .addMoreReferences('https://facturapp.weebly.com/hilos.html', 'https://medium.com/@akovtun/concurrency-parallelism-processes-threads-thread-safe-systems-1d4e7d351824')
     ],
-    //['concurrenciaParalelismo', new Referencia('https://codigofacilito.com/articulos/programacion-concurrente', 'Concurrencia & Paralelismo', META_CARACTERISTICAS_KEY, 'Concurrencia')],
     [Keys.EJECUCION_CONCURRENCY_AND_PARALLELISM, new Referencia('https://www.linkedin.com/feed/update/urn:li:activity:7209404927750615040/', 'Concurrencia & Paralelismo', EJECUCION_KEY, 'Concurrencia/Paralelismo', '', '2026/03/28')
         .addRelatedItems(Keys.SYSTEM_DESIGN_FAILS_I, Keys.HARDWARE_IO_BOUND_CPU_BOUND, Keys.HARDWARE_FALSE_SHARING)
         .addMoreReferences('https://www.baeldung.com/cs/concurrency-vs-parallelism', 'https://medium.com/@akovtun/concurrency-parallelism-processes-threads-thread-safe-systems-1d4e7d351824')
@@ -630,7 +624,6 @@ export const LEYES_REF = new Map<string, Referencia>([
 
 export const CONTENEDORES_KEY = 'Contenedores';
 export const CONTAINERS = new Map<string, Referencia>([
-    //['lxc', new Referencia('https://www.section.io/engineering-education/lxc-vs-docker-what-is-the-difference-and-why-docker-is-better/', 'Linux Containers', CONTENEDORES_KEY, 'Linux Containers')],
     [Keys.CONTENEDORES_LXC, new Referencia('https://earthly.dev/blog/lxc-vs-docker/', 'Linux Containers', CONTENEDORES_KEY, 'Linux Containers', '', '2024/04/06')],
     [Keys.CONTENEDORES_DOCKER, new Referencia('https://www.xataka.com/otros/docker-a-kubernetes-entendiendo-que-contenedores-que-mayores-revoluciones-industria-desarrollo', '¿ Que es Docker ?', CONTENEDORES_KEY, 'Docker')],
     [Keys.CONTENEDORES_IMAGES, new Referencia('https://clouding.io/hc/es/articles/360010283060-Trabajando-con-im%C3%A1genes-en-Docker', '¿ Que es una imagen ?', CONTENEDORES_KEY, 'Imagenes', '', '2026/03/18')],
@@ -639,10 +632,8 @@ export const CONTAINERS = new Map<string, Referencia>([
         .addMoreReferences('Keys.https://aulasoftwarelibre.github.io/taller-de-docker/containers/')
     ],
     [Keys.CONTENEDORES_VOLUMES, new Referencia('https://www.josedomingo.org/pledin/2016/05/gestion-del-almacenamiento-en-docker', '¿ Que es un volumen ?', CONTENEDORES_KEY, 'Volumenes')],
-    //['network', new Referencia('https://dockertips.com/algo_sobre_redes', 'Manejo de redes en Docker', CONTENEDORES_KEY, 'Redes')],
     [Keys.CONTENEDORES_REDES, new Referencia('https://docs.docker.com/network/', 'Redes en Docker', CONTENEDORES_KEY, 'Redes', '2024/04/06', '2025/03/09')],
     [Keys.CONTENEDORES_FILE, new Referencia('https://docs.docker.com/develop/develop-images/dockerfile_best-practices/', 'Construcción de imagenes', CONTENEDORES_KEY, 'Docker File')],
-    //['compose', new Referencia('https://dockertips.com/utilizando-docker-compose#:~:text=Docker%20Compose%20es%20una%20herramienta%20que%20permite%20simplificar%20el%20uso%20de%20Docker.&text=En%20vez%20de%20utilizar%20Docker,Engine%20a%20realizar%20tareas%2C%20programaticamente', 'Manejo del docker-compose', CONTENEDORES_KEY, 'Docker Compose')],
     [Keys.CONTENEDORES_DOCKER_COMPOSE, new Referencia('https://docs.docker.com/compose/intro/features-uses/', 'Orquestación con Docker Compose', CONTENEDORES_KEY, 'Docker Compose', '2024/04/06', '2025/03/10')],
     [Keys.CONTENEDORES_KUBERNETES, new Referencia('https://kubernetes.io/es/docs/concepts/overview/what-is-kubernetes/', 'Kubernetes', CONTENEDORES_KEY, 'Kubernetes', '', '2025/04/02')
         .addRelatedItems(Keys.NUBE_IAAS_PAAS_SAAS)
@@ -675,7 +666,6 @@ export const ESTRATEGIAS_DESARROLLO_REF = new Map<string, Referencia>([
     ],
     [Keys.ESTRATEGIAS_DESARROLLO_TDD, new Referencia('https://www.paradigmadigital.com/dev/tdd-como-metodologia-de-diseno-de-software/', 'Desarrollo Dirigido por Tests', ESTRATEGIAS_DESARROLLO_KEY, 'TDD')],
     [Keys.ESTRATEGIAS_DESARROLLO_ATDD, new Referencia('https://www.javiergarzas.com/2015/07/que-es-eso-de-atdd.html', 'Desarrollo por pruebas de aceptación', ESTRATEGIAS_DESARROLLO_KEY, 'ATDD', '', '2026/03/18')],
-    //['analisis', new Referencia('https://www.ubjonline.mx/en-que-consisten-los-analisis-top-down-y-bottom-up/', 'Bottom Up & Top Down', ESTRATEGIAS_DESARROLLO_KEY, 'Enfoques')],
     [Keys.ESTRATEGIAS_DESARROLLO_BOTTOM_UP_AND_TOP_DOWN, new Referencia('https://asana.com/es/resources/top-down-approach', 'Bottom Up & Top Down', ESTRATEGIAS_DESARROLLO_KEY, 'Enfoques Up & Down', '', '2025/02/02')],
     [Keys.ESTRATEGIAS_DESARROLLO_TLD_TDD, new Referencia('https://medium.com/swlh/tdd-vs-tld-and-what-is-the-minimum-code-coverage-needed-f380181d3400', 'Tests al final del desarrollo', ESTRATEGIAS_DESARROLLO_KEY, 'TLD vs TDD', '', '2025/02/02')],
     [Keys.ESTRATEGIAS_DESARROLLO_BDUF, new Referencia('https://www.freecodecamp.org/news/the-pros-and-cons-of-big-design-up-front-and-what-i-do-instead-375f00542dec/', 'Big Design Up Front', ESTRATEGIAS_DESARROLLO_KEY, 'BDUF', '', '2025/06/30')
@@ -741,7 +731,6 @@ export const FRAMEWORKS_REF = new Map<string, Referencia>([
 export const GIT_KEY = 'Git';
 export const GIT_REF = new Map<string, Referencia>([
     [Keys.GIT_INTRODUCTION, new Referencia('https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Acerca-del-Control-de-Versiones', 'Introducción a Git', GIT_KEY, 'Introducción Git', '2025/12/09')],
-    //[Keys.GIT_STRUCTURE_AND_CONCEPTS, new Referencia('https://www.klooid.com/blog/git-series-conceptos/', 'Estructura Basica GIT', GIT_KEY, 'Estructura Basica', '2024/12/13')],
     [Keys.GIT_STRUCTURE_AND_CONCEPTS, new Referencia('https://alexhost.com/es/faq/git-repository-structure/', 'Estructura Basica GIT', GIT_KEY, 'Estructura Basica', '2024/12/13', '2025/12/09')],
     [Keys.GIT_REPOSITORIES, new Referencia('https://git-scm.com/book/es/v2/Fundamentos-de-Git-Trabajar-con-Remotos', 'Repositorios Remotos y Locales', GIT_KEY, 'Repositorios')],
     [Keys.GIT_BRANCHS, new Referencia('https://git-scm.com/book/es/v2/Ramificaciones-en-Git-Procedimientos-B%C3%A1sicos-para-Ramificar-y-Fusionar', 'Manejo de ramas', GIT_KEY, 'Ramas')],
@@ -777,7 +766,6 @@ export const USER_HISTORIES = new Map<string, Referencia>([
     [Keys.USER_HISTORIES_OBJECTIVES, new Referencia('https://apiumhub.com/es/tech-blog-barcelona/como-escribir-buenas-historias-de-usuario/', '¿ Que busca una HU ?', USER_HISTORIES_KEY, '¿ Que busca una HU ?', '2024/04/28')],
     [Keys.USER_HISTORIES_PARTS, new Referencia('https://apiumhub.com/es/tech-blog-barcelona/como-escribir-buenas-historias-de-usuario/', 'Partes de una HU', USER_HISTORIES_KEY, 'Partes')],
     [Keys.USER_HISTORIES_INVEST, new Referencia('https://apiumhub.com/es/tech-blog-barcelona/como-escribir-buenas-historias-de-usuario/', 'Criterio INVEST', USER_HISTORIES_KEY, 'INVEST')],
-    //['smart', new Referencia('https://beagilemyfriend.com/historias-de-usuario-invest-smart/', 'Criterio SMART', USER_HISTORIES_KEY, 'SMART')],
     [Keys.USER_HISTORIES_SMART, new Referencia('https://asana.com/es/resources/smart-goals', 'Criterio SMART', USER_HISTORIES_KEY, 'SMART', '', '2024/09/28')],
     [Keys.USER_HISTORIES_3C, new Referencia('https://julibetancur.blog/tag/tres-c/', 'Card-Conversación-Confirmación', USER_HISTORIES_KEY, 'Las 3 C')],
     [Keys.USER_HISTORIES_GHERKIN, new Referencia('https://blog.thiga.co/es/gherkin/', 'Definición de los criterios de aceptación', USER_HISTORIES_KEY, 'Gherkin')],
@@ -858,7 +846,6 @@ export const META_CARATERISTICAS_REF = new Map<string, Referencia>([
 
 export const META_ESTRUCTURAS_KEY = 'Meta-Estructuras';
 export const META_ESTRUCTURAS_REF = new Map<string, Referencia>([
-    //['scope', new Referencia('https://platzi.com/blog/como-funciona-el-scope-en-javascript/', 'Alcance', META_ESTRUCTURAS_KEY, 'Scope')],
     [Keys.META_ESTRUCTURAS_SCOPE, new Referencia('https://codingornot.com/ambito-o-scope-en-programacion', 'Scope o Ambito', META_ESTRUCTURAS_KEY, 'Scope', '', '2025/02/08')
         .addRelatedItems(Keys.EJECUCION_OBJECT_CREATION)
     ],
@@ -920,7 +907,6 @@ export const METODOLOGIAS_REF = new Map<string, Referencia>([
     ],
     [Keys.METODOLOGIAS_ELEVATOR, new Referencia('https://www.iebschool.com/blog/las-claves-para-realizar-un-elevator-pitch-lean-startup/', 'Elevator Pitch', METODOLOGIAS_KEY, 'Elevator Pitch')],
     [Keys.METODOLOGIAS_CANVAS, new Referencia('https://www.iebschool.com/blog/que-es-el-modelo-canvas-y-como-aplicarlo-a-tu-negocio-agile-scrum/', 'Canvas', METODOLOGIAS_KEY, 'Canvas')],
-    //['tradicionales', new Referencia('https://www.tutorialspoint.com/es/software_engineering/software_development_life_cycle.htm', 'Metodologias Tradicionales', METODOLOGIAS_KEY, 'Tradicionales')],
     [Keys.METODOLOGIAS_MODEL_BING_BANG, new Referencia('https://www.tutorialspoint.com/es/software_engineering/software_development_life_cycle.htm', 'Bing Bang', METODOLOGIAS_KEY, 'Bing Bang', '2024/10/10')],
     [Keys.METODOLOGIAS_CASCADA, new Referencia('https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/el-modelo-en-cascada/', 'Cascada', METODOLOGIAS_KEY, 'Cascada')],
     [Keys.METODOLOGIAS_ESPIRAL, new Referencia('https://www.ionos.es/startupguide/productividad/modelo-en-espiral/', 'Espiral', METODOLOGIAS_KEY, 'Espiral')],
@@ -929,7 +915,6 @@ export const METODOLOGIAS_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.PRINCIPIOS_DRY, Keys.ANALISIS_DATA_GOLDEN_RECORD, Keys.TESTING_QUALITY_ASSURANCE)
         .addMoreReferences('https://www.martinfowler.com/bliki/BeckDesignRules.html')
     ],
-    //['v', new Referencia('https://ingsoftware.weebly.com/ciclo-de-vida-en-v.html', 'Modelo en V', METODOLOGIAS_KEY, 'Modelo V')],
     [Keys.METODOLOGIAS_MODEL_V, new Referencia('https://www.linkedin.com/posts/alexxubyte_systemdesign-coding-interviewtips-activity-7241834626241949696-v5Se/', 'Modelo en V', METODOLOGIAS_KEY, 'Modelo V', '', '2024/10/10')],
     [Keys.METODOLOGIAS_RUP, new Referencia('https://rupmetodologia.blogspot.com/?view=sidebar', 'Proceso Racional Unificado', METODOLOGIAS_KEY, 'RUP', '', '2025/06/30')
         .addRelatedItems(Keys.UML_TYPES)
@@ -937,7 +922,6 @@ export const METODOLOGIAS_REF = new Map<string, Referencia>([
     [Keys.METODOLOGIAS_KAIZEN, new Referencia('https://www.movertis.com/blog/que-es-la-metodologia-kaizen', 'Kaizen', METODOLOGIAS_KEY, 'Kaizen', '', '2025/06/30')
         .addRelatedItems(Keys.AGILES_5S)
     ],
-    //['scrumban', new Referencia('https://kanbantool.com/es/scrumban-scrum-y-kanb', 'Scrumban', METODOLOGIAS_KEY, 'Scrumban')],
     [Keys.METODOLOGIAS_SCRUMBAN, new Referencia('https://www.atlassian.com/es/agile/project-management/scrumban', 'Scrumban', METODOLOGIAS_KEY, 'Scrumban', '', '2024/10/10')],
     [Keys.METODOLOGIAS_LEAN, new Referencia('https://www.obsbusiness.school/blog/lean-management-metodologia-origenes-y-principios', 'Lean management', METODOLOGIAS_KEY, 'Lean', '2024/12/01')],
     [Keys.METODOLOGIAS_SIX_SIGMA_HOSHIN_KANRI, new Referencia('https://www.linkedin.com/posts/pedroprh_mejoracontinua-lean-sixsigma-activity-7399077028039397377-Umrc/', 'Six Sigma - Hoshin Kanri', METODOLOGIAS_KEY, 'Six Sigma - Hoshin Kanri', '2025/11/30')
@@ -1283,7 +1267,6 @@ export const POO_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.COMPILACION_COMPILACION, Keys.META_CARACTERISTICAS_GENERICS, Keys.PRINCIPIOS_SOLID)
     ],
     [Keys.POO_HERENCIA_COMPOSICION, new Referencia('https://devexperto.com/herencia-vs-composicion/', 'Herencia VS Composición', POO_KEY, 'Herencia VS Composición', '', '2025/03/20')],
-    //['enlaces', new Referencia('https://es.fondoperlaterra.org/comdifference-between-static-and-dynamic-binding-2', 'Enlace estatico & dinamico', POO_KEY, 'Enlaces')],
     [Keys.POO_ENLACES, new Referencia('https://www.geeksforgeeks.org/static-vs-dynamic-binding-in-java/', 'Enlace estatico & dinamico', POO_KEY, 'Enlaces', '', '2024/10/27')],
     [Keys.POO_COUPLING_COMPONENTS, new Referencia('https://mg-laboratory.tistory.com/189', 'Acoplamiento de componentes', POO_KEY, 'SDP, ADP, SAP')
         .addRelatedItems(Keys.ARQUITECTURAS_IMPL_DESCOMPOSICION_MODULAR)
@@ -1361,12 +1344,8 @@ export const TESTING_REF = new Map<string, Referencia>([
 export const TESTING_ADVANCED_KEY = 'Testing-Avanzado';
 export const TESTING_ADVANCED_REF = new Map<string, Referencia>([
     [Keys.TESTING_ADVANCED_CAJA_NEGRA_CAJA_BLANCA, new Referencia('https://www.testermoderno.com/caja-blanca-vs-caja-negra/', 'Tests de Caja Negra & Caja Blanca', TESTING_ADVANCED_KEY, 'Caja Negra & Blanca', '', '2025/07/06')],
-    //['valorLimite', new Referencia('https://educandocontic.com/valores-limite-pruebas/', 'Valores limite', TESTING_ADVANCED_KEY, 'Valores Limites')],
     [Keys.TESTING_ADVANCED_VALOR_LIMITE, new Referencia('https://www.linkedin.com/pulse/an%C3%A1lisis-de-valores-l%C3%ADmite-asegurando-la-calidad-en-los-oscar-trejo-taeff/', 'Valores limite', TESTING_ADVANCED_KEY, 'Valores Limites', '2024/07/14', '2025/01/04')],
-    //['clasesEquivalencia', new Referencia('https://educandocontic.com/particiones-de-equivalencia/', 'Clases de equivalencia', TESTING_ADVANCED_KEY, 'Equivalencias')],
-    //['clasesEquivalencia', new Referencia('https://www.diariodeqa.com/post/tecnicas-de-prueba-de-caja-negra', 'Clases de equivalencia', TESTING_ADVANCED_KEY, 'Equivalencias', '', '2024/07/14')],
     [Keys.TESTING_CLASES_EQUIVALENCIA, new Referencia('https://katalon.com/resources-center/blog/equivalence-class-partitioning-guide', 'Clases de equivalencia', TESTING_ADVANCED_KEY, 'Equivalencias', '2024/07/14', '2025/07/07')],
-    //['grafosCausaEfecto', new Referencia('https://platzi.com/tutoriales/1421-pruebas-software/9606-pruebas-con-grafos-causa-efecto/', 'Grafos Causa -> Efecto', TESTING_ADVANCED_KEY, 'Causa -> Efecto')],
     [Keys.TESTING_GRAFOS_CAUSA_EFECTO, new Referencia('https://www.softwaretestinghelp.com/cause-and-effect-graph-test-case-writing-technique/', 'Grafos Causa -> Efecto', TESTING_ADVANCED_KEY, 'Causa -> Efecto', '2024/07/14', '2025/07/07')],
     [Keys.TESTING_ADVANCED_TYPES_TESTS, new Referencia('https://www.softwaretestinghelp.com/types-of-software-testing/', 'Clasificación de las pruebas', TESTING_ADVANCED_KEY, 'Tipos de pruebas')],
     [Keys.TESTING_ADVANCED_OUTSIDE_INSIDE, new Referencia('https://www.adictosaltrabajo.com/2016/01/29/tdd-outside-in-vs-inside-out/', 'TDD: Outside-In VS Inside-out', TESTING_ADVANCED_KEY, 'Outside & Inside', '', '2024/07/14')
@@ -1524,7 +1503,6 @@ export const PRINCIPIOS_REF = new Map<string, Referencia>([
 export const SECURITY_KEY = 'Seguridad';
 export const SECURITY_REF = new Map<string, Referencia>([
     [Keys.SECURITY_CIBER_SECURITY, new Referencia('https://latam.kaspersky.com/resource-center/definitions/what-is-cyber-security', 'Ciberseguridad y otras amenazas', SECURITY_KEY, 'Ciberseguridad')],
-    //['cia', new Referencia('https://searchdatacenter.techtarget.com/es/opinion/Que-es-la-triada-de-la-CIA', 'Confidencialidad-Integridad-Accesibilidad ', SECURITY_KEY, 'CIA')],
     [Keys.SECURITY_CIA, new Referencia('https://www.computerweekly.com/es/opinion/Que-es-la-triada-de-la-CIA', 'Confidencialidad-Integridad-Accesibilidad ', SECURITY_KEY, 'CIA', '', '2024/06/16')],
     [Keys.SECURITY_NO_REPUDIO, new Referencia('https://www.unir.net/ingenieria/revista/no-repudio-seguridad-informatica/', 'No repudio', SECURITY_KEY, 'NO Repudio')],
     [Keys.SECURITY_MATRIZ_DE_RIESGOS, new Referencia('https://www.protek.com.py/novedades/objetivos-de-una-matriz-de-riesgos/', 'Matriz de Riesgo', SECURITY_KEY, 'Matriz de Riesgo', '', '2025/10/12')],
@@ -1774,16 +1752,17 @@ export const VERSIONAMIENTO_REF = new Map<string, Referencia>([
     [Keys.VERSIONAMIENTO_MANAGEMENT_VERSIONS, new Referencia('https://david-estevez.gitbooks.io/the-git-the-bad-and-the-ugly/content/es/control-de-versiones.html', 'Gestor de versiones', VERSIONAMIENTO_KEY, 'Gestor de Versiones', '', '2025/04/10')
         .addRelatedItems(Keys.GIT_STRUCTURE_AND_CONCEPTS)
     ],
-    //[Keys.VERSIONAMIENTO_MANAGEMENT_DEPENDENCIES, new Referencia('https://www.hongkiat.com/blog/manage-dependencies-tools-webdev/', 'Gestores de dependencias', VERSIONAMIENTO_KEY, 'Dependencias Web')],
-    [Keys.VERSIONAMIENTO_MANAGEMENT_DEPENDENCIES, new Referencia('https://www.qodo.ai/glossary/software-dependency-management/', 'Gestores de dependencias', VERSIONAMIENTO_KEY, 'Gestores de dependencias', '', '2025/10/15')],
-    // [Keys.VERSIONAMIENTO_VERSIONAMIENTO, new Referencia('https://ed.team/blog/como-se-deciden-las-versiones-del-software', 'Manejo de versiones', VERSIONAMIENTO_KEY, 'Versionamiento', '', '2025/08/27')
+    [Keys.VERSIONAMIENTO_MANAGEMENT_DEPENDENCIES, new Referencia('https://www.qodo.ai/glossary/software-dependency-management/', 'Gestores de dependencias', VERSIONAMIENTO_KEY, 'Gestores de dependencias', '', '2025/10/15')
+        .addMoreReferences('https://www.hongkiat.com/blog/manage-dependencies-tools-webdev/')
+    ],
     [Keys.VERSIONAMIENTO_GRADLEW_VS_MAVEN, new Referencia('https://www.chakray.com/es/gradle-vs-maven-definiciones-diferencias/', 'Gradle VS Maven', VERSIONAMIENTO_KEY, 'Gradle VS Maven')],
     [Keys.VERSIONAMIENTO_VERSIONAMIENTO, new Referencia('https://www.linkedin.com/posts/alexxubyte_systemdesign-coding-interviewtips-activity-7366133616688414722-wAeu/', 'Manejo de versiones', VERSIONAMIENTO_KEY, 'Versionamiento', '', '2025/08/27')
         .addRelatedItems(Keys.APIS_API_GOVERNANCE, Keys.APIS_MADURITY, Keys.APIS_URI, Keys.APIS_REST_FULL)
         .addMoreReferences('https://medium.com/@gaddamnaveen192/api-versioning-in-spring-boot-all-4-types-explained-with-examples-and-best-practices-9619e41d2b9e')
     ],
-    //['licencias', new Referencia('https://www.bbvaapimarket.com/es/mundo-api/las-5-licencias-de-software-libre-mas-importantes-que-todo-desarrollador-debe-conocer/', 'Tipos de licencias', VERSIONAMIENTO_KEY, 'Licencias')],
-    [Keys.VERSIONAMIENTO_LICENSES, new Referencia('https://snyk.io/articles/open-source-licenses/', 'Tipos de licencias open source', VERSIONAMIENTO_KEY, 'Licencias Open Source', '', '2025/02/13')],
+    [Keys.VERSIONAMIENTO_LICENSES, new Referencia('https://snyk.io/articles/open-source-licenses/', 'Tipos de licencias open source', VERSIONAMIENTO_KEY, 'Licencias Open Source', '', '2025/02/13')
+        .addMoreReferences('https://www.bbvaapimarket.com/es/mundo-api/las-5-licencias-de-software-libre-mas-importantes-que-todo-desarrollador-debe-conocer/')
+    ],
     [Keys.VERSIONAMIENTO_DOCUMENTATION, new Referencia('https://shopify.engineering/good-documentation-productivity', 'Documentación & Productividad', VERSIONAMIENTO_KEY, 'Documentacion')],
     [Keys.VERSIONAMIENTO_LICENSES_AND_DATA, new Referencia('https://medium.com/@torgo/whats-the-deal-with-open-source-open-data-and-open-standards-licenses-d769d8e30dc0', 'Licencias y Datos abiertos', VERSIONAMIENTO_KEY, 'Licencias & Datos', '2023/08/17')],
     [Keys.VERSIONAMIENTO_DEPENDENCIES_ORDER, new Referencia('https://www.baeldung.com/maven-dependencies-order', 'Orden de Dependencias', VERSIONAMIENTO_KEY, 'Orden', '2024/08/04')
