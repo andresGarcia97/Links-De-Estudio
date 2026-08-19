@@ -785,7 +785,7 @@ button:disabled:hover {
 
 @media screen and (max-width: 640px) {
 
-  .card {
+  button.card {
     box-sizing: border-box;
     font: inherit;
     color: var(--color-night);
@@ -794,7 +794,7 @@ button:disabled:hover {
     -webkit-appearance: none;
   }
 
-  .card.card-small.card-no-size {
+  button.card.card-small.card-no-size {
     width: auto;
     flex-wrap: wrap;
     height: fit-content;
