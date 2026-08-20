@@ -169,9 +169,9 @@ export const ANALISIS_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.PATRONES_ADVANCED_PERSISTENCE_PATTERNS, Keys.PATRONES_ADVANCED_CQRS, Keys.APIS_IDEMPOTENCIA, Keys.SECURITY_ATTACK_CONDICION_CARRERA, Keys.ARQUITECTURAS_IMPL_EVENT_DRIVEN)
     ],
     [Keys.ANALISIS_CORE_VALUES_SOFTWARE_ENGINEER, new Referencia('https://anitsh.medium.com/core-values-of-a-successful-software-engineer-245801ba7247', 'Core Values Software Engineer', ANALISIS_KEY, 'Core Values', '2026/06/06')],
-    [Keys.ANALISIS_ASYNCHRONUS_WORKFLOW, new Referencia('https://www.linkedin.com/posts/raulcejas04_softwarearchitecture-distributedsystems-backendengineering-share-7469727928717762560-bKEk/', 'Kafka vs RabbitMQ vs SQS', ANALISIS_KEY, 'Flujo asincrono', '2026/06/25')
+    [Keys.ANALISIS_ASYNCHRONUS_WORKFLOW, new Referencia('https://www.linkedin.com/posts/raulcejas04_softwarearchitecture-distributedsystems-backendengineering-share-7469727928717762560-bKEk/', 'Kafka vs RabbitMQ vs SQS', ANALISIS_KEY, 'Flujo asincrono', '2026/06/25', '2026/08/19')
         .addRelatedItems(Keys.ARQUITECTURAS_IMPL_EVENT_DRIVEN, Keys.SYSTEM_DESIGN_QUEUES, Keys.ANALISIS_DATA_STREAMING_VS_MESSAGING, Keys.PATRONES_ADVANCED_MESSAGING)
-        .addMoreReferences('https://danubedata.ro/blog/rabbitmq-vs-kafka-vs-sqs-comparison-2026')
+        .addMoreReferences('https://www.linkedin.com/posts/kafka-rabbitmq-or-sqs-here-is-the-one-share-7492149113451634688-etnk/', 'https://codingprotocols.com/toolkit/comparisons/kafka-vs-rabbitmq-vs-sqs')
     ],
     [Keys.ANALISIS_EXCEPTION_DESIGN, new Referencia('https://medium.com/but-it-works-on-my-machine/the-trap-of-checked-exceptions-when-to-catch-and-when-to-throw-in-java-ffec454b00bb', 'Analisis & Excepciones', ANALISIS_KEY, 'Analisis & Excepciones', '2026/07/14')
         .addRelatedItems(Keys.BUENAS_PRACTICAS_RESULT_OBJECT, Keys.BUENAS_PRACTICAS_EXCEPTIONS, Keys.MALAS_PRACTICAS_LOG_AND_THROW, Keys.META_CARACTERISTICAS_EXCEPTIONS, Keys.POO_HERENCIA, Keys.BUILD_ERRORS_AND_EXCEPTIONS, Keys.POO_ABSTRACTIONS)
