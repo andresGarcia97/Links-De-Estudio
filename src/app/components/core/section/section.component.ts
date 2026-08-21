@@ -1,4 +1,4 @@
-import { Component, Input, OnDestroy, OnInit, inject } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, Input, OnDestroy, OnInit, ViewChild, inject } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { fromEvent, Subscription } from 'rxjs';
 import { map } from 'rxjs/operators';
@@ -17,7 +17,7 @@ const key = keypressed$.pipe(
     templateUrl: './section.component.html',
     standalone: false
 })
-export class SectionComponent implements OnInit, OnDestroy {
+export class SectionComponent implements AfterViewInit, OnInit, OnDestroy {
 
   private router = inject(Router);
   private activeRoute = inject(ActivatedRoute);
@@ -47,6 +47,11 @@ export class SectionComponent implements OnInit, OnDestroy {
     }
 
     if ("Escape" === key) {
+      if (this.moreReferencesDialog?.nativeElement.open) {
+        this.closeMoreReferencesDialog();
+        return;
+      }
+
       this.router.navigateByUrl("");
     }
 
@@ -63,6 +68,8 @@ export class SectionComponent implements OnInit, OnDestroy {
   @Input() relatedSections = new Map<string, string>([]);
   @Input() previousAndNextSection!: PreviousAndNextSection;
 
+  @ViewChild('moreReferencesDialog') moreReferencesDialog!: ElementRef<HTMLDialogElement>;
+
   referencia = '';
   titulo = '';
   dateRead = '';
@@ -73,6 +80,16 @@ export class SectionComponent implements OnInit, OnDestroy {
   showRelatedSections = false;
   relatedItems: string[] = [];
   moreReferences: string[] = [];
+
+  private readonly backdropClickHandler = (event: MouseEvent): void => {
+    if (event.target === event.currentTarget) {
+      this.closeMoreReferencesDialog();
+    }
+  };
+
+  ngAfterViewInit(): void {
+    this.moreReferencesDialog.nativeElement.addEventListener('click', this.backdropClickHandler);
+  }
 
   ngOnInit(): void {
     this.lengthItems = this.items.length - 1;
@@ -90,6 +107,7 @@ export class SectionComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
+    this.moreReferencesDialog.nativeElement.removeEventListener('click', this.backdropClickHandler);
     this.listenArrows.unsubscribe();
   }
 
@@ -166,6 +184,14 @@ export class SectionComponent implements OnInit, OnDestroy {
 
   public showHideRelatedSections(): void {
     this.showRelatedSections = !this.showRelatedSections;
+  }
+
+  public openMoreReferencesDialog(): void {
+    this.moreReferencesDialog.nativeElement.showModal();
+  }
+
+  public closeMoreReferencesDialog(): void {
+    this.moreReferencesDialog.nativeElement.close();
   }
 
   public setSelectedItemByParamKey() {
