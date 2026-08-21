@@ -81,14 +81,21 @@ export class SectionComponent implements AfterViewInit, OnInit, OnDestroy {
   relatedItems: string[] = [];
   moreReferences: string[] = [];
 
-  private readonly backdropClickHandler = (event: MouseEvent): void => {
-    if (event.target === event.currentTarget) {
+  private readonly backdropPointerDownHandler = (event: PointerEvent): void => {
+    const dialog = this.moreReferencesDialog.nativeElement;
+    const bounds = dialog.getBoundingClientRect();
+    const clickedOutside = event.clientX < bounds.left
+      || event.clientX > bounds.right
+      || event.clientY < bounds.top
+      || event.clientY > bounds.bottom;
+
+    if (dialog.open && clickedOutside) {
       this.closeMoreReferencesDialog();
     }
   };
 
   ngAfterViewInit(): void {
-    this.moreReferencesDialog.nativeElement.addEventListener('click', this.backdropClickHandler);
+    document.addEventListener('pointerdown', this.backdropPointerDownHandler);
   }
 
   ngOnInit(): void {
@@ -107,7 +114,7 @@ export class SectionComponent implements AfterViewInit, OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    this.moreReferencesDialog.nativeElement.removeEventListener('click', this.backdropClickHandler);
+    document.removeEventListener('pointerdown', this.backdropPointerDownHandler);
     this.listenArrows.unsubscribe();
   }
 
