@@ -61,7 +61,7 @@ export class SectionComponent implements OnInit, OnDestroy {
   @Input() items = new Array<Item>();
   @Input() selection = '';
   @Input() relatedSections = new Map<string, string>([]);
-  @Input() previousAndNextSection?: PreviousAndNextSection;
+  @Input() previousAndNextSection!: PreviousAndNextSection;
 
   referencia = '';
   titulo = '';
@@ -123,11 +123,11 @@ export class SectionComponent implements OnInit, OnDestroy {
 
   }
 
-  public asIsOrder(_a: any, _b: any) {
+  public asIsOrder(): number {
     return 1;
   }
 
-  public orderReverse(_a: any, _b: any) {
+  public orderReverse(): number {
     return -1;
   }
 
@@ -151,7 +151,7 @@ export class SectionComponent implements OnInit, OnDestroy {
   public detectBrowserName() {
     const agent = window.navigator.userAgent.toLowerCase()
     switch (true) {
-      case agent.indexOf('chrome') > -1 && !!(<any>window).chrome:
+      case agent.indexOf('chrome') > -1 && !!(window as Window & { chrome?: unknown }).chrome:
         return 'chrome';
       case agent.indexOf('firefox') > -1:
         return FIREFOX_BROWSER;

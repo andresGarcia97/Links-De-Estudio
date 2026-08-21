@@ -1,42 +1,54 @@
 <div class="content">
 
-    <div *ngIf="!iterationBackwards" class="card-container less-margin">
+    @if (!iterationBackwards) {
+    <div class="card-container less-margin">
 
-        <span *ngFor="let tittle of tittles | keyvalue: asIsOrder">
+        @for (tittle of tittles | keyvalue: asIsOrder; track tittle.key) {
             <div class="card card-small" [ngClass]="{'itemSelected' : tittle.key === this.selection }"
-                (click)="setDataByKey(tittle.key)">
+                (click)="setDataByKey(tittle.key)" (keyup.enter)="setDataByKey(tittle.key)"
+                (keyup.space)="setDataByKey(tittle.key)" tabindex="0">
                 <span>{{tittle.value}}</span>
             </div>
-        </span>
+        }
 
     </div>
+    }
 
-    <div *ngIf="iterationBackwards" class="card-container less-margin">
+    @if (iterationBackwards) {
+    <div class="card-container less-margin">
 
-        <span *ngFor="let tittle of tittles | keyvalue: orderReverse">
+        @for (tittle of tittles | keyvalue: orderReverse; track tittle.key) {
             <div class="card card-small" [ngClass]="{'itemSelected' : tittle.key === this.selection }"
-                (click)="setDataByKey(tittle.key)">
+                (click)="setDataByKey(tittle.key)" (keyup.enter)="setDataByKey(tittle.key)"
+                (keyup.space)="setDataByKey(tittle.key)" tabindex="0">
                 <span>{{tittle.value}}</span>
             </div>
-        </span>
+        }
 
     </div>
+    }
 
-    <div class="flexbox terminal" *ngIf="selection !== '' ">
+        @if (selection !== '') {
+        <div class="flexbox terminal">
         <div class="terminal window">
           <h2>{{titulo}}</h2>
         </div>
       </div>
+        }
 
-    <div class="terminal" [ngSwitch]="selection" *ngIf="selection !== '' " #terminal>
-        
-        <span *ngFor="let item of items">
-            <span *ngSwitchCase="item.key">
-                <pre *ngFor="let content of item.content" [innerHTML]="content">{{content}}</pre>
-            </span>
-        </span>
+    @if (selection !== '') {
+    <div class="terminal" #terminal>
 
-        <div class="card-container less-margin" *ngIf="moreReferences.length == 0">
+        @for (item of items; track item.key) {
+            @if (selection === item.key) {
+                @for (content of item.content; track $index) {
+                    <pre [innerHTML]="content">{{content}}</pre>
+                }
+            }
+        }
+
+        @if (moreReferences.length === 0) {
+        <div class="card-container less-margin">
 
             <span id="snackbar">Successfully Copied</span>
 
@@ -50,33 +62,32 @@
             <button class="circle-link" [disabled]="(itemSelected === 0)" (click)="getBeforeElement()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 490 490">
                   <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
-                  <path *ngIf="!iterationBackwards" d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 
+                  <path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 
                   0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/>
-                  <path *ngIf="iterationBackwards" d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 
-                  256 214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160zm352-160l-160 160c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 
-                  12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L269.3 256 406.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0z"/>
                 </svg>
             </button>
 
-            <button *ngIf="relatedSections.size > 0 || dateRead !== '' || dateUpdate !== '' || relatedItems.length > 0" class="circle-link" (click)="showHideRelatedSections()">
-                <svg *ngIf="!showRelatedSections" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 448 512">
+            @if (relatedSections.size > 0 || relatedItems.length > 0) {
+            <button class="circle-link" (click)="showHideRelatedSections()">
+                @if (!showRelatedSections) {
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 448 512">
                     <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                     <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/>
                 </svg>
-                <svg *ngIf="showRelatedSections" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 448 512">
+                } @else {
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 448 512">
                     <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                     <path d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/>
                 </svg>
+                }
             </button>
+            }
 
             <button class="circle-link" [disabled]="(itemSelected === lengthItems)" (click)="getNextElement()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 490 490">
                   <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
-                  <path *ngIf="!iterationBackwards" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 
+                  <path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 
                   9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/>
-                  <path *ngIf="iterationBackwards" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L370.7 256 233.4 
-                  393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 
-                  0s-12.5 32.8 0 45.3L178.7 256 41.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"/>
                 </svg>
             </button>
 
@@ -92,19 +103,18 @@
             </button>
 
         </div>
+        }
 
-        <div class="card-container less-margin" *ngIf="moreReferences.length > 0">
+        @if (moreReferences.length > 0) {
+        <div class="card-container less-margin">
 
             <span id="snackbar">Successfully Copied</span>
 
             <button class="circle-link" [disabled]="(itemSelected === 0)" (click)="getBeforeElement()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 490 490">
                   <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
-                  <path *ngIf="!iterationBackwards" d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 
+                  <path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 
                   0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/>
-                  <path *ngIf="iterationBackwards" d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 
-                  256 214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160zm352-160l-160 160c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 
-                  12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L269.3 256 406.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0z"/>
                 </svg>
             </button>
 
@@ -115,31 +125,35 @@
                 </svg>
             </button>
 
-            <button *ngIf="relatedSections.size > 0 || dateRead !== '' || dateUpdate !== '' || relatedItems.length > 0" class="circle-link" (click)="showHideRelatedSections()">
-                <svg *ngIf="!showRelatedSections" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 448 512">
+            @if (relatedSections.size > 0 || relatedItems.length > 0) {
+            <button class="circle-link" (click)="showHideRelatedSections()">
+                @if (!showRelatedSections) {
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 448 512">
                     <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                     <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/>
                 </svg>
-                <svg *ngIf="showRelatedSections" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 448 512">
+                }
+                @if (showRelatedSections) {
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 448 512">
                     <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                     <path d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/>
                 </svg>
+                }
             </button>
+            }
 
             <button class="circle-link" [disabled]="(itemSelected === lengthItems)" (click)="getNextElement()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 490 490">
                   <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
-                  <path *ngIf="!iterationBackwards" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 
+                  <path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 
                   9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/>
-                  <path *ngIf="iterationBackwards" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L370.7 256 233.4 
-                  393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 
-                  0s-12.5 32.8 0 45.3L178.7 256 41.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"/>
                 </svg>
             </button>
 
         </div>
 
-        <div class="card-container less-margin" *ngIf="moreReferences.length > 0">
+        @if (moreReferences.length > 0) {
+        <div class="card-container less-margin">
 
             <button class="circle-link">
                 <a class="reference" target="_blank" rel="noopener noreferrer" [href]="referencia">
@@ -152,7 +166,8 @@
                 </a>
             </button>
             
-            <span *ngFor="let reference of moreReferences">
+            @for (reference of moreReferences; track reference) {
+            <span>
                 <button class="circle-link">
                     <a class="reference" target="_blank" rel="noopener noreferrer" [href]="reference">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24" width="23" viewBox="0 0 490 490">
@@ -164,12 +179,17 @@
                     </a>
                 </button>
             </span>
+            }
 
         </div>
+        }
+        }
 
     </div>
+    }
 
-    <div *ngIf="showRelatedSections && (dateRead !== '' || dateUpdate !== '' || relatedItems.length > 0)" class="card-container less-margin">
+    @if (showRelatedSections && relatedItems.length > 0) {
+    <div class="card-container less-margin">
         <app-extra-info 
             [dateRead]="dateRead" 
             [dateUpdate]="dateUpdate"
@@ -177,50 +197,61 @@
             [selection]="selection">
         </app-extra-info>
     </div>
+    }
 
-    <div *ngIf="showRelatedSections && relatedSections.size > 0 && selection !== '' " class="card-container less-margin">
+    @if (showRelatedSections && relatedSections.size > 0 && selection !== '') {
+    <div class="card-container less-margin">
         
         <h2>Temas Relacionados</h2>
     
         <div class="card-container glass-efect">
 
-            <span *ngFor="let tittle of relatedSections | keyvalue">
+            @for (tittle of relatedSections | keyvalue; track tittle.key) {
                 
-                <div class="card card-small" (click)="routeToRelatedSection(tittle.value)" tabindex="0">
+                <div class="card card-small" (click)="routeToRelatedSection(tittle.value)"
+                    (keyup.enter)="routeToRelatedSection(tittle.value)"
+                    (keyup.space)="routeToRelatedSection(tittle.value)" tabindex="0">
                     <span>{{tittle.key}}</span>
                 </div>
 
-            </span>
+            }
     
         </div>
 
     </div>
+    }
 
-    <div *ngIf="previousAndNextSection!" class="card-container">
+    <div class="card-container">
 
-        <div *ngIf="previousAndNextSection.sectionPrevious !== '' " class="card card-no-size highlight-card light-color" (click)="routeToRelatedSection(previousAndNextSection.sectionPrevious)" tabindex="0">
+        @if (previousAndNextSection.sectionPrevious !== '') {
+        <div class="card card-no-size highlight-card light-color"
+            (click)="routeToRelatedSection(previousAndNextSection.sectionPrevious)"
+            (keyup.enter)="routeToRelatedSection(previousAndNextSection.sectionPrevious)"
+            (keyup.space)="routeToRelatedSection(previousAndNextSection.sectionPrevious)" tabindex="0">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 490 490">
                 <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
-                <path *ngIf="iterationBackwards" d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 
-                0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/>
-                <path *ngIf="!iterationBackwards" d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 
+                <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 
                 256 214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160zm352-160l-160 160c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 
                 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L269.3 256 406.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0z"/>
             </svg>
             <span class="no-margin">{{previousAndNextSection.titlePrevious}}</span>
         </div>
+        }
 
-        <div *ngIf="previousAndNextSection.sectionNext !== '' " class="card card-no-size highlight-card light-color" (click)="routeToRelatedSection(previousAndNextSection.sectionNext)" tabindex="0">
+        @if (previousAndNextSection.sectionNext !== '') {
+        <div class="card card-no-size highlight-card light-color"
+            (click)="routeToRelatedSection(previousAndNextSection.sectionNext)"
+            (keyup.enter)="routeToRelatedSection(previousAndNextSection.sectionNext)"
+            (keyup.space)="routeToRelatedSection(previousAndNextSection.sectionNext)" tabindex="0">
             <span class="no-margin">{{previousAndNextSection.titleNext}}</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 490 490">
                 <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
-                <path *ngIf="iterationBackwards" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 
-                9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/>
-                <path *ngIf="!iterationBackwards" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L370.7 256 233.4 
+                <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L370.7 256 233.4 
                 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 
                 0s-12.5 32.8 0 45.3L178.7 256 41.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"/>
             </svg>
         </div>
+        }
 
     </div>
 
