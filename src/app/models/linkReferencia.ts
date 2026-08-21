@@ -1988,8 +1988,9 @@ export const MICRO_SERVICES_REF = new Map<string, Referencia>([
     [Keys.MICROSERVICES_EVENTS_VS_REQUEST_RESPONSE, new Referencia('https://javascript.plainenglish.io/event-driven-architecture-vs-request-response-developer-guide-acec290f44a1', 'Basado en Eventos VS Request-Response', MICRO_SERVICES_KEY, 'Events VS Requests', '2025/06/30')
         .addRelatedItems(Keys.SYSTEM_DESIGN_SYSTEM_TYPES_I, Keys.ARQUITECTURAS_IMPL_EVENT_DRIVEN, Keys.PATRONES_ADVANCED_DISTRIBUTED_SYSTEMS)
     ],
-    [Keys.MICROSERVICES_DATA_ACCESS_PATTERNS, new Referencia('https://medium.com/@jaredhatfield/data-access-patterns-in-microservices-1e51d26ee205', 'Acceso a datos', MICRO_SERVICES_KEY, 'Acceso a datos', '2025/12/29')
-        .addRelatedItems(Keys.NUBE_LATENCY, Keys.POO_COUPLING_AND_COHESION, Keys.APIS_REST_VS_MESSAGING, Keys.VERSIONAMIENTO_VERSIONAMIENTO, Keys.PERSISTENCY_ADVANCED_SCALING_DB, Keys.ANALISIS_DATA_ETL_ELT, Keys.ANALISIS_DATA_BATCH_VS_STREAM, Keys.ANALISIS_DATA_STREAMING_VS_MESSAGING, Keys.PATRONES_ADVANCED_MESSAGING, Keys.ANALISIS_TYPE_EVENTS, Keys.VERSIONAMIENTO_EVOLUTION_SCHEMA_AND_SCHEMA_REGISTRY)
+    [Keys.MICROSERVICES_DATA_ACCESS_PATTERNS, new Referencia('https://medium.com/@jaredhatfield/data-access-patterns-in-microservices-1e51d26ee205', 'Acceso a datos & comunicación', MICRO_SERVICES_KEY, 'Comunicación', '2025/12/29', '2026/08/20')
+        .addRelatedItems(Keys.NUBE_LATENCY, Keys.POO_COUPLING_AND_COHESION, Keys.APIS_REST_VS_MESSAGING, Keys.VERSIONAMIENTO_VERSIONAMIENTO, Keys.PERSISTENCY_ADVANCED_SCALING_DB, Keys.ANALISIS_DATA_ETL_ELT, Keys.ANALISIS_DATA_BATCH_VS_STREAM, Keys.ANALISIS_DATA_STREAMING_VS_MESSAGING, Keys.PATRONES_ADVANCED_MESSAGING, Keys.SYSTEM_DESIGN_CONCEPTS_II, Keys.VERSIONAMIENTO_EVOLUTION_SCHEMA_AND_SCHEMA_REGISTRY, Keys.ANALISIS_ASYNCHRONUS_WORKFLOW)
+        .addMoreReferences('https://www.linkedin.com/posts/udayaidev_java-springboot-microservices-share-7490800811330121729-41_L/', 'https://nordicapis.com/what-are-over-fetching-and-under-fetching/')
     ]
 ]);
 
