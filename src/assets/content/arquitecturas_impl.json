@@ -1,14 +1,14 @@
 {
     "capas": [
         "- Se basa en la distribución de roles y responsabilidades de forma jerarquica en cada capa ",
-        "- Puede tener N capas, generalmente son 3, de la cual se desprende MVC ",
-        "- La abstracción se mejora al definir la responsabilidad de cada capa y que interfaces se pueden usar/exponer ",
-        "- Se aumenta la reutilización, al tener componentes especializados ",
-        "- El desacople y la integración mejoran como resultado de una adecuada abstracción y definición de responsabilidades ",
+        "- Puede tener N capas, pero generalmente son 3, la cual comparte principios con el clasico Modelo Vista Controlador <em>MVC</em> ",
+        "- El desacople y la cohesión mejoran como resultado de una adecuada abstracción y definición de responsabilidades para cada capa ",
         "- Con un alto grado de abstracción se pueden aislar ciertas capas y hacerlas independientes de las tecnologias ",
-        "- Los cambios tienen bajo impacto y la mantenibilidad es más eficiente de hacer si hay una adecuada modularidad ",
+        "",
+        "- Los cambios tienen bajo impacto y el mantenimiento es más eficiente de hacer si hay una adecuada modularidad ",
         "- Es una arquitectura muy usada en aplicaciones web, sistemas de gestión de contenido y aplicaciones moviles ",
-        "- Para evitar problemas de acoplamiento, se pueden imponer restricciones de comunicación entre capas "
+        "- Para evitar problemas de acoplamiento, se pueden imponer restricciones de comunicación entre capas y que interfaces se pueden usar/exponer ",
+        "- Si las peticiones pasan por todas las capas de manera directa, sin ninguna validación, se pueden considerar el anti patron <em>sink hole</em> "
     ],
     "arquitectura-cliente-servidor": [
         "- Tiene 3 elementos principales y es una de las arquitecturas más usadas debido a su simplicidad ",

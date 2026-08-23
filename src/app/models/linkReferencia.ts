@@ -284,8 +284,9 @@ export const ARQUITECTURAS_REF = new Map<string, Referencia>([
 
 export const ARQUITECTURAS_IMPL_KEY = 'Arquitecturas-impl';
 export const ARQUITECTURAS_IMPL_REF = new Map<string, Referencia>([
-    [Keys.ARQUITECTURAS_IMPL_CAPAS, new Referencia('https://learn.microsoft.com/es-es/dotnet/architecture/modern-web-apps-azure/common-web-application-architectures', 'Arquitectura a Capas', ARQUITECTURAS_IMPL_KEY, 'Capas', '2025/01/12', '2025/03/26')
+    [Keys.ARQUITECTURAS_IMPL_CAPAS, new Referencia('https://learn.microsoft.com/es-es/dotnet/architecture/modern-web-apps-azure/common-web-application-architectures', 'Arquitectura a Capas', ARQUITECTURAS_IMPL_KEY, 'Capas', '2025/01/12', '2026/08/22')
         .addRelatedItems(Keys.PATRONES_ADVANCED_PERSISTENCE_PATTERNS)
+        .addMoreReferences('https://federicomete.medium.com/part-ii-architecture-styles-219a4f159e51')
     ],
     [Keys.ARQUITECTURAS_IMPL_CLIENTE_SERVIDOR, new Referencia('https://desarrolloweb.com/articulos/arquitectura-cliente-servidor.html', 'Arquitectura Cliente-Servidor', ARQUITECTURAS_IMPL_KEY, 'Cliente Servidor')],
     [Keys.ARQUITECTURAS_IMPL_HEXAGONAL, new Referencia('https://medium.com/@edusalguero/arquitectura-hexagonal-59834bb44b7f', 'Hexagonal', ARQUITECTURAS_IMPL_KEY, 'Hexagonal', '', '2024/11/24')
