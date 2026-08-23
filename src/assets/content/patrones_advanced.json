@@ -280,5 +280,17 @@
     "- Mejora el rendimiento en escenarios donde el costo de sincronización por cada invocación es significativo ",
     "- Introduce complejidad; si la frecuencia de acceso es baja, un bloque con synchronized sin doble verificación es suficiente ",
     "- Es el patrón base para implementar lazy initialization de recursos compartidos en entornos multihilo "
+  ],
+  "consume-transform-produce": [
+    "- Consumir y producir información cuando se usan microservicios requiere atender correctamente la confirmación y los reintentos ",
+    " - para eso existen múltiples patrones como <em>SAGA</em> el cual es usado cuando existen multiples pasos y saltos entre servicios ",
+    "- Cuando es una acción acotada y con pocos pasos, se puede usar el patrón <strong>consume-transform-produce loop pattern</strong> ",
+    "- Incluso si solo un servicio está involucrado, esto permite que ante fallos inesperados, reinicios o fallos en la red, las acciones no se pierdan ",
+    "",
+    "<strong>Uso de comandos</strong>                  <strong>Uso de eventos</strong>                    <strong>Consideraciones</strong> ",
+    "1. Orden de creación             4. Consumo del comando            &bull; El consumo de los mensajes debe ser idempotente ",
+    "2. Publicación del comando       5. Guardado de la orden           &bull; Se puede combinar con el patron outbox ",
+    "3. Responder a la creación       6. Publicación del evento         &bull; Los mensajes que lleguen a DLQ deben ser reprocesados de manera segura",
+    "<strong>Fase sincrona</strong>                    <strong>Fase asincrona</strong>"
   ]
 }

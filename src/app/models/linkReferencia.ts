@@ -1197,6 +1197,9 @@ export const PATRONES_ADVANCED_REF = new Map<string, Referencia>([
     ],
     [Keys.PATRONES_ADVANCED_DOUBLE_CHECKING, new Referencia('https://sergeylappo.github.io/posts/double-checked-locking/', 'Double checked locking', PATRONES_ADVANCED_KEY, 'Double Checked Locking', '2026/04/13')
         .addRelatedItems(Keys.EJECUCION_OBJECT_CREATION)
+    ],
+    [Keys.PATRONES_ADVANCED_CONSUME_TRANSFORM_PRODUCE, new Referencia('https://ibm-cloud-architecture.github.io/refarch-kc/implementation/consume-transform-produce/', 'Consume-Transform-Produce', PATRONES_ADVANCED_KEY, 'CTP Loop Pattern', '2026/08/22')
+        .addRelatedItems(Keys.ARQUITECTURAS_IMPL_EVENT_DRIVEN, Keys.MICROSERVICES_EVENTS_VS_REQUEST_RESPONSE, Keys.MICROSERVICES_ADVANCED_IDEMPOTENCY_I, Keys.MICROSERVICES_ADVANCED_DEAD_LETTER_QUEUE)
     ]
 ]);
 
