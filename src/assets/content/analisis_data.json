@@ -232,6 +232,18 @@
     "<strong>- Adopción de la Nube:</strong> Las organizaciones se mudan a la nube para reducir costos y mejorar la agilidad y la elasticidad ",
     " - Con CDC estas migraciones se garantizan consistentes, y asi las empresas pueden dedicarse en crear nuevas experiencias digitales "
   ],
+  "pulling-publisher": [
+    "- Un publicador externo lee periódicamente una fuente de datos para detectar cambios y publicar eventos ",
+    "- Es la alternativa cuando la aplicación principal o la base de datos no pueden o no deben asumir esta responsabilidad ",
+    "- Usado en sistemas legacy que no soportan <em>triggers</em> o sistemas de terceros para <em>CDC</em> ",
+    "- En estos casos un servicio independiente hace polling de manera periódica a la fuente de datos, identifica lo que cambió y lo publica ",
+    "",
+    "<strong>Tradeoffs</strong>",
+    "- Latencia inherente a cada cuánto se hace el poll, pero no debe ser muy frecuente para no afectar la fuente ",
+    "- Debe mantener un checkpoint, offset o fecha que se actualiza con cada poll, para evitar publicar duplicados ",
+    "- Posibilidad de pérdida de datos, ya sea por fallas en la lógica, uso de fechas (timezones) o deletes fisicos y no lógicos ",
+    "- Tanto el publisher como el sistema fuente pueden fallar, por lo que deben ser altamente resilientes "
+  ],
   "goldenRecord": [
     "- Los usuarios interactuan constantemente con multiples plataformas, estos datos deben ser almacenados y ocasionalmente son duplicados ",
     "- El resultado son diferentes versiones de un mismo registro, y las diferentes areas tendrian datos incompletos que desencadenan acciones inconexas ",

@@ -458,6 +458,7 @@ export const ANALISIS_DATA_DATA_STORING = 'dataStoring';
 export const ANALISIS_DATA_ETL_ELT = 'ETL-ELT';
 export const ANALISIS_DATA_THEORY_OF_INFORMATION = 'theoryOfInformation';
 export const ANALISIS_DATA_CHANGE_DATA_CAPTURE = 'changeDataCapture';
+export const ANALISIS_DATA_PULLING_PUBLISHER = 'pulling-publisher';
 export const ANALISIS_DATA_GOLDEN_RECORD = 'goldenRecord';
 export const ANALISIS_DATA_BATCH_VS_STREAM = 'batchVsStreamProcessing';
 export const ANALISIS_DATA_STREAMING_VS_MESSAGING = 'StreamingVsMessaging';

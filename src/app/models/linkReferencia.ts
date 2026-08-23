@@ -1055,6 +1055,10 @@ export const ANALISIS_DATA_REF = new Map<string, Referencia>([
     [Keys.ANALISIS_DATA_CHANGE_DATA_CAPTURE, new Referencia('https://www.confluent.io/learn/change-data-capture/', 'Change Data Capture', ANALISIS_DATA_KEY, 'CDC', '2024/07/28')
         .addRelatedItems(Keys.PERSISTENCY_ADVANCED_WAL)
     ],
+    [Keys.ANALISIS_DATA_PULLING_PUBLISHER, new Referencia('https://systemdesign.sacavix.com/patterns/pulling-publisher', 'Pulling Publisher', ANALISIS_DATA_KEY, 'Pulling Publisher', '2026/08/23')
+        .addRelatedItems(Keys.MICROSERVICES_POLLING, Keys.PERSISTENCY_INTERMEDIATE_HARD_SOFT_DELETE, Keys.SYSTEM_DESIGN_RESILIENCE, Keys.PATRONES_ADVANCED_DISTRIBUTED_SYSTEMS)
+        .addMoreReferences('https://systemdesign.sacavix.com/patterns/')
+    ],
     [Keys.ANALISIS_DATA_GOLDEN_RECORD, new Referencia('https://www.stibosystems.com/blog/benefits-of-creating-golden-customer-records', 'Golden Record', ANALISIS_DATA_KEY, 'Golden Record', '2024/08/10')],
     [Keys.ANALISIS_DATA_BATCH_VS_STREAM, new Referencia('https://estuary.dev/batch-processing-vs-stream-processing/', 'Batch Vs Stream Processing', ANALISIS_DATA_KEY, 'Batch Vs Stream', '2024/08/31', '2025/09/27')
         .addRelatedItems(Keys.PATRONES_ADVANCED_MESSAGING, Keys.SYSTEM_DESIGN_QUEUES)
