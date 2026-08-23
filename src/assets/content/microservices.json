@@ -265,7 +265,7 @@
     "<strong>Agregación & Visualización de logs:</strong> Son uno de los primeros insumos a revisar cuando suceden problemas ",
     "- Como los servicios suelen ejecutarse en multiples instancias, estos deben estar centralizados de manera que permitan buscar de forma eficiente "
   ],
-  "push-vs-poll-events": [
+  "push-vs-poll": [
     "- Cuando se habla de una arquitectura basada en eventos, el foco se basa en los eventos, su escalabilidad, flexibilidad, broker a usar, etc.. ",
     "- Pero la forma en que los consumidores reciben los eventos tambien es importante, esto se reduce a 2 formar principales para hacerlo <strong>push</strong> & <strong>poll</strong> ",
     "",
@@ -280,6 +280,7 @@
     "&bull; La dificultad para lograr un <em>backpressure</em> efectivo aumenta ",
     "&bull; Si el consumidor falla el broker es el encargado de reintentar o de gestionar los mensajes de las <strong>DLQ</strong> ",
     "",
+    "",
     "<strong>Poll:</strong> Los consumidores extraen mensajes a su propio ritmo, teniendo la potestad de cuando y cuanto procesar ",
     "<strong>Ventajas</strong>",
     "&bull; Ideal para flujos de datos donde es importante el orden, o procesar por lotes con puntos de control ",
@@ -289,6 +290,24 @@
     "<strong>Desventajas</strong>",
     "&bull; Mayor latencia, en especial si el sondeo por mensajes nuevos es largo ",
     "&bull; Más componentes de infraestructura que administrar (shards, offsets, consumer groups, etc)"
+  ],
+  "long-poll-vs-short-poll": [
+    "- Sabiendo que la técnica de poll significa preguntar reiteradamente si hay mensajes nuevos, esta a su vez se divide en otras 2 formas ",
+    "",
+    "<strong>Short:</strong> Es la pregunta constante e incesante sobre si hay mensajes nuevos ",
+    "<strong>Casos de uso:</strong> Actualizaciones que no son criticas y soportan retrasos en la información ",
+    "",
+    "<strong>Ventajas</strong>                  <strong>Desventajas</strong>",
+    "&bull; Facil de implementar    &bull; Puede ser un desperdicio si se hace muy seguido, además de aumentar el trafico de la red ",
+    "&bull; Facil de mantener       &bull; No es tiempo real, aunque use intervalos muy cortos de duración ",
+    "",
+    "",
+    "<strong>Long:</strong> Es dejar la conexión abierta hasta que haya datos para procesar ",
+    "<strong>Casos de uso:</strong> Aplicaciones de mensajeria, sistemas de notificaciones y/o alertas ",
+    "",
+    "<strong>Ventajas</strong>                                     <strong>Desventajas</strong>",
+    "&bull; Las actualizaciones son casi inmediatas    &bull; Mayor consumo de recursos, debido a la gestión de las conexiones abiertas ",
+    "&bull; Menor cantidad de solicitudes              &bull; Susceptible a problemas de pérdida de conexión "
   ],
   "architectureBasedEvents-vs-requestResponse": [
     "<strong>Reactividad VS Control</strong>",

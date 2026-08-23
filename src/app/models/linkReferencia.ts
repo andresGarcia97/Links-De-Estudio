@@ -218,7 +218,7 @@ export const SYSTEM_DESIGN_REF = new Map<string, Referencia>([
         .addMoreReferences('https://bugfree.ai/collection/system-design-top')
     ],
     [Keys.SYSTEM_DESIGN_SYSTEM_TYPES_II, new Referencia('https://www.designgurus.io/blog/system-design-decision-tree', 'Tipos generales de sistemas II', SYSTEM_DESIGN_KEY, 'Tipos de sistemas II', '2026/07/11')
-        .addRelatedItems(Keys.MICROSERVICES_PUSH_PULL_EVENTS, Keys.APIS_WEB_HOOK_VS_SOCKET_VS_SSE, Keys.NUBE_LATENCY, Keys.PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL, Keys.ANALISIS_DATA_STREAMING_VS_MESSAGING, Keys.SECURITY_ATTACK_CONDICION_CARRERA, Keys.PERSISTENCY_ACID, Keys.EJECUCION_CONCURRENCY_AND_PARALLELISM, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRACING)
+        .addRelatedItems(Keys.MICROSERVICES_PUSH_POLL, Keys.APIS_WEB_HOOK_VS_SOCKET_VS_SSE, Keys.NUBE_LATENCY, Keys.PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL, Keys.ANALISIS_DATA_STREAMING_VS_MESSAGING, Keys.SECURITY_ATTACK_CONDICION_CARRERA, Keys.PERSISTENCY_ACID, Keys.EJECUCION_CONCURRENCY_AND_PARALLELISM, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRACING)
         .addMoreReferences('https://medium.com/@saquibdev/how-to-prepare-for-system-design-interview-31fa1753379f')
     ],
     [Keys.SYSTEM_DESIGN_SCALING_WRITES, new Referencia('https://medium.com/@priyasrivastava18official/system-design-pattern-scaling-writes-how-big-tech-handles-billions-of-writes-per-second-60c92d0374f2', 'Diseño de sistemas, escritura', SYSTEM_DESIGN_KEY, 'Escalar la escritura', '2025/11/17')
@@ -1986,8 +1986,12 @@ export const MICRO_SERVICES_REF = new Map<string, Referencia>([
     [Keys.MICROSERVICES_ESENTIAL_COMPONENTS, new Referencia('https://newsletter.systemdesigncodex.com/p/essential-components-of-a-production-069', 'Componentes Esenciales', MICRO_SERVICES_KEY, 'Componentes Esenciales', '2025/06/23')
         .addRelatedItems(Keys.ARQUITECTURAS_IMPL_EVENT_DRIVEN, Keys.SYSTEM_DESIGN_QUEUES, Keys.HARDWARE_ESCALAMIENTO, Keys.FRAMEWORKS_FRAMEWORKS, Keys.PERSISTENCY_INTERMEDIATE_SQL_NO_SQL, Keys.META_CARACTERISTICAS_CACHE, Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.OBSERVABILIDAD_OBSERVABILITY, Keys.APIS_RATE_LIMITING)
     ],
-    [Keys.MICROSERVICES_PUSH_PULL_EVENTS, new Referencia('https://theburningmonk.com/2025/05/understanding-push-vs-poll-in-event-driven-architectures/', 'Push VS Poll', MICRO_SERVICES_KEY, 'Push VS Poll Events', '2025/06/04')
+    [Keys.MICROSERVICES_PUSH_POLL, new Referencia('https://theburningmonk.com/2025/05/understanding-push-vs-poll-in-event-driven-architectures/', 'Push VS Poll', MICRO_SERVICES_KEY, 'Push VS Poll', '2025/06/04')
         .addRelatedItems(Keys.ARQUITECTURAS_IMPL_EVENT_DRIVEN, Keys.SYSTEM_DESIGN_QUEUES, Keys.ANALISIS_LIGHT_EVENTS_VS_RICH_EVENTS, Keys.PARADIGMAS_REACTIVO)
+    ],
+    [Keys.MICROSERVICES_POLLING, new Referencia('https://dev.to/debajit13/short-polling-vs-long-polling-a-comprehensive-guide-for-developers-31j3', 'Long polling VS Short polling', MICRO_SERVICES_KEY, 'Long VS Short', '2025/08/22')
+        .addRelatedItems(Keys.ARQUITECTURAS_IMPL_EVENT_DRIVEN, Keys.SYSTEM_DESIGN_QUEUES, Keys.APIS_WEB_HOOK_VS_SOCKET_VS_SSE, Keys.PATRONES_ADVANCED_INBOX)
+        .addMoreReferences('https://www.geeksforgeeks.org/javascript/what-is-long-polling-and-short-polling/')
     ],
     [Keys.MICROSERVICES_EVENTS_VS_REQUEST_RESPONSE, new Referencia('https://javascript.plainenglish.io/event-driven-architecture-vs-request-response-developer-guide-acec290f44a1', 'Basado en Eventos VS Request-Response', MICRO_SERVICES_KEY, 'Events VS Requests', '2025/06/30')
         .addRelatedItems(Keys.SYSTEM_DESIGN_SYSTEM_TYPES_I, Keys.ARQUITECTURAS_IMPL_EVENT_DRIVEN, Keys.PATRONES_ADVANCED_DISTRIBUTED_SYSTEMS)
