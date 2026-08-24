@@ -320,5 +320,23 @@
     "&bull; Actualización constante de la documentación, diseño y diagramas para que sean elementos vivos ",
     "&bull; Evitar aer en la trampa de la velocidad mediante el ejercicio riguroso de la ingeniería ",
     "&bull; Utilizar de manera deliberada y consciente la IA puede ayudar a visibilizar el trabajo cognitivo en lugar de ocultarlo "
+  ],
+  "tactical-vs-strategic-programming": [
+    "- El diseño del software siempre ha sido importante, en especial ahora que la IA y los agentes estan produciendo código más rapido que nunca ",
+    "- Descomponer un sistema complejo en partes pequeñas y manejables siempre sera dificil, pero a su vez puede resolver muchos problemas si se hace bien ",
+    "- No todas las metodologias o practicas son optimas, como <strong>TDD</strong> que suele ser compleja o <strong>Cascada</strong> reemplazada por las metodologias agiles ",
+    "- En cualquier caso es fundamental manejar la complejidad, no hacerlo es una deuda que se paga a largo plazo ",
+    "",
+    "<strong>Programación tactica:</strong> Escribir código funcional es un requisito minimo para cualquier programador, pero el desarrollador táctico ",
+    " - trabaja rápido y a menudo solo resuelve el problema inmediato, con una visión miope, aplicando parches en lugar de solucionarlo ",
+    "- Suele aumentar la deuda técnica y postergar acciones de refactorización, dejando que el desastre crezca y el código se degrade  ",
+    "",
+    "<strong>Programación estrategica:</strong> Bajo el principio de que <em>un código que funcione no es suficiente</em>, se distingue del programador táctico ",
+    "- Uno de los objetivos es tener el mejor diseño posible, con una perspectiva a largo plazo sin afectar el funcionamiento en general ",
+    "&bull; <strong>Manera proactiva:</strong> Planifica un diseño y evalúa las opciones antes de cualquier implementación ",
+    "&bull; <strong>Manera reactiva:</strong> Refactoriza si hay problemas o mejoras detectados durante el cambio ",
+    "",
+    "<strong>John Ousterhout</strong> acuñó el término <em>Tornado Táctico</em> para referirse a la persona que lleva la programación tactica al extremo ",
+    "- El problema con este tipo de personas suele generar fricción con su modo de trabajo, con resultados aceptables pero métodos muy cuestionables "
   ]
 }

@@ -19,7 +19,7 @@
     "<strong>Repositorios:</strong>  Realizan la persistencia y la obtención de los datos, por lo que no estan limitados a solo el uso de una BD ",
     "",
     "- El desarrollo debe ser lo más abstracto posible para ser independiente de las implementaciones ",
-    "- Las capas se vuelven parte diciente del codigo, indicando su utilidad con sus nombres ",
+    "- Las capas se vuelven parte diciente del código, indicando su utilidad con sus nombres ",
     "- Todo lo desarrollado debe ser en pro del <em>negocio</em> de manera que tecnologias, frameworks, etc.. son un medio más que un fin "
   ],
   "BDD": [
@@ -36,16 +36,20 @@
     "- Como se intenta disminuir el lenguaje tecnico, se llega a un público más amplio "
   ],
   "TDD": [
-    "- Primero se escriben las pruebas, y despues se crea el codigo para que estas funcionen ",
-    "- Puede incrementar la carga de trabajo, pero se obtiene un codigo más robusto y mantenible ",
-    "- Basicamente es un ciclo constante de creación de pruebas, refactorización y crecimiento ",
-    "- El <strong>Que</strong> es más importante que el <strong>Como</strong> ",
-    "- La productividad se puede ver mermada si no se conoce esta estrategia ",
-    "- El incluir Bases de Datos o Interfaces graficas suele complicar el desarrollo "
+    "- Primero se crean las pruebas y despues el código para que estas funcionen, el <strong>Que</strong> es más importante que el <strong>Como</strong>",
+    "- Puede incrementar la carga de trabajo, pero se obtiene un código más robusto y mantenible ",
+    "- Básicamente es un ciclo constante de creación de pruebas, crecimiento y refactorización, conocido como <strong>Red-Green-Refactor</strong> ",
+    "- La cobertura de pruebas suele ser alta desde el inicio, aunque esto no garantiza la ausencia de errores ",
+    "",
+    "- La productividad se puede ver mermada si no se domina esta estrategia ",
+    "- El incluir Bases de Datos o Interfaces gráficas suele complicar el desarrollo ",
+    "- Una práctica común que aporta mucho valor es cómo se corrigen los errores ",
+    "<strong>1.</strong> Crear la prueba de manera que se pueda verificar el error ",
+    "<strong>2.</strong> Corregir el error y crear nueva cobertura de pruebas para que no vuelva a suceder "
   ],
   "ATDD": [
     "- Proviene de <em>Acceptance Test-Driven Development</em> donde todo el equipo analiza conjuntamente los criterios de aceptación antes de comenzar el desarrollo ",
-    "- Primero se escriben las pruebas, despues se crean los casos de aceptación y de ultimas se crea el codigo para que estos pasen ",
+    "- Primero se escriben las pruebas, despues se crean los casos de aceptación y de ultimas se crea el código para que estos pasen ",
     "- Las pruebas se que más cuestan se automatizan, por lo que a la larga el desarrollo se volvera más agil ",
     "- Definir las Historias de Usuario y sus casos de aceptación es fundamental para evitar perder tiempo "
   ],
@@ -62,7 +66,7 @@
     "- El enfoque Top-Down es más rigido y estructurado, mientras que el enfoque Bottom-Up es más flexible y colaborativo "
   ],
   "TLD-TDD": [
-    "- Estas se dan una vez se ha terminado el codigo y las posibles refactorizaciones que este sufra ",
+    "- Estas se dan una vez se ha terminado el código y las posibles refactorizaciones que este sufra ",
     "- Este tipo de estrategia se puede usar de 2 maneras distintas: ",
     "",
     "<strong>Funciones completas:</strong> Las pruebas cubriran todas las funciones y sus posibles escenarios, menor cantidad de bugs y mejor calidad ",
@@ -72,8 +76,8 @@
     "- Este enfoque es ideal si el tiempo de desarrollo es escaso ",
     "- Su curva de aprendizaje es menor en comparación con TDD ",
     "- El mantenimiento se reducen al usar TDD, pero la productividad aumenta con TLD (gastos y mano de obra) ",
-    "- Hay un mayor numero de pruebas en TDD, sin embargo el codigo con TLD es más entendible ",
-    "- Los cambios suelen tener menos impactos negativos con TDD, a cambio de más complejidad inherente al codigo "
+    "- Hay un mayor numero de pruebas en TDD, sin embargo el código con TLD es más entendible ",
+    "- Los cambios suelen tener menos impactos negativos con TDD, a cambio de más complejidad inherente al código "
   ],
   "BDUF": [
     "- Es una implementación de la metodologia en cascada, donde las etapas son consecuentes y largas ",
@@ -85,7 +89,7 @@
     " - Se conocen los objetivos y requisitos por adelantadao, además de que es poco probable de que cambien ",
     " - Las revisiones de diseños son difíciles y costosas, por lo que se refinan al inicio para que sufran minimos cambios ",
     " - Una solución de diseño debe ser juzgada si es buenan o efectiva, antes de ser funcional ",
-    " - Se pueden identificar desafios de desarrollo antes de llegar al codigo ",
+    " - Se pueden identificar desafios de desarrollo antes de llegar al código ",
     " - No se puede iniciar nada, sin diseñar ni planificar antes",
     "",
     "- Puntos fuertes: ",
@@ -153,12 +157,12 @@
     "- Ninguna decisión es inamovible, pero entre más tarde se cambie, mayor sera el costo para el proyecto",
     "",
     "<strong>Desarrollo:</strong> Una vez se tenga concenso sobre la mayoria de temas, se puede empezar a codificar, que tomara la gran parte de tiempo y recursos ",
-    "- No importa que modelo de gestión se use, pueden ser metodologias agiles o tradicionales, el resultado sera siempre un codigo funcional ",
+    "- No importa que modelo de gestión se use, pueden ser metodologias agiles o tradicionales, el resultado sera siempre un código funcional ",
     "",
     "<strong>Pruebas:</strong> Las areas encargadas de control de calidad realizaran las pruebas pertinentes para detectar errores, fallas o incumplimientos ",
     "  - Testing Unitario                 - Testing de Integración",
     "  - Testing de Seguridad             - Pruebas de carga & Estres",
-    "  - Calidad de codigo                - Pruebas de Aceptación ",
+    "  - Calidad de código                - Pruebas de Aceptación ",
     "- Si en esta o en etapas previas no se encuentran defectos, sera mucho más costoso y complicado corregirlos más adelante",
     "",
     "<strong>Implementación:</strong> Tambien conocida como despliegue, y deberia estar altamente automatizada, además de contar con la capacidad de reversión ",
@@ -205,9 +209,9 @@
     "- Este esquema se inspiro en el modelo de madurez de una API REST o modelo Richardson y como se aplica con <strong>DDD</strong>",
     "- Igual que en una piramide, los niveles iniciales son los fundamentos, sobre la cual se pueden construir elementos arquitectonicos más complejos ",
     "",
-    "<strong>Nivel 0 - SOLID:</strong> Es aquel codigo que puede o no tener alguna arquitectura, tambien es aquel que esta bien escrito y con buenas practicas ",
+    "<strong>Nivel 0 - SOLID:</strong> Es aquel código que puede o no tener alguna arquitectura, tambien es aquel que esta bien escrito y con buenas practicas ",
     "- Codigo sintacticamente correcto y con una guia de estilo clara ",
-    "- <em>Calistenia de objetos</em> como guia aporta a la mantenibilidad y claridad del codigo ",
+    "- <em>Calistenia de objetos</em> como guia aporta a la mantenibilidad y claridad del código ",
     "- Fundamentos de <strong>POO</strong> como composición, Herencia, Polimorfismo, Ley de Demeter, Interfaces, etc...",
     "- Principios <strong>SOLID</strong> además de patrones segun sea el caso ",
     "",
@@ -242,7 +246,7 @@
     "",
     "<strong>Desarrollo Vertical</strong>",
     "- En este enfoque se miran las HU para solo implementar lo minimo necesario en cada una de las capas para cumplir los requisitos ",
-    "- Asi solo se escribe el codigo estrictamente necesario, lo que lo alinea con <strong>TDD</strong> para la generación de los tests ",
+    "- Asi solo se escribe el código estrictamente necesario, lo que lo alinea con <strong>TDD</strong> para la generación de los tests ",
     "- Se realizan revisiones más pequeñas y enfocadas, por lo que la detección de errores y malas practicas es más acertada ",
     "- Evitando desarrollar demás en cualquiera de las capas afectadas y que el contexto de la solución aumente ",
     "",

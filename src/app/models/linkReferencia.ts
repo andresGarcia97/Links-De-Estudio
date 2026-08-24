@@ -532,7 +532,10 @@ export const CONOCIMIENTO_EMPIRICO = new Map<string, Referencia>([
     ],
     [Keys.CONOCIMIENTOS_EMPIRICOS_TIPOS_PROGRAMADORES, new Referencia('https://stevenbenner.com/2010/07/the-5-types-of-programmers/', 'Tipos de programadores', CONOCIMIENTO_EMPIRICO_KEY, 'Programadores')],
     [Keys.CONOCIMIENTOS_EMPIRICOS_MULTI_TASKING, new Referencia('https://www.nationalgeographicla.com/ciencia/2022/11/como-nos-afecta-el-multitasking-3-efectos-de-la-multitarea', 'Pros y Contras del Multitasking', CONOCIMIENTO_EMPIRICO_KEY, 'Multitarea', '', '2025/07/08')],
-    [Keys.CONOCIMIENTOS_EMPIRICOS_PASTA_THEORY, new Referencia('https://www.techtarget.com/searchsoftwarequality/tip/Fix-spaghetti-code-and-other-pasta-theory-antipatterns/', 'Teoria de la pasta', CONOCIMIENTO_EMPIRICO_KEY, 'Codigo como pasta')],
+    [Keys.CONOCIMIENTOS_EMPIRICOS_PASTA_THEORY, new Referencia('https://www.techtarget.com/it-infrastructure/tip/Fix-spaghetti-code-and-other-pasta-theory-antipatterns', 'Teoria de la pasta', CONOCIMIENTO_EMPIRICO_KEY, 'Código como pasta')
+        .addRelatedItems(Keys.ANALISIS_COHESERS_DECOUPLERS)
+        .addMoreReferences('https://www.evozon.com/where-pasta-and-programming-meet/')
+    ],
     [Keys.CONOCIMIENTOS_EMPIRICOS_THINGS_THAT_ARE_NOT_TAUGHT, new Referencia('https://vadimkravcenko.com/shorts/things-they-didnt-teach-you/', 'Cosas que no se enseñan', CONOCIMIENTO_EMPIRICO_KEY, 'Cosas que no se enseñan', '2023/02/09')],
     [Keys.CONOCIMIENTOS_EMPIRICOS_CODING_EASY_PART, new Referencia('https://swizec.com/blog/coding-is-the-easy-part/', 'Codificar es la parte facil', CONOCIMIENTO_EMPIRICO_KEY, 'Codificar es facil', '2023/12/11', '2025/07/13')
         .addRelatedItems(Keys.LEYES_HYRUM)
@@ -560,6 +563,10 @@ export const CONOCIMIENTO_EMPIRICO = new Map<string, Referencia>([
     [Keys.CONOCIMIENTOS_EMPIRICOS_DEUDA_COGNITIVA, new Referencia('https://newsletter.getdx.com/p/cognitive-debt-the-hidden-risk-in', 'Deuda cognitiva', CONOCIMIENTO_EMPIRICO_KEY, 'Deuda cognitiva', '2026/08/02')
         .addRelatedItems(Keys.AGILES_DEUDA_TECNICA, Keys.REFACTORING_DEUDA_TECNICA, Keys.PEOPLE_PEOPLE_PROCESS_TECNOLOGY, Keys.PEOPLE_ONA, Keys.CALIDAD_CLEAN_CODE, Keys.CALIDAD_CODE_REVIEWS, Keys.PEOPLE_BURNOUT, Keys.PEOPLE_DIKW, Keys.CALIDAD_CODE_REVIEWS_IA)
         .addMoreReferences('https://www.udesa.edu.ar/noticias/deuda-cognitiva-el-reto-de-aprovechar-la-ia-sin-perder-el-pensamiento-critico')
+    ],
+    [Keys.CONOCIMIENTOS_EMPIRICOS_PROGRAMING_TACTIC_VS_STRATEGIC, new Referencia('https://newsletter.pragmaticengineer.com/p/the-philosophy-of-software-design', 'Programación Tactica vs Estrategica', CONOCIMIENTO_EMPIRICO_KEY, 'Tactica vs Estrategia', '2026/08/23')
+        .addRelatedItems(Keys.REFACTORING_DEUDA_TECNICA, Keys.ESTRATEGIAS_DESARROLLO_BOTTOM_UP_AND_TOP_DOWN, Keys.ARQUITECTURAS_IMPL_DESCOMPOSICION_MODULAR, Keys.ESTRATEGIAS_DESARROLLO_TDD, Keys.METODOLOGIAS_AGILES, Keys.META_ESTRUCTURAS_SISTEMAS_COMPLEJOS, Keys.CALIDAD_CODE_ROT, Keys.REFACTORING_DEUDA_TECNICA_TYPES)
+        .addMoreReferences('https://dev.to/menilek/til-today-i-learned-tactical-vs-strategic-programming-14ae')
     ]
 ]);
 
@@ -665,7 +672,10 @@ export const ESTRATEGIAS_DESARROLLO_REF = new Map<string, Referencia>([
     [Keys.ESTRATEGIAS_DESARROLLO_BDD, new Referencia('https://www.itdo.com/blog/que-es-bdd-behavior-driven-development/', 'Desarrollo Dirigido por Comportamiento', ESTRATEGIAS_DESARROLLO_KEY, 'BDD', '', '2025/02/02')
         .addRelatedItems(Keys.USER_HISTORIES_FORMATS)
     ],
-    [Keys.ESTRATEGIAS_DESARROLLO_TDD, new Referencia('https://www.paradigmadigital.com/dev/tdd-como-metodologia-de-diseno-de-software/', 'Desarrollo Dirigido por Tests', ESTRATEGIAS_DESARROLLO_KEY, 'TDD')],
+    [Keys.ESTRATEGIAS_DESARROLLO_TDD, new Referencia('https://www.paradigmadigital.com/dev/tdd-como-metodologia-de-diseno-de-software/', 'Desarrollo Dirigido por Tests', ESTRATEGIAS_DESARROLLO_KEY, 'TDD', '', '2026/08/23')
+        .addRelatedItems(Keys.REFACTORING_HOW, Keys.TESTING_COBERTURA)
+        .addMoreReferences('https://softwarecrafters.io/javascript/tdd-test-driven-development')
+    ],
     [Keys.ESTRATEGIAS_DESARROLLO_ATDD, new Referencia('https://www.javiergarzas.com/2015/07/que-es-eso-de-atdd.html', 'Desarrollo por pruebas de aceptación', ESTRATEGIAS_DESARROLLO_KEY, 'ATDD', '', '2026/03/18')],
     [Keys.ESTRATEGIAS_DESARROLLO_BOTTOM_UP_AND_TOP_DOWN, new Referencia('https://asana.com/es/resources/top-down-approach', 'Bottom Up & Top Down', ESTRATEGIAS_DESARROLLO_KEY, 'Enfoques Up & Down', '', '2025/02/02')],
     [Keys.ESTRATEGIAS_DESARROLLO_TLD_TDD, new Referencia('https://medium.com/swlh/tdd-vs-tld-and-what-is-the-minimum-code-coverage-needed-f380181d3400', 'Tests al final del desarrollo', ESTRATEGIAS_DESARROLLO_KEY, 'TLD vs TDD', '', '2025/02/02')],
@@ -1027,7 +1037,7 @@ export const APIS_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.BUENAS_PRACTICAS_EXCEPTIONS, Keys.META_ESTRUCTURAS_DEPRECATION)
         .addMoreReferences('https://swagger.io/blog/problem-details-rfc9457-doing-api-errors-well/')
     ],
-    [Keys.APIS_WEB_HOOK_VS_SOCKET_VS_SSE, new Referencia('https://cristiansuarez.dev/arquitectura/sse-vs-webhooks-vs-websockets/', 'Websocket Vs Webhook Vs SSE', APIS_KEY, 'SSE, Websocket, Webhook', '2026/01/10')
+    [Keys.APIS_WEB_HOOK_VS_SOCKET_VS_SSE, new Referencia('https://cristiansuarez.dev/arquitectura/sse-vs-webhooks-vs-websockets/', 'Websocket vs Webhook vs SSE', APIS_KEY, 'SSE, Websocket, Webhook', '2026/01/10')
         .addRelatedItems(Keys.MICROSERVICES_EVENTS_VS_REQUEST_RESPONSE)
     ]
 ]);

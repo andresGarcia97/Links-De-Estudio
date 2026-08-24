@@ -260,6 +260,7 @@ export const CONOCIMIENTOS_EMPIRICOS_MODEL_T = 'model-T';
 export const CONOCIMIENTOS_EMPIRICOS_JEVONS = 'Jevons-paradox';
 export const CONOCIMIENTOS_EMPIRICOS_BREAKING_PRODUCTION_LESSONS = 'breaking-production-lessons';
 export const CONOCIMIENTOS_EMPIRICOS_DEUDA_COGNITIVA = 'deudaCognitiva';
+export const CONOCIMIENTOS_EMPIRICOS_PROGRAMING_TACTIC_VS_STRATEGIC = 'tactical-vs-strategic-programming';
 export const CONOCIMIENTOS_PSICOLOGICOS_STATUS_QUO = 'statusQuo';
 export const CONOCIMIENTOS_PSICOLOGICOS_COSTO_HUNDIDO = 'costoHundido';
 export const CONOCIMIENTOS_PSICOLOGICOS_SESGOS_COGNITIVOS = 'sesgosCognitivos';
