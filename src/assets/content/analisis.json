@@ -12,12 +12,6 @@
     "- Se usan para sistemas en tiempo real mas que todo, ya que estos son sumamente dependientes de su ambiente ",
     "- Para sistemas grandes se recomienda usar diferentes niveles de estados de mayor a menor complejidad "
   ],
-  "analisisDominio": [
-    "- Estudio de los dominios de conocimientos de las sociedades ",
-    "- De esta manera el enfoque socio-cognitivo no es el unico usado para la toma de información ",
-    "- Tambien se ha de tener en cuenta el contexto presente y lo que motiva sus acciones ",
-    "- Esto tambien da un conocimiento más profundo del entorno, y una mayor calidad de la información recolectada "
-  ],
   "diseño": [
     "- Un buen analisis desemboca en un buen Diseño (generalmente) ",
     "- Esta etapa es fundamental para llegar a una solución optima que cumpla los requisitos Funcionales y NO Funcionales ",
@@ -32,14 +26,18 @@
   ],
   "modeloDominio": [
     "<strong>Dominio:</strong> Es el problema que quieres resolver, reglas de negocio, procesos, subtareas, etc...",
-    "- Para dominios complejos y altamente conectados, probablemente se deba dividir en subdominios acotados y claramente definidos ",
+    "- Para dominios complejos y altamente conectados, probablemente se deba dividir en subdominios claramente delimitados y definidos ",
     "",
     "<strong>Modelo:</strong> Es la abstracción de la realidad, en el contexto determinado, para darle solución al problema en cuestión ",
-    "- Tambien suele estar acompañado de alguna descripción o imagenes que especifiquen alguna función, estructura o comportamiento ",
+    "- También suele estar acompañado de alguna descripción o imágenes que especifiquen alguna función, estructura o comportamiento ",
     "",
     "<strong>Modelo de Dominio:</strong> Organización y estructura de todo el conocimiento acerca del problema, sus partes, actores, relaciones, alcance, etc...",
-    "- Se debe colocar en el foco la lógica de negocio, que sera el nucleo(core)",
-    "- Es de construcción grupal y colaborativa, teniendo en cuenta partes tecnicas y expertas del negocio"
+    "- El foco debe estar en la lógica de negocio, que será el núcleo (core) ",
+    "- Es de construcción grupal y colaborativa, teniendo en cuenta partes tecnicas y expertas del negocio ",
+    "&bull; <strong>Entidades:</strong> Es todo lo que puede existir, ser unico e identificable que pertenezca a un dominio ",
+    "&bull; <strong>Asociaciones:</strong> Acciones, caracteristicas, relaciones y comportamientos que pueden tener las entidades, como unidades o interactuando con otras partes ",
+    "",
+    "<strong>Aspecto social:</strong> Conocer el aspecto socio-cognitivo es importante para conocer el contexto y el entorno en que las acciones se desarrollan "
   ],
   "timeComplexityBigO": [
     "- Un algoritmo es una secuencia lógica de pasos, para resolver un problema especifico ",

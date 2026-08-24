@@ -115,10 +115,10 @@ export const ANALISIS_REF = new Map<string, Referencia>([
     [Keys.ANALISIS_COMPORTAMIENTO, new Referencia('https://es.wikipedia.org/wiki/Modelo_de_comportamiento_(inform%C3%A1tica)', 'Comportamiento del sistema', ANALISIS_KEY, 'Comportamiento', '', '2025/03/29')
         .addRelatedItems(Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS, Keys.ESTRATEGIAS_DESARROLLO_BDD)
     ],
-    [Keys.ANALISIS_ANALISIS_DOMAIN, new Referencia('https://www.redalyc.org/jatsRepo/4768/476862530003/html/index.html', 'Analisis de Dominio', ANALISIS_KEY, 'Analisis de Dominio')],
     [Keys.ANALISIS_DISENO, new Referencia('https://www.bravent.net/la-importancia-de-un-buen-diseno-del-software/', 'Ventajas de un buen diseño', ANALISIS_KEY, 'Un buen diseño')],
-    [Keys.ANALISIS_MODEL_DOMAIN, new Referencia('https://es.stackoverflow.com/questions/102490/que-es-el-modelo-de-dominio-en-dise%C3%B1o-de-software', 'Modelo de Dominio', ANALISIS_KEY, 'Modelo de dominio', '', '2024/12/22')
-        .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_DDD)
+    [Keys.ANALISIS_MODEL_DOMAIN, new Referencia('https://es.stackoverflow.com/questions/102490/que-es-el-modelo-de-dominio-en-dise%C3%B1o-de-software', 'Modelo de Dominio', ANALISIS_KEY, 'Modelo de dominio', '', '2026/08/23')
+        .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.POO_COMPOSICION, Keys.POO_POO)
+        .addMoreReferences('https://www.redalyc.org/jatsRepo/4768/476862530003/html/index.html', 'https://www.thoughtworks.com/es-es/insights/blog/agile-project-management/domain-modeling-what-you-need-to-know-before-coding')
     ],
     [Keys.ANALISIS_TIME_COMPLEXITY, new Referencia('https://www.freecodecamp.org/news/big-o-cheat-sheet-time-complexity-chart/', 'Big O Notación', ANALISIS_KEY, 'Big O Notación', '2022/12/30', '2025/03/29')
         .addRelatedItems(Keys.BUENAS_PRACTICAS_COMPLEJIDAD_ALGORITMICA, Keys.BUENAS_PRACTICAS_COMPLEJIDAD_COGNITIVA)
