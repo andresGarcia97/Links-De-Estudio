@@ -44,6 +44,16 @@ export class GlosarioComponent implements OnInit {
   searchOnContent: Map<string, Referencia> = new Map<string, Referencia>();
 
   ngOnInit(): void {
+
+    this.loadTemasInBackground();
+
+    setTimeout(() => {
+      this.inputSearch?.nativeElement?.focus();
+    }, 350);
+    
+  }
+
+  private showTotalItems (): void {
     console.info("%c Temas: " + this.joinAllTemas.length, "color:#000; font-size: 16px;background:#FFBA08; font-weight: bold;");
     console.info("%c Temas practicos: " + this.fuentes.size, "color:white; font-size: 16px;background:#1976d2; font-weight: bold;");
 
@@ -61,12 +71,6 @@ export class GlosarioComponent implements OnInit {
     const years = ['2026', '2025', '2024', '2023', '2022', '2021'];
     const stats = years.map(year => getYearlyStats(componentsWithDate, year));
     console.table(stats);
-
-    this.loadTemasInBackground();
-
-    setTimeout(() => {
-      this.inputSearch?.nativeElement?.focus();
-    }, 350);
   }
 
   private loadTemasInBackground(): void {
@@ -80,6 +84,7 @@ export class GlosarioComponent implements OnInit {
       next: (items: Item[]) => {
         this.joinAllTemas = items;
         this.isLoadingTemas = false;
+        this.showTotalItems();
 
         if (this.search.trim()) {
           this.searchInsideContent();
