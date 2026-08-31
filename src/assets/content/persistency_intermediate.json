@@ -282,19 +282,18 @@
         "- El rendimiento en consultas complejas decrece debido a la generación de SQL ineficiente por parte del ORM ",
         "- Las jerarquías de herencia en POO son difíciles de representar en un modelo relacional (impedance mismatch) "
     ],
-    "n+1selects": [
-        "- Es un problema cuando se manejan ORM, dado una colección o una relación entre objetos, que a su vez pueden tener otras colecciones/objetos como atributos ",
-        " - generando una consulta individual por cada objeto al momento de acceder a su relación ",
-        "- Para obtener un objeto completo, hay que tener todos los objetos asociados a este, de manera individual, uno por uno, de ahi se desprende la descripción ",
-        " - una consulta principal, a la cual le preceden N consultas para la información relacionada ",
-        "- Actualmente la mayoria de ORM usan o proveen estrategias para evitar este comportamiento ",
-        "- El impacto en rendimiento escala con el volumen de datos; se vuelve crítico en entidades con relaciones que contienen grandes colecciones de registros ",
+    "n+1": [
+        "- Es un problema cuando se maneja un ORM, dado una colección o una relación entre objetos, que a su vez pueden tener otras colecciones/objetos como atributos ",
+        " - generando una consulta individual por cada objeto al momento de acceder a su relación; 1 consulta inicial + N consultas adicionales ",
+        "- Para obtener un objeto completo, hay que obtener todos los objetos asociados a este, de manera individual, uno por uno, de ahi se desprende la descripción ",
+        "- Actualmente la mayoria de ORM usan o proveen estrategias para evitar este comportamiento, de N consultas para la información relacionada ",
+        "- El impacto en rendimiento escala con el volumen de datos; se vuelve crítico en entidades con grandes colecciones de registros o muchas relaciones ",
         "",
-        "<strong>Como solventarlo:</strong> ",
-        "&bull; En Java y JPA se puede usar <em>@EntityGraph</em> que nos permite definir cuáles son las entidades y relaciones que queremos cargar en nuestras consultas ",
+        "<strong>Cómo solventarlo:</strong> ",
+        "&bull; En JPA se puede usar <em>@EntityGraph</em> que nos permite definir cuáles son las entidades y relaciones que queremos cargar en nuestras consultas ",
         "&bull; Si no es viable modificar la consulta principal, se puede configurar batch fetching para agrupar las consultas y reducir el número de roundtrip ",
         "&bull; Consultas personalizadas y/o Proyecciones, generalmente se usan Joins para estructurar los datos justo como se necesitan en una sola consulta ",
-        "&bull; Revisar logs y estadísticas del ORM para identificar consultas redundantes, complementado con los planes de ejecución de la DB y medir el impacto real "
+        "&bull; Revisar logs y estadísticas del ORM para identificar consultas redundantes, complementando con los planes de ejecución de la DB y medir el impacto real "
     ],
     "database-objects": [
         "- Son objetos especiales en las Bases de datos para guardar, referenciar y manipular datos ",

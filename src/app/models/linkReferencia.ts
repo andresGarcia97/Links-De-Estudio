@@ -1671,7 +1671,7 @@ export const PERSISTENCY_INTERMEDIATE_REF = new Map<string, Referencia>([
     [Keys.PERSISTENCY_INTERMEDIATE_ORM, new Referencia('https://aws.amazon.com/es/what-is/object-relational-mapping/', 'Mapeo Objeto-Relacional (ORM)', PERSISTENCY_INTERMEDIATE_KEY, 'ORM', '', '2026/05/23')
         .addRelatedItems(Keys.POO_POO)
     ],
-    [Keys.PERSISTENCY_INTERMEDIATE_N_1_SELECTS, new Referencia('https://stackoverflow.com/questions/97197/what-is-the-n1-selects-problem-in-orm-object-relational-mapping', 'N + 1 Problem', PERSISTENCY_INTERMEDIATE_KEY, 'N + 1 Selects', '', '2026/02/21')
+    [Keys.PERSISTENCY_INTERMEDIATE_N_1_SELECTS, new Referencia('https://stackoverflow.com/questions/97197/what-is-the-n1-selects-problem-in-orm-object-relational-mapping', 'N + 1 Problem', PERSISTENCY_INTERMEDIATE_KEY, 'N + 1', '', '2026/02/21')
         .addMoreReferences('https://medium.com/lets-code-future/i-reduced-our-api-response-time-from-3s-to-80ms-with-one-java-change-0f7938e28bb7')
     ],
     [Keys.PERSISTENCY_INTERMEDIATE_DATA_BASE_OBJECTS, new Referencia('https://www.geeksforgeeks.org/dbms/database-objects-in-dbms/', 'Database Objects', PERSISTENCY_INTERMEDIATE_KEY, 'Database Objects', '2025/06/24')
