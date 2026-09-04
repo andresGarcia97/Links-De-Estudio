@@ -686,6 +686,9 @@ export const ESTRATEGIAS_DESARROLLO_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL)
     ],
     [Keys.ESTRATEGIAS_DESARROLLO_SLDC, new Referencia('https://www.netguru.com/blog/stages-of-software-development', 'Ciclo de Vida del Desarrollo de Software', ESTRATEGIAS_DESARROLLO_KEY, 'SLDC', '2024/06/29')],
+    [Keys.ESTRATEGIAS_DESARROLLO_SLDC_IA, new Referencia('https://www.linkedin.com/posts/soymanuelzapata_langchain-google-y-anthropic-publicaron-share-7499566549909835776-bboE/', 'SLDC asistido por IA', ESTRATEGIAS_DESARROLLO_KEY, 'SLDC con IA', '2026/09/03')
+        .addMoreReferences('https://www.langchain.com/blog/the-agent-development-lifecycle', 'https://claude.com/blog/the-ai-native-sdlc-playbook')
+    ],
     [Keys.ESTRATEGIAS_DESARROLLO_BFF, new Referencia('https://levelup.gitconnected.com/backend-for-frontend-bff-architecture-64fa9f316a5a', 'Backend For Frontened', ESTRATEGIAS_DESARROLLO_KEY, 'BFF', '2024/10/27')
         .addRelatedItems(Keys.APIS_GATEWAY)
     ],
@@ -1008,7 +1011,7 @@ export const APIS_REF = new Map<string, Referencia>([
     [Keys.APIS_TESTING, new Referencia('https://blog.bytebytego.com/p/ep83-explaining-9-types-of-api-testing#%C2%A7explaining-types-of-api-testing', 'API Testing', APIS_KEY, 'Testing in APIs', '2023/11/13')],
     [Keys.APIS_IDEMPOTENCIA, new Referencia('https://restfulapi.net/idempotent-rest-apis/', 'APIs Idempotentes', APIS_KEY, 'APIs & Idempotencia', '2024/02/17', '2026/07/13')
         .addRelatedItems(Keys.MICROSERVICES_ADVANCED_IDEMPOTENCY_II)
-        .addMoreReferences('https://temporal.io/blog/idempotency-and-durable-execution')
+        .addMoreReferences('https://temporal.io/blog/idempotency-and-durable-execution', 'https://www.linkedin.com/feed/update/urn:li:share:7499412582848544768/')
     ],
     [Keys.APIS_REST_VS_MESSAGING, new Referencia('https://solace.com/blog/experience-awesomeness-event-driven-microservices/', 'REST VS Messaging & Microservicios', APIS_KEY, 'REST VS Messaging', '2024/03/15')],
     [Keys.APIS_API_GOVERNANCE, new Referencia('https://swagger.io/resources/articles/best-practices-in-api-governance/', 'Gobernanza', APIS_KEY, 'Gobernanza', '2024/06/01')],

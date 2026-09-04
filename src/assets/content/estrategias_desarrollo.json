@@ -175,6 +175,16 @@
     "",
     "Bien definido ayuda a gestionar los recursos y tener canales de comunicación fluidos, siempre deberia estar claro para todos los involucrados "
   ],
+  "SLDC-IA": [
+    "- El ciclo de vida de desarrollo del software ha cambiado mucho desde que la IA y los agentes son capaces de generar código ",
+    "- Tanto que se ha dicho que el SLDC actual debe ser repensado para contemplar la automatización y el aumento de la velocidad ",
+    "",
+    "<strong>Segun Lang Chain:</strong> Build -> Test -> Deploy -> Monitorear",
+    "- Asi como existen frameworks para acelerar el desarrollo de algun lenguaje, que reducen las iteraciones a lo minimo posible ",
+    "",
+    "<strong>AI Native SLDC-playbook:</strong> Revisar lo que genera el agente",
+    "- Desarrollar con malas practicas (vibe-coding) ó con buenas practicas se puede resumir en cuanto revisas del trabajo que ha hecho la IA "
+  ],
   "BFF": [
     "- A medida que las aplicaciones se vuelven cada vez más distribuidas han surgido patrones para satisfacer a la multitud de dispositivos conectados ",
     "- Esta arquitectura proporciona un backend dedicado para cada interfaz de frontened, en lugar de depender de un API monolitica o un <em>API Gateway</em> ",
