@@ -103,7 +103,7 @@ export const AGILES_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.POO_POO, Keys.USER_HISTORIES_USE_CASE_REQUISITOS, Keys.METODOLOGIAS_MODEL_XP, Keys.UML_CLASES)
     ],
     [Keys.AGILES_MVP_PROTOTYPE_POC, new Referencia('https://railsware.com/blog/mvp-prototype-poc/', 'MVP Vs Prototipo Vs POC', AGILES_KEY, 'MVP Vs Prototipo Vs POC', '2026/04/20')
-        .addRelatedItems(Keys.PRINCIPIOS_POC, Keys.ANALISIS_DATA_MVP, Keys.ESTRATEGIAS_DESARROLLO_SLDC, Keys.PEOPLE_PRODUCT_CHALLENGES)
+        .addRelatedItems(Keys.PRINCIPIOS_POC, Keys.ANALISIS_DATA_MVP, Keys.ESTRATEGIAS_DESARROLLO_SDLC, Keys.PEOPLE_PRODUCT_CHALLENGES)
     ],
     [Keys.AGILES_DEUDA_TECNICA, new Referencia('https://domix.codes/blog/deuda-tecnica-sprint-en-sprint/', 'Deuda tecnica en metodologias agiles', AGILES_KEY, 'Deuda tecnica', '2026/04/29')
         .addRelatedItems(Keys.REFACTORING_DEUDA_TECNICA_TYPES, Keys.REFACTORING_MANAGE_DEUDA_TECNICA, Keys.REQUISITOS_PRAGMATIC_ENGINEER, Keys.PATRONES_ANTI_PATRONES_PM)
@@ -132,7 +132,7 @@ export const ANALISIS_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.COMPILACION_GRAFOS, Keys.EJECUCION_BACKTRACKING)
     ],
     [Keys.ANALISIS_HIGH_LEVEL_VS_LOW_LEVEL, new Referencia('https://www.baeldung.com/cs/hld-lld', 'High Level Vs Low Level', ANALISIS_KEY, 'High Level Vs Low Level', '2024/09/20')
-        .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_SLDC, Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.PERSISTENCY_ERD)
+        .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_SDLC, Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.PERSISTENCY_ERD)
     ],
     [Keys.ANALISIS_TYPE_EVENTS, new Referencia('https://solace.com/blog/events-schemas-payloads/', 'Tipos de Eventos', ANALISIS_KEY, 'Tipos de Eventos', '2025/10/21')
         .addRelatedItems(Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION, Keys.VERSIONAMIENTO_EVOLUTION_SCHEMA_AND_SCHEMA_REGISTRY, Keys.MICROSERVICES_ADVANCED_PRODUCER_CONSUMER_PROBLEM, Keys.ARQUITECTURAS_IMPL_EVENT_DRIVEN, Keys.PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL, Keys.NUBE_PACELC, Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.ANALISIS_DATA_ETL_ELT)
@@ -345,7 +345,7 @@ export const BUENAS_PRACTICAS_REF = new Map<string, Referencia>([
     [Keys.BUENAS_PRACTICAS_COMPLEJIDAD_ALGORITMICA, new Referencia('https://medium.com/@joseguillermo_/qu%C3%A9-es-la-complejidad-algor%C3%ADtmica-y-con-qu%C3%A9-se-come-2638e7fd9e8c', 'Complejidad Algoritmica', BUENAS_PRACTICAS_KEY, 'Complejidad Algoritmica')],
     [Keys.BUENAS_PRACTICAS_NAMING_CONVENTION, new Referencia('https://www.pluralsight.com/resources/blog/software-development/programming-naming-conventions-explained', 'Convenciones de nombramiento', BUENAS_PRACTICAS_KEY, 'Nombramiento/Nomeclatura', '', '2025/04/05')],
     [Keys.BUENAS_PRACTICAS_STATIC_CODE_ANALYSIS, new Referencia('https://www.checkpoint.com/es/cyber-hub/cloud-security/what-is-static-code-analysis/', 'Analisis de código estatico', BUENAS_PRACTICAS_KEY, 'Analisis de código I', '2023/12/17', '2025/10/11')
-        .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_SLDC, Keys.SMELL_CODES_SMELLS_CODES, Keys.SECURITY_CVE)
+        .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_SDLC, Keys.SMELL_CODES_SMELLS_CODES, Keys.SECURITY_CVE)
         .addMoreReferences('https://www.welivesecurity.com/la-es/2021/01/18/analisis-estatico-codigo-fuente-orientado-a-seguridad/')
     ],
     [Keys.BUENAS_PRACTICAS_DYNAMIC_CODE_ANALYSIS, new Referencia('https://www.checkpoint.com/es/cyber-hub/cloud-security/what-is-dynamic-code-analysis/', 'Analisis de código dinamico', BUENAS_PRACTICAS_KEY, 'Analisis de código II', '2025/10/11')
@@ -421,7 +421,7 @@ export const CALIDAD_REF = new Map<string, Referencia>([
         .addMoreReferences('https://helpware.com/blog/tech/iso-25010-enhancing-our-software-quality-management-process')
     ],
     [Keys.CALIDAD_ESTABILIDAD, new Referencia('https://velneo.com/blog/estabilidad-en-el-software/', 'Estabilidad en el software', CALIDAD_KEY, 'Estabilidad en el software', '2026/07/25')
-        .addRelatedItems(Keys.REFACTORING_MANAGE_DEUDA_TECNICA, Keys.SECURITY_CIA, Keys.REQUISITOS_TRADE_OFF, Keys.TESTING_ADVANCED_DEFECT_RATE, Keys.CONOCIMIENTOS_EMPIRICOS_CODE_MAINTAINER, Keys.ESTRATEGIAS_DESARROLLO_SLDC, Keys.CD_CI_CI_CD, Keys.HARDWARE_DEGRADATION)
+        .addRelatedItems(Keys.REFACTORING_MANAGE_DEUDA_TECNICA, Keys.SECURITY_CIA, Keys.REQUISITOS_TRADE_OFF, Keys.TESTING_ADVANCED_DEFECT_RATE, Keys.CONOCIMIENTOS_EMPIRICOS_CODE_MAINTAINER, Keys.ESTRATEGIAS_DESARROLLO_SDLC, Keys.CD_CI_CI_CD, Keys.HARDWARE_DEGRADATION)
         .addMoreReferences('https://www.inesem.es/revistadigital/gestion-empresarial/eres-eficaz-eficiente-o-efectivo')
     ]
 ]);
@@ -685,9 +685,9 @@ export const ESTRATEGIAS_DESARROLLO_REF = new Map<string, Referencia>([
     [Keys.ESTRATEGIAS_DESARROLLO_SCREAMING_DESIGN, new Referencia('https://medium.com/@mubashirhussain29/the-screaming-architecture-story-08750691291f', 'Diseño a gritos', ESTRATEGIAS_DESARROLLO_KEY, 'Gritos', '2024/05/25')
         .addRelatedItems(Keys.META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL)
     ],
-    [Keys.ESTRATEGIAS_DESARROLLO_SLDC, new Referencia('https://www.netguru.com/blog/stages-of-software-development', 'Ciclo de Vida del Desarrollo de Software', ESTRATEGIAS_DESARROLLO_KEY, 'SLDC', '2024/06/29')],
-    [Keys.ESTRATEGIAS_DESARROLLO_SLDC_IA, new Referencia('https://www.linkedin.com/posts/soymanuelzapata_langchain-google-y-anthropic-publicaron-share-7499566549909835776-bboE/', 'SLDC asistido por IA', ESTRATEGIAS_DESARROLLO_KEY, 'SLDC con IA', '2026/09/03')
-        .addMoreReferences('https://www.langchain.com/blog/the-agent-development-lifecycle', 'https://claude.com/blog/the-ai-native-sdlc-playbook')
+    [Keys.ESTRATEGIAS_DESARROLLO_SDLC, new Referencia('https://www.netguru.com/blog/stages-of-software-development', 'Ciclo de Vida del Desarrollo de Software', ESTRATEGIAS_DESARROLLO_KEY, 'SDLC', '2024/06/29')],
+    [Keys.ESTRATEGIAS_DESARROLLO_SDLC_IA, new Referencia('https://www.linkedin.com/posts/soymanuelzapata_langchain-google-y-anthropic-publicaron-share-7499566549909835776-bboE/', 'SDLC asistido por IA', ESTRATEGIAS_DESARROLLO_KEY, 'SDLC con IA', '2026/09/03')
+        .addMoreReferences('https://www.langchain.com/blog/the-agent-development-lifecycle', 'https://claude.com/blog/the-ai-native-sdlc-playbook', 'https://www.kaggle.com/whitepaper-the-new-SDLC-with-vibe-coding', 'https://resources.rework.com/es/libraries/ai-terms/human-in-the-loop')
     ],
     [Keys.ESTRATEGIAS_DESARROLLO_BFF, new Referencia('https://levelup.gitconnected.com/backend-for-frontend-bff-architecture-64fa9f316a5a', 'Backend For Frontened', ESTRATEGIAS_DESARROLLO_KEY, 'BFF', '2024/10/27')
         .addRelatedItems(Keys.APIS_GATEWAY)
@@ -704,7 +704,7 @@ export const FRAMEWORKS_KEY = 'Frameworks';
 export const FRAMEWORKS_REF = new Map<string, Referencia>([
     [Keys.FRAMEWORKS_FRAMEWORKS, new Referencia('https://aws.amazon.com/es/what-is/framework/', '¿ Que es un framework ?', FRAMEWORKS_KEY, '¿ Que es un framework ?', '', '2026/07/04')],
     [Keys.FRAMEWORKS_CASE, new Referencia('https://www.geeksforgeeks.org/software-engineering/software-engineering-case-tool-and-its-scope/', 'Herramientas CASE', FRAMEWORKS_KEY, 'Herramientas CASE', '2025/08/02', '2026/07/04')
-        .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_SLDC)
+        .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_SDLC)
     ],
     [Keys.FRAMEWORKS_IOC, new Referencia('https://medium.com/all-you-need-is-clean-code/inversi%C3%B3n-de-control-principio-de-hollywood-dont-call-us-we-ll-call-you-179e9c70e3d0', 'Inversión de Control', FRAMEWORKS_KEY, 'Inversión de Control', '', '2026/07/18')
         .addRelatedItems(Keys.PRINCIPIOS_HOLLYWOOD, Keys.PRINCIPIOS_DIP, Keys.PATRONES_DESGLOSE_GOF)
@@ -942,8 +942,8 @@ export const METODOLOGIAS_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.AGILES_5S, Keys.AGILES_MUDA, Keys.AGILES_MUDA_SOFTWARE)
     ],
     [Keys.METODOLOGIAS_SPEC_DRIVEN_DEVELOPMENT, new Referencia('https://www.augmentcode.com/guides/what-is-spec-driven-development', 'Spec-Driven Development', METODOLOGIAS_KEY, 'SDD', '2026/05/14')
-        .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_TDD, Keys.ESTRATEGIAS_DESARROLLO_BDD, Keys.TESTING_AAA_GWT, Keys.TESTING_TRIANGULO)
-        .addMoreReferences('https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html')
+        .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_TDD, Keys.ESTRATEGIAS_DESARROLLO_BDD, Keys.TESTING_AAA_GWT, Keys.TESTING_TRIANGULO, Keys.METODOLOGIAS_CASCADA)
+        .addMoreReferences('https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html', 'https://medium.com/@iamalvisng/spec-driven-development-is-waterfall-in-markdown-e2921554a600')
     ]
 ]);
 
@@ -978,7 +978,7 @@ export const NUBE_REF = new Map<string, Referencia>([
         .addMoreReferences('https://medium.com/javarevisited/pacelc-the-missing-piece-beyond-cap-8e086a53abda')
     ],
     [Keys.NUBE_NATIVE, new Referencia('https://www.oracle.com/cloud/cloud-native/what-is-cloud-native/', 'Evolución de la Nube', NUBE_KEY, 'Cloud Native', '2025/02/09')
-        .addRelatedItems(Keys.ARQUITECTURAS_IMPL_MONOLITOS, Keys.ESTRATEGIAS_DESARROLLO_SLDC, Keys.MICROSERVICES_ANALISIS)
+        .addRelatedItems(Keys.ARQUITECTURAS_IMPL_MONOLITOS, Keys.ESTRATEGIAS_DESARROLLO_SDLC, Keys.MICROSERVICES_ANALISIS)
         .addMoreReferences('https://bytebytego.com/guides/what-is-cloud-native/')
     ],
     [Keys.NUBE_CDN_RTT, new Referencia('https://www.cloudflare.com/es-es/learning/cdn/what-is-a-cdn/', 'CDN & RTT', NUBE_KEY, 'CDN & RTT', '2026/03/10')
@@ -986,7 +986,7 @@ export const NUBE_REF = new Map<string, Referencia>([
         .addMoreReferences('https://www.cloudflare.com/es-es/learning/cdn/glossary/round-trip-time-rtt/')
     ],
     [Keys.NUBE_PROVISIONING, new Referencia('https://spacelift.io/blog/cloud-provisioning', 'Provisionamiento', NUBE_KEY, 'Provisionamiento', '2026/03/24')
-        .addRelatedItems(Keys.SECURITY_ZERO_TRUST, Keys.CONTENEDORES_CONTAINERS, Keys.CD_CI_DEV_OPS, Keys.CD_CI_IAS_CODE, Keys.ESTRATEGIAS_DESARROLLO_SLDC, Keys.CD_CI_CI_CD, Keys.CD_CI_DEPLOYMENT_PIPELINES)
+        .addRelatedItems(Keys.SECURITY_ZERO_TRUST, Keys.CONTENEDORES_CONTAINERS, Keys.CD_CI_DEV_OPS, Keys.CD_CI_IAS_CODE, Keys.ESTRATEGIAS_DESARROLLO_SDLC, Keys.CD_CI_CI_CD, Keys.CD_CI_DEPLOYMENT_PIPELINES)
     ]
 ]);
 
@@ -1313,10 +1313,10 @@ export const POO_REF = new Map<string, Referencia>([
 export const TESTING_KEY = 'Testing';
 export const TESTING_REF = new Map<string, Referencia>([
     [Keys.TESTING_PRINCIPLES, new Referencia('https://www.hiberus.com/crecemos-contigo/siete-principios-que-deben-guiar-el-testing-de-software-segun-istqb/', 'Principios de testing (ISTQB)', TESTING_KEY, 'Principios de testing', '', '2025/04/05')
-        .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_SLDC, Keys.CALIDAD_ANALYST_QA)
+        .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_SDLC, Keys.CALIDAD_ANALYST_QA)
     ],
     [Keys.TESTING_MANIFIESTO, new Referencia('https://www.adictosaltrabajo.com/2019/12/18/testing-en-un-mundo-agile/', 'Testing manifiesto', TESTING_KEY, 'Testing manifiesto', '', '2025/08/19')
-        .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_SLDC)
+        .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_SDLC)
     ],
     [Keys.TESTING_TYPES, new Referencia('https://www.certus.edu.pe/blog/pruebas-de-software-importancia/', 'Tipos de pruebas', TESTING_KEY, 'Tipos', '', '2024/07/11')],
     [Keys.TESTING_BENEFICIOS, new Referencia('https://platzi.com/blog/testing-ventajas-formas-de-realizar-pruebas/', 'Beneficios del testing', TESTING_KEY, 'Beneficios')],
@@ -1399,14 +1399,14 @@ export const TESTING_ADVANCED_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.META_ESTRUCTURAS_VERTICAL_AND_HORIZONTAL, Keys.ARQUITECTURAS_IMPORTANT_CONCEPTS, Keys.ARQUITECTURAS_IMPL_MVC, Keys.ESTRATEGIAS_DESARROLLO_DDD)
     ],
     [Keys.TESTING_ADVANCED_ENVIRONMENT, new Referencia('https://www.abtasty.com/blog/test-environment/', 'Pruebas por Environment (ambiente)', TESTING_ADVANCED_KEY, 'Entornos', '2025/05/04')
-        .addRelatedItems(Keys.CD_CI_DEPLOYMENT_PIPELINES, Keys.CALIDAD_ANALYST_QA, Keys.ESTRATEGIAS_DESARROLLO_SLDC, Keys.GIT_BRANCHS_STRATEGIES, Keys.CD_CI_DEPLOYMENT_PATTERNS, Keys.EJECUCION_FEATURE_FLAGS)
+        .addRelatedItems(Keys.CD_CI_DEPLOYMENT_PIPELINES, Keys.CALIDAD_ANALYST_QA, Keys.ESTRATEGIAS_DESARROLLO_SDLC, Keys.GIT_BRANCHS_STRATEGIES, Keys.CD_CI_DEPLOYMENT_PATTERNS, Keys.EJECUCION_FEATURE_FLAGS)
     ],
     [Keys.TESTING_ADVANCED_PERFORMANCE, new Referencia('https://es.abstracta.us/blog/metricas-pruebas-performance-software/', 'Metricas & Performance', TESTING_ADVANCED_KEY, 'Metricas & Performance', '2025/07/07')],
     [Keys.TESTING_ADVANCED_SHIFT_LEFT_SHIFT_RIGHT, new Referencia('https://es.abstracta.us/blog/shift-left-right-testing-software-enfoques/', 'Shift-Left & Shift-Right Testing', TESTING_ADVANCED_KEY, 'Shift-Left & Shift-Right', '2025/09/14')
         .addRelatedItems(Keys.METODOLOGIAS_CASCADA, Keys.METODOLOGIAS_AGILES, Keys.ESTRATEGIAS_DESARROLLO_TDD, Keys.ESTRATEGIAS_DESARROLLO_BDD, Keys.CD_CI_CI_CD, Keys.REQUISITOS_NO_FUNCIONALES, Keys.CD_CI_DEV_OPS, Keys.CD_CI_DEPLOYMENT_PATTERNS)
     ],
     [Keys.TESTING_ADVANCED_DEFECT_RATE, new Referencia('https://axify.io/blog/defect-rate', 'Tasa de defectos', TESTING_ADVANCED_KEY, 'Defect Rate', '2026/02/22')
-        .addRelatedItems(Keys.META_ESTRUCTURAS_SISTEMAS_COMPLEJOS, Keys.CALIDAD_CODE_REVIEWS, Keys.BUENAS_PRACTICAS_STATIC_CODE_ANALYSIS, Keys.PEOPLE_CUSTOMER_LOYALTY, Keys.WEB_USER_INTERFACE, Keys.WEB_USER_XPERIENCE, Keys.ESTRATEGIAS_DESARROLLO_SLDC, Keys.CALIDAD_CODE_REVIEWS, Keys.CALIDAD_DORA_SPACE_METRICS, Keys.REFACTORING_DEUDA_TECNICA_TYPES)
+        .addRelatedItems(Keys.META_ESTRUCTURAS_SISTEMAS_COMPLEJOS, Keys.CALIDAD_CODE_REVIEWS, Keys.BUENAS_PRACTICAS_STATIC_CODE_ANALYSIS, Keys.PEOPLE_CUSTOMER_LOYALTY, Keys.WEB_USER_INTERFACE, Keys.WEB_USER_XPERIENCE, Keys.ESTRATEGIAS_DESARROLLO_SDLC, Keys.CALIDAD_CODE_REVIEWS, Keys.CALIDAD_DORA_SPACE_METRICS, Keys.REFACTORING_DEUDA_TECNICA_TYPES)
     ],
     [Keys.TESTING_ADVANCED_HEISENBERG_BUG, new Referencia('https://medium.com/@vndpal/the-heisenberg-bug-how-to-debug-bugs-that-disappear-9c41affc9500', 'Heisenberg Bug', TESTING_ADVANCED_KEY, 'Heisenberg Bug', '2026/04/19')
         .addRelatedItems(Keys.CD_CI_DEPLOYMENT_PATTERNS, Keys.SECURITY_ATTACK_CONDICION_CARRERA, Keys.APIS_LATENCY_THROUGHPUT_BANDWITH)
@@ -1479,7 +1479,7 @@ export const REQUISITOS_REF = new Map<string, Referencia>([
     [Keys.REQUISITOS_OBJETIVOS, new Referencia('https://www.pqforce.com/es/blog/objetivos-frente-a-requisitos-cual-es-la-diferencia/', 'Objetivos & Requisitos', REQUISITOS_KEY, 'Objetivos & Requisitos')],
     [Keys.REQUISITOS_REQUIREMENTS_CHANGE, new Referencia('https://www.javiergarzas.com/2021/04/en-un-sistema-software-los-requisitos-casi-siempre-van-a-cambiar.html', 'Los requisitos cambian', REQUISITOS_KEY, 'Cambios', '2024/03/10')],
     [Keys.REQUISITOS_REQUIREMENTS_ENGINEERING, new Referencia('https://xebrio.com/requirements-engineering/', 'Ingenieria y Toma de Requisitos', REQUISITOS_KEY, '¿ Como Tomarlos ?', '2024/09/27')
-        .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_SLDC)
+        .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_SDLC)
     ],
     [Keys.REQUISITOS_KPI_OKR, new Referencia('https://asana.com/es/resources/okr-vs-kpi', 'KPI & OKR', REQUISITOS_KEY, 'KPI & OKR', '2022/12/30', '2025/01/18')
         .addRelatedItems(Keys.AGILES_DEMING, Keys.CALIDAD_METRICS_SOFTWARE)
@@ -1488,7 +1488,7 @@ export const REQUISITOS_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.PRINCIPIOS_KISS, Keys.PRINCIPIOS_OCCAM, Keys.PRINCIPIOS_YAGNI, Keys.CONOCIMIENTOS_EMPIRICOS_LESSONS_AND_LEADER_TECHNICAL, Keys.AGILES_PRIORITIZATION, Keys.MALAS_PRACTICAS_OVER_ENGINEERING, Keys.CONOCIMIENTOS_EMPIRICOS_CODE_MAINTAINER, Keys.ARQUITECTURAS_MISTAKES_II, Keys.PEOPLE_PEOPLE_PROCESS_TECNOLOGY)
     ],
     [Keys.REQUISITOS_BRD_PRD_SDD_TDD, new Referencia('https://medium.com/@habibullah.diu/understanding-brd-prd-sdd-tsd-the-blueprint-of-modern-software-engineering-689aac9acc0b', 'BRD, PRD, SDD, TSD', REQUISITOS_KEY, 'BRD, PRD, SDD, TSD', '2026/07/20')
-        .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_SLDC, Keys.VERSIONAMIENTO_DOCUMENT_ARQUITECTURE, Keys.LEYES_LEHMAN, Keys.CALIDAD_ANALYST_QA, Keys.CD_CI_DEV_OPS, Keys.ANALISIS_HIGH_LEVEL_VS_LOW_LEVEL, Keys.PEOPLE_PRODUCT_CHALLENGES, Keys.ESTRATEGIAS_DESARROLLO_BOTTOM_UP_AND_TOP_DOWN)
+        .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_SDLC, Keys.VERSIONAMIENTO_DOCUMENT_ARQUITECTURE, Keys.LEYES_LEHMAN, Keys.CALIDAD_ANALYST_QA, Keys.CD_CI_DEV_OPS, Keys.ANALISIS_HIGH_LEVEL_VS_LOW_LEVEL, Keys.PEOPLE_PRODUCT_CHALLENGES, Keys.ESTRATEGIAS_DESARROLLO_BOTTOM_UP_AND_TOP_DOWN)
         .addMoreReferences('https://asana.com/es/resources/business-requirements-document-template', 'https://www.atlassian.com/es/agile/product-management/requirements', 'https://www.atlassian.com/work-management/knowledge-sharing/documentation/software-design-document', 'https://refact.co/insights/digital-product/technical-specification-document')
     ]
 ]);
@@ -2091,7 +2091,7 @@ export const OBSERVABILIDAD_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.HARDWARE_IO_BOUND_CPU_BOUND, Keys.BUENAS_PRACTICAS_LOGGING, Keys.CD_CI_MONITORING_AND_ALERTS)
     ],
     [Keys.OBSERVABILIDAD_SRE, new Referencia('https://aws.amazon.com/es/what-is/sre/', 'Ingenieria de Fiabilidad del Sitio', OBSERVABILIDAD_KEY, 'SRE', '2025/03/15')
-        .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_SLDC, Keys.CD_CI_DEV_OPS)
+        .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_SDLC, Keys.CD_CI_DEV_OPS)
         .addMoreReferences('https://sre.google/books/')
     ],
     [Keys.OBSERVABILIDAD_TIME_SERIES, new Referencia('https://www.honeycomb.io/blog/time-series-database', 'Time Series', OBSERVABILIDAD_KEY, 'Time Series', '2026/07/17')

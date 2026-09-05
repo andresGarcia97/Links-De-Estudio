@@ -145,7 +145,7 @@
     "- Tambien permite flexibilidad en cuanto al cambio de tecnologias, herramientas, y marcos de trabajo ",
     "- Realizar pruebas, sin necesidad de depender de marcos, BD o otras complejidades, o en su defecto depender lo menos posible "
   ],
-  "SLDC": [
+  "SDLC": [
     "- El ciclo de vida del desarrollo de software difiere de acuerdo a la necesidades de cada empresa, sin embargo existen etapas en comun ",
     "",
     "<strong>Analisis de requerimientos:</strong> Proceso de recopilación de las necesidades, especificaciones y expectativas ",
@@ -175,15 +175,20 @@
     "",
     "Bien definido ayuda a gestionar los recursos y tener canales de comunicación fluidos, siempre deberia estar claro para todos los involucrados "
   ],
-  "SLDC-IA": [
+  "SDLC-IA": [
     "- El ciclo de vida de desarrollo del software ha cambiado mucho desde que la IA y los agentes son capaces de generar código ",
-    "- Tanto que se ha dicho que el SLDC actual debe ser repensado para contemplar la automatización y el aumento de la velocidad ",
+    "- Tanto que se ha dicho que el SDLC actual debe ser repensado para contemplar la automatización y el aumento de la velocidad ",
+    "- En todo proceso con la IA, siempre deberia estar presente las personas, tambien es conocido como <em>human-in-the-loop</em> ",
+    " - a este proceso de toma de decisiones y/o revisión mantiene a las personas al tanto y a cargo de lo que se esta haciendo ",
     "",
-    "<strong>Segun Lang Chain:</strong> Build -> Test -> Deploy -> Monitorear",
+    "<strong>Segun LangChain:</strong> Build -> Test -> Deploy -> Monitor",
     "- Asi como existen frameworks para acelerar el desarrollo de algun lenguaje, que reducen las iteraciones a lo minimo posible ",
     "",
-    "<strong>AI Native SLDC-playbook:</strong> Revisar lo que genera el agente",
-    "- Desarrollar con malas practicas (vibe-coding) ó con buenas practicas se puede resumir en cuanto revisas del trabajo que ha hecho la IA "
+    "<strong>Vibe coding & Agentes:</strong> Revisar el código generado ",
+    "- Desarrollar con malas practicas (vibe-coding) ó con mejor control (agentes) se puede resumir en cuanto revisas el trabajo que ha hecho la IA ",
+    "",
+    "<strong>AI Native SDLC-playbook:</strong> Parecido al ciclo clasico, sin la etapa de la documentación, la cual queda integrada en cada una ",
+    "- Cada etapa crea un archivo que sera leido por la siguiente, con cada fase y su archivo, completando cambios de dias en horas/minutos "
   ],
   "BFF": [
     "- A medida que las aplicaciones se vuelven cada vez más distribuidas han surgido patrones para satisfacer a la multitud de dispositivos conectados ",
