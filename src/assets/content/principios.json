@@ -115,5 +115,16 @@
     "- Es preferible duplicar código a tener una abstracción incorrecta, sin caer en el extremo de evitar a toda costa nuevas abstracciones ",
     "- Este principio es ambiguo y debe tomarse como guia, no como una regla estricta ",
     "- Una buena heuristica es la <strong>regla de tres</strong> donde se espera hasta la tercera repetición antes de abstraer "
+  ],
+  "CQS": [
+    "- La separación de comandos y consultas fue acuñada por <em>Bertrand Meyer</em> en los inicios de la programación orientada a objetos ",
+    "- La idea fundamental es dividir los metodos de un objeto en 2 categorias, claramente diferenciadas ",
+    "",
+    "<strong>Consultas:</strong> Devuelven un resultado sin modificar el estado observable del sistema ni generar efectos secundarios ",
+    "<strong>Comandos:</strong> Cambian el estado del sistema y no devuelven valores; tambien son usados en otros contextos por lo que se les pueden decir <em>modificadores</em> ",
+    "",
+    "- Este principio tiene excepciones, como en los casos que es esencial que las operaciones sean atomicas: ",
+    "- Uso de una secuencia de base de datos y extracción de elementos de una pila ",
+    "- Además se debe tener cuidado de no confundirse con <strong>CQRS</strong> que es usado más para arquitecturas y diseños de alto nivel "
   ]
 }

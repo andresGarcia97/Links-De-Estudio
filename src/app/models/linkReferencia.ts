@@ -1518,6 +1518,9 @@ export const PRINCIPIOS_REF = new Map<string, Referencia>([
     ],
     [Keys.PRINCIPIOS_AHA, new Referencia('https://www.vladimirzdrazil.com/posts/aha-principle/', 'Avoid Hasty Abstractions', PRINCIPIOS_KEY, 'AHA', '2026/06/19')
         .addRelatedItems(Keys.MALAS_PRACTICAS_OVER_ENGINEERING, Keys.CONOCIMIENTOS_PSICOLOGICOS_SESGOS_COGNITIVOS)
+    ],
+    [Keys.PRINCIPIOS_CQS, new Referencia('https://martinfowler.com/bliki/CommandQuerySeparation.html', 'Command-Query Separation', PRINCIPIOS_KEY, 'CQS', '2026/09/05')
+        .addRelatedItems(Keys.PATRONES_ADVANCED_CQRS, Keys.POO_POO, Keys.POO_INMUTABILITY, Keys.EJECUCION_FEATURE_FLAGS)
     ]
 ]);
 
