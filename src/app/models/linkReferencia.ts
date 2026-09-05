@@ -364,6 +364,9 @@ export const BUENAS_PRACTICAS_REF = new Map<string, Referencia>([
     [Keys.BUENAS_PRACTICAS_GOOD_HABITS_II, new Referencia('https://medium.com/skillstuff/7-small-coding-decisions-that-prevent-expensive-production-bugs-512c3dbedc5b', 'Buenos habitos de un desarrollador II', BUENAS_PRACTICAS_KEY, 'Buenos habitos II', '2026/08/16')
         .addRelatedItems(Keys.TESTING_BUG, Keys.META_CARACTERISTICAS_ASSERTS, Keys.POO_DESIGN_BY_CONTRACT_PARTS, Keys.MICROSERVICES_ADVANCED_IDEMPOTENCY_II, Keys.PERSISTENCY_CONSTRAINTS, Keys.EJECUCION_CONCURRENCY_AND_PARALLELISM, Keys.SYSTEM_DESIGN_RESILIENCE, Keys.ANALISIS_DATA_GOLDEN_RECORD)
     ],
+    [Keys.BUENAS_PRACTICAS_GOOD_HABITS_III, new Referencia('https://medium.com/@rkdixit3/8-coding-patterns-that-turn-good-code-into-good-architecture-0986c4ac0712?sk=7f49c8c07ccdcbaadbb468a2c90c196c', 'Buenos habitos de un desarrollador III', BUENAS_PRACTICAS_KEY, 'Buenos habitos III', '2026/09/04')
+        .addRelatedItems(Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS, Keys.ANALISIS_MODEL_DOMAIN, Keys.ANALISIS_BOUNDED_CONTEXT, Keys.ARQUITECTURAS_IMPL_HEXAGONAL, Keys.PRINCIPIOS_CQS, Keys.ANALISIS_EXCEPTION_DESIGN, Keys.POO_DESIGN_BY_CONTRACT, Keys.APIS_ERRORS, Keys.PRINCIPIOS_KISS, Keys.CALIDAD_IF_ELSE, Keys.SYSTEM_THINKING_II, Keys.PERSISTENCY_ADVANCED_MIGRATIONS, Keys.VERSIONAMIENTO_EVOLUTION_SCHEMA_AND_SCHEMA_REGISTRY, Keys.PATRONES_ADVANCED_STRANGLER_FIG, Keys.ANALISIS_STRATEGIC_DESIGN)
+    ],
     [Keys.BUENAS_PRACTICAS_FUNCTIONS, new Referencia('https://medium.com/@akineralkan/clean-code-notes-chapter-3-functions-de4a30191300', 'Buenas practicas, Funciones', BUENAS_PRACTICAS_KEY, 'Funciones', '2024/10/18', '2026/07/27')
         .addRelatedItems(Keys.PATRONES_ADVANCED_CQRS, Keys.CALIDAD_CLEAN_CODE, Keys.PRINCIPIOS_SOLID, Keys.ANALISIS_EXCEPTION_DESIGN)
         .addMoreReferences('https://medium.com/swlh/clean-code-writing-functions-or-methods-4e6e53ff4ac2')

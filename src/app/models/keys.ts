@@ -151,6 +151,7 @@ export const BUENAS_PRACTICAS_GUARD_CLAUSES = 'guardClauses';
 export const BUENAS_PRACTICAS_SEMANTIC_CONSTRUCTORS = 'semantic-constructors';
 export const BUENAS_PRACTICAS_GOOD_HABITS_I = 'goodHabits-I';
 export const BUENAS_PRACTICAS_GOOD_HABITS_II = 'goodHabits-II';
+export const BUENAS_PRACTICAS_GOOD_HABITS_III = 'goodHabits-III';
 export const BUENAS_PRACTICAS_EXCEPTIONS = 'exceptionGoodPractices';
 export const BUENAS_PRACTICAS_AGGREGATES = 'aggregatesAggregateRoots';
 export const BUENAS_PRACTICAS_INDIRECTION = 'indireccion';
