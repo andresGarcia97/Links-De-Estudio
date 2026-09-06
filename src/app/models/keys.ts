@@ -73,6 +73,7 @@ export const ARQUITECTURAS_IMPL_MONOLITOS = 'monolitos';
 export const ARQUITECTURAS_IMPL_MODULITHS = 'monolitosModulares';
 export const ARQUITECTURAS_IMPL_DESCOMPOSICION_MODULAR = 'descomposicionModular';
 export const ARQUITECTURAS_IMPL_EVENT_DRIVEN = 'eventDriven';
+export const ARQUITECTURAS_IMPL_SERVERLESS = 'serverless';
 export const ARQUITECTURAS_IMPL_PATRONES_I = 'patronesArquitecturas-I';
 export const ARQUITECTURAS_IMPL_PATRONES_II = 'patronesArquitecturas-II';
 export const ARQUITECTURAS_IMPL_STYLES_I = 'stylesArchitecture-I';

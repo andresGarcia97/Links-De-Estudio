@@ -172,6 +172,28 @@
         "<strong>- Coherencia Eventual:</strong> Que las actualizaciones del sistema se propaguen y logren una coherencia solida, puede requerir coordinación extra",
         "<strong>- Gastos:</strong> El manejo de eventos y la infraestructura necesaria para estos, pueden consumir más recursos y tener mayor latencia "
     ],
+    "serverless": [
+        "- Permite ejecutar código en la nube sin necesidad de gestionar servidores, responsabilidad que asume el proveedor de infraestructura ",
+        "- Solo se paga cuando el código se ejecuta, ideal para cargas de trabajo intermitentes y sin estado persistente (stateless), como: ",
+        "&bull; Basados en eventos ",
+        "&bull; Webhooks ",
+        "&bull; Tareas en segundo plano ",
+        "&bull; APIs ligeras con poco trafico o trafico fluctuante ",
+        "&bull; Tareas programadas con ejecuciones ligeras ",
+        "",
+        "<strong>Componentes clave:</strong>",
+        "- <strong>Lambda Functions:</strong> Corre código como respuesta de algun activador (llamada a una API, tarea programada, mensajes, etc.. ) ",
+        "- <strong>Step Functions:</strong> Orquesta el flujo cuando existen varias lambdas involucradas, mediante el uso de estados y transiciones entre ellos ",
+        "- <strong>API Gateway:</strong> El punto de entrada para todos los servicios, esta en la capacidad de activar los servicios con base en el tráfico ",
+        "- <strong>Bases de datos como servicios(DBaaS):</strong> Almacenamiento de datos administrado por el proveedor ",
+        "- <strong>Mensajeria y eventos:</strong> Colas y notificaciones para conectar componentes de manera asincrona ",
+        "",
+        "<strong>Problemas</strong>",
+        "- Perdida de control en tareas de larga duración ",
+        "- Arranques en frio, los cuales pueden ser muy problematicos si se necesita baja latencia ",
+        "- Mayores costos para cargas de trabajo muy elevadas o pesadas ",
+        "- Vendor lock-in: Dependencia extrema de un proveedor, lo cual dificulta o imposibilita el cambio hacia otra plataforma "
+    ],
     "patronesArquitecturas-I": [
         "<strong>Bus de Eventos:</strong> Una fuente emite eventos donde un bus los direcciona a los receptores indicados ",
         "<strong>Pipes & Filters:</strong> Es un flujo donde los datos son filtrados y/o transformados a medida que van desde su origen hasta su destino ",

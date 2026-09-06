@@ -309,6 +309,10 @@ export const ARQUITECTURAS_IMPL_REF = new Map<string, Referencia>([
     [Keys.ARQUITECTURAS_IMPL_EVENT_DRIVEN, new Referencia('https://medium.com/@alxkm/java-event-driven-architecture-dc456d324ba5', 'Basada en Eventos', ARQUITECTURAS_IMPL_KEY, 'EDA', '2024/06/17')
         .addRelatedItems(Keys.OBSERVABILIDAD_OBSERVABILITY)
     ],
+    [Keys.ARQUITECTURAS_IMPL_SERVERLESS, new Referencia('https://designgurus.substack.com/p/50-system-design-concepts-for-beginners', 'Sin servidor', ARQUITECTURAS_IMPL_KEY, 'Serverless', '2025/09/05')
+        .addRelatedItems(Keys.MICROSERVICES_EVENTS_VS_REQUEST_RESPONSE, Keys.META_ESTRUCTURAS_FUNCIONES_LAMBDA, Keys.NUBE_IAAS_PAAS_SAAS, Keys.APIS_GATEWAY, Keys.APIS_WEB_HOOK_VS_SOCKET_VS_SSE, Keys.CD_CI_STATELESS_STATEFUL)
+        .addMoreReferences('https://aws.amazon.com/es/blogs/compute/streamlining-aws-serverless-workflows-from-aws-lambda-orchestration-to-aws-step-functions/')
+    ],
     [Keys.ARQUITECTURAS_IMPL_PATRONES_I, new Referencia('https://medium.com/@maniakhitoccori/los-10-patrones-comunes-de-arquitectura-de-software-d8b9047edf0b', 'Patrones Arquitectonicos I', ARQUITECTURAS_IMPL_KEY, 'Patrones Arquitectonicos I', '2023/12/17', '2026/07/31')
         .addRelatedItems(Keys.MICROSERVICES_ARQUITECTURAS, Keys.APIS_REST_VS_MESSAGING, Keys.ANALISIS_DOMAIN_EVENTS, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS)
         .addMoreReferences('https://medium.com/@sweetondonie/master-replica-leader-follower-the-architecture-of-coordination-b8feeeaf1229')
