@@ -181,7 +181,7 @@
         "&bull; APIs ligeras con poco trafico o trafico fluctuante ",
         "&bull; Tareas programadas con ejecuciones ligeras ",
         "",
-        "<strong>Componentes clave:</strong>",
+        "<strong>Componentes clave</strong>",
         "- <strong>Lambda Functions:</strong> Corre código como respuesta de algun activador (llamada a una API, tarea programada, mensajes, etc.. ) ",
         "- <strong>Step Functions:</strong> Orquesta el flujo cuando existen varias lambdas involucradas, mediante el uso de estados y transiciones entre ellos ",
         "- <strong>API Gateway:</strong> El punto de entrada para todos los servicios, esta en la capacidad de activar los servicios con base en el tráfico ",

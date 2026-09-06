@@ -1747,9 +1747,9 @@ export const PERSISTENCY_ADVANCED_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.TESTING_ADVANCED_PERFORMANCE, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRANSACTIONS, Keys.ANALISIS_DATA_CHANGE_DATA_CAPTURE, Keys.ANALISIS_DATA_GOLDEN_RECORD, Keys.PATRONES_ADVANCED_STRANGLER_FIG, Keys.MICROSERVICES_ADVANCED_SPLIT_BRAIN)
         .addMoreReferences('https://medium.com/@adkomyagin/validating-data-like-a-pro-post-migration-integrity-d06300d6bfb8')
     ],
-    [Keys.PERSISTENCY_ADVANCED_LEDGER_DATABASE, new Referencia('https://www.techtarget.com/searchcio/definition/ledger-database', 'Ledger database', PERSISTENCY_ADVANCED_KEY, 'Ledger Database', '2026/01/28')
+    [Keys.PERSISTENCY_ADVANCED_LEDGER_DATABASE, new Referencia('https://www.techtarget.com/searchcio/definition/ledger-database', 'Ledger database', PERSISTENCY_ADVANCED_KEY, 'Ledger Database', '2026/01/28', '2026/09/05')
         .addRelatedItems(Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRANSACTIONS, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.POO_INMUTABILITY, Keys.EJECUCION_BLOCKING_AND_NO_BLOCKING)
-        .addMoreReferences('https://learn.microsoft.com/en-us/sql/relational-databases/security/ledger/ledger-append-only-ledger-tables?view=sql-server-ver17')
+        .addMoreReferences('https://learn.microsoft.com/en-us/sql/relational-databases/security/ledger/ledger-append-only-ledger-tables?view=sql-server-ver17', 'https://www.linkedin.com/posts/bhupesh-k-185327366_fintech-backend-systemdesign-share-7494375092651450368-MDou/')
     ],
     [Keys.PERSISTENCY_ADVANCED_LONG_TRANSACTIONS, new Referencia('https://www.linkedin.com/pulse/long-running-transactions-financial-systems-mario-kresnadi/', 'Transacciones largas & performance', PERSISTENCY_ADVANCED_KEY, 'Transacciones largas', '2026/03/01')
         .addRelatedItems(Keys.CD_CI_MONITORING_AND_ALERTS, Keys.NUBE_PACELC, Keys.PATRONES_ADVANCED_SAGA, Keys.PEOPLE_POST_MORTEM)
