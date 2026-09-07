@@ -196,6 +196,9 @@ export const SYSTEM_DESIGN_REF = new Map<string, Referencia>([
     [Keys.SYSTEM_DESIGN_CONCEPTS_IV, new Referencia('https://medium.com/@pudarimadhavi99/i-thought-i-understood-system-design-then-these-21-concepts-proved-me-wrong-4fd9a485b206', 'System Design Concepts IV', SYSTEM_DESIGN_KEY, 'System Design Concepts IV', '2026/05/10')
         .addMoreReferences('https://medium.com/@shanureddy/you-think-youre-a-senior-engineer-these-9-architecture-traps-will-prove-you-wrong-b745db6d1525')
     ],
+    [Keys.SYSTEM_DESIGN_CONCEPTS_V, new Referencia('https://medium.com/lets-code-future/70-system-design-terms-every-beginner-should-know-c8f034b44be4?sk=fbf6f0b67375dc9b468a72b9719f27e0', 'System Design Concepts V', SYSTEM_DESIGN_KEY, 'System Design Concepts V', '2026/09/06')
+        .addMoreReferences('https://stackoverflow.com/questions/9762101/what-is-linearizability', 'https://shahjerry33.medium.com/clock-skew-time-can-change-anything-0bb84e9635de', 'https://medium.com/helpshift-engineering/load-shedding-in-web-services-9fa8cfa1ffe4')
+    ],
     [Keys.SYSTEM_DESIGN_SINGLE_POINT_OF_FAILURE, new Referencia('https://levelup.gitconnected.com/single-point-of-failure-spof-in-system-design-c8bbac5af993', 'Single Point Of Failure', SYSTEM_DESIGN_KEY, 'SPOF', '2024/12/07')
         .addRelatedItems(Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS)
     ],
