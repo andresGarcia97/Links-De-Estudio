@@ -144,7 +144,7 @@ export const ANALISIS_REF = new Map<string, Referencia>([
     [Keys.ANALISIS_LIGHT_EVENTS_VS_RICH_EVENTS, new Referencia('https://theburningmonk.com/2024/11/when-to-use-light-events-vs-rich-events-in-event-driven-architectures/', 'Light Events VS Rich Events', ANALISIS_KEY, 'Light/Rich Events', '2024/12/08')
         .addRelatedItems(Keys.ARQUITECTURAS_IMPL_EVENT_DRIVEN, Keys.PERSISTENCY_NORMALIZATION, Keys.ESTRATEGIAS_DESARROLLO_DDD)
     ],
-    [Keys.ANALISIS_DELIVERY_GUARANTED, new Referencia('https://docs.confluent.io/kafka/design/delivery-semantics.html', 'Delivery Guaranted', ANALISIS_KEY, 'Delivery Guaranted', '2025/03/21')
+    [Keys.ANALISIS_DELIVERY_GUARANTEE, new Referencia('https://docs.confluent.io/kafka/design/delivery-semantics.html', 'Delivery Guarantee', ANALISIS_KEY, 'Delivery Guarantee', '2025/03/21')
         .addRelatedItems(Keys.MICROSERVICES_ADVANCED_PRODUCER_CONSUMER_PROBLEM, Keys.APIS_IDEMPOTENCIA)
     ],
     [Keys.ANALISIS_COHESERS_DECOUPLERS, new Referencia('https://itnext.io/cohesers-and-decouplers-ecac2964081a', 'Cohesores y Desacopladores ', ANALISIS_KEY, 'Desacoplamiento', '2025/04/07')
@@ -1101,7 +1101,7 @@ export const ANALISIS_DATA_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.PERSISTENCY_CRUD, Keys.EJECUCION_CONCURRENCY_AND_PARALLELISM, Keys.PERSISTENCY_ACID, Keys.COMPILACION_GRAFOS)
     ],
     [Keys.ANALISIS_DATA_DESIGN_PATTERNS_II, new Referencia('https://aws.plainenglish.io/data-engineering-design-patterns-you-must-learn-in-2026-c25b7bd0b9a7', 'Data Engineering Design Patterns II', ANALISIS_DATA_KEY, 'Data Design Patterns II', '2026/02/15')
-        .addRelatedItems(Keys.MICROSERVICES_ADVANCED_DEAD_LETTER_QUEUE, Keys.ANALISIS_DELIVERY_GUARANTED, Keys.PEOPLE_DIKW, Keys.VERSIONAMIENTO_EVOLUTION_SCHEMA_AND_SCHEMA_REGISTRY, Keys.PERSISTENCY_ADVANCED_PARTITIONING)
+        .addRelatedItems(Keys.MICROSERVICES_ADVANCED_DEAD_LETTER_QUEUE, Keys.ANALISIS_DELIVERY_GUARANTEE, Keys.PEOPLE_DIKW, Keys.VERSIONAMIENTO_EVOLUTION_SCHEMA_AND_SCHEMA_REGISTRY, Keys.PERSISTENCY_ADVANCED_PARTITIONING)
     ],
     [Keys.ANALISIS_DATA_P_VS_NP, new Referencia('https://www.bbva.com/es/p-versus-np-he-ahi-dilema/', 'P Vs NP', ANALISIS_DATA_KEY, 'P Vs NP', '2026/06/06')
         .addRelatedItems(Keys.ANALISIS_TIME_COMPLEXITY)
@@ -1216,7 +1216,7 @@ export const PATRONES_ADVANCED_REF = new Map<string, Referencia>([
         .addMoreReferences('https://aws.amazon.com/es/blogs/aws-spanish/entender-los-patrones-de-resiliencia-y-las-consideraciones-claves-para-arquitecturar-eficientemente-en-la-nube/')
     ],
     [Keys.PATRONES_ADVANCED_MESSAGING, new Referencia('https://yasir.com.pk/blog/system-design/messaging/messaging-patterns-for-scalable-systems', 'Patrones Para Mensajeria', PATRONES_ADVANCED_KEY, 'Patrones & Mensajeria', '2025/09/15')
-        .addRelatedItems(Keys.SYSTEM_DESIGN_QUEUES, Keys.ARQUITECTURAS_IMPL_EVENT_DRIVEN, Keys.MICROSERVICES_ADVANCED_DEAD_LETTER_QUEUE, Keys.MICROSERVICES_EVENTS_VS_REQUEST_RESPONSE, Keys.ANALISIS_DELIVERY_GUARANTED, Keys.HARDWARE_ROUTING_MESSAGES, Keys.PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL)
+        .addRelatedItems(Keys.SYSTEM_DESIGN_QUEUES, Keys.ARQUITECTURAS_IMPL_EVENT_DRIVEN, Keys.MICROSERVICES_ADVANCED_DEAD_LETTER_QUEUE, Keys.MICROSERVICES_EVENTS_VS_REQUEST_RESPONSE, Keys.ANALISIS_DELIVERY_GUARANTEE, Keys.HARDWARE_ROUTING_MESSAGES, Keys.PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL)
         .addMoreReferences('https://java-design-patterns.com/patterns/fanout-fanin/')
     ],
     [Keys.PATRONES_ADVANCED_DOUBLE_CHECKING, new Referencia('https://sergeylappo.github.io/posts/double-checked-locking/', 'Double checked locking', PATRONES_ADVANCED_KEY, 'Double Checked Locking', '2026/04/13')
@@ -2042,7 +2042,7 @@ export const MICRO_SERVICES_ADVANCED_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.SYSTEM_DESIGN_QUEUES, Keys.EJECUCION_CONCURRENCY_AND_PARALLELISM, Keys.EJECUCION_PROCESS_AND_THREADS)
     ],
     [Keys.MICROSERVICES_ADVANCED_IDEMPOTENCY_I, new Referencia('https://microservices.io/post/microservices/patterns/2020/10/16/idempotent-consumer.html', 'Idempotencia & Duplicacion I', MICRO_SERVICES_ADVANCED_KEY, 'Idempotencia I', '2025/09/01')
-        .addRelatedItems(Keys.SYSTEM_DESIGN_QUEUES, Keys.ANALISIS_DELIVERY_GUARANTED, Keys.ANALISIS_LIGHT_EVENTS_VS_RICH_EVENTS, Keys.PATRONES_ADVANCED_OUTBOX, Keys.ANALISIS_DATA_CHANGE_DATA_CAPTURE, Keys.PERSISTENCY_ADVANCED_NO_SQL_TYPES, Keys.ARQUITECTURAS_IMPL_EVENT_DRIVEN, Keys.OBSERVABILIDAD_COMMON_METRICS_I, Keys.PERSISTENCY_INTERMEDIATE_INDICES, Keys.PERSISTENCY_ADVANCED_UPSERT)
+        .addRelatedItems(Keys.SYSTEM_DESIGN_QUEUES, Keys.ANALISIS_DELIVERY_GUARANTEE, Keys.ANALISIS_LIGHT_EVENTS_VS_RICH_EVENTS, Keys.PATRONES_ADVANCED_OUTBOX, Keys.ANALISIS_DATA_CHANGE_DATA_CAPTURE, Keys.PERSISTENCY_ADVANCED_NO_SQL_TYPES, Keys.ARQUITECTURAS_IMPL_EVENT_DRIVEN, Keys.OBSERVABILIDAD_COMMON_METRICS_I, Keys.PERSISTENCY_INTERMEDIATE_INDICES, Keys.PERSISTENCY_ADVANCED_UPSERT)
         .addMoreReferences('https://nejckorasa.github.io/posts/idempotent-kafka-procesing/', 'https://medium.com/@zdb.dashti/exactly-once-semantics-using-the-idempotent-consumer-pattern-927b2595f231', 'https://www.rabbitmq.com/docs/confirms')
     ],
     [Keys.MICROSERVICES_ADVANCED_IDEMPOTENCY_II, new Referencia('https://medium.com/javarevisited/idempotency-in-distributed-systems-preventing-duplicate-operations-85ce4468d161', 'Idempotencia & Duplicacion II', MICRO_SERVICES_ADVANCED_KEY, 'Idempotencia II', '2026/02/15')
@@ -2103,6 +2103,9 @@ export const OBSERVABILIDAD_REF = new Map<string, Referencia>([
     [Keys.OBSERVABILIDAD_SRE, new Referencia('https://aws.amazon.com/es/what-is/sre/', 'Ingenieria de Fiabilidad del Sitio', OBSERVABILIDAD_KEY, 'SRE', '2025/03/15')
         .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_SDLC, Keys.CD_CI_DEV_OPS)
         .addMoreReferences('https://sre.google/books/')
+    ],
+    [Keys.OBSERVABILIDAD_SLA_SLI_SLO, new Referencia('https://www.atlassian.com/es/incident-management/kpis/sla-vs-slo-vs-sli', 'SLA - SLO - SLI', OBSERVABILIDAD_KEY, 'SLA - SLO - SLI', '2026/09/06')
+        .addMoreReferences('https://www.atlassystems.com/blog/sla-severity-levels')
     ],
     [Keys.OBSERVABILIDAD_TIME_SERIES, new Referencia('https://www.honeycomb.io/blog/time-series-database', 'Time Series', OBSERVABILIDAD_KEY, 'Time Series', '2026/07/17')
         .addRelatedItems(Keys.PERSISTENCY_DB_TYPES)

@@ -288,7 +288,7 @@
     "- Un Evento de Integración se utiliza para comunicar cambios en diferentes contextos y mantener la coherencia de los datos ",
     "- Existe una afinidad natural entre los eventos de dominio y los eventos ligeros, igual que los eventos de integración y los eventos enriquecidos"
   ],
-  "deliveryGuaranted": [
+  "deliveryGuarantee": [
     "- En la mensajeria de eventos existen 3 actores principales <strong>Productor</strong> <-> <strong>Broker</strong> <-> <strong>Consumidor</strong> y para que todo funcione correctamente, ",
     " - debe existir un acuerdo o protocolo sobre los mensajes, validando que fueron producidos & consumidos ",
     "",
