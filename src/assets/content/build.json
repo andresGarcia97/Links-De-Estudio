@@ -56,11 +56,11 @@
         "- Los empaquetadores modernos como webpack y rollup realizan esto para tener archivos más livianos "
     ],
     "ofuscacion": [
-        "- Es comun el dicho que suele recordar que progames como si tu código fuera a ser mantenido por un psicopata que sabe donde vives ",
+        "- Es comun el dicho que suele recordar que programes como si tu código fuera a ser mantenido por un psicopata que sabe donde vives ",
         "- Esto es para evitar que te termine odiando quien quiera que sea que tenga que mantener el código ",
-        "- Generalmente esto nos pasa con nuestro código, al cual nosotros mismos mantenemos ",
+        "- Generalmente esto nos pasa con nuestro código, el cual nosotros mismos mantenemos ",
         "- Pero en ocasiones es interesante ocultar el funcionamiento de nuestro código cuando es inevitablemente visible, ",
-        " - como lo es en el caso de Javascript, para para evitar modificaciones, desentrañar su funcionamiento, o su plagio ",
+        " - como lo es en el caso de Javascript, para evitar modificaciones, que no desentrañen su funcionamiento, o directamente el plagio ",
         "",
         "- Esto es lo opuesto a un código mantenible y entendible, y existen diferentes maneras <em>manuales</em> de hacer esto <strong>malas practicas:</strong> ",
         "&bull; Nombre de variables sin sentido               &bull; Agregar/eliminar espacios en blanco o saltos de linea dificultando la legibilidad ",

@@ -1551,8 +1551,9 @@ export const SECURITY_REF = new Map<string, Referencia>([
     [Keys.SECURITY_ZERO_TRUST, new Referencia('https://www.cloudflare.com/es-es/learning/security/glossary/what-is-zero-trust/', 'Zero Trust & IAM', SECURITY_KEY, 'Zero trust & IAM', '2026/01/11')
         .addRelatedItems('https://www.entrust.com/blog/2023/10/zero-trust-iam-security')
     ],
-    [Keys.SECURITY_HASHING_ENCRYPTION, new Referencia('https://medium.com/@gaddamnaveen192/hashing-vs-encryption-the-mistake-that-separates-good-developers-from-great-ones-26f39fd05eab', 'hashing & encryption', SECURITY_KEY, 'hashing & encryption', '2026/04/17')
-        .addMoreReferences('https://auth0.com/blog/adding-salt-to-hashing-a-better-way-to-store-passwords/')
+    [Keys.SECURITY_HASHING_ENCRYPTION, new Referencia('https://auth0.com/blog/encoding-encryption-hashing/', 'Encoding, Encryption, and Hashing', SECURITY_KEY, 'Encryption & Hashing', '2026/04/17', '2026/09/12')
+        .addRelatedItems(Keys.HARDWARE_UTF8)
+        .addMoreReferences('https://auth0.com/blog/adding-salt-to-hashing-a-better-way-to-store-passwords/', 'https://auth0.com/blog/how-secure-are-encryption-hashing-encoding-and-obfuscation/')
     ],
     [Keys.SECURITY_IDOR, new Referencia('https://blog.hackmetrix.com/insecure-direct-object-reference/', 'Insecure Direct Object Reference', SECURITY_KEY, 'IDOR', '2026/06/15')
         .addRelatedItems(Keys.SECURITY_ATTACK_PENTEST)
