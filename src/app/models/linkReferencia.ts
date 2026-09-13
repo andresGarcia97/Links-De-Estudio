@@ -262,7 +262,10 @@ export const ARQUITECTURAS_REF = new Map<string, Referencia>([
     [Keys.ARQUITECTURAS_PRINCIPLES, new Referencia('https://www.genbeta.com/desarrollo/principios-de-una-arquitectura-limpia-mantenible-y-testeable', 'Principios de las arquitecturas', ARQUITECTURAS_KEY, 'Principios', '2023/12/17', '2025/08/18')
         .addRelatedItems(Keys.POO_COUPLING_AND_COHESION, Keys.ANALISIS_COHESERS_DECOUPLERS, Keys.PRINCIPIOS_SOLID)
     ],
-    [Keys.ARQUITECTURAS_CLEAN, new Referencia('https://medium.com/@diego.coder/introducci%C3%B3n-a-las-clean-architectures-723fe9fe17fa', 'Arquitecturas Limpias', ARQUITECTURAS_KEY, 'Limpias')],
+    [Keys.ARQUITECTURAS_CLEAN, new Referencia('https://medium.com/@diego.coder/introducci%C3%B3n-a-las-clean-architectures-723fe9fe17fa', 'Arquitecturas Limpias', ARQUITECTURAS_KEY, 'Limpias', '', '2026/09/12')
+        .addRelatedItems(Keys.REQUISITOS_BUSINESS_VALUE, Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.PRINCIPIOS_CQS, Keys.FRAMEWORKS_IOD)
+        .addMoreReferences('https://blog.scalablebackend.com/understand-the-theory-behind-clean-architecture')
+    ],
     [Keys.ARQUITECTURAS_EXPERIMENTATION, new Referencia('https://www.infoq.com/articles/architecture-experimentation/', 'Minima Arquitectura Viable', ARQUITECTURAS_KEY, 'MVA', '2025/01/12')
         .addRelatedItems(Keys.ANALISIS_DATA_MVP, Keys.CD_CI_DEPLOYMENT_PATTERNS, Keys.NEURO_MARKETING_WHAT_IS)
     ],
