@@ -208,6 +208,10 @@ export const SYSTEM_DESIGN_REF = new Map<string, Referencia>([
     [Keys.SYSTEM_DESIGN_II, new Referencia('https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction', 'System Design II', SYSTEM_DESIGN_KEY, 'System Design II', '2025/02/16')
         .addRelatedItems(Keys.APIS_API_FIRST, Keys.CONTENEDORES_ORCHESTRATION, Keys.CD_CI_IAS_CODE, Keys.HARDWARE_ESCALAMIENTO, Keys.META_CARACTERISTICAS_CACHE, Keys.NUBE_PACELC)
     ],
+    [Keys.SYSTEM_DESIGN_III, new Referencia('https://cloudwithazeem.medium.com/google-l7-system-design-interview-lessons-0b3834fded07?sk=2053ca003c75ca37fc300eb1bbb62aa3', 'System Design III', SYSTEM_DESIGN_KEY, 'System Design III', '2026/09/12')
+        .addRelatedItems(Keys.ARQUITECTURAS_MISTAKES_II, Keys.ARQUITECTURAS_MISTAKES_I, Keys.HARDWARE_ESCALAMIENTO, Keys.CD_CI_FAILOVER, Keys.OBSERVABILIDAD_COMMON_METRICS_I, Keys.REQUISITOS_TRADE_OFF, Keys.PATRONES_ANTI_PATTERNS, Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES)
+        .addMoreReferences('https://engineeringatscale.substack.com/p/system-design-interview-success-six-step-framework', 'https://codefarm0.medium.com/12-interview-questions-that-separate-real-architects-from-paper-tigers-196e41b8d44a')
+    ],
     [Keys.SYSTEM_THINKING_I, new Referencia('https://medium.com/nerd-for-tech/part-2-applying-systems-thinking-to-software-development-e98cbd195a83', 'Pensamiento Sistemico I', SYSTEM_DESIGN_KEY, 'Pensamiento Sistemico I', '2025/03/29', '2025/08/03')
         .addRelatedItems(Keys.APIS_REST_VS_MESSAGING, Keys.ARQUITECTURAS_IMPL_EVENT_DRIVEN, Keys.LEYES_LEHMAN, Keys.LEYES_CONWAY, Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES, Keys.HARDWARE_ESCALAMIENTO, Keys.ANALISIS_DATA_TGS)
         .addMoreReferences('https://medium.com/nerd-for-tech/part-1-a-systems-thinking-primer-fe75f9e92c91')
@@ -1837,7 +1841,9 @@ export const HARDWARE_KEY = 'Hardware';
 export const HARDWARE_REF = new Map<string, Referencia>([
     [Keys.HARDWARE_VIRTUALIZACION, new Referencia('https://www.redhat.com/es/topics/virtualization/what-is-a-virtual-machine', 'Virtualización', HARDWARE_KEY, 'Virtualizacion')],
     [Keys.HARDWARE_CLI, new Referencia('https://www.computerweekly.com/es/definicion/Interfaz-de-linea-de-comandos-o-CLI', 'Interfaz de Linea de Comandos', HARDWARE_KEY, 'CLI', '', '2024/06/11')],
-    [Keys.HARDWARE_ESCALAMIENTO, new Referencia('https://www.oscarblancarteblog.com/2017/03/07/escalabilidad-horizontal-y-vertical/', 'Escalamiento de un sistema', HARDWARE_KEY, 'Escalamiento')],
+    [Keys.HARDWARE_ESCALAMIENTO, new Referencia('https://www.oscarblancarteblog.com/2017/03/07/escalabilidad-horizontal-y-vertical/', 'Escalamiento de un sistema', HARDWARE_KEY, 'Escalamiento', '', '2026/09/12')
+        .addMoreReferences('https://koder.ai/es/blog/por-que-escalado-horizontal-mas-dificil-que-vertical')
+    ],
     [Keys.HARDWARE_NUBE_VS_VIRTUALIZACION, new Referencia('https://www.redhat.com/es/topics/cloud-computing/cloud-vs-virtualization', 'Nube VS Virtualizacion', HARDWARE_KEY, 'Nube VS VM')],
     [Keys.HARDWARE_RENDERING, new Referencia('https://www.freecodecamp.org/news/what-exactly-is-client-side-rendering-and-hows-it-different-from-server-side-rendering-bd5c786b340d/', 'Server-side VS client-side rendering', HARDWARE_KEY, 'Rendering')],
     [Keys.HARDWARE_MODEL_OSI, new Referencia('https://www.cloudflare.com/es-es/learning/ddos/glossary/open-systems-interconnection-model-osi/', 'Modelo OSI', HARDWARE_KEY, 'Modelo OSI', '', '2025/04/23')

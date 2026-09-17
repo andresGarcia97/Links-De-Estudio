@@ -613,6 +613,7 @@ export const SYSTEM_DESIGN_CONCEPTS_V = 'systemDesignConcepts-V';
 export const SYSTEM_DESIGN_SINGLE_POINT_OF_FAILURE = 'singlePointOfFailure-SPOF';
 export const SYSTEM_DESIGN_I = 'systemDesign-I';
 export const SYSTEM_DESIGN_II = 'systemDesign-II';
+export const SYSTEM_DESIGN_III = 'systemDesign-III';
 export const SYSTEM_THINKING_I = 'systemThinking-I';
 export const SYSTEM_THINKING_II = 'systemThinking-II';
 export const SYSTEM_DESIGN_SYSTEM_TYPES_I = 'systemTypes-I';
