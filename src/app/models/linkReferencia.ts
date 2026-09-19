@@ -704,6 +704,7 @@ export const ESTRATEGIAS_DESARROLLO_REF = new Map<string, Referencia>([
     ],
     [Keys.ESTRATEGIAS_DESARROLLO_SDLC, new Referencia('https://www.netguru.com/blog/stages-of-software-development', 'Ciclo de Vida del Desarrollo de Software', ESTRATEGIAS_DESARROLLO_KEY, 'SDLC', '2024/06/29')],
     [Keys.ESTRATEGIAS_DESARROLLO_SDLC_IA, new Referencia('https://www.linkedin.com/posts/soymanuelzapata_langchain-google-y-anthropic-publicaron-share-7499566549909835776-bboE/', 'SDLC asistido por IA', ESTRATEGIAS_DESARROLLO_KEY, 'SDLC con IA', '2026/09/03')
+        .addRelatedItems(Keys.CONOCIMIENTOS_EMPIRICOS_JEVONS)
         .addMoreReferences('https://www.langchain.com/blog/the-agent-development-lifecycle', 'https://claude.com/blog/the-ai-native-sdlc-playbook', 'https://www.kaggle.com/whitepaper-the-new-SDLC-with-vibe-coding', 'https://resources.rework.com/es/libraries/ai-terms/human-in-the-loop')
     ],
     [Keys.ESTRATEGIAS_DESARROLLO_BFF, new Referencia('https://levelup.gitconnected.com/backend-for-frontend-bff-architecture-64fa9f316a5a', 'Backend For Frontened', ESTRATEGIAS_DESARROLLO_KEY, 'BFF', '2024/10/27')
