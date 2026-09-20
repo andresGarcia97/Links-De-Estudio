@@ -846,6 +846,9 @@ export const MALAS_PRACTICAS_REF = new Map<string, Referencia>([
     [Keys.MALAS_PRACTICAS_LOG_AND_THROW, new Referencia('https://stackoverflow.com/questions/6639963/why-is-log-and-throw-considered-an-anti-pattern', 'Log & Throw', MALAS_PRACTICAS_KEY, 'Log & Throw', '2026/07/13')
         .addRelatedItems(Keys.META_ESTRUCTURAS_LOGS, Keys.META_CARACTERISTICAS_EXCEPTIONS, Keys.BUENAS_PRACTICAS_DEBUGGING, Keys.CD_CI_MONITORING_AND_ALERTS)
         .addMoreReferences('https://signoz.io/guides/throw-exception-vs-logging/')
+    ],
+    [Keys.MALAS_PRACTICAS_COMPLEJIDAD_ACCIDENTAL, new Referencia('https://ingenieriadesoftware.es/complejidad-esencial-accidental-proyecto-software/', 'Complejidad Accidental', MALAS_PRACTICAS_KEY, 'Complejidad Accidental', '2026/09/19')
+        .addRelatedItems(Keys.BUENAS_PRACTICAS_COMPLEJIDAD_COGNITIVA, Keys.BUENAS_PRACTICAS_COMPLEJIDAD, Keys.META_ESTRUCTURAS_SISTEMAS_COMPLEJOS, Keys.LEYES_SILVER_BULLETS, Keys.LEYES_LEHMAN, Keys.BUENAS_PRACTICAS_COMPLEJIDAD_ALGORITMICA)
     ]
 ]);
 

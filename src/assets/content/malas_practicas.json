@@ -219,5 +219,19 @@
     "- Este problema es critico cuando se repite multiples veces en la base del código, principalmente porque aumenta el ruido durante la depuración ",
     "- Ambos procesos tienen costos y afectan el rendimiento del sistema, por lo que realizarlos de manera desmedida puede ralentizarlo ",
     "- La mantenibilidad del código disminuye al no tener claridad sobre el origen del error o la clase final que debe manejarlo "
+  ],
+  "complejidadAccidental": [
+    "- Cualquier proyecto de software es complejo por naturaleza o termina siendo complejo, muchas veces más de lo que esperamos ",
+    "- El concepto fue acuñado por <em>Fred Brooks</em>, en el artículo <strong>No Silver Bullet</strong> ",
+    "",
+    "<strong>Complejidad esencial:</strong> Es inherente al problema y no puede eliminarse, sin importar el enfoque elegido ",
+    "- Existen ocasiones donde puede reducirse, pero aunque se logre, siempre habra un minimo irreducible ",
+    "- Crear un vehículo autónomo o controlar un cohete espacial, son problemas complejos, sin importar el ángulo desde cual se mire ",
+    "",
+    "<strong>Complejidad accidental:</strong> Es una cuota extra que se agrega, ya sea por el desarrollador o por las propias herramientas ",
+    "- <em>Ver</em> implica que las imágenes deben ser procesadas, algo ajeno al problema esencial y propio de la solución técnica ",
+    "- Muchas prácticas y principios de la ingeniería existen justamente para minimizar la accidental, sin afectar la esencial ",
+    "",
+    "<strong>Todo proyecto lidia con ambas:</strong> Si bien acepta la complejidad esencial, debe evitar introducir la accidental por errores o malas decisiones "
   ]
 }
