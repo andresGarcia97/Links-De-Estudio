@@ -1,6 +1,6 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { ANALISIS_KEY, CONOCIMIENTO_EMPIRICO, CONOCIMIENTO_PSICOLOGICO_KEY, LEYES_KEY, LinkReferencia,
+import { ANALISIS_KEY, CONOCIMIENTO_EMPIRICO_REF, CONOCIMIENTO_PSICOLOGICO_KEY, LEYES_KEY, LinkReferencia,
   PEOPLE_KEY, PRINCIPIOS_KEY, WEB_KEY }
 from 'src/app/models/linkReferencia';
 import { Item, PreviousAndNextSection } from 'src/app/models/models';
@@ -15,13 +15,13 @@ export class ConocimientosEmpiricosComponent implements OnInit {
 
   items: Item[] = [];
 
-  components = CONOCIMIENTO_EMPIRICO;
+  components = CONOCIMIENTO_EMPIRICO_REF;
 
   itemStart = '';
 
   relatedSections = new Map<string, string>([]);
 
-  tittles = new Map([ ...CONOCIMIENTO_EMPIRICO ].map(([key, { tittleShort }]) => [key, tittleShort]));
+  tittles = new Map([ ...CONOCIMIENTO_EMPIRICO_REF ].map(([key, { tittleShort }]) => [key, tittleShort]));
 
   previousAndNextSection!: PreviousAndNextSection;
 

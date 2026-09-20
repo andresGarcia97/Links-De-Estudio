@@ -4,17 +4,17 @@ import { Referencia } from './models';
 export class LinkReferencia {
 
     public components: Map<string, Referencia> = new Map<string, Referencia>([
-        ...AGILES_REF,          ...CONTAINERS,              ...ANALISIS_REF,
+        ...AGILES_REF,          ...CONTAINERS_REF,          ...ANALISIS_REF,
         ...ARQUITECTURAS_REF,   ...BUENAS_PRACTICAS_REF,    ...ARQUITECTURAS_IMPL_REF,
-        ...COMPILACION_REF,     ...CONOCIMIENTO_EMPIRICO,   ...ESTRATEGIAS_DESARROLLO_REF,
-        ...FRAMEWORKS_REF,      ...PATRONES_ADVANCED_REF,   ...USER_HISTORIES,
+        ...COMPILACION_REF,     ...HARDWARE_REF,            ...ESTRATEGIAS_DESARROLLO_REF,
+        ...FRAMEWORKS_REF,      ...PATRONES_ADVANCED_REF,   ...USER_HISTORIES_REF,
         ...MALAS_PRACTICAS_REF, ...META_CARATERISTICAS_REF, ...META_ESTRUCTURAS_REF,
         ...METODOLOGIAS_REF,    ...NUBE_REF,                ...ANALISIS_DATA_REF,
-        ...PARADIGMAS_REF,      ...PATRONES_REF,            ...CONOCIMIENTO_PSICOLOGICO,
+        ...PARADIGMAS_REF,      ...PATRONES_REF,            ...CONOCIMIENTO_PSICOLOGICO_REF,
         ...POO_REF,             ...TESTING_REF,             ...TESTING_ADVANCED_REF,
         ...REFACTORING_REF,     ...REQUISITOS_REF,          ...PRINCIPIOS_REF,
         ...SECURITY_REF,        ...SMELL_CODES_REF,         ...PERSISTENCY_REF,
-        ...UML_REF,             ...VERSIONAMIENTO_REF,      ...HARDWARE_REF,
+        ...UML_REF,             ...VERSIONAMIENTO_REF,      ...CONOCIMIENTO_EMPIRICO_REF,
         ...WEB_REF,             ...LEYES_REF,               ...NEURO_MARKETING_REF,
         ...CI_CD_REF,           ...APIS_REF,                ...PERSISTENCY_ADVANCED_REF,
         ...MICRO_SERVICES_REF,  ...SYSTEM_DESIGN_REF,       ...MICRO_SERVICES_ADVANCED_REF,
@@ -543,7 +543,7 @@ export const EJECUCION_REF = new Map<string, Referencia>([
 ]);
 
 export const CONOCIMIENTO_EMPIRICO_KEY = 'Empirico';
-export const CONOCIMIENTO_EMPIRICO = new Map<string, Referencia>([
+export const CONOCIMIENTO_EMPIRICO_REF = new Map<string, Referencia>([
     [Keys.CONOCIMIENTOS_EMPIRICOS_CRISTALES_ROTOS, new Referencia('https://lamenteesmaravillosa.com/la-teoria-las-ventanas-rotas/', 'Cristales rotos ó Ventanas rotas', CONOCIMIENTO_EMPIRICO_KEY, 'Cristales rotos', '', '2026/04/18')
         .addRelatedItems(Keys.CALIDAD_CLEAN_CODE)
     ],
@@ -588,7 +588,7 @@ export const CONOCIMIENTO_EMPIRICO = new Map<string, Referencia>([
 ]);
 
 export const CONOCIMIENTO_PSICOLOGICO_KEY = 'Psicologico';
-export const CONOCIMIENTO_PSICOLOGICO = new Map<string, Referencia>([
+export const CONOCIMIENTO_PSICOLOGICO_REF = new Map<string, Referencia>([
     [Keys.CONOCIMIENTOS_PSICOLOGICOS_STATUS_QUO, new Referencia('https://psicologiaymente.com/social/sesgo-statu-quo/', 'Status Quo', CONOCIMIENTO_PSICOLOGICO_KEY, 'Status Quo', '', '2025/07/08')],
     [Keys.CONOCIMIENTOS_PSICOLOGICOS_COSTO_HUNDIDO, new Referencia('https://psicologiaymente.com/psicologia/falacia-costo-hundido/', 'Falacia del costo hundido', CONOCIMIENTO_PSICOLOGICO_KEY, 'Costo Hundido', '', '2026/04/18')
         .addRelatedItems(Keys.REFACTORING_REWRITE_TRAP)
@@ -648,7 +648,7 @@ export const LEYES_REF = new Map<string, Referencia>([
 ]);
 
 export const CONTENEDORES_KEY = 'Contenedores';
-export const CONTAINERS = new Map<string, Referencia>([
+export const CONTAINERS_REF = new Map<string, Referencia>([
     [Keys.CONTENEDORES_LXC, new Referencia('https://earthly.dev/blog/lxc-vs-docker/', 'Linux Containers', CONTENEDORES_KEY, 'Linux Containers', '', '2024/04/06')],
     [Keys.CONTENEDORES_DOCKER, new Referencia('https://www.xataka.com/otros/docker-a-kubernetes-entendiendo-que-contenedores-que-mayores-revoluciones-industria-desarrollo', '¿ Que es Docker ?', CONTENEDORES_KEY, 'Docker')],
     [Keys.CONTENEDORES_IMAGES, new Referencia('https://clouding.io/hc/es/articles/360010283060-Trabajando-con-im%C3%A1genes-en-Docker', '¿ Que es una imagen ?', CONTENEDORES_KEY, 'Imagenes', '', '2026/03/18')],
@@ -793,7 +793,7 @@ export const GIT_REF = new Map<string, Referencia>([
 ]);
 
 export const USER_HISTORIES_KEY = 'Historias-Usuario';
-export const USER_HISTORIES = new Map<string, Referencia>([
+export const USER_HISTORIES_REF = new Map<string, Referencia>([
     [Keys.USER_HISTORIES_USER_HISTORIES, new Referencia('https://apiumhub.com/es/tech-blog-barcelona/como-escribir-buenas-historias-de-usuario/', '¿ Que son las HU ?', USER_HISTORIES_KEY, '¿ Que son las HU ?', '2024/04/28')],
     [Keys.USER_HISTORIES_OBJECTIVES, new Referencia('https://apiumhub.com/es/tech-blog-barcelona/como-escribir-buenas-historias-de-usuario/', '¿ Que busca una HU ?', USER_HISTORIES_KEY, '¿ Que busca una HU ?', '2024/04/28')],
     [Keys.USER_HISTORIES_PARTS, new Referencia('https://apiumhub.com/es/tech-blog-barcelona/como-escribir-buenas-historias-de-usuario/', 'Partes de una HU', USER_HISTORIES_KEY, 'Partes')],

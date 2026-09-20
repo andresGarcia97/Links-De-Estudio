@@ -1,7 +1,7 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { 
-  AGILES_KEY, CONOCIMIENTO_EMPIRICO_KEY, LinkReferencia, PEOPLE_KEY, REQUISITOS_KEY, SYSTEM_DESIGN_KEY, USER_HISTORIES }
+  AGILES_KEY, CONOCIMIENTO_EMPIRICO_KEY, LinkReferencia, PEOPLE_KEY, REQUISITOS_KEY, SYSTEM_DESIGN_KEY, USER_HISTORIES_REF }
   from 'src/app/models/linkReferencia';
 import { Item, PreviousAndNextSection } from 'src/app/models/models';
 import { USER_HISTORIES_PATH } from 'src/app/models/relationsSummary';
@@ -15,13 +15,13 @@ export class HistoriaUsuarioComponent implements OnInit {
 
   items: Item[] = [];
 
-  components = USER_HISTORIES;
+  components = USER_HISTORIES_REF;
 
   itemStart = '';
 
   relatedSections = new Map<string, string>([]);
 
-  tittles = new Map([ ...USER_HISTORIES ].map(([key, { tittleShort }]) => [key, tittleShort]));
+  tittles = new Map([ ...USER_HISTORIES_REF ].map(([key, { tittleShort }]) => [key, tittleShort]));
 
   previousAndNextSection!: PreviousAndNextSection;
 

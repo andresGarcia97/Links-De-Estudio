@@ -1,6 +1,6 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { CI_CD_KEY, CONTAINERS, GIT_KEY, HARDWARE_KEY, LinkReferencia, NUBE_KEY, SECURITY_KEY, WEB_KEY }
+import { CI_CD_KEY, CONTAINERS_REF, GIT_KEY, HARDWARE_KEY, LinkReferencia, NUBE_KEY, SECURITY_KEY, WEB_KEY }
 from 'src/app/models/linkReferencia';
 import { Item, PreviousAndNextSection } from 'src/app/models/models';
 import { CONTENEDORES_PATH } from 'src/app/models/relationsSummary';
@@ -14,13 +14,13 @@ export class ContenedoresComponent implements OnInit {
 
   items: Item[] = [];
 
-  components = CONTAINERS;
+  components = CONTAINERS_REF;
 
   itemStart = '';
 
   relatedSections = new Map<string, string>([]);
 
-  tittles = new Map([ ...CONTAINERS ].map(([key, { tittleShort }]) => [key, tittleShort]));
+  tittles = new Map([ ...CONTAINERS_REF ].map(([key, { tittleShort }]) => [key, tittleShort]));
 
   previousAndNextSection!: PreviousAndNextSection;
 
