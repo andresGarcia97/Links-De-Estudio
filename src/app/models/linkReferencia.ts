@@ -462,8 +462,8 @@ export const COMPILACION_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS)
         .addMoreReferences('https://cs.stackexchange.com/questions/22472/why-is-non-determinism-a-useful-concept')
     ],
-    [Keys.COMPILACION_STRUCTURE_COMPILATOR, new Referencia('https://vicente-aguilera-perez.medium.com/estructura-general-de-un-compilador-df97892f91c3', 'Estructura de un compilador I', COMPILACION_KEY, 'Estructura general I', '2024/02/28')],
-    [Keys.COMPILACION_ELEMENTS_COMPILATOR, new Referencia('https://vicente-aguilera-perez.medium.com/estructura-general-de-un-compilador-df97892f91c3', 'Estructura de un compilador II', COMPILACION_KEY, 'Estructura general II', '2024/02/28')],
+    [Keys.COMPILACION_STRUCTURE_COMPILATOR, new Referencia('https://vicente-aguilera-perez.medium.com/estructura-general-de-un-compilador-df97892f91c3', 'Estructura de un compilador I', COMPILACION_KEY, 'Compilador I', '2024/02/28')],
+    [Keys.COMPILACION_ELEMENTS_COMPILATOR, new Referencia('https://vicente-aguilera-perez.medium.com/estructura-general-de-un-compilador-df97892f91c3', 'Estructura de un compilador II', COMPILACION_KEY, 'Compilador II', '2024/02/28')],
     [Keys.COMPILACION_DECOMPILE, new Referencia('https://www.techtarget.com/whatis/definition/decompile', 'Descompilar', COMPILACION_KEY, 'Descompilar', '2024/07/21')
         .addRelatedItems(Keys.ANALISIS_DATA_REVERSE_ENGINEERING)
     ]
@@ -471,7 +471,12 @@ export const COMPILACION_REF = new Map<string, Referencia>([
 
 export const BUILD_KEY = 'Build';
 export const BUILD_REF = new Map<string, Referencia>([
-    [Keys.BUILD_AZUCAR_SINTACTICO, new Referencia('https://es.wikipedia.org/wiki/Az%C3%BAcar_sint%C3%A1ctico', 'Azucar Sintactico', BUILD_KEY, 'Azucar Sintactico')],
+    [Keys.BUILD_SINTAXIS_SEMANTICA, new Referencia('https://softwareengineering.stackexchange.com/questions/113800/whats-the-difference-between-syntax-and-semantics', 'Sintaxis & Semantica', BUILD_KEY, 'Sintaxis & Semantica', '2026/09/19')
+        .addRelatedItems(Keys.NEURO_MARKETING_SEMANTICA_PRAGMATICA, Keys.BUENAS_PRACTICAS_STATIC_CODE_ANALYSIS, Keys.COMPILACION_STRUCTURE_COMPILATOR, Keys.COMPILACION_ELEMENTS_COMPILATOR)
+    ],
+    [Keys.BUILD_AZUCAR_SINTACTICO_SAL_SINTACTICA, new Referencia('https://www.genbeta.com/desarrollo/programar-seria-horrible-sin-el-azucar-sintactico-i', 'Azucar & Sal Sintactico', BUILD_KEY, 'Azucar/Sal Sintactico', '', '2026/09/19')
+        .addMoreReferences('https://www.genbeta.com/desarrollo/cometer-errores-seria-mas-facil-sin-la-sal-sintactica-ii')
+    ],
     [Keys.BUILD_COERCION, new Referencia('https://developer.mozilla.org/es/docs/Glossary/Type_coercion', 'Coerción', BUILD_KEY, 'Coerción')],
     [Keys.BUILD_DUCK_TYPING, new Referencia('https://devopedia.org/duck-typing', 'Duck Typing', BUILD_KEY, 'Duck Typing', '', '2024/11/23')],
     [Keys.BUILD_REPRESENTAR_AUSENCIA, new Referencia('https://www.luisllamas.es/concepto-null-undefined-none/', 'null, undefined y none', BUILD_KEY, 'Ausencia', '2026/07/24')

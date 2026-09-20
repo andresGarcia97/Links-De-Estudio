@@ -1,10 +1,28 @@
 {
-    "azucarSintactico": [
-        "- Termino acuñado para hacer referencia a las adiciones sintacticas de un lenguaje de programación ",
+    "sintaxis-semantica": [
+        "<strong>Sintaxis:</strong> Estructura o forma simbólica ",
+        "<strong>Semantica:</strong> Significado, válido o sin sentido ",
+        "",
+        "- Dos programas escritos en lenguajes diferentes podrian hacer lo mismo (semantica) pero los simbolos usados son diferentes (sintaxis) ",
+        "- Los compiladores revisan los simbolos en busca de infracciones a la sintaxis del lenguaje, pero no encuentran todos los errores semanticos ",
+        " - aun menos si son de lógica, para eso existen otras herramientas como los analizadores de código estatico "
+    ],
+    "azucarSintactico-salSintactica": [
+        "<strong>Azúcar sintatico</strong>",
+        "- Término acuñado por <em>Peter J. Landin</em> para hacer referencia a las adiciones sintacticas de un lenguaje de programación ",
         "- Estas adiciones se dan con el proposito de hacer que las construcciones sean más faciles de leer y expresar ",
         "- Esto no cambia el sentido semantico de las expresiones, pero si lo hace más entendible para el ser humano ",
-        "- Son aquellas expresiones que pueden ser borradas sin afectar el funcionamiento del programa, o su rendimiento ",
-        "- Parte del trabajo de los compiladores es desglosar estas expresiones a sus reducciones más basicas "
+        "",
+        "- Estas expresiones pueden ser borradas sin afectar el funcionamiento del programa o su rendimiento ",
+        "- Reducir la cantidad de sentencias ayuda a tener una mejor visión global y entendimiento de la acción ",
+        "- Parte del trabajo de los compiladores es desglosar estas expresiones a sus reducciones más basicas ",
+        "",
+        "<strong>Sal sintatica</strong>",
+        "- Su proposito es justo lo contrario: dificultar la labor de la programación, pero no de manera intencional ",
+        "- La verdadera intención es lograr que se conozca la estructura y la sintaxis, para que cometer errores sea más dificil ",
+        "- Un ejemplo de esto son los lenguajes fuertemente tipados y las operaciones de casting ",
+        "&bull; Lenguajes como Java o C#, no es que no sepan los tipos, es que esperan que tu como desarrollador tambien lo sepas ",
+        "&bull; Con las operaciones de casteo no es que no se puedan hacer automaticamente, lo vuelven explicito y visible para cualquiera "
     ],
     "coercion": [
         "- Es la conversion automatica o implicita de un tipo de dato a otro; Ejemplo: de string a number ",
