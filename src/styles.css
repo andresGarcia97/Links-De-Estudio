@@ -465,8 +465,14 @@ a:hover {
   padding-top: 16px;
   padding-bottom: 12px;
   overflow-y: hidden;
-  overflow-x: visible;
+  overflow-x: auto;
   background-color: var(--color-jet);
+}
+
+.terminal > .section-actions {
+  position: sticky;
+  left: 0;
+  width: 100%;
 }
 
 .terminal .window {
