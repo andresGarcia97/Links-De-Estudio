@@ -322,6 +322,10 @@ svg.material-icons:not(:last-child) {
   margin-top: 4px;
 }
 
+.section-actions {
+  flex-wrap: nowrap;
+}
+
 .card {
   border-radius: 6px;
   border: 1px solid var(--color-cultured);
@@ -882,6 +886,15 @@ button:disabled:hover {
 
   .terminal {
     max-width: 310px;
+  }
+
+  .section-actions {
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+
+  .section-actions .circle-link {
+    margin: 4px 4px;
   }
 
 }
