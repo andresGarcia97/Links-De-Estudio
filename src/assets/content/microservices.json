@@ -400,5 +400,24 @@
     "&brvbar; CDC                &brvbar; Muy Baja (ms)        &brvbar; Muy Alta    &brvbar; Medio-Bajo   &brvbar; Casi tiempo real &brvbar; Streaming, replicación de datos, analítica & BI             &brvbar;",
     "&brvbar; ETL/Lotes          &brvbar; Muy Alta (horas)     &brvbar; Media       &brvbar; Bajo         &brvbar; No crítica       &brvbar; Reportes, análisis, procesos programados, data warehouse    &brvbar;",
     "&brvbar; API Gateway        &brvbar; Baja (ms)            &brvbar; Media       &brvbar; Medio        &brvbar; Inmediata        &brvbar; API publicas y servicios empresariales con gran complejidad &brvbar;"
+  ],
+  "microservicesAsDefault": [
+    "- Los monolitos no son malos, ni contienen codigo mal hecho, esto siempre sera responsabilidad de los desarrolladores a cargo ",
+    "- Un punto que siempre va a estar en contra de los microservicios, es la capacidad para testearse de manera conjunta ",
+    "- El alcance de una prueba es determinado por cuanto se puede testear en una sola prueba, entre menor sea el alcance, ",
+    " - más se alejara de la experiencia final del usuario ",
+    "",
+    "- En un monolito el scope(alcanze) es facil debido a que todo esta contenido dentro de una aplicación que hace todo ",
+    "- En cambio en los microservicios, la complejidad del testing es directamente proporcional a sus relaciones y su funcionamiento en conjunto ",
+    "- Para hacer estas pruebas es necesario en ciertos escenarios usar <em>dummies</em> o <em>mocks</em> que son equivalentes, más no iguales, al comportamiento real ",
+    "",
+    "- En cambio en un monolito este mismo conjunto de pruebas puede hacerse relativamente con menos esfuerzo y recursos ",
+    "- Otro motivo en contra, es la infraestructura y la comunicación entre microservicios, que no deben ser ignoradas ",
+    " - ya que hacen parte fundamental del diseño de la aplicación, además de las complejidades inherentes que conllevan ",
+    "",
+    "- Un monolito no es mala idea, tampoco los microservicios, la gran diferencia es que no se deberian implementar en las primeras versiones ",
+    "- La complejidad extra y las divisiones entre dominios, desviaran el foco real de la aplicación de prestar un servicio de calidad ",
+    "- Realizar un monolito, permite que las necesidades y los requerimientos puedan madurar y evolucionar de manera natural ",
+    "- Esto no evita que se pueda hacer un modelado que facilite una futura migración a microservicios, cuando sea necesaria "
   ]
 }

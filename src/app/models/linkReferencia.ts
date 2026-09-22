@@ -475,6 +475,7 @@ export const BUILD_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.NEURO_MARKETING_SEMANTICA_PRAGMATICA, Keys.BUENAS_PRACTICAS_STATIC_CODE_ANALYSIS, Keys.COMPILACION_STRUCTURE_COMPILATOR, Keys.COMPILACION_ELEMENTS_COMPILATOR)
     ],
     [Keys.BUILD_AZUCAR_SINTACTICO_SAL_SINTACTICA, new Referencia('https://www.genbeta.com/desarrollo/programar-seria-horrible-sin-el-azucar-sintactico-i', 'Azucar & Sal Sintactico', BUILD_KEY, 'Azucar/Sal Sintactico', '', '2026/09/19')
+        .addRelatedItems(Keys.META_CARACTERISTICAS_TIPOS)
         .addMoreReferences('https://www.genbeta.com/desarrollo/cometer-errores-seria-mas-facil-sin-la-sal-sintactica-ii')
     ],
     [Keys.BUILD_COERCION, new Referencia('https://developer.mozilla.org/es/docs/Glossary/Type_coercion', 'Coerción', BUILD_KEY, 'Coerción')],
@@ -2048,14 +2049,14 @@ export const MICRO_SERVICES_REF = new Map<string, Referencia>([
     [Keys.MICROSERVICES_DATA_ACCESS_PATTERNS, new Referencia('https://medium.com/@jaredhatfield/data-access-patterns-in-microservices-1e51d26ee205', 'Acceso a datos & comunicación', MICRO_SERVICES_KEY, 'Comunicación', '2025/12/29', '2026/08/20')
         .addRelatedItems(Keys.NUBE_LATENCY, Keys.POO_COUPLING_AND_COHESION, Keys.APIS_REST_VS_MESSAGING, Keys.VERSIONAMIENTO_VERSIONAMIENTO, Keys.PERSISTENCY_ADVANCED_SCALING_DB, Keys.ANALISIS_DATA_ETL_ELT, Keys.ANALISIS_DATA_BATCH_VS_STREAM, Keys.ANALISIS_DATA_STREAMING_VS_MESSAGING, Keys.PATRONES_ADVANCED_MESSAGING, Keys.SYSTEM_DESIGN_CONCEPTS_II, Keys.VERSIONAMIENTO_EVOLUTION_SCHEMA_AND_SCHEMA_REGISTRY, Keys.ANALISIS_ASYNCHRONUS_WORKFLOW)
         .addMoreReferences('https://www.linkedin.com/posts/udayaidev_java-springboot-microservices-share-7490800811330121729-41_L/', 'https://nordicapis.com/what-are-over-fetching-and-under-fetching/')
+    ],
+    [Keys.MICROSERVICES_BY_DEFAULT, new Referencia('https://levelup.gitconnected.com/why-you-should-never-default-to-microservices-c952903fbcb6', 'Microservicios por defecto', MICRO_SERVICES_KEY, '¿ Usarlos por defecto ?', '2024/10/12')
+        .addRelatedItems(Keys.TESTING_MOCKS, Keys.APIS_REST_VS_MESSAGING, Keys.ARQUITECTURAS_IMPL_MONOLITOS)
     ]
 ]);
 
 export const MICRO_SERVICES_ADVANCED_KEY = 'Microservicios-Avanzado';
 export const MICRO_SERVICES_ADVANCED_REF = new Map<string, Referencia>([
-    [Keys.MICROSERVICES_ADVANCED_BY_DEFAULT, new Referencia('https://levelup.gitconnected.com/why-you-should-never-default-to-microservices-c952903fbcb6', 'Microservicios por defecto', MICRO_SERVICES_ADVANCED_KEY, '¿ Usarlos por defecto ?', '2024/10/12')
-        .addRelatedItems(Keys.TESTING_MOCKS, Keys.APIS_REST_VS_MESSAGING, Keys.ARQUITECTURAS_IMPL_MONOLITOS)
-    ],
     [Keys.MICROSERVICES_ADVANCED_ANTI_PATTERNS, new Referencia('https://blog.bitsrc.io/10-microservice-anti-patterns-278bcb7f385d', 'Antipatrones & Microservicios', MICRO_SERVICES_ADVANCED_KEY, 'Antipatrones', '2025/01/19', '2026/04/04')
         .addRelatedItems(Keys.SYSTEM_DESIGN_SINGLE_POINT_OF_FAILURE, Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION, Keys.OBSERVABILIDAD_OBSERVABILITY)
         .addMoreReferences('https://sacavix.substack.com/p/los-7-asesinos-de-la-arquitectura')
@@ -2102,6 +2103,10 @@ export const MICRO_SERVICES_ADVANCED_REF = new Map<string, Referencia>([
     [Keys.MICROSERVICES_ADVANCED_SPLIT_BRAIN, new Referencia('https://www.starwindsoftware.com/blog/whats-split-brain-and-how-to-avoid-it/', 'Split Brain', MICRO_SERVICES_ADVANCED_KEY, 'Split Brain', '2026/03/11')
         .addRelatedItems(Keys.PATRONES_ADVANCED_SAGA, Keys.CD_CI_MONITORING, Keys.ARQUITECTURAS_IMPL_EVENT_DRIVEN, Keys.NUBE_PACELC)
         .addMoreReferences('https://dzone.com/articles/split-brain-in-distributed-systems')
+    ],
+    [Keys.MICROSERVICES_ADVANCED_IMPORTANT_CONCEPTS, new Referencia('https://www.linkedin.com/posts/anton-martyniuk_i-paid-1000-to-learn-microservices-this-share-7506238011374968834-Qtqh/', 'Conceptos importantes & Aprendizajes', MICRO_SERVICES_ADVANCED_KEY, 'Conceptos importantes', '2026/09/20')
+        .addRelatedItems(Keys.ARQUITECTURAS_IMPL_MONOLITOS, Keys.MICROSERVICES_BY_DEFAULT, Keys.VERSIONAMIENTO_EVOLUTION_SCHEMA_AND_SCHEMA_REGISTRY, Keys.OBSERVABILIDAD_OBSERVABILITY, Keys.TESTING_CONTRACT_TESTING, Keys.SYSTEM_DESIGN_FAILS_I, Keys.SYSTEM_DESIGN_FAILS_II, Keys.ANALISIS_BOUNDED_CONTEXT, Keys.MALAS_PRACTICAS_DEATH_BY_MICROSERVICES, Keys.CD_CI_DEPLOYMENT_PIPELINES, Keys.PERSISTENCY_ADVANCED_SCALING_DB, Keys.CD_CI_DEPLOYMENT_PATTERNS)
+        .addMoreReferences('https://www.linkedin.com/posts/rocky-bhatia-a4801010_microservices-dont-fail-because-theyre-share-7505588571316154368-hlSD/')
     ]
 ]);
 
