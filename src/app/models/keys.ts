@@ -715,6 +715,7 @@ export const WEB_BUENAS_PRACTICAS = 'buenasPracticasFront';
 export const WEB_GOLDEN_SIGNALS = 'goldenSignals';
 export const WEB_SIMPLIFY_DESIGN = 'simplifyDesign';
 export const WEB_ARCHITECTURE = 'web-architecture';
+export const WEB_FRONTEND_ARCHITECTURE = 'frontend-architecture';
 export const REQUISITOS_FUNCIONALES = 'requisitos-funcionales';
 export const REQUISITOS_NO_FUNCIONALES = 'requisitos-no-funcionales';
 export const REQUISITOS_BUSINESS_VALUE = 'valorNegocio';

@@ -131,8 +131,7 @@
     " - son a su vez percibidos como parte de un grupo mayor "
   ],
   "SSR-CSR-SSG-ISR": [
-    "<strong>Server Side Rendering (SSR)</strong>",
-    "- El HTML de la pagina es generado en el lado del servidor, ya sea mediante petición, o previamente ",
+    "<strong>Server Side Rendering (SSR):</strong> El HTML de la pagina es generado en el lado del servidor, ya sea por petición o de manera estatica ",
     "- Ventajas: ",
     " - Mejora el SEO y la indexación del contenido ",
     " - La carga inicial es más rapida al no tener que ejecutar nada más para mostrar el contenido ",
@@ -141,8 +140,7 @@
     " - Mala capacidad de respuesta si la conectividad a internet es baja o nula ",
     " - Mayor carga al servidor, al también ser responsable de generar o entregar el HTML a mostrar ",
     "",
-    "<strong>Client Side Rendering (CSR)</strong>",
-    "- Ya es responsabilidad del navegador, y mediante Javascript se manipula el DOM para construir los nodos HTML ",
+    "<strong>Client Side Rendering (CSR):</strong> Responsabilidad del navegador y mediante Javascript se manipula el DOM para construir los nodos HTML ",
     "- Ventajas: ",
     " - Rapido y con una mayor capacidad de interactividad con solo la carga inicial ",
     " - Se puede escoger que partes del DOM se pueden actualizar para mostrar nueva información ",
@@ -155,8 +153,7 @@
     "- Creando contenido inicial en el lado del servidor que no este completamente vacio y agregarle más funcionalidades en el navegador ",
     "- El proceso de agregar más interactividad a estos sitios estaticos se conoce generalmente como \"Hidratación\" ",
     "",
-    "<strong>Static Site Generators(SSG)</strong>",
-    " - Estos ejecutan el código SPA en el momento de la compilación, y generan previamente el HTML en el servidor ",
+    "<strong>Static Site Generators(SSG):</strong> Ejecutan el código SPA en el momento de la compilación, y generan previamente el HTML en el servidor ",
     " - Algunos frameworks como NextJs, Gatsby, NuxtJs, VuePress usan estas estrategias, ",
     " - sin de dejar de ofrecer las caracteristicas de React y Vue en los cuales estan basados "
   ],
@@ -391,5 +388,30 @@
     "",
     "- Solo aplicaciones complejas o de gran envergadura suelen tener tantos componentes, no siempre son necesarios ni requeridos ",
     "- Generalmente se suele empezar con un sistema sencillo, al cual se le van agregando componentes en la medida que los problemas vayan resultando "
+  ],
+  "frontend-architecture": [
+    "- La visualización de los datos no empezo siendo compleja pero si muy fiable, como se necesitaba que fuera el internet en sus inicios ",
+    "- Los primeros sitios web eran simples paginas HTML, <strong>estaticas</strong> que se cargaban al instante y eran mucho menos propensos a fallar ",
+    "",
+    "- Posteriormente los frameworks y la arquitectura <strong>MVC</strong> permitieron generar HTML dinamico, desde el lado del servidor, por cada solicitud ",
+    "- Eran datos dinamicos, pero aun asi toda la pagina se recargaba completa de igual manera ",
+    "",
+    "- Llego la era de las <strong>SPA</strong> y cada vez el navegador empezo a tener más responsabilidades, enrutamiento, estado, validación, etc.. ",
+    "- Todo era cada vez más dinamico y las interfaces podian ser más complejas e interactivas, pero el problema era justo esperar que <em>cargara</em> ",
+    "",
+    "- Cada vez se difumina más la linea entre clientes ligeros (Servidor) y clientes pesados (Navegador) ",
+    "",
+    "<strong>Backend For Frontend:</strong> Una API diseñada para cada dispositivo que sirve para transformar las respuestas del backend ",
+    " - exclusivamente para las necesidades de la capa especifica, frontend, movil, dispositivos inteligentes, etc.. ",
+    "",
+    "<strong>Estrategias de renderizado:</strong> Es una parte que ha cambiado mucho en los ultimos años ",
+    "&bull; <strong>SSG:</strong> Crea todas las paginas durante la compilación y entrega archivos planos, la más rapida de todas ",
+    "&bull; <strong>ISR:</strong> Es SSG pero con partes que pueden actualizarse de manera dinamica sin renunciar al contenido estatico ",
+    "&bull; <strong>SSR:</strong> Genera HTML por solicitud y junto a JavaScript, se termina de darle interactividad ",
+    "&bull; <strong>CSR:</strong> Generación del HMTL en el lado del navegador, mediante JavaScript y la manipulación del DOM ",
+    "",
+    "<strong>Microfrontends:</strong> Un microfrontend trata cada dominio como su propia mini-aplicación desplegable ",
+    " - que normalmente se carga en tiempo de ejecución mediante un Shell que utiliza algo como Webpack Module Federation ",
+    "- Igual que en los microservicios si se hace bien suele haber independencia y cada equipo trabaja a su ritmo "
   ]
 }

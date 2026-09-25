@@ -1914,6 +1914,10 @@ export const WEB_REF = new Map<string, Referencia>([
     [Keys.WEB_ARCHITECTURE, new Referencia('https://medium.com/womenintechnology/modern-web-architecture-101-b430df7b9d8e', 'Modern Web Architecture', WEB_KEY, 'Web Architecture', '2026/08/09')
         .addRelatedItems(Keys.CD_CI_HIDDEN_LAYERS, Keys.FRAMEWORKS_HIDDEN_LAYERS, Keys.NUBE_DNS, Keys.NUBE_LOAD_BALANCING, Keys.NUBE_NATIVE, Keys.PERSISTENCY_INTERMEDIATE_SQL_NO_SQL, Keys.EJECUCION_CACHE_AND_TYPES, Keys.NUBE_CDN_RTT, Keys.SECURITY_ATTACK_PROTOCOLOS, Keys.OBSERVABILIDAD_OBSERVABILITY)
         .addMoreReferences('https://medium.com/storyblocks-engineering/web-architecture-101-a3224e126947')
+    ],
+    [Keys.WEB_FRONTEND_ARCHITECTURE, new Referencia('https://medium.com/@TusharKanjariya/every-frontend-architecture-pattern-explained-a7ec07e7bbbb', 'Frontened Arquitecture', WEB_KEY, 'Frontened Arquitecture', '2026/09/24')
+        .addRelatedItems(Keys.ARQUITECTURAS_IMPL_MVC, Keys.ESTRATEGIAS_DESARROLLO_BFF)
+        .addMoreReferences('https://micro-frontends.org/', 'https://webpack.js.org/concepts/module-federation/', 'https://web.dev/explore/mini-apps?hl=es-419')
     ]
 ]);
 
