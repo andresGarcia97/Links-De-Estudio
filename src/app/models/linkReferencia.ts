@@ -418,6 +418,10 @@ export const CALIDAD_REF = new Map<string, Referencia>([
     [Keys.CALIDAD_QUALITY_GATES, new Referencia('https://docs.sonarqube.org/latest/user-guide/quality-gates/', 'Politicas de calidad', CALIDAD_KEY, 'Politicas de calidad')],
     [Keys.CALIDAD_QUALITY_METRICS, new Referencia('https://docs.sonarqube.org/latest/user-guide/metric-definitions/', 'Definición de Metricas', CALIDAD_KEY, 'Metricas de calidad')],
     [Keys.CALIDAD_CODE_REVIEWS, new Referencia('https://www.atlassian.com/blog/add-ons/code-review-best-practices', 'Revisiones de codigo', CALIDAD_KEY, 'Revisiones')],
+    [Keys.CALIDAD_CODE_REVIEWS_ARCHITECTURE, new Referencia('https://medium.com/@vndpal/how-i-review-tech-architecture-as-a-senior-developer-for-better-results-aca52c80fbbe', 'Revisiones de arquitectura', CALIDAD_KEY, 'Revisiones de Arquitectura', '2026/09/26')
+        .addRelatedItems(Keys.ARQUITECTURAS_DECISIONS, Keys.SYSTEM_DESIGN_FAILS_I, Keys.SYSTEM_DESIGN_III, Keys.EJECUCION_CACHE_AND_TYPES, Keys.CD_CI_FAILOVER, Keys.SYSTEM_DESIGN_SINGLE_POINT_OF_FAILURE, Keys.CD_CI_STATELESS_STATEFUL, Keys.SYSTEM_DESIGN_RESILIENCE, Keys.EJECUCION_CACHE_EVICTION)
+        .addMoreReferences('https://medium.com/javarevisited/the-architecture-decisions-i-expect-a-staff-engineer-to-defend-ac4b530c843f')
+    ],
     [Keys.CALIDAD_CODE_REVIEWS_IA, new Referencia('https://thilo-hermann.medium.com/the-agent-writes-10-000-lines-before-lunch-good-luck-reviewing-them-34aa69bf0db1', 'Revision y Generacion de código con IA', CALIDAD_KEY, 'Revisiones con IA', '2026/08/03')
         .addRelatedItems(Keys.BUENAS_PRACTICAS_DEBUGGING, Keys.REQUISITOS_KPI_OKR, Keys.CD_CI_DEV_SEC_OPS)
         .addMoreReferences('https://redwerk.es/blog/revisiones-de-codigo-impulsadas-por-ia/')
