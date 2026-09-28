@@ -533,6 +533,10 @@ export const EJECUCION_REF = new Map<string, Referencia>([
     [Keys.EJECUCION_MEMORY_PROFILING, new Referencia('https://digma.ai/9-best-java-profilers-to-use-in-2024/', 'Profiling', EJECUCION_KEY, 'Profiling', '2024/05/05')],
     [Keys.EJECUCION_BLOCKING_AND_NO_BLOCKING, new Referencia('https://www.geeksforgeeks.org/blocking-and-nonblocking-io-in-operating-system/', 'Operaciones Bloqueantes & No Bloqueantes', EJECUCION_KEY, 'Bloqueos/Sin Bloqueos', '2024/05/12')],
     [Keys.EJECUCION_CACHE_AND_TYPES, new Referencia('https://medium.com/@junfeng0828/d884ccac7c87', 'Estrategias del Cache', EJECUCION_KEY, 'Estrategias del Cache', '2024/10/19')],
+    [Keys.EJECUCION_CACHE_EVICTION, new Referencia('https://bytebytego.com/guides/most-popular-cache-eviction/', 'Invalidación del Cache', EJECUCION_KEY, 'Cache Eviction', '2026/09/26')
+        .addRelatedItems(Keys.SYSTEM_DESIGN_CONCEPTS_I, Keys.OBSERVABILIDAD_COMMON_METRICS_I)
+        .addMoreReferences('https://medium.com/@premchandu.in/7-cache-eviction-strategies-you-should-know-0bc4f08fd414')
+    ],
     [Keys.EJECUCION_DEAD_LOCKS, new Referencia('https://www.linkedin.com/posts/bytebytego_systemdesign-coding-interviewtips-activity-7288797053613166592-CNce/', 'DeadLocks - Bloqueos', EJECUCION_KEY, 'DeadLocks - Bloqueos', '2025/01/26')
         .addRelatedItems(Keys.PERSISTENCY_ADVANCED_LOCKING, Keys.PERSISTENCY_DBMS, Keys.PERSISTENCY_DL)
     ],

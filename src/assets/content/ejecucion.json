@@ -268,6 +268,27 @@
     "- Es el escenario donde existe la mayor posibilidad de tener problemas en la coherencia de los datos, a cambio de reducir la presión sobre la BD ",
     "- Es util en sistemas donde se tengan una cantidad incesante de escrituras que requieran ser procesadas de manera eficiente "
   ],
+  "cacheEviction": [
+    "- El cache reduce la latencia y la carga que antes recaía sobre bases de datos y servicios, pues las lecturas frecuentes se resuelven directamente en memoria ",
+    "- Pero como la memoria es finita, si se acumulan datos obsoletos el hit ratio cae y las ventajas se degradan; de ahí las estrategias de eviction según el caso ",
+    "",
+    "<strong>TTL - Time To Live:</strong> Los elementos se eliminan tras un tiempo predeterminado; es la implementación más sencilla adecuada para una ",
+    " - expiración controlada de datos que tienen una validez limitada, como sesiones o tokens ",
+    "",
+    "<strong>LRU - Least Recently Used:</strong> Elimina primero los datos que no se han usando en más tiempo, funciona bien cuando los patrones de acceso presentan comportamientos temporales, ",
+    " - es decir que los datos recientemente accedidos son los más usados ",
+    "",
+    "<strong>LFU - Least Frequently Used:</strong> Elimina el elemento menos usado, segun la cantidad de accesos, es util donde los elementos más usados deben perdurar ",
+    "",
+    "<strong>MRU - Most Recently Used:</strong> Elimina primero los elementos accedidos más recientes y aunque parezca contraintuitivo resulta útil en situaciones ",
+    " - donde los datos tienen un tiempo de utilidad corto, como procesamiento de lotes o acciones en tiempo real ",
+    "",
+    "<strong>RR - Random Replacement:</strong> Si el cache esta lleno, escoge elementos aleatorios para borrarlos, esto es eficaz ",
+    " - en sistemas con patrones de acceso impredecibles o altamente dinámicos y que necesitan poca o sobrecarga al hacerlo ",
+    "",
+    "<strong>Almacenamiento en 2 niveles (L1/L2):</strong> Combina 2 capas de cache, la primera que es un cache local (memoria) y una capa remota (distribuida) ",
+    " - donde la primera capa es ultrarapida (caliente) y la segunda (tibios) viven los datos que necesitan rapidez pero no siempre son usados "
+  ],
   "deadLocks-bloqueos": [
     "- Un punto muerto ó un Bloqueo se da cuando 2 ó más transacciones estan esperando entre si para liberar recursos bloqueados ",
     "- Asi ninguna transacción puede continuar, pero tampoco deja el camino libre para que otras continuen, creando una espera infinita ",
