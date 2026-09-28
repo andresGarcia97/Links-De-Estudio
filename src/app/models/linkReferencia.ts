@@ -519,19 +519,27 @@ export const EJECUCION_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.SYSTEM_DESIGN_FAILS_I, Keys.HARDWARE_IO_BOUND_CPU_BOUND, Keys.HARDWARE_FALSE_SHARING)
         .addMoreReferences('https://www.baeldung.com/cs/concurrency-vs-parallelism', 'https://medium.com/@akovtun/concurrency-parallelism-processes-threads-thread-safe-systems-1d4e7d351824')
     ],
-    [Keys.EJECUCION_RECURSIVIDAD, new Referencia('https://geekytheory.com/que-es-la-recursividad/', 'Recursividad', EJECUCION_KEY, 'Recursividad')],
+    [Keys.EJECUCION_RECURSIVIDAD, new Referencia('https://codigofacilito.com/articles/articulo_16_10_2019_16_22_35', 'Recursividad', EJECUCION_KEY, 'Recursividad', '', '2026/09/27')
+        .addRelatedItems(Keys.BUILD_CALLS_AND_INVOCATION)
+    ],
     [Keys.EJECUCION_BACKTRACKING, new Referencia('https://www.ecured.cu/Vuelta_atr%C3%A1s_(backtracking)', 'Back Tracking', EJECUCION_KEY, 'Back tracking')],
     [Keys.EJECUCION_OBJECT_CREATION, new Referencia('https://medium.com/technology-hits/minimizing-object-creation-for-high-performance-java-applications-553f9c9278c1', 'Creacion de Objetos', EJECUCION_KEY, 'Objetos', '2024/11/23')
         .addRelatedItems(Keys.PATRONES_DESGLOSE_GOF, Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION)
     ],
+    [Keys.EJECUCION_MEMORY_MANAGEMENT, new Referencia('https://prepare.sh/articles/memory-management-fundamentals', 'Manejo de la memoria', EJECUCION_KEY, 'Manejo de la memoria', '2025/04/28', '2026/09/27')
+        .addRelatedItems(Keys.COMPILACION_INTERPRETADOS, Keys.COMPILACION_COMPILACION, Keys.PARADIGMAS_IMPERATIVO, Keys.POO_INMUTABILITY)
+        .addMoreReferences("https://medium.com/@alexander.paul.gilbert/oop-vs-functional-is-dead-ff51a70c83ce")
+    ],
     [Keys.EJECUCION_MEMORY_AND_GARBAGE, new Referencia('https://www.computerworld.com/article/2596992/memory-leaks-and-garbage-collection.html', 'Fugas de memoria y recoleccion de basura', EJECUCION_KEY, 'Fugas de memoria', '')],
     [Keys.EJECUCION_FOOTPRINT, new Referencia('https://www.pcmag.com/encyclopedia/term/memory-footprint', 'Huella en memoria', EJECUCION_KEY, 'Huellas de memoria', '2023/11/03')],
+    [Keys.EJECUCION_MEMORY_SAFETY, new Referencia('https://stackoverflow.blog/2024/03/04/in-rust-we-trust-white-house-office-urges-memory-safety', 'Seguridad en la memoria', EJECUCION_KEY, 'Seguridad en la memoria', '2024/03/26')],
+    [Keys.EJECUCION_MEMORY_PROFILING, new Referencia('https://grafana.com/docs/pyroscope/latest/introduction/what-is-profiling/', 'Profiling', EJECUCION_KEY, 'Profiling', '2024/05/05', '2026/09/27')
+        .addRelatedItems(Keys.TESTING_ADVANCED_PERFORMANCE)
+    ],
+    [Keys.EJECUCION_BLOCKING_AND_NO_BLOCKING, new Referencia('https://www.geeksforgeeks.org/blocking-and-nonblocking-io-in-operating-system/', 'Operaciones Bloqueantes & No Bloqueantes', EJECUCION_KEY, 'Bloqueos/Sin Bloqueos', '2024/05/12')],
     [Keys.EJECUCION_FEATURE_FLAGS, new Referencia('https://www.optimizely.com/optimization-glossary/feature-flags/', 'Feature Flags', EJECUCION_KEY, 'Feature Flags', '2023/11/30', '2025/05/12')
         .addRelatedItems(Keys.CD_CI_DEPLOYMENT_PATTERNS)
     ],
-    [Keys.EJECUCION_MEMORY_SAFETY, new Referencia('https://stackoverflow.blog/2024/03/04/in-rust-we-trust-white-house-office-urges-memory-safety', 'Seguridad en la memoria', EJECUCION_KEY, 'Seguridad en la memoria', '2024/03/26')],
-    [Keys.EJECUCION_MEMORY_PROFILING, new Referencia('https://digma.ai/9-best-java-profilers-to-use-in-2024/', 'Profiling', EJECUCION_KEY, 'Profiling', '2024/05/05')],
-    [Keys.EJECUCION_BLOCKING_AND_NO_BLOCKING, new Referencia('https://www.geeksforgeeks.org/blocking-and-nonblocking-io-in-operating-system/', 'Operaciones Bloqueantes & No Bloqueantes', EJECUCION_KEY, 'Bloqueos/Sin Bloqueos', '2024/05/12')],
     [Keys.EJECUCION_CACHE_AND_TYPES, new Referencia('https://medium.com/@junfeng0828/d884ccac7c87', 'Estrategias del Cache', EJECUCION_KEY, 'Estrategias del Cache', '2024/10/19')],
     [Keys.EJECUCION_CACHE_EVICTION, new Referencia('https://bytebytego.com/guides/most-popular-cache-eviction/', 'Invalidación del Cache', EJECUCION_KEY, 'Cache Eviction', '2026/09/26')
         .addRelatedItems(Keys.SYSTEM_DESIGN_CONCEPTS_I, Keys.OBSERVABILIDAD_COMMON_METRICS_I)
@@ -539,10 +547,6 @@ export const EJECUCION_REF = new Map<string, Referencia>([
     ],
     [Keys.EJECUCION_DEAD_LOCKS, new Referencia('https://www.linkedin.com/posts/bytebytego_systemdesign-coding-interviewtips-activity-7288797053613166592-CNce/', 'DeadLocks - Bloqueos', EJECUCION_KEY, 'DeadLocks - Bloqueos', '2025/01/26')
         .addRelatedItems(Keys.PERSISTENCY_ADVANCED_LOCKING, Keys.PERSISTENCY_DBMS, Keys.PERSISTENCY_DL)
-    ],
-    [Keys.EJECUCION_MEMORY_MANAGEMENT, new Referencia('https://peerdh.com/blogs/programming-insights/understanding-memory-management-in-programming-paradigms', 'Manejo de la memoria', EJECUCION_KEY, 'Manejo de la memoria', '2025/04/28')
-        .addRelatedItems(Keys.COMPILACION_INTERPRETADOS, Keys.COMPILACION_COMPILACION, Keys.PARADIGMAS_IMPERATIVO, Keys.POO_INMUTABILITY)
-        .addMoreReferences("https://medium.com/@alexander.paul.gilbert/oop-vs-functional-is-dead-ff51a70c83ce")
     ],
     [Keys.EJECUCION_ASINCRONISMO, new Referencia('https://code.likeagirl.io/concurrency-parallelism-async-47312e0be553', 'Asincronismo', EJECUCION_KEY, 'Asincronismo', '2026/03/30')
         .addRelatedItems(Keys.HARDWARE_LAWS_SCALABILITY, Keys.MALAS_PRACTICAS_CALLBACK_HELL, Keys.HARDWARE_IO_BOUND_CPU_BOUND, Keys.POO_INMUTABILITY, Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS)
