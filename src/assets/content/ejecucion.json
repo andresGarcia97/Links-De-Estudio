@@ -330,6 +330,8 @@
     "<strong>MRU - Most Recently Used:</strong> Elimina primero los elementos accedidos más recientes y aunque parezca contraintuitivo resulta útil en situaciones ",
     " - donde los datos tienen un tiempo de utilidad corto, como procesamiento de lotes o acciones en tiempo real ",
     "",
+    "<strong>FIFO - First In, First Out:</strong> Elimina los elementos en el orden que fueron agregados, independientemente de la frecuencia de acceso ",
+    "",
     "<strong>RR - Random Replacement:</strong> Si el cache esta lleno, escoge elementos aleatorios para borrarlos, esto es eficaz ",
     " - en sistemas con patrones de acceso impredecibles o altamente dinámicos y que necesitan poca o sobrecarga al hacerlo ",
     "",

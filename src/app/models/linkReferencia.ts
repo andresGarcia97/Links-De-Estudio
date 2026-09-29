@@ -542,7 +542,7 @@ export const EJECUCION_REF = new Map<string, Referencia>([
     ],
     [Keys.EJECUCION_CACHE_AND_TYPES, new Referencia('https://medium.com/@junfeng0828/d884ccac7c87', 'Estrategias del Cache', EJECUCION_KEY, 'Estrategias del Cache', '2024/10/19')],
     [Keys.EJECUCION_CACHE_EVICTION, new Referencia('https://bytebytego.com/guides/most-popular-cache-eviction/', 'Invalidación del Cache', EJECUCION_KEY, 'Cache Eviction', '2026/09/26')
-        .addRelatedItems(Keys.SYSTEM_DESIGN_CONCEPTS_I, Keys.OBSERVABILIDAD_COMMON_METRICS_I)
+        .addRelatedItems(Keys.SYSTEM_DESIGN_CONCEPTS_I, Keys.OBSERVABILIDAD_COMMON_METRICS_I, Keys.META_ESTRUCTURAS_ESTRUCTURAS_DATOS_II)
         .addMoreReferences('https://medium.com/@premchandu.in/7-cache-eviction-strategies-you-should-know-0bc4f08fd414')
     ],
     [Keys.EJECUCION_DEAD_LOCKS, new Referencia('https://www.linkedin.com/posts/bytebytego_systemdesign-coding-interviewtips-activity-7288797053613166592-CNce/', 'DeadLocks - Bloqueos', EJECUCION_KEY, 'DeadLocks - Bloqueos', '2025/01/26')
@@ -1039,7 +1039,7 @@ export const APIS_REF = new Map<string, Referencia>([
         .addMoreReferences('https://aws.amazon.com/what-is/restful-api/')
     ],
     [Keys.APIS_MADURITY, new Referencia('https://restfulapi.net/richardson-maturity-model/', 'Nivel de madurez de una API', APIS_KEY, 'Nivel de Madurez')],
-    [Keys.APIS_HTTP_CODES, new Referencia('https://developer.mozilla.org/es/docs/Web/HTTP/Status', 'Codigos Http', APIS_KEY, 'Codigos HTTP')],
+    [Keys.APIS_HTTP_CODES, new Referencia('https://developer.mozilla.org/es/docs/Web/HTTP/Status', 'Codigos Http', APIS_KEY, 'Codigos HTTP', '', '2026/09/28')],
     [Keys.APIS_HATEOAS, new Referencia('https://www.adictosaltrabajo.com/2013/12/02/spring-hateoas/', 'HATEOAS', APIS_KEY, 'HATEOAS', '2022/11/04')],
     [Keys.APIS_STANDARS, new Referencia('https://medium.com/@trgoodwill/writing-api-design-standards-84cb7cbb3fd7', 'Standares API', APIS_KEY, 'Standares API', '2023/01/03')],
     [Keys.APIS_GATEWAY, new Referencia('https://nordicapis.com/whats-the-difference-between-an-api-gateway-and-a-load-balancer/', 'API Gateway', APIS_KEY, 'Api Gateway', '2023/02/05')],
