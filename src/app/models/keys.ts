@@ -318,6 +318,7 @@ export const APIS_API = 'api';
 export const APIS_REST_FULL = 'apiRestFull';
 export const APIS_MADURITY = 'apiMadurity';
 export const APIS_HTTP_CODES = 'httpCodes';
+export const APIS_HTTP_METHODS = 'httpMethods';
 export const APIS_HATEOAS = 'HATEOAS';
 export const APIS_STANDARS = 'apiStandars';
 export const APIS_GATEWAY = 'apiGateway';

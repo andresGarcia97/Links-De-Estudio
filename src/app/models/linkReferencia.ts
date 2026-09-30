@@ -1040,6 +1040,10 @@ export const APIS_REF = new Map<string, Referencia>([
     ],
     [Keys.APIS_MADURITY, new Referencia('https://restfulapi.net/richardson-maturity-model/', 'Nivel de madurez de una API', APIS_KEY, 'Nivel de Madurez')],
     [Keys.APIS_HTTP_CODES, new Referencia('https://developer.mozilla.org/es/docs/Web/HTTP/Status', 'Codigos Http', APIS_KEY, 'Codigos HTTP', '', '2026/09/28')],
+    [Keys.APIS_HTTP_METHODS, new Referencia('https://newsletter.systemdesignclassroom.com/p/a-survival-kit-to-beat-apis-interview', 'Metodos HTTP', APIS_KEY, 'Metodos HTTP', '2026/09/28')
+        .addRelatedItems(Keys.PERSISTENCY_CRUD, Keys.SECURITY_AUTHENTICATION_WAYS, Keys.VERSIONAMIENTO_VERSIONAMIENTO, Keys.PERSISTENCY_ADVANCED_UPSERT, Keys.BUILD_SINTAXIS_SEMANTICA)
+        .addMoreReferences('https://escueladeprogramacion.net/blog/el-nuevo-metodo-http-query-rfc-10008-guia-de-implementacion')
+    ],
     [Keys.APIS_HATEOAS, new Referencia('https://www.adictosaltrabajo.com/2013/12/02/spring-hateoas/', 'HATEOAS', APIS_KEY, 'HATEOAS', '2022/11/04')],
     [Keys.APIS_STANDARS, new Referencia('https://medium.com/@trgoodwill/writing-api-design-standards-84cb7cbb3fd7', 'Standares API', APIS_KEY, 'Standares API', '2023/01/03')],
     [Keys.APIS_GATEWAY, new Referencia('https://nordicapis.com/whats-the-difference-between-an-api-gateway-and-a-load-balancer/', 'API Gateway', APIS_KEY, 'Api Gateway', '2023/02/05')],

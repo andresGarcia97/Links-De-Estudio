@@ -14,7 +14,9 @@
 | &bull; | • | Viñeta / bullet (punto de lista). |
 | &brvbar; | ¦ | Barra quebrada (broken bar). Se usa aquí para dibujar bordes/columnas en texto. |
 | &rarr; | → | Flecha hacia la derecha (rightwards arrow). |
+| &larr; | ← | Flecha hacia la izquierda (left arrow). |
 | &uarr; | ↑ | Flecha hacia arriba (upwards arrow). |
+| &darr; | ↓ | Flecha hacia abajo (down arrow). |
 | &#x2713; | ✓ | Marca de verificación / check (U+2713). |
 | <ins>&#x2713;</ins>|✓ | Marca de verificación color verde (mediante CSS) |
 | &#x2717; | ✗ | Marca de cruz / equis (BALLOT X, U+2717). Indica fallo/error. |
