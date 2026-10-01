@@ -189,14 +189,16 @@
     " - Además de que cada tema y subtema a su vez tiene fuentes de profundización, presentes en el articulo original "
   ],
   "apiGateway": [
-    "- Aunque sean terminos similares, un Api gateway y un Balanceador de carga son soluciones diferetes, para muchos problemas similares ",
-    "<strong>- Api Gateway:</strong> Son una capa de filtración para las ya conocidas APIs, permitiendo que los clientes puedan realizar llamados y obtener el recurso ",
-    "<strong>- Balanceador de carga:</strong> Es un sistema para equilibrar todo el trafico de nuestra aplicación, permitiendo que no se sobrecarguen los servidores ",
+    "<strong>- API Gateway:</strong> Punto de entrada único que recibe las solicitudes de los clientes y las enruta al servicio o API de backend que corresponda ",
+    "<strong>- Balanceador de carga:</strong> Es un sistema para equilibrar todo el tráfico de nuestra aplicación, evitando que se sobrecarguen los servidores ",
+    "<strong>- Ingress (Kubernetes):</strong> Define reglas que enrutan el tráfico externo (HTTP y HTTPS) a los Services del clúster, mediante un Ingress Controller ",
     "",
-    "- Una de las principales diferencias radica en que el Api Gateway puede realizar tratamientos a la petición entrante, ",
-    " - como autenticación, validaciones, formateo, priorización, además de ofuscamiento y funcionar como posible limitador ",
-    "- Por otro lado su contraparte, solo le interesa distribuir el trafico de la red, de manera que ningun nodo o servidor, ",
-    " - llegue a saturarse mientras que otros no esten realizando ninguna acción, y en algunos casos hasta puede funcionar como firewall "
+    "- Aunque sean conceptos similares, viven en capas diferentes y no es raro que se junten para tener una solución completa ",
+    " Internet &rarr; API Gateway &rarr; Balanceador &rarr; Ingress; este es un ejemplo de topología, pero pueden haber más de acuerdo a cada necesidad ",
+    "",
+    "- El API Gateway puede procesar la petición entrante (autenticación, validaciones, transformación, caché) y además aplicar rate limiting ",
+    "- El Balanceador solo distribuye el tráfico de la red entre los nodos, y en algunos casos hasta puede funcionar como firewall si se le integra uno ",
+    "- El Ingress es la puerta para todo el tráfico de entrada hacia el clúster, no es comun que se exponga a internet de manera directa "
   ],
   "apiArquitecturalStyles": [
     "<strong>REST (Representational State Transfer)</strong> El campeon en cuanto a simplicidad y ubicuidad, este aprovecha los métodos HTTP y Json",
@@ -418,7 +420,7 @@
     "- Un cubo contiene una cantidad fija de fichas ",
     "- Los tokens se agregan al cubo a una tasa fija y cuando llega una solicitud: ",
     "- Si hay un token disponible se elimina del cubo y se permite la solicitud, si no la solicitud se rechaza o se retrasa ",
-    "- Permite un alto trafico de solicitudes o rafagas siempre y cuando haya capacidad ",
+    "- Permite un alto tráfico de solicitudes o rafagas siempre y cuando haya capacidad ",
     "",
     "<strong>Leaky bucket</strong>",
     "- Se puede ver como un cubo de agua que pierde agua a un ritmo fijo ",

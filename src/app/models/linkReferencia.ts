@@ -1046,7 +1046,10 @@ export const APIS_REF = new Map<string, Referencia>([
     ],
     [Keys.APIS_HATEOAS, new Referencia('https://www.adictosaltrabajo.com/2013/12/02/spring-hateoas/', 'HATEOAS', APIS_KEY, 'HATEOAS', '2022/11/04')],
     [Keys.APIS_STANDARS, new Referencia('https://medium.com/@trgoodwill/writing-api-design-standards-84cb7cbb3fd7', 'Standares API', APIS_KEY, 'Standares API', '2023/01/03')],
-    [Keys.APIS_GATEWAY, new Referencia('https://nordicapis.com/whats-the-difference-between-an-api-gateway-and-a-load-balancer/', 'API Gateway', APIS_KEY, 'Api Gateway', '2023/02/05')],
+    [Keys.APIS_GATEWAY, new Referencia('https://nordicapis.com/whats-the-difference-between-an-api-gateway-and-a-load-balancer/', 'API Gateway', APIS_KEY, 'Api Gateway', '2023/02/05', '2026/09/30')
+        .addRelatedItems(Keys.NUBE_LOAD_BALANCING, Keys.CONTENEDORES_KUBERNETES, Keys.SECURITY_ATTACK_FIREWALL)
+        .addMoreReferences('https://www.linkedin.com/posts/keertitangudu_aws-kubernetes-eks-share-7509853029723111424-Rnr7/', 'https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/')
+    ],
     [Keys.APIS_ARQUITECTURAL_STYLES, new Referencia('https://www.linkedin.com/feed/update/urn:li:activity:7095365669969350656/', 'Estilos de Arquitectura API', APIS_KEY, 'Estilos de Arquitectura API', '2023/09/08', '2025/05/25')
         .addMoreReferences('https://www.linkedin.com/posts/sahnlam_the-evolving-landscape-of-api-protocols-activity-7327908459499134976-QxHK/')
     ],
