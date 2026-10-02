@@ -602,6 +602,9 @@ export const CONOCIMIENTO_EMPIRICO_REF = new Map<string, Referencia>([
     [Keys.CONOCIMIENTOS_EMPIRICOS_PROGRAMING_TACTIC_VS_STRATEGIC, new Referencia('https://newsletter.pragmaticengineer.com/p/the-philosophy-of-software-design', 'Programación Tactica vs Estrategica', CONOCIMIENTO_EMPIRICO_KEY, 'Tactica vs Estrategia', '2026/08/23')
         .addRelatedItems(Keys.REFACTORING_DEUDA_TECNICA, Keys.ESTRATEGIAS_DESARROLLO_BOTTOM_UP_AND_TOP_DOWN, Keys.ARQUITECTURAS_IMPL_DESCOMPOSICION_MODULAR, Keys.ESTRATEGIAS_DESARROLLO_TDD, Keys.METODOLOGIAS_AGILES, Keys.META_ESTRUCTURAS_SISTEMAS_COMPLEJOS, Keys.CALIDAD_CODE_ROT, Keys.REFACTORING_DEUDA_TECNICA_TYPES)
         .addMoreReferences('https://dev.to/menilek/til-today-i-learned-tactical-vs-strategic-programming-14ae')
+    ],
+    [Keys.CONOCIMIENTOS_EMPIRICOS_PUTT_PETER, new Referencia('https://hacker-laws.com/#putts-law', 'Ley de Putt & Principio de Peter', CONOCIMIENTO_EMPIRICO_KEY, 'Peter & Putt', '2026/10/01')
+        .addMoreReferences('https://hacker-laws.com/#the-peter-principle', 'https://hacker-laws.com/#the-dilbert-principle')
     ]
 ]);
 
@@ -662,6 +665,9 @@ export const LEYES_REF = new Map<string, Referencia>([
     ],
     [Keys.LEYES_BRANDOLINI, new Referencia('https://psicologiaymente.com/social/ley-de-brandolini', 'Ley de Brandolini', LEYES_KEY, 'Ley de Brandolini', '2026/05/28')
         .addRelatedItems(Keys.PEOPLE_SINDROMES_LABORALES, Keys.CONOCIMIENTOS_PSICOLOGICOS_SESGOS_COGNITIVOS)
+    ],
+    [Keys.LEYES_HICK_HYMAN, new Referencia('https://hacker-laws.com/#hicks-law-hick-hyman-law', 'Hick Hyman', LEYES_KEY, 'Ley de Hick-Hyman', '2026/10/01')
+        .addRelatedItems(Keys.WEB_USER_INTERFACE, Keys.WEB_USER_XPERIENCE)
     ]
 ]);
 

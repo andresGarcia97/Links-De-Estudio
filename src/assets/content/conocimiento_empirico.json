@@ -338,5 +338,18 @@
     "",
     "<strong>John Ousterhout</strong> acuñó el término <em>Tornado Táctico</em> para referirse a la persona que lleva la programación tactica al extremo ",
     "- El problema con este tipo de personas suele generar fricción con su modo de trabajo, con resultados aceptables pero métodos muy cuestionables "
+  ],
+  "putt-law-peter-principle": [
+    "- <em>La tecnología está dominada por dos tipos de personas: aquellas que entienden lo que no gestionan y aquellas que gestionan lo que no entienden</em>",
+    "- Debido a diversos criterios de selección y tendencias en la organización de grupos, suelen haber 2 tipos: ",
+    "&bull; Personas cualificadas en puestos operativos dentro de las organizaciones técnicas ",
+    "&bull; Personas en puestos directivos que desconocen la complejidad y los retos del trabajo que gestionan ",
+    "",
+    "- Esto se complementa directamente con el <strong>Principio de Peter:</strong> <em>En una jerarquía, las personas tienden a ascender hasta alcanzar su 'nivel de incompetencia'<em> ",
+    "- Desarrollado por <em>Laurence J. Peter</em> establece que las personas competentes son ascendidas hasta que alcanzan un nivel en el que dejan de ser eficaces",
+    "- Esto resulta pasar particularmente con los ingenieros, que inicialmente comienzan desempeñando funciones altamente técnicas, y que a menudo ",
+    " - logran una trayectoria que les lleva a dirigir a otros ingenieros, lo que requiere un conjunto de habilidades fundamentalmente diferente ",
+    "- Llegados a ese punto es necesario evitar que se conviertan en obstaculos, ya sea cambiando entre areas, mejorando la formación, fortaleciendo equipos ",
+    " - entre otras acciones o ocurrira el <strong>Principio de Dilbert</strong> "
   ]
 }

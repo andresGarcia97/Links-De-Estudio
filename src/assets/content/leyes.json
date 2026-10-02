@@ -276,5 +276,10 @@
     "- Esta directamente relacionado con las <em>fake news</em> y el sesgo cognitivo, debido a que para desmontar una falsedad es necesario presentar argumentos solidos ",
     " - mientras que las tonterias solo necesitan valerse de prejuicios cognitivos, haciendolos parecer más plausibles que las explicaciones cientificas ",
     "- El impacto es aun más grande en el mundo actual, donde las tecnologias modernas y el uso de la <strong>IA</strong> acercan la información a solo una busqueda de distancia "
+  ],
+  "Hick-Hyman": [
+    "- <em>El tiempo de decisión aumenta logarítmicamente con el número de opciones entre las que se puede elegir</em> ",
+    "- Esto tiene un impacto significativo en el diseño de la interfaz de usuario ",
+    "- Que un usuario pueda buscar fácilmente entre las opciones conduce a una toma de decisiones más rápida "
   ]
 }
