@@ -692,6 +692,7 @@ export const CD_CI_INDUSTRIAL_DEV_OPS = 'industrialDevops';
 export const CD_CI_DEPLOYMENT_PIPELINES = 'pipelines';
 export const CD_CI_CELL_BASED_ARQUITECTURE = 'cellBasedArquitecture';
 export const CD_CI_RULES = 'pipelines-rules-good-practices';
+export const CD_CI_HEALTH_CHECK = 'health-check';
 export const CD_CI_FAILOVER = 'failover-chaos-engineering-fault-tolerance-disaster-recovery';
 export const CD_CI_MONITORING = 'monitoring';
 export const CD_CI_MONITORING_AND_ALERTS = 'monitoring-alerts';

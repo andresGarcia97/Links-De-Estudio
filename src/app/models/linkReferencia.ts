@@ -1998,6 +1998,10 @@ export const CI_CD_REF = new Map<string, Referencia>([
     [Keys.CD_CI_RULES, new Referencia('https://semaphoreci.com/blog/rules-ci-pipeline', 'Reglas de un Pipeline', CI_CD_KEY, 'Pipelines Rules', '2024/12/26')
         .addRelatedItems(Keys.GIT_BRANCHS, Keys.CALIDAD_LINTING, Keys.TESTING_PIRAMIDE, Keys.CONTENEDORES_DOCKER)
     ],
+    [Keys.CD_CI_HEALTH_CHECK, new Referencia('https://www.samuelfaj.com/es/blog/health-checks-cloud-run-startup-liveness-readiness/', 'Health Check', CI_CD_KEY, 'Health Check', '2026/10/04')
+        .addRelatedItems(Keys.OBSERVABILIDAD_ACTUATORS, Keys.CONTENEDORES_KUBERNETES)
+        .addMoreReferences('https://kubernetes.io/docs/concepts/workloads/pods/probes/')
+    ],
     [Keys.CD_CI_FAILOVER, new Referencia('https://stackoverflow.blog/2020/10/23/adrian-cockcroft-aws-failover-chaos-engineering-fault-tolerance-distaster-recovery/', 'Failover & Ingenieria del caos', CI_CD_KEY, 'Failover, Caos, Resiliencia', '2025/04/06')
         .addRelatedItems(Keys.OBSERVABILIDAD_SRE, Keys.SYSTEM_DESIGN_SINGLE_POINT_OF_FAILURE, Keys.NUBE_DISPONIBILITY)
     ],
@@ -2178,7 +2182,7 @@ export const OBSERVABILIDAD_REF = new Map<string, Referencia>([
         .addMoreReferences('https://www.jmp.com/es/statistics-knowledge-portal/what-is-correlation/correlation-vs-causation', 'https://tylervigen.com/spurious-correlations')
     ],
     [Keys.OBSERVABILIDAD_API_OBSERBILITY, new Referencia('https://www.linkedin.com/posts/ankit-pangasa_systemdesign-apis-observability-share-7509085609114820608-0Z-Y/', 'Observabilidad de un API', OBSERVABILIDAD_KEY, 'Observabilidad & APIs', '2026/10/02')
-        .addRelatedItems(Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.WEB_GOLDEN_SIGNALS, Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.OBSERVABILIDAD_COMMON_METRICS_I, Keys.OBSERVABILIDAD_MONITOREO)
+        .addRelatedItems(Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.WEB_GOLDEN_SIGNALS, Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.OBSERVABILIDAD_COMMON_METRICS_I, Keys.OBSERVABILIDAD_MONITOREO, Keys.CD_CI_HEALTH_CHECK)
         .addMoreReferences('https://www.dynatrace.com/news/blog/what-is-api-monitoring/')
     ]
 ]);
