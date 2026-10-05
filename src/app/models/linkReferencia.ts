@@ -2158,7 +2158,7 @@ export const OBSERVABILIDAD_REF = new Map<string, Referencia>([
     ],
     [Keys.OBSERVABILIDAD_SRE, new Referencia('https://aws.amazon.com/es/what-is/sre/', 'Ingenieria de Fiabilidad del Sitio', OBSERVABILIDAD_KEY, 'SRE', '2025/03/15')
         .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_SDLC, Keys.CD_CI_DEV_OPS)
-        .addMoreReferences('https://sre.google/books/')
+        .addMoreReferences('https://sre.google/books/', 'https://sre.google/sre-book/monitoring-distributed-systems/')
     ],
     [Keys.OBSERVABILIDAD_SLA_SLI_SLO, new Referencia('https://www.atlassian.com/es/incident-management/kpis/sla-vs-slo-vs-sli', 'SLA - SLO - SLI', OBSERVABILIDAD_KEY, 'SLA - SLO - SLI', '2026/09/06')
         .addMoreReferences('https://www.atlassystems.com/blog/sla-severity-levels')
@@ -2176,6 +2176,10 @@ export const OBSERVABILIDAD_REF = new Map<string, Referencia>([
     [Keys.OBSERVABILIDAD_CORRELATION_CAUSATION, new Referencia('https://www.jmp.com/es/statistics-knowledge-portal/what-is-correlation', 'Correlación & Causalidad', OBSERVABILIDAD_KEY, 'Correlación & Causalidad', '2025/03/08')
         .addRelatedItems(Keys.TESTING_GRAFOS_CAUSA_EFECTO)
         .addMoreReferences('https://www.jmp.com/es/statistics-knowledge-portal/what-is-correlation/correlation-vs-causation', 'https://tylervigen.com/spurious-correlations')
+    ],
+    [Keys.OBSERVABILIDAD_API_OBSERBILITY, new Referencia('https://www.linkedin.com/posts/ankit-pangasa_systemdesign-apis-observability-share-7509085609114820608-0Z-Y/', 'Observabilidad de un API', OBSERVABILIDAD_KEY, 'Observabilidad & APIs', '2026/10/02')
+        .addRelatedItems(Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.WEB_GOLDEN_SIGNALS, Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.OBSERVABILIDAD_COMMON_METRICS_I, Keys.OBSERVABILIDAD_MONITOREO)
+        .addMoreReferences('https://www.dynatrace.com/news/blog/what-is-api-monitoring/')
     ]
 ]);
 

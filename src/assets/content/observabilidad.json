@@ -109,9 +109,9 @@
     "<strong>- Saturación:</strong> Capacidad de la aplicación, si esta pasa los umbrales establecidos, suele haber una degradación del servicio ",
     "",
     "<strong>Metricas Clave (Ejemplos)</strong>",
-    "<strong>Objetivos de nivel de servicio (SLO):</strong> Un tiempo de actividad del 99,95% para todas las aplicaciones del sistema ",
-    "<strong>Indicadores de nivel de servicio (SLI):</strong> Existen aplicaciones que tienen un funcionamiento del 99,92% lo cual es inferior al SLO prometido ",
-    "<strong>Acuerdos de nivel de servicio (SLA):</strong> El equipo tecnico resolvera el problema de su cliente dentro de las 24 horas posteriores al informe ó se reembolsara al cliente ",
+    "<strong>SLO:</strong> Un tiempo de actividad del 99,95% para todas las aplicaciones del sistema ",
+    "<strong>SLI:</strong> Existen aplicaciones que tienen un funcionamiento del 99,92% lo cual es inferior al SLO prometido ",
+    "<strong>SLA:</strong> El equipo tecnico resolvera el problema de su cliente dentro de las 24 horas posteriores al informe ó se reembolsara al cliente ",
     "<strong>Presupuesto de errores:</strong> Con un tiempo de actividad del 99,95% se permite un periodo de inactividad del 0,05% si se supera, es necesaria su estabilización "
   ],
   "SLA_SLI_SLO": [
@@ -194,5 +194,25 @@
     "- Una correlación fuerte puede existir por razones distintas a una relación causal directa entre las variables ",
     " - Puede ser el resultado del azar: las variables parecen estar relacionadas, pero en realidad no hay una relación subyacente ",
     " - Puede haber una tercera variable al acecho (confounding variable) que haga que la relación parezca más fuerte/débil de lo que realmente es "
+  ],
+  "api-observabilidad": [
+    "- Que un API retorne 200 OK no siempre significa que esté saludable, puede ocultar errores, tener mucha latencia o simplemente estar saturada ",
+    "- Recopilar y analizar métricas, logs y trazas permite comprender el funcionamiento y sus causas para corregirlo ",
+    "",
+    "<strong>Latencia:</strong> No limitarse a solo contemplar la latencia promedio; P75, P95 y P99 sirven para entender las solicitudes más lentas ",
+    "",
+    "<strong>Tráfico:</strong> Monitorear las solicitudes por segundo <em>RPS</em>; picos repentinos pueden exponer problemas de capacidad o escalado ",
+    "",
+    "<strong>Tasa de errores:</strong> Rastrear errores 4XX y 5XX pueden indicar problemas internos, con los clientes, o cambios repentinos en los contratos ",
+    "",
+    "<strong>Disponibilidad:</strong> Frecuencia en que el API atiende solicitudes exitosas sobre el total, esto puede cambiar segun el criterio definido ",
+    "",
+    "<strong>Saturación:</strong> Mirar aquello que rodea a la propia API (CPU, RAM, hilos, colas, BD, etc.)",
+    "",
+    "<strong>Dependencias:</strong> El API puede ser eficiente, ¿ Pero que sucede con las dependencias ?, ¿ Si estas son lentas o fallan ? ",
+    "",
+    "<strong>Rate Limit:</strong> Saber rechazos (429) y a qué cliente se le rechazaron las peticiones es muy importante para saber cuando se exceden los limites ",
+    "",
+    "<strong>SLI - SLO - SLA:</strong> ¿ Qué se esta midiendo ?, ¿ Qué objetivo se quiere ?, ¿ Qué se ha comprometido con el cliente ? "
   ]
 }
