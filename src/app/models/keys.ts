@@ -389,6 +389,7 @@ export const PERSISTENCY_INTERMEDIATE_N_1_SELECTS = 'n+1';
 export const PERSISTENCY_INTERMEDIATE_DATA_BASE_OBJECTS = 'database-objects';
 export const PERSISTENCY_INTERMEDIATE_SQL_NO_SQL = 'sqlVsNosql';
 export const PERSISTENCY_INTERMEDIATE_CHOOSE_DB = 'choose-db';
+export const PERSISTENCY_INTERMEDIATE_CONNECTION_POOL = 'connection-pool';
 export const PERSISTENCY_ADVANCED_BASE = 'BASE';
 export const PERSISTENCY_ADVANCED_SCALING_DB = 'scalingDataBases';
 export const PERSISTENCY_ADVANCED_NO_SQL = 'nosql';

@@ -1740,6 +1740,9 @@ export const PERSISTENCY_INTERMEDIATE_REF = new Map<string, Referencia>([
     [Keys.PERSISTENCY_INTERMEDIATE_SQL_NO_SQL, new Referencia('https://medium.com/@eugeniomendoza/c%C3%B3mo-saber-si-necesitas-una-base-de-datos-nosql-b6cfd5bb7d9b', 'SQL ó NoSql', PERSISTENCY_INTERMEDIATE_KEY, 'SQL ó NoSql', '', '2024/06/06')],
     [Keys.PERSISTENCY_INTERMEDIATE_CHOOSE_DB, new Referencia('https://medium.com/@akovtun/the-five-questions-to-pick-a-database-a-decision-tree-for-sql-nosql-cache-and-search-f62facca7566', 'Como escoger una DB', PERSISTENCY_INTERMEDIATE_KEY, 'Escoger una DB', '2026/08/15')
         .addRelatedItems(Keys.PERSISTENCY_DB_TYPES, Keys.META_CARACTERISTICAS_CACHE, Keys.PERSISTENCY_ACID, Keys.PERSISTENCY_ADVANCED_BASE, Keys.PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL)
+    ],
+    [Keys.PERSISTENCY_INTERMEDIATE_CONNECTION_POOL, new Referencia('https://medium.com/@artemkhrenov/connection-pooling-patterns-optimizing-database-connections-for-scalable-applications-159e78281389', 'Pool de conexiones', PERSISTENCY_INTERMEDIATE_KEY, 'Connection pool', '2026/10/05')
+        .addRelatedItems(Keys.FRAMEWORKS_SPRING_JPA_RELATIONS, Keys.PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS, Keys.PERSISTENCY_CRUD, Keys.SYSTEM_DESIGN_FAILS_I)
     ]
 ]);
 
