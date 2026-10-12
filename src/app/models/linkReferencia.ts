@@ -176,7 +176,7 @@ export const ANALISIS_REF = new Map<string, Referencia>([
     [Keys.ANALISIS_EXCEPTION_DESIGN, new Referencia('https://medium.com/but-it-works-on-my-machine/the-trap-of-checked-exceptions-when-to-catch-and-when-to-throw-in-java-ffec454b00bb', 'Analisis & Excepciones', ANALISIS_KEY, 'Analisis & Excepciones', '2026/07/14')
         .addRelatedItems(Keys.BUENAS_PRACTICAS_RESULT_OBJECT, Keys.BUENAS_PRACTICAS_EXCEPTIONS, Keys.MALAS_PRACTICAS_LOG_AND_THROW, Keys.META_CARACTERISTICAS_EXCEPTIONS, Keys.POO_HERENCIA, Keys.BUILD_ERRORS_AND_EXCEPTIONS, Keys.POO_ABSTRACTIONS)
     ],
-    [Keys.ANALISIS_FAIL_FAST_FAIL_SAFE, new Referencia('https://medium.com/javarevisited/failure-is-required-understanding-fail-safe-and-fail-fast-strategies-ac9112fe056d', 'Fail, Fast Vs Fail Safe', ANALISIS_KEY, 'Fail Fast & Fail Safe', '2026/10/11')
+    [Keys.ANALISIS_FAIL_FAST_FAIL_SAFE, new Referencia('https://medium.com/javarevisited/failure-is-required-understanding-fail-safe-and-fail-fast-strategies-ac9112fe056d', 'Fail Fast & Fail Safe', ANALISIS_KEY, 'Fail Fast & Fail Safe', '2026/10/11')
         .addRelatedItems(Keys.SYSTEM_DESIGN_RESILIENCE, Keys.PATRONES_ADVANCED_RESILIENCIA, Keys.PEOPLE_POST_MORTEM, Keys.OBSERVABILIDAD_OBSERVABILITY)
         .addMoreReferences('https://sre.google/sre-book/addressing-cascading-failures/')
     ]
@@ -373,7 +373,7 @@ export const BUENAS_PRACTICAS_REF = new Map<string, Referencia>([
     [Keys.BUENAS_PRACTICAS_GUARD_CLAUSES, new Referencia('https://artansoft.com/2017/01/guard-clauses-definicion-beneficios/', 'Guard clauses', BUENAS_PRACTICAS_KEY, 'Guard Clauses')],
     [Keys.BUENAS_PRACTICAS_SEMANTIC_CONSTRUCTORS, new Referencia('https://medium.com/all-you-need-is-clean-code/constructores-sem%C3%A1nticos-ae7ac70b23aa', 'Constructores Semanticos', BUENAS_PRACTICAS_KEY, 'Constructores Semanticos')],
     [Keys.BUENAS_PRACTICAS_EXCEPTIONS, new Referencia('https://javachallengers.com/mistakes-when-using-exceptions/', 'Manejo de Excepciones', BUENAS_PRACTICAS_KEY, 'Manejo de Excepciones', '', '2025/12/16')
-        .addRelatedItems(Keys.BUILD_ERRORS_AND_EXCEPTIONS, Keys.META_CARACTERISTICAS_EXCEPTIONS, Keys.OBSERVABILIDAD_MONITOREO, Keys.APIS_ERRORS, Keys.OBSERVABILIDAD_OBSERVABILITY, Keys.PATRONES_ADVANCED_RESILIENCIA)
+        .addRelatedItems(Keys.BUILD_ERRORS_AND_EXCEPTIONS, Keys.META_CARACTERISTICAS_EXCEPTIONS, Keys.OBSERVABILIDAD_MONITORING, Keys.APIS_ERRORS, Keys.OBSERVABILIDAD_OBSERVABILITY, Keys.PATRONES_ADVANCED_RESILIENCIA)
         .addMoreReferences('https://medium.com/@csvaibhavpasrija/838292f305fd')
     ],
     [Keys.BUENAS_PRACTICAS_GOOD_HABITS_I, new Referencia('https://vadimkravcenko.com/shorts/habits-of-great-software-engineers/', 'Buenos habitos de un desarrollador I', BUENAS_PRACTICAS_KEY, 'Buenos habitos I', '', '2026/08/16')
@@ -596,7 +596,7 @@ export const CONOCIMIENTO_EMPIRICO_REF = new Map<string, Referencia>([
         .addMoreReferences('https://psicologiaymente.com/cultura/paradoja-jevons')
     ],
     [Keys.CONOCIMIENTOS_EMPIRICOS_BREAKING_PRODUCTION_LESSONS, new Referencia('https://www.linkedin.com/posts/anton-zaides_7-software-engineering-lessons-you-learn-share-7450966788504231936-tQ0_/', 'Lecciones despues de romper produccion', CONOCIMIENTO_EMPIRICO_KEY, 'Breaking Production', '2026/06/04')
-        .addRelatedItems(Keys.CD_CI_ROLLING_DEPLOYMENT, Keys.CD_CI_FAILOVER, Keys.SYSTEM_DESIGN_RESILIENCE, Keys.BUENAS_PRACTICAS_DEBUGGING, Keys.PEOPLE_POST_MORTEM, Keys.CD_CI_MONITORING_AND_ALERTS)
+        .addRelatedItems(Keys.CD_CI_ROLLING_DEPLOYMENT, Keys.CD_CI_FAILOVER, Keys.SYSTEM_DESIGN_RESILIENCE, Keys.BUENAS_PRACTICAS_DEBUGGING, Keys.PEOPLE_POST_MORTEM, Keys.OBSERVABILIDAD_MONITORING_AND_ALERTS)
         .addMoreReferences('https://psicologiaymente.com/reflexiones/frases-oscar-wilde')
     ],
     [Keys.CONOCIMIENTOS_EMPIRICOS_DEUDA_COGNITIVA, new Referencia('https://newsletter.getdx.com/p/cognitive-debt-the-hidden-risk-in', 'Deuda cognitiva', CONOCIMIENTO_EMPIRICO_KEY, 'Deuda cognitiva', '2026/08/02')
@@ -867,7 +867,7 @@ export const MALAS_PRACTICAS_REF = new Map<string, Referencia>([
         .addMoreReferences('https://martinfowler.com/bliki/FlagArgument.html')
     ],
     [Keys.MALAS_PRACTICAS_LOG_AND_THROW, new Referencia('https://stackoverflow.com/questions/6639963/why-is-log-and-throw-considered-an-anti-pattern', 'Log & Throw', MALAS_PRACTICAS_KEY, 'Log & Throw', '2026/07/13')
-        .addRelatedItems(Keys.META_ESTRUCTURAS_LOGS, Keys.META_CARACTERISTICAS_EXCEPTIONS, Keys.BUENAS_PRACTICAS_DEBUGGING, Keys.CD_CI_MONITORING_AND_ALERTS)
+        .addRelatedItems(Keys.META_ESTRUCTURAS_LOGS, Keys.META_CARACTERISTICAS_EXCEPTIONS, Keys.BUENAS_PRACTICAS_DEBUGGING, Keys.OBSERVABILIDAD_MONITORING_AND_ALERTS)
         .addMoreReferences('https://signoz.io/guides/throw-exception-vs-logging/')
     ],
     [Keys.MALAS_PRACTICAS_COMPLEJIDAD_ACCIDENTAL, new Referencia('https://ingenieriadesoftware.es/complejidad-esencial-accidental-proyecto-software/', 'Complejidad Accidental', MALAS_PRACTICAS_KEY, 'Complejidad Accidental', '2026/09/19')
@@ -1312,7 +1312,7 @@ export const PEOPLE_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.METODOLOGIAS_LEAN, Keys.REQUISITOS_KPI_OKR)
     ],
     [Keys.PEOPLE_POST_MORTEM, new Referencia('https://www.freecodecamp.org/news/what-is-a-software-post-mortem/', 'Post mortem', PEOPLE_KEY, 'Post mortem', '2025/12/06')
-        .addRelatedItems(Keys.CD_CI_FAILOVER, Keys.CD_CI_MONITORING_AND_ALERTS)
+        .addRelatedItems(Keys.CD_CI_FAILOVER, Keys.OBSERVABILIDAD_MONITORING_AND_ALERTS)
         .addMoreReferences('https://github.com/danluu/post-mortems')
     ],
     [Keys.PEOPLE_TECNOLOGY_PROJECTS, new Referencia('https://jorgeocampos.blog/2024/09/02/tipos-de-implementaciones-greenfield-brownfield/', 'greenfield VS brownfield', PEOPLE_KEY, 'greenfield VS brownfield', '2026/07/30')
@@ -1446,7 +1446,7 @@ export const TESTING_ADVANCED_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_TDD, Keys.TESTING_DATA_SUT_DOC)
     ],
     [Keys.TESTING_ADVANCED_APDEX, new Referencia('https://www.techtarget.com/searchitoperations/definition/Application-Performance-Index-Apdex', 'Application Performance Index', TESTING_ADVANCED_KEY, 'Apdex', '2024/12/16')
-        .addRelatedItems(Keys.OBSERVABILIDAD_MONITOREO, Keys.APIS_TESTING)
+        .addRelatedItems(Keys.OBSERVABILIDAD_MONITORING, Keys.APIS_TESTING)
     ],
     [Keys.TESTING_ADVANCED_COSTS, new Referencia('https://fastercapital.com/es/contenido/Costo-de-las-pruebas--como-calcular-el-costo-de-verificar-la-calidad-o-el-rendimiento-de-un-producto-o-sistema.html', 'Costos del Testing', TESTING_ADVANCED_KEY, 'Costos', '2025/01/04')],
     [Keys.TESTING_ADVANCED_ISOLATION, new Referencia('https://mrslavchev.com/2018/08/03/hindsight-lessons-about-automation-test-isolation-principle/', 'Aislamiento de pruebas', TESTING_ADVANCED_KEY, 'Aislamiento', '2025/02/02')],
@@ -1807,7 +1807,7 @@ export const PERSISTENCY_ADVANCED_REF = new Map<string, Referencia>([
         .addMoreReferences('https://learn.microsoft.com/en-us/sql/relational-databases/security/ledger/ledger-append-only-ledger-tables?view=sql-server-ver17', 'https://www.linkedin.com/posts/bhupesh-k-185327366_fintech-backend-systemdesign-share-7494375092651450368-MDou/')
     ],
     [Keys.PERSISTENCY_ADVANCED_LONG_TRANSACTIONS, new Referencia('https://www.linkedin.com/pulse/long-running-transactions-financial-systems-mario-kresnadi/', 'Transacciones largas & performance', PERSISTENCY_ADVANCED_KEY, 'Transacciones largas', '2026/03/01')
-        .addRelatedItems(Keys.CD_CI_MONITORING_AND_ALERTS, Keys.NUBE_PACELC, Keys.PATRONES_ADVANCED_SAGA, Keys.PEOPLE_POST_MORTEM)
+        .addRelatedItems(Keys.OBSERVABILIDAD_MONITORING_AND_ALERTS, Keys.NUBE_PACELC, Keys.PATRONES_ADVANCED_SAGA, Keys.PEOPLE_POST_MORTEM)
     ],
     [Keys.PERSISTENCY_ADVANCED_VERTICAL_PARTITIONING_AND_LOOK_UP_TABLE, new Referencia('https://algomaster.io/learn/system-design/vertical-partitioning', 'Particionamiento Vertical Vs Lookup tables', PERSISTENCY_ADVANCED_KEY, 'Lookup tables', '2026/04/02')
         .addRelatedItems(Keys.HARDWARE_ESCALAMIENTO, Keys.VERSIONAMIENTO_DATABASE_VERSION_CONTROL)
@@ -1942,7 +1942,7 @@ export const WEB_REF = new Map<string, Referencia>([
     [Keys.WEB_MICRO_FRONTENED, new Referencia('https://newsletter.systemdesign.one/p/micro-frontends', 'Micro Frontends', WEB_KEY, 'Micro Frontends', '2024/03/07')],
     [Keys.WEB_BUENAS_PRACTICAS, new Referencia('https://dev.to/emmanuelhills/best-practices-for-frontend-web-development-a-comprehensive-guide-27h0', 'Buenas practicas Desarrollo web', WEB_KEY, 'Buenas practicas', '2024/03/31')],
     [Keys.WEB_GOLDEN_SIGNALS, new Referencia('https://www.groundcover.com/blog/4-golden-signals', 'Golden Signals', WEB_KEY, 'Golden Signals', '2024/09/22')
-        .addRelatedItems(Keys.OBSERVABILIDAD_MONITOREO, Keys.PEOPLE_NO_NEWS_GOOD_NEWS)
+        .addRelatedItems(Keys.OBSERVABILIDAD_MONITORING, Keys.PEOPLE_NO_NEWS_GOOD_NEWS)
     ],
     [Keys.WEB_SIMPLIFY_DESIGN, new Referencia('https://uxdesign.cc/10-heuristics-to-simplify-design-decision-making-36bd41868243', 'Simplificar el Diseño', WEB_KEY, 'Simplificar el diseño', '2024/12/13')],
     [Keys.WEB_ARCHITECTURE, new Referencia('https://medium.com/womenintechnology/modern-web-architecture-101-b430df7b9d8e', 'Modern Web Architecture', WEB_KEY, 'Web Architecture', '2026/08/09')
@@ -2016,10 +2016,6 @@ export const CI_CD_REF = new Map<string, Referencia>([
     ],
     [Keys.CD_CI_MONITORING, new Referencia('https://www.squadcast.com/blog/comparing-uptime-monitoring-heartbeat-monitoring-and-synthetic-monitoring', 'Monitoreo de un sistema', CI_CD_KEY, 'Monitoreo', '2025/05/01')
         .addRelatedItems(Keys.NUBE_DISPONIBILITY, Keys.OBSERVABILIDAD_SRE, Keys.NUBE_LOAD_BALANCING, Keys.HARDWARE_ESCALAMIENTO, Keys.WEB_GOLDEN_SIGNALS, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRANSACTIONS)
-    ],
-    [Keys.CD_CI_MONITORING_AND_ALERTS, new Referencia('https://edgedelta.com/company/blog/monitoring-and-alerting-best-practices', 'Monitoreo, Alertas & Observabilidad', CI_CD_KEY, 'Monitoreo y Alertas', '2025/10/12')
-        .addRelatedItems(Keys.OBSERVABILIDAD_OBSERVABILITY, Keys.TESTING_ADVANCED_PERFORMANCE, Keys.OBSERVABILIDAD_COMMON_METRICS_I, Keys.PEOPLE_DIKW, Keys.SECURITY_MATRIZ_DE_RIESGOS, Keys.BUILD_INSTRUMENTS, Keys.OBSERVABILIDAD_SRE, Keys.BUILD_SDK_VS_API, Keys.PEOPLE_POST_MORTEM)
-        .addMoreReferences('https://opentelemetry.io/docs/what-is-opentelemetry/', 'https://opentelemetry.io/docs/concepts/instrumentation/zero-code/', 'https://betterstack.com/community/guides/monitoring/what-is-metrics-monitoring-alerting/')
     ],
     [Keys.CD_CI_DEPLOYMENT_ARQUITECTURE, new Referencia('https://medium.com/nerd-for-tech/software-deployment-as-architecture-648867bdb77c', 'Implementación como Arquitectura', CI_CD_KEY, 'Deploy & Arquitectura', '2025/06/12')
         .addRelatedItems(Keys.ARQUITECTURAS_IMPL_DESCOMPOSICION_MODULAR, Keys.ARQUITECTURAS_IMPL_MONOLITOS, Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES, Keys.VERSIONAMIENTO_VERSIONAMIENTO, Keys.APIS_REST_VS_MESSAGING, Keys.ANALISIS_BOUNDED_CONTEXT, Keys.MICROSERVICES_ARQUITECTURAS, Keys.CONTENEDORES_ORCHESTRATION, Keys.NUBE_NATIVE, Keys.MALAS_PRACTICAS_DEATH_BY_MICROSERVICES)
@@ -2155,7 +2151,7 @@ export const MICRO_SERVICES_ADVANCED_REF = new Map<string, Referencia>([
 export const OBSERVABILIDAD_KEY = 'Observabilidad';
 export const OBSERVABILIDAD_REF = new Map<string, Referencia>([
     [Keys.OBSERVABILIDAD_OBSERVABILITY, new Referencia('https://medium.com/@rcougil/software-observabilidad-logs-m%C3%A9tricas-y-trazabilidad-d5bcca56608d', 'Observabilidad', OBSERVABILIDAD_KEY, 'Observabilidad', '2024/05/26', '2025/11/02')
-        .addRelatedItems(Keys.META_ESTRUCTURAS_LOGS, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRACING, Keys.CD_CI_MONITORING_AND_ALERTS)
+        .addRelatedItems(Keys.META_ESTRUCTURAS_LOGS, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRACING)
         .addMoreReferences('https://engineering.theblueground.com/a-software-engineers-guide-to-observability/')
     ],
     [Keys.OBSERVABILIDAD_COMMON_METRICS_I, new Referencia('https://medium.com/javarevisited/dont-go-into-your-system-design-interview-without-mastering-this-31ee7af2ed7b', 'Metricas comunes en System Design I', OBSERVABILIDAD_KEY, 'Metricas comunes I', '2025/04/26')
@@ -2166,8 +2162,12 @@ export const OBSERVABILIDAD_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.NUBE_DISPONIBILITY, Keys.HARDWARE_ESCALAMIENTO, Keys.SYSTEM_DESIGN_RESILIENCE, Keys.SYSTEM_DESIGN_SINGLE_POINT_OF_FAILURE)
         .addMoreReferences("https://medium.com/@yvmmfyd/escalabilidad-y-elasticidad-sin-complicaciones-una-gu%C3%ADa-para-ingenieros-de-datos-fd598c97a349", 'https://www.geeksforgeeks.org/operating-systems/redundancy-in-system-design/')
     ],
-    [Keys.OBSERVABILIDAD_MONITOREO, new Referencia('https://www.hiberus.com/crecemos-contigo/uso-de-los-apm-monitoreo-del-rendimiento-de-aplicaciones/', 'Aplication Performance Management', OBSERVABILIDAD_KEY, 'Monitoreo(APM)', '', '2026/03/10')
-        .addRelatedItems(Keys.HARDWARE_IO_BOUND_CPU_BOUND, Keys.BUENAS_PRACTICAS_LOGGING, Keys.CD_CI_MONITORING_AND_ALERTS)
+    [Keys.OBSERVABILIDAD_MONITORING, new Referencia('https://www.hiberus.com/crecemos-contigo/uso-de-los-apm-monitoreo-del-rendimiento-de-aplicaciones/', 'Aplication Performance Management', OBSERVABILIDAD_KEY, 'Monitoreo(APM)', '', '2026/03/10')
+        .addRelatedItems(Keys.HARDWARE_IO_BOUND_CPU_BOUND, Keys.BUENAS_PRACTICAS_LOGGING, Keys.CD_CI_MONITORING)
+    ],
+    [Keys.OBSERVABILIDAD_MONITORING_AND_ALERTS, new Referencia('https://edgedelta.com/company/blog/monitoring-and-alerting-best-practices', 'Monitoreo & Alertas', OBSERVABILIDAD_KEY, 'Monitoreo & Alertas', '2025/10/12')
+        .addRelatedItems(Keys.TESTING_ADVANCED_PERFORMANCE, Keys.PEOPLE_DIKW, Keys.SECURITY_MATRIZ_DE_RIESGOS, Keys.BUILD_INSTRUMENTS, Keys.BUILD_SDK_VS_API, Keys.PEOPLE_POST_MORTEM, Keys.CD_CI_MONITORING)
+        .addMoreReferences('https://opentelemetry.io/docs/what-is-opentelemetry/', 'https://opentelemetry.io/docs/concepts/instrumentation/zero-code/', 'https://betterstack.com/community/guides/monitoring/what-is-metrics-monitoring-alerting/')
     ],
     [Keys.OBSERVABILIDAD_SRE, new Referencia('https://aws.amazon.com/es/what-is/sre/', 'Ingenieria de Fiabilidad del Sitio', OBSERVABILIDAD_KEY, 'SRE', '2025/03/15')
         .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_SDLC, Keys.CD_CI_DEV_OPS)
@@ -2191,7 +2191,7 @@ export const OBSERVABILIDAD_REF = new Map<string, Referencia>([
         .addMoreReferences('https://www.jmp.com/es/statistics-knowledge-portal/what-is-correlation/correlation-vs-causation', 'https://tylervigen.com/spurious-correlations')
     ],
     [Keys.OBSERVABILIDAD_API_OBSERBILITY, new Referencia('https://www.linkedin.com/posts/ankit-pangasa_systemdesign-apis-observability-share-7509085609114820608-0Z-Y/', 'Observabilidad de un API', OBSERVABILIDAD_KEY, 'Observabilidad & APIs', '2026/10/02')
-        .addRelatedItems(Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.WEB_GOLDEN_SIGNALS, Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.OBSERVABILIDAD_COMMON_METRICS_I, Keys.OBSERVABILIDAD_MONITOREO, Keys.CD_CI_HEALTH_CHECK)
+        .addRelatedItems(Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.WEB_GOLDEN_SIGNALS, Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.OBSERVABILIDAD_COMMON_METRICS_I, Keys.CD_CI_HEALTH_CHECK)
         .addMoreReferences('https://www.dynatrace.com/news/blog/what-is-api-monitoring/')
     ]
 ]);
