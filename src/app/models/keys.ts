@@ -815,6 +815,7 @@ export const OBSERVABILIDAD_COMMON_METRICS_I = 'commonMetrics-I';
 export const OBSERVABILIDAD_COMMON_METRICS_II = 'commonMetrics-II';
 export const OBSERVABILIDAD_MONITORING = 'monitoring-apm';
 export const OBSERVABILIDAD_MONITORING_AND_ALERTS = 'monitoring-alerts';
+export const OBSERVABILIDAD_FATIGUE_ALERTS = 'fatigue-alerts';
 export const OBSERVABILIDAD_SRE = 'SRE';
 export const OBSERVABILIDAD_SLA_SLI_SLO = 'SLA_SLI_SLO';
 export const OBSERVABILIDAD_TIME_SERIES = 'time-series';

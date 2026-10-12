@@ -2169,6 +2169,10 @@ export const OBSERVABILIDAD_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.TESTING_ADVANCED_PERFORMANCE, Keys.PEOPLE_DIKW, Keys.SECURITY_MATRIZ_DE_RIESGOS, Keys.BUILD_INSTRUMENTS, Keys.BUILD_SDK_VS_API, Keys.PEOPLE_POST_MORTEM, Keys.CD_CI_MONITORING)
         .addMoreReferences('https://opentelemetry.io/docs/what-is-opentelemetry/', 'https://opentelemetry.io/docs/concepts/instrumentation/zero-code/', 'https://betterstack.com/community/guides/monitoring/what-is-metrics-monitoring-alerting/')
     ],
+    [Keys.OBSERVABILIDAD_FATIGUE_ALERTS, new Referencia('https://pandorafms.com/blog/es/fatiga-de-alertas/', 'Fatiga de Alertas', OBSERVABILIDAD_KEY, 'Fatiga de Alertas', '2026/10/12')
+        .addRelatedItems(Keys.CD_CI_MONITORING, Keys.PEOPLE_BURNOUT)
+        .addMoreReferences('https://www.atlassian.com/incident-management/on-call/alert-fatigue')
+    ],
     [Keys.OBSERVABILIDAD_SRE, new Referencia('https://aws.amazon.com/es/what-is/sre/', 'Ingenieria de Fiabilidad del Sitio', OBSERVABILIDAD_KEY, 'SRE', '2025/03/15')
         .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_SDLC, Keys.CD_CI_DEV_OPS)
         .addMoreReferences('https://sre.google/books/', 'https://sre.google/sre-book/monitoring-distributed-systems/')
