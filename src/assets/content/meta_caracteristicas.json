@@ -34,17 +34,22 @@
     " - responsabilidades acerca de quienes pueden lanzar excepciones y quienes pueden atraparlas "
   ],
   "cache": [
-    "- La cache existe para diminuir la latencia e incrementar el rendimiento en operaciones costosas ",
-    "- Esta es recomendable usarla en los casos donde el rendimiento no es el esperado, o si son recursos poco mutables y muy solicitados ",
-    "- Esto significa que el sistema soporte operaciones de datos con consistencia eventual ",
-    "- Los datos en cache deberian estar acompañados de una politica de limpieza o tiempo de vida, no deberian existir sin ninguna caducidad ",
+    "- La caché existe para disminuir la latencia e incrementar el rendimiento en operaciones costosas ",
+    "- Es recomendable usarla en los casos donde el rendimiento es esencial, o si son recursos poco mutables y muy solicitados ",
+    "- El sistema debe estar preparado para soportar operaciones con datos o información desactualizada ",
+    "- Los datos en cache deben estar acompañados de una politica de limpieza o tiempo de vida, no deberian existir sin ninguna caducidad ",
     "",
-    "<strong>Tipos de cache:</strong>",
-    "<strong>- Local:</strong> Almacenamiento en memoria, ideal cuando la información es poca, predecible y poco mutable ",
-    " - esto puede conllevar a inconsistencias de los datos si hay diferentes instancias y problemas de rendimiento en la ejecución ",
-    "<strong>- Centralizado:</strong> Se almacena de manera externa y este siempre esta en concordancia con las demás ",
-    " - al ser externa depende directamente de la latencia del medio en que este, y de su disponibilidad, además de su manejo ",
-    "<strong>- Distribuida:</strong> Esta particionada y administrada por diferentes nodos que se comunican entre si, su manejo implica más complejidad "
+    "<strong>Tipos de caché:</strong>",
+    "<strong>- Local:</strong> Almacenamiento en memoria, ideal cuando la información es poca, predecible y poco mutable, aunque presenta 2 problemas: ",
+    "&bull; Inconsistencias de los datos entre multiples instancias ejecutándose al mismo tiempo ",
+    "&bull; Problemas de consumo de memoria durante la ejecución si es una gran cantidad de datos ",
+    "",
+    "<strong>- Centralizado:</strong> Se almacena de manera externa convirtiendose en un lugar de acceso común ",
+    "&bull; Al ser una dependencia externa, depende directamente de la latencia y del medio en que este ",
+    "&bull; Su indisponibilidad afecta directamente la disponibilidad de la propia aplicación si no hay un fallback ",
+    "",
+    "<strong>- HTTP:</strong> El cliente, el navegador o algún intermediario (proxy/CDN), cachea las respuestas ",
+    "&bull; La invalidación de los datos se vuelve compleja "
   ],
   "argumentos": [
     "- En Java los argumentos siempre se pasan por valor, esto significa que siempre se pasa el valor de la variable, ",

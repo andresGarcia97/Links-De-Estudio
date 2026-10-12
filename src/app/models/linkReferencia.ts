@@ -879,7 +879,9 @@ export const META_CARATERISTICAS_REF = new Map<string, Referencia>([
     ],
     [Keys.META_CARACTERISTICAS_ASSERTS, new Referencia('https://www.adictosaltrabajo.com/2016/01/07/haz-tu-codigo-mas-fiable-con-asserts/', 'Comprobaciones del codigo', META_CARACTERISTICAS_KEY, 'Aserciones', '', '2025/05/12')],
     [Keys.META_CARACTERISTICAS_EXCEPTIONS, new Referencia('https://universidad-de-los-andes.gitbooks.io/fundamentos-de-programacion/content/Nivel4/5_ManejoDeLasExcepciones.html', 'Excepciones', META_CARACTERISTICAS_KEY, 'Excepciones')],
-    [Keys.META_CARACTERISTICAS_CACHE, new Referencia('https://medium.com/bancolombia-tech/dise%C3%B1ando-una-estrategia-de-cach%C3%A9-39366876009b', 'Tipos de Cache', META_CARACTERISTICAS_KEY, 'Tipos de Cache')],
+    [Keys.META_CARACTERISTICAS_CACHE, new Referencia('https://www.linkedin.com/posts/vinoth-nagarajan-573909337_java-springboot-caching-share-7493214103818194944-6k0h/', 'Tipos de Cache', META_CARACTERISTICAS_KEY, 'Tipos de Cache', '', '2026/10/11')
+        .addRelatedItems('https://www.geeksforgeeks.org/system-design/types-of-cache/')
+    ],
     [Keys.META_CARACTERISTICAS_ARGUMENTS, new Referencia('https://picodotdev.github.io/blog-bitix/2021/01/en-java-los-argumentos-se-pasan-por-valor-o-por-referencia/', 'Argumentos por valor y por referencia', META_CARACTERISTICAS_KEY, 'Argumentos', '', '2025/05/12')
         .addRelatedItems(Keys.POO_INMUTABILITY)
     ],
