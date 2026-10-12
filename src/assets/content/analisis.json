@@ -605,5 +605,19 @@
     "&bull; <em>ValidationException</em> -> <em>throw e</em>",
     "- Excepciones de infraestructura o capas inferiores se encapsulan de manera que tengan sentido para el negocio ",
     "&bull; <em>DataAccessException</em> -> <em>new OrderProcessingException(msg, cause);</em>"
+  ],
+  "fail-fast-fail-safe": [
+    "- Los fallos en un sistema son inevitables y la forma en que se gestionan estos fallos puede afectar significativamente el rendimiento y la confiabilidad ",
+    "- Para que un sistema sea confiable y resiliente suelen combinarse ambos enfoques: <em>Fail Fast</em> en validaciones y <em>Fail Safe</em> en operaciones críticas ",
+    "",
+    "<strong>Fail Fast:</strong> Sistemas diseñados para abortar la operación de forma inmediata al encontrar condiciones inesperadas o inválidas ",
+    "<ins>&#x2713;</ins> Ayuda a detectar problemas antes de que se propaguen por el sistema y afecten su estabilidad ",
+    "<del>&#x2717;</del> Las operaciones incompletas o no realizadas deben verificarse para revertirse o registrarse mediante <em>observabilidad</em> respectivamente ",
+    "",
+    "<strong>Fail Safe:</strong> Es un enfoque diferente donde se busca ser resiliente ante los fallos, para continuar funcionando aun en condiciones imprevistas ",
+    "<ins>&#x2713;</ins> Útil en sistemas críticos o de alta disponibilidad, para evitar una cascada de fallos ",
+    "<del>&#x2717;</del> Los mecanismos de recuperación pueden retrasar o ocultar la detección de problemas más graves ",
+    "",
+    "<strong>Corrupción de datos:</strong> Los datos corruptos pueden generar consecuencias a largo plazo como problemas de seguridad o datos irrecuperables "
   ]
 }

@@ -175,6 +175,10 @@ export const ANALISIS_REF = new Map<string, Referencia>([
     ],
     [Keys.ANALISIS_EXCEPTION_DESIGN, new Referencia('https://medium.com/but-it-works-on-my-machine/the-trap-of-checked-exceptions-when-to-catch-and-when-to-throw-in-java-ffec454b00bb', 'Analisis & Excepciones', ANALISIS_KEY, 'Analisis & Excepciones', '2026/07/14')
         .addRelatedItems(Keys.BUENAS_PRACTICAS_RESULT_OBJECT, Keys.BUENAS_PRACTICAS_EXCEPTIONS, Keys.MALAS_PRACTICAS_LOG_AND_THROW, Keys.META_CARACTERISTICAS_EXCEPTIONS, Keys.POO_HERENCIA, Keys.BUILD_ERRORS_AND_EXCEPTIONS, Keys.POO_ABSTRACTIONS)
+    ],
+    [Keys.ANALISIS_FAIL_FAST_FAIL_SAFE, new Referencia('https://medium.com/javarevisited/failure-is-required-understanding-fail-safe-and-fail-fast-strategies-ac9112fe056d', 'Fail, Fast Vs Fail Safe', ANALISIS_KEY, 'Fail Fast & Fail Safe', '2026/10/11')
+        .addRelatedItems(Keys.SYSTEM_DESIGN_RESILIENCE, Keys.PATRONES_ADVANCED_RESILIENCIA, Keys.PEOPLE_POST_MORTEM, Keys.OBSERVABILIDAD_OBSERVABILITY)
+        .addMoreReferences('https://sre.google/sre-book/addressing-cascading-failures/')
     ]
 ]);
 
