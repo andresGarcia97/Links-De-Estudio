@@ -241,7 +241,7 @@ export const SYSTEM_DESIGN_REF = new Map<string, Referencia>([
         .addMoreReferences('https://medium.com/@priyasrivastava18official/system-design-pattern-designing-reliable-multi-step-processes-in-distributed-systems-e22283c3ba30')
     ],
     [Keys.SYSTEM_DESIGN_FAILS_I, new Referencia('https://levelup.gitconnected.com/3-am-production-fires-the-12-patterns-that-keep-breaking-everything-5f64e11b1baf', 'Fallas en diseño de sistemas I', SYSTEM_DESIGN_KEY, 'Fallas comunes I', '2026/01/18')
-        .addRelatedItems(Keys.PERSISTENCY_INTERMEDIATE_N_1_SELECTS, Keys.EJECUCION_MEMORY_AND_GARBAGE, Keys.PATRONES_ADVANCED_RESILIENCIA, Keys.EJECUCION_BLOCKING_AND_NO_BLOCKING, Keys.PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS, Keys.PARADIGMAS_REACTIVO, Keys.META_ESTRUCTURAS_LOGS, Keys.SECURITY_ATTACK_CONDICION_CARRERA, Keys.PERSISTENCY_ADVANCED_LOCKING, Keys.CD_CI_CELL_BASED_ARQUITECTURE)
+        .addRelatedItems(Keys.PERSISTENCY_INTERMEDIATE_N_1_SELECTS, Keys.EJECUCION_MEMORY_AND_GARBAGE, Keys.PATRONES_ADVANCED_RESILIENCIA, Keys.EJECUCION_BLOCKING_AND_NO_BLOCKING, Keys.PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS_I, Keys.PARADIGMAS_REACTIVO, Keys.META_ESTRUCTURAS_LOGS, Keys.SECURITY_ATTACK_CONDICION_CARRERA, Keys.PERSISTENCY_ADVANCED_LOCKING, Keys.CD_CI_CELL_BASED_ARQUITECTURE)
     ],
     [Keys.SYSTEM_DESIGN_FAILS_II, new Referencia('https://levelup.gitconnected.com/what-5-famous-outages-taught-me-about-system-design-85f6b57b00b6', 'Fallas en diseño de sistemas II', SYSTEM_DESIGN_KEY, 'Fallas comunes II', '2026/07/22')
         .addRelatedItems(Keys.CONOCIMIENTOS_EMPIRICOS_BREAKING_PRODUCTION_LESSONS, Keys.PEOPLE_POST_MORTEM, Keys.MICROSERVICES_ESENTIAL_COMPONENTS, Keys.NUBE_DNS)
@@ -288,7 +288,7 @@ export const ARQUITECTURAS_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.MALAS_PRACTICAS_OVER_ENGINEERING, Keys.PRINCIPIOS_KISS, Keys.MALAS_PRACTICAS_DEATH_BY_MICROSERVICES, Keys.OBSERVABILIDAD_OBSERVABILITY, Keys.VERSIONAMIENTO_DOCUMENTATION, Keys.CONOCIMIENTOS_EMPIRICOS_CODE_MAINTAINER)
     ],
     [Keys.ARQUITECTURAS_MISTAKES_II, new Referencia('https://medium.com/@maahisoft20/10-deadly-sins-of-system-architecture-that-will-haunt-you-at-scale-841dabe54a44', 'Errores de arquitectura que emergen al escalar', ARQUITECTURAS_KEY, 'Errores II', '2025/10/08')
-        .addRelatedItems(Keys.TESTING_ADVANCED_CHARGE, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_MONOLITH, Keys.PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL, Keys.PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS, Keys.CD_CI_STATELESS_STATEFUL, Keys.CD_CI_FAILOVER, Keys.PATRONES_ADVANCED_RESILIENCIA, Keys.PEOPLE_PEOPLE_PROCESS_TECNOLOGY)
+        .addRelatedItems(Keys.TESTING_ADVANCED_CHARGE, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_MONOLITH, Keys.PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL, Keys.PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS_I, Keys.CD_CI_STATELESS_STATEFUL, Keys.CD_CI_FAILOVER, Keys.PATRONES_ADVANCED_RESILIENCIA, Keys.PEOPLE_PEOPLE_PROCESS_TECNOLOGY)
     ],
     [Keys.ARQUITECTURAS_DECISIONS, new Referencia('https://architectelevator.com/architecture/important-decisions/', 'Toma de decisiones sobre la arquitectura', ARQUITECTURAS_KEY, 'Decisiones', '2026/06/07')
         .addRelatedItems(Keys.TESTING_ADVANCED_ARCH_UNIT)
@@ -1702,7 +1702,9 @@ export const PERSISTENCY_INTERMEDIATE_REF = new Map<string, Referencia>([
     [Keys.PERSISTENCY_INTERMEDIATE_SCHEMAS_DESIGN, new Referencia('https://www.databricks.com/es/blog/what-is-database-schema', 'Diseño de Esquemas', PERSISTENCY_INTERMEDIATE_KEY, 'Diseño de Esquemas', '2026/08/07')
         .addMoreReferences('https://www.crunchydata.com/blog/demystifying-schemas-search_path-through-examples')
     ],
-    [Keys.PERSISTENCY_INTERMEDIATE_HARD_SOFT_DELETE, new Referencia('https://surajsinghbisht054.medium.com/understanding-soft-delete-and-hard-delete-in-software-development-best-practices-and-importance-539a935d71b5', 'Borrado Fisico Vs Logico', PERSISTENCY_INTERMEDIATE_KEY, 'Hard/Soft Delete', '2024/08/10')],
+    [Keys.PERSISTENCY_INTERMEDIATE_HARD_SOFT_DELETE, new Referencia('https://surajsinghbisht054.medium.com/understanding-soft-delete-and-hard-delete-in-software-development-best-practices-and-importance-539a935d71b5', 'Borrado Fisico Vs Logico', PERSISTENCY_INTERMEDIATE_KEY, 'Hard/Soft Delete', '2024/08/10')
+        .addRelatedItems(Keys.PERSISTENCY_CONSTRAINTS)
+    ],
     [Keys.PERSISTENCY_INTERMEDIATE_DATA_MODELING, new Referencia('https://towardsdev.com/mastering-data-modeling-a-step-by-step-guide-99dd32bfaa89', 'Modelado de Datos', PERSISTENCY_INTERMEDIATE_KEY, 'Modelado de Datos', '2025/01/23')
         .addRelatedItems(Keys.POO_POO)
     ],
@@ -1748,7 +1750,7 @@ export const PERSISTENCY_INTERMEDIATE_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.PERSISTENCY_DB_TYPES, Keys.META_CARACTERISTICAS_CACHE, Keys.PERSISTENCY_ACID, Keys.PERSISTENCY_ADVANCED_BASE, Keys.PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL)
     ],
     [Keys.PERSISTENCY_INTERMEDIATE_CONNECTION_POOL, new Referencia('https://medium.com/@artemkhrenov/connection-pooling-patterns-optimizing-database-connections-for-scalable-applications-159e78281389', 'Pool de conexiones', PERSISTENCY_INTERMEDIATE_KEY, 'Connection pool', '2026/10/05')
-        .addRelatedItems(Keys.FRAMEWORKS_SPRING_JPA_RELATIONS, Keys.PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS, Keys.PERSISTENCY_CRUD, Keys.SYSTEM_DESIGN_FAILS_I)
+        .addRelatedItems(Keys.FRAMEWORKS_SPRING_JPA_RELATIONS, Keys.PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS_I, Keys.PERSISTENCY_CRUD, Keys.SYSTEM_DESIGN_FAILS_I)
     ]
 ]);
 
@@ -1786,8 +1788,11 @@ export const PERSISTENCY_ADVANCED_REF = new Map<string, Referencia>([
     [Keys.PERSISTENCY_ADVANCED_UNLOGGED_TABLES, new Referencia('https://www.crunchydata.com/blog/postgresl-unlogged-tables', 'Unlogged tables (No WAL)', PERSISTENCY_ADVANCED_KEY, 'Unlogged tables', '2026/07/10')
         .addRelatedItems(Keys.ANALISIS_DATA_ETL_ELT)
     ],
-    [Keys.PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS, new Referencia('https://rakyll.medium.com/things-i-wished-more-developers-knew-about-databases-2d0178464f78', 'Problemas desconocidos de una BD', PERSISTENCY_ADVANCED_KEY, 'Problemas desconocidos', '2024/10/06')
+    [Keys.PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS_I, new Referencia('https://rakyll.medium.com/things-i-wished-more-developers-knew-about-databases-2d0178464f78', 'Problemas desconocidos de una BD', PERSISTENCY_ADVANCED_KEY, 'Problemas desconocidos I', '2024/10/06')
         .addRelatedItems(Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS)
+    ],
+    [Keys.PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS_II, new Referencia('https://medium.com/@vndpal/10-popular-database-practices-that-do-more-harm-than-good-9e3372f90a25?sk=9f8f28791fdab75ead7130e428837117', 'Problemas & buenas practicas', PERSISTENCY_ADVANCED_KEY, 'Problemas desconocidos II', '2026/10/12')
+        .addRelatedItems(Keys.PERSISTENCY_CONSTRAINTS, Keys.SYSTEM_DESIGN_DATABASE_WITHOUT_LOGIC, Keys.SYSTEM_DESIGN_QUEUES, Keys.VERSIONAMIENTO_DATABASE_VERSION_CONTROL, Keys.BUENAS_PRACTICAS_NAMING_CONVENTION)
     ],
     [Keys.PERSISTENCY_ADVANCED_PARTITIONING, new Referencia('https://medium.com/@imnazimuddinasif/a-practical-overview-of-database-partitioning-59e8e318142b', 'Particiones', PERSISTENCY_ADVANCED_KEY, 'Particiones', '2024/10/07')],
     [Keys.PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL, new Referencia('https://newsletter.systemdesigncodex.com/p/eventual-consistency-is-tricky', 'Consistencia Eventual', PERSISTENCY_ADVANCED_KEY, 'Consistencia Eventual', '2024/10/27')],

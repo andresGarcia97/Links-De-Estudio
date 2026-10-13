@@ -173,7 +173,9 @@
     "- Normalización excesiva ó subnormalización, ambos extremos son contraproducentes ",
     "- Ignorar las reglas del negocio, dando prioridad a los requisitos tecnicos y teoricos, más que la necesidad del negocio ",
     "- Desnormalización prematura, idealmente solo se deberian desnormalizar las areas que presenten problemas, no las que presentaran problemas ",
-    "- No es necesario aplicar todas las formas normales, llegar hasta la 3NF es suficiente para la mayoria de casos ",
+    "- No es necesario aplicar todas las formas normales, llegar hasta la <strong>3NF</strong> es suficiente para la mayoria de casos ",
+    "",
+    "- Normalización de datos que una vez guardados no deberian cambiar, <em>Ejemplo:</em> El precio de compra no debe cambiar en una factura ya emitida ",
     "- No usar datos reales, estos plantean escenarios reales y complejos que pueden avisar de casos extremos faltantes en los ejemplos teoricos ",
     "- Salir a producción sin pruebas de rendimiento, usar volumenes y patrones de consultas realistas de acuerdo a la demanda esperada ",
     "- No monitorear la base de datos, el rendimiento de las consultas puede diferir o degradarse más de lo esperado y se hace necesario iterar el diseño "

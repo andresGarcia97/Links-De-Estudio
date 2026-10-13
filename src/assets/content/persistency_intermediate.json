@@ -39,18 +39,18 @@
         "",
         "<strong>Soft delete:</strong> En lugar de eliminar permanentemente un registro, se le marca de manera especial con una bandera(flag)",
         "- Permitiendo que los datos sigan estando disponibles y sean recuperables, solo se inactivan y se omiten de manera lógica ",
-        "- Esta bandera suele ser un valor booleano, pero tambien puede ser la fecha de borrado o un estado",
+        "- Esta bandera suele ser un valor booleano, pero tambien puede ser la fecha de borrado o un estado ",
         "<strong>Ventajas:</strong>                                            <strong>Desventajas:</strong>",
         "- Integridad de datos                                - Mayor consumo de almacenamiento             ",
-        "- Información historica                              - Necesidad de filtros                        ",
+        "- Información historica                              - Necesidad de filtros para ocultamiento      ",
         "- Permite auditoria                                  - Puede llegar a afectar el rendimiento       ",
         "- Protección contra eliminación accidental ",
         "",
         "<strong>Hard delete:</strong> El enfoque tradicional, los datos se eliminan de forma permanente y no hay forma de recuperarlos, sin un backup",
-        "<strong>Ventajas:</strong>                                            <strong>Desventajas:</strong>",
-        "- Borrado de datos confidenciales                    - Perdidas de información                     ",
-        "- Cumplimiento de normas de privacidad                                                             ",
-        "- Diseños más simples                                                                              "
+        "<strong>Ventajas:</strong>                                            <strong>Desventajas:</strong>       ",
+        "- Borrado de datos confidenciales                    - Perdidas de información                            ",
+        "- Cumplimiento de normas de privacidad               - Rompimiento de relaciones foraneas sin constraints ",
+        "- Diseños más simples                                                                                     "
     ],
     "dataModeling": [
         "<strong>Fase Conceptual:</strong> Define los requisitos de alto nivel, funcionales y no funcionales ",
@@ -273,14 +273,14 @@
         "&bull; Considere la posibilidad de utilizar subconsultas o <strong>CTE</strong>(de acuerdo al caso) para simplificar uniones complejas "
     ],
     "orm": [
-        "- El <strong>Mapeo Objeto-Relacional</strong> permite abstraer el mapeo entre las entidades (objetos) del lenguaje de programación ",
-        " - y sus correspondientes esquemas, tablas y columnas en la base de datos ",
-        "- Permite definir y migrar esquemas con portabilidad entre distintos motores de base de datos ",
+        "- El <strong>Mapeo Objeto-Relacional</strong> permite abstraer el mapeo entre las entidades (objetos) del lenguaje de programación y la Base de datos ",
+        "- Existiendo correspondencias para esquemas, tablas, columnas, indices segun la base de datos ",
         "- Todas las operaciones básicas del CRUD son fácilmente implementables ",
         "",
-        "- Los cambios en el esquema son más rápidos de implementar al no requerir escribir SQL subyacente directamente ",
-        "- El rendimiento en consultas complejas decrece debido a la generación de SQL ineficiente por parte del ORM ",
-        "- Las jerarquías de herencia en POO son difíciles de representar en un modelo relacional (impedance mismatch) "
+        "<ins>&#x2713;</ins> Los cambios en el esquema son más rápidos de implementar al no requerir escribir SQL subyacente directamente ",
+        "<ins>&#x2713;</ins> Permite definir y migrar esquemas con portabilidad entre distintos motores de base de datos ",
+        "<del>&#x2717;</del> El rendimiento en consultas complejas decrece debido a la generación de SQL generico y/o deficiente por parte del ORM ",
+        "<del>&#x2717;</del> Las jerarquías de herencia en POO son difíciles de representar en un modelo relacional (impedance mismatch) "
     ],
     "n+1": [
         "- Es un problema cuando se maneja un ORM, dado una colección o una relación entre objetos, que a su vez pueden tener otras colecciones/objetos como atributos ",
