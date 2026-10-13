@@ -182,7 +182,7 @@
   ],
   "desnormalizacion": [
     "- Es el caso contrario de la <strong>Normalización</strong> aca se busca optimizar la lectura de los datos, sacrificando almacenamiento ",
-    "- Aca la redundacia de los datos se hace manera intencionada, de manera que se reducen las uniones entre tablas y los calculos complejos ",
+    "- Aca la redundacia de los datos se hace manera intencionada, reduciendo las uniones entre tablas y los calculos complejos ",
     "- Los campos usados frecuentemente y atributos calculados suelen usar columnas duplicadas y almacenarse ya calculados, respectivamente ",
     "",
     "<strong>Beneficios:</strong>",
@@ -191,7 +191,7 @@
     "",
     "<strong>Desventajas:</strong>",
     "- La redundancia de datos aumenta y con ello el espacio necesario para almacenarlos tambien, especialmente en grandes volumenes de datos ",
-    "- Menor cosistencia de los datos, debido a la dificultad de mantener todas las copias que existan actualizadas ",
+    "- Menor consistencia de los datos, debido a la dificultad de mantener todas las copias que existan actualizadas ",
     "",
     "<strong>Vistas materializadas:</strong>",
     "- Almacenan los resultados de Queries complejos y que son constantemente consultados, como informes y analisis estadisticos "

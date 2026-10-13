@@ -1682,7 +1682,7 @@ export const PERSISTENCY_REF = new Map<string, Referencia>([
     [Keys.PERSISTENCY_HOW_NORMALIZATION, new Referencia('https://medium.com/@artemkhrenov/understanding-database-normalization-from-1nf-to-bcnf-3893fac16fc9', 'Como Normalizar', PERSISTENCY_KEY, 'Como Normalizar', '2025/12/08')
         .addRelatedItems(Keys.PRINCIPIOS_STUPID, Keys.TESTING_ADVANCED_CHARGE)
     ],
-    [Keys.PERSISTENCY_DENORMALIZATION, new Referencia('https://dgraph.io/blog/post/denormalize-database/', 'Desnormalización', PERSISTENCY_KEY, 'Desnormalización', '2025/02/05')],
+    [Keys.PERSISTENCY_DENORMALIZATION, new Referencia('https://www.datacamp.com/es/tutorial/denormalization', 'Desnormalización', PERSISTENCY_KEY, 'Desnormalización', '2025/02/05', '2026/10/12')],
     [Keys.PERSISTENCY_ACID, new Referencia('https://dosideas.com/noticias/base-de-datos/973-acid-en-las-bases-de-datos', 'Esquema ACID', PERSISTENCY_KEY, 'ACID', '', '2026/01/15')
         .addRelatedItems(Keys.FRAMEWORKS_TRANSACTIONAL_I, Keys.FRAMEWORKS_TRANSACTIONAL_II, Keys.EJECUCION_DEAD_LOCKS)
     ],
@@ -1724,9 +1724,7 @@ export const PERSISTENCY_INTERMEDIATE_REF = new Map<string, Referencia>([
         .addMoreReferences('https://use-the-index-luke.com/es/sql/where/%C3%ADndices-parciales', 'https://medium.com/@anas-issath/83f4939a8441')
     ],
     [Keys.PERSISTENCY_INTERMEDIATE_ADVANCED_SARGEABLE, new Referencia('https://dev.to/kanani_nirav/secret-to-optimizing-sql-queries-understand-the-sql-execution-order-28m1', 'Consultas SARGEABLE', PERSISTENCY_INTERMEDIATE_KEY, 'SARGEABLE', '2023/08/14')],
-    [Keys.PERSISTENCY_INTERMEDIATE_OPTIMIZE_SLOW_QUERIES_I, new Referencia('https://digma.ai/how-to-optimize-slow-sql-queries/', 'Optimización de consultas I', PERSISTENCY_INTERMEDIATE_KEY, 'Optimización I', '2024/06/09', '2026/05/26')
-        .addMoreReferences('https://blog.stackademic.com/sql-query-optimization-how-i-reduced-query-time-from-3-seconds-to-50ms-e1d1dccd890d')
-    ],
+    [Keys.PERSISTENCY_INTERMEDIATE_OPTIMIZE_SLOW_QUERIES_I, new Referencia('https://blog.stackademic.com/sql-query-optimization-how-i-reduced-query-time-from-3-seconds-to-50ms-e1d1dccd890d', 'Optimización de consultas I', PERSISTENCY_INTERMEDIATE_KEY, 'Optimización I', '2024/06/09', '2026/05/26')],
     [Keys.PERSISTENCY_INTERMEDIATE_OPTIMIZE_SLOW_QUERIES_II, new Referencia('https://darren-tan0512.medium.com/sql-best-practices-hard-learned-lessons-from-my-years-as-a-software-engineer-1d50f6ea54b7', 'Optimización de consultas II', PERSISTENCY_INTERMEDIATE_KEY, 'Optimización II', '2025/12/21', '2026/05/26')
         .addRelatedItems(Keys.BUENAS_PRACTICAS_DEBUGGING, Keys.OBSERVABILIDAD_OBSERVABILITY)
         .addMoreReferences('https://medium.com/@kotiavula6/this-sql-question-exposes-fake-senior-developers-most-people-get-it-wrong-ce8a6a94952d')
