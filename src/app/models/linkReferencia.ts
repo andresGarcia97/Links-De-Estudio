@@ -1622,6 +1622,10 @@ export const SECURITY_ATTACKS_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.APIS_GATEWAY, Keys.APIS_RATE_LIMITING)
         .addMoreReferences('https://www.cloudflare.com/es-es/learning/ddos/glossary/web-application-firewall-waf/')
     ],
+    [Keys.SECURITY_ATTACK_MIDDLEWARE, new Referencia('https://aws.amazon.com/es/what-is/middleware/', 'Middleware', SECURITY_ATTACKS_KEY, 'Middleware', '2026/10/14')
+        .addRelatedItems(Keys.HARDWARE_PROTOCOLS, Keys.HARDWARE_MODEL_OSI, Keys.META_ESTRUCTURAS_SERIALIZATION_FORMATS)
+        .addMoreReferences('https://www.redhat.com/es/topics/middleware/what-is-middleware')
+    ],
     [Keys.SECURITY_ATTACK_PROTOCOLOS, new Referencia('https://www.websecurity.digicert.com/es/es/security-topics/what-is-ssl-tls-https', 'SSL, TLS, HTTPS', SECURITY_ATTACKS_KEY, 'SSL, TLS, HTTPS', '', '2026/08/11')
         .addRelatedItems(Keys.HARDWARE_PROTOCOLS)
     ],

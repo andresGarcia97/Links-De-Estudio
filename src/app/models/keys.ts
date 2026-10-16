@@ -444,6 +444,7 @@ export const SECURITY_IDOR = 'insecure-direct-object-reference';
 export const SECURITY_ENTROPIA_KEYS = 'entropy-source-in-key-generation';
 export const SECURITY_ENVINROMENT_VARIABLES = 'environment-variables';
 export const SECURITY_ATTACK_FIREWALL = 'firewall';
+export const SECURITY_ATTACK_MIDDLEWARE = 'middleware';
 export const SECURITY_ATTACK_PROTOCOLOS = 'protocols-security';
 export const SECURITY_ATTACK_PROXY = 'proxy';
 export const SECURITY_ATTACK_CSP = 'csp';

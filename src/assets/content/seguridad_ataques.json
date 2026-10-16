@@ -31,6 +31,16 @@
         "<strong>Impulsados por IA:</strong> Usan el aprendizaje automatico para mejorar la protección ante las amenazas y la seguridad de la red ",
         " - llendo más alla de las reglas tradicionales reconociendo patrones en base al trafico real "
     ],
+    "middleware": [
+        "- Es una capa de software intermedia que permite la comunicación entre aplicaciones distribuidas ",
+        "- Se popularizo en los años 1980 como forma de integración entre sistemas anteriores sin reescribir el código previo ",
+        "- Funciona mediante una abstracción común que los componentes entiendan, usando formatos y protocolos como JSON, XML, REST, SOAP o gRPC ",
+        "",
+        "<strong>Casos de uso</strong>",
+        "- <strong>Videojuegos:</strong> Los motores de videojuegos pueden integrar middleware como <em>Havok</em> o <em>FMOD</em>, así el código funciona sin importar la plataforma ",
+        "- <strong>Software:</strong> Lo utilizan para integrar diferentes componentes de software entre aplicaciones, este ofrece una API estandar ",
+        "- <strong>Transmisión de datos:</strong> Usado para procesar flujos de datos con baja latencia, clave en audio, video y eventos "
+    ],
     "protocols-security": [
         "<strong>SSL - Secure Sockets Layer:</strong> Mantiene segura una conexión de internet, mediante el cifrado de los datos en transito ",
         "- Esto protege toda la información privada que se envia entre 2 sistemas (cliente-servidor) o (servidor-servidor)",
