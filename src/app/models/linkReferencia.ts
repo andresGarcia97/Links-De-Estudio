@@ -959,6 +959,14 @@ export const META_ESTRUCTURAS_REF = new Map<string, Referencia>([
     ],
     [Keys.META_ESTRUCTURAS_QUEUES, new Referencia('https://github.com/joelparkerhenderson/queueing-theory', 'Teoria de Colas', META_ESTRUCTURAS_KEY, 'Teoria de Colas', '2025/09/07')
         .addRelatedItems(Keys.LEYES_LITTLE, Keys.SYSTEM_DESIGN_QUEUES)
+    ],
+    [Keys.META_ESTRUCTURAS_CONCEPTS_AI_I, new Referencia('https://medium.com/@gaddamnaveen192/from-tokens-to-agents-20-ai-concepts-every-developer-must-know-5105e0d25604', 'Conceptos IA I', META_ESTRUCTURAS_KEY, 'Conceptos IA I', '2026/10/17')
+        .addRelatedItems(Keys.METODOLOGIAS_SPEC_DRIVEN_DEVELOPMENT, Keys.TESTING_ADVANCED_CAJA_NEGRA_CAJA_BLANCA, Keys.BUILD_SINTAXIS_SEMANTICA, Keys.NEURO_MARKETING_SEMANTICA_PRAGMATICA, Keys.PERSISTENCY_DB_TYPES)
+        .addMoreReferences('https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents')
+    ],
+    [Keys.META_ESTRUCTURAS_CONCEPTS_AI_II, new Referencia('https://www.databricks.com/blog/ai-harness', 'Conceptos IA II', META_ESTRUCTURAS_KEY, 'Conceptos IA II', '2026/10/17')
+        .addRelatedItems(Keys.POO_DESIGN_BY_CONTRACT, Keys.POO_DESIGN_BY_CONTRACT_PARTS, Keys.ESTRATEGIAS_DESARROLLO_SDLC_IA)
+        .addMoreReferences('https://www.databricks.com/es/blog/what-is-ai-governance', 'https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents', 'https://docs.langchain.com/oss/python/langchain/human-in-the-loop')
     ]
 ]);
 
