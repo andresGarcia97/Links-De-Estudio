@@ -978,7 +978,9 @@ export const METODOLOGIAS_REF = new Map<string, Referencia>([
     [Keys.METODOLOGIAS_KANBAN, new Referencia('https://www.iebschool.com/blog/metodologia-kanban-agile-scrum/', 'Kanban', METODOLOGIAS_KEY, 'Kanban', '', '2025/06/30')
         .addRelatedItems(Keys.PRINCIPIOS_YAGNI)
     ],
-    [Keys.METODOLOGIAS_ELEVATOR, new Referencia('https://www.iebschool.com/blog/las-claves-para-realizar-un-elevator-pitch-lean-startup/', 'Elevator Pitch', METODOLOGIAS_KEY, 'Elevator Pitch')],
+    [Keys.METODOLOGIAS_ELEVATOR, new Referencia('https://www.iebschool.com/blog/las-claves-para-realizar-un-elevator-pitch-lean-startup/', 'Elevator Pitch & Kick Off', METODOLOGIAS_KEY, 'Elevator Pitch & Kick Off', '', '2026/10/20')
+        .addMoreReferences('https://asana.com/es/resources/project-kickoff-meeting')
+    ],
     [Keys.METODOLOGIAS_CANVAS, new Referencia('https://www.iebschool.com/blog/que-es-el-modelo-canvas-y-como-aplicarlo-a-tu-negocio-agile-scrum/', 'Canvas', METODOLOGIAS_KEY, 'Canvas')],
     [Keys.METODOLOGIAS_MODEL_BING_BANG, new Referencia('https://www.tutorialspoint.com/es/software_engineering/software_development_life_cycle.htm', 'Bing Bang', METODOLOGIAS_KEY, 'Bing Bang', '2024/10/10')],
     [Keys.METODOLOGIAS_CASCADA, new Referencia('https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/el-modelo-en-cascada/', 'Cascada', METODOLOGIAS_KEY, 'Cascada')],
