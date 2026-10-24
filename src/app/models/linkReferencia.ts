@@ -1140,7 +1140,10 @@ export const ANALISIS_DATA_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.MICROSERVICES_POLLING, Keys.PERSISTENCY_INTERMEDIATE_HARD_SOFT_DELETE, Keys.SYSTEM_DESIGN_RESILIENCE, Keys.PATRONES_ADVANCED_DISTRIBUTED_SYSTEMS)
         .addMoreReferences('https://systemdesign.sacavix.com/patterns/')
     ],
-    [Keys.ANALISIS_DATA_GOLDEN_RECORD, new Referencia('https://www.stibosystems.com/blog/benefits-of-creating-golden-customer-records', 'Golden Record', ANALISIS_DATA_KEY, 'Golden Record', '2024/08/10')],
+    [Keys.ANALISIS_DATA_GOLDEN_RECORD, new Referencia('https://www.stibosystems.com/blog/benefits-of-creating-golden-customer-records', 'Golden Record', ANALISIS_DATA_KEY, 'Golden Record', '2024/08/10', '2026/10/23')
+        .addRelatedItems(Keys.EJECUCION_CACHE_EVICTION, Keys.ANALISIS_PROJECTIONS, Keys.ARQUITECTURAS_IMPL_MODULITHS, Keys.MALAS_PRACTICAS_OVER_ENGINEERING)
+        .addMoreReferences('https://medium.com/but-it-works-on-my-machine/the-single-source-of-truth-ssot-principle-designing-consistent-data-flows-9cf7a8e0f876')
+    ],
     [Keys.ANALISIS_DATA_BATCH_VS_STREAM, new Referencia('https://estuary.dev/batch-processing-vs-stream-processing/', 'Batch Vs Stream Processing', ANALISIS_DATA_KEY, 'Batch Vs Stream', '2024/08/31', '2025/09/27')
         .addRelatedItems(Keys.PATRONES_ADVANCED_MESSAGING, Keys.SYSTEM_DESIGN_QUEUES)
     ],

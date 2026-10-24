@@ -248,13 +248,19 @@
     "- Los usuarios interactuan constantemente con multiples plataformas, estos datos deben ser almacenados y ocasionalmente son duplicados ",
     "- El resultado son diferentes versiones de un mismo registro, y las diferentes areas tendrian datos incompletos que desencadenan acciones inconexas ",
     "- Un <em>Golden Record</em> es la consolidación en un solo lugar de todos estos datos, y que esta se considere como la <em>unica fuente de verdad</em>",
-    "- Existen diferentes formas de lograrlo, una de estas es la inserción de una capa adicional que se encargue de gestionar los datos de manera comun ",
+    "- Esto no implica que no pueda ser duplicado, solo que ante inconsistencias haya un unico lugar en el que los demás pueden confiar ",
     "",
     "<strong>Beneficios</strong>",
     "- Aumentar las ventas al tener una visión unificada del cliente y sus necesidades ",
     "- La retención de los clientes tambien mejora, al sentir que sus necesidades estan cubiertas y que son visibilizados ",
     "- El cumplimiento de las regulaciones puede cambiar, y estos se facilitan entre menos lugares sea necesario modificar ",
-    "- La toma de decisiones siempre necesita de información y entre más procesada se encuentre mayor confianza tendra "
+    "- La toma de decisiones siempre necesita de información procesada y fiable, entre mejor se encuentre mayor confianza generara ",
+    "",
+    "<strong>Errores a evitar</strong>",
+    "- Almacenar datos en cache, sin una politica clara de limpieza (evictión) ",
+    "- Multiples fuentes para el mismo concepto, no es conveniente manejar un usuario diferente para facturas y otro para el propio servicio de usuarios ",
+    " - si se necesita la misma info, se puede consultar mediante APIs o proyecciones de datos ",
+    "- Sobreingenieria, no todo debe ser microservicios, aplicaciones pequeñas y medianas pueden existir como monolitos modulares sin problemas "
   ],
   "batchVsStreamProcessing": [
     "- Todas las empresas deben de manejar datos, y existen empresas donde este es su modelo de negocio, en el cual existen 2 maneras principales ",
