@@ -1430,6 +1430,9 @@ export const TESTING_REF = new Map<string, Referencia>([
     [Keys.TESTING_PROPERTY_TESTING_FUZZING_TESTING, new Referencia('https://www.mayhem.security/blog/what-is-property-based-testing', 'Property Testing & Fuzz Testing', TESTING_KEY, 'Property/Fuzz Testing', '2025/11/22')
         .addRelatedItems(Keys.ANALISIS_COMPORTAMIENTO, Keys.COMPILACION_AUTOMATAS, Keys.TESTING_ADVANCED_MUTATION, Keys.APIS_TESTING, Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION, Keys.POO_DESIGN_BY_CONTRACT_PARTS, Keys.META_CARACTERISTICAS_EXCEPTIONS)
         .addMoreReferences('https://www.mayhem.security/blog/property-based-fuzzing', 'https://www.mayhem.security/blog/useful-properties-to-check-with-fuzz-testing')
+    ],
+    [Keys.TESTING_TAUTOLOGY_TESTS, new Referencia('https://medium.com/@rowillia/tautology-tests-7dabd81ade30', 'Tautology Tests', TESTING_KEY, 'Tautology Tests', '2026/10/29')
+        .addRelatedItems(Keys.BUENAS_PRACTICAS_STATIC_CODE_ANALYSIS, Keys.CONOCIMIENTOS_EMPIRICOS_CODE_MAINTAINER, Keys.ESTRATEGIAS_DESARROLLO_BDD, Keys.BUENAS_PRACTICAS_GOOD_HABITS_II)
     ]
 ]);
 

@@ -8,7 +8,7 @@
     "- Es improductivo hacer pruebas exhaustivas, ademas de que es casi imposible de hacer, excepto en productos increiblemente sencillos ",
     "- Las pruebas tempranas ayudan a encontrar defectos con prontitud, y a su vez reducir tiempo y costos ",
     "- Agrupar defectos permite que las soluciones sean más especializadas, y lograr pruebas más efectivas ",
-    "- La paradoja del pesticida, si nuestro software cambia, las pruebas tambien deben hacerlo, que sigan funcionando no siempre es buena señal ",
+    "- La <em>paradoja del pesticida</em>, si nuestro software cambia, las pruebas tambien deben hacerlo, que sigan funcionando no siempre es buena señal ",
     "- Las pruebas dependen del contexto, entre más se parezca el entorno de pruebas al entorno de producción mejor ",
     "- Que no se presenten errores no significa que no existan errores, solo que no se han dado las condiciones, para estos casos existe <strong>QA</strong>"
   ],
@@ -343,5 +343,20 @@
     " - deberia devolver el dato original, util para comprobar operaciones como la serialización/deserialización ",
     "- Las invariantes son condiciones que deben cumplirse para todas las entradas, por ejemplo filtrar elementos no debe cambiar su orden, ",
     " - las aserciones de estos casos deben combinar que la salida sea correcta y además de que la invariante o invariantes se cumplan "
+  ],
+  "tautology-tests": [
+    "- Las pruebas son fundamentales para desarrollar software de calidad, de manera eficiente y segura ",
+    "- Pero, como muchas cosas, una mala aplicación puede causar más daños que beneficios ",
+    "",
+    "- Las pruebas <strong>Tautológicas</strong> caen esta sección donde se verifica la ejecución del código, no su comportamiento ni su validez ",
+    "&bull; Generan una falsa sensación de seguridad al tener una cobertura alta y muchos casos de prueba, que en realidad no verifican ningun comportamiento ",
+    "&bull; Congelan la implementación de manera que cualquier cambió termina convirtiéndose en una carga constante de corregir código y sus pruebas ",
+    "&bull; El analisis estatico de código y los compiladores ya hacen parte de este trabajo, este tipo de pruebas solo infla el código a mantener ",
+    "&bull; Fomentan el mal hábito de corregir pruebas sin comprender porque fallaron, permitiendo que se introduzcan errores o dañando regresiones ",
+    "",
+    "<strong>Cómo identificarlas y/o corregirlas</strong>",
+    "&bull; Las pruebas se actualizan con tanta o más frecuencia que el código -> Se debe validar el comportamiento y sus invariantes más que la implementación ",
+    "&bull; Abuso de los mocks para garantizar el funcionamiento de las pruebas -> Reemplazarlos con la mayor cantidad de objetos reales en lo posible ",
+    "&bull; Cobertura elevada y tests siempre en verde, pero los errores en producción son comunes -> Reducir, eliminar o modificar los tests "
   ]
 }

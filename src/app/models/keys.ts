@@ -569,6 +569,7 @@ export const TESTING_INTEGRATION = 'integrationTesting';
 export const TESTING_E2E = 'E2E-end-to-end';
 export const TESTING_CONTRACT_TESTING = 'contractTesting';
 export const TESTING_PROPERTY_TESTING_FUZZING_TESTING = 'propertyTestingAndFuzzingTesting';
+export const TESTING_TAUTOLOGY_TESTS = 'tautology-tests';
 export const TESTING_ADVANCED_CAJA_NEGRA_CAJA_BLANCA = 'cajaNegra-cajaBlanca';
 export const TESTING_ADVANCED_VALOR_LIMITE = 'valorLimite';
 export const TESTING_CLASES_EQUIVALENCIA = 'clasesEquivalencia';
