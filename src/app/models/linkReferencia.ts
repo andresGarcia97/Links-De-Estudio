@@ -359,6 +359,9 @@ export const BUENAS_PRACTICAS_REF = new Map<string, Referencia>([
     [Keys.BUENAS_PRACTICAS_COMPLEJIDAD, new Referencia('https://mpijierro.medium.com/complejidad-ciclom%C3%A1tica-y-como-reducirla-7374c215f666', 'Complejidad Ciclomatica', BUENAS_PRACTICAS_KEY, 'Complejidad')],
     [Keys.BUENAS_PRACTICAS_LOGGING, new Referencia('https://itnext.io/logger-or-debugger-which-one-to-choose-3f6a72200b15', 'Logging VS Debugging', BUENAS_PRACTICAS_KEY, 'Logs VS Debug')],
     [Keys.BUENAS_PRACTICAS_DEBUGGING, new Referencia('https://www.freecodecamp.org/news/what-is-debugging-how-to-debug-code/', 'Como Depurar', BUENAS_PRACTICAS_KEY, 'Debugging', '', '2025/02/23')],
+    [Keys.BUENAS_PRACTICAS_LEY_DE_KERNIGHAN, new Referencia('https://lawsofsoftwareengineering.com/laws/kernighans-law/', 'Ley de Kernighans', BUENAS_PRACTICAS_KEY, 'Ley de Kernighans', '2026/10/30')
+        .addRelatedItems(Keys.PRINCIPIOS_KISS, Keys.VERSIONAMIENTO_DOCUMENTATION)
+    ],
     [Keys.BUENAS_PRACTICAS_COMPLEJIDAD_COGNITIVA, new Referencia('https://enmilocalfunciona.io/complejidad-cognitiva/', 'Complejidad Cognitiva', BUENAS_PRACTICAS_KEY, 'Complejidad Cognitiva')],
     [Keys.BUENAS_PRACTICAS_COMPLEJIDAD_ALGORITMICA, new Referencia('https://medium.com/@joseguillermo_/qu%C3%A9-es-la-complejidad-algor%C3%ADtmica-y-con-qu%C3%A9-se-come-2638e7fd9e8c', 'Complejidad Algoritmica', BUENAS_PRACTICAS_KEY, 'Complejidad Algoritmica')],
     [Keys.BUENAS_PRACTICAS_NAMING_CONVENTION, new Referencia('https://www.pluralsight.com/resources/blog/software-development/programming-naming-conventions-explained', 'Convenciones de nombramiento', BUENAS_PRACTICAS_KEY, 'Nombramiento/Nomeclatura', '', '2025/04/05')],

@@ -146,6 +146,7 @@ export const BUENAS_PRACTICAS_DEMETER = 'demeter';
 export const BUENAS_PRACTICAS_COMPLEJIDAD = 'complejidad';
 export const BUENAS_PRACTICAS_LOGGING = 'logging';
 export const BUENAS_PRACTICAS_DEBUGGING = 'debugging';
+export const BUENAS_PRACTICAS_LEY_DE_KERNIGHAN = 'Kernighan';
 export const BUENAS_PRACTICAS_COMPLEJIDAD_COGNITIVA = 'complejidadCognitiva';
 export const BUENAS_PRACTICAS_COMPLEJIDAD_ALGORITMICA = 'complejidadAlgoritmica';
 export const BUENAS_PRACTICAS_NAMING_CONVENTION = 'namingConventions';

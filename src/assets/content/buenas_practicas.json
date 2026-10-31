@@ -100,6 +100,16 @@
     "",
     "<strong>Herramientas:</strong> Estas ayudan a construir un mejor código, como analizadores de código estatico, los IDE, navegadores, etc.. "
   ],
+  "Kernighan": [
+    "<em>Depurar el código es el doble de dificil que escribirlo desde el inicio</em>",
+    "",
+    "- Depurar es más complejo que escribir código, ya que la depuración exige comprender tanto el código como la causa exacta de su mal funcionamiento ",
+    "- Entre más ingenioso sea el código que escribes, más difícil será entenderlo y depurarlo después, sobre todo con el tiempo ",
+    "- Código simple y documentado sueler ser facil de mantener a futuro aun cuando la IA esta abaratando la construcción de las aplicaciones ",
+    "- Esta ley se publicó en <em>The Elements of Programming Style</em> (<strong>1974</strong>), cuando el cómputo tenía recursos limitados y la simplicidad era un requisito ",
+    "",
+    "<strong>Dicho popular:</strong> <em>Solo Dios y yo sabemos que hace este código</em> -> Tiempo despues -> <em>Solo Dios sabe que hace este código</em> "
+  ],
   "complejidadCognitiva": [
     "- Es una metrica de software complementaria a la complejidad ciclomatica ",
     "- Esta metrica trata sobre que tan dificil es de entender un fragmento de código ",
