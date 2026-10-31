@@ -1406,7 +1406,10 @@ export const TESTING_REF = new Map<string, Referencia>([
     [Keys.TESTING_TRIANGULO, new Referencia('https://proyectosagiles.org/triangulo-hierro/', 'Triangulo de Hierro', TESTING_KEY, 'Triangulo de Hierro', '', '2026/02/07')
         .addMoreReferences('https://www.linkedin.com/posts/jgarzas_alcance-tiempo-y-coste-el-cliente-s%C3%B3lo-activity-7425237597343596544-7cpO/')
     ],
-    [Keys.TESTING_COBERTURA, new Referencia('https://argonur.com/2020/05/11/code-coverage-cobertura-de-codigo/', 'Cobertura de pruebas', TESTING_KEY, 'Cobertura')],
+    [Keys.TESTING_COBERTURA, new Referencia('https://www.atlassian.com/es/continuous-delivery/software-testing/code-coverage', 'Cobertura de pruebas', TESTING_KEY, 'Cobertura', '', '2026/10/30')
+        .addRelatedItems(Keys.CALIDAD_CODING_PRINCIPLES, Keys.CD_CI_CI_CD)
+        .addMoreReferences('https://stackoverflow.com/questions/22802698/whats-the-difference-between-dead-code-and-unreachable-code')
+    ],
     [Keys.TESTING_FALSES_POSITIVES_NEGATIVES, new Referencia('https://www.browserstack.com/guide/false-positives-and-false-negatives-in-testing', 'Falsos positivos & Falsos negativos', TESTING_KEY, 'Falsos Resultados', '2024/07/11', '2025/04/26')],
     [Keys.TESTING_QUALITY_ASSURANCE, new Referencia('https://www.bbvaapimarket.com/es/mundo-api/que-es-qa-y-por-que-no-debe-faltar-en-tu-proyecto/', '¿ Que es QA ?', TESTING_KEY, 'Quality Assurance', '', '2025/03/15')
         .addRelatedItems(Keys.PEOPLE_GESTION_EXPECTATIVAS)

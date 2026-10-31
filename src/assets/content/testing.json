@@ -153,11 +153,16 @@
     "- Aun asi este tipo de proyectos son cotidianos y tambien logran finalizarse, con muchas deficiencias especialmente en la calidad "
   ],
   "testingCobertura": [
-    "- La cobertura del código es fundamental para garantizar un alcance optimo de las pruebas ",
-    "- No hay un numero magico para todos los proyectos, cada uno tendra una cobertura ideal",
+    "- La cobertura de código es un parámetro para saber qué parte se ha sometido a pruebas, muy util para evaluar la calidad del conjunto de pruebas ",
+    "- No hay un numero magico para todos los proyectos, cada uno tendra una cobertura ideal, aunque se suele aceptar una cobertura mayor al 80% ",
     "- El 100% de esta cobertura no es garantia de ausencia de errores, como el 50% no es garantia de la calidad de las pruebas ",
-    "- Esto es importante ya que se puede usar para hacer despliegues e integración continua, y encontrar código muerto ",
-    "- Existen varios tipos de cobertura, pero el más usado es la cobertura de las lineas de código "
+    "- Se pueden usar directamente en pipelines de CI/CD, encontrar código muerto, código inaccesible, etc. ",
+    "",
+    "&bull; <strong>Tipos de cobertura</strong>",
+    "- Cobertura de funciones, cuenta cuantas funciones abarcan las pruebas ",
+    "- Cobertura de instrucciones, cuenta las instrucciones totales que se han ejecutado ",
+    "- Cobertura de ramas, son las sentencias de control que se han ejecutado (if, else, ciclos, etc. ) ",
+    "- Cobertura de lineas, una de las más usada, ya que mide cuantas lineas del código fuente se han probado "
   ],
   "falsosPositivos-falsosNegativos": [
     "- Son resultados de pruebas erroneos, por problemas comunes como ambientes inestables o poco hermeticos ",
