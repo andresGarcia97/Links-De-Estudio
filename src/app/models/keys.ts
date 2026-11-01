@@ -636,6 +636,7 @@ export const SYSTEM_DESIGN_SCALING_WRITES = 'systemDesign-scaling-writes';
 export const SYSTEM_DESIGN_CONTENTION = 'systemDesign-contentions';
 export const SYSTEM_DESIGN_FAILS_I = 'systemDesign-fails-I';
 export const SYSTEM_DESIGN_FAILS_II = 'systemDesign-fails-II';
+export const SYSTEM_DESIGN_FAILS_III = 'systemDesign-fails-III';
 export const SYSTEM_DESIGN_DATABASE_WITHOUT_LOGIC = 'systemDesign-database-with-out-logic';
 export const SYSTEM_DESIGN_RESILIENCE = 'systemDesign-resilience';
 export const SYSTEM_DESIGN_MOTOR_DE_REGLAS = 'systemDesign-motor-de-reglas';
