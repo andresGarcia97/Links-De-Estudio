@@ -200,7 +200,7 @@ export const SYSTEM_DESIGN_REF = new Map<string, Referencia>([
     [Keys.SYSTEM_DESIGN_CONCEPTS_IV, new Referencia('https://medium.com/@pudarimadhavi99/i-thought-i-understood-system-design-then-these-21-concepts-proved-me-wrong-4fd9a485b206', 'System Design Concepts IV', SYSTEM_DESIGN_KEY, 'System Design Concepts IV', '2026/05/10')
         .addMoreReferences('https://medium.com/@shanureddy/you-think-youre-a-senior-engineer-these-9-architecture-traps-will-prove-you-wrong-b745db6d1525')
     ],
-    [Keys.SYSTEM_DESIGN_CONCEPTS_V, new Referencia('https://medium.com/lets-code-future/70-system-design-terms-every-beginner-should-know-c8f034b44be4?sk=fbf6f0b67375dc9b468a72b9719f27e0', 'System Design Concepts V', SYSTEM_DESIGN_KEY, 'System Design Concepts V', '2026/09/06')
+    [Keys.SYSTEM_DESIGN_CONCEPTS_V, new Referencia('https://medium.com/lets-code-future/70-system-design-terms-every-beginner-should-know-c8f034b44be4/', 'System Design Concepts V', SYSTEM_DESIGN_KEY, 'System Design Concepts V', '2026/09/06')
         .addMoreReferences('https://stackoverflow.com/questions/9762101/what-is-linearizability', 'https://shahjerry33.medium.com/clock-skew-time-can-change-anything-0bb84e9635de', 'https://medium.com/helpshift-engineering/load-shedding-in-web-services-9fa8cfa1ffe4')
     ],
     [Keys.SYSTEM_DESIGN_SINGLE_POINT_OF_FAILURE, new Referencia('https://levelup.gitconnected.com/single-point-of-failure-spof-in-system-design-c8bbac5af993', 'Single Point Of Failure', SYSTEM_DESIGN_KEY, 'SPOF', '2024/12/07')
@@ -212,7 +212,7 @@ export const SYSTEM_DESIGN_REF = new Map<string, Referencia>([
     [Keys.SYSTEM_DESIGN_II, new Referencia('https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction', 'System Design II', SYSTEM_DESIGN_KEY, 'System Design II', '2025/02/16')
         .addRelatedItems(Keys.APIS_API_FIRST, Keys.CONTENEDORES_ORCHESTRATION, Keys.CD_CI_IAS_CODE, Keys.HARDWARE_ESCALAMIENTO, Keys.META_CARACTERISTICAS_CACHE, Keys.NUBE_PACELC)
     ],
-    [Keys.SYSTEM_DESIGN_III, new Referencia('https://cloudwithazeem.medium.com/google-l7-system-design-interview-lessons-0b3834fded07?sk=2053ca003c75ca37fc300eb1bbb62aa3', 'System Design III', SYSTEM_DESIGN_KEY, 'System Design III', '2026/09/12')
+    [Keys.SYSTEM_DESIGN_III, new Referencia('https://cloudwithazeem.medium.com/google-l7-system-design-interview-lessons-0b3834fded07/', 'System Design III', SYSTEM_DESIGN_KEY, 'System Design III', '2026/09/12')
         .addRelatedItems(Keys.ARQUITECTURAS_MISTAKES_II, Keys.ARQUITECTURAS_MISTAKES_I, Keys.HARDWARE_ESCALAMIENTO, Keys.CD_CI_FAILOVER, Keys.OBSERVABILIDAD_COMMON_METRICS_I, Keys.REQUISITOS_TRADE_OFF, Keys.PATRONES_ANTI_PATTERNS, Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES)
         .addMoreReferences('https://engineeringatscale.substack.com/p/system-design-interview-success-six-step-framework', 'https://codefarm0.medium.com/12-interview-questions-that-separate-real-architects-from-paper-tigers-196e41b8d44a')
     ],
@@ -245,6 +245,7 @@ export const SYSTEM_DESIGN_REF = new Map<string, Referencia>([
     ],
     [Keys.SYSTEM_DESIGN_FAILS_II, new Referencia('https://levelup.gitconnected.com/what-5-famous-outages-taught-me-about-system-design-85f6b57b00b6', 'Fallas en diseño de sistemas II', SYSTEM_DESIGN_KEY, 'Fallas comunes II', '2026/07/22')
         .addRelatedItems(Keys.CONOCIMIENTOS_EMPIRICOS_BREAKING_PRODUCTION_LESSONS, Keys.PEOPLE_POST_MORTEM, Keys.MICROSERVICES_ESENTIAL_COMPONENTS, Keys.NUBE_DNS)
+        .addMoreReferences('https://aws.amazon.com/es/message/11201/')
     ],
     [Keys.SYSTEM_DESIGN_FAILS_III, new Referencia('https://www.linkedin.com/posts/do-you-know-the-7-types-of-system-failures-share-7521418803973603330-5Lq0/', 'Fallas en diseño de sistemas III', SYSTEM_DESIGN_KEY, 'Fallas comunes III', '2026/10/31')
         .addRelatedItems(Keys.MICROSERVICES_ADVANCED_CACHE_FAILS, Keys.OBSERVABILIDAD_COMMON_METRICS_I, Keys.EJECUCION_DEAD_LOCKS, Keys.EJECUCION_MEMORY_AND_GARBAGE, Keys.EJECUCION_CACHE_EVICTION, Keys.MICROSERVICES_ADVANCED_SPLIT_BRAIN, Keys.TESTING_ADVANCED_CORNER_AND_EDGE_CASE, Keys.PATRONES_ADVANCED_DISTRIBUTED_SYSTEMS)
@@ -389,7 +390,7 @@ export const BUENAS_PRACTICAS_REF = new Map<string, Referencia>([
     [Keys.BUENAS_PRACTICAS_GOOD_HABITS_II, new Referencia('https://medium.com/skillstuff/7-small-coding-decisions-that-prevent-expensive-production-bugs-512c3dbedc5b', 'Buenos habitos de un desarrollador II', BUENAS_PRACTICAS_KEY, 'Buenos habitos II', '2026/08/16')
         .addRelatedItems(Keys.TESTING_BUG, Keys.META_CARACTERISTICAS_ASSERTS, Keys.POO_DESIGN_BY_CONTRACT_PARTS, Keys.MICROSERVICES_ADVANCED_IDEMPOTENCY_II, Keys.PERSISTENCY_CONSTRAINTS, Keys.EJECUCION_CONCURRENCY_AND_PARALLELISM, Keys.SYSTEM_DESIGN_RESILIENCE, Keys.ANALISIS_DATA_GOLDEN_RECORD)
     ],
-    [Keys.BUENAS_PRACTICAS_GOOD_HABITS_III, new Referencia('https://medium.com/@rkdixit3/8-coding-patterns-that-turn-good-code-into-good-architecture-0986c4ac0712?sk=7f49c8c07ccdcbaadbb468a2c90c196c', 'Buenos habitos de un desarrollador III', BUENAS_PRACTICAS_KEY, 'Buenos habitos III', '2026/09/04')
+    [Keys.BUENAS_PRACTICAS_GOOD_HABITS_III, new Referencia('https://medium.com/@rkdixit3/8-coding-patterns-that-turn-good-code-into-good-architecture-0986c4ac0712/', 'Buenos habitos de un desarrollador III', BUENAS_PRACTICAS_KEY, 'Buenos habitos III', '2026/09/04')
         .addRelatedItems(Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS, Keys.ANALISIS_MODEL_DOMAIN, Keys.ANALISIS_BOUNDED_CONTEXT, Keys.ARQUITECTURAS_IMPL_HEXAGONAL, Keys.PRINCIPIOS_CQS, Keys.ANALISIS_EXCEPTION_DESIGN, Keys.POO_DESIGN_BY_CONTRACT, Keys.APIS_ERRORS, Keys.PRINCIPIOS_KISS, Keys.CALIDAD_IF_ELSE, Keys.SYSTEM_THINKING_II, Keys.PERSISTENCY_ADVANCED_MIGRATIONS, Keys.VERSIONAMIENTO_EVOLUTION_SCHEMA_AND_SCHEMA_REGISTRY, Keys.PATRONES_ADVANCED_STRANGLER_FIG, Keys.ANALISIS_STRATEGIC_DESIGN)
     ],
     [Keys.BUENAS_PRACTICAS_FUNCTIONS, new Referencia('https://medium.com/@akineralkan/clean-code-notes-chapter-3-functions-de4a30191300', 'Buenas practicas, Funciones', BUENAS_PRACTICAS_KEY, 'Funciones', '2024/10/18', '2026/07/27')
@@ -1819,7 +1820,7 @@ export const PERSISTENCY_ADVANCED_REF = new Map<string, Referencia>([
     [Keys.PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS_I, new Referencia('https://rakyll.medium.com/things-i-wished-more-developers-knew-about-databases-2d0178464f78', 'Problemas desconocidos de una BD', PERSISTENCY_ADVANCED_KEY, 'Problemas desconocidos I', '2024/10/06')
         .addRelatedItems(Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS)
     ],
-    [Keys.PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS_II, new Referencia('https://medium.com/@vndpal/10-popular-database-practices-that-do-more-harm-than-good-9e3372f90a25?sk=9f8f28791fdab75ead7130e428837117', 'Problemas & buenas practicas', PERSISTENCY_ADVANCED_KEY, 'Problemas desconocidos II', '2026/10/12')
+    [Keys.PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS_II, new Referencia('https://medium.com/@vndpal/10-popular-database-practices-that-do-more-harm-than-good-9e3372f90a25/', 'Problemas & buenas practicas', PERSISTENCY_ADVANCED_KEY, 'Problemas desconocidos II', '2026/10/12')
         .addRelatedItems(Keys.PERSISTENCY_CONSTRAINTS, Keys.SYSTEM_DESIGN_DATABASE_WITHOUT_LOGIC, Keys.SYSTEM_DESIGN_QUEUES, Keys.VERSIONAMIENTO_DATABASE_VERSION_CONTROL, Keys.BUENAS_PRACTICAS_NAMING_CONVENTION)
     ],
     [Keys.PERSISTENCY_ADVANCED_PARTITIONING, new Referencia('https://medium.com/@imnazimuddinasif/a-practical-overview-of-database-partitioning-59e8e318142b', 'Particiones', PERSISTENCY_ADVANCED_KEY, 'Particiones', '2024/10/07')],
@@ -1937,8 +1938,9 @@ export const HARDWARE_REF = new Map<string, Referencia>([
     [Keys.HARDWARE_UTF8, new Referencia('https://medium.com/@dmosyan/utf-8-and-the-problem-that-it-solves-a294aed2aa20', 'UTF-8', HARDWARE_KEY, 'UTF-8', '2024/08/24')
         .addRelatedItems(Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES, Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION)
     ],
-    [Keys.HARDWARE_CLEAN_CODE_PERFORMANCE, new Referencia('https://pvs-studio.com/en/blog/posts/1157/', 'Clean Code, peor Performance ?', HARDWARE_KEY, 'Clean Code & Performance', '2024/11/03')
+    [Keys.HARDWARE_CLEAN_CODE_PERFORMANCE, new Referencia('https://www.computerenhance.com/p/clean-code-horrible-performance', 'Clean Code, peor Performance ?', HARDWARE_KEY, 'Clean Code & Performance', '2024/11/03')
         .addRelatedItems(Keys.PRINCIPIOS_SOLID, Keys.CALIDAD_CLEAN_CODE, Keys.AGILES_MANIFEST_AGIL)
+        .addMoreReferences('https://hovinen.me/blog/2024/04/08/clean-code-horrible-performance-so-what/', 'https://pvs-studio.com/en/blog/posts/1157/')
     ],
     [Keys.HARDWARE_DATA_CENTERS, new Referencia('https://www.ionos.es/digitalguide/servidores/know-how/sistemas-de-evaluacion-para-data-centers/', 'Data Centers', HARDWARE_KEY, 'Data Centers', '2025/05/27')
         .addRelatedItems(Keys.NUBE_DISPONIBILITY, Keys.NUBE_NATIVE, Keys.SYSTEM_DESIGN_SINGLE_POINT_OF_FAILURE)
