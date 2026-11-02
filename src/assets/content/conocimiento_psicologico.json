@@ -25,15 +25,17 @@
     ],
     "sesgosCognitivos": [
         "- Son impulsos inherentes a cada ser humano que se basan en sus emociones, conocimientos, experiencias, creencias, etc.. ",
-        "- Es la interpretación erronea de la información disponible, y como esto afecta nuestra emisión de juicios ",
+        "- Suelen ser la interpretación erronea de la información disponible, y como esto afecta nuestra emisión de juicios ",
         "",
         "<strong>Sesgo de confirmación:</strong> Es la busqueda de sucesos ó interpretaciones para confirmar algo que creemos de manera arraigada ",
-        "<strong>Disponibilidad heuristica:</strong> Atajo mental que otorga más valor o credibilidad a la primera información que recordemos ",
         "<strong>Sesgo de anclaje:</strong> Es basarse en la primera información y solo esta fuente para tomar una decisión, sin evaluar otras posibilidades ",
         "<strong>Sesgo de observación selectiva:</strong> Es cuando diriges toda tu atención solamente a lo que te interesa, sin presta atención a los demás datos ",
         "<strong>Sesgo negativo:</strong> Te enfocas en los sucesos negativos en vez de tomar una posición más neutra ",
+        "<strong>Sesgo de impacto:</strong> Tendencia a sobrestimar un evento o lugar extraordinario, que pasara de lo excepcional a lo comun ",
+        "",
         "<strong>Resistencia reactiva:</strong> Se enfoca en hacer lo contrario de lo que alguien te dice ó aconseja, de manera selectiva y racional ",
-        "<strong>Sesgo de impacto:</strong> Tendencia a sobrestimar un evento o lugar extraordinario, que pasara de lo excepcional a lo comun "
+        "<strong>Disponibilidad heuristica:</strong> Atajo mental que otorga más valor o credibilidad a la primera información que recordemos ",
+        "<strong>Falacia de causa falsa:</strong> Solemos afirmar que existe una relación de causa -> efecto entre dos eventos, sólo porque coinciden en el tiempo "
     ],
     "prejuicios": [
         "- El primer paso es aceptar que todos tenemos segos cognitivos, estemos concientes o no de ellos ",

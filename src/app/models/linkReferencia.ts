@@ -626,7 +626,10 @@ export const CONOCIMIENTO_PSICOLOGICO_REF = new Map<string, Referencia>([
     [Keys.CONOCIMIENTOS_PSICOLOGICOS_COSTO_HUNDIDO, new Referencia('https://psicologiaymente.com/psicologia/falacia-costo-hundido/', 'Falacia del costo hundido', CONOCIMIENTO_PSICOLOGICO_KEY, 'Costo Hundido', '', '2026/04/18')
         .addRelatedItems(Keys.REFACTORING_REWRITE_TRAP)
     ],
-    [Keys.CONOCIMIENTOS_PSICOLOGICOS_SESGOS_COGNITIVOS, new Referencia('https://www.brainvestigations.com/neurociencia/sesgo-cognitivo-negocios/', 'Algunos Sesgos cognitivos', CONOCIMIENTO_PSICOLOGICO_KEY, 'Sesgo Cognitivo')],
+    [Keys.CONOCIMIENTOS_PSICOLOGICOS_SESGOS_COGNITIVOS, new Referencia('https://www.brainvestigations.com/neurociencia/sesgo-cognitivo-negocios/', 'Algunos Sesgos cognitivos', CONOCIMIENTO_PSICOLOGICO_KEY, 'Sesgos Cognitivos', '', '2026/11/01')
+        .addRelatedItems(Keys.TESTING_GRAFOS_CAUSA_EFECTO, Keys.OBSERVABILIDAD_CORRELATION_CAUSATION, Keys.REQUISITOS_REQUIREMENTS_ENGINEERING)
+        .addMoreReferences('https://jcduran.es/que-es-la-falacia-causa-falsa/', 'https://psicologiaymente.com/inteligencia/sesgos-cognitivos-efecto-psicologico')
+    ],
     [Keys.CONOCIMIENTOS_PSICOLOGICOS_PREJUICIOS, new Referencia('https://www.boream.com/insights/sesgos-cognitivos-y-prejuicios-en-los-procesos-de-diseno-de-interfaz-como-combatirlos', 'Prejuicios', CONOCIMIENTO_PSICOLOGICO_KEY, 'Prejuicios')],
     [Keys.CONOCIMIENTOS_PSICOLOGICOS_MAXWELL_CURVE, new Referencia('https://www.scrumnetwork.com/blog/scrum-no-te-apresures-no-te-detengas', 'La curva de Maxwell', CONOCIMIENTO_PSICOLOGICO_KEY, 'Curva de Maxwell', '', '2024/04/16')],
     [Keys.CONOCIMIENTOS_PSICOLOGICOS_DUNNIN_KRUGGER, new Referencia('https://www.awenpsicologia.com/efecto-dunning-kruger/', 'Efecto Dunning-Kruger', CONOCIMIENTO_PSICOLOGICO_KEY, 'Dunning-Kruger')],
