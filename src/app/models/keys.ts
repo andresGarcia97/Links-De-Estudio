@@ -380,6 +380,7 @@ export const PERSISTENCY_INTERMEDIATE_HARD_SOFT_DELETE = 'hardAndSoftDelete';
 export const PERSISTENCY_INTERMEDIATE_DATA_MODELING = 'dataModeling';
 export const PERSISTENCY_INTERMEDIATE_DB_DESIGN_I = 'database-design-I';
 export const PERSISTENCY_INTERMEDIATE_DB_DESIGN_II = 'database-design-II';
+export const PERSISTENCY_INTERMEDIATE_DB_DESIGN_III = 'database-design-III';
 export const PERSISTENCY_INTERMEDIATE_COMMON_TABLE_EXPRESSION = 'commonTableExpression';
 export const PERSISTENCY_INTERMEDIATE_ADVANCED_SQL_ORDER_EXECUTION = 'sqlOrderExecution';
 export const PERSISTENCY_INTERMEDIATE_INDICES = 'indices';

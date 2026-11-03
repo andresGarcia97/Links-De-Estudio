@@ -369,7 +369,7 @@ export const BUENAS_PRACTICAS_REF = new Map<string, Referencia>([
     ],
     [Keys.BUENAS_PRACTICAS_COMPLEJIDAD_COGNITIVA, new Referencia('https://enmilocalfunciona.io/complejidad-cognitiva/', 'Complejidad Cognitiva', BUENAS_PRACTICAS_KEY, 'Complejidad Cognitiva')],
     [Keys.BUENAS_PRACTICAS_COMPLEJIDAD_ALGORITMICA, new Referencia('https://medium.com/@joseguillermo_/qu%C3%A9-es-la-complejidad-algor%C3%ADtmica-y-con-qu%C3%A9-se-come-2638e7fd9e8c', 'Complejidad Algoritmica', BUENAS_PRACTICAS_KEY, 'Complejidad Algoritmica')],
-    [Keys.BUENAS_PRACTICAS_NAMING_CONVENTION, new Referencia('https://www.pluralsight.com/resources/blog/software-development/programming-naming-conventions-explained', 'Convenciones de nombramiento', BUENAS_PRACTICAS_KEY, 'Nombramiento/Nomeclatura', '', '2025/04/05')],
+    [Keys.BUENAS_PRACTICAS_NAMING_CONVENTION, new Referencia('https://www.pluralsight.com/resources/blog/software-development/programming-naming-conventions-explained', 'Convenciones de nombramiento', BUENAS_PRACTICAS_KEY, 'Nomenclatura', '', '2025/04/05')],
     [Keys.BUENAS_PRACTICAS_STATIC_CODE_ANALYSIS, new Referencia('https://www.checkpoint.com/es/cyber-hub/cloud-security/what-is-static-code-analysis/', 'Analisis de código estatico', BUENAS_PRACTICAS_KEY, 'Analisis de código I', '2023/12/17', '2025/10/11')
         .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_SDLC, Keys.SMELL_CODES_SMELLS_CODES, Keys.SECURITY_CVE)
         .addMoreReferences('https://www.welivesecurity.com/la-es/2021/01/18/analisis-estatico-codigo-fuente-orientado-a-seguridad/')
@@ -1749,6 +1749,10 @@ export const PERSISTENCY_INTERMEDIATE_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.NUBE_NATIVE, Keys.SYSTEM_DESIGN_SCALING_WRITES, Keys.ANALISIS_STRATEGIC_DESIGN, Keys.PERSISTENCY_ADVANCED_SCALING_DB, Keys.CD_CI_FAILOVER, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRANSACTIONS, Keys.ARQUITECTURAS_IMPL_EVENT_DRIVEN)
         .addMoreReferences('https://medium.com/@artemkhrenov/database-design-patterns-the-complete-developers-guide-to-modern-data-architecture-c4e891875001')
     ],
+    [Keys.PERSISTENCY_INTERMEDIATE_DB_DESIGN_III, new Referencia('https://blog.stackademic.com/database-standards-used-by-leading-internet-companies-the-rules-that-keep-production-databases-490ec8516d4f', 'Diseño DB III', PERSISTENCY_INTERMEDIATE_KEY, 'Diseño DB III', '2026/11/02')
+        .addRelatedItems(Keys.BUENAS_PRACTICAS_NAMING_CONVENTION, Keys.PRINCIPIOS_TWICE_ONE, Keys.SYSTEM_DESIGN_CONCEPTS_II, Keys.META_CARACTERISTICAS_META_DATOS, Keys.SYSTEM_DESIGN_SCALING_WRITES, Keys.SYSTEM_DESIGN_DATABASE_WITHOUT_LOGIC, Keys.VERSIONAMIENTO_DATABASE_VERSION_CONTROL, Keys.VERSIONAMIENTO_EVOLUTION_SCHEMA_AND_SCHEMA_REGISTRY, Keys.CONOCIMIENTOS_EMPIRICOS_BREAKING_PRODUCTION_LESSONS)
+        .addMoreReferences('https://medium.com/javarevisited/how-i-design-database-schemas-as-a-senior-developer-for-better-results-ae5cf17e575d')
+    ],
     [Keys.PERSISTENCY_INTERMEDIATE_COMMON_TABLE_EXPRESSION, new Referencia('https://learnsql.com/blog/what-is-common-table-expression/', 'Common Table Expression', PERSISTENCY_INTERMEDIATE_KEY, 'CTE', '2025/01/04')
         .addRelatedItems(Keys.EJECUCION_RECURSIVIDAD)
     ],
@@ -1780,6 +1784,7 @@ export const PERSISTENCY_INTERMEDIATE_REF = new Map<string, Referencia>([
     [Keys.PERSISTENCY_INTERMEDIATE_SQL_NO_SQL, new Referencia('https://medium.com/@eugeniomendoza/c%C3%B3mo-saber-si-necesitas-una-base-de-datos-nosql-b6cfd5bb7d9b', 'SQL ó NoSql', PERSISTENCY_INTERMEDIATE_KEY, 'SQL ó NoSql', '', '2024/06/06')],
     [Keys.PERSISTENCY_INTERMEDIATE_CHOOSE_DB, new Referencia('https://medium.com/@akovtun/the-five-questions-to-pick-a-database-a-decision-tree-for-sql-nosql-cache-and-search-f62facca7566', 'Como escoger una DB', PERSISTENCY_INTERMEDIATE_KEY, 'Escoger una DB', '2026/08/15')
         .addRelatedItems(Keys.PERSISTENCY_DB_TYPES, Keys.META_CARACTERISTICAS_CACHE, Keys.PERSISTENCY_ACID, Keys.PERSISTENCY_ADVANCED_BASE, Keys.PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL)
+        .addMoreReferences('https://levelup.gitconnected.com/the-only-database-mental-model-you-need-and-where-to-actually-study-each-piece-aa07f1e0c0be')
     ],
     [Keys.PERSISTENCY_INTERMEDIATE_CONNECTION_POOL, new Referencia('https://medium.com/@artemkhrenov/connection-pooling-patterns-optimizing-database-connections-for-scalable-applications-159e78281389', 'Pool de conexiones', PERSISTENCY_INTERMEDIATE_KEY, 'Connection pool', '2026/10/05')
         .addRelatedItems(Keys.FRAMEWORKS_SPRING_JPA_RELATIONS, Keys.PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS_I, Keys.PERSISTENCY_CRUD, Keys.SYSTEM_DESIGN_FAILS_I)
