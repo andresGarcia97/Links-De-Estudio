@@ -1676,7 +1676,11 @@ export const SECURITY_ATTACKS_REF = new Map<string, Referencia>([
     [Keys.SECURITY_ATTACK_STRIDE, new Referencia('https://www.softwaresecured.com/post/stride-threat-modelling', 'STRIDE', SECURITY_ATTACKS_KEY, 'STRIDE')],
     [Keys.SECURITY_ATTACK_SUPPLY_CHAIN, new Referencia('https://www.cloudflare.com/es-es/learning/security/what-is-a-supply-chain-attack/', 'Supply Chain', SECURITY_ATTACKS_KEY, 'Supply Chain', '2026/06/14')
         .addMoreReferences('https://ecosistemastartup.com/glosario/supply-chain-que-es-guia-completa-2026/')
-    ]
+    ],
+    [Keys.SECURITY_ATTACK_BOLA, new Referencia('https://vulnerabbit.com/blog/04-05-2026_que-es-bola-broken-object-level-authorization', 'Broken Object Level Authorization', SECURITY_ATTACKS_KEY, 'BOLA', '2026/11/05')
+        .addRelatedItems(Keys.SECURITY_IDOR, Keys.APIS_SECURITY, Keys.CD_CI_DEV_SEC_OPS, Keys.SECURITY_RBAC_ABAC)
+        .addMoreReferences('https://api-security.owasp.org/editions/2023/en/0xa1-broken-object-level-authorization/')
+    ],
 ]);
 
 export const SMELL_CODES_KEY = 'Smell-Codes';

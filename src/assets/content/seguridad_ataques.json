@@ -262,5 +262,21 @@
         "<strong>- Ataques Magecart:</strong> Se utilizan scripts maliciosos para robar datos de tarjetas de crédito de formularios de pago ",
         "<strong>- Ataques de abrevadero:</strong> Para una distribución más eficiente se identifican y compromenten sitios web utilizados por algun grupo especifico de usuarios ",
         "<strong>- Ataques a repositorios de paquetes (npm, PyPI, Maven):</strong> Comprometer el paquete en el registro público antes de que sea descargado "
+    ],
+    "broken-object-level-authorization": [
+        "- No es la #1 por casualidad, el Top 10 es la combinación de prevalencia, facilidad de explotación e impacto ",
+        "- Esta vulnerabilidad en APIs ocurre cuando un endpoint no valida que el usuario autenticado tenga permiso para acceder al recurso concreto ",
+        " - que está pidiendo, la autenticación funciona, la API sabe quién eres, pero la autorización a nivel de objeto falla, ",
+        " - y un atacante puede acceder o modificar datos de otros usuarios cambiando un ID ",
+        "- Para explotar esta vulnerabilidad no siempre se necesitan ataques sofisticados, basta con reconocer patrones de IDs predecibles o triviales ",
+        "",
+        "&bull; <strong>BFLA:</strong> Es acceder a funciones reservadas para roles superiores o diferentes al rol original ",
+        "&bull; <strong>BOLA:</strong> Es acceder a objetos de otros usuarios mediante un endpoint permitido ",
+        "&bull; <strong>IDOR:</strong> Es el concepto general, referencia directa a un objeto sin autorización. BOLA es el subconjunto en APIs ",
+        "&bull; <strong>BOPLA:</strong> Es el acceso o modificación de propiedades de un objeto que el usuario no debería ver/cambiar ",
+        "",
+        "<strong>Detección:</strong> El testing manual lo encuentra de manera facil, cuando son pocos endpoints para probar, pero para una detección ",
+        " - automatizada o a gran escala, se puede usar <em>DAST</em>, aunque es importante que las APIs esten debidamente documentadas ",
+        "<strong>Prevención:</strong> Se puede evitar de varias formas, como agregar los IDs de pertenencia directamente en las consultas o con Middlewares "
     ]
 }
