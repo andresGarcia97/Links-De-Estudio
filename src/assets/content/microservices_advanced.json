@@ -1,5 +1,5 @@
 {
-  "microservicesAntipatterns": [
+  "microservices-antipatterns-I": [
     "<strong>Monolito en microservicios:</strong> Conservar una arquitectura monolitica encontrara inevitablemente multiples problemas como: ",
     "- Tolerancia a fallos, problemas de escalabilidad y una implementación más compleja debio a la codependencia entre equipos ",
     "- Bases de datos compartidas, esto dificultara el crecimiento de la aplicación además de convertirse en un punto critico si llega a fallar ",
@@ -14,7 +14,7 @@
     "- Falta de autonomia de cada servicio, debido a que su equipo no es independiente frente a otros requisitos/funcionalidades desde otros equipos ",
     "- Si los componentes necesitan un estado compartido se debe tener en cuenta como se sincronizaran ",
     "",
-    "<strong>Infraestructura compartida:</strong> Es un problema más general que tener una DB unica, tambien se pueden compartir elementos como cache, nodos de despliegue ",
+    "<strong>Infraestructura compartida:</strong> Es un problema más general que tener una DB unica, tambien pueden compartir elementos como cache y nodos de despliegue ",
     "- Un pico de trafico en un microservicio de baja prioridad puede agotar los recursos y afectar un servicio más importante, solo por estar juntos ",
     "- Se dificulta gestionar los costos de cada servicio individualmente, especialmente por la falta de etiquetas o limites claros ",
     "",
@@ -28,16 +28,32 @@
     "",
     "<strong>Arquitectura Spageti:</strong> Es una arquitectura sin ninguna organización o división lógica, solamente una maraña de componentes conectados ",
     "- El flujo de control es complejo y enrevesado, de manera que rastrear errores es un martirio ó se generan comportamientos impredecibles ",
-    "- Acoplamiento indeseado al estar estrechamente conectados, cualquier modificación puede afectar otros componentes y asi empezar una ola de cambios ",
-    "",
-    "<strong>Falta de observabilidad:</strong> La aplicación no proporciona información adecuada sobre el estado internos y sus operaciones ",
+    "- Acoplamiento indeseado al estar estrechamente conectados, cualquier modificación puede afectar otros componentes y asi empezar una ola de cambios "
+  ],
+  "microservices-antipatterns-II": [
+    "<strong>Falta de observabilidad:</strong> La aplicación no proporciona información adecuada sobre el estado interno y sus operaciones (logs, metricas, trazas) ",
     "- Logs limitados en especial a la hora de registrar errores o sucesos importantes, dificultando el seguimiento de los problemas ",
-    "- Rastreo disperso ya que se carece de capacidades para rastrear el flujo de la solicitud entre los componentes involucrados ",
+    "- El rastreo distribuido se vuelve disperso, las capacidades para rastrear el flujo de la solicitud entre los componentes involucrados se encarece ",
     "",
-    "<strong>Ignorar el costo humano:</strong> Se centra tanto la necesidad de cumplir objetivos que generan plazos irreales ",
-    "- El trabajo excesivo empieza a afectar la vida personal y el tiempo libre de los colaboradores, disminuyendo su productividad a larga ",
+    "<strong>Saga por orquestación:</strong> La coordinación del estado distribuido que realiza una cantidad sin fin de llamadas sincronas y bloqueantes ",
+    "- En condiciones normales esto no tiene problemas más alla de la latencia adicional, pero en caso de fallos como degradaciones o problemas en la red ",
+    " - las transiciones o sus compensaciónes se ralentizan o directamente se bloquean ",
+    "",
+    "<strong>Healthcheck engañoso:</strong> El estado de cada micro es un tema muy importante, si los microservicios aparecen activos y sin problemas asi mismo se trataran ",
+    "- Si un servicio incapaz de gestionar el trafico aparece como <em>saludable</em>, todo lo que llegue directamente fallara o corromperan los datos ",
+    "- No basta solo con revisar el estado del servicio, tambien se deben incluir las dependencias externas (bases de datos, cache, brokers, etc. )",
+    "",
+    "<strong>Distributed Data Inconsistency:</strong> Sincronizar mal atraves de los multiples lugares que necesiten los datos atraves del sistema, ",
+    " - cualquier inconsistencia puede ocasionar errores, confusión o toma de decisiones incorrectas si no es igual al <em>golden record</em> ",
+    "",
+    "<strong>Ignorar el costo humano:</strong> Se prioriza tanto el cumplimiento de objetivos que se fijan plazos irreales ",
+    "- El trabajo excesivo empieza a afectar la vida personal y el tiempo libre de los colaboradores, disminuyendo su productividad a la larga ",
     "- Las capacidades del equipo no son tenidas en cuenta a la hora de planear los plazos y generan expectativas poco realistas ",
-    "- Microgestión o falta de apoyo, ya sea por parte de los lideres o del mismo equipo respectivamente "
+    "- Microgestión o falta de apoyo, por parte de los lideres o del mismo equipo ",
+    "",
+    "<strong>Inconsistencias en la comunicación:</strong> Usar diferentes estilos de comunicación no esta mal, siempre que se tenga la justificación tecnica ",
+    "- Pero cuando múltiples formas existen y no estan estandarizadas a nivel de organización, mantenerlas se convertira en un dolor de cabeza ",
+    "- Tambien aplica para los contratos expuestos entre servicios, detalles como nombrar camelCase/snake_case, puede generar errores sutiles entre integraciones "
   ],
   "producerConsumerProblem": [
     "- Es un problema clasico de sincronización en los sistemas operativos y sistemas que funcionan con eventos ",

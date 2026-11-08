@@ -863,7 +863,7 @@ export const MALAS_PRACTICAS_REF = new Map<string, Referencia>([
     [Keys.MALAS_PRACTICAS_DEATH_BY_MICROSERVICES, new Referencia('https://renegadeotter.com/2023/09/10/death-by-a-thousand-microservices.html', 'Muerte por Microservicios', MALAS_PRACTICAS_KEY, 'Muerte por Microservicios', '2023/09/14')
         .addRelatedItems(Keys.OBSERVABILIDAD_OBSERVABILITY)
     ],
-    [Keys.MALAS_PRACTICAS_ANTI_PATRONES_ARQUITECTURAS, new Referencia('https://lab.scub.net/architecture-anti-patterns-the-dark-side-of-the-architect-d9265b52d997', 'Anti patrones en Arquitecturas', MALAS_PRACTICAS_KEY, 'Contra Arquitecturas', '2024/09/07')],
+    [Keys.MALAS_PRACTICAS_ANTI_PATRONES_ARQUITECTURAS, new Referencia('https://lab.scub.net/architecture-anti-patterns-the-dark-side-of-the-architect-d9265b52d997', 'Antipatrones en Arquitecturas', MALAS_PRACTICAS_KEY, 'Contra Arquitecturas', '2024/09/07')],
     [Keys.MALAS_PRACTICAS_ANEMIC_DOMAIN, new Referencia('https://martinfowler.com/bliki/AnemicDomainModel.html', 'Dominio Anemico', MALAS_PRACTICAS_KEY, 'Dominio Anemico', '2024/05/08')
         .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_DDD)
     ],
@@ -1247,7 +1247,7 @@ export const PATRONES_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS)
         .addMoreReferences('https://medium.com/javarevisited/what-is-the-chain-of-responsibility-design-pattern-and-how-to-use-it-3987cc35218f')
     ],
-    [Keys.PATRONES_ANTI_PATRONES_CONCURRENCY, new Referencia('https://medium.com/@gaddamnaveen192/java-concurrency-anti-patterns-that-break-interviews-2090ec3ca2e4', 'Anti Patrones, concurrencia', PATRONES_KEY, 'Concurrencia', '2026/04/12')
+    [Keys.PATRONES_ANTI_PATRONES_CONCURRENCY, new Referencia('https://medium.com/@gaddamnaveen192/java-concurrency-anti-patterns-that-break-interviews-2090ec3ca2e4', 'Antipatrones, concurrencia', PATRONES_KEY, 'Concurrencia', '2026/04/12')
         .addRelatedItems(Keys.EJECUCION_CONCURRENCY_AND_PARALLELISM, Keys.EJECUCION_DEAD_LOCKS, Keys.FRAMEWORKS_SPRING_ANNOTATIONS, Keys.SYSTEM_DESIGN_CONTENTION)
         .addMoreReferences('https://mikemybytes.com/2024/02/28/curiosities-of-java-virtual-threads-pinning-with-synchronized/', 'https://jenkov.com/tutorials/java-concurrency/concurrency-models.html')
     ]
@@ -2142,9 +2142,13 @@ export const MICRO_SERVICES_REF = new Map<string, Referencia>([
 
 export const MICRO_SERVICES_ADVANCED_KEY = 'Microservicios-Avanzado';
 export const MICRO_SERVICES_ADVANCED_REF = new Map<string, Referencia>([
-    [Keys.MICROSERVICES_ADVANCED_ANTI_PATTERNS, new Referencia('https://blog.bitsrc.io/10-microservice-anti-patterns-278bcb7f385d', 'Antipatrones & Microservicios', MICRO_SERVICES_ADVANCED_KEY, 'Antipatrones', '2025/01/19', '2026/04/04')
-        .addRelatedItems(Keys.SYSTEM_DESIGN_SINGLE_POINT_OF_FAILURE, Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION, Keys.OBSERVABILIDAD_OBSERVABILITY)
+    [Keys.MICROSERVICES_ADVANCED_ANTI_PATTERNS_I, new Referencia('https://www.macropatternsconsortium.com/blog/microservices-anti-patterns', 'Antipatrones & Microservicios I', MICRO_SERVICES_ADVANCED_KEY, 'Antipatrones I', '2025/01/19', '2026/04/04')
+        .addRelatedItems(Keys.SYSTEM_DESIGN_SINGLE_POINT_OF_FAILURE, Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION, Keys.CONOCIMIENTOS_EMPIRICOS_PASTA_THEORY, Keys.MALAS_PRACTICAS_DEATH_BY_MICROSERVICES)
         .addMoreReferences('https://sacavix.substack.com/p/los-7-asesinos-de-la-arquitectura')
+    ],
+    [Keys.MICROSERVICES_ADVANCED_ANTI_PATTERNS_II, new Referencia('https://www.designgurus.io/blog/10-common-microservices-anti-patterns', 'Antipatrones & Microservicios II', MICRO_SERVICES_ADVANCED_KEY, 'Antipatrones II', '2026/11/07')
+        .addRelatedItems(Keys.OBSERVABILIDAD_OBSERVABILITY, Keys.PATRONES_ADVANCED_SAGA, Keys.CD_CI_HEALTH_CHECK, Keys.PERSISTENCY_ADVANCED_CONSISTENCY, Keys.ANALISIS_DATA_GOLDEN_RECORD, Keys.BUENAS_PRACTICAS_NAMING_CONVENTION)
+        .addMoreReferences('https://dzone.com/articles/10-microservices-anti-patterns-you-need-to-avoid')
     ],
     [Keys.MICROSERVICES_ADVANCED_PRODUCER_CONSUMER_PROBLEM, new Referencia('https://www.baeldung.com/java-producer-consumer-problem', 'Problema Productor Consumidor', MICRO_SERVICES_ADVANCED_KEY, 'Productor-Consumidor', '2025/02/15')
         .addRelatedItems(Keys.SYSTEM_DESIGN_QUEUES, Keys.EJECUCION_CONCURRENCY_AND_PARALLELISM, Keys.EJECUCION_PROCESS_AND_THREADS)
