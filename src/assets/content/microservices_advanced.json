@@ -428,5 +428,25 @@
     "",
     "<strong>Deploy & CI/CD:</strong> Uno de los principios de los microservicios es que son desplegables de manera independiente ",
     "- Cuando cualquier cambio suele requerir multiples microservicios, es una señal de alerta que empeora si el proceso tampoco esta automatizado "
+  ],
+  "event-loss-duplication-reprocesing": [
+    "- La semántica de <em>entrega al menos una vez</em> suena como garantía, por lo que los equipos suelen confiar en ella ",
+    "- Tratar estos 3 conceptos como si fueran uno solo es una causa frecuente de errores y comportamientos inesperados ",
+    "",
+    "<strong>Pérdida:</strong> Es un evento que nunca llega a procesarse, ya sea por un fallo del productor o del broker ",
+    "- Del lado de productor y broker, suele ser un problema de configuración (acks, replicación) ",
+    "- También puede suceder del lado del consumidor, si hace el ACK sin terminar el procesamiento ",
+    "",
+    "<strong>Duplicación:</strong> Eventos que se procesan más de una vez, generalmente por reintentos o reenvíos ",
+    "- La duplicación es el precio de garantizar que no haya pérdidas, todo aquello de lo que no se tenga el ACK, puede reenviarse ",
+    "- Para esto es importante tener consumidores que soporten idempotencia o que puedan descartar eventos ya procesados ",
+    "",
+    "<strong>Reprocesamiento:</strong> Reproducir o reenviar de manera deliberada eventos ya procesados, para corregir errores o realizar migraciones ",
+    "- La duplicación suele ser involuntaria, pero reprocesar un histórico de eventos es deliberado, con intenciones claras, como reconstruir un modelo de lectura ",
+    "- El reprocesamiento de eventos deberia ser seguro siempre que sea determinista y es capaz de separar los efectos secundarios, como el envio de un correo ",
+    "",
+    "<strong>¿ Que hacer cuando no existe un identificador de eventos ?:</strong> Existen 2 caminos que dependen de las restricciones ",
+    "&bull; <strong>Hash:</strong> Generado a partir del contenido que se recibe, con los campos que sean estables ",
+    "&bull; <strong>Upsert:</strong> Se pueden actualizar campos especificos segun las condiciones siempre que sea de manera segura "
   ]
 }

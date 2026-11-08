@@ -2192,6 +2192,10 @@ export const MICRO_SERVICES_ADVANCED_REF = new Map<string, Referencia>([
     [Keys.MICROSERVICES_ADVANCED_IMPORTANT_CONCEPTS, new Referencia('https://www.linkedin.com/posts/anton-martyniuk_i-paid-1000-to-learn-microservices-this-share-7506238011374968834-Qtqh/', 'Conceptos importantes & Aprendizajes', MICRO_SERVICES_ADVANCED_KEY, 'Conceptos importantes', '2026/09/20')
         .addRelatedItems(Keys.ARQUITECTURAS_IMPL_MONOLITOS, Keys.MICROSERVICES_BY_DEFAULT, Keys.VERSIONAMIENTO_EVOLUTION_SCHEMA_AND_SCHEMA_REGISTRY, Keys.OBSERVABILIDAD_OBSERVABILITY, Keys.TESTING_CONTRACT_TESTING, Keys.SYSTEM_DESIGN_FAILS_I, Keys.SYSTEM_DESIGN_FAILS_II, Keys.ANALISIS_BOUNDED_CONTEXT, Keys.MALAS_PRACTICAS_DEATH_BY_MICROSERVICES, Keys.CD_CI_DEPLOYMENT_PIPELINES, Keys.PERSISTENCY_ADVANCED_SCALING_DB, Keys.CD_CI_DEPLOYMENT_PATTERNS)
         .addMoreReferences('https://www.linkedin.com/posts/rocky-bhatia-a4801010_microservices-dont-fail-because-theyre-share-7505588571316154368-hlSD/')
+    ],
+    [Keys.MICROSERVICES_ADVANCED_EVENT_LOSS_DUPLICATION_REPROCESING, new Referencia('https://codefarm0.medium.com/how-to-handle-event-loss-duplicate-events-and-reprocessing-in-event-driven-architecture-70b57dff6a2e', 'Duplicación, Perdida y Reprocesamiento', MICRO_SERVICES_ADVANCED_KEY, 'Manejo de Eventos', '2026/11/07')
+        .addRelatedItems(Keys.PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL, Keys.ARQUITECTURAS_IMPL_EVENT_DRIVEN, Keys.ANALISIS_DELIVERY_GUARANTEE, Keys.ANALISIS_PROJECTIONS, Keys.COMPILACION_DETERMINISTIC_NON_DETERMINISTIC, Keys.SECURITY_HASHING_ENCRYPTION, Keys.PERSISTENCY_ADVANCED_UPSERT, Keys.MICROSERVICES_PUSH_POLL)
+        .addMoreReferences('https://martinfowler.com/eaaDev/EventSourcing.html')
     ]
 ]);
 

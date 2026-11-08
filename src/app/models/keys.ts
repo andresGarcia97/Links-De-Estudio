@@ -819,6 +819,7 @@ export const MICROSERVICES_ADVANCED_DISTRIBUTED_LOCKING = 'distributed-locking';
 export const MICROSERVICES_ADVANCED_PROCESSING_ARCHETYPES = 'processing-archetypes';
 export const MICROSERVICES_ADVANCED_SPLIT_BRAIN = 'split-brain';
 export const MICROSERVICES_ADVANCED_IMPORTANT_CONCEPTS = 'important-concepts';
+export const MICROSERVICES_ADVANCED_EVENT_LOSS_DUPLICATION_REPROCESING = 'event-loss-duplication-reprocesing';
 export const OBSERVABILIDAD_OBSERVABILITY = 'observabilidad';
 export const OBSERVABILIDAD_COMMON_METRICS_I = 'commonMetrics-I';
 export const OBSERVABILIDAD_COMMON_METRICS_II = 'commonMetrics-II';
