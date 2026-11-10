@@ -74,12 +74,22 @@
   ],
   "migracionesNube": [
     "- Toda migración hacia la nube, generalmente recoge 6 alternativas ",
+    "",
     "<strong>Realojar:</strong> Consiste en mover la aplicacion tal y como existia originalmente, una medida apresurada que no siempre funciona ",
     "<strong>Replataformar:</strong> Consiste en modificar la estructura subyacente, sin modificar la arquitectura central de aplicación ",
     "<strong>Readquirir:</strong> Consta de una migración de una nube o servicio a otro, de acuerdo a las necesidades del negocio ",
     "<strong>Refactorizar/Rediseñar:</strong> No solo es un movimiento de ambiente, tambien son mejoras de escalabilidad ó rendimiento ",
     "<strong>Retirar:</strong> A veces hay recursos que estan obsoletos o ya no se necesitan, por lo que se eliminan ó se desactivan ",
-    "<strong>Retener:</strong> Son ocasiones donde es necesario soportar tecnologias legacy que no son compatibles con la nube"
+    "<strong>Retener:</strong> Son ocasiones donde es necesario soportar tecnologias legacy que no son compatibles con la nube ",
+    "",
+    "<strong>Antipatrones a evitar</strong>",
+    "<strong>Sobre aprovisionamiento:</strong> Asignar capacidades similares a como se hace en entornos locales impide que el consumo se adapte a la demanda real ",
+    "<strong>Costos ocultos:</strong> El uso de la nube suele tener costos asociados que suelen estar ocultos, especialmente en áreas como la transferencia de datos, ",
+    " - almacenamiento adicional o servicios especializados, que agotan el presupuesto de manera anticipada ",
+    "<strong>Expansión no controlada:</strong> Entornos de desarrollo y de pruebas, suelen crear más recursos de los que necesitan, ",
+    " - los cuales si no son eliminados despues de su uso o de su vida util, solo se convierten en gastos innecesarios ",
+    "<strong>Sin automatización:</strong> Gestionar la infraestructura mediante tareas manuales, que pueden ser automatizadas mediante herramientas como <em>Terraform</em> y <em>Ansible</em>, ",
+    " - de igual modo desplegar manualmente sin ayuda de pipelines es una fuente de problemas durante los despliegues, permitiendo entornos inconsistentes "
   ],
   "capTeorema": [
     "- Este teorema sostiene que no es posible que un sistema distribuido cumpla o garantice más de 2/3 de las siguientes propiedades ",

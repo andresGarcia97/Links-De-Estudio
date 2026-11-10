@@ -1027,7 +1027,10 @@ export const NUBE_REF = new Map<string, Referencia>([
     [Keys.NUBE_12_FACTORES, new Referencia('https://12factor.net/es/', '12 factores para una aplicación SaaS', NUBE_KEY, '12 - factores', '', '2026/08/13')
         .addRelatedItems(Keys.CD_CI_CI_CD, Keys.SECURITY_ENVINROMENT_VARIABLES, Keys.CD_CI_HIDDEN_LAYERS, Keys.CD_CI_SIGTERM, Keys.TESTING_ADVANCED_ENVIRONMENT)
     ],
-    [Keys.NUBE_MIGRATIONS, new Referencia('https://www.paradigmadigital.com/techbiz/mitos-lift-shift-mentiras-migraciones-cloud/', 'Migraciones hacia la nube y las 6R', NUBE_KEY, 'Migraciones')],
+    [Keys.NUBE_MIGRATIONS, new Referencia('https://www.paradigmadigital.com/techbiz/mitos-lift-shift-mentiras-migraciones-cloud/', 'Migraciones hacia la nube y las 6R', NUBE_KEY, 'Migraciones', '', '2026/11/09')
+        .addRelatedItems(Keys.CD_CI_DEPLOYMENT_PIPELINES, Keys.CD_CI_IAS_CODE)
+        .addMoreReferences('https://en.paradigmadigital.com/dev/10-cloud-antipatterns/')
+    ],
     [Keys.NUBE_CAP_TEOREMA, new Referencia('https://www.ionos.es/digitalguide/servidores/know-how/que-es-el-cap-theorem/', 'Coherencia, Disponibilidad y Tolerancia', NUBE_KEY, 'Teorema CAP')
         .addRelatedItems(Keys.PERSISTENCY_DBMS)
     ],
