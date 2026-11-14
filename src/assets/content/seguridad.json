@@ -253,8 +253,6 @@
     "- Tambien se suele contar con <em>Autenticación Multi Factor (MFA)</em> para mitigar el riesgo de apropiación de credenciales y sus privilegios "
   ],
   "hashing-vs-encryption": [
-    "- Intercambiar estos 3 valores puede dar lugar a malentedidos que afectan la seguridad de los sistemas ",
-    "",
     "<strong>Encoding:</strong> Tecnica de transformación de datos de un formato a otro, para que puedan ser comprendidos y utilizados por diferentes sistemas ",
     "- Esta no tiene ninguna finalidad para la seguridad, cualquiera que conozca el algoritmo usado, puede codificar/decodificar los mensajes ",
     "- Existen mecanismos para esto como el clasico ASCII, Unicode, Base64, o incluso los tokens JWT, todos con el fin de que los sistemas sean interoperables ",
@@ -265,7 +263,7 @@
     "- Las funciones hash son muy usadas para almacenar contraseñas e información sensible relacionada con la autenticación y autorización de un usuario ",
     "",
     "<strong>- Colisiones:</strong> Dependiendo del algoritmo usado, puede darse una colisión, cuando 2 entradas distintas producen exactamente el mismo hash de salida ",
-    "<strong>- Salt:</strong> Para evitar ataques de rainbow tables, se agrega un valor aleatorio único por entrada, garantizando hashes distintos aunque la contraseña sea igual ",
+    "<strong>- Salt:</strong> Para evitar ataques de <em>rainbow tables</em>, se agrega un valor aleatorio único por entrada, garantizando hashes distintos aunque la contraseña sea igual ",
     "",
     "<strong>Encryption:</strong> Es cifrar un dato usando una llave, permitiendo recuperar el valor original mediante la misma llave (simétrica) o una relacionada (asimétrica) ",
     "- Los datos se vuelven ilegibles para cualquiera no autorizado, en tránsito o en reposo y que requieren ser recuperados en texto claro (reversible) <em>como:</em> ",
@@ -273,7 +271,19 @@
     " &bull; Tarjetas de credito      &bull; API secrets",
     "",
     "<strong>- Symmetric Encryption (AES):</strong> Se usa la misma llave tanto para cifrar/descifrar, rápido y eficiente, especialmente con grandes volúmenes de datos ",
-    "<strong>- Asymmetric Encryption (RSA):</strong> Se usan 2 llaves: una pública para cifrar los datos y una privada para descifrarlos "
+    "<strong>- Asymmetric Encryption (RSA):</strong> Se usan 2 llaves, una pública para cifrar los datos y una privada para descifrarlos "
+  ],
+  "checksum-fingerprint": [
+    "<strong>Hash:</strong> Término genérico para la salida de un algoritmo hash, con tamaño fijo independientemente de la entrada ",
+    "",
+    "<strong>Digest:</strong> Un Message Digest es el resultado de una función hash criptográfica que se utiliza a menudo para la verificación de integridad de datos ",
+    "- Históricamente vinculado a algoritmos como MD5 (obsoleto), SHA-1 y SHA-256 ",
+    "",
+    "<strong>Checksum:</strong> Es una forma más simple de función hash que se usa para verificar corrupción de archivos o transmisión de datos ",
+    "- Diseñado para detectar cambios accidentales, por lo que no suele ser largo ",
+    "",
+    "<strong>Fingerprint:</strong> Es un hash usado para identificar datos de forma única, como una huella dactilar ",
+    "- Se suele aplicar a claves públicas como claves SSH, archivos o certificados "
   ],
   "insecure-direct-object-reference": [
     "- Esta vulnerabilidad permite acceder directamente a objetos (recursos, archivos, registros) mediante referencias expuestas para el usuario ",

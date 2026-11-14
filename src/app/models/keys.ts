@@ -444,6 +444,7 @@ export const SECURITY_RBAC_ABAC = 'controlDeAcceso-rbac-abac';
 export const SECURITY_CVE = 'CVE';
 export const SECURITY_ZERO_TRUST = 'zero-trust';
 export const SECURITY_HASHING_ENCRYPTION = 'hashing-vs-encryption';
+export const SECURITY_CHECKSUM_FINGERPRINT = 'checksum-fingerprint';
 export const SECURITY_IDOR = 'insecure-direct-object-reference';
 export const SECURITY_ENTROPIA_KEYS = 'entropy-source-in-key-generation';
 export const SECURITY_ENVINROMENT_VARIABLES = 'environment-variables';
