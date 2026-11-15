@@ -148,7 +148,7 @@ export const ANALISIS_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.MICROSERVICES_ADVANCED_PRODUCER_CONSUMER_PROBLEM, Keys.APIS_IDEMPOTENCIA)
     ],
     [Keys.ANALISIS_COHESERS_DECOUPLERS, new Referencia('https://itnext.io/cohesers-and-decouplers-ecac2964081a', 'Cohesores y Desacopladores ', ANALISIS_KEY, 'Desacoplamiento', '2025/04/07')
-        .addRelatedItems(Keys.POO_COUPLING_AND_COHESION, Keys.ARQUITECTURAS_IMPL_MONOLITOS, Keys.EJECUCION_DEAD_LOCKS, Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.SECURITY_ATTACK_CONDICION_CARRERA, Keys.PERSISTENCY_ADVANCED_SCALING_DB, Keys.LEYES_CONWAY)
+        .addRelatedItems(Keys.POO_COUPLING_AND_COHESION, Keys.ARQUITECTURAS_IMPL_MONOLITOS, Keys.EJECUCION_DEAD_LOCKS, Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.SECURITY_ATTACK_CONDICION_CARRERA_TOCTOU, Keys.PERSISTENCY_ADVANCED_SCALING_DB, Keys.LEYES_CONWAY)
     ],
     [Keys.ANALISIS_BOUNDED_CONTEXT, new Referencia('https://martinfowler.com/bliki/BoundedContext.html', 'Bounded Context', ANALISIS_KEY, 'Bounded Context', '2025/06/02')
         .addRelatedItems(Keys.BUENAS_PRACTICAS_AGGREGATES, Keys.ESTRATEGIAS_DESARROLLO_DDD, Keys.PEOPLE_LANGUAGE_UBICUOS, Keys.POO_COUPLING_AND_COHESION)
@@ -166,7 +166,7 @@ export const ANALISIS_REF = new Map<string, Referencia>([
         .addMoreReferences('https://medium.com/@lambrych/can-eventstorming-guide-the-design-workflow-6f75d8aa20e0')
     ],
     [Keys.ANALISIS_PROJECTIONS, new Referencia('https://event-driven.io/en/projections_and_read_models_in_event_driven_architecture/', 'Event Driven Arquitecture & Projections', ANALISIS_KEY, 'Proyecciones', '2026/05/23')
-        .addRelatedItems(Keys.PATRONES_ADVANCED_PERSISTENCE_PATTERNS, Keys.PATRONES_ADVANCED_CQRS, Keys.APIS_IDEMPOTENCIA, Keys.SECURITY_ATTACK_CONDICION_CARRERA, Keys.ARQUITECTURAS_IMPL_EVENT_DRIVEN)
+        .addRelatedItems(Keys.PATRONES_ADVANCED_PERSISTENCE_PATTERNS, Keys.PATRONES_ADVANCED_CQRS, Keys.APIS_IDEMPOTENCIA, Keys.SECURITY_ATTACK_CONDICION_CARRERA_TOCTOU, Keys.ARQUITECTURAS_IMPL_EVENT_DRIVEN)
     ],
     [Keys.ANALISIS_CORE_VALUES_SOFTWARE_ENGINEER, new Referencia('https://anitsh.medium.com/core-values-of-a-successful-software-engineer-245801ba7247', 'Core Values Software Engineer', ANALISIS_KEY, 'Core Values', '2026/06/06')],
     [Keys.ANALISIS_ASYNCHRONUS_WORKFLOW, new Referencia('https://www.linkedin.com/posts/raulcejas04_softwarearchitecture-distributedsystems-backendengineering-share-7469727928717762560-bKEk/', 'Kafka vs RabbitMQ vs SQS', ANALISIS_KEY, 'Flujo asincrono', '2026/06/25', '2026/08/19')
@@ -229,7 +229,7 @@ export const SYSTEM_DESIGN_REF = new Map<string, Referencia>([
         .addMoreReferences('https://bugfree.ai/collection/system-design-top')
     ],
     [Keys.SYSTEM_DESIGN_SYSTEM_TYPES_II, new Referencia('https://www.designgurus.io/blog/system-design-decision-tree', 'Tipos generales de sistemas II', SYSTEM_DESIGN_KEY, 'Tipos de sistemas II', '2026/07/11')
-        .addRelatedItems(Keys.MICROSERVICES_PUSH_POLL, Keys.APIS_WEB_HOOK_VS_SOCKET_VS_SSE, Keys.NUBE_LATENCY, Keys.PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL, Keys.ANALISIS_DATA_STREAMING_VS_MESSAGING, Keys.SECURITY_ATTACK_CONDICION_CARRERA, Keys.PERSISTENCY_ACID, Keys.EJECUCION_CONCURRENCY_AND_PARALLELISM, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRACING)
+        .addRelatedItems(Keys.MICROSERVICES_PUSH_POLL, Keys.APIS_WEB_HOOK_VS_SOCKET_VS_SSE, Keys.NUBE_LATENCY, Keys.PERSISTENCY_ADVANCED_CONSISTENCY_EVENTUAL, Keys.ANALISIS_DATA_STREAMING_VS_MESSAGING, Keys.SECURITY_ATTACK_CONDICION_CARRERA_TOCTOU, Keys.PERSISTENCY_ACID, Keys.EJECUCION_CONCURRENCY_AND_PARALLELISM, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRACING)
         .addMoreReferences('https://medium.com/@saquibdev/how-to-prepare-for-system-design-interview-31fa1753379f')
     ],
     [Keys.SYSTEM_DESIGN_SCALING_WRITES, new Referencia('https://medium.com/@priyasrivastava18official/system-design-pattern-scaling-writes-how-big-tech-handles-billions-of-writes-per-second-60c92d0374f2', 'Diseño de sistemas, escritura', SYSTEM_DESIGN_KEY, 'Escalar la escritura', '2025/11/17')
@@ -237,11 +237,11 @@ export const SYSTEM_DESIGN_REF = new Map<string, Referencia>([
         .addMoreReferences('https://medium.com/@priyasrivastava18official/system-design-pattern-scaling-reads-reads-are-the-silent-killers-of-performance-heres-the-c0a74ec46646')
     ],
     [Keys.SYSTEM_DESIGN_CONTENTION, new Referencia('https://medium.com/@priyasrivastava18official/system-design-patterns-the-essential-guide-to-managing-contention-in-distributed-systems-d531b2f69dea', 'Diseño de sistemas, contención', SYSTEM_DESIGN_KEY, 'Contención y step process', '2026/01/15')
-        .addRelatedItems(Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_LOCKING, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRANSACTIONS, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.SECURITY_ATTACK_CONDICION_CARRERA, Keys.EJECUCION_CONCURRENCY_AND_PARALLELISM, Keys.PERSISTENCY_ACID, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_LOCKING, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRANSACTIONS, Keys.APIS_RATE_LIMITING)
+        .addRelatedItems(Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_LOCKING, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRANSACTIONS, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.SECURITY_ATTACK_CONDICION_CARRERA_TOCTOU, Keys.EJECUCION_CONCURRENCY_AND_PARALLELISM, Keys.PERSISTENCY_ACID, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_LOCKING, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_TRANSACTIONS, Keys.APIS_RATE_LIMITING)
         .addMoreReferences('https://medium.com/@priyasrivastava18official/system-design-pattern-designing-reliable-multi-step-processes-in-distributed-systems-e22283c3ba30')
     ],
     [Keys.SYSTEM_DESIGN_FAILS_I, new Referencia('https://levelup.gitconnected.com/3-am-production-fires-the-12-patterns-that-keep-breaking-everything-5f64e11b1baf', 'Fallas en diseño de sistemas I', SYSTEM_DESIGN_KEY, 'Fallas comunes I', '2026/01/18')
-        .addRelatedItems(Keys.PERSISTENCY_INTERMEDIATE_N_1_SELECTS, Keys.EJECUCION_MEMORY_AND_GARBAGE, Keys.PATRONES_ADVANCED_RESILIENCIA, Keys.EJECUCION_BLOCKING_AND_NO_BLOCKING, Keys.PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS_I, Keys.PARADIGMAS_REACTIVO, Keys.META_ESTRUCTURAS_LOGS, Keys.SECURITY_ATTACK_CONDICION_CARRERA, Keys.PERSISTENCY_ADVANCED_LOCKING, Keys.CD_CI_CELL_BASED_ARQUITECTURE)
+        .addRelatedItems(Keys.PERSISTENCY_INTERMEDIATE_N_1_SELECTS, Keys.EJECUCION_MEMORY_AND_GARBAGE, Keys.PATRONES_ADVANCED_RESILIENCIA, Keys.EJECUCION_BLOCKING_AND_NO_BLOCKING, Keys.PERSISTENCY_ADVANCED_UNKNOWN_PROBLEMS_I, Keys.PARADIGMAS_REACTIVO, Keys.META_ESTRUCTURAS_LOGS, Keys.SECURITY_ATTACK_CONDICION_CARRERA_TOCTOU, Keys.PERSISTENCY_ADVANCED_LOCKING, Keys.CD_CI_CELL_BASED_ARQUITECTURE)
     ],
     [Keys.SYSTEM_DESIGN_FAILS_II, new Referencia('https://levelup.gitconnected.com/what-5-famous-outages-taught-me-about-system-design-85f6b57b00b6', 'Fallas en diseño de sistemas II', SYSTEM_DESIGN_KEY, 'Fallas comunes II', '2026/07/22')
         .addRelatedItems(Keys.CONOCIMIENTOS_EMPIRICOS_BREAKING_PRODUCTION_LESSONS, Keys.PEOPLE_POST_MORTEM, Keys.MICROSERVICES_ESENTIAL_COMPONENTS, Keys.NUBE_DNS)
@@ -1503,7 +1503,7 @@ export const TESTING_ADVANCED_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.META_ESTRUCTURAS_SISTEMAS_COMPLEJOS, Keys.CALIDAD_CODE_REVIEWS, Keys.BUENAS_PRACTICAS_STATIC_CODE_ANALYSIS, Keys.PEOPLE_CUSTOMER_LOYALTY, Keys.WEB_USER_INTERFACE, Keys.WEB_USER_XPERIENCE, Keys.ESTRATEGIAS_DESARROLLO_SDLC, Keys.CALIDAD_CODE_REVIEWS, Keys.CALIDAD_DORA_SPACE_METRICS, Keys.REFACTORING_DEUDA_TECNICA_TYPES)
     ],
     [Keys.TESTING_ADVANCED_HEISENBERG_BUG, new Referencia('https://medium.com/@vndpal/the-heisenberg-bug-how-to-debug-bugs-that-disappear-9c41affc9500', 'Heisenberg Bug', TESTING_ADVANCED_KEY, 'Heisenberg Bug', '2026/04/19')
-        .addRelatedItems(Keys.CD_CI_DEPLOYMENT_PATTERNS, Keys.SECURITY_ATTACK_CONDICION_CARRERA, Keys.APIS_LATENCY_THROUGHPUT_BANDWITH)
+        .addRelatedItems(Keys.CD_CI_DEPLOYMENT_PATTERNS, Keys.SECURITY_ATTACK_CONDICION_CARRERA_TOCTOU, Keys.APIS_LATENCY_THROUGHPUT_BANDWITH)
         .addMoreReferences('https://franverona.com/blog/heisenbug-el-bug-que-cambia-mientras-se-depura', 'https://qpoint.io/blog/debugging-server-heisenbugs/')
     ]
 ]);
@@ -1671,7 +1671,10 @@ export const SECURITY_ATTACKS_REF = new Map<string, Referencia>([
     [Keys.SECURITY_ATTACK_PROXY, new Referencia('https://www.welivesecurity.com/la-es/2020/01/02/que-es-proxy-para-que-sirve/', 'Proxy & Proxy Inverso', SECURITY_ATTACKS_KEY, 'Proxy & Proxy Inverso', '', '2025/02/15')],
     [Keys.SECURITY_ATTACK_CSP, new Referencia('https://auth0.com/blog/from-zero-to-hero-with-csp/', 'Content Security Police', SECURITY_ATTACKS_KEY, 'CSP', '2022/11/07')],
     [Keys.SECURITY_ATTACK_CRSF, new Referencia('https://www.welivesecurity.com/la-es/2015/04/21/vulnerabilidad-cross-site-request-forgery-csrf/', 'Cross Site Request Forgery', SECURITY_ATTACKS_KEY, 'CSRF', '2023/01/06')],
-    [Keys.SECURITY_ATTACK_CONDICION_CARRERA, new Referencia('https://ciberseguridad.com/amenzas/vulnerabilidades/condicion-de-carrera/', 'Condición de Carrera', SECURITY_ATTACKS_KEY, 'Carrera', '', '2025/04/08')],
+    [Keys.SECURITY_ATTACK_CONDICION_CARRERA_TOCTOU, new Referencia('https://ciberseguridad.com/amenzas/vulnerabilidades/condicion-de-carrera/', 'Race condition & TOCTOU', SECURITY_ATTACKS_KEY, 'Condición de Carrera', '', '2026/11/14')
+        .addRelatedItems(Keys.EJECUCION_PROCESS_AND_THREADS, Keys.EJECUCION_CONCURRENCY_AND_PARALLELISM, Keys.MICROSERVICES_ADVANCED_DISTRIBUTED_LOCKING, Keys.PERSISTENCY_ACID, Keys.POO_INMUTABILITY)
+        .addMoreReferences('https://dev.to/codewithveek/understanding-toctou-the-race-condition-hiding-in-your-code-43nh')
+    ],
     [Keys.SECURITY_ATTACK_ZERO_DAY, new Referencia('https://latam.kaspersky.com/resource-center/definitions/zero-day-exploit', 'Zero Day Exploit', SECURITY_ATTACKS_KEY, 'Zero Day')],
     [Keys.SECURITY_ATTACK_LATERAL_CHANEL, new Referencia('https://ciberseguridad.com/amenzas/ataque-canal-lateral/', 'Ataques de canal lateral', SECURITY_ATTACKS_KEY, 'Canal lateral')],
     [Keys.SECURITY_ATTACK_MODEL_OSI, new Referencia('https://blog.bytebytego.com/p/ep97-10-good-coding-principles-to#%C2%A7top-network-security-cheatsheet', 'Ataques contra el Modelo OSI', SECURITY_ATTACKS_KEY, 'Modelo OSI', '2024/03/21')
