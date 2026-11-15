@@ -49,10 +49,17 @@
     "<strong>- Pull request:</strong> Es la solicitud de una persona que haya modificaciones de manera externa al repositorio pero que quiera integrarlas al original ",
     "<strong>- Markdown:</strong> Son archivos utiles a la hora de añadir información extra del proyecto, de manera más interactiva que un simple archivo de texto "
   ],
-  "stashGit": [
-    "<strong>- Stash:</strong> El stash nos permite intercambiar entre ramas, sin necesidad de hacer commits pero guardando los cambios hechos ",
-    "<strong>- Pop:</strong> Permite retomar los cambios guardados y continuar en el punto que se dejo ",
-    "<strong>- Reset:</strong> Borra todos lo cambios hechos y devuelve la rama al ultimo commit hecho "
+  "stash-status": [
+    "<strong>- Status:</strong> Estado actual del area de trabajo mostrando diferencias entre HEAD, index y árbol de trabajo, más archivos sin rastrear",
+    "<strong>- Stash:</strong> El stash nos permite intercambiar entre ramas, sin necesidad de hacer commits guardando los cambios hechos de manera temporal (pila) ",
+    "<strong>- Pop:</strong> Permite retomar los ultimos cambios guardados y continuar en el punto que se dejo, además lo borra de la pila ",
+    "<strong>- Apply:</strong> Permite retomar el cambios guardado que se escoga y continuar en el punto que se dejo ",
+    "<strong>- Reset:</strong> Mueve la rama a algun commit hecho y quita los cambios del index sin borrarlos, a menos que se corra con <em>--hard</em> ",
+    "",
+    "<strong>&bull; assume-unchanged:</strong> Indica a Git que asuma un archivo rastreado como sin cambios y omita revisarlo en el árbol de trabajo, hasta quitar la marca ",
+    "- Aunque se usa para ignorar cambios, se diseñó para optimizar Git en sistemas de archivos lentos o proyectos grandes ",
+    "<strong>&bull; skip-worktree:</strong> Git trata el archivo rastreado como sin cambios y lee la versión del index ",
+    "- Util para cambios locales que no se quieren enviar al remoto, como ajustes locales "
   ],
   "mergeGit": [
     "- Une los cambios de una rama a otra especifica, ocasionalmente surgen conflictos, que dependeran de la divergencia de los cambios realizados ",

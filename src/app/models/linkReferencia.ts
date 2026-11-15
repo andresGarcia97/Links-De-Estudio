@@ -803,17 +803,20 @@ export const GIT_KEY = 'Git';
 export const GIT_REF = new Map<string, Referencia>([
     [Keys.GIT_INTRODUCTION, new Referencia('https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Acerca-del-Control-de-Versiones', 'Introducción a Git', GIT_KEY, 'Introducción Git', '2025/12/09')],
     [Keys.GIT_STRUCTURE_AND_CONCEPTS, new Referencia('https://alexhost.com/es/faq/git-repository-structure/', 'Estructura Basica GIT', GIT_KEY, 'Estructura Basica', '2024/12/13', '2025/12/09')],
-    [Keys.GIT_REPOSITORIES, new Referencia('https://git-scm.com/book/es/v2/Fundamentos-de-Git-Trabajar-con-Remotos', 'Repositorios Remotos y Locales', GIT_KEY, 'Repositorios')],
-    [Keys.GIT_BRANCHS, new Referencia('https://git-scm.com/book/es/v2/Ramificaciones-en-Git-Procedimientos-B%C3%A1sicos-para-Ramificar-y-Fusionar', 'Manejo de ramas', GIT_KEY, 'Ramas')],
-    [Keys.GIT_PROTOCOLS, new Referencia('https://git-scm.com/book/es/v2/Git-en-el-Servidor-Los-Protocolos', 'Comunicación entre repositorios', GIT_KEY, 'Protocolos')],
-    [Keys.GIT_VERSIONS, new Referencia('https://git-scm.com/book/es/v2/Git-en-entornos-distribuidos-Manteniendo-un-proyecto', 'Versiones mediante etiquetas', GIT_KEY, 'Versiones y tags')],
-    [Keys.GIT_FORKS, new Referencia('https://git-scm.com/book/es/v2/GitHub-Participando-en-Proyectos', 'Solicitudes a otros proyectos', GIT_KEY, 'Forks y Pull requests')],
-    [Keys.GIT_STASH, new Referencia('https://git-scm.com/book/es/v2/Herramientas-de-Git-Guardado-r%C3%A1pido-y-Limpieza', 'Estados de trabajo', GIT_KEY, 'Stash y limpieza')],
-    [Keys.GIT_MERGE, new Referencia('https://git-scm.com/book/es/v2/Herramientas-de-Git-Fusi%C3%B3n-Avanzada', 'Union de ramas', GIT_KEY, 'Merge')],
-    [Keys.GIT_ATRIBUTOS, new Referencia('https://git-scm.com/book/es/v2/Personalizaci%C3%B3n-de-Git-Git-Attributes', 'Personalización y acciones por defecto', GIT_KEY, 'Atributos')],
-    [Keys.GIT_MIGRACION, new Referencia('https://git-scm.com/book/es/v2/Git-y-Otros-Sistemas-Migraci%C3%B3n-a-Git', 'Migración entre sistemas y otras acciones', GIT_KEY, 'Entresijos')],
-    [Keys.GIT_FLOW, new Referencia('https://aprendegit.com/que-es-git-flow/', 'Flujo de trabajo con Git', GIT_KEY, 'Git flow')],
-    [Keys.GIT_COMMITS_PRACTICES, new Referencia('https://codigofacilito.com/articles/41', 'Buenas practicas & commits atomicos', GIT_KEY, 'Buenas Practicas', '', '2026/04/01')
+    [Keys.GIT_REPOSITORIES, new Referencia('https://git-scm.com/book/es/v2/Fundamentos-de-Git-Trabajar-con-Remotos', 'Repositorios Remotos y Locales', GIT_KEY, 'Repositorios', '2021/03/15')],
+    [Keys.GIT_BRANCHS, new Referencia('https://git-scm.com/book/es/v2/Ramificaciones-en-Git-Procedimientos-B%C3%A1sicos-para-Ramificar-y-Fusionar', 'Manejo de ramas', GIT_KEY, 'Ramas', '2021/03/15')],
+    [Keys.GIT_PROTOCOLS, new Referencia('https://git-scm.com/book/es/v2/Git-en-el-Servidor-Los-Protocolos', 'Comunicación entre repositorios', GIT_KEY, 'Protocolos', '2021/03/15')],
+    [Keys.GIT_VERSIONS, new Referencia('https://git-scm.com/book/es/v2/Git-en-entornos-distribuidos-Manteniendo-un-proyecto', 'Versiones mediante etiquetas', GIT_KEY, 'Versiones y tags', '2021/03/15')],
+    [Keys.GIT_FORKS, new Referencia('https://git-scm.com/book/es/v2/GitHub-Participando-en-Proyectos', 'Solicitudes a otros proyectos', GIT_KEY, 'Forks y Pull requests', '2021/03/15')],
+    [Keys.GIT_STASH_AND_STATUS, new Referencia('https://git-scm.com/book/es/v2/Herramientas-de-Git-Guardado-r%C3%A1pido-y-Limpieza', 'Estados de trabajo', GIT_KEY, 'Stash y Status', '2021/03/15', '2026/11/14')
+        .addRelatedItems(Keys.META_ESTRUCTURAS_ESTRUCTURAS_DATOS_II)
+        .addMoreReferences('https://www.baeldung.com/ops/git-assume-unchanged-skip-worktree')
+    ],
+    [Keys.GIT_MERGE, new Referencia('https://git-scm.com/book/es/v2/Herramientas-de-Git-Fusi%C3%B3n-Avanzada', 'Union de ramas', GIT_KEY, 'Merge', '2021/03/15')],
+    [Keys.GIT_ATRIBUTOS, new Referencia('https://git-scm.com/book/es/v2/Personalizaci%C3%B3n-de-Git-Git-Attributes', 'Personalización y acciones por defecto', GIT_KEY, 'Atributos', '2021/06/06')],
+    [Keys.GIT_MIGRACION, new Referencia('https://git-scm.com/book/es/v2/Git-y-Otros-Sistemas-Migraci%C3%B3n-a-Git', 'Migración entre sistemas y otras acciones', GIT_KEY, 'Entresijos', '2021/03/15')],
+    [Keys.GIT_FLOW, new Referencia('https://aprendegit.com/que-es-git-flow/', 'Flujo de trabajo con Git', GIT_KEY, 'Git flow', '2021/03/16')],
+    [Keys.GIT_COMMITS_PRACTICES, new Referencia('https://codigofacilito.com/articles/41', 'Buenas practicas & commits atomicos', GIT_KEY, 'Buenas Practicas', '2021/03/16', '2026/04/01')
         .addRelatedItems(Keys.VERSIONAMIENTO_CHANGELOG)
         .addMoreReferences('https://www.freshconsulting.com/insights/blog/atomic-commits/', 'https://midu.dev/buenas-practicas-escribir-commits-git/')
     ],
