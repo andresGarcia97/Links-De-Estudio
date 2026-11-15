@@ -461,14 +461,14 @@ export const CALIDAD_REF = new Map<string, Referencia>([
 
 export const COMPILACION_KEY = 'Compilacion';
 export const COMPILACION_REF = new Map<string, Referencia>([
-    [Keys.COMPILACION_COMPILACION, new Referencia('https://developer.mozilla.org/es/docs/Glossary/Compile', '¿ Que es compilar ?', COMPILACION_KEY, '¿ Que es Compilar ?', '', '2025/03/19')],
-    [Keys.COMPILACION_NIVEL, new Referencia('https://desarrolloweb.com/articulos/2358.php', 'Niveles de compilación', COMPILACION_KEY, 'Niveles')],
-    [Keys.COMPILACION_INTERPRETADOS, new Referencia('https://yosoy.dev/diferencia-entre-lenguajes-compilados-e-interpretados/', 'Tipos de lenguajes por ejecución', COMPILACION_KEY, 'Ejecución')],
-    [Keys.COMPILACION_TRANSPILACION, new Referencia('https://ingenieriadesoftware.es/diferencia-transpilacion-compilacion/', '¿ Que es la transpilación ?', COMPILACION_KEY, 'Transpilación', '', '2025/02/09')
+    [Keys.COMPILACION_COMPILACION, new Referencia('https://developer.mozilla.org/es/docs/Glossary/Compile', '¿ Que es compilar ?', COMPILACION_KEY, '¿ Que es Compilar ?', '2021/02/07', '2025/03/19')],
+    [Keys.COMPILACION_NIVEL, new Referencia('https://desarrolloweb.com/articulos/2358.php', 'Niveles de compilación', COMPILACION_KEY, 'Niveles', '2021/02/07')],
+    [Keys.COMPILACION_INTERPRETADOS, new Referencia('https://yosoy.dev/diferencia-entre-lenguajes-compilados-e-interpretados/', 'Tipos de lenguajes por ejecución', COMPILACION_KEY, 'Ejecución', '2021/02/07')],
+    [Keys.COMPILACION_TRANSPILACION, new Referencia('https://ingenieriadesoftware.es/diferencia-transpilacion-compilacion/', '¿ Que es la transpilación ?', COMPILACION_KEY, 'Transpilación', '2021/02/07', '2025/02/09')
         .addRelatedItems(Keys.VERSIONAMIENTO_BACKWARD_AND_BREAKING_CHANGES)
     ],
-    [Keys.COMPILACION_GRAFOS, new Referencia('https://www.grapheverywhere.com/grafos-que-son-tipos-orden-y-herramientas-de-visualizacion/', 'Grafos', COMPILACION_KEY, 'Grafos')],
-    [Keys.COMPILACION_AOT, new Referencia('https://www.ibm.com/docs/es/sdk-java-technology/8?topic=reference-aot-compiler', 'Compilación AOT', COMPILACION_KEY, 'Compilación anticipada', '', '2024/11/23')],
+    [Keys.COMPILACION_GRAFOS, new Referencia('https://www.grapheverywhere.com/grafos-que-son-tipos-orden-y-herramientas-de-visualizacion/', 'Grafos', COMPILACION_KEY, 'Grafos', '2022/03/09')],
+    [Keys.COMPILACION_AOT, new Referencia('https://www.ibm.com/docs/es/sdk-java-technology/8?topic=reference-aot-compiler', 'Compilación AOT', COMPILACION_KEY, 'Compilación anticipada', '2022/04/12', '2024/11/23')],
     [Keys.COMPILACION_TIPOS_LENGUAJE_PROPOSITO, new Referencia('https://ed.team/blog/como-se-clasifican-los-lenguajes-de-programacion', 'Tipos de lenguajes por proposito', COMPILACION_KEY, 'Proposito', '2023/11/09')],
     [Keys.COMPILACION_DETERMINISTIC_NON_DETERMINISTIC, new Referencia('https://www.geeksforgeeks.org/dsa/difference-between-deterministic-and-non-deterministic-algorithms/', 'Determinista & No Determinista', COMPILACION_KEY, 'Determinismo', '2026/07/12')
         .addRelatedItems(Keys.SECURITY_ENTROPIA_KEYS, Keys.TESTING_ADVANCED_SMELLS_CODES_II, Keys.TESTING_TYPES)
@@ -490,25 +490,25 @@ export const BUILD_REF = new Map<string, Referencia>([
     [Keys.BUILD_SINTAXIS_SEMANTICA, new Referencia('https://softwareengineering.stackexchange.com/questions/113800/whats-the-difference-between-syntax-and-semantics', 'Sintaxis & Semantica', BUILD_KEY, 'Sintaxis & Semantica', '2026/09/19')
         .addRelatedItems(Keys.NEURO_MARKETING_SEMANTICA_PRAGMATICA, Keys.BUENAS_PRACTICAS_STATIC_CODE_ANALYSIS, Keys.COMPILACION_STRUCTURE_COMPILATOR, Keys.COMPILACION_ELEMENTS_COMPILATOR)
     ],
-    [Keys.BUILD_AZUCAR_SINTACTICO_SAL_SINTACTICA, new Referencia('https://www.genbeta.com/desarrollo/programar-seria-horrible-sin-el-azucar-sintactico-i', 'Azucar & Sal Sintactico', BUILD_KEY, 'Azucar/Sal Sintactico', '', '2026/09/19')
+    [Keys.BUILD_AZUCAR_SINTACTICO_SAL_SINTACTICA, new Referencia('https://www.genbeta.com/desarrollo/programar-seria-horrible-sin-el-azucar-sintactico-i', 'Azucar & Sal Sintactico', BUILD_KEY, 'Azucar/Sal Sintactico', '2021/11/17', '2026/09/19')
         .addRelatedItems(Keys.META_CARACTERISTICAS_TIPOS)
         .addMoreReferences('https://www.genbeta.com/desarrollo/cometer-errores-seria-mas-facil-sin-la-sal-sintactica-ii')
     ],
-    [Keys.BUILD_COERCION, new Referencia('https://developer.mozilla.org/es/docs/Glossary/Type_coercion', 'Coerción', BUILD_KEY, 'Coerción')],
-    [Keys.BUILD_DUCK_TYPING, new Referencia('https://devopedia.org/duck-typing', 'Duck Typing', BUILD_KEY, 'Duck Typing', '', '2024/11/23')],
+    [Keys.BUILD_COERCION, new Referencia('https://developer.mozilla.org/es/docs/Glossary/Type_coercion', 'Coerción', BUILD_KEY, 'Coerción', '2021/11/29')],
+    [Keys.BUILD_DUCK_TYPING, new Referencia('https://devopedia.org/duck-typing', 'Duck Typing', BUILD_KEY, 'Duck Typing', '2022/06/14', '2024/11/23')],
     [Keys.BUILD_REPRESENTAR_AUSENCIA, new Referencia('https://www.luisllamas.es/concepto-null-undefined-none/', 'null, undefined y none', BUILD_KEY, 'Ausencia', '2026/07/24')
         .addRelatedItems(Keys.META_CARACTERISTICAS_ARGUMENTS, Keys.EJECUCION_OBJECT_CREATION, Keys.META_CARACTERISTICAS_GENERICS)
     ],
-    [Keys.BUILD_CASTING, new Referencia('https://www.w3schools.com/java/java_type_casting.asp', 'Casting', BUILD_KEY, 'Casteo de Datos')],
+    [Keys.BUILD_CASTING, new Referencia('https://www.w3schools.com/java/java_type_casting.asp', 'Casting', BUILD_KEY, 'Casteo de Datos', '2022/10/28')],
     [Keys.BUILD_VERBOSITY, new Referencia('https://softwareengineering.stackexchange.com/questions/141175/why-is-verbosity-bad-for-a-programming-language', 'Verbosidad', BUILD_KEY, 'Verbosidad', '2023/03/31')],
-    [Keys.BUILD_TREE_SHAKING, new Referencia('https://developer.mozilla.org/en-US/docs/Glossary/Tree_shaking', 'TreeShaking', BUILD_KEY, 'Tree Shaking')],
-    [Keys.BUILD_OFUSCACION, new Referencia('https://www.azulweb.net/ofuscacion-de-codigo-antipatron-o-buena-practica/', 'Ofuscación', BUILD_KEY, 'Ofuscación', '', '2025/08/18')
+    [Keys.BUILD_TREE_SHAKING, new Referencia('https://developer.mozilla.org/en-US/docs/Glossary/Tree_shaking', 'TreeShaking', BUILD_KEY, 'Tree Shaking', '2022/03/21')],
+    [Keys.BUILD_OFUSCACION, new Referencia('https://www.azulweb.net/ofuscacion-de-codigo-antipatron-o-buena-practica/', 'Ofuscación', BUILD_KEY, 'Ofuscación', '2022/01/10', '2025/08/18')
         .addRelatedItems(Keys.EJECUCION_REFLEXION)
     ],
     [Keys.BUILD_INSTRUMENTS, new Referencia('https://foojay.io/today/who-instruments-the-instrumenters/', 'Instrumentos', BUILD_KEY, 'Instrumentos', '2024/08/18')
         .addRelatedItems(Keys.FRAMEWORKS_FRAMEWORKS, Keys.TESTING_MOCKS)
     ],
-    [Keys.BUILD_SDK_VS_API, new Referencia('https://www.g2.com/articles/sdk', 'SDK vs API', BUILD_KEY, 'SDK vs API', '', '2025/01/06')],
+    [Keys.BUILD_SDK_VS_API, new Referencia('https://www.g2.com/articles/sdk', 'SDK vs API', BUILD_KEY, 'SDK vs API', '2022/09/29', '2025/01/06')],
     [Keys.BUILD_ERRORS_AND_EXCEPTIONS, new Referencia('https://medium.com/javarevisited/because-i-didnt-know-the-difference-between-exception-and-error-in-java-i-failed-the-interview-b44b07823f72', 'Errors & Exceptions', BUILD_KEY, 'Errors & Exceptions', '2025/01/06')
         .addRelatedItems(Keys.META_CARACTERISTICAS_EXCEPTIONS, Keys.BUENAS_PRACTICAS_EXCEPTIONS)
     ],
@@ -522,7 +522,7 @@ export const BUILD_REF = new Map<string, Referencia>([
 
 export const EJECUCION_KEY = 'Ejecucion';
 export const EJECUCION_REF = new Map<string, Referencia>([
-    [Keys.EJECUCION_REFLEXION, new Referencia('https://levelup.gitconnected.com/reflecting-on-java-unveiling-the-magic-of-reflection-7140a465ff6b', 'Auto mutabilidad del codigo', EJECUCION_KEY, 'Reflexión', '', '2024/07/12')],
+    [Keys.EJECUCION_REFLEXION, new Referencia('https://levelup.gitconnected.com/reflecting-on-java-unveiling-the-magic-of-reflection-7140a465ff6b', 'Auto mutabilidad del codigo', EJECUCION_KEY, 'Reflexión', '2021/06/17', '2024/07/12')],
     [Keys.EJECUCION_PROCESS_AND_THREADS, new Referencia('https://www.linkedin.com/posts/bytebytego_systemdesign-coding-interviewtips-activity-7282264394716090368-bJfF/', 'Procesos & Hilos', EJECUCION_KEY, 'Procesos & Hilos', '', '2026/03/28')
         .addRelatedItems(Keys.HARDWARE_OPERATIVE_SYSTEM)
         .addMoreReferences('https://facturapp.weebly.com/hilos.html', 'https://medium.com/@akovtun/concurrency-parallelism-processes-threads-thread-safe-systems-1d4e7d351824')
@@ -534,7 +534,7 @@ export const EJECUCION_REF = new Map<string, Referencia>([
     [Keys.EJECUCION_RECURSIVIDAD, new Referencia('https://codigofacilito.com/articles/articulo_16_10_2019_16_22_35', 'Recursividad', EJECUCION_KEY, 'Recursividad', '', '2026/09/27')
         .addRelatedItems(Keys.BUILD_CALLS_AND_INVOCATION)
     ],
-    [Keys.EJECUCION_BACKTRACKING, new Referencia('https://www.ecured.cu/Vuelta_atr%C3%A1s_(backtracking)', 'Back Tracking', EJECUCION_KEY, 'Back tracking')],
+    [Keys.EJECUCION_BACKTRACKING, new Referencia('https://www.ecured.cu/Vuelta_atr%C3%A1s_(backtracking)', 'Back Tracking', EJECUCION_KEY, 'Back tracking', '2022/02/21')],
     [Keys.EJECUCION_OBJECT_CREATION, new Referencia('https://medium.com/technology-hits/minimizing-object-creation-for-high-performance-java-applications-553f9c9278c1', 'Creacion de Objetos', EJECUCION_KEY, 'Objetos', '2024/11/23')
         .addRelatedItems(Keys.PATRONES_DESGLOSE_GOF, Keys.META_ESTRUCTURAS_SERIALIZATION_DESERIALIZATION)
     ],
@@ -542,7 +542,7 @@ export const EJECUCION_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.COMPILACION_INTERPRETADOS, Keys.COMPILACION_COMPILACION, Keys.PARADIGMAS_IMPERATIVO, Keys.POO_INMUTABILITY)
         .addMoreReferences("https://medium.com/@alexander.paul.gilbert/oop-vs-functional-is-dead-ff51a70c83ce")
     ],
-    [Keys.EJECUCION_MEMORY_AND_GARBAGE, new Referencia('https://www.computerworld.com/article/2596992/memory-leaks-and-garbage-collection.html', 'Fugas de memoria y recoleccion de basura', EJECUCION_KEY, 'Fugas de memoria', '')],
+    [Keys.EJECUCION_MEMORY_AND_GARBAGE, new Referencia('https://www.computerworld.com/article/2596992/memory-leaks-and-garbage-collection.html', 'Fugas de memoria y recoleccion de basura', EJECUCION_KEY, 'Fugas de memoria', '2022/08/08')],
     [Keys.EJECUCION_FOOTPRINT, new Referencia('https://www.pcmag.com/encyclopedia/term/memory-footprint', 'Huella en memoria', EJECUCION_KEY, 'Huellas de memoria', '2023/11/03')],
     [Keys.EJECUCION_MEMORY_SAFETY, new Referencia('https://stackoverflow.blog/2024/03/04/in-rust-we-trust-white-house-office-urges-memory-safety', 'Seguridad en la memoria', EJECUCION_KEY, 'Seguridad en la memoria', '2024/03/26')],
     [Keys.EJECUCION_MEMORY_PROFILING, new Referencia('https://grafana.com/docs/pyroscope/latest/introduction/what-is-profiling/', 'Profiling', EJECUCION_KEY, 'Profiling', '2024/05/05', '2026/09/27')
