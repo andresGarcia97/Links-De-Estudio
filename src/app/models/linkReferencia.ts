@@ -362,7 +362,10 @@ export const BUENAS_PRACTICAS_REF = new Map<string, Referencia>([
     ],
     [Keys.BUENAS_PRACTICAS_DEMETER, new Referencia('https://www.adictosaltrabajo.com/2015/07/24/ley-de-demeter/', 'Ley de Demeter', BUENAS_PRACTICAS_KEY, 'Ley de Demeter')],
     [Keys.BUENAS_PRACTICAS_COMPLEJIDAD, new Referencia('https://mpijierro.medium.com/complejidad-ciclom%C3%A1tica-y-como-reducirla-7374c215f666', 'Complejidad Ciclomatica', BUENAS_PRACTICAS_KEY, 'Complejidad')],
-    [Keys.BUENAS_PRACTICAS_LOGGING, new Referencia('https://itnext.io/logger-or-debugger-which-one-to-choose-3f6a72200b15', 'Logging VS Debugging', BUENAS_PRACTICAS_KEY, 'Logs VS Debug')],
+    [Keys.BUENAS_PRACTICAS_LOGGING, new Referencia('https://itnext.io/logger-or-debugger-which-one-to-choose-3f6a72200b15', 'Logging VS Debugging', BUENAS_PRACTICAS_KEY, 'Logs VS Debug', '', '2026/11/15')
+        .addMoreReferences(Keys.TESTING_BUG, Keys.META_ESTRUCTURAS_LOGS, Keys.OBSERVABILIDAD_OBSERVABILITY)
+        .addMoreReferences('https://www.linkedin.com/posts/alexandre-zajac_the-7-levels-of-debugging-btw-my-system-share-7523783168865239040-Fg0U/')
+    ],
     [Keys.BUENAS_PRACTICAS_DEBUGGING, new Referencia('https://www.freecodecamp.org/news/what-is-debugging-how-to-debug-code/', 'Como Depurar', BUENAS_PRACTICAS_KEY, 'Debugging', '', '2025/02/23')],
     [Keys.BUENAS_PRACTICAS_LEY_DE_KERNIGHAN, new Referencia('https://lawsofsoftwareengineering.com/laws/kernighans-law/', 'Ley de Kernighans', BUENAS_PRACTICAS_KEY, 'Ley de Kernighans', '2026/10/30')
         .addRelatedItems(Keys.PRINCIPIOS_KISS, Keys.VERSIONAMIENTO_DOCUMENTATION)

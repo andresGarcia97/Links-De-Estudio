@@ -59,10 +59,19 @@
   "logging": [
     "<em>“Depurar es como ser el detective de una película policial en la que también eres el asesino.”</em> <strong>Filipe Fortes</strong>",
     "",
-    "- Depurar es recomendable cuando la pila de llamadas es demasiado extensa y compleja",
+    "- Depurar es recomendable cuando la pila de llamadas es demasiado extensa y compleja ",
     "- Registrar es util cuando la aplicación ó funcionalidad es pequeña y de baja complejidad ",
-    "- Con el auge de la nube y los sistemas distribuidos, esto ha hecho que la observavilidad sea aun más importante hoy en dia ",
-    "- Esta elección tambien depende de la comodidad de cada programador y de su eficiencia con cada herramienta "
+    "- Con el auge de la nube y los sistemas distribuidos, esto ha hecho que la observavilidad sea practicamente obligatoria hoy en dia ",
+    "- Esta elección tambien depende de la comodidad de cada programador y de su eficiencia con cada herramienta ",
+    "",
+    "<strong>Proceso general del debug</strong>",
+    "- Verificar la linea de tiempo, ubicando un punto de partida ",
+    "- Comparar las peticiones o los eventos segun sea el caso ",
+    "- Reproducir la falla en un ambiente seguro de preferencia ",
+    "- Seguir el camino de la falla ",
+    "- Formular y probar una hipótesis ",
+    "- Solucionar el problema ",
+    "- Prevenir su repetición, con tests unitarios, tests de integración o monitoreo adicional "
   ],
   "debugging": [
     "- En 1940 la almirante Grace Hopper, que tambien escribio el primer compilador que existio, descubrio una polilla un <strong>(bug)</strong> ",
