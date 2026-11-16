@@ -309,5 +309,21 @@
     "- Los resultados requieren una revisión detallada                    - Los resultados son de rápida revisión ",
     "- Se requiere el cumplimiento o registro de auditoria                - El prototipo o el trabajo puede considerarse desechable ",
     "- Son flujos de Extremo a Extremo con multiples pasos                - El cambio es mecanico y de bajo riesgo "
+  ],
+  "metodologias-post-IA": [
+    "- Las metodologias agiles no han muerto con la irrupción de la IA, desde 2026 ya se habla de varios <em>sucesores</em> de <strong>SCRUM</strong> ",
+    "",
+    "<strong>AWS AI-DLC (AI-Driven Development Life Cycle):</strong> Los sprints pasan a ser “bolts” de horas o días; metodología de AWS (2025), liberada como open source ",
+    "",
+    "<strong>AI-native SDLC de Anthropic:</strong> <em>intent → spec → plan</em> el Product Owner revisa la spec que escribe el agente; es el playbook oficial (ago. 2026) ",
+    "",
+    "<strong>SDD (Spec-Driven Development):</strong> La spec como contrato antes del código; GitHub Spec Kit lo implementa y supera las 140K estrellas en GitHub ",
+    "",
+    "<strong>BMAD (Breakthrough Method for Agile AI-Driven Development):</strong> Agentes con roles de equipo ágil (analista, PM, PO, arquitecto, desarrollador) más de 55K estrellas ",
+    "",
+    "<strong>OpenSpec:</strong> Cada cambio es una propuesta que modifica la spec, pensado para código que ya existe más de 74K estrellas ",
+    "",
+    "- Aunque existan multiples opciones, siempre sera importante el criterio para elegir, como dice uno de los 4 valores de la agilidad: ",
+    "&bull; Individuos e interacciones <strong>SOBRE</strong> procesos y herramientas "
   ]
 }

@@ -77,20 +77,20 @@ export const AGILES_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.ANALISIS_DATA_MVP)
         .addMoreReferences('https://www.linkedin.com/posts/jsalvadorb-project-manager_todo-es-prioridad-es-una-de-las-frases-share-7478133988042174465-jMQd/')
     ],
-    [Keys.AGILES_SCORING, new Referencia('https://www.growingscrummasters.com/keywords/theme-scoring/', 'Theme Scoring', AGILES_KEY, 'Theme Scoring', '', '2025/09/04')
+    [Keys.AGILES_SCORING, new Referencia('https://www.growingscrummasters.com/keywords/theme-scoring/', 'Theme Scoring', AGILES_KEY, 'Theme Scoring', '2021/05/17', '2025/09/04')
         .addMoreReferences('https://comunidad.iebschool.com/metodologiasparaelcambio/2014/03/23/priorizando-historias-de-usuario/')
     ],
-    [Keys.AGILES_MUDA, new Referencia('https://prevencontrol.com/prevenblog/las-7-mudas', 'Desperdicio', AGILES_KEY, 'MUDA', '', '2026/04/20')
+    [Keys.AGILES_MUDA, new Referencia('https://prevencontrol.com/prevenblog/las-7-mudas', 'Desperdicio', AGILES_KEY, 'MUDA', '2021/05/24', '2026/04/20')
         .addRelatedItems(Keys.PEOPLE_PEOPLE_PROCESS_TECNOLOGY)
     ],
     [Keys.AGILES_5S, new Referencia('https://www.gestiopolis.com/5s-seiri-seiton-seiso-seiketsu-y-shitsuke-base-de-la-mejora-continua/', 'Seiri, Seiton, Seiso, Seiketsu, Shitsuke', AGILES_KEY, '5S - Kaizen', '2026/04/29')
         .addRelatedItems(Keys.METODOLOGIAS_KAIZEN)
     ],
-    [Keys.AGILES_MUDA_SOFTWARE, new Referencia('https://medium.com/@techworldwithmilan/7-wastes-of-software-development-8febe264c5a8', 'Desperdicio en el software', AGILES_KEY, 'Muda Software', '', '2024/05/01')],
-    [Keys.AGILES_PLANNING_POKER, new Referencia('https://www.estratecno.com/blog/planning-poker-como-utilizar-la-tecnica-de-estimacion-agil.html', 'Planning Poker y la estimación agil', AGILES_KEY, 'Planning Poker', '', '2024/08/19')],
-    [Keys.AGILES_MANIFEST_AGIL, new Referencia('https://agilemanifesto.org/iso/es/manifesto.html', 'Manifiesto Agil', AGILES_KEY, 'Manifiesto Agil', '', '2026/10/15')],
-    [Keys.AGILES_MANIFEST_PRINCIPLES_AGIL, new Referencia('https://agilemanifesto.org/iso/es/principles.html', 'Principios Agiles', AGILES_KEY, 'Principios Agiles', '', '2026/10/15')],
-    [Keys.AGILES_SPIKE, new Referencia('https://www.scrumio.com/blog/que-es-un-spike/', 'Spike', AGILES_KEY, 'Spike', '', '2024/05/01')],
+    [Keys.AGILES_MUDA_SOFTWARE, new Referencia('https://medium.com/@techworldwithmilan/7-wastes-of-software-development-8febe264c5a8', 'Desperdicio en el software', AGILES_KEY, 'Muda Software', '2021/06/06', '2024/05/01')],
+    [Keys.AGILES_PLANNING_POKER, new Referencia('https://www.estratecno.com/blog/planning-poker-como-utilizar-la-tecnica-de-estimacion-agil.html', 'Planning Poker y la estimación agil', AGILES_KEY, 'Planning Poker', '2021/06/14', '2024/08/19')],
+    [Keys.AGILES_MANIFEST_AGIL, new Referencia('https://agilemanifesto.org/iso/es/manifesto.html', 'Manifiesto Agil', AGILES_KEY, 'Manifiesto Agil', '2021/02/07', '2026/10/15')],
+    [Keys.AGILES_MANIFEST_PRINCIPLES_AGIL, new Referencia('https://agilemanifesto.org/iso/es/principles.html', 'Principios Agiles', AGILES_KEY, 'Principios Agiles', '2022/07/27', '2026/10/15')],
+    [Keys.AGILES_SPIKE, new Referencia('https://www.scrumio.com/blog/que-es-un-spike/', 'Spike', AGILES_KEY, 'Spike', '2022/08/14', '2024/05/01')],
     [Keys.AGILES_DEMING, new Referencia('https://www.eurofins-environment.es/es/el-ciclo-deming-que-consiste-y-como-ayuda-gestion-procesos/', 'Ciclo de Deming', AGILES_KEY, 'Ciclo de Deming', '2023/01/06', '2024/05/01')],
     [Keys.AGILES_ESTIMATION_LAWS, new Referencia('https://www.javiergarzas.com/2023/07/descifrando-las-leyes-de-la-estimacion-agil.html', 'Leyes de estimación agil', AGILES_KEY, 'Estimaciones', '2023/12/08')],
     [Keys.AGILES_REQUISITOS_AGILES, new Referencia('https://www.javiergarzas.com/2019/12/los-requisitos-nunca-se-entienden-y-el-usuario-sabe-lo-que-quiere-cuando-lo-ve-funcionando.html', 'Entender los Requisitos', AGILES_KEY, 'Requisitos', '2024/03/10')],
@@ -838,14 +838,14 @@ export const USER_HISTORIES_KEY = 'Historias-Usuario';
 export const USER_HISTORIES_REF = new Map<string, Referencia>([
     [Keys.USER_HISTORIES_USER_HISTORIES, new Referencia('https://apiumhub.com/es/tech-blog-barcelona/como-escribir-buenas-historias-de-usuario/', '¿ Que son las HU ?', USER_HISTORIES_KEY, '¿ Que son las HU ?', '2024/04/28')],
     [Keys.USER_HISTORIES_OBJECTIVES, new Referencia('https://apiumhub.com/es/tech-blog-barcelona/como-escribir-buenas-historias-de-usuario/', '¿ Que busca una HU ?', USER_HISTORIES_KEY, '¿ Que busca una HU ?', '2024/04/28')],
-    [Keys.USER_HISTORIES_PARTS, new Referencia('https://apiumhub.com/es/tech-blog-barcelona/como-escribir-buenas-historias-de-usuario/', 'Partes de una HU', USER_HISTORIES_KEY, 'Partes')],
-    [Keys.USER_HISTORIES_INVEST, new Referencia('https://apiumhub.com/es/tech-blog-barcelona/como-escribir-buenas-historias-de-usuario/', 'Criterio INVEST', USER_HISTORIES_KEY, 'INVEST')],
-    [Keys.USER_HISTORIES_SMART, new Referencia('https://asana.com/es/resources/smart-goals', 'Criterio SMART', USER_HISTORIES_KEY, 'SMART', '', '2024/09/28')],
-    [Keys.USER_HISTORIES_3C, new Referencia('https://julibetancur.blog/tag/tres-c/', 'Card-Conversación-Confirmación', USER_HISTORIES_KEY, 'Las 3 C')],
-    [Keys.USER_HISTORIES_GHERKIN, new Referencia('https://blog.thiga.co/es/gherkin/', 'Definición de los criterios de aceptación', USER_HISTORIES_KEY, 'Gherkin')],
-    [Keys.USER_HISTORIES_DESCOMPOSICION, new Referencia('https://www.javiergarzas.com/2012/05/descomponer-historias-de-usuario-en-tareas-1.html', 'Descomposición en tareas', USER_HISTORIES_KEY, 'Descomposición')],
-    [Keys.USER_HISTORIES_STORY_POINTS, new Referencia('https://ronjeffries.com/articles/019-01ff/story-points/Index.html', 'Puntos de Historia', USER_HISTORIES_KEY, 'Puntos')],
-    [Keys.USER_HISTORIES_USE_CASE_REQUISITOS, new Referencia('http://www.angellozano.com/requisitos-del-sistema-vs-casos-uso-vs-historias-usuario/', 'HU Vs Casos de uso', USER_HISTORIES_KEY, 'Hu Vs Casos de Uso')],
+    [Keys.USER_HISTORIES_PARTS, new Referencia('https://apiumhub.com/es/tech-blog-barcelona/como-escribir-buenas-historias-de-usuario/', 'Partes de una HU', USER_HISTORIES_KEY, 'Partes', '2021/02/07')],
+    [Keys.USER_HISTORIES_INVEST, new Referencia('https://apiumhub.com/es/tech-blog-barcelona/como-escribir-buenas-historias-de-usuario/', 'Criterio INVEST', USER_HISTORIES_KEY, 'INVEST', '2021/02/07')],
+    [Keys.USER_HISTORIES_SMART, new Referencia('https://asana.com/es/resources/smart-goals', 'Criterio SMART', USER_HISTORIES_KEY, 'SMART', '2021/06/06', '2024/09/28')],
+    [Keys.USER_HISTORIES_3C, new Referencia('https://julibetancur.blog/tag/tres-c/', 'Card-Conversación-Confirmación', USER_HISTORIES_KEY, 'Las 3 C', '2021/05/23')],
+    [Keys.USER_HISTORIES_GHERKIN, new Referencia('https://blog.thiga.co/es/gherkin/', 'Definición de los criterios de aceptación', USER_HISTORIES_KEY, 'Gherkin', '2021/05/23')],
+    [Keys.USER_HISTORIES_DESCOMPOSICION, new Referencia('https://www.javiergarzas.com/2012/05/descomponer-historias-de-usuario-en-tareas-1.html', 'Descomposición en tareas', USER_HISTORIES_KEY, 'Descomposición', '2021/06/14')],
+    [Keys.USER_HISTORIES_STORY_POINTS, new Referencia('https://ronjeffries.com/articles/019-01ff/story-points/Index.html', 'Puntos de Historia', USER_HISTORIES_KEY, 'Puntos', '2022/09/13')],
+    [Keys.USER_HISTORIES_USE_CASE_REQUISITOS, new Referencia('http://www.angellozano.com/requisitos-del-sistema-vs-casos-uso-vs-historias-usuario/', 'HU Vs Casos de uso', USER_HISTORIES_KEY, 'Hu Vs Casos de Uso', '2023/05/03')],
     [Keys.USER_HISTORIES_FORMATS, new Referencia('https://www.linkedin.com/posts/jgarzas_agilidad-bdd-hdd-activity-7178798486358802434-ZK5i/', 'HU Formatos alternativos', USER_HISTORIES_KEY, 'Formatos alternativos', '2024/04/28')],
     [Keys.USER_HISTORIES_ESTIMATIONS, new Referencia('https://www.linkedin.com/posts/jgarzas_las-3-familias-de-estimacion-agil-javier-activity-7231351751667310592-To3O/', 'Estimación Agil', USER_HISTORIES_KEY, 'Estimación Agil', '2024/09/28')],
     [Keys.USER_HISTORIES_DOR_DOD, new Referencia('https://www.linkedin.com/pulse/historias-de-usuario-dor-y-dod-clave-para-la-del-remedios-d%C3%ADaz/', 'Definition Of Done & Definition Of Ready', USER_HISTORIES_KEY, 'DoR & DoD', '2024/12/29')]
@@ -986,32 +986,32 @@ export const META_ESTRUCTURAS_REF = new Map<string, Referencia>([
 
 export const METODOLOGIAS_KEY = 'Metodologias';
 export const METODOLOGIAS_REF = new Map<string, Referencia>([
-    [Keys.METODOLOGIAS_AGILES, new Referencia('https://www.iebschool.com/blog/que-son-metodologias-agiles-agile-scrum/', '¿ Que son las metodologias agiles ?', METODOLOGIAS_KEY, 'Agiles', '', '2026/01/25')],
-    [Keys.METODOLOGIAS_SCRUM, new Referencia('https://www.iebschool.com/blog/metodologia-scrum-agile-scrum/', 'Scrum', METODOLOGIAS_KEY, 'SCRUM')],
-    [Keys.METODOLOGIAS_SCRUM_PRINCIPLES, new Referencia('https://rootstack.com/es/blog/los-pilares-del-scrum-claves-para-la-gestion-de-procesos', 'Principios Scrum', METODOLOGIAS_KEY, 'Principios Scrum')],
-    [Keys.METODOLOGIAS_KANBAN, new Referencia('https://www.iebschool.com/blog/metodologia-kanban-agile-scrum/', 'Kanban', METODOLOGIAS_KEY, 'Kanban', '', '2025/06/30')
+    [Keys.METODOLOGIAS_AGILES, new Referencia('https://www.iebschool.com/blog/que-son-metodologias-agiles-agile-scrum/', '¿ Que son las metodologias agiles ?', METODOLOGIAS_KEY, 'Agiles', '2021/01/14', '2026/01/25')],
+    [Keys.METODOLOGIAS_SCRUM, new Referencia('https://www.iebschool.com/blog/metodologia-scrum-agile-scrum/', 'Scrum', METODOLOGIAS_KEY, 'SCRUM', '2021/01/14')],
+    [Keys.METODOLOGIAS_SCRUM_PRINCIPLES, new Referencia('https://rootstack.com/es/blog/los-pilares-del-scrum-claves-para-la-gestion-de-procesos', 'Principios Scrum', METODOLOGIAS_KEY, 'Principios Scrum', '2023/03/05')],
+    [Keys.METODOLOGIAS_KANBAN, new Referencia('https://www.iebschool.com/blog/metodologia-kanban-agile-scrum/', 'Kanban', METODOLOGIAS_KEY, 'Kanban', '2021/01/15', '2025/06/30')
         .addRelatedItems(Keys.PRINCIPIOS_YAGNI)
     ],
-    [Keys.METODOLOGIAS_ELEVATOR, new Referencia('https://www.iebschool.com/blog/las-claves-para-realizar-un-elevator-pitch-lean-startup/', 'Elevator Pitch & Kick Off', METODOLOGIAS_KEY, 'Elevator Pitch & Kick Off', '', '2026/10/20')
+    [Keys.METODOLOGIAS_ELEVATOR, new Referencia('https://www.iebschool.com/blog/las-claves-para-realizar-un-elevator-pitch-lean-startup/', 'Elevator Pitch & Kick Off', METODOLOGIAS_KEY, 'Elevator Pitch & Kick Off', '2021/01/15', '2026/10/20')
         .addMoreReferences('https://asana.com/es/resources/project-kickoff-meeting')
     ],
-    [Keys.METODOLOGIAS_CANVAS, new Referencia('https://www.iebschool.com/blog/que-es-el-modelo-canvas-y-como-aplicarlo-a-tu-negocio-agile-scrum/', 'Canvas', METODOLOGIAS_KEY, 'Canvas')],
+    [Keys.METODOLOGIAS_CANVAS, new Referencia('https://www.iebschool.com/blog/que-es-el-modelo-canvas-y-como-aplicarlo-a-tu-negocio-agile-scrum/', 'Canvas', METODOLOGIAS_KEY, 'Canvas', '2021/01/15')],
     [Keys.METODOLOGIAS_MODEL_BING_BANG, new Referencia('https://www.tutorialspoint.com/es/software_engineering/software_development_life_cycle.htm', 'Bing Bang', METODOLOGIAS_KEY, 'Bing Bang', '2024/10/10')],
-    [Keys.METODOLOGIAS_CASCADA, new Referencia('https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/el-modelo-en-cascada/', 'Cascada', METODOLOGIAS_KEY, 'Cascada')],
-    [Keys.METODOLOGIAS_ESPIRAL, new Referencia('https://www.ionos.es/startupguide/productividad/modelo-en-espiral/', 'Espiral', METODOLOGIAS_KEY, 'Espiral')],
-    [Keys.METODOLOGIAS_ITERATIVO, new Referencia('https://proyectosagiles.org/desarrollo-iterativo-incremental/', 'Iterativo-incremental', METODOLOGIAS_KEY, 'Iterativo-Incremental')],
-    [Keys.METODOLOGIAS_MODEL_XP, new Referencia('https://openwebinars.net/blog/extreme-programming-que-es-y-como-aplicarlo/', 'Programación Extrema', METODOLOGIAS_KEY, 'XP', '', '2025/11/16')
+    [Keys.METODOLOGIAS_CASCADA, new Referencia('https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/el-modelo-en-cascada/', 'Cascada', METODOLOGIAS_KEY, 'Cascada', '2021/01/15')],
+    [Keys.METODOLOGIAS_ESPIRAL, new Referencia('https://www.ionos.es/startupguide/productividad/modelo-en-espiral/', 'Espiral', METODOLOGIAS_KEY, 'Espiral', '2021/01/15')],
+    [Keys.METODOLOGIAS_ITERATIVO, new Referencia('https://proyectosagiles.org/desarrollo-iterativo-incremental/', 'Iterativo-incremental', METODOLOGIAS_KEY, 'Iterativo-Incremental', '2021/01/15')],
+    [Keys.METODOLOGIAS_MODEL_XP, new Referencia('https://openwebinars.net/blog/extreme-programming-que-es-y-como-aplicarlo/', 'Programación Extrema', METODOLOGIAS_KEY, 'XP', '2021/02/07', '2025/11/16')
         .addRelatedItems(Keys.PRINCIPIOS_DRY, Keys.ANALISIS_DATA_GOLDEN_RECORD, Keys.TESTING_QUALITY_ASSURANCE)
         .addMoreReferences('https://www.martinfowler.com/bliki/BeckDesignRules.html')
     ],
-    [Keys.METODOLOGIAS_MODEL_V, new Referencia('https://www.linkedin.com/posts/alexxubyte_systemdesign-coding-interviewtips-activity-7241834626241949696-v5Se/', 'Modelo en V', METODOLOGIAS_KEY, 'Modelo V', '', '2024/10/10')],
-    [Keys.METODOLOGIAS_RUP, new Referencia('https://rupmetodologia.blogspot.com/?view=sidebar', 'Proceso Racional Unificado', METODOLOGIAS_KEY, 'RUP', '', '2025/06/30')
+    [Keys.METODOLOGIAS_MODEL_V, new Referencia('https://www.linkedin.com/posts/alexxubyte_systemdesign-coding-interviewtips-activity-7241834626241949696-v5Se/', 'Modelo en V', METODOLOGIAS_KEY, 'Modelo V', '2021/03/17', '2024/10/10')],
+    [Keys.METODOLOGIAS_RUP, new Referencia('https://rupmetodologia.blogspot.com/?view=sidebar', 'Proceso Racional Unificado', METODOLOGIAS_KEY, 'RUP', '2021/04/17', '2025/06/30')
         .addRelatedItems(Keys.UML_TYPES)
     ],
-    [Keys.METODOLOGIAS_KAIZEN, new Referencia('https://www.movertis.com/blog/que-es-la-metodologia-kaizen', 'Kaizen', METODOLOGIAS_KEY, 'Kaizen', '', '2025/06/30')
+    [Keys.METODOLOGIAS_KAIZEN, new Referencia('https://www.movertis.com/blog/que-es-la-metodologia-kaizen', 'Kaizen', METODOLOGIAS_KEY, 'Kaizen', '2021/05/24', '2025/06/30')
         .addRelatedItems(Keys.AGILES_5S)
     ],
-    [Keys.METODOLOGIAS_SCRUMBAN, new Referencia('https://www.atlassian.com/es/agile/project-management/scrumban', 'Scrumban', METODOLOGIAS_KEY, 'Scrumban', '', '2024/10/10')],
+    [Keys.METODOLOGIAS_SCRUMBAN, new Referencia('https://www.atlassian.com/es/agile/project-management/scrumban', 'Scrumban', METODOLOGIAS_KEY, 'Scrumban', '2022/07/03', '2024/10/10')],
     [Keys.METODOLOGIAS_LEAN, new Referencia('https://www.obsbusiness.school/blog/lean-management-metodologia-origenes-y-principios', 'Lean management', METODOLOGIAS_KEY, 'Lean', '2024/12/01')],
     [Keys.METODOLOGIAS_SIX_SIGMA_HOSHIN_KANRI, new Referencia('https://www.linkedin.com/posts/pedroprh_mejoracontinua-lean-sixsigma-activity-7399077028039397377-Umrc/', 'Six Sigma - Hoshin Kanri', METODOLOGIAS_KEY, 'Six Sigma - Hoshin Kanri', '2025/11/30')
         .addRelatedItems(Keys.AGILES_5S, Keys.AGILES_MUDA, Keys.AGILES_MUDA_SOFTWARE)
@@ -1019,6 +1019,10 @@ export const METODOLOGIAS_REF = new Map<string, Referencia>([
     [Keys.METODOLOGIAS_SPEC_DRIVEN_DEVELOPMENT, new Referencia('https://www.augmentcode.com/guides/what-is-spec-driven-development', 'Spec-Driven Development', METODOLOGIAS_KEY, 'SDD', '2026/05/14')
         .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_TDD, Keys.ESTRATEGIAS_DESARROLLO_BDD, Keys.TESTING_AAA_GWT, Keys.TESTING_TRIANGULO, Keys.METODOLOGIAS_CASCADA)
         .addMoreReferences('https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html', 'https://medium.com/@iamalvisng/spec-driven-development-is-waterfall-in-markdown-e2921554a600')
+    ],
+    [Keys.METODOLOGIAS_WITH_IA, new Referencia('https://www.linkedin.com/posts/jgarzas_metodolog%C3%ADas-despu%C3%A9s-de-scrum-en-tiempos-share-7526586157938278401-fpN5/', 'Metodologias post IA', METODOLOGIAS_KEY, 'Metodologias post IA', '2026/11/15')
+        .addRelatedItems(Keys.VERSIONAMIENTO_LICENSES, Keys.ESTRATEGIAS_DESARROLLO_SDLC_IA, Keys.AGILES_MANIFEST_AGIL)
+        .addMoreReferences('https://yuvalyeret.com/blog/is-spec-driven-development-a-step-forward-or-back-for-product-development/', 'https://thenewstack.io/agentic-development-cycle-framework/')
     ]
 ]);
 
