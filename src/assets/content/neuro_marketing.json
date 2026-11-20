@@ -279,5 +279,18 @@
     "<strong>Process:</strong> La optimización de procesos resulta fundamental, para ofrecer productos/experiencias satisfactorios ",
     "",
     "<strong>Physical Evidence:</strong> Locales, el color, los logos, empaques, son elementos tangibles que pueden cambiar la percepción de la marca "
+  ],
+  "campaigns-attributions": [
+    "- Las campañas publicitarias son muy útiles para generar tráfico, conseguir nuevos ingresos o recopilar información de uso ",
+    "- Para medir su eficacia es util agregar parámetros para un adecuado seguimiento y agrupación de los datos ",
+    "- Cuando agrega parámetros a una URL, debe usar siempre <em>utm_source</em>, <em>utm_medium</em> y <em>utm_campaign</em>; <em>utm_term</em> y <em>utm_content</em> son opcionales ",
+    "",
+    "<strong>Parámetros que se pueden agregar en la URL</strong>",
+    "",
+    "<strong>utm_source:</strong>   Identifica el anunciante, el sitio, la publicación, etc., que envía tráfico a su propiedad, por ejemplo, google ",
+    "<strong>utm_medium:</strong>   El medio de publicidad o marketing, como por ejemplo, banner, boletín informativo, correo electrónico, etc.. ",
+    "<strong>utm_campaign:</strong> Nombre, eslogan o código promocional de la campaña de un producto, p. ej.: promo_summer ",
+    "<strong>utm_term:</strong>     Identifica palabras clave de búsqueda de pago ",
+    "<strong>utm_content:</strong>  Se utiliza para diferenciar anuncios similares o vínculos dentro de un mismo mensaje "
   ]
 }

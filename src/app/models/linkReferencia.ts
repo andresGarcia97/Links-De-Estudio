@@ -1031,17 +1031,17 @@ export const METODOLOGIAS_REF = new Map<string, Referencia>([
 
 export const NUBE_KEY = 'Nube';
 export const NUBE_REF = new Map<string, Referencia>([
-    [Keys.NUBE_NUBE, new Referencia('https://azure.microsoft.com/es-es/overview/what-are-private-public-hybrid-clouds/', 'Tipos de nube', NUBE_KEY, 'Tipos de nube')],
+    [Keys.NUBE_NUBE, new Referencia('https://azure.microsoft.com/es-es/overview/what-are-private-public-hybrid-clouds/', 'Tipos de nube', NUBE_KEY, 'Tipos de nube', '2021/01/10')],
     [Keys.NUBE_IAAS_PAAS_SAAS, new Referencia('https://www.ambit-bst.com/blog/definici%C3%B3n-de-iaas-paas-y-saas-en-qu%C3%A9-se-diferencian', 'IaaS, PaaS, SaaS', NUBE_KEY, 'IaaS, PaaS, SaaS', '2023/12/30', '2025/04/02')],
     [Keys.NUBE_CAAS_DAAS_FAAS, new Referencia('https://aws.plainenglish.io/conquering-the-cloud-unveiling-saas-paas-caas-daas-iaas-and-faas-3789b0ad7018', 'CaaS, DaaS, FaaS', NUBE_KEY, 'CaaS, DaaS, FaaS', '2024/03/18')],
-    [Keys.NUBE_12_FACTORES, new Referencia('https://12factor.net/es/', '12 factores para una aplicación SaaS', NUBE_KEY, '12 - factores', '', '2026/08/13')
+    [Keys.NUBE_12_FACTORES, new Referencia('https://12factor.net/es/', '12 factores para una aplicación SaaS', NUBE_KEY, '12 - factores', '2021/08/09', '2026/08/13')
         .addRelatedItems(Keys.CD_CI_CI_CD, Keys.SECURITY_ENVINROMENT_VARIABLES, Keys.CD_CI_HIDDEN_LAYERS, Keys.CD_CI_SIGTERM, Keys.TESTING_ADVANCED_ENVIRONMENT)
     ],
-    [Keys.NUBE_MIGRATIONS, new Referencia('https://www.paradigmadigital.com/techbiz/mitos-lift-shift-mentiras-migraciones-cloud/', 'Migraciones hacia la nube y las 6R', NUBE_KEY, 'Migraciones', '', '2026/11/09')
+    [Keys.NUBE_MIGRATIONS, new Referencia('https://www.paradigmadigital.com/techbiz/mitos-lift-shift-mentiras-migraciones-cloud/', 'Migraciones hacia la nube y las 6R', NUBE_KEY, 'Migraciones', '2021/09/11', '2026/11/09')
         .addRelatedItems(Keys.CD_CI_DEPLOYMENT_PIPELINES, Keys.CD_CI_IAS_CODE)
         .addMoreReferences('https://en.paradigmadigital.com/dev/10-cloud-antipatterns/')
     ],
-    [Keys.NUBE_CAP_TEOREMA, new Referencia('https://www.ionos.es/digitalguide/servidores/know-how/que-es-el-cap-theorem/', 'Coherencia, Disponibilidad y Tolerancia', NUBE_KEY, 'Teorema CAP')
+    [Keys.NUBE_CAP_TEOREMA, new Referencia('https://www.ionos.es/digitalguide/servidores/know-how/que-es-el-cap-theorem/', 'Coherencia, Disponibilidad y Tolerancia', NUBE_KEY, 'Teorema CAP', '2021/09/16')
         .addRelatedItems(Keys.PERSISTENCY_DBMS)
     ],
     [Keys.NUBE_DNS, new Referencia('https://www.ionos.es/digitalguide/servidores/know-how/que-es-el-servidor-dns-y-como-funciona/', 'DNS & BGP', NUBE_KEY, 'DNS & BGP', '2025/11/02', '2026/07/23')
@@ -1991,20 +1991,20 @@ export const HARDWARE_REF = new Map<string, Referencia>([
 
 export const WEB_KEY = 'Web';
 export const WEB_REF = new Map<string, Referencia>([
-    [Keys.WEB_SPA, new Referencia('https://desarrolloweb.com/articulos/que-es-una-spa.html', 'Single Page Aplication', WEB_KEY, 'SPA')],
-    [Keys.WEB_PWA, new Referencia('https://www.iebschool.com/blog/progressive-web-apps-analitica-usabilidad/', 'Progressive Web App', WEB_KEY, 'PWA')],
-    [Keys.WEB_SEO, new Referencia('https://www.40defiebre.com/guia-seo/que-es-seo-por-que-necesito', 'Search Engine Optimization', WEB_KEY, 'SEO')],
+    [Keys.WEB_SPA, new Referencia('https://desarrolloweb.com/articulos/que-es-una-spa.html', 'Single Page Aplication', WEB_KEY, 'SPA', '2021/03/27')],
+    [Keys.WEB_PWA, new Referencia('https://www.iebschool.com/blog/progressive-web-apps-analitica-usabilidad/', 'Progressive Web App', WEB_KEY, 'PWA', '2021/03/27')],
+    [Keys.WEB_SEO, new Referencia('https://www.40defiebre.com/guia-seo/que-es-seo-por-que-necesito', 'Search Engine Optimization', WEB_KEY, 'SEO', '2021/03/27')],
     [Keys.WEB_SPACE, new Referencia('https://heyjaime.com/blog/espacio-negativo/', 'El uso del espacio para diseñar', WEB_KEY, 'Espacio Negativo', '', '2024/12/13')],
     [Keys.WEB_DISEÑO, new Referencia('https://seocom.agency/es/blog/diseno-grafico-web/', 'Diseño grafico', WEB_KEY, 'Diseño Grafico', '', '2026/03/23')
         .addMoreReferences('https://www.somoscafeina.com/articles/que-es-el-look-and-feel-de-un-sitio-web-y-por-que-es-importante')
     ],
-    [Keys.WEB_USER_INTERFACE, new Referencia('https://pensamientodigital.wordpress.com/diseno-de-interfases-de-usuario/', 'Interfaces de usuario', WEB_KEY, 'UI')],
-    [Keys.WEB_USER_XPERIENCE, new Referencia('https://www.coursera.org/articles/ui-vs-ux-design', 'Experiencia de usuario', WEB_KEY, 'UX')],
-    [Keys.WEB_LOGOS, new Referencia('https://franciscotorreblanca.es/logotipo-imagotipo-isotipo-e-isologo/', 'Logotipo, Imagotipo, Isotipo, Isologo', WEB_KEY, 'Logos')],
-    [Keys.WEB_GESTALT, new Referencia('https://imborrable.com/blog/teoria-de-la-gestalt/', 'Teoria de Gestalt', WEB_KEY, 'Teoria de Gestalt')],
-    [Keys.WEB_SSR_CSR_SSG_ISG, new Referencia('https://medium.com/@prashantramnyc/server-side-rendering-ssr-vs-client-side-rendering-csr-vs-pre-rendering-using-static-site-89f2d05182ef', 'SSR vs CSR vs SSG', WEB_KEY, 'SSR vs CSR vs SSG')],
-    [Keys.WEB_ESQUEUMORFISMO, new Referencia('https://aderal.es/estrategias-de-marketing-y-transformacion-digital/nuevas-tendencias-en-diseno-grafico-digital-el-regreso-del-esqueumorfismo/', 'Esqueumorfismo', WEB_KEY, 'Esqueumorfismo')],
-    [Keys.WEB_MENOR_SORPRESA, new Referencia('https://www.linkedin.com/pulse/principle-least-surprise-incus-data-pty-ltd/', 'Menor Sorpresa', WEB_KEY, 'Menor Sorpresa')],
+    [Keys.WEB_USER_INTERFACE, new Referencia('https://pensamientodigital.wordpress.com/diseno-de-interfases-de-usuario/', 'Interfaces de usuario', WEB_KEY, 'UI', '2021/09/26')],
+    [Keys.WEB_USER_XPERIENCE, new Referencia('https://www.coursera.org/articles/ui-vs-ux-design', 'Experiencia de usuario', WEB_KEY, 'UX', '2021/11/21')],
+    [Keys.WEB_LOGOS, new Referencia('https://franciscotorreblanca.es/logotipo-imagotipo-isotipo-e-isologo/', 'Logotipo, Imagotipo, Isotipo, Isologo', WEB_KEY, 'Logos', '2021/10/15')],
+    [Keys.WEB_GESTALT, new Referencia('https://imborrable.com/blog/teoria-de-la-gestalt/', 'Teoria de Gestalt', WEB_KEY, 'Teoria de Gestalt', '2021/12/12')],
+    [Keys.WEB_SSR_CSR_SSG_ISG, new Referencia('https://medium.com/@prashantramnyc/server-side-rendering-ssr-vs-client-side-rendering-csr-vs-pre-rendering-using-static-site-89f2d05182ef', 'SSR vs CSR vs SSG', WEB_KEY, 'SSR vs CSR vs SSG', '2022/11/20')],
+    [Keys.WEB_ESQUEUMORFISMO, new Referencia('https://aderal.es/estrategias-de-marketing-y-transformacion-digital/nuevas-tendencias-en-diseno-grafico-digital-el-regreso-del-esqueumorfismo/', 'Esqueumorfismo', WEB_KEY, 'Esqueumorfismo', '2023/03/07')],
+    [Keys.WEB_MENOR_SORPRESA, new Referencia('https://www.linkedin.com/pulse/principle-least-surprise-incus-data-pty-ltd/', 'Menor Sorpresa', WEB_KEY, 'Menor Sorpresa', '2023/10/01')],
     [Keys.WEB_MICRO_FRONTENED, new Referencia('https://newsletter.systemdesign.one/p/micro-frontends', 'Micro Frontends', WEB_KEY, 'Micro Frontends', '2024/03/07')],
     [Keys.WEB_BUENAS_PRACTICAS, new Referencia('https://dev.to/emmanuelhills/best-practices-for-frontend-web-development-a-comprehensive-guide-27h0', 'Buenas practicas Desarrollo web', WEB_KEY, 'Buenas practicas', '2024/03/31')],
     [Keys.WEB_GOLDEN_SIGNALS, new Referencia('https://www.groundcover.com/blog/4-golden-signals', 'Golden Signals', WEB_KEY, 'Golden Signals', '2024/09/22')
@@ -2039,7 +2039,11 @@ export const NEURO_MARKETING_REF = new Map<string, Referencia>([
     [Keys.NEURO_MARKETING_JOBS_TO_BE_DONE, new Referencia('https://rockcontent.com/es/blog/jobs-to-be-done/', 'Trabajos por acabar', NEURO_MARKETING_KEY, 'Trabajos por acabar', '2024/05/02')],
     [Keys.NEURO_MARKETING_CUATRO_P, new Referencia('https://www.santanderopenacademy.com/es/blog/las-4-p-del-marketing.html', 'Las 4 P del marketing', NEURO_MARKETING_KEY, '4P & 7P', '2026/03/06')
         .addRelatedItems(Keys.PEOPLE_PEOPLE_PROCESS_TECNOLOGY, Keys.PEOPLE_CUSTOMER_LOYALTY)
-    ]
+    ],
+    [Keys.NEURO_MARKETING_CAMPAIGNS_ATRIBUTIONS, new Referencia('https://support.google.com/analytics/answer/10917952', 'Campañas & atribución', NEURO_MARKETING_KEY, 'Campañas & atribución', '2026/11/19')
+        .addRelatedItems(Keys.APIS_URI)
+        .addMoreReferences('https://support.google.com/analytics/answer/1033863#zippy=%2Cen-este-art%C3%ADculo-se-incluyen-las-siguientes-secciones')
+    ],
 ]);
 
 export const CI_CD_KEY = 'CI/CD-Infraestructura';

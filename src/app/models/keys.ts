@@ -793,6 +793,7 @@ export const NEURO_MARKETING_SEMANTICA_PRAGMATICA = 'semanticaPragmatica';
 export const NEURO_MARKETING_PNL = 'pnl';
 export const NEURO_MARKETING_JOBS_TO_BE_DONE = 'jobsToBeDone';
 export const NEURO_MARKETING_CUATRO_P = '4-p-marketing';
+export const NEURO_MARKETING_CAMPAIGNS_ATRIBUTIONS = 'campaigns-attributions';
 export const MICROSERVICES_ANALISIS = 'designMicroservices';
 export const MICROSERVICES_FUNDAMENTALS = 'microservicesFundamentals';
 export const MICROSERVICES_BENEFITS = 'microservicesBenefits';
