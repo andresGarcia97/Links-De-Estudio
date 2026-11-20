@@ -1,7 +1,6 @@
 # start of file
 User-agent: *
 Disallow:
-sitemap: https://contenidoderepaso.web.app/sitemap.xml
 
 User-agent: GPTBot      # OpenAI's training crawler
 Disallow: /
