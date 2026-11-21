@@ -716,6 +716,7 @@ export const CD_CI_ROLLING_DEPLOYMENT = 'rolling-deployment';
 export const CD_CI_CONFIGURATION_PATTERNS = 'configuration-patterns';
 export const CD_CI_SIGTERM = 'SIGTERM';
 export const CD_CI_HIDDEN_LAYERS = 'hidden-layers-infraestructure';
+export const CD_CI_RUNBOOK = 'runbook';
 export const WEB_SPA = 'SPA';
 export const WEB_PWA = 'PWA';
 export const WEB_SEO = 'SEO';

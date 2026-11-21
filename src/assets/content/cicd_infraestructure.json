@@ -620,5 +620,19 @@
     "",
     "<strong>9 capa, Proveedor de la Nube:</strong> La capa más externa de la infraestructura global, gestionando las regiones entre si ",
     "- La mayoría de la comunicación suele ser por medio de fibra óptica y miles de cables submarinos "
+  ],
+  "runbook": [
+    "- Operar un sistema es una mezcla de trabajo planificado, trabajo no planificado y la capacidad de respuesta rápida ante incidentes de diversa índole ",
+    "- Para resolver los problemas se suele usar estrategias como, buscar en internet, apoyarse en la IA, documentación de la empresa, preguntar al equipo, etc. ",
+    "- Este proceso es impredecible, así como puede durar minutos, pueden pasar horas y aun asi no lograr una solución satisfactoria ",
+    "",
+    "- El <strong>Runbook</strong> permite tener una guia detallada sobre como realizar tareas o procedimientos de forma estandarizada ",
+    "- Se puede aplicar tanto como para resolver problemas comunes de forma rápida, como tener una guia detallada de alguna tarea sin necesidad de memorizarla ",
+    "- Se puede comparar con una receta, que proporciona instrucciones detalladas para completar tareas especificas y sirve para personal con o sin experiencia ",
+    "",
+    "- No solo son útiles para responder ante incidentes, sino también para guiar operaciones diarias como la creación de backups y gestión de permisos ",
+    "- Es diferente de un <strong>Playbook</strong> en cuanto al alcance que suelen manejar, un playbook puede abarcar más responsabilidades o alcance, ",
+    " - además de usar múltiples runbooks, componerse de más pasos y tener en cuenta el panorama general, no solo lo particular ",
+    "- Los runbooks pueden esta automatizados o semiautomatizados, mientras que el playbook suele ser más manuales por los pasos de alto nivel "
   ]
 }

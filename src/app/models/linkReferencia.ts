@@ -2053,11 +2053,11 @@ export const NEURO_MARKETING_REF = new Map<string, Referencia>([
 
 export const CI_CD_KEY = 'CI/CD-Infraestructura';
 export const CI_CD_REF = new Map<string, Referencia>([
-    [Keys.CD_CI_CI_CD, new Referencia('https://www.aplyca.com/es/blog/integracion-entrega-continua-ci-cd', 'Integración Continua y Entrega Continua', CI_CD_KEY, 'CI/CD', '', '2024/08/25')],
-    [Keys.CD_CI_DEV_OPS, new Referencia('https://www.paradigmadigital.com/techbiz/que-es-devops-y-sobre-todo-que-no-es-devops/', 'DevOps', CI_CD_KEY, 'DevOps', '', '2025/03/15')
+    [Keys.CD_CI_CI_CD, new Referencia('https://www.aplyca.com/es/blog/integracion-entrega-continua-ci-cd', 'Integración Continua y Entrega Continua', CI_CD_KEY, 'CI/CD', '2021/03/17', '2024/08/25')],
+    [Keys.CD_CI_DEV_OPS, new Referencia('https://www.paradigmadigital.com/techbiz/que-es-devops-y-sobre-todo-que-no-es-devops/', 'DevOps', CI_CD_KEY, 'DevOps', '2021/03/17', '2025/03/15')
         .addRelatedItems(Keys.TESTING_QUALITY_ASSURANCE)
     ],
-    [Keys.CD_CI_DEV_SEC_OPS, new Referencia('https://www.computerweekly.com/es/definicion/SecOps-o-DevSecOps', 'SecDevOps y SCA, SAST, DAST', CI_CD_KEY, 'SecDevOps', '', '2026/04/30')
+    [Keys.CD_CI_DEV_SEC_OPS, new Referencia('https://www.computerweekly.com/es/definicion/SecOps-o-DevSecOps', 'SecDevOps y SCA, SAST, DAST', CI_CD_KEY, 'SecDevOps', '2026/04/30', '2026/05/01')
         .addRelatedItems(Keys.BUENAS_PRACTICAS_STATIC_CODE_ANALYSIS, Keys.BUENAS_PRACTICAS_DYNAMIC_CODE_ANALYSIS, Keys.SECURITY_ATTACK_OWASTOP)
         .addMoreReferences('https://checkmarx.com/learn/sca/sca-sast-dast/')
     ],
@@ -2068,7 +2068,7 @@ export const CI_CD_REF = new Map<string, Referencia>([
     [Keys.CD_CI_STATELESS_STATEFUL, new Referencia('https://www.redhat.com/en/topics/cloud-native-apps/stateful-vs-stateless', 'Stateful VS Stateless', CI_CD_KEY, 'Stateless VS Stateful', '2023/12/26', '2025/05/01')
         .addRelatedItems(Keys.MICROSERVICES_FUNDAMENTALS, Keys.NUBE_IAAS_PAAS_SAAS, Keys.APIS_IDEMPOTENCIA)
     ],
-    [Keys.CD_CI_DEPLOYMENT_PATTERNS, new Referencia('https://newsletter.techworld-with-milan.com/p/what-are-deployment-patterns', 'Patrones de Despliegue', CI_CD_KEY, 'Patrones de Despliegue', '', '2026/07/10')
+    [Keys.CD_CI_DEPLOYMENT_PATTERNS, new Referencia('https://newsletter.techworld-with-milan.com/p/what-are-deployment-patterns', 'Patrones de Despliegue', CI_CD_KEY, 'Patrones de Despliegue', '2023/08/22', '2026/07/10')
         .addRelatedItems(Keys.NUBE_PROVISIONING, Keys.PERSISTENCY_ADVANCED_MIGRATIONS, Keys.NUBE_NATIVE)
         .addMoreReferences('https://learn.microsoft.com/en-us/training/modules/introduction-to-deployment-patterns/3-examine-classical-deployment-patterns')
     ],
@@ -2118,6 +2118,10 @@ export const CI_CD_REF = new Map<string, Referencia>([
     ],
     [Keys.CD_CI_HIDDEN_LAYERS, new Referencia('https://medium.com/javarevisited/your-code-runs-on-nine-layers-of-infrastructure-you-didnt-write-a18e5c6075b7', 'Capas Ocultas II', CI_CD_KEY, 'Hidden Layers II', '2026/07/29')
         .addRelatedItems(Keys.CONTENEDORES_ORCHESTRATION, Keys.APIS_LATENCY_THROUGHPUT_BANDWITH, Keys.FRAMEWORKS_HIDDEN_LAYERS, Keys.HARDWARE_OPERATIVE_SYSTEM, Keys.HARDWARE_VIRTUAL_MACHINES_VS_CONTAINERS, Keys.NUBE_FALACIES_DYSTRIBUTED_SYSTEMS, Keys.CD_CI_CELL_BASED_ARQUITECTURE, Keys.CONTENEDORES_RUNTIME)
+    ],
+    [Keys.CD_CI_RUNBOOK, new Referencia('https://www.pagerduty.com/resources/automation/learn/what-is-a-runbook/', 'Runbook', CI_CD_KEY, 'Runbook', '2026/11/20')
+        .addRelatedItems(Keys.CD_CI_ROLLING_DEPLOYMENT, Keys.VERSIONAMIENTO_RELEASE_DEPLOY, Keys.CONOCIMIENTOS_EMPIRICOS_BREAKING_PRODUCTION_LESSONS, Keys.CD_CI_ROLLING_DEPLOYMENT, Keys.OBSERVABILIDAD_MONITORING_AND_ALERTS, Keys.CALIDAD_ESTABILIDAD, Keys.PEOPLE_PEOPLE_PROCESS_TECNOLOGY, Keys.ESTRATEGIAS_DESARROLLO_BOTTOM_UP_AND_TOP_DOWN)
+        .addMoreReferences('https://www.solarwinds.com/blog/runbook-vs-playbook-whats-the-difference')
     ]
 ]);
 
