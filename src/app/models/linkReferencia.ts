@@ -804,9 +804,14 @@ export const FRAMEWORKS_REF = new Map<string, Referencia>([
 
 export const GIT_KEY = 'Git';
 export const GIT_REF = new Map<string, Referencia>([
-    [Keys.GIT_INTRODUCTION, new Referencia('https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Acerca-del-Control-de-Versiones', 'Introducción a Git', GIT_KEY, 'Introducción Git', '2025/12/09')],
+    [Keys.GIT_INTRODUCTION, new Referencia('https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Acerca-del-Control-de-Versiones', 'Introducción a Git', GIT_KEY, 'Introducción Git', '2025/12/09', '2026/11/20')
+        .addRelatedItems(Keys.SECURITY_HASHING_ENCRYPTION, Keys.SECURITY_CHECKSUM_FINGERPRINT, Keys.META_CARACTERISTICAS_META_DATOS)
+        .addMoreReferences('https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Fundamentos-de-Git')
+    ],
     [Keys.GIT_STRUCTURE_AND_CONCEPTS, new Referencia('https://alexhost.com/es/faq/git-repository-structure/', 'Estructura Basica GIT', GIT_KEY, 'Estructura Basica', '2024/12/13', '2025/12/09')],
-    [Keys.GIT_REPOSITORIES, new Referencia('https://git-scm.com/book/es/v2/Fundamentos-de-Git-Trabajar-con-Remotos', 'Repositorios Remotos y Locales', GIT_KEY, 'Repositorios', '2021/03/15')],
+    [Keys.GIT_REPOSITORIES, new Referencia('https://git-scm.com/book/es/v2/Fundamentos-de-Git-Trabajar-con-Remotos', 'Repositorios Remotos y Locales', GIT_KEY, 'Repositorios', '2021/03/15', '2026/11/20')
+        .addMoreReferences('https://git-scm.com/book/es/v2/Git-en-entornos-distribuidos-Flujos-de-trabajo-distribuidos')
+    ],
     [Keys.GIT_BRANCHS, new Referencia('https://git-scm.com/book/es/v2/Ramificaciones-en-Git-Procedimientos-B%C3%A1sicos-para-Ramificar-y-Fusionar', 'Manejo de ramas', GIT_KEY, 'Ramas', '2021/03/15')],
     [Keys.GIT_PROTOCOLS, new Referencia('https://git-scm.com/book/es/v2/Git-en-el-Servidor-Los-Protocolos', 'Comunicación entre repositorios', GIT_KEY, 'Protocolos', '2021/03/15')],
     [Keys.GIT_VERSIONS, new Referencia('https://git-scm.com/book/es/v2/Git-en-entornos-distribuidos-Manteniendo-un-proyecto', 'Versiones mediante etiquetas', GIT_KEY, 'Versiones y tags', '2021/03/15')],
@@ -831,8 +836,8 @@ export const GIT_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.BUENAS_PRACTICAS_DEBUGGING, Keys.META_ESTRUCTURAS_REGEX)
         .addMoreReferences('https://git-scm.com/book/es/v2/Ap%c3%a9ndice-C:-Comandos-de-Git-Inspecci%c3%b3n-y-Comparaci%c3%b3n')
     ],
-    [Keys.GIT_ERRORS, new Referencia('https://medium.com/@vndpal/7-git-mistakes-even-senior-engineers-make-and-how-to-fix-them-32cbb1b2f90f', 'Errores a evitar', GIT_KEY, 'Errores en Git', '2025/01/02')
-        .addRelatedItems(Keys.VERSIONAMIENTO_CHANGELOG, Keys.CD_CI_RULES, Keys.TESTING_BUG)
+    [Keys.GIT_ERRORS, new Referencia('https://medium.com/@vndpal/7-git-mistakes-even-senior-engineers-make-and-how-to-fix-them-32cbb1b2f90f', 'Errores a evitar en Git', GIT_KEY, 'Errores al usar Git', '2025/01/02', '2026/11/20')
+        .addRelatedItems(Keys.VERSIONAMIENTO_CHANGELOG, Keys.CD_CI_RULES, Keys.TESTING_BUG, Keys.CALIDAD_CODE_REVIEWS)
         .addMoreReferences('https://rewind.com/blog/how-to-restore-deleted-branch-commit-git-reflog/')
     ]
 ]);

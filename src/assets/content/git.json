@@ -1,10 +1,24 @@
 {
   "what-is-Git": [
-    "- Todo archivo puede tener un seguimiento, y todo archivo seguido tiene un identificador unico que cambia con cualquier cambio del archivo ",
-    "- Existen 3 estados principales, cambios confirmados, archivos modificados y cambios en espera ",
-    "- Se puede trabajar con repositorios localmente ó distribuidos en internet ",
-    "- Los archivos tambien se pueden ignorar, configurando el .gitIgnore, especificando archivos y carpetas a ignorar ",
-    "- Cualquier cambio puede ser deshecho, incluso despues de que haya sido confirmado "
+    "- Todo archivo puede tener un seguimiento y todo archivo seguido tiene un <em>hash</em> que cambia con cualquier cambio del archivo ",
+    "- Git tiene integridad, todo cambio es verificado mediante un <em>checksum</em> antes de ser almacenado ",
+    "- Esa integridad no solo permite mantener el historial, tambien cualquier cambio puede ser deshecho, incluso despues de que haya sido confirmado ",
+    "- Los archivos tambien se pueden ignorar, configurando el <em>.gitIgnore</em>, especificando archivos y carpetas a ignorar ",
+    "",
+    "<strong>Estados principales</strong> ",
+    "&bull; <strong>Modified:</strong> Archivo modificado pero todavía no se ha confirmado ",
+    "&bull; <strong>Stage:</strong> Se ha marcado un archivo modificado en su versión actual para que vaya en el próximo commit ",
+    "&bull; <strong>Commit:</strong> Los datos están almacenados de manera segura en tu base de datos local",
+    "",
+    "<strong>Areas principales</strong> ",
+    "&bull; <strong>Working directory:</strong> Copia del proyecto que se dispone a nivel del disco sobre la que se trabaja con total libertad ",
+    "&bull; <strong>Staging area:</strong> Almacena todos los archivos y sus cambios que estan en <em>stage</em>, listos para el proximo commit ",
+    "&bull; <strong>.git repository:</strong> Área de almacenamiento y directorio donde se almacenan los objetos y su metadata ",
+    "",
+    "<strong>Flujo basico</strong>",
+    "- Modificas los archivos (modified) en tu directorio de trabajo (Working directory) ",
+    "- Preparas los archivos (stage), añadiéndolos a tu área de preparación (Staging area) ",
+    "- Confirmas los cambios (commit), tomando los archivos tal y como están, y se almacena esa copia instantánea y permanente en tu directorio de Git "
   ],
   "structureAndConceptsGit": [
     "- Git es el manejador de versiones más usado hoy en dia, y parte de eso se logro al usar conceptos heredados de otros manejadores de versiones ",
@@ -21,6 +35,8 @@
     "&brvbar;--------------------------------&brvbar;   <strong>Patch:</strong> Toma los diff y los coloca en un archivo, para sincronizar las versiones previas de archivos y carpetas "
   ],
   "repositoriosGit": [
+    "- Se puede trabajar con repositorios localmente ó distribuidos en internet, potenciando el trabajo en paralelo de cientos de desarroladores ",
+    "- Cada desarrollador es un nodo de trabajo y puede cumplir diferentes roles, desarrollo, integrador, mantenedor ",
     "- Git trabaja principalmente de manera local, pero es necesario sincronizar los cambios hechos con el repositorio central ",
     "- Los cambios pueden subirse mediante un push o bajarse del repositorio mediante un pull o un fetch ",
     "- Para trabajar con remotos es necesario contar con un usuario y contraseña configurados para la trazabilidad de los cambios "
@@ -93,7 +109,7 @@
     "- Cualquier rama <em>Feature</em> se une a develop "
   ],
   "good-practices-commits": [
-    "- Los commits son sumamente importantes en git, y si se realizan correctamente pueden aportar metadata al proyecto",
+    "- Los commits son sumamente importantes en git y si se realizan correctamente pueden aportar metadata al proyecto ",
     "",
     "<strong>Tipos de commits:</strong>",
     "<strong>- feat:</strong>     Nueva característica ",
@@ -251,7 +267,6 @@
     "",
     "<strong>Squash:</strong> Se combinan todas las commits individuales en uno solo, lo que facilita el seguimiento, a costa de perder detalles ",
     "",
-    "",
     "<strong>Cuando usarlos:</strong>",
     "- <em>Merge</em> Puede hacerse si resolver conflictos se vuelve dificil y las ramas suelen ser compartidas ",
     "- <em>Rebase</em> Es Ideal para ramas que no se comparten, ayudando a la administración ",
@@ -268,13 +283,20 @@
     "&brvbar; git grep   &brvbar; Ayuda a encontrar coincidencias de texto en base a expresiones regulares &brvbar; A nivel del repositorio/branch/commits &brvbar;"
   ],
   "errors-on-git": [
+    "<strong>Commits masivos:</strong> Realizar todo en un mismo commit, solo ayuda en guardar los cambios, no en tener un historial identificable, ",
+    " - ni puntos seguros de restauración o en separar el trabajo por unidades significativas ",
+    "- Quien revise los cambios podra comprender la progresión lógica, ayudando al trabajo de revisión ",
+    "",
     "<strong>Rebase en ramas compartidas:</strong> Rebase mueve los IDs (hash) de los commits y reconstruye todo el historial en ramas o proyectos que son compartidos ",
     " - esto hace que las copias locales de los demás miembros del equipo se vuelvan incompatibles y genera conflictos difíciles de resolver ",
     "",
-    "<strong>El uso de --force:</strong> Aunque es un comando válido, obligar a sobrescribir el historial puede ser desastroso si no se hace de manera consciente",
+    "<strong>El uso de <em>git push --force</em>:</strong> Aunque es un comando válido, obligar a sobrescribir el historial puede ser desastroso si no se hace de manera consciente ",
+    "- Cuando se trabaja con proyectos compartidos, literalmente puede borrar el trabajo de los demás ",
+    "- Conviene usar el comando de <em>git push --force- with -lease</em>, que verifica que no hayan commits nuevos, pero esto no siempre es garantia ",
     "",
     "<strong>No proteger las ramas:</strong> Que cualquiera pueda subir cambios a ramas principales como Main o Develop es un riesgo para la estabilidad ",
     " - y seguridad del proyecto, si no se tiene una adecuada red de seguridad o un pipeline adecuado, los problemas serán comunes ",
+    "- Esto tambien incluye trabajar directamente sobre las ramas principales, como Main & Develop, que solo deben contener código probado y estable ",
     "",
     "<strong>Eliminar ramas sin confirmación:</strong> Borrar ramas sin fusionar solo debe hacerse después de que se ha confirmado que no están siendo utilizadas ",
     "- Pueden darse los casos en que estas ramas no tengan un respaldo local y se pierda el trabajo ",
