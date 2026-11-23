@@ -1522,24 +1522,29 @@ export const TESTING_ADVANCED_REF = new Map<string, Referencia>([
 
 export const REFACTORING_KEY = 'Refactorizacion';
 export const REFACTORING_REF = new Map<string, Referencia>([
-    [Keys.REFACTORING_CLEAN_CODE, new Referencia('https://refactoring.guru/es/refactoring/what-is-refactoring', '¿ Que es Codigó Limpio ?', REFACTORING_KEY, 'Codigó Limpio', '', '2026/03/07')
+    [Keys.REFACTORING_CLEAN_CODE, new Referencia('https://refactoring.guru/es/refactoring/what-is-refactoring', '¿ Que es Codigó Limpio ?', REFACTORING_KEY, 'Codigó Limpio', '2021/01/16', '2026/03/07')
         .addRelatedItems(Keys.PRINCIPIOS_KISS, Keys.PRINCIPIOS_DRY, Keys.PRINCIPIOS_YAGNI, Keys.CONOCIMIENTOS_EMPIRICOS_CODE_MAINTAINER)
     ],
     [Keys.REFACTORING_ERRORS_ON_CLEAN_CODE, new Referencia('https://medium.com/@vndpal/10-popular-clean-code-practices-that-do-more-harm-than-good-5ddcf7db90f8', 'Errores a evitar en el Codigó Limpio', REFACTORING_KEY, 'Errores & Codigó Limpio', '2026/03/07')
         .addRelatedItems(Keys.BUENAS_PRACTICAS_INDIRECTION, Keys.POO_COUPLING_AND_COHESION, Keys.TESTING_PRINCIPLES, Keys.MALAS_PRACTICAS_OVER_ENGINEERING, Keys.BUENAS_PRACTICAS_EXCEPTIONS)
         .addMoreReferences('https://sandimetz.com/blog/2016/1/20/the-wrong-abstraction')
     ],
-    [Keys.REFACTORING_DEUDA_TECNICA, new Referencia('https://refactoring.guru/es/refactoring/technical-debt', 'Deuda tecnica', REFACTORING_KEY, 'Deuda tecnica')],
-    [Keys.REFACTORING_DEUDA_TECNICA_TYPES, new Referencia('https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/deuda-tecnica-explicada/', 'Tipos de deuda tecnica', REFACTORING_KEY, 'Tipos de deuda', '', '2025/07/05')
+    [Keys.REFACTORING_DEUDA_TECNICA, new Referencia('https://refactoring.guru/es/refactoring/technical-debt', 'Deuda tecnica', REFACTORING_KEY, 'Deuda tecnica', '2021/01/16')],
+    [Keys.REFACTORING_DEUDA_TECNICA_TYPES, new Referencia('https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/deuda-tecnica-explicada/', 'Tipos de deuda tecnica', REFACTORING_KEY, 'Tipos de deuda', '2021/03/27', '2025/07/05')
         .addRelatedItems(Keys.AGILES_MANIFEST_AGIL, Keys.CALIDAD_CLEAN_CODE)
+        .addMoreReferences('https://martinfowler.com/bliki/TechnicalDebtQuadrant.html')
     ],
-    [Keys.REFACTORING_COMMENT_DEUDA, new Referencia('https://www.scrummanager.net/bok/index.php?title=Deuda_t%C3%A9cnica', 'Comentarios especiales', REFACTORING_KEY, 'Comentar la deuda')],
-    [Keys.REFACTORING_WHEN, new Referencia('https://refactoring.guru/es/refactoring/when', '¿ Cuando Refactorizar ?', REFACTORING_KEY, '¿ Cuando ?', '', '2025/07/05')],
-    [Keys.REFACTORING_HOW, new Referencia('https://refactoring.guru/es/refactoring/how-to', '¿ Como Refactorizar ? ', REFACTORING_KEY, '¿ Como ?', '', '2025/07/05')
+    [Keys.REFACTORING_COMMENT_DEUDA, new Referencia('https://www.scrummanager.net/bok/index.php?title=Deuda_t%C3%A9cnica', 'Comentarios especiales', REFACTORING_KEY, 'Comentar la deuda', '2021/03/27')],
+    [Keys.REFACTORING_WHEN, new Referencia('https://refactoring.guru/es/refactoring/when', '¿ Cuando Refactorizar ?', REFACTORING_KEY, '¿ Cuando ?', '2021/01/16', '2025/07/05')],
+    [Keys.REFACTORING_HOW, new Referencia('https://refactoring.guru/es/refactoring/how-to', '¿ Como Refactorizar ? ', REFACTORING_KEY, '¿ Como ?', '2021/01/16', '2025/07/05')
         .addRelatedItems(Keys.ESTRATEGIAS_DESARROLLO_BDD, Keys.TESTING_ADVANCED_TYPES_TESTS, Keys.CALIDAD_CLEAN_CODE, Keys.CONOCIMIENTOS_EMPIRICOS_BOYS_SCOUTS, Keys.META_ESTRUCTURAS_DEPRECATION, Keys.LEYES_HYRUM, Keys.CALIDAD_CODE_REVIEWS, Keys.POO_COUPLING_AND_COHESION, Keys.BUENAS_PRACTICAS_COMPLEJIDAD_COGNITIVA)
         .addMoreReferences('https://blog.stackademic.com/i-refactored-100-000-lines-of-java-code-these-12-rules-saved-me-3ece7245f174')
     ],
-    [Keys.REFACTORING_TECNICAS, new Referencia('https://refactoring.guru/es/refactoring/techniques', 'Tecnicas para Refactorizar', REFACTORING_KEY, 'Tecnicas', '', '2025/07/05')
+    [Keys.REFACTORING_WHY, new Referencia('https://medium.com/javarevisited/7-warning-signs-your-codebase-is-becoming-legacy-and-how-to-fix-it-0cfdc693196e', 'Señales para identificar legacy code', REFACTORING_KEY, '¿ Porque ?', '2026/11/22')
+        .addRelatedItems(Keys.AGILES_DEUDA_TECNICA, Keys.CD_CI_RUNBOOK, Keys.POO_COUPLING_AND_COHESION, Keys.CONOCIMIENTOS_EMPIRICOS_PASTA_THEORY, Keys.BUENAS_PRACTICAS_GOOD_HABITS_II, Keys.TESTING_ADVANCED_TYPES_TESTS, Keys.TESTING_COBERTURA, Keys.TESTING_E2E, Keys.CONOCIMIENTOS_EMPIRICOS_BREAKING_PRODUCTION_LESSONS, Keys.VERSIONAMIENTO_MANAGEMENT_DEPENDENCIES, Keys.AGILES_ESTIMATION_LAWS, Keys.CALIDAD_CODE_ROT, Keys.LEYES_BUS_FACTOR)
+        .addMoreReferences('https://www.adamtornhill.com/articles/crimescene/codeascrimescene.htm')
+    ],
+    [Keys.REFACTORING_TECNICAS, new Referencia('https://refactoring.guru/es/refactoring/techniques', 'Tecnicas para Refactorizar', REFACTORING_KEY, 'Tecnicas', '2021/08/15', '2025/07/05')
         .addRelatedItems(Keys.PRINCIPIOS_SLAP, Keys.BUENAS_PRACTICAS_INDIRECTION, Keys.POO_COUPLING_AND_COHESION, Keys.BUENAS_PRACTICAS_COMPLEJIDAD_COGNITIVA)
     ],
     [Keys.REFACTORING_WHEN_NOT, new Referencia('https://www.digite.com/agile/refactorizacion-en-agil/', 'Cuando No Refactorizar', REFACTORING_KEY, 'Cuando No', '2023/01/22', '2026/08/04')
@@ -1555,7 +1560,7 @@ export const REFACTORING_REF = new Map<string, Referencia>([
         .addRelatedItems(Keys.LEYES_CONWAY, Keys.AGILES_MOSCOW_RICE)
     ],
     [Keys.REFACTORING_MANAGE_DEPENDENCIES, new Referencia('https://levelup.gitconnected.com/world-of-dependencies-4639100d16ef', 'Manejo de las dependencias', REFACTORING_KEY, 'Dependencias', '2024/06/09')
-        .addRelatedItems(Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS, Keys.ARQUITECTURAS_IMPL_CAPAS, Keys.FRAMEWORKS_IOD)
+        .addRelatedItems(Keys.META_ESTRUCTURAS_MAQUINA_ESTADOS, Keys.ARQUITECTURAS_IMPL_CAPAS, Keys.FRAMEWORKS_IOD, Keys.SMELL_CODES_DESGLOSE)
     ],
     [Keys.REFACTORING_CIRCULAR_DEPENDENCIES, new Referencia('https://medium.com/@louismrc/fix-your-circular-dependencies-with-dependency-inversion-e22b6f4c9510', 'Dependencias Circulares', REFACTORING_KEY, 'Dependencias Circulares', '2026/07/06')
         .addRelatedItems(Keys.FRAMEWORKS_IOD, Keys.BUENAS_PRACTICAS_INDIRECTION, Keys.POO_COUPLING_AND_COHESION, Keys.FRAMEWORKS_SPRING_ANNOTATIONS, Keys.POO_ABSTRACTIONS)
