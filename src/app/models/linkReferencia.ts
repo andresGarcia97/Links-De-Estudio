@@ -686,6 +686,9 @@ export const LEYES_REF = new Map<string, Referencia>([
     ],
     [Keys.LEYES_HICK_HYMAN, new Referencia('https://hacker-laws.com/#hicks-law-hick-hyman-law', 'Hick Hyman', LEYES_KEY, 'Ley de Hick-Hyman', '2026/10/01')
         .addRelatedItems(Keys.WEB_USER_INTERFACE, Keys.WEB_USER_XPERIENCE)
+    ],
+    [Keys.LEYES_BUS_FACTOR, new Referencia('https://lawsofsoftwareengineering.com/laws/bus-factor/', 'Bus Factor', LEYES_KEY, 'Bus Factor', '2026/11/23')
+        .addRelatedItems(Keys.VERSIONAMIENTO_DOCUMENTATION, Keys.CALIDAD_CODE_REVIEWS)
     ]
 ]);
 

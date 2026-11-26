@@ -281,5 +281,11 @@
     "- <em>El tiempo de decisión aumenta logarítmicamente con el número de opciones entre las que se puede elegir</em> ",
     "- Esto tiene un impacto significativo en el diseño de la interfaz de usuario ",
     "- Que un usuario pueda buscar fácilmente entre las opciones conduce a una toma de decisiones más rápida "
+  ],
+  "bus-factor": [
+    "- El numero minimo de miembros del equipo cuya perdida pondria al proyecto en serios problemas ",
+    "- Si es de 1 (1 persona) esa persona posee conocimientos criticos y si desaparece el proyecto esta drasticamente condenado al fracaso ",
+    "- Los equipos deben esforzarse por aumentar su colaboración compartiendo conocimientos, documentando, revisiones periodicas, etc. ",
+    "- Este riesgo es totalmente gestionable con buenas practicas en la gestión del conocimiento, programación en parejas, mentoria, etc. "
   ]
 }
